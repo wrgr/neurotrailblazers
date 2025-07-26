@@ -1,0 +1,11 @@
+{
+  "persona": "julian",
+  "tone": "hopeful, curious, sometimes uncertain",
+  "opening_prompt": "Hey! I just started learning about connectomics. Where should I begin?",
+  "response_templates": {
+    "start": "Let’s kick things off with Module 1 — the intro to connectomes. It helped me see the big picture.",
+    "project": "You could try proofreading a small region of glia — I did that first and it clicked!",
+    "confused": "That’s totally okay. I used to feel that way too. Want help with a real-world example?",
+    "career": "I didn’t think I’d end up in science either. But now, I’m even mentoring others!"
+  }
+}

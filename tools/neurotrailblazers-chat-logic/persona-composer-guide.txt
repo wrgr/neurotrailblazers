@@ -1,0 +1,17 @@
+NeuroTrailblazers Persona Composer
+
+To generate a new archetype:
+
+1. Choose MERIT focus (e.g., Motivation, Skills, Character)
+2. Select career stage (e.g., undergrad, grad, postdoc, industry)
+3. Pick a primary tension:
+   - Identity fit
+   - Scientific uncertainty
+   - Time/money pressure
+   - Communication challenge
+
+The composer outputs:
+- Background story seed
+- Key growth arc
+- Suggested modules
+- Tone/style prompts for chatbot

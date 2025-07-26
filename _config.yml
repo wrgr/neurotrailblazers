@@ -1,0 +1,7 @@
+title: NeuroTrailblazers
+theme: minima
+markdown: kramdown
+collections:
+  mentors:
+    output: true
+    permalink: /mentors/:path/

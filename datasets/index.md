@@ -18,7 +18,77 @@ description: "Explore curated connectomics datasets from landmark studies includ
     <section class="section">
         <h2>Featured Datasets</h2>
         <p>These datasets represent milestones in connectomics research and provide excellent learning opportunities for students at all levels.</p>
+<div class="datasets-grid">
+    <div class="dataset-card featured spotlight">
+      <div class="dataset-header">
+        <div class="dataset-icon">🏔️</div>
+        <div class="dataset-meta">
+          <span class="dataset-type">Mouse Hippocampus</span>
+          <span class="dataset-status">In Progress</span>
+        </div>
+      </div>
+      <h3>MouseConnects (2023-2028)</h3>
+      <p>
+        The most ambitious connectomics project ever undertaken. A complete synapse-level 
+        reconstruction of 10 mm³ of mouse hippocampal formation - 50x larger than any previous effort.
+      </p>
+      <div class="dataset-stats">
+        <div class="stat">
+          <span class="stat-value">10 mm³</span>
+          <span class="stat-label">Volume</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">10 PB</span>
+          <span class="stat-label">Raw Data</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">8×8×8 nm</span>
+          <span class="stat-label">Resolution</span>
+        </div>
+      </div>
+      <div class="dataset-tags">
+        <span class="tag">NIH BRAIN Initiative</span>
+        <span class="tag">Multi-Site</span>
+        <span class="tag">Open Science</span>
+      </div>
+      <div class="dataset-actions">
+        <a href="/datasets/mouseconnects" class="btn btn-primary">Explore Project</a>
+        <a href="/workflow" class="btn btn-secondary">View Pipeline</a>
+      </div>
+    </div>
 
+    <div class="dataset-card featured">
+      <div class="dataset-header">
+        <div class="dataset-icon">🧠</div>
+        <div class="dataset-meta">
+          <span class="dataset-type">Mammalian Cortex</span>
+          <span class="dataset-status">Active</span>
+        </div>
+      </div>
+      <h3>Kasthuri et al. (2015)</h3>
+      <p>
+        The foundational connectome dataset that launched modern nanoscale connectomics. 
+        A dense reconstruction of mouse cortex revealing the intricate wiring of mammalian neural circuits.
+      </p>
+      <div class="dataset-stats">
+        <div class="stat">
+          <span class="stat-value">1,676</span>
+          <span class="stat-label">Synapses</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1.4 μm³</span>
+          <span class="stat-label">Volume</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">3×3×30 nm</span>
+          <span class="stat-label">Resolution</span>
+        </div>
+      </div>
+      <div class="dataset-actions">
+        <a href="/datasets/kasthuri" class="btn btn-primary">Explore Dataset</a>
+        <a href="#" class="btn btn-secondary">View Paper</a>
+      </div>
+    </div>
         <div class="cards-grid" style="margin-top: 2rem;">
             <div class="card dataset-card" style="background: linear-gradient(135deg, #eff6ff, #dbeafe); border-left: 4px solid var(--neural-blue);">
                 <div class="dataset-meta">

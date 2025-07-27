@@ -1,48 +1,70 @@
 title: NeuroTrailblazers
+description: Training the next generation of connectomics leaders
 theme: minima
-minima:
-  include:
-    head: head-custom
-markdown: kramdown
+
+url: "https://wrgr.github.io"
+baseurl: "/neurotrailblazers"
+
+# Custom navigation with dropdown-style grouping
+nav:
+  - title: "Start Here"
+    url: /start-here/
+  - title: "Modules"
+    children:
+      - title: "Module 0: Inspiration"
+        url: /modules/module-0-inspiration/
+      - title: "Module 1: Intro to Connectomics"
+        url: /modules/module-1-intro/
+      - title: "Module 2: Imaging the Brain"
+        url: /modules/module-2-imaging/
+      - title: "Module 3: From Slices to Volumes"
+        url: /modules/module-3-volumes/
+      - title: "Module 4: Segmentation"
+        url: /modules/module-4-segmentation/
+      - title: "Module 5: Proofreading"
+        url: /modules/module-5-proofreading/
+      - title: "Module 6: Data Visualization"
+        url: /modules/module-6-visualization/
+      - title: "Module 7: Synapses"
+        url: /modules/module-7-synapses/
+      - title: "Module 8: Circuit Mapping"
+        url: /modules/module-8-circuits/
+      - title: "Module 9: Transcriptomics"
+        url: /modules/module-9-transcriptomics/
+      - title: "Module 10: Machine Learning"
+        url: /modules/module-10-ml/
+      - title: "Module 11: Metrics and Ground Truth"
+        url: /modules/module-11-metrics/
+      - title: "Module 12: Big Data Tools"
+        url: /modules/module-12-tools/
+      - title: "Module 13: Designing Experiments"
+        url: /modules/module-13-experiments/
+      - title: "Module 14: Communication"
+        url: /modules/module-14-communication/
+      - title: "Module 15: Reflection"
+        url: /modules/module-15-reflection/
+  - title: "Frameworks"
+    children:
+      - title: "MERIT & COMPASS"
+        url: /models/
+      - title: "HI-MC"
+        url: /hi-mc/
+  - title: "Archetypes"
+    url: /archetypes/
+  - title: "Datasets"
+    url: /datasets/
+  - title: "Workflow"
+    url: /workflow/
+
 collections:
-  mentors:
-    output: true
-    permalink: /mentors/:path/
   modules:
     output: true
-    permalink: /modules/:path/
   archetypes:
     output: true
-    permalink: /archetypes/:path/
   datasets:
     output: true
-    permalink: /datasets/:path/
 
-defaults:
-  - scope:
-      path: ""
-      type: modules
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: archetypes
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: datasets
-    values:
-      layout: default
-
-nav_items:
-  - title: "Start Here"
-    url: "/start-here"
-  - title: "Modules"
-    url: "/modules"
-  - title: "Datasets"
-    url: "/datasets"
-  - title: "Archetypes"
-    url: "/archetypes"
-  - title: "Models"
-    url: "/education/models"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

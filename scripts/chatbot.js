@@ -1,2 +1,3 @@
-// Placeholder for chatbot mentor integration
-console.log('Chatbot placeholder');
+# chatbot.js
+
+This is a placeholder for chatbot.js.

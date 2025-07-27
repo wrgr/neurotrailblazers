@@ -1,2 +1,3 @@
-// Placeholder for course generation logic
-console.log('Course generator placeholder');
+# course-generator.js
+
+This is a placeholder for course-generator.js.

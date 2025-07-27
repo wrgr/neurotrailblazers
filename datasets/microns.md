@@ -1,6 +1,3 @@
----
-layout: default
-title: MICrONS
----
+# microns.md
 
-The MICrONS Explorer dataset provides a mouse visual cortex connectome with aligned physiology and EM data.
+This is a placeholder for microns.md.

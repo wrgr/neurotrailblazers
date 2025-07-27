@@ -1,6 +1,3 @@
----
-layout: default
-title: Datasets
----
+# index.md
 
-Explore public connectomics datasets used in the modules.
+This is a placeholder for index.md.

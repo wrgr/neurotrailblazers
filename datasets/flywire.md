@@ -1,6 +1,3 @@
----
-layout: default
-title: FlyWire
----
+# flywire.md
 
-FlyWire is a community effort to reconstruct the adult Drosophila brain. Data are openly accessible for annotation and exploration.
+This is a placeholder for flywire.md.

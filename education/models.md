@@ -13,7 +13,7 @@ This section introduces two core training frameworks used throughout NeuroTrailb
 
 ### COMPASS Model
 
-- Ten interactive workshops covering the hidden curriculum from orientation to future planning.
+- Interactive workshops covering the hidden curriculum from orientation to future planning.
 - Integrates Fadel et al. (2015) four-dimensional education dimensions of knowledge, skills, character, and meta-learning.
 
 Both frameworks complement each other: MERIT structures your research journey while COMPASS offers workshops that develop resilience and professional habits.

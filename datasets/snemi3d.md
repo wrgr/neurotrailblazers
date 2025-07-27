@@ -1,6 +1,3 @@
----
-layout: default
-title: SNEMI3D
----
+# snemi3d.md
 
-SNEMI3D is a benchmarking challenge dataset for segmentation algorithms in EM.
+This is a placeholder for snemi3d.md.

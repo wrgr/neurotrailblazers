@@ -1,6 +1,3 @@
----
-layout: default
-title: Archetype Mentors
----
+# index.md
 
-Meet our representative scientists. These archetypes serve as guides throughout the modules.
+This is a placeholder for index.md.

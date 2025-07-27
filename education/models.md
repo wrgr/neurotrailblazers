@@ -7,12 +7,15 @@ This section introduces two core training frameworks used throughout NeuroTrailb
 
 ### MERIT Model
 
-- Motivation → Knowledge → Skills → Character → Meta-Learning  
-- Each mapped across the research lifecycle: Foundations → Question → Experiment → Analysis → Dissemination
+- **M**entoring Exceptional Researchers to Innovate and Thrive. It follows the scientific method from merit-based selection through career transition.
+- Stages: Selection, Orientation, Skill Development, Independent Research, Advanced Research, Career Transition.
+- Anchored in evidence from Lopatto (2007) on undergraduate research experiences and Duckworth et al. (2007) on persistence.
 
 ### COMPASS Model
 
-- A learner-centered lens: Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self
-- Emphasizes personal growth and scientific capability
+- Ten interactive workshops covering the hidden curriculum from orientation to future planning.
+- Integrates Fadel et al. (2015) four-dimensional education dimensions of knowledge, skills, character, and meta-learning.
+
+Both frameworks complement each other: MERIT structures your research journey while COMPASS offers workshops that develop resilience and professional habits.
 
 Visuals and downloadable guides coming soon.

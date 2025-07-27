@@ -1,7 +1,48 @@
 title: NeuroTrailblazers
 theme: minima
+minima:
+  include:
+    head: head-custom
 markdown: kramdown
 collections:
   mentors:
     output: true
     permalink: /mentors/:path/
+  modules:
+    output: true
+    permalink: /modules/:path/
+  archetypes:
+    output: true
+    permalink: /archetypes/:path/
+  datasets:
+    output: true
+    permalink: /datasets/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: modules
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: archetypes
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: datasets
+    values:
+      layout: default
+
+nav_items:
+  - title: "Start Here"
+    url: "/start-here"
+  - title: "Modules"
+    url: "/modules"
+  - title: "Datasets"
+    url: "/datasets"
+  - title: "Archetypes"
+    url: "/archetypes"
+  - title: "Models"
+    url: "/education/models"

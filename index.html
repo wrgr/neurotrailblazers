@@ -1,33 +1,251 @@
 ---
 layout: default
-title: NeuroTrailblazers
+title: "NeuroTrailblazers - Illuminating Pathways for Trailblazing Neuroscience Researchers"
+description: "A curriculum and mentorship platform for nanoscale connectomics discovery, supporting students and mentors in computational neuroscience research."
 ---
 
-<div class="hero-section">
-  <h1>🧠 Welcome to NeuroTrailblazers</h1>
-  <p class="subtitle">Training the next generation of connectomics leaders through immersive, data-driven neuroscience.</p>
-  <a class="cta-button" href="/neurotrailblazers/start-here/">Get Started</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site-styles.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="{{ '/' | relative_url }}" class="logo">NeuroTrailblazers</a>
+            <ul class="nav-menu">
+                {% for item in site.navigation %}
+                <li class="nav-item">
+                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+                    {% if item.dropdown %}
+                    <ul class="dropdown">
+                        {% for subitem in item.dropdown %}
+                        <li><a href="{{ subitem.url | relative_url }}" class="dropdown-link">{{ subitem.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
 
-<div class="features-grid">
-  <div class="feature">
-    <h2>🔬 Real Science</h2>
-    <p>Engage with actual connectomics data and contribute to the NIH-funded HI-MC project.</p>
-  </div>
-  <div class="feature">
-    <h2>📚 Structured Curriculum</h2>
-    <p>Follow 16 learning modules with interactive notebooks, clear goals, and expert tools.</p>
-  </div>
-  <div class="feature">
-    <h2>🎓 Research Readiness</h2>
-    <p>Build a portfolio through the MERIT framework and mentorship with real scientists.</p>
-  </div>
-  <div class="feature">
-    <h2>🌍 National Collaboration</h2>
-    <p>Join a community spanning Harvard, APL, Princeton, Allen Institute, and beyond.</p>
-  </div>
-</div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Illuminating Pathways for Trailblazing Neuroscience Researchers</h1>
+                <p class="hero-subtitle">A curriculum and mentorship platform for nanoscale connectomics discovery</p>
+                <p class="hero-description">
+                    We provide content, mentoring, and support to prepare students and their mentors to effectively pursue careers in research. 
+                    Closing knowledge and opportunity gaps for students who dream of shaping the future of neuroscience.
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ '/start-here' | relative_url }}" class="btn btn-primary">Get Started</a>
+                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Explore Modules</a>
+                </div>
+            </div>
+        </section>
 
-<div class="footer-callout">
-  <p>Supported by the <strong>NIH CONNECTS</strong> initiative through the High-throughput Imaging for Mouse Connectomics (HI-MC) project.</p>
-</div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- For Students Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">For Students</h2>
+                    <p class="section-subtitle">
+                        Discover your pathway into computational neuroscience and nanoscale connectomics
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">Discover Your Path</h3>
+                        <p class="card-description">
+                            Are you fascinated by the mysteries of the brain? We'll help you explore computational neuroscience 
+                            and find your unique pathway into this dynamic field.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">Hands-On Learning</h3>
+                        <p class="card-description">
+                            Through mentorship programs, internships, and educational resources, we provide hands-on 
+                            experiences with real connectomics data and cutting-edge analysis techniques.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Career Preparation</h3>
+                        <p class="card-description">
+                            Whether you're just starting or diving deeper, we'll help you unlock endless possibilities 
+                            for your future career in computational neuroscience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- For Mentors Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">For Mentors</h2>
+                    <p class="section-subtitle">
+                        Empower the next generation of neuroscience leaders through structured mentorship
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <h3 class="card-title">Make Impact</h3>
+                        <p class="card-description">
+                            Share your expertise, insights, and experiences to make a profound impact on students' lives 
+                            and help foster diverse talent in computational neuroscience.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Structured Resources</h3>
+                        <p class="card-description">
+                            Access student resources, mentoring opportunities, and program curriculum designed to help you 
+                            effectively and measurably support your mentees.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Drive Innovation</h3>
+                        <p class="card-description">
+                            Together, we can inspire curiosity, ignite passion, and unlock the full potential of 
+                            future STEM trailblazers in nanoscale connectomics.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- For Programs Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">For Programs</h2>
+                    <p class="section-subtitle">
+                        Research-based approaches for scalable and systematic educational interventions
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">Research-Based Methods</h3>
+                        <p class="card-description">
+                            We provide evidence-based approaches to support trailblazing students through scalable 
+                            and systematic interventions grounded in learning science.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚙️</div>
+                        <h3 class="card-title">Systems Engineering</h3>
+                        <p class="card-description">
+                            Learn about our approach in applying system engineering tools and techniques to learning 
+                            science for maximum educational impact.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏢</div>
+                        <h3 class="card-title">Implementation Support</h3>
+                        <p class="card-description">
+                            Leverage our findings to support your students or to start a new effort in your lab 
+                            or organization with proven methodologies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Access Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Quick Access</h2>
+                    <p class="section-subtitle">Jump directly to key resources and learning materials</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card module-card">
+                        <div class="module-number">Modules</div>
+                        <h3 class="card-title">Learning Modules</h3>
+                        <p class="card-description">
+                            Structured curriculum covering nanoscale connectomics from basic concepts to advanced analysis techniques.
+                        </p>
+                        <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">View All Modules</a>
+                    </div>
+                    <div class="card dataset-card">
+                        <div class="dataset-meta">
+                            <span class="dataset-year">Datasets</span>
+                        </div>
+                        <h3 class="card-title">Connectomics Datasets</h3>
+                        <p class="card-description">
+                            Curated collection of key datasets including Kasthuri, MICrONS, FlyWire, and more.
+                        </p>
+                        <a href="{{ '/datasets/' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">Explore Datasets</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <h3 class="card-title">Student Archetypes</h3>
+                        <p class="card-description">
+                            Meet Julian, Layla, and Elias - representative student profiles to guide your learning journey.
+                        </p>
+                        <a href="{{ '/archetypes/' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">Meet Students</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grant Information -->
+            <section class="section" style="background: var(--brain-gray); padding: 3rem; border-radius: 12px; margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="section-title">About This Initiative</h2>
+                    <p class="section-subtitle">
+                        NeuroTrailblazers is supported by the {{ site.grant_info.program }} program through 
+                        the {{ site.grant_info.grant }} grant from the {{ site.grant_info.funding_agency }}.
+                        Our mission focuses on {{ site.grant_info.focus | downcase }} and emphasizes open science, 
+                        pipeline learning, and equitable opportunity.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="background: var(--synapse-black); color: var(--white); text-align: center; padding: 2rem 0; margin-top: 4rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <p>&copy; 2025 NeuroTrailblazers. Supporting the next generation of neuroscience researchers.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">
+                Funded by {{ site.grant_info.funding_agency }} | {{ site.grant_info.program }} Program
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

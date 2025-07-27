@@ -1,70 +1,102 @@
-title: NeuroTrailblazers
-description: Training the next generation of connectomics leaders
-theme: minima
-
-url: "https://wrgr.github.io"
+# NeuroTrailblazers - Jekyll Configuration
+title: "NeuroTrailblazers"
+description: "Illuminating Pathways for Trailblazing Neuroscience Researchers - A curriculum and mentorship platform for nanoscale connectomics discovery"
 baseurl: "/neurotrailblazers"
+url: "https://wrgr.github.io"
 
-# Custom navigation with dropdown-style grouping
-nav:
-  - title: "Start Here"
-    url: /start-here/
-  - title: "Modules"
-    children:
-      - title: "Module 0: Inspiration"
-        url: /modules/module-0-inspiration/
-      - title: "Module 1: Intro to Connectomics"
-        url: /modules/module-1-intro/
-      - title: "Module 2: Imaging the Brain"
-        url: /modules/module-2-imaging/
-      - title: "Module 3: From Slices to Volumes"
-        url: /modules/module-3-volumes/
-      - title: "Module 4: Segmentation"
-        url: /modules/module-4-segmentation/
-      - title: "Module 5: Proofreading"
-        url: /modules/module-5-proofreading/
-      - title: "Module 6: Data Visualization"
-        url: /modules/module-6-visualization/
-      - title: "Module 7: Synapses"
-        url: /modules/module-7-synapses/
-      - title: "Module 8: Circuit Mapping"
-        url: /modules/module-8-circuits/
-      - title: "Module 9: Transcriptomics"
-        url: /modules/module-9-transcriptomics/
-      - title: "Module 10: Machine Learning"
-        url: /modules/module-10-ml/
-      - title: "Module 11: Metrics and Ground Truth"
-        url: /modules/module-11-metrics/
-      - title: "Module 12: Big Data Tools"
-        url: /modules/module-12-tools/
-      - title: "Module 13: Designing Experiments"
-        url: /modules/module-13-experiments/
-      - title: "Module 14: Communication"
-        url: /modules/module-14-communication/
-      - title: "Module 15: Reflection"
-        url: /modules/module-15-reflection/
-  - title: "Frameworks"
-    children:
-      - title: "MERIT & COMPASS"
-        url: /models/
-      - title: "HI-MC"
-        url: /hi-mc/
-  - title: "Archetypes"
-    url: /archetypes/
-  - title: "Datasets"
-    url: /datasets/
-  - title: "Workflow"
-    url: /workflow/
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
+# Collections
 collections:
   modules:
     output: true
+    permalink: /:collection/:name/
   archetypes:
     output: true
+    permalink: /:collection/:name/
   datasets:
     output: true
+    permalink: /:collection/:name/
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "modules"
+    values:
+      layout: "module"
+  - scope:
+      path: ""
+      type: "archetypes"
+    values:
+      layout: "archetype"
+  - scope:
+      path: ""
+      type: "datasets"
+    values:
+      layout: "dataset"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Site configuration
+author: "NeuroTrailblazers Team"
+email: "info@neurotrailblazers.org"
+twitter_username: neurotrailblazers
+github_username: wrgr
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Start Here"
+    url: "/start-here"
+  - title: "Models"
+    url: "/models"
+  - title: "Workflow"
+    url: "/workflow"
+  - title: "Modules"
+    url: "/modules/"
+    dropdown:
+      - title: "Module 0: Inspiration"
+        url: "/modules/module-0-inspiration/"
+      - title: "Module 1: Introduction"
+        url: "/modules/module-1-intro/"
+      - title: "All Modules"
+        url: "/modules/"
+  - title: "Datasets"
+    url: "/datasets/"
+  - title: "Archetypes"
+    url: "/archetypes/"
+
+# Grant and program information
+grant_info:
+  program: "NIH CONNECTS"
+  grant: "HI-MC"
+  funding_agency: "National Institutes of Health"
+  focus: "Nanoscale Connectomics"
+  mission: "Closing knowledge and opportunity gaps for students who dream of shaping the future of neuroscience"
+
+# Color palette
+colors:
+  neural_blue: "#2563eb"
+  cerebral_purple: "#7c3aed"
+  axon_cyan: "#06b6d4"
+  brain_gray: "#f3f4f6"
+  synapse_black: "#111827"
+
+# Exclude from processing
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - scripts

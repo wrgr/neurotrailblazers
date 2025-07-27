@@ -1,56 +1,712 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8fafc;
-  color: #1f2937;
+
+TASK: Build a complete GitHub Pages-compatible Jekyll site titled NeuroTrailblazers. This is a curriculum and mentorship platform aligned with the HI-MC grant and the NIH CONNECTS program. It supports undergraduates and graduate students learning nanoscale connectomics, with a focus on discovery, merit-based training, and open science.
+🔧 Core Technical Requirements
+* ✅ Jekyll-based for GitHub Pages (wrgr/neurotrailblazers)
+* ✅ Responsive layout, modern typography (Inter)
+* ✅ Custom CSS (site-styles.css) inspired by neuroscience and discovery
+* ✅ Animated hero banner on homepage
+* ✅ Collections: modules, archetypes, datasets
+* ✅ Fully deployable site with _config.yml, index.html, and markdown content
+* ✅ All modules and pages should use real front matter and Markdown
+🧠 Thematic Identity
+* Style evokes scientific discovery: neurons, EM data, connectomes
+* Color palette:
+   * Neural Blue: #2563eb
+   * Cerebral Purple: #7c3aed
+   * Axon Cyan: #06b6d4
+   * Brain Gray: #f3f4f6
+   * Synapse Black: #111827
+📁 Required Folder Structure
+
+pgsql
+CopyEdit
+neurotrailblazers/ ├── _config.yml ├── index.html ├── start-here.md ├── models.md ├── workflow.md ├── README.md ├── archetypes/ │ ├── index.md │ ├── undergrad-firstgen.md │ ├── grad-student.md │ └── postdoc-ai.md ├── modules/ │ ├── module-0-inspiration/index.md │ ├── module-1-intro/index.md │ └── [modules 2-15]/index.md ├── datasets/ │ ├── index.md │ ├── kasthuri2015.md │ ├── bock2011.md │ ├── microns2025.md │ ├── flywire2024.md │ ├── hemibrain2020.md │ └── white1986.md ├── assets/ │ ├── css/site-styles.css │ └── images/ └── scripts/ ├── course-generator.js └── chatbot.js
+📚 Content Requirements
+🔹 Modules 0–15:
+For each module:
+* SMART learning objectives
+* Overall training goal
+* Representative image or placeholder
+* Key reference papers with inline citations
+* Public content (e.g., videos, talks, press)
+🔹 models.md:
+* Full explanation of:
+   * MERIT framework (6 stages, scientific method alignment)
+   * COMPASS workshops (10 total)
+   * CCR dimensions (Knowledge, Skills, Character, Meta-Learning)
+* Inline citations:
+   * Lopatto (2007)
+   * Duckworth (2007)
+   * Fadel (2015)
+   * Cervantes (2022)
+🔹 workflow.md:
+* Step-by-step guide to the HI-MC nanoscale connectomics pipeline
+* Align each pipeline stage with relevant MERIT/COMPASS stages
+🔹 datasets/:
+Each dataset page should include:
+* Visual image (EM screenshot, neuron segmentation, etc.)
+* Title, author/year (e.g., Kasthuri et al. 2015)
+* Claims and highlights
+* DOI or direct link to data
+* Link to any public explorer (e.g., FlyWire, MICrONS, neuPrint)
+🧑‍🔬 Archetypes
+Include three profiles in /archetypes/:
+1. Julian – First-gen undergrad just starting research
+2. Layla – Grad student navigating dissertation and publishing
+3. Elias – Postdoc with AI experience trying to merge disciplines
+Each should include:
+* Bio/story
+* Challenges
+* Successes
+* Chatbot mentor placeholder script
+🧩 Technical Features
+* Animated landing page hero banner
+* Grid layout for module and dataset cards
+* Subtle hover transitions on cards
+* Navigation with dropdown menus
+* Search (basic Jekyll search)
+* Mobile-first design
+🎯 NIH CONNECTS / HI-MC Integration
+* Must reflect the goals of the HI-MC grant
+* Emphasize open science, pipeline learning, and equitable opportunity
+* Position NeuroTrailblazers as a national training and mentorship tool
+📝 Summary
+You are generating a deployable Jekyll site with curriculum, datasets, and mentoring tools tailored to nanoscale connectomics. The design, layout, and educational content must reflect the rigor and vision of an NIH-funded scientific initiative.
+
+I'll build a complete Jekyll site for NeuroTrailblazers that meets all your requirements. This will be a comprehensive curriculum and mentorship platform for nanoscale connectomics.
+
+
+_config.yml - Jekyll Configuration
+Code 
+
+
+
+sorry - to be clear, we are revising the existing content, which is at github.com/wrgr/neurotrailblazers
+
+I understand! You're asking me to revise the existing NeuroTrailblazers site at github.com/wrgr/neurotrailblazers. Let me first search for information about the current site structure and content so I can build upon what's already there.
+
+
+github.com/wrgr/neurotrailblazers
+10 results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I can see there's a live site at neurotrailblazers.org, but I need to check the specific GitHub repository. Let me search more specifically:
+
+
+site:github.com wrgr neurotrailblazers
+10 results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let me try to access the specific repository directly:
+
+
+favicon
+Fetched GitHub - wrgr/neurotrailblazers
+github.com
+
+I can see the repository exists but appears to be minimal with just a placeholder README. Let me also check the live site to understand the current structure:
+
+
+Fetched NeuroTrailblazers
+neurotrailblazers.org
+
+Now I understand! The current site at neurotrailblazers.org is a Squarespace site, and you want to migrate/rebuild it as a Jekyll site on GitHub Pages at github.com/wrgr/neurotrailblazers. Based on the current content and your detailed requirements, I'll create a comprehensive Jekyll site structure. Let me start building the complete site:
+
+
+_config.yml - Jekyll Configuration
+Code ∙ Version 2 
+
+assets/css/site-styles.css
+Code 
+
+index.html - Homepage
+Interactive artifact 
+
+
+
+do you also understand that i've started that process here:  https://github.com/wrgr/neurotrailblazers.  But it's very ugly!
+
+Ah yes, I can see from the GitHub repository that you've already started the process! Let me take a look at what you have so far to understand the current state and help improve it.
+
+
+favicon
+Failed to fetch https://wrgr.github.io/neurotrailblazers/
+Let me check the GitHub Pages deployment:
+
+
+wrgr.github.io neurotrailblazers
+10 results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Perfect! So you have the foundation started but need to improve the design and content. Let me help you transform your existing Jekyll site into something beautiful and functional. I'll create a complete set of improved files that you can use to replace what you have. Let me start with the homepage:
+
+
+index.html - Improved Homepage
+Interactive artifact ∙ Version 2 
+Now let me create a proper Jekyll layout and some key content pages:
+
+
+_layouts/default.html - Base Layout
+Interactive artifact 
+Now let me create the start-here page:
+
+
+start-here.md - Getting Started Guide
+Code 
+Now let me create the models page with the MERIT framework and educational approaches:
+
+
+models.md - Educational Models and Framework
+Code 
+
+
+
+Continue
+
+
+models.md - Educational Models and Framework
+Code ∙ Version 2 
+Now let me create a sample module to show the structure:
+
+
+modules/module-0-inspiration/index.md - Inspiration Module
+Code 
+
+
+
+Continue
+
+
+modules/module-0-inspiration/index.md - Inspiration Module
+Code ∙ Version 2 
+Now let me create a datasets page to showcase the key connectomics datasets:
+
+
+datasets/index.md - Datasets Overview
+Code 
+
+
+
+Continue
+
+
+datasets/index.md - Datasets Overview
+Code ∙ Version 2 
+Now let me create a sample archetype page:
+
+
+archetypes/undergrad-firstgen.md - Julian's Story
+Code 
+
+
+
+Continue
+
+
+archetypes/undergrad-firstgen.md - Julian's Story
+Code 
+
+
+
+
+/* NeuroTrailblazers Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --neural-blue: #2563eb;
+  --cerebral-purple: #7c3aed;
+  --axon-cyan: #06b6d4;
+  --brain-gray: #f3f4f6;
+  --synapse-black: #111827;
+  --white: #ffffff;
+  --gradient-neural: linear-gradient(135deg, var(--neural-blue), var(--cerebral-purple));
+  --gradient-synapse: linear-gradient(135deg, var(--axon-cyan), var(--neural-blue));
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.hero-section {
-  background: linear-gradient(to right, #2563eb, #7c3aed, #06b6d4);
-  color: white;
-  padding: 60px 20px;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--synapse-black);
+  background-color: var(--white);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.125rem; }
+
+p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* Header and Navigation */
+.site-header {
+  background: var(--gradient-neural);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo::before {
+  content: "🧠";
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--synapse-black);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  background: var(--brain-gray);
+}
+
+/* Hero Section */
+.hero {
+  background: var(--gradient-neural);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="neural" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23neural)"/></svg>');
+  animation: drift 20s linear infinite;
+}
+
+@keyframes drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(20px); }
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-section h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.hero h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease-out;
 }
 
-.hero-section .subtitle {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+.hero-subtitle {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.cta-button {
-  background-color: white;
-  color: #2563eb;
-  font-weight: bold;
-  padding: 12px 20px;
+.hero-description {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
   border-radius: 8px;
   text-decoration: none;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
-}
-
-.feature {
-  background: white;
-  border-left: 4px solid #2563eb;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.footer-callout {
-  background-color: #e0f2fe;
-  color: #0369a1;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
   text-align: center;
-  padding: 20px;
+}
+
+.btn-primary {
+  background: var(--white);
+  color: var(--neural-blue);
+}
+
+.btn-primary:hover {
+  background: var(--brain-gray);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-secondary:hover {
+  background: var(--white);
+  color: var(--neural-blue);
+  transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--synapse-black);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-synapse);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: var(--synapse-black);
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Module Cards */
+.module-card {
+  background: linear-gradient(135deg, var(--white), var(--brain-gray));
+  border-left: 4px solid var(--neural-blue);
+}
+
+.module-number {
+  display: inline-block;
+  background: var(--neural-blue);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Dataset Cards */
+.dataset-card {
+  background: linear-gradient(135deg, var(--white), #fef3ff);
+  border-left: 4px solid var(--cerebral-purple);
+}
+
+.dataset-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.dataset-year {
+  background: var(--cerebral-purple);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
   font-weight: 500;
+}
+
+.dataset-type {
+  background: var(--axon-cyan);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Progress Indicators */
+.progress-container {
+  background: var(--brain-gray);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.progress-bar {
+  background: var(--gradient-neural);
+  height: 8px;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--neural-blue);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .hero, .site-header {
+    background: none !important;
+    color: black !important;
+  }
 }

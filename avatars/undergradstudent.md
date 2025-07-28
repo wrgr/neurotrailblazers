@@ -2,7 +2,6 @@
 layout: avatar
 title: "Julian - First-Generation Undergraduate"
 description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
-emoji: "👨‍🎓"
 student_name: "Julian Rodriguez"
 education_level: "Undergraduate Sophomore"
 background: "First-generation college student"
@@ -17,7 +16,6 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="avatar-header">
-      <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.student_name }}</h1>
         <p class="hero-subtitle">{{ page.background }}</p>

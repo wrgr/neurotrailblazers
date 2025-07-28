@@ -5,14 +5,12 @@ role: AI Scientist
 experience: Expert (industry)
 epistemic_orientation: Mechanistic, systems optimization
 motivation: Solve big problems, bring vision science into AI
-emoji: "🤖"
 ---
 
 <div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="avatar-header">
-      <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.title }}</h1>
         <p class="hero-subtitle">{{ page.role }}</p>

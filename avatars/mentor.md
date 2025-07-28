@@ -5,14 +5,12 @@ role: Postdoc
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
 motivation: Advance connectomics and build healthier research teams
-emoji: "🧑‍🏫"
 ---
 
 <div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="avatar-header">
-      <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.title }}</h1>
         <p class="hero-subtitle">{{ page.role }}</p>

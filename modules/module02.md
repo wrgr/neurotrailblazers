@@ -20,39 +20,63 @@ ccr_focus:
   - "Knowledge - Data Acquisition"
   - "Skills - Dataset Exploration"
 ---
-```
-<h3 style="margin-top: 1rem;">Core Topics:</h3>
-<ul style="margin-left: 1.5rem;">
-  <li>🖼️ <strong>Volume Imaging:</strong> Acquiring nanoscale slices via serial-section EM</li>
-  <li>🔗 <strong>Image Alignment:</strong> Stitching and registering slices to form coherent volumes</li>
-  <li>🧩 <strong>Segmentation:</strong> Using AI to label pixels and define cell boundaries</li>
-  <li>🕸️ <strong>Skeletonization:</strong> Creating simplified graphs to represent neuron paths</li>
-  <li>🧠 <strong>Dataset Exploration:</strong> FlyWire, MICrONS, H01, FAFB, Kasthuri, and more</li>
-</ul>
-```
 
-### 🧪 Sample Interactive Tools:
+<div class="main-content">
+  <div class="hero">
+    <div class="hero-content">
+      <span class="module-number">Module 02</span>
+      <h1>{{ page.title }}</h1>
+      <p class="hero-subtitle">{{ page.description }}</p>
+    </div>
+  </div>
 
-* [Neuroglancer](https://neuroglancer-demo.appspot.com/)
-* [FlyWire Viewer](https://flywire.ai)
-* [MICrONS Explorer](https://www.microns-explorer.org)
+  <section class="section">
+    <h2>Core Topics</h2>
+    <ul>
+      <li>🖼️ <strong>Volume Imaging:</strong> Acquiring nanoscale slices via serial-section EM</li>
+      <li>🔗 <strong>Image Alignment:</strong> Stitching and registering slices to form coherent volumes</li>
+      <li>🧩 <strong>Segmentation:</strong> Using AI to label pixels and define cell boundaries</li>
+      <li>🕸️ <strong>Skeletonization:</strong> Creating simplified graphs to represent neuron paths</li>
+      <li>🧠 <strong>Dataset Exploration:</strong> FlyWire, MICrONS, H01, FAFB, Kasthuri, and more</li>
+    </ul>
+  </section>
 
-### 🎓 COMPASS Integration:
+  <section class="section">
+    <h2>Sample Interactive Tools</h2>
+    <ul>
+      <li><a href="https://neuroglancer-demo.appspot.com/">Neuroglancer</a></li>
+      <li><a href="https://flywire.ai">FlyWire Viewer</a></li>
+      <li><a href="https://www.microns-explorer.org">MICrONS Explorer</a></li>
+    </ul>
+  </section>
 
-* **Knowledge:** Understand how data is organized and labeled for analysis
-* **Skills:** Navigate viewers, identify structures, interpret metadata
-* **Character:** Patience, attention to detail, and openness to uncertainty
-* **Meta-Learning:** Learn how tools and pipelines evolve across datasets
+  <section class="section">
+    <h2>COMPASS Integration</h2>
+    <ul>
+      <li><strong>Knowledge:</strong> Understand how data is organized and labeled for analysis</li>
+      <li><strong>Skills:</strong> Navigate viewers, identify structures, interpret metadata</li>
+      <li><strong>Character:</strong> Patience, attention to detail, and openness to uncertainty</li>
+      <li><strong>Meta-Learning:</strong> Learn how tools and pipelines evolve across datasets</li>
+    </ul>
+  </section>
 
-### 📚 References & Resources:
+  <section class="section">
+    <h2>References & Resources</h2>
+    <ul>
+      <li><strong>Kasthuri et al., 2015</strong>, Cell – "Saturated reconstruction of neocortex"</li>
+      <li><strong>Zheng et al., 2018</strong>, Nature – FlyWire / FAFB EM volume of adult fly brain</li>
+      <li><strong>MICrONS dataset release</strong>, 2021 – V1 Layer 2/3 mouse volume</li>
+      <li><a href="https://bossdb.org">Allen Institute / BossDB</a></li>
+    </ul>
+  </section>
 
-* **Kasthuri et al., 2015**, Cell – "Saturated reconstruction of neocortex"
-* **Zheng et al., 2018**, Nature – FlyWire / FAFB EM volume of adult fly brain
-* **MICrONS dataset release**, 2021 – V1 Layer 2/3 mouse volume
-* Allen Institute / BossDB: [https://bossdb.org](https://bossdb.org)
+  <section class="section">
+    <h2>Assessment</h2>
+    <ul>
+      <li>Match dataset types to pipeline stages (e.g., segmentation → labeled volume)</li>
+      <li>Navigate a dataset and find one synapse, one neuron, and one glial cell</li>
+      <li>Write a 3–4 sentence description of how segmentation is performed and why it matters</li>
+    </ul>
+  </section>
 
-### ✅ Assessment:
-
-* Match dataset types to pipeline stages (e.g., segmentation → labeled volume)
-* Navigate a dataset and find one synapse, one neuron, and one glial cell
-* Write a 3–4 sentence description of how segmentation is performed and why it matters
+</div>

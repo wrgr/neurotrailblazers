@@ -5,6 +5,14 @@ role: Assistant Professor
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
 motivation: Advance connectomics and build healthier research teams
+student_name: "Dr. Linh Nguyen"
+education_level: "Assistant Professor"
+background: "Neuroscientist with leadership focus"
+major: "Neuroscience"
+interests: ["Team building", "FAIR data", "Mentorship"]
+challenges: ["Balancing perfectionism", "Leadership isolation", "Time management"]
+strengths: ["Strategic vision", "Mentoring", "Scientific rigor"]
+goals: ["Grow collaborative lab", "Secure sustainable funding", "Support trainee success"]
 ---
 
 <div class="main-content">

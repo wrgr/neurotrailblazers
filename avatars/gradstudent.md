@@ -5,6 +5,14 @@ role: Graduate Student
 experience: Intermediate
 epistemic_orientation: Hybrid – computational with curiosity
 motivation: Use ML to push neuroscience forward and lift others with her
+student_name: "Maya Patel"
+education_level: "PhD Student, Year 2"
+background: "Blend of psychology and mathematics"
+major: "Computational Neuroscience"
+interests: ["Machine learning", "Segmentation models", "Mentoring"]
+challenges: ["Balancing research directions", "Career uncertainty", "Bridging disciplines"]
+strengths: ["Explaining complex ideas", "Collaboration", "Curiosity"]
+goals: ["Advance segmentation methods", "Publish impactful papers", "Support younger students"]
 ---
 
 <div class="main-content">

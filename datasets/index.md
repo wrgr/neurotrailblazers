@@ -12,6 +12,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
       <p class="hero-description">
         Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.
       </p>
+
     </div>
   </div>
 
@@ -84,6 +85,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
             <li><strong>Size:</strong> ~1 TB</li>
           </ul>
           <a href="{{ '/datasets/kasthuri2015' | relative_url }}" class="btn btn-primary">Explore Dataset</a>
+
         </div>
       </div>
 

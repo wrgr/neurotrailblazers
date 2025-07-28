@@ -10,7 +10,7 @@ description: "Resources and notebooks for downloading and exploring connectomics
 
 A guide to resources and example notebooks for accessing major public Electron Microscopy (EM) connectomics datasets.
 
----
+<hr>
 
 ## 🧠 Google Research (FAFB & H01)
 
@@ -33,7 +33,7 @@ Google's connectomics team has released several landmark datasets, most famously
         * **Advanced Queries:** Once you're comfortable, this notebook shows how to perform more complex queries, like finding all the inputs to a specific neuron compartment.
             * [**Run the "Queries" Tutorial in Colab**](https://colab.research.google.com/github/seung-lab/PyChunkedGraph/blob/master/notebooks/Queries.ipynb)
 
----
+<hr>
 
 ## 🐭 Allen Institute for Brain Science (MICrONS)
 
@@ -54,7 +54,7 @@ The Allen Institute's MICrONS project produced a cubic millimeter dataset from t
         * **Visualizing Meshes:** This notebook shows how to take the data you've queried and visualize it in 3D.
             * [**Working with Mesh Data Tutorial**](https://github.com/AllenInstitute/MicronsBinder/blob/main/notebooks/meshing.ipynb)
 
----
+<hr>
 
 ## 🪰 Janelia Research Campus / HHMI (Hemibrain)
 
@@ -75,7 +75,7 @@ Janelia's FlyEM team produced the "hemibrain" dataset, a dense reconstruction of
         * **Common Recipes:** This notebook provides solutions for common analysis tasks, such as finding paths between neurons or identifying the strongest inputs to a cell.
             * [**neuPrint Recipes Notebook**](https://github.com/connectome-neuprint/neuprint-python/blob/master/notebooks/Neuprint_Recipes.ipynb)
 
----
+<hr>
 
 ## 💾 bossDB (Multiple Datasets)
 
@@ -94,7 +94,7 @@ The Brain Observatory Storage Service & Database (bossDB) from Johns Hopkins APL
         * **Getting Started with bossDB:** This notebook covers the authentication process, finding data, and downloading a small cutout of EM data.
             * [**bossDB cutout example on GitHub**](https://github.com/jhuapl-boss/intern/blob/master/notebooks/Boss_cutout_example.ipynb)
 
----
+<hr>
 
 ## 🚀 General Tools & Visualization
 

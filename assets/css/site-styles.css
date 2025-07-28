@@ -127,6 +127,27 @@ body {
   margin: 0 auto 1.5rem;
 }
 
+/* Combined hero title and impact */
+.hero-title-impact {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title-impact span {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+/* Boxed description to reduce vertical space */
+.hero-description-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0.5rem auto;
+}
+
 /* Layout support for hero sections with visuals */
 .hero-content {
   display: flex;

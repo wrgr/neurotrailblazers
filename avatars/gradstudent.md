@@ -11,7 +11,7 @@ emoji: "🧑‍🔬"
 <div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
-    <div style="display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+    <div class="avatar-header">
       <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.title }}</h1>

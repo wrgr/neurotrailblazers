@@ -16,7 +16,7 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
 <div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
-    <div style="display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+    <div class="avatar-header">
       <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.student_name }}</h1>
@@ -134,4 +134,9 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
                         <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">💰 Financial Pressure</h4>
                         <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Working part-time to help family finances limits time for research opportunities, especially unpaid positions that other students can afford.</p>
                     </div>
-                    <div style="background: rgba(</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

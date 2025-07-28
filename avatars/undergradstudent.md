@@ -22,10 +22,17 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
         <p style="color: rgba(255,255,255,0.8); margin:0;">{{ page.major }} • {{ page.education_level }}</p>
       </div>
     </div>
-  </div>
+</div>
 </div>
 
-    <section class="section">
+<nav class="avatar-nav">
+  <a href="#story">Story</a>
+  <a href="#goals">Goals</a>
+  <a href="#strengths">Strengths</a>
+  <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
+</nav>
+
+    <section class="section" id="story">
         <h2>Julian's Story</h2>
         <div style="background: var(--brain-gray); padding: 2rem; border-radius: 12px; margin: 1rem 0;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: var(--synapse-black); margin: 0;">
@@ -58,7 +65,7 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="goals">
         <h2>🎯 Julian's Goals</h2>
         <p>Julian has clear aspirations but needs guidance on how to achieve them:</p>
 
@@ -98,7 +105,7 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="strengths">
         <h2>💪 Strengths & Challenges</h2>
         <p>Like many first-generation students, Julian brings unique strengths while facing specific challenges:</p>
 

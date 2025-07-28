@@ -7,6 +7,284 @@
   --synapse-black: #1f2937;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--brain-gray);
+  color: var(--synapse-black);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+.site-header {
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--neural-blue);
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: var(--synapse-black);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--neural-blue);
+  color: var(--white);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: var(--white);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.25rem 1rem;
+  color: var(--synapse-black);
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  background: var(--brain-gray);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--neural-blue), var(--cerebral-purple), var(--axon-cyan));
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--neural-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  background: var(--cerebral-purple);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: #5b21b6;
+}
+
+/* Layout Sections */
+.section {
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 0 0 0.25rem;
+}
+
+.section-subtitle {
+  color: #6b7280;
+}
+
+/* Cards */
+.cards-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-description {
+  color: #4b5563;
+}
+
+/* Dataset and Workflow Styles */
+.datasets-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.dataset-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+
+.dataset-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.dataset-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tag {
+  background: var(--brain-gray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.workflow-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: auto;
+  padding: 1rem;
+  background: var(--brain-gray);
+  border-radius: 8px;
+}
+
+.pipeline-step {
+  background: var(--axon-cyan);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pipeline-arrow {
+  color: var(--axon-cyan);
+  font-weight: bold;
+}
+
+.step-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cerebral-purple);
+}
+
+.tech-tag {
+  background: var(--brain-gray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+footer {
+  background: var(--synapse-black);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+/* Existing framework and component styles */
 .framework-grid,
 .compass-grid,
 .ccr-boxes {
@@ -44,7 +322,7 @@
   color: #4338ca;
   margin-bottom: 0.5rem;
 }
-  
+
 .framework-grid p,
 .compass-grid p,
 .ccr-boxes p {

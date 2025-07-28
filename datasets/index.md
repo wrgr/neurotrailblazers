@@ -90,7 +90,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
       </div>
     </div>
         <div class="cards-grid" style="margin-top: 2rem;">
-            <div class="card dataset-card" style="background: linear-gradient(135deg, #eff6ff, #dbeafe); border-left: 4px solid var(--neural-blue);">
+            <div class="card dataset-card dataset-card-blue">
                 <div class="dataset-meta">
                     <span class="dataset-year">2015</span>
                     <span class="dataset-type">Mouse Cortex</span>
@@ -111,7 +111,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
                 <a href="{{ '/datasets/kasthuri2015' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">Explore Dataset</a>
             </div>
 
-            <div class="card dataset-card" style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); border-left: 4px solid var(--cerebral-purple);">
+            <div class="card dataset-card dataset-card-purple">
                 <div class="dataset-meta">
                     <span class="dataset-year">2024</span>
                     <span class="dataset-type">Complete Brain</span>
@@ -132,7 +132,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
                 <a href="{{ '/datasets/flywire2024' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">Explore Dataset</a>
             </div>
 
-            <div class="card dataset-card" style="background: linear-gradient(135deg, #ecfeff, #cffafe); border-left: 4px solid var(--axon-cyan);">
+            <div class="card dataset-card dataset-card-cyan">
                 <div class="dataset-meta">
                     <span class="dataset-year">2025</span>
                     <span class="dataset-type">Structure + Function</span>

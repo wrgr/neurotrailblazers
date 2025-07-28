@@ -6,7 +6,13 @@ description: "Overview of all 25 modules organized by MERIT stages and CCR dimen
 permalink: /modules/
 ---
 
-# NeuroTrailblazers Training Modules
+<div class="main-content">
+  <div class="hero hero-spaced hero-rounded">
+    <div class="hero-content">
+      <h1 class="hero-title-impact">NeuroTrailblazers Training Modules</h1>
+    </div>
+  </div>
+
 
 This curriculum includes 25 structured modules aligned with the MERIT model (Mentoring Exceptional Researchers to Innovate and Thrive) and the COMPASS framework (Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self). Each module is tagged by its place in the research pipeline and grounded in CCR (Center for Curriculum Redesign) learning dimensions: Knowledge, Skills, Character, Meta-Learning, and Motivation.
 
@@ -247,4 +253,5 @@ ccrSelect.addEventListener('change', filterModules);
 ---
 
 Need help deciding where to start? Try **[Module 01](module01/)** or visit our [Models]({{ '/models/' | relative_url }}) page to learn more about the MERIT and COMPASS frameworks.
+</div>
 

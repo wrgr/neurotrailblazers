@@ -22,7 +22,6 @@ learning\_objectives:
 <div class="main-content">
   <div class="hero">
     <div class="hero-content">
-      <span class="module-number">Module 13</span>
       <h1>{{ page.title }}</h1>
       <p class="hero-subtitle">{{ page.description }}</p>
     </div>

@@ -188,33 +188,53 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ## 📚 Full Module Index
 
+<p>
+  <label for="stage-select">Stage:</label>
+  <select id="stage-select">
+    <option value="">All</option>
+    <option value="Foundations">Foundations</option>
+    <option value="Question">Question</option>
+    <option value="Experiment">Experiment</option>
+    <option value="Analysis">Analysis</option>
+    <option value="Dissemination">Dissemination</option>
+  </select>
+  <label for="ccr-select" style="margin-left:1rem;">CCR:</label>
+  <select id="ccr-select">
+    <option value="">All</option>
+    <option value="Knowledge">Knowledge</option>
+    <option value="Skills">Skills</option>
+    <option value="Character">Character</option>
+    <option value="Meta-Learning">Meta-Learning</option>
+    <option value="Motivation">Motivation</option>
+  </select>
+</p>
+
 <div class="modules-grid">
-  <div class="card module-card"><a href="module01.md" class="module-number-link">01. Scientific Curiosity & Motivation</a><p class="module-description">Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry.</p></div>
-  <div class="card module-card"><a href="module02.md" class="module-number-link">02. Research Foundations & the Hidden Curriculum</a><p class="module-description">Unwritten norms in science, research roles, and building confidence.</p></div>
-  <div class="card module-card"><a href="module03.md" class="module-number-link">03. Python and Jupyter for Neuroscience</a><p class="module-description">Intro to coding in Python, Jupyter notebooks, and tools for analysis.</p></div>
-  <div class="card module-card"><a href="module04.md" class="module-number-link">04. Neuroanatomy for Connectomics</a><p class="module-description">Understanding neural structure at micro- and macro-scale.</p></div>
-  <div class="card module-card"><a href="module05.md" class="module-number-link">05. Electron Microscopy and Image Basics</a><p class="module-description">EM imaging principles, file formats, and interpretation.</p></div>
-  <div class="card module-card"><a href="module06.md" class="module-number-link">06. Segmentation 101</a><p class="module-description">Understanding segmentation, labels, and sources of error.</p></div>
-  <div class="card module-card"><a href="module07.md" class="module-number-link">07. Proofreading and Quality Control</a><p class="module-description">Identifying merge/split errors and assessing segmentation quality.</p></div>
-  <div class="card module-card"><a href="module08.md" class="module-number-link">08. Hypothesis Testing in Connectomics</a><p class="module-description">Defining and testing hypotheses using statistical tools.</p></div>
-  <div class="card module-card"><a href="module09.md" class="module-number-link">09. Neuron Morphology & Skeletonization</a><p class="module-description">Exploring cell shape, skeletons, and biofeatures.</p></div>
-  <div class="card module-card"><a href="module10.md" class="module-number-link">10. Network Science & Graph Representation</a><p class="module-description">Introduction to graphs, adjacency, and connectome structure.</p></div>
-  <div class="card module-card"><a href="module11.md" class="module-number-link">11. Synapses and Circuit Logic</a><p class="module-description">Mapping synaptic connectivity and interpreting motifs.</p></div>
-  <div class="card module-card"><a href="module12.md" class="module-number-link">12. Big Data in Connectomics</a><p class="module-description">Storage, querying, and scale-aware design.</p></div>
-  <div class="card module-card"><a href="module13.md" class="module-number-link">13. Machine Learning in Neuroscience</a><p class="module-description">Intro to ML concepts and supervised/unsupervised learning.</p></div>
-  <div class="card module-card"><a href="module14.md" class="module-number-link">14. Computer Vision for EM</a><p class="module-description">From filters to deep learning for image understanding.</p></div>
-  <div class="card module-card"><a href="module15.md" class="module-number-link">15. LLMs for Patch Analysis</a><p class="module-description">Using large language models for continuity, errors, and proofing.</p></div>
-  <div class="card module-card"><a href="module16.md" class="module-number-link">16. Project-Based Research Planning</a><p class="module-description">Scoping, feasibility, and aligning skills with goals.</p></div>
-  <div class="card module-card"><a href="module17.md" class="module-number-link">17. Experimental Design & Controls</a><p class="module-description">Establishing valid comparisons and controlling variables.</p></div>
-  <div class="card module-card"><a href="module18.md" class="module-number-link">18. Data Cleaning and Preprocessing</a><p class="module-description">Handling noise, filtering data, and reproducibility.</p></div>
-  <div class="card module-card"><a href="module19.md" class="module-number-link">19. Visualization for Insight</a><p class="module-description">Creating visualizations to explore and explain findings.</p></div>
-  <div class="card module-card"><a href="module20.md" class="module-number-link">20. Statistical Models and Inference</a><p class="module-description">Modeling techniques to interpret neural data.</p></div>
-  <div class="card module-card"><a href="module21.md" class="module-number-link">21. Reproducibility and FAIR Principles</a><p class="module-description">Ensuring research is findable, accessible, and reproducible.</p></div>
-  <div class="card module-card"><a href="module22.md" class="module-number-link">22. Scientific Writing & Presentation</a><p class="module-description">Communicating ideas clearly with audience awareness.</p></div>
-  <div class="card module-card"><a href="module23.md" class="module-number-link">23. Posters, Abstracts, and Conferences</a><p class="module-description">Sharing work with peers and professionals.</p></div>
-  <div class="card module-card"><a href="module24.md" class="module-number-link">24. Career Pathways & Graduate School Prep</a><p class="module-description">Applying skills and navigating research careers.</p></div>
-  <div class="card module-card"><a href="module25.md" class="module-number-link">25. Portfolio, Feedback, and Final Project</a><p class="module-description">Curating evidence of learning and capstone feedback.</p></div>
+{% for mod in site.data.modules %}
+  <div class="card module-card" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
+    <a href="module{{ '%02d' | format: mod.number }}.md" class="module-number-link">{{ '%02d' | format: mod.number }}. {{ mod.title }}</a>
+    <p class="module-description">{{ mod.description }}</p>
+  </div>
+{% endfor %}
 </div>
+
+<script>
+const stageSelect = document.getElementById('stage-select');
+const ccrSelect = document.getElementById('ccr-select');
+
+function filterModules() {
+  const stage = stageSelect.value;
+  const ccr = ccrSelect.value;
+  document.querySelectorAll('.module-card').forEach(card => {
+    const matchStage = !stage || card.dataset.stage === stage;
+    const matchCcr = !ccr || card.dataset.ccr.includes(ccr);
+    card.style.display = (matchStage && matchCcr) ? '' : 'none';
+  });
+}
+
+stageSelect.addEventListener('change', filterModules);
+ccrSelect.addEventListener('change', filterModules);
+</script>
 
 ---
 

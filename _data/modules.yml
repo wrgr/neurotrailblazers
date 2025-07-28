@@ -1,0 +1,125 @@
+- number: 1
+  title: "Scientific Curiosity & Motivation"
+  description: "Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry."
+  stage: "Foundations"
+  ccr: [Knowledge, Character, Meta-Learning, Motivation]
+- number: 2
+  title: "Research Foundations & the Hidden Curriculum"
+  description: "Unwritten norms in science, research roles, and building confidence."
+  stage: "Foundations"
+  ccr: [Knowledge, Character, Meta-Learning, Motivation]
+- number: 3
+  title: "Python and Jupyter for Neuroscience"
+  description: "Intro to coding in Python, Jupyter notebooks, and tools for analysis."
+  stage: "Foundations"
+  ccr: [Knowledge, Skills, Meta-Learning]
+- number: 4
+  title: "Neuroanatomy for Connectomics"
+  description: "Understanding neural structure at micro- and macro-scale."
+  stage: "Question"
+  ccr: [Knowledge, Motivation]
+- number: 5
+  title: "Electron Microscopy and Image Basics"
+  description: "EM imaging principles, file formats, and interpretation."
+  stage: "Foundations"
+  ccr: [Skills, Knowledge]
+- number: 6
+  title: "Segmentation 101"
+  description: "Understanding segmentation, labels, and sources of error."
+  stage: "Question"
+  ccr: [Knowledge, Skills, Character, Meta-Learning, Motivation]
+- number: 7
+  title: "Proofreading and Quality Control"
+  description: "Identifying merge/split errors and assessing segmentation quality."
+  stage: "Question"
+  ccr: [Skills, Character, Meta-Learning]
+- number: 8
+  title: "Hypothesis Testing in Connectomics"
+  description: "Defining and testing hypotheses using statistical tools."
+  stage: "Experiment"
+  ccr: [Knowledge, Skills, Character, Meta-Learning, Motivation]
+- number: 9
+  title: "Neuron Morphology & Skeletonization"
+  description: "Exploring cell shape, skeletons, and biofeatures."
+  stage: "Experiment"
+  ccr: [Knowledge, Skills, Meta-Learning]
+- number: 10
+  title: "Network Science & Graph Representation"
+  description: "Introduction to graphs, adjacency, and connectome structure."
+  stage: "Experiment"
+  ccr: [Knowledge, Character, Meta-Learning, Motivation]
+- number: 11
+  title: "Synapses and Circuit Logic"
+  description: "Mapping synaptic connectivity and interpreting motifs."
+  stage: "Experiment"
+  ccr: [Knowledge, Skills]
+- number: 12
+  title: "Big Data in Connectomics"
+  description: "Storage, querying, and scale-aware design."
+  stage: "Analysis"
+  ccr: [Knowledge, Character]
+- number: 13
+  title: "Machine Learning in Neuroscience"
+  description: "Intro to ML concepts and supervised/unsupervised learning."
+  stage: "Analysis"
+  ccr: [Knowledge, Skills, Character]
+- number: 14
+  title: "Computer Vision for EM"
+  description: "From filters to deep learning for image understanding."
+  stage: "Analysis"
+  ccr: [Knowledge, Skills, Motivation]
+- number: 15
+  title: "LLMs for Patch Analysis"
+  description: "Using large language models for continuity, errors, and proofing."
+  stage: "Analysis"
+  ccr: [Knowledge, Skills, Meta-Learning, Motivation]
+- number: 16
+  title: "Project-Based Research Planning"
+  description: "Scoping, feasibility, and aligning skills with goals."
+  stage: "Analysis"
+  ccr: [Skills]
+- number: 17
+  title: "Experimental Design & Controls"
+  description: "Establishing valid comparisons and controlling variables."
+  stage: "Analysis"
+  ccr: [Knowledge, Skills]
+- number: 18
+  title: "Data Cleaning and Preprocessing"
+  description: "Handling noise, filtering data, and reproducibility."
+  stage: "Analysis"
+  ccr: [Skills, Meta-Learning]
+- number: 19
+  title: "Visualization for Insight"
+  description: "Creating visualizations to explore and explain findings."
+  stage: "Analysis"
+  ccr: [Skills, Meta-Learning]
+- number: 20
+  title: "Statistical Models and Inference"
+  description: "Modeling techniques to interpret neural data."
+  stage: "Analysis"
+  ccr: [Knowledge, Meta-Learning]
+- number: 21
+  title: "Reproducibility and FAIR Principles"
+  description: "Ensuring research is findable, accessible, and reproducible."
+  stage: "Dissemination"
+  ccr: [Knowledge, Character]
+- number: 22
+  title: "Scientific Writing & Presentation"
+  description: "Communicating ideas clearly with audience awareness."
+  stage: "Dissemination"
+  ccr: [Knowledge, Skills, Meta-Learning]
+- number: 23
+  title: "Posters, Abstracts, and Conferences"
+  description: "Sharing work with peers and professionals."
+  stage: "Dissemination"
+  ccr: [Knowledge, Skills, Character, Meta-Learning]
+- number: 24
+  title: "Career Pathways & Graduate School Prep"
+  description: "Applying skills and navigating research careers."
+  stage: "Dissemination"
+  ccr: [Knowledge, Character, Motivation, Meta-Learning]
+- number: 25
+  title: "Portfolio, Feedback, and Final Project"
+  description: "Curating evidence of learning and capstone feedback."
+  stage: "Dissemination"
+  ccr: [Knowledge, Skills, Motivation, Meta-Learning]

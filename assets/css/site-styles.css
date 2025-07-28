@@ -307,6 +307,11 @@ footer {
   padding: 2rem 0;
   margin-top: 4rem;
 }
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
 /* Existing framework and component styles */
 .framework-grid,
@@ -398,4 +403,55 @@ footer {
   .compass-grid .workshop-focus {
     color: #ddd6fe;
   }
+}
+/* Additional page styles */
+.hero-spaced {
+  margin: -2rem -2rem 4rem -2rem;
+  padding: 4rem 2rem;
+}
+.hero-rounded {
+  border-radius: 12px;
+}
+.dataset-card-blue {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-left: 4px solid var(--neural-blue);
+}
+.dataset-card-purple {
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+  border-left: 4px solid var(--cerebral-purple);
+}
+.dataset-card-cyan {
+  background: linear-gradient(135deg, #ecfeff, #cffafe);
+  border-left: 4px solid var(--axon-cyan);
+}
+.checklist-box {
+  background: var(--brain-gray);
+  padding: 2rem;
+  border-radius: 12px;
+}
+.checklist {
+  margin-top: 1rem;
+}
+.checklist label {
+  display: block;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.checklist input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: var(--neural-blue);
+}
+.checklist label:hover {
+  background: rgba(37, 99, 235, 0.05);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+.main-content ol,
+.main-content ul {
+  color: #4b5563;
+  line-height: 1.6;
+}
+.main-content ol li,
+.main-content ul li {
+  margin: 0.25rem 0;
 }

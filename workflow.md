@@ -317,25 +317,25 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       <div class="pathway-card">
         <h3>👁️ Module 2: Sample Preparation</h3>
         <p>Learn tissue processing and staining techniques for EM</p>
-        <a href="/modules/sample-prep" class="btn btn-primary">Start Learning</a>
+        <a href="/modules/module02.md" class="btn btn-primary">Start Learning</a>
       </div>
       
       <div class="pathway-card">
         <h3>🔬 Module 5: EM Imaging</h3>
         <p>Understand electron microscopy and acquisition methods</p>
-        <a href="/modules/em-imaging" class="btn btn-primary">Start Learning</a>
+        <a href="/modules/module05.md" class="btn btn-primary">Start Learning</a>
       </div>
       
       <div class="pathway-card">
         <h3>🤖 Module 8: AI Segmentation</h3>
         <p>Explore machine learning for neuron reconstruction</p>
-        <a href="/modules/ai-segmentation" class="btn btn-primary">Start Learning</a>
+        <a href="/modules/module08.md" class="btn btn-primary">Start Learning</a>
       </div>
       
       <div class="pathway-card">
         <h3>🧠 Module 12: Circuit Analysis</h3>
         <p>Analyze connectivity patterns and discover circuits</p>
-        <a href="/modules/circuit-analysis" class="btn btn-primary">Start Learning</a>
+        <a href="/modules/module12.md" class="btn btn-primary">Start Learning</a>
       </div>
     </div>
   </div>

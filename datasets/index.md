@@ -8,14 +8,15 @@ description: "Explore curated connectomics datasets from landmark studies includ
   <div class="hero hero-spaced">
     <div class="hero-content">
       <h1 class="hero-title-impact">Connectomics Datasets</h1>
-      <div class="hero-description-box">
-        <p class="hero-description">
-          Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.
-        </p>
-        <p class="hero-description"><strong>Learn with real scientific data from groundbreaking research.</strong></p>
-      </div>
     </div>
   </div>
+
+  <section class="section">
+    <div class="card-gray text-center" style="max-width: 700px; margin: 0 auto;">
+      <p><strong>Learn with real scientific data from groundbreaking research.</strong></p>
+      <p>Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.</p>
+    </div>
+  </section>
 
   <section class="section">
     <h2>MouseConnects: HI-MC Spotlight</h2>

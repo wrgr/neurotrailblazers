@@ -800,3 +800,17 @@ footer {
   border-radius: 50%;
   object-fit: cover;
 }
+.avatar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.avatar-nav a {
+  color: var(--neural-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+.avatar-nav a:hover {
+  text-decoration: underline;
+}

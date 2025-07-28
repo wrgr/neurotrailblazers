@@ -334,6 +334,15 @@ body {
   min-height: 2rem;
 }
 
+.card-title-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-inline {
+  margin-right: 0.5rem;
+}
+
 .module-number,
 .dataset-meta {
   margin-bottom: 0.75rem;

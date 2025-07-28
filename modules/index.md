@@ -14,31 +14,33 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ### Module List with Descriptions
 
-1. **[Module 01](module01.md)** – *Scientific Curiosity & Motivation*: Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry.
-2. **[Module 02](module02.md)** – *Research Foundations & the Hidden Curriculum*: Unwritten norms in science, research roles, and building confidence.
-3. **[Module 03](module03.md)** – *Python and Jupyter for Neuroscience*: Intro to coding in Python, Jupyter notebooks, and tools for analysis.
-4. **[Module 04](module04.md)** – *Neuroanatomy for Connectomics*: Understanding neural structure at micro- and macro-scale.
-5. **[Module 05](module05.md)** – *Electron Microscopy and Image Basics*: EM imaging principles, file formats, and interpretation.
-6. **[Module 06](module06.md)** – *Segmentation 101*: Understanding segmentation, labels, and sources of error.
-7. **[Module 07](module07.md)** – *Proofreading and Quality Control*: Identifying merge/split errors and assessing segmentation quality.
-8. **[Module 08](module08.md)** – *Hypothesis Testing in Connectomics*: Defining and testing hypotheses using statistical tools.
-9. **[Module 09](module09.md)** – *Neuron Morphology & Skeletonization*: Exploring cell shape, skeletons, and biofeatures.
-10. **[Module 10](module10.md)** – *Network Science & Graph Representation*: Introduction to graphs, adjacency, and connectome structure.
-11. **[Module 11](module11.md)** – *Synapses and Circuit Logic*: Mapping synaptic connectivity and interpreting motifs.
-12. **[Module 12](module12.md)** – *Big Data in Connectomics*: Storage, querying, and scale-aware design.
-13. **[Module 13](module13.md)** – *Machine Learning in Neuroscience*: Intro to ML concepts and supervised/unsupervised learning.
-14. **[Module 14](module14.md)** – *Computer Vision for EM*: From filters to deep learning for image understanding.
-15. **[Module 15](module15.md)** – *LLMs for Patch Analysis*: Using large language models for continuity, errors, and proofing.
-16. **[Module 16](module16.md)** – *Project-Based Research Planning*: Scoping, feasibility, and aligning skills with goals.
-17. **[Module 17](module17.md)** – *Experimental Design & Controls*: Establishing valid comparisons and controlling variables.
-18. **[Module 18](module18.md)** – *Data Cleaning and Preprocessing*: Handling noise, filtering data, and reproducibility.
-19. **[Module 19](module19.md)** – *Visualization for Insight*: Creating visualizations to explore and explain findings.
-20. **[Module 20](module20.md)** – *Statistical Models and Inference*: Modeling techniques to interpret neural data.
-21. **[Module 21](module21.md)** – *Reproducibility and FAIR Principles*: Ensuring research is findable, accessible, and reproducible.
-22. **[Module 22](module22.md)** – *Scientific Writing & Presentation*: Communicating ideas clearly with audience awareness.
-23. **[Module 23](module23.md)** – *Posters, Abstracts, and Conferences*: Sharing work with peers and professionals.
-24. **[Module 24](module24.md)** – *Career Pathways & Graduate School Prep*: Applying skills and navigating research careers.
-25. **[Module 25](module25.md)** – *Portfolio, Feedback, and Final Project*: Curating evidence of learning and capstone feedback.
+<div class="modules-grid">
+<div class="card module-card"><a href="module01.md" class="module-number-link">01. Scientific Curiosity & Motivation</a><p class="module-description">Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry.</p></div>
+<div class="card module-card"><a href="module02.md" class="module-number-link">02. Research Foundations & the Hidden Curriculum</a><p class="module-description">Unwritten norms in science, research roles, and building confidence.</p></div>
+<div class="card module-card"><a href="module03.md" class="module-number-link">03. Python and Jupyter for Neuroscience</a><p class="module-description">Intro to coding in Python, Jupyter notebooks, and tools for analysis.</p></div>
+<div class="card module-card"><a href="module04.md" class="module-number-link">04. Neuroanatomy for Connectomics</a><p class="module-description">Understanding neural structure at micro- and macro-scale.</p></div>
+<div class="card module-card"><a href="module05.md" class="module-number-link">05. Electron Microscopy and Image Basics</a><p class="module-description">EM imaging principles, file formats, and interpretation.</p></div>
+<div class="card module-card"><a href="module06.md" class="module-number-link">06. Segmentation 101</a><p class="module-description">Understanding segmentation, labels, and sources of error.</p></div>
+<div class="card module-card"><a href="module07.md" class="module-number-link">07. Proofreading and Quality Control</a><p class="module-description">Identifying merge/split errors and assessing segmentation quality.</p></div>
+<div class="card module-card"><a href="module08.md" class="module-number-link">08. Hypothesis Testing in Connectomics</a><p class="module-description">Defining and testing hypotheses using statistical tools.</p></div>
+<div class="card module-card"><a href="module09.md" class="module-number-link">09. Neuron Morphology & Skeletonization</a><p class="module-description">Exploring cell shape, skeletons, and biofeatures.</p></div>
+<div class="card module-card"><a href="module10.md" class="module-number-link">10. Network Science & Graph Representation</a><p class="module-description">Introduction to graphs, adjacency, and connectome structure.</p></div>
+<div class="card module-card"><a href="module11.md" class="module-number-link">11. Synapses and Circuit Logic</a><p class="module-description">Mapping synaptic connectivity and interpreting motifs.</p></div>
+<div class="card module-card"><a href="module12.md" class="module-number-link">12. Big Data in Connectomics</a><p class="module-description">Storage, querying, and scale-aware design.</p></div>
+<div class="card module-card"><a href="module13.md" class="module-number-link">13. Machine Learning in Neuroscience</a><p class="module-description">Intro to ML concepts and supervised/unsupervised learning.</p></div>
+<div class="card module-card"><a href="module14.md" class="module-number-link">14. Computer Vision for EM</a><p class="module-description">From filters to deep learning for image understanding.</p></div>
+<div class="card module-card"><a href="module15.md" class="module-number-link">15. LLMs for Patch Analysis</a><p class="module-description">Using large language models for continuity, errors, and proofing.</p></div>
+<div class="card module-card"><a href="module16.md" class="module-number-link">16. Project-Based Research Planning</a><p class="module-description">Scoping, feasibility, and aligning skills with goals.</p></div>
+<div class="card module-card"><a href="module17.md" class="module-number-link">17. Experimental Design & Controls</a><p class="module-description">Establishing valid comparisons and controlling variables.</p></div>
+<div class="card module-card"><a href="module18.md" class="module-number-link">18. Data Cleaning and Preprocessing</a><p class="module-description">Handling noise, filtering data, and reproducibility.</p></div>
+<div class="card module-card"><a href="module19.md" class="module-number-link">19. Visualization for Insight</a><p class="module-description">Creating visualizations to explore and explain findings.</p></div>
+<div class="card module-card"><a href="module20.md" class="module-number-link">20. Statistical Models and Inference</a><p class="module-description">Modeling techniques to interpret neural data.</p></div>
+<div class="card module-card"><a href="module21.md" class="module-number-link">21. Reproducibility and FAIR Principles</a><p class="module-description">Ensuring research is findable, accessible, and reproducible.</p></div>
+<div class="card module-card"><a href="module22.md" class="module-number-link">22. Scientific Writing & Presentation</a><p class="module-description">Communicating ideas clearly with audience awareness.</p></div>
+<div class="card module-card"><a href="module23.md" class="module-number-link">23. Posters, Abstracts, and Conferences</a><p class="module-description">Sharing work with peers and professionals.</p></div>
+<div class="card module-card"><a href="module24.md" class="module-number-link">24. Career Pathways & Graduate School Prep</a><p class="module-description">Applying skills and navigating research careers.</p></div>
+<div class="card module-card"><a href="module25.md" class="module-number-link">25. Portfolio, Feedback, and Final Project</a><p class="module-description">Curating evidence of learning and capstone feedback.</p></div>
+</div>
 
 ---
 

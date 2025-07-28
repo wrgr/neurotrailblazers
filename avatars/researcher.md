@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: avatar
 title: Amir – The Translator
 role: AI Scientist
 experience: Expert (industry)

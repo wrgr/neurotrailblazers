@@ -72,5 +72,5 @@ Students trained through NeuroTrailblazers are not just observers — they are c
 
 To get started contributing:
 - Explore the [Workflow]({{ '/datasets/workflow' | relative_url }})
-- Meet the [Avatars](/avatars/)
-- Try a [Module](/modules/module01/)
+- Meet the [Avatars]({{ '/avatars/' | relative_url }})
+- Try a [Module]({{ '/modules/module01/' | relative_url }})

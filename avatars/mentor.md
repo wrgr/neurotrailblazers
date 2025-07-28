@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: avatar
 title: Dr. Nguyen – The Vision Builder
 role: Postdoc
 experience: Advanced

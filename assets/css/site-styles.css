@@ -250,6 +250,10 @@ body {
   min-height: 2rem;
 }
 
+.dataset-type {
+  margin-right: 0.5rem;
+}
+
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;

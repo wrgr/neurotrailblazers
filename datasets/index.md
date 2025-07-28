@@ -177,4 +177,10 @@ description: "Explore curated connectomics datasets from landmark studies includ
       </div>
     </div>
   </section>
+
+  <section class="section" style="text-align: center;">
+    <h2>📂 Accessing These Datasets</h2>
+    <p>Follow our step-by-step guide to download data from public repositories.</p>
+    <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary" style="margin-top: 1rem;">Dataset Access Guide</a>
+  </section>
 </div>

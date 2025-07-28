@@ -358,9 +358,9 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       </div>
       
       <div class="cta-card">
-        <h3>👥 Find Your Archetype</h3>
+        <h3>👥 Find Your Avatar</h3>
         <p>See how students like you navigate connectomics research</p>
-        <a href="/archetypes/" class="btn btn-secondary">Student Stories</a>
+        <a href="/avatars/" class="btn btn-secondary">Student Stories</a>
       </div>
     </div>
   </div>

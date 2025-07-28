@@ -1,6 +1,6 @@
 NeuroTrailblazers Persona Composer
 
-To generate a new archetype:
+To generate a new avatar:
 
 1. Choose MERIT focus (e.g., Motivation, Skills, Character)
 2. Select career stage (e.g., undergrad, grad, postdoc, industry)

@@ -2,6 +2,7 @@
 layout: avatar
 title: "Julian - First-Generation Undergraduate"
 description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
+emoji: "👨‍🎓"
 student_name: "Julian Rodriguez"
 education_level: "Undergraduate Sophomore"
 background: "First-generation college student"
@@ -13,18 +14,18 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
 ---
 
 <div class="main-content">
-    <div class="hero" style="margin: -2rem -2rem 4rem -2rem; padding: 4rem 2rem;">
-        <div class="hero-content">
-            <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                <div style="width: 120px; height: 120px; background: var(--gradient-synapse); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white;">👨‍🎓</div>
-                <div style="text-align: left;">
-                    <h1 style="margin: 0;">{{ page.student_name }}</h1>
-                    <p class="hero-subtitle" style="margin: 0.5rem 0;">{{ page.background }}</p>
-                    <p style="color: rgba(255,255,255,0.8); margin: 0;">{{ page.major }} • {{ page.education_level }}</p>
-                </div>
-            </div>
-        </div>
+<div class="hero hero-spaced hero-rounded">
+  <div class="hero-content">
+    <div style="display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <div class="avatar-icon">{{ page.emoji }}</div>
+      <div>
+        <h1>{{ page.student_name }}</h1>
+        <p class="hero-subtitle">{{ page.background }}</p>
+        <p style="color: rgba(255,255,255,0.8); margin:0;">{{ page.major }} • {{ page.education_level }}</p>
+      </div>
     </div>
+  </div>
+</div>
 
     <section class="section">
         <h2>Julian's Story</h2>
@@ -133,4 +134,4 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
                         <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">💰 Financial Pressure</h4>
                         <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Working part-time to help family finances limits time for research opportunities, especially unpaid positions that other students can afford.</p>
                     </div>
-                    <div style="background: rgba(
+                    <div style="background: rgba(</div>

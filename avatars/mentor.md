@@ -5,7 +5,21 @@ role: Postdoc
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
 motivation: Advance connectomics and build healthier research teams
+emoji: "🧑‍🏫"
 ---
+
+<div class="main-content">
+<div class="hero hero-spaced hero-rounded">
+  <div class="hero-content">
+    <div style="display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <div class="avatar-icon">{{ page.emoji }}</div>
+      <div>
+        <h1>{{ page.title }}</h1>
+        <p class="hero-subtitle">{{ page.role }}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 Dr. Nguyen has always moved forward—quickly. From valedictorian to PhD to postdoc, she’s led with clarity. But now, managing data releases, peer mentorship, and grant deadlines, she wonders: what’s next?
 
@@ -25,3 +39,4 @@ She thrives when ideas snap together. But leadership is lonely, and good science
 - Sees that leading *is* science
 - Embraces collaboration as her core contribution
 - Writes grant proposals that prioritize mentorship alongside aims
+</div>

@@ -65,13 +65,7 @@ navigation:
     url: "/datasets/workflow"
   - title: "Modules"
     url: "/modules/"
-    dropdown:
-      - title: "Module 0: Inspiration"
-        url: "/modules/module01/"
-      - title: "Module 1: Introduction"
-        url: "/modules/module02/"
-      - title: "All Modules"
-        url: "/modules/"
+    dropdown: []
   - title: "Datasets"
     url: "/datasets/"
   - title: "Avatars"

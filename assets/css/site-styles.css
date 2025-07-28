@@ -236,6 +236,17 @@ body {
 .card-icon {
   font-size: 2rem;
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
+}
+
+.module-number,
+.dataset-meta {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
 }
 
 .card-title {

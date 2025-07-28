@@ -1,22 +1,25 @@
 ---
-
 title: "Module 12: Functional Annotation and Synapse Typing"
 layout: module
+permalink: /modules/module12/
 description: "Explore how functional roles of synapses and neurons are assigned through morphology and location."
-module\_number: 12
+module_number: 12
 difficulty: "Advanced"
 duration: "3-4 hours"
-learning\_objectives:
-
-* "Describe structural features that correlate with synaptic function"
-* "Classify synapse types from EM images"
-* "Use anatomical position to infer circuit roles"
-* "Compare functional maps with segmentation data"
-  prerequisites: "Modules 1-11, EM segmentation, neuroanatomy basics"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Biological Reasoning", "Classification", "Structure-Function Mapping"]
-  ccr\_focus: \["Knowledge - Neurobiology", "Skills - Morphological Analysis"]
-
+learning_objectives:
+  - "Describe structural features that correlate with synaptic function"
+  - "Classify synapse types from EM images"
+  - "Use anatomical position to infer circuit roles"
+  - "Compare functional maps with segmentation data"
+prerequisites: "Modules 1-11, EM segmentation, neuroanatomy basics"
+merit_stage: "Analysis"
+compass_skills:
+  - "Biological Reasoning"
+  - "Classification"
+  - "Structure-Function Mapping"
+ccr_focus:
+  - "Knowledge - Neurobiology"
+  - "Skills - Morphological Analysis"
 ---
 
 <div class="main-content">

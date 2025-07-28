@@ -1,22 +1,25 @@
 ---
-
 title: "Module 05: From Pixels to Proofreading: Image Segmentation and Quality Control"
 layout: module
+permalink: /modules/module05/
 description: "Discover how neural structures are segmented from raw EM images and how humans proofread to ensure accuracy."
-module\_number: 5
+module_number: 5
 difficulty: "Intermediate"
 duration: "3-4 hours"
-learning\_objectives:
-
-* "Explain the concept of image segmentation in connectomics"
-* "Understand the role of neural networks in segmenting EM volumes"
-* "Learn how human proofreading improves segmentation accuracy"
-* "Perform basic proofreading tasks using Neuroglancer"
-  prerequisites: "Module 4 and familiarity with EM imaging"
-  merit\_stage: "Experiment"
-  compass\_skills: \["Scientific Visualization", "Attention to Detail", "Collaboration"]
-  ccr\_focus: \["Skills - Data Integrity", "Character - Grit"]
-
+learning_objectives:
+  - "Explain the concept of image segmentation in connectomics"
+  - "Understand the role of neural networks in segmenting EM volumes"
+  - "Learn how human proofreading improves segmentation accuracy"
+  - "Perform basic proofreading tasks using Neuroglancer"
+prerequisites: "Module 4 and familiarity with EM imaging"
+merit_stage: "Experiment"
+compass_skills:
+  - "Scientific Visualization"
+  - "Attention to Detail"
+  - "Collaboration"
+ccr_focus:
+  - "Skills - Data Integrity"
+  - "Character - Grit"
 ---
 
 <div class="main-content">

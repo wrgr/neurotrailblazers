@@ -73,4 +73,4 @@ Students trained through NeuroTrailblazers are not just observers — they are c
 To get started contributing:
 - Explore the [Workflow](/workflow)
 - Meet the [Archetypes](/archetypes/)
-- Try a [Module](/modules/module-0-inspiration/)
+- Try a [Module](/modules/module01/)

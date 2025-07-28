@@ -25,7 +25,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 <h3 class="card-title">I'm New to Neuroscience</h3>
                 <p class="card-description">Start with our foundational modules to understand the brain, neurons, and basic neuroscience concepts.</p>
                 <div style="margin-top: 1rem;">
-                    <a href="{{ '/modules/module-0-inspiration/' | relative_url }}" class="btn btn-primary">Begin with Inspiration</a>
+                    <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Begin with Inspiration</a>
                 </div>
             </div>
             <div class="card">
@@ -33,7 +33,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 <h3 class="card-title">I Know Some Neuroscience</h3>
                 <p class="card-description">Jump into connectomics-specific content and learn about mapping neural circuits.</p>
                 <div style="margin-top: 1rem;">
-                    <a href="{{ '/modules/module-1-intro/' | relative_url }}" class="btn btn-primary">Start with Introduction</a>
+                    <a href="{{ '/modules/module02/' | relative_url }}" class="btn btn-primary">Start with Introduction</a>
                 </div>
             </div>
             <div class="card">

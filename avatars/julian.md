@@ -1,5 +1,5 @@
 ---
-layout: archetype
+layout: default
 title: "Julian - First-Generation Undergraduate"
 description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
 student_name: "Julian Rodriguez"

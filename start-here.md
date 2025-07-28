@@ -192,7 +192,7 @@ description: "Begin your adventure in computational neuroscience with our struct
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
             <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">View All Modules</a>
             <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Explore Datasets</a>
-            <a href="{{ '/workflow' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
+            <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
         </div>
     </div>
 </div>

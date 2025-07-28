@@ -35,7 +35,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
       </ul>
       <div class="dataset-actions">
         <a href="/mouseconnects" class="btn btn-primary">Project Details</a>
-        <a href="/workflow" class="btn btn-secondary">View Pipeline</a>
+        <a href="/datasets/workflow" class="btn btn-secondary">View Pipeline</a>
       </div>
     </div>
   </section>

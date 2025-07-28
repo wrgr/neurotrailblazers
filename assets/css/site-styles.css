@@ -733,3 +733,13 @@ footer {
 .opacity-70 { opacity: 0.7; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
+
+/* Ask the Expert page styles */
+.expert-bio {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}

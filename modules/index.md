@@ -151,6 +151,8 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
     <h3>Dissemination</h3>
     <p><strong>Knowledge</strong></p>
     <div class="module-subcards">
+      <a href="module16" class="module-subcard">16. Scientific Visualization for Connectomics</a>
+      <a href="module17" class="module-subcard">17. Scientific Writing for Connectomics</a>
       <a href="module21" class="module-subcard">21. Reproducibility and FAIR Principles</a>
       <a href="module22" class="module-subcard">22. Scientific Writing & Presentation</a>
       <a href="module23" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
@@ -159,6 +161,8 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
     </div>
     <p><strong>Skills</strong></p>
     <div class="module-subcards">
+      <a href="module16" class="module-subcard">16. Scientific Visualization for Connectomics</a>
+      <a href="module17" class="module-subcard">17. Scientific Writing for Connectomics</a>
       <a href="module22" class="module-subcard">22. Scientific Writing & Presentation</a>
       <a href="module23" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="module25" class="module-subcard">25. Portfolio, Feedback, and Final Project</a>
@@ -166,11 +170,14 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
     <p><strong>Character</strong></p>
     <div class="module-subcards">
       <a href="module21" class="module-subcard">21. Reproducibility and FAIR Principles</a>
+      <a href="module17" class="module-subcard">17. Scientific Writing for Connectomics</a>
       <a href="module23" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="module24" class="module-subcard">24. Career Pathways & Graduate School Prep</a>
     </div>
     <p><strong>Meta-Learning</strong></p>
     <div class="module-subcards">
+      <a href="module16" class="module-subcard">16. Scientific Visualization for Connectomics</a>
+      <a href="module17" class="module-subcard">17. Scientific Writing for Connectomics</a>
       <a href="module22" class="module-subcard">22. Scientific Writing & Presentation</a>
       <a href="module23" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="module24" class="module-subcard">24. Career Pathways & Graduate School Prep</a>

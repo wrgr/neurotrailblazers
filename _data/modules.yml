@@ -74,15 +74,15 @@
   stage: "Analysis"
   ccr: [Knowledge, Skills, Meta-Learning, Motivation]
 - number: 16
-  title: "Project-Based Research Planning"
-  description: "Scoping, feasibility, and aligning skills with goals."
-  stage: "Analysis"
-  ccr: [Skills]
+  title: "Scientific Visualization for Connectomics"
+  description: "Create effective 2D and 3D visuals to communicate connectome data."
+  stage: "Dissemination"
+  ccr: [Skills, Meta-Learning]
 - number: 17
-  title: "Experimental Design & Controls"
-  description: "Establishing valid comparisons and controlling variables."
-  stage: "Analysis"
-  ccr: [Knowledge, Skills]
+  title: "Scientific Writing for Connectomics"
+  description: "Write clear papers, abstracts, and figure captions for neuroscience audiences."
+  stage: "Dissemination"
+  ccr: [Knowledge, Skills, Character]
 - number: 18
   title: "Data Cleaning and Preprocessing"
   description: "Handling noise, filtering data, and reproducibility."

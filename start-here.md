@@ -77,7 +77,7 @@ description: "Begin your adventure in computational neuroscience with our struct
             </div>
         </div>
 
-        <h3>Student Archetypes</h3>
+        <h3>Student Avatars</h3>
         <p>Meet our representative students to see yourself in their journeys:</p>
         <div class="cards-grid" style="margin-top: 1rem;">
             <div class="card" style="text-align: center;">
@@ -154,7 +154,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 </label>
                 <label>
                     <input type="checkbox">
-                    4. Meet your student <a href="{{ '/archetypes/' | relative_url }}">archetype</a>
+                    4. Meet your student <a href="{{ '/avatars/' | relative_url }}">avatar</a>
                 </label>
                 <label>
                     <input type="checkbox">

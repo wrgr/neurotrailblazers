@@ -17,7 +17,7 @@ collections:
   modules:
     output: true
     permalink: /:collection/:name/
-  archetypes:
+  avatars:
     output: true
     permalink: /:collection/:name/
   datasets:
@@ -33,7 +33,7 @@ defaults:
       layout: "module"
   - scope:
       path: ""
-      type: "archetypes"
+      type: "avatars"
     values:
       layout: "archetype"
   - scope:
@@ -74,8 +74,8 @@ navigation:
         url: "/modules/"
   - title: "Datasets"
     url: "/datasets/"
-  - title: "Archetypes"
-    url: "/archetypes/"
+  - title: "Avatars"
+    url: "/avatars/"
 
 # Grant and program information
 grant_info:

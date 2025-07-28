@@ -1,5 +1,11 @@
 # Getting Started with EM Connectomics Datasets
 
+---
+layout: dataset
+title: "Accessing Public EM Datasets"
+description: "Resources and notebooks for downloading and exploring connectomics data."
+---
+
 A guide to resources and example notebooks for accessing major public Electron Microscopy (EM) connectomics datasets.
 
 ---

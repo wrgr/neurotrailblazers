@@ -18,12 +18,12 @@ permalink: /ask-the-expert/
   </div>
 </div>
 
-<section class="section expert-bio">
-<div class="section-header">
+<section class="section expert-bio" markdown="1">
+<div class="section-header expert-bio-header">
+  <div class="expert-avatar">
+    <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
+  </div>
   <h2 class="section-title">👤 About Dr. Jeff Lichtman</h2>
-</div>
-<div class="expert-avatar mb-2">
-  <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
 </div>
 
 Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
@@ -40,7 +40,7 @@ In April 2024, Harvard named Dr. Lichtman the Dean of Science for the Faculty of
 
 </section>
 
-<section class="section expert-bio">
+<section class="section expert-bio" markdown="1">
 <div class="section-header">
   <h2 class="section-title">🤖 How to Use the Chatbot</h2>
 </div>
@@ -55,7 +55,7 @@ This chatbot is trained on publicly available knowledge, papers, and lectures by
 
 </section>
 
-<section class="section expert-bio">
+<section class="section expert-bio" markdown="1">
 <div class="section-header">
   <h2 class="section-title">📚 Recommended Resources</h2>
 </div>

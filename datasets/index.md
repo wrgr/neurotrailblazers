@@ -12,25 +12,21 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <p class="hero-description">
           Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.
         </p>
+        <p class="hero-description"><strong>Learn with real scientific data from groundbreaking research.</strong></p>
       </div>
     </div>
-  </div>
-
-  <div class="dataset-card" style="margin: 1.5rem auto; text-align: center; max-width: 600px;">
-    <p class="card-description">Learn with real scientific data from groundbreaking research.</p>
   </div>
 
   <section class="section">
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <div class="dataset-icon">🚀</div>
+        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress (2023-2028)</span>
         </div>
       </div>
-      <h3><a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
       <p>A flagship $40M NIH BRAIN CONNECTS effort to reconstruct <strong>10&nbsp;mm³</strong> of mouse hippocampal formation at nanometer resolution&mdash;the most ambitious connectomics project ever undertaken.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse (C57BL/6)</li>
@@ -51,13 +47,12 @@ description: "Explore curated connectomics datasets from landmark studies includ
     
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <div class="dataset-icon">🧠</div>
+        <h3><span class="dataset-icon">🧠</span> <a href="https://h01-release.storage.googleapis.com/landing.html" target="_blank">H01 - Human Cortical Fragment</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Human Cortex</span>
           <span class="dataset-status">Published 2024</span>
         </div>
       </div>
-      <h3><a href="https://h01-release.storage.googleapis.com/landing.html" target="_blank">H01 - Human Cortical Fragment</a></h3>
       <p>A 1.4 petabyte rendering of a small sample of human brain tissue, imaged at 4nm-resolution by serial section electron microscopy, reconstructed and annotated by automated computational techniques. The dataset comprises roughly one cubic millimeter of brain tissue, including tens of thousands of reconstructed neurons, millions of neuron fragments, 130 million annotated synapses, 104 proofread cells, and many additional subcellular annotations.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Human</li>
@@ -76,13 +71,12 @@ description: "Explore curated connectomics datasets from landmark studies includ
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <div class="dataset-icon">🐭</div>
+        <h3><span class="dataset-icon">🐭</span> <a href="https://www.microns-explorer.org/" target="_blank">MICrONS - Mouse Visual Cortex</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Mouse Visual Cortex</span>
           <span class="dataset-status">Published 2025</span>
         </div>
       </div>
-      <h3><a href="https://www.microns-explorer.org/" target="_blank">MICrONS - Mouse Visual Cortex</a></h3>
       <p>Dense calcium imaging of around 75,000 neurons in primary visual cortex (VISp) and higher visual areas (VISrl, VISal and VISlm) in an awake mouse viewing natural and synthetic stimuli. The functional data were co-registered with a volumetric electron microscopy reconstruction containing more than 200,000 cells and 0.5 billion synapses.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse</li>
@@ -102,13 +96,12 @@ description: "Explore curated connectomics datasets from landmark studies includ
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <div class="dataset-icon">🪰</div>
+        <h3><span class="dataset-icon">🪰</span> <a href="https://flywire.ai/" target="_blank">FlyWire - Complete Adult Fly Brain</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Drosophila Whole Brain</span>
           <span class="dataset-status">Published 2024</span>
         </div>
       </div>
-      <h3><a href="https://flywire.ai/" target="_blank">FlyWire - Complete Adult Fly Brain</a></h3>
       <p>AI-segmented, expert-proofread neurons of a whole-brain connectome of an adult female Drosophila with 139,255 neurons and 50 million synaptic connections. The first complete connectome of an adult animal brain, including systematic hierarchical annotation of neuronal classes, cell types and developmental units.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Drosophila melanogaster (female)</li>
@@ -128,13 +121,12 @@ description: "Explore curated connectomics datasets from landmark studies includ
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <div class="dataset-icon">🪰</div>
+        <h3><span class="dataset-icon">🪰</span> <a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Drosophila Central Brain</span>
           <span class="dataset-status">Published 2020</span>
         </div>
       </div>
-      <h3><a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
       <p>Dense reconstruction of a portion of the central brain of <em>Drosophila melanogaster</em>, revealing circuits for learning, navigation, and circadian rhythms.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Drosophila melanogaster (female)</li>
@@ -505,13 +497,12 @@ description: "Explore curated connectomics datasets from landmark studies includ
 
     <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
       <div class="dataset-header">
-        <div class="dataset-icon">🔧</div>
+        <h3><span class="dataset-icon">🔧</span> <a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Tutorials</span>
           <span class="dataset-status">Resources</span>
         </div>
       </div>
-      <h3><a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
       <p>Step-by-step guides and example notebooks for downloading connectomics data from Google, the Allen Institute, Janelia, and bossDB.</p>
       <div class="dataset-actions">
         <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary">View Guide</a>

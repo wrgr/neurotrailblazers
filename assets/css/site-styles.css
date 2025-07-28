@@ -378,6 +378,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.dataset-icon {
+  margin-right: 0.5rem;
+}
+
 .dataset-tags {
   margin-top: 1rem;
   display: flex;

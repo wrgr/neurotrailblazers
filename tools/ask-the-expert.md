@@ -17,7 +17,7 @@ permalink: /ask-the-expert/
     </div>
     <div class="hero-visual">
       <div class="expert-avatar">
-        <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Dr. Jeff Lichtman">
+        <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
       </div>
     </div>
   </div>

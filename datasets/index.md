@@ -42,6 +42,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
   <section class="section">
     <h2>Connectomics Timeline</h2>
     <div class="timeline">
+      <!-- 1986 -->
       <div class="timeline-item">
         <div class="timeline-year">1986</div>
         <div class="timeline-content">
@@ -56,6 +57,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </div>
       </div>
 
+      <!-- 2011 -->
       <div class="timeline-item">
         <div class="timeline-year">2011</div>
         <div class="timeline-content">
@@ -70,6 +72,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </div>
       </div>
 
+      <!-- 2015 -->
       <div class="timeline-item">
         <div class="timeline-year">2015</div>
         <div class="timeline-content">
@@ -84,6 +87,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </div>
       </div>
 
+      <!-- 2020 -->
       <div class="timeline-item">
         <div class="timeline-year">2020</div>
         <div class="timeline-content">
@@ -98,6 +102,22 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </div>
       </div>
 
+      <!-- 2023-2028 -->
+      <div class="timeline-item">
+        <div class="timeline-year">2023–2028</div>
+        <div class="timeline-content">
+          <h3 class="card-title">MouseConnects</h3>
+          <p class="card-description">A complete synapse-level reconstruction of mouse hippocampal formation.</p>
+          <ul class="dataset-facts">
+            <li><strong>Species:</strong> Mouse</li>
+            <li><strong>Volume:</strong> 10 mm³</li>
+            <li><strong>Size:</strong> 10 PB</li>
+          </ul>
+          <a href="/datasets/mouseconnects" class="btn btn-primary">Explore Project</a>
+        </div>
+      </div>
+
+      <!-- 2024 -->
       <div class="timeline-item">
         <div class="timeline-year">2024</div>
         <div class="timeline-content">
@@ -112,6 +132,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </div>
       </div>
 
+      <!-- 2025 -->
       <div class="timeline-item">
         <div class="timeline-year">2025</div>
         <div class="timeline-content">
@@ -125,19 +146,32 @@ description: "Explore curated connectomics datasets from landmark studies includ
           <a href="{{ '/datasets/microns2025' | relative_url }}" class="btn btn-primary">Explore Dataset</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2023–2028</div>
-        <div class="timeline-content">
-          <h3 class="card-title">MouseConnects</h3>
-          <p class="card-description">A complete synapse-level reconstruction of mouse hippocampal formation.</p>
-          <ul class="dataset-facts">
-            <li><strong>Species:</strong> Mouse</li>
-            <li><strong>Volume:</strong> 10 mm³</li>
-            <li><strong>Size:</strong> 10 PB</li>
-          </ul>
-          <a href="/datasets/mouseconnects" class="btn btn-primary">Explore Project</a>
-        </div>
+  <section class="section">
+    <h2>🔍 Dataset Categories</h2>
+    <p>Connectomics datasets vary in scope, species, and methodology. Understanding these categories helps you choose the right data for your learning goals.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+      <div style="background: var(--brain-gray); padding: 1.5rem; border-radius: 12px;">
+        <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🤓 By Species</h3>
+        <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
+          <li><strong>C. elegans:</strong> Simple, complete nervous system (302 neurons)</li>
+          <li><strong>Drosophila:</strong> Complex invertebrate brain (~140,000 neurons)</li>
+          <li><strong>Mouse:</strong> Mammalian cortical circuits (millions of neurons)</li>
+          <li><strong>Human:</strong> Small cortical samples (thousands of neurons)</li>
+        </ul>
+      </div>
+
+      <div style="background: var(--brain-gray); padding: 1.5rem; border-radius: 12px;">
+        <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🔬 By Resolution</h3>
+        <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
+          <li><strong>Synaptic:</strong> Individual synapses and connections</li>
+          <li><strong>Cellular:</strong> Complete neuronal morphologies</li>
+          <li><strong>Circuit:</strong> Functional neural networks</li>
+          <li><strong>Regional:</strong> Large-scale brain organization</li>
+        </ul>
       </div>
     </div>
   </section>

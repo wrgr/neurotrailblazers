@@ -71,8 +71,8 @@ learning\_objectives:
   <section class="section">
     <h2>📚 References & Resources</h2>
     <ul>
-      <li>NIH Grants 101: https://grants.nih.gov/grants/grants_process.htm</li>
-      <li>NSF GRFP Program: https://www.nsfgrfp.org/</li>
+      <li><a href="https://grants.nih.gov/grants/grants_process.htm">NIH Grants 101</a></li>
+      <li><a href="https://www.nsfgrfp.org/">NSF GRFP Program</a></li>
       <li>Colab: "Grant Planning Toolkit and Budget Worksheet"</li>
     </ul>
   </section>

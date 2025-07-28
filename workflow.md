@@ -4,7 +4,7 @@ title: "Connectomics Workflow"
 description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis"
 ---
 
-<div class="hero-section">
+<div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
       <h1>Nanoscale Connectomics Workflow</h1>

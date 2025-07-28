@@ -9,10 +9,11 @@ permalink: /ask-the-expert/
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
-      <h1>Ask the Expert</h1>
-      <p class="hero-subtitle">Chat with Dr. Jeff Lichtman, connectomics pioneer</p>
-      <p class="hero-description">Our curated AI bot answers your questions about brain mapping and research life.</p>
-      <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>
+      <h1 class="hero-title-impact">Ask the Expert<span>: Chat with Dr. Jeff Lichtman</span></h1>
+      <div class="hero-description-box">
+        <p class="hero-description">Our curated AI bot answers your questions about brain mapping and research life.</p>
+        <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>
+      </div>
     </div>
     <div class="hero-visual">
       <div class="expert-avatar">
@@ -23,7 +24,9 @@ permalink: /ask-the-expert/
 </div>
 
 <section class="section expert-bio">
-### 👤 About Dr. Jeff Lichtman
+<div class="section-header">
+  <h2 class="section-title">👤 About Dr. Jeff Lichtman</h2>
+</div>
 
 Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
 
@@ -35,10 +38,14 @@ He is a co-lead of the **Harvard-Mouse Connectome Project (HI-MC)**, which aims 
 
 🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
 
+In April 2024, Harvard named Dr. Lichtman the Dean of Science for the Faculty of Arts and Sciences, underscoring his leadership in fostering cross-disciplinary collaboration and open, data-driven discovery.
+
 </section>
 
 <section class="section expert-bio">
-### 🤖 How to Use the Chatbot
+<div class="section-header">
+  <h2 class="section-title">🤖 How to Use the Chatbot</h2>
+</div>
 
 This chatbot is trained on publicly available knowledge, papers, and lectures by Dr. Lichtman. It is designed to:
 - Explain core concepts in connectomics
@@ -51,10 +58,13 @@ This chatbot is trained on publicly available knowledge, papers, and lectures by
 </section>
 
 <section class="section expert-bio">
-### 📚 Recommended Resources
+<div class="section-header">
+  <h2 class="section-title">📚 Recommended Resources</h2>
+</div>
 
 - [Nature (2025): MICrONS Connectome Paper](https://www.nature.com/articles/s41586-025-08790-w)
 - [Jeff Lichtman: Wired Brains (YouTube)](https://www.youtube.com/watch?v=4c1lqFXHvqI)
+- [Harvard Gazette: Jeff Lichtman Named Dean of Science (2024)](https://news.harvard.edu/gazette/story/2024/04/jeff-lichtman-named-dean-of-science/)
 - [Jeff Lichtman Profile - HHMI](https://www.hhmi.org/scientists/jeff-w-lichtman)
 - [Lab Website](https://lichtmanlab.fas.harvard.edu/)
 

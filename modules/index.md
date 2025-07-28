@@ -44,15 +44,50 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ## 🧠 MERIT × CCR Curriculum Grid
 
-|               | Knowledge          | Skills             | Character  | Meta-Learning  | Motivation |
-| ------------- | ------------------ | ------------------ | ---------- | -------------- | ---------- |
-| Foundations   | 01, 02, 03, 04     | 03, 05             | 01, 02     | 01, 02, 03     | 01, 02     |
-| Question      | 04, 05, 06         | 06, 07             | 06, 07     | 06, 07, 08     | 04, 06     |
-| Experiment    | 08, 09, 10, 11     | 08, 09, 11         | 08, 10     | 08, 09, 10     | 08, 10     |
-| Analysis      | 12, 13, 14, 15, 20 | 13, 14, 15, 18, 19 | 12, 13, 14 | 15, 18, 19, 20 | 14, 15     |
-| Dissemination | 21, 22, 23, 24, 25 | 22, 23, 25         | 21, 23, 24 | 22, 23, 24, 25 | 24, 25     |
+<div class="framework-grid">
+  <div class="merit-stage">
+    <h3>Foundations</h3>
+    <p><strong>Knowledge:</strong> 01, 02, 03, 04</p>
+    <p><strong>Skills:</strong> 03, 05</p>
+    <p><strong>Character:</strong> 01, 02</p>
+    <p><strong>Meta-Learning:</strong> 01, 02, 03</p>
+    <p><strong>Motivation:</strong> 01, 02</p>
+  </div>
+  <div class="merit-stage">
+    <h3>Question</h3>
+    <p><strong>Knowledge:</strong> 04, 05, 06</p>
+    <p><strong>Skills:</strong> 06, 07</p>
+    <p><strong>Character:</strong> 06, 07</p>
+    <p><strong>Meta-Learning:</strong> 06, 07, 08</p>
+    <p><strong>Motivation:</strong> 04, 06</p>
+  </div>
+  <div class="merit-stage">
+    <h3>Experiment</h3>
+    <p><strong>Knowledge:</strong> 08, 09, 10, 11</p>
+    <p><strong>Skills:</strong> 08, 09, 11</p>
+    <p><strong>Character:</strong> 08, 10</p>
+    <p><strong>Meta-Learning:</strong> 08, 09, 10</p>
+    <p><strong>Motivation:</strong> 08, 10</p>
+  </div>
+  <div class="merit-stage">
+    <h3>Analysis</h3>
+    <p><strong>Knowledge:</strong> 12, 13, 14, 15, 20</p>
+    <p><strong>Skills:</strong> 13, 14, 15, 18, 19</p>
+    <p><strong>Character:</strong> 12, 13, 14</p>
+    <p><strong>Meta-Learning:</strong> 15, 18, 19, 20</p>
+    <p><strong>Motivation:</strong> 14, 15</p>
+  </div>
+  <div class="merit-stage">
+    <h3>Dissemination</h3>
+    <p><strong>Knowledge:</strong> 21, 22, 23, 24, 25</p>
+    <p><strong>Skills:</strong> 22, 23, 25</p>
+    <p><strong>Character:</strong> 21, 23, 24</p>
+    <p><strong>Meta-Learning:</strong> 22, 23, 24, 25</p>
+    <p><strong>Motivation:</strong> 24, 25</p>
+  </div>
+</div>
 
-> Each cell contains module numbers aligned with both the MERIT scientific stage and the CCR development dimension.
+<p><em>Each card summarizes module numbers aligned with the MERIT stage and CCR dimension.</em></p>
 
 ---
 

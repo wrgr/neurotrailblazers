@@ -3,18 +3,6 @@ layout: dataset
 title: "MouseConnects Dataset - Complete Hippocampal Connectome"
 ---
 <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-        }
 
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

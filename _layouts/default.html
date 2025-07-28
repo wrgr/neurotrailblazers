@@ -22,7 +22,15 @@
                 {% for item in site.navigation %}
                 <li class="nav-item">
                     <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
-                    {% if item.dropdown %}
+                    {% if item.title == 'Modules' %}
+                    <ul class="dropdown">
+                        {% for mod in site.data.modules limit:5 %}
+                        {% capture numpad %}{{ mod.number | prepend: '0' | slice: -2 }}{% endcapture %}
+                        <li><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}" class="dropdown-link">{{ mod.number | prepend: '0' | slice: -2 }}. {{ mod.title }}</a></li>
+                        {% endfor %}
+                        <li><a href="{{ '/modules/' | relative_url }}" class="dropdown-link">All Modules</a></li>
+                    </ul>
+                    {% elsif item.dropdown %}
                     <ul class="dropdown">
                         {% for subitem in item.dropdown %}
                         <li><a href="{{ subitem.url | relative_url }}" class="dropdown-link">{{ subitem.title }}</a></li>

@@ -15,7 +15,6 @@ ccr_focus: ["Knowledge - Scientific Literacy", "Meta-Learning - Problem Framing"
 <div class="main-content">
   <div class="hero">
     <div class="hero-content">
-      <span class="module-number">Module 03</span>
       <h1>{{ page.title }}</h1>
       <p class="hero-subtitle">{{ page.description }}</p>
     </div>

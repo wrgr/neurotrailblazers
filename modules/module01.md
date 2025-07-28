@@ -12,7 +12,6 @@ duration: "1-2 hours"
 <div class="main-content">
   <div class="hero">
     <div class="hero-content">
-      <span class="module-number">Module 01</span>
       <h1>{{ page.title }}</h1>
       <p class="hero-subtitle">{{ page.description }}</p>
     </div>

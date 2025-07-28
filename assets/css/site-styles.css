@@ -21,6 +21,12 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.site-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .navbar {
   max-width: 1200px;
   margin: 0 auto;

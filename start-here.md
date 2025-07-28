@@ -8,7 +8,6 @@ description: "Begin your adventure in computational neuroscience with our struct
     <div class="hero hero-spaced hero-rounded">
         <div class="hero-content">
             <h1>Start Your NeuroTrailblazing Journey</h1>
-            <p class="hero-subtitle">Your pathway to becoming a computational neuroscience researcher</p>
         </div>
     </div>
 

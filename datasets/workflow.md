@@ -382,8 +382,8 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
     <div class="cta-grid">
       <div class="cta-card">
         <h3>🚀 Begin Your Journey</h3>
-        <p>Start with Module 0 to understand the big picture and find your path</p>
-        <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Module 0: Inspiration</a>
+        <p>Start with Module 01 to understand the big picture and find your path</p>
+        <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Module 01: Introduction to NeuroTrailblazers</a>
       </div>
       
       <div class="cta-card">

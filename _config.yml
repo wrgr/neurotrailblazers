@@ -1,8 +1,8 @@
 # NeuroTrailblazers - Jekyll Configuration
 title: "NeuroTrailblazers"
 description: "Illuminating Pathways for Trailblazing Neuroscience Researchers - A curriculum and mentorship platform for nanoscale connectomics discovery"
-baseurl: "/neurotrailblazers"
-url: "https://wrgr.github.io"
+baseurl: ""
+url: "https://neurotrailblazers.org"
 
 # Build settings
 markdown: kramdown

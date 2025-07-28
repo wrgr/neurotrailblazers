@@ -484,6 +484,7 @@ footer {
 .timeline-year {
   font-weight: 600;
   margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
 }
 .dataset-facts {
   font-size: 0.9rem;

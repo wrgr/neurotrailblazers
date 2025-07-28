@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: avatar
 title: Maya – The Bridge Builder
 role: Graduate Student
 experience: Intermediate

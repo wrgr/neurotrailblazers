@@ -1,7 +1,88 @@
 ---
-title: "Module 25: Portfolio, Feedback, and Final Project"
+
+title: "Module 25: Designing Your Capstone Portfolio"
 layout: module
-description: "Curating evidence of learning and capstone feedback."
-module_number: 25
+description: "Integrate your learning into a showcase portfolio that highlights your skills, insights, and contributions."
+module\_number: 25
+difficulty: "Advanced"
+duration: "4-6 hours"
+learning\_objectives:
+
+* "Select and organize artifacts that demonstrate growth across modules"
+* "Reflect on challenges, achievements, and evolution as a researcher"
+* "Create a polished, shareable digital portfolio"
+* "Present your scientific identity and future goals"
+  prerequisites: "Modules 1-24"
+  merit\_stage: "Dissemination"
+  compass\_skills: \["Synthesis", "Self-Reflection", "Presentation"]
+  ccr\_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytelling"]
+
 ---
-Content coming soon.
+
+<div class="main-content">
+  <div class="hero">
+    <div class="hero-content">
+      <span class="module-number">Module 25</span>
+      <h1>{{ page.title }}</h1>
+      <p class="hero-subtitle">{{ page.description }}</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>🌟 Building a Showcase Portfolio</h2>
+    <p>Compile artifacts, reflections, and evidence from your journey to demonstrate skill mastery and your scientific growth.</p>
+    <ul>
+      <li>Choosing representative work from each stage</li>
+      <li>Designing layout and narrative flow</li>
+      <li>Curating for clarity and impact</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>📖 Reflective Practice</h2>
+    <p>Make sense of your growth as a researcher by documenting lessons learned, shifts in understanding, and future goals.</p>
+    <ul>
+      <li>Structured reflection prompts</li>
+      <li>Voice and tone in self-narrative</li>
+      <li>Connecting personal story to scientific progress</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>🖋️ Presentation and Polish</h2>
+    <p>Make your final product readable, compelling, and professional—ready for applications, networking, or sharing with peers.</p>
+    <ul>
+      <li>Digital design tools and platforms (e.g., Notion, GitHub Pages)</li>
+      <li>Formatting and accessibility</li>
+      <li>Optional video or oral presentation of portfolio</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>🌟 COMPASS Integration</h2>
+    <ul>
+      <li><strong>Knowledge:</strong> Milestones and module integration</li>
+      <li><strong>Skills:</strong> Synthesis, presentation, digital literacy</li>
+      <li><strong>Character:</strong> Reflectiveness, intentionality</li>
+      <li><strong>Meta-Learning:</strong> Learning how to showcase learning</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>📚 References & Resources</h2>
+    <ul>
+      <li>Colab: "Capstone Portfolio Template"</li>
+      <li>Brown, 2020. <em>Designing a Personal Learning Portfolio</em></li>
+      <li>GitHub Pages + Notion as hosting platforms</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>✅ Assessment</h2>
+    <ul>
+      <li>Submit digital capstone portfolio with at least 10 linked artifacts</li>
+      <li>Include written and/or video reflection</li>
+      <li>Peer feedback and revision before final submission</li>
+    </ul>
+  </section>
+</div>

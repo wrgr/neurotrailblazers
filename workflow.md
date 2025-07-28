@@ -317,26 +317,26 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       <div class="pathway-card">
         <h3>👁️ Module 2: Sample Preparation</h3>
         <p>Learn tissue processing and staining techniques for EM</p>
-        <a href="/modules/module02.md" class="btn btn-primary">Start Learning</a>
+        <a href="{{ '/modules/module02/' | relative_url }}" class="btn btn-primary">Start Learning</a>
 
       </div>
       
       <div class="pathway-card">
         <h3>🔬 Module 5: EM Imaging</h3>
         <p>Understand electron microscopy and acquisition methods</p>
-        <a href="/modules/module05.md" class="btn btn-primary">Start Learning</a>
+        <a href="{{ '/modules/module05/' | relative_url }}" class="btn btn-primary">Start Learning</a>
       </div>
       
       <div class="pathway-card">
         <h3>🤖 Module 8: AI Segmentation</h3>
         <p>Explore machine learning for neuron reconstruction</p>
-        <a href="/modules/module08.md" class="btn btn-primary">Start Learning</a>
+        <a href="{{ '/modules/module08/' | relative_url }}" class="btn btn-primary">Start Learning</a>
       </div>
       
       <div class="pathway-card">
         <h3>🧠 Module 12: Circuit Analysis</h3>
         <p>Analyze connectivity patterns and discover circuits</p>
-        <a href="/modules/module12.md" class="btn btn-primary">Start Learning</a>
+        <a href="{{ '/modules/module12/' | relative_url }}" class="btn btn-primary">Start Learning</a>
 
       </div>
     </div>
@@ -348,19 +348,19 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       <div class="cta-card">
         <h3>🚀 Begin Your Journey</h3>
         <p>Start with Module 0 to understand the big picture and find your path</p>
-        <a href="/modules/module01/" class="btn btn-primary">Module 0: Inspiration</a>
+        <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Module 0: Inspiration</a>
       </div>
       
       <div class="cta-card">
         <h3>📊 Explore Real Data</h3>
         <p>Dive into actual connectomics datasets from leading research projects</p>
-        <a href="/datasets/" class="btn btn-secondary">Browse Datasets</a>
+        <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Browse Datasets</a>
       </div>
       
       <div class="cta-card">
         <h3>👥 Find Your Avatar</h3>
         <p>See how students like you navigate connectomics research</p>
-        <a href="/avatars/" class="btn btn-secondary">Student Stories</a>
+        <a href="{{ '/avatars/' | relative_url }}" class="btn btn-secondary">Student Stories</a>
       </div>
     </div>
   </div>

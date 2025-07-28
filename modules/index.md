@@ -199,56 +199,7 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ---
 
-## 📚 Full Module Index
-
-<p class="module-filters">
-  <label for="stage-select">Stage:</label>
-  <select id="stage-select">
-    <option value="">All</option>
-    <option value="Foundations">Foundations</option>
-    <option value="Question">Question</option>
-    <option value="Experiment">Experiment</option>
-    <option value="Analysis">Analysis</option>
-    <option value="Dissemination">Dissemination</option>
-  </select>
-  <label for="ccr-select">CCR:</label>
-  <select id="ccr-select">
-    <option value="">All</option>
-    <option value="Knowledge">Knowledge</option>
-    <option value="Skills">Skills</option>
-    <option value="Character">Character</option>
-    <option value="Meta-Learning">Meta-Learning</option>
-    <option value="Motivation">Motivation</option>
-  </select>
-</p>
-
-<div class="modules-grid">
-{% for mod in site.data.modules %}
-  <div class="card module-card stage-{{ mod.stage | downcase | replace: ' ', '-' }}" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
-    {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
-    <a href="module{{ padded_number }}/" class="module-number-link">{{ padded_number }}. {{ mod.title }}</a>
-    <p class="module-description">{{ mod.description }}</p>
-  </div>
-{% endfor %}
-</div>
-
-<script>
-const stageSelect = document.getElementById('stage-select');
-const ccrSelect = document.getElementById('ccr-select');
-
-function filterModules() {
-  const stage = stageSelect.value;
-  const ccr = ccrSelect.value;
-  document.querySelectorAll('.module-card').forEach(card => {
-    const matchStage = !stage || card.dataset.stage === stage;
-    const matchCcr = !ccr || card.dataset.ccr.includes(ccr);
-    card.style.display = (matchStage && matchCcr) ? '' : 'none';
-  });
-}
-
-stageSelect.addEventListener('change', filterModules);
-ccrSelect.addEventListener('change', filterModules);
-</script>
+{% include module-index.html %}
 
 ---
 

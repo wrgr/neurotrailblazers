@@ -34,6 +34,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <li><strong>Resolution:</strong> 8 nm isotropic</li>
       </ul>
       <div class="dataset-actions">
+
         <a href="{{ '/datasets/mouseconnects' | relative_url }}" class="btn btn-primary">Project Details</a>
         <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
       </div>

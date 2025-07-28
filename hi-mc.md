@@ -70,6 +70,7 @@ Students trained through NeuroTrailblazers are not just observers — they are c
 
 ## 🚀 Learn More
 
-- Explore the [Workflow](/datasets/workflow)
+To get started contributing:
+- Explore the [Workflow]({{ '/datasets/workflow' | relative_url }})
 - Meet the [Avatars](/avatars/)
 - Try a [Module](/modules/module01/)

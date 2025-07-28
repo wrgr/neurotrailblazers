@@ -25,7 +25,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
           <span class="dataset-status">In Progress (2023-2028)</span>
         </div>
       </div>
-      <h3><a href="/mouseconnects">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
+      <h3><a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
       <p>A flagship $40M NIH BRAIN CONNECTS effort to reconstruct <strong>10&nbsp;mm³</strong> of mouse hippocampal formation at nanometer resolution&mdash;the most ambitious connectomics project ever undertaken.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse (C57BL/6)</li>
@@ -34,8 +34,9 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <li><strong>Resolution:</strong> 8 nm isotropic</li>
       </ul>
       <div class="dataset-actions">
-        <a href="/mouseconnects" class="btn btn-primary">Project Details</a>
-        <a href="/datasets/workflow" class="btn btn-secondary">View Pipeline</a>
+
+        <a href="{{ '/datasets/mouseconnects' | relative_url }}" class="btn btn-primary">Project Details</a>
+        <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
       </div>
     </div>
   </section>

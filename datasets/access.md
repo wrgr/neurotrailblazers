@@ -1,10 +1,12 @@
-# Getting Started with EM Connectomics Datasets
-
 ---
 layout: dataset
 title: "Accessing Public EM Datasets"
 description: "Resources and notebooks for downloading and exploring connectomics data."
 ---
+
+<div class="main-content">
+
+# Getting Started with EM Connectomics Datasets
 
 A guide to resources and example notebooks for accessing major public Electron Microscopy (EM) connectomics datasets.
 
@@ -100,3 +102,5 @@ Once you have the data, you need to see it!
 
 * **Neuroglancer:** This is the standard in-browser viewer for volumetric data. Most of the tutorials above will generate Neuroglancer links to let you instantly see the neurons or synapses you've queried in 3D.
 * **Napari:** For more powerful, local visualization and analysis, [Napari](https://napari.org/) is a fantastic Python-based viewer. It's great for overlaying synapse locations on neuron meshes or viewing raw EM imagery you've downloaded.
+
+</div>

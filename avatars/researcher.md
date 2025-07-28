@@ -5,6 +5,14 @@ role: AI Scientist
 experience: Expert (industry)
 epistemic_orientation: Mechanistic, systems optimization
 motivation: Solve big problems, bring vision science into AI
+student_name: "Amir Khan"
+education_level: "PhD in Computer Science"
+background: "Industry AI researcher bridging vision and neuroscience"
+major: "Computer Science"
+interests: ["Edge devices", "Object tracking", "Connectomics"]
+challenges: ["Interpreting neuroscience literature", "Adapting pace from industry", "Collaborating across fields"]
+strengths: ["Deep ML expertise", "Systems thinking", "Problem solving"]
+goals: ["Apply ML to neural data", "Collaborate with academics", "Understand circuitry"]
 ---
 
 <div class="main-content">

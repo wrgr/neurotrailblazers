@@ -5,7 +5,7 @@ description: "Begin your adventure in computational neuroscience with our struct
 ---
 
 <div class="main-content">
-    <div class="hero" style="margin: -2rem -2rem 4rem -2rem; padding: 4rem 2rem;">
+    <div class="hero hero-spaced hero-rounded">
         <div class="hero-content">
             <h1>Start Your NeuroTrailblazing Journey</h1>
             <p class="hero-subtitle">Your pathway to becoming a computational neuroscience researcher</p>
@@ -25,7 +25,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 <h3 class="card-title">I'm New to Neuroscience</h3>
                 <p class="card-description">Start with our foundational modules to understand the brain, neurons, and basic neuroscience concepts.</p>
                 <div style="margin-top: 1rem;">
-                    <a href="{{ '/modules/module-0-inspiration/' | relative_url }}" class="btn btn-primary">Begin with Inspiration</a>
+                    <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Begin with Inspiration</a>
                 </div>
             </div>
             <div class="card">
@@ -33,7 +33,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 <h3 class="card-title">I Know Some Neuroscience</h3>
                 <p class="card-description">Jump into connectomics-specific content and learn about mapping neural circuits.</p>
                 <div style="margin-top: 1rem;">
-                    <a href="{{ '/modules/module-1-intro/' | relative_url }}" class="btn btn-primary">Start with Introduction</a>
+                    <a href="{{ '/modules/module02/' | relative_url }}" class="btn btn-primary">Start with Introduction</a>
                 </div>
             </div>
             <div class="card">
@@ -137,27 +137,27 @@ description: "Begin your adventure in computational neuroscience with our struct
 
     <section class="section">
         <h2>🚀 Quick Start Checklist</h2>
-        <div style="background: var(--brain-gray); padding: 2rem; border-radius: 12px;">
+        <div class="checklist-box">
             <h3>Get Started in 5 Steps:</h3>
-            <div style="margin-top: 1rem;">
-                <label style="display: block; margin: 0.5rem 0; cursor: pointer;">
-                    <input type="checkbox" style="margin-right: 0.5rem;"> 
+            <div class="checklist">
+                <label>
+                    <input type="checkbox">
                     1. Read this Start Here guide
                 </label>
-                <label style="display: block; margin: 0.5rem 0; cursor: pointer;">
-                    <input type="checkbox" style="margin-right: 0.5rem;"> 
+                <label>
+                    <input type="checkbox">
                     2. Choose your learning path above
                 </label>
-                <label style="display: block; margin: 0.5rem 0; cursor: pointer;">
-                    <input type="checkbox" style="margin-right: 0.5rem;"> 
+                <label>
+                    <input type="checkbox">
                     3. Review the <a href="{{ '/models' | relative_url }}">educational models</a>
                 </label>
-                <label style="display: block; margin: 0.5rem 0; cursor: pointer;">
-                    <input type="checkbox" style="margin-right: 0.5rem;"> 
+                <label>
+                    <input type="checkbox">
                     4. Meet your student <a href="{{ '/archetypes/' | relative_url }}">archetype</a>
                 </label>
-                <label style="display: block; margin: 0.5rem 0; cursor: pointer;">
-                    <input type="checkbox" style="margin-right: 0.5rem;"> 
+                <label>
+                    <input type="checkbox">
                     5. Begin your first module!
                 </label>
             </div>
@@ -196,30 +196,3 @@ description: "Begin your adventure in computational neuroscience with our struct
         </div>
     </div>
 </div>
-
-<style>
-.main-content ol, .main-content ul {
-    color: #4b5563;
-    line-height: 1.6;
-}
-
-.main-content ol li, .main-content ul li {
-    margin: 0.25rem 0;
-}
-
-.hero {
-    background: linear-gradient(135deg, var(--neural-blue), var(--cerebral-purple), var(--axon-cyan));
-    color: var(--white);
-    border-radius: 12px;
-}
-
-input[type="checkbox"] {
-    accent-color: var(--neural-blue);
-}
-
-label:hover {
-    background: rgba(37, 99, 235, 0.05);
-    padding: 0.25rem;
-    border-radius: 4px;
-}
-</style>

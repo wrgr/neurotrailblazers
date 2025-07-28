@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{ '/assets/css/site-styles.css?v=1.0.1' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site-styles.css' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     {% seo %}
@@ -35,8 +35,8 @@
         {{ content }}
     </main>
 
-    <footer style="background: var(--synapse-black); color: var(--white); text-align: center; padding: 2rem 0; margin-top: 4rem;">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <footer>
+        <div class="footer-inner">
             <p>&copy; 2025 NeuroTrailblazers. Supporting the next generation of neuroscience researchers.</p>
             <p style="margin-top: 0.5rem; opacity: 0.7;">
                 Funded by {{ site.grant_info.funding_agency }} | {{ site.grant_info.program }} Program

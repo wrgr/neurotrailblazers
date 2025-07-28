@@ -6,11 +6,11 @@ nav_order: 2
 
 # 🧠 High-throughput Imaging for Mouse Connectomics (HI-MC)
 
-The **High-throughput Imaging for Mouse Connectomics (HI-MC)** project is a flagship NIH CONNECTS initiative focused on generating a scalable, synapse-resolution map of the entire mouse brain. NeuroTrailblazers serves as the training and engagement platform that connects students directly to this ambitious scientific effort.
+The **High-throughput Imaging for Mouse Connectomics (HI-MC)** project is a flagship NIH CONNECTS initiative focused on mapping **10&nbsp;mm³ of mouse hippocampus**, demonstrating scalable, synapse-resolution imaging. NeuroTrailblazers serves as the training and engagement platform that connects students directly to this ambitious scientific effort.
 
 ## 🔬 Project Vision
 
-HI-MC aims to demonstrate the feasibility of a whole-brain connectome reconstruction using advanced imaging pipelines and cross-institutional collaboration. With a focus on **scalability**, **rigor**, and **inclusive participation**, HI-MC integrates cutting-edge imaging, segmentation, proofreading, and circuit modeling into one seamless workflow.
+HI-MC aims to demonstrate how a focused 10&nbsp;mm³ hippocampal dataset can pave the way toward a future whole-brain connectome. Using advanced imaging pipelines and cross-institutional collaboration—with a focus on **scalability**, **rigor**, and **inclusive participation**—HI-MC integrates cutting-edge imaging, segmentation, proofreading, and circuit modeling into one seamless workflow.
 
 ## 🧩 The Connectomics Pipeline
 
@@ -73,4 +73,4 @@ Students trained through NeuroTrailblazers are not just observers — they are c
 To get started contributing:
 - Explore the [Workflow](/workflow)
 - Meet the [Archetypes](/archetypes/)
-- Try a [Module](/modules/module-0-inspiration/)
+- Try a [Module](/modules/module01/)

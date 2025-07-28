@@ -10,7 +10,7 @@ prerequisites: "Module 0–2 or equivalent experience with connectomics basics"
 merit\_stage: "Orientation & Research Foundations"
 compass\_skills: \["Research Fundamentals", "Scientific Reasoning"]
 ccr\_focus: \["Knowledge - Scientific Literacy", "Meta-Learning - Problem Framing"]
------------------------------------------------------------------------------------
+---
 
 ## Overview
 

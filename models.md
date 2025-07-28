@@ -21,7 +21,7 @@ layout: default
 
 MERIT is a six-stage, merit-based framework for developing talent in computational neuroscience and STEM. It aligns with real scientific workflows, from motivation and exploration through career transition.
 
-> 🔗 See [MERIT Whitepaper PDF](link) for full documentation.
+<p><a href="#">MERIT Whitepaper PDF</a> – full documentation.</p>
 
 <div class="framework-grid">
   <div class="merit-stage">
@@ -75,7 +75,7 @@ MERIT is a six-stage, merit-based framework for developing talent in computation
 
 COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum in STEM, strengthen research identity, and empower success across diverse student pathways.
 
-> 🔗 See [COMPASS Workshop Guide PDF](link) for full content.
+<p><a href="#">COMPASS Workshop Guide PDF</a> – full content.</p>
 
 <div class="compass-grid">
   <div class="compass-workshop">

@@ -5,14 +5,12 @@ role: Graduate Student
 experience: Intermediate
 epistemic_orientation: Hybrid – computational with curiosity
 motivation: Use ML to push neuroscience forward and lift others with her
-emoji: "🧑‍🔬"
 ---
 
 <div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="avatar-header">
-      <div class="avatar-icon">{{ page.emoji }}</div>
       <div>
         <h1>{{ page.title }}</h1>
         <p class="hero-subtitle">{{ page.role }}</p>

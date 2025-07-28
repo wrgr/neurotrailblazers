@@ -5,15 +5,21 @@ description: "Connect with Dr. Lichtman—one of the world’s leading connectom
 permalink: /ask-the-expert/
 ---
 
-# 🧠 Ask the Expert: Dr. Jeff Lichtman
+<div class="main-content">
+<div class="hero hero-spaced hero-rounded">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Ask the Expert</h1>
+      <p class="hero-subtitle">Chat with Dr. Jeff Lichtman, connectomics pioneer</p>
+      <p><a class="btn btn-primary" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru">Launch Chatbot</a></p>
+    </div>
+  </div>
+</div>
+
+<section class="section expert-bio">
+### 👤 About Dr. Jeff Lichtman
 
 Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
-
-🎙️ [**Chat with the Dr. Lichtman Connectome Guru (GPT)**](https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru)
-
----
-
-## 👤 About Dr. Jeff Lichtman
 
 **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
 
@@ -23,9 +29,10 @@ He is a co-lead of the **Harvard-Mouse Connectome Project (HI-MC)**, which aims 
 
 🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
 
----
+</section>
 
-## 🤖 How to Use the Chatbot
+<section class="section expert-bio">
+### 🤖 How to Use the Chatbot
 
 This chatbot is trained on publicly available knowledge, papers, and lectures by Dr. Lichtman. It is designed to:
 - Explain core concepts in connectomics
@@ -35,11 +42,16 @@ This chatbot is trained on publicly available knowledge, papers, and lectures by
 
 ⚠️ *Disclaimer: This GPT does not represent direct communication with Dr. Lichtman and may not reflect his real-time views. Always refer to primary literature or direct mentorship when available.*
 
----
+</section>
 
-## 📚 Recommended Resources
+<section class="section expert-bio">
+### 📚 Recommended Resources
 
 - [Nature (2025): MICrONS Connectome Paper](https://www.nature.com/articles/s41586-025-08790-w)
 - [Jeff Lichtman: Wired Brains (YouTube)](https://www.youtube.com/watch?v=4c1lqFXHvqI)
 - [Jeff Lichtman Profile - HHMI](https://www.hhmi.org/scientists/jeff-w-lichtman)
 - [Lab Website](https://lichtmanlab.fas.harvard.edu/)
+
+</section>
+
+</div>

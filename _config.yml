@@ -76,6 +76,8 @@ navigation:
     url: "/datasets/"
   - title: "Avatars"
     url: "/avatars/"
+  - title: "Ask the Expert"
+    url: "/ask-the-expert/"
 
 # Grant and program information
 grant_info:

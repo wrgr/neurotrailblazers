@@ -7,13 +7,17 @@ description: "Explore curated connectomics datasets from landmark studies includ
 <div class="main-content">
   <div class="hero hero-spaced">
     <div class="hero-content">
-      <h1 class="hero-title-impact">Connectomics Datasets<span>: Learn with real scientific data from groundbreaking research</span></h1>
+      <h1 class="hero-title-impact">Connectomics Datasets</h1>
       <div class="hero-description-box">
         <p class="hero-description">
-          Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization. For a complete list of available datasets, visit <a href="https://bossdb.org/projects" target="_blank">bossDB.org/projects</a>.
+          Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.
         </p>
       </div>
     </div>
+  </div>
+
+  <div class="dataset-card" style="margin: 1.5rem auto; text-align: center; max-width: 600px;">
+    <p class="card-description">Learn with real scientific data from groundbreaking research.</p>
   </div>
 
   <section class="section">
@@ -340,7 +344,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
 
   <section class="section">
     <h2>🗃️ Additional BossDB Hosted Datasets</h2>
-    <p>The Brain Observatory Storage Service and Database (BossDB) hosts numerous additional connectomics datasets. For the complete catalog, visit <a href="https://bossdb.org/projects" target="_blank">bossdb.org/projects</a>. Notable additional datasets include:</p>
+    <p>BossDB is a great resource for many additional connectomics datasets (though not all). Explore <a href="https://bossdb.org/projects" target="_blank">bossdb.org/projects</a> for more. Notable examples include:</p>
     
     <div class="grid-md mt-2 mb-2">
       <div class="dataset-card">

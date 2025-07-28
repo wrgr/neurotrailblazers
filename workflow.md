@@ -318,6 +318,7 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
         <h3>👁️ Module 2: Sample Preparation</h3>
         <p>Learn tissue processing and staining techniques for EM</p>
         <a href="/modules/module02.md" class="btn btn-primary">Start Learning</a>
+
       </div>
       
       <div class="pathway-card">
@@ -336,6 +337,7 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
         <h3>🧠 Module 12: Circuit Analysis</h3>
         <p>Analyze connectivity patterns and discover circuits</p>
         <a href="/modules/module12.md" class="btn btn-primary">Start Learning</a>
+
       </div>
     </div>
   </div>
@@ -346,7 +348,7 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       <div class="cta-card">
         <h3>🚀 Begin Your Journey</h3>
         <p>Start with Module 0 to understand the big picture and find your path</p>
-        <a href="/modules/inspiration" class="btn btn-primary">Module 0: Inspiration</a>
+        <a href="/modules/module01/" class="btn btn-primary">Module 0: Inspiration</a>
       </div>
       
       <div class="cta-card">

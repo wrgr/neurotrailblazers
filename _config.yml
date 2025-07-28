@@ -67,9 +67,9 @@ navigation:
     url: "/modules/"
     dropdown:
       - title: "Module 0: Inspiration"
-        url: "/modules/module-0-inspiration/"
+        url: "/modules/module01/"
       - title: "Module 1: Introduction"
-        url: "/modules/module-1-intro/"
+        url: "/modules/module02/"
       - title: "All Modules"
         url: "/modules/"
   - title: "Datasets"

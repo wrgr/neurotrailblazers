@@ -18,6 +18,13 @@ layout: default
   </div>
 </div>
 </section>
+<section class="section">
+<div class="cards-grid">
+  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+    <p>Research incubators accelerate solutions to pressing problems by uniting motivated students and staff in an intensive, short-term cohort.</p>
+  </div>
+</div>
+</section>
 <hr>
 <section class="section">
 <div class="section-header">
@@ -25,7 +32,7 @@ layout: default
 
 </div>
 
-**Mentoring Exceptional Researchers to Innovate and Thrive**
+<strong>Mentoring Exceptional Researchers to Innovate and Thrive</strong>
 
 MERIT is a six-stage, merit-based framework for developing talent in computational neuroscience and STEM. It aligns with real scientific workflows, from motivation and exploration through career transition.
 
@@ -79,7 +86,7 @@ MERIT is a six-stage, merit-based framework for developing talent in computation
   <h2 class="section-title">🧯 COMPASS Framework</h2>
 </div>
 
-**Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self**
+<strong>Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self</strong>
 
 COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum in STEM, strengthen research identity, and empower success across diverse student pathways.
 
@@ -144,9 +151,9 @@ COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum 
   <h2 class="section-title">🧹 CCR Model</h2>
 </div>
 
-**Center for Curriculum Redesign – 21st Century Competency Framework**
+<strong>Center for Curriculum Redesign – 21st Century Competency Framework</strong>
 
-The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner development** across four domains:
+The <strong>CCR</strong> model underpins both MERIT and COMPASS by promoting <strong>whole-learner development</strong> across four domains:
 
 <div class="ccr-boxes">
   <div>

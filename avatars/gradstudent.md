@@ -5,7 +5,21 @@ role: Graduate Student
 experience: Intermediate
 epistemic_orientation: Hybrid – computational with curiosity
 motivation: Use ML to push neuroscience forward and lift others with her
+emoji: "🧑‍🔬"
 ---
+
+<div class="main-content">
+<div class="hero hero-spaced hero-rounded">
+  <div class="hero-content">
+    <div style="display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <div class="avatar-icon">{{ page.emoji }}</div>
+      <div>
+        <h1>{{ page.title }}</h1>
+        <p class="hero-subtitle">{{ page.role }}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 Maya always straddled two worlds—equally at home in math class and psych lab. She’s now in year 2 of her PhD, building segmentation models and explaining PCA to undergrads.
 
@@ -25,3 +39,4 @@ She loves when code makes neurons “pop” into clarity. She's not always sure 
 - Learns to embrace partial knowledge
 - Gains feedback literacy through peer review
 - Realizes her impact comes from enabling others as much as producing code
+</div>

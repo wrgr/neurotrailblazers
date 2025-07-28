@@ -208,7 +208,7 @@ description: "Begin your adventure in computational neuroscience with our struct
 }
 
 .hero {
-    background: var(--gradient-neural);
+    background: linear-gradient(135deg, var(--neural-blue), var(--cerebral-purple), var(--axon-cyan));
     color: var(--white);
     border-radius: 12px;
 }

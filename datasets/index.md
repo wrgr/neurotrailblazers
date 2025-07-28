@@ -5,13 +5,14 @@ description: "Explore curated connectomics datasets from landmark studies includ
 ---
 
 <div class="main-content">
-  <div class="hero hero-spaced hero-rounded">
+  <div class="hero" style="margin: 2rem -2rem 4rem -2rem; padding: 2rem 2rem;">
     <div class="hero-content">
-      <h1>Connectomics Datasets</h1>
-      <p class="hero-subtitle">Learn with real scientific data from groundbreaking research</p>
-      <p class="hero-description">
-        Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization. For a complete list of available datasets, visit <a href="https://bossdb.org/projects" target="_blank">bossDB.org/projects</a>.
-      </p>
+      <h1 class="hero-title-impact">Connectomics Datasets<span>: Learn with real scientific data from groundbreaking research</span></h1>
+      <div class="hero-description-box">
+        <p class="hero-description">
+          Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization. For a complete list of available datasets, visit <a href="https://bossdb.org/projects" target="_blank">bossDB.org/projects</a>.
+        </p>
+      </div>
     </div>
   </div>
 

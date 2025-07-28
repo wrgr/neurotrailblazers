@@ -138,6 +138,17 @@ body {
   font-size: 1.25rem;
 }
 
+.hero-title-main {
+  font-weight: 700;
+}
+
+.hero-title-sub {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 /* Boxed description to reduce vertical space */
 .hero-description-box {
   background: rgba(255, 255, 255, 0.15);

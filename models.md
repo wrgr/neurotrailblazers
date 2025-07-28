@@ -1,159 +1,161 @@
-TASK: Build a complete GitHub Pages-compatible Jekyll site titled NeuroTrailblazers. This is a curriculum and mentorship platform aligned with the HI-MC grant and the NIH CONNECTS program. It supports undergraduates and graduate students learning nanoscale connectomics, with a focus on discovery, merit-based training, and open science.
+---
 
-🔧 Core Technical Requirements
-✅ Jekyll-based for GitHub Pages (wrgr/neurotrailblazers)
+title: Models of Success
+layout: default
+---------------
 
-✅ Responsive layout, modern typography (Inter)
+# 🧠 Models of Success: MERIT, COMPASS, and CCR
 
-✅ Custom CSS (site-styles.css) inspired by neuroscience and discovery
+Explore the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.
 
-✅ Animated hero banner on homepage
+---
 
-✅ Collections: modules, archetypes, datasets
+## 🔬 MERIT Framework
 
-✅ Fully deployable site with _config.yml, index.html, and markdown content
+**Mentoring Exceptional Researchers to Innovate and Thrive**
 
-✅ All modules and pages should use real front matter and Markdown
+MERIT is a six-stage, merit-based framework for developing talent in computational neuroscience and STEM. It aligns with real scientific workflows, from motivation and exploration through career transition.
 
-🧠 Thematic Identity
-Style evokes scientific discovery: neurons, EM data, connectomes
+> 🔗 See [MERIT Whitepaper PDF](link) for full documentation.
 
-Color palette:
+<div class="framework-grid">
 
-Neural Blue: #2563eb
+### ⭐ Stage 1: Merit-Based Selection
 
-Cerebral Purple: #7c3aed
+Identifies high-potential individuals using holistic, equitable evaluations.
+**Focus:** Potential • Aptitude • Resilience
+**Key Practices:** Portfolio review, structured interviews, grit assessment
 
-Axon Cyan: #06b6d4
+---
 
-Brain Gray: #f3f4f6
+### 🎯 Stage 2: Orientation & Research Foundations
 
-Synapse Black: #111827
+Builds foundational research literacy, navigation skills, and scientific mindset.
+**Focus:** Research culture • Ethics • Knowledge foundations
+**Includes:** CCR model introduction, Hidden Curriculum training
 
-📁 Required Folder Structure
-pgsql
-Copy
-Edit
-neurotrailblazers/
-├── _config.yml
-├── index.html
-├── start-here.md
-├── models.md
-├── workflow.md
-├── README.md
-├── archetypes/
-│   ├── index.md
-│   ├── undergrad-firstgen.md
-│   ├── grad-student.md
-│   └── postdoc-ai.md
-├── modules/
-│   ├── module-0-inspiration/index.md
-│   ├── module-1-intro/index.md
-│   └── [modules 2-15]/index.md
-├── datasets/
-│   ├── index.md
-│   ├── kasthuri2015.md
-│   ├── bock2011.md
-│   ├── microns2025.md
-│   ├── flywire2024.md
-│   ├── hemibrain2020.md
-│   └── white1986.md
-├── assets/
-│   ├── css/site-styles.css
-│   └── images/
-└── scripts/
-    ├── course-generator.js
-    └── chatbot.js
-📚 Content Requirements
-🔹 Modules 0–15:
-For each module:
+---
 
-SMART learning objectives
+### 🔬 Stage 3: Skill Development & Mentored Research
 
-Overall training goal
+Deepens technical ability via immersive, mentored research.
+**Focus:** Hands-on experience • Tool mastery • Communication
+**Includes:** Journal clubs, skill workshops, iterative feedback
 
-Representative image or placeholder
+---
 
-Key reference papers with inline citations
+### 🚀 Stage 4: Independent Research & Early Dissemination
 
-Public content (e.g., videos, talks, press)
+Promotes research autonomy and early scholarly contributions.
+**Focus:** Hypothesis design • Proposal writing • Internal presentation
 
-🔹 models.md:
-Full explanation of:
+---
 
-MERIT framework (6 stages, scientific method alignment)
+### 🌐 Stage 5: Advanced Research & Professional Networking
 
-COMPASS workshops (10 total)
+Supports complex research execution and external engagement.
+**Focus:** Publication • Conferences • Career mapping
 
-CCR dimensions (Knowledge, Skills, Character, Meta-Learning)
+---
 
-Inline citations:
+### 🎓 Stage 6: Career Transition & Lifelong Learning
 
-Lopatto (2007)
+Equips participants for graduate school, industry, and beyond.
+**Focus:** Career portfolio • Fellowships • Mentorship loops
 
-Duckworth (2007)
+</div>
 
-Fadel (2015)
+---
 
-Cervantes (2022)
+## 🧯 COMPASS Framework
 
-🔹 workflow.md:
-Step-by-step guide to the HI-MC nanoscale connectomics pipeline
+**Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self**
 
-Align each pipeline stage with relevant MERIT/COMPASS stages
+COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum in STEM, strengthen research identity, and empower success across diverse student pathways.
 
-🔹 datasets/:
-Each dataset page should include:
+> 🔗 See [COMPASS Workshop Guide PDF](link) for full content.
 
-Visual image (EM screenshot, neuron segmentation, etc.)
+<div class="compass-grid">
 
-Title, author/year (e.g., Kasthuri et al. 2015)
+### 1. 🎓 Orientation: Navigating Your STEM Journey
 
-Claims and highlights
+SMART goals • Academic codes • Syllabus deconstruction
 
-DOI or direct link to data
+### 2. 💪 The Resilient STEM Scholar
 
-Link to any public explorer (e.g., FlyWire, MICrONS, neuPrint)
+Growth mindset • Wellness • Imposter syndrome resilience
 
-🧑‍🔬 Archetypes
-Include three profiles in /archetypes/:
+### 3. 🧯 Charting Your Course in Research
 
-Julian – First-gen undergrad just starting research
+Finding research roles • STEM identity • Building purpose
 
-Layla – Grad student navigating dissertation and publishing
+### 4. 🤝 Building Your STEM Entourage
 
-Elias – Postdoc with AI experience trying to merge disciplines
+Networking • Faculty relationships • Peer communities
 
-Each should include:
+### 5. 📚 Communicating Science I
 
-Bio/story
+Scientific writing • Literature reviews • Citation ethics
 
-Challenges
+### 6. 🎤 Communicating Science II
 
-Successes
+Oral presentations • Visual storytelling • Q\&A strategies
 
-Chatbot mentor placeholder script
+### 7. 🧠 The Savvy Researcher
 
-🧩 Technical Features
-Animated landing page hero banner
+Metacognition • Study habits • Time-tracking for research
 
-Grid layout for module and dataset cards
+### 8. 👥 Professional Conduct in STEM
 
-Subtle hover transitions on cards
+Lab ethics • Teamwork • Email etiquette • Feedback literacy
 
-Navigation with dropdown menus
+### 9. ✨ STEM Identity & Purpose
 
-Search (basic Jekyll search)
+Belonging • Vision development • Mentorship narratives
 
-Mobile-first design
+### 10. 🔮 Future Forward
 
-🎯 NIH CONNECTS / HI-MC Integration
-Must reflect the goals of the HI-MC grant
+STEM careers • Fellowships • Portfolios • Vision building
 
-Emphasize open science, pipeline learning, and equitable opportunity
+</div>
 
-Position NeuroTrailblazers as a national training and mentorship tool
+---
 
-📝 Summary
-You are generating a deployable Jekyll site with curriculum, datasets, and mentoring tools tailored to nanoscale connectomics. The design, layout, and educational content must reflect the rigor and vision of an NIH-funded scientific initiative.
+## 🧹 CCR Model
 
+**Center for Curriculum Redesign – 21st Century Competency Framework**
+
+The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner development** across four domains:
+
+<div class="ccr-boxes">
+
+### 🧠 Knowledge
+
+Core domain expertise, including neuroscience, data science, and research methods.
+
+### 🛠 Skills
+
+Transferable abilities like critical thinking, problem solving, communication, and collaboration.
+
+### 🧬 Character
+
+Traits like curiosity, resilience, integrity, and leadership — essential for ethical, meaningful work.
+
+### ↺ Meta-Learning
+
+“Learning how to learn” — planning, self-reflection, adaptation, and embracing complexity.
+
+</div>
+
+---
+
+## 🔗 References
+
+* Lopatto, D. (2007). Undergraduate research experiences support science career decisions and active learning. *CBE Life Sci Educ*, 6(4), 297–306.
+* Duckworth, A. et al. (2007). Grit: Perseverance and passion for long-term goals. *J. Pers. Soc. Psychol.*, 92(6), 1087–1101.
+* Fadel, C., Bialik, M., & Trilling, B. (2015). *Four-Dimensional Education: The Competencies Learners Need to Succeed*. CCR.
+* Cervantes, C. et al. (2022). CIRCUIT: A framework for inclusive and equitable STEM mentorship. *Cell*, 185(15), 2620–2624.
+
+---
+
+Let me know when you want the site-wide CSS to render these sections as responsive cards.

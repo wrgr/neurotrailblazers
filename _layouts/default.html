@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{ '/assets/css/site-styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site-styles.css?v=1.0.1' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     {% seo %}
@@ -48,7 +48,7 @@
         // Mobile menu toggle
         const navbar = document.querySelector('.navbar');
         const navMenu = document.querySelector('.nav-menu');
-        
+
         // Simple responsive behavior
         if (window.innerWidth <= 768) {
             navbar.style.flexDirection = 'column';

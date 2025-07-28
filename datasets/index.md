@@ -497,6 +497,22 @@ description: "Explore curated connectomics datasets from landmark studies includ
   <section class="section" style="text-align: center;">
     <h2>📂 Accessing These Datasets</h2>
     <p>Most datasets are freely available through dedicated platforms. Each dataset entry above includes direct links to data portals, original publications, and popular press coverage where available.</p>
+
+    <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
+      <div class="dataset-header">
+        <div class="dataset-icon">🔧</div>
+        <div class="dataset-meta">
+          <span class="dataset-type">Tutorials</span>
+          <span class="dataset-status">Resources</span>
+        </div>
+      </div>
+      <h3><a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
+      <p>Step-by-step guides and example notebooks for downloading connectomics data from Google, the Allen Institute, Janelia, and bossDB.</p>
+      <div class="dataset-actions">
+        <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary">View Guide</a>
+      </div>
+    </div>
+
     <div style="margin: 2rem 0;">
       <a href="https://bossdb.org/projects" class="btn btn-primary" target="_blank" style="margin: 0.5rem;">Browse BossDB</a>
       <a href="https://h01-release.storage.googleapis.com/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">H01 Portal</a>

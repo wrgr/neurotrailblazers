@@ -5,13 +5,14 @@ description: "Explore curated connectomics datasets from landmark studies includ
 ---
 
 <div class="main-content">
-  <div class="hero" style="margin: 2rem -2rem 4rem -2rem; padding: 4rem 2rem;">
+  <div class="hero" style="margin: 2rem -2rem 4rem -2rem; padding: 2rem 2rem;">
     <div class="hero-content">
-      <h1>Connectomics Datasets</h1>
-      <p class="hero-subtitle">Learn with real scientific data from groundbreaking research</p>
-      <p class="hero-description">
-        Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization. For a complete list of available datasets, visit <a href="https://bossdb.org/projects" target="_blank">bossDB.org/projects</a>.
-      </p>
+      <h1 class="hero-title-impact">Connectomics Datasets<span>: Learn with real scientific data from groundbreaking research</span></h1>
+      <div class="hero-description-box">
+        <p class="hero-description">
+          Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization. For a complete list of available datasets, visit <a href="https://bossdb.org/projects" target="_blank">bossDB.org/projects</a>.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -25,7 +26,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
           <span class="dataset-status">In Progress (2023-2028)</span>
         </div>
       </div>
-      <h3><a href="/mouseconnects">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
+      <h3><a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
       <p>A flagship $40M NIH BRAIN CONNECTS effort to reconstruct <strong>10&nbsp;mm³</strong> of mouse hippocampal formation at nanometer resolution&mdash;the most ambitious connectomics project ever undertaken.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse (C57BL/6)</li>
@@ -34,8 +35,9 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <li><strong>Resolution:</strong> 8 nm isotropic</li>
       </ul>
       <div class="dataset-actions">
-        <a href="/mouseconnects" class="btn btn-primary">Project Details</a>
-        <a href="/workflow" class="btn btn-secondary">View Pipeline</a>
+
+        <a href="{{ '/datasets/mouseconnects' | relative_url }}" class="btn btn-primary">Project Details</a>
+        <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
       </div>
     </div>
   </section>
@@ -117,6 +119,31 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <a href="https://flywire.ai/" class="btn btn-primary" target="_blank">Explore Dataset</a>
         <a href="https://www.nature.com/articles/s41586-024-07558-y" class="btn btn-secondary" target="_blank">Read Paper</a>
         <a href="https://www.princeton.edu/news/2024/10/02/mapping-entire-fly-brain-step-toward-understanding-diseases-human-brain" class="btn btn-secondary" target="_blank">Popular Press</a>
+      </div>
+    </div>
+
+    <div class="dataset-card featured">
+      <div class="dataset-header">
+        <div class="dataset-icon">🪰</div>
+        <div class="dataset-meta">
+          <span class="dataset-type">Drosophila Central Brain</span>
+          <span class="dataset-status">Published 2020</span>
+        </div>
+      </div>
+      <h3><a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
+      <p>Dense reconstruction of a portion of the central brain of <em>Drosophila melanogaster</em>, revealing circuits for learning, navigation, and circadian rhythms.</p>
+      <ul class="dataset-facts">
+        <li><strong>Species:</strong> Drosophila melanogaster (female)</li>
+        <li><strong>Region:</strong> Central brain (~50%)</li>
+        <li><strong>Volume:</strong> 250×250×250 μm</li>
+        <li><strong>Neurons:</strong> ~25,000</li>
+        <li><strong>Synapses:</strong> ~20 million</li>
+        <li><strong>Size:</strong> ~100 TB</li>
+      </ul>
+      <div class="dataset-actions">
+        <a href="https://neuprint.janelia.org/" class="btn btn-primary" target="_blank">Explore Dataset</a>
+        <a href="https://elifesciences.org/articles/57443" class="btn btn-secondary" target="_blank">Read Paper</a>
+        <a href="https://www.janelia.org/news/unveiling-the-biggest-and-most-detailed-map-of-the-fly-brain-yet" class="btn btn-secondary" target="_blank">Popular Press</a>
       </div>
     </div>
   </section>

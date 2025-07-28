@@ -1,3 +1,7 @@
+---
+layout: dataset
+title: "MouseConnects Dataset - Complete Hippocampal Connectome"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +41,7 @@
         }
 
         .hero-section {
-            min-height: 100vh;
+            padding: 4rem 0;
             display: flex;
             align-items: center;
             position: relative;
@@ -85,6 +89,25 @@
             margin-bottom: 2rem;
             opacity: 0.8;
             line-height: 1.7;
+        }
+
+        .hero-title-impact {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title-impact span {
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
+        .hero-description-box {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 700px;
+            margin-bottom: 1rem;
         }
 
         .hero-actions {
@@ -495,15 +518,16 @@
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-badge">NIH BRAIN Initiative • $40M Project • 2023-2028</div>
-                <h1>MouseConnects</h1>
-                <p class="hero-subtitle">Complete Hippocampal Connectome</p>
-                <p class="hero-description">
-                    One of the most ambitious connectomics project ever undertaken. A synapse-level reconstruction 
-                    of 10 mm³ of mouse hippocampal formation - revolutionizing our understanding of memory circuits.
-                </p>
+                <h1 class="hero-title-impact">MouseConnects<span>: Complete Hippocampal Connectome</span></h1>
+                <div class="hero-description-box">
+                    <p class="hero-description">
+                        One of the most ambitious connectomics project ever undertaken. A synapse-level reconstruction
+                        of 10 mm³ of mouse hippocampal formation - revolutionizing our understanding of memory circuits.
+                    </p>
+                </div>
                 <div class="hero-actions">
                     <a href="#explore-data" class="btn btn-primary btn-large">Explore the Data</a>
-                    <a href="#workflow" class="btn btn-secondary btn-large">View Pipeline</a>
+                    <a href="/datasets/workflow" class="btn btn-secondary btn-large">View Pipeline</a>
                 </div>
             </div>
             <div class="hero-visual">

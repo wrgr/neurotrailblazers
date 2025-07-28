@@ -17,12 +17,16 @@ goals: ["Get research experience", "Apply to graduate school", "Make a differenc
   <div class="hero-content">
     <div class="avatar-header">
       <div>
-        <h1>{{ page.student_name }}</h1>
-        <p class="hero-subtitle">{{ page.background }}</p>
-        <p style="color: rgba(255,255,255,0.8); margin:0;">{{ page.major }} • {{ page.education_level }}</p>
+        <h1>Julian, Undergraduate Student</h1>
       </div>
     </div>
+  </div>
 </div>
+
+<div class="cards-grid" style="margin-top: 1rem;">
+  <div class="card text-center" style="max-width: 400px; margin: 0 auto;">
+    <p style="margin: 0;">First-generation college student • Biology with Computer Science minor • Sophomore</p>
+  </div>
 </div>
 
 <nav class="avatar-nav">

@@ -218,5 +218,5 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ---
 
-Need help deciding where to start? Try **[Module 01](module01.md)** or visit our [About](/about/) page to learn more about the MERIT and COMPASS frameworks.
+Need help deciding where to start? Try **[Module 01](module01.md)** or visit our [Models](/models/) page to learn more about the MERIT and COMPASS frameworks.
 

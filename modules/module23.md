@@ -71,7 +71,7 @@ learning\_objectives:
   <section class="section">
     <h2>📚 References & Resources</h2>
     <ul>
-      <li>myIDP: https://myidp.sciencecareers.org/</li>
+      <li><a href="https://myidp.sciencecareers.org/">myIDP Career Planning Tool</a></li>
       <li>NeuroJobs and SfN Career Resources</li>
       <li>Colab: "Career Map and Development Plan Generator"</li>
     </ul>

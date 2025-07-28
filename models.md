@@ -9,7 +9,8 @@ layout: default
   <h1>🧠 Models of Success: MERIT, COMPASS, and CCR</h1>
   <p>Explore the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.</p>
 
----
+</div>
+<hr>
 <section class="section">
 <div class="section-header">
   <h2 class="section-title">🔬 MERIT Framework</h2>
@@ -64,8 +65,7 @@ MERIT is a six-stage, merit-based framework for developing talent in computation
   </div>
 </div>
 </section>
-
----
+<hr>
 <section class="section">
 <div class="section-header">
   <h2 class="section-title">🧯 COMPASS Framework</h2>
@@ -130,8 +130,7 @@ COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum 
   </div>
 </div>
 </section>
-
----
+<hr>
 <section class="section">
 <div class="section-header">
   <h2 class="section-title">🧹 CCR Model</h2>
@@ -161,7 +160,7 @@ The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner 
 </div>
 
 </section>
----
+<hr>
 
 ## 🔗 References
 
@@ -170,5 +169,5 @@ The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner 
 * Fadel, C., Bialik, M., & Trilling, B. (2015). *Four-Dimensional Education: The Competencies Learners Need to Succeed*. CCR.
 * Cervantes, C. et al. (2022). CIRCUIT: A framework for inclusive and equitable STEM mentorship. *Cell*, 185(15), 2620–2624.
 
----
+<hr>
 </div>

@@ -1,8 +1,9 @@
 ---
-
 title: Models of Success
 layout: default
----------------
+---
+
+<div class="main-content">
 
 # 🧠 Models of Success: MERIT, COMPASS, and CCR
 
@@ -19,50 +20,45 @@ MERIT is a six-stage, merit-based framework for developing talent in computation
 > 🔗 See [MERIT Whitepaper PDF](link) for full documentation.
 
 <div class="framework-grid">
-
-### ⭐ Stage 1: Merit-Based Selection
-
-Identifies high-potential individuals using holistic, equitable evaluations.
-**Focus:** Potential • Aptitude • Resilience
-**Key Practices:** Portfolio review, structured interviews, grit assessment
-
----
-
-### 🎯 Stage 2: Orientation & Research Foundations
-
-Builds foundational research literacy, navigation skills, and scientific mindset.
-**Focus:** Research culture • Ethics • Knowledge foundations
-**Includes:** CCR model introduction, Hidden Curriculum training
-
----
-
-### 🔬 Stage 3: Skill Development & Mentored Research
-
-Deepens technical ability via immersive, mentored research.
-**Focus:** Hands-on experience • Tool mastery • Communication
-**Includes:** Journal clubs, skill workshops, iterative feedback
-
----
-
-### 🚀 Stage 4: Independent Research & Early Dissemination
-
-Promotes research autonomy and early scholarly contributions.
-**Focus:** Hypothesis design • Proposal writing • Internal presentation
-
----
-
-### 🌐 Stage 5: Advanced Research & Professional Networking
-
-Supports complex research execution and external engagement.
-**Focus:** Publication • Conferences • Career mapping
-
----
-
-### 🎓 Stage 6: Career Transition & Lifelong Learning
-
-Equips participants for graduate school, industry, and beyond.
-**Focus:** Career portfolio • Fellowships • Mentorship loops
-
+  <div class="merit-stage">
+    <div class="merit-icon">⭐</div>
+    <h3>Stage 1: Merit-Based Selection</h3>
+    <p>Identifies high-potential individuals using holistic, equitable evaluations.</p>
+    <p class="merit-components"><strong>Focus:</strong> Potential • Aptitude • Resilience</p>
+    <p class="merit-examples"><strong>Key Practices:</strong> Portfolio review, structured interviews, grit assessment</p>
+  </div>
+  <div class="merit-stage">
+    <div class="merit-icon">🎯</div>
+    <h3>Stage 2: Orientation &amp; Research Foundations</h3>
+    <p>Builds foundational research literacy, navigation skills, and scientific mindset.</p>
+    <p class="merit-components"><strong>Focus:</strong> Research culture • Ethics • Knowledge foundations</p>
+    <p class="merit-examples"><strong>Includes:</strong> CCR model introduction, Hidden Curriculum training</p>
+  </div>
+  <div class="merit-stage">
+    <div class="merit-icon">🔬</div>
+    <h3>Stage 3: Skill Development &amp; Mentored Research</h3>
+    <p>Deepens technical ability via immersive, mentored research.</p>
+    <p class="merit-components"><strong>Focus:</strong> Hands-on experience • Tool mastery • Communication</p>
+    <p class="merit-examples"><strong>Includes:</strong> Journal clubs, skill workshops, iterative feedback</p>
+  </div>
+  <div class="merit-stage">
+    <div class="merit-icon">🚀</div>
+    <h3>Stage 4: Independent Research &amp; Early Dissemination</h3>
+    <p>Promotes research autonomy and early scholarly contributions.</p>
+    <p class="merit-components"><strong>Focus:</strong> Hypothesis design • Proposal writing • Internal presentation</p>
+  </div>
+  <div class="merit-stage">
+    <div class="merit-icon">🌐</div>
+    <h3>Stage 5: Advanced Research &amp; Professional Networking</h3>
+    <p>Supports complex research execution and external engagement.</p>
+    <p class="merit-components"><strong>Focus:</strong> Publication • Conferences • Career mapping</p>
+  </div>
+  <div class="merit-stage">
+    <div class="merit-icon">🎓</div>
+    <h3>Stage 6: Career Transition &amp; Lifelong Learning</h3>
+    <p>Equips participants for graduate school, industry, and beyond.</p>
+    <p class="merit-components"><strong>Focus:</strong> Career portfolio • Fellowships • Mentorship loops</p>
+  </div>
 </div>
 
 ---
@@ -76,47 +72,56 @@ COMPASS is a 10-workshop curriculum designed to demystify the hidden curriculum 
 > 🔗 See [COMPASS Workshop Guide PDF](link) for full content.
 
 <div class="compass-grid">
-
-### 1. 🎓 Orientation: Navigating Your STEM Journey
-
-SMART goals • Academic codes • Syllabus deconstruction
-
-### 2. 💪 The Resilient STEM Scholar
-
-Growth mindset • Wellness • Imposter syndrome resilience
-
-### 3. 🧯 Charting Your Course in Research
-
-Finding research roles • STEM identity • Building purpose
-
-### 4. 🤝 Building Your STEM Entourage
-
-Networking • Faculty relationships • Peer communities
-
-### 5. 📚 Communicating Science I
-
-Scientific writing • Literature reviews • Citation ethics
-
-### 6. 🎤 Communicating Science II
-
-Oral presentations • Visual storytelling • Q\&A strategies
-
-### 7. 🧠 The Savvy Researcher
-
-Metacognition • Study habits • Time-tracking for research
-
-### 8. 👥 Professional Conduct in STEM
-
-Lab ethics • Teamwork • Email etiquette • Feedback literacy
-
-### 9. ✨ STEM Identity & Purpose
-
-Belonging • Vision development • Mentorship narratives
-
-### 10. 🔮 Future Forward
-
-STEM careers • Fellowships • Portfolios • Vision building
-
+  <div class="compass-workshop">
+    <div class="workshop-number">1</div>
+    <h3>🎓 Orientation: Navigating Your STEM Journey</h3>
+    <p>SMART goals • Academic codes • Syllabus deconstruction</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">2</div>
+    <h3>💪 The Resilient STEM Scholar</h3>
+    <p>Growth mindset • Wellness • Imposter syndrome resilience</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">3</div>
+    <h3>🧯 Charting Your Course in Research</h3>
+    <p>Finding research roles • STEM identity • Building purpose</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">4</div>
+    <h3>🤝 Building Your STEM Entourage</h3>
+    <p>Networking • Faculty relationships • Peer communities</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">5</div>
+    <h3>📚 Communicating Science I</h3>
+    <p>Scientific writing • Literature reviews • Citation ethics</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">6</div>
+    <h3>🎤 Communicating Science II</h3>
+    <p>Oral presentations • Visual storytelling • Q&amp;A strategies</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">7</div>
+    <h3>🧠 The Savvy Researcher</h3>
+    <p>Metacognition • Study habits • Time-tracking for research</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">8</div>
+    <h3>👥 Professional Conduct in STEM</h3>
+    <p>Lab ethics • Teamwork • Email etiquette • Feedback literacy</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">9</div>
+    <h3>✨ STEM Identity &amp; Purpose</h3>
+    <p>Belonging • Vision development • Mentorship narratives</p>
+  </div>
+  <div class="compass-workshop">
+    <div class="workshop-number">10</div>
+    <h3>🔮 Future Forward</h3>
+    <p>STEM careers • Fellowships • Portfolios • Vision building</p>
+  </div>
 </div>
 
 ---
@@ -128,23 +133,22 @@ STEM careers • Fellowships • Portfolios • Vision building
 The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner development** across four domains:
 
 <div class="ccr-boxes">
-
-### 🧠 Knowledge
-
-Core domain expertise, including neuroscience, data science, and research methods.
-
-### 🛠 Skills
-
-Transferable abilities like critical thinking, problem solving, communication, and collaboration.
-
-### 🧬 Character
-
-Traits like curiosity, resilience, integrity, and leadership — essential for ethical, meaningful work.
-
-### ↺ Meta-Learning
-
-“Learning how to learn” — planning, self-reflection, adaptation, and embracing complexity.
-
+  <div>
+    <h3>🧠 Knowledge</h3>
+    <p>Core domain expertise, including neuroscience, data science, and research methods.</p>
+  </div>
+  <div>
+    <h3>🛠 Skills</h3>
+    <p>Transferable abilities like critical thinking, problem solving, communication, and collaboration.</p>
+  </div>
+  <div>
+    <h3>🧬 Character</h3>
+    <p>Traits like curiosity, resilience, integrity, and leadership — essential for ethical, meaningful work.</p>
+  </div>
+  <div>
+    <h3>↺ Meta-Learning</h3>
+    <p>“Learning how to learn” — planning, self-reflection, adaptation, and embracing complexity.</p>
+  </div>
 </div>
 
 ---
@@ -157,5 +161,4 @@ Traits like curiosity, resilience, integrity, and leadership — essential for e
 * Cervantes, C. et al. (2022). CIRCUIT: A framework for inclusive and equitable STEM mentorship. *Cell*, 185(15), 2620–2624.
 
 ---
-
-Let me know when you want the site-wide CSS to render these sections as responsive cards.
+</div>

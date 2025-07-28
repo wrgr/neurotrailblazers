@@ -520,5 +520,6 @@ description: "Explore curated connectomics datasets from landmark studies includ
       <a href="https://www.microns-explorer.org/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">MICrONS Explorer</a>
       <a href="https://flywire.ai/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">FlyWire Codex</a>
     </div>
+</div>
   </section>
 </div>

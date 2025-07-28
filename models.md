@@ -14,8 +14,8 @@ layout: default
 <section class="section">
 <div class="section-header">
   <h2 class="section-title">🔬 MERIT Framework</h2>
-</div>
 
+</div>
 
 **Mentoring Exceptional Researchers to Innovate and Thrive**
 
@@ -164,10 +164,12 @@ The **CCR** model underpins both MERIT and COMPASS by promoting **whole-learner 
 
 ## 🔗 References
 
-* Lopatto, D. (2007). Undergraduate research experiences support science career decisions and active learning. *CBE Life Sci Educ*, 6(4), 297–306.
-* Duckworth, A. et al. (2007). Grit: Perseverance and passion for long-term goals. *J. Pers. Soc. Psychol.*, 92(6), 1087–1101.
-* Fadel, C., Bialik, M., & Trilling, B. (2015). *Four-Dimensional Education: The Competencies Learners Need to Succeed*. CCR.
-* Cervantes, C. et al. (2022). CIRCUIT: A framework for inclusive and equitable STEM mentorship. *Cell*, 185(15), 2620–2624.
+<ul>
+  <li>Lopatto, D. (2007). Undergraduate research experiences support science career decisions and active learning. <em>CBE Life Sci Educ</em>, 6(4), 297–306.</li>
+  <li>Duckworth, A. et al. (2007). Grit: Perseverance and passion for long-term goals. <em>J. Pers. Soc. Psychol.</em>, 92(6), 1087–1101.</li>
+  <li>Fadel, C., Bialik, M., &amp; Trilling, B. (2015). <em>Four-Dimensional Education: The Competencies Learners Need to Succeed</em>. CCR.</li>
+  <li>Cervantes, C. et al. (2022). CIRCUIT: A framework for inclusive and equitable STEM mentorship. <em>Cell</em>, 185(15), 2620–2624.</li>
+</ul>
 
 <hr>
 </div>

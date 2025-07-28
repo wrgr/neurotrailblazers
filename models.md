@@ -1,15 +1,23 @@
 ---
-title: Models of Success
+title: Research Incubator Model
 layout: default
 ---
 
 <div class="main-content">
 
 <div class="models-hero">
-  <h1>🧠 Models of Success: MERIT, COMPASS, and CCR</h1>
-  <p>Explore the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.</p>
-
+  <h1>🧠 Research Incubator Model</h1>
 </div>
+
+<section class="section">
+<div class="cards-grid">
+  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+    <p>
+      The research incubator model for high-impact science is supported by the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.
+    </p>
+  </div>
+</div>
+</section>
 <hr>
 <section class="section">
 <div class="section-header">

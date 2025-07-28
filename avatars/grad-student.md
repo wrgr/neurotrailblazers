@@ -1,3 +1,6 @@
-# grad-student.md
+---
+layout: default
+title: Grad Student – The Newcomer
+---
 
-This is a placeholder for grad-student.md.
+A placeholder biography for the graduate student avatar.

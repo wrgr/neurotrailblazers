@@ -1,3 +1,7 @@
+---
+layout: dataset
+title: "MouseConnects Dataset - Complete Hippocampal Connectome"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -503,7 +507,7 @@
                 </p>
                 <div class="hero-actions">
                     <a href="#explore-data" class="btn btn-primary btn-large">Explore the Data</a>
-                    <a href="#workflow" class="btn btn-secondary btn-large">View Pipeline</a>
+                    <a href="/datasets/workflow" class="btn btn-secondary btn-large">View Pipeline</a>
                 </div>
             </div>
             <div class="hero-visual">

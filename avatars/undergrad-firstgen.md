@@ -1,3 +1,6 @@
-# undergrad-firstgen.md
+---
+layout: default
+title: First-Gen Undergrad
+---
 
-This is a placeholder for undergrad-firstgen.md.
+A placeholder biography for the first-generation undergraduate avatar.

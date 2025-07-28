@@ -246,6 +246,8 @@ body {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center;
+  justify-items: center;
 }
 
 .card {
@@ -253,6 +255,8 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 260px;
+  width: 100%;
 }
 
 .card-icon {
@@ -289,6 +293,8 @@ body {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
 }
 
 .dataset-card {
@@ -324,6 +330,8 @@ body {
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   margin-bottom: 2rem;
+  justify-content: center;
+  justify-items: center;
 }
 .module-card {
   background: var(--white);
@@ -384,6 +392,8 @@ body {
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-bottom: 2rem;
+  justify-content: center;
+  justify-items: center;
 }
 
 .merit-card {

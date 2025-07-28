@@ -188,7 +188,7 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 ## 📚 Full Module Index
 
-<p>
+<p class="module-filters">
   <label for="stage-select">Stage:</label>
   <select id="stage-select">
     <option value="">All</option>
@@ -198,7 +198,7 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
     <option value="Analysis">Analysis</option>
     <option value="Dissemination">Dissemination</option>
   </select>
-  <label for="ccr-select" style="margin-left:1rem;">CCR:</label>
+  <label for="ccr-select">CCR:</label>
   <select id="ccr-select">
     <option value="">All</option>
     <option value="Knowledge">Knowledge</option>
@@ -211,7 +211,7 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 
 <div class="modules-grid">
 {% for mod in site.data.modules %}
-  <div class="card module-card" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
+  <div class="card module-card stage-{{ mod.stage | downcase | replace: ' ', '-' }}" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
     {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
     <a href="module{{ padded_number }}" class="module-number-link">{{ padded_number }}. {{ mod.title }}</a>
     <p class="module-description">{{ mod.description }}</p>

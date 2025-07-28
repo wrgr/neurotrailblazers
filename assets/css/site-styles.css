@@ -399,3 +399,38 @@ footer {
     color: #ddd6fe;
   }
 }
+
+/* Timeline styles */
+.timeline {
+  border-left: 3px solid var(--axon-cyan);
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.65rem;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--axon-cyan);
+  border-radius: 50%;
+}
+.timeline-year {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.dataset-facts {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0.5rem 0;
+  list-style: none;
+  padding: 0;
+}
+.dataset-facts li {
+  margin-bottom: 0.25rem;
+}

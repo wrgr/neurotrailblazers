@@ -2,13 +2,7 @@
 layout: dataset
 title: "MouseConnects Dataset - Complete Hippocampal Connectome"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MouseConnects Dataset - Complete Hippocampal Connectome</title>
-    <style>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -512,8 +506,6 @@ title: "MouseConnects Dataset - Complete Hippocampal Connectome"
             }
         }
     </style>
-</head>
-<body>
     <div class="hero-section gradient-bg">
         <div class="hero-content">
             <div class="hero-text">
@@ -754,5 +746,3 @@ title: "MouseConnects Dataset - Complete Hippocampal Connectome"
             </div>
         </div>
     </footer>
-</body>
-</html>

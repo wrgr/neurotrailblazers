@@ -212,7 +212,8 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
 <div class="modules-grid">
 {% for mod in site.data.modules %}
   <div class="card module-card" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
-    <a href="module{{ '%02d' | format: mod.number }}.md" class="module-number-link">{{ '%02d' | format: mod.number }}. {{ mod.title }}</a>
+    {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
+    <a href="module{{ padded_number }}.md" class="module-number-link">{{ padded_number }}. {{ mod.title }}</a>
     <p class="module-description">{{ mod.description }}</p>
   </div>
 {% endfor %}

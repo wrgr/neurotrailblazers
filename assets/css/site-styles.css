@@ -121,6 +121,26 @@ body {
   flex-wrap: wrap;
 }
 
+/* Models Page Hero */
+.models-hero {
+  background: linear-gradient(135deg, var(--axon-cyan), var(--neural-blue));
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.models-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.models-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;

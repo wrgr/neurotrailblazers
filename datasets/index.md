@@ -5,7 +5,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
 ---
 
 <div class="main-content">
-  <div class="hero" style="margin: 2rem -2rem 4rem -2rem; padding: 2rem 2rem;">
+  <div class="hero hero-spaced">
     <div class="hero-content">
       <h1 class="hero-title-impact">Connectomics Datasets<span>: Learn with real scientific data from groundbreaking research</span></h1>
       <div class="hero-description-box">
@@ -342,7 +342,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
     <h2>🗃️ Additional BossDB Hosted Datasets</h2>
     <p>The Brain Observatory Storage Service and Database (BossDB) hosts numerous additional connectomics datasets. For the complete catalog, visit <a href="https://bossdb.org/projects" target="_blank">bossdb.org/projects</a>. Notable additional datasets include:</p>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+    <div class="grid-md mt-2 mb-2">
       <div class="dataset-card">
         <h4>Wildenberg et al. (2023)</h4>
         <p>Isochronic development of cortical synapses in primates and mice - investigating synaptic development across species using electron microscopy and connectomic reconstruction approaches.</p>
@@ -461,8 +461,8 @@ description: "Explore curated connectomics datasets from landmark studies includ
     <h2>🔍 Dataset Categories</h2>
     <p>Connectomics datasets vary in scope, species, and methodology. Understanding these categories helps you choose the right data for your learning goals.</p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-      <div style="background: var(--brain-gray); padding: 1.5rem; border-radius: 12px;">
+    <div class="grid-md mt-2 mb-2">
+      <div class="card-gray">
         <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🧬 By Species</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>C. elegans:</strong> Simple, complete nervous system (302 neurons)</li>
@@ -472,7 +472,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </ul>
       </div>
 
-      <div style="background: var(--brain-gray); padding: 1.5rem; border-radius: 12px;">
+      <div class="card-gray">
         <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🔬 By Resolution</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>Synaptic:</strong> Individual synapses and connections</li>
@@ -482,7 +482,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
         </ul>
       </div>
 
-      <div style="background: var(--brain-gray); padding: 1.5rem; border-radius: 12px;">
+      <div class="card-gray">
         <h3 style="color: var(--synapse-green); margin-bottom: 1rem;">📊 By Data Type</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>Structural:</strong> Electron microscopy-based anatomy</li>
@@ -494,9 +494,10 @@ description: "Explore curated connectomics datasets from landmark studies includ
     </div>
   </section>
 
-  <section class="section" style="text-align: center;">
+  <section class="section text-center">
     <h2>📂 Accessing These Datasets</h2>
     <p>Most datasets are freely available through dedicated platforms. Each dataset entry above includes direct links to data portals, original publications, and popular press coverage where available.</p>
+    <div class="flex-center mt-2">
 
     <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
       <div class="dataset-header">

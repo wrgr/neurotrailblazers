@@ -22,16 +22,16 @@ description: "Explore curated connectomics datasets from landmark studies includ
       <div class="dataset-header">
         <div class="dataset-icon">🚀</div>
         <div class="dataset-meta">
-          <span class="dataset-type">Whole Mouse Brain</span>
+          <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress</span>
         </div>
       </div>
       <h3><a href="/hi-mc">High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
-      <p>A flagship NIH CONNECTS effort to generate a scalable, synapse-resolution map of the entire mouse brain.</p>
+      <p>A flagship NIH CONNECTS effort mapping <strong>10&nbsp;mm³</strong> of mouse hippocampus&mdash;demonstrating scalable connectomics.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse</li>
-        <li><strong>Planned Volume:</strong> Whole brain</li>
-        <li><strong>Estimated Size:</strong> &gt;20 PB</li>
+        <li><strong>Planned Volume:</strong> 10&nbsp;mm³</li>
+        <li><strong>Estimated Size:</strong> &gt;2 PB</li>
       </ul>
       <div class="dataset-actions">
         <a href="/hi-mc" class="btn btn-primary">Project Details</a>

@@ -139,25 +139,25 @@ description: "Begin your adventure in computational neuroscience with our struct
         <div class="checklist-box">
             <h3>Get Started in 5 Steps:</h3>
             <div class="checklist">
-                <label>
+                <label class="checklist-item">
                     <input type="checkbox">
-                    1. Read this Start Here guide
+                    <span>1. Read this Start Here guide</span>
                 </label>
-                <label>
+                <label class="checklist-item">
                     <input type="checkbox">
-                    2. Choose your learning path above
+                    <span>2. Choose your learning path above</span>
                 </label>
-                <label>
+                <label class="checklist-item">
                     <input type="checkbox">
-                    3. Review the <a href="{{ '/models' | relative_url }}">educational models</a>
+                    <span>3. Review the <a href="{{ '/models' | relative_url }}">educational models</a></span>
                 </label>
-                <label>
+                <label class="checklist-item">
                     <input type="checkbox">
-                    4. Meet your student <a href="{{ '/avatars/' | relative_url }}">avatar</a>
+                    <span>4. Meet your student <a href="{{ '/avatars/' | relative_url }}">avatar</a></span>
                 </label>
-                <label>
+                <label class="checklist-item">
                     <input type="checkbox">
-                    5. Begin your first module!
+                    <span>5. Begin your first module!</span>
                 </label>
             </div>
         </div>

@@ -10,8 +10,8 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
       <h1>Nanoscale Connectomics Workflow</h1>
       <p class="hero-subtitle">From Mouse Brain to Circuit Maps</p>
       <p class="hero-description">
-        Discover the cutting-edge pipeline used in the MouseConnects project to create 
-        the first synapse-level connectome of a mammalian brain region.
+        Discover the cutting-edge pipeline used in the MouseConnects project to create
+        an unprecedented view of the hippocampus at single synapse resolution.
       </p>
     </div>
     <div class="hero-visual">

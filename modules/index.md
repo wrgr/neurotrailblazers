@@ -13,6 +13,8 @@ permalink: /modules/
     </div>
   </div>
 
+{% include module-index.html %}
+
 
 This curriculum includes 25 structured modules aligned with the MERIT model (Mentoring Exceptional Researchers to Innovate and Thrive) and the COMPASS framework (Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self). Each module is tagged by its place in the research pipeline and grounded in CCR (Center for Curriculum Redesign) learning dimensions: Knowledge, Skills, Character, Meta-Learning, and Motivation.
 
@@ -196,12 +198,6 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
     </div>
   </div>
 </div>
-
----
-
-{% include module-index.html %}
-
----
 
 Need help deciding where to start? Try **[Module 01](module01/)** or visit our [Models]({{ '/models/' | relative_url }}) page to learn more about the MERIT and COMPASS frameworks.
 </div>

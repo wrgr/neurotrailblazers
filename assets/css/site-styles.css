@@ -804,9 +804,19 @@ footer {
   margin-bottom: 1rem;
 }
 
+.expert-bio-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.expert-bio-text {
+  flex: 1 1 auto;
+}
+
 .expert-avatar {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--neural-blue), var(--axon-cyan));
   color: var(--white);

@@ -121,6 +121,31 @@ description: "Explore curated connectomics datasets from landmark studies includ
         <a href="https://www.princeton.edu/news/2024/10/02/mapping-entire-fly-brain-step-toward-understanding-diseases-human-brain" class="btn btn-secondary" target="_blank">Popular Press</a>
       </div>
     </div>
+
+    <div class="dataset-card featured">
+      <div class="dataset-header">
+        <div class="dataset-icon">🪰</div>
+        <div class="dataset-meta">
+          <span class="dataset-type">Drosophila Central Brain</span>
+          <span class="dataset-status">Published 2020</span>
+        </div>
+      </div>
+      <h3><a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
+      <p>Dense reconstruction of a portion of the central brain of <em>Drosophila melanogaster</em>, revealing circuits for learning, navigation, and circadian rhythms.</p>
+      <ul class="dataset-facts">
+        <li><strong>Species:</strong> Drosophila melanogaster (female)</li>
+        <li><strong>Region:</strong> Central brain (~50%)</li>
+        <li><strong>Volume:</strong> 250×250×250 μm</li>
+        <li><strong>Neurons:</strong> ~25,000</li>
+        <li><strong>Synapses:</strong> ~20 million</li>
+        <li><strong>Size:</strong> ~100 TB</li>
+      </ul>
+      <div class="dataset-actions">
+        <a href="https://neuprint.janelia.org/" class="btn btn-primary" target="_blank">Explore Dataset</a>
+        <a href="https://elifesciences.org/articles/57443" class="btn btn-secondary" target="_blank">Read Paper</a>
+        <a href="https://www.janelia.org/news/unveiling-the-biggest-and-most-detailed-map-of-the-fly-brain-yet" class="btn btn-secondary" target="_blank">Popular Press</a>
+      </div>
+    </div>
   </section>
 
   <section class="section">

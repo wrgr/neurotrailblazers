@@ -1,3 +1,6 @@
-# postdoc-ai.md
+---
+layout: default
+title: Postdoc – AI Researcher
+---
 
-This is a placeholder for postdoc-ai.md.
+A placeholder biography for the postdoctoral avatar focused on AI methods.

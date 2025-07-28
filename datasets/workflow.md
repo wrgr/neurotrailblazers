@@ -4,6 +4,7 @@ title: "MouseConnects Connectomics Workflow"
 description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis in the MouseConnects project"
 ---
 
+<div class="main-content">
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
@@ -399,7 +400,7 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
     </div>
   </div>
 </div>
-
+</div>
 <style>
 .workflow-preview {
   display: flex;

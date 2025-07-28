@@ -15,17 +15,15 @@ permalink: /ask-the-expert/
         <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="expert-avatar">
-        <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
-      </div>
-    </div>
   </div>
 </div>
 
 <section class="section expert-bio">
 <div class="section-header">
   <h2 class="section-title">👤 About Dr. Jeff Lichtman</h2>
+</div>
+<div class="expert-avatar mb-2">
+  <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
 </div>
 
 Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.

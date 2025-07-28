@@ -11,7 +11,11 @@ permalink: /ask-the-expert/
     <div class="hero-text">
       <h1>Ask the Expert</h1>
       <p class="hero-subtitle">Chat with Dr. Jeff Lichtman, connectomics pioneer</p>
-      <p><a class="btn btn-primary" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru">Launch Chatbot</a></p>
+      <p class="hero-description">Our curated AI bot answers your questions about brain mapping and research life.</p>
+      <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>
+    </div>
+    <div class="hero-visual">
+      <div class="expert-avatar">JL</div>
     </div>
   </div>
 </div>

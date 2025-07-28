@@ -5,7 +5,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
 ---
 
 <div class="main-content">
-  <div class="hero" style="margin: -2rem -2rem 4rem -2rem; padding: 4rem 2rem;">
+  <div class="hero" style="margin: 2rem -2rem 4rem -2rem; padding: 4rem 2rem;">
     <div class="hero-content">
       <h1>Connectomics Datasets</h1>
       <p class="hero-subtitle">Learn with real scientific data from groundbreaking research</p>

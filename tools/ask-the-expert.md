@@ -18,26 +18,28 @@ permalink: /ask-the-expert/
   </div>
 </div>
 
-<section class="section expert-bio" markdown="1">
-<div class="section-header expert-bio-header">
+<section class="section expert-bio">
+<div class="expert-bio-content">
   <div class="expert-avatar">
     <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
   </div>
-  <h2 class="section-title">👤 About Dr. Jeff Lichtman</h2>
+  <div class="expert-bio-text" markdown="1">
+  ## 👤 About Dr. Jeff Lichtman
+
+  Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
+
+  **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
+
+  Dr. Lichtman's work focuses on the **connectome**—the complete map of neural connections in the brain. He has been instrumental in developing **Brainbow** imaging and in advancing large-volume electron microscopy to reconstruct neural circuits with unprecedented precision.
+
+  He is a co-lead of the **Harvard-Mouse Connectome Project (HI-MC)**, which aims to chart 10 mm³ of mouse hippocampal brain tissue in full EM resolution.
+
+  🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
+
+  In April 2024, Harvard named Dr. Lichtman the Dean of Science for the Faculty of Arts and Sciences, underscoring his leadership in fostering cross-disciplinary collaboration and open, data-driven discovery.
+
+  </div>
 </div>
-
-Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
-
-**Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
-
-Dr. Lichtman's work focuses on the **connectome**—the complete map of neural connections in the brain. He has been instrumental in developing **Brainbow** imaging and in advancing large-volume electron microscopy to reconstruct neural circuits with unprecedented precision.
-
-He is a co-lead of the **Harvard-Mouse Connectome Project (HI-MC)**, which aims to chart 10 mm³ of mouse hippocampal brain tissue in full EM resolution.
-
-🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
-
-In April 2024, Harvard named Dr. Lichtman the Dean of Science for the Faculty of Arts and Sciences, underscoring his leadership in fostering cross-disciplinary collaboration and open, data-driven discovery.
-
 </section>
 
 <section class="section expert-bio" markdown="1">

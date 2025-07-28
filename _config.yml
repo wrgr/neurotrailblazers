@@ -32,6 +32,12 @@ defaults:
     values:
       layout: "module"
   - scope:
+      path: "modules"
+      type: ""
+    values:
+      layout: "module"
+      permalink: "/modules/:basename/"
+  - scope:
       path: ""
       type: "avatars"
     values:

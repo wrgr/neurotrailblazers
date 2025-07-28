@@ -2,6 +2,7 @@
 
 title: "Module 01: Introduction to NeuroTrailblazers & Connectomics"
 layout: module
+permalink: /modules/module01/
 ---
 
 ## Overview

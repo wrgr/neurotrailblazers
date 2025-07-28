@@ -1,24 +1,25 @@
 ---
-
 title: "Module 02: From Pixels to Projects — Exploring Real Connectomics Datasets"
 layout: module
+permalink: /modules/module02/
 description: "Dive into real-world brain mapping datasets and learn how EM images become 3D digital reconstructions of the brain."
-module\_number: 2
+module_number: 2
 difficulty: "Beginner"
 duration: "2–3 hours"
-learning\_objectives:
-
-* "Describe how raw EM data is acquired and prepared for analysis"
-* "Identify the stages in the connectomics data pipeline (imaging, alignment, segmentation, skeletonization)"
-* "Explore real connectomics datasets using interactive tools"
-* "Recognize different formats (volumes, segments, meshes, skeletons) in current datasets"
-  prerequisites: "Module 1 or equivalent understanding of basic connectomics"
-  merit\_stage: "Orientation & Research Foundations"
-  compass\_skills: \["Digital Literacy", "Data Navigation"]
-  ccr\_focus: \["Knowledge - Data Acquisition", "Skills - Dataset Exploration"]
-
+learning_objectives:
+  - "Describe how raw EM data is acquired and prepared for analysis"
+  - "Identify the stages in the connectomics data pipeline (imaging, alignment, segmentation, skeletonization)"
+  - "Explore real connectomics datasets using interactive tools"
+  - "Recognize different formats (volumes, segments, meshes, skeletons) in current datasets"
+prerequisites: "Module 1 or equivalent understanding of basic connectomics"
+merit_stage: "Orientation & Research Foundations"
+compass_skills:
+  - "Digital Literacy"
+  - "Data Navigation"
+ccr_focus:
+  - "Knowledge - Data Acquisition"
+  - "Skills - Dataset Exploration"
 ---
-
 ```
 <h3 style="margin-top: 1rem;">Core Topics:</h3>
 <ul style="margin-left: 1.5rem;">

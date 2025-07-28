@@ -1,22 +1,25 @@
 ---
-
 title: "Module 08: Hypothesis Testing in Connectomics"
 layout: module
+permalink: /modules/module08/
 description: "Learn how to generate and test scientific hypotheses using circuit-level data from EM volumes."
-module\_number: 8
+module_number: 8
 difficulty: "Intermediate"
 duration: "3-4 hours"
-learning\_objectives:
-
-* "Define and identify testable hypotheses in connectomics"
-* "Apply statistical methods to compare neural features"
-* "Design experiments to validate hypotheses using segmented data"
-* "Critically interpret analysis results"
-  prerequisites: "Modules 1-7, basic statistics"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Scientific Reasoning", "Experimental Design", "Critical Thinking"]
-  ccr\_focus: \["Knowledge - Scientific Inquiry", "Skills - Statistical Analysis"]
-
+learning_objectives:
+  - "Define and identify testable hypotheses in connectomics"
+  - "Apply statistical methods to compare neural features"
+  - "Design experiments to validate hypotheses using segmented data"
+  - "Critically interpret analysis results"
+prerequisites: "Modules 1-7, basic statistics"
+merit_stage: "Analysis"
+compass_skills:
+  - "Scientific Reasoning"
+  - "Experimental Design"
+  - "Critical Thinking"
+ccr_focus:
+  - "Knowledge - Scientific Inquiry"
+  - "Skills - Statistical Analysis"
 ---
 
 <div class="main-content">

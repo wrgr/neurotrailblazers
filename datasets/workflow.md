@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "Connectomics Workflow"
-description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis"
+title: "MouseConnects Connectomics Workflow"
+description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis in the MouseConnects project"
 ---
 
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
-      <h1>Nanoscale Connectomics Workflow</h1>
-      <p class="hero-subtitle">From Mouse Brain to Circuit Maps</p>
+      <h1>MouseConnects Nanoscale Connectomics Workflow</h1>
+      <p class="hero-subtitle">From Mouse Brain to Memory Circuit Maps</p>
       <p class="hero-description">
-        Discover the cutting-edge pipeline used in the MouseConnects project to create
+        Discover the cutting-edge pipeline used in the MouseConnects: HI-MC project to create
         an unprecedented view of the hippocampus at single synapse resolution.
       </p>
     </div>
@@ -32,10 +32,10 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
   <div class="workflow-overview">
     <h2>The MouseConnects Pipeline</h2>
     <p>
-      The MouseConnects project represents the most ambitious connectomics effort to date, 
+      MouseConnects represents the most ambitious connectomics effort to date, 
       aiming to reconstruct 10 mm³ of mouse hippocampal formation at nanometer resolution. 
-      This workflow demonstrates how modern neuroscience combines advanced imaging, 
-      machine learning, and massive computational resources.
+      This $40M NIH BRAIN CONNECTS project demonstrates how modern neuroscience combines advanced imaging, 
+      machine learning, and massive computational resources to unlock the secrets of memory circuits.
     </p>
     
     <div class="workflow-stats">
@@ -68,7 +68,7 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
         <div class="step-details">
           <div class="step-description">
             <p>
-              Whole mouse brains are fixed and stained with heavy metals (osmium tetroxide) 
+              Whole C57BL/6 mouse brains are fixed and stained with heavy metals (osmium tetroxide) 
               to create contrast for electron microscopy. The new ODeCO protocol ensures 
               uniform staining across large volumes.
             </p>
@@ -124,10 +124,10 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
           <div class="step-description">
             <p>
               Novel mSEM-IBEAM systems combine multibeam scanning electron microscopy 
-              with ion beam milling to image at 8 nm isotropic resolution.
+              with ion beam milling to image at 8 nm isotropic resolution across two sites.
             </p>
             <ul>
-              <li>91-beam scanning electron microscopes</li>
+              <li>91-beam scanning electron microscopes at Harvard and Princeton</li>
               <li>Ion beam etching and milling (IBEAM)</li>
               <li>Automated imaging across multiple sites</li>
               <li>Real-time quality monitoring</li>
@@ -205,12 +205,12 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
           <div class="step-description">
             <p>
               Human experts and community contributors validate and correct automated 
-              reconstructions using collaborative web-based tools.
+              reconstructions using collaborative web-based tools, with training support from Johns Hopkins APL.
             </p>
             <ul>
               <li>ChunkedGraph collaborative editing</li>
               <li>CAVE proofreading interface</li>
-              <li>Community-driven validation</li>
+              <li>Community-driven validation through CIRCUIT program</li>
               <li>Version control for reconstructions</li>
             </ul>
           </div>
@@ -302,6 +302,40 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
             <span class="tech-tag">Open Science</span>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-spotlight">
+    <h2>MouseConnects Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <h3>🏛️ Harvard University</h3>
+        <p><strong>Jeff Lichtman</strong> - Sample preparation, tissue processing, mSEM imaging</p>
+      </div>
+      <div class="team-card">
+        <h3>🎓 Princeton University</h3>
+        <p><strong>Sebastian Seung & David Tank</strong> - mSEM imaging, machine learning algorithms</p>
+      </div>
+      <div class="team-card">
+        <h3>☁️ Google Research</h3>
+        <p><strong>Viren Jain</strong> - Cloud processing, automated segmentation, flood-filling networks</p>
+      </div>
+      <div class="team-card">
+        <h3>🧠 MIT</h3>
+        <p><strong>Ila Fiete</strong> - Circuit analysis, computational modeling, spatial navigation</p>
+      </div>
+      <div class="team-card">
+        <h3>🔬 Allen Institute</h3>
+        <p><strong>Hongkui Zeng</strong> - Patch-seq recordings, cell typing, fMOST morphology</p>
+      </div>
+      <div class="team-card">
+        <h3>🏛️ Cambridge University</h3>
+        <p><strong>Gregory Jefferis</strong> - Data integration, proofreading, cross-modal analysis</p>
+      </div>
+      <div class="team-card">
+        <h3>🚀 Johns Hopkins APL</h3>
+        <p><strong>William Gray-Roncal</strong> - Training, connectome quality, CIRCUIT outreach program</p>
       </div>
     </div>
   </div>
@@ -488,6 +522,34 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
   border: 1px solid rgba(124, 58, 237, 0.2);
 }
 
+.team-spotlight {
+  background: linear-gradient(135deg, var(--brain-gray) 0%, white 100%);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 4rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.team-card h3 {
+  color: var(--neural-blue);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
 .pathway-cards, .cta-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -540,6 +602,10 @@ description: "Learn the complete pipeline for nanoscale connectomics research, f
   
   .workflow-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

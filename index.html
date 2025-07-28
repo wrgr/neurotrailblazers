@@ -16,25 +16,7 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="{{ '/' | relative_url }}" class="logo">NeuroTrailblazers</a>
-            <ul class="nav-menu">
-                {% for item in site.navigation %}
-                <li class="nav-item">
-                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
-                    {% if item.dropdown %}
-                    <ul class="dropdown">
-                        {% for subitem in item.dropdown %}
-                        <li><a href="{{ subitem.url | relative_url }}" class="dropdown-link">{{ subitem.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
+    
 
     <main>
         <!-- Hero Section -->

@@ -142,6 +142,369 @@
   font-weight: bold;
 }
 
+/* MERIT Framework Styles */
+.merit-framework {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.merit-stage {
+  background: white;
+  border-left: 4px solid var(--neural-blue);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.merit-stage:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.merit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.merit-stage h3 {
+  color: var(--neural-blue);
+  margin-bottom: 0.5rem;
+}
+
+.merit-components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.component {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--neural-blue);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* COMPASS Framework Styles */
+.compass-framework {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.compass-workshop {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.compass-workshop:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.workshop-number {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.5rem;
+  background: var(--cerebral-purple);
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.compass-workshop h3 {
+  color: var(--cerebral-purple);
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.workshop-focus {
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--cerebral-purple);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* CCR Dimensions Styles */
+.ccr-dimensions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.ccr-dimension {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ccr-dimension:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ccr-dimension.knowledge { border-top: 4px solid var(--neural-blue); }
+.ccr-dimension.skills { border-top: 4px solid var(--cerebral-purple); }
+.ccr-dimension.character { border-top: 4px solid var(--axon-cyan); }
+.ccr-dimension.meta { border-top: 4px solid #f59e0b; }
+
+.dimension-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.ccr-dimension h3 {
+  margin-bottom: 0.5rem;
+}
+
+.ccr-dimension.knowledge h3 { color: var(--neural-blue); }
+.ccr-dimension.skills h3 { color: var(--cerebral-purple); }
+.ccr-dimension.character h3 { color: var(--axon-cyan); }
+.ccr-dimension.meta h3 { color: #f59e0b; }
+
+.knowledge-areas .area { background: rgba(37, 99, 235, 0.1); color: var(--neural-blue); border-color: rgba(37, 99, 235, 0.2); }
+.skill-areas .area { background: rgba(124, 58, 237, 0.1); color: var(--cerebral-purple); border-color: rgba(124, 58, 237, 0.2); }
+.character-areas .area { background: rgba(6, 182, 212, 0.1); color: var(--axon-cyan); border-color: rgba(6, 182, 212, 0.2); }
+.meta-areas .area { background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); }
+
+.area {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  border: 1px solid;
+}
+
+/* Framework Integration Styles */
+.framework-integration {
+  background: linear-gradient(135deg, var(--brain-gray) 0%, white 100%);
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+.integration-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.framework-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.framework-circle.merit { background: var(--neural-blue); }
+.framework-circle.compass { background: var(--cerebral-purple); }
+.framework-circle.ccr { background: var(--axon-cyan); }
+.framework-circle.result { background: #f59e0b; }
+
+.integration-arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.alignment-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.alignment-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--neural-blue);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.alignment-card h4 {
+  color: var(--neural-blue);
+  margin-bottom: 0.5rem;
+}
+/* MouseConnects Dataset Page Styles */
+.gradient-bg {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #06b6d4 100%);
+  color: white;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.connectome-preview {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brain-region.hippocampus {
+  width: 120px;
+  height: 80px;
+  background: linear-gradient(45deg, #fbbf24, #f59e0b);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.data-streams {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.stream {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #06b6d4, transparent);
+  animation: flow 3s ease-in-out infinite;
+}
+
+.stream-1 {
+  height: 100%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.stream-2 {
+  height: 80%;
+  left: 50%;
+  top: 10%;
+  animation-delay: 1s;
+}
+
+.stream-3 {
+  height: 100%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes flow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Dataset card spotlight effect */
+.dataset-card.spotlight {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.dataset-card.spotlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+  pointer-events: none;
+}
+
+.dataset-card.spotlight .dataset-meta .dataset-status {
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.dataset-card.spotlight .stat-value {
+  color: #fbbf24;
+}
+
+.dataset-card.spotlight .tag {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* Workflow page styles */
+.workflow-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+  border-radius: 1rem;
+  border: 2px solid rgba(37, 99, 235, 0.2);
+}
+
+.pipeline-step {
+  background: var(--neural-blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pipeline-arrow {
+  color: var(--neural-blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Additional responsive styles for new components */
 @media (max-width: 768px) {
   .workflow-preview {

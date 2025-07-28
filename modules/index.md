@@ -4,7 +4,7 @@ title: "NeuroTrailblazers Curriculum Index"
 layout: page
 description: "Overview of all 25 modules organized by MERIT stages and CCR dimensions"
 permalink: /modules/
---------------------
+---
 
 # NeuroTrailblazers Training Modules
 

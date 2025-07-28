@@ -62,7 +62,7 @@ navigation:
   - title: "Models"
     url: "/models"
   - title: "Workflow"
-    url: "/workflow"
+    url: "/datasets/workflow"
   - title: "Modules"
     url: "/modules/"
     dropdown:

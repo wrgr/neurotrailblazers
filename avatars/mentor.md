@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: Dr. Nguyen – The Vision Builder
+title: Dr. Linh Nguyen – The Vision Builder
 role: Assistant Professor
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
@@ -37,7 +37,7 @@ goals: ["Grow collaborative lab", "Secure sustainable funding", "Support trainee
   <h2>Nguyen's Story</h2>
   <div style="background: var(--brain-gray); padding: 2rem; border-radius: 12px; margin: 1rem 0;">
     <p style="font-size: 1.1rem; line-height: 1.8; color: var(--synapse-black); margin: 0;">
-      Dr. Nguyen has always moved forward—quickly. From valedictorian to PhD to assistant professor, she’s led with clarity. But now, managing data releases, peer mentorship, and grant deadlines, she wonders: what’s next? She thrives when ideas snap together. But leadership is lonely, and good science often feels at odds with fast science. She’s seen too many teams collapse under pressure.
+      Dr. Linh Nguyen has always moved forward—quickly. From valedictorian to PhD to assistant professor, she’s led with clarity. But now, managing data releases, peer mentorship, and grant deadlines, she wonders: what’s next? She thrives when ideas snap together. But leadership is lonely, and good science often feels at odds with fast science. She’s seen too many teams collapse under pressure.
     </p>
   </div>
   <div class="cards-grid" style="margin: 2rem 0;">

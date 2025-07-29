@@ -63,7 +63,7 @@ github_username: wrgr
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Start Here"
+  - title: "Start"
     url: "/start-here"
   - title: "Models"
     url: "/models"
@@ -76,9 +76,9 @@ navigation:
     url: "/datasets/"
   - title: "Avatars"
     url: "/avatars/"
-  - title: "Ask an Expert"
+  - title: "Ask Expert"
     url: "/ask-an-expert/"
-  - title: "Connectome Quality"
+  - title: "Proofreading"
     url: "/tools/connectome-quality/"
 
 # Grant and program information

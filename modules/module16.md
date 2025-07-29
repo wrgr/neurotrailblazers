@@ -2,6 +2,7 @@
 
 title: "Module 16: Scientific Visualization for Connectomics"
 layout: module
+permalink: /modules/module16/
 description: "Learn how to create effective visualizations of neural structures, connectivity, and analysis results."
 module\_number: 16
 difficulty: "Intermediate"

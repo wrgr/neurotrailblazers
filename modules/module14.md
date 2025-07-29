@@ -2,6 +2,7 @@
 
 title: "Module 14: Neuron Classification and Morphology"
 layout: module
+permalink: /modules/module14/
 description: "Learn how to identify neuron types using structural, morphological, and connectivity features in EM datasets."
 module\_number: 14
 difficulty: "Intermediate"

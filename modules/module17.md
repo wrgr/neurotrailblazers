@@ -2,6 +2,7 @@
 
 title: "Module 17: Scientific Writing for Connectomics"
 layout: module
+permalink: /modules/module17/
 description: "Learn to communicate research findings effectively through scientific writing for papers, posters, and presentations."
 module\_number: 17
 difficulty: "Intermediate"

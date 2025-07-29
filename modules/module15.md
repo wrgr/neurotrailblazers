@@ -2,6 +2,7 @@
 
 title: "Module 15: Connectome Proofreading and Quality Control"
 layout: module
+permalink: /modules/module15/
 description: "Learn how to identify and correct errors in segmentation and connectivity, improving the reliability of connectomics data."
 module\_number: 15
 difficulty: "Intermediate"

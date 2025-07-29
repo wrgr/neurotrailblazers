@@ -2,6 +2,7 @@
 
 title: "Module 22: Science Communication and Public Engagement"
 layout: module
+permalink: /modules/module22/
 description: "Learn to communicate your research to non-experts, policymakers, and broader communities."
 module\_number: 22
 difficulty: "Intermediate"

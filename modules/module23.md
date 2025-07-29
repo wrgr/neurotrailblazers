@@ -2,6 +2,7 @@
 
 title: "Module 23: Career Exploration and Pathways in Neuroscience"
 layout: module
+permalink: /modules/module23/
 description: "Explore diverse career paths in neuroscience, from academia and industry to science policy and entrepreneurship."
 module\_number: 23
 difficulty: "Beginner to Intermediate"

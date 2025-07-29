@@ -2,6 +2,7 @@
 
 title: "Module 04: Neuroanatomy and Circuit Architecture"
 layout: module
+permalink: /modules/module04/
 description: "Learn how the brain is organized into regions, layers, and systems—and how those structures shape connectivity."
 module\_number: 4
 difficulty: "Beginner to Intermediate"

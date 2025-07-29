@@ -2,6 +2,7 @@
 
 title: "Module 07: Network Theory for Brain Connectivity"
 layout: module
+permalink: /modules/module07/
 description: "Explore how tools from graph theory and network science are used to represent and analyze the connectome."
 module\_number: 7
 difficulty: "Intermediate to Advanced"

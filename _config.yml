@@ -79,7 +79,7 @@ navigation:
   - title: "Ask an Expert"
     url: "/ask-an-expert/"
   - title: "Connectome Quality"
-    url: "/connectome-quality/"
+    url: "/tools/connectome-quality/"
 
 # Grant and program information
 grant_info:

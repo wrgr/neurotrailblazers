@@ -25,6 +25,17 @@ layout: default
   </div>
 </div>
 </section>
+
+<!-- Program Tagline -->
+<section class="section section-highlight">
+<div class="cards-grid">
+  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+    {% for line in site.tagline_lines %}
+    <p class="card-description">{{ line }}</p>
+    {% endfor %}
+  </div>
+</div>
+</section>
 <hr>
 <section class="section">
 <div class="section-header">

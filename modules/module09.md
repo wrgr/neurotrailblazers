@@ -2,6 +2,7 @@
 
 title: "Module 09: From Neurons to Networks: Basics of Graph Theory in Connectomics"
 layout: module
+permalink: /modules/module09/
 description: "Learn how to represent the brain as a graph and analyze its structure using basic network theory."
 module\_number: 9
 difficulty: "Intermediate"

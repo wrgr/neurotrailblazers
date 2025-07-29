@@ -2,6 +2,7 @@
 
 title: "Module 18: Scientific Posters and Conference Preparation"
 layout: module
+permalink: /modules/module18/
 description: "Design compelling scientific posters and prepare to present your connectomics research effectively."
 module\_number: 18
 difficulty: "Beginner to Intermediate"

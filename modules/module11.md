@@ -2,6 +2,7 @@
 
 title: "Module 11: Introduction to Machine Learning in Connectomics"
 layout: module
+permalink: /modules/module11/
 description: "Understand the role of machine learning in segmenting neurons, predicting synapses, and modeling brain structure."
 module\_number: 11
 difficulty: "Intermediate"

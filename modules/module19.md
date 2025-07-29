@@ -2,6 +2,7 @@
 
 title: "Module 19: Peer Review and Scientific Ethics"
 layout: module
+permalink: /modules/module19/
 description: "Understand the peer review process and the ethical principles that guide responsible scientific conduct."
 module\_number: 19
 difficulty: "Intermediate"

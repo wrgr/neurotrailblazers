@@ -2,6 +2,7 @@
 
 title: "Module 10: Hypothesis Testing and Circuit Function"
 layout: module
+permalink: /modules/module10/
 description: "Explore how neuroscientists formulate and test hypotheses about neural circuits using both biological and computational tools."
 module\_number: 10
 difficulty: "Intermediate"

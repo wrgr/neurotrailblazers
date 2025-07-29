@@ -2,6 +2,7 @@
 
 title: "Module 13: Data Science for Connectomics"
 layout: module
+permalink: /modules/module13/
 description: "Apply core data science techniques to connectomics problems including feature extraction and unsupervised analysis."
 module\_number: 13
 difficulty: "Advanced"

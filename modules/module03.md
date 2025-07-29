@@ -2,6 +2,7 @@
 
 title: "Module 03: Navigating the Scientific Method in Connectomics"
 layout: module
+permalink: /modules/module03/
 description: "Learn how the scientific method guides brain mapping, and develop your ability to ask testable neuroscience questions."
 module_number: 3
 difficulty: "Beginner"

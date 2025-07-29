@@ -2,6 +2,7 @@
 
 title: "Module 06: Hypothesis Testing in Connectomics"
 layout: module
+permalink: /modules/module06/
 description: "Learn how to formulate, test, and refine scientific hypotheses using nanoscale brain circuit data."
 module\_number: 6
 difficulty: "Intermediate"

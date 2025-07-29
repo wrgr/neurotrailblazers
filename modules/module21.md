@@ -2,6 +2,7 @@
 
 title: "Module 21: Research Mentorship and Leadership"
 layout: module
+permalink: /modules/module21/
 description: "Develop the mindset and tools to mentor others and lead collaborative research effectively."
 module\_number: 21
 difficulty: "Intermediate to Advanced"

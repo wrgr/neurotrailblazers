@@ -2,6 +2,7 @@
 
 title: "Module 24: Systems Thinking and Interdisciplinary Science"
 layout: module
+permalink: /modules/module24/
 description: "Develop a systems perspective to solve complex scientific problems by integrating ideas across disciplines."
 module\_number: 24
 difficulty: "Intermediate to Advanced"

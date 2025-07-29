@@ -2,6 +2,7 @@
 
 title: "Module 20: Grant Writing and Funding Pathways"
 layout: module
+permalink: /modules/module20/
 description: "Learn the basics of research grant writing and explore common funding mechanisms for early-stage scientists."
 module\_number: 20
 difficulty: "Advanced"

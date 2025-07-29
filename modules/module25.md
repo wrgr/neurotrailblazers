@@ -2,6 +2,7 @@
 
 title: "Module 25: Designing Your Capstone Portfolio"
 layout: module
+permalink: /modules/module25/
 description: "Integrate your learning into a showcase portfolio that highlights your skills, insights, and contributions."
 module\_number: 25
 difficulty: "Advanced"

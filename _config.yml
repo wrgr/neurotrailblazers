@@ -82,10 +82,9 @@ navigation:
 # Grant and program information
 grant_info:
   program: "NIH CONNECTS"
-  grant: "HI-MC"
+  grant: "Mouse Connectome Project"
   funding_agency: "National Institutes of Health"
-  focus: "Nanoscale Connectomics"
-  mission: "Closing knowledge and opportunity gaps for students who dream of shaping the future of neuroscience"
+  focus: "connectome quality and dissemination"
 
 # Program tagline used across pages
 tagline_lines:

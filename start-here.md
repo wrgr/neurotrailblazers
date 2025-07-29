@@ -76,19 +76,19 @@ description: "Begin your adventure in computational neuroscience with our struct
             </div>
         </div>
 
-        <h3>Student Avatars</h3>
-        <p>Meet our representative students to see yourself in their journeys:</p>
+        <h3>Learner Avatars</h3>
+        <p>Meet our representative learners to see yourself in their journeys:</p>
         <div class="cards-grid mt-1">
             <div class="card text-center">
                 <h4>Julian</h4>
                 <p><em>First-generation undergraduate</em><br>Just starting research, full of curiosity</p>
             </div>
             <div class="card text-center">
-                <h4>Layla</h4>
+                <h4>Maya</h4>
                 <p><em>Graduate student</em><br>Navigating dissertation and publishing</p>
             </div>
             <div class="card text-center">
-                <h4>Elias</h4>
+                <h4>Amir</h4>
                 <p><em>Postdoc with AI background</em><br>Merging AI and neuroscience</p>
             </div>
         </div>

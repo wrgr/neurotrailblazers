@@ -39,9 +39,9 @@ permalink: /datasets/mouseconnectome/
                 <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">50× larger than previous connectomes</div>
             </div>
             <div class="card dataset-card-purple text-center">
-                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cerebral-purple); margin-bottom: 0.5rem;">8 nm</div>
+                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cerebral-purple); margin-bottom: 0.5rem;">4 nm</div>
                 <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Resolution</div>
-                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">Isotropic nanometer precision</div>
+                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">nanometer resolution</div>
             </div>
             <div class="card dataset-card-cyan text-center">
                 <div style="font-size: 2.5rem; font-weight: 700; color: var(--axon-cyan); margin-bottom: 0.5rem;">>10 PB</div>

@@ -75,6 +75,8 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
       <li>Rougier et al., 2014. <em>Ten Simple Rules for Better Figures</em>. PLoS Comp Bio.</li>
       <li>Ware, 2013. <em>Information Visualization: Perception for Design</em>.</li>
       <li>Colab: "Data Visualization with Seaborn and Plotly for Connectomics"</li>
+      <li>Notebook: <a href="{{ '/notebooks/intro/MeshExample.ipynb' | relative_url }}">Mesh Example</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/MeshExample.ipynb" target="_blank">source</a>)</li>
+      <li>Notebook: <a href="{{ '/notebooks/intro/Render3DScaleBar.ipynb' | relative_url }}">Render 3D Scale Bar</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/Render3DScaleBar.ipynb" target="_blank">source</a>)</li>
     </ul>
   </div>
 

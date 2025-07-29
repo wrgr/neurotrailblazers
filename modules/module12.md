@@ -67,6 +67,7 @@ ccr_focus:
       <li>Harris & Weinberg, 2012. <em>Ultrastructure of synapses</em>. Brain Res.</li>
       <li>Scheffer et al., 2020. <em>A connectome and analysis of the adult Drosophila central brain</em>. eLife.</li>
       <li>Colab: "Synapse Type Classification from Morphology"</li>
+      <li>Notebook: <a href="{{ '/notebooks/intro/DashSynapseExplorer.ipynb' | relative_url }}">Dash Synapse Explorer</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/DashSynapseExplorer.ipynb" target="_blank">source</a>)</li>
     </ul>
   </div>
 

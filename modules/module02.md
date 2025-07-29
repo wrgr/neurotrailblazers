@@ -67,6 +67,8 @@ ccr_focus:
       <li><strong>Zheng et al., 2018</strong>, Nature – FlyWire / FAFB EM volume of adult fly brain</li>
       <li><strong>MICrONS dataset release</strong>, 2021 – V1 Layer 2/3 mouse volume</li>
       <li><a href="https://bossdb.org">Allen Institute / BossDB</a></li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Five-Minute-Jump-Start.ipynb">Five-Minute Jump Start</a></li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/More-Advanced-Get-Started-Downloading-Data-with-Intern.ipynb">Advanced Data Downloading</a></li>
     </ul>
   </div>
 

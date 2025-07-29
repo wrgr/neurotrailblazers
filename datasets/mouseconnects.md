@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "MouseConnects Dataset – Complete Hippocampal Connectome"
-permalink: /datasets/mouseconnectome/
+permalink: /datasets/mouseconnects/
 ---
 
 <div class="hero">

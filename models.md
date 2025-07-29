@@ -17,22 +17,6 @@ layout: default
 </div>
 </section>
 
-<section class="section">
-<div class="cards-grid">
-  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
-    <p>
-      The research incubator model for high-impact science is supported by the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.
-    </p>
-  </div>
-</div>
-</section>
-<section class="section">
-<div class="cards-grid">
-  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
-    <p>Research incubators accelerate solutions to pressing problems by uniting motivated students and staff in an intensive, short-term cohort.</p>
-  </div>
-</div>
-</section>
 
 <!-- Program Tagline -->
 <section class="section section-highlight">

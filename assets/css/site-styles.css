@@ -334,6 +334,36 @@ body {
   width: 100%;
 }
 
+/* Card with two-column layout */
+.two-column-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.two-column-card .card-text {
+  flex: 1 1 300px;
+}
+
+.two-column-card .card-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .two-column-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .two-column-card .card-image img {
+    max-width: 100%;
+  }
+}
+
 .card-icon {
   font-size: 2rem;
   margin-bottom: 0.75rem;

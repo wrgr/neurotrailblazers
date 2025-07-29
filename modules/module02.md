@@ -29,7 +29,8 @@ ccr_focus:
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>Core Topics</h2>
     <ul>
       <li>🖼️ <strong>Volume Imaging:</strong> Acquiring nanoscale slices via serial-section EM</li>
@@ -38,18 +39,18 @@ ccr_focus:
       <li>🕸️ <strong>Skeletonization:</strong> Creating simplified graphs to represent neuron paths</li>
       <li>🧠 <strong>Dataset Exploration:</strong> FlyWire, MICrONS, H01, FAFB, Kasthuri, and more</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>Sample Interactive Tools</h2>
     <ul>
       <li><a href="https://neuroglancer-demo.appspot.com/">Neuroglancer</a></li>
       <li><a href="https://flywire.ai">FlyWire Viewer</a></li>
       <li><a href="https://www.microns-explorer.org">MICrONS Explorer</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Understand how data is organized and labeled for analysis</li>
@@ -57,9 +58,9 @@ ccr_focus:
       <li><strong>Character:</strong> Patience, attention to detail, and openness to uncertainty</li>
       <li><strong>Meta-Learning:</strong> Learn how tools and pipelines evolve across datasets</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>References & Resources</h2>
     <ul>
       <li><strong>Kasthuri et al., 2015</strong>, Cell – "Saturated reconstruction of neocortex"</li>
@@ -67,15 +68,16 @@ ccr_focus:
       <li><strong>MICrONS dataset release</strong>, 2021 – V1 Layer 2/3 mouse volume</li>
       <li><a href="https://bossdb.org">Allen Institute / BossDB</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>Assessment</h2>
     <ul>
       <li>Match dataset types to pipeline stages (e.g., segmentation → labeled volume)</li>
       <li>Navigate a dataset and find one synapse, one neuron, and one glial cell</li>
       <li>Write a 3–4 sentence description of how segmentation is performed and why it matters</li>
     </ul>
-  </section>
+  </div>
 
+</div>
 </div>

@@ -11,6 +11,14 @@ layout: default
 
 <section class="section">
 <div class="cards-grid">
+  <div class="card text-center" style="max-width: 600px; margin: 0 auto;">
+    <p><strong>We power breakthroughs by developing and deploying top research talent.</strong></p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="cards-grid">
   <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
     <p>
       The research incubator model for high-impact science is supported by the core frameworks guiding the NeuroTrailblazers curriculum — blending structured research training, holistic development, and modern educational theory to support emerging scientists.
@@ -30,7 +38,7 @@ layout: default
 <section class="section section-highlight">
 <div class="cards-grid">
   <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
-    {% for line in site.tagline_lines %}
+    {% for line in site.tagline_lines offset:1 %}
     <p class="card-description">{{ line }}</p>
     {% endfor %}
   </div>

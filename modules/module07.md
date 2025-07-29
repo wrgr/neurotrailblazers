@@ -28,7 +28,8 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔗 Circuits as Graphs</h2>
     <p>Connectomics datasets can be transformed into graphs, where nodes represent neurons and edges represent synapses. This abstraction allows mathematical analysis of the brain's structure using tools from graph theory.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
       <li>Directed vs. undirected graphs</li>
       <li>Weighted edges and multilayer networks</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📈 Network Metrics</h2>
     <p>Network theory provides powerful tools for quantifying connectivity. Key metrics help identify structural features of circuits, such as hubs, communities, and bottlenecks.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
       <li>Path length and clustering coefficient</li>
       <li>Network motifs and modularity</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🧮 Connectomics in Context</h2>
     <p>Analyzing neural networks allows us to draw comparisons across species and systems. Biological networks may exhibit small-world or scale-free properties, and can be contrasted with artificial networks.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
       <li>Comparing biological vs. artificial networks</li>
       <li>Limitations of network abstraction</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🎯 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Network terminology and brain graph modeling</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
       <li><strong>Character:</strong> Persistence, openness to complexity</li>
       <li><strong>Meta-Learning:</strong> Building bridges between math and biology</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Sporns, 2010. <em>Networks of the Brain</em>. MIT Press.</li>
       <li>Watts & Strogatz, 1998. <em>Collective dynamics of ‘small-world’ networks</em>. Nature.</li>
       <li>NetworkX Documentation: <a href="https://networkx.org">networkx.org</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Draw a network graph from a small connectome sample</li>
       <li>Compute and interpret degree centrality and clustering coefficient</li>
       <li>Compare two networks (e.g. biological vs. artificial) and describe key differences</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

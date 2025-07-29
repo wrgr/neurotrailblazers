@@ -28,7 +28,8 @@ ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytel
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🌟 Building a Showcase Portfolio</h2>
     <p>Compile artifacts, reflections, and evidence from your journey to demonstrate skill mastery and your scientific growth.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytel
       <li>Designing layout and narrative flow</li>
       <li>Curating for clarity and impact</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📖 Reflective Practice</h2>
     <p>Make sense of your growth as a researcher by documenting lessons learned, shifts in understanding, and future goals.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytel
       <li>Voice and tone in self-narrative</li>
       <li>Connecting personal story to scientific progress</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🖋️ Presentation and Polish</h2>
     <p>Make your final product readable, compelling, and professional—ready for applications, networking, or sharing with peers.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytel
       <li>Formatting and accessibility</li>
       <li>Optional video or oral presentation of portfolio</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Milestones and module integration</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytel
       <li><strong>Character:</strong> Reflectiveness, intentionality</li>
       <li><strong>Meta-Learning:</strong> Learning how to showcase learning</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Colab: "Capstone Portfolio Template"</li>
       <li>Brown, 2020. <em>Designing a Personal Learning Portfolio</em></li>
       <li>GitHub Pages + Notion as hosting platforms</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Submit digital capstone portfolio with at least 10 linked artifacts</li>
       <li>Include written and/or video reflection</li>
       <li>Peer feedback and revision before final submission</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

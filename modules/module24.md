@@ -28,7 +28,8 @@ ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary 
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🌎 Foundations of Systems Thinking</h2>
     <p>Systems thinking helps you understand complex interactions, feedback, and emergent phenomena.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary 
       <li>Feedback loops and causality</li>
       <li>From parts to whole: emergence</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔗 Interdisciplinary Collaboration</h2>
     <p>Connectomics brings together biology, computation, engineering, ethics, and more. Learn to integrate methods and mindsets.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary 
       <li>Cross-disciplinary team science</li>
       <li>Case studies in connectomics and beyond</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔄 Holistic Approaches to Data</h2>
     <p>Apply systems concepts to data interpretation and hypothesis generation in connectomics.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary 
       <li>Integrating functional and structural data</li>
       <li>Pattern detection across scales</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Systems frameworks, disciplinary methods</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary 
       <li><strong>Character:</strong> Openness to other perspectives</li>
       <li><strong>Meta-Learning:</strong> Linking frameworks across domains</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Meadows, 2008. <em>Thinking in Systems</em></li>
       <li>NASEM, 2005. <em>Facilitating Interdisciplinary Research</em></li>
       <li>Colab: "Systems Map Generator for Connectomics"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Create a system map for a neuroscience problem</li>
       <li>Identify disciplines contributing to a connectomics challenge</li>
       <li>Write a reflection on how systems thinking affects your analysis</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

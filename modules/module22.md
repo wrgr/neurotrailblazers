@@ -28,7 +28,8 @@ ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔊 Explaining Science Clearly</h2>
     <p>Break down technical concepts using analogies, plain language, and compelling visuals.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
       <li>Finding your core message</li>
       <li>Using storytelling to build interest</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📺 Outreach Formats and Strategies</h2>
     <p>Choose the best format and channel to reach your audience effectively and ethically.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
       <li>Podcast and video content for broader reach</li>
       <li>Engaging with community organizations and advocacy</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📍 Scientist as Citizen</h2>
     <p>Scientists have societal responsibilities. Explore ways to advocate for evidence and science-informed decision-making.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
       <li>Equity in science communication</li>
       <li>Reflections on science and trust</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Science literacy and outreach strategies</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
       <li><strong>Character:</strong> Civic responsibility, humility</li>
       <li><strong>Meta-Learning:</strong> Learning through audience feedback</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Baram-Tsabari & Osborne, 2015. <em>Bridging Science Education and Science Communication</em></li>
       <li>Marsh, 2020. <em>Science Storytelling for Public Engagement</em></li>
       <li>Colab: "Science for Everyone: Translating Your Research"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Create a 3-minute explainer for a general audience</li>
       <li>Draft a press release or public summary of a research paper</li>
       <li>Design a social media science post (image + caption)</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

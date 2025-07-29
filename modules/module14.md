@@ -27,34 +27,35 @@ ccr_focus: \["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔄 Neuron Classification Strategies</h2>
     <ul>
       <li>Taxonomies: excitatory vs. inhibitory, projection vs. interneuron</li>
       <li>Features: soma size, dendritic branching, axonal spread</li>
       <li>Tools: NBLAST, NeuroMorpho.org, mesh classifiers</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔄 Morphological Feature Extraction</h2>
     <ul>
       <li>Skeleton-based shape descriptors</li>
       <li>Sholl analysis, path length, bifurcation ratios</li>
       <li>Normalization and comparative metrics</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔄 Functional Implications</h2>
     <ul>
       <li>Linking morphology to electrophysiological role</li>
       <li>Comparing morphologically similar neurons across regions</li>
       <li>Implications for connectivity and computation</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Cell type and morphology principles</li>
@@ -62,23 +63,24 @@ ccr_focus: \["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
       <li><strong>Character:</strong> Attention to detail, curiosity</li>
       <li><strong>Meta-Learning:</strong> Evaluating classification limits and biases</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Ascoli et al., 2007. <em>NeuroMorpho.Org: a central resource for neuronal morphologies</em>. Nat Neurosci.</li>
       <li>Colab: "Quantifying neuron shape using PyTorch and scikit-image"</li>
       <li>Allen Institute Cell Types Database</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Extract morphology features from an EM-reconstructed neuron</li>
       <li>Classify neuron type using known anatomical criteria</li>
       <li>Submit justification and visualizations of your classification</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

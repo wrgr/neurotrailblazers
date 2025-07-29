@@ -28,7 +28,8 @@ ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>📜 Scientific Structure and Style</h2>
     <p>Writing conventions for papers in neuroscience and biology include structured formats and discipline-specific expectations.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
       <li>Writing style and tense for scientific clarity</li>
       <li>Common errors and how to avoid them</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📃 From Figures to Text</h2>
     <p>Many manuscripts start with the figures. Learn how to derive narrative and emphasis from visuals.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
       <li>Abstracts that tell the story clearly</li>
       <li>Choosing highlights for cover letters or press</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>💊 Tailoring to Your Audience</h2>
     <p>Whether you're writing for peers, mentors, or the public, different strategies apply. We'll explore style, tone, and jargon for each.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
       <li>Conference posters and presentations</li>
       <li>Press releases and public summaries</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Scientific writing standards</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
       <li><strong>Character:</strong> Attention to detail, clarity</li>
       <li><strong>Meta-Learning:</strong> Learning through revision and peer feedback</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Day & Gastel, 2012. <em>How to Write and Publish a Scientific Paper</em>.</li>
       <li>Gopen & Swan, 1990. <em>The Science of Scientific Writing</em>. American Scientist.</li>
       <li>Colab: "Paper Planning and Abstract Drafting Template"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Write a one-paragraph abstract based on sample results</li>
       <li>Label and caption a set of provided figures</li>
       <li>Critique a sample paper's clarity and flow</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

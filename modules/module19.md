@@ -28,7 +28,8 @@ ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practi
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>✍️ Understanding Peer Review</h2>
     <p>Peer review maintains quality and credibility in science. Learn how reviewers evaluate manuscripts and how to respond to feedback as an author.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practi
       <li>Writing constructive and fair reviews</li>
       <li>Interpreting reviewer comments</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>⚖️ Ethics in Scientific Research</h2>
     <p>Ethical science goes beyond compliance—it’s foundational. Learn to navigate tricky scenarios with clarity and accountability.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practi
       <li>Conflict of interest and disclosure</li>
       <li>Data sharing and transparency</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🤝 Authorship and Collaboration</h2>
     <p>Teamwork requires clear expectations. Understand how authorship is determined and how to resolve disputes respectfully.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practi
       <li>Co-first authorship and contributorship models</li>
       <li>Navigating lab hierarchies and mentor relationships</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Peer review structures, ethics standards</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practi
       <li><strong>Character:</strong> Integrity, respect, responsibility</li>
       <li><strong>Meta-Learning:</strong> Learning through ethical reflection</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Committee on Publication Ethics (COPE) Guidelines</li>
       <li>Resnik, 2011. <em>What is Ethics in Research & Why is it Important?</em></li>
       <li>Colab: "Ethical Case Study Discussions"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Write a mock peer review of a provided abstract</li>
       <li>Identify ethical issues in a sample scenario</li>
       <li>Reflect on a time you faced a question of integrity</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

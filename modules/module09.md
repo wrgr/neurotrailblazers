@@ -28,7 +28,8 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔎 Representing the Brain as a Network</h2>
     <p>Connectomes can be interpreted as graphs, where neurons are nodes and synapses are edges. This abstraction allows us to apply network science to analyze brain structure and function.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li>Directed vs. undirected graphs</li>
       <li>Weighted and unweighted connections</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📊 Key Network Metrics</h2>
     <p>Quantifying the structure of neural graphs helps us uncover patterns of connectivity and information flow.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li>Betweenness and closeness centrality</li>
       <li>Clustering coefficient and small-worldness</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🎭 Visualizing Neural Graphs</h2>
     <p>Visual representations help us identify motifs and unusual structures in large connectomic graphs.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li>Highlighting hubs and motifs</li>
       <li>Interactive notebooks and Gephi tools</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🎯 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Graph theory concepts applied to neuroscience</li>
@@ -66,9 +67,9 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li><strong>Character:</strong> Curiosity, precision, perseverance</li>
       <li><strong>Meta-Learning:</strong> Transfer of graph concepts to new datasets</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Bassett & Sporns, 2017. <em>Network neuroscience</em>. Nature Neuroscience.</li>
@@ -76,14 +77,15 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li>Colab: <a href="https://colab.research.google.com/">Interactive Graph Metrics in Python</a></li>
       <li>Gephi: <a href="https://gephi.org">gephi.org</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Create a basic graph representation of a neuron-synapse dataset</li>
       <li>Calculate centrality metrics and explain their meaning</li>
       <li>Visualize a simple connectome using network plotting tools</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

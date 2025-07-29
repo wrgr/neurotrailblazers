@@ -28,7 +28,8 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🧭 Mapping the Brain: Gross and Fine Anatomy</h2>
     <p>The brain is organized into regions (e.g., cortex, hippocampus, thalamus) that carry out specialized functions. Each region has distinct anatomy visible at both macroscopic and microscopic levels. Understanding where a dataset comes from is key to interpreting its significance.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li>Microscopic anatomy: cortical layers, hippocampal subfields</li>
       <li>Common brain atlases and reference frameworks</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🏗️ Layers, Columns, and Microcircuits</h2>
     <p>Within brain regions, neurons are arranged in stereotyped patterns. In the cortex, this includes six layers and repeating columnar structures. These features shape how circuits function and must be considered during analysis.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li>Laminar inputs and outputs</li>
       <li>Thalamocortical and corticocortical circuits</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔬 Neuroanatomy in EM Datasets</h2>
     <p>Connectomics volumes may span multiple layers or regions. Accurate annotation requires contextual awareness. Tools like Neuroglancer and 3D viewers can assist in orienting within a dataset.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li>Comparing volumes: MICrONS vs. H01 vs. FlyWire</li>
       <li>Embedding anatomical knowledge into AI workflows</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🎯 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Structures of the brain and regional functions</li>
@@ -66,9 +67,9 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li><strong>Character:</strong> Precision, curiosity, discipline</li>
       <li><strong>Meta-Learning:</strong> Mapping new knowledge to spatial structures</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Allen Brain Atlas: <a href="https://portal.brain-map.org">brain-map.org</a></li>
@@ -76,14 +77,15 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li>Human Connectome Project: <a href="https://www.humanconnectome.org">humanconnectome.org</a></li>
       <li>FlyWire Neuroglancer Viewer: <a href="https://flywire.ai">flywire.ai</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Label the six layers of cortex and describe a function of each</li>
       <li>Use an EM viewer to identify region-specific features</li>
       <li>Summarize how brain region impacts connectome structure</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

@@ -28,7 +28,8 @@ ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>📄 Anatomy of a Grant Proposal</h2>
     <p>Explore the key sections of a grant proposal and their function in convincing reviewers to support your project.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
       <li>Innovation and Approach</li>
       <li>Biosketches and supporting documents</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 Finding Funding</h2>
     <p>There are many funding sources for early-stage researchers. Learn how to match your work to the right opportunities.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
       <li>NSF graduate fellowships and research supplements</li>
       <li>Private foundations and institutional seed funds</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📊 Budgeting and Timelines</h2>
     <p>Plan a realistic scope of work with clear milestones and appropriate resource requests.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
       <li>Personnel, equipment, and travel costs</li>
       <li>Timeline Gantt charts</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Funding agencies and mechanisms</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
       <li><strong>Character:</strong> Initiative, strategic thinking</li>
       <li><strong>Meta-Learning:</strong> Learning through proposal iteration and feedback</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li><a href="https://grants.nih.gov/grants/grants_process.htm">NIH Grants 101</a></li>
       <li><a href="https://www.nsfgrfp.org/">NSF GRFP Program</a></li>
       <li>Colab: "Grant Planning Toolkit and Budget Worksheet"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Write a 1-page draft of Specific Aims</li>
       <li>Identify 3 potential funding sources and summarize their fit</li>
       <li>Draft a budget and timeline for a sample project</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

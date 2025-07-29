@@ -28,7 +28,8 @@ ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>💼 Neuroscience Career Landscapes</h2>
     <p>Discover the breadth of careers possible in neuroscience and connectomics research.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
       <li>Industry roles in biotech, neurotech, and pharma</li>
       <li>Science communication, policy, and education</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔹 Building Your Career Toolkit</h2>
     <p>Each path has different preparation requirements. Learn to align your experience and identify gaps.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
       <li>Finding and reaching out to mentors</li>
       <li>Graduate school vs. industry decisions</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>💼 Creating an Individual Development Plan</h2>
     <p>Use IDPs to map your goals, milestones, and resources over time to support intentional development.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
       <li>SMART goals for growth</li>
       <li>Iterating based on new opportunities</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Career types, hiring criteria</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
       <li><strong>Character:</strong> Self-reflection, openness</li>
       <li><strong>Meta-Learning:</strong> Career planning and adaptation</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li><a href="https://myidp.sciencecareers.org/">myIDP Career Planning Tool</a></li>
       <li>NeuroJobs and SfN Career Resources</li>
       <li>Colab: "Career Map and Development Plan Generator"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Explore 3 different neuroscience careers and summarize requirements</li>
       <li>Draft a personal IDP with goals and timelines</li>
       <li>Practice outreach to a potential mentor with an email draft</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

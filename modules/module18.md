@@ -28,7 +28,8 @@ ccr_focus: \["Skills - Presentation", "Character - Confidence"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🎭 Poster Design Fundamentals</h2>
     <p>Posters should be clear, attractive, and self-explanatory. Learn layout techniques and how to prioritize content.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Skills - Presentation", "Character - Confidence"]
       <li>Font size, spacing, and accessibility</li>
       <li>Color and figure balance</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📄 Poster Templates and Tools</h2>
     <p>Explore poster creation tools and templates. Adapt institutional templates or build your own using design software.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Skills - Presentation", "Character - Confidence"]
       <li>Graphical abstract integration</li>
       <li>Using QR codes, interactive elements</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔊 Preparing Your Elevator Pitch</h2>
     <p>A well-prepared short explanation (1–2 minutes) makes a big impact. Prepare talking points for different audiences.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Skills - Presentation", "Character - Confidence"]
       <li>Adjusting for technical vs. general audiences</li>
       <li>Handling tough or unexpected questions</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Conference culture and poster norms</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Skills - Presentation", "Character - Confidence"]
       <li><strong>Character:</strong> Confidence, preparation</li>
       <li><strong>Meta-Learning:</strong> Self-evaluation through feedback</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Rowe, 2017. <em>Designing Conference Posters</em>.</li>
       <li>Schimel, 2012. <em>Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded</em>.</li>
       <li>Colab: "Poster Planning Worksheet and Checklist"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Draft a one-page scientific poster with figure layout</li>
       <li>Practice a 90-second oral summary of your project</li>
       <li>Receive feedback from a peer or mentor on poster clarity</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

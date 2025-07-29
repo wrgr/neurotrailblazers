@@ -129,6 +129,8 @@ body {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .hero-subtitle {
@@ -145,6 +147,7 @@ body {
 .hero-title-impact {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 .hero-title-impact span {
@@ -154,6 +157,7 @@ body {
 
 .hero-title-main {
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 
 .hero-title-sub {

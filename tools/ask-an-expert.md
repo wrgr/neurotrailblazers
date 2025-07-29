@@ -1,5 +1,5 @@
 ---
-title: "Ask the Expert: Dr. Jeff Lichtman"
+title: "Ask An Expert: Dr. Jeff Lichtman"
 layout: page
 description: "Connect with Dr. Lichtman—one of the world's leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
 permalink: /ask-an-expert/
@@ -21,11 +21,11 @@ permalink: /ask-an-expert/
 <section class="section expert-bio">
 <div class="expert-bio-content">
   <div class="expert-bio-text" markdown="1">
-  ## 👤 About Dr. Jeff Lichtman
-  
+  ## 👤 Have a burning question about the brain? 
+
   <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
-  Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
+  Curious about how we map more than 100 million synapses in a cubic millimeter of brain tissue? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a leader of our HI-MC Mouse Connectome grant.
 
   **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
 

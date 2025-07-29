@@ -22,7 +22,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
+        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/tools/himc' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress (2023-2028)</span>
@@ -37,7 +37,7 @@ description: "Explore curated connectomics datasets from landmark studies includ
       </ul>
       <div class="dataset-actions">
 
-        <a href="{{ '/datasets/mouseconnects' | relative_url }}" class="btn btn-primary">Project Details</a>
+        <a href="{{ '/tools/himc' | relative_url }}" class="btn btn-primary">Project Details</a>
         <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
       </div>
     </div>

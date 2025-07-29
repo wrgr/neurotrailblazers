@@ -4,19 +4,19 @@ title: "Module 10: Hypothesis Testing and Circuit Function"
 layout: module
 permalink: /modules/module10/
 description: "Explore how neuroscientists formulate and test hypotheses about neural circuits using both biological and computational tools."
-module\_number: 10
+module_number: 10
 difficulty: "Intermediate"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Define a scientific hypothesis and distinguish it from a research question"
-* "Design experiments to test hypotheses about neural connectivity and function"
-* "Apply logic and statistical reasoning to validate or refute hypotheses"
-* "Identify common pitfalls in experimental design and interpretation"
-  prerequisites: "Modules 6 and 9; basic knowledge of statistics and neuroscience"
-  merit\_stage: "Experiment"
-  compass\_skills: \["Critical Thinking", "Scientific Reasoning", "Rigor"]
-  ccr\_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Character - Integrity"]
+- "Define a scientific hypothesis and distinguish it from a research question"
+- "Design experiments to test hypotheses about neural connectivity and function"
+- "Apply logic and statistical reasoning to validate or refute hypotheses"
+- "Identify common pitfalls in experimental design and interpretation"
+prerequisites: "Modules 6 and 9; basic knowledge of statistics and neuroscience"
+merit_stage: "Experiment"
+compass_skills: \["Critical Thinking", "Scientific Reasoning", "Rigor"]
+ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Character - Integrity"]
 
 ---
 

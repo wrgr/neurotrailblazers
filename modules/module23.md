@@ -4,19 +4,19 @@ title: "Module 23: Career Exploration and Pathways in Neuroscience"
 layout: module
 permalink: /modules/module23/
 description: "Explore diverse career paths in neuroscience, from academia and industry to science policy and entrepreneurship."
-module\_number: 23
+module_number: 23
 difficulty: "Beginner to Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Identify career options across neuroscience subfields"
-* "Understand the training and qualifications needed for each path"
-* "Create an Individual Development Plan (IDP)"
-* "Network effectively and find career mentors"
-  prerequisites: "Modules 1-22"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Career Planning", "Self-Awareness", "Networking"]
-  ccr\_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
+- "Identify career options across neuroscience subfields"
+- "Understand the training and qualifications needed for each path"
+- "Create an Individual Development Plan (IDP)"
+- "Network effectively and find career mentors"
+prerequisites: "Modules 1-22"
+merit_stage: "Dissemination"
+compass_skills: \["Career Planning", "Self-Awareness", "Networking"]
+ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
 
 ---
 

@@ -4,19 +4,19 @@ title: "Module 21: Research Mentorship and Leadership"
 layout: module
 permalink: /modules/module21/
 description: "Develop the mindset and tools to mentor others and lead collaborative research effectively."
-module\_number: 21
+module_number: 21
 difficulty: "Intermediate to Advanced"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Understand the role of mentorship in science"
-* "Develop mentorship and leadership communication skills"
-* "Navigate power dynamics and collaborative planning"
-* "Support mentee growth with inclusive practices"
-  prerequisites: "Modules 1-20"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Leadership", "Empathy", "Inclusive Practice"]
-  ccr\_focus: \["Character - Leadership", "Skills - Mentorship"]
+- "Understand the role of mentorship in science"
+- "Develop mentorship and leadership communication skills"
+- "Navigate power dynamics and collaborative planning"
+- "Support mentee growth with inclusive practices"
+prerequisites: "Modules 1-20"
+merit_stage: "Dissemination"
+compass_skills: \["Leadership", "Empathy", "Inclusive Practice"]
+ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
 
 ---
 

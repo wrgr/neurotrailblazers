@@ -4,19 +4,19 @@ title: "Module 07: Network Theory for Brain Connectivity"
 layout: module
 permalink: /modules/module07/
 description: "Explore how tools from graph theory and network science are used to represent and analyze the connectome."
-module\_number: 7
+module_number: 7
 difficulty: "Intermediate to Advanced"
 duration: "4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Represent neural circuits as mathematical graphs"
-* "Compute core network metrics like degree, centrality, and modularity"
-* "Compare biological networks to artificial and random ones"
-* "Interpret the significance of motifs and hubs in neural data"
-  prerequisites: "Modules 1-6 and some coding or math background"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Analytical Thinking", "Computational Reasoning", "Pattern Recognition"]
-  ccr\_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
+- "Represent neural circuits as mathematical graphs"
+- "Compute core network metrics like degree, centrality, and modularity"
+- "Compare biological networks to artificial and random ones"
+- "Interpret the significance of motifs and hubs in neural data"
+prerequisites: "Modules 1-6 and some coding or math background"
+merit_stage: "Analysis"
+compass_skills: \["Analytical Thinking", "Computational Reasoning", "Pattern Recognition"]
+ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
 
 ---
 

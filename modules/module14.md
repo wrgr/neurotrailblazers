@@ -4,18 +4,18 @@ title: "Module 14: Neuron Classification and Morphology"
 layout: module
 permalink: /modules/module14/
 description: "Learn how to identify neuron types using structural, morphological, and connectivity features in EM datasets."
-module\_number: 14
+module_number: 14
 difficulty: "Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Classify neurons based on morphology and known anatomical features"
-* "Use tools to compute quantitative descriptors of neuron shape"
-* "Interpret classifications in the context of network architecture"
-  prerequisites: "Modules 1-13, basic familiarity with neuroanatomy"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Pattern Recognition", "Quantitative Analysis", "Critical Thinking"]
-  ccr\_focus: \["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
+- "Classify neurons based on morphology and known anatomical features"
+- "Use tools to compute quantitative descriptors of neuron shape"
+- "Interpret classifications in the context of network architecture"
+prerequisites: "Modules 1-13, basic familiarity with neuroanatomy"
+merit_stage: "Analysis"
+compass_skills: \["Pattern Recognition", "Quantitative Analysis", "Critical Thinking"]
+ccr_focus: \["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
 
 ---
 

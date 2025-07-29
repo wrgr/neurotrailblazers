@@ -4,19 +4,19 @@ title: "Module 15: Connectome Proofreading and Quality Control"
 layout: module
 permalink: /modules/module15/
 description: "Learn how to identify and correct errors in segmentation and connectivity, improving the reliability of connectomics data."
-module\_number: 15
+module_number: 15
 difficulty: "Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Identify common segmentation and synapse errors"
-* "Use visualization tools for proofreading"
-* "Assess connectome quality with metrics"
-* "Propose and apply corrections to data"
-  prerequisites: "Modules 1-14, familiarity with Neuroglancer"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Attention to Detail", "Visual Reasoning", "Data Curation"]
-  ccr\_focus: \["Skills - Quality Control", "Skills - Annotation"]
+- "Identify common segmentation and synapse errors"
+- "Use visualization tools for proofreading"
+- "Assess connectome quality with metrics"
+- "Propose and apply corrections to data"
+prerequisites: "Modules 1-14, familiarity with Neuroglancer"
+merit_stage: "Analysis"
+compass_skills: \["Attention to Detail", "Visual Reasoning", "Data Curation"]
+ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
 
 ---
 

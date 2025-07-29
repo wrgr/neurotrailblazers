@@ -4,19 +4,19 @@ title: "Module 04: Neuroanatomy and Circuit Architecture"
 layout: module
 permalink: /modules/module04/
 description: "Learn how the brain is organized into regions, layers, and systems—and how those structures shape connectivity."
-module\_number: 4
+module_number: 4
 difficulty: "Beginner to Intermediate"
 duration: "2-3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Identify major brain regions and their functions"
-* "Describe how neurons are arranged into layers and columns"
-* "Explain how structural neuroanatomy informs connectome interpretation"
-* "Analyze EM data with respect to brain region and local context"
-  prerequisites: "Module 1-3 or prior biology/anatomy background"
-  merit\_stage: "Scientific Question"
-  compass\_skills: \["Domain Awareness", "Scientific Visualization", "Attention to Detail"]
-  ccr\_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinking"]
+- "Identify major brain regions and their functions"
+- "Describe how neurons are arranged into layers and columns"
+- "Explain how structural neuroanatomy informs connectome interpretation"
+- "Analyze EM data with respect to brain region and local context"
+prerequisites: "Module 1-3 or prior biology/anatomy background"
+merit_stage: "Scientific Question"
+compass_skills: \["Domain Awareness", "Scientific Visualization", "Attention to Detail"]
+ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinking"]
 
 ---
 

@@ -4,19 +4,19 @@ title: "Module 13: Data Science for Connectomics"
 layout: module
 permalink: /modules/module13/
 description: "Apply core data science techniques to connectomics problems including feature extraction and unsupervised analysis."
-module\_number: 13
+module_number: 13
 difficulty: "Advanced"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Extract relevant features from neurons and synapses"
-* "Apply dimensionality reduction and clustering techniques"
-* "Visualize embeddings and interpret clusters"
-* "Use exploratory data analysis (EDA) to form hypotheses"
-  prerequisites: "Modules 1-12, Python scikit-learn, matplotlib"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Quantitative Reasoning", "Data Exploration", "Scientific Inference"]
-  ccr\_focus: \["Skills - Feature Extraction", "Skills - Clustering"]
+- "Extract relevant features from neurons and synapses"
+- "Apply dimensionality reduction and clustering techniques"
+- "Visualize embeddings and interpret clusters"
+- "Use exploratory data analysis (EDA) to form hypotheses"
+prerequisites: "Modules 1-12, Python scikit-learn, matplotlib"
+merit_stage: "Analysis"
+compass_skills: \["Quantitative Reasoning", "Data Exploration", "Scientific Inference"]
+ccr_focus: \["Skills - Feature Extraction", "Skills - Clustering"]
 
 ---
 

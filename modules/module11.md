@@ -4,19 +4,19 @@ title: "Module 11: Introduction to Machine Learning in Connectomics"
 layout: module
 permalink: /modules/module11/
 description: "Understand the role of machine learning in segmenting neurons, predicting synapses, and modeling brain structure."
-module\_number: 11
+module_number: 11
 difficulty: "Intermediate"
 duration: "4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Describe how machine learning is used in image segmentation"
-* "Understand the architecture of convolutional neural networks (CNNs)"
-* "Train a basic segmentation model on example EM data"
-* "Evaluate model performance using accuracy and loss metrics"
-  prerequisites: "Modules 1-10, basic Python and image processing"
-  merit\_stage: "Experiment"
-  compass\_skills: \["Computational Thinking", "ML Literacy", "Analytical Reasoning"]
-  ccr\_focus: \["Knowledge - Machine Learning", "Skills - Model Evaluation"]
+- "Describe how machine learning is used in image segmentation"
+- "Understand the architecture of convolutional neural networks (CNNs)"
+- "Train a basic segmentation model on example EM data"
+- "Evaluate model performance using accuracy and loss metrics"
+prerequisites: "Modules 1-10, basic Python and image processing"
+merit_stage: "Experiment"
+compass_skills: \["Computational Thinking", "ML Literacy", "Analytical Reasoning"]
+ccr_focus: \["Knowledge - Machine Learning", "Skills - Model Evaluation"]
 
 ---
 

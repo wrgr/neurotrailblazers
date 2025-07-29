@@ -4,19 +4,19 @@ title: "Module 24: Systems Thinking and Interdisciplinary Science"
 layout: module
 permalink: /modules/module24/
 description: "Develop a systems perspective to solve complex scientific problems by integrating ideas across disciplines."
-module\_number: 24
+module_number: 24
 difficulty: "Intermediate to Advanced"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Understand systems thinking concepts and frameworks"
-* "Map interdisciplinary approaches to neuroscience problems"
-* "Analyze feedback loops, emergent behavior, and networks"
-* "Apply holistic thinking to connectomics data analysis"
-  prerequisites: "Modules 1-23"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Systems Thinking", "Integration", "Problem-Solving"]
-  ccr\_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary Synthesis"]
+- "Understand systems thinking concepts and frameworks"
+- "Map interdisciplinary approaches to neuroscience problems"
+- "Analyze feedback loops, emergent behavior, and networks"
+- "Apply holistic thinking to connectomics data analysis"
+prerequisites: "Modules 1-23"
+merit_stage: "Dissemination"
+compass_skills: \["Systems Thinking", "Integration", "Problem-Solving"]
+ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary Synthesis"]
 
 ---
 

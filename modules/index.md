@@ -199,6 +199,6 @@ This curriculum includes 25 structured modules aligned with the MERIT model (Men
   </div>
 </div>
 
-Need help deciding where to start? Try **[Module 01]({{ '/modules/module01/' | relative_url }})** or visit our [Models]({{ '/models/' | relative_url }}) page to learn more about the MERIT and COMPASS frameworks.
+Need help deciding where to start? Visit our **[Start Here]({{ '/start-here/' | relative_url }})** guide or check out **[Module 01]({{ '/modules/module01/' | relative_url }})**. For an overview of the MERIT and COMPASS frameworks, see our [Models]({{ '/models/' | relative_url }}) page.
 </div>
 

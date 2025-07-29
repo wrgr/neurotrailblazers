@@ -25,8 +25,11 @@
                     {% if item.title == 'Modules' %}
                     <ul class="dropdown">
                         {% for mod in site.data.modules limit:5 %}
-                        {% capture numpad %}{{ "%02d" | format: mod.number }}{% endcapture %}
-                        <li><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}" class="dropdown-link">{{ "%02d" | format: mod.number }}. {{ mod.title }}</a></li>
+                        {% assign numpad = mod.number %}
+                        {% if mod.number < 10 %}
+                        {% assign numpad = '0' | append: mod.number %}
+                        {% endif %}
+                        <li><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}" class="dropdown-link">{{ numpad }}. {{ mod.title }}</a></li>
                         {% endfor %}
                         <li><a href="{{ '/modules/' | relative_url }}" class="dropdown-link">All Modules</a></li>
                     </ul>

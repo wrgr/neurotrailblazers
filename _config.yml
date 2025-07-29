@@ -87,6 +87,12 @@ grant_info:
   focus: "Nanoscale Connectomics"
   mission: "Closing knowledge and opportunity gaps for students who dream of shaping the future of neuroscience"
 
+# Program tagline used across pages
+tagline_lines:
+  - "We power breakthroughs by developing and deploying top research talent."
+  - "Our research incubators equip students and mentors with the tools, guidance, and experience to accelerate innovation across cutting-edge fields such as neuroscience, AI, and decision science."
+  - "Neurotrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the CONNECTS community and beyond."
+
 # Color palette
 colors:
   neural_blue: "#2563eb"

@@ -8,22 +8,23 @@ description: "Explore how students, researchers, and mentors navigate their path
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Meet the Trailblazers<span>: Inspiring paths into connectomics</span></h1>
+      <p class="hero-subtitle">Stories of students, researchers, and mentors finding their way</p>
     </div>
   </div>
 
   <section class="section">
     <div class="cards-grid">
-      <a href="{{ '/avatars/undergradstudent' | relative_url }}" class="card text-center">
-        <h3 class="card-title">Julian: Undergraduate Student</h3>
+      <a href="{{ '/avatars/undergradstudent' | relative_url }}" class="avatar-card avatar-card-blue">
+        <h3>Julian: Undergraduate Student</h3>
       </a>
-      <a href="{{ '/avatars/gradstudent' | relative_url }}" class="card text-center">
-        <h3 class="card-title">Maya: Graduate Student</h3>
+      <a href="{{ '/avatars/gradstudent' | relative_url }}" class="avatar-card avatar-card-purple">
+        <h3>Maya: Graduate Student</h3>
       </a>
-      <a href="{{ '/avatars/researcher' | relative_url }}" class="card text-center">
-        <h3 class="card-title">Amir: Researcher</h3>
+      <a href="{{ '/avatars/researcher' | relative_url }}" class="avatar-card avatar-card-cyan">
+        <h3>Amir: Researcher</h3>
       </a>
-      <a href="{{ '/avatars/mentor' | relative_url }}" class="card text-center">
-        <h3 class="card-title">Dr. Nguyen: Mentor/PI</h3>
+      <a href="{{ '/avatars/mentor' | relative_url }}" class="avatar-card avatar-card-orange">
+        <h3>Dr. Nguyen: Mentor/PI</h3>
       </a>
     </div>
   </section>

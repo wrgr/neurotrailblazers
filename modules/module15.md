@@ -28,7 +28,8 @@ ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔍 Common Error Types</h2>
     <p>Segmentation errors (splits, merges) and synapse mislabels affect downstream analysis. Learn to spot patterns in raw EM imagery and segment overlays.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
       <li>Ghost synapses and missing links</li>
       <li>Boundary ambiguity and stitching artifacts</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📊 Visualization Tools</h2>
     <p>Interactive viewers like Neuroglancer enable efficient quality control. Understand how to use layers and cross-sections for visual checks.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
       <li>Using 3D mesh and skeleton modes</li>
       <li>Spotting errors across slices</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📈 Metrics and Fixes</h2>
     <p>Evaluate accuracy using F1 score, precision, recall, and consistency with ground truth or heuristics. Apply edits or flag errors for correction.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
       <li>Topology-aware metrics</li>
       <li>Manual editing vs. AI-assisted correction</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Common connectomics error modes</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
       <li><strong>Character:</strong> Persistence, accountability</li>
       <li><strong>Meta-Learning:</strong> Recognizing error patterns across datasets</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Funke et al., 2018. <em>Large Scale Image Segmentation with Structured Loss Based Deep Learning for Connectomics</em>. ECCV.</li>
       <li>Motta et al., 2019. <em>Dense connectomic reconstruction in layer 4 of the somatosensory cortex</em>. Science.</li>
       <li>Colab: "Segmentation Proofreading with Neuroglancer"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Locate and document at least 3 segmentation errors in a provided volume</li>
       <li>Use Neuroglancer to propose a correction</li>
       <li>Reflect on how quality control affects downstream analysis</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

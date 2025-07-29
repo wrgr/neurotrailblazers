@@ -30,7 +30,8 @@ ccr_focus:
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔬 Scientific Hypotheses in Circuit Neuroscience</h2>
     <p>Hypothesis testing is the foundation of experimental science. In connectomics, hypotheses may concern the structure, function, or variability of brain circuits. These must be formalized in ways that support measurement and comparison.</p>
     <ul>
@@ -38,9 +39,9 @@ ccr_focus:
       <li>Generating predictions from data models</li>
       <li>Null vs. alternative hypotheses</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📊 Statistical Tools</h2>
     <p>Proper testing requires selecting appropriate methods based on sample size, distribution, and effect size. Familiarity with statistical tests is key to avoiding false positives or negatives.</p>
     <ul>
@@ -48,9 +49,9 @@ ccr_focus:
       <li>Multiple comparisons and correction</li>
       <li>Visualizing distributions and error bars</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔍 Hypothesis-Driven Experiments</h2>
     <p>Analysis should be guided by the scientific question, not just exploratory metrics. This section emphasizes how to match your analysis pipeline to your hypothesis.</p>
     <ul>
@@ -58,9 +59,9 @@ ccr_focus:
       <li>Power analysis and sample size estimation</li>
       <li>Reporting significance and effect size</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Hypothesis formulation and statistical testing</li>
@@ -68,23 +69,24 @@ ccr_focus:
       <li><strong>Character:</strong> Scientific integrity, curiosity, patience</li>
       <li><strong>Meta-Learning:</strong> Reflecting on analysis limitations and next steps</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Ghasemi & Zahediasl, 2012. <em>Normality tests for statistical analysis: A guide for non-statisticians</em>. Int J Endocrinol Metab.</li>
       <li>Field et al., 2012. <em>Discovering Statistics Using R</em>. Sage.</li>
       <li>Colab: "Statistical Tests in Python with SciPy"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Identify a testable hypothesis from a neural network dataset</li>
       <li>Use Python to perform a statistical test (e.g. t-test) and interpret the result</li>
       <li>Explain the significance and limitations of the findings</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

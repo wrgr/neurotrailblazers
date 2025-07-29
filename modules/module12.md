@@ -30,7 +30,8 @@ ccr_focus:
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🧰 Synapse Features and Functions</h2>
     <p>Different synapse types can be inferred from structural features such as size, vesicle count, and shape. This section introduces inhibitory vs. excitatory markers.</p>
     <ul>
@@ -38,9 +39,9 @@ ccr_focus:
       <li>Active zone characteristics</li>
       <li>Neurotransmitter vesicle morphologies</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🤸️‍♂️ Cell Type and Functional Mapping</h2>
     <p>Neuronal identity and location help interpret the roles of different synapses in a network.</p>
     <ul>
@@ -48,9 +49,9 @@ ccr_focus:
       <li>Comparison with known circuit motifs</li>
       <li>Labeling by functional markers</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Neuroanatomy, cell types, neurotransmission</li>
@@ -58,23 +59,24 @@ ccr_focus:
       <li><strong>Character:</strong> Curiosity, attention to biological meaning</li>
       <li><strong>Meta-Learning:</strong> Bridging structure and function iteratively</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Harris & Weinberg, 2012. <em>Ultrastructure of synapses</em>. Brain Res.</li>
       <li>Scheffer et al., 2020. <em>A connectome and analysis of the adult Drosophila central brain</em>. eLife.</li>
       <li>Colab: "Synapse Type Classification from Morphology"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Label synapse types from EM snapshots</li>
       <li>Correlate synapse positions with known neuron roles</li>
       <li>Describe confidence level and biological rationale</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

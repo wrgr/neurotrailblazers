@@ -28,7 +28,8 @@ ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Ch
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🧐 What is a Hypothesis?</h2>
     <p>A hypothesis is a testable prediction about a biological process. In connectomics, hypotheses often relate to how specific circuits enable computation or behavior.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Ch
       <li>Operational definitions and falsifiability</li>
       <li>Examples from published neuroscience studies</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔢 Designing Experiments</h2>
     <p>Hypothesis-driven research requires careful planning. This includes defining variables, controls, and outcome measures that meaningfully reflect circuit function.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Ch
       <li>Experimental vs. observational studies</li>
       <li>Confounds and sources of bias</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📈 Testing and Interpretation</h2>
     <p>We explore logic-based approaches, simple statistics, and model-based reasoning to interpret data and draw conclusions.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Ch
       <li>Understanding p-values and confidence intervals</li>
       <li>Replicability and interpretation frameworks</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌍 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Principles of experimental design</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Ch
       <li><strong>Character:</strong> Scientific humility, rigor, honesty</li>
       <li><strong>Meta-Learning:</strong> Learning from failed hypotheses</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Popper, K. (1959). <em>The Logic of Scientific Discovery</em></li>
       <li>Ioannidis, J. (2005). <em>Why Most Published Research Findings Are False</em>. PLoS Medicine</li>
       <li>Curran-Everett, D. (2000). <em>Statistics 101</em>. Advances in Physiology Education</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Given a hypothesis, design a testable experiment and identify the key variables</li>
       <li>Evaluate a flawed experiment and suggest improvements</li>
       <li>Interpret mock experimental results in light of the hypothesis</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

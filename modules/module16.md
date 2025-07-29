@@ -28,7 +28,8 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>📽 Principles of Scientific Visualization</h2>
     <p>Clear visual communication is essential to science. Understand the principles of effective figure design and when to use specific chart types.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
       <li>Balancing detail vs. clarity</li>
       <li>Designing multi-panel figures</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📊 Tools for Visualization</h2>
     <p>From Python to 3D rendering engines, learn to use available tools for compelling visual outputs.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
       <li>Plotly and dash for interactive dashboards</li>
       <li>Neuroglancer for 3D brain data rendering</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🖌️ Telling a Visual Story</h2>
     <p>Figures should do more than decorate—they should lead to insight. This section explores storytelling through graphics.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
       <li>Ordering panels for narrative flow</li>
       <li>Designing figures for posters and papers</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Principles of data presentation</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
       <li><strong>Character:</strong> Aesthetic judgment, clarity</li>
       <li><strong>Meta-Learning:</strong> Revising and improving figures over time</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Rougier et al., 2014. <em>Ten Simple Rules for Better Figures</em>. PLoS Comp Bio.</li>
       <li>Ware, 2013. <em>Information Visualization: Perception for Design</em>.</li>
       <li>Colab: "Data Visualization with Seaborn and Plotly for Connectomics"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Create a figure to summarize results from a previous module</li>
       <li>Design a multi-panel layout for a hypothetical paper</li>
       <li>Critique sample visualizations for clarity and impact</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

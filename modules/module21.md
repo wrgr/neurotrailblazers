@@ -28,7 +28,8 @@ ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🔗 Principles of Mentorship</h2>
     <p>Explore what makes mentorship effective for both mentor and mentee in a research setting.</p>
     <ul>
@@ -36,9 +37,9 @@ ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
       <li>Active listening and feedback</li>
       <li>Setting expectations and goals</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>👥 Leadership in Collaborative Science</h2>
     <p>Science is a team effort. Learn to manage group dynamics and lead with inclusion and strategy.</p>
     <ul>
@@ -46,9 +47,9 @@ ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
       <li>Facilitating group decision-making</li>
       <li>Conflict resolution and accountability</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🧡 Inclusive Mentorship Practices</h2>
     <p>Inclusive mentorship supports the growth of all team members, especially those from underrepresented backgrounds.</p>
     <ul>
@@ -56,9 +57,9 @@ ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
       <li>Addressing stereotype threat and impostor syndrome</li>
       <li>Recognizing and supporting diverse identities</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🌟 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Mentorship models, leadership frameworks</li>
@@ -66,23 +67,24 @@ ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
       <li><strong>Character:</strong> Empathy, humility, service</li>
       <li><strong>Meta-Learning:</strong> Learning from mentoring experiences</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Johnson, 2015. <em>On Being a Mentor</em></li>
       <li>NASEM, 2019. <em>The Science of Effective Mentorship in STEMM</em></li>
       <li>Colab: "Mentor Scenario Role-Play Toolkit"</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Reflect on your mentorship experiences and values</li>
       <li>Draft a mentorship compact or philosophy</li>
       <li>Facilitate a mock research team meeting with roles</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

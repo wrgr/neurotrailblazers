@@ -30,7 +30,8 @@ ccr_focus:
     </div>
   </div>
 
-  <section class="section">
+  <div class="cards-grid module-cards">
+<div class="card module-card">
     <h2>🧠 What is Segmentation?</h2>
     <p>Segmentation is the process of identifying and labeling structures in an image. In connectomics, this means separating each neurite (axon or dendrite) and assigning it a unique label. Most current approaches rely on deep learning to automate this step.</p>
     <ul>
@@ -38,9 +39,9 @@ ccr_focus:
       <li>U-Net and 3D CNNs</li>
       <li>Segmentation errors: mergers and splits</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🛠️ Proofreading 101</h2>
     <p>No segmentation algorithm is perfect. Humans review and correct the machine-generated output, a process known as proofreading. Tools like Neuroglancer allow users to inspect 3D reconstructions slice-by-slice and validate continuity.</p>
     <ul>
@@ -48,9 +49,9 @@ ccr_focus:
       <li>Using visual cues to spot mergers/splits</li>
       <li>Basic workflow: select, inspect, edit</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🔬 Quality Metrics and Feedback Loops</h2>
     <p>Segmentation quality can be quantified using metrics like Rand score and edge accuracy. Proofread corrections can also be used to retrain models, creating a virtuous cycle of improvement.</p>
     <ul>
@@ -58,9 +59,9 @@ ccr_focus:
       <li>Using corrections to improve models</li>
       <li>Tracking proofreading contributions</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>🎯 COMPASS Integration</h2>
     <ul>
       <li><strong>Knowledge:</strong> Understanding EM segmentation outputs</li>
@@ -68,23 +69,24 @@ ccr_focus:
       <li><strong>Character:</strong> Persistence, humility, teamwork</li>
       <li><strong>Meta-Learning:</strong> Adapting to evolving tools and methods</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>📚 References & Resources</h2>
     <ul>
       <li>Januszewski et al., 2018. <em>High-precision automated reconstruction of neurons with flood-filling networks</em>. Nature Methods.</li>
       <li>Neuroglancer: <a href="https://github.com/google/neuroglancer">github.com/google/neuroglancer</a></li>
       <li>SNEMI3D Benchmark: <a href="https://cremi.org">cremi.org</a></li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="card module-card">
     <h2>✅ Assessment</h2>
     <ul>
       <li>Define and explain the purpose of segmentation in connectomics</li>
       <li>Correct a sample proofreading task using Neuroglancer</li>
       <li>Describe how proofreading improves final circuit reconstructions</li>
     </ul>
-  </section>
+  </div>
+</div>
 </div>

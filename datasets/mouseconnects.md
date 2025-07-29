@@ -1,6 +1,7 @@
 ---
 layout: dataset
 title: "MouseConnects Dataset - Complete Hippocampal Connectome"
+permalink: /datasets/mouseconnects/
 ---
 <style>
 

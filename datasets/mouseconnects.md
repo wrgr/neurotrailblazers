@@ -1,5 +1,5 @@
 ---
-layout: dataset
+layout: default
 title: "MouseConnects Dataset - Complete Hippocampal Connectome"
 permalink: /datasets/mouseconnects/
 ---

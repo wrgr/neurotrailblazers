@@ -5,13 +5,13 @@ description: "Explore curated connectomics datasets from landmark studies includ
 ---
 
 <div class="main-content">
-  <div class="hero hero-spaced">
+  <div class="hero hero-spaced hero-compact">
     <div class="hero-content">
       <h1 class="hero-title-impact">Connectomics Datasets</h1>
     </div>
   </div>
 
-  <section class="section">
+  <section class="section section-compact">
     <div class="card-gray text-center" style="max-width: 700px; margin: 0 auto;">
       <p><strong>Learn with real scientific data from groundbreaking research.</strong></p>
       <p>Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.</p>

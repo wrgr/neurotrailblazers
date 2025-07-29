@@ -261,6 +261,11 @@ body {
   margin: 2rem auto;
   max-width: 1200px;
 }
+.section-compact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1rem auto;
+}
 .section-highlight {
   background: var(--brain-gray);
   padding: 3rem;
@@ -735,6 +740,10 @@ footer {
 .hero-spaced {
   margin: 0 -2rem 4rem -2rem;
   padding: 3rem 2rem;
+}
+.hero-compact {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
 }
 .hero-rounded {
   border-radius: 12px;

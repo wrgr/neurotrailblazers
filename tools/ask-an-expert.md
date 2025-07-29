@@ -22,7 +22,7 @@ permalink: /ask-an-expert/
 <section class="section expert-bio">
 <div class="expert-bio-content">
   <div class="expert-bio-text" markdown="1">
-  ## 👤 Have a burning question about the brain? 
+  👤 **Have a burning question about the brain?**
 
   <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 

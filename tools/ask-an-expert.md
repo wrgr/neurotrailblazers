@@ -1,5 +1,6 @@
 ---
 title: "Ask An Expert: Dr. Jeff Lichtman"
+
 layout: page
 description: "Connect with Dr. Lichtman—one of the world's leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
 permalink: /ask-an-expert/
@@ -9,7 +10,7 @@ permalink: /ask-an-expert/
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
-      <h1 class="hero-title-impact">Ask the Expert<span>: Chat with Dr. Jeff Lichtman</span></h1>
+      <h1 class="hero-title-impact">Ask an Expert<span>: Chat with Dr. Jeff Lichtman</span></h1>
       <div class="hero-description-box">
         <p class="hero-description">Our curated AI bot answers your questions about brain mapping and research life.</p>
         <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>

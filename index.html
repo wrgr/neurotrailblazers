@@ -20,10 +20,18 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
         <section class="section">
             <div class="cards-grid">
                 <div class="card text-center" style="max-width: 600px; margin: 0 auto;">
-                    <p class="card-description">
-                        We provide content, mentoring, and support to prepare students and their mentors to effectively pursue careers in research.
-                        Closing knowledge and opportunity gaps for students who dream of shaping the future of neuroscience.
-                    </p>
+                    <!-- Intentionally left blank after content update -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Tagline -->
+        <section class="section section-highlight">
+            <div class="cards-grid">
+                <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+                    {% for line in site.tagline_lines %}
+                    <p class="card-description">{{ line }}</p>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -174,10 +182,8 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                 <div class="section-header">
                     <h2 class="section-title">About This Initiative</h2>
                     <p class="section-subtitle">
-                        NeuroTrailblazers is supported by the {{ site.grant_info.program }} program through 
-                        the {{ site.grant_info.grant }} grant from the {{ site.grant_info.funding_agency }}.
-                        Our mission focuses on {{ site.grant_info.focus | downcase }} and emphasizes open science, 
-                        pipeline learning, and equitable opportunity.
+                        NeuroTrailblazers is supported by the NIH CONNECTS program through the Mouse Connectome Project from the National Institutes of Health.
+                        Our efforts focus on connectome quality and dissemination and training through an open learning platform and targeted in-person/hybrid support.
                     </p>
                 </div>
             </section>

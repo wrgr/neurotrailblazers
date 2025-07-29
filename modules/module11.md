@@ -75,6 +75,7 @@ ccr_focus: \["Knowledge - Machine Learning", "Skills - Model Evaluation"]
       <li>Januszewski et al., 2018. <em>Flood-filling networks</em>. Nature Methods.</li>
       <li>Goodfellow et al., <em>Deep Learning</em>, MIT Press.</li>
       <li>Colab: "Intro to CNNs for EM Segmentation"</li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/BossDB-Dataset-Classes-for-Pytorch-DataLoaders.ipynb">BossDB Dataset Classes for PyTorch</a></li>
     </ul>
   </div>
 

@@ -77,6 +77,8 @@ ccr_focus:
       <li>Januszewski et al., 2018. <em>High-precision automated reconstruction of neurons with flood-filling networks</em>. Nature Methods.</li>
       <li>Neuroglancer: <a href="https://github.com/google/neuroglancer">github.com/google/neuroglancer</a></li>
       <li>SNEMI3D Benchmark: <a href="https://cremi.org">cremi.org</a></li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Uploading-Image-Stacks.ipynb">Uploading Image Stacks</a></li>
+
       <li>Notebook: <a href="{{ '/notebooks/intro/ImageAndSegmentationDownload.ipynb' | relative_url }}">Image and Segmentation Download</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/ImageAndSegmentationDownload.ipynb" target="_blank">source</a>)</li>
     </ul>
   </div>

@@ -76,6 +76,7 @@ ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
       <li>Rubinov & Sporns, 2010. <em>Complex network measures of brain connectivity</em>. NeuroImage.</li>
       <li>Colab: <a href="https://colab.research.google.com/">Interactive Graph Metrics in Python</a></li>
       <li>Gephi: <a href="https://gephi.org">gephi.org</a></li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Querying-Connectomes-With-NeuPrint.ipynb">Querying Connectomes with NeuPrint</a></li>
     </ul>
   </div>
 

@@ -77,6 +77,7 @@ ccr_focus:
       <li>Ghasemi & Zahediasl, 2012. <em>Normality tests for statistical analysis: A guide for non-statisticians</em>. Int J Endocrinol Metab.</li>
       <li>Field et al., 2012. <em>Discovering Statistics Using R</em>. Sage.</li>
       <li>Colab: "Statistical Tests in Python with SciPy"</li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Accessing-Lower-Resolution-Versions-Of-Data-From-BossDB.ipynb">Accessing Lower Resolution Data</a></li>
     </ul>
   </div>
 

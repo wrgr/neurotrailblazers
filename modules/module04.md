@@ -76,6 +76,7 @@ ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinki
       <li>Neuroanatomy Videos: <a href="https://www.youtube.com/@NeuroscientificallyChallenged">Neuroscientifically Challenged</a></li>
       <li>Human Connectome Project: <a href="https://www.humanconnectome.org">humanconnectome.org</a></li>
       <li>FlyWire Neuroglancer Viewer: <a href="https://flywire.ai">flywire.ai</a></li>
+      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/IARPA-MICrONS-Pinky100.ipynb">MICrONS Pinky100 Walkthrough</a></li>
     </ul>
   </div>
 

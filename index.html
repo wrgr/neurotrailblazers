@@ -19,22 +19,17 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
         <!-- Mission Statement Card -->
         <section class="section">
             <div class="cards-grid">
-                <div class="card text-center" style="max-width: 600px; margin: 0 auto;">
-                    <!-- Intentionally left blank after content update -->
+                <div class="card two-column-card" style="max-width: 900px; margin: 0 auto;">
+                    <div class="card-text">
+                        Neurotrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the CONNECTS community and beyond.
+                    </div>
+                    <div class="card-image">
+                        <img src="{{ '/assets/images/homepage.jpg' | relative_url }}" alt="Homepage visual">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Program Tagline -->
-        <section class="section section-highlight">
-            <div class="cards-grid">
-                <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
-                    {% for line in site.tagline_lines %}
-                    <p class="card-description">{{ line }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
 
         <!-- Main Content -->
         <div class="main-content">
@@ -166,6 +161,13 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                             Curated collection of key datasets including Kasthuri, MICrONS, FlyWire, and more.
                         </p>
                         <a href="{{ '/datasets/' | relative_url }}" class="btn btn-primary mt-1">Explore Datasets</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title card-title-with-icon"><span class="icon-inline">✅</span> Connectome Quality</h3>
+                        <p class="card-description">
+                            Learn about best practices for ensuring high-quality connectomic data.
+                        </p>
+                        <a href="{{ '/connectome-quality/' | relative_url }}" class="btn btn-primary mt-1">Quality Guidelines</a>
                     </div>
                     <div class="card">
                         <h3 class="card-title card-title-with-icon"><span class="icon-inline">👤</span> Learner Avatars</h3>

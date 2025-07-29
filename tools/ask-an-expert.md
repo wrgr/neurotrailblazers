@@ -1,8 +1,8 @@
 ---
 title: "Ask the Expert: Dr. Jeff Lichtman"
 layout: page
-description: "Connect with Dr. Lichtman—one of the world’s leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
-permalink: /ask-the-expert/
+description: "Connect with Dr. Lichtman—one of the world's leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
+permalink: /ask-an-expert/
 ---
 
 <div class="main-content">
@@ -20,11 +20,10 @@ permalink: /ask-the-expert/
 
 <section class="section expert-bio">
 <div class="expert-bio-content">
-  <div class="expert-avatar">
-    <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman">
-  </div>
   <div class="expert-bio-text" markdown="1">
   ## 👤 About Dr. Jeff Lichtman
+  
+  <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
   Have a burning question about the brain? Curious about how we map billions of synapses in a cubic millimeter? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a PI on our HI-MC grant.
 

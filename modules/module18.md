@@ -4,19 +4,19 @@ title: "Module 18: Scientific Posters and Conference Preparation"
 layout: module
 permalink: /modules/module18/
 description: "Design compelling scientific posters and prepare to present your connectomics research effectively."
-module\_number: 18
+module_number: 18
 difficulty: "Beginner to Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Design a research poster that communicates key findings"
-* "Structure visual elements for quick understanding"
-* "Practice concise scientific speaking for posters"
-* "Respond effectively to questions during presentations"
-  prerequisites: "Modules 1-17"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Communication", "Visual Storytelling", "Public Speaking"]
-  ccr\_focus: \["Skills - Presentation", "Character - Confidence"]
+- "Design a research poster that communicates key findings"
+- "Structure visual elements for quick understanding"
+- "Practice concise scientific speaking for posters"
+- "Respond effectively to questions during presentations"
+prerequisites: "Modules 1-17"
+merit_stage: "Dissemination"
+compass_skills: \["Communication", "Visual Storytelling", "Public Speaking"]
+ccr_focus: \["Skills - Presentation", "Character - Confidence"]
 
 ---
 

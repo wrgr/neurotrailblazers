@@ -4,19 +4,19 @@ title: "Module 16: Scientific Visualization for Connectomics"
 layout: module
 permalink: /modules/module16/
 description: "Learn how to create effective visualizations of neural structures, connectivity, and analysis results."
-module\_number: 16
+module_number: 16
 difficulty: "Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Generate 2D and 3D visualizations of connectome data"
-* "Choose visualization styles that match scientific goals"
-* "Communicate findings effectively through figures"
-* "Create interactive displays for exploration and sharing"
-  prerequisites: "Modules 1-15, Python matplotlib, seaborn, Plotly"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Scientific Communication", "Visual Design", "Quantitative Reasoning"]
-  ccr\_focus: \["Skills - Visualization", "Skills - Interpretation"]
+- "Generate 2D and 3D visualizations of connectome data"
+- "Choose visualization styles that match scientific goals"
+- "Communicate findings effectively through figures"
+- "Create interactive displays for exploration and sharing"
+prerequisites: "Modules 1-15, Python matplotlib, seaborn, Plotly"
+merit_stage: "Dissemination"
+compass_skills: \["Scientific Communication", "Visual Design", "Quantitative Reasoning"]
+ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
 
 ---
 

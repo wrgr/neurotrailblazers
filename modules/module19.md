@@ -4,19 +4,19 @@ title: "Module 19: Peer Review and Scientific Ethics"
 layout: module
 permalink: /modules/module19/
 description: "Understand the peer review process and the ethical principles that guide responsible scientific conduct."
-module\_number: 19
+module_number: 19
 difficulty: "Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Explain the peer review process and reviewer responsibilities"
-* "Identify key ethical issues in scientific research"
-* "Understand authorship, conflict of interest, and plagiarism"
-* "Reflect on your role in maintaining research integrity"
-  prerequisites: "Modules 1-18"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Ethical Reasoning", "Critical Thinking", "Integrity"]
-  ccr\_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practice"]
+- "Explain the peer review process and reviewer responsibilities"
+- "Identify key ethical issues in scientific research"
+- "Understand authorship, conflict of interest, and plagiarism"
+- "Reflect on your role in maintaining research integrity"
+prerequisites: "Modules 1-18"
+merit_stage: "Dissemination"
+compass_skills: \["Ethical Reasoning", "Critical Thinking", "Integrity"]
+ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practice"]
 
 ---
 

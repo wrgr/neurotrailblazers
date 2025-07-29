@@ -4,19 +4,19 @@ title: "Module 06: Hypothesis Testing in Connectomics"
 layout: module
 permalink: /modules/module06/
 description: "Learn how to formulate, test, and refine scientific hypotheses using nanoscale brain circuit data."
-module\_number: 6
+module_number: 6
 difficulty: "Intermediate"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Formulate testable scientific questions based on circuit data"
-* "Design a simple experimental plan using connectomics resources"
-* "Differentiate between correlation and causation in structural data"
-* "Understand limitations and ethical considerations in EM-based research"
-  prerequisites: "Modules 1-5, or background in neuroscience methods"
-  merit\_stage: "Scientific Question / Experiment"
-  compass\_skills: \["Analytical Thinking", "Curiosity", "Scientific Reasoning"]
-  ccr\_focus: \["Knowledge - Scientific Method", "Character - Integrity"]
+- "Formulate testable scientific questions based on circuit data"
+- "Design a simple experimental plan using connectomics resources"
+- "Differentiate between correlation and causation in structural data"
+- "Understand limitations and ethical considerations in EM-based research"
+prerequisites: "Modules 1-5, or background in neuroscience methods"
+merit_stage: "Scientific Question / Experiment"
+compass_skills: \["Analytical Thinking", "Curiosity", "Scientific Reasoning"]
+ccr_focus: \["Knowledge - Scientific Method", "Character - Integrity"]
 
 ---
 

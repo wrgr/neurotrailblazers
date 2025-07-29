@@ -4,19 +4,19 @@ title: "Module 17: Scientific Writing for Connectomics"
 layout: module
 permalink: /modules/module17/
 description: "Learn to communicate research findings effectively through scientific writing for papers, posters, and presentations."
-module\_number: 17
+module_number: 17
 difficulty: "Intermediate"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Understand the structure of a scientific paper"
-* "Write compelling figure captions and abstracts"
-* "Tailor content to audiences (peer, review, public)"
-* "Revise writing for clarity and precision"
-  prerequisites: "Modules 1-16, basic writing experience"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Communication", "Critical Reading", "Clarity of Expression"]
-  ccr\_focus: \["Skills - Scientific Communication", "Character - Precision"]
+- "Understand the structure of a scientific paper"
+- "Write compelling figure captions and abstracts"
+- "Tailor content to audiences (peer, review, public)"
+- "Revise writing for clarity and precision"
+prerequisites: "Modules 1-16, basic writing experience"
+merit_stage: "Dissemination"
+compass_skills: \["Communication", "Critical Reading", "Clarity of Expression"]
+ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
 
 ---
 

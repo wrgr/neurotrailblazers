@@ -4,19 +4,19 @@ title: "Module 22: Science Communication and Public Engagement"
 layout: module
 permalink: /modules/module22/
 description: "Learn to communicate your research to non-experts, policymakers, and broader communities."
-module\_number: 22
+module_number: 22
 difficulty: "Intermediate"
 duration: "3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Translate technical findings into accessible language"
-* "Engage with different public audiences (press, school, community)"
-* "Design public-facing content including visuals and narratives"
-* "Reflect on your scientific identity and role in society"
-  prerequisites: "Modules 1-21"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Communication", "Civic Engagement", "Empathy"]
-  ccr\_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
+- "Translate technical findings into accessible language"
+- "Engage with different public audiences (press, school, community)"
+- "Design public-facing content including visuals and narratives"
+- "Reflect on your scientific identity and role in society"
+prerequisites: "Modules 1-21"
+merit_stage: "Dissemination"
+compass_skills: \["Communication", "Civic Engagement", "Empathy"]
+ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
 
 ---
 

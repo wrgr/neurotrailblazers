@@ -4,19 +4,19 @@ title: "Module 20: Grant Writing and Funding Pathways"
 layout: module
 permalink: /modules/module20/
 description: "Learn the basics of research grant writing and explore common funding mechanisms for early-stage scientists."
-module\_number: 20
+module_number: 20
 difficulty: "Advanced"
 duration: "3-4 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Understand the structure of a standard grant proposal"
-* "Identify common early-career funding mechanisms"
-* "Develop aims and significance statements"
-* "Plan budgets and timelines for proposed work"
-  prerequisites: "Modules 1-19"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Strategic Planning", "Written Communication", "Resource Awareness"]
-  ccr\_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
+- "Understand the structure of a standard grant proposal"
+- "Identify common early-career funding mechanisms"
+- "Develop aims and significance statements"
+- "Plan budgets and timelines for proposed work"
+prerequisites: "Modules 1-19"
+merit_stage: "Dissemination"
+compass_skills: \["Strategic Planning", "Written Communication", "Resource Awareness"]
+ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
 
 ---
 

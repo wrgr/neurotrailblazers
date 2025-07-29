@@ -4,19 +4,19 @@ title: "Module 09: From Neurons to Networks: Basics of Graph Theory in Connectom
 layout: module
 permalink: /modules/module09/
 description: "Learn how to represent the brain as a graph and analyze its structure using basic network theory."
-module\_number: 9
+module_number: 9
 difficulty: "Intermediate"
 duration: "2-3 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Describe how neurons and synapses are represented as graphs"
-* "Calculate basic network metrics (degree, centrality, clustering)"
-* "Apply graph visualization techniques to connectomics data"
-* "Understand the relevance of graph motifs in neural circuits"
-  prerequisites: "Modules 4 and 5; basic understanding of Python and segmentation data"
-  merit\_stage: "Analysis"
-  compass\_skills: \["Quantitative Reasoning", "Pattern Recognition", "Abstraction"]
-  ccr\_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
+- "Describe how neurons and synapses are represented as graphs"
+- "Calculate basic network metrics (degree, centrality, clustering)"
+- "Apply graph visualization techniques to connectomics data"
+- "Understand the relevance of graph motifs in neural circuits"
+prerequisites: "Modules 4 and 5; basic understanding of Python and segmentation data"
+merit_stage: "Analysis"
+compass_skills: \["Quantitative Reasoning", "Pattern Recognition", "Abstraction"]
+ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
 
 ---
 

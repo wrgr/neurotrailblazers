@@ -4,19 +4,19 @@ title: "Module 25: Designing Your Capstone Portfolio"
 layout: module
 permalink: /modules/module25/
 description: "Integrate your learning into a showcase portfolio that highlights your skills, insights, and contributions."
-module\_number: 25
+module_number: 25
 difficulty: "Advanced"
 duration: "4-6 hours"
-learning\_objectives:
+learning_objectives:
 
-* "Select and organize artifacts that demonstrate growth across modules"
-* "Reflect on challenges, achievements, and evolution as a researcher"
-* "Create a polished, shareable digital portfolio"
-* "Present your scientific identity and future goals"
-  prerequisites: "Modules 1-24"
-  merit\_stage: "Dissemination"
-  compass\_skills: \["Synthesis", "Self-Reflection", "Presentation"]
-  ccr\_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytelling"]
+- "Select and organize artifacts that demonstrate growth across modules"
+- "Reflect on challenges, achievements, and evolution as a researcher"
+- "Create a polished, shareable digital portfolio"
+- "Present your scientific identity and future goals"
+prerequisites: "Modules 1-24"
+merit_stage: "Dissemination"
+compass_skills: \["Synthesis", "Self-Reflection", "Presentation"]
+ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytelling"]
 
 ---
 

@@ -75,6 +75,7 @@ ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
       <li>Sporns, 2010. <em>Networks of the Brain</em>. MIT Press.</li>
       <li>Watts & Strogatz, 1998. <em>Collective dynamics of ‘small-world’ networks</em>. Nature.</li>
       <li>NetworkX Documentation: <a href="https://networkx.org">networkx.org</a></li>
+      <li>Notebook: <a href="{{ '/notebooks/intro/MostSynapsesInAndOut.ipynb' | relative_url }}">Most Synapses In and Out</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/MostSynapsesInAndOut.ipynb" target="_blank">source</a>)</li>
     </ul>
   </div>
 

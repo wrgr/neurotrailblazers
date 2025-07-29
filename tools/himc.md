@@ -3,10 +3,6 @@ title: "HI-MC: High-throughput Imaging for Mouse Connectomics"
 permalink: /tools/himc/
 layout: page
 description: "HI-MC connectome generation"
-permalink: /tools/connectome-quality/
-------
-title: "HI-MC: High-throughput Imaging for Mouse Connectomics"
-permalink: /tools/himc/
 ---
 <style>
 

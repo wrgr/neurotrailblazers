@@ -5,7 +5,7 @@ description: "Accurate reconstruction of brain circuits from nanoscale electron 
 permalink: /tools/connectome-quality/
 ---
 
-<div class="main-content">
+<div class="main-content" markdown="1">
 
 # {{ page.title }}
 

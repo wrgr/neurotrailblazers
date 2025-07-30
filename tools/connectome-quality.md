@@ -1,21 +1,17 @@
 ---
 title: "Connectome Quality"
-
 layout: page
-description: "Accurate reconstruction of brain circuits from nanoscale electron microscopy (EM) is one of the most ambitious goals in modern neuroscience. At the heart of this process lies a critical challenge: **quality control**. This page introduces tools, research, and student-friendly workflows to ensure high-quality connectomes — the foundation for robust discovery."
+description: "Accurate reconstruction of brain circuits from nanoscale electron microscopy (EM) is one of the most ambitious goals in modern neuroscience. At the heart of this process lies a critical challenge: quality control. This page introduces tools, research, and student-friendly workflows to ensure high-quality connectomes — the foundation for robust discovery."
 permalink: /tools/connectome-quality/
 ---
-<div class="main-content">
-  <div class="hero hero-spaced hero-rounded">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title-impact">{{ page.title }}</h1>
-        <p class="hero-description">{{ page.description }}</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
+<div class="main-content" markdown="1">
+
+# {{ page.title }}
+
+{{ page.description }}
+
+---
 
 ## 🌐 A Research Incubator: Training Through Discovery
 
@@ -65,7 +61,7 @@ Each approach teaches different aspects of scientific rigor and contributes to b
 - **Topology Metrics** – Branch count, continuity, loops
 - **Gold-Standard Injection** – Validated regions inserted to test models
 
-> 🔍 See our [Notebooks](../notebooks/connectome-quality/) for hands-on examples.
+> 🔍 See our [Notebooks]({{ '/notebooks/connectome-quality/' | relative_url }}) for hands-on examples.
 
 ---
 
@@ -84,7 +80,7 @@ These are designed for students — no prior neuroscience experience required!
 ## 🧠 Why This Matters
 
 Reliable connectomes power:
-- Disease modeling (e.g., Alzheimer’s, epilepsy)
+- Disease modeling (e.g., Alzheimer's, epilepsy)
 - Brain-inspired machine learning
 - Fundamental circuit discovery
 
@@ -101,5 +97,4 @@ By learning how to spot and fix errors, students join the scientific pipeline an
 
 ---
 
-</div>
 </div>

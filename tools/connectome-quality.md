@@ -1,7 +1,7 @@
 ---
 title: "Connectome Quality"
 layout: page
-description: "Accurate reconstruction of brain circuits from nanoscale electron microscopy (EM) is one of the most ambitious goals in modern neuroscience. At the heart of this process lies a critical challenge: **quality control**. This page introduces tools, research, and student-friendly workflows to ensure high-quality connectomes — the foundation for robust discovery."
+description: "Accurate reconstruction of brain circuits from nanoscale electron microscopy (EM) is one of the most ambitious goals in modern neuroscience. At the heart of this process lies a critical challenge: quality control. This page introduces tools, research, and student-friendly workflows to ensure high-quality connectomes — the foundation for robust discovery."
 permalink: /tools/connectome-quality/
 ---
 <div class="main-content">

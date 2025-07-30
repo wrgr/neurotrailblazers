@@ -5,6 +5,8 @@ description: "Accurate reconstruction of brain circuits from nanoscale electron 
 permalink: /tools/connectome-quality/
 ---
 
+<div class="main-content">
+
 # {{ page.title }}
 
 {{ page.description }}
@@ -94,3 +96,5 @@ By learning how to spot and fix errors, students join the scientific pipeline an
 - [Submit a New Metric](#)
 
 ---
+
+</div>

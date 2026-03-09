@@ -18,8 +18,9 @@
         </div>
         <nav class="navbar">
             <a href="{{ '/' | relative_url }}" class="logo">NeuroTrailblazers</a>
+            {% assign nav_items = site.data.navigation.items | default: site.navigation %}
             <ul class="nav-menu">
-                {% for item in site.navigation %}
+                {% for item in nav_items %}
                 <li class="nav-item">
                     <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
                     {% if item.title == 'Modules' %}

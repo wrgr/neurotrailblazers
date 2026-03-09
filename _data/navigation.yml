@@ -1,0 +1,22 @@
+---
+# Primary site navigation items.
+# Canonical source for header/nav; mirrors initial _config.yml.navigation.
+items:
+  - title: "Home"
+    url: "/"
+  - title: "Start"
+    url: "/start-here"
+  - title: "Models"
+    url: "/models"
+  - title: "Workflow"
+    url: "/datasets/workflow"
+  - title: "Modules"
+    url: "/modules/"
+    dropdown: []
+  - title: "Datasets"
+    url: "/datasets/"
+  - title: "Ask Expert"
+    url: "/ask-an-expert/"
+  - title: "Proofreading"
+    url: "/tools/connectome-quality/"
+

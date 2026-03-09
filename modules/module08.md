@@ -6,12 +6,41 @@ description: "Learn how to generate and test scientific hypotheses using circuit
 module_number: 8
 difficulty: "Intermediate"
 duration: "3-4 hours"
+
+# Normalized metadata (pilot)
+slug: "module08"
+short_title: "Hypothesis Testing in Connectomics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Experiment"
+merit_row_focus: "Experiment"
+topics:
+  - "hypothesis-testing"
+  - "statistics"
+  - "connectomics"
+summary: "Defining and testing hypotheses using statistical tools in connectomics."
 learning_objectives:
   - "Define and identify testable hypotheses in connectomics"
   - "Apply statistical methods to compare neural features"
   - "Design experiments to validate hypotheses using segmented data"
   - "Critically interpret analysis results"
-prerequisites: "Modules 1-7, basic statistics"
+key_questions: []
+slides: []
+notebook:
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites:
+  - "Modules 1-7"
+  - "Basic statistics"
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 merit_stage: "Analysis"
 compass_skills:
   - "Scientific Reasoning"

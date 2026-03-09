@@ -19,6 +19,33 @@ compass_skills:
 ccr_focus:
   - "Knowledge - Data Acquisition"
   - "Skills - Dataset Exploration"
+
+# Normalized metadata
+slug: "module02"
+short_title: "Research Foundations & the Hidden Curriculum"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Foundations"
+merit_row_focus: "Foundations"
+topics:
+  - "connectomics-datasets"
+  - "data-pipeline"
+summary: "Unwritten norms in science, research roles, and building confidence while exploring real connectomics datasets."
+key_questions: []
+slides: []
+notebook:
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

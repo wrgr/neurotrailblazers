@@ -2,6 +2,24 @@
 layout: dataset
 title: "Accessing Public EM Datasets"
 description: "Resources and notebooks for downloading and exploring connectomics data."
+permalink: /datasets/access/
+slug: access
+summary: "Practical guide for finding, downloading, and working with public EM datasets."
+modality: "Electron microscopy"
+species: "Mixed"
+scale: "Multiple public datasets"
+access_level: "Public and account-based portals"
+use_cases:
+  - Data onboarding
+  - Notebook setup
+  - Dataset access workflows
+recommended_modules: []
+related_tools: []
+related_frameworks: []
+resource_links: []
+image: /assets/images/datasets/access.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

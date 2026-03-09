@@ -1,7 +1,25 @@
 ---
-layout: default
+layout: dataset
 title: "MouseConnects Connectomics Workflow"
 description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis in the MouseConnects project"
+permalink: /datasets/workflow/
+slug: workflow
+summary: "Step-by-step MouseConnects pipeline from sample preparation to connectome analysis."
+modality: "Electron microscopy pipeline"
+species: "Mouse"
+scale: "Whole-project operational workflow"
+access_level: "Educational documentation"
+use_cases:
+  - Pipeline orientation
+  - Methods training
+  - Connectomics workflow teaching
+recommended_modules: []
+related_tools: []
+related_frameworks: []
+resource_links: []
+image: /assets/images/datasets/workflow.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

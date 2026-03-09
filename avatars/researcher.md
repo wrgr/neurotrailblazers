@@ -1,7 +1,9 @@
 ---
 layout: avatar
-title: Amir – The Translator
+title: "Amir - The Translator"
 role: AI Scientist
+permalink: /avatars/researcher/
+slug: researcher
 experience: Expert (industry)
 epistemic_orientation: Mechanistic, systems optimization
 motivation: Solve big problems, bring vision science into AI
@@ -13,6 +15,13 @@ interests: ["Edge devices", "Object tracking", "Connectomics"]
 challenges: ["Interpreting neuroscience literature", "Adapting pace from industry", "Collaborating across fields"]
 strengths: ["Deep ML expertise", "Systems thinking", "Problem solving"]
 goals: ["Apply ML to neural data", "Collaborate with academics", "Understand circuitry"]
+summary: "Industry AI scientist translating machine learning expertise into neuroscience collaboration and connectomics discovery."
+recommended_modules: []
+recommended_datasets: []
+recommended_tools: []
+image: /assets/images/avatars/researcher.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

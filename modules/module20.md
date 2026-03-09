@@ -15,9 +15,35 @@ learning_objectives:
 - "Plan budgets and timelines for proposed work"
 prerequisites: "Modules 1-19"
 merit_stage: "Dissemination"
-compass_skills: \["Strategic Planning", "Written Communication", "Resource Awareness"]
-ccr_focus: \["Skills - Grant Writing", "Knowledge - Research Landscape"]
+compass_skills: ["Strategic Planning", "Written Communication", "Resource Awareness"]
+ccr_focus: ["Skills - Grant Writing", "Knowledge - Research Landscape"]
 
+# Normalized metadata
+slug: "module20"
+short_title: "Statistical Models and Inference"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "grants"
+  - "funding"
+summary: "Modeling techniques to interpret neural data and foundational skills for grant writing and funding pathways."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

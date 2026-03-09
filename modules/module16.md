@@ -1,5 +1,4 @@
 ---
-
 title: "Module 16: Scientific Visualization for Connectomics"
 layout: module
 permalink: /modules/module16/
@@ -7,17 +6,51 @@ description: "Learn how to create effective visualizations of neural structures,
 module_number: 16
 difficulty: "Intermediate"
 duration: "3 hours"
+
+# Normalized metadata (pilot)
+slug: "module16"
+short_title: "Scientific Visualization for Connectomics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "visualization"
+  - "communication"
+  - "connectomics"
+summary: "Create effective 2D and 3D visualizations to communicate connectome data."
 learning_objectives:
-
-- "Generate 2D and 3D visualizations of connectome data"
-- "Choose visualization styles that match scientific goals"
-- "Communicate findings effectively through figures"
-- "Create interactive displays for exploration and sharing"
-prerequisites: "Modules 1-15, Python matplotlib, seaborn, Plotly"
+  - "Generate 2D and 3D visualizations of connectome data"
+  - "Choose visualization styles that match scientific goals"
+  - "Communicate findings effectively through figures"
+  - "Create interactive displays for exploration and sharing"
+key_questions: []
+slides: []
+notebook:
+  - "/notebooks/intro/MeshExample.ipynb"
+  - "/notebooks/intro/Render3DScaleBar.ipynb"
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites:
+  - "Modules 1-15"
+  - "Python matplotlib, seaborn, Plotly"
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 merit_stage: "Dissemination"
-compass_skills: \["Scientific Communication", "Visual Design", "Quantitative Reasoning"]
-ccr_focus: \["Skills - Visualization", "Skills - Interpretation"]
-
+compass_skills:
+  - "Scientific Communication"
+  - "Visual Design"
+  - "Quantitative Reasoning"
+ccr_focus:
+  - "Skills - Visualization"
+  - "Skills - Interpretation"
 ---
 
 <div class="main-content">

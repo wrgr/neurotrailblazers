@@ -15,9 +15,35 @@ learning_objectives:
 - "Network effectively and find career mentors"
 prerequisites: "Modules 1-22"
 merit_stage: "Dissemination"
-compass_skills: \["Career Planning", "Self-Awareness", "Networking"]
-ccr_focus: \["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
+compass_skills: ["Career Planning", "Self-Awareness", "Networking"]
+ccr_focus: ["Meta-Learning - Career Reflection", "Skills - Pathway Mapping"]
 
+# Normalized metadata
+slug: "module23"
+short_title: "Posters, Abstracts, and Conferences"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "careers"
+  - "pathways"
+summary: "Sharing work with peers and professionals while exploring diverse career paths in neuroscience."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

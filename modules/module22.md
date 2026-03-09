@@ -15,9 +15,35 @@ learning_objectives:
 - "Reflect on your scientific identity and role in society"
 prerequisites: "Modules 1-21"
 merit_stage: "Dissemination"
-compass_skills: \["Communication", "Civic Engagement", "Empathy"]
-ccr_focus: \["Character - Scientific Citizenship", "Skills - Public Speaking"]
+compass_skills: ["Communication", "Civic Engagement", "Empathy"]
+ccr_focus: ["Character - Scientific Citizenship", "Skills - Public Speaking"]
 
+# Normalized metadata
+slug: "module22"
+short_title: "Scientific Writing & Presentation"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "public-engagement"
+  - "science-communication"
+summary: "Communicating ideas clearly with audience awareness across public engagement and science communication settings."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

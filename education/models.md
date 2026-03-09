@@ -1,6 +1,13 @@
 ---
-layout: default
+layout: framework
 title: Models
+slug: education-models
+summary: "Education-facing overview of MERIT and COMPASS training models."
+framework_type: "Education and learner development"
+related_modules: []
+related_tools: []
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 This section introduces two core training frameworks used throughout NeuroTrailblazers:

@@ -15,9 +15,35 @@ learning_objectives:
 - "Apply holistic thinking to connectomics data analysis"
 prerequisites: "Modules 1-23"
 merit_stage: "Dissemination"
-compass_skills: \["Systems Thinking", "Integration", "Problem-Solving"]
-ccr_focus: \["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary Synthesis"]
+compass_skills: ["Systems Thinking", "Integration", "Problem-Solving"]
+ccr_focus: ["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary Synthesis"]
 
+# Normalized metadata
+slug: "module24"
+short_title: "Career Pathways & Graduate School Prep"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "systems-thinking"
+  - "interdisciplinary"
+summary: "Applying systems thinking and interdisciplinary approaches to neuroscience problems and career planning."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

@@ -1,5 +1,4 @@
 ---
-
 title: "Module 01: Introduction to NeuroTrailblazers & Connectomics"
 layout: module
 permalink: /modules/module01/
@@ -7,6 +6,35 @@ description: "Intro to the NeuroTrailblazers initiative and fundamentals of conn
 module_number: 1
 difficulty: "Beginner"
 duration: "1-2 hours"
+
+# Normalized metadata (pilot)
+slug: "module01"
+short_title: "Scientific Curiosity & Motivation"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Foundations"
+merit_row_focus: "Foundations"
+topics:
+  - "connectomics"
+  - "motivation"
+  - "research-orientation"
+summary: "Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry."
+learning_objectives: []
+key_questions: []
+slides: []
+notebook:
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

@@ -1,9 +1,11 @@
 ---
 layout: avatar
-title: Maya – The Bridge Builder
+title: "Maya - The Bridge Builder"
 role: Graduate Student
+permalink: /avatars/gradstudent/
+slug: gradstudent
 experience: Intermediate
-epistemic_orientation: Hybrid – computational with curiosity
+epistemic_orientation: "Hybrid - computational with curiosity"
 motivation: Use ML to push neuroscience forward and lift others with her
 student_name: "Maya Patel"
 education_level: "PhD Student, Year 2"
@@ -13,6 +15,13 @@ interests: ["Machine learning", "Segmentation models", "Mentoring"]
 challenges: ["Balancing research directions", "Career uncertainty", "Bridging disciplines"]
 strengths: ["Explaining complex ideas", "Collaboration", "Curiosity"]
 goals: ["Advance segmentation methods", "Publish impactful papers", "Support younger students"]
+summary: "Graduate student connecting computational methods and neuroscience while developing research identity and mentoring others."
+recommended_modules: []
+recommended_datasets: []
+recommended_tools: []
+image: /assets/images/avatars/gradstudent.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

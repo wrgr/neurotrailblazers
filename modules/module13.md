@@ -15,9 +15,35 @@ learning_objectives:
 - "Use exploratory data analysis (EDA) to form hypotheses"
 prerequisites: "Modules 1-12, Python scikit-learn, matplotlib"
 merit_stage: "Analysis"
-compass_skills: \["Quantitative Reasoning", "Data Exploration", "Scientific Inference"]
-ccr_focus: \["Skills - Feature Extraction", "Skills - Clustering"]
+compass_skills: ["Quantitative Reasoning", "Data Exploration", "Scientific Inference"]
+ccr_focus: ["Skills - Feature Extraction", "Skills - Clustering"]
 
+# Normalized metadata
+slug: "module13"
+short_title: "Machine Learning in Neuroscience"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "data-science"
+  - "clustering"
+summary: "Intro to ML concepts and supervised/unsupervised learning applied to connectomics feature extraction and clustering."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

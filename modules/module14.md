@@ -14,9 +14,35 @@ learning_objectives:
 - "Interpret classifications in the context of network architecture"
 prerequisites: "Modules 1-13, basic familiarity with neuroanatomy"
 merit_stage: "Analysis"
-compass_skills: \["Pattern Recognition", "Quantitative Analysis", "Critical Thinking"]
-ccr_focus: \["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
+compass_skills: ["Pattern Recognition", "Quantitative Analysis", "Critical Thinking"]
+ccr_focus: ["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
 
+# Normalized metadata
+slug: "module14"
+short_title: "Computer Vision for EM"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "neuron-morphology"
+  - "classification"
+summary: "From filters to deep learning for image understanding and neuron classification from EM morphology."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

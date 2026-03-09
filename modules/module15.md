@@ -15,9 +15,36 @@ learning_objectives:
 - "Propose and apply corrections to data"
 prerequisites: "Modules 1-14, familiarity with Neuroglancer"
 merit_stage: "Analysis"
-compass_skills: \["Attention to Detail", "Visual Reasoning", "Data Curation"]
-ccr_focus: \["Skills - Quality Control", "Skills - Annotation"]
+compass_skills: ["Attention to Detail", "Visual Reasoning", "Data Curation"]
+ccr_focus: ["Skills - Quality Control", "Skills - Annotation"]
 
+# Normalized metadata
+slug: "module15"
+short_title: "LLMs for Patch Analysis"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "quality-control"
+  - "proofreading"
+summary: "Using large language models and structured workflows for connectome proofreading and quality control."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools:
+  - "connectome-quality"
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

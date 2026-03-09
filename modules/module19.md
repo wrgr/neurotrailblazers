@@ -15,9 +15,35 @@ learning_objectives:
 - "Reflect on your role in maintaining research integrity"
 prerequisites: "Modules 1-18"
 merit_stage: "Dissemination"
-compass_skills: \["Ethical Reasoning", "Critical Thinking", "Integrity"]
-ccr_focus: \["Character - Scientific Ethics", "Meta-Learning - Reflective Practice"]
+compass_skills: ["Ethical Reasoning", "Critical Thinking", "Integrity"]
+ccr_focus: ["Character - Scientific Ethics", "Meta-Learning - Reflective Practice"]
 
+# Normalized metadata
+slug: "module19"
+short_title: "Visualization for Insight"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "peer-review"
+  - "ethics"
+summary: "Creating visualizations to explore and explain findings while understanding peer review and scientific ethics."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

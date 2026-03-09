@@ -15,9 +15,35 @@ learning_objectives:
 - "Respond effectively to questions during presentations"
 prerequisites: "Modules 1-17"
 merit_stage: "Dissemination"
-compass_skills: \["Communication", "Visual Storytelling", "Public Speaking"]
-ccr_focus: \["Skills - Presentation", "Character - Confidence"]
+compass_skills: ["Communication", "Visual Storytelling", "Public Speaking"]
+ccr_focus: ["Skills - Presentation", "Character - Confidence"]
 
+# Normalized metadata
+slug: "module18"
+short_title: "Data Cleaning and Preprocessing"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "posters"
+  - "presentations"
+summary: "Handling noise, filtering data, and reproducibility, with a focus on poster and conference preparation."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

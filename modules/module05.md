@@ -20,6 +20,35 @@ compass_skills:
 ccr_focus:
   - "Skills - Data Integrity"
   - "Character - Grit"
+
+# Normalized metadata
+slug: "module05"
+short_title: "Electron Microscopy and Image Basics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Foundations"
+merit_row_focus: "Foundations"
+topics:
+  - "segmentation"
+  - "proofreading"
+summary: "EM imaging principles, file formats, interpretation, and the role of segmentation and proofreading."
+key_questions: []
+slides: []
+notebook:
+  - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
+datasets: []
+personas: []
+related_tools:
+  - "connectome-quality"
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

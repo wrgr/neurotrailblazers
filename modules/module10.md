@@ -15,9 +15,35 @@ learning_objectives:
 - "Identify common pitfalls in experimental design and interpretation"
 prerequisites: "Modules 6 and 9; basic knowledge of statistics and neuroscience"
 merit_stage: "Experiment"
-compass_skills: \["Critical Thinking", "Scientific Reasoning", "Rigor"]
-ccr_focus: \["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Character - Integrity"]
+compass_skills: ["Critical Thinking", "Scientific Reasoning", "Rigor"]
+ccr_focus: ["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Character - Integrity"]
 
+# Normalized metadata
+slug: "module10"
+short_title: "Network Science & Graph Representation"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Experiment"
+merit_row_focus: "Experiment"
+topics:
+  - "hypothesis-testing"
+  - "experimental-design"
+summary: "Introduction to graphs, adjacency, and connectome structure with a focus on hypothesis testing and circuit function."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

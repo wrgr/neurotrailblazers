@@ -1,7 +1,24 @@
 ---
-layout: default
+layout: dataset
 title: "MouseConnects Dataset – Complete Hippocampal Connectome"
 permalink: /datasets/mouseconnects/
+slug: mouseconnects
+summary: "Overview of the MouseConnects HI-MC dataset, technology stack, collaborators, and scientific goals."
+modality: "Serial electron microscopy with multi-modal integration"
+species: "Mouse (C57BL/6)"
+scale: "10 mm3 hippocampal formation, >10 PB data"
+access_level: "Open science release in progress"
+use_cases:
+  - Connectomics pipeline learning
+  - Circuit analysis case studies
+  - AI segmentation and proofreading exercises
+recommended_modules: []
+related_tools: []
+related_frameworks: []
+resource_links: []
+image: /assets/images/datasets/mouseconnects.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="hero">

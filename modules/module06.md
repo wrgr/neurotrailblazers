@@ -15,9 +15,35 @@ learning_objectives:
 - "Understand limitations and ethical considerations in EM-based research"
 prerequisites: "Modules 1-5, or background in neuroscience methods"
 merit_stage: "Scientific Question / Experiment"
-compass_skills: \["Analytical Thinking", "Curiosity", "Scientific Reasoning"]
-ccr_focus: \["Knowledge - Scientific Method", "Character - Integrity"]
+compass_skills: ["Analytical Thinking", "Curiosity", "Scientific Reasoning"]
+ccr_focus: ["Knowledge - Scientific Method", "Character - Integrity"]
 
+# Normalized metadata
+slug: "module06"
+short_title: "Segmentation 101"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Question"
+merit_row_focus: "Question"
+topics:
+  - "hypothesis-design"
+  - "connectomics-experiments"
+summary: "Understanding segmentation, labels, sources of error, and how to formulate and test questions with connectomics data."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

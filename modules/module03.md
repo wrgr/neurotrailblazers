@@ -11,6 +11,33 @@ prerequisites: "Module 0–2 or equivalent experience with connectomics basics"
 merit_stage: "Orientation & Research Foundations"
 compass_skills: ["Research Fundamentals", "Scientific Reasoning"]
 ccr_focus: ["Knowledge - Scientific Literacy", "Meta-Learning - Problem Framing"]
+
+# Normalized metadata
+slug: "module03"
+short_title: "Python and Jupyter for Neuroscience"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Foundations"
+merit_row_focus: "Foundations"
+topics:
+  - "scientific-method"
+  - "research-design"
+summary: "Intro to coding in Python, Jupyter notebooks, and tools for analysis within a scientific-method framing."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

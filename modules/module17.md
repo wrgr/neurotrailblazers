@@ -15,9 +15,37 @@ learning_objectives:
 - "Revise writing for clarity and precision"
 prerequisites: "Modules 1-16, basic writing experience"
 merit_stage: "Dissemination"
-compass_skills: \["Communication", "Critical Reading", "Clarity of Expression"]
-ccr_focus: \["Skills - Scientific Communication", "Character - Precision"]
+compass_skills: ["Communication", "Critical Reading", "Clarity of Expression"]
+ccr_focus: ["Skills - Scientific Communication", "Character - Precision"]
 
+# Normalized metadata
+slug: "module17"
+short_title: "Scientific Writing for Connectomics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "writing"
+  - "communication"
+summary: "Write clear papers, abstracts, and figure captions for neuroscience audiences."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks:
+  - "MERIT"
+  - "COMPASS"
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

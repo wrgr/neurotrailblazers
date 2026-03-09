@@ -15,9 +15,35 @@ learning_objectives:
 - "Evaluate model performance using accuracy and loss metrics"
 prerequisites: "Modules 1-10, basic Python and image processing"
 merit_stage: "Experiment"
-compass_skills: \["Computational Thinking", "ML Literacy", "Analytical Reasoning"]
-ccr_focus: \["Knowledge - Machine Learning", "Skills - Model Evaluation"]
+compass_skills: ["Computational Thinking", "ML Literacy", "Analytical Reasoning"]
+ccr_focus: ["Knowledge - Machine Learning", "Skills - Model Evaluation"]
 
+# Normalized metadata
+slug: "module11"
+short_title: "Synapses and Circuit Logic"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Experiment"
+merit_row_focus: "Experiment"
+topics:
+  - "machine-learning"
+  - "segmentation-ml"
+summary: "Mapping synaptic connectivity and interpreting motifs using machine learning and segmentation models."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

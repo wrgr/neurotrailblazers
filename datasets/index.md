@@ -1,7 +1,25 @@
 ---
-layout: default
+layout: dataset
 title: "Connectomics Datasets - Learning with Real Scientific Data"
 description: "Explore curated connectomics datasets from landmark studies including H01, MICrONS, FlyWire, Hemibrain, and more. Learn with the same data used by leading researchers."
+permalink: /datasets/
+slug: index
+summary: "Landing page for curated connectomics datasets and learning pathways."
+modality: "Electron microscopy and multi-modal neuroscience data"
+species: "Mixed"
+scale: "Multiple datasets and volumes"
+access_level: "Public links and mixed access requirements"
+use_cases:
+  - Dataset discovery
+  - Curriculum-aligned exploration
+  - Comparative connectomics learning
+recommended_modules: []
+related_tools: []
+related_frameworks: []
+resource_links: []
+image: /assets/images/datasets/datasets-index.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

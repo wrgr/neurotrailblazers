@@ -15,9 +15,35 @@ learning_objectives:
 - "Present your scientific identity and future goals"
 prerequisites: "Modules 1-24"
 merit_stage: "Dissemination"
-compass_skills: \["Synthesis", "Self-Reflection", "Presentation"]
-ccr_focus: \["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytelling"]
+compass_skills: ["Synthesis", "Self-Reflection", "Presentation"]
+ccr_focus: ["Meta-Learning - Portfolio Thinking", "Skills - Scientific Storytelling"]
 
+# Normalized metadata
+slug: "module25"
+short_title: "Portfolio, Feedback, and Final Project"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "portfolio"
+  - "capstone"
+summary: "Curating evidence of learning and capstone feedback through a polished, reflective portfolio."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

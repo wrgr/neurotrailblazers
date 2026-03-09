@@ -1,7 +1,9 @@
 ---
 layout: avatar
-title: Dr. Linh Nguyen – The Vision Builder
+title: "Dr. Linh Nguyen - The Vision Builder"
 role: Assistant Professor
+permalink: /avatars/mentor/
+slug: mentor
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
 motivation: Advance connectomics and build healthier research teams
@@ -13,6 +15,13 @@ interests: ["Team building", "FAIR data", "Mentorship"]
 challenges: ["Balancing perfectionism", "Leadership isolation", "Time management"]
 strengths: ["Strategic vision", "Mentoring", "Scientific rigor"]
 goals: ["Grow collaborative lab", "Secure sustainable funding", "Support trainee success"]
+summary: "Assistant professor balancing scientific rigor, lab leadership, and mentorship in large-scale connectomics."
+recommended_modules: []
+recommended_datasets: []
+recommended_tools: []
+image: /assets/images/avatars/mentor.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

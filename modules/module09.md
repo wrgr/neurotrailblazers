@@ -15,9 +15,35 @@ learning_objectives:
 - "Understand the relevance of graph motifs in neural circuits"
 prerequisites: "Modules 4 and 5; basic understanding of Python and segmentation data"
 merit_stage: "Analysis"
-compass_skills: \["Quantitative Reasoning", "Pattern Recognition", "Abstraction"]
-ccr_focus: \["Knowledge - Network Science", "Skills - Graph Analysis"]
+compass_skills: ["Quantitative Reasoning", "Pattern Recognition", "Abstraction"]
+ccr_focus: ["Knowledge - Network Science", "Skills - Graph Analysis"]
 
+# Normalized metadata
+slug: "module09"
+short_title: "Neuron Morphology & Skeletonization"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Experiment"
+merit_row_focus: "Experiment"
+topics:
+  - "graph-theory"
+  - "connectome-graphs"
+summary: "Exploring cell shape, skeletons, and biofeatures via graph representations and network metrics."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

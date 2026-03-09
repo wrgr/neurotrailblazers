@@ -1,7 +1,11 @@
 ---
 layout: avatar
 title: "Julian - First-Generation Undergraduate"
+role: Undergraduate Student
+permalink: /avatars/undergradstudent/
+slug: undergradstudent
 description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
+summary: "First-generation undergraduate exploring computational neuroscience while building research confidence and technical skills."
 student_name: "Julian Rodriguez"
 education_level: "Undergraduate Sophomore"
 background: "First-generation college student"
@@ -10,6 +14,12 @@ interests: ["Brain research", "Programming", "Medical applications"]
 challenges: ["Imposter syndrome", "Financial stress", "Lack of research experience"]
 strengths: ["Curiosity", "Determination", "Fresh perspective"]
 goals: ["Get research experience", "Apply to graduate school", "Make a difference in neuroscience"]
+recommended_modules: []
+recommended_datasets: []
+recommended_tools: []
+image: /assets/images/avatars/undergradstudent.jpg
+last_reviewed: 2026-03-09
+maintainer: TBD
 ---
 
 <div class="main-content">

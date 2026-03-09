@@ -15,9 +15,35 @@ learning_objectives:
 - "Support mentee growth with inclusive practices"
 prerequisites: "Modules 1-20"
 merit_stage: "Dissemination"
-compass_skills: \["Leadership", "Empathy", "Inclusive Practice"]
-ccr_focus: \["Character - Leadership", "Skills - Mentorship"]
+compass_skills: ["Leadership", "Empathy", "Inclusive Practice"]
+ccr_focus: ["Character - Leadership", "Skills - Mentorship"]
 
+# Normalized metadata
+slug: "module21"
+short_title: "Reproducibility and FAIR Principles"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Dissemination"
+merit_row_focus: "Dissemination"
+topics:
+  - "mentorship"
+  - "leadership"
+summary: "Ensuring research is findable, accessible, and reproducible while developing mentorship and leadership in research."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

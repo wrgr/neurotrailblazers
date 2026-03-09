@@ -15,9 +15,37 @@ learning_objectives:
 - "Interpret the significance of motifs and hubs in neural data"
 prerequisites: "Modules 1-6 and some coding or math background"
 merit_stage: "Analysis"
-compass_skills: \["Analytical Thinking", "Computational Reasoning", "Pattern Recognition"]
-ccr_focus: \["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
+compass_skills: ["Analytical Thinking", "Computational Reasoning", "Pattern Recognition"]
+ccr_focus: ["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
 
+# Normalized metadata
+slug: "module07"
+short_title: "Proofreading and Quality Control"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Question"
+merit_row_focus: "Question"
+topics:
+  - "network-science"
+  - "graphs"
+summary: "Identifying merge/split errors and assessing segmentation quality using network and graph concepts."
+key_questions: []
+slides: []
+notebook:
+  - "/notebooks/intro/MostSynapsesInAndOut.ipynb"
+datasets: []
+personas: []
+related_tools:
+  - "connectome-quality"
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

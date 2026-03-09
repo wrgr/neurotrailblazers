@@ -15,9 +15,35 @@ learning_objectives:
 - "Analyze EM data with respect to brain region and local context"
 prerequisites: "Module 1-3 or prior biology/anatomy background"
 merit_stage: "Scientific Question"
-compass_skills: \["Domain Awareness", "Scientific Visualization", "Attention to Detail"]
-ccr_focus: \["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinking"]
+compass_skills: ["Domain Awareness", "Scientific Visualization", "Attention to Detail"]
+ccr_focus: ["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinking"]
 
+# Normalized metadata
+slug: "module04"
+short_title: "Neuroanatomy for Connectomics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Question"
+merit_row_focus: "Question"
+topics:
+  - "neuroanatomy"
+  - "brain-regions"
+summary: "Understanding neural structure at micro- and macro-scale to inform connectome interpretation."
+key_questions: []
+slides: []
+notebook: []
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

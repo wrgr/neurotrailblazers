@@ -20,6 +20,34 @@ compass_skills:
 ccr_focus:
   - "Knowledge - Neurobiology"
   - "Skills - Morphological Analysis"
+
+# Normalized metadata
+slug: "module12"
+short_title: "Big Data in Connectomics"
+status: "active"
+audience:
+  - "students"
+pipeline_stage: "Analysis"
+merit_row_focus: "Analysis"
+topics:
+  - "synapses"
+  - "functional-annotation"
+summary: "Storage, querying, and scale-aware design for big-data-scale connectomics with functional synapse typing."
+key_questions: []
+slides: []
+notebook:
+  - "/notebooks/intro/DashSynapseExplorer.ipynb"
+datasets: []
+personas: []
+related_tools: []
+related_frameworks: []
+prerequisites_list: []
+next_modules: []
+references: []
+videos: []
+downloads: []
+last_reviewed: 2026-03-09
+maintainer: "NeuroTrailblazers Team"
 ---
 
 <div class="main-content">

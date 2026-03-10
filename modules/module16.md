@@ -27,7 +27,6 @@ learning_objectives:
   - "Create interactive displays for exploration and sharing"
 key_questions: []
 slides:
-  - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pptx"
   - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pdf"
 notebook:
   - "/assets/notebooks/module16/module16-scientific-visualization-for-connectomics.ipynb"

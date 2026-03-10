@@ -35,7 +35,6 @@ topics:
 summary: "Storage, querying, and scale-aware design for big-data-scale connectomics with functional synapse typing."
 key_questions: []
 slides:
-  - "/assets/slides/module12/module12-big-data-in-connectomics.pptx"
   - "/assets/slides/module12/module12-big-data-in-connectomics.pdf"
 notebook:
   - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"

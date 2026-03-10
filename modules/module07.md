@@ -32,7 +32,6 @@ topics:
 summary: "Identifying merge/split errors and assessing segmentation quality using network and graph concepts."
 key_questions: []
 slides:
-  - "/assets/slides/module07/module07-proofreading-and-quality-control.pptx"
   - "/assets/slides/module07/module07-proofreading-and-quality-control.pdf"
 notebook:
   - "/assets/notebooks/module07/module07-proofreading-and-quality-control.ipynb"

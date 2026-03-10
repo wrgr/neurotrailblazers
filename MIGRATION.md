@@ -174,7 +174,7 @@ This document tracks incremental, content-preserving refactors to improve the si
 
 - **Documented and applied slide/notebook conventions**
   - Canonical conventions established:
-    - Slides: `assets/slides/moduleNN/moduleNN-<slug>.{pptx,pdf}`
+    - Slides: `assets/slides/moduleNN/moduleNN-<slug>.pdf` (with optional `.pptx` companion when available)
     - Notebooks: `assets/notebooks/moduleNN/moduleNN-<slug>.ipynb`
   - Created convention directories for exemplar modules:
     - `assets/slides/module05`, `module07`, `module12`, `module16`
@@ -187,8 +187,16 @@ This document tracks incremental, content-preserving refactors to improve the si
     - `modules/module07.md`
     - `modules/module12.md`
     - `modules/module16.md`
-  - Added canonical `slides` entries (PPTX/PDF) and canonical `notebook` entries.
+  - Added canonical `slides` entries and canonical `notebook` entries.
   - Preserved existing notebook links by keeping them in `notebook` and mirroring them under `downloads` for backward compatibility during transition.
+
+- **Placeholder slide files for exemplar modules**
+  - Added canonical placeholder PDF files (non-final content) for:
+    - `assets/slides/module05/module05-electron-microscopy-and-image-basics.pdf`
+    - `assets/slides/module07/module07-proofreading-and-quality-control.pdf`
+    - `assets/slides/module12/module12-big-data-in-connectomics.pdf`
+    - `assets/slides/module16/module16-scientific-visualization-for-connectomics.pdf`
+  - Exemplar module frontmatter now points to the canonical PDF paths so links resolve during content authoring.
 
 ### Changes (Priority D Follow-Up: Compatibility Shims)
 

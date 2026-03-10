@@ -35,7 +35,6 @@ topics:
 summary: "EM imaging principles, file formats, interpretation, and the role of segmentation and proofreading."
 key_questions: []
 slides:
-  - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pptx"
   - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pdf"
 notebook:
   - "/assets/notebooks/module05/module05-electron-microscopy-and-image-basics.ipynb"

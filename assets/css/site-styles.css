@@ -1090,9 +1090,9 @@ footer {
   --teal-lt: #b3e4e3;
   --amber: #e8820c;
   --amber-lt: #fdecd6;
-  --font-head: "Syne", sans-serif;
-  --font-body: "DM Sans", sans-serif;
-  --font-mono: "DM Mono", monospace;
+  --font-head: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
   --radius: 10px;
   --radius-lg: 18px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
@@ -1108,7 +1108,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font-head);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.004em;
   color: var(--ink);
 }
 
@@ -1138,10 +1138,10 @@ h1, h2, h3, h4, h5 {
 
 .logo {
   font-family: var(--font-head);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.1rem;
   color: #ffffff;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.003em;
 }
 
 .nav-menu {
@@ -1150,11 +1150,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-link {
-  font-family: var(--font-head);
-  font-size: 0.82rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  text-transform: none;
+  letter-spacing: 0.004em;
   color: #b0bac9;
   border-radius: 6px;
   padding: 0.4rem 0.7rem;
@@ -1201,8 +1201,8 @@ h1, h2, h3, h4, h5 {
 .hero-title-main,
 .models-hero h1 {
   font-family: var(--font-head);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.008em;
   color: #ffffff;
 }
 
@@ -1254,9 +1254,9 @@ h1, h2, h3, h4, h5 {
 
 .btn {
   border-radius: var(--radius);
-  font-family: var(--font-head);
+  font-family: var(--font-body);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.004em;
   transition: all 0.18s ease;
 }
 
@@ -1301,6 +1301,7 @@ h1, h2, h3, h4, h5 {
 
 .card-title {
   font-family: var(--font-head);
+  font-weight: 700;
 }
 
 .card-description,

@@ -23,7 +23,7 @@ summary: "Orientation to scientific thinking, growth mindset, and curiosity-driv
 learning_objectives: []
 key_questions: []
 slides: []
-notebook:
+notebook: []
 datasets:
   - workflow
 personas:

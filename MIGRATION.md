@@ -28,10 +28,8 @@ This document tracks incremental, content-preserving refactors to improve the si
 
 ### Known Follow-Ups
 
-- Extend normalized front matter to personas, datasets, and tools.
-- Introduce type-specific layouts and includes (e.g., module/persona/dataset cards and listings) while keeping existing HTML content intact.
-- Add a small validation script under `scripts/` to check front matter consistency across content types.
-- Define and document conventions for slide and notebook assets (e.g., `assets/slides/moduleNN/`, `assets/notebooks/moduleNN/`) and gradually align modules to them.
+- Replace placeholder/shim slide assets for exemplar modules (`05`, `07`, `12`, `16`) with real PPTX/PDF deliverables at canonical `assets/slides/moduleNN/` paths.
+- Expand module-level relationship metadata and cards progressively across remaining modules as editorial review completes.
 
 ### Changes (Priority A Batch)
 
@@ -207,6 +205,19 @@ This document tracks incremental, content-preserving refactors to improve the si
     - `MeshExample.ipynb`
     - `Render3DScaleBar.ipynb`
   - Shim notebooks explicitly point between legacy and canonical paths for transition clarity.
+
+### Changes (Priority D Follow-Up: Validator Hardening)
+
+- **Asset-link validation for modules**
+  - Extended `scripts/validate_frontmatter.rb` with module asset checks for:
+    - `slides`
+    - `notebook`
+    - `downloads`
+  - Validator now warns when these fields:
+    - are not arrays
+    - contain non-URL entries that do not start with `/`
+    - point to local files that do not exist
+  - This improves enforcement of the canonical asset-link convention while remaining read-only (warnings only).
 
 ### Changes (Priority B Follow-Up: Frameworks + Card Consistency)
 

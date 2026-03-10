@@ -34,7 +34,7 @@ topics:
 summary: "Unwritten norms in science, research roles, and building confidence while exploring real connectomics datasets."
 key_questions: []
 slides: []
-notebook:
+notebook: []
 datasets:
   - mouseconnects
   - workflow

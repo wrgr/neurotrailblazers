@@ -27,7 +27,7 @@ learning_objectives:
   - "Critically interpret analysis results"
 key_questions: []
 slides: []
-notebook:
+notebook: []
 datasets:
   - mouseconnects
   - workflow

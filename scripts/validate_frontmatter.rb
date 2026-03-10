@@ -24,6 +24,8 @@ REQUIRED_BY_TYPE = {
   "frameworks" => %w[layout title slug summary framework_type related_modules related_tools last_reviewed maintainer],
 }.freeze
 
+MODULE_ASSET_FIELDS = %w[slides notebook downloads].freeze
+
 def extract_frontmatter(path)
   text = path.read
   return nil unless text.start_with?("---")
@@ -66,6 +68,29 @@ def validate_file(path)
     slug = fm["slug"]
     expected_slug = path.basename(".md").to_s
     problems << "slug '#{slug}' does not match filename '#{expected_slug}'" if slug && slug != expected_slug
+
+    MODULE_ASSET_FIELDS.each do |field|
+      next unless fm.key?(field)
+
+      values = fm[field]
+      unless values.is_a?(Array)
+        problems << "#{field} should be an Array"
+        next
+      end
+
+      values.each do |raw|
+        next unless raw.is_a?(String)
+        next if raw.start_with?("http://", "https://")
+
+        unless raw.start_with?("/")
+          problems << "#{field} entry should start with '/' or be an absolute URL: #{raw}"
+          next
+        end
+
+        local_path = ROOT.join(raw.delete_prefix("/"))
+        problems << "#{field} entry points to missing file: #{raw}" unless local_path.exist?
+      end
+    end
   end
 
   if %w[avatars datasets tools].include?(t)

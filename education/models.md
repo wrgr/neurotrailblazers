@@ -4,8 +4,15 @@ title: Models
 slug: education-models
 summary: "Education-facing overview of MERIT and COMPASS training models."
 framework_type: "Education and learner development"
-related_modules: []
-related_tools: []
+related_modules:
+  - module01
+  - module02
+  - module03
+  - module22
+  - module23
+related_tools:
+  - ask-an-expert
+  - connectome-quality
 last_reviewed: 2026-03-09
 maintainer: TBD
 ---

@@ -48,6 +48,7 @@ end
 def validate_file(path)
   fm = extract_frontmatter(path)
   return if fm.nil?
+  return if fm["layout"] == "redirect"
 
   t = type_for(path)
   required = REQUIRED_BY_TYPE[t] || []

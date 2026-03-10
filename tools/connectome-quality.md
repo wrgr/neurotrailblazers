@@ -10,7 +10,14 @@ use_cases:
   - Proofreading workflow training
   - Validation strategy planning
 recommended_modules: []
-related_datasets: []
+recommended_modules:
+  - module06
+  - module07
+  - module08
+  - module12
+  - module18
+related_datasets:
+  - mouseconnects
 last_reviewed: 2026-03-09
 maintainer: TBD
 ---

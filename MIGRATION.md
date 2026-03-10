@@ -222,3 +222,35 @@ This document tracks incremental, content-preserving refactors to improve the si
     - `_includes/cards/module-card.html`
     - `_includes/cards/dataset-card.html`
   - Pattern now consistently prefers `summary`, then falls back to `description` where available.
+
+### Changes (Priority B/C/D Sequential Batch)
+
+- **Redirect stub strategy implemented**
+  - Added `_layouts/redirect.html` for static, plugin-free redirects (meta refresh + JS + canonical).
+  - Added compatibility redirect stubs:
+    - `/frameworks/models/` -> `/models/`
+    - `/frameworks/research-incubator-model/` -> `/models/`
+    - `/frameworks/education-models/` -> `/education/models/`
+    - `/tools/ask-an-expert/` -> `/ask-an-expert/`
+  - Updated validator to skip `layout: redirect` pages so strict content-type field checks apply only to content pages.
+
+- **Deeper tools/framework progression wiring**
+  - Added `_includes/ui/track-progression.html` to render a progression-aligned view from `_data/technical_track.yml`.
+  - Includes mapped-module links and optional contextual overlays:
+    - tools aligned by overlap with `recommended_modules`
+    - frameworks aligned by overlap with `related_modules`
+  - Wired progression include into:
+    - `tools/index.md` (`show_tools=true`)
+    - `frameworks/index.md` (`show_frameworks=true`)
+
+- **Tool/framework metadata alignment**
+  - Added concrete `recommended_modules` and `related_datasets` to:
+    - `tools/ask-an-expert.md`
+    - `tools/connectome-quality.md`
+  - Added concrete `related_modules`/`related_tools` to:
+    - `models.md`
+    - `education/models.md`
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

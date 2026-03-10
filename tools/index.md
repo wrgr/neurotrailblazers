@@ -32,7 +32,7 @@ maintainer: TBD
 
   <section class="section">
     <div class="cards-grid">
-      {% assign tool_pages = site.pages | where_exp: "p", "p.path contains 'tools/' and p.name != 'index.md'" | sort: "title" %}
+      {% assign tool_pages = site.pages | where_exp: "p", "p.path contains 'tools/' and p.layout == 'tool'" | sort: "title" %}
       {% for tool in tool_pages %}
         {% if tool.url and tool.url != '' %}
           {% include cards/tool-card.html tool=tool %}
@@ -40,4 +40,6 @@ maintainer: TBD
       {% endfor %}
     </div>
   </section>
+
+  {% include ui/track-progression.html show_tools=true %}
 </div>

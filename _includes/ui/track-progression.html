@@ -1,0 +1,81 @@
+{% assign track = site.data.technical_track %}
+{% if track and track.modules %}
+<section class="section">
+  <h2>Technical Track Progression</h2>
+  <p>{{ track.course_positioning }}</p>
+
+  <div class="cards-grid">
+    {% assign tool_pages = site.pages | where_exp: "p", "p.path contains 'tools/' and p.layout == 'tool'" %}
+    {% assign framework_pages = site.pages | where_exp: "p", "p.layout == 'framework' and p.slug != 'index'" %}
+
+    {% for item in track.modules %}
+      <article class="card">
+        <h3 class="card-title">{{ forloop.index }}. {{ item.title }}</h3>
+        <p><small>{{ item.slug }}</small></p>
+
+        {% if item.mapped_modules and item.mapped_modules.size > 0 %}
+          <p><strong>Current coverage:</strong>
+          {% for mod in item.mapped_modules %}
+            <a href="{{ '/modules/' | append: mod | append: '/' | relative_url }}">{{ mod }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+          </p>
+        {% else %}
+          <p><strong>Current coverage:</strong> Planned content</p>
+        {% endif %}
+
+        {% if include.show_tools == true %}
+          {% assign tool_hits = '' | split: '' %}
+          {% for tool in tool_pages %}
+            {% assign matches = false %}
+            {% if item.mapped_modules and item.mapped_modules.size > 0 and tool.recommended_modules %}
+              {% for mod in item.mapped_modules %}
+                {% if tool.recommended_modules contains mod %}
+                  {% assign matches = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if matches %}
+              {% assign tool_hits = tool_hits | push: tool %}
+            {% endif %}
+          {% endfor %}
+
+          {% if tool_hits.size > 0 %}
+            <p><strong>Recommended tools:</strong>
+            {% for tool in tool_hits %}
+              <a href="{{ tool.url | relative_url }}">{{ tool.title }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            </p>
+          {% endif %}
+        {% endif %}
+
+        {% if include.show_frameworks == true %}
+          {% assign framework_hits = '' | split: '' %}
+          {% for framework in framework_pages %}
+            {% assign matches = false %}
+            {% if item.mapped_modules and item.mapped_modules.size > 0 and framework.related_modules %}
+              {% for mod in item.mapped_modules %}
+                {% if framework.related_modules contains mod %}
+                  {% assign matches = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if matches %}
+              {% assign framework_hits = framework_hits | push: framework %}
+            {% endif %}
+          {% endfor %}
+
+          {% if framework_hits.size > 0 %}
+            <p><strong>Supporting frameworks:</strong>
+            {% for framework in framework_hits %}
+              <a href="{{ framework.url | relative_url }}">{{ framework.title }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            </p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.mapping_note %}<p class="card-description">{{ item.mapping_note }}</p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

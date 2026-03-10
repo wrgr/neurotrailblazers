@@ -35,5 +35,7 @@ maintainer: TBD
     </div>
   </section>
 
+  {% include ui/track-progression.html show_frameworks=true %}
+
   {% include ui/technical-track-roadmap.html %}
 </div>

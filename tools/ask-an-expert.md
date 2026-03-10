@@ -10,7 +10,13 @@ use_cases:
   - Mentorship-style exploratory guidance
   - Resource discovery for further study
 recommended_modules: []
-related_datasets: []
+recommended_modules:
+  - module01
+  - module02
+  - module04
+  - module12
+related_datasets:
+  - mouseconnects
 last_reviewed: 2026-03-09
 maintainer: TBD
 ---

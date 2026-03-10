@@ -4,8 +4,13 @@ layout: framework
 slug: research-incubator-model
 summary: "Overview of the MERIT, COMPASS, and CCR frameworks guiding NeuroTrailblazers training."
 framework_type: "Program and curriculum design"
-related_modules: []
-related_tools: []
+related_modules:
+  - module01
+  - module02
+  - module24
+  - module25
+related_tools:
+  - ask-an-expert
 last_reviewed: 2026-03-09
 maintainer: TBD
 ---

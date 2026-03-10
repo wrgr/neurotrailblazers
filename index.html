@@ -6,24 +6,44 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
 
 <main class="home-refresh">
     <section class="hero hero-refresh">
-        <div class="hero-content hero-content-stack">
-            <p class="hero-eyebrow">NIH CONNECTS Learning Initiative</p>
-            <h1 class="hero-title-impact">
-                <span class="hero-title-main">Build the future of connectomics, one learning milestone at a time.</span>
-            </h1>
-            <p class="hero-description">
-                NeuroTrailblazers helps students, mentors, and programs turn curiosity into research-ready skills with structured modules,
-                real datasets, and a practical mentorship framework.
-            </p>
-            <div class="cta-buttons">
-                <a href="{{ '/start-here' | relative_url }}" class="btn btn-primary btn-large">Start Your Journey</a>
-                <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary btn-large">Browse Modules</a>
+        <div class="home-hero-grid">
+            <div class="home-hero-copy">
+                <p class="hero-eyebrow">NIH CONNECTS Learning Initiative</p>
+                <h1 class="hero-title-impact">
+                    <span class="hero-title-main">Build the future of connectomics, one learning milestone at a time.</span>
+                </h1>
+                <p class="hero-description">
+                    NeuroTrailblazers helps students, mentors, and programs turn curiosity into research-ready skills with structured modules,
+                    real datasets, and a practical mentorship framework.
+                </p>
+                <div class="cta-buttons">
+                    <a href="{{ '/start-here' | relative_url }}" class="btn btn-primary btn-large">Start Your Journey</a>
+                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary btn-large">Browse Modules</a>
+                    <a href="{{ '/tools/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tools</a>
+                </div>
+                <div class="hero-stats" role="list" aria-label="NeuroTrailblazers highlights">
+                    <div class="stat-pill" role="listitem"><strong>25</strong> modules</div>
+                    <div class="stat-pill" role="listitem"><strong>4</strong> learner avatars</div>
+                    <div class="stat-pill" role="listitem"><strong>5+</strong> connectomics datasets</div>
+                </div>
             </div>
-            <div class="hero-stats" role="list" aria-label="NeuroTrailblazers highlights">
-                <div class="stat-pill" role="listitem"><strong>25</strong> modules</div>
-                <div class="stat-pill" role="listitem"><strong>4</strong> learner avatars</div>
-                <div class="stat-pill" role="listitem"><strong>5+</strong> connectomics datasets</div>
-            </div>
+
+            <aside class="home-hero-panel">
+                <p class="home-panel-label">Technical Connectomics Track</p>
+                <h2>Current Progression Map</h2>
+                <ul class="home-track-list">
+                    {% for item in site.data.technical_track.modules limit:4 %}
+                    <li>
+                        <span class="home-track-step">{{ forloop.index }}</span>
+                        <span>{{ item.title }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="home-panel-actions">
+                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">View Curriculum</a>
+                    <a href="{{ '/frameworks/' | relative_url }}" class="btn btn-secondary">View Frameworks</a>
+                </div>
+            </aside>
         </div>
     </section>
 

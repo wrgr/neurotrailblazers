@@ -28,9 +28,11 @@ maintainer: TBD
 
   <section class="section">
     <div class="cards-grid">
-      {% assign framework_pages = site.pages | where_exp: "p", "p.path == 'models.md' or p.path == 'education/models.md'" | sort: "title" %}
-      {% for framework in framework_pages %}
-        {% include cards/framework-card.html framework=framework %}
+      {% assign sorted_pages = site.pages | sort: "title" %}
+      {% for framework in sorted_pages %}
+        {% if framework.path == 'models.md' or framework.path == 'education/models.md' %}
+          {% include cards/framework-card.html framework=framework %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>

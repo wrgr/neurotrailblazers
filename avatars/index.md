@@ -22,9 +22,11 @@ permalink: /avatars/
 
   <section class="section">
     <div class="cards-grid">
-      {% assign personas = site.pages | where_exp: "p", "p.path contains 'avatars/' and p.name != 'index.md'" | sort: "title" %}
-      {% for persona in personas %}
-        {% include cards/persona-card.html persona=persona %}
+      {% assign sorted_pages = site.pages | sort: "title" %}
+      {% for persona in sorted_pages %}
+        {% if persona.path contains 'avatars/' and persona.name != 'index.md' %}
+          {% include cards/persona-card.html persona=persona %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>

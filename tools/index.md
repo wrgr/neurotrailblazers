@@ -32,9 +32,9 @@ maintainer: TBD
 
   <section class="section">
     <div class="cards-grid">
-      {% assign tool_pages = site.pages | where_exp: "p", "p.path contains 'tools/' and p.layout == 'tool'" | sort: "title" %}
-      {% for tool in tool_pages %}
-        {% if tool.url and tool.url != '' %}
+      {% assign sorted_pages = site.pages | sort: "title" %}
+      {% for tool in sorted_pages %}
+        {% if tool.path contains 'tools/' and tool.layout == 'tool' and tool.name != 'index.md' and tool.url and tool.url != '' %}
           {% include cards/tool-card.html tool=tool %}
         {% endif %}
       {% endfor %}

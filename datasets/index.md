@@ -46,9 +46,11 @@ maintainer: TBD
   <section class="section">
     <h2>Dataset Pages (Generated Cards)</h2>
     <div class="cards-grid">
-      {% assign dataset_pages = site.pages | where_exp: "p", "p.path contains 'datasets/' and p.name != 'index.md'" | sort: "title" %}
-      {% for dataset in dataset_pages %}
-        {% include cards/dataset-card.html dataset=dataset %}
+      {% assign sorted_pages = site.pages | sort: "title" %}
+      {% for dataset in sorted_pages %}
+        {% if dataset.path contains 'datasets/' and dataset.name != 'index.md' %}
+          {% include cards/dataset-card.html dataset=dataset %}
+        {% endif %}
       {% endfor %}
     </div>
   </section>

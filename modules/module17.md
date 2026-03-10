@@ -37,8 +37,8 @@ datasets: []
 personas: []
 related_tools: []
 related_frameworks:
-  - "MERIT"
-  - "COMPASS"
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
 next_modules: []
 references: []

@@ -1,6 +1,7 @@
 ---
 title: Research Incubator Model
 layout: framework
+permalink: /models/
 slug: research-incubator-model
 summary: "Overview of the MERIT, COMPASS, and CCR frameworks guiding NeuroTrailblazers training."
 framework_type: "Program and curriculum design"

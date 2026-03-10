@@ -2,6 +2,7 @@
 layout: default
 title: "Start Here - Your Journey into Nanoscale Connectomics"
 description: "Begin your adventure in computational neuroscience with our structured pathway through nanoscale connectomics research and discovery."
+permalink: /start-here/
 ---
 
 <div class="main-content">
@@ -40,7 +41,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 <h3 class="card-title">I'm a Mentor/Educator</h3>
                 <p class="card-description">Explore our mentorship framework and educational resources for supporting students.</p>
                 <div class="mt-1">
-                    <a href="{{ '/models' | relative_url }}" class="btn btn-primary">View Teaching Models</a>
+                    <a href="{{ '/models/' | relative_url }}" class="btn btn-primary">View Teaching Models</a>
                 </div>
             </div>
         </div>
@@ -159,7 +160,7 @@ description: "Begin your adventure in computational neuroscience with our struct
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>3. Review the <a href="{{ '/models' | relative_url }}">educational models</a></span>
+                    <span>3. Review the <a href="{{ '/models/' | relative_url }}">educational models</a></span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">

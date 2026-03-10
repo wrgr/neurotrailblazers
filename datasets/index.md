@@ -37,6 +37,16 @@ maintainer: TBD
   </section>
 
   <section class="section">
+    <h2>Dataset Pages (Generated Cards)</h2>
+    <div class="cards-grid">
+      {% assign dataset_pages = site.pages | where_exp: "p", "p.path contains 'datasets/' and p.name != 'index.md'" | sort: "title" %}
+      {% for dataset in dataset_pages %}
+        {% include cards/dataset-card.html dataset=dataset %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section">
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">

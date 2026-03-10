@@ -11,6 +11,7 @@ CONTENT_GLOBS = [
   "avatars/*.md",
   "datasets/*.md",
   "tools/*.md",
+  "frameworks/*.md",
   "models.md",
   "education/models.md",
 ].freeze
@@ -67,6 +68,8 @@ def validate_file(path)
   end
 
   if %w[avatars datasets tools].include?(t)
+    return if %w[avatars tools].include?(t) && path.basename.to_s == "index.md"
+
     slug = fm["slug"]
     expected_slug = path.basename(".md").to_s
     problems << "slug '#{slug}' does not match filename '#{expected_slug}'" if slug && slug != expected_slug

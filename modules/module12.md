@@ -34,8 +34,11 @@ topics:
   - "functional-annotation"
 summary: "Storage, querying, and scale-aware design for big-data-scale connectomics with functional synapse typing."
 key_questions: []
-slides: []
+slides:
+  - "/assets/slides/module12/module12-big-data-in-connectomics.pptx"
+  - "/assets/slides/module12/module12-big-data-in-connectomics.pdf"
 notebook:
+  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
   - "/notebooks/intro/DashSynapseExplorer.ipynb"
 datasets: []
 personas: []
@@ -45,7 +48,8 @@ prerequisites_list: []
 next_modules: []
 references: []
 videos: []
-downloads: []
+downloads:
+  - "/notebooks/intro/DashSynapseExplorer.ipynb"
 last_reviewed: 2026-03-09
 maintainer: "NeuroTrailblazers Team"
 ---

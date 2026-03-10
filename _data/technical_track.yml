@@ -1,0 +1,77 @@
+---
+name: "Technical Connectomics Track"
+course_positioning: "Canonical open connectomics course that complements the broader NeuroTrailblazers site."
+status: "planned"
+last_updated: 2026-03-09
+maintainer: TBD
+modules:
+  - slug: "01-why-map-the-brain"
+    title: "Why Map the Brain"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module01
+    mapping_note: "Primary overlap with orientation, motivation, and connectomics purpose."
+  - slug: "02-brain-data-across-scales"
+    title: "Brain Data Across Scales"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module04
+      - module05
+      - module12
+    mapping_note: "Coverage split across neuroanatomy, EM imaging basics, and data scale."
+  - slug: "03-em-prep-and-imaging"
+    title: "EM Prep and Imaging"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module05
+    mapping_note: "Current overlap centers on EM principles and image interpretation."
+  - slug: "04-volume-reconstruction-infrastructure"
+    title: "Volume Reconstruction Infrastructure"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module12
+      - module18
+    mapping_note: "Partial overlap through big-data systems and preprocessing pipelines."
+  - slug: "05-neuronal-ultrastructure"
+    title: "Neuronal Ultrastructure"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module04
+      - module09
+      - module11
+    mapping_note: "Distributed overlap across neuroanatomy, morphology, and synaptic logic."
+  - slug: "06-axons-and-dendrites"
+    title: "Axons and Dendrites"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module04
+      - module09
+    mapping_note: "Current treatment appears in structural neuroanatomy and morphology modules."
+  - slug: "07-glia"
+    title: "Glia"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module04
+    mapping_note: "Only partial coverage currently; likely a strong candidate for dedicated content."
+  - slug: "08-segmentation-and-proofreading"
+    title: "Segmentation and Proofreading"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module06
+      - module07
+    mapping_note: "Direct overlap with existing segmentation and quality-control sequence."
+  - slug: "09-connectome-analysis-neuroai"
+    title: "Connectome Analysis and NeuroAI"
+    status: "mapped_to_existing"
+    mapped_modules:
+      - module10
+      - module13
+      - module14
+      - module15
+      - module20
+    mapping_note: "Strong overlap across graph analysis, ML, CV, LLM, and inference modules."
+  - slug: "atlas-connectomics-reference"
+    title: "Atlas Connectomics Reference"
+    status: "planned"
+    mapped_modules: []
+    mapping_note: "No direct equivalent yet; best handled as dedicated reference content."

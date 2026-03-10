@@ -1,0 +1,11 @@
+{% assign persona = include.persona %}
+<article class="card">
+  <h3 class="card-title">{{ persona.title }}</h3>
+  {% if persona.role %}<p><strong>{{ persona.role }}</strong></p>{% endif %}
+  {% if persona.summary %}
+    <p class="card-description">{{ persona.summary }}</p>
+  {% elsif persona.description %}
+    <p class="card-description">{{ persona.description }}</p>
+  {% endif %}
+  <p><a class="btn btn-primary" href="{{ persona.url | relative_url }}">View Persona</a></p>
+</article>

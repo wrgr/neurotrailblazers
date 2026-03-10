@@ -46,6 +46,8 @@ description: "Begin your adventure in computational neuroscience with our struct
         </div>
     </section>
 
+    {% include ui/technical-track-roadmap.html %}
+
     <section class="section">
         <h2>🗺️ Understanding Our Structure</h2>
         

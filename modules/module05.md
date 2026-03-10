@@ -34,8 +34,11 @@ topics:
   - "proofreading"
 summary: "EM imaging principles, file formats, interpretation, and the role of segmentation and proofreading."
 key_questions: []
-slides: []
+slides:
+  - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pptx"
+  - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pdf"
 notebook:
+  - "/assets/notebooks/module05/module05-electron-microscopy-and-image-basics.ipynb"
   - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
 datasets: []
 personas: []
@@ -46,7 +49,8 @@ prerequisites_list: []
 next_modules: []
 references: []
 videos: []
-downloads: []
+downloads:
+  - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
 last_reviewed: 2026-03-09
 maintainer: "NeuroTrailblazers Team"
 ---

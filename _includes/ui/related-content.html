@@ -1,0 +1,92 @@
+{% assign has_datasets = page.datasets and page.datasets.size > 0 %}
+{% assign has_personas = page.personas and page.personas.size > 0 %}
+{% assign has_tools = page.related_tools and page.related_tools.size > 0 %}
+{% assign has_frameworks = page.related_frameworks and page.related_frameworks.size > 0 %}
+{% assign has_next = page.next_modules and page.next_modules.size > 0 %}
+
+{% if has_datasets or has_personas or has_tools or has_frameworks or has_next %}
+<section class="section">
+  <h2>Related Content</h2>
+  <div class="cards-grid">
+    {% if has_datasets %}
+    <article class="card">
+      <h3>Datasets</h3>
+      <ul class="list-tight">
+        {% for item in page.datasets %}
+          {% assign value = item | to_s %}
+          {% if value contains '/' %}
+            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+          {% else %}
+            <li><a href="{{ '/datasets/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
+
+    {% if has_personas %}
+    <article class="card">
+      <h3>Personas</h3>
+      <ul class="list-tight">
+        {% for item in page.personas %}
+          {% assign value = item | to_s %}
+          {% if value contains '/' %}
+            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+          {% else %}
+            <li><a href="{{ '/avatars/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
+
+    {% if has_tools %}
+    <article class="card">
+      <h3>Tools</h3>
+      <ul class="list-tight">
+        {% for item in page.related_tools %}
+          {% assign value = item | to_s %}
+          {% if value contains '/' %}
+            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+          {% else %}
+            <li><a href="{{ '/tools/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
+
+    {% if has_frameworks %}
+    <article class="card">
+      <h3>Frameworks</h3>
+      <ul class="list-tight">
+        {% for item in page.related_frameworks %}
+          {% assign value = item | to_s %}
+          {% if value contains '/' %}
+            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+          {% else %}
+            <li><a href="{{ '/frameworks/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
+
+    {% if has_next %}
+    <article class="card">
+      <h3>Next Modules</h3>
+      <ul class="list-tight">
+        {% for item in page.next_modules %}
+          {% assign value = item | to_s %}
+          {% if value contains '/modules/' %}
+            <li><a href="{{ value | relative_url }}">{{ value }}</a></li>
+          {% else %}
+            <li><a href="{{ '/modules/' | append: value | append: '/' | relative_url }}">{{ value }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,27 @@
+{% assign track = site.data.technical_track %}
+{% if track and track.modules %}
+<section class="section">
+  <h2>Technical Connectomics Track (Planned)</h2>
+  <p>{{ track.course_positioning }}</p>
+  <ol class="list-tight">
+    {% for item in track.modules %}
+      <li>
+        <strong>{{ item.title }}</strong>
+        <small>({{ item.slug }})</small>
+        {% if item.mapped_modules and item.mapped_modules.size > 0 %}
+        <br>
+        <small>
+          Current coverage:
+          {% for mod in item.mapped_modules %}
+            <a href="{{ '/modules/' | append: mod | append: '/' | relative_url }}">{{ mod }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </small>
+        {% endif %}
+        {% if item.mapping_note %}
+        <br><small>{{ item.mapping_note }}</small>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

@@ -26,8 +26,11 @@ learning_objectives:
   - "Communicate findings effectively through figures"
   - "Create interactive displays for exploration and sharing"
 key_questions: []
-slides: []
+slides:
+  - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pptx"
+  - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pdf"
 notebook:
+  - "/assets/notebooks/module16/module16-scientific-visualization-for-connectomics.ipynb"
   - "/notebooks/intro/MeshExample.ipynb"
   - "/notebooks/intro/Render3DScaleBar.ipynb"
 datasets: []
@@ -40,7 +43,9 @@ prerequisites:
 next_modules: []
 references: []
 videos: []
-downloads: []
+downloads:
+  - "/notebooks/intro/MeshExample.ipynb"
+  - "/notebooks/intro/Render3DScaleBar.ipynb"
 last_reviewed: 2026-03-09
 maintainer: "NeuroTrailblazers Team"
 merit_stage: "Dissemination"

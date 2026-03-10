@@ -1,0 +1,10 @@
+{% assign tool = include.tool %}
+<article class="card">
+  <h3 class="card-title">{{ tool.title }}</h3>
+  {% if tool.summary %}
+    <p class="card-description">{{ tool.summary }}</p>
+  {% elsif tool.description %}
+    <p class="card-description">{{ tool.description }}</p>
+  {% endif %}
+  <p><a class="btn btn-primary" href="{{ tool.url | relative_url }}">Open Tool</a></p>
+</article>

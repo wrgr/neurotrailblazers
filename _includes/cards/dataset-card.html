@@ -1,0 +1,11 @@
+{% assign dataset = include.dataset %}
+<article class="card">
+  <h3 class="card-title">{{ dataset.title }}</h3>
+  {% if dataset.modality %}<p><strong>{{ dataset.modality }}</strong></p>{% endif %}
+  {% if dataset.summary %}
+    <p class="card-description">{{ dataset.summary }}</p>
+  {% elsif dataset.description %}
+    <p class="card-description">{{ dataset.description }}</p>
+  {% endif %}
+  <p><a class="btn btn-primary" href="{{ dataset.url | relative_url }}">View Dataset</a></p>
+</article>

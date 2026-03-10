@@ -1,0 +1,11 @@
+{% assign framework = include.framework %}
+<article class="card">
+  <h3 class="card-title">{{ framework.title }}</h3>
+  {% if framework.framework_type %}<p><strong>{{ framework.framework_type }}</strong></p>{% endif %}
+  {% if framework.summary %}
+    <p class="card-description">{{ framework.summary }}</p>
+  {% elsif framework.description %}
+    <p class="card-description">{{ framework.description }}</p>
+  {% endif %}
+  <p><a class="btn btn-primary" href="{{ framework.url | relative_url }}">View Framework</a></p>
+</article>

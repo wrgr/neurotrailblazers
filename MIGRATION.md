@@ -254,3 +254,55 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Content Linking Batch: Modules 01-08 + Personas + Datasets)
+
+- **Module relationship metadata populated (01-08)**
+  - Updated `modules/module01.md` through `modules/module08.md` to replace placeholder arrays with concrete links for:
+    - `datasets`
+    - `personas`
+    - `related_tools`
+    - `related_frameworks`
+    - `next_modules`
+  - Goal: make `_includes/ui/related-content.html` render meaningful connections instead of empty sections.
+
+- **Persona recommendations populated**
+  - Updated all core persona pages:
+    - `avatars/undergradstudent.md`
+    - `avatars/gradstudent.md`
+    - `avatars/researcher.md`
+    - `avatars/mentor.md`
+  - Replaced empty placeholders for:
+    - `recommended_modules`
+    - `recommended_datasets`
+    - `recommended_tools`
+
+- **Dataset relationship metadata populated**
+  - Updated:
+    - `datasets/access.md`
+    - `datasets/workflow.md`
+    - `datasets/mouseconnects.md`
+    - `datasets/index.md`
+  - Replaced empty placeholders for:
+    - `recommended_modules`
+    - `related_tools`
+    - `related_frameworks`
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.
+
+### Changes (Content Linking Batch: Modules 09-16)
+
+- **Module relationship metadata populated (09-16)**
+  - Updated `modules/module09.md` through `modules/module16.md` to replace placeholder arrays with concrete links for:
+    - `datasets`
+    - `personas`
+    - `related_tools`
+    - `related_frameworks`
+    - `next_modules`
+  - This extends the same linking pattern used in modules `01-08` to cover the remainder of the early-to-mid technical track progression.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

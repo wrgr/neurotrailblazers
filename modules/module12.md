@@ -40,12 +40,23 @@ slides:
 notebook:
   - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
   - "/notebooks/intro/DashSynapseExplorer.ipynb"
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
+  - mentor
+related_tools:
+  - connectome-quality
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module13
+  - module14
 references: []
 videos: []
 downloads:

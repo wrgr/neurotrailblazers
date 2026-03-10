@@ -13,9 +13,18 @@ use_cases:
   - Pipeline orientation
   - Methods training
   - Connectomics workflow teaching
-recommended_modules: []
-related_tools: []
-related_frameworks: []
+recommended_modules:
+  - module01
+  - module02
+  - module04
+  - module05
+  - module08
+related_tools:
+  - ask-an-expert
+  - connectome-quality
+related_frameworks:
+  - research-incubator-model
+  - education-models
 resource_links: []
 image: /assets/images/datasets/workflow.jpg
 last_reviewed: 2026-03-09

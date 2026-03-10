@@ -24,12 +24,19 @@ learning_objectives: []
 key_questions: []
 slides: []
 notebook:
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - workflow
+personas:
+  - undergradstudent
+  - gradstudent
+related_tools:
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites: []
-next_modules: []
+next_modules:
+  - module02
 references: []
 videos: []
 downloads: []

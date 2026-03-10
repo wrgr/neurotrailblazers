@@ -16,9 +16,18 @@ challenges: ["Balancing perfectionism", "Leadership isolation", "Time management
 strengths: ["Strategic vision", "Mentoring", "Scientific rigor"]
 goals: ["Grow collaborative lab", "Secure sustainable funding", "Support trainee success"]
 summary: "Assistant professor balancing scientific rigor, lab leadership, and mentorship in large-scale connectomics."
-recommended_modules: []
-recommended_datasets: []
-recommended_tools: []
+recommended_modules:
+  - module08
+  - module16
+  - module17
+  - module21
+  - module22
+  - module25
+recommended_datasets:
+  - mouseconnects
+recommended_tools:
+  - ask-an-expert
+  - connectome-quality
 image: /assets/images/avatars/mentor.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD

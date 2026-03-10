@@ -14,9 +14,16 @@ interests: ["Brain research", "Programming", "Medical applications"]
 challenges: ["Imposter syndrome", "Financial stress", "Lack of research experience"]
 strengths: ["Curiosity", "Determination", "Fresh perspective"]
 goals: ["Get research experience", "Apply to graduate school", "Make a difference in neuroscience"]
-recommended_modules: []
-recommended_datasets: []
-recommended_tools: []
+recommended_modules:
+  - module01
+  - module02
+  - module03
+  - module04
+recommended_datasets:
+  - workflow
+  - access
+recommended_tools:
+  - ask-an-expert
 image: /assets/images/avatars/undergradstudent.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD

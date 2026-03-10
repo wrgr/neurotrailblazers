@@ -32,12 +32,22 @@ summary: "From filters to deep learning for image understanding and neuron class
 key_questions: []
 slides: []
 notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
+related_tools:
+  - connectome-quality
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module15
+  - module16
 references: []
 videos: []
 downloads: []

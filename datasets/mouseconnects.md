@@ -12,9 +12,20 @@ use_cases:
   - Connectomics pipeline learning
   - Circuit analysis case studies
   - AI segmentation and proofreading exercises
-recommended_modules: []
-related_tools: []
-related_frameworks: []
+recommended_modules:
+  - module02
+  - module04
+  - module05
+  - module06
+  - module07
+  - module08
+  - module12
+related_tools:
+  - connectome-quality
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 resource_links: []
 image: /assets/images/datasets/mouseconnects.jpg
 last_reviewed: 2026-03-09

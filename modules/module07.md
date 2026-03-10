@@ -37,13 +37,23 @@ slides:
 notebook:
   - "/assets/notebooks/module07/module07-proofreading-and-quality-control.ipynb"
   - "/notebooks/intro/MostSynapsesInAndOut.ipynb"
-datasets: []
-personas: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
+  - mentor
 related_tools:
   - "connectome-quality"
-related_frameworks: []
+  - "ask-an-expert"
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module08
+  - module09
 references: []
 videos: []
 downloads:

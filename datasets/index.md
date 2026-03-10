@@ -13,9 +13,16 @@ use_cases:
   - Dataset discovery
   - Curriculum-aligned exploration
   - Comparative connectomics learning
-recommended_modules: []
-related_tools: []
-related_frameworks: []
+recommended_modules:
+  - module01
+  - module02
+  - module04
+related_tools:
+  - ask-an-expert
+  - connectome-quality
+related_frameworks:
+  - research-incubator-model
+  - education-models
 resource_links: []
 image: /assets/images/datasets/datasets-index.jpg
 last_reviewed: 2026-03-09

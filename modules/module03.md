@@ -27,12 +27,20 @@ summary: "Intro to coding in Python, Jupyter notebooks, and tools for analysis w
 key_questions: []
 slides: []
 notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - access
+  - workflow
+personas:
+  - undergradstudent
+  - gradstudent
+related_tools:
+  - ask-an-expert
+related_frameworks:
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module04
+  - module05
 references: []
 videos: []
 downloads: []

@@ -13,9 +13,13 @@ use_cases:
   - Data onboarding
   - Notebook setup
   - Dataset access workflows
-recommended_modules: []
-related_tools: []
-related_frameworks: []
+recommended_modules:
+  - module02
+  - module03
+related_tools:
+  - ask-an-expert
+related_frameworks:
+  - education-models
 resource_links: []
 image: /assets/images/datasets/access.jpg
 last_reviewed: 2026-03-09

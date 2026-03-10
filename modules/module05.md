@@ -40,13 +40,22 @@ slides:
 notebook:
   - "/assets/notebooks/module05/module05-electron-microscopy-and-image-basics.ipynb"
   - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
-datasets: []
-personas: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
 related_tools:
   - "connectome-quality"
-related_frameworks: []
+  - "ask-an-expert"
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module06
+  - module07
 references: []
 videos: []
 downloads:

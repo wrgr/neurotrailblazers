@@ -33,12 +33,22 @@ summary: "Understanding neural structure at micro- and macro-scale to inform con
 key_questions: []
 slides: []
 notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - undergradstudent
+  - gradstudent
+  - researcher
+related_tools:
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module05
+  - module06
 references: []
 videos: []
 downloads: []

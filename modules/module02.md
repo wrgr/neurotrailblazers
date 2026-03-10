@@ -35,12 +35,23 @@ summary: "Unwritten norms in science, research roles, and building confidence wh
 key_questions: []
 slides: []
 notebook:
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - mouseconnects
+  - workflow
+  - access
+personas:
+  - undergradstudent
+  - gradstudent
+  - researcher
+related_tools:
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module03
+  - module04
 references: []
 videos: []
 downloads: []

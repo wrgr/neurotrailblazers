@@ -33,13 +33,23 @@ summary: "Using large language models and structured workflows for connectome pr
 key_questions: []
 slides: []
 notebook: []
-datasets: []
-personas: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
+  - mentor
 related_tools:
   - "connectome-quality"
-related_frameworks: []
+  - "ask-an-expert"
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites_list: []
-next_modules: []
+next_modules:
+  - module16
+  - module17
 references: []
 videos: []
 downloads: []

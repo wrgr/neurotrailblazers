@@ -16,9 +16,18 @@ challenges: ["Balancing research directions", "Career uncertainty", "Bridging di
 strengths: ["Explaining complex ideas", "Collaboration", "Curiosity"]
 goals: ["Advance segmentation methods", "Publish impactful papers", "Support younger students"]
 summary: "Graduate student connecting computational methods and neuroscience while developing research identity and mentoring others."
-recommended_modules: []
-recommended_datasets: []
-recommended_tools: []
+recommended_modules:
+  - module04
+  - module05
+  - module06
+  - module07
+  - module08
+recommended_datasets:
+  - mouseconnects
+  - workflow
+recommended_tools:
+  - connectome-quality
+  - ask-an-expert
 image: /assets/images/avatars/gradstudent.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD

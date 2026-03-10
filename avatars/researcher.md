@@ -16,9 +16,19 @@ challenges: ["Interpreting neuroscience literature", "Adapting pace from industr
 strengths: ["Deep ML expertise", "Systems thinking", "Problem solving"]
 goals: ["Apply ML to neural data", "Collaborate with academics", "Understand circuitry"]
 summary: "Industry AI scientist translating machine learning expertise into neuroscience collaboration and connectomics discovery."
-recommended_modules: []
-recommended_datasets: []
-recommended_tools: []
+recommended_modules:
+  - module05
+  - module07
+  - module08
+  - module10
+  - module13
+  - module14
+recommended_datasets:
+  - mouseconnects
+  - workflow
+recommended_tools:
+  - connectome-quality
+  - ask-an-expert
 image: /assets/images/avatars/researcher.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD

@@ -33,14 +33,25 @@ notebook:
   - "/assets/notebooks/module16/module16-scientific-visualization-for-connectomics.ipynb"
   - "/notebooks/intro/MeshExample.ipynb"
   - "/notebooks/intro/Render3DScaleBar.ipynb"
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
+datasets:
+  - mouseconnects
+  - workflow
+personas:
+  - gradstudent
+  - researcher
+  - mentor
+related_tools:
+  - connectome-quality
+  - ask-an-expert
+related_frameworks:
+  - research-incubator-model
+  - education-models
 prerequisites:
   - "Modules 1-15"
   - "Python matplotlib, seaborn, Plotly"
-next_modules: []
+next_modules:
+  - module17
+  - module18
 references: []
 videos: []
 downloads:

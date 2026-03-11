@@ -3,6 +3,10 @@ layout: page
 title: "Track: Core Concepts & Methods"
 permalink: /tracks/core-concepts-methods/
 slug: track-core-concepts-methods
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'core-concepts-methods' | first %}

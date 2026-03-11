@@ -12,6 +12,11 @@ CONTENT_GLOBS = [
   "datasets/*.md",
   "tools/*.md",
   "frameworks/*.md",
+  "tracks/*.md",
+  "concepts/*.md",
+  "technical-training/*.md",
+  "technical-training/*/*.md",
+  "start-here.md",
   "models.md",
   "education/models.md",
 ].freeze
@@ -25,6 +30,24 @@ REQUIRED_BY_TYPE = {
 }.freeze
 
 MODULE_ASSET_FIELDS = %w[slides notebook downloads].freeze
+TRACK_METADATA_PATH_PREFIXES = %w[
+  avatars/
+  datasets/
+  tools/
+  tracks/
+  concepts/
+  technical-training/
+].freeze
+
+def requires_track_metadata?(path)
+  rel = path.relative_path_from(ROOT).to_s
+  return true if rel == "start-here.md"
+  return false if rel.start_with?("modules/")
+  return false if rel.start_with?("technical-training/slides/")
+  return false if rel.start_with?("frameworks/")
+
+  TRACK_METADATA_PATH_PREFIXES.any? { |prefix| rel.start_with?(prefix) }
+end
 
 def extract_frontmatter(path)
   text = path.read
@@ -99,6 +122,15 @@ def validate_file(path)
     slug = fm["slug"]
     expected_slug = path.basename(".md").to_s
     problems << "slug '#{slug}' does not match filename '#{expected_slug}'" if slug && slug != expected_slug
+  end
+
+  if requires_track_metadata?(path)
+    problems << "missing track metadata key: track" unless fm.key?("track")
+    if !fm.key?("pathways")
+      problems << "missing track metadata key: pathways"
+    elsif !fm["pathways"].is_a?(Array)
+      problems << "pathways should be an Array"
+    end
   end
 
   unless problems.empty?

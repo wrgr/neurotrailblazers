@@ -3,6 +3,10 @@ layout: page
 title: "Track: Career & Community"
 permalink: /tracks/career-and-community/
 slug: track-career-and-community
+track: career-and-community
+pathways:
+  - mentoring
+  - professional growth
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'career-and-community' | first %}

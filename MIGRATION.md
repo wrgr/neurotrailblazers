@@ -474,6 +474,10 @@ This document tracks incremental, content-preserving refactors to improve the si
   - This supports future user-need filtering without relying on module IDs.
   - Also cleaned duplicate `recommended_modules` keys in tool frontmatter.
 
+- **Validation guardrail for track model**
+  - Extended `scripts/validate_frontmatter.rb` to warn when `track`/`pathways` metadata is missing on track-first learner-facing pages.
+  - Added track metadata to `tracks/*.md` and `/concepts/` to align with the validator.
+
 - **Checks**
   - `bundle exec jekyll build` passes.
   - `ruby scripts/validate_frontmatter.rb` passes.

@@ -3,6 +3,10 @@ layout: page
 title: "Concept Explorer"
 permalink: /concepts/
 slug: concept-explorer
+track: career-and-community
+pathways:
+  - professional growth
+  - hidden curriculum
 summary: "Find content by concept and learner need rather than module number."
 ---
 

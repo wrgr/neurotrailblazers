@@ -3,6 +3,10 @@ layout: page
 title: "Track: Research in Action"
 permalink: /tracks/research-in-action/
 slug: track-research-in-action
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'research-in-action' | first %}

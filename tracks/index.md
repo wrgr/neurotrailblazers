@@ -3,6 +3,10 @@ layout: page
 title: "Learning Tracks"
 permalink: /tracks/
 slug: learning-tracks
+track: career-and-community
+pathways:
+  - program design
+  - professional growth
 summary: "Three-track learning architecture aligned to Fadel dimensions."
 ---
 

@@ -451,6 +451,10 @@ This document tracks incremental, content-preserving refactors to improve the si
     - technical-training hub
     - modules archive notice
 
+- **Track pages linked to concepts**
+  - Added concept-preview sections on each `/tracks/*` page using concept cards filtered by track.
+  - This supports quick pivots between track-based and need-based navigation.
+
 - **Positioning update**
   - Discovery now emphasizes:
     - `tracks` (high-level structure)

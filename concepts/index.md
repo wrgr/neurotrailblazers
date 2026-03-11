@@ -96,5 +96,18 @@ summary: "Find content by concept and learner need rather than module number."
       currentNeed = needSelect.value || 'all';
       applyFilters();
     });
+
+    const params = new URLSearchParams(window.location.search);
+    const qTrack = (params.get('track') || 'all').toLowerCase();
+    const qNeed = (params.get('need') || 'all').toLowerCase();
+    const validTrack = trackButtons.some((b) => (b.getAttribute('data-track') || '').toLowerCase() === qTrack);
+    const validNeed = qNeed === 'all' || Array.from(needSelect.options).some((o) => (o.value || '').toLowerCase() === qNeed);
+
+    if (validTrack) currentTrack = qTrack;
+    if (validNeed) {
+      currentNeed = qNeed;
+      needSelect.value = qNeed;
+    }
+    applyFilters();
   })();
 </script>

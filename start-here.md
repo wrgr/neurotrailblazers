@@ -113,6 +113,9 @@ pathways:
         <p>If module numbering feels heavy, use concept-first discovery based on your immediate learning need.</p>
         <div class="cta-buttons">
             <a href="{{ '/concepts/' | relative_url }}" class="btn btn-primary">Open Concept Explorer</a>
+            <a href="{{ '/concepts/?track=core-concepts-methods&need=matching%20method%20to%20question' | relative_url }}" class="btn btn-secondary">Match Method to Question</a>
+            <a href="{{ '/concepts/?track=research-in-action&need=prioritizing%20corrections' | relative_url }}" class="btn btn-secondary">Prioritize QC Corrections</a>
+            <a href="{{ '/concepts/?track=career-and-community&need=finding%20mentorship%20support' | relative_url }}" class="btn btn-secondary">Find Mentorship Support</a>
             <a href="{{ '/tracks/' | relative_url }}" class="btn btn-secondary">Browse Tracks</a>
         </div>
     </section>

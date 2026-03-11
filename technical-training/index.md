@@ -19,6 +19,10 @@ maintainer: TBD
 
   <section class="section">
     <p>This track follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
+    <div class="cta-buttons">
+      <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
+      <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
+    </div>
   </section>
 
   <section class="section">

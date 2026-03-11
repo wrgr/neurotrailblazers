@@ -262,6 +262,67 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `bundle exec jekyll build` passes.
   - Internal link scan over generated `_site` reports no broken internal links.
 
+### Changes (Technical Track Enrichment: Journal Club + Dictionary)
+
+- **Journal club list added (separate from module pages)**
+  - Added `/technical-training/journal-club/` with:
+    - 3 required papers
+    - 3 optional papers
+    - 3 relevant videos/media resources
+  - Each entry includes plain-language contribution text and module-fit mapping.
+
+- **Connectomics dictionary added**
+  - Added `_data/connectomics_dictionary.yml` as structured glossary source.
+  - Added `/technical-training/dictionary/` page to render terms, categories, and definitions.
+
+- **Unit visual integration started**
+  - Added selected glia training images under:
+    - `assets/images/technical-training/07-glia/`
+  - Updated `/technical-training/07-glia/` with draft visual training section and attribution note.
+  - Noted missing thumbnails for two manifest-listed glia IDs (`S02`, `S07`) pending recovery.
+
+- **Additional unit visual integration (morphology sequence)**
+  - Added selected axon/dendrite training images under:
+    - `assets/images/technical-training/06-axons-and-dendrites/`
+  - Added selected neuronal-ultrastructure training images under:
+    - `assets/images/technical-training/05-neuronal-ultrastructure/`
+  - Updated:
+    - `/technical-training/06-axons-and-dendrites/`
+    - `/technical-training/05-neuronal-ultrastructure/`
+    with visual training galleries and attribution notes.
+  - Noted missing extracted thumbnails for some `RIV-AXDEN` manifest-listed IDs (`S04`, `S06`, `S10`, `S16`) and replaced with available neighboring cues.
+
+- **Additional unit visual integration (analysis + proofreading sequence)**
+  - Added selected figure assets under:
+    - `assets/images/technical-training/08-segmentation-and-proofreading/`
+    - `assets/images/technical-training/09-connectome-analysis-neuroai/`
+  - Updated:
+    - `/technical-training/08-segmentation-and-proofreading/`
+    - `/technical-training/09-connectome-analysis-neuroai/`
+    with draft visual training galleries, historical-context notes, and source attribution.
+  - Noted and handled missing extracted IDs with documented fallbacks:
+    - `RIV-AXDEN-S06-01`, `RIV-AXDEN-S09-01`
+    - `SRC-MODULE14_LESSON2-S04-01`, `SRC-MODULE14_LESSON2-S07-01`
+    - `SRC-21_02388_X_TECHTALK_-S34-01`
+    - `SRC-MODULE13_LESSON3-S10-01`
+
+- **Unit structure consistency pass**
+  - Standardized instructional structure across technical unit pages with:
+    - practical workflow steps
+    - discussion prompts
+    - related resource links (journal club + dictionary)
+    - quick activity blocks for active learning
+
+- **Dual review artifacts added**
+  - `course/reviews/technical-accuracy-review.md`
+  - `course/reviews/instructional-design-accessibility-review.md`
+  - Reviews include findings ordered by severity, applied fixes, and residual risks.
+
+- **Checks**
+  - `bundle exec jekyll build` passes.
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - Internal link scan reports no broken internal links.
+
 ### Changes (Priority B Follow-Up: Frameworks + Card Consistency)
 
 - **Frameworks landing refinement**

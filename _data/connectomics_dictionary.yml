@@ -1,0 +1,121 @@
+terms:
+  - term: Connectome
+    category: Core
+    definition: A map of neural connections within a defined nervous system, region, or volume.
+  - term: Connectomics
+    category: Core
+    definition: The study and reconstruction of neural connectivity at multiple scales.
+  - term: Synapse
+    category: Core
+    definition: A specialized junction where one neuron communicates with another cell.
+  - term: Neurite
+    category: Morphology
+    definition: A generic projection from a neuron, often before classifying as axon or dendrite.
+  - term: Dendrite
+    category: Morphology
+    definition: A neuronal process that typically receives synaptic input and integrates signals.
+  - term: Axon
+    category: Morphology
+    definition: A neuronal process that typically transmits output signals to downstream targets.
+  - term: Bouton
+    category: Morphology
+    definition: An axonal swelling commonly associated with presynaptic release sites.
+  - term: Dendritic spine
+    category: Morphology
+    definition: A small protrusion from a dendrite that often contains excitatory postsynaptic sites.
+  - term: Soma
+    category: Morphology
+    definition: The cell body of a neuron containing the nucleus and major organelles.
+  - term: Ultrastructure
+    category: Morphology
+    definition: Fine structural detail visible at electron-microscopy resolution.
+  - term: Astrocyte
+    category: Glia
+    definition: A glial cell type involved in metabolic support, signaling context, and structural organization.
+  - term: Microglia
+    category: Glia
+    definition: Immune-associated glial cells that monitor and respond to tissue state.
+  - term: Oligodendrocyte
+    category: Glia
+    definition: A glial cell that forms myelin around axons in the central nervous system.
+  - term: Myelin
+    category: Glia
+    definition: Insulating membrane wrapping around axons that supports rapid signal conduction.
+  - term: Voxel
+    category: Imaging
+    definition: A three-dimensional pixel representing volume intensity at a given resolution.
+  - term: Anisotropy
+    category: Imaging
+    definition: Unequal resolution across axes in volumetric imaging data.
+  - term: Serial section EM
+    category: Imaging
+    definition: Electron microscopy workflow using consecutive tissue sections for 3D reconstruction.
+  - term: SBF-SEM
+    category: Imaging
+    definition: Serial block-face scanning electron microscopy for repeated imaging and sectioning in one system.
+  - term: FIB-SEM
+    category: Imaging
+    definition: Focused ion beam scanning EM providing high-resolution volumetric imaging.
+  - term: Segmentation
+    category: Reconstruction
+    definition: Partitioning image data into labeled objects such as cells, neurites, or organelles.
+  - term: Proofreading
+    category: Reconstruction
+    definition: Human review and correction of automated segmentations.
+  - term: Merge error
+    category: Reconstruction
+    definition: A segmentation failure where two distinct structures are fused into one label.
+  - term: Split error
+    category: Reconstruction
+    definition: A segmentation failure where one structure is fragmented into multiple labels.
+  - term: Skeletonization
+    category: Reconstruction
+    definition: Reduction of a segmented structure to a simplified centerline graph representation.
+  - term: Registration
+    category: Reconstruction
+    definition: Alignment of images or volumes into a common coordinate frame.
+  - term: Stitching
+    category: Reconstruction
+    definition: Combining overlapping image tiles into a coherent larger image volume.
+  - term: Null model
+    category: Analysis
+    definition: A control model used to test whether observed network patterns exceed chance expectations.
+  - term: Motif
+    category: Analysis
+    definition: A small recurring connectivity pattern within a larger network graph.
+  - term: Subgraph isomorphism
+    category: Analysis
+    definition: The problem of finding occurrences of a query graph inside a larger graph.
+  - term: Graph database
+    category: Analysis
+    definition: A database optimized for storing and querying graph-structured data.
+  - term: Cypher
+    category: Analysis
+    definition: A declarative graph query language commonly used with property graph systems.
+  - term: DotMotif
+    category: Analysis
+    definition: A motif query language/framework for expressively defining connectome motifs.
+  - term: GrandIso
+    category: Analysis
+    definition: A subgraph isomorphism implementation used for efficient motif search workflows.
+  - term: Precision
+    category: Metrics
+    definition: Fraction of predicted positives that are correct.
+  - term: Recall
+    category: Metrics
+    definition: Fraction of true positives recovered by a method.
+  - term: F1 score
+    category: Metrics
+    definition: Harmonic mean of precision and recall.
+  - term: ERL (Expected Run Length)
+    category: Metrics
+    definition: A continuity-oriented metric estimating traceable path length before error.
+  - term: VI (Variation of Information)
+    category: Metrics
+    definition: Information-theoretic distance between two segmentations.
+  - term: Provenance
+    category: Infrastructure
+    definition: Record of data origin, processing history, and version lineage.
+  - term: Multiresolution pyramid
+    category: Infrastructure
+    definition: Hierarchical data representation at multiple scales for fast access and visualization.

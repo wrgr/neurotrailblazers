@@ -11,14 +11,13 @@
 - `FIG-SRC-21_02388_X_TECHTALK_-S26-01` (GrandCypher/Cypher reuse)
 - `FIG-SRC-21_02388_X_TECHTALK_-S31-01` (GrandIso algorithm)
 - `FIG-SRC-21_02388_X_TECHTALK_-S32-01` (performance benchmark)
-- `FIG-SRC-21_02388_X_TECHTALK_-S34-01` (throughput/scale claim)
+- `FIG-SRC-21_02388_X_TECHTALK_-S33-01` (throughput/scale claim; fallback for missing S34 extraction)
 - `FIG-SRC-21_02388_X_TECHTALK_-S39-01` (atlas scans hypothesis)
 - `FIG-SRC-21_02388_X_TECHTALK_-S42-01` (DotMotif syntax example)
 - `FIG-SRC-21_02388_X_TECHTALK_-S44-01` (developmental motifs)
 
 ### assets_outreach (`SRC-MODULE13_LESSON3`)
 - `FIG-SRC-MODULE13_LESSON3-S03-01` (project overview context)
-- `FIG-SRC-MODULE13_LESSON3-S10-01` (assertions/applications context)
 - `FIG-SRC-MODULE13_LESSON3-S11-01` (data growth / scale context)
 - `FIG-SRC-MODULE13_LESSON3-S14-01` (processing comparison context)
 - `FIG-SRC-MODULE13_LESSON3-S20-01` (estimation/connectivity context)
@@ -30,3 +29,6 @@
 - Prefer neuroAI figures for core method narrative.
 - Use outreach figures as sidebars/background context only.
 - Mark all 2021-era claims as historical where appropriate.
+- Missing extracted thumbnail IDs encountered in this source group:
+  - `FIG-SRC-21_02388_X_TECHTALK_-S34-01`
+  - `FIG-SRC-MODULE13_LESSON3-S10-01`

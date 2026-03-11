@@ -6,6 +6,8 @@ items:
     url: "/"
   - title: "Start"
     url: "/start-here/"
+  - title: "Technical Training"
+    url: "/technical-training/"
   - title: "Workflow"
     url: "/datasets/workflow"
   - title: "Modules"

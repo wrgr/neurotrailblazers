@@ -65,6 +65,8 @@ navigation:
     url: "/"
   - title: "Start"
     url: "/start-here/"
+  - title: "Technical Training"
+    url: "/technical-training/"
   - title: "Models"
     url: "/models/"
   - title: "Workflow"

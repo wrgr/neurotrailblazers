@@ -227,6 +227,41 @@ This document tracks incremental, content-preserving refactors to improve the si
     - point to local files that do not exist
   - This improves enforcement of the canonical asset-link convention while remaining read-only (warnings only).
 
+### Changes (Technical Track Buildout: Draft Pages)
+
+- **Technical training site area added**
+  - Added a dedicated track hub at:
+    - `/technical-training/`
+  - Added draft unit pages at:
+    - `/technical-training/01-why-map-the-brain/`
+    - `/technical-training/02-brain-data-across-scales/`
+    - `/technical-training/03-em-prep-and-imaging/`
+    - `/technical-training/04-volume-reconstruction-infrastructure/`
+    - `/technical-training/05-neuronal-ultrastructure/`
+    - `/technical-training/06-axons-and-dendrites/`
+    - `/technical-training/07-glia/`
+    - `/technical-training/08-segmentation-and-proofreading/`
+    - `/technical-training/09-connectome-analysis-neuroai/`
+    - `/technical-training/atlas-connectomics-reference/`
+
+- **Source-priority and unit-production workspace**
+  - Added `course/` workspace with:
+    - `decision-rules.md` (source precedence: `frompat` > `neuroAI` > `assets_outreach`)
+    - `workboard.md` (unit production status)
+    - per-unit source docs and figure shortlist files
+  - This workspace drives both web-page drafts and future presentation synthesis.
+
+- **Discoverability and prominence updates**
+  - Added top navigation link to `/technical-training/`.
+  - Updated homepage hero/CTA and resource cards to emphasize:
+    - `Technical Training: Nanoscale Connectomics`
+    - direct entry to `/technical-training/`
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.
+  - Internal link scan over generated `_site` reports no broken internal links.
+
 ### Changes (Priority B Follow-Up: Frameworks + Card Consistency)
 
 - **Frameworks landing refinement**

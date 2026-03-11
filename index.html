@@ -8,7 +8,7 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
     <section class="hero hero-refresh">
         <div class="home-hero-grid">
             <div class="home-hero-copy">
-                <p class="hero-eyebrow">NIH CONNECTS Learning Initiative</p>
+                <p class="hero-eyebrow">Technical Training: Nanoscale Connectomics</p>
                 <h1 class="hero-title-impact">
                     <span class="hero-title-main">Build the future of connectomics, one learning milestone at a time.</span>
                 </h1>
@@ -17,19 +17,19 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     real datasets, and a practical mentorship framework.
                 </p>
                 <div class="cta-buttons">
-                    <a href="{{ '/start-here/' | relative_url }}" class="btn btn-primary btn-large">Start Your Journey</a>
-                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary btn-large">Browse Modules</a>
+                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary btn-large">Enter Technical Track</a>
+                    <a href="{{ '/start-here/' | relative_url }}" class="btn btn-secondary btn-large">Start Here</a>
                     <a href="{{ '/tools/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tools</a>
                 </div>
                 <div class="hero-stats" role="list" aria-label="NeuroTrailblazers highlights">
-                    <div class="stat-pill" role="listitem"><strong>25</strong> modules</div>
+                    <div class="stat-pill" role="listitem"><strong>10</strong> technical units</div>
                     <div class="stat-pill" role="listitem"><strong>4</strong> learner avatars</div>
                     <div class="stat-pill" role="listitem"><strong>5+</strong> connectomics datasets</div>
                 </div>
             </div>
 
             <aside class="home-hero-panel">
-                <p class="home-panel-label">Technical Connectomics Track</p>
+                <p class="home-panel-label">Canonical Course</p>
                 <h2>Current Progression Map</h2>
                 <ul class="home-track-list">
                     {% for item in site.data.technical_track.modules limit:4 %}
@@ -40,7 +40,7 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     {% endfor %}
                 </ul>
                 <div class="home-panel-actions">
-                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">View Curriculum</a>
+                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary">View Technical Track</a>
                     <a href="{{ '/frameworks/' | relative_url }}" class="btn btn-secondary">View Frameworks</a>
                 </div>
             </aside>
@@ -98,6 +98,11 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                 <p class="section-subtitle">Everything you need to learn, practice, and apply connectomics workflows.</p>
             </div>
             <div class="cards-grid resources-grid">
+                <article class="card module-card">
+                    <h3 class="card-title card-title-with-icon"><span class="icon-inline">🧭</span> Technical Training</h3>
+                    <p class="card-description">Follow the canonical nanoscale connectomics track from imaging foundations to NeuroAI analysis.</p>
+                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary mt-1">Open Technical Track</a>
+                </article>
                 <article class="card module-card">
                     <h3 class="card-title card-title-with-icon"><span class="icon-inline">📚</span> Learning Modules</h3>
                     <p class="card-description">A scaffolded curriculum spanning core concepts, tools, methods, and dissemination skills.</p>

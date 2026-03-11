@@ -5,31 +5,36 @@ permalink: /technical-training/slides/atlas-connectomics-reference/
 slug: slides-atlas-connectomics-reference
 ---
 
-## Deck intent
-This is a draft lecture deck outline for **Atlas Connectomics Reference** in the Technical Training track.
+## Session profile
+- Audience: course staff, advanced learners, and journal-club facilitators.
+- Duration: 55 minutes workshop + 20 minutes curation exercise.
+- Output: three fully curated atlas entries with complete metadata.
 
-## Slide sequence (draft)
-1. Title + unit positioning
-2. Why this topic matters in connectomics
-3. Learning goals and success criteria
-4. Core concept A: Reference curation model
-5. Core concept B: Workflow-stage indexing
-6. Core concept C: Update and governance
-7. Worked example / visual walkthrough
-8. Common pitfalls and failure modes
-9. Practical workflow checklist
-10. Discussion prompt and journal-club tie-in
-11. Quick activity / formative check
-12. Summary + next unit bridge
+## Slide-by-slide lecture plan
+1. Slide 1 (2 min): Title and role of the atlas
+2. Slide 2 (4 min): Why static reading lists fail at this scale
+3. Slide 3 (5 min): Atlas metadata schema
+4. Slide 4 (5 min): Workflow-stage indexing model
+5. Slide 5 (5 min): Maturity and evidence grading
+6. Slide 6 (5 min): Reproducibility and artifact availability criteria
+7. Slide 7 (5 min): Link hygiene and deprecation policy
+8. Slide 8 (6 min): Worked curation example (paper + dataset + tool)
+9. Slide 9 (5 min): Common curation failure modes
+10. Slide 10 (5 min): Governance roles and review cadence
+11. Slide 11 (6 min): Hands-on curation activity setup
+12. Slide 12 (7 min): Debrief and next update cycle
 
-## Suggested figure pool
-Use the unit shortlist under:
-- `course/units/figures/atlas-connectomics-reference-selected-v1.md`
+## Figure integration points
+- Primary shortlist: `course/units/figures/atlas-connectomics-reference-selected-v1.md`.
+- Use workflow-stage schematic and metadata checklist visual.
 
-## Speaker notes prompts
-- Explicitly mark historical context vs current best practice where relevant.
-- Define uncertainty boundaries (what this unit can and cannot infer).
-- Link to dictionary terms for new vocabulary.
+## Speaker notes (expert-level)
+- Keep entries operationally useful: each should answer "when do I use this?" quickly.
+- Flag historical but influential resources without presenting them as current defaults.
+
+## Assessment and artifacts
+- Deliverable: curated entry set with required schema fields.
+- Rubric dimensions: metadata completeness, workflow relevance, and limitation clarity.
 
 ## Connections
 - Unit page: [Atlas Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})

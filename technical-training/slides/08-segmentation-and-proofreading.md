@@ -5,31 +5,42 @@ permalink: /technical-training/slides/08-segmentation-and-proofreading/
 slug: slides-08-segmentation-and-proofreading
 ---
 
-## Deck intent
-This is a draft lecture deck outline for **Segmentation and Proofreading** in the Technical Training track.
+## Session profile
+- Audience: teams operating proofreading or segmentation-QC workflows.
+- Duration: 80 minutes lecture + 15 minutes correction-log exercise.
+- Output: prioritized error triage plan and QC dashboard spec.
 
-## Slide sequence (draft)
-1. Title + unit positioning
-2. Why this topic matters in connectomics
-3. Learning goals and success criteria
-4. Core concept A: Error taxonomy
-5. Core concept B: Correction workflow
-6. Core concept C: QC metrics
-7. Worked example / visual walkthrough
-8. Common pitfalls and failure modes
-9. Practical workflow checklist
-10. Discussion prompt and journal-club tie-in
-11. Quick activity / formative check
-12. Summary + next unit bridge
+## Slide-by-slide lecture plan
+1. Slide 1 (2 min): Title and QC framing
+2. Slide 2 (5 min): Why proofreading determines scientific validity
+3. Slide 3 (6 min): Error taxonomy
+   - merge, split, boundary, identity errors.
+4. Slide 4 (6 min): Human-machine division of labor
+5. Slide 5 (6 min): Correction protocol (local to global consistency)
+6. Slide 6 (6 min): Metrics deep dive I
+   - VI, edge precision/recall.
+7. Slide 7 (6 min): Metrics deep dive II
+   - ERL and synapse-centric F1.
+8. Slide 8 (7 min): Prioritization by downstream impact
+9. Slide 9 (7 min): Worked correction case I
+10. Slide 10 (7 min): Worked correction case II
+11. Slide 11 (5 min): Release gating and audit logs
+12. Slide 12 (5 min): Team operations and reviewer calibration
+13. Slide 13 (5 min): Failure modes and anti-patterns
+14. Slide 14 (7 min): Activity + debrief
+    - write a correction rationale and metric update.
 
-## Suggested figure pool
-Use the unit shortlist under:
-- `course/units/figures/08-segmentation-and-proofreading-selected-v1.md`
+## Figure integration points
+- Primary shortlist: `course/units/figures/08-segmentation-and-proofreading-selected-v1.md`.
+- Include at least one before/after correction sequence and one metric dashboard panel.
 
-## Speaker notes prompts
-- Explicitly mark historical context vs current best practice where relevant.
-- Define uncertainty boundaries (what this unit can and cannot infer).
-- Link to dictionary terms for new vocabulary.
+## Speaker notes (expert-level)
+- Emphasize high-impact-first correction strategy.
+- Pair aggregate metrics with targeted biological sanity checks.
+
+## Assessment and artifacts
+- Deliverable: correction log with before/after rationale and metric deltas.
+- Rubric dimensions: error classification, correction quality, and reproducibility.
 
 ## Connections
 - Unit page: [Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})

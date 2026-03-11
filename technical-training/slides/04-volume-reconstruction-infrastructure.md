@@ -5,31 +5,40 @@ permalink: /technical-training/slides/04-volume-reconstruction-infrastructure/
 slug: slides-04-volume-reconstruction-infrastructure
 ---
 
-## Deck intent
-This is a draft lecture deck outline for **Volume Reconstruction Infrastructure** in the Technical Training track.
+## Session profile
+- Audience: technical leads and trainees operating reconstruction pipelines.
+- Duration: 80 minutes lecture + 10 minutes architecture critique.
+- Output: pipeline architecture diagram with release and rollback policy.
 
-## Slide sequence (draft)
-1. Title + unit positioning
-2. Why this topic matters in connectomics
-3. Learning goals and success criteria
-4. Core concept A: Architecture layers
-5. Core concept B: Pipeline orchestration
-6. Core concept C: Provenance and reproducibility
-7. Worked example / visual walkthrough
-8. Common pitfalls and failure modes
-9. Practical workflow checklist
-10. Discussion prompt and journal-club tie-in
-11. Quick activity / formative check
-12. Summary + next unit bridge
+## Slide-by-slide lecture plan
+1. Slide 1 (2 min): Title and architecture mindset
+2. Slide 2 (5 min): Why connectomics is a systems problem
+3. Slide 3 (6 min): Reference architecture overview
+   - Ingest, transform, inference, post-process, serving.
+4. Slide 4 (6 min): Data contracts between stages
+5. Slide 5 (6 min): Orchestration and idempotency
+6. Slide 6 (6 min): Provenance schema design
+7. Slide 7 (6 min): Storage and chunking strategies
+8. Slide 8 (6 min): API/query layer for proofreading and analysis
+9. Slide 9 (6 min): Release engineering for model updates
+10. Slide 10 (6 min): SLOs and monitoring dashboards
+11. Slide 11 (5 min): Failure modes
+    - Non-determinism, provenance drift, hotspot bottlenecks.
+12. Slide 12 (5 min): Cost-performance tradeoff framework
+13. Slide 13 (5 min): Case study: bad release and rollback plan
+14. Slide 14 (6 min): Bridge to biological interpretation units (05-07).
 
-## Suggested figure pool
-Use the unit shortlist under:
-- `course/units/figures/04-volume-reconstruction-infrastructure-selected-v1.md`
+## Figure integration points
+- Primary shortlist: `course/units/figures/04-volume-reconstruction-infrastructure-selected-v1.md`.
+- Include one pipeline diagram and one QC dashboard mockup.
 
-## Speaker notes prompts
-- Explicitly mark historical context vs current best practice where relevant.
-- Define uncertainty boundaries (what this unit can and cannot infer).
-- Link to dictionary terms for new vocabulary.
+## Speaker notes (expert-level)
+- Treat reproducibility as a first-class feature, not documentation afterthought.
+- Show how region-scoped reprocessing prevents full-pipeline reruns.
+
+## Assessment and artifacts
+- Deliverable: staged architecture plan with lineage fields.
+- Rubric dimensions: reliability, traceability, scalability, and recovery readiness.
 
 ## Connections
 - Unit page: [Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})

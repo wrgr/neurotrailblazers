@@ -5,31 +5,43 @@ permalink: /technical-training/slides/09-connectome-analysis-neuroai/
 slug: slides-09-connectome-analysis-neuroai
 ---
 
-## Deck intent
-This is a draft lecture deck outline for **Connectome Analysis and NeuroAI** in the Technical Training track.
+## Session profile
+- Audience: advanced learners bridging connectomics with computational modeling.
+- Duration: 85 minutes lecture + 15 minutes motif-design exercise.
+- Output: executable motif-analysis plan with null-model justification.
 
-## Slide sequence (draft)
-1. Title + unit positioning
-2. Why this topic matters in connectomics
-3. Learning goals and success criteria
-4. Core concept A: Motif analysis workflow
-5. Core concept B: Null models and controls
-6. Core concept C: NeuroAI transfer constraints
-7. Worked example / visual walkthrough
-8. Common pitfalls and failure modes
-9. Practical workflow checklist
-10. Discussion prompt and journal-club tie-in
-11. Quick activity / formative check
-12. Summary + next unit bridge
+## Slide-by-slide lecture plan
+1. Slide 1 (2 min): Title and learning objective
+2. Slide 2 (5 min): From reconstructed circuit to testable graph hypotheses
+3. Slide 3 (6 min): Motif analysis workflow overview
+4. Slide 4 (6 min): Query language and representation choices
+5. Slide 5 (6 min): Subgraph isomorphism complexity and tooling
+6. Slide 6 (6 min): Null models I
+   - degree preserving and random rewires.
+7. Slide 7 (6 min): Null models II
+   - spatial and cell-type constrained controls.
+8. Slide 8 (7 min): Multiple-testing and statistical interpretation
+9. Slide 9 (7 min): Worked query example (DotMotif-style)
+10. Slide 10 (7 min): Reproducibility requirements
+    - versioned data, query code, seeds.
+11. Slide 11 (5 min): Cross-dataset comparability caveats
+12. Slide 12 (5 min): NeuroAI transfer: where it helps, where it overreaches
+13. Slide 13 (6 min): Failure modes
+    - post-hoc hypotheses, null mismatch, overgeneralization.
+14. Slide 14 (6 min): Activity + debrief
+    - define motif, null, and success criterion.
 
-## Suggested figure pool
-Use the unit shortlist under:
-- `course/units/figures/09-connectome-analysis-neuroai-selected-v1.md`
+## Figure integration points
+- Primary shortlist: `course/units/figures/09-connectome-analysis-neuroai-selected-v1.md`.
+- Use one algorithmic complexity visual, one motif query visual, one benchmark caveat panel.
 
-## Speaker notes prompts
-- Explicitly mark historical context vs current best practice where relevant.
-- Define uncertainty boundaries (what this unit can and cannot infer).
-- Link to dictionary terms for new vocabulary.
+## Speaker notes (expert-level)
+- Keep exploratory and confirmatory analyses explicitly separated.
+- Treat all benchmark performance from older decks as historical unless revalidated.
+
+## Assessment and artifacts
+- Deliverable: motif-analysis protocol card.
+- Rubric dimensions: hypothesis clarity, statistical rigor, and reproducibility.
 
 ## Connections
 - Unit page: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

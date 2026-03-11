@@ -18,6 +18,7 @@ Usage:
 1. Install Marp CLI if needed.
 2. Render with: `marp <file>.marp.md --html --allow-local-files`.
 3. Convert to PPTX if needed via your preferred export workflow.
+4. Or batch-render all decks with: `./scripts/render_marp.sh`.
 
 Notes:
 - Figure paths currently use repo-local assets.

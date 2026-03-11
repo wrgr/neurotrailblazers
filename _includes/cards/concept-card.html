@@ -1,0 +1,14 @@
+<article class="card">
+  <h3 class="card-title"><a href="{{ include.primary_url | relative_url }}">{{ include.item.title }}</a></h3>
+  <p><small><strong>Track:</strong> {{ include.item.track }}</small></p>
+  <p><small><strong>User needs:</strong> {{ include.item.user_needs | join: ', ' }}</small></p>
+  <p class="card-description">{{ include.item.summary }}</p>
+  {% if include.item.resources and include.item.resources.size > 1 %}
+  <p>
+    <strong>Related resources:</strong>
+    {% for r in include.item.resources offset:1 %}
+      <a href="{{ r.url | relative_url }}">{{ r.title }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</article>

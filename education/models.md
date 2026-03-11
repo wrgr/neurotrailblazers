@@ -3,6 +3,10 @@ layout: framework
 title: Models
 slug: education-models
 summary: "Education-facing overview of MERIT and COMPASS training models."
+track: career-and-community
+pathways:
+  - mentoring
+  - professional growth
 framework_type: "Education and learner development"
 related_modules:
   - module01
@@ -33,3 +37,5 @@ This section introduces two core training frameworks used throughout NeuroTrailb
 Both frameworks complement each other: MERIT structures your research journey while COMPASS offers workshops that develop resilience and professional habits.
 
 Visuals and downloadable guides coming soon.
+
+{% include ui/learning-tracks.html title="Educational Models Across Tracks" intro="These models help instructors support learners in technical methods, research execution, and professional growth." %}

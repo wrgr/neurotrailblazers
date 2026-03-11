@@ -14,7 +14,7 @@ permalink: /modules/
   </div>
 
 <section class="section">
-  <p><strong>Recommended:</strong> start with the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> for a simpler path through the curriculum. This page remains available as a full legacy index.</p>
+  <p><strong>Recommended:</strong> start with the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or the <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for simpler discovery. This page remains available as a full legacy index.</p>
 </section>
 
 {% include module-index.html %}

@@ -1,0 +1,25 @@
+{% assign tracks = site.data.track_catalog.tracks %}
+{% if tracks and tracks.size > 0 %}
+<section class="section">
+  {% if include.title %}
+  <h2>{{ include.title }}</h2>
+  {% else %}
+  <h2>Learning Tracks</h2>
+  {% endif %}
+
+  {% if include.intro %}
+  <p>{{ include.intro }}</p>
+  {% endif %}
+
+  <div class="cards-grid">
+    {% for track in tracks %}
+    <article class="card">
+      <h3 class="card-title"><a href="{{ '/tracks/' | append: track.slug | append: '/' | relative_url }}">{{ track.title }}</a></h3>
+      <p class="card-description">{{ track.description }}</p>
+      <p><strong>Fadel:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
+      <p><strong>Pathways:</strong> {{ track.pathways | join: ', ' }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

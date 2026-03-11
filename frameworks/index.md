@@ -3,6 +3,10 @@ layout: framework
 title: "Frameworks"
 permalink: /frameworks/
 slug: index
+track: career-and-community
+pathways:
+  - mentoring
+  - program design
 summary: "Program and learning frameworks that anchor the NeuroTrailblazers technical connectomics track."
 framework_type: "Framework hub"
 related_modules: []
@@ -26,6 +30,8 @@ maintainer: TBD
     </p>
   </section>
 
+  {% include ui/learning-tracks.html title="Framework Use by Track" intro="Frameworks provide coherence across all tracks so learners and mentors can connect technical depth, research practice, and professional development." %}
+
   <section class="section">
     <div class="cards-grid">
       {% assign sorted_pages = site.pages | sort: "title" %}
@@ -37,7 +43,4 @@ maintainer: TBD
     </div>
   </section>
 
-  {% include ui/track-progression.html show_frameworks=true %}
-
-  {% include ui/technical-track-roadmap.html %}
 </div>

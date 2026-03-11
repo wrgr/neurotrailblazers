@@ -4,6 +4,10 @@ title: "Connectomics Datasets - Learning with Real Scientific Data"
 description: "Explore curated connectomics datasets from landmark studies including H01, MICrONS, FlyWire, Hemibrain, and more. Learn with the same data used by leading researchers."
 permalink: /datasets/
 slug: index
+track: research-in-action
+pathways:
+  - research workflow
+  - data fluency
 summary: "Landing page for curated connectomics datasets and learning pathways."
 modality: "Electron microscopy and multi-modal neuroscience data"
 species: "Mixed"
@@ -42,6 +46,8 @@ maintainer: TBD
       <p>Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.</p>
     </div>
   </section>
+
+  {% include ui/learning-tracks.html title="How Datasets Fit the Tracks" intro="Datasets power all three tracks: concept-building, hands-on research practice, and professional growth through authentic scientific context." %}
 
   <section class="section">
     <h2>Dataset Pages (Generated Cards)</h2>

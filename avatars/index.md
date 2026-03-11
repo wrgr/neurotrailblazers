@@ -3,6 +3,11 @@ layout: page
 title: "Learner Personas"
 description: "Representative learner personas for tailored support across the NeuroTrailblazers ecosystem."
 permalink: /avatars/
+slug: avatars-index
+track: career-and-community
+pathways:
+  - mentoring
+  - professional growth
 ---
 
 <div class="main-content">
@@ -19,6 +24,8 @@ permalink: /avatars/
       in realistic learner goals, strengths, and support needs.
     </p>
   </section>
+
+  {% include ui/learning-tracks.html title="Persona Support Across Tracks" intro="Personas help map individual needs to technical learning, applied research practice, and professional development support." %}
 
   <section class="section">
     <div class="cards-grid">

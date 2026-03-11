@@ -109,6 +109,15 @@ pathways:
     </section>
 
     <section class="section">
+        <h2>🧩 Explore by Concept</h2>
+        <p>If module numbering feels heavy, use concept-first discovery based on your immediate learning need.</p>
+        <div class="cta-buttons">
+            <a href="{{ '/concepts/' | relative_url }}" class="btn btn-primary">Open Concept Explorer</a>
+            <a href="{{ '/tracks/' | relative_url }}" class="btn btn-secondary">Browse Tracks</a>
+        </div>
+    </section>
+
+    <section class="section">
         <h2>🎯 Our Educational Framework</h2>
         <p>NeuroTrailblazers is built on evidence-based educational models:</p>
         

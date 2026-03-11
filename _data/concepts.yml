@@ -1,0 +1,158 @@
+concepts:
+  - slug: hypothesis-framing
+    title: Hypothesis Framing
+    track: core-concepts-methods
+    user_needs:
+      - starting a research question
+      - avoiding overclaiming
+    summary: Translate broad brain questions into testable structural hypotheses with clear evidence boundaries.
+    resources:
+      - title: Why Map the Brain
+        url: /technical-training/01-why-map-the-brain/
+      - title: Journal Club
+        url: /technical-training/journal-club/
+
+  - slug: scale-selection
+    title: Scale Selection
+    track: core-concepts-methods
+    user_needs:
+      - matching method to question
+      - planning compute and storage
+    summary: Choose imaging and analysis scale that can resolve required features at manageable cost.
+    resources:
+      - title: Brain Data Across Scales
+        url: /technical-training/02-brain-data-across-scales/
+      - title: Workflow Overview
+        url: /datasets/workflow
+
+  - slug: em-artifacts-and-qa
+    title: EM Artifacts and QA
+    track: core-concepts-methods
+    user_needs:
+      - improving data quality
+      - debugging acquisition issues
+    summary: Identify acquisition artifacts and define practical QA gates before reconstruction.
+    resources:
+      - title: EM Prep and Imaging
+        url: /technical-training/03-em-prep-and-imaging/
+      - title: Connectome Quality
+        url: /tools/connectome-quality/
+
+  - slug: reconstruction-architecture
+    title: Reconstruction Architecture
+    track: core-concepts-methods
+    user_needs:
+      - building robust pipelines
+      - reproducible processing
+    summary: Design scalable ingest-to-serving systems with lineage, release, and rollback discipline.
+    resources:
+      - title: Volume Reconstruction Infrastructure
+        url: /technical-training/04-volume-reconstruction-infrastructure/
+      - title: Frameworks
+        url: /frameworks/
+
+  - slug: ultrastructure-annotation
+    title: Ultrastructure Annotation
+    track: core-concepts-methods
+    user_needs:
+      - reading EM confidently
+      - improving annotation consistency
+    summary: Use compartment, organelle, and synaptic cues to make reproducible interpretation decisions.
+    resources:
+      - title: Neuronal Ultrastructure
+        url: /technical-training/05-neuronal-ultrastructure/
+      - title: Dictionary
+        url: /technical-training/dictionary/
+
+  - slug: process-classification
+    title: Axon vs Dendrite Classification
+    track: core-concepts-methods
+    user_needs:
+      - reducing identity confusion
+      - handling ambiguity
+    summary: Apply multi-cue decision rules and confidence tags for process-type calls.
+    resources:
+      - title: Axons and Dendrites
+        url: /technical-training/06-axons-and-dendrites/
+      - title: Segmentation and Proofreading
+        url: /technical-training/08-segmentation-and-proofreading/
+
+  - slug: glia-identification
+    title: Glia Identification
+    track: core-concepts-methods
+    user_needs:
+      - reducing glia-neuron boundary errors
+      - interpreting myelin context
+    summary: Distinguish major glia classes and integrate glia decisions into high-value QC workflows.
+    resources:
+      - title: Glia
+        url: /technical-training/07-glia/
+      - title: Connectome Quality
+        url: /tools/connectome-quality/
+
+  - slug: proofreading-qc
+    title: Proofreading and QC
+    track: research-in-action
+    user_needs:
+      - prioritizing corrections
+      - reporting quality rigorously
+    summary: Classify error modes, apply correction workflows, and tie decisions to quantitative quality metrics.
+    resources:
+      - title: Segmentation and Proofreading
+        url: /technical-training/08-segmentation-and-proofreading/
+      - title: Connectome Quality
+        url: /tools/connectome-quality/
+
+  - slug: motif-analysis
+    title: Motif Analysis and NeuroAI
+    track: research-in-action
+    user_needs:
+      - designing graph analyses
+      - choosing null models
+    summary: Build query-driven motif workflows with statistical controls and reproducible execution.
+    resources:
+      - title: Connectome Analysis and NeuroAI
+        url: /technical-training/09-connectome-analysis-neuroai/
+      - title: Journal Club
+        url: /technical-training/journal-club/
+
+  - slug: reproducibility-and-atlas
+    title: Reproducibility and Reference Curation
+    track: research-in-action
+    user_needs:
+      - finding reliable resources
+      - maintaining citation hygiene
+    summary: Curate methods, datasets, and tools with metadata completeness and explicit limitations.
+    resources:
+      - title: Atlas Connectomics Reference
+        url: /technical-training/atlas-connectomics-reference/
+      - title: Frameworks
+        url: /frameworks/
+
+  - slug: hidden-curriculum-navigation
+    title: Hidden Curriculum Navigation
+    track: career-and-community
+    user_needs:
+      - understanding research norms
+      - building confidence and belonging
+    summary: Make implicit research expectations explicit for diverse learners and early-career researchers.
+    resources:
+      - title: Start Here
+        url: /start-here/
+      - title: Learner Personas
+        url: /avatars/
+
+  - slug: mentoring-and-growth
+    title: Mentoring and Professional Growth
+    track: career-and-community
+    user_needs:
+      - finding mentorship support
+      - planning career trajectories
+    summary: Use learner personas and frameworks to align mentorship strategies with individual goals.
+    resources:
+      - title: Learner Personas
+        url: /avatars/
+      - title: Research Incubator Model
+        url: /models/
+      - title: Education Models
+        url: /education/models/

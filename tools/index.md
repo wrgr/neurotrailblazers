@@ -4,6 +4,10 @@ title: "Technical Connectomics Tools"
 description: "Applied tools that support learning and execution in the technical connectomics track."
 permalink: /tools/
 slug: index
+track: research-in-action
+pathways:
+  - research workflow
+  - mentoring
 summary: "Landing page for tools used in the technical connectomics track."
 use_cases:
   - Guided exploration and Q&A
@@ -30,6 +34,8 @@ maintainer: TBD
     </p>
   </section>
 
+  {% include ui/learning-tracks.html title="Tools Across Learning Tracks" intro="Tools support technical method-building, applied research execution, and mentorship/professional navigation." %}
+
   <section class="section">
     <div class="cards-grid">
       {% assign sorted_pages = site.pages | sort: "title" %}
@@ -41,5 +47,4 @@ maintainer: TBD
     </div>
   </section>
 
-  {% include ui/track-progression.html show_tools=true %}
 </div>

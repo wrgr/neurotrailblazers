@@ -424,6 +424,38 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Cleanup**
   - Removed `.DS_Store` artifacts and added ignore patterns to `.gitignore`.
 
+### Changes (Concept-First Discovery Layer)
+
+- **Concept explorer added**
+  - Added `_data/concepts.yml` with concept records mapped to:
+    - track
+    - user-needs tags
+    - resource links
+  - Added `/concepts/` as a concept-first discovery page to reduce dependence on module numbering.
+
+- **Reusable concept and track includes**
+  - Added `_includes/cards/concept-card.html`.
+  - Added `_includes/ui/learning-tracks.html` to render track cards consistently across landing pages.
+
+- **Entry-point wiring for concept-first navigation**
+  - Added top-nav entry for `/concepts/`.
+  - Added concept-track CTAs/sections on:
+    - homepage
+    - start-here
+    - datasets index
+    - tools index
+    - frameworks index
+    - avatars index
+    - models pages
+    - technical-training hub
+    - modules archive notice
+
+- **Positioning update**
+  - Discovery now emphasizes:
+    - `tracks` (high-level structure)
+    - `concepts` (needs-based entry)
+  - Legacy modules remain available as delivery/archive objects rather than primary learner navigation.
+
 - **Checks**
   - `bundle exec jekyll build` passes.
   - `ruby scripts/validate_frontmatter.rb` passes.

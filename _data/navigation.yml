@@ -19,6 +19,8 @@ items:
         url: "/tracks/"
   - title: "Technical Course"
     url: "/technical-training/"
+  - title: "Concepts"
+    url: "/concepts/"
   - title: "Workflow"
     url: "/datasets/workflow"
   - title: "Legacy Modules"

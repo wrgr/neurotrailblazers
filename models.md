@@ -4,6 +4,10 @@ layout: framework
 permalink: /models/
 slug: research-incubator-model
 summary: "Overview of the MERIT, COMPASS, and CCR frameworks guiding NeuroTrailblazers training."
+track: career-and-community
+pathways:
+  - mentoring
+  - program design
 framework_type: "Program and curriculum design"
 related_modules:
   - module01
@@ -41,6 +45,8 @@ maintainer: TBD
   </div>
 </div>
 </section>
+
+{% include ui/learning-tracks.html title="Framework Context by Track" intro="Use these frameworks to align technical depth, applied research practice, and career/community development." %}
 <hr>
 <section class="section">
 <div class="cards-grid">

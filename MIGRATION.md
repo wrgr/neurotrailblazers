@@ -432,6 +432,7 @@ This document tracks incremental, content-preserving refactors to improve the si
     - user-needs tags
     - resource links
   - Added `/concepts/` as a concept-first discovery page to reduce dependence on module numbering.
+  - Added interactive concept filtering by track and user-need tags on `/concepts/`.
 
 - **Reusable concept and track includes**
   - Added `_includes/cards/concept-card.html`.

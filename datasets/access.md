@@ -4,6 +4,10 @@ title: "Accessing Public EM Datasets"
 description: "Resources and notebooks for downloading and exploring connectomics data."
 permalink: /datasets/access/
 slug: access
+track: research-in-action
+pathways:
+  - research workflow
+  - data fluency
 summary: "Practical guide for finding, downloading, and working with public EM datasets."
 modality: "Electron microscopy"
 species: "Mixed"

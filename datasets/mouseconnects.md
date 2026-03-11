@@ -3,6 +3,10 @@ layout: dataset
 title: "MouseConnects Dataset – Complete Hippocampal Connectome"
 permalink: /datasets/mouseconnects/
 slug: mouseconnects
+track: research-in-action
+pathways:
+  - research workflow
+  - data fluency
 summary: "Overview of the MouseConnects HI-MC dataset, technology stack, collaborators, and scientific goals."
 modality: "Serial electron microscopy with multi-modal integration"
 species: "Mouse (C57BL/6)"

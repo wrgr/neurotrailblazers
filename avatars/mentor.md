@@ -4,6 +4,10 @@ title: "Dr. Linh Nguyen - The Vision Builder"
 role: Assistant Professor
 permalink: /avatars/mentor/
 slug: mentor
+track: career-and-community
+pathways:
+  - mentoring
+  - program design
 experience: Advanced
 epistemic_orientation: Integrative, systems-based
 motivation: Advance connectomics and build healthier research teams

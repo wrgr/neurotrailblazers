@@ -4,6 +4,10 @@ title: "Julian - First-Generation Undergraduate"
 role: Undergraduate Student
 permalink: /avatars/undergradstudent/
 slug: undergradstudent
+track: career-and-community
+pathways:
+  - professional growth
+  - hidden curriculum
 description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
 summary: "First-generation undergraduate exploring computational neuroscience while building research confidence and technical skills."
 student_name: "Julian Rodriguez"

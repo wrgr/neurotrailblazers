@@ -4,6 +4,10 @@ title: "MouseConnects Connectomics Workflow"
 description: "Learn the complete pipeline for nanoscale connectomics research, from sample preparation to circuit analysis in the MouseConnects project"
 permalink: /datasets/workflow/
 slug: workflow
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 summary: "Step-by-step MouseConnects pipeline from sample preparation to connectome analysis."
 modality: "Electron microscopy pipeline"
 species: "Mouse"

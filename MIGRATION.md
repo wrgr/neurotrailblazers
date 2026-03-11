@@ -457,6 +457,14 @@ This document tracks incremental, content-preserving refactors to improve the si
     - `concepts` (needs-based entry)
   - Legacy modules remain available as delivery/archive objects rather than primary learner navigation.
 
+- **Track metadata expanded across detail pages**
+  - Added `track` and `pathways` fields to detail pages in:
+    - `avatars/*.md`
+    - `datasets/{access,mouseconnects,workflow}.md`
+    - `tools/{ask-an-expert,connectome-quality}.md`
+  - This supports future user-need filtering without relying on module IDs.
+  - Also cleaned duplicate `recommended_modules` keys in tool frontmatter.
+
 - **Checks**
   - `bundle exec jekyll build` passes.
   - `ruby scripts/validate_frontmatter.rb` passes.

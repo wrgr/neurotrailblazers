@@ -4,6 +4,10 @@ title: "Amir - The Translator"
 role: AI Scientist
 permalink: /avatars/researcher/
 slug: researcher
+track: career-and-community
+pathways:
+  - professional growth
+  - research workflow
 experience: Expert (industry)
 epistemic_orientation: Mechanistic, systems optimization
 motivation: Solve big problems, bring vision science into AI

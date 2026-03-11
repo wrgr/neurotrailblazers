@@ -4,6 +4,10 @@ title: "Maya - The Bridge Builder"
 role: Graduate Student
 permalink: /avatars/gradstudent/
 slug: gradstudent
+track: career-and-community
+pathways:
+  - professional growth
+  - mentoring
 experience: Intermediate
 epistemic_orientation: "Hybrid - computational with curiosity"
 motivation: Use ML to push neuroscience forward and lift others with her

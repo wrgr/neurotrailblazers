@@ -4,12 +4,15 @@ layout: tool
 description: "Accurate reconstruction of brain circuits from nanoscale electron microscopy (EM) is one of the most ambitious goals in modern neuroscience. At the heart of this process lies a critical challenge: quality control. This page introduces tools, research, and student-friendly workflows to ensure high-quality connectomes — the foundation for robust discovery."
 permalink: /tools/connectome-quality/
 slug: connectome-quality
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 summary: "Hands-on quality-control concepts, metrics, and workflows for reliable connectome reconstruction."
 use_cases:
   - Quality metric education
   - Proofreading workflow training
   - Validation strategy planning
-recommended_modules: []
 recommended_modules:
   - module06
   - module07

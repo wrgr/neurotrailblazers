@@ -4,12 +4,15 @@ layout: tool
 description: "Connect with Dr. Lichtman—one of the world's leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
 permalink: /ask-an-expert/
 slug: ask-an-expert
+track: career-and-community
+pathways:
+  - mentoring
+  - hidden curriculum
 summary: "Curated AI expert chat experience for connectomics questions, guidance, and resource discovery."
 use_cases:
   - Concept Q&A for connectomics learners
   - Mentorship-style exploratory guidance
   - Resource discovery for further study
-recommended_modules: []
 recommended_modules:
   - module01
   - module02

@@ -389,6 +389,41 @@ This document tracks incremental, content-preserving refactors to improve the si
     - `/technical-training/04-volume-reconstruction-infrastructure/`
   - This brings visual depth closer to units 05-09.
 
+### Changes (Track-First IA Refactor, Fadel-Aligned)
+
+- **Three canonical tracks introduced**
+  - Added `_data/track_catalog.yml` defining the new learner-facing architecture:
+    - `Core Concepts & Methods` (Knowledge + Skills)
+    - `Research in Action` (Skills + Meta-learning)
+    - `Career & Community` (Character + Meta-learning)
+  - Each track includes pathway tags and curated resource links.
+
+- **New track pages**
+  - Added:
+    - `/tracks/`
+    - `/tracks/core-concepts-methods/`
+    - `/tracks/research-in-action/`
+    - `/tracks/career-and-community/`
+  - These pages are now the canonical entry point for curriculum navigation.
+
+- **Navigation and homepage shifted to track-first**
+  - Updated `_data/navigation.yml`:
+    - Added top-level `Tracks` menu with 3 track links.
+    - Renamed `Modules` to `Legacy Modules`.
+  - Updated `index.html` and `start-here.md` to emphasize track-based pathways over module numbering.
+  - Updated `footer.md` to reflect track language in place of COMPASS branding at the global footer level.
+
+- **Legacy module framing demoted (not removed)**
+  - Updated `/modules/` index to `Legacy Module Archive` framing.
+  - Kept module URLs/pages intact for compatibility and archival access.
+
+- **Metadata transition to track model**
+  - Added `track` and `pathways` front matter fields across technical training, journal club, dictionary, and start-here pages.
+  - This enables future filtering/personalization without relying on module IDs.
+
+- **Cleanup**
+  - Removed `.DS_Store` artifacts and added ignore patterns to `.gitignore`.
+
 - **Checks**
   - `bundle exec jekyll build` passes.
   - `ruby scripts/validate_frontmatter.rb` passes.

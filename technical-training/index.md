@@ -5,6 +5,10 @@ description: "Canonical open connectomics course focused on technical skills fro
 permalink: /technical-training/
 slug: technical-training
 summary: "Track hub for the technical connectomics course."
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 last_reviewed: 2026-03-10
 maintainer: TBD
 ---
@@ -30,15 +34,8 @@ maintainer: TBD
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}
       <article class="card">
-        <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ forloop.index }}. {{ item.title }}</a></h3>
+        <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
         <p class="card-description">{{ item.mapping_note }}</p>
-        {% if item.mapped_modules and item.mapped_modules.size > 0 %}
-        <p><strong>Current overlap:</strong>
-          {% for mod in item.mapped_modules %}
-            <a href="{{ '/modules/' | append: mod | append: '/' | relative_url }}">{{ mod }}</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </p>
-        {% endif %}
       </article>
       {% endfor %}
     </div>

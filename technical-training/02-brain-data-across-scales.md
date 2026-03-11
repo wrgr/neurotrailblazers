@@ -3,6 +3,10 @@ layout: page
 title: "02 Brain Data Across Scales"
 permalink: /technical-training/02-brain-data-across-scales/
 slug: 02-brain-data-across-scales
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

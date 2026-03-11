@@ -3,6 +3,10 @@ layout: page
 title: "05 Neuronal Ultrastructure"
 permalink: /technical-training/05-neuronal-ultrastructure/
 slug: 05-neuronal-ultrastructure
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

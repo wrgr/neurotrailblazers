@@ -3,6 +3,10 @@ layout: default
 title: "Start Here - Your Journey into Nanoscale Connectomics"
 description: "Begin your adventure in computational neuroscience with our structured pathway through nanoscale connectomics research and discovery."
 permalink: /start-here/
+track: career-and-community
+pathways:
+  - professional growth
+  - hidden curriculum
 ---
 
 <div class="main-content">
@@ -21,27 +25,27 @@ permalink: /start-here/
         <h2>🎯 Choose Your Path</h2>
         <div class="cards-grid">
             <div class="card">
-                <div class="card-icon">🎓</div>
-                <h3 class="card-title">I'm New to Neuroscience</h3>
-                <p class="card-description">Start with our foundational modules to understand the brain, neurons, and basic neuroscience concepts.</p>
+                <div class="card-icon">🧠</div>
+                <h3 class="card-title">Core Concepts & Methods</h3>
+                <p class="card-description">Build technical fluency in connectomics from motivation and imaging through analysis methods.</p>
                 <div class="mt-1">
-                    <a href="{{ '/modules/module01/' | relative_url }}" class="btn btn-primary">Begin with Inspiration</a>
+                    <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Track</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-icon">🔬</div>
-                <h3 class="card-title">I Know Some Neuroscience</h3>
-                <p class="card-description">Jump into connectomics-specific content and learn about mapping neural circuits.</p>
+                <h3 class="card-title">Research in Action</h3>
+                <p class="card-description">Apply methods through workflows, quality control, tools, and research execution practice.</p>
                 <div class="mt-1">
-                    <a href="{{ '/modules/module02/' | relative_url }}" class="btn btn-primary">Start with Introduction</a>
+                    <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Practice Track</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-icon">👨‍🏫</div>
-                <h3 class="card-title">I'm a Mentor/Educator</h3>
-                <p class="card-description">Explore our mentorship framework and educational resources for supporting students.</p>
+                <div class="card-icon">🤝</div>
+                <h3 class="card-title">Career & Community</h3>
+                <p class="card-description">Navigate mentorship, hidden curriculum, and professional growth pathways.</p>
                 <div class="mt-1">
-                    <a href="{{ '/models/' | relative_url }}" class="btn btn-primary">View Teaching Models</a>
+                    <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Community Track</a>
                 </div>
             </div>
         </div>
@@ -51,16 +55,15 @@ permalink: /start-here/
 
     <section class="section">
         <h2>🗺️ Understanding Our Structure</h2>
-        
-        <h3>Learning Modules (16 Total)</h3>
-        <p>Our curriculum is organized into progressive modules, each building on the previous:</p>
+
+        <h3>Three Track Architecture</h3>
+        <p>We organize learning around three tracks aligned to the Fadel dimensions:</p>
         <ul class="mb-2" style="margin-left: 2rem;">
-            <li><strong>Module 0:</strong> Inspiration & Motivation</li>
-            <li><strong>Modules 1-3:</strong> Foundations of Neuroscience & Connectomics</li>
-            <li><strong>Modules 4-8:</strong> Data Acquisition & Processing</li>
-            <li><strong>Modules 9-12:</strong> Analysis & Visualization</li>
-            <li><strong>Modules 13-15:</strong> Advanced Topics & Research Applications</li>
+            <li><strong>Core Concepts & Methods:</strong> Knowledge + skills foundations</li>
+            <li><strong>Research in Action:</strong> Applied workflows and reproducible practice</li>
+            <li><strong>Career & Community:</strong> Character + meta-learning, mentorship, hidden curriculum</li>
         </ul>
+        <p><a href="{{ '/tracks/' | relative_url }}">Explore all tracks</a></p>
 
         <h3>Key Datasets</h3>
         <p>Learn with real scientific data from landmark studies:</p>
@@ -123,8 +126,8 @@ permalink: /start-here/
                 </ol>
             </div>
             <div class="card">
-                <h3>COMPASS Workshops</h3>
-                <p>10 structured workshops covering:</p>
+                <h3>Professional Pathways</h3>
+                <p>Structured support across:</p>
                 <ul class="list-tight">
                     <li>Research fundamentals</li>
                     <li>Data analysis skills</li>
@@ -200,7 +203,7 @@ permalink: /start-here/
         <h2>Ready to Begin?</h2>
         <p class="mt-1 mb-1" style="font-size: 1.2rem;">Choose your starting point and embark on your neuroscience adventure!</p>
         <div class="flex-center mt-2">
-            <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">View All Modules</a>
+            <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">View Learning Tracks</a>
             <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Explore Datasets</a>
             <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
         </div>

@@ -3,6 +3,10 @@ layout: page
 title: "06 Axons and Dendrites"
 permalink: /technical-training/06-axons-and-dendrites/
 slug: 06-axons-and-dendrites
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

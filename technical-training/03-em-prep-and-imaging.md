@@ -3,6 +3,10 @@ layout: page
 title: "03 EM Prep and Imaging"
 permalink: /technical-training/03-em-prep-and-imaging/
 slug: 03-em-prep-and-imaging
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

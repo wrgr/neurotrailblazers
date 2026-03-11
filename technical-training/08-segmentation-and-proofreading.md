@@ -3,6 +3,10 @@ layout: page
 title: "08 Segmentation and Proofreading"
 permalink: /technical-training/08-segmentation-and-proofreading/
 slug: 08-segmentation-and-proofreading
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 ---
 
 ## Why this unit

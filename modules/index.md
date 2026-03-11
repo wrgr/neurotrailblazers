@@ -1,17 +1,21 @@
 ---
 
-title: "NeuroTrailblazers Curriculum Index"
+title: "Legacy Module Archive"
 layout: page
-description: "Overview of all 25 modules organized by MERIT stages and CCR dimensions"
+description: "Legacy module-based view of NeuroTrailblazers content. Primary navigation now uses track-first pathways."
 permalink: /modules/
 ---
 
 <div class="main-content">
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
-      <h1 class="hero-title-impact">NeuroTrailblazers Training Modules</h1>
+      <h1 class="hero-title-impact">Legacy Module Archive</h1>
     </div>
   </div>
+
+<section class="section">
+  <p><strong>Recommended:</strong> start with the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> for a simpler path through the curriculum. This page remains available as a full legacy index.</p>
+</section>
 
 {% include module-index.html %}
 

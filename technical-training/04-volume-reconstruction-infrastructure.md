@@ -3,6 +3,10 @@ layout: page
 title: "04 Volume Reconstruction Infrastructure"
 permalink: /technical-training/04-volume-reconstruction-infrastructure/
 slug: 04-volume-reconstruction-infrastructure
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

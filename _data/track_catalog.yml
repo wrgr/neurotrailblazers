@@ -1,0 +1,84 @@
+tracks:
+  - slug: core-concepts-methods
+    title: Core Concepts & Methods
+    short_title: Core & Methods
+    description: Build scientific and technical fluency in nanoscale connectomics from motivation through analysis methods.
+    fadel_alignment:
+      - Knowledge
+      - Skills
+    pathways:
+      - technical foundation
+      - methods depth
+      - analytical reasoning
+    resources:
+      - title: Technical Training Course Hub
+        url: /technical-training/
+        summary: Canonical connectomics sequence from imaging to NeuroAI.
+      - title: Technical Slides and Lecture Drafts
+        url: /technical-training/slides/
+        summary: Lecture-ready sequence with slide-source links.
+      - title: Journal Club Reading List
+        url: /technical-training/journal-club/
+        summary: Required and optional readings aligned to the technical sequence.
+      - title: Connectomics Dictionary
+        url: /technical-training/dictionary/
+        summary: Shared vocabulary for methods, quality, and analysis.
+      - title: Datasets
+        url: /datasets/
+        summary: Data resources for training and research.
+
+  - slug: research-in-action
+    title: Research in Action
+    short_title: Research Practice
+    description: Apply concepts in practical workflows, quality control, tools, and reproducible research operations.
+    fadel_alignment:
+      - Skills
+      - Meta-learning
+    pathways:
+      - research workflow
+      - reproducibility
+      - project execution
+    resources:
+      - title: Workflow Overview
+        url: /datasets/workflow
+        summary: End-to-end process from acquisition through interpretation.
+      - title: Connectome Quality Guide
+        url: /tools/connectome-quality/
+        summary: Quality criteria and practical checks for robust outputs.
+      - title: Ask-an-Expert
+        url: /tools/ask-an-expert/
+        summary: Structured support for technical troubleshooting.
+      - title: Technical Training Units 08-09
+        url: /technical-training/08-segmentation-and-proofreading/
+        summary: Proofreading and analysis-heavy units for applied practice.
+      - title: Frameworks
+        url: /frameworks/
+        summary: Research and teaching frameworks to operationalize practice.
+
+  - slug: career-and-community
+    title: Career & Community
+    short_title: Pathways & Community
+    description: Navigate hidden curriculum, mentorship, professional growth, and inclusive research identity development.
+    fadel_alignment:
+      - Character
+      - Meta-learning
+    pathways:
+      - mentoring
+      - professional growth
+      - hidden curriculum
+    resources:
+      - title: Start Here
+        url: /start-here/
+        summary: Entry orientation and personalized pathway planning.
+      - title: Learner Avatars
+        url: /avatars/
+        summary: Role-based narratives for common research and career trajectories.
+      - title: Models
+        url: /models/
+        summary: Educational model context for mentors and program leads.
+      - title: Education Models
+        url: /education/models/
+        summary: Additional framework guidance for curriculum design.
+      - title: Tools
+        url: /tools/
+        summary: Practical support resources for learners and mentors.

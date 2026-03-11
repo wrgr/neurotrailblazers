@@ -3,6 +3,10 @@ layout: page
 title: "Technical Track Journal Club"
 permalink: /technical-training/journal-club/
 slug: technical-track-journal-club
+track: research-in-action
+pathways:
+  - research workflow
+  - mentoring
 ---
 
 ## How this list is organized

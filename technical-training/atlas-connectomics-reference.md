@@ -3,6 +3,10 @@ layout: page
 title: "Atlas Connectomics Reference"
 permalink: /technical-training/atlas-connectomics-reference/
 slug: atlas-connectomics-reference
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 ---
 
 ## Purpose

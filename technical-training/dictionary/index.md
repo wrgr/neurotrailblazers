@@ -3,6 +3,10 @@ layout: page
 title: "Connectomics Dictionary"
 permalink: /technical-training/dictionary/
 slug: connectomics-dictionary
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - shared vocabulary
 ---
 
 ## Purpose

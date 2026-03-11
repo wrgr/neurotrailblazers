@@ -3,6 +3,10 @@ layout: page
 title: "01 Why Map the Brain"
 permalink: /technical-training/01-why-map-the-brain/
 slug: 01-why-map-the-brain
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - conceptual framing
 ---
 
 ## Why this unit

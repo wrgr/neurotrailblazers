@@ -13,26 +13,26 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     <span class="hero-title-main">Build the future of connectomics, one learning milestone at a time.</span>
                 </h1>
                 <p class="hero-description">
-                    NeuroTrailblazers helps students, mentors, and programs turn curiosity into research-ready skills with structured modules,
-                    real datasets, and a practical mentorship framework.
+                    NeuroTrailblazers helps students, mentors, and programs turn curiosity into research-ready skills through three clear tracks:
+                    Core Concepts & Methods, Research in Action, and Career & Community.
                 </p>
                 <div class="cta-buttons">
                     <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary btn-large">Enter Technical Track</a>
-                    <a href="{{ '/start-here/' | relative_url }}" class="btn btn-secondary btn-large">Start Here</a>
+                    <a href="{{ '/tracks/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tracks</a>
                     <a href="{{ '/tools/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tools</a>
                 </div>
                 <div class="hero-stats" role="list" aria-label="NeuroTrailblazers highlights">
                     <div class="stat-pill" role="listitem"><strong>10</strong> technical units</div>
-                    <div class="stat-pill" role="listitem"><strong>4</strong> learner avatars</div>
+                    <div class="stat-pill" role="listitem"><strong>3</strong> learning tracks</div>
                     <div class="stat-pill" role="listitem"><strong>5+</strong> connectomics datasets</div>
                 </div>
             </div>
 
             <aside class="home-hero-panel">
-                <p class="home-panel-label">Canonical Course</p>
-                <h2>Current Progression Map</h2>
+                <p class="home-panel-label">Track Framework</p>
+                <h2>Three-Track Structure</h2>
                 <ul class="home-track-list">
-                    {% for item in site.data.technical_track.modules limit:4 %}
+                    {% for item in site.data.track_catalog.tracks %}
                     <li>
                         <span class="home-track-step">{{ forloop.index }}</span>
                         <span>{{ item.title }}</span>
@@ -40,7 +40,7 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     {% endfor %}
                 </ul>
                 <div class="home-panel-actions">
-                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary">View Technical Track</a>
+                    <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">View Tracks</a>
                     <a href="{{ '/frameworks/' | relative_url }}" class="btn btn-secondary">View Frameworks</a>
                 </div>
             </aside>
@@ -104,9 +104,9 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary mt-1">Open Technical Track</a>
                 </article>
                 <article class="card module-card">
-                    <h3 class="card-title card-title-with-icon"><span class="icon-inline">📚</span> Learning Modules</h3>
-                    <p class="card-description">A scaffolded curriculum spanning core concepts, tools, methods, and dissemination skills.</p>
-                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary mt-1">Explore Modules</a>
+                    <h3 class="card-title card-title-with-icon"><span class="icon-inline">🧭</span> Learning Tracks</h3>
+                    <p class="card-description">Navigate learning through three tracks aligned to knowledge, skills, and professional growth.</p>
+                    <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary mt-1">Explore Tracks</a>
                 </article>
                 <article class="card dataset-card">
                     <h3 class="card-title card-title-with-icon"><span class="icon-inline">🗂️</span> Connectomics Datasets</h3>

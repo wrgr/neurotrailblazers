@@ -3,6 +3,10 @@ layout: page
 title: "09 Connectome Analysis and NeuroAI"
 permalink: /technical-training/09-connectome-analysis-neuroai/
 slug: 09-connectome-analysis-neuroai
+track: research-in-action
+pathways:
+  - research workflow
+  - reproducibility
 ---
 
 ## Why this unit

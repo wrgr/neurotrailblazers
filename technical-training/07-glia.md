@@ -3,6 +3,10 @@ layout: page
 title: "07 Glia"
 permalink: /technical-training/07-glia/
 slug: 07-glia
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
 ---
 
 ## Why this unit

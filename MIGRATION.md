@@ -359,6 +359,36 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `bundle exec jekyll build` passes after all deck and marp additions.
   - `ruby scripts/validate_frontmatter.rb` remains passing.
 
+### Changes (Technical Track: Visual Coverage and Validation Automation)
+
+- **Source figure import automation**
+  - Added `scripts/import_deck_figures.rb` to import `FIG-*` assets referenced by `course/decks/*.md` from the local extraction package into:
+    - `assets/images/technical-training/<unit-slug>/`
+  - Used this to populate visual assets for:
+    - `01-why-map-the-brain`
+    - `02-brain-data-across-scales`
+    - `03-em-prep-and-imaging`
+    - `04-volume-reconstruction-infrastructure`
+    - `atlas-connectomics-reference` (partial, then remapped to available extracted IDs)
+
+- **Figure-reference validation helper**
+  - Added `scripts/validate_figure_refs.rb`.
+  - Validates `FIG-*` references in production deck/page docs against locally available assets.
+  - Also validates local image paths in Marp slide sources.
+  - Current result: no missing figure references in production docs after atlas remap.
+
+- **Atlas reference visual remap**
+  - Updated atlas shortlist and deck spec to use available module14-lesson3 extracted IDs (for example `S03-02`, `S05-01`, `S08-01`, `S10-01`, `S13-01`, `S19-01`, `S20-03`) instead of unavailable originally planned IDs.
+  - Expanded `/technical-training/atlas-connectomics-reference/` visual section accordingly.
+
+- **Unit page visual parity**
+  - Added draft visual-context galleries to previously text-heavy units:
+    - `/technical-training/01-why-map-the-brain/`
+    - `/technical-training/02-brain-data-across-scales/`
+    - `/technical-training/03-em-prep-and-imaging/`
+    - `/technical-training/04-volume-reconstruction-infrastructure/`
+  - This brings visual depth closer to units 05-09.
+
 - **Checks**
   - `bundle exec jekyll build` passes.
   - `ruby scripts/validate_frontmatter.rb` passes.

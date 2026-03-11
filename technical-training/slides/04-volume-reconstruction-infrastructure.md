@@ -45,3 +45,7 @@ slug: slides-04-volume-reconstruction-infrastructure
 - Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module12]({{ '/modules/module12/' | relative_url }}), [module18]({{ '/modules/module18/' | relative_url }})
+
+## Slide source file
+- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Batch render helper: `./scripts/render_marp.sh`

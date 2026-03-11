@@ -48,3 +48,7 @@ slug: slides-05-neuronal-ultrastructure
 - Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module04]({{ '/modules/module04/' | relative_url }}), [module09]({{ '/modules/module09/' | relative_url }}), [module11]({{ '/modules/module11/' | relative_url }})
+
+## Slide source file
+- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Batch render helper: `./scripts/render_marp.sh`

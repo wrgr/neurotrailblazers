@@ -45,3 +45,7 @@ slug: slides-07-glia
 - Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module04]({{ '/modules/module04/' | relative_url }})
+
+## Slide source file
+- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Batch render helper: `./scripts/render_marp.sh`

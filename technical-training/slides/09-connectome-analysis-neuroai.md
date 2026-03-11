@@ -48,3 +48,7 @@ slug: slides-09-connectome-analysis-neuroai
 - Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module10]({{ '/modules/module10/' | relative_url }}), [module13]({{ '/modules/module13/' | relative_url }}), [module14]({{ '/modules/module14/' | relative_url }}), [module15]({{ '/modules/module15/' | relative_url }}), [module20]({{ '/modules/module20/' | relative_url }})
+
+## Slide source file
+- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Batch render helper: `./scripts/render_marp.sh`

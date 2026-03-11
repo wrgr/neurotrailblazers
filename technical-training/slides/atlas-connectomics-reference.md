@@ -41,3 +41,7 @@ slug: slides-atlas-connectomics-reference
 - Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: none yet (reference unit)
+
+## Slide source file
+- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Batch render helper: `./scripts/render_marp.sh`

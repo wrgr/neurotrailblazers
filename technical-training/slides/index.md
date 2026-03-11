@@ -14,6 +14,11 @@ Each deck now includes:
 - Figure integration hooks to extracted asset shortlists.
 - Assessment artifacts and rubric dimensions.
 
+## Slide source files
+Production-oriented markdown slide sources are available under:
+- `course/decks/marp/`
+- Reference guide: `course/decks/marp/README.md`
+
 <div class="cards-grid">
   {% for item in site.data.technical_track.modules %}
   <article class="card">

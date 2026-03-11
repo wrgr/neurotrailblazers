@@ -17,6 +17,34 @@ Process-type misclassification is a major source of downstream graph error.
 - Edge cases: en passant boutons, thin dendrites, truncations.
 - Auditability via confidence and correction logs.
 
+## Method deep dive: axon-vs-dendrite classification
+1. Morphology pass:
+   Branch caliber, tortuosity, spine presence, and process tapering.
+2. Organelle pass:
+   Vesicle clustering, microtubule patterning, mitochondrial distribution.
+3. Connectivity pass:
+   Input/output pattern and bouton/spine relationships in neighborhood.
+4. Continuity pass:
+   Validate interpretation along additional slices and branch points.
+5. Decision logging:
+   Capture confidence and alternative hypothesis if ambiguous.
+
+## Quantitative QA checkpoints
+- Confusion matrix for axon/dendrite labels against adjudicated truth set.
+- Error concentration map by tissue region and annotator.
+- Rework fraction: percent of labels reversed during secondary review.
+- Downstream sensitivity: impact of class errors on motif counts and graph metrics.
+
+## Frequent failure modes
+- Thin dendrites mislabeled as axons:
+  Add local synaptic-role evidence before finalizing.
+- Truncated field-of-view bias:
+  Mark as provisional when continuity evidence is missing.
+- Bouton-centric bias:
+  Avoid relying only on vesicle presence without full context.
+- Inconsistent team criteria:
+  Calibrate weekly with shared edge-case panels.
+
 ## Visual training set (draft)
 <div class="cards-grid">
   <article class="card">
@@ -75,3 +103,7 @@ Process-type misclassification is a major source of downstream graph error.
 
 ## Quick activity
 Choose one ambiguous process and document the three strongest cues you used to classify it.
+
+
+## Draft lecture deck
+- Slide draft page: [Axons and Dendrites deck draft]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})

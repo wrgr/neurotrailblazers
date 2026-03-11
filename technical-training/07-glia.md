@@ -17,6 +17,34 @@ Glia are central to reliable annotation and interpretation, not background objec
 - Myelin context cues for oligodendrocyte interpretation.
 - Reusable glia recognition checklist.
 
+## Method deep dive: glia identification workflow
+1. Candidate detection:
+   Mark processes with non-neuronal morphology and atypical organelle distribution.
+2. Context enrichment:
+   Inspect vascular adjacency, myelin relationships, and neighboring synaptic density.
+3. Cell-class discrimination:
+   Compare astrocyte-like branching, microglial surveillance morphology, and oligodendrocyte/myelin patterns.
+4. Temporal/section continuity:
+   Follow process across slices to avoid single-plane misclassification.
+5. Adjudication:
+   Escalate low-confidence cases into a shared glia review queue.
+
+## Quantitative QA checkpoints
+- Glia-vs-neuron boundary error rate on validation subset.
+- Class-specific agreement (astrocyte, microglia, oligodendrocyte).
+- Rate of unresolved glia labels after second-pass review.
+- Impact of corrected glia labels on neuronal graph statistics.
+
+## Frequent failure modes
+- Astrocyte-neurite confusion in dense neuropil:
+  Require neighborhood and boundary-context confirmation.
+- Over-calling microglia based on fragmentary appearance:
+  Use multi-slice morphology before class assignment.
+- Oligodendrocyte/myelin ambiguity:
+  Trace sheath context and nearby axonal relationships.
+- Ignoring glia in proofreading priorities:
+  Include glia corrections in high-impact QC queues.
+
 ## Visual training set (draft)
 <div class="cards-grid">
   <article class="card">
@@ -63,3 +91,7 @@ Glia are central to reliable annotation and interpretation, not background objec
 
 ## Quick activity
 Review one glia image and list two features that distinguish it from a neuronal process in the same neighborhood.
+
+
+## Draft lecture deck
+- Slide draft page: [Glia deck draft]({{ '/technical-training/slides/07-glia/' | relative_url }})

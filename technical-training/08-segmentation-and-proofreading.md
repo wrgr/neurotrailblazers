@@ -17,6 +17,34 @@ Proofreading is the scientific QC layer that determines whether downstream analy
 - Priority strategy for high-impact error correction.
 - Human-machine workflow separation: discovery, adjudication, finalization.
 
+## Method deep dive: production proofreading loop
+1. Candidate triage:
+   Rank errors by estimated downstream impact (edge loss, motif distortion, cell identity risk).
+2. Local correction:
+   Resolve merge/split/boundary errors with 2D/3D contextual validation.
+3. Global consistency:
+   Recheck branch continuity and synaptic partner plausibility.
+4. Metric update:
+   Recompute targeted QC metrics after each correction batch.
+5. Release gate:
+   Promote only segments that pass predefined quality thresholds.
+
+## Recommended QC thresholding strategy
+- Use block-level dashboards for VI and edge precision/recall, not just whole-volume means.
+- Track ERL by cell class to detect morphology-dependent blind spots.
+- Maintain synapse-centric precision/recall for biologically relevant correctness.
+- Require explicit uncertainty tags for unresolved defects rather than silent acceptance.
+
+## Frequent failure modes
+- Over-fixing low-impact errors:
+  Prioritize corrections that materially change downstream conclusions.
+- Inconsistent adjudication:
+  Maintain standard operating examples for merge/split edge cases.
+- Metric gaming:
+  Pair global metrics with qualitative audits of biologically important structures.
+- Human-fatigue drift:
+  Rotate reviewers and monitor disagreement trends over time.
+
 ## Practical workflow
 1. Detect candidate errors in 2D and 3D context.
 2. Classify error type (merge, split, boundary ambiguity, identity confusion).
@@ -89,3 +117,7 @@ Proofreading is the scientific QC layer that determines whether downstream analy
 
 ## Quick activity
 Take one candidate merge/split case and write a short correction log with before/after rationale and one QC metric.
+
+
+## Draft lecture deck
+- Slide draft page: [Segmentation and Proofreading deck draft]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})

@@ -22,6 +22,7 @@ maintainer: TBD
     <div class="cta-buttons">
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Slide Deck Drafts</a>
     </div>
   </section>
 

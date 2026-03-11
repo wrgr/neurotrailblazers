@@ -17,6 +17,44 @@ This unit links connectome graph analysis to AI-relevant hypothesis generation.
 - Subgraph isomorphism complexity and tooling tradeoffs.
 - Cross-dataset comparability constraints.
 
+## Method deep dive: motif-analysis pipeline
+1. Hypothesis formalization:
+   Convert biological intuition into graph constraints and measurable outputs.
+2. Query implementation:
+   Encode motifs in a query language and validate on synthetic control graphs.
+3. Search execution:
+   Run distributed motif scans with resource/latency monitoring.
+4. Statistical testing:
+   Compare observed counts to null ensembles and apply multiplicity corrections.
+5. Biological interpretation:
+   Connect motif enrichments to plausible circuit mechanisms while stating uncertainty.
+
+## Model and inference considerations
+- Representation choices:
+  Directed vs undirected edges, weighted vs binary synapses, multigraph encoding.
+- Null-model families:
+  Degree-preserving rewires, spatially constrained rewires, cell-type-stratified controls.
+- Scalability tradeoffs:
+  Exact subgraph isomorphism vs approximate search and candidate pruning.
+- Reproducibility:
+  Pin dataset versions, query code revisions, and random seeds.
+
+## Quantitative QA checkpoints
+- Query correctness on toy graphs with known motif counts.
+- Runtime and memory benchmarks by motif size/complexity.
+- Sensitivity analysis across alternate null-model definitions.
+- Stability checks across reconstruction versions and proofreading updates.
+
+## Frequent failure modes
+- Post-hoc hypothesis selection:
+  Separate exploratory and confirmatory analyses.
+- Null-model mismatch:
+  Ensure nulls preserve the structural constraints relevant to the claim.
+- Cross-dataset overgeneralization:
+  Treat species/region-specific findings as context-bound unless replicated.
+- Toolchain opacity:
+  Require auditable query scripts and logged execution parameters.
+
 ## Practical workflow
 1. Define biologically grounded motif hypotheses.
 2. Translate hypotheses into executable graph queries.
@@ -121,3 +159,7 @@ This unit links connectome graph analysis to AI-relevant hypothesis generation.
 
 ## Quick activity
 Define one motif hypothesis, one null model, and one success criterion you would use before interpreting results.
+
+
+## Draft lecture deck
+- Slide draft page: [Connectome Analysis and NeuroAI deck draft]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})

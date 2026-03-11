@@ -17,6 +17,29 @@ Ultrastructure is the operational visual language of connectomics annotation and
 - Cues: vesicles, PSD/active zone, mitochondria, ER, microtubules.
 - Multi-slice context before final annotation decisions.
 
+## Method deep dive: compartment-level decision protocol
+1. Start with local geometry (diameter changes, branching pattern, cytoplasmic density).
+2. Add organelle evidence (microtubule organization, mitochondria morphology, vesicle fields).
+3. Evaluate synaptic architecture (active zone alignment, vesicle clusters, PSD profile).
+4. Confirm continuity across adjacent sections before committing label.
+5. Assign confidence tier (`high`, `medium`, `uncertain`) with rationale.
+
+## Quantitative QA checkpoints
+- Inter-annotator agreement on compartment labels.
+- Synapse call precision/recall on a gold-standard subset.
+- Uncertain-label rate by region as an indicator of dataset difficulty.
+- Turnaround time per corrected ambiguity (captures workflow scalability).
+
+## Frequent failure modes
+- Single-slice overconfidence:
+  Resolve only after short z-stack review.
+- Organelle misread due to staining variability:
+  Use multi-cue voting instead of one-feature decisions.
+- False synapse positives in noisy contrast:
+  Require structural context around candidate cleft.
+- Label drift across long neurite paths:
+  Enforce periodic consistency checks during tracing.
+
 ## Visual training set (draft)
 <div class="cards-grid">
   <article class="card">
@@ -75,3 +98,7 @@ Ultrastructure is the operational visual language of connectomics annotation and
 
 ## Quick activity
 Using one training image, label at least three ultrastructural cues and state your confidence for each interpretation.
+
+
+## Draft lecture deck
+- Slide draft page: [Neuronal Ultrastructure deck draft]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})

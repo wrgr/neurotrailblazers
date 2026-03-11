@@ -21,6 +21,28 @@ This unit treats connectome reconstruction as a production data platform problem
 - Multiresolution storage and APIs.
 - Provenance/versioning and recovery workflows.
 
+## Visual context set (draft)
+<div class="cards-grid">
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png' | relative_url }}" alt="High-level architecture visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S04:</strong> high-level architecture context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S07-01.png' | relative_url }}" alt="Workflow API integration visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S07:</strong> workflow/API integration context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png' | relative_url }}" alt="Service decomposition visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S12:</strong> service decomposition context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S08-01.png' | relative_url }}" alt="Scalable analytics context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L1 S08:</strong> scalable analytics context.</p>
+  </article>
+</div>
+
+<p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
+
 ## Reference architecture
 1. Ingest layer:
    Tile validation, checksum tracking, and immutable raw archive.

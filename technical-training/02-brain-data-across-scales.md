@@ -21,6 +21,28 @@ This unit covers cross-scale reasoning from mesoscale maps to nanometer-resoluti
 - Resolution anisotropy risks.
 - Volumes, meshes, skeletons, and graphs as scale-dependent representations.
 
+## Visual context set (draft)
+<div class="cards-grid">
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON1-S06-01.png' | relative_url }}" alt="Scale and voxel-size context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L1 S06:</strong> scale/voxel context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S04-01.png' | relative_url }}" alt="Macroscale pipeline visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L2 S04:</strong> macroscale pipeline view.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S05-01.png' | relative_url }}" alt="Microscale bridge visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L2 S05:</strong> microscale/preprocessing bridge.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput imaging context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S08:</strong> high-throughput imaging context.</p>
+  </article>
+</div>
+
+<p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
+
 ## Scale-aware data model
 - Acquisition scale:
   Voxel size, field of view, modality physics, contrast mechanism.

@@ -22,6 +22,16 @@ The atlas is curated for operational use, not just bibliography. Each entry shou
 - Analysis and NeuroAI references
 - Dataset and benchmark references
 
+## Visual context set (draft)
+<div class="cards-grid">
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S44:</strong> developmental motif reference context.</p>
+  </article>
+</div>
+
+<p><small>Attribution: neuroAI source deck (historical/context visual). Planned module14-lesson3 atlas figures remain pending extraction/import.</small></p>
+
 ## Required metadata schema (minimum)
 - `citation`: standardized citation string.
 - `workflow_stage`: acquisition, reconstruction, proofreading, analysis, or cross-cutting.

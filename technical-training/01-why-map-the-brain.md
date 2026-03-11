@@ -21,6 +21,28 @@ This unit defines what questions connectomics can answer, what it cannot answer 
 - Comparative and developmental mapping.
 - AI transfer through constraints and priors, not direct emulation.
 
+## Visual context set (draft)
+<div class="cards-grid">
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Motivating question visual for why map the brain" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S10:</strong> motivating question framing.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="Brain data framing visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S11:</strong> brain-data framing context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png' | relative_url }}" alt="Reverse engineering analogy visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S12:</strong> reverse-engineering analogy and limits.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Course motivation context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L1 S04:</strong> motivation and scope framing.</p>
+  </article>
+</div>
+
+<p><small>Attribution: neuroAI and outreach source decks (historical/context visuals).</small></p>
+
 ## Method deep dive: from question to measurable endpoint
 1. Start with a mechanistic question that has a structural signature (for example: recurrent microcircuit enrichment, axon targeting bias, cell-type-specific fan-in/fan-out).
 2. Define measurement units before touching data: synapse counts, motif frequencies, path lengths, compartment-targeting ratios, spatial gradients.

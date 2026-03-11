@@ -21,6 +21,28 @@ This unit covers the acquisition chain from tissue handling to image stack gener
 - Throughput-volume-resolution tradeoffs.
 - Provenance and acquisition QA.
 
+## Visual context set (draft)
+<div class="cards-grid">
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S04-01.png' | relative_url }}" alt="High-resolution imaging context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S04:</strong> high-resolution imaging context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput sectioning context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S08:</strong> high-throughput sectioning context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S10-01.png' | relative_url }}" alt="Imaging pipeline transition visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S10:</strong> imaging-to-pipeline transition.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S08-01.png' | relative_url }}" alt="Manual versus automated context visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L2 S08:</strong> manual vs automated context.</p>
+  </article>
+</div>
+
+<p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
+
 ## Method deep dive: acquisition pipeline
 1. Tissue preparation:
    Stabilize ultrastructure while minimizing shrinkage and extraction artifacts.

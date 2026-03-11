@@ -316,7 +316,48 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Dual review artifacts added**
   - `course/reviews/technical-accuracy-review.md`
   - `course/reviews/instructional-design-accessibility-review.md`
-  - Reviews include findings ordered by severity, applied fixes, and residual risks.
+- Reviews include findings ordered by severity, applied fixes, and residual risks.
+
+### Changes (Technical Track: Lecture and Deck Production Pass)
+
+- **Lecture-ready slide draft pages expanded**
+  - Upgraded all technical-track slide draft pages under `/technical-training/slides/` from generic 12-step placeholders to lecture-ready outlines.
+  - Each unit now includes:
+    - audience/session profile
+    - timed slide sequence
+    - technical talking points
+    - assessment artifacts and rubric dimensions
+    - explicit figure integration hooks
+
+- **Deck authoring pack added**
+  - Added `course/decks/` with one production-oriented deck spec per unit plus `README.md`.
+  - Each deck spec defines:
+    - slide-by-slide production blocks
+    - source priorities
+    - figure IDs and usage guidance
+    - instructor notes and assessment prompts
+
+- **Content import planning formalized**
+  - Added `course/decks/content-import-matrix.md` to map source families to units and establish acceptance criteria for imported technical claims.
+  - Priority policy captured explicitly:
+    - `frompat` (primary morphology/proofreading)
+    - `neuroAI` (primary for Unit 09)
+    - `assets_outreach` (historical/context support)
+
+- **Figure shortlist correction pass**
+  - Corrected `course/units/figures/06-axons-and-dendrites-selected-v1.md` to match available extracted image IDs.
+  - Corrected `course/units/figures/07-glia-selected-v1.md` to remove unavailable manifest IDs and document fallback handling.
+
+- **Marp slide-source workflow added**
+  - Added `course/decks/marp/` with draft markdown slide sources for:
+    - `01` through `09`
+    - `atlas-connectomics-reference`
+  - Added `course/decks/marp/README.md` with usage instructions.
+  - Updated `technical-training/slides/index.md` to point maintainers to the Marp source directory.
+
+- **Checks**
+  - `bundle exec jekyll build` passes after all deck and marp additions.
+  - `ruby scripts/validate_frontmatter.rb` remains passing.
 
 - **Checks**
   - `bundle exec jekyll build` passes.

@@ -2,7 +2,7 @@
 layout: framework
 title: Models
 slug: education-models
-summary: "Education-facing overview of MERIT and COMPASS training models."
+summary: "Education-facing overview of MERIT and professional pathways workshop models."
 track: career-and-community
 pathways:
   - mentoring
@@ -29,12 +29,13 @@ This section introduces two core training frameworks used throughout NeuroTrailb
 - **Stages:** Selection, Orientation, Skill Development, Independent Research, Advanced Research, Career Transition.
 - **Evidence base:** Lopatto (2007) on undergraduate research experiences and Duckworth et al. (2007) on persistence.
 
-### COMPASS Model
+### Professional Pathways Workshops
 
-- Interactive workshops that demystify the hidden curriculum from orientation to future planning.
+- Interactive workshops that demystify hidden curriculum from orientation to future planning.
 - Integrates Fadel et al. (2015) four-dimensional education: knowledge, skills, character, and meta-learning.
+- Historically aligned with COMPASS framing; now presented as a broader pathways support layer.
 
-Both frameworks complement each other: MERIT structures your research journey while COMPASS offers workshops that develop resilience and professional habits.
+Both frameworks complement each other: MERIT structures research progression while pathways workshops develop resilience and professional habits.
 
 Visuals and downloadable guides coming soon.
 

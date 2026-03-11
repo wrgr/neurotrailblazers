@@ -455,6 +455,10 @@ This document tracks incremental, content-preserving refactors to improve the si
   - Added concept-preview sections on each `/tracks/*` page using concept cards filtered by track.
   - This supports quick pivots between track-based and need-based navigation.
 
+- **Framework wording refinement**
+  - Updated models pages and legacy module archive copy to de-emphasize COMPASS as primary branding.
+  - Current framing uses `professional pathways workshops` with explicit historical note where needed.
+
 - **Positioning update**
   - Discovery now emphasizes:
     - `tracks` (high-level structure)

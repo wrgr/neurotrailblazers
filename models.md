@@ -3,7 +3,7 @@ title: Research Incubator Model
 layout: framework
 permalink: /models/
 slug: research-incubator-model
-summary: "Overview of the MERIT, COMPASS, and CCR frameworks guiding NeuroTrailblazers training."
+summary: "Overview of MERIT, CCR, and professional pathways workshop structures guiding NeuroTrailblazers training."
 track: career-and-community
 pathways:
   - mentoring
@@ -64,8 +64,8 @@ maintainer: TBD
     <p><a href="#">MERIT Whitepaper PDF</a></p>
   </div>
   <div class="card">
-    <h3>COMPASS Framework</h3>
-    <p class="card-description">Charting Opportunity, Mastery, Purpose, Agency, Skills, and Self</p>
+    <h3>Professional Pathways Workshops</h3>
+    <p class="card-description">A workshop sequence for hidden-curriculum navigation, communication, and career readiness (historically developed under COMPASS naming).</p>
     <ol class="list-tight">
       <li>Orientation</li>
       <li>The Resilient STEM Scholar</li>
@@ -77,7 +77,7 @@ maintainer: TBD
       <li>STEM Identity &amp; Purpose</li>
       <li>Future Forward</li>
     </ol>
-    <p><a href="#">COMPASS Workshop Guide PDF</a></p>
+    <p><a href="#">Professional Pathways Workshop Guide PDF</a></p>
   </div>
   <div class="card">
     <h3>CCR Model</h3>

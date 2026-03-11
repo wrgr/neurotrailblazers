@@ -25,12 +25,24 @@ The atlas is curated for operational use, not just bibliography. Each entry shou
 ## Visual context set (draft)
 <div class="cards-grid">
   <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png' | relative_url }}" alt="Atlas references opener visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S03-02:</strong> references opener context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S10-01.png' | relative_url }}" alt="Atlas mid-reference stream visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S10:</strong> reference-stream context.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S19-01.png' | relative_url }}" alt="Atlas closing references visual" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S19:</strong> closing references context.</p>
+  </article>
+  <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Techtalk S44:</strong> developmental motif reference context.</p>
   </article>
 </div>
 
-<p><small>Attribution: neuroAI source deck (historical/context visual). Planned module14-lesson3 atlas figures remain pending extraction/import.</small></p>
+<p><small>Attribution: module14 lesson3 and neuroAI source decks (historical/context visuals).</small></p>
 
 ## Required metadata schema (minimum)
 - `citation`: standardized citation string.

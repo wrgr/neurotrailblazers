@@ -11,27 +11,27 @@
 ## Slide production blocks
 1. Title and atlas role
 - Key message: atlas content must be operationally usable, not only bibliographic.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S03-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S03-02`
 
 2. Historical anchors
 - Key message: foundational papers remain useful when limitations are explicit.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S06-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S05-01`
 
 3. Reference stream organization
 - Key message: group entries by workflow stage and evidence type.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S09-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S08-01`
 
 4. Midstream curation example
 - Key message: each entry requires modality/scale/access metadata.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S12-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S10-01`
 
 5. Late-stage reference panel
 - Key message: include tool/dataset reproducibility status for each item.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S16-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S13-01`
 
 6. Closing reference context
 - Key message: curate for coverage balance, not citation volume.
-- Figure: `FIG-SRC-MODULE14_LESSON3-S20-01`
+- Figure: `FIG-SRC-MODULE14_LESSON3-S19-01`
 
 7. NeuroAI reference bridge
 - Key message: motif-analysis references require explicit historical/current tagging.

@@ -592,3 +592,24 @@ This document tracks incremental, content-preserving refactors to improve the si
 
 - **Checks**
   - `bundle exec jekyll build` passes.
+
+### Changes (Need-Based Technical Entry Points)
+
+- **Technical course map enriched with learner-need metadata**
+  - Updated `_data/technical_track.yml` for all 10 units to include:
+    - `primary_concepts`
+    - `user_needs`
+  - This allows the technical sequence to remain available while enabling concept-first routing.
+
+- **Technical training hub shifted further from sequence-first navigation**
+  - Updated `technical-training/index.md` with:
+    - a "Start by learner need" shortcut section
+    - need tags on each unit card linking to pre-filtered Concept Explorer views
+    - legacy module overlap retained as secondary context (`small` annotation)
+
+- **Language cleanup**
+  - Updated `start-here.md` quick-start checklist item from "Begin your first module" to "Begin with one concept or technical unit."
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

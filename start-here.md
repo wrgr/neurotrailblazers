@@ -183,7 +183,7 @@ pathways:
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>5. Begin your first module!</span>
+                    <span>5. Begin with one concept or technical unit.</span>
                 </label>
             </div>
         </div>

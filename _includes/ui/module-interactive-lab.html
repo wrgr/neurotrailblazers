@@ -79,6 +79,8 @@
           <button type="button"
                   class="nt-hotspot"
                   data-hotspot-id="{{ spot.id }}"
+                  data-hotspot-x="{{ spot.x }}"
+                  data-hotspot-y="{{ spot.y }}"
                   style="left: {{ spot.x }}%; top: {{ spot.y }}%;">
             {{ spot.label | default: spot.id }}
           </button>

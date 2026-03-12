@@ -1,4 +1,6 @@
 (function () {
+  var calibrateMode = false;
+
   function toInt(value, fallback) {
     var n = parseInt(value, 10);
     return Number.isFinite(n) ? n : fallback;
@@ -152,11 +154,20 @@
     var block = root.querySelector('.nt-annotation');
     if (!block) return;
 
+    var canvas = block.querySelector('.nt-annotation-canvas');
     var hotspots = Array.from(block.querySelectorAll('.nt-hotspot'));
     var selectedNode = block.querySelector('.nt-annotation-selected');
     var feedbackNode = block.querySelector('.nt-annotation-feedback');
     var submit = block.querySelector('.nt-annotation-submit');
     var correctId = (block.getAttribute('data-correct-id') || '').trim();
+    var calibrationPanel = null;
+    var calibrationText = null;
+    var calibrationYaml = null;
+    var copyButton = null;
+
+    function currentSelectedId() {
+      return root.getAttribute('data-annotation-selected') || '';
+    }
 
     function setSelected(id) {
       root.setAttribute('data-annotation-selected', id || '');
@@ -167,6 +178,84 @@
       if (selectedNode) {
         selectedNode.textContent = 'Selected hotspot: ' + (id || 'none');
       }
+      updateCalibrationYaml();
+    }
+
+    function buildYamlLine(id, x, y) {
+      return '- id: ' + id + '\n  label: ' + id + '\n  x: ' + x.toFixed(1) + '\n  y: ' + y.toFixed(1);
+    }
+
+    function updateCalibrationYaml() {
+      if (!calibrationYaml) return;
+      var selected = currentSelectedId();
+      if (!selected) {
+        calibrationYaml.textContent = 'Select a hotspot to show a YAML snippet.';
+        return;
+      }
+      var btn = hotspots.find(function (h) { return h.getAttribute('data-hotspot-id') === selected; });
+      if (!btn) return;
+      var x = parseFloat(btn.getAttribute('data-hotspot-x') || '0');
+      var y = parseFloat(btn.getAttribute('data-hotspot-y') || '0');
+      calibrationYaml.textContent = buildYamlLine(selected, x, y);
+    }
+
+    function setHotspotPosition(btn, x, y) {
+      btn.style.left = x.toFixed(2) + '%';
+      btn.style.top = y.toFixed(2) + '%';
+      btn.setAttribute('data-hotspot-x', x.toFixed(2));
+      btn.setAttribute('data-hotspot-y', y.toFixed(2));
+      updateCalibrationYaml();
+    }
+
+    function setupCalibrationUi() {
+      if (!calibrateMode || !canvas) return;
+
+      calibrationPanel = document.createElement('div');
+      calibrationPanel.className = 'nt-calibration-panel';
+      calibrationPanel.innerHTML = '<p><strong>Calibration Mode</strong> enabled. Click image to inspect coordinates. Shift+click moves selected hotspot.</p>';
+
+      calibrationText = document.createElement('p');
+      calibrationText.className = 'nt-calibration-text';
+      calibrationText.textContent = 'Cursor coordinates: --';
+      calibrationPanel.appendChild(calibrationText);
+
+      calibrationYaml = document.createElement('pre');
+      calibrationYaml.className = 'nt-calibration-yaml';
+      calibrationYaml.textContent = 'Select a hotspot to show a YAML snippet.';
+      calibrationPanel.appendChild(calibrationYaml);
+
+      copyButton = document.createElement('button');
+      copyButton.type = 'button';
+      copyButton.className = 'btn btn-secondary';
+      copyButton.textContent = 'Copy YAML snippet';
+      copyButton.addEventListener('click', function () {
+        if (!calibrationYaml) return;
+        var text = calibrationYaml.textContent || '';
+        if (!text || text.indexOf('Select a hotspot') === 0) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).catch(function () {});
+        }
+      });
+      calibrationPanel.appendChild(copyButton);
+
+      block.appendChild(calibrationPanel);
+      updateCalibrationYaml();
+
+      canvas.addEventListener('click', function (evt) {
+        var rect = canvas.getBoundingClientRect();
+        var x = ((evt.clientX - rect.left) / rect.width) * 100;
+        var y = ((evt.clientY - rect.top) / rect.height) * 100;
+        if (calibrationText) {
+          calibrationText.textContent = 'Cursor coordinates: x=' + x.toFixed(1) + '%, y=' + y.toFixed(1) + '%';
+        }
+
+        if (!evt.shiftKey) return;
+        var selected = currentSelectedId();
+        if (!selected) return;
+        var btn = hotspots.find(function (h) { return h.getAttribute('data-hotspot-id') === selected; });
+        if (!btn) return;
+        setHotspotPosition(btn, x, y);
+      });
     }
 
     hotspots.forEach(function (btn) {
@@ -198,6 +287,7 @@
     }
 
     setSelected(root.getAttribute('data-annotation-selected') || '');
+    setupCalibrationUi();
   }
 
   function initProgress(root) {
@@ -264,6 +354,12 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    try {
+      var params = new URLSearchParams(window.location.search || '');
+      calibrateMode = params.get('calibrate') === '1';
+    } catch (err) {
+      calibrateMode = false;
+    }
     var roots = document.querySelectorAll('.nt-interactive-lab');
     roots.forEach(init);
   });

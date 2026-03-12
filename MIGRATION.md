@@ -752,3 +752,30 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Deep Rewrites: Modules 17 and 19)
+
+- **Module 17 rewritten from outline to capability unit**
+  - Replaced generic card content in `modules/module17.md` with:
+    - capability target
+    - concept set with misconception guardrails
+    - concrete connectomics writing workflow
+    - studio activity and deliverables
+    - assessment rubric
+    - evidence anchors (papers + datasets + competency checks)
+  - Metadata aligned to dissemination-stage scientific writing focus.
+
+- **Module 19 rewritten from outline to capability unit**
+  - Replaced generic card content in `modules/module19.md` with:
+    - capability target
+    - ethics and peer-review concept set grounded in connectomics workflows
+    - structured review/ethics workflow
+    - review-board simulation activity
+    - assessment rubric
+    - evidence anchors (papers + datasets + competency checks)
+  - Fixed metadata mismatch (`short_title`, `pipeline_stage`, `summary`) to match module topic.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

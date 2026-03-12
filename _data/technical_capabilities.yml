@@ -1,0 +1,280 @@
+units:
+  - slug: 01-why-map-the-brain
+    capability_statement: Frame a biologically meaningful connectomics question as a testable structural hypothesis with explicit evidence limits.
+    expertise:
+      - Systems neuroscientist (circuit-level question design)
+      - Connectomics methodologist (measurement feasibility)
+      - Quantitative scientist (hypothesis testing and null models)
+    core_concepts:
+      - term: Structural hypothesis
+        description: A claim that predicts measurable wiring patterns, not just broad functional outcomes.
+      - term: Evidence boundary
+        description: A pre-declared limit on what the data can and cannot support.
+      - term: Null model
+        description: A baseline connectivity expectation used to test whether observed motifs are enriched.
+    success_artifacts:
+      - One-page study brief with question, measurable outputs, and non-claims.
+      - Metric table linking each claim to required structural evidence.
+    studio_activity:
+      title: From Question to Test
+      objective: Convert an aspirational idea into a measurable connectomics plan.
+      prompt: Draft a hypothesis about local circuit organization and define exactly what evidence would falsify it.
+      steps:
+        - Write one biological question and one structural hypothesis.
+        - Define three measurable outputs and one null model.
+        - State two claims the dataset cannot support.
+      outputs:
+        - Hypothesis brief
+        - Measurement and limitation matrix
+
+  - slug: 02-brain-data-across-scales
+    capability_statement: Select an imaging and analysis scale that matches the biological question and resource constraints.
+    expertise:
+      - Neuroanatomist (multiscale structure-function context)
+      - Imaging scientist (resolution and sampling tradeoffs)
+      - Data engineer (compute and storage planning)
+    core_concepts:
+      - term: Scale-question fit
+        description: The chosen resolution and volume must capture the feature required by the hypothesis.
+      - term: Resolution-volume tradeoff
+        description: Higher resolution limits feasible volume unless infrastructure scales accordingly.
+      - term: Cross-scale linkage
+        description: Anchoring micron-to-nanometer information using shared landmarks or priors.
+    success_artifacts:
+      - Scale selection memo with justification and risk analysis.
+      - Data budget estimate (storage, throughput, annotation effort).
+    studio_activity:
+      title: Multiscale Design Exercise
+      objective: Pick the smallest sufficient dataset design for a defined question.
+      prompt: Given three candidate questions, select acquisition scale and defend tradeoffs.
+      steps:
+        - Match each question to minimum required structural feature.
+        - Choose feasible resolution and field-of-view.
+        - Estimate data and annotation budget.
+      outputs:
+        - Scale decision table
+        - Risk and mitigation notes
+
+  - slug: 03-em-prep-and-imaging
+    capability_statement: Diagnose EM preparation and imaging artifacts and apply QA gates before reconstruction.
+    expertise:
+      - EM prep specialist (staining, fixation, section quality)
+      - Imaging engineer (acquisition stability and calibration)
+      - Reconstruction lead (artifact impact on downstream tracing)
+    core_concepts:
+      - term: Artifact taxonomy
+        description: A consistent vocabulary for folds, tears, charging, blur, and alignment distortions.
+      - term: QA gate
+        description: A measurable acceptance threshold required before data moves downstream.
+      - term: Error propagation
+        description: How early imaging defects create false merges or splits later in the pipeline.
+    success_artifacts:
+      - Annotated artifact atlas with severity labels.
+      - QA checklist with pass/fail thresholds and escalation triggers.
+    studio_activity:
+      title: Artifact Triage Lab
+      objective: Classify artifacts and decide whether blocks pass acquisition QA.
+      prompt: Review sample tiles, assign severity, and recommend accept/rework/reacquire.
+      steps:
+        - Label visible defects using a shared rubric.
+        - Link defect type to expected downstream failure mode.
+        - Make release decision and justify thresholds.
+      outputs:
+        - Triage sheet
+        - QA release recommendation
+
+  - slug: 04-volume-reconstruction-infrastructure
+    capability_statement: Design a robust ingest-to-serving reconstruction pipeline with reproducibility and rollback controls.
+    expertise:
+      - Scientific data engineer (pipeline architecture)
+      - MLOps/platform engineer (orchestration and observability)
+      - Connectomics analyst (task-aware data product requirements)
+    core_concepts:
+      - term: Data lineage
+        description: Traceable provenance from raw imagery through model outputs and manual edits.
+      - term: SLOs for reconstruction
+        description: Target service levels for throughput, latency, integrity, and release cadence.
+      - term: Versioned releases
+        description: Immutable snapshots that allow rollback and cross-analysis reproducibility.
+    success_artifacts:
+      - Architecture diagram with failure domains and ownership.
+      - Release policy specifying lineage metadata and rollback criteria.
+    studio_activity:
+      title: Pipeline Incident Simulation
+      objective: Respond to a reconstruction release failure without losing reproducibility.
+      prompt: A new segmentation model improves speed but increases split errors in one region.
+      steps:
+        - Trace lineage to isolate affected outputs.
+        - Decide rollback, patch, or constrained release.
+        - Draft incident postmortem with prevention actions.
+      outputs:
+        - Incident response memo
+        - Updated release checklist
+
+  - slug: 05-neuronal-ultrastructure
+    capability_statement: Interpret ultrastructural features reproducibly to distinguish compartments and synaptic context.
+    expertise:
+      - Cellular neuroanatomist (organelle and compartment interpretation)
+      - Senior proofreader (decision consistency under ambiguity)
+      - Training lead (annotation rubric design)
+    core_concepts:
+      - term: Compartment cues
+        description: Features such as mitochondria density, microtubules, vesicle pools, and membrane morphology.
+      - term: Synaptic context
+        description: Interpreting cleft, vesicles, and postsynaptic density together rather than in isolation.
+      - term: Confidence tagging
+        description: Marking uncertain calls to prioritize expert review.
+    success_artifacts:
+      - Compartment annotation rubric with confidence levels.
+      - Inter-rater agreement report on a shared patch set.
+    studio_activity:
+      title: Ultrastructure Consensus Round
+      objective: Build consistency in compartment and synapse labeling.
+      prompt: Independently annotate the same patches, then reconcile disagreements.
+      steps:
+        - Label compartments and synaptic features individually.
+        - Compare disagreement hotspots and identify ambiguous cues.
+        - Update rubric decision rules.
+      outputs:
+        - Consensus annotations
+        - Rubric revision notes
+
+  - slug: 06-axons-and-dendrites
+    capability_statement: Classify neurites using multi-cue evidence and document uncertainty for downstream proofreading.
+    expertise:
+      - Neuroanatomist (neurite morphology and targeting patterns)
+      - Proofreading expert (error pattern recognition)
+      - Computational morphologist (feature extraction and validation)
+    core_concepts:
+      - term: Multi-cue classification
+        description: Combining local texture, branching pattern, vesicles, and synaptic polarity cues.
+      - term: Local vs global context
+        description: Avoiding overconfidence from small patches by checking longer process trajectories.
+      - term: Ambiguity escalation
+        description: Structured handoff when cues conflict or confidence remains low.
+    success_artifacts:
+      - Axon/dendrite decision rubric with ambiguity pathways.
+      - Quality log of difficult cases and final adjudications.
+    studio_activity:
+      title: Neurite Identity Challenge
+      objective: Reduce false identity calls and improve escalation behavior.
+      prompt: Classify borderline neurites and justify each call with at least two independent cues.
+      steps:
+        - Assign preliminary identity and confidence level.
+        - Seek confirming or contradictory evidence along the process.
+        - Escalate unresolved cases using rubric rules.
+      outputs:
+        - Labeled casebook
+        - Escalation summary
+
+  - slug: 07-glia
+    capability_statement: Identify major glial classes and prevent glia-neuron boundary errors in reconstruction workflows.
+    expertise:
+      - Glia biologist (cell-class and functional context)
+      - EM proofreader (boundary and myelin interpretation)
+      - QC lead (error auditing and process controls)
+    core_concepts:
+      - term: Glia class cues
+        description: Distinctive ultrastructural signatures for astrocytic, oligodendroglial, and microglial profiles.
+      - term: Myelin context
+        description: Interpreting sheaths and associated processes to avoid identity leakage.
+      - term: Boundary integrity
+        description: Maintaining consistent neuron-glia separation across long trajectories.
+    success_artifacts:
+      - Glia identification quick-reference guide.
+      - Boundary error audit with prioritized correction rules.
+    studio_activity:
+      title: Glia Boundary Audit
+      objective: Detect and correct glia-neuron confusions in realistic proofreading samples.
+      prompt: Audit mixed patches and classify all uncertain boundaries by error type.
+      steps:
+        - Identify glial signatures and map candidate boundaries.
+        - Tag high-risk boundary zones for targeted review.
+        - Propose correction order based on downstream impact.
+      outputs:
+        - Boundary audit table
+        - Prioritized correction queue
+
+  - slug: 08-segmentation-and-proofreading
+    capability_statement: Run a production-ready proofreading workflow that prioritizes corrections by scientific impact.
+    expertise:
+      - Segmentation scientist (model behavior and failure modes)
+      - Proofreading operations lead (queueing and throughput strategy)
+      - Quantitative QC analyst (precision/recall and uncertainty metrics)
+    core_concepts:
+      - term: Merge/split taxonomy
+        description: Standardized categorization of topological reconstruction errors.
+      - term: Impact-weighted triage
+        description: Prioritizing corrections that most affect downstream biological conclusions.
+      - term: Quality reporting
+        description: Translating correction activity into interpretable, reproducible QC metrics.
+    success_artifacts:
+      - Proofreading SOP with triage rules and escalation criteria.
+      - QC dashboard definition with required metrics and update cadence.
+    studio_activity:
+      title: Proofreading Queue Optimization
+      objective: Balance correction quality and throughput under limited expert time.
+      prompt: Design and justify a triage strategy for a backlog of mixed-severity errors.
+      steps:
+        - Classify queue items by error type and scientific impact.
+        - Define thresholds for immediate correction versus defer.
+        - Simulate one review cycle and report outcomes.
+      outputs:
+        - Queue triage policy
+        - Cycle metrics summary
+
+  - slug: 09-connectome-analysis-neuroai
+    capability_statement: Build defensible connectome analysis workflows with robust statistical controls and reproducible inference.
+    expertise:
+      - Network neuroscientist (graph and motif interpretation)
+      - ML scientist (representation learning and model validation)
+      - Statistician (null models, uncertainty, and multiple testing)
+    core_concepts:
+      - term: Motif inference
+        description: Testing whether local wiring motifs exceed chance under appropriate null models.
+      - term: Representation validity
+        description: Verifying that learned embeddings preserve biologically meaningful structure.
+      - term: Inference discipline
+        description: Separating exploratory findings from confirmatory claims.
+    success_artifacts:
+      - Analysis plan with preregistered tests and null models.
+      - Reproducible notebook/report package with provenance metadata.
+    studio_activity:
+      title: Motif-to-Model Pipeline Lab
+      objective: Run a complete analysis from graph extraction to interpretable statistical output.
+      prompt: Evaluate a candidate microcircuit hypothesis and report robustness checks.
+      steps:
+        - Define graph representation and candidate motifs.
+        - Run null-model comparisons and correction for multiplicity.
+        - Summarize what is supported, uncertain, and not supported.
+      outputs:
+        - Analysis report
+        - Reproducibility checklist
+
+  - slug: atlas-connectomics-reference
+    capability_statement: Curate a trustworthy connectomics reference atlas with transparent metadata and evidence quality signals.
+    expertise:
+      - Information scientist (taxonomy and metadata schemas)
+      - Domain editor (method and dataset quality review)
+      - Reproducibility lead (citation and versioning standards)
+    core_concepts:
+      - term: Metadata completeness
+        description: Minimum descriptive fields required for responsible reuse.
+      - term: Evidence grading
+        description: Explicit quality and maturity signals for methods, datasets, and tools.
+      - term: Reference maintenance
+        description: Scheduled review and change tracking to keep entries current.
+    success_artifacts:
+      - Atlas entry template and quality checklist.
+      - Curated starter index with versioned citations.
+    studio_activity:
+      title: Atlas Entry Sprint
+      objective: Produce publishable reference entries with complete metadata and quality notes.
+      prompt: Curate three resources and grade each for maturity, scope, and limitations.
+      steps:
+        - Complete metadata schema for each resource.
+        - Write plain-language summaries with explicit limits.
+        - Assign quality tier and review schedule.
+      outputs:
+        - Three atlas-ready entries
+        - Editorial review notes

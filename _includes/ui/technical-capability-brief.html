@@ -1,0 +1,57 @@
+{% assign cap = site.data.technical_capabilities.units | where: 'slug', page.slug | first %}
+{% if cap %}
+<section class="section">
+  <h2>Capability development brief</h2>
+  <p><strong>Capability target:</strong> {{ cap.capability_statement }}</p>
+
+  {% if cap.expertise %}
+  <h3>Required expertise</h3>
+  <ul>
+    {% for role in cap.expertise %}
+    <li>{{ role }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if cap.core_concepts %}
+  <h3>Core concepts to teach</h3>
+  <ul>
+    {% for concept in cap.core_concepts %}
+    <li><strong>{{ concept.term }}:</strong> {{ concept.description }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if cap.studio_activity %}
+  <h3>Studio activity</h3>
+  <p><strong>{{ cap.studio_activity.title }}</strong> - {{ cap.studio_activity.objective }}</p>
+  <p>{{ cap.studio_activity.prompt }}</p>
+
+  {% if cap.studio_activity.steps %}
+  <ol>
+    {% for step in cap.studio_activity.steps %}
+    <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if cap.studio_activity.outputs %}
+  <p><strong>Expected outputs:</strong></p>
+  <ul>
+    {% for output in cap.studio_activity.outputs %}
+    <li>{{ output }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endif %}
+
+  {% if cap.success_artifacts %}
+  <h3>Assessment artifacts</h3>
+  <ul>
+    {% for artifact in cap.success_artifacts %}
+    <li>{{ artifact }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endif %}

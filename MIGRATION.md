@@ -638,3 +638,28 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Capability-First Authoring Layer)
+
+- **Structured capability data for all technical units**
+  - Added `_data/technical_capabilities.yml` with per-unit:
+    - `capability_statement`
+    - `expertise` roles
+    - `core_concepts` (term + plain-language description)
+    - `studio_activity` (objective, prompt, steps, outputs)
+    - `success_artifacts`
+  - This enables consistent capability development independent of legacy module framing.
+
+- **Automatic page rendering of capability briefs**
+  - Added `_includes/ui/technical-capability-brief.html`.
+  - Updated `_layouts/page.html` to auto-include capability briefs on technical unit pages (same scope/exclusions as concept-link include).
+  - Result: each technical unit now surfaces required expertise, concept payload, activity design, and assessment artifacts in-page.
+
+- **Production workflow support docs**
+  - Added `course/capability-development-plan.md` defining 1x1 execution model, ownership lanes, definition of done, and prioritized unit order.
+  - Added `course/templates/capability-spec-template.md` for unit-level authoring and SME review.
+  - Updated `course/workboard.md` to track `capability_status` in addition to draft status.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

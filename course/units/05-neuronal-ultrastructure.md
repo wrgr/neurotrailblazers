@@ -1,7 +1,8 @@
 ---
 unit_slug: "05-neuronal-ultrastructure"
 unit_title: "Neuronal Ultrastructure"
-status: draft_ready
+status: review_needed
+capability_status: activity_drafted
 primary_sources:
   - /Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/metadata/figure_registry.csv
 secondary_sources:
@@ -11,7 +12,7 @@ mapped_modules:
   - module09
   - module11
 selected_figures_file: course/units/figures/05-neuronal-ultrastructure-selected-v1.md
-last_updated: 2026-03-10
+last_updated: 2026-03-11
 ---
 
 # Unit: Neuronal Ultrastructure
@@ -67,6 +68,11 @@ See: `course/units/figures/05-neuronal-ultrastructure-selected-v1.md`
 ## Open issues
 - Add concise glossary that can be shared with Units 06/07/08.
 - Add one short self-check quiz block for morphology recognition.
+
+## Capability deepening pass (2026-03-11)
+- Added explicit concept payload blocks (definition, plain-language translation, misconception guardrails).
+- Added full studio activity structure with outputs tied to consensus quality.
+- Added assessment rubric tiers (minimum pass, strong performance, failure modes).
 
 ## Scope check (expert pass)
 - Include clear compartment boundaries: soma, dendrite, axon, bouton, spine, synapse.

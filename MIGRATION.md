@@ -663,3 +663,27 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Capability Deepening Pass: Unit 05)
+
+- **Unit 05 content expansion (`technical-training/05-neuronal-ultrastructure.md`)**
+  - Added explicit technical scope and measurable capability target.
+  - Added concept payload section with:
+    - technical definition framing
+    - plain-language explanation
+    - misconception guardrails
+  - Added a full studio activity design:
+    - scenario
+    - task sequence
+    - expected outputs
+  - Added unit-level assessment rubric with pass/strong/failure criteria.
+
+- **Production tracking updates**
+  - Updated `course/units/05-neuronal-ultrastructure.md` status metadata and deepening notes.
+  - Updated `course/workboard.md`:
+    - unit status set to `review_needed`
+    - capability status set to `activity_drafted`
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

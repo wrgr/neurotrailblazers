@@ -12,14 +12,37 @@ pathways:
 ## Why this unit
 Ultrastructure is the operational visual language of connectomics annotation and quality control.
 
+## Technical scope
+This unit focuses on EM-visible structural evidence used for compartment identity and synapse interpretation in connectomics workflows. It does not attempt full molecular cell-biology coverage; it emphasizes reproducible decisions under real proofreading constraints.
+
 ## Learning goals
 - Identify core neuronal ultrastructural features in EM data.
 - Apply context-aware interpretation with explicit uncertainty.
+- Produce annotation decisions that can be audited by a second reviewer.
+
+## Capability target
+Given ambiguous EM patches, learners should make compartment and synapse calls using multi-cue evidence, attach confidence labels, and justify unresolved uncertainty without overclaiming.
 
 ## Core technical anchors
 - Compartments: soma, dendrite, axon, bouton, spine.
 - Cues: vesicles, PSD/active zone, mitochondria, ER, microtubules.
 - Multi-slice context before final annotation decisions.
+
+## Concept payload (teach explicitly)
+### 1) Compartment cues are evidence, not labels
+- Technical: compartments are inferred from combined morphology plus organellar context.
+- Plain language: one clue is never enough; you need multiple clues that agree.
+- Misconception to prevent: "small process = axon" (size alone is unreliable).
+
+### 2) Synapse interpretation is contextual
+- Technical: synapse calls require membrane apposition plus vesicle/PSD context across adjacent slices.
+- Plain language: if you cannot see the neighborhood, you cannot trust a single-frame synapse guess.
+- Misconception to prevent: "dark contrast means synapse" (contrast alone is not specific).
+
+### 3) Uncertainty is an output, not a failure
+- Technical: confidence tags preserve downstream QC integrity and guide expert review queues.
+- Plain language: saying "not sure yet" with reasons is better science than forcing a wrong label.
+- Misconception to prevent: "every patch must end with a hard label."
 
 ## Method deep dive: compartment-level decision protocol
 1. Start with local geometry (diameter changes, branching pattern, cytoplasmic density).
@@ -91,6 +114,37 @@ Ultrastructure is the operational visual language of connectomics annotation and
 2. Evaluate ultrastructural cues across adjacent slices.
 3. Assign provisional interpretation with confidence level.
 4. Escalate ambiguous cases for secondary review.
+
+## Studio activity: Ultrastructure consensus round
+**Format:** 60-75 minutes, small groups, shared patch set.
+
+**Scenario:** Your team is preparing a training-ready annotation subset for downstream segmentation QC. The subset contains borderline cases where compartment and synapse interpretation is uncertain.
+
+**Task sequence**
+1. Independently label each patch: compartment, synapse status, confidence tier.
+2. Record two supporting cues and one uncertainty per patch.
+3. Compare labels within group and classify disagreements by type (cue conflict, context missing, vocabulary mismatch).
+4. Resolve what can be resolved with available context; escalate true ambiguities.
+5. Update one rubric rule to reduce future disagreement.
+
+**Expected outputs**
+- Consensus annotation sheet.
+- Disagreement log with error-type counts.
+- One rubric revision note with rationale.
+
+## Assessment rubric (unit-level)
+- **Minimum pass**
+  - Uses at least two independent cues per call.
+  - Applies confidence tags consistently.
+  - Distinguishes unresolved ambiguity from error.
+- **Strong performance**
+  - Cites context across slices, not only local texture.
+  - Produces clear disagreement taxonomy and escalation decisions.
+  - Improves rubric clarity based on observed disagreements.
+- **Common failure modes to flag**
+  - Single-cue decisions presented as definitive.
+  - Synapse calls without neighborhood evidence.
+  - Missing or inconsistent confidence labeling.
 
 ## Discussion prompts
 - Which ultrastructural cues are most robust across annotators?

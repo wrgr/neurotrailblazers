@@ -19,7 +19,7 @@
 ## Queue
 | Unit | Status | Capability status | Priority | Primary source set | Notes |
 |---|---|---|---:|---|---|
-| 05-neuronal-ultrastructure | draft_ready | scoped | 1 | frompat (`RIV-ULTRA`) | strongest mature source; start capability deepening here |
+| 05-neuronal-ultrastructure | review_needed | activity_drafted | 1 | frompat (`RIV-ULTRA`) | first full capability deepening pass applied on web + unit draft |
 | 07-glia | draft_ready | scoped | 2 | frompat (`RIV-GLIA`) | high-value gap area; promote dedicated expertise pass |
 | 08-segmentation-and-proofreading | draft_ready | scoped | 3 | frompat + assets_outreach (`module14-lesson2`) | convert to impact-weighted operations activity set |
 | 09-connectome-analysis-neuroai | draft_ready | scoped | 4 | neuroAI + assets_outreach (`module13-lesson3`) | deepen statistical validity and inference constraints |

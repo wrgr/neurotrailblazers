@@ -20,6 +20,7 @@ summary: "Three-track learning architecture aligned to Fadel dimensions."
 
   <section class="section">
     <p>NeuroTrailblazers is organized around three tracks aligned to the Fadel dimensions: <strong>Knowledge</strong>, <strong>Skills</strong>, <strong>Character</strong>, and <strong>Meta-learning</strong>.</p>
+    <p><strong>Featured:</strong> the canonical technical connectomics course is available at <a href="{{ '/technical-training/' | relative_url }}">Technical Training: Nanoscale Connectomics</a>.</p>
   </section>
 
   <section class="section">

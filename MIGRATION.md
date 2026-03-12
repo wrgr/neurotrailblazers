@@ -613,3 +613,28 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Concept Links Embedded in Technical Units)
+
+- **Reusable technical-unit concept include**
+  - Added `_includes/ui/technical-unit-concepts.html`.
+  - For technical unit pages, this include surfaces:
+    - related concept summaries
+    - direct links into pre-filtered Concept Explorer views
+    - learner-need tags for quick pivoting
+
+- **Layout-level integration**
+  - Updated `_layouts/page.html` to auto-include `ui/technical-unit-concepts.html` for `/technical-training/*` unit pages.
+  - Explicitly excluded:
+    - `/technical-training/` hub
+    - `/technical-training/slides/*`
+    - `/technical-training/journal-club/*`
+    - `/technical-training/dictionary/*`
+  - Result: unit pages get concept context automatically without per-page edits.
+
+- **Track hub prominence for technical course**
+  - Updated `tracks/index.md` with an explicit featured link to the canonical technical course.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

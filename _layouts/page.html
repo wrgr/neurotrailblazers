@@ -5,4 +5,9 @@ layout: default
 <div class="layout-content layout-page">
   {% include ui/page-hero.html %}
   {{ content }}
+  {% if page.url contains '/technical-training/' and page.url != '/technical-training/' %}
+  {% unless page.url contains '/technical-training/slides/' or page.url contains '/technical-training/journal-club/' or page.url contains '/technical-training/dictionary/' %}
+  {% include ui/technical-unit-concepts.html %}
+  {% endunless %}
+  {% endif %}
 </div>

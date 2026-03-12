@@ -1,25 +1,25 @@
 ---
-title: "Module 12: Functional Annotation and Synapse Typing"
+title: "Module 12: Big Data in Connectomics"
 layout: module
 permalink: /modules/module12/
-description: "Explore how functional roles of synapses and neurons are assigned through morphology and location."
+description: "Design scalable data storage, querying, and analysis workflows for petascale connectomics datasets."
 module_number: 12
 difficulty: "Advanced"
-duration: "3-4 hours"
+duration: "4-5 hours"
 learning_objectives:
-  - "Describe structural features that correlate with synaptic function"
-  - "Classify synapse types from EM images"
-  - "Use anatomical position to infer circuit roles"
-  - "Compare functional maps with segmentation data"
-prerequisites: "Modules 1-11, EM segmentation, neuroanatomy basics"
+  - "Describe core architecture patterns for petascale connectomics data"
+  - "Plan compute, storage, and indexing strategies for large EM volumes"
+  - "Implement query workflows that preserve provenance and reproducibility"
+  - "Identify bottlenecks and failure modes in large-scale analysis pipelines"
+prerequisites: "Modules 1-11, Python and basic data engineering familiarity"
 merit_stage: "Analysis"
 compass_skills:
-  - "Biological Reasoning"
-  - "Classification"
-  - "Structure-Function Mapping"
+  - "Systems Reasoning"
+  - "Data Engineering"
+  - "Reproducibility"
 ccr_focus:
-  - "Knowledge - Neurobiology"
-  - "Skills - Morphological Analysis"
+  - "Knowledge - Large-Scale Data Systems"
+  - "Skills - Scalable Analysis"
 
 # Normalized metadata
 slug: "module12"
@@ -30,96 +30,132 @@ audience:
 pipeline_stage: "Analysis"
 merit_row_focus: "Analysis"
 topics:
-  - "synapses"
-  - "functional-annotation"
-summary: "Storage, querying, and scale-aware design for big-data-scale connectomics with functional synapse typing."
-key_questions: []
+  - "big-data"
+  - "infrastructure"
+  - "query-systems"
+summary: "Scalable storage, indexing, and reproducible query design for connectomics datasets."
+key_questions:
+  - "How do we architect data systems for petascale connectomics?"
+  - "Which indexing/query decisions drive analysis speed and reliability?"
+  - "How do we preserve provenance at scale?"
 slides:
   - "/assets/slides/module12/module12-big-data-in-connectomics.pdf"
 notebook:
   - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
   - "/notebooks/intro/DashSynapseExplorer.ipynb"
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/mouseconnects"
+  - "/datasets/workflow"
 personas:
-  - gradstudent
-  - researcher
-  - mentor
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
+  - "/avatars/mentor"
 related_tools:
-  - connectome-quality
-  - ask-an-expert
+  - "/tools/connectome-quality/"
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
-prerequisites_list: []
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Basic SQL/Python dataframe proficiency"
+  - "Familiarity with EM volume structure"
 next_modules:
-  - module13
-  - module14
-references: []
+  - "module13"
+  - "module14"
+references:
+  - "H01 human cortical fragment release and infrastructure notes."
+  - "MICrONS data platform documentation."
+  - "Januszewski et al. (2018) for scalable reconstruction context."
 videos: []
 downloads:
   - "/notebooks/intro/DashSynapseExplorer.ipynb"
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🧰 Synapse Features and Functions</h2>
-    <p>Different synapse types can be inferred from structural features such as size, vesicle count, and shape. This section introduces inhibitory vs. excitatory markers.</p>
-    <ul>
-      <li>Pre- and post-synaptic structures</li>
-      <li>Active zone characteristics</li>
-      <li>Neurotransmitter vesicle morphologies</li>
-    </ul>
-  </div>
+## Why this module matters
+Connectomics is now data-system-limited as much as algorithm-limited. If learners cannot reason about throughput, storage, and indexing, they cannot execute reliable analyses on real datasets.
 
-  <div class="card module-card">
-    <h2>🤸️‍♂️ Cell Type and Functional Mapping</h2>
-    <p>Neuronal identity and location help interpret the roles of different synapses in a network.</p>
-    <ul>
-      <li>Inferred excitatory/inhibitory types</li>
-      <li>Comparison with known circuit motifs</li>
-      <li>Labeling by functional markers</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Data architecture is scientific method infrastructure
+- **Technical:** storage format, chunking, and indexing influence what questions are tractable.
+- **Plain language:** bad architecture can make good science impossible.
+- **Misconception guardrail:** compute scale alone does not solve poor data design.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Neuroanatomy, cell types, neurotransmission</li>
-      <li><strong>Skills:</strong> Functional labeling, inference from structure</li>
-      <li><strong>Character:</strong> Curiosity, attention to biological meaning</li>
-      <li><strong>Meta-Learning:</strong> Bridging structure and function iteratively</li>
-    </ul>
-  </div>
+### 2) Query cost is a research variable
+- **Technical:** query plans and index locality affect reproducibility, latency, and iteration speed.
+- **Plain language:** how you ask the data matters as much as what you ask.
+- **Misconception guardrail:** "it runs eventually" is not acceptable for iterative science.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Harris & Weinberg, 2012. <em>Ultrastructure of synapses</em>. Brain Res.</li>
-      <li>Scheffer et al., 2020. <em>A connectome and analysis of the adult Drosophila central brain</em>. eLife.</li>
-      <li>Colab: "Synapse Type Classification from Morphology"</li>
-      <li>Notebook: <a href="{{ '/notebooks/intro/DashSynapseExplorer.ipynb' | relative_url }}">Dash Synapse Explorer</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/DashSynapseExplorer.ipynb" target="_blank">source</a>)</li>
-    </ul>
-  </div>
+### 3) Provenance must be first-class
+- **Technical:** every output should include dataset version, query definition, environment, and transform lineage.
+- **Plain language:** if you cannot reconstruct your output path, you cannot defend your result.
+- **Misconception guardrail:** notebook history alone is insufficient provenance.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Label synapse types from EM snapshots</li>
-      <li>Correlate synapse positions with known neuron roles</li>
-      <li>Describe confidence level and biological rationale</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Hidden curriculum scaffold
+- Unwritten engineering expectations in connectomics teams:
+  - benchmark before optimizing.
+  - record query versions for every figure table.
+  - separate exploratory scripts from release pipelines.
+- How to teach explicitly:
+  - require query provenance fields in assignments.
+  - include failure-postmortem mini-reviews.
+  - grade reproducibility alongside correctness.
+
+## Core workflow: scalable query planning
+1. Define analysis question and required data granularity.
+2. Select storage/index strategy aligned to access pattern.
+3. Prototype baseline query and profile bottlenecks.
+4. Add provenance logging and version controls.
+5. Validate reproducibility and publish query package.
+
+## 60-minute tutorial run-of-show
+1. **00:00-08:00 | Architecture framing and failure examples**
+2. **08:00-20:00 | Access-pattern to index mapping exercise**
+3. **20:00-34:00 | Query profiling and bottleneck diagnosis**
+4. **34:00-46:00 | Provenance logging implementation**
+5. **46:00-56:00 | Team review of reproducibility gaps**
+6. **56:00-60:00 | Competency check and next-step assignment**
+
+## Studio activity: petascale query design lab
+**Scenario:** Your team must deliver a weekly motif-analysis report from a multi-terabyte connectomics store.
+
+**Tasks**
+1. Propose storage/index layout for expected query patterns.
+2. Write or outline two critical queries and estimate performance risk.
+3. Define minimum provenance fields for outputs.
+4. Produce one optimization proposal and one reproducibility safeguard.
+
+**Expected outputs**
+- Query architecture sketch.
+- Baseline vs optimized query plan.
+- Provenance checklist.
+
+## Assessment rubric
+- **Minimum pass**
+  - Query design matches analysis goal and data shape.
+  - Provenance requirements are explicit and actionable.
+  - Bottlenecks are identified with one realistic mitigation.
+- **Strong performance**
+  - Separates exploratory and production query paths.
+  - Quantifies tradeoffs (latency, cost, reproducibility).
+  - Anticipates failure recovery and rollback needs.
+- **Common failure modes**
+  - Index choices disconnected from query workload.
+  - Missing version metadata in outputs.
+  - Optimization attempts without benchmark baseline.
+
+## Teaching resources
+- Workflow context: [Connectomics Workflow]({{ '/datasets/workflow' | relative_url }})
+- Dataset context: [MouseConnects]({{ '/datasets/mouseconnects' | relative_url }})
+- Notebook: [Dash Synapse Explorer]({{ '/notebooks/intro/DashSynapseExplorer.ipynb' | relative_url }})
+- Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Quick practice prompt
+Document one query you use with:
+1. data source/version,
+2. expected runtime class,
+3. one provenance field you currently miss.

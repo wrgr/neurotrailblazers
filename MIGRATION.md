@@ -863,3 +863,27 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Deep Rewrites: Modules 12-13)
+
+- **Module 12 rewritten and aligned**
+  - Replaced mismatched "functional annotation" placeholder in `modules/module12.md` with a full `Big Data in Connectomics` capability module.
+  - Added:
+    - concept set with misconception guardrails
+    - hidden-curriculum scaffold for data-engineering norms
+    - 60-minute run-of-show
+    - studio activity, rubric, and resource links
+  - Metadata now aligned to normalized `short_title` and analysis-stage infrastructure focus.
+
+- **Module 13 deepened**
+  - Replaced generic data-science cards in `modules/module13.md` with a full `Machine Learning in Neuroscience` capability module.
+  - Added:
+    - leakage-aware ML concepts
+    - hidden-curriculum scaffold for responsible model reporting
+    - 60-minute run-of-show
+    - studio activity, rubric, and resource links
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

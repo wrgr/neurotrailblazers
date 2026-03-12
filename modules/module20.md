@@ -1,22 +1,25 @@
 ---
-
-title: "Module 20: Grant Writing and Funding Pathways"
+title: "Module 20: Statistical Models and Inference for Connectomics"
 layout: module
 permalink: /modules/module20/
-description: "Learn the basics of research grant writing and explore common funding mechanisms for early-stage scientists."
+description: "Build defensible statistical inference workflows for connectomics analyses, from null models to uncertainty reporting."
 module_number: 20
 difficulty: "Advanced"
-duration: "3-4 hours"
+duration: "4-6 hours"
 learning_objectives:
-
-- "Understand the structure of a standard grant proposal"
-- "Identify common early-career funding mechanisms"
-- "Develop aims and significance statements"
-- "Plan budgets and timelines for proposed work"
-prerequisites: "Modules 1-19"
-merit_stage: "Dissemination"
-compass_skills: ["Strategic Planning", "Written Communication", "Resource Awareness"]
-ccr_focus: ["Skills - Grant Writing", "Knowledge - Research Landscape"]
+  - "Choose statistical models aligned to connectomics question types"
+  - "Construct and justify appropriate null models for graph analyses"
+  - "Control multiplicity and uncertainty in high-dimensional motif tests"
+  - "Report inferential claims with explicit assumptions and limits"
+prerequisites: "Modules 12-19, including graph-analysis familiarity"
+merit_stage: "Analysis"
+compass_skills:
+  - "Statistical Reasoning"
+  - "Model Critique"
+  - "Reproducible Analysis"
+ccr_focus:
+  - "Skills - Statistical Inference"
+  - "Character - Epistemic Humility"
 
 # Normalized metadata
 slug: "module20"
@@ -27,90 +30,132 @@ audience:
 pipeline_stage: "Analysis"
 merit_row_focus: "Analysis"
 topics:
-  - "grants"
-  - "funding"
-summary: "Modeling techniques to interpret neural data and foundational skills for grant writing and funding pathways."
-key_questions: []
+  - "inference"
+  - "null-models"
+  - "uncertainty"
+  - "multiple-testing"
+summary: "Design and critique statistical inference pipelines for connectomics with clear assumptions and reproducible outputs."
+key_questions:
+  - "Which null model is valid for this connectome hypothesis?"
+  - "How should multiplicity be handled across motif families?"
+  - "What claims are robust versus exploratory?"
 slides: []
-notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
-prerequisites_list: []
-next_modules: []
-references: []
-videos: []
+notebook:
+  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
+datasets:
+  - "/datasets/workflow"
+  - "/datasets/mouseconnects"
+personas:
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
+related_tools:
+  - "/tools/connectome-quality/"
+related_frameworks:
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Basic probability/statistics"
+  - "Graph representation concepts"
+next_modules:
+  - "module21"
+references:
+  - "Bassett, Zurn, and Gold (2018) - model use in network neuroscience."
+  - "Januszewski et al. (2018) - segmentation performance and uncertainty context."
+  - "MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints."
+videos:
+  - "https://www.neurotrailblazers.org/technical-training/09-connectome-analysis-neuroai/"
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Design and execute a connectomics inference plan that includes null-model choice, multiplicity control, uncertainty reporting, and explicit claim boundaries.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>📄 Anatomy of a Grant Proposal</h2>
-    <p>Explore the key sections of a grant proposal and their function in convincing reviewers to support your project.</p>
-    <ul>
-      <li>Specific Aims and Significance</li>
-      <li>Innovation and Approach</li>
-      <li>Biosketches and supporting documents</li>
-    </ul>
-  </div>
+## Why this module matters
+Connectomics analyses can produce thousands of statistically testable patterns. Without disciplined inference, teams risk publishing artifacts from preprocessing bias, multiple comparisons, or misaligned null assumptions.
 
-  <div class="card module-card">
-    <h2>📚 Finding Funding</h2>
-    <p>There are many funding sources for early-stage researchers. Learn how to match your work to the right opportunities.</p>
-    <ul>
-      <li>NIH F-series, K-series, and R-series grants</li>
-      <li>NSF graduate fellowships and research supplements</li>
-      <li>Private foundations and institutional seed funds</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Null models encode scientific assumptions
+- **Technical:** null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.
+- **Plain language:** your "chance baseline" must reflect biology and data collection realities.
+- **Misconception guardrail:** a generic random graph is rarely an adequate connectomics null.
 
-  <div class="card module-card">
-    <h2>📊 Budgeting and Timelines</h2>
-    <p>Plan a realistic scope of work with clear milestones and appropriate resource requests.</p>
-    <ul>
-      <li>Modular vs. detailed budgets</li>
-      <li>Personnel, equipment, and travel costs</li>
-      <li>Timeline Gantt charts</li>
-    </ul>
-  </div>
+### 2) Multiplicity is structural, not optional
+- **Technical:** motif families and subgroup analyses require correction strategies and predeclared test hierarchies.
+- **Plain language:** if you test many patterns, some will look significant by accident.
+- **Misconception guardrail:** reporting only p-values without multiplicity context is incomplete.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Funding agencies and mechanisms</li>
-      <li><strong>Skills:</strong> Grant writing, planning</li>
-      <li><strong>Character:</strong> Initiative, strategic thinking</li>
-      <li><strong>Meta-Learning:</strong> Learning through proposal iteration and feedback</li>
-    </ul>
-  </div>
+### 3) Exploratory and confirmatory analyses must be separated
+- **Technical:** hypothesis generation and hypothesis testing should have different reporting labels and evidence standards.
+- **Plain language:** be clear about what you discovered versus what you validated.
+- **Misconception guardrail:** post-hoc storytelling is not confirmatory inference.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li><a href="https://grants.nih.gov/grants/grants_process.htm">NIH Grants 101</a></li>
-      <li><a href="https://www.nsfgrfp.org/">NSF GRFP Program</a></li>
-      <li>Colab: "Grant Planning Toolkit and Budget Worksheet"</li>
-    </ul>
-  </div>
+## Core workflow: connectomics inference protocol
+1. **Question-to-test mapping**
+   - Convert biological question into estimand(s), test set, and effect-size target.
+2. **Null-model design**
+   - Define null constraints and why they preserve key confounders.
+3. **Inference execution**
+   - Run model/tests with preregistered thresholds and multiplicity controls.
+4. **Robustness checks**
+   - Test sensitivity to preprocessing variant, sampling region, and parameter choice.
+5. **Claim calibration**
+   - Report supported, uncertain, and unsupported claims in separate blocks.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Write a 1-page draft of Specific Aims</li>
-      <li>Identify 3 potential funding sources and summarize their fit</li>
-      <li>Draft a budget and timeline for a sample project</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Studio activity: motif inference challenge
+**Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
+
+**Tasks**
+1. Propose at least two candidate null models and justify each.
+2. Run or outline multiplicity-aware testing strategy across motif set.
+3. Draft a results summary separating exploratory and confirmatory findings.
+4. Add one robustness check for cross-dataset comparability.
+
+**Expected outputs**
+- Inference design sheet (estimand, null, tests, correction).
+- One-page claim calibration summary.
+- Robustness plan with pass/fail criteria.
+
+## Assessment rubric
+- **Minimum pass**
+  - Null model is justified and constraints are explicit.
+  - Multiplicity handling is documented and applied.
+  - Claims are partitioned by confidence level.
+- **Strong performance**
+  - Demonstrates sensitivity analysis against preprocessing and sampling choices.
+  - Reports effect sizes and uncertainty, not significance alone.
+  - Provides clear boundaries on generalization.
+- **Common failure modes**
+  - Null model choice disconnected from biological question.
+  - Selective reporting of significant outcomes.
+  - Conflation of exploratory signal with validated inference.
+
+## Teaching resources
+- Core unit context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+- Reading support: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Dataset workflow context: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- Quality controls context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Evidence anchors from connectomics practice
+### Key papers to use in this module
+- [Bassett, Zurn, and Gold (2018)](https://doi.org/10.1038/s41583-018-0038-8)
+- [Januszewski et al. (2018)](https://doi.org/10.1038/s41592-018-0049-4)
+- [MICrONS visual cortex reconstruction (Nature, 2025)](https://www.nature.com/articles/s41586-025-08790-w)
+
+### Key datasets to practice on
+- [MICrONS Explorer](https://www.microns-explorer.org/)
+- [FlyWire](https://flywire.ai/)
+- [neuPrint Hemibrain](https://neuprint.janelia.org/)
+
+### Competency checks
+- Can you defend your null-model assumptions in one paragraph?
+- Can you report one finding with effect size, uncertainty, and limitation?
+- Can you identify which result remains exploratory?
+
+## Quick practice prompt
+Write a 6-8 sentence inference note that includes:
+1. hypothesis and estimand,
+2. null-model assumptions,
+3. multiplicity strategy,
+4. one robust conclusion and one unresolved uncertainty.

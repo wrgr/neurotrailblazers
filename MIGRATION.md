@@ -779,3 +779,19 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Deep Rewrite: Module 20)
+
+- **Module 20 topic realignment and rewrite**
+  - Replaced `modules/module20.md` grant-writing placeholder content with a full connectomics-focused module:
+    - new title: "Statistical Models and Inference for Connectomics"
+    - capability target, concept set, and misconception guardrails
+    - null-model and multiplicity-aware inference workflow
+    - studio activity and rubric
+    - evidence anchors (papers + datasets + competency checks)
+  - Resolved prior metadata mismatch between `short_title` and page title/topic.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

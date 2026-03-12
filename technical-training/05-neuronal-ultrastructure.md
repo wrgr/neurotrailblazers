@@ -67,7 +67,7 @@ Given ambiguous EM patches, learners should make compartment and synapse calls u
 - Label drift across long neurite paths:
   Enforce periodic consistency checks during tracing.
 
-## Visual training set (draft)
+## Visual training set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png' | relative_url }}" alt="Ultrastructure training visual: neuron structure overview" style="width:100%; border-radius:8px;">
@@ -225,5 +225,5 @@ Given ambiguous EM patches, learners should make compartment and synapse calls u
 Using one training image, label at least three ultrastructural cues and state your confidence for each interpretation.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Neuronal Ultrastructure deck draft]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})

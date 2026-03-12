@@ -5,7 +5,6 @@
 {% endif %}
 {% assign slide_page = '/modules/slides/module' | append: numpad | append: '/' %}
 {% assign worksheet = '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' %}
-{% assign marp_src = '/course/decks/marp/modules/module' | append: numpad | append: '.marp.md' %}
 {% assign marp_html = '/course/decks/marp/out/modules/module' | append: numpad | append: '.html' %}
 
 <section class="section">
@@ -25,7 +24,7 @@
     <article class="card">
       <h3 class="card-title">Slide Source</h3>
       <p class="card-description">Marp source file for editing and rendering.</p>
-      <p><a href="{{ marp_src | relative_url }}">Open Marp source path</a></p>
+      <p><code>course/decks/marp/modules/module{{ numpad }}.marp.md</code></p>
     </article>
   </div>
 </section>

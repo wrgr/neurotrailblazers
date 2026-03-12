@@ -1,19 +1,20 @@
 {% assign tt_item = site.data.technical_track.modules | where: 'slug', page.slug | first %}
 {% if tt_item %}
+{% assign concepts_base = '/concepts/' | relative_url %}
 <section class="section">
   <h2>Related concepts</h2>
   <div class="cards-grid">
     {% for concept_slug in tt_item.primary_concepts %}
     {% assign concept = site.data.concepts.concepts | where: 'slug', concept_slug | first %}
     {% if concept %}
-    {% assign concept_need = concept.user_needs | first %}
+      {% assign concept_need = concept.user_needs | first %}
     <article class="card">
       <h3 class="card-title">{{ concept.title }}</h3>
       <p class="card-description">{{ concept.summary }}</p>
       {% if concept_need %}
-      <p><a href="{{ '/concepts/?track=' | append: concept.track | append: '&need=' | append: concept_need | url_encode | relative_url }}">Open in Concept Explorer</a></p>
+      <p><a href="{{ concepts_base }}?track={{ concept.track }}&need={{ concept_need | url_encode }}">Open in Concept Explorer</a></p>
       {% else %}
-      <p><a href="{{ '/concepts/?track=' | append: concept.track | relative_url }}">Open in Concept Explorer</a></p>
+      <p><a href="{{ concepts_base }}?track={{ concept.track }}">Open in Concept Explorer</a></p>
       {% endif %}
     </article>
     {% endif %}
@@ -22,7 +23,7 @@
   {% if tt_item.user_needs %}
   <p>
     {% for need in tt_item.user_needs %}
-    <a class="tech-tag" href="{{ '/concepts/?need=' | append: need | url_encode | relative_url }}">{{ need }}</a>
+    <a class="tech-tag" href="{{ concepts_base }}?need={{ need | url_encode }}">{{ need }}</a>
     {% endfor %}
   </p>
   {% endif %}

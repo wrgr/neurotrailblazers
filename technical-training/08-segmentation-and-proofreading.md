@@ -56,7 +56,7 @@ Proofreading is the scientific QC layer that determines whether downstream analy
 4. Validate continuity and synaptic context after correction.
 5. Log quality metrics for reproducibility and team review.
 
-## Visual training set (draft)
+## Visual training set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png' | relative_url }}" alt="Segmentation proofreading visual: neuronal structure orientation" style="width:100%; border-radius:8px;">
@@ -123,5 +123,5 @@ Proofreading is the scientific QC layer that determines whether downstream analy
 Take one candidate merge/split case and write a short correction log with before/after rationale and one QC metric.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Segmentation and Proofreading deck draft]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})

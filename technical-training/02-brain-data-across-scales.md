@@ -25,7 +25,7 @@ This unit covers cross-scale reasoning from mesoscale maps to nanometer-resoluti
 - Resolution anisotropy risks.
 - Volumes, meshes, skeletons, and graphs as scale-dependent representations.
 
-## Visual context set (draft)
+## Visual context set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON1-S06-01.png' | relative_url }}" alt="Scale and voxel-size context visual" style="width:100%; border-radius:8px;">
@@ -113,5 +113,5 @@ Given a candidate question ("How cell-type-specific is local recurrent connectiv
 Pick a research question and propose the minimum data scale needed to answer it, including one tradeoff you accept.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Brain Data Across Scales deck draft]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})

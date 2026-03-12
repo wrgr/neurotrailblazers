@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Write one connectomics study question with measurable structural outputs and one explicit non-claim.
 
@@ -32,25 +47,39 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Core Workflow
-1. Identify curiosity question.
-2. Convert to measurable structural hypothesis.
-3. Define one metric and one limitation.
-4. Plan first dataset/tool touchpoint.
+- Identify curiosity question.
+- Convert to measurable structural hypothesis.
+- Define one metric and one limitation.
+- Plan first dataset/tool touchpoint.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: Why map the brain?
-2. 08:00-20: question framing examples.
-3. 20:00-34: learner question drafting.
-4. 34:00-46: evidence-boundary critique.
-5. 46:00-56: revise to testable hypotheses.
-6. 56:00-60: exit ticket.
+- 00:00-08: Why map the brain?
+- 08:00-20: question framing examples.
+- 20:00-34: learner question drafting.
+- 34:00-46: evidence-boundary critique.
+- 46:00-56: revise to testable hypotheses.
+- 56:00-60: exit ticket.
+
+---
+
+## Misconceptions to Watch
+- Misconception: tools generate good questions automatically.
+- Misconception: connectome equals full explanation.
+- Misconception: broad vision statements are sufficient project plans.
 
 ---
 
 ## Studio Activity
 Draft one question-to-hypothesis sheet with metric, dataset, and non-claim.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -61,8 +90,13 @@ Draft one question-to-hypothesis sheet with metric, dataset, and non-claim.
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Write a 3-sentence hypothesis with one metric and one caveat.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

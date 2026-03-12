@@ -25,7 +25,7 @@ This unit treats connectome reconstruction as a production data platform problem
 - Multiresolution storage and APIs.
 - Provenance/versioning and recovery workflows.
 
-## Visual context set (draft)
+## Visual context set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png' | relative_url }}" alt="High-level architecture visual" style="width:100%; border-radius:8px;">
@@ -118,5 +118,5 @@ Draft a pipeline release plan that includes:
 Sketch a 4-stage reconstruction pipeline and mark where you would enforce provenance/version checkpoints.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Volume Reconstruction Infrastructure deck draft]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})

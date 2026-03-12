@@ -77,7 +77,7 @@ tracks:
         url: /models/
         summary: Educational model context for mentors and program leads.
       - title: Education Models
-        url: /education/models/
+        url: /frameworks/education-models/
         summary: Additional framework guidance for curriculum design.
       - title: Tools
         url: /tools/

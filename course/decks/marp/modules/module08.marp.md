@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Design one hypothesis test with metric, null model, and interpretation boundary statement.
 
@@ -29,25 +44,37 @@ Design one hypothesis test with metric, null model, and interpretation boundary 
 ---
 
 ## Core Workflow
-1. Define question and estimand.
-2. Choose measurable outputs.
-3. Select null model.
-4. Test and interpret results.
-5. Document supported vs unsupported claims.
+- Define question and estimand.
+- Choose measurable outputs.
+- Select null model.
+- Test and interpret results.
+- Document supported vs unsupported claims.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: framing examples.
-2. 08:00-20: hypothesis drafting.
-3. 20:00-34: metric/null model selection.
-4. 34:00-46: interpretation workshop.
-5. 46:00-60: competency check.
+- 00:00-08: framing examples.
+- 08:00-20: hypothesis drafting.
+- 20:00-34: metric/null model selection.
+- 34:00-46: interpretation workshop.
+- 46:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Create a hypothesis-testing sheet and critique a peer's interpretation boundaries.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -58,8 +85,13 @@ Create a hypothesis-testing sheet and critique a peer's interpretation boundarie
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Write one claim and one explicit non-claim from the same test outcome.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

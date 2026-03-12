@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Evaluate EM image patches for artifact risk and issue a justified pass/rework recommendation.
 
@@ -31,25 +46,37 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Core Workflow
-1. Inspect image quality and artifact signatures.
-2. Classify severity and likely impact.
-3. Decide pass/rework with rationale.
-4. Log findings for reproducibility.
+- Inspect image quality and artifact signatures.
+- Classify severity and likely impact.
+- Decide pass/rework with rationale.
+- Log findings for reproducibility.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: EM basics refresher.
-2. 08:00-20: artifact recognition walkthrough.
-3. 20:00-34: learner triage round.
-4. 34:00-46: QA threshold debate.
-5. 46:00-56: decision logging practice.
-6. 56:00-60: competency check.
+- 00:00-08: EM basics refresher.
+- 08:00-20: artifact recognition walkthrough.
+- 20:00-34: learner triage round.
+- 34:00-46: QA threshold debate.
+- 46:00-56: decision logging practice.
+- 56:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Classify 6 patches by artifact type/severity and propose action.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -60,8 +87,13 @@ Classify 6 patches by artifact type/severity and propose action.
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Pick one artifact and explain how it could create a merge or split error later.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

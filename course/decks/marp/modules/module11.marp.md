@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
 
@@ -29,24 +44,36 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ---
 
 ## Core Workflow
-1. Identify synapse candidates and context.
-2. Build local connectivity motif representation.
-3. Evaluate against null or baseline expectation.
-4. State supported claim + caveat.
+- Identify synapse candidates and context.
+- Build local connectivity motif representation.
+- Evaluate against null or baseline expectation.
+- State supported claim + caveat.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-10: synapse cue recap.
-2. 10:00-24: motif construction examples.
-3. 24:00-38: learner motif analysis.
-4. 38:00-50: alternative explanation challenge.
-5. 50:00-60: competency check.
+- 00:00-10: synapse cue recap.
+- 10:00-24: motif construction examples.
+- 24:00-38: learner motif analysis.
+- 38:00-50: alternative explanation challenge.
+- 50:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Analyze one local motif and produce a claim/caveat pair.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -57,8 +84,13 @@ Analyze one local motif and produce a claim/caveat pair.
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Write one motif claim and one plausible confound.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

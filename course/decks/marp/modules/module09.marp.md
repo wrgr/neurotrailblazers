@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Produce a skeleton-based morphology summary with at least three descriptors and one explicit limitation.
 
@@ -29,24 +44,36 @@ Produce a skeleton-based morphology summary with at least three descriptors and 
 ---
 
 ## Core Workflow
-1. Build skeleton from reconstruction.
-2. Compute descriptors (path length, branching, etc.).
-3. Compare against reference patterns.
-4. Report interpretation confidence.
+- Build skeleton from reconstruction.
+- Compute descriptors (path length, branching, etc.).
+- Compare against reference patterns.
+- Report interpretation confidence.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-10: morphology overview.
-2. 10:00-24: skeleton extraction demo.
-3. 24:00-38: descriptor calculation.
-4. 38:00-50: interpretation and caveats.
-5. 50:00-60: competency check.
+- 00:00-10: morphology overview.
+- 10:00-24: skeleton extraction demo.
+- 24:00-38: descriptor calculation.
+- 38:00-50: interpretation and caveats.
+- 50:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Extract one skeleton and submit a morphology descriptor table with interpretation notes.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -57,8 +84,13 @@ Extract one skeleton and submit a morphology descriptor table with interpretatio
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Explain one morphology feature that could be confounded by reconstruction quality.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

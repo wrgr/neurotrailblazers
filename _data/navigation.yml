@@ -31,6 +31,8 @@ items:
     dropdown:
       - title: "Teaching Hub"
         url: "/teaching/"
+      - title: "Facilitator Guide"
+        url: "/teaching/facilitator-guide/"
       - title: "Module Slides"
         url: "/modules/slides/"
   - title: "Datasets"

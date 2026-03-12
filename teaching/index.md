@@ -23,6 +23,7 @@ summary: "Central hub for teaching materials across all modules."
     <div class="cta-buttons">
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">Open Module Library</a>
       <a href="{{ '/modules/slides/' | relative_url }}" class="btn btn-secondary">Browse Slide Pages</a>
+      <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course Hub</a>
     </div>
   </section>

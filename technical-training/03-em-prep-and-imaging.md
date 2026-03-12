@@ -25,7 +25,7 @@ This unit covers the acquisition chain from tissue handling to image stack gener
 - Throughput-volume-resolution tradeoffs.
 - Provenance and acquisition QA.
 
-## Visual context set (draft)
+## Visual context set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S04-01.png' | relative_url }}" alt="High-resolution imaging context visual" style="width:100%; border-radius:8px;">
@@ -114,5 +114,5 @@ Create an acquisition risk register with:
 Identify one likely imaging artifact in a sample dataset and describe how it could affect segmentation quality.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [EM Prep and Imaging deck draft]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})

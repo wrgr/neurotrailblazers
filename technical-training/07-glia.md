@@ -49,7 +49,7 @@ Glia are central to reliable annotation and interpretation, not background objec
 - Ignoring glia in proofreading priorities:
   Include glia corrections in high-impact QC queues.
 
-## Visual training set (draft)
+## Visual training set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png' | relative_url }}" alt="Glia training visual: overview context" style="width:100%; border-radius:8px;">
@@ -97,5 +97,5 @@ Glia are central to reliable annotation and interpretation, not background objec
 Review one glia image and list two features that distinguish it from a neuronal process in the same neighborhood.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Glia deck draft]({{ '/technical-training/slides/07-glia/' | relative_url }})

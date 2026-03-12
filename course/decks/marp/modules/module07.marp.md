@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Execute a proofreading triage cycle that ranks corrections by impact and issues a transparent QC decision.
 
@@ -29,24 +44,36 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 ---
 
 ## Core Workflow
-1. Classify errors by type and impact.
-2. Prioritize correction queue.
-3. Apply and verify fixes.
-4. Record QC decision with thresholds.
+- Classify errors by type and impact.
+- Prioritize correction queue.
+- Apply and verify fixes.
+- Record QC decision with thresholds.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-10: triage philosophy.
-2. 10:00-24: queue classification.
-3. 24:00-38: correction sprint.
-4. 38:00-50: threshold-based release decisions.
-5. 50:00-60: competency check.
+- 00:00-10: triage philosophy.
+- 10:00-24: queue classification.
+- 24:00-38: correction sprint.
+- 38:00-50: threshold-based release decisions.
+- 50:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Produce a prioritized correction queue and one release recommendation memo.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -57,8 +84,13 @@ Produce a prioritized correction queue and one release recommendation memo.
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Write one rule for when an error must be fixed before release.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

@@ -10,7 +10,7 @@ pathways:
 
 ## Module Slide Decks
 
-<p>Need the full teaching package for each module? Visit the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>.</p>
+<p>Need full lesson kits and facilitator guidance? Visit the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>.</p>
 
 <div class="cards-grid">
 {% assign module_pages = site.pages | where_exp: 'p', "p.path contains 'modules/slides/module'" | sort: 'path' %}

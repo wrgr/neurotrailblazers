@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Produce a 12-month pathway plan (skills, applications, mentoring actions) with explicit fit criteria and decision checkpoints.
 
@@ -32,17 +47,24 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 ---
 
 ## Core Workflow
-
+- See module page for details.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. **00:00-08:00 | Pathway framing and myths**
-2. **08:00-20:00 | Capability gap mapping**
-3. **20:00-32:00 | Program/role fit scoring**
-4. **32:00-44:00 | Outreach message drafting**
-5. **44:00-54:00 | Peer feedback on fit and clarity**
-6. **54:00-60:00 | Action-plan commitments**
+- **00:00-08:00 | Pathway framing and myths**
+- **08:00-20:00 | Capability gap mapping**
+- **20:00-32:00 | Program/role fit scoring**
+- **32:00-44:00 | Outreach message drafting**
+- **44:00-54:00 | Peer feedback on fit and clarity**
+- **54:00-60:00 | Action-plan commitments**
+
+---
+
+## Misconceptions to Watch
+- **Misconception guardrail:** prestige alone is not fit.
+- **Misconception guardrail:** publication volume alone predicts mentorship quality.
+- **Misconception guardrail:** lack of insider knowledge is not lack of ability.
 
 ---
 
@@ -51,27 +73,40 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 
 ---
 
-## Assessment Rubric
-- **Minimum pass**
-  - Pathway choices are justified by capability evidence.
-  - Outreach messages are specific and professional.
-  - Plan includes concrete timeline and milestones.
-- **Strong performance**
-  - Incorporates mentorship and belonging considerations explicitly.
-  - Anticipates barriers and mitigation strategies.
-  - Uses iterative feedback to strengthen plan quality.
-- **Common failure modes**
-  - Overgeneralized plans with no evidence of fit.
-  - Outreach drafts lacking project-specific alignment.
-  - Hidden-curriculum barriers unaddressed.
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
-## Quick Practice Prompt
+## Assessment Rubric
+- **Minimum pass**
+- Pathway choices are justified by capability evidence.
+- Outreach messages are specific and professional.
+- Plan includes concrete timeline and milestones.
+- **Strong performance**
+- Incorporates mentorship and belonging considerations explicitly.
+- Anticipates barriers and mitigation strategies.
+- Uses iterative feedback to strengthen plan quality.
+- **Common failure modes**
+- Overgeneralized plans with no evidence of fit.
+- Outreach drafts lacking project-specific alignment.
+- Hidden-curriculum barriers unaddressed.
+
+---
+
+## Exit Ticket
 Draft one 5-sentence mentor outreach email including:
 1. alignment statement,
 2. one relevant artifact,
 3. one specific question.
+
+---
+
+## References (Instructor)
+- NASEM mentorship reports and graduate-training guidance.
+- Program-specific admissions and lab websites.
 
 ---
 

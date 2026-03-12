@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Design and execute a connectomics inference plan that includes null-model choice, multiplicity control, uncertainty reporting, and explicit claim boundaries.
 
@@ -32,12 +47,19 @@ Design and execute a connectomics inference plan that includes null-model choice
 ---
 
 ## Core Workflow
-
+- See module page for details.
 
 ---
 
 ## 60-Minute Run-of-Show
-- See module page for timed delivery flow.
+- See module page for details.
+
+---
+
+## Misconceptions to Watch
+- **Misconception guardrail:** a generic random graph is rarely an adequate connectomics null.
+- **Misconception guardrail:** reporting only p-values without multiplicity context is incomplete.
+- **Misconception guardrail:** post-hoc storytelling is not confirmatory inference.
 
 ---
 
@@ -46,28 +68,42 @@ Design and execute a connectomics inference plan that includes null-model choice
 
 ---
 
-## Assessment Rubric
-- **Minimum pass**
-  - Null model is justified and constraints are explicit.
-  - Multiplicity handling is documented and applied.
-  - Claims are partitioned by confidence level.
-- **Strong performance**
-  - Demonstrates sensitivity analysis against preprocessing and sampling choices.
-  - Reports effect sizes and uncertainty, not significance alone.
-  - Provides clear boundaries on generalization.
-- **Common failure modes**
-  - Null model choice disconnected from biological question.
-  - Selective reporting of significant outcomes.
-  - Conflation of exploratory signal with validated inference.
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
-## Quick Practice Prompt
+## Assessment Rubric
+- **Minimum pass**
+- Null model is justified and constraints are explicit.
+- Multiplicity handling is documented and applied.
+- Claims are partitioned by confidence level.
+- **Strong performance**
+- Demonstrates sensitivity analysis against preprocessing and sampling choices.
+- Reports effect sizes and uncertainty, not significance alone.
+- Provides clear boundaries on generalization.
+- **Common failure modes**
+- Null model choice disconnected from biological question.
+- Selective reporting of significant outcomes.
+- Conflation of exploratory signal with validated inference.
+
+---
+
+## Exit Ticket
 Write a 6-8 sentence inference note that includes:
 1. hypothesis and estimand,
 2. null-model assumptions,
 3. multiplicity strategy,
 4. one robust conclusion and one unresolved uncertainty.
+
+---
+
+## References (Instructor)
+- Bassett, Zurn, and Gold (2018) - model use in network neuroscience.
+- Januszewski et al. (2018) - segmentation performance and uncertainty context.
+- MICrONS/FlyWire/H01 analyses for cross-dataset inference constraints.
 
 ---
 

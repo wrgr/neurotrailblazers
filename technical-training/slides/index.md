@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Technical Training Slide Deck Drafts"
+title: "Technical Training Slide Decks"
 permalink: /technical-training/slides/
 slug: technical-training-slides
 ---
 
-## Draft decks
-These are lecture-ready draft structures for each technical-training unit.
+## Technical Slide Decks
+These are lecture-ready slide structures for each technical-training unit.
 
 Each deck now includes:
 - Session profile (audience, duration, expected output).
@@ -18,6 +18,11 @@ Each deck now includes:
 Production-oriented markdown slide sources are available under:
 - `course/decks/marp/`
 - Reference guide: `course/decks/marp/README.md`
+
+Rendered HTML outputs are available under:
+- `course/decks/marp/out/`
+
+Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relative_url }}).
 
 <div class="cards-grid">
   {% for item in site.data.technical_track.modules %}

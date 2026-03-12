@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Create a reproducible Jupyter notebook that ingests a connectomics dataset slice, performs one analysis, and exports documented outputs.
 
@@ -29,26 +44,38 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ---
 
 ## Core Workflow
-1. Set environment and dependencies.
-2. Load dataset and validate schema.
-3. Run analysis cell sequence.
-4. Save outputs + metadata.
-5. Re-run from clean kernel.
+- Set environment and dependencies.
+- Load dataset and validate schema.
+- Run analysis cell sequence.
+- Save outputs + metadata.
+- Re-run from clean kernel.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: notebook anatomy.
-2. 08:00-20: setup and loading.
-3. 20:00-34: analysis coding sprint.
-4. 34:00-46: plotting and export.
-5. 46:00-56: clean rerun test.
-6. 56:00-60: competency check.
+- 00:00-08: notebook anatomy.
+- 08:00-20: setup and loading.
+- 20:00-34: analysis coding sprint.
+- 34:00-46: plotting and export.
+- 46:00-56: clean rerun test.
+- 56:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Build a mini notebook with one descriptive statistic and one plot from a sample connectomics table.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -59,8 +86,13 @@ Build a mini notebook with one descriptive statistic and one plot from a sample 
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Add one markdown cell documenting input version, processing steps, and output files.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

@@ -968,3 +968,50 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Teaching Hub + Browseability Pass)
+
+- **New teaching landing area**
+  - Added `teaching/index.md` (`/teaching/`) as a centralized instructor hub.
+  - Added `_includes/cards/teaching-module-card.html` for module-level teaching kit cards.
+  - Each card links directly to:
+    - module lesson page
+    - module slide page
+    - rendered HTML deck
+    - Marp source
+    - worksheet
+
+- **Navigation and entry-point updates**
+  - Updated `_data/navigation.yml`:
+    - added first-class `Teaching` menu with `Teaching Hub` and `Module Slides`.
+  - Updated:
+    - `index.html` (home resource card for Teaching Hub)
+    - `modules/index.md` (teaching-kit callout)
+    - `modules/slides/index.md` (link back to Teaching Hub)
+    - `technical-training/index.md` (Teaching Hub CTA)
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.
+
+### Changes (Facilitator Layer + Copy Cleanup)
+
+- **Facilitator guide**
+  - Added `teaching/facilitator-guide.md` (`/teaching/facilitator-guide/`) with:
+    - 60-minute delivery template
+    - quality checks for instructors
+    - material-location map
+  - Linked from `teaching/index.md` and teaching navigation dropdown.
+
+- **Instructional copy normalization**
+  - Replaced residual draft wording in technical training pages:
+    - `Visual context/training set (draft)` -> `Visual context/training set`
+    - `Draft lecture deck` -> `Teaching slide deck`
+  - Updated `technical-training/slides/index.md` language and title to production wording.
+  - Added explicit links from technical slide pages to teaching hub and rendered deck outputs.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

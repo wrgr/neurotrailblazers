@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Detect and categorize core segmentation errors and execute one correction cycle with documented quality impact.
 
@@ -29,25 +44,37 @@ Detect and categorize core segmentation errors and execute one correction cycle 
 ---
 
 ## Core Workflow
-1. Load segmented patch.
-2. Identify merge/split candidates.
-3. Apply correction protocol.
-4. Recalculate quality indicators.
-5. Log decisions.
+- Load segmented patch.
+- Identify merge/split candidates.
+- Apply correction protocol.
+- Recalculate quality indicators.
+- Log decisions.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: segmentation goals.
-2. 08:00-22: error taxonomy examples.
-3. 22:00-36: guided correction round.
-4. 36:00-48: quality-metric interpretation.
-5. 48:00-60: debrief and competency check.
+- 00:00-08: segmentation goals.
+- 08:00-22: error taxonomy examples.
+- 22:00-36: guided correction round.
+- 36:00-48: quality-metric interpretation.
+- 48:00-60: debrief and competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Run one correction loop on a sample patch set and submit before/after notes.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -58,8 +85,13 @@ Run one correction loop on a sample patch set and submit before/after notes.
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Explain when you would defer a correction instead of fixing immediately.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

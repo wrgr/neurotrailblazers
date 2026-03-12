@@ -66,7 +66,7 @@ This unit links connectome graph analysis to AI-relevant hypothesis generation.
 4. Compare motif prevalence with null models and controls.
 5. Interpret results with explicit statistical and dataset assumptions.
 
-## Visual training set (draft)
+## Visual training set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="NeuroAI visual: motivating question" style="width:100%; border-radius:8px;">
@@ -165,5 +165,5 @@ This unit links connectome graph analysis to AI-relevant hypothesis generation.
 Define one motif hypothesis, one null model, and one success criterion you would use before interpreting results.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Connectome Analysis and NeuroAI deck draft]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})

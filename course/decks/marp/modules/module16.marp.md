@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Produce a figure set that communicates connectomics findings accurately, including uncertainty and data-quality context, for both expert and mixed audiences.
 
@@ -32,26 +47,40 @@ Produce a figure set that communicates connectomics findings accurately, includi
 ---
 
 ## Core Workflow
-1. Map each claim to required visual evidence.
-2. Draft candidate visuals with uncertainty layers.
-3. Run critique for misinterpretation risk.
-4. Revise for clarity, accessibility, and reproducibility.
-5. Export figure package with caption metadata.
+- Map each claim to required visual evidence.
+- Draft candidate visuals with uncertainty layers.
+- Run critique for misinterpretation risk.
+- Revise for clarity, accessibility, and reproducibility.
+- Export figure package with caption metadata.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. **00:00-08:00** visual integrity examples (good/bad).
-2. **08:00-20:00** claim-to-visual mapping.
-3. **20:00-34:00** figure draft build.
-4. **34:00-46:00** uncertainty and quality overlays.
-5. **46:00-56:00** peer critique and revision.
-6. **56:00-60:00** competency check.
+- **00:00-08:00** visual integrity examples (good/bad).
+- **08:00-20:00** claim-to-visual mapping.
+- **20:00-34:00** figure draft build.
+- **34:00-46:00** uncertainty and quality overlays.
+- **46:00-56:00** peer critique and revision.
+- **56:00-60:00** competency check.
+
+---
+
+## Misconceptions to Watch
+- **Misconception guardrail:** one figure type can serve every claim.
+- **Misconception guardrail:** cleaner-looking plots are always better.
+- **Misconception guardrail:** aesthetics can replace methodological clarity.
 
 ---
 
 ## Studio Activity
 **Scenario:** Prepare a 3-figure package for a connectomics result summary.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -62,8 +91,13 @@ Produce a figure set that communicates connectomics findings accurately, includi
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 Take one existing figure and add one uncertainty cue plus one caption sentence that narrows interpretation bounds.
+
+---
+
+## References (Instructor)
+- Visualization best-practice resources and connectomics exemplars.
 
 ---
 

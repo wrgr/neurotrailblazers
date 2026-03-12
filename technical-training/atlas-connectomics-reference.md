@@ -26,7 +26,7 @@ The atlas is curated for operational use, not just bibliography. Each entry shou
 - Analysis and NeuroAI references
 - Dataset and benchmark references
 
-## Visual context set (draft)
+## Visual context set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png' | relative_url }}" alt="Atlas references opener visual" style="width:100%; border-radius:8px;">
@@ -98,5 +98,5 @@ Curate one new atlas entry and include:
 Select one reference from each workflow stage and explain in one sentence how each supports a different unit in the track.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Atlas Connectomics Reference deck draft]({{ '/technical-training/slides/atlas-connectomics-reference/' | relative_url }})

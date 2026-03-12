@@ -25,7 +25,7 @@ This unit defines what questions connectomics can answer, what it cannot answer 
 - Comparative and developmental mapping.
 - AI transfer through constraints and priors, not direct emulation.
 
-## Visual context set (draft)
+## Visual context set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Motivating question visual for why map the brain" style="width:100%; border-radius:8px;">
@@ -103,5 +103,5 @@ Draft one connectomics study brief with:
 Write one 2-3 sentence hypothesis that could be constrained by structural connectivity, and list one limitation of using structure alone.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Why Map the Brain deck draft]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})

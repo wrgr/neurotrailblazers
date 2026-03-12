@@ -49,7 +49,7 @@ Process-type misclassification is a major source of downstream graph error.
 - Inconsistent team criteria:
   Calibrate weekly with shared edge-case panels.
 
-## Visual training set (draft)
+## Visual training set
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png' | relative_url }}" alt="Axon/dendrite training visual: orientation" style="width:100%; border-radius:8px;">
@@ -109,5 +109,5 @@ Process-type misclassification is a major source of downstream graph error.
 Choose one ambiguous process and document the three strongest cues you used to classify it.
 
 
-## Draft lecture deck
+## Teaching slide deck
 - Slide draft page: [Axons and Dendrites deck draft]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})

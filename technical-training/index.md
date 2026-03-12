@@ -14,6 +14,7 @@ maintainer: TBD
 ---
 
 <div class="main-content">
+  {% assign concepts_base = '/concepts/' | relative_url %}
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Technical Training: Nanoscale Connectomics</h1>
@@ -26,7 +27,8 @@ maintainer: TBD
     <div class="cta-buttons">
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Slide Deck Drafts</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Slide Decks</a>
+      <a href="{{ '/teaching/' | relative_url }}" class="btn btn-secondary">Teaching Hub</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Concept Explorer</a>
     </div>
   </section>
@@ -35,11 +37,11 @@ maintainer: TBD
     <h2>Start by learner need</h2>
     <p>If sequence is less important than immediate relevance, jump directly to a need-based concept view.</p>
     <div class="cta-buttons">
-      <a href="{{ '/concepts/?track=core-concepts-methods&need=starting%20a%20research%20question' | relative_url }}" class="btn btn-secondary">Start a Research Question</a>
-      <a href="{{ '/concepts/?track=core-concepts-methods&need=improving%20data%20quality' | relative_url }}" class="btn btn-secondary">Improve Data Quality</a>
-      <a href="{{ '/concepts/?track=core-concepts-methods&need=reducing%20identity%20confusion' | relative_url }}" class="btn btn-secondary">Classify Axons vs Dendrites</a>
-      <a href="{{ '/concepts/?track=research-in-action&need=prioritizing%20corrections' | relative_url }}" class="btn btn-secondary">Prioritize Proofreading</a>
-      <a href="{{ '/concepts/?track=research-in-action&need=designing%20graph%20analyses' | relative_url }}" class="btn btn-secondary">Design Graph Analyses</a>
+      <a href="{{ concepts_base }}?track=core-concepts-methods&need=starting%20a%20research%20question" class="btn btn-secondary">Start a Research Question</a>
+      <a href="{{ concepts_base }}?track=core-concepts-methods&need=improving%20data%20quality" class="btn btn-secondary">Improve Data Quality</a>
+      <a href="{{ concepts_base }}?track=core-concepts-methods&need=reducing%20identity%20confusion" class="btn btn-secondary">Classify Axons vs Dendrites</a>
+      <a href="{{ concepts_base }}?track=research-in-action&need=prioritizing%20corrections" class="btn btn-secondary">Prioritize Proofreading</a>
+      <a href="{{ concepts_base }}?track=research-in-action&need=designing%20graph%20analyses" class="btn btn-secondary">Design Graph Analyses</a>
     </div>
   </section>
 
@@ -58,7 +60,7 @@ maintainer: TBD
         <p>
           {% for need in item.user_needs %}
           {% if first_concept %}
-          <a class="tech-tag" href="{{ '/concepts/?track=' | append: first_concept.track | append: '&need=' | append: need | url_encode | relative_url }}">{{ need }}</a>
+          <a class="tech-tag" href="{{ concepts_base }}?track={{ first_concept.track }}&need={{ need | url_encode }}">{{ need }}</a>
           {% else %}
           <span class="tech-tag">{{ need }}</span>
           {% endif %}
@@ -66,7 +68,7 @@ maintainer: TBD
         </p>
         {% endif %}
         {% if first_concept and primary_need %}
-        <p><a href="{{ '/concepts/?track=' | append: first_concept.track | append: '&need=' | append: primary_need | url_encode | relative_url }}">Explore this need in Concept Explorer</a></p>
+        <p><a href="{{ concepts_base }}?track={{ first_concept.track }}&need={{ primary_need | url_encode }}">Explore this need in Concept Explorer</a></p>
         {% endif %}
         {% if item.mapped_modules and item.mapped_modules.size > 0 %}
         <p><small>Legacy overlap: {{ item.mapped_modules | join: ', ' }}</small></p>

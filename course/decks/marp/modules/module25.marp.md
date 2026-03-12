@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Submit a capstone portfolio that proves technical capability, communicates decision quality, and demonstrates iterative growth through feedback.
 
@@ -32,17 +47,24 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 ---
 
 ## Core Workflow
-
+- See module page for details.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. **00:00-08:00 | Portfolio quality exemplar**
-2. **08:00-20:00 | Competency-claim mapping**
-3. **20:00-34:00 | Artifact curation and caption drafting**
-4. **34:00-46:00 | Feedback exchange round**
-5. **46:00-56:00 | Revision planning**
-6. **56:00-60:00 | Final submission checklist**
+- **00:00-08:00 | Portfolio quality exemplar**
+- **08:00-20:00 | Competency-claim mapping**
+- **20:00-34:00 | Artifact curation and caption drafting**
+- **34:00-46:00 | Feedback exchange round**
+- **46:00-56:00 | Revision planning**
+- **56:00-60:00 | Final submission checklist**
+
+---
+
+## Misconceptions to Watch
+- **Misconception guardrail:** quantity of artifacts does not equal quality of evidence.
+- **Misconception guardrail:** self-praise without analysis is not reflective practice.
+- **Misconception guardrail:** "final" version without revision trace is incomplete.
 
 ---
 
@@ -51,27 +73,39 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 
 ---
 
-## Assessment Rubric
-- **Minimum pass**
-  - Portfolio claims are evidence-backed.
-  - Reflection identifies at least one meaningful revision loop.
-  - Feedback is incorporated with clear changes.
-- **Strong performance**
-  - Demonstrates cross-module synthesis and transfer.
-  - Highlights uncertainty and correction with technical maturity.
-  - Communicates future growth plan with concrete milestones.
-- **Common failure modes**
-  - Artifact dump with weak competency mapping.
-  - Reflection limited to narrative without analytical depth.
-  - Minimal response to peer/mentor critique.
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
-## Quick Practice Prompt
+## Assessment Rubric
+- **Minimum pass**
+- Portfolio claims are evidence-backed.
+- Reflection identifies at least one meaningful revision loop.
+- Feedback is incorporated with clear changes.
+- **Strong performance**
+- Demonstrates cross-module synthesis and transfer.
+- Highlights uncertainty and correction with technical maturity.
+- Communicates future growth plan with concrete milestones.
+- **Common failure modes**
+- Artifact dump with weak competency mapping.
+- Reflection limited to narrative without analytical depth.
+- Minimal response to peer/mentor critique.
+
+---
+
+## Exit Ticket
 Choose one artifact and write:
 1. one competency claim it supports,
 2. one limitation,
 3. one revision you would make next.
+
+---
+
+## References (Instructor)
+- Program portfolio templates and competency rubrics.
 
 ---
 

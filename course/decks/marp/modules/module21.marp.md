@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Publish a reproducibility-ready connectomics package (data + methods + metadata + limitations) that an external group can audit and reuse.
 
@@ -32,12 +47,19 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Core Workflow
-
+- See module page for details.
 
 ---
 
 ## 60-Minute Run-of-Show
-- See module page for timed delivery flow.
+- See module page for details.
+
+---
+
+## Misconceptions to Watch
+- **Misconception guardrail:** posting files online is not enough.
+- **Misconception guardrail:** a notebook that runs once does not guarantee robust science.
+- **Misconception guardrail:** learners should not be penalized for norms that were never made explicit.
 
 ---
 
@@ -46,27 +68,41 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 
 ---
 
-## Assessment Rubric
-- **Minimum pass**
-  - Core provenance fields are present and clear.
-  - Re-run instructions are testable by peers.
-  - Limitations and assumptions are explicit.
-- **Strong performance**
-  - Identifies hidden reproducibility norms and makes them explicit.
-  - Anticipates downstream reuse failure points.
-  - Produces concise, audit-friendly documentation.
-- **Common failure modes**
-  - Missing version identifiers for data/code.
-  - Methods descriptions that omit key parameters.
-  - "Reproducible in principle" claims without validation evidence.
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
-## Quick Practice Prompt
+## Assessment Rubric
+- **Minimum pass**
+- Core provenance fields are present and clear.
+- Re-run instructions are testable by peers.
+- Limitations and assumptions are explicit.
+- **Strong performance**
+- Identifies hidden reproducibility norms and makes them explicit.
+- Anticipates downstream reuse failure points.
+- Produces concise, audit-friendly documentation.
+- **Common failure modes**
+- Missing version identifiers for data/code.
+- Methods descriptions that omit key parameters.
+- "Reproducible in principle" claims without validation evidence.
+
+---
+
+## Exit Ticket
 Take one prior analysis output and add:
 1. provenance metadata,
 2. reproducibility instructions,
 3. a 5-line limitations section.
+
+---
+
+## References (Instructor)
+- Wilkinson et al. (2016) - FAIR Guiding Principles.
+- Peng (2011) - Reproducible Research in Computational Science.
+- Project-specific release documentation for H01/MICrONS/FlyWire.
 
 ---
 

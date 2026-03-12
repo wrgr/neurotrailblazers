@@ -1,5 +1,6 @@
 {% assign concepts = site.data.concepts.concepts %}
 {% assign component_id = 'need-explorer-' | append: include.track_slug %}
+{% assign concepts_base = '/concepts/' | relative_url %}
 
 <section class="section" id="{{ component_id }}">
   <h2>{% if include.title %}{{ include.title }}{% else %}Find by Need{% endif %}</h2>
@@ -23,7 +24,7 @@
     {% endfor %}
   </div>
 
-  <p class="mt-1"><a href="{{ '/concepts/?track=' | append: include.track_slug | relative_url }}">Open full Concept Explorer for this track</a></p>
+  <p class="mt-1"><a href="{{ concepts_base }}?track={{ include.track_slug }}">Open full Concept Explorer for this track</a></p>
 </section>
 
 <script>

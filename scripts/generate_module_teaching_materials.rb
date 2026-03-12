@@ -31,6 +31,20 @@ def first_paragraph(text)
   text.split(/\n{2,}/).map(&:strip).find { |p| !p.empty? } || ''
 end
 
+def list_items(text)
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^(\-|\*|\d+\.)\s+/) }
+end
+
+def misconception_items(text)
+  text.each_line.map(&:strip).select { |ln| ln.downcase.include?('misconception') }
+end
+
+def normalize_bullets(items, fallback = '- See module page for details.')
+  return fallback if items.empty?
+
+  items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '- ') }.join("\n")
+end
+
 FileUtils.mkdir_p(SLIDE_PAGE_DIR)
 FileUtils.mkdir_p(MARP_DIR)
 FileUtils.mkdir_p(WORKSHEET_DIR)
@@ -51,11 +65,21 @@ module_paths.each do |path|
 
   capability = first_paragraph(section(body, 'Capability target'))
   concept = first_paragraph(section(body, 'Concept set'))
+  concept_section = section(body, 'Concept set')
   workflow = first_paragraph(section(body, 'Core workflow'))
+  workflow_section = section(body, 'Core workflow')
   run_of_show = section(body, '60-minute tutorial run-of-show')
-  activity = first_paragraph(section(body, 'Studio activity'))
-  rubric = first_paragraph(section(body, 'Assessment rubric'))
+  activity_section = section(body, 'Studio activity')
+  activity = first_paragraph(activity_section)
+  rubric_section = section(body, 'Assessment rubric')
+  rubric = first_paragraph(rubric_section)
   prompt = first_paragraph(section(body, 'Quick practice prompt'))
+  references = Array(fm['references'])
+
+  workflow_items = normalize_bullets(list_items(workflow_section))
+  run_items = normalize_bullets(list_items(run_of_show))
+  misconception_lines = normalize_bullets(misconception_items(concept_section), '- Surface and correct one likely misconception during debrief.')
+  rubric_items = normalize_bullets(list_items(rubric_section), "- Use module rubric headings on the module page.")
 
   worksheet_mod_dir = File.join(WORKSHEET_DIR, "module#{num}")
   FileUtils.mkdir_p(worksheet_mod_dir)
@@ -103,6 +127,21 @@ module_paths.each do |path|
 
     ---
 
+    ## Session Outcomes
+    - Learners can complete the module capability target.
+    - Learners can produce one evidence-backed artifact.
+    - Learners can state one limitation or uncertainty.
+
+    ---
+
+    ## Agenda (60 min)
+    - 0-10 min: Frame and model
+    - 10-35 min: Guided practice
+    - 35-50 min: Debrief and misconception correction
+    - 50-60 min: Competency check + exit ticket
+
+    ---
+
     ## Capability Target
     #{capability}
 
@@ -114,12 +153,17 @@ module_paths.each do |path|
     ---
 
     ## Core Workflow
-    #{workflow}
+    #{workflow_items}
 
     ---
 
     ## 60-Minute Run-of-Show
-    #{run_of_show.empty? ? "- See module page for timed delivery flow." : run_of_show}
+    #{run_items}
+
+    ---
+
+    ## Misconceptions to Watch
+    #{misconception_lines}
 
     ---
 
@@ -128,13 +172,25 @@ module_paths.each do |path|
 
     ---
 
-    ## Assessment Rubric
-    #{rubric}
+    ## Activity Output Checklist
+    - Evidence-linked artifact submitted.
+    - At least one limitation or uncertainty stated.
+    - Revision point captured from feedback.
 
     ---
 
-    ## Quick Practice Prompt
+    ## Assessment Rubric
+    #{rubric_items}
+
+    ---
+
+    ## Exit Ticket
     #{prompt}
+
+    ---
+
+    ## References (Instructor)
+    #{references.empty? ? "- Use module references listed on the module page." : references.map { |r| "- #{r}" }.join("\n")}
 
     ---
 
@@ -183,6 +239,8 @@ File.write(index_path, <<~MD)
   ---
 
   ## Module Slide Decks
+
+  <p>Need full lesson kits and facilitator guidance? Visit the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>.</p>
 
   <div class="cards-grid">
   {% assign module_pages = site.pages | where_exp: 'p', \"p.path contains 'modules/slides/module'\" | sort: 'path' %}

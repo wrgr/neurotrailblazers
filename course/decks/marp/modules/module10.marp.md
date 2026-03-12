@@ -18,6 +18,21 @@ Teaching Deck
 
 ---
 
+## Session Outcomes
+- Learners can complete the module capability target.
+- Learners can produce one evidence-backed artifact.
+- Learners can state one limitation or uncertainty.
+
+---
+
+## Agenda (60 min)
+- 0-10 min: Frame and model
+- 10-35 min: Guided practice
+- 35-50 min: Debrief and misconception correction
+- 50-60 min: Competency check + exit ticket
+
+---
+
 ## Capability Target
 Build one connectome graph representation and justify two metric choices for a defined hypothesis.
 
@@ -29,25 +44,37 @@ Build one connectome graph representation and justify two metric choices for a d
 ---
 
 ## Core Workflow
-1. Define node/edge schema.
-2. Construct graph and inspect integrity.
-3. Compute candidate metrics.
-4. Interpret metrics against hypothesis.
-5. Document abstraction limits.
+- Define node/edge schema.
+- Construct graph and inspect integrity.
+- Compute candidate metrics.
+- Interpret metrics against hypothesis.
+- Document abstraction limits.
 
 ---
 
 ## 60-Minute Run-of-Show
-1. 00:00-08: graph abstraction choices.
-2. 08:00-20: graph build demo.
-3. 20:00-34: metric computation.
-4. 34:00-46: interpretation and null concerns.
-5. 46:00-60: competency check.
+- 00:00-08: graph abstraction choices.
+- 08:00-20: graph build demo.
+- 20:00-34: metric computation.
+- 34:00-46: interpretation and null concerns.
+- 46:00-60: competency check.
+
+---
+
+## Misconceptions to Watch
+- Surface and correct one likely misconception during debrief.
 
 ---
 
 ## Studio Activity
 Create a graph summary report with node/edge schema, metric table, and interpretation notes.
+
+---
+
+## Activity Output Checklist
+- Evidence-linked artifact submitted.
+- At least one limitation or uncertainty stated.
+- Revision point captured from feedback.
 
 ---
 
@@ -58,8 +85,13 @@ Create a graph summary report with node/edge schema, metric table, and interpret
 
 ---
 
-## Quick Practice Prompt
+## Exit Ticket
 State one reason a graph metric might be misleading in your current dataset.
+
+---
+
+## References (Instructor)
+- Use module references listed on the module page.
 
 ---
 

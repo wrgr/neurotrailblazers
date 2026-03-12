@@ -14,12 +14,14 @@ fi
 mkdir -p "$OUT_DIR"
 
 count=0
-for file in "$SRC_DIR"/*.marp.md; do
-  [ -e "$file" ] || continue
+while IFS= read -r -d '' file; do
   base="$(basename "$file" .marp.md)"
-  marp "$file" --html --allow-local-files --output "$OUT_DIR/$base.html"
+  rel_dir="$(dirname "${file#$SRC_DIR/}")"
+  target_dir="$OUT_DIR/$rel_dir"
+  mkdir -p "$target_dir"
+  marp "$file" --html --allow-local-files --output "$target_dir/$base.html"
   count=$((count + 1))
-  echo "Rendered: $OUT_DIR/$base.html"
-done
+  echo "Rendered: $target_dir/$base.html"
+done < <(find "$SRC_DIR" -type f -name '*.marp.md' -print0)
 
 echo "Done. Rendered $count slide decks to $OUT_DIR"

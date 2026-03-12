@@ -915,3 +915,30 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Teaching Materials System + Slide Production Layer)
+
+- **Generated teaching materials for all modules**
+  - Added `scripts/generate_module_teaching_materials.rb`.
+  - Script-generated assets for all `module01`-`module25`:
+    - `modules/slides/moduleNN.md` (browsable deck pages)
+    - `course/decks/marp/modules/moduleNN.marp.md` (slide source)
+    - `assets/worksheets/moduleNN/moduleNN-activity.md` (activity worksheets)
+  - Added slide hub page:
+    - `modules/slides/index.md`
+
+- **Module page integration**
+  - Added `_includes/ui/module-teaching-materials.html`.
+  - Updated `_layouts/module.html` to render teaching links on every module page:
+    - slide deck page
+    - activity worksheet
+    - Marp source path
+
+- **Navigation and render tooling**
+  - Updated `_data/navigation.yml` to include `Module Slides` in primary nav.
+  - Updated `scripts/render_marp.sh` to recursively render nested `*.marp.md` files (including `course/decks/marp/modules/`).
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

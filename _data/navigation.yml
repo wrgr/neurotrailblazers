@@ -26,6 +26,8 @@ items:
   - title: "Modules"
     url: "/modules/"
     dropdown: []
+  - title: "Module Slides"
+    url: "/modules/slides/"
   - title: "Datasets"
     url: "/datasets/"
   - title: "Personas"

@@ -836,3 +836,30 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Deep Rewrites: Modules 23-25)
+
+- **Module 23 rewritten and aligned**
+  - Replaced career-placeholder content in `modules/module23.md` with:
+    - topic-aligned "Posters, Abstracts, and Conferences" capability module
+    - hidden-curriculum scaffold for conference norms/networking
+    - 60-minute run-of-show, studio activity, and rubric
+  - Metadata now aligns with normalized `short_title`.
+
+- **Module 24 rewritten and aligned**
+  - Replaced systems-thinking placeholder in `modules/module24.md` with:
+    - "Career Pathways and Graduate School Preparation" capability module
+    - explicit hidden-curriculum norms (outreach, recommendations, fit language)
+    - 60-minute run-of-show, activity outputs, and rubric
+  - Metadata now aligns with normalized `short_title`.
+
+- **Module 25 deepened**
+  - Replaced generic portfolio cards in `modules/module25.md` with:
+    - competency-evidence architecture for capstone portfolios
+    - hidden-curriculum scaffold for reviewer expectations
+    - 60-minute run-of-show, studio activity, and assessment rubric
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

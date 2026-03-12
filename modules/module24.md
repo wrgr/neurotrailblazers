@@ -1,22 +1,25 @@
 ---
-
-title: "Module 24: Systems Thinking and Interdisciplinary Science"
+title: "Module 24: Career Pathways and Graduate School Preparation"
 layout: module
 permalink: /modules/module24/
-description: "Develop a systems perspective to solve complex scientific problems by integrating ideas across disciplines."
+description: "Build a realistic connectomics career strategy, including graduate school planning, portfolio positioning, and mentor-network development."
 module_number: 24
-difficulty: "Intermediate to Advanced"
-duration: "3-4 hours"
+difficulty: "Intermediate"
+duration: "4 hours"
 learning_objectives:
-
-- "Understand systems thinking concepts and frameworks"
-- "Map interdisciplinary approaches to neuroscience problems"
-- "Analyze feedback loops, emergent behavior, and networks"
-- "Apply holistic thinking to connectomics data analysis"
-prerequisites: "Modules 1-23"
+  - "Map connectomics-relevant career pathways and required competencies"
+  - "Evaluate graduate programs or roles using evidence-based fit criteria"
+  - "Draft targeted outreach messages to mentors and programs"
+  - "Identify hidden-curriculum factors in admissions and hiring"
+prerequisites: "Modules 17-23"
 merit_stage: "Dissemination"
-compass_skills: ["Systems Thinking", "Integration", "Problem-Solving"]
-ccr_focus: ["Meta-Learning - Pattern Recognition", "Skills - Interdisciplinary Synthesis"]
+compass_skills:
+  - "Career Planning"
+  - "Strategic Communication"
+  - "Mentorship Navigation"
+ccr_focus:
+  - "Meta-Learning - Career Reflection"
+  - "Skills - Pathway Design"
 
 # Normalized metadata
 slug: "module24"
@@ -27,90 +30,124 @@ audience:
 pipeline_stage: "Dissemination"
 merit_row_focus: "Dissemination"
 topics:
-  - "systems-thinking"
-  - "interdisciplinary"
-summary: "Applying systems thinking and interdisciplinary approaches to neuroscience problems and career planning."
-key_questions: []
+  - "career-pathways"
+  - "graduate-prep"
+  - "mentorship-network"
+summary: "Create an evidence-based pathway plan for connectomics careers and graduate-school readiness."
+key_questions:
+  - "What capability profile does each path require?"
+  - "How do I assess advisor/lab/program fit beyond reputation?"
+  - "Which hidden norms influence selection decisions?"
 slides: []
 notebook: []
 datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
-prerequisites_list: []
-next_modules: []
-references: []
+personas:
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
+related_tools:
+  - "/tools/ask-an-expert/"
+related_frameworks:
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "At least one project artifact to discuss in applications/interviews"
+  - "Basic familiarity with fields of interest"
+next_modules:
+  - "module25"
+references:
+  - "NASEM mentorship reports and graduate-training guidance."
+  - "Program-specific admissions and lab websites."
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Produce a 12-month pathway plan (skills, applications, mentoring actions) with explicit fit criteria and decision checkpoints.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🌎 Foundations of Systems Thinking</h2>
-    <p>Systems thinking helps you understand complex interactions, feedback, and emergent phenomena.</p>
-    <ul>
-      <li>System boundaries and relationships</li>
-      <li>Feedback loops and causality</li>
-      <li>From parts to whole: emergence</li>
-    </ul>
-  </div>
+## Why this module matters
+Many trainees are told to "network more" or "apply broadly" without concrete strategy. This module turns career planning into a structured, evidence-based process with explicit norms and support.
 
-  <div class="card module-card">
-    <h2>🔗 Interdisciplinary Collaboration</h2>
-    <p>Connectomics brings together biology, computation, engineering, ethics, and more. Learn to integrate methods and mindsets.</p>
-    <ul>
-      <li>Shared vocabulary and bridging jargon</li>
-      <li>Cross-disciplinary team science</li>
-      <li>Case studies in connectomics and beyond</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Pathway fit is capability-based
+- **Technical:** match role/program requirements to demonstrated competencies, not only interests.
+- **Plain language:** choose paths where your current skills and growth plan make sense.
+- **Misconception guardrail:** prestige alone is not fit.
 
-  <div class="card module-card">
-    <h2>🔄 Holistic Approaches to Data</h2>
-    <p>Apply systems concepts to data interpretation and hypothesis generation in connectomics.</p>
-    <ul>
-      <li>Mapping neuron-level and system-level properties</li>
-      <li>Integrating functional and structural data</li>
-      <li>Pattern detection across scales</li>
-    </ul>
-  </div>
+### 2) Mentor/lab fit is multidimensional
+- **Technical:** evaluate research overlap, mentorship style, publication culture, and trainee outcomes.
+- **Plain language:** the "right lab" is about environment and support, not just topic.
+- **Misconception guardrail:** publication volume alone predicts mentorship quality.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Systems frameworks, disciplinary methods</li>
-      <li><strong>Skills:</strong> Pattern analysis, team science</li>
-      <li><strong>Character:</strong> Openness to other perspectives</li>
-      <li><strong>Meta-Learning:</strong> Linking frameworks across domains</li>
-    </ul>
-  </div>
+### 3) Hidden curriculum affects access
+- **Technical:** unwritten norms include email etiquette, recommendation timing, statement framing, and interview expectations.
+- **Plain language:** success often depends on rules nobody wrote down.
+- **Misconception guardrail:** lack of insider knowledge is not lack of ability.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Meadows, 2008. <em>Thinking in Systems</em></li>
-      <li>NASEM, 2005. <em>Facilitating Interdisciplinary Research</em></li>
-      <li>Colab: "Systems Map Generator for Connectomics"</li>
-    </ul>
-  </div>
+## Hidden curriculum scaffold
+- Common invisible expectations:
+  - outreach emails should show specific project alignment in 3-5 sentences.
+  - statements should include concrete research evidence, not generic passion.
+  - recommendation requests should include context packet and deadlines.
+- Equity-oriented supports:
+  - script bank for first-generation and under-networked learners.
+  - peer review for statements and outreach drafts.
+  - mentorship map with multiple support nodes (not single-point dependency).
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Create a system map for a neuroscience problem</li>
-      <li>Identify disciplines contributing to a connectomics challenge</li>
-      <li>Write a reflection on how systems thinking affects your analysis</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Core workflow: pathway planning cycle
+1. Define target pathways (2-3 realistic options).
+2. Create capability gap matrix (current evidence vs required evidence).
+3. Build outreach plan (mentors, timelines, artifacts to share).
+4. Draft application/interview narratives anchored in concrete work.
+5. Review and iterate with mentor/peer feedback.
+
+## 60-minute tutorial run-of-show
+1. **00:00-08:00 | Pathway framing and myths**
+2. **08:00-20:00 | Capability gap mapping**
+3. **20:00-32:00 | Program/role fit scoring**
+4. **32:00-44:00 | Outreach message drafting**
+5. **44:00-54:00 | Peer feedback on fit and clarity**
+6. **54:00-60:00 | Action-plan commitments**
+
+## Studio activity: application strategy lab
+**Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics.
+
+**Tasks**
+1. Build a fit matrix for three options.
+2. Draft one mentor outreach message per option.
+3. Define a 90-day capability-building plan.
+4. Identify one hidden-curriculum risk and mitigation.
+
+**Expected outputs**
+- Fit matrix.
+- Outreach draft set.
+- 90-day action plan.
+- Risk/mitigation note.
+
+## Assessment rubric
+- **Minimum pass**
+  - Pathway choices are justified by capability evidence.
+  - Outreach messages are specific and professional.
+  - Plan includes concrete timeline and milestones.
+- **Strong performance**
+  - Incorporates mentorship and belonging considerations explicitly.
+  - Anticipates barriers and mitigation strategies.
+  - Uses iterative feedback to strengthen plan quality.
+- **Common failure modes**
+  - Overgeneralized plans with no evidence of fit.
+  - Outreach drafts lacking project-specific alignment.
+  - Hidden-curriculum barriers unaddressed.
+
+## Teaching resources
+- Persona context: [Learner Personas]({{ '/avatars/' | relative_url }})
+- Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
+- Start-here guidance: [Start Here]({{ '/start-here/' | relative_url }})
+
+## Quick practice prompt
+Draft one 5-sentence mentor outreach email including:
+1. alignment statement,
+2. one relevant artifact,
+3. one specific question.

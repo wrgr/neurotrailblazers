@@ -1,0 +1,168 @@
+default:
+  quiz:
+    title: "Checkpoint Quiz"
+    pass_score: 2
+    questions:
+      - prompt: "Which output most clearly demonstrates module competency?"
+        options:
+          - "A measurable artifact linked to an explicit method"
+          - "A general reflection about interest in neuroscience"
+          - "A list of future goals without evidence"
+        correct_index: 0
+        explanation: "Competency is shown through measurable, method-linked evidence."
+      - prompt: "What should always accompany a technical claim in this curriculum?"
+        options:
+          - "A limitation or uncertainty statement"
+          - "A motivational quote"
+          - "A citation count"
+        correct_index: 0
+        explanation: "Every claim should include boundaries and uncertainty."
+      - prompt: "What is the best next step after identifying a gap in understanding?"
+        options:
+          - "Define a concrete practice task and verification criterion"
+          - "Skip to a harder module"
+          - "Ignore the gap if progress is slow"
+        correct_index: 0
+        explanation: "Progress improves when gaps become explicit practice targets."
+  task:
+    title: "Microtask Decision"
+    prompt: "Choose the action that best improves scientific reliability."
+    options:
+      - "Record method, version, and decision rationale before sharing results"
+      - "Share results quickly and document details later"
+      - "Rely on memory for why decisions were made"
+    correct_index: 0
+    correct_feedback: "Correct. Traceability and rationale improve reliability and reproducibility."
+    incorrect_feedback: "Try again. Prioritize traceability and explicit rationale."
+  progress_steps:
+    - "Read capability target"
+    - "Complete studio activity"
+    - "Review assessment rubric"
+    - "Pass checkpoint quiz"
+    - "Complete microtask"
+
+modules:
+  module01:
+    quiz:
+      title: "Why Map the Brain Checkpoint"
+      pass_score: 2
+      questions:
+        - prompt: "A strong connectomics question should include:"
+          options:
+            - "A measurable structural output"
+            - "Only a broad societal motivation"
+            - "A guaranteed clinical impact claim"
+          correct_index: 0
+          explanation: "Questions should map to measurable structural outcomes."
+        - prompt: "Which statement reflects good evidence discipline?"
+          options:
+            - "Structure constrains hypotheses but does not prove all function"
+            - "A connectome alone explains all behavior"
+            - "Any high-resolution image proves mechanism"
+          correct_index: 0
+          explanation: "Structure informs mechanism but does not fully prove it alone."
+        - prompt: "Best non-claim for an early-stage module 01 question:"
+          options:
+            - "This map alone does not establish causal dynamics"
+            - "This map proves memory formation"
+            - "No limitations are needed"
+          correct_index: 0
+          explanation: "A non-claim should explicitly mark evidence boundaries."
+    task:
+      title: "Question Framing Microtask"
+      prompt: "Pick the best study question for a first connectomics project."
+      options:
+        - "Which synapse-density differences appear between two defined hippocampal subregions?"
+        - "How does consciousness emerge from the entire brain?"
+        - "Can one EM volume explain all cognition?"
+      correct_index: 0
+      correct_feedback: "Correct. It is scoped, measurable, and testable."
+      incorrect_feedback: "Not yet. Choose the option with clear scope and measurable outputs."
+  module02:
+    task:
+      title: "Scale Selection Microtask"
+      prompt: "Your question needs synapse-level evidence across a small region. Best approach?"
+      options:
+        - "High-resolution EM in a bounded volume with compute/storage planning"
+        - "Whole-brain low-resolution imaging only"
+        - "No data constraints until analysis"
+      correct_index: 0
+      correct_feedback: "Correct. Match scale to required evidence and budget."
+      incorrect_feedback: "Try again. Scale, resolution, and compute constraints must align with the question."
+  module03:
+    task:
+      title: "Artifact Triage Microtask"
+      prompt: "What should happen before reconstruction starts?"
+      options:
+        - "Apply artifact QA gates and record pass/fail decisions"
+        - "Start segmentation immediately"
+        - "Skip QA if images appear mostly clean"
+      correct_index: 0
+      correct_feedback: "Correct. Upstream QA prevents downstream compounding errors."
+      incorrect_feedback: "Try again. QA gates are required before reconstruction."
+  module04:
+    task:
+      title: "Pipeline Architecture Microtask"
+      prompt: "Which feature is most critical for reconstruction reliability?"
+      options:
+        - "Dataset lineage with rollback-capable releases"
+        - "Single-script processing with no versioning"
+        - "Manual file renaming"
+      correct_index: 0
+      correct_feedback: "Correct. Lineage and rollback are core infrastructure requirements."
+      incorrect_feedback: "Try again. Reliable pipelines require lineage and release discipline."
+  module05:
+    task:
+      title: "Ultrastructure Interpretation Microtask"
+      prompt: "Best response to an ambiguous ultrastructure cue?"
+      options:
+        - "Label uncertainty and request second-pass review"
+        - "Force a confident label"
+        - "Delete the region"
+      correct_index: 0
+      correct_feedback: "Correct. Ambiguity should be explicit and reviewable."
+      incorrect_feedback: "Try again. Do not force labels when evidence is ambiguous."
+  module06:
+    task:
+      title: "Process ID Microtask"
+      prompt: "To distinguish axon vs dendrite reliably, prioritize:"
+      options:
+        - "Multiple cues across morphology and context"
+        - "Single visual cue in one slice"
+        - "Random choice then post hoc justification"
+      correct_index: 0
+      correct_feedback: "Correct. Multi-cue decisions reduce classification error."
+      incorrect_feedback: "Try again. Use multiple converging cues."
+  module07:
+    task:
+      title: "Glia Boundary Microtask"
+      prompt: "Which action best reduces glia-neuron boundary errors?"
+      options:
+        - "Use class-specific ultrastructure signatures plus boundary checks"
+        - "Apply neuron rules to all cells"
+        - "Skip myelin context"
+      correct_index: 0
+      correct_feedback: "Correct. Glia-aware signatures and boundary checks are essential."
+      incorrect_feedback: "Try again. Glia-specific decision cues are required."
+  module08:
+    task:
+      title: "Proofreading Triage Microtask"
+      prompt: "How should correction queues be prioritized?"
+      options:
+        - "By expected scientific impact and error severity"
+        - "By oldest timestamp only"
+        - "By easiest edits only"
+      correct_index: 0
+      correct_feedback: "Correct. Impact-aware triage improves release quality."
+      incorrect_feedback: "Try again. Prioritize impact, not convenience."
+  module09:
+    task:
+      title: "NeuroAI Analysis Microtask"
+      prompt: "Before reporting a motif result, include:"
+      options:
+        - "Null-model comparison and uncertainty statement"
+        - "Only a visualization"
+        - "Only a model architecture description"
+      correct_index: 0
+      correct_feedback: "Correct. Null comparison and uncertainty are required for defensible claims."
+      incorrect_feedback: "Try again. Add null-model context and uncertainty."

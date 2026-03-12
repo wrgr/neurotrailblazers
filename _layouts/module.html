@@ -5,6 +5,9 @@ layout: default
 <div class="layout-content layout-module">
   {% include ui/page-hero.html %}
   {% include ui/module-lesson-map.html %}
+  {% if page.interactive_lab != false %}
+  {% include ui/module-interactive-lab.html %}
+  {% endif %}
   {{ content }}
   {% include ui/module-teaching-materials.html %}
   {% include ui/related-content.html %}

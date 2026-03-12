@@ -1,0 +1,70 @@
+{% assign module_key = page.slug %}
+{% assign module_data = site.data.module_interactives.modules[module_key] %}
+{% assign default_data = site.data.module_interactives.default %}
+{% assign quiz = module_data.quiz | default: default_data.quiz %}
+{% assign task = module_data.task | default: default_data.task %}
+{% assign steps = module_data.progress_steps | default: default_data.progress_steps %}
+
+<section class="section nt-interactive-lab" data-module-slug="{{ page.slug }}" data-quiz-pass="{{ quiz.pass_score | default: 2 }}">
+  <h2>Interactive Lab</h2>
+  <p>Practice in short loops: checkpoint quiz, microtask decision, and competency progress tracking.</p>
+
+  <div class="cards-grid nt-interactive-grid">
+    <article class="card nt-interactive-card">
+      <h3 class="card-title">{{ quiz.title | default: 'Checkpoint Quiz' }}</h3>
+      <form class="nt-quiz-form">
+        {% for q in quiz.questions %}
+        {% assign qid = forloop.index0 %}
+        <fieldset class="nt-quiz-question" data-correct-index="{{ q.correct_index }}">
+          <legend><strong>Q{{ forloop.index }}.</strong> {{ q.prompt }}</legend>
+          {% for option in q.options %}
+          <label class="nt-option-row">
+            <input type="radio" name="quiz-q{{ qid }}" value="{{ forloop.index0 }}">
+            <span>{{ option }}</span>
+          </label>
+          {% endfor %}
+          <p class="nt-feedback" data-feedback-for="q{{ qid }}"></p>
+          <p class="nt-explanation">{{ q.explanation }}</p>
+        </fieldset>
+        {% endfor %}
+        <button type="button" class="btn btn-primary nt-quiz-submit">Submit Quiz</button>
+      </form>
+      <p class="nt-score" aria-live="polite"></p>
+    </article>
+
+    <article class="card nt-interactive-card">
+      <h3 class="card-title">{{ task.title | default: 'Microtask Decision' }}</h3>
+      <p>{{ task.prompt }}</p>
+      <div class="nt-task-options" data-task-correct="{{ task.correct_index }}">
+        {% for option in task.options %}
+        <label class="nt-option-row">
+          <input type="radio" name="task-choice" value="{{ forloop.index0 }}">
+          <span>{{ option }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      <button type="button" class="btn btn-secondary nt-task-submit">Check Decision</button>
+      <p class="nt-task-feedback" data-correct-feedback="{{ task.correct_feedback }}" data-incorrect-feedback="{{ task.incorrect_feedback }}" aria-live="polite"></p>
+    </article>
+
+    <article class="card nt-interactive-card">
+      <h3 class="card-title">Progress Tracker</h3>
+      <p>State is saved locally in your browser for this module.</p>
+      <div class="nt-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="nt-progress-fill"></div>
+      </div>
+      <ul class="nt-progress-list">
+        {% for step in steps %}
+        <li>
+          <label class="nt-option-row">
+            <input type="checkbox" class="nt-progress-step" data-step-index="{{ forloop.index0 }}">
+            <span>{{ step }}</span>
+          </label>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="nt-progress-text">0% complete</p>
+      <button type="button" class="btn btn-secondary nt-progress-reset">Reset Progress</button>
+    </article>
+  </div>
+</section>

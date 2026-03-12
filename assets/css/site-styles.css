@@ -1458,6 +1458,90 @@ footer {
   transform: translateY(0);
 }
 
+.nt-interactive-grid {
+  align-items: start;
+}
+
+.nt-interactive-card {
+  max-width: none;
+  width: 100%;
+}
+
+.nt-quiz-question {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.nt-quiz-question legend {
+  padding: 0 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.nt-option-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.35rem 0;
+}
+
+.nt-option-row input {
+  margin-top: 0.2rem;
+}
+
+.nt-feedback,
+.nt-task-feedback,
+.nt-score {
+  min-height: 1.1rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.92rem;
+}
+
+.nt-feedback-ok {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.nt-feedback-bad {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.nt-feedback-warn {
+  color: #a16207;
+  font-weight: 600;
+}
+
+.nt-explanation {
+  display: none;
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.nt-progress-list {
+  list-style: none;
+  margin: 0.8rem 0;
+  padding: 0;
+}
+
+.nt-progress-bar {
+  width: 100%;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: #e6ebf1;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.nt-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--teal-mid), var(--teal));
+  transition: width 0.18s ease;
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 0.75rem 1rem;

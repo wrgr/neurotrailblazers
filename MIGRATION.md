@@ -687,3 +687,42 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Instructional Framework Adoption + Module 18 Rewrite)
+
+- **Instructional framework adoption**
+  - Added `course/instructional-framework.md`.
+  - Adopted combined model for authoring and review:
+    - Understanding by Design (backward design)
+    - Bloom's Taxonomy (depth targets)
+    - Cognitive Apprenticeship (modeling -> coaching -> fading -> reflection)
+    - UDL (accessibility and multiple expression pathways)
+  - Updated `course/templates/capability-spec-template.md` to include:
+    - Bloom target
+    - cognitive-apprenticeship plan
+    - UDL expression options
+    - accessibility check requirements
+
+- **Module 18 deep rewrite**
+  - Replaced weak outline page content in `modules/module18.md` with a full capability-based module:
+    - explicit capability target
+    - concept payload (technical + plain-language + misconception guardrails)
+    - preprocessing workflow
+    - studio activity + expected outputs
+    - assessment rubric
+    - concrete teaching resource links
+  - Normalized metadata to align with technical content:
+    - title/description/summary now consistent with Data Cleaning and Preprocessing.
+
+- **Concept teaching-resource packs**
+  - Expanded `_data/concepts.yml` with `explanation` and `teaching_resources` for all concept entries.
+  - Updated `_includes/cards/concept-card.html` to render teaching packs:
+    - lesson
+    - activity
+    - slides
+    - references
+  - Result: concepts now expose a complete "how to learn this" bundle directly in the explorer.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `bundle exec jekyll build` passes.

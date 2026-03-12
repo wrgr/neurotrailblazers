@@ -1,22 +1,25 @@
 ---
-
-title: "Module 18: Scientific Posters and Conference Preparation"
+title: "Module 18: Data Cleaning and Preprocessing"
 layout: module
 permalink: /modules/module18/
-description: "Design compelling scientific posters and prepare to present your connectomics research effectively."
+description: "Build reproducible preprocessing workflows for connectomics data, from integrity checks through analysis-ready releases."
 module_number: 18
-difficulty: "Beginner to Intermediate"
-duration: "3 hours"
+difficulty: "Intermediate"
+duration: "4-5 hours"
 learning_objectives:
-
-- "Design a research poster that communicates key findings"
-- "Structure visual elements for quick understanding"
-- "Practice concise scientific speaking for posters"
-- "Respond effectively to questions during presentations"
-prerequisites: "Modules 1-17"
-merit_stage: "Dissemination"
-compass_skills: ["Communication", "Visual Storytelling", "Public Speaking"]
-ccr_focus: ["Skills - Presentation", "Character - Confidence"]
+  - "Diagnose common connectomics data-quality issues before analysis"
+  - "Apply reproducible preprocessing steps with documented decision rules"
+  - "Quantify preprocessing impact with auditable QC metrics"
+  - "Produce an analysis-ready dataset package with provenance metadata"
+prerequisites: "Modules 12-16 or equivalent Python/data-handling experience"
+merit_stage: "Analysis"
+compass_skills:
+  - "Data Quality"
+  - "Workflow Design"
+  - "Reproducibility"
+ccr_focus:
+  - "Skills - Data Processing"
+  - "Character - Scientific Rigor"
 
 # Normalized metadata
 slug: "module18"
@@ -27,90 +30,122 @@ audience:
 pipeline_stage: "Analysis"
 merit_row_focus: "Analysis"
 topics:
-  - "posters"
-  - "presentations"
-summary: "Handling noise, filtering data, and reproducibility, with a focus on poster and conference preparation."
-key_questions: []
+  - "data-cleaning"
+  - "preprocessing"
+  - "quality-control"
+  - "reproducibility"
+summary: "Detect artifacts, clean and standardize connectomics tables/volumes, and release analysis-ready data with documented provenance."
+key_questions:
+  - "What preprocessing decisions materially change biological conclusions?"
+  - "How do we separate data repair from data distortion?"
+  - "What metadata is required to make preprocessing reproducible?"
 slides: []
-notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
-prerequisites_list: []
-next_modules: []
-references: []
-videos: []
+notebook:
+  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
+datasets:
+  - "/datasets/workflow"
+  - "/datasets/mouseconnects"
+personas:
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
+related_tools:
+  - "/tools/connectome-quality/"
+related_frameworks:
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Basic dataframe manipulation in Python"
+  - "Familiarity with segmentation/proofreading outputs"
+next_modules:
+  - "module19"
+  - "module20"
+references:
+  - "Wilkinson et al., 2016. The FAIR Guiding Principles for scientific data management and stewardship."
+  - "Peng, 2011. Reproducible Research in Computational Science."
+  - "MICrONS and related connectomics workflow documentation."
+videos:
+  - "https://www.neurotrailblazers.org/technical-training/03-em-prep-and-imaging/"
+  - "https://www.neurotrailblazers.org/technical-training/04-volume-reconstruction-infrastructure/"
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Produce a reproducible preprocessing release that transforms raw or intermediate connectomics outputs into analysis-ready data, with explicit quality gates and full provenance.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🎭 Poster Design Fundamentals</h2>
-    <p>Posters should be clear, attractive, and self-explanatory. Learn layout techniques and how to prioritize content.</p>
-    <ul>
-      <li>Poster sections: Title, Abstract, Methods, Results, Conclusions</li>
-      <li>Font size, spacing, and accessibility</li>
-      <li>Color and figure balance</li>
-    </ul>
-  </div>
+## Why this module matters
+Most downstream failures in connectome analysis are not model failures first; they are data-quality and preprocessing failures. This module teaches how to clean data without erasing signal, and how to document each transformation so conclusions remain defensible.
 
-  <div class="card module-card">
-    <h2>📄 Poster Templates and Tools</h2>
-    <p>Explore poster creation tools and templates. Adapt institutional templates or build your own using design software.</p>
-    <ul>
-      <li>PowerPoint, Illustrator, and Overleaf templates</li>
-      <li>Graphical abstract integration</li>
-      <li>Using QR codes, interactive elements</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Cleaning vs distortion
+- **Technical:** preprocessing should reduce known artifacts/noise while preserving biologically meaningful structure.
+- **Plain language:** fix mistakes, do not "polish away" the biology.
+- **Misconception guardrail:** more filtering is not always better.
 
-  <div class="card module-card">
-    <h2>🔊 Preparing Your Elevator Pitch</h2>
-    <p>A well-prepared short explanation (1–2 minutes) makes a big impact. Prepare talking points for different audiences.</p>
-    <ul>
-      <li>Key message and take-home points</li>
-      <li>Adjusting for technical vs. general audiences</li>
-      <li>Handling tough or unexpected questions</li>
-    </ul>
-  </div>
+### 2) Provenance as a scientific requirement
+- **Technical:** every transform should be traceable (input version, parameters, timestamp, owner, output hash).
+- **Plain language:** if you cannot explain how the file was made, you cannot trust the result.
+- **Misconception guardrail:** version-control notes alone are insufficient without data lineage.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Conference culture and poster norms</li>
-      <li><strong>Skills:</strong> Visual design, oral communication</li>
-      <li><strong>Character:</strong> Confidence, preparation</li>
-      <li><strong>Meta-Learning:</strong> Self-evaluation through feedback</li>
-    </ul>
-  </div>
+### 3) QC metrics must be decision-linked
+- **Technical:** metrics (missingness, merge/split rates, consistency checks) should trigger concrete accept/rework decisions.
+- **Plain language:** a dashboard is useful only if it changes what you do.
+- **Misconception guardrail:** reporting metrics without thresholds is not quality control.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Rowe, 2017. <em>Designing Conference Posters</em>.</li>
-      <li>Schimel, 2012. <em>Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded</em>.</li>
-      <li>Colab: "Poster Planning Worksheet and Checklist"</li>
-    </ul>
-  </div>
+## Core workflow: preprocessing for connectomics
+1. **Ingest and integrity validation**
+   - Confirm file completeness, schema conformance, and version compatibility.
+   - Log dataset identifiers and checksums.
+2. **Artifact and anomaly screening**
+   - Identify missing values, label conflicts, geometric outliers, and suspicious connectivity spikes.
+   - Triage issues by likely biological impact.
+3. **Cleaning transforms**
+   - Apply deterministic corrections (schema normalization, unit harmonization, explicit missing-value policy).
+   - Isolate heuristic transforms for extra review.
+4. **QC and drift checks**
+   - Compare pre/post distributions and topology statistics.
+   - Verify no unacceptable biological-signal loss.
+5. **Release packaging**
+   - Publish analysis-ready tables/volumes plus transform log, metric report, and known limitations.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Draft a one-page scientific poster with figure layout</li>
-      <li>Practice a 90-second oral summary of your project</li>
-      <li>Receive feedback from a peer or mentor on poster clarity</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Studio activity: preprocessing release simulation
+**Scenario:** Your team receives a mixed-quality connectomics export with missing labels, duplicated IDs, and inconsistent units.
+
+**Tasks**
+1. Define cleaning policy for each issue category.
+2. Implement a preprocessing pipeline (pseudocode or notebook-level steps).
+3. Run pre/post QC metrics and justify any tradeoffs.
+4. Produce a release note that includes lineage metadata and known residual risks.
+
+**Expected outputs**
+- Preprocessing decision table.
+- QC metric summary with thresholds and pass/fail calls.
+- Release note (inputs, transforms, outputs, limitations).
+
+## Assessment rubric
+- **Minimum pass**
+  - Cleaning decisions are explicit and reproducible.
+  - QC metrics include thresholds tied to actions.
+  - Release package includes provenance metadata.
+- **Strong performance**
+  - Distinguishes low-risk cleanup from biologically sensitive transforms.
+  - Quantifies and explains pre/post changes clearly.
+  - Documents limitations and unresolved risks transparently.
+- **Common failure modes**
+  - Silent ad-hoc edits with no transform log.
+  - Aggressive filtering that removes biologically meaningful variation.
+  - Metrics reported without operational thresholds.
+
+## Teaching resources
+- Lesson context: [Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
+- QC context: [Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+- Slides: [Infrastructure deck draft]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
+- Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Quick practice prompt
+Take one connectomics table (real or mock) and write:
+1. Three cleaning rules with rationale.
+2. Two QC thresholds and associated actions.
+3. One limitation that remains after preprocessing.

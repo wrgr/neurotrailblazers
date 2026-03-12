@@ -6,11 +6,25 @@ concepts:
       - starting a research question
       - avoiding overclaiming
     summary: Translate broad brain questions into testable structural hypotheses with clear evidence boundaries.
+    explanation: Start with one biological question, define measurable structural outputs, then state explicit non-claims.
     resources:
       - title: Why Map the Brain
         url: /technical-training/01-why-map-the-brain/
       - title: Journal Club
         url: /technical-training/journal-club/
+    teaching_resources:
+      lesson:
+        - title: Unit 01 Lesson
+          url: /technical-training/01-why-map-the-brain/
+      activity:
+        - title: Unit 01 Quick Activity
+          url: /technical-training/01-why-map-the-brain/#quick-activity
+      slides:
+        - title: Unit 01 Slides
+          url: /technical-training/slides/01-why-map-the-brain/
+      references:
+        - title: Journal Club Reading List
+          url: /technical-training/journal-club/
 
   - slug: scale-selection
     title: Scale Selection
@@ -19,11 +33,25 @@ concepts:
       - matching method to question
       - planning compute and storage
     summary: Choose imaging and analysis scale that can resolve required features at manageable cost.
+    explanation: Match your hypothesis to the smallest sufficient resolution and volume, then budget compute before data acquisition.
     resources:
       - title: Brain Data Across Scales
         url: /technical-training/02-brain-data-across-scales/
       - title: Workflow Overview
         url: /datasets/workflow
+    teaching_resources:
+      lesson:
+        - title: Unit 02 Lesson
+          url: /technical-training/02-brain-data-across-scales/
+      activity:
+        - title: Unit 02 Quick Activity
+          url: /technical-training/02-brain-data-across-scales/#quick-activity
+      slides:
+        - title: Unit 02 Slides
+          url: /technical-training/slides/02-brain-data-across-scales/
+      references:
+        - title: Workflow Overview
+          url: /datasets/workflow
 
   - slug: em-artifacts-and-qa
     title: EM Artifacts and QA
@@ -32,11 +60,25 @@ concepts:
       - improving data quality
       - debugging acquisition issues
     summary: Identify acquisition artifacts and define practical QA gates before reconstruction.
+    explanation: Use a shared artifact taxonomy and pass/fail thresholds so acquisition issues are caught before reconstruction.
     resources:
       - title: EM Prep and Imaging
         url: /technical-training/03-em-prep-and-imaging/
       - title: Connectome Quality
         url: /tools/connectome-quality/
+    teaching_resources:
+      lesson:
+        - title: Unit 03 Lesson
+          url: /technical-training/03-em-prep-and-imaging/
+      activity:
+        - title: Unit 03 Quick Activity
+          url: /technical-training/03-em-prep-and-imaging/#quick-activity
+      slides:
+        - title: Unit 03 Slides
+          url: /technical-training/slides/03-em-prep-and-imaging/
+      references:
+        - title: Connectome Quality Tool
+          url: /tools/connectome-quality/
 
   - slug: reconstruction-architecture
     title: Reconstruction Architecture
@@ -45,11 +87,25 @@ concepts:
       - building robust pipelines
       - reproducible processing
     summary: Design scalable ingest-to-serving systems with lineage, release, and rollback discipline.
+    explanation: "Treat reconstruction as production infrastructure: lineage, observability, and rollback are core scientific requirements."
     resources:
       - title: Volume Reconstruction Infrastructure
         url: /technical-training/04-volume-reconstruction-infrastructure/
       - title: Frameworks
         url: /frameworks/
+    teaching_resources:
+      lesson:
+        - title: Unit 04 Lesson
+          url: /technical-training/04-volume-reconstruction-infrastructure/
+      activity:
+        - title: Unit 04 Quick Activity
+          url: /technical-training/04-volume-reconstruction-infrastructure/#quick-activity
+      slides:
+        - title: Unit 04 Slides
+          url: /technical-training/slides/04-volume-reconstruction-infrastructure/
+      references:
+        - title: Framework Overview
+          url: /frameworks/
 
   - slug: ultrastructure-annotation
     title: Ultrastructure Annotation
@@ -58,11 +114,25 @@ concepts:
       - reading EM confidently
       - improving annotation consistency
     summary: Use compartment, organelle, and synaptic cues to make reproducible interpretation decisions.
+    explanation: Combine multiple ultrastructural cues across slices and label uncertainty explicitly instead of forcing hard calls.
     resources:
       - title: Neuronal Ultrastructure
         url: /technical-training/05-neuronal-ultrastructure/
       - title: Dictionary
         url: /technical-training/dictionary/
+    teaching_resources:
+      lesson:
+        - title: Unit 05 Lesson
+          url: /technical-training/05-neuronal-ultrastructure/
+      activity:
+        - title: Unit 05 Studio Activity
+          url: /technical-training/05-neuronal-ultrastructure/#studio-activity-ultrastructure-consensus-round
+      slides:
+        - title: Unit 05 Slides
+          url: /technical-training/slides/05-neuronal-ultrastructure/
+      references:
+        - title: Connectomics Dictionary
+          url: /technical-training/dictionary/
 
   - slug: process-classification
     title: Axon vs Dendrite Classification
@@ -71,11 +141,25 @@ concepts:
       - reducing identity confusion
       - handling ambiguity
     summary: Apply multi-cue decision rules and confidence tags for process-type calls.
+    explanation: Use morphology plus context cues to classify neurites and escalate ambiguous cases consistently.
     resources:
       - title: Axons and Dendrites
         url: /technical-training/06-axons-and-dendrites/
       - title: Segmentation and Proofreading
         url: /technical-training/08-segmentation-and-proofreading/
+    teaching_resources:
+      lesson:
+        - title: Unit 06 Lesson
+          url: /technical-training/06-axons-and-dendrites/
+      activity:
+        - title: Unit 06 Quick Activity
+          url: /technical-training/06-axons-and-dendrites/#quick-activity
+      slides:
+        - title: Unit 06 Slides
+          url: /technical-training/slides/06-axons-and-dendrites/
+      references:
+        - title: Unit 08 QC Context
+          url: /technical-training/08-segmentation-and-proofreading/
 
   - slug: glia-identification
     title: Glia Identification
@@ -84,11 +168,25 @@ concepts:
       - reducing glia-neuron boundary errors
       - interpreting myelin context
     summary: Distinguish major glia classes and integrate glia decisions into high-value QC workflows.
+    explanation: Focus on glial ultrastructure signatures and boundary integrity to reduce high-impact proofreading errors.
     resources:
       - title: Glia
         url: /technical-training/07-glia/
       - title: Connectome Quality
         url: /tools/connectome-quality/
+    teaching_resources:
+      lesson:
+        - title: Unit 07 Lesson
+          url: /technical-training/07-glia/
+      activity:
+        - title: Unit 07 Quick Activity
+          url: /technical-training/07-glia/#quick-activity
+      slides:
+        - title: Unit 07 Slides
+          url: /technical-training/slides/07-glia/
+      references:
+        - title: Connectome Quality Tool
+          url: /tools/connectome-quality/
 
   - slug: proofreading-qc
     title: Proofreading and QC
@@ -97,11 +195,25 @@ concepts:
       - prioritizing corrections
       - reporting quality rigorously
     summary: Classify error modes, apply correction workflows, and tie decisions to quantitative quality metrics.
+    explanation: Triage corrections by scientific impact and report QC metrics that directly drive release decisions.
     resources:
       - title: Segmentation and Proofreading
         url: /technical-training/08-segmentation-and-proofreading/
       - title: Connectome Quality
         url: /tools/connectome-quality/
+    teaching_resources:
+      lesson:
+        - title: Unit 08 Lesson
+          url: /technical-training/08-segmentation-and-proofreading/
+      activity:
+        - title: Unit 08 Quick Activity
+          url: /technical-training/08-segmentation-and-proofreading/#quick-activity
+      slides:
+        - title: Unit 08 Slides
+          url: /technical-training/slides/08-segmentation-and-proofreading/
+      references:
+        - title: Connectome Quality Tool
+          url: /tools/connectome-quality/
 
   - slug: motif-analysis
     title: Motif Analysis and NeuroAI
@@ -110,11 +222,25 @@ concepts:
       - designing graph analyses
       - choosing null models
     summary: Build query-driven motif workflows with statistical controls and reproducible execution.
+    explanation: Define graph hypotheses, run null-model comparisons, and report supported versus unsupported claims clearly.
     resources:
       - title: Connectome Analysis and NeuroAI
         url: /technical-training/09-connectome-analysis-neuroai/
       - title: Journal Club
         url: /technical-training/journal-club/
+    teaching_resources:
+      lesson:
+        - title: Unit 09 Lesson
+          url: /technical-training/09-connectome-analysis-neuroai/
+      activity:
+        - title: Unit 09 Quick Activity
+          url: /technical-training/09-connectome-analysis-neuroai/#quick-activity
+      slides:
+        - title: Unit 09 Slides
+          url: /technical-training/slides/09-connectome-analysis-neuroai/
+      references:
+        - title: Journal Club Reading List
+          url: /technical-training/journal-club/
 
   - slug: reproducibility-and-atlas
     title: Reproducibility and Reference Curation
@@ -123,11 +249,25 @@ concepts:
       - finding reliable resources
       - maintaining citation hygiene
     summary: Curate methods, datasets, and tools with metadata completeness and explicit limitations.
+    explanation: Use consistent metadata and quality checks so references are reusable, comparable, and trustworthy.
     resources:
       - title: Atlas Connectomics Reference
         url: /technical-training/atlas-connectomics-reference/
       - title: Frameworks
         url: /frameworks/
+    teaching_resources:
+      lesson:
+        - title: Atlas Reference Lesson
+          url: /technical-training/atlas-connectomics-reference/
+      activity:
+        - title: Atlas Quick Activity
+          url: /technical-training/atlas-connectomics-reference/#quick-activity
+      slides:
+        - title: Atlas Slides
+          url: /technical-training/slides/atlas-connectomics-reference/
+      references:
+        - title: Framework Overview
+          url: /frameworks/
 
   - slug: hidden-curriculum-navigation
     title: Hidden Curriculum Navigation
@@ -136,11 +276,25 @@ concepts:
       - understanding research norms
       - building confidence and belonging
     summary: Make implicit research expectations explicit for diverse learners and early-career researchers.
+    explanation: Surface unspoken lab and field norms so learners can act with confidence and seek help effectively.
     resources:
       - title: Start Here
         url: /start-here/
       - title: Learner Personas
         url: /avatars/
+    teaching_resources:
+      lesson:
+        - title: Start Here Guide
+          url: /start-here/
+      activity:
+        - title: Learner Pathway Reflection
+          url: /start-here/
+      slides:
+        - title: Career and Community Track
+          url: /tracks/career-and-community/
+      references:
+        - title: Learner Personas
+          url: /avatars/
 
   - slug: mentoring-and-growth
     title: Mentoring and Professional Growth
@@ -149,6 +303,7 @@ concepts:
       - finding mentorship support
       - planning career trajectories
     summary: Use learner personas and frameworks to align mentorship strategies with individual goals.
+    explanation: Match mentoring strategies to learner stage, goals, and barriers, then define concrete growth checkpoints.
     resources:
       - title: Learner Personas
         url: /avatars/
@@ -156,3 +311,16 @@ concepts:
         url: /models/
       - title: Education Models
         url: /education/models/
+    teaching_resources:
+      lesson:
+        - title: Mentorship Personas
+          url: /avatars/
+      activity:
+        - title: Mentorship Planning Exercise
+          url: /start-here/
+      slides:
+        - title: Learning Tracks Hub
+          url: /tracks/
+      references:
+        - title: Research Incubator Model
+          url: /models/

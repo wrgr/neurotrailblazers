@@ -9,6 +9,7 @@ last_updated: 2026-03-11
 
 ## 1. Capability target
 - Terminal capability learners should demonstrate:
+- Bloom level target (`apply`/`analyze`/`evaluate`/`create`):
 
 ## 2. Expertise required
 - Domain SME:
@@ -26,11 +27,18 @@ last_updated: 2026-03-11
   - Plain-language explanation:
   - Common misconception:
 
+## 3b. Cognitive apprenticeship plan
+- Modeling (expert demo):
+- Coaching (guided practice):
+- Fading (independent attempt):
+- Reflection/debrief prompts:
+
 ## 4. Performance task (activity)
 - Scenario:
 - Learner task:
 - Constraints:
 - Expected output artifacts:
+- UDL options for expression:
 
 ## 5. Assessment
 - Minimum passing indicators:
@@ -46,3 +54,4 @@ last_updated: 2026-03-11
 - Web page updates needed:
 - Slide updates needed:
 - Figure updates needed:
+- Accessibility checks needed:

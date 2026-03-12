@@ -22,7 +22,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>🎯 Choose Your Path</h2>
+        <h2>Choose Your Path</h2>
         <div class="cards-grid">
             <div class="card">
                 <div class="card-icon">🧠</div>
@@ -54,7 +54,7 @@ pathways:
     {% include ui/technical-track-roadmap.html %}
 
     <section class="section">
-        <h2>🗺️ Understanding Our Structure</h2>
+        <h2>Understanding Our Structure</h2>
 
         <h3>Three Track Architecture</h3>
         <p>We organize learning around three tracks aligned to the Fadel dimensions:</p>
@@ -109,7 +109,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>🧩 Explore by Concept</h2>
+        <h2>Explore by Concept</h2>
         <p>If module numbering feels heavy, use concept-first discovery based on your immediate learning need.</p>
         <div class="cta-buttons">
             <a href="{{ '/concepts/' | relative_url }}" class="btn btn-primary">Open Concept Explorer</a>
@@ -121,7 +121,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>🎯 Our Educational Framework</h2>
+        <h2>Our Educational Framework</h2>
         <p>NeuroTrailblazers is built on evidence-based educational models:</p>
         
         <div class="cards-grid">
@@ -161,7 +161,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>🚀 Quick Start Checklist</h2>
+        <h2>Quick Start Checklist</h2>
         <div class="checklist-box">
             <h3>Get Started in 5 Steps:</h3>
             <div class="checklist">
@@ -190,7 +190,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>📞 Get Support</h2>
+        <h2>Get Support</h2>
         <p>Questions? Need help choosing your path? Here are your options:</p>
         <div class="cards-grid">
             <div class="card">

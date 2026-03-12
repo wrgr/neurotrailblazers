@@ -1,22 +1,25 @@
 ---
-
-title: "Module 07: Network Theory for Brain Connectivity"
+title: "Module 07: Proofreading and Quality Control"
 layout: module
 permalink: /modules/module07/
-description: "Explore how tools from graph theory and network science are used to represent and analyze the connectome."
+description: "Develop proofreading strategies that prioritize high-impact corrections and maintain reproducible QC standards."
 module_number: 7
-difficulty: "Intermediate to Advanced"
+difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:
-
-- "Represent neural circuits as mathematical graphs"
-- "Compute core network metrics like degree, centrality, and modularity"
-- "Compare biological networks to artificial and random ones"
-- "Interpret the significance of motifs and hubs in neural data"
-prerequisites: "Modules 1-6 and some coding or math background"
-merit_stage: "Analysis"
-compass_skills: ["Analytical Thinking", "Computational Reasoning", "Pattern Recognition"]
-ccr_focus: ["Knowledge - Quantitative Analysis", "Skills - Abstraction"]
+  - "Prioritize proofreading tasks by scientific impact"
+  - "Apply consistent adjudication rules"
+  - "Use quality metrics to support release decisions"
+  - "Document uncertainty and unresolved issues"
+prerequisites: "Modules 01-06"
+merit_stage: "Question"
+compass_skills:
+  - "Proofreading"
+  - "QC Decision-Making"
+  - "Documentation"
+ccr_focus:
+  - "Skills - Quality Control"
+  - "Character - Rigor"
 
 # Normalized metadata
 slug: "module07"
@@ -27,106 +30,67 @@ audience:
 pipeline_stage: "Question"
 merit_row_focus: "Question"
 topics:
-  - "network-science"
-  - "graphs"
-summary: "Identifying merge/split errors and assessing segmentation quality using network and graph concepts."
-key_questions: []
+  - "proofreading"
+  - "qc"
+  - "triage"
+summary: "Impact-weighted proofreading with reproducible quality-control decisions."
+key_questions:
+  - "Which errors most affect biological conclusions?"
+  - "What thresholds justify release versus rework?"
 slides:
   - "/assets/slides/module07/module07-proofreading-and-quality-control.pdf"
 notebook:
   - "/assets/notebooks/module07/module07-proofreading-and-quality-control.ipynb"
-  - "/notebooks/intro/MostSynapsesInAndOut.ipynb"
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
 personas:
-  - gradstudent
-  - researcher
-  - mentor
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
 related_tools:
-  - "connectome-quality"
-  - "ask-an-expert"
+  - "/tools/connectome-quality/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "research-incubator-model"
 prerequisites_list: []
 next_modules:
-  - module08
-  - module09
+  - "module08"
 references: []
 videos: []
-downloads:
-  - "/notebooks/intro/MostSynapsesInAndOut.ipynb"
-last_reviewed: 2026-03-09
+downloads: []
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Execute a proofreading triage cycle that ranks corrections by impact and issues a transparent QC decision.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🔗 Circuits as Graphs</h2>
-    <p>Connectomics datasets can be transformed into graphs, where nodes represent neurons and edges represent synapses. This abstraction allows mathematical analysis of the brain's structure using tools from graph theory.</p>
-    <ul>
-      <li>Graph basics: nodes, edges, adjacency matrices</li>
-      <li>Directed vs. undirected graphs</li>
-      <li>Weighted edges and multilayer networks</li>
-    </ul>
-  </div>
+## Hidden curriculum scaffold
+- Norms often unstated: prioritize by scientific consequence, not visual annoyance.
+- Require explicit rationale for deferred corrections.
 
-  <div class="card module-card">
-    <h2>📈 Network Metrics</h2>
-    <p>Network theory provides powerful tools for quantifying connectivity. Key metrics help identify structural features of circuits, such as hubs, communities, and bottlenecks.</p>
-    <ul>
-      <li>Degree distribution and centrality</li>
-      <li>Path length and clustering coefficient</li>
-      <li>Network motifs and modularity</li>
-    </ul>
-  </div>
+## Core workflow
+1. Classify errors by type and impact.
+2. Prioritize correction queue.
+3. Apply and verify fixes.
+4. Record QC decision with thresholds.
 
-  <div class="card module-card">
-    <h2>🧮 Connectomics in Context</h2>
-    <p>Analyzing neural networks allows us to draw comparisons across species and systems. Biological networks may exhibit small-world or scale-free properties, and can be contrasted with artificial networks.</p>
-    <ul>
-      <li>Small-world and scale-free architectures</li>
-      <li>Comparing biological vs. artificial networks</li>
-      <li>Limitations of network abstraction</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-10: triage philosophy.
+2. 10:00-24: queue classification.
+3. 24:00-38: correction sprint.
+4. 38:00-50: threshold-based release decisions.
+5. 50:00-60: competency check.
 
-  <div class="card module-card">
-    <h2>🎯 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Network terminology and brain graph modeling</li>
-      <li><strong>Skills:</strong> Data modeling, metric computation, abstraction</li>
-      <li><strong>Character:</strong> Persistence, openness to complexity</li>
-      <li><strong>Meta-Learning:</strong> Building bridges between math and biology</li>
-    </ul>
-  </div>
+## Studio activity
+Produce a prioritized correction queue and one release recommendation memo.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Sporns, 2010. <em>Networks of the Brain</em>. MIT Press.</li>
-      <li>Watts & Strogatz, 1998. <em>Collective dynamics of ‘small-world’ networks</em>. Nature.</li>
-      <li>NetworkX Documentation: <a href="https://networkx.org">networkx.org</a></li>
-      <li>Notebook: <a href="{{ '/notebooks/intro/MostSynapsesInAndOut.ipynb' | relative_url }}">Most Synapses In and Out</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/MostSynapsesInAndOut.ipynb" target="_blank">source</a>)</li>
-    </ul>
-  </div>
+## Assessment rubric
+- Minimum: consistent queueing and justified release call.
+- Strong: strong impact reasoning and uncertainty handling.
+- Failure: ad hoc corrections without policy.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Draw a network graph from a small connectome sample</li>
-      <li>Compute and interpret degree centrality and clustering coefficient</li>
-      <li>Compare two networks (e.g. biological vs. artificial) and describe key differences</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Teaching resources
+- [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Quick practice prompt
+Write one rule for when an error must be fixed before release.

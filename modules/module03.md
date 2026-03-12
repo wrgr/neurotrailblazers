@@ -1,16 +1,25 @@
 ---
-
-title: "Module 03: Navigating the Scientific Method in Connectomics"
+title: "Module 03: Python and Jupyter for Neuroscience"
 layout: module
 permalink: /modules/module03/
-description: "Learn how the scientific method guides brain mapping, and develop your ability to ask testable neuroscience questions."
+description: "Build practical Python/Jupyter skills for reproducible connectomics data exploration."
 module_number: 3
-difficulty: "Beginner"
-duration: "2-3 hours"
-prerequisites: "Module 0–2 or equivalent experience with connectomics basics"
-merit_stage: "Orientation & Research Foundations"
-compass_skills: ["Research Fundamentals", "Scientific Reasoning"]
-ccr_focus: ["Knowledge - Scientific Literacy", "Meta-Learning - Problem Framing"]
+difficulty: "Beginner to Intermediate"
+duration: "4 hours"
+learning_objectives:
+  - "Set up a reproducible notebook workflow"
+  - "Load and inspect connectomics data tables"
+  - "Write basic analysis and visualization code blocks"
+  - "Document assumptions and outputs for reuse"
+prerequisites: "Modules 01-02"
+merit_stage: "Foundations"
+compass_skills:
+  - "Programming"
+  - "Data Handling"
+  - "Reproducible Practice"
+ccr_focus:
+  - "Skills - Computational Foundations"
+  - "Meta-Learning - Debugging"
 
 # Normalized metadata
 slug: "module03"
@@ -21,124 +30,69 @@ audience:
 pipeline_stage: "Foundations"
 merit_row_focus: "Foundations"
 topics:
-  - "scientific-method"
-  - "research-design"
-summary: "Intro to coding in Python, Jupyter notebooks, and tools for analysis within a scientific-method framing."
-key_questions: []
+  - "python"
+  - "jupyter"
+  - "reproducibility"
+summary: "Develop notebook-based analysis habits for connectomics datasets with explicit reproducibility discipline."
+key_questions:
+  - "How do we structure notebooks for reuse?"
+  - "What metadata should accompany outputs?"
 slides: []
 notebook: []
 datasets:
-  - access
-  - workflow
+  - "/datasets/access"
+  - "/datasets/workflow"
 personas:
-  - undergradstudent
-  - gradstudent
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
 related_tools:
-  - ask-an-expert
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - education-models
+  - "education-models"
 prerequisites_list: []
 next_modules:
-  - module04
-  - module05
+  - "module04"
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Create a reproducible Jupyter notebook that ingests a connectomics dataset slice, performs one analysis, and exports documented outputs.
 
-<div class="cards-grid module-cards">
-<div class="card module-card">
-  <h2>Overview</h2>
-  <p>This module explores the scientific method as applied to connectomics and computational neuroscience. Learners will break down the steps of hypothesis generation, experimental design, data collection, analysis, and interpretation within the context of brain circuit mapping. It also introduces real-world case studies from published connectomics research.</p>
-</div>
+## Core concepts
+- Notebook as executable lab notebook.
+- Deterministic environments and version pinning.
+- Readable code and explicit assumptions.
 
-<div class="card module-card">
-  <h2>SMART Learning Objectives</h2>
-  <p>By the end of this module, students will be able to:</p>
+## Core workflow
+1. Set environment and dependencies.
+2. Load dataset and validate schema.
+3. Run analysis cell sequence.
+4. Save outputs + metadata.
+5. Re-run from clean kernel.
 
-  <ul>
-    <li><strong>Explain</strong> the steps of the scientific method in the context of neuroscience research. <em>(Bloom: Understand)</em></li>
-    <li><strong>Differentiate</strong> between observational studies and hypothesis-driven experiments. <em>(Bloom: Analyze)</em></li>
-    <li><strong>Formulate</strong> a basic hypothesis related to brain connectivity or structure. <em>(Bloom: Apply, Create)</em></li>
-  </ul>
-</div>
+## 60-minute tutorial run-of-show
+1. 00:00-08: notebook anatomy.
+2. 08:00-20: setup and loading.
+3. 20:00-34: analysis coding sprint.
+4. 34:00-46: plotting and export.
+5. 46:00-56: clean rerun test.
+6. 56:00-60: competency check.
 
-<div class="card module-card">
-  <h2>Training Goals</h2>
-  <ul>
-    <li>Connect foundational research methodology with neuroscience-specific challenges.</li>
-    <li>Introduce experimental paradigms in connectomics (e.g., tracing, volume imaging).</li>
-    <li>Empower students to ask tractable, testable scientific questions.</li>
-  </ul>
-</div>
+## Studio activity
+Build a mini notebook with one descriptive statistic and one plot from a sample connectomics table.
 
-<div class="card module-card">
-  <h2>Core Scientific Method Stages (Connectomics Examples)</h2>
-  <ul>
-    <li><strong>Ask a Question</strong> (e.g., How are inhibitory neurons organized?)</li>
-    <li><strong>Formulate a Hypothesis</strong> (e.g., Inhibitory axons preferentially target dendritic shafts)</li>
-    <li><strong>Design an Experiment</strong> (EM volume + cell type labels + tracing)</li>
-    <li><strong>Collect Data</strong> (Segmentations, synapse detection, tracing)</li>
-    <li><strong>Analyze & Interpret</strong> (Statistical testing, visualization)</li>
-  </ul>
-</div>
+## Assessment rubric
+- Minimum: runnable notebook, clear outputs, basic metadata.
+- Strong: clean structure, robust error handling, repeatable rerun.
+- Failure: hidden state dependencies, undocumented assumptions.
 
-<div class="card module-card">
-  <h2>Key Resources</h2>
-  <ul>
-    <li><a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-the-science-of-biology/a/the-science-of-biology-review">The Scientific Method – Khan Academy</a></li>
-    <li><a href="https://www.scientificamerican.com/article/what-is-connectomics/">Scientific American: Connectomics Primer</a></li>
-    <li>Sample paper: Motta et al., "Dense connectomic reconstruction in layer 4 of the somatosensory cortex."</li>
-  </ul>
-</div>
+## Teaching resources
+- [Dataset Access]({{ '/datasets/access/' | relative_url }})
+- [Workflow]({{ '/datasets/workflow' | relative_url }})
 
-<div class="card module-card">
-  <h2>Sample Colab Notebook</h2>
-  <p><em>Coming soon</em> – Interactive notebook guiding learners to generate testable hypotheses based on EM datasets.</p>
-</div>
-
-<div class="card module-card">
-  <h2>Public Videos / Open Courses</h2>
-  <ul>
-    <li><a href="https://www.pbs.org/video/the-brains-wiring-l4zydr/">PBS Brain Initiative: The Brain’s Wiring</a></li>
-    <li><a href="https://www.youtube.com/watch?v=t2K6mJkSw9U">How to Read a Scientific Paper – YouTube</a></li>
-  </ul>
-</div>
-
-<div class="card module-card">
-  <h2>Assessment</h2>
-  <ul>
-    <li><strong>Worksheet</strong>: Match each step of the scientific method to a real-world connectomics example.</li>
-    <li><strong>Discussion Prompt</strong>: Propose a tractable question that could be answered using electron microscopy (EM) data.</li>
-  </ul>
-</div>
-
-<div class="card module-card">
-  <h2>COMPASS Integration</h2>
-  <p>This module integrates key COMPASS skills:</p>
-  <ul>
-    <li><strong>Research Fundamentals</strong>: How to ground investigations in the scientific method.</li>
-    <li><strong>Scientific Reasoning</strong>: Translating big questions into testable hypotheses.</li>
-  </ul>
-  <p>While designed around connectomics, these skills generalize to all STEM research domains. Alternative examples from physics, chemistry, or computational biology may be substituted as needed in class discussions.</p>
-</div>
-
-<div class="card module-card">
-  <h2>Framework Alignment</h2>
-  <p><strong>MERIT Stage</strong>: Orientation & Research Foundations<br>
-  <strong>CCR Pillars</strong>: Knowledge, Meta-Learning<br>
-  <strong>Scientific Pipeline</strong>: Scientific Question</p>
-</div>
-
-</div>
-</div>
+## Quick practice prompt
+Add one markdown cell documenting input version, processing steps, and output files.

@@ -1,22 +1,25 @@
 ---
-
-title: "Module 10: Hypothesis Testing and Circuit Function"
+title: "Module 10: Network Science and Graph Representation"
 layout: module
 permalink: /modules/module10/
-description: "Explore how neuroscientists formulate and test hypotheses about neural circuits using both biological and computational tools."
+description: "Represent connectomes as graphs and interpret network metrics with biological and statistical caution."
 module_number: 10
 difficulty: "Intermediate"
-duration: "3-4 hours"
+duration: "4 hours"
 learning_objectives:
-
-- "Define a scientific hypothesis and distinguish it from a research question"
-- "Design experiments to test hypotheses about neural connectivity and function"
-- "Apply logic and statistical reasoning to validate or refute hypotheses"
-- "Identify common pitfalls in experimental design and interpretation"
-prerequisites: "Modules 6 and 9; basic knowledge of statistics and neuroscience"
+  - "Construct graph representations from connectomics data"
+  - "Compute and interpret core network metrics"
+  - "Choose graph abstractions appropriate to specific hypotheses"
+  - "Report assumptions and limits of graph-level conclusions"
+prerequisites: "Modules 01-09"
 merit_stage: "Experiment"
-compass_skills: ["Critical Thinking", "Scientific Reasoning", "Rigor"]
-ccr_focus: ["Knowledge - Hypothesis Design", "Skills - Experimental Logic", "Character - Integrity"]
+compass_skills:
+  - "Graph Reasoning"
+  - "Quantitative Interpretation"
+  - "Model Critique"
+ccr_focus:
+  - "Skills - Network Analysis"
+  - "Knowledge - Graph Models"
 
 # Normalized metadata
 slug: "module10"
@@ -27,101 +30,61 @@ audience:
 pipeline_stage: "Experiment"
 merit_row_focus: "Experiment"
 topics:
-  - "hypothesis-testing"
-  - "experimental-design"
-summary: "Introduction to graphs, adjacency, and connectome structure with a focus on hypothesis testing and circuit function."
-key_questions: []
+  - "graphs"
+  - "network-metrics"
+summary: "Build graph models of connectomes and interpret network measures with clear assumptions."
+key_questions:
+  - "What information is lost or preserved by this graph abstraction?"
+  - "Which metrics answer the biological question at hand?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
 personas:
-  - gradstudent
-  - researcher
-  - mentor
+  - "/avatars/gradstudent"
 related_tools:
-  - connectome-quality
-  - ask-an-expert
+  - "/tools/connectome-quality/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "research-incubator-model"
 prerequisites_list: []
 next_modules:
-  - module11
-  - module12
+  - "module11"
+  - "module20"
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Build one connectome graph representation and justify two metric choices for a defined hypothesis.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🧐 What is a Hypothesis?</h2>
-    <p>A hypothesis is a testable prediction about a biological process. In connectomics, hypotheses often relate to how specific circuits enable computation or behavior.</p>
-    <ul>
-      <li>Difference between descriptive questions and mechanistic hypotheses</li>
-      <li>Operational definitions and falsifiability</li>
-      <li>Examples from published neuroscience studies</li>
-    </ul>
-  </div>
+## Core workflow
+1. Define node/edge schema.
+2. Construct graph and inspect integrity.
+3. Compute candidate metrics.
+4. Interpret metrics against hypothesis.
+5. Document abstraction limits.
 
-  <div class="card module-card">
-    <h2>🔢 Designing Experiments</h2>
-    <p>Hypothesis-driven research requires careful planning. This includes defining variables, controls, and outcome measures that meaningfully reflect circuit function.</p>
-    <ul>
-      <li>Independent vs. dependent variables</li>
-      <li>Experimental vs. observational studies</li>
-      <li>Confounds and sources of bias</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-08: graph abstraction choices.
+2. 08:00-20: graph build demo.
+3. 20:00-34: metric computation.
+4. 34:00-46: interpretation and null concerns.
+5. 46:00-60: competency check.
 
-  <div class="card module-card">
-    <h2>📈 Testing and Interpretation</h2>
-    <p>We explore logic-based approaches, simple statistics, and model-based reasoning to interpret data and draw conclusions.</p>
-    <ul>
-      <li>Statistical power and sample size considerations</li>
-      <li>Understanding p-values and confidence intervals</li>
-      <li>Replicability and interpretation frameworks</li>
-    </ul>
-  </div>
+## Studio activity
+Create a graph summary report with node/edge schema, metric table, and interpretation notes.
 
-  <div class="card module-card">
-    <h2>🌍 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Principles of experimental design</li>
-      <li><strong>Skills:</strong> Statistical reasoning, logic, conceptual clarity</li>
-      <li><strong>Character:</strong> Scientific humility, rigor, honesty</li>
-      <li><strong>Meta-Learning:</strong> Learning from failed hypotheses</li>
-    </ul>
-  </div>
+## Assessment rubric
+- Minimum: coherent graph model and metric rationale.
+- Strong: clear link between metric and biological question.
+- Failure: metric dumping without hypothesis alignment.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Popper, K. (1959). <em>The Logic of Scientific Discovery</em></li>
-      <li>Ioannidis, J. (2005). <em>Why Most Published Research Findings Are False</em>. PLoS Medicine</li>
-      <li>Curran-Everett, D. (2000). <em>Statistics 101</em>. Advances in Physiology Education</li>
-    </ul>
-  </div>
+## Teaching resources
+- [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+- [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Given a hypothesis, design a testable experiment and identify the key variables</li>
-      <li>Evaluate a flawed experiment and suggest improvements</li>
-      <li>Interpret mock experimental results in light of the hypothesis</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Quick practice prompt
+State one reason a graph metric might be misleading in your current dataset.

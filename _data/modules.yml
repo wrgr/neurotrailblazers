@@ -89,10 +89,10 @@
   stage: "Analysis"
   ccr: [Skills, Meta-Learning]
 - number: 19
-  title: "Visualization for Insight"
-  description: "Creating visualizations to explore and explain findings."
-  stage: "Analysis"
-  ccr: [Skills, Meta-Learning]
+  title: "Peer Review and Scientific Ethics"
+  description: "Method-focused review and research-integrity decision making in connectomics."
+  stage: "Dissemination"
+  ccr: [Character, Meta-Learning]
 - number: 20
   title: "Statistical Models and Inference"
   description: "Modeling techniques to interpret neural data."

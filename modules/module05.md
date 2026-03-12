@@ -1,25 +1,25 @@
 ---
-title: "Module 05: From Pixels to Proofreading: Image Segmentation and Quality Control"
+title: "Module 05: Electron Microscopy and Image Basics"
 layout: module
 permalink: /modules/module05/
-description: "Discover how neural structures are segmented from raw EM images and how humans proofread to ensure accuracy."
+description: "Understand EM image formation, artifacts, and interpretation basics for reliable connectomics analysis."
 module_number: 5
 difficulty: "Intermediate"
-duration: "3-4 hours"
+duration: "4 hours"
 learning_objectives:
-  - "Explain the concept of image segmentation in connectomics"
-  - "Understand the role of neural networks in segmenting EM volumes"
-  - "Learn how human proofreading improves segmentation accuracy"
-  - "Perform basic proofreading tasks using Neuroglancer"
-prerequisites: "Module 4 and familiarity with EM imaging"
-merit_stage: "Experiment"
+  - "Describe core EM acquisition concepts relevant to connectomics"
+  - "Identify common image artifacts and likely downstream impact"
+  - "Interpret image quality for segmentation readiness"
+  - "Document uncertainty and QA decisions"
+prerequisites: "Modules 01-04"
+merit_stage: "Foundations"
 compass_skills:
-  - "Scientific Visualization"
-  - "Attention to Detail"
-  - "Collaboration"
+  - "Imaging Literacy"
+  - "Quality Assessment"
+  - "Interpretive Discipline"
 ccr_focus:
-  - "Skills - Data Integrity"
-  - "Character - Grit"
+  - "Knowledge - EM Foundations"
+  - "Skills - QA Screening"
 
 # Normalized metadata
 slug: "module05"
@@ -30,107 +30,70 @@ audience:
 pipeline_stage: "Foundations"
 merit_row_focus: "Foundations"
 topics:
-  - "segmentation"
-  - "proofreading"
-summary: "EM imaging principles, file formats, interpretation, and the role of segmentation and proofreading."
-key_questions: []
+  - "em"
+  - "image-quality"
+  - "artifacts"
+summary: "Foundational EM image interpretation and artifact-aware quality control for connectomics workflows."
+key_questions:
+  - "Which artifacts critically affect reconstruction quality?"
+  - "What minimum image quality supports downstream segmentation?"
 slides:
   - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pdf"
 notebook:
   - "/assets/notebooks/module05/module05-electron-microscopy-and-image-basics.ipynb"
-  - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
 personas:
-  - gradstudent
-  - researcher
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
 related_tools:
-  - "connectome-quality"
-  - "ask-an-expert"
+  - "/tools/connectome-quality/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "research-incubator-model"
 prerequisites_list: []
 next_modules:
-  - module06
-  - module07
+  - "module06"
+  - "module07"
 references: []
 videos: []
-downloads:
-  - "/notebooks/intro/ImageAndSegmentationDownload.ipynb"
-last_reviewed: 2026-03-09
+downloads: []
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Evaluate EM image patches for artifact risk and issue a justified pass/rework recommendation.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🧠 What is Segmentation?</h2>
-    <p>Segmentation is the process of identifying and labeling structures in an image. In connectomics, this means separating each neurite (axon or dendrite) and assigning it a unique label. Most current approaches rely on deep learning to automate this step.</p>
-    <ul>
-      <li>Flood-filling networks</li>
-      <li>U-Net and 3D CNNs</li>
-      <li>Segmentation errors: mergers and splits</li>
-    </ul>
-  </div>
+## Concept set
+- Image quality as a scientific constraint.
+- Artifact taxonomy linked to downstream error.
+- QA gates and escalation logic.
 
-  <div class="card module-card">
-    <h2>🛠️ Proofreading 101</h2>
-    <p>No segmentation algorithm is perfect. Humans review and correct the machine-generated output, a process known as proofreading. Tools like Neuroglancer allow users to inspect 3D reconstructions slice-by-slice and validate continuity.</p>
-    <ul>
-      <li>Common proofreading errors and their consequences</li>
-      <li>Using visual cues to spot mergers/splits</li>
-      <li>Basic workflow: select, inspect, edit</li>
-    </ul>
-  </div>
+## Core workflow
+1. Inspect image quality and artifact signatures.
+2. Classify severity and likely impact.
+3. Decide pass/rework with rationale.
+4. Log findings for reproducibility.
 
-  <div class="card module-card">
-    <h2>🔬 Quality Metrics and Feedback Loops</h2>
-    <p>Segmentation quality can be quantified using metrics like Rand score and edge accuracy. Proofread corrections can also be used to retrain models, creating a virtuous cycle of improvement.</p>
-    <ul>
-      <li>Manual vs. automated QA</li>
-      <li>Using corrections to improve models</li>
-      <li>Tracking proofreading contributions</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-08: EM basics refresher.
+2. 08:00-20: artifact recognition walkthrough.
+3. 20:00-34: learner triage round.
+4. 34:00-46: QA threshold debate.
+5. 46:00-56: decision logging practice.
+6. 56:00-60: competency check.
 
-  <div class="card module-card">
-    <h2>🎯 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Understanding EM segmentation outputs</li>
-      <li><strong>Skills:</strong> Visual discrimination, 3D spatial reasoning, data quality assessment</li>
-      <li><strong>Character:</strong> Persistence, humility, teamwork</li>
-      <li><strong>Meta-Learning:</strong> Adapting to evolving tools and methods</li>
-    </ul>
-  </div>
+## Studio activity
+Classify 6 patches by artifact type/severity and propose action.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Januszewski et al., 2018. <em>High-precision automated reconstruction of neurons with flood-filling networks</em>. Nature Methods.</li>
-      <li>Neuroglancer: <a href="https://github.com/google/neuroglancer">github.com/google/neuroglancer</a></li>
-      <li>SNEMI3D Benchmark: <a href="https://cremi.org">cremi.org</a></li>
-      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Uploading-Image-Stacks.ipynb">Uploading Image Stacks</a></li>
+## Assessment rubric
+- Minimum: accurate major artifact calls + action decision.
+- Strong: clear impact reasoning and consistent thresholds.
+- Failure: artifact labels without downstream implications.
 
-      <li>Notebook: <a href="{{ '/notebooks/intro/ImageAndSegmentationDownload.ipynb' | relative_url }}">Image and Segmentation Download</a> (<a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/intro/ImageAndSegmentationDownload.ipynb" target="_blank">source</a>)</li>
-    </ul>
-  </div>
+## Teaching resources
+- [Technical Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Define and explain the purpose of segmentation in connectomics</li>
-      <li>Correct a sample proofreading task using Neuroglancer</li>
-      <li>Describe how proofreading improves final circuit reconstructions</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Quick practice prompt
+Pick one artifact and explain how it could create a merge or split error later.

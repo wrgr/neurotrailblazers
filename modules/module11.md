@@ -1,22 +1,25 @@
 ---
-
-title: "Module 11: Introduction to Machine Learning in Connectomics"
+title: "Module 11: Synapses and Circuit Logic"
 layout: module
 permalink: /modules/module11/
-description: "Understand the role of machine learning in segmenting neurons, predicting synapses, and modeling brain structure."
+description: "Interpret synaptic organization and local circuit motifs from connectomics data with evidence-aware reasoning."
 module_number: 11
-difficulty: "Intermediate"
+difficulty: "Intermediate to Advanced"
 duration: "4 hours"
 learning_objectives:
-
-- "Describe how machine learning is used in image segmentation"
-- "Understand the architecture of convolutional neural networks (CNNs)"
-- "Train a basic segmentation model on example EM data"
-- "Evaluate model performance using accuracy and loss metrics"
-prerequisites: "Modules 1-10, basic Python and image processing"
+  - "Identify synaptic patterns relevant to circuit hypotheses"
+  - "Relate synapse-level observations to local motif logic"
+  - "Differentiate robust motifs from annotation artifacts"
+  - "Communicate circuit-level claims with explicit limits"
+prerequisites: "Modules 01-10"
 merit_stage: "Experiment"
-compass_skills: ["Computational Thinking", "ML Literacy", "Analytical Reasoning"]
-ccr_focus: ["Knowledge - Machine Learning", "Skills - Model Evaluation"]
+compass_skills:
+  - "Circuit Interpretation"
+  - "Synapse Analysis"
+  - "Hypothesis Refinement"
+ccr_focus:
+  - "Knowledge - Synaptic Organization"
+  - "Skills - Motif Reasoning"
 
 # Normalized metadata
 slug: "module11"
@@ -27,101 +30,61 @@ audience:
 pipeline_stage: "Experiment"
 merit_row_focus: "Experiment"
 topics:
-  - "machine-learning"
-  - "segmentation-ml"
-summary: "Mapping synaptic connectivity and interpreting motifs using machine learning and segmentation models."
-key_questions: []
+  - "synapses"
+  - "motifs"
+  - "circuit-logic"
+summary: "From synaptic features to local motif hypotheses, with error-aware interpretation."
+key_questions:
+  - "Which synaptic patterns support specific circuit hypotheses?"
+  - "How do annotation errors alter motif conclusions?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
 personas:
-  - gradstudent
-  - researcher
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
 related_tools:
-  - connectome-quality
-  - ask-an-expert
+  - "/tools/connectome-quality/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "research-incubator-model"
 prerequisites_list: []
 next_modules:
-  - module12
-  - module13
+  - "module12"
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🤖 What is Machine Learning?</h2>
-    <p>Machine learning (ML) is a method of teaching computers to learn from data. In connectomics, ML is used to automatically label parts of the EM volume such as cell boundaries and synapses.</p>
-    <ul>
-      <li>Supervised vs. unsupervised learning</li>
-      <li>Training data and ground truth</li>
-      <li>Applications in connectomics</li>
-    </ul>
-  </div>
+## Core workflow
+1. Identify synapse candidates and context.
+2. Build local connectivity motif representation.
+3. Evaluate against null or baseline expectation.
+4. State supported claim + caveat.
 
-  <div class="card module-card">
-    <h2>🧠 Neural Networks and Segmentation</h2>
-    <p>We focus on convolutional neural networks (CNNs), which are particularly effective for image tasks. Segmentation models learn to assign a class label to each pixel or voxel.</p>
-    <ul>
-      <li>What is a CNN?</li>
-      <li>Basic architecture: layers, activation functions</li>
-      <li>Loss functions for segmentation</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-10: synapse cue recap.
+2. 10:00-24: motif construction examples.
+3. 24:00-38: learner motif analysis.
+4. 38:00-50: alternative explanation challenge.
+5. 50:00-60: competency check.
 
-  <div class="card module-card">
-    <h2>🛠️ Hands-On Training</h2>
-    <p>Use Python and TensorFlow/Keras to define a small segmentation network and train it on provided EM slices.</p>
-    <ul>
-      <li>Loading data and preprocessing</li>
-      <li>Defining the model</li>
-      <li>Training loop and model evaluation</li>
-    </ul>
-  </div>
+## Studio activity
+Analyze one local motif and produce a claim/caveat pair.
 
-  <div class="card module-card">
-    <h2>🎯 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> ML pipeline and architecture</li>
-      <li><strong>Skills:</strong> Coding, debugging, model tuning</li>
-      <li><strong>Character:</strong> Patience, problem-solving, experimental rigor</li>
-      <li><strong>Meta-Learning:</strong> Learning how algorithms improve with data</li>
-    </ul>
-  </div>
+## Assessment rubric
+- Minimum: clear motif description and evidence-backed claim.
+- Strong: thoughtful alternative hypothesis and uncertainty framing.
+- Failure: motif claim without error-awareness.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Januszewski et al., 2018. <em>Flood-filling networks</em>. Nature Methods.</li>
-      <li>Goodfellow et al., <em>Deep Learning</em>, MIT Press.</li>
-      <li>Colab: "Intro to CNNs for EM Segmentation"</li>
-      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/BossDB-Dataset-Classes-for-Pytorch-DataLoaders.ipynb">BossDB Dataset Classes for PyTorch</a></li>
-    </ul>
-  </div>
+## Teaching resources
+- [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
+- [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Describe how CNNs are applied to EM segmentation</li>
-      <li>Train and test a simple ML model on labeled data</li>
-      <li>Evaluate accuracy and interpret confusion matrices</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Quick practice prompt
+Write one motif claim and one plausible confound.

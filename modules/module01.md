@@ -1,13 +1,27 @@
 ---
-title: "Module 01: Introduction to NeuroTrailblazers & Connectomics"
+title: "Module 01: Scientific Curiosity and Motivation"
 layout: module
 permalink: /modules/module01/
-description: "Intro to the NeuroTrailblazers initiative and fundamentals of connectomics."
+description: "Launch into connectomics by turning curiosity into testable scientific questions with explicit motivation and boundaries."
 module_number: 1
 difficulty: "Beginner"
-duration: "1-2 hours"
+duration: "3-4 hours"
+learning_objectives:
+  - "Explain why connectomics matters scientifically"
+  - "Formulate one testable connectomics question"
+  - "Distinguish motivating narratives from evidence-backed claims"
+  - "Identify personal learning goals for the technical track"
+prerequisites: "None"
+merit_stage: "Foundations"
+compass_skills:
+  - "Curiosity"
+  - "Question Formulation"
+  - "Scientific Framing"
+ccr_focus:
+  - "Knowledge - Connectomics Foundations"
+  - "Character - Motivation"
 
-# Normalized metadata (pilot)
+# Normalized metadata
 slug: "module01"
 short_title: "Scientific Curiosity & Motivation"
 status: "active"
@@ -16,105 +30,82 @@ audience:
 pipeline_stage: "Foundations"
 merit_row_focus: "Foundations"
 topics:
-  - "connectomics"
+  - "orientation"
   - "motivation"
-  - "research-orientation"
-summary: "Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry."
-learning_objectives: []
-key_questions: []
+  - "question-framing"
+summary: "Turn broad interest in brain mapping into concrete, testable connectomics questions."
+key_questions:
+  - "What can connectomics answer today?"
+  - "What claims require additional evidence beyond structure?"
 slides: []
 notebook: []
 datasets:
-  - workflow
+  - "/datasets/"
 personas:
-  - undergradstudent
-  - gradstudent
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
 related_tools:
-  - ask-an-expert
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
-prerequisites: []
+  - "research-incubator-model"
+prerequisites_list: []
 next_modules:
-  - module02
+  - "module02"
 references: []
-videos: []
+videos:
+  - "https://www.ted.com/talks/sebastian_seung_i_am_my_connectome"
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Write one connectomics study question with measurable structural outputs and one explicit non-claim.
 
+## Why this module matters
+Motivation drives persistence, but technical progress requires disciplined question framing.
 
-<div class="cards-grid module-cards">
-<div class="card module-card">
-  <h2>Overview</h2>
-  <p>Welcome to the first step in your NeuroTrailblazers journey. This module introduces the core mission of the NeuroTrailblazers initiative and the exciting field of connectomics. You'll explore why understanding the brain’s wiring matters, how large-scale mapping projects like MICrONS and H01 work, and what tools and skills you’ll gain throughout this curriculum.</p>
-</div>
+## Concept set
+### 1) Question before method
+- Technical: define target measurement before tool choice.
+- Plain language: know what you are asking first.
+- Misconception: tools generate good questions automatically.
 
-<div class="card module-card">
-  <h2>SMART Learning Objectives</h2>
-  <p>By the end of this module, students will be able to:</p>
+### 2) Structure informs, not fully explains
+- Technical: structural data constrains hypotheses but does not alone prove dynamic function.
+- Plain language: maps guide, they do not finish the story.
+- Misconception: connectome equals full explanation.
 
-  <ul>
-    <li><strong>Describe</strong> the goals of connectomics and how it fits within modern neuroscience. <em>(Bloom: Remember, Understand)</em></li>
-    <li><strong>Identify</strong> major connectomics datasets and their characteristics. <em>(Bloom: Understand)</em></li>
-    <li><strong>Recognize</strong> the purpose and structure of the NeuroTrailblazers platform. <em>(Bloom: Remember)</em></li>
-  </ul>
-</div>
+### 3) Motivation should be bounded
+- Technical: ambitious goals need near-term measurable milestones.
+- Plain language: big vision, small testable steps.
+- Misconception: broad vision statements are sufficient project plans.
 
-<div class="card module-card">
-  <h2>Training Goals</h2>
-  <ul>
-    <li>Inspire students to pursue curiosity-driven discovery in neuroscience.</li>
-    <li>Establish the value of interdisciplinary learning across neuroscience, computation, and ethics.</li>
-    <li>Familiarize learners with key resources and concepts that recur in later modules.</li>
-  </ul>
-</div>
+## Core workflow
+1. Identify curiosity question.
+2. Convert to measurable structural hypothesis.
+3. Define one metric and one limitation.
+4. Plan first dataset/tool touchpoint.
 
-<div class="card module-card">
-  <h2>Key Resources</h2>
-  <ul>
-    <li><a href="https://www.ted.com/talks/sebastian_seung_i_am_my_connectome">I Am My Connectome – Sebastian Seung (TED)</a></li>
-    <li><a href="https://www.microns-explorer.org/">MICrONS Project Overview</a></li>
-    <li><a href="https://flywire.ai/">FlyWire Dataset from Princeton/HHMI Janelia</a></li>
-  </ul>
-</div>
+## 60-minute tutorial run-of-show
+1. 00:00-08: Why map the brain?
+2. 08:00-20: question framing examples.
+3. 20:00-34: learner question drafting.
+4. 34:00-46: evidence-boundary critique.
+5. 46:00-56: revise to testable hypotheses.
+6. 56:00-60: exit ticket.
 
-<div class="card module-card">
-  <h2>Sample Colab Notebook</h2>
-  <p>Coming soon – preview of interactive connectome viewer + dataset explorer.</p>
-</div>
+## Studio activity
+Draft one question-to-hypothesis sheet with metric, dataset, and non-claim.
 
-<div class="card module-card">
-  <h2>Public Videos / Open Courses</h2>
-  <ul>
-    <li><a href="https://www.brainfacts.org/">BrainFacts.org Intro Series</a></li>
-    <li><a href="https://www.youtube.com/watch?v=qCunr9IeGX8">Jeff Lichtman: Wiring the Brain – YouTube</a></li>
-  </ul>
-</div>
+## Assessment rubric
+- Minimum: question, metric, limitation all present.
+- Strong: clear falsification condition and realistic scope.
+- Failure: motivational text without measurable outputs.
 
-<div class="card module-card">
-  <h2>Assessment</h2>
-  <ul>
-    <li>Short multiple-choice quiz on core terms and dataset names.</li>
-    <li>Reflection: “What makes connectomics exciting to you?” (Submit 150–250 words)</li>
-  </ul>
-</div>
+## Teaching resources
+- [Technical Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }})
+- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 
-<div class="card module-card">
-  <h2>Framework Alignment</h2>
-  <p><strong>MERIT Stage</strong>: Orientation & Research Foundations<br>
-  <strong>CCR Pillars</strong>: Knowledge, Motivation<br>
-  <strong>Scientific Pipeline</strong>: Foundations</p>
-</div>
-
-</div>
-</div>
+## Quick practice prompt
+Write a 3-sentence hypothesis with one metric and one caveat.

@@ -1,20 +1,21 @@
 ---
 
-title: "Legacy Module Archive"
+title: "Module Library"
 layout: page
-description: "Legacy module-based view of NeuroTrailblazers content. Primary navigation now uses track-first pathways."
+description: "Browse all NeuroTrailblazers modules with full tutorial content, competency targets, and linked resources."
 permalink: /modules/
 ---
 
 <div class="main-content">
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
-      <h1 class="hero-title-impact">Legacy Module Archive</h1>
+      <h1 class="hero-title-impact">Module Library</h1>
+      <p class="hero-subtitle">All 25 modules in a browsable library, each designed for tutorial delivery and capability building.</p>
     </div>
   </div>
 
 <section class="section">
-  <p><strong>Recommended:</strong> start with the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or the <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for simpler discovery. This page remains available as a full legacy index.</p>
+  <p><strong>Recommended start:</strong> use the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for guided discovery, then open modules for full tutorial depth.</p>
 </section>
 
 {% include module-index.html %}
@@ -32,9 +33,9 @@ permalink: /modules/
 </section>
 
 
-This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exceptional Researchers to Innovate and Thrive), CCR dimensions, and a professional-pathways workshop layer (historically developed under COMPASS naming). Each module is tagged by its place in the research pipeline and grounded in CCR learning dimensions: Knowledge, Skills, Character, Meta-Learning, and Motivation.
+This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exceptional Researchers to Innovate and Thrive), CCR dimensions, and professional-development pathways. Each module is tagged by pipeline stage and CCR dimensions (Knowledge, Skills, Character, Meta-Learning, Motivation).
 
-## 🧠 MERIT × CCR Curriculum Matrix
+## MERIT x CCR Curriculum Matrix
 
 <div class="merit-matrix">
   <div class="merit-card">
@@ -149,7 +150,7 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
       <a href="{{ '/modules/module14/' | relative_url }}" class="module-subcard">14. Computer Vision for EM</a>
       <a href="{{ '/modules/module15/' | relative_url }}" class="module-subcard">15. LLMs for Patch Analysis</a>
       <a href="{{ '/modules/module18/' | relative_url }}" class="module-subcard">18. Data Cleaning and Preprocessing</a>
-      <a href="{{ '/modules/module19/' | relative_url }}" class="module-subcard">19. Visualization for Insight</a>
+      <a href="{{ '/modules/module19/' | relative_url }}" class="module-subcard">19. Peer Review and Scientific Ethics</a>
     </div>
     <p><strong>Character</strong></p>
     <div class="module-subcards">
@@ -161,7 +162,7 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
     <div class="module-subcards">
       <a href="{{ '/modules/module15/' | relative_url }}" class="module-subcard">15. LLMs for Patch Analysis</a>
       <a href="{{ '/modules/module18/' | relative_url }}" class="module-subcard">18. Data Cleaning and Preprocessing</a>
-      <a href="{{ '/modules/module19/' | relative_url }}" class="module-subcard">19. Visualization for Insight</a>
+      <a href="{{ '/modules/module19/' | relative_url }}" class="module-subcard">19. Peer Review and Scientific Ethics</a>
       <a href="{{ '/modules/module20/' | relative_url }}" class="module-subcard">20. Statistical Models and Inference</a>
     </div>
     <p><strong>Motivation</strong></p>
@@ -215,5 +216,5 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
   </div>
 </div>
 
-Need help deciding where to start? Visit our **[Start Here]({{ '/start-here/' | relative_url }})** guide or use the **[Concept Explorer]({{ '/concepts/' | relative_url }})**. For framework context, see our [Models]({{ '/models/' | relative_url }}) page.
+Need help deciding where to start? Visit **[Start Here]({{ '/start-here/' | relative_url }})**, explore **[Concepts]({{ '/concepts/' | relative_url }})**, or review the **[Models]({{ '/models/' | relative_url }})** that shape the curriculum.
 </div>

@@ -23,7 +23,7 @@ items:
     url: "/concepts/"
   - title: "Workflow"
     url: "/datasets/workflow"
-  - title: "Legacy Modules"
+  - title: "Modules"
     url: "/modules/"
     dropdown: []
   - title: "Datasets"

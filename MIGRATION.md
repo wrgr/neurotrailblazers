@@ -887,3 +887,31 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Full Module Rewrite Completion + Site Polish)
+
+- **Completed full module rewrite (`01-25`)**
+  - Rewrote remaining shallow modules:
+    - `modules/module01.md` through `modules/module11.md`
+    - `modules/module14.md` through `modules/module16.md`
+  - All module pages now follow the same capability/tutorial pattern:
+    - capability target
+    - concept/workflow scaffold
+    - 60-minute run-of-show
+    - studio activity and rubric
+    - teaching resources and quick practice prompt
+
+- **Navigation and module library polish**
+  - Updated `_data/navigation.yml` to relabel `Legacy Modules` as `Modules`.
+  - Updated `modules/index.md` copy to position modules as an active tutorial library (not legacy archive).
+  - Corrected module naming inconsistencies in matrix text and shared module metadata.
+  - Updated `_data/modules.yml` entry for module 19 to align with rewritten topic.
+
+- **Global copy-edit pass (high-traffic pages)**
+  - Refined `start-here.md` section headings for cleaner, more consistent instructional tone.
+  - Preserved structure and links while reducing stylistic noise in headings.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

@@ -1,24 +1,25 @@
 ---
-title: "Module 02: From Pixels to Projects — Exploring Real Connectomics Datasets"
+title: "Module 02: Research Foundations and the Hidden Curriculum"
 layout: module
 permalink: /modules/module02/
-description: "Dive into real-world brain mapping datasets and learn how EM images become 3D digital reconstructions of the brain."
+description: "Learn the unwritten norms of research practice while using real connectomics datasets responsibly."
 module_number: 2
 difficulty: "Beginner"
-duration: "2–3 hours"
+duration: "4 hours"
 learning_objectives:
-  - "Describe how raw EM data is acquired and prepared for analysis"
-  - "Identify the stages in the connectomics data pipeline (imaging, alignment, segmentation, skeletonization)"
-  - "Explore real connectomics datasets using interactive tools"
-  - "Recognize different formats (volumes, segments, meshes, skeletons) in current datasets"
-prerequisites: "Module 1 or equivalent understanding of basic connectomics"
-merit_stage: "Orientation & Research Foundations"
+  - "Describe key hidden-curriculum norms in research settings"
+  - "Navigate roles, expectations, and communication channels"
+  - "Use dataset documentation to infer responsible analysis boundaries"
+  - "Build a personal support/mentorship map"
+prerequisites: "Module 01"
+merit_stage: "Foundations"
 compass_skills:
-  - "Digital Literacy"
-  - "Data Navigation"
+  - "Research Literacy"
+  - "Professional Communication"
+  - "Self-Advocacy"
 ccr_focus:
-  - "Knowledge - Data Acquisition"
-  - "Skills - Dataset Exploration"
+  - "Meta-Learning - Hidden Curriculum"
+  - "Character - Belonging and Agency"
 
 # Normalized metadata
 slug: "module02"
@@ -29,95 +30,67 @@ audience:
 pipeline_stage: "Foundations"
 merit_row_focus: "Foundations"
 topics:
-  - "connectomics-datasets"
-  - "data-pipeline"
-summary: "Unwritten norms in science, research roles, and building confidence while exploring real connectomics datasets."
-key_questions: []
+  - "hidden-curriculum"
+  - "research-roles"
+  - "dataset-orientation"
+summary: "Make implicit research expectations explicit while building responsible dataset orientation habits."
+key_questions:
+  - "What norms are assumed but rarely taught?"
+  - "How do I ask for help effectively in research spaces?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
-  - access
+  - "/datasets/access"
+  - "/datasets/workflow"
 personas:
-  - undergradstudent
-  - gradstudent
-  - researcher
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
 related_tools:
-  - ask-an-expert
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "education-models"
 prerequisites_list: []
 next_modules:
-  - module03
-  - module04
+  - "module03"
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Create a personal research-navigation plan that includes role expectations, communication scripts, and mentor support pathways.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>Core Topics</h2>
-    <ul>
-      <li>🖼️ <strong>Volume Imaging:</strong> Acquiring nanoscale slices via serial-section EM</li>
-      <li>🔗 <strong>Image Alignment:</strong> Stitching and registering slices to form coherent volumes</li>
-      <li>🧩 <strong>Segmentation:</strong> Using AI to label pixels and define cell boundaries</li>
-      <li>🕸️ <strong>Skeletonization:</strong> Creating simplified graphs to represent neuron paths</li>
-      <li>🧠 <strong>Dataset Exploration:</strong> FlyWire, MICrONS, H01, FAFB, Kasthuri, and more</li>
-    </ul>
-  </div>
+## Hidden curriculum scaffold
+- Unspoken norms: meeting etiquette, version-control expectations, attribution etiquette, escalation paths.
+- Explicit supports: script templates, expectation checklists, mentorship map.
 
-  <div class="card module-card">
-    <h2>Sample Interactive Tools</h2>
-    <ul>
-      <li><a href="https://neuroglancer-demo.appspot.com/">Neuroglancer</a></li>
-      <li><a href="https://flywire.ai">FlyWire Viewer</a></li>
-      <li><a href="https://www.microns-explorer.org">MICrONS Explorer</a></li>
-    </ul>
-  </div>
+## Core workflow
+1. Decode one research setting's unwritten rules.
+2. Map roles and communication paths.
+3. Practice help-seeking script.
+4. Define personal support network.
 
-  <div class="card module-card">
-    <h2>COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Understand how data is organized and labeled for analysis</li>
-      <li><strong>Skills:</strong> Navigate viewers, identify structures, interpret metadata</li>
-      <li><strong>Character:</strong> Patience, attention to detail, and openness to uncertainty</li>
-      <li><strong>Meta-Learning:</strong> Learn how tools and pipelines evolve across datasets</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-10: hidden curriculum examples.
+2. 10:00-22: role and expectation mapping.
+3. 22:00-36: communication script practice.
+4. 36:00-48: dataset-access norm discussion.
+5. 48:00-60: personal navigation plan.
 
-  <div class="card module-card">
-    <h2>References & Resources</h2>
-    <ul>
-      <li><strong>Kasthuri et al., 2015</strong>, Cell – "Saturated reconstruction of neocortex"</li>
-      <li><strong>Zheng et al., 2018</strong>, Nature – FlyWire / FAFB EM volume of adult fly brain</li>
-      <li><strong>MICrONS dataset release</strong>, 2021 – V1 Layer 2/3 mouse volume</li>
-      <li><a href="https://bossdb.org">Allen Institute / BossDB</a></li>
-      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/Five-Minute-Jump-Start.ipynb">Five-Minute Jump Start</a></li>
-      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/More-Advanced-Get-Started-Downloading-Data-with-Intern.ipynb">Advanced Data Downloading</a></li>
-    </ul>
-  </div>
+## Studio activity
+Produce a one-page "lab navigation playbook" with norms, scripts, and mentor contacts.
 
-  <div class="card module-card">
-    <h2>Assessment</h2>
-    <ul>
-      <li>Match dataset types to pipeline stages (e.g., segmentation → labeled volume)</li>
-      <li>Navigate a dataset and find one synapse, one neuron, and one glial cell</li>
-      <li>Write a 3–4 sentence description of how segmentation is performed and why it matters</li>
-    </ul>
-  </div>
+## Assessment rubric
+- Minimum: clear norms list and help-seeking plan.
+- Strong: realistic escalation paths and reflection on barriers.
+- Failure: generic advice without actionable steps.
 
-</div>
-</div>
+## Teaching resources
+- [Start Here]({{ '/start-here/' | relative_url }})
+- [Learner Personas]({{ '/avatars/' | relative_url }})
+- [Dataset Access Guide]({{ '/datasets/access/' | relative_url }})
+
+## Quick practice prompt
+Draft one email requesting clarification on an unclear lab expectation.

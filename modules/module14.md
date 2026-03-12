@@ -1,21 +1,25 @@
 ---
-
-title: "Module 14: Neuron Classification and Morphology"
+title: "Module 14: Computer Vision for EM"
 layout: module
 permalink: /modules/module14/
-description: "Learn how to identify neuron types using structural, morphological, and connectivity features in EM datasets."
+description: "Apply computer vision methods to EM imagery for segmentation support, morphology extraction, and quality diagnostics."
 module_number: 14
-difficulty: "Intermediate"
-duration: "3 hours"
+difficulty: "Advanced"
+duration: "4-5 hours"
 learning_objectives:
-
-- "Classify neurons based on morphology and known anatomical features"
-- "Use tools to compute quantitative descriptors of neuron shape"
-- "Interpret classifications in the context of network architecture"
-prerequisites: "Modules 1-13, basic familiarity with neuroanatomy"
+  - "Explain how classical and deep CV methods map to connectomics tasks"
+  - "Compare model outputs using biologically meaningful error criteria"
+  - "Design a validation plan for CV pipelines in EM data"
+  - "Report CV limitations with reproducibility safeguards"
+prerequisites: "Modules 1-13, Python ML basics"
 merit_stage: "Analysis"
-compass_skills: ["Pattern Recognition", "Quantitative Analysis", "Critical Thinking"]
-ccr_focus: ["Knowledge - Neuroanatomy", "Skills - Morphometrics"]
+compass_skills:
+  - "Computer Vision"
+  - "Model Evaluation"
+  - "Error Analysis"
+ccr_focus:
+  - "Skills - Computer Vision"
+  - "Character - Responsible Interpretation"
 
 # Normalized metadata
 slug: "module14"
@@ -26,97 +30,97 @@ audience:
 pipeline_stage: "Analysis"
 merit_row_focus: "Analysis"
 topics:
-  - "neuron-morphology"
-  - "classification"
-summary: "From filters to deep learning for image understanding and neuron classification from EM morphology."
-key_questions: []
+  - "computer-vision"
+  - "em-imagery"
+  - "validation"
+summary: "Use CV methods for EM analysis with error-aware validation and reproducibility discipline."
+key_questions:
+  - "Which CV model class is appropriate for each EM task?"
+  - "How should CV error be measured for biological use cases?"
+  - "What validation evidence is needed before downstream use?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
+  - "/datasets/mouseconnects"
 personas:
-  - gradstudent
-  - researcher
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
 related_tools:
-  - connectome-quality
-  - ask-an-expert
+  - "/tools/connectome-quality/"
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
-prerequisites_list: []
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Image-processing and matrix basics"
+  - "Foundational ML familiarity"
 next_modules:
-  - module15
-  - module16
-references: []
+  - "module15"
+  - "module16"
+references:
+  - "Januszewski et al. (2018) for segmentation model context."
+  - "Recent MICrONS/FlyWire methods for practical CV constraints."
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🔄 Neuron Classification Strategies</h2>
-    <ul>
-      <li>Taxonomies: excitatory vs. inhibitory, projection vs. interneuron</li>
-      <li>Features: soma size, dendritic branching, axonal spread</li>
-      <li>Tools: NBLAST, NeuroMorpho.org, mesh classifiers</li>
-    </ul>
-  </div>
+## Why this module matters
+CV is central to modern connectomics throughput. Without rigorous validation and domain-aware error analysis, CV outputs can silently corrupt reconstruction and inference.
 
-  <div class="card module-card">
-    <h2>🔄 Morphological Feature Extraction</h2>
-    <ul>
-      <li>Skeleton-based shape descriptors</li>
-      <li>Sholl analysis, path length, bifurcation ratios</li>
-      <li>Normalization and comparative metrics</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Task-model fit
+- **Technical:** detection, segmentation, denoising, and classification tasks require different objective functions and architectures.
+- **Plain language:** pick models for the job, not by popularity.
+- **Misconception guardrail:** one model can solve all EM tasks equally well.
 
-  <div class="card module-card">
-    <h2>🔄 Functional Implications</h2>
-    <ul>
-      <li>Linking morphology to electrophysiological role</li>
-      <li>Comparing morphologically similar neurons across regions</li>
-      <li>Implications for connectivity and computation</li>
-    </ul>
-  </div>
+### 2) Error taxonomy over headline metrics
+- **Technical:** splits/merges, boundary drift, and artifact sensitivity are often more informative than aggregate accuracy.
+- **Plain language:** understand exactly how models fail.
+- **Misconception guardrail:** high benchmark score implies safe downstream use.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Cell type and morphology principles</li>
-      <li><strong>Skills:</strong> Structural comparison, database tools</li>
-      <li><strong>Character:</strong> Attention to detail, curiosity</li>
-      <li><strong>Meta-Learning:</strong> Evaluating classification limits and biases</li>
-    </ul>
-  </div>
+### 3) Validation as release gate
+- **Technical:** model release should require acceptance criteria tied to biological impact and reproducibility checks.
+- **Plain language:** do not ship CV outputs without clear go/no-go rules.
+- **Misconception guardrail:** visual plausibility is sufficient validation.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Ascoli et al., 2007. <em>NeuroMorpho.Org: a central resource for neuronal morphologies</em>. Nat Neurosci.</li>
-      <li>Colab: "Quantifying neuron shape using PyTorch and scikit-image"</li>
-      <li>Allen Institute Cell Types Database</li>
-    </ul>
-  </div>
+## Core workflow
+1. Define EM task and acceptable error envelope.
+2. Select baseline and candidate CV approaches.
+3. Run evaluation using biologically relevant metrics.
+4. Perform failure-case review on ambiguous regions.
+5. Publish model card with limitations and intended use.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Extract morphology features from an EM-reconstructed neuron</li>
-      <li>Classify neuron type using known anatomical criteria</li>
-      <li>Submit justification and visualizations of your classification</li>
-    </ul>
-  </div>
-</div>
-</div>
+## 60-minute tutorial run-of-show
+1. **00:00-08:00** task framing + exemplar failure modes.
+2. **08:00-20:00** choose metrics tied to downstream biology.
+3. **20:00-34:00** evaluate baseline vs candidate model.
+4. **34:00-46:00** error taxonomy and triage discussion.
+5. **46:00-56:00** model card drafting.
+6. **56:00-60:00** competency check.
+
+## Studio activity
+**Scenario:** Compare two segmentation-support CV models for an EM subvolume.
+
+**Outputs**
+- metric table with biological interpretation,
+- failure-case log,
+- model-card limitation statement.
+
+## Assessment rubric
+- **Minimum pass:** clear task-model rationale, biologically relevant metrics, explicit limitations.
+- **Strong performance:** robust failure analysis and operational release criteria.
+- **Failure modes:** metric-only reasoning, weak split design, no deployment boundaries.
+
+## Teaching resources
+- [Technical Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+- [Technical Unit 09: Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Quick practice prompt
+Document one CV result with one supported use case and one forbidden use case.

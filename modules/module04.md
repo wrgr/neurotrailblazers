@@ -1,22 +1,25 @@
 ---
-
-title: "Module 04: Neuroanatomy and Circuit Architecture"
+title: "Module 04: Neuroanatomy for Connectomics"
 layout: module
 permalink: /modules/module04/
-description: "Learn how the brain is organized into regions, layers, and systems—and how those structures shape connectivity."
+description: "Build neuroanatomical fluency for interpreting connectomics structures across scales."
 module_number: 4
-difficulty: "Beginner to Intermediate"
-duration: "2-3 hours"
+difficulty: "Intermediate"
+duration: "4 hours"
 learning_objectives:
-
-- "Identify major brain regions and their functions"
-- "Describe how neurons are arranged into layers and columns"
-- "Explain how structural neuroanatomy informs connectome interpretation"
-- "Analyze EM data with respect to brain region and local context"
-prerequisites: "Module 1-3 or prior biology/anatomy background"
-merit_stage: "Scientific Question"
-compass_skills: ["Domain Awareness", "Scientific Visualization", "Attention to Detail"]
-ccr_focus: ["Knowledge - Neuroscience Foundations", "Skills - Analytical Thinking"]
+  - "Identify major neuroanatomical compartments relevant to connectomics"
+  - "Relate anatomical context to interpretation of local EM structures"
+  - "Use region/layer context to avoid misclassification"
+  - "Communicate anatomy-based uncertainty clearly"
+prerequisites: "Modules 01-03"
+merit_stage: "Question"
+compass_skills:
+  - "Anatomical Reasoning"
+  - "Contextual Interpretation"
+  - "Scientific Vocabulary"
+ccr_focus:
+  - "Knowledge - Neuroanatomy"
+  - "Skills - Structural Interpretation"
 
 # Normalized metadata
 slug: "module04"
@@ -28,101 +31,66 @@ pipeline_stage: "Question"
 merit_row_focus: "Question"
 topics:
   - "neuroanatomy"
-  - "brain-regions"
-summary: "Understanding neural structure at micro- and macro-scale to inform connectome interpretation."
-key_questions: []
+  - "scale"
+  - "context"
+summary: "Use anatomical context to improve connectomics interpretation and reduce structural misclassification."
+key_questions:
+  - "What anatomical context is needed for robust interpretation?"
+  - "Where do local cues fail without region-level information?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
 personas:
-  - undergradstudent
-  - gradstudent
-  - researcher
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
 related_tools:
-  - ask-an-expert
+  - "/tools/connectome-quality/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
+  - "research-incubator-model"
 prerequisites_list: []
 next_modules:
-  - module05
-  - module06
+  - "module05"
+  - "module06"
 references: []
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Interpret a local EM region using correct anatomical context and document one confident and one uncertain structural call.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🧭 Mapping the Brain: Gross and Fine Anatomy</h2>
-    <p>The brain is organized into regions (e.g., cortex, hippocampus, thalamus) that carry out specialized functions. Each region has distinct anatomy visible at both macroscopic and microscopic levels. Understanding where a dataset comes from is key to interpreting its significance.</p>
-    <ul>
-      <li>Gross anatomy: lobes, gyri, sulci, ventricles</li>
-      <li>Microscopic anatomy: cortical layers, hippocampal subfields</li>
-      <li>Common brain atlases and reference frameworks</li>
-    </ul>
-  </div>
+## Concept set
+- Region/layer context affects interpretation.
+- Local morphology needs cross-slice and cross-region checks.
+- Uncertainty should be explicit when anatomy is ambiguous.
 
-  <div class="card module-card">
-    <h2>🏗️ Layers, Columns, and Microcircuits</h2>
-    <p>Within brain regions, neurons are arranged in stereotyped patterns. In the cortex, this includes six layers and repeating columnar structures. These features shape how circuits function and must be considered during analysis.</p>
-    <ul>
-      <li>Columnar organization of the neocortex</li>
-      <li>Laminar inputs and outputs</li>
-      <li>Thalamocortical and corticocortical circuits</li>
-    </ul>
-  </div>
+## Core workflow
+1. Identify anatomical region/layer.
+2. Map candidate structures to known context.
+3. Cross-check with neighboring slices.
+4. Annotate confidence and escalation path.
 
-  <div class="card module-card">
-    <h2>🔬 Neuroanatomy in EM Datasets</h2>
-    <p>Connectomics volumes may span multiple layers or regions. Accurate annotation requires contextual awareness. Tools like Neuroglancer and 3D viewers can assist in orienting within a dataset.</p>
-    <ul>
-      <li>Identifying regions and layers in EM volumes</li>
-      <li>Comparing volumes: MICrONS vs. H01 vs. FlyWire</li>
-      <li>Embedding anatomical knowledge into AI workflows</li>
-    </ul>
-  </div>
+## 60-minute tutorial run-of-show
+1. 00:00-10: macro-to-micro anatomy bridge.
+2. 10:00-24: guided structural identification.
+3. 24:00-38: ambiguity case discussion.
+4. 38:00-50: learner annotation round.
+5. 50:00-60: debrief and competency check.
 
-  <div class="card module-card">
-    <h2>🎯 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Structures of the brain and regional functions</li>
-      <li><strong>Skills:</strong> Spatial reasoning, image interpretation, reference use</li>
-      <li><strong>Character:</strong> Precision, curiosity, discipline</li>
-      <li><strong>Meta-Learning:</strong> Mapping new knowledge to spatial structures</li>
-    </ul>
-  </div>
+## Studio activity
+Label one patch set with anatomy context, structure call, and confidence rationale.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Allen Brain Atlas: <a href="https://portal.brain-map.org">brain-map.org</a></li>
-      <li>Neuroanatomy Videos: <a href="https://www.youtube.com/@NeuroscientificallyChallenged">Neuroscientifically Challenged</a></li>
-      <li>Human Connectome Project: <a href="https://www.humanconnectome.org">humanconnectome.org</a></li>
-      <li>FlyWire Neuroglancer Viewer: <a href="https://flywire.ai">flywire.ai</a></li>
-      <li><a href="https://bossdb.org">BossDB</a> Cookbook: <a href="https://github.com/aplbrain/bossdb_cookbook/blob/main/notebooks/IARPA-MICrONS-Pinky100.ipynb">MICrONS Pinky100 Walkthrough</a></li>
-    </ul>
-  </div>
+## Assessment rubric
+- Minimum: context-aware call and confidence note.
+- Strong: clear rationale with cross-slice checks.
+- Failure: isolated local cue overconfidence.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Label the six layers of cortex and describe a function of each</li>
-      <li>Use an EM viewer to identify region-specific features</li>
-      <li>Summarize how brain region impacts connectome structure</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Teaching resources
+- [Technical Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})
+- [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
+
+## Quick practice prompt
+Describe one case where anatomy context changes your interpretation.

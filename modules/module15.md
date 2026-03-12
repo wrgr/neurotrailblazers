@@ -1,22 +1,25 @@
 ---
-
-title: "Module 15: Connectome Proofreading and Quality Control"
+title: "Module 15: LLMs for Patch Analysis"
 layout: module
 permalink: /modules/module15/
-description: "Learn how to identify and correct errors in segmentation and connectivity, improving the reliability of connectomics data."
+description: "Use LLM-assisted workflows for patch triage, annotation support, and documentation in connectomics without outsourcing scientific judgment."
 module_number: 15
-difficulty: "Intermediate"
-duration: "3 hours"
+difficulty: "Advanced"
+duration: "4-5 hours"
 learning_objectives:
-
-- "Identify common segmentation and synapse errors"
-- "Use visualization tools for proofreading"
-- "Assess connectome quality with metrics"
-- "Propose and apply corrections to data"
-prerequisites: "Modules 1-14, familiarity with Neuroglancer"
+  - "Identify realistic LLM use cases in connectomics patch workflows"
+  - "Design prompt/evaluation loops with reliability checks"
+  - "Detect hallucination and unsupported inference risks"
+  - "Integrate LLM outputs into human-in-the-loop QC"
+prerequisites: "Modules 12-14"
 merit_stage: "Analysis"
-compass_skills: ["Attention to Detail", "Visual Reasoning", "Data Curation"]
-ccr_focus: ["Skills - Quality Control", "Skills - Annotation"]
+compass_skills:
+  - "AI-Assisted Analysis"
+  - "Prompt Design"
+  - "Verification Practice"
+ccr_focus:
+  - "Skills - AI Tooling"
+  - "Character - Critical Verification"
 
 # Normalized metadata
 slug: "module15"
@@ -27,101 +30,96 @@ audience:
 pipeline_stage: "Analysis"
 merit_row_focus: "Analysis"
 topics:
-  - "quality-control"
-  - "proofreading"
-summary: "Using large language models and structured workflows for connectome proofreading and quality control."
-key_questions: []
+  - "llm"
+  - "patch-analysis"
+  - "human-in-the-loop"
+summary: "Apply LLM support to patch-level workflows with strict verification and quality controls."
+key_questions:
+  - "Where can LLMs help without introducing unacceptable risk?"
+  - "How should outputs be verified before scientific use?"
+  - "Which tasks must remain human-adjudicated?"
 slides: []
 notebook: []
 datasets:
-  - mouseconnects
-  - workflow
+  - "/datasets/workflow"
+  - "/datasets/mouseconnects"
 personas:
-  - gradstudent
-  - researcher
-  - mentor
+  - "/avatars/gradstudent"
+  - "/avatars/researcher"
 related_tools:
-  - "connectome-quality"
-  - "ask-an-expert"
+  - "/tools/connectome-quality/"
+  - "/tools/ask-an-expert/"
 related_frameworks:
-  - research-incubator-model
-  - education-models
-prerequisites_list: []
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Segmentation and proofreading basics"
+  - "Basic scripting and data-table handling"
 next_modules:
-  - module16
-  - module17
-references: []
+  - "module16"
+references:
+  - "LLM reliability and evaluation literature (task-specific)."
+  - "Internal patch-analysis workflow guidance."
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Implement an LLM-assisted patch-analysis workflow with verification gates, confidence labeling, and explicit human override policies.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🔍 Common Error Types</h2>
-    <p>Segmentation errors (splits, merges) and synapse mislabels affect downstream analysis. Learn to spot patterns in raw EM imagery and segment overlays.</p>
-    <ul>
-      <li>Split vs. merge errors</li>
-      <li>Ghost synapses and missing links</li>
-      <li>Boundary ambiguity and stitching artifacts</li>
-    </ul>
-  </div>
+## Why this module matters
+LLMs can accelerate triage and documentation, but unverified outputs can propagate errors quickly. Connectomics requires careful human-in-the-loop governance.
 
-  <div class="card module-card">
-    <h2>📊 Visualization Tools</h2>
-    <p>Interactive viewers like Neuroglancer enable efficient quality control. Understand how to use layers and cross-sections for visual checks.</p>
-    <ul>
-      <li>Configuring layers in Neuroglancer</li>
-      <li>Using 3D mesh and skeleton modes</li>
-      <li>Spotting errors across slices</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Assistive, not autonomous
+- **Technical:** LLMs should support prioritization, summarization, and protocol guidance, not final biological adjudication.
+- **Plain language:** use LLMs to help, not to decide alone.
+- **Misconception guardrail:** fluent output equals correct output.
 
-  <div class="card module-card">
-    <h2>📈 Metrics and Fixes</h2>
-    <p>Evaluate accuracy using F1 score, precision, recall, and consistency with ground truth or heuristics. Apply edits or flag errors for correction.</p>
-    <ul>
-      <li>Segment overlap metrics</li>
-      <li>Topology-aware metrics</li>
-      <li>Manual editing vs. AI-assisted correction</li>
-    </ul>
-  </div>
+### 2) Verification-first design
+- **Technical:** every LLM output class should map to a verification method and acceptance threshold.
+- **Plain language:** define how you will check answers before using them.
+- **Misconception guardrail:** spot-checking only when output seems odd.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Common connectomics error modes</li>
-      <li><strong>Skills:</strong> Visual identification, annotation tools</li>
-      <li><strong>Character:</strong> Persistence, accountability</li>
-      <li><strong>Meta-Learning:</strong> Recognizing error patterns across datasets</li>
-    </ul>
-  </div>
+### 3) Auditability
+- **Technical:** prompt versions, model versions, and decision logs are required for reproducibility.
+- **Plain language:** keep records so you can explain what happened.
+- **Misconception guardrail:** chat history alone is sufficient traceability.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Funke et al., 2018. <em>Large Scale Image Segmentation with Structured Loss Based Deep Learning for Connectomics</em>. ECCV.</li>
-      <li>Motta et al., 2019. <em>Dense connectomic reconstruction in layer 4 of the somatosensory cortex</em>. Science.</li>
-      <li>Colab: "Segmentation Proofreading with Neuroglancer"</li>
-    </ul>
-  </div>
+## Core workflow
+1. Define candidate LLM tasks (triage, summary, QA aid).
+2. Create prompt templates and expected output schema.
+3. Add verification gates and human adjudication rules.
+4. Pilot on small patch set and log failure patterns.
+5. Refine prompts/policies before wider use.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Locate and document at least 3 segmentation errors in a provided volume</li>
-      <li>Use Neuroglancer to propose a correction</li>
-      <li>Reflect on how quality control affects downstream analysis</li>
-    </ul>
-  </div>
-</div>
-</div>
+## 60-minute tutorial run-of-show
+1. **00:00-08:00** scope boundaries and failure examples.
+2. **08:00-20:00** prompt template design.
+3. **20:00-34:00** run sample outputs and score reliability.
+4. **34:00-46:00** define verification and override rules.
+5. **46:00-56:00** produce governance checklist.
+6. **56:00-60:00** competency check.
+
+## Studio activity
+**Scenario:** Build an LLM-assisted triage helper for proofreading queues.
+
+**Outputs**
+- prompt + schema pack,
+- verification rubric,
+- risk register and override policy.
+
+## Assessment rubric
+- **Minimum pass:** clear task boundaries, verification logic, and logging fields.
+- **Strong performance:** robust failure-mode handling and actionable governance plan.
+- **Failure modes:** unbounded scope, no confidence policy, missing audit trail.
+
+## Teaching resources
+- [Module 14]({{ '/modules/module14/' | relative_url }})
+- [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## Quick practice prompt
+For one LLM output type, define: acceptance threshold, verification method, and human override trigger.

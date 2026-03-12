@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 14: Computer Vision for EM
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module14.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module14.html`
 - Activity worksheet: `/assets/worksheets/module14/module14-activity.md`
 - Module page: [Module 14: Computer Vision for EM]({{ '/modules/module14/' | relative_url }})

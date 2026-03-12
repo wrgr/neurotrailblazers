@@ -6,14 +6,16 @@
 {% assign slide_page = '/modules/slides/module' | append: numpad | append: '/' %}
 {% assign worksheet = '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' %}
 {% assign marp_src = '/course/decks/marp/modules/module' | append: numpad | append: '.marp.md' %}
+{% assign marp_html = '/course/decks/marp/out/modules/module' | append: numpad | append: '.html' %}
 
 <section class="section">
   <h2>Teaching Materials</h2>
   <div class="cards-grid">
     <article class="card">
       <h3 class="card-title">Slide Deck</h3>
-      <p class="card-description">Classroom-ready deck outline linked to this module.</p>
+      <p class="card-description">Classroom-ready deck links for teaching and delivery.</p>
       <p><a href="{{ slide_page | relative_url }}">Open slide deck page</a></p>
+      <p><a href="{{ marp_html | relative_url }}">Open rendered HTML deck</a></p>
     </article>
     <article class="card">
       <h3 class="card-title">Activity Worksheet</h3>

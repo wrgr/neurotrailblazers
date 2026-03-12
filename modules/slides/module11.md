@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 11: Synapses and Circuit Logic
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module11.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module11.html`
 - Activity worksheet: `/assets/worksheets/module11/module11-activity.md`
 - Module page: [Module 11: Synapses and Circuit Logic]({{ '/modules/module11/' | relative_url }})

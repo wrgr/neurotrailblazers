@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 22: Scientific Writing and Presentation
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module22.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module22.html`
 - Activity worksheet: `/assets/worksheets/module22/module22-activity.md`
 - Module page: [Module 22: Scientific Writing and Presentation]({{ '/modules/module22/' | relative_url }})

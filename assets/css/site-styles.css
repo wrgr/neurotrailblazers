@@ -594,6 +594,31 @@ body {
   margin-right: 0.25rem;
 }
 
+.lesson-map {
+  margin-bottom: 1rem;
+}
+
+.lesson-map-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.lesson-step {
+  border-top: 4px solid var(--axon-cyan);
+}
+
+.lesson-step-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--neural-blue);
+  background: var(--brain-gray);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  margin-bottom: 0.7rem;
+}
+
 footer {
   background: var(--synapse-black);
   color: var(--white);

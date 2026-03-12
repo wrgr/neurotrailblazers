@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 02: Research Foundations and the Hidden Curriculum
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module02.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module02.html`
 - Activity worksheet: `/assets/worksheets/module02/module02-activity.md`
 - Module page: [Module 02: Research Foundations and the Hidden Curriculum]({{ '/modules/module02/' | relative_url }})

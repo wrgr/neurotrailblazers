@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 16: Scientific Visualization for Connectomics
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module16.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module16.html`
 - Activity worksheet: `/assets/worksheets/module16/module16-activity.md`
 - Module page: [Module 16: Scientific Visualization for Connectomics]({{ '/modules/module16/' | relative_url }})

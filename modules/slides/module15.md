@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 15: LLMs for Patch Analysis
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module15.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module15.html`
 - Activity worksheet: `/assets/worksheets/module15/module15-activity.md`
 - Module page: [Module 15: LLMs for Patch Analysis]({{ '/modules/module15/' | relative_url }})

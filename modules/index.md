@@ -16,6 +16,7 @@ permalink: /modules/
 
 <section class="section">
   <p><strong>Recommended start:</strong> use the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for guided discovery, then open modules for full tutorial depth.</p>
+  <p><strong>Teaching-ready materials:</strong> see the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a> for lesson kits, rendered decks, and worksheets.</p>
 </section>
 
 {% include module-index.html %}

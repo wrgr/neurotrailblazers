@@ -1,0 +1,14 @@
+{% assign module = include.module %}
+{% assign num = module.module_number | to_i %}
+{% assign numpad = num %}
+{% if num < 10 %}
+  {% assign numpad = '0' | append: num %}
+{% endif %}
+
+<article class="card">
+  <h3 class="card-title">{{ numpad }}. <a href="{{ module.url | relative_url }}">{{ module.short_title | default: module.title }}</a></h3>
+  <p class="card-description">{{ module.summary | default: module.description }}</p>
+  <p><strong>Lesson:</strong> <a href="{{ module.url | relative_url }}">Module page</a></p>
+  <p><strong>Deck:</strong> <a href="{{ '/modules/slides/module' | append: numpad | append: '/' | relative_url }}">Slide page</a> | <a href="{{ '/course/decks/marp/out/modules/module' | append: numpad | append: '.html' | relative_url }}">Rendered HTML</a></p>
+  <p><strong>Source:</strong> <a href="{{ '/course/decks/marp/modules/module' | append: numpad | append: '.marp.md' | relative_url }}">Marp source</a> | <a href="{{ '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' | relative_url }}">Worksheet</a></p>
+</article>

@@ -159,9 +159,10 @@ module_paths.each do |path|
 
     ## Slide Deck for #{title}
 
-    This page provides the teaching slide source and related delivery materials.
+    This page provides the teaching slide source, rendered deck, and related delivery materials.
 
     - Slide source (`marp`): `/course/decks/marp/modules/module#{num}.marp.md`
+    - Rendered HTML deck: `/course/decks/marp/out/modules/module#{num}.html`
     - Activity worksheet: `/assets/worksheets/module#{num}/module#{num}-activity.md`
     - Module page: [#{title}]({{ '/modules/module#{num}/' | relative_url }})
   MD

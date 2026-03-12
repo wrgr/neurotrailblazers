@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 18: Data Cleaning and Preprocessing
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module18.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module18.html`
 - Activity worksheet: `/assets/worksheets/module18/module18-activity.md`
 - Module page: [Module 18: Data Cleaning and Preprocessing]({{ '/modules/module18/' | relative_url }})

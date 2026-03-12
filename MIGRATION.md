@@ -942,3 +942,29 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Delivery-Ready Lesson UX + Rendered Deck Outputs)
+
+- **Lesson-flow UI for modules**
+  - Added `_includes/ui/module-lesson-map.html` and integrated it in `_layouts/module.html`.
+  - Each module now opens with a consistent instructional path:
+    - Learn -> Practice -> Check -> Teach
+  - Added supporting style rules in `assets/css/site-styles.css`.
+
+- **Rendered deck links in teaching pages**
+  - Updated `scripts/generate_module_teaching_materials.rb` template so each `modules/slides/moduleNN.md` includes:
+    - Marp source path
+    - rendered HTML deck path
+    - worksheet path
+  - Regenerated all module slide pages (`modules/slides/module01.md` ... `module25.md`).
+
+- **Marp rendering verified**
+  - Updated `scripts/render_marp.sh` to avoid stdin inheritance issues during `find` loop and to support nested paths.
+  - Rendered all available decks to:
+    - `course/decks/marp/out/*.html` (technical track decks)
+    - `course/decks/marp/out/modules/moduleNN.html` (module decks)
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

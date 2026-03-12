@@ -11,8 +11,9 @@ pathways:
 
 ## Slide Deck for Module 06: Segmentation 101
 
-This page provides the teaching slide source and related delivery materials.
+This page provides the teaching slide source, rendered deck, and related delivery materials.
 
 - Slide source (`marp`): `/course/decks/marp/modules/module06.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/modules/module06.html`
 - Activity worksheet: `/assets/worksheets/module06/module06-activity.md`
 - Module page: [Module 06: Segmentation 101]({{ '/modules/module06/' | relative_url }})

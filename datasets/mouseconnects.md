@@ -197,7 +197,7 @@ maintainer: TBD
             <h2>Data Release Coming Soon</h2>
             <p>The MouseConnects dataset is currently in active development. Data release, interactive browsers, and analysis tools will be made available as the project progresses. Stay tuned for updates!</p>
             <div class="mt-1">
-                <a href="#" class="btn btn-primary">Get Notified</a>
+                <a href="{{ '/tools/ask-an-expert/' | relative_url }}" class="btn btn-primary">Get Notified</a>
             </div>
         </div>
     </div>

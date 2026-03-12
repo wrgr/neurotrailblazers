@@ -111,10 +111,10 @@ maintainer: TBD
         <div class="card">
             <h2>📣 Join the Community</h2>
             <ul>
-                <li><a href="#">Slack Workspace</a></li>
-                <li><a href="#">Contribute a Notebook</a></li>
-                <li><a href="#">Proofread & Earn with MTurk-style Projects</a></li>
-                <li><a href="#">Submit a New Metric</a></li>
+                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Slack Workspace</a></li>
+                <li><a href="{{ '/notebooks/connectome-quality/' | relative_url }}">Contribute a Notebook</a></li>
+                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Proofread & Earn with MTurk-style Projects</a></li>
+                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Submit a New Metric</a></li>
             </ul>
         </div>
     </div>

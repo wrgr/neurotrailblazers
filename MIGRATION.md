@@ -820,3 +820,19 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Deep Rewrite: Module 22)
+
+- **Module 22 rewritten for competency-based delivery**
+  - Replaced public-engagement placeholder cards with a full scientific presentation module:
+    - capability target
+    - concept set with misconception guardrails
+    - hidden curriculum scaffold (conference/talk norms made explicit)
+    - 60-minute run-of-show
+    - studio activity and rubric
+  - Metadata retained/aligned with normalized `short_title` focus on writing + presentation.
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

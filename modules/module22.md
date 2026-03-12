@@ -1,22 +1,25 @@
 ---
-
-title: "Module 22: Science Communication and Public Engagement"
+title: "Module 22: Scientific Writing and Presentation"
 layout: module
 permalink: /modules/module22/
-description: "Learn to communicate your research to non-experts, policymakers, and broader communities."
+description: "Deliver clear scientific talks and written summaries for technical and mixed audiences without oversimplifying connectomics evidence."
 module_number: 22
 difficulty: "Intermediate"
-duration: "3 hours"
+duration: "4 hours"
 learning_objectives:
-
-- "Translate technical findings into accessible language"
-- "Engage with different public audiences (press, school, community)"
-- "Design public-facing content including visuals and narratives"
-- "Reflect on your scientific identity and role in society"
-prerequisites: "Modules 1-21"
+  - "Design a coherent scientific talk from connectomics evidence"
+  - "Adapt explanation depth for expert and non-expert audiences"
+  - "Handle audience questions without overclaiming"
+  - "Make hidden presentation norms explicit for trainees"
+prerequisites: "Modules 17-21"
 merit_stage: "Dissemination"
-compass_skills: ["Communication", "Civic Engagement", "Empathy"]
-ccr_focus: ["Character - Scientific Citizenship", "Skills - Public Speaking"]
+compass_skills:
+  - "Scientific Communication"
+  - "Audience Adaptation"
+  - "Presentation Practice"
+ccr_focus:
+  - "Skills - Presentation"
+  - "Character - Intellectual Honesty"
 
 # Normalized metadata
 slug: "module22"
@@ -27,90 +30,130 @@ audience:
 pipeline_stage: "Dissemination"
 merit_row_focus: "Dissemination"
 topics:
-  - "public-engagement"
-  - "science-communication"
-summary: "Communicating ideas clearly with audience awareness across public engagement and science communication settings."
-key_questions: []
+  - "presentation"
+  - "audience-adaptation"
+  - "q-and-a"
+summary: "Build and deliver defensible connectomics presentations with clear evidence, uncertainty, and audience-aware framing."
+key_questions:
+  - "How do we simplify without distorting?"
+  - "Which uncertainties must be explicit in oral presentation?"
+  - "What hidden expectations shape audience judgments?"
 slides: []
 notebook: []
-datasets: []
-personas: []
-related_tools: []
-related_frameworks: []
-prerequisites_list: []
-next_modules: []
-references: []
+datasets:
+  - "/datasets/mouseconnects"
+  - "/datasets/workflow"
+personas:
+  - "/avatars/undergradstudent"
+  - "/avatars/gradstudent"
+related_tools:
+  - "/tools/ask-an-expert/"
+related_frameworks:
+  - "research-incubator-model"
+  - "education-models"
+prerequisites_list:
+  - "Basic manuscript/figure familiarity"
+  - "Experience presenting at least one technical result"
+next_modules:
+  - "module23"
+references:
+  - "Gopen and Swan (1990) - clarity principles for scientific prose."
+  - "Technical Track Journal Club papers for evidence-backed slide narratives."
 videos: []
 downloads: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
 
-<div class="main-content">
-  <div class="hero">
-    <div class="hero-content">
-      <h1>{{ page.title }}</h1>
-      <p class="hero-subtitle">{{ page.description }}</p>
-    </div>
-  </div>
+## Capability target
+Deliver a 10-minute connectomics talk with evidence-linked claims, explicit uncertainty, and audience-appropriate language, then respond to questions without overclaiming.
 
-  <div class="cards-grid module-cards">
-<div class="card module-card">
-    <h2>🔊 Explaining Science Clearly</h2>
-    <p>Break down technical concepts using analogies, plain language, and compelling visuals.</p>
-    <ul>
-      <li>Jargon-free writing and speaking</li>
-      <li>Finding your core message</li>
-      <li>Using storytelling to build interest</li>
-    </ul>
-  </div>
+## Why this module matters
+Many strong analyses fail to influence practice because communication is either too vague or too overloaded. Presentation skill in connectomics requires balancing rigor, clarity, and honest uncertainty.
 
-  <div class="card module-card">
-    <h2>📺 Outreach Formats and Strategies</h2>
-    <p>Choose the best format and channel to reach your audience effectively and ethically.</p>
-    <ul>
-      <li>School visits, science cafés, and social media</li>
-      <li>Podcast and video content for broader reach</li>
-      <li>Engaging with community organizations and advocacy</li>
-    </ul>
-  </div>
+## Concept set
+### 1) Evidence-first narrative
+- **Technical:** each major slide should map to one core claim and one evidence source.
+- **Plain language:** do not ask the audience to infer your logic.
+- **Misconception guardrail:** storytelling does not replace evidence.
 
-  <div class="card module-card">
-    <h2>📍 Scientist as Citizen</h2>
-    <p>Scientists have societal responsibilities. Explore ways to advocate for evidence and science-informed decision-making.</p>
-    <ul>
-      <li>Science in policy and education</li>
-      <li>Equity in science communication</li>
-      <li>Reflections on science and trust</li>
-    </ul>
-  </div>
+### 2) Audience adaptation without distortion
+- **Technical:** adapt vocabulary, not evidentiary standards.
+- **Plain language:** simplify wording, keep scientific boundaries intact.
+- **Misconception guardrail:** removing caveats for speed is misleading.
 
-  <div class="card module-card">
-    <h2>🌟 COMPASS Integration</h2>
-    <ul>
-      <li><strong>Knowledge:</strong> Science literacy and outreach strategies</li>
-      <li><strong>Skills:</strong> Communication, simplification, storytelling</li>
-      <li><strong>Character:</strong> Civic responsibility, humility</li>
-      <li><strong>Meta-Learning:</strong> Learning through audience feedback</li>
-    </ul>
-  </div>
+### 3) Q&A as scientific reasoning
+- **Technical:** responses should cite assumptions, limits, and next tests.
+- **Plain language:** when unsure, say what would resolve uncertainty.
+- **Misconception guardrail:** confident tone is not equivalent to strong evidence.
 
-  <div class="card module-card">
-    <h2>📚 References & Resources</h2>
-    <ul>
-      <li>Baram-Tsabari & Osborne, 2015. <em>Bridging Science Education and Science Communication</em></li>
-      <li>Marsh, 2020. <em>Science Storytelling for Public Engagement</em></li>
-      <li>Colab: "Science for Everyone: Translating Your Research"</li>
-    </ul>
-  </div>
+## Hidden curriculum scaffold
+- Unspoken norms in talks and conference Q&A:
+  - opening minute should state question + why it matters + what is new.
+  - methods depth should match expected critique audience.
+  - "I don't know yet" is acceptable when paired with a concrete next step.
+- How to support trainees:
+  - provide model Q&A transcripts (strong and weak examples),
+  - share explicit rubric before practice talks,
+  - normalize uncertainty language as a strength.
 
-  <div class="card module-card">
-    <h2>✅ Assessment</h2>
-    <ul>
-      <li>Create a 3-minute explainer for a general audience</li>
-      <li>Draft a press release or public summary of a research paper</li>
-      <li>Design a social media science post (image + caption)</li>
-    </ul>
-  </div>
-</div>
-</div>
+## Core workflow: technical talk preparation
+1. Build claim tree (question -> claim -> evidence -> caveat).
+2. Select minimal slide set that preserves inferential logic.
+3. Rehearse with timed transitions and anticipated critiques.
+4. Run peer critique focused on overclaiming and ambiguity.
+5. Revise with explicit uncertainty statements.
+
+## 60-minute tutorial run-of-show
+1. **00:00-08:00 | Framing and exemplar**
+   - Instructor demonstrates one evidence-linked opening slide.
+2. **08:00-18:00 | Claim tree workshop**
+   - Learners draft question-claim-evidence-caveat map.
+3. **18:00-30:00 | Slide drafting sprint**
+   - Build 4-slide mini-talk (problem, method, result, limitation).
+4. **30:00-42:00 | Peer critique round**
+   - Review for clarity, caveat visibility, and claim discipline.
+5. **42:00-54:00 | Q&A simulation**
+   - Each learner answers two critique questions.
+6. **54:00-60:00 | Debrief and competency check**
+   - Submit revised claim language and one uncertainty statement.
+
+## Studio activity: mini-talk and critique loop
+**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees).
+
+**Tasks**
+1. Create a 4-slide mini-talk from one figure/result.
+2. Deliver in 3 minutes.
+3. Answer two audience questions with evidence boundaries.
+4. Revise one slide and one spoken claim based on feedback.
+
+**Expected outputs**
+- 4-slide deck.
+- Speaker notes with claim boundaries.
+- Revision log after Q&A.
+
+## Assessment rubric
+- **Minimum pass**
+  - Claims are evidence-linked and caveats are visible.
+  - Audience-appropriate language is used without technical distortion.
+  - Q&A responses include limits and follow-up tests.
+- **Strong performance**
+  - Anticipates likely critiques and addresses them proactively.
+  - Balances accessibility with methodological precision.
+  - Uses uncertainty language confidently and specifically.
+- **Common failure modes**
+  - Overcompressed methods leading to overclaiming.
+  - Jargon-heavy explanations with missing context.
+  - Defensive Q&A without evidence references.
+
+## Teaching resources
+- Technical context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+- Evidence set: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Vocabulary support: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
+- Coaching support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+
+## Quick practice prompt
+Write your 60-second talk opener with:
+1. the core question,
+2. one evidence-backed finding,
+3. one explicit caveat.

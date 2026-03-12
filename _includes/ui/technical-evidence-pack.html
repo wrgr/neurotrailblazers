@@ -1,0 +1,40 @@
+{% assign evidence = site.data.technical_evidence.units | where: 'slug', page.slug | first %}
+{% if evidence %}
+<section class="section" id="evidence-pack">
+  <h2>Evidence pack: papers and datasets</h2>
+  <p>This unit is anchored to canonical papers and datasets used in connectomics practice. Use these as required preparation before activities.</p>
+
+  {% if evidence.papers %}
+  <h3>Key papers</h3>
+  <ul>
+    {% for paper_id in evidence.papers %}
+    {% assign paper = site.data.technical_evidence.library.papers[paper_id] %}
+    {% if paper %}
+    <li><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if evidence.datasets %}
+  <h3>Key datasets</h3>
+  <ul>
+    {% for dataset_id in evidence.datasets %}
+    {% assign dataset = site.data.technical_evidence.library.datasets[dataset_id] %}
+    {% if dataset %}
+    <li><a href="{{ dataset.url | relative_url }}">{{ dataset.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if evidence.competency_checks %}
+  <h3>Competency checks</h3>
+  <ul>
+    {% for item in evidence.competency_checks %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endif %}

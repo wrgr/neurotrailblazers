@@ -144,6 +144,22 @@ Most downstream failures in connectome analysis are not model failures first; th
 - Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
+## Evidence anchors from connectomics practice
+### Key papers to use in this module
+- [Januszewski et al. (2018) - FFN reconstruction at scale](https://doi.org/10.1038/s41592-018-0049-4)
+- [H01 human cortical fragment (Science, 2024)](https://www.science.org/doi/10.1126/science.adk4858)
+- [MICrONS large-scale reconstruction (Nature, 2025)](https://www.nature.com/articles/s41586-025-08790-w)
+
+### Key datasets to practice on
+- [NeuroTrailblazers workflow overview]({{ '/datasets/workflow' | relative_url }})
+- [MouseConnects (HI-MC)]({{ '/datasets/mouseconnects' | relative_url }})
+- [MICrONS Explorer](https://www.microns-explorer.org/)
+
+### Competency checks
+- Can you trace every preprocessing transform from input version to release artifact?
+- Can you justify your QC thresholds and their operational consequences?
+- Can you state one unresolved data-risk that could still affect interpretation?
+
 ## Quick practice prompt
 Take one connectomics table (real or mock) and write:
 1. Three cleaning rules with rationale.

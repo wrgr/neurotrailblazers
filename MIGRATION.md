@@ -726,3 +726,29 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Evidence-First Technical Content Anchoring)
+
+- **Canonical evidence library and unit mappings**
+  - Added `_data/technical_evidence.yml` with:
+    - canonical paper library (DOI/source links)
+    - canonical dataset library
+    - per-unit evidence mappings for all technical units (`01`-`09`, `atlas`)
+    - per-unit competency checks tied to evidence usage
+
+- **Automatic in-page evidence packs**
+  - Added `_includes/ui/technical-evidence-pack.html`.
+  - Updated `_layouts/page.html` to auto-render evidence packs on technical unit pages (excluding hub/slides/journal-club/dictionary).
+  - Result: each technical unit now surfaces key papers, key datasets, and competency checks in-page.
+
+- **Evidence validation script**
+  - Added `scripts/validate_technical_evidence.rb`.
+  - Script checks:
+    - every `technical_track` unit has an evidence entry
+    - each unit has minimum evidence anchors (papers/datasets/competency checks)
+    - mapped paper/dataset IDs exist in the shared library
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

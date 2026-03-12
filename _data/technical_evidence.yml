@@ -1,0 +1,120 @@
+library:
+  papers:
+    white1986:
+      title: "White et al. (1986) - The structure of the nervous system of C. elegans"
+      url: "https://doi.org/10.1098/rstb.1986.0056"
+    denk2004:
+      title: "Denk and Horstmann (2004) - Serial block-face scanning electron microscopy"
+      url: "https://doi.org/10.1371/journal.pbio.0020329"
+    januszewski2018:
+      title: "Januszewski et al. (2018) - High-precision automated reconstruction with flood-filling networks"
+      url: "https://doi.org/10.1038/s41592-018-0049-4"
+    kasthuri2015:
+      title: "Kasthuri et al. (2015) - Saturated reconstruction of neocortex"
+      url: "https://doi.org/10.1016/j.cell.2015.06.054"
+    harris2012:
+      title: "Harris and Weinberg (2012) - Ultrastructure of synapses in the mammalian brain"
+      url: "https://doi.org/10.1101/cshperspect.a005587"
+    bassett2018:
+      title: "Bassett, Zurn, and Gold (2018) - On the nature and use of models in network neuroscience"
+      url: "https://doi.org/10.1038/s41583-018-0038-8"
+    bock2011:
+      title: "Bock et al. (2011) - Network anatomy and in vivo physiology of visual cortical neurons"
+      url: "https://www.nature.com/articles/nature09802"
+    helmstaedter2013:
+      title: "Helmstaedter et al. (2013) - Connectomic reconstruction of the inner plexiform layer in the mouse retina"
+      url: "https://www.nature.com/articles/nature12346"
+    h01_science2024:
+      title: "H01 human cortical fragment (Science, 2024)"
+      url: "https://www.science.org/doi/10.1126/science.adk4858"
+    microns2025:
+      title: "MICrONS visual cortex reconstruction (Nature, 2025)"
+      url: "https://www.nature.com/articles/s41586-025-08790-w"
+    flywire2024:
+      title: "FlyWire whole adult fly brain connectome (Nature, 2024)"
+      url: "https://www.nature.com/articles/s41586-024-07558-y"
+    hemibrain2020:
+      title: "Hemibrain connectome release (eLife, 2020)"
+      url: "https://elifesciences.org/articles/57443"
+
+  datasets:
+    h01:
+      title: "H01 - Human Cortical Fragment"
+      url: "https://h01-release.storage.googleapis.com/landing.html"
+    microns:
+      title: "MICrONS Explorer"
+      url: "https://www.microns-explorer.org/"
+    flywire:
+      title: "FlyWire"
+      url: "https://flywire.ai/"
+    hemibrain:
+      title: "neuPrint Hemibrain"
+      url: "https://neuprint.janelia.org/"
+    workflow:
+      title: "NeuroTrailblazers Workflow Overview"
+      url: "/datasets/workflow"
+    mouseconnects:
+      title: "MouseConnects (HI-MC)"
+      url: "/datasets/mouseconnects"
+
+units:
+  - slug: "01-why-map-the-brain"
+    papers: [white1986, kasthuri2015, bassett2018]
+    datasets: [h01, microns, flywire]
+    competency_checks:
+      - "Distinguish descriptive versus mechanistic claims in one cited paper."
+      - "Write one supported claim and one explicit non-claim for a selected dataset."
+  - slug: "02-brain-data-across-scales"
+    papers: [white1986, kasthuri2015, h01_science2024]
+    datasets: [h01, microns, flywire]
+    competency_checks:
+      - "Select dataset scale that is sufficient for a concrete hypothesis."
+      - "Justify tradeoffs among volume, resolution, and annotation cost."
+  - slug: "03-em-prep-and-imaging"
+    papers: [denk2004, bock2011, kasthuri2015]
+    datasets: [workflow, microns, h01]
+    competency_checks:
+      - "Map at least three artifact types to downstream reconstruction risks."
+      - "Define pass/fail QA thresholds before segmentation starts."
+  - slug: "04-volume-reconstruction-infrastructure"
+    papers: [januszewski2018, h01_science2024, microns2025]
+    datasets: [workflow, mouseconnects, microns]
+    competency_checks:
+      - "Define data lineage fields required for reproducible release."
+      - "Propose rollback criteria for failed segmentation updates."
+  - slug: "05-neuronal-ultrastructure"
+    papers: [harris2012, kasthuri2015, microns2025]
+    datasets: [microns, flywire, h01]
+    competency_checks:
+      - "Use at least two independent ultrastructure cues for each call."
+      - "Tag and escalate ambiguous regions with documented rationale."
+  - slug: "06-axons-and-dendrites"
+    papers: [harris2012, kasthuri2015, helmstaedter2013]
+    datasets: [microns, flywire, hemibrain]
+    competency_checks:
+      - "Classify neurites with multi-cue evidence and confidence tags."
+      - "Document ambiguity handoff decisions for adjudication."
+  - slug: "07-glia"
+    papers: [harris2012, kasthuri2015, h01_science2024]
+    datasets: [microns, h01, flywire]
+    competency_checks:
+      - "Separate neuron and glia boundaries in mixed patches with audit notes."
+      - "Identify high-risk glia-neuron confusion zones for targeted QC."
+  - slug: "08-segmentation-and-proofreading"
+    papers: [januszewski2018, kasthuri2015, flywire2024]
+    datasets: [microns, flywire, workflow]
+    competency_checks:
+      - "Prioritize proofreading corrections by biological impact."
+      - "Report QC metrics tied to release/no-release decisions."
+  - slug: "09-connectome-analysis-neuroai"
+    papers: [bassett2018, januszewski2018, microns2025]
+    datasets: [microns, flywire, hemibrain]
+    competency_checks:
+      - "Define a motif/null-model analysis pair and interpret uncertainty."
+      - "Separate exploratory from confirmatory claims in reports."
+  - slug: "atlas-connectomics-reference"
+    papers: [white1986, denk2004, januszewski2018, kasthuri2015, bassett2018]
+    datasets: [h01, microns, flywire, hemibrain, mouseconnects]
+    competency_checks:
+      - "Curate an entry with complete metadata and explicit limitations."
+      - "Assign evidence maturity and review cadence for each resource."

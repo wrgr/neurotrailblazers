@@ -34,12 +34,34 @@ default:
     correct_index: 0
     correct_feedback: "Correct. Traceability and rationale improve reliability and reproducibility."
     incorrect_feedback: "Try again. Prioritize traceability and explicit rationale."
+  annotation:
+    title: "Annotation Challenge"
+    prompt: "Click the hotspot with the strongest evidence for the requested feature."
+    image: "/assets/images/homepage.jpg"
+    image_alt: "Connectomics training scene"
+    hotspots:
+      - id: A
+        label: A
+        x: 24
+        y: 44
+      - id: B
+        label: B
+        x: 50
+        y: 52
+      - id: C
+        label: C
+        x: 76
+        y: 40
+    correct_id: A
+    correct_feedback: "Correct. You selected the target hotspot."
+    incorrect_feedback: "Not quite. Re-evaluate local context and try another hotspot."
   progress_steps:
     - "Read capability target"
     - "Complete studio activity"
     - "Review assessment rubric"
     - "Pass checkpoint quiz"
     - "Complete microtask"
+    - "Complete annotation challenge"
 
 modules:
   module01:
@@ -78,6 +100,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. It is scoped, measurable, and testable."
       incorrect_feedback: "Not yet. Choose the option with clear scope and measurable outputs."
+    annotation:
+      title: "Motivation-to-Question Annotation"
+      prompt: "Click the region that most strongly supports the case for high-resolution connectomics."
+      image: "/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png"
+      image_alt: "Why map the brain figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 19
+          y: 36
+        - id: B
+          label: B
+          x: 52
+          y: 58
+        - id: C
+          label: C
+          x: 84
+          y: 43
+      correct_id: B
+      correct_feedback: "Correct. That region contains the primary evidence cue for this framing task."
+      incorrect_feedback: "Try again. Prefer the region tied to measurable structural evidence."
   module02:
     task:
       title: "Scale Selection Microtask"
@@ -89,6 +132,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Match scale to required evidence and budget."
       incorrect_feedback: "Try again. Scale, resolution, and compute constraints must align with the question."
+    annotation:
+      title: "Scale-Matching Annotation"
+      prompt: "Select the hotspot that best represents synapse-resolving scale rather than meso-scale context."
+      image: "/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S05-01.png"
+      image_alt: "Brain data across scales figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 22
+          y: 42
+        - id: B
+          label: B
+          x: 50
+          y: 48
+        - id: C
+          label: C
+          x: 78
+          y: 52
+      correct_id: C
+      correct_feedback: "Correct. That hotspot aligns with the highest-detail evidence target."
+      incorrect_feedback: "Try again. Choose the hotspot with microstructural, synapse-scale detail."
   module03:
     task:
       title: "Artifact Triage Microtask"
@@ -100,6 +164,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Upstream QA prevents downstream compounding errors."
       incorrect_feedback: "Try again. QA gates are required before reconstruction."
+    annotation:
+      title: "Artifact QA Annotation"
+      prompt: "Identify the hotspot most consistent with imaging artifact risk requiring QA triage."
+      image: "/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S09-01.png"
+      image_alt: "EM prep and imaging figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 18
+          y: 60
+        - id: B
+          label: B
+          x: 48
+          y: 46
+        - id: C
+          label: C
+          x: 80
+          y: 35
+      correct_id: A
+      correct_feedback: "Correct. That region reflects the artifact pattern targeted by QA gates."
+      incorrect_feedback: "Not yet. Focus on the region showing likely acquisition irregularity."
   module04:
     task:
       title: "Pipeline Architecture Microtask"
@@ -111,6 +196,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Lineage and rollback are core infrastructure requirements."
       incorrect_feedback: "Try again. Reliable pipelines require lineage and release discipline."
+    annotation:
+      title: "Pipeline Stage Annotation"
+      prompt: "Click the hotspot representing the highest-leverage control point for reproducible reconstruction."
+      image: "/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png"
+      image_alt: "Volume reconstruction infrastructure figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 26
+          y: 34
+        - id: B
+          label: B
+          x: 56
+          y: 52
+        - id: C
+          label: C
+          x: 84
+          y: 68
+      correct_id: B
+      correct_feedback: "Correct. That point aligns with a core reproducibility and lineage decision."
+      incorrect_feedback: "Try again. Look for where lineage and release policy are anchored."
   module05:
     task:
       title: "Ultrastructure Interpretation Microtask"
@@ -122,6 +228,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Ambiguity should be explicit and reviewable."
       incorrect_feedback: "Try again. Do not force labels when evidence is ambiguous."
+    annotation:
+      title: "Ultrastructure Feature Annotation"
+      prompt: "Select the hotspot most consistent with synaptic ultrastructure evidence."
+      image: "/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png"
+      image_alt: "Neuronal ultrastructure figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 20
+          y: 40
+        - id: B
+          label: B
+          x: 50
+          y: 54
+        - id: C
+          label: C
+          x: 76
+          y: 44
+      correct_id: B
+      correct_feedback: "Correct. That region is the strongest synaptic cue in this challenge."
+      incorrect_feedback: "Try again. Compare membrane context and vesicle-like density cues."
   module06:
     task:
       title: "Process ID Microtask"
@@ -133,6 +260,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Multi-cue decisions reduce classification error."
       incorrect_feedback: "Try again. Use multiple converging cues."
+    annotation:
+      title: "Axon-vs-Dendrite Annotation"
+      prompt: "Click the hotspot most likely to be a dendritic segment given local context."
+      image: "/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S23-01.png"
+      image_alt: "Axons and dendrites figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 18
+          y: 52
+        - id: B
+          label: B
+          x: 51
+          y: 35
+        - id: C
+          label: C
+          x: 82
+          y: 55
+      correct_id: C
+      correct_feedback: "Correct. This hotspot best matches dendrite-like context in this activity."
+      incorrect_feedback: "Not quite. Re-check branching and nearby synaptic context."
   module07:
     task:
       title: "Glia Boundary Microtask"
@@ -144,6 +292,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Glia-aware signatures and boundary checks are essential."
       incorrect_feedback: "Try again. Glia-specific decision cues are required."
+    annotation:
+      title: "Glia Identification Annotation"
+      prompt: "Choose the hotspot with the strongest glial morphology evidence."
+      image: "/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png"
+      image_alt: "Glia identification figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 24
+          y: 36
+        - id: B
+          label: B
+          x: 54
+          y: 50
+        - id: C
+          label: C
+          x: 79
+          y: 64
+      correct_id: A
+      correct_feedback: "Correct. That region is most consistent with glial identity cues."
+      incorrect_feedback: "Try again. Look for glia-typical structure and boundary profile."
   module08:
     task:
       title: "Proofreading Triage Microtask"
@@ -155,6 +324,27 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Impact-aware triage improves release quality."
       incorrect_feedback: "Try again. Prioritize impact, not convenience."
+    annotation:
+      title: "Proofreading Error Annotation"
+      prompt: "Click the hotspot most likely to represent a high-impact merge/split error."
+      image: "/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S13-01.png"
+      image_alt: "Segmentation and proofreading figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 20
+          y: 58
+        - id: B
+          label: B
+          x: 49
+          y: 42
+        - id: C
+          label: C
+          x: 80
+          y: 51
+      correct_id: B
+      correct_feedback: "Correct. That hotspot corresponds to the highest-impact correction target."
+      incorrect_feedback: "Try again. Prioritize the region with strongest topology disruption risk."
   module09:
     task:
       title: "NeuroAI Analysis Microtask"
@@ -166,3 +356,24 @@ modules:
       correct_index: 0
       correct_feedback: "Correct. Null comparison and uncertainty are required for defensible claims."
       incorrect_feedback: "Try again. Add null-model context and uncertainty."
+    annotation:
+      title: "NeuroAI Pattern Annotation"
+      prompt: "Select the hotspot most relevant to motif evidence before model claim reporting."
+      image: "/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S29-01.png"
+      image_alt: "Connectome analysis and NeuroAI figure"
+      hotspots:
+        - id: A
+          label: A
+          x: 22
+          y: 34
+        - id: B
+          label: B
+          x: 54
+          y: 47
+        - id: C
+          label: C
+          x: 81
+          y: 63
+      correct_id: B
+      correct_feedback: "Correct. That region anchors the motif evidence in this challenge."
+      incorrect_feedback: "Try again. Pick the hotspot with direct motif evidence relevance."

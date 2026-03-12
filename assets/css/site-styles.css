@@ -1542,6 +1542,45 @@ footer {
   transition: width 0.18s ease;
 }
 
+.nt-annotation-canvas {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.7rem 0;
+}
+
+.nt-annotation-canvas img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nt-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  background: rgba(0, 109, 107, 0.88);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nt-hotspot.is-selected {
+  background: #e8820c;
+}
+
+.nt-annotation-selected {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 0.75rem 1rem;

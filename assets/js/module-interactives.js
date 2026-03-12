@@ -32,7 +32,9 @@
     var data = {
       steps: steps,
       quizPassed: root.getAttribute('data-quiz-passed') === 'true',
-      taskPassed: root.getAttribute('data-task-passed') === 'true'
+      taskPassed: root.getAttribute('data-task-passed') === 'true',
+      annotationPassed: root.getAttribute('data-annotation-passed') === 'true',
+      annotationSelected: root.getAttribute('data-annotation-selected') || ''
     };
     try {
       localStorage.setItem(key, JSON.stringify(data));
@@ -59,6 +61,8 @@
       });
       root.setAttribute('data-quiz-passed', data.quizPassed ? 'true' : 'false');
       root.setAttribute('data-task-passed', data.taskPassed ? 'true' : 'false');
+      root.setAttribute('data-annotation-passed', data.annotationPassed ? 'true' : 'false');
+      root.setAttribute('data-annotation-selected', data.annotationSelected || '');
     } catch (err2) {
       return;
     }
@@ -144,6 +148,58 @@
     });
   }
 
+  function initAnnotation(root) {
+    var block = root.querySelector('.nt-annotation');
+    if (!block) return;
+
+    var hotspots = Array.from(block.querySelectorAll('.nt-hotspot'));
+    var selectedNode = block.querySelector('.nt-annotation-selected');
+    var feedbackNode = block.querySelector('.nt-annotation-feedback');
+    var submit = block.querySelector('.nt-annotation-submit');
+    var correctId = (block.getAttribute('data-correct-id') || '').trim();
+
+    function setSelected(id) {
+      root.setAttribute('data-annotation-selected', id || '');
+      hotspots.forEach(function (btn) {
+        var active = btn.getAttribute('data-hotspot-id') === id;
+        btn.classList.toggle('is-selected', active);
+      });
+      if (selectedNode) {
+        selectedNode.textContent = 'Selected hotspot: ' + (id || 'none');
+      }
+    }
+
+    hotspots.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setSelected(btn.getAttribute('data-hotspot-id'));
+        saveState(root);
+      });
+    });
+
+    if (submit && feedbackNode) {
+      submit.addEventListener('click', function () {
+        var selected = root.getAttribute('data-annotation-selected') || '';
+        if (!selected) {
+          feedbackNode.textContent = 'Select one hotspot first.';
+          feedbackNode.className = 'nt-annotation-feedback nt-task-feedback nt-feedback-warn';
+          return;
+        }
+
+        var ok = selected === correctId;
+        feedbackNode.textContent = ok ? feedbackNode.getAttribute('data-correct-feedback') : feedbackNode.getAttribute('data-incorrect-feedback');
+        feedbackNode.className = ok ? 'nt-annotation-feedback nt-task-feedback nt-feedback-ok' : 'nt-annotation-feedback nt-task-feedback nt-feedback-bad';
+        root.setAttribute('data-annotation-passed', ok ? 'true' : 'false');
+
+        var checks = root.querySelectorAll('.nt-progress-step');
+        if (checks[5]) checks[5].checked = ok;
+        updateProgress(root);
+        saveState(root);
+      });
+    }
+
+    setSelected(root.getAttribute('data-annotation-selected') || '');
+  }
+
   function initProgress(root) {
     var checks = Array.from(root.querySelectorAll('.nt-progress-step'));
     checks.forEach(function (el) {
@@ -159,6 +215,8 @@
         checks.forEach(function (el) { el.checked = false; });
         root.setAttribute('data-quiz-passed', 'false');
         root.setAttribute('data-task-passed', 'false');
+        root.setAttribute('data-annotation-passed', 'false');
+        root.setAttribute('data-annotation-selected', '');
         var key = storageKey(root);
         try { localStorage.removeItem(key); } catch (err) { }
         var scoreNode = root.querySelector('.nt-score');
@@ -168,6 +226,18 @@
           taskNode.textContent = '';
           taskNode.className = 'nt-task-feedback';
         }
+        var annotationNode = root.querySelector('.nt-annotation-feedback');
+        var annotationSelected = root.querySelector('.nt-annotation-selected');
+        if (annotationNode) {
+          annotationNode.textContent = '';
+          annotationNode.className = 'nt-annotation-feedback nt-task-feedback';
+        }
+        if (annotationSelected) {
+          annotationSelected.textContent = 'Selected hotspot: none';
+        }
+        root.querySelectorAll('.nt-hotspot').forEach(function (btn) {
+          btn.classList.remove('is-selected');
+        });
         root.querySelectorAll('.nt-feedback').forEach(function (n) {
           n.textContent = '';
           n.className = 'nt-feedback';
@@ -188,6 +258,7 @@
     loadState(root);
     initQuiz(root);
     initTask(root);
+    initAnnotation(root);
     initProgress(root);
     updateProgress(root);
   }

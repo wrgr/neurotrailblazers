@@ -3,6 +3,7 @@
 {% assign default_data = site.data.module_interactives.default %}
 {% assign quiz = module_data.quiz | default: default_data.quiz %}
 {% assign task = module_data.task | default: default_data.task %}
+{% assign annotation = module_data.annotation | default: default_data.annotation %}
 {% assign steps = module_data.progress_steps | default: default_data.progress_steps %}
 
 <section class="section nt-interactive-lab" data-module-slug="{{ page.slug }}" data-quiz-pass="{{ quiz.pass_score | default: 2 }}">
@@ -66,5 +67,31 @@
       <p class="nt-progress-text">0% complete</p>
       <button type="button" class="btn btn-secondary nt-progress-reset">Reset Progress</button>
     </article>
+
+    {% if annotation %}
+    <article class="card nt-interactive-card">
+      <h3 class="card-title">{{ annotation.title | default: 'Annotation Challenge' }}</h3>
+      <p>{{ annotation.prompt }}</p>
+      <div class="nt-annotation" data-correct-id="{{ annotation.correct_id }}">
+        <div class="nt-annotation-canvas">
+          <img src="{{ annotation.image | relative_url }}" alt="{{ annotation.image_alt | default: 'Annotation task image' }}">
+          {% for spot in annotation.hotspots %}
+          <button type="button"
+                  class="nt-hotspot"
+                  data-hotspot-id="{{ spot.id }}"
+                  style="left: {{ spot.x }}%; top: {{ spot.y }}%;">
+            {{ spot.label | default: spot.id }}
+          </button>
+          {% endfor %}
+        </div>
+        <p class="nt-annotation-selected">Selected hotspot: none</p>
+        <button type="button" class="btn btn-secondary nt-annotation-submit">Check Annotation</button>
+        <p class="nt-annotation-feedback nt-task-feedback"
+           data-correct-feedback="{{ annotation.correct_feedback }}"
+           data-incorrect-feedback="{{ annotation.incorrect_feedback }}"
+           aria-live="polite"></p>
+      </div>
+    </article>
+    {% endif %}
   </div>
 </section>

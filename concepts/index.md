@@ -36,6 +36,10 @@ summary: "Find content by concept and learner need rather than module number."
         <option value="all">All needs</option>
       </select>
     </div>
+    <div class="mt-1">
+      <h3>Recommended Next Resources</h3>
+      <ul id="recommended-list"></ul>
+    </div>
   </section>
 
   {% assign all = site.data.concepts.concepts %}
@@ -61,7 +65,8 @@ summary: "Find content by concept and learner need rather than module number."
     const cards = Array.from(document.querySelectorAll('.concept-card-item'));
     const trackButtons = Array.from(document.querySelectorAll('.concept-filter-btn'));
     const needSelect = document.getElementById('need-filter');
-    if (!cards.length || !needSelect) return;
+    const recommendedList = document.getElementById('recommended-list');
+    if (!cards.length || !needSelect || !recommendedList) return;
 
     const needsSet = new Set();
     cards.forEach((card) => {
@@ -86,6 +91,34 @@ summary: "Find content by concept and learner need rather than module number."
         const matchTrack = currentTrack === 'all' || track === currentTrack;
         const matchNeed = currentNeed === 'all' || needs.includes(currentNeed);
         card.style.display = (matchTrack && matchNeed) ? '' : 'none';
+      });
+
+      const visible = cards.filter((card) => card.style.display !== 'none');
+      const seen = new Set();
+      const picks = [];
+      visible.forEach((card) => {
+        const link = card.querySelector('.card-title a');
+        if (!link) return;
+        const key = `${link.getAttribute('href')}|${link.textContent.trim()}`;
+        if (seen.has(key)) return;
+        seen.add(key);
+        picks.push({ href: link.getAttribute('href'), label: link.textContent.trim() });
+      });
+
+      recommendedList.innerHTML = '';
+      if (!picks.length) {
+        const li = document.createElement('li');
+        li.textContent = 'No matches for this filter combination.';
+        recommendedList.appendChild(li);
+        return;
+      }
+      picks.slice(0, 5).forEach((item) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = item.href;
+        a.textContent = item.label;
+        li.appendChild(a);
+        recommendedList.appendChild(li);
       });
     }
 

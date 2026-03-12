@@ -582,3 +582,13 @@ This document tracks incremental, content-preserving refactors to improve the si
 - **Checks**
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (Concept Explorer Recommendation UX)
+
+- **Dynamic recommendations tied to current filters**
+  - Updated `concepts/index.md` to add a "Recommended Next Resources" panel below the filtered concept cards.
+  - The page script now computes up to five deduplicated links from currently visible cards (respecting `track` and `need` filters) and renders them in `#recommended-list`.
+  - This keeps concept discovery action-oriented without requiring users to open each card to find a concrete next step.
+
+- **Checks**
+  - `bundle exec jekyll build` passes.

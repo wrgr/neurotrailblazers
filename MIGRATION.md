@@ -795,3 +795,28 @@ This document tracks incremental, content-preserving refactors to improve the si
   - `ruby scripts/validate_frontmatter.rb` passes.
   - `ruby scripts/validate_technical_evidence.rb` passes.
   - `bundle exec jekyll build` passes.
+
+### Changes (60-Minute Tutorial Format + Module 21 Rewrite)
+
+- **60-minute tutorial run-of-show blocks added**
+  - Added instructor-ready, minute-by-minute tutorial sections to:
+    - `technical-training/05-neuronal-ultrastructure.md`
+    - `modules/module18.md`
+  - New blocks include:
+    - pre-class prep
+    - timed delivery sequence
+    - instructor cue language
+    - formative checkpoints
+    - post-class assignment expectations
+
+- **Module 21 rewritten to match normalized topic**
+  - Replaced generic mentorship placeholder with:
+    - title/topic aligned to `Reproducibility and FAIR Principles`
+    - capability target + concept set
+    - hidden-curriculum scaffold section (explicit norms and expectations)
+    - workflow, studio activity, rubric, and evidence anchors
+
+- **Checks**
+  - `ruby scripts/validate_frontmatter.rb` passes.
+  - `ruby scripts/validate_technical_evidence.rb` passes.
+  - `bundle exec jekyll build` passes.

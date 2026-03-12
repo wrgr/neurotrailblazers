@@ -115,6 +115,73 @@ Given ambiguous EM patches, learners should make compartment and synapse calls u
 3. Assign provisional interpretation with confidence level.
 4. Escalate ambiguous cases for secondary review.
 
+## 60-minute tutorial run-of-show (instructor-ready)
+### Pre-class (learner prep, 10-15 minutes async)
+- Read this unit's "Concept payload" section.
+- Open the image panel below and preview at least 3 figures.
+- Bring one question about a cue that seems ambiguous.
+
+### Materials needed
+- Slide draft: [Neuronal Ultrastructure deck draft]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
+- Figure panel from this page (RIV-ULTRA shortlist).
+- Shared annotation worksheet with columns:
+  - patch ID
+  - compartment call
+  - synapse call
+  - confidence tier
+  - evidence cues
+
+### Minute-by-minute plan
+1. **00:00-05:00 | Framing**
+   - Prompt: "What can go wrong if we force a label too early?"
+   - Instructor sets capability target and expected outputs.
+2. **05:00-12:00 | Expert modeling**
+   - Walk through one patch live:
+     - local geometry
+     - organelle cues
+     - synaptic context
+     - confidence assignment
+   - Think aloud explicitly about uncertainty.
+3. **12:00-20:00 | Guided practice round 1**
+   - Learners annotate 2 easier patches in pairs.
+   - Instructor circulates and checks cue quality, not just final labels.
+4. **20:00-30:00 | Debrief + misconception check**
+   - Compare labels publicly.
+   - Target misconceptions:
+     - single-cue overconfidence
+     - contrast-only synapse calls
+     - missing context across slices
+5. **30:00-42:00 | Guided practice round 2 (ambiguous cases)**
+   - Learners annotate 2 borderline patches independently.
+   - Require two supporting cues and one uncertainty statement per patch.
+6. **42:00-52:00 | Consensus protocol**
+   - Small groups reconcile disagreements using rubric rules.
+   - Escalate irreducible ambiguity with rationale.
+7. **52:00-58:00 | Competency check**
+   - Each learner submits one fully justified call:
+     - label
+     - confidence
+     - evidence chain
+     - one alternative considered
+8. **58:00-60:00 | Exit ticket**
+   - "One cue I trust more now, one cue I still mistrust."
+
+### Instructor script cues
+- "Show me your evidence chain before your label."
+- "Which cue would you drop first if contrast quality decreased?"
+- "What would make you downgrade from medium to uncertain?"
+
+### Formative assessment checkpoints
+- At 20 minutes: at least 80% of pairs cite two independent cues.
+- At 42 minutes: group disagreement log distinguishes cue conflict vs missing context.
+- At 58 minutes: learner can justify one call with explicit uncertainty language.
+
+### Post-class assignment (20-30 minutes)
+- Annotate 3 new patches and submit:
+  - call + confidence
+  - cue rationale
+  - one unresolved ambiguity and escalation note
+
 ## Studio activity: Ultrastructure consensus round
 **Format:** 60-75 minutes, small groups, shared patch set.
 

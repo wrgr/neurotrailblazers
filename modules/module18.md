@@ -144,6 +144,31 @@ Most downstream failures in connectome analysis are not model failures first; th
 - Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
+## 60-minute tutorial run-of-show
+### Materials
+- One noisy connectomics table (missing values, duplicated IDs, inconsistent units).
+- Shared preprocessing decision sheet.
+- QC dashboard template (pre/post metrics).
+
+### Timing and flow
+1. **00:00-08:00 | Setup and target**
+   - Define release objective and non-negotiable quality gates.
+2. **08:00-18:00 | Instructor modeling**
+   - Live demonstration of ingest checks and anomaly triage logic.
+3. **18:00-32:00 | Team preprocessing design**
+   - Teams draft cleaning rules and escalation criteria.
+4. **32:00-44:00 | QC pass**
+   - Teams compute/estimate pre-post metrics and decide release/no-release.
+5. **44:00-54:00 | Cross-team review**
+   - Teams audit each other's transform logs for reproducibility gaps.
+6. **54:00-60:00 | Competency checkpoint**
+   - Submit one release note with provenance, thresholds, and residual risk.
+
+### Success criteria for this session
+- Cleaning decisions are deterministic and documented.
+- QC thresholds are tied to operational actions.
+- Release note exposes at least one unresolved interpretation risk.
+
 ## Evidence anchors from connectomics practice
 ### Key papers to use in this module
 - [Januszewski et al. (2018) - FFN reconstruction at scale](https://doi.org/10.1038/s41592-018-0049-4)

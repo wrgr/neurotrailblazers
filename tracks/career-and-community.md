@@ -34,17 +34,8 @@ pathways:
     </div>
   </section>
 
-  <section class="section">
-    <h2>Concepts in This Track</h2>
-    <div class="cards-grid">
-      {% assign concepts = site.data.concepts.concepts %}
-      {% for concept in concepts %}
-        {% if concept.track == 'career-and-community' %}
-          {% assign primary = concept.resources | first %}
-          {% include cards/concept-card.html item=concept primary_url=primary.url %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    <p class="mt-1"><a href="{{ '/concepts/' | relative_url }}">Open full Concept Explorer</a></p>
-  </section>
+  {% include ui/track-need-explorer.html
+    track_slug='career-and-community'
+    title='Concepts in This Track'
+    intro='Filter concepts by immediate need to identify mentoring and professional-development resources.' %}
 </div>

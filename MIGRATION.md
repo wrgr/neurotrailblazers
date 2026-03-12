@@ -455,6 +455,7 @@ This document tracks incremental, content-preserving refactors to improve the si
   - Added concept-preview sections on each `/tracks/*` page using concept cards filtered by track.
   - This supports quick pivots between track-based and need-based navigation.
   - Added query-parameter prefiltering on `/concepts/` (`track`, `need`) and wired shortcut links from home/start pages for common user-needs entry points.
+  - Added reusable `_includes/ui/track-need-explorer.html` so each track page now supports on-page concept filtering by user need.
 
 - **Framework wording refinement**
   - Updated models pages and legacy module archive copy to de-emphasize COMPASS as primary branding.

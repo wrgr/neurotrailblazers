@@ -1,0 +1,65 @@
+{% assign concepts = site.data.concepts.concepts %}
+{% assign component_id = 'need-explorer-' | append: include.track_slug %}
+
+<section class="section" id="{{ component_id }}">
+  <h2>{% if include.title %}{{ include.title }}{% else %}Find by Need{% endif %}</h2>
+  {% if include.intro %}
+  <p>{{ include.intro }}</p>
+  {% endif %}
+
+  <div class="mt-1">
+    <label for="{{ component_id }}-need"><strong>User need:</strong></label>
+    <select id="{{ component_id }}-need">
+      <option value="all">All needs</option>
+    </select>
+  </div>
+
+  <div class="cards-grid mt-1">
+    {% for concept in concepts %}
+      {% if concept.track == include.track_slug %}
+        {% assign primary = concept.resources | first %}
+        {% include cards/concept-card.html item=concept primary_url=primary.url %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <p class="mt-1"><a href="{{ '/concepts/?track=' | append: include.track_slug | relative_url }}">Open full Concept Explorer for this track</a></p>
+</section>
+
+<script>
+  (function () {
+    const root = document.getElementById('{{ component_id }}');
+    if (!root) return;
+
+    const cards = Array.from(root.querySelectorAll('.concept-card-item'));
+    const needSelect = root.querySelector('#{{ component_id }}-need');
+    if (!cards.length || !needSelect) return;
+
+    const needsSet = new Set();
+    cards.forEach((card) => {
+      const raw = (card.getAttribute('data-needs') || '').split('|').map((v) => v.trim()).filter(Boolean);
+      raw.forEach((n) => needsSet.add(n));
+    });
+
+    Array.from(needsSet).sort().forEach((need) => {
+      const opt = document.createElement('option');
+      opt.value = need;
+      opt.textContent = need;
+      needSelect.appendChild(opt);
+    });
+
+    function applyFilter(need) {
+      cards.forEach((card) => {
+        const needs = (card.getAttribute('data-needs') || '').split('|');
+        const match = need === 'all' || needs.includes(need);
+        card.style.display = match ? '' : 'none';
+      });
+    }
+
+    needSelect.addEventListener('change', () => {
+      applyFilter(needSelect.value || 'all');
+    });
+
+    applyFilter('all');
+  })();
+</script>

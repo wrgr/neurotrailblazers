@@ -54,11 +54,16 @@ summary: "Instructor-facing guide for pacing, adaptation, and quality teaching p
 
   <section class="section">
     <h2>Where to Find Materials</h2>
-    <ul>
-      <li><a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a> - all module kits in one place.</li>
-      <li><a href="{{ '/modules/slides/' | relative_url }}">Module Slides</a> - per-module slide pages.</li>
-      <li>`/course/decks/marp/out/modules/` - rendered HTML decks.</li>
-      <li>`/assets/worksheets/moduleNN/` - learner worksheets.</li>
-    </ul>
+    <div class="resource-card">
+      <p>Use these links to access teaching resources quickly:</p>
+      <div class="resource-links">
+        <a class="resource-link" href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>
+        <a class="resource-link" href="{{ '/modules/slides/' | relative_url }}">Module Slide Pages</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module01.html' | relative_url }}">Sample HTML Deck</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module01.pptx' | relative_url }}">Sample PowerPoint</a>
+        <a class="resource-link" href="{{ '/assets/worksheets/module01/module01-activity.md' | relative_url }}">Sample Worksheet</a>
+      </div>
+      <p><strong>Artifact directories:</strong> <code>course/decks/marp/out/modules/</code> and <code>assets/worksheets/moduleNN/</code></p>
+    </div>
   </section>
 </div>

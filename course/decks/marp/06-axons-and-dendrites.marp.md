@@ -109,6 +109,13 @@ Classify three ambiguous neurites and submit:
 
 ---
 
+## External inserted figure (open license)
+![w:900](../../../assets/images/external/neuron-cell-diagram-en.svg)
+- Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Complete_neuron_cell_diagram_en.svg
+- License: Public domain (Wikimedia Commons file metadata).
+
+---
+
 ## References and attribution
 - Internal visuals: Pat Rivlin axon/dendrite training set.
 - Journal-club tie-in: https://doi.org/10.1016/j.cell.2015.06.054

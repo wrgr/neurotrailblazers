@@ -110,6 +110,13 @@ Design one analysis card with:
 
 ---
 
+## External inserted figure (open license)
+![w:700](../../../assets/images/external/feed-forward-motif.gif)
+- Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Feed-forward_motif.GIF
+- License: CC BY-SA 3.0 (Wikimedia Commons feed-forward motif asset).
+
+---
+
 ## References and attribution
 - Internal visuals: outreach/neuroAI historical deck assets.
 - Journal-club tie-ins:

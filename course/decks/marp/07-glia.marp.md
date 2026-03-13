@@ -103,6 +103,13 @@ Classify two ambiguous glia-neuron interfaces and submit:
 
 ---
 
+## External inserted figure (open license)
+![w:900](../../../assets/images/external/glial-cell-types.png)
+- Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Glial_Cell_Types.png
+- License: CC BY 4.0 (OpenStax Anatomy & Physiology-derived Wikimedia asset).
+
+---
+
 ## References and attribution
 - Internal visuals: Pat Rivlin glia training set.
 - Suggested supporting review: Harris & Weinberg (2012) for synaptic neighborhood context.

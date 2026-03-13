@@ -110,6 +110,16 @@ Submit one correction log containing:
 
 ---
 
+## External inserted figure pair (open license)
+![w:430](../../../assets/images/external/image-segmentation-example.jpg)
+![w:430](../../../assets/images/external/image-segmentation-example-segmented.png)
+- Source URLs:
+  - https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example.jpg
+  - https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example-segmented.png
+- License: CC BY-SA 4.0 (Wikimedia Commons segmentation example assets).
+
+---
+
 ## References and attribution
 - Internal visuals: Pat Rivlin + outreach module14 assets.
 - Journal-club tie-in: https://doi.org/10.1038/s41592-018-0049-4

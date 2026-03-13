@@ -116,6 +116,13 @@ For two ambiguous patches, submit:
 
 ---
 
+## External inserted figure (open license)
+![w:900](../../../assets/images/external/denk2004-pbio-fig1.jpg)
+- Source URL: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/65c5/524270/e8555fa5f4f3/pbio.0020329.g001.jpg
+- License: CC BY (PLOS Biology open-access article, Denk & Horstmann 2004).
+
+---
+
 ## References and attribution
 - Internal visuals: Pat Rivlin proofreading training set.
 - Journal-club tie-ins:

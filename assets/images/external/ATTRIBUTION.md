@@ -16,17 +16,17 @@ This directory contains externally sourced figures used in technical-training de
 ## glial-cell-types.png
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Glial_Cell_Types.png
 - Source page: https://commons.wikimedia.org/wiki/File:Glial_Cell_Types.png
-- License: CC BY 4.0 (per Wikimedia/OpenStax attribution metadata).
+- License: CC BY 3.0 Unported.
 
 ## image-segmentation-example.jpg
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example.jpg
 - Source page: https://commons.wikimedia.org/wiki/File:Image-segmentation-example.jpg
-- License: CC BY-SA 4.0.
+- License: CC0 1.0 Universal Public Domain Dedication.
 
 ## image-segmentation-example-segmented.png
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example-segmented.png
 - Source page: https://commons.wikimedia.org/wiki/File:Image-segmentation-example-segmented.png
-- License: CC BY-SA 4.0.
+- License: CC0 1.0 Universal Public Domain Dedication.
 
 ## feed-forward-motif.gif
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Feed-forward_motif.GIF

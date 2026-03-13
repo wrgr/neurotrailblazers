@@ -116,7 +116,7 @@ Submit one correction log containing:
 - Source URLs:
   - https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example.jpg
   - https://commons.wikimedia.org/wiki/Special:FilePath/Image-segmentation-example-segmented.png
-- License: CC BY-SA 4.0 (Wikimedia Commons segmentation example assets).
+- License: CC0 1.0 Universal Public Domain Dedication.
 
 ---
 

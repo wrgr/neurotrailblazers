@@ -28,8 +28,16 @@ while IFS= read -r -d '' file; do
   target_dir="$OUT_DIR/$rel_dir"
   mkdir -p "$target_dir"
   "$MARP_BIN" "$file" --html --allow-local-files --output "$target_dir/$base.html" </dev/null
+  "$MARP_BIN" "$file" \
+    --pptx \
+    --allow-local-files \
+    --browser-timeout 120 \
+    --browser-arg=--no-sandbox \
+    --browser-arg=--disable-setuid-sandbox \
+    --output "$target_dir/$base.pptx" </dev/null
   count=$((count + 1))
   echo "Rendered: $target_dir/$base.html"
+  echo "Rendered: $target_dir/$base.pptx"
 done < <(find "$SRC_DIR" -type f -name '*.marp.md' -print0)
 
 echo "Done. Rendered $count slide decks to $OUT_DIR"

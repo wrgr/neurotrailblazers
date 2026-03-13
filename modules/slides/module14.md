@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module14.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module14.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module14.pptx`
 - Activity worksheet: `/assets/worksheets/module14/module14-activity.md`
 - Module page: [Module 14: Computer Vision for EM]({{ '/modules/module14/' | relative_url }})

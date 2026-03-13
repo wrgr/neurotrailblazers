@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module08.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module08.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module08.pptx`
 - Activity worksheet: `/assets/worksheets/module08/module08-activity.md`
 - Module page: [Module 08: Hypothesis Testing in Connectomics]({{ '/modules/module08/' | relative_url }})

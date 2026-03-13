@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module04.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module04.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module04.pptx`
 - Activity worksheet: `/assets/worksheets/module04/module04-activity.md`
 - Module page: [Module 04: Neuroanatomy for Connectomics]({{ '/modules/module04/' | relative_url }})

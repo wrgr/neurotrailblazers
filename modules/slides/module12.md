@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module12.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module12.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module12.pptx`
 - Activity worksheet: `/assets/worksheets/module12/module12-activity.md`
 - Module page: [Module 12: Big Data in Connectomics]({{ '/modules/module12/' | relative_url }})

@@ -19,8 +19,10 @@ Production-oriented markdown slide sources are available under:
 - `course/decks/marp/`
 - Reference guide: `course/decks/marp/README.md`
 
-Rendered HTML outputs are available under:
+Rendered outputs are available under:
 - `course/decks/marp/out/`
+- HTML: `*.html`
+- PowerPoint: `*.pptx`
 
 Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relative_url }}).
 

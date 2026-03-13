@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module02.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module02.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module02.pptx`
 - Activity worksheet: `/assets/worksheets/module02/module02-activity.md`
 - Module page: [Module 02: Research Foundations and the Hidden Curriculum]({{ '/modules/module02/' | relative_url }})

@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module06.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module06.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module06.pptx`
 - Activity worksheet: `/assets/worksheets/module06/module06-activity.md`
 - Module page: [Module 06: Segmentation 101]({{ '/modules/module06/' | relative_url }})

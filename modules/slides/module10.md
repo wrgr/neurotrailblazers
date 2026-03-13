@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module10.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module10.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module10.pptx`
 - Activity worksheet: `/assets/worksheets/module10/module10-activity.md`
 - Module page: [Module 10: Network Science and Graph Representation]({{ '/modules/module10/' | relative_url }})

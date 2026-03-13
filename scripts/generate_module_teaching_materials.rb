@@ -219,6 +219,7 @@ module_paths.each do |path|
 
     - Slide source (`marp`): `/course/decks/marp/modules/module#{num}.marp.md`
     - Rendered HTML deck: `/course/decks/marp/out/modules/module#{num}.html`
+    - PowerPoint deck: `/course/decks/marp/out/modules/module#{num}.pptx`
     - Activity worksheet: `/assets/worksheets/module#{num}/module#{num}-activity.md`
     - Module page: [#{title}]({{ '/modules/module#{num}/' | relative_url }})
   MD

@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module24.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module24.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module24.pptx`
 - Activity worksheet: `/assets/worksheets/module24/module24-activity.md`
 - Module page: [Module 24: Career Pathways and Graduate School Preparation]({{ '/modules/module24/' | relative_url }})

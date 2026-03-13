@@ -44,4 +44,6 @@ slug: slides-atlas-connectomics-reference
 
 ## Slide source file
 - Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
+- Rendered HTML deck: `/course/decks/marp/out/{{ page.slug | remove: "slides-" }}.html`
+- PowerPoint deck: `/course/decks/marp/out/{{ page.slug | remove: "slides-" }}.pptx`
 - Batch render helper: `./scripts/render_marp.sh`

@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module07.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module07.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module07.pptx`
 - Activity worksheet: `/assets/worksheets/module07/module07-activity.md`
 - Module page: [Module 07: Proofreading and Quality Control]({{ '/modules/module07/' | relative_url }})

@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module20.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module20.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module20.pptx`
 - Activity worksheet: `/assets/worksheets/module20/module20-activity.md`
 - Module page: [Module 20: Statistical Models and Inference for Connectomics]({{ '/modules/module20/' | relative_url }})

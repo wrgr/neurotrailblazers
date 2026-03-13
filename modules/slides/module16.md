@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module16.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module16.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module16.pptx`
 - Activity worksheet: `/assets/worksheets/module16/module16-activity.md`
 - Module page: [Module 16: Scientific Visualization for Connectomics]({{ '/modules/module16/' | relative_url }})

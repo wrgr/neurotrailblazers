@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module19.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module19.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module19.pptx`
 - Activity worksheet: `/assets/worksheets/module19/module19-activity.md`
 - Module page: [Module 19: Peer Review and Scientific Ethics]({{ '/modules/module19/' | relative_url }})

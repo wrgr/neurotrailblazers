@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module03.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module03.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module03.pptx`
 - Activity worksheet: `/assets/worksheets/module03/module03-activity.md`
 - Module page: [Module 03: Python and Jupyter for Neuroscience]({{ '/modules/module03/' | relative_url }})

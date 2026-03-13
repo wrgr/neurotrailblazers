@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module15.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module15.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module15.pptx`
 - Activity worksheet: `/assets/worksheets/module15/module15-activity.md`
 - Module page: [Module 15: LLMs for Patch Analysis]({{ '/modules/module15/' | relative_url }})

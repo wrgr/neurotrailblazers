@@ -15,5 +15,6 @@ This page provides the teaching slide source, rendered deck, and related deliver
 
 - Slide source (`marp`): `/course/decks/marp/modules/module11.marp.md`
 - Rendered HTML deck: `/course/decks/marp/out/modules/module11.html`
+- PowerPoint deck: `/course/decks/marp/out/modules/module11.pptx`
 - Activity worksheet: `/assets/worksheets/module11/module11-activity.md`
 - Module page: [Module 11: Synapses and Circuit Logic]({{ '/modules/module11/' | relative_url }})

@@ -9,73 +9,100 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
-## Learning goals
-- Distinguish astrocyte, microglia, and oligodendrocyte cues.
+## Session outcomes (60 minutes)
+- Distinguish major glial classes in EM-oriented workflows.
 - Reduce glia-neuron boundary errors in proofreading.
+- Prioritize glia-related corrections by downstream impact.
 
 ---
 
-## Why glia matter operationally
-Glia labels directly affect segmentation quality and downstream interpretation.
+## Pedagogical arc
+- Concept refresh: glia as active circuit context.
+- Visual discrimination: class-specific cues.
+- Practice: ambiguity triage and escalation.
+- Check: class call plus uncertainty and action plan.
 
 ---
 
-## Unit opener context
-![w:900](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png)
-- Frame glia as central structural context, not background.
+## Why this matters technically
+- Glia errors can induce merge/split cascades.
+- Boundary mistakes alter neuron-centric metrics.
+- Myelin and glial context changes interpretation of nearby neurites.
 
 ---
 
-## Astrocyte context cues
-![w:900](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png)
-- Combine morphology with neighborhood evidence.
+## Visual context: orientation
+![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png)
 
 ---
 
-## Microglia context cues
-![w:900](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png)
-- Require multi-slice confirmation in ambiguous regions.
+## Astrocyte-associated cue context
+![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png)
 
 ---
 
-## Oligodendrocyte cue context
-![w:900](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S15-01.png)
-- Track myelin-related structural relationships.
+## Microglia-associated cue context
+![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png)
 
 ---
 
-## Myelin-producing glia context
-![w:900](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png)
-- Use local architecture to disambiguate class identity.
+## Oligodendrocyte-associated cue context
+![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S15-01.png)
 
 ---
 
-## Ambiguity and escalation
-- Tag uncertainty type before adjudication.
-- Use second-pass review queue for low-confidence calls.
+## Myelin-context interpretation
+![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png)
+- Instructor cue: ask how myelin context changes proofreading priority.
 
 ---
 
-## QC metrics
-- Glia-vs-neuron boundary error rate.
-- Class-level agreement by region.
-- Unresolved-case rate after secondary review.
+## Operational glia triage protocol
+1. Identify likely class from morphology/context.
+2. Validate local boundary integrity.
+3. Estimate downstream risk if left uncorrected.
+4. Route to immediate correction or adjudication queue.
 
 ---
 
-## Failure modes
-- Over-calling microglia from partial morphology.
-- Under-prioritizing glia corrections in proofreading triage.
+## Metrics to track
+- Glia-neuron boundary error rate.
+- Class-specific agreement across reviewers.
+- Escalation rate and resolution time.
+- Downstream correction impact on network summaries.
+
+---
+
+## Misconceptions to correct
+- "Glia are background, neuron labels matter more." 
+- "Any dark process near myelin is neuronal." 
+- "Class call can be deferred indefinitely without impact."
 
 ---
 
 ## Activity
-Classify 2 ambiguous regions with:
-- class label,
-- key cues,
-- uncertainty note.
+Classify two ambiguous glia-neuron interfaces and submit:
+- class hypothesis,
+- boundary-confidence score,
+- correction priority rank,
+- escalation note if unresolved.
 
 ---
 
-## Attribution
-Figures derived from Pat Rivlin MICrONS proofreading training materials (111821).
+## Rubric checkpoint
+- Pass: class + boundary rationale + action path.
+- Strong: explicit risk prioritization and uncertainty language.
+- Flag: class label without boundary logic.
+
+---
+
+## External paper figure integration
+- Connectomics papers with glia-aware reconstruction examples.
+- Myelination and ultrastructure review figures for context.
+- Dataset-specific glia annotation benchmark figures when available.
+
+---
+
+## References and attribution
+- Internal visuals: Pat Rivlin glia training set.
+- Suggested supporting review: Harris & Weinberg (2012) for synaptic neighborhood context.

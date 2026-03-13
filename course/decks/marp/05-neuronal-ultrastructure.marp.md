@@ -9,75 +9,115 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
-## Learning goals
-- Identify core neuronal ultrastructural features in EM.
-- Apply a context-aware labeling protocol.
-- Record uncertainty in reproducible decision logs.
+## Session outcomes (60 minutes)
+- Make compartment and synapse calls using multi-cue evidence chains.
+- Assign confidence tiers (`high`, `medium`, `uncertain`) with explicit rationale.
+- Separate unresolved ambiguity from incorrect labeling.
 
 ---
 
-## Compartment orientation
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png)
-- Start with compartment candidates before assigning function.
+## Pedagogical arc
+- Model: expert think-aloud for one patch.
+- Guided practice: easier then ambiguous cases.
+- Consensus: resolve disagreements with rubric rules.
+- Check: one fully justified call per learner.
 
 ---
 
-## Dendritic context
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png)
-- Evaluate branch geometry and local neighborhood.
+## Evidence language for this unit
+- A label is a claim.
+- A cue is evidence.
+- Confidence is uncertainty metadata.
+- Disagreement is signal about policy gaps.
 
 ---
 
-## Synapse-identification cues
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png)
-- Require convergent cues (vesicles, active zone, PSD context).
+## Visual grounding: compartment orientation
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png)
+- Instructor move: ask learners for two independent cues before naming compartment.
 
 ---
 
-## Organelle context
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png)
-- Use organelles to disambiguate difficult profiles.
+## Visual grounding: dendritic context
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png)
+- Emphasize neighborhood context, not isolated texture patterns.
 
 ---
 
-## Comparative case
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S14-01.png)
-- Similar appearances can imply different labels with context.
+## Synapse cue set
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png)
+- Require membrane apposition + vesicle field + postsynaptic context.
 
 ---
 
-## Ambiguity protocol
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png)
-- Mark uncertain calls explicitly; do not force binary labels.
+## Organelle-assisted disambiguation
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png)
+- Use organelles to support or reject first-pass labels.
 
 ---
 
-## Advanced example
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png)
-- Adjudication should compare at least two plausible interpretations.
+## Comparative ambiguity case
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png)
+- Teach explicit alternate hypothesis statement.
 
 ---
 
-## Synthesis panel
-![w:900](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S30-01.png)
-- Apply full cue triangulation checklist.
+## Advanced adjudication case
+![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png)
+- Decision policy: escalate when cue conflict persists across slices.
 
 ---
 
-## QC metrics
-- Inter-annotator agreement on compartment labels.
-- Uncertainty rate by region.
-- Synapse call precision/recall on gold subset.
+## Decision protocol (operational)
+1. Propose candidate label.
+2. Cite at least two independent cues.
+3. Check adjacent-slice continuity.
+4. Assign confidence tier and uncertainty note.
+5. Escalate if evidence conflict remains.
 
 ---
 
-## In-class activity
-Annotate one panel with:
-- 3 cues supporting your label.
-- Confidence tier.
-- 1 alternate hypothesis.
+## Frequent failure modes
+- Single-cue overconfidence.
+- Contrast-only synapse calls.
+- Ignoring z-context.
+- Treating uncertainty as failure.
 
 ---
 
-## Attribution
-Figures derived from Pat Rivlin MICrONS proofreading training materials (111821).
+## Teaching move: misconception correction loop
+- Present one intentionally ambiguous patch.
+- Collect independent labels.
+- Debrief by evidence chain, not by authority.
+- Update shared rubric wording.
+
+---
+
+## Activity (12 min)
+For two ambiguous patches, submit:
+- label,
+- two supporting cues,
+- confidence tier,
+- one alternative hypothesis considered.
+
+---
+
+## Rubric checkpoint
+- Pass: multi-cue evidence + confidence tag present.
+- Strong: rationale includes cross-slice verification.
+- Flag: definitive label with weak or single evidence source.
+
+---
+
+## External paper figure integration
+- Kasthuri et al. 2015 (Cell): dense cortical ultrastructure examples.
+- Harris & Weinberg 2012 (Cold Spring Harb Perspect Biol): synapse ultrastructure schema.
+- MICrONS publications: dataset-specific morphology exemplars.
+
+---
+
+## References and attribution
+- Internal visuals: Pat Rivlin proofreading training set.
+- Journal-club tie-ins:
+  - https://doi.org/10.1016/j.cell.2015.06.054
+  - https://doi.org/10.1101/cshperspect.a005587

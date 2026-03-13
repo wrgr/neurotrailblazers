@@ -9,79 +9,106 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
-## Learning goals
-- Classify axons vs dendrites with multi-cue evidence.
-- Handle ambiguity with confidence labels and adjudication.
+## Session outcomes (60 minutes)
+- Classify neurites using a reproducible multi-cue protocol.
+- Document uncertainty and escalation rationale for edge cases.
+- Quantify classification quality with confusion-style summaries.
 
 ---
 
-## Why this matters
-Process-type errors propagate into connectivity graphs and motif results.
+## Pedagogical arc
+- Model: expert classifies one neurite live.
+- Practice: pair annotation on mixed-evidence panels.
+- Consensus: adjudication and policy revision.
+- Check: justified final call and uncertainty note.
 
 ---
 
-## Morphology cues
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png)
-- Start with branch geometry and process caliber trends.
+## Why this unit is high leverage
+- Axon/dendrite identity errors distort connectivity statistics.
+- Misclassification propagates into motif analysis and model priors.
+- Reproducible identity policy is a prerequisite for trustworthy graphs.
 
 ---
 
-## Dendritic feature context
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png)
-- Evaluate local morphology in neighborhood context.
+## Visual context: morphology baseline
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png)
 
 ---
 
-## Axon-related cue context
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png)
-- Add organelle/synaptic-role information before final class call.
+## Visual context: dendritic cue panel
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png)
 
 ---
 
-## Side-by-side comparison
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S13-01.png)
-- Use explicit criteria for each candidate label.
+## Visual context: axonal cue panel
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png)
 
 ---
 
-## Advanced ambiguity case
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S14-01.png)
-- Weighted evidence beats single-cue heuristics.
+## Side-by-side discrimination
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S13-01.png)
+- Ask learners to justify which cue would survive lower image quality.
 
 ---
 
-## Edge-case continuity check
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png)
-- Verify along neighboring slices/branches.
+## Ambiguous process case
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S14-01.png)
+- Train weighted-evidence reasoning, not binary heuristics.
 
 ---
 
-## High-complexity cue
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S22-01.png)
-- Escalate low-confidence cases to adjudication.
+## Continuity check case
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png)
+- Require short-path continuity inspection before final call.
 
 ---
 
-## Late-stage synthesis
-![w:900](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S23-01.png)
-- Log alternate hypothesis when uncertainty remains.
+## High-complexity edge case
+![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S22-01.png)
+- Escalate unresolved ambiguity to adjudication queue.
 
 ---
 
-## QC metrics
-- Axon/dendrite confusion matrix.
-- Rework fraction after secondary review.
-- Impact check on downstream graph summaries.
+## Operational classification protocol
+1. Initial morphology read.
+2. Synaptic/organellar context check.
+3. Continuity check in adjacent slices.
+4. Confidence assignment.
+5. Escalation if evidence conflict persists.
+
+---
+
+## Misconceptions to correct
+- "Thin process = axon".
+- "One bouton-like feature determines identity".
+- "Ambiguous means annotator failed".
 
 ---
 
 ## Activity
-Classify 3 ambiguous processes with:
+Classify three ambiguous neurites and submit:
 - primary label,
-- confidence tier,
-- one alternative hypothesis.
+- cue table,
+- confidence,
+- alternate label and why rejected.
 
 ---
 
-## Attribution
-Figures derived from Pat Rivlin MICrONS proofreading training materials (111821).
+## Rubric checkpoint
+- Pass: label plus two independent cues.
+- Strong: includes continuity evidence and uncertainty logic.
+- Flag: unsupported hard labels.
+
+---
+
+## External paper figure integration
+- Kasthuri et al. 2015: process morphology examples in dense reconstructions.
+- MICrONS/FlyWire morphology figures for large-scale context.
+- Optional neuroanatomy atlas figure for compartment-level validation.
+
+---
+
+## References and attribution
+- Internal visuals: Pat Rivlin axon/dendrite training set.
+- Journal-club tie-in: https://doi.org/10.1016/j.cell.2015.06.054

@@ -9,80 +9,107 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
-## Learning goals
-- Classify merge/split/boundary/identity errors.
-- Prioritize high-impact corrections.
-- Link corrections to QC metrics and logs.
+## Session outcomes (60 minutes)
+- Classify merge, split, boundary, and identity errors reproducibly.
+- Prioritize corrections by expected scientific impact.
+- Connect proofreading actions to quantitative QC metrics.
+
+---
+
+## Pedagogical arc
+- Model: error taxonomy + live correction logic.
+- Practice: triage and correction on mixed cases.
+- Consensus: adjudicate borderline errors.
+- Check: correction log with metric rationale.
 
 ---
 
 ## Why proofreading is scientific QC
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png)
-- Reconstruction quality bounds analysis validity.
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png)
+- Correction policy determines analysis validity.
 
 ---
 
-## Error taxonomy overview
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png)
-- Track error classes explicitly in correction logs.
+## Error taxonomy visual
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png)
+- Enforce explicit error-class coding in logs.
 
 ---
 
-## Ultrastructure cues for correction
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png)
-- Local structure guides boundary decisions.
+## Ultrastructure-informed correction
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png)
 
 ---
 
-## Synapse-aware review
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png)
-- Avoid corrections that break plausible synaptic context.
+## Synapse-aware correction checks
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png)
 
 ---
 
 ## Organelle-assisted disambiguation
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png)
-- Organellar cues reduce false split/merge decisions.
-
----
-
-## Comparative ambiguity case
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png)
-- Similar textures can require different corrections.
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png)
 
 ---
 
 ## Boundary failure case
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S23-01.png)
-- Preserve unresolved uncertainty instead of over-correction.
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S23-01.png)
+- Show when to stop and escalate instead of over-correcting.
 
 ---
 
-## Identity checks (axon/dendrite)
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png)
-- Identity errors can distort motif and degree statistics.
+## Identity-sensitive correction context
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png)
 
 ---
 
-## Edge-case morphology
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S18-01.png)
-- Escalate difficult calls to adjudication queue.
+## Metrics and release gates
+![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S13-01.png)
+- VI
+- edge precision/recall
+- ERL
+- synapse-centric F1
 
 ---
 
-## QC metrics and release gates
-![w:900](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S13-01.png)
-- Report VI, edge precision/recall, ERL, synapse-centric F1.
+## Operational proofreading loop
+1. Triage by expected downstream impact.
+2. Correct with local + global consistency checks.
+3. Update targeted metrics.
+4. Route unresolved cases for adjudication.
+5. Gate release on predefined thresholds.
+
+---
+
+## Misconceptions to correct
+- "Fix easiest errors first."
+- "Global metric improvements guarantee biological validity."
+- "Automation removes need for human policy."
 
 ---
 
 ## Activity
-Write one correction log with:
-- Error type.
-- Before/after rationale.
-- Metric delta and confidence note.
+Submit one correction log containing:
+- error class,
+- before/after rationale,
+- metric impact expectation,
+- confidence and escalation status.
 
 ---
 
-## Attribution
-Frompat figures from Pat Rivlin proofreading decks; outreach figures used for processing context.
+## Rubric checkpoint
+- Pass: correction decision tied to error class and metric logic.
+- Strong: priority ranking aligned to scientific impact.
+- Flag: edits without audit trail or rationale.
+
+---
+
+## External paper figure integration
+- Januszewski et al. 2018 FFN architecture/performance figures.
+- Segmentation benchmark (CREMI-style) error/metric figures.
+- Human-machine proofreading workflow figures from open platforms.
+
+---
+
+## References and attribution
+- Internal visuals: Pat Rivlin + outreach module14 assets.
+- Journal-club tie-in: https://doi.org/10.1038/s41592-018-0049-4

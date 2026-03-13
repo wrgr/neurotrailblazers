@@ -9,89 +9,109 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
-## Learning goals
-- Define a motif hypothesis and executable query.
-- Choose defensible null models.
-- Interpret findings without overclaiming.
+## Session outcomes (60 minutes)
+- Formulate a motif/graph hypothesis with explicit estimand.
+- Choose and justify a null model.
+- Report bounded claims with uncertainty and reproducibility metadata.
 
 ---
 
-## Motivation
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png)
-- Use structure as a source of constrained AI priors.
+## Pedagogical arc
+- Hook: why graph/motif results are often overclaimed.
+- Model: hypothesis -> query -> null -> interpretation.
+- Practice: design and critique analysis plans.
+- Check: one bounded claim + non-claim pair.
 
 ---
 
-## Brain-data framing
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png)
-- Clarify data representation before analysis.
+## Motivation and framing
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png)
+- Structure can constrain models; it does not automatically explain intelligence.
 
 ---
 
-## Reverse-engineering limits
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png)
-- Structure informs hypotheses but does not prove dynamics.
+## Representation framing
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png)
+- Define representation before inference.
 
 ---
 
-## Workflow overview
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S13-01.png)
-Hypothesis -> Query -> Search -> Null comparison -> Interpretation
+## Limits of reverse engineering claims
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png)
+- Teach boundary statements as required output.
 
 ---
 
-## Motif search framing
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S24-01.png)
-- Treat motifs as candidate primitives requiring validation.
+## Analysis workflow overview
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S13-01.png)
+Hypothesis -> Query -> Search -> Null comparison -> Interpretation -> Reproducibility package
 
 ---
 
-## Query syntax and tooling
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S42-01.png)
-- Human-readable motif syntax improves reproducibility.
+## Motif search context
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S24-01.png)
+- Distinguish candidate motifs from validated mechanisms.
 
 ---
 
-## Complexity constraints
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S31-01.png)
-- Subgraph isomorphism cost shapes feasible analyses.
+## Query language and reproducibility
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S42-01.png)
+- Human-readable queries reduce hidden assumptions.
 
 ---
 
-## Benchmark context (historical)
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S32-01.png)
-- Treat performance values from 2021 decks as historical baselines.
+## Complexity constraints and feasibility
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S31-01.png)
+- Computational limits are part of methodological validity.
 
 ---
 
-## Throughput and scale caveats
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S33-01.png)
-- Revalidate claims against current data/hardware stack.
+## Historical benchmark caution
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S32-01.png)
+- Use old benchmark values as context, not current truth.
 
 ---
 
-## Comparative motif context
-![w:900](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png)
-- Cross-dataset comparisons require aligned preprocessing assumptions.
+## Comparative analysis caveats
+![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png)
+- Cross-dataset claims require aligned preprocessing and null assumptions.
 
 ---
 
-## Failure modes
-- Post-hoc hypothesis selection.
-- Null-model mismatch.
-- Cross-dataset overgeneralization.
-- Untracked query/code versions.
+## Misconceptions to correct
+- "Significant motif enrichment implies mechanism."
+- "One null model is enough for any claim."
+- "Query scripts without provenance are acceptable."
 
 ---
 
 ## Activity
-Define:
-- 1 motif hypothesis.
-- 1 null model.
-- 1 success criterion.
-- 1 explicit limitation.
+Design one analysis card with:
+- hypothesis,
+- estimand,
+- null model,
+- success criterion,
+- non-claim,
+- provenance fields.
 
 ---
 
-## Attribution
-NeuroAI and outreach visuals are used as historical/technical context; benchmark claims require current revalidation.
+## Rubric checkpoint
+- Pass: coherent hypothesis-null-estimand chain.
+- Strong: includes sensitivity analysis and boundary statement.
+- Flag: result-first narrative without methodological controls.
+
+---
+
+## External paper figure integration
+- Bassett, Zurn, Gold 2018 (model taxonomy and claim type framing).
+- Large-scale connectome motif-analysis papers with null-model details.
+- Graph-method papers showing sensitivity to preprocessing choices.
+
+---
+
+## References and attribution
+- Internal visuals: outreach/neuroAI historical deck assets.
+- Journal-club tie-ins:
+  - https://doi.org/10.1038/s41592-018-0049-4
+  - https://doi.org/10.1038/s41583-018-0038-8

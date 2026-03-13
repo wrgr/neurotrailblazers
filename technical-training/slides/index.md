@@ -28,10 +28,12 @@ Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relat
 
 <div class="cards-grid">
   {% for item in site.data.technical_track.modules %}
+  {% assign deck = item.slug %}
   <article class="card">
     <h3 class="card-title"><a href="{{ '/technical-training/slides/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
     <p class="card-description">Lecture-ready draft with timing, technical depth, figure mapping, and evaluation prompts.</p>
     <p><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">Open unit page</a></p>
+    <p><a href="{{ '/course/decks/marp/out/' | append: deck | append: '.html' | relative_url }}">Open HTML deck</a> | <a href="{{ '/course/decks/marp/out/' | append: deck | append: '.pptx' | relative_url }}">PowerPoint</a></p>
   </article>
   {% endfor %}
 </div>

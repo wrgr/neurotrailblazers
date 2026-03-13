@@ -11,10 +11,13 @@ pathways:
 
 ## Slide Deck for Module 08: Hypothesis Testing in Connectomics
 
-This page provides the teaching slide source, rendered deck, and related delivery materials.
-
-- Slide source (`marp`): `/course/decks/marp/modules/module08.marp.md`
-- Rendered HTML deck: `/course/decks/marp/out/modules/module08.html`
-- PowerPoint deck: `/course/decks/marp/out/modules/module08.pptx`
-- Activity worksheet: `/assets/worksheets/module08/module08-activity.md`
-- Module page: [Module 08: Hypothesis Testing in Connectomics]({{ '/modules/module08/' | relative_url }})
+<div class="resource-card">
+  <p>This page provides the teaching slide artifacts and related delivery materials.</p>
+  <div class="resource-links">
+    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module08.html' | relative_url }}">Open HTML Deck</a>
+    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module08.pptx' | relative_url }}">Download PowerPoint (.pptx)</a>
+    <a class="resource-link" href="{{ '/assets/worksheets/module08/module08-activity.md' | relative_url }}">Open Worksheet</a>
+    <a class="resource-link" href="{{ '/modules/module08/' | relative_url }}">Open Module Page</a>
+  </div>
+  <p><strong>Slide source path:</strong> <code>course/decks/marp/modules/module08.marp.md</code></p>
+</div>

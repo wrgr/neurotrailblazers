@@ -42,8 +42,14 @@ slug: slides-atlas-connectomics-reference
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: none yet (reference unit)
 
-## Slide source file
-- Marp draft source: `course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md`
-- Rendered HTML deck: `/course/decks/marp/out/{{ page.slug | remove: "slides-" }}.html`
-- PowerPoint deck: `/course/decks/marp/out/{{ page.slug | remove: "slides-" }}.pptx`
-- Batch render helper: `./scripts/render_marp.sh`
+## Slide artifacts
+<div class="resource-card">
+  <p>Use the links below to access the rendered lecture artifacts for this unit.</p>
+  <div class="resource-links">
+    <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.html' | relative_url }}">Open HTML Deck</a>
+    <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.pptx' | relative_url }}">Download PowerPoint (.pptx)</a>
+    <a class="resource-link" href="{{ '/technical-training/' | append: page.slug | remove: 'slides-' | append: '/' | relative_url }}">Open Unit Page</a>
+  </div>
+  <p><strong>Slide source path:</strong> <code>course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md</code></p>
+  <p><strong>Batch render helper:</strong> <code>./scripts/render_marp.sh</code></p>
+</div>

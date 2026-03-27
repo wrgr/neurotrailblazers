@@ -1,125 +1,125 @@
 - number: 1
   title: "Scientific Curiosity & Motivation"
-  description: "Orientation to scientific thinking, growth mindset, and curiosity-driven inquiry."
+  description: "Turn broad interest in brain mapping into concrete, testable connectomics questions with explicit scope and measurable outcomes."
   stage: "Foundations"
   ccr: [Knowledge, Character, Meta-Learning, Motivation]
 - number: 2
   title: "Research Foundations & the Hidden Curriculum"
-  description: "Unwritten norms in science, research roles, and building confidence."
+  description: "Make implicit research expectations explicit: lab norms, communication scripts, dataset responsibilities, and building a personal support network."
   stage: "Foundations"
   ccr: [Knowledge, Character, Meta-Learning, Motivation]
 - number: 3
   title: "Python and Jupyter for Neuroscience"
-  description: "Intro to coding in Python, Jupyter notebooks, and tools for analysis."
+  description: "Hands-on Python and Jupyter skills for reproducible connectomics data exploration, from environment setup through documented analysis workflows."
   stage: "Foundations"
   ccr: [Knowledge, Skills, Meta-Learning]
 - number: 4
   title: "Neuroanatomy for Connectomics"
-  description: "Understanding neural structure at micro- and macro-scale."
+  description: "Neuroanatomical fluency for interpreting EM structures across cortical layers and brain regions, with attention to uncertainty and misclassification risks."
   stage: "Question"
   ccr: [Knowledge, Motivation]
 - number: 5
   title: "Electron Microscopy and Image Basics"
-  description: "EM imaging principles, file formats, and interpretation."
+  description: "How EM produces the raw data of connectomics: acquisition principles, common artifacts, and image quality screening for segmentation readiness."
   stage: "Foundations"
   ccr: [Skills, Knowledge]
 - number: 6
   title: "Segmentation 101"
-  description: "Understanding segmentation, labels, and sources of error."
+  description: "Core segmentation error taxonomy—merges, splits, boundary errors—and a practical correction workflow with documented quality impact."
   stage: "Question"
   ccr: [Knowledge, Skills, Character, Meta-Learning, Motivation]
 - number: 7
   title: "Proofreading and Quality Control"
-  description: "Identifying merge/split errors and assessing segmentation quality."
+  description: "Proofreading strategies that prioritize scientifically high-impact corrections and maintain reproducible, documented QC standards."
   stage: "Question"
   ccr: [Skills, Character, Meta-Learning]
 - number: 8
   title: "Hypothesis Testing in Connectomics"
-  description: "Defining and testing hypotheses using statistical tools."
+  description: "Designing testable connectomics hypotheses with measurable structural outcomes, appropriate null models, and explicit uncertainty limits."
   stage: "Experiment"
   ccr: [Knowledge, Skills, Character, Meta-Learning, Motivation]
 - number: 9
   title: "Neuron Morphology & Skeletonization"
-  description: "Exploring cell shape, skeletons, and biofeatures."
+  description: "Extracting and interpreting skeleton representations and morphology descriptors from segmented neurons for cell-type reasoning."
   stage: "Experiment"
   ccr: [Knowledge, Skills, Meta-Learning]
 - number: 10
   title: "Network Science & Graph Representation"
-  description: "Introduction to graphs, adjacency, and connectome structure."
+  description: "Representing connectomes as graphs, computing core network metrics, and interpreting results with biological and statistical caution."
   stage: "Experiment"
   ccr: [Knowledge, Character, Meta-Learning, Motivation]
 - number: 11
   title: "Synapses and Circuit Logic"
-  description: "Mapping synaptic connectivity and interpreting motifs."
+  description: "Interpreting synaptic organization and local circuit motifs from connectomics data, differentiating robust patterns from reconstruction artifacts."
   stage: "Experiment"
   ccr: [Knowledge, Skills]
 - number: 12
   title: "Big Data in Connectomics"
-  description: "Storage, querying, and scale-aware design."
+  description: "Scalable data architecture, query planning, and provenance tracking for petascale connectomics datasets like MICrONS and H01."
   stage: "Analysis"
   ccr: [Knowledge, Character]
 - number: 13
   title: "Machine Learning in Neuroscience"
-  description: "Intro to ML concepts and supervised/unsupervised learning."
+  description: "ML workflows for connectomics with controls for data leakage, spatial correlation bias, and biologically meaningful evaluation metrics."
   stage: "Analysis"
   ccr: [Knowledge, Skills, Character]
 - number: 14
   title: "Computer Vision for EM"
-  description: "From filters to deep learning for image understanding."
+  description: "Computer vision methods—from classical filters to deep learning—applied to EM imagery for segmentation support, morphology extraction, and quality diagnostics."
   stage: "Analysis"
   ccr: [Knowledge, Skills, Motivation]
 - number: 15
   title: "LLMs for Patch Analysis"
-  description: "Using large language models for continuity, errors, and proofing."
+  description: "LLM-assisted patch triage and annotation support with human-in-the-loop verification gates to prevent hallucination and unsupported scientific inference."
   stage: "Analysis"
   ccr: [Knowledge, Skills, Meta-Learning, Motivation]
 - number: 16
   title: "Scientific Visualization for Connectomics"
-  description: "Create effective 2D and 3D visuals to communicate connectome data."
+  description: "Principled visualization of connectomics structures and analysis results: encoding uncertainty, avoiding misleading representations, and producing publication-ready figures."
   stage: "Dissemination"
   ccr: [Skills, Meta-Learning]
 - number: 17
   title: "Scientific Writing for Connectomics"
-  description: "Write clear papers, abstracts, and figure captions for neuroscience audiences."
+  description: "Writing evidence-grounded connectomics manuscripts, clear figure legends, and effective reviewer responses for neuroscience audiences."
   stage: "Dissemination"
   ccr: [Knowledge, Skills, Character]
 - number: 18
   title: "Data Cleaning and Preprocessing"
-  description: "Handling noise, filtering data, and reproducibility."
+  description: "Reproducible preprocessing workflows from raw connectomics data through analysis-ready releases with integrity checks, QC metrics, and full provenance."
   stage: "Analysis"
   ccr: [Skills, Meta-Learning]
 - number: 19
   title: "Peer Review and Scientific Ethics"
-  description: "Method-focused review and research-integrity decision making in connectomics."
+  description: "Applying peer-review criteria and research-ethics frameworks to connectomics manuscripts, workflows, and collaborative decisions."
   stage: "Dissemination"
   ccr: [Character, Meta-Learning]
 - number: 20
   title: "Statistical Models and Inference"
-  description: "Modeling techniques to interpret neural data."
+  description: "Defensible statistical inference for connectomics: choosing null models, controlling multiplicity in high-dimensional tests, and reporting with explicit assumptions."
   stage: "Analysis"
   ccr: [Knowledge, Meta-Learning]
 - number: 21
   title: "Reproducibility and FAIR Principles"
-  description: "Ensuring research is findable, accessible, and reproducible."
+  description: "Operationalizing FAIR principles and reproducibility standards for connectomics datasets, analysis code, and public releases."
   stage: "Dissemination"
   ccr: [Knowledge, Character]
 - number: 22
   title: "Scientific Writing & Presentation"
-  description: "Communicating ideas clearly with audience awareness."
+  description: "Delivering clear scientific talks for technical and mixed audiences without oversimplifying structural evidence, with explicit question-handling norms."
   stage: "Dissemination"
   ccr: [Knowledge, Skills, Meta-Learning]
 - number: 23
   title: "Posters, Abstracts, and Conferences"
-  description: "Sharing work with peers and professionals."
+  description: "Conference-ready abstracts and posters with explicit hidden-curriculum support for networking, Q&A, and navigating scientific meetings."
   stage: "Dissemination"
   ccr: [Knowledge, Skills, Character, Meta-Learning]
 - number: 24
   title: "Career Pathways & Graduate School Prep"
-  description: "Applying skills and navigating research careers."
+  description: "Evidence-based career strategy for connectomics: evaluating graduate programs, drafting targeted mentor outreach, and navigating admissions hidden curriculum."
   stage: "Dissemination"
   ccr: [Knowledge, Character, Motivation, Meta-Learning]
 - number: 25
   title: "Portfolio, Feedback, and Final Project"
-  description: "Curating evidence of learning and capstone feedback."
+  description: "Capstone portfolio assembly demonstrating end-to-end connectomics competencies with curated artifacts, reflective commentary, and mentor feedback."
   stage: "Dissemination"
   ccr: [Knowledge, Skills, Motivation, Meta-Learning]

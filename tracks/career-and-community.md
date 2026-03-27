@@ -20,10 +20,29 @@ pathways:
   </div>
 
   <section class="section">
+    <p>{{ track.about }}</p>
     <p><strong>Fadel alignment:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
   </section>
 
   <section class="section">
+    <h2>Modules in This Track</h2>
+    <div class="cards-grid">
+      {% for num in track.module_numbers %}
+        {% assign mod = site.data.modules | where: 'number', num | first %}
+        {% if mod %}
+          {% if num < 10 %}{% assign numpad = '0' | append: num %}{% else %}{% assign numpad = num | append: '' %}{% endif %}
+          <article class="card">
+            <p class="card-meta">{{ mod.stage }}</p>
+            <h3 class="card-title"><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}">{{ numpad }}. {{ mod.title }}</a></h3>
+            <p class="card-description">{{ mod.description }}</p>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Resources</h2>
     <div class="cards-grid">
       {% for item in track.resources %}
       <article class="card">

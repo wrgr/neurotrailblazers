@@ -59,27 +59,23 @@ email: "info@neurotrailblazers.org"
 twitter_username: neurotrailblazers
 github_username: wrgr
 
-# Navigation
+# Navigation (backup — primary source is _data/navigation.yml)
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Start"
+  - title: "Start Here"
     url: "/start-here/"
-  - title: "Technical Training"
+  - title: "Technical Course"
     url: "/technical-training/"
-  - title: "Models"
-    url: "/models/"
-  - title: "Workflow"
-    url: "/datasets/workflow"
   - title: "Modules"
     url: "/modules/"
     dropdown: []
-  - title: "Datasets"
+  - title: "Resources"
     url: "/datasets/"
-  - title: "Ask Expert"
-    url: "/ask-an-expert/"
-  - title: "Proofreading"
-    url: "/tools/connectome-quality/"
+  - title: "Teaching"
+    url: "/teaching/"
+  - title: "About"
+    url: "/frameworks/"
 
 # Grant and program information
 grant_info:

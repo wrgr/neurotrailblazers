@@ -225,5 +225,14 @@ Given ambiguous EM patches, learners should make compartment and synapse calls u
 Using one training image, label at least three ultrastructural cues and state your confidence for each interpretation.
 
 
+## Content library references
+- [Soma ultrastructure]({{ '/content-library/neuroanatomy/soma-ultrastructure/' | relative_url }}) — Nuclear envelope, Nissl substance, Golgi, lipofuscin
+- [Dendrite biology]({{ '/content-library/neuroanatomy/dendrite-biology/' | relative_url }}) — Spine types, PSDs, microtubule organization, local translation
+- [Axon biology]({{ '/content-library/neuroanatomy/axon-biology/' | relative_url }}) — AIS, myelinated segments, boutons, vesicle pools
+- [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}) — Gray Type I/II, asymmetric vs symmetric
+- [Organelle annotation cues]({{ '/content-library/neuroanatomy/organelle-cues/' | relative_url }}) — Mitochondria, ER, MVBs as compartment indicators
+- [Myelin and nodes of Ranvier]({{ '/content-library/neuroanatomy/myelin-and-nodes/' | relative_url }}) — Compact myelin, paranodal loops, incisures
+- [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) — Human ultrastructure case study
+
 ## Teaching slide deck
 - Slide draft page: [Neuronal Ultrastructure deck draft]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})

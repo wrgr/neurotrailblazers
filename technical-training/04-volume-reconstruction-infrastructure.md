@@ -118,5 +118,10 @@ Draft a pipeline release plan that includes:
 Sketch a 4-stage reconstruction pipeline and mark where you would enforce provenance/version checkpoints.
 
 
+## Content library references
+- [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — Full five-layer architecture: ingest, alignment, segmentation, post-processing, serving
+- [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — Volumes, meshes, skeletons, graphs; format specs and tradeoffs
+- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization, pipeline lineage, reproducible reprocessing
+
 ## Teaching slide deck
 - Slide draft page: [Volume Reconstruction Infrastructure deck draft]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})

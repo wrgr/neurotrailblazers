@@ -114,5 +114,11 @@ Create an acquisition risk register with:
 Identify one likely imaging artifact in a sample dataset and describe how it could affect segmentation quality.
 
 
+## Content library references
+- [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — Beam physics, TEM vs SEM, contrast mechanisms
+- [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}) — Fixation, staining, embedding, and sectioning protocols
+- [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — Complete catalog of EM artifacts and downstream impact
+- [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }}) — Per-tile metrics, pilot reconstructions, metadata requirements
+
 ## Teaching slide deck
 - Slide draft page: [EM Prep and Imaging deck draft]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})

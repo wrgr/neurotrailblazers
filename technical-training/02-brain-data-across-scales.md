@@ -113,5 +113,10 @@ Given a candidate question ("How cell-type-specific is local recurrent connectiv
 Pick a research question and propose the minimum data scale needed to answer it, including one tradeoff you accept.
 
 
+## Content library references
+- [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — Volumes, meshes, skeletons, graphs: when to use each
+- [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — Resolution, contrast, and the tradeoff triangle
+- [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — End-to-end pipeline architecture
+
 ## Teaching slide deck
 - Slide draft page: [Brain Data Across Scales deck draft]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})

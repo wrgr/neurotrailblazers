@@ -12,6 +12,27 @@ primary_units:
   - "03"
   - "05"
 difficulty: "Intermediate"
+tags:
+  - imaging:artifact-identification
+  - imaging:electron-microscopy
+  - imaging:quality-control
+  - proofreading:segmentation-impact
+  - methodology:artifact-mitigation
+micro_lesson_id: ml-img-artifacts
+reference_images:
+  - src: /assets/images/content-library/imaging/artifact-taxonomy/artifact-gallery.png
+    alt: "Gallery of common EM artifacts: knife chatter, charging, folds, tears, and section loss"
+    caption: "Common EM acquisition artifacts. Each has distinct visual signatures and different impacts on downstream segmentation."
+  - src: /assets/images/content-library/imaging/artifact-taxonomy/artifact-impact-segmentation.png
+    alt: "Same region showing artifact in EM and resulting segmentation errors"
+    caption: "A tissue fold (top) causes the segmentation algorithm to merge two neurons (bottom). Understanding artifacts prevents misinterpreting errors."
+  - src: /assets/images/content-library/imaging/artifact-taxonomy/artifact-severity-scale.png
+    alt: "Severity scale for EM artifacts from cosmetic to data-destroying"
+    caption: "Artifact severity scale: Level 1 (cosmetic, no segmentation impact) through Level 5 (complete data loss requiring re-imaging)."
+combines_with:
+  - em-principles
+  - acquisition-qa
+  - tissue-preparation
 ---
 
 ## Overview

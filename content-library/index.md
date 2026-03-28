@@ -13,8 +13,28 @@ Every entry below is a **standalone, richly detailed reference document**. Each 
 - Real scientific references with context
 - Worked examples with step-by-step reasoning
 - Common misconceptions and how to address them
+- **Tags** for cross-referencing across dimensions (using the taxonomy in `_data/content_tags.yml`)
+- **Reference images** with alt text and captions (placeholders for teaching illustrations)
+- **Micro lesson IDs** for combining entries into modular learning sequences
+- **Combines-with** links identifying entries that pair well for combined micro lessons
 
 Unit pages, slide decks, and modules **link to** these entries rather than duplicating content. This keeps the curriculum DRY (Don't Repeat Yourself) and ensures a single source of truth for each topic.
+
+### Tag dimensions
+
+Content is tagged across 9 dimensions for flexible combination:
+
+| Dimension | Color | Example tags |
+|-----------|-------|-------------|
+| Neuroanatomy | #4A90D9 | soma, dendrite, axon, synapse, spine, organelle |
+| Imaging | #7B68EE | electron-microscopy, SEM, TEM, FIB-SEM, SBEM, ATUM |
+| Infrastructure | #E67E22 | pipeline, segmentation, alignment, CAVE, neuroglancer |
+| Proofreading | #E74C3C | merge-error, split-error, QA-metrics, expected-run-length |
+| Cell Types | #27AE60 | neuron-classification, glia, pyramidal-cell, interneuron |
+| Connectomics | #F39C12 | graph-theory, motif, community-detection, hub, modularity |
+| NeuroAI | #9B59B6 | structure-function, bio-inspired-architecture, deep-learning |
+| Case Studies | #1ABC9C | FlyWire, MICrONS, H01, C-elegans, Drosophila |
+| Methodology | #95A5A6 | experimental-design, reproducibility, benchmark, ground-truth |
 
 ---
 
@@ -97,3 +117,18 @@ Deep dives into landmark connectomics projects.
 | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) | Petavoxel human fragment, unique challenges, pathological features | 05, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
 | [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
+
+## Journal paper collection
+
+Curated papers across all connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+
+| Dimension | Papers | Focus |
+|-----------|--------|-------|
+| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 6 | Ultrastructure, synapses, spines, serial reconstruction |
+| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 6 | SBEM, FIB-SEM, ATUM, acquisition pipelines |
+| [Infrastructure]({{ '/content-library/journal-papers/infrastructure/' | relative_url }}) | 6 | FFN, CAVE, pipeline engineering, annotation tools |
+| [Proofreading]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 6 | Error detection, crowd-sourced correction, QA metrics |
+| [Cell Types]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 6 | Morphological, transcriptomic, connectivity-based classification |
+| [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 6 | Graph theory, motifs, comparative connectomics |
+| [NeuroAI]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 6 | Structure-function, bio-inspired AI, model taxonomy |
+| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 7 | C. elegans, FlyWire, MICrONS, H01, landmark datasets |

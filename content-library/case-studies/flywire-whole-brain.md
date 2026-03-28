@@ -20,6 +20,30 @@ primary_units:
   - unit-05-proofreading
   - unit-07-circuit-analysis
 difficulty: intermediate
+tags:
+  - case-studies:FlyWire
+  - connectomics:whole-brain
+  - connectomics:dense-reconstruction
+  - proofreading:crowd-sourced
+  - cell-types:neuron-classification
+  - imaging:serial-section-TEM
+  - methodology:flood-filling-networks
+  - neuroanatomy:Drosophila
+micro_lesson_id: ml-case-flywire
+reference_images:
+  - src: /assets/images/content-library/case-studies/flywire-whole-brain/whole-brain-render.png
+    alt: "3D rendering of the complete Drosophila brain from FlyWire with major neuropils colored"
+    caption: "FlyWire whole-brain connectome: ~140,000 neurons reconstructed and proofread across all major neuropils."
+  - src: /assets/images/content-library/case-studies/flywire-whole-brain/proofreading-interface.png
+    alt: "FlyWire browser-based proofreading interface showing collaborative segment editing"
+    caption: "FlyWire's Neuroglancer-based proofreading platform enabled 287 contributors to collaboratively correct segmentation errors."
+  - src: /assets/images/content-library/case-studies/flywire-whole-brain/circuit-diagram.png
+    alt: "Circuit diagram of a visual motion detection pathway reconstructed from FlyWire data"
+    caption: "Motion detection circuit extracted from FlyWire: T4/T5 neurons with directionally tuned medulla inputs."
+combines_with:
+  - c-elegans-revisited
+  - microns-visual-cortex
+  - mouseconnects-himc
 ---
 
 # FlyWire Whole-Brain Connectome

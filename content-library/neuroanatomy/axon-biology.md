@@ -24,6 +24,30 @@ primary_units:
   - unit-2-cell-biology-of-neurons
   - unit-3-synaptic-structure
 difficulty: intermediate
+tags:
+  - neuroanatomy:axon
+  - neuroanatomy:bouton
+  - neuroanatomy:vesicle
+  - neuroanatomy:cytoskeleton
+  - neuroanatomy:axon-initial-segment
+  - connectomics:synapse
+  - imaging:electron-microscopy
+  - methodology:identification
+micro_lesson_id: ml-neuro-axon
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/axon-biology/axon-longitudinal.png
+    alt: "Longitudinal EM view of a myelinated axon showing nodes of Ranvier"
+    caption: "Myelinated axon in longitudinal section with compact myelin, node of Ranvier, and paranodal loops labeled."
+  - src: /assets/images/content-library/neuroanatomy/axon-biology/bouton-vesicle-pools.png
+    alt: "En passant bouton with synaptic vesicles and active zone"
+    caption: "En passant bouton showing clustered synaptic vesicles at the active zone with a mitochondrion providing local ATP."
+  - src: /assets/images/content-library/neuroanatomy/axon-biology/axon-initial-segment.png
+    alt: "Axon initial segment with dense undercoating and fasciculated microtubules"
+    caption: "Axon initial segment identified by dense membrane undercoating and fasciculated microtubules."
+combines_with:
+  - myelin-and-nodes
+  - synapse-classification
+  - soma-ultrastructure
 ---
 
 # Axon Biology and Ultrastructure

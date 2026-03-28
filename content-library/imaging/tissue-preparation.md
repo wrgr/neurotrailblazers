@@ -12,6 +12,27 @@ topics:
 primary_units:
   - "03"
 difficulty: "Intermediate"
+tags:
+  - imaging:tissue-preparation
+  - imaging:fixation
+  - imaging:heavy-metal-staining
+  - imaging:electron-microscopy
+  - methodology:sample-processing
+micro_lesson_id: ml-img-tissue-prep
+reference_images:
+  - src: /assets/images/content-library/imaging/tissue-preparation/tissue-prep-pipeline.png
+    alt: "Flowchart of tissue preparation steps from perfusion to block trimming"
+    caption: "Tissue preparation pipeline: perfusion fixation → post-fixation with osmium → en bloc staining → dehydration → resin embedding → block trimming."
+  - src: /assets/images/content-library/imaging/tissue-preparation/staining-comparison.png
+    alt: "EM images comparing different heavy metal staining protocols"
+    caption: "Effect of staining protocol on membrane contrast. ROTO protocol (left) vs standard osmium (right). Enhanced contrast improves automated segmentation."
+  - src: /assets/images/content-library/imaging/tissue-preparation/embedding-sectioning-overview.png
+    alt: "Resin embedding and ultramicrotome sectioning workflow"
+    caption: "Embedding and sectioning: resin infiltration preserves ultrastructure while ultramicrotome produces serial sections at 30-50 nm thickness."
+combines_with:
+  - em-principles
+  - artifact-taxonomy
+  - acquisition-qa
 ---
 
 ## Overview

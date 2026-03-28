@@ -22,6 +22,30 @@ primary_units:
   - unit-1-intro-to-neuroanatomy
   - unit-2-cell-biology-of-neurons
 difficulty: intermediate
+tags:
+  - neuroanatomy:soma
+  - neuroanatomy:nuclear-envelope
+  - neuroanatomy:organelle
+  - neuroanatomy:neuron-glia-distinction
+  - imaging:electron-microscopy
+  - cell-types:pyramidal-neuron
+  - cell-types:interneuron
+  - methodology:identification
+micro_lesson_id: ml-neuro-soma
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/soma-ultrastructure/soma-overview-em.png
+    alt: "Electron micrograph of a cortical neuronal soma showing nucleus, Nissl bodies, and Golgi apparatus"
+    caption: "Cortical neuron soma at 5,000x magnification highlighting nucleus, nucleolus, and Nissl substance (rough ER stacks)."
+  - src: /assets/images/content-library/neuroanatomy/soma-ultrastructure/soma-organelle-labels.png
+    alt: "Annotated diagram of soma ultrastructure with labeled organelles"
+    caption: "Key organelle landmarks visible in EM: mitochondria, Golgi apparatus, lipofuscin granules, and rough ER."
+  - src: /assets/images/content-library/neuroanatomy/soma-ultrastructure/neuron-vs-glia-comparison.png
+    alt: "Side-by-side comparison of neuronal and glial cell bodies in EM"
+    caption: "Left: neuronal soma with prominent nucleolus and Nissl substance. Right: astrocyte with pale nucleus and glycogen granules."
+combines_with:
+  - organelle-cues
+  - dendrite-biology
+  - axon-biology
 ---
 
 # Neuronal Soma Ultrastructure

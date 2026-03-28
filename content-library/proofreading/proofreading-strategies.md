@@ -20,6 +20,28 @@ primary_units:
   - proofreading-workflows
   - large-scale-reconstruction
 difficulty: intermediate
+tags:
+  - proofreading:exhaustive-proofreading
+  - proofreading:targeted-proofreading
+  - proofreading:crowd-sourced-proofreading
+  - proofreading:priority-ranking
+  - methodology:cost-benefit-analysis
+  - connectomics:reconstruction-workflow
+micro_lesson_id: ml-proof-strategies
+reference_images:
+  - src: /assets/images/content-library/proofreading/proofreading-strategies/strategy-comparison-table.png
+    alt: "Comparison matrix of proofreading strategies by effort, coverage, and use case"
+    caption: "Four proofreading strategies compared: exhaustive, targeted, priority-ranked, and crowd-sourced. Each has distinct effort-coverage tradeoffs."
+  - src: /assets/images/content-library/proofreading/proofreading-strategies/targeted-proofreading-workflow.png
+    alt: "Targeted proofreading workflow showing neuron selection, error scan, and correction"
+    caption: "Targeted proofreading: select high-value neurons, scan for errors at branch points and thin processes, then correct and validate."
+  - src: /assets/images/content-library/proofreading/proofreading-strategies/diminishing-returns-curve.png
+    alt: "Graph showing diminishing returns of proofreading effort over time"
+    caption: "Diminishing returns: ERL improvement per proofreading hour decreases as high-impact errors are corrected first."
+combines_with:
+  - error-taxonomy
+  - metrics-and-qa
+  - worked-examples
 ---
 
 # Proofreading Strategies for Connectome Reconstruction

@@ -12,6 +12,32 @@ topics:
 primary_units:
   - "09"
 difficulty: "Advanced"
+tags:
+  - connectomics:graph-theory
+  - connectomics:degree-distribution
+  - connectomics:clustering-coefficient
+  - connectomics:community-detection
+  - connectomics:small-world
+  - connectomics:rich-club
+  - connectomics:spectral-analysis
+  - methodology:centrality-measures
+  - methodology:modularity
+  - neuroanatomy:hub-neurons
+micro_lesson_id: ml-conn-network-analysis
+reference_images:
+  - src: /assets/images/content-library/connectomics/network-analysis-methods/network-metrics-visual.png
+    alt: "Visual explanation of degree, clustering coefficient, and shortest path in a neural graph"
+    caption: "Core network metrics illustrated on a small circuit: node degree (size), clustering coefficient (triangle density), shortest path (highlighted edges)."
+  - src: /assets/images/content-library/connectomics/network-analysis-methods/community-detection-example.png
+    alt: "Community structure detected in a connectome graph with color-coded modules"
+    caption: "Community detection applied to Drosophila optic lobe connectome. Colors indicate detected modules corresponding to known visual processing layers."
+  - src: /assets/images/content-library/connectomics/network-analysis-methods/rich-club-organization.png
+    alt: "Rich-club coefficient plot showing hub interconnectivity in C. elegans"
+    caption: "Normalized rich-club coefficient for C. elegans connectome. Values above 1 (dashed line) indicate hub neurons preferentially interconnect, forming an integrative backbone."
+combines_with:
+  - graph-representations
+  - motif-analysis
+  - neuroai-bridge
 ---
 
 ## Overview

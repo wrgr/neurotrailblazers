@@ -12,6 +12,27 @@ topics:
 primary_units:
   - "06"
 difficulty: "Intermediate"
+tags:
+  - cell-types:axon-dendrite-distinction
+  - cell-types:morphological-classification
+  - imaging:electron-microscopy
+  - proofreading:process-classification
+  - neuroanatomy:ultrastructure
+micro_lesson_id: ml-cell-axon-dendrite
+reference_images:
+  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/axon-dendrite-features.png
+    alt: "Side-by-side comparison of axon and dendrite ultrastructural features"
+    caption: "Key discriminating features: axons have uniform microtubule polarity, neurofilaments, and synaptic vesicles; dendrites have mixed polarity microtubules, ribosomes, and spines."
+  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/classification-decision-tree.png
+    alt: "Decision tree for axon vs dendrite classification using multiple ultrastructural cues"
+    caption: "Multi-cue decision tree: start with diameter and taper, check vesicle presence, confirm with microtubule organization and spine/bouton morphology."
+  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/ambiguous-cases-gallery.png
+    alt: "Gallery of ambiguous processes that are difficult to classify as axon or dendrite"
+    caption: "Ambiguous cases: thin distal dendrites, en passant boutons, and unmyelinated axons that challenge standard classification cues."
+combines_with:
+  - neuron-type-identification
+  - glia-recognition
+  - em-principles
 ---
 
 ## Overview

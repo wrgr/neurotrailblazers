@@ -13,6 +13,28 @@ primary_units:
   - "04"
   - "08"
 difficulty: "Advanced"
+tags:
+  - infrastructure:provenance
+  - infrastructure:versioning
+  - infrastructure:cave
+  - methodology:reproducibility
+  - methodology:data-management
+  - connectomics:materialization
+micro_lesson_id: ml-infra-provenance
+reference_images:
+  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/provenance-chain.png
+    alt: "Provenance chain from raw acquisition through processing to published connectome"
+    caption: "Provenance chain: each processing step records input versions, parameters, software version, and output hash for reproducibility."
+  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/cave-materialization.png
+    alt: "CAVE materialization concept showing snapshot versions of a dynamic segmentation"
+    caption: "CAVE materialization: periodic snapshots freeze the segmentation state so analyses reference a specific version, enabling reproducible queries."
+  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/version-timeline.png
+    alt: "Timeline showing dataset versions with branching and materialization points"
+    caption: "Version timeline: each materialization creates a citable snapshot while the live segmentation continues to evolve with proofreading edits."
+combines_with:
+  - reconstruction-pipeline
+  - data-formats
+  - acquisition-qa
 ---
 
 ## Overview

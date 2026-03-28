@@ -12,6 +12,28 @@ topics:
 primary_units:
   - "04"
 difficulty: "Advanced"
+tags:
+  - infrastructure:pipeline-architecture
+  - infrastructure:cloud-computing
+  - infrastructure:scalability
+  - connectomics:segmentation
+  - connectomics:alignment
+  - neuroai:agglomeration
+micro_lesson_id: ml-infra-pipeline
+reference_images:
+  - src: /assets/images/content-library/infrastructure/reconstruction-pipeline/pipeline-architecture.png
+    alt: "End-to-end reconstruction pipeline from raw images to queryable connectome"
+    caption: "Reconstruction pipeline stages: ingest → alignment → segmentation → agglomeration → synapse detection → graph assembly → serving."
+  - src: /assets/images/content-library/infrastructure/reconstruction-pipeline/pipeline-scale-diagram.png
+    alt: "Data volume at each pipeline stage showing expansion and compression"
+    caption: "Data volume through the pipeline: raw images (petabytes) → segmentation (terabytes) → graph (gigabytes). Each stage compresses information."
+  - src: /assets/images/content-library/infrastructure/reconstruction-pipeline/stage-dependencies.png
+    alt: "Dependency graph showing which pipeline stages can run in parallel"
+    caption: "Stage dependency graph: alignment must complete before segmentation, but synapse detection can run in parallel with agglomeration."
+combines_with:
+  - data-formats
+  - provenance-and-versioning
+  - acquisition-qa
 ---
 
 ## Overview

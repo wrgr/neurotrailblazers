@@ -11,6 +11,28 @@ topics:
 primary_units:
   - "03"
 difficulty: "Intermediate"
+tags:
+  - imaging:electron-microscopy
+  - imaging:sem
+  - imaging:tem
+  - imaging:resolution
+  - imaging:contrast
+  - methodology:image-formation
+micro_lesson_id: ml-img-principles
+reference_images:
+  - src: /assets/images/content-library/imaging/em-principles/sem-vs-tem-diagram.png
+    alt: "Side-by-side schematic of SEM and TEM beam paths and detector configurations"
+    caption: "SEM (left) detects scattered/secondary electrons from the surface; TEM (right) detects transmitted electrons through a thin section."
+  - src: /assets/images/content-library/imaging/em-principles/resolution-contrast-tradeoff.png
+    alt: "Graph showing resolution vs contrast tradeoff at different beam energies"
+    caption: "Resolution-contrast tradeoff: higher beam energy improves resolution but reduces membrane contrast in heavy-metal-stained tissue."
+  - src: /assets/images/content-library/imaging/em-principles/beam-specimen-interactions.png
+    alt: "Diagram of electron beam interactions with biological specimen"
+    caption: "Electron-specimen interactions: elastic scattering, inelastic scattering, and secondary electron emission each contribute to image contrast."
+combines_with:
+  - tissue-preparation
+  - artifact-taxonomy
+  - acquisition-qa
 ---
 
 ## Overview

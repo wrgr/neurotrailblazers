@@ -14,6 +14,28 @@ primary_units:
   - "06"
   - "09"
 difficulty: "Advanced"
+tags:
+  - cell-types:neuron-classification
+  - cell-types:morphological-classification
+  - cell-types:connectivity-based-classification
+  - connectomics:cell-census
+  - neuroanatomy:cortical-circuits
+  - neuroai:clustering
+micro_lesson_id: ml-cell-neuron-types
+reference_images:
+  - src: /assets/images/content-library/cell-types/neuron-type-identification/neuron-type-morphologies.png
+    alt: "Reconstructed morphologies of major cortical neuron types: pyramidal, basket, chandelier, bipolar"
+    caption: "Major cortical neuron types from EM reconstruction: pyramidal cells (excitatory, apical dendrite), basket cells (inhibitory, perisomatic targeting), chandelier cells (axo-axonic), bipolar cells (narrow arbor)."
+  - src: /assets/images/content-library/cell-types/neuron-type-identification/connectivity-based-clustering.png
+    alt: "UMAP plot of neurons clustered by connectivity profile with morphological type labels"
+    caption: "Connectivity-based clustering: UMAP of input-output connectivity vectors. Clusters correspond to morphologically defined cell types, validating connectivity as a classification axis."
+  - src: /assets/images/content-library/cell-types/neuron-type-identification/excitatory-inhibitory-comparison.png
+    alt: "Side-by-side comparison of excitatory and inhibitory neuron morphologies and connectivity patterns"
+    caption: "Excitatory vs inhibitory: pyramidal cells form long-range projections while interneurons provide local inhibition with distinct targeting patterns."
+combines_with:
+  - axon-dendrite-classification
+  - glia-recognition
+  - data-formats
 ---
 
 ## Overview

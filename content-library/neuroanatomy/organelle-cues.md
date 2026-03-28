@@ -23,6 +23,30 @@ primary_units:
   - unit-5-annotation-methods
   - unit-6-quality-control
 difficulty: intermediate
+tags:
+  - neuroanatomy:organelle
+  - neuroanatomy:mitochondria
+  - neuroanatomy:endoplasmic-reticulum
+  - neuroanatomy:axon-dendrite-distinction
+  - imaging:electron-microscopy
+  - proofreading:compartment-identification
+  - methodology:identification
+  - cell-types:neuron-glia-distinction
+micro_lesson_id: ml-neuro-organelle
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/organelle-cues/organelle-gallery.png
+    alt: "Gallery of neuronal organelles in EM: mitochondria, ER, MVBs, lysosomes"
+    caption: "Key organelles as compartment indicators showing how mitochondrial morphology differs between axons and dendrites."
+  - src: /assets/images/content-library/neuroanatomy/organelle-cues/mvb-lysosome-em.png
+    alt: "Multivesicular bodies and lysosomes in a neuronal process"
+    caption: "Multivesicular bodies and dense lysosomes are more common in somata and proximal dendrites, aiding compartment identification."
+  - src: /assets/images/content-library/neuroanatomy/organelle-cues/compartment-decision-table.png
+    alt: "Visual decision table mapping organelle observations to neuronal compartments"
+    caption: "Flowchart for using organelle evidence to determine whether a process is soma, dendrite, axon, or spine."
+combines_with:
+  - soma-ultrastructure
+  - dendrite-biology
+  - axon-biology
 ---
 
 # Organelle Cues for Compartment Identification

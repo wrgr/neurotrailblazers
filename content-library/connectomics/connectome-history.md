@@ -13,6 +13,34 @@ primary_units:
   - "01"
   - "09"
 difficulty: "Foundational"
+tags:
+  - connectomics:history
+  - connectomics:whole-brain
+  - connectomics:dense-reconstruction
+  - neuroanatomy:c-elegans
+  - neuroanatomy:drosophila
+  - neuroanatomy:mouse-cortex
+  - neuroanatomy:human-cortex
+  - imaging:serial-section-em
+  - imaging:volume-em
+  - infrastructure:flywire
+  - infrastructure:microns
+  - methodology:experimental-design
+micro_lesson_id: ml-conn-history
+reference_images:
+  - src: /assets/images/content-library/connectomics/connectome-history/connectome-timeline.png
+    alt: "Timeline of major connectomics milestones from 1986 C. elegans to present"
+    caption: "Key milestones: White et al. 1986 (C. elegans), Denk & Horstmann 2004 (SBEM), Bock et al. 2011 (mouse cortex), Zheng et al. 2018 (FAFB), Dorkenwald et al. 2024 (FlyWire whole-brain)."
+  - src: /assets/images/content-library/connectomics/connectome-history/scale-comparison.png
+    alt: "Comparison of connectome datasets by volume, neuron count, and species"
+    caption: "Published connectome datasets scaled by volume (x-axis) and neuron count (y-axis). Color indicates species."
+  - src: /assets/images/content-library/connectomics/connectome-history/em-technology-evolution.png
+    alt: "Evolution of electron microscopy technologies used in connectomics"
+    caption: "From manual serial-section TEM to automated SBEM, FIB-SEM, and ATUM — each generation enabled order-of-magnitude increases in reconstructed volume."
+combines_with:
+  - graph-representations
+  - network-analysis-methods
+  - neuroai-bridge
 ---
 
 ## Overview

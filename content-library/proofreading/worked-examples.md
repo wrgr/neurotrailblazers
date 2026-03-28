@@ -16,6 +16,30 @@ primary_units:
   - unit-error-detection
   - unit-proofreading-workflows
 difficulty: intermediate
+tags:
+  - proofreading:merge-error
+  - proofreading:split-error
+  - proofreading:error-triage
+  - infrastructure:cave
+  - infrastructure:neuroglancer
+  - methodology:consensus-protocol
+  - case-studies:proofreading-scenarios
+micro_lesson_id: ml-proof-worked
+reference_images:
+  - src: /assets/images/content-library/proofreading/worked-examples/merge-before-after.png
+    alt: "Before and after views of a merge error correction at a blood vessel"
+    caption: "Merge error correction: before (left) two neurons share one segment near a blood vessel; after (right) correctly separated into distinct segments."
+  - src: /assets/images/content-library/proofreading/worked-examples/split-before-after.png
+    alt: "Before and after views of a split error correction through low-contrast sections"
+    caption: "Split error correction: before (left) neuron fragmented at thin axon; after (right) fragments joined into complete morphology."
+  - src: /assets/images/content-library/proofreading/worked-examples/autapse-detection-workflow.png
+    alt: "Workflow diagram showing how false autapses reveal hidden merge errors"
+    caption: "False autapse detection: connectivity analysis flags self-synapses, leading to discovery of a distant merge error 200 um away."
+combines_with:
+  - error-taxonomy
+  - proofreading-strategies
+  - proofreading-tools
+  - metrics-and-qa
 ---
 
 # Proofreading Worked Examples

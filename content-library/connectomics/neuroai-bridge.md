@@ -12,6 +12,31 @@ topics:
 primary_units:
   - "09"
 difficulty: "Advanced"
+tags:
+  - neuroai:structure-function
+  - neuroai:bio-inspired-architecture
+  - neuroai:connectome-constrained-model
+  - neuroai:graph-neural-network
+  - neuroai:representation-learning
+  - connectomics:deep-learning
+  - connectomics:simulation
+  - methodology:model-comparison
+  - case-studies:microns-structure-function
+micro_lesson_id: ml-conn-neuroai
+reference_images:
+  - src: /assets/images/content-library/connectomics/neuroai-bridge/structure-function-pipeline.png
+    alt: "Pipeline from connectome graph to functional prediction via constrained neural network models"
+    caption: "Structure-function pipeline: connectome adjacency matrix constrains a recurrent neural network, whose dynamics are compared to functional recordings."
+  - src: /assets/images/content-library/connectomics/neuroai-bridge/bio-inspired-architectures.png
+    alt: "Comparison of biological circuit motifs and their artificial neural network analogs"
+    caption: "Biological circuit motifs (left) mapped to artificial architecture components (right): lateral inhibition to competitive layers, recurrent excitation to skip connections."
+  - src: /assets/images/content-library/connectomics/neuroai-bridge/gnn-cell-type-prediction.png
+    alt: "Graph neural network workflow for predicting neuron cell types from connectivity"
+    caption: "GNN cell-type prediction: node features and neighborhood structure are learned jointly to classify neurons with unknown types based on connectivity fingerprints."
+combines_with:
+  - connectome-history
+  - network-analysis-methods
+  - motif-analysis
 ---
 
 ## Overview

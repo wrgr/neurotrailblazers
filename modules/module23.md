@@ -87,6 +87,11 @@ Conference communication is often the first high-stakes visibility point for tra
 - **Plain language:** what you say and how you engage both matter.
 - **Misconception guardrail:** "good science speaks for itself" without communication strategy.
 
+### 4) Key connectomics conferences and venues
+Trainees should know the major venues where connectomics work is presented and discussed. The Society for Neuroscience (SfN) annual meeting is the largest general neuroscience conference and includes dedicated connectomics poster sessions and nanosymposia. The BRAIN Initiative Investigators Meeting brings together funded researchers and is a key venue for dataset announcements and tool demonstrations. Specialized connectomics conferences and workshops (often organized around specific datasets or methods) provide focused peer interaction. Gordon Research Conferences on neural circuits offer small-group, discussion-intensive formats that are especially valuable for early-career researchers building collaborations.
+
+When writing abstracts for connectomics submissions, the 250-word limit demands precision. State the dataset used (species, brain region, reconstruction method), the analytical method applied, the primary finding with a quantitative anchor, and at least one interpretation limitation. Reviewers at these venues expect to see the specific dataset and version, not just "a connectomics dataset," and they expect claims to be bounded by the reconstruction completeness and proofreading status of the data.
+
 ## Hidden curriculum scaffold
 - Unspoken conference rules trainees often miss:
   - Start conversations with one-line project framing, not full backstory.

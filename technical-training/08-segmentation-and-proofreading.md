@@ -123,5 +123,14 @@ Proofreading is the scientific QC layer that determines whether downstream analy
 Take one candidate merge/split case and write a short correction log with before/after rationale and one QC metric.
 
 
+## Content library references
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — Merge, split, boundary, and identity errors in detail
+- [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) — Exhaustive, targeted, priority-ranked, crowd-sourced approaches
+- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — CAVE, Neuroglancer, Spelunker, NeuTu
+- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, edge F1, synapse-centric F1 with formulas
+- [Proofreading worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}) — Step-by-step correction scenarios
+- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization and reproducible proofreading
+- [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) — Collaborative proofreading at scale
+
 ## Teaching slide deck
 - Slide draft page: [Segmentation and Proofreading deck draft]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})

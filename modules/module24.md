@@ -86,6 +86,11 @@ Many trainees are told to "network more" or "apply broadly" without concrete str
 - **Plain language:** success often depends on rules nobody wrote down.
 - **Misconception guardrail:** lack of insider knowledge is not lack of ability.
 
+### 4) Career paths enabled by connectomics training
+Connectomics training opens a unusually broad range of career trajectories because the field sits at the intersection of multiple disciplines. Graduate school options include neuroscience, computational biology, bioengineering, and computer science programs, where connectomics experience demonstrates both domain knowledge and technical skill. Industry roles span biotech companies developing brain-computer interfaces or neural prosthetics, AI and machine learning teams (where segmentation and graph analysis skills transfer directly), and medical imaging companies applying similar computational pipelines to clinical data. Data science and data engineering positions value the experience of working with terabyte-scale datasets, cloud infrastructure, and complex ETL pipelines.
+
+The unique value of connectomics training is its combination of neuroscience domain knowledge, computational proficiency (Python, image processing, graph analysis), data engineering at scale, and collaborative research experience in large distributed teams. Science policy and science communication are additional paths for those drawn to the societal implications of brain mapping initiatives. Students should document their cross-disciplinary competencies explicitly in applications, since hiring committees outside neuroscience may not recognize the breadth of skills that connectomics work requires.
+
 ## Hidden curriculum scaffold
 - Common invisible expectations:
   - outreach emails should show specific project alignment in 3-5 sentences.
@@ -139,6 +144,9 @@ Many trainees are told to "network more" or "apply broadly" without concrete str
   - Overgeneralized plans with no evidence of fit.
   - Outreach drafts lacking project-specific alignment.
   - Hidden-curriculum barriers unaddressed.
+
+## Content library references
+- [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — The growing field and career opportunities
 
 ## Teaching resources
 - Persona context: [Learner Personas]({{ '/avatars/' | relative_url }})

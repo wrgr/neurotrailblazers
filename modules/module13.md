@@ -143,11 +143,37 @@ ML can accelerate connectomics analysis, but naive workflows produce misleading 
   - Overfocus on aggregate accuracy.
   - Claims of biological insight unsupported by model diagnostics.
 
+## ML in the connectomics pipeline
+
+Machine learning is embedded at every stage of the reconstruction pipeline:
+
+| Stage | ML task | Key methods | Training data source |
+|-------|---------|-------------|---------------------|
+| **Segmentation** | Predict voxel affinities/boundaries | U-Net, FFN (Januszewski et al. 2018) | Manual ground-truth annotations |
+| **Synapse detection** | Identify cleft locations + pre/post partners | 3D CNN on local patches | Expert-annotated synapse sets |
+| **Cell-type classification** | Assign neuron type from morphology/connectivity | Random forest, GNN, clustering | Morphologically typed neurons |
+| **Error detection** | Flag likely merge/split errors for proofreading | Classifier on segment features | Proofreading correction logs |
+| **Automated proofreading** | Suggest corrections | Reinforcement learning, heuristic models | Before/after correction pairs |
+
+**Domain shift is the central challenge:** A model trained on well-stained MICrONS data may fail on under-stained H01 regions, on different species (mouse → fly), or on tissue with pathology (near epileptic foci). Always evaluate on held-out data from the target domain, not just the training domain.
+
+## Content library references
+- [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — Where ML fits in the pipeline
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — Error types ML must handle
+- [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — Bidirectional exchange between neuroscience and AI
+- [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) — Morphological and connectivity-based classification
+
 ## Teaching resources
 - Upstream data context: [Module 12]({{ '/modules/module12/' | relative_url }})
 - Downstream morphology/classification: [Module 14]({{ '/modules/module14/' | relative_url }})
 - Technical track context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## References
+- Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
+- Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
+- McInnes L et al. (2018) "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction." *arXiv:1802.03426*.
+- Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.
 
 ## Quick practice prompt
 For one candidate model, write:

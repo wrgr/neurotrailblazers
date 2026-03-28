@@ -103,5 +103,11 @@ Draft one connectomics study brief with:
 Write one 2-3 sentence hypothesis that could be constrained by structural connectivity, and list one limitation of using structure alone.
 
 
+## Content library references
+- [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — Cajal through BRAIN CONNECTS: full timeline and lessons
+- [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — Structure-function relationships, bio-inspired AI, honest boundaries
+- [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) — Functional connectomics case study
+- [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) — NIH CONNECTS flagship project
+
 ## Teaching slide deck
 - Slide draft page: [Why Map the Brain deck draft]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})

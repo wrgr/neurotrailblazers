@@ -148,11 +148,47 @@ Connectomics is now data-system-limited as much as algorithm-limited. If learner
   - Missing version metadata in outputs.
   - Optimization attempts without benchmark baseline.
 
+## Scale context: real-world numbers
+
+To ground the abstract concepts, here are the data scales learners will encounter:
+
+| Dataset | Raw volume | Neurons | Synapses | Storage |
+|---------|-----------|---------|----------|---------|
+| MICrONS (minnie65) | 1 mm³ mouse V1 | ~80,000 | ~500M | ~2 PB |
+| H01 | ~1 mm³ human temporal cortex | ~57,000 cells | ~150M | ~1.4 PB |
+| FlyWire | Whole adult Drosophila brain | ~139,255 | ~54.5M | ~100 TB |
+| MouseConnects (planned) | ~10 mm³ mouse hippocampus | TBD | TBD | >10 PB |
+
+**Teaching point:** "When your synapse table has 500 million rows, a poorly written query doesn't just run slowly — it may not finish at all. Architecture decisions determine whether your science is feasible."
+
+## Key tools and formats
+
+| Tool/Format | Purpose | When to use |
+|------------|---------|-------------|
+| **Zarr/N5** | Chunked array storage | Volumetric data, cloud-friendly |
+| **Neuroglancer precomputed** | Multiscale image pyramids | Web browsing of EM/segmentation |
+| **CAVEclient** | Python API for CAVE tables | Synapse queries, annotation access |
+| **CloudVolume** | Python API for volumetric data | Image/segmentation chunk access |
+| **pandas/Dask** | Tabular data manipulation | Synapse tables, annotation analysis |
+| **BigQuery/DuckDB** | SQL on large tables | Complex joins on synapse/annotation tables |
+
+## Content library references
+- [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — End-to-end pipeline architecture
+- [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — Volumes, meshes, skeletons, graphs; format specs
+- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization, reproducibility
+- [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) — Real-world petascale dataset
+
 ## Teaching resources
 - Workflow context: [Connectomics Workflow]({{ '/datasets/workflow' | relative_url }})
 - Dataset context: [MouseConnects]({{ '/datasets/mouseconnects' | relative_url }})
 - Notebook: [Dash Synapse Explorer]({{ '/notebooks/intro/DashSynapseExplorer.ipynb' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## References
+- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*.
+- Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
+- Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex." *Science* 384(6696):eadk4858.
+- Turner NL et al. (2022) "Reconstruction of neocortex." *Cell* 185(6):1082-1100.
 
 ## Quick practice prompt
 Document one query you use with:

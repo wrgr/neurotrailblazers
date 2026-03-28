@@ -109,5 +109,12 @@ Process-type misclassification is a major source of downstream graph error.
 Choose one ambiguous process and document the three strongest cues you used to classify it.
 
 
+## Content library references
+- [Axon-dendrite classification]({{ '/content-library/cell-types/axon-dendrite-classification/' | relative_url }}) — Multi-cue protocol, edge cases, confidence scoring
+- [Axon biology]({{ '/content-library/neuroanatomy/axon-biology/' | relative_url }}) — AIS, boutons, vesicle pools, myelination
+- [Dendrite biology]({{ '/content-library/neuroanatomy/dendrite-biology/' | relative_url }}) — Spine types, local translation, organelle gradients
+- [Organelle annotation cues]({{ '/content-library/neuroanatomy/organelle-cues/' | relative_url }}) — Using organelles to resolve ambiguous compartments
+- [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) — Morphological and connectivity-based classification
+
 ## Teaching slide deck
 - Slide draft page: [Axons and Dendrites deck draft]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})

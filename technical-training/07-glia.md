@@ -97,5 +97,10 @@ Glia are central to reliable annotation and interpretation, not background objec
 Review one glia image and list two features that distinguish it from a neuronal process in the same neighborhood.
 
 
+## Content library references
+- [Glia recognition]({{ '/content-library/cell-types/glia-recognition/' | relative_url }}) — Astrocytes, microglia, oligodendrocytes: identification cues, decision protocol, worked examples
+- [Myelin and nodes of Ranvier]({{ '/content-library/neuroanatomy/myelin-and-nodes/' | relative_url }}) — Oligodendrocyte myelin biology and annotation implications
+- [Axon-dendrite classification]({{ '/content-library/cell-types/axon-dendrite-classification/' | relative_url }}) — Distinguishing glia from neuronal processes
+
 ## Teaching slide deck
 - Slide draft page: [Glia deck draft]({{ '/technical-training/slides/07-glia/' | relative_url }})

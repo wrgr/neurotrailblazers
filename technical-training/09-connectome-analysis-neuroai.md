@@ -165,5 +165,14 @@ This unit links connectome graph analysis to AI-relevant hypothesis generation.
 Define one motif hypothesis, one null model, and one success criterion you would use before interpreting results.
 
 
+## Content library references
+- [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — C. elegans through BRAIN CONNECTS
+- [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}) — Nodes, edges, weights, adjacency matrices
+- [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }}) — Degree, clustering, path length, community detection, spectral
+- [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) — DotMotif, null models, subgraph isomorphism, statistics
+- [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — Bio-inspired architectures, connectome-constrained models, honest boundaries
+- [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) — The first connectome and its re-analysis
+- [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) — Brain-wide circuit analysis
+
 ## Teaching slide deck
 - Slide draft page: [Connectome Analysis and NeuroAI deck draft]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})

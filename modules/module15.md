@@ -116,6 +116,36 @@ LLMs can accelerate triage and documentation, but unverified outputs can propaga
 - **Strong performance:** robust failure-mode handling and actionable governance plan.
 - **Failure modes:** unbounded scope, no confidence policy, missing audit trail.
 
+## Practical LLM use cases in connectomics
+
+### Where LLMs add value today
+| Use case | Example prompt | Verification method |
+|----------|---------------|-------------------|
+| **Literature summarization** | "Summarize the key findings of Dorkenwald et al. 2024 regarding cell-type diversity" | Cross-check against paper abstract and figures |
+| **Code assistance** | "Write a CAVEclient query to find all synapses onto neuron X at materialization version 943" | Run the code and verify output matches manual check |
+| **EM patch description** | "Describe the ultrastructural features visible in this EM image" (multimodal) | Expert annotator review of description accuracy |
+| **Hypothesis brainstorming** | "Given that reciprocal connections are 4× enriched, what functional hypotheses could explain this?" | Evaluate against literature; treat as starting points, not conclusions |
+| **Protocol drafting** | "Draft a proofreading SOP for merge error correction" | Expert review and team calibration before adoption |
+
+### Where LLMs fail or mislead
+- **Quantitative claims**: LLMs may confidently state incorrect numbers (synapse counts, cell counts, metric values). Always verify against the actual data.
+- **Visual interpretation**: Current vision-language models can describe EM images but may misidentify structures (e.g., calling an astrocytic process an axon). Expert verification is mandatory.
+- **Citation accuracy**: LLMs may fabricate references or misattribute findings. Always check cited papers exist and say what the LLM claims.
+- **Novel biological claims**: LLMs cannot generate new biological knowledge — they can only recombine and rephrase existing knowledge.
+
+### Governance framework
+For any LLM-assisted workflow in a connectomics project:
+1. **Define scope**: Which tasks are LLM-assisted? Which require human-only decisions?
+2. **Version control**: Log the model name/version, prompt text, and output for every LLM interaction used in analysis.
+3. **Verification gates**: Every LLM output category has a defined verification method and acceptance threshold.
+4. **Human override**: Any LLM suggestion can be overridden by a human annotator without justification. The human decision is authoritative.
+5. **Transparency**: In publications, disclose any LLM assistance in methods section.
+
+## Content library references
+- [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — AI tools for neuroscience and vice versa
+- [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) — What correct classification looks like (for verifying LLM calls)
+- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — The human-in-the-loop tools LLMs would augment
+
 ## Teaching resources
 - [Module 14]({{ '/modules/module14/' | relative_url }})
 - [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})

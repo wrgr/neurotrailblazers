@@ -117,10 +117,47 @@ CV is central to modern connectomics throughput. Without rigorous validation and
 - **Strong performance:** robust failure analysis and operational release criteria.
 - **Failure modes:** metric-only reasoning, weak split design, no deployment boundaries.
 
+## Key architectures for EM connectomics
+
+### U-Net (Ronneberger et al. 2015)
+Encoder-decoder architecture with skip connections. The encoder downsamples the image to extract features; the decoder upsamples to produce pixel-level predictions; skip connections preserve fine-grained spatial detail. Originally designed for biomedical image segmentation. In connectomics, 3D U-Nets predict boundary/affinity maps at each voxel.
+
+**Why it works for EM:** EM images have consistent texture and contrast patterns. The encoder learns to detect membranes, vesicles, and other structures; the decoder produces a per-voxel prediction map.
+
+### Flood-Filling Networks (Januszewski et al. 2018)
+An iterative approach: a CNN predicts whether each neighboring voxel belongs to the same object as the current seed, and the segment "grows" outward. FFNs produce instance segmentation directly (each neuron gets a unique ID) without the separate watershed + agglomeration step.
+
+**When to use:** FFNs are computationally expensive but produce high-quality segmentation with fewer post-processing stages. Used in FlyWire and other Google-based reconstructions.
+
+### Affinity prediction + watershed + agglomeration
+The standard two-stage pipeline: (1) A 3D CNN predicts pairwise affinity between neighboring voxels (probability they belong to the same segment). (2) Watershed transform produces an over-segmentation of millions of supervoxels. (3) Agglomeration merges supervoxels based on affinity scores at boundaries.
+
+**When to use:** More modular and parallelizable than FFN. Standard in academic pipelines (Funke et al. 2019).
+
+### Data augmentation for EM
+Training data is expensive (manual annotation). Augmentation expands the effective training set:
+- **Elastic deformations**: simulate tissue warping
+- **Intensity variations**: simulate staining differences
+- **Missing section simulation**: randomly drop sections during training so the model learns to handle gaps
+- **Rotation/flipping**: standard geometric augmentations
+- **Artifact injection**: add synthetic knife chatter or charging patterns
+
+## Content library references
+- [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — End-to-end segmentation architecture
+- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, boundary F1 for evaluation
+- [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — What CV models must handle
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — Merge/split/boundary errors from CV
+
 ## Teaching resources
 - [Technical Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 - [Technical Unit 09: Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+
+## References
+- Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.
+- Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
+- Funke J et al. (2019) "Large scale image segmentation with structured loss." *IEEE TPAMI* 41(7):1669-1680.
+- Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 
 ## Quick practice prompt
 Document one CV result with one supported use case and one forbidden use case.

@@ -91,6 +91,11 @@ Connectomics analyses can produce thousands of statistically testable patterns. 
 - **Plain language:** be clear about what you discovered versus what you validated.
 - **Misconception guardrail:** post-hoc storytelling is not confirmatory inference.
 
+### 4) Statistical challenges unique to connectomics
+Connectomics datasets present several statistical difficulties that are uncommon in other fields. Massive multiple comparisons arise when testing thousands of motifs, cell-type pairs, or connection patterns simultaneously. Spatial autocorrelation is pervasive because nearby neurons share arbor overlap, creating non-independent edges that violate standard test assumptions. The threshold problem is particularly acute: choosing a minimum synapse count (e.g., 3 vs. 5 synapses to define a "real" connection) changes the resulting graph and all downstream statistics, yet no universally accepted threshold exists.
+
+Researcher degrees of freedom in null model selection further compound these issues. Different null models that preserve different graph properties (degree sequence, spatial distance distribution, cell-type composition) can yield contradictory conclusions from the same data. Best practices include using permutation tests over parametric alternatives when distributional assumptions are uncertain, reporting effect sizes alongside p-values to distinguish statistical significance from biological relevance, and performing sensitivity analyses across multiple thresholds and null model variants to confirm that findings are robust rather than artifacts of a single analytical choice.
+
 ## Core workflow: connectomics inference protocol
 1. **Question-to-test mapping**
    - Convert biological question into estimand(s), test set, and effect-size target.
@@ -130,6 +135,11 @@ Connectomics analyses can produce thousands of statistically testable patterns. 
   - Null model choice disconnected from biological question.
   - Selective reporting of significant outcomes.
   - Conflation of exploratory signal with validated inference.
+
+## Content library references
+- [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) — Null models and statistical testing for motifs
+- [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }}) — Graph metrics requiring statistical interpretation
+- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — Quality metrics with statistical properties
 
 ## Teaching resources
 - Core unit context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

@@ -87,6 +87,11 @@ Many strong analyses fail to influence practice because communication is either 
 - **Plain language:** when unsure, say what would resolve uncertainty.
 - **Misconception guardrail:** confident tone is not equivalent to strong evidence.
 
+### 4) Connectomics-specific presentation challenges
+Presenting connectomics research poses unique difficulties that require deliberate design choices. Explaining electron microscopy to non-expert audiences demands analogies and visual scaffolding: show the scale progression from brain region to neuropil to individual synapses. Visualizing inherently 3D data on 2D slides requires showing both the raw EM cross-section and the 3D reconstruction of the same structure side by side so viewers can connect what is imaged to what is reconstructed. Every microscopy image should include scale bars and arrows pointing to key features, since EM images are visually unfamiliar to most audiences.
+
+Apply the "so what?" test to every slide: if a viewer cannot articulate why a particular image, graph, or diagram matters to the argument after 15 seconds, the slide needs revision. Pair morphological images with quantitative summaries rather than relying on visual impression alone. When showing network diagrams, always indicate what nodes and edges represent, how many are shown versus exist in the full dataset, and what thresholds or filters were applied to produce the visualization.
+
 ## Hidden curriculum scaffold
 - Unspoken norms in talks and conference Q&A:
   - opening minute should state question + why it matters + what is new.
@@ -145,6 +150,9 @@ Many strong analyses fail to influence practice because communication is either 
   - Overcompressed methods leading to overclaiming.
   - Jargon-heavy explanations with missing context.
   - Defensive Q&A without evidence references.
+
+## Content library references
+- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — What to cite in methods sections
 
 ## Teaching resources
 - Technical context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

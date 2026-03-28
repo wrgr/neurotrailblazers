@@ -88,6 +88,11 @@ Connectomics studies are technically dense and often impossible to interpret wit
 - **Plain language:** many expectations are "known by insiders" unless we teach them directly.
 - **Misconception guardrail:** learners should not be penalized for norms that were never made explicit.
 
+### 4) FAIR applied to connectomics
+Each FAIR principle maps to concrete connectomics infrastructure. Findable means assigning DOIs for datasets and providing stable CAVE endpoints that resolve to specific data versions. Accessible means offering open APIs and tools like CloudVolume that allow programmatic data retrieval without manual download. Interoperable means using standard formats such as SWC for neuron morphologies, Zarr for volumetric data, and NWB for neurophysiology so that tools across labs can ingest each other's outputs. Reusable means materialization versioning in CAVE, which lets any researcher retrieve the exact state of the segmentation and annotations at a given point in time.
+
+A practical reproducibility checklist for any connectomics analysis release should include: the dataset version or release identifier, the CAVE materialization number (if applicable), the code commit hash for all analysis scripts, the environment specification (e.g., conda environment file or Docker image), and the full parameter configuration used. Without all five elements, a third party cannot reliably reproduce the analysis, even with access to the same underlying data.
+
 ## Hidden curriculum scaffold
 - What senior reviewers expect but rarely state:
   - Dataset and code version IDs in figure legends/methods.
@@ -132,6 +137,11 @@ Connectomics studies are technically dense and often impossible to interpret wit
   - Missing version identifiers for data/code.
   - Methods descriptions that omit key parameters.
   - "Reproducible in principle" claims without validation evidence.
+
+## Content library references
+- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization and pipeline lineage
+- [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — Standard formats for interoperability
+- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — CAVE as a model for versioned science
 
 ## Teaching resources
 - Workflow context: [Connectomics workflow]({{ '/datasets/workflow' | relative_url }})

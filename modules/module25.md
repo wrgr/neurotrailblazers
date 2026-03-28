@@ -85,6 +85,11 @@ A portfolio is often the strongest evidence of readiness for research opportunit
 - **Plain language:** show how critique changed your work.
 - **Misconception guardrail:** "final" version without revision trace is incomplete.
 
+### 4) What to include in a capstone portfolio
+A strong connectomics capstone portfolio should contain several categories of artifacts that together demonstrate end-to-end research competency. Include annotated EM images with written interpretation explaining what structures are visible and what biological conclusions can be drawn. Graph analysis notebooks (Jupyter or similar) should show the full workflow from data loading through statistical testing, with inline commentary on analytical choices. Proofreading logs with QC metrics document hands-on data quality work and show attention to accuracy. A research brief or mini-paper (even 2-3 pages) demonstrates the ability to frame a question, present evidence, and state limitations. Presentation slides from talks or poster sessions round out the package by showing communication skill.
+
+The portfolio serves as career material beyond the course. For graduate school applications, it demonstrates technical skills (EM annotation, Python, graph analysis), scientific rigor (QC documentation, statistical reasoning), and communication ability (writing, presentations) in a single integrated package. Organize artifacts by competency rather than by module or chronology, and include brief reflection notes explaining what was learned and what would be done differently. Version the portfolio itself, and treat it as a living document that grows as new work is completed.
+
 ## Hidden curriculum scaffold
 - Unspoken portfolio expectations:
   - reviewers look for evidence of independent judgment, not only completion.

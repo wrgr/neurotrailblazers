@@ -120,15 +120,18 @@ Deep dives into landmark connectomics projects.
 
 ## Journal paper collection
 
-Curated papers across all connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+~100 curated papers across 11 connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. All papers are also available as structured data in `_data/journal_papers.yml` for programmatic filtering. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|
-| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 6 | Ultrastructure, synapses, spines, serial reconstruction |
-| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 6 | SBEM, FIB-SEM, ATUM, acquisition pipelines |
-| [Infrastructure]({{ '/content-library/journal-papers/infrastructure/' | relative_url }}) | 6 | FFN, CAVE, pipeline engineering, annotation tools |
-| [Proofreading]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 6 | Error detection, crowd-sourced correction, QA metrics |
-| [Cell Types]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 6 | Morphological, transcriptomic, connectivity-based classification |
-| [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 6 | Graph theory, motifs, comparative connectomics |
-| [NeuroAI]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 6 | Structure-function, bio-inspired AI, model taxonomy |
-| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 7 | C. elegans, FlyWire, MICrONS, H01, landmark datasets |
+| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8 | Ultrastructure, synapses, spines, serial reconstruction |
+| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8 | SBEM, FIB-SEM, ATUM, acquisition pipelines |
+| [Computer Vision & ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | 10 | FFN, U-Net, affinity prediction, synapse detection |
+| [Data Storage & Pipelines]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 8 | CAVE, neuPrint, CATMAID, OME-Zarr, pipeline engineering |
+| [Proofreading & QC]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 8 | Error detection, crowd-sourced correction, QA metrics |
+| [Cell Types]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8 | Morphological, transcriptomic, connectivity-based classification |
+| [Graph Construction]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 8 | Graph encoding, comparative connectomics |
+| [Network Analysis]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | 10 | Motifs, community detection, graph matching, NBS |
+| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 12 | Diffusion tractography, functional connectivity, HCP |
+| [NeuroAI]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Structure-function, bio-inspired AI, model taxonomy |
+| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | C. elegans, FlyWire, MICrONS, H01, landmark datasets |

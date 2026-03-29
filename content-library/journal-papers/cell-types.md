@@ -167,3 +167,53 @@ Curated papers on neuronal and glial cell type identification, classification fr
 - What does connectivity variability mean for the biological significance of specific connections?
 
 **Related content:** [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/), [Neuron type identification](/content-library/cell-types/neuron-type-identification/), [Graph representations](/content-library/connectomics/graph-representations/)
+
+---
+
+## 7. BRAIN Initiative Cell Census Network (BICCN) (2021) — A Multimodal Cell Census and Atlas of the Mammalian Primary Motor Cortex
+
+**Citation:** BRAIN Initiative Cell Census Network (BICCN). A multimodal cell census and atlas of the mammalian primary motor cortex. *Nature*. 2021;598:86-102.
+**DOI:** [10.1038/s41586-021-03950-0](https://doi.org/10.1038/s41586-021-03950-0)
+
+**Tags:** `cell-types:cell-census` `cell-types:neuron-classification` `cell-types:molecular-markers` `cell-types:morphological-classification` `case-studies:mouse` `methodology:reproducibility`
+
+### Summaries
+
+**Beginner:** What if scientists could create a complete catalog of every type of cell in a brain region, using every available technology? That's what the BRAIN Initiative Cell Census Network did for the mouse primary motor cortex. Hundreds of researchers combined gene expression data, chemical tags on DNA, cell shapes, electrical recordings, and connectivity information to build the most comprehensive cell type atlas ever made. The result is a reference catalog that other scientists can use to identify cell types in their own experiments.
+
+**Intermediate:** This flagship BICCN publication presents an integrated multimodal cell census of mouse primary motor cortex (MOp), combining single-cell transcriptomics, single-nucleus chromatin accessibility (snATAC-seq), DNA methylation profiling, morphological reconstruction (via Patch-seq and MouseLight), electrophysiology, and long-range projection mapping. The study identifies a consensus taxonomy of ~100 transcriptomic types organized hierarchically, and systematically maps cross-modal correspondences. Key findings include robust correspondence between transcriptomic and epigenomic types, partial correspondence with morpho-electric types, and the identification of projection-defined subtypes within transcriptomic classes.
+
+**Advanced:** The BICCN atlas establishes the current gold standard for multimodal cell type classification and provides critical context for interpreting connectomics-derived cell types. For connectomics, the most actionable findings are: (1) morphological features alone can distinguish major classes but not fine subtypes, (2) connectivity-defined subtypes (based on long-range projections) often correspond to transcriptomic subtypes, validating connectivity-based classification, and (3) the hierarchical taxonomy has natural granularity levels appropriate for different analyses. The reproducibility analysis — comparing results across labs and technologies — provides confidence intervals for cell type assignments that are directly relevant to assessing classification reliability in connectomics datasets.
+
+**Key figures:** Fig. 1 (multimodal data integration overview), Fig. 2 (consensus taxonomy), Fig. 4 (cross-modal correspondence), Fig. 6 (projection-defined subtypes)
+
+**Discussion prompts:**
+- How should connectomics cell type classifications be aligned with the BICCN reference taxonomy?
+- Which modalities in the BICCN atlas are most and least accessible from EM connectomics data?
+
+**Related content:** [Neuron type identification](/content-library/cell-types/neuron-type-identification/), [MICrONS visual cortex](/content-library/case-studies/microns-visual-cortex/)
+
+---
+
+## 8. Loomba et al. (2022) — Connectomic Comparison of Mouse and Human Cortex
+
+**Citation:** Loomba S, Straehle J, Gangber V, Danber S, Cerber C, Boergens K, et al. Connectomic comparison of mouse and human cortex. *Science*. 2022;377(6602):eabo0924.
+**DOI:** [10.1126/science.abo0924](https://doi.org/10.1126/science.abo0924)
+
+**Tags:** `cell-types:neuron-classification` `cell-types:excitatory` `cell-types:inhibitory` `neuroanatomy:synapse` `case-studies:mouse` `case-studies:human` `connectomics:connectome-comparison`
+
+### Summaries
+
+**Beginner:** Are human and mouse brains wired the same way at the microscopic level? This study compared tiny blocks of cortex from both species using electron microscopy and found both similarities and differences. The basic building blocks — excitatory and inhibitory neurons — are present in both, but human cortex has more complex connectivity patterns, including more synapses per neuron and different ratios of connection types. Understanding these differences is important for knowing when mouse brain studies can (and cannot) inform us about human brain function.
+
+**Intermediate:** Loomba et al. performed dense EM reconstruction of cortical samples from mouse and human temporal cortex, enabling direct quantitative comparison of microcircuit architecture. They analyzed synapse density, connectivity motifs, and cell-type-specific wiring patterns across species. Key findings: human cortex shows higher synapse density, a larger fraction of inhibitory synapses, more complex dendritic branching, and distinct connectivity motifs compared to mouse. Excitatory-to-excitatory connectivity rules are broadly conserved, while inhibitory circuit organization shows more divergence.
+
+**Advanced:** This paper provides the first systematic connectomic comparison across mammalian species at synaptic resolution. The methodology — matching tissue processing, imaging, and analysis pipelines across species to enable fair comparison — is a template for cross-species connectomics. Key quantitative findings include: ~2x higher synapse density in human vs. mouse cortex, shifted excitatory/inhibitory synapse ratio (more inhibition in human), and species-specific connectivity motifs involving interneuron subtypes. The cell type classification framework used here (morphology + connectivity in EM) reveals that while major cell classes are conserved, the connectivity signatures that distinguish subtypes differ across species. This has direct implications for translating cell type classifications and circuit models from mouse connectomics datasets to human neuroscience.
+
+**Key figures:** Fig. 1 (cross-species reconstruction overview), Fig. 2 (synapse density comparison), Fig. 3 (connectivity motif analysis), Fig. 4 (cell-type-specific wiring differences)
+
+**Discussion prompts:**
+- Which findings from mouse connectomics are likely to generalize to human cortex, and which are species-specific?
+- How do differences in inhibitory circuit organization between species affect our understanding of cortical computation?
+
+**Related content:** [Neuron type identification](/content-library/cell-types/neuron-type-identification/), [Synapse classification](/content-library/neuroanatomy/synapse-classification/), [Graph representations](/content-library/connectomics/graph-representations/)

@@ -25,6 +25,10 @@ items:
   - title: "Resources"
     url: "/datasets/"
     dropdown:
+      - title: "Content Library"
+        url: "/content-library/"
+      - title: "Journal Papers"
+        url: "/content-library/journal-papers/"
       - title: "Concepts"
         url: "/concepts/"
       - title: "Datasets"

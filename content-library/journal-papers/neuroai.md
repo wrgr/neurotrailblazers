@@ -167,3 +167,54 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 - How do signed (excitatory/inhibitory) analyses change conclusions compared with unsigned analyses?
 
 **Related content:** [Network analysis methods](/content-library/connectomics/network-analysis-methods/), [Motif analysis](/content-library/connectomics/motif-analysis/), [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/)
+
+---
+
+## 7. Conwell et al. (2024) — What Can 1.8 Billion Regressions Tell Us About the Pressures Shaping High-Level Visual Representation in Brains and Machines?
+
+**Citation:** Conwell C, Prince JS, Kay KN, Alvarez GA, Konkle T. What can 1.8 billion regressions tell us about the pressures shaping high-level visual representation in brains and machines? *bioRxiv/NeurIPS*. 2024.
+
+**Tags:** `neuroai:structure-function` `neuroai:deep-learning` `neuroai:representation-learning` `case-studies:mouse` `case-studies:human`
+
+### Summaries
+
+**Beginner:** Which artificial neural networks produce internal representations most similar to those found in real brains? This study ran a massive comparison — 1.8 billion regressions — testing how well the internal activity of hundreds of different AI models predicts brain activity in both humans and mice viewing images. The results reveal which design choices (network architecture, training data, training objective) matter most for producing brain-like representations.
+
+**Intermediate:** Conwell et al. conduct the largest systematic comparison to date of neural network representations with neural data from both human fMRI and mouse calcium imaging. By varying model architecture, training objective, dataset, and other factors across hundreds of models, they identify the key pressures that shape brain-like representations. Key findings include: training on naturalistic tasks (object recognition, self-supervised learning) produces more brain-predictive representations than arbitrary tasks; scale alone does not guarantee brain-likeness; and the factors predicting human neural responses partially diverge from those predicting mouse responses, reflecting species-specific computational strategies.
+
+**Advanced:** This paper provides the most comprehensive empirical answer to date on what makes a neural network a good model of visual cortex. The methodological contribution is a factorial analysis across model design axes: architecture family (CNNs, Transformers, MLPs), training paradigm (supervised, self-supervised, language-supervised), dataset scale and composition, and model scale. The regression framework maps model layers to neural data using ridge regression with cross-validation. Key findings for the connectomics-NeuroAI intersection: (1) architecture matters — models with more brain-like connectivity patterns (e.g., recurrent, hierarchical) tend to predict neural data better; (2) the human-mouse divergence in model predictivity suggests species-specific architectural constraints shape representation; (3) the diminishing returns of scale challenge purely scaling-based approaches to brain modeling.
+
+**Key figures:** Fig. 1 (regression framework), Fig. 2 (model factor analysis), Fig. 3 (architecture effects), Fig. 4 (human vs. mouse divergence)
+
+**Discussion prompts:**
+- How should connectome-constrained architectures be evaluated in this regression framework?
+- What does the human-mouse divergence in model predictivity tell us about cross-species connectomic differences?
+- Is predicting neural activity a sufficient benchmark for a "good" brain model?
+
+**Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [Network analysis methods](/content-library/connectomics/network-analysis-methods/)
+
+---
+
+## 8. Lappalainen et al. (2024) — Connectome-Constrained Networks Predict Neural Activity Across the Fly Brain
+
+**Citation:** Lappalainen JK, Tschopp FD, Varber S, Dasgupta M, Clandinin TR, Romani S, et al. Connectome-constrained networks predict neural activity across the fly brain. *Nature*. 2024.
+**DOI:** [10.1038/s41586-024-07939-3](https://doi.org/10.1038/s41586-024-07939-3)
+
+**Tags:** `neuroai:connectome-constrained-model` `neuroai:structure-function` `neuroai:simulation` `case-studies:Drosophila` `case-studies:FlyWire`
+
+### Summaries
+
+**Beginner:** If you know how all the neurons in a brain are connected, can you predict what they will do? This paper takes the complete wiring diagram of the fruit fly brain (from the FlyWire connectome) and uses it to build an artificial neural network with the same connection pattern. When they trained this network, it could predict real neural activity recorded from living flies. This is the first demonstration that a connectome-constrained model can predict brain dynamics at a whole-brain scale.
+
+**Intermediate:** Lappalainen et al. construct a neural network model whose architecture is directly derived from the FlyWire connectome — neurons in the model correspond to real neurons, and connections exist only where the connectome specifies them. The model is trained to predict neural activity recorded via calcium imaging in behaving *Drosophila*. Key findings: the connectome-constrained model outperforms randomly wired models with matched statistics, demonstrating that the specific wiring pattern carries computational information. The model also generates predictions about the activity of unrecorded neurons, effectively completing the brain-wide activity map.
+
+**Advanced:** This paper is the first rigorous demonstration that connectome structure constrains neural dynamics in a predictive, quantitative sense. The modeling framework uses the connectome as a hard architectural constraint (only connectome-specified connections are allowed) while learning synaptic weights from functional data. Key methodological choices: (1) the model uses a continuous-time recurrent architecture with Dale's law (separate excitatory/inhibitory neurons); (2) training uses a combination of reconstruction loss on recorded neurons and regularization; (3) comparison with shuffled-connectome controls isolates the contribution of specific wiring. The results validate the central premise of connectome-constrained modeling: that wiring diagrams contain functionally relevant information beyond what is captured by aggregate statistics. Limitations include the gap between synapse count and effective synaptic strength, and the absence of neuromodulation.
+
+**Key figures:** Fig. 1 (connectome-to-model pipeline), Fig. 2 (prediction of neural activity), Fig. 3 (comparison with shuffled controls), Fig. 4 (whole-brain activity prediction)
+
+**Discussion prompts:**
+- What fraction of neural dynamics is explained by connectome structure versus other factors (neuromodulation, plasticity)?
+- How should this approach scale to larger connectomes (mouse, human)?
+- Does the success of connectome-constrained models validate the "structure determines function" hypothesis?
+
+**Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/)

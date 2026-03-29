@@ -170,3 +170,55 @@ Curated papers on connectome graph analysis, network properties, circuit motifs,
 - What does the modular addition of sex-specific circuits suggest about circuit evolution?
 
 **Related content:** [C. elegans revisited](/content-library/case-studies/c-elegans-revisited/), [Graph representations](/content-library/connectomics/graph-representations/), [Connectome history](/content-library/connectomics/connectome-history/)
+
+---
+
+## 7. Dorkenwald et al. (2024) — Neuronal Wiring Diagram of an Adult Brain
+
+**Citation:** Dorkenwald S, Matsliah A, Sterling AR, Schlegel P, Yu S, McKellar CE, et al. Neuronal wiring diagram of an adult brain. *Nature*. 2024.
+**DOI:** [10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
+
+**Tags:** `connectomics:graph-theory` `connectomics:connectome-comparison` `case-studies:FlyWire` `case-studies:Drosophila` `case-studies:whole-brain`
+
+### Summaries
+
+**Beginner:** This landmark paper presents the complete wiring diagram of an adult fruit fly brain — the FlyWire connectome. Every neuron and every connection in the entire brain was mapped using electron microscopy, producing the first whole-brain connectome of an adult animal. With roughly 140,000 neurons and 50 million synapses, this is far larger than the larval fly connectome, and it provides a comprehensive blueprint of how a complex brain is wired.
+
+**Intermediate:** Dorkenwald et al. present the FlyWire whole-brain connectome of an adult *Drosophila melanogaster*, reconstructed from a serial section electron microscopy volume using a combination of automated segmentation and large-scale community proofreading. The connectome comprises ~139,000 neurons and ~50 million synaptic connections. The paper describes the reconstruction pipeline, quality control metrics, and initial network analyses including neuron type classification, neuropil-level connectivity, and global network properties. The dataset enables whole-brain circuit analyses that were previously impossible.
+
+**Advanced:** The FlyWire connectome represents a qualitative advance over the hemibrain dataset in completeness (whole-brain versus partial) and community-driven proofreading at scale. Key technical contributions include: (1) the distributed proofreading framework that enabled thousands of contributors to correct segmentation errors; (2) automated synapse detection with validation against manual annotation; (3) a hierarchical neuron type classification integrating morphology, connectivity, and spatial position. The whole-brain coverage eliminates boundary effects that limited hemibrain analyses and enables systematic study of inter-hemispheric connectivity, commissural circuits, and brain-wide feedback pathways.
+
+**Key figures:** Fig. 1 (whole-brain reconstruction overview), Fig. 2 (neuron type classification), Fig. 3 (brain-wide connectivity map), Fig. 4 (network analysis)
+
+**Discussion prompts:**
+- How does whole-brain coverage change the conclusions compared with the partial hemibrain dataset?
+- What are the limitations of a single-animal connectome for understanding species-typical wiring?
+- How should the community prioritize analyses of this dataset?
+
+**Related content:** [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/), [Network analysis methods](/content-library/connectomics/network-analysis-methods/)
+
+---
+
+## 8. Shapson-Coe et al. (2024) — A Petavoxel Fragment of Human Cerebral Cortex Reconstructed at Nanoscale Resolution
+
+**Citation:** Shapson-Coe A, Januszewski M, Berger DR, Pope A, Wu Y, Blakely T, et al. A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science*. 2024.
+**DOI:** [10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+
+**Tags:** `connectomics:graph-theory` `case-studies:human` `case-studies:H01` `neuroanatomy:synapse` `cell-types:neuron-classification`
+
+### Summaries
+
+**Beginner:** For the first time, a small piece of human brain — about one cubic millimeter from the temporal cortex — was reconstructed at the level of individual synapses. This is the H01 dataset, and it reveals the detailed wiring of tens of thousands of human neurons. The reconstruction uncovered surprising features of human brain wiring, including unusual axonal structures and connectivity patterns not seen in other species.
+
+**Intermediate:** Shapson-Coe et al. present the H01 dataset: a 1 mm³ fragment of human temporal cortex reconstructed at nanometer resolution using serial section electron microscopy and automated segmentation. The volume contains ~57,000 cells and ~150 million synapses. The reconstruction reveals human-specific wiring features including: axonal whorls (unusual coiled axonal structures), a deep layer of highly connected pyramidal cells, and multi-synaptic connections (multiple synapses between the same neuron pairs) that are more prevalent than in mouse cortex. The dataset enables the first large-scale analysis of human cortical connectivity at synaptic resolution.
+
+**Advanced:** The H01 dataset is the first EM connectomics dataset at scale from human tissue, raising both opportunities and challenges. Key findings: (1) the multi-synaptic connection distribution differs substantially from mouse cortex, with a heavier tail suggesting different connectivity rules at the human scale; (2) the presence of axonal whorls of unknown function highlights how much remains to be discovered in human neuroanatomy; (3) neuron classification combining morphological and connectivity features reveals cell types not identifiable by either criterion alone. Technical challenges include: tissue from a surgical resection (epilepsy patient) rather than healthy tissue, incomplete neuropil coverage at the volume boundaries, and the computational cost of petascale reconstruction. The dataset establishes a methodological foundation for future human connectomics at larger scales.
+
+**Key figures:** Fig. 1 (reconstruction overview), Fig. 2 (cell type classification), Fig. 3 (multi-synaptic connections), Fig. 4 (axonal whorls), Fig. 5 (human-specific connectivity features)
+
+**Discussion prompts:**
+- How do the connectivity patterns in human cortex compare with those from mouse cortex datasets (e.g., MICrONS)?
+- What are the implications of using pathological tissue for establishing "normal" human connectivity?
+- How should human connectomics scale up from 1 mm³ to larger volumes?
+
+**Related content:** [Graph representations](/content-library/connectomics/graph-representations/), [Network analysis methods](/content-library/connectomics/network-analysis-methods/)

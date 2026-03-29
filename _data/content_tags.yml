@@ -53,14 +53,38 @@ dimensions:
       - light-microscopy
       - X-ray-tomography
 
-  infrastructure:
-    label: "Computational Infrastructure"
+  computer-vision-ml:
+    label: "Computer Vision & Machine Learning"
     color: "#E67E22"
+    tags:
+      - segmentation
+      - instance-segmentation
+      - semantic-segmentation
+      - object-detection
+      - synapse-detection
+      - flood-filling-network
+      - U-Net
+      - affinity-prediction
+      - agglomeration
+      - watershed
+      - multicut
+      - contrastive-learning
+      - self-supervised
+      - transfer-learning
+      - training-data
+      - data-augmentation
+      - active-learning
+      - boundary-detection
+      - 3D-convolution
+      - transformer
+      - domain-adaptation
+
+  data-storage:
+    label: "Data Storage & Pipelines"
+    color: "#D35400"
     tags:
       - pipeline
       - alignment
-      - segmentation
-      - agglomeration
       - cloud-computing
       - data-format
       - volume-representation
@@ -73,8 +97,36 @@ dimensions:
       - neuroglancer
       - data-management
       - scalability
-      - reproducibility
       - metadata
+      - annotation-tool
+      - cloud-storage
+      - image-pyramid
+      - chunked-graph
+      - API
+
+  mri-connectomics:
+    label: "MRI Connectomics"
+    color: "#3498DB"
+    tags:
+      - diffusion-MRI
+      - tractography
+      - structural-connectivity
+      - functional-connectivity
+      - resting-state-fMRI
+      - parcellation
+      - atlas
+      - white-matter
+      - fiber-tracking
+      - streamline
+      - connectome-fingerprinting
+      - test-retest-reliability
+      - Human-Connectome-Project
+      - multi-modal
+      - brain-development
+      - aging
+      - clinical
+      - group-comparison
+      - network-based-statistic
 
   proofreading:
     label: "Proofreading & Quality Control"
@@ -116,13 +168,25 @@ dimensions:
       - cell-census
 
   connectomics:
-    label: "Graph Analysis & Network Science"
+    label: "Graph Construction & Representation"
     color: "#F39C12"
     tags:
       - graph-theory
       - adjacency-matrix
       - directed-graph
       - weighted-graph
+      - multigraph
+      - connectome-comparison
+      - graph-construction
+      - edge-weighting
+      - thresholding
+      - parcellation
+      - coarse-graining
+
+  network-analysis:
+    label: "Network Analysis & Statistics"
+    color: "#E8A317"
+    tags:
       - degree-distribution
       - clustering-coefficient
       - path-length
@@ -135,7 +199,14 @@ dimensions:
       - rich-club
       - small-world
       - modularity
-      - connectome-comparison
+      - centrality
+      - network-based-statistic
+      - random-graph-model
+      - stochastic-block-model
+      - exponential-random-graph
+      - network-embedding
+      - graph-matching
+      - statistical-testing
 
   neuroai:
     label: "NeuroAI & Computational Modeling"

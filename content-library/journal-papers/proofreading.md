@@ -165,3 +165,53 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 - How do long-range lifted edges improve segmentation in practice?
 
 **Related content:** [Reconstruction pipeline](/content-library/infrastructure/reconstruction-pipeline/), [Error taxonomy](/content-library/proofreading/error-taxonomy/)
+
+---
+
+## 7. Hider et al. (2022) / Dorkenwald et al. (2022) — FlyWire: Online Community for Whole-Brain Connectomics
+
+**Citation:** Dorkenwald S, McKellar CE, Macrina T, Kemnitz N, Lee K, Lu R, et al. FlyWire: online community for whole-brain connectomics. *Nature Methods*. 2022;19:119-128.
+**DOI:** [10.1038/s41592-021-01330-0](https://doi.org/10.1038/s41592-021-01330-0)
+
+**Tags:** `proofreading:crowd-sourced-proofreading` `proofreading:proofreading-tools` `case-studies:FlyWire` `data-storage:CAVE` `methodology:open-science`
+
+### Summaries
+
+**Beginner:** Building a complete brain wiring diagram requires checking millions of computer-traced neurons by hand — far too much work for any single lab. This paper introduces FlyWire, an online platform where researchers around the world can collaboratively proofread the fruit fly brain, much like Wikipedia lets anyone edit an encyclopedia. The platform provides specialized tools for viewing 3D neurons and fixing errors, and tracks all changes so nothing is lost.
+
+**Intermediate:** Dorkenwald et al. describe the FlyWire platform architecture for collaborative proofreading at scale. Built on the CAVE (Connectome Annotation Versioning Engine) infrastructure, FlyWire enables concurrent editing by hundreds of users with real-time conflict resolution through a chunked graph representation. The platform includes a neuroglancer-based interface for 3D proofreading, automated merge suggestions, and a versioning system that maintains full edit history. The paper reports on early community engagement and proofreading throughput metrics.
+
+**Advanced:** FlyWire's technical contribution is the integration of a chunked graph data structure (enabling sub-second edits on a whole-brain segmentation), a real-time collaborative editing system with conflict resolution, and community management infrastructure. The CAVE backend supports both manual proofreading and programmatic access for automated correction pipelines. Key design decisions include: the choice of a supervoxel graph rather than voxel-level editing (trading spatial precision for speed), the merge-focused workflow (most edits are merges rather than splits), and the open-access model that lowers the barrier to contribution. The platform demonstrated that distributed proofreading can scale to whole-brain datasets while maintaining quality through community oversight.
+
+**Key figures:** Fig. 1 (platform overview and architecture), Fig. 2 (proofreading interface), Fig. 3 (community engagement and throughput)
+
+**Discussion prompts:**
+- What are the advantages and risks of open community proofreading compared to expert-only approaches?
+- How does the CAVE infrastructure handle conflicting edits from simultaneous users?
+
+**Related content:** [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/), [Proofreading strategies](/content-library/proofreading/proofreading-strategies/)
+
+---
+
+## 8. Seung (2009) — Reading the Book of Memory: Sparse Sampling Versus Dense Mapping of Connectomes
+
+**Citation:** Seung HS. Reading the book of memory: sparse sampling versus dense mapping of connectomes. *Neuron*. 2009;62(1):17-29.
+**DOI:** [10.1016/j.neuron.2009.02.021](https://doi.org/10.1016/j.neuron.2009.02.021)
+
+**Tags:** `proofreading:proofreading-strategy` `methodology:experimental-design` `connectomics:graph-theory`
+
+### Summaries
+
+**Beginner:** Before building a complete brain map, scientists need to decide: should we trace every single neuron in a region (dense mapping), or just sample some neurons and connections (sparse sampling)? This influential paper argues that each approach answers different questions. Dense mapping reveals the precise wiring rules of a circuit, while sparse sampling can survey larger brain areas more quickly. The choice depends on what you want to learn.
+
+**Intermediate:** Seung presents a theoretical analysis of two fundamentally different connectomics strategies. Dense reconstruction — tracing all neurons and synapses within a volume — reveals complete circuit motifs and enables graph-theoretic analysis of network structure. Sparse sampling — reconstructing selected neurons across a larger region — provides statistical estimates of connectivity rules and cell type distributions. The paper formalizes the tradeoffs in terms of information gained per unit of reconstruction effort and argues that the scientific question should dictate the strategy.
+
+**Advanced:** This paper laid the theoretical groundwork for the strategic decisions that shaped subsequent connectomics projects. The dense vs. sparse dichotomy maps directly onto proofreading strategy: dense reconstruction demands exhaustive proofreading within a bounded volume, while sparse sampling requires accurate reconstruction of individual neurons but tolerates gaps. Seung's analysis of what can be inferred from each approach — circuit motifs and synaptic weight distributions from dense, projection patterns and cell type statistics from sparse — remains a useful framework for project planning. The paper also anticipates the "n-of-one" problem: a single dense reconstruction cannot distinguish stereotyped wiring from individual variation, motivating the multi-connectome comparison approaches that emerged later.
+
+**Key figures:** Fig. 1 (dense vs. sparse strategies), Fig. 2 (information yield analysis), Fig. 3 (circuit motif detection)
+
+**Discussion prompts:**
+- How has the dense vs. sparse tradeoff shifted as automation has improved since 2009?
+- What scientific questions absolutely require dense reconstruction, and which can be answered with sparse sampling?
+
+**Related content:** [Proofreading strategies](/content-library/proofreading/proofreading-strategies/), [Graph representations](/content-library/connectomics/graph-representations/)

@@ -168,3 +168,55 @@ Curated papers covering neuronal ultrastructure as observed in electron microsco
 - Which of the biological conclusions might be artifacts of the small volume size?
 
 **Related content:** [Synapse classification](/content-library/neuroanatomy/synapse-classification/), [MICrONS visual cortex](/content-library/case-studies/microns-visual-cortex/), [Error taxonomy](/content-library/proofreading/error-taxonomy/)
+
+---
+
+## 7. Helmstaedter et al. (2013) — Connectomic reconstruction of the inner plexiform layer in the mouse retina
+
+**Citation:** Helmstaedter M, Briggman KL, Turaga SC, Jain V, Seung HS, Denk W. Connectomic reconstruction of the inner plexiform layer in the mouse retina. *Nature*. 2013;500(7461):168-174.
+**DOI:** [10.1038/nature12346](https://doi.org/10.1038/nature12346)
+
+**Tags:** `neuroanatomy:synapse` `neuroanatomy:dendrite` `case-studies:retina` `case-studies:mouse` `case-studies:dense-reconstruction`
+
+### Summaries
+
+**Beginner:** This paper mapped the complete wiring between two major classes of neurons in the mouse retina — bipolar cells and ganglion cells — at the level of individual synapses. The retina is a thin sheet of brain tissue in the eye that processes visual information. By reconstructing every connection in a region called the inner plexiform layer, the authors revealed how different types of bipolar cells connect to different types of ganglion cells, giving us a detailed picture of the circuit that processes what we see.
+
+**Intermediate:** Helmstaedter et al. performed a dense connectomic reconstruction of the inner plexiform layer (IPL) of the mouse retina using SBEM imaging and a combination of automated segmentation and crowd-sourced proofreading. They reconstructed 950 neurons including all bipolar cell types and most retinal ganglion cell types, mapping their synaptic connectivity at completeness levels sufficient to identify cell-type-specific wiring rules. The study demonstrated that bipolar cell axon stratification within the IPL predicts connectivity to ganglion cell dendrites, confirming a structure-function relationship long hypothesized from light microscopy.
+
+**Advanced:** This study was a landmark in demonstrating that dense connectomic reconstruction could reveal cell-type-specific wiring rules at scale. Methodologically, the combination of machine learning segmentation (with the KNOSSOS proofreading framework and crowd-sourced annotation) established a scalable human-in-the-loop pipeline. The connectivity matrix between bipolar and ganglion cell types showed that co-stratification is necessary but not sufficient for connectivity — additional specificity mechanisms exist. The retina's laminar organization made it an ideal test case for connectomics, and the quantitative connectivity data enabled computational models of retinal processing with biologically grounded parameters. The dataset remains a benchmark for evaluating synapse detection algorithms.
+
+**Key figures:** Fig. 1 (IPL reconstruction overview), Fig. 3 (bipolar cell type classification), Fig. 5 (connectivity matrix between bipolar and ganglion cell types)
+
+**Discussion prompts:**
+- How does the laminar organization of the retina simplify connectomic reconstruction compared to cortical tissue?
+- What additional specificity mechanisms beyond co-stratification might explain the observed connectivity patterns?
+- How does crowd-sourced proofreading compare with expert proofreading in terms of accuracy and throughput?
+
+**Related content:** [Synapse classification](/content-library/neuroanatomy/synapse-classification/), [Dendrite biology](/content-library/neuroanatomy/dendrite-biology/), [Error taxonomy](/content-library/proofreading/error-taxonomy/)
+
+---
+
+## 8. Motta et al. (2019) — Dense connectomic reconstruction in layer 4 of the somatosensory cortex
+
+**Citation:** Motta A, Berning M, Boergens KM, Staffler B, Beez M, Pirber S, et al. Dense connectomic reconstruction in layer 4 of the somatosensory cortex. *Science*. 2019;366(6469):eaay3134.
+**DOI:** [10.1126/science.aay3134](https://doi.org/10.1126/science.aay3134)
+
+**Tags:** `neuroanatomy:axon` `neuroanatomy:dendrite` `neuroanatomy:synapse` `case-studies:mouse` `case-studies:dense-reconstruction` `methodology:ground-truth`
+
+### Summaries
+
+**Beginner:** This paper reconstructed the dense wiring of a piece of mouse brain in the region that processes touch information from the whiskers. By tracing all the neurons and their connections in layer 4 of the barrel cortex, the authors could see how long-distance axons arriving from the thalamus (a relay station deep in the brain) connect to local neurons, and how those local neurons connect to each other. The result is one of the most complete pictures of cortical circuit wiring to date.
+
+**Intermediate:** Motta et al. performed dense connectomic reconstruction of a volume in layer 4 of mouse barrel cortex using SBEM at ~12x12x28 nm voxel resolution. They reconstructed ~90 neurons with their complete local axonal and dendritic arbors, identified ~3,000 synapses, and classified thalamocortical versus intracortical axons. Key findings include that thalamocortical axons preferentially target spiny stellate cell dendrites, that local inhibitory interneurons receive proportionally more thalamocortical input than excitatory neurons, and that specific connectivity motifs (reciprocal connections, common input) occur at rates above chance.
+
+**Advanced:** This study advanced dense cortical reconstruction by combining automated segmentation (SegEM/SyConn pipelines) with systematic error quantification and ground-truth validation against expert annotations. The analysis of thalamocortical axon targeting revealed laminar and cell-type specificity that could not be resolved with sparse reconstructions. Methodologically, the paper set a standard for reporting reconstruction completeness and error rates, including false merge/split rates for different neurite calibers. The connectivity motif analysis — showing non-random reciprocal and convergent wiring — provides quantitative constraints for cortical circuit models. The dataset serves as a ground-truth benchmark for evaluating automated reconstruction pipelines on cortical neuropil, which is substantially more challenging than retinal tissue.
+
+**Key figures:** Fig. 1 (dense reconstruction overview), Fig. 2 (thalamocortical axon identification and targeting), Fig. 4 (connectivity motif analysis), Fig. 5 (cell-type-specific connectivity matrix)
+
+**Discussion prompts:**
+- How do the connectivity motifs observed here compare with those predicted by random connectivity models?
+- What are the specific challenges of dense reconstruction in cortical neuropil versus retinal tissue?
+- How should thalamocortical versus intracortical axons be distinguished in automated pipelines?
+
+**Related content:** [Axon biology](/content-library/neuroanatomy/axon-biology/), [Synapse classification](/content-library/neuroanatomy/synapse-classification/), [Error taxonomy](/content-library/proofreading/error-taxonomy/)

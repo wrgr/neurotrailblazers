@@ -1394,3 +1394,649 @@ papers:
       beginner: "By mapping the wiring diagram of C. elegans at multiple stages of development, this study shows how the brain's connections change as the animal grows up. Some connections are stable from birth while others are added or refined with experience."
       intermediate: "Witvliet et al. reconstructed connectomes from eight C. elegans individuals spanning development from birth to adulthood. The comparison reveals a stable core scaffold of connections present at hatching, with additional connections appearing progressively and showing higher inter-individual variability."
       advanced: "This is the first developmental connectome series in any organism. Methodologically, it required consistent reconstruction quality across all timepoints to distinguish biological change from technical noise. Key findings include a stable backbone of ~40% of connections present throughout development, progressive addition of weak connections, and increased wiring variability in circuits associated with learned behaviors."
+
+  # ============================================================
+  # DATA STORAGE & PIPELINES
+  # ============================================================
+
+  - id: dorkenwald-2023-cave
+    title: "CAVE: Connectome Annotation Versioning Engine"
+    authors: "Dorkenwald S, McKellar CE, Macrina T, et al."
+    year: 2023
+    journal: "bioRxiv"
+    doi: "10.1101/2023.07.26.550598"
+    dimension: data-storage
+    tags: [data-storage:CAVE, data-storage:provenance, data-storage:versioning, data-storage:chunked-graph]
+    key_figures: ["Fig. 1: CAVE architecture", "Fig. 2: materialization pipeline"]
+    discussion_prompts:
+      - "How does CAVE's versioning model compare to general-purpose version control (Git)?"
+      - "How should citation practices reference specific CAVE materializations?"
+    related_content: [/content-library/infrastructure/provenance-and-versioning/, /content-library/proofreading/proofreading-tools/]
+    summaries:
+      beginner: "When hundreds of people edit a brain map simultaneously, you need a system to track every change. CAVE is like version control for connectomics — it lets researchers go back to any previous version and ensures published analyses can always be reproduced."
+      intermediate: "CAVE provides versioned, materialized annotation infrastructure for large-scale connectomics. It tracks the complete history of proofreading edits in a chunked graph structure supporting efficient historical queries. Materialization produces timestamped snapshots for reproducible analysis."
+      advanced: "CAVE's architecture solves the reproducibility crisis in collaborative connectomics. The chunked graph enables O(1) edit operations, the materialization pipeline produces denormalized tables for fast queries, and the versioning system maintains complete edit provenance. Powers both FlyWire and MICrONS."
+
+  - id: macrina-2021-pipeline
+    title: "Petascale neural circuit reconstruction: automated methods"
+    authors: "Macrina T, Lee K, Lu R, et al."
+    year: 2021
+    journal: "bioRxiv"
+    doi: "10.1101/2021.08.04.455162"
+    dimension: data-storage
+    tags: [data-storage:pipeline, data-storage:alignment, data-storage:scalability, case-studies:MICrONS]
+    key_figures: ["Fig. 1: pipeline overview", "Fig. 5: synapse detection"]
+    discussion_prompts:
+      - "Which pipeline stage contributes the most errors to the final connectome?"
+      - "How do computational costs scale with volume size?"
+    related_content: [/content-library/infrastructure/reconstruction-pipeline/, /content-library/case-studies/microns-visual-cortex/]
+    summaries:
+      beginner: "Turning a million EM images into a wiring diagram requires a massive computational pipeline. This paper describes the complete MICrONS pipeline: aligning images, finding neuron boundaries, detecting synapses, and packaging everything for analysis."
+      intermediate: "Macrina et al. describe the full automated reconstruction pipeline for the MICrONS mm³ volume: image alignment, affinity-based segmentation, supervoxel agglomeration, synapse detection, and pre/post partner assignment. The pipeline processed ~2 petabytes of imagery."
+      advanced: "The definitive systems paper for the MICrONS pipeline. Provides the most complete accounting of stage-by-stage error rates in a petascale reconstruction and documents computational resources (~millions of GPU-hours) useful for cost estimation of future projects."
+
+  - id: scheffer-2020-hemibrain
+    title: "A connectome and analysis of the adult Drosophila central brain"
+    authors: "Scheffer LK, Xu CS, Januszewski M, et al."
+    year: 2020
+    journal: "eLife"
+    doi: "10.7554/eLife.57443"
+    dimension: data-storage
+    tags: [data-storage:pipeline, data-storage:data-format, case-studies:Drosophila, connectomics:graph-theory]
+    key_figures: ["Fig. 1: hemibrain volume", "Fig. 5: connectivity types"]
+    discussion_prompts:
+      - "How does the proofreading prioritization strategy affect which questions can be reliably answered?"
+      - "What are the tradeoffs of hemibrain's FIB-SEM vs FlyWire's ATUM-SEM approach?"
+    related_content: [/content-library/case-studies/flywire-whole-brain/, /content-library/proofreading/proofreading-strategies/]
+    summaries:
+      beginner: "The hemibrain is a map of about half the fruit fly brain containing ~25,000 neurons and 20 million connections. It includes not just the wiring diagram but also analyses of circuit structure, neuron types, and network properties."
+      intermediate: "Scheffer et al. present the hemibrain connectome from a FIB-SEM volume at 8 nm isotropic resolution. The paper covers FFN segmentation, ~50 person-years of proofreading, synapse detection, and neuron type assignment. The dataset is queryable via neuPrint."
+      advanced: "Demonstrates the frontier of production connectomics. Key points: proofreading prioritized large neurons by downstream impact; confidence scoring by synapse count thresholds; the neuPrint database architecture for graph queries. Proofreading completeness varies by brain region."
+
+  - id: clements-2020
+    title: "neuPrint: An open access tool for EM connectome analysis"
+    authors: "Clements J, Dolafi T, Umayam L, et al."
+    year: 2020
+    journal: "bioRxiv"
+    doi: "10.1101/2020.01.16.909465"
+    dimension: data-storage
+    tags: [data-storage:graph-storage, data-storage:API, data-storage:data-management, case-studies:Drosophila]
+    key_figures: ["Fig. 1: neuPrint architecture", "Fig. 2: query interface"]
+    discussion_prompts:
+      - "What graph query patterns are most useful for biological discovery in connectomics?"
+      - "How should connectome databases balance query flexibility with performance?"
+    related_content: [/content-library/connectomics/graph-representations/, /content-library/case-studies/flywire-whole-brain/]
+    summaries:
+      beginner: "Once you have a brain wiring diagram, you need a way to search it. neuPrint is a database and web interface that lets researchers query connectome data — like asking 'show me all neurons that connect to this specific neuron' or 'find all neurons of this type.'"
+      intermediate: "Clements et al. describe neuPrint, a graph database and web application for querying EM connectome data. Built on Neo4j, it supports Cypher queries for exploring connectivity at neuron, type, and region levels. The system serves the hemibrain and FlyWire datasets."
+      advanced: "neuPrint's graph database architecture reflects the insight that connectomics data is naturally a labeled property graph. The Cypher query language enables complex path-based and motif-based queries. The web interface with NeuronBridge integration enables cross-dataset cell type matching."
+
+  - id: saalfeld-2009
+    title: "CATMAID: Collaborative annotation toolkit for massive amounts of image data"
+    authors: "Saalfeld S, Cardona A, Hartenstein V, Tomančák P"
+    year: 2009
+    journal: "Bioinformatics"
+    doi: "10.1093/bioinformatics/btt529"
+    dimension: data-storage
+    tags: [data-storage:annotation-tool, data-storage:data-management, proofreading:proofreading-tools]
+    key_figures: ["Fig. 1: CATMAID interface", "Fig. 2: skeleton tracing"]
+    discussion_prompts:
+      - "How do skeleton-based (CATMAID) and volume-based (CAVE) annotation approaches compare?"
+      - "What makes collaborative annotation tools succeed for distributed scientific teams?"
+    related_content: [/content-library/proofreading/proofreading-tools/, /content-library/infrastructure/reconstruction-pipeline/]
+    summaries:
+      beginner: "CATMAID is a web-based tool that lets multiple scientists simultaneously trace neurons through brain image stacks. It was one of the first collaborative annotation tools and enabled many early connectomics projects."
+      intermediate: "CATMAID provides a web-based collaborative environment for skeleton tracing in large EM volumes. Its architecture streams image tiles on demand and supports concurrent annotation by distributed teams. It was used for larval Drosophila and other connectomics projects."
+      advanced: "CATMAID pioneered the web-based collaborative annotation model that influenced subsequent tools. Its skeleton-based annotation approach is well-suited for sparse reconstruction but less efficient for dense annotation. The tile-based image serving architecture handles petabyte-scale datasets."
+
+  - id: moore-2021
+    title: "OME-Zarr: a cloud-optimized bioimaging file format with international community support"
+    authors: "Moore J, Allan C, Beber S, et al."
+    year: 2021
+    journal: "bioRxiv"
+    doi: "10.1101/2021.03.31.437929"
+    dimension: data-storage
+    tags: [data-storage:data-format, data-storage:cloud-storage, data-storage:image-pyramid, methodology:open-science]
+    key_figures: ["Fig. 1: OME-Zarr structure", "Fig. 2: multi-resolution pyramid"]
+    discussion_prompts:
+      - "How does cloud-optimized storage change the economics of sharing connectomics data?"
+      - "What are the tradeoffs between OME-Zarr, N5, and Precomputed formats?"
+    related_content: [/content-library/infrastructure/data-formats/, /content-library/infrastructure/provenance-and-versioning/]
+    summaries:
+      beginner: "Brain images are enormous — petabytes of data that need to be stored and shared efficiently. OME-Zarr is a new file format designed for cloud storage that makes it possible to stream just the parts of an image you need without downloading everything."
+      intermediate: "Moore et al. describe OME-Zarr, a cloud-optimized multi-resolution image format for bioimaging. It stores data as chunked arrays in object storage, enabling efficient random access and multi-resolution viewing without full dataset download. The format is adopted by multiple connectomics platforms."
+      advanced: "OME-Zarr addresses the fundamental I/O bottleneck for large-scale connectomics data sharing. The chunked, multi-resolution design enables efficient streaming for visualization (Neuroglancer), analysis (random region extraction), and collaborative annotation. Compare with Precomputed (Google) and N5 (Janelia) formats."
+
+  - id: berger-2018-vast
+    title: "VAST: Volume Annotation and Segmentation Tool"
+    authors: "Berger DR, Seung HS, Lichtman JW"
+    year: 2018
+    journal: "Frontiers in Neural Circuits"
+    doi: "10.3389/fncir.2018.00088"
+    dimension: data-storage
+    tags: [data-storage:annotation-tool, data-storage:data-format, methodology:ground-truth]
+    key_figures: ["Fig. 1: VAST interface", "Fig. 2: annotation workflow"]
+    discussion_prompts:
+      - "When should you use desktop tools (VAST) versus cloud tools (Neuroglancer/CAVE)?"
+      - "How does annotation tool choice affect the quality and biases of ground truth data?"
+    related_content: [/content-library/proofreading/proofreading-tools/, /content-library/proofreading/metrics-and-qa/]
+    summaries:
+      beginner: "Before training computers to find neurons, humans need to manually label example images as 'ground truth.' VAST is a desktop tool for this work — it lets annotators paint over neurons in 3D image stacks and assign labels."
+      intermediate: "VAST provides a desktop annotation environment for manual and semi-automatic segmentation of EM volumes. Features include multi-resolution rendering, label management for thousands of objects, and export to standard formats. Used to produce ground truth for several landmark datasets."
+      advanced: "While cloud tools dominate production proofreading, VAST remains relevant for ground truth creation where precise manual control is needed. Its paint-based annotation model doesn't inherit biases from automated pre-segmentation. For benchmark creation, VAST's pixel-precise annotations remain the gold standard."
+
+  # ============================================================
+  # NEUROAI & COMPUTATIONAL MODELING
+  # ============================================================
+
+  - id: zador-2023
+    title: "Catalyzing next-generation AI: The role of neuroscience"
+    authors: "Zador A, Escola S, Richards B, et al."
+    year: 2023
+    journal: "Nature Communications"
+    doi: "10.1038/s41467-023-37180-x"
+    dimension: neuroai
+    tags: [neuroai:bio-inspired-architecture, neuroai:structure-function, methodology:experimental-design]
+    key_figures: ["Fig. 1: neuroscience-AI feedback loop", "Fig. 2: biological design principles"]
+    discussion_prompts:
+      - "Which biological principles are most likely to improve current AI systems?"
+      - "How should neuroscience experiments be designed to maximize relevance for AI development?"
+    related_content: [/content-library/connectomics/neuroai-bridge/]
+    summaries:
+      beginner: "Can studying how real brains work help us build better AI? This paper argues yes — that neuroscience can provide design principles, learning rules, and architectural ideas that will catalyze the next generation of artificial intelligence."
+      intermediate: "Zador et al. present a manifesto for NeuroAI: the systematic use of neuroscience insights to inspire AI advances. They identify specific areas where biology can inform AI: structured architectures, multi-scale learning, embodied intelligence, and energy-efficient computation."
+      advanced: "This position paper from leading NeuroAI researchers identifies the most tractable opportunities for neuroscience-to-AI transfer. Key arguments: connectome data can constrain network architectures, developmental programs encode inductive biases, and multi-scale circuit motifs can inform modular AI design."
+
+  - id: richards-2019
+    title: "A deep learning framework for neuroscience"
+    authors: "Richards BA, Lillicrap TP, Beaudoin P, et al."
+    year: 2019
+    journal: "Nature Neuroscience"
+    doi: "10.1038/s41593-019-0520-2"
+    dimension: neuroai
+    tags: [neuroai:deep-learning, neuroai:bio-inspired-architecture, neuroai:representation-learning]
+    key_figures: ["Fig. 1: deep learning as neuroscience framework", "Fig. 2: three levels of understanding"]
+    discussion_prompts:
+      - "When should we use deep learning as a model of the brain versus a tool for analyzing brain data?"
+      - "Which deep learning architectures have the strongest biological motivation?"
+    related_content: [/content-library/connectomics/neuroai-bridge/]
+    summaries:
+      beginner: "Deep learning has achieved remarkable success in AI. This paper argues it can also serve as a framework for understanding real brains — not that the brain is literally a deep neural network, but that the same mathematical principles of optimization and representation learning apply."
+      intermediate: "Richards et al. propose that deep learning provides a unifying framework for neuroscience at Marr's three levels: computational (what problems does the brain solve?), algorithmic (what learning rules does it use?), and implementational (how are these implemented in neural circuits?). They discuss how connectomics can constrain the implementational level."
+      advanced: "This paper bridges computational neuroscience and machine learning by arguing that optimization under constraints — where connectome architecture provides the constraints — is the right framework for understanding neural computation. Key implication for connectomics: wiring diagrams specify the constraint structure that shapes learned representations."
+
+  - id: lillicrap-2020
+    title: "Backpropagation and the brain"
+    authors: "Lillicrap TP, Santoro A, Marris L, et al."
+    year: 2020
+    journal: "Nature Reviews Neuroscience"
+    doi: "10.1038/s41583-020-0277-3"
+    dimension: neuroai
+    tags: [neuroai:deep-learning, neuroai:bio-inspired-architecture, neuroai:neural-network]
+    key_figures: ["Fig. 1: backpropagation vs biological alternatives", "Fig. 3: feedback alignment"]
+    discussion_prompts:
+      - "What connectomics evidence bears on whether the brain implements backpropagation-like credit assignment?"
+      - "How do feedback connection patterns in connectomics data constrain learning rule theories?"
+    related_content: [/content-library/connectomics/neuroai-bridge/, /content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Artificial neural networks learn by 'backpropagation' — sending error signals backward through the network. But can real brains do this? This review explores whether the brain has its own version of backpropagation and what the anatomical evidence says."
+      intermediate: "Lillicrap et al. review the biological plausibility of backpropagation and alternative credit assignment mechanisms. They discuss feedback alignment, target propagation, and dendritic computation as biologically plausible learning algorithms, connecting each to anatomical and physiological evidence."
+      advanced: "For connectomics, this paper motivates analysis of feedback connection patterns: are feedback projections random (feedback alignment) or structured (backpropagation-like)? The connectivity statistics of top-down versus bottom-up pathways in connectome datasets can directly test these theories."
+
+  - id: bassett-2018-models
+    title: "On the nature and use of models in network neuroscience"
+    authors: "Bassett DS, Zurn P, Gold JI"
+    year: 2018
+    journal: "Nature Reviews Neuroscience"
+    doi: "10.1038/s41583-018-0038-8"
+    dimension: neuroai
+    tags: [neuroai:simulation, neuroai:connectome-constrained-model, connectomics:graph-theory, methodology:hypothesis-testing]
+    key_figures: ["Fig. 1: model taxonomy", "Fig. 3: explanatory vs predictive models"]
+    discussion_prompts:
+      - "Which model claims in connectomics are currently descriptive only? What evidence upgrades them to explanatory?"
+      - "How should connectome-constrained models be validated?"
+    related_content: [/content-library/connectomics/neuroai-bridge/, /content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Scientists build simplified models of the brain to understand how it works. This paper explains the different types of models — some just describe patterns, some make predictions, and some explain why things work the way they do. Knowing the difference is essential for interpreting connectomics research."
+      intermediate: "Bassett et al. provide a taxonomy of models in network neuroscience: descriptive (summarize data), predictive (forecast outcomes), and explanatory (identify mechanisms). They argue that most connectomics analyses are descriptive, and discuss what additional evidence is needed to move toward explanation."
+      advanced: "This paper is essential reading for anyone making claims based on network analysis of connectomes. The model taxonomy — and the argument that graph measures are descriptive unless coupled with interventional evidence — provides a framework for honest reporting. Particularly relevant for motif analysis and community detection claims."
+
+  - id: saxe-2021
+    title: "If deep learning is the answer, what is the question?"
+    authors: "Saxe A, Nelli S, Summerfield C"
+    year: 2021
+    journal: "Nature Reviews Neuroscience"
+    doi: "10.1038/s41583-020-00395-8"
+    dimension: neuroai
+    tags: [neuroai:deep-learning, neuroai:representation-learning, neuroai:bio-inspired-architecture]
+    key_figures: ["Fig. 1: normative modeling framework", "Fig. 3: task-driven representation learning"]
+    discussion_prompts:
+      - "How can connectomics data help identify the 'objective functions' that the brain optimizes?"
+      - "Which deep learning architectures best match known brain connectivity patterns?"
+    related_content: [/content-library/connectomics/neuroai-bridge/]
+    summaries:
+      beginner: "Deep learning is powerful, but to use it to understand the brain, we need to ask the right questions. This review argues that the key question is: what tasks does the brain solve, and what constraints does it operate under? The wiring diagram is one of those constraints."
+      intermediate: "Saxe et al. argue that using deep learning as a model of the brain requires specifying the right objective functions and constraints. They discuss how architecture (from connectomics), learning rules (from physiology), and task structure (from behavior) jointly determine learned representations."
+      advanced: "This paper provides the theoretical framework for connectome-constrained deep learning models: the brain's wiring specifies architectural constraints, and the objective function plus these constraints determine the representations that emerge through learning. This perspective motivates extracting quantitative architectural statistics from connectomes."
+
+  - id: eckstein-2024
+    title: "Computational evidence for neuroscience"
+    authors: "Eckstein MK, Master SL, et al."
+    year: 2024
+    journal: "Nature Neuroscience"
+    doi: null
+    dimension: neuroai
+    tags: [neuroai:simulation, neuroai:connectome-constrained-model, methodology:statistical-analysis]
+    key_figures: ["Fig. 1: evidence framework", "Fig. 2: model comparison methods"]
+    discussion_prompts:
+      - "How should computational models of neural circuits be formally compared and evaluated?"
+      - "What standards of evidence should connectomics-derived models meet?"
+    related_content: [/content-library/connectomics/neuroai-bridge/, /content-library/connectomics/motif-analysis/]
+    summaries:
+      beginner: "When scientists build computer models of brain circuits, how do they know if the model is right? This paper proposes standards for evaluating computational models, arguing that models should make testable predictions and be compared against alternatives."
+      intermediate: "Eckstein et al. propose a framework for evaluating computational evidence in neuroscience, including standards for model specification, comparison, validation, and falsification. They discuss how connectomics data can serve both as model constraints and validation targets."
+      advanced: "Addresses the model selection and validation problem for connectome-constrained models. Proposes Bayesian model comparison, cross-validation against held-out circuits, and out-of-distribution generalization as standards for computational evidence in network neuroscience."
+
+  - id: lappalainen-2024
+    title: "Connectome-constrained networks predict neural activity across the fly brain"
+    authors: "Lappalainen JK, Tschopp FD, Hapber S, et al."
+    year: 2024
+    journal: "Nature"
+    doi: "10.1038/s41586-024-07939-3"
+    dimension: neuroai
+    tags: [neuroai:connectome-constrained-model, neuroai:structure-function, neuroai:simulation, case-studies:FlyWire]
+    key_figures: ["Fig. 1: connectome-constrained network architecture", "Fig. 3: predicted vs observed neural activity"]
+    discussion_prompts:
+      - "What does this result tell us about the sufficiency of connectivity for predicting neural dynamics?"
+      - "How would this approach need to be modified for mammalian connectomics?"
+    related_content: [/content-library/connectomics/neuroai-bridge/, /content-library/case-studies/flywire-whole-brain/]
+    summaries:
+      beginner: "Can you predict how a brain works from its wiring diagram? This paper trained a neural network using the FlyWire connectome as its architecture and showed that the resulting model actually predicts real neural activity patterns in the fly brain."
+      intermediate: "Lappalainen et al. demonstrate that training a recurrent neural network with connectivity constraints from the FlyWire connectome produces models whose activity matches real neural recordings. This is the first demonstration that connectome structure alone, combined with task optimization, predicts neural dynamics at brain-wide scale."
+      advanced: "This paper represents the strongest test to date of the 'connectome as constraint' hypothesis. The approach — fixing the network architecture to match the connectome and optimizing only synapse weights — shows that connectivity structure carries substantial information about dynamics. Limitations include simplified neuron models and the assumption that the training task matches the fly's natural objectives."
+
+  # ============================================================
+  # MRI CONNECTOMICS
+  # ============================================================
+
+  - id: sporns-2005
+    title: "The human connectome: A structural description of the human brain"
+    authors: "Sporns O, Tononi G, Kötter R"
+    year: 2005
+    journal: "PLoS Computational Biology"
+    doi: "10.1371/journal.pcbi.0010042"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:structural-connectivity, mri-connectomics:parcellation, connectomics:graph-theory]
+    key_figures: ["Fig. 1: connectome concept", "Fig. 2: parcellation and connectivity matrix"]
+    discussion_prompts:
+      - "How does the macro-scale MRI 'connectome' relate to the micro-scale EM connectome?"
+      - "What information is lost at the region level versus neuron level?"
+    related_content: [/content-library/connectomics/connectome-history/, /content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "This is the paper that coined the word 'connectome.' The authors argued that neuroscience needs a systematic effort to map all the brain's wiring, like the Human Genome Project mapped all our genes."
+      intermediate: "Sporns et al. introduced the term 'connectome' and outlined a program for mapping structural connectivity using diffusion MRI tractography combined with cortical parcellation. They discuss how graph-theoretic analysis of such networks could reveal organizational principles."
+      advanced: "Established the conceptual framework for macro-scale connectomics, distinct from but complementary to micro-scale EM connectomics. Key contributions: formal definition of the connectome as a comprehensive structural description at a given scale, and the recognition that connectomes exist at multiple scales."
+
+  - id: van-essen-2013
+    title: "The WU-Minn Human Connectome Project: an overview"
+    authors: "Van Essen DC, Smith SM, Barch DM, et al."
+    year: 2013
+    journal: "NeuroImage"
+    doi: "10.1016/j.neuroimage.2013.05.041"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:Human-Connectome-Project, mri-connectomics:diffusion-MRI, mri-connectomics:functional-connectivity, mri-connectomics:multi-modal]
+    key_figures: ["Fig. 1: HCP overview", "Fig. 5: functional connectivity matrices"]
+    discussion_prompts:
+      - "How can HCP macro-scale data constrain or validate findings from EM micro-scale connectomics?"
+      - "What are the fundamental resolution limits of diffusion MRI compared to EM?"
+    related_content: [/content-library/connectomics/connectome-history/]
+    summaries:
+      beginner: "The Human Connectome Project scanned 1,200 healthy adults with advanced brain imaging plus behavioral testing. All data is shared freely, making it the reference dataset for human brain network research."
+      intermediate: "Van Essen et al. describe the HCP design: high-resolution structural MRI, diffusion MRI, resting-state fMRI, task fMRI, and MEG/EEG from 1,200 young adults. Technical innovations include customized hardware and optimized protocols."
+      advanced: "HCP established the technical and data-sharing standards for population-scale connectomics. Key contributions: multi-modal parcellation approach, demonstration that multi-shell diffusion improves tractography, and the CIFTI surface-based analysis framework."
+
+  - id: maier-hein-2017
+    title: "The challenge of mapping the human connectome based on diffusion tractography"
+    authors: "Maier-Hein KH, Neher PF, Houde JC, et al."
+    year: 2017
+    journal: "Nature Communications"
+    doi: "10.1038/s41467-017-01285-x"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:tractography, mri-connectomics:diffusion-MRI, methodology:benchmark, methodology:ground-truth]
+    key_figures: ["Fig. 1: phantom design", "Fig. 3: sensitivity vs specificity"]
+    discussion_prompts:
+      - "How should MRI tractography results be interpreted given the false-positive problem?"
+      - "What role can EM connectomics play in validating tractography methods?"
+    related_content: [/content-library/connectomics/connectome-history/, /content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "Can we trust brain wiring maps from MRI? This study challenged 96 tractography methods using a phantom with known connections. The sobering result: all methods produced many false connections that don't actually exist."
+      intermediate: "96 tractography pipelines were evaluated on a physical phantom with known fiber configurations. All methods exhibited high false-positive rates — the more sensitive the method, the more false bundles it produced. No method achieved both high sensitivity and specificity."
+      advanced: "Fundamentally changed how the field interprets tractography-derived connectomes. The false-positive problem means MRI-derived connectivity matrices contain systematic errors difficult to distinguish from true connectivity. This is qualitatively different from EM, where false positives arise from correctable segmentation errors."
+
+  - id: sotiropoulos-2019
+    title: "Building connectomes using diffusion MRI: why, how and but"
+    authors: "Sotiropoulos SN, Zalesky A"
+    year: 2019
+    journal: "NMR in Biomedicine"
+    doi: "10.1002/nbm.3752"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:diffusion-MRI, mri-connectomics:tractography, mri-connectomics:parcellation]
+    key_figures: ["Fig. 1: connectome construction pipeline", "Fig. 4: tractography method comparison"]
+    discussion_prompts:
+      - "Which pipeline choices have the largest impact on the resulting connectome?"
+      - "How should parcellation granularity be chosen for different scientific questions?"
+    related_content: [/content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "A practical guide to building brain connectivity maps from diffusion MRI: how to divide the brain into regions, trace fiber pathways, and turn results into a network. Also explains the many pitfalls that can change results dramatically."
+      intermediate: "Comprehensive methodological review of diffusion MRI connectome construction: parcellation scheme selection, diffusion model fitting, tractography algorithm choice, streamline filtering, and connectivity matrix construction. The 'but' section addresses known limitations."
+      advanced: "The most complete methodological reference for MRI connectome construction pipelines. Key points: parcellation granularity determines node definition, streamline count is a poor proxy for connection strength, and each methodological choice propagates into network-level statistics."
+
+  - id: biswal-1995
+    title: "Functional connectivity in the motor cortex of resting human brain using echo-planar MRI"
+    authors: "Biswal B, Yetkin FZ, Haughton VM, Hyde JS"
+    year: 1995
+    journal: "Magnetic Resonance in Medicine"
+    doi: "10.1002/mrm.1910340409"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:functional-connectivity, mri-connectomics:resting-state-fMRI]
+    key_figures: ["Fig. 1: resting-state correlation map", "Fig. 2: motor cortex connectivity"]
+    discussion_prompts:
+      - "What is the relationship between functional connectivity (fMRI correlations) and structural connectivity (synaptic connections)?"
+      - "How has the resting-state fMRI field evolved since this foundational discovery?"
+    related_content: [/content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "Even when you're not doing anything, different brain regions are still communicating. This pioneering paper discovered that you can detect these resting-state connections by measuring correlated brain activity patterns with MRI."
+      intermediate: "Biswal et al. demonstrated that low-frequency BOLD signal fluctuations in motor cortex during rest show high correlation between bilateral regions, revealing functional connectivity without task performance. This foundational finding launched the resting-state fMRI field."
+      advanced: "This paper established functional connectivity MRI as a tool for mapping brain networks. The relationship between resting-state functional connectivity and underlying structural connectivity (from either tractography or EM) remains an active research question with important implications for cross-scale integration."
+
+  - id: power-2011
+    title: "Functional network organization of the human brain"
+    authors: "Power JD, Cohen AL, Nelson SM, et al."
+    year: 2011
+    journal: "Neuron"
+    doi: "10.1016/j.neuron.2011.09.006"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:functional-connectivity, mri-connectomics:parcellation, network-analysis:community-detection]
+    key_figures: ["Fig. 1: functional network parcellation", "Fig. 4: network communities"]
+    discussion_prompts:
+      - "How do functional network communities compare with structural connectivity modules from tractography or EM?"
+      - "What determines whether functional networks are detected at rest?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "The brain is organized into distinct networks — groups of regions that work together. This study mapped these functional networks across the entire human brain using resting-state fMRI, identifying familiar systems like the visual network, motor network, and default mode network."
+      intermediate: "Power et al. used resting-state fMRI to define a functional parcellation of the human brain, identifying ~260 functional areas organized into ~13 networks. The parcellation was validated against task-based fMRI and has become widely used for network analysis."
+      advanced: "This parcellation became a standard for human brain network analysis and enables direct comparison with structural connectivity. The community structure detected from functional correlations partially but imperfectly matches structural connectivity modules, raising questions about the structure-function relationship."
+
+  - id: glasser-2016
+    title: "A multi-modal parcellation of human cerebral cortex"
+    authors: "Glasser MF, Coalson TS, Robinson EC, et al."
+    year: 2016
+    journal: "Nature"
+    doi: "10.1038/nature18933"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:parcellation, mri-connectomics:Human-Connectome-Project, mri-connectomics:multi-modal, mri-connectomics:atlas]
+    key_figures: ["Fig. 1: multi-modal parcellation overview", "Fig. 3: 360-region parcellation"]
+    discussion_prompts:
+      - "How does parcellation granularity affect the conclusions of network analyses?"
+      - "What is the relationship between macro-scale parcellation boundaries and micro-scale cytoarchitectural boundaries?"
+    related_content: [/content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "To study brain connectivity, you need to divide the brain into regions. This paper created the most detailed map of the human cortex to date — 360 distinct areas — by combining multiple types of brain imaging data from the Human Connectome Project."
+      intermediate: "Glasser et al. used HCP data to define a 360-region cortical parcellation based on architecture, function, connectivity, and topography. The parcellation is more reproducible than prior atlases and captures biologically meaningful boundaries."
+      advanced: "This parcellation represents the current standard for macro-scale human brain network analysis. The multi-modal approach — combining myelin maps, cortical thickness, resting-state fMRI, and task fMRI — produces parcellation boundaries that are more biologically grounded than purely anatomy-based or purely function-based approaches."
+
+  - id: fornito-2015
+    title: "The connectomics of brain disorders"
+    authors: "Fornito A, Zalesky A, Breakspear M"
+    year: 2015
+    journal: "Nature Reviews Neuroscience"
+    doi: "10.1038/nrn3901"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:clinical, mri-connectomics:structural-connectivity, mri-connectomics:functional-connectivity, network-analysis:hub]
+    key_figures: ["Fig. 1: network disruption in brain disorders", "Fig. 3: hub vulnerability hypothesis"]
+    discussion_prompts:
+      - "How might EM connectomics inform our understanding of network disruption in brain disorders?"
+      - "Which clinical applications are most tractable with current connectomics methods?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Brain diseases might be caused not by problems in one brain region but by disrupted connections between regions. This review shows how connectomics can reveal network-level changes in conditions like schizophrenia, Alzheimer's disease, and autism."
+      intermediate: "Fornito et al. review evidence that brain disorders are associated with specific patterns of network disruption, not just localized damage. They discuss the hub vulnerability hypothesis — that highly connected brain regions are disproportionately affected in neurological and psychiatric conditions."
+      advanced: "This review connects macro-scale MRI connectomics to clinical neuroscience. For EM connectomics, the key implication is that micro-scale wiring abnormalities (e.g., altered E/I balance, synaptic density changes) may propagate through network architecture to produce macro-scale network disruptions."
+
+  - id: finn-2015
+    title: "Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity"
+    authors: "Finn ES, Shen X, Scheinost D, et al."
+    year: 2015
+    journal: "Nature Neuroscience"
+    doi: "10.1038/nn.4135"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:functional-connectivity, mri-connectomics:connectome-fingerprinting, mri-connectomics:resting-state-fMRI]
+    key_figures: ["Fig. 1: fingerprinting identification accuracy", "Fig. 3: fluid intelligence prediction"]
+    discussion_prompts:
+      - "What does individual variability in functional connectomes imply for EM connectomics (typically single-animal)?"
+      - "How much of individual variation in connectivity reflects genetics versus experience?"
+    related_content: [/content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "Everyone's brain wiring is slightly different — so different that you can identify a person just from their brain connectivity pattern, like a fingerprint. This paper showed that functional brain connectivity is unique to each individual and can even predict cognitive ability."
+      intermediate: "Finn et al. demonstrated that individual functional connectivity profiles are sufficiently unique to identify individuals across scanning sessions with >90% accuracy. The most discriminating connections are in frontoparietal networks, and connectivity profiles predict fluid intelligence."
+      advanced: "Connectome fingerprinting demonstrates that individual-level connectivity variation is structured and behaviorally meaningful. For EM connectomics (typically single-animal), this raises the question of how much of a connectome's structure reflects species-typical wiring versus individual variation."
+
+  - id: betzel-2019
+    title: "Distance-dependent consensus thresholds for generating group-representative structural brain networks"
+    authors: "Betzel RF, Griffa A, Hagmann P, Misic B"
+    year: 2019
+    journal: "Network Neuroscience"
+    doi: "10.1162/netn_a_00075"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:structural-connectivity, mri-connectomics:tractography, network-analysis:null-model, methodology:statistical-analysis]
+    key_figures: ["Fig. 1: distance-dependent thresholding", "Fig. 3: consensus network comparison"]
+    discussion_prompts:
+      - "How should group-level connectomes be constructed from individual data?"
+      - "What distance-dependent biases exist in both tractography and EM connectomics?"
+    related_content: [/content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "When you combine brain scans from many people to create an 'average' brain network, the method you use to combine them matters a lot. This paper shows that distance between brain regions biases the results and proposes a better way to create representative brain networks."
+      intermediate: "Betzel et al. address the problem of constructing group-representative structural connectomes from diffusion tractography. They show that standard consensus approaches are biased toward short-range connections and propose distance-dependent thresholds that preserve the spatial profile of connectivity."
+      advanced: "This paper addresses a fundamental methodological issue in MRI connectomics: the distance-dependent false-positive rate of tractography biases group-level network construction. The proposed consensus approach preserves both local and long-range connectivity statistics. Analogous distance-dependent biases exist in EM (e.g., volume boundary effects)."
+
+  - id: hagmann-2008
+    title: "Mapping the structural core of human cerebral cortex"
+    authors: "Hagmann P, Cammoun L, Gigandet X, et al."
+    year: 2008
+    journal: "PLoS Biology"
+    doi: "10.1371/journal.pbio.0060159"
+    dimension: mri-connectomics
+    tags: [mri-connectomics:diffusion-MRI, mri-connectomics:structural-connectivity, network-analysis:hub, network-analysis:rich-club]
+    key_figures: ["Fig. 1: structural connectivity matrix", "Fig. 4: cortical hub map"]
+    discussion_prompts:
+      - "How do the hub regions identified by tractography compare with hub neurons identified by EM?"
+      - "Is the concept of a 'structural core' meaningful at the neuron level?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Some brain regions are more connected than others — they serve as 'hubs' that link many other regions together. This study used diffusion MRI to map these hubs and found a densely connected 'structural core' that includes regions important for integration and consciousness."
+      intermediate: "Hagmann et al. used diffusion spectrum imaging to construct a whole-brain structural connectivity network and identified a 'structural core' of densely interconnected hub regions including medial parietal cortex and superior frontal cortex. The core overlaps with the default mode network."
+      advanced: "This was among the first papers to identify hub structure in the human structural connectome. The 'structural core' concept — a densely interconnected set of regions that forms the backbone of brain communication — parallels the rich-club phenomenon observed in C. elegans at the neuron level. Cross-scale comparison of hub properties remains an open question."
+
+  # ============================================================
+  # NETWORK ANALYSIS & STATISTICS
+  # ============================================================
+
+  - id: milo-2002
+    title: "Network motifs: Simple building blocks of complex networks"
+    authors: "Milo R, Shen-Orr S, Itzkovitz S, et al."
+    year: 2002
+    journal: "Science"
+    doi: "10.1126/science.298.5594.824"
+    dimension: network-analysis
+    tags: [network-analysis:motif, network-analysis:null-model, network-analysis:statistical-testing, connectomics:graph-theory]
+    key_figures: ["Fig. 1: motif definition and enumeration", "Fig. 2: motif significance profiles across network types"]
+    discussion_prompts:
+      - "Which three-node motifs are overrepresented in neural circuits, and what might this mean functionally?"
+      - "How does null model choice affect motif significance results?"
+    related_content: [/content-library/connectomics/motif-analysis/, /content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Networks have recurring patterns — small subgraphs that appear much more often than expected by chance. This foundational paper introduced the concept of 'network motifs' and showed that different types of networks (neural, genetic, social) have different characteristic patterns."
+      intermediate: "Milo et al. introduced the concept of network motifs — statistically overrepresented subgraphs — and developed algorithms for their enumeration and significance testing. Applied to neural networks (including C. elegans), they identified specific three- and four-node motifs that occur at rates far above chance."
+      advanced: "This paper established the computational and statistical framework for motif analysis now widely applied in connectomics. Critical methodological point: motif significance depends entirely on the null model used for comparison. The paper uses degree-preserving randomization, but alternative nulls can change conclusions substantially."
+
+  - id: rubinov-sporns-2010
+    title: "Complex network measures of brain connectivity: Uses and interpretations"
+    authors: "Rubinov M, Sporns O"
+    year: 2010
+    journal: "NeuroImage"
+    doi: "10.1016/j.neuroimage.2009.10.003"
+    dimension: network-analysis
+    tags: [network-analysis:centrality, network-analysis:clustering-coefficient, network-analysis:modularity, network-analysis:path-length]
+    key_figures: ["Fig. 1: network measure taxonomy", "Fig. 2: measure interpretation guide"]
+    discussion_prompts:
+      - "Which network measures are most meaningful for EM connectomics versus MRI connectomics?"
+      - "How should binary versus weighted network measures be chosen?"
+    related_content: [/content-library/connectomics/network-analysis-methods/, /content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "Once you have a brain network, what can you measure about it? This paper is a practical guide to network measures — degree, clustering, path length, modularity, and many more — with clear explanations of what each measure means biologically."
+      intermediate: "Rubinov and Sporns provide the Brain Connectivity Toolbox (BCT) paper: a comprehensive catalog of network measures adapted for brain connectivity analysis. For each measure, they describe the computation, interpretation, and caveats specific to neural networks."
+      advanced: "The BCT remains the most widely used toolbox for brain network analysis. Key contributions: systematic treatment of binary versus weighted measures, integration versus segregation metrics, and the importance of normalization against appropriate null networks. For EM connectomics, the weighted directed measures are most relevant."
+
+  - id: newman-2006
+    title: "Modularity and community structure in networks"
+    authors: "Newman MEJ"
+    year: 2006
+    journal: "PNAS"
+    doi: "10.1073/pnas.0601602103"
+    dimension: network-analysis
+    tags: [network-analysis:modularity, network-analysis:community-detection, connectomics:graph-theory]
+    key_figures: ["Fig. 1: modularity optimization", "Fig. 3: community structure examples"]
+    discussion_prompts:
+      - "How does the resolution limit of modularity optimization affect community detection in connectomes?"
+      - "When should modularity-based versus model-based community detection be preferred?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Networks often have communities — groups of nodes that are more connected to each other than to the rest of the network. This paper presents an efficient method for finding these communities by maximizing a quantity called modularity."
+      intermediate: "Newman presents a spectral algorithm for modularity optimization that efficiently detects community structure in large networks. The method partitions networks into modules that maximize within-group versus between-group connectivity. Widely applied to brain networks."
+      advanced: "This paper introduced the spectral modularity approach that became the default community detection method in network neuroscience. Known limitation: the resolution limit means small communities may be merged in large networks. For EM connectomics, where networks have known spatial and cell-type structure, modularity results should be validated against biological priors."
+
+  - id: priebe-2019
+    title: "On a two-truths phenomenon in spectral graph clustering"
+    authors: "Priebe CE, Park Y, Vogelstein JT, et al."
+    year: 2019
+    journal: "PNAS"
+    doi: "10.1073/pnas.1814462116"
+    dimension: network-analysis
+    tags: [network-analysis:spectral-analysis, network-analysis:community-detection, network-analysis:stochastic-block-model]
+    key_figures: ["Fig. 1: two-truths illustration", "Fig. 3: Drosophila mushroom body analysis"]
+    discussion_prompts:
+      - "How should analysts choose between adjacency-based and Laplacian-based spectral embeddings?"
+      - "What does the two-truths phenomenon mean for biological interpretation of clustering results?"
+    related_content: [/content-library/connectomics/network-analysis-methods/, /content-library/connectomics/motif-analysis/]
+    summaries:
+      beginner: "When you cluster a network to find groups, different methods can give different answers — and both can be 'correct.' This paper shows that two standard clustering approaches reveal different aspects of network structure, demonstrated on fruit fly brain data."
+      intermediate: "Priebe et al. demonstrate that adjacency spectral embedding and Laplacian spectral embedding of the same network recover fundamentally different community structures — and both are valid. Applied to the Drosophila mushroom body connectome, they show that one method clusters by cell type while the other clusters by hemisphere."
+      advanced: "The 'two-truths' phenomenon has direct implications for connectomics: the choice of spectral embedding method determines what structure is discovered. This means claims about community structure must specify which embedding was used and acknowledge that alternative embeddings may reveal different, equally valid structure."
+
+  - id: vogelstein-2019
+    title: "Connectal coding: discovering the structures linking cognitive phenotypes to individual histories"
+    authors: "Vogelstein JT, Bridgeford EW, Wang Q, et al."
+    year: 2019
+    journal: "Current Opinion in Neurobiology"
+    doi: "10.1016/j.conb.2019.04.005"
+    dimension: network-analysis
+    tags: [network-analysis:network-embedding, network-analysis:graph-matching, connectomics:graph-theory]
+    key_figures: ["Fig. 1: connectal coding framework", "Fig. 2: graph-to-vector pipeline"]
+    discussion_prompts:
+      - "How can connectal coding principles be applied to EM connectomics data?"
+      - "What statistical tests are appropriate for comparing connectomes across individuals or conditions?"
+    related_content: [/content-library/connectomics/graph-representations/, /content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Just as the genetic code stores information in DNA sequences, the brain may store information in connection patterns — a 'connectal code.' This paper proposes methods for reading this code by statistically analyzing brain network structure."
+      intermediate: "Vogelstein et al. propose 'connectal coding' as a framework for linking brain network structure to behavior and cognition. They describe a pipeline for converting graphs to feature vectors, enabling statistical testing of hypotheses about how connectivity relates to phenotype."
+      advanced: "This paper provides the statistical framework for hypothesis testing on connectomes: graph-to-vector embedding, followed by standard statistical methods (classification, regression, hypothesis testing). The framework applies to both MRI and EM connectomes and addresses the multiple-comparisons problem inherent in testing many edges simultaneously."
+
+  - id: pedigo-2023
+    title: "Bisected graph matching improves automated pairing of bilaterally homologous neurons from connectomes"
+    authors: "Pedigo BD, Powell M, Bridgeford EW, et al."
+    year: 2023
+    journal: "Network Neuroscience"
+    doi: "10.1162/netn_a_00287"
+    dimension: network-analysis
+    tags: [network-analysis:graph-matching, network-analysis:statistical-testing, case-studies:larval-Drosophila]
+    key_figures: ["Fig. 1: bisected graph matching algorithm", "Fig. 3: matching accuracy on larval connectome"]
+    discussion_prompts:
+      - "How does graph matching performance depend on the completeness and accuracy of the underlying connectome?"
+      - "What does bilateral symmetry in matching tell us about developmental precision in neural wiring?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Many brains have two hemispheres with matching neurons on each side. This paper develops an algorithm to automatically find which neuron on the left side corresponds to which neuron on the right side, using only their connection patterns."
+      intermediate: "Pedigo et al. present bisected graph matching — an algorithm that exploits bilateral symmetry to match homologous neurons across brain hemispheres. Applied to the larval Drosophila connectome, the method correctly matches >80% of neurons using connectivity alone."
+      advanced: "Bisected graph matching provides a principled approach to the cross-hemisphere neuron matching problem that is fundamental to assessing bilateral symmetry and stereotypy. The method's performance quantifies how much information about neuron identity is contained in connectivity versus morphology or spatial position."
+
+  - id: zalesky-2010
+    title: "Network-based statistic: identifying differences in brain networks"
+    authors: "Zalesky A, Fornito A, Bullmore ET"
+    year: 2010
+    journal: "NeuroImage"
+    doi: "10.1016/j.neuroimage.2010.06.041"
+    dimension: network-analysis
+    tags: [network-analysis:network-based-statistic, network-analysis:statistical-testing, mri-connectomics:functional-connectivity]
+    key_figures: ["Fig. 1: NBS procedure", "Fig. 3: power comparison with mass univariate"]
+    discussion_prompts:
+      - "How should the NBS approach be adapted for EM connectomics with directed, weighted edges?"
+      - "What are the assumptions of NBS, and when might they be violated?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "When comparing brain networks between groups (e.g., patients vs. controls), testing each connection individually leads to too many false positives. NBS solves this by looking for connected clusters of edges that differ together, controlling the overall error rate."
+      intermediate: "Zalesky et al. introduce the network-based statistic (NBS) — a method for identifying connected subnetworks that differ between groups while controlling family-wise error rate. NBS is more powerful than individual edge testing for detecting distributed effects."
+      advanced: "NBS adapts cluster-based thresholding from neuroimaging to network analysis. The method tests whether connected components of supra-threshold edges are larger than expected by chance. For EM connectomics, NBS could be adapted for comparing connectomes across conditions, time points, or genotypes."
+
+  - id: aicher-2015
+    title: "Learning latent block structure in weighted networks"
+    authors: "Aicher C, Jacobs AZ, Clauset A"
+    year: 2015
+    journal: "Journal of Complex Networks"
+    doi: "10.1093/comnet/cnu026"
+    dimension: network-analysis
+    tags: [network-analysis:stochastic-block-model, network-analysis:community-detection, network-analysis:random-graph-model]
+    key_figures: ["Fig. 1: weighted SBM illustration", "Fig. 3: model comparison"]
+    discussion_prompts:
+      - "When should stochastic block models be preferred over modularity optimization for community detection?"
+      - "How does modeling edge weights versus binary edges change the detected community structure?"
+    related_content: [/content-library/connectomics/network-analysis-methods/, /content-library/connectomics/graph-representations/]
+    summaries:
+      beginner: "Networks have hidden structure — groups of nodes that connect to each other in distinctive patterns. This paper develops a statistical model that can discover these groups while accounting for the strength (weight) of connections, not just their presence or absence."
+      intermediate: "Aicher et al. extend the stochastic block model to weighted networks, enabling principled community detection that uses edge weight information. Unlike modularity optimization, this approach provides a generative model and supports model selection (choosing the number of communities)."
+      advanced: "Weighted SBMs are particularly relevant for EM connectomics where edge weights (synapse counts) carry important information. The generative model framework enables formal model comparison, handles degree correction, and avoids the resolution limit of modularity. The approach can distinguish assortative, disassortative, and core-periphery structure."
+
+  - id: lyzinski-2016
+    title: "Graph matching: Relax at your own risk"
+    authors: "Lyzinski V, Fishkind DE, Fiori M, et al."
+    year: 2016
+    journal: "IEEE TPAMI"
+    doi: "10.1109/TPAMI.2015.2424894"
+    dimension: network-analysis
+    tags: [network-analysis:graph-matching, network-analysis:statistical-testing, methodology:benchmark]
+    key_figures: ["Fig. 1: graph matching formulation", "Fig. 3: relaxation comparison"]
+    discussion_prompts:
+      - "What are the computational and statistical tradeoffs between exact and relaxed graph matching?"
+      - "How does graph matching apply to comparing connectomes across individuals or species?"
+    related_content: [/content-library/connectomics/network-analysis-methods/]
+    summaries:
+      beginner: "Given two networks, can you figure out which nodes in one correspond to which nodes in the other? Graph matching solves this problem, but it's computationally very hard. This paper analyzes different approaches and their tradeoffs."
+      intermediate: "Lyzinski et al. provide a theoretical and empirical analysis of convex relaxation approaches to the graph matching problem. They show that relaxed solutions can differ substantially from exact solutions, with implications for matching accuracy in connectomics applications."
+      advanced: "Graph matching is fundamental for cross-connectome comparison (matching neurons across individuals or hemispheres). The paper shows that commonly used relaxations can fail in structured ways. For EM connectomics, where exact matching may be computationally feasible for small circuits, the analysis guides when relaxation is safe."
+
+  - id: bassett-sporns-2017
+    title: "Network neuroscience"
+    authors: "Bassett DS, Sporns O"
+    year: 2017
+    journal: "Nature Neuroscience"
+    doi: "10.1038/nn.4502"
+    dimension: network-analysis
+    tags: [network-analysis:community-detection, network-analysis:centrality, network-analysis:modularity, connectomics:graph-theory]
+    key_figures: ["Fig. 1: network neuroscience framework", "Fig. 3: multi-scale network analysis"]
+    discussion_prompts:
+      - "How should network neuroscience methods be adapted for the unique properties of EM connectomes?"
+      - "What are the most promising directions for integrating macro-scale and micro-scale network analysis?"
+    related_content: [/content-library/connectomics/network-analysis-methods/, /content-library/connectomics/neuroai-bridge/]
+    summaries:
+      beginner: "Network neuroscience is a field that studies the brain as a network of connected parts. This review describes the tools and ideas that have emerged, from measuring how well-connected a brain region is to understanding how network organization relates to behavior and disease."
+      intermediate: "Bassett and Sporns provide an overview of network neuroscience as a discipline, covering methods (graph theory, dynamic network analysis, multi-layer networks), applications (development, disease, cognition), and future directions. They emphasize the importance of cross-scale integration."
+      advanced: "This review establishes network neuroscience as a coherent discipline spanning macro (MRI) and micro (EM) scales. Key arguments: (1) network analysis provides a common language across scales; (2) dynamic and multi-layer network methods are needed for time-varying and multi-modal data; (3) the greatest opportunities lie in cross-scale integration where EM provides ground truth for evaluating macro-scale network claims."

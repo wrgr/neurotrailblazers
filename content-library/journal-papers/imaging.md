@@ -169,3 +169,55 @@ Curated papers covering electron microscopy acquisition, sample preparation, and
 - How would you design an acquisition QA system for a dataset 10x larger than MICrONS?
 
 **Related content:** [Acquisition QA](/content-library/imaging/acquisition-qa/), [Reconstruction pipeline](/content-library/infrastructure/reconstruction-pipeline/), [MICrONS visual cortex](/content-library/case-studies/microns-visual-cortex/)
+
+---
+
+## 7. Lichtman & Denk (2011) — The big and the small: Challenges of imaging the brain's circuits
+
+**Citation:** Lichtman JW, Denk W. The big and the small: challenges of imaging the brain's circuits. *Science*. 2011;334(6056):618-623.
+**DOI:** [10.1126/science.1209168](https://doi.org/10.1126/science.1209168)
+
+**Tags:** `imaging:electron-microscopy` `imaging:resolution` `methodology:experimental-design` `imaging:correlative-imaging`
+
+### Summaries
+
+**Beginner:** This paper is an accessible overview of why imaging the brain's wiring is so hard. The brain contains structures at vastly different scales — from entire brain regions (centimeters) down to individual synapses (nanometers). No single imaging method can capture all of these at once. The authors explain the fundamental gap between light microscopy (which can see large areas but not fine details) and electron microscopy (which can see fine details but only in tiny volumes), and discuss strategies for bridging this gap.
+
+**Intermediate:** Lichtman and Denk present a perspective on the multi-scale imaging challenge in neuroscience, framing it as a problem of simultaneously achieving the resolution needed to identify synapses (~10 nm) and the field of view needed to follow neural circuits (~mm to cm). They compare the strengths and limitations of light microscopy, serial section EM, SBEM, and FIB-SEM, and introduce the concept of correlative imaging — combining modalities to span scales. The paper also discusses data volume challenges, noting that imaging a single cubic millimeter of brain at synaptic resolution produces petabytes of data.
+
+**Advanced:** This perspective remains one of the clearest articulations of the resolution-volume tradeoff that governs connectomics experimental design. Lichtman and Denk quantify the imaging throughput required for mammalian connectomics and argue that brute-force scaling of existing EM methods is insufficient without fundamental advances in automation and parallelization. Their analysis of the "data bottleneck" — where imaging speed exceeds analysis speed — anticipated the current state of the field. The discussion of correlative light-electron microscopy (CLEM) as a strategy for targeting EM acquisition to functionally characterized regions is directly relevant to the MICrONS project design and similar functional connectomics efforts.
+
+**Key figures:** Fig. 1 (scale comparison of imaging modalities), Fig. 2 (resolution versus volume tradeoff), Fig. 3 (data volume projections for connectomics)
+
+**Discussion prompts:**
+- Has the resolution-volume tradeoff described in 2011 been substantially altered by subsequent technology development?
+- What role should correlative imaging play in connectomics experimental design versus purely EM-based approaches?
+- How do the data volume projections in this paper compare with actual dataset sizes from recent connectomics projects?
+
+**Related content:** [EM principles](/content-library/imaging/em-principles/), [Acquisition QA](/content-library/imaging/acquisition-qa/), [Tissue preparation](/content-library/imaging/tissue-preparation/)
+
+---
+
+## 8. Briggman & Bock (2012) — Volume electron microscopy for neuronal circuit reconstruction
+
+**Citation:** Briggman KL, Bock DD. Volume electron microscopy for neuronal circuit reconstruction. *Current Opinion in Neurobiology*. 2012;22(1):154-161.
+**DOI:** [10.1016/j.conb.2011.10.022](https://doi.org/10.1016/j.conb.2011.10.022)
+
+**Tags:** `imaging:electron-microscopy` `imaging:SBEM` `imaging:FIB-SEM` `imaging:ATUM` `methodology:experimental-design`
+
+### Summaries
+
+**Beginner:** This review compares the three main ways scientists create 3D images of brain tissue at the nanometer scale: serial block-face SEM (SBEM, which shaves and images layers inside the microscope), focused ion beam SEM (FIB-SEM, which uses an ion beam to remove layers for the highest resolution), and serial section collection methods like ATUM (which collect physical slices on tape for imaging). Each method has different strengths, and this paper explains when to use which one.
+
+**Intermediate:** Briggman and Bock provide a practical comparison of volume EM methods — SBEM, FIB-SEM, and ATUM-SEM/TEM — for neural circuit reconstruction. For each method, they evaluate resolution (lateral and axial), achievable volume, throughput, whether sections are preserved or destroyed, and suitability for different biological questions. Key comparisons include SBEM's automated workflow versus ATUM's ability to re-image sections, and FIB-SEM's isotropic voxels versus the anisotropy inherent in serial section approaches. The review also covers sample preparation requirements specific to each method.
+
+**Advanced:** This review remains a valuable reference for experimental design decisions in connectomics. Briggman and Bock systematically evaluate how each volume EM modality's technical parameters propagate through the reconstruction pipeline: anisotropic voxels from ATUM/SBEM create directionally biased segmentation errors, FIB-SEM's isotropy improves small-caliber neurite tracing but limits volume, and section preservation in ATUM enables iterative re-imaging for quality recovery. Their discussion of staining protocols optimized for back-scattered electron detection (SBEM/FIB-SEM) versus transmission detection (ATUM-TEM) highlights a frequently overlooked experimental design consideration. The framework for matching imaging modality to scientific question — circuit mapping (maximize volume) versus ultrastructural analysis (maximize resolution) — continues to guide project planning.
+
+**Key figures:** Fig. 1 (volume EM modality comparison schematic), Fig. 2 (resolution and volume tradeoff plot), Fig. 3 (example reconstructions from each modality)
+
+**Discussion prompts:**
+- How has the landscape of volume EM modalities changed since 2012, and which of the tradeoffs described here have been overcome?
+- For a new connectomics project in mammalian cortex, how would you use this framework to choose an imaging modality?
+- What role does section preservation (ATUM) versus section destruction (SBEM/FIB-SEM) play in quality assurance and error recovery?
+
+**Related content:** [EM principles](/content-library/imaging/em-principles/), [Tissue preparation](/content-library/imaging/tissue-preparation/), [Acquisition QA](/content-library/imaging/acquisition-qa/)

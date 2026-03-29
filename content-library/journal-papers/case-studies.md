@@ -197,3 +197,81 @@ Landmark connectomics papers that defined the field — each presenting a major 
 - How does the modular addition of sex-specific circuits inform our understanding of brain evolution?
 
 **Related content:** [C. elegans revisited](/content-library/case-studies/c-elegans-revisited/), [Connectome history](/content-library/connectomics/connectome-history/)
+
+---
+
+## 8. Takemura et al. (2013) — A Visual Motion Detection Circuit Suggested by Drosophila Connectomics
+
+**Citation:** Takemura S, Bharioke A, Lu Z, Nern A, Vitaladevuni S, Rivlin PK, et al. A visual motion detection circuit suggested by Drosophila connectomics. *Nature*. 2013;500(7461):175-181.
+**DOI:** [10.1038/nature12450](https://doi.org/10.1038/nature12450)
+
+**Tags:** `case-studies:Drosophila` `case-studies:retina` `connectomics:graph-theory` `neuroanatomy:synapse` `neuroai:structure-function`
+
+### Summaries
+
+**Beginner:** This paper is a classic early connectomics study that mapped the wiring of neurons in the fly's visual system to figure out how the brain detects motion. Scientists used electron microscopy to trace the connections between specific cell types in the fly's medulla (a visual processing region). By identifying which neurons connect to which, they proposed a circuit diagram that explains how the fly computes the direction of moving objects — showing that the physical wiring of the brain can predict the computations it performs.
+
+**Intermediate:** Takemura et al. used serial section TEM to densely reconstruct columns of the *Drosophila* medulla, identifying the cell types and synaptic connections involved in motion detection. The reconstructed connectivity revealed a circuit architecture consistent with variants of the Hassenstein-Reichardt correlator model for elementary motion detection. Key findings include: identification of specific columnar cell types (Mi1, Tm3, Mi4, Mi9, T4, T5) and their directionally asymmetric wiring; quantitative synapse counts revealing connection strength differences between pathway branches; and a wiring diagram that predicts the computational algorithm (correlation of luminance signals across space and time). This was among the first demonstrations that connectomics data could directly constrain computational models.
+
+**Advanced:** This paper exemplifies the power of targeted connectomics — reconstructing a specific circuit to answer a specific computational question, rather than pursuing whole-brain completeness. The motion detection circuit had been studied electrophysiologically and computationally for decades, but the cellular implementation remained disputed. The connectomic data resolved this by identifying the actual cell types and connections implementing the computation. Methodological strengths include reconstruction of multiple columns for statistical power and explicit mapping from anatomy to algorithm. Limitations: the reconstruction covered a small number of columns, synapse identification relied on morphological criteria without functional validation, and the mapping from connectivity to computation required assumptions about synaptic sign (excitatory vs. inhibitory) that were later tested genetically. Subsequent functional studies (e.g., Maisak et al., 2013) confirmed many of the circuit predictions made from the anatomy.
+
+**Key figures:** Fig. 1 (medulla column reconstruction), Fig. 2 (cell type identification and connectivity), Fig. 3 (motion detection circuit diagram), Fig. 4 (computational model comparison)
+
+**Discussion prompts:**
+- How does targeted reconstruction of a specific circuit differ in strategy and outcome from dense whole-brain reconstruction?
+- What additional data (beyond connectivity) was needed to go from wiring diagram to computational model?
+- How should we evaluate the predictive power of a connectomics-derived circuit model?
+
+**Related content:** [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/), [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/)
+
+---
+
+## 9. Bock et al. (2011) — Network Anatomy and In Vivo Physiology of Visual Cortical Neurons
+
+**Citation:** Bock DD, Lee WCA, Kerlin AM, Andermann ML, Hood G, Wetzel AW, et al. Network anatomy and in vivo physiology of visual cortical neurons. *Nature*. 2011;471(7337):177-182.
+**DOI:** [10.1038/nature09802](https://doi.org/10.1038/nature09802)
+
+**Tags:** `case-studies:mouse` `case-studies:visual-cortex` `imaging:serial-section` `imaging:ATUM` `neuroai:structure-function` `methodology:correlative-imaging`
+
+### Summaries
+
+**Beginner:** This paper was one of the first to combine two powerful techniques: watching neurons fire in a living mouse brain, and then mapping their connections with an electron microscope. Scientists first showed mice visual patterns and recorded which neurons responded to which orientations (using two-photon calcium imaging). Then they sliced and imaged the same piece of brain tissue to trace the wires between those neurons. They discovered that inhibitory neurons receive input from neurons with many different orientation preferences — meaning inhibition is broadly tuned, not selective.
+
+**Intermediate:** Bock et al. performed correlative functional-structural imaging in mouse primary visual cortex. In vivo two-photon calcium imaging characterized orientation selectivity of neurons in a local patch of V1, after which the same tissue was processed for serial section EM and reconstructed. By matching functionally characterized neurons to their EM profiles, they traced synaptic inputs onto specific inhibitory interneurons. Key finding: inhibitory neurons receive synaptic input from excitatory neurons spanning the full range of orientation preferences, rather than from a functionally homogeneous subset. This broad connectivity provides a structural basis for non-selective inhibition in cortical circuits.
+
+**Advanced:** This paper pioneered the correlative functional-structural approach that later scaled up dramatically in the MICrONS project. The technical achievement of registering in vivo two-photon data to ex vivo EM was non-trivial, requiring fiducial landmarks and careful tissue processing. The biological conclusion — that inhibitory neurons sample broadly from the local excitatory population — addressed a longstanding debate about the role of inhibition in sharpening tuning curves. Limitations include: the small number of reconstructed inhibitory neurons (constraining statistical power), the inability to identify all presynaptic partners (many axons could not be traced to their somata), and the use of calcium imaging rather than electrophysiology for functional characterization (limiting temporal resolution and sensitivity). Despite these limitations, the paper established a paradigm — function first, then structure — that became central to modern connectomics.
+
+**Key figures:** Fig. 1 (correlative imaging pipeline), Fig. 2 (functional characterization of neurons), Fig. 3 (EM reconstruction of inhibitory neurons), Fig. 4 (input selectivity analysis)
+
+**Discussion prompts:**
+- What are the advantages and limitations of correlative functional-structural approaches compared with purely structural connectomics?
+- How does the finding of broadly tuned inhibitory input constrain models of orientation selectivity?
+- What technical improvements since 2011 have addressed the limitations of this study?
+
+**Related content:** [MICrONS visual cortex](/content-library/case-studies/microns-visual-cortex/), [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/)
+
+---
+
+## 10. Witvliet et al. (2021) — Connectomes Across Development Reveal Principles of Brain Maturation
+
+**Citation:** Witvliet D, Mulcahy B, Mitchell JK, Meiber Y, Chisholm R, Wang Y, et al. Connectomes across development reveal principles of brain maturation. *Nature*. 2021;596(7871):257-261.
+**DOI:** [10.1038/s41586-021-03778-8](https://doi.org/10.1038/s41586-021-03778-8)
+
+**Tags:** `case-studies:C-elegans` `case-studies:dense-reconstruction` `connectomics:connectome-comparison` `neuroanatomy:synapse` `methodology:reproducibility`
+
+### Summaries
+
+**Beginner:** This paper asked a simple but profound question: how does a brain's wiring change as an animal grows up? Scientists mapped the complete wiring diagram of the roundworm *C. elegans* at eight different time points during development, from a newly hatched larva to an adult. They found that which neurons connect to which stays mostly the same throughout life, but the strength of those connections (how many synapses link two neurons) changes dramatically. This is the first time anyone has tracked a complete brain's wiring across an entire developmental timeline.
+
+**Intermediate:** Witvliet et al. reconstructed eight complete *C. elegans* connectomes spanning development from the first larval stage (L1) to adulthood. By comparing these connectomes, they identified two key principles of brain maturation: (1) connection identity is largely stable — most neuron-to-neuron connections present in the adult are already established in the L1 larva; (2) connection strength is highly dynamic — the number of synapses per connection changes substantially during development, with some connections strengthening and others weakening. Additionally, they identified a small number of connections that are added or pruned during development, suggesting both activity-dependent and genetically programmed wiring refinement.
+
+**Advanced:** This is the first developmental connectomics study with multiple complete time points, enabling statistical analysis of wiring changes rather than pairwise comparison. The finding that connection identity is stable while connection strength is dynamic has important implications: it suggests that the "connectome" as a binary graph is largely genetically specified, while synaptic weight tuning may reflect experience-dependent plasticity or developmental programs. Methodological considerations include: inter-individual variability confounds developmental trends (each time point is a different animal), the definition of "same connection" across developmental stages requires careful cell identity tracking, and synapse count is a proxy for connection strength that may not capture other forms of plasticity (receptor composition, release probability). The dataset provides a unique resource for testing models of neural development and establishes baseline expectations for how much connectome variability is developmental versus individual.
+
+**Key figures:** Fig. 1 (developmental series overview), Fig. 2 (connection stability analysis), Fig. 3 (synaptic strength changes), Fig. 4 (added and pruned connections)
+
+**Discussion prompts:**
+- How should we separate developmental changes from individual-to-individual variability when each time point comes from a different animal?
+- What does the stability of connection identity imply about the genetic versus activity-dependent specification of neural circuits?
+- How might these developmental principles differ in organisms with larger, more plastic brains?
+
+**Related content:** [C. elegans revisited](/content-library/case-studies/c-elegans-revisited/), [Connectome history](/content-library/connectomics/connectome-history/)

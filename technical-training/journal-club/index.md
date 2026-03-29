@@ -79,3 +79,36 @@ This platform provides hands-on exposure to segmentation, proofreading, and morp
 - Week A: required paper + one media demo aligned to current unit.
 - Week B: optional paper focused on failure modes or interpretation limits.
 - Week C: synthesis session using the atlas reference and dictionary terms.
+
+---
+
+## Full paper collection — browse by dimension, date, or tag
+
+The journal club readings above are a curated starting set. The full **[Journal Paper Collection](/content-library/journal-papers/)** contains **~100 papers** across 11 connectomics dimensions, each with:
+
+- **Three-level summaries** (beginner / intermediate / advanced)
+- **Discussion prompts** ready for journal club use
+- **Tags** for cross-referencing with content library entries
+
+All papers are stored as structured data in `_data/journal_papers.yml` and can be sorted or filtered by:
+
+| Browse by | How |
+|-----------|-----|
+| **Dimension** | [Neuroanatomy](/content-library/journal-papers/neuroanatomy/), [Imaging](/content-library/journal-papers/imaging/), [CV/ML](/content-library/journal-papers/computer-vision-ml/), [Data Storage](/content-library/journal-papers/data-storage/), [Proofreading](/content-library/journal-papers/proofreading/), [Cell Types](/content-library/journal-papers/cell-types/), [Graph Construction](/content-library/journal-papers/connectomics/), [Network Analysis](/content-library/journal-papers/network-analysis/), [MRI Connectomics](/content-library/journal-papers/mri-connectomics/), [NeuroAI](/content-library/journal-papers/neuroai/), [Case Studies](/content-library/journal-papers/case-studies/) |
+| **Publication date** | Every paper record includes a `year` field. Sort `_data/journal_papers.yml` by year to build chronological reading sequences — from foundational papers (White 1986, Biswal 1995) through the modern era (FlyWire 2024, H01 2024). |
+| **Tag** | Papers share the same tag taxonomy as content library entries. Filter by tag (e.g., `case-studies:FlyWire`) to find all papers and reference materials on a specific topic. |
+| **Expertise level** | Use beginner summaries for orientation sessions, intermediate for standard journal club, advanced for methods-focused critique. |
+
+### Suggested reading paths
+
+**Path 1 — Historical arc (chronological):**
+White 1986 → Denk & Horstmann 2004 → Briggman & Bock 2012 → Kasthuri 2015 → Zheng 2018 → Dorkenwald 2024
+
+**Path 2 — Methods deep dive (by pipeline stage):**
+Imaging: Xu 2017 → Yin 2020 | Segmentation: Turaga 2010 → Januszewski 2018 → Sheridan 2023 | Proofreading: Plaza 2014 → Dorkenwald 2022 (FlyWire)
+
+**Path 3 — Analysis & interpretation:**
+Bullmore & Sporns 2009 → Rubinov & Sporns 2010 → Winding 2023 → Lappalainen 2024
+
+**Path 4 — Cross-scale integration (EM + MRI):**
+Sporns 2005 → Maier-Hein 2017 → Glasser 2016 → Bae 2021 → Bassett & Sporns 2017

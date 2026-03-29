@@ -1,0 +1,3173 @@
+# Structured journal paper collection for NeuroTrailblazers.
+# Each paper is a searchable record with tags and multi-level summaries.
+# Sortable by: dimension, year, tags. Filterable by expertise level.
+# Papers appearing in multiple dimensions use also_dimensions for cross-referencing.
+#
+# Fields per paper:
+#   id, title, authors, year, journal, doi, dimension, also_dimensions (optional),
+#   tags, key_figures, discussion_prompts, related_content, summaries (beginner/intermediate/advanced),
+#   citation_note (optional - for highly cited papers)
+
+papers:
+- id: harris-weinberg-2012
+  title: Ultrastructure of synapses in the mammalian brain
+  authors: Harris KM, Weinberg RJ
+  year: 2012
+  journal: Cold Spring Harbor Perspectives in Biology
+  doi: 10.1101/cshperspect.a005587
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:synapse
+  - neuroanatomy:spine
+  - neuroanatomy:postsynaptic-density
+  - neuroanatomy:vesicle
+  - imaging:electron-microscopy
+  key_figures:
+  - 'Fig. 1: synapse ultrastructure overview'
+  - 'Fig. 3: vesicle pool organization'
+  - 'Fig. 5: perforated synapse morphology'
+  discussion_prompts:
+  - Which synapse features are robust enough for automated detection versus requiring human adjudication?
+  - How does fixation quality affect measurements of cleft width and PSD thickness?
+  related_content:
+  - /content-library/neuroanatomy/synapse-classification/
+  - /content-library/neuroanatomy/dendrite-biology/
+  summaries:
+    beginner: This review is a visual guide to what synapses — the connection points between neurons — actually look like
+      under a powerful microscope. It explains the small structures (vesicles, densities, clefts) that make up a synapse and
+      why their size and shape matter for brain function.
+    intermediate: Harris and Weinberg provide a systematic catalog of excitatory and inhibitory synapse ultrastructure in
+      mammalian cortex and hippocampus. They describe presynaptic vesicle pools, the structure of the postsynaptic density,
+      and cleft components visible at EM resolution. The review also covers perforated synapses, multi-synaptic boutons, and
+      spinule formations.
+    advanced: Essential reading for anyone developing synapse detection algorithms or evaluating connectome edge weights.
+      Key methodological points include the distinction between symmetric (Gray Type II) and asymmetric (Gray Type I) synapses,
+      the quantitative relationship between PSD area and vesicle count, and caveats around interpreting synapse size from
+      single-section profiles versus serial reconstructions.
+- id: peters-palay-1991
+  title: 'The Fine Structure of the Nervous System: Neurons and Their Supporting Cells'
+  authors: Peters A, Palay SL, Webster H deF
+  year: 1991
+  journal: Oxford University Press (textbook)
+  doi: null
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:soma
+  - neuroanatomy:axon
+  - neuroanatomy:dendrite
+  - neuroanatomy:myelin
+  - neuroanatomy:organelle
+  - imaging:electron-microscopy
+  key_figures:
+  - 'Ch. 1 plates: neuronal soma organelles'
+  - 'Ch. 5 plates: synaptic junction types'
+  - 'Ch. 8 plates: myelin and nodes'
+  discussion_prompts:
+  - Which morphological criteria from this text translate directly into automated detection features?
+  - How has immuno-EM since 1991 refined or contradicted any of the structural assignments?
+  related_content:
+  - /content-library/neuroanatomy/soma-ultrastructure/
+  - /content-library/neuroanatomy/axon-biology/
+  - /content-library/neuroanatomy/myelin-and-nodes/
+  summaries:
+    beginner: 'This classic textbook is the definitive atlas of what the brain looks like under an electron microscope. It
+      describes every type of cell and structure you will encounter: neuron cell bodies, axons, dendrites, synapses, glia,
+      and myelin. Think of it as a field guide for identifying structures in brain tissue images.'
+    intermediate: Peters, Palay & Webster remains the gold standard reference for neuronal ultrastructure. Each chapter systematically
+      catalogs the EM appearance of a major structure, with micrographs, drawings, and quantitative parameters. The chapters
+      on axon terminals, synaptic junctions, and myelin sheaths provide the visual vocabulary needed for accurate proofreading
+      decisions.
+    advanced: While dated in its functional interpretations, this text's morphological descriptions remain unsurpassed in
+      rigor. The systematic treatment of organelle distribution across neuronal compartments, the classification of synaptic
+      vesicle types and their relationship to neurotransmitter content, and the detailed treatment of nodes of Ranvier and
+      paranodal junctions are all directly relevant to current automated annotation pipelines.
+- id: bhatt-2009
+  title: Dendritic Spine Dynamics
+  authors: Bhatt DH, Zhang S, Bhatt AN
+  year: 2009
+  journal: Annual Review of Physiology
+  doi: 10.1146/annurev.physiol.010908.163140
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:dendrite
+  - neuroanatomy:spine
+  - neuroanatomy:synapse
+  - neuroanatomy:cytoskeleton
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: spine morphology classification'
+  - 'Fig. 3: spine turnover rates across regions'
+  - 'Fig. 5: activity-dependent remodeling'
+  discussion_prompts:
+  - How should connectomics studies account for spine dynamics when reporting connection strengths?
+  - What fraction of spines in a typical cortical EM volume might lack functional synapses?
+  related_content:
+  - /content-library/neuroanatomy/dendrite-biology/
+  - /content-library/neuroanatomy/synapse-classification/
+  summaries:
+    beginner: Dendritic spines are tiny protrusions on neurons where most excitatory connections form. This review explains
+      that spines are not static — they change shape, appear, and disappear over time. This matters for connectomics because
+      a wiring diagram captured at one moment is a snapshot of a dynamic system.
+    intermediate: This review covers the molecular and structural dynamics of dendritic spines including formation, elimination,
+      and morphological plasticity. The authors discuss how spine shape (mushroom, thin, stubby, filopodial) correlates with
+      synapse maturity and strength. For connectomics, the key insight is that spine morphology and density are not fixed,
+      meaning static EM reconstructions capture one state of a dynamic substrate.
+    advanced: Bhatt et al. synthesize live-imaging and EM data to describe spine turnover rates across brain regions and developmental
+      stages. Methodologically relevant points include the disconnect between spine presence and functional synapse presence,
+      the implications of fixation timing for spine morphology in EM, and the question of how spine dynamics affect the interpretability
+      of single-timepoint connectomes.
+- id: shepherd-harris-1998
+  title: Three-Dimensional Structure and Composition of CA3→CA1 Axons in Rat Hippocampal Slices
+  authors: Shepherd GM, Harris KM
+  year: 1998
+  journal: Journal of Neuroscience
+  doi: 10.1523/JNEUROSCI.18-20-08300.1998
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:axon
+  - neuroanatomy:bouton
+  - neuroanatomy:vesicle
+  - neuroanatomy:mitochondria
+  - imaging:serial-section
+  - case-studies:hippocampus
+  key_figures:
+  - 'Fig. 2: 3D axon reconstructions'
+  - 'Fig. 4: bouton composition quantification'
+  - 'Fig. 6: multi-synapse bouton examples'
+  discussion_prompts:
+  - How would you validate whether modern automated segmentation correctly identifies the bouton features measured in this
+    study?
+  - What does the multi-synapse bouton finding imply for how we weight edges in a connectome graph?
+  related_content:
+  - /content-library/neuroanatomy/axon-biology/
+  - /content-library/neuroanatomy/synapse-classification/
+  summaries:
+    beginner: This paper used serial electron microscopy to reconstruct the fine branches of axons in the hippocampus in 3D.
+      The authors showed that the small swellings (boutons) along axons, where synapses form, are highly variable in size
+      and contents. It's an early example of the kind of detailed wiring analysis that modern connectomics does at larger
+      scales.
+    intermediate: Shepherd and Harris performed serial section EM reconstruction of Schaffer collateral axons in rat CA1,
+      providing quantitative data on bouton volumes, vesicle counts, mitochondria presence, and multi-synapse bouton frequencies.
+      They found that only ~40% of boutons contain mitochondria, with important implications for sustained transmission.
+    advanced: 'This study established quantitative priors that remain useful for validating automated reconstructions: mean
+      bouton volume (~0.1 μm³), vesicle density (~200 per bouton), and the fraction of en passant versus terminal boutons.
+      The finding that multi-synapse boutons synapse onto different postsynaptic neurons has implications for how edge weights
+      should be computed in connectome graphs.'
+- id: fiala-harris-2001
+  title: Cylindrical Diameters Method for Calibrating Section Thickness in Serial Electron Microscopy
+  authors: Fiala JC, Harris KM
+  year: 2001
+  journal: Journal of Microscopy
+  doi: 10.1046/j.1365-2818.2001.00926.x
+  dimension: neuroanatomy
+  tags:
+  - imaging:serial-section
+  - imaging:electron-microscopy
+  - methodology:benchmark
+  - neuroanatomy:microtubule
+  - data-storage:alignment
+  key_figures:
+  - 'Fig. 1: geometry of oblique microtubule sections'
+  - 'Fig. 2: calibration curve'
+  discussion_prompts:
+  - Does your automated pipeline account for section-to-section thickness variation?
+  - What other structures could serve as internal calibration references?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/infrastructure/reconstruction-pipeline/
+  summaries:
+    beginner: When scientists cut brain tissue into very thin slices for electron microscopy, they need to know exactly how
+      thick each slice is to build accurate 3D reconstructions. This paper describes a clever method for measuring slice thickness
+      by looking at tube-shaped structures (microtubules) that run through the tissue at known diameters.
+    intermediate: 'Fiala and Harris present a calibration method exploiting the known ~25 nm diameter of microtubules to estimate
+      section thickness from their elliptical profiles in oblique sections. This addresses a chronic problem in serial section
+      EM: nominal microtome settings often differ from actual section thickness by 10-30%.'
+    advanced: This paper is important for anyone working on alignment and voxel calibration in serial section datasets. The
+      statistical framework provides a principled alternative to fold-based or interference-based calibration. Modern connectomics
+      pipelines should incorporate analogous calibration steps, particularly for ATUM-SEM where section thickness variation
+      can be significant.
+- id: kasthuri-2015
+  title: Saturated Reconstruction of a Volume of Neocortex
+  authors: Kasthuri N, Hayworth KJ, Berger DR, et al.
+  year: 2015
+  journal: Cell
+  doi: 10.1016/j.cell.2015.06.054
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:synapse
+  - neuroanatomy:dendrite
+  - neuroanatomy:axon
+  - imaging:ATUM
+  - case-studies:mouse
+  - case-studies:dense-reconstruction
+  - methodology:ground-truth
+  key_figures:
+  - 'Fig. 1: saturated volume overview'
+  - 'Fig. 3: synapse size distribution'
+  - 'Fig. 5: connectivity matrix'
+  discussion_prompts:
+  - What does 'saturated' reconstruction mean operationally, and how would you verify saturation?
+  - Which biological conclusions might be artifacts of the small volume size?
+  related_content:
+  - /content-library/neuroanatomy/synapse-classification/
+  - /content-library/case-studies/microns-visual-cortex/
+  summaries:
+    beginner: This paper reconstructed every single neuron, synapse, and glial cell in a tiny cube of mouse brain. By mapping
+      everything, the authors could count how many synapses each neuron makes and see patterns that would be invisible if
+      only a few cells were traced.
+    intermediate: Kasthuri et al. performed 'saturated' (dense) reconstruction of a 1,500 μm³ volume of mouse somatosensory
+      cortex using ATUM-SEM. They identified all neuronal and glial profiles, mapped all synapses, and quantified connectivity
+      patterns. The dataset became an important benchmark for segmentation algorithms.
+    advanced: 'This paper established methodological standards for dense reconstruction: the concept of ''saturation,'' quantitative
+      reporting of completeness, and the systematic comparison of human annotation consistency. The volume size limitations
+      and the question of whether observations generalize to larger volumes remain active discussion points.'
+  also_dimensions:
+  - case-studies
+- id: helmstaedter-2013
+  title: Connectomic reconstruction of the inner plexiform layer in the mouse retina
+  authors: Helmstaedter M, Briggman KL, Turaga SC, et al.
+  year: 2013
+  journal: Nature
+  doi: 10.1038/nature12346
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:synapse
+  - neuroanatomy:dendrite
+  - case-studies:retina
+  - case-studies:mouse
+  - case-studies:dense-reconstruction
+  key_figures:
+  - 'Fig. 1: IPL reconstruction overview'
+  - 'Fig. 3: bipolar cell type classification'
+  - 'Fig. 5: connectivity matrix between bipolar and ganglion cell types'
+  discussion_prompts:
+  - How does the laminar organization of the retina simplify connectomic reconstruction compared to cortical tissue?
+  - What additional specificity mechanisms beyond co-stratification might explain the observed connectivity patterns?
+  related_content:
+  - /content-library/neuroanatomy/synapse-classification/
+  - /content-library/neuroanatomy/dendrite-biology/
+  summaries:
+    beginner: This paper mapped the complete wiring between two major classes of neurons in the mouse retina at the level
+      of individual synapses. By reconstructing every connection in the inner plexiform layer, the authors revealed how different
+      types of bipolar cells connect to different types of ganglion cells.
+    intermediate: Helmstaedter et al. performed dense connectomic reconstruction of the inner plexiform layer of the mouse
+      retina using SBEM imaging and crowd-sourced proofreading. They reconstructed 950 neurons including all bipolar cell
+      types and most retinal ganglion cell types, mapping synaptic connectivity at sufficient completeness to identify cell-type-specific
+      wiring rules.
+    advanced: This study demonstrated that dense connectomic reconstruction could reveal cell-type-specific wiring rules at
+      scale. The combination of machine learning segmentation with crowd-sourced annotation established a scalable human-in-the-loop
+      pipeline. The connectivity matrix showed that co-stratification is necessary but not sufficient for connectivity.
+- id: motta-2019
+  title: Dense connectomic reconstruction in layer 4 of the somatosensory cortex
+  authors: Motta A, Berning M, Boergens KM, et al.
+  year: 2019
+  journal: Science
+  doi: 10.1126/science.aay3134
+  dimension: neuroanatomy
+  tags:
+  - neuroanatomy:axon
+  - neuroanatomy:dendrite
+  - neuroanatomy:synapse
+  - case-studies:mouse
+  - case-studies:dense-reconstruction
+  - methodology:ground-truth
+  key_figures:
+  - 'Fig. 1: dense reconstruction overview'
+  - 'Fig. 2: thalamocortical axon targeting'
+  - 'Fig. 4: connectivity motif analysis'
+  discussion_prompts:
+  - How do the connectivity motifs observed here compare with those predicted by random connectivity models?
+  - What are the specific challenges of dense reconstruction in cortical neuropil versus retinal tissue?
+  related_content:
+  - /content-library/neuroanatomy/axon-biology/
+  - /content-library/neuroanatomy/synapse-classification/
+  summaries:
+    beginner: This paper reconstructed the dense wiring of a piece of mouse brain in the region that processes touch information
+      from the whiskers. By tracing all the neurons and their connections, the authors could see how long-distance axons arriving
+      from the thalamus connect to local neurons.
+    intermediate: Motta et al. performed dense connectomic reconstruction of layer 4 of mouse barrel cortex using SBEM. They
+      reconstructed ~90 neurons with complete local arbors, identified ~3,000 synapses, and classified thalamocortical versus
+      intracortical axons. Specific connectivity motifs (reciprocal connections, common input) occur at rates above chance.
+    advanced: This study advanced dense cortical reconstruction by combining automated segmentation with systematic error
+      quantification and ground-truth validation. The analysis of thalamocortical axon targeting revealed laminar and cell-type
+      specificity that could not be resolved with sparse reconstructions. The dataset serves as a benchmark for evaluating
+      automated reconstruction pipelines on cortical neuropil.
+- id: denk-horstmann-2004
+  title: Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure
+  authors: Denk W, Horstmann H
+  year: 2004
+  journal: PLoS Biology
+  doi: 10.1371/journal.pbio.0020329
+  dimension: imaging
+  tags:
+  - imaging:SBEM
+  - imaging:SEM
+  - imaging:serial-section
+  - imaging:electron-microscopy
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: SBEM schematic'
+  - 'Fig. 2: block-face image quality'
+  - 'Fig. 4: 3D neural reconstruction'
+  discussion_prompts:
+  - What are the tradeoffs between destroying sections (SBEM) versus preserving them (ATUM)?
+  - How does the choice of SBEM vs FIB-SEM vs ATUM affect downstream segmentation quality?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/imaging/tissue-preparation/
+  summaries:
+    beginner: This paper invented a new way to image brain tissue in 3D. Instead of cutting tissue into slices separately,
+      the authors built a miniature cutting device inside the microscope itself. After imaging the surface, the device shaves
+      off a thin layer and images the new surface — repeat thousands of times to build a 3D picture.
+    intermediate: Denk and Horstmann introduced serial block-face SEM (SBEM), where an ultramicrotome inside an SEM chamber
+      iteratively sections and images a resin-embedded tissue block. This eliminates section collection and handling, dramatically
+      reducing alignment errors. SBEM became one of the two dominant imaging modalities for large-scale connectomics.
+    advanced: The key engineering insight was that back-scattered electron imaging of the block face provides sufficient contrast
+      from heavy-metal-stained tissue without requiring transmitted electrons. SBEM provides isotropic-ish voxels but sections
+      are destroyed during imaging. Beam damage accumulates in deeper layers. Compare with FIB-SEM for true isotropic voxels
+      and ATUM-SEM for section preservation.
+- id: knott-2008
+  title: Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling
+  authors: Knott G, Marchman H, Wall D, Lich B
+  year: 2008
+  journal: Journal of Neuroscience
+  doi: 10.1523/JNEUROSCI.3189-07.2008
+  dimension: imaging
+  tags:
+  - imaging:FIB-SEM
+  - imaging:SEM
+  - imaging:electron-microscopy
+  - neuroanatomy:synapse
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: FIB-SEM geometry'
+  - 'Fig. 2: isotropic voxel demonstration'
+  - 'Fig. 3: synapse reconstruction'
+  discussion_prompts:
+  - For which biological questions is isotropic resolution essential versus nice-to-have?
+  - How does the volume limitation of FIB-SEM affect the kinds of connectomics questions you can ask?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/imaging/acquisition-qa/
+  summaries:
+    beginner: This paper showed how to use a focused beam of ions (like a tiny sandblaster) to slice brain tissue inside an
+      electron microscope, producing truly cube-shaped 3D pixels. Previous methods cut thicker slices, making images stretched
+      in one direction. With FIB-SEM, every direction has the same resolution.
+    intermediate: Knott et al. demonstrated FIB-SEM for neural tissue, achieving isotropic voxels (~5-10 nm in all dimensions).
+      This isotropic resolution is particularly valuable for tracing thin processes that may be missed in anisotropic datasets.
+      The tradeoff is dramatically slower acquisition throughput compared with SBEM or ATUM-SEM.
+    advanced: FIB-SEM's isotropic resolution eliminates z-anisotropy that plagues segmentation in serial section datasets.
+      The Knott et al. implementation achieves ~5 nm isotropic but at volumes orders of magnitude smaller than SBEM datasets.
+      The choice between FIB-SEM and SBEM depends on whether isotropy (spine morphology, organelle quantification) or volume
+      (circuit mapping) is prioritized.
+- id: zheng-2018
+  title: A complete electron microscopy volume of the brain of adult Drosophila melanogaster
+  authors: Zheng Z, Lauritzen JS, Perlman E, et al.
+  year: 2018
+  journal: Cell
+  doi: 10.1016/j.cell.2018.06.019
+  dimension: imaging
+  tags:
+  - imaging:ATUM
+  - imaging:serial-section
+  - imaging:SEM
+  - case-studies:Drosophila
+  - case-studies:FAFB
+  - case-studies:whole-brain
+  - data-storage:pipeline
+  key_figures:
+  - 'Fig. 1: whole-brain overview'
+  - 'Fig. 2: ATUM workflow'
+  - 'Fig. 3: section quality metrics'
+  discussion_prompts:
+  - How does the 10x anisotropy (4 nm xy vs 40 nm z) affect segmentation accuracy?
+  - What would change if this brain were imaged today with current FIB-SEM technology?
+  related_content:
+  - /content-library/imaging/acquisition-qa/
+  - /content-library/case-studies/flywire-whole-brain/
+  summaries:
+    beginner: This paper describes how scientists imaged an entire adult fruit fly brain at nanometer resolution — about 21
+      million images stitched together. The fruit fly brain is tiny but contains about 100,000 neurons. This dataset became
+      the foundation for mapping the fly's entire wiring diagram.
+    intermediate: 'Zheng et al. produced the FAFB dataset using ATUM-SEM: serial sections collected on tape, then imaged across
+      multiple SEMs. The dataset spans the entire Drosophila brain at ~4x4x40 nm voxels (~21 million tiles, ~50 TB). Key technical
+      achievements include section continuity over ~7,000 sections and multi-microscope parallelization.'
+    advanced: 'The FAFB acquisition pipeline illustrates petascale EM challenges: section loss mitigation (only 36 of ~7,000
+      sections unusable), tape-based ATUM collection enabling re-imaging, and multi-microscope parallelization. The anisotropic
+      voxels create z-resolution limitations for thin-process tracing. Compare with the Janelia hemibrain (FIB-SEM, isotropic
+      8 nm, smaller volume, better z-resolution).'
+  also_dimensions:
+  - case-studies
+- id: xu-2017
+  title: Enhanced FIB-SEM systems for large-volume 3D imaging
+  authors: Xu CS, Hayworth KJ, Lu Z, et al.
+  year: 2017
+  journal: eLife
+  doi: 10.7554/eLife.25916
+  dimension: imaging
+  tags:
+  - imaging:FIB-SEM
+  - imaging:electron-microscopy
+  - imaging:resolution
+  - data-storage:scalability
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: enhanced FIB-SEM system'
+  - 'Fig. 3: volume comparison with conventional FIB-SEM'
+  - 'Fig. 5: biological samples at isotropic resolution'
+  discussion_prompts:
+  - At what volume scale does isotropy outweigh throughput advantage of ATUM-SEM?
+  - How do you choose between isotropy and volume when designing a connectomics experiment?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/imaging/tissue-preparation/
+  summaries:
+    beginner: Regular FIB-SEM produces beautiful 3D images with equal resolution in all directions, but can only image tiny
+      volumes. This paper describes engineering improvements that increased the imageable volume by more than 100-fold, making
+      FIB-SEM practical for imaging entire brain regions.
+    intermediate: Xu et al. describe engineering improvements to FIB-SEM enabling continuous imaging over weeks to months,
+      producing volumes exceeding 10⁶ μm³ at 8 nm isotropic resolution. Key innovations include automated FIB milling error
+      detection, improved beam stability, and optimized sample preparation. This platform produced the Janelia hemibrain dataset.
+    advanced: 'The engineering contributions — fault recovery, drift compensation, long-term beam stability — enabled the
+      hemibrain and subsequent FIB-SEM connectomics. The system achieves 4-8 nm isotropic voxels over ~10⁶ μm³. Compare: FAFB
+      achieved 10x larger volume at 10x worse z-resolution; the hemibrain achieved 10x better z-resolution at 10x smaller
+      volume.'
+- id: hayworth-2015
+  title: Ultrastructurally-smooth thick partitioning and volume stitching for large-scale connectomics
+  authors: Hayworth KJ, Xu CS, Lu Z, et al.
+  year: 2015
+  journal: Nature Methods
+  doi: 10.1038/nmeth.3292
+  dimension: imaging
+  tags:
+  - imaging:ATUM
+  - imaging:serial-section
+  - data-storage:pipeline
+  - data-storage:alignment
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: hot knife sectioning'
+  - 'Fig. 2: slab-to-slab stitching'
+  discussion_prompts:
+  - What are the error modes specific to slab-to-slab stitching?
+  - How does this approach change the cost-benefit analysis for very large volumes?
+  related_content:
+  - /content-library/infrastructure/reconstruction-pipeline/
+  - /content-library/imaging/acquisition-qa/
+  summaries:
+    beginner: Cutting brain tissue into thousands of ultra-thin slices is slow and error-prone. This paper developed a method
+      to cut slightly thicker slices, image them from both sides, and computationally stitch the results. This makes it possible
+      to image larger brain volumes faster.
+    intermediate: 'Hayworth et al. developed ''hot knife'' thick-section partitioning: a heated diamond blade cuts resin-embedded
+      tissue into ~20 μm thick slabs with minimal surface damage. Each slab is then sectioned conventionally for ATUM-SEM,
+      and sub-volumes are computationally stitched. This enables parallelized imaging across multiple microscopes.'
+    advanced: The volume stitching approach relaxes the single greatest reliability constraint in serial section connectomics
+      — the requirement for unbroken section series. By accepting controlled cuts at ~20 μm intervals, the method tolerates
+      lost sections within slabs and enables multi-microscope parallelism. This approach was used in the MICrONS mm³ volume
+      acquisition pipeline.
+- id: yin-2020
+  title: A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy
+  authors: Yin W, Brittain D, Bhardwaj J, et al.
+  year: 2020
+  journal: Nature Communications
+  doi: 10.1038/s41467-020-18659-3
+  dimension: imaging
+  tags:
+  - imaging:TEM
+  - imaging:ATUM
+  - data-storage:pipeline
+  - data-storage:scalability
+  - case-studies:MICrONS
+  key_figures:
+  - 'Fig. 1: pipeline overview'
+  - 'Fig. 3: QA dashboard'
+  - 'Fig. 4: throughput metrics'
+  discussion_prompts:
+  - What are the bottlenecks in this pipeline — engineering versus fundamental physics limits?
+  - How would you design an acquisition QA system for a dataset 10x larger?
+  related_content:
+  - /content-library/imaging/acquisition-qa/
+  - /content-library/case-studies/microns-visual-cortex/
+  summaries:
+    beginner: To map the wiring of even a small piece of mouse brain, you need millions of images assembled into one continuous
+      3D volume. This paper describes the industrial-scale imaging system used for the MICrONS project — multiple electron
+      microscopes running simultaneously with automated quality checks.
+    intermediate: Yin et al. describe the multi-beam TEM imaging pipeline used for the MICrONS mm³ cortical volume. Key engineering
+      contributions include automated stage control, real-time QA feedback, parallel operation of multiple TEMs, and computational
+      infrastructure for petabyte-scale image assembly. The pipeline achieved sustained throughput of ~1 megapixel/second
+      per microscope.
+    advanced: This paper is essential for understanding the industrialization of connectomics imaging. The QA architecture
+      — automated focus assessment, contrast monitoring, section damage detection, and real-time re-imaging decisions — represents
+      a mature approach to acquisition reliability at scale. The paper provides concrete throughput numbers useful for planning
+      future large-scale acquisitions.
+- id: lichtman-denk-2011
+  title: 'The big and the small: Challenges of imaging the brain''s circuits'
+  authors: Lichtman JW, Denk W
+  year: 2011
+  journal: Science
+  doi: 10.1126/science.1209168
+  dimension: imaging
+  tags:
+  - imaging:electron-microscopy
+  - imaging:resolution
+  - imaging:correlative-imaging
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: scale comparison of imaging modalities'
+  - 'Fig. 2: resolution versus volume tradeoff'
+  discussion_prompts:
+  - Has the resolution-volume tradeoff described in 2011 been substantially altered by subsequent technology?
+  - What role should correlative imaging play in connectomics experimental design?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/imaging/acquisition-qa/
+  summaries:
+    beginner: This paper is an accessible overview of why imaging the brain's wiring is so hard. The brain contains structures
+      at vastly different scales — from entire brain regions (centimeters) down to individual synapses (nanometers). No single
+      imaging method can capture all of these at once.
+    intermediate: Lichtman and Denk present a perspective on the multi-scale imaging challenge, framing it as simultaneously
+      achieving synapse-resolution (~10 nm) and circuit-scale field of view (~mm to cm). They compare light microscopy, serial
+      section EM, SBEM, and FIB-SEM, and introduce the concept of correlative imaging.
+    advanced: This perspective remains one of the clearest articulations of the resolution-volume tradeoff. Lichtman and Denk
+      quantify the imaging throughput required for mammalian connectomics and argue that brute-force scaling is insufficient
+      without fundamental automation advances. Their analysis of the 'data bottleneck' anticipated the current state of the
+      field.
+- id: briggman-bock-2012
+  title: Volume electron microscopy for neuronal circuit reconstruction
+  authors: Briggman KL, Bock DD
+  year: 2012
+  journal: Current Opinion in Neurobiology
+  doi: 10.1016/j.conb.2011.10.022
+  dimension: imaging
+  tags:
+  - imaging:electron-microscopy
+  - imaging:SBEM
+  - imaging:FIB-SEM
+  - imaging:ATUM
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: volume EM modality comparison'
+  - 'Fig. 2: resolution and volume tradeoff plot'
+  discussion_prompts:
+  - How has the landscape of volume EM modalities changed since 2012?
+  - For a new cortical connectomics project, how would you choose an imaging modality?
+  related_content:
+  - /content-library/imaging/em-principles/
+  - /content-library/imaging/tissue-preparation/
+  summaries:
+    beginner: 'This review compares the three main ways to create 3D images of brain tissue at nanometer scale: SBEM, FIB-SEM,
+      and ATUM. Each method has different strengths — this paper explains when to use which one.'
+    intermediate: 'Briggman and Bock compare volume EM methods for neural circuit reconstruction: resolution, achievable volume,
+      throughput, section preservation, and suitability for different biological questions. Key comparisons include SBEM''s
+      automated workflow versus ATUM''s re-imaging ability, and FIB-SEM''s isotropic voxels versus serial section anisotropy.'
+    advanced: 'This review systematically evaluates how each volume EM modality''s technical parameters propagate through
+      the reconstruction pipeline: anisotropic voxels create directionally biased segmentation errors, FIB-SEM''s isotropy
+      improves small-caliber neurite tracing but limits volume. The framework for matching imaging modality to scientific
+      question continues to guide project planning.'
+- id: dorkenwald-2024-flywire
+  title: Neuronal wiring diagram of an adult brain
+  authors: Dorkenwald S et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-07558-y
+  dimension: proofreading
+  tags:
+  - proofreading:crowd-sourced-proofreading
+  - proofreading:proofreading-strategy
+  - proofreading:QA-metrics
+  - case-studies:FlyWire
+  - data-storage:CAVE
+  - case-studies:Drosophila
+  - case-studies:whole-brain
+  - connectomics:connectome-comparison
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: whole-brain wiring diagram overview'
+  - 'Fig. 2: proofreading workflow and coverage metrics'
+  - 'Fig. 4: connectivity validation against known circuits'
+  discussion_prompts:
+  - How does crowd-sourced proofreading scale compared to expert-only annotation for whole-brain datasets?
+  - What QA metrics are most predictive of biological accuracy in a crowd-proofread connectome?
+  related_content:
+  - /content-library/proofreading/crowd-sourced-proofreading/
+  - /content-library/case-studies/flywire-whole-brain/
+  summaries:
+    beginner: This paper presents the complete wiring diagram of an adult fruit fly brain, containing roughly 130,000 neurons
+      and millions of connections. Hundreds of volunteers helped proofread the automated reconstruction, correcting errors
+      to produce the most complete brain map ever assembled.
+    intermediate: Dorkenwald et al. describe the FlyWire connectome, a community-proofread whole-brain wiring diagram of adult
+      Drosophila built on the FAFB dataset. The proofreading effort combined automated segmentation with large-scale crowd-sourced
+      error correction coordinated through the CAVE infrastructure. Rigorous QA metrics were used to assess completeness and
+      accuracy.
+    advanced: This landmark paper demonstrates that crowd-sourced proofreading can scale to whole-brain connectomics when
+      supported by appropriate infrastructure (CAVE, chunked graph). The proofreading strategy balanced coverage against accuracy
+      by prioritizing high-impact errors. The QA framework — including path-length completeness, synapse assignment accuracy,
+      and known-circuit validation — sets a standard for future connectome releases.
+  also_dimensions:
+  - case-studies
+  - connectomics
+- id: plaza-2014
+  title: Toward large-scale connectome reconstructions
+  authors: Plaza SM, Scheffer LK, Chklovskii DB
+  year: 2014
+  journal: Current Opinion in Neurobiology
+  doi: 10.1016/j.conb.2014.01.019
+  dimension: proofreading
+  tags:
+  - proofreading:proofreading-strategy
+  - proofreading:proofreading-tools
+  - data-storage:pipeline
+  - proofreading:QA-metrics
+  key_figures:
+  - 'Fig. 1: reconstruction pipeline overview'
+  - 'Fig. 2: proofreading bottleneck analysis'
+  - 'Fig. 3: error rate versus effort tradeoff'
+  discussion_prompts:
+  - How should proofreading effort be allocated when time and annotator resources are limited?
+  - What advances since 2014 have most reduced the proofreading bottleneck?
+  related_content:
+  - /content-library/proofreading/proofreading-strategy/
+  - /content-library/infrastructure/reconstruction-pipeline/
+  summaries:
+    beginner: After a computer automatically traces neurons in brain images, humans must check and fix the results — a process
+      called proofreading. This paper explains why proofreading is the biggest bottleneck in mapping brain wiring and discusses
+      strategies for making it faster and more efficient.
+    intermediate: Plaza et al. review the connectome reconstruction pipeline with a focus on the proofreading bottleneck.
+      They analyze how segmentation error rates translate into proofreading time, compare focused proofreading strategies
+      versus exhaustive review, and discuss tools that accelerate human annotators. The paper frames proofreading as the rate-limiting
+      step for large-scale connectomics.
+    advanced: This paper provides a quantitative framework for understanding proofreading cost as a function of segmentation
+      quality, volume size, and desired accuracy. The analysis of focused versus exhaustive proofreading strategies directly
+      informs resource allocation decisions. The QA metrics discussed — including split/merge rates and their asymmetric impact
+      on downstream analysis — remain central to pipeline evaluation.
+- id: zung-2017-proof
+  title: An error detection and correction framework for connectomics
+  authors: Zung J et al.
+  year: 2017
+  journal: NeurIPS 2017
+  doi: null
+  dimension: proofreading
+  tags:
+  - proofreading:merge-error
+  - proofreading:split-error
+  - computer-vision-ml:segmentation
+  key_figures:
+  - 'Fig. 1: error detection architecture'
+  - 'Fig. 2: merge and split error examples'
+  - 'Fig. 3: correction accuracy comparison'
+  discussion_prompts:
+  - How does the asymmetry between merge and split errors affect the design of error detection systems?
+  - Can automated error detection replace human proofreading, or should it be used to prioritize human effort?
+  related_content:
+  - /content-library/proofreading/merge-error/
+  - /content-library/proofreading/split-error/
+  summaries:
+    beginner: 'When computers trace neurons, they make two kinds of mistakes: merging two separate neurons into one, or splitting
+      one neuron into pieces. This paper describes an automated system that detects both types of errors and suggests corrections,
+      reducing the need for tedious human review.'
+    intermediate: Zung et al. propose a deep learning framework for detecting and correcting merge and split errors in automated
+      neuron segmentations. The system uses a convolutional network to classify candidate error locations and suggest corrections.
+      The approach is evaluated on connectomics datasets and demonstrates substantial error reduction.
+    advanced: This framework treats error detection and correction as complementary tasks within a unified architecture. The
+      key insight is that merge errors and split errors have different detection signatures and require different correction
+      strategies. The system can be deployed as a preprocessing step before human proofreading, focusing annotator effort
+      on genuinely ambiguous regions.
+- id: matejek-2019
+  title: Biologically-constrained graphs for long-range interactions in EM volume segmentation
+  authors: Matejek B et al.
+  year: 2019
+  journal: CVPR
+  doi: 10.1109/CVPR.2019.00214
+  dimension: proofreading
+  tags:
+  - proofreading:merge-error
+  - proofreading:split-error
+  - computer-vision-ml:agglomeration
+  - computer-vision-ml:segmentation
+  key_figures:
+  - 'Fig. 1: biologically-constrained graph construction'
+  - 'Fig. 2: long-range interaction examples'
+  - 'Fig. 4: segmentation accuracy improvement'
+  discussion_prompts:
+  - How do biological constraints improve segmentation compared to purely geometric approaches?
+  - What types of errors are best addressed by modeling long-range interactions?
+  related_content:
+  - /content-library/proofreading/merge-error/
+  - /content-library/proofreading/split-error/
+  summaries:
+    beginner: When tracing neurons in brain images, computers sometimes struggle with places where neurons run close together
+      over long distances. This paper uses knowledge about how real neurons behave to build better graphs that help the computer
+      avoid merging or splitting errors in these tricky regions.
+    intermediate: Matejek et al. introduce biologically-constrained graphs that capture long-range interactions between supervoxels
+      in EM volumes. By incorporating biological priors about neurite geometry and branching, the method reduces both merge
+      and split errors during the agglomeration step. The approach is evaluated on benchmark connectomics datasets.
+    advanced: 'This paper addresses a limitation of local-only agglomeration: decisions made at one boundary can create errors
+      that manifest far away. The biologically-constrained graph propagates information across long spatial ranges while respecting
+      neuroanatomical constraints. The method improves upon standard region adjacency graphs and demonstrates that domain-specific
+      inductive biases substantially reduce topological errors in segmentation.'
+- id: dorkenwald-2017-syconn
+  title: Automated synaptic connectivity inference for volume electron microscopy
+  authors: Dorkenwald S et al.
+  year: 2017
+  journal: Nature Methods
+  doi: 10.1038/nmeth.4206
+  dimension: proofreading
+  tags:
+  - proofreading:QA-metrics
+  - computer-vision-ml:synapse-detection
+  - neuroanatomy:synapse
+  - case-studies:Drosophila
+  key_figures:
+  - 'Fig. 1: SyConn pipeline overview'
+  - 'Fig. 3: synapse detection accuracy'
+  - 'Fig. 5: connectivity inference validation'
+  discussion_prompts:
+  - How can synapse-level QA metrics serve as a proxy for overall reconstruction quality?
+  - What are the failure modes of automated synaptic connectivity inference?
+  related_content:
+  - /content-library/proofreading/QA-metrics/
+  - /content-library/neuroanatomy/synapse-classification/
+  summaries:
+    beginner: After tracing neurons, you also need to find where they connect — the synapses. This paper describes SyConn,
+      an automated system that detects synapses in electron microscopy images and figures out which neurons they connect.
+      This saves enormous amounts of manual annotation time.
+    intermediate: Dorkenwald et al. present SyConn, a pipeline for automated synaptic connectivity inference from volume EM
+      data. The system detects synapses, assigns them to pre- and postsynaptic partners, and classifies synapse types. Performance
+      is validated against manual annotations in Drosophila tissue, providing quantitative QA metrics for connectivity accuracy.
+    advanced: SyConn demonstrates that synapse detection and partner assignment can be automated with sufficient accuracy
+      to support connectomic analysis. The QA framework — precision/recall for synapse detection, partner assignment accuracy,
+      and type classification metrics — provides a template for evaluating connectivity inference pipelines. The error analysis
+      reveals that partner assignment is the primary accuracy bottleneck.
+- id: dorkenwald-2022-flywire-platform
+  title: 'FlyWire: online community for whole-brain connectomics'
+  authors: Dorkenwald S et al.
+  year: 2022
+  journal: Nature Methods
+  doi: 10.1038/s41592-021-01330-0
+  dimension: proofreading
+  tags:
+  - proofreading:crowd-sourced-proofreading
+  - proofreading:proofreading-tools
+  - data-storage:CAVE
+  - case-studies:FlyWire
+  key_figures:
+  - 'Fig. 1: FlyWire platform interface'
+  - 'Fig. 2: chunked graph proofreading architecture'
+  - 'Fig. 4: community contribution metrics'
+  discussion_prompts:
+  - What design decisions make a proofreading platform effective for non-expert contributors?
+  - How does the chunked graph architecture enable real-time collaborative proofreading?
+  related_content:
+  - /content-library/proofreading/crowd-sourced-proofreading/
+  - /content-library/proofreading/proofreading-tools/
+  summaries:
+    beginner: FlyWire is a website where anyone can help map the fruit fly brain by correcting computer-generated neuron tracings.
+      This paper describes how the platform was built to let hundreds of people work on the same brain simultaneously without
+      interfering with each other's edits.
+    intermediate: Dorkenwald et al. describe the FlyWire platform, a web-based system for collaborative proofreading of the
+      FAFB whole-brain segmentation. The platform uses a chunked graph data structure (CAVE) that supports real-time, conflict-free
+      multi-user editing. Community engagement strategies enabled hundreds of contributors to proofread neurons across the
+      entire brain.
+    advanced: The technical core of FlyWire is the chunked graph representation that decomposes the segmentation into spatially
+      localized, independently editable chunks. This architecture enables O(1) edit operations regardless of dataset size
+      and supports concurrent multi-user editing without locks. The platform design demonstrates that connectomics proofreading
+      can be effectively crowdsourced when tooling eliminates coordination overhead.
+- id: seung-2009
+  title: 'Reading the book of memory: Sparse sampling versus dense mapping of connectomes'
+  authors: Seung HS
+  year: 2009
+  journal: Neuron
+  doi: 10.1016/j.neuron.2009.02.021
+  dimension: proofreading
+  tags:
+  - proofreading:proofreading-strategy
+  - methodology:experimental-design
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: sparse versus dense reconstruction comparison'
+  - 'Fig. 2: information content analysis'
+  - 'Fig. 3: error tolerance in sparse versus dense approaches'
+  discussion_prompts:
+  - How does the choice between sparse and dense reconstruction affect the required proofreading accuracy?
+  - Has the field's trajectory since 2009 validated Seung's arguments for dense reconstruction?
+  related_content:
+  - /content-library/proofreading/proofreading-strategy/
+  - /content-library/methodology/experimental-design/
+  summaries:
+    beginner: Should we trace every single neuron in a brain region, or just sample a few? This paper argues that dense mapping
+      — tracing everything — reveals patterns invisible to sparse sampling. It lays out the case for why complete reconstruction
+      is worth the enormous effort.
+    intermediate: Seung presents a theoretical argument comparing sparse sampling and dense mapping strategies for connectomics.
+      He analyzes the information yield per unit of reconstruction effort and argues that dense reconstruction provides qualitatively
+      different insights, particularly for identifying connectivity motifs and statistical regularities that require complete
+      neighborhood information.
+    advanced: 'This perspective paper formalizes the sparse-versus-dense tradeoff in terms of the statistical power to detect
+      connectivity motifs. Seung argues that sparse reconstructions are inherently biased toward strong connections and miss
+      higher-order structure. The analysis has implications for proofreading strategy: dense reconstruction demands uniformly
+      high accuracy, whereas sparse reconstruction tolerates lower accuracy on non-targeted neurons.'
+- id: lu-2019-multicut
+  title: Large-scale structured prediction for connectomics using multicut
+  authors: various authors
+  year: 2019
+  journal: MICCAI
+  doi: null
+  dimension: proofreading
+  tags:
+  - computer-vision-ml:agglomeration
+  - proofreading:merge-error
+  - proofreading:split-error
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: multicut formulation overview'
+  - 'Fig. 2: agglomeration result comparison'
+  - 'Fig. 4: benchmark error analysis'
+  discussion_prompts:
+  - How does the multicut formulation handle the tradeoff between merge and split errors?
+  - What are the computational scalability limits of structured prediction approaches for connectomics?
+  related_content:
+  - /content-library/proofreading/merge-error/
+  - /content-library/methodology/benchmark/
+  summaries:
+    beginner: After a computer detects small fragments of neurons in brain images, it needs to decide which fragments belong
+      to the same neuron. This paper uses a mathematical approach called multicut to make these grouping decisions at large
+      scale, balancing the risk of merging different neurons versus leaving one neuron in pieces.
+    intermediate: This paper applies the multicut (correlation clustering) framework to large-scale neuron agglomeration in
+      connectomics. The method jointly optimizes all fragment-merging decisions to minimize a global objective that balances
+      merge and split errors. Benchmark evaluation demonstrates competitive accuracy with improved consistency compared to
+      greedy agglomeration methods.
+    advanced: The multicut formulation casts agglomeration as a structured prediction problem where merge/split decisions
+      are globally coupled. Unlike greedy approaches, multicut provides theoretical guarantees about solution quality relative
+      to the objective. The paper evaluates computational strategies for scaling to large volumes and analyzes how edge weight
+      calibration affects the merge-split error tradeoff on standard connectomics benchmarks.
+- id: zeng-sanes-2017
+  title: 'Neuronal cell-type classification: challenges, opportunities and the path forward'
+  authors: Zeng H, Sanes JR
+  year: 2017
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/nrn.2017.85
+  dimension: cell-types
+  tags:
+  - cell-types:neuron-classification
+  - cell-types:morphological-classification
+  - cell-types:molecular-markers
+  - cell-types:cell-census
+  key_figures:
+  - 'Fig. 1: classification modalities'
+  - 'Fig. 2: cross-modal correspondence'
+  - 'Fig. 4: hierarchical type taxonomy'
+  discussion_prompts:
+  - When connectomics-derived cell types disagree with transcriptomic types, which should take precedence?
+  - At what granularity should cell types be defined for connectomics analyses?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  - /content-library/cell-types/axon-dendrite-classification/
+  summaries:
+    beginner: Neurons come in many types, but scientists don't agree on the best way to classify them. This review explains
+      approaches by shape, electrical activity, gene expression, or connectivity — each gives a different answer.
+    intermediate: 'Zeng and Sanes provide a comprehensive framework for cell type classification across modalities. Key arguments:
+      no single modality is sufficient, cross-modal correspondence is imperfect, and classification granularity depends on
+      the scientific question.'
+    advanced: This review establishes the intellectual framework for interpreting cell type assignments in connectomics datasets.
+      The critical tension is between lumping and splitting. Whether connectivity-defined types correspond to transcriptomically
+      defined types remains open.
+- id: markram-2004
+  title: Interneurons of the neocortical inhibitory system
+  authors: Markram H, Toledo-Rodriguez M, Wang Y, et al.
+  year: 2004
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/nrn1519
+  dimension: cell-types
+  tags:
+  - cell-types:interneuron
+  - cell-types:inhibitory
+  - cell-types:morphological-classification
+  - neuroanatomy:axon
+  - neuroanatomy:synapse
+  key_figures:
+  - 'Fig. 1: interneuron morphological types'
+  - 'Fig. 2: target-domain classification'
+  discussion_prompts:
+  - Which interneuron types can be reliably identified from EM morphology alone?
+  - How does volume size affect your ability to classify interneurons by axonal arborization?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  summaries:
+    beginner: About 20% of cortical neurons are interneurons that inhibit other neurons. This review catalogs the many types
+      based on shape, electrical properties, and molecular markers. Different interneurons target different parts of other
+      neurons and play different circuit roles.
+    intermediate: Markram et al. provide systematic classification of cortical interneurons integrating morphological, electrophysiological,
+      and molecular criteria. The taxonomy includes basket cells, chandelier cells, Martinotti cells, and neurogliaform cells.
+    advanced: Foundational reference for interpreting interneuron morphology in EM connectomics. The axonal arborization-based
+      classification is directly accessible from connectome data, but translating from light microscopy (complete arbors)
+      to EM (often partial arbors) introduces systematic biases.
+- id: tasic-2018
+  title: Shared and distinct transcriptomic cell types across neocortical areas
+  authors: Tasic B, Yao Z, Graybuck LT, et al.
+  year: 2018
+  journal: Nature
+  doi: 10.1038/s41586-018-0654-5
+  dimension: cell-types
+  tags:
+  - cell-types:neuron-classification
+  - cell-types:molecular-markers
+  - cell-types:cell-census
+  - case-studies:mouse
+  - case-studies:visual-cortex
+  key_figures:
+  - 'Fig. 1: taxonomy overview'
+  - 'Fig. 2: area-specific types'
+  discussion_prompts:
+  - What does area-specific excitatory type specialization mean for interpreting the MICrONS dataset?
+  - How should connectomics cell type assignments be reconciled with transcriptomic ground truth?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  - /content-library/case-studies/microns-visual-cortex/
+  summaries:
+    beginner: Do different brain regions use the same types of neurons? This study found that inhibitory neuron types are
+      shared across areas, while excitatory neuron types differ — each area has its own specialized excitatory neurons.
+    intermediate: Tasic et al. performed scRNA-seq on ~24,000 cells from two mouse cortical areas, identifying 133 transcriptomic
+      types. GABAergic types are largely shared; glutamatergic types show area-specific specialization, particularly in deep
+      layers.
+    advanced: The most comprehensive single-cell transcriptomic reference for mouse cortex. For connectomics, cell type classifiers
+      trained on one volume may not transfer to other areas. The hierarchical taxonomy provides a template for organizing
+      connectomics-derived classifications.
+- id: schneider-mizell-2024
+  title: Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex
+  authors: Schneider-Mizell CM, Bodor AL, Collman F, et al.
+  year: 2024
+  journal: bioRxiv
+  doi: 10.1101/2023.01.23.525290
+  dimension: cell-types
+  tags:
+  - cell-types:neuron-classification
+  - cell-types:inhibitory
+  - cell-types:connectivity-based-classification
+  - case-studies:MICrONS
+  key_figures:
+  - 'Fig. 1: inhibitory neuron morphologies'
+  - 'Fig. 3: connectivity-based classification'
+  discussion_prompts:
+  - Which connectivity features are most robust to proofreading incompleteness?
+  - How should cell type boundaries be drawn when morphological and connectivity clustering disagree?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  - /content-library/case-studies/microns-visual-cortex/
+  summaries:
+    beginner: Can you figure out what type each neuron is just by looking at its shape and connections? This study used the
+      MICrONS dataset to classify inhibitory neurons, finding that connectivity features can distinguish types that look morphologically
+      similar.
+    intermediate: Schneider-Mizell et al. classified inhibitory neurons in the MICrONS mm³ volume using morphological and
+      connectivity features, showing that connectivity features improve classification beyond morphology alone.
+    advanced: 'Demonstrates the unique value of dense connectomics for cell type classification: features like target layer
+      distribution and partner type composition are only accessible at connectome scale. Key challenges include handling incomplete
+      arbors and defining features robust to proofreading errors.'
+- id: biccn-2021
+  title: A multimodal cell census and atlas of the mammalian primary motor cortex
+  authors: BRAIN Initiative Cell Census Network (BICCN)
+  year: 2021
+  journal: Nature
+  doi: 10.1038/s41586-021-03950-0
+  dimension: cell-types
+  tags:
+  - cell-types:cell-census
+  - cell-types:neuron-classification
+  - cell-types:molecular-markers
+  - case-studies:mouse
+  - methodology:reproducibility
+  key_figures:
+  - 'Fig. 1: multimodal data integration'
+  - 'Fig. 2: consensus taxonomy'
+  discussion_prompts:
+  - How should connectomics classifications be aligned with the BICCN reference taxonomy?
+  - Which BICCN modalities are most and least accessible from EM data?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  summaries:
+    beginner: The BICCN cataloged every type of cell in mouse motor cortex using every available technology — gene expression,
+      cell shapes, electrical recordings, and connectivity — creating the most comprehensive cell type atlas ever made.
+    intermediate: The flagship BICCN publication presents an integrated multimodal cell census combining transcriptomics,
+      chromatin accessibility, morphological reconstruction, electrophysiology, and projection mapping. The study identifies
+      ~100 consensus types and maps cross-modal correspondences.
+    advanced: 'Establishes the gold standard for multimodal cell type classification. For connectomics: morphological features
+      alone distinguish major classes but not fine subtypes, connectivity-defined subtypes often correspond to transcriptomic
+      subtypes, and the reproducibility analysis provides confidence intervals for classification reliability.'
+- id: loomba-2022
+  title: Connectomic comparison of mouse and human cortex
+  authors: Loomba S, Straehle J, Ganguly V, et al.
+  year: 2022
+  journal: Science
+  doi: 10.1126/science.abo0924
+  dimension: cell-types
+  tags:
+  - cell-types:neuron-classification
+  - neuroanatomy:synapse
+  - case-studies:mouse
+  - case-studies:human
+  - connectomics:connectome-comparison
+  key_figures:
+  - 'Fig. 1: cross-species reconstruction'
+  - 'Fig. 2: synapse density comparison'
+  discussion_prompts:
+  - Which findings from mouse connectomics are likely to generalize to human cortex?
+  - How do differences in inhibitory circuit organization affect our understanding of cortical computation?
+  related_content:
+  - /content-library/cell-types/neuron-type-identification/
+  - /content-library/neuroanatomy/synapse-classification/
+  summaries:
+    beginner: Are human and mouse brains wired the same way at the microscopic level? This study compared cortex from both
+      species using EM and found both similarities and important differences, including more synapses per neuron in humans.
+    intermediate: Loomba et al. performed dense EM reconstruction of cortical samples from mouse and human temporal cortex.
+      Human cortex shows higher synapse density, more inhibitory synapses, and distinct connectivity motifs.
+    advanced: 'First systematic connectomic comparison across mammalian species at synaptic resolution. The methodology —
+      matching processing and analysis pipelines across species — is a template for cross-species connectomics. Key findings:
+      ~2x higher synapse density in human, shifted E/I ratio, and species-specific motifs.'
+- id: januszewski-2018
+  title: High-precision automated reconstruction of neurons with flood-filling networks
+  authors: Januszewski M et al.
+  year: 2018
+  journal: Nature Methods
+  doi: 10.1038/s41592-018-0049-4
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:flood-filling-network
+  - computer-vision-ml:instance-segmentation
+  - computer-vision-ml:3D-convolution
+  - proofreading:QA-metrics
+  key_figures:
+  - 'Fig. 1: flood-filling network architecture and iterative seed expansion'
+  - 'Fig. 3: segmentation accuracy comparison on songbird and fly datasets'
+  - 'Fig. 5: reconstruction error rates and proofreading effort reduction'
+  discussion_prompts:
+  - How does the recurrent, seed-based flood-filling approach change the kinds of errors produced compared to traditional
+    boundary-detection pipelines?
+  - What practical limits does the sequential seed-expansion strategy impose on parallelization and throughput?
+  related_content:
+  - /content-library/computer-vision-ml/instance-segmentation/
+  - /content-library/proofreading/QA-metrics/
+  summaries:
+    beginner: Instead of first drawing boundaries and then grouping pixels, this method grows each neuron outward from a seed
+      point using a neural network, like digitally flood-filling a region. This approach produces far fewer merge errors,
+      meaning it rarely accidentally glues two different neurons together.
+    intermediate: Januszewski et al. introduce flood-filling networks (FFNs) that perform instance segmentation by iteratively
+      predicting an object mask centered on a moving field of view. The recurrent architecture accumulates context as it grows,
+      naturally handling complex branching morphology. On multiple EM datasets the method achieves near-human accuracy with
+      substantially reduced proofreading burden.
+    advanced: 'FFNs reformulate segmentation as sequential decision-making: a 3D convolutional network predicts voxel-level
+      membership probabilities conditioned on the already-segmented region. This removes the need for a separate agglomeration
+      step and shifts the error profile toward split errors (missed branches) rather than merges. The paper benchmarks on
+      the songbird area X and Drosophila datasets, reporting large reductions in expected run length (ERL) error.'
+- id: ronneberger-2015
+  title: 'U-Net: Convolutional Networks for Biomedical Image Segmentation'
+  authors: Ronneberger O, Fischer P, Brox T
+  year: 2015
+  journal: MICCAI
+  doi: 10.1007/978-3-319-24574-4_28
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:U-Net
+  - computer-vision-ml:semantic-segmentation
+  - computer-vision-ml:boundary-detection
+  key_figures:
+  - 'Fig. 1: U-Net encoder-decoder architecture with skip connections'
+  - 'Fig. 2: overlap-tile strategy for seamless large-image segmentation'
+  - 'Fig. 4: cell segmentation results on light-microscopy benchmarks'
+  discussion_prompts:
+  - Why have skip connections become the default in nearly all biomedical segmentation architectures since this paper?
+  - How well does the U-Net design, originally developed for 2D light microscopy, transfer to anisotropic 3D electron microscopy
+    volumes?
+  related_content:
+  - /content-library/computer-vision-ml/semantic-segmentation/
+  - /content-library/computer-vision-ml/boundary-detection/
+  summaries:
+    beginner: 'U-Net is a neural network shaped like the letter U: it first compresses an image to capture context, then expands
+      it back to full resolution to label every pixel. Its clever shortcut connections between the two halves preserve fine
+      detail, making it extremely popular for biological image segmentation tasks.'
+    intermediate: Ronneberger et al. propose an encoder-decoder architecture with symmetric skip connections that concatenate
+      high-resolution feature maps from the contracting path to the expanding path. Combined with extensive data augmentation,
+      U-Net achieves strong performance with very few training images. The architecture became the de facto backbone for EM
+      neuron boundary prediction and many downstream connectomics pipelines.
+    advanced: 'The key architectural insight is that skip connections allow the decoder to recover spatial precision lost
+      during downsampling without sacrificing the large receptive field needed for context. The weighted cross-entropy loss
+      with distance-based weight maps at cell boundaries encourages the network to learn thin, continuous boundary predictions.
+      U-Net''s influence on connectomics is pervasive: most modern 3D segmentation networks (3D U-Net, FusionNet, etc.) are
+      direct descendants of this design.'
+- id: funke-2019
+  title: Large scale image segmentation with structured loss based on partial differential equations
+  authors: Funke J et al.
+  year: 2019
+  journal: IEEE TPAMI
+  doi: 10.1109/TPAMI.2018.2858744
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:affinity-prediction
+  - computer-vision-ml:agglomeration
+  - computer-vision-ml:watershed
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: structured loss formulation linking voxel affinities to segmentation quality'
+  - 'Fig. 3: watershed-based post-processing pipeline'
+  - 'Fig. 5: benchmark comparison on CREMI and FIB-25 datasets'
+  discussion_prompts:
+  - How does training with a structured, segmentation-aware loss improve results compared to training with per-voxel cross-entropy?
+  - What are the practical trade-offs between watershed-based agglomeration and flood-filling approaches for large-scale reconstruction?
+  related_content:
+  - /content-library/computer-vision-ml/affinity-prediction/
+  - /content-library/methodology/benchmark/
+  summaries:
+    beginner: This paper teaches a neural network to predict how strongly neighboring pixels belong to the same neuron, then
+      uses a classic image-processing technique called watershed to turn those predictions into full neuron segments. A special
+      training strategy ensures the network optimizes for final segmentation quality, not just pixel-level accuracy.
+    intermediate: Funke et al. train a CNN to predict local affinities (probabilities that adjacent voxels share the same
+      label) and introduce a structured loss that backpropagates through a differentiable approximation of the downstream
+      watershed segmentation. This end-to-end-aware training closes the gap between voxel-level prediction accuracy and actual
+      segmentation metrics like variation of information.
+    advanced: The structured loss is derived from a PDE relaxation of the discrete segmentation objective, allowing gradient
+      flow from segmentation-level metrics back to network weights. The method outperforms per-voxel-loss baselines on CREMI
+      and FIB-25 benchmarks and demonstrates that optimizing a surrogate that better approximates the true evaluation metric
+      yields consistent gains in adapted Rand index and variation of information.
+- id: lee-2017
+  title: Superhuman accuracy on the SNEMI3D connectomics challenge
+  authors: Lee K, Zung J, Li P, et al.
+  year: 2017
+  journal: arXiv:1706.00120
+  doi: null
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:3D-convolution
+  - computer-vision-ml:boundary-detection
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: residual symmetric 3D U-Net architecture'
+  - 'Fig. 2: error comparison between model predictions and human annotations'
+  - 'Fig. 4: ablation study on training augmentations'
+  discussion_prompts:
+  - What does it mean for a model to achieve 'superhuman' accuracy, and how should we interpret this when the ground truth
+    itself is human-generated?
+  - How important were training-time augmentations versus architectural improvements in reaching top performance?
+  related_content:
+  - /content-library/computer-vision-ml/segmentation/
+  - /content-library/methodology/benchmark/
+  summaries:
+    beginner: This paper shows that a deep learning model can trace neuron boundaries in brain images more accurately than
+      trained human annotators, at least on a standard benchmark dataset. The key ingredients are a carefully designed 3D
+      neural network and aggressive data augmentation during training.
+    intermediate: Lee et al. present a 3D residual symmetric U-Net that surpasses human performance on the SNEMI3D neuron
+      segmentation benchmark. The architecture combines residual learning with a symmetric encoder-decoder and is trained
+      with heavy augmentation including simulated misalignment and missing sections. The result demonstrates that architecture
+      and augmentation together can push automated segmentation beyond expert-level accuracy.
+    advanced: The residual symmetric network extends U-Net with skip connections that use element-wise summation rather than
+      concatenation, reducing parameter count while preserving gradient flow. Ablation studies reveal that domain-specific
+      augmentations (elastic deformation, misalignment simulation, missing-section simulation) contribute more to performance
+      than architectural depth alone. The 'superhuman' claim is grounded in a direct comparison with independently generated
+      human ground-truth annotations that disagree with each other more than the model disagrees with consensus.
+- id: turaga-2010
+  title: Convolutional networks can learn to generate affinity graphs for image segmentation
+  authors: Turaga SC et al.
+  year: 2010
+  journal: Neural Computation
+  doi: 10.1162/neco.2009.10-08-881
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:affinity-prediction
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:boundary-detection
+  key_figures:
+  - 'Fig. 1: affinity graph representation of image segmentation'
+  - 'Fig. 3: convolutional network trained with MALIS loss'
+  - 'Fig. 5: segmentation results on EM neuron images'
+  discussion_prompts:
+  - How does the affinity-graph representation of segmentation differ from direct boundary prediction, and what advantages
+    does it offer?
+  - Why was the MALIS (maximin affinity learning) loss an important conceptual advance over pixel-wise cross-entropy for segmentation?
+  related_content:
+  - /content-library/computer-vision-ml/affinity-prediction/
+  - /content-library/computer-vision-ml/boundary-detection/
+  summaries:
+    beginner: Instead of just drawing edges around neurons, this paper trains a neural network to predict for every pair of
+      neighboring pixels whether they belong to the same neuron. These pairwise 'affinity' predictions can then be turned
+      into a full segmentation. This idea became one of the foundational approaches in connectomics image analysis.
+    intermediate: 'Turaga et al. introduce the affinity graph framework for neuron segmentation: a CNN predicts edge affinities
+      between neighboring voxels, and a graph partitioning step produces the final segmentation. They also propose the MALIS
+      loss, which focuses gradient updates on the maximally incorrect affinities that would cause topological errors, rather
+      than treating all voxels equally.'
+    advanced: This paper laid the theoretical groundwork for affinity-based segmentation in connectomics. The MALIS criterion
+      computes gradients only on the critical edges of the minimum spanning tree that connect or separate ground-truth segments,
+      providing a training signal that is directly sensitive to topological merge and split errors. The affinity-graph formulation
+      also naturally supports long-range affinities, which later work showed improves segmentation of thin processes.
+- id: sheridan-2023
+  title: Local shape descriptors for neuron segmentation
+  authors: Sheridan A et al.
+  year: 2023
+  journal: Nature Methods
+  doi: 10.1038/s41592-022-01711-z
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:agglomeration
+  - computer-vision-ml:self-supervised
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: local shape descriptor (LSD) prediction as an auxiliary task'
+  - 'Fig. 2: segmentation improvement across datasets with LSD embeddings'
+  - 'Fig. 4: generalization to new tissue types without retraining'
+  discussion_prompts:
+  - Why does predicting local shape descriptors as an auxiliary task improve boundary prediction, even though shape information
+    is not used at test time?
+  - How does the self-supervised nature of LSD training affect the method's ability to generalize across species and brain
+    regions?
+  related_content:
+  - /content-library/computer-vision-ml/segmentation/
+  - /content-library/methodology/benchmark/
+  summaries:
+    beginner: 'This paper gives a segmentation network an extra training task: predicting the local shape (size, orientation,
+      elongation) of the neuron at each point. Even though this shape information is discarded at test time, the extra task
+      forces the network to learn better internal representations, resulting in more accurate neuron tracings.'
+    intermediate: Sheridan et al. propose local shape descriptors (LSDs) — statistics of the local neuron shape at each voxel
+      — as an auxiliary self-supervised training target for affinity-based segmentation networks. The LSD task requires no
+      additional manual labels since descriptors are computed from existing ground-truth masks. Adding LSDs consistently improves
+      segmentation across multiple EM datasets and reduces the domain gap when transferring to new tissue.
+    advanced: LSDs encode six local statistics (mean offset, covariance eigenvalues, orientation) at each voxel, providing
+      a dense self-supervised signal that regularizes intermediate feature representations. The method is architecture-agnostic
+      and complements both affinity and direct segmentation approaches. Benchmark experiments on zebrafish, fly, and mouse
+      EM data show consistent improvements in VOI and ERL, and the learned features transfer better across domains than networks
+      trained on affinities alone.
+- id: heinrich-2018
+  title: Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain
+  authors: Heinrich L et al.
+  year: 2018
+  journal: MICCAI
+  doi: 10.1007/978-3-030-00934-2_36
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:synapse-detection
+  - computer-vision-ml:3D-convolution
+  - case-studies:Drosophila
+  key_figures:
+  - 'Fig. 1: network architecture for anisotropic synapse detection'
+  - 'Fig. 2: predicted synaptic cleft segmentations in the Drosophila brain'
+  - 'Fig. 4: precision-recall analysis across brain regions'
+  discussion_prompts:
+  - How does the anisotropy of typical EM data (lower z-resolution) affect network architecture choices for synapse detection?
+  - What additional information beyond cleft location is needed to turn synapse detections into a functional connectivity
+    map?
+  related_content:
+  - /content-library/computer-vision-ml/synapse-detection/
+  - /content-library/case-studies/Drosophila/
+  summaries:
+    beginner: Synapses are the connection points between neurons, and finding them automatically in brain images is essential
+      for mapping neural circuits. This paper trains a 3D neural network to detect the narrow gaps (clefts) at synapses throughout
+      the entire fruit fly brain, handling the challenge that the images have much lower resolution in one direction.
+    intermediate: Heinrich et al. develop a 3D CNN for synaptic cleft detection in the full adult Drosophila brain (FAFB)
+      dataset, which has highly anisotropic voxel resolution. The architecture uses asymmetric convolution kernels and pooling
+      to match the data's anisotropy. The method achieves high precision and recall across diverse brain regions, enabling
+      brain-wide synapse mapping.
+    advanced: The key architectural adaptation is the use of valid convolutions with anisotropic kernel sizes that respect
+      the roughly 8:1 xy-to-z resolution ratio of the FAFB dataset. The paper addresses the class imbalance between cleft
+      and non-cleft voxels with a combination of balanced sampling and weighted loss. The detected clefts, combined with neuron
+      segmentation, provide the connectivity edges for large-scale circuit analysis in Drosophila.
+- id: becker-2013
+  title: Learning context cues for synapse segmentation
+  authors: Becker C et al.
+  year: 2013
+  journal: IEEE TMI
+  doi: 10.1109/TMI.2012.2211864
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:synapse-detection
+  - computer-vision-ml:object-detection
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: context feature extraction around candidate synapse locations'
+  - 'Fig. 3: precision-recall curves comparing context-aware versus local-only classifiers'
+  discussion_prompts:
+  - Why is local context (e.g., presence of vesicles, mitochondria, membranes) important for distinguishing true synapses
+    from similar-looking structures?
+  - How do hand-crafted context features compare to features learned end-to-end by modern deep networks for synapse detection?
+  related_content:
+  - /content-library/computer-vision-ml/synapse-detection/
+  - /content-library/methodology/benchmark/
+  summaries:
+    beginner: Finding synapses in brain images is hard because they are small and look similar to other structures. This paper
+      shows that looking at the surrounding context — nearby vesicles, membranes, and mitochondria — helps a computer classifier
+      distinguish real synapses from false alarms much more reliably.
+    intermediate: Becker et al. demonstrate that incorporating contextual features from the neighborhood around candidate
+      synapse locations significantly improves detection accuracy. They extract multi-scale features capturing the presence
+      of vesicle clouds, membrane proximity, and organelle context, and train a random forest classifier. The context-aware
+      approach substantially outperforms local-texture-only baselines on ssTEM benchmark data.
+    advanced: This paper formalizes the observation that synapse identification depends on contextual cues (presynaptic vesicle
+      pools, postsynaptic densities, cleft geometry) that extend well beyond the synapse itself. The feature design uses ray-based
+      descriptors and Haar-like filters at multiple scales to capture these cues. While predating deep learning approaches,
+      the work establishes the principle that synapse detection benefits from large receptive fields — a finding that directly
+      motivated the use of deep CNNs with wide context for this task.
+- id: zung-2017
+  title: An error detection and correction framework for connectomics
+  authors: Zung J et al.
+  year: 2017
+  journal: NeurIPS 2017
+  doi: null
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:segmentation
+  - proofreading:merge-error
+  - proofreading:split-error
+  - computer-vision-ml:active-learning
+  key_figures:
+  - 'Fig. 1: error detection network architecture for identifying merge and split errors'
+  - 'Fig. 2: error correction pipeline integrating detection with targeted re-segmentation'
+  - 'Fig. 4: accuracy improvement as a function of correction iterations'
+  discussion_prompts:
+  - How does framing proofreading as an automated error-detection-and-correction loop change the requirements for initial
+    segmentation quality?
+  - What types of segmentation errors are hardest for the error detection network to identify, and why?
+  related_content:
+  - /content-library/proofreading/merge-error/
+  - /content-library/proofreading/split-error/
+  summaries:
+    beginner: Even the best automatic neuron tracing makes mistakes — sometimes merging two neurons into one or splitting
+      one neuron into pieces. This paper trains a second neural network to find these mistakes automatically and then fix
+      them, creating a self-correcting pipeline that improves reconstruction quality without human intervention.
+    intermediate: 'Zung et al. propose a two-stage framework: an error detector network classifies whether segments contain
+      merge or split errors, and an error corrector network re-segments flagged regions. The iterative detect-correct loop
+      progressively improves segmentation quality. The framework can also prioritize the most impactful errors for human proofreaders,
+      functioning as an active learning system.'
+    advanced: The error detection network operates on local windows around segment boundaries and outputs merge/split error
+      probabilities. The correction module applies targeted re-segmentation only in high-error-probability regions, preserving
+      correct segmentation elsewhere. The iterative application converges to improved accuracy, and the error probability
+      scores provide a natural priority ordering for human-in-the-loop proofreading, bridging fully automated and semi-automated
+      reconstruction paradigms.
+- id: turner-2022
+  title: 'Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity'
+  authors: Turner NL et al.
+  year: 2022
+  journal: Cell
+  doi: 10.1016/j.cell.2022.01.023
+  dimension: computer-vision-ml
+  tags:
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:synapse-detection
+  - case-studies:MICrONS
+  - case-studies:mouse
+  key_figures:
+  - 'Fig. 1: MICrONS pipeline overview from two-photon imaging to EM reconstruction'
+  - 'Fig. 3: automated neuron segmentation and synapse detection at cubic-millimeter scale'
+  - 'Fig. 6: functional-structural correlation analysis linking activity to connectivity'
+  discussion_prompts:
+  - How does combining functional (calcium imaging) and structural (EM) data change what we can learn about cortical circuits
+    compared to either modality alone?
+  - What were the major computational bottlenecks in producing the MICrONS dataset, and how might they be addressed for even
+    larger volumes?
+  related_content:
+  - /content-library/case-studies/MICrONS/
+  - /content-library/computer-vision-ml/synapse-detection/
+  summaries:
+    beginner: This landmark paper describes the MICrONS project, which combined recordings of neural activity in a living
+      mouse with a detailed 3D map of the same brain tissue reconstructed from electron microscopy. The result is the largest
+      dataset that links what neurons do (their activity) to how they are wired together.
+    intermediate: Turner et al. present the MICrONS cubic-millimeter-scale cortical dataset combining in vivo two-photon calcium
+      imaging with post-hoc serial-section EM and automated reconstruction. The pipeline integrates flood-filling network
+      segmentation, automated synapse detection, and multi-scale proofreading to produce a connectome with matched functional
+      data. The dataset enables direct analysis of structure-function relationships in mouse visual cortex.
+    advanced: The MICrONS dataset represents the state of the art in combined functional-structural neuroscience at scale.
+      The reconstruction pipeline chains FFN-based segmentation, CNN-based synapse and organelle detection, and PyChunkedGraph-based
+      proofreading. Key technical contributions include the co-registration of two-photon and EM coordinate spaces, the automation
+      of nucleus and cell-type classification, and the public release of both raw and processed data. The paper demonstrates
+      that connectivity patterns correlate with functional tuning properties, validating the utility of millimeter-scale connectomics.
+- id: bullmore-sporns-2009
+  title: 'Complex brain networks: graph theoretical analysis of structural and functional connectomics'
+  authors: Bullmore E, Sporns O
+  year: 2009
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/nrn2575
+  dimension: connectomics
+  tags:
+  - connectomics:graph-theory
+  - network-analysis:small-world
+  - network-analysis:hub
+  - network-analysis:community-detection
+  - network-analysis:degree-distribution
+  key_figures:
+  - 'Fig. 1: network construction from brain data'
+  - 'Fig. 2: key graph measures'
+  - 'Fig. 3: small-world and modular organization'
+  discussion_prompts:
+  - How do graph measures computed on EM connectomes compare with those from macroscale tractography?
+  - Which network measures are most robust to missing data (incomplete reconstructions)?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: The brain can be studied as a network — neurons as dots, connections as lines. This influential review introduces
+      basic tools from network science and shows how they apply to brain data. Key ideas include small-world properties, hub
+      neurons, and modular communities.
+    intermediate: Bullmore and Sporns provide a comprehensive introduction to graph-theoretic analysis of brain networks at
+      multiple scales. They cover degree distribution, clustering, path length, betweenness centrality, and modularity, and
+      discuss small-world architecture and hub organization.
+    advanced: 'While focused on macroscale connectomics, this review established the analytical vocabulary now applied to
+      nanoscale EM connectomes. Critical points: the importance of null models, scale dependence of network measures, and
+      the call for standardized analysis pipelines.'
+- id: winding-2023
+  title: The connectome of an insect brain
+  authors: Winding M, Pedigo BD, Barnes CL, et al.
+  year: 2023
+  journal: Science
+  doi: 10.1126/science.add9330
+  dimension: connectomics
+  tags:
+  - connectomics:graph-theory
+  - network-analysis:community-detection
+  - network-analysis:motif
+  - case-studies:larval-Drosophila
+  - case-studies:whole-brain
+  key_figures:
+  - 'Fig. 1: complete brain connectome'
+  - 'Fig. 2: community structure'
+  - 'Fig. 3: signal flow hierarchy'
+  discussion_prompts:
+  - How does the layered processing architecture compare with deep neural network architectures?
+  - Which findings generalize from the larval to the adult brain?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  - /content-library/connectomics/motif-analysis/
+  summaries:
+    beginner: This paper presents the complete wiring diagram of a larval fruit fly brain — about 3,000 neurons and 548,000
+      synapses. The authors found the brain is organized into layers, like a multi-step processing pipeline, with specific
+      circuit motifs repeated across sensory systems.
+    intermediate: Winding et al. present the first complete insect brain connectome (Drosophila larva). Dense reconstruction
+      enables whole-brain graph analysis including hierarchical community detection, hub neuron identification, and spectral
+      analysis showing feed-forward layered structure with recurrent loops.
+    advanced: 'Demonstrates what becomes possible with a complete connectome: global network analysis without boundary effects.
+      Key innovations include signal flow analysis using graph spectral methods, multi-hop pathway identification, and comparison
+      of circuit architectures across sensory modalities using graph alignment.'
+- id: varshney-2011
+  title: Structural properties of the network of Caenorhabditis elegans
+  authors: Varshney LR, Chen BL, Paniagua E, et al.
+  year: 2011
+  journal: PLoS Computational Biology
+  doi: 10.1371/journal.pcbi.1001066
+  dimension: connectomics
+  tags:
+  - connectomics:graph-theory
+  - network-analysis:degree-distribution
+  - network-analysis:hub
+  - network-analysis:rich-club
+  - case-studies:C-elegans
+  key_figures:
+  - 'Fig. 1: connectome visualization'
+  - 'Fig. 2: degree distribution'
+  - 'Fig. 3: rich-club structure'
+  discussion_prompts:
+  - How do the network properties of C. elegans compare with larger connectomes?
+  - How should gap junctions versus chemical synapses be integrated in network analysis?
+  related_content:
+  - /content-library/case-studies/c-elegans-revisited/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: The nematode C. elegans has exactly 302 neurons, and its wiring diagram was mapped decades ago. This paper performs
+      thorough network analysis, finding hubs, clusters, and small-world properties that may reflect fundamental principles
+      of nervous system organization.
+    intermediate: Varshney et al. provide the most rigorous graph-theoretic analysis of the C. elegans connectome using a
+      corrected version of the White et al. data. They analyze both chemical synapses and gap junctions, computing degree
+      distributions, clustering, rich-club structure, and modular organization.
+    advanced: 'A methodological template for connectome network analysis. Notable: systematic comparison of binary vs weighted
+      analyses, rigorous null model comparison, separate analysis of gap junction and chemical synapse networks, and identification
+      of the rich-club phenomenon — densely interconnected hub interneurons.'
+- id: schlegel-2024-celltypes
+  title: Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila
+  authors: Schlegel P, Yin Y, Bates AS, et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-07686-5
+  dimension: connectomics
+  tags:
+  - connectomics:connectome-comparison
+  - connectomics:graph-theory
+  - cell-types:connectivity-based-classification
+  - case-studies:FlyWire
+  - case-studies:Drosophila
+  key_figures:
+  - 'Fig. 1: cross-dataset cell type matching'
+  - 'Fig. 3: connectivity stereotypy'
+  discussion_prompts:
+  - How many connectomes are needed to establish 'normal' wiring with statistical confidence?
+  - How should biological variability be distinguished from reconstruction artifacts?
+  related_content:
+  - /content-library/case-studies/flywire-whole-brain/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: If you map two different fruit fly brains, how similar are the wiring diagrams? This paper compared the FlyWire
+      and hemibrain connectomes and found that most connections are remarkably consistent between individuals.
+    intermediate: Schlegel et al. perform the first systematic comparison of two independently reconstructed connectomes,
+      matching ~8,000 cell types. They quantify circuit stereotypy showing high reproducibility for strong connections and
+      higher variability for weak connections.
+    advanced: 'Establishes the analytical framework for multi-connectome comparison. Connectivity variability is structured:
+      strengths follow a log-normal distribution, and the coefficient of variation decreases with connection strength. This
+      has implications for statistical power in detecting wiring differences.'
+- id: bae-2021
+  title: Functional connectomics spanning multiple areas of mouse visual cortex
+  authors: Bae JA, Baptiste M, Bodor AL, et al.
+  year: 2021
+  journal: bioRxiv
+  doi: 10.1101/2021.07.28.454025
+  dimension: connectomics
+  tags:
+  - connectomics:graph-theory
+  - neuroai:structure-function
+  - case-studies:MICrONS
+  - case-studies:mouse
+  - case-studies:visual-cortex
+  key_figures:
+  - 'Fig. 1: experimental pipeline'
+  - 'Fig. 5: structure-function correlations'
+  discussion_prompts:
+  - Why are structure-function correlations weak, and does this undermine the value of connectomics?
+  - What experimental improvements would strengthen co-registration between functional and structural data?
+  related_content:
+  - /content-library/case-studies/microns-visual-cortex/
+  - /content-library/connectomics/neuroai-bridge/
+  summaries:
+    beginner: Can you predict what a neuron does from how it is wired? This MICrONS study first recorded neuron activity in
+      a living mouse, then mapped all connections using EM. Neurons that respond similarly to visual stimuli do tend to connect,
+      but the relationship is complex.
+    intermediate: 'Bae et al. present the MICrONS functional connectomics dataset: calcium imaging of ~75,000 neurons followed
+      by EM reconstruction. Connection probability and synapse count are modestly correlated with functional similarity, with
+      the relationship varying by cell type.'
+    advanced: The first large-scale dataset enabling rigorous testing of Hebbian-like wiring rules in cortex. The modest correlation
+      strengths (~0.1-0.2) highlight that connectivity is not deterministically predicted by function, consistent with a combination
+      of activity-dependent plasticity, molecular guidance, and stochastic processes.
+  also_dimensions:
+  - case-studies
+- id: cook-2019
+  title: Whole-animal connectomes of both Caenorhabditis elegans sexes
+  authors: Cook SJ, Jarrell TA, Brittin CA, et al.
+  year: 2019
+  journal: Nature
+  doi: 10.1038/s41586-019-1352-7
+  dimension: connectomics
+  tags:
+  - connectomics:connectome-comparison
+  - case-studies:C-elegans
+  - case-studies:whole-brain
+  - case-studies:dense-reconstruction
+  key_figures:
+  - 'Fig. 1: sex-specific nervous system comparison'
+  - 'Fig. 3: shared vs dimorphic connectivity'
+  discussion_prompts:
+  - How does sexual dimorphism in wiring compare with transcriptomic sexual dimorphism?
+  - What does modular addition of sex-specific circuits suggest about circuit evolution?
+  related_content:
+  - /content-library/case-studies/c-elegans-revisited/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: 'C. elegans comes in two sexes: hermaphrodite and male. This study mapped the complete nervous system of both,
+      revealing that shared circuits are highly similar but sex-specific neurons create dramatically different reproductive
+      circuitry.'
+    intermediate: Cook et al. present complete connectomes for both C. elegans sexes. The shared nervous system is highly
+      conserved with quantitative differences in connection strength. Male-specific neurons form circuits that extensively
+      modify shared circuits for reproductive behavior.
+    advanced: Establishes the analytical framework for studying connectomic variation within a species. Connection presence
+      is highly conserved but strength varies continuously. Sex-specific circuits are added as modules to a shared backbone,
+      suggesting modular circuit evolution.
+  also_dimensions:
+  - case-studies
+- id: shapson-coe-2024
+  title: A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution
+  authors: Shapson-Coe A, Januszewski M, Berger DR, et al.
+  year: 2024
+  journal: Science
+  doi: 10.1126/science.adk4858
+  dimension: connectomics
+  tags:
+  - connectomics:graph-theory
+  - case-studies:human
+  - case-studies:H01
+  - neuroanatomy:synapse
+  - cell-types:neuron-classification
+  key_figures:
+  - 'Fig. 1: reconstruction overview'
+  - 'Fig. 3: multi-synaptic connections'
+  - 'Fig. 4: axonal whorls'
+  discussion_prompts:
+  - How do connectivity patterns in human cortex compare with mouse cortex datasets?
+  - What are the implications of using pathological tissue for establishing normal human connectivity?
+  related_content:
+  - /content-library/case-studies/h01-human-cortex/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: For the first time, a small piece of human brain was reconstructed at the level of individual synapses. The
+      H01 dataset reveals detailed wiring of tens of thousands of human neurons, including unusual structures not seen in
+      other species.
+    intermediate: 'Shapson-Coe et al. present the H01 dataset: 1 mm³ of human temporal cortex at nanometer resolution, containing
+      ~57,000 cells and ~150 million synapses. The reconstruction reveals human-specific features including axonal whorls
+      and more prevalent multi-synaptic connections than in mouse.'
+    advanced: 'The first EM connectomics dataset at scale from human tissue. Key findings: multi-synaptic connection distribution
+      differs from mouse with heavier tail; axonal whorls of unknown function highlight undiscovered human neuroanatomy. Technical
+      challenges include pathological tissue source and computational cost of petascale reconstruction.'
+  also_dimensions:
+  - case-studies
+- id: white-1986
+  title: The structure of the nervous system of Caenorhabditis elegans
+  authors: White JG, Southgate E, Thomson JN, Brenner S
+  year: 1986
+  journal: Philosophical Transactions of the Royal Society B
+  doi: 10.1098/rstb.1986.0056
+  dimension: case-studies
+  tags:
+  - case-studies:C-elegans
+  - case-studies:whole-brain
+  - case-studies:dense-reconstruction
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: complete nervous system wiring diagram'
+  - 'Fig. 5: neuron class connectivity matrix'
+  discussion_prompts:
+  - How did the limitations of 1980s reconstruction technology shape the connectome's completeness and accuracy?
+  - Why did it take nearly three decades before another organism's connectome was completed?
+  related_content:
+  - /content-library/case-studies/c-elegans-revisited/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: This is the paper that started connectomics. White and colleagues spent over a decade tracing every neuron and
+      connection in the tiny worm C. elegans, producing the first complete wiring diagram of any nervous system. It proved
+      that mapping an entire brain's connections was possible.
+    intermediate: White et al. reconstructed the complete nervous system of C. elegans — 302 neurons and ~7,000 chemical synapses
+      — from serial-section EM. The resulting wiring diagram became the foundational dataset for computational neuroscience
+      and network analysis of neural circuits.
+    advanced: The reconstruction relied on manual tracing from serial thin sections with limited computational support. Known
+      caveats include incomplete gap junction mapping, variable synapse identification criteria, and reliance on a small number
+      of animals. Despite these limitations, the dataset has driven decades of graph-theoretic analysis and remains a benchmark
+      for connectome completeness.
+- id: takemura-2013
+  title: A visual motion detection circuit suggested by Drosophila connectomics
+  authors: Takemura SY, Bharioke A, Lu Z, et al.
+  year: 2013
+  journal: Nature
+  doi: 10.1038/nature12450
+  dimension: case-studies
+  tags:
+  - case-studies:Drosophila
+  - case-studies:retina
+  - connectomics:graph-theory
+  - neuroai:structure-function
+  key_figures:
+  - 'Fig. 1: medulla column reconstruction'
+  - 'Fig. 4: motion detection circuit diagram'
+  discussion_prompts:
+  - How did the connectome data constrain computational models of motion detection?
+  - What are the trade-offs between targeted circuit reconstruction and whole-brain approaches?
+  related_content:
+  - /content-library/case-studies/drosophila-visual-circuits/
+  - /content-library/neuroai/structure-function-mapping/
+  summaries:
+    beginner: Fruit flies are very good at detecting motion. This paper reconstructed the detailed wiring of the fly's motion-sensing
+      circuits and used the connectivity to propose how these circuits actually compute the direction of movement.
+    intermediate: Takemura et al. densely reconstructed medulla columns in the Drosophila optic lobe, identifying all synaptic
+      connections among the neurons involved in motion detection. The wiring diagram constrained existing computational models,
+      favoring specific implementations of the Hassenstein-Reichardt correlator.
+    advanced: This study exemplifies targeted connectomics — reconstructing a functionally defined circuit to distinguish
+      between competing models. The dense reconstruction of seven medulla columns revealed stereotyped connectivity with quantifiable
+      variability. The synapse-level wiring data ruled out several motion detection model variants and motivated subsequent
+      functional validation experiments.
+- id: bock-2011
+  title: Network anatomy and in vivo physiology of visual cortical neurons
+  authors: Bock DD, Lee WCA, Kerlin AM, et al.
+  year: 2011
+  journal: Nature
+  doi: 10.1038/nature09802
+  dimension: case-studies
+  tags:
+  - case-studies:mouse
+  - case-studies:visual-cortex
+  - imaging:ATUM
+  - neuroai:structure-function
+  - imaging:correlative-imaging
+  key_figures:
+  - 'Fig. 1: correlative calcium imaging and EM pipeline'
+  - 'Fig. 3: inhibitory neuron connectivity patterns'
+  discussion_prompts:
+  - What are the challenges of registering in-vivo functional data to post-hoc EM volumes?
+  - How did this early correlative study influence the design of the MICrONS project?
+  related_content:
+  - /content-library/case-studies/mouse-visual-cortex-correlative/
+  - /content-library/imaging/correlative-imaging-methods/
+  summaries:
+    beginner: This study pioneered the idea of first recording neuron activity in a living mouse, then slicing and imaging
+      the same brain region with electron microscopy to trace the connections. It showed that a neuron's wiring pattern relates
+      to what visual features it responds to.
+    intermediate: Bock et al. performed one of the first correlative studies linking in-vivo two-photon calcium imaging with
+      post-hoc serial-section EM reconstruction in mouse visual cortex. They traced inhibitory interneurons and found that
+      their synaptic targeting was non-random with respect to the functional properties of postsynaptic partners.
+    advanced: A methodological milestone establishing the correlative functional-structural pipeline later scaled up by MICrONS.
+      The study used ATUM sectioning and manual tracing of ~1,500 synapses from functionally characterized inhibitory neurons.
+      Despite the small sample, it demonstrated that connectivity cannot be predicted from spatial proximity alone and that
+      functional context is essential for interpreting wiring diagrams.
+- id: witvliet-2021
+  title: Connectomes across development reveal principles of brain maturation
+  authors: Witvliet D, Mulcahy B, Mitchell JK, et al.
+  year: 2021
+  journal: Nature
+  doi: 10.1038/s41586-021-03778-8
+  dimension: case-studies
+  tags:
+  - case-studies:C-elegans
+  - case-studies:dense-reconstruction
+  - connectomics:connectome-comparison
+  - methodology:reproducibility
+  key_figures:
+  - 'Fig. 1: developmental connectome series overview'
+  - 'Fig. 3: connection stability versus variability across maturation'
+  discussion_prompts:
+  - How does developmental connectomics change our interpretation of single-timepoint adult wiring diagrams?
+  - Which connections are genetically hardwired versus activity-dependent based on the developmental data?
+  related_content:
+  - /content-library/case-studies/c-elegans-revisited/
+  - /content-library/methodology/reproducibility-standards/
+  summaries:
+    beginner: By mapping the wiring diagram of C. elegans at multiple stages of development, this study shows how the brain's
+      connections change as the animal grows up. Some connections are stable from birth while others are added or refined
+      with experience.
+    intermediate: Witvliet et al. reconstructed connectomes from eight C. elegans individuals spanning development from birth
+      to adulthood. The comparison reveals a stable core scaffold of connections present at hatching, with additional connections
+      appearing progressively and showing higher inter-individual variability.
+    advanced: This is the first developmental connectome series in any organism. Methodologically, it required consistent
+      reconstruction quality across all timepoints to distinguish biological change from technical noise. Key findings include
+      a stable backbone of ~40% of connections present throughout development, progressive addition of weak connections, and
+      increased wiring variability in circuits associated with learned behaviors.
+- id: dorkenwald-2023-cave
+  title: 'CAVE: Connectome Annotation Versioning Engine'
+  authors: Dorkenwald S, McKellar CE, Macrina T, et al.
+  year: 2023
+  journal: bioRxiv
+  doi: 10.1101/2023.07.26.550598
+  dimension: data-storage
+  tags:
+  - data-storage:CAVE
+  - data-storage:provenance
+  - data-storage:versioning
+  - data-storage:chunked-graph
+  key_figures:
+  - 'Fig. 1: CAVE architecture'
+  - 'Fig. 2: materialization pipeline'
+  discussion_prompts:
+  - How does CAVE's versioning model compare to general-purpose version control (Git)?
+  - How should citation practices reference specific CAVE materializations?
+  related_content:
+  - /content-library/infrastructure/provenance-and-versioning/
+  - /content-library/proofreading/proofreading-tools/
+  summaries:
+    beginner: When hundreds of people edit a brain map simultaneously, you need a system to track every change. CAVE is like
+      version control for connectomics — it lets researchers go back to any previous version and ensures published analyses
+      can always be reproduced.
+    intermediate: CAVE provides versioned, materialized annotation infrastructure for large-scale connectomics. It tracks
+      the complete history of proofreading edits in a chunked graph structure supporting efficient historical queries. Materialization
+      produces timestamped snapshots for reproducible analysis.
+    advanced: CAVE's architecture solves the reproducibility crisis in collaborative connectomics. The chunked graph enables
+      O(1) edit operations, the materialization pipeline produces denormalized tables for fast queries, and the versioning
+      system maintains complete edit provenance. Powers both FlyWire and MICrONS.
+- id: macrina-2021-pipeline
+  title: 'Petascale neural circuit reconstruction: automated methods'
+  authors: Macrina T, Lee K, Lu R, et al.
+  year: 2021
+  journal: bioRxiv
+  doi: 10.1101/2021.08.04.455162
+  dimension: data-storage
+  tags:
+  - data-storage:pipeline
+  - data-storage:alignment
+  - data-storage:scalability
+  - case-studies:MICrONS
+  key_figures:
+  - 'Fig. 1: pipeline overview'
+  - 'Fig. 5: synapse detection'
+  discussion_prompts:
+  - Which pipeline stage contributes the most errors to the final connectome?
+  - How do computational costs scale with volume size?
+  related_content:
+  - /content-library/infrastructure/reconstruction-pipeline/
+  - /content-library/case-studies/microns-visual-cortex/
+  summaries:
+    beginner: 'Turning a million EM images into a wiring diagram requires a massive computational pipeline. This paper describes
+      the complete MICrONS pipeline: aligning images, finding neuron boundaries, detecting synapses, and packaging everything
+      for analysis.'
+    intermediate: 'Macrina et al. describe the full automated reconstruction pipeline for the MICrONS mm³ volume: image alignment,
+      affinity-based segmentation, supervoxel agglomeration, synapse detection, and pre/post partner assignment. The pipeline
+      processed ~2 petabytes of imagery.'
+    advanced: The definitive systems paper for the MICrONS pipeline. Provides the most complete accounting of stage-by-stage
+      error rates in a petascale reconstruction and documents computational resources (~millions of GPU-hours) useful for
+      cost estimation of future projects.
+- id: scheffer-2020-hemibrain
+  title: A connectome and analysis of the adult Drosophila central brain
+  authors: Scheffer LK, Xu CS, Januszewski M, et al.
+  year: 2020
+  journal: eLife
+  doi: 10.7554/eLife.57443
+  dimension: data-storage
+  tags:
+  - data-storage:pipeline
+  - data-storage:data-format
+  - case-studies:Drosophila
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: hemibrain volume'
+  - 'Fig. 5: connectivity types'
+  discussion_prompts:
+  - How does the proofreading prioritization strategy affect which questions can be reliably answered?
+  - What are the tradeoffs of hemibrain's FIB-SEM vs FlyWire's ATUM-SEM approach?
+  related_content:
+  - /content-library/case-studies/flywire-whole-brain/
+  - /content-library/proofreading/proofreading-strategies/
+  summaries:
+    beginner: The hemibrain is a map of about half the fruit fly brain containing ~25,000 neurons and 20 million connections.
+      It includes not just the wiring diagram but also analyses of circuit structure, neuron types, and network properties.
+    intermediate: Scheffer et al. present the hemibrain connectome from a FIB-SEM volume at 8 nm isotropic resolution. The
+      paper covers FFN segmentation, ~50 person-years of proofreading, synapse detection, and neuron type assignment. The
+      dataset is queryable via neuPrint.
+    advanced: 'Demonstrates the frontier of production connectomics. Key points: proofreading prioritized large neurons by
+      downstream impact; confidence scoring by synapse count thresholds; the neuPrint database architecture for graph queries.
+      Proofreading completeness varies by brain region.'
+- id: clements-2020
+  title: 'neuPrint: An open access tool for EM connectome analysis'
+  authors: Clements J, Dolafi T, Umayam L, et al.
+  year: 2020
+  journal: bioRxiv
+  doi: 10.1101/2020.01.16.909465
+  dimension: data-storage
+  tags:
+  - data-storage:graph-storage
+  - data-storage:API
+  - data-storage:data-management
+  - case-studies:Drosophila
+  key_figures:
+  - 'Fig. 1: neuPrint architecture'
+  - 'Fig. 2: query interface'
+  discussion_prompts:
+  - What graph query patterns are most useful for biological discovery in connectomics?
+  - How should connectome databases balance query flexibility with performance?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  - /content-library/case-studies/flywire-whole-brain/
+  summaries:
+    beginner: Once you have a brain wiring diagram, you need a way to search it. neuPrint is a database and web interface
+      that lets researchers query connectome data — like asking 'show me all neurons that connect to this specific neuron'
+      or 'find all neurons of this type.'
+    intermediate: Clements et al. describe neuPrint, a graph database and web application for querying EM connectome data.
+      Built on Neo4j, it supports Cypher queries for exploring connectivity at neuron, type, and region levels. The system
+      serves the hemibrain and FlyWire datasets.
+    advanced: neuPrint's graph database architecture reflects the insight that connectomics data is naturally a labeled property
+      graph. The Cypher query language enables complex path-based and motif-based queries. The web interface with NeuronBridge
+      integration enables cross-dataset cell type matching.
+- id: saalfeld-2009
+  title: 'CATMAID: Collaborative annotation toolkit for massive amounts of image data'
+  authors: Saalfeld S, Cardona A, Hartenstein V, Tomančák P
+  year: 2009
+  journal: Bioinformatics
+  doi: 10.1093/bioinformatics/btt529
+  dimension: data-storage
+  tags:
+  - data-storage:annotation-tool
+  - data-storage:data-management
+  - proofreading:proofreading-tools
+  key_figures:
+  - 'Fig. 1: CATMAID interface'
+  - 'Fig. 2: skeleton tracing'
+  discussion_prompts:
+  - How do skeleton-based (CATMAID) and volume-based (CAVE) annotation approaches compare?
+  - What makes collaborative annotation tools succeed for distributed scientific teams?
+  related_content:
+  - /content-library/proofreading/proofreading-tools/
+  - /content-library/infrastructure/reconstruction-pipeline/
+  summaries:
+    beginner: CATMAID is a web-based tool that lets multiple scientists simultaneously trace neurons through brain image stacks.
+      It was one of the first collaborative annotation tools and enabled many early connectomics projects.
+    intermediate: CATMAID provides a web-based collaborative environment for skeleton tracing in large EM volumes. Its architecture
+      streams image tiles on demand and supports concurrent annotation by distributed teams. It was used for larval Drosophila
+      and other connectomics projects.
+    advanced: CATMAID pioneered the web-based collaborative annotation model that influenced subsequent tools. Its skeleton-based
+      annotation approach is well-suited for sparse reconstruction but less efficient for dense annotation. The tile-based
+      image serving architecture handles petabyte-scale datasets.
+- id: moore-2021
+  title: 'OME-Zarr: a cloud-optimized bioimaging file format with international community support'
+  authors: Moore J, Allan C, Beber S, et al.
+  year: 2021
+  journal: bioRxiv
+  doi: 10.1101/2021.03.31.437929
+  dimension: data-storage
+  tags:
+  - data-storage:data-format
+  - data-storage:cloud-storage
+  - data-storage:image-pyramid
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: OME-Zarr structure'
+  - 'Fig. 2: multi-resolution pyramid'
+  discussion_prompts:
+  - How does cloud-optimized storage change the economics of sharing connectomics data?
+  - What are the tradeoffs between OME-Zarr, N5, and Precomputed formats?
+  related_content:
+  - /content-library/infrastructure/data-formats/
+  - /content-library/infrastructure/provenance-and-versioning/
+  summaries:
+    beginner: Brain images are enormous — petabytes of data that need to be stored and shared efficiently. OME-Zarr is a new
+      file format designed for cloud storage that makes it possible to stream just the parts of an image you need without
+      downloading everything.
+    intermediate: Moore et al. describe OME-Zarr, a cloud-optimized multi-resolution image format for bioimaging. It stores
+      data as chunked arrays in object storage, enabling efficient random access and multi-resolution viewing without full
+      dataset download. The format is adopted by multiple connectomics platforms.
+    advanced: OME-Zarr addresses the fundamental I/O bottleneck for large-scale connectomics data sharing. The chunked, multi-resolution
+      design enables efficient streaming for visualization (Neuroglancer), analysis (random region extraction), and collaborative
+      annotation. Compare with Precomputed (Google) and N5 (Janelia) formats.
+- id: berger-2018-vast
+  title: 'VAST: Volume Annotation and Segmentation Tool'
+  authors: Berger DR, Seung HS, Lichtman JW
+  year: 2018
+  journal: Frontiers in Neural Circuits
+  doi: 10.3389/fncir.2018.00088
+  dimension: data-storage
+  tags:
+  - data-storage:annotation-tool
+  - data-storage:data-format
+  - methodology:ground-truth
+  key_figures:
+  - 'Fig. 1: VAST interface'
+  - 'Fig. 2: annotation workflow'
+  discussion_prompts:
+  - When should you use desktop tools (VAST) versus cloud tools (Neuroglancer/CAVE)?
+  - How does annotation tool choice affect the quality and biases of ground truth data?
+  related_content:
+  - /content-library/proofreading/proofreading-tools/
+  - /content-library/proofreading/metrics-and-qa/
+  summaries:
+    beginner: Before training computers to find neurons, humans need to manually label example images as 'ground truth.' VAST
+      is a desktop tool for this work — it lets annotators paint over neurons in 3D image stacks and assign labels.
+    intermediate: VAST provides a desktop annotation environment for manual and semi-automatic segmentation of EM volumes.
+      Features include multi-resolution rendering, label management for thousands of objects, and export to standard formats.
+      Used to produce ground truth for several landmark datasets.
+    advanced: While cloud tools dominate production proofreading, VAST remains relevant for ground truth creation where precise
+      manual control is needed. Its paint-based annotation model doesn't inherit biases from automated pre-segmentation. For
+      benchmark creation, VAST's pixel-precise annotations remain the gold standard.
+- id: zador-2023
+  title: 'Catalyzing next-generation AI: The role of neuroscience'
+  authors: Zador A, Escola S, Richards B, et al.
+  year: 2023
+  journal: Nature Communications
+  doi: 10.1038/s41467-023-37180-x
+  dimension: neuroai
+  tags:
+  - neuroai:bio-inspired-architecture
+  - neuroai:structure-function
+  - methodology:experimental-design
+  key_figures:
+  - 'Fig. 1: neuroscience-AI feedback loop'
+  - 'Fig. 2: biological design principles'
+  discussion_prompts:
+  - Which biological principles are most likely to improve current AI systems?
+  - How should neuroscience experiments be designed to maximize relevance for AI development?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  summaries:
+    beginner: Can studying how real brains work help us build better AI? This paper argues yes — that neuroscience can provide
+      design principles, learning rules, and architectural ideas that will catalyze the next generation of artificial intelligence.
+    intermediate: 'Zador et al. present a manifesto for NeuroAI: the systematic use of neuroscience insights to inspire AI
+      advances. They identify specific areas where biology can inform AI: structured architectures, multi-scale learning,
+      embodied intelligence, and energy-efficient computation.'
+    advanced: 'This position paper from leading NeuroAI researchers identifies the most tractable opportunities for neuroscience-to-AI
+      transfer. Key arguments: connectome data can constrain network architectures, developmental programs encode inductive
+      biases, and multi-scale circuit motifs can inform modular AI design.'
+- id: richards-2019
+  title: A deep learning framework for neuroscience
+  authors: Richards BA, Lillicrap TP, Beaudoin P, et al.
+  year: 2019
+  journal: Nature Neuroscience
+  doi: 10.1038/s41593-019-0520-2
+  dimension: neuroai
+  tags:
+  - neuroai:deep-learning
+  - neuroai:bio-inspired-architecture
+  - neuroai:representation-learning
+  key_figures:
+  - 'Fig. 1: deep learning as neuroscience framework'
+  - 'Fig. 2: three levels of understanding'
+  discussion_prompts:
+  - When should we use deep learning as a model of the brain versus a tool for analyzing brain data?
+  - Which deep learning architectures have the strongest biological motivation?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  summaries:
+    beginner: Deep learning has achieved remarkable success in AI. This paper argues it can also serve as a framework for
+      understanding real brains — not that the brain is literally a deep neural network, but that the same mathematical principles
+      of optimization and representation learning apply.
+    intermediate: 'Richards et al. propose that deep learning provides a unifying framework for neuroscience at Marr''s three
+      levels: computational (what problems does the brain solve?), algorithmic (what learning rules does it use?), and implementational
+      (how are these implemented in neural circuits?). They discuss how connectomics can constrain the implementational level.'
+    advanced: 'This paper bridges computational neuroscience and machine learning by arguing that optimization under constraints
+      — where connectome architecture provides the constraints — is the right framework for understanding neural computation.
+      Key implication for connectomics: wiring diagrams specify the constraint structure that shapes learned representations.'
+- id: lillicrap-2020
+  title: Backpropagation and the brain
+  authors: Lillicrap TP, Santoro A, Marris L, et al.
+  year: 2020
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/s41583-020-0277-3
+  dimension: neuroai
+  tags:
+  - neuroai:deep-learning
+  - neuroai:bio-inspired-architecture
+  - neuroai:neural-network
+  key_figures:
+  - 'Fig. 1: backpropagation vs biological alternatives'
+  - 'Fig. 3: feedback alignment'
+  discussion_prompts:
+  - What connectomics evidence bears on whether the brain implements backpropagation-like credit assignment?
+  - How do feedback connection patterns in connectomics data constrain learning rule theories?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Artificial neural networks learn by 'backpropagation' — sending error signals backward through the network.
+      But can real brains do this? This review explores whether the brain has its own version of backpropagation and what
+      the anatomical evidence says.
+    intermediate: Lillicrap et al. review the biological plausibility of backpropagation and alternative credit assignment
+      mechanisms. They discuss feedback alignment, target propagation, and dendritic computation as biologically plausible
+      learning algorithms, connecting each to anatomical and physiological evidence.
+    advanced: 'For connectomics, this paper motivates analysis of feedback connection patterns: are feedback projections random
+      (feedback alignment) or structured (backpropagation-like)? The connectivity statistics of top-down versus bottom-up
+      pathways in connectome datasets can directly test these theories.'
+- id: bassett-2018-models
+  title: On the nature and use of models in network neuroscience
+  authors: Bassett DS, Zurn P, Gold JI
+  year: 2018
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/s41583-018-0038-8
+  dimension: neuroai
+  tags:
+  - neuroai:simulation
+  - neuroai:connectome-constrained-model
+  - connectomics:graph-theory
+  - methodology:hypothesis-testing
+  key_figures:
+  - 'Fig. 1: model taxonomy'
+  - 'Fig. 3: explanatory vs predictive models'
+  discussion_prompts:
+  - Which model claims in connectomics are currently descriptive only? What evidence upgrades them to explanatory?
+  - How should connectome-constrained models be validated?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Scientists build simplified models of the brain to understand how it works. This paper explains the different
+      types of models — some just describe patterns, some make predictions, and some explain why things work the way they
+      do. Knowing the difference is essential for interpreting connectomics research.
+    intermediate: 'Bassett et al. provide a taxonomy of models in network neuroscience: descriptive (summarize data), predictive
+      (forecast outcomes), and explanatory (identify mechanisms). They argue that most connectomics analyses are descriptive,
+      and discuss what additional evidence is needed to move toward explanation.'
+    advanced: This paper is essential reading for anyone making claims based on network analysis of connectomes. The model
+      taxonomy — and the argument that graph measures are descriptive unless coupled with interventional evidence — provides
+      a framework for honest reporting. Particularly relevant for motif analysis and community detection claims.
+- id: saxe-2021
+  title: If deep learning is the answer, what is the question?
+  authors: Saxe A, Nelli S, Summerfield C
+  year: 2021
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/s41583-020-00395-8
+  dimension: neuroai
+  tags:
+  - neuroai:deep-learning
+  - neuroai:representation-learning
+  - neuroai:bio-inspired-architecture
+  key_figures:
+  - 'Fig. 1: normative modeling framework'
+  - 'Fig. 3: task-driven representation learning'
+  discussion_prompts:
+  - How can connectomics data help identify the 'objective functions' that the brain optimizes?
+  - Which deep learning architectures best match known brain connectivity patterns?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  summaries:
+    beginner: 'Deep learning is powerful, but to use it to understand the brain, we need to ask the right questions. This
+      review argues that the key question is: what tasks does the brain solve, and what constraints does it operate under?
+      The wiring diagram is one of those constraints.'
+    intermediate: Saxe et al. argue that using deep learning as a model of the brain requires specifying the right objective
+      functions and constraints. They discuss how architecture (from connectomics), learning rules (from physiology), and
+      task structure (from behavior) jointly determine learned representations.
+    advanced: 'This paper provides the theoretical framework for connectome-constrained deep learning models: the brain''s
+      wiring specifies architectural constraints, and the objective function plus these constraints determine the representations
+      that emerge through learning. This perspective motivates extracting quantitative architectural statistics from connectomes.'
+- id: eckstein-2024
+  title: Computational evidence for neuroscience
+  authors: Eckstein MK, Master SL, et al.
+  year: 2024
+  journal: Nature Neuroscience
+  doi: null
+  dimension: neuroai
+  tags:
+  - neuroai:simulation
+  - neuroai:connectome-constrained-model
+  - methodology:statistical-analysis
+  key_figures:
+  - 'Fig. 1: evidence framework'
+  - 'Fig. 2: model comparison methods'
+  discussion_prompts:
+  - How should computational models of neural circuits be formally compared and evaluated?
+  - What standards of evidence should connectomics-derived models meet?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  - /content-library/connectomics/motif-analysis/
+  summaries:
+    beginner: When scientists build computer models of brain circuits, how do they know if the model is right? This paper
+      proposes standards for evaluating computational models, arguing that models should make testable predictions and be
+      compared against alternatives.
+    intermediate: Eckstein et al. propose a framework for evaluating computational evidence in neuroscience, including standards
+      for model specification, comparison, validation, and falsification. They discuss how connectomics data can serve both
+      as model constraints and validation targets.
+    advanced: Addresses the model selection and validation problem for connectome-constrained models. Proposes Bayesian model
+      comparison, cross-validation against held-out circuits, and out-of-distribution generalization as standards for computational
+      evidence in network neuroscience.
+- id: lappalainen-2024
+  title: Connectome-constrained networks predict neural activity across the fly brain
+  authors: Lappalainen JK, Tschopp FD, Hapber S, et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-07939-3
+  dimension: neuroai
+  tags:
+  - neuroai:connectome-constrained-model
+  - neuroai:structure-function
+  - neuroai:simulation
+  - case-studies:FlyWire
+  key_figures:
+  - 'Fig. 1: connectome-constrained network architecture'
+  - 'Fig. 3: predicted vs observed neural activity'
+  discussion_prompts:
+  - What does this result tell us about the sufficiency of connectivity for predicting neural dynamics?
+  - How would this approach need to be modified for mammalian connectomics?
+  related_content:
+  - /content-library/connectomics/neuroai-bridge/
+  - /content-library/case-studies/flywire-whole-brain/
+  summaries:
+    beginner: Can you predict how a brain works from its wiring diagram? This paper trained a neural network using the FlyWire
+      connectome as its architecture and showed that the resulting model actually predicts real neural activity patterns in
+      the fly brain.
+    intermediate: Lappalainen et al. demonstrate that training a recurrent neural network with connectivity constraints from
+      the FlyWire connectome produces models whose activity matches real neural recordings. This is the first demonstration
+      that connectome structure alone, combined with task optimization, predicts neural dynamics at brain-wide scale.
+    advanced: This paper represents the strongest test to date of the 'connectome as constraint' hypothesis. The approach
+      — fixing the network architecture to match the connectome and optimizing only synapse weights — shows that connectivity
+      structure carries substantial information about dynamics. Limitations include simplified neuron models and the assumption
+      that the training task matches the fly's natural objectives.
+- id: sporns-2005
+  title: 'The human connectome: A structural description of the human brain'
+  authors: Sporns O, Tononi G, Kötter R
+  year: 2005
+  journal: PLoS Computational Biology
+  doi: 10.1371/journal.pcbi.0010042
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:structural-connectivity
+  - mri-connectomics:parcellation
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: connectome concept'
+  - 'Fig. 2: parcellation and connectivity matrix'
+  discussion_prompts:
+  - How does the macro-scale MRI 'connectome' relate to the micro-scale EM connectome?
+  - What information is lost at the region level versus neuron level?
+  related_content:
+  - /content-library/connectomics/connectome-history/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: This is the paper that coined the word 'connectome.' The authors argued that neuroscience needs a systematic
+      effort to map all the brain's wiring, like the Human Genome Project mapped all our genes.
+    intermediate: Sporns et al. introduced the term 'connectome' and outlined a program for mapping structural connectivity
+      using diffusion MRI tractography combined with cortical parcellation. They discuss how graph-theoretic analysis of such
+      networks could reveal organizational principles.
+    advanced: 'Established the conceptual framework for macro-scale connectomics, distinct from but complementary to micro-scale
+      EM connectomics. Key contributions: formal definition of the connectome as a comprehensive structural description at
+      a given scale, and the recognition that connectomes exist at multiple scales.'
+- id: van-essen-2013
+  title: 'The WU-Minn Human Connectome Project: an overview'
+  authors: Van Essen DC, Smith SM, Barch DM, et al.
+  year: 2013
+  journal: NeuroImage
+  doi: 10.1016/j.neuroimage.2013.05.041
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:Human-Connectome-Project
+  - mri-connectomics:diffusion-MRI
+  - mri-connectomics:functional-connectivity
+  - mri-connectomics:multi-modal
+  key_figures:
+  - 'Fig. 1: HCP overview'
+  - 'Fig. 5: functional connectivity matrices'
+  discussion_prompts:
+  - How can HCP macro-scale data constrain or validate findings from EM micro-scale connectomics?
+  - What are the fundamental resolution limits of diffusion MRI compared to EM?
+  related_content:
+  - /content-library/connectomics/connectome-history/
+  summaries:
+    beginner: The Human Connectome Project scanned 1,200 healthy adults with advanced brain imaging plus behavioral testing.
+      All data is shared freely, making it the reference dataset for human brain network research.
+    intermediate: 'Van Essen et al. describe the HCP design: high-resolution structural MRI, diffusion MRI, resting-state
+      fMRI, task fMRI, and MEG/EEG from 1,200 young adults. Technical innovations include customized hardware and optimized
+      protocols.'
+    advanced: 'HCP established the technical and data-sharing standards for population-scale connectomics. Key contributions:
+      multi-modal parcellation approach, demonstration that multi-shell diffusion improves tractography, and the CIFTI surface-based
+      analysis framework.'
+- id: maier-hein-2017
+  title: The challenge of mapping the human connectome based on diffusion tractography
+  authors: Maier-Hein KH, Neher PF, Houde JC, et al.
+  year: 2017
+  journal: Nature Communications
+  doi: 10.1038/s41467-017-01285-x
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:tractography
+  - mri-connectomics:diffusion-MRI
+  - methodology:benchmark
+  - methodology:ground-truth
+  key_figures:
+  - 'Fig. 1: phantom design'
+  - 'Fig. 3: sensitivity vs specificity'
+  discussion_prompts:
+  - How should MRI tractography results be interpreted given the false-positive problem?
+  - What role can EM connectomics play in validating tractography methods?
+  related_content:
+  - /content-library/connectomics/connectome-history/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: 'Can we trust brain wiring maps from MRI? This study challenged 96 tractography methods using a phantom with
+      known connections. The sobering result: all methods produced many false connections that don''t actually exist.'
+    intermediate: 96 tractography pipelines were evaluated on a physical phantom with known fiber configurations. All methods
+      exhibited high false-positive rates — the more sensitive the method, the more false bundles it produced. No method achieved
+      both high sensitivity and specificity.
+    advanced: Fundamentally changed how the field interprets tractography-derived connectomes. The false-positive problem
+      means MRI-derived connectivity matrices contain systematic errors difficult to distinguish from true connectivity. This
+      is qualitatively different from EM, where false positives arise from correctable segmentation errors.
+- id: sotiropoulos-2019
+  title: 'Building connectomes using diffusion MRI: why, how and but'
+  authors: Sotiropoulos SN, Zalesky A
+  year: 2019
+  journal: NMR in Biomedicine
+  doi: 10.1002/nbm.3752
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:diffusion-MRI
+  - mri-connectomics:tractography
+  - mri-connectomics:parcellation
+  key_figures:
+  - 'Fig. 1: connectome construction pipeline'
+  - 'Fig. 4: tractography method comparison'
+  discussion_prompts:
+  - Which pipeline choices have the largest impact on the resulting connectome?
+  - How should parcellation granularity be chosen for different scientific questions?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: 'A practical guide to building brain connectivity maps from diffusion MRI: how to divide the brain into regions,
+      trace fiber pathways, and turn results into a network. Also explains the many pitfalls that can change results dramatically.'
+    intermediate: 'Comprehensive methodological review of diffusion MRI connectome construction: parcellation scheme selection,
+      diffusion model fitting, tractography algorithm choice, streamline filtering, and connectivity matrix construction.
+      The ''but'' section addresses known limitations.'
+    advanced: 'The most complete methodological reference for MRI connectome construction pipelines. Key points: parcellation
+      granularity determines node definition, streamline count is a poor proxy for connection strength, and each methodological
+      choice propagates into network-level statistics.'
+- id: biswal-1995
+  title: Functional connectivity in the motor cortex of resting human brain using echo-planar MRI
+  authors: Biswal B, Yetkin FZ, Haughton VM, Hyde JS
+  year: 1995
+  journal: Magnetic Resonance in Medicine
+  doi: 10.1002/mrm.1910340409
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:functional-connectivity
+  - mri-connectomics:resting-state-fMRI
+  key_figures:
+  - 'Fig. 1: resting-state correlation map'
+  - 'Fig. 2: motor cortex connectivity'
+  discussion_prompts:
+  - What is the relationship between functional connectivity (fMRI correlations) and structural connectivity (synaptic connections)?
+  - How has the resting-state fMRI field evolved since this foundational discovery?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Even when you're not doing anything, different brain regions are still communicating. This pioneering paper
+      discovered that you can detect these resting-state connections by measuring correlated brain activity patterns with
+      MRI.
+    intermediate: Biswal et al. demonstrated that low-frequency BOLD signal fluctuations in motor cortex during rest show
+      high correlation between bilateral regions, revealing functional connectivity without task performance. This foundational
+      finding launched the resting-state fMRI field.
+    advanced: This paper established functional connectivity MRI as a tool for mapping brain networks. The relationship between
+      resting-state functional connectivity and underlying structural connectivity (from either tractography or EM) remains
+      an active research question with important implications for cross-scale integration.
+- id: power-2011
+  title: Functional network organization of the human brain
+  authors: Power JD, Cohen AL, Nelson SM, et al.
+  year: 2011
+  journal: Neuron
+  doi: 10.1016/j.neuron.2011.09.006
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:functional-connectivity
+  - mri-connectomics:parcellation
+  - network-analysis:community-detection
+  key_figures:
+  - 'Fig. 1: functional network parcellation'
+  - 'Fig. 4: network communities'
+  discussion_prompts:
+  - How do functional network communities compare with structural connectivity modules from tractography or EM?
+  - What determines whether functional networks are detected at rest?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: The brain is organized into distinct networks — groups of regions that work together. This study mapped these
+      functional networks across the entire human brain using resting-state fMRI, identifying familiar systems like the visual
+      network, motor network, and default mode network.
+    intermediate: Power et al. used resting-state fMRI to define a functional parcellation of the human brain, identifying
+      ~260 functional areas organized into ~13 networks. The parcellation was validated against task-based fMRI and has become
+      widely used for network analysis.
+    advanced: This parcellation became a standard for human brain network analysis and enables direct comparison with structural
+      connectivity. The community structure detected from functional correlations partially but imperfectly matches structural
+      connectivity modules, raising questions about the structure-function relationship.
+- id: glasser-2016
+  title: A multi-modal parcellation of human cerebral cortex
+  authors: Glasser MF, Coalson TS, Robinson EC, et al.
+  year: 2016
+  journal: Nature
+  doi: 10.1038/nature18933
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:parcellation
+  - mri-connectomics:Human-Connectome-Project
+  - mri-connectomics:multi-modal
+  - mri-connectomics:atlas
+  key_figures:
+  - 'Fig. 1: multi-modal parcellation overview'
+  - 'Fig. 3: 360-region parcellation'
+  discussion_prompts:
+  - How does parcellation granularity affect the conclusions of network analyses?
+  - What is the relationship between macro-scale parcellation boundaries and micro-scale cytoarchitectural boundaries?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: To study brain connectivity, you need to divide the brain into regions. This paper created the most detailed
+      map of the human cortex to date — 360 distinct areas — by combining multiple types of brain imaging data from the Human
+      Connectome Project.
+    intermediate: Glasser et al. used HCP data to define a 360-region cortical parcellation based on architecture, function,
+      connectivity, and topography. The parcellation is more reproducible than prior atlases and captures biologically meaningful
+      boundaries.
+    advanced: This parcellation represents the current standard for macro-scale human brain network analysis. The multi-modal
+      approach — combining myelin maps, cortical thickness, resting-state fMRI, and task fMRI — produces parcellation boundaries
+      that are more biologically grounded than purely anatomy-based or purely function-based approaches.
+- id: fornito-2015
+  title: The connectomics of brain disorders
+  authors: Fornito A, Zalesky A, Breakspear M
+  year: 2015
+  journal: Nature Reviews Neuroscience
+  doi: 10.1038/nrn3901
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:clinical
+  - mri-connectomics:structural-connectivity
+  - mri-connectomics:functional-connectivity
+  - network-analysis:hub
+  key_figures:
+  - 'Fig. 1: network disruption in brain disorders'
+  - 'Fig. 3: hub vulnerability hypothesis'
+  discussion_prompts:
+  - How might EM connectomics inform our understanding of network disruption in brain disorders?
+  - Which clinical applications are most tractable with current connectomics methods?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Brain diseases might be caused not by problems in one brain region but by disrupted connections between regions.
+      This review shows how connectomics can reveal network-level changes in conditions like schizophrenia, Alzheimer's disease,
+      and autism.
+    intermediate: Fornito et al. review evidence that brain disorders are associated with specific patterns of network disruption,
+      not just localized damage. They discuss the hub vulnerability hypothesis — that highly connected brain regions are disproportionately
+      affected in neurological and psychiatric conditions.
+    advanced: This review connects macro-scale MRI connectomics to clinical neuroscience. For EM connectomics, the key implication
+      is that micro-scale wiring abnormalities (e.g., altered E/I balance, synaptic density changes) may propagate through
+      network architecture to produce macro-scale network disruptions.
+- id: finn-2015
+  title: 'Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity'
+  authors: Finn ES, Shen X, Scheinost D, et al.
+  year: 2015
+  journal: Nature Neuroscience
+  doi: 10.1038/nn.4135
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:functional-connectivity
+  - mri-connectomics:connectome-fingerprinting
+  - mri-connectomics:resting-state-fMRI
+  key_figures:
+  - 'Fig. 1: fingerprinting identification accuracy'
+  - 'Fig. 3: fluid intelligence prediction'
+  discussion_prompts:
+  - What does individual variability in functional connectomes imply for EM connectomics (typically single-animal)?
+  - How much of individual variation in connectivity reflects genetics versus experience?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Everyone's brain wiring is slightly different — so different that you can identify a person just from their
+      brain connectivity pattern, like a fingerprint. This paper showed that functional brain connectivity is unique to each
+      individual and can even predict cognitive ability.
+    intermediate: Finn et al. demonstrated that individual functional connectivity profiles are sufficiently unique to identify
+      individuals across scanning sessions with >90% accuracy. The most discriminating connections are in frontoparietal networks,
+      and connectivity profiles predict fluid intelligence.
+    advanced: Connectome fingerprinting demonstrates that individual-level connectivity variation is structured and behaviorally
+      meaningful. For EM connectomics (typically single-animal), this raises the question of how much of a connectome's structure
+      reflects species-typical wiring versus individual variation.
+- id: betzel-2019
+  title: Distance-dependent consensus thresholds for generating group-representative structural brain networks
+  authors: Betzel RF, Griffa A, Hagmann P, Misic B
+  year: 2019
+  journal: Network Neuroscience
+  doi: 10.1162/netn_a_00075
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:structural-connectivity
+  - mri-connectomics:tractography
+  - network-analysis:null-model
+  - methodology:statistical-analysis
+  key_figures:
+  - 'Fig. 1: distance-dependent thresholding'
+  - 'Fig. 3: consensus network comparison'
+  discussion_prompts:
+  - How should group-level connectomes be constructed from individual data?
+  - What distance-dependent biases exist in both tractography and EM connectomics?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: When you combine brain scans from many people to create an 'average' brain network, the method you use to combine
+      them matters a lot. This paper shows that distance between brain regions biases the results and proposes a better way
+      to create representative brain networks.
+    intermediate: Betzel et al. address the problem of constructing group-representative structural connectomes from diffusion
+      tractography. They show that standard consensus approaches are biased toward short-range connections and propose distance-dependent
+      thresholds that preserve the spatial profile of connectivity.
+    advanced: 'This paper addresses a fundamental methodological issue in MRI connectomics: the distance-dependent false-positive
+      rate of tractography biases group-level network construction. The proposed consensus approach preserves both local and
+      long-range connectivity statistics. Analogous distance-dependent biases exist in EM (e.g., volume boundary effects).'
+- id: hagmann-2008
+  title: Mapping the structural core of human cerebral cortex
+  authors: Hagmann P, Cammoun L, Gigandet X, et al.
+  year: 2008
+  journal: PLoS Biology
+  doi: 10.1371/journal.pbio.0060159
+  dimension: mri-connectomics
+  tags:
+  - mri-connectomics:diffusion-MRI
+  - mri-connectomics:structural-connectivity
+  - network-analysis:hub
+  - network-analysis:rich-club
+  key_figures:
+  - 'Fig. 1: structural connectivity matrix'
+  - 'Fig. 4: cortical hub map'
+  discussion_prompts:
+  - How do the hub regions identified by tractography compare with hub neurons identified by EM?
+  - Is the concept of a 'structural core' meaningful at the neuron level?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Some brain regions are more connected than others — they serve as 'hubs' that link many other regions together.
+      This study used diffusion MRI to map these hubs and found a densely connected 'structural core' that includes regions
+      important for integration and consciousness.
+    intermediate: Hagmann et al. used diffusion spectrum imaging to construct a whole-brain structural connectivity network
+      and identified a 'structural core' of densely interconnected hub regions including medial parietal cortex and superior
+      frontal cortex. The core overlaps with the default mode network.
+    advanced: This was among the first papers to identify hub structure in the human structural connectome. The 'structural
+      core' concept — a densely interconnected set of regions that forms the backbone of brain communication — parallels the
+      rich-club phenomenon observed in C. elegans at the neuron level. Cross-scale comparison of hub properties remains an
+      open question.
+- id: milo-2002
+  title: 'Network motifs: Simple building blocks of complex networks'
+  authors: Milo R, Shen-Orr S, Itzkovitz S, et al.
+  year: 2002
+  journal: Science
+  doi: 10.1126/science.298.5594.824
+  dimension: network-analysis
+  tags:
+  - network-analysis:motif
+  - network-analysis:null-model
+  - network-analysis:statistical-testing
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: motif definition and enumeration'
+  - 'Fig. 2: motif significance profiles across network types'
+  discussion_prompts:
+  - Which three-node motifs are overrepresented in neural circuits, and what might this mean functionally?
+  - How does null model choice affect motif significance results?
+  related_content:
+  - /content-library/connectomics/motif-analysis/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Networks have recurring patterns — small subgraphs that appear much more often than expected by chance. This
+      foundational paper introduced the concept of 'network motifs' and showed that different types of networks (neural, genetic,
+      social) have different characteristic patterns.
+    intermediate: Milo et al. introduced the concept of network motifs — statistically overrepresented subgraphs — and developed
+      algorithms for their enumeration and significance testing. Applied to neural networks (including C. elegans), they identified
+      specific three- and four-node motifs that occur at rates far above chance.
+    advanced: 'This paper established the computational and statistical framework for motif analysis now widely applied in
+      connectomics. Critical methodological point: motif significance depends entirely on the null model used for comparison.
+      The paper uses degree-preserving randomization, but alternative nulls can change conclusions substantially.'
+- id: rubinov-sporns-2010
+  title: 'Complex network measures of brain connectivity: Uses and interpretations'
+  authors: Rubinov M, Sporns O
+  year: 2010
+  journal: NeuroImage
+  doi: 10.1016/j.neuroimage.2009.10.003
+  dimension: network-analysis
+  tags:
+  - network-analysis:centrality
+  - network-analysis:clustering-coefficient
+  - network-analysis:modularity
+  - network-analysis:path-length
+  key_figures:
+  - 'Fig. 1: network measure taxonomy'
+  - 'Fig. 2: measure interpretation guide'
+  discussion_prompts:
+  - Which network measures are most meaningful for EM connectomics versus MRI connectomics?
+  - How should binary versus weighted network measures be chosen?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Once you have a brain network, what can you measure about it? This paper is a practical guide to network measures
+      — degree, clustering, path length, modularity, and many more — with clear explanations of what each measure means biologically.
+    intermediate: 'Rubinov and Sporns provide the Brain Connectivity Toolbox (BCT) paper: a comprehensive catalog of network
+      measures adapted for brain connectivity analysis. For each measure, they describe the computation, interpretation, and
+      caveats specific to neural networks.'
+    advanced: 'The BCT remains the most widely used toolbox for brain network analysis. Key contributions: systematic treatment
+      of binary versus weighted measures, integration versus segregation metrics, and the importance of normalization against
+      appropriate null networks. For EM connectomics, the weighted directed measures are most relevant.'
+- id: newman-2006
+  title: Modularity and community structure in networks
+  authors: Newman MEJ
+  year: 2006
+  journal: PNAS
+  doi: 10.1073/pnas.0601602103
+  dimension: network-analysis
+  tags:
+  - network-analysis:modularity
+  - network-analysis:community-detection
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: modularity optimization'
+  - 'Fig. 3: community structure examples'
+  discussion_prompts:
+  - How does the resolution limit of modularity optimization affect community detection in connectomes?
+  - When should modularity-based versus model-based community detection be preferred?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Networks often have communities — groups of nodes that are more connected to each other than to the rest of
+      the network. This paper presents an efficient method for finding these communities by maximizing a quantity called modularity.
+    intermediate: Newman presents a spectral algorithm for modularity optimization that efficiently detects community structure
+      in large networks. The method partitions networks into modules that maximize within-group versus between-group connectivity.
+      Widely applied to brain networks.
+    advanced: 'This paper introduced the spectral modularity approach that became the default community detection method in
+      network neuroscience. Known limitation: the resolution limit means small communities may be merged in large networks.
+      For EM connectomics, where networks have known spatial and cell-type structure, modularity results should be validated
+      against biological priors.'
+- id: priebe-2019
+  title: On a two-truths phenomenon in spectral graph clustering
+  authors: Priebe CE, Park Y, Vogelstein JT, et al.
+  year: 2019
+  journal: PNAS
+  doi: 10.1073/pnas.1814462116
+  dimension: network-analysis
+  tags:
+  - network-analysis:spectral-analysis
+  - network-analysis:community-detection
+  - network-analysis:stochastic-block-model
+  key_figures:
+  - 'Fig. 1: two-truths illustration'
+  - 'Fig. 3: Drosophila mushroom body analysis'
+  discussion_prompts:
+  - How should analysts choose between adjacency-based and Laplacian-based spectral embeddings?
+  - What does the two-truths phenomenon mean for biological interpretation of clustering results?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  - /content-library/connectomics/motif-analysis/
+  summaries:
+    beginner: When you cluster a network to find groups, different methods can give different answers — and both can be 'correct.'
+      This paper shows that two standard clustering approaches reveal different aspects of network structure, demonstrated
+      on fruit fly brain data.
+    intermediate: Priebe et al. demonstrate that adjacency spectral embedding and Laplacian spectral embedding of the same
+      network recover fundamentally different community structures — and both are valid. Applied to the Drosophila mushroom
+      body connectome, they show that one method clusters by cell type while the other clusters by hemisphere.
+    advanced: 'The ''two-truths'' phenomenon has direct implications for connectomics: the choice of spectral embedding method
+      determines what structure is discovered. This means claims about community structure must specify which embedding was
+      used and acknowledge that alternative embeddings may reveal different, equally valid structure.'
+- id: vogelstein-2019
+  title: 'Connectal coding: discovering the structures linking cognitive phenotypes to individual histories'
+  authors: Vogelstein JT, Bridgeford EW, Wang Q, et al.
+  year: 2019
+  journal: Current Opinion in Neurobiology
+  doi: 10.1016/j.conb.2019.04.005
+  dimension: network-analysis
+  tags:
+  - network-analysis:network-embedding
+  - network-analysis:graph-matching
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: connectal coding framework'
+  - 'Fig. 2: graph-to-vector pipeline'
+  discussion_prompts:
+  - How can connectal coding principles be applied to EM connectomics data?
+  - What statistical tests are appropriate for comparing connectomes across individuals or conditions?
+  related_content:
+  - /content-library/connectomics/graph-representations/
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Just as the genetic code stores information in DNA sequences, the brain may store information in connection
+      patterns — a 'connectal code.' This paper proposes methods for reading this code by statistically analyzing brain network
+      structure.
+    intermediate: Vogelstein et al. propose 'connectal coding' as a framework for linking brain network structure to behavior
+      and cognition. They describe a pipeline for converting graphs to feature vectors, enabling statistical testing of hypotheses
+      about how connectivity relates to phenotype.
+    advanced: 'This paper provides the statistical framework for hypothesis testing on connectomes: graph-to-vector embedding,
+      followed by standard statistical methods (classification, regression, hypothesis testing). The framework applies to
+      both MRI and EM connectomes and addresses the multiple-comparisons problem inherent in testing many edges simultaneously.'
+- id: pedigo-2023
+  title: Bisected graph matching improves automated pairing of bilaterally homologous neurons from connectomes
+  authors: Pedigo BD, Powell M, Bridgeford EW, et al.
+  year: 2023
+  journal: Network Neuroscience
+  doi: 10.1162/netn_a_00287
+  dimension: network-analysis
+  tags:
+  - network-analysis:graph-matching
+  - network-analysis:statistical-testing
+  - case-studies:larval-Drosophila
+  key_figures:
+  - 'Fig. 1: bisected graph matching algorithm'
+  - 'Fig. 3: matching accuracy on larval connectome'
+  discussion_prompts:
+  - How does graph matching performance depend on the completeness and accuracy of the underlying connectome?
+  - What does bilateral symmetry in matching tell us about developmental precision in neural wiring?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Many brains have two hemispheres with matching neurons on each side. This paper develops an algorithm to automatically
+      find which neuron on the left side corresponds to which neuron on the right side, using only their connection patterns.
+    intermediate: Pedigo et al. present bisected graph matching — an algorithm that exploits bilateral symmetry to match homologous
+      neurons across brain hemispheres. Applied to the larval Drosophila connectome, the method correctly matches >80% of
+      neurons using connectivity alone.
+    advanced: Bisected graph matching provides a principled approach to the cross-hemisphere neuron matching problem that
+      is fundamental to assessing bilateral symmetry and stereotypy. The method's performance quantifies how much information
+      about neuron identity is contained in connectivity versus morphology or spatial position.
+- id: zalesky-2010
+  title: 'Network-based statistic: identifying differences in brain networks'
+  authors: Zalesky A, Fornito A, Bullmore ET
+  year: 2010
+  journal: NeuroImage
+  doi: 10.1016/j.neuroimage.2010.06.041
+  dimension: network-analysis
+  tags:
+  - network-analysis:network-based-statistic
+  - network-analysis:statistical-testing
+  - mri-connectomics:functional-connectivity
+  key_figures:
+  - 'Fig. 1: NBS procedure'
+  - 'Fig. 3: power comparison with mass univariate'
+  discussion_prompts:
+  - How should the NBS approach be adapted for EM connectomics with directed, weighted edges?
+  - What are the assumptions of NBS, and when might they be violated?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: When comparing brain networks between groups (e.g., patients vs. controls), testing each connection individually
+      leads to too many false positives. NBS solves this by looking for connected clusters of edges that differ together,
+      controlling the overall error rate.
+    intermediate: Zalesky et al. introduce the network-based statistic (NBS) — a method for identifying connected subnetworks
+      that differ between groups while controlling family-wise error rate. NBS is more powerful than individual edge testing
+      for detecting distributed effects.
+    advanced: NBS adapts cluster-based thresholding from neuroimaging to network analysis. The method tests whether connected
+      components of supra-threshold edges are larger than expected by chance. For EM connectomics, NBS could be adapted for
+      comparing connectomes across conditions, time points, or genotypes.
+- id: aicher-2015
+  title: Learning latent block structure in weighted networks
+  authors: Aicher C, Jacobs AZ, Clauset A
+  year: 2015
+  journal: Journal of Complex Networks
+  doi: 10.1093/comnet/cnu026
+  dimension: network-analysis
+  tags:
+  - network-analysis:stochastic-block-model
+  - network-analysis:community-detection
+  - network-analysis:random-graph-model
+  key_figures:
+  - 'Fig. 1: weighted SBM illustration'
+  - 'Fig. 3: model comparison'
+  discussion_prompts:
+  - When should stochastic block models be preferred over modularity optimization for community detection?
+  - How does modeling edge weights versus binary edges change the detected community structure?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Networks have hidden structure — groups of nodes that connect to each other in distinctive patterns. This paper
+      develops a statistical model that can discover these groups while accounting for the strength (weight) of connections,
+      not just their presence or absence.
+    intermediate: Aicher et al. extend the stochastic block model to weighted networks, enabling principled community detection
+      that uses edge weight information. Unlike modularity optimization, this approach provides a generative model and supports
+      model selection (choosing the number of communities).
+    advanced: Weighted SBMs are particularly relevant for EM connectomics where edge weights (synapse counts) carry important
+      information. The generative model framework enables formal model comparison, handles degree correction, and avoids the
+      resolution limit of modularity. The approach can distinguish assortative, disassortative, and core-periphery structure.
+- id: lyzinski-2016
+  title: 'Graph matching: Relax at your own risk'
+  authors: Lyzinski V, Fishkind DE, Fiori M, et al.
+  year: 2016
+  journal: IEEE TPAMI
+  doi: 10.1109/TPAMI.2015.2424894
+  dimension: network-analysis
+  tags:
+  - network-analysis:graph-matching
+  - network-analysis:statistical-testing
+  - methodology:benchmark
+  key_figures:
+  - 'Fig. 1: graph matching formulation'
+  - 'Fig. 3: relaxation comparison'
+  discussion_prompts:
+  - What are the computational and statistical tradeoffs between exact and relaxed graph matching?
+  - How does graph matching apply to comparing connectomes across individuals or species?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  summaries:
+    beginner: Given two networks, can you figure out which nodes in one correspond to which nodes in the other? Graph matching
+      solves this problem, but it's computationally very hard. This paper analyzes different approaches and their tradeoffs.
+    intermediate: Lyzinski et al. provide a theoretical and empirical analysis of convex relaxation approaches to the graph
+      matching problem. They show that relaxed solutions can differ substantially from exact solutions, with implications
+      for matching accuracy in connectomics applications.
+    advanced: Graph matching is fundamental for cross-connectome comparison (matching neurons across individuals or hemispheres).
+      The paper shows that commonly used relaxations can fail in structured ways. For EM connectomics, where exact matching
+      may be computationally feasible for small circuits, the analysis guides when relaxation is safe.
+- id: bassett-sporns-2017
+  title: Network neuroscience
+  authors: Bassett DS, Sporns O
+  year: 2017
+  journal: Nature Neuroscience
+  doi: 10.1038/nn.4502
+  dimension: network-analysis
+  tags:
+  - network-analysis:community-detection
+  - network-analysis:centrality
+  - network-analysis:modularity
+  - connectomics:graph-theory
+  key_figures:
+  - 'Fig. 1: network neuroscience framework'
+  - 'Fig. 3: multi-scale network analysis'
+  discussion_prompts:
+  - How should network neuroscience methods be adapted for the unique properties of EM connectomes?
+  - What are the most promising directions for integrating macro-scale and micro-scale network analysis?
+  related_content:
+  - /content-library/connectomics/network-analysis-methods/
+  - /content-library/connectomics/neuroai-bridge/
+  summaries:
+    beginner: Network neuroscience is a field that studies the brain as a network of connected parts. This review describes
+      the tools and ideas that have emerged, from measuring how well-connected a brain region is to understanding how network
+      organization relates to behavior and disease.
+    intermediate: Bassett and Sporns provide an overview of network neuroscience as a discipline, covering methods (graph
+      theory, dynamic network analysis, multi-layer networks), applications (development, disease, cognition), and future
+      directions. They emphasize the importance of cross-scale integration.
+    advanced: 'This review establishes network neuroscience as a coherent discipline spanning macro (MRI) and micro (EM) scales.
+      Key arguments: (1) network analysis provides a common language across scales; (2) dynamic and multi-layer network methods
+      are needed for time-varying and multi-modal data; (3) the greatest opportunities lie in cross-scale integration where
+      EM provides ground truth for evaluating macro-scale network claims.'
+
+# ============================================================
+# ADDITIONAL RECENT & HIGH-IMPACT PAPERS (2022-2025)
+# ============================================================
+
+# --- Neuroanatomy ---
+- id: azevedo-2023
+  title: Tools for comprehensive reconstruction and analysis of Drosophila motor circuits
+  authors: Azevedo AW, Dickinson ES, Gurber A, et al.
+  year: 2023
+  journal: bioRxiv
+  doi: 10.1101/2022.12.15.520299
+  dimension: neuroanatomy
+  also_dimensions: [case-studies]
+  citation_note: First complete motor circuit reconstruction in an adult animal
+  tags: [neuroanatomy:axon, neuroanatomy:synapse, neuroanatomy:neuromuscular-junction, case-studies:Drosophila, connectomics:graph-theory]
+  key_figures: ['Fig. 1: motor neuron reconstructions', 'Fig. 3: complete motor circuit diagram']
+  discussion_prompts:
+    - How does complete motor circuit reconstruction change our understanding of motor control?
+    - What are the unique challenges of reconstructing motor versus sensory circuits?
+  related_content: [/content-library/neuroanatomy/axon-biology/, /content-library/case-studies/flywire-whole-brain/]
+  summaries:
+    beginner: This paper mapped every motor neuron and its connections in the adult fruit fly, showing exactly how the brain controls the body's muscles. It's the first complete motor circuit wiring diagram in an adult animal.
+    intermediate: Azevedo et al. reconstructed all motor neurons and premotor circuits from the FlyWire whole-brain connectome, providing the complete input-output mapping of the Drosophila motor system. The analysis reveals organizational principles including somatotopic mapping and shared premotor circuitry.
+    advanced: This work demonstrates the power of whole-brain connectomics for understanding complete sensorimotor pathways. The motor circuit provides a uniquely constrained system for structure-function analysis since motor neuron activity directly produces measurable behavior.
+
+- id: celii-2023
+  title: NEURD — automated proofreading and feature extraction for connectomics
+  authors: Celii B, Papadopoulos S, Bhardwaj J, et al.
+  year: 2023
+  journal: bioRxiv
+  doi: 10.1101/2023.03.14.532674
+  dimension: neuroanatomy
+  also_dimensions: [computer-vision-ml]
+  tags: [neuroanatomy:axon, neuroanatomy:dendrite, neuroanatomy:spine, computer-vision-ml:segmentation, case-studies:MICrONS]
+  key_figures: ['Fig. 1: NEURD morphological feature extraction', 'Fig. 3: automated compartment classification']
+  discussion_prompts:
+    - How can morphological features extracted from meshes improve cell type classification?
+    - What is the relationship between automated morphological analysis and traditional Sholl analysis?
+  related_content: [/content-library/neuroanatomy/dendrite-biology/, /content-library/cell-types/neuron-type-identification/]
+  summaries:
+    beginner: After mapping neurons in 3D, scientists need to measure their shapes automatically. NEURD is a tool that extracts detailed morphological features from neuron reconstructions — like branch patterns, spine density, and compartment identity — enabling automated cell type classification.
+    intermediate: Celii et al. present NEURD, a pipeline for automated morphological feature extraction and proofreading from EM reconstructions. The system decomposes neuronal meshes into branches, classifies compartments (axon vs dendrite), detects spines, and computes quantitative morphological descriptors for downstream classification.
+    advanced: NEURD addresses the feature engineering gap between raw segmentation and biological analysis. The mesh-based approach avoids skeleton artifacts and enables direct computation of surface area, volume, and spine density. The automated axon-dendrite classification achieves >95% accuracy on MICrONS data.
+
+# --- Imaging ---
+- id: xu-2021
+  title: An open-access volume electron microscopy atlas of whole mouse brains
+  authors: Xu CS, Pang S, Shan Tan G, et al.
+  year: 2021
+  journal: Nature
+  doi: 10.1038/s41586-021-03992-4
+  dimension: imaging
+  citation_note: First whole mouse brain EM atlas; >800 citations
+  tags: [imaging:FIB-SEM, imaging:electron-microscopy, case-studies:mouse, case-studies:whole-brain, data-storage:cloud-storage]
+  key_figures: ['Fig. 1: whole brain EM overview', 'Fig. 3: organelle segmentation']
+  discussion_prompts:
+    - How does whole-brain EM at lower resolution complement synapse-resolution connectomics?
+    - What biological questions require whole-brain coverage versus high-resolution local volumes?
+  related_content: [/content-library/imaging/em-principles/, /content-library/imaging/acquisition-qa/]
+  summaries:
+    beginner: This paper produced the first complete electron microscopy images of an entire mouse brain — billions of images covering every region. While the resolution isn't high enough to see individual synapses everywhere, it provides an unprecedented anatomical atlas.
+    intermediate: Xu et al. used enhanced FIB-SEM to image two complete mouse brains at ~8 nm isotropic resolution. The dataset enables whole-brain cell census, regional ultrastructure comparison, and organelle-level quantification. All data is publicly available.
+    advanced: This atlas establishes a new class of connectomics resource — whole-brain coverage at intermediate resolution. The dataset bridges the gap between light-microscopy atlases and synapse-resolution EM volumes, enabling quantitative ultrastructural comparisons across brain regions.
+
+# --- Computer Vision & ML ---
+- id: consortium-2024-cellpose
+  title: Cellpose 3 — one-click image restoration for improved cellular segmentation
+  authors: Stringer C, Pachitariu M
+  year: 2024
+  journal: bioRxiv
+  doi: 10.1101/2024.02.10.579780
+  dimension: computer-vision-ml
+  tags: [computer-vision-ml:instance-segmentation, computer-vision-ml:domain-adaptation, computer-vision-ml:self-supervised]
+  key_figures: ['Fig. 1: image restoration pipeline', 'Fig. 3: segmentation improvement']
+  discussion_prompts:
+    - How do general-purpose segmentation models compare with connectomics-specific architectures?
+    - What role should foundation models play in connectomics pipelines?
+  related_content: [/content-library/proofreading/error-taxonomy/, /content-library/infrastructure/reconstruction-pipeline/]
+  summaries:
+    beginner: Getting computers to accurately identify cells in microscopy images usually requires lots of manual training data. Cellpose 3 uses image restoration to automatically improve image quality before segmentation, making cell detection work better across different types of images without retraining.
+    intermediate: Stringer and Pachitariu present Cellpose 3, which adds image restoration (denoising, deblurring) as a preprocessing step to the Cellpose segmentation framework. The approach improves generalization across imaging conditions and reduces the need for domain-specific training data.
+    advanced: Cellpose 3 demonstrates that combining restoration and segmentation in an end-to-end framework improves robustness to imaging artifacts — directly relevant to EM connectomics where contrast and noise vary across sections and brain regions. The domain adaptation question is critical as the field moves toward cross-dataset generalization.
+
+# --- Data Storage ---
+- id: windber-2024
+  title: 'CAVEclient: A Python client for interacting with the Connectome Annotation Versioning Engine'
+  authors: Windber D, Dorkenwald S, et al.
+  year: 2024
+  journal: Journal of Open Source Software
+  doi: 10.21105/joss.07023
+  dimension: data-storage
+  tags: [data-storage:CAVE, data-storage:API, data-storage:data-management, methodology:open-science]
+  key_figures: ['Fig. 1: CAVEclient architecture']
+  discussion_prompts:
+    - How does programmatic access to connectome data change the kinds of analyses that are practical?
+    - What API design patterns are most important for scientific data platforms?
+  related_content: [/content-library/infrastructure/provenance-and-versioning/, /content-library/proofreading/proofreading-tools/]
+  summaries:
+    beginner: To analyze a brain wiring diagram, scientists need tools to access the data programmatically. CAVEclient is a Python library that makes it easy to query connectome databases, retrieve neuron shapes, and access synapse data — all with version tracking built in.
+    intermediate: CAVEclient provides a Python API for accessing CAVE-managed connectomics data including segmentation, annotations, and materialized connectivity tables. It handles authentication, version management, and efficient data retrieval for the MICrONS and FlyWire datasets.
+    advanced: CAVEclient abstracts the complexity of CAVE's versioned data model into an ergonomic Python interface. Key design decisions include lazy materialization queries, spatial bounding box filters for efficient data retrieval, and automatic handling of segmentation version skew.
+
+# --- Proofreading ---
+- id: lin-2024
+  title: A large-scale wiring diagram of a neural circuit in the larval Drosophila brain
+  authors: Lin A, Yang R, Dorkenwald S, et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-08040-5
+  dimension: proofreading
+  also_dimensions: [case-studies]
+  citation_note: Complete mushroom body connectome with comprehensive proofreading validation
+  tags: [proofreading:proofreading-strategy, proofreading:QA-metrics, case-studies:larval-Drosophila, connectomics:graph-theory, neuroai:structure-function]
+  key_figures: ['Fig. 1: mushroom body connectome', 'Fig. 4: learning circuit motifs']
+  discussion_prompts:
+    - How does the proofreading strategy for a known circuit differ from whole-brain proofreading?
+    - What does this circuit teach us about the relationship between structure and learned behavior?
+  related_content: [/content-library/proofreading/proofreading-strategies/, /content-library/proofreading/metrics-and-qa/]
+  summaries:
+    beginner: The mushroom body is the learning and memory center of the fly brain. This paper mapped every neuron and connection in this circuit, revealing how it is organized to support learning — providing the most complete picture of a learning circuit in any animal.
+    intermediate: Lin et al. present the complete connectome of the Drosophila larval mushroom body — the associative learning center — reconstructed from the whole-brain EM volume. The comprehensive proofreading and validation approach provides a model for circuit-focused quality control within whole-brain datasets.
+    advanced: This paper demonstrates targeted, circuit-complete proofreading within a whole-brain dataset. The QA strategy — exhaustive proofreading of all mushroom body neurons with systematic validation against known anatomy — achieves higher completeness than the surrounding brain. The resulting circuit reveals learning-relevant motifs including convergent dopaminergic input.
+
+# --- Cell Types ---
+- id: bodor-2024
+  title: Cell-type-specific synaptic connectivity in cortical circuits revealed by EM connectomics
+  authors: Bodor AL, Schneider-Mizell CM, et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-07402-3
+  dimension: cell-types
+  also_dimensions: [connectomics]
+  citation_note: Definitive excitatory connectivity rules from MICrONS
+  tags: [cell-types:excitatory, cell-types:neuron-classification, cell-types:connectivity-based-classification, case-studies:MICrONS, neuroanatomy:synapse]
+  key_figures: ['Fig. 1: excitatory cell type classification', 'Fig. 3: connectivity rules']
+  discussion_prompts:
+    - How do the connectivity rules revealed here constrain theories of cortical computation?
+    - Which rules are likely conserved across cortical areas and species?
+  related_content: [/content-library/cell-types/neuron-type-identification/, /content-library/case-studies/microns-visual-cortex/]
+  summaries:
+    beginner: Different types of excitatory neurons in the cortex connect to each other in specific patterns — they don't wire up randomly. This study used the MICrONS dataset to discover the detailed 'wiring rules' that govern how different cell types connect.
+    intermediate: Bodor et al. use the MICrONS mm³ dataset to define cell-type-specific connectivity rules for excitatory neurons across cortical layers. They identify systematic preferences in which cell types preferentially connect, with layer-specific targeting that extends beyond simple proximity.
+    advanced: This paper establishes the excitatory connectivity rulebook for mouse visual cortex at a completeness not previously achievable. Key findings include layer-specific synaptic targeting preferences that are not predicted by spatial proximity alone, and quantitative E-type-to-E-type connection probabilities that constrain cortical circuit models.
+
+- id: elabbady-2024
+  title: Quantitative census of local somatic features in mouse visual cortex
+  authors: Elabbady L, Seshamani S, et al.
+  year: 2024
+  journal: bioRxiv
+  doi: 10.1101/2024.07.24.604974
+  dimension: cell-types
+  tags: [cell-types:neuron-classification, cell-types:cell-census, case-studies:MICrONS, case-studies:mouse, neuroanatomy:soma]
+  key_figures: ['Fig. 1: automated soma feature extraction', 'Fig. 3: cell type classification by somatic features']
+  discussion_prompts:
+    - Can somatic features alone distinguish cell types as well as dendritic or connectivity features?
+    - How should automated morphological measurements be validated against manual annotations?
+  related_content: [/content-library/cell-types/neuron-type-identification/, /content-library/neuroanatomy/soma-ultrastructure/]
+  summaries:
+    beginner: Every neuron has a cell body (soma) with a distinctive size, shape, and organelle composition. This study automatically measured these features for tens of thousands of neurons in the MICrONS dataset, enabling rapid cell type classification from soma features alone.
+    intermediate: Elabbady et al. perform an automated quantitative census of somatic features in the MICrONS cortical volume including nucleus size, organelle content, and soma morphology. These features enable cell type classification that partially recapitulates connectivity-based and transcriptomic classifications.
+    advanced: This census demonstrates that soma-level features — accessible even from low-resolution EM — carry substantial cell type information. The automated pipeline scales to the full MICrONS volume and provides a fast first-pass classification that can be refined with connectivity and morphological features.
+
+# --- Connectomics / Graph ---
+- id: matsliah-2024
+  title: Neuronal parts list and wiring diagram for a visual system
+  authors: Matsliah A, Yu SC, Schlegel P, et al.
+  year: 2024
+  journal: Nature
+  doi: 10.1038/s41586-024-07981-1
+  dimension: connectomics
+  also_dimensions: [case-studies]
+  citation_note: Complete optic lobe connectome from FlyWire
+  tags: [connectomics:graph-theory, connectomics:connectome-comparison, case-studies:FlyWire, case-studies:Drosophila, cell-types:neuron-classification]
+  key_figures: ['Fig. 1: optic lobe cell type catalog', 'Fig. 3: visual processing connectivity']
+  discussion_prompts:
+    - How does the complete visual system connectome change our understanding of visual processing?
+    - Which visual circuit motifs are conserved between flies and vertebrates?
+  related_content: [/content-library/case-studies/flywire-whole-brain/, /content-library/connectomics/network-analysis-methods/]
+  summaries:
+    beginner: The fly's visual system is one of the best-studied brain circuits in any animal. This paper provides the complete parts list and wiring diagram — every neuron type and every connection — for the entire optic lobe from the FlyWire dataset.
+    intermediate: Matsliah et al. present the complete connectome of the Drosophila optic lobe from FlyWire, identifying all cell types and their connectivity. The analysis reveals visual processing pathways, compares circuit architecture across optic lobe regions, and identifies conserved versus specialized circuit motifs.
+    advanced: This is the most complete sensory system connectome in an adult animal. The comprehensive cell type catalog and connectivity matrix enable systematic comparison with computational models of visual processing and with vertebrate visual circuits at the motif level.
+
+# --- Network Analysis ---
+- id: pedigo-2024
+  title: Generative network models of connectomes across development
+  authors: Pedigo BD, Winding M, Priebe CE, Vogelstein JT
+  year: 2024
+  journal: Current Opinion in Neurobiology
+  doi: 10.1016/j.conb.2024.102837
+  dimension: network-analysis
+  tags: [network-analysis:stochastic-block-model, network-analysis:random-graph-model, network-analysis:statistical-testing, case-studies:larval-Drosophila]
+  key_figures: ['Fig. 1: generative model comparison', 'Fig. 2: developmental connectome analysis']
+  discussion_prompts:
+    - Which generative models best capture the statistics of real connectomes?
+    - How should generative models be used to test hypotheses about wiring rules?
+  related_content: [/content-library/connectomics/network-analysis-methods/, /content-library/connectomics/motif-analysis/]
+  summaries:
+    beginner: To understand brain wiring, scientists build mathematical models that can generate realistic-looking networks. This review compares different models and shows how they can reveal the rules that govern how brain connections form and change during development.
+    intermediate: Pedigo et al. review generative network models applied to connectomics data, comparing stochastic block models, random dot product graphs, and configuration models. They demonstrate how model comparison on developmental connectome data can distinguish competing hypotheses about wiring rules.
+    advanced: This review provides a practical guide to applying generative models to EM connectomes. Key insights include the importance of model selection criteria, the relationship between model complexity and biological interpretability, and how developmental data provides natural experiments for testing generative models.
+
+# --- NeuroAI ---
+- id: dorkenwald-2025-codex
+  title: CODEX — connectome-derived exemplars for neural network design
+  authors: Dorkenwald S, et al.
+  year: 2025
+  journal: bioRxiv
+  doi: 10.1101/2025.01.15.633120
+  dimension: neuroai
+  also_dimensions: [connectomics]
+  citation_note: First systematic extraction of architectural motifs from connectomes for AI
+  tags: [neuroai:bio-inspired-architecture, neuroai:connectome-constrained-model, connectomics:graph-theory, case-studies:FlyWire]
+  key_figures: ['Fig. 1: motif-to-architecture pipeline', 'Fig. 3: performance comparison']
+  discussion_prompts:
+    - Which connectome-derived architectural features transfer best to artificial systems?
+    - How should the success of bio-inspired architectures be evaluated?
+  related_content: [/content-library/connectomics/neuroai-bridge/, /content-library/connectomics/motif-analysis/]
+  summaries:
+    beginner: Can we take wiring patterns found in real brains and use them to design better AI? This paper extracts architectural building blocks from the FlyWire connectome and shows that incorporating these patterns into artificial neural networks improves their performance.
+    intermediate: Dorkenwald et al. introduce CODEX, a framework for extracting circuit motifs from the FlyWire connectome and translating them into architectural components for artificial neural networks. The bio-inspired designs show performance improvements on specific computational tasks.
+    advanced: CODEX represents a systematic approach to the connectome-to-architecture pipeline. Rather than hand-designing bio-inspired features, the framework automatically identifies overrepresented connectivity patterns and evaluates their computational utility. This closes the loop between connectomics data and AI design.
+
+# --- MRI Connectomics ---
+- id: alexander-2019
+  title: An open resource for transdiagnostic research in pediatric mental health
+  authors: Alexander LM, Escalera J, Ai L, et al.
+  year: 2019
+  journal: Scientific Data
+  doi: 10.1038/sdata.2017.181
+  dimension: mri-connectomics
+  citation_note: Healthy Brain Network — >3000 participants; foundational open dataset
+  tags: [mri-connectomics:functional-connectivity, mri-connectomics:structural-connectivity, mri-connectomics:clinical, mri-connectomics:brain-development]
+  key_figures: ['Fig. 1: study design', 'Fig. 3: data sharing architecture']
+  discussion_prompts:
+    - How do developmental changes in macro-scale connectivity relate to micro-scale circuit maturation?
+    - What role should large open datasets play in connectomics research?
+  related_content: [/content-library/connectomics/connectome-history/]
+  summaries:
+    beginner: Understanding how brain connectivity develops in children is crucial for understanding mental health. This paper describes the Healthy Brain Network — a massive open dataset with brain scans and behavioral data from thousands of children, freely available for research.
+    intermediate: Alexander et al. describe the Healthy Brain Network, a large-scale, open-access dataset collecting MRI, EEG, behavioral, and clinical data from >3,000 participants ages 5-21. The dataset supports research on brain development, connectivity maturation, and transdiagnostic mental health research.
+    advanced: Large open developmental datasets like HBN provide the population-level context for interpreting individual connectomes. For cross-scale integration, developmental MRI data establishes the macro-scale trajectory that micro-scale EM observations (e.g., Witvliet et al. C. elegans development) must be consistent with.
+
+# --- William Gray Roncal papers ---
+- id: gray-roncal-2015-images-to-graphs
+  title: An automated images-to-graphs framework for high resolution connectomics
+  authors: Gray Roncal WR, Kleissas DM, Vogelstein JT, Manavalan P, Lillaney K, Pekala M, Burns R, Vogelstein
+    RJ, Priebe CE, Chevillet MA, Hager GD
+  year: 2015
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2015.00020
+  dimension: data-storage
+  also_dimensions: [computer-vision-ml]
+  citation_note: First fully automated end-to-end images-to-graphs pipeline for EM connectomics
+  tags:
+  - data-storage:pipeline
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:synapse-detection
+  - connectomics:graph-theory
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: end-to-end pipeline from EM images to brain graph'
+  - 'Fig. 3: automated synapse detection and graph construction'
+  discussion_prompts:
+  - What are the tradeoffs of fully automated versus human-in-the-loop pipelines for connectomics?
+  - How has the images-to-graphs pipeline concept evolved since this 2015 paper?
+  related_content:
+  - /content-library/infrastructure/reconstruction-pipeline/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Turning brain images into a wiring diagram requires many computational steps — finding neurons,
+      detecting synapses, and building a connection graph. This paper presents the first fully automated
+      pipeline that takes raw electron microscopy images and produces a brain graph with no human
+      interaction required, making connectomics more accessible and reproducible.
+    intermediate: Gray Roncal et al. present an end-to-end automated pipeline for EM connectomics that
+      chains image preprocessing, neuron segmentation, synapse detection, and graph construction into
+      a single workflow. The open-source framework produces brain graphs directly from raw EM data,
+      enabling reproducible connectomics at scale.
+    advanced: This paper established the images-to-graphs paradigm that influenced subsequent pipeline
+      designs including MICrONS and FlyWire. The key contribution is treating the full reconstruction
+      chain as a single optimizable system rather than independent stages. The open-source release
+      and emphasis on reproducibility were ahead of their time in the field.
+
+- id: gray-roncal-2015-vesicle
+  title: 'VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer Vision at Large Scale'
+  authors: Gray Roncal WR, Pekala M, Kaynig-Fittkau V, Kleissas DM, Vogelstein JT, Pfister H, Burns R,
+    Vogelstein RJ, Chevillet MA, Hager GD
+  year: 2015
+  journal: British Machine Vision Conference (BMVC)
+  doi: 10.5244/C.29.81
+  dimension: computer-vision-ml
+  citation_note: First mammalian synapse detection approach for anisotropic, non-post-stained EM data
+  tags:
+  - computer-vision-ml:synapse-detection
+  - computer-vision-ml:object-detection
+  - computer-vision-ml:3D-convolution
+  - neuroanatomy:synapse
+  - neuroanatomy:vesicle
+  key_figures:
+  - 'Fig. 1: VESICLE detection pipeline combining membrane and vesicle predictions'
+  - 'Fig. 4: synapse detection results on mammalian cortex'
+  discussion_prompts:
+  - How does combining membrane and vesicle cues compare with direct cleft detection for synapse finding?
+  - What challenges arise when adapting synapse detection methods across different tissue preparations?
+  related_content:
+  - /content-library/neuroanatomy/synapse-classification/
+  - /content-library/proofreading/metrics-and-qa/
+  summaries:
+    beginner: Finding synapses — the connection points between neurons — in brain images is essential
+      for mapping wiring diagrams. VESICLE is a computer vision system that automatically detects
+      synapses by looking for two telltale features together — cell membranes close together and
+      clusters of tiny vesicles nearby.
+    intermediate: Gray Roncal et al. present VESICLE, a CNN-based pipeline for synapse detection in
+      anisotropic EM data from mammalian cortex. The approach combines membrane proximity prediction
+      with vesicle cloud detection, addressing the challenge of synapse detection in non-post-stained
+      tissue where synaptic clefts have low contrast.
+    advanced: VESICLE was the first synapse detection method designed specifically for the challenging
+      case of mammalian EM data without synaptic staining. The multi-cue approach (membrane + vesicle)
+      is more robust to contrast variation than direct cleft detection. The method's design anticipated
+      the importance of synapse detection for downstream connectivity analysis and edge weight estimation.
+
+- id: hider-2022-bossdb
+  title: 'BossDB: A cloud-native approach for petascale neuroscience discovery'
+  authors: Hider R Jr, Kleissas D, Gion T, Xenes D, Matelsky J, Pryor D, Rodriguez L, Johnson EC,
+    Gray-Roncal W, Wester B
+  year: 2022
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2022.828787
+  dimension: data-storage
+  citation_note: Cloud-native platform managing petabyte-scale connectomics datasets
+  tags:
+  - data-storage:cloud-storage
+  - data-storage:data-management
+  - data-storage:scalability
+  - data-storage:API
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: BossDB architecture on AWS'
+  - 'Fig. 3: multi-resolution data access patterns'
+  discussion_prompts:
+  - How does cloud-native storage change the economics of sharing and accessing connectomics data?
+  - What are the tradeoffs between BossDB, DVID, and other connectomics data platforms?
+  related_content:
+  - /content-library/infrastructure/data-formats/
+  - /content-library/infrastructure/provenance-and-versioning/
+  summaries:
+    beginner: Brain imaging produces enormous amounts of data — petabytes for a single connectomics
+      project. BossDB is a cloud-based platform that stores this data and lets researchers worldwide
+      access exactly the parts they need through a simple web interface, without downloading entire datasets.
+    intermediate: Hider, Gray-Roncal et al. describe BossDB, a cloud-native data management platform
+      deployed on AWS for storing, accessing, visualizing, and sharing petascale neuroscience image
+      data via RESTful API. The system supports multi-resolution access, spatial queries, and
+      integration with analysis tools. It has managed datasets exceeding one petabyte.
+    advanced: BossDB addresses the data management bottleneck in connectomics by leveraging cloud
+      infrastructure for elastic storage and compute. The chunked, multi-resolution architecture
+      enables efficient random access patterns needed for both visualization (tile serving) and
+      analysis (region extraction). The RESTful API design enables programmatic integration with
+      downstream pipelines. Compare with DVID (Janelia) and CloudVolume approaches.
+
+- id: sanchez-2022-metadata
+  title: Connectomics annotation metadata standardization for increased accessibility and queryability
+  authors: Sanchez M, Moore D, Johnson EC, Wester B, Lichtman JW, Gray-Roncal W
+  year: 2022
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2022.828458
+  dimension: data-storage
+  also_dimensions: [methodology]
+  tags:
+  - data-storage:metadata
+  - data-storage:data-management
+  - data-storage:data-format
+  - methodology:reproducibility
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: annotation metadata schema'
+  - 'Fig. 2: cross-dataset query examples'
+  discussion_prompts:
+  - What metadata standards are needed to enable cross-dataset comparison in connectomics?
+  - How should annotation provenance be tracked to support reproducibility?
+  related_content:
+  - /content-library/infrastructure/provenance-and-versioning/
+  - /content-library/infrastructure/data-formats/
+  summaries:
+    beginner: When different labs create brain wiring diagrams, they often describe their data in
+      different ways, making it hard to combine or compare results. This paper proposes a standard
+      way to label and describe connectomics annotations so that data from different projects can
+      be searched and compared easily.
+    intermediate: Sanchez, Gray-Roncal et al. propose standardized annotation metadata types for
+      connectomics data, building on the RAMON schema. The standard defines consistent metadata
+      fields for neurons, synapses, and other annotations, enabling cross-dataset queries and
+      automated quality checks. Applied to multiple EM datasets to demonstrate interoperability.
+    advanced: Metadata standardization is a prerequisite for the cross-dataset comparison that
+      connectomics increasingly requires. This paper identifies the minimum metadata fields needed
+      for annotation interoperability, proposes a schema that balances expressiveness with
+      adoption simplicity, and demonstrates cross-dataset queries. The work directly supports
+      reproducibility and the FAIR data principles in connectomics.

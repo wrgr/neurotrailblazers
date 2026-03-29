@@ -29,6 +29,8 @@ items:
         url: "/content-library/"
       - title: "Journal Papers"
         url: "/content-library/journal-papers/"
+      - title: "Journal Club"
+        url: "/technical-training/journal-club/"
       - title: "Concepts"
         url: "/concepts/"
       - title: "Datasets"

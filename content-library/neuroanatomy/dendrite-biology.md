@@ -24,6 +24,30 @@ primary_units:
   - unit-2-cell-biology-of-neurons
   - unit-3-synaptic-structure
 difficulty: intermediate
+tags:
+  - neuroanatomy:dendrite
+  - neuroanatomy:spine
+  - neuroanatomy:postsynaptic-density
+  - neuroanatomy:cytoskeleton
+  - connectomics:synapse
+  - imaging:electron-microscopy
+  - methodology:identification
+  - cell-types:pyramidal-neuron
+micro_lesson_id: ml-neuro-dendrite
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/dendrite-cross-section.png
+    alt: "EM cross-section of a dendrite showing microtubule arrays and mitochondria"
+    caption: "Dendritic shaft in cross-section showing parallel microtubules and elongated mitochondria as hallmark features."
+  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/spine-type-gallery.png
+    alt: "Gallery of dendritic spine morphologies: thin, mushroom, stubby, and filopodium"
+    caption: "Four canonical spine types with PSD area measurements. Mushroom spines have the largest PSDs and are considered mature, stable synapses."
+  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/psd-ultrastructure.png
+    alt: "High-magnification view of a postsynaptic density at an asymmetric synapse"
+    caption: "Postsynaptic density at an asymmetric (excitatory) synapse with cleft material and presynaptic vesicle cluster."
+combines_with:
+  - soma-ultrastructure
+  - synapse-classification
+  - organelle-cues
 ---
 
 # Dendrite Biology and Ultrastructure

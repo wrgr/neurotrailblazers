@@ -22,6 +22,31 @@ primary_units:
   - unit-07-circuit-analysis
   - unit-08-comparative-connectomics
 difficulty: advanced
+tags:
+  - case-studies:H01
+  - connectomics:dense-reconstruction
+  - neuroanatomy:human-cortex
+  - neuroanatomy:temporal-lobe
+  - imaging:electron-microscopy
+  - cell-types:pyramidal-cell
+  - cell-types:interneuron
+  - methodology:species-comparison
+  - infrastructure:cloud-storage
+micro_lesson_id: ml-case-h01
+reference_images:
+  - src: /assets/images/content-library/case-studies/h01-human-cortex/volume-render.png
+    alt: "3D rendering of H01 human cortex fragment with layer annotations"
+    caption: "H01 petavoxel dataset: ~1 mm³ fragment of human temporal cortex at 4 nm resolution containing ~57,000 cells and 150 million synapses."
+  - src: /assets/images/content-library/case-studies/h01-human-cortex/axon-whorls.png
+    alt: "Novel axon whorl structures discovered in the H01 human cortex dataset"
+    caption: "Axon whorls: tightly wound tangles of axonal processes discovered in H01, not previously described in neuroanatomical literature."
+  - src: /assets/images/content-library/case-studies/h01-human-cortex/species-comparison.png
+    alt: "Side-by-side comparison of human and mouse pyramidal cell morphology"
+    caption: "Cross-species comparison: human pyramidal cells are larger with more extensive dendritic arbors and thicker myelin sheaths than mouse counterparts."
+combines_with:
+  - microns-visual-cortex
+  - c-elegans-revisited
+  - mouseconnects-himc
 ---
 
 # H01 Human Cortex Fragment

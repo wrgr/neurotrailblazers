@@ -23,6 +23,31 @@ primary_units:
   - unit-06-data-analysis
   - unit-08-comparative-connectomics
 difficulty: beginner
+tags:
+  - case-studies:C-elegans
+  - connectomics:whole-brain
+  - connectomics:dense-reconstruction
+  - connectomics:developmental
+  - methodology:graph-theory
+  - methodology:connectome-comparison
+  - imaging:serial-section-TEM
+  - neuroanatomy:nematode
+  - proofreading:manual-tracing
+micro_lesson_id: ml-case-celegans
+reference_images:
+  - src: /assets/images/content-library/case-studies/c-elegans-revisited/wiring-diagram.png
+    alt: "C. elegans 302-neuron connectome wiring diagram with ganglia colored"
+    caption: "The C. elegans connectome: 302 neurons, ~7,000 chemical synapses, ~600 gap junctions -- the first complete connectome."
+  - src: /assets/images/content-library/case-studies/c-elegans-revisited/reanalysis-comparison.png
+    alt: "Comparison of original White et al. wiring with modern re-analysis by Cook et al."
+    caption: "Cook et al. (2019) identified ~1,500 additional synapses missed in the original reconstruction, showing that even complete connectomes benefit from revisitation."
+  - src: /assets/images/content-library/case-studies/c-elegans-revisited/developmental-timeline.png
+    alt: "Developmental connectome changes across C. elegans larval stages"
+    caption: "Witvliet et al. (2021) mapped the connectome at eight developmental time points, revealing stereotyped rewiring from L1 larva through adult."
+combines_with:
+  - flywire-whole-brain
+  - h01-human-cortex
+  - microns-visual-cortex
 ---
 
 # C. elegans Revisited

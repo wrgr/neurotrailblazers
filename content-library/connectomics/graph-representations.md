@@ -11,6 +11,30 @@ topics:
 primary_units:
   - "09"
 difficulty: "Intermediate"
+tags:
+  - connectomics:graph-theory
+  - connectomics:adjacency-matrix
+  - connectomics:directed-graph
+  - connectomics:weighted-graph
+  - methodology:data-format
+  - methodology:graph-storage
+  - infrastructure:segmentation
+  - cell-types:type-level-graph
+micro_lesson_id: ml-conn-graphs
+reference_images:
+  - src: /assets/images/content-library/connectomics/graph-representations/adjacency-matrix-example.png
+    alt: "Adjacency matrix of a small neural circuit with neuron labels"
+    caption: "Weighted directed adjacency matrix for a 10-neuron circuit. Entry (i,j) = synapse count from neuron i to neuron j. Note sparsity and asymmetry."
+  - src: /assets/images/content-library/connectomics/graph-representations/graph-encoding-comparison.png
+    alt: "Comparison of neuron-level, compartment-level, and type-level graph encodings"
+    caption: "Three levels of graph abstraction: neuron-level (left, N=140K nodes), compartment-level (center, N~1M), type-level (right, N~8K)."
+  - src: /assets/images/content-library/connectomics/graph-representations/sparse-storage-formats.png
+    alt: "Diagram of edge list, CSR, and CSC sparse storage formats"
+    caption: "Three sparse matrix formats for storing connectome graphs: edge list (most compact), CSR (fast row queries), and CSC (fast column queries)."
+combines_with:
+  - connectome-history
+  - network-analysis-methods
+  - motif-analysis
 ---
 
 ## Overview

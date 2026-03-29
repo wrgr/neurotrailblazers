@@ -22,6 +22,29 @@ primary_units:
   - segmentation-quality
   - data-analysis
 difficulty: advanced
+tags:
+  - methodology:qa-metrics
+  - methodology:variation-of-information
+  - methodology:expected-run-length
+  - connectomics:edge-f1
+  - connectomics:synapse-f1
+  - proofreading:inter-annotator-agreement
+  - methodology:benchmarking
+micro_lesson_id: ml-proof-metrics
+reference_images:
+  - src: /assets/images/content-library/proofreading/metrics-and-qa/metric-formulas.png
+    alt: "Mathematical formulas for VI, ERL, edge F1, and synapse F1 metrics"
+    caption: "Core proofreading quality metrics with formulas. VI measures information-theoretic distance; ERL measures average error-free path length."
+  - src: /assets/images/content-library/proofreading/metrics-and-qa/qa-dashboard-example.png
+    alt: "Example QA dashboard showing metric trends over proofreading iterations"
+    caption: "QA dashboard tracking ERL improvement over proofreading rounds. Dotted line = release threshold."
+  - src: /assets/images/content-library/proofreading/metrics-and-qa/vi-decomposition-diagram.png
+    alt: "Diagram showing VI decomposition into merge and split components with example segmentations"
+    caption: "VI decomposition: H(T|S) captures merge errors (under-segmentation), H(S|T) captures split errors (over-segmentation)."
+combines_with:
+  - error-taxonomy
+  - proofreading-strategies
+  - worked-examples
 ---
 
 # Metrics and Quality Assurance for Connectome Proofreading

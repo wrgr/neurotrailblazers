@@ -24,6 +24,31 @@ primary_units:
   - unit-07-circuit-analysis
   - unit-09-future-directions
 difficulty: intermediate
+tags:
+  - case-studies:MouseConnects
+  - connectomics:dense-reconstruction
+  - neuroanatomy:hippocampus
+  - neuroanatomy:mouse
+  - infrastructure:cloud-computing
+  - infrastructure:BRAIN-Initiative
+  - methodology:pipeline
+  - imaging:multi-beam-SEM
+  - proofreading:AI-assisted
+micro_lesson_id: ml-case-mouseconnects
+reference_images:
+  - src: /assets/images/content-library/case-studies/mouseconnects-himc/target-volume.png
+    alt: "MouseConnects HI-MC target volume showing hippocampal subregions CA1, CA3, and dentate gyrus"
+    caption: "MouseConnects HI-MC: NIH CONNECTS flagship project targeting 10 mm³ of mouse hippocampus spanning CA1, CA3, and dentate gyrus."
+  - src: /assets/images/content-library/case-studies/mouseconnects-himc/pipeline-overview.png
+    alt: "HI-MC end-to-end acquisition and reconstruction pipeline diagram"
+    caption: "HI-MC pipeline: multi-beam SEM acquisition, cloud-based alignment, ML segmentation, distributed proofreading, and graph assembly at 10x MICrONS scale."
+  - src: /assets/images/content-library/case-studies/mouseconnects-himc/trisynaptic-circuit.png
+    alt: "Trisynaptic hippocampal circuit diagram showing entorhinal cortex to DG to CA3 to CA1 pathway"
+    caption: "The canonical trisynaptic circuit: entorhinal cortex to dentate gyrus to CA3 to CA1, the primary target for synaptic-resolution mapping."
+combines_with:
+  - microns-visual-cortex
+  - flywire-whole-brain
+  - h01-human-cortex
 ---
 
 # MouseConnects and HI-MC

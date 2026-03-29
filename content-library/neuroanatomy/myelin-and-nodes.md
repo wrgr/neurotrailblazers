@@ -24,6 +24,30 @@ primary_units:
   - unit-2-cell-biology-of-neurons
   - unit-7-white-matter
 difficulty: intermediate
+tags:
+  - neuroanatomy:myelin
+  - neuroanatomy:node-of-ranvier
+  - neuroanatomy:axon
+  - neuroanatomy:oligodendrocyte
+  - imaging:electron-microscopy
+  - infrastructure:white-matter
+  - proofreading:tracing
+  - methodology:identification
+micro_lesson_id: ml-neuro-myelin
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/myelin-cross-section.png
+    alt: "Cross-section of a myelinated axon showing compact myelin lamellae"
+    caption: "Compact myelin wrapping around an axon with major dense line and intraperiod line visible at high magnification."
+  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/node-of-ranvier-em.png
+    alt: "Node of Ranvier showing paranodal loops and exposed axolemma"
+    caption: "Node of Ranvier with paranodal junction loops and exposed axolemma, plus Schmidt-Lanterman incisures in adjacent internode."
+  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/g-ratio-diagram.png
+    alt: "Diagram illustrating the g-ratio measurement on myelinated axons of varying caliber"
+    caption: "The g-ratio (inner axon diameter / total fiber diameter) is optimized near 0.6-0.7 for maximal conduction velocity."
+combines_with:
+  - axon-biology
+  - organelle-cues
+  - soma-ultrastructure
 ---
 
 # Myelin Sheath and Nodes of Ranvier

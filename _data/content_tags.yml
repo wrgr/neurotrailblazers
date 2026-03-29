@@ -1,0 +1,205 @@
+# Unified tag taxonomy for content library, journal papers, and micro lessons.
+# Tags are organized by dimension so that content can be combined across categories.
+
+dimensions:
+  neuroanatomy:
+    label: "Neuroanatomy"
+    color: "#4A90D9"
+    tags:
+      - soma
+      - dendrite
+      - axon
+      - synapse
+      - organelle
+      - myelin
+      - spine
+      - bouton
+      - vesicle
+      - postsynaptic-density
+      - nuclear-envelope
+      - endoplasmic-reticulum
+      - mitochondria
+      - cytoskeleton
+      - microtubule
+      - neurofilament
+      - gap-junction
+      - neuromuscular-junction
+
+  imaging:
+    label: "Imaging & Sample Preparation"
+    color: "#7B68EE"
+    tags:
+      - electron-microscopy
+      - serial-section
+      - SEM
+      - TEM
+      - FIB-SEM
+      - SBEM
+      - ATUM
+      - fixation
+      - heavy-metal-staining
+      - embedding
+      - sectioning
+      - artifact
+      - knife-chatter
+      - charging
+      - fold
+      - tear
+      - drift
+      - resolution
+      - contrast
+      - acquisition-QA
+      - correlative-imaging
+      - light-microscopy
+      - X-ray-tomography
+
+  infrastructure:
+    label: "Computational Infrastructure"
+    color: "#E67E22"
+    tags:
+      - pipeline
+      - alignment
+      - segmentation
+      - agglomeration
+      - cloud-computing
+      - data-format
+      - volume-representation
+      - mesh
+      - skeleton
+      - graph-storage
+      - provenance
+      - versioning
+      - CAVE
+      - neuroglancer
+      - data-management
+      - scalability
+      - reproducibility
+      - metadata
+
+  proofreading:
+    label: "Proofreading & Quality Control"
+    color: "#E74C3C"
+    tags:
+      - merge-error
+      - split-error
+      - boundary-error
+      - identity-error
+      - proofreading-strategy
+      - exhaustive-proofreading
+      - targeted-proofreading
+      - crowd-sourced-proofreading
+      - QA-metrics
+      - variation-of-information
+      - expected-run-length
+      - edge-F1
+      - synapse-F1
+      - inter-annotator-agreement
+      - proofreading-tools
+
+  cell-types:
+    label: "Cell Types & Classification"
+    color: "#27AE60"
+    tags:
+      - neuron-classification
+      - glia
+      - astrocyte
+      - oligodendrocyte
+      - microglia
+      - pyramidal-cell
+      - interneuron
+      - inhibitory
+      - excitatory
+      - morphological-classification
+      - connectivity-based-classification
+      - axon-dendrite-distinction
+      - molecular-markers
+      - cell-census
+
+  connectomics:
+    label: "Graph Analysis & Network Science"
+    color: "#F39C12"
+    tags:
+      - graph-theory
+      - adjacency-matrix
+      - directed-graph
+      - weighted-graph
+      - degree-distribution
+      - clustering-coefficient
+      - path-length
+      - community-detection
+      - spectral-analysis
+      - motif
+      - null-model
+      - subgraph-isomorphism
+      - hub
+      - rich-club
+      - small-world
+      - modularity
+      - connectome-comparison
+
+  neuroai:
+    label: "NeuroAI & Computational Modeling"
+    color: "#9B59B6"
+    tags:
+      - structure-function
+      - bio-inspired-architecture
+      - connectome-constrained-model
+      - deep-learning
+      - flood-filling-network
+      - neural-network
+      - graph-neural-network
+      - representation-learning
+      - generative-model
+      - simulation
+      - brain-computer-interface
+
+  case-studies:
+    label: "Datasets & Case Studies"
+    color: "#1ABC9C"
+    tags:
+      - C-elegans
+      - Drosophila
+      - mouse
+      - human
+      - FlyWire
+      - MICrONS
+      - H01
+      - MouseConnects
+      - FAFB
+      - larval-Drosophila
+      - zebrafish
+      - retina
+      - visual-cortex
+      - hippocampus
+      - whole-brain
+      - dense-reconstruction
+      - sparse-reconstruction
+
+  methodology:
+    label: "Research Methodology"
+    color: "#95A5A6"
+    tags:
+      - experimental-design
+      - hypothesis-testing
+      - statistical-analysis
+      - reproducibility
+      - open-science
+      - data-sharing
+      - benchmark
+      - ground-truth
+      - inter-lab-comparison
+      - ethics
+      - sample-size
+      - power-analysis
+
+# Expertise levels for journal paper summaries
+expertise_levels:
+  - id: beginner
+    label: "Beginner"
+    description: "No prior neuroscience or connectomics background; needs plain-language context."
+  - id: intermediate
+    label: "Intermediate"
+    description: "Familiar with basic neuroscience and EM concepts; can follow methods sections."
+  - id: advanced
+    label: "Advanced"
+    description: "Active researcher or advanced trainee; interested in methodological details and limitations."

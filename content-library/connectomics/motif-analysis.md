@@ -12,6 +12,30 @@ topics:
 primary_units:
   - "09"
 difficulty: "Advanced"
+tags:
+  - connectomics:motif-analysis
+  - connectomics:graph-theory
+  - connectomics:subgraph-isomorphism
+  - methodology:null-model
+  - methodology:statistical-analysis
+  - methodology:connectome-comparison
+  - case-studies:c-elegans-motifs
+  - case-studies:cortical-reciprocity
+micro_lesson_id: ml-conn-motifs
+reference_images:
+  - src: /assets/images/content-library/connectomics/motif-analysis/three-node-motifs.png
+    alt: "All 13 possible three-node directed motifs with frequency labels"
+    caption: "The 13 three-node directed motif classes. Bar chart shows observed vs expected counts in C. elegans. Reciprocal motifs are significantly overrepresented."
+  - src: /assets/images/content-library/connectomics/motif-analysis/motif-null-model-comparison.png
+    alt: "Motif z-scores compared across different null model choices"
+    caption: "Motif significance depends on null model choice. Same circuit data produces different z-scores under degree-preserving vs Erdos-Renyi nulls."
+  - src: /assets/images/content-library/connectomics/motif-analysis/dotmotif-query-workflow.png
+    alt: "DotMotif query workflow from pattern definition to subgraph matches"
+    caption: "DotMotif workflow: define a motif pattern in human-readable syntax, compile to subgraph isomorphism search, and enumerate all instances in the connectome graph."
+combines_with:
+  - graph-representations
+  - network-analysis-methods
+  - neuroai-bridge
 ---
 
 ## Overview

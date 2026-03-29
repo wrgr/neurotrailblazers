@@ -20,6 +20,30 @@ primary_units:
   - error-identification
   - segmentation-quality
 difficulty: intermediate
+tags:
+  - proofreading:merge-error
+  - proofreading:split-error
+  - proofreading:boundary-error
+  - proofreading:identity-error
+  - connectomics:segmentation
+  - methodology:qa-metrics
+  - imaging:electron-microscopy
+micro_lesson_id: ml-proof-errors
+reference_images:
+  - src: /assets/images/content-library/proofreading/error-taxonomy/merge-error-example.png
+    alt: "Two neurons incorrectly merged into a single segment shown in Neuroglancer"
+    caption: "Merge error: two distinct pyramidal neurons fused at a touching point. The merged segment (green) contains two separate axon initial segments."
+  - src: /assets/images/content-library/proofreading/error-taxonomy/split-error-example.png
+    alt: "A single neuron split into multiple fragments at a thin process"
+    caption: "Split error: one interneuron fragmented into 4 segments (colored) at thin-caliber processes. Arrows mark split points."
+  - src: /assets/images/content-library/proofreading/error-taxonomy/error-classification-flowchart.png
+    alt: "Decision flowchart for classifying segmentation errors by type and severity"
+    caption: "Error classification workflow: identify error type, assess downstream impact on connectivity, and assign correction priority."
+combines_with:
+  - proofreading-strategies
+  - proofreading-tools
+  - metrics-and-qa
+  - worked-examples
 ---
 
 # Error Taxonomy in Connectome Proofreading

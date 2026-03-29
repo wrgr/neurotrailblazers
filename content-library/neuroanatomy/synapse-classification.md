@@ -25,6 +25,31 @@ primary_units:
   - unit-4-circuit-analysis
   - unit-5-annotation-methods
 difficulty: intermediate
+tags:
+  - neuroanatomy:synapse
+  - neuroanatomy:postsynaptic-density
+  - neuroanatomy:vesicle
+  - connectomics:excitatory-synapse
+  - connectomics:inhibitory-synapse
+  - connectomics:gap-junction
+  - imaging:electron-microscopy
+  - proofreading:synapse-annotation
+  - methodology:classification
+micro_lesson_id: ml-neuro-synapse
+reference_images:
+  - src: /assets/images/content-library/neuroanatomy/synapse-classification/asymmetric-synapse.png
+    alt: "Gray Type I asymmetric synapse with prominent PSD and round vesicles"
+    caption: "Asymmetric (excitatory) synapse showing thick PSD, round clear vesicles, and wide synaptic cleft (~20 nm)."
+  - src: /assets/images/content-library/neuroanatomy/synapse-classification/symmetric-synapse.png
+    alt: "Gray Type II symmetric synapse with thin PSD and pleomorphic vesicles"
+    caption: "Symmetric (inhibitory) synapse with thin PSD on both sides, pleomorphic vesicles, and narrow cleft (~12 nm)."
+  - src: /assets/images/content-library/neuroanatomy/synapse-classification/synapse-comparison-diagram.png
+    alt: "Side-by-side diagram comparing asymmetric and symmetric synapses"
+    caption: "Comparison of key ultrastructural features used to classify synapses in EM volumes."
+combines_with:
+  - dendrite-biology
+  - axon-biology
+  - organelle-cues
 ---
 
 # Synapse Classification and Identification

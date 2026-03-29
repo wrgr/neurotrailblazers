@@ -13,6 +13,28 @@ topics:
 primary_units:
   - "07"
 difficulty: "Intermediate"
+tags:
+  - cell-types:glia-recognition
+  - cell-types:astrocyte
+  - cell-types:oligodendrocyte
+  - cell-types:microglia
+  - imaging:electron-microscopy
+  - proofreading:boundary-detection
+micro_lesson_id: ml-cell-glia
+reference_images:
+  - src: /assets/images/content-library/cell-types/glia-recognition/glia-type-gallery.png
+    alt: "Gallery of three major glial cell types in EM with labeled features"
+    caption: "Glial cell types in EM: astrocyte (pale cytoplasm, glycogen granules), oligodendrocyte (dark cytoplasm, myelinating processes), microglia (dense granules, irregular nucleus)."
+  - src: /assets/images/content-library/cell-types/glia-recognition/glia-neuron-boundary.png
+    alt: "EM image showing boundary between a glial process and a neuronal dendrite"
+    caption: "Glia-neuron boundary: astrocytic endfoot (A) wrapping a capillary (Cap) adjacent to a dendrite (D). Misidentifying this boundary causes high-impact segmentation errors."
+  - src: /assets/images/content-library/cell-types/glia-recognition/myelin-sheath-detail.png
+    alt: "High-magnification view of oligodendrocyte myelin sheath wrapping an axon"
+    caption: "Myelin sheath detail: compact myelin layers produced by oligodendrocyte processes, a key feature for identifying myelinated axons and their associated glia."
+combines_with:
+  - axon-dendrite-classification
+  - neuron-type-identification
+  - artifact-taxonomy
 ---
 
 ## Overview

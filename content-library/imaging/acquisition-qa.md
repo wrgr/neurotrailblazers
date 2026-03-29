@@ -11,6 +11,27 @@ topics:
 primary_units:
   - "03"
 difficulty: "Intermediate"
+tags:
+  - imaging:acquisition-qa
+  - imaging:electron-microscopy
+  - imaging:quality-control
+  - infrastructure:metadata
+  - methodology:reproducibility
+micro_lesson_id: ml-img-acquisition-qa
+reference_images:
+  - src: /assets/images/content-library/imaging/acquisition-qa/qa-checklist-visual.png
+    alt: "Visual QA checklist for EM acquisition with pass/fail examples"
+    caption: "Per-tile QA checklist: focus quality, brightness uniformity, stitching alignment, and artifact coverage. Red borders = fail criteria."
+  - src: /assets/images/content-library/imaging/acquisition-qa/pilot-recon-validation.png
+    alt: "Small pilot reconstruction used to validate acquisition parameters before full-scale imaging"
+    caption: "Pilot reconstruction from 100 sections validates that segmentation quality meets threshold before committing to full acquisition."
+  - src: /assets/images/content-library/imaging/acquisition-qa/go-nogo-decision-matrix.png
+    alt: "Go/no-go decision matrix for acquisition quality gates"
+    caption: "Decision matrix: pass/fail criteria for each QA gate with escalation paths for borderline cases."
+combines_with:
+  - artifact-taxonomy
+  - em-principles
+  - reconstruction-pipeline
 ---
 
 ## Overview

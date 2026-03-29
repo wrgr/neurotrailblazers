@@ -22,6 +22,29 @@ primary_units:
   - proofreading-workflows
   - tool-proficiency
 difficulty: intermediate
+tags:
+  - proofreading:edit-operations
+  - infrastructure:cave
+  - infrastructure:neuroglancer
+  - infrastructure:spelunker
+  - infrastructure:catmaid
+  - connectomics:supervoxel-graph
+  - methodology:proofreading-workflow
+micro_lesson_id: ml-proof-tools
+reference_images:
+  - src: /assets/images/content-library/proofreading/proofreading-tools/neuroglancer-interface.png
+    alt: "Neuroglancer interface showing 3D neuron rendering with segmentation overlay"
+    caption: "Neuroglancer proofreading view: orthogonal EM slices (left panels) with 3D mesh rendering (right). Selected segment highlighted in blue."
+  - src: /assets/images/content-library/proofreading/proofreading-tools/cave-edit-operations.png
+    alt: "CAVE edit operation diagram showing merge and split actions on a supervoxel graph"
+    caption: "CAVE editing operations: merge (join two segments at supervoxel boundary) and split (cut segment along supervoxel graph)."
+  - src: /assets/images/content-library/proofreading/proofreading-tools/tool-comparison-matrix.png
+    alt: "Comparison table of CAVE, Neuroglancer, Spelunker, NeuTu, and CATMAID features"
+    caption: "Proofreading tool comparison: platform, backend, editing model, 3D rendering, and scalability across five major tools."
+combines_with:
+  - error-taxonomy
+  - proofreading-strategies
+  - worked-examples
 ---
 
 # Proofreading Tools for Connectome Reconstruction

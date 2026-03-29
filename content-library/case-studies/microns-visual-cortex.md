@@ -22,6 +22,31 @@ primary_units:
   - unit-04-synapse-detection
   - unit-07-circuit-analysis
 difficulty: intermediate
+tags:
+  - case-studies:MICrONS
+  - connectomics:dense-reconstruction
+  - connectomics:functional-connectomics
+  - imaging:electron-microscopy
+  - imaging:calcium-imaging
+  - cell-types:pyramidal-cell
+  - cell-types:interneuron
+  - neuroanatomy:visual-cortex
+  - methodology:structure-function
+micro_lesson_id: ml-case-microns
+reference_images:
+  - src: /assets/images/content-library/case-studies/microns-visual-cortex/volume-overview.png
+    alt: "MICrONS cubic millimeter volume showing cortical layers and reconstructed neurons"
+    caption: "MICrONS mm³ volume spanning layers 1-6 of mouse visual cortex with ~80,000 neurons and 524 million synapses."
+  - src: /assets/images/content-library/case-studies/microns-visual-cortex/structure-function.png
+    alt: "Scatter plot linking structural connectivity to functional tuning similarity"
+    caption: "Structure-function correlation: synaptically connected neuron pairs show higher orientation tuning similarity than unconnected pairs."
+  - src: /assets/images/content-library/case-studies/microns-visual-cortex/inhibitory-circuitry.png
+    alt: "Inhibitory interneuron connectivity motifs in MICrONS dataset"
+    caption: "Distinct connectivity motifs for basket cells, chandelier cells, and Martinotti cells identified in the MICrONS volume."
+combines_with:
+  - h01-human-cortex
+  - mouseconnects-himc
+  - flywire-whole-brain
 ---
 
 # MICrONS Visual Cortex

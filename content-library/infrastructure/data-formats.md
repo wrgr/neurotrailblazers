@@ -13,6 +13,28 @@ primary_units:
   - "02"
   - "04"
 difficulty: "Intermediate"
+tags:
+  - infrastructure:data-formats
+  - infrastructure:volume-representation
+  - infrastructure:mesh-formats
+  - infrastructure:skeleton-formats
+  - connectomics:graph-storage
+  - methodology:data-management
+micro_lesson_id: ml-infra-data-formats
+reference_images:
+  - src: /assets/images/content-library/infrastructure/data-formats/data-representation-hierarchy.png
+    alt: "Hierarchy of data representations from voxels to meshes to skeletons to graphs"
+    caption: "Data abstraction hierarchy: raw voxels → segmentation labels → 3D meshes → topological skeletons → connectivity graph. Each level trades detail for compactness."
+  - src: /assets/images/content-library/infrastructure/data-formats/format-comparison-table.png
+    alt: "Table comparing data formats by size, query speed, and supported analyses"
+    caption: "Format comparison: Precomputed, N5, Zarr for volumes; OBJ, Neuroglancer mesh for surfaces; SWC, skeleton API for morphology."
+  - src: /assets/images/content-library/infrastructure/data-formats/conversion-workflow.png
+    alt: "Workflow diagram showing conversion paths between data formats"
+    caption: "Format conversion paths: arrows show supported conversions between volume, mesh, skeleton, and graph representations with typical tools."
+combines_with:
+  - reconstruction-pipeline
+  - provenance-and-versioning
+  - neuron-type-identification
 ---
 
 ## Overview

@@ -3017,3 +3017,157 @@ papers:
     beginner: Understanding how brain connectivity develops in children is crucial for understanding mental health. This paper describes the Healthy Brain Network — a massive open dataset with brain scans and behavioral data from thousands of children, freely available for research.
     intermediate: Alexander et al. describe the Healthy Brain Network, a large-scale, open-access dataset collecting MRI, EEG, behavioral, and clinical data from >3,000 participants ages 5-21. The dataset supports research on brain development, connectivity maturation, and transdiagnostic mental health research.
     advanced: Large open developmental datasets like HBN provide the population-level context for interpreting individual connectomes. For cross-scale integration, developmental MRI data establishes the macro-scale trajectory that micro-scale EM observations (e.g., Witvliet et al. C. elegans development) must be consistent with.
+
+# --- William Gray Roncal papers ---
+- id: gray-roncal-2015-images-to-graphs
+  title: An automated images-to-graphs framework for high resolution connectomics
+  authors: Gray Roncal WR, Kleissas DM, Vogelstein JT, Manavalan P, Lillaney K, Pekala M, Burns R, Vogelstein
+    RJ, Priebe CE, Chevillet MA, Hager GD
+  year: 2015
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2015.00020
+  dimension: data-storage
+  also_dimensions: [computer-vision-ml]
+  citation_note: First fully automated end-to-end images-to-graphs pipeline for EM connectomics
+  tags:
+  - data-storage:pipeline
+  - computer-vision-ml:segmentation
+  - computer-vision-ml:synapse-detection
+  - connectomics:graph-theory
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: end-to-end pipeline from EM images to brain graph'
+  - 'Fig. 3: automated synapse detection and graph construction'
+  discussion_prompts:
+  - What are the tradeoffs of fully automated versus human-in-the-loop pipelines for connectomics?
+  - How has the images-to-graphs pipeline concept evolved since this 2015 paper?
+  related_content:
+  - /content-library/infrastructure/reconstruction-pipeline/
+  - /content-library/connectomics/graph-representations/
+  summaries:
+    beginner: Turning brain images into a wiring diagram requires many computational steps — finding neurons,
+      detecting synapses, and building a connection graph. This paper presents the first fully automated
+      pipeline that takes raw electron microscopy images and produces a brain graph with no human
+      interaction required, making connectomics more accessible and reproducible.
+    intermediate: Gray Roncal et al. present an end-to-end automated pipeline for EM connectomics that
+      chains image preprocessing, neuron segmentation, synapse detection, and graph construction into
+      a single workflow. The open-source framework produces brain graphs directly from raw EM data,
+      enabling reproducible connectomics at scale.
+    advanced: This paper established the images-to-graphs paradigm that influenced subsequent pipeline
+      designs including MICrONS and FlyWire. The key contribution is treating the full reconstruction
+      chain as a single optimizable system rather than independent stages. The open-source release
+      and emphasis on reproducibility were ahead of their time in the field.
+
+- id: gray-roncal-2015-vesicle
+  title: 'VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer Vision at Large Scale'
+  authors: Gray Roncal WR, Pekala M, Kaynig-Fittkau V, Kleissas DM, Vogelstein JT, Pfister H, Burns R,
+    Vogelstein RJ, Chevillet MA, Hager GD
+  year: 2015
+  journal: British Machine Vision Conference (BMVC)
+  doi: 10.5244/C.29.81
+  dimension: computer-vision-ml
+  citation_note: First mammalian synapse detection approach for anisotropic, non-post-stained EM data
+  tags:
+  - computer-vision-ml:synapse-detection
+  - computer-vision-ml:object-detection
+  - computer-vision-ml:3D-convolution
+  - neuroanatomy:synapse
+  - neuroanatomy:vesicle
+  key_figures:
+  - 'Fig. 1: VESICLE detection pipeline combining membrane and vesicle predictions'
+  - 'Fig. 4: synapse detection results on mammalian cortex'
+  discussion_prompts:
+  - How does combining membrane and vesicle cues compare with direct cleft detection for synapse finding?
+  - What challenges arise when adapting synapse detection methods across different tissue preparations?
+  related_content:
+  - /content-library/neuroanatomy/synapse-classification/
+  - /content-library/proofreading/metrics-and-qa/
+  summaries:
+    beginner: Finding synapses — the connection points between neurons — in brain images is essential
+      for mapping wiring diagrams. VESICLE is a computer vision system that automatically detects
+      synapses by looking for two telltale features together — cell membranes close together and
+      clusters of tiny vesicles nearby.
+    intermediate: Gray Roncal et al. present VESICLE, a CNN-based pipeline for synapse detection in
+      anisotropic EM data from mammalian cortex. The approach combines membrane proximity prediction
+      with vesicle cloud detection, addressing the challenge of synapse detection in non-post-stained
+      tissue where synaptic clefts have low contrast.
+    advanced: VESICLE was the first synapse detection method designed specifically for the challenging
+      case of mammalian EM data without synaptic staining. The multi-cue approach (membrane + vesicle)
+      is more robust to contrast variation than direct cleft detection. The method's design anticipated
+      the importance of synapse detection for downstream connectivity analysis and edge weight estimation.
+
+- id: hider-2022-bossdb
+  title: 'BossDB: A cloud-native approach for petascale neuroscience discovery'
+  authors: Hider R Jr, Kleissas D, Gion T, Xenes D, Matelsky J, Pryor D, Rodriguez L, Johnson EC,
+    Gray-Roncal W, Wester B
+  year: 2022
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2022.828787
+  dimension: data-storage
+  citation_note: Cloud-native platform managing petabyte-scale connectomics datasets
+  tags:
+  - data-storage:cloud-storage
+  - data-storage:data-management
+  - data-storage:scalability
+  - data-storage:API
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: BossDB architecture on AWS'
+  - 'Fig. 3: multi-resolution data access patterns'
+  discussion_prompts:
+  - How does cloud-native storage change the economics of sharing and accessing connectomics data?
+  - What are the tradeoffs between BossDB, DVID, and other connectomics data platforms?
+  related_content:
+  - /content-library/infrastructure/data-formats/
+  - /content-library/infrastructure/provenance-and-versioning/
+  summaries:
+    beginner: Brain imaging produces enormous amounts of data — petabytes for a single connectomics
+      project. BossDB is a cloud-based platform that stores this data and lets researchers worldwide
+      access exactly the parts they need through a simple web interface, without downloading entire datasets.
+    intermediate: Hider, Gray-Roncal et al. describe BossDB, a cloud-native data management platform
+      deployed on AWS for storing, accessing, visualizing, and sharing petascale neuroscience image
+      data via RESTful API. The system supports multi-resolution access, spatial queries, and
+      integration with analysis tools. It has managed datasets exceeding one petabyte.
+    advanced: BossDB addresses the data management bottleneck in connectomics by leveraging cloud
+      infrastructure for elastic storage and compute. The chunked, multi-resolution architecture
+      enables efficient random access patterns needed for both visualization (tile serving) and
+      analysis (region extraction). The RESTful API design enables programmatic integration with
+      downstream pipelines. Compare with DVID (Janelia) and CloudVolume approaches.
+
+- id: sanchez-2022-metadata
+  title: Connectomics annotation metadata standardization for increased accessibility and queryability
+  authors: Sanchez M, Moore D, Johnson EC, Wester B, Lichtman JW, Gray-Roncal W
+  year: 2022
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2022.828458
+  dimension: data-storage
+  also_dimensions: [methodology]
+  tags:
+  - data-storage:metadata
+  - data-storage:data-management
+  - data-storage:data-format
+  - methodology:reproducibility
+  - methodology:open-science
+  key_figures:
+  - 'Fig. 1: annotation metadata schema'
+  - 'Fig. 2: cross-dataset query examples'
+  discussion_prompts:
+  - What metadata standards are needed to enable cross-dataset comparison in connectomics?
+  - How should annotation provenance be tracked to support reproducibility?
+  related_content:
+  - /content-library/infrastructure/provenance-and-versioning/
+  - /content-library/infrastructure/data-formats/
+  summaries:
+    beginner: When different labs create brain wiring diagrams, they often describe their data in
+      different ways, making it hard to combine or compare results. This paper proposes a standard
+      way to label and describe connectomics annotations so that data from different projects can
+      be searched and compared easily.
+    intermediate: Sanchez, Gray-Roncal et al. propose standardized annotation metadata types for
+      connectomics data, building on the RAMON schema. The standard defines consistent metadata
+      fields for neurons, synapses, and other annotations, enabling cross-dataset queries and
+      automated quality checks. Applied to multiple EM datasets to demonstrate interoperability.
+    advanced: Metadata standardization is a prerequisite for the cross-dataset comparison that
+      connectomics increasingly requires. This paper identifies the minimum metadata fields needed
+      for annotation interoperability, proposes a schema that balances expressiveness with
+      adoption simplicity, and demonstrates cross-dataset queries. The work directly supports
+      reproducibility and the FAIR data principles in connectomics.

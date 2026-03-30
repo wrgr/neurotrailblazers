@@ -1,0 +1,17 @@
+{
+  "id": "yim-2024-dauer-connectomics",
+  "title": "Comparative connectomics of dauer reveals developmental plasticity",
+  "authors": ["Yim H", "Choe DT", "Bae JA", "Choi MK", "Kang HM", "Nguyen KCQ", "Ahn S", "Bahn SK", "Yang H", "Hall DH", "Kim JS", "Lee J"],
+  "year": 2024,
+  "journal": "Nature Communications",
+  "doi": "10.1038/s41467-024-45943-3",
+  "url": "https://www.nature.com/articles/s41467-024-45943-3",
+  "abstract": "Reconstructed the chemical connectome of C. elegans dauer stage using deep learning synapse detection, revealing dauer-specific rewiring of sensory neurons and increased motor neuron clustering compared to other developmental stages.",
+  "seed_expert": "Junho Lee",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["C-elegans", "dauer", "developmental-plasticity", "comparative-connectomics", "deep-learning-synapse"],
+  "duplicate_of_existing": null,
+  "notes": "Junho Lee (last) and Jinseop Kim (co-last) are seed experts. Associated with bossDB dataset.",
+  "bossdb_project": "yim_choe_bae2023"
+}

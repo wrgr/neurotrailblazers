@@ -1,6 +1,6 @@
 {
   "generated": "2026-03-30",
-  "total_expert_seed_papers": 131,
+  "total_expert_seed_papers": 137,
   "new_papers": [
     {
       "id": "bock-2025-synaptic-connectomics",
@@ -183,6 +183,16 @@
       ]
     },
     {
+      "id": "ishibashi-2022-rod-cone-gap",
+      "title": "Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminals",
+      "year": 2022,
+      "dimensions": [
+        "connectomics",
+        "case-studies",
+        "neuroanatomy"
+      ]
+    },
+    {
       "id": "jain-2016-ffn-arxiv",
       "title": "Flood-Filling Networks",
       "year": 2016,
@@ -251,6 +261,25 @@
       "dimensions": [
         "methodology",
         "connectomics"
+      ]
+    },
+    {
+      "id": "kuan-2020-xray-nanotomography",
+      "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
+      "year": 2020,
+      "dimensions": [
+        "image-acquisition",
+        "methodology",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "lee-2016-anatomy-function",
+      "title": "Anatomy and function of an excitatory network in the visual cortex",
+      "year": 2016,
+      "dimensions": [
+        "connectomics",
+        "case-studies"
       ]
     },
     {
@@ -367,6 +396,15 @@
       "year": 2024,
       "dimensions": [
         "network-analysis",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "nguyen-2022-cerebellar-connectivity",
+      "title": "Structured cerebellar connectivity supports resilient pattern separation",
+      "year": 2022,
+      "dimensions": [
+        "connectomics",
         "case-studies"
       ]
     },
@@ -613,6 +651,15 @@
       ]
     },
     {
+      "id": "wildenberg-2023-synapse-development",
+      "title": "The Development of Synapses in Mouse and Macaque Primary Sensory Cortices",
+      "year": 2023,
+      "dimensions": [
+        "neuroanatomy",
+        "case-studies"
+      ]
+    },
+    {
       "id": "wilson-2013-olfactory-connectome",
       "title": "A comprehensive wiring diagram of the protocerebral bridge for visual information processing in the Drosophila brain",
       "year": 2013,
@@ -637,6 +684,15 @@
       "dimensions": [
         "connectomics",
         "methodology"
+      ]
+    },
+    {
+      "id": "yim-2024-dauer-connectomics",
+      "title": "Comparative connectomics of dauer reveals developmental plasticity",
+      "year": 2024,
+      "dimensions": [
+        "connectomics",
+        "case-studies"
       ]
     },
     {
@@ -1060,6 +1116,15 @@
         "helmstaedter-2019-layer4"
       ]
     },
+    "Steve Massey": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "ishibashi-2022-rod-cone-gap"
+      ]
+    },
     "Viren Jain": {
       "total": 2,
       "new": 2,
@@ -1135,6 +1200,17 @@
       "papers": [
         "kording-2015-cell-types-microcircuits",
         "kording-2015-rosetta-brains"
+      ]
+    },
+    "Wei-Chung Allen Lee": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "kuan-2020-xray-nanotomography",
+        "lee-2016-anatomy-function",
+        "nguyen-2022-cerebellar-connectivity"
       ]
     },
     "Kisuk Lee": {
@@ -1459,6 +1535,15 @@
         "wester-2021-annotation-standards"
       ]
     },
+    "Gregg Wildenberg": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "wildenberg-2023-synapse-development"
+      ]
+    },
     "Rachel Wilson": {
       "total": 1,
       "new": 1,
@@ -1505,6 +1590,15 @@
         "yendiki-2011-tracula"
       ]
     },
+    "Junho Lee": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "yim-2024-dauer-connectomics"
+      ]
+    },
     "Anthony Zador": {
       "total": 3,
       "new": 3,
@@ -1529,38 +1623,71 @@
     }
   },
   "by_dimension": {
-    "connectomics": 59,
-    "case-studies": 38,
-    "image-acquisition": 23,
-    "methodology": 39,
+    "connectomics": 63,
+    "case-studies": 44,
+    "image-acquisition": 24,
+    "methodology": 40,
     "proofreading": 9,
     "computer-vision-ml": 27,
     "data-infrastructure": 21,
     "network-analysis": 22,
     "cell-types": 9,
     "ethics-society": 6,
-    "neuroanatomy": 7
+    "neuroanatomy": 9
   },
   "by_tier": {
-    "1": 15,
-    "2": 23,
+    "1": 16,
+    "2": 28,
     "3": 6,
     "4": 6,
     "unset": 81
   },
+  "bossdb_datasets": [
+    {
+      "id": "ishibashi-2022-rod-cone-gap",
+      "bossdb_project": "ishibashi2021",
+      "first_author": "Ishibashi M",
+      "last_author": "Massey SC"
+    },
+    {
+      "id": "kuan-2020-xray-nanotomography",
+      "bossdb_project": "kuan_phelps2020",
+      "first_author": "Kuan AT",
+      "last_author": "Lee WCA"
+    },
+    {
+      "id": "nguyen-2022-cerebellar-connectivity",
+      "bossdb_project": "nguyen_thomas2022",
+      "first_author": "Nguyen TM",
+      "last_author": "Lee WCA"
+    },
+    {
+      "id": "wildenberg-2023-synapse-development",
+      "bossdb_project": "wildenberg2023",
+      "first_author": "Wildenberg G",
+      "last_author": "Kasthuri N"
+    },
+    {
+      "id": "yim-2024-dauer-connectomics",
+      "bossdb_project": "yim_choe_bae2023",
+      "first_author": "Yim H",
+      "last_author": "Lee J"
+    }
+  ],
   "summary": {
-    "total_papers": 131,
-    "new_unique_papers": 76,
+    "total_papers": 137,
+    "new_unique_papers": 82,
     "duplicates_with_existing_102": 55,
-    "experts_covered": 61,
+    "experts_covered": 65,
     "dimensions_covered": 11,
-    "combined_corpus_size": "102 existing + 76 new = 178 total",
+    "combined_corpus_size": "102 existing + 82 new = 184 total",
     "by_tier": {
-      "1": 15,
-      "2": 23,
+      "1": 16,
+      "2": 28,
       "3": 6,
       "4": 6,
       "unset": 81
-    }
+    },
+    "bossdb_datasets_with_papers": 5
   }
 }

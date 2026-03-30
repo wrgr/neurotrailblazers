@@ -1,0 +1,17 @@
+{
+  "id": "ishibashi-2022-rod-cone-gap",
+  "title": "Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminals",
+  "authors": ["Ishibashi M", "Keung J", "Morgans CW", "Aicher SA", "Carroll JR", "Singer JH", "Jia L", "Li W", "Fahrenfort I", "Ribelayga CP", "Massey SC"],
+  "year": 2022,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.73039",
+  "url": "https://elifesciences.org/articles/73039",
+  "abstract": "Reconstructed gap junctions between photoreceptors in mouse retina using SBF-SEM and FIB-SEM, finding that rod/cone coupling via ~80 Cx36 channels accounts for nearly all photoreceptor gap junctions, with 25% of channels open at rest.",
+  "seed_expert": "Steve Massey",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies", "neuroanatomy"],
+  "tags": ["retina", "gap-junctions", "photoreceptors", "rod-cone", "Cx36"],
+  "duplicate_of_existing": null,
+  "notes": "Last author (Massey) and first author (Ishibashi) are seed experts. Associated with bossDB dataset.",
+  "bossdb_project": "ishibashi2021"
+}

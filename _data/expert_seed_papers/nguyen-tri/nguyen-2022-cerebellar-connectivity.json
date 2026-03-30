@@ -1,0 +1,17 @@
+{
+  "id": "nguyen-2022-cerebellar-connectivity",
+  "title": "Structured cerebellar connectivity supports resilient pattern separation",
+  "authors": ["Nguyen TM", "Thomas LA", "Rhoades JL", "Ricchi I", "Yuan XC", "Sheridan A", "Hildebrand DGC", "Funke J", "Regehr WG", "Lee WCA"],
+  "year": 2022,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-022-05471-w",
+  "url": "https://www.nature.com/articles/s41586-022-05471-w",
+  "abstract": "Dense EM reconstruction of 4,400 granule cells and 1,145 mossy fiber boutons in mouse cerebellar cortex reveals structured (non-random) connectivity that supports noise-resilient pattern separation, challenging the classical random expansion coding theory.",
+  "seed_expert": "Wei-Chung Allen Lee",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["cerebellum", "granule-cells", "mossy-fiber", "pattern-separation", "dense-reconstruction"],
+  "duplicate_of_existing": null,
+  "notes": "Last author is seed expert. Associated with bossDB dataset.",
+  "bossdb_project": "nguyen_thomas2022"
+}

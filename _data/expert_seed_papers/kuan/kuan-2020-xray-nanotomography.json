@@ -1,0 +1,17 @@
+{
+  "id": "kuan-2020-xray-nanotomography",
+  "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
+  "authors": ["Kuan AT", "Phelps JS", "Thomas LA", "Nguyen TM", "Han J", "Chen CL", "Azevedo AW", "Tuthill JC", "Funke J", "Cloetens P", "Pacureanu A", "Lee WCA"],
+  "year": 2020,
+  "journal": "Nature Neuroscience",
+  "doi": "10.1038/s41593-020-0704-9",
+  "url": "https://www.nature.com/articles/s41593-020-0704-9",
+  "abstract": "X-ray holographic nano-tomography (XNH) images mm-scale volumes at sub-100nm resolution, bridging the gap between light and electron microscopy. Demonstrated dense neuronal reconstruction in Drosophila and mouse tissue.",
+  "seed_expert": "Wei-Chung Allen Lee",
+  "author_tier": 2,
+  "dimensions": ["image-acquisition", "methodology", "case-studies"],
+  "tags": ["X-ray", "nano-tomography", "XNH", "drosophila", "mouse", "new-modality"],
+  "duplicate_of_existing": null,
+  "notes": "Last author is seed expert. Associated with bossDB dataset.",
+  "bossdb_project": "kuan_phelps2020"
+}

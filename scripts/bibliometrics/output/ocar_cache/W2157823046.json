@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Meta-analyses of neuroscience studies (e.g., comparing connectomics reconstruction accuracy or synapse counts across labs) can be distorted by publication bias — the tendency for positive results to be published more than negative ones — but detecting this bias was difficult without large datasets.",
+    "challenge": "Identifying publication bias requires a method that works even with a small number of studies, is easy to implement, and does not require knowing the true effect size, making statistical testing of asymmetry in summary data non-trivial.",
+    "action": "Egger et al. proposed a simple graphical test using funnel plots — scatter plots of study effect size against a measure of study precision — and formalized a regression test for funnel plot asymmetry. Studies with higher precision should cluster near the true effect, while small-study effects produce asymmetry if publication bias is present.",
+    "resolution": "The funnel plot asymmetry test was shown to detect publication bias effectively in several medical meta-analyses and provided a simple visual and statistical tool widely adopted in systematic reviews. It became standard practice in evidence-based medicine and is increasingly used in neuroscience meta-analyses assessing replication and reproducibility.",
+    "future_work": "Funnel plot asymmetry can have causes other than publication bias (e.g., heterogeneity, poor methodology in small studies), and distinguishing these requires additional sensitivity analyses; more powerful tests for small meta-analyses remain needed."
+  },
+  "plain_language_summary": "When scientists combine results from many studies to get an overall conclusion (a meta-analysis), the combined answer can be misleading if small studies with negative results were never published. This paper introduced a simple graph — a funnel plot — and a statistical test to detect this 'publication bias'. In neuroscience, such tools help assess whether conclusions about brain connectivity or cell-type properties are reliable across labs.",
+  "summaries": {
+    "beginner": "When many small experiments are combined to reach a conclusion, the results can be skewed if failed experiments were never published. This paper introduced a funnel plot test to detect that kind of bias by looking for asymmetry in a plot of study results. Scientists use this in neuroscience meta-analyses to check whether reported findings about brain function are truly replicable.",
+    "intermediate": "The Egger test regresses the standardized effect estimate on its standard error; a non-zero intercept indicates funnel plot asymmetry, which may reflect publication bias, small-study effects, or heterogeneity. In connectomics and systems neuroscience, this framework is used to evaluate meta-analyses of synapse density measurements, cell-type proportion estimates, or behavioral phenotypes. The test has limited power with fewer than ~10 studies, a common situation in specialized connectomics domains.",
+    "advanced": "Egger's regression test for funnel asymmetry has been shown to have inflated type I error when between-study heterogeneity is high, leading to the development of rank-based alternatives (Begg's test) and trim-and-fill methods. In the context of connectomics meta-analyses — for instance, comparing synapse density estimates across EM reconstruction studies or cell-type composition across brain regions — distinguishing publication bias from methodological heterogeneity (fixation protocol, species, brain region) requires careful sensitivity analysis. The test is most relevant to connectomics as a critical appraisal tool for evaluating whether reported connectivity statistics generalize beyond individual datasets."
+  },
+  "discussion_prompts": [
+    "How might publication bias affect meta-analyses of synapse density or cell-type abundance estimates across different connectomics studies or labs?",
+    "What are the limitations of funnel plot asymmetry tests when applied to a small number of connectomics or neuroanatomy studies, and what alternatives exist?",
+    "Beyond publication bias, what other sources of heterogeneity in connectomics datasets could produce funnel plot asymmetry, and how would you distinguish them?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:meta-analysis", "method:statistics", "method:publication-bias", "method:funnel-plot", "phase:foundations", "method:reproducibility"]
+}

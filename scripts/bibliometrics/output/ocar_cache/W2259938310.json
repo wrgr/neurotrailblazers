@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The human genome had been sequenced, but the functional elements encoded in the non-coding regions were poorly characterized; a systematic map of all functional DNA elements was needed to interpret how genetic variants affect biology and disease.",
+    "challenge": "Functional elements are defined by biochemical activity (transcription factor binding, histone modifications, open chromatin) rather than sequence alone, requiring integration of hundreds of assays across dozens of cell types at genome scale.",
+    "action": "The ENCODE Consortium coordinated a large-scale effort to map functional elements across the human genome using ChIP-seq, DNase-seq, RNA-seq, and other assays in over 100 cell types, producing a comprehensive registry of regulatory elements.",
+    "resolution": "ENCODE identified that approximately 80% of the human genome has biochemical activity in at least one cell type, catalogued hundreds of thousands of regulatory elements, and provided the first genome-wide view of the regulatory landscape. This resource has been widely used in neuroscience for interpreting GWAS variants in regulatory context.",
+    "future_work": "Mapping cell-type-specific regulatory elements in specific neural cell types and brain regions, and linking regulatory activity to gene expression in single cells, remain priorities for the neuroscience application of ENCODE data."
+  },
+  "plain_language_summary": "Less than 2% of the human genome encodes proteins, but the rest is not 'junk' — much of it contains regulatory switches that control when and where genes are turned on. ENCODE was a massive international project that mapped all these functional elements across the genome, creating a reference atlas that helps interpret genetic variants linked to brain diseases.",
+  "summaries": {
+    "beginner": "The human genome contains many elements beyond protein-coding genes that control gene activity. ENCODE was a large collaborative project that systematically mapped all these regulatory elements across the entire human genome using hundreds of experiments in many cell types, creating a comprehensive functional atlas.",
+    "intermediate": "The ENCODE project produced a comprehensive catalog of human regulatory elements including transcription factor binding sites, open chromatin regions, histone modification patterns, and non-coding RNAs across diverse cell types. In neuroscience, ENCODE data is essential for interpreting non-coding genetic variants from GWAS studies, as most trait-associated variants fall in regulatory rather than coding regions.",
+    "advanced": "ENCODE's finding that ~80% of the genome has biochemical activity sparked controversy about the definition of 'functional' versus 'biochemically active' — many accessible chromatin regions may be incidental byproducts of transcription factor binding rather than having specific biological function. In connectomics, ENCODE data is particularly relevant for understanding cell-type-specific gene regulation in neurons, interpreting common variants associated with brain structural or connectivity phenotypes, and integrating with single-cell ATAC-seq data from brain tissue. The regulatory element catalog provides a framework for understanding how genetic variation affects neural development and circuit formation."
+  },
+  "discussion_prompts": [
+    "What does the ENCODE finding that ~80% of the genome is biochemically active imply for our understanding of genome function — does biochemical activity equal functional importance?",
+    "How can ENCODE regulatory element data be integrated with GWAS results for brain connectivity or neuropsychiatric traits to identify causal variants?",
+    "What are the limitations of cell-line-based ENCODE data for interpreting variants affecting specific neural cell types, and what datasets would be needed to address this?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["data:encode", "method:genomics", "species:human", "data:regulatory-elements", "method:chip-seq", "domain:functional-genomics"]
+}

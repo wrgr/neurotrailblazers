@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Understanding gene expression across the entire transcriptome — including alternative splice variants — required a sequencing-based approach that could replace limited microarrays with unbiased, quantitative transcriptome profiling.",
+    "challenge": "Sequencing-based transcriptome profiling required developing methods to convert RNA into sequenceable libraries and computational tools to map short reads to genomic loci while correctly handling spliced transcripts spanning exon-exon junctions.",
+    "action": "The authors developed RNA-Seq — a method for mapping and quantifying mammalian transcriptomes by converting polyadenylated RNA into cDNA libraries sequenced on next-generation platforms — and applied it to mouse tissue, demonstrating its ability to detect known and novel transcripts and quantify expression across a wide dynamic range.",
+    "resolution": "RNA-Seq provided more accurate, reproducible, and information-rich transcriptome profiling than microarrays, detecting novel splice junctions, quantifying low-abundance transcripts, and offering a digital rather than analog signal. This technology became the foundation of modern transcriptomics in neuroscience, enabling cell-type characterization and brain atlases.",
+    "future_work": "Single-cell RNA-Seq, long-read sequencing of full-length transcripts, and spatial transcriptomics represent major extensions of the RNA-Seq approach that are currently transforming neuroscience."
+  },
+  "plain_language_summary": "Before RNA-Seq, measuring which genes are active in cells was like using a photograph — capturing only what you expected to see. RNA-Seq is like sequencing every word in the library: it measures every RNA molecule present, unbiased and quantitatively. This technology transformed neuroscience by enabling precise measurement of gene activity in specific brain cell types.",
+  "summaries": {
+    "beginner": "RNA sequencing (RNA-Seq) reads out all the RNA molecules present in a cell, revealing which genes are active and to what degree. This foundational paper described and demonstrated the method, showing it could detect far more than older gene chip methods. It became the basis for understanding what makes different brain cell types molecularly distinct.",
+    "intermediate": "The Mortazavi et al. RNA-Seq paper demonstrated high-coverage paired-end sequencing of the mouse transcriptome, introducing key computational concepts including reads per kilobase per million mapped reads (RPKM) for expression normalization and splice junction mapping for isoform detection. In neuroscience, RNA-Seq enabled systematic characterization of neuron type-specific transcriptomes, forming the molecular basis of cell-type atlases used to interpret connectomics data.",
+    "advanced": "This paper established many foundational computational practices for RNA-Seq analysis: read alignment to spliced reference genomes, RPKM normalization, and differential expression analysis. Key limitations acknowledged included PCR amplification bias, 3' bias from poly-A selection, and difficulties with very long or very short transcripts. In connectomics, RNA-Seq-derived transcriptomic cell type classifications (as in the Allen Brain Cell Atlas) provide molecular identity for neurons that can be matched to morphological and connectivity-based classifications from EM data, enabling multimodal cell type reconciliation."
+  },
+  "discussion_prompts": [
+    "How do RNA-Seq-based transcriptomic cell type classifications relate to morphological and connectivity-based classifications from EM connectomics — where do they agree and where do they diverge?",
+    "What are the key technical sources of batch effects in RNA-Seq data, and how can they be corrected when integrating data from multiple brain regions or studies?",
+    "How does the transition from bulk RNA-Seq to single-cell RNA-Seq change our ability to characterize neuronal diversity, and what new challenges does it introduce?"
+  ],
+  "dimension": "cell-types",
+  "tags": ["method:rna-seq", "method:transcriptomics", "species:mouse", "data:gene-expression", "cell-types:neuron-types", "method:next-gen-sequencing"]
+}

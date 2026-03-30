@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Understanding the organization of human cortical circuits at synaptic resolution had been impossible due to the absence of synaptic-resolution structural data from human brain tissue. A petascale EM reconstruction of human cerebral cortex would provide an unprecedented view of human neural architecture.",
+    "challenge": "Human brain tissue presents unique challenges for EM connectomics: limited availability of high-quality surgical samples, the need to process and image a 1 mm³ volume containing hundreds of thousands of cells across more than 5,000 serial sections, and the requirement for automated reconstruction of an unprecedented data volume.",
+    "action": "The authors obtained a rapidly preserved surgical tissue sample from human temporal cortex, stained with heavy metals, embedded in resin, cut >5,000 sections at ~30 nm, and imaged with a high-speed multibeam scanning EM. They applied computational reconstruction to generate a three-dimensional dataset of 57,216 cells with annotated neurons, synapses, and blood vessels.",
+    "resolution": "The dataset revealed novel features of human cortical organization including unusually large and complex synaptic structures, rare axonal and dendritic morphologies, and cell-type-specific connectivity patterns. The volume was made publicly available, providing a landmark resource for studying human cortical microcircuitry.",
+    "future_work": "Extending human cortical connectomics to larger volumes, different cortical areas, and comparison with neurological disease tissue remains a major goal for understanding human brain organization and pathology."
+  },
+  "plain_language_summary": "This paper produced the most detailed map ever made of a piece of human brain — a 1 cubic millimeter chunk of temporal cortex imaged at nanometer resolution to reveal every neuron, connection, and synapse within it. It is like creating a Google Street View of the brain's internal wiring at the level of individual molecules.",
+  "summaries": {
+    "beginner": "Scientists took a tiny piece of human brain tissue from a surgical patient and imaged it with an electron microscope to see every single neuron and connection inside. The result was a massive 3D map showing 57,000 cells and millions of synapses — the most detailed view of human brain tissue ever created.",
+    "intermediate": "This paper describes the acquisition and reconstruction of a 1 mm³ volume of human temporal cortex at ~30 nm resolution, yielding a dataset with 57,216 cells, annotated synapses, and vasculature. Analyses revealed novel features of human cortical organization including distinctive synapse morphologies and cell-type-specific connectivity patterns not previously described.",
+    "advanced": "The H01 dataset represents the first petascale EM connectomics resource from human cortex. Acquisition used a 61-beam multibeam SEM at ~4×4×30 nm voxel resolution, generating ~1.4 petabytes of raw data. Automated segmentation using flood-fill networks and extensive proofreading enabled reconstruction of neurons spanning the full thickness of the cortical volume. Notable findings include neurons with unusual axonal branching patterns, rare giant synapses, and evidence for highly specific connectivity rules. Key caveats include that the sample comes from epilepsy tissue and represents a single individual, limiting generalizability."
+  },
+  "discussion_prompts": [
+    "What features of human cortical circuitry identified in this dataset appear genuinely different from rodent cortex, and how confidently can we make that comparison?",
+    "What are the ethical and practical challenges of obtaining high-quality human brain tissue for connectomics, and how might disease tissue bias structural observations?",
+    "How does the scale of the H01 dataset compare to what would be needed to draw conclusions about human cortical circuit organization at the level of a full cortical column or area?"
+  ],
+  "dimension": "connectomics",
+  "tags": ["species:human", "region:cerebral-cortex", "imaging:multibeam-sem", "scale:petascale", "method:automated-segmentation", "neuroanatomy"]
+}

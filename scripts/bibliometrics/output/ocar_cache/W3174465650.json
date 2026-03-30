@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "As connectome datasets grow to contain millions of neurons and billions of synapses, searching for recurring connectivity motifs (specific small subgraph patterns) requires efficient tools that can query graph structure at scale.",
+    "challenge": "Subgraph isomorphism — finding all instances of a query pattern within a large graph — is NP-hard in the general case, and naive implementations do not scale to connectome-sized graphs; researchers also needed a way to express motif queries in an intuitive, non-programmatic format.",
+    "action": "The authors developed DotMotif, an open-source Python tool that provides a high-level domain-specific language for expressing connectivity motifs and implements efficient subgraph isomorphism search using both NetworkX and GrandISO backends for scalable query execution.",
+    "resolution": "DotMotif enables neuroscientists to specify and search for biologically meaningful circuit motifs in large connectomes without programming expertise, and scales to datasets with millions of nodes. The tool facilitates comparative analysis of motif frequencies across connectome datasets.",
+    "future_work": "Extending DotMotif to handle probabilistic motif matching (accounting for proofreading uncertainty in connectomes) and weighted edge queries would make it more broadly applicable to real-world connectome data."
+  },
+  "plain_language_summary": "Neural circuits contain recurring small patterns — like a neuron that receives input from two different types and then inhibits a third. DotMotif is a software tool that makes it easy to search massive connectome datasets for these recurring circuit patterns, the way a search engine finds text patterns in a document — but for brain wiring diagrams.",
+  "summaries": {
+    "beginner": "Brain circuits contain small repeating patterns of connections between neurons, called motifs. DotMotif is a free software tool that lets researchers specify what pattern they're looking for — in plain language — and then automatically searches through large brain wiring datasets to find all instances of that pattern.",
+    "intermediate": "DotMotif provides a declarative graph query language for specifying connectivity motifs (including constraints on edge type, directionality, and node attributes) and implements subgraph isomorphism search using multiple backends. It integrates with standard connectomics formats and supports both dense graph backends for small queries and sparse implementations for large connectomes, making motif analysis accessible without requiring expertise in graph algorithms.",
+    "advanced": "The tool addresses a key gap in connectomics analysis infrastructure: while motif analysis is theoretically central to circuit neuroscience, practical tools were lacking for large directed graphs. DotMotif's domain-specific language allows expression of biologically meaningful constraints (e.g., requiring excitatory edge type, specific layer identity) that go beyond purely structural subgraph isomorphism. Limitations include computational scaling challenges for large motif patterns and the lack of support for probabilistic edge weights reflecting proofreading confidence, which are important for rigorous motif analysis in current large-scale EM datasets."
+  },
+  "discussion_prompts": [
+    "What circuit motifs are most biologically informative to search for in EM connectomes, and how should their frequencies be tested against appropriate null models?",
+    "How does DotMotif's declarative query language compare to graph database query languages like Cypher, and what are the tradeoffs for connectomics use cases?",
+    "What are the statistical challenges in interpreting motif over- or under-representation in connectomes, given the non-independence of overlapping motif instances?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": ["tool:dotmotif", "method:subgraph-isomorphism", "method:motif-analysis", "connectomics:graph-query", "software:open-source", "language:python"]
+}

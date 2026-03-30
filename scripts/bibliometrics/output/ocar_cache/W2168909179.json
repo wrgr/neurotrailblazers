@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The complete sequence of the human genome was needed to provide the foundational reference for understanding human genetics, disease, development, and evolution. Decoding all ~3 billion base pairs of human DNA would transform biology and medicine.",
+    "challenge": "Sequencing and assembling the human genome required developing high-throughput sequencing technology, assembling millions of short fragments into a coherent map, handling repeat sequences, and coordinating an international consortium across many years and institutions.",
+    "action": "The International Human Genome Sequencing Consortium used a hierarchical shotgun sequencing strategy to produce a draft sequence of the human genome, covering approximately 90% of the euchromatic regions at roughly 7-fold sequence coverage. The data were analyzed for gene content, repeat structure, and evolutionary conservation.",
+    "resolution": "The draft human genome sequence provided an initial catalog of approximately 30,000-40,000 protein-coding genes, characterized the abundance and distribution of repetitive elements, and revealed extensive synteny with model organism genomes. The sequence was made publicly available, transforming biomedical research.",
+    "future_work": "Completing the human genome (filling gaps in heterochromatic regions), understanding non-coding regulatory sequences, and connecting genome variation to disease remain long-term goals."
+  },
+  "plain_language_summary": "This paper reported the first draft sequence of the human genome — all 3 billion 'letters' of our DNA — produced by an international scientific consortium. It is like publishing the first rough draft of the instruction manual for building a human, opening up the study of genetic diseases, evolution, and the role of each gene.",
+  "summaries": {
+    "beginner": "Our DNA contains the instructions for building and running a human body. This paper reported the first draft of the complete human genome sequence — all 3 billion 'letters' of DNA — produced by scientists from around the world working together. It transformed medicine by revealing our genetic blueprint.",
+    "intermediate": "The International Human Genome Sequencing Consortium's draft genome sequence provided a foundational reference for all of human genetics and molecular biology. While primarily outside connectomics, it is contextually relevant as a large-scale scientific infrastructure project with parallels to connectomics initiatives — both involve community-scale data generation, open data sharing, and transformative enabling resources.",
+    "advanced": "This paper represents a landmark in genome-scale science as a community resource that enabled downstream research across all of biology. In connectomics bibliographies, it appears as a high-citation off-domain reference, likely surfacing through citation networks of large-scale biological data resource papers. The Human Genome Project provides a strategic template for how the connectomics community has approached large consortium efforts — emphasizing open data, shared standards, and pre-competitive infrastructure — though the technical approaches differ substantially."
+  },
+  "discussion_prompts": [
+    "What strategic lessons from the Human Genome Project are applicable to large-scale connectomics consortium efforts?",
+    "How do the data sharing and open-access norms established by the Human Genome Project compare to current practices in connectomics data release?",
+    "What would a 'Human Connectome Project' equivalent to the Human Genome Project look like in terms of scale, cost, and anticipated scientific impact?"
+  ],
+  "dimension": "review",
+  "tags": ["genomics", "off-domain", "large-scale-project", "citation-network-artifact", "infrastructure", "open-data"]
+}

@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Viral infections subvert host cell biology including autophagy, a cellular recycling system; understanding whether autophagy defends against or is exploited by viruses has important implications for antiviral therapies.",
+    "challenge": "The relationship between autophagy and viral infection is context-dependent — some viruses are degraded by autophagy while others hijack autophagic machinery for their own replication — making generalizations difficult.",
+    "action": "The authors reviewed the literature on autophagy-virus interactions, synthesizing evidence for xenophagy (autophagic degradation of viral components), autophagy-mediated innate immune signaling, and viral strategies to evade or exploit autophagic pathways.",
+    "resolution": "Autophagy functions as both a cell-intrinsic antiviral defense and a pathway that certain viruses (including hepatitis C virus) subvert for replication compartment formation. The dual role of autophagy in viral infection has implications for therapeutic targeting.",
+    "future_work": "Developing selective autophagy modulators as antivirals requires understanding how to specifically enhance xenophagy against target pathogens without disrupting normal cellular homeostasis."
+  },
+  "plain_language_summary": "Cells have a recycling system called autophagy that can break down damaged components — including viruses. This review examines whether autophagy helps cells fight off viral infections or whether viruses have learned to exploit autophagy for their own benefit. The answer turns out to be: both, depending on the virus.",
+  "summaries": {
+    "beginner": "Autophagy is like a cell's internal garbage disposal. This review explains the complicated relationship between autophagy and viruses — sometimes the cell uses it to destroy viruses, and sometimes viruses hijack it to replicate. Understanding this interplay could lead to new treatments for viral diseases.",
+    "intermediate": "This review covers the mechanistic basis of xenophagy (selective autophagic clearance of pathogens), autophagy-dependent innate immune signaling via pathogen recognition receptors, and viral evasion strategies including inhibition of autophagosome maturation and use of autophagic membranes as replication platforms. The hepatitis C virus provides a well-characterized case study of viral autophagy exploitation.",
+    "advanced": "The paper surveys autophagy-virus interactions at the molecular level, covering LC3-II lipidation, p62/sequestosome cargo recognition, Beclin-1 regulation by viral BCL-2 homologs, and the use of omegasomes as replication compartments by positive-strand RNA viruses. In the context of neuroscience, neurotropic virus-autophagy interactions are relevant to encephalitis pathogenesis, and dysregulation of neuronal autophagy is implicated in neurodegenerative disease. This paper appears in connectomics citation networks primarily through its role in broader systems biology contexts."
+  },
+  "discussion_prompts": [
+    "How might autophagy dysregulation contribute to neurodegeneration, and could restoring autophagy flux protect neurons in diseases like Alzheimer's or Parkinson's?",
+    "What distinguishes xenophagy (selective pathogen clearance) from bulk autophagy, and what are the molecular determinants of selective cargo recognition?",
+    "How do viruses that hijack autophagy avoid being degraded, and what therapeutic strategies could block viral exploitation of autophagic machinery?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["domain:cell-biology", "concept:autophagy", "domain:virology", "domain:innate-immunity", "domain:cross-disciplinary"]
+}

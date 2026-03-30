@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Reconstructing neuronal circuits from large electron microscopy image stacks required specialized software that could handle terabytes of data, manage distributed annotation work, and track the provenance of reconstructions. No existing tool met all these needs for connectomics workflows.",
+    "challenge": "Neural circuit reconstruction from EM involves aligning massive image stacks, annotating neuron morphologies across thousands of serial sections, and managing collaborative workflows with multiple annotators — all while maintaining data integrity and enabling downstream analysis.",
+    "action": "The authors designed and implemented TrakEM2, an open-source Java-based application within the ImageJ/Fiji ecosystem, supporting large-scale image registration, 3D neuron reconstruction, synapse annotation, and project management. They demonstrated its use on Drosophila and C. elegans EM datasets.",
+    "resolution": "TrakEM2 became widely adopted as the standard platform for manual and semi-automated neural circuit reconstruction from EM data. It enabled landmark connectomics projects including reconstructions of the Drosophila larval and adult nervous systems, providing scalable infrastructure for the field.",
+    "future_work": "As dataset sizes grew to petabyte scale, cloud-based platforms and AI-assisted proofreading tools have gradually supplanted TrakEM2 for large projects, though it remains useful for smaller-scale reconstructions."
+  },
+  "plain_language_summary": "Mapping brain circuits from electron microscopy images requires specialized software to handle enormous image files and coordinate the work of many annotators. TrakEM2 was the Swiss Army knife of connectomics software — a tool that could align images, let scientists trace neurons through hundreds of slices, and keep track of everyone's work on the same dataset.",
+  "summaries": {
+    "beginner": "To reconstruct brain circuits from electron microscope images, scientists need special software that can handle enormous image files and let many people annotate the same data. This paper introduced TrakEM2, a program that became the standard tool for tracing neurons and identifying synapses in large EM datasets.",
+    "intermediate": "TrakEM2 is an open-source ImageJ plugin providing integrated workflows for large-scale EM image registration, neuron morphology annotation, synapse identification, and 3D reconstruction. It was instrumental in early Drosophila and C. elegans connectomics projects, offering a platform for both manual and semi-automated reconstruction with collaborative multi-user support.",
+    "advanced": "TrakEM2 addressed the computational and workflow challenges of connectomics-scale EM reconstruction by providing image stack management, affine and elastic registration, hierarchical annotation trees, and scripting access via Jython. Its tile-based image pyramid architecture enabled handling of datasets exceeding available RAM. While superseded by cloud-native platforms (CATMAID, CAVE) for petascale projects, TrakEM2 established core data models for neuronal skeleton annotation and synaptic partner assignment that influenced subsequent tools."
+  },
+  "discussion_prompts": [
+    "What were the key design decisions in TrakEM2 that enabled it to scale to connectomics-sized datasets at the time of its development?",
+    "How did the workflow model in TrakEM2 influence subsequent connectomics platforms like CATMAID and Google's CAVE system?",
+    "What is the appropriate role for manual annotation software like TrakEM2 in an era of AI-assisted automated segmentation?"
+  ],
+  "dimension": "infrastructure",
+  "tags": ["tool:trakem2", "software:annotation", "method:manual-reconstruction", "species:drosophila", "species:c-elegans", "imaging:electron-microscopy"]
+}

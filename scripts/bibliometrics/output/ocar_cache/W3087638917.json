@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The mouse has become the dominant mammalian model organism in neuroscience, yet a complete cellular-resolution connectome of even a small mouse brain region remained out of reach. This perspective argued that creating a full mouse brain connectome was both scientifically necessary and technically achievable.",
+    "challenge": "The mouse brain contains roughly 70 million neurons and trillions of synapses. Imaging and reconstructing it at synaptic resolution using electron microscopy would require unprecedented data volumes, automated reconstruction pipelines, and analysis frameworks far beyond what had been demonstrated.",
+    "action": "This perspective paper made the scientific and strategic case for pursuing a complete mouse brain connectome, surveying the current state of EM technology, automated segmentation, and proofreading, and estimating the resources required. It argued that the scientific payoff in understanding mammalian neural computation would justify the investment.",
+    "resolution": "The paper galvanized community discussion and planning around mouse connectomics, contributing to a roadmap for tackling larger mammalian nervous systems. It identified the key technological bottlenecks — particularly automated reconstruction accuracy and proofreading throughput — as tractable near-term challenges.",
+    "future_work": "A complete mouse brain connectome remains an active goal; partial reconstructions of mouse cortex at petabyte scale have since been achieved, but whole-brain synaptic-resolution connectivity in mouse is still in progress."
+  },
+  "plain_language_summary": "This paper argued that now is the time to attempt mapping the entire mouse brain at the level of individual connections between neurons. Like a rallying call to build a new kind of telescope, it laid out why this was worth doing and what it would take — even though the project would generate more data than any previous neuroscience experiment.",
+  "summaries": {
+    "beginner": "The mouse is one of the most studied animals in brain research. This paper argued that scientists should try to map every single connection in a mouse brain, explaining why this would transform neuroscience and what tools would be needed to make it possible.",
+    "intermediate": "This perspective paper advocated for a complete synaptic-resolution connectome of the mouse brain, surveying the technological landscape of EM acquisition, automated segmentation, and proofreading. It argued that recent advances made the project tractable and that understanding mammalian neural computation required this level of structural detail.",
+    "advanced": "Written as a community call-to-arms, this paper assessed the feasibility of mouse whole-brain connectomics by estimating data volumes (~1 exabyte), reconstruction error rates of existing automated pipelines, and proofreading throughput requirements. It identified automated segmentation accuracy and error correction throughput as the rate-limiting bottlenecks, and made a scientific case that mammalian circuit understanding — particularly for learning, memory, and disease — requires connectivity data at synaptic resolution. The paper influenced funding priorities and collaborative structures in the field."
+  },
+  "discussion_prompts": [
+    "What scientific questions could be answered by a complete mouse brain connectome that cannot be addressed with existing partial reconstructions or other methods?",
+    "What are the most significant technical bottlenecks still preventing a complete mouse brain connectome, and how close is the field to overcoming them?",
+    "How should the neuroscience community prioritize resources between expanding the scale of connectomics (toward whole mouse brain) versus deepening functional characterization of already-mapped circuits?"
+  ],
+  "dimension": "review",
+  "tags": ["species:mouse", "scale:whole-brain", "review", "connectomics", "infrastructure", "proofreading"]
+}

@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Large-scale connectomics datasets require infrastructure to manage continuously evolving annotations — neurons, synapses, and cell types — while allowing multiple users to collaborate, track changes, and access consistent versioned snapshots of the data.",
+    "challenge": "Connectome annotation is an ongoing, iterative process involving automated segmentation, proofreading, and expert classification; maintaining data integrity, version history, and concurrent access for large communities requires a purpose-built database architecture.",
+    "action": "The authors designed and deployed CAVE (Connectome Annotation Versioning Engine), a cloud-based infrastructure system providing versioned storage of segmentation IDs and annotations, real-time collaborative editing, and programmatic API access for the connectomics community.",
+    "resolution": "CAVE is deployed as the backend for multiple large-scale public connectomics datasets including MICrONS and FlyWire, supporting thousands of concurrent users and enabling reproducible analysis through version-pinned data access. The system has become the standard infrastructure for community-scale connectomics annotation.",
+    "future_work": "Scaling CAVE to even larger datasets (full primate brain volumes) and integrating automated proofreading pipelines directly into the versioning system are active development priorities."
+  },
+  "plain_language_summary": "Managing a connectome dataset is like maintaining a Wikipedia article that thousands of scientists are editing simultaneously — you need version history, conflict resolution, and the ability to see what the data looked like at any point in time. CAVE is the database system that makes this possible for large-scale brain wiring maps.",
+  "summaries": {
+    "beginner": "When thousands of scientists are simultaneously annotating a brain wiring map, you need software to keep track of all the changes without losing data. CAVE is a database system designed specifically for connectomics that tracks every annotation edit, maintains version history, and lets many people work on the same dataset without conflicts.",
+    "intermediate": "CAVE provides a versioned annotation database architecture built around the PyChunkedGraph representation of segmentation, enabling concurrent multi-user proofreading while maintaining a complete audit trail of edits. It supports programmatic access via REST APIs and integrates with visualization tools like Neuroglancer, making it the backbone of collaborative connectomics projects like FlyWire and MICrONS.",
+    "advanced": "CAVE's architecture addresses the fundamental challenge of managing mutable biological annotations over dynamic segmentation objects (which change IDs as proofreading merges and splits neurons). Key features include materialization — generating point-in-time snapshots of annotation tables for reproducible analysis — and spatial indexing for efficient region-of-interest queries. A critical design consideration is that segmentation edits (merges/splits) require re-linking all annotations associated with affected root IDs, which CAVE handles through graph-based ID lineage tracking. This approach is essential for reproducibility in publications referencing large living connectome datasets."
+  },
+  "discussion_prompts": [
+    "How does CAVE's versioning system enable reproducibility in connectomics publications, and what are the minimal metadata requirements for a versioned connectome citation to be reproducible?",
+    "What are the tradeoffs between real-time collaborative annotation (as in CAVE/FlyWire) versus batch proofreading workflows in terms of data quality and community engagement?",
+    "How should CAVE's materialization timestamps be handled when integrating connectomic data with other datasets (e.g., transcriptomics) that were generated at different time points?"
+  ],
+  "dimension": "infrastructure",
+  "tags": ["tool:cave", "infrastructure:database", "connectomics:annotation", "method:versioning", "software:cloud", "connectomics:proofreading"]
+}

@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Scientific progress was typically understood as gradual accumulation of knowledge, but this model failed to explain episodes of radical conceptual reorganization in science. A new framework was needed to describe how scientific fields are structured and how they fundamentally change.",
+    "challenge": "Characterizing the dynamics of scientific change required grappling with historical case studies across many fields and developing a vocabulary that captured both normal science and the discontinuous revolutions that periodically reorganize entire disciplines.",
+    "action": "Kuhn developed the concept of 'paradigms' — shared frameworks of assumptions, methods, and exemplary problems that guide normal scientific work — and analyzed historical episodes of paradigm shift across physics, chemistry, and astronomy to describe the structure of scientific revolutions.",
+    "resolution": "The Structure of Scientific Revolutions introduced the concept of paradigm shifts into scientific discourse, arguing that science progresses not linearly but through cycles of normal science, crisis, and revolutionary restructuring. The framework has profoundly influenced how scientists, historians, and philosophers understand scientific change.",
+    "future_work": "Subsequent philosophers of science have debated, refined, and critiqued Kuhn's framework, particularly regarding the incommensurability of paradigms and the rationality of theory choice during scientific revolutions."
+  },
+  "plain_language_summary": "This famous 1962 book proposed that science does not simply accumulate knowledge gradually — instead, it periodically undergoes 'paradigm shifts' where the entire framework of a field is overthrown and replaced. Think of it like the difference between adding new rooms to a house versus demolishing it and rebuilding on a completely different plan.",
+  "summaries": {
+    "beginner": "This book, first published in 1962, changed how we think about how science works. Rather than steady progress, it argued that science goes through long periods of 'normal science' — working within an accepted framework — punctuated by revolutionary moments when the whole framework is replaced by something new.",
+    "intermediate": "Kuhn's 'Structure of Scientific Revolutions' introduced the concept of paradigms and paradigm shifts, arguing that scientific progress is non-cumulative and that revolutionary changes in science involve replacement of incommensurable conceptual frameworks. The book has been enormously influential across all scientific disciplines including neuroscience.",
+    "advanced": "This book is included in connectomics citation networks as a high-citation cross-domain reference, likely appearing through co-citations with neuroscience methodology papers. From a connectomics perspective, the field itself may represent a paradigm shift — the move from population-level electrophysiological characterization to structural synaptic-resolution mapping fundamentally changes the questions that can be asked and how neural computation is conceptualized. The incommensurability thesis is relevant to debates about whether connectomes can be directly translated into functional understanding."
+  },
+  "discussion_prompts": [
+    "Does the emergence of connectomics represent a Kuhnian paradigm shift in neuroscience, or an extension of existing frameworks? What would constitute evidence either way?",
+    "How does the concept of 'normal science' apply to the current phase of connectomics development, where the field is primarily focused on scaling existing methods?",
+    "What would a 'crisis' in connectomics look like — what findings or failures would challenge the fundamental assumptions of the field?"
+  ],
+  "dimension": "review",
+  "tags": ["philosophy-of-science", "off-domain", "citation-network-artifact", "review", "paradigm-shift"]
+}

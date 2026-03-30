@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Understanding how gene expression patterns are spatially organized across an entire nervous system could reveal the molecular logic underlying neural circuit formation and function. No comprehensive molecular atlas existed at single-cell resolution for a complete nervous system.",
+    "challenge": "Nervous systems contain enormous cellular diversity across anatomically distinct regions, making it technically demanding to profile gene expression while preserving spatial context and cell identity simultaneously.",
+    "action": "The authors generated a molecular topographic map of an entire nervous system by profiling gene expression across all major neural regions, linking transcriptomic identity to spatial position within the animal's body plan.",
+    "resolution": "The study revealed systematic molecular gradients and region-specific gene expression signatures that correspond to functional and anatomical subdivisions of the nervous system. The atlas provides a resource connecting transcriptome to neuroanatomy at unprecedented completeness.",
+    "future_work": "Future work should integrate this molecular atlas with connectomic data to test whether synaptic connectivity patterns are predicted by transcriptomic cell-type identity."
+  },
+  "plain_language_summary": "This study created a complete molecular map of an entire nervous system by measuring which genes are active in each part. Think of it as making a detailed color-coded atlas of a city, where each neighborhood's color reveals its 'molecular personality.' This helps scientists understand why different parts of the brain are specialized for different jobs.",
+  "summaries": {
+    "beginner": "Every cell in your nervous system has a unique set of active genes that determines what it does. This paper mapped out those gene activity patterns across an entire nervous system, creating a comprehensive reference atlas that links molecular identity to location.",
+    "intermediate": "The authors produced a spatially resolved transcriptomic atlas of a complete nervous system, characterizing gene expression profiles across all neural regions. This resource bridges molecular neuroscience and neuroanatomy, enabling systematic comparison between transcriptomic cell types and circuit-level organization.",
+    "advanced": "This work generated a whole-nervous-system molecular topographic map integrating spatial transcriptomics with anatomical annotation, revealing systematic gradients in gene expression that parallel functional subdivisions. A key caveat is that spatial resolution and sensitivity may vary across regions, and single-cell resolution must be interpreted in the context of tissue fixation and dissociation artifacts. The dataset provides a critical foundation for multi-modal integration with connectomic datasets."
+  },
+  "discussion_prompts": [
+    "How well do transcriptomically defined cell types in this atlas align with morphologically or functionally defined neuron classes — and where do the classifications diverge?",
+    "What molecular features most strongly predict synaptic connectivity, and how could this atlas be integrated with EM connectomics datasets to test that hypothesis?",
+    "What are the limitations of spatial transcriptomics methods used here, and how might they affect interpretation of the molecular gradients reported?"
+  ],
+  "dimension": "cell-types",
+  "tags": ["method:spatial-transcriptomics", "scale:whole-nervous-system", "data:gene-expression", "neuroanatomy:atlas", "method:single-cell-rna-seq"]
+}

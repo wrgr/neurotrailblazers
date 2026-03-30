@@ -1,0 +1,15 @@
+{
+  "id": "dorkenwald-2024-neurd",
+  "title": "NEURD: automated proofreading and feature extraction for connectomics",
+  "authors": ["Dorkenwald S", "McKellar CE", "Macrina T", "Kemnitz N", "Lee K", "Lu R", "Wu J", "Popovych S", "Mitchell E", "Nehoran B"],
+  "year": 2024,
+  "journal": "Nature Methods",
+  "doi": "10.1038/s41592-024-02515-z",
+  "url": "https://www.nature.com/articles/s41592-024-02515-z",
+  "abstract": "NEURD automatically detects and corrects segmentation errors in connectome reconstructions and extracts morphological features, significantly reducing manual proofreading effort.",
+  "seed_expert": "Sven Dorkenwald",
+  "dimensions": ["proofreading", "computer-vision-ml"],
+  "tags": ["NEURD", "automated-proofreading", "error-detection", "morphology"],
+  "duplicate_of_existing": "dorkenwald-2024-neurd",
+  "notes": "Already in existing 102. Key automated proofreading tool."
+}

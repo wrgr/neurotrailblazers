@@ -1,0 +1,15 @@
+{
+  "id": "zador-2016-mapseq",
+  "title": "High-Throughput Mapping of Single-Neuron Projections by Sequencing of Barcoded RNA",
+  "authors": ["Kebschull JM", "Garcia da Silva P", "Reid AP", "Peikon ID", "Albeanu DF", "Zador AM"],
+  "year": 2016,
+  "journal": "Neuron",
+  "doi": "10.1016/j.neuron.2016.07.036",
+  "url": "https://www.cell.com/neuron/fulltext/S0896-6273(16)30421-4",
+  "abstract": "MAPseq (Multiplexed Analysis of Projections by Sequencing) labels neurons with unique RNA barcodes, enabling high-throughput mapping of single-neuron projections. We demonstrate that individual locus coeruleus neurons have idiosyncratic projection patterns.",
+  "seed_expert": "Anthony Zador",
+  "dimensions": ["methodology", "connectomics"],
+  "tags": ["MAPseq", "barcoding", "RNA-barcode", "projections", "locus-coeruleus"],
+  "duplicate_of_existing": null,
+  "notes": "Recasts neuroanatomical tracing as a sequencing problem. Foundational method."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "boyden-2025-liconn",
+  "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+  "authors": ["Reicher R", "Doerr J", "Seidemann A", "Wahl M", "Bhatt AN", "Boyden ES", "Bharioke A"],
+  "year": 2025,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-025-08985-1",
+  "url": "https://www.nature.com/articles/s41586-025-08985-1",
+  "abstract": "LICONN integrates engineered hydrogel expansion with deep-learning segmentation for synapse-level brain circuit reconstruction using light microscopy, directly incorporating molecular information into connectivity maps.",
+  "seed_expert": "Ed Boyden",
+  "dimensions": ["image-acquisition", "computer-vision-ml", "connectomics"],
+  "tags": ["LICONN", "expansion-microscopy", "light-microscopy-connectomics", "deep-learning"],
+  "duplicate_of_existing": null,
+  "notes": "Light microscopy achieving EM-level connectomic reconstruction. Potential paradigm shift."
+}

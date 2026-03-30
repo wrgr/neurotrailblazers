@@ -1,0 +1,15 @@
+{
+  "id": "bock-2024-flywire-connectome",
+  "title": "Neuronal wiring diagram of an adult brain",
+  "authors": ["Dorkenwald S", "Matsliah A", "Sterling AR", "Schlegel P", "Yu SC", "McKellar CE", "Lin A", "Costa M", "Eichler K", "Yin Y", "Silversmith W", "Schneider-Mizell CM", "Jordan CS", "Brittain D", "Halageri A", "Kuehner K", "Ogedengbe O", "Mober R", "Getahun S", "Bock DD", "Jefferis GSXE", "Seung HS", "Murthy M"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07558-y",
+  "url": "https://www.nature.com/articles/s41586-024-07558-y",
+  "abstract": "We present the FlyWire connectome, a complete map of the 139,255 neurons and ~50 million chemical synapses in the brain of an adult female Drosophila melanogaster, reconstructed from the FAFB electron microscopy volume using AI segmentation and crowd-sourced proofreading.",
+  "seed_expert": "Davi Bock",
+  "dimensions": ["connectomics", "case-studies", "proofreading"],
+  "tags": ["FlyWire", "drosophila", "whole-brain-connectome", "crowd-sourcing"],
+  "duplicate_of_existing": "dorkenwald-2024-flywire",
+  "notes": "Already in existing 102. Complete adult fly brain connectome."
+}

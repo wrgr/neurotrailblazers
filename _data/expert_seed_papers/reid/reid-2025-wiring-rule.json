@@ -1,0 +1,15 @@
+{
+  "id": "reid-2025-wiring-rule",
+  "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+  "authors": ["Ding Z", "Fahey PG", "Papadopoulos S", "Wang E", "Celii B", "Papadopoulos C", "Brooks A", "Reimer J", "Sinz F", "Tolias AS", "Reid RC", "da Costa NM", "Seung HS"],
+  "year": 2025,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-025-08840-3",
+  "url": "https://www.nature.com/articles/s41586-025-08840-3",
+  "abstract": "Using the MICrONS dataset, this study reveals that neurons with similar functional responses are preferentially connected within and across cortical layers and visual areas, supporting a universal 'like-to-like' wiring rule across the visual hierarchy.",
+  "seed_expert": "R. Clay Reid",
+  "dimensions": ["connectomics", "network-analysis"],
+  "tags": ["MICrONS", "like-to-like", "wiring-rule", "visual-cortex", "structure-function"],
+  "duplicate_of_existing": null,
+  "notes": "Key MICrONS finding: like-to-like connectivity is universal across layers and areas."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "sporns-2018-graph-theory-methods",
+  "title": "Graph Theory Methods: Applications in Brain Networks",
+  "authors": ["Sporns O"],
+  "year": 2018,
+  "journal": "Dialogues in Clinical Neuroscience",
+  "doi": "10.31887/DCNS.2018.20.2/osporns",
+  "url": "https://www.tandfonline.com/doi/full/10.31887/DCNS.2018.20.2/osporns",
+  "abstract": "Network neuroscience is a thriving and rapidly expanding field. Empirical data on brain networks are ever increasing in size and complexity, leading to strong demand for graph theory tools. This review surveys commonly used and neurobiologically insightful graph measures including community detection, hub identification, and communication measures.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": ["network-analysis", "methodology"],
+  "tags": ["graph-theory", "community-detection", "hubs", "review"],
+  "duplicate_of_existing": null,
+  "notes": "Practical review of graph measures for brain network analysis."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bock-2018-fafb",
+  "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster",
+  "authors": ["Zheng Z", "Lauritzen JS", "Perlman E", "Robinson CG", "Nichols M", "Milber D", "Vetter M", "Gray R", "Hess H", "Bock DD"],
+  "year": 2018,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2018.06.019",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(18)30787-6",
+  "abstract": "We describe a complete EM volume of the brain of adult Drosophila melanogaster at synaptic resolution. The dataset establishes a structural scaffold for models of circuit function across the fly brain and enables comparisons of circuit architecture across species.",
+  "seed_expert": "Davi Bock",
+  "dimensions": ["image-acquisition", "case-studies"],
+  "tags": ["FAFB", "drosophila", "whole-brain", "ssTEM", "dataset"],
+  "duplicate_of_existing": "zheng-2018",
+  "notes": "Already in existing 102. The FAFB dataset that enabled FlyWire."
+}

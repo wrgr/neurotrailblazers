@@ -1,0 +1,15 @@
+{
+  "id": "denk-2012-fibsem",
+  "title": "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling",
+  "authors": ["Knott G", "Marchman H", "Wall D", "Lich B"],
+  "year": 2008,
+  "journal": "Journal of Neuroscience",
+  "doi": "10.1523/JNEUROSCI.1749-08.2008",
+  "url": "https://www.jneurosci.org/content/28/12/2959",
+  "abstract": "We demonstrate the use of focused ion beam milling combined with scanning electron microscopy (FIB-SEM) for serial section imaging of adult brain tissue, producing isotropic voxels ideal for 3D reconstruction.",
+  "seed_expert": "Winfried Denk",
+  "dimensions": ["image-acquisition"],
+  "tags": ["FIB-SEM", "isotropic-voxels", "brain-tissue", "serial-section"],
+  "duplicate_of_existing": "knott-2008",
+  "notes": "Already in existing 102. FIB-SEM for brain tissue; enables isotropic imaging."
+}

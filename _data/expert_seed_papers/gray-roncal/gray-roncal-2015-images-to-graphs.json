@@ -1,0 +1,15 @@
+{
+  "id": "gray-roncal-2015-images-to-graphs",
+  "title": "An automated images-to-graphs framework for high resolution connectomics",
+  "authors": ["Gray Roncal WR", "Kleissas DM", "Vogelstein JT", "Manavalan P", "Lillaney K", "Pekala M", "Burns R", "Vogelstein RJ", "Priebe CE", "Chevillet MA", "Hager GD"],
+  "year": 2015,
+  "journal": "Frontiers in Neuroinformatics",
+  "doi": "10.3389/fninf.2015.00020",
+  "url": "https://www.frontiersin.org/articles/10.3389/fninf.2015.00020/full",
+  "abstract": "We present the first fully automated images-to-graphs pipeline for high resolution connectomics, transforming an EM image volume of cortical tissue into a wiring diagram. The pipeline includes membrane detection, 3D neuron segmentation, and synapse classification.",
+  "seed_expert": "William Gray Roncal",
+  "dimensions": ["computer-vision-ml", "data-infrastructure"],
+  "tags": ["pipeline", "automated", "images-to-graphs", "segmentation", "synapse-detection"],
+  "duplicate_of_existing": "gray-roncal-2015",
+  "notes": "Already in existing 102. First fully automated connectomics pipeline."
+}

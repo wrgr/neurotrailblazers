@@ -1,0 +1,15 @@
+{
+  "id": "priebe-2015-errorful-graphs",
+  "title": "Statistical Inference on Errorfully Observed Graphs",
+  "authors": ["Priebe CE", "Sussman DL", "Tang M", "Vogelstein JT"],
+  "year": 2015,
+  "journal": "Journal of Computational and Graphical Statistics",
+  "doi": "10.1080/10618600.2014.951049",
+  "url": "https://www.tandfonline.com/doi/full/10.1080/10618600.2014.951049",
+  "abstract": "In many applications the existence of an edge between two vertices is based on some imperfect assessment. We investigate the quantity/quality tradeoff for errorful observations, studying the stochastic blockmodel and applying it to the C. elegans connectome.",
+  "seed_expert": "Carey Priebe",
+  "dimensions": ["network-analysis", "methodology"],
+  "tags": ["errorful-graphs", "stochastic-blockmodel", "C-elegans", "graph-inference"],
+  "duplicate_of_existing": null,
+  "notes": "Addresses the fundamental issue that connectome edges are measured with error."
+}

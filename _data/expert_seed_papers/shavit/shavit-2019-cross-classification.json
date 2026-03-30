@@ -1,0 +1,15 @@
+{
+  "id": "shavit-2019-cross-classification",
+  "title": "Cross-Classification Clustering: An Efficient Multi-Object Tracking Technique for 3-D Instance Segmentation in Connectomics",
+  "authors": ["Meirovitch Y", "Mi L", "Saribekyan H", "Matveev A", "Rolnick D", "Shavit N"],
+  "year": 2019,
+  "journal": "CVPR",
+  "doi": "10.1109/CVPR.2019.00862",
+  "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Meirovitch_Cross-Classification_Clustering_An_Efficient_Multi-Object_Tracking_Technique_for_3-D_Instance_CVPR_2019_paper.html",
+  "abstract": "We introduce cross-classification clustering (3C), a technique that simultaneously tracks all objects in a 3D image stack for instance segmentation in connectomics, achieving state-of-the-art results.",
+  "seed_expert": "Nir Shavit",
+  "dimensions": ["computer-vision-ml"],
+  "tags": ["instance-segmentation", "3C", "multi-object-tracking", "CVPR"],
+  "duplicate_of_existing": null,
+  "notes": "Novel segmentation approach for connectomics from the CS/algorithms community."
+}

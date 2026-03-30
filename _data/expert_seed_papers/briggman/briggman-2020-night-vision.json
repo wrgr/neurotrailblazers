@@ -1,0 +1,15 @@
+{
+  "id": "briggman-2020-night-vision",
+  "title": "Connectomic analysis reveals an interneuron with an integral role in the retinal circuit for night vision",
+  "authors": ["Park SJH", "Lieberman EE", "Bharioke A", "Knecht J", "Trotter B", "Bhatt AN", "Hinckley CA", "Briggman KL"],
+  "year": 2020,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.56077",
+  "url": "https://elifesciences.org/articles/56077",
+  "abstract": "Night vision depends on the rod bipolar cell pathway. Using connectomic reconstruction from serial block-face EM, we identify the major inhibitory input to the AII amacrine cell, revealing an interneuron with an integral role in the night vision circuit.",
+  "seed_expert": "Kevin Briggman",
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["retina", "night-vision", "AII-amacrine", "rod-bipolar", "SBEM"],
+  "duplicate_of_existing": null,
+  "notes": "Connectomics-driven discovery of a key interneuron in the night vision pathway."
+}

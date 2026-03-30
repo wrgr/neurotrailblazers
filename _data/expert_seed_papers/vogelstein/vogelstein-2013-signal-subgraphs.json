@@ -1,0 +1,15 @@
+{
+  "id": "vogelstein-2013-signal-subgraphs",
+  "title": "Graph Classification Using Signal-Subgraphs: Applications in Statistical Connectomics",
+  "authors": ["Vogelstein JT", "Gray Roncal WR", "Vogelstein RJ", "Priebe CE"],
+  "year": 2013,
+  "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "doi": "10.1109/TPAMI.2012.235",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/23681985/",
+  "abstract": "Given a collection of graphs and associated classes, how can one predict the class of a newly observed graph? We propose a statistical model for graph/class pairs leading to signal-subgraph estimators, and apply them to classify connectomes by sex.",
+  "seed_expert": "Joshua Vogelstein",
+  "dimensions": ["network-analysis", "methodology"],
+  "tags": ["graph-classification", "signal-subgraph", "sex-differences", "connectome"],
+  "duplicate_of_existing": null,
+  "notes": "Foundational graph classification method applied to connectomes."
+}

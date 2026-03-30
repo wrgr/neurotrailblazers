@@ -1,0 +1,15 @@
+{
+  "id": "collman-2021-cave",
+  "title": "CAVE: Connectome Annotation Versioning Engine",
+  "authors": ["Dorkenwald S", "Schneider-Mizell CM", "Brittain D", "Halageri A", "Jordan CS", "Kemnitz N", "Castro M", "Silversmith W", "Maitin-Shepard J", "Tschida-Reuter J", "Gager J", "Popovych S", "Mu S", "Wu J", "Macrina T", "Lee K", "Zung J", "Collman F"],
+  "year": 2023,
+  "journal": "bioRxiv / Nature Methods",
+  "doi": "10.1101/2023.07.26.550598",
+  "url": "https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1",
+  "abstract": "CAVE is a versioned annotation system for connectomes that tracks changes to segmentation and annotations over time, enabling collaborative proofreading at scale while maintaining data provenance and reproducibility.",
+  "seed_expert": "Forrest Collman",
+  "dimensions": ["data-infrastructure", "proofreading"],
+  "tags": ["CAVE", "versioning", "annotation", "provenance", "collaborative"],
+  "duplicate_of_existing": "dorkenwald-2023-cave",
+  "notes": "Already in existing 102. Critical infrastructure for MICrONS and FlyWire annotation."
+}

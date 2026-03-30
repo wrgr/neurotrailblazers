@@ -1,0 +1,15 @@
+{
+  "id": "sporns-2009-complex-brain-networks",
+  "title": "Complex Brain Networks: Graph Theoretical Analysis of Structural and Functional Systems",
+  "authors": ["Bullmore E", "Sporns O"],
+  "year": 2009,
+  "journal": "Nature Reviews Neuroscience",
+  "doi": "10.1038/nrn2575",
+  "url": "https://www.nature.com/articles/nrn2575",
+  "abstract": "Recent developments in the quantitative analysis of complex networks, based largely on graph theory, have been rapidly translated to studies of brain organization. The brain's structural and functional systems have features of complex networks—such as small-world topology, highly connected hubs, and modularity—at all scales in neuroimaging and neuroanatomical studies.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": ["connectomics", "network-analysis"],
+  "tags": ["graph-theory", "small-world", "brain-network", "review"],
+  "duplicate_of_existing": "bullmore-sporns-2009",
+  "notes": "Already in existing 102 papers. Pioneering review of graph theory applied to brain networks."
+}

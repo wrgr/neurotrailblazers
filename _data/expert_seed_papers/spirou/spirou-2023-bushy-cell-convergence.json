@@ -1,0 +1,15 @@
+{
+  "id": "spirou-2023-bushy-cell-convergence",
+  "title": "Two Synaptic Convergence Motifs Define Functional Roles for Inputs to Cochlear Nucleus Bushy Cells",
+  "authors": ["Spirou GA", "Kerr C", "Bhatt AN"],
+  "year": 2023,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.83393",
+  "url": "https://elifesciences.org/articles/83393",
+  "abstract": "Using volume EM we provide exact data on synaptic inputs and weights to cochlear nucleus bushy neurons, and export cellular reconstructions into morphologically-constrained biophysical models to link structure to temporal processing function.",
+  "seed_expert": "George Spirou",
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["auditory", "cochlear-nucleus", "bushy-cells", "biophysical-model", "volume-EM"],
+  "duplicate_of_existing": null,
+  "notes": "Exemplary structure-to-function pipeline: EM connectomics + computational modeling."
+}

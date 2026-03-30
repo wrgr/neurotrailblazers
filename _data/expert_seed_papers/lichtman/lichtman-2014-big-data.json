@@ -1,0 +1,15 @@
+{
+  "id": "lichtman-2014-big-data",
+  "title": "The big data challenges of connectomics",
+  "authors": ["Lichtman JW", "Pfister H", "Shavit N"],
+  "year": 2014,
+  "journal": "Nature Neuroscience",
+  "doi": "10.1038/nn.3837",
+  "url": "https://www.nature.com/articles/nn.3837",
+  "abstract": "Connectomics began in the 1970s with the study of the small nervous system of a worm and has recently garnered general interest thanks to technical and computational advances that automate the collection of electron-microscopy data. This perspective discusses the enormous data challenges posed by connectomics at the petabyte scale.",
+  "seed_expert": "Jeff Lichtman",
+  "dimensions": ["data-infrastructure", "connectomics"],
+  "tags": ["big-data", "petascale", "computational-challenges", "perspective"],
+  "duplicate_of_existing": null,
+  "notes": "Key paper on the computational/storage challenges of connectomics. Co-authored with Shavit."
+}

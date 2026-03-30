@@ -1,0 +1,15 @@
+{
+  "id": "lichtman-2016-swanson-cajal",
+  "title": "From Cajal to Connectome and Beyond",
+  "authors": ["Swanson LW", "Lichtman JW"],
+  "year": 2016,
+  "journal": "Annual Review of Neuroscience",
+  "doi": "10.1146/annurev-neuro-071714-033954",
+  "url": "https://www.annualreviews.org/doi/10.1146/annurev-neuro-071714-033954",
+  "abstract": "A historical review tracing the arc from Cajal's neuron doctrine through modern connectomics, discussing how complete wiring diagrams may transform our understanding of the nervous system.",
+  "seed_expert": "Jeff Lichtman",
+  "dimensions": ["connectomics", "methodology"],
+  "tags": ["history", "review", "neuron-doctrine", "connectome"],
+  "duplicate_of_existing": null,
+  "notes": "Historical perspective from Cajal to modern connectomics."
+}

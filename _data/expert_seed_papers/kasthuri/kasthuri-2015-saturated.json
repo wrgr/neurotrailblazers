@@ -1,0 +1,15 @@
+{
+  "id": "kasthuri-2015-saturated",
+  "title": "Saturated Reconstruction of a Volume of Neocortex",
+  "authors": ["Kasthuri N", "Hayworth KJ", "Berger DR", "Schalek RL", "Conchello JA", "Knowles-Barley S", "Lee D", "Vazquez-Reina A", "Kaynig V", "Jones TR", "Roberts M", "Morgan JL", "Tapia JC", "Seung HS", "Roncal WG", "Vogelstein JT", "Burns R", "Sussman DL", "Priebe CE", "Pfister H", "Lichtman JW"],
+  "year": 2015,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2015.06.054",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(15)00824-7",
+  "abstract": "We describe the complete reconstruction of every neurite and synapse within a small volume of mouse neocortex, providing a 'saturated' reconstruction that reveals previously unknown features of cortical organization including multisynaptic boutons and orphan synapses.",
+  "seed_expert": "Bobby Kasthuri",
+  "dimensions": ["connectomics", "neuroanatomy"],
+  "tags": ["saturated-reconstruction", "neocortex", "serial-EM", "ultrastructure"],
+  "duplicate_of_existing": "kasthuri-2015",
+  "notes": "Already in existing 102. Landmark saturated cortical reconstruction."
+}

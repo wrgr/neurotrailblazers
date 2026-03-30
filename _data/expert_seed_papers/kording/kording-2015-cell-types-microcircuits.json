@@ -1,0 +1,15 @@
+{
+  "id": "kording-2015-cell-types-microcircuits",
+  "title": "Automatic discovery of cell types and microcircuitry from neural connectomics",
+  "authors": ["Jonas E", "Kording KP"],
+  "year": 2015,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.04250",
+  "url": "https://elifesciences.org/articles/04250",
+  "abstract": "We develop an algorithm that can classify the component units of circuits and identify connections between them. Applied to connectomics data for 950 neurons in the mouse retina, the algorithm generates predictions of cell types and connectivity patterns that agree closely with human neuroanatomists.",
+  "seed_expert": "Konrad Kording",
+  "dimensions": ["cell-types", "computer-vision-ml", "network-analysis"],
+  "tags": ["cell-type-discovery", "automated-classification", "retina", "microcircuits"],
+  "duplicate_of_existing": null,
+  "notes": "Automated cell type discovery from connectomic data — bridges ML and neuroanatomy."
+}

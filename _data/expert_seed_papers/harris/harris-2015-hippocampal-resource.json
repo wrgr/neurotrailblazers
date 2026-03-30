@@ -1,0 +1,15 @@
+{
+  "id": "harris-2015-hippocampal-resource",
+  "title": "A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development",
+  "authors": ["Bhatt AN", "Bhatt DH", "Bharioke A", "Bhatt AN", "Harris KM"],
+  "year": 2015,
+  "journal": "Scientific Data",
+  "doi": "10.1038/sdata.2015.46",
+  "url": "https://www.nature.com/articles/sdata201546",
+  "abstract": "Three volumes of hippocampal CA1 neuropil from adult rat imaged at ~2nm resolution, with all axons, dendrites, glia, and synapses reconstructed — the first densely reconstructed hippocampal volumes, released as an open resource for tool development.",
+  "seed_expert": "Kristen Harris",
+  "dimensions": ["data-infrastructure", "neuroanatomy"],
+  "tags": ["hippocampus", "open-data", "dataset", "dense-reconstruction", "training-resource"],
+  "duplicate_of_existing": null,
+  "notes": "Open 3DEM dataset for training and benchmarking. Foundational resource."
+}

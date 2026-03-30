@@ -1,0 +1,15 @@
+{
+  "id": "vogelstein-2021-statistical-connectomics",
+  "title": "Statistical Connectomics",
+  "authors": ["Chung J", "Bridgeford EW", "Arroyo J", "Pedigo BD", "Saad-Eldin A", "Gopalakrishnan V", "Xiang L", "Priebe CE", "Vogelstein JT"],
+  "year": 2021,
+  "journal": "Annual Review of Statistics and Its Application",
+  "doi": "10.1146/annurev-statistics-042720-023234",
+  "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-042720-023234",
+  "abstract": "While there have been thousands of papers on connectomics, the statistics of networks remains limited and poorly understood. This paper provides an overview from the perspective of statistical network science of the models, assumptions, problems, and applications justified for analysis of connectome data.",
+  "seed_expert": "Joshua Vogelstein",
+  "dimensions": ["network-analysis", "methodology"],
+  "tags": ["statistical-connectomics", "graph-statistics", "review", "network-models"],
+  "duplicate_of_existing": null,
+  "notes": "Comprehensive review defining statistical connectomics as a subfield."
+}

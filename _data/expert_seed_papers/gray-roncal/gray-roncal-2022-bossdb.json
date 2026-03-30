@@ -1,0 +1,15 @@
+{
+  "id": "gray-roncal-2022-bossdb",
+  "title": "BossDB: A cloud-native approach for petascale neuroscience discovery",
+  "authors": ["Hider R Jr", "Kleissas D", "Gion T", "Xenes D", "Matelsky J", "Pryor D", "Rodriguez L", "Johnson EC", "Gray-Roncal W", "Wester B"],
+  "year": 2022,
+  "journal": "Frontiers in Neuroinformatics",
+  "doi": "10.3389/fninf.2022.828787",
+  "url": "https://www.frontiersin.org/articles/10.3389/fninf.2022.828787/full",
+  "abstract": "BossDB is a scalable cloud-native data ecosystem for storing, accessing, and processing multidimensional volumetric neuroscience datasets. Focused on FAIR principles, it utilizes cloud-based infrastructure to facilitate petascale EM and XRM data access and analysis.",
+  "seed_expert": "William Gray Roncal",
+  "dimensions": ["data-infrastructure"],
+  "tags": ["bossDB", "cloud", "FAIR", "petascale", "database"],
+  "duplicate_of_existing": "hider-2022-bossdb",
+  "notes": "Already in existing 102. Core infrastructure for many connectomics datasets."
+}

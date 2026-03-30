@@ -1,0 +1,15 @@
+{
+  "id": "smith-2007-array-tomography",
+  "title": "Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits",
+  "authors": ["Micheva KD", "Smith SJ"],
+  "year": 2007,
+  "journal": "Neuron",
+  "doi": "10.1016/j.neuron.2007.06.014",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0896627307004412",
+  "abstract": "Array tomography combines features of optical fluorescence and electron microscopy by constructing ordered arrays of ultrathin resin-embedded serial sections, enabling quantitative high-resolution volumetric imaging of antigens, fluorescent proteins, and ultrastructure.",
+  "seed_expert": "Stephen Smith",
+  "dimensions": ["image-acquisition", "neuroanatomy"],
+  "tags": ["array-tomography", "synapse-imaging", "immunofluorescence", "methodology"],
+  "duplicate_of_existing": null,
+  "notes": "Foundational method paper for array tomography."
+}

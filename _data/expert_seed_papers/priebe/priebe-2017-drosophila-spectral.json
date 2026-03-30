@@ -1,0 +1,15 @@
+{
+  "id": "priebe-2017-drosophila-spectral",
+  "title": "Semiparametric spectral modeling of the Drosophila connectome",
+  "authors": ["Priebe CE", "Park Y", "Tang M", "Cardona A"],
+  "year": 2017,
+  "journal": "arXiv preprint",
+  "doi": null,
+  "url": "https://arxiv.org/abs/1705.03297",
+  "abstract": "We present semiparametric spectral modeling of the complete larval Drosophila mushroom body connectome using Gaussian mixture modeling in the adjacency spectral embedding representation space, introducing the latent structure model (LSM).",
+  "seed_expert": "Carey Priebe",
+  "dimensions": ["network-analysis", "methodology", "case-studies"],
+  "tags": ["spectral-embedding", "Drosophila-larva", "mushroom-body", "latent-structure-model"],
+  "duplicate_of_existing": null,
+  "notes": "Statistical modeling applied directly to a real Drosophila connectome."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "sporns-2005-human-connectome",
+  "title": "The Human Connectome: A Structural Description of the Human Brain",
+  "authors": ["Sporns O", "Tononi G", "Kotter R"],
+  "year": 2005,
+  "journal": "PLoS Computational Biology",
+  "doi": "10.1371/journal.pcbi.0010042",
+  "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0010042",
+  "abstract": "The connection matrix of the human brain (the human 'connectome') represents a comprehensive description of the structural connections linking the neuronal elements of the human brain. This paper argues that the human connectome will be indispensable for understanding the emergence of the structural and functional organization of the brain and for generating a coherent account of how genes and environment give rise to brain connectivity.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": ["connectomics", "network-analysis"],
+  "tags": ["connectome", "graph-theory", "foundational"],
+  "duplicate_of_existing": "the-human-connectome",
+  "notes": "Seminal paper that coined the term 'connectome'. Already in existing 102 papers."
+}

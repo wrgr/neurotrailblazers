@@ -1,0 +1,15 @@
+{
+  "id": "shavit-2017-multicore-connectomics",
+  "title": "A Multicore Path to Connectomics-on-Demand",
+  "authors": ["Matveev A", "Meirovitch Y", "Saribekyan H", "Jakubiuk W", "Kaler T", "Odor G", "Budden DM", "Zlateski A", "Shavit N"],
+  "year": 2017,
+  "journal": "PPoPP (ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming)",
+  "doi": "10.1145/3018743.3018766",
+  "url": "https://dl.acm.org/doi/10.1145/3018743.3018766",
+  "abstract": "We show that the benefits of algorithms, parallelization, and performance engineering can be so vast that 'cluster-scale' connectomics problems can be solved on a single commodity multicore machine. Best Paper Nominee.",
+  "seed_expert": "Nir Shavit",
+  "dimensions": ["data-infrastructure", "computer-vision-ml"],
+  "tags": ["multicore", "performance", "parallelization", "segmentation"],
+  "duplicate_of_existing": null,
+  "notes": "Demonstrated single-machine connectomics processing; Best Paper Nominee."
+}

@@ -20,13 +20,16 @@ import json
 from collections import Counter
 from pathlib import Path
 
+import re
+
 from config import (
     AUTO_SEED_QUERIES, EXTRA_SEED_DOIS, KEYWORD_QUERIES,
     KEYWORD_MIN_CITATIONS, KEYWORD_MIN_YEAR, KEYWORD_MAX_RESULTS_PER_QUERY,
     DATASET_ANCHOR_DOIS, DATASET_MAX_CITERS,
     EXPANSION_MIN_SEED_CONNECTIONS, EXPANSION_MAX_CITED_BY,
     EXPANSION_MARGINAL_GAIN_THRESHOLD, MAX_CORPUS_SIZE,
-    DIMENSION_MIN_PAPERS, OUTPUT_DIR,
+    TECHNIQUE_MIN_PAPERS, OUTPUT_DIR,
+    MACRO_EXCLUSION_TERMS, NANOSCALE_KEEP_TERMS,
 )
 from openalex_client import OpenAlexClient
 
@@ -65,6 +68,41 @@ def normalize_work(work):
         "type": work.get("type", ""),
         "journal": source.get("display_name", ""),
     }
+
+
+# ── Macro-Connectomics Exclusion Filter ───────────────────────────────
+
+def _text_matches_any(text, terms):
+    """Check if lowered text contains any of the terms."""
+    text = text.lower()
+    return any(t in text for t in terms)
+
+
+def filter_macro_connectomics(papers):
+    """
+    Remove macro-connectomics papers (dMRI, fMRI, resting-state, tractography)
+    UNLESS they also contain nanoscale indicators (EM, synapse, graph theory).
+
+    Returns (kept, removed_count).
+    """
+    kept = []
+    removed = 0
+    for paper in papers:
+        title = (paper.get("title") or "").lower()
+        abstract = (paper.get("abstract") or "").lower()
+        text = f"{title} {abstract}"
+
+        has_macro = _text_matches_any(text, MACRO_EXCLUSION_TERMS)
+        has_nano = _text_matches_any(text, NANOSCALE_KEEP_TERMS)
+
+        if has_macro and not has_nano:
+            removed += 1
+        else:
+            kept.append(paper)
+
+    if removed:
+        print(f"  Filtered {removed} macro-connectomics papers (dMRI/fMRI)")
+    return kept, removed
 
 
 # ── Corpus A: Auto-Seed + Citation Expansion ─────────────────────────
@@ -182,7 +220,9 @@ def build_corpus_a(client):
     """Build Corpus A: auto-seed + citation expansion."""
     print("\n=== Corpus A: Auto-Seed + Citation Expansion ===")
     seeds = build_auto_seed(client)
+    seeds, _ = filter_macro_connectomics(seeds)
     expanded = expand_citations(client, seeds)
+    expanded, _ = filter_macro_connectomics(expanded)
     return expanded
 
 
@@ -212,7 +252,9 @@ def build_corpus_b(client):
                 if norm:
                     corpus.append(norm)
 
-    print(f"  Corpus B: {len(corpus)} papers")
+    print(f"  Corpus B (pre-filter): {len(corpus)} papers")
+    corpus, _ = filter_macro_connectomics(corpus)
+    print(f"  Corpus B (post-filter): {len(corpus)} papers")
     return corpus
 
 
@@ -251,7 +293,9 @@ def build_corpus_c(client):
                 if norm:
                     corpus.append(norm)
 
-    print(f"  Corpus C: {len(corpus)} papers")
+    print(f"  Corpus C (pre-filter): {len(corpus)} papers")
+    corpus, _ = filter_macro_connectomics(corpus)
+    print(f"  Corpus C (post-filter): {len(corpus)} papers")
     return corpus
 
 

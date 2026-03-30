@@ -17,7 +17,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from config import SEED_PAPERS_DIR, JOURNAL_PAPERS_YML, OUTPUT_DIR
+from config import SEED_PAPERS_DIR, JOURNAL_PAPERS_YML, OUTPUT_DIR, TECHNIQUE_FAMILIES
 
 
 def load_expert_papers():
@@ -227,7 +227,43 @@ def check_expert_authors(expert_list, data_driven):
     }
 
 
-def generate_markdown_report(triangulation, validation, author_check):
+def check_technique_coverage(data_driven):
+    """
+    Check that all technique families (volume EM, barcoding, ExM, X-ray, AT)
+    are represented in the data-driven corpus.
+    Uses TECHNIQUE_FAMILIES from config.
+    """
+    results = {}
+    for family_name, keywords in TECHNIQUE_FAMILIES.items():
+        count = 0
+        sample_titles = []
+        for paper in data_driven:
+            title = (paper.get("title") or "").lower()
+            if any(kw.lower() in title for kw in keywords):
+                count += 1
+                if len(sample_titles) < 3:
+                    sample_titles.append(paper.get("title", "")[:80])
+        results[family_name] = {
+            "count": count,
+            "keywords": keywords,
+            "sample_titles": sample_titles,
+            "adequate": count >= 5,
+        }
+
+    total_families = len(results)
+    adequate_families = sum(1 for v in results.values() if v["adequate"])
+    underrepresented = [k for k, v in results.items() if not v["adequate"]]
+
+    return {
+        "technique_families": results,
+        "total_families": total_families,
+        "adequate_families": adequate_families,
+        "underrepresented": underrepresented,
+    }
+
+
+def generate_markdown_report(triangulation, validation, author_check,
+                             technique_check=None):
     """Generate human-readable markdown report."""
     lines = ["# Validation Report\n"]
     lines.append("## Triangulation (Corpus Overlap)\n")
@@ -261,6 +297,17 @@ def generate_markdown_report(triangulation, validation, author_check):
         lines.append("\n### Missing Experts\n")
         for e in author_check["missing_experts"]:
             lines.append(f"- {e['name']} ({e['affiliation']})")
+
+    if technique_check:
+        lines.append(f"\n## Technique Family Coverage\n")
+        lines.append(f"- Families checked: {technique_check['total_families']}")
+        lines.append(f"- Adequate (>=5 papers): {technique_check['adequate_families']}")
+        if technique_check.get("underrepresented"):
+            lines.append(f"- **Underrepresented**: {', '.join(technique_check['underrepresented'])}\n")
+        lines.append("")
+        for family, info in technique_check.get("technique_families", {}).items():
+            status = "OK" if info["adequate"] else "LOW"
+            lines.append(f"- **{family}** [{status}]: {info['count']} papers")
 
     return "\n".join(lines)
 
@@ -297,11 +344,19 @@ def main():
     author_check = check_expert_authors(expert_list, data_driven)
     print(f"  Found: {author_check['found_in_corpus']}/{author_check['total_experts']}")
 
+    # Technique family coverage
+    print("\n--- Technique Family Coverage ---")
+    technique_check = check_technique_coverage(data_driven)
+    print(f"  Adequate: {technique_check['adequate_families']}/{technique_check['total_families']}")
+    if technique_check.get("underrepresented"):
+        print(f"  Underrepresented: {', '.join(technique_check['underrepresented'])}")
+
     # Save results
     report = {
         "triangulation": triangulation,
         "expert_validation": validation,
         "author_check": author_check,
+        "technique_coverage": technique_check,
     }
     report_path = OUTPUT_DIR / "validation_report.json"
     with open(report_path, "w") as f:
@@ -309,7 +364,8 @@ def main():
     print(f"\n  Saved to {report_path}")
 
     # Markdown report
-    md = generate_markdown_report(triangulation, validation, author_check)
+    md = generate_markdown_report(triangulation, validation, author_check,
+                                  technique_check)
     md_path = OUTPUT_DIR / "validation_report.md"
     with open(md_path, "w") as f:
         f.write(md)

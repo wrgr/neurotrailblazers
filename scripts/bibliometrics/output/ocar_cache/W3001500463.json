@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Despite the Drosophila brain's status as a premier model for neural circuit analysis, no complete synaptic wiring diagram of the adult central brain existed, preventing systematic understanding of how the ~100,000-neuron brain is organized at the circuit level.",
+    "challenge": "Reconstructing the entire adult Drosophila central brain required automated segmentation of a dense, multi-terabyte EM volume and subsequent expert proofreading of hundreds of thousands of neurons \u2014 a scale that had never been attempted with the required accuracy.",
+    "action": "The FlyEM team (Janelia Research Campus) acquired a new FIB-SEM volume of half the adult Drosophila central brain (the 'hemibrain'), applied automated segmentation using FFNs, and performed systematic proofreading to generate a heavily annotated connectome of ~25,000 neurons with ~10 million synapses.",
+    "resolution": "The hemibrain connectome provided the first comprehensive circuit-level description of the adult Drosophila central brain, including the mushroom body, central complex, lateral horn, and optic lobe entry circuits. It revealed new cell types, circuit motifs, and provided a freely accessible resource that has underpinned dozens of subsequent circuit analyses.",
+    "future_work": "Future work should complete the male and female Drosophila brains as full hemispheres, improve reconstruction completeness for small-diameter axons, and integrate the structural connectome with trans-synaptic and transcriptomic cell-type annotations."
+  },
+  "summaries": {
+    "beginner": "Scientists built the most complete wiring diagram of an adult fruit fly's brain ever created. By imaging half the brain with a special microscope and having computers plus human experts trace ~25,000 nerve cells and their 10 million connection points, they created a free resource that the whole scientific community can use.",
+    "intermediate": "The hemibrain connectome uses isotropic FIB-SEM imaging of half the adult Drosophila central brain, automated FFN-based segmentation, and systematic proofreading to produce a ~25,000-neuron, ~10 million-synapse dataset. Freely released with NeuPrint access tools, it has enabled systematic analysis of mushroom body, central complex, and lateral horn circuits, establishing a new standard for EM connectomics.",
+    "advanced": "The hemibrain dataset represents the largest isotropic EM connectome at time of publication, using 8 nm voxel FIB-SEM, FFN segmentation, and a proofreading pipeline that achieved >97% synapse recall. The ~25,000 reconstructed neurons cover ~30% of the central brain by volume. Key limitations include incomplete coverage of small processes (<80 nm diameter), single animal/sex (female), and the hemibrain scope (not full brain or VNC). The NeuPrint graph database and API provide powerful query tools but require understanding of the data's incompleteness for valid circuit analysis."
+  },
+  "discussion_prompts": [
+    "What circuit motifs revealed by the hemibrain connectome were unexpected or contradicted previous physiological or genetic models, and how have these findings been validated?",
+    "How does the incompleteness of small-process reconstruction in the hemibrain affect the reliability of connectivity analyses, particularly for neurons with thin axons?",
+    "How has the open release of the hemibrain dataset with NeuPrint tools changed the pace and scope of Drosophila circuit neuroscience, and what follow-up analyses have been most productive?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "stage:adult",
+    "dataset:hemibrain",
+    "imaging:fib-sem",
+    "method:automated-reconstruction",
+    "infrastructure:public-dataset"
+  ]
+}

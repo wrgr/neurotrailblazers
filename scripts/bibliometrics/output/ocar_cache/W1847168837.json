@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Clinicians lacked a brief, standardized, quantitative bedside assessment of cognitive function that could be administered quickly, documented reliably, and used to track cognitive change over time in patients with suspected dementia.",
+    "challenge": "Designing a test that was sensitive enough to detect early cognitive decline, short enough for clinical use, applicable across different levels of patient education, and statistically standardized with normative scores was a non-trivial psychometric challenge.",
+    "action": "Folstein, Folstein, and McHugh developed the Mini-Mental State Examination (MMSE), a 30-point questionnaire covering orientation, registration, attention, recall, language, and visuospatial ability, validated on patients with various psychiatric diagnoses and normal controls.",
+    "resolution": "The MMSE became the most widely used clinical cognitive assessment tool worldwide, with scores below 24 indicating cognitive impairment, enabling standardized enrollment and outcome monitoring in dementia research and clinical trials.",
+    "future_work": "The MMSE's limited sensitivity for mild cognitive impairment and floor/ceiling effects in severe impairment motivated development of more refined cognitive assessment batteries."
+  },
+  "plain_language_summary": "The Mini-Mental State Exam is a 30-question bedside test that doctors use to quickly check whether a patient's thinking and memory are impaired. Questions cover things like knowing the date, remembering words, and copying a shape. It became the standard way to measure cognitive decline in dementia research, providing a common number that different studies and clinicians could use to compare patients.",
+  "summaries": {
+    "beginner": "Doctors needed a quick, standardized way to test whether a patient has memory or thinking problems. The MMSE is a 30-question test that takes about 10 minutes and covers memory, language, orientation, and spatial skills. A score below 24 suggests cognitive impairment. It became the global standard for assessing dementia severity in clinical settings.",
+    "intermediate": "The MMSE (Folstein et al. 1975) provided the first validated, quantitative bedside cognitive screening tool standardized for clinical psychiatry and neurology. Its 30-point scale encompasses five cognitive domains. In connectomics-adjacent research, MMSE scores are used to stratify tissue donors in post-mortem human connectomics studies (e.g., Alzheimer's versus normal aging) and as inclusion/exclusion criteria in clinical trials of cognitive interventions.",
+    "advanced": "The MMSE's role in connectomics is primarily as a clinical correlate for donor tissue characterization in human neuropathology studies. Limitations well-documented in the psychometric literature include education bias (lower scores in less-educated individuals without dementia), floor/ceiling effects, and insensitivity to executive function deficits. More comprehensive batteries (MoCA, ADAS-Cog) are preferred in research settings. When human EM connectomics tissue comes from clinical cases, MMSE scores provide a standardized cognitive phenotype for correlating structural connectivity features with cognitive status."
+  },
+  "discussion_prompts": [
+    "How are cognitive assessments like the MMSE used to select or characterize donors for human post-mortem connectomics tissue, and what biases does this introduce?",
+    "What cognitive domains does the MMSE measure poorly, and how does this limit its use as a phenotypic correlate in connectomics studies of Alzheimer's disease?",
+    "If a future connectomics study aims to correlate synaptic density with cognitive score, what statistical challenges arise from using the MMSE as the outcome variable?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:clinical-assessment", "species:human", "neuroanatomy:dementia", "method:neuropsychology"]
+}

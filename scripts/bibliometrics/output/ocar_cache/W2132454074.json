@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Determining crystal structures from X-ray diffraction data requires solving the crystallographic 'phase problem' — recovering phase information lost in the measurement — a computationally intensive and sometimes intractable step in structural biology and materials science.",
+    "challenge": "Traditional direct methods for phase determination struggle with large or complex structures, missing data, and non-standard space groups; an integrated automated approach that handles these cases reliably was needed.",
+    "action": "The author developed SHELXT, a computer program implementing a novel dual-space algorithm that solves crystal structures by iterating between reciprocal space (using reflection data) and real space (imposing chemical constraints) without requiring a prior structural model.",
+    "resolution": "SHELXT reliably solves crystal structures from single-crystal X-ray data including cases with missing reflections, twinning, and complex space groups, becoming a widely used tool in crystallography. While primarily a chemistry tool, it represents methodological innovation in structure determination from incomplete data.",
+    "future_work": "Extension to electron diffraction data from cryo-EM, which shares phase problem characteristics with X-ray crystallography, represents a frontier application area."
+  },
+  "plain_language_summary": "When X-rays bounce off a crystal, scientists lose half the information they need to determine the crystal's 3D structure — this is called the 'phase problem.' SHELXT is a clever computer program that reconstructs crystal structures by alternating between two mathematical worlds, effectively solving this puzzle automatically. While designed for chemistry, the iterative phase-retrieval approach it uses has parallels in cryo-EM reconstruction used in structural neuroscience.",
+  "summaries": {
+    "beginner": "X-ray crystallography can reveal the 3D shapes of molecules, but the raw data is incomplete. SHELXT is a computer program that cleverly fills in the missing information by going back and forth between the raw diffraction pattern and chemical knowledge about what molecules look like, automatically determining complex crystal structures.",
+    "intermediate": "SHELXT's dual-space algorithm addresses the crystallographic phase problem by alternating between Fourier transformation of reflection data and application of real-space chemical constraints (peak picking, origin selection). Its automated space group determination and robustness to missing data makes it relevant not just in small-molecule crystallography but as a conceptual model for iterative reconstruction approaches in cryo-EM, which faces an analogous phase recovery challenge.",
+    "advanced": "SHELXT appears in neuroscience citation networks primarily through structural biology applications (protein crystallography for receptor structures). The dual-space iterative approach has conceptual parallels with iterative phase-retrieval algorithms used in coherent diffraction imaging and some cryo-EM reconstruction methods. The handling of incomplete data and twinned crystals is methodologically analogous to challenges in EM tomography where missing wedges and beam damage create incomplete Fourier sampling."
+  },
+  "discussion_prompts": [
+    "How does the crystallographic phase problem compare to analogous reconstruction challenges in cryo-electron microscopy, and what algorithms bridge these two domains?",
+    "In what neuroscience or connectomics contexts might crystal structure determination (and tools like SHELXT) be directly relevant?",
+    "What does the broad citation of crystallography methods in neuroscience literature reveal about cross-disciplinary method transfer?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["tool:shelxt", "method:crystallography", "method:phase-retrieval", "domain:structural-biology", "domain:cross-disciplinary"]
+}

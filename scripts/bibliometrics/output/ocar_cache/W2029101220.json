@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Reconstructing three-dimensional structures from serial electron microscopy sections required software capable of visualizing, segmenting, and analyzing large volumetric image datasets. Existing tools were inadequate for the emerging demands of 3D biomedical imaging and electron tomography.",
+    "challenge": "Handling large 3D EM image stacks required efficient memory management, interactive visualization, and tools for manual segmentation and model building — all within a platform accessible to biologists without specialized programming expertise and capable of running on the hardware of the mid-1990s.",
+    "action": "The authors developed IMOD, a comprehensive software package for visualization and analysis of three-dimensional electron microscopy image data. IMOD provided tools for image display, serial section alignment, manual segmentation by contour drawing, 3D model building and rendering, and quantitative analysis.",
+    "resolution": "IMOD became the dominant software platform for EM tomography and serial-section reconstruction in cell biology and early connectomics. Its open-source, freely distributed model and continuous development made it a cornerstone infrastructure tool for 3D EM data analysis across the field for decades.",
+    "future_work": "IMOD continues to be developed and maintained, adding support for larger datasets, cryo-EM, and integration with automated segmentation pipelines, though newer platforms handle petascale connectomics data."
+  },
+  "plain_language_summary": "Working with three-dimensional brain images from electron microscopes requires specialized software to display, annotate, and analyze the data. IMOD was the foundational software package that let scientists visualize and manually trace neuron shapes from stacks of EM images, much like being able to sculpt 3D models from a pile of 2D photographs.",
+  "summaries": {
+    "beginner": "Electron microscopes produce 2D images, and scientists need to combine thousands of these into 3D reconstructions to see the full shapes of neurons. IMOD is the classic software package developed for this purpose, providing tools to display, annotate, and analyze 3D EM image stacks that formed the foundation of early connectomics.",
+    "intermediate": "IMOD is an open-source software package for visualization and 3D reconstruction from electron microscopy data, providing image display, section alignment, manual contour-based segmentation, and 3D rendering. It was the primary platform for EM tomography and early serial-section connectomics, and remains widely used for EM tomography and correlated light-EM workflows.",
+    "advanced": "IMOD's architecture is based on a tile-based image viewing engine (3dmod) with associated command-line tools for preprocessing, reconstruction, and analysis. Its core use cases in connectomics include fiducial-based tilt series alignment and tomographic reconstruction (for cryo-ET), serial section alignment for connectomics preprocessing, and manual contour segmentation for ground-truth annotation and proofreading validation. While superseded by cloud-native platforms for large-scale connectomics, IMOD remains the standard for cryo-electron tomography and continues to be actively developed by the Mastronarde group at UCSF."
+  },
+  "discussion_prompts": [
+    "How did IMOD's design and feature set shape the workflows and assumptions of early connectomics projects, and which of those assumptions still persist in modern tools?",
+    "What is IMOD's current role in the connectomics pipeline ecosystem relative to cloud-based annotation tools like CATMAID, CAVE, and Neuroglancer?",
+    "How does IMOD's approach to manual segmentation by contour drawing compare to the fly-through annotation approach used in more recent proofreading tools?"
+  ],
+  "dimension": "infrastructure",
+  "tags": ["tool:imod", "software:visualization", "imaging:electron-microscopy", "method:segmentation", "infrastructure", "method:3d-reconstruction"]
+}

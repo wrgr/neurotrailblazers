@@ -1,0 +1,82 @@
+Author Merge Report
+============================================================
+
+Merge: 'William Gray-Roncal'
+  ← 'William Gray Roncal' (0 papers)
+  ← 'William R. Gray Roncal' (0 papers)
+  ← 'William R. Gray-Roncal' (0 papers)
+  ← 'Will Gray-Roncal' (0 papers)
+  Combined: 34 unique papers  |  orig rank: #None
+
+Merge: 'Shin-ya Takemura'
+  ← 'Satoko Takemura' (0 papers)
+  Combined: 32 unique papers  |  orig rank: #40
+
+Merge: 'Alexander Shakeel Bates'
+  ← 'Alexander S. Bates' (0 papers)
+  Combined: 38 unique papers  |  orig rank: #60
+
+Merge: 'Gregory S.X.E. Jefferis'
+  ← 'Gregory S. X. E. Jefferis' (0 papers)
+  ← 'Gregory SXE Jefferis' (0 papers)
+  ← 'G Jefferis' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #3
+
+Merge: 'H. Sebastian Seung'
+  ← 'H Sebastian Seung' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #1
+
+Merge: 'Olaf Sporns'
+  ← 'O Sporns' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #352
+
+Merge: 'Moritz Helmstaedter'
+  ← 'M Helmstaedter' (0 papers)
+  Combined: 49 unique papers  |  orig rank: #13
+
+Merge: 'Davi D. Bock'
+  ← 'D Bock' (0 papers)
+  Combined: 64 unique papers  |  orig rank: #15
+
+Merge: 'Marta Costa'
+  ← 'M Costa' (0 papers)
+  Combined: 50 unique papers  |  orig rank: #20
+
+Merge: 'Thomas Müller-Reichert'
+  ← 'Thomas Müller‐Reichert' (0 papers)
+  ← 'Thomas Müller‑Reichert' (0 papers)
+  Combined: 8 unique papers  |  orig rank: #None
+
+Merge: 'Adam A. Atanas'
+  ← 'Adam A Atanas' (0 papers)
+  Combined: 9 unique papers  |  orig rank: #349
+
+Merge: 'Mark W. Moyle'
+  ← 'Mark W Moyle' (0 papers)
+  Combined: 7 unique papers  |  orig rank: #None
+
+Merge: 'Christopher J. Potter'
+  ← 'Christopher J Potter' (0 papers)
+  Combined: 5 unique papers  |  orig rank: #None
+
+Merge: 'Chun-Chieh Lin'
+  ← 'Chun‐Chieh Lin' (0 papers)
+  ← 'Chun‑Chieh Lin' (0 papers)
+  Combined: 4 unique papers  |  orig rank: #None
+
+Merge: 'Casey M. Schneider-Mizell'
+  ← 'Casey M Schneider-Mizell' (0 papers)
+  Combined: 50 unique papers  |  orig rank: #None
+
+Merge: 'Wei-Chung Allen Lee'
+  ← 'Wei-Chung Lee' (0 papers)
+  ← 'W.C.A. Lee' (0 papers)
+  Combined: 52 unique papers  |  orig rank: #18
+
+Merge: 'C. Shan Xu'
+  ← 'C Shan Xu' (0 papers)
+  ← 'Shan Xu' (0 papers)
+  Combined: 45 unique papers  |  orig rank: #34
+
+Will Gray-Roncal combined: 34 unique papers
+  (outside top-1000 before merge due to name fragmentation)

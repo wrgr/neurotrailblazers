@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The dense circuit structure of mammalian neocortex \u2014 the connectivity among pyramidal cells, inhibitory interneurons, and their inputs within a single cortical layer \u2014 had never been determined at synaptic resolution, preventing mechanistic understanding of cortical computation.",
+    "challenge": "Dense reconstruction of a mammalian cortical volume requires solving hard segmentation problems in densely packed myelinated and unmyelinated processes, automated synapse detection across diverse synapse types, and handling the scale of a mm-scale volume with thousands of neurons.",
+    "action": "The authors performed dense connectomic reconstruction of a volume from mouse somatosensory cortex layer 4, reconstructing all neurons, axons, and synapses using a combination of automated segmentation and expert proofreading, yielding a complete local connectivity matrix.",
+    "resolution": "The dense reconstruction revealed the statistical properties of intralaminar connectivity in layer 4, including the specificity of connections between excitatory and inhibitory cell types, the number of synapses per connection, and the degree to which connection probability follows cell-type rules versus distance-dependent rules.",
+    "future_work": "Dense reconstruction should be extended to additional cortical layers and to layer 4 of different cortical areas and species to determine the universality of the connectivity rules discovered here."
+  },
+  "summaries": {
+    "beginner": "The outer layer of the brain is organized in layers, each doing different jobs. This study mapped all the connections within one specific layer \u2014 layer 4 of the touch area \u2014 of the mouse brain at the level of individual synapses, revealing the rules about which cell types connect to which.",
+    "intermediate": "Dense connectomic reconstruction of mouse S1 layer 4 from a large EM volume revealed the complete local connectivity matrix, including cell-type-specific connection probabilities and synapse counts per connection. The data provide the first direct measurement of cortical circuit parameters previously estimated from incomplete physiological data.",
+    "advanced": "This dense L4 reconstruction from SBEM data reconstructs thousands of neurons and their local connectivity, enabling statistical analysis of cell-type-specific connection probability, synapse number distributions, and the relationship between structural and functional connectivity. Key findings include that excitatory-to-excitatory connectivity is sparser than physiological estimates suggested, and that inhibitory interneuron targeting rules are cell-type-specific. Limitations include the single-animal, single-region nature of the data and the incomplete coverage of long-range axons passing through the volume."
+  },
+  "discussion_prompts": [
+    "How do the cell-type-specific connectivity rules revealed by dense L4 reconstruction compare to predictions from previous physiological connectivity studies, and where are the largest discrepancies?",
+    "What is the biological significance of the observed variability in synapse number between individual pairs of connected neurons in L4, and what processes might generate this variability?",
+    "How would you use the dense L4 connectivity matrix to constrain a computational model of cortical circuit dynamics, and what parameters remain underdetermined by the structural data?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:mouse",
+    "region:somatosensory-cortex",
+    "imaging:sbem",
+    "method:dense-reconstruction",
+    "circuit:cortical-layers",
+    "cell-type:excitatory-inhibitory"
+  ]
+}

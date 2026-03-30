@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Multiple surgical targets for deep brain stimulation (DBS) in obsessive-compulsive disorder have been proposed, but the lack of a unifying circuit explanation for why different anatomical targets all produce clinical improvement hinders target optimization and patient selection.",
+    "challenge": "The targets (ALIC, nucleus accumbens, STN) are anatomically distant and appear structurally distinct, making it non-obvious whether they modulate the same neural circuit; identifying common circuit elements requires network-level analysis rather than focus on local anatomy.",
+    "action": "The authors analyzed data from four cohorts of OCD patients who underwent DBS to different targets (ALIC, nucleus accumbens, STN) and performed fiber tracking and connectivity analyses to identify common network elements associated with optimal clinical response.",
+    "resolution": "A single fiber bundle was consistently associated with optimal clinical response across all four anatomical targets and cohorts, suggesting that this shared circuit element\u2014rather than local tissue effects\u2014mediates DBS efficacy in OCD. The finding provides a unified connectomic explanation for diverse DBS targets.",
+    "future_work": "Prospective clinical trials using this fiber bundle as a targeting landmark, and mechanistic studies of why stimulating this bundle improves OCD symptoms, are important next steps."
+  },
+  "summaries": {
+    "beginner": "Deep brain stimulation can treat severe OCD by electrically stimulating specific brain regions, but doctors have used different brain targets in different patients. This paper found that despite targeting different locations, successful treatment always involved stimulating the same specific bundle of nerve fibers.",
+    "intermediate": "By analyzing DBS response data from four patient cohorts targeting different brain regions for OCD, this study identifies a common fiber bundle whose modulation is associated with clinical improvement across all targets. This unified connectomic explanation replaces target-centric models of DBS efficacy and suggests a circuit-based approach to target optimization.",
+    "advanced": "Using diffusion MRI tractography and connectivity-based analysis of DBS electrode positions and clinical outcomes across N=50 patients in four cohorts, this study identifies a shared fiber bundle\u2014likely connecting prefrontal cortex with subcortical structures\u2014whose stimulation correlates with OCD symptom improvement regardless of the nominal surgical target. The connectome-based approach overcomes limitations of target-centric models; caveats include reliance on tractography which has known false-positive and false-negative rates, retrospective study design, and the limited ability to establish causation from correlational connectivity analysis."
+  },
+  "discussion_prompts": [
+    "What are the limitations of using tractography-based connectivity analysis to identify DBS targets, and how would you design a prospective study to validate this connectomic target?",
+    "What does the existence of a unified fiber bundle target imply about the circuit-level mechanism of DBS in OCD, and how does this relate to current theories of OCD pathophysiology?",
+    "How should the identification of a shared connectomic target change the clinical practice of DBS targeting for OCD?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "species:human",
+    "method:dbs",
+    "method:tractography",
+    "neuroanatomy:white-matter",
+    "data:clinical",
+    "method:connectivity-analysis"
+  ]
+}

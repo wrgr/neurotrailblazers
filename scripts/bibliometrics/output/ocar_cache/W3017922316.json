@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Animals must integrate innately hardwired valence responses with learned associations when making behavioral decisions, but the circuit mechanisms by which these two systems converge and resolve conflicts in the fly brain were not understood.",
+    "challenge": "The mushroom body (learned) and lateral horn (innate) are parallel pathways in Drosophila, and determining how their outputs are integrated requires identifying common downstream targets and understanding how convergent signals interact during decision-making.",
+    "action": "The authors used connectomics analysis, optogenetics, and behavioral experiments to identify convergence zones where mushroom body output neurons (MBONs) and lateral horn neurons (LHNs) interact, and characterized how these circuits integrate learned and innate valence signals.",
+    "resolution": "The study identified specific circuit nodes where MBON and LHN signals converge and interact, with evidence that the integration can result in either summation or competition depending on the specific neuron types and their valence. This provides a circuit-level mechanism for resolving learned/innate valence conflicts.",
+    "future_work": "Determining how the weighting between learned and innate valence signals is regulated by internal state and past experience, and whether similar integration mechanisms exist in other species, remain open questions."
+  },
+  "summaries": {
+    "beginner": "Animals are born knowing some things are dangerous or rewarding, but they also learn new associations. In flies, this paper found where in the brain circuits carrying instinctive valuations and learned associations meet and how they are combined to decide what to do.",
+    "intermediate": "Using connectomics data, optogenetics, and behavioral assays, this study identifies circuit nodes where mushroom body (learned valence) and lateral horn (innate valence) outputs converge in the fly brain. The results reveal how these signals are integrated to produce coherent behavioral responses even when innate and learned drives conflict.",
+    "advanced": "By combining the hemibrain connectome with targeted functional manipulations, this work characterizes the circuit architecture at the convergence of MBON and LHN pathways, identifying specific neurons that integrate learned and innate valence signals. The analysis reveals both summation and competition motifs at different convergence nodes; a key methodological challenge is distinguishing learning-related connectivity changes from fixed architectural features in a static connectome snapshot."
+  },
+  "discussion_prompts": [
+    "What circuit motifs enable flexible weighting between learned and innate valence signals, and what factors might shift the relative weights during behavior?",
+    "How does the identification of MBON-LHN convergence zones change our understanding of how the fly brain makes valence-based decisions?",
+    "What would equivalent 'valence integration' circuits look like in vertebrate brains, and what evidence exists for their existence?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "neuroanatomy:mushroom-body",
+    "neuroanatomy:lateral-horn",
+    "method:optogenetics",
+    "behavior:learning",
+    "tool:hemibrain"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Despite decades of research demonstrating sensory cortical columns, a unified theoretical framework explaining why the neocortex is universally organized into repeating modular units\u2014and what computational advantages this provides\u2014was lacking.",
+    "challenge": "Cortical columns span many spatial scales (minicolumns ~50 \u00b5m, macrocolumns ~500 \u00b5m), are defined by multiple criteria (connectivity, response properties, gene expression), and vary across areas and species, making a single unifying principle difficult to establish.",
+    "action": "Mountcastle synthesizes decades of electrophysiology, anatomy, and comparative neurobiology to argue that the cortical column is the fundamental unit of neocortical organization across all mammals. He reviews evidence from somatosensory, visual, motor, and association cortices, drawing on his own pioneering single-unit recording work.",
+    "resolution": "The review argues that the minicolumn (~50 neurons organized radially) is the canonical neocortical module, repeated with local variations across areas and species. This modular design allows independent evolutionary scaling of cortical area by adding columns rather than altering laminar circuitry, consistent with Rakic's radial unit hypothesis.",
+    "future_work": "Whether the column is truly a canonical circuit unit with a fixed connectivity blueprint, or an emergent property of local axonal arborization patterns, remains debated and requires dense connectomic reconstruction to resolve."
+  },
+  "summaries": {
+    "beginner": "The neocortex\u2014the wrinkled outer layer of the brain responsible for thinking and sensing\u2014is organized into repeating vertical units called columns. This classic review by Mountcastle argues that these columns are the brain's basic computing modules, repeated thousands of times across different brain areas.",
+    "intermediate": "Mountcastle argues that the neocortical column (~50 \u00b5m minicolumn to ~500 \u00b5m hypercolumn) represents a canonical circuit module tiled across the cortical sheet, with area-specific function arising from differences in input/output connectivity rather than intrinsic circuit modifications. The review synthesizes findings from primary sensory areas to association cortex, proposing that columnar organization is a universal mammalian feature reflecting radial clonal units.",
+    "advanced": "This review crystallizes Mountcastle's lifetime argument for the column as the neocortical canonical circuit, linking electrophysiological response clustering to anatomical radial fiber bundles and the radial unit model. It predates dense connectomic reconstruction, and subsequent work has revealed significant between-column connectivity heterogeneity and dendritic arborization patterns that challenge strict modularity. The paper is foundational for understanding why connectomics projects target columnar volumes (e.g., 1 mm\u00b3 cortical columns in mouse, human) as tractable units for complete circuit reconstruction."
+  },
+  "discussion_prompts": [
+    "How has dense connectomic reconstruction (e.g., MICrONS cubic millimeter dataset) confirmed or revised Mountcastle's canonical cortical column model?",
+    "What distinguishes a 'minicolumn' from a 'hypercolumn' functionally and anatomically, and do these scales correspond to distinct circuit units?",
+    "How does the columnar model relate to the observation that many cortical inhibitory interneurons have horizontal, rather than radial, axonal projections?"
+  ],
+  "dimension": "neuroanatomy",
+  "tags": [
+    "topic:cortical-columns",
+    "topic:neocortex",
+    "topic:modular-organization",
+    "review:foundational",
+    "topic:circuit-architecture",
+    "scale:mesoscale"
+  ]
+}

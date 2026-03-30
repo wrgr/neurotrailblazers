@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Understanding how the nervous system coordinates whole-body movements requires a complete wiring diagram spanning sensory inputs, interneurons, and motor outputs across the entire body \u2014 something only achievable in small organisms with tractable nervous systems.",
+    "challenge": "Reconstructing a whole-animal connectome including all cell types and synaptic connections from sensory periphery to motor neurons requires imaging and segmenting an entire larval body at EM resolution, which demands major data collection and analysis effort.",
+    "action": "The authors used serial section EM to image the entire body of a three-segmented Platynereis dumerilii larva (a marine annelid), reconstructed all neurons and their synaptic connectivity, and classified cell types to produce a whole-animal connectome with motor circuit descriptions.",
+    "resolution": "The study produced the first whole-body connectome of a segmented annelid larva, revealing the organization of circuits coordinating swimming, ciliary locomotion, and sensorimotor integration across body segments. The cell type catalog provides an evolutionary reference for comparing nervous system organization across phyla.",
+    "future_work": "Comparing this connectome to those of other bilaterians at equivalent developmental stages, and linking circuit structure to specific locomotor behaviors, are key directions."
+  },
+  "summaries": {
+    "beginner": "To understand how the brain controls the whole body, we need to map every neuron and connection from sensors to muscles. This paper did exactly that for a tiny worm-like sea creature, creating the first complete wiring diagram of an entire animal's nervous system including all body segments.",
+    "intermediate": "The authors reconstructed the complete synaptic connectome of a three-segmented Platynereis dumerilii larva using serial section EM, mapping all neurons, their synaptic connectivity, and classifying cell types. This whole-animal dataset provides a framework for understanding how segmental motor circuits are organized and coordinated, and serves as an evolutionary reference point for nervous system evolution across bilaterians.",
+    "advanced": "This whole-animal connectome of Platynereis extends connectomics to an annelid, providing phylogenetically informative data for comparative nervous system evolution. The three-segment larva allows full body coverage in a manageable volume, enabling analysis of inter-segmental circuit organization for locomotion. Caveats include that only one individual was analyzed, and the larval stage represents an early developmental window that may not reflect adult circuit organization; also, functional validation of identified motor circuits awaits behavioral experiments."
+  },
+  "discussion_prompts": [
+    "What organizational principles of segmental motor circuits are revealed by this connectome, and how do they compare to segmental circuit organization in vertebrate spinal cord?",
+    "How does the cell-type complement of Platynereis compare to that of C. elegans and Drosophila larvae, and what does this tell us about the evolution of nervous systems?",
+    "What is the relationship between circuit stereotypy (assessed within individual) and inter-individual variability in annelid nervous systems, and how could this be tested?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:platynereis",
+    "method:connectome-reconstruction",
+    "imaging:serial-section-em",
+    "neuro:motor-circuit",
+    "neuro:development",
+    "cell-types:whole-animal"
+  ]
+}

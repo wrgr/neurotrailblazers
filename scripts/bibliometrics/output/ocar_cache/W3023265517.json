@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Predicting general cognitive ability (GCA) from brain imaging data has been a major goal of cognitive neuroscience, but resting-state functional connectivity models have had limited reliability; task-based fMRI data may offer better predictive power.",
+    "challenge": "The relationship between task-activated brain patterns and GCA is non-trivial because task performance itself varies between subjects, making it difficult to disentangle state-specific from trait-level neural signatures; moreover, the optimal tasks and brain features for GCA prediction are not established.",
+    "action": "The authors used predictive modeling to predict GCA from fMRI task activation patterns during the N-back working memory task in HCP participants, comparing performance across brain features, task conditions, and predictive modeling approaches.",
+    "resolution": "Task-activated brain patterns significantly improved GCA prediction compared to resting-state data, with the highest predictive accuracy achieved using contrast maps between high and low N-back conditions. The results support a 'treadmill test' analogy, where task stress reveals trait-level neural differences more effectively than rest.",
+    "future_work": "Identifying which tasks and brain regions provide the greatest predictive power for GCA, and whether these predictions generalize across different populations and scanner protocols, are important next steps."
+  },
+  "summaries": {
+    "beginner": "Scientists want to use brain scans to predict how well someone thinks in general. This paper found that brain scans taken while a person is doing a memory task reveal more about their thinking ability than brain scans taken when they are just resting.",
+    "intermediate": "This study tests whether task-activated fMRI patterns during the N-back working memory task predict general cognitive ability better than resting-state connectivity. Using predictive modeling on HCP data, the authors show that task contrast maps outperform resting-state models, suggesting that cognitive challenges ('treadmill tests') reveal neural signatures of GCA more effectively than rest.",
+    "advanced": "The study applies connectome-based predictive modeling to N-back fMRI contrasts and resting-state data from the HCP to predict GCA, finding that task-state patterns provide substantially higher out-of-sample predictive accuracy. The 'treadmill test' metaphor captures the key insight that stress-state brain activation better reflects trait-level cognitive capacity; methodological caveats include the limited generalizability of HCP demographics, the circularity risk when N-back performance correlates with GCA, and the uncertain biological interpretation of whole-brain predictive models."
+  },
+  "discussion_prompts": [
+    "Why might task-activated brain patterns predict cognitive ability better than resting-state connectivity, and what does this imply about the neural basis of general intelligence?",
+    "What are the risks of circular reasoning when predicting GCA from activation during a task that directly measures cognitive performance, and how can this be mitigated?",
+    "How would you evaluate whether a brain-based predictor of GCA is measuring the same construct as psychometric measures of intelligence?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "method:fmri",
+    "data:hcp",
+    "method:predictive-modeling",
+    "behavior:cognition",
+    "neuroanatomy:whole-brain",
+    "species:human"
+  ]
+}

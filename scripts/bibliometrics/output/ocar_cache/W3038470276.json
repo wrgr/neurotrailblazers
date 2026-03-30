@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "FIB-SEM (focused ion beam scanning electron microscopy) provides isotropic nanometer-resolution imaging ideal for connectomics, but the technique has historically been limited to small volumes, making whole-brain connectome acquisition impractical.",
+    "challenge": "Standard FIB-SEM systems are not designed for continuous long-duration imaging runs required for large-volume data collection, and maintaining beam stability, ion column performance, and sample position accuracy over days to weeks requires engineering innovations that go beyond typical instrument design.",
+    "action": "The authors describe engineering modifications to commercial FIB-SEM systems that enable large-volume continuous acquisition for connectomics, including hardware upgrades for long-term stability, software control systems for automated operation, and quality control procedures for unattended acquisition.",
+    "resolution": "The modified FIB-SEM systems achieved continuous, automated acquisition of large volumes at isotropic 8 nm resolution, enabling collection of the data underlying several major Drosophila connectome datasets. The approach demonstrated that FIB-SEM can be scaled to volumes relevant for insect brain connectomics.",
+    "future_work": "Further scaling to mammalian brain volumes, reducing per-voxel acquisition time, and improving sample preparation robustness for large-volume specimens are the primary remaining challenges."
+  },
+  "summaries": {
+    "beginner": "One of the most powerful microscopes for brain mapping takes images by carving thin slices with a beam of ions and then scanning them with electrons. This paper describes engineering upgrades that made this microscope run continuously for weeks, enabling the collection of data for mapping entire fly brains.",
+    "intermediate": "This paper describes hardware and software modifications to FIB-SEM instruments that enable large-volume, long-duration automated acquisition for connectomics. The engineering solutions address beam stability, sample drift, and automated operation challenges, transforming FIB-SEM from a technique suitable for small volumes into one capable of imaging insect whole-brain volumes.",
+    "advanced": "The modifications described enable continuous FIB-SEM acquisition at isotropic 8 nm voxels over multi-week runs, which was a prerequisite for the Drosophila hemibrain and full-brain connectome datasets. Key engineering contributions include improved ion column stability, automated beam-condition monitoring and correction, and robust sample preparation protocols. Throughput and scalability to mammalian volumes (which are three to five orders of magnitude larger) remain fundamental limitations of the technique as described."
+  },
+  "discussion_prompts": [
+    "What are the fundamental physical and engineering constraints that limit FIB-SEM throughput, and how close are current systems to these limits?",
+    "How does the choice of FIB-SEM versus other EM modalities (e.g., ssTEM, multibeam SEM) depend on the scientific question and target volume?",
+    "What quality control metrics and procedures are most critical for ensuring data usability in automated long-duration FIB-SEM acquisition runs?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "imaging:fib-sem",
+    "method:large-volume-em",
+    "infrastructure:hardware",
+    "species:drosophila",
+    "data:connectomics",
+    "method:automation"
+  ]
+}

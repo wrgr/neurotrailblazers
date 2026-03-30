@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Larval zebrafish are a powerful model for whole-brain functional imaging, but a connectomic atlas for the zebrafish brain that could ground synaptic-level structural understanding was lacking.",
+    "challenge": "Dense reconstruction of an entire larval zebrafish brain at synapse resolution requires imaging a much larger volume than a fly brain with SBF-SEM, followed by automated segmentation and synapse detection at scale in a vertebrate tissue with more complex cell morphologies.",
+    "action": "The authors sectioned and imaged an entire larval zebrafish brain by SBF-SEM, applied automated neuron segmentation and synapse detection pipelines, and performed targeted manual reconstruction of specific circuits to validate automated outputs.",
+    "resolution": "The study produced a whole-brain SBF-SEM dataset for larval zebrafish with automated synapse-level connectivity information, demonstrating the feasibility of vertebrate whole-brain connectomics at this scale. Specific circuits including reticular formation and spinal projection neurons were characterized.",
+    "future_work": "Improving automated segmentation accuracy for the more complex vertebrate neuropil and integrating the structural data with zebrafish whole-brain functional imaging datasets are major future goals."
+  },
+  "summaries": {
+    "beginner": "Zebrafish larvae are transparent and their brains are small enough to image entirely. This paper imaged and mapped connections in an entire zebrafish larva brain using electron microscopy, taking a big step toward having a complete vertebrate brain connectome.",
+    "intermediate": "Using SBF-SEM imaging of an entire larval zebrafish brain combined with automated segmentation and synapse detection, the authors produced the first whole-brain synaptic connectivity dataset for a vertebrate. Automated pipeline validation was performed through comparison with manually reconstructed circuits in selected regions. The dataset provides a structural foundation for integrating with zebrafish whole-brain calcium imaging atlases.",
+    "advanced": "This study represents a milestone in vertebrate connectomics by demonstrating automated whole-brain SBF-SEM acquisition and processing for larval zebrafish. The automated segmentation pipeline was adapted from Drosophila methods but required retraining for the more complex vertebrate neuropil geometry. Key caveats include lower segmentation accuracy compared to the best Drosophila results (due to larger, more varied cell morphologies), and the need for extensive proofreading of specific circuits; also, the single-individual constraint limits assessment of stereotypy."
+  },
+  "discussion_prompts": [
+    "How does the automated segmentation accuracy in the larval zebrafish brain compare to Drosophila connectome datasets of similar scale, and what are the main sources of error?",
+    "What specific circuits or anatomical questions in zebrafish neuroscience are best positioned to benefit from this whole-brain SBF-SEM dataset?",
+    "How could this structural connectome dataset be co-registered with zebrafish whole-brain light-field or two-photon functional imaging atlases to enable structure-function analysis?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:zebrafish",
+    "imaging:sbf-sem",
+    "method:automated-segmentation",
+    "method:synapse-detection",
+    "neuro:whole-brain",
+    "method:connectome-reconstruction"
+  ]
+}

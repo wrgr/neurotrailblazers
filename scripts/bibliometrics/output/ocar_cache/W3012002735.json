@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Feedback inhibition in olfactory circuits shapes the temporal dynamics and sensitivity of odor responses, but the precise circuit mechanisms \u2014 including which neurons provide feedback, to whom, and how feedback strength is regulated \u2014 were not characterized at synaptic level.",
+    "challenge": "Dissecting feedback inhibition requires identifying the few feedback interneurons in the insect olfactory system and determining their connectivity with both principal neurons and other interneurons, a task demanding a combination of electrophysiology and circuit tracing.",
+    "action": "The authors combined electrophysiology, pharmacology, optogenetics, and EM-based connectomic reconstruction in the locust antennal lobe to identify feedback inhibitory neurons, characterize their connectivity patterns, and determine how feedback inhibition is controlled by other circuit elements.",
+    "resolution": "The study defined the synaptic architecture of feedback inhibition in the locust olfactory circuit, identifying local neurons that provide feedback from the mushroom body to the antennal lobe and determining how this feedback regulates odor response gain and temporal sharpening.",
+    "future_work": "Understanding how feedback inhibition is dynamically regulated during learning and how its circuit logic generalizes across insect species are important open questions."
+  },
+  "summaries": {
+    "beginner": "When you smell something, your brain doesn't just passively receive the signal \u2014 it also sends information back to earlier processing stages to adjust sensitivity. This paper studied these feedback circuits in a grasshopper's smell system, finding out which neurons are involved and how they control the strength of odor responses.",
+    "intermediate": "Using a combination of electrophysiology, optogenetics, and connectomic reconstruction in the locust antennal lobe, the authors characterized feedback inhibitory pathways from higher brain areas (mushroom bodies) back to primary olfactory processing. They identified specific local interneurons mediating feedback, characterized their synaptic targets, and showed how feedback inhibition controls response gain and temporal dynamics of odor coding.",
+    "advanced": "This study provides a mechanistic dissection of feedback inhibition in an insect olfactory circuit, combining physiological characterization with connectomic anatomy in locust. The combination of top-down feedback pathway identification with gain-control function characterization is methodologically significant. Caveats include that the locust system differs from Drosophila in important ways (larger neurons, somewhat different circuit organization), limiting direct comparison with fly olfactory connectomes; also, the EM reconstruction was partial rather than whole-brain."
+  },
+  "discussion_prompts": [
+    "How does top-down feedback inhibition from mushroom bodies to the antennal lobe compare mechanistically to feedback in vertebrate olfactory circuits (e.g., piriform cortex to olfactory bulb)?",
+    "What computational role is served by feedback inhibition at the level of the antennal lobe, and how does it differ from lateral inhibition among local neurons within the lobe?",
+    "How might learning-induced synaptic changes in the mushroom body alter the feedback inhibition described here, and what would the functional consequence be for olfactory coding?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:locust",
+    "neuro:olfactory-system",
+    "neuro:inhibition",
+    "method:electrophysiology",
+    "method:optogenetics",
+    "method:connectome-reconstruction"
+  ]
+}

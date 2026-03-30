@@ -1,0 +1,23 @@
+{
+  "ocar": {
+    "opportunity": "Task-based neuroimaging had revealed brain activation patterns, but the organization of spontaneous brain activity during rest — and its relationship to task networks — was poorly understood.",
+    "challenge": "Resting-state fMRI signals are noisy, subject to physiological artifacts, and spatially correlated in ways that make it difficult to distinguish genuine intrinsic network organization from confounds; anticorrelated regions were especially controversial.",
+    "action": "The authors analyzed resting-state fMRI data using seed-based functional connectivity analysis with global signal regression, identifying regions whose activity was positively or negatively correlated with a task-positive seed region.",
+    "challenge": "The existence and interpretation of anticorrelated networks was highly controversial because global signal regression (used to remove noise) mathematically enforces anticorrelations across the brain, raising concerns about artifactual findings.",
+    "resolution": "The study demonstrated that the brain is organized into at least two anticorrelated large-scale networks: a task-positive network that activates during cognitive engagement and a default mode network that deactivates, suggesting intrinsic competitive organization. This framework has fundamentally shaped network neuroscience.",
+    "future_work": "Whether anticorrelations between the default mode and task-positive networks are genuine or partially induced by preprocessing choices (global signal regression) remains debated and requires methods that do not introduce artifactual anticorrelations."
+  },
+  "plain_language_summary": "Your brain is never truly at rest — even when you're not doing anything, it organizes itself into large networks that activate and deactivate together. This paper discovered that the brain has two competing networks: one that turns on during focused tasks and one (the default mode network) that turns off, like two teams alternating on a playing field.",
+  "summaries": {
+    "beginner": "Scientists found that even a resting brain organizes into large networks — groups of regions that activate or deactivate together. One network turns on when you're focused on a task; another (the default mode) turns off at the same time. This anticorrelated organization suggests the brain switches between different modes of operation.",
+    "intermediate": "Using seed-based resting-state functional connectivity analysis with global signal regression, this study identified anticorrelated task-positive and default mode networks, establishing the intrinsic dual-network organization of the human brain. This finding was foundational for resting-state fMRI as a tool for characterizing brain organization in health and disease.",
+    "advanced": "The paper is a landmark in resting-state fMRI but carries a critical methodological caveat: global signal regression, used to remove physiological noise, mathematically enforces zero-mean correlations and can introduce or amplify anticorrelations. Subsequent work showed that anticorrelations between DMN and task-positive networks persist even without global signal regression but are weaker. In connectomics, this work motivates multi-scale comparisons of functional network organization with structural connectivity from diffusion MRI or synaptic-resolution EM."
+  },
+  "discussion_prompts": [
+    "Does global signal regression artifactually create anticorrelations in resting-state fMRI, and how can this controversy be resolved methodologically?",
+    "How do the intrinsic anticorrelated networks identified here correspond to structural connectivity as measured by diffusion tractography or mesoscale tract tracing?",
+    "What is the relationship between the default mode network and the task-positive network in terms of synaptic circuit organization — can this be studied with connectomics?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:resting-state-fmri", "species:human", "imaging:fmri", "concept:default-mode-network", "concept:functional-connectivity", "method:seed-based-correlation"]
+}

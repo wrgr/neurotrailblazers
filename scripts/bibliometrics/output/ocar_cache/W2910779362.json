@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Bridging the gap between single-synapse EM resolution and brain-wide molecular imaging required a method that could simultaneously achieve nanoscale structural resolution and molecular protein specificity across large brain volumes.",
+    "challenge": "Achieving nanoscale resolution with molecular contrast in large tissue volumes requires overcoming the fundamental trade-off between field-of-view and resolution in light microscopy and EM \u2014 neither alone provides both spatial scale and molecular specificity together.",
+    "action": "The authors developed an approach combining expansion microscopy with light sheet fluorescence microscopy (ExLLSM) to achieve nanoscale-resolution, molecularly specific imaging of entire cortical columns and whole mouse brains.",
+    "resolution": "ExLLSM achieved ~60 nm effective resolution across large brain volumes with molecular specificity for synaptic proteins and cytoskeletal markers, enabling visualization of dendritic spines, synaptic protein distributions, and cell-type-specific architecture across brain regions simultaneously.",
+    "future_work": "Extending ExLLSM to more multiplexed protein targets and improving throughput for whole-brain imaging at full nanoscale resolution will be critical next steps; integration with EM registration would enable ground-truth validation of light-microscopy-based structural claims."
+  },
+  "summaries": {
+    "beginner": "Scientists invented a way to take pictures of an entire mouse brain at very high resolution while still being able to see what specific proteins are where. They did this by inflating the brain tissue like a balloon before imaging it with a sheet of laser light.",
+    "intermediate": "ExLLSM combines expansion microscopy with lattice light-sheet imaging to achieve ~60 nm effective resolution across large brain volumes with full molecular specificity. This enables simultaneous nanoscale imaging of synaptic protein distributions and cellular architecture across whole cortical columns or entire mouse brains, a capability not available by EM alone.",
+    "advanced": "ExLLSM uses ~4x linear expansion followed by lattice light-sheet fluorescence microscopy to achieve ~60 nm effective resolution, sufficient to resolve individual synaptic proteins but not quite EM-level ultrastructure. A key advantage over EM is the retention of molecular identity for multiple targets simultaneously. The approach is validated against EM for spine morphology and synaptic protein distributions. Current limitations include expansion-induced protein loss reducing labeling efficiency for low-abundance targets, light scattering at depth in expanded thick samples, and the practical limit of ~10 fluorescent channels."
+  },
+  "discussion_prompts": [
+    "How does ExLLSM's effective resolution compare to EM for resolving synaptic ultrastructure, and for what structural questions is ExLLSM sufficient versus requiring EM?",
+    "What are the main sources of structural distortion when applying expansion microscopy to a large tissue volume like a whole mouse brain, and how do these affect quantitative measurements?",
+    "How would you design a study using ExLLSM to systematically compare synaptic protein composition across brain regions, and what controls would be needed?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:expansion-microscopy",
+    "method:light-sheet-microscopy",
+    "imaging:whole-brain",
+    "imaging:nanoscale",
+    "species:mouse",
+    "region:neocortex"
+  ]
+}

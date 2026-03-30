@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The proliferating diversity of cell death modalities discovered in recent decades created terminological confusion that impeded communication across research communities and made it difficult to design and interpret experiments about cellular demise.",
+    "challenge": "Defining consistent, mechanistically grounded nomenclature for cell death pathways required integrating evidence from genetics, biochemistry, and cell biology across model systems, while distinguishing regulated from accidental death and separating overlapping pathway activities.",
+    "action": "An international Nomenclature Committee on Cell Death reviewed and updated definitions and criteria for all recognized cell death modalities, including apoptosis, necroptosis, pyroptosis, ferroptosis, autophagy-dependent cell death, and others, establishing consensus operational definitions based on molecular mechanisms.",
+    "resolution": "The 2018 recommendations established a unified nomenclature with mechanistic criteria distinguishing over a dozen regulated cell death modalities, providing a reference framework that enables reproducible reporting and cross-study comparison in cell biology and disease research.",
+    "future_work": "Newly discovered modalities continue to emerge, and determining the in vivo prevalence and pathological relevance of each pathway in human disease requires continued investigation."
+  },
+  "plain_language_summary": "Cells can die in many different ways — some orderly and programmed, others chaotic and damaging. Scientists discovered so many different cell death pathways that the names and definitions became confusing. This paper brought together an international committee to agree on clear, mechanism-based definitions for all the major ways cells can die, giving researchers a shared vocabulary.",
+  "summaries": {
+    "beginner": "Cells in our bodies are constantly dying and being replaced. Scientists have discovered many different ways cells can die — each with different molecular machinery and effects on surrounding tissue. This consensus paper standardized the names and definitions for these pathways so researchers worldwide use the same terminology, which is essential for comparing results across labs.",
+    "intermediate": "This Nomenclature Committee recommendation provides operational definitions for regulated cell death (RCD) modalities including intrinsic and extrinsic apoptosis, necroptosis, pyroptosis, ferroptosis, parthanatos, entotic cell death, NETosis, lysosome-dependent cell death, autophagy-dependent cell death, immunogenic cell death, cellular senescence, and mitotic catastrophe. Each modality is defined by molecular markers and genetic/pharmacological criteria rather than morphology alone. Relevance to neuroscience includes apoptotic and necroptotic pathways in neurodegeneration and the role of pyroptosis in neuroinflammation.",
+    "advanced": "The 2018 NCCD recommendations represent the third major update to cell death nomenclature and reflect the field's shift from morphological to mechanistic classification. Key nuances include the distinction between RCD and accidental cell death, the possibility of pathway switching under genetic or pharmacological perturbation, and the recognition that cell death modalities can be immunogenic or tolerogenic with distinct downstream inflammatory consequences. In connectomics-adjacent neuroscience, these distinctions matter for interpreting neuronal loss in disease models, synaptic pruning mechanisms, and the role of microglia-mediated phagocytosis in circuit refinement."
+  },
+  "discussion_prompts": [
+    "How do the mechanistic criteria established in this nomenclature change the interpretation of earlier cell death studies that relied solely on morphological criteria?",
+    "Several cell death modalities (e.g., autophagy-dependent cell death, apoptosis) share molecular components — how can researchers cleanly assign a cell death event to one modality?",
+    "In the context of neurodegeneration, which regulated cell death pathways are most therapeutically actionable based on current evidence, and what does this nomenclature framework contribute to that question?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:cell-biology", "review:nomenclature", "cell-types:apoptosis", "method:genetics"]
+}

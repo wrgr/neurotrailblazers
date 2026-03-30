@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Large-volume electron microscopy reconstruction requires collecting thousands of ultrathin serial sections from tissue, a process that was entirely manual and represented a major bottleneck limiting the scale of connectomics experiments.",
+    "challenge": "Manual section collection is labor-intensive, prone to human error, subject to fatigue-related quality variation, and fundamentally incompatible with the thousands to millions of sections needed for whole-brain EM connectomics.",
+    "action": "The authors described automation of the ultrathin serial section collection process for large-volume TEM reconstruction, developing a system that mechanically controls section collection onto tape or grids with minimal human intervention.",
+    "resolution": "Automated serial section collection dramatically increased throughput and consistency compared to manual methods, making large-volume TEM reconstruction feasible. This development was a key enabling step for landmark connectomics projects, including the automated tape collection (ATUM) approach.",
+    "future_work": "Further automation of the entire sample preparation and imaging pipeline — from block trimming to grid loading to imaging — remains an active engineering challenge for achieving true high-throughput connectomics."
+  },
+  "plain_language_summary": "To map brain circuits with an electron microscope, you need to slice brain tissue into thousands of slices thinner than a human hair — and collect each one perfectly. This paper describes automating this incredibly tedious process, replacing hours of skilled manual work per session with a machine that can collect sections reliably overnight.",
+  "summaries": {
+    "beginner": "Electron microscopy brain mapping requires cutting tissue into thousands of ultra-thin slices and collecting each one carefully. This paper describes a machine that does this automatically, replacing slow and error-prone manual collection. This automation was essential for making large-scale brain mapping projects possible.",
+    "intermediate": "Automated tape-based section collection (ATUM) enables continuous collection of ultrathin sections onto a moving tape substrate, allowing offline imaging and section inventory management. This approach decouples section collection from imaging, enabling quality control and re-imaging of failed sections — a critical advantage over online collection methods that require immediate perfect imaging.",
+    "advanced": "The ATUM approach described here became the basis for the large-scale serial-section TEM connectomics pipelines used at Harvard and Janelia. The key engineering challenges involved controlling section thickness consistency, preventing electrostatic charging of the tape substrate, and maintaining section order and integrity over long runs. Compared to FIB-SEM (which mills and images simultaneously), ATUM-SEM offers much larger cross-sectional area at the cost of slightly thicker and less consistent sections. The tradeoff between these approaches is central to current debates about optimal imaging strategies for cubic-millimeter connectomics volumes."
+  },
+  "discussion_prompts": [
+    "What are the tradeoffs between ATUM-SEM and FIB-SEM for large-volume connectomics, in terms of imaging volume, section quality, throughput, and cost?",
+    "How does automated section collection change the quality control challenges in serial-section EM, and what new failure modes does automation introduce?",
+    "What remaining bottlenecks in the sample preparation and imaging pipeline limit the scale of connectomics experiments today?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": ["method:serial-section-tem", "method:atum", "imaging:electron-microscopy", "method:automation", "connectomics:sample-prep", "scale:large-volume"]
+}

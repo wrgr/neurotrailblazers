@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Complex networks pervade biology, technology, and society, but a conceptual synthesis of their key properties — small-world behavior, scale-free degree distributions, community structure, network dynamics — was needed to guide scientific exploration across fields including neuroscience.",
+    "challenge": "The field of complex networks was fragmented across physics, computer science, biology, and social science, with different terminologies and methodologies applied to similar phenomena, making cross-disciplinary synthesis and application to neural circuits non-trivial.",
+    "action": "Strogatz authored an accessible review synthesizing the key discoveries in complex network science — small-world networks, scale-free networks, synchronization, network dynamics — using concrete examples from biology (neural networks, metabolic networks), technology (power grids, internet), and social systems.",
+    "resolution": "The review established a unified framework for thinking about complex networks that bridged disciplines and made graph-theoretic concepts accessible to biologists, including neuroscientists. It became one of the most cited papers in network science and directly influenced how connectome analysis was framed.",
+    "future_work": "The review highlighted open questions including understanding network dynamics (not just structure), the relationship between topology and function, and the challenge of understanding networks that change over time — all directly relevant to connectomics."
+  },
+  "plain_language_summary": "This review article is like a guided tour of the science of networks — explaining why so many different systems (brains, the internet, social groups) share the same surprising mathematical properties. It helped scientists across fields realize they were all studying versions of the same problem, and gave neuroscientists a shared vocabulary for describing how neurons are interconnected. Reading it is essential background for anyone analyzing connectome data.",
+  "summaries": {
+    "beginner": "This influential review article explains the science of networks — how systems made of connected parts (like neurons in the brain) have surprising mathematical properties in common with the internet or social networks. It introduces key ideas like small-world connectivity (short paths between any two nodes), scale-free hubs, and synchronization in networks of oscillators. These concepts are now fundamental to how neuroscientists analyze brain connectivity data.",
+    "intermediate": "Strogatz's review synthesizes small-world network theory (Watts-Strogatz model), scale-free networks (Barabasi-Albert), synchronization in coupled oscillators (Kuramoto model), and their applications to biological networks including the C. elegans neural connectome. For connectomics, these concepts provide the analytical vocabulary for characterizing wiring diagrams: clustering coefficient, characteristic path length, degree distribution, and modularity are all standard metrics derived from this tradition.",
+    "advanced": "This review is a landmark in establishing network science as a unified discipline, bridging dynamical systems (synchronization), graph theory (topology), and statistical physics (phase transitions in random graphs). For connectomics, a key insight is Strogatz's emphasis on the interplay between network structure and dynamics — a challenge that remains central today: we can now measure connectome topology precisely, but predicting circuit dynamics from static graphs requires models of neuron and synapse biophysics that are still poorly constrained. The review's discussion of synchronization is particularly relevant to understanding oscillatory brain states and how specific wiring motifs promote or suppress synchrony."
+  },
+  "discussion_prompts": [
+    "Which properties of complex networks described in this review are most clearly expressed in neural connectomes, and which are least well supported by current data?",
+    "How does the relationship between network structure and dynamics — a central open question in this review — manifest in current challenges for connectomics-based circuit modeling?",
+    "What would it mean for a neural circuit to be 'small-world,' and what functional advantages might this topology confer?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": ["method:network-analysis", "method:graph-theory", "phase:orientation", "review:complex-networks", "graph-analysis:small-world", "graph-analysis:scale-free"]
+}

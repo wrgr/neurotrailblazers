@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Many real-world networks — from power grids to social networks to nervous systems — appeared to fall between the extremes of perfectly regular lattices and purely random graphs, yet no mathematical framework captured this intermediate regime.",
+    "challenge": "Characterizing networks required metrics that could simultaneously capture local clustering (neighbors of a node are likely connected) and short global path lengths, properties that prior models could not reproduce together.",
+    "action": "Watts and Strogatz introduced the 'small-world' network model by starting with a regular ring lattice and randomly rewiring a small fraction of edges. They measured clustering coefficient and average path length as functions of rewiring probability and compared these to real networks from neuroscience, power engineering, and social science.",
+    "resolution": "They demonstrated that a tiny amount of random rewiring dramatically reduces average path length while preserving high local clustering, creating a 'small-world' regime. Real networks including the C. elegans neural network fell into this regime, suggesting a universal organizing principle with implications for efficient signal propagation.",
+    "future_work": "Understanding how small-world topology arises from developmental or evolutionary constraints, and its causal role in neural computation, remains an active research area."
+  },
+  "plain_language_summary": "This famous paper asked: why can you reach almost anyone on Earth through six degrees of separation, even though most people only know their local neighbors? The authors showed that adding just a few long-range shortcuts to an otherwise local network creates a 'small world' — a network that is both tightly clustered and easy to traverse — and found the same pattern in the wiring of C. elegans neurons.",
+  "summaries": {
+    "beginner": "Most networks — including the brain — are not random but also not perfectly regular. Watts and Strogatz showed that a small fraction of random long-range connections can dramatically shrink the average distance between any two nodes while keeping local structure intact. The C. elegans nervous system was one of the real-world examples that fit this 'small-world' pattern.",
+    "intermediate": "Watts and Strogatz (1998) introduced the small-world network model, showing that interpolating between regular and random graphs via random edge rewiring produces a regime with simultaneously high clustering coefficient C and low characteristic path length L. They validated the model against three empirical networks, including the C. elegans connectome, finding all three exhibit C >> C_random and L ≈ L_random. This work provided the first formal framework for analyzing connectome topology in graph-theoretic terms.",
+    "advanced": "The Watts–Strogatz model is foundational for connectome graph analysis; its two summary statistics (clustering coefficient, path length) remain standard benchmarks for comparing neural networks across species. Caveats include the model's assumption of equal degree for all nodes (contrast with scale-free distributions in many biological networks) and the difficulty of separating topological properties from circuit function. In connectomics, small-world metrics have been computed for fly, worm, and mammalian cortical networks, though comparisons are sensitive to thresholding choices and edge-weight definitions."
+  },
+  "discussion_prompts": [
+    "The C. elegans connectome was used as an empirical example of a small-world network in 1998 — how has our understanding changed now that we have whole-brain connectomes for larger organisms?",
+    "How sensitive are small-world metrics (clustering coefficient, path length) to the choice of synapse-weight threshold when applied to weighted connectomes like the Drosophila hemibrain?",
+    "Does small-world topology in a connectome imply anything specific about the computational properties or robustness of that circuit, or is it purely a descriptive finding?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": ["method:graph-theory", "species:c-elegans", "graph-analysis:small-world", "graph-analysis:clustering", "scale:whole-brain"]
+}

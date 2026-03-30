@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Connectomics required reconstructing neural circuits from terabytes of electron microscopy images, but purely manual reconstruction was too slow (years per cubic millimeter) and purely automated approaches had error rates too high for reliable circuit analysis.",
+    "challenge": "Automated neuron segmentation from EM images consistently failed at thin processes, membrane boundaries with low contrast, and mitochondria\u2014causing merge errors that broke connectivity\u2014while correction required expert neuroanatomists spending more time on proofreading than the automation saved.",
+    "action": "Chklovskii, Vitaladevuni, and Scheffer review the semi-automated reconstruction pipeline for the Drosophila medulla connectome project, describing how human annotators and automated segmentation algorithms collaborate through a proofreading interface. They analyze error statistics, annotation throughput, and the tradeoffs between automated segmentation quality and subsequent human correction effort.",
+    "resolution": "The semi-automated approach, combining agglomeration-based automated segmentation with structured human proofreading using CATMAID-like interfaces, achieves reconstruction throughput orders of magnitude greater than purely manual tracing. The authors demonstrate a complete reconstruction workflow and discuss how error rates compound through large circuits, motivating continued improvement in both segmentation and proofreading infrastructure.",
+    "future_work": "Achieving error rates low enough that proofreading becomes optional for large-scale connectome projects\u2014through either better automated segmentation or novel targeted correction strategies\u2014was identified as the central remaining challenge."
+  },
+  "summaries": {
+    "beginner": "Reconstructing neural circuits from microscope images takes enormous effort. This paper describes a system where computers do the first pass at tracing neuron boundaries and humans then fix the mistakes\u2014a teamwork approach that makes circuit reconstruction practical at the scale needed for real neuroscience questions.",
+    "intermediate": "Chklovskii et al. review the semi-automated reconstruction pipeline combining automated EM segmentation (watershed and agglomeration algorithms) with human proofreading interfaces. They analyze the distribution of segmentation errors, estimate proofreader throughput, and discuss how error rates propagate through a synaptic connectivity graph, arguing that even modest automated error rates can significantly distort connectome analyses if not corrected.",
+    "advanced": "This review is notable for providing a quantitative framework for connectome reconstruction quality, formalizing the relationship between automated segmentation error rates and the expected number of breaks and merges per neuron reconstruction. The analysis motivates subsequent work on error detection rather than blind reconstruction, and on prioritizing proofreading effort based on circuit importance. The architectural patterns described here\u2014shared image databases, structured annotation protocols, merge/split-based proofreading\u2014influenced the design of CATMAID, DVID, and Neuroglancer-based workflows used in subsequent large-scale connectome projects."
+  },
+  "discussion_prompts": [
+    "How do merge errors versus split errors in automated segmentation differ in their impact on connectome analysis, and which type is more damaging?",
+    "What strategies have been most effective for prioritizing proofreading effort in large connectome projects to maximize circuit accuracy per hour of human effort?",
+    "How has deep learning changed the error profile of automated EM segmentation compared to the watershed/agglomeration approach described in this paper?"
+  ],
+  "dimension": "proofreading",
+  "tags": [
+    "method:semi-automated-reconstruction",
+    "tool:CATMAID",
+    "topic:proofreading",
+    "topic:segmentation-errors",
+    "species:drosophila",
+    "review:methods"
+  ]
+}

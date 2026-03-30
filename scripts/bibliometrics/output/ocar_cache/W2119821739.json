@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Machine learning for classification and regression required algorithms that could generalize well to unseen data without overfitting, particularly in high-dimensional spaces with limited training examples. Existing methods like neural networks were prone to overfitting and lacked theoretical guarantees.",
+    "challenge": "Constructing a classifier that maximizes the margin between classes while minimizing structural risk requires solving a quadratic programming problem that scales with the number of training examples. Extending binary linear classifiers to nonlinear and multi-class problems required theoretical and computational innovations.",
+    "action": "Cortes and Vapnik developed Support Vector Machines (SVMs), which find the maximum-margin separating hyperplane in feature space (or a kernel-induced feature space), formulating the problem as convex quadratic programming and demonstrating the kernel trick for implicit mapping to high-dimensional spaces.",
+    "resolution": "SVMs demonstrated state-of-the-art performance on handwritten digit recognition and other benchmark tasks, with strong theoretical guarantees via VC dimension theory. SVMs became a foundational machine learning method used extensively in neuroscience for decoding neural population activity, automated segmentation in connectomics, and classification of EM-detected structures.",
+    "future_work": "Deep learning has largely superseded SVMs for tasks with abundant training data, though SVMs remain competitive for small-sample problems and have interpretable geometric structure."
+  },
+  "plain_language_summary": "SVMs are a type of machine learning algorithm that finds the widest possible 'gap' between two categories of data, like drawing the thickest possible line separating apples from oranges on a graph. This approach became widely used in neuroscience for tasks like classifying neuron types from microscopy images or decoding brain activity patterns.",
+  "summaries": {
+    "beginner": "Support Vector Machines (SVMs) are a classic machine learning method that classifies data by finding the best boundary between categories. They were widely used in neuroscience for identifying cell types in images and for decoding information from brain activity recordings.",
+    "intermediate": "SVMs find the maximum-margin hyperplane separating data classes in a (potentially kernel-mapped) feature space, with strong generalization guarantees from structural risk minimization theory. In connectomics and neuroscience, SVMs have been applied to classification of EM-segmented structures, synapse detection, and neural decoding — often in settings with limited labeled training data where their small-sample efficiency is advantageous.",
+    "advanced": "The SVM optimization problem (maximizing margin subject to classification constraints) reduces to a convex QP solvable by SMO or other methods, with solution sparsity guaranteed by the support vector representation. The kernel trick enables implicit mapping to high-dimensional feature spaces without explicit computation. In connectomics, SVMs were used in early automated segmentation pipelines for membrane detection and synapse classification; they have largely been superseded by deep convolutional networks but remain relevant for problems with limited training labels and where interpretable decision boundaries are valued."
+  },
+  "discussion_prompts": [
+    "In what connectomics or neuroscience tasks do SVMs still outperform or offer advantages over deep learning approaches, and why?",
+    "How does the choice of kernel function in an SVM relate to assumptions about the feature space structure of neural data or image features?",
+    "What is the relationship between the SVM maximum-margin principle and regularization in deep neural networks trained for connectomics segmentation?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:machine-learning", "method:svm", "method:classification", "connectomics", "neuroai", "segmentation"]
+}

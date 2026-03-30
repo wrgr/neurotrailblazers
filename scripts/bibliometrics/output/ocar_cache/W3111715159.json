@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The Drosophila central complex (CX) is a key navigation center that supports flexible behaviors over long timescales, but the circuit mechanisms underlying its functions required a complete connectome that had not previously been available.",
+    "challenge": "The CX is a deep brain structure with densely packed neurons forming complex recurrent circuits; mapping its complete connectivity requires EM-based reconstruction at synaptic resolution, which is technically demanding, and interpreting the circuit's function requires integrating the wiring with functional and behavioral data.",
+    "action": "The authors described the first complete EM-based connectome of the Drosophila CX, covering all neurons and circuits at synaptic resolution, and then performed graph-theoretic analysis to identify network motifs relevant to navigation and action selection.",
+    "resolution": "The CX connectome revealed network motifs including ring attractor architectures, winner-take-all circuits, and modular organization suited for flexible navigation and context-dependent action selection. The data provided a structural basis for understanding how the CX integrates diverse inputs to generate directed locomotion.",
+    "future_work": "Functional validation of the identified circuit motifs, and computational modeling of how the CX implements navigation and decision-making behaviors, are critical next steps."
+  },
+  "summaries": {
+    "beginner": "Flies can navigate and make decisions about where to go, and a brain region called the central complex is the control center for this. This paper mapped all the connections in the central complex using an electron microscope and found circuit patterns that explain how the brain guides movement and makes choices.",
+    "intermediate": "This study presents the first complete EM-based connectome of the Drosophila central complex, enabling identification of circuit motifs at synaptic resolution. Network analysis reveals ring attractor structures, winner-take-all circuits, and modular organization that provide a structural basis for flexible navigation, spatial orientation, and context-dependent action selection.",
+    "advanced": "The complete CX connectome enables graph-theoretic analysis of its circuit motifs, revealing how the CX's columnar and layered architecture implements computations for heading representation, path integration, and action selection. Key findings include the identification of specific recurrent motifs predicted by attractor network models of navigation; caveats include the reliance on connectivity data alone to infer function, and the challenge of disambiguating circuit motifs that could implement multiple distinct computations."
+  },
+  "discussion_prompts": [
+    "What is the relationship between the ring attractor motifs identified in the CX connectome and the functional heading representation observed with calcium imaging?",
+    "How does the modular organization of the CX facilitate context-dependent action selection, and what would a minimal circuit model of this computation look like?",
+    "What aspects of CX function cannot be predicted from its connectome alone, and what additional data would be needed to fully understand its computational role?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "imaging:em",
+    "neuroanatomy:central-complex",
+    "method:graph-analysis",
+    "behavior:navigation",
+    "method:connectomics"
+  ]
+}

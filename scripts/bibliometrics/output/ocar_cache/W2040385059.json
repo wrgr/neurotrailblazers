@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The degradation of dentin organic matrix by host enzymes was underappreciated as a factor in dental caries progression and the failure of dental bonding restorations, leaving a preventive and therapeutic gap in cariology.",
+    "challenge": "Identifying the specific roles of matrix metalloproteinases (MMPs) and cysteine cathepsins in dentin degradation required distinguishing their activities from bacterial enzymatic action and understanding how salivary and dentin-embedded enzyme pools interact with demineralized collagen.",
+    "action": "Tjäderhane et al. reviewed recent findings on collagenolytic enzyme activity in dentinal caries and erosion, synthesizing evidence for salivary and dentin-resident MMP and cathepsin roles in matrix degradation, inhibition strategies, and their implications for adhesive restoration longevity.",
+    "resolution": "The review established that inhibition of endogenous collagenolytic enzymes can preserve dentin matrix integrity and improve composite restoration longevity, and raised the possibility that caries-affected dentin matrix degradation compromises biological remineralization.",
+    "future_work": "Developing clinically practical enzyme inhibitors for dentin preservation and better understanding the enzymatic basis for inter-individual variation in caries susceptibility are key open directions."
+  },
+  "plain_language_summary": "Tooth decay involves not just bacteria dissolving minerals, but your own enzymes slowly breaking down the protein scaffold left behind. This review explains how enzymes normally used by cells for maintenance become destructive when released by acid damage, weakening both natural remineralization and dental fillings. While unrelated to neuroscience, this paper appears in the dataset likely due to citation network overlap.",
+  "summaries": {
+    "beginner": "When teeth get cavities, acid dissolves the mineral, but there is still a collagen scaffold underneath. This review explains that your own body's enzymes then degrade this scaffold, making it harder for the tooth to repair itself and causing dental fillings to fail over time. Understanding these enzymes could lead to better preventive treatments.",
+    "intermediate": "This review covers the roles of MMPs (particularly MMP-2, -8, -9, -20) and cysteine cathepsins (B, K, L) in dentinal collagen degradation during caries and erosion. The clinical implication — inhibiting these enzymes with chlorhexidine, benzalkonium chloride, or galardin as adjuncts to adhesive bonding — has practical relevance for restoration longevity. The connection to connectomics is tangential; this paper appears in the citation network due to shared citation contexts rather than direct methodological relevance.",
+    "advanced": "This paper is a citation network neighbor rather than a core connectomics reference. The MMP and cathepsin biology reviewed here has indirect relevance to neuroscience through ECM remodeling roles in synaptic plasticity (MMP-9 regulates synaptic structure at hippocampal synapses) and neuroinflammation. In the connectomics context, any relevance would be through synaptic ECM remodeling rather than cariology. Researchers encountering this paper in a connectomics reading list should understand it as a network artifact — likely included due to high citation overlap in composite scoring rather than topical relevance."
+  },
+  "discussion_prompts": [
+    "MMP-9 is implicated in both dentin degradation (covered in this review) and synaptic plasticity in the brain — what does this dual role suggest about the broader biology of matrix metalloproteinases?",
+    "This paper appears in a connectomics citation network — what does its inclusion reveal about the limitations of citation-based bibliometric methods for identifying relevant literature?",
+    "How might the enzyme inhibition strategies discussed for dentin preservation translate conceptually to ECM remodeling control in neural tissue?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["review:cell-biology", "method:biochemistry", "cell-types:ECM-remodeling"]
+}

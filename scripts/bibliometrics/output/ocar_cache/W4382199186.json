@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Whole-brain connectomes require comprehensive cell type annotations to be interpretable, and quantifying how stereotyped circuit connectivity is across multiple individuals requires comparing connectomes \u2014 something not previously done at whole-brain scale.",
+    "challenge": "Annotating ~140,000 neurons across a whole-brain Drosophila connectome requires scalable community-based approaches, and comparing connectivity across multiple individuals requires methods to align cell types across datasets with different segmentation histories.",
+    "action": "The authors coordinated a large community annotation effort to assign cell type labels to neurons in the FlyWire Drosophila whole-brain connectome, and compared cell type connectivity patterns across multiple available Drosophila EM datasets (FlyWire, hemibrain, and others) to quantify circuit stereotypy.",
+    "resolution": "The study produced a comprehensive cell type atlas for the Drosophila brain and demonstrated high stereotypy of connectivity patterns across individuals, establishing that the fly connectome is a reliable species-level reference. Quantitative measures of stereotypy were computed for different circuit classes.",
+    "future_work": "Extending multi-connectome comparisons to different sexes, ages, and genetic backgrounds would reveal sources of biological variability in circuit organization."
+  },
+  "summaries": {
+    "beginner": "Every fly brain has about 140,000 neurons. This paper organized a huge team effort to label each neuron's type in a whole-brain fly connectome, then compared multiple fly brain connectomes to see how similar the wiring is between individual flies.",
+    "intermediate": "This study combined community annotation of the FlyWire whole-brain Drosophila connectome with multi-connectome comparison to quantify circuit stereotypy. By assigning cell type labels to ~140,000 neurons and comparing connectivity patterns across the FlyWire and hemibrain datasets, the authors demonstrated high inter-individual consistency of synaptic connectivity, validating the use of a single connectome as a species reference.",
+    "advanced": "The paper addresses two complementary challenges: scalable cell type annotation for a whole-brain connectome and principled multi-connectome comparison for stereotypy analysis. The community annotation effort leveraged expert and computational approaches to assign types across all neuron classes. The stereotypy quantification used paired cell type connectivity profiles to compute similarity metrics across datasets, revealing high reproducibility for most circuit classes with notable exceptions in specific brain regions. Caveats include differences in completeness and proofreading depth between compared datasets."
+  },
+  "discussion_prompts": [
+    "Which brain regions or circuit classes showed the highest and lowest connectivity stereotypy across individuals, and what biological factors might explain this variation?",
+    "What criteria were used to define 'cell types' in the annotation effort, and how were ambiguous cases (e.g., neurons that don't fit established type categories) handled?",
+    "How does the multi-connectome comparison approach handle differences in reconstruction completeness and proofreading quality between datasets?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "dataset:flywire",
+    "cell-types:annotation",
+    "method:multi-connectome",
+    "neuro:stereotypy",
+    "tool:community-annotation"
+  ]
+}

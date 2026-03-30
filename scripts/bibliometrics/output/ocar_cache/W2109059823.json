@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Dopamine neurons in the midbrain were known to respond to rewards, but their precise firing patterns relative to reward prediction and timing were unclear, leaving their computational role in learning ambiguous.",
+    "challenge": "Linking single-neuron activity in non-human primates to formal learning theory required carefully controlled behavioral paradigms and quantitative analysis, and the temporal precision of dopamine signaling in natural behavior was difficult to characterize.",
+    "action": "Schultz reviews electrophysiological recordings of dopamine neurons in monkeys performing classical and operant conditioning tasks. He systematically maps how dopamine neuron firing changes as animals learn that sensory stimuli predict rewards, using well-controlled timing of CS and US delivery.",
+    "resolution": "Dopamine neurons fire in response to unexpected rewards (positive prediction error), cease firing when predicted rewards are omitted (negative prediction error), and transfer their response from the reward to the earliest predictive cue as learning proceeds. This pattern is formally equivalent to the temporal difference (TD) error signal in reinforcement learning algorithms.",
+    "future_work": "How dopamine signals are decoded by postsynaptic striatal and prefrontal neurons, and whether all dopamine neurons are functionally homogeneous or encode distinct signals, remained open questions at the time of writing."
+  },
+  "summaries": {
+    "beginner": "Dopamine neurons in the brain act like a teaching signal: they get excited when something unexpectedly good happens, stop responding when something good was expected but didn't arrive, and shift their excitement to whatever predicted the reward as learning progresses. This paper reviews the experimental evidence for this elegant 'reward prediction error' signal.",
+    "intermediate": "Schultz reviews single-unit recordings in macaque VTA and SNc showing that dopamine neurons encode reward prediction error (RPE): firing increases for unexpected rewards, decreases below baseline for omitted predicted rewards, and shifts response to predictive cues after conditioning. The striking correspondence between these firing patterns and temporal difference (TD) error in reinforcement learning provided a biological substrate for model-based learning theory.",
+    "advanced": "This review synthesizes Schultz's landmark recording studies in macaques, demonstrating that midbrain dopamine neurons compute an RPE consistent with Sutton-Barto TD(\u03bb). Key observations\u2014phasic ~100 ms bursts to unexpected reward, sub-baseline 'dip' to reward omission, and cue-transfer with learning\u2014have been replicated across species and preparation types. Subsequent work with optogenetics and fiber photometry has revealed heterogeneity in dopamine neuron response profiles (including non-RPE coding cells), and the synaptic mechanisms translating phasic dopamine onto striatal D1/D2 plasticity are still being worked out, with implications for circuit-level models of action selection."
+  },
+  "discussion_prompts": [
+    "What is the evidence that dopamine RPE signals are causally necessary for reward learning, rather than merely correlating with it?",
+    "How do recent findings of dopamine neuron heterogeneity (e.g., value-coding, salience-coding subpopulations) modify the canonical RPE model described in this review?",
+    "How might connectomic reconstruction of dopaminergic synaptic targets in the striatum help explain how RPE signals are decoded and used for plasticity?"
+  ],
+  "dimension": "neuroanatomy",
+  "tags": [
+    "topic:dopamine",
+    "topic:reward-prediction-error",
+    "topic:reinforcement-learning",
+    "species:macaque",
+    "topic:basal-ganglia",
+    "review:foundational"
+  ]
+}

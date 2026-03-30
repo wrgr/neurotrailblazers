@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Functional neuroimaging studies using SPM required automated methods to label activated brain regions with anatomical names, enabling comparison across studies and facilitating meta-analyses. Manual labeling was subjective, non-reproducible, and impractical at scale.",
+    "challenge": "Mapping activation coordinates in standard MNI space to anatomical labels requires a reference parcellation that is both anatomically accurate and registered to the MNI template brain, with sufficient spatial granularity to be informative at the voxel level.",
+    "action": "The authors developed Automated Anatomical Labeling (AAL), a macroscopic parcellation of the MNI single-subject brain into 90 cortical and subcortical regions based on sulcal landmarks, implemented as a toolbox for SPM. They validated the parcellation against published anatomical atlases.",
+    "resolution": "AAL provided the first automated, reproducible system for labeling fMRI activation loci with anatomical names in MNI space. It became the most widely used brain parcellation in functional neuroimaging and is extensively used in connectomics for parcellating tractography and fMRI connectivity data into region-of-interest based connectivity matrices.",
+    "future_work": "Extensions to finer-grained parcellations, multi-modal atlas integration, and individual subject parcellation have been developed, addressing limitations of the single-subject-based AAL atlas."
+  },
+  "plain_language_summary": "When brain imaging experiments find active regions, scientists need to know what those regions are called. This paper created a tool called AAL that automatically assigns anatomical names to locations in brain scans by matching them to a labeled map of the brain in standard coordinates — like a GPS system that tells you the name of the street you are on.",
+  "summaries": {
+    "beginner": "When scientists look at brain scans to see which parts of the brain activated during an experiment, they need a way to automatically label those regions with their anatomical names. This paper created AAL, a standard map of 90 brain regions that can automatically label activated areas in brain imaging studies.",
+    "intermediate": "AAL provides a 90-region macroscopic parcellation of the MNI standard brain derived from sulcal landmarks, implemented as an SPM toolbox for automatic anatomical labeling of activation foci. The parcellation has been extensively used to define nodes in functional and structural connectivity matrices in systems-level connectomics and neuroimaging studies.",
+    "advanced": "AAL is a deterministic, voxel-based parcellation of the MNI152 standard brain into 90 regions, covering cortex and subcortical structures, derived from manual sulcal tracing on the MNI single-subject brain. As a node definition scheme for connectivity matrices in tractography, resting-state fMRI, and graph-theoretic analyses, AAL has shaped much of the literature on human brain network organization. Key limitations include single-subject derivation, coarse granularity relative to functional parcellations (e.g., Glasser360), and the treatment of anatomical boundaries as connectivity boundaries — an assumption of uncertain validity."
+  },
+  "discussion_prompts": [
+    "How does the choice of brain parcellation (AAL vs. functional vs. cytoarchitectonic atlases) affect the topology and interpretation of connectivity matrices derived from tractography or fMRI?",
+    "What are the consequences of using a population-average parcellation like AAL for individual subject connectivity analyses?",
+    "How would connectomics-informed parcellations based on synaptic connectivity patterns differ from anatomical parcellations like AAL, and what would they reveal?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:brain-parcellation", "tool:aal", "species:human", "neuroimaging", "method:atlas", "graph-analysis"]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Diffuse traumatic brain injury (dTBI) causes cognitive deficits often attributed to loss of synaptic connectivity, but quantifying synapse loss across multiple brain regions at the nanoscale after dTBI required new imaging approaches.",
+    "challenge": "Measuring synapse density changes after dTBI across multiple spatially distributed regions simultaneously requires multiscale imaging methods that can bridge from whole-brain down to individual synapse resolution without losing regional context.",
+    "action": "The authors developed SEQUIN (SEquencing QUantification of Imaging data in Neural tissue), a multiscale imaging method combining confocal and superresolution microscopy to count and characterize central synapses across large volumes, and applied it to mouse models of diffuse TBI.",
+    "resolution": "SEQUIN revealed significant, spatially heterogeneous loss of synaptic connectivity after dTBI, with region-specific patterns of synapse loss that correlated with behavioral deficits. The method provides a quantitative bridge between mesoscale brain imaging and nanoscale synapse analysis.",
+    "future_work": "Applying SEQUIN to additional TBI models, timepoints, and treatment conditions, and extending it to synaptic subtype-specific analyses, would broaden its utility for understanding injury-induced circuit changes."
+  },
+  "summaries": {
+    "beginner": "A concussion or blast injury to the brain can cause lasting problems, partly because it damages the connections between neurons. This paper developed a new microscopy method to count synaptic connections across large brain regions at once, then used it to measure how much synapse loss occurs after a brain injury.",
+    "intermediate": "The authors developed SEQUIN, a multiscale imaging platform combining optical microscopy with computational synapse quantification, to measure synaptic connectivity changes across multiple brain regions after diffuse traumatic brain injury in mice. SEQUIN revealed region-specific and time-dependent patterns of synapse loss that are not detectable by conventional histological approaches.",
+    "advanced": "SEQUIN addresses a key gap in TBI research by enabling quantitative, spatially resolved synapse counting that is faster and more scalable than EM while retaining single-synapse sensitivity. The method uses synaptic marker colocalization at superresolution to identify synapse-sized puncta, enabling regional comparisons across whole-brain sections. Caveats include that marker colocalization may not perfectly capture functional synaptic contacts and cannot resolve the ultrastructural changes (e.g., active zone restructuring) detectable by EM."
+  },
+  "discussion_prompts": [
+    "How does SEQUIN's synapse quantification compare to EM-based methods in terms of accuracy, throughput, and ability to detect synapse subtypes?",
+    "What patterns of regional synapse loss after dTBI were most unexpected, and how do they relate to known patterns of axonal injury and behavioral deficits in TBI models?",
+    "Could SEQUIN be applied to human post-mortem tissue to study synapse loss in TBI or other neurological conditions, and what would be the main technical challenges?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "species:mouse",
+    "method:superresolution",
+    "neuro:synapse",
+    "neuro:tbi",
+    "method:multiscale-imaging",
+    "tool:sequin"
+  ]
+}

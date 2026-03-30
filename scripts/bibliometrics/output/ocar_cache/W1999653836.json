@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Structural and functional connectivity data from neuroimaging was accumulating rapidly, but a principled mathematical framework for characterizing the topology of brain networks\u2014and relating topology to function\u2014was lacking.",
+    "challenge": "Brain networks are neither purely random nor purely regular lattices; applying graph theory to neural connectivity data required adapting complex network theory concepts (small-world, scale-free, modularity) to the specific properties and noise characteristics of neuroimaging data.",
+    "action": "Bullmore and Sporns provide a comprehensive review of graph-theoretic analysis applied to structural (diffusion MRI tractography) and functional (fMRI, MEG/EEG) brain networks. They define key metrics (clustering coefficient, path length, modularity, betweenness centrality, rich club), discuss network null models, and review findings across species and conditions.",
+    "resolution": "Human brain networks consistently show small-world topology (high clustering, short path lengths), modular organization aligned with known functional systems, and a rich club of highly connected hub regions in association cortex. These properties emerge consistently across imaging modalities and are altered predictably in neurological and psychiatric disorders.",
+    "future_work": "Linking graph-theoretic network properties to specific synaptic circuit mechanisms, developing more principled null models for brain graphs, and extending analyses to weighted directed networks remained major methodological challenges."
+  },
+  "summaries": {
+    "beginner": "The brain can be thought of as a network where brain regions are nodes connected by edges representing their neural connections. This review explains how mathematical tools from network science\u2014originally developed to analyze the internet or social networks\u2014can reveal important principles of brain organization.",
+    "intermediate": "Bullmore and Sporns systematically review graph-theoretic analysis of structural and functional brain networks, covering small-world topology, scale-free degree distributions, modularity, and hub identification. They discuss methodological issues including thresholding, null models, and the sensitivity of graph metrics to imaging artifact, synthesizing findings across species, imaging modalities, and neurological conditions.",
+    "advanced": "This review is foundational for the field of network neuroscience, integrating Watts-Strogatz small-world theory, Barab\u00e1si-Albert scale-free network concepts, and community detection algorithms into a unified framework for brain connectivity analysis. Key contributions include systematic discussion of the sensitivity of graph metrics to network construction choices (parcellation scheme, threshold, edge weighting) and the 'rich club' concept for hub identification. The framework directly applies to both macroscale connectomes (dMRI tractography) and microscale connectomes (EM synapse graphs), though the latter require more sophisticated directed network analysis methods."
+  },
+  "discussion_prompts": [
+    "How does the choice of parcellation scheme and connectivity threshold affect graph-theoretic metrics derived from fMRI or diffusion MRI data?",
+    "What is the 'rich club' organization of the human connectome, which regions constitute it, and what does rich-club membership predict about vulnerability to brain disorders?",
+    "How do graph-theoretic properties of macroscale connectomes (diffusion MRI) compare to those of microscale connectomes (EM), and what does this comparison reveal about brain network organization across scales?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "topic:graph-theory",
+    "topic:small-world-networks",
+    "topic:connectome-analysis",
+    "method:network-analysis",
+    "imaging:diffusion-MRI",
+    "review:methods"
+  ]
+}

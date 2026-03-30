@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "The cerebral cortex is central to human cognition, yet the specific genetic variants that shape its structure — including thickness, surface area, and regional organization — were largely unknown prior to large-scale genomic studies.",
+    "challenge": "Cortical traits are polygenic and highly heritable, but identifying individual genetic loci requires extremely large sample sizes; coordinating brain imaging and genotyping data across dozens of cohorts introduces harmonization and statistical challenges.",
+    "action": "The authors conducted a genome-wide association study (GWAS) of global and regional cortical surface area and thickness using MRI data from over 50,000 participants aggregated through the ENIGMA and other consortia, identifying associated genetic loci.",
+    "resolution": "The study identified hundreds of genetic loci associated with cortical structure, with distinct genetic architectures for surface area versus thickness and regionally specific effects. Many loci implicate genes involved in neuronal development and differentiation.",
+    "future_work": "Translating genetic associations into mechanistic insights requires functional follow-up in model systems and integration with single-cell transcriptomic data from developing human cortex."
+  },
+  "plain_language_summary": "Your brain's outer layer — the cortex — varies in size and thickness between people, and some of that variation is genetic. This massive study analyzed the genomes of 50,000 people alongside their brain scans and found hundreds of specific DNA spots linked to cortical structure, like finding the parts list for building a brain.",
+  "summaries": {
+    "beginner": "Scientists used brain scans and genetic data from tens of thousands of people to find which parts of the genome influence the size and thickness of the brain's outer layer. They found hundreds of genetic locations that affect cortical structure, and many are linked to genes active during brain development.",
+    "intermediate": "This GWAS meta-analysis of global and regional cortical MRI phenotypes identified loci with distinct genetic architectures for surface area (driven by progenitor expansion) versus thickness. The study leveraged ENIGMA harmonization protocols across 50+ cohorts, highlighting the value of large-scale consortium approaches for detecting effects too small to find in single studies.",
+    "advanced": "The study dissects the genetic architecture of cortical morphometry at unprecedented scale, finding that surface area and thickness have largely non-overlapping genetic determinants consistent with the radial unit hypothesis. Key caveats include the predominance of European ancestry participants limiting generalizability, potential confounding from MRI acquisition heterogeneity across sites, and the difficulty of linking GWAS hits to causal variants and cell types without functional validation. The loci overlap substantially with genes expressed in radial glia and excitatory neurons in developing cortex."
+  },
+  "discussion_prompts": [
+    "Why do surface area and cortical thickness have largely distinct genetic architectures, and what does this imply about the developmental processes they reflect?",
+    "How can GWAS hits for cortical structure be functionally validated — what model systems or experimental approaches are most informative?",
+    "What are the implications of the identified loci for understanding neurological and psychiatric disorders that affect cortical structure?"
+  ],
+  "dimension": "neuroanatomy",
+  "tags": ["method:gwas", "species:human", "imaging:mri", "scale:large-cohort", "data:genetics", "neuroanatomy:cortex"]
+}

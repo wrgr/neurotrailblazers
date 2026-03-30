@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "EM connectomes reveal structural synaptic connections but are blind to the chemical identity of neurotransmitters and neuropeptides, missing a key functional dimension needed to predict whether connections are excitatory, inhibitory, or modulatory.",
+    "challenge": "Systematically assigning neurotransmitter identity to all neurons in the Drosophila brain requires combining gene expression data with connectome cell type information across many neurons \u2014 a data integration challenge spanning multiple experimental modalities.",
+    "action": "The authors systematically mapped neurotransmitter and neuropeptide expression across Drosophila brain neurons using transcriptomic, immunohistochemical, and genetic tools, then co-registered this chemical transmission map with the structural connectome to create a 'chemoconnectome.'",
+    "resolution": "The chemoconnectome assigned neurotransmitter/neuropeptide identities to major cell type classes in the Drosophila brain, enabling prediction of the sign (excitatory/inhibitory/modulatory) of structural connections from EM data. The resource revealed unexpected diversity in chemical transmission across brain regions.",
+    "future_work": "Future efforts should extend single-cell transcriptomic profiling to assign transmitter identity to all individual neurons, and develop tools for predicting receptor identity at each synapse to fully specify the chemical nature of connectome connections."
+  },
+  "summaries": {
+    "beginner": "A brain wiring map from electron microscopy shows connections between nerve cells but not what chemical signal is sent. This study figured out which chemical messenger each type of fly brain cell uses, then combined this with the wiring map to predict whether each connection is exciting or calming.",
+    "intermediate": "Chemoconnectomics integrates systematic neurotransmitter and neuropeptide mapping with structural connectivity data in Drosophila, enabling chemical annotation of connectome connections. This resource enables prediction of connection signs for EM-based circuit analyses, addressing a key limitation of structural-only connectomes.",
+    "advanced": "The chemoconnectome integrates immunohistochemistry, transgenic reporter lines, and transcriptomic data to assign neurotransmitter/neuropeptide identity across the Drosophila brain, then registers these assignments onto connectome-defined cell types. This enables functional sign prediction for structural connections but with caveats: co-transmission (multiple neurotransmitters per neuron), receptor expression diversity (same transmitter can be excitatory or inhibitory), and volume transmission by neuropeptides mean that chemical identity does not unambiguously determine connection function."
+  },
+  "discussion_prompts": [
+    "What are the fundamental limitations of using neurotransmitter identity alone to predict the functional sign of a connectome connection, and how does receptor expression at the postsynaptic cell complicate the interpretation?",
+    "How does the chemoconnectome approach complement EM-based structural connectomics, and what scientific questions require the integration of both datasets?",
+    "What single-cell RNA sequencing strategies would be most efficient for achieving complete neurotransmitter identity assignment for all neurons in the Drosophila brain?"
+  ],
+  "dimension": "cell-types",
+  "tags": [
+    "species:drosophila",
+    "method:chemoconnectomics",
+    "topic:neurotransmitters",
+    "topic:neuropeptides",
+    "method:transcriptomics",
+    "connectomics:functional-annotation"
+  ]
+}

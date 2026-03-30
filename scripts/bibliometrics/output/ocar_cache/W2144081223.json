@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Structural biologists solving protein structures by X-ray crystallography needed software to build atomic models into electron density maps. The process of fitting and refining protein models required interactive, intuitive visualization and model-building tools that could handle the complexity of macromolecular structures.",
+    "challenge": "Fitting atomic coordinates to electron density maps requires simultaneously satisfying stereochemical constraints, optimizing fit to density, and handling model building for thousands of atoms — a task that demands tight integration of visualization, geometry editing, and real-space refinement in an interactive environment.",
+    "action": "Emsley and Cowtan developed Coot, a molecular graphics application providing interactive tools for model building, validation, fitting, and refinement of macromolecular crystal structures. They implemented algorithms for automated loop fitting, rotamer analysis, and map-model validation within a responsive 3D visualization environment.",
+    "resolution": "Coot became the dominant software for macromolecular model building in X-ray crystallography and cryo-EM, used by structural biologists worldwide. Its combination of automated tools and manual control made it the standard for producing high-quality structural models deposited in the Protein Data Bank.",
+    "future_work": "Integration with cryo-EM workflows, deep learning-based model building (e.g., AlphaFold-initialized models), and automated validation pipelines continue to extend Coot's capabilities."
+  },
+  "plain_language_summary": "When scientists solve protein 3D structures using X-ray crystallography, they need software to build detailed atomic models that fit their data. Coot is the equivalent of a 3D sculpting tool for molecular models — a program that lets structural biologists interactively fit and refine the positions of thousands of atoms to match experimental data.",
+  "summaries": {
+    "beginner": "To understand how proteins work, scientists determine their 3D shapes using X-ray crystallography. Coot is the software they use to build and refine atomic models by hand, fitting thousands of atomic positions to match the experimental data. It has become the standard tool for this kind of structural work.",
+    "intermediate": "Coot provides an interactive environment for macromolecular model building in X-ray and cryo-EM electron density maps, implementing real-space refinement, rotamer fitting, loop building, and model validation. While primarily a structural biology tool, it is cited in connectomics contexts as a reference for interactive 3D model-fitting workflows analogous to manual neuron proofreading.",
+    "advanced": "Coot's model-building workflow — iterative cycles of automated fitting, interactive manual correction, and validation — is conceptually analogous to the proofreading workflows in EM connectomics, where automated segmentation is followed by human-guided error correction against raw image data. The underlying challenge of fitting a model to noisy, incomplete volumetric data subject to geometric constraints appears in both crystallographic refinement and neuron reconstruction. Coot is a high-citation off-domain reference in connectomics bibliographies due to cross-citation in methodology papers."
+  },
+  "discussion_prompts": [
+    "What parallels exist between the model-building and refinement workflow in Coot and the proofreading workflow used in EM connectomics, and what can connectomics learn from structural biology's approach?",
+    "How does the transition from purely manual to AI-assisted model building in structural biology (e.g., AlphaFold integration with Coot) map onto the trajectory of automated proofreading in connectomics?",
+    "Why might a molecular graphics tool like Coot appear in connectomics citation networks, and what does this tell us about the structure of scientific citation across subfields?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["tool:coot", "structural-biology", "method:model-building", "off-domain", "proofreading", "citation-network-artifact"]
+}

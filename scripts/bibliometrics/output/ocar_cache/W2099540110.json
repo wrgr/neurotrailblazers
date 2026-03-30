@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Biological image analysis required accessible, free software capable of standardized, reproducible quantitative measurements, but no single tool served the full community of biologists working with diverse imaging modalities and analysis tasks.",
+    "challenge": "Maintaining and extending a decades-old image analysis platform (NIH Image → ImageJ) while ensuring compatibility across operating systems, supporting user-contributed plugins, and enabling reproducible scripted workflows required significant ongoing software engineering investment.",
+    "action": "Schneider, Rasband, and Eliceiri reviewed 25 years of NIH Image and ImageJ development, documenting the evolution of the platform's capabilities, plugin ecosystem, macro scripting language, and adoption patterns across biology including neuroscience and connectomics.",
+    "resolution": "The review established ImageJ as the most widely used biological image analysis software, with the plugin architecture enabling specialized tools for neuroscience (e.g., Simple Neurite Tracer, TrakEM2) and connecting to the broader Fiji distribution, directly enabling standard connectomics preprocessing workflows.",
+    "future_work": "Scalability to petabyte datasets and native integration with deep learning inference pipelines remain ongoing development priorities for ImageJ and its successors."
+  },
+  "plain_language_summary": "ImageJ is the microscope image analysis software used in almost every biology lab worldwide. This paper reviews 25 years of its history — from NIH Image on early Macintoshes to the modern plugin-rich ImageJ2. For connectomics, ImageJ (especially through its Fiji distribution with TrakEM2) was the primary tool for managing, viewing, and annotating large EM datasets for nearly a decade.",
+  "summaries": {
+    "beginner": "ImageJ is free software that biologists use to measure and analyze microscope images — counting cells, measuring brightness, or tracing neuron outlines. This paper reviewed its 25-year history and widespread adoption. For connectomics, ImageJ's plugin system allowed researchers to add specialized tools for tracing neurons and managing large EM volumes.",
+    "intermediate": "ImageJ's plugin architecture enabled the development of specialized connectomics tools: TrakEM2 (large-scale image data management and neuron annotation), Simple Neurite Tracer (interactive neuron tracing), and the BigDataViewer (efficient navigation of terabyte EM volumes). The Fiji distribution bundled these into a standardized environment. The 25-year review documents how community-contributed tools lowered the barrier for connectomics reconstruction in labs worldwide.",
+    "advanced": "ImageJ's enduring relevance in connectomics stems from its open API enabling domain-specific plugins and its macro/scripting system allowing reproducible preprocessing pipelines. Key limitations for modern connectomics: Java-based architecture limits performance on multi-terabyte volumes, and the plugin ecosystem's inconsistent maintenance creates reproducibility risks. Modern cloud-based connectomics tools (neuroglancer, CAVE, CloudVolume) have largely replaced ImageJ for large-scale data management, but Fiji remains widely used for small-scale analysis, preprocessing, and quality control. The paper's ~70,000 citations reflect universal adoption across biology rather than specific connectomics use."
+  },
+  "discussion_prompts": [
+    "What roles does ImageJ/Fiji still play in modern connectomics workflows, and where has it been replaced by cloud-native or Python-based tools?",
+    "The ImageJ plugin ecosystem has hundreds of contributed tools with varying maintenance status — how should a connectomics lab evaluate plugin quality before incorporating it into a published analysis pipeline?",
+    "How does ImageJ's macro and scripting system support reproducible image analysis, and what are its limitations compared to modern Python-based workflows for connectomics data?"
+  ],
+  "dimension": "infrastructure",
+  "tags": ["tool:imagej", "tool:fiji", "method:image-analysis", "infrastructure:open-source", "method:segmentation", "imaging:electron-microscopy"]
+}

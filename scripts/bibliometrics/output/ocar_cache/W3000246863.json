@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Large-scale EM connectomes like the hemibrain contain millions of synapses across thousands of neurons, but accessing and querying this data for circuit analysis required specialized database tools that did not exist, preventing wide community use.",
+    "challenge": "Building a database and query system for connectomics data requires handling both the graph structure of neuronal connectivity and the spatial geometry of neuron morphologies, while providing interfaces accessible to biologists without programming expertise.",
+    "action": "The authors developed NeuPrint, a graph database platform for EM connectomics data built on Neo4j, implementing neuron- and synapse-centric data models and providing both a web interface and an API for programmatic queries of connectivity, cell type, and morphological data.",
+    "resolution": "NeuPrint successfully deployed the hemibrain connectome as a public resource queried by hundreds of researchers worldwide, enabling systematic circuit analysis, cell type characterization, and connectivity comparisons through both GUI and API access. It established the standard for connectome data sharing and analysis in the field.",
+    "future_work": "Future development should improve support for multi-dataset cross-queries (e.g., comparing across hemibrain, FAFB, and larval connectomes), add native support for volumetric morphology data, and develop standardized connectivity metrics to facilitate cross-species comparisons."
+  },
+  "summaries": {
+    "beginner": "Having a giant brain wiring diagram is only useful if scientists can easily ask questions like 'which cells connect to this specific neuron?' NeuPrint is a website and database system that lets researchers query the fly brain connectome in seconds, making the data accessible to the whole community.",
+    "intermediate": "NeuPrint provides a Neo4j graph database and web/API interface for the hemibrain and other EM connectome datasets, enabling efficient queries for connectivity, cell type, and morphological properties. Its Python API (neuprint-python) and web frontend (neuprint.janelia.org) have been widely adopted, making large-scale connectome data routinely accessible for circuit analysis.",
+    "advanced": "NeuPrint implements a dual-model graph schema capturing both neuron-level connectivity (weighted directed adjacency) and synapse-level spatial data within a Neo4j property graph database. Custom Cypher query templates enable common connectivity analyses without database expertise, while the Python API supports complex programmatic queries. A key design decision is the pre-computation of body-level connectivity metrics at import time, enabling fast queries but requiring re-computation when reconstructions are updated. Limitations include fixed versioning (each database load is a snapshot) and challenges in querying across multiple datasets with different reconstruction conventions."
+  },
+  "discussion_prompts": [
+    "What are the trade-offs between a graph database like Neo4j versus a relational database for storing and querying connectomics data, and for what query types does each perform best?",
+    "How should connectome databases like NeuPrint handle uncertainty in reconstruction \u2014 for example, how should low-confidence connections or incomplete neurons be represented and queried?",
+    "What standardized connectivity metrics and data schemas would enable meaningful cross-species and cross-dataset comparisons through NeuPrint-like systems?"
+  ],
+  "dimension": "infrastructure",
+  "tags": [
+    "tool:neuprint",
+    "infrastructure:database",
+    "infrastructure:graph-db",
+    "connectomics:data-access",
+    "dataset:hemibrain",
+    "tool:analysis-platform"
+  ]
+}

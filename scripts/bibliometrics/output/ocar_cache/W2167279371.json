@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Biological image analysis required diverse, specialized algorithms — from segmentation to registration to measurement — but no single free, open-source platform integrated them with a consistent interface accessible to biologists without programming expertise.",
+    "challenge": "Building a unified platform required integrating hundreds of disparate ImageJ plugins, establishing scripting and macro capabilities, ensuring reproducibility across operating systems, and maintaining active community development while keeping the tool accessible to non-programmers.",
+    "action": "Schindelin et al. developed Fiji (Fiji Is Just ImageJ), an open-source distribution of ImageJ that bundles an updatable ecosystem of community-contributed plugins with a consistent scripting interface, automated dependency management, and standardized documentation.",
+    "resolution": "Fiji became the de facto standard for bioimage analysis, enabling reproducible workflows in electron microscopy, fluorescence imaging, and connectomics through plugins for image registration, segmentation, 3D visualization, and neuron tracing. Its TrakEM2 plugin became central to connectomics reconstruction pipelines.",
+    "future_work": "Scaling Fiji workflows to petabyte EM volumes and integrating deep-learning inference natively remain active areas of development."
+  },
+  "plain_language_summary": "Biological microscopy produces enormous numbers of images, and analyzing them requires many different specialized tools. Fiji is a free software package that bundles hundreds of image-analysis tools together with a point-and-click interface and a scripting system, so biologists can process and measure images without writing complex code from scratch. It became standard in labs worldwide, including those doing connectomics.",
+  "summaries": {
+    "beginner": "When scientists take microscope images, they need software to measure, align, and analyze them. Fiji is a free program that bundles many image analysis tools together into one place. It is used in nearly every biology lab, including those reconstructing brain circuits from electron microscopy images.",
+    "intermediate": "Fiji is an ImageJ distribution that packages a curated ecosystem of plugins, scripting languages (Jython, BeanShell, ImageJ macro), and an update site framework. For connectomics, key plugins include TrakEM2 for large-scale image data management and neuron annotation, BigDataViewer for petabyte-scale data navigation, and Trainable Weka Segmentation for semi-automated structure segmentation. The paper established a community-driven development model that has since been replicated by many open neuroscience tools.",
+    "advanced": "Fiji's architecture — a plugin manager built on ImageJ's SciJava framework — enabled rapid integration of new algorithms while preserving backward compatibility. In the connectomics pipeline, Fiji/TrakEM2 was the primary environment for manual annotation in projects such as the Drosophila larva CNS and early vertebrate connectomics. Modern pipelines increasingly bypass Fiji for Python-based tools (CATMAID, neuroglancer, CloudVolume) due to scalability, but Fiji remains essential for preprocessing, quality control, and analysis of individual datasets. The paper's citation count (~70,000) reflects its pervasive use across all of biology."
+  },
+  "discussion_prompts": [
+    "How has the role of Fiji in connectomics workflows changed as datasets have grown from gigabytes to petabytes — what tasks does it still excel at and where has it been replaced?",
+    "Fiji's community plugin ecosystem is both a strength (breadth of tools) and a weakness (variable documentation and maintenance) — how should labs evaluate plugin quality for use in publication-grade analysis?",
+    "What lessons from Fiji's open-source development model have been adopted by newer neuroscience tools like CATMAID, neuroglancer, or napari?"
+  ],
+  "dimension": "infrastructure",
+  "tags": ["tool:fiji", "tool:imagej", "method:image-analysis", "tool:trakEM2", "method:segmentation", "infrastructure:open-source"]
+}

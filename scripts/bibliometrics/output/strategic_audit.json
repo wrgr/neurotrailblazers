@@ -1,0 +1,3306 @@
+{
+  "A_expert_in_corpus": [
+    {
+      "doi": "10.1038/nn.4135",
+      "title": "'Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity'",
+      "dimension": "mri-connectomics",
+      "external_citations": 2967,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1016/j.neuroimage.2010.06.041",
+      "title": "'Network-based statistic: identifying differences in brain networks'",
+      "dimension": "network-analysis",
+      "external_citations": 2779,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/nrn3901",
+      "title": "The connectomics of brain disorders",
+      "dimension": "mri-connectomics",
+      "external_citations": 1757,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/s41467-017-01285-x",
+      "title": "The challenge of mapping the human connectome based on diffusion tractography",
+      "dimension": "mri-connectomics",
+      "external_citations": 1402,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/nrn.2017.85",
+      "title": "'Neuronal cell-type classification: challenges, opportunities and the path forward'",
+      "dimension": "cell-types",
+      "external_citations": 921,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/sdata.2017.181",
+      "title": "An open resource for transdiagnostic research in pediatric mental health",
+      "dimension": "mri-connectomics",
+      "external_citations": 692,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1101/cshperspect.a005587",
+      "title": "Ultrastructure of synapses in the mammalian brain",
+      "dimension": "neuroanatomy",
+      "external_citations": 428,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1002/nbm.3752",
+      "title": "'Building connectomes using diffusion MRI: why, how and but'",
+      "dimension": "mri-connectomics",
+      "external_citations": 311,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1162/netn_a_00075",
+      "title": "Distance-dependent consensus thresholds for generating group-representative structural brain networks",
+      "dimension": "mri-connectomics",
+      "external_citations": 208,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/nmeth.4206",
+      "title": "Automated synaptic connectivity inference for volume electron microscopy",
+      "dimension": "proofreading",
+      "external_citations": 152,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/nmeth.3292",
+      "title": "Ultrastructurally-smooth thick partitioning and volume stitching for large-scale connectomics",
+      "dimension": "imaging",
+      "external_citations": 151,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1016/j.conb.2014.01.019",
+      "title": "Toward large-scale connectome reconstructions",
+      "dimension": "proofreading",
+      "external_citations": 83,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/s41586-024-07939-3",
+      "title": "Connectome-constrained networks predict neural activity across the fly brain",
+      "dimension": "neuroai",
+      "external_citations": 83,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1101/2023.01.23.525290",
+      "title": "Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex",
+      "dimension": "cell-types",
+      "external_citations": 73,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1038/s41592-022-01711-z",
+      "title": "Local shape descriptors for neuron segmentation",
+      "dimension": "computer-vision-ml",
+      "external_citations": 51,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1016/j.conb.2019.04.005",
+      "title": "'Connectal coding: discovering the structures linking cognitive phenotypes to individual histories'",
+      "dimension": "network-analysis",
+      "external_citations": 25,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1101/2022.12.15.520299",
+      "title": "Tools for comprehensive reconstruction and analysis of Drosophila motor circuits",
+      "dimension": "neuroanatomy",
+      "external_citations": 25,
+      "action": "promote"
+    },
+    {
+      "doi": "10.3389/fninf.2015.00020",
+      "title": "An automated images-to-graphs framework for high resolution connectomics",
+      "dimension": "data-storage",
+      "external_citations": 25,
+      "action": "promote"
+    },
+    {
+      "doi": "10.1162/netn_a_00287",
+      "title": "Bisected graph matching improves automated pairing of bilaterally homologous neurons from connectomes",
+      "dimension": "network-analysis",
+      "external_citations": 7,
+      "action": "promote"
+    },
+    {
+      "doi": "10.3389/fninf.2022.828458",
+      "title": "Connectomics annotation metadata standardization for increased accessibility and queryability",
+      "dimension": "data-storage",
+      "external_citations": 5,
+      "action": "promote"
+    }
+  ],
+  "A_expert_missing": [
+    {
+      "doi": "10.1146/annurev.physiol.010908.163140",
+      "title": "Dendritic Spine Dynamics",
+      "dimension": "neuroanatomy",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1109/cvpr.2019.00214",
+      "title": "Biologically-constrained graphs for long-range interactions in EM volume segmentation",
+      "dimension": "proofreading",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1016/j.neuron.2009.02.021",
+      "title": "'Reading the book of memory: Sparse sampling versus dense mapping of connectomes'",
+      "dimension": "proofreading",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/nrn1519",
+      "title": "Interneurons of the neocortical inhibitory system",
+      "dimension": "cell-types",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41586-018-0654-5",
+      "title": "Shared and distinct transcriptomic cell types across neocortical areas",
+      "dimension": "cell-types",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41586-021-03950-0",
+      "title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+      "dimension": "cell-types",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1109/tpami.2018.2858744",
+      "title": "Large scale image segmentation with structured loss based on partial differential equations",
+      "dimension": "computer-vision-ml",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1007/978-3-030-00934-2_36",
+      "title": "Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain",
+      "dimension": "computer-vision-ml",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1109/tmi.2012.2211864",
+      "title": "Learning context cues for synapse segmentation",
+      "dimension": "computer-vision-ml",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1093/bioinformatics/btt529",
+      "title": "'CATMAID: Collaborative annotation toolkit for massive amounts of image data'",
+      "dimension": "data-storage",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1101/2021.03.31.437929",
+      "title": "'OME-Zarr: a cloud-optimized bioimaging file format with international community support'",
+      "dimension": "data-storage",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41467-023-37180-x",
+      "title": "'Catalyzing next-generation AI: The role of neuroscience'",
+      "dimension": "neuroai",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41593-019-0520-2",
+      "title": "A deep learning framework for neuroscience",
+      "dimension": "neuroai",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41583-020-0277-3",
+      "title": "Backpropagation and the brain",
+      "dimension": "neuroai",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41583-020-00395-8",
+      "title": "If deep learning is the answer, what is the question?",
+      "dimension": "neuroai",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1002/mrm.1910340409",
+      "title": "Functional connectivity in the motor cortex of resting human brain using echo-planar MRI",
+      "dimension": "mri-connectomics",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1073/pnas.1814462116",
+      "title": "On a two-truths phenomenon in spectral graph clustering",
+      "dimension": "network-analysis",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1093/comnet/cnu026",
+      "title": "Learning latent block structure in weighted networks",
+      "dimension": "network-analysis",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1109/tpami.2015.2424894",
+      "title": "'Graph matching: Relax at your own risk'",
+      "dimension": "network-analysis",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1101/2023.03.14.532674",
+      "title": "NEURD \u2014 automated proofreading and feature extraction for connectomics",
+      "dimension": "neuroanatomy",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1101/2024.02.10.579780",
+      "title": "Cellpose 3 \u2014 one-click image restoration for improved cellular segmentation",
+      "dimension": "computer-vision-ml",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.21105/joss.07023",
+      "title": "'CAVEclient: A Python client for interacting with the Connectome Annotation Versioning Engine'",
+      "dimension": "data-storage",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41586-024-08040-5",
+      "title": "A large-scale wiring diagram of a neural circuit in the larval Drosophila brain",
+      "dimension": "proofreading",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1038/s41586-024-07402-3",
+      "title": "Cell-type-specific synaptic connectivity in cortical circuits revealed by EM connectomics",
+      "dimension": "cell-types",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1101/2024.07.24.604974",
+      "title": "Quantitative census of local somatic features in mouse visual cortex",
+      "dimension": "cell-types",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1016/j.conb.2024.102837",
+      "title": "Generative network models of connectomes across development",
+      "dimension": "network-analysis",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.1101/2025.01.15.633120",
+      "title": "CODEX \u2014 connectome-derived exemplars for neural network design",
+      "dimension": "neuroai",
+      "external_citations": 0,
+      "action": "fetch+add"
+    },
+    {
+      "doi": "10.5244/c.29.81",
+      "title": "'VESICLE: Volumetric Evaluation of Synaptic Interfaces using Computer Vision at Large Scale'",
+      "dimension": "computer-vision-ml",
+      "external_citations": 0,
+      "action": "fetch+add"
+    }
+  ],
+  "B_high_indegree_omissions": [
+    {
+      "openalex_id": "https://openalex.org/W2254436645",
+      "title": "Large-volume en-bloc staining for electron microscopy-based connectomics",
+      "year": 2015,
+      "external_citations": 354,
+      "corpus_in_degree": 171,
+      "composite_score": 0.026024578176867413,
+      "neuro_signal": 2
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136395604",
+      "title": "Whole-brain anatomical networks: Does the choice of nodes matter?",
+      "year": 2009,
+      "external_citations": 1200,
+      "corpus_in_degree": 167,
+      "composite_score": 0.01843686530781687,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2612078078",
+      "title": "Whole-brain serial-section electron microscopy in larval zebrafish",
+      "year": 2017,
+      "external_citations": 401,
+      "corpus_in_degree": 154,
+      "composite_score": 0.022808805512115723,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W1979426401",
+      "title": "Small-World Brain Networks",
+      "year": 2006,
+      "external_citations": 2647,
+      "corpus_in_degree": 150,
+      "composite_score": 0.02553904506855479,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2014022174",
+      "title": "The connectomics of brain disorders",
+      "year": 2015,
+      "external_citations": 1757,
+      "corpus_in_degree": 143,
+      "composite_score": 0.024899944219336795,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2111902267",
+      "title": "Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity",
+      "year": 2015,
+      "external_citations": 2967,
+      "corpus_in_degree": 141,
+      "composite_score": 0.02335563491661414,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2009650955",
+      "title": "Hierarchical Organization of Human Cortical Networks in Health and Schizophrenia",
+      "year": 2008,
+      "external_citations": 1265,
+      "corpus_in_degree": 141,
+      "composite_score": 0.01787258853378083,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2005476331",
+      "title": "Network hubs in the human brain",
+      "year": 2013,
+      "external_citations": 2223,
+      "corpus_in_degree": 137,
+      "composite_score": 0.021209055980487238,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W4232515155",
+      "title": "Iterative expansion microscopy",
+      "year": 2017,
+      "external_citations": 396,
+      "corpus_in_degree": 137,
+      "composite_score": 0.02268822298409658,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W1990574575",
+      "title": "High-cost, high-capacity backbone for global brain communication",
+      "year": 2012,
+      "external_citations": 830,
+      "corpus_in_degree": 130,
+      "composite_score": 0.011754872481272945,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2161515775",
+      "title": "Brain Graphs: Graphical Models of the Human Brain Connectome",
+      "year": 2011,
+      "external_citations": 1175,
+      "corpus_in_degree": 126,
+      "composite_score": 0.01730615694513186,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2566875547",
+      "title": "Visual projection neurons in the Drosophila lobula link feature detection to distinct behavioral programs",
+      "year": 2016,
+      "external_citations": 329,
+      "corpus_in_degree": 125,
+      "composite_score": 0.0245170386906823,
+      "neuro_signal": 2
+    },
+    {
+      "openalex_id": "https://openalex.org/W2161493176",
+      "title": "The hubs of the human connectome are generally implicated in the anatomy of brain disorders",
+      "year": 2014,
+      "external_citations": 1188,
+      "corpus_in_degree": 124,
+      "composite_score": 0.01694203236914555,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2142029338",
+      "title": "Dynamic reconfiguration of human brain networks during learning",
+      "year": 2011,
+      "external_citations": 1779,
+      "corpus_in_degree": 123,
+      "composite_score": 0.015543596621254225,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2033078279",
+      "title": "Identification and Classification of Hubs in Brain Networks",
+      "year": 2007,
+      "external_citations": 1192,
+      "corpus_in_degree": 122,
+      "composite_score": 0.02519851156701899,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2902929870",
+      "title": "Imaging cellular ultrastructures using expansion microscopy (U-ExM)",
+      "year": 2018,
+      "external_citations": 570,
+      "corpus_in_degree": 120,
+      "composite_score": 0.02534277739987335,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W1608731182",
+      "title": "High\u2010resolution, high\u2010throughput imaging with a multibeam scanning electron microscope",
+      "year": 2015,
+      "external_citations": 260,
+      "corpus_in_degree": 119,
+      "composite_score": 0.02532528855172372,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2803790834",
+      "title": "Large Scale Image Segmentation with Structured Loss Based Deep Learning for Connectome Reconstruction",
+      "year": 2018,
+      "external_citations": 218,
+      "corpus_in_degree": 118,
+      "composite_score": 0.017053447094954426,
+      "neuro_signal": 3
+    },
+    {
+      "openalex_id": "https://openalex.org/W2096672020",
+      "title": "Resting-state fMRI in the Human Connectome Project",
+      "year": 2013,
+      "external_citations": 1693,
+      "corpus_in_degree": 117,
+      "composite_score": 0.02148351178675561,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2146406922",
+      "title": "Graph analysis of the human connectome: Promise, progress, and pitfalls",
+      "year": 2013,
+      "external_citations": 792,
+      "corpus_in_degree": 114,
+      "composite_score": 0.016587453364332077,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133015986",
+      "title": "Small-World Anatomical Networks in the Human Brain Revealed by Cortical Thickness from MRI",
+      "year": 2007,
+      "external_citations": 1348,
+      "corpus_in_degree": 114,
+      "composite_score": 0.020770956288617408,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2472582738",
+      "title": "Nanoscale imaging of RNA with expansion microscopy",
+      "year": 2016,
+      "external_citations": 421,
+      "corpus_in_degree": 114,
+      "composite_score": 0.025262570208518596,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2949152168",
+      "title": "The wiring diagram of a glomerular olfactory system",
+      "year": 2016,
+      "external_citations": 219,
+      "corpus_in_degree": 114,
+      "composite_score": 0.02446783952287111,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1756731880",
+      "title": "SegEM: Efficient Image Analysis for High-Resolution Connectomics",
+      "year": 2015,
+      "external_citations": 139,
+      "corpus_in_degree": 107,
+      "composite_score": 0.023771924555925382,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2015334431",
+      "title": "The Rich Club of the<i>C. elegans</i>Neuronal Connectome",
+      "year": 2013,
+      "external_citations": 345,
+      "corpus_in_degree": 107,
+      "composite_score": 0.018996438928293932,
+      "neuro_signal": 3
+    },
+    {
+      "openalex_id": "https://openalex.org/W2071608556",
+      "title": "Function in the human connectome: Task-fMRI and individual differences in behavior",
+      "year": 2013,
+      "external_citations": 1671,
+      "corpus_in_degree": 106,
+      "composite_score": 0.024645173123055968,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2005821483",
+      "title": "BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics",
+      "year": 2013,
+      "external_citations": 4215,
+      "corpus_in_degree": 106,
+      "composite_score": 0.023454730033139505,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2765915208",
+      "title": "Genetic Reagents for Making Split-GAL4 Lines in <i>Drosophila</i>",
+      "year": 2018,
+      "external_citations": 258,
+      "corpus_in_degree": 106,
+      "composite_score": 0.017248966310605778,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2127070446",
+      "title": "Schizophrenia, neuroimaging and connectomics",
+      "year": 2012,
+      "external_citations": 739,
+      "corpus_in_degree": 105,
+      "composite_score": 0.013608190108296354,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2165985389",
+      "title": "Efficiency of Functional Brain Networks and Intellectual Performance",
+      "year": 2009,
+      "external_citations": 1112,
+      "corpus_in_degree": 105,
+      "composite_score": 0.01335069402276283,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2139713088",
+      "title": "Processing seismic ambient noise data to obtain reliable broad-band surface wave dispersion measurements",
+      "year": 2007,
+      "external_citations": 2392,
+      "corpus_in_degree": 104,
+      "composite_score": 0.027508448760056547,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2592023542",
+      "title": "Automated synaptic connectivity inference for volume electron microscopy",
+      "year": 2017,
+      "external_citations": 152,
+      "corpus_in_degree": 102,
+      "composite_score": 0.023127805323688997,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2002429803",
+      "title": "The Small World of the Cerebral Cortex",
+      "year": 2004,
+      "external_citations": 1385,
+      "corpus_in_degree": 102,
+      "composite_score": 0.026922668878348967,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2112151839",
+      "title": "A Weighted and Directed Interareal Connectivity Matrix for Macaque Cerebral Cortex",
+      "year": 2012,
+      "external_citations": 948,
+      "corpus_in_degree": 100,
+      "composite_score": 0.023130494886067263,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2126838454",
+      "title": "Network-based statistic: Identifying differences in brain networks",
+      "year": 2010,
+      "external_citations": 2779,
+      "corpus_in_degree": 100,
+      "composite_score": 0.01702824466429347,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2034184519",
+      "title": "Exploring the third dimension: Volume electron microscopy comes of age",
+      "year": 2014,
+      "external_citations": 353,
+      "corpus_in_degree": 99,
+      "composite_score": 0.02701422078794426,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2148601705",
+      "title": "From sensation to cognition",
+      "year": 1998,
+      "external_citations": 3103,
+      "corpus_in_degree": 99,
+      "composite_score": 0.024032132626244727,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2766639217",
+      "title": "The challenge of mapping the human connectome based on diffusion tractography",
+      "year": 2017,
+      "external_citations": 1402,
+      "corpus_in_degree": 98,
+      "composite_score": 0.01447586235772342,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2083707522",
+      "title": "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics",
+      "year": 2015,
+      "external_citations": 151,
+      "corpus_in_degree": 98,
+      "composite_score": 0.014051980077044229,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W1975821649",
+      "title": "Mapping Human Cortical Areas <i>In Vivo</i> Based on Myelin Content as Revealed by T1- and T2-Weighted MRI",
+      "year": 2011,
+      "external_citations": 1556,
+      "corpus_in_degree": 97,
+      "composite_score": 0.01729911878281354,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1921182138",
+      "title": "Reconstruction and Simulation of Neocortical Microcircuitry",
+      "year": 2015,
+      "external_citations": 1644,
+      "corpus_in_degree": 96,
+      "composite_score": 0.01935208275682719,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2307899896",
+      "title": "The Fuzzy Logic of Network Connectivity in Mouse Visual Thalamus",
+      "year": 2016,
+      "external_citations": 294,
+      "corpus_in_degree": 95,
+      "composite_score": 0.014292982072261647,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2109273473",
+      "title": "Nonoptimal Component Placement, but Short Processing Paths, due to Long-Distance Projections in Neural Systems",
+      "year": 2006,
+      "external_citations": 657,
+      "corpus_in_degree": 95,
+      "composite_score": 0.01852499975818297,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2159549823",
+      "title": "Functional Brain Networks Develop from a \u201cLocal to Distributed\u201d Organization",
+      "year": 2009,
+      "external_citations": 1543,
+      "corpus_in_degree": 95,
+      "composite_score": 0.014549251286416353,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136199096",
+      "title": "Network Centrality in the Human Functional Connectome",
+      "year": 2011,
+      "external_citations": 1183,
+      "corpus_in_degree": 94,
+      "composite_score": 0.01428067612805271,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2536956629",
+      "title": "Situating the default-mode network along a principal gradient of macroscale cortical organization",
+      "year": 2016,
+      "external_citations": 2539,
+      "corpus_in_degree": 94,
+      "composite_score": 0.014308949115769923,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2126956247",
+      "title": "Detecting rich-club ordering in complex networks",
+      "year": 2006,
+      "external_citations": 1002,
+      "corpus_in_degree": 92,
+      "composite_score": 0.011971961357529766,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2143502460",
+      "title": "Modular Brain Networks",
+      "year": 2015,
+      "external_citations": 1460,
+      "corpus_in_degree": 92,
+      "composite_score": 0.01754829425273264,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2529695649",
+      "title": "Competitive Disinhibition Mediates Behavioral Choice and Sequences in Drosophila",
+      "year": 2016,
+      "external_citations": 240,
+      "corpus_in_degree": 92,
+      "composite_score": 0.019077880211195088,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2058711140",
+      "title": "Aberrant Frontal and Temporal Complex Network Structure in Schizophrenia: A Graph Theoretical Analysis",
+      "year": 2010,
+      "external_citations": 691,
+      "corpus_in_degree": 91,
+      "composite_score": 0.00908630321856759,
+      "neuro_signal": 0
+    }
+  ],
+  "C_tail_high_extcites": [
+    {
+      "openalex_id": "https://openalex.org/W2141403362",
+      "title": "Intraclass correlations: Uses in assessing rater reliability.",
+      "year": 1979,
+      "journal": "",
+      "composite_score": 0.057,
+      "external_citations": 22750,
+      "in_degree": 24,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2911188335",
+      "title": "Cancer statistics, 2019",
+      "year": 2019,
+      "journal": "",
+      "composite_score": 0.0527,
+      "external_citations": 20874,
+      "in_degree": 6,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2148080316",
+      "title": "Special Care Units and Traditional Care in Dementia: Relationship with Behavior, Cognition, Functional Status and Quality of Life - A Review",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0553,
+      "external_citations": 20643,
+      "in_degree": 10,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4393935425",
+      "title": "Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries",
+      "year": 2024,
+      "journal": "",
+      "composite_score": 0.0516,
+      "external_citations": 20640,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2167311298",
+      "title": "Older Adults' Reasons for Using Technology while Aging in Place",
+      "year": 2015,
+      "journal": "",
+      "composite_score": 0.0518,
+      "external_citations": 19719,
+      "in_degree": 8,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2104549677",
+      "title": "A global reference for human genetic variation",
+      "year": 2015,
+      "journal": "",
+      "composite_score": 0.0512,
+      "external_citations": 19538,
+      "in_degree": 10,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2799061466",
+      "title": "Pattern Classification",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0556,
+      "external_citations": 19490,
+      "in_degree": 9,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2900569176",
+      "title": "STRING v11: protein\u2013protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets",
+      "year": 2018,
+      "journal": "",
+      "composite_score": 0.0471,
+      "external_citations": 18843,
+      "in_degree": 7,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2115017507",
+      "title": "The diagnosis of dementia due to Alzheimer's disease: Recommendations from the National Institute on Aging\u2010Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0486,
+      "external_citations": 18548,
+      "in_degree": 23,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2020830322",
+      "title": "Global Cancer Statistics, 2002",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0447,
+      "external_citations": 18373,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2120357670",
+      "title": "Studies of interference in serial verbal reactions.",
+      "year": 1935,
+      "journal": "",
+      "composite_score": 0.0557,
+      "external_citations": 18192,
+      "in_degree": 10,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2502134830",
+      "title": "AJCC Cancer Staging Manual",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0421,
+      "external_citations": 17403,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4315754639",
+      "title": "Cancer statistics, 2023",
+      "year": 2023,
+      "journal": "",
+      "composite_score": 0.0441,
+      "external_citations": 16277,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2593436234",
+      "title": "SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0392,
+      "external_citations": 16166,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2235523093",
+      "title": "Cancer statistics, 2016",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0424,
+      "external_citations": 16130,
+      "in_degree": 4,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2145150141",
+      "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+      "year": 2015,
+      "journal": "",
+      "composite_score": 0.0425,
+      "external_citations": 16125,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1995017064",
+      "title": "Crystallography &amp; NMR System: A New Software Suite for Macromolecular Structure Determination",
+      "year": 1998,
+      "journal": "",
+      "composite_score": 0.0403,
+      "external_citations": 15770,
+      "in_degree": 3,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2366536035",
+      "title": "The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0386,
+      "external_citations": 15741,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2990138404",
+      "title": "Advances in Neural Information Processing Systems 19",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0406,
+      "external_citations": 15619,
+      "in_degree": 13,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133589238",
+      "title": "Heart rate variability: Standards of measurement, physiological interpretation, and clinical use",
+      "year": 1996,
+      "journal": "",
+      "composite_score": 0.0375,
+      "external_citations": 15208,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133465414",
+      "title": "Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0389,
+      "external_citations": 14685,
+      "in_degree": 7,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4292779060",
+      "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
+      "year": 2023,
+      "journal": "",
+      "composite_score": 0.0369,
+      "external_citations": 14139,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2006096283",
+      "title": "Advances in functional and structural MR image analysis and implementation as FSL",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0542,
+      "external_citations": 13980,
+      "in_degree": 94,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2214074259",
+      "title": "The Molecular Signatures Database Hallmark Gene Set Collection",
+      "year": 2015,
+      "journal": "",
+      "composite_score": 0.0343,
+      "external_citations": 13922,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2160382843",
+      "title": "The 2007 WHO Classification of Tumours of the Central Nervous System",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0507,
+      "external_citations": 13889,
+      "in_degree": 6,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1902027874",
+      "title": "Learning the parts of objects by non-negative matrix factorization",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0368,
+      "external_citations": 13873,
+      "in_degree": 15,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2166689829",
+      "title": "Single-crystal structure validation with the program<i>PLATON</i>",
+      "year": 2003,
+      "journal": "",
+      "composite_score": 0.0337,
+      "external_citations": 13808,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2912654919",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990\u20132017: a systematic analysis for the Global Burden of Disease Study 2017",
+      "year": 2018,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 13807,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2101135654",
+      "title": "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0482,
+      "external_citations": 13788,
+      "in_degree": 154,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2096410114",
+      "title": "The Amyloid Hypothesis of Alzheimer's Disease: Progress and Problems on the Road to Therapeutics",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0458,
+      "external_citations": 13715,
+      "in_degree": 19,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2128654538",
+      "title": "Synthesis of graphene-based nanosheets via chemical reduction of exfoliated graphite oxide",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0359,
+      "external_citations": 13658,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133416234",
+      "title": "2013 ESH/ESC Guidelines for the management of arterial hypertension",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0374,
+      "external_citations": 13652,
+      "in_degree": 4,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2001141328",
+      "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+      "year": 2000,
+      "journal": "",
+      "composite_score": 0.0443,
+      "external_citations": 13617,
+      "in_degree": 19,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2134208433",
+      "title": "Matrix Elasticity Directs Stem Cell Lineage Specification",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0361,
+      "external_citations": 13562,
+      "in_degree": 7,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2751884637",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990\u20132016: a systematic analysis for the Global Burden of Disease Study 2016",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0367,
+      "external_citations": 13428,
+      "in_degree": 6,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2549976854",
+      "title": "Ultrastructural Characterization of the Lower Motor System in a Mouse Model of Krabbe Disease",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0338,
+      "external_citations": 13254,
+      "in_degree": 12,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2804822363",
+      "title": "SWISS-MODEL: homology modelling of protein structures and complexes",
+      "year": 2018,
+      "journal": "",
+      "composite_score": 0.0336,
+      "external_citations": 13179,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136608905",
+      "title": "The behaviour change wheel: A new method for characterising and designing behaviour change interventions",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0326,
+      "external_citations": 13092,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1992419399",
+      "title": "Data clustering",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0354,
+      "external_citations": 13065,
+      "in_degree": 6,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2169205464",
+      "title": "Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation",
+      "year": 2015,
+      "journal": "",
+      "composite_score": 0.0332,
+      "external_citations": 12938,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1761828760",
+      "title": "How people learn: Brain, mind, experience, and school.",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0315,
+      "external_citations": 12898,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2019370496",
+      "title": "Control of goal-directed and stimulus-driven attention in the brain",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0518,
+      "external_citations": 12773,
+      "in_degree": 71,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1522048223",
+      "title": "The Mouse Brain in Stereotaxic Coordinates",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0436,
+      "external_citations": 12750,
+      "in_degree": 25,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2107396783",
+      "title": "Consensus Problems in Networks of Agents With Switching Topology and Time-Delays",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0384,
+      "external_citations": 12614,
+      "in_degree": 25,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2151137320",
+      "title": "An Integrative Theory of Prefrontal Cortex Function",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0533,
+      "external_citations": 12599,
+      "in_degree": 29,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1605353467",
+      "title": "Harrison's Principles of Internal Medicine.",
+      "year": 1988,
+      "journal": "",
+      "composite_score": 0.0313,
+      "external_citations": 12587,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2160834915",
+      "title": "Safety, Activity, and Immune Correlates of Anti\u2013PD-1 Antibody in Cancer",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 12531,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1483242733",
+      "title": "The Metabolic and Molecular Bases of Inherited Disease",
+      "year": 1995,
+      "journal": "",
+      "composite_score": 0.0298,
+      "external_citations": 12175,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2097065948",
+      "title": "TopHat: discovering splice junctions with RNA-Seq",
+      "year": 2009,
+      "journal": "",
+      "composite_score": 0.0327,
+      "external_citations": 12093,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2148977460",
+      "title": "CBTRUS Statistical Report: Primary Brain and Central Nervous System Tumors Diagnosed in the United States in 2006-2010",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.031,
+      "external_citations": 12081,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2151936673",
+      "title": "Modularity and community structure in networks",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0539,
+      "external_citations": 12046,
+      "in_degree": 137,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2110052313",
+      "title": "A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0326,
+      "external_citations": 11946,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2071707134",
+      "title": "Cognitive radio: brain-empowered wireless communications",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0293,
+      "external_citations": 11929,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2954996726",
+      "title": "A survey on Image Data Augmentation for Deep Learning",
+      "year": 2019,
+      "journal": "",
+      "composite_score": 0.0303,
+      "external_citations": 11840,
+      "in_degree": 10,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2111619626",
+      "title": "Internet of Things (IoT): A vision, architectural elements, and future directions",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.03,
+      "external_citations": 11812,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2594075087",
+      "title": "Correspondence - Tranexamic acid for traumatic brain injury",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.029,
+      "external_citations": 11701,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4396721167",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "year": 2024,
+      "journal": "",
+      "composite_score": 0.034,
+      "external_citations": 11661,
+      "in_degree": 7,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2102902846",
+      "title": "Sarcopenia: European consensus on definition and diagnosis",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.0295,
+      "external_citations": 11584,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2193503481",
+      "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0284,
+      "external_citations": 11568,
+      "in_degree": 0,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2977883299",
+      "title": "FSL",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0373,
+      "external_citations": 11564,
+      "in_degree": 77,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1480729244",
+      "title": "Aspirin plus Clopidogrel as Secondary Prevention after Stroke or Transient Ischemic Attack: A Systematic Review and Meta-Analysis",
+      "year": 2014,
+      "journal": "",
+      "composite_score": 0.0303,
+      "external_citations": 11546,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2125826054",
+      "title": "A human gut microbial gene catalogue established by metagenomic sequencing",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.0327,
+      "external_citations": 11497,
+      "in_degree": 6,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2142220522",
+      "title": "The Two Micron All Sky Survey (2MASS)",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0323,
+      "external_citations": 11488,
+      "in_degree": 7,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2117140276",
+      "title": "AFNI: Software for Analysis and Visualization of Functional Magnetic Resonance Neuroimages",
+      "year": 1996,
+      "journal": "",
+      "composite_score": 0.0339,
+      "external_citations": 11461,
+      "in_degree": 53,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2573377826",
+      "title": "Combining theory and experiment in electrocatalysis: Insights into materials design",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0287,
+      "external_citations": 11445,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2170747616",
+      "title": "CD-HIT: accelerated for clustering the next-generation sequencing data",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0291,
+      "external_citations": 11431,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2345356016",
+      "title": "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0289,
+      "external_citations": 11349,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2736601468",
+      "title": "Diagnosing Non-Intermittent Anomalies in Reinforcement Learning Policy Executions (Short Paper)",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0284,
+      "external_citations": 11253,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2167635287",
+      "title": "The relationship between infrared, optical, and ultraviolet extinction",
+      "year": 1989,
+      "journal": "",
+      "composite_score": 0.0287,
+      "external_citations": 11157,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2127048411",
+      "title": "Community detection in graphs",
+      "year": 2009,
+      "journal": "",
+      "composite_score": 0.0419,
+      "external_citations": 11132,
+      "in_degree": 101,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3174246647",
+      "title": "The 2021 WHO Classification of Tumors of the Central Nervous System: a summary",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0291,
+      "external_citations": 11129,
+      "in_degree": 0,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2135346934",
+      "title": "Introduction to Statistical Pattern Recognition",
+      "year": 1990,
+      "journal": "",
+      "composite_score": 0.0288,
+      "external_citations": 11123,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2166073443",
+      "title": "FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.0304,
+      "external_citations": 11104,
+      "in_degree": 22,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2125910575",
+      "title": "Gephi: An Open Source Software for Exploring and Manipulating Networks",
+      "year": 2009,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 11089,
+      "in_degree": 26,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2070722739",
+      "title": "Complex networks: Structure and dynamics",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0567,
+      "external_citations": 10837,
+      "in_degree": 123,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2900756811",
+      "title": "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines",
+      "year": 2018,
+      "journal": "",
+      "composite_score": 0.0298,
+      "external_citations": 10823,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2071881327",
+      "title": "Fast robust automated brain extraction",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0362,
+      "external_citations": 10749,
+      "in_degree": 33,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2620241325",
+      "title": "Heat Shock Protein A12B Protects Vascular Endothelial Cells Against Sepsis-Induced Acute Lung Injury in Mice",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0455,
+      "external_citations": 10702,
+      "in_degree": 4,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2073449985",
+      "title": "Staging of brain pathology related to sporadic Parkinson\u2019s disease",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0353,
+      "external_citations": 10594,
+      "in_degree": 18,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2052644075",
+      "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0502,
+      "external_citations": 10589,
+      "in_degree": 81,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2229412420",
+      "title": "Marching cubes: A high resolution 3D surface construction algorithm",
+      "year": 1987,
+      "journal": "",
+      "composite_score": 0.0407,
+      "external_citations": 10126,
+      "in_degree": 15,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1971937094",
+      "title": "A Set of Measures of Centrality Based on Betweenness",
+      "year": 1977,
+      "journal": "",
+      "composite_score": 0.0463,
+      "external_citations": 10081,
+      "in_degree": 74,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2319902168",
+      "title": "The Cambridge Structural Database",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0303,
+      "external_citations": 9916,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3046275966",
+      "title": "Dementia prevention, intervention, and care: 2020 report of the Lancet Commission",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0286,
+      "external_citations": 9824,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136435696",
+      "title": "<i>The Brain's Default Network</i>",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0394,
+      "external_citations": 9731,
+      "in_degree": 123,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3007643904",
+      "title": "Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0469,
+      "external_citations": 9712,
+      "in_degree": 8,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2102085111",
+      "title": "Stem cells, cancer, and cancer stem cells",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0282,
+      "external_citations": 9682,
+      "in_degree": 3,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3083406432",
+      "title": "<scp>UCSF ChimeraX</scp>: Structure visualization for researchers, educators, and developers",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.057,
+      "external_citations": 9594,
+      "in_degree": 9,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4241074797",
+      "title": "FreeSurfer",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0334,
+      "external_citations": 9561,
+      "in_degree": 89,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4235770099",
+      "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0464,
+      "external_citations": 9496,
+      "in_degree": 76,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2117726420",
+      "title": "A Neural Substrate of Prediction and Reward",
+      "year": 1997,
+      "journal": "",
+      "composite_score": 0.0419,
+      "external_citations": 9481,
+      "in_degree": 34,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1996024251",
+      "title": "Copper-Zinc Superoxide Dismutase (SOD1) Is Released by Microglial Cells and Confers Neuroprotection against 6-OHDA Neurotoxicity",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0319,
+      "external_citations": 9015,
+      "in_degree": 13,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1511198581",
+      "title": "The capsaicin receptor: a heat-activated ion channel in the pain pathway",
+      "year": 1997,
+      "journal": "",
+      "composite_score": 0.0488,
+      "external_citations": 9007,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2138621811",
+      "title": "Authoritative sources in a hyperlinked environment",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0302,
+      "external_citations": 8990,
+      "in_degree": 11,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2320983896",
+      "title": "Epigenetic Regulations of GABAergic Neurotransmission: Relevance for Neurological Disorders and Epigenetic Therapy",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.036,
+      "external_citations": 8955,
+      "in_degree": 29,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2004293194",
+      "title": "Whole Brain Segmentation",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0356,
+      "external_citations": 8910,
+      "in_degree": 51,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2026616100",
+      "title": "3D Slicer as an image computing platform for the Quantitative Imaging Network",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0281,
+      "external_citations": 8542,
+      "in_degree": 25,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2108344016",
+      "title": "Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0341,
+      "external_citations": 8330,
+      "in_degree": 5,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2163480486",
+      "title": "Network biology: understanding the cell's functional organization",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0352,
+      "external_citations": 7951,
+      "in_degree": 44,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2123341385",
+      "title": "The Fusiform Face Area: A Module in Human Extrastriate Cortex Specialized for Face Perception",
+      "year": 1997,
+      "journal": "",
+      "composite_score": 0.0313,
+      "external_citations": 7877,
+      "in_degree": 29,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2156761163",
+      "title": "The Attention System of the Human Brain",
+      "year": 1990,
+      "journal": "",
+      "composite_score": 0.0481,
+      "external_citations": 7820,
+      "in_degree": 14,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3132661792",
+      "title": "Inference and analysis of cell-cell communication using CellChat",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0367,
+      "external_citations": 7777,
+      "in_degree": 6,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2116658855",
+      "title": "Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0387,
+      "external_citations": 7396,
+      "in_degree": 101,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2527824850",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 310 diseases and injuries, 1990\u20132015: a systematic analysis for the Global Burden of Disease Study 2015",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0287,
+      "external_citations": 7320,
+      "in_degree": 8,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136573752",
+      "title": "Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0383,
+      "external_citations": 7255,
+      "in_degree": 39,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2104135721",
+      "title": "A robust and high-throughput Cre reporting and characterization system for the whole mouse brain",
+      "year": 2009,
+      "journal": "",
+      "composite_score": 0.0299,
+      "external_citations": 7243,
+      "in_degree": 53,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2998840182",
+      "title": "U1 snRNP regulates cancer cell migration and invasion in vitro",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0325,
+      "external_citations": 7224,
+      "in_degree": 11,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2105100844",
+      "title": "<i>MGMT</i> Gene Silencing and Benefit from Temozolomide in Glioblastoma",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0361,
+      "external_citations": 7163,
+      "in_degree": 4,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2762087180",
+      "title": "Ferroptosis: A Regulated Cell Death Nexus Linking Metabolism, Redox Biology, and Disease",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0568,
+      "external_citations": 7155,
+      "in_degree": 16,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2148726987",
+      "title": "A global optimisation method for robust affine registration of brain images",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0538,
+      "external_citations": 7138,
+      "in_degree": 38,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1970695058",
+      "title": "Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0485,
+      "external_citations": 6809,
+      "in_degree": 158,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1904365287",
+      "title": "Improving neural networks by preventing co-adaptation of feature detectors",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0411,
+      "external_citations": 6639,
+      "in_degree": 10,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2142875089",
+      "title": "Neuronal Oscillations in Cortical Networks",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0364,
+      "external_citations": 6553,
+      "in_degree": 45,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2071714163",
+      "title": "Brain magnetic resonance imaging with contrast dependent on blood oxygenation.",
+      "year": 1990,
+      "journal": "",
+      "composite_score": 0.0381,
+      "external_citations": 6449,
+      "in_degree": 28,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2138790588",
+      "title": "Nonparametric permutation tests for functional neuroimaging: A primer with examples",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0284,
+      "external_citations": 6402,
+      "in_degree": 35,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1994823455",
+      "title": "Autophagy fights disease through cellular self-digestion",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0344,
+      "external_citations": 6389,
+      "in_degree": 19,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4238452917",
+      "title": "Networks",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.028,
+      "external_citations": 6376,
+      "in_degree": 66,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2113319997",
+      "title": "Cortical Surface-Based Analysis",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0531,
+      "external_citations": 6372,
+      "in_degree": 78,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2145889472",
+      "title": "Emergence of simple-cell receptive field properties by learning a sparse code for natural images",
+      "year": 1996,
+      "journal": "",
+      "composite_score": 0.0366,
+      "external_citations": 5785,
+      "in_degree": 23,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1983208069",
+      "title": "The minimal preprocessing pipelines for the Human Connectome Project",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0402,
+      "external_citations": 5762,
+      "in_degree": 218,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2038195874",
+      "title": "Epidemic Spreading in Scale-Free Networks",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0549,
+      "external_citations": 5657,
+      "in_degree": 53,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2499800833",
+      "title": "A multi-modal parcellation of human cerebral cortex",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0309,
+      "external_citations": 5467,
+      "in_degree": 156,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2079450984",
+      "title": "Correspondence of the brain's functional architecture during activation and rest",
+      "year": 2009,
+      "journal": "",
+      "composite_score": 0.0364,
+      "external_citations": 5389,
+      "in_degree": 182,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1504193762",
+      "title": "Scanning Electron Microscopy and X-Ray Microanalysis",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0552,
+      "external_citations": 5165,
+      "in_degree": 6,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2060464767",
+      "title": "Efficient Behavior of Small-World Networks",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0406,
+      "external_citations": 5061,
+      "in_degree": 183,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2040956707",
+      "title": "Assortative Mixing in Networks",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0445,
+      "external_citations": 5003,
+      "in_degree": 50,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2147101007",
+      "title": "Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type",
+      "year": 1998,
+      "journal": "",
+      "composite_score": 0.0344,
+      "external_citations": 4726,
+      "in_degree": 19,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1942214720",
+      "title": "Caspases: the executioners of apoptosis",
+      "year": 1997,
+      "journal": "",
+      "composite_score": 0.038,
+      "external_citations": 4725,
+      "in_degree": 2,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2117663940",
+      "title": "Dynamic causal modelling",
+      "year": 2003,
+      "journal": "",
+      "composite_score": 0.0337,
+      "external_citations": 4685,
+      "in_degree": 88,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2063001897",
+      "title": "The basis of anisotropic water diffusion in the nervous system \u2013 a technical review",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0339,
+      "external_citations": 4537,
+      "in_degree": 39,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2089572795",
+      "title": "Functional Network Organization of the Human Brain",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0319,
+      "external_citations": 4368,
+      "in_degree": 212,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2159929956",
+      "title": "Mapping the Structural Core of Human Cerebral Cortex",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0534,
+      "external_citations": 4335,
+      "in_degree": 368,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1976969221",
+      "title": "On power-law relationships of the Internet topology",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0476,
+      "external_citations": 4222,
+      "in_degree": 15,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2147607085",
+      "title": "Deep tissue two-photon microscopy",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0302,
+      "external_citations": 4112,
+      "in_degree": 47,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2000209446",
+      "title": "Translational Findings on Brain-Derived Neurotrophic Factor and Anxiety: Contributions from Basic Research to Clinical Practice",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0376,
+      "external_citations": 4007,
+      "in_degree": 11,
+      "neuro_signal": 3,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2017987256",
+      "title": "Functional cartography of complex metabolic networks",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0297,
+      "external_citations": 3934,
+      "in_degree": 90,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2001591494",
+      "title": "Autophagy: process and function",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0289,
+      "external_citations": 3921,
+      "in_degree": 22,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2148275477",
+      "title": "Wide area traffic: the failure of Poisson modeling",
+      "year": 1995,
+      "journal": "",
+      "composite_score": 0.041,
+      "external_citations": 3713,
+      "in_degree": 1,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2143285014",
+      "title": "Default-mode network activity distinguishes Alzheimer's disease from healthy aging: Evidence from functional MRI",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0327,
+      "external_citations": 3702,
+      "in_degree": 70,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2085989895",
+      "title": "Preface: Cerebral Cortex Has Come of Age",
+      "year": 1991,
+      "journal": "",
+      "composite_score": 0.0543,
+      "external_citations": 3569,
+      "in_degree": 103,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2145132952",
+      "title": "Three-dimensional tracking of axonal projections in the brain by magnetic resonance imaging",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0351,
+      "external_citations": 3533,
+      "in_degree": 75,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2042422091",
+      "title": "An Energy Budget for Signaling in the Grey Matter of the Brain",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0368,
+      "external_citations": 3449,
+      "in_degree": 46,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2056081184",
+      "title": "Searching for a baseline: Functional imaging and the resting human brain",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0377,
+      "external_citations": 3394,
+      "in_degree": 43,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1983485726",
+      "title": "The economy of brain network organization",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0331,
+      "external_citations": 3339,
+      "in_degree": 249,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2110437310",
+      "title": "High-resolution intersubject averaging and a coordinate system for the cortical surface",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.03,
+      "external_citations": 3297,
+      "in_degree": 58,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2130793535",
+      "title": "Specification of Cerebral Cortical Areas",
+      "year": 1988,
+      "journal": "",
+      "composite_score": 0.0298,
+      "external_citations": 3117,
+      "in_degree": 15,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2462773201",
+      "title": "Inflammasome-activated gasdermin D causes pyroptosis by forming membrane pores",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0461,
+      "external_citations": 3105,
+      "in_degree": 9,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2008607322",
+      "title": "Toward discovery science of human brain function",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.0336,
+      "external_citations": 3071,
+      "in_degree": 150,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2020519533",
+      "title": "The Human Connectome Project: A data acquisition perspective",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0305,
+      "external_citations": 2760,
+      "in_degree": 141,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2158090607",
+      "title": "Large\u2010scale neurocognitive networks and distributed processing for attention, language, and memory",
+      "year": 1990,
+      "journal": "",
+      "composite_score": 0.037,
+      "external_citations": 2703,
+      "in_degree": 34,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1974764791",
+      "title": "Efficiency and Cost of Economical Brain Functional Networks",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0323,
+      "external_citations": 2567,
+      "in_degree": 166,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3108936441",
+      "title": "Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)<sup>1</sup>",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0534,
+      "external_citations": 2498,
+      "in_degree": 26,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1987924998",
+      "title": "A Resilient, Low-Frequency, Small-World Human Brain Functional Network with Highly Connected Association Cortical Hubs",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0411,
+      "external_citations": 2448,
+      "in_degree": 224,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2012559638",
+      "title": "Rich-Club Organization of the Human Connectome",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0358,
+      "external_citations": 2443,
+      "in_degree": 271,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2070207525",
+      "title": "Network Robustness and Fragility: Percolation on Random Graphs",
+      "year": 2000,
+      "journal": "",
+      "composite_score": 0.0498,
+      "external_citations": 2432,
+      "in_degree": 35,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4211091012",
+      "title": "Network neuroscience",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0515,
+      "external_citations": 2363,
+      "in_degree": 112,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2103681669",
+      "title": "Oxygenation\u2010sensitive contrast in magnetic resonance image of rodent brain at high magnetic fields",
+      "year": 1990,
+      "journal": "",
+      "composite_score": 0.0437,
+      "external_citations": 2258,
+      "in_degree": 10,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2065126285",
+      "title": "High-Resolution Surface-Wave Tomography from Ambient Seismic Noise",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0441,
+      "external_citations": 2253,
+      "in_degree": 105,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2128314959",
+      "title": "Organization, development and function of complex brain networks",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0299,
+      "external_citations": 2078,
+      "in_degree": 101,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2076507262",
+      "title": "Structural and molecular interrogation of intact biological systems",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.038,
+      "external_citations": 2058,
+      "in_degree": 123,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2162407586",
+      "title": "Long-term in vivo imaging of experience-dependent synaptic plasticity in adult cortex",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.0427,
+      "external_citations": 1938,
+      "in_degree": 48,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2027781650",
+      "title": "Intrinsic functional architecture in the anaesthetized monkey brain",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0327,
+      "external_citations": 1863,
+      "in_degree": 100,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1618384257",
+      "title": "Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study.",
+      "year": 1959,
+      "journal": "",
+      "composite_score": 0.0484,
+      "external_citations": 1790,
+      "in_degree": 50,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2170596158",
+      "title": "Tracking neuronal fiber pathways in the living human brain",
+      "year": 1999,
+      "journal": "",
+      "composite_score": 0.0287,
+      "external_citations": 1782,
+      "in_degree": 47,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1985392528",
+      "title": "Highly Nonrandom Features of Synaptic Connectivity in Local Cortical Circuits",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0525,
+      "external_citations": 1582,
+      "in_degree": 119,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1665095741",
+      "title": "Limbic-cortical dysregulation: a proposed model of depression",
+      "year": 1997,
+      "journal": "",
+      "composite_score": 0.0347,
+      "external_citations": 1578,
+      "in_degree": 9,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1969103349",
+      "title": "Multicolor Super-Resolution Imaging with Photo-Switchable Fluorescent Probes",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0463,
+      "external_citations": 1491,
+      "in_degree": 32,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3198853168",
+      "title": "Autophagy in major human diseases",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0344,
+      "external_citations": 1474,
+      "in_degree": 26,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2124953625",
+      "title": "The human connectome: a complex network",
+      "year": 2011,
+      "journal": "",
+      "composite_score": 0.0458,
+      "external_citations": 1412,
+      "in_degree": 114,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2129109788",
+      "title": "Neurophysiological Architecture of Functional Magnetic Resonance Images of Human Brain",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0297,
+      "external_citations": 1363,
+      "in_degree": 119,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2157380583",
+      "title": "Principles and Techniques of Electron Microscopy: Biological Applications",
+      "year": 1979,
+      "journal": "",
+      "composite_score": 0.0546,
+      "external_citations": 1329,
+      "in_degree": 15,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2117940227",
+      "title": "Functional imaging with cellular resolution reveals precise micro-architecture in visual cortex",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0433,
+      "external_citations": 1232,
+      "in_degree": 26,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2058483899",
+      "title": "The Neuronal Organization of the Retina",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0357,
+      "external_citations": 1154,
+      "in_degree": 61,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2005926772",
+      "title": "On the emergence of the Green\u2019s function in the correlations of a diffuse field",
+      "year": 2001,
+      "journal": "",
+      "composite_score": 0.0546,
+      "external_citations": 1031,
+      "in_degree": 45,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2131006763",
+      "title": "Surface-wave array tomography in SE Tibet from ambient seismic noise and two-station analysis - I. Phase velocity maps",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0403,
+      "external_citations": 1020,
+      "in_degree": 126,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2151013106",
+      "title": "Highly Multiplexed Subcellular RNA Sequencing in Situ",
+      "year": 2014,
+      "journal": "",
+      "composite_score": 0.0303,
+      "external_citations": 1005,
+      "in_degree": 44,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2954731284",
+      "title": "Whole-animal connectomes of both Caenorhabditis elegans sexes",
+      "year": 2019,
+      "journal": "",
+      "composite_score": 0.0557,
+      "external_citations": 964,
+      "in_degree": 328,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2135908272",
+      "title": "A Quantitative Map of the Circuit of Cat Primary Visual Cortex",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0457,
+      "external_citations": 917,
+      "in_degree": 45,
+      "neuro_signal": 5,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3007736625",
+      "title": "Linking Structure and Function in Macroscale Brain Networks",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0437,
+      "external_citations": 841,
+      "in_degree": 35,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3134372233",
+      "title": "Autophagy in inflammation, infection, and immunometabolism",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0387,
+      "external_citations": 786,
+      "in_degree": 26,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1999055090",
+      "title": "Genetic Dissection of Neural Circuits",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0303,
+      "external_citations": 774,
+      "in_degree": 40,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W4401338748",
+      "title": "CAT: a computational anatomy toolbox for the analysis of structural MRI data",
+      "year": 2024,
+      "journal": "",
+      "composite_score": 0.0332,
+      "external_citations": 741,
+      "in_degree": 4,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2460281481",
+      "title": "Protein-retention expansion microscopy of cells and tissues labeled using standard fluorescent proteins and antibodies",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0522,
+      "external_citations": 708,
+      "in_degree": 209,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1993673892",
+      "title": "Wiring optimization can relate neuronal structure and function",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0503,
+      "external_citations": 662,
+      "in_degree": 80,
+      "neuro_signal": 2,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1971175217",
+      "title": "A Systematic Nomenclature for the Insect Brain",
+      "year": 2014,
+      "journal": "",
+      "composite_score": 0.0305,
+      "external_citations": 648,
+      "in_degree": 121,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2162298934",
+      "title": "Whole-cell 3D STORM reveals interactions between cellular structures with nanometer-scale resolution",
+      "year": 2008,
+      "journal": "",
+      "composite_score": 0.0294,
+      "external_citations": 624,
+      "in_degree": 24,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2998583117",
+      "title": "Tissue clearing and its applications in\u00a0neuroscience",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0363,
+      "external_citations": 616,
+      "in_degree": 34,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2139919351",
+      "title": "From the connectome to brain function",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 597,
+      "in_degree": 129,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2138996400",
+      "title": "Analysis of connectivity in the cat cerebral cortex",
+      "year": 1995,
+      "journal": "",
+      "composite_score": 0.0296,
+      "external_citations": 577,
+      "in_degree": 58,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2309258625",
+      "title": "Anatomy and function of an excitatory network in the visual cortex",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.032,
+      "external_citations": 574,
+      "in_degree": 164,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2619970632",
+      "title": "The complete connectome of a learning and memory centre in an insect brain",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0534,
+      "external_citations": 568,
+      "in_degree": 249,
+      "neuro_signal": 1,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2156755609",
+      "title": "A high-level 3D visualization API for Java and ImageJ",
+      "year": 2010,
+      "journal": "",
+      "composite_score": 0.0339,
+      "external_citations": 562,
+      "in_degree": 42,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2030363891",
+      "title": "Anatomical connectivity defines the organization of clusters of cortical areas in the macaque and the cat",
+      "year": 2000,
+      "journal": "",
+      "composite_score": 0.0304,
+      "external_citations": 561,
+      "in_degree": 65,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2033579242",
+      "title": "The Connectome of a Decision-Making Neural Network",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0336,
+      "external_citations": 514,
+      "in_degree": 144,
+      "neuro_signal": 3,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2021687531",
+      "title": "Towards a network theory of cognition",
+      "year": 2000,
+      "journal": "",
+      "composite_score": 0.0286,
+      "external_citations": 512,
+      "in_degree": 17,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2040156859",
+      "title": "Space\u2013time wiring specificity supports direction selectivity in the retina",
+      "year": 2014,
+      "journal": "",
+      "composite_score": 0.0415,
+      "external_citations": 504,
+      "in_degree": 168,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    },
+    {
+      "openalex_id": "https://openalex.org/W1974049455",
+      "title": "Wiring Optimization in Cortical Circuits",
+      "year": 2002,
+      "journal": "",
+      "composite_score": 0.029,
+      "external_citations": 504,
+      "in_degree": 54,
+      "neuro_signal": 0,
+      "note": "high ext-cites, low composite"
+    }
+  ],
+  "C_tail_offtrack": [],
+  "D_tail_inner_core": [
+    {
+      "openalex_id": "https://openalex.org/W2070722739",
+      "title": "Complex networks: Structure and dynamics",
+      "year": 2006,
+      "composite_score": 0.0567,
+      "core_number": 32,
+      "in_degree": 123,
+      "external_citations": 10837,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2151936673",
+      "title": "Modularity and community structure in networks",
+      "year": 2006,
+      "composite_score": 0.0539,
+      "core_number": 32,
+      "in_degree": 137,
+      "external_citations": 12046,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2159929956",
+      "title": "Mapping the Structural Core of Human Cerebral Cortex",
+      "year": 2008,
+      "composite_score": 0.0534,
+      "core_number": 32,
+      "in_degree": 368,
+      "external_citations": 4335,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W4211091012",
+      "title": "Network neuroscience",
+      "year": 2017,
+      "composite_score": 0.0515,
+      "core_number": 32,
+      "in_degree": 112,
+      "external_citations": 2363,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1970695058",
+      "title": "Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging",
+      "year": 2007,
+      "composite_score": 0.0485,
+      "core_number": 32,
+      "in_degree": 158,
+      "external_citations": 6809,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1971937094",
+      "title": "A Set of Measures of Centrality Based on Betweenness",
+      "year": 1977,
+      "composite_score": 0.0463,
+      "core_number": 32,
+      "in_degree": 74,
+      "external_citations": 10081,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2124953625",
+      "title": "The human connectome: a complex network",
+      "year": 2011,
+      "composite_score": 0.0458,
+      "core_number": 32,
+      "in_degree": 114,
+      "external_citations": 1412,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2127048411",
+      "title": "Community detection in graphs",
+      "year": 2009,
+      "composite_score": 0.0419,
+      "core_number": 32,
+      "in_degree": 101,
+      "external_citations": 11132,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1987924998",
+      "title": "A Resilient, Low-Frequency, Small-World Human Brain Functional Network with Highly Connected Association Cortical Hubs",
+      "year": 2006,
+      "composite_score": 0.0411,
+      "core_number": 32,
+      "in_degree": 224,
+      "external_citations": 2448,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2060464767",
+      "title": "Efficient Behavior of Small-World Networks",
+      "year": 2001,
+      "composite_score": 0.0406,
+      "core_number": 32,
+      "in_degree": 183,
+      "external_citations": 5061,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2079450984",
+      "title": "Correspondence of the brain's functional architecture during activation and rest",
+      "year": 2009,
+      "composite_score": 0.0364,
+      "core_number": 32,
+      "in_degree": 182,
+      "external_citations": 5389,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2012559638",
+      "title": "Rich-Club Organization of the Human Connectome",
+      "year": 2011,
+      "composite_score": 0.0358,
+      "core_number": 32,
+      "in_degree": 271,
+      "external_citations": 2443,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2833620410",
+      "title": "On the nature and use of models in network neuroscience",
+      "year": 2018,
+      "composite_score": 0.035,
+      "core_number": 32,
+      "in_degree": 18,
+      "external_citations": 415,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2008607322",
+      "title": "Toward discovery science of human brain function",
+      "year": 2010,
+      "composite_score": 0.0336,
+      "core_number": 32,
+      "in_degree": 150,
+      "external_citations": 3071,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W1983485726",
+      "title": "The economy of brain network organization",
+      "year": 2012,
+      "composite_score": 0.0331,
+      "core_number": 32,
+      "in_degree": 249,
+      "external_citations": 3339,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1974764791",
+      "title": "Efficiency and Cost of Economical Brain Functional Networks",
+      "year": 2007,
+      "composite_score": 0.0323,
+      "core_number": 32,
+      "in_degree": 166,
+      "external_citations": 2567,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2089572795",
+      "title": "Functional Network Organization of the Human Brain",
+      "year": 2011,
+      "composite_score": 0.0319,
+      "core_number": 32,
+      "in_degree": 212,
+      "external_citations": 4368,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W4281842027",
+      "title": "Null models in network neuroscience",
+      "year": 2022,
+      "composite_score": 0.0305,
+      "core_number": 32,
+      "in_degree": 17,
+      "external_citations": 203,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2030363891",
+      "title": "Anatomical connectivity defines the organization of clusters of cortical areas in the macaque and the cat",
+      "year": 2000,
+      "composite_score": 0.0304,
+      "core_number": 32,
+      "in_degree": 65,
+      "external_citations": 561,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2128314959",
+      "title": "Organization, development and function of complex brain networks",
+      "year": 2004,
+      "composite_score": 0.0299,
+      "core_number": 32,
+      "in_degree": 101,
+      "external_citations": 2078,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2129109788",
+      "title": "Neurophysiological Architecture of Functional Magnetic Resonance Images of Human Brain",
+      "year": 2005,
+      "composite_score": 0.0297,
+      "core_number": 32,
+      "in_degree": 119,
+      "external_citations": 1363,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2017987256",
+      "title": "Functional cartography of complex metabolic networks",
+      "year": 2005,
+      "composite_score": 0.0297,
+      "core_number": 32,
+      "in_degree": 90,
+      "external_citations": 3934,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2027781650",
+      "title": "Intrinsic functional architecture in the anaesthetized monkey brain",
+      "year": 2007,
+      "composite_score": 0.0327,
+      "core_number": 31,
+      "in_degree": 100,
+      "external_citations": 1863,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2138996400",
+      "title": "Analysis of connectivity in the cat cerebral cortex",
+      "year": 1995,
+      "composite_score": 0.0296,
+      "core_number": 31,
+      "in_degree": 58,
+      "external_citations": 577,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W1993673892",
+      "title": "Wiring optimization can relate neuronal structure and function",
+      "year": 2006,
+      "composite_score": 0.0503,
+      "core_number": 30,
+      "in_degree": 80,
+      "external_citations": 662,
+      "neuro_signal": 2
+    },
+    {
+      "openalex_id": "https://openalex.org/W2101135654",
+      "title": "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest",
+      "year": 2006,
+      "composite_score": 0.0482,
+      "core_number": 30,
+      "in_degree": 154,
+      "external_citations": 13788,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W3007736625",
+      "title": "Linking Structure and Function in Macroscale Brain Networks",
+      "year": 2020,
+      "composite_score": 0.0437,
+      "core_number": 30,
+      "in_degree": 35,
+      "external_citations": 841,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2136435696",
+      "title": "<i>The Brain's Default Network</i>",
+      "year": 2008,
+      "composite_score": 0.0394,
+      "core_number": 30,
+      "in_degree": 123,
+      "external_citations": 9731,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2116658855",
+      "title": "Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control",
+      "year": 2007,
+      "composite_score": 0.0387,
+      "core_number": 30,
+      "in_degree": 101,
+      "external_citations": 7396,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W3179229384",
+      "title": "Genetic influences on hub connectivity of the human connectome",
+      "year": 2021,
+      "composite_score": 0.0382,
+      "core_number": 30,
+      "in_degree": 11,
+      "external_citations": 183,
+      "neuro_signal": 1
+    },
+    {
+      "openalex_id": "https://openalex.org/W2145132952",
+      "title": "Three-dimensional tracking of axonal projections in the brain by magnetic resonance imaging",
+      "year": 1999,
+      "composite_score": 0.0351,
+      "core_number": 30,
+      "in_degree": 75,
+      "external_citations": 3533,
+      "neuro_signal": 2
+    },
+    {
+      "openalex_id": "https://openalex.org/W2094017021",
+      "title": "The organization of neural systems in the primate cerebral cortex",
+      "year": 1993,
+      "composite_score": 0.0347,
+      "core_number": 30,
+      "in_degree": 38,
+      "external_citations": 286,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2129057035",
+      "title": "The Connectional Organization of the Cortico-thalamic System of the Cat",
+      "year": 1999,
+      "composite_score": 0.0286,
+      "core_number": 30,
+      "in_degree": 41,
+      "external_citations": 376,
+      "neuro_signal": 0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2080403608",
+      "title": "Imaging human connectomes at the macroscale",
+      "year": 2013,
+      "composite_score": 0.0281,
+      "core_number": 30,
+      "in_degree": 61,
+      "external_citations": 447,
+      "neuro_signal": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Addiction was often characterized primarily at the behavioral or pharmacological level, but a systems-level circuit model integrating the multiple brain regions involved in the transition from reward to compulsion to withdrawal was needed.",
+    "challenge": "Addiction spans multiple distinct neurobiological stages (binge/intoxication, withdrawal/negative affect, preoccupation/anticipation), each with different neural substrates and behavioral mechanisms\u2014synthesizing this into a coherent circuit framework required integrating animal models with human neuroimaging data.",
+    "action": "Koob and Volkow propose a three-stage neurocircuitry model of addiction, synthesizing animal lesion, electrophysiology, and pharmacology data with human PET and fMRI neuroimaging. They map the binge/intoxication stage to ventral striatum and nucleus accumbens dopamine signaling, withdrawal/negative affect to extended amygdala and corticotropin-releasing factor, and preoccupation/anticipation to prefrontal cortex and top-down control circuits.",
+    "resolution": "The three-stage model provides a mechanistic framework explaining how repeated drug use progressively recruits allostatic homeostatic mechanisms that shift motivational set points toward compulsion and away from natural rewards. The model predicts different therapeutic targets for each stage: DAergic drugs for binge, CRF antagonists for withdrawal, and PFC enhancement for craving.",
+    "future_work": "Individual differences in vulnerability to addiction, the role of epigenetic mechanisms in maintaining addicted states, and translating animal circuit findings to human treatment remain major open questions."
+  },
+  "summaries": {
+    "beginner": "Addiction is a brain disease that changes how different brain circuits involved in reward, stress, and decision-making work together. This review traces how the brain progresses from the pleasure of a first drug use to the compulsion and craving of full addiction, mapping each stage to specific brain regions.",
+    "intermediate": "Koob and Volkow present a three-stage neurocircuitry model of addiction integrating dopaminergic nucleus accumbens signaling (binge/intoxication), extended amygdala/CRF systems (withdrawal/negative affect), and prefrontal cortex/anterior cingulate (preoccupation/craving). They synthesize rodent pharmacology with human PET and fMRI data to argue that addiction represents an allostatic dysregulation of motivational circuits.",
+    "advanced": "This framework systematically integrates reward, stress, and executive control circuits into a longitudinal model of addiction development, grounded in neurobiological specificity. The emphasis on CRF in the extended amygdala as a substrate for negative reinforcement (withdrawal-driven use) distinguishes this model from purely dopamine-centric accounts. Subsequent optogenetic and circuit-tracing studies have refined specific projections (e.g., BLA\u2192NAc, PFC\u2192NAc, PFC\u2192amygdala) within this framework. Connectomic relevance: this model motivates structural and functional connectivity studies of addiction vulnerability, including diffusion MRI and resting-state fMRI analyses of addicted individuals."
+  },
+  "discussion_prompts": [
+    "How does the three-stage model of addiction account for individual differences in addiction vulnerability, and what neural substrates mediate these differences?",
+    "What is the experimental evidence for CRF in the extended amygdala as a key substrate for negative reinforcement in addiction, and how does it interact with dopaminergic systems?",
+    "How have circuit-specific interventions (e.g., optogenetic stimulation of specific PFC\u2192NAc projections in rodents) tested or extended the Koob-Volkow three-stage model?"
+  ],
+  "dimension": "neuroanatomy",
+  "tags": [
+    "topic:addiction",
+    "topic:reward-circuitry",
+    "topic:dopamine",
+    "topic:amygdala",
+    "topic:prefrontal-cortex",
+    "review:circuit"
+  ]
+}

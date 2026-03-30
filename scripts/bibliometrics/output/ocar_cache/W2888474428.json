@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Understanding how the brain transforms an aversive odor signal into an avoidance behavior requires tracing the complete circuit pathway from olfactory input to descending motor command, but no such complete multi-layer circuit had been mapped in any organism.",
+    "challenge": "Mapping a full multi-layer circuit from sensory input to descending motor output requires tracing neurons across multiple brain regions in a large EM dataset, with identification of circuit nodes validated by functional and behavioral experiments.",
+    "action": "The authors reconstructed the olfactory circuit for the aversive odor geosmin from olfactory receptor neurons through the antennal lobe, lateral horn, and descending neurons using the adult Drosophila FAFB EM volume, validating key circuit nodes with optogenetics and calcium imaging.",
+    "resolution": "A complete circuit from olfactory receptor input to descending motor output was identified, revealing that aversive odor signals are routed through a specific lateral horn pathway to a small population of descending neurons that inhibit egg-laying. This provides the first complete circuit-to-behavior map for a specific olfactory valence in a vertebrate-scale brain.",
+    "future_work": "Future work should characterize the complete synaptic connectivity of the descending neuron population and determine how this aversive circuit interacts with appetitive pathways to produce graded behavioral decisions."
+  },
+  "summaries": {
+    "beginner": "When a fly smells something bad like the odor geosmin, it avoids it. This study traced every nerve cell relay from the nose to the muscles in the adult fly's brain, building the first complete picture of how a specific smell leads to a specific behavior.",
+    "intermediate": "Using the adult Drosophila FAFB EM volume, the authors traced the complete aversive odor processing circuit from olfactory receptor neurons through the lateral horn to identified descending neurons that suppress egg-laying. Validation with calcium imaging and optogenetics confirmed the functional role of circuit elements, providing the first complete sensory-to-motor circuit map for a defined odor-driven behavior.",
+    "advanced": "This study exemplifies the power of EM connectomics combined with functional validation: the complete pathway from geosmin-responsive ORNs through the antennal lobe, lateral horn PNs, and lateral horn interneurons to two descending neuron types (DNp01/pDN) that drive egg-laying suppression was reconstructed in the FAFB volume and validated functionally. The circuit identifies lateral horn as a key integration node for innate aversive valence. Caveats include that the EM reconstruction used manual tracing (labor-intensive, potential for missed branches) and that descending neuron\u2192motor system connectivity was not fully mapped."
+  },
+  "discussion_prompts": [
+    "How does the lateral horn contribute differently to innate odor valence routing compared to the mushroom body, based on what this circuit study reveals?",
+    "What experimental evidence most convincingly validates each circuit node's functional role in aversive odor behavior, and where are the remaining gaps in the behavioral evidence?",
+    "How would you extend this circuit map to the downstream motor circuitry in the ventral nerve cord, and what methods would be most efficient?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "stage:adult",
+    "region:lateral-horn",
+    "circuit:olfactory",
+    "dataset:fafb",
+    "circuit:sensory-to-motor"
+  ]
+}

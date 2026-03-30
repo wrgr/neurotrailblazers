@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Centrioles, flagella, and other cytoskeletal organelles have highly organized protein architectures below the diffraction limit, but imaging their ultrastructure in intact cells requires EM, which sacrifices molecular identity and live-cell compatibility.",
+    "challenge": "Expanding cellular organelles for super-resolution light microscopy requires preserving delicate protein complexes like the centriole during the expansion process, which standard ExM chemistry was not designed to achieve for these rigid structures.",
+    "action": "The authors developed ultrastructure expansion microscopy (U-ExM), modifying the expansion chemistry to preserve native protein complexes by using a formaldehyde/acrylamide fixation step before gelation, enabling expansion of centrioles and flagella without disassembly.",
+    "resolution": "U-ExM resolved the 9-fold symmetry of centrioles and the internal organization of flagellar axonemes using standard confocal microscopy, with protein localization fidelity validated against EM. The method enabled quantitative morphometric analysis of organelle ultrastructure in diverse cell types.",
+    "future_work": "Future development should extend U-ExM to brain tissue for imaging synaptic ultrastructure, improve compatibility with antigen retrieval for additional protein targets, and combine with click chemistry for metabolic labeling."
+  },
+  "summaries": {
+    "beginner": "Cells contain tiny machines made of proteins, but these machines are too small for ordinary microscopes. This study improved expansion microscopy so that even delicate protein complexes like the cell's structural skeleton can be expanded and seen clearly with a regular fluorescence microscope.",
+    "intermediate": "U-ExM achieves ~10-20x linear expansion while preserving native protein complex architecture, enabling imaging of centrioles and flagellar axonemes with standard confocal microscopy. The key modification \u2014 formaldehyde/acrylamide pre-fixation \u2014 locks protein interactions before gelation, overcoming disassembly that limited earlier ExM protocols for rigid organelles.",
+    "advanced": "Ultrastructure expansion microscopy (U-ExM) introduces a pre-fixation step combining formaldehyde and acrylamide that crosslinks and anchors protein complexes before polyacrylamide gel embedding, preserving the native topology of rigid ultrastructures like centrioles and flagellar axonemes through ~10x linear expansion. Validation against cryo-ET shows accurate preservation of 9-fold symmetry and protein subunit positioning. Key current limitations include limited antibody penetration in thick gel layers, potential compression of rigid structures, and reduced applicability to membrane-bound organelles."
+  },
+  "discussion_prompts": [
+    "What is the chemical rationale for the formaldehyde/acrylamide pre-fixation step in U-ExM, and how does it differ from standard ExM protocols in terms of protein retention and structural preservation?",
+    "How would you validate U-ExM measurements of organelle dimensions and protein positions against EM or cryo-ET ground truth for a new target structure?",
+    "What modifications to U-ExM chemistry would be needed to make it compatible with imaging synaptic ultrastructure in brain tissue slices?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:expansion-microscopy",
+    "method:u-exm",
+    "imaging:super-resolution",
+    "imaging:confocal",
+    "structure:cytoskeleton",
+    "technique:protein-retention"
+  ]
+}

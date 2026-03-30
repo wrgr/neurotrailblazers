@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Comprehensive adult Drosophila connectomics required a complete, publicly available whole-brain EM volume, and the initial 2017 preprint (W2617272455) was followed by the formal publication describing the complete dataset with updated assembly.",
+    "challenge": "Producing a complete, high-quality whole-brain EM volume for the adult Drosophila requires solving section-level alignment artifacts, developing scalable pipelines for data handling, and validating coverage and quality across the full brain extent.",
+    "action": "The authors finalized, quality-checked, and published the complete serial-section EM volume of the adult Drosophila brain, covering ~100,000 neurons with the full central brain and initial optic lobe coverage, providing a community-wide resource.",
+    "resolution": "The published dataset provided the foundational resource enabling multiple subsequent connectomics projects, including the full central brain connectome (hemibrain) and mushroom body reconstructions. Its public availability and scalable access infrastructure democratized whole-brain circuit analysis.",
+    "future_work": "Future acquisitions should extend coverage to the full optic lobes and ventral nerve cord, and re-imaging with improved FIB-SEM systems would provide isotropic resolution throughout the volume."
+  },
+  "summaries": {
+    "beginner": "This study published the complete electron microscope picture of an adult fruit fly's entire brain. Scientists from around the world can now use this dataset to trace individual nerve cells and find out how the fly brain is wired.",
+    "intermediate": "The formal publication of the complete adult Drosophila brain EM volume provides the community resource enabling dense circuit reconstruction across the adult brain. The dataset covers the central brain and partial optic lobes at serial-section TEM resolution and has underpinned numerous follow-up connectomics analyses.",
+    "advanced": "This is the peer-reviewed publication of the FAFB (full adult fly brain) serial-section TEM dataset, complementing the earlier preprint with additional quality assessment and data curation. The dataset spans ~40 \u00b5m isotropic equivalent pixel size in XY (~8 nm) with ~40 nm z-sections. FAFB has been the substrate for multiple automated reconstruction efforts (FFN-based, CATMAID-based), demonstrating that a single community EM dataset can support diverse analysis pipelines. Limitations include anisotropic resolution (z > xy) and incomplete coverage of the optic lobes."
+  },
+  "discussion_prompts": [
+    "What are the key differences between the FAFB dataset described here and isotropic FIB-SEM datasets, and how do these affect the types of circuits that can be reliably reconstructed?",
+    "How has the community use of the FAFB dataset evolved since its publication, and what does this teach us about the value of open-access EM resources in neuroscience?",
+    "What is the relationship between this 2018 paper and the 2017 preprint \u2014 are they describing the same dataset, and why does the distinction matter for citation and reproducibility?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "species:drosophila",
+    "stage:adult",
+    "imaging:serial-section-tem",
+    "connectomics:whole-brain",
+    "infrastructure:public-dataset",
+    "dataset:fafb"
+  ]
+}

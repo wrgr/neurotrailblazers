@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Artificial intelligence systems for complex sequential decision-making required learning directly from high-dimensional sensory inputs without hand-engineered features. No single agent had demonstrated human-level performance across a diverse range of challenging tasks from raw pixel input.",
+    "challenge": "Deep reinforcement learning suffers from instability when neural networks are trained on correlated sequential experience, as the non-stationary target values cause divergence. Stabilizing learning from raw pixels across a diverse range of games with different reward structures and dynamics was a fundamental challenge.",
+    "action": "DeepMind developed Deep Q-Networks (DQN), combining Q-learning with a deep convolutional neural network trained from raw pixel input using two key innovations: experience replay (storing transitions and sampling randomly to break correlations) and a separate target network to stabilize Q-value estimates.",
+    "resolution": "DQN achieved human-level or superhuman performance on 49 different Atari 2600 games using the same architecture and hyperparameters, demonstrating that a single end-to-end RL algorithm could master diverse tasks from raw sensory input. This became a landmark in deep learning and has influenced neuroAI models of reinforcement learning.",
+    "future_work": "Extensions addressing sample efficiency, multi-task learning, and interpretability remain active areas, and connecting DQN-like architectures to biological dopaminergic reward circuits is an ongoing focus in neuroAI."
+  },
+  "plain_language_summary": "This paper taught a computer to play dozens of old Atari video games at human level or better, learning purely by trial and error from the raw pixels on screen — without being told the rules. The key was clever tricks to make learning stable, and the result was an AI that could master a wide variety of tasks the same way a person might learn by playing.",
+  "summaries": {
+    "beginner": "This paper created an AI system called DQN that learned to play 49 different Atari video games just by looking at the screen and trying to get high scores — like a person learning games by playing them. It achieved human-level performance on many games using the same algorithm and the same settings for every game.",
+    "intermediate": "DQN combined deep convolutional neural networks with Q-learning, using experience replay and a target network to stabilize training from raw pixel inputs. Achieving human-level performance across 49 diverse Atari games demonstrated the generality of deep RL. The architecture has influenced neuroAI models linking reinforcement learning to basal ganglia dopamine circuits.",
+    "advanced": "DQN addressed the instability of naive deep Q-learning through two key mechanisms: uniform random sampling from a replay buffer (breaking the temporal correlations of online learning) and a periodically-updated target network (reducing non-stationarity of the training target). The architecture uses a convolutional feature extractor common across all games, demonstrating that a shared representation suffices for diverse tasks. In connectomics and neuroAI contexts, DQN informs models of reward-based circuit plasticity and is relevant to proofreading automation research exploring RL-based error detection."
+  },
+  "discussion_prompts": [
+    "How does the DQN architecture relate to current understanding of how the basal ganglia and dopaminergic systems implement reinforcement learning in biological brains?",
+    "Could reinforcement learning approaches like DQN be applied to connectomics proofreading — learning to detect and correct segmentation errors — and what would the reward signal be?",
+    "What are the main differences between how DQN learns from experience and how biological brains learn from rewards, and what does this tell us about the limits of the analogy?"
+  ],
+  "dimension": "neuroai",
+  "tags": ["method:deep-learning", "method:reinforcement-learning", "neuroai", "tool:dqn", "machine-learning", "computational-neuroscience"]
+}

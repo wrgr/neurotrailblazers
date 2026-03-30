@@ -1,0 +1,17 @@
+{
+  "id": "wildenberg-2023-synapse-development",
+  "title": "The Development of Synapses in Mouse and Macaque Primary Sensory Cortices",
+  "authors": ["Wildenberg G", "Li R", "Kasthuri N"],
+  "year": 2023,
+  "journal": "bioRxiv preprint",
+  "doi": null,
+  "url": "https://www.biorxiv.org/content/10.1101/2023.XX",
+  "abstract": "Comparative study of synapse development in mouse and macaque primary sensory cortices using serial block-face EM, revealing cross-species principles of synaptic maturation.",
+  "seed_expert": "Gregg Wildenberg",
+  "author_tier": 2,
+  "dimensions": ["neuroanatomy", "case-studies"],
+  "tags": ["synapse-development", "cross-species", "primate", "mouse", "SBF-SEM"],
+  "duplicate_of_existing": null,
+  "notes": "First author is seed expert; Bobby Kasthuri is last author. Exact preprint details (DOI, URL suffix) should be verified.",
+  "bossdb_project": "wildenberg2023"
+}

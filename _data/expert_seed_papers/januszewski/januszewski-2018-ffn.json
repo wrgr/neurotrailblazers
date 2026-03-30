@@ -1,0 +1,16 @@
+{
+  "id": "januszewski-2018-ffn",
+  "title": "High-precision automated reconstruction of neurons with flood-filling networks",
+  "authors": ["Januszewski M", "Kornfeld J", "Li PH", "Pope A", "Blakely T", "Lindsey L", "Maitin-Shepard J", "Tyka M", "Denk W", "Jain V"],
+  "year": 2018,
+  "journal": "Nature Methods",
+  "doi": "10.1038/s41592-018-0049-4",
+  "url": "https://www.nature.com/articles/s41592-018-0049-4",
+  "abstract": "Flood-filling networks (FFNs) use a recurrent 3D convolutional network that iteratively grows individual neuron segments, improving automated reconstruction accuracy by an order of magnitude.",
+  "seed_expert": "Michal Januszewski",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml"],
+  "tags": ["FFN", "flood-filling", "recurrent-CNN", "segmentation"],
+  "duplicate_of_existing": "januszewski-2018",
+  "notes": "Already in existing 102. Cross-listed with Seung/Jain. Januszewski is first author."
+}

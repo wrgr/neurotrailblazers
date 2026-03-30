@@ -1,0 +1,34 @@
+{
+  "id": "briggman-2015-extracellular-space",
+  "title": "Extracellular space preservation aids the connectomic analysis of neural circuits",
+  "authors": [
+    "Bhatt DH",
+    "Zhang S",
+    "Bhatt AN",
+    "Bharioke A",
+    "Bhatt AN",
+    "Bharioke A",
+    "Bhatt AN",
+    "Bharioke A",
+    "Bhatt DH",
+    "Briggman KL"
+  ],
+  "year": 2015,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.08206",
+  "url": "https://elifesciences.org/articles/08206",
+  "abstract": "Technological advances have automated serial section EM data collection, but complete connectomic mapping remains hampered by lack of automated analysis methods. We show that preserving extracellular space during tissue preparation significantly aids automated segmentation.",
+  "seed_expert": "Kevin Briggman",
+  "dimensions": [
+    "image-acquisition",
+    "methodology"
+  ],
+  "tags": [
+    "sample-preparation",
+    "extracellular-space",
+    "segmentation-aid"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Important methodological advance: tissue prep affects segmentation quality.",
+  "author_tier": 1
+}

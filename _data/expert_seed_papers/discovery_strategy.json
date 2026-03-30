@@ -1,0 +1,182 @@
+{
+  "version": "1.0",
+  "date": "2026-03-30",
+  "description": "Multi-tier author discovery and citation-based paper expansion strategy",
+
+  "rationale": "Not all contributors are equal in terms of intellectual leadership vs. execution. We need a tiered system that (a) captures the full ecosystem of contributors, (b) identifies high-impact papers we've missed via citation graph analysis, and (c) avoids conflating a first-author PhD student with a PI who shaped the field.",
+
+  "author_tiers": {
+    "tier_1_field_shapers": {
+      "description": "PIs/last authors who defined subfields or led landmark projects. Typically last/corresponding author on major papers. Their publication record IS the field's history.",
+      "criteria": [
+        "Last/corresponding author on 3+ landmark connectomics papers",
+        "Led or co-led a major project (MICrONS, FlyEM, FlyWire, BRAIN CONNECTS)",
+        "Coined key terminology or invented foundational methods",
+        "h-index typically >40 in connectomics-relevant work"
+      ],
+      "examples": ["Seung", "Lichtman", "Sporns", "Helmstaedter", "Denk", "Jain", "Vogelstein"],
+      "search_strategy": "Already captured in seed list. Expand via co-PI networks."
+    },
+
+    "tier_2_key_contributors": {
+      "description": "First/co-first authors on landmark papers, senior staff scientists, or method developers. They did the core intellectual work on specific papers but may not run their own labs (yet).",
+      "criteria": [
+        "First author on 1+ highly cited connectomics paper (>100 citations)",
+        "Developed a key tool/method used broadly (Neuroglancer, CAVE, FFN, etc.)",
+        "Staff scientist or senior engineer with sustained multi-year contributions",
+        "Often the person who actually built the thing"
+      ],
+      "examples": [
+        "Sven Dorkenwald - FlyWire proofreading, CAVE (now faculty-track)",
+        "Michal Januszewski - FFN first author at Google",
+        "Jeremy Maitin-Shepard - Neuroglancer creator at Google",
+        "Jan Funke - segmentation/synapse methods at Janelia",
+        "Srinivas Turaga - deep learning for EM at Janelia/HHMI",
+        "Amelio Vazquez-Reina - early automated segmentation",
+        "Verena Kaynig - segmentation pipelines at Harvard",
+        "Casey Schneider-Mizell - MICrONS proofreading lead at Allen",
+        "Shan Xu (C. Shan Xu) - FIB-SEM technology development at Janelia",
+        "Kenneth Hayworth - ATLUM, tape-collecting ultramicrotome"
+      ],
+      "search_strategy": "Find via first-author position on existing corpus papers. Track forward citations."
+    },
+
+    "tier_3_infrastructure_builders": {
+      "description": "Engineers, data scientists, and tool developers whose work enables the field but who may not be first/last author on the flagship papers.",
+      "criteria": [
+        "Built or maintains critical infrastructure (bossDB, Neuroglancer, CAVE, webKnossos)",
+        "Middle author on many papers but essential for the work",
+        "Software/data engineering contributions"
+      ],
+      "examples": [
+        "Brock Wester - bossDB lead, JHU APL infrastructure",
+        "Daniel Xenes - bossDB engineering",
+        "Dean Kleissas - bossDB, data pipelines",
+        "Jordan Matelsky - dotmotif, JHU APL tools",
+        "Eric Johnson - annotation standards, JHU APL",
+        "William Silversmith - cloud-volume, igneous, Princeton tools",
+        "Nico Kemnitz - segmentation infrastructure, Princeton"
+      ],
+      "search_strategy": "Mine author lists from infrastructure papers in existing corpus."
+    },
+
+    "tier_4_emerging_voices": {
+      "description": "Early-career researchers with recent high-impact first-author papers who may become tier 1-2 in the next decade.",
+      "criteria": [
+        "First author on recent (2022+) high-impact paper",
+        "Active in emerging subfield (foundation models, ExM connectomics, etc.)",
+        "Postdoc or new PI"
+      ],
+      "examples": [
+        "Benjamin Pedigo - graph statistics for connectomes (Vogelstein lab)",
+        "Michael Winding - larval Drosophila connectome first author",
+        "Jasper Phelps - GridTape TEM first author",
+        "Sahil Loomba - cortical interneuron connectomics (Helmstaedter lab)",
+        "Szi-chieh Yu - FlyWire annotation lead"
+      ],
+      "search_strategy": "Find via recent first-author positions on high-profile papers."
+    }
+  },
+
+  "citation_discovery_pipeline": {
+    "description": "Use citation graph analysis to find important papers we're missing, starting from our existing 154-paper corpus.",
+
+    "step_1_forward_citations": {
+      "description": "For each of our 154 papers, find papers that cite them. Papers cited BY many of our corpus papers are likely important.",
+      "method": "Semantic Scholar API: /paper/{id}/citations",
+      "metric": "Count how many of our 154 papers each citing paper references. Papers referencing 5+ of ours are strong candidates.",
+      "rationale": "A paper that cites many papers in our corpus is likely in the same intellectual neighborhood."
+    },
+
+    "step_2_cocitation_analysis": {
+      "description": "Find papers frequently co-cited with our corpus papers. If papers A and B from our corpus are often cited together with paper C, then C is likely relevant.",
+      "method": "Semantic Scholar API: /paper/{id}/citations -> intersection analysis",
+      "metric": "Co-citation frequency with our corpus"
+    },
+
+    "step_3_reverse_pagerank": {
+      "description": "Build citation graph among our corpus + their citations. Run PageRank to find papers that are central connectors in the citation network.",
+      "method": "Build adjacency matrix from citation data. Run PageRank. High-PR papers not in our corpus are discovery candidates.",
+      "rationale": "PageRank identifies papers that are not just cited a lot, but cited by OTHER highly-cited papers — the true connectors.",
+      "implementation_notes": [
+        "Seed the graph with our 154 papers",
+        "Add 1-hop citations (papers citing ours + papers ours cite)",
+        "Run PageRank on the full graph",
+        "Rank papers NOT in our corpus by their PR score",
+        "Top candidates fill gaps"
+      ]
+    },
+
+    "step_4_author_bridging": {
+      "description": "Find authors who connect our seed experts. Co-authorship network analysis reveals bridging figures.",
+      "method": "Build co-authorship graph from all papers. Find authors with high betweenness centrality who are not yet in our expert list.",
+      "rationale": "Bridging authors connect different subcommunities (e.g., someone who co-authored with both Sporns AND Seung spans macro and nano connectomics)."
+    },
+
+    "step_5_dimension_gap_fill": {
+      "description": "For dimensions with low coverage (cell-types: 4, ethics-society: 2), specifically search for landmark papers.",
+      "underserved_dimensions": {
+        "cell-types": "Search for Patch-seq, single-cell transcriptomics x connectivity papers",
+        "ethics-society": "Search for data sharing policy, neuroethics of brain mapping, open science in connectomics",
+        "neuroanatomy": "Search for synapse classification, ultrastructure quantification papers"
+      }
+    }
+  },
+
+  "practical_implementation": {
+    "phase_1_api_harvest": {
+      "description": "Query Semantic Scholar for citation data on all 154 papers",
+      "tool": "Semantic Scholar API (when accessible) or OpenAlex API",
+      "output": "Citation graph adjacency list"
+    },
+    "phase_2_graph_analysis": {
+      "description": "Build citation graph, run PageRank, co-citation analysis",
+      "tool": "Python networkx + scipy",
+      "output": "Ranked list of candidate papers not in corpus"
+    },
+    "phase_3_author_network": {
+      "description": "Build co-authorship graph, compute centrality measures",
+      "tool": "Python networkx",
+      "output": "Tiered author list with centrality scores"
+    },
+    "phase_4_enrichment": {
+      "description": "Add top candidates to corpus with tier labels",
+      "output": "Expanded corpus targeting 200-250 papers"
+    }
+  },
+
+  "named_candidates_to_investigate": {
+    "mentioned_by_user": [
+      {"name": "Amelio Vazquez-Reina", "likely_tier": 2, "area": "segmentation algorithms"},
+      {"name": "Jan Funke", "likely_tier": 2, "area": "synapse detection, segmentation, Janelia"},
+      {"name": "Michal Januszewski", "likely_tier": 2, "area": "FFN first author, Google"},
+      {"name": "Jeremy Maitin-Shepard", "likely_tier": 3, "area": "Neuroglancer, Google"},
+      {"name": "Aravi Samuel", "likely_tier": 1, "area": "C. elegans connectomics, BRAIN CONNECTS PI"},
+      {"name": "Alyssa Wilson", "likely_tier": 2, "area": "MICrONS data analysis"},
+      {"name": "Verena Kaynig", "likely_tier": 2, "area": "segmentation pipelines, Harvard"},
+      {"name": "Brock Wester", "likely_tier": 3, "area": "bossDB lead, JHU APL"},
+      {"name": "Daniel Xenes", "likely_tier": 3, "area": "bossDB infrastructure"},
+      {"name": "Anastasia Yendiki", "likely_tier": 1, "area": "diffusion tractography, BRAIN CONNECTS PI"},
+      {"name": "Divya Bhatt or Srini Turaga", "likely_tier": 2, "area": "deep learning for EM"},
+      {"name": "Srinivas Turaga", "likely_tier": 1, "area": "deep learning pioneer for connectomics, Janelia group leader"}
+    ],
+    "additional_candidates": [
+      {"name": "Shan Xu (C. Shan Xu)", "likely_tier": 2, "area": "FIB-SEM technology, enhanced FIB-SEM"},
+      {"name": "Kenneth Hayworth", "likely_tier": 2, "area": "ATLUM, tape-collecting microtome"},
+      {"name": "Casey Schneider-Mizell", "likely_tier": 2, "area": "MICrONS proofreading lead"},
+      {"name": "Stephan Saalfeld", "likely_tier": 2, "area": "image registration, CATMAID, Janelia"},
+      {"name": "Hanspeter Pfister", "likely_tier": 1, "area": "visualization, Harvard connectomics"},
+      {"name": "Toufiq Parag", "likely_tier": 2, "area": "error detection frameworks"},
+      {"name": "Kisuk Lee", "likely_tier": 2, "area": "superhuman segmentation, Princeton"},
+      {"name": "Benjamin Pedigo", "likely_tier": 4, "area": "graspologic, graph statistics"},
+      {"name": "Michael Winding", "likely_tier": 4, "area": "larval Drosophila connectome first author"},
+      {"name": "Jasper Phelps", "likely_tier": 4, "area": "GridTape, TEMCA2 technology"},
+      {"name": "William Silversmith", "likely_tier": 3, "area": "cloud-volume, kimimaro, Princeton infra"},
+      {"name": "Mala Murthy", "likely_tier": 1, "area": "FlyWire co-senior author, Drosophila circuits"},
+      {"name": "Hongkui Zeng", "likely_tier": 1, "area": "Allen cell census, BRAIN CONNECTS"},
+      {"name": "Justus Kebschull", "likely_tier": 2, "area": "BARseq, BRAIN CONNECTS PI"},
+      {"name": "Rachel Wilson", "likely_tier": 1, "area": "Drosophila olfactory circuits, Harvard"},
+      {"name": "Eric Perlman", "likely_tier": 3, "area": "visualization infrastructure, BigDataViewer"}
+    ]
+  }
+}

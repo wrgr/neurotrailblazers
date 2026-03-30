@@ -1,0 +1,16 @@
+{
+  "id": "turaga-2010-affinity-graphs",
+  "title": "Convolutional networks can learn to generate affinity graphs for image segmentation",
+  "authors": ["Turaga SC", "Murray JF", "Jain V", "Roth F", "Helmstaedter M", "Briggman KL", "Denk W", "Seung HS"],
+  "year": 2010,
+  "journal": "Neural Computation",
+  "doi": "10.1162/neco.2009.10-08-881",
+  "url": "https://direct.mit.edu/neco/article/22/2/511/7530",
+  "abstract": "We show that convolutional networks can be trained to produce affinity graphs — edge-weighted graphs indicating boundary probability between neighboring voxels — enabling neuron segmentation in EM volumes.",
+  "seed_expert": "Srinivas Turaga",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml"],
+  "tags": ["affinity-graph", "CNN", "segmentation", "foundational-ML"],
+  "duplicate_of_existing": "turaga-2010",
+  "notes": "Already in existing 102. Turaga is first author. Foundational paper connecting deep learning to connectomics. Links Turaga-Jain-Helmstaedter-Briggman-Denk-Seung."
+}

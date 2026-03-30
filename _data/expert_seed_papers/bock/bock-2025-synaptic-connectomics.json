@@ -1,0 +1,25 @@
+{
+  "id": "bock-2025-synaptic-connectomics",
+  "title": "Synaptic connectomics: status and prospects",
+  "authors": [
+    "Bock DD"
+  ],
+  "year": 2025,
+  "journal": "Nature Reviews Neuroscience",
+  "doi": "10.1038/s41583-025-00957-8",
+  "url": "https://www.nature.com/articles/s41583-025-00957-8",
+  "abstract": "High-throughput volume electron microscopy and deep learning-driven automated segmentation have revolutionized the mapping of neural circuits. This perspective discusses the current status and future prospects of synaptic connectomics.",
+  "seed_expert": "Davi Bock",
+  "dimensions": [
+    "connectomics",
+    "methodology"
+  ],
+  "tags": [
+    "review",
+    "perspective",
+    "state-of-field"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Recent perspective on where the field is heading.",
+  "author_tier": 1
+}

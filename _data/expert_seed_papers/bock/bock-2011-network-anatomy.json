@@ -1,0 +1,37 @@
+{
+  "id": "bock-2011-network-anatomy",
+  "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+  "authors": [
+    "Bock DD",
+    "Lee WCA",
+    "Kerlin AM",
+    "Andermann ML",
+    "Hood G",
+    "Wetzel AW",
+    "Yurgenson S",
+    "Soucy ER",
+    "Kim HS",
+    "Reid RC"
+  ],
+  "year": 2011,
+  "journal": "Nature",
+  "doi": "10.1038/nature09802",
+  "url": "https://www.nature.com/articles/nature09802",
+  "abstract": "In the cerebral cortex, weights of connections between neurons determine how activity patterns are produced. Using large-scale serial-section electron microscopy and functional two-photon calcium imaging, we study the network anatomy of inhibitory interneurons in mouse primary visual cortex, revealing the first combined functional-structural dataset in mammalian cortex.",
+  "seed_expert": "Davi Bock",
+  "dimensions": [
+    "connectomics",
+    "case-studies",
+    "image-acquisition"
+  ],
+  "tags": [
+    "visual-cortex",
+    "calcium-imaging",
+    "serial-EM",
+    "inhibitory-neurons",
+    "TEMCA"
+  ],
+  "duplicate_of_existing": "bock-2011",
+  "notes": "Already in existing 102. First combined 2-photon + volume EM in mammalian brain. Laid groundwork for MICrONS.",
+  "author_tier": 1
+}

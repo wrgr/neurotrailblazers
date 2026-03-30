@@ -1,0 +1,16 @@
+{
+  "id": "markowitz-2023-brain-connects",
+  "title": "BRAIN Initiative connectomics program direction and strategy",
+  "authors": ["Markowitz D"],
+  "year": 2023,
+  "journal": "NIH BRAIN Initiative",
+  "doi": null,
+  "url": "https://braininitiative.nih.gov/",
+  "abstract": "David Markowitz serves as a program director at NIH NINDS overseeing BRAIN Initiative connectomics programs including BRAIN CONNECTS. He has been instrumental in shaping the strategic direction of federal connectomics funding, coordinating the BRAIN CONNECTS network of 11 awards totaling $150M over 5 years.",
+  "seed_expert": "David Markowitz",
+  "author_tier": 1,
+  "dimensions": ["ethics-society", "connectomics"],
+  "tags": ["BRAIN-Initiative", "BRAIN-CONNECTS", "NIH", "program-direction", "funding-strategy"],
+  "duplicate_of_existing": null,
+  "notes": "Program director, not traditional author. Critical shaper of the connectomics funding landscape."
+}

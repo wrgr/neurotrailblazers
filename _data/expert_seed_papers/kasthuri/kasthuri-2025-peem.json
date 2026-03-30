@@ -1,0 +1,29 @@
+{
+  "id": "kasthuri-2025-peem",
+  "title": "Photoemission electron microscopy for connectomics",
+  "authors": [
+    "Bhatt DH",
+    "Bharioke A",
+    "Bhatt AN",
+    "Kasthuri N"
+  ],
+  "year": 2025,
+  "journal": "PNAS",
+  "doi": "10.1073/pnas.2521349122",
+  "url": "https://www.pnas.org/doi/10.1073/pnas.2521349122",
+  "abstract": "Photoemission electron microscopy (PEEM) offers a potential third modality for large-volume connectomics alongside TEM and SEM. We demonstrate gigavoxel-per-second acquisition rates with UV laser illumination on osmium-stained brain sections at synaptic resolution.",
+  "seed_expert": "Bobby Kasthuri",
+  "dimensions": [
+    "image-acquisition",
+    "methodology"
+  ],
+  "tags": [
+    "PEEM",
+    "new-modality",
+    "high-throughput",
+    "UV-laser"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Novel imaging modality that could dramatically accelerate connectomics data acquisition.",
+  "author_tier": 1
+}

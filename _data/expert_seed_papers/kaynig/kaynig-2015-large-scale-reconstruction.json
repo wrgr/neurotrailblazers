@@ -1,0 +1,16 @@
+{
+  "id": "kaynig-2015-large-scale-reconstruction",
+  "title": "Large-scale automatic reconstruction of neuronal processes from electron microscopy images",
+  "authors": ["Kaynig V", "Vazquez-Reina A", "Knowles-Barley S", "Roberts M", "Jones TR", "Kasthuri N", "Miller E", "Lichtman J", "Pfister H"],
+  "year": 2015,
+  "journal": "Medical Image Analysis",
+  "doi": "10.1016/j.media.2015.04.005",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1361841515000596",
+  "abstract": "We present a pipeline for large-scale automatic reconstruction of neuronal processes from serial section EM images, incorporating membrane detection, segmentation, and error correction.",
+  "seed_expert": "Verena Kaynig",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml", "methodology"],
+  "tags": ["automated-reconstruction", "pipeline", "segmentation", "error-correction"],
+  "duplicate_of_existing": null,
+  "notes": "First author Kaynig with Vazquez-Reina, Kasthuri, Lichtman, Pfister. Key early ML pipeline."
+}

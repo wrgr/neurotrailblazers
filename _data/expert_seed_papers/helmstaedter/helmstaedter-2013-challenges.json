@@ -1,0 +1,27 @@
+{
+  "id": "helmstaedter-2013-challenges",
+  "title": "Cellular-resolution connectomics: challenges of dense neural circuit reconstruction",
+  "authors": [
+    "Helmstaedter M"
+  ],
+  "year": 2013,
+  "journal": "Nature Methods",
+  "doi": "10.1038/nmeth.2476",
+  "url": "https://www.nature.com/articles/nmeth.2476",
+  "abstract": "Comprehensively mapping neuronal networks is a major challenge. Although recent developments in volume EM imaging have made data acquisition feasible for circuits of hundreds to thousands of neurons, data analysis is massively lagging behind. This paper summarizes and quantifies the analysis challenges and describes solutions involving crowd-sourcing and machine learning.",
+  "seed_expert": "Moritz Helmstaedter",
+  "dimensions": [
+    "connectomics",
+    "proofreading",
+    "methodology"
+  ],
+  "tags": [
+    "dense-reconstruction",
+    "challenges",
+    "crowd-sourcing",
+    "review"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Key framing of the data analysis bottleneck in connectomics.",
+  "author_tier": 1
+}

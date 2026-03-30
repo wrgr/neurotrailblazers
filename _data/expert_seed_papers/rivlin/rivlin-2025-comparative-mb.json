@@ -1,0 +1,29 @@
+{
+  "id": "rivlin-2025-comparative-mb",
+  "title": "Comparative Connectomics Highlights Conserved Architectural Synaptic Motifs in the Drosophila Mushroom Body",
+  "authors": [
+    "Rivlin PK",
+    "Robinette M",
+    "Matelsky JK",
+    "Wester B"
+  ],
+  "year": 2025,
+  "journal": "bioRxiv preprint",
+  "doi": "10.1101/2025.09.22.677863",
+  "url": "https://www.biorxiv.org/content/10.1101/2025.09.22.677863v1",
+  "abstract": "Using network neuroscience tools across multiple EM connectome datasets, we detect conserved convergent synaptic motifs in the Drosophila mushroom body across individuals, revealing previously unrecognized multiply-convergent motifs that may optimize information transfer.",
+  "seed_expert": "Patricia Rivlin",
+  "dimensions": [
+    "network-analysis",
+    "case-studies"
+  ],
+  "tags": [
+    "comparative-connectomics",
+    "mushroom-body",
+    "motifs",
+    "drosophila"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Comparative connectomics approach across individual fly brains.",
+  "author_tier": 2
+}

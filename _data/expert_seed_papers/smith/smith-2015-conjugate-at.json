@@ -1,0 +1,31 @@
+{
+  "id": "smith-2015-conjugate-at",
+  "title": "Mapping Synapses by Conjugate Light-Electron Array Tomography",
+  "authors": [
+    "Collman F",
+    "Buchanan J",
+    "Phend KD",
+    "Micheva KD",
+    "Weinberg RJ",
+    "Smith SJ"
+  ],
+  "year": 2015,
+  "journal": "Journal of Neuroscience",
+  "doi": "10.1523/JNEUROSCI.4274-14.2015",
+  "url": "https://www.jneurosci.org/content/35/14/5792",
+  "abstract": "Conjugate array tomography integrates immunofluorescence and EM imaging in voxel-conjugate fashion, enabling simultaneous molecular and ultrastructural characterization of individual synapses.",
+  "seed_expert": "Stephen Smith",
+  "dimensions": [
+    "image-acquisition",
+    "neuroanatomy"
+  ],
+  "tags": [
+    "conjugate-AT",
+    "CLEM",
+    "synapse-mapping",
+    "molecular-ultrastructure"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Bridges molecular identity and ultrastructure at single synapses. Links to Collman.",
+  "author_tier": 1
+}

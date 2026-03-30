@@ -1,0 +1,30 @@
+{
+  "id": "cardona-2012-catmaid",
+  "title": "CATMAID: Collaborative annotation toolkit for massive amounts of image data",
+  "authors": [
+    "Saalfeld S",
+    "Cardona A",
+    "Hartenstein V",
+    "Tomancak P"
+  ],
+  "year": 2009,
+  "journal": "Bioinformatics",
+  "doi": "10.1093/bioinformatics/btp266",
+  "url": "https://academic.oup.com/bioinformatics/article/25/15/1984/210322",
+  "abstract": "CATMAID is a web-based collaborative platform for tracing neurons and annotating synapses in large EM image stacks, enabling distributed teams to simultaneously reconstruct neural circuits.",
+  "seed_expert": "Albert Cardona",
+  "dimensions": [
+    "data-infrastructure",
+    "proofreading"
+  ],
+  "tags": [
+    "CATMAID",
+    "collaborative-annotation",
+    "web-based",
+    "neuron-tracing",
+    "software"
+  ],
+  "duplicate_of_existing": "saalfeld-2009-catmaid",
+  "notes": "Already in existing 102. Key annotation platform used for Drosophila larval connectome.",
+  "author_tier": 1
+}

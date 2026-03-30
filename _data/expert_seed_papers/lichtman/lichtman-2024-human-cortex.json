@@ -1,0 +1,49 @@
+{
+  "id": "lichtman-2024-human-cortex",
+  "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution",
+  "authors": [
+    "Shapson-Coe A",
+    "Januszewski M",
+    "Berger DR",
+    "Pope A",
+    "Wu Y",
+    "Blakely T",
+    "Schalek RL",
+    "Li PH",
+    "Wang S",
+    "Maitin-Shepard J",
+    "Karlupia N",
+    "Dorkenwald S",
+    "Sjostedt E",
+    "Leavitt L",
+    "Lee D",
+    "Bailey L",
+    "Fitber A",
+    "Kar M",
+    "Case B",
+    "Takemura SY",
+    "Rivlin PK",
+    "Jain V",
+    "Lichtman JW"
+  ],
+  "year": 2024,
+  "journal": "Science",
+  "doi": "10.1126/science.adk4858",
+  "url": "https://www.science.org/doi/10.1126/science.adk4858",
+  "abstract": "A 1.4 petabyte EM dataset of a 1mm3 sample of human temporal cortex was imaged at 4nm resolution, revealing tens of thousands of neurons, 130 million synapses, and unusual structures including axonal whorls and multi-synaptic connections not previously described.",
+  "seed_expert": "Jeff Lichtman",
+  "dimensions": [
+    "connectomics",
+    "case-studies",
+    "image-acquisition"
+  ],
+  "tags": [
+    "human-cortex",
+    "petascale",
+    "temporal-cortex",
+    "dataset"
+  ],
+  "duplicate_of_existing": "shapson-coe-2024",
+  "notes": "Already in existing 102. Landmark human cortex EM dataset.",
+  "author_tier": 1
+}

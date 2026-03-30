@@ -1,0 +1,16 @@
+{
+  "id": "pfister-2013-connectome-explorer",
+  "title": "ConnectomeExplorer: query-guided visual analysis of large volumetric neuroscience data",
+  "authors": ["Beyer J", "Al-Awami A", "Kasthuri N", "Lichtman JW", "Pfister H", "Hadwiger M"],
+  "year": 2013,
+  "journal": "IEEE Transactions on Visualization and Computer Graphics",
+  "doi": "10.1109/TVCG.2013.142",
+  "url": "https://ieeexplore.ieee.org/document/6634178",
+  "abstract": "ConnectomeExplorer is an application for the query-guided visual analysis of large volumetric electron microscopy datasets for connectomics. It combines volumetric data visualization with an interactive query algebra that enables neuroscientists to pose domain-specific questions about neural connectivity.",
+  "seed_expert": "Hanspeter Pfister",
+  "author_tier": 1,
+  "dimensions": ["data-infrastructure"],
+  "tags": ["visualization", "volumetric", "query", "electron-microscopy", "interactive"],
+  "duplicate_of_existing": null,
+  "notes": "Hanspeter Pfister, Harvard School of Engineering and Applied Sciences. Key contribution to connectomics data visualization tools."
+}

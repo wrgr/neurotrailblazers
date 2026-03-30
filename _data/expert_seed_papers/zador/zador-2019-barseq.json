@@ -1,0 +1,30 @@
+{
+  "id": "zador-2019-barseq",
+  "title": "High-throughput mapping of long-range neuronal projection using in situ sequencing",
+  "authors": [
+    "Chen X",
+    "Sun YC",
+    "Church GM",
+    "Lee JH",
+    "Zador AM"
+  ],
+  "year": 2019,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2019.09.023",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(19)31056-7",
+  "abstract": "BARseq maps neuronal projections by in situ sequencing of RNA barcodes, preserving spatial information. We mapped 3,579 neurons in mouse auditory cortex, resolving projection patterns at single-neuron resolution.",
+  "seed_expert": "Anthony Zador",
+  "dimensions": [
+    "methodology",
+    "connectomics"
+  ],
+  "tags": [
+    "BARseq",
+    "in-situ-sequencing",
+    "auditory-cortex",
+    "projection-mapping"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "In situ sequencing upgrade to MAPseq; preserves spatial context.",
+  "author_tier": 1
+}

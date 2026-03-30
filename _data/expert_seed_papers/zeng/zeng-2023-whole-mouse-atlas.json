@@ -1,0 +1,16 @@
+{
+  "id": "zeng-2023-whole-mouse-atlas",
+  "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+  "authors": ["Yao Z", "van Velthoven CTJ", "Kunst M", "Zhang M", "McMillen D", "Lee C", "Jung W", "Goldy J", "Abdelhak A", "Ament S", "Bakken TE", "Berg J", "Bertagnolli D", "Casper T", "Clure N", "Dee N", "Fong O", "Garren E", "Glandon A", "Gray J", "Graybuck LT", "Hirschstein D", "Kroll M", "Lathia K", "Levi B", "McMillen D", "Mich JK", "Mukamel E", "Phillips JW", "Pinto-Duarte A", "Rimorin C", "Shapovalova NV", "Siletti K", "Smith KA", "Sorensen SA", "Tieu M", "Torkelson A", "Tung H", "Ward K", "Arkhipov A", "Ecker JR", "Koch C", "Lein ES", "Zeng H"],
+  "year": 2023,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-023-06812-z",
+  "url": "https://www.nature.com/articles/s41586-023-06812-z",
+  "abstract": "Comprehensive atlas of 5,322 cell type clusters in the adult mouse brain using single-cell RNA sequencing (scRNA-seq) and multiplexed error-robust fluorescence in situ hybridization (MERFISH). Provides a high-resolution transcriptomic and spatial reference for the entire mouse brain, enabling systematic identification of cell types and their spatial distributions across all brain regions.",
+  "seed_expert": "Hongkui Zeng",
+  "author_tier": 1,
+  "dimensions": ["cell-types", "methodology"],
+  "tags": ["scRNA-seq", "MERFISH", "mouse-brain", "cell-atlas", "whole-brain", "Allen-Institute"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Foundational whole-mouse-brain cell type atlas from Allen Institute."
+}

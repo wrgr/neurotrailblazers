@@ -1,0 +1,28 @@
+{
+  "id": "helmstaedter-2017-webknossos",
+  "title": "webKnossos: efficient online 3D data annotation for connectomics",
+  "authors": [
+    "Boergens KM",
+    "Berning M",
+    "Helmstaedter M"
+  ],
+  "year": 2017,
+  "journal": "Nature Methods",
+  "doi": "10.1038/nmeth.4331",
+  "url": "https://www.nature.com/articles/nmeth.4331",
+  "abstract": "webKnossos is a browser-based tool for efficient annotation of large-scale 3D EM datasets, enabling skeleton tracing and volume annotation for connectomics at scale with no local software installation required.",
+  "seed_expert": "Moritz Helmstaedter",
+  "dimensions": [
+    "data-infrastructure",
+    "proofreading"
+  ],
+  "tags": [
+    "webKnossos",
+    "annotation",
+    "browser-based",
+    "software"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Widely used annotation platform for connectomics.",
+  "author_tier": 1
+}

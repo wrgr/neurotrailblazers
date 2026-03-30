@@ -1,0 +1,33 @@
+{
+  "id": "briggman-2013-retina-ipl",
+  "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+  "authors": [
+    "Helmstaedter M",
+    "Briggman KL",
+    "Turaga SC",
+    "Jain V",
+    "Seung HS",
+    "Denk W"
+  ],
+  "year": 2013,
+  "journal": "Nature",
+  "doi": "10.1038/nature12346",
+  "url": "https://www.nature.com/articles/nature12346",
+  "abstract": "We present the dense reconstruction of 950 neurons and their mutual contacts in the mouse retinal inner plexiform layer, achieved via crowd-sourced annotation and machine-learning segmentation of SBEM data. A new bipolar cell type was identified.",
+  "seed_expert": "Kevin Briggman",
+  "dimensions": [
+    "connectomics",
+    "case-studies",
+    "computer-vision-ml"
+  ],
+  "tags": [
+    "retina",
+    "dense-reconstruction",
+    "bipolar-cells",
+    "SBEM",
+    "crowd-sourcing"
+  ],
+  "duplicate_of_existing": "helmstaedter-2013",
+  "notes": "Already in existing 102. First dense mammalian connectome (retina).",
+  "author_tier": 1
+}

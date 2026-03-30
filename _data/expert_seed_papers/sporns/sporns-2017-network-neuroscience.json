@@ -1,0 +1,26 @@
+{
+  "id": "sporns-2017-network-neuroscience",
+  "title": "Network Neuroscience",
+  "authors": [
+    "Bassett DS",
+    "Sporns O"
+  ],
+  "year": 2017,
+  "journal": "Nature Neuroscience",
+  "doi": "10.1038/nn.4502",
+  "url": "https://www.nature.com/articles/nn.4502",
+  "abstract": "Despite substantial recent progress, many questions in neuroscience require a more complete understanding of how brain network organization gives rise to brain function. Network neuroscience is an emerging discipline that tackles these questions by examining functional and structural brain networks.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": [
+    "connectomics",
+    "network-analysis"
+  ],
+  "tags": [
+    "network-neuroscience",
+    "review",
+    "framework"
+  ],
+  "duplicate_of_existing": "bassett-sporns-2017",
+  "notes": "Already in existing 102. Defines the field of network neuroscience.",
+  "author_tier": 1
+}

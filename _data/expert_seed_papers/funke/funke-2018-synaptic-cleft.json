@@ -1,0 +1,16 @@
+{
+  "id": "funke-2018-synaptic-cleft",
+  "title": "Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain",
+  "authors": ["Heinrich L", "Funke J", "Pape C", "Nunez-Iglesias J", "Saalfeld S"],
+  "year": 2018,
+  "journal": "MICCAI",
+  "doi": "10.1007/978-3-030-00934-2_36",
+  "url": "https://link.springer.com/chapter/10.1007/978-3-030-00934-2_36",
+  "abstract": "We present a method for detecting synaptic clefts in anisotropic volume EM data of the complete Drosophila brain, addressing the challenge that standard 3D approaches fail on non-isotropic data.",
+  "seed_expert": "Jan Funke",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml"],
+  "tags": ["synapse-detection", "synaptic-cleft", "drosophila", "anisotropic"],
+  "duplicate_of_existing": "heinrich-2018",
+  "notes": "Already in existing 102. Funke is key methods contributor."
+}

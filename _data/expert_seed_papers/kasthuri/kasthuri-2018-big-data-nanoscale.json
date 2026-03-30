@@ -1,0 +1,25 @@
+{
+  "id": "kasthuri-2018-big-data-nanoscale",
+  "title": "Big data in nanoscale connectomics, and the greed for training labels",
+  "authors": [
+    "Kasthuri N"
+  ],
+  "year": 2018,
+  "journal": "Current Opinion in Neurobiology",
+  "doi": "10.1016/j.conb.2018.09.002",
+  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0959438818301016",
+  "abstract": "A perspective on the data challenges in nanoscale connectomics, discussing the bottleneck of obtaining sufficient training labels for machine learning-based segmentation and synapse detection.",
+  "seed_expert": "Bobby Kasthuri",
+  "dimensions": [
+    "computer-vision-ml",
+    "methodology"
+  ],
+  "tags": [
+    "training-data",
+    "annotation-bottleneck",
+    "perspective"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Identifies the training label bottleneck as a key challenge.",
+  "author_tier": 1
+}

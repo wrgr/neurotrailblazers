@@ -1,0 +1,17 @@
+{
+  "id": "lee-2016-anatomy-function",
+  "title": "Anatomy and function of an excitatory network in the visual cortex",
+  "authors": ["Lee WCA", "Bonin V", "Reed M", "Graham BJ", "Hood G", "Glattfelder K", "Reid RC"],
+  "year": 2016,
+  "journal": "Nature",
+  "doi": "10.1038/nature17192",
+  "url": "https://www.nature.com/articles/nature17192",
+  "abstract": "Combined two-photon calcium imaging with serial section EM to reconstruct the local connectivity of functionally characterized neurons in mouse visual cortex, revealing that nearby neurons with similar response properties share more synaptic connections.",
+  "seed_expert": "Wei-Chung Allen Lee",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["visual-cortex", "structure-function", "calcium-imaging", "serial-EM"],
+  "duplicate_of_existing": null,
+  "notes": "First author is seed expert. No bossDB project specified.",
+  "bossdb_project": null
+}

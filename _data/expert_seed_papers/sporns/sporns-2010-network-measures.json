@@ -1,0 +1,27 @@
+{
+  "id": "sporns-2010-network-measures",
+  "title": "Complex Network Measures of Brain Connectivity: Uses and Interpretations",
+  "authors": [
+    "Rubinov M",
+    "Sporns O"
+  ],
+  "year": 2010,
+  "journal": "NeuroImage",
+  "doi": "10.1016/j.neuroimage.2009.10.003",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1053811909010885",
+  "abstract": "Brain connectivity datasets comprise networks of brain regions connected by structural and/or functional links. Complex network analysis\u2014a new multidisciplinary approach to the study of complex systems\u2014aims to characterize these networks with a small number of neurobiologically meaningful and easily computable measures. This article provides a comprehensive overview of these measures and discusses their uses and interpretations.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": [
+    "network-analysis",
+    "methodology"
+  ],
+  "tags": [
+    "graph-measures",
+    "modularity",
+    "centrality",
+    "brain-connectivity-toolbox"
+  ],
+  "duplicate_of_existing": "rubinov-sporns-2010",
+  "notes": "Already in existing 102 papers. Defines standard graph measures for brain networks; extremely highly cited.",
+  "author_tier": 1
+}

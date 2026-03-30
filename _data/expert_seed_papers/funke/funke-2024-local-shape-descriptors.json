@@ -1,0 +1,16 @@
+{
+  "id": "funke-2024-local-shape-descriptors",
+  "title": "Local shape descriptors for neuron segmentation",
+  "authors": ["Sheridan A", "Nguyen TM", "Deb D", "Lee WCA", "Saalfeld S", "Turaga SC", "Manor U", "Funke J"],
+  "year": 2023,
+  "journal": "Nature Methods",
+  "doi": "10.1038/s41592-022-01711-z",
+  "url": "https://www.nature.com/articles/s41592-022-01711-z",
+  "abstract": "Local shape descriptors (LSDs) provide an auxiliary learning signal for neuron boundary prediction that improves segmentation accuracy across diverse EM datasets, requiring less training data than direct affinity prediction.",
+  "seed_expert": "Jan Funke",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml"],
+  "tags": ["local-shape-descriptors", "LSD", "segmentation", "auxiliary-learning"],
+  "duplicate_of_existing": "sheridan-2023-lsd",
+  "notes": "Already in existing 102. Widely adopted segmentation improvement."
+}

@@ -1,0 +1,255 @@
+{
+  "version": "3.0",
+  "date_compiled": "2026-03-30",
+  "description": "Comprehensive tiered author list for connectomics corpus. Overcomplete by design — filter downstream by tier, citation count, or author position.",
+  "total_experts_tier1": 29,
+  "total_contributors_all_tiers": 55,
+  "design_philosophy": "Overcomplete > undercomplete. We can filter to find cores (last-author PIs), most-cited, or first-author key contributors. Better to have the full network and prune than to miss important people.",
+  "sources_crosschecked": [
+    "Original 22-expert seed list",
+    "Existing 102-paper journal_papers.yml corpus",
+    "bossDB dataset PIs and contributors",
+    "BRAIN CONNECTS NIH award PIs (2023-2024)",
+    "Frequent authors in existing corpus (Dorkenwald S = 7 papers)"
+  ],
+  "experts": [
+    {
+      "id": 1,
+      "name": "Olaf Sporns",
+      "affiliation": "Indiana University",
+      "role": "Coined 'connectome' (2005), graph theory pioneer",
+      "dimensions": ["connectomics", "network-analysis"],
+      "source": "original-seed"
+    },
+    {
+      "id": 2,
+      "name": "Davi Bock",
+      "affiliation": "University of Vermont / Janelia",
+      "role": "Large-scale EM connectomics, FAFB dataset, FlyWire co-lead",
+      "dimensions": ["image-acquisition", "case-studies"],
+      "source": "original-seed"
+    },
+    {
+      "id": 3,
+      "name": "R. Clay Reid",
+      "affiliation": "Allen Institute for Brain Science",
+      "role": "Cortical circuits, MICrONS co-PI",
+      "dimensions": ["connectomics", "case-studies"],
+      "source": "original-seed"
+    },
+    {
+      "id": 4,
+      "name": "Jeff Lichtman",
+      "affiliation": "Harvard University",
+      "role": "Large-scale mammalian EM, Brainbow, BRAIN CONNECTS PI",
+      "dimensions": ["image-acquisition", "connectomics"],
+      "source": "original-seed"
+    },
+    {
+      "id": 5,
+      "name": "Nuno Maçarico da Costa",
+      "affiliation": "Allen Institute for Brain Science",
+      "role": "Cortical connectivity, MICrONS co-PI, BRAIN CONNECTS PI",
+      "dimensions": ["connectomics", "case-studies"],
+      "source": "original-seed"
+    },
+    {
+      "id": 6,
+      "name": "William Gray Roncal",
+      "affiliation": "JHU Applied Physics Laboratory",
+      "role": "Computational connectomics pipelines, bossDB, NeuroData",
+      "dimensions": ["data-infrastructure", "computer-vision-ml"],
+      "source": "original-seed"
+    },
+    {
+      "id": 7,
+      "name": "Joshua Vogelstein",
+      "affiliation": "Johns Hopkins University",
+      "role": "Statistical connectomics, graph statistics, NeuroData",
+      "dimensions": ["network-analysis", "methodology"],
+      "source": "original-seed"
+    },
+    {
+      "id": 8,
+      "name": "Kevin Briggman",
+      "affiliation": "CAESAR / NIH NINDS",
+      "role": "Retinal circuit connectomics, volume EM",
+      "dimensions": ["connectomics", "case-studies"],
+      "source": "original-seed"
+    },
+    {
+      "id": 9,
+      "name": "Moritz Helmstaedter",
+      "affiliation": "Max Planck Institute for Brain Research",
+      "role": "Dense cortical reconstruction, webKnossos",
+      "dimensions": ["connectomics", "proofreading"],
+      "source": "original-seed"
+    },
+    {
+      "id": 10,
+      "name": "H. Sebastian Seung",
+      "affiliation": "Princeton University",
+      "role": "EyeWire, flood-filling networks, FlyWire, BRAIN CONNECTS",
+      "dimensions": ["computer-vision-ml", "connectomics", "proofreading"],
+      "source": "original-seed"
+    },
+    {
+      "id": 11,
+      "name": "Nir Shavit",
+      "affiliation": "MIT CSAIL / Tel Aviv University",
+      "role": "Computational infrastructure, SmartEM, BRAIN CONNECTS PI",
+      "dimensions": ["data-infrastructure", "computer-vision-ml"],
+      "source": "original-seed"
+    },
+    {
+      "id": 12,
+      "name": "Bobby Kasthuri",
+      "affiliation": "University of Chicago / Argonne National Lab",
+      "role": "Nanoscale connectomics, saturated reconstruction",
+      "dimensions": ["connectomics", "image-acquisition"],
+      "source": "original-seed"
+    },
+    {
+      "id": 13,
+      "name": "Stephen Plaza",
+      "affiliation": "Janelia Research Campus / HHMI",
+      "role": "FlyEM project lead, hemibrain/MANC connectomes",
+      "dimensions": ["case-studies", "proofreading"],
+      "source": "original-seed"
+    },
+    {
+      "id": 14,
+      "name": "Patricia Rivlin",
+      "affiliation": "JHU Applied Physics Laboratory",
+      "role": "Drosophila circuit mapping, mushroom body connectomics",
+      "dimensions": ["case-studies", "network-analysis"],
+      "source": "original-seed"
+    },
+    {
+      "id": 15,
+      "name": "Anthony Zador",
+      "affiliation": "Cold Spring Harbor Laboratory",
+      "role": "MAPseq, BARseq, barcoding-based connectivity mapping",
+      "dimensions": ["methodology", "connectomics"],
+      "source": "original-seed"
+    },
+    {
+      "id": 16,
+      "name": "Viren Jain",
+      "affiliation": "Google Research",
+      "role": "Flood-filling networks, segmentation at scale, BRAIN CONNECTS",
+      "dimensions": ["computer-vision-ml", "connectomics"],
+      "source": "original-seed"
+    },
+    {
+      "id": 17,
+      "name": "Andreas Tolias",
+      "affiliation": "Stanford / Baylor College of Medicine",
+      "role": "Functional connectomics, MICrONS structure-function linking",
+      "dimensions": ["connectomics", "case-studies"],
+      "source": "original-seed"
+    },
+    {
+      "id": 18,
+      "name": "Carey Priebe",
+      "affiliation": "Johns Hopkins University",
+      "role": "Statistical graph inference, random dot product graphs",
+      "dimensions": ["network-analysis", "methodology"],
+      "source": "original-seed"
+    },
+    {
+      "id": 19,
+      "name": "Konrad Kording",
+      "affiliation": "University of Pennsylvania",
+      "role": "Computational neuroscience, ML for neuro, Neuromatch",
+      "dimensions": ["computer-vision-ml", "methodology"],
+      "source": "original-seed"
+    },
+    {
+      "id": 20,
+      "name": "Stephen Smith",
+      "affiliation": "Stanford University",
+      "role": "Array tomography, synapse molecular analysis",
+      "dimensions": ["neuroanatomy", "image-acquisition"],
+      "source": "original-seed"
+    },
+    {
+      "id": 21,
+      "name": "George Spirou",
+      "affiliation": "University of South Florida",
+      "role": "Auditory circuit connectomics, cochlear nucleus connectome",
+      "dimensions": ["case-studies", "connectomics"],
+      "source": "original-seed"
+    },
+    {
+      "id": 22,
+      "name": "Kristen Harris",
+      "affiliation": "University of Texas at Austin",
+      "role": "Synaptic ultrastructure, dendritic spines, serial EM pioneer",
+      "dimensions": ["neuroanatomy", "methodology"],
+      "source": "original-seed"
+    },
+    {
+      "id": 23,
+      "name": "Ed Boyden",
+      "affiliation": "MIT",
+      "role": "Expansion microscopy, optical connectomics",
+      "dimensions": ["image-acquisition", "methodology"],
+      "source": "original-seed"
+    },
+    {
+      "id": 24,
+      "name": "Winfried Denk",
+      "affiliation": "Max Planck Institute of Neurobiology",
+      "role": "Inventor of serial block-face SEM (SBEM), two-photon microscopy",
+      "dimensions": ["image-acquisition"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "foundational EM technology, co-author on multiple existing papers"
+    },
+    {
+      "id": 25,
+      "name": "Albert Cardona",
+      "affiliation": "University of Cambridge / MRC LMB",
+      "role": "CATMAID developer, larval Drosophila connectome",
+      "dimensions": ["data-infrastructure", "case-studies"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "existing 102 papers (CATMAID), Drosophila larval connectome"
+    },
+    {
+      "id": 26,
+      "name": "Louis Scheffer",
+      "affiliation": "Janelia Research Campus / HHMI",
+      "role": "FlyEM co-lead, hemibrain connectome analysis",
+      "dimensions": ["case-studies", "connectomics"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "co-first-author on hemibrain paper in existing 102"
+    },
+    {
+      "id": 27,
+      "name": "Gregory Jefferis",
+      "affiliation": "MRC LMB / University of Cambridge",
+      "role": "FlyWire co-lead, Drosophila neuron typing, natverse tools",
+      "dimensions": ["case-studies", "cell-types"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "FlyWire co-senior author, BRAIN CONNECTS collaborator"
+    },
+    {
+      "id": 28,
+      "name": "Forrest Collman",
+      "affiliation": "Allen Institute for Brain Science",
+      "role": "CAVE system architect, MICrONS annotation, BRAIN CONNECTS PI",
+      "dimensions": ["data-infrastructure", "proofreading"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "CAVE/CAVEclient in existing 102, BRAIN CONNECTS PI"
+    },
+    {
+      "id": 29,
+      "name": "Sven Dorkenwald",
+      "affiliation": "Princeton University / Allen Institute",
+      "role": "FlyWire proofreading, CAVE, segmentation pipelines",
+      "dimensions": ["proofreading", "data-infrastructure", "computer-vision-ml"],
+      "source": "added-crosscheck",
+      "crosscheck_source": "Most frequent author in existing 102 (7 papers)"
+    }
+  ]
+}

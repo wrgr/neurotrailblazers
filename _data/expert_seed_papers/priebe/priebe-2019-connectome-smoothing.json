@@ -1,0 +1,33 @@
+{
+  "id": "priebe-2019-connectome-smoothing",
+  "title": "Connectome Smoothing via Low-rank Approximations",
+  "authors": [
+    "Tang R",
+    "Ketcha M",
+    "Badea A",
+    "Calabrese ED",
+    "Margulies DS",
+    "Vogelstein JT",
+    "Priebe CE",
+    "Sussman DL"
+  ],
+  "year": 2019,
+  "journal": "IEEE Transactions on Medical Imaging",
+  "doi": "10.1109/TMI.2018.2885968",
+  "url": "https://ieeexplore.ieee.org/document/8573755",
+  "abstract": "We propose low-rank matrix approximations for denoising connectomes estimated from diffusion MRI, demonstrating improved downstream statistical inference.",
+  "seed_expert": "Carey Priebe",
+  "dimensions": [
+    "network-analysis",
+    "methodology"
+  ],
+  "tags": [
+    "connectome-denoising",
+    "low-rank",
+    "diffusion-MRI",
+    "matrix-approximation"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Practical statistical method for improving connectome quality.",
+  "author_tier": 1
+}

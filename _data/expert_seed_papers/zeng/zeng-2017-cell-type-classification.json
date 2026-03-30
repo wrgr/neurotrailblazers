@@ -1,0 +1,16 @@
+{
+  "id": "zeng-2017-cell-type-classification",
+  "title": "Neuronal cell-type classification: challenges, opportunities and the path forward",
+  "authors": ["Zeng H", "Sanes JR"],
+  "year": 2017,
+  "journal": "Nature Reviews Neuroscience",
+  "doi": "10.1038/nrn.2017.85",
+  "url": "https://www.nature.com/articles/nrn.2017.85",
+  "abstract": "A comprehensive review of approaches to neuronal cell-type classification, discussing molecular, morphological, electrophysiological, and connectomic methods. Proposes a framework for integrating multiple data modalities to achieve a consensus taxonomy of brain cell types, addressing challenges of defining discrete types from continuous variation.",
+  "seed_expert": "Hongkui Zeng",
+  "author_tier": 1,
+  "dimensions": ["cell-types", "methodology"],
+  "tags": ["cell-classification", "taxonomy", "multimodal", "review"],
+  "duplicate_of_existing": "zeng-sanes-2017",
+  "notes": "Landmark review on cell type classification. Co-authored with Joshua Sanes."
+}

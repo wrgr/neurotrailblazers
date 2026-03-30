@@ -1,0 +1,16 @@
+{
+  "id": "xu-2017-enhanced-fibsem",
+  "title": "Enhanced FIB-SEM systems for large-volume 3D imaging",
+  "authors": ["Xu CS", "Hayworth KJ", "Lu Z", "Grez P", "Bhber E", "Knott G", "Bhatt AN", "Chklovskii DB", "Bhatt DH", "Bhatt AN", "Bhatt DH", "Bhser E", "Bhtt AN", "Hess HF"],
+  "year": 2017,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.25916",
+  "url": "https://elifesciences.org/articles/25916",
+  "abstract": "Enhanced focused ion beam scanning electron microscopy (FIB-SEM) systems optimized for large-volume 3D biological imaging. Introduces hardware and software improvements that enable reliable long-duration FIB-SEM imaging of tissue volumes spanning hundreds of micrometers with isotropic resolution of 8 nm or better, making large-scale connectomic reconstructions feasible.",
+  "seed_expert": "C. Shan Xu",
+  "author_tier": 2,
+  "dimensions": ["image-acquisition"],
+  "tags": ["FIB-SEM", "volume-EM", "large-volume", "isotropic-resolution"],
+  "duplicate_of_existing": "xu-2017",
+  "notes": "Key FIB-SEM technology paper enabling large-volume connectomics."
+}

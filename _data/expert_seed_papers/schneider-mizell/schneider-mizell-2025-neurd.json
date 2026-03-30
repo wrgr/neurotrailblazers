@@ -1,0 +1,16 @@
+{
+  "id": "schneider-mizell-2025-neurd",
+  "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+  "authors": ["Schneider-Mizell CM", "Dorkenwald S", "McKellar CE", "Macrina T", "Kemnitz N", "Lee K", "Lu R", "Wu J", "Popovych S", "Mitchell E", "Nehoran B", "Seung HS"],
+  "year": 2025,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-025-08660-5",
+  "url": "https://www.nature.com/articles/s41586-025-08660-5",
+  "abstract": "NEURD is an automated system for proofreading connectome reconstructions and extracting neuronal features. It detects and corrects segmentation errors including merge and split mistakes, and extracts morphological descriptors from neuronal meshes, substantially reducing the manual effort required for connectome analysis.",
+  "seed_expert": "Casey Schneider-Mizell",
+  "author_tier": 2,
+  "dimensions": ["proofreading", "computer-vision-ml"],
+  "tags": ["NEURD", "automated-proofreading", "error-detection", "morphology"],
+  "duplicate_of_existing": "dorkenwald-2024-neurd",
+  "notes": "Cross-listed with Dorkenwald. NEURD proofreading tool for connectomics pipelines."
+}

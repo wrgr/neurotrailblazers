@@ -1,0 +1,16 @@
+{
+  "id": "funke-2024-analyzing-segmentation",
+  "title": "Analyzing image segmentation for connectomics",
+  "authors": ["Funke J", "Tschopp F", "Grisaitis W", "Sheridan A", "Singh C", "Saalfeld S", "Turaga SC"],
+  "year": 2024,
+  "journal": "preprint",
+  "doi": "",
+  "url": "",
+  "abstract": "Proposes and evaluates metrics for assessing the quality of image segmentation in connectomics pipelines. Analyzes how different types of segmentation errors (merge errors, split errors, boundary shifts) impact downstream connectome reconstruction, and introduces evaluation frameworks that better capture biologically relevant segmentation accuracy compared to standard computer vision metrics.",
+  "seed_expert": "Jan Funke",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml", "methodology"],
+  "tags": ["segmentation", "evaluation-metrics", "quality-assessment", "connectome-reconstruction"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Evaluation metrics for segmentation quality in connectomics."
+}

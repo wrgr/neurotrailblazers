@@ -1,0 +1,1693 @@
+{
+  "generated": "2026-03-30",
+  "total_expert_seed_papers": 137,
+  "new_papers": [
+    {
+      "id": "bock-2025-synaptic-connectomics",
+      "title": "Synaptic connectomics: status and prospects",
+      "year": 2025,
+      "dims": [
+        "connectomics",
+        "methodology"
+      ]
+    },
+    {
+      "id": "boyden-2015-expansion-microscopy",
+      "title": "Expansion microscopy",
+      "year": 2015,
+      "dims": [
+        "image-acquisition",
+        "methodology"
+      ]
+    },
+    {
+      "id": "boyden-2017-exm-reconstruction",
+      "title": "Feasibility of 3D Reconstruction of Neural Morphology Using Expansion Microscopy and Barcode-Guided Agglomeration",
+      "year": 2017,
+      "dims": [
+        "computer-vision-ml",
+        "image-acquisition"
+      ]
+    },
+    {
+      "id": "boyden-2020-spectral-connectomics",
+      "title": "Light microscopy based approach for mapping connectivity with molecular specificity",
+      "year": 2020,
+      "dims": [
+        "image-acquisition",
+        "methodology"
+      ]
+    },
+    {
+      "id": "boyden-2025-liconn",
+      "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+      "year": 2025,
+      "dims": [
+        "image-acquisition",
+        "computer-vision-ml",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "briggman-2011-direction-selectivity",
+      "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+      "year": 2011,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "briggman-2015-extracellular-space",
+      "title": "Extracellular space preservation aids the connectomic analysis of neural circuits",
+      "year": 2015,
+      "dims": [
+        "image-acquisition",
+        "methodology"
+      ]
+    },
+    {
+      "id": "briggman-2020-night-vision",
+      "title": "Connectomic analysis reveals an interneuron with an integral role in the retinal circuit for night vision",
+      "year": 2020,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "dacosta-2025-sst-types",
+      "title": "Connectomics of predicted Sst transcriptomic types in mouse visual cortex",
+      "year": 2025,
+      "dims": [
+        "cell-types",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "betzel-2021-open-datasets",
+      "title": "Large, Open Datasets for Human Connectomics Research: Considerations for Reproducible and Responsible Data Use",
+      "year": 2021,
+      "dims": [
+        "ethics-society",
+        "methodology"
+      ]
+    },
+    {
+      "id": "jwa-2022-data-sharing",
+      "title": "The Spectrum of Data Sharing Policies in Neuroimaging Data Repositories",
+      "year": 2022,
+      "dims": [
+        "ethics-society",
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "funke-2024-analyzing-segmentation",
+      "title": "Analyzing image segmentation for connectomics",
+      "year": 2024,
+      "dims": [
+        "computer-vision-ml",
+        "methodology"
+      ]
+    },
+    {
+      "id": "gray-roncal-2013-migraine",
+      "title": "MIGRAINE: MRI Graph Reliability Analysis and Inference for Connectomics",
+      "year": 2013,
+      "dims": [
+        "methodology",
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "harris-1992-spine-structure",
+      "title": "Three-dimensional structure of dendritic spines and synapses in rat hippocampus at postnatal day 15 and adult ages",
+      "year": 1992,
+      "dims": [
+        "neuroanatomy",
+        "methodology"
+      ]
+    },
+    {
+      "id": "harris-2008-spine-balance",
+      "title": "Balancing structure and function at hippocampal dendritic spines",
+      "year": 2008,
+      "dims": [
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "harris-2015-hippocampal-resource",
+      "title": "A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development",
+      "year": 2015,
+      "dims": [
+        "data-infrastructure",
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "hayworth-2020-gascluster-fibsem",
+      "title": "Gas cluster ion beam SEM and the connectomics pipeline for large-volume neural circuit reconstruction",
+      "year": 2020,
+      "dims": [
+        "image-acquisition"
+      ]
+    },
+    {
+      "id": "helmstaedter-2013-challenges",
+      "title": "Cellular-resolution connectomics: challenges of dense neural circuit reconstruction",
+      "year": 2013,
+      "dims": [
+        "connectomics",
+        "proofreading",
+        "methodology"
+      ]
+    },
+    {
+      "id": "helmstaedter-2017-synem",
+      "title": "SynEM, automated synapse detection for connectomics",
+      "year": 2017,
+      "dims": [
+        "computer-vision-ml",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "helmstaedter-2017-webknossos",
+      "title": "webKnossos: efficient online 3D data annotation for connectomics",
+      "year": 2017,
+      "dims": [
+        "data-infrastructure",
+        "proofreading"
+      ]
+    },
+    {
+      "id": "ishibashi-2022-rod-cone-gap",
+      "title": "Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminals",
+      "year": 2022,
+      "dims": [
+        "connectomics",
+        "case-studies",
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "jain-2016-ffn-arxiv",
+      "title": "Flood-Filling Networks",
+      "year": 2016,
+      "dims": [
+        "computer-vision-ml"
+      ]
+    },
+    {
+      "id": "jain-2024-next-gen-ai",
+      "title": "Next-generation AI for connectomics",
+      "year": 2024,
+      "dims": [
+        "computer-vision-ml",
+        "methodology"
+      ]
+    },
+    {
+      "id": "kasthuri-2018-big-data-nanoscale",
+      "title": "Big data in nanoscale connectomics, and the greed for training labels",
+      "year": 2018,
+      "dims": [
+        "computer-vision-ml",
+        "methodology"
+      ]
+    },
+    {
+      "id": "kasthuri-2025-peem",
+      "title": "Photoemission electron microscopy for connectomics",
+      "year": 2025,
+      "dims": [
+        "image-acquisition",
+        "methodology"
+      ]
+    },
+    {
+      "id": "kaynig-2015-large-scale-reconstruction",
+      "title": "Large-scale automatic reconstruction of neuronal processes from electron microscopy images",
+      "year": 2015,
+      "dims": [
+        "computer-vision-ml",
+        "methodology"
+      ]
+    },
+    {
+      "id": "kebschull-2025-mapseq2",
+      "title": "MAPseq2: A Sensitive and Cost-Effective Barcoded Connectomics Method",
+      "year": 2025,
+      "dims": [
+        "methodology"
+      ]
+    },
+    {
+      "id": "kording-2015-cell-types-microcircuits",
+      "title": "Automatic discovery of cell types and microcircuitry from neural connectomics",
+      "year": 2015,
+      "dims": [
+        "cell-types",
+        "computer-vision-ml",
+        "network-analysis"
+      ]
+    },
+    {
+      "id": "kording-2015-rosetta-brains",
+      "title": "Rosetta Brains: A Strategy for Molecularly-Annotated Connectomics",
+      "year": 2014,
+      "dims": [
+        "methodology",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "kuan-2020-xray-nanotomography",
+      "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
+      "year": 2020,
+      "dims": [
+        "image-acquisition",
+        "methodology",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "lee-2016-anatomy-function",
+      "title": "Anatomy and function of an excitatory network in the visual cortex",
+      "year": 2016,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "lichtman-2014-big-data",
+      "title": "The big data challenges of connectomics",
+      "year": 2014,
+      "dims": [
+        "data-infrastructure",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "lichtman-2016-fuzzy-logic",
+      "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
+      "year": 2016,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "lichtman-2016-swanson-cajal",
+      "title": "From Cajal to Connectome and Beyond",
+      "year": 2016,
+      "dims": [
+        "connectomics",
+        "methodology"
+      ]
+    },
+    {
+      "id": "lichtman-2020-mind-of-mouse",
+      "title": "The Mind of a Mouse",
+      "year": 2020,
+      "dims": [
+        "connectomics",
+        "ethics-society"
+      ]
+    },
+    {
+      "id": "lichtman-2023-odeco",
+      "title": "Immersion fixation and staining of multicubic millimeter volumes for electron microscopy-based connectomics of human brain biopsies",
+      "year": 2023,
+      "dims": [
+        "image-acquisition",
+        "methodology"
+      ]
+    },
+    {
+      "id": "loomba-2022-cortical-interneurons",
+      "title": "Connectomic comparison of mouse and human cortex",
+      "year": 2022,
+      "dims": [
+        "connectomics",
+        "cell-types"
+      ]
+    },
+    {
+      "id": "maitin-shepard-2021-neuroglancer",
+      "title": "Neuroglancer: WebGL-based viewer for volumetric data",
+      "year": 2021,
+      "dims": [
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "markowitz-2023-brain-connects",
+      "title": "BRAIN Initiative connectomics program direction and strategy",
+      "year": 2023,
+      "dims": [
+        "ethics-society",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "matelsky-2021-dotmotif",
+      "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries",
+      "year": 2021,
+      "dims": [
+        "network-analysis",
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "matelsky-2023-dotmotif",
+      "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search",
+      "year": 2021,
+      "dims": [
+        "network-analysis",
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "morgan-2016-fuzzy-logic",
+      "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
+      "year": 2016,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "morgan-2020-interneuron-thalamus",
+      "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus",
+      "year": 2020,
+      "dims": [
+        "connectomics",
+        "case-studies",
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "murthy-2024-network-stats",
+      "title": "Network Statistics of the Whole-Brain Connectome of Drosophila",
+      "year": 2024,
+      "dims": [
+        "network-analysis",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "nguyen-2022-cerebellar-connectivity",
+      "title": "Structured cerebellar connectivity supports resilient pattern separation",
+      "year": 2022,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "pfister-2013-connectome-explorer",
+      "title": "ConnectomeExplorer: query-guided visual analysis of large volumetric neuroscience data",
+      "year": 2013,
+      "dims": [
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "phelps-2021-gridtape",
+      "title": "Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy",
+      "year": 2021,
+      "dims": [
+        "image-acquisition",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "plaza-2017-mushroom-body",
+      "title": "A connectome of a learning and memory center in the adult Drosophila brain",
+      "year": 2017,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "plaza-2023-manc",
+      "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
+      "year": 2023,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "priebe-2015-errorful-graphs",
+      "title": "Statistical Inference on Errorfully Observed Graphs",
+      "year": 2015,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "priebe-2017-drosophila-spectral",
+      "title": "Semiparametric spectral modeling of the Drosophila connectome",
+      "year": 2017,
+      "dims": [
+        "network-analysis",
+        "methodology",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "priebe-2019-connectome-smoothing",
+      "title": "Connectome Smoothing via Low-rank Approximations",
+      "year": 2019,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "reid-2025-wiring-rule",
+      "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+      "year": 2025,
+      "dims": [
+        "connectomics",
+        "network-analysis"
+      ]
+    },
+    {
+      "id": "rivlin-2025-comparative-mb",
+      "title": "Comparative Connectomics Highlights Conserved Architectural Synaptic Motifs in the Drosophila Mushroom Body",
+      "year": 2025,
+      "dims": [
+        "network-analysis",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "saalfeld-2012-elastic-registration",
+      "title": "Elastic volume reconstruction from series of ultra-thin microscopy sections",
+      "year": 2012,
+      "dims": [
+        "computer-vision-ml",
+        "methodology"
+      ]
+    },
+    {
+      "id": "seung-2012-connectome-book",
+      "title": "Connectome: How the Brain's Wiring Makes Us Who We Are",
+      "year": 2012,
+      "dims": [
+        "connectomics",
+        "ethics-society"
+      ]
+    },
+    {
+      "id": "shavit-2017-multicore-connectomics",
+      "title": "A Multicore Path to Connectomics-on-Demand",
+      "year": 2017,
+      "dims": [
+        "data-infrastructure",
+        "computer-vision-ml"
+      ]
+    },
+    {
+      "id": "shavit-2019-cross-classification",
+      "title": "Cross-Classification Clustering: An Efficient Multi-Object Tracking Technique for 3-D Instance Segmentation in Connectomics",
+      "year": 2019,
+      "dims": [
+        "computer-vision-ml"
+      ]
+    },
+    {
+      "id": "shavit-2025-smartem",
+      "title": "SmartEM: machine-learning guided electron microscopy",
+      "year": 2025,
+      "dims": [
+        "image-acquisition",
+        "computer-vision-ml"
+      ]
+    },
+    {
+      "id": "silversmith-2021-cloud-volume",
+      "title": "CloudVolume: a Python library for accessing Neuroglancer precomputed volumetric data",
+      "year": 2021,
+      "dims": [
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "smith-2007-array-tomography",
+      "title": "Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits",
+      "year": 2007,
+      "dims": [
+        "image-acquisition",
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "smith-2015-conjugate-at",
+      "title": "Mapping Synapses by Conjugate Light-Electron Array Tomography",
+      "year": 2015,
+      "dims": [
+        "image-acquisition",
+        "neuroanatomy"
+      ]
+    },
+    {
+      "id": "spirou-2014-calyx-development",
+      "title": "Synaptic inputs compete during rapid formation of the calyx of Held",
+      "year": 2014,
+      "dims": [
+        "connectomics",
+        "case-studies",
+        "image-acquisition"
+      ]
+    },
+    {
+      "id": "spirou-2023-bushy-cell-convergence",
+      "title": "Two Synaptic Convergence Motifs Define Functional Roles for Inputs to Cochlear Nucleus Bushy Cells",
+      "year": 2023,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "sporns-2011-human-connectome-complex",
+      "title": "The Human Connectome: A Complex Network",
+      "year": 2011,
+      "dims": [
+        "connectomics",
+        "network-analysis"
+      ]
+    },
+    {
+      "id": "sporns-2018-graph-theory-methods",
+      "title": "Graph Theory Methods: Applications in Brain Networks",
+      "year": 2018,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "tolias-2025-wiring-rule",
+      "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+      "year": 2025,
+      "dims": [
+        "connectomics",
+        "network-analysis"
+      ]
+    },
+    {
+      "id": "vogelstein-rj-2014-iarpa",
+      "title": "IARPA MICrONS program management and connectomics strategy",
+      "year": 2014,
+      "dims": [
+        "connectomics",
+        "ethics-society"
+      ]
+    },
+    {
+      "id": "vogelstein-2013-signal-subgraphs",
+      "title": "Graph Classification Using Signal-Subgraphs: Applications in Statistical Connectomics",
+      "year": 2013,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "vogelstein-2018-rdpg-survey",
+      "title": "Statistical Inference on Random Dot Product Graphs: A Survey",
+      "year": 2018,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "vogelstein-2019-graspy",
+      "title": "GraSPy: Graph Statistics in Python",
+      "year": 2019,
+      "dims": [
+        "data-infrastructure",
+        "network-analysis"
+      ]
+    },
+    {
+      "id": "vogelstein-2021-statistical-connectomics",
+      "title": "Statistical Connectomics",
+      "year": 2021,
+      "dims": [
+        "network-analysis",
+        "methodology"
+      ]
+    },
+    {
+      "id": "wildenberg-2023-synapse-development",
+      "title": "The Development of Synapses in Mouse and Macaque Primary Sensory Cortices",
+      "year": 2023,
+      "dims": [
+        "neuroanatomy",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "wilson-2013-olfactory-connectome",
+      "title": "A comprehensive wiring diagram of the protocerebral bridge for visual information processing in the Drosophila brain",
+      "year": 2013,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "xu-2021-volume-em-atlas",
+      "title": "An open-access volume electron microscopy atlas of whole cells and tissues",
+      "year": 2021,
+      "dims": [
+        "image-acquisition",
+        "data-infrastructure"
+      ]
+    },
+    {
+      "id": "yendiki-2011-tracula",
+      "title": "Automated probabilistic reconstruction of white-matter pathways in health and disease using an atlas of the underlying anatomy",
+      "year": 2011,
+      "dims": [
+        "connectomics",
+        "methodology"
+      ]
+    },
+    {
+      "id": "yim-2024-dauer-connectomics",
+      "title": "Comparative connectomics of dauer reveals developmental plasticity",
+      "year": 2024,
+      "dims": [
+        "connectomics",
+        "case-studies"
+      ]
+    },
+    {
+      "id": "zador-2016-mapseq",
+      "title": "High-Throughput Mapping of Single-Neuron Projections by Sequencing of Barcoded RNA",
+      "year": 2016,
+      "dims": [
+        "methodology",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "zador-2017-synseq",
+      "title": "Using high-throughput barcode sequencing to efficiently map connectomes",
+      "year": 2017,
+      "dims": [
+        "methodology",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "zador-2019-barseq",
+      "title": "High-throughput mapping of long-range neuronal projection using in situ sequencing",
+      "year": 2019,
+      "dims": [
+        "methodology",
+        "connectomics"
+      ]
+    },
+    {
+      "id": "zeng-2022-what-is-cell-type",
+      "title": "What is a cell type and how to define it?",
+      "year": 2022,
+      "dims": [
+        "cell-types",
+        "methodology"
+      ]
+    },
+    {
+      "id": "zeng-2023-whole-mouse-atlas",
+      "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+      "year": 2023,
+      "dims": [
+        "cell-types",
+        "methodology"
+      ]
+    }
+  ],
+  "duplicates_of_existing_102": [
+    {
+      "id": "bock-2011-network-anatomy",
+      "existing_id": "bock-2011"
+    },
+    {
+      "id": "bock-2012-volume-em-review",
+      "existing_id": "briggman-bock-2012"
+    },
+    {
+      "id": "bock-2018-fafb",
+      "existing_id": "zheng-2018"
+    },
+    {
+      "id": "bock-2024-flywire-connectome",
+      "existing_id": "dorkenwald-2024-flywire"
+    },
+    {
+      "id": "briggman-2013-retina-ipl",
+      "existing_id": "helmstaedter-2013"
+    },
+    {
+      "id": "cardona-2012-catmaid",
+      "existing_id": "saalfeld-2009-catmaid"
+    },
+    {
+      "id": "cardona-2023-insect-connectome",
+      "existing_id": "winding-2023"
+    },
+    {
+      "id": "collman-2021-cave",
+      "existing_id": "dorkenwald-2023-cave"
+    },
+    {
+      "id": "denk-2004-sbfsem",
+      "existing_id": "denk-horstmann-2004"
+    },
+    {
+      "id": "denk-2012-fibsem",
+      "existing_id": "knott-2008"
+    },
+    {
+      "id": "dorkenwald-2024-flywire-wiring",
+      "existing_id": "dorkenwald-2024-flywire"
+    },
+    {
+      "id": "dorkenwald-2024-neurd",
+      "existing_id": "dorkenwald-2024-neurd"
+    },
+    {
+      "id": "funke-2018-synaptic-cleft",
+      "existing_id": "heinrich-2018"
+    },
+    {
+      "id": "funke-2019-structured-loss",
+      "existing_id": "funke-2019"
+    },
+    {
+      "id": "funke-2024-local-shape-descriptors",
+      "existing_id": "sheridan-2023-lsd"
+    },
+    {
+      "id": "funke-2024-local-shape",
+      "existing_id": "sheridan-2024"
+    },
+    {
+      "id": "gray-roncal-2015-images-to-graphs",
+      "existing_id": "gray-roncal-2015"
+    },
+    {
+      "id": "gray-roncal-2022-bossdb",
+      "existing_id": "hider-2022-bossdb"
+    },
+    {
+      "id": "hayworth-2015-thick-partitioning",
+      "existing_id": "hayworth-2015"
+    },
+    {
+      "id": "helmstaedter-2019-layer4",
+      "existing_id": "motta-2019"
+    },
+    {
+      "id": "januszewski-2018-ffn",
+      "existing_id": "januszewski-2018"
+    },
+    {
+      "id": "jefferis-2024-flywire-types",
+      "existing_id": "schlegel-2024"
+    },
+    {
+      "id": "johnson-2021-annotation-standards",
+      "existing_id": "wester-2021-annotation-standards"
+    },
+    {
+      "id": "kasthuri-2015-saturated",
+      "existing_id": "kasthuri-2015"
+    },
+    {
+      "id": "kebschull-2019-barseq",
+      "existing_id": "zador-2019-barseq"
+    },
+    {
+      "id": "lee-2017-superhuman",
+      "existing_id": "seung-2017-superhuman"
+    },
+    {
+      "id": "lichtman-2024-human-cortex",
+      "existing_id": "shapson-coe-2024"
+    },
+    {
+      "id": "murthy-2024-flywire-flagship",
+      "existing_id": "dorkenwald-2024-flywire"
+    },
+    {
+      "id": "murthy-2024-visual-parts-list",
+      "existing_id": "matsliah-2024"
+    },
+    {
+      "id": "pedigo-2023-bilateral-matching",
+      "existing_id": "pedigo-2023"
+    },
+    {
+      "id": "plaza-2020-hemibrain",
+      "existing_id": "scheffer-2020"
+    },
+    {
+      "id": "reid-2025-inhibitory-census",
+      "existing_id": "bodor-2025"
+    },
+    {
+      "id": "reid-2025-microns-functional",
+      "existing_id": "microns-2025"
+    },
+    {
+      "id": "reimer-2025-microns",
+      "existing_id": "microns-2025"
+    },
+    {
+      "id": "samuel-2021-celegans-whole-animal",
+      "existing_id": "cook-2019"
+    },
+    {
+      "id": "samuel-2021-elegans-whole-brain",
+      "existing_id": "cook-2019"
+    },
+    {
+      "id": "samuel-2024-celegans-development",
+      "existing_id": "witvliet-2021"
+    },
+    {
+      "id": "scheffer-2020-hemibrain-analysis",
+      "existing_id": "scheffer-2020"
+    },
+    {
+      "id": "schneider-mizell-2024-cell-type-inhibitory",
+      "existing_id": "bodor-2025"
+    },
+    {
+      "id": "schneider-mizell-2025-neurd",
+      "existing_id": "dorkenwald-2024-neurd"
+    },
+    {
+      "id": "seung-2017-superhuman",
+      "existing_id": "lee-2017-superhuman"
+    },
+    {
+      "id": "seung-2018-ffn",
+      "existing_id": "januszewski-2018"
+    },
+    {
+      "id": "seung-2022-flywire",
+      "existing_id": "dorkenwald-2022-flywire"
+    },
+    {
+      "id": "shapson-coe-2024-human-cortex",
+      "existing_id": "lichtman-2024-human-cortex"
+    },
+    {
+      "id": "sporns-2005-human-connectome",
+      "existing_id": "the-human-connectome"
+    },
+    {
+      "id": "sporns-2009-complex-brain-networks",
+      "existing_id": "bullmore-sporns-2009"
+    },
+    {
+      "id": "sporns-2010-network-measures",
+      "existing_id": "rubinov-sporns-2010"
+    },
+    {
+      "id": "sporns-2017-network-neuroscience",
+      "existing_id": "bassett-sporns-2017"
+    },
+    {
+      "id": "turaga-2010-affinity-graphs",
+      "existing_id": "turaga-2010"
+    },
+    {
+      "id": "turaga-2024-connectome-constrained",
+      "existing_id": "lappalainen-2024"
+    },
+    {
+      "id": "wester-2021-annotation-standards",
+      "existing_id": "johnson-2021"
+    },
+    {
+      "id": "winding-2023-insect-brain",
+      "existing_id": "cardona-2023-insect-connectome"
+    },
+    {
+      "id": "witvliet-2021-elegans-development",
+      "existing_id": "samuel-2024-celegans-development"
+    },
+    {
+      "id": "xu-2017-enhanced-fibsem",
+      "existing_id": "xu-2017"
+    },
+    {
+      "id": "zeng-2017-cell-type-classification",
+      "existing_id": "zeng-sanes-2017"
+    }
+  ],
+  "by_expert": {
+    "Davi Bock": {
+      "total": 5,
+      "new": 1,
+      "duplicate": 4,
+      "tier": "unset",
+      "papers": [
+        "bock-2011-network-anatomy",
+        "bock-2012-volume-em-review",
+        "bock-2018-fafb",
+        "bock-2024-flywire-connectome",
+        "bock-2025-synaptic-connectomics"
+      ]
+    },
+    "Ed Boyden": {
+      "total": 4,
+      "new": 4,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "boyden-2015-expansion-microscopy",
+        "boyden-2017-exm-reconstruction",
+        "boyden-2020-spectral-connectomics",
+        "boyden-2025-liconn"
+      ]
+    },
+    "Kevin Briggman": {
+      "total": 4,
+      "new": 3,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "briggman-2011-direction-selectivity",
+        "briggman-2013-retina-ipl",
+        "briggman-2015-extracellular-space",
+        "briggman-2020-night-vision"
+      ]
+    },
+    "Albert Cardona": {
+      "total": 2,
+      "new": 0,
+      "duplicate": 2,
+      "tier": "unset",
+      "papers": [
+        "cardona-2012-catmaid",
+        "cardona-2023-insect-connectome"
+      ]
+    },
+    "Forrest Collman": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "collman-2021-cave"
+      ]
+    },
+    "Nuno Ma\u00e7arico da Costa": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "dacosta-2025-sst-types"
+      ]
+    },
+    "Winfried Denk": {
+      "total": 2,
+      "new": 0,
+      "duplicate": 2,
+      "tier": "unset",
+      "papers": [
+        "denk-2004-sbfsem",
+        "denk-2012-fibsem"
+      ]
+    },
+    "Sven Dorkenwald": {
+      "total": 2,
+      "new": 0,
+      "duplicate": 2,
+      "tier": "unset",
+      "papers": [
+        "dorkenwald-2024-flywire-wiring",
+        "dorkenwald-2024-neurd"
+      ]
+    },
+    "Ethics-Policy": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "betzel-2021-open-datasets",
+        "jwa-2022-data-sharing"
+      ]
+    },
+    "Jan Funke": {
+      "total": 5,
+      "new": 1,
+      "duplicate": 4,
+      "tier": 2,
+      "papers": [
+        "funke-2018-synaptic-cleft",
+        "funke-2019-structured-loss",
+        "funke-2024-analyzing-segmentation",
+        "funke-2024-local-shape-descriptors",
+        "funke-2024-local-shape"
+      ]
+    },
+    "William Gray Roncal": {
+      "total": 3,
+      "new": 1,
+      "duplicate": 2,
+      "tier": "unset",
+      "papers": [
+        "gray-roncal-2013-migraine",
+        "gray-roncal-2015-images-to-graphs",
+        "gray-roncal-2022-bossdb"
+      ]
+    },
+    "Kristen Harris": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "harris-1992-spine-structure",
+        "harris-2008-spine-balance",
+        "harris-2015-hippocampal-resource"
+      ]
+    },
+    "Kenneth Hayworth": {
+      "total": 2,
+      "new": 1,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "hayworth-2015-thick-partitioning",
+        "hayworth-2020-gascluster-fibsem"
+      ]
+    },
+    "Moritz Helmstaedter": {
+      "total": 4,
+      "new": 3,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "helmstaedter-2013-challenges",
+        "helmstaedter-2017-synem",
+        "helmstaedter-2017-webknossos",
+        "helmstaedter-2019-layer4"
+      ]
+    },
+    "Steve Massey": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "ishibashi-2022-rod-cone-gap"
+      ]
+    },
+    "Viren Jain": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "jain-2016-ffn-arxiv",
+        "jain-2024-next-gen-ai"
+      ]
+    },
+    "Michal Januszewski": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "januszewski-2018-ffn"
+      ]
+    },
+    "Gregory Jefferis": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "jefferis-2024-flywire-types"
+      ]
+    },
+    "Eric Johnson": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 3,
+      "papers": [
+        "johnson-2021-annotation-standards"
+      ]
+    },
+    "Bobby Kasthuri": {
+      "total": 3,
+      "new": 2,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "kasthuri-2015-saturated",
+        "kasthuri-2018-big-data-nanoscale",
+        "kasthuri-2025-peem"
+      ]
+    },
+    "Verena Kaynig": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "kaynig-2015-large-scale-reconstruction"
+      ]
+    },
+    "Justus Kebschull": {
+      "total": 2,
+      "new": 1,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "kebschull-2019-barseq",
+        "kebschull-2025-mapseq2"
+      ]
+    },
+    "Konrad Kording": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "kording-2015-cell-types-microcircuits",
+        "kording-2015-rosetta-brains"
+      ]
+    },
+    "Wei-Chung Allen Lee": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "kuan-2020-xray-nanotomography",
+        "lee-2016-anatomy-function",
+        "nguyen-2022-cerebellar-connectivity"
+      ]
+    },
+    "Kisuk Lee": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "lee-2017-superhuman"
+      ]
+    },
+    "Jeff Lichtman": {
+      "total": 6,
+      "new": 5,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "lichtman-2014-big-data",
+        "lichtman-2016-fuzzy-logic",
+        "lichtman-2016-swanson-cajal",
+        "lichtman-2020-mind-of-mouse",
+        "lichtman-2023-odeco",
+        "lichtman-2024-human-cortex"
+      ]
+    },
+    "Sahil Loomba": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 4,
+      "papers": [
+        "loomba-2022-cortical-interneurons"
+      ]
+    },
+    "Jeremy Maitin-Shepard": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 3,
+      "papers": [
+        "maitin-shepard-2021-neuroglancer"
+      ]
+    },
+    "David Markowitz": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 1,
+      "papers": [
+        "markowitz-2023-brain-connects"
+      ]
+    },
+    "Jordan Matelsky": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": 3,
+      "papers": [
+        "matelsky-2021-dotmotif",
+        "matelsky-2023-dotmotif"
+      ]
+    },
+    "Josh Morgan": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "morgan-2016-fuzzy-logic",
+        "morgan-2020-interneuron-thalamus"
+      ]
+    },
+    "Mala Murthy": {
+      "total": 3,
+      "new": 1,
+      "duplicate": 2,
+      "tier": 1,
+      "papers": [
+        "murthy-2024-flywire-flagship",
+        "murthy-2024-network-stats",
+        "murthy-2024-visual-parts-list"
+      ]
+    },
+    "Benjamin Pedigo": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 4,
+      "papers": [
+        "pedigo-2023-bilateral-matching"
+      ]
+    },
+    "Hanspeter Pfister": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 1,
+      "papers": [
+        "pfister-2013-connectome-explorer"
+      ]
+    },
+    "Jasper Phelps": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 4,
+      "papers": [
+        "phelps-2021-gridtape"
+      ]
+    },
+    "Stephen Plaza": {
+      "total": 3,
+      "new": 2,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "plaza-2017-mushroom-body",
+        "plaza-2020-hemibrain",
+        "plaza-2023-manc"
+      ]
+    },
+    "Carey Priebe": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "priebe-2015-errorful-graphs",
+        "priebe-2017-drosophila-spectral",
+        "priebe-2019-connectome-smoothing"
+      ]
+    },
+    "R. Clay Reid": {
+      "total": 3,
+      "new": 1,
+      "duplicate": 2,
+      "tier": "unset",
+      "papers": [
+        "reid-2025-inhibitory-census",
+        "reid-2025-microns-functional",
+        "reid-2025-wiring-rule"
+      ]
+    },
+    "Jake Reimer": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "reimer-2025-microns"
+      ]
+    },
+    "Patricia Rivlin": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "rivlin-2025-comparative-mb"
+      ]
+    },
+    "Stephan Saalfeld": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "saalfeld-2012-elastic-registration"
+      ]
+    },
+    "Aravi Samuel": {
+      "total": 3,
+      "new": 0,
+      "duplicate": 3,
+      "tier": 1,
+      "papers": [
+        "samuel-2021-celegans-whole-animal",
+        "samuel-2021-elegans-whole-brain",
+        "samuel-2024-celegans-development"
+      ]
+    },
+    "Louis Scheffer": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": "unset",
+      "papers": [
+        "scheffer-2020-hemibrain-analysis"
+      ]
+    },
+    "Casey Schneider-Mizell": {
+      "total": 2,
+      "new": 0,
+      "duplicate": 2,
+      "tier": 2,
+      "papers": [
+        "schneider-mizell-2024-cell-type-inhibitory",
+        "schneider-mizell-2025-neurd"
+      ]
+    },
+    "H. Sebastian Seung": {
+      "total": 4,
+      "new": 1,
+      "duplicate": 3,
+      "tier": "unset",
+      "papers": [
+        "seung-2012-connectome-book",
+        "seung-2017-superhuman",
+        "seung-2018-ffn",
+        "seung-2022-flywire"
+      ]
+    },
+    "Alexander Shapson-Coe": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 4,
+      "papers": [
+        "shapson-coe-2024-human-cortex"
+      ]
+    },
+    "Nir Shavit": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "shavit-2017-multicore-connectomics",
+        "shavit-2019-cross-classification",
+        "shavit-2025-smartem"
+      ]
+    },
+    "William Silversmith": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 3,
+      "papers": [
+        "silversmith-2021-cloud-volume"
+      ]
+    },
+    "Stephen Smith": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "smith-2007-array-tomography",
+        "smith-2015-conjugate-at"
+      ]
+    },
+    "George Spirou": {
+      "total": 2,
+      "new": 2,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "spirou-2014-calyx-development",
+        "spirou-2023-bushy-cell-convergence"
+      ]
+    },
+    "Olaf Sporns": {
+      "total": 6,
+      "new": 2,
+      "duplicate": 4,
+      "tier": "unset",
+      "papers": [
+        "sporns-2005-human-connectome",
+        "sporns-2009-complex-brain-networks",
+        "sporns-2010-network-measures",
+        "sporns-2011-human-connectome-complex",
+        "sporns-2017-network-neuroscience",
+        "sporns-2018-graph-theory-methods"
+      ]
+    },
+    "Andreas Tolias": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "tolias-2025-wiring-rule"
+      ]
+    },
+    "Srinivas Turaga": {
+      "total": 2,
+      "new": 0,
+      "duplicate": 2,
+      "tier": 2,
+      "papers": [
+        "turaga-2010-affinity-graphs",
+        "turaga-2024-connectome-constrained"
+      ]
+    },
+    "R. Jacob Vogelstein": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 1,
+      "papers": [
+        "vogelstein-rj-2014-iarpa"
+      ]
+    },
+    "Joshua Vogelstein": {
+      "total": 4,
+      "new": 4,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "vogelstein-2013-signal-subgraphs",
+        "vogelstein-2018-rdpg-survey",
+        "vogelstein-2019-graspy",
+        "vogelstein-2021-statistical-connectomics"
+      ]
+    },
+    "Brock Wester": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 3,
+      "papers": [
+        "wester-2021-annotation-standards"
+      ]
+    },
+    "Gregg Wildenberg": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "wildenberg-2023-synapse-development"
+      ]
+    },
+    "Rachel Wilson": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 1,
+      "papers": [
+        "wilson-2013-olfactory-connectome"
+      ]
+    },
+    "Michael Winding": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 4,
+      "papers": [
+        "winding-2023-insect-brain"
+      ]
+    },
+    "Daniel Witvliet": {
+      "total": 1,
+      "new": 0,
+      "duplicate": 1,
+      "tier": 4,
+      "papers": [
+        "witvliet-2021-elegans-development"
+      ]
+    },
+    "C. Shan Xu": {
+      "total": 2,
+      "new": 1,
+      "duplicate": 1,
+      "tier": 2,
+      "papers": [
+        "xu-2017-enhanced-fibsem",
+        "xu-2021-volume-em-atlas"
+      ]
+    },
+    "Anastasia Yendiki": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 1,
+      "papers": [
+        "yendiki-2011-tracula"
+      ]
+    },
+    "Junho Lee": {
+      "total": 1,
+      "new": 1,
+      "duplicate": 0,
+      "tier": 2,
+      "papers": [
+        "yim-2024-dauer-connectomics"
+      ]
+    },
+    "Anthony Zador": {
+      "total": 3,
+      "new": 3,
+      "duplicate": 0,
+      "tier": "unset",
+      "papers": [
+        "zador-2016-mapseq",
+        "zador-2017-synseq",
+        "zador-2019-barseq"
+      ]
+    },
+    "Hongkui Zeng": {
+      "total": 3,
+      "new": 2,
+      "duplicate": 1,
+      "tier": 1,
+      "papers": [
+        "zeng-2017-cell-type-classification",
+        "zeng-2022-what-is-cell-type",
+        "zeng-2023-whole-mouse-atlas"
+      ]
+    }
+  },
+  "by_dimension": {
+    "connectomics": 63,
+    "case-studies": 44,
+    "image-acquisition": 24,
+    "methodology": 40,
+    "proofreading": 9,
+    "computer-vision-ml": 27,
+    "data-infrastructure": 21,
+    "network-analysis": 22,
+    "cell-types": 9,
+    "ethics-society": 6,
+    "neuroanatomy": 9
+  },
+  "by_tier": {
+    "1": 16,
+    "2": 28,
+    "3": 6,
+    "4": 6,
+    "unset": 81
+  },
+  "bossdb_datasets": [
+    {
+      "id": "ishibashi-2022-rod-cone-gap",
+      "project": "ishibashi2021",
+      "first": "Ishibashi M",
+      "last": "Massey SC"
+    },
+    {
+      "id": "kuan-2020-xray-nanotomography",
+      "project": "kuan_phelps2020",
+      "first": "Kuan AT",
+      "last": "Lee WCA"
+    },
+    {
+      "id": "nguyen-2022-cerebellar-connectivity",
+      "project": "nguyen_thomas2022",
+      "first": "Nguyen TM",
+      "last": "Lee WCA"
+    },
+    {
+      "id": "wildenberg-2023-synapse-development",
+      "project": "wildenberg2023",
+      "first": "Wildenberg G",
+      "last": "Kasthuri N"
+    },
+    {
+      "id": "yim-2024-dauer-connectomics",
+      "project": "yim_choe_bae2023",
+      "first": "Yim H",
+      "last": "Lee J"
+    }
+  ],
+  "summary": {
+    "total_papers": 137,
+    "new_unique": 82,
+    "duplicates": 55,
+    "experts": 65,
+    "dimensions": 11,
+    "combined": "102 + 82 = 184",
+    "tiers": {
+      "1": 16,
+      "2": 28,
+      "3": 6,
+      "4": 6,
+      "unset": 81
+    },
+    "bossdb_linked": 5
+  }
+}

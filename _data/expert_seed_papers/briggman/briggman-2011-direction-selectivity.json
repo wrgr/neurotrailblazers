@@ -1,0 +1,29 @@
+{
+  "id": "briggman-2011-direction-selectivity",
+  "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+  "authors": [
+    "Briggman KL",
+    "Helmstaedter M",
+    "Denk W"
+  ],
+  "year": 2011,
+  "journal": "Nature",
+  "doi": "10.1038/nature09818",
+  "url": "https://www.nature.com/articles/nature09818",
+  "abstract": "Using serial block-face electron microscopy and two-photon calcium imaging, we show that starburst amacrine cell dendrites make direction-specific synaptic connections with direction-selective ganglion cells in the mouse retina.",
+  "seed_expert": "Kevin Briggman",
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "retina",
+    "direction-selectivity",
+    "SBEM",
+    "starburst-amacrine",
+    "wiring-specificity"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Landmark demonstration of wiring specificity revealed by volume EM in the retina.",
+  "author_tier": 1
+}

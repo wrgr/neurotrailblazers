@@ -1,0 +1,33 @@
+{
+  "id": "boyden-2017-exm-reconstruction",
+  "title": "Feasibility of 3D Reconstruction of Neural Morphology Using Expansion Microscopy and Barcode-Guided Agglomeration",
+  "authors": [
+    "Yoon YG",
+    "Dai P",
+    "Wohlwend J",
+    "Chang JB",
+    "Bhatt AN",
+    "Bharioke A",
+    "Boyden ES"
+  ],
+  "year": 2017,
+  "journal": "Frontiers in Computational Neuroscience",
+  "doi": "10.3389/fncom.2017.00097",
+  "url": "https://www.frontiersin.org/articles/10.3389/fncom.2017.00097/full",
+  "abstract": "We demonstrate, via simulations, that dense optical 3D neural morphology reconstruction using expansion microscopy may be feasible, using CNN-based boundary detection and barcode-guided agglomeration.",
+  "seed_expert": "Ed Boyden",
+  "dimensions": [
+    "computer-vision-ml",
+    "image-acquisition"
+  ],
+  "tags": [
+    "ExM",
+    "simulation",
+    "neural-reconstruction",
+    "CNN",
+    "barcoding"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Computational feasibility study for ExM-based connectomics.",
+  "author_tier": 1
+}

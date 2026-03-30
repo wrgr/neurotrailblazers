@@ -1,0 +1,25 @@
+{
+  "id": "sporns-2011-human-connectome-complex",
+  "title": "The Human Connectome: A Complex Network",
+  "authors": [
+    "Sporns O"
+  ],
+  "year": 2011,
+  "journal": "Annals of the New York Academy of Sciences",
+  "doi": "10.1111/j.1749-6632.2010.05888.x",
+  "url": "https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-6632.2010.05888.x",
+  "abstract": "The human brain is a complex network. An important first step toward understanding the function of such a network is to map its elements and connections, to create a comprehensive structural description of the network architecture. This paper reviews current empirical efforts toward generating a network map of the human brain and discusses emerging findings about its organization.",
+  "seed_expert": "Olaf Sporns",
+  "dimensions": [
+    "connectomics",
+    "network-analysis"
+  ],
+  "tags": [
+    "connectome",
+    "complex-network",
+    "review"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Review of empirical connectome mapping efforts as of 2011.",
+  "author_tier": 1
+}

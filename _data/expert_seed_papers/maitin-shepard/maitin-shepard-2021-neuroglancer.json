@@ -1,0 +1,16 @@
+{
+  "id": "maitin-shepard-2021-neuroglancer",
+  "title": "Neuroglancer: WebGL-based viewer for volumetric data",
+  "authors": ["Maitin-Shepard J"],
+  "year": 2021,
+  "journal": "Software (GitHub / Google Research)",
+  "doi": null,
+  "url": "https://github.com/google/neuroglancer",
+  "abstract": "Neuroglancer is an open-source WebGL-based viewer for volumetric data designed for connectomics. It supports visualization of multi-scale image data, segmentation overlays, mesh rendering, and annotation, and is the de facto standard viewer used across MICrONS, FlyWire, and other major connectomics projects.",
+  "seed_expert": "Jeremy Maitin-Shepard",
+  "author_tier": 3,
+  "dimensions": ["data-infrastructure"],
+  "tags": ["Neuroglancer", "visualization", "WebGL", "software", "open-source"],
+  "duplicate_of_existing": null,
+  "notes": "Software tool rather than paper. Maitin-Shepard is sole creator. Used by virtually every connectomics project worldwide."
+}

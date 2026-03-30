@@ -1,0 +1,33 @@
+{
+  "id": "lichtman-2023-odeco",
+  "title": "Immersion fixation and staining of multicubic millimeter volumes for electron microscopy-based connectomics of human brain biopsies",
+  "authors": [
+    "Karlupia N",
+    "Schalek RL",
+    "Wu Y",
+    "Meirovitch Y",
+    "Wei D",
+    "Charney AW",
+    "Kopell BH",
+    "Lichtman JW"
+  ],
+  "year": 2023,
+  "journal": "Biological Psychiatry",
+  "doi": "10.1016/j.biopsych.2023.01.025",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0006322323001233",
+  "abstract": "Mapping the complete synaptic connectivity of a mammalian brain via serial section electron microscopy requires membrane staining with osmium tetroxide throughout entire brains while preserving ultrastructure. This paper presents the ODeCO protocol for whole-brain staining applicable to human brain biopsies.",
+  "seed_expert": "Jeff Lichtman",
+  "dimensions": [
+    "image-acquisition",
+    "methodology"
+  ],
+  "tags": [
+    "sample-preparation",
+    "staining",
+    "human-brain",
+    "ODeCO"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Critical sample prep advance for human brain connectomics.",
+  "author_tier": 1
+}

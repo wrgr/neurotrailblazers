@@ -1,0 +1,37 @@
+{
+  "id": "scheffer-2020-hemibrain-analysis",
+  "title": "A connectome and analysis of the adult Drosophila central brain",
+  "authors": [
+    "Scheffer LK",
+    "Xu CS",
+    "Januszewski M",
+    "Lu Z",
+    "Takemura SY",
+    "Hayworth KJ",
+    "Huang GB",
+    "Shinomiya K",
+    "Plaza SM",
+    "Jain V",
+    "Seung HS",
+    "Hess HF"
+  ],
+  "year": 2020,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.57443",
+  "url": "https://elifesciences.org/articles/57443",
+  "abstract": "The hemibrain connectome of ~25,000 neurons and ~20 million chemical synapses in the adult Drosophila central brain, with analysis of circuit motifs and cell type classification.",
+  "seed_expert": "Louis Scheffer",
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "hemibrain",
+    "drosophila",
+    "FIB-SEM",
+    "circuit-analysis"
+  ],
+  "duplicate_of_existing": "scheffer-2020",
+  "notes": "Already in existing 102. Cross-listed with Plaza. Co-first author.",
+  "author_tier": 1
+}

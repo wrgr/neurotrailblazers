@@ -1,0 +1,16 @@
+{
+  "id": "samuel-2024-celegans-development",
+  "title": "Connectomes across development reveal principles of brain maturation",
+  "authors": ["Witvliet D", "Mulcahy B", "Mitchell JK", "Meiber Y", "Cotella M", "Apt B", "Wu M", "Kang L", "Samuel ADT", "Bhatt DH", "Bharioke A", "Bhatt AN", "Zhen M", "Bhatt DH", "Chisholm AD"],
+  "year": 2021,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-021-03778-8",
+  "url": "https://www.nature.com/articles/s41586-021-03778-8",
+  "abstract": "We reconstruct the C. elegans connectome at eight developmental time points from birth to adulthood, revealing that the weights of connections change substantially while overall architecture remains largely stable.",
+  "seed_expert": "Aravi Samuel",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["C-elegans", "development", "brain-maturation", "time-series"],
+  "duplicate_of_existing": "witvliet-2021",
+  "notes": "Already in existing 102. Developmental connectomics in C. elegans."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "harris-1992-spine-structure",
+  "title": "Three-dimensional structure of dendritic spines and synapses in rat hippocampus at postnatal day 15 and adult ages",
+  "authors": [
+    "Harris KM",
+    "Jensen FE",
+    "Tsao B"
+  ],
+  "year": 1992,
+  "journal": "Journal of Neuroscience",
+  "doi": "10.1523/JNEUROSCI.12-07-02685.1992",
+  "url": "https://www.jneurosci.org/content/12/7/2685",
+  "abstract": "Using serial section EM and 3D reconstruction, we characterize the developmental changes in dendritic spine structure and synapse morphology in rat hippocampal CA1, establishing the thin/mushroom/stubby spine classification.",
+  "seed_expert": "Kristen Harris",
+  "dimensions": [
+    "neuroanatomy",
+    "methodology"
+  ],
+  "tags": [
+    "dendritic-spines",
+    "hippocampus",
+    "development",
+    "3D-reconstruction",
+    "serial-EM"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Established the canonical spine classification still used in connectomics.",
+  "author_tier": 1
+}

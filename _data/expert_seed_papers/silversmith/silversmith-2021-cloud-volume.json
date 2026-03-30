@@ -1,0 +1,16 @@
+{
+  "id": "silversmith-2021-cloud-volume",
+  "title": "CloudVolume: a Python library for accessing Neuroglancer precomputed volumetric data",
+  "authors": ["Silversmith W"],
+  "year": 2021,
+  "journal": "Software / GitHub repository",
+  "doi": null,
+  "url": "https://github.com/seung-lab/cloud-volume",
+  "abstract": "CloudVolume is a Python library for reading and writing Neuroglancer precomputed format volumetric datasets, enabling programmatic access to large-scale connectomics data stored in cloud object stores such as Google Cloud Storage and AWS S3.",
+  "seed_expert": "William Silversmith",
+  "author_tier": 3,
+  "dimensions": ["data-infrastructure"],
+  "tags": ["cloud", "neuroglancer", "python", "volumetric-data", "software-tool", "precomputed"],
+  "duplicate_of_existing": null,
+  "notes": "Software tool, not a traditional journal paper. CloudVolume is critical infrastructure used across many connectomics projects (FlyWire, MICrONS, etc.). Year is approximate for when the tool became widely adopted."
+}

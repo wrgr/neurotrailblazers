@@ -1,0 +1,16 @@
+{
+  "id": "schneider-mizell-2024-cell-type-inhibitory",
+  "title": "Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex",
+  "authors": ["Schneider-Mizell CM", "Bodor AL", "Brittain D", "Buchanan J", "Bumbarger DJ", "Elabbady L", "Gamlin CR", "Hartmann D", "Jorstad NL", "Kinn S", "Molnar G", "Seshamani S", "Silversmith WM", "Takeno MA", "Torres R", "Yin W", "Dorkenwald S", "Bae JA", "Castro MA", "Halageri A", "Jia Z", "Jordan C", "Kemnitz N", "Lee K", "Li K", "Lu R", "Macrina T", "Mitchell E", "Mondal SS", "Mu S", "Nehoran B", "Popovych S", "Seung HS", "da Costa NM", "Reid RC"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07780-8",
+  "url": "https://www.nature.com/articles/s41586-024-07780-8",
+  "abstract": "A comprehensive census of inhibitory neuron connectivity in mouse visual cortex using the MICrONS millimeter-scale EM volume. Identifies cell-type-specific wiring rules for inhibitory interneurons across all cortical layers, revealing specialized connectivity motifs including disinhibitory circuits targeting basket cells.",
+  "seed_expert": "Casey Schneider-Mizell",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "cell-types"],
+  "tags": ["MICrONS", "inhibitory-neurons", "proofreading"],
+  "duplicate_of_existing": "bodor-2025",
+  "notes": "Already in existing 102 as bodor-2025 and cross-listed under Reid. Schneider-Mizell first author perspective."
+}

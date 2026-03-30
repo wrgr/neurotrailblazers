@@ -1,0 +1,16 @@
+{
+  "id": "morgan-2020-interneuron-thalamus",
+  "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus",
+  "authors": ["Morgan JL", "Lichtman JW"],
+  "year": 2020,
+  "journal": "Neuron",
+  "doi": "10.1016/j.neuron.2019.12.017",
+  "url": "https://www.cell.com/neuron/fulltext/S0896-6273(19)31103-7",
+  "abstract": "Using serial section EM, we mapped 899 synaptic inputs and 623 outputs of a single inhibitory interneuron in the mouse visual thalamus, showing it participates in diverse inhibitory motifs and innervates a large territory.",
+  "seed_expert": "Josh Morgan",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies", "neuroanatomy"],
+  "tags": ["thalamus", "interneuron", "inhibition", "serial-EM", "single-cell-reconstruction"],
+  "duplicate_of_existing": null,
+  "notes": "Morgan first author. Complete input/output mapping of a single interneuron."
+}

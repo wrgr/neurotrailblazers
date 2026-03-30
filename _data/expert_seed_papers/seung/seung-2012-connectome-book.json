@@ -1,0 +1,26 @@
+{
+  "id": "seung-2012-connectome-book",
+  "title": "Connectome: How the Brain's Wiring Makes Us Who We Are",
+  "authors": [
+    "Seung HS"
+  ],
+  "year": 2012,
+  "journal": "Houghton Mifflin Harcourt (Book)",
+  "doi": null,
+  "url": "https://archive.org/details/connectomehowbra0000seun_d7m0",
+  "abstract": "A popular science book arguing that our identities are encoded in the pattern of connections between neurons \u2014 the connectome. Seung introduces the field of connectomics to a broad audience and discusses the potential of mapping neural wiring.",
+  "seed_expert": "H. Sebastian Seung",
+  "dimensions": [
+    "connectomics",
+    "ethics-society"
+  ],
+  "tags": [
+    "book",
+    "popular-science",
+    "connectome",
+    "identity"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Influential popular book that brought connectomics to public attention.",
+  "author_tier": 1
+}

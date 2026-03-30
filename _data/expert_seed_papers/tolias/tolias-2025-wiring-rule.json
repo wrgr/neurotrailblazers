@@ -1,0 +1,38 @@
+{
+  "id": "tolias-2025-wiring-rule",
+  "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+  "authors": [
+    "Ding Z",
+    "Fahey PG",
+    "Papadopoulos S",
+    "Wang E",
+    "Celii B",
+    "Papadopoulos C",
+    "Brooks A",
+    "Reimer J",
+    "Sinz F",
+    "Tolias AS",
+    "Reid RC",
+    "da Costa NM",
+    "Seung HS"
+  ],
+  "year": 2025,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-025-08840-3",
+  "url": "https://www.nature.com/articles/s41586-025-08840-3",
+  "abstract": "Using the MICrONS dataset, this study reveals that neurons with similar functional responses are preferentially connected \u2014 a universal 'like-to-like' wiring rule spanning layers and visual areas, supported by RNN modeling.",
+  "seed_expert": "Andreas Tolias",
+  "dimensions": [
+    "connectomics",
+    "network-analysis"
+  ],
+  "tags": [
+    "MICrONS",
+    "like-to-like",
+    "structure-function",
+    "visual-cortex"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Cross-listed with Reid. Key MICrONS structure-function finding.",
+  "author_tier": 1
+}

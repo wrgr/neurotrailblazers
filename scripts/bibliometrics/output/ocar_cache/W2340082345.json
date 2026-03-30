@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The interglomerular connections within the vertebrate olfactory bulb are thought to mediate lateral inhibition and odor contrast, but their precise synaptic architecture had not been mapped at EM resolution in any vertebrate.",
+    "challenge": "Reconstructing all interglomerular projections from a dense EM volume requires distinguishing fine axonal processes across many glomeruli, a task complicated by the structural complexity of the bulb and the scale of the reconstruction effort.",
+    "action": "The authors performed dense EM-based reconstruction of the zebrafish olfactory bulb to map the full interglomerular projectome, tracing all axonal projections connecting distinct glomerular units.",
+    "resolution": "The reconstruction revealed the spatial rules and synaptic specificity of interglomerular connectivity, showing that centrifugal interneurons make structured, non-random connections across glomeruli. This provides an anatomical basis for lateral processing of odor information within the olfactory bulb.",
+    "future_work": "Future work should integrate this structural map with functional odor-response data to test whether the interglomerular projectome implements odor decorrelation or contrast enhancement as predicted by computational models."
+  },
+  "summaries": {
+    "beginner": "The zebrafish olfactory bulb is the first place in the brain where smell signals are processed, organized into separate compartments called glomeruli. This study used electron microscopy to map all the connections running between glomeruli, revealing a hidden web of cross-connections that may help distinguish different odors.",
+    "intermediate": "By performing dense EM reconstruction of the zebrafish olfactory bulb, the authors generated the first complete map of the interglomerular projectome in a vertebrate. Structural analysis revealed non-random connectivity patterns among glomeruli, consistent with a lateral processing architecture that could underlie odor discrimination or adaptation.",
+    "advanced": "This dense EM reconstruction of the zebrafish olfactory bulb interglomerular projectome provides synaptic-resolution evidence for structured lateral connectivity among glomeruli in a vertebrate. The analysis reveals cell-type-specific projection patterns and synaptic targeting rules. A key caveat is that the static structural map cannot directly address functional questions about odor coding, and the extent to which zebrafish interglomerular organization generalizes to other vertebrates remains to be determined."
+  },
+  "discussion_prompts": [
+    "What computational function could structured interglomerular connectivity serve in odor coding, and how would you test this prediction using the structural map as a guide?",
+    "How does the interglomerular projectome in zebrafish compare to the local interneuron circuits described in the Drosophila antennal lobe, and what does this reveal about conserved versus divergent olfactory circuit design?",
+    "What technical challenges are specific to EM reconstruction of a vertebrate brain region like the olfactory bulb compared to an insect neuropil?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:zebrafish",
+    "region:olfactory-bulb",
+    "imaging:serial-section-em",
+    "circuit:olfactory",
+    "method:dense-reconstruction",
+    "neuroanatomy:interglomerular"
+  ]
+}

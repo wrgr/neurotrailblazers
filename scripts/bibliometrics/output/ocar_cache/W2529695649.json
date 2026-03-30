@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Animals must select one behavior from competing options when faced with conflicting sensory stimuli, but the neural circuit mechanisms underlying this behavioral choice were poorly understood in any organism.",
+    "challenge": "Disinhibitory circuits are harder to dissect than direct excitatory pathways because removing inhibition of inhibition can produce paradoxical outputs; linking a specific circuit motif to whole-animal behavioral sequences required both connectomic and functional evidence.",
+    "action": "The authors combined connectome-based circuit mapping in Drosophila with genetic manipulation and behavioral assays to identify a competitive disinhibition motif \u2014 where mutually inhibitory interneurons gate behavioral output \u2014 as the substrate for behavioral choice.",
+    "resolution": "The study demonstrated that competitive disinhibition, in which two inhibitory pathways suppress each other, implements winner-take-all selection between conflicting behavioral programs. This motif enables the sequential execution of behaviors by transiently releasing one motor program while suppressing others.",
+    "future_work": "Future studies should determine whether competitive disinhibition is a universal circuit motif for action selection across species, and how neuromodulators bias competition between the inhibitory pathways to shift behavioral priorities."
+  },
+  "summaries": {
+    "beginner": "When a fly faces two competing situations, it must choose what to do. This study found that special nerve cells that suppress each other \u2014 like two teams in a tug-of-war \u2014 determine which behavior wins out. This 'competitive disinhibition' principle may be a general way brains make choices.",
+    "intermediate": "The authors identified a competitive disinhibition circuit motif in Drosophila that underlies behavioral choice, wherein two populations of inhibitory interneurons mutually suppress each other to implement winner-take-all action selection. Connectome-guided genetic perturbations disrupted both the choice mechanism and the sequencing of behavioral acts, linking circuit structure directly to behavioral function.",
+    "advanced": "This study leverages connectome-informed circuit dissection to demonstrate that competitive disinhibition \u2014 mutual inhibition between two inhibitory interneuron populations \u2014 is the mechanistic basis for behavioral choice and sequencing in Drosophila. The motif provides a neural substrate for graded competition where the 'winning' inhibitory population releases its downstream motor program. A caveat is that causal evidence relies on genetic silencing, which may have developmental or off-target effects distinct from acute circuit perturbations."
+  },
+  "discussion_prompts": [
+    "How does competitive disinhibition differ mechanistically from direct excitatory competition as a means of action selection, and what are the computational advantages of each?",
+    "What experimental evidence would be needed to distinguish whether a behavioral sequence is driven by intrinsic circuit dynamics versus sensory re-afference following each behavioral act?",
+    "Are there analogous competitive disinhibition motifs in vertebrate basal ganglia or other action-selection circuits, and does mechanistic conservation suggest a universal principle?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "circuit:motor-control",
+    "method:connectome-guided",
+    "method:optogenetics",
+    "behavior:action-selection",
+    "circuit:disinhibition"
+  ]
+}

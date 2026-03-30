@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Schizophrenia was increasingly recognized as a disorder of neural dysconnectivity rather than a localized lesion, but the specific patterns of altered connectivity and their relationship to symptoms and genetics were poorly characterized.",
+    "challenge": "Schizophrenia involves subtle, distributed connectivity alterations rather than gross structural lesions, making detection with conventional volumetric MRI difficult; applying graph-theoretic connectivity analysis required adapting methods designed for healthy subjects to clinical populations with different motion artifacts and potential confounds.",
+    "action": "Fornito, Zalesky, Pantelis, and Bullmore review the application of structural and functional connectivity analysis to schizophrenia, covering dMRI tractography, fMRI functional connectivity, graph-theoretic network analysis, and genetic connectivity studies. They survey findings on white matter integrity, functional connectivity alterations in default mode and frontoparietal networks, and network topology in schizophrenia.",
+    "resolution": "Schizophrenia is associated with consistent reductions in white matter integrity (especially frontal, temporal, and callosal tracts), altered default mode and task-positive network functional connectivity, and disrupted network topology (reduced small-world organization, altered hub connectivity). Hub regions\u2014particularly frontal and association areas\u2014show disproportionate connectivity alterations, consistent with the economy framework's prediction of hub vulnerability.",
+    "future_work": "Linking specific connectivity alterations to symptom dimensions, genetic risk variants, and cognitive deficits, and distinguishing state versus trait connectivity changes from episodic versus chronic schizophrenia, remained key challenges."
+  },
+  "summaries": {
+    "beginner": "Schizophrenia affects how different brain regions communicate with each other. This review uses brain imaging to map which connections are altered in schizophrenia and explains how this 'disconnection' framework may be a better model of the disease than looking for a single damaged brain region.",
+    "intermediate": "Fornito et al. review multimodal neuroimaging connectivity findings in schizophrenia, covering dMRI white matter alterations (reduced FA in frontotemporal and callosal tracts), fMRI functional connectivity changes (hyperconnectivity in default mode, reduced task-evoked deactivation), and graph-theoretic network topology alterations. They contextualize findings within the dysconnectivity hypothesis and discuss genetic connectivity endophenotypes.",
+    "advanced": "This review synthesizes evidence for schizophrenia as a connectome disorder, noting that hub regions with high metabolic demands and long-range connections are disproportionately affected\u2014consistent with the economy framework's prediction of hub vulnerability. The finding that frontotemporal white matter shows the most consistent alterations aligns with the disconnection hypothesis of Friston and colleagues (reduced modulation of sensory cortex by prefrontal prediction signals). The review is important context for understanding why macro-scale connectome studies of psychiatric disorders have become a major research direction, and how they might ultimately link to cellular-level connectivity changes detectable by EM."
+  },
+  "discussion_prompts": [
+    "What is the dysconnectivity hypothesis of schizophrenia, and how does it predict the specific pattern of functional connectivity alterations observed in neuroimaging studies?",
+    "How can graph-theoretic analysis of brain networks distinguish state-dependent connectivity changes (e.g., during episodes) from trait-like endophenotypic alterations in schizophrenia?",
+    "What cellular-level synaptic mechanisms might underlie the white matter and functional connectivity alterations observed in schizophrenia neuroimaging?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "disease:schizophrenia",
+    "imaging:diffusion-MRI",
+    "imaging:fMRI",
+    "topic:dysconnectivity",
+    "topic:network-analysis",
+    "review:clinical-connectomics"
+  ]
+}

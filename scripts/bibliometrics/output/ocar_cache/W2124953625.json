@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "As neuroimaging connectivity data accumulated, a comprehensive synthesis of what was known about human brain network topology\u2014and what research agenda should guide its further characterization\u2014was needed.",
+    "challenge": "Human brain connectivity data came from multiple modalities (diffusion MRI, fMRI, EEG/MEG) with different spatial and temporal resolution, making integration into a unified network description technically and conceptually challenging.",
+    "action": "Sporns reviews current empirical approaches for mapping the human connectome, including diffusion spectrum imaging, fMRI functional connectivity, and multi-modal integration. He analyzes what is known about network topology (small-world, modularity, hub structure) and reviews computational models built on structural connectivity to explain functional dynamics.",
+    "resolution": "The human connectome exhibits consistent small-world topology, hierarchical modularity, and a rich-club core of highly connected hub regions. Structural hubs (posterior cingulate, precuneus, lateral prefrontal cortex) overlap substantially with the default mode network, suggesting that structural connectivity shapes resting-state functional dynamics. Computational modeling on structural connectome scaffolds can reproduce empirically observed functional connectivity patterns.",
+    "future_work": "Increasing the spatial resolution of in vivo tractography to capture individual fiber crossings and small tracts, validating connectivity matrices against histological ground truth, and extending network analysis to individual differences and development remained major challenges."
+  },
+  "summaries": {
+    "beginner": "This review summarizes everything scientists knew in 2011 about the wiring of the human brain at the large scale\u2014which regions are most highly connected, how the network is organized into modules, and how this structure shapes brain function.",
+    "intermediate": "Sporns reviews human connectome mapping approaches and network topology findings, focusing on the emergence of small-world properties, modular organization aligned with functional networks (DMN, frontoparietal, sensorimotor), and rich-club hub regions. He discusses computational models linking structural to functional connectivity and surveys the early Human Connectome Project data.",
+    "advanced": "This review synthesizes the then-current state of human connectome science, integrating network topology findings with computational modeling approaches. Notable contributions include discussion of the relationship between structural hubs and metabolic vulnerability (consistent with Neuropathological findings that AD selectively affects hub regions), and the proposal that the connectome's rich-club organization provides a structural substrate for flexible, integrative cognitive processing. The review explicitly distinguishes macroscale connectomics from the cellular-level EM connectomics agenda, arguing both are necessary for a complete understanding of brain organization."
+  },
+  "discussion_prompts": [
+    "What is the evidence that structural connectome hubs are the same regions showing the largest functional connectivity in resting-state fMRI, and what does this correspondence imply mechanistically?",
+    "How do computational models built on the structural connectome reproduce empirical functional connectivity patterns, and what do the discrepancies between model and data reveal?",
+    "What are the key limitations of diffusion MRI tractography for connectome mapping that prevent it from accurately reconstructing the true anatomical connectivity matrix?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "topic:human-connectome",
+    "imaging:diffusion-MRI",
+    "topic:network-analysis",
+    "topic:rich-club",
+    "topic:small-world",
+    "review:connectomics"
+  ]
+}

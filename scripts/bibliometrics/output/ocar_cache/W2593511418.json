@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Beam-induced motion during cryo-EM data collection causes image blurring that degrades resolution, and existing motion correction methods assumed isotropic motion that failed to capture local anisotropic sample drift.",
+    "challenge": "Beam-induced motion in cryo-EM is spatially non-uniform across the sample, so correcting it requires modeling local anisotropic displacements across each movie frame \u2014 a computationally demanding problem with no established solution at the time.",
+    "action": "The authors developed MotionCor2, an algorithm that performs patch-based anisotropic motion correction on cryo-EM movie frames using a GPU-accelerated implementation, modeling both global and local motion components.",
+    "resolution": "MotionCor2 substantially improved the resolution of cryo-EM reconstructions by correcting anisotropic local motion that previous methods left uncorrected, and its GPU implementation made the correction fast enough for routine use in high-throughput pipelines. It became the standard pre-processing step for single-particle and tomography cryo-EM.",
+    "future_work": "Further improvements could address dose-weighting schemes, real-time on-the-fly correction during acquisition, and adaptation to cryo-electron tomography tilt series with more complex motion trajectories."
+  },
+  "summaries": {
+    "beginner": "When scientists image frozen proteins with an electron microscope, the beam causes the sample to shift slightly, blurring the pictures. This software automatically corrects those movements by tracking how each part of the image moves and then computationally undoing it.",
+    "intermediate": "MotionCor2 addresses beam-induced motion in cryo-EM movies using a patch-based algorithm that models anisotropic local displacements rather than assuming uniform global motion. GPU acceleration makes it fast enough for routine high-throughput workflows, and it has become the de facto standard motion correction tool, significantly improving achievable resolution in structural biology.",
+    "advanced": "MotionCor2 implements a hierarchical motion model that estimates both global frame-to-frame translation and local patch-wise anisotropic motion, incorporating dose-weighting across frames to further improve high-resolution information. The GPU-accelerated implementation processes each movie in seconds. Its adoption as a near-universal preprocessing step in cryo-EM pipelines reflects the magnitude of resolution improvement from proper anisotropic correction, though the algorithm's performance on highly flexible or radiation-sensitive specimens remains an active area of development."
+  },
+  "discussion_prompts": [
+    "Why is anisotropic motion correction more important for high-resolution cryo-EM than for lower-resolution applications, and at what resolution does isotropic correction become insufficient?",
+    "How does dose-weighting complement motion correction in MotionCor2, and what is the physical rationale for down-weighting later frames?",
+    "What are the remaining sources of resolution-limiting image degradation in cryo-EM after motion correction, and which are addressable by computational post-processing?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:cryo-em",
+    "method:motion-correction",
+    "tool:motioncor2",
+    "imaging:single-particle",
+    "method:gpu-acceleration",
+    "technique:preprocessing"
+  ]
+}

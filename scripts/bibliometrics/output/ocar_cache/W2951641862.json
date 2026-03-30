@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The nervous system must remain functional as the animal grows during development, yet how neural circuit connectivity is maintained \u2014 or restructured \u2014 across larval instars was poorly understood in any organism.",
+    "challenge": "Comparative connectomics across developmental stages requires reconstructing the same circuits from multiple animals at different developmental time points and establishing correspondence of neurons across stages \u2014 a labor-intensive undertaking.",
+    "action": "The authors reconstructed defined sensorimotor circuits from Drosophila larvae at different developmental stages using serial-section EM, identifying conserved and changing connectivity patterns across instars through comparative analysis of matched neuron types.",
+    "resolution": "Despite substantial growth in neuronal size and synapse number across larval development, the relative connectivity patterns \u2014 which neurons connect to which \u2014 were largely conserved, indicating that circuit structure is maintained through developmental scaling. Some circuit refinements were also identified, suggesting targeted plasticity.",
+    "future_work": "Future work should determine the molecular mechanisms that maintain circuit-level connectivity through developmental scaling and identify the signals that trigger the observed targeted circuit refinements across instars."
+  },
+  "summaries": {
+    "beginner": "As a caterpillar-like fly larva grows, its brain cells get bigger too \u2014 but do the connections between cells change? This study compared the same nerve circuits in young and older fly larvae and found that the connections stay largely the same even as everything grows, keeping the circuit working properly throughout development.",
+    "intermediate": "Comparative connectomics of sensorimotor circuits across Drosophila larval instars revealed that core connectivity patterns are preserved despite substantial growth in cell size and synapse number, implying active maintenance of circuit structure. Targeted connectivity refinements in specific circuit modules suggest developmental circuit tuning beyond simple scaling.",
+    "advanced": "This multi-stage comparative EM connectomics study reconstructed matched sensorimotor circuit modules across early and late Drosophila larval instars. The analysis demonstrates that circuit-level connectivity (adjacency and relative synaptic weight) is conserved through developmental scaling despite >3-fold changes in total synapse count per neuron, consistent with homeostatic mechanisms preserving connection specificity. Identified circuit refinements in specific modules suggest selective plasticity. Key caveats include the cross-sectional design (different animals per stage rather than longitudinal) and limited circuit coverage per animal."
+  },
+  "discussion_prompts": [
+    "What molecular or activity-dependent mechanisms could maintain specific synaptic connectivity patterns through the growth-associated scaling of synapses observed across larval instars?",
+    "How does the conservation of circuit structure across larval development relate to the robustness of behavior \u2014 do behavioral outputs also scale proportionally?",
+    "What advantages does a comparative connectomics approach offer over functional imaging or genetics for studying circuit development, and what are its limitations?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "stage:larval",
+    "method:comparative-connectomics",
+    "imaging:serial-section-em",
+    "circuit:sensorimotor",
+    "topic:development"
+  ]
+}

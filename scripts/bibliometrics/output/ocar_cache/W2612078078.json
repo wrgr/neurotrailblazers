@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Whole-brain connectomics in a vertebrate had not been achieved; the larval zebrafish, with its ~100,000-neuron brain and optical transparency, offered the first tractable vertebrate target for complete brain-level EM imaging.",
+    "challenge": "Acquiring serial-section EM data for an entire vertebrate brain volume \u2014 orders of magnitude larger than invertebrate precedents \u2014 requires handling thousands of ultrathin sections without loss or damage and stitching the resulting terabytes of imaging data.",
+    "action": "The authors collected serial-section transmission EM data spanning the entire larval zebrafish brain, developing protocols for section collection at scale and computational pipelines for image stitching, alignment, and initial volume assembly.",
+    "resolution": "The study produced the first whole-brain serial-section EM volume of a vertebrate, providing a resource enabling study of circuit connectivity at synaptic resolution across the entire nervous system. Initial analyses demonstrated the feasibility of tracing long-range axonal projections across brain regions.",
+    "future_work": "Completing dense reconstruction across the entire volume will require automated segmentation and proofreading at a scale not yet achieved; targeted circuit analyses in specific brain regions are more immediately tractable."
+  },
+  "summaries": {
+    "beginner": "Scientists imaged an entire zebrafish larval brain with a powerful electron microscope \u2014 the first time this was done for any vertebrate. The result is a massive three-dimensional dataset where individual nerve cells and their connections can be traced throughout the whole brain.",
+    "intermediate": "This landmark study produced the first whole-brain serial-section EM volume of a vertebrate \u2014 the larval zebrafish \u2014 enabling synapse-resolution circuit analysis across all brain regions. Scalable section collection and alignment pipelines were developed, demonstrating that complete vertebrate brain EM is achievable. The dataset underpins follow-up circuit studies requiring long-range axonal tracing.",
+    "advanced": "This paper describes the acquisition and assembly of a whole-brain serial-section TEM volume of larval zebrafish (~1,000 \u00b5m anterior-posterior), the first such dataset for any vertebrate. Key technical contributions include section handling at scale and computational stitching/alignment methods. The dataset is a resource enabling targeted circuit reconstruction but faces challenges of dense reconstruction: full segmentation and proofreading of ~100,000 neurons will require automated tools far beyond current capacity. Z-resolution is limited by section thickness (~40 nm), meaning thin processes can be missed."
+  },
+  "discussion_prompts": [
+    "What are the unique biological advantages of larval zebrafish over Drosophila as a model for whole-brain connectomics, and what new scientific questions become tractable with a vertebrate whole-brain EM volume?",
+    "How does the challenge of reconstructing long-range axonal projections in a vertebrate brain differ from circuit reconstruction in compact invertebrate ganglia?",
+    "What automated segmentation and annotation strategies would be most critical for enabling dense circuit reconstruction in this whole-brain dataset?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "species:zebrafish",
+    "imaging:serial-section-tem",
+    "connectomics:whole-brain",
+    "method:large-volume-em",
+    "stage:larval",
+    "infrastructure:pipeline"
+  ]
+}

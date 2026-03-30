@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Tracing the downstream synaptic partners of identified neurons \u2014 the postsynaptic 'second-order' neurons \u2014 is essential for understanding information flow through sensory circuits, but transsynaptic tracing tools for Drosophila were lacking.",
+    "challenge": "Genetic transsynaptic tracing requires a receptor-ligand system that crosses synapses specifically and robustly, and engineering such a system that works cell-type-specifically in the fly nervous system requires careful molecular design.",
+    "action": "The authors developed trans-Tango, a genetic transsynaptic tracing method in Drosophila in which a ligand expressed at presynaptic terminals activates a synthetic receptor on postsynaptic cells, triggering reporter expression and enabling identification of second-order neurons.",
+    "resolution": "trans-Tango successfully labeled the downstream synaptic partners of taste neurons in the fly, revealing the second-order circuit architecture of gustatory processing. The method was validated against known connectivity and then used to discover new second-order taste neuron populations.",
+    "future_work": "Future iterations should extend trans-Tango to enable anterograde tracing beyond one synapse, develop variants compatible with functional imaging, and apply the method systematically to other sensory and motor circuits."
+  },
+  "summaries": {
+    "beginner": "When a taste receptor cell is activated, it sends a signal to the next nerve cell in the chain. This study created a genetic trick that makes the receiving nerve cell glow, revealing which cells are listening to which taste neurons in the fly's brain.",
+    "intermediate": "trans-Tango is a genetic transsynaptic tracing tool that uses a presynaptically expressed ligand to activate a synthetic receptor on postsynaptic cells, driving reporter expression. Applied to Drosophila taste neurons, it revealed second-order circuit connectivity, complementing EM-based connectomics with a genetic approach accessible in living animals.",
+    "advanced": "trans-Tango implements a synthetic receptor-ligand transsynaptic tracing strategy in which a tethered ligand presented at presynaptic terminals engages a chimeric receptor on postsynaptic cells, triggering Tango-based transcriptional activation of reporters. Validation against known circuitry and application to gustatory second-order neurons reveals circuit architecture consistent with EM data where available. Key limitations include potential false positives from non-synaptic ligand-receptor encounters, one-step-only anterograde directionality, and inability to resolve individual synapse-level connectivity as EM can."
+  },
+  "discussion_prompts": [
+    "What are the potential sources of false positive or false negative labeling in trans-Tango, and how would you design controls to assess tracing specificity?",
+    "How does trans-Tango complement EM-based connectomics, and in what experimental scenarios would each approach be preferred for mapping second-order circuit connectivity?",
+    "What modifications to the trans-Tango system would be needed to enable multi-hop transsynaptic tracing, and what would be the main technical challenges?"
+  ],
+  "dimension": "methods-general",
+  "tags": [
+    "species:drosophila",
+    "method:transsynaptic-tracing",
+    "tool:trans-tango",
+    "circuit:gustatory",
+    "method:genetic-tracing",
+    "technique:reporter-expression"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Comparing brain organization across mammalian species is essential for understanding the evolutionary origins of uniquely human cognitive capabilities, but the complex changes in cortical morphology and function across evolution make cross-species alignment extremely challenging.",
+    "challenge": "Cortical regions that are functionally homologous across species do not necessarily share the same anatomical location or morphological appearance, and systems associated with higher cognition often lack clear anatomical homologues in non-human primates, limiting direct comparison.",
+    "action": "The authors developed a functional alignment approach based on shared connectivity gradients to map cortical organization across species, identifying hierarchical organizational principles that are conserved from macaques to humans while also revealing uniquely human expansions.",
+    "resolution": "Cross-species functional alignment revealed a conserved evolutionary hierarchy within the connectome, with regions associated with higher cognitive functions (e.g., default mode network) showing the greatest evolutionary expansion in humans. The approach successfully identifies functionally homologous regions even when anatomical landmarks differ.",
+    "future_work": "Extending this framework to additional species and to developmental datasets could reveal how the evolutionary hierarchy is established during brain development and how it relates to the emergence of species-specific cognitive abilities."
+  },
+  "summaries": {
+    "beginner": "Human brains are more complex than those of other animals, but it has been hard to directly compare which brain regions correspond to each other across species. This paper developed a way to align brain maps across species using patterns of connectivity rather than anatomy, finding that regions involved in higher thinking expanded the most over evolution.",
+    "intermediate": "This study introduces a connectivity-gradient-based approach for cross-species functional alignment that reveals an evolutionary hierarchy within the cortical connectome. By comparing macaque and human cortical organization using shared gradient dimensions, the authors show that the greatest evolutionary expansion occurred in regions associated with the default mode network and transmodal processing.",
+    "advanced": "Using principal gradient decompositions of functional connectivity to establish cross-species cortical correspondence, this work demonstrates that an evolutionary hierarchy is preserved across the primate connectome, with the transmodal default mode network occupying the apex of this hierarchy in both species. The approach overcomes limitations of anatomical-landmark-based alignment for associating regions lacking morphological homologues; however, functional connectivity gradients may reflect both homologous and non-homologous organizational principles, warranting caution in evolutionary interpretations."
+  },
+  "discussion_prompts": [
+    "What are the assumptions and limitations of using functional connectivity gradients for cross-species alignment, and how might these affect conclusions about evolutionary homology?",
+    "How does the evolutionary hierarchy identified in this study relate to developmental hierarchies, such as the inside-out development of cortical layers?",
+    "What does the expansion of the default mode network in humans imply about the neural substrates of uniquely human cognitive capabilities like self-referential thought?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "species:human",
+    "species:macaque",
+    "method:functional-connectivity",
+    "method:gradient-analysis",
+    "neuroanatomy:cortex",
+    "data:connectome"
+  ]
+}

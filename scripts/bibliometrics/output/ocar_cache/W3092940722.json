@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "A large-scale connectomic reconstruction of mammalian cortex that includes not only neurons but also all non-neuronal cell types, vasculature, and organelles was needed to understand the full cellular ecology of cortical tissue.",
+    "challenge": "Reconstructing 3 million cubic microns of mouse cortex at EM resolution including all cell types requires petabyte-scale data acquisition, automated segmentation across diverse cell morphologies, and multimodal integration with functional data.",
+    "action": "The authors performed semi-automated reconstruction of L2/3 mouse primary visual cortex from 3 million cubic microns of EM images, reconstructing pyramidal neurons, inhibitory neurons, astrocytes, microglia, oligodendrocytes, pericytes, vasculature, and mitochondria. Functional data from two-photon calcium imaging was registered to the EM volume.",
+    "resolution": "The reconstruction produced a multimodal cortical dataset integrating synaptic connectivity, cell type identity, organelle distributions, and functional response properties for the same neurons. This enabled analysis of how structural features like mitochondrial density and synaptic weight correlate with functional properties.",
+    "future_work": "Expanding the volume to include full dendritic arbors and axonal projections, and increasing the number of neurons with matched functional data, are key priorities."
+  },
+  "summaries": {
+    "beginner": "Scientists got a detailed 3D picture of a small chunk of mouse visual cortex using electron microscopy, then matched those images to recordings of the same neurons' activity. The result is a map that shows both what each neuron looks like and how it responds to visual stimuli.",
+    "intermediate": "The MICrONS L2/3 dataset combines semi-automated EM reconstruction of 3 million cubic microns of mouse V1 with co-registered two-photon functional imaging, enabling structure-function analysis at the level of individual synapses and neurons. Beyond neurons, the dataset encompasses all major non-neuronal cell types and vasculature, providing a complete census of cortical tissue composition.",
+    "advanced": "This landmark dataset integrates large-scale EM reconstruction with in vivo two-photon imaging to enable direct structure-function correlation in mouse V1 L2/3. The semi-automated pipeline handles diverse cell types including glia and pericytes, extending connectomics beyond purely neuronal analyses. Key caveats include the small fraction of neurons with matched functional data (limited by calcium imaging coverage), the reliance on semi-automated proofreading which may introduce systematic errors, and the challenge of interpreting functional correlates of structural features like synapse number given the complexity of cortical circuits."
+  },
+  "discussion_prompts": [
+    "What structural features (e.g., synapse number, mitochondrial content, dendritic geometry) are most strongly correlated with functional response properties in this dataset, and are these correlations causal or epiphenomenal?",
+    "How does including non-neuronal cells (glia, vasculature) in the reconstruction change our understanding of the cortical micro-environment compared to purely neuronal connectomes?",
+    "What are the main sources of error in the semi-automated reconstruction pipeline, and how were these quantified and mitigated in the analysis?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:mouse",
+    "neuro:visual-cortex",
+    "method:multimodal",
+    "imaging:tem",
+    "method:calcium-imaging",
+    "dataset:microns"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Motion detection in fly vision has been studied for decades with the Hassenstein-Reichardt correlator model, but the actual neuronal implementation of this computation \u2014 which cell types correspond to model components \u2014 was still unresolved.",
+    "challenge": "Identifying the synaptic basis of the motion computation requires mapping all connections among the relevant cell types at EM resolution across the full depth of the medulla, a region with highly interleaved processes from dozens of neuron types.",
+    "action": "The authors reconstructed the comprehensive connectome of the Drosophila medulla column housing the ON motion detection circuit using serial-section EM, tracing all synaptic inputs and outputs of T4 cells and their presynaptic partners.",
+    "resolution": "The connectome revealed that MI1 and Tm3 neurons provide the two parallel input streams to T4 cells implementing the ON motion detector, with their synaptic asymmetries matching the spatial and temporal filter components of the Hassenstein-Reichardt model. This provided the first direct circuit-level validation of the motion detector model.",
+    "future_work": "Future work should test whether the connectivity asymmetry directly produces the predicted temporal filtering difference, using electrophysiology or calcium imaging in identified connectome-defined neuron types."
+  },
+  "summaries": {
+    "beginner": "Flies can detect moving objects very well. Scientists have long had a mathematical model for how this works but never knew which actual nerve cells corresponded to which model parts. This study mapped all the connections of the motion-detecting cells in the fly eye and identified exactly which neurons play each role.",
+    "intermediate": "Using serial-section EM connectomics of the Drosophila medulla, the authors reconstructed the complete ON motion detection circuit and identified MI1 and Tm3 as the two parallel input channels to T4 cells, validating the Hassenstein-Reichardt correlator model at the neuronal level. Synaptic asymmetries were consistent with the predicted temporal filter differences needed for directional selectivity.",
+    "advanced": "This comprehensive connectome of the Drosophila medulla ON motion channel identifies the synaptic wiring of T4 cells and their presynaptic partners, providing circuit-level validation of the Hassenstein-Reichardt model. The finding that MI1 and Tm3 implement the two input filters rests on the structural asymmetry of their synaptic inputs onto T4 dendrites. Key caveats include the assumption that connectivity predicts function and the challenge of validating that synaptic number correlates with synaptic weight. Temporal filtering properties must be confirmed electrophysiologically in each identified cell type."
+  },
+  "discussion_prompts": [
+    "How strongly does the synaptic connectivity asymmetry between MI1 and Tm3 inputs predict that they implement different temporal filters, and what additional evidence would confirm this?",
+    "How does the identified circuit map compare to canonical Hassenstein-Reichardt correlator implementations, and are there circuit elements that the model did not predict?",
+    "What broader principle does this study illustrate about the relationship between classical behavioral models and the underlying neural circuit implementation?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "region:medulla",
+    "circuit:motion-detection",
+    "imaging:serial-section-em",
+    "cell-type:T4",
+    "method:dense-reconstruction"
+  ]
+}

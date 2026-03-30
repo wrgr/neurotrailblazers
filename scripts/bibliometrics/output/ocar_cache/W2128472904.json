@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Human neuroimaging had identified reward-related activation in ventral striatum and prefrontal cortex, but the precise anatomical circuits underlying these activations were unclear because human primate tract-tracing data was sparse and non-human primate anatomy was not systematically linked to human fMRI findings.",
+    "challenge": "Bridging non-human primate tract-tracing anatomy\u2014which provides precise circuit detail\u2014with human fMRI activations\u2014which provide functional relevance but poor spatial resolution\u2014required careful mapping of homologous areas across species and integration of disparate literatures.",
+    "action": "Haber and Knutson systematically review the anatomy of the primate reward circuit, covering dopaminergic midbrain projections, striatal subregion connectivity, orbitofrontal and medial prefrontal cortex circuits, thalamic relay nuclei, and amygdala-reward interactions. They cross-reference primate anatomy with human neuroimaging activation coordinates.",
+    "resolution": "The review establishes a detailed anatomical map linking specific striatal subregions (nucleus accumbens shell/core, caudate, putamen) to distinct prefrontal and limbic inputs, with the ventral striatum serving as a convergence zone for limbic, cognitive, and sensorimotor information. Human fMRI activations are localized within this anatomical framework, providing a circuit-level interpretation of human reward imaging data.",
+    "future_work": "Determining how individual differences in reward circuit anatomy predict differences in decision-making, addiction vulnerability, and psychiatric risk in humans required combining high-resolution structural imaging with circuit-level mechanistic data."
+  },
+  "summaries": {
+    "beginner": "The brain's reward system involves many interconnected regions\u2014the nucleus accumbens, prefrontal cortex, amygdala, and dopamine neurons\u2014that together determine how motivated we are and how we make decisions. This review maps these connections in detail using primate anatomy and links them to human brain imaging findings.",
+    "intermediate": "Haber and Knutson provide a comprehensive review of primate reward circuit anatomy, emphasizing topographic organization within the striatum and its limbic (ventral), cognitive (central), and sensorimotor (dorsal) subterritories. They review the 'spiral' model of striato-nigral connectivity that links ventral to dorsal striatum via ascending dopaminergic loops, and cross-reference primate tract-tracing with human fMRI reward activations.",
+    "advanced": "This review synthesizes Haber's primate tract-tracing work on striatal-cortical-thalamic loops with Knutson's human reward fMRI literature to provide a translational circuit framework. The 'spiral' connectivity from VTA\u2192NAc\u2192VTA via shell-to-core gradients provides a mechanistic basis for how motivational context influences habitual behavior. The level of anatomical specificity in this review\u2014defining subregions within striatum, OFC, and mPFC\u2014enables targeted diffusion MRI tractography and resting-state fMRI seed analyses, and motivates connectomic reconstruction of specific striatal microcircuits."
+  },
+  "discussion_prompts": [
+    "How does the 'spiral' model of striato-nigral connectivity provide a mechanistic account of how Pavlovian motivational value influences instrumental action selection?",
+    "What anatomical features of the nucleus accumbens shell versus core best explain their distinct roles in reward learning versus reward performance?",
+    "How well do resting-state fMRI connectivity patterns in the human reward circuit correspond to the anatomical circuit described by Haber and Knutson from primate tract-tracing data?"
+  ],
+  "dimension": "neuroanatomy",
+  "tags": [
+    "topic:reward-circuitry",
+    "topic:striatum",
+    "topic:prefrontal-cortex",
+    "topic:dopamine",
+    "species:macaque",
+    "review:circuit"
+  ]
+}

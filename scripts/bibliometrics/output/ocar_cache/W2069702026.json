@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The promise of connectomics\u2014mapping complete synaptic wiring diagrams of neural circuits\u2014required practical volume EM methods that could acquire nanometer-resolution images of cubic-millimeter tissue volumes, but no comprehensive review comparing available approaches existed.",
+    "challenge": "Each volume EM modality (SBEM, FIB-SEM, ATUM-TEM, array tomography) has distinct resolution, throughput, artifact profiles, and scalability characteristics, making it difficult for researchers to select the appropriate method for their biological question without deep technical expertise.",
+    "action": "Briggman and Bock provide an updated, comprehensive review of volume EM approaches for connectomics, covering tissue preparation (fixation, staining, embedding), imaging modalities (SBEM, FIB-SEM, ATUM-SEM, array tomography), and reconstruction software. They include practical guidance on acquisition parameters and discuss recent demonstrations of circuit reconstruction in retina, cortex, and Drosophila.",
+    "resolution": "The review demonstrates that SBEM and ATUM-SEM have emerged as the most practical platforms for large-scale connectomics, with SBEM offering simpler workflow and ATUM-SEM providing higher throughput. Early functional\u2013structural correlation studies combining two-photon calcium imaging with post-hoc SBEM are highlighted as a key paradigm for linking activity to connectivity.",
+    "future_work": "Achieving isotropic nanometer resolution across cubic-millimeter volumes at practical acquisition speeds, and developing reliable automated segmentation for such datasets, remained major unsolved challenges."
+  },
+  "summaries": {
+    "beginner": "To map all the connections between neurons, scientists need to image brain tissue in 3D at the nanometer scale. This review explains the different electron microscopy approaches available for doing this, compares their strengths and weaknesses, and describes early successes in reconstructing neural circuits.",
+    "intermediate": "Briggman and Bock systematically compare volume EM modalities (SBEM, FIB-SEM, ATUM-TEM/SEM, array tomography) for neural circuit reconstruction across metrics of resolution, throughput, section thickness, and artifact susceptibility. They discuss tissue preparation for maximally contrasted membranes (OsO4, en bloc staining with UAc/Pb), early functional\u2013structural correlation paradigms, and automated segmentation status in 2011.",
+    "advanced": "This review captures the field at a pivotal moment when SBEM had been demonstrated for neural circuit reconstruction (retinal direction selectivity circuit, Drosophila NMJ) but petascale cortical reconstruction had not yet been achieved. The discussion of optogenetics-guided targeted EM reconstruction foreshadows the 'functional connectomics' paradigm later exemplified by Bock et al. (2011) and Briggman et al. (2011). The comparison of modalities highlights FIB-SEM's superior z-resolution but lower throughput compared to SBEM\u2014a tradeoff still central to planning contemporary connectome projects."
+  },
+  "discussion_prompts": [
+    "What are the key factors determining whether SBEM or ATUM-SEM is the better choice for a specific connectomics project?",
+    "How does osmium-based en bloc staining for volume EM affect the preservation of molecular epitopes for correlative approaches?",
+    "What is the 'functional connectomics' paradigm, and what does combining two-photon calcium imaging with post-hoc EM reconstruction enable that neither approach alone cannot?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "imaging:SBEM",
+    "imaging:FIB-SEM",
+    "imaging:ATUM-SEM",
+    "method:volume-EM",
+    "topic:connectomics-pipeline",
+    "review:methods"
+  ]
+}

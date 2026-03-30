@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Reconstructing neural circuit topology from anatomical data required a suite of specialized software tools for image alignment, segmentation, annotation, and visualization, but these tools were scattered, immature, and not integrated into unified workflows.",
+    "challenge": "The scale and complexity of neural circuit data\u2014multi-terabyte image volumes with nanometer-scale features needing sub-micron alignment and cell-by-cell annotation\u2014exceeded the capabilities of general-purpose image analysis software available in the mid-2000s.",
+    "action": "Smith reviews the software tools available in 2007 for neural circuit reconstruction, including tools for serial-section TEM alignment, 3D visualization, semi-automated segmentation, and synaptic annotation. He evaluates their capabilities and limitations, and discusses the emerging need for community databases and standardized data formats.",
+    "resolution": "The review identifies that the then-available tools were adequate for small-scale reconstructions but would not scale to the millimeter-scale volumes needed for complete circuit maps. It calls for development of automated segmentation methods, standardized file formats, and collaborative annotation platforms\u2014needs that subsequently drove creation of CATMAID, VAST, and cloud-based reconstruction tools.",
+    "future_work": "Scalable automated segmentation and community annotation platforms for multi-terabyte EM volumes were identified as the critical infrastructure gaps that the field needed to close."
+  },
+  "summaries": {
+    "beginner": "Reconstructing neural circuits from microscope images is a massive data challenge that requires specialized software. This 2007 review surveys the tools scientists had available to align images, trace neuron shapes, and annotate connections\u2014and explains why better tools were urgently needed.",
+    "intermediate": "Smith evaluates the state of circuit reconstruction software in 2007, covering serial-section alignment tools, 3D rendering and visualization platforms, semi-automated segmentation approaches, and synapse annotation interfaces. He identifies scalability as the central bottleneck, noting that available tools required extensive manual effort and would not support reconstruction of volumes relevant to systems neuroscience.",
+    "advanced": "This review captures the field at a formative moment before the development of CATMAID, VAST, and deep-learning segmentation. Smith's analysis of the alignment, segmentation, and annotation pipeline foreshadows many of the architectural decisions in subsequent tools: tile-based image storage, incremental proofreading workflows, and community annotation databases. The paper is useful for understanding the historical context of connectomics infrastructure development and how the tools have evolved over the subsequent 15 years."
+  },
+  "discussion_prompts": [
+    "How have the bottlenecks in neural circuit reconstruction software changed between 2007 and today, and which challenges identified by Smith have been fully solved?",
+    "What properties should a community annotation platform have to enable distributed proofreading of large EM connectome datasets?",
+    "How did the transition from manual to deep-learning-based segmentation change the workflow and error profile of connectome reconstruction?"
+  ],
+  "dimension": "infrastructure",
+  "tags": [
+    "tool:segmentation-software",
+    "topic:connectomics-pipeline",
+    "tool:annotation-platforms",
+    "topic:image-alignment",
+    "review:infrastructure",
+    "year:2007"
+  ]
+}

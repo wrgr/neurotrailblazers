@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "A new analytical framework based on cortical gradients\u2014continuous axes of variation in brain organization\u2014had emerged as a powerful way to study macroscale brain structure and function, but no unified, accessible toolbox existed for computing and analyzing these gradients.",
+    "challenge": "Computing cortical gradients requires dimensionality reduction of high-dimensional connectivity matrices, and relating gradient maps across datasets, species, and modalities requires non-trivial alignment procedures; implementing these methods from scratch is a significant barrier for most researchers.",
+    "action": "The authors developed BrainSpace, a Python/MATLAB toolbox implementing gradient estimation (via diffusion map embedding and other methods), gradient alignment, and visualization tools for neuroimaging and connectomics data. The toolbox provides tutorials and example datasets.",
+    "resolution": "BrainSpace enables researchers to compute, align, and visualize cortical gradients from any connectivity dataset with minimal coding effort. It was validated on HCP data, reproducing established results about the principal sensory-to-transmodal gradient, and supports cross-species and cross-cohort comparisons.",
+    "future_work": "Incorporating time-resolved gradient analysis, supporting subcortical structures, and providing richer statistical testing frameworks for gradient comparisons are important future extensions."
+  },
+  "summaries": {
+    "beginner": "Scientists have discovered that the brain is organized along smooth gradients, where nearby regions share similar functions and connections. BrainSpace is a free software tool that makes it easy for researchers to calculate and visualize these gradients from brain scan data.",
+    "intermediate": "BrainSpace is an open-source Python/MATLAB toolbox for computing cortical gradients from neuroimaging connectivity matrices using dimensionality reduction approaches such as diffusion map embedding. It provides gradient alignment methods for cross-dataset and cross-species comparisons and includes interactive visualization tools, lowering the barrier to applying gradient-based analyses in connectomics.",
+    "advanced": "BrainSpace implements the full analytical pipeline for gradient-based connectome analysis, from connectivity matrix construction through diffusion map embedding (and alternative methods) to Procrustes-based gradient alignment across cohorts or species. The toolbox addresses a critical reproducibility and accessibility gap; methodological caveats include the sensitivity of gradient results to parcellation choice, connectivity definition, and the number of retained components, which users must carefully consider for their specific research questions."
+  },
+  "discussion_prompts": [
+    "How does the choice of dimensionality reduction method (e.g., diffusion maps versus PCA versus UMAP) affect the interpretation of cortical gradients?",
+    "What does gradient alignment across datasets assume about the comparability of connectivity matrices, and when might these assumptions be violated?",
+    "How should cortical gradient analyses be validated, and what would constitute strong evidence that a gradient reflects biologically meaningful brain organization?"
+  ],
+  "dimension": "infrastructure",
+  "tags": [
+    "tool:brainspace",
+    "method:gradient-analysis",
+    "method:dimensionality-reduction",
+    "data:fmri",
+    "tool:python",
+    "data:connectome"
+  ]
+}

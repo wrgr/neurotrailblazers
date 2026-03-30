@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Animals use acoustic cues to select appropriate behaviors, but the wiring pattern from auditory sensory neurons to downstream decision-making circuits was not known at synaptic resolution in Drosophila.",
+    "challenge": "Tracing the complete first-order auditory projection from sensory neurons to central targets requires whole-brain EM reconstruction of a system where neurons are small, numerous, and intermingled with other sensory pathways.",
+    "action": "The authors used EM-based reconstruction in the Drosophila brain to trace auditory sensory neuron axons from the antenna and map all their synaptic targets in the brain, identifying both escape-mediating (Giant Fiber circuit) and courtship song-relay pathways as downstream targets.",
+    "resolution": "The reconstruction revealed a convergent-then-divergent wiring logic where individual auditory sensory neurons contact both escape and song-processing pathways, providing the first complete synaptic map of primary auditory input routing. This explains how a single acoustic signal can trigger different behavioral responses.",
+    "future_work": "Understanding how downstream circuits compute behavioral decisions from convergent auditory inputs, and how this wiring may differ between sexes, are important future directions."
+  },
+  "summaries": {
+    "beginner": "Fruit flies respond to sound in different ways \u2014 they can flee from predators or react to courtship songs. This paper mapped the first step of the hearing pathway in the fly brain, showing how sound-sensing neurons connect to both the escape and song-processing circuits.",
+    "intermediate": "Using EM reconstruction in the Drosophila brain, the authors traced the complete first-order auditory projection from Johnston's organ neurons to their central targets. They found that auditory sensory neurons make synaptic contacts with both Giant Fiber (escape) and song-relay pathway neurons, revealing a branching architecture that allows a single auditory stimulus to engage multiple downstream circuits for behavioral selection.",
+    "advanced": "This connectomic analysis of the Drosophila primary auditory pathway reveals the convergence and divergence logic governing how acoustic information is routed to distinct behavioral circuits. A key finding is that individual sensory neurons contact targets in both escape and song-processing streams, suggesting that behavioral selection is implemented downstream of the primary auditory relay rather than by segregated sensory input channels. Caveats include that the functional weight of individual synaptic contacts was not measured, and the analysis focused on one sex and one developmental stage."
+  },
+  "discussion_prompts": [
+    "How does the convergent-then-divergent architecture of auditory sensory neuron projections compare to known wiring logic in other Drosophila sensory systems (e.g., olfaction, mechanosensation)?",
+    "What circuit mechanisms downstream of the primary auditory relay could implement behavioral selection between escape and song-processing responses to the same acoustic stimulus?",
+    "How might the auditory wiring pattern differ between males and females, given the different behavioral relevance of courtship song for each sex?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "neuro:auditory-system",
+    "imaging:tem",
+    "neuro:sensory-pathway",
+    "method:connectome-reconstruction",
+    "neuro:escape-circuit"
+  ]
+}

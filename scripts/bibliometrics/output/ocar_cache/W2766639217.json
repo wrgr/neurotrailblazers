@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Diffusion MRI tractography is the primary non-invasive method for mapping human white matter connectivity, but its accuracy and the validity of derived connectomes had not been systematically benchmarked against ground truth anatomical data.",
+    "challenge": "Validating tractography-derived human connectomes requires ground truth connectivity data that is unavailable for human brains; the challenge is to design meaningful validation frameworks using animal tracers or phantom datasets that reveal where tractography succeeds and fails.",
+    "action": "The authors performed a systematic evaluation of tractography algorithms and connectivity metrics against ground-truth connectivity data from invasive viral tracing in primates and physical phantoms, assessing false positive rates, sensitivity, and the impact of algorithm choices on connectome topology.",
+    "resolution": "The study found that tractography-derived connectomes contain high rates of false positive connections and systematically miss others, with many algorithmic parameters strongly influencing which connections are detected. The results raised important questions about the validity of claims made using tractography-based human connectomes.",
+    "future_work": "Improving tractography validity will require better local fiber orientation models, multi-shell diffusion acquisitions, and machine learning approaches that learn from validated training data; connectome analyses should include uncertainty estimates."
+  },
+  "summaries": {
+    "beginner": "Scientists use a special type of brain scan called diffusion MRI to map the brain's wiring in living people. This study tested how accurate these maps actually are by comparing them to ground truth data \u2014 and found that many of the 'connections' identified don't really exist, while real connections are often missed.",
+    "intermediate": "This critical evaluation of diffusion tractography demonstrated that tractography-derived connectomes have high false positive rates and algorithm-dependent false negatives. Systematic comparison against invasive tracer ground truth revealed that many commonly reported long-range connections are erroneous, challenging the validity of structural human connectome analyses and motivating methodological improvements.",
+    "advanced": "Using ground-truth connectivity from viral tracer datasets and physical phantoms, this study quantifies the false discovery and false negative rates inherent to diffusion tractography, finding that many tractography-derived connections lack anatomical validity and that the derived connectome topology is strongly influenced by algorithmic choices. The results fundamentally challenge claims about the human connectome derived from uncritically applied tractography, particularly for short-range U-fiber connections and inter-hemispheric pathways. The paper argues for explicit ground-truth benchmarking and uncertainty quantification as requirements for connectome publications."
+  },
+  "discussion_prompts": [
+    "Given the known limitations of diffusion tractography highlighted in this paper, what claims about human brain connectivity can still be made with confidence, and which require additional validation?",
+    "How could the neuroscience community design a tractography benchmarking framework that is both reproducible and relevant to the specific scientific questions being asked?",
+    "What advances in MRI acquisition (e.g., multi-shell, higher field strength) or reconstruction algorithms would most improve tractography specificity for long-range connections?"
+  ],
+  "dimension": "methods-general",
+  "tags": [
+    "method:diffusion-mri",
+    "method:tractography",
+    "species:human",
+    "connectomics:validation",
+    "graph:false-positives",
+    "review:methods-critique"
+  ]
+}

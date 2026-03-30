@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Expansion microscopy achieves nanoscale resolution on conventional microscopes, but efficiently anchoring lipid membranes and cytoskeletal components to the hydrogel has been challenging, limiting the ability to image these important cellular structures at high resolution.",
+    "challenge": "Lipid membranes and cytoskeletal polymers do not directly anchor to expansion gels as efficiently as proteins, and commonly used fixation/digestion protocols remove or displace these structures; trivalent anchoring chemistry was proposed as a solution but had not been systematically evaluated.",
+    "action": "The authors evaluated direct grafting strategies using trivalent anchoring chemistry for enabling stable incorporation of lipid membranes and cytoskeletal elements into expansion microscopy hydrogels, testing different linker designs and processing conditions.",
+    "resolution": "Trivalent anchoring successfully enabled expansion microscopy of lipid membranes and cytoskeletal structures with preservation of relative positions and morphology. The approach extends the range of cellular structures accessible to expansion microscopy.",
+    "future_work": "Applying these grafting strategies to in-tissue samples and testing compatibility with various fixation protocols and fluorescent labeling methods are important next steps for routine biological application."
+  },
+  "summaries": {
+    "beginner": "Expansion microscopy physically enlarges biological samples to make them easier to image at high resolution. This paper worked out how to firmly attach cell membranes and the skeleton-like structures inside cells to the expansion gel, so these structures can also be imaged at super-resolution.",
+    "intermediate": "This study systematically evaluates trivalent anchoring chemistry for direct grafting of lipid membranes and cytoskeletal components into expansion microscopy hydrogels. The work establishes conditions for stable retention of these structures during expansion, expanding the repertoire of cellular features accessible to ExM-based super-resolution imaging.",
+    "advanced": "The paper provides a systematic evaluation of trivalent anchoring linker designs for incorporation of non-proteinaceous cellular structures\u2014particularly lipid membranes and cytoskeletal polymers\u2014into ExM hydrogels. The key challenge is achieving stoichiometrically sufficient, isotropic anchoring without disrupting gel uniformity or causing artifactual displacements; the study characterizes conditions that balance these requirements. Caveats include potential structural perturbations from the anchoring chemistry itself and limitations in the range of lipid and cytoskeletal labels compatible with the protocol."
+  },
+  "discussion_prompts": [
+    "Why are lipid membranes and cytoskeletal structures harder to anchor into expansion gels than proteins, and what chemical properties of trivalent anchors help address this?",
+    "How do you validate that the structures observed after expansion accurately reflect the original cellular architecture, rather than artifactual rearrangements?",
+    "What new biological questions become accessible once lipid membranes can be reliably imaged by expansion microscopy?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:expansion-microscopy",
+    "method:super-resolution",
+    "imaging:fluorescence",
+    "method:chemistry",
+    "cell-biology:cytoskeleton",
+    "cell-biology:membrane"
+  ]
+}

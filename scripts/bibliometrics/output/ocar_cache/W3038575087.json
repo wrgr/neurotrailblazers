@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Temperature and humidity are critical environmental variables for insect survival, but the neural circuits processing thermosensory and hygrosensory information from the Drosophila antenna through the brain were incompletely mapped.",
+    "challenge": "The antennal sensory circuits project through multiple brain regions with complex, intermingled connectivity; tracing the full pathway from first-order to higher-order neurons requires whole-brain EM reconstruction at sufficient resolution to identify individual synapses.",
+    "action": "Leveraging the whole-brain Drosophila EM volume, the authors reconstructed the neural circuitry associated with antennal thermosensory and hygrosensory neurons, identifying projection neurons, their target glomeruli in the antennal lobe, and downstream higher-order pathways.",
+    "resolution": "The study identified two previously unknown target glomeruli in the antennal lobe and characterized ventroposterior projection neurons (VP PNs) that relay thermosensory and hygrosensory information to the central brain. First-, second-, and third-order neurons in these pathways were systematically mapped.",
+    "future_work": "Functional validation of the identified pathways using calcium imaging and behavioral assays during temperature and humidity changes would establish whether the connectivity reflects the functional logic of sensory processing."
+  },
+  "summaries": {
+    "beginner": "Flies need to find the right temperature and humidity to survive. This paper used a detailed map of the fly brain, created by electron microscopy, to trace exactly which neurons carry temperature and humidity information from the fly's antenna into the brain and where those signals go.",
+    "intermediate": "Using the whole-brain Drosophila EM volume, this study systematically reconstructed thermosensory and hygrosensory circuits from the antenna through the antennal lobe to higher brain centers, identifying two novel glomeruli and the projection neurons that relay these signals. The connectomic approach provided first-order through third-order neuron maps with synaptic resolution.",
+    "advanced": "This connectomics study leverages the whole-brain Drosophila EM dataset to trace antennal thermo- and hygrosensory circuits, identifying two new VP glomeruli and their upstream/downstream connectivity at synaptic resolution. The finding of convergent pathways relaying both temperature and humidity signals through shared projection neurons raises interesting questions about multi-modal integration; a key caveat is that synaptic anatomy does not directly reveal functional sign (excitation vs. inhibition) without additional experiments."
+  },
+  "discussion_prompts": [
+    "How does the identification of shared projection neurons for thermosensory and hygrosensory signals inform our understanding of how flies integrate multi-modal environmental cues?",
+    "What is the functional significance of organizing temperature and humidity information in the antennal lobe using glomerular structures similar to those for olfaction?",
+    "How would you design functional experiments to validate the circuit predictions arising from this connectomics-based reconstruction?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "imaging:em",
+    "method:connectomics",
+    "neuroanatomy:antennal-lobe",
+    "cell-types:projection-neurons",
+    "behavior:sensory"
+  ]
+}

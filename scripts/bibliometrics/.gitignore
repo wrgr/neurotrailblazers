@@ -1,3 +1,6 @@
+# API response cache — large, fully regenerable, do not commit
 cache/
+
+# Python bytecode
 __pycache__/
 *.pyc

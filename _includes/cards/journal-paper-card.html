@@ -1,0 +1,114 @@
+{% comment %}
+  Journal Paper Card — OCAR framework display
+  Usage: {% include cards/journal-paper-card.html paper=paper %}
+  Expects: paper object from site.data.journal_papers.papers
+{% endcomment %}
+
+{% assign p = include.paper %}
+
+<article class="jc-card" data-dimension="{{ p.dimension }}" data-year="{{ p.year }}" data-tags="{{ p.tags | join: ',' }}" data-id="{{ p.id }}">
+  <header class="jc-card-header">
+    <div class="jc-card-meta">
+      <span class="jc-card-year">{{ p.year }}</span>
+      <span class="jc-card-dimension">{{ p.dimension | replace: '-', ' ' }}</span>
+    </div>
+    <h3 class="jc-card-title">{{ p.title }}</h3>
+    <p class="jc-card-authors">{{ p.authors }}</p>
+    <p class="jc-card-journal">
+      <em>{{ p.journal }}</em>
+      {% if p.doi %} &middot; <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    </p>
+  </header>
+
+  {% if p.ocar %}
+  <div class="jc-card-ocar">
+    <div class="jc-ocar-step">
+      <div class="jc-ocar-label jc-ocar-opportunity">Opportunity</div>
+      <p>{{ p.ocar.opportunity }}</p>
+    </div>
+    <div class="jc-ocar-step">
+      <div class="jc-ocar-label jc-ocar-challenge">Challenge</div>
+      <p>{{ p.ocar.challenge }}</p>
+    </div>
+    <div class="jc-ocar-step">
+      <div class="jc-ocar-label jc-ocar-action">Action</div>
+      <p>{{ p.ocar.action }}</p>
+    </div>
+    <div class="jc-ocar-step">
+      <div class="jc-ocar-label jc-ocar-resolution">Resolution</div>
+      <p>{{ p.ocar.resolution }}</p>
+    </div>
+    <div class="jc-ocar-step">
+      <div class="jc-ocar-label jc-ocar-future">Future Work</div>
+      <p>{{ p.ocar.future_work }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="jc-card-expertise" data-expertise-section>
+    <div class="jc-expertise-tabs">
+      <button class="jc-tab active" data-level="beginner">Beginner</button>
+      <button class="jc-tab" data-level="intermediate">Intermediate</button>
+      <button class="jc-tab" data-level="advanced">Advanced</button>
+    </div>
+    <div class="jc-expertise-content">
+      <div class="jc-level active" data-level="beginner">{{ p.summaries.beginner }}</div>
+      <div class="jc-level" data-level="intermediate">{{ p.summaries.intermediate }}</div>
+      <div class="jc-level" data-level="advanced">{{ p.summaries.advanced }}</div>
+    </div>
+  </div>
+
+  {% if p.key_figures.size > 0 %}
+  <details class="jc-card-details">
+    <summary>Key Figures & Discussion</summary>
+    <div class="jc-details-body">
+      <p><strong>Key figures:</strong></p>
+      <ul class="jc-fig-list">
+        {% for fig in p.key_figures %}
+        <li>{{ fig }}</li>
+        {% endfor %}
+      </ul>
+      {% if p.discussion_prompts.size > 0 %}
+      <p><strong>Discussion prompts:</strong></p>
+      <ul class="jc-fig-list">
+        {% for prompt in p.discussion_prompts %}
+        <li>{{ prompt }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </details>
+  {% endif %}
+
+  <div class="jc-card-links">
+    {% if p.code_url %}
+    <a href="{{ p.code_url }}" target="_blank" rel="noopener" class="jc-link jc-link-code">Code</a>
+    {% endif %}
+    {% if p.data_url %}
+    <a href="{{ p.data_url }}" target="_blank" rel="noopener" class="jc-link jc-link-data">Data</a>
+    {% endif %}
+    {% if p.doi %}
+    <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener" class="jc-link jc-link-paper">Paper</a>
+    {% endif %}
+  </div>
+
+  {% if p.plaintext_citation or p.bibtex %}
+  <details class="jc-card-details jc-citation-details">
+    <summary>Citation</summary>
+    <div class="jc-details-body">
+      {% if p.plaintext_citation %}
+      <p class="jc-citation-plain">{{ p.plaintext_citation }}</p>
+      {% endif %}
+      {% if p.bibtex %}
+      <pre class="jc-citation-bib"><code>{{ p.bibtex | strip }}</code></pre>
+      {% endif %}
+    </div>
+  </details>
+  {% endif %}
+
+  <div class="jc-card-tags">
+    {% for tag in p.tags %}
+    <span class="jc-tag" data-tag="{{ tag }}">{{ tag | split: ':' | last | replace: '-', ' ' }}</span>
+    {% endfor %}
+  </div>
+</article>

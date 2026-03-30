@@ -120,7 +120,7 @@ Deep dives into landmark connectomics projects.
 
 ## Journal paper collection
 
-~100 curated papers across 11 connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. All papers are also available as structured data in `_data/journal_papers.yml` for programmatic filtering. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+100+ curated papers across 11 connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. All papers are also available as structured data in `_data/journal_papers.yml` for programmatic filtering. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|

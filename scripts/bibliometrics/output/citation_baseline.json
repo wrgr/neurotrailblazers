@@ -1,0 +1,2884 @@
+[
+  {
+    "openalex_id": "https://openalex.org/W2110065044",
+    "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+    "title": "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing",
+    "year": 1995,
+    "total_citations": 106483,
+    "citations_per_year": 3327.6,
+    "role": "methods",
+    "authors": [
+      "Yoav Benjamini",
+      "Yosef Hochberg"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2055043387",
+    "doi": "10.1016/s0022-2836(05)80360-2",
+    "title": "Basic local alignment search tool",
+    "year": 1990,
+    "total_citations": 93570,
+    "citations_per_year": 2528.9,
+    "role": "methods",
+    "authors": [
+      "Stephen F. Altschul",
+      "Warren Gish",
+      "Webb Miller",
+      "Eugene W. Myers",
+      "David J. Lipman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1901129140",
+    "doi": "10.1007/978-3-319-24574-4_28",
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "year": 2015,
+    "total_citations": 86387,
+    "citations_per_year": 7198.9,
+    "role": "methods",
+    "authors": [
+      "Olaf Ronneberger",
+      "Philipp Fischer",
+      "Thomas Brox"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1847168837",
+    "doi": "10.1016/0022-3956(75)90026-6",
+    "title": "\u201cMini-mental state\u201d",
+    "year": 1975,
+    "total_citations": 86234,
+    "citations_per_year": 1658.3,
+    "role": "methods",
+    "authors": [
+      "Marshal F. Folstein",
+      "Susan E. Folstein",
+      "Paul R. McHugh"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2919115771",
+    "doi": "10.1038/nature14539",
+    "title": "Deep learning",
+    "year": 2015,
+    "total_citations": 79164,
+    "citations_per_year": 6597.0,
+    "role": "review",
+    "authors": [
+      "Yann LeCun",
+      "Yoshua Bengio",
+      "Geoffrey E. Hinton"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2163605009",
+    "doi": "10.1145/3065386",
+    "title": "ImageNet classification with deep convolutional neural networks",
+    "year": 2017,
+    "total_citations": 75550,
+    "citations_per_year": 7555.0,
+    "role": "methods",
+    "authors": [
+      "Alex Krizhevsky",
+      "Ilya Sutskever",
+      "Geoffrey E. Hinton"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4385245566",
+    "doi": "10.4230/lipics.itp.2023.19",
+    "title": "MizAR 60 for Mizar 50",
+    "year": 2023,
+    "total_citations": 74517,
+    "citations_per_year": 18629.2,
+    "role": "methods",
+    "authors": [
+      "Jakub\u016fv, Jan",
+      "Chvalovsk\u00fd, Karel",
+      "Goertzel, Zarathustra",
+      "Kaliszyk, Cezary",
+      "Ol\u0161\u00e1k, Mirek"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2167279371",
+    "doi": "10.1038/nmeth.2019",
+    "title": "Fiji: an open-source platform for biological-image analysis",
+    "year": 2012,
+    "total_citations": 68853,
+    "citations_per_year": 4590.2,
+    "role": "methods",
+    "authors": [
+      "Johannes Schindelin",
+      "Ignacio Arganda\u2010Carreras",
+      "Erwin Frise",
+      "Verena Kaynig",
+      "Mark Longair"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2099540110",
+    "doi": "10.1038/nmeth.2089",
+    "title": "NIH Image to ImageJ: 25 years of image analysis",
+    "year": 2012,
+    "total_citations": 63624,
+    "citations_per_year": 4241.6,
+    "role": "methods",
+    "authors": [
+      "Caroline A Schneider",
+      "Wayne Rasband",
+      "Kevin W. Eliceiri"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2101234009",
+    "doi": "10.48550/arxiv.1201.0490",
+    "title": "Scikit-learn: Machine Learning in Python",
+    "year": 2012,
+    "total_citations": 63388,
+    "citations_per_year": 4225.9,
+    "role": "methods",
+    "authors": [
+      "Fabi\u00e1n Pedregosa",
+      "Ga\u00ebl Varoquaux",
+      "Alexandre Gramfort",
+      "Vincent Michel",
+      "Bertrand Thirion"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2125435699",
+    "doi": "10.1136/bmj.327.7414.557",
+    "title": "Measuring inconsistency in meta-analyses",
+    "year": 2003,
+    "total_citations": 61700,
+    "citations_per_year": 2570.8,
+    "role": "review",
+    "authors": [
+      "Julian P. T. Higgins",
+      "Simon G. Thompson",
+      "Jonathan J Deeks",
+      "Douglas G. Altman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2112796928",
+    "doi": "10.1109/5.726791",
+    "title": "Gradient-based learning applied to document recognition",
+    "year": 1998,
+    "total_citations": 57014,
+    "citations_per_year": 1966.0,
+    "role": "methods",
+    "authors": [
+      "Yann LeCun",
+      "L\u00e9on Bottou",
+      "Yoshua Bengio",
+      "Patrick Haffner"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2157823046",
+    "doi": "10.1136/bmj.315.7109.629",
+    "title": "Bias in meta-analysis detected by a simple, graphical test",
+    "year": 1997,
+    "total_citations": 55187,
+    "citations_per_year": 1839.6,
+    "role": "methods",
+    "authors": [
+      "Matthias Egger",
+      "George Davey Smith",
+      "Martin Schneider",
+      "C. Minder"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2151103935",
+    "doi": "10.1023/b:visi.0000029664.99615.94",
+    "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+    "year": 2004,
+    "total_citations": 54768,
+    "citations_per_year": 2381.2,
+    "role": "methods",
+    "authors": [
+      "David Lowe"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2133665775",
+    "doi": "10.1109/tip.2003.819861",
+    "title": "Image quality assessment: from error visibility to structural similarity",
+    "year": 2004,
+    "total_citations": 54590,
+    "citations_per_year": 2373.5,
+    "role": "methods",
+    "authors": [
+      "Zhou Wang",
+      "Alan C. Bovik",
+      "Hamid R. Sheikh",
+      "Eero P. Simoncelli"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2018289835",
+    "doi": "10.1159/000350087",
+    "title": "Short-Term Effects of Nose-Only Cigarette Smoke Exposure on Glutathione Redox Homeostasis, Cytochrome P450 1A1/2 and Respiratory Enzyme Activities in Mice Tissues",
+    "year": 2013,
+    "total_citations": 47286,
+    "citations_per_year": 3377.6,
+    "role": "methods",
+    "authors": [
+      "Haider Raza",
+      "Annie John",
+      "Abderrahim Nemmar"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2133059825",
+    "doi": "10.1109/tsmc.1979.4310076",
+    "title": "A Threshold Selection Method from Gray-Level Histograms",
+    "year": 1979,
+    "total_citations": 42591,
+    "citations_per_year": 887.3,
+    "role": "methods",
+    "authors": [
+      "Nobuyuki Otsu"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2018858346",
+    "doi": "10.1038/354056a0",
+    "title": "Helical microtubules of graphitic carbon",
+    "year": 1991,
+    "total_citations": 42584,
+    "citations_per_year": 1182.9,
+    "role": "methods",
+    "authors": [
+      "Sumio Iijima"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2112090702",
+    "doi": "10.1038/30918",
+    "title": "Collective dynamics of \u2018small-world\u2019 networks",
+    "year": 1998,
+    "total_citations": 42581,
+    "citations_per_year": 1468.3,
+    "role": "methods",
+    "authors": [
+      "Duncan J. Watts",
+      "Steven H. Strogatz"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2146512944",
+    "doi": "10.1093/nar/gkv007",
+    "title": "limma powers differential expression analyses for RNA-sequencing and microarray studies",
+    "year": 2015,
+    "total_citations": 41828,
+    "citations_per_year": 3485.7,
+    "role": "methods",
+    "authors": [
+      "Matthew E. Ritchie",
+      "Belinda Phipson",
+      "Di Wu",
+      "Yifang Hu",
+      "Charity W. Law"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4239510810",
+    "doi": "10.1007/bf00994018",
+    "title": "Support-vector networks",
+    "year": 1995,
+    "total_citations": 39987,
+    "citations_per_year": 1249.6,
+    "role": "methods",
+    "authors": [
+      "Corinna Cortes",
+      "Vladimir Vapnik"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2008620264",
+    "doi": "10.1126/science.286.5439.509",
+    "title": "Emergence of Scaling in Random Networks",
+    "year": 1999,
+    "total_citations": 35882,
+    "citations_per_year": 1281.5,
+    "role": "methods",
+    "authors": [
+      "Albert-\u0139aszl\u00f3 Barab\u00e1si",
+      "R\u00e9ka Albert"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2753533763",
+    "doi": "10.1063/1.3050879",
+    "title": "<i>The Structure of Scientific Revolutions</i>",
+    "year": 1963,
+    "total_citations": 35524,
+    "citations_per_year": 555.1,
+    "role": "methods",
+    "authors": [
+      "Thomas K\u00fchn",
+      "Richard Schlegel"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2119821739",
+    "doi": "10.1023/a:1022627411411",
+    "title": "Support-Vector Networks",
+    "year": 1995,
+    "total_citations": 32108,
+    "citations_per_year": 1003.4,
+    "role": "methods",
+    "authors": [
+      "Corinna Cortes",
+      "Vladimir Vapnik"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2144081223",
+    "doi": "10.1107/s0907444904019158",
+    "title": "<i>Coot</i>: model-building tools for molecular graphics",
+    "year": 2004,
+    "total_citations": 31139,
+    "citations_per_year": 1353.9,
+    "role": "methods",
+    "authors": [
+      "Paul Emsley",
+      "Kevin Cowtan"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2145339207",
+    "doi": "10.1038/nature14236",
+    "title": "Human-level control through deep reinforcement learning",
+    "year": 2015,
+    "total_citations": 29167,
+    "citations_per_year": 2430.6,
+    "role": "methods",
+    "authors": [
+      "Volodymyr Mnih",
+      "Koray Kavukcuoglu",
+      "David Silver",
+      "Andrei A. Rusu",
+      "Joel Veness"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2034269086",
+    "doi": "10.1016/s0092-8674(00)81683-9",
+    "title": "The Hallmarks of Cancer",
+    "year": 2000,
+    "total_citations": 28385,
+    "citations_per_year": 1051.3,
+    "role": "review",
+    "authors": [
+      "Douglas Hanahan",
+      "Robert A. Weinberg"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1966327575",
+    "doi": "10.1186/1471-2105-9-559",
+    "title": "WGCNA: an R package for weighted correlation network analysis",
+    "year": 2008,
+    "total_citations": 28332,
+    "citations_per_year": 1491.2,
+    "role": "methods",
+    "authors": [
+      "Peter Langfelder",
+      "Steve Horvath"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2120145199",
+    "doi": "10.1088/0953-8984/21/39/395502",
+    "title": "QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials",
+    "year": 2009,
+    "total_citations": 28256,
+    "citations_per_year": 1569.8,
+    "role": "methods",
+    "authors": [
+      "Paolo Giannozzi",
+      "Stefano Baroni",
+      "Nicola Bonini",
+      "Matteo Calandra",
+      "Roberto Car"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2132454074",
+    "doi": "10.1107/s2053273314026370",
+    "title": "<i>SHELXT</i>\u2013 Integrated space-group and crystal-structure determination",
+    "year": 2014,
+    "total_citations": 27704,
+    "citations_per_year": 2131.1,
+    "role": "methods",
+    "authors": [
+      "George M. Sheldrick"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2168909179",
+    "doi": "10.1038/35057062",
+    "title": "Initial sequencing and analysis of the human genome",
+    "year": 2001,
+    "total_citations": 24452,
+    "citations_per_year": 940.5,
+    "role": "methods",
+    "authors": [
+      "Eric S. Lander",
+      "Lauren Linton",
+      "Bruce W. Birren",
+      "Chad Nusbaum",
+      "Michael C. Zody"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1480376833",
+    "doi": "10.1007/978-0-387-21606-5",
+    "title": "The Elements of Statistical Learning",
+    "year": 2001,
+    "total_citations": 24213,
+    "citations_per_year": 931.3,
+    "role": "methods",
+    "authors": [
+      "Trevor Hastie",
+      "J. Friedman",
+      "Robert Tibshirani"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3004280078",
+    "doi": "10.1038/s41586-020-2012-7",
+    "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+    "year": 2020,
+    "total_citations": 23190,
+    "citations_per_year": 3312.9,
+    "role": "methods",
+    "authors": [
+      "Peng Zhou",
+      "Xing\u2010Lou Yang",
+      "Xian-Guang Wang",
+      "Ben Hu",
+      "Lei Zhang"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1999574084",
+    "doi": "10.1186/1471-2105-12-323",
+    "title": "RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome",
+    "year": 2011,
+    "total_citations": 22985,
+    "citations_per_year": 1436.6,
+    "role": "methods",
+    "authors": [
+      "Bo Li",
+      "Colin N. Dewey"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2141403362",
+    "doi": "10.1037/0033-2909.86.2.420",
+    "title": "Intraclass correlations: Uses in assessing rater reliability.",
+    "year": 1979,
+    "total_citations": 22750,
+    "citations_per_year": 474.0,
+    "role": "methods",
+    "authors": [
+      "Patrick E. Shrout",
+      "Joseph L. Fleiss"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2787894218",
+    "doi": "10.1007/978-0-387-84858-7",
+    "title": "The Elements of Statistical Learning",
+    "year": 2009,
+    "total_citations": 22381,
+    "citations_per_year": 1243.4,
+    "role": "methods",
+    "authors": [
+      "Trevor Hastie",
+      "Robert Tibshirani",
+      "Jerome H. Friedman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2962793481",
+    "doi": "10.1109/iccv.2017.244",
+    "title": "Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks",
+    "year": 2017,
+    "total_citations": 21473,
+    "citations_per_year": 2147.3,
+    "role": "methods",
+    "authors": [
+      "Jun-Yan Zhu",
+      "Taesung Park",
+      "Phillip Isola",
+      "Alexei A. Efros"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2999417355",
+    "doi": "10.3322/caac.21590",
+    "title": "Cancer statistics, 2020",
+    "year": 2020,
+    "total_citations": 21282,
+    "citations_per_year": 3040.3,
+    "role": "methods",
+    "authors": [
+      "Rebecca L. Siegel",
+      "Kimberly D. Miller",
+      "Ahmedin Jemal"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2096287682",
+    "doi": "10.1056/nejmoa043330",
+    "title": "Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma",
+    "year": 2005,
+    "total_citations": 21276,
+    "citations_per_year": 967.1,
+    "role": "methods",
+    "authors": [
+      "Roger Stupp",
+      "Warren Mason",
+      "Martin J. van den Bent",
+      "Michael Weller",
+      "Barbara Fisher"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2911188335",
+    "doi": "10.3322/caac.21551",
+    "title": "Cancer statistics, 2019",
+    "year": 2019,
+    "total_citations": 20874,
+    "citations_per_year": 2609.2,
+    "role": "methods",
+    "authors": [
+      "Rebecca L. Siegel",
+      "Kimberly D. Miller",
+      "Ahmedin Jemal"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2131681506",
+    "doi": "10.1088/1742-5468/2008/10/p10008",
+    "title": "Fast unfolding of communities in large networks",
+    "year": 2008,
+    "total_citations": 20755,
+    "citations_per_year": 1092.4,
+    "role": "methods",
+    "authors": [
+      "Vincent D. Blondel",
+      "Jean\u2010Loup Guillaume",
+      "Renaud Lambiotte",
+      "Etienne Lefebvre"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2148080316",
+    "doi": "10.1159/000353441",
+    "title": "Special Care Units and Traditional Care in Dementia: Relationship with Behavior, Cognition, Functional Status and Quality of Life - A Review",
+    "year": 2013,
+    "total_citations": 20643,
+    "citations_per_year": 1474.5,
+    "role": "review",
+    "authors": [
+      "Jeroen S. Kok",
+      "Ina J. Berg",
+      "Erik Scherder"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4393935425",
+    "doi": "10.3322/caac.21834",
+    "title": "Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries",
+    "year": 2024,
+    "total_citations": 20640,
+    "citations_per_year": 6880.0,
+    "role": "methods",
+    "authors": [
+      "Freddie Bray",
+      "Mathieu Laversanne",
+      "Hyuna Sung",
+      "Jacques Ferlay",
+      "Rebecca L. Siegel"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2124637492",
+    "doi": "10.1103/revmodphys.74.47",
+    "title": "Statistical mechanics of complex networks",
+    "year": 2002,
+    "total_citations": 20311,
+    "citations_per_year": 812.4,
+    "role": "methods",
+    "authors": [
+      "R\u00e9ka Albert",
+      "Albert-\u0139aszl\u00f3 Barab\u00e1si"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2167311298",
+    "doi": "10.1159/000430949",
+    "title": "Older Adults' Reasons for Using Technology while Aging in Place",
+    "year": 2015,
+    "total_citations": 19719,
+    "citations_per_year": 1643.2,
+    "role": "methods",
+    "authors": [
+      "Sebastiaan Theodorus Micha\u00ebl Peek",
+      "Katrien Luijkx",
+      "M. D. Rijnaard",
+      "Marianne Nieboer",
+      "C. S. van der Voort"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2104549677",
+    "doi": "10.1038/nature15393",
+    "title": "A global reference for human genetic variation",
+    "year": 2015,
+    "total_citations": 19538,
+    "citations_per_year": 1628.2,
+    "role": "methods",
+    "authors": [
+      "Corresponding authors",
+      "Adam Auton",
+      "Gon\u00e7alo R. Abecasis",
+      "David M. Altshuler",
+      "Richard Durbin"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2799061466",
+    "doi": "10.1007/978-1-4419-1428-6_5195",
+    "title": "Pattern Classification",
+    "year": 2012,
+    "total_citations": 19490,
+    "citations_per_year": 1299.3,
+    "role": "methods",
+    "authors": [
+      "Norbert M. Seel"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2259938310",
+    "doi": "10.1038/nature11247",
+    "title": "An integrated encyclopedia of DNA elements in the human genome",
+    "year": 2012,
+    "total_citations": 19173,
+    "citations_per_year": 1278.2,
+    "role": "methods",
+    "authors": [
+      "Sylvain Foissac"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2900569176",
+    "doi": "10.1093/nar/gky1131",
+    "title": "STRING v11: protein\u2013protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets",
+    "year": 2018,
+    "total_citations": 18843,
+    "citations_per_year": 2093.7,
+    "role": "methods",
+    "authors": [
+      "Damian Szklarczyk",
+      "Annika L. Gable",
+      "David Lyon",
+      "Alexander Junge",
+      "Stefan Wyder"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2115017507",
+    "doi": "10.1016/j.jalz.2011.03.005",
+    "title": "The diagnosis of dementia due to Alzheimer's disease: Recommendations from the National Institute on Aging\u2010Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease",
+    "year": 2011,
+    "total_citations": 18548,
+    "citations_per_year": 1159.2,
+    "role": "methods",
+    "authors": [
+      "Guy M. McKhann",
+      "David S. Knopman",
+      "Howard Chertkow",
+      "Bradley T. Hyman",
+      "Clifford R. Jack"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2148606196",
+    "doi": "10.1137/s003614450342480",
+    "title": "The Structure and Function of Complex Networks",
+    "year": 2003,
+    "total_citations": 18482,
+    "citations_per_year": 770.1,
+    "role": "methods",
+    "authors": [
+      "Michael Newman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2020830322",
+    "doi": "10.3322/canjclin.55.2.74",
+    "title": "Global Cancer Statistics, 2002",
+    "year": 2005,
+    "total_citations": 18373,
+    "citations_per_year": 835.1,
+    "role": "methods",
+    "authors": [
+      "Donald Maxwell Parkin",
+      "Freddie Bray",
+      "Jacques Ferlay",
+      "Paola Pisani"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2120357670",
+    "doi": "10.1037/h0054651",
+    "title": "Studies of interference in serial verbal reactions.",
+    "year": 1935,
+    "total_citations": 18192,
+    "citations_per_year": 197.7,
+    "role": "methods",
+    "authors": [
+      "J. Ridley Stroop"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2502134830",
+    "doi": "10.1007/978-3-319-40618-3",
+    "title": "AJCC Cancer Staging Manual",
+    "year": 2016,
+    "total_citations": 17403,
+    "citations_per_year": 1582.1,
+    "role": "methods",
+    "authors": []
+  },
+  {
+    "openalex_id": "https://openalex.org/W1997183854",
+    "doi": "10.1016/j.cell.2012.03.042",
+    "title": "Ferroptosis: An Iron-Dependent Form of Nonapoptotic Cell Death",
+    "year": 2012,
+    "total_citations": 17296,
+    "citations_per_year": 1153.1,
+    "role": "methods",
+    "authors": [
+      "Scott J. Dixon",
+      "Kathryn M. Lemberg",
+      "Michael R. Lamprecht",
+      "Rachid Skouta",
+      "Eleina M. Zaitsev"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2058046532",
+    "doi": "10.1006/nimg.2001.0978",
+    "title": "Automated Anatomical Labeling of Activations in SPM Using a Macroscopic Anatomical Parcellation of the MNI MRI Single-Subject Brain",
+    "year": 2002,
+    "total_citations": 16610,
+    "citations_per_year": 664.4,
+    "role": "methods",
+    "authors": [
+      "N. Tzourio-Mazoyer",
+      "Brigitte Landeau",
+      "Dimitri Papathanassiou",
+      "Fabrice Crivello",
+      "Olivier Etard"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4315754639",
+    "doi": "10.3322/caac.21763",
+    "title": "Cancer statistics, 2023",
+    "year": 2023,
+    "total_citations": 16277,
+    "citations_per_year": 4069.2,
+    "role": "methods",
+    "authors": [
+      "Rebecca L. Siegel",
+      "Kimberly D. Miller",
+      "Nikita Sandeep Wagle",
+      "Ahmedin Jemal"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2593436234",
+    "doi": "10.1038/srep42717",
+    "title": "SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules",
+    "year": 2017,
+    "total_citations": 16166,
+    "citations_per_year": 1616.6,
+    "role": "methods",
+    "authors": [
+      "Antoine Daina",
+      "Olivier Michielin",
+      "Vincent Zoete"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2235523093",
+    "doi": "10.3322/caac.21332",
+    "title": "Cancer statistics, 2016",
+    "year": 2016,
+    "total_citations": 16130,
+    "citations_per_year": 1466.4,
+    "role": "methods",
+    "authors": [
+      "Rebecca L. Siegel",
+      "Kimberly D. Miller",
+      "Ahmedin Jemal"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2145150141",
+    "doi": "10.1089/thy.2015.0020",
+    "title": "2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer",
+    "year": 2015,
+    "total_citations": 16125,
+    "citations_per_year": 1343.8,
+    "role": "review",
+    "authors": [
+      "Bryan R. Haugen",
+      "Erik K. Alexander",
+      "Keith C. Bible",
+      "Gerard M. Doherty",
+      "Susan J. Mandel"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2124386111",
+    "doi": "10.1109/iccv.1999.790410",
+    "title": "Object recognition from local scale-invariant features",
+    "year": 1999,
+    "total_citations": 16112,
+    "citations_per_year": 575.4,
+    "role": "methods",
+    "authors": [
+      "David Lowe"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1995017064",
+    "doi": "10.1107/s0907444998003254",
+    "title": "Crystallography &amp; NMR System: A New Software Suite for Macromolecular Structure Determination",
+    "year": 1998,
+    "total_citations": 15770,
+    "citations_per_year": 543.8,
+    "role": "methods",
+    "authors": [
+      "Axel T. Br\u00fcnger",
+      "Paul D. Adams",
+      "G. Marius Clore",
+      "Warren L. DeLano",
+      "Piet Gros"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2366536035",
+    "doi": "10.1007/s00401-016-1545-1",
+    "title": "The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary",
+    "year": 2016,
+    "total_citations": 15741,
+    "citations_per_year": 1431.0,
+    "role": "review",
+    "authors": [
+      "David N. Louis",
+      "Arie Perry",
+      "Guido Reifenberger",
+      "Andreas von Deimling",
+      "Dominique Figarella-Branger"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2990138404",
+    "doi": "10.7551/mitpress/7503.001.0001",
+    "title": "Advances in Neural Information Processing Systems 19",
+    "year": 2007,
+    "total_citations": 15619,
+    "citations_per_year": 781.0,
+    "role": "methods",
+    "authors": []
+  },
+  {
+    "openalex_id": "https://openalex.org/W2133589238",
+    "doi": "10.1093/oxfordjournals.eurheartj.a014868",
+    "title": "Heart rate variability: Standards of measurement, physiological interpretation, and clinical use",
+    "year": 1996,
+    "total_citations": 15208,
+    "citations_per_year": 490.6,
+    "role": "methods",
+    "authors": [
+      "Marek Malik",
+      "J. Thomas Bigger",
+      "A. John Camm",
+      "R. E. Kleiger",
+      "Alberto Malliani"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2133465414",
+    "doi": "10.1093/nar/gkn923",
+    "title": "Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists",
+    "year": 2008,
+    "total_citations": 14685,
+    "citations_per_year": 772.9,
+    "role": "methods",
+    "authors": [
+      "Da Wei Huang",
+      "Brad T. Sherman",
+      "Richard A. Lempicki"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2154431984",
+    "doi": "10.1038/nmeth.1226",
+    "title": "Mapping and quantifying mammalian transcriptomes by RNA-Seq",
+    "year": 2008,
+    "total_citations": 14174,
+    "citations_per_year": 746.0,
+    "role": "methods",
+    "authors": [
+      "A Mortazavi",
+      "Brian A. Williams",
+      "Kenneth McCue",
+      "Lorian Schaeffer",
+      "B Wold"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4292779060",
+    "doi": "10.4230/lipics.giscience.2023.43",
+    "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
+    "year": 2023,
+    "total_citations": 14139,
+    "citations_per_year": 3534.8,
+    "role": "methods",
+    "authors": [
+      "T. B. Brown",
+      "Benjamin F. Mann"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2006096283",
+    "doi": "10.1016/j.neuroimage.2004.07.051",
+    "title": "Advances in functional and structural MR image analysis and implementation as FSL",
+    "year": 2004,
+    "total_citations": 13980,
+    "citations_per_year": 607.8,
+    "role": "review",
+    "authors": [
+      "Stephen M. Smith",
+      "Mark Jenkinson",
+      "Mark W. Woolrich",
+      "Christian F. Beckmann",
+      "Timothy E.J. Behrens"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2095293504",
+    "doi": "10.1103/physreve.69.026113",
+    "title": "Finding and evaluating community structure in networks",
+    "year": 2004,
+    "total_citations": 13957,
+    "citations_per_year": 606.8,
+    "role": "methods",
+    "authors": [
+      "Michelle G. Newman",
+      "Michelle Girvan"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2214074259",
+    "doi": "10.1016/j.cels.2015.12.004",
+    "title": "The Molecular Signatures Database Hallmark Gene Set Collection",
+    "year": 2015,
+    "total_citations": 13922,
+    "citations_per_year": 1160.2,
+    "role": "methods",
+    "authors": [
+      "Arthur Liberzon",
+      "Chet Birger",
+      "Helga Thorvaldsd\u00f3ttir",
+      "Mahmoud Ghandi",
+      "Jill P. Mesirov"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2160382843",
+    "doi": "",
+    "title": "The 2007 WHO Classification of Tumours of the Central Nervous System",
+    "year": 2007,
+    "total_citations": 13889,
+    "citations_per_year": 694.5,
+    "role": "review",
+    "authors": [
+      "Hiroko Ohgaki",
+      "Otmar D. Wiestler",
+      "Webster K. Cavenee",
+      "Peter C. Burger",
+      "Anne Jouvet"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1902027874",
+    "doi": "10.1038/44565",
+    "title": "Learning the parts of objects by non-negative matrix factorization",
+    "year": 1999,
+    "total_citations": 13873,
+    "citations_per_year": 495.5,
+    "role": "methods",
+    "authors": [
+      "Daniel D. Lee",
+      "H. Sebastian Seung"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2166689829",
+    "doi": "10.1107/s0021889802022112",
+    "title": "Single-crystal structure validation with the program<i>PLATON</i>",
+    "year": 2003,
+    "total_citations": 13808,
+    "citations_per_year": 575.3,
+    "role": "methods",
+    "authors": [
+      "Anthony L. Spek"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2912654919",
+    "doi": "10.1016/s0140-6736(18)32279-7",
+    "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990\u20132017: a systematic analysis for the Global Burden of Disease Study 2017",
+    "year": 2018,
+    "total_citations": 13807,
+    "citations_per_year": 1534.1,
+    "role": "methods",
+    "authors": [
+      "Spencer L James",
+      "Degu Abate",
+      "Kalkidan Hassen Abate",
+      "Solom\u00f3n Mequanente Abay",
+      "Cristiana Abbafati"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2101135654",
+    "doi": "10.1016/j.neuroimage.2006.01.021",
+    "title": "An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest",
+    "year": 2006,
+    "total_citations": 13788,
+    "citations_per_year": 656.6,
+    "role": "methods",
+    "authors": [
+      "Rahul S. Desikan",
+      "Florent S\u00e9gonne",
+      "Bruce Fischl",
+      "Brian T. Quinn",
+      "Bradford C. Dickerson"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2096410114",
+    "doi": "10.1126/science.1072994",
+    "title": "The Amyloid Hypothesis of Alzheimer's Disease: Progress and Problems on the Road to Therapeutics",
+    "year": 2002,
+    "total_citations": 13715,
+    "citations_per_year": 548.6,
+    "role": "review",
+    "authors": [
+      "John Hardy",
+      "Dennis J. Selkoe"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2128654538",
+    "doi": "10.1016/j.carbon.2007.02.034",
+    "title": "Synthesis of graphene-based nanosheets via chemical reduction of exfoliated graphite oxide",
+    "year": 2007,
+    "total_citations": 13658,
+    "citations_per_year": 682.9,
+    "role": "methods",
+    "authors": [
+      "Sasha Stankovich",
+      "Dmitriy A. Dikin",
+      "Richard D. Piner",
+      "Kevin A. Kohlhaas",
+      "Alfred Kleinhammes"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2133416234",
+    "doi": "10.1093/eurheartj/eht151",
+    "title": "2013 ESH/ESC Guidelines for the management of arterial hypertension",
+    "year": 2013,
+    "total_citations": 13652,
+    "citations_per_year": 975.1,
+    "role": "methods",
+    "authors": [
+      "Giuseppe Mancia",
+      "Robert Fagard",
+      "Krzysztof Narkiewicz",
+      "Josep Red\u00f3n",
+      "Alberto Zanchetti"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2001141328",
+    "doi": "10.1126/science.290.5500.2319",
+    "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+    "year": 2000,
+    "total_citations": 13617,
+    "citations_per_year": 504.3,
+    "role": "methods",
+    "authors": [
+      "Joshua B. Tenenbaum",
+      "Vin de Silva",
+      "John Langford"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2134208433",
+    "doi": "10.1016/j.cell.2006.06.044",
+    "title": "Matrix Elasticity Directs Stem Cell Lineage Specification",
+    "year": 2006,
+    "total_citations": 13562,
+    "citations_per_year": 645.8,
+    "role": "methods",
+    "authors": [
+      "Adam J. Engler",
+      "Shamik Sen",
+      "H. Lee Sweeney",
+      "Dennis E. Discher"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2751884637",
+    "doi": "10.1016/s0140-6736(17)32154-2",
+    "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990\u20132016: a systematic analysis for the Global Burden of Disease Study 2016",
+    "year": 2017,
+    "total_citations": 13428,
+    "citations_per_year": 1342.8,
+    "role": "methods",
+    "authors": [
+      "Theo Vos",
+      "Amanuel Alemu Abajobir",
+      "Kalkidan Hassen Abate",
+      "Cristiana Abbafati",
+      "Kaja Abbas"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2549976854",
+    "doi": "10.1038/s41598-016-0001-8",
+    "title": "Ultrastructural Characterization of the Lower Motor System in a Mouse Model of Krabbe Disease",
+    "year": 2016,
+    "total_citations": 13254,
+    "citations_per_year": 1204.9,
+    "role": "methods",
+    "authors": [
+      "Valentina Cappello",
+      "Laura Marchetti",
+      "Paola Parlanti",
+      "Silvia Landi",
+      "Ilaria Tonazzini"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2804822363",
+    "doi": "10.1093/nar/gky427",
+    "title": "SWISS-MODEL: homology modelling of protein structures and complexes",
+    "year": 2018,
+    "total_citations": 13179,
+    "citations_per_year": 1464.3,
+    "role": "methods",
+    "authors": [
+      "Andrew Waterhouse",
+      "Martino Bertoni",
+      "Stefan Bienert",
+      "Gabriel Studer",
+      "Gerardo Tauriello"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2136608905",
+    "doi": "10.1186/1748-5908-6-42",
+    "title": "The behaviour change wheel: A new method for characterising and designing behaviour change interventions",
+    "year": 2011,
+    "total_citations": 13092,
+    "citations_per_year": 818.2,
+    "role": "review",
+    "authors": [
+      "Susan Michie",
+      "Maartje M. van Stralen",
+      "Robert West"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1992419399",
+    "doi": "10.1145/331499.331504",
+    "title": "Data clustering",
+    "year": 1999,
+    "total_citations": 13065,
+    "citations_per_year": 466.6,
+    "role": "review",
+    "authors": [
+      "Anil K. Jain",
+      "M. Narasimha Murty",
+      "Patrick J. Flynn"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2169205464",
+    "doi": "10.1136/bmj.g7647",
+    "title": "Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation",
+    "year": 2015,
+    "total_citations": 12938,
+    "citations_per_year": 1078.2,
+    "role": "review",
+    "authors": [
+      "Larissa Shamseer",
+      "David Moher",
+      "Mike Clarke",
+      "Davina Ghersi",
+      "A. Liberati"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1761828760",
+    "doi": "",
+    "title": "How people learn: Brain, mind, experience, and school.",
+    "year": 1999,
+    "total_citations": 12898,
+    "citations_per_year": 460.6,
+    "role": "methods",
+    "authors": [
+      "John D. Bransford",
+      "Ann L. Brown",
+      "Rodney R. Cocking"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2019370496",
+    "doi": "10.1038/nrn755",
+    "title": "Control of goal-directed and stimulus-driven attention in the brain",
+    "year": 2002,
+    "total_citations": 12773,
+    "citations_per_year": 510.9,
+    "role": "review",
+    "authors": [
+      "Maurizio Corbetta",
+      "Gordon L. Shulman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1522048223",
+    "doi": "",
+    "title": "The Mouse Brain in Stereotaxic Coordinates",
+    "year": 2001,
+    "total_citations": 12750,
+    "citations_per_year": 490.4,
+    "role": "methods",
+    "authors": [
+      "George Paxinos"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2107396783",
+    "doi": "10.1109/tac.2004.834113",
+    "title": "Consensus Problems in Networks of Agents With Switching Topology and Time-Delays",
+    "year": 2004,
+    "total_citations": 12614,
+    "citations_per_year": 548.4,
+    "role": "methods",
+    "authors": [
+      "Reza Olfati\u2010Saber",
+      "Richard M. Murray"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2151137320",
+    "doi": "10.1146/annurev.neuro.24.1.167",
+    "title": "An Integrative Theory of Prefrontal Cortex Function",
+    "year": 2001,
+    "total_citations": 12599,
+    "citations_per_year": 484.6,
+    "role": "review",
+    "authors": [
+      "Earl K. Miller",
+      "Jonathan D. Cohen"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1605353467",
+    "doi": "10.7326/0003-4819-108-3-499_2",
+    "title": "Harrison's Principles of Internal Medicine.",
+    "year": 1988,
+    "total_citations": 12587,
+    "citations_per_year": 322.7,
+    "role": "methods",
+    "authors": []
+  },
+  {
+    "openalex_id": "https://openalex.org/W2160834915",
+    "doi": "10.1056/nejmoa1200690",
+    "title": "Safety, Activity, and Immune Correlates of Anti\u2013PD-1 Antibody in Cancer",
+    "year": 2012,
+    "total_citations": 12531,
+    "citations_per_year": 835.4,
+    "role": "methods",
+    "authors": [
+      "Suzanne L. Topalian",
+      "F. Stephen Hodi",
+      "Julie R. Brahmer",
+      "Scott Gettinger",
+      "David C. Smith"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2162010696",
+    "doi": "10.1073/pnas.98.2.676",
+    "title": "A default mode of brain function",
+    "year": 2001,
+    "total_citations": 12300,
+    "citations_per_year": 473.1,
+    "role": "methods",
+    "authors": [
+      "Marcus E. Raichle",
+      "Ann Mary MacLeod",
+      "Abraham Z. Snyder",
+      "William J. Powers",
+      "Debra A. Gusnard"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1483242733",
+    "doi": "",
+    "title": "The Metabolic and Molecular Bases of Inherited Disease",
+    "year": 1995,
+    "total_citations": 12175,
+    "citations_per_year": 380.5,
+    "role": "methods",
+    "authors": [
+      "R Charles Scriver"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2097065948",
+    "doi": "10.1093/bioinformatics/btp120",
+    "title": "TopHat: discovering splice junctions with RNA-Seq",
+    "year": 2009,
+    "total_citations": 12093,
+    "citations_per_year": 671.8,
+    "role": "methods",
+    "authors": [
+      "Cole Trapnell",
+      "Lior Pachter",
+      "Steven L. Salzberg"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2148977460",
+    "doi": "10.1093/neuonc/not151",
+    "title": "CBTRUS Statistical Report: Primary Brain and Central Nervous System Tumors Diagnosed in the United States in 2006-2010",
+    "year": 2013,
+    "total_citations": 12081,
+    "citations_per_year": 862.9,
+    "role": "methods",
+    "authors": [
+      "Quinn T. Ostrom",
+      "Haley Gittleman",
+      "P Farah",
+      "A. Ondracek",
+      "Yaning Chen"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2151936673",
+    "doi": "10.1073/pnas.0601602103",
+    "title": "Modularity and community structure in networks",
+    "year": 2006,
+    "total_citations": 12046,
+    "citations_per_year": 573.6,
+    "role": "methods",
+    "authors": [
+      "M. E. J. Newman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2110052313",
+    "doi": "10.1016/s0140-6736(12)61766-8",
+    "title": "A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+    "year": 2012,
+    "total_citations": 11946,
+    "citations_per_year": 796.4,
+    "role": "methods",
+    "authors": [
+      "Stephen S Lim",
+      "Theo Vos",
+      "Abraham D Flaxman",
+      "Goodarz Danaei",
+      "Kenji Shibuya"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2071707134",
+    "doi": "10.1109/jsac.2004.839380",
+    "title": "Cognitive radio: brain-empowered wireless communications",
+    "year": 2005,
+    "total_citations": 11929,
+    "citations_per_year": 542.2,
+    "role": "methods",
+    "authors": [
+      "S. Haykin"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1999653836",
+    "doi": "10.1038/nrn2575",
+    "title": "Complex brain networks: graph theoretical analysis of structural and functional systems",
+    "year": 2009,
+    "total_citations": 11885,
+    "citations_per_year": 660.3,
+    "role": "review",
+    "authors": [
+      "Edward T. Bullmore",
+      "Olaf Sporns"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2954996726",
+    "doi": "10.1186/s40537-019-0197-0",
+    "title": "A survey on Image Data Augmentation for Deep Learning",
+    "year": 2019,
+    "total_citations": 11840,
+    "citations_per_year": 1480.0,
+    "role": "review",
+    "authors": [
+      "Connor Shorten",
+      "Taghi M. Khoshgoftaar"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2111619626",
+    "doi": "10.1016/j.future.2013.01.010",
+    "title": "Internet of Things (IoT): A vision, architectural elements, and future directions",
+    "year": 2013,
+    "total_citations": 11812,
+    "citations_per_year": 843.7,
+    "role": "methods",
+    "authors": [
+      "Jayavardhana Gubbi",
+      "Rajkumar Buyya",
+      "Slaven Marusic",
+      "Marimuthu Palaniswami"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2167822639",
+    "doi": "10.1016/j.neuroimage.2009.10.003",
+    "title": "Complex network measures of brain connectivity: Uses and interpretations",
+    "year": 2009,
+    "total_citations": 11747,
+    "citations_per_year": 652.6,
+    "role": "methods",
+    "authors": [
+      "Mikail Rubinov",
+      "Olaf Sporns"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2594075087",
+    "doi": "10.1016/s0140-6736",
+    "title": "Correspondence - Tranexamic acid for traumatic brain injury",
+    "year": 2005,
+    "total_citations": 11701,
+    "citations_per_year": 531.9,
+    "role": "methods",
+    "authors": [
+      "Romanello, Marina",
+      "Napoli, Claudia Di",
+      "Drummond, Paul",
+      "Green, Carole",
+      "Kennard, Harry"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3127623214",
+    "doi": "",
+    "title": "Co-Planar Stereotaxic Atlas of the Human Brain",
+    "year": 1988,
+    "total_citations": 11679,
+    "citations_per_year": 299.5,
+    "role": "methods",
+    "authors": [
+      "J Talairach",
+      "P Tournoux"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4396721167",
+    "doi": "10.1038/s41586-024-07487-w",
+    "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+    "year": 2024,
+    "total_citations": 11661,
+    "citations_per_year": 3887.0,
+    "role": "methods",
+    "authors": [
+      "Josh Abramson",
+      "Jonas Adler",
+      "Jack Dunger",
+      "Richard Evans",
+      "Tim Green"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2102902846",
+    "doi": "10.1093/ageing/afq034",
+    "title": "Sarcopenia: European consensus on definition and diagnosis",
+    "year": 2010,
+    "total_citations": 11584,
+    "citations_per_year": 681.4,
+    "role": "methods",
+    "authors": [
+      "Alfonso J. Cruz\u2010Jentoft",
+      "Jean\u2010Pierre Baeyens",
+      "J\u00fcrgen M. Bauer",
+      "Yves Boirie\u200c",
+      "Tommy Cederholm"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2193503481",
+    "doi": "10.5194/gmd-9-1937-2016",
+    "title": "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization",
+    "year": 2016,
+    "total_citations": 11568,
+    "citations_per_year": 1051.6,
+    "role": "methods",
+    "authors": [
+      "Veronika Eyring",
+      "Sandrine Bony",
+      "Gerald A. Meehl",
+      "C. A. Senior",
+      "Bj\u00f6rn Stevens"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2977883299",
+    "doi": "10.1016/j.neuroimage.2011.09.015",
+    "title": "FSL",
+    "year": 2011,
+    "total_citations": 11564,
+    "citations_per_year": 722.8,
+    "role": "review",
+    "authors": [
+      "Mark Jenkinson",
+      "Christian F. Beckmann",
+      "Timothy E.J. Behrens",
+      "Mark W. Woolrich",
+      "Stephen M. Smith"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1480729244",
+    "doi": "10.1159/000369778",
+    "title": "Aspirin plus Clopidogrel as Secondary Prevention after Stroke or Transient Ischemic Attack: A Systematic Review and Meta-Analysis",
+    "year": 2014,
+    "total_citations": 11546,
+    "citations_per_year": 888.2,
+    "role": "review",
+    "authors": [
+      "Qinghua Zhang",
+      "Chao Wang",
+      "Maoyong Zheng",
+      "Yanxia Li",
+      "Jincun Li"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2125826054",
+    "doi": "10.1038/nature08821",
+    "title": "A human gut microbial gene catalogue established by metagenomic sequencing",
+    "year": 2010,
+    "total_citations": 11497,
+    "citations_per_year": 676.3,
+    "role": "methods",
+    "authors": [
+      "Junjie Qin",
+      "Ruiqiang Li",
+      "Jeroen Raes",
+      "Manimozhiyan Arumugam",
+      "Kristoffer S\u00f8lvsten Burgdorf"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2142220522",
+    "doi": "10.1086/498708",
+    "title": "The Two Micron All Sky Survey (2MASS)",
+    "year": 2006,
+    "total_citations": 11488,
+    "citations_per_year": 547.0,
+    "role": "review",
+    "authors": [
+      "Michael F. Skrutskie",
+      "R. M. Cutri",
+      "R. Stiening",
+      "Martin D. Weinberg",
+      "Stephen E. Schneider"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2231156824",
+    "doi": "",
+    "title": "SEER Cancer Statistics Review, 1975-2003",
+    "year": 2006,
+    "total_citations": 11474,
+    "citations_per_year": 546.4,
+    "role": "review",
+    "authors": [
+      "Lynn A. G. Ries",
+      "D. Harkins",
+      "Martin Krapcho",
+      "Angela B. Mariotto",
+      "B. Miller"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2117140276",
+    "doi": "10.1006/cbmr.1996.0014",
+    "title": "AFNI: Software for Analysis and Visualization of Functional Magnetic Resonance Neuroimages",
+    "year": 1996,
+    "total_citations": 11461,
+    "citations_per_year": 369.7,
+    "role": "methods",
+    "authors": [
+      "Robert W. Cox"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2573377826",
+    "doi": "10.1126/science.aad4998",
+    "title": "Combining theory and experiment in electrocatalysis: Insights into materials design",
+    "year": 2017,
+    "total_citations": 11445,
+    "citations_per_year": 1144.5,
+    "role": "review",
+    "authors": [
+      "Zhi Wei Seh",
+      "Jakob Kibsgaard",
+      "Colin F. Dickens",
+      "Ib Chorkendorff",
+      "Jens K. N\u00f8rskov"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2170747616",
+    "doi": "10.1093/bioinformatics/bts565",
+    "title": "CD-HIT: accelerated for clustering the next-generation sequencing data",
+    "year": 2012,
+    "total_citations": 11431,
+    "citations_per_year": 762.1,
+    "role": "methods",
+    "authors": [
+      "LiMin Fu",
+      "Beifang Niu",
+      "Zhengwei Zhu",
+      "Sitao Wu",
+      "Weizhong Li"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2345356016",
+    "doi": "10.1093/nar/gkw377",
+    "title": "Enrichr: a comprehensive gene set enrichment analysis web server 2016 update",
+    "year": 2016,
+    "total_citations": 11349,
+    "citations_per_year": 1031.7,
+    "role": "methods",
+    "authors": [
+      "Maxim V. Kuleshov",
+      "Matthew R. Jones",
+      "Andrew D. Rouillard",
+      "Nicolas Fernandez",
+      "Qiaonan Duan"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2151721316",
+    "doi": "10.1006/nimg.1998.0395",
+    "title": "Cortical Surface-Based Analysis",
+    "year": 1999,
+    "total_citations": 11343,
+    "citations_per_year": 405.1,
+    "role": "methods",
+    "authors": [
+      "Anders M. Dale",
+      "Bruce Fischl",
+      "Martin I. Sereno"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2182271449",
+    "doi": "10.1002/14651858",
+    "title": "Cochrane Database of Systematic Reviews",
+    "year": 2003,
+    "total_citations": 11288,
+    "citations_per_year": 470.3,
+    "role": "review",
+    "authors": [
+      "Lindsay Pennington",
+      "Steve Bell",
+      "J. Hill"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2145632027",
+    "doi": "10.1056/nejmoa041031",
+    "title": "Chronic Kidney Disease and the Risks of Death, Cardiovascular Events, and Hospitalization",
+    "year": 2004,
+    "total_citations": 11262,
+    "citations_per_year": 489.7,
+    "role": "methods",
+    "authors": [
+      "Alan S. Go",
+      "Glenn M. Chertow",
+      "Dongjie Fan",
+      "Charles E. McCulloch",
+      "Chi\u2010yuan Hsu"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2736601468",
+    "doi": "10.4230/oasics.dx.2024.16",
+    "title": "Diagnosing Non-Intermittent Anomalies in Reinforcement Learning Policy Executions (Short Paper)",
+    "year": 2017,
+    "total_citations": 11253,
+    "citations_per_year": 1125.3,
+    "role": "methods",
+    "authors": [
+      "Natan, Avraham",
+      "Stern, Roni",
+      "Kalech, Meir"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2167635287",
+    "doi": "10.1086/167900",
+    "title": "The relationship between infrared, optical, and ultraviolet extinction",
+    "year": 1989,
+    "total_citations": 11157,
+    "citations_per_year": 293.6,
+    "role": "methods",
+    "authors": [
+      "Jason A. Cardelli",
+      "Geoffrey C. Clayton",
+      "John S. Mathis"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2127048411",
+    "doi": "10.1016/j.physrep.2009.11.002",
+    "title": "Community detection in graphs",
+    "year": 2009,
+    "total_citations": 11132,
+    "citations_per_year": 618.4,
+    "role": "methods",
+    "authors": [
+      "Santo Fortunato"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3174246647",
+    "doi": "10.1093/neuonc/noab106",
+    "title": "The 2021 WHO Classification of Tumors of the Central Nervous System: a summary",
+    "year": 2021,
+    "total_citations": 11129,
+    "citations_per_year": 1854.8,
+    "role": "review",
+    "authors": [
+      "David N. Louis",
+      "Arie Perry",
+      "Pieter Wesseling",
+      "Daniel J. Brat",
+      "Ian A. Cree"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2135346934",
+    "doi": "10.1016/c2009-0-27872-x",
+    "title": "Introduction to Statistical Pattern Recognition",
+    "year": 1990,
+    "total_citations": 11123,
+    "citations_per_year": 300.6,
+    "role": "methods",
+    "authors": [
+      "Keinosuke Fukunaga"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2166073443",
+    "doi": "10.1155/2011/156869",
+    "title": "FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data",
+    "year": 2010,
+    "total_citations": 11104,
+    "citations_per_year": 653.2,
+    "role": "methods",
+    "authors": [
+      "Robert Oostenveld",
+      "Pascal Fries",
+      "Eric Maris",
+      "Jan\u2010Mathijs Schoffelen"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2125910575",
+    "doi": "10.1609/icwsm.v3i1.13937",
+    "title": "Gephi: An Open Source Software for Exploring and Manipulating Networks",
+    "year": 2009,
+    "total_citations": 11089,
+    "citations_per_year": 616.1,
+    "role": "methods",
+    "authors": [
+      "Mathieu Bastian",
+      "S\u00e9bastien Heymann",
+      "Mathieu Jacomy"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2070722739",
+    "doi": "10.1016/j.physrep.2005.10.009",
+    "title": "Complex networks: Structure and dynamics",
+    "year": 2006,
+    "total_citations": 10837,
+    "citations_per_year": 516.0,
+    "role": "methods",
+    "authors": [
+      "Stefano Boccaletti",
+      "Vito Latora",
+      "Yamir Moreno",
+      "Mario Ch\u00e1vez",
+      "Dong\u2010Uk Hwang"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2900756811",
+    "doi": "10.1080/20013078.2018.1535750",
+    "title": "Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines",
+    "year": 2018,
+    "total_citations": 10823,
+    "citations_per_year": 1202.6,
+    "role": "methods",
+    "authors": [
+      "Clotilde Th\u00e9ry",
+      "Kenneth W. Witwer",
+      "Elena A\u00efkawa",
+      "Mar\u00eda Jos\u00e9 Alcaraz",
+      "Johnathon D. Anderson"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2071881327",
+    "doi": "10.1002/hbm.10062",
+    "title": "Fast robust automated brain extraction",
+    "year": 2002,
+    "total_citations": 10749,
+    "citations_per_year": 430.0,
+    "role": "review",
+    "authors": [
+      "Stephen M. Smith"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2962756421",
+    "doi": "10.1145/2939672.2939754",
+    "title": "node2vec",
+    "year": 2016,
+    "total_citations": 10708,
+    "citations_per_year": 973.5,
+    "role": "methods",
+    "authors": [
+      "Aditya Grover",
+      "Jure Leskovec"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2620241325",
+    "doi": "10.1159/000477308",
+    "title": "Heat Shock Protein A12B Protects Vascular Endothelial Cells Against Sepsis-Induced Acute Lung Injury in Mice",
+    "year": 2017,
+    "total_citations": 10702,
+    "citations_per_year": 1070.2,
+    "role": "methods",
+    "authors": [
+      "Yi Chen",
+      "Lei Wang",
+      "Qiuxiang Kang",
+      "Xu Zhang",
+      "Guifang Yu"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2169678694",
+    "doi": "10.1186/1758-2946-3-33",
+    "title": "Open Babel: An open chemical toolbox",
+    "year": 2011,
+    "total_citations": 10666,
+    "citations_per_year": 666.6,
+    "role": "methods",
+    "authors": [
+      "Noel M. O\u2019Boyle",
+      "Michael Banck",
+      "Craig A. James",
+      "Chris Morley",
+      "Tim Vandermeersch"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2073449985",
+    "doi": "10.1016/s0197-4580(02)00065-9",
+    "title": "Staging of brain pathology related to sporadic Parkinson\u2019s disease",
+    "year": 2002,
+    "total_citations": 10594,
+    "citations_per_year": 423.8,
+    "role": "methods",
+    "authors": [
+      "Heiko Braak",
+      "Kelly Del Tredici",
+      "Udo R\u00fcb",
+      "Rob A. I. de Vos",
+      "Ernst N.H. Jansen Steur"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2052644075",
+    "doi": "10.1016/s1053-8119(02)91132-8",
+    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+    "year": 2002,
+    "total_citations": 10589,
+    "citations_per_year": 423.6,
+    "role": "methods",
+    "authors": [
+      "Mark Jenkinson"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3122877168",
+    "doi": "10.1108/s1474-7979(2009)0000020014",
+    "title": "",
+    "year": 2009,
+    "total_citations": 10582,
+    "citations_per_year": 587.9,
+    "role": "methods",
+    "authors": [
+      "J\u00f6rg Henseler",
+      "Christian M. Ringle",
+      "Rudolf R. Sinkovics"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2130430382",
+    "doi": "10.1038/ncomms3612",
+    "title": "Inferring tumour purity and stromal and immune cell admixture from expression data",
+    "year": 2013,
+    "total_citations": 10540,
+    "citations_per_year": 752.9,
+    "role": "methods",
+    "authors": [
+      "Kosuke Yoshihara",
+      "Maria Shahmoradgoli",
+      "Emmanuel Mart\u00ednez",
+      "Rahulsimham Vegesna",
+      "Hoon Kim"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2096421416",
+    "doi": "10.1038/nature12385",
+    "title": "Van der Waals heterostructures",
+    "year": 2013,
+    "total_citations": 10457,
+    "citations_per_year": 746.9,
+    "role": "methods",
+    "authors": [
+      "A. K. Geim",
+      "I. V. Grigorieva"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2142238829",
+    "doi": "10.1051/aas:1996164",
+    "title": "SExtractor: Software for source extraction",
+    "year": 1996,
+    "total_citations": 10386,
+    "citations_per_year": 335.0,
+    "role": "methods",
+    "authors": [
+      "E. Bertin",
+      "S. Arnouts"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3123893780",
+    "doi": "10.1136/bmj.n160",
+    "title": "PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews",
+    "year": 2021,
+    "total_citations": 10309,
+    "citations_per_year": 1718.2,
+    "role": "review",
+    "authors": [
+      "Matthew J. Page",
+      "David Moher",
+      "Patrick M. Bossuyt",
+      "Isabelle Boutron",
+      "Tammy Hoffmann"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2888589263",
+    "doi": "10.1093/eurheartj/ehy339",
+    "title": "2018 ESC/ESH Guidelines for the management of arterial hypertension",
+    "year": 2018,
+    "total_citations": 10258,
+    "citations_per_year": 1139.8,
+    "role": "methods",
+    "authors": [
+      "Bryan Williams",
+      "Giuseppe Mancia",
+      "Wilko Spiering",
+      "Enrico Agabiti Rosei",
+      "Michel Azizi"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1569685525",
+    "doi": "10.5860/choice.45-4393",
+    "title": "Perry's chemical engineers' handbook",
+    "year": 2008,
+    "total_citations": 10172,
+    "citations_per_year": 535.4,
+    "role": "methods",
+    "authors": [
+      "Don Wesley Green",
+      "Robert Howard Perry"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2229412420",
+    "doi": "10.1145/37401.37422",
+    "title": "Marching cubes: A high resolution 3D surface construction algorithm",
+    "year": 1987,
+    "total_citations": 10126,
+    "citations_per_year": 253.2,
+    "role": "methods",
+    "authors": [
+      "William E. Lorensen",
+      "H. E. Cline"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1971937094",
+    "doi": "10.2307/3033543",
+    "title": "A Set of Measures of Centrality Based on Betweenness",
+    "year": 1977,
+    "total_citations": 10081,
+    "citations_per_year": 201.6,
+    "role": "methods",
+    "authors": [
+      "Linton C. Freeman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2154589460",
+    "doi": "10.1172/jci39104",
+    "title": "The basics of epithelial-mesenchymal transition",
+    "year": 2009,
+    "total_citations": 10013,
+    "citations_per_year": 556.3,
+    "role": "review",
+    "authors": [
+      "Raghu Kalluri",
+      "Robert A. Weinberg"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1994671833",
+    "doi": "10.1046/j.1365-8711.2003.06897.x",
+    "title": "Stellar population synthesis at the resolution of 2003",
+    "year": 2003,
+    "total_citations": 10011,
+    "citations_per_year": 417.1,
+    "role": "methods",
+    "authors": [
+      "Gustavo Bruzual",
+      "S. Charlot"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2798054687",
+    "doi": "10.1016/j.jalz.2018.02.018",
+    "title": "NIA\u2010AA Research Framework: Toward a biological definition of Alzheimer's disease",
+    "year": 2018,
+    "total_citations": 9924,
+    "citations_per_year": 1102.7,
+    "role": "review",
+    "authors": [
+      "Clifford R. Jack",
+      "David A. Bennett",
+      "Kaj Blennow",
+      "Mar\u00eda C. Carrillo",
+      "Billy Dunn"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2319902168",
+    "doi": "10.1107/s2052520616003954",
+    "title": "The Cambridge Structural Database",
+    "year": 2016,
+    "total_citations": 9916,
+    "citations_per_year": 901.5,
+    "role": "methods",
+    "authors": [
+      "Colin R. Groom",
+      "Ian Bruno",
+      "Matthew P. Lightfoot",
+      "Suzanna C. Ward"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2018838463",
+    "doi": "10.1038/ng.2653",
+    "title": "The Genotype-Tissue Expression (GTEx) project.",
+    "year": 2013,
+    "total_citations": 9851,
+    "citations_per_year": 703.6,
+    "role": "methods",
+    "authors": [
+      "John T. Lonsdale"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3046275966",
+    "doi": "10.1016/s0140-6736(20)30367-6",
+    "title": "Dementia prevention, intervention, and care: 2020 report of the Lancet Commission",
+    "year": 2020,
+    "total_citations": 9824,
+    "citations_per_year": 1403.4,
+    "role": "review",
+    "authors": [
+      "Gill Livingston",
+      "Jonathan Huntley",
+      "Andrew Sommerlad",
+      "David Ames",
+      "Clive Ballard"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2136435696",
+    "doi": "10.1196/annals.1440.011",
+    "title": "<i>The Brain's Default Network</i>",
+    "year": 2008,
+    "total_citations": 9731,
+    "citations_per_year": 512.2,
+    "role": "review",
+    "authors": [
+      "Randy L. Buckner",
+      "Jessica R. Andrews\u2010Hanna",
+      "Daniel L. Schacter"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3082188176",
+    "doi": "10.1093/eurheartj/ehaa612",
+    "title": "2020 ESC Guidelines for the diagnosis and management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS)",
+    "year": 2020,
+    "total_citations": 9717,
+    "citations_per_year": 1388.1,
+    "role": "methods",
+    "authors": [
+      "Gerhard Hindricks",
+      "Tatjana Potpara",
+      "Nikolaos Dagres",
+      "Elena Arbelo",
+      "Jeroen J. Bax"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3007643904",
+    "doi": "10.1126/science.abb2507",
+    "title": "Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation",
+    "year": 2020,
+    "total_citations": 9712,
+    "citations_per_year": 1387.4,
+    "role": "methods",
+    "authors": [
+      "Daniel Wrapp",
+      "Nianshuang Wang",
+      "Kizzmekia S. Corbett",
+      "Jory A. Goldsmith",
+      "Ching\u2010Lin Hsieh"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2102085111",
+    "doi": "10.1038/35102167",
+    "title": "Stem cells, cancer, and cancer stem cells",
+    "year": 2001,
+    "total_citations": 9682,
+    "citations_per_year": 372.4,
+    "role": "review",
+    "authors": [
+      "Tannishtha Reya",
+      "Sean J. Morrison",
+      "Michael F. Clarke",
+      "Irving L. Weissman"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2134783591",
+    "doi": "10.1038/nature05911",
+    "title": "Genome-wide association study of 14,000 cases of seven common diseases and 3,000 shared controls",
+    "year": 2007,
+    "total_citations": 9601,
+    "citations_per_year": 480.1,
+    "role": "methods",
+    "authors": [
+      "Paul R. Burton",
+      "David G. Clayton",
+      "Lon R. Cardon",
+      "Nick Craddock",
+      "Panos Deloukas"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3083406432",
+    "doi": "10.1002/pro.3943",
+    "title": "<scp>UCSF ChimeraX</scp>: Structure visualization for researchers, educators, and developers",
+    "year": 2020,
+    "total_citations": 9594,
+    "citations_per_year": 1370.6,
+    "role": "methods",
+    "authors": [
+      "Eric F. Pettersen",
+      "Thomas D. Goddard",
+      "Conrad C. Huang",
+      "Elaine C. Meng",
+      "Gregory S. Couch"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4241074797",
+    "doi": "10.1016/j.neuroimage.2012.01.021",
+    "title": "FreeSurfer",
+    "year": 2012,
+    "total_citations": 9561,
+    "citations_per_year": 637.4,
+    "role": "review",
+    "authors": [
+      "Bruce Fischl"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4235770099",
+    "doi": "10.1006/nimg.2002.1132",
+    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+    "year": 2002,
+    "total_citations": 9496,
+    "citations_per_year": 379.8,
+    "role": "methods",
+    "authors": [
+      "Mark Jenkinson",
+      "Peter Bannister",
+      "Michael Brady",
+      "Stephen M. Smith"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1581387623",
+    "doi": "",
+    "title": "Descarte's error : emotion, reason, and the human brain",
+    "year": 1994,
+    "total_citations": 9495,
+    "citations_per_year": 287.7,
+    "role": "methods",
+    "authors": [
+      "Ant\u00f3nio R. Dam\u00e1sio"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2117726420",
+    "doi": "10.1126/science.275.5306.1593",
+    "title": "A Neural Substrate of Prediction and Reward",
+    "year": 1997,
+    "total_citations": 9481,
+    "citations_per_year": 316.0,
+    "role": "review",
+    "authors": [
+      "Wolfram Schultz",
+      "Peter Dayan",
+      "P. Read Montague"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2003975937",
+    "doi": "10.1016/j.msea.2003.10.257",
+    "title": "Microstructural development in equiatomic multicomponent alloys",
+    "year": 2004,
+    "total_citations": 9421,
+    "citations_per_year": 409.6,
+    "role": "methods",
+    "authors": [
+      "B. Cantor",
+      "I.T.H. Chang",
+      "Peter A. Knight",
+      "Anna Vincent"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2895486342",
+    "doi": "10.1038/s41586-018-0579-z",
+    "title": "The UK Biobank resource with deep phenotyping and genomic data",
+    "year": 2018,
+    "total_citations": 9399,
+    "citations_per_year": 1044.3,
+    "role": "methods",
+    "authors": [
+      "Clare Bycroft",
+      "Colin Freeman",
+      "Desislava Petkova",
+      "Gavin Band",
+      "Lloyd T. Elliott"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1965245884",
+    "doi": "10.1103/physrevlett.61.2472",
+    "title": "Giant Magnetoresistance of (001)Fe/(001)Cr Magnetic Superlattices",
+    "year": 1988,
+    "total_citations": 9162,
+    "citations_per_year": 234.9,
+    "role": "methods",
+    "authors": [
+      "M. N. Baibich",
+      "J.M. Broto",
+      "A. Fert",
+      "F. Nguyen Van Dau",
+      "F. P\u00e9troff"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1996024251",
+    "doi": "10.1159/000337115",
+    "title": "Copper-Zinc Superoxide Dismutase (SOD1) Is Released by Microglial Cells and Confers Neuroprotection against 6-OHDA Neurotoxicity",
+    "year": 2012,
+    "total_citations": 9015,
+    "citations_per_year": 601.0,
+    "role": "methods",
+    "authors": [
+      "Elisabetta Polazzi",
+      "Ilaria Mengoni",
+      "Marco Caprini",
+      "Emiliano Pe\u00f1a\u2010Altamira",
+      "Ewelina Kurtys"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1511198581",
+    "doi": "10.1038/39807",
+    "title": "The capsaicin receptor: a heat-activated ion channel in the pain pathway",
+    "year": 1997,
+    "total_citations": 9007,
+    "citations_per_year": 300.2,
+    "role": "methods",
+    "authors": [
+      "Michael J. Caterina",
+      "Mark Schumacher",
+      "Makoto Tominaga",
+      "Tobias A. Rosen",
+      "Jon D. Levine"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2138621811",
+    "doi": "10.1145/324133.324140",
+    "title": "Authoritative sources in a hyperlinked environment",
+    "year": 1999,
+    "total_citations": 8990,
+    "citations_per_year": 321.1,
+    "role": "methods",
+    "authors": [
+      "Jon Kleinberg"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2132262459",
+    "doi": "10.1002/jcc.21287",
+    "title": "CHARMM: The biomolecular simulation program",
+    "year": 2009,
+    "total_citations": 8960,
+    "citations_per_year": 497.8,
+    "role": "review",
+    "authors": [
+      "Bernard R. Brooks",
+      "Charles L. Brooks",
+      "Alexander D. MacKerell",
+      "Lennart Nilsson",
+      "Robert J. Petrella"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2320983896",
+    "doi": "10.1159/000444713",
+    "title": "Epigenetic Regulations of GABAergic Neurotransmission: Relevance for Neurological Disorders and Epigenetic Therapy",
+    "year": 2016,
+    "total_citations": 8955,
+    "citations_per_year": 814.1,
+    "role": "methods",
+    "authors": [
+      "Shikshya Shrestha",
+      "Steven M. Offer"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2004293194",
+    "doi": "10.1016/s0896-6273(02)00569-x",
+    "title": "Whole Brain Segmentation",
+    "year": 2002,
+    "total_citations": 8910,
+    "citations_per_year": 356.4,
+    "role": "methods",
+    "authors": [
+      "Bruce Fischl",
+      "David H. Salat",
+      "Evelina Busa",
+      "Marilyn Albert",
+      "Megan Dieterich"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2800392236",
+    "doi": "10.1186/s13059-017-1382-0",
+    "title": "SCANPY: large-scale single-cell gene expression data analysis",
+    "year": 2018,
+    "total_citations": 8867,
+    "citations_per_year": 985.2,
+    "role": "methods",
+    "authors": [
+      "F. Alexander Wolf",
+      "Philipp Angerer",
+      "Fabian J. Theis"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2149074973",
+    "doi": "10.1038/nrgastro.2014.66",
+    "title": "The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic",
+    "year": 2014,
+    "total_citations": 8812,
+    "citations_per_year": 677.8,
+    "role": "review",
+    "authors": [
+      "Colin Hill",
+      "Francisco Guarner",
+      "Gregor Reid",
+      "Glenn R. Gibson",
+      "Daniel Merenstein"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2054455698",
+    "doi": "10.1126/science.1127344",
+    "title": "Imaging Intracellular Fluorescent Proteins at Nanometer Resolution",
+    "year": 2006,
+    "total_citations": 8785,
+    "citations_per_year": 418.3,
+    "role": "methods",
+    "authors": [
+      "Eric Betzig",
+      "George H. Patterson",
+      "Rachid Sougrat",
+      "O. Wolf Lindwasser",
+      "Scott G. Olenych"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1963721320",
+    "doi": "10.1021/nl5048779",
+    "title": "Nanocrystals of Cesium Lead Halide Perovskites (CsPbX<sub>3</sub>, X = Cl, Br, and I): Novel Optoelectronic Materials Showing Bright Emission with Wide Color Gamut",
+    "year": 2015,
+    "total_citations": 8779,
+    "citations_per_year": 731.6,
+    "role": "methods",
+    "authors": [
+      "Loredana Prote\u015fescu",
+      "Sergii Yakunin",
+      "Maryna I. Bodnarchuk",
+      "Franziska Krieg",
+      "Riccarda Caputo"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1760829075",
+    "doi": "10.1073/pnas.0504136102",
+    "title": "The human brain is intrinsically organized into dynamic, anticorrelated functional networks",
+    "year": 2005,
+    "total_citations": 8772,
+    "citations_per_year": 398.7,
+    "role": "methods",
+    "authors": [
+      "Michael Fox",
+      "Abraham Z. Snyder",
+      "Justin L. Vincent",
+      "Maurizio Corbetta",
+      "David C. Van Essen"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4301141993",
+    "doi": "10.4324/9781315740218",
+    "title": "The Ecological Approach to Visual Perception",
+    "year": 2014,
+    "total_citations": 8730,
+    "citations_per_year": 671.5,
+    "role": "methods",
+    "authors": [
+      "James J. Gibson"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2593511418",
+    "doi": "10.1038/nmeth.4193",
+    "title": "MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy",
+    "year": 2017,
+    "total_citations": 8716,
+    "citations_per_year": 871.6,
+    "role": "methods",
+    "authors": [
+      "Shawn Zheng",
+      "Eugene Palovcak",
+      "Jean\u2010Paul Armache",
+      "Kliment A. Verba",
+      "Yifan Cheng"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2180637001",
+    "doi": "10.2136/sssabookser5.1.2ed.c15",
+    "title": "Particle\u2010size Analysis",
+    "year": 1986,
+    "total_citations": 8669,
+    "citations_per_year": 211.4,
+    "role": "methods",
+    "authors": [
+      "G.W. Gee",
+      "J. W. Bauder"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2899736836",
+    "doi": "10.1016/s0140-6736(18)32203-7",
+    "title": "Global, regional, and national age-sex-specific mortality for 282 causes of death in 195 countries and territories, 1980\u20132017: a systematic analysis for the Global Burden of Disease Study 2017",
+    "year": 2018,
+    "total_citations": 8565,
+    "citations_per_year": 951.7,
+    "role": "methods",
+    "authors": [
+      "Gregory A. Roth",
+      "Degu Abate",
+      "Kalkidan Hassen Abate",
+      "Solom\u00f3n Mequanente Abay",
+      "Cristiana Abbafati"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2159211495",
+    "doi": "10.1107/s0907444911001314",
+    "title": "<i>REFMAC</i>5 for the refinement of macromolecular crystal structures",
+    "year": 2011,
+    "total_citations": 8548,
+    "citations_per_year": 534.2,
+    "role": "methods",
+    "authors": [
+      "Garib N. Murshudov",
+      "Pavol Skub\u00e1k",
+      "Andrey A. Lebedev",
+      "Neesh Pannu",
+      "Roberto A. Steiner"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2026616100",
+    "doi": "10.1016/j.mri.2012.05.001",
+    "title": "3D Slicer as an image computing platform for the Quantitative Imaging Network",
+    "year": 2012,
+    "total_citations": 8542,
+    "citations_per_year": 569.5,
+    "role": "methods",
+    "authors": [
+      "Andriy Fedorov",
+      "Reinhard Beichel",
+      "Jayashree Kalpathy\u2013Cramer",
+      "Julien Finet",
+      "Jean\u2010Christophe Fillion\u2010Robin"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4390946922",
+    "doi": "10.3322/caac.21820",
+    "title": "Cancer statistics, 2024",
+    "year": 2024,
+    "total_citations": 8526,
+    "citations_per_year": 2842.0,
+    "role": "methods",
+    "authors": [
+      "Rebecca L. Siegel",
+      "Angela N. Giaquinto",
+      "Ahmedin Jemal"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2089433206",
+    "doi": "10.1016/s0034-4257(98)00031-5",
+    "title": "AERONET\u2014A Federated Instrument Network and Data Archive for Aerosol Characterization",
+    "year": 1998,
+    "total_citations": 8459,
+    "citations_per_year": 291.7,
+    "role": "methods",
+    "authors": [
+      "B. N. Holben",
+      "T. F. Eck",
+      "I. Slutsker",
+      "D. Tanr\u00e9",
+      "Jean-Pierre Buis"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W22297218",
+    "doi": "10.4324/9781410612403",
+    "title": "The Organization of Behavior",
+    "year": 2005,
+    "total_citations": 8454,
+    "citations_per_year": 384.3,
+    "role": "methods",
+    "authors": [
+      "D. O. Hebb"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4233857083",
+    "doi": "10.1145/37402.37422",
+    "title": "Marching cubes: A high resolution 3D surface construction algorithm",
+    "year": 1987,
+    "total_citations": 8453,
+    "citations_per_year": 211.3,
+    "role": "methods",
+    "authors": [
+      "William E. Lorensen",
+      "H. E. Cline"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2952167528",
+    "doi": "10.1371/journal.pcbi.1005595",
+    "title": "Unicycler: Resolving bacterial genome assemblies from short and long sequencing reads",
+    "year": 2017,
+    "total_citations": 8405,
+    "citations_per_year": 840.5,
+    "role": "methods",
+    "authors": [
+      "Ryan R. Wick",
+      "Louise M. Judd",
+      "Claire L. Gorrie",
+      "Kathryn E. Holt"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2107018762",
+    "doi": "10.1186/gb-2010-11-3-r25",
+    "title": "A scaling normalization method for differential expression analysis of RNA-seq data",
+    "year": 2010,
+    "total_citations": 8395,
+    "citations_per_year": 493.8,
+    "role": "methods",
+    "authors": [
+      "Mark D. Robinson",
+      "Alicia Oshlack"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2064165694",
+    "doi": "10.1038/nature11993",
+    "title": "Natural RNA circles function as efficient microRNA sponges",
+    "year": 2013,
+    "total_citations": 8387,
+    "citations_per_year": 599.1,
+    "role": "methods",
+    "authors": [
+      "Thomas B. Hansen",
+      "Trine I. Jensen",
+      "Bettina Hjelm Clausen",
+      "Jesper B. Bramsen",
+      "Bente Finsen"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2121642311",
+    "doi": "10.1016/0092-8674(93)90585-e",
+    "title": "A novel gene containing a trinucleotide repeat that is expanded and unstable on Huntington's disease chromosomes",
+    "year": 1993,
+    "total_citations": 8376,
+    "citations_per_year": 246.4,
+    "role": "methods",
+    "authors": [
+      "Marcy E. MacDonald"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2015519364",
+    "doi": "10.1016/0092-8674(93)90500-p",
+    "title": "WAF1, a potential mediator of p53 tumor suppression",
+    "year": 1993,
+    "total_citations": 8369,
+    "citations_per_year": 246.1,
+    "role": "methods",
+    "authors": [
+      "Wafik S. El\u2010Deiry",
+      "Takashi Tokino",
+      "Victor E. Velculescu",
+      "Daniel B. Levy",
+      "Ramon Parsons"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2084652510",
+    "doi": "10.1145/237814.237866",
+    "title": "A fast quantum mechanical algorithm for database search",
+    "year": 1996,
+    "total_citations": 8347,
+    "citations_per_year": 269.3,
+    "role": "methods",
+    "authors": [
+      "Lov K. Grover"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2981731882",
+    "doi": "10.1016/j.inffus.2019.12.012",
+    "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+    "year": 2019,
+    "total_citations": 8339,
+    "citations_per_year": 1042.4,
+    "role": "methods",
+    "authors": [
+      "Alejandro Barredo Arrieta",
+      "Natalia D\u00edaz-Rodr\u00edguez",
+      "Javier Del Ser",
+      "Adrien Bennetot",
+      "Siham Tabik"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2108344016",
+    "doi": "10.1016/s0140-6736(12)61729-2",
+    "title": "Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+    "year": 2012,
+    "total_citations": 8330,
+    "citations_per_year": 555.3,
+    "role": "methods",
+    "authors": [
+      "Theo Vos",
+      "Abraham D Flaxman",
+      "Mohsen Naghavi",
+      "Rafael Lozano",
+      "Catherine Michaud"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2004314923",
+    "doi": "10.1016/0014-4827(61)90192-6",
+    "title": "The serial cultivation of human diploid cell strains",
+    "year": 1961,
+    "total_citations": 8329,
+    "citations_per_year": 126.2,
+    "role": "methods",
+    "authors": [
+      "Leonard Hayflick",
+      "Paul S. Moorhead"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2158553737",
+    "doi": "10.1146/annurev.neuro.23.1.155",
+    "title": "Emotion Circuits in the Brain",
+    "year": 2000,
+    "total_citations": 8296,
+    "citations_per_year": 307.3,
+    "role": "review",
+    "authors": [
+      "Joseph E. LeDoux"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W3004227146",
+    "doi": "10.1038/s41598-019-56847-4",
+    "title": "Re-epithelialization and immune cell behaviour in an ex vivo human skin model",
+    "year": 2020,
+    "total_citations": 8273,
+    "citations_per_year": 1181.9,
+    "role": "methods",
+    "authors": [
+      "Ana Rakita",
+      "Nenad Nikoli\u0107",
+      "Michael Mildner",
+      "Johannes Matiasek",
+      "Adelheid Elbe\u2010B\u00fcrger"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2164727176",
+    "doi": "10.1038/35065725",
+    "title": "Exploring complex networks",
+    "year": 2001,
+    "total_citations": 8248,
+    "citations_per_year": 317.2,
+    "role": "review",
+    "authors": [
+      "Steven H. Strogatz"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2116810060",
+    "doi": "10.1371/journal.pmed.0040297",
+    "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): Explanation and Elaboration",
+    "year": 2007,
+    "total_citations": 8236,
+    "citations_per_year": 411.8,
+    "role": "methods",
+    "authors": [
+      "Jan P. Vandenbroucke",
+      "Erik von Elm",
+      "Douglas G. Altman",
+      "Peter C G\u00f8tzsche",
+      "Cynthia D. Mulrow"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W1677747913",
+    "doi": "10.1038/46248",
+    "title": "Design and synthesis of an exceptionally stable and highly porous metal-organic framework",
+    "year": 1999,
+    "total_citations": 8232,
+    "citations_per_year": 294.0,
+    "role": "methods",
+    "authors": [
+      "Hailian Li",
+      "Mohamed Eddaoudi",
+      "M. O\u2019Keeffe",
+      "Omar M. Yaghi"
+    ]
+  }
+]

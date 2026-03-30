@@ -1,0 +1,406 @@
+{
+  "triangulation": {
+    "jaccard_corpus_a_vs_corpus_b": {
+      "jaccard": 0.0852,
+      "intersection_size": 364,
+      "union_size": 4270,
+      "a_size": 2573,
+      "b_size": 2061
+    },
+    "jaccard_corpus_a_vs_corpus_c": {
+      "jaccard": 0.0551,
+      "intersection_size": 347,
+      "union_size": 6302,
+      "a_size": 2573,
+      "b_size": 4076
+    },
+    "jaccard_corpus_b_vs_corpus_c": {
+      "jaccard": 0.0425,
+      "intersection_size": 250,
+      "union_size": 5887,
+      "a_size": 2061,
+      "b_size": 4076
+    },
+    "core_all_three": {
+      "size": 118,
+      "note": "Papers found by all three independent methods"
+    }
+  },
+  "expert_validation": {
+    "expert_total": 177,
+    "data_driven_total": 7867,
+    "found_in_both": 115,
+    "recall": 0.6497,
+    "missed_by_data_driven": 62,
+    "novel_in_data_driven": 7752,
+    "missed_papers": [
+      {
+        "doi": "10.1101/2025.09.22.677863",
+        "title": "Comparative Connectomics Highlights Conserved Architectural Synaptic Motifs in the Drosophila Mushroom Body",
+        "seed_expert": "Patricia Rivlin"
+      },
+      {
+        "doi": "10.7554/elife.90027",
+        "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
+        "seed_expert": "Patricia Rivlin"
+      },
+      {
+        "doi": "10.1016/j.neuron.2016.07.036",
+        "title": "High-Throughput Mapping of Single-Neuron Projections by Sequencing of Barcoded RNA",
+        "seed_expert": "Anthony Zador"
+      },
+      {
+        "doi": "10.1016/j.cell.2019.09.023",
+        "title": "High-throughput mapping of long-range neuronal projection using in situ sequencing",
+        "seed_expert": "Anthony Zador"
+      },
+      {
+        "doi": "10.7554/elife.90027",
+        "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
+        "seed_expert": "Stephen Plaza"
+      },
+      {
+        "doi": "10.1002/hbm.25803",
+        "title": "The Spectrum of Data Sharing Policies in Neuroimaging Data Repositories",
+        "seed_expert": "Ethics-Policy"
+      },
+      {
+        "doi": "10.1109/isbi.2016.7493463",
+        "title": "Robust registration of calcium images by learned contrast synthesis",
+        "seed_expert": "Stephan Saalfeld"
+      },
+      {
+        "doi": "10.1523/jneurosci.1749-08.2008",
+        "title": "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling",
+        "seed_expert": "Winfried Denk"
+      },
+      {
+        "doi": "10.1016/j.neuroimage.2022.119146",
+        "title": "Post mortem mapping of connectional anatomy for the validation of diffusion MRI",
+        "seed_expert": "Anastasia Yendiki"
+      },
+      {
+        "doi": "10.1016/j.media.2015.04.005",
+        "title": "Large-scale automatic reconstruction of neuronal processes from electron microscopy images",
+        "seed_expert": "Verena Kaynig"
+      },
+      {
+        "doi": "10.1038/s41586-025-08805-6",
+        "title": "Connectomics of predicted Sst transcriptomic types in mouse visual cortex",
+        "seed_expert": "Nuno Ma\u00e7arico da Costa"
+      },
+      {
+        "doi": "10.1146/annurev-statistics-042720-023234",
+        "title": "Statistical Connectomics",
+        "seed_expert": "Joshua Vogelstein"
+      },
+      {
+        "doi": "10.1109/tpami.2012.235",
+        "title": "Graph Classification Using Signal-Subgraphs: Applications in Statistical Connectomics",
+        "seed_expert": "Joshua Vogelstein"
+      },
+      {
+        "doi": "10.3389/fninf.2021.766335",
+        "title": "Connectomics annotation metadata standardization for increased accessibility and queryability",
+        "seed_expert": "Brock Wester"
+      },
+      {
+        "doi": "10.1109/tmi.2018.2885968",
+        "title": "Connectome Smoothing via Low-rank Approximations",
+        "seed_expert": "Carey Priebe"
+      },
+      {
+        "doi": "10.3389/fninf.2021.766335",
+        "title": "Connectomics annotation metadata standardization for increased accessibility and queryability",
+        "seed_expert": "Eric Johnson"
+      },
+      {
+        "doi": "10.1038/s41586-024-07615-6",
+        "title": "Network Statistics of the Whole-Brain Connectome of Drosophila",
+        "seed_expert": "Mala Murthy"
+      },
+      {
+        "doi": "10.1016/j.cell.2019.09.023",
+        "title": "High-Throughput Mapping of Long-Range Neuronal Projection Using In Situ Sequencing",
+        "seed_expert": "Justus Kebschull"
+      },
+      {
+        "doi": "10.1038/s41586-023-06812-z",
+        "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+        "seed_expert": "Hongkui Zeng"
+      },
+      {
+        "doi": "10.1038/s41586-025-08840-3",
+        "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+        "seed_expert": "R. Clay Reid"
+      },
+      {
+        "doi": "10.3389/fncir.2020.00017",
+        "title": "Gas cluster ion beam SEM and the connectomics pipeline for large-volume neural circuit reconstruction",
+        "seed_expert": "Kenneth Hayworth"
+      },
+      {
+        "doi": "10.1038/nature12063",
+        "title": "A comprehensive wiring diagram of the protocerebral bridge for visual information processing in the Drosophila brain",
+        "seed_expert": "Rachel Wilson"
+      },
+      {
+        "doi": "10.1038/s41592-024-02378-4",
+        "title": "Local shape descriptors for neuron segmentation",
+        "seed_expert": "Jan Funke"
+      },
+      {
+        "doi": "10.1109/tpami.2018.2835451",
+        "title": "Large Scale Image Segmentation with Structured Loss based on Partial Differential Equations",
+        "seed_expert": "Jan Funke"
+      },
+      {
+        "doi": "10.1007/978-3-030-00934-2_36",
+        "title": "Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain",
+        "seed_expert": "Jan Funke"
+      },
+      {
+        "doi": "10.1038/s41592-024-02515-z",
+        "title": "NEURD: automated proofreading and feature extraction for connectomics",
+        "seed_expert": "Sven Dorkenwald"
+      },
+      {
+        "doi": "10.1038/s41598-021-91025-w",
+        "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search",
+        "seed_expert": "Jordan Matelsky"
+      },
+      {
+        "doi": "10.1523/jneurosci.2202-13.2013",
+        "title": "Synaptic inputs compete during rapid formation of the calyx of Held",
+        "seed_expert": "George Spirou"
+      },
+      {
+        "doi": "10.1016/j.cell.2007.01.040",
+        "title": "Comprehensive maps of Drosophila higher olfactory centers: spatially segregated fruit and pheromone representation",
+        "seed_expert": "Gregory Jefferis"
+      },
+      {
+        "doi": "10.1523/jneurosci.12-07-02685.1992",
+        "title": "Three-dimensional structure of dendritic spines and synapses in rat hippocampus at postnatal day 15 and adult ages",
+        "seed_expert": "Kristen Harris"
+      },
+      {
+        "doi": "10.1146/annurev.neuro.31.060407.125646",
+        "title": "Balancing structure and function at hippocampal dendritic spines",
+        "seed_expert": "Kristen Harris"
+      },
+      {
+        "doi": "10.1038/s41586-025-08840-3",
+        "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
+        "seed_expert": "Andreas Tolias"
+      },
+      {
+        "doi": "10.1038/s41593-024-01786-1",
+        "title": "From the connectome to brain function",
+        "seed_expert": "Andreas Tolias"
+      },
+      {
+        "doi": "10.1016/j.neuron.2019.09.045",
+        "title": "Excitatory and inhibitory subnetworks are equally selective during decision-making and emerge simultaneously during learning",
+        "seed_expert": "Andreas Tolias"
+      },
+      {
+        "doi": "10.1016/j.cell.2015.12.029",
+        "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
+        "seed_expert": "Josh Morgan"
+      },
+      {
+        "doi": "10.1016/j.neuron.2019.12.017",
+        "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus",
+        "seed_expert": "Josh Morgan"
+      },
+      {
+        "doi": "10.1016/j.conb.2018.09.002",
+        "title": "Big data in nanoscale connectomics, and the greed for training labels",
+        "seed_expert": "Bobby Kasthuri"
+      },
+      {
+        "doi": "10.1073/pnas.2521349122",
+        "title": "Photoemission electron microscopy for connectomics",
+        "seed_expert": "Bobby Kasthuri"
+      },
+      {
+        "doi": "10.1145/3018743.3018766",
+        "title": "A Multicore Path to Connectomics-on-Demand",
+        "seed_expert": "Nir Shavit"
+      },
+      {
+        "doi": "10.1146/annurev.physiol.010908.163140",
+        "title": "Dendritic Spine Dynamics",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1109/cvpr.2019.00214",
+        "title": "Biologically-constrained graphs for long-range interactions in EM volume segmentation",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1016/j.neuron.2009.02.021",
+        "title": "'Reading the book of memory: Sparse sampling versus dense mapping of connectomes'",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1038/nrn1519",
+        "title": "Interneurons of the neocortical inhibitory system",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1038/s41586-018-0654-5",
+        "title": "Shared and distinct transcriptomic cell types across neocortical areas",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1038/s41586-021-03950-0",
+        "title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1109/tpami.2018.2858744",
+        "title": "Large scale image segmentation with structured loss based on partial differential equations",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1007/978-3-030-00934-2_36",
+        "title": "Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1109/tmi.2012.2211864",
+        "title": "Learning context cues for synapse segmentation",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1093/bioinformatics/btt529",
+        "title": "'CATMAID: Collaborative annotation toolkit for massive amounts of image data'",
+        "seed_expert": ""
+      },
+      {
+        "doi": "10.1101/2021.03.31.437929",
+        "title": "'OME-Zarr: a cloud-optimized bioimaging file format with international community support'",
+        "seed_expert": ""
+      }
+    ]
+  },
+  "author_check": {
+    "total_experts": 29,
+    "found_in_corpus": 29,
+    "recall": 1.0,
+    "missing_experts": []
+  },
+  "technique_coverage": {
+    "technique_families": {
+      "volume_em": {
+        "count": 1042,
+        "keywords": [
+          "electron microscopy",
+          "SEM",
+          "TEM",
+          "FIB-SEM",
+          "SBEM",
+          "serial block-face",
+          "serial section",
+          "multibeam",
+          "multi-beam"
+        ],
+        "sample_titles": [
+          "Large-volume en-bloc staining for electron microscopy-based connectomics",
+          "Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused ",
+          "Focussed Ion Beam Milling and Scanning Electron Microscopy of Brain Tissue"
+        ],
+        "adequate": true
+      },
+      "atum_gridtape": {
+        "count": 22,
+        "keywords": [
+          "ATUM",
+          "GridTape",
+          "automated tape"
+        ],
+        "sample_titles": [
+          "Development of High-Throughput, High-Resolution 3D Reconstruction of Large-Volum",
+          "Serial-section electron microscopy using automated tape-collecting ultramicrotom",
+          "Neurons on tape: Automated Tape Collecting Ultramicrotomy-mediated volume EM for"
+        ],
+        "adequate": true
+      },
+      "barcoding": {
+        "count": 14,
+        "keywords": [
+          "MAPseq",
+          "BARseq",
+          "BRICseq",
+          "barcod"
+        ],
+        "sample_titles": [
+          "Feasibility of 3D Reconstruction of Neural Morphology Using Expansion Microscopy",
+          "Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel ",
+          "Multiplexed <i>in situ</i> protein imaging using DNA-barcoded antibodies with ex"
+        ],
+        "adequate": true
+      },
+      "expansion_microscopy": {
+        "count": 103,
+        "keywords": [
+          "expansion microscopy",
+          "ExM"
+        ],
+        "sample_titles": [
+          "Expansion microscopy",
+          "Protein-retention expansion microscopy of cells and tissues labeled using standa",
+          "Imaging cellular ultrastructures using expansion microscopy (U-ExM)"
+        ],
+        "adequate": true
+      },
+      "xray": {
+        "count": 54,
+        "keywords": [
+          "X-ray",
+          "nanotomography",
+          "nano-CT",
+          "micro-CT",
+          "synchrotron"
+        ],
+        "sample_titles": [
+          "Alzheimer's Disease: X-Ray Spectrometric Evidence of Aluminum Accumulation in Ne",
+          "X-Ray-Induced Cell Death in the Developing Hippocampal Complex Involves Neurons ",
+          "Correlative optical photothermal infrared and X-ray fluorescence for chemical im"
+        ],
+        "adequate": true
+      },
+      "array_tomography": {
+        "count": 26,
+        "keywords": [
+          "array tomography"
+        ],
+        "sample_titles": [
+          "Surface-wave array tomography in SE Tibet from ambient seismic noise and two-sta",
+          "Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastr",
+          "Surface wave array tomography in SE Tibet from ambient seismic noise and two-sta"
+        ],
+        "adequate": true
+      },
+      "graph_theory": {
+        "count": 59,
+        "keywords": [
+          "graph theory",
+          "network analysis",
+          "network neuroscience"
+        ],
+        "sample_titles": [
+          "GRETNA: a graph theoretical network analysis toolbox for imaging connectomics",
+          "Functional connectivity in the resting brain: A network analysis of the default ",
+          "Brain network analysis reveals affected connectome structure in bipolar I disord"
+        ],
+        "adequate": true
+      }
+    },
+    "total_families": 7,
+    "adequate_families": 7,
+    "underrepresented": []
+  }
+}

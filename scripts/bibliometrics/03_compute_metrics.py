@@ -167,10 +167,16 @@ def compute_author_metrics(coauthorship_graph, corpus, paper_metrics):
     print("  Computing co-authorship centrality...")
     if coauthorship_graph.number_of_nodes() > 0:
         degree = dict(coauthorship_graph.degree(weight="weight"))
-        betweenness = nx.betweenness_centrality(coauthorship_graph, weight="weight")
+        # Approximate betweenness for large graphs (same cap as citation graph)
+        if coauthorship_graph.number_of_nodes() > 2000:
+            betweenness = nx.betweenness_centrality(
+                coauthorship_graph, weight="weight", k=500
+            )
+        else:
+            betweenness = nx.betweenness_centrality(coauthorship_graph, weight="weight")
         try:
             eigenvector = nx.eigenvector_centrality(
-                coauthorship_graph, weight="weight", max_iter=200
+                coauthorship_graph, weight="weight", max_iter=500
             )
         except (nx.PowerIterationFailedConvergence, nx.NetworkXError):
             eigenvector = {n: 0 for n in coauthorship_graph}

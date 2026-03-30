@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Large-scale connectomics projects generate multi-terabyte EM volumes with annotations that evolve continuously through proofreading, but no data infrastructure existed that could manage versioned, mutable annotation data at connectomics scale with collaborative access.",
+    "challenge": "Managing concurrent read/write access to petabyte-scale annotation data with version control semantics requires distributed storage architecture that differs fundamentally from general-purpose version control systems designed for code, not large binary image arrays.",
+    "action": "The authors developed DVID (Distributed Versioned Image-Oriented Dataservice), a server architecture for storing, versioning, and serving large EM image data and associated annotations, supporting branching, merging, and commit-based version tracking analogous to git.",
+    "resolution": "DVID enabled production management of multi-terabyte connectomics datasets with version control for annotations, supporting concurrent proofreading workflows at the scale of the Drosophila hemibrain and FlyEM projects. Its branch/commit model allowed error rollback and parallel annotation tracks.",
+    "future_work": "Future development should improve query performance for graph-level connectivity data, add native support for neuroglancer-compatible data formats, and develop standardized APIs for interoperability with other connectomics infrastructure tools."
+  },
+  "summaries": {
+    "beginner": "Mapping a whole brain requires many scientists working together over years, constantly correcting and updating the data. DVID is like a 'git for brain data' \u2014 a system that keeps track of all changes to the brain map, lets different people work on it simultaneously, and lets you go back to earlier versions if mistakes are found.",
+    "intermediate": "DVID provides distributed versioned storage for EM image data and connectomics annotations with git-like branching and commit semantics. It has been the production data backend for major FlyEM Drosophila connectomics projects, enabling concurrent proofreading, annotation versioning, and reliable rollback \u2014 features essential for collaborative multi-year reconstruction projects.",
+    "advanced": "DVID implements a distributed key-value store optimized for large binary image array access patterns, with version control semantics applied to annotation layers rather than raw image data. The branching model allows parallel proofreading workflows on different annotations of the same dataset, with merge operations to consolidate accepted changes. Integration with NEUPRINT and other analysis tools requires careful API design to expose versioned connectivity data. Scalability to petabyte data has been demonstrated in production, though concurrent write conflicts during active proofreading remain a practical challenge."
+  },
+  "discussion_prompts": [
+    "How do DVID's versioning semantics for large image annotations differ from standard git version control, and what are the specific challenges of merging conflicting annotation updates in a connectomics context?",
+    "What data consistency guarantees does DVID provide during concurrent proofreading, and how are conflicts between annotators resolved?",
+    "How should connectomics data infrastructure like DVID evolve to support increasingly automated reconstruction pipelines that modify annotations at machine speed rather than human speed?"
+  ],
+  "dimension": "infrastructure",
+  "tags": [
+    "tool:dvid",
+    "infrastructure:data-management",
+    "infrastructure:versioning",
+    "proofreading:collaborative",
+    "connectomics:workflow",
+    "infrastructure:distributed-storage"
+  ]
+}

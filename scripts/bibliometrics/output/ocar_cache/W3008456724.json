@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Animal bodies contain hundreds of cell types defined by combinations of location, morphology, and gene expression, but no study had integrated all three modalities body-wide at single-cell resolution to create a complete cell atlas.",
+    "challenge": "Integrating transcriptomic profiles, spatial locations, and 3D morphologies for all cell types across an entire animal body requires development of new multi-modal atlasing methods and computational frameworks for cross-modal cell type matching.",
+    "action": "The authors created a whole-body, single-cell-resolution atlas of Platynereis dumerilii by combining single-cell RNA sequencing, spatial transcriptomics, and volumetric EM to map gene expression patterns, cell type identity, and morphology in the same individuals.",
+    "resolution": "The integrated atlas provided a complete mapping of cell type diversity across the Platynereis body, linking transcriptomic clusters to spatial positions and morphological classes. This enabled discovery of new cell types and provided evolutionary insights into cell type homologies across bilaterians.",
+    "future_work": "Extending this multi-modal integration approach to other species and developmental stages, and connecting the cell type catalog to connectomic data, are major future directions."
+  },
+  "summaries": {
+    "beginner": "Every cell in an animal's body has a unique identity defined by what genes it uses, where it lives, and what shape it has. This paper combined several techniques to map all these properties for every cell in a small marine worm, creating the most complete single-animal body atlas ever produced.",
+    "intermediate": "The authors integrated scRNA-seq, spatial transcriptomics, and volumetric EM data for Platynereis to produce a whole-body atlas linking molecular identity, spatial position, and morphology at single-cell resolution. By cross-referencing transcriptomic clusters with spatially registered in situ data and EM morphologies, they achieved comprehensive cell type classification across all tissues and organs.",
+    "advanced": "This study demonstrates the integration of three independent single-cell data modalities \u2014 scRNA-seq, spatial transcriptomics, and EM-based morphology \u2014 to build a unified cell atlas of an entire animal. The Platynereis system is particularly valuable for evolutionary cell type comparisons due to its basal bilaterian position. Key technical challenges addressed include cross-modal cell type matching algorithms and spatial registration of transcriptomic data to EM volumes; caveats include the reliance on computational matching that may introduce alignment errors between modalities."
+  },
+  "discussion_prompts": [
+    "What computational methods were used to integrate transcriptomic and spatial/morphological data, and how was the accuracy of cross-modal cell type matching validated?",
+    "What novel cell types or unexpected molecular identities were discovered by the integration of all three modalities, and would any have been missed by single-modality analysis?",
+    "How do the cell type homologies identified in Platynereis compare to those in vertebrates or arthropods, and what does this imply about the ancestral bilaterian body plan?"
+  ],
+  "dimension": "cell-types",
+  "tags": [
+    "species:platynereis",
+    "method:scrna-seq",
+    "method:spatial-transcriptomics",
+    "method:multimodal",
+    "data:atlas",
+    "imaging:volume-em"
+  ]
+}

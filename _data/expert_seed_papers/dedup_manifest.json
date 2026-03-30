@@ -6,7 +6,7 @@
       "id": "bock-2025-synaptic-connectomics",
       "title": "Synaptic connectomics: status and prospects",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "methodology"
       ]
@@ -15,7 +15,7 @@
       "id": "boyden-2015-expansion-microscopy",
       "title": "Expansion microscopy",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology"
       ]
@@ -24,7 +24,7 @@
       "id": "boyden-2017-exm-reconstruction",
       "title": "Feasibility of 3D Reconstruction of Neural Morphology Using Expansion Microscopy and Barcode-Guided Agglomeration",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "image-acquisition"
       ]
@@ -33,7 +33,7 @@
       "id": "boyden-2020-spectral-connectomics",
       "title": "Light microscopy based approach for mapping connectivity with molecular specificity",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology"
       ]
@@ -42,7 +42,7 @@
       "id": "boyden-2025-liconn",
       "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "computer-vision-ml",
         "connectomics"
@@ -52,7 +52,7 @@
       "id": "briggman-2011-direction-selectivity",
       "title": "Wiring specificity in the direction-selectivity circuit of the retina",
       "year": 2011,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -61,7 +61,7 @@
       "id": "briggman-2015-extracellular-space",
       "title": "Extracellular space preservation aids the connectomic analysis of neural circuits",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology"
       ]
@@ -70,7 +70,7 @@
       "id": "briggman-2020-night-vision",
       "title": "Connectomic analysis reveals an interneuron with an integral role in the retinal circuit for night vision",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -79,7 +79,7 @@
       "id": "dacosta-2025-sst-types",
       "title": "Connectomics of predicted Sst transcriptomic types in mouse visual cortex",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "cell-types",
         "connectomics"
       ]
@@ -88,7 +88,7 @@
       "id": "betzel-2021-open-datasets",
       "title": "Large, Open Datasets for Human Connectomics Research: Considerations for Reproducible and Responsible Data Use",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "ethics-society",
         "methodology"
       ]
@@ -97,7 +97,7 @@
       "id": "jwa-2022-data-sharing",
       "title": "The Spectrum of Data Sharing Policies in Neuroimaging Data Repositories",
       "year": 2022,
-      "dimensions": [
+      "dims": [
         "ethics-society",
         "data-infrastructure"
       ]
@@ -106,7 +106,7 @@
       "id": "funke-2024-analyzing-segmentation",
       "title": "Analyzing image segmentation for connectomics",
       "year": 2024,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "methodology"
       ]
@@ -115,7 +115,7 @@
       "id": "gray-roncal-2013-migraine",
       "title": "MIGRAINE: MRI Graph Reliability Analysis and Inference for Connectomics",
       "year": 2013,
-      "dimensions": [
+      "dims": [
         "methodology",
         "data-infrastructure"
       ]
@@ -124,7 +124,7 @@
       "id": "harris-1992-spine-structure",
       "title": "Three-dimensional structure of dendritic spines and synapses in rat hippocampus at postnatal day 15 and adult ages",
       "year": 1992,
-      "dimensions": [
+      "dims": [
         "neuroanatomy",
         "methodology"
       ]
@@ -133,7 +133,7 @@
       "id": "harris-2008-spine-balance",
       "title": "Balancing structure and function at hippocampal dendritic spines",
       "year": 2008,
-      "dimensions": [
+      "dims": [
         "neuroanatomy"
       ]
     },
@@ -141,7 +141,7 @@
       "id": "harris-2015-hippocampal-resource",
       "title": "A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "data-infrastructure",
         "neuroanatomy"
       ]
@@ -150,7 +150,7 @@
       "id": "hayworth-2020-gascluster-fibsem",
       "title": "Gas cluster ion beam SEM and the connectomics pipeline for large-volume neural circuit reconstruction",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "image-acquisition"
       ]
     },
@@ -158,7 +158,7 @@
       "id": "helmstaedter-2013-challenges",
       "title": "Cellular-resolution connectomics: challenges of dense neural circuit reconstruction",
       "year": 2013,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "proofreading",
         "methodology"
@@ -168,7 +168,7 @@
       "id": "helmstaedter-2017-synem",
       "title": "SynEM, automated synapse detection for connectomics",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "connectomics"
       ]
@@ -177,7 +177,7 @@
       "id": "helmstaedter-2017-webknossos",
       "title": "webKnossos: efficient online 3D data annotation for connectomics",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "data-infrastructure",
         "proofreading"
       ]
@@ -186,7 +186,7 @@
       "id": "ishibashi-2022-rod-cone-gap",
       "title": "Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminals",
       "year": 2022,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies",
         "neuroanatomy"
@@ -196,7 +196,7 @@
       "id": "jain-2016-ffn-arxiv",
       "title": "Flood-Filling Networks",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml"
       ]
     },
@@ -204,7 +204,7 @@
       "id": "jain-2024-next-gen-ai",
       "title": "Next-generation AI for connectomics",
       "year": 2024,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "methodology"
       ]
@@ -213,7 +213,7 @@
       "id": "kasthuri-2018-big-data-nanoscale",
       "title": "Big data in nanoscale connectomics, and the greed for training labels",
       "year": 2018,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "methodology"
       ]
@@ -222,7 +222,7 @@
       "id": "kasthuri-2025-peem",
       "title": "Photoemission electron microscopy for connectomics",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology"
       ]
@@ -231,7 +231,7 @@
       "id": "kaynig-2015-large-scale-reconstruction",
       "title": "Large-scale automatic reconstruction of neuronal processes from electron microscopy images",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "methodology"
       ]
@@ -240,7 +240,7 @@
       "id": "kebschull-2025-mapseq2",
       "title": "MAPseq2: A Sensitive and Cost-Effective Barcoded Connectomics Method",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "methodology"
       ]
     },
@@ -248,7 +248,7 @@
       "id": "kording-2015-cell-types-microcircuits",
       "title": "Automatic discovery of cell types and microcircuitry from neural connectomics",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "cell-types",
         "computer-vision-ml",
         "network-analysis"
@@ -258,7 +258,7 @@
       "id": "kording-2015-rosetta-brains",
       "title": "Rosetta Brains: A Strategy for Molecularly-Annotated Connectomics",
       "year": 2014,
-      "dimensions": [
+      "dims": [
         "methodology",
         "connectomics"
       ]
@@ -267,7 +267,7 @@
       "id": "kuan-2020-xray-nanotomography",
       "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology",
         "case-studies"
@@ -277,7 +277,7 @@
       "id": "lee-2016-anatomy-function",
       "title": "Anatomy and function of an excitatory network in the visual cortex",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -286,7 +286,7 @@
       "id": "lichtman-2014-big-data",
       "title": "The big data challenges of connectomics",
       "year": 2014,
-      "dimensions": [
+      "dims": [
         "data-infrastructure",
         "connectomics"
       ]
@@ -295,7 +295,7 @@
       "id": "lichtman-2016-fuzzy-logic",
       "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -304,7 +304,7 @@
       "id": "lichtman-2016-swanson-cajal",
       "title": "From Cajal to Connectome and Beyond",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "methodology"
       ]
@@ -313,7 +313,7 @@
       "id": "lichtman-2020-mind-of-mouse",
       "title": "The Mind of a Mouse",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "ethics-society"
       ]
@@ -322,7 +322,7 @@
       "id": "lichtman-2023-odeco",
       "title": "Immersion fixation and staining of multicubic millimeter volumes for electron microscopy-based connectomics of human brain biopsies",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "methodology"
       ]
@@ -331,7 +331,7 @@
       "id": "loomba-2022-cortical-interneurons",
       "title": "Connectomic comparison of mouse and human cortex",
       "year": 2022,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "cell-types"
       ]
@@ -340,7 +340,7 @@
       "id": "maitin-shepard-2021-neuroglancer",
       "title": "Neuroglancer: WebGL-based viewer for volumetric data",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "data-infrastructure"
       ]
     },
@@ -348,7 +348,7 @@
       "id": "markowitz-2023-brain-connects",
       "title": "BRAIN Initiative connectomics program direction and strategy",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "ethics-society",
         "connectomics"
       ]
@@ -357,7 +357,7 @@
       "id": "matelsky-2021-dotmotif",
       "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "data-infrastructure"
       ]
@@ -366,7 +366,7 @@
       "id": "matelsky-2023-dotmotif",
       "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "data-infrastructure"
       ]
@@ -375,7 +375,7 @@
       "id": "morgan-2016-fuzzy-logic",
       "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -384,7 +384,7 @@
       "id": "morgan-2020-interneuron-thalamus",
       "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus",
       "year": 2020,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies",
         "neuroanatomy"
@@ -394,7 +394,7 @@
       "id": "murthy-2024-network-stats",
       "title": "Network Statistics of the Whole-Brain Connectome of Drosophila",
       "year": 2024,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "case-studies"
       ]
@@ -403,7 +403,7 @@
       "id": "nguyen-2022-cerebellar-connectivity",
       "title": "Structured cerebellar connectivity supports resilient pattern separation",
       "year": 2022,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -412,7 +412,7 @@
       "id": "pfister-2013-connectome-explorer",
       "title": "ConnectomeExplorer: query-guided visual analysis of large volumetric neuroscience data",
       "year": 2013,
-      "dimensions": [
+      "dims": [
         "data-infrastructure"
       ]
     },
@@ -420,7 +420,7 @@
       "id": "phelps-2021-gridtape",
       "title": "Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "case-studies"
       ]
@@ -429,7 +429,7 @@
       "id": "plaza-2017-mushroom-body",
       "title": "A connectome of a learning and memory center in the adult Drosophila brain",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -438,7 +438,7 @@
       "id": "plaza-2023-manc",
       "title": "A Connectome of the Male Drosophila Ventral Nerve Cord",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -447,7 +447,7 @@
       "id": "priebe-2015-errorful-graphs",
       "title": "Statistical Inference on Errorfully Observed Graphs",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -456,7 +456,7 @@
       "id": "priebe-2017-drosophila-spectral",
       "title": "Semiparametric spectral modeling of the Drosophila connectome",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology",
         "case-studies"
@@ -466,7 +466,7 @@
       "id": "priebe-2019-connectome-smoothing",
       "title": "Connectome Smoothing via Low-rank Approximations",
       "year": 2019,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -475,7 +475,7 @@
       "id": "reid-2025-wiring-rule",
       "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "network-analysis"
       ]
@@ -484,7 +484,7 @@
       "id": "rivlin-2025-comparative-mb",
       "title": "Comparative Connectomics Highlights Conserved Architectural Synaptic Motifs in the Drosophila Mushroom Body",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "case-studies"
       ]
@@ -493,7 +493,7 @@
       "id": "saalfeld-2012-elastic-registration",
       "title": "Elastic volume reconstruction from series of ultra-thin microscopy sections",
       "year": 2012,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml",
         "methodology"
       ]
@@ -502,7 +502,7 @@
       "id": "seung-2012-connectome-book",
       "title": "Connectome: How the Brain's Wiring Makes Us Who We Are",
       "year": 2012,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "ethics-society"
       ]
@@ -511,7 +511,7 @@
       "id": "shavit-2017-multicore-connectomics",
       "title": "A Multicore Path to Connectomics-on-Demand",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "data-infrastructure",
         "computer-vision-ml"
       ]
@@ -520,7 +520,7 @@
       "id": "shavit-2019-cross-classification",
       "title": "Cross-Classification Clustering: An Efficient Multi-Object Tracking Technique for 3-D Instance Segmentation in Connectomics",
       "year": 2019,
-      "dimensions": [
+      "dims": [
         "computer-vision-ml"
       ]
     },
@@ -528,7 +528,7 @@
       "id": "shavit-2025-smartem",
       "title": "SmartEM: machine-learning guided electron microscopy",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "computer-vision-ml"
       ]
@@ -537,7 +537,7 @@
       "id": "silversmith-2021-cloud-volume",
       "title": "CloudVolume: a Python library for accessing Neuroglancer precomputed volumetric data",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "data-infrastructure"
       ]
     },
@@ -545,7 +545,7 @@
       "id": "smith-2007-array-tomography",
       "title": "Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits",
       "year": 2007,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "neuroanatomy"
       ]
@@ -554,7 +554,7 @@
       "id": "smith-2015-conjugate-at",
       "title": "Mapping Synapses by Conjugate Light-Electron Array Tomography",
       "year": 2015,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "neuroanatomy"
       ]
@@ -563,7 +563,7 @@
       "id": "spirou-2014-calyx-development",
       "title": "Synaptic inputs compete during rapid formation of the calyx of Held",
       "year": 2014,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies",
         "image-acquisition"
@@ -573,7 +573,7 @@
       "id": "spirou-2023-bushy-cell-convergence",
       "title": "Two Synaptic Convergence Motifs Define Functional Roles for Inputs to Cochlear Nucleus Bushy Cells",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -582,7 +582,7 @@
       "id": "sporns-2011-human-connectome-complex",
       "title": "The Human Connectome: A Complex Network",
       "year": 2011,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "network-analysis"
       ]
@@ -591,7 +591,7 @@
       "id": "sporns-2018-graph-theory-methods",
       "title": "Graph Theory Methods: Applications in Brain Networks",
       "year": 2018,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -600,7 +600,7 @@
       "id": "tolias-2025-wiring-rule",
       "title": "Functional connectomics reveals general wiring rule in mouse visual cortex",
       "year": 2025,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "network-analysis"
       ]
@@ -609,7 +609,7 @@
       "id": "vogelstein-rj-2014-iarpa",
       "title": "IARPA MICrONS program management and connectomics strategy",
       "year": 2014,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "ethics-society"
       ]
@@ -618,7 +618,7 @@
       "id": "vogelstein-2013-signal-subgraphs",
       "title": "Graph Classification Using Signal-Subgraphs: Applications in Statistical Connectomics",
       "year": 2013,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -627,7 +627,7 @@
       "id": "vogelstein-2018-rdpg-survey",
       "title": "Statistical Inference on Random Dot Product Graphs: A Survey",
       "year": 2018,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -636,7 +636,7 @@
       "id": "vogelstein-2019-graspy",
       "title": "GraSPy: Graph Statistics in Python",
       "year": 2019,
-      "dimensions": [
+      "dims": [
         "data-infrastructure",
         "network-analysis"
       ]
@@ -645,7 +645,7 @@
       "id": "vogelstein-2021-statistical-connectomics",
       "title": "Statistical Connectomics",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "network-analysis",
         "methodology"
       ]
@@ -654,7 +654,7 @@
       "id": "wildenberg-2023-synapse-development",
       "title": "The Development of Synapses in Mouse and Macaque Primary Sensory Cortices",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "neuroanatomy",
         "case-studies"
       ]
@@ -663,7 +663,7 @@
       "id": "wilson-2013-olfactory-connectome",
       "title": "A comprehensive wiring diagram of the protocerebral bridge for visual information processing in the Drosophila brain",
       "year": 2013,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -672,7 +672,7 @@
       "id": "xu-2021-volume-em-atlas",
       "title": "An open-access volume electron microscopy atlas of whole cells and tissues",
       "year": 2021,
-      "dimensions": [
+      "dims": [
         "image-acquisition",
         "data-infrastructure"
       ]
@@ -681,7 +681,7 @@
       "id": "yendiki-2011-tracula",
       "title": "Automated probabilistic reconstruction of white-matter pathways in health and disease using an atlas of the underlying anatomy",
       "year": 2011,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "methodology"
       ]
@@ -690,7 +690,7 @@
       "id": "yim-2024-dauer-connectomics",
       "title": "Comparative connectomics of dauer reveals developmental plasticity",
       "year": 2024,
-      "dimensions": [
+      "dims": [
         "connectomics",
         "case-studies"
       ]
@@ -699,7 +699,7 @@
       "id": "zador-2016-mapseq",
       "title": "High-Throughput Mapping of Single-Neuron Projections by Sequencing of Barcoded RNA",
       "year": 2016,
-      "dimensions": [
+      "dims": [
         "methodology",
         "connectomics"
       ]
@@ -708,7 +708,7 @@
       "id": "zador-2017-synseq",
       "title": "Using high-throughput barcode sequencing to efficiently map connectomes",
       "year": 2017,
-      "dimensions": [
+      "dims": [
         "methodology",
         "connectomics"
       ]
@@ -717,7 +717,7 @@
       "id": "zador-2019-barseq",
       "title": "High-throughput mapping of long-range neuronal projection using in situ sequencing",
       "year": 2019,
-      "dimensions": [
+      "dims": [
         "methodology",
         "connectomics"
       ]
@@ -726,7 +726,7 @@
       "id": "zeng-2022-what-is-cell-type",
       "title": "What is a cell type and how to define it?",
       "year": 2022,
-      "dimensions": [
+      "dims": [
         "cell-types",
         "methodology"
       ]
@@ -735,7 +735,7 @@
       "id": "zeng-2023-whole-mouse-atlas",
       "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
       "year": 2023,
-      "dimensions": [
+      "dims": [
         "cell-types",
         "methodology"
       ]
@@ -1645,49 +1645,49 @@
   "bossdb_datasets": [
     {
       "id": "ishibashi-2022-rod-cone-gap",
-      "bossdb_project": "ishibashi2021",
-      "first_author": "Ishibashi M",
-      "last_author": "Massey SC"
+      "project": "ishibashi2021",
+      "first": "Ishibashi M",
+      "last": "Massey SC"
     },
     {
       "id": "kuan-2020-xray-nanotomography",
-      "bossdb_project": "kuan_phelps2020",
-      "first_author": "Kuan AT",
-      "last_author": "Lee WCA"
+      "project": "kuan_phelps2020",
+      "first": "Kuan AT",
+      "last": "Lee WCA"
     },
     {
       "id": "nguyen-2022-cerebellar-connectivity",
-      "bossdb_project": "nguyen_thomas2022",
-      "first_author": "Nguyen TM",
-      "last_author": "Lee WCA"
+      "project": "nguyen_thomas2022",
+      "first": "Nguyen TM",
+      "last": "Lee WCA"
     },
     {
       "id": "wildenberg-2023-synapse-development",
-      "bossdb_project": "wildenberg2023",
-      "first_author": "Wildenberg G",
-      "last_author": "Kasthuri N"
+      "project": "wildenberg2023",
+      "first": "Wildenberg G",
+      "last": "Kasthuri N"
     },
     {
       "id": "yim-2024-dauer-connectomics",
-      "bossdb_project": "yim_choe_bae2023",
-      "first_author": "Yim H",
-      "last_author": "Lee J"
+      "project": "yim_choe_bae2023",
+      "first": "Yim H",
+      "last": "Lee J"
     }
   ],
   "summary": {
     "total_papers": 137,
-    "new_unique_papers": 82,
-    "duplicates_with_existing_102": 55,
-    "experts_covered": 65,
-    "dimensions_covered": 11,
-    "combined_corpus_size": "102 existing + 82 new = 184 total",
-    "by_tier": {
+    "new_unique": 82,
+    "duplicates": 55,
+    "experts": 65,
+    "dimensions": 11,
+    "combined": "102 + 82 = 184",
+    "tiers": {
       "1": 16,
       "2": 28,
       "3": 6,
       "4": 6,
       "unset": 81
     },
-    "bossdb_datasets_with_papers": 5
+    "bossdb_linked": 5
   }
 }

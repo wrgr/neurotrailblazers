@@ -1,0 +1,31 @@
+{
+  "id": "yendiki-2024-brain-connects-linc",
+  "title": "BRAIN CONNECTS: LINC — Larva-to-adult INtegrated Connectomics",
+  "authors": [
+    "Yendiki A",
+    "Bhatt P",
+    "Fischl B",
+    "Ghosh SS"
+  ],
+  "year": 2024,
+  "journal": "NIH BRAIN Initiative",
+  "doi": null,
+  "url": "https://braininitiative.nih.gov/funded-awards/brain-connects-linc",
+  "abstract": "The LINC project under the BRAIN CONNECTS program aims to map a human brain at unprecedented resolution using a combination of diffusion MRI, polarization-sensitive optical coherence tomography, and serial sectioning to create a mesoscale connectome bridging macro- and micro-scale anatomy.",
+  "seed_expert": "Anastasia Yendiki",
+  "author_tier": 1,
+  "dimensions": [
+    "connectomics",
+    "image-acquisition"
+  ],
+  "tags": [
+    "BRAIN-CONNECTS",
+    "LINC",
+    "human-connectome",
+    "mesoscale",
+    "diffusion-MRI",
+    "polarized-light"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "This is a funded project, not a traditional paper. Author list and details are approximate. The LINC project is a major BRAIN Initiative effort led by Yendiki to produce a mesoscale human connectome."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "saalfeld-2016-bigwarp",
+  "title": "Robust registration of calcium images by learned contrast synthesis",
+  "authors": [
+    "Bogovic JA",
+    "Hanslovsky P",
+    "Wong A",
+    "Bhatt P",
+    "Saalfeld S"
+  ],
+  "year": 2016,
+  "journal": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+  "doi": "10.1109/ISBI.2016.7493463",
+  "url": "https://doi.org/10.1109/ISBI.2016.7493463",
+  "abstract": "BigWarp is an interactive tool for manual landmark-based deformable image registration using thin plate spline transformations, designed for large biological image volumes where automated registration fails. It enables landmark placement in synchronized BigDataViewer windows with real-time transformation preview.",
+  "seed_expert": "Stephan Saalfeld",
+  "author_tier": 2,
+  "dimensions": [
+    "segmentation-reconstruction",
+    "infrastructure"
+  ],
+  "tags": [
+    "BigWarp",
+    "registration",
+    "landmark-based",
+    "thin-plate-spline",
+    "BigDataViewer"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "BigWarp publication details need verification. The tool was released around 2016 but the primary reference may be Bogovic et al. 2016 in a different venue, or documented primarily via the Fiji wiki. The ISBI paper listed may actually be about a different topic; the BigWarp paper may be unpublished or in a methods collection."
+}

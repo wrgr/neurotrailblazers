@@ -1,0 +1,34 @@
+{
+  "id": "jefferis-2020-natverse",
+  "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical data",
+  "authors": [
+    "Bates AS",
+    "Manton JD",
+    "Jagannathan SR",
+    "Costa M",
+    "Schlegel P",
+    "Rohlfing T",
+    "Jefferis GSXE"
+  ],
+  "year": 2020,
+  "journal": "eLife",
+  "doi": "10.7554/eLife.53350",
+  "url": "https://elifesciences.org/articles/53350",
+  "abstract": "The natverse is an integrated collection of R packages for neuroanatomical data analysis, enabling bridging registrations across brain templates, morphological analysis of neurons, and comparison of connectivity across datasets and species.",
+  "seed_expert": "Gregory Jefferis",
+  "author_tier": 1,
+  "dimensions": [
+    "infrastructure",
+    "neuroanatomy"
+  ],
+  "tags": [
+    "natverse",
+    "software",
+    "neuroanatomy",
+    "registration",
+    "R-packages",
+    "toolbox"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "The natverse software suite is widely used for Drosophila connectomics analysis. Jefferis is senior author."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "jefferis-2007-pn-morphology",
+  "title": "Comprehensive maps of Drosophila higher olfactory centers: spatially segregated fruit and pheromone representation",
+  "authors": [
+    "Jefferis GSXE",
+    "Potter CJ",
+    "Chan AM",
+    "Marin EC",
+    "Rohlfing T",
+    "Maurer CR Jr",
+    "Luo L"
+  ],
+  "year": 2007,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2007.01.040",
+  "url": "https://doi.org/10.1016/j.cell.2007.01.040",
+  "abstract": "Systematic genetic labeling and registration of Drosophila olfactory projection neurons reveals comprehensive maps of their axonal projections in higher brain centers, showing spatially segregated representations of fruit odors versus pheromones in the lateral horn.",
+  "seed_expert": "Gregory Jefferis",
+  "author_tier": 1,
+  "dimensions": [
+    "neuroanatomy",
+    "cell-types"
+  ],
+  "tags": [
+    "drosophila",
+    "olfactory",
+    "projection-neurons",
+    "lateral-horn",
+    "morphology",
+    "registration"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Foundational Jefferis paper on PN morphology that motivated later connectomic studies of the fly olfactory system."
+}

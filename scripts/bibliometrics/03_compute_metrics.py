@@ -377,7 +377,7 @@ def main():
     # Rankings
     print("\n--- Paper Rankings ---")
     paper_rankings = rank_papers(corpus, paper_metrics)
-    save_json(paper_rankings[:200], "paper_rankings.json")
+    save_json(paper_rankings[:2000], "paper_rankings.json")
     print(f"  Top 5 by composite score:")
     for p in paper_rankings[:5]:
         print(f"    [{p['composite_score']:.3f}] {p['title'][:70]}...")

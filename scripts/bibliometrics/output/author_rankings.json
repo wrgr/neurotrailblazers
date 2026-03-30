@@ -2,1202 +2,1222 @@
   {
     "name": "H. Sebastian Seung",
     "weighted_degree": 1645,
-    "betweenness": 0.012271926460334412,
+    "betweenness": 0.012501784632266796,
     "eigenvector": 0.19238116663259366,
     "paper_count": 72,
     "recent_paper_count": 32,
     "total_pagerank": 0.027852805153020733,
-    "composite_score": 0.592829014672803
+    "composite_score": 0.6138631069842201
   },
   {
     "name": "Jeff W. Lichtman",
     "weighted_degree": 1079,
-    "betweenness": 0.01783490463503152,
+    "betweenness": 0.01228785873404519,
     "eigenvector": 0.014501496840435836,
     "paper_count": 99,
     "recent_paper_count": 39,
     "total_pagerank": 0.02964413866946965,
-    "composite_score": 0.5792537492412702
+    "composite_score": 0.5500498552220101
   },
   {
     "name": "Gregory S.X.E. Jefferis",
     "weighted_degree": 1692,
-    "betweenness": 0.0026949602823438156,
+    "betweenness": 0.006191764235409619,
     "eigenvector": 0.07877423504840497,
     "paper_count": 72,
     "recent_paper_count": 32,
     "total_pagerank": 0.020063388823094726,
-    "composite_score": 0.4570176325046838
-  },
-  {
-    "name": "Gerald M. Rubin",
-    "weighted_degree": 1536,
-    "betweenness": 0.005901929301627323,
-    "eigenvector": 0.04230558849157268,
-    "paper_count": 70,
-    "recent_paper_count": 29,
-    "total_pagerank": 0.017721897573550676,
-    "composite_score": 0.443209449726155
+    "composite_score": 0.49666374830382437
   },
   {
     "name": "David C. Van Essen",
     "weighted_degree": 691,
-    "betweenness": 0.02686207927608881,
+    "betweenness": 0.02459767474638696,
     "eigenvector": 0.0010506867034672284,
     "paper_count": 53,
     "recent_paper_count": 0,
     "total_pagerank": 0.016961074859565415,
-    "composite_score": 0.43872126555026714
-  },
-  {
-    "name": "Stephan Saalfeld",
-    "weighted_degree": 1136,
-    "betweenness": 0.002132428204372901,
-    "eigenvector": 0.04091136680777229,
-    "paper_count": 43,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.029591113249562925,
-    "composite_score": 0.4360600879126936
+    "composite_score": 0.45663480454754396
   },
   {
     "name": "Albert Cardona",
     "weighted_degree": 666,
-    "betweenness": 0.0036388279620912286,
+    "betweenness": 0.005361914981021117,
     "eigenvector": 0.01046100327941378,
     "paper_count": 84,
     "recent_paper_count": 28,
     "total_pagerank": 0.034431936864564076,
-    "composite_score": 0.4329973167758303
+    "composite_score": 0.4560542581158053
   },
   {
-    "name": "Sven Dorkenwald",
-    "weighted_degree": 1742,
-    "betweenness": 0.0002437648568554314,
-    "eigenvector": 0.2003508352682885,
-    "paper_count": 54,
-    "recent_paper_count": 37,
-    "total_pagerank": 0.012336551458062492,
-    "composite_score": 0.43173466846440167
+    "name": "Gerald M. Rubin",
+    "weighted_degree": 1536,
+    "betweenness": 0.005873402613059023,
+    "eigenvector": 0.04230558849157268,
+    "paper_count": 70,
+    "recent_paper_count": 29,
+    "total_pagerank": 0.017721897573550676,
+    "composite_score": 0.4519118923173834
   },
   {
-    "name": "Forrest Collman",
-    "weighted_degree": 1537,
-    "betweenness": 0.0048302743461206155,
-    "eigenvector": 0.1841303395778709,
-    "paper_count": 45,
-    "recent_paper_count": 30,
-    "total_pagerank": 0.008944832428276223,
-    "composite_score": 0.4186654974488133
-  },
-  {
-    "name": "Edward S. Boyden",
-    "weighted_degree": 851,
-    "betweenness": 0.020741786732352944,
-    "eigenvector": 0.0012378142452234445,
-    "paper_count": 54,
-    "recent_paper_count": 13,
-    "total_pagerank": 0.010786468228393985,
-    "composite_score": 0.4060169334114462
+    "name": "Stephan Saalfeld",
+    "weighted_degree": 1136,
+    "betweenness": 0.002190048310055529,
+    "eigenvector": 0.04091136680777229,
+    "paper_count": 43,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.029591113249562925,
+    "composite_score": 0.43989475183431404
   },
   {
     "name": "Winfried Denk",
     "weighted_degree": 189,
-    "betweenness": 0.0022538113085079333,
+    "betweenness": 0.005615577168117554,
     "eigenvector": 0.0037713797574823052,
     "paper_count": 33,
     "recent_paper_count": 1,
     "total_pagerank": 0.04663270453257856,
-    "composite_score": 0.39723257234551257
+    "composite_score": 0.4348340708492023
+  },
+  {
+    "name": "Forrest Collman",
+    "weighted_degree": 1537,
+    "betweenness": 0.005525081918603218,
+    "eigenvector": 0.1841303395778709,
+    "paper_count": 45,
+    "recent_paper_count": 30,
+    "total_pagerank": 0.008944832428276223,
+    "composite_score": 0.4330867838159266
+  },
+  {
+    "name": "Sven Dorkenwald",
+    "weighted_degree": 1742,
+    "betweenness": 0.00033034388397159924,
+    "eigenvector": 0.2003508352682885,
+    "paper_count": 54,
+    "recent_paper_count": 37,
+    "total_pagerank": 0.012336551458062492,
+    "composite_score": 0.4329860280277764
   },
   {
     "name": "Philipp Schlegel",
     "weighted_degree": 1716,
-    "betweenness": 0.0005005743026712319,
+    "betweenness": 0.001236079368652552,
     "eigenvector": 0.08214382578553715,
     "paper_count": 64,
     "recent_paper_count": 26,
     "total_pagerank": 0.015124554697845478,
-    "composite_score": 0.3961066250708234
+    "composite_score": 0.40434466826079063
   },
   {
-    "name": "Davi D. Bock",
-    "weighted_degree": 836,
-    "betweenness": 0.00954538079534084,
-    "eigenvector": 0.03132314781781866,
-    "paper_count": 62,
-    "recent_paper_count": 16,
-    "total_pagerank": 0.02009562845167538,
-    "composite_score": 0.3808929262781051
+    "name": "Edward S. Boyden",
+    "weighted_degree": 851,
+    "betweenness": 0.014293293631912068,
+    "eigenvector": 0.0012378142452234445,
+    "paper_count": 54,
+    "recent_paper_count": 13,
+    "total_pagerank": 0.010786468228393985,
+    "composite_score": 0.37208014665253086
   },
   {
     "name": "Casey M Schneider-Mizell",
     "weighted_degree": 1399,
-    "betweenness": 0.0004560066913925121,
+    "betweenness": 0.0005905597009271145,
     "eigenvector": 0.17311652165097655,
     "paper_count": 48,
     "recent_paper_count": 24,
     "total_pagerank": 0.014003616587125893,
-    "composite_score": 0.36966345714218285
+    "composite_score": 0.371725781968565
   },
   {
     "name": "R. Clay Reid",
     "weighted_degree": 1228,
-    "betweenness": 0.005398889154545554,
+    "betweenness": 0.005053684010067887,
     "eigenvector": 0.14393940421607812,
     "paper_count": 39,
     "recent_paper_count": 19,
     "total_pagerank": 0.010484408836027853,
-    "composite_score": 0.36375962185328103
-  },
-  {
-    "name": "Szi-chieh Yu",
-    "weighted_degree": 1240,
-    "betweenness": 0.0001568660750141306,
-    "eigenvector": 0.143009787431649,
-    "paper_count": 35,
-    "recent_paper_count": 28,
-    "total_pagerank": 0.007982545952581117,
-    "composite_score": 0.3636331060681599
+    "composite_score": 0.36847703456128833
   },
   {
     "name": "Katharina Eichler",
     "weighted_degree": 1006,
-    "betweenness": 0.0030953660935576868,
+    "betweenness": 0.0036046267929762147,
     "eigenvector": 0.05409495555369388,
     "paper_count": 39,
     "recent_paper_count": 30,
     "total_pagerank": 0.00824527812712765,
-    "composite_score": 0.35797394655468345
+    "composite_score": 0.36786605192080135
   },
   {
-    "name": "Nico Kemnitz",
-    "weighted_degree": 1414,
-    "betweenness": 0.00011895642159775099,
-    "eigenvector": 0.18882332465562068,
-    "paper_count": 39,
-    "recent_paper_count": 27,
-    "total_pagerank": 0.0070355218736767354,
-    "composite_score": 0.35463629229535354
+    "name": "Davi D. Bock",
+    "weighted_degree": 836,
+    "betweenness": 0.006819024941078227,
+    "eigenvector": 0.03132314781781866,
+    "paper_count": 62,
+    "recent_paper_count": 16,
+    "total_pagerank": 0.02009562845167538,
+    "composite_score": 0.36772709765971934
   },
   {
-    "name": "Marta Costa",
-    "weighted_degree": 1216,
-    "betweenness": 0.00014758931913989206,
-    "eigenvector": 0.06542993507792026,
-    "paper_count": 49,
-    "recent_paper_count": 27,
-    "total_pagerank": 0.012539609937730537,
-    "composite_score": 0.34520445505670216
-  },
-  {
-    "name": "Thomas Macrina",
-    "weighted_degree": 1402,
-    "betweenness": 6.72368760457884e-05,
-    "eigenvector": 0.18913404129958789,
-    "paper_count": 38,
-    "recent_paper_count": 24,
-    "total_pagerank": 0.006928627305750127,
-    "composite_score": 0.33986367021255537
-  },
-  {
-    "name": "Kisuk Lee",
-    "weighted_degree": 1412,
-    "betweenness": 0.00037839922883721883,
-    "eigenvector": 0.18589677161999538,
-    "paper_count": 43,
-    "recent_paper_count": 24,
-    "total_pagerank": 0.008138264583164955,
-    "composite_score": 0.33809120084618244
-  },
-  {
-    "name": "Moritz Helmstaedter",
-    "weighted_degree": 249,
-    "betweenness": 0.003949691812949749,
-    "eigenvector": 0.0024999622816758668,
-    "paper_count": 48,
-    "recent_paper_count": 12,
-    "total_pagerank": 0.029992889565804107,
-    "composite_score": 0.33782338555951374
-  },
-  {
-    "name": "Micha\u0142 Januszewski",
-    "weighted_degree": 1155,
-    "betweenness": 0.0028130046905758678,
-    "eigenvector": 0.04557135397317086,
-    "paper_count": 43,
-    "recent_paper_count": 22,
-    "total_pagerank": 0.010205229798939425,
-    "composite_score": 0.33583090855679576
-  },
-  {
-    "name": "Aljoscha Nern",
-    "weighted_degree": 996,
-    "betweenness": 0.0007203825581789226,
-    "eigenvector": 0.021433496562252956,
-    "paper_count": 54,
-    "recent_paper_count": 34,
-    "total_pagerank": 0.010664075535772245,
-    "composite_score": 0.3265401160584626
+    "name": "Szi-chieh Yu",
+    "weighted_degree": 1240,
+    "betweenness": 7.969362775616732e-05,
+    "eigenvector": 0.143009787431649,
+    "paper_count": 35,
+    "recent_paper_count": 28,
+    "total_pagerank": 0.007982545952581117,
+    "composite_score": 0.3630877654499828
   },
   {
     "name": "Jingpeng Wu",
     "weighted_degree": 1216,
-    "betweenness": 0.0021285484578119716,
+    "betweenness": 0.005083560078367982,
     "eigenvector": 0.17063399510252036,
     "paper_count": 38,
     "recent_paper_count": 22,
     "total_pagerank": 0.0069082629351839295,
-    "composite_score": 0.32563933173560616
+    "composite_score": 0.35891590354848196
   },
   {
-    "name": "Alexander S. Szalay",
-    "weighted_degree": 157,
-    "betweenness": 0.028935422557645037,
-    "eigenvector": 0.000736405767245807,
-    "paper_count": 4,
-    "recent_paper_count": 1,
-    "total_pagerank": 0.0005589921444414633,
-    "composite_score": 0.3222207527201465
+    "name": "Moritz Helmstaedter",
+    "weighted_degree": 249,
+    "betweenness": 0.005081675276055777,
+    "eigenvector": 0.0024999622816758668,
+    "paper_count": 48,
+    "recent_paper_count": 12,
+    "total_pagerank": 0.029992889565804107,
+    "composite_score": 0.35534625155808225
+  },
+  {
+    "name": "Nico Kemnitz",
+    "weighted_degree": 1414,
+    "betweenness": 0.00015642150183093665,
+    "eigenvector": 0.18882332465562068,
+    "paper_count": 39,
+    "recent_paper_count": 27,
+    "total_pagerank": 0.0070355218736767354,
+    "composite_score": 0.355198316924895
+  },
+  {
+    "name": "Marta Costa",
+    "weighted_degree": 1216,
+    "betweenness": 0.0003751331607311514,
+    "eigenvector": 0.06542993507792026,
+    "paper_count": 49,
+    "recent_paper_count": 27,
+    "total_pagerank": 0.012539609937730537,
+    "composite_score": 0.347741983054393
+  },
+  {
+    "name": "Kisuk Lee",
+    "weighted_degree": 1412,
+    "betweenness": 0.0005906473797048852,
+    "eigenvector": 0.18589677161999538,
+    "paper_count": 43,
+    "recent_paper_count": 24,
+    "total_pagerank": 0.008138264583164955,
+    "composite_score": 0.3408249397770665
+  },
+  {
+    "name": "Thomas Macrina",
+    "weighted_degree": 1402,
+    "betweenness": 0.000114887405642518,
+    "eigenvector": 0.18913404129958789,
+    "paper_count": 38,
+    "recent_paper_count": 24,
+    "total_pagerank": 0.006928627305750127,
+    "composite_score": 0.34045041367520634
   },
   {
     "name": "Wei-Chung Allen Lee",
     "weighted_degree": 784,
-    "betweenness": 0.0055492873502075366,
+    "betweenness": 0.006418970575084526,
     "eigenvector": 0.033252706443901,
     "paper_count": 51,
     "recent_paper_count": 27,
     "total_pagerank": 0.010442733384912613,
-    "composite_score": 0.32221682380524497
+    "composite_score": 0.3395109818391632
   },
   {
-    "name": "Derrick Brittain",
-    "weighted_degree": 1205,
-    "betweenness": 5.012577054480277e-05,
-    "eigenvector": 0.16556555616969074,
-    "paper_count": 30,
-    "recent_paper_count": 20,
-    "total_pagerank": 0.006448501513476892,
-    "composite_score": 0.32051212853356836
+    "name": "Micha\u0142 Januszewski",
+    "weighted_degree": 1155,
+    "betweenness": 0.00259346733276241,
+    "eigenvector": 0.04557135397317086,
+    "paper_count": 43,
+    "recent_paper_count": 22,
+    "total_pagerank": 0.010205229798939425,
+    "composite_score": 0.3378856142507106
   },
   {
     "name": "J. Alexander Bae",
     "weighted_degree": 1020,
-    "betweenness": 0.0008304008536163691,
+    "betweenness": 0.00173060036298899,
     "eigenvector": 0.1324949267904067,
     "paper_count": 31,
     "recent_paper_count": 24,
     "total_pagerank": 0.005493606753707623,
-    "composite_score": 0.3203521457141095
+    "composite_score": 0.33076660582173195
   },
   {
-    "name": "Viren Jain",
-    "weighted_degree": 476,
-    "betweenness": 0.0032401876673915074,
-    "eigenvector": 0.012283754803288194,
-    "paper_count": 40,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.019029311825288057,
-    "composite_score": 0.3154685996971172
+    "name": "Aljoscha Nern",
+    "weighted_degree": 996,
+    "betweenness": 0.0009928260025313018,
+    "eigenvector": 0.021433496562252956,
+    "paper_count": 54,
+    "recent_paper_count": 34,
+    "total_pagerank": 0.010664075535772245,
+    "composite_score": 0.33040671075648637
+  },
+  {
+    "name": "Derrick Brittain",
+    "weighted_degree": 1205,
+    "betweenness": 9.798666815652558e-05,
+    "eigenvector": 0.16556555616969074,
+    "paper_count": 30,
+    "recent_paper_count": 20,
+    "total_pagerank": 0.006448501513476892,
+    "composite_score": 0.32107493903639195
   },
   {
     "name": "Eric T. Trautman",
     "weighted_degree": 850,
-    "betweenness": 0.0030681673102862235,
+    "betweenness": 0.0034490816005872263,
     "eigenvector": 0.04051489924106415,
     "paper_count": 16,
     "recent_paper_count": 9,
     "total_pagerank": 0.009743917057701178,
-    "composite_score": 0.30973032719549065
-  },
-  {
-    "name": "Akhilesh Halageri",
-    "weighted_degree": 1012,
-    "betweenness": 5.729270064948538e-05,
-    "eigenvector": 0.1309082272549065,
-    "paper_count": 24,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.005121075554349275,
-    "composite_score": 0.3051193330653003
-  },
-  {
-    "name": "C. Shan Xu",
-    "weighted_degree": 1194,
-    "betweenness": 0.0027695641935798856,
-    "eigenvector": 0.04605565273569452,
-    "paper_count": 41,
-    "recent_paper_count": 15,
-    "total_pagerank": 0.009347940582560107,
-    "composite_score": 0.3043439962072072
-  },
-  {
-    "name": "Dan J. Stein",
-    "weighted_degree": 446,
-    "betweenness": 0.02077004826619426,
-    "eigenvector": 5.412407704273163e-08,
-    "paper_count": 6,
-    "recent_paper_count": 2,
-    "total_pagerank": 0.0005873603441159387,
-    "composite_score": 0.30173233329066995
-  },
-  {
-    "name": "Sergiy Popovych",
-    "weighted_degree": 1072,
-    "betweenness": 1.7421667471442403e-05,
-    "eigenvector": 0.15903050250630377,
-    "paper_count": 27,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.005787010142952815,
-    "composite_score": 0.29999496411824855
+    "composite_score": 0.31827653486618496
   },
   {
     "name": "Kevin L. Briggman",
     "weighted_degree": 197,
-    "betweenness": 0.00458828039462698,
+    "betweenness": 0.005426783074387837,
     "eigenvector": 0.003551674035044505,
     "paper_count": 34,
     "recent_paper_count": 3,
     "total_pagerank": 0.029034315852108843,
-    "composite_score": 0.2978231164624791
+    "composite_score": 0.31333614699002016
   },
   {
-    "name": "Richard Schalek",
-    "weighted_degree": 605,
-    "betweenness": 0.001161728992792746,
-    "eigenvector": 0.007038499339821692,
-    "paper_count": 43,
-    "recent_paper_count": 23,
-    "total_pagerank": 0.014563681907141378,
-    "composite_score": 0.29578155438490505
+    "name": "Viren Jain",
+    "weighted_degree": 476,
+    "betweenness": 0.0019982424140141336,
+    "eigenvector": 0.012283754803288194,
+    "paper_count": 40,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.019029311825288057,
+    "composite_score": 0.3077828691984293
+  },
+  {
+    "name": "Akhilesh Halageri",
+    "weighted_degree": 1012,
+    "betweenness": 7.992216483573993e-05,
+    "eigenvector": 0.1309082272549065,
+    "paper_count": 24,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.005121075554349275,
+    "composite_score": 0.30543662209487543
   },
   {
     "name": "Daniel R. Berger",
     "weighted_degree": 596,
-    "betweenness": 0.0024983795743345368,
+    "betweenness": 0.0030570444230107632,
     "eigenvector": 0.010438089712784836,
     "paper_count": 39,
     "recent_paper_count": 22,
     "total_pagerank": 0.012305208744545975,
-    "composite_score": 0.29518970934528677
+    "composite_score": 0.30467434838625257
   },
   {
-    "name": "Amy Sterling",
-    "weighted_degree": 681,
-    "betweenness": 0.0004931078777276907,
-    "eigenvector": 0.05579309251389446,
-    "paper_count": 23,
-    "recent_paper_count": 19,
-    "total_pagerank": 0.006242407302567038,
-    "composite_score": 0.2945159534206282
+    "name": "C. Shan Xu",
+    "weighted_degree": 1194,
+    "betweenness": 0.0022794371745271636,
+    "eigenvector": 0.04605565273569452,
+    "paper_count": 41,
+    "recent_paper_count": 15,
+    "total_pagerank": 0.009347940582560107,
+    "composite_score": 0.30358235963529506
   },
   {
-    "name": "Gwyneth M Card",
-    "weighted_degree": 991,
-    "betweenness": 0.00041406830549544965,
-    "eigenvector": 0.030454484469688656,
-    "paper_count": 32,
-    "recent_paper_count": 24,
-    "total_pagerank": 0.0034947650089785687,
-    "composite_score": 0.29358461490592963
-  },
-  {
-    "name": "Shin-ya Takemura",
-    "weighted_degree": 1100,
-    "betweenness": 0.0006716654673948698,
-    "eigenvector": 0.047416322822888546,
-    "paper_count": 30,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.01257149271257757,
-    "composite_score": 0.2931162905682644
+    "name": "Sergiy Popovych",
+    "weighted_degree": 1072,
+    "betweenness": 1.8100807229741675e-05,
+    "eigenvector": 0.15903050250630377,
+    "paper_count": 27,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.005787010142952815,
+    "composite_score": 0.3000284108282819
   },
   {
     "name": "Jan Funke",
     "weighted_degree": 903,
-    "betweenness": 0.0019443829554205347,
+    "betweenness": 0.0023678041189228688,
     "eigenvector": 0.04730881795866396,
     "paper_count": 38,
     "recent_paper_count": 22,
     "total_pagerank": 0.00742379634139063,
-    "composite_score": 0.29198176524372527
+    "composite_score": 0.29924775902757056
+  },
+  {
+    "name": "Richard Schalek",
+    "weighted_degree": 605,
+    "betweenness": 0.0009595471570233445,
+    "eigenvector": 0.007038499339821692,
+    "paper_count": 43,
+    "recent_paper_count": 23,
+    "total_pagerank": 0.014563681907141378,
+    "composite_score": 0.29549671554984797
+  },
+  {
+    "name": "Amy Sterling",
+    "weighted_degree": 681,
+    "betweenness": 0.0003990615366233191,
+    "eigenvector": 0.05579309251389446,
+    "paper_count": 23,
+    "recent_paper_count": 19,
+    "total_pagerank": 0.006242407302567038,
+    "composite_score": 0.2943114231013324
+  },
+  {
+    "name": "Shin-ya Takemura",
+    "weighted_degree": 1100,
+    "betweenness": 0.0006871053614948537,
+    "eigenvector": 0.047416322822888546,
+    "paper_count": 30,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.01257149271257757,
+    "composite_score": 0.29429658669262077
+  },
+  {
+    "name": "Gwyneth M Card",
+    "weighted_degree": 991,
+    "betweenness": 0.00038620466196959694,
+    "eigenvector": 0.030454484469688656,
+    "paper_count": 32,
+    "recent_paper_count": 24,
+    "total_pagerank": 0.0034947650089785687,
+    "composite_score": 0.2939323092418449
   },
   {
     "name": "Claire McKellar",
     "weighted_degree": 861,
-    "betweenness": 2.3544033646958822e-05,
+    "betweenness": 3.232540086007229e-05,
     "eigenvector": 0.05534818077150034,
     "paper_count": 25,
     "recent_paper_count": 18,
     "total_pagerank": 0.006507548123381235,
-    "composite_score": 0.291897469450041
+    "composite_score": 0.2920225918939777
   },
   {
     "name": "Han SJ Cheong",
     "weighted_degree": 798,
-    "betweenness": 1.0622445460629613e-05,
+    "betweenness": 8.355314970982815e-06,
     "eigenvector": 0.02775411188665719,
     "paper_count": 19,
     "recent_paper_count": 18,
     "total_pagerank": 0.0013464581798634068,
-    "composite_score": 0.29129008125821854
-  },
-  {
-    "name": "John Bogovic",
-    "weighted_degree": 1100,
-    "betweenness": 0.0004139541662147932,
-    "eigenvector": 0.040430454597866254,
-    "paper_count": 22,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.008873809896916444,
-    "composite_score": 0.2873792889255662
+    "composite_score": 0.29128322384668004
   },
   {
     "name": "Douglas R. Green",
     "weighted_degree": 289,
-    "betweenness": 0.0007445571958501771,
+    "betweenness": 0.0007010708751085103,
     "eigenvector": 1.537082620682738e-09,
     "paper_count": 8,
     "recent_paper_count": 3,
     "total_pagerank": 0.023006303619800238,
-    "composite_score": 0.28728611559360084
+    "composite_score": 0.2879785717183794
   },
   {
-    "name": "Edward T. Bullmore",
-    "weighted_degree": 479,
-    "betweenness": 0.013924415064165623,
-    "eigenvector": 1.592101801164587e-05,
-    "paper_count": 72,
-    "recent_paper_count": 3,
-    "total_pagerank": 0.013744291541750064,
-    "composite_score": 0.28679081231111003
-  },
-  {
-    "name": "Shang Mu",
-    "weighted_degree": 982,
-    "betweenness": 3.28659968410047e-05,
-    "eigenvector": 0.14383043868240628,
-    "paper_count": 24,
-    "recent_paper_count": 16,
-    "total_pagerank": 0.0053267489991742495,
-    "composite_score": 0.28634097879249487
+    "name": "Graham Knott",
+    "weighted_degree": 179,
+    "betweenness": 0.016824897682876986,
+    "eigenvector": 0.0009554115572131754,
+    "paper_count": 35,
+    "recent_paper_count": 4,
+    "total_pagerank": 0.009782627219094467,
+    "composite_score": 0.2878322681077465
   },
   {
     "name": "Patricia K. Rivlin",
     "weighted_degree": 1112,
-    "betweenness": 0.00015248637617371502,
+    "betweenness": 0.0002528258032425427,
     "eigenvector": 0.05972774548387178,
     "paper_count": 22,
     "recent_paper_count": 10,
     "total_pagerank": 0.008817296832948298,
-    "composite_score": 0.2860737958388836
-  },
-  {
-    "name": "Chris Xu",
-    "weighted_degree": 172,
-    "betweenness": 0.007300201500809116,
-    "eigenvector": 0.009139839655060425,
-    "paper_count": 3,
-    "recent_paper_count": 3,
-    "total_pagerank": 0.000302080235584896,
-    "composite_score": 0.28508789208440777
-  },
-  {
-    "name": "Stuart Berg",
-    "weighted_degree": 1047,
-    "betweenness": 8.09659573217791e-05,
-    "eigenvector": 0.04631877829124284,
-    "paper_count": 23,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.00557467396905282,
-    "composite_score": 0.28448583419414086
-  },
-  {
-    "name": "Leila Elabbady",
-    "weighted_degree": 902,
-    "betweenness": 1.7795701943054515e-06,
-    "eigenvector": 0.12946219669979556,
-    "paper_count": 22,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.00227643217472771,
-    "composite_score": 0.28429654201842947
+    "composite_score": 0.2873259351619222
   },
   {
     "name": "Feng Li",
     "weighted_degree": 1075,
-    "betweenness": 0.0013169274399614718,
+    "betweenness": 0.0014252274842038834,
     "eigenvector": 0.04530815470922782,
     "paper_count": 36,
     "recent_paper_count": 9,
     "total_pagerank": 0.013214353519375777,
-    "composite_score": 0.28397934501449745
+    "composite_score": 0.2870865736186127
   },
   {
-    "name": "Eric Mitchell",
-    "weighted_degree": 730,
-    "betweenness": 1.1201329667783333e-06,
-    "eigenvector": 0.10742304665161222,
-    "paper_count": 17,
+    "name": "Shang Mu",
+    "weighted_degree": 982,
+    "betweenness": 4.3067341649506964e-05,
+    "eigenvector": 0.14383043868240628,
+    "paper_count": 24,
+    "recent_paper_count": 16,
+    "total_pagerank": 0.0053267489991742495,
+    "composite_score": 0.28649473651972
+  },
+  {
+    "name": "John Bogovic",
+    "weighted_degree": 1100,
+    "betweenness": 0.00026117615754960336,
+    "eigenvector": 0.040430454597866254,
+    "paper_count": 22,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.008873809896916444,
+    "composite_score": 0.2864572344214048
+  },
+  {
+    "name": "Stuart Berg",
+    "weighted_degree": 1047,
+    "betweenness": 5.468651105777496e-05,
+    "eigenvector": 0.04631877829124284,
+    "paper_count": 23,
     "recent_paper_count": 14,
-    "total_pagerank": 0.004357985471599718,
-    "composite_score": 0.28123596601724876
+    "total_pagerank": 0.00557467396905282,
+    "composite_score": 0.28434210382435043
   },
   {
-    "name": "Barak Nehoran",
-    "weighted_degree": 730,
-    "betweenness": 1.1201329667783333e-06,
-    "eigenvector": 0.10742304665161222,
-    "paper_count": 17,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.004357985471599718,
-    "composite_score": 0.28123596601724876
-  },
-  {
-    "name": "Hanspeter Pfister",
-    "weighted_degree": 785,
-    "betweenness": 0.001993770807148342,
-    "eigenvector": 0.021305752859802067,
-    "paper_count": 58,
-    "recent_paper_count": 30,
-    "total_pagerank": 0.009198598204767825,
-    "composite_score": 0.27984033683069354
-  },
-  {
-    "name": "Arie Matsliah",
-    "weighted_degree": 414,
-    "betweenness": 0.0005450072479116212,
-    "eigenvector": 0.03221650835398413,
-    "paper_count": 14,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.0036179947140087465,
-    "composite_score": 0.27939511937372596
+    "name": "Leila Elabbady",
+    "weighted_degree": 902,
+    "betweenness": 1.2942745018084675e-06,
+    "eigenvector": 0.12946219669979556,
+    "paper_count": 22,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.00227643217472771,
+    "composite_score": 0.284294321097631
   },
   {
     "name": "JoAnn Buchanan",
     "weighted_degree": 974,
-    "betweenness": 0.0005540641203364674,
+    "betweenness": 0.0008859289076351373,
     "eigenvector": 0.14125936609005732,
     "paper_count": 27,
     "recent_paper_count": 18,
     "total_pagerank": 0.003888107191657509,
-    "composite_score": 0.27912793746711895
-  },
-  {
-    "name": "Mala Murthy",
-    "weighted_degree": 679,
-    "betweenness": 0.00022955413809131354,
-    "eigenvector": 0.0569001396148818,
-    "paper_count": 33,
-    "recent_paper_count": 25,
-    "total_pagerank": 0.006345655438968095,
-    "composite_score": 0.2790819318585377
-  },
-  {
-    "name": "Constantin Pape",
-    "weighted_degree": 451,
-    "betweenness": 0.010935468547623098,
-    "eigenvector": 0.0007467863009894973,
-    "paper_count": 25,
-    "recent_paper_count": 15,
-    "total_pagerank": 0.0016960716763374985,
-    "composite_score": 0.2789910386955124
-  },
-  {
-    "name": "Reed George",
-    "weighted_degree": 914,
-    "betweenness": 2.420228869557518e-06,
-    "eigenvector": 0.03267405515746775,
-    "paper_count": 11,
-    "recent_paper_count": 9,
-    "total_pagerank": 0.001259735392471915,
-    "composite_score": 0.2780490247718921
-  },
-  {
-    "name": "Russel Torres",
-    "weighted_degree": 1054,
-    "betweenness": 0.00026502398013540526,
-    "eigenvector": 0.14421410216526268,
-    "paper_count": 29,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.0038084222837055292,
-    "composite_score": 0.27602202178681656
-  },
-  {
-    "name": "Nuno Ma\u00e7arico da Costa",
-    "weighted_degree": 1029,
-    "betweenness": 0.00044233359809775437,
-    "eigenvector": 0.1393734222700258,
-    "paper_count": 32,
-    "recent_paper_count": 20,
-    "total_pagerank": 0.003700556421259187,
-    "composite_score": 0.2747361860692084
-  },
-  {
-    "name": "Alexander Shakeel Bates",
-    "weighted_degree": 942,
-    "betweenness": 0.0005022666106252595,
-    "eigenvector": 0.05171625161562312,
-    "paper_count": 38,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.011764843427212289,
-    "composite_score": 0.27447589572579484
+    "composite_score": 0.28334505639482466
   },
   {
     "name": "Daniel J. Bumbarger",
     "weighted_degree": 918,
-    "betweenness": 0.001303581110175171,
+    "betweenness": 0.0019675590478371433,
     "eigenvector": 0.1322750758725644,
     "paper_count": 24,
     "recent_paper_count": 16,
     "total_pagerank": 0.003181017469032034,
-    "composite_score": 0.27386728446300995
+    "composite_score": 0.2826018450509272
   },
   {
-    "name": "Omotara Ogundeyi",
-    "weighted_degree": 1096,
-    "betweenness": 2.3969590495268203e-06,
-    "eigenvector": 0.04066176998885231,
-    "paper_count": 16,
-    "recent_paper_count": 7,
-    "total_pagerank": 0.008038241336420348,
-    "composite_score": 0.2736838024411678
+    "name": "Dan J. Stein",
+    "weighted_degree": 446,
+    "betweenness": 0.015688067950946315,
+    "eigenvector": 5.412407704273163e-08,
+    "paper_count": 6,
+    "recent_paper_count": 2,
+    "total_pagerank": 0.0005873603441159387,
+    "composite_score": 0.28172724458431886
   },
   {
-    "name": "Ran Lu",
-    "weighted_degree": 403,
-    "betweenness": 0.00071030349838189,
-    "eigenvector": 0.054834548354978634,
-    "paper_count": 9,
+    "name": "Eric Mitchell",
+    "weighted_degree": 730,
+    "betweenness": 6.499829953708939e-07,
+    "eigenvector": 0.10742304665161222,
+    "paper_count": 17,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.004357985471599718,
+    "composite_score": 0.2812328942904839
+  },
+  {
+    "name": "Barak Nehoran",
+    "weighted_degree": 730,
+    "betweenness": 6.499829953708939e-07,
+    "eigenvector": 0.10742304665161222,
+    "paper_count": 17,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.004357985471599718,
+    "composite_score": 0.2812328942904839
+  },
+  {
+    "name": "Hanspeter Pfister",
+    "weighted_degree": 785,
+    "betweenness": 0.001810232491285487,
+    "eigenvector": 0.021305752859802067,
+    "paper_count": 58,
+    "recent_paper_count": 30,
+    "total_pagerank": 0.009198598204767825,
+    "composite_score": 0.2810127090955943
+  },
+  {
+    "name": "Alexander Shakeel Bates",
+    "weighted_degree": 942,
+    "betweenness": 0.0010541885467292493,
+    "eigenvector": 0.05171625161562312,
+    "paper_count": 38,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.011764843427212289,
+    "composite_score": 0.28085065879250154
+  },
+  {
+    "name": "Mala Murthy",
+    "weighted_degree": 679,
+    "betweenness": 0.00022791985619321364,
+    "eigenvector": 0.0569001396148818,
+    "paper_count": 33,
+    "recent_paper_count": 25,
+    "total_pagerank": 0.006345655438968095,
+    "composite_score": 0.2794150780362923
+  },
+  {
+    "name": "Arie Matsliah",
+    "weighted_degree": 414,
+    "betweenness": 0.0003432891954508419,
+    "eigenvector": 0.03221650835398413,
+    "paper_count": 14,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.0036179947140087465,
+    "composite_score": 0.27817533650983006
+  },
+  {
+    "name": "Reed George",
+    "weighted_degree": 914,
+    "betweenness": 4.823610215640749e-06,
+    "eigenvector": 0.03267405515746775,
+    "paper_count": 11,
     "recent_paper_count": 9,
-    "total_pagerank": 0.002715818223925628,
-    "composite_score": 0.2727890995518165
+    "total_pagerank": 0.001259735392471915,
+    "composite_score": 0.2780771392289937
+  },
+  {
+    "name": "Nuno Ma\u00e7arico da Costa",
+    "weighted_degree": 1029,
+    "betweenness": 0.0006610224228626398,
+    "eigenvector": 0.1393734222700258,
+    "paper_count": 32,
+    "recent_paper_count": 20,
+    "total_pagerank": 0.003700556421259187,
+    "composite_score": 0.2776327977175508
+  },
+  {
+    "name": "Russel Torres",
+    "weighted_degree": 1054,
+    "betweenness": 0.00015850968790079667,
+    "eigenvector": 0.14421410216526268,
+    "paper_count": 29,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.0038084222837055292,
+    "composite_score": 0.27534325647287433
   },
   {
     "name": "William Silversmith",
     "weighted_degree": 1089,
-    "betweenness": 0.00039741969829794175,
+    "betweenness": 0.000592661525255565,
     "eigenvector": 0.15833950048104775,
     "paper_count": 32,
     "recent_paper_count": 18,
     "total_pagerank": 0.004146702939352952,
-    "composite_score": 0.27208530272885423
+    "composite_score": 0.27467517704554767
   },
   {
-    "name": "Zhiyuan Lu",
-    "weighted_degree": 1022,
-    "betweenness": 0.0005953430706824174,
-    "eigenvector": 0.04468063703508143,
-    "paper_count": 29,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.012314596207697138,
-    "composite_score": 0.2700792667157819
-  },
-  {
-    "name": "Stephan Preibisch",
-    "weighted_degree": 619,
-    "betweenness": 0.0006282363246187622,
-    "eigenvector": 0.020363601919511986,
-    "paper_count": 19,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.011697464221968113,
-    "composite_score": 0.2695536887075434
-  },
-  {
-    "name": "Victor Aboyans",
-    "weighted_degree": 676,
-    "betweenness": 0.02111619473896779,
-    "eigenvector": 2.5991165045893624e-10,
-    "paper_count": 8,
-    "recent_paper_count": 0,
-    "total_pagerank": 0.0010740752871377897,
-    "composite_score": 0.2681157976009345
-  },
-  {
-    "name": "Julie Kovalyak",
-    "weighted_degree": 921,
-    "betweenness": 9.973858572303016e-05,
-    "eigenvector": 0.04198251220674129,
-    "paper_count": 12,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.003281668143405522,
-    "composite_score": 0.2645660318953833
-  },
-  {
-    "name": "Christopher R Dunne",
-    "weighted_degree": 407,
-    "betweenness": 2.0147737959387383e-06,
-    "eigenvector": 0.020970444923183347,
-    "paper_count": 9,
-    "recent_paper_count": 9,
-    "total_pagerank": 0.002331902191680407,
-    "composite_score": 0.2642473101655938
-  },
-  {
-    "name": "Siqi Fang",
-    "weighted_degree": 446,
-    "betweenness": 9.404362041149676e-07,
-    "eigenvector": 0.023698627805703573,
-    "paper_count": 10,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.0016884494020509913,
-    "composite_score": 0.26388622933110817
-  },
-  {
-    "name": "Volker Hartenstein",
-    "weighted_degree": 221,
-    "betweenness": 0.0006431786215903523,
-    "eigenvector": 0.006361696534991783,
-    "paper_count": 18,
+    "name": "Omotara Ogundeyi",
+    "weighted_degree": 1096,
+    "betweenness": 4.626879139888483e-06,
+    "eigenvector": 0.04066176998885231,
+    "paper_count": 16,
     "recent_paper_count": 7,
-    "total_pagerank": 0.020651718431547894,
-    "composite_score": 0.2637086213515625
-  },
-  {
-    "name": "Wyatt Korff",
-    "weighted_degree": 1036,
-    "betweenness": 0.0002880188672455898,
-    "eigenvector": 0.028101499930207354,
-    "paper_count": 22,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.001975107364926308,
-    "composite_score": 0.2635290263152963
-  },
-  {
-    "name": "Jay Gager",
-    "weighted_degree": 534,
-    "betweenness": 0.00015282103687997637,
-    "eigenvector": 0.05302253829402801,
-    "paper_count": 13,
-    "recent_paper_count": 11,
-    "total_pagerank": 0.004136273367369173,
-    "composite_score": 0.262904615876394
-  },
-  {
-    "name": "Harald F. Hess",
-    "weighted_degree": 783,
-    "betweenness": 0.0024179679508684647,
-    "eigenvector": 0.028245763610673647,
-    "paper_count": 38,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.010399875955335062,
-    "composite_score": 0.2625278283439811
-  },
-  {
-    "name": "Paul Brooks",
-    "weighted_degree": 438,
-    "betweenness": 0.00011624266619566117,
-    "eigenvector": 0.02297284797154963,
-    "paper_count": 8,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.0014667964432969994,
-    "composite_score": 0.26230034002725144
-  },
-  {
-    "name": "Marc Takeno",
-    "weighted_degree": 982,
-    "betweenness": 0.0002623948345570438,
-    "eigenvector": 0.13885780388871116,
-    "paper_count": 26,
-    "recent_paper_count": 16,
-    "total_pagerank": 0.0031173876695070805,
-    "composite_score": 0.26148540353397154
-  },
-  {
-    "name": "\u00c1gnes L. Bodor",
-    "weighted_degree": 872,
-    "betweenness": 1.0129895676712058e-05,
-    "eigenvector": 0.13242017324531818,
-    "paper_count": 23,
-    "recent_paper_count": 16,
-    "total_pagerank": 0.002716899658777682,
-    "composite_score": 0.2597243545488068
-  },
-  {
-    "name": "Yuelong Wu",
-    "weighted_degree": 359,
-    "betweenness": 0.0004432172742063791,
-    "eigenvector": 0.003726834204945103,
-    "paper_count": 23,
-    "recent_paper_count": 20,
-    "total_pagerank": 0.005422071789302415,
-    "composite_score": 0.2596545560023387
+    "total_pagerank": 0.008038241336420348,
+    "composite_score": 0.27371011845931814
   },
   {
     "name": "Yoshinori Aso",
     "weighted_degree": 806,
-    "betweenness": 0.0017067951026839324,
+    "betweenness": 0.0028697617697710227,
     "eigenvector": 0.015461595546376258,
     "paper_count": 35,
     "recent_paper_count": 17,
     "total_pagerank": 0.007244289446647441,
-    "composite_score": 0.2587984997164313
+    "composite_score": 0.27321891357013084
   },
   {
-    "name": "Kai Li",
-    "weighted_degree": 559,
-    "betweenness": 1.1534079625456469e-06,
-    "eigenvector": 0.08545441302727219,
-    "paper_count": 13,
-    "recent_paper_count": 12,
-    "total_pagerank": 0.0012564571583840137,
-    "composite_score": 0.25823474613314473
-  },
-  {
-    "name": "Louis K. Scheffer",
-    "weighted_degree": 923,
-    "betweenness": 4.015444392999887e-05,
-    "eigenvector": 0.04169653807896988,
-    "paper_count": 33,
+    "name": "Ran Lu",
+    "weighted_degree": 403,
+    "betweenness": 0.0006269721521525429,
+    "eigenvector": 0.054834548354978634,
+    "paper_count": 9,
     "recent_paper_count": 9,
-    "total_pagerank": 0.012891084960173438,
-    "composite_score": 0.2576160859154823
+    "total_pagerank": 0.002715818223925628,
+    "composite_score": 0.2730243982069151
   },
   {
-    "name": "Marina Gkantia",
-    "weighted_degree": 487,
-    "betweenness": 2.14020709296301e-05,
-    "eigenvector": 0.024656108856153162,
-    "paper_count": 14,
-    "recent_paper_count": 13,
-    "total_pagerank": 0.0019411112744723024,
-    "composite_score": 0.2563808793111674
-  },
-  {
-    "name": "Andrew S Champion",
-    "weighted_degree": 624,
-    "betweenness": 0.0009385876394177331,
-    "eigenvector": 0.028182224731163552,
-    "paper_count": 24,
-    "recent_paper_count": 17,
-    "total_pagerank": 0.0046524906124730744,
-    "composite_score": 0.25633688070310434
-  },
-  {
-    "name": "Eric Perlman",
-    "weighted_degree": 423,
-    "betweenness": 0.0044038749212706755,
-    "eigenvector": 0.024647298859729595,
-    "paper_count": 16,
+    "name": "Zhiyuan Lu",
+    "weighted_degree": 1022,
+    "betweenness": 0.0005988070007069374,
+    "eigenvector": 0.04468063703508143,
+    "paper_count": 29,
     "recent_paper_count": 8,
-    "total_pagerank": 0.009018096414500841,
-    "composite_score": 0.2542990166797909
-  },
-  {
-    "name": "Billy J Morris",
-    "weighted_degree": 413,
-    "betweenness": 1.4812033883278482e-05,
-    "eigenvector": 0.021147359005111704,
-    "paper_count": 11,
-    "recent_paper_count": 11,
-    "total_pagerank": 0.0008810162612607954,
-    "composite_score": 0.2541571714897272
+    "total_pagerank": 0.012314596207697138,
+    "composite_score": 0.2710215570462595
   },
   {
     "name": "Albert-\u0139aszl\u00f3 Barab\u00e1si",
     "weighted_degree": 123,
-    "betweenness": 0.005926907448862694,
+    "betweenness": 0.006691984326817956,
     "eigenvector": 0.00034091860303395844,
     "paper_count": 25,
     "recent_paper_count": 4,
     "total_pagerank": 0.02086065266462837,
-    "composite_score": 0.2538985989903537
+    "composite_score": 0.2707049384146274
   },
   {
-    "name": "Satoko Takemura",
-    "weighted_degree": 976,
-    "betweenness": 6.067875674664486e-05,
-    "eigenvector": 0.04277587286574631,
-    "paper_count": 15,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.008099317079906163,
-    "composite_score": 0.25336848721629585
+    "name": "Joshua T Vogelstein",
+    "weighted_degree": 293,
+    "betweenness": 0.013351501212439292,
+    "eigenvector": 0.0024211605833709122,
+    "paper_count": 29,
+    "recent_paper_count": 9,
+    "total_pagerank": 0.005002498985543054,
+    "composite_score": 0.2689533417917193
   },
   {
-    "name": "Jody Clements",
-    "weighted_degree": 922,
-    "betweenness": 9.250144170289152e-05,
-    "eigenvector": 0.04041623807093288,
+    "name": "Stephan Preibisch",
+    "weighted_degree": 619,
+    "betweenness": 0.0004722945646702083,
+    "eigenvector": 0.020363601919511986,
+    "paper_count": 19,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.011697464221968113,
+    "composite_score": 0.26892596662861
+  },
+  {
+    "name": "Volker Hartenstein",
+    "weighted_degree": 221,
+    "betweenness": 0.0009216873185457716,
+    "eigenvector": 0.006361696534991783,
     "paper_count": 18,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.004546586538489154,
-    "composite_score": 0.251889888993465
-  },
-  {
-    "name": "Shanka Subhra Mondal",
-    "weighted_degree": 535,
-    "betweenness": 3.5174506128667686e-07,
-    "eigenvector": 0.08152117446357213,
-    "paper_count": 11,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.0010861496394539163,
-    "composite_score": 0.25139692688207893
-  },
-  {
-    "name": "Jakob Troidl",
-    "weighted_degree": 264,
-    "betweenness": 0.00017384871583053734,
-    "eigenvector": 0.0165210283771492,
-    "paper_count": 14,
-    "recent_paper_count": 14,
-    "total_pagerank": 0.00252369020832814,
-    "composite_score": 0.25075349050230755
-  },
-  {
-    "name": "Gayathri Mahalingam",
-    "weighted_degree": 687,
-    "betweenness": 0.0007582800496984799,
-    "eigenvector": 0.10045914004576748,
-    "paper_count": 16,
-    "recent_paper_count": 12,
-    "total_pagerank": 0.0020064639310981344,
-    "composite_score": 0.2504857815113819
-  },
-  {
-    "name": "Nicholas L. Turner",
-    "weighted_degree": 938,
-    "betweenness": 0.00048453455593984554,
-    "eigenvector": 0.14169956576243423,
-    "paper_count": 26,
-    "recent_paper_count": 15,
-    "total_pagerank": 0.0030795209519489273,
-    "composite_score": 0.25037649531999917
-  },
-  {
-    "name": "Robert Svirskas",
-    "weighted_degree": 861,
-    "betweenness": 9.577115970956438e-05,
-    "eigenvector": 0.02548557307223529,
-    "paper_count": 15,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.005822007329375973,
-    "composite_score": 0.25004287286752763
-  },
-  {
-    "name": "Karen L Hibbard",
-    "weighted_degree": 446,
-    "betweenness": 9.824465474805843e-05,
-    "eigenvector": 0.006422086420508728,
-    "paper_count": 17,
-    "recent_paper_count": 16,
-    "total_pagerank": 0.0012564022837043471,
-    "composite_score": 0.24971951169551532
-  },
-  {
-    "name": "Gabriella R Sterne",
-    "weighted_degree": 549,
-    "betweenness": 1.0677543243748127e-05,
-    "eigenvector": 0.010591259503573886,
-    "paper_count": 22,
-    "recent_paper_count": 19,
-    "total_pagerank": 0.0017975318475430717,
-    "composite_score": 0.24934183208657035
-  },
-  {
-    "name": "Samantha Finley-May",
-    "weighted_degree": 894,
-    "betweenness": 5.376939384765428e-05,
-    "eigenvector": 0.04095004361526786,
-    "paper_count": 12,
     "recent_paper_count": 7,
-    "total_pagerank": 0.003830130883940044,
-    "composite_score": 0.24851877583333026
+    "total_pagerank": 0.020651718431547894,
+    "composite_score": 0.26751923014217915
   },
   {
-    "name": "Ran Lu",
-    "weighted_degree": 987,
-    "betweenness": 0.00036710373016986963,
-    "eigenvector": 0.13406296821283434,
-    "paper_count": 30,
-    "recent_paper_count": 15,
-    "total_pagerank": 0.00409386603582589,
-    "composite_score": 0.24721613214977656
+    "name": "Chris Xu",
+    "weighted_degree": 172,
+    "betweenness": 0.004193656055068559,
+    "eigenvector": 0.009139839655060425,
+    "paper_count": 3,
+    "recent_paper_count": 3,
+    "total_pagerank": 0.000302080235584896,
+    "composite_score": 0.26463715317261427
   },
   {
-    "name": "Zhen Jia",
-    "weighted_degree": 540,
-    "betweenness": 1.4870992439261202e-05,
-    "eigenvector": 0.07928697968899479,
-    "paper_count": 13,
-    "recent_paper_count": 10,
-    "total_pagerank": 0.003996278479281125,
-    "composite_score": 0.24596625892365093
+    "name": "Alexander S. Szalay",
+    "weighted_degree": 157,
+    "betweenness": 0.018919072208599244,
+    "eigenvector": 0.000736405767245807,
+    "paper_count": 4,
+    "recent_paper_count": 1,
+    "total_pagerank": 0.0005589921444414633,
+    "composite_score": 0.2645059219857717
   },
   {
-    "name": "Krzysztof Kruk",
-    "weighted_degree": 214,
-    "betweenness": 3.3790547610443423e-06,
-    "eigenvector": 0.017931575633721143,
-    "paper_count": 5,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.0026196887963178266,
-    "composite_score": 0.24426063035574186
+    "name": "Julie Kovalyak",
+    "weighted_degree": 921,
+    "betweenness": 6.05610060537501e-05,
+    "eigenvector": 0.04198251220674129,
+    "paper_count": 12,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.003281668143405522,
+    "composite_score": 0.26431981314272046
   },
   {
-    "name": "Tomke St\u00fcrner",
-    "weighted_degree": 489,
-    "betweenness": 9.902096733770321e-06,
-    "eigenvector": 0.02493406424179867,
-    "paper_count": 14,
-    "recent_paper_count": 12,
-    "total_pagerank": 0.0022034757550089246,
-    "composite_score": 0.24419459387344783
+    "name": "Wyatt Korff",
+    "weighted_degree": 1036,
+    "betweenness": 0.0003162098289897119,
+    "eigenvector": 0.028101499930207354,
+    "paper_count": 22,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.001975107364926308,
+    "composite_score": 0.264254382017035
   },
   {
-    "name": "John C Tuthill",
-    "weighted_degree": 443,
-    "betweenness": 0.0006560558081304661,
-    "eigenvector": 0.024230689960328962,
-    "paper_count": 26,
-    "recent_paper_count": 22,
-    "total_pagerank": 0.002369863480883898,
-    "composite_score": 0.24354704484841982
+    "name": "Christopher R Dunne",
+    "weighted_degree": 407,
+    "betweenness": 1.0089834702238955e-06,
+    "eigenvector": 0.020970444923183347,
+    "paper_count": 9,
+    "recent_paper_count": 9,
+    "total_pagerank": 0.002331902191680407,
+    "composite_score": 0.26424015752917174
   },
   {
     "name": "Richard D. Fetter",
     "weighted_degree": 422,
-    "betweenness": 0.0027623779433759025,
+    "betweenness": 0.004400155264806527,
     "eigenvector": 0.009304254758790738,
     "paper_count": 39,
     "recent_paper_count": 2,
     "total_pagerank": 0.021392603435736613,
-    "composite_score": 0.24313459321693712
+    "composite_score": 0.26398909579286545
+  },
+  {
+    "name": "Siqi Fang",
+    "weighted_degree": 446,
+    "betweenness": 6.267793070508576e-07,
+    "eigenvector": 0.023698627805703573,
+    "paper_count": 10,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.0016884494020509913,
+    "composite_score": 0.263884474339504
+  },
+  {
+    "name": "Constantin Pape",
+    "weighted_degree": 451,
+    "betweenness": 0.00778852018939858,
+    "eigenvector": 0.0007467863009894973,
+    "paper_count": 25,
+    "recent_paper_count": 15,
+    "total_pagerank": 0.0016960716763374985,
+    "composite_score": 0.2636684757915726
+  },
+  {
+    "name": "Jay Gager",
+    "weighted_degree": 534,
+    "betweenness": 0.00018214615222517666,
+    "eigenvector": 0.05302253829402801,
+    "paper_count": 13,
+    "recent_paper_count": 11,
+    "total_pagerank": 0.004136273367369173,
+    "composite_score": 0.263435506717389
+  },
+  {
+    "name": "Andrew S Champion",
+    "weighted_degree": 624,
+    "betweenness": 0.0014325767424236146,
+    "eigenvector": 0.028182224731163552,
+    "paper_count": 24,
+    "recent_paper_count": 17,
+    "total_pagerank": 0.0046524906124730744,
+    "composite_score": 0.26278763301163555
+  },
+  {
+    "name": "Marc Takeno",
+    "weighted_degree": 982,
+    "betweenness": 0.00028810554812051906,
+    "eigenvector": 0.13885780388871116,
+    "paper_count": 26,
+    "recent_paper_count": 16,
+    "total_pagerank": 0.0031173876695070805,
+    "composite_score": 0.26214650945211687
+  },
+  {
+    "name": "Paul Brooks",
+    "weighted_degree": 438,
+    "betweenness": 8.031985717034068e-05,
+    "eigenvector": 0.02297284797154963,
+    "paper_count": 8,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.0014667964432969994,
+    "composite_score": 0.26211234750361356
+  },
+  {
+    "name": "Harald F. Hess",
+    "weighted_degree": 783,
+    "betweenness": 0.0019627177410359237,
+    "eigenvector": 0.028245763610673647,
+    "paper_count": 38,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.010399875955335062,
+    "composite_score": 0.2615849606909834
+  },
+  {
+    "name": "\u00c1gnes L. Bodor",
+    "weighted_degree": 872,
+    "betweenness": 1.7072538785127084e-05,
+    "eigenvector": 0.13242017324531818,
+    "paper_count": 23,
+    "recent_paper_count": 16,
+    "total_pagerank": 0.002716899658777682,
+    "composite_score": 0.2598103507799075
+  },
+  {
+    "name": "Louis K. Scheffer",
+    "weighted_degree": 923,
+    "betweenness": 0.00020165888449685576,
+    "eigenvector": 0.04169653807896988,
+    "paper_count": 33,
+    "recent_paper_count": 9,
+    "total_pagerank": 0.012891084960173438,
+    "composite_score": 0.2593187270042395
+  },
+  {
+    "name": "Karen L Hibbard",
+    "weighted_degree": 446,
+    "betweenness": 0.001022957770729404,
+    "eigenvector": 0.006422086420508728,
+    "paper_count": 17,
+    "recent_paper_count": 16,
+    "total_pagerank": 0.0012564022837043471,
+    "composite_score": 0.25926757988664173
+  },
+  {
+    "name": "Yuelong Wu",
+    "weighted_degree": 359,
+    "betweenness": 0.00028630624730146555,
+    "eigenvector": 0.003726834204945103,
+    "paper_count": 23,
+    "recent_paper_count": 20,
+    "total_pagerank": 0.005422071789302415,
+    "composite_score": 0.2587350815523376
+  },
+  {
+    "name": "Kai Li",
+    "weighted_degree": 559,
+    "betweenness": 6.829274711512766e-07,
+    "eigenvector": 0.08545441302727219,
+    "paper_count": 13,
+    "recent_paper_count": 12,
+    "total_pagerank": 0.0012564571583840137,
+    "composite_score": 0.2582317217460073
+  },
+  {
+    "name": "Marina Gkantia",
+    "weighted_degree": 487,
+    "betweenness": 2.8672118634110733e-05,
+    "eigenvector": 0.024656108856153162,
+    "paper_count": 14,
+    "recent_paper_count": 13,
+    "total_pagerank": 0.0019411112744723024,
+    "composite_score": 0.2564873777996182
+  },
+  {
+    "name": "Billy J Morris",
+    "weighted_degree": 413,
+    "betweenness": 1.702089154066946e-05,
+    "eigenvector": 0.021147359005111704,
+    "paper_count": 11,
+    "recent_paper_count": 11,
+    "total_pagerank": 0.0008810162612607954,
+    "composite_score": 0.2542021894585986
+  },
+  {
+    "name": "Satoko Takemura",
+    "weighted_degree": 976,
+    "betweenness": 5.319334054419308e-05,
+    "eigenvector": 0.04277587286574631,
+    "paper_count": 15,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.008099317079906163,
+    "composite_score": 0.2533848608899928
+  },
+  {
+    "name": "Jody Clements",
+    "weighted_degree": 922,
+    "betweenness": 0.00020792536400538538,
+    "eigenvector": 0.04041623807093288,
+    "paper_count": 18,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.004546586538489154,
+    "composite_score": 0.2532039454866967
+  },
+  {
+    "name": "Nicholas L. Turner",
+    "weighted_degree": 938,
+    "betweenness": 0.0006417865924632153,
+    "eigenvector": 0.14169956576243423,
+    "paper_count": 26,
+    "recent_paper_count": 15,
+    "total_pagerank": 0.0030795209519489273,
+    "composite_score": 0.25271298912284884
+  },
+  {
+    "name": "Patrizia Agostinis",
+    "weighted_degree": 316,
+    "betweenness": 0.009985433895083174,
+    "eigenvector": 1.4852445953774578e-09,
+    "paper_count": 5,
+    "recent_paper_count": 1,
+    "total_pagerank": 0.009812066962198338,
+    "composite_score": 0.25141181481757013
+  },
+  {
+    "name": "Shanka Subhra Mondal",
+    "weighted_degree": 535,
+    "betweenness": 1.7576666077709209e-07,
+    "eigenvector": 0.08152117446357213,
+    "paper_count": 11,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.0010861496394539163,
+    "composite_score": 0.25139567424508963
+  },
+  {
+    "name": "Ran Lu",
+    "weighted_degree": 987,
+    "betweenness": 0.000705096539300321,
+    "eigenvector": 0.13406296821283434,
+    "paper_count": 30,
+    "recent_paper_count": 15,
+    "total_pagerank": 0.00409386603582589,
+    "composite_score": 0.2512106745535725
+  },
+  {
+    "name": "Jakob Troidl",
+    "weighted_degree": 264,
+    "betweenness": 0.00015932241681612533,
+    "eigenvector": 0.0165210283771492,
+    "paper_count": 14,
+    "recent_paper_count": 14,
+    "total_pagerank": 0.00252369020832814,
+    "composite_score": 0.25087073323057074
+  },
+  {
+    "name": "Robert Svirskas",
+    "weighted_degree": 861,
+    "betweenness": 5.776893183286467e-05,
+    "eigenvector": 0.02548557307223529,
+    "paper_count": 15,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.005822007329375973,
+    "composite_score": 0.24980255497409415
+  },
+  {
+    "name": "Gabriella R Sterne",
+    "weighted_degree": 549,
+    "betweenness": 9.960607795901414e-06,
+    "eigenvector": 0.010591259503573886,
+    "paper_count": 22,
+    "recent_paper_count": 19,
+    "total_pagerank": 0.0017975318475430717,
+    "composite_score": 0.249350814127745
+  },
+  {
+    "name": "Edward T. Bullmore",
+    "weighted_degree": 479,
+    "betweenness": 0.00807605189574589,
+    "eigenvector": 1.592101801164587e-05,
+    "paper_count": 72,
+    "recent_paper_count": 3,
+    "total_pagerank": 0.013744291541750064,
+    "composite_score": 0.24856630977011354
+  },
+  {
+    "name": "Samantha Finley-May",
+    "weighted_degree": 894,
+    "betweenness": 3.236893828725993e-05,
+    "eigenvector": 0.04095004361526786,
+    "paper_count": 12,
+    "recent_paper_count": 7,
+    "total_pagerank": 0.003830130883940044,
+    "composite_score": 0.24838319580281398
+  },
+  {
+    "name": "John C Tuthill",
+    "weighted_degree": 443,
+    "betweenness": 0.00100214767771985,
+    "eigenvector": 0.024230689960328962,
+    "paper_count": 26,
+    "recent_paper_count": 22,
+    "total_pagerank": 0.002369863480883898,
+    "composite_score": 0.24806415953410685
+  },
+  {
+    "name": "Gayathri Mahalingam",
+    "weighted_degree": 687,
+    "betweenness": 0.0003934602711839955,
+    "eigenvector": 0.10045914004576748,
+    "paper_count": 16,
+    "recent_paper_count": 12,
+    "total_pagerank": 0.0020064639310981344,
+    "composite_score": 0.24793325361093718
+  },
+  {
+    "name": "Eric Perlman",
+    "weighted_degree": 423,
+    "betweenness": 0.002997866754883825,
+    "eigenvector": 0.024647298859729595,
+    "paper_count": 16,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.009018096414500841,
+    "composite_score": 0.24671885506434474
+  },
+  {
+    "name": "Zhen Jia",
+    "weighted_degree": 540,
+    "betweenness": 1.5131015508817317e-05,
+    "eigenvector": 0.07928697968899479,
+    "paper_count": 13,
+    "recent_paper_count": 10,
+    "total_pagerank": 0.003996278479281125,
+    "composite_score": 0.245991559621967
+  },
+  {
+    "name": "Krzysztof Kruk",
+    "weighted_degree": 214,
+    "betweenness": 2.8116038976215985e-06,
+    "eigenvector": 0.017931575633721143,
+    "paper_count": 5,
+    "recent_paper_count": 5,
+    "total_pagerank": 0.0026196887963178266,
+    "composite_score": 0.24426001147351703
+  },
+  {
+    "name": "Tomke St\u00fcrner",
+    "weighted_degree": 489,
+    "betweenness": 3.1785389294287886e-06,
+    "eigenvector": 0.02493406424179867,
+    "paper_count": 14,
+    "recent_paper_count": 12,
+    "total_pagerank": 0.0022034757550089246,
+    "composite_score": 0.24414134573798177
   },
   {
     "name": "Dodam Ih",
     "weighted_degree": 812,
-    "betweenness": 1.2543319026377916e-05,
+    "betweenness": 4.169420840243996e-05,
     "eigenvector": 0.10352562012485406,
     "paper_count": 22,
     "recent_paper_count": 12,
     "total_pagerank": 0.0053638294868896055,
-    "composite_score": 0.2426834786149819
-  },
-  {
-    "name": "Jens Goldammer",
-    "weighted_degree": 806,
-    "betweenness": 0.0009995473714765942,
-    "eigenvector": 0.024373160814341006,
-    "paper_count": 12,
-    "recent_paper_count": 7,
-    "total_pagerank": 0.0031680463530169684,
-    "composite_score": 0.24161765061477047
-  },
-  {
-    "name": "Stephen J Huston",
-    "weighted_degree": 345,
-    "betweenness": 1.9370257951020644e-06,
-    "eigenvector": 0.005116595573840989,
-    "paper_count": 5,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.00024995120348333743,
-    "composite_score": 0.24150237915624076
-  },
-  {
-    "name": "Michael Cook",
-    "weighted_degree": 850,
-    "betweenness": 4.0523444582959766e-05,
-    "eigenvector": 0.037954427113039556,
-    "paper_count": 10,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0031142472585467965,
-    "composite_score": 0.24131296287842469
-  },
-  {
-    "name": "Gary Patrick Hopkins",
-    "weighted_degree": 850,
-    "betweenness": 4.0523444582959766e-05,
-    "eigenvector": 0.037954427113039556,
-    "paper_count": 10,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0031142472585467965,
-    "composite_score": 0.24131296287842469
-  },
-  {
-    "name": "Alanna Lohff",
-    "weighted_degree": 850,
-    "betweenness": 4.0523444582959766e-05,
-    "eigenvector": 0.037954427113039556,
-    "paper_count": 10,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0031142472585467965,
-    "composite_score": 0.24131296287842469
-  },
-  {
-    "name": "Ashley L Scott",
-    "weighted_degree": 850,
-    "betweenness": 4.0523444582959766e-05,
-    "eigenvector": 0.037954427113039556,
-    "paper_count": 10,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0031142472585467965,
-    "composite_score": 0.24131296287842469
-  },
-  {
-    "name": "John J Walsh",
-    "weighted_degree": 850,
-    "betweenness": 4.0523444582959766e-05,
-    "eigenvector": 0.037954427113039556,
-    "paper_count": 10,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0031142472585467965,
-    "composite_score": 0.24131296287842469
+    "composite_score": 0.242998866912767
   },
   {
     "name": "Albert Lin",
     "weighted_degree": 161,
-    "betweenness": 9.759698004086291e-05,
+    "betweenness": 0.00020270938994186997,
     "eigenvector": 0.014809584640863818,
     "paper_count": 10,
     "recent_paper_count": 10,
     "total_pagerank": 0.0029274738334209975,
-    "composite_score": 0.24129977568992855
+    "composite_score": 0.24251679421567504
+  },
+  {
+    "name": "Kristina D. Micheva",
+    "weighted_degree": 122,
+    "betweenness": 0.01301989798543075,
+    "eigenvector": 0.0018160710641778597,
+    "paper_count": 18,
+    "recent_paper_count": 4,
+    "total_pagerank": 0.006837361906319832,
+    "composite_score": 0.24209743870749845
+  },
+  {
+    "name": "Lucy Collinson",
+    "weighted_degree": 282,
+    "betweenness": 0.008813466859479662,
+    "eigenvector": 0.00014109392797133897,
+    "paper_count": 25,
+    "recent_paper_count": 13,
+    "total_pagerank": 0.00212402411179531,
+    "composite_score": 0.2418945808813029
+  },
+  {
+    "name": "Stephen J Huston",
+    "weighted_degree": 345,
+    "betweenness": 2.4048511577582323e-06,
+    "eigenvector": 0.005116595573840989,
+    "paper_count": 5,
+    "recent_paper_count": 5,
+    "total_pagerank": 0.00024995120348333743,
+    "composite_score": 0.24151008524525594
+  },
+  {
+    "name": "Michael Cook",
+    "weighted_degree": 850,
+    "betweenness": 2.2288183186642136e-05,
+    "eigenvector": 0.037954427113039556,
+    "paper_count": 10,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0031142472585467965,
+    "composite_score": 0.24118937052809197
+  },
+  {
+    "name": "Gary Patrick Hopkins",
+    "weighted_degree": 850,
+    "betweenness": 2.2288183186642136e-05,
+    "eigenvector": 0.037954427113039556,
+    "paper_count": 10,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0031142472585467965,
+    "composite_score": 0.24118937052809197
+  },
+  {
+    "name": "Alanna Lohff",
+    "weighted_degree": 850,
+    "betweenness": 2.2288183186642136e-05,
+    "eigenvector": 0.037954427113039556,
+    "paper_count": 10,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0031142472585467965,
+    "composite_score": 0.24118937052809197
+  },
+  {
+    "name": "Ashley L Scott",
+    "weighted_degree": 850,
+    "betweenness": 2.2288183186642136e-05,
+    "eigenvector": 0.037954427113039556,
+    "paper_count": 10,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0031142472585467965,
+    "composite_score": 0.24118937052809197
+  },
+  {
+    "name": "John J Walsh",
+    "weighted_degree": 850,
+    "betweenness": 2.2288183186642136e-05,
+    "eigenvector": 0.037954427113039556,
+    "paper_count": 10,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0031142472585467965,
+    "composite_score": 0.24118937052809197
   },
   {
     "name": "Manuel Castro",
     "weighted_degree": 794,
-    "betweenness": 4.169536961216088e-05,
+    "betweenness": 7.16716142090281e-05,
     "eigenvector": 0.11791112649826144,
     "paper_count": 22,
     "recent_paper_count": 12,
     "total_pagerank": 0.005328143121675998,
-    "composite_score": 0.2406009174752154
-  },
-  {
-    "name": "Nirmala Iyer",
-    "weighted_degree": 550,
-    "betweenness": 0.0007689733945091323,
-    "eigenvector": 0.008436827817630081,
-    "paper_count": 11,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.003340319766857109,
-    "composite_score": 0.2403148741573905
-  },
-  {
-    "name": "Tanya Wolff",
-    "weighted_degree": 876,
-    "betweenness": 0.00017005193240444407,
-    "eigenvector": 0.0259170406168802,
-    "paper_count": 21,
-    "recent_paper_count": 11,
-    "total_pagerank": 0.00446422255108206,
-    "composite_score": 0.2403112477168716
+    "composite_score": 0.24096911135404048
   },
   {
     "name": "Jacquelyn Price",
     "weighted_degree": 331,
-    "betweenness": 0.0,
+    "betweenness": 2.960128419747964e-07,
     "eigenvector": 0.004993278423459616,
     "paper_count": 5,
     "recent_paper_count": 5,
     "total_pagerank": 0.00028202113334958444,
-    "composite_score": 0.2401189951602347
+    "composite_score": 0.24012200370519907
+  },
+  {
+    "name": "Nirmala Iyer",
+    "weighted_degree": 550,
+    "betweenness": 0.00063347896527193,
+    "eigenvector": 0.008436827817630081,
+    "paper_count": 11,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.003340319766857109,
+    "composite_score": 0.2401094014689687
   },
   {
     "name": "Kristin Henderson",
     "weighted_degree": 330,
-    "betweenness": 3.5943803032410626e-05,
+    "betweenness": 3.4163305049381e-05,
     "eigenvector": 0.004976012708150254,
     "paper_count": 5,
     "recent_paper_count": 5,
     "total_pagerank": 0.00024126579010023621,
-    "composite_score": 0.2400088488210234
+    "composite_score": 0.24004551779009675
   },
   {
     "name": "Dominik Krzemi\u0144ski",
@@ -1208,6 +1228,16 @@
     "recent_paper_count": 6,
     "total_pagerank": 0.0005387555340907811,
     "composite_score": 0.239864504805226
+  },
+  {
+    "name": "Tanya Wolff",
+    "weighted_degree": 876,
+    "betweenness": 9.458216587479301e-05,
+    "eigenvector": 0.0259170406168802,
+    "paper_count": 21,
+    "recent_paper_count": 11,
+    "total_pagerank": 0.00446422255108206,
+    "composite_score": 0.23980330281032936
   },
   {
     "name": "Allison Vannan",
@@ -1462,182 +1492,212 @@
   {
     "name": "Sam Kinn",
     "weighted_degree": 545,
-    "betweenness": 1.0023459047640148e-05,
+    "betweenness": 4.9176870874302954e-05,
     "eigenvector": 0.08236267385918872,
     "paper_count": 12,
     "recent_paper_count": 10,
     "total_pagerank": 0.001141701732716988,
-    "composite_score": 0.2378940244143506
+    "composite_score": 0.238307234630036
   },
   {
     "name": "Kenneth J. Hayworth",
     "weighted_degree": 903,
-    "betweenness": 0.00033788285475589753,
+    "betweenness": 0.00039233659981638874,
     "eigenvector": 0.040413047980790276,
     "paper_count": 26,
     "recent_paper_count": 7,
     "total_pagerank": 0.010153028142626776,
-    "composite_score": 0.23664254445390462
+    "composite_score": 0.2377107980166979
   },
   {
     "name": "Runzhe Yang",
     "weighted_degree": 316,
-    "betweenness": 6.6697615110072674e-06,
+    "betweenness": 7.785250276199463e-06,
     "eigenvector": 0.039933417328775644,
     "paper_count": 8,
     "recent_paper_count": 7,
     "total_pagerank": 0.0032656334835626617,
-    "composite_score": 0.23584785262857585
+    "composite_score": 0.235869352238155
   },
   {
     "name": "Eva J Munnelly",
     "weighted_degree": 183,
-    "betweenness": 2.0114645706865337e-05,
+    "betweenness": 2.4495805793374332e-05,
     "eigenvector": 0.008992923293991862,
     "paper_count": 4,
     "recent_paper_count": 4,
     "total_pagerank": 0.0018577828771476168,
-    "composite_score": 0.23512764117814705
+    "composite_score": 0.2352028167134832
+  },
+  {
+    "name": "Jens Goldammer",
+    "weighted_degree": 806,
+    "betweenness": 0.0002027702434269682,
+    "eigenvector": 0.024373160814341006,
+    "paper_count": 12,
+    "recent_paper_count": 7,
+    "total_pagerank": 0.0031680463530169684,
+    "composite_score": 0.23504250017555034
   },
   {
     "name": "Wenjing Yin",
     "weighted_degree": 267,
-    "betweenness": 6.8823296005522985e-06,
+    "betweenness": 6.9463727914047185e-06,
     "eigenvector": 0.04352966013080975,
     "paper_count": 6,
     "recent_paper_count": 6,
     "total_pagerank": 0.0005163250792780067,
-    "composite_score": 0.23458914139926537
-  },
-  {
-    "name": "Philip M. Hubbard",
-    "weighted_degree": 805,
-    "betweenness": 5.45953028660025e-08,
-    "eigenvector": 0.03796294908740746,
-    "paper_count": 12,
-    "recent_paper_count": 7,
-    "total_pagerank": 0.003351397431361684,
-    "composite_score": 0.2342434278918737
+    "composite_score": 0.23460027845202902
   },
   {
     "name": "Marta Zlatic",
     "weighted_degree": 643,
-    "betweenness": 0.0006656876485644469,
+    "betweenness": 0.000642181608489794,
     "eigenvector": 0.009277300483354659,
     "paper_count": 33,
     "recent_paper_count": 14,
     "total_pagerank": 0.009225265934120047,
-    "composite_score": 0.23366305520819136
+    "composite_score": 0.23443841390061598
   },
   {
-    "name": "David Shepherd",
-    "weighted_degree": 346,
-    "betweenness": 2.3025224377221315e-06,
-    "eigenvector": 0.016554103332947552,
-    "paper_count": 7,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0029864865973102004,
-    "composite_score": 0.23358788190213658
+    "name": "Philip M. Hubbard",
+    "weighted_degree": 805,
+    "betweenness": 2.2744383873579812e-07,
+    "eigenvector": 0.03796294908740746,
+    "paper_count": 12,
+    "recent_paper_count": 7,
+    "total_pagerank": 0.003351397431361684,
+    "composite_score": 0.23424526783195387
   },
   {
     "name": "Griffin Badalamente",
     "weighted_degree": 380,
-    "betweenness": 4.853566058385687e-05,
+    "betweenness": 5.859091101387181e-05,
     "eigenvector": 0.019616256326622124,
     "paper_count": 9,
     "recent_paper_count": 8,
     "total_pagerank": 0.0015581013667414086,
-    "composite_score": 0.23351940709567764
+    "composite_score": 0.23369555480333587
   },
   {
-    "name": "Mathew H. Horrocks",
-    "weighted_degree": 49,
-    "betweenness": 0.00312049359615051,
-    "eigenvector": 4.5043013814446964e-07,
-    "paper_count": 2,
-    "recent_paper_count": 2,
-    "total_pagerank": 8.373409198727735e-05,
-    "composite_score": 0.23321502412118217
+    "name": "David Shepherd",
+    "weighted_degree": 346,
+    "betweenness": 2.8789576449576563e-06,
+    "eigenvector": 0.016554103332947552,
+    "paper_count": 7,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.0029864865973102004,
+    "composite_score": 0.23359724873689025
+  },
+  {
+    "name": "Steven W. Flavell",
+    "weighted_degree": 152,
+    "betweenness": 0.0008033260634057285,
+    "eigenvector": 3.083118448340694e-05,
+    "paper_count": 18,
+    "recent_paper_count": 18,
+    "total_pagerank": 0.0010486265458815272,
+    "composite_score": 0.23348628688879008
+  },
+  {
+    "name": "Christian Tischer",
+    "weighted_degree": 157,
+    "betweenness": 0.0012851974353351987,
+    "eigenvector": 0.00045514381669758757,
+    "paper_count": 4,
+    "recent_paper_count": 4,
+    "total_pagerank": 0.00029642361984734,
+    "composite_score": 0.23331223880684487
+  },
+  {
+    "name": "Ting Zhao",
+    "weighted_degree": 907,
+    "betweenness": 0.0006663112167272779,
+    "eigenvector": 0.041517882338911204,
+    "paper_count": 17,
+    "recent_paper_count": 5,
+    "total_pagerank": 0.008461828622313265,
+    "composite_score": 0.2332387398927518
   },
   {
     "name": "Chris S. Jordan",
     "weighted_degree": 547,
-    "betweenness": 1.103057587312451e-05,
+    "betweenness": 6.828215991887259e-06,
     "eigenvector": 0.07584240668905115,
     "paper_count": 16,
     "recent_paper_count": 11,
     "total_pagerank": 0.004328888259175923,
-    "composite_score": 0.2328869882106974
+    "composite_score": 0.2328610838156929
   },
   {
     "name": "Christopher Ordish",
     "weighted_degree": 925,
-    "betweenness": 2.404174446609467e-05,
+    "betweenness": 1.8126455880201094e-05,
     "eigenvector": 0.041134734702501466,
     "paper_count": 13,
     "recent_paper_count": 6,
     "total_pagerank": 0.004490216390982949,
-    "composite_score": 0.23241633093603067
-  },
-  {
-    "name": "Brendan Celii",
-    "weighted_degree": 254,
-    "betweenness": 8.303015397801813e-07,
-    "eigenvector": 0.031799568508255535,
-    "paper_count": 4,
-    "recent_paper_count": 4,
-    "total_pagerank": 0.0003768152263665326,
-    "composite_score": 0.23199722906824075
-  },
-  {
-    "name": "Shigehiro Namiki",
-    "weighted_degree": 583,
-    "betweenness": 9.696371541993143e-05,
-    "eigenvector": 0.013716090472394157,
-    "paper_count": 17,
-    "recent_paper_count": 13,
-    "total_pagerank": 0.0014792318308195936,
-    "composite_score": 0.23181581263319007
-  },
-  {
-    "name": "Su-Yee J. Lee",
-    "weighted_degree": 231,
-    "betweenness": 1.7282089411392347e-05,
-    "eigenvector": 0.01842906931703532,
-    "paper_count": 8,
-    "recent_paper_count": 8,
-    "total_pagerank": 0.0006723977627082085,
-    "composite_score": 0.2317172119564078
-  },
-  {
-    "name": "Hideo Otsuna",
-    "weighted_degree": 885,
-    "betweenness": 0.0006506687132571832,
-    "eigenvector": 0.026020992267107836,
-    "paper_count": 20,
-    "recent_paper_count": 9,
-    "total_pagerank": 0.0045908973116547125,
-    "composite_score": 0.23168588556334524
+    "composite_score": 0.23239284133170826
   },
   {
     "name": "Shuichi Onami",
     "weighted_degree": 195,
-    "betweenness": 0.0007676110335192653,
+    "betweenness": 0.0007635682599442197,
     "eigenvector": 0.00045568011189806436,
     "paper_count": 5,
     "recent_paper_count": 5,
     "total_pagerank": 0.00027998227676521217,
-    "composite_score": 0.23112156101202314
+    "composite_score": 0.23225002967843722
   },
   {
-    "name": "Christopher Knecht",
-    "weighted_degree": 488,
-    "betweenness": 0.00013583446802708165,
-    "eigenvector": 0.023476478541634694,
-    "paper_count": 6,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.0009477153955254357,
-    "composite_score": 0.23098086343174168
+    "name": "Brendan Celii",
+    "weighted_degree": 254,
+    "betweenness": 4.6037063488171604e-07,
+    "eigenvector": 0.031799568508255535,
+    "paper_count": 4,
+    "recent_paper_count": 4,
+    "total_pagerank": 0.0003768152263665326,
+    "composite_score": 0.2319947343274215
+  },
+  {
+    "name": "Shigehiro Namiki",
+    "weighted_degree": 583,
+    "betweenness": 9.697636654718994e-05,
+    "eigenvector": 0.013716090472394157,
+    "paper_count": 17,
+    "recent_paper_count": 13,
+    "total_pagerank": 0.0014792318308195936,
+    "composite_score": 0.23196367834873396
+  },
+  {
+    "name": "Mathew H. Horrocks",
+    "weighted_degree": 49,
+    "betweenness": 0.002517189153625743,
+    "eigenvector": 4.5043013814446964e-07,
+    "paper_count": 2,
+    "recent_paper_count": 2,
+    "total_pagerank": 8.373409198727735e-05,
+    "composite_score": 0.23183778943861652
+  },
+  {
+    "name": "Su-Yee J. Lee",
+    "weighted_degree": 231,
+    "betweenness": 1.9953530510504477e-05,
+    "eigenvector": 0.01842906931703532,
+    "paper_count": 8,
+    "recent_paper_count": 8,
+    "total_pagerank": 0.0006723977627082085,
+    "composite_score": 0.23177069487949672
+  },
+  {
+    "name": "Kari Close",
+    "weighted_degree": 399,
+    "betweenness": 0.0005097948025561009,
+    "eigenvector": 0.0058291858152300854,
+    "paper_count": 8,
+    "recent_paper_count": 7,
+    "total_pagerank": 0.0006579568355597126,
+    "composite_score": 0.23092901585018472
   },
   {
     "name": "Kyle Harrington",
@@ -1650,134 +1710,144 @@
     "composite_score": 0.2307789991137379
   },
   {
+    "name": "Christopher Knecht",
+    "weighted_degree": 488,
+    "betweenness": 6.314948874984593e-05,
+    "eigenvector": 0.023476478541634694,
+    "paper_count": 6,
+    "recent_paper_count": 5,
+    "total_pagerank": 0.0009477153955254357,
+    "composite_score": 0.2304490870195659
+  },
+  {
     "name": "Caitlyn Bishop",
     "weighted_degree": 230,
-    "betweenness": 3.222377784524376e-05,
+    "betweenness": 2.3098698958187703e-05,
     "eigenvector": 0.017705241958785384,
     "paper_count": 7,
     "recent_paper_count": 7,
     "total_pagerank": 0.0004752503842545924,
-    "composite_score": 0.23025181433092265
+    "composite_score": 0.23020816824048473
   },
   {
-    "name": "Ting Zhao",
-    "weighted_degree": 907,
-    "betweenness": 0.0004025572563679046,
-    "eigenvector": 0.041517882338911204,
-    "paper_count": 17,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.008461828622313265,
-    "composite_score": 0.22994471048515386
+    "name": "David C. Rubinsztein",
+    "weighted_degree": 177,
+    "betweenness": 0.01626127485467464,
+    "eigenvector": 6.384146510689628e-09,
+    "paper_count": 5,
+    "recent_paper_count": 1,
+    "total_pagerank": 0.00056999999091951,
+    "composite_score": 0.22987206319494138
   },
   {
     "name": "Ellen Lesser",
     "weighted_degree": 222,
-    "betweenness": 1.2890253473638473e-05,
+    "betweenness": 1.5785577529703774e-05,
     "eigenvector": 0.018216788342351724,
     "paper_count": 6,
     "recent_paper_count": 6,
     "total_pagerank": 0.0005482912930348167,
-    "composite_score": 0.2297144953282059
-  },
-  {
-    "name": "Kari Close",
-    "weighted_degree": 399,
-    "betweenness": 0.0004289982947646089,
-    "eigenvector": 0.0058291858152300854,
-    "paper_count": 8,
-    "recent_paper_count": 7,
-    "total_pagerank": 0.0006579568355597126,
-    "composite_score": 0.2294541994684171
+    "composite_score": 0.22976356215267918
   },
   {
     "name": "Olaf Sporns",
     "weighted_degree": 259,
-    "betweenness": 0.0051805909311823,
+    "betweenness": 0.004439916726994903,
     "eigenvector": 6.67760176463157e-05,
     "paper_count": 75,
     "recent_paper_count": 6,
     "total_pagerank": 0.018503240316656337,
-    "composite_score": 0.2293712444758878
+    "composite_score": 0.22973667633491313
   },
   {
-    "name": "Manuel Castro",
-    "weighted_degree": 376,
-    "betweenness": 0.0003967698594534338,
-    "eigenvector": 0.049887191884800314,
-    "paper_count": 8,
-    "recent_paper_count": 7,
-    "total_pagerank": 0.0009582781510279351,
-    "composite_score": 0.2287891554061552
-  },
-  {
-    "name": "Steven W. Flavell",
-    "weighted_degree": 152,
-    "betweenness": 0.00039344481712910213,
-    "eigenvector": 3.083118448340694e-05,
-    "paper_count": 18,
-    "recent_paper_count": 18,
-    "total_pagerank": 0.0010486265458815272,
-    "composite_score": 0.2287209677202437
+    "name": "Paul M. Thompson",
+    "weighted_degree": 634,
+    "betweenness": 0.00753365548121883,
+    "eigenvector": 4.35648859549249e-06,
+    "paper_count": 14,
+    "recent_paper_count": 5,
+    "total_pagerank": 0.0009882634187035012,
+    "composite_score": 0.22820461872319997
   },
   {
     "name": "Catherine E. Schretter",
     "weighted_degree": 376,
-    "betweenness": 5.071817523947082e-07,
+    "betweenness": 2.684124735776186e-06,
     "eigenvector": 0.005664085800517051,
     "paper_count": 10,
     "recent_paper_count": 9,
     "total_pagerank": 0.0006425064893590103,
-    "composite_score": 0.22799546169462512
+    "composite_score": 0.22801835994923625
   },
   {
-    "name": "Alexandra Pacureanu",
-    "weighted_degree": 304,
-    "betweenness": 0.0010797798006682078,
-    "eigenvector": 0.008360108174368958,
-    "paper_count": 22,
-    "recent_paper_count": 19,
-    "total_pagerank": 0.0014512451804800583,
-    "composite_score": 0.22785117050287762
-  },
-  {
-    "name": "Andrew Cook",
-    "weighted_degree": 190,
-    "betweenness": 4.509076370928514e-06,
-    "eigenvector": 0.01495553925412487,
-    "paper_count": 11,
-    "recent_paper_count": 11,
-    "total_pagerank": 0.0007964614472752737,
-    "composite_score": 0.22783077625547082
-  },
-  {
-    "name": "Chris J. Dallmann",
-    "weighted_degree": 183,
-    "betweenness": 7.837352508410623e-05,
-    "eigenvector": 0.014715814562705707,
-    "paper_count": 12,
-    "recent_paper_count": 12,
-    "total_pagerank": 0.0008178601947548745,
-    "composite_score": 0.22782589340875875
-  },
-  {
-    "name": "Sanna Koskela",
-    "weighted_degree": 209,
-    "betweenness": 1.9727276885061984e-08,
-    "eigenvector": 0.007075293773797712,
-    "paper_count": 7,
+    "name": "Manuel Castro",
+    "weighted_degree": 376,
+    "betweenness": 0.00025676270296803134,
+    "eigenvector": 0.049887191884800314,
+    "paper_count": 8,
     "recent_paper_count": 7,
-    "total_pagerank": 0.0005004343678508581,
-    "composite_score": 0.22775156923888298
+    "total_pagerank": 0.0009582781510279351,
+    "composite_score": 0.2279707156737666
   },
   {
     "name": "Alexandra M. C. Fragniere",
     "weighted_degree": 172,
-    "betweenness": 2.6187107486387228e-05,
+    "betweenness": 5.160371616966781e-05,
     "eigenvector": 0.007517019162427204,
     "paper_count": 3,
     "recent_paper_count": 3,
     "total_pagerank": 0.0010236461275635726,
-    "composite_score": 0.22765660880621696
+    "composite_score": 0.2279548316384256
+  },
+  {
+    "name": "Andrew Cook",
+    "weighted_degree": 190,
+    "betweenness": 3.7491836216384183e-06,
+    "eigenvector": 0.01495553925412487,
+    "paper_count": 11,
+    "recent_paper_count": 11,
+    "total_pagerank": 0.0007964614472752737,
+    "composite_score": 0.22782992321657772
+  },
+  {
+    "name": "Sanna Koskela",
+    "weighted_degree": 209,
+    "betweenness": 4.3629551090127886e-08,
+    "eigenvector": 0.007075293773797712,
+    "paper_count": 7,
+    "recent_paper_count": 7,
+    "total_pagerank": 0.0005004343678508581,
+    "composite_score": 0.22775184222827005
+  },
+  {
+    "name": "Josh Moore",
+    "weighted_degree": 185,
+    "betweenness": 0.0002584341122918727,
+    "eigenvector": 0.0005219267549874688,
+    "paper_count": 9,
+    "recent_paper_count": 9,
+    "total_pagerank": 0.0005152673085055657,
+    "composite_score": 0.22773388457358382
+  },
+  {
+    "name": "Daniele Bano",
+    "weighted_degree": 123,
+    "betweenness": 0.0012431463530447181,
+    "eigenvector": 6.207784336584553e-10,
+    "paper_count": 2,
+    "recent_paper_count": 2,
+    "total_pagerank": 0.00011207226878805673,
+    "composite_score": 0.2275976487919487
+  },
+  {
+    "name": "Chris J. Dallmann",
+    "weighted_degree": 183,
+    "betweenness": 4.334953900813697e-05,
+    "eigenvector": 0.014715814562705707,
+    "paper_count": 12,
+    "recent_paper_count": 12,
+    "total_pagerank": 0.0008178601947548745,
+    "composite_score": 0.22758933744790533
   },
   {
     "name": "Will Silversmith",
@@ -1800,203 +1870,133 @@
     "composite_score": 0.2275698162010894
   },
   {
-    "name": "Josh Moore",
-    "weighted_degree": 185,
-    "betweenness": 0.0002713453373648413,
-    "eigenvector": 0.0005219267549874688,
-    "paper_count": 9,
+    "name": "Hideo Otsuna",
+    "weighted_degree": 885,
+    "betweenness": 0.00012703510781884148,
+    "eigenvector": 0.026020992267107836,
+    "paper_count": 20,
     "recent_paper_count": 9,
-    "total_pagerank": 0.0005152673085055657,
-    "composite_score": 0.22745167785221265
+    "total_pagerank": 0.0045908973116547125,
+    "composite_score": 0.22735528323324633
   },
   {
     "name": "Lowell Umayam",
     "weighted_degree": 885,
-    "betweenness": 2.748634023834773e-06,
+    "betweenness": 5.9117804453378975e-06,
     "eigenvector": 0.04124931086342645,
     "paper_count": 15,
     "recent_paper_count": 6,
     "total_pagerank": 0.006076091391889456,
-    "composite_score": 0.22723496999448628
+    "composite_score": 0.2272713067402667
   },
   {
     "name": "Shuohong Wang",
     "weighted_degree": 252,
-    "betweenness": 1.7147200246000053e-05,
+    "betweenness": 1.0135574824319714e-05,
     "eigenvector": 0.00369633531696725,
     "paper_count": 10,
     "recent_paper_count": 9,
     "total_pagerank": 0.0024175973327080985,
-    "composite_score": 0.22722559769852518
+    "composite_score": 0.22718046065005543
   },
   {
     "name": "William T. Katz",
     "weighted_degree": 903,
-    "betweenness": 8.500498275442689e-06,
+    "betweenness": 1.1191293353142332e-05,
     "eigenvector": 0.0415827119091533,
     "paper_count": 17,
     "recent_paper_count": 5,
     "total_pagerank": 0.008576263057574411,
-    "composite_score": 0.22693972910048366
+    "composite_score": 0.2269800288052256
+  },
+  {
+    "name": "Sven Klumpe",
+    "weighted_degree": 14,
+    "betweenness": 0.0023805240820067367,
+    "eigenvector": 2.0679545417068622e-07,
+    "paper_count": 2,
+    "recent_paper_count": 2,
+    "total_pagerank": 8.799290363004998e-05,
+    "composite_score": 0.22646238012711228
   },
   {
     "name": "Eyal Gruntman",
     "weighted_degree": 188,
-    "betweenness": 1.7373553509138966e-07,
+    "betweenness": 7.46934804795461e-07,
     "eigenvector": 0.006832162783735308,
     "paper_count": 6,
     "recent_paper_count": 6,
     "total_pagerank": 0.000604122015306785,
-    "composite_score": 0.22612010176133476
+    "composite_score": 0.22612619221705674
   },
   {
     "name": "Meghan Leonard",
     "weighted_degree": 208,
-    "betweenness": 8.029417544186242e-06,
+    "betweenness": 1.0255921042074778e-05,
     "eigenvector": 0.007075045326698533,
     "paper_count": 3,
     "recent_paper_count": 3,
     "total_pagerank": 0.0002603790895785385,
-    "composite_score": 0.22590423602145845
+    "composite_score": 0.22593909911556115
   },
   {
     "name": "Claire Walsh",
     "weighted_degree": 208,
-    "betweenness": 8.029417544186242e-06,
+    "betweenness": 1.0255921042074778e-05,
     "eigenvector": 0.007075045326698533,
     "paper_count": 3,
     "recent_paper_count": 3,
     "total_pagerank": 0.0002603790895785385,
-    "composite_score": 0.22590423602145845
-  },
-  {
-    "name": "Joshua T Vogelstein",
-    "weighted_degree": 293,
-    "betweenness": 0.010717751351451347,
-    "eigenvector": 0.0024211605833709122,
-    "paper_count": 29,
-    "recent_paper_count": 9,
-    "total_pagerank": 0.005002498985543054,
-    "composite_score": 0.22585513928748638
-  },
-  {
-    "name": "A.R. Aricescu",
-    "weighted_degree": 81,
-    "betweenness": 0.001764862985116149,
-    "eigenvector": 5.226480027940545e-06,
-    "paper_count": 3,
-    "recent_paper_count": 3,
-    "total_pagerank": 0.00014106379069640053,
-    "composite_score": 0.2256066956143263
-  },
-  {
-    "name": "Jan M\u00f6lter",
-    "weighted_degree": 60,
-    "betweenness": 0.0020709914441248392,
-    "eigenvector": 0.002516696699671208,
-    "paper_count": 2,
-    "recent_paper_count": 2,
-    "total_pagerank": 7.414569909828474e-05,
-    "composite_score": 0.22533835078291103
-  },
-  {
-    "name": "Chi Zhang",
-    "weighted_degree": 197,
-    "betweenness": 3.647627874075918e-06,
-    "eigenvector": 0.024142073157423793,
-    "paper_count": 3,
-    "recent_paper_count": 3,
-    "total_pagerank": 0.0003142811173723875,
-    "composite_score": 0.22500802111177118
-  },
-  {
-    "name": "Yijie Yin",
-    "weighted_degree": 202,
-    "betweenness": 6.972567332373066e-06,
-    "eigenvector": 0.01815774955114808,
-    "paper_count": 7,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.004031805627119281,
-    "composite_score": 0.22494111218801408
-  },
-  {
-    "name": "Zhen Jia",
-    "weighted_degree": 190,
-    "betweenness": 1.0061605595849923e-05,
-    "eigenvector": 0.029124755869085295,
-    "paper_count": 4,
-    "recent_paper_count": 4,
-    "total_pagerank": 0.000361706992318593,
-    "composite_score": 0.2246157165972102
-  },
-  {
-    "name": "Marcia dos Santos",
-    "weighted_degree": 95,
-    "betweenness": 4.803118662441511e-06,
-    "eigenvector": 0.004850211094526171,
-    "paper_count": 3,
-    "recent_paper_count": 3,
-    "total_pagerank": 0.0017931466575896262,
-    "composite_score": 0.22440689646238082
-  },
-  {
-    "name": "Judith Hoeller",
-    "weighted_degree": 184,
-    "betweenness": 1.5363742689295035e-06,
-    "eigenvector": 0.006695604765593801,
-    "paper_count": 6,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0004239892448006524,
-    "composite_score": 0.22432065291756526
-  },
-  {
-    "name": "Sandro Romani",
-    "weighted_degree": 182,
-    "betweenness": 2.5844535840133107e-05,
-    "eigenvector": 0.006654135789794836,
-    "paper_count": 6,
-    "recent_paper_count": 6,
-    "total_pagerank": 0.0004239892448006524,
-    "composite_score": 0.224301052585472
+    "composite_score": 0.22593909911556115
   },
   {
     "name": "Donglai Wei",
     "weighted_degree": 503,
-    "betweenness": 0.00044744731911810376,
+    "betweenness": 0.000534139559997953,
     "eigenvector": 0.006291150675196765,
     "paper_count": 31,
     "recent_paper_count": 21,
     "total_pagerank": 0.0036100446890508066,
-    "composite_score": 0.22419455092886098
+    "composite_score": 0.22575739850706847
   },
   {
-    "name": "Brandon S Canino",
-    "weighted_degree": 782,
-    "betweenness": 5.376484671720137e-08,
-    "eigenvector": 0.037024307460027515,
-    "paper_count": 9,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.0030666406220436894,
-    "composite_score": 0.2239099907605975
+    "name": "Igor Siwanowicz",
+    "weighted_degree": 251,
+    "betweenness": 0.0006825270044029218,
+    "eigenvector": 0.004728002219662314,
+    "paper_count": 21,
+    "recent_paper_count": 19,
+    "total_pagerank": 0.0011418144464678181,
+    "composite_score": 0.22527658303548725
   },
   {
-    "name": "Charli Maldonado",
-    "weighted_degree": 782,
-    "betweenness": 5.376484671720137e-08,
-    "eigenvector": 0.037024307460027515,
-    "paper_count": 9,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.0030666406220436894,
-    "composite_score": 0.2239099907605975
+    "name": "Chi Zhang",
+    "weighted_degree": 197,
+    "betweenness": 3.935443586108941e-06,
+    "eigenvector": 0.024142073157423793,
+    "paper_count": 3,
+    "recent_paper_count": 3,
+    "total_pagerank": 0.0003142811173723875,
+    "composite_score": 0.22501650399158774
   },
   {
-    "name": "Caroline Mooney",
-    "weighted_degree": 782,
-    "betweenness": 5.376484671720137e-08,
-    "eigenvector": 0.037024307460027515,
-    "paper_count": 9,
-    "recent_paper_count": 5,
-    "total_pagerank": 0.0030666406220436894,
-    "composite_score": 0.2239099907605975
+    "name": "Yijie Yin",
+    "weighted_degree": 202,
+    "betweenness": 1.1776000809148676e-05,
+    "eigenvector": 0.01815774955114808,
+    "paper_count": 7,
+    "recent_paper_count": 6,
+    "total_pagerank": 0.004031805627119281,
+    "composite_score": 0.22500055581846984
+  },
+  {
+    "name": "Alexandra Pacureanu",
+    "weighted_degree": 304,
+    "betweenness": 0.0006163580677664636,
+    "eigenvector": 0.008360108174368958,
+    "paper_count": 22,
+    "recent_paper_count": 19,
+    "total_pagerank": 0.0014512451804800583,
+    "composite_score": 0.22478634318609578
   }
 ]

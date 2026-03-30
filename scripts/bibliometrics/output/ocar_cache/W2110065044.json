@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "When testing many statistical hypotheses simultaneously — as is unavoidable in genomics, neuroimaging, and connectomics — the standard approach of controlling the probability of any false positive (familywise error rate) was excessively conservative, leading to many true discoveries being missed.",
+    "challenge": "Developing a less conservative multiple-testing correction required a new error criterion that balanced power with interpretability, and proving that it could be controlled under realistic dependency structures among test statistics.",
+    "action": "Benjamini and Hochberg defined the false discovery rate (FDR) as the expected proportion of rejected hypotheses that are false positives, then derived a simple sequential procedure — now called the BH procedure — that provably controls FDR for independent test statistics and is easy to implement.",
+    "resolution": "The BH procedure provides substantially greater statistical power than Bonferroni-type FWER corrections while still controlling the rate of false discoveries, and has become the dominant multiple-testing correction in large-scale biological data analysis including differential connectivity analysis in connectomics.",
+    "future_work": "Adapting FDR control to dependent test statistics, spatial or network data structures, and adaptive procedures that estimate the proportion of true nulls remains an active statistical research area."
+  },
+  "plain_language_summary": "When scientists run thousands of statistical tests at once — for example, testing whether each of a thousand connections in a brain is significantly different between two groups — they expect some false positives by chance. This paper introduced a smarter way to handle this: instead of trying to guarantee zero false positives (which throws away real discoveries), it controls the fraction of reported results that are false. This approach is now used everywhere in biology.",
+  "summaries": {
+    "beginner": "If you flip a coin a thousand times, you expect some streaks by chance. Similarly, when scientists test whether thousands of brain connections are different between two groups, some will look significant just by chance. This paper invented a method to keep the fraction of such false alarms at an acceptable level, making it possible to do large-scale biological studies without drowning in false discoveries.",
+    "intermediate": "Benjamini and Hochberg (1995) introduced the false discovery rate (FDR) as the expected proportion Q = E[V/R] of rejected null hypotheses that are false positives. They proved that the BH step-up procedure — sort p-values, reject all hypotheses up to the largest p_i ≤ (i/m)α — controls FDR at level α under independence. This provides dramatically more power than Bonferroni correction when many true effects exist, making it the standard for connectome-wide statistical testing (e.g., comparing synapse strengths, edge weights, or graph metrics across conditions).",
+    "advanced": "The BH procedure's FDR control is exact under independence and conservative under positive regression dependence (PRDS), but can fail under arbitrary dependence (requiring the BY correction with penalty factor sum(1/i)). In connectomics, tests of pairwise connectivity are typically not independent (sharing neurons), complicating direct application; network-level permutation tests or block-structure-aware FDR procedures are often more appropriate. The BH procedure's assumption of uniform p-values under the null is also sensitive to model misspecification in count-data connectivity tests. Despite these caveats, FDR control remains far superior to Bonferroni for the high-dimensional comparisons typical in connectome analysis."
+  },
+  "discussion_prompts": [
+    "How should FDR correction be applied when testing for differences in connectivity between two groups of animals, given that synapse-level tests within the same connectome are not independent?",
+    "What is the practical difference between controlling FDR at 5% versus FWER at 5% in a connectome-wide association study, and when would you choose each?",
+    "How do adaptive FDR methods that estimate the proportion of true nulls (e.g., Storey's q-value) perform compared to the BH procedure in connectomics data?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:statistics", "method:multiple-testing", "method:FDR", "graph-analysis:connectivity-statistics"]
+}

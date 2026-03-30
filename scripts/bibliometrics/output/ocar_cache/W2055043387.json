@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Searching biological sequence databases for similar sequences was essential for functional annotation but computationally prohibitive using rigorous dynamic programming alignment for databases growing exponentially with new genomic data.",
+    "challenge": "Achieving near-rigorous alignment sensitivity at database-search speed required a heuristic approach that sacrificed some sensitivity for orders-of-magnitude speed improvement while providing statistically meaningful expectation scores.",
+    "action": "Altschul et al. designed BLAST (Basic Local Alignment Search Tool) using a seeded heuristic approach: first find short word matches ('seeds') between query and database sequences, then extend only promising seeds into full local alignments, scoring matches with substitution matrices and computing E-values from extreme value statistics.",
+    "resolution": "BLAST achieved alignment sensitivity approaching Smith–Waterman while running orders of magnitude faster, enabling routine database searches for newly sequenced genes. It became the most widely used bioinformatics tool in history and is standard for cell-type assignment by genetic marker comparison in neuroscience.",
+    "future_work": "Adapting BLAST-like heuristics for protein structure search, very short sequences, and metagenomics data are ongoing challenges as genomic databases continue to expand."
+  },
+  "plain_language_summary": "When scientists sequence a new gene, they want to know if similar genes exist in other organisms — but searching millions of known sequences one-by-one would take too long. BLAST is a clever shortcut: it finds short matching stretches first as anchors, then extends them into full comparisons, making the search fast enough to run on a laptop. In neuroscience, BLAST is used to identify genes expressed in specific neuron types.",
+  "summaries": {
+    "beginner": "BLAST is a tool for finding similar gene sequences in databases. If you discover a new gene in a fly neuron, BLAST can quickly search millions of known sequences to find the closest matches in other organisms. This helps scientists figure out what a gene does based on what similar genes do in well-studied species.",
+    "intermediate": "BLAST employs a two-stage heuristic for local sequence alignment: word matching for seed finding followed by ungapped and gapped extension with BLOSUM scoring matrices. Statistical significance is estimated via extreme value distribution parameters derived from the database composition and query length. In connectomics-adjacent research, BLAST is used for ortholog identification across species, cell-type marker gene annotation, and connecting genetic reagents to connectome-identified neuron types.",
+    "advanced": "BLAST's statistical framework — E-value computation based on Karlin–Altschul statistics — established the standard for evaluating alignment significance in database searches. The heuristic seeding approach introduces a sensitivity–speed tradeoff that can miss divergent homologs (addressed by PSI-BLAST or profile-based methods). In connectomics, BLAST is most relevant at the interface with transcriptomics: matching single-cell RNA-seq-defined cell types to genetic tools, or comparing cell-type marker genes across species to assess evolutionary conservation of neuron types. The tool's ~93,000 citations reflect its pervasive use throughout biology."
+  },
+  "discussion_prompts": [
+    "How is BLAST used at the interface of connectomics and transcriptomics — for example, in connecting electron-microscopy-defined neuron types to genetically accessible lines?",
+    "What are the limitations of sequence similarity as a proxy for functional similarity in neuronal genes, particularly for cell-type classification across species?",
+    "When would a connectomics researcher use BLAST versus more modern tools like profile hidden Markov models (HMMER) or structure-based search?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:bioinformatics", "method:sequence-alignment", "cell-types:genetic-markers", "infrastructure:database-search"]
+}

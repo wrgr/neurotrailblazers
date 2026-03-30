@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Connectomics reconstruction from EM image volumes required teams of annotators to navigate and annotate massive image datasets collaboratively, but no web-based platform existed that could handle the scale, enable real-time collaboration, or integrate annotation with a database of neuronal objects.",
+    "challenge": "Building a system capable of serving and interactively navigating tile-based multi-terabyte image stacks over the web, while supporting concurrent multi-user annotation, linked to an underlying database of neurons and synapses, required novel web architecture and efficient tile-serving infrastructure.",
+    "action": "Saalfeld, Cardona, Hartenstein, and Tomančák developed CATMAID (Collaborative Annotation Toolkit for Massive Amounts of Image Data), a web-based platform for navigating large 2D and 3D image data and annotating neurons, synapses, and other features through a browser interface with a multi-user database backend.",
+    "resolution": "CATMAID enabled distributed collaborative reconstruction of Drosophila and other nervous systems at scales previously impossible, providing the primary annotation environment for landmark projects including the Drosophila larva and adult connectomes. It established the model for web-based collaborative connectomics annotation tools.",
+    "future_work": "Scaling CATMAID to petabyte EM volumes and integrating automated segmentation suggestions to reduce manual annotation burden were addressed in subsequent releases and by next-generation tools."
+  },
+  "plain_language_summary": "Tracing neurons in electron microscopy images is painstaking work that benefits enormously from being done by teams. CATMAID is a web-based tool that lets multiple researchers simultaneously navigate and annotate a large EM image stack — like a shared Google Maps for the brain's wiring. It was the primary tool used to reconstruct the Drosophila connectome and became the standard for collaborative connectomics annotation.",
+  "summaries": {
+    "beginner": "Mapping neurons in electron microscopy images takes a huge amount of human work. CATMAID is a website where a team of researchers can simultaneously navigate the same large brain image dataset and take turns tracing neurons. It is like a Wikipedia-style crowdsourced brain atlas, and it was the main tool used to build the fruit fly brain wiring map.",
+    "intermediate": "CATMAID introduced the concept of web-based collaborative annotation for connectomics, using a tile-based image serving architecture (DVID or file-based) with a Django backend and JavaScript frontend. Features include multi-user skeleton tracing, synapse annotation, spatial queries, graph analysis tools, and project management. It became the primary annotation environment for major Drosophila connectomics projects (Cardona lab, Drosophila connectomics consortium) and influenced the design of subsequent tools including neuroglancer and CAVE.",
+    "advanced": "CATMAID's key architectural innovation was tile-based pyramid serving of multi-terabyte image stacks via a standard web browser, enabling real-time collaborative annotation without local data transfer. The skeleton-based neuron representation (tree of 3D nodes connected by edges) became a standard data structure for neuronal morphology in connectomics databases. Current limitations include scalability to petabyte volumes and integration complexity with automated segmentation (addressed by ProofReader mode and CAVE integration in modern workflows). CATMAID remains widely used for manual annotation of small-to-medium Drosophila and larval/small vertebrate reconstructions, while neuroglancer/CAVE has largely replaced it for large mammalian volumes."
+  },
+  "discussion_prompts": [
+    "CATMAID uses skeleton-based neuron representation (tree of 3D points) rather than volumetric meshes — what are the tradeoffs of this representation for different analysis tasks in connectomics?",
+    "How does CATMAID's collaborative annotation model compare to crowd-sourced games like Eyewire for quality, throughput, and the types of tasks each approach is suited for?",
+    "What were the key architectural decisions in CATMAID that have influenced the design of subsequent connectomics annotation tools like neuroglancer and CAVE?"
+  ],
+  "dimension": "proofreading",
+  "tags": ["tool:catmaid", "infrastructure:collaborative-annotation", "species:drosophila", "method:skeleton-tracing", "infrastructure:web-based", "tool:database"]
+}

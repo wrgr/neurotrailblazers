@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Meta-analyses pool results from multiple studies to improve statistical power, but heterogeneous results across studies can obscure rather than clarify conclusions — and no standard measure existed to quantify and communicate inconsistency across studies to clinical readers.",
+    "challenge": "Existing measures of heterogeneity (Cochran's Q, τ²) were either scale-dependent or required strong distributional assumptions, making it difficult to compare heterogeneity across meta-analyses or communicate its practical importance to non-statisticians.",
+    "action": "Higgins et al. proposed the I² statistic — the percentage of total variance in a meta-analysis attributable to between-study heterogeneity — derived from Q and its expected value under homogeneity, and provided descriptive benchmarks (25%, 50%, 75% as low/moderate/high heterogeneity).",
+    "resolution": "I² became the standard measure for reporting and interpreting heterogeneity in meta-analyses, widely adopted in clinical research including neuroscience systematic reviews, enabling readers to quickly assess whether pooled estimates are meaningful or dominated by cross-study inconsistency.",
+    "future_work": "Limitations of I² — its dependence on number of studies and precision of included studies — have motivated development of prediction intervals and more nuanced heterogeneity reporting in recent methodological work."
+  },
+  "plain_language_summary": "When multiple studies measure the same effect (say, whether a drug improves memory), their results often disagree. I² is a simple number from 0% to 100% that tells you how much of this disagreement is real (due to genuine differences between studies) versus random chance. This paper introduced I² and it quickly became the standard way to report how consistent a collection of studies is when their results are combined.",
+  "summaries": {
+    "beginner": "When scientists combine results from many studies in a 'meta-analysis,' they need to know whether the studies agree with each other. I² is a percentage that measures disagreement: 0% means all studies tell the same story, 100% means they tell completely different stories. This paper introduced I² and it became the standard way to report this in medical and scientific research.",
+    "intermediate": "I² = max(0, (Q-(k-1))/Q) where Q is Cochran's heterogeneity statistic and k is the number of studies. Unlike Q alone, I² is scale-free and interpretable without knowledge of the number of studies. In connectomics-adjacent applications, I² is relevant for meta-analyses of imaging biomarkers (e.g., gray matter volume differences across Alzheimer's studies) or behavioral measures across laboratories. Thresholds of 25/50/75% for low/moderate/high heterogeneity, while useful heuristics, should not be applied mechanically.",
+    "advanced": "I²'s widespread adoption has been accompanied by growing recognition of its limitations: I² increases with study precision even when the true between-study variance (τ²) is constant, making it misleading when included studies have very different sample sizes. For connectomics meta-analyses (e.g., pooling synapse density estimates across multiple partial reconstructions), the prediction interval around the pooled estimate is often more informative than I² alone. This paper appears in a connectomics dataset primarily because it is extremely highly cited (~62,000) and intersects citation networks through neuroscience systematic reviews rather than direct connectomics application."
+  },
+  "discussion_prompts": [
+    "I² can increase with study precision even when true heterogeneity is constant — how would you supplement I² with other statistics when reporting a meta-analysis of connectivity measures across multiple reconstructions?",
+    "If a meta-analysis of synaptic density in Alzheimer's versus control tissue shows I² = 70%, what are the appropriate conclusions, and what would you do next?",
+    "How would you design a multi-site connectomics study to minimize between-site heterogeneity, and which aspects of the pipeline are most likely to introduce systematic heterogeneity?"
+  ],
+  "dimension": "methods-general",
+  "tags": ["method:statistics", "method:meta-analysis", "method:heterogeneity", "review:methodology"]
+}

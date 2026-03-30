@@ -1,0 +1,31 @@
+{
+  "id": "saalfeld-2023-n5-zarr",
+  "title": "N5 — a scalable Java API for hierarchies of chunked n-dimensional tensors and structured metadata",
+  "authors": [
+    "Saalfeld S",
+    "Bogovic JA",
+    "Hanslovsky P",
+    "Pisarev I",
+    "Nunez-Iglesias J"
+  ],
+  "year": 2023,
+  "journal": "GitHub / Software",
+  "doi": null,
+  "url": "https://github.com/saalfeldlab/n5",
+  "abstract": "N5 is a library and specification for storing large chunked n-dimensional datasets in a hierarchy of groups, supporting multiple backends including HDF5, Zarr, and cloud object stores. It is widely used in connectomics for managing petascale EM volumes and associated segmentation data.",
+  "seed_expert": "Stephan Saalfeld",
+  "author_tier": 2,
+  "dimensions": [
+    "infrastructure"
+  ],
+  "tags": [
+    "N5",
+    "Zarr",
+    "data-formats",
+    "chunked-storage",
+    "cloud-storage",
+    "software"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "N5 is a software project rather than a traditional paper. No formal publication exists; this references the GitHub repository. Author list is approximate based on major contributors. Critical infrastructure for connectomics data management."
+}

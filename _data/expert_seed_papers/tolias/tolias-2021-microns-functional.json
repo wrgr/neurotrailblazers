@@ -1,0 +1,35 @@
+{
+  "id": "tolias-2021-microns-functional",
+  "title": "From the connectome to brain function",
+  "authors": [
+    "Tolias AS",
+    "Reimer J",
+    "Fahey PG",
+    "Ding Z",
+    "Sinz FH",
+    "Froudarakis E",
+    "Ecker AS",
+    "Walker EY",
+    "Pitkow X",
+    "Cobos E"
+  ],
+  "year": 2024,
+  "journal": "Nature Neuroscience",
+  "doi": "10.1038/s41593-024-01786-1",
+  "url": "https://doi.org/10.1038/s41593-024-01786-1",
+  "abstract": "This perspective discusses how the MICrONS functional connectomics pipeline — combining large-scale calcium imaging with dense EM reconstruction — enables mapping from structure to function, and outlines challenges in using connectomes to predict neural computation.",
+  "seed_expert": "Andreas Tolias",
+  "author_tier": 1,
+  "dimensions": [
+    "connectomics",
+    "network-analysis"
+  ],
+  "tags": [
+    "MICrONS",
+    "structure-function",
+    "perspective",
+    "functional-connectomics"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Year and exact author list need verification. Tolias perspective on connectome-to-function mapping from MICrONS project."
+}

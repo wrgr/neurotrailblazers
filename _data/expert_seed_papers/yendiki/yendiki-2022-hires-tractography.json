@@ -1,0 +1,30 @@
+{
+  "id": "yendiki-2022-hires-tractography",
+  "title": "Post mortem mapping of connectional anatomy for the validation of diffusion MRI",
+  "authors": [
+    "Yendiki A",
+    "Aggarwal M",
+    "Vos de Wael R",
+    "Fischl B"
+  ],
+  "year": 2022,
+  "journal": "NeuroImage",
+  "doi": "10.1016/j.neuroimage.2022.119146",
+  "url": "https://doi.org/10.1016/j.neuroimage.2022.119146",
+  "abstract": "This work combines ex vivo high-resolution diffusion MRI with optical imaging and tracer injections in the same brains, enabling ground-truth validation of tractography algorithms at mesoscopic resolution and revealing both strengths and systematic biases.",
+  "seed_expert": "Anastasia Yendiki",
+  "author_tier": 1,
+  "dimensions": [
+    "image-acquisition",
+    "connectomics"
+  ],
+  "tags": [
+    "tractography",
+    "diffusion-MRI",
+    "validation",
+    "high-resolution",
+    "ex-vivo"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Author list is approximate and needs verification. Represents Yendiki's work on ground-truth validation of diffusion tractography."
+}

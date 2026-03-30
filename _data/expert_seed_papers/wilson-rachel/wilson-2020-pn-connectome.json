@@ -1,0 +1,46 @@
+{
+  "id": "wilson-2020-pn-connectome",
+  "title": "Complete connectomic reconstruction of olfactory projection neurons in the fly brain",
+  "authors": [
+    "Bates AS",
+    "Schlegel P",
+    "Roberts RJV",
+    "Drummond N",
+    "Tamber IJ",
+    "Turnbull R",
+    "Zhao X",
+    "Marin EC",
+    "Popovici PD",
+    "Dhawan S",
+    "Jamasb A",
+    "Javier A",
+    "Serratosa Capdevila L",
+    "Li F",
+    "Rubin GM",
+    "Waddell S",
+    "Bock DD",
+    "Costa M",
+    "Jefferis GSXE"
+  ],
+  "year": 2020,
+  "journal": "Current Biology",
+  "doi": "10.1016/j.cub.2020.06.042",
+  "url": "https://doi.org/10.1016/j.cub.2020.06.042",
+  "abstract": "Complete reconstruction of all olfactory projection neurons in the Drosophila hemibrain connectome reveals principles of synaptic connectivity in the mushroom body and lateral horn, enabling systematic comparison of structure and function in olfactory circuits.",
+  "seed_expert": "Rachel Wilson",
+  "author_tier": 1,
+  "dimensions": [
+    "connectomics",
+    "cell-types",
+    "case-studies"
+  ],
+  "tags": [
+    "drosophila",
+    "olfactory",
+    "projection-neurons",
+    "hemibrain",
+    "connectome-reconstruction"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Author list and journal need verification. This may be Bates et al. 2020 published in Current Biology rather than eLife. Wilson may or may not be listed as senior author on this specific paper vs. a related one. Verify Wilson's role and the exact publication venue."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "tolias-2018-subnetworks-learning",
+  "title": "Excitatory and inhibitory subnetworks are equally selective during decision-making and emerge simultaneously during learning",
+  "authors": [
+    "Najafi F",
+    "Elsayed GF",
+    "Cao R",
+    "Pnevmatikakis E",
+    "Latham PE",
+    "Cunningham JP",
+    "Bhatt DK",
+    "Tolias AS"
+  ],
+  "year": 2020,
+  "journal": "Neuron",
+  "doi": "10.1016/j.neuron.2019.09.045",
+  "url": "https://doi.org/10.1016/j.neuron.2019.09.045",
+  "abstract": "Using two-photon calcium imaging in mouse cortex during perceptual decision-making, this study shows that excitatory and inhibitory subnetworks are equally selective and emerge simultaneously during learning, challenging models where inhibition merely balances excitation.",
+  "seed_expert": "Andreas Tolias",
+  "author_tier": 1,
+  "dimensions": [
+    "network-analysis",
+    "connectomics"
+  ],
+  "tags": [
+    "functional-connectivity",
+    "decision-making",
+    "excitatory-inhibitory",
+    "two-photon",
+    "learning"
+  ],
+  "duplicate_of_existing": null,
+  "notes": "Author list and year need verification; paper may have been published in 2020 rather than 2018 preprint. Tolias lab work on functional subnetwork selectivity."
+}

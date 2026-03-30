@@ -700,6 +700,26 @@ papers:
       — the requirement for unbroken section series. By accepting controlled cuts at ~20 μm intervals, the method tolerates
       lost sections within slabs and enables multi-microscope parallelism. This approach was used in the MICrONS mm³ volume
       acquisition pipeline.
+  ocar:
+    opportunity: Serial section EM required unbroken series of thousands of ultra-thin sections, and any lost section could break neurite continuity. Scaling to millimeter-scale volumes demanded a way to relax this constraint.
+    challenge: Cutting thicker slabs introduced surface damage at each cut face, and computationally stitching sub-volumes across slab boundaries required precise alignment despite the disrupted tissue interface.
+    action: Hayworth et al. developed hot-knife thick-section partitioning using a heated diamond blade to cut resin-embedded tissue into ~20 um slabs with minimal surface damage, then sectioned each slab conventionally for ATUM-SEM and computationally stitched the results.
+    resolution: The method enabled parallelized multi-microscope imaging and tolerated occasional lost sections within slabs, directly enabling the MICrONS cubic-millimeter volume acquisition pipeline.
+    future_work: Optimizing slab thickness and stitching algorithms for even larger volumes, and reducing artifacts at slab boundaries, remain active areas of development.
+  bibtex: >-
+    @article{hayworth2015ultrastructurally,
+      title={Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics},
+      author={Hayworth, Kenneth J and Xu, C Shan and Lu, Zhiyuan and others},
+      journal={Nature Methods},
+      volume={12},
+      number={4},
+      pages={319--322},
+      year={2015},
+      doi={10.1038/nmeth.3292}
+    }
+  plaintext_citation: "Hayworth, K. J., Xu, C. S., Lu, Z., et al. (2015). Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics. Nature Methods, 12(4), 319-322."
+  code_url: null
+  data_url: null
 - id: yin-2020
   title: A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy
   authors: Yin W, Brittain D, Bhardwaj J, et al.
@@ -735,6 +755,26 @@ papers:
       — automated focus assessment, contrast monitoring, section damage detection, and real-time re-imaging decisions — represents
       a mature approach to acquisition reliability at scale. The paper provides concrete throughput numbers useful for planning
       future large-scale acquisitions.
+  ocar:
+    opportunity: Imaging a cubic millimeter of mouse cortex for the MICrONS project required acquiring and assembling petabytes of EM imagery, far exceeding the throughput of any single microscope or manual workflow.
+    challenge: Sustaining high imaging throughput over months demanded automated stage control, real-time quality assessment, parallel operation of multiple TEMs, and computational infrastructure for petabyte-scale image assembly without human bottlenecks.
+    action: Yin et al. built an industrial-scale multi-beam TEM pipeline with automated focus and contrast monitoring, real-time QA dashboards for section damage detection and re-imaging decisions, and parallel operation of multiple microscopes achieving sustained throughput of ~1 megapixel/second per instrument.
+    resolution: The pipeline successfully acquired the complete MICrONS mm-cubed cortical volume, demonstrating that connectomics imaging could be industrialized with mature QA practices and providing concrete throughput benchmarks for planning future projects.
+    future_work: Scaling to even larger volumes (e.g., whole mouse brain) will require further automation, higher parallelism, and addressing the computational costs of petabyte-scale assembly.
+  bibtex: >-
+    @article{yin2020petascale,
+      title={A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy},
+      author={Yin, Wenjing and Brittain, Derrick and Bhardwaj, Jay and others},
+      journal={Nature Communications},
+      volume={11},
+      number={1},
+      pages={4949},
+      year={2020},
+      doi={10.1038/s41467-020-18659-3}
+    }
+  plaintext_citation: "Yin, W., Brittain, D., Bhardwaj, J., et al. (2020). A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy. Nature Communications, 11(1), 4949."
+  code_url: null
+  data_url: https://www.microns-explorer.org/
 - id: lichtman-denk-2011
   title: 'The big and the small: Challenges of imaging the brain''s circuits'
   authors: Lichtman JW, Denk W
@@ -767,6 +807,26 @@ papers:
       quantify the imaging throughput required for mammalian connectomics and argue that brute-force scaling is insufficient
       without fundamental automation advances. Their analysis of the 'data bottleneck' anticipated the current state of the
       field.
+  ocar:
+    opportunity: Connectomics required imaging brain tissue at nanometer resolution across millimeter-scale volumes, but no single imaging modality could achieve both simultaneously, and the tradeoffs between approaches were poorly quantified.
+    challenge: The brain spans five orders of magnitude in scale from synapses to circuits. Achieving synapse-level resolution (~10 nm) across circuit-scale fields of view (~mm) required throughput improvements of many orders of magnitude beyond existing methods.
+    action: Lichtman and Denk provided a quantitative analysis of the resolution-volume tradeoff across light microscopy, serial section EM, SBEM, and FIB-SEM, and introduced the concept of correlative multi-scale imaging to bridge resolution gaps.
+    resolution: The perspective established the intellectual framework for understanding why connectomics is hard and what engineering advances are needed, correctly anticipating the data and automation bottlenecks that have defined the subsequent decade of the field.
+    future_work: The authors argued that brute-force scaling alone would be insufficient and that fundamental advances in automation, correlative imaging, and computational analysis would be essential for mammalian connectomics.
+  bibtex: >-
+    @article{lichtman2011big,
+      title={The big and the small: Challenges of imaging the brain's circuits},
+      author={Lichtman, Jeff W and Denk, Winfried},
+      journal={Science},
+      volume={334},
+      number={6056},
+      pages={618--623},
+      year={2011},
+      doi={10.1126/science.1209168}
+    }
+  plaintext_citation: "Lichtman, J. W., & Denk, W. (2011). The big and the small: Challenges of imaging the brain's circuits. Science, 334(6056), 618-623."
+  code_url: null
+  data_url: null
 - id: briggman-bock-2012
   title: Volume electron microscopy for neuronal circuit reconstruction
   authors: Briggman KL, Bock DD
@@ -799,6 +859,26 @@ papers:
       the reconstruction pipeline: anisotropic voxels create directionally biased segmentation errors, FIB-SEM''s isotropy
       improves small-caliber neurite tracing but limits volume. The framework for matching imaging modality to scientific
       question continues to guide project planning.'
+  ocar:
+    opportunity: Multiple volume EM modalities existed for neural circuit reconstruction but their relative strengths, limitations, and suitability for different biological questions had not been systematically compared.
+    challenge: Each modality involved complex tradeoffs between resolution, volume, throughput, section preservation, and downstream segmentation quality that were difficult to evaluate without direct comparison.
+    action: Briggman and Bock systematically compared SBEM, FIB-SEM, and ATUM-SEM across resolution, achievable volume, throughput, and section preservation, providing a framework for matching imaging modality to scientific question.
+    resolution: The review established a decision framework that continues to guide connectomics project planning, showing how modality-specific technical parameters propagate through reconstruction pipelines to affect biological conclusions.
+    future_work: As imaging technologies continue to evolve, the framework needs updating to incorporate newer modalities and hybrid approaches.
+  bibtex: >-
+    @article{briggman2012volume,
+      title={Volume electron microscopy for neuronal circuit reconstruction},
+      author={Briggman, Kevin L and Bock, Davi D},
+      journal={Current Opinion in Neurobiology},
+      volume={22},
+      number={1},
+      pages={154--161},
+      year={2012},
+      doi={10.1016/j.conb.2011.10.022}
+    }
+  plaintext_citation: "Briggman, K. L., & Bock, D. D. (2012). Volume electron microscopy for neuronal circuit reconstruction. Current Opinion in Neurobiology, 22(1), 154-161."
+  code_url: null
+  data_url: null
 - id: dorkenwald-2024-flywire
   title: Neuronal wiring diagram of an adult brain
   authors: Dorkenwald S et al.
@@ -838,6 +918,25 @@ papers:
       supported by appropriate infrastructure (CAVE, chunked graph). The proofreading strategy balanced coverage against accuracy
       by prioritizing high-impact errors. The QA framework — including path-length completeness, synapse assignment accuracy,
       and known-circuit validation — sets a standard for future connectome releases.
+  ocar:
+    opportunity: The FAFB dataset provided a complete EM volume of the adult Drosophila brain, but the automated segmentation contained millions of errors that needed to be corrected before the wiring diagram could be used for biological analysis.
+    challenge: Proofreading an entire brain's worth of neurons required coordinating hundreds of contributors editing the same dataset simultaneously, while maintaining quality standards and tracking which regions had been adequately reviewed.
+    action: Dorkenwald et al. combined automated segmentation with large-scale crowd-sourced proofreading coordinated through the CAVE infrastructure, using a chunked graph architecture that supported real-time multi-user editing and rigorous QA metrics to assess completeness and accuracy.
+    resolution: The resulting FlyWire connectome — roughly 130,000 neurons and millions of connections — is the most complete brain wiring diagram ever assembled, demonstrating that crowd-sourced proofreading can scale to whole-brain connectomics.
+    future_work: Applying similar approaches to larger brains and establishing how much proofreading is sufficient for different biological questions remain key challenges.
+  bibtex: >-
+    @article{dorkenwald2024neuronal,
+      title={Neuronal wiring diagram of an adult brain},
+      author={Dorkenwald, Sven and others},
+      journal={Nature},
+      volume={634},
+      pages={124--138},
+      year={2024},
+      doi={10.1038/s41586-024-07558-y}
+    }
+  plaintext_citation: "Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult brain. Nature, 634, 124-138."
+  code_url: https://github.com/seung-lab/FlyWireRelease
+  data_url: https://codex.flywire.ai/
   also_dimensions:
   - case-studies
   - connectomics
@@ -875,6 +974,25 @@ papers:
       quality, volume size, and desired accuracy. The analysis of focused versus exhaustive proofreading strategies directly
       informs resource allocation decisions. The QA metrics discussed — including split/merge rates and their asymmetric impact
       on downstream analysis — remain central to pipeline evaluation.
+  ocar:
+    opportunity: Automated segmentation was improving but still produced errors that required human correction. The connectomics field needed a framework for understanding how proofreading effort scales with dataset size and segmentation quality.
+    challenge: Proofreading cost depended on segmentation error rates, volume size, and desired accuracy in complex ways that made it difficult to plan resource allocation or evaluate pipeline improvements.
+    action: Plaza et al. reviewed the reconstruction pipeline with a focus on the proofreading bottleneck, providing quantitative analysis of how segmentation error rates translate into proofreading time and comparing focused versus exhaustive proofreading strategies.
+    resolution: The paper established proofreading as the rate-limiting step for large-scale connectomics and provided a quantitative framework for resource allocation that directly informed subsequent projects including the hemibrain and FlyWire.
+    future_work: Reducing the proofreading bottleneck through better segmentation algorithms, smarter proofreading prioritization, and automated error correction remained critical open challenges.
+  bibtex: >-
+    @article{plaza2014toward,
+      title={Toward large-scale connectome reconstructions},
+      author={Plaza, Stephen M and Scheffer, Louis K and Chklovskii, Dmitri B},
+      journal={Current Opinion in Neurobiology},
+      volume={25},
+      pages={201--210},
+      year={2014},
+      doi={10.1016/j.conb.2014.01.019}
+    }
+  plaintext_citation: "Plaza, S. M., Scheffer, L. K., & Chklovskii, D. B. (2014). Toward large-scale connectome reconstructions. Current Opinion in Neurobiology, 25, 201-210."
+  code_url: null
+  data_url: null
 - id: zung-2017-proof
   title: An error detection and correction framework for connectomics
   authors: Zung J et al.
@@ -907,6 +1025,23 @@ papers:
       key insight is that merge errors and split errors have different detection signatures and require different correction
       strategies. The system can be deployed as a preprocessing step before human proofreading, focusing annotator effort
       on genuinely ambiguous regions.
+  ocar:
+    opportunity: Automated neuron segmentation produced merge and split errors requiring time-consuming human proofreading, and there was no automated system to detect and correct both error types in a unified framework.
+    challenge: Merge and split errors have different spatial signatures and require different correction strategies, making unified detection difficult across large volumes.
+    action: Zung et al. trained a convolutional network to classify candidate error locations as merge or split errors and suggest targeted corrections, creating an iterative detect-correct loop.
+    resolution: The system substantially reduced segmentation errors and focused human proofreading effort on genuinely ambiguous regions, bridging fully automated and semi-automated reconstruction.
+    future_work: Integrating error detection into active learning pipelines where the system learns from human corrections on the hardest cases.
+  bibtex: >-
+    @inproceedings{zung2017error,
+      title={An error detection and correction framework for connectomics},
+      author={Zung, Jonathan and others},
+      booktitle={Advances in Neural Information Processing Systems},
+      volume={30},
+      year={2017}
+    }
+  plaintext_citation: "Zung, J., et al. (2017). An error detection and correction framework for connectomics. In Advances in Neural Information Processing Systems (NeurIPS 2017)."
+  code_url: null
+  data_url: null
 - id: matejek-2019
   title: Biologically-constrained graphs for long-range interactions in EM volume segmentation
   authors: Matejek B et al.
@@ -940,6 +1075,24 @@ papers:
       that manifest far away. The biologically-constrained graph propagates information across long spatial ranges while respecting
       neuroanatomical constraints. The method improves upon standard region adjacency graphs and demonstrates that domain-specific
       inductive biases substantially reduce topological errors in segmentation.'
+  ocar:
+    opportunity: Agglomeration methods that only considered local boundary information failed when neurons ran in close parallel over long distances, causing errors that propagated far from the decision point.
+    challenge: Capturing long-range spatial relationships between supervoxels while respecting biological constraints on neurite geometry and branching was computationally expensive and required domain-specific knowledge.
+    action: Matejek et al. constructed biologically-constrained graphs that incorporated priors about neurite geometry and branching to propagate information across long spatial ranges during the agglomeration step.
+    resolution: The method reduced both merge and split errors compared to standard region adjacency graphs, demonstrating that domain-specific inductive biases substantially improve segmentation quality on benchmark connectomics datasets.
+    future_work: Extending the approach to incorporate additional biological priors such as cell-type-specific morphology and scaling to whole-brain volumes.
+  bibtex: >-
+    @inproceedings{matejek2019biologically,
+      title={Biologically-constrained graphs for long-range interactions in {EM} volume segmentation},
+      author={Matejek, Brian and others},
+      booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      pages={2158--2167},
+      year={2019},
+      doi={10.1109/CVPR.2019.00214}
+    }
+  plaintext_citation: "Matejek, B., et al. (2019). Biologically-constrained graphs for long-range interactions in EM volume segmentation. In IEEE CVPR, 2158-2167."
+  code_url: null
+  data_url: null
 - id: dorkenwald-2017-syconn
   title: Automated synaptic connectivity inference for volume electron microscopy
   authors: Dorkenwald S et al.
@@ -973,6 +1126,26 @@ papers:
       to support connectomic analysis. The QA framework — precision/recall for synapse detection, partner assignment accuracy,
       and type classification metrics — provides a template for evaluating connectivity inference pipelines. The error analysis
       reveals that partner assignment is the primary accuracy bottleneck.
+  ocar:
+    opportunity: After neurons were segmented, identifying their synaptic connections still required extensive manual annotation, creating a major bottleneck in turning reconstructions into connectivity maps.
+    challenge: Automated synapse detection required not just finding synaptic structures but correctly assigning pre- and postsynaptic partners and classifying synapse types — tasks with high ambiguity in dense neuropil.
+    action: Dorkenwald et al. developed SyConn, a pipeline that automatically detects synapses, assigns them to pre- and postsynaptic neuron partners, and classifies synapse types in volume EM data, validated against manual annotations in Drosophila tissue.
+    resolution: SyConn demonstrated that synapse detection and partner assignment could be automated with sufficient accuracy to support connectomic analysis, establishing QA metrics (precision/recall for detection, partner accuracy) as a template for evaluating connectivity inference pipelines.
+    future_work: Improving partner assignment accuracy, which was identified as the primary bottleneck, and generalizing across species and tissue preparations.
+  bibtex: >-
+    @article{dorkenwald2017automated,
+      title={Automated synaptic connectivity inference for volume electron microscopy},
+      author={Dorkenwald, Sven and others},
+      journal={Nature Methods},
+      volume={14},
+      number={4},
+      pages={435--442},
+      year={2017},
+      doi={10.1038/nmeth.4206}
+    }
+  plaintext_citation: "Dorkenwald, S., et al. (2017). Automated synaptic connectivity inference for volume electron microscopy. Nature Methods, 14(4), 435-442."
+  code_url: https://github.com/StructuralNeurobiologyLab/SyConn
+  data_url: null
 - id: dorkenwald-2022-flywire-platform
   title: 'FlyWire: online community for whole-brain connectomics'
   authors: Dorkenwald S et al.
@@ -1007,6 +1180,26 @@ papers:
       localized, independently editable chunks. This architecture enables O(1) edit operations regardless of dataset size
       and supports concurrent multi-user editing without locks. The platform design demonstrates that connectomics proofreading
       can be effectively crowdsourced when tooling eliminates coordination overhead.
+  ocar:
+    opportunity: The FAFB whole-brain segmentation needed proofreading by hundreds of contributors, but existing tools could not support real-time collaborative editing of a dataset this large without edit conflicts.
+    challenge: Enabling hundreds of simultaneous users to edit the same segmentation required a data structure that supported conflict-free multi-user operations at constant time regardless of dataset size.
+    action: Dorkenwald et al. built the FlyWire platform using a chunked graph architecture (CAVE) that decomposed the segmentation into spatially localized, independently editable chunks, enabling O(1) edit operations and concurrent multi-user editing without locks.
+    resolution: The platform successfully coordinated hundreds of contributors to proofread neurons across the entire Drosophila brain, demonstrating that connectomics proofreading can be crowdsourced when tooling eliminates coordination overhead.
+    future_work: Adapting the platform for mammalian-scale datasets and developing better onboarding tools for non-expert contributors.
+  bibtex: >-
+    @article{dorkenwald2022flywire,
+      title={{FlyWire}: online community for whole-brain connectomics},
+      author={Dorkenwald, Sven and others},
+      journal={Nature Methods},
+      volume={19},
+      number={1},
+      pages={119--128},
+      year={2022},
+      doi={10.1038/s41592-021-01330-0}
+    }
+  plaintext_citation: "Dorkenwald, S., et al. (2022). FlyWire: Online community for whole-brain connectomics. Nature Methods, 19(1), 119-128."
+  code_url: https://github.com/seung-lab/FlyWireRelease
+  data_url: https://codex.flywire.ai/
 - id: seung-2009
   title: 'Reading the book of memory: Sparse sampling versus dense mapping of connectomes'
   authors: Seung HS
@@ -1040,6 +1233,26 @@ papers:
       connectivity motifs. Seung argues that sparse reconstructions are inherently biased toward strong connections and miss
       higher-order structure. The analysis has implications for proofreading strategy: dense reconstruction demands uniformly
       high accuracy, whereas sparse reconstruction tolerates lower accuracy on non-targeted neurons.'
+  ocar:
+    opportunity: Sparse reconstruction focused on selected neurons was standard practice, but it was unclear whether dense reconstruction would yield qualitatively different biological insights worth the much greater effort.
+    challenge: Formalizing the information tradeoff between sparse and dense approaches required analyzing statistical power for detecting connectivity motifs under different reconstruction completeness levels.
+    action: Seung presented a theoretical analysis showing that dense reconstruction reveals higher-order structure (motifs, statistical regularities) invisible to sparse sampling, and that sparse approaches are biased toward strong connections.
+    resolution: The analysis provided the intellectual justification for dense and whole-brain connectomics projects, arguing that the qualitative difference in discoverable biology justified the quantitative increase in reconstruction effort.
+    future_work: Determining minimum reconstruction density for specific biological questions and developing adaptive sparse-to-dense strategies.
+  bibtex: >-
+    @article{seung2009reading,
+      title={Reading the book of memory: Sparse sampling versus dense mapping of connectomes},
+      author={Seung, H Sebastian},
+      journal={Neuron},
+      volume={62},
+      number={1},
+      pages={17--29},
+      year={2009},
+      doi={10.1016/j.neuron.2009.02.021}
+    }
+  plaintext_citation: "Seung, H. S. (2009). Reading the book of memory: Sparse sampling versus dense mapping of connectomes. Neuron, 62(1), 17-29."
+  code_url: null
+  data_url: null
 - id: lu-2019-multicut
   title: Large-scale structured prediction for connectomics using multicut
   authors: various authors
@@ -1074,6 +1287,22 @@ papers:
       are globally coupled. Unlike greedy approaches, multicut provides theoretical guarantees about solution quality relative
       to the objective. The paper evaluates computational strategies for scaling to large volumes and analyzes how edge weight
       calibration affects the merge-split error tradeoff on standard connectomics benchmarks.
+  ocar:
+    opportunity: Greedy agglomeration methods for neuron segmentation made locally optimal merge decisions that could create globally inconsistent results, and a principled optimization framework was needed.
+    challenge: Jointly optimizing all fragment-merging decisions is NP-hard (the multicut problem), requiring computational strategies to scale to millions of supervoxels in connectomics volumes.
+    action: The authors applied the multicut (correlation clustering) framework to large-scale neuron agglomeration, jointly optimizing all merge/split decisions against a global objective that balances both error types.
+    resolution: The method achieved competitive segmentation accuracy with improved global consistency compared to greedy approaches, and provided theoretical guarantees about solution quality relative to the objective.
+    future_work: Scaling multicut solvers to larger volumes and integrating learned edge weights with the optimization framework.
+  bibtex: >-
+    @inproceedings{lu2019multicut,
+      title={Large-scale structured prediction for connectomics using multicut},
+      author={Lu, various authors},
+      booktitle={Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+      year={2019}
+    }
+  plaintext_citation: "Lu, et al. (2019). Large-scale structured prediction for connectomics using multicut. In MICCAI 2019."
+  code_url: null
+  data_url: null
 - id: zeng-sanes-2017
   title: 'Neuronal cell-type classification: challenges, opportunities and the path forward'
   authors: Zeng H, Sanes JR
@@ -1105,6 +1334,26 @@ papers:
     advanced: This review establishes the intellectual framework for interpreting cell type assignments in connectomics datasets.
       The critical tension is between lumping and splitting. Whether connectivity-defined types correspond to transcriptomically
       defined types remains open.
+  ocar:
+    opportunity: Neurons were classified by morphology, electrophysiology, molecular markers, or connectivity, but each approach gave different answers, and there was no unified framework for when to use which.
+    challenge: Cross-modal correspondence between classification schemes was imperfect, and the appropriate granularity of cell type definitions depended on the scientific question being asked.
+    action: Zeng and Sanes provided a comprehensive framework for cell type classification across modalities, arguing that no single modality is sufficient and that classification granularity must be matched to the question.
+    resolution: The review established the intellectual framework used to interpret cell type assignments in connectomics datasets, highlighting the critical tension between lumping and splitting.
+    future_work: Whether connectivity-defined types from EM data correspond to transcriptomically defined types remains an active and important open question.
+  bibtex: >-
+    @article{zeng2017neuronal,
+      title={Neuronal cell-type classification: challenges, opportunities and the path forward},
+      author={Zeng, Hongkui and Sanes, Joshua R},
+      journal={Nature Reviews Neuroscience},
+      volume={18},
+      number={9},
+      pages={530--546},
+      year={2017},
+      doi={10.1038/nrn.2017.85}
+    }
+  plaintext_citation: "Zeng, H., & Sanes, J. R. (2017). Neuronal cell-type classification: Challenges, opportunities and the path forward. Nature Reviews Neuroscience, 18(9), 530-546."
+  code_url: null
+  data_url: null
 - id: markram-2004
   title: Interneurons of the neocortical inhibitory system
   authors: Markram H, Toledo-Rodriguez M, Wang Y, et al.
@@ -1135,6 +1384,26 @@ papers:
     advanced: Foundational reference for interpreting interneuron morphology in EM connectomics. The axonal arborization-based
       classification is directly accessible from connectome data, but translating from light microscopy (complete arbors)
       to EM (often partial arbors) introduces systematic biases.
+  ocar:
+    opportunity: The cortex contained many types of inhibitory interneurons, but no comprehensive classification existed that integrated morphological, electrophysiological, and molecular criteria.
+    challenge: Interneurons exhibit enormous diversity across multiple classification axes, and the relationships between morphological types, molecular markers, and functional properties were incompletely mapped.
+    action: Markram et al. provided a systematic classification integrating morphology, electrophysiology, and molecular markers for cortical interneurons including basket cells, chandelier cells, Martinotti cells, and neurogliaform cells.
+    resolution: The taxonomy became the foundational reference for interpreting inhibitory neuron morphology in EM connectomics, though translating from light microscopy (complete arbors) to EM (often partial arbors) introduces systematic biases.
+    future_work: Mapping the correspondence between morphological interneuron types visible in EM and molecular subtypes accessible through transcriptomics.
+  bibtex: >-
+    @article{markram2004interneurons,
+      title={Interneurons of the neocortical inhibitory system},
+      author={Markram, Henry and Toledo-Rodriguez, Maria and Wang, Yun and others},
+      journal={Nature Reviews Neuroscience},
+      volume={5},
+      number={10},
+      pages={793--807},
+      year={2004},
+      doi={10.1038/nrn1519}
+    }
+  plaintext_citation: "Markram, H., Toledo-Rodriguez, M., Wang, Y., et al. (2004). Interneurons of the neocortical inhibitory system. Nature Reviews Neuroscience, 5(10), 793-807."
+  code_url: null
+  data_url: null
 - id: tasic-2018
   title: Shared and distinct transcriptomic cell types across neocortical areas
   authors: Tasic B, Yao Z, Graybuck LT, et al.
@@ -1166,6 +1435,25 @@ papers:
     advanced: The most comprehensive single-cell transcriptomic reference for mouse cortex. For connectomics, cell type classifiers
       trained on one volume may not transfer to other areas. The hierarchical taxonomy provides a template for organizing
       connectomics-derived classifications.
+  ocar:
+    opportunity: Large-scale single-cell RNA sequencing made it possible to build the first comprehensive transcriptomic cell type taxonomy of mouse neocortex, potentially revealing whether different cortical areas use the same or different cell types.
+    challenge: Previous studies sampled too few cells or too few areas to determine whether neuronal diversity varies across cortical regions. Distinguishing true biological variation from technical noise across experiments required rigorous statistical frameworks.
+    action: Tasic et al. performed scRNA-seq on approximately 24,000 cells from two mouse visual cortical areas (VISp and ALM), applying iterative clustering to define 133 transcriptomic cell types organized in a hierarchical taxonomy.
+    resolution: GABAergic interneuron types are largely shared across areas, while glutamatergic excitatory types show striking area-specific specialization, particularly in deep layers. The resulting taxonomy became the reference standard for cortical cell type classification.
+    future_work: Extending the taxonomy to additional cortical and subcortical areas, integrating with connectomics data to determine whether transcriptomic types correspond to connectivity-defined types, and building cross-modal classifiers that predict transcriptomic identity from morphology or connectivity.
+  bibtex: |
+    @article{tasic2018shared,
+      title={Shared and distinct transcriptomic cell types across neocortical areas},
+      author={Tasic, Bosiljka and Yao, Zizhen and Graybuck, Lucas T and others},
+      journal={Nature},
+      volume={563},
+      pages={72--78},
+      year={2018},
+      doi={10.1038/s41586-018-0654-5}
+    }
+  plaintext_citation: "Tasic B, Yao Z, Graybuck LT, et al. Shared and distinct transcriptomic cell types across neocortical areas. Nature. 2018;563:72-78. doi:10.1038/s41586-018-0654-5"
+  code_url: null
+  data_url: "https://portal.brain-map.org/"
 - id: schneider-mizell-2024
   title: Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex
   authors: Schneider-Mizell CM, Bodor AL, Collman F, et al.
@@ -1196,6 +1484,23 @@ papers:
     advanced: 'Demonstrates the unique value of dense connectomics for cell type classification: features like target layer
       distribution and partner type composition are only accessible at connectome scale. Key challenges include handling incomplete
       arbors and defining features robust to proofreading errors.'
+  ocar:
+    opportunity: The MICrONS cubic-millimeter connectome dataset offered the first opportunity to classify inhibitory interneurons using both morphological and dense synaptic connectivity features, going beyond what any single modality could achieve alone.
+    challenge: Inhibitory neuron subtypes often look morphologically similar, and incomplete proofreading of dendritic and axonal arbors introduces noise into connectivity-based features. Defining robust classification features that tolerate reconstruction errors was a key challenge.
+    action: Schneider-Mizell et al. systematically classified inhibitory neurons in the MICrONS volume using a combination of morphological features (soma depth, arbor extent) and connectivity features (target layer distribution, partner cell type composition, input/output ratios).
+    resolution: Connectivity features significantly improved classification accuracy beyond morphology alone, revealing inhibitory subtypes that are distinguishable only at connectome scale. The study produced a comprehensive census of inhibitory cell types and their circuit-level wiring rules in mouse visual cortex.
+    future_work: Extending the approach to excitatory neurons, validating connectivity-defined types against transcriptomic ground truth, and developing classification features robust enough to work with less completely proofread datasets.
+  bibtex: |
+    @article{schneidermizell2024celltypespecific,
+      title={Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex},
+      author={Schneider-Mizell, Casey M and Bodor, Agnes L and Collman, Forrest and others},
+      journal={bioRxiv},
+      year={2024},
+      doi={10.1101/2023.01.23.525290}
+    }
+  plaintext_citation: "Schneider-Mizell CM, Bodor AL, Collman F, et al. Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex. bioRxiv. 2024. doi:10.1101/2023.01.23.525290"
+  code_url: null
+  data_url: "https://www.microns-explorer.org/"
 - id: biccn-2021
   title: A multimodal cell census and atlas of the mammalian primary motor cortex
   authors: BRAIN Initiative Cell Census Network (BICCN)
@@ -1226,6 +1531,25 @@ papers:
     advanced: 'Establishes the gold standard for multimodal cell type classification. For connectomics: morphological features
       alone distinguish major classes but not fine subtypes, connectivity-defined subtypes often correspond to transcriptomic
       subtypes, and the reproducibility analysis provides confidence intervals for classification reliability.'
+  ocar:
+    opportunity: Rapid advances in single-cell transcriptomics, electrophysiology, morphological reconstruction, and connectivity mapping created the possibility of building the first truly comprehensive, multimodal cell type atlas of a mammalian brain region.
+    challenge: Each measurement modality captures a different aspect of cell identity, and integrating data across modalities — with different sampling biases, noise characteristics, and resolutions — requires principled cross-modal alignment and consensus methods.
+    action: The BICCN consortium applied transcriptomics, chromatin accessibility, electrophysiology, morphological reconstruction, and projection mapping to mouse primary motor cortex, then integrated these modalities using computational methods to define a consensus cell type taxonomy.
+    resolution: The study identified approximately 100 consensus cell types with cross-modal correspondences, demonstrating that transcriptomic types often align with morphological and electrophysiological distinctions. The atlas provides a reference framework for interpreting data from any single modality.
+    future_work: Extending the multimodal atlas to additional brain regions, linking cell types to connectomics-defined circuit roles, and developing automated classifiers that can assign cell types from partial or single-modality data.
+  bibtex: |
+    @article{biccn2021multimodal,
+      title={A multimodal cell census and atlas of the mammalian primary motor cortex},
+      author={{BRAIN Initiative Cell Census Network (BICCN)}},
+      journal={Nature},
+      volume={598},
+      pages={86--102},
+      year={2021},
+      doi={10.1038/s41586-021-03950-0}
+    }
+  plaintext_citation: "BRAIN Initiative Cell Census Network (BICCN). A multimodal cell census and atlas of the mammalian primary motor cortex. Nature. 2021;598:86-102. doi:10.1038/s41586-021-03950-0"
+  code_url: null
+  data_url: null
 - id: loomba-2022
   title: Connectomic comparison of mouse and human cortex
   authors: Loomba S, Straehle J, Ganguly V, et al.
@@ -1256,6 +1580,25 @@ papers:
     advanced: 'First systematic connectomic comparison across mammalian species at synaptic resolution. The methodology —
       matching processing and analysis pipelines across species — is a template for cross-species connectomics. Key findings:
       ~2x higher synapse density in human, shifted E/I ratio, and species-specific motifs.'
+  ocar:
+    opportunity: While mouse connectomics had reached cubic-millimeter scale, no study had systematically compared mouse and human cortical connectivity at synaptic resolution, leaving open whether findings from mouse models generalize to human brain organization.
+    challenge: Meaningful cross-species comparison requires matched tissue preparation, imaging, reconstruction, and analysis pipelines applied to both species. Differences in cortical thickness, neuron density, and neuropil composition complicate direct comparison.
+    action: Loomba et al. performed dense EM reconstruction of matched cortical samples from mouse and human temporal cortex using identical processing and analysis pipelines, enabling direct quantitative comparison of connectivity features.
+    resolution: Human cortex shows approximately 2x higher synapse density per neuron, a shifted excitatory/inhibitory ratio with more inhibitory synapses, and species-specific connectivity motifs. The study established a rigorous methodology for cross-species connectomic comparison.
+    future_work: Extending comparisons to additional species and brain regions, determining whether species-specific connectivity differences reflect computational specialization, and linking structural differences to functional measurements.
+  bibtex: |
+    @article{loomba2022connectomic,
+      title={Connectomic comparison of mouse and human cortex},
+      author={Loomba, Sahil and Straehle, Jakob and Ganguly, Vijayan and others},
+      journal={Science},
+      volume={377},
+      pages={eabo0924},
+      year={2022},
+      doi={10.1126/science.abo0924}
+    }
+  plaintext_citation: "Loomba S, Straehle J, Ganguly V, et al. Connectomic comparison of mouse and human cortex. Science. 2022;377:eabo0924. doi:10.1126/science.abo0924"
+  code_url: null
+  data_url: null
 - id: januszewski-2018
   title: High-precision automated reconstruction of neurons with flood-filling networks
   authors: Januszewski M et al.
@@ -1291,6 +1634,25 @@ papers:
       membership probabilities conditioned on the already-segmented region. This removes the need for a separate agglomeration
       step and shifts the error profile toward split errors (missed branches) rather than merges. The paper benchmarks on
       the songbird area X and Drosophila datasets, reporting large reductions in expected run length (ERL) error.'
+  ocar:
+    opportunity: Automated neuron segmentation was limited by boundary-detection approaches that required a separate, error-prone agglomeration step. A fundamentally different paradigm — growing each neuron from a seed point — could potentially avoid the merge errors that dominated existing pipelines.
+    challenge: Seed-based expansion must handle highly complex neuronal morphologies with thin, branching processes while accumulating enough context to make correct membership decisions. The sequential nature of the approach also poses challenges for computational throughput.
+    action: Januszewski et al. developed flood-filling networks (FFNs) that perform instance segmentation by iteratively predicting an object mask from a moving field of view, using a recurrent 3D CNN that conditions each prediction on the already-segmented region.
+    resolution: FFNs achieved near-human segmentation accuracy on multiple EM datasets with dramatically fewer merge errors than boundary-based methods, shifting the error profile toward split errors (missed branches) that are easier for proofreaders to fix. The approach substantially reduced overall proofreading burden.
+    future_work: Improving throughput through better parallelization of seed expansion, reducing split errors via multi-scale or hierarchical architectures, and combining FFN outputs with agglomeration methods for further accuracy gains.
+  bibtex: |
+    @article{januszewski2018highprecision,
+      title={High-precision automated reconstruction of neurons with flood-filling networks},
+      author={Januszewski, Micha{\l} and others},
+      journal={Nature Methods},
+      volume={15},
+      pages={605--610},
+      year={2018},
+      doi={10.1038/s41592-018-0049-4}
+    }
+  plaintext_citation: "Januszewski M, et al. High-precision automated reconstruction of neurons with flood-filling networks. Nature Methods. 2018;15:605-610. doi:10.1038/s41592-018-0049-4"
+  code_url: "https://github.com/google/ffn"
+  data_url: null
 - id: ronneberger-2015
   title: 'U-Net: Convolutional Networks for Biomedical Image Segmentation'
   authors: Ronneberger O, Fischer P, Brox T
@@ -1326,6 +1688,24 @@ papers:
       with distance-based weight maps at cell boundaries encourages the network to learn thin, continuous boundary predictions.
       U-Net''s influence on connectomics is pervasive: most modern 3D segmentation networks (3D U-Net, FusionNet, etc.) are
       direct descendants of this design.'
+  ocar:
+    opportunity: Biomedical image segmentation required architectures that could produce pixel-precise predictions from very limited training data, a common constraint in microscopy where expert annotation is expensive.
+    challenge: Existing fully convolutional networks lost spatial precision during downsampling, and training with few annotated images risked severe overfitting. A design was needed that preserved fine detail while learning from minimal examples.
+    action: Ronneberger et al. designed the U-Net encoder-decoder architecture with symmetric skip connections that concatenate high-resolution feature maps from the contracting path to the expanding path, combined with aggressive elastic deformation augmentation and a weighted loss emphasizing cell boundaries.
+    resolution: U-Net achieved state-of-the-art performance on biomedical segmentation benchmarks with very few training images. The architecture became the de facto backbone for EM neuron boundary prediction, with virtually all modern connectomics segmentation networks descending from this design.
+    future_work: Extensions to 3D volumes (3D U-Net), incorporation of attention mechanisms, adaptation to anisotropic EM data, and combination with instance segmentation post-processing for connectomics-scale reconstruction.
+  bibtex: |
+    @inproceedings{ronneberger2015unet,
+      title={U-Net: Convolutional Networks for Biomedical Image Segmentation},
+      author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+      booktitle={MICCAI},
+      pages={234--241},
+      year={2015},
+      doi={10.1007/978-3-319-24574-4_28}
+    }
+  plaintext_citation: "Ronneberger O, Fischer P, Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. In: MICCAI. 2015:234-241. doi:10.1007/978-3-319-24574-4_28"
+  code_url: "https://github.com/zhixuhao/unet"
+  data_url: null
 - id: funke-2019
   title: Large scale image segmentation with structured loss based on partial differential equations
   authors: Funke J et al.
@@ -1360,6 +1740,26 @@ papers:
       flow from segmentation-level metrics back to network weights. The method outperforms per-voxel-loss baselines on CREMI
       and FIB-25 benchmarks and demonstrates that optimizing a surrogate that better approximates the true evaluation metric
       yields consistent gains in adapted Rand index and variation of information.
+  ocar:
+    opportunity: Standard voxel-wise loss functions (e.g., cross-entropy) do not directly optimize for the segmentation quality metrics that matter in connectomics (variation of information, adapted Rand index), creating a gap between training objective and evaluation metric.
+    challenge: Segmentation metrics depend on the global partitioning of voxels into segments, which involves a discrete, non-differentiable watershed step. Backpropagating through this step to train the network end-to-end required a mathematical innovation.
+    action: Funke et al. derived a structured loss based on a PDE relaxation of the discrete segmentation objective, enabling gradient flow from segmentation-level metrics through a differentiable approximation of the watershed back to the network weights.
+    resolution: The structured loss consistently outperformed per-voxel cross-entropy baselines on CREMI and FIB-25 benchmarks, demonstrating that optimizing a surrogate closer to the true evaluation metric yields meaningful gains in segmentation quality.
+    future_work: Extending the structured loss to other post-processing methods beyond watershed, combining with instance segmentation approaches like FFNs, and applying the PDE relaxation framework to other discrete optimization problems in connectomics pipelines.
+  bibtex: |
+    @article{funke2019large,
+      title={Large scale image segmentation with structured loss based on partial differential equations},
+      author={Funke, Jan and others},
+      journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      volume={41},
+      number={7},
+      pages={1615--1628},
+      year={2019},
+      doi={10.1109/TPAMI.2018.2858744}
+    }
+  plaintext_citation: "Funke J, et al. Large scale image segmentation with structured loss based on partial differential equations. IEEE TPAMI. 2019;41(7):1615-1628. doi:10.1109/TPAMI.2018.2858744"
+  code_url: "https://github.com/funkelab/funlib.learn.torch"
+  data_url: null
 - id: lee-2017
   title: Superhuman accuracy on the SNEMI3D connectomics challenge
   authors: Lee K, Zung J, Li P, et al.
@@ -1396,6 +1796,22 @@ papers:
       augmentations (elastic deformation, misalignment simulation, missing-section simulation) contribute more to performance
       than architectural depth alone. The 'superhuman' claim is grounded in a direct comparison with independently generated
       human ground-truth annotations that disagree with each other more than the model disagrees with consensus.
+  ocar:
+    opportunity: Deep learning architectures for EM segmentation were improving rapidly, and the SNEMI3D benchmark provided a standardized way to measure whether automated methods could match or exceed human annotator accuracy.
+    challenge: Achieving superhuman accuracy required not only architectural advances but also robustness to the specific artifacts of serial-section EM — misaligned sections, missing sections, and elastic tissue deformations — that trip up both humans and algorithms.
+    action: Lee et al. designed a 3D residual symmetric U-Net and trained it with aggressive domain-specific augmentations including simulated misalignment, missing sections, and elastic deformations, then benchmarked against independently generated human ground-truth annotations.
+    resolution: The model surpassed human performance on SNEMI3D, with ablation studies showing that domain-specific augmentations contributed more to performance than architectural depth alone. The superhuman claim was validated by showing that human annotators disagree with each other more than the model disagrees with consensus.
+    future_work: Extending superhuman performance to more diverse tissue types and species, understanding failure modes on out-of-distribution data, and determining how benchmark performance translates to practical proofreading reduction in production pipelines.
+  bibtex: |
+    @article{lee2017superhuman,
+      title={Superhuman accuracy on the SNEMI3D connectomics challenge},
+      author={Lee, Kisuk and Zung, Jonathan and Li, Peter and others},
+      journal={arXiv preprint arXiv:1706.00120},
+      year={2017}
+    }
+  plaintext_citation: "Lee K, Zung J, Li P, et al. Superhuman accuracy on the SNEMI3D connectomics challenge. arXiv:1706.00120. 2017."
+  code_url: null
+  data_url: null
 - id: turaga-2010
   title: Convolutional networks can learn to generate affinity graphs for image segmentation
   authors: Turaga SC et al.
@@ -1430,6 +1846,26 @@ papers:
       computes gradients only on the critical edges of the minimum spanning tree that connect or separate ground-truth segments,
       providing a training signal that is directly sensitive to topological merge and split errors. The affinity-graph formulation
       also naturally supports long-range affinities, which later work showed improves segmentation of thin processes.
+  ocar:
+    opportunity: Early connectomics segmentation relied on hand-crafted boundary detectors. The growing power of convolutional neural networks raised the question of whether CNNs could learn to predict pairwise voxel relationships (affinities) that encode segmentation directly.
+    challenge: Standard pixel-wise loss functions treat all errors equally, but in segmentation, a single incorrect affinity on a critical boundary can cause a catastrophic merge of two neurons. A loss function sensitive to topological errors was needed.
+    action: Turaga et al. introduced the affinity graph framework where a CNN predicts edge affinities between neighboring voxels, and proposed the MALIS (maximin affinity learning) loss that focuses gradient updates on the maximally incorrect affinities responsible for topological errors.
+    resolution: The affinity-graph formulation became one of the two foundational paradigms for connectomics segmentation (alongside flood-filling). MALIS provided a training signal directly sensitive to merge and split errors, and the framework naturally extended to long-range affinities for improved segmentation of thin processes.
+    future_work: Extending to long-range and learned affinities, combining affinity prediction with structured losses like the later Funke et al. PDE-based approach, and integrating affinity graphs with graph neural networks for end-to-end segmentation.
+  bibtex: |
+    @article{turaga2010convolutional,
+      title={Convolutional networks can learn to generate affinity graphs for image segmentation},
+      author={Turaga, Srinivas C and others},
+      journal={Neural Computation},
+      volume={22},
+      number={2},
+      pages={511--538},
+      year={2010},
+      doi={10.1162/neco.2009.10-08-881}
+    }
+  plaintext_citation: "Turaga SC, et al. Convolutional networks can learn to generate affinity graphs for image segmentation. Neural Computation. 2010;22(2):511-538. doi:10.1162/neco.2009.10-08-881"
+  code_url: null
+  data_url: null
 - id: sheridan-2023
   title: Local shape descriptors for neuron segmentation
   authors: Sheridan A et al.
@@ -1467,6 +1903,25 @@ papers:
       and complements both affinity and direct segmentation approaches. Benchmark experiments on zebrafish, fly, and mouse
       EM data show consistent improvements in VOI and ERL, and the learned features transfer better across domains than networks
       trained on affinities alone.
+  ocar:
+    opportunity: Segmentation networks for connectomics required large amounts of manually annotated training data, which is expensive and slow to produce. Self-supervised auxiliary tasks could potentially improve segmentation quality without additional manual labels.
+    challenge: Finding an auxiliary signal that is both informative for segmentation and computable without extra annotation effort. The auxiliary task must regularize learned features in a way that generalizes across different tissue types and species.
+    action: Sheridan et al. proposed local shape descriptors (LSDs) — six statistics describing the local neuron shape at each voxel — as a self-supervised auxiliary training target computed automatically from existing ground-truth segmentation masks.
+    resolution: Adding LSD prediction as an auxiliary task consistently improved segmentation accuracy (VOI and ERL) across zebrafish, fly, and mouse EM datasets, and the learned features transferred better across domains than networks trained on affinities alone, reducing the need for domain-specific retraining.
+    future_work: Combining LSDs with other self-supervised objectives, exploring whether shape descriptors can enable few-shot adaptation to entirely new tissue types, and integrating LSD features into downstream analysis tasks like cell type classification.
+  bibtex: |
+    @article{sheridan2023local,
+      title={Local shape descriptors for neuron segmentation},
+      author={Sheridan, Arlo and others},
+      journal={Nature Methods},
+      volume={20},
+      pages={295--303},
+      year={2023},
+      doi={10.1038/s41592-022-01711-z}
+    }
+  plaintext_citation: "Sheridan A, et al. Local shape descriptors for neuron segmentation. Nature Methods. 2023;20:295-303. doi:10.1038/s41592-022-01711-z"
+  code_url: null
+  data_url: null
 - id: heinrich-2018
   title: Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain
   authors: Heinrich L et al.
@@ -1501,6 +1956,24 @@ papers:
       the roughly 8:1 xy-to-z resolution ratio of the FAFB dataset. The paper addresses the class imbalance between cleft
       and non-cleft voxels with a combination of balanced sampling and weighted loss. The detected clefts, combined with neuron
       segmentation, provide the connectivity edges for large-scale circuit analysis in Drosophila.
+  ocar:
+    opportunity: Mapping the complete synaptic connectivity of the Drosophila brain required automated synapse detection that could scale to the entire FAFB dataset, but the highly anisotropic voxel resolution posed unique architectural challenges for 3D neural networks.
+    challenge: The FAFB dataset has roughly 8:1 xy-to-z resolution anisotropy, meaning standard isotropic 3D convolutions waste computation and learn poor features. Additionally, synaptic clefts occupy a tiny fraction of the volume, creating severe class imbalance.
+    action: Heinrich et al. designed a 3D CNN with asymmetric convolution kernels and pooling matched to the data's anisotropy, combined with balanced sampling and weighted loss to address class imbalance, and applied it to the complete adult Drosophila brain.
+    resolution: The method achieved high precision and recall for synaptic cleft detection across diverse brain regions, enabling brain-wide synapse mapping. Combined with neuron segmentation, the detected clefts provided the connectivity edges for the FlyWire whole-brain connectome.
+    future_work: Extending to pre/post-synaptic partner assignment, adapting the anisotropic architecture to other non-isotropic datasets, and improving detection of small or ambiguous synapses in densely packed neuropil regions.
+  bibtex: |
+    @inproceedings{heinrich2018synaptic,
+      title={Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain},
+      author={Heinrich, Larissa and others},
+      booktitle={MICCAI},
+      pages={317--325},
+      year={2018},
+      doi={10.1007/978-3-030-00934-2_36}
+    }
+  plaintext_citation: "Heinrich L, et al. Synaptic cleft segmentation in non-isotropic volume electron microscopy of the complete Drosophila brain. In: MICCAI. 2018:317-325. doi:10.1007/978-3-030-00934-2_36"
+  code_url: null
+  data_url: null
 - id: becker-2013
   title: Learning context cues for synapse segmentation
   authors: Becker C et al.
@@ -1535,6 +2008,26 @@ papers:
       descriptors and Haar-like filters at multiple scales to capture these cues. While predating deep learning approaches,
       the work establishes the principle that synapse detection benefits from large receptive fields — a finding that directly
       motivated the use of deep CNNs with wide context for this task.
+  ocar:
+    opportunity: Automated synapse detection in EM images could dramatically accelerate connectome construction, but early approaches using only local texture features struggled with high false-positive rates because many structures resemble synapses at the pixel level.
+    challenge: Synapses are small and defined not just by their own appearance but by contextual cues — presynaptic vesicle clouds, postsynaptic densities, nearby membranes and mitochondria — that extend well beyond the synapse itself. Capturing this context with hand-crafted features required careful design.
+    action: Becker et al. developed a multi-scale context feature extraction approach using ray-based descriptors and Haar-like filters to capture the presence of vesicle pools, membrane proximity, and organelle context around candidate synapse locations, training a random forest classifier on these features.
+    resolution: The context-aware approach substantially outperformed local-texture-only baselines on ssTEM benchmark data, demonstrating that contextual cues are essential for reliable synapse identification. This finding directly motivated the later adoption of deep CNNs with large receptive fields for synapse detection.
+    future_work: Replacing hand-crafted context features with learned representations via deep networks, extending to 3D context in volumetric data, and developing methods that simultaneously detect synapses and assign pre/post-synaptic partners.
+  bibtex: |
+    @article{becker2013learning,
+      title={Learning context cues for synapse segmentation},
+      author={Becker, Carlos and others},
+      journal={IEEE Transactions on Medical Imaging},
+      volume={32},
+      number={10},
+      pages={1864--1877},
+      year={2013},
+      doi={10.1109/TMI.2012.2211864}
+    }
+  plaintext_citation: "Becker C, et al. Learning context cues for synapse segmentation. IEEE TMI. 2013;32(10):1864-1877. doi:10.1109/TMI.2012.2211864"
+  code_url: null
+  data_url: null
 - id: zung-2017
   title: An error detection and correction framework for connectomics
   authors: Zung J et al.
@@ -1571,6 +2064,22 @@ papers:
       correct segmentation elsewhere. The iterative application converges to improved accuracy, and the error probability
       scores provide a natural priority ordering for human-in-the-loop proofreading, bridging fully automated and semi-automated
       reconstruction paradigms.
+  ocar:
+    opportunity: Even the best automated segmentation produces merge and split errors that must be corrected before a connectome can be analyzed. If a second neural network could automatically detect and fix these errors, it would dramatically reduce the need for manual proofreading.
+    challenge: Error detection requires the network to distinguish subtle segmentation mistakes from correct but complex morphologies. Error correction must re-segment only the problematic regions without disturbing correct segmentation elsewhere, requiring precise localization of errors.
+    action: Zung et al. designed a two-stage framework with an error detector network that classifies segments as containing merge or split errors, and an error corrector network that applies targeted re-segmentation to flagged regions, iterated until convergence.
+    resolution: The iterative detect-correct loop progressively improved segmentation quality without human intervention. The error probability scores also provided a natural priority ordering for human proofreaders, creating a practical bridge between fully automated and human-in-the-loop reconstruction.
+    future_work: Integrating error detection into the segmentation training loop for self-improving pipelines, extending to more error types (e.g., synapse assignment errors), and combining with active learning to optimally allocate human proofreading effort.
+  bibtex: |
+    @inproceedings{zung2017error,
+      title={An error detection and correction framework for connectomics},
+      author={Zung, Jonathan and others},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+      year={2017}
+    }
+  plaintext_citation: "Zung J, et al. An error detection and correction framework for connectomics. In: NeurIPS. 2017."
+  code_url: null
+  data_url: null
 - id: turner-2022
   title: 'Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity'
   authors: Turner NL et al.
@@ -1608,6 +2117,26 @@ papers:
       proofreading. Key technical contributions include the co-registration of two-photon and EM coordinate spaces, the automation
       of nucleus and cell-type classification, and the public release of both raw and processed data. The paper demonstrates
       that connectivity patterns correlate with functional tuning properties, validating the utility of millimeter-scale connectomics.
+  ocar:
+    opportunity: Advances in both in vivo calcium imaging and large-scale EM reconstruction made it feasible for the first time to record the functional activity of neurons in a living animal and then reconstruct the same tissue at synaptic resolution, linking function to structure at unprecedented scale.
+    challenge: The MICrONS pipeline required solving numerous technical challenges simultaneously — co-registering two-photon and EM coordinate spaces, segmenting and proofreading a cubic millimeter of cortex, detecting millions of synapses, classifying cell types, and making the entire dataset publicly accessible.
+    action: Turner et al. combined in vivo two-photon calcium imaging of mouse visual cortex with post-hoc serial-section EM, applying FFN-based segmentation, CNN-based synapse and organelle detection, PyChunkedGraph-based proofreading, and automated cell type classification to produce a complete functional connectome.
+    resolution: The MICrONS dataset became the largest publicly available combined functional-structural neuroscience resource, demonstrating that connectivity patterns correlate with functional tuning properties and establishing a template for future functional connectomics projects.
+    future_work: Extending functional-structural linking to additional cortical areas and sensory modalities, improving the completeness of reconstruction in dense neuropil, and developing computational frameworks to systematically analyze structure-function relationships across the full dataset.
+  bibtex: |
+    @article{turner2022reconstruction,
+      title={Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity},
+      author={Turner, Nicholas L and others},
+      journal={Cell},
+      volume={185},
+      number={6},
+      pages={1082--1100},
+      year={2022},
+      doi={10.1016/j.cell.2022.01.023}
+    }
+  plaintext_citation: "Turner NL, et al. Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity. Cell. 2022;185(6):1082-1100. doi:10.1016/j.cell.2022.01.023"
+  code_url: null
+  data_url: "https://www.microns-explorer.org/"
 - id: bullmore-sporns-2009
   title: 'Complex brain networks: graph theoretical analysis of structural and functional connectomics'
   authors: Bullmore E, Sporns O

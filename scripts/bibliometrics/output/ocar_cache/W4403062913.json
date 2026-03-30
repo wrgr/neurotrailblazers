@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The FlyWire whole-brain connectome required comprehensive cell type annotations and cross-dataset validation to be maximally useful to the community as a species-level reference for Drosophila neuroscience.",
+    "challenge": "Annotating ~140,000 neurons with cell type labels requires integrating expert knowledge, computational tools, and community input at a scale that has not previously been attempted for a whole-brain connectome dataset.",
+    "action": "The authors coordinated a community-wide annotation campaign for the FlyWire connectome, developing and deploying computational cell typing tools alongside expert curation, and systematically compared connectivity across multiple Drosophila connectome datasets to quantify stereotypy.",
+    "resolution": "The published study (journal version) delivered a comprehensive cell type atlas for the entire Drosophila adult brain, with quantitative stereotypy metrics establishing the connectome as a reliable species reference. Key new cell types were identified and cataloged alongside established types.",
+    "future_work": "Future work should compare connectomes across sexes, ages, and genetic backgrounds, and develop automated tools to update cell type assignments as new data becomes available."
+  },
+  "summaries": {
+    "beginner": "This paper is the published version of the effort to label every one of the ~140,000 neurons in the complete fly brain connectome by cell type, and to show that different fly brains are wired in very similar ways.",
+    "intermediate": "Published in Nature (2024), this study presents the complete cell type annotation of the FlyWire Drosophila whole-brain connectome. The annotation integrated computational tools, community expert input, and cross-dataset validation across multiple fly connectomes. Quantitative stereotypy analyses confirmed high inter-individual consistency, validating single-connectome approaches for circuit neuroscience.",
+    "advanced": "This landmark publication provides the cell type resource for the FlyWire connectome, enabling neuron-type-level circuit analysis across the entire Drosophila brain. The multi-connectome stereotypy analysis used matched cell-type connectivity profiles across FlyWire, hemibrain, and additional datasets, providing statistical confidence in connectivity measurements. Caveats include that completeness of cell type coverage varies by brain region, and the degree of computational versus expert annotation differs across neuron classes, potentially introducing systematic biases in annotation consistency."
+  },
+  "discussion_prompts": [
+    "How does the published cell type annotation in this study refine or revise the Drosophila neuron type catalog compared to previous light microscopy-based classifications?",
+    "What were the main computational tools developed for cell typing, and how was their accuracy validated against expert manual annotation?",
+    "How does cross-dataset stereotypy vary between well-characterized neuropils (e.g., mushroom body) and understudied regions (e.g., gnathal ganglia), and what does this imply for circuit studies in those regions?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:drosophila",
+    "dataset:flywire",
+    "cell-types:annotation",
+    "method:multi-connectome",
+    "neuro:stereotypy",
+    "data:resource"
+  ]
+}

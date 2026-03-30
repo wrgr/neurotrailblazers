@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Graph-theoretic analysis of human connectomes was generating exciting findings but also methodological controversies, and a systematic critical review identifying the most common analytical pitfalls and how to avoid them was urgently needed.",
+    "challenge": "Brain graph metrics are sensitive to many methodological choices (parcellation, edge weighting, thresholding, null models) that are rarely systematically justified, and the neuroscientific interpretation of abstract topological metrics often outpaced methodological validation.",
+    "action": "Fornito, Zalesky, and Breakspear critically review the methodology and findings of graph-theoretic connectome analysis, systematically identifying sources of false positives and potential confounds including motion artifacts, partial volume effects, thresholding strategies, and inappropriate null models. They also review genuine advances in understanding normal and pathological network organization.",
+    "resolution": "The review establishes that many reported brain graph metric differences across groups may reflect methodological artifacts rather than true biological differences, and proposes best-practice guidelines for robust connectome analysis. It also identifies reproducible findings about hub structure, modularity, and their alterations in disease that likely reflect genuine neural organization.",
+    "future_work": "Developing standardized analysis pipelines that minimize methodological variability, validating brain graph metrics against ground-truth connectivity, and integrating across imaging modalities remained major methodological priorities."
+  },
+  "summaries": {
+    "beginner": "Brain network analysis has produced exciting findings, but many results may be artificial\u2014caused by the mathematical choices scientists make when analyzing the data rather than reflecting real brain biology. This review identifies the most common pitfalls and explains how to avoid them.",
+    "intermediate": "Fornito et al. critically evaluate methodology and findings in graph-theoretic human connectome analysis, systematically addressing motion confounds in fMRI, tractography false positives in dMRI, threshold dependence of graph metrics, and inappropriate null models. They identify robust versus methodologically fragile findings and propose guidelines for rigorous connectome analysis.",
+    "advanced": "This review serves as a methodological corrective to the rapid growth in connectome graph analysis, providing a principled framework for distinguishing robust biological findings from methodological artifacts. Key contributions include analysis of how head motion systematically biases functional connectivity estimates (short-range inflation, long-range reduction), the threshold-dependence problem for graph metrics, and the inadequacy of random graph null models for testing spatial embedding effects. The review's guidelines have been partially incorporated into subsequent software pipelines and are directly relevant to analysis of both macroscale and microscale connectomes."
+  },
+  "discussion_prompts": [
+    "How does head motion during fMRI acquisition bias functional connectivity estimates, and what preprocessing strategies most effectively reduce this confound?",
+    "What properties of random graph null models make them inappropriate for testing topological properties of spatially embedded brain networks?",
+    "Which graph-theoretic properties of the human connectome have the strongest empirical support as reproducible biological findings, and which remain contested?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": [
+    "method:graph-theory",
+    "topic:connectome-analysis",
+    "topic:methodological-pitfalls",
+    "imaging:fMRI",
+    "imaging:diffusion-MRI",
+    "review:methods"
+  ]
+}

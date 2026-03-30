@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The C. elegans pharynx is a simple, self-contained neuromuscular organ whose nervous system has been partially described, but a complete and accurate connectome of all 20 pharyngeal neurons and their connections was lacking, limiting circuit-level understanding of this well-studied organ.",
+    "challenge": "Previous serial EM reconstructions of the pharyngeal nervous system contained errors and omissions, and re-examining the same tissue at modern resolution required careful re-annotation of the original electron micrographs alongside validation of older findings.",
+    "action": "The authors performed a comprehensive serial EM reconstruction of the C. elegans pharynx, re-evaluating all 20 pharyngeal neurons (14 anatomical types), their synaptic connections, and gap junctions, correcting and extending the original connectome.",
+    "resolution": "The revised connectome provides a complete, accurate map of pharyngeal circuit connectivity, identifying corrections to previously reported connections and new synaptic partners. The updated connectome enables more accurate computational modeling of pharyngeal motor behavior.",
+    "future_work": "Functional validation of corrected connections using calcium imaging and optogenetic perturbations in behaving worms, and integration with molecular identity data from single-cell RNA-seq, are important future directions."
+  },
+  "summaries": {
+    "beginner": "The C. elegans worm has a small, self-contained nervous system in its throat that controls eating. This paper remapped all the connections between the 20 neurons in this mini-nervous system using electron microscopy, finding corrections to the older map.",
+    "intermediate": "This study provides a revised, complete connectome of the C. elegans pharyngeal nervous system by re-examining serial electron micrographs at improved resolution, correcting errors in the original description and characterizing gap junction connectivity alongside chemical synapses. The updated map offers a more accurate substrate for computational models of pharyngeal motor behavior.",
+    "advanced": "The pharyngeal connectome re-evaluation demonstrates the value of revisiting foundational datasets with modern analysis tools, identifying systematic errors in the original connectivity description. By providing complete chemical synapse and gap junction maps for all 20 pharyngeal neurons, the study constrains circuit models for rhythmic motor behavior; key caveats include the limited temporal resolution of EM-based connectivity snapshots and the challenge of inferring functional synaptic weights from anatomical synapse counts."
+  },
+  "discussion_prompts": [
+    "What are the implications of finding errors in the original C. elegans pharyngeal connectome, and how should these findings inform confidence in other older connectome datasets?",
+    "How does the dual chemical synapse and gap junction connectivity of the pharyngeal circuit create functional flexibility in controlling the feeding motor pattern?",
+    "What would it take to computationally simulate the pharyngeal motor pattern from the connectome alone, and what additional information beyond connectivity would be needed?"
+  ],
+  "dimension": "connectomics",
+  "tags": [
+    "species:c-elegans",
+    "imaging:serial-section-em",
+    "method:connectomics",
+    "neuroanatomy:pharynx",
+    "method:circuit-analysis",
+    "data:connectome"
+  ]
+}

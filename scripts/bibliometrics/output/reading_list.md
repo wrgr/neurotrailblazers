@@ -12,11 +12,11 @@
 ## Phase 0 — Orientation  (reviews; read first)
 
 
-### Biology / Computer science  _Edward S. Boyden, Markus Sauer_
+### Electrochemistry / Nanotechnology  _S. Trasatti, О. А. Петрий_
 
-**1. Expansion microscopy: principles and uses in biological research**  
-Asmamaw T. Wassie, Yongxin Zhao, Edward S. Boyden · 2018 · **  
-`REVIEW` · citations: 482 · score: 0.029 · [doi](https://doi.org/10.1038/s41592-018-0219-4)  
+**1. Combining theory and experiment in electrocatalysis: Insights into materials design**  
+Zhi Wei Seh, Jakob Kibsgaard, Colin F. Dickens et al. · 2017 · **  
+`REVIEW` · citations: 11,445 · score: 0.029 · [doi](https://doi.org/10.1126/science.aad4998)  
 
 
 
@@ -27,379 +27,437 @@ Pasko Rakić · 1988 · **
 `REVIEW` · citations: 3,117 · score: 0.030 · [doi](https://doi.org/10.1126/science.3291116)  
 
 
-**3. The functional anatomy of basal ganglia disorders**  
-Roger L. Albin, Anne B. Young, John B. Penney · 1989 · **  
-`REVIEW` · citations: 5,321 · score: 0.017 · [doi](https://doi.org/10.1016/0166-2236(89)90074-x)  
+**3. The Attention System of the Human Brain**  
+Michael I. Posner, Steven L. Petersen · 1990 · **  
+`REVIEW` · citations: 7,820 · score: 0.048 · [doi](https://doi.org/10.1146/annurev.ne.13.030190.000325)  
 
 
-**4. Nitric oxide, superoxide, and peroxynitrite: the good, the bad, and ugly**  
-Joseph S. Beckman, Willem H. Koppenol · 1996 · **  
-`REVIEW` · citations: 5,497 · score: 0.015 · [doi](https://doi.org/10.1152/ajpcell.1996.271.5.c1424)  
+**4. Large‐scale neurocognitive networks and distributed processing for attention, language, and memory**  
+M‐Marsel Mesulam · 1990 · **  
+`REVIEW` · citations: 2,703 · score: 0.037 · [doi](https://doi.org/10.1002/ana.410280502)  
 
 
-**5. The columnar organization of the neocortex**  
-Vernon B. Mountcastle · 1997 · **  
-`REVIEW` · citations: 2,247 · score: 0.021 · [doi](https://doi.org/10.1093/brain/120.4.701)  
+**5. Preface: Cerebral Cortex Has Come of Age**  
+Patricia S. Goldman‐Rakic, Pasko Rakić · 1991 · **  
+`REVIEW` · citations: 3,569 · score: 0.054 · [doi](https://doi.org/10.1093/cercor/1.1.1-a)  
 
 
-**6. From sensation to cognition**  
-M.‐Marsel Mesulam · 1998 · **  
-`REVIEW` · citations: 3,103 · score: 0.024 · [doi](https://doi.org/10.1093/brain/121.6.1013)  
+**6. A Neural Substrate of Prediction and Reward**  
+Wolfram Schultz, Peter Dayan, P. Read Montague · 1997 · **  
+`REVIEW` · citations: 9,481 · score: 0.042 · [doi](https://doi.org/10.1126/science.275.5306.1593)  
 
 
-**7. Predictive Reward Signal of Dopamine Neurons**  
-Wolfram Schultz · 1998 · **  
-`REVIEW` · citations: 4,543 · score: 0.021 · [doi](https://doi.org/10.1152/jn.1998.80.1.1)  
+**7. Caspases: the executioners of apoptosis**  
+Gerald M. Cohen · 1997 · **  
+`REVIEW` · citations: 4,725 · score: 0.038 · [doi](https://doi.org/10.1042/bj3260001)  
 
 
-**8. An Energy Budget for Signaling in the Grey Matter of the Brain**  
+**8. Limbic-cortical dysregulation: a proposed model of depression**  
+Helen S. Mayberg · 1997 · **  
+`REVIEW` · citations: 1,578 · score: 0.035 · [doi](https://doi.org/10.1176/jnp.9.3.471)  
+
+
+**9. Data clustering**  
+Anil K. Jain, M. Narasimha Murty, Patrick J. Flynn · 1999 · **  
+`REVIEW` · citations: 13,065 · score: 0.035 · [doi](https://doi.org/10.1145/331499.331504)  
+
+
+**10. The Hallmarks of Cancer**  
+Douglas Hanahan, Robert A. Weinberg · 2000 · **  
+`REVIEW` · citations: 28,385 · score: 0.074 · [doi](https://doi.org/10.1016/s0092-8674(00)81683-9)  
+
+
+**11. Towards a network theory of cognition**  
+Anthony R. McIntosh · 2000 · **  
+`REVIEW` · citations: 512 · score: 0.029 · [doi](https://doi.org/10.1016/s0893-6080(00)00059-9)  
+
+
+**12. Stem cells, cancer, and cancer stem cells**  
+Tannishtha Reya, Sean J. Morrison, Michael F. Clarke et al. · 2001 · **  
+`REVIEW` · citations: 9,682 · score: 0.028 · [doi](https://doi.org/10.1038/35102167)  
+
+
+**13. An Integrative Theory of Prefrontal Cortex Function**  
+Earl K. Miller, Jonathan D. Cohen · 2001 · **  
+`REVIEW` · citations: 12,599 · score: 0.053 · [doi](https://doi.org/10.1146/annurev.neuro.24.1.167)  
+
+
+**14. An Energy Budget for Signaling in the Grey Matter of the Brain**  
 David Attwell, Simon B. Laughlin · 2001 · **  
 `REVIEW` · citations: 3,449 · score: 0.037 · [doi](https://doi.org/10.1097/00004647-200110000-00001)  
 
 
-**9. Biofilms: Microbial Life on Surfaces**  
-Rodney M. Donlan · 2002 · **  
-`REVIEW` · citations: 4,735 · score: 0.012 · [doi](https://doi.org/10.3201/eid0809.020063)  
+**15. Searching for a baseline: Functional imaging and the resting human brain**  
+Debra A. Gusnard, Marcus E. Raichle · 2001 · **  
+`REVIEW` · citations: 3,394 · score: 0.038 · [doi](https://doi.org/10.1038/35094500)  
 
 
-**10. Interneuron Diversity series: Circuit complexity and axon wiring economy of cortical interneurons**  
-György Buzsáki, Caroline E. Geisler, Darrell A. Henze et al. · 2004 · **  
-`REVIEW` · citations: 490 · score: 0.018 · [doi](https://doi.org/10.1016/j.tins.2004.02.007)  
+**16. Exploring complex networks**  
+Steven H. Strogatz · 2001 · **  
+`REVIEW` · citations: 8,248 · score: 0.116 · [doi](https://doi.org/10.1038/35065725)  
 
 
-**11. Neuronal Oscillations in Cortical Networks**  
+**17. The Amyloid Hypothesis of Alzheimer's Disease: Progress and Problems on the Road to Therapeutics**  
+John Hardy, Dennis J. Selkoe · 2002 · **  
+`REVIEW` · citations: 13,715 · score: 0.046 · [doi](https://doi.org/10.1126/science.1072994)  
+
+
+**18. The basis of anisotropic water diffusion in the nervous system – a technical review**  
+Christian Beaulieu · 2002 · **  
+`REVIEW` · citations: 4,537 · score: 0.034 · [doi](https://doi.org/10.1002/nbm.782)  
+
+
+**19. Control of goal-directed and stimulus-driven attention in the brain**  
+Maurizio Corbetta, Gordon L. Shulman · 2002 · **  
+`REVIEW` · citations: 12,773 · score: 0.052 · [doi](https://doi.org/10.1038/nrn755)  
+
+
+**20. Fast robust automated brain extraction**  
+Stephen M. Smith · 2002 · **  
+`REVIEW` · citations: 10,749 · score: 0.036 · [doi](https://doi.org/10.1002/hbm.10062)  
+
+
+**21. Measuring inconsistency in meta-analyses**  
+Julian P. T. Higgins, Simon G. Thompson, Jonathan J Deeks et al. · 2003 · **  
+`REVIEW` · citations: 61,700 · score: 0.148 · [doi](https://doi.org/10.1136/bmj.327.7414.557)  
+
+
+**22. Neuronal Oscillations in Cortical Networks**  
 György Buzsáki, Andreas Draguhn · 2004 · **  
 `REVIEW` · citations: 6,553 · score: 0.036 · [doi](https://doi.org/10.1126/science.1099745)  
 
 
-**12. The Human Connectome: A Structural Description of the Human Brain**  
+**23. Network biology: understanding the cell's functional organization**  
+Albert-Ĺaszló Barabási, Zoltán N. Oltvai · 2004 · **  
+`REVIEW` · citations: 7,951 · score: 0.035 · [doi](https://doi.org/10.1038/nrg1272)  
+
+
+**24. Organization, development and function of complex brain networks**  
+Olaf Sporns, Dante R. Chialvo, Marcus Kaiser et al. · 2004 · **  
+`REVIEW` · citations: 2,078 · score: 0.030 · [doi](https://doi.org/10.1016/j.tics.2004.07.008)  
+
+
+**25. Advances in functional and structural MR image analysis and implementation as FSL**  
+Stephen M. Smith, Mark Jenkinson, Mark W. Woolrich et al. · 2004 · **  
+`REVIEW` · citations: 13,980 · score: 0.054 · [doi](https://doi.org/10.1016/j.neuroimage.2004.07.051)  
+
+
+**26. Deep tissue two-photon microscopy**  
+Fritjof Helmchen, Winfried Denk · 2005 · **  
+`REVIEW` · citations: 4,112 · score: 0.030 · [doi](https://doi.org/10.1038/nmeth818)  
+
+
+**27. The Human Connectome: A Structural Description of the Human Brain**  
 Olaf Sporns, Giulio Tononi, Rolf Kötter · 2005 · **  
 `REVIEW` · citations: 3,333 · score: 0.103 · [doi](https://doi.org/10.1371/journal.pcbi.0010042)  
 
 
-**13. The Fluorescent Toolbox for Assessing Protein Location and Function**  
-Ben N. G. Giepmans, Stephen Adams, Mark H. Ellisman et al. · 2006 · **  
-`REVIEW` · citations: 2,749 · score: 0.025 · [doi](https://doi.org/10.1126/science.1124618)  
-
-
-**14. Towards neural circuit reconstruction with volume electron microscopy techniques**  
+**28. Towards neural circuit reconstruction with volume electron microscopy techniques**  
 Kevin L. Briggman, Winfried Denk · 2006 · **  
-`REVIEW` · citations: 271 · score: 0.151 · [doi](https://doi.org/10.1016/j.conb.2006.08.010)  
+`REVIEW` · citations: 271 · score: 0.150 · [doi](https://doi.org/10.1016/j.conb.2006.08.010)  
 
 
-**15. Far-Field Optical Nanoscopy**  
+**29. The 2007 WHO Classification of Tumours of the Central Nervous System**  
+Hiroko Ohgaki, Otmar D. Wiestler, Webster K. Cavenee et al. · 2007 · **  
+`REVIEW` · citations: 13,889 · score: 0.051  
+
+
+**30. Autophagy: process and function**  
+Noboru Mizushima · 2007 · **  
+`REVIEW` · citations: 3,921 · score: 0.029 · [doi](https://doi.org/10.1101/gad.1599207)  
+
+
+**31. Far-Field Optical Nanoscopy**  
 Stefan W. Hell · 2007 · **  
 `REVIEW` · citations: 2,940 · score: 0.058 · [doi](https://doi.org/10.1126/science.1137395)  
 
 
-**16. Circuit reconstruction tools today**  
-Stephen J Smith · 2007 · **  
-`REVIEW` · citations: 64 · score: 0.022 · [doi](https://doi.org/10.1016/j.conb.2007.11.004)  
+**32. Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging**  
+Michael Fox, Marcus E. Raichle · 2007 · **  
+`REVIEW` · citations: 6,809 · score: 0.049 · [doi](https://doi.org/10.1038/nrn2201)  
 
 
-**17. Genetic Dissection of Neural Circuits**  
+**33. Genetic Dissection of Neural Circuits**  
 Liqun Luo, Edward M. Callaway, Karel Svoboda · 2008 · **  
 `REVIEW` · citations: 774 · score: 0.030 · [doi](https://doi.org/10.1016/j.neuron.2008.01.002)  
 
 
-**18. A technicolour approach to the connectome**  
+**34. <i>The Brain's Default Network</i>**  
+Randy L. Buckner, Jessica R. Andrews‐Hanna, Daniel L. Schacter · 2008 · **  
+`REVIEW` · citations: 9,731 · score: 0.039 · [doi](https://doi.org/10.1196/annals.1440.011)  
+
+
+**35. A technicolour approach to the connectome**  
 Jeff W. Lichtman, Jean Livet, Joshua R. Sanes · 2008 · **  
-`REVIEW` · citations: 331 · score: 0.033 · [doi](https://doi.org/10.1038/nrn2391)  
+`REVIEW` · citations: 331 · score: 0.032 · [doi](https://doi.org/10.1038/nrn2391)  
 
 
-**19. 3D structural imaging of the brain with photons and electrons**  
+**36. 3D structural imaging of the brain with photons and electrons**  
 Moritz Helmstaedter, Kevin L. Briggman, Winfried Denk · 2008 · **  
-`REVIEW` · citations: 172 · score: 0.047 · [doi](https://doi.org/10.1016/j.conb.2009.03.005)  
+`REVIEW` · citations: 172 · score: 0.048 · [doi](https://doi.org/10.1016/j.conb.2009.03.005)  
 
 
-**20. Neurocircuitry of Addiction**  
-George F. Koob, Nora D. Volkow · 2009 · **  
-`REVIEW` · citations: 5,148 · score: 0.014 · [doi](https://doi.org/10.1038/npp.2009.110)  
-
-
-**21. The Reward Circuit: Linking Primate Anatomy and Human Imaging**  
-Suzanne N. Haber, Brian Knutson · 2009 · **  
-`REVIEW` · citations: 3,693 · score: 0.012 · [doi](https://doi.org/10.1038/npp.2009.129)  
-
-
-**22. Complex brain networks: graph theoretical analysis of structural and functional systems**  
+**37. Complex brain networks: graph theoretical analysis of structural and functional systems**  
 Edward T. Bullmore, Olaf Sporns · 2009 · **  
-`REVIEW` · citations: 11,885 · score: 0.107 · [doi](https://doi.org/10.1038/nrn2575)  
+`REVIEW` · citations: 11,885 · score: 0.104 · [doi](https://doi.org/10.1038/nrn2575)  
 
 
-**23. Semi-automated reconstruction of neural circuits using electron microscopy**  
+**38. Semi-automated reconstruction of neural circuits using electron microscopy**  
 Dmitri B. Chklovskii, Shiv Vitaladevuni, Louis K. Scheffer · 2010 · **  
-`REVIEW` · citations: 178 · score: 0.058 · [doi](https://doi.org/10.1016/j.conb.2010.08.002)  
+`REVIEW` · citations: 178 · score: 0.059 · [doi](https://doi.org/10.1016/j.conb.2010.08.002)  
 
 
-**24. Machines that learn to segment images: a crucial technology for connectomics**  
+**39. Machines that learn to segment images: a crucial technology for connectomics**  
 Viren Jain, H. Sebastian Seung, Srinivas C. Turaga · 2010 · **  
 `REVIEW` · citations: 148 · score: 0.032 · [doi](https://doi.org/10.1016/j.conb.2010.07.004)  
 
 
-**25. Neuropathological Alterations in Alzheimer Disease**  
-Alberto Serrano‐Pozo, Matthew P. Frosch, Eliezer Masliah et al. · 2011 · **  
-`REVIEW` · citations: 3,323 · score: 0.015 · [doi](https://doi.org/10.1101/cshperspect.a006189)  
+**40. The behaviour change wheel: A new method for characterising and designing behaviour change interventions**  
+Susan Michie, Maartje M. van Stralen, Robert West · 2011 · **  
+`REVIEW` · citations: 13,092 · score: 0.033 · [doi](https://doi.org/10.1186/1748-5908-6-42)  
 
 
-**26. Brain Graphs: Graphical Models of the Human Brain Connectome**  
-Edward T. Bullmore, Danielle S. Bassett · 2011 · **  
-`REVIEW` · citations: 1,175 · score: 0.018 · [doi](https://doi.org/10.1146/annurev-clinpsy-040510-143934)  
-
-
-**27. Functional and Effective Connectivity: A Review**  
-Karl Friston · 2011 · **  
-`REVIEW` · citations: 3,443 · score: 0.015 · [doi](https://doi.org/10.1089/brain.2011.0008)  
-
-
-**28. Volume electron microscopy for neuronal circuit reconstruction**  
+**41. Volume electron microscopy for neuronal circuit reconstruction**  
 Kevin L. Briggman, Davi D. Bock · 2011 · **  
 `REVIEW` · citations: 346 · score: 0.067 · [doi](https://doi.org/10.1016/j.conb.2011.10.022)  
 
 
-**29. The human connectome: a complex network**  
+**42. The human connectome: a complex network**  
 Olaf Sporns · 2011 · **  
-`REVIEW` · citations: 1,412 · score: 0.048 · [doi](https://doi.org/10.1111/j.1749-6632.2010.05888.x)  
+`REVIEW` · citations: 1,412 · score: 0.046 · [doi](https://doi.org/10.1111/j.1749-6632.2010.05888.x)  
 
 
-**30. Large-Scale Automated Histology in the Pursuit of Connectomes**  
-David Kleinfeld, Arjun Bharioke, Pablo Blinder et al. · 2011 · **  
-`REVIEW` · citations: 164 · score: 0.021 · [doi](https://doi.org/10.1523/jneurosci.4077-11.2011)  
+**43. FSL**  
+Mark Jenkinson, Christian F. Beckmann, Timothy E.J. Behrens et al. · 2011 · **  
+`REVIEW` · citations: 11,564 · score: 0.037 · [doi](https://doi.org/10.1016/j.neuroimage.2011.09.015)  
 
 
-**31. The Human Connectome Project: A data acquisition perspective**  
-David C. Van Essen, Kâmil Uǧurbil, Edward J. Auerbach et al. · 2012 · **  
-`REVIEW` · citations: 2,760 · score: 0.029 · [doi](https://doi.org/10.1016/j.neuroimage.2012.02.018)  
+**44. The Big and the Small: Challenges of Imaging the Brain’s Circuits**  
+Jeff W. Lichtman, Winfried Denk · 2011 · **  
+`REVIEW` · citations: 394 · score: 0.030 · [doi](https://doi.org/10.1126/science.1209168)  
 
 
-**32. The economy of brain network organization**  
+**45. Structural neurobiology: missing link to a mechanistic understanding of neural computation**  
+Winfried Denk, Kevin L. Briggman, Moritz Helmstaedter · 2012 · **  
+`REVIEW` · citations: 203 · score: 0.036 · [doi](https://doi.org/10.1038/nrn3169)  
+
+
+**46. The Neuronal Organization of the Retina**  
+Richard H. Masland · 2012 · **  
+`REVIEW` · citations: 1,154 · score: 0.036 · [doi](https://doi.org/10.1016/j.neuron.2012.10.002)  
+
+
+**47. FreeSurfer**  
+Bruce Fischl · 2012 · **  
+`REVIEW` · citations: 9,561 · score: 0.033 · [doi](https://doi.org/10.1016/j.neuroimage.2012.01.021)  
+
+
+**48. The economy of brain network organization**  
 Edward T. Bullmore, Olaf Sporns · 2012 · **  
-`REVIEW` · citations: 3,339 · score: 0.032 · [doi](https://doi.org/10.1038/nrn3214)  
+`REVIEW` · citations: 3,339 · score: 0.033 · [doi](https://doi.org/10.1038/nrn3214)  
 
 
-**33. Schizophrenia, neuroimaging and connectomics**  
-Alex Fornito, Andrew Zalesky, Christos Pantelis et al. · 2012 · **  
-`REVIEW` · citations: 739 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuroimage.2011.12.090)  
+**49. The Human Connectome Project: A data acquisition perspective**  
+David C. Van Essen, Kâmil Uǧurbil, Edward J. Auerbach et al. · 2012 · **  
+`REVIEW` · citations: 2,760 · score: 0.030 · [doi](https://doi.org/10.1016/j.neuroimage.2012.02.018)  
 
 
-**34. Imaging human connectomes at the macroscale**  
-R. Cameron Craddock, Saâd Jbabdi, Chao‐Gan Yan et al. · 2013 · **  
-`REVIEW` · citations: 447 · score: 0.030 · [doi](https://doi.org/10.1038/nmeth.2482)  
+**50. Special Care Units and Traditional Care in Dementia: Relationship with Behavior, Cognition, Functional Status and Quality of Life - A Review**  
+Jeroen S. Kok, Ina J. Berg, Erik Scherder · 2013 · **  
+`REVIEW` · citations: 20,643 · score: 0.055 · [doi](https://doi.org/10.1159/000353441)  
 
 
-**35. The WU-Minn Human Connectome Project: An overview**  
+**51. The WU-Minn Human Connectome Project: An overview**  
 David C. Van Essen, Stephen M. Smith, Deanna M. Barch et al. · 2013 · **  
-`REVIEW` · citations: 6,094 · score: 0.064 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.041)  
+`REVIEW` · citations: 6,094 · score: 0.065 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.041)  
 
 
-**36. Cellular-resolution connectomics: challenges of dense neural circuit reconstruction**  
+**52. Autophagy and Viruses: Adversaries or Allies?**  
+Xiaonan Dong, Beth Levine · 2013 · **  
+`REVIEW` · citations: 4,434 · score: 0.065 · [doi](https://doi.org/10.1159/000346388)  
+
+
+**53. Cellular-resolution connectomics: challenges of dense neural circuit reconstruction**  
 Moritz Helmstaedter · 2013 · **  
 `REVIEW` · citations: 344 · score: 0.052 · [doi](https://doi.org/10.1038/nmeth.2476)  
 
 
-**37. Translational Findings on Brain-Derived Neurotrophic Factor and Anxiety: Contributions from Basic Research to Clinical Practice**  
+**54. Translational Findings on Brain-Derived Neurotrophic Factor and Anxiety: Contributions from Basic Research to Clinical Practice**  
 Anna Claudia Domingos da Silveira da Luz, Gisele Pereira Dias, Mário Cesar do Nascimento Bevilaqua et al. · 2013 · **  
 `REVIEW` · citations: 4,007 · score: 0.038 · [doi](https://doi.org/10.1159/000353269)  
 
 
-**38. From the connectome to brain function**  
+**55. From the connectome to brain function**  
 Cornelia I. Bargmann, Eve Marder · 2013 · **  
-`REVIEW` · citations: 597 · score: 0.034 · [doi](https://doi.org/10.1038/nmeth.2451)  
+`REVIEW` · citations: 597 · score: 0.035 · [doi](https://doi.org/10.1038/nmeth.2451)  
 
 
-**39. Graph analysis of the human connectome: Promise, progress, and pitfalls**  
-Alex Fornito, Andrew Zalesky, Michael Breakspear · 2013 · **  
-`REVIEW` · citations: 792 · score: 0.015 · [doi](https://doi.org/10.1016/j.neuroimage.2013.04.087)  
+**56. Imaging human connectomes at the macroscale**  
+R. Cameron Craddock, Saâd Jbabdi, Chao‐Gan Yan et al. · 2013 · **  
+`REVIEW` · citations: 447 · score: 0.028 · [doi](https://doi.org/10.1038/nmeth.2482)  
 
 
-**40. Exploring the third dimension: Volume electron microscopy comes of age**  
-Christopher J. Peddie, Lucy Collinson · 2014 · **  
-`REVIEW` · citations: 353 · score: 0.025 · [doi](https://doi.org/10.1016/j.micron.2014.01.009)  
+**57. Aspirin plus Clopidogrel as Secondary Prevention after Stroke or Transient Ischemic Attack: A Systematic Review and Meta-Analysis**  
+Qinghua Zhang, Chao Wang, Maoyong Zheng et al. · 2014 · **  
+`REVIEW` · citations: 11,546 · score: 0.030 · [doi](https://doi.org/10.1159/000369778)  
 
 
-**41. The big data challenges of connectomics**  
-Jeff W. Lichtman, Hanspeter Pfister, Nir Shavit · 2014 · **  
-`REVIEW` · citations: 246 · score: 0.018 · [doi](https://doi.org/10.1038/nn.3837)  
+**58. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer: The American Thyroid Association Guidelines Task Force on Thyroid Nodules and Differentiated Thyroid Cancer**  
+Bryan R. Haugen, Erik K. Alexander, Keith C. Bible et al. · 2015 · **  
+`REVIEW` · citations: 16,125 · score: 0.043 · [doi](https://doi.org/10.1089/thy.2015.0020)  
 
 
-**42. Toward large-scale connectome reconstructions**  
-Stephen M. Plaza, Louis K. Scheffer, Dmitri B. Chklovskii · 2014 · **  
-`REVIEW` · citations: 83 · score: 0.016 · [doi](https://doi.org/10.1016/j.conb.2014.01.019)  
+**59. Deep learning**  
+Yann LeCun, Yoshua Bengio, Geoffrey E. Hinton · 2015 · **  
+`REVIEW` · citations: 79,164 · score: 0.233 · [doi](https://doi.org/10.1038/nature14539)  
 
 
-**43. The hubs of the human connectome are generally implicated in the anatomy of brain disorders**  
-Nicolás Crossley, Andrea Mechelli, Jessica Scott et al. · 2014 · **  
-`REVIEW` · citations: 1,188 · score: 0.016 · [doi](https://doi.org/10.1093/brain/awu132)  
+**60. Matrix Metalloproteinases and Other Matrix Proteinases in Relation to Cariology: The Era of ‘Dentin Degradomics'**  
+Leo Tjäderhane, Marília Afonso Rabelo Buzalaf, Marcela Carrilho et al. · 2015 · **  
+`REVIEW` · citations: 2,307 · score: 0.172 · [doi](https://doi.org/10.1159/000363582)  
 
 
-**44. The connectomics of brain disorders**  
-Alex Fornito, Andrew Zalesky, Michael Breakspear · 2015 · **  
-`REVIEW` · citations: 1,757 · score: 0.022 · [doi](https://doi.org/10.1038/nrn3901)  
+**61. Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation**  
+Larissa Shamseer, David Moher, Mike Clarke et al. · 2015 · **  
+`REVIEW` · citations: 12,938 · score: 0.033 · [doi](https://doi.org/10.1136/bmj.g7647)  
 
 
-**45. Focused ion beams in biology**  
-Kedar Narayan, Sriram Subramaniam · 2015 · **  
-`REVIEW` · citations: 232 · score: 0.017 · [doi](https://doi.org/10.1038/nmeth.3623)  
+**62. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary**  
+David N. Louis, Arie Perry, Guido Reifenberger et al. · 2016 · **  
+`REVIEW` · citations: 15,741 · score: 0.039 · [doi](https://doi.org/10.1007/s00401-016-1545-1)  
 
 
-**46. The Human Connectome Project's neuroimaging approach**  
-Matthew F. Glasser, Stephen M. Smith, Daniel S. Marcus et al. · 2016 · **  
-`REVIEW` · citations: 1,175 · score: 0.022 · [doi](https://doi.org/10.1038/nn.4361)  
+**63. Ferroptosis: process and function**  
+Yang Xie, Wen‐Chi Hou, Xinxin Song et al. · 2016 · **  
+`REVIEW` · citations: 3,675 · score: 0.062 · [doi](https://doi.org/10.1038/cdd.2015.158)  
 
 
-**47. The amyloid hypothesis of Alzheimer's disease at 25 years**  
-Dennis J. Selkoe, John Hardy · 2016 · **  
-`REVIEW` · citations: 5,954 · score: 0.018 · [doi](https://doi.org/10.15252/emmm.201606210)  
+**64. Modulating Innate and Adaptive Immunity by (R)-Roscovitine: Potential Therapeutic Opportunity in Cystic Fibrosis**  
+Laurent Meijer, Deborah J. Nelson, Vladimir Riazanski et al. · 2016 · **  
+`REVIEW` · citations: 4,996 · score: 0.074 · [doi](https://doi.org/10.1159/000444256)  
 
 
-**48. Volume scanning electron microscopy for imaging biological ultrastructure**  
-Benjamin Titze, Christel Genoud · 2016 · **  
-`REVIEW` · citations: 318 · score: 0.016 · [doi](https://doi.org/10.1111/boc.201600024)  
+**65. Ferroptosis: A Regulated Cell Death Nexus Linking Metabolism, Redox Biology, and Disease**  
+Brent R. Stockwell, José Pedro Friedmann Angeli, Hülya Bayır et al. · 2017 · **  
+`REVIEW` · citations: 7,155 · score: 0.057 · [doi](https://doi.org/10.1016/j.cell.2017.09.021)  
 
 
-**49. Comparative Connectomics**  
-Martijn P. van den Heuvel, Edward T. Bullmore, Olaf Sporns · 2016 · **  
-`REVIEW` · citations: 348 · score: 0.015 · [doi](https://doi.org/10.1016/j.tics.2016.03.001)  
+**66. Network neuroscience**  
+Danielle S. Bassett, Olaf Sporns · 2017 · **  
+`REVIEW` · citations: 2,363 · score: 0.051 · [doi](https://doi.org/10.1038/nn.4502)  
 
 
-**50. The dynamic functional connectome: State-of-the-art and perspectives**  
-Maria Giulia Preti, Thomas A. W. Bolton, Dimitri Van De Ville · 2016 · **  
-`REVIEW` · citations: 1,453 · score: 0.013 · [doi](https://doi.org/10.1016/j.neuroimage.2016.12.061)  
-
-
-**51. Learning from connectomics on the fly**  
+**67. Learning from connectomics on the fly**  
 Philipp Schlegel, Marta Costa, Gregory S.X.E. Jefferis · 2017 · **  
-`REVIEW` · citations: 61 · score: 0.038 · [doi](https://doi.org/10.1016/j.cois.2017.09.011)  
+`REVIEW` · citations: 61 · score: 0.042 · [doi](https://doi.org/10.1016/j.cois.2017.09.011)  
 
 
-**52. Do the right thing: neural network mechanisms of memory formation, expression and update in Drosophila**  
-Paola Cognigni, Johannes Felsenberg, Scott Waddell · 2017 · **  
-`REVIEW` · citations: 307 · score: 0.013 · [doi](https://doi.org/10.1016/j.conb.2017.12.002)  
+**68. Molecular mechanisms of cell death: recommendations of the Nomenclature Committee on Cell Death 2018**  
+Lorenzo Galluzzi, Ilio Vitale, Stuart A. Aaronson et al. · 2018 · **  
+`REVIEW` · citations: 6,293 · score: 0.337 · [doi](https://doi.org/10.1038/s41418-017-0012-4)  
 
 
-**53. Nano based drug delivery systems: recent developments and future prospects**  
-Jayanta Kumar Patra, Gitishree Das, Leonardo Fernandes Fraceto et al. · 2018 · **  
-`REVIEW` · citations: 6,350 · score: 0.018 · [doi](https://doi.org/10.1186/s12951-018-0392-8)  
+**69. On the nature and use of models in network neuroscience**  
+Danielle S. Bassett, Perry Zurn, Joshua I. Gold · 2018 · **  
+`REVIEW` · citations: 415 · score: 0.035 · [doi](https://doi.org/10.1038/s41583-018-0038-8)  
 
 
-**54. Progress and remaining challenges in high-throughput volume electron microscopy**  
-Joergen Kornfeld, Winfried Denk · 2018 · **  
-`REVIEW` · citations: 130 · score: 0.018 · [doi](https://doi.org/10.1016/j.conb.2018.04.030)  
+**70. Expansion microscopy: principles and uses in biological research**  
+Asmamaw T. Wassie, Yongxin Zhao, Edward S. Boyden · 2018 · **  
+`REVIEW` · citations: 482 · score: 0.030 · [doi](https://doi.org/10.1038/s41592-018-0219-4)  
 
 
-**55. The development of brain network hubs**  
-Stuart Oldham, Alex Fornito · 2018 · **  
-`REVIEW` · citations: 268 · score: 0.012 · [doi](https://doi.org/10.1016/j.dcn.2018.12.005)  
+**71. Autophagy-Independent Functions of the Autophagy Machinery**  
+Lorenzo Galluzzi, Douglas R. Green · 2019 · **  
+`REVIEW` · citations: 852 · score: 0.358 · [doi](https://doi.org/10.1016/j.cell.2019.05.026)  
 
 
-**56. Neuronal cell types in the fly: single-cell anatomy meets single-cell genomics**  
-Alexander Shakeel Bates, Jasper Janssens, Gregory S.X.E. Jefferis et al. · 2019 · **  
-`REVIEW` · citations: 80 · score: 0.015 · [doi](https://doi.org/10.1016/j.conb.2018.12.012)  
+**72. A survey on Image Data Augmentation for Deep Learning**  
+Connor Shorten, Taghi M. Khoshgoftaar · 2019 · **  
+`REVIEW` · citations: 11,840 · score: 0.030 · [doi](https://doi.org/10.1186/s40537-019-0197-0)  
 
 
-**57. A connectome and analysis of the adult Drosophila central brain**  
+**73. Dementia prevention, intervention, and care: 2020 report of the Lancet Commission**  
+Gill Livingston, Jonathan Huntley, Andrew Sommerlad et al. · 2020 · **  
+`REVIEW` · citations: 9,824 · score: 0.029 · [doi](https://doi.org/10.1016/s0140-6736(20)30367-6)  
+
+
+**74. A connectome and analysis of the adult Drosophila central brain**  
 Louis K. Scheffer, C. Shan Xu, Michał Januszewski et al. · 2020 · **  
 `REVIEW` · citations: 1,198 · score: 0.819 · [doi](https://doi.org/10.7554/elife.57443)  
 
 
-**58. Synaptic Specificity, Recognition Molecules, and Assembly of Neural Circuits**  
+**75. The genetic architecture of the human cerebral cortex**  
+Katrina L. Grasby, Neda Jahanshad, Jodie N. Painter et al. · 2020 · **  
+`REVIEW` · citations: 861 · score: 0.070 · [doi](https://doi.org/10.1126/science.aay6690)  
+
+
+**76. ENIGMA and global neuroscience: A decade of large-scale studies of the brain in health and disease across more than 40 countries**  
+Paul M. Thompson, Neda Jahanshad, Christopher R. K. Ching et al. · 2020 · **  
+`REVIEW` · citations: 660 · score: 0.067 · [doi](https://doi.org/10.1038/s41398-020-0705-1)  
+
+
+**77. Linking Structure and Function in Macroscale Brain Networks**  
+Laura E. Suárez, Ross D. Markello, Richard F. Betzel et al. · 2020 · **  
+`REVIEW` · citations: 841 · score: 0.044 · [doi](https://doi.org/10.1016/j.tics.2020.01.008)  
+
+
+**78. Synaptic Specificity, Recognition Molecules, and Assembly of Neural Circuits**  
 Joshua R. Sanes, S Lawrence Zipursky · 2020 · **  
 `REVIEW` · citations: 349 · score: 0.043 · [doi](https://doi.org/10.1016/j.cell.2020.04.008)  
 
 
-**59. Toward nanoscale localization of memory engrams in<i>Drosophila</i>**  
-Yoshinori Aso, Gerald M. Rubin · 2020 · **  
-`REVIEW` · citations: 18 · score: 0.023 · [doi](https://doi.org/10.1080/01677063.2020.1715973)  
+**79. Challenges and future directions for representations of functional brain organization**  
+Janine Bijsterbosch, Samuel J. Harrison, Saâd Jbabdi et al. · 2020 · **  
+`REVIEW` · citations: 182 · score: 0.041 · [doi](https://doi.org/10.1038/s41593-020-00726-z)  
 
 
-**60. Cellular and circuit mechanisms of olfactory associative learning in<i>Drosophila</i>**  
-Tamara Boto, Aaron Stahl, Seth M. Tomchik · 2020 · **  
-`REVIEW` · citations: 58 · score: 0.018 · [doi](https://doi.org/10.1080/01677063.2020.1715971)  
+**80. Tissue clearing and its applications in neuroscience**  
+Hiroki R. Ueda, Ali Ertürk, Kwanghun Chung et al. · 2020 · **  
+`REVIEW` · citations: 616 · score: 0.036 · [doi](https://doi.org/10.1038/s41583-019-0250-1)  
 
 
-**61. Tubulin post‐translational modifications control neuronal development and functions**  
-Marie‐Jo Moutin, Christophe Bosc, Leticia Peris et al. · 2020 · **  
-`REVIEW` · citations: 101 · score: 0.018 · [doi](https://doi.org/10.1002/dneu.22774)  
+**81. Data sharing and privacy issues in neuroimaging research: Opportunities, obstacles, challenges, and monsters under the bed**  
+Tonya White, Elisabet Blok, Vince D. Calhoun · 2020 · **  
+`REVIEW` · citations: 170 · score: 0.031 · [doi](https://doi.org/10.1002/hbm.25120)  
 
 
-**62. Whole-Brain Profiling of Cells and Circuits in Mammals by Tissue Clearing and Light-Sheet Microscopy**  
-Hiroki R. Ueda, Hans‐Ulrich Dodt, Pavel Osten et al. · 2020 · **  
-`REVIEW` · citations: 226 · score: 0.015 · [doi](https://doi.org/10.1016/j.neuron.2020.03.004)  
+**82. The 2021 WHO Classification of Tumors of the Central Nervous System: a summary**  
+David N. Louis, Arie Perry, Pieter Wesseling et al. · 2021 · **  
+`REVIEW` · citations: 11,129 · score: 0.029 · [doi](https://doi.org/10.1093/neuonc/noab106)  
 
 
-**63. Brain connectomes come of age**  
-Xiao‐Jing Wang, Ulises Pereira, Marcello G. P. Rosa et al. · 2020 · **  
-`REVIEW` · citations: 16 · score: 0.015 · [doi](https://doi.org/10.1016/j.conb.2020.11.002)  
-
-
-**64. What Is the Test-Retest Reliability of Common Task-Functional MRI Measures? New Empirical Evidence and a Meta-Analysis**  
-Maxwell L. Elliott, Annchen R. Knodt, David Ireland et al. · 2020 · **  
-`REVIEW` · citations: 731 · score: 0.014 · [doi](https://doi.org/10.1177/0956797620916786)  
-
-
-**65. The Drosophila Split Gal4 System for Neural Circuit Mapping**  
-Haojiang Luan, Fengqiu Diao, Robert L. Scott et al. · 2020 · **  
-`REVIEW` · citations: 75 · score: 0.013 · [doi](https://doi.org/10.3389/fncir.2020.603397)  
-
-
-**66. The cell biologist's guide to super-resolution microscopy**  
-Guillaume Jacquemet, Alexandre F. Carisey, Hellyeh Hamidi et al. · 2020 · **  
-`REVIEW` · citations: 177 · score: 0.013 · [doi](https://doi.org/10.1242/jcs.240713)  
-
-
-**67. The Human Connectome Project: A retrospective**  
+**83. The Human Connectome Project: A retrospective**  
 Jennifer Stine Elam, Matthew F. Glasser, Michael P. Harms et al. · 2021 · **  
-`REVIEW` · citations: 293 · score: 0.035 · [doi](https://doi.org/10.1016/j.neuroimage.2021.118543)  
+`REVIEW` · citations: 293 · score: 0.040 · [doi](https://doi.org/10.1016/j.neuroimage.2021.118543)  
 
 
-**68. Architectures of neuronal circuits**  
-Liqun Luo · 2021 · **  
-`REVIEW` · citations: 365 · score: 0.017 · [doi](https://doi.org/10.1126/science.abg7285)  
+**84. Autophagy in inflammation, infection, and immunometabolism**  
+Vojo Deretić · 2021 · **  
+`REVIEW` · citations: 786 · score: 0.039 · [doi](https://doi.org/10.1016/j.immuni.2021.01.018)  
 
 
-**69. Expansion microscopy: A powerful nanoscale imaging tool for neuroscientists**  
-Brendan R. Gallagher, Yongxin Zhao · 2021 · **  
-`REVIEW` · citations: 48 · score: 0.015 · [doi](https://doi.org/10.1016/j.nbd.2021.105362)  
+**85. Autophagy in major human diseases**  
+Daniel J. Klionsky, Giulia Petroni, Ravi K. Amaravadi et al. · 2021 · **  
+`REVIEW` · citations: 1,474 · score: 0.034 · [doi](https://doi.org/10.15252/embj.2021108863)  
 
 
-**70. Brain Ultrastructure: Putting the Pieces Together**  
-Patrick C. Nahirney, Marie‐Ève Tremblay · 2021 · **  
-`REVIEW` · citations: 105 · score: 0.014 · [doi](https://doi.org/10.3389/fcell.2021.629503)  
-
-
-**71. Frozen algorithms: how the brain's wiring facilitates learning**  
-Dhruva V. Raman, Timothy O’Leary · 2021 · **  
-`REVIEW` · citations: 11 · score: 0.014 · [doi](https://doi.org/10.1016/j.conb.2020.12.017)  
-
-
-**72. Null models in network neuroscience**  
+**86. Null models in network neuroscience**  
 František Váša, Bratislav Mišić · 2022 · **  
-`REVIEW` · citations: 203 · score: 0.025 · [doi](https://doi.org/10.1038/s41583-022-00601-9)  
+`REVIEW` · citations: 203 · score: 0.030 · [doi](https://doi.org/10.1038/s41583-022-00601-9)  
 
 
-**73. A Survey of Visualization and Analysis in High‐Resolution Connectomics**  
-Johanna Beyer, Jakob Troidl, Saeed Boorboor et al. · 2022 · **  
-`REVIEW` · citations: 27 · score: 0.015 · [doi](https://doi.org/10.1111/cgf.14574)  
-
-
-**74. Endocrine cybernetics: neuropeptides as molecular switches in behavioural decisions**  
-Dick R. Nässel, Meet Zandawala · 2022 · **  
-`REVIEW` · citations: 84 · score: 0.015 · [doi](https://doi.org/10.1098/rsob.220174)  
-
-
-**75. Connectomics and the neural basis of behaviour**  
-Dana S. Galili, Gregory S.X.E. Jefferis, Marta Costa · 2022 · **  
-`REVIEW` · citations: 59 · score: 0.013 · [doi](https://doi.org/10.1016/j.cois.2022.100968)  
-
-
-**76. Dynamic functional connectivity in the static connectome of Caenorhabditis elegans**  
-Steven W. Flavell, Andrew Gordus · 2022 · **  
-`REVIEW` · citations: 39 · score: 0.013 · [doi](https://doi.org/10.1016/j.conb.2021.12.002)  
-
-
-**77. Statistical power in network neuroscience**  
+**87. Statistical power in network neuroscience**  
 Koen Helwegen, Ilan Libedinsky, Martijn P. van den Heuvel · 2023 · **  
-`REVIEW` · citations: 52 · score: 0.050 · [doi](https://doi.org/10.1016/j.tics.2022.12.011)  
+`REVIEW` · citations: 52 · score: 0.062 · [doi](https://doi.org/10.1016/j.tics.2022.12.011)  
+
+
+
+### Physics / Astronomy  _E. K. Grebel, Scott F. Anderson_
+
+**88. The Two Micron All Sky Survey (2MASS)**  
+Michael F. Skrutskie, R. M. Cutri, R. Stiening et al. · 2006 · **  
+`REVIEW` · citations: 11,488 · score: 0.032 · [doi](https://doi.org/10.1086/498708)  
 
 
 
@@ -408,418 +466,895 @@ Koen Helwegen, Ilan Libedinsky, Martijn P. van den Heuvel · 2023 · **
 ## Phase 1 — Foundations  (seminal pre-2010 work)
 
 
-### Biology / Computer science  _Thomas Euler, Kevin L. Briggman_
+### Biology / Computer science  _Thomas Euler, Philipp Berens_
 
-**78. Directionally selective calcium signals in dendrites of starburst amacrine cells**  
-Thomas Euler, Peter B. Detwiler, Winfried Denk · 2002 · **  
-`BIOLOGY` · citations: 598 · score: 0.093 · [doi](https://doi.org/10.1038/nature00931)  
-
-
-**79. A Proposal for a Coordinated Effort for the Determination of Brainwide Neuroanatomical Connectivity in Model Organisms at a Mesoscopic Scale**  
-Jason W. Bohland, Caizhi Wu, Helen Barbas et al. · 2009 · **  
-`METHODS` · citations: 275 · score: 0.026 · [doi](https://doi.org/10.1371/journal.pcbi.1000334)  
+**89. Synaptic organization of starburst amacrine cells in rabbit retina: Analysis of serial thin sections by electron microscopy and graphic reconstruction**  
+Edward V. Famiglietti · 1991 · **  
+`METHODS` · citations: 196 · score: 0.126 · [doi](https://doi.org/10.1002/cne.903090105)  
 
 
-
-### Biology / Embryo  _Елена Киселева, Anton Strunov_
-
-**80. Neuropilin receptors guide distinct phases of sensory and motor neuronal segmentation**  
-Julaine Roffers‐Agarwal, Laura S. Gammill · 2009 · **  
-`METHODS` · citations: 57 · score: 0.013 · [doi](https://doi.org/10.1242/dev.032920)  
+**90. Learning the parts of objects by non-negative matrix factorization**  
+Daniel D. Lee, H. Sebastian Seung · 1999 · **  
+`METHODS` · citations: 13,873 · score: 0.037 · [doi](https://doi.org/10.1038/44565)  
 
 
+**91. Matrix Elasticity Directs Stem Cell Lineage Specification**  
+Adam J. Engler, Shamik Sen, H. Lee Sweeney et al. · 2006 · **  
+`METHODS` · citations: 13,562 · score: 0.036 · [doi](https://doi.org/10.1016/j.cell.2006.06.044)  
 
-### Biology / Neuroscience  _Albert Cardona, Gregory S.X.E. Jefferis_
 
-**81. Drosophila Brain Development: Closing the Gap between a Macroarchitectural and Microarchitectural Approach**  
-Albert Cardona, Stephan Saalfeld, Pavel Tomančák et al. · 2009 · **  
-`METHODS` · citations: 16 · score: 0.021 · [doi](https://doi.org/10.1101/sqb.2009.74.037)  
+**92. Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits**  
+Kristina D. Micheva, Stephen J Smith · 2007 · **  
+`METHODS` · citations: 807 · score: 0.134 · [doi](https://doi.org/10.1016/j.neuron.2007.06.014)  
+
+
+
+### Biology / Neuroscience  _Oliver Hobert, Mei Zhen_
+
+**93. Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type**  
+Guo‐Qiang Bi, Mu‐ming Poo · 1998 · **  
+`METHODS` · citations: 4,726 · score: 0.034 · [doi](https://doi.org/10.1523/jneurosci.18-24-10464.1998)  
 
 
 
 ### Carbon nanotube / Materials science  _J. E. Fischer, Catherine Journet_
 
-**82. Crystalline Ropes of Metallic Carbon Nanotubes**  
-Andreas Theß, Roland Lee, Pavel Nikolaev et al. · 1996 · **  
-`METHODS` · citations: 5,534 · score: 0.015 · [doi](https://doi.org/10.1126/science.273.5274.483)  
+**94. Helical microtubules of graphitic carbon**  
+Sumio Iijima · 1991 · **  
+`METHODS` · citations: 42,584 · score: 0.104 · [doi](https://doi.org/10.1038/354056a0)  
+
+
+**95. Cognitive radio: brain-empowered wireless communications**  
+S. Haykin · 2005 · **  
+`METHODS` · citations: 11,929 · score: 0.029 · [doi](https://doi.org/10.1109/jsac.2004.839380)  
+
+
+
+### Computer science / Computational science  _Paolo Giannozzi, Stefano Baroni_
+
+**96. QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials**  
+Paolo Giannozzi, Stefano Baroni, Nicola Bonini et al. · 2009 · **  
+`METHODS` · citations: 28,256 · score: 0.069 · [doi](https://doi.org/10.1088/0953-8984/21/39/395502)  
+
+
+
+### Computer science / Mathematics  _Yang‐Yu Liu, Albert-Ĺaszló Barabási_
+
+**97. Emergence of Scaling in Random Networks**  
+Albert-Ĺaszló Barabási, Réka Albert · 1999 · **  
+`METHODS` · citations: 35,882 · score: 0.268 · [doi](https://doi.org/10.1126/science.286.5439.509)  
+
+
+
+### Materials science / Nanotechnology  _Yury Gogotsi, A. K. Geǐm_
+
+**98. Synthesis of graphene-based nanosheets via chemical reduction of exfoliated graphite oxide**  
+Sasha Stankovich, Dmitriy A. Dikin, Richard D. Piner et al. · 2007 · **  
+`METHODS` · citations: 13,658 · score: 0.036 · [doi](https://doi.org/10.1016/j.carbon.2007.02.034)  
+
+
+
+### Neuroscience / Psychology  _Olaf Sporns, Edward T. Bullmore_
+
+**99. Three-dimensional tracking of axonal projections in the brain by magnetic resonance imaging**  
+Susumu Mori, Barbara J. Crain, V. P. Chacko et al. · 1999 · **  
+`METHODS` · citations: 3,533 · score: 0.035 · [doi](https://doi.org/10.1002/1531-8249(199902)45:2<265::aid-ana21>3.0.co;2-3)  
+
+
+**100. Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images**  
+Mark Jenkinson · 2002 · **  
+`METHODS` · citations: 10,589 · score: 0.050 · [doi](https://doi.org/10.1016/s1053-8119(02)91132-8)  
 
 
 
 ### Other  __
 
-**83. Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study**  
+**101. Studies of interference in serial verbal reactions**  
+J. Ridley Stroop · 1935 · **  
+`METHODS` · citations: 18,192 · score: 0.056 · [doi](https://doi.org/10.1037/h0054651)  
+
+
+**102. Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study**  
 Gray Eg · 1959 · **  
 `METHODS` · citations: 1,790 · score: 0.048  
 
 
-**84. Principles and Techniques of Electron Microscopy: Biological Applications**  
+**103. <i>The Structure of Scientific Revolutions</i>**  
+Thomas Kühn, Richard Schlegel · 1963 · **  
+`METHODS` · citations: 35,524 · score: 0.085 · [doi](https://doi.org/10.1063/1.3050879)  
+
+
+**104. “Mini-mental state”**  
+Marshal F. Folstein, Susan E. Folstein, Paul R. McHugh · 1975 · **  
+`METHODS` · citations: 86,234 · score: 0.221 · [doi](https://doi.org/10.1016/0022-3956(75)90026-6)  
+
+
+**105. Principles and Techniques of Electron Microscopy: Biological Applications**  
 Timothy K. Maugel, M. A. Hayat · 1977 · **  
 `METHODS` · citations: 389 · score: 0.052 · [doi](https://doi.org/10.2307/3226107)  
 
 
-**85. Principles and Techniques of Electron Microscopy: Biological Applications**  
+**106. A Set of Measures of Centrality Based on Betweenness**  
+Linton C. Freeman · 1977 · **  
+`METHODS` · citations: 10,081 · score: 0.046 · [doi](https://doi.org/10.2307/3033543)  
+
+
+**107. A Threshold Selection Method from Gray-Level Histograms**  
+Nobuyuki Otsu · 1979 · **  
+`METHODS` · citations: 42,591 · score: 0.139 · [doi](https://doi.org/10.1109/tsmc.1979.4310076)  
+
+
+**108. Intraclass correlations: Uses in assessing rater reliability**  
+Patrick E. Shrout, Joseph L. Fleiss · 1979 · **  
+`METHODS` · citations: 22,750 · score: 0.057 · [doi](https://doi.org/10.1037/0033-2909.86.2.420)  
+
+
+**109. Principles and Techniques of Electron Microscopy: Biological Applications**  
 Timothy K. Maugel, M. A. Hayat · 1979 · **  
 `METHODS` · citations: 1,329 · score: 0.055 · [doi](https://doi.org/10.2307/3226038)  
 
 
-**86. Thalamic input to the cerebral cortex**  
-Alan Peters · 1979 · **  
-`BIOLOGY` · citations: 70 · score: 0.015 · [doi](https://doi.org/10.1016/0166-2236(79)90074-2)  
-
-
-**87. A systematic approach to reconstructing microcircuitry by electron microscopy of serial sections**  
+**110. A systematic approach to reconstructing microcircuitry by electron microscopy of serial sections**  
 John K. Stevens, Thomas L. Davis, Neil J. Friedman et al. · 1980 · **  
 `METHODS` · citations: 134 · score: 0.113 · [doi](https://doi.org/10.1016/0165-0173(80)90010-7)  
 
 
-**88. Microcircuitry of bipolar cells in cat retina**  
+**111. SEM images of block faces, cut by a miniature microtome within the SEM - a technical note**  
+Leighton Sb · 1981 · **  
+`METHODS` · citations: 102 · score: 0.048  
+
+
+**112. A simple post-embedding system for the rapid demonstration of tissue antigens under the electron microscope**  
+G R Newman, Bharat Jasani, E. D. Williams · 1983 · **  
+`METHODS` · citations: 301 · score: 0.036 · [doi](https://doi.org/10.1007/bf01954145)  
+
+
+**113. Microcircuitry of bipolar cells in cat retina**  
 BA McGuire, JK Stevens, Peter Sterling · 1984 · **  
 `BIOLOGY` · citations: 248 · score: 0.145 · [doi](https://doi.org/10.1523/jneurosci.04-12-02920.1984)  
 
 
-**89. Patterns of synaptic input to layer 4 of cat striate cortex**  
+**114. Patterns of synaptic input to layer 4 of cat striate cortex**  
 BA McGuire, Jean‐Pierre Hornung, CD Gilbert et al. · 1984 · **  
 `BIOLOGY` · citations: 273 · score: 0.045 · [doi](https://doi.org/10.1523/jneurosci.04-12-03021.1984)  
 
 
-**90. The structure of the nervous system of the nematode <i>Caenorhabditis elegans</i>**  
+**115. Random Graphs**  
+Béla Bollobás · 1985 · **  
+`METHODS` · citations: 6,168 · score: 0.338  
+
+
+**116. The structure of the nervous system of the nematode <i>Caenorhabditis elegans</i>**  
 JG White, Eileen Southgate, J. Nichol Thomson et al. · 1986 · **  
 `METHODS` · citations: 5,793 · score: 0.349 · [doi](https://doi.org/10.1098/rstb.1986.0056)  
 
 
-**91. Morphological transformation of synaptic terminals of a phasic motoneuron by long-term tonic stimulation**  
+**117. Morphological transformation of synaptic terminals of a phasic motoneuron by long-term tonic stimulation**  
 GA Lnenicka, HL Atwood, Leo Marin · 1986 · **  
 `METHODS` · citations: 149 · score: 0.040 · [doi](https://doi.org/10.1523/jneurosci.06-08-02252.1986)  
 
 
-**92. Particle‐size Analysis**  
-G.W. Gee, J. W. Bauder · 1986 · **  
-`METHODS` · citations: 8,669 · score: 0.022 · [doi](https://doi.org/10.2136/sssabookser5.1.2ed.c15)  
+**118. Marching cubes: A high resolution 3D surface construction algorithm**  
+William E. Lorensen, H. E. Cline · 1987 · **  
+`METHODS` · citations: 10,126 · score: 0.041 · [doi](https://doi.org/10.1145/37401.37422)  
 
 
-**93. Cortical Circuits: Synaptic Organization of the Cerebral Cortex Structure, Function, and Theory**  
-Edward L. White, Asaf Keller · 1989 · **  
-`METHODS` · citations: 333 · score: 0.017  
+**119. Co-Planar Stereotaxic Atlas of the Human Brain**  
+J Talairach, P Tournoux · 1988 · **  
+`METHODS` · citations: 11,679 · score: 0.158  
 
 
-**94. The optic lobe of Drosophila melanogaster. I. A Golgi analysis of wild-type structure**  
+**120. Harrison's Principles of Internal Medicine**  
+ · 1988 · **  
+`METHODS` · citations: 12,587 · score: 0.031 · [doi](https://doi.org/10.7326/0003-4819-108-3-499_2)  
+
+
+**121. Oscillatory responses in cat visual cortex exhibit inter-columnar synchronization which reflects global stimulus properties**  
+Charles M. Gray, Peter König, Andreas K. Engel et al. · 1989 · **  
+`METHODS` · citations: 4,245 · score: 0.158 · [doi](https://doi.org/10.1038/338334a0)  
+
+
+**122. Co-planar stereotaxic atlas of the human brain**  
+Lauri A. Laitinen · 1989 · **  
+`METHODS` · citations: 7,608 · score: 0.130 · [doi](https://doi.org/10.1016/0303-8467(89)90128-5)  
+
+
+**123. The optic lobe of Drosophila melanogaster. I. A Golgi analysis of wild-type structure**  
 K. F. Fischbach, Anita Dittrich · 1989 · **  
 `BIOLOGY` · citations: 747 · score: 0.094 · [doi](https://doi.org/10.1007/bf00218858)  
 
 
-**95. Oxygenation‐sensitive contrast in magnetic resonance image of rodent brain at high magnetic fields**  
+**124. Basic local alignment search tool**  
+Stephen F. Altschul, Warren Gish, Webb Miller et al. · 1990 · **  
+`METHODS` · citations: 93,570 · score: 0.264 · [doi](https://doi.org/10.1016/s0022-2836(05)80360-2)  
+
+
+**125. Oxygenation‐sensitive contrast in magnetic resonance image of rodent brain at high magnetic fields**  
 Seiji Ogawa, Tso‐Ming Lee, Asha S. Nayak et al. · 1990 · **  
 `METHODS` · citations: 2,258 · score: 0.044 · [doi](https://doi.org/10.1002/mrm.1910140108)  
 
 
-**96. Theory and Practice of Histological Techniques**  
-John D. Bancroft, Marilyn Gamble · 1990 · **  
-`METHODS` · citations: 6,994 · score: 0.018  
+**126. Introduction to Statistical Pattern Recognition**  
+Keinosuke Fukunaga · 1990 · **  
+`METHODS` · citations: 11,123 · score: 0.029 · [doi](https://doi.org/10.1016/c2009-0-27872-x)  
 
 
-**97. Synaptic organization of starburst amacrine cells in rabbit retina: Analysis of serial thin sections by electron microscopy and graphic reconstruction**  
-Edward V. Famiglietti · 1991 · **  
-`METHODS` · citations: 196 · score: 0.126 · [doi](https://doi.org/10.1002/cne.903090105)  
+**127. Brain magnetic resonance imaging with contrast dependent on blood oxygenation**  
+Satoshi Ogawa, T M Lee, A R Kay et al. · 1990 · **  
+`METHODS` · citations: 6,449 · score: 0.038 · [doi](https://doi.org/10.1073/pnas.87.24.9868)  
 
 
-**98. The posterior nervous system of the nematode Caenorhabditis elegans: serial reconstruction of identified neurons and complete pattern of synaptic interactions**  
+**128. Distributed Hierarchical Processing in the Primate Cerebral Cortex**  
+D.J. Felleman, David C. Van Essen · 1991 · **  
+`METHODS` · citations: 7,905 · score: 0.194 · [doi](https://doi.org/10.1093/cercor/1.1.1)  
+
+
+**129. The posterior nervous system of the nematode Caenorhabditis elegans: serial reconstruction of identified neurons and complete pattern of synaptic interactions**  
 DH Hall, R. L. Russell · 1991 · **  
 `BIOLOGY` · citations: 271 · score: 0.029 · [doi](https://doi.org/10.1523/jneurosci.11-01-00001.1991)  
 
 
-**99. Synaptic organization of columnar elements in the lamina of the wild type in <i>Drosophila melanogaster</i>**  
+**130. Synaptic organization of columnar elements in the lamina of the wild type in <i>Drosophila melanogaster</i>**  
 Ian A. Meinertzhagen, S. D. O'Neil · 1991 · **  
 `BIOLOGY` · citations: 411 · score: 0.046 · [doi](https://doi.org/10.1002/cne.903050206)  
 
 
-**100. Generation of Neurons and Astrocytes from Isolated Cells of the Adult Mammalian Central Nervous System**  
-Brent A. Reynolds, Samuel Weiss · 1992 · **  
-`METHODS` · citations: 5,375 · score: 0.015 · [doi](https://doi.org/10.1126/science.1553558)  
+**131. Objective analysis of the topological organization of the primate cortical visual system**  
+Malcolm P. Young · 1992 · **  
+`METHODS` · citations: 471 · score: 0.047 · [doi](https://doi.org/10.1038/358152a0)  
 
 
-**101. Quantitative ultrastructure of Ia boutons in the ventral horn: scaling and positional relationships**  
+**132. Quantitative ultrastructure of Ia boutons in the ventral horn: scaling and positional relationships**  
 John P. Pierce, Lorne M. Mendell · 1993 · **  
 `METHODS` · citations: 176 · score: 0.045 · [doi](https://doi.org/10.1523/jneurosci.13-11-04748.1993)  
 
 
-**102. Occurrence and three-dimensional structure of multiple synapses between individual radiatum axons and their target pyramidal cells in hippocampal area CA1**  
+**133. The organization of neural systems in the primate cerebral cortex**  
+M. P. Young · 1993 · **  
+`METHODS` · citations: 286 · score: 0.035 · [doi](https://doi.org/10.1098/rspb.1993.0040)  
+
+
+**134. Occurrence and three-dimensional structure of multiple synapses between individual radiatum axons and their target pyramidal cells in hippocampal area CA1**  
 KE Sorra, Kristen M. Harris · 1993 · **  
 `BIOLOGY` · citations: 252 · score: 0.057 · [doi](https://doi.org/10.1523/jneurosci.13-09-03736.1993)  
 
 
-**103. Methods for general and molecular bacteriology**  
-Philipp Gerhardt · 1994 · **  
-`METHODS` · citations: 6,625 · score: 0.017  
+**135. Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing**  
+Yoav Benjamini, Yosef Hochberg · 1995 · **  
+`METHODS` · citations: 106,483 · score: 0.278 · [doi](https://doi.org/10.1111/j.2517-6161.1995.tb02031.x)  
 
 
-**104. Indeterminate Organization of the Visual System**  
-Claus C. Hilgetag, Mark A. O’Neill, Malcolm P. Young · 1996 · **  
-`METHODS` · citations: 181 · score: 0.016 · [doi](https://doi.org/10.1126/science.271.5250.776)  
+**136. Support-vector networks**  
+Corinna Cortes, Vladimir Vapnik · 1995 · **  
+`METHODS` · citations: 39,987 · score: 0.108 · [doi](https://doi.org/10.1007/bf00994018)  
 
 
-**105. B lymphocytes secrete antigen-presenting vesicles**  
-Graça Raposo, Hans W. Nijman, Willem Stoorvogel et al. · 1996 · **  
-`METHODS` · citations: 3,443 · score: 0.013 · [doi](https://doi.org/10.1084/jem.183.3.1161)  
+**137. Support-Vector Networks**  
+Corinna Cortes, Vladimir Vapnik · 1995 · **  
+`METHODS` · citations: 32,108 · score: 0.080 · [doi](https://doi.org/10.1023/a:1022627411411)  
 
 
-**106. Quantitative Ultrastructural Analysis of Hippocampal Excitatory Synapses**  
-Thomas Schikorski, Charles F. Stevens · 1997 · **  
-`BIOLOGY` · citations: 993 · score: 0.022 · [doi](https://doi.org/10.1523/jneurosci.17-15-05858.1997)  
+**138. Wide area traffic: the failure of Poisson modeling**  
+Vern Paxson, Sally Floyd · 1995 · **  
+`METHODS` · citations: 3,713 · score: 0.041 · [doi](https://doi.org/10.1109/90.392383)  
 
 
-**107. Crystallography &amp; NMR System: A New Software Suite for Macromolecular Structure Determination**  
+**139. The Metabolic and Molecular Bases of Inherited Disease**  
+R Charles Scriver · 1995 · **  
+`METHODS` · citations: 12,175 · score: 0.030  
+
+
+**140. Spatial registration and normalization of images**  
+Karl Friston, John Ashburner, Chris Frith et al. · 1995 · **  
+`METHODS` · citations: 3,748 · score: 0.114 · [doi](https://doi.org/10.1002/hbm.460030303)  
+
+
+**141. Analysis of connectivity in the cat cerebral cortex**  
+JW Scannell, Colin Blakemore, MP Young · 1995 · **  
+`METHODS` · citations: 577 · score: 0.030 · [doi](https://doi.org/10.1523/jneurosci.15-02-01463.1995)  
+
+
+**142. Computer Visualization of Three-Dimensional Image Data Using IMOD**  
+James R. Kremer, David N. Mastronarde, J. Richard McIntosh · 1996 · **  
+`METHODS` · citations: 5,943 · score: 0.073 · [doi](https://doi.org/10.1006/jsbi.1996.0013)  
+
+
+**143. Heart rate variability: Standards of measurement, physiological interpretation, and clinical use**  
+Marek Malik, J. Thomas Bigger, A. John Camm et al. · 1996 · **  
+`METHODS` · citations: 15,208 · score: 0.037 · [doi](https://doi.org/10.1093/oxfordjournals.eurheartj.a014868)  
+
+
+**144. Emergence of simple-cell receptive field properties by learning a sparse code for natural images**  
+Bruno A. Olshausen, David J. Field · 1996 · **  
+`METHODS` · citations: 5,785 · score: 0.037 · [doi](https://doi.org/10.1038/381607a0)  
+
+
+**145. AFNI: Software for Analysis and Visualization of Functional Magnetic Resonance Neuroimages**  
+Robert W. Cox · 1996 · **  
+`METHODS` · citations: 11,461 · score: 0.034 · [doi](https://doi.org/10.1006/cbmr.1996.0014)  
+
+
+**146. Bias in meta-analysis detected by a simple, graphical test**  
+Matthias Egger, George Davey Smith, Martin Schneider et al. · 1997 · **  
+`METHODS` · citations: 55,187 · score: 0.131 · [doi](https://doi.org/10.1136/bmj.315.7109.629)  
+
+
+**147. The capsaicin receptor: a heat-activated ion channel in the pain pathway**  
+Michael J. Caterina, Mark Schumacher, Makoto Tominaga et al. · 1997 · **  
+`METHODS` · citations: 9,007 · score: 0.049 · [doi](https://doi.org/10.1038/39807)  
+
+
+**148. The Fusiform Face Area: A Module in Human Extrastriate Cortex Specialized for Face Perception**  
+Nancy Kanwisher, Josh H. McDermott, Marvin M. Chun · 1997 · **  
+`METHODS` · citations: 7,877 · score: 0.031 · [doi](https://doi.org/10.1523/jneurosci.17-11-04302.1997)  
+
+
+**149. Gradient-based learning applied to document recognition**  
+Yann LeCun, Léon Bottou, Yoshua Bengio et al. · 1998 · **  
+`METHODS` · citations: 57,014 · score: 0.209 · [doi](https://doi.org/10.1109/5.726791)  
+
+
+**150. A pyramid approach to subpixel registration based on intensity**  
+P. Thévenaz, Urs E. Ruttimann, Michaël Unser · 1998 · **  
+`METHODS` · citations: 3,243 · score: 0.082 · [doi](https://doi.org/10.1109/83.650848)  
+
+
+**151. Cortex: Statistics and Geometry of Neuronal Connectivity**  
+Valentino Braitenberg, Almut Schüz · 1998 · **  
+`METHODS` · citations: 1,203 · score: 0.059 · [doi](https://doi.org/10.1007/978-3-662-03733-1)  
+
+
+**152. Crystallography &amp; NMR System: A New Software Suite for Macromolecular Structure Determination**  
 Axel T. Brünger, Paul D. Adams, G. Marius Clore et al. · 1998 · **  
 `METHODS` · citations: 15,770 · score: 0.040 · [doi](https://doi.org/10.1107/s0907444998003254)  
 
 
-**108. Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type**  
-Guo‐Qiang Bi, Mu‐ming Poo · 1998 · **  
-`METHODS` · citations: 4,726 · score: 0.034 · [doi](https://doi.org/10.1523/jneurosci.18-24-10464.1998)  
+**153. Collective dynamics of ‘small-world’ networks**  
+Duncan J. Watts, Steven H. Strogatz · 1998 · **  
+`METHODS` · citations: 42,581 · score: 0.402 · [doi](https://doi.org/10.1038/30918)  
 
 
-**109. Three-Dimensional Structure and Composition of CA3→CA1 Axons in Rat Hippocampal Slices: Implications for Presynaptic Connectivity and Compartmentalization**  
+**154. Three-Dimensional Structure and Composition of CA3→CA1 Axons in Rat Hippocampal Slices: Implications for Presynaptic Connectivity and Compartmentalization**  
 Gordon M. Shepherd, Kristen M. Harris · 1998 · **  
 `BIOLOGY` · citations: 509 · score: 0.083 · [doi](https://doi.org/10.1523/jneurosci.18-20-08300.1998)  
 
 
-**110. LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing**  
+**155. Object recognition from local scale-invariant features**  
+David Lowe · 1999 · **  
+`METHODS` · citations: 16,112 · score: 0.090 · [doi](https://doi.org/10.1109/iccv.1999.790410)  
+
+
+**156. From molecular to modular cell biology**  
+Leland H. Hartwell, J. J. Hopfield, Stanislas Leibler et al. · 1999 · **  
+`METHODS` · citations: 3,654 · score: 0.079 · [doi](https://doi.org/10.1038/35011540)  
+
+
+**157. How people learn: Brain, mind, experience, and school**  
+John D. Bransford, Ann L. Brown, Rodney R. Cocking · 1999 · **  
+`METHODS` · citations: 12,898 · score: 0.032  
+
+
+**158. Authoritative sources in a hyperlinked environment**  
+Jon Kleinberg · 1999 · **  
+`METHODS` · citations: 8,990 · score: 0.030 · [doi](https://doi.org/10.1145/324133.324140)  
+
+
+**159. On power-law relationships of the Internet topology**  
+Michalis Faloutsos, Petros Faloutsos, Christos Faloutsos · 1999 · **  
+`METHODS` · citations: 4,222 · score: 0.048 · [doi](https://doi.org/10.1145/316188.316229)  
+
+
+**160. Tracking neuronal fiber pathways in the living human brain**  
+Thomas E. Conturo, Nicolás Lori, Thomas S. Cull et al. · 1999 · **  
+`METHODS` · citations: 1,782 · score: 0.029 · [doi](https://doi.org/10.1073/pnas.96.18.10422)  
+
+
+**161. Diameter of the World-Wide Web**  
+Réka Albert, Hawoong Jeong, Albert-Ĺaszló Barabási · 1999 · **  
+`METHODS` · citations: 4,246 · score: 0.144 · [doi](https://doi.org/10.1038/43601)  
+
+
+**162. The Connectional Organization of the Cortico-thalamic System of the Cat**  
+Jack W. Scannell · 1999 · **  
+`METHODS` · citations: 376 · score: 0.029 · [doi](https://doi.org/10.1093/cercor/9.3.277)  
+
+
+**163. Cortical Surface-Based Analysis**  
+Anders M. Dale, Bruce Fischl, Martin I. Sereno · 1999 · **  
+`METHODS` · citations: 11,343 · score: 0.075 · [doi](https://doi.org/10.1006/nimg.1998.0395)  
+
+
+**164. Cortical Surface-Based Analysis**  
+Bruce Fischl, Martin I. Sereno, Anders M. Dale · 1999 · **  
+`METHODS` · citations: 6,372 · score: 0.053 · [doi](https://doi.org/10.1006/nimg.1998.0396)  
+
+
+**165. High-resolution intersubject averaging and a coordinate system for the cortical surface**  
+Bruce Fischl, Martin I. Sereno, Roger B. H. Tootell et al. · 1999 · **  
+`METHODS` · citations: 3,297 · score: 0.030 · [doi](https://doi.org/10.1002/(sici)1097-0193(1999)8:4<272::aid-hbm10>3.0.co;2-4)  
+
+
+**166. Imaging Neuronal Subsets in Transgenic Mice Expressing Multiple Spectral Variants of GFP**  
+Guoping Feng, Rebecca H. Mellor, M. Bernstein et al. · 2000 · **  
+`METHODS` · citations: 3,127 · score: 0.185 · [doi](https://doi.org/10.1016/s0896-6273(00)00084-2)  
+
+
+**167. LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing**  
 Yukihiro Kabeya · 2000 · **  
 `METHODS` · citations: 6,511 · score: 0.086 · [doi](https://doi.org/10.1093/emboj/19.21.5720)  
 
 
-**111. A mechanistic study of the antibacterial effect of silver ions onEscherichia coli andStaphylococcus aureus**  
-Qingling Feng, Jing Wu, Gaoqiang Chen et al. · 2000 · **  
-`METHODS` · citations: 3,950 · score: 0.017 · [doi](https://doi.org/10.1002/1097-4636(20001215)52:4<662::aid-jbm10>3.0.co;2-3)  
+**168. A Global Geometric Framework for Nonlinear Dimensionality Reduction**  
+Joshua B. Tenenbaum, Vin de Silva, John Langford · 2000 · **  
+`METHODS` · citations: 13,617 · score: 0.044 · [doi](https://doi.org/10.1126/science.290.5500.2319)  
 
 
-**112. High-Level Neuronal Expression of Aβ<sub>1–42</sub>in Wild-Type Human Amyloid Protein Precursor Transgenic Mice: Synaptotoxicity without Plaque Formation**  
-Lennart Mucke, Eliezer Masliah, Gui-Qiu Yu et al. · 2000 · **  
-`METHODS` · citations: 1,860 · score: 0.013 · [doi](https://doi.org/10.1523/jneurosci.20-11-04050.2000)  
+**169. Error and attack tolerance of complex networks**  
+Réka Albert, Hawoong Jeong, Albert-László Barabási · 2000 · **  
+`METHODS` · citations: 7,085 · score: 0.117 · [doi](https://doi.org/10.1038/35019019)  
 
 
-**113. Cylindrical diameters method for calibrating section thickness in serial electron microscopy**  
+**170. Network Robustness and Fragility: Percolation on Random Graphs**  
+Duncan S. Callaway, M. E. J. Newman, Steven H. Strogatz et al. · 2000 · **  
+`METHODS` · citations: 2,432 · score: 0.050 · [doi](https://doi.org/10.1103/physrevlett.85.5468)  
+
+
+**171. The large-scale organization of metabolic networks**  
+H. Jeong, B. Tombor, R. Albert et al. · 2000 · **  
+`METHODS` · citations: 3,993 · score: 0.067 · [doi](https://doi.org/10.1038/35036627)  
+
+
+**172. Anatomical connectivity defines the organization of clusters of cortical areas in the macaque and the cat**  
+Claus C. Hilgetag, Gully Burns, Mark A. O’Neill et al. · 2000 · **  
+`METHODS` · citations: 561 · score: 0.030 · [doi](https://doi.org/10.1098/rstb.2000.0551)  
+
+
+**173. Initial sequencing and analysis of the human genome**  
+Eric S. Lander, Lauren Linton, Bruce W. Birren et al. · 2001 · **  
+`METHODS` · citations: 24,452 · score: 0.077 · [doi](https://doi.org/10.1038/35057062)  
+
+
+**174. Cylindrical diameters method for calibrating section thickness in serial electron microscopy**  
 John C. Fiala, Kristen M. Harris · 2001 · **  
 `METHODS` · citations: 147 · score: 0.070 · [doi](https://doi.org/10.1046/j.1365-2818.2001.00926.x)  
 
 
-**114. Principles of Computerized Tomographic Imaging**  
-Avinash C. Kak, Malcolm Slaney · 2001 · **  
-`METHODS` · citations: 5,732 · score: 0.017 · [doi](https://doi.org/10.1137/1.9780898719277)  
+**175. The Elements of Statistical Learning**  
+Trevor Hastie, J. Friedman, Robert Tibshirani · 2001 · **  
+`METHODS` · citations: 24,213 · score: 0.067 · [doi](https://doi.org/10.1007/978-0-387-21606-5)  
 
 
-**115. Multicolor and Electron Microscopic Imaging of Connexin Trafficking**  
+**176. On the emergence of the Green’s function in the correlations of a diffuse field**  
+Oleg I. Lobkis, Richard L. Weaver · 2001 · **  
+`METHODS` · citations: 1,031 · score: 0.055 · [doi](https://doi.org/10.1121/1.1417528)  
+
+
+**177. The Mouse Brain in Stereotaxic Coordinates**  
+George Paxinos · 2001 · **  
+`METHODS` · citations: 12,750 · score: 0.044  
+
+
+**178. A Fast and Reliable Method for Surface Wave Tomography**  
+M. P. Barmin, M. H. Ritzwoller, A. L. Levshin · 2001 · **  
+`METHODS` · citations: 386 · score: 0.029 · [doi](https://doi.org/10.1007/pl00001225)  
+
+
+**179. Nonparametric permutation tests for functional neuroimaging: A primer with examples**  
+Thomas E. Nichols, Andrew P. Holmes · 2001 · **  
+`METHODS` · citations: 6,402 · score: 0.028 · [doi](https://doi.org/10.1002/hbm.1058)  
+
+
+**180. Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm**  
+Y. Zhang, Michael Brady, Stephen M. Smith · 2001 · **  
+`METHODS` · citations: 7,255 · score: 0.038 · [doi](https://doi.org/10.1109/42.906424)  
+
+
+**181. A global optimisation method for robust affine registration of brain images**  
+Mark Jenkinson, Stephen M. Smith · 2001 · **  
+`METHODS` · citations: 7,138 · score: 0.054 · [doi](https://doi.org/10.1016/s1361-8415(01)00036-6)  
+
+
+**182. A default mode of brain function**  
+Marcus E. Raichle, Ann Mary MacLeod, Abraham Z. Snyder et al. · 2001 · **  
+`METHODS` · citations: 12,300 · score: 0.100 · [doi](https://doi.org/10.1073/pnas.98.2.676)  
+
+
+**183. Epidemic Spreading in Scale-Free Networks**  
+Romualdo Pastor‐Satorras, Alessandro Vespignani · 2001 · **  
+`METHODS` · citations: 5,657 · score: 0.055 · [doi](https://doi.org/10.1103/physrevlett.86.3200)  
+
+
+**184. Efficient Behavior of Small-World Networks**  
+Vito Latora, Massimo Marchiori · 2001 · **  
+`METHODS` · citations: 5,061 · score: 0.041 · [doi](https://doi.org/10.1103/physrevlett.87.198701)  
+
+
+**185. Multicolor and Electron Microscopic Imaging of Connexin Trafficking**  
 Guido Gaietta, Thomas J. Deerinck, Stephen Adams et al. · 2002 · **  
 `METHODS` · citations: 900 · score: 0.124 · [doi](https://doi.org/10.1126/science.1068793)  
 
 
-**116. Real-Time Computing Without Stable States: A New Framework for Neural Computation Based on Perturbations**  
-Wolfgang Maass, Thomas Natschläger, Henry Markram · 2002 · **  
-`METHODS` · citations: 3,940 · score: 0.013 · [doi](https://doi.org/10.1162/089976602760407955)  
+**186. Staging of brain pathology related to sporadic Parkinson’s disease**  
+Heiko Braak, Kelly Del Tredici, Udo Rüb et al. · 2002 · **  
+`METHODS` · citations: 10,594 · score: 0.035 · [doi](https://doi.org/10.1016/s0197-4580(02)00065-9)  
 
 
-**117. Network Motifs: Simple Building Blocks of Complex Networks**  
+**187. Wiring Optimization in Cortical Circuits**  
+Dmitri B. Chklovskii, Thomas Schikorski, Charles F. Stevens · 2002 · **  
+`METHODS` · citations: 504 · score: 0.029 · [doi](https://doi.org/10.1016/s0896-6273(02)00679-7)  
+
+
+**188. Automated Anatomical Labeling of Activations in SPM Using a Macroscopic Anatomical Parcellation of the MNI MRI Single-Subject Brain**  
+N. Tzourio-Mazoyer, Brigitte Landeau, Dimitri Papathanassiou et al. · 2002 · **  
+`METHODS` · citations: 16,610 · score: 0.075 · [doi](https://doi.org/10.1006/nimg.2001.0978)  
+
+
+**189. Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images**  
+Mark Jenkinson, Peter Bannister, Michael Brady et al. · 2002 · **  
+`METHODS` · citations: 9,496 · score: 0.046 · [doi](https://doi.org/10.1006/nimg.2002.1132)  
+
+
+**190. Functional connectivity in the resting brain: A network analysis of the default mode hypothesis**  
+Michael D. Greicius, Ben Krasnow, Allan L. Reiss et al. · 2002 · **  
+`METHODS` · citations: 6,472 · score: 0.076 · [doi](https://doi.org/10.1073/pnas.0135058100)  
+
+
+**191. Specificity and Stability in Topology of Protein Networks**  
+Sergei Maslov, Kim Sneppen · 2002 · **  
+`METHODS` · citations: 3,071 · score: 0.065 · [doi](https://doi.org/10.1126/science.1065103)  
+
+
+**192. Statistical mechanics of complex networks**  
+Réka Albert, Albert-Ĺaszló Barabási · 2002 · **  
+`METHODS` · citations: 20,311 · score: 0.129 · [doi](https://doi.org/10.1103/revmodphys.74.47)  
+
+
+**193. Network Motifs: Simple Building Blocks of Complex Networks**  
 Ron Milo, Shai S. Shen-Orr, Shalev Itzkovitz et al. · 2002 · **  
 `METHODS` · citations: 7,360 · score: 0.098 · [doi](https://doi.org/10.1126/science.298.5594.824)  
 
 
-**118. Long-term in vivo imaging of experience-dependent synaptic plasticity in adult cortex**  
+**194. Assortative Mixing in Networks**  
+M. E. J. Newman · 2002 · **  
+`METHODS` · citations: 5,003 · score: 0.044 · [doi](https://doi.org/10.1103/physrevlett.89.208701)  
+
+
+**195. Whole Brain Segmentation**  
+Bruce Fischl, David H. Salat, Evelina Busa et al. · 2002 · **  
+`METHODS` · citations: 8,910 · score: 0.036 · [doi](https://doi.org/10.1016/s0896-6273(02)00569-x)  
+
+
+**196. Long-term in vivo imaging of experience-dependent synaptic plasticity in adult cortex**  
 Joshua T. Trachtenberg, Brian E. Chen, Graham Knott et al. · 2002 · **  
 `BIOLOGY` · citations: 1,938 · score: 0.043 · [doi](https://doi.org/10.1038/nature01273)  
 
 
-**119. Pulmonary Toxicity of Single-Wall Carbon Nanotubes in Mice 7 and 90 Days After Intratracheal Instillation**  
-C. W.-K. Lam · 2003 · **  
-`METHODS` · citations: 1,988 · score: 0.013 · [doi](https://doi.org/10.1093/toxsci/kfg243)  
+**197. Directionally selective calcium signals in dendrites of starburst amacrine cells**  
+Thomas Euler, Peter B. Detwiler, Winfried Denk · 2002 · **  
+`BIOLOGY` · citations: 598 · score: 0.093 · [doi](https://doi.org/10.1038/nature00931)  
 
 
-**120. Tissue Molecular Ion Imaging by Gold Cluster Ion Bombardment**  
-David Touboul, Frédéric Halgand, Alain Brunelle et al. · 2004 · **  
-`METHODS` · citations: 283 · score: 0.022 · [doi](https://doi.org/10.1021/ac035243z)  
+**198. Single-crystal structure validation with the program<i>PLATON</i>**  
+Anthony L. Spek · 2003 · **  
+`METHODS` · citations: 13,808 · score: 0.034 · [doi](https://doi.org/10.1107/s0021889802022112)  
 
 
-**121. Direct estimation of the fiber orientation density function from diffusion-weighted MRI data using spherical deconvolution**  
-Jacques‐Donald Tournier, Fernando Calamante, David G. Gadian et al. · 2004 · **  
-`METHODS` · citations: 1,657 · score: 0.013 · [doi](https://doi.org/10.1016/j.neuroimage.2004.07.037)  
+**199. Dynamic causal modelling**  
+Karl Friston, L. Harrison, W.D. Penny · 2003 · **  
+`METHODS` · citations: 4,685 · score: 0.034 · [doi](https://doi.org/10.1016/s1053-8119(03)00202-7)  
 
 
-**122. Silver nanoparticles as antimicrobial agent: a case study on E. coli as a model for Gram-negative bacteria**  
-Ivan Sondi, Branka Salopek‐Sondi · 2004 · **  
-`METHODS` · citations: 5,932 · score: 0.019 · [doi](https://doi.org/10.1016/j.jcis.2004.02.012)  
+**200. The Structure and Function of Complex Networks**  
+Michael Newman · 2003 · **  
+`METHODS` · citations: 18,482 · score: 0.080 · [doi](https://doi.org/10.1137/s003614450342480)  
 
 
-**123. Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue Nanostructure**  
+**201. Image quality assessment: from error visibility to structural similarity**  
+Zhou Wang, Alan C. Bovik, Hamid R. Sheikh et al. · 2004 · **  
+`METHODS` · citations: 54,590 · score: 0.132 · [doi](https://doi.org/10.1109/tip.2003.819861)  
+
+
+**202. <i>Coot</i>: model-building tools for molecular graphics**  
+Paul Emsley, Kevin Cowtan · 2004 · **  
+`METHODS` · citations: 31,139 · score: 0.080 · [doi](https://doi.org/10.1107/s0907444904019158)  
+
+
+**203. Distinctive Image Features from Scale-Invariant Keypoints**  
+David Lowe · 2004 · **  
+`METHODS` · citations: 54,768 · score: 0.185 · [doi](https://doi.org/10.1023/b:visi.0000029664.99615.94)  
+
+
+**204. Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue Nanostructure**  
 Winfried Denk, Heinz Horstmann · 2004 · **  
 `METHODS` · citations: 1,691 · score: 0.324 · [doi](https://doi.org/10.1371/journal.pbio.0020329)  
 
 
-**124. A Quantitative Map of the Circuit of Cat Primary Visual Cortex**  
+**205. Default-mode network activity distinguishes Alzheimer's disease from healthy aging: Evidence from functional MRI**  
+Michael D. Greicius, Gaurav Srivastava, Allan L. Reiss et al. · 2004 · **  
+`METHODS` · citations: 3,702 · score: 0.033 · [doi](https://doi.org/10.1073/pnas.0308627101)  
+
+
+**206. Consensus Problems in Networks of Agents With Switching Topology and Time-Delays**  
+Reza Olfati‐Saber, Richard M. Murray · 2004 · **  
+`METHODS` · citations: 12,614 · score: 0.038 · [doi](https://doi.org/10.1109/tac.2004.834113)  
+
+
+**207. Finding and evaluating community structure in networks**  
+Michelle G. Newman, Michelle Girvan · 2004 · **  
+`METHODS` · citations: 13,957 · score: 0.060 · [doi](https://doi.org/10.1103/physreve.69.026113)  
+
+
+**208. A Quantitative Map of the Circuit of Cat Primary Visual Cortex**  
 Tom Binzegger, Rodney J. Douglas, Kevan A Martin · 2004 · **  
 `BIOLOGY` · citations: 917 · score: 0.046 · [doi](https://doi.org/10.1523/jneurosci.1400-04.2004)  
 
 
-**125. The Organization of Behavior**  
+**209. The Organization of Behavior**  
 D. O. Hebb · 2005 · **  
 `METHODS` · citations: 8,454 · score: 0.106 · [doi](https://doi.org/10.4324/9781410612403)  
 
 
-**126. Neurophysiological Architecture of Functional Magnetic Resonance Images of Human Brain**  
-Raymond Salvador, John Suckling, Martin R. Coleman et al. · 2005 · **  
-`METHODS` · citations: 1,363 · score: 0.030 · [doi](https://doi.org/10.1093/cercor/bhi016)  
+**210. Global Cancer Statistics, 2002**  
+Donald Maxwell Parkin, Freddie Bray, Jacques Ferlay et al. · 2005 · **  
+`METHODS` · citations: 18,373 · score: 0.045 · [doi](https://doi.org/10.3322/canjclin.55.2.74)  
 
 
-**127. The brainstem reticular formation is a small-world, not scale-free, network**  
-Mark D. Humphries, Kevin Gurney, Tony J. Prescott · 2005 · **  
-`METHODS` · citations: 623 · score: 0.014 · [doi](https://doi.org/10.1098/rspb.2005.3354)  
+**211. Functional imaging with cellular resolution reveals precise micro-architecture in visual cortex**  
+Kenichi Ohki, Sooyoung Chung, Yeang H. Ch'ng et al. · 2005 · **  
+`METHODS` · citations: 1,232 · score: 0.043 · [doi](https://doi.org/10.1038/nature03274)  
 
 
-**128. The bactericidal effect of silver nanoparticles**  
-José Rubén Morones‐Ramírez, Jose Luis Elechiguerra, Alejandra Camacho et al. · 2005 · **  
-`METHODS` · citations: 6,582 · score: 0.018 · [doi](https://doi.org/10.1088/0957-4484/16/10/059)  
+**212. Correspondence - Tranexamic acid for traumatic brain injury**  
+Romanello, Marina, Napoli, Claudia Di, Drummond, Paul et al. · 2005 · **  
+`METHODS` · citations: 11,701 · score: 0.029 · [doi](https://doi.org/10.1016/s0140-6736)  
 
 
-**129. Millisecond-timescale, genetically targeted optical control of neural activity**  
-Edward S. Boyden, Feng Zhang, Ernst Bamberg et al. · 2005 · **  
-`METHODS` · citations: 4,871 · score: 0.023 · [doi](https://doi.org/10.1038/nn1525)  
+**213. High-Resolution Surface-Wave Tomography from Ambient Seismic Noise**  
+Н. М. Шапиро, Michel Campillo, Laurent Stehly et al. · 2005 · **  
+`METHODS` · citations: 2,253 · score: 0.044 · [doi](https://doi.org/10.1126/science.1108339)  
 
 
-**130. <i>Reconstruct</i>: a free editor for serial section microscopy**  
+**214. <i>Reconstruct</i>: a free editor for serial section microscopy**  
 John C. Fiala · 2005 · **  
 `METHODS` · citations: 907 · score: 0.106 · [doi](https://doi.org/10.1111/j.1365-2818.2005.01466.x)  
 
 
-**131. Highly Nonrandom Features of Synaptic Connectivity in Local Cortical Circuits**  
+**215. Neurophysiological Architecture of Functional Magnetic Resonance Images of Human Brain**  
+Raymond Salvador, John Suckling, Martin R. Coleman et al. · 2005 · **  
+`METHODS` · citations: 1,363 · score: 0.030 · [doi](https://doi.org/10.1093/cercor/bhi016)  
+
+
+**216. The human brain is intrinsically organized into dynamic, anticorrelated functional networks**  
+Michael Fox, Abraham Z. Snyder, Justin L. Vincent et al. · 2005 · **  
+`METHODS` · citations: 8,772 · score: 0.067 · [doi](https://doi.org/10.1073/pnas.0504136102)  
+
+
+**217. Highly Nonrandom Features of Synaptic Connectivity in Local Cortical Circuits**  
 Sen Song, P. Jesper Sjöström, Markus Reigl et al. · 2005 · **  
-`METHODS` · citations: 1,582 · score: 0.053 · [doi](https://doi.org/10.1371/journal.pbio.0030068)  
+`METHODS` · citations: 1,582 · score: 0.052 · [doi](https://doi.org/10.1371/journal.pbio.0030068)  
 
 
-**132. Automating the Collection of Ultrathin Serial Sections for Large Volume TEM Reconstructions**  
+**218. Functional cartography of complex metabolic networks**  
+Roger Guimerà, Luı́s A. Nunes Amaral · 2005 · **  
+`METHODS` · citations: 3,934 · score: 0.030 · [doi](https://doi.org/10.1038/nature03288)  
+
+
+**219. Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma**  
+Roger Stupp, Warren Mason, Martin J. van den Bent et al. · 2005 · **  
+`METHODS` · citations: 21,276 · score: 0.067 · [doi](https://doi.org/10.1056/nejmoa043330)  
+
+
+**220. <i>MGMT</i> Gene Silencing and Benefit from Temozolomide in Glioblastoma**  
+Monika E. Hegi, Annie‐Claire Diserens, Thierry Gorlia et al. · 2005 · **  
+`METHODS` · citations: 7,163 · score: 0.036 · [doi](https://doi.org/10.1056/nejmoa043331)  
+
+
+**221. Automating the Collection of Ultrathin Serial Sections for Large Volume TEM Reconstructions**  
 K Hayworth, N. Kasthuri, Richard Schalek et al. · 2006 · **  
 `METHODS` · citations: 181 · score: 0.059 · [doi](https://doi.org/10.1017/s1431927606066268)  
 
 
-**133. Surface-wave array tomography in SE Tibet from ambient seismic noise and two-station analysis - I. Phase velocity maps**  
-Huajian Yao, Robert D. van der Hilst, Maarten V. de Hoop · 2006 · **  
-`METHODS` · citations: 1,020 · score: 0.040 · [doi](https://doi.org/10.1111/j.1365-246x.2006.03028.x)  
+**222. Imaging Intracellular Fluorescent Proteins at Nanometer Resolution**  
+Eric Betzig, George H. Patterson, Rachid Sougrat et al. · 2006 · **  
+`METHODS` · citations: 8,785 · score: 0.136 · [doi](https://doi.org/10.1126/science.1127344)  
 
 
-**134. Folding DNA to create nanoscale shapes and patterns**  
-Paul W. K. Rothemund · 2006 · **  
-`METHODS` · citations: 7,327 · score: 0.019 · [doi](https://doi.org/10.1038/nature04586)  
-
-
-**135. EMAN2: An extensible image processing suite for electron microscopy**  
-Guang Yi Tang, Liwei Peng, Philip R. Baldwin et al. · 2006 · **  
-`METHODS` · citations: 3,166 · score: 0.012 · [doi](https://doi.org/10.1016/j.jsb.2006.05.009)  
-
-
-**136. Wiring optimization can relate neuronal structure and function**  
+**223. Wiring optimization can relate neuronal structure and function**  
 Beth L. Chen, David H. Hall, Dmitri B. Chklovskii · 2006 · **  
 `METHODS` · citations: 662 · score: 0.050 · [doi](https://doi.org/10.1073/pnas.0506806103)  
 
 
-**137. Uniform Serial Sectioning for Transmission Electron Microscopy**  
+**224. Surface-wave array tomography in SE Tibet from ambient seismic noise and two-station analysis - I. Phase velocity maps**  
+Huajian Yao, Robert D. van der Hilst, Maarten V. de Hoop · 2006 · **  
+`METHODS` · citations: 1,020 · score: 0.040 · [doi](https://doi.org/10.1111/j.1365-246x.2006.03028.x)  
+
+
+**225. Site-specific 3D imaging of cells and tissues with a dual beam microscope**  
+Jurgen A.W. Heymann, Mike Hayles, Ingo Gestmann et al. · 2006 · **  
+`METHODS` · citations: 348 · score: 0.036 · [doi](https://doi.org/10.1016/j.jsb.2006.03.006)  
+
+
+**226. A Resilient, Low-Frequency, Small-World Human Brain Functional Network with Highly Connected Association Cortical Hubs**  
+Sophie Achard, Raymond Salvador, Brandon Whitcher et al. · 2006 · **  
+`METHODS` · citations: 2,448 · score: 0.041 · [doi](https://doi.org/10.1523/jneurosci.3874-05.2006)  
+
+
+**227. Complex networks: Structure and dynamics**  
+Stefano Boccaletti, Vito Latora, Yamir Moreno et al. · 2006 · **  
+`METHODS` · citations: 10,837 · score: 0.057 · [doi](https://doi.org/10.1016/j.physrep.2005.10.009)  
+
+
+**228. Modularity and community structure in networks**  
+M. E. J. Newman · 2006 · **  
+`METHODS` · citations: 12,046 · score: 0.054 · [doi](https://doi.org/10.1073/pnas.0601602103)  
+
+
+**229. Uniform Serial Sectioning for Transmission Electron Microscopy**  
 Kristen M. Harris, Elizabeth W. Perry, Jennifer N. Bourne et al. · 2006 · **  
-`METHODS` · citations: 217 · score: 0.057 · [doi](https://doi.org/10.1523/jneurosci.3994-06.2006)  
+`METHODS` · citations: 217 · score: 0.056 · [doi](https://doi.org/10.1523/jneurosci.3994-06.2006)  
 
 
-**138. Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control**  
+**230. An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest**  
+Rahul S. Desikan, Florent Ségonne, Bruce Fischl et al. · 2006 · **  
+`METHODS` · citations: 13,788 · score: 0.048 · [doi](https://doi.org/10.1016/j.neuroimage.2006.01.021)  
+
+
+**231. Advances in Neural Information Processing Systems 19**  
+ · 2007 · **  
+`METHODS` · citations: 15,619 · score: 0.041 · [doi](https://doi.org/10.7551/mitpress/7503.001.0001)  
+
+
+**232. Multicolor Super-Resolution Imaging with Photo-Switchable Fluorescent Probes**  
+Mark Bates, Bo Huang, Graham T. Dempsey et al. · 2007 · **  
+`METHODS` · citations: 1,491 · score: 0.046 · [doi](https://doi.org/10.1126/science.1146598)  
+
+
+**233. Intrinsic functional architecture in the anaesthetized monkey brain**  
+Justin L. Vincent, Gaurav H. Patel, Michael Fox et al. · 2007 · **  
+`METHODS` · citations: 1,863 · score: 0.033 · [doi](https://doi.org/10.1038/nature05758)  
+
+
+**234. Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control**  
 William W. Seeley, Vinod Menon, Alan F. Schatzberg et al. · 2007 · **  
 `METHODS` · citations: 7,396 · score: 0.039 · [doi](https://doi.org/10.1523/jneurosci.5587-06.2007)  
 
 
-**139. Studying the human brain anatomical network via diffusion-weighted MRI and Graph Theory**  
-Yasser Iturria‐Medina, Roberto C. Sotero, Erick J. Canales‐Rodríguez et al. · 2007 · **  
-`METHODS` · citations: 513 · score: 0.013 · [doi](https://doi.org/10.1016/j.neuroimage.2007.10.060)  
+**235. Efficiency and Cost of Economical Brain Functional Networks**  
+Sophie Achard, Edward T. Bullmore · 2007 · **  
+`METHODS` · citations: 2,567 · score: 0.032 · [doi](https://doi.org/10.1371/journal.pcbi.0030017)  
 
 
-**140. Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits**  
-Kristina D. Micheva, Stephen J Smith · 2007 · **  
-`METHODS` · citations: 807 · score: 0.134 · [doi](https://doi.org/10.1016/j.neuron.2007.06.014)  
+**236. Transgenic strategies for combinatorial expression of fluorescent proteins in the nervous system**  
+Jean Livet, Tamily A. Weissman, Hyuno Kang et al. · 2007 · **  
+`METHODS` · citations: 1,872 · score: 0.091 · [doi](https://doi.org/10.1038/nature06293)  
 
 
-**141. Contour-propagation algorithms for semi-automated reconstruction of neural processes**  
-Jakob H. Macke, Nina Maack, Rocky Gupta et al. · 2007 · **  
-`METHODS` · citations: 66 · score: 0.025 · [doi](https://doi.org/10.1016/j.jneumeth.2007.07.021)  
-
-
-**142. Supervised Learning of Image Restoration with Convolutional Networks**  
-Viren Jain, Joseph F. Murray, Fabian Roth et al. · 2007 · **  
-`METHODS` · citations: 215 · score: 0.059 · [doi](https://doi.org/10.1109/iccv.2007.4408909)  
-
-
-**143. neuroConstruct: A Tool for Modeling Networks of Neurons in 3D Space**  
+**237. neuroConstruct: A Tool for Modeling Networks of Neurons in 3D Space**  
 Padraig Gleeson, Volker Steuber, R. Angus Silver · 2007 · **  
 `METHODS` · citations: 211 · score: 0.030 · [doi](https://doi.org/10.1016/j.neuron.2007.03.025)  
 
 
-**144. NeuroMorpho.Org: A Central Resource for Neuronal Morphologies**  
-Giorgio A. Ascoli, Duncan Donohue, Maryam Halavi · 2007 · **  
-`METHODS` · citations: 724 · score: 0.014 · [doi](https://doi.org/10.1523/jneurosci.2055-07.2007)  
+**238. Supervised Learning of Image Restoration with Convolutional Networks**  
+Viren Jain, Joseph F. Murray, Fabian Roth et al. · 2007 · **  
+`METHODS` · citations: 215 · score: 0.059 · [doi](https://doi.org/10.1109/iccv.2007.4408909)  
 
 
-**145. Surface wave array tomography in SE Tibet from ambient seismic noise and two-station analysis - II. Crustal and upper-mantle structure**  
-Huajian Yao, Caroline Beghein, Robert D. van der Hilst · 2008 · **  
-`METHODS` · citations: 551 · score: 0.020 · [doi](https://doi.org/10.1111/j.1365-246x.2007.03696.x)  
+**239. Autophagy fights disease through cellular self-digestion**  
+Noboru Mizushima, Beth Levine, Ana María Cuervo et al. · 2008 · **  
+`METHODS` · citations: 6,389 · score: 0.034 · [doi](https://doi.org/10.1038/nature06639)  
 
 
-**146. Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused Ion Beam Milling**  
+**240. Mapping and quantifying mammalian transcriptomes by RNA-Seq**  
+A Mortazavi, Brian A. Williams, Kenneth McCue et al. · 2008 · **  
+`METHODS` · citations: 14,174 · score: 0.058 · [doi](https://doi.org/10.1038/nmeth.1226)  
+
+
+**241. Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists**  
+Da Wei Huang, Brad T. Sherman, Richard A. Lempicki · 2008 · **  
+`METHODS` · citations: 14,685 · score: 0.039 · [doi](https://doi.org/10.1093/nar/gkn923)  
+
+
+**242. WGCNA: an R package for weighted correlation network analysis**  
+Peter Langfelder, Steve Horvath · 2008 · **  
+`METHODS` · citations: 28,332 · score: 0.071 · [doi](https://doi.org/10.1186/1471-2105-9-559)  
+
+
+**243. Whole-cell 3D STORM reveals interactions between cellular structures with nanometer-scale resolution**  
+Bo Huang, Sara A. Jones, Boerries Brandenburg et al. · 2008 · **  
+`METHODS` · citations: 624 · score: 0.029 · [doi](https://doi.org/10.1038/nmeth.1274)  
+
+
+**244. Fast unfolding of communities in large networks**  
+Vincent D. Blondel, Jean‐Loup Guillaume, Renaud Lambiotte et al. · 2008 · **  
+`METHODS` · citations: 20,755 · score: 0.075 · [doi](https://doi.org/10.1088/1742-5468/2008/10/p10008)  
+
+
+**245. Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused Ion Beam Milling**  
 Graham Knott, Herschel M. Marchman, David S. Wall et al. · 2008 · **  
 `METHODS` · citations: 729 · score: 0.105 · [doi](https://doi.org/10.1523/jneurosci.3189-07.2008)  
 
 
-**147. Synaptic circuits of the <i>Drosophila</i> optic lobe: The input terminals to the medulla**  
+**246. Segmentation of SBFSEM Volume Data of Neural Tissue by Hierarchical Classification**  
+Bjoern Andres, Ullrich Köthe, Moritz Helmstaedter et al. · 2008 · **  
+`METHODS` · citations: 88 · score: 0.036 · [doi](https://doi.org/10.1007/978-3-540-69321-5_15)  
+
+
+**247. Mapping the Structural Core of Human Cerebral Cortex**  
+Patric Hagmann, Leila Cammoun, Xavier Gigandet et al. · 2008 · **  
+`METHODS` · citations: 4,335 · score: 0.053 · [doi](https://doi.org/10.1371/journal.pbio.0060159)  
+
+
+**248. Molecular identification of a retinal cell type that responds to upward motion**  
+In-Jung Kim, Yifeng Zhang, Masahito Yamagata et al. · 2008 · **  
+`BIOLOGY` · citations: 406 · score: 0.034 · [doi](https://doi.org/10.1038/nature06739)  
+
+
+**249. Synaptic circuits of the <i>Drosophila</i> optic lobe: The input terminals to the medulla**  
 Shin-ya Takemura, Zhiyuan Lu, Ian A. Meinertzhagen · 2008 · **  
 `BIOLOGY` · citations: 207 · score: 0.037 · [doi](https://doi.org/10.1002/cne.21757)  
 
 
-**148. CATMAID: collaborative annotation toolkit for massive amounts of image data**  
+**250. CATMAID: collaborative annotation toolkit for massive amounts of image data**  
 Stephan Saalfeld, Albert Cardona, Volker Hartenstein et al. · 2009 · **  
 `METHODS` · citations: 434 · score: 0.144 · [doi](https://doi.org/10.1093/bioinformatics/btp266)  
 
 
-**149. Functional Brain Networks Develop from a “Local to Distributed” Organization**  
-Damien A. Fair, Alexander L. Cohen, Jonathan D. Power et al. · 2009 · **  
-`METHODS` · citations: 1,543 · score: 0.015 · [doi](https://doi.org/10.1371/journal.pcbi.1000381)  
+**251. The Elements of Statistical Learning**  
+Trevor Hastie, Robert Tibshirani, Jerome H. Friedman · 2009 · **  
+`METHODS` · citations: 22,381 · score: 0.060 · [doi](https://doi.org/10.1007/978-0-387-84858-7)  
 
 
-**150. Reading the Book of Memory: Sparse Sampling versus Dense Mapping of Connectomes**  
+**252. Gephi: An Open Source Software for Exploring and Manipulating Networks**  
+Mathieu Bastian, Sébastien Heymann, Mathieu Jacomy · 2009 · **  
+`METHODS` · citations: 11,089 · score: 0.035 · [doi](https://doi.org/10.1609/icwsm.v3i1.13937)  
+
+
+**253. TopHat: discovering splice junctions with RNA-Seq**  
+Cole Trapnell, Lior Pachter, Steven L. Salzberg · 2009 · **  
+`METHODS` · citations: 12,093 · score: 0.033 · [doi](https://doi.org/10.1093/bioinformatics/btp120)  
+
+
+**254. Community detection in graphs**  
+Santo Fortunato · 2009 · **  
+`METHODS` · citations: 11,132 · score: 0.042 · [doi](https://doi.org/10.1016/j.physrep.2009.11.002)  
+
+
+**255. Reading the Book of Memory: Sparse Sampling versus Dense Mapping of Connectomes**  
 H. Sebastian Seung · 2009 · **  
 `METHODS` · citations: 143 · score: 0.041 · [doi](https://doi.org/10.1016/j.neuron.2009.03.020)  
 
 
-**151. A Computational Framework for Ultrastructural Mapping of Neural Circuitry**  
+**256. A Computational Framework for Ultrastructural Mapping of Neural Circuitry**  
 James R. Anderson, Bryan W. Jones, Jiahui Yang et al. · 2009 · **  
-`METHODS` · citations: 146 · score: 0.065 · [doi](https://doi.org/10.1371/journal.pbio.1000074)  
+`METHODS` · citations: 146 · score: 0.064 · [doi](https://doi.org/10.1371/journal.pbio.1000074)  
 
 
-**152. Counting synapses using FIB/SEM microscopy: a true revolution for ultrastructural volume reconstruction**  
-Ángel Merchán-Pérez · 2009 · **  
-`METHODS` · citations: 199 · score: 0.013 · [doi](https://doi.org/10.3389/neuro.05.018.2009)  
-
-
-**153. Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation**  
+**257. Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation**  
 Srinivas C. Turaga, Joseph F. Murray, Viren Jain et al. · 2009 · **  
-`METHODS` · citations: 386 · score: 0.108 · [doi](https://doi.org/10.1162/neco.2009.10-08-881)  
+`METHODS` · citations: 386 · score: 0.107 · [doi](https://doi.org/10.1162/neco.2009.10-08-881)  
 
 
-**154. Oligomeric amyloid β associates with postsynaptic densities and correlates with excitatory synapse loss near senile plaques**  
-Robert M. Koffie, Melanie Meyer‐Luehmann, Tadafumi Hashimoto et al. · 2009 · **  
-`BIOLOGY` · citations: 835 · score: 0.018 · [doi](https://doi.org/10.1073/pnas.0811698106)  
+**258. Complex network measures of brain connectivity: Uses and interpretations**  
+Mikail Rubinov, Olaf Sporns · 2009 · **  
+`METHODS` · citations: 11,747 · score: 0.080 · [doi](https://doi.org/10.1016/j.neuroimage.2009.10.003)  
 
 
-**155. The Interscutularis Muscle Connectome**  
-Ju Lu, Juan Carlos Tapia, Olivia L. White et al. · 2009 · **  
-`BIOLOGY` · citations: 118 · score: 0.015 · [doi](https://doi.org/10.1371/journal.pbio.1000032)  
+**259. Correspondence of the brain's functional architecture during activation and rest**  
+Stephen M. Smith, Peter T. Fox, Karla L. Miller et al. · 2009 · **  
+`METHODS` · citations: 5,389 · score: 0.036 · [doi](https://doi.org/10.1073/pnas.0905267106)  
 
 
-**156. Synaptic organization in the adult <i>Drosophila</i> mushroom body calyx**  
-Florian Leiss, Claudia Groh, Nancy J. Butcher et al. · 2009 · **  
-`BIOLOGY` · citations: 107 · score: 0.016 · [doi](https://doi.org/10.1002/cne.22184)  
+**260. A robust and high-throughput Cre reporting and characterization system for the whole mouse brain**  
+Linda Madisen, Theresa A. Zwingman, Susan M. Sunkin et al. · 2009 · **  
+`BIOLOGY` · citations: 7,243 · score: 0.030 · [doi](https://doi.org/10.1038/nn.2467)  
 
 
-**157. Signal Propagation in<i>Drosophila</i>Central Neurons**  
-Nathan W. Gouwens, Rachel I. Wilson · 2009 · **  
-`BIOLOGY` · citations: 175 · score: 0.018 · [doi](https://doi.org/10.1523/jneurosci.0764-09.2009)  
+
+### Physics / Astronomy  _E. K. Grebel, Scott F. Anderson_
+
+**261. The relationship between infrared, optical, and ultraviolet extinction**  
+Jason A. Cardelli, Geoffrey C. Clayton, John S. Mathis · 1989 · **  
+`METHODS` · citations: 11,157 · score: 0.029 · [doi](https://doi.org/10.1086/167900)  
 
 
 
@@ -828,1113 +1363,892 @@ Nathan W. Gouwens, Rachel I. Wilson · 2009 · **
 ## Phase 2 — Core Methods & Tools  (2010–2020)
 
 
-### Biology / Computer science  _Jeff W. Lichtman, Hanspeter Pfister_
+### Biology / Computer science  _Edward S. Boyden, Markus Sauer_
 
-**158. TrakEM2 Software for Neural Circuit Reconstruction**  
-Albert Cardona, Stephan Saalfeld, Johannes Schindelin et al. · 2012 · **  
-`METHODS` · citations: 1,098 · score: 0.091 · [doi](https://doi.org/10.1371/journal.pone.0038011)  
-
-
-**159. Expansion microscopy**  
-Fei Chen, Paul W. Tillberg, Edward S. Boyden · 2015 · **  
-`METHODS` · citations: 1,542 · score: 0.092 · [doi](https://doi.org/10.1126/science.1260088)  
+**262. Protein-retention expansion microscopy of cells and tissues labeled using standard fluorescent proteins and antibodies**  
+Paul W. Tillberg, Fei Chen, Kiryl D. Piatkevich et al. · 2016 · **  
+`METHODS` · citations: 708 · score: 0.052 · [doi](https://doi.org/10.1038/nbt.3625)  
 
 
-**160. A practical guide to optimization in X10 expansion microscopy**  
-Sven Truckenbrodt, Christoph Sommer, Silvio O. Rizzoli et al. · 2019 · **  
-`METHODS` · citations: 168 · score: 0.016 · [doi](https://doi.org/10.1038/s41596-018-0117-3)  
+**263. Epigenetic Regulations of GABAergic Neurotransmission: Relevance for Neurological Disorders and Epigenetic Therapy**  
+Shikshya Shrestha, Steven M. Offer · 2016 · **  
+`METHODS` · citations: 8,955 · score: 0.036 · [doi](https://doi.org/10.1159/000444713)  
 
 
-**161. Ultrastructure expansion microscopy (U-ExM)**  
-Davide Gambarotto, Virginie Hamel, Paul Guichard · 2020 · **  
-`METHODS` · citations: 160 · score: 0.018 · [doi](https://doi.org/10.1016/bs.mcb.2020.05.006)  
+**264. SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules**  
+Antoine Daina, Olivier Michielin, Vincent Zoete · 2017 · **  
+`METHODS` · citations: 16,166 · score: 0.039 · [doi](https://doi.org/10.1038/srep42717)  
+
+
+**265. ImageNet classification with deep convolutional neural networks**  
+Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton · 2017 · **  
+`METHODS` · citations: 75,550 · score: 0.231 · [doi](https://doi.org/10.1145/3065386)  
 
 
 
 ### Biology / Neuroscience  _Albert Cardona, Gregory S.X.E. Jefferis_
 
-**162. Structured sampling of olfactory input by the fly mushroom body**  
-Zhihao Zheng, Feng Li, Corey B. Fisher et al. · 2020 · **  
-`METHODS` · citations: 39 · score: 0.102 · [doi](https://doi.org/10.1101/2020.04.17.047167)  
+**266. Optimized tools for multicolor stochastic labeling reveal diverse stereotyped cell arrangements in the fly visual system**  
+Aljoscha Nern, Barret D. Pfeiffer, Gerald M. Rubin · 2015 · **  
+`BIOLOGY` · citations: 666 · score: 0.058 · [doi](https://doi.org/10.1073/pnas.1506763112)  
 
 
-**163. Neural circuit mechanisms of sexual receptivity in Drosophila females**  
-Kaiyu Wang, Fei Wang, Nora Forknall et al. · 2020 · **  
-`BIOLOGY` · citations: 170 · score: 0.037 · [doi](https://doi.org/10.1038/s41586-020-2972-7)  
+**267. Quantitative neuroanatomy for connectomics in Drosophila**  
+Casey M Schneider-Mizell, Stephan Gerhard, Mark Longair et al. · 2016 · **  
+`METHODS` · citations: 371 · score: 0.075 · [doi](https://doi.org/10.7554/elife.12059)  
 
 
-**164. Synaptic polarity and sign-balance prediction using gene expression data in the Caenorhabditis elegans chemical synapse neuronal connectome network**  
-Bánk G. Fenyves, Gábor S. Szilágyi, Zsolt Vassy et al. · 2020 · **  
-`BIOLOGY` · citations: 29 · score: 0.014 · [doi](https://doi.org/10.1371/journal.pcbi.1007974)  
+**268. The connectome of the adult Drosophila mushroom body provides insights into function**  
+Feng Li, Jack Lindsey, Elizabeth C. Marin et al. · 2020 · **  
+`METHODS` · citations: 418 · score: 0.280 · [doi](https://doi.org/10.7554/elife.62576)  
 
 
-
-### Materials science / Nanotechnology  _A. K. Geǐm, Yury Gogotsi_
-
-**165. Two-Dimensional Nanosheets Produced by Liquid Exfoliation of Layered Materials**  
-Jonathan N. Coleman, Mustafa Lotya, Arlene O’Neill et al. · 2011 · **  
-`METHODS` · citations: 7,128 · score: 0.022 · [doi](https://doi.org/10.1126/science.1194975)  
+**269. Connectomes across development reveal principles of brain maturation**  
+Daniel Witvliet, Ben Mulcahy, James K. Mitchell et al. · 2020 · **  
+`METHODS` · citations: 59 · score: 0.092 · [doi](https://doi.org/10.1101/2020.04.30.066209)  
 
 
-
-### Neuroscience / Psychology  _Olaf Sporns, Edward T. Bullmore_
-
-**166. Automatic denoising of functional MRI data: Combining independent component analysis and hierarchical fusion of classifiers**  
-Gholamreza Salimi‐Khorshidi, Gwenaëlle Douaud, Christian F. Beckmann et al. · 2014 · **  
-`METHODS` · citations: 1,996 · score: 0.013 · [doi](https://doi.org/10.1016/j.neuroimage.2013.11.046)  
+**270. A searchable image resource of <i>Drosophila</i> GAL4-driver expression patterns with single neuron resolution**  
+Geoffrey W Meissner, Aljoscha Nern, Zachary Dorman et al. · 2020 · **  
+`BIOLOGY` · citations: 24 · score: 0.054 · [doi](https://doi.org/10.1101/2020.05.29.080473)  
 
 
 
 ### Other  __
 
-**167. Toward discovery science of human brain function**  
-Bharat B. Biswal, Maarten Mennes, Xi‐Nian Zuo et al. · 2010 · **  
-`METHODS` · citations: 3,071 · score: 0.035 · [doi](https://doi.org/10.1073/pnas.0911855107)  
+**271. A human gut microbial gene catalogue established by metagenomic sequencing**  
+Junjie Qin, Ruiqiang Li, Jeroen Raes et al. · 2010 · **  
+`METHODS` · citations: 11,497 · score: 0.033 · [doi](https://doi.org/10.1038/nature08821)  
 
 
-**168. Increasing depth resolution of electron microscopy of neural circuits using sparse tomographic reconstruction**  
-Ashok Veeraraghavan, Alex Genkin, Shiv Vitaladevuni et al. · 2010 · **  
-`METHODS` · citations: 25 · score: 0.015 · [doi](https://doi.org/10.1109/cvpr.2010.5539846)  
+**272. Sarcopenia: European consensus on definition and diagnosis**  
+Alfonso J. Cruz‐Jentoft, Jean‐Pierre Baeyens, Jürgen M. Bauer et al. · 2010 · **  
+`METHODS` · citations: 11,584 · score: 0.029 · [doi](https://doi.org/10.1093/ageing/afq034)  
 
 
-**169. Three-Dimensional Reconstruction of Brain-wide Wiring Networks in Drosophila at Single-Cell Resolution**  
-Ann‐Shyn Chiang, Chih-Yung Lin, Chao-Chun Chuang et al. · 2010 · **  
-`METHODS` · citations: 809 · score: 0.066 · [doi](https://doi.org/10.1016/j.cub.2010.11.056)  
+**273. Networks**  
+Mark Newman · 2010 · **  
+`METHODS` · citations: 6,376 · score: 0.028 · [doi](https://doi.org/10.1093/acprof:oso/9780199206650.001.0001)  
 
 
-**170. An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy**  
-Albert Cardona, Stephan Saalfeld, Stephan Preibisch et al. · 2010 · **  
-`METHODS` · citations: 388 · score: 0.097 · [doi](https://doi.org/10.1371/journal.pbio.1000502)  
+**274. A high-level 3D visualization API for Java and ImageJ**  
+Benjamin Schmid, Johannes Schindelin, Albert Cardona et al. · 2010 · **  
+`METHODS` · citations: 562 · score: 0.034 · [doi](https://doi.org/10.1186/1471-2105-11-274)  
 
 
-**171. As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets**  
+**275. As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets**  
 Stephan Saalfeld, Albert Cardona, Volker Hartenstein et al. · 2010 · **  
 `METHODS` · citations: 145 · score: 0.045 · [doi](https://doi.org/10.1093/bioinformatics/btq219)  
 
 
-**172. Neuron geometry extraction by perceptual grouping in ssTEM images**  
-Verena Kaynig, Thomas J. Fuchs, Joachim M. Buhmann · 2010 · **  
-`METHODS` · citations: 95 · score: 0.021 · [doi](https://doi.org/10.1109/cvpr.2010.5540029)  
+**276. An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy**  
+Albert Cardona, Stephan Saalfeld, Stephan Preibisch et al. · 2010 · **  
+`METHODS` · citations: 388 · score: 0.097 · [doi](https://doi.org/10.1371/journal.pbio.1000502)  
 
 
-**173. Ultrastructural Analysis of Hippocampal Neuropil from the Connectomics Perspective**  
+**277. Three-Dimensional Reconstruction of Brain-wide Wiring Networks in Drosophila at Single-Cell Resolution**  
+Ann‐Shyn Chiang, Chih-Yung Lin, Chao-Chun Chuang et al. · 2010 · **  
+`METHODS` · citations: 809 · score: 0.068 · [doi](https://doi.org/10.1016/j.cub.2010.11.056)  
+
+
+**278. Toward discovery science of human brain function**  
+Bharat B. Biswal, Maarten Mennes, Xi‐Nian Zuo et al. · 2010 · **  
+`METHODS` · citations: 3,071 · score: 0.034 · [doi](https://doi.org/10.1073/pnas.0911855107)  
+
+
+**279. FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data**  
+Robert Oostenveld, Pascal Fries, Eric Maris et al. · 2010 · **  
+`METHODS` · citations: 11,104 · score: 0.030 · [doi](https://doi.org/10.1155/2011/156869)  
+
+
+**280. Ultrastructural Analysis of Hippocampal Neuropil from the Connectomics Perspective**  
 Yuriy Mishchenko, Tao Hu, Josef Špaček et al. · 2010 · **  
 `BIOLOGY` · citations: 295 · score: 0.057 · [doi](https://doi.org/10.1016/j.neuron.2010.08.014)  
 
 
-**174. Single-Synapse Analysis of a Diverse Synapse Population: Proteomic Imaging Methods and Markers**  
-Kristina D. Micheva, Brad Busse, Nicholas Collins Weiler et al. · 2010 · **  
-`BIOLOGY` · citations: 347 · score: 0.029 · [doi](https://doi.org/10.1016/j.neuron.2010.09.024)  
+**281. The diagnosis of dementia due to Alzheimer's disease: Recommendations from the National Institute on Aging‐Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease**  
+Guy M. McKhann, David S. Knopman, Howard Chertkow et al. · 2011 · **  
+`METHODS` · citations: 18,548 · score: 0.049 · [doi](https://doi.org/10.1016/j.jalz.2011.03.005)  
 
 
-**175. Nonlinear structured-illumination microscopy with a photoswitchable protein reveals cellular structures at 50-nm resolution**  
-E. Hesper Rego, Lin Shao, J. J. Macklin et al. · 2011 · **  
-`METHODS` · citations: 406 · score: 0.017 · [doi](https://doi.org/10.1073/pnas.1107547108)  
+**282. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome**  
+Bo Li, Colin N. Dewey · 2011 · **  
+`METHODS` · citations: 22,985 · score: 0.061 · [doi](https://doi.org/10.1186/1471-2105-12-323)  
 
 
-**176. A Genetically Encoded Tag for Correlated Light and Electron Microscopy of Intact Cells, Tissues, and Organisms**  
-Xiaokun Shu, Varda Lev‐Ram, Thomas J. Deerinck et al. · 2011 · **  
-`METHODS` · citations: 847 · score: 0.022 · [doi](https://doi.org/10.1371/journal.pbio.1001041)  
+**283. Wiring specificity in the direction-selectivity circuit of the retina**  
+Kevin L. Briggman, Moritz Helmstaedter, Winfried Denk · 2011 · **  
+`METHODS` · citations: 931 · score: 0.121 · [doi](https://doi.org/10.1038/nature09818)  
 
 
-**177. Focussed Ion Beam Milling and Scanning Electron Microscopy of Brain Tissue**  
-Graham Knott, Stéphanie Rosset, Marco Cantoni · 2011 · **  
-`METHODS` · citations: 104 · score: 0.012 · [doi](https://doi.org/10.3791/2588)  
+**284. Controllability of complex networks**  
+Yang‐Yu Liu, Jean-Jacques Slotine, Albert-Ĺaszló Barabási · 2011 · **  
+`METHODS` · citations: 3,263 · score: 0.209 · [doi](https://doi.org/10.1038/nature10011)  
 
 
-**178. Structural Properties of the Caenorhabditis elegans Neuronal Network**  
+**285. Structural Properties of the Caenorhabditis elegans Neuronal Network**  
 Lav R. Varshney, Beth L. Chen, Eric Paniagua et al. · 2011 · **  
-`METHODS` · citations: 920 · score: 0.076 · [doi](https://doi.org/10.1371/journal.pcbi.1001066)  
+`METHODS` · citations: 920 · score: 0.079 · [doi](https://doi.org/10.1371/journal.pcbi.1001066)  
 
 
-**179. Scale: a chemical approach for fluorescence imaging and reconstruction of transparent mouse brain**  
-Hiroshi Hama, Hiroshi Kurokawa, Hiroyuki Kawano et al. · 2011 · **  
-`METHODS` · citations: 1,161 · score: 0.024 · [doi](https://doi.org/10.1038/nn.2928)  
-
-
-**180. Weight-conserving characterization of complex functional brain networks**  
-Mikail Rubinov, Olaf Sporns · 2011 · **  
-`METHODS` · citations: 951 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuroimage.2011.03.069)  
-
-
-**181. Synthesis and 5α-Reductase Inhibitory Activity of C21 Steroids Having 1,4-diene or 4,6-diene 20-ones and 4-Azasteroid 20-Oximes**  
-Sujeong Kim, Yong‐ung Kim, Eunsook Ma · 2011 · **  
-`METHODS` · citations: 191 · score: 0.017 · [doi](https://doi.org/10.3390/molecules17010355)  
-
-
-**182. Functional Network Organization of the Human Brain**  
-Jonathan D. Power, Alexander L. Cohen, Scott M. Nelson et al. · 2011 · **  
-`METHODS` · citations: 4,368 · score: 0.031 · [doi](https://doi.org/10.1016/j.neuron.2011.09.006)  
-
-
-**183. Network Centrality in the Human Functional Connectome**  
-Xi‐Nian Zuo, Ross C. Ehmke, Maarten Mennes et al. · 2011 · **  
-`METHODS` · citations: 1,183 · score: 0.014 · [doi](https://doi.org/10.1093/cercor/bhr269)  
-
-
-**184. High-accuracy neurite reconstruction for high-throughput neuroanatomy**  
+**286. High-accuracy neurite reconstruction for high-throughput neuroanatomy**  
 Moritz Helmstaedter, Kevin L. Briggman, Winfried Denk · 2011 · **  
-`METHODS` · citations: 285 · score: 0.111 · [doi](https://doi.org/10.1038/nn.2868)  
+`METHODS` · citations: 285 · score: 0.110 · [doi](https://doi.org/10.1038/nn.2868)  
 
 
-**185. Rich-Club Organization of the Human Connectome**  
+**287. Rich-Club Organization of the Human Connectome**  
 Martijn P. van den Heuvel, Olaf Sporns · 2011 · **  
-`METHODS` · citations: 2,443 · score: 0.035 · [doi](https://doi.org/10.1523/jneurosci.3539-11.2011)  
+`METHODS` · citations: 2,443 · score: 0.036 · [doi](https://doi.org/10.1523/jneurosci.3539-11.2011)  
 
 
-**186. Supervoxel-Based Segmentation of Mitochondria in EM Image Stacks With Learned Shape Features**  
-Aurélien Lucchi, Kevin Smith, Radhakrishna Achanta et al. · 2011 · **  
-`METHODS` · citations: 269 · score: 0.021 · [doi](https://doi.org/10.1109/tmi.2011.2171705)  
+**288. Functional Network Organization of the Human Brain**  
+Jonathan D. Power, Alexander L. Cohen, Scott M. Nelson et al. · 2011 · **  
+`METHODS` · citations: 4,368 · score: 0.032 · [doi](https://doi.org/10.1016/j.neuron.2011.09.006)  
 
 
-**187. Segmentation fusion for connectomics**  
-Amelio Vázquez-Reina, Michael A. Gelbart, Daniel Huang et al. · 2011 · **  
-`METHODS` · citations: 79 · score: 0.017 · [doi](https://doi.org/10.1109/iccv.2011.6126240)  
-
-
-**188. Automated Detection and Segmentation of Synaptic Contacts in Nearly Isotropic Serial Electron Microscopy Images**  
-Anna Kreshuk, Christoph Straehle, Christoph Sommer et al. · 2011 · **  
-`METHODS` · citations: 143 · score: 0.015 · [doi](https://doi.org/10.1371/journal.pone.0024899)  
-
-
-**189. Automated segmentation of synapses in 3D EM data**  
-Anna Kreshuk, Christoph Straehle, Christoph Sommer et al. · 2011 · **  
-`METHODS` · citations: 26 · score: 0.012 · [doi](https://doi.org/10.1109/isbi.2011.5872392)  
-
-
-**190. Network anatomy and in vivo physiology of visual cortical neurons**  
+**289. Network anatomy and in vivo physiology of visual cortical neurons**  
 Davi D. Bock, Wei-Chung Allen Lee, Aaron Kerlin et al. · 2011 · **  
-`BIOLOGY` · citations: 932 · score: 0.141 · [doi](https://doi.org/10.1038/nature09802)  
+`BIOLOGY` · citations: 932 · score: 0.140 · [doi](https://doi.org/10.1038/nature09802)  
 
 
-**191. Microglia Sculpt Postnatal Neural Circuits in an Activity and Complement-Dependent Manner**  
-Dorothy P. Schafer, Emily K. Lehrman, Amanda G. Kautzman et al. · 2012 · **  
-`METHODS` · citations: 3,978 · score: 0.017 · [doi](https://doi.org/10.1016/j.neuron.2012.03.026)  
+**290. Scikit-learn: Machine Learning in Python**  
+Fabián Pedregosa, Gaël Varoquaux, Alexandre Gramfort et al. · 2012 · **  
+`METHODS` · citations: 63,388 · score: 0.159 · [doi](https://doi.org/10.48550/arxiv.1201.0490)  
 
 
-**192. High-contrast en bloc staining of neuronal tissue for field emission scanning electron microscopy**  
+**291. Ferroptosis: An Iron-Dependent Form of Nonapoptotic Cell Death**  
+Scott J. Dixon, Kathryn M. Lemberg, Michael R. Lamprecht et al. · 2012 · **  
+`METHODS` · citations: 17,296 · score: 0.123 · [doi](https://doi.org/10.1016/j.cell.2012.03.042)  
+
+
+**292. A GAL4-Driver Line Resource for Drosophila Neurobiology**  
+Arnim Jenett, Gerald M. Rubin, Teri-T B Ngo et al. · 2012 · **  
+`METHODS` · citations: 1,627 · score: 0.086 · [doi](https://doi.org/10.1016/j.celrep.2012.09.011)  
+
+
+**293. An integrated encyclopedia of DNA elements in the human genome**  
+Sylvain Foissac · 2012 · **  
+`METHODS` · citations: 19,173 · score: 0.059 · [doi](https://doi.org/10.1038/nature11247)  
+
+
+**294. Safety, Activity, and Immune Correlates of Anti–PD-1 Antibody in Cancer**  
+Suzanne L. Topalian, F. Stephen Hodi, Julie R. Brahmer et al. · 2012 · **  
+`METHODS` · citations: 12,531 · score: 0.035 · [doi](https://doi.org/10.1056/nejmoa1200690)  
+
+
+**295. Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010**  
+Theo Vos, Abraham D Flaxman, Mohsen Naghavi et al. · 2012 · **  
+`METHODS` · citations: 8,330 · score: 0.034 · [doi](https://doi.org/10.1016/s0140-6736(12)61729-2)  
+
+
+**296. Pattern Classification**  
+Norbert M. Seel · 2012 · **  
+`METHODS` · citations: 19,490 · score: 0.056 · [doi](https://doi.org/10.1007/978-1-4419-1428-6_5195)  
+
+
+**297. Improving neural networks by preventing co-adaptation of feature detectors**  
+Geoffrey E. Hinton, Nitish Srivastava, Alex Krizhevsky et al. · 2012 · **  
+`METHODS` · citations: 6,639 · score: 0.041 · [doi](https://doi.org/10.48550/arxiv.1207.0580)  
+
+
+**298. CD-HIT: accelerated for clustering the next-generation sequencing data**  
+LiMin Fu, Beifang Niu, Zhengwei Zhu et al. · 2012 · **  
+`METHODS` · citations: 11,431 · score: 0.029 · [doi](https://doi.org/10.1093/bioinformatics/bts565)  
+
+
+**299. A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010**  
+Stephen S Lim, Theo Vos, Abraham D Flaxman et al. · 2012 · **  
+`METHODS` · citations: 11,946 · score: 0.033 · [doi](https://doi.org/10.1016/s0140-6736(12)61766-8)  
+
+
+**300. High-contrast en bloc staining of neuronal tissue for field emission scanning electron microscopy**  
 Juan Carlos Tapia, Narayanan Kasthuri, Kenneth J. Hayworth et al. · 2012 · **  
 `METHODS` · citations: 309 · score: 0.035 · [doi](https://doi.org/10.1038/nprot.2011.439)  
 
 
-**193. Elastic volume reconstruction from series of ultra-thin microscopy sections**  
+**301. Fiji: an open-source platform for biological-image analysis**  
+Johannes Schindelin, Ignacio Arganda‐Carreras, Erwin Frise et al. · 2012 · **  
+`METHODS` · citations: 68,853 · score: 0.325 · [doi](https://doi.org/10.1038/nmeth.2019)  
+
+
+**302. NIH Image to ImageJ: 25 years of image analysis**  
+Caroline A Schneider, Wayne Rasband, Kevin W. Eliceiri · 2012 · **  
+`METHODS` · citations: 63,624 · score: 0.177 · [doi](https://doi.org/10.1038/nmeth.2089)  
+
+
+**303. TrakEM2 Software for Neural Circuit Reconstruction**  
+Albert Cardona, Stephan Saalfeld, Johannes Schindelin et al. · 2012 · **  
+`METHODS` · citations: 1,098 · score: 0.090 · [doi](https://doi.org/10.1371/journal.pone.0038011)  
+
+
+**304. Elastic volume reconstruction from series of ultra-thin microscopy sections**  
 Stephan Saalfeld, Richard D. Fetter, Albert Cardona et al. · 2012 · **  
-`METHODS` · citations: 359 · score: 0.056 · [doi](https://doi.org/10.1038/nmeth.2072)  
+`METHODS` · citations: 359 · score: 0.057 · [doi](https://doi.org/10.1038/nmeth.2072)  
 
 
-**194. Consort 2010 statement: extension to cluster randomised trials**  
-Marion Campbell, Gilda Piaggio, Diana R Elbourne et al. · 2012 · **  
-`METHODS` · citations: 3,524 · score: 0.024 · [doi](https://doi.org/10.1136/bmj.e5661)  
+**305. Copper-Zinc Superoxide Dismutase (SOD1) Is Released by Microglial Cells and Confers Neuroprotection against 6-OHDA Neurotoxicity**  
+Elisabetta Polazzi, Ilaria Mengoni, Marco Caprini et al. · 2012 · **  
+`METHODS` · citations: 9,015 · score: 0.032 · [doi](https://doi.org/10.1159/000337115)  
 
 
-**195. The Brain Activity Map Project and the Challenge of Functional Connectomics**  
-A. Paul Alivisatos, Miyoung Chun, George M. Church et al. · 2012 · **  
-`METHODS` · citations: 578 · score: 0.021 · [doi](https://doi.org/10.1016/j.neuron.2012.06.006)  
+**306. 3D Slicer as an image computing platform for the Quantitative Imaging Network**  
+Andriy Fedorov, Reinhard Beichel, Jayashree Kalpathy–Cramer et al. · 2012 · **  
+`METHODS` · citations: 8,542 · score: 0.028 · [doi](https://doi.org/10.1016/j.mri.2012.05.001)  
 
 
-**196. Globally Optimal Closed-Surface Segmentation for Connectomics**  
-Bjoern Andres, Thorben Kroeger, Kevin L. Briggman et al. · 2012 · **  
-`METHODS` · citations: 101 · score: 0.015 · [doi](https://doi.org/10.1007/978-3-642-33712-3_56)  
-
-
-**197. Efficient automatic 3D-reconstruction of branching neurons from EM data**  
-Julia Funke, Bjoern Andres, Fred A. Hamprecht et al. · 2012 · **  
-`METHODS` · citations: 74 · score: 0.014 · [doi](https://doi.org/10.1109/cvpr.2012.6247777)  
-
-
-**198. The Connectome of a Decision-Making Neural Network**  
+**307. The Connectome of a Decision-Making Neural Network**  
 Travis A. Jarrell, Yi Wang, Adam Bloniarz et al. · 2012 · **  
 `BIOLOGY` · citations: 514 · score: 0.034 · [doi](https://doi.org/10.1126/science.1221762)  
 
 
-**199. Beyond the connectome: How neuromodulators shape neural circuits**  
-Cornelia I. Bargmann · 2012 · **  
-`BIOLOGY` · citations: 533 · score: 0.019 · [doi](https://doi.org/10.1002/bies.201100185)  
+**308. 2013 ESH/ESC Guidelines for the management of arterial hypertension**  
+Giuseppe Mancia, Robert Fagard, Krzysztof Narkiewicz et al. · 2013 · **  
+`METHODS` · citations: 13,652 · score: 0.037 · [doi](https://doi.org/10.1093/eurheartj/eht151)  
 
 
-**200. Resolution Doubling in 3D-STORM Imaging through Improved Buffers**  
-Nicolas Olivier, Debora Keller, Pierre Gönczy et al. · 2013 · **  
-`METHODS` · citations: 195 · score: 0.021 · [doi](https://doi.org/10.1371/journal.pone.0069004)  
+**309. Internet of Things (IoT): A vision, architectural elements, and future directions**  
+Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic et al. · 2013 · **  
+`METHODS` · citations: 11,812 · score: 0.030 · [doi](https://doi.org/10.1016/j.future.2013.01.010)  
 
 
-**201. A comprehensive assessment of regional variation in the impact of head micromovements on functional connectomics**  
-Chao‐Gan Yan, Brian Cheung, Clare Kelly et al. · 2013 · **  
-`METHODS` · citations: 1,494 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuroimage.2013.03.004)  
-
-
-**202. Connectomic reconstruction of the inner plexiform layer in the mouse retina**  
+**310. Connectomic reconstruction of the inner plexiform layer in the mouse retina**  
 Moritz Helmstaedter, Kevin L. Briggman, Srinivas C. Turaga et al. · 2013 · **  
-`METHODS` · citations: 1,074 · score: 0.213 · [doi](https://doi.org/10.1038/nature12346)  
+`METHODS` · citations: 1,074 · score: 0.215 · [doi](https://doi.org/10.1038/nature12346)  
 
 
-**203. A visual motion detection circuit suggested by Drosophila connectomics**  
+**311. Short-Term Effects of Nose-Only Cigarette Smoke Exposure on Glutathione Redox Homeostasis, Cytochrome P450 1A1/2 and Respiratory Enzyme Activities in Mice Tissues**  
+Haider Raza, Annie John, Abderrahim Nemmar · 2013 · **  
+`METHODS` · citations: 47,286 · score: 0.154 · [doi](https://doi.org/10.1159/000350087)  
+
+
+**312. A visual motion detection circuit suggested by Drosophila connectomics**  
 Shin-ya Takemura, Arjun Bharioke, Zhiyuan Lu et al. · 2013 · **  
-`METHODS` · citations: 744 · score: 0.089 · [doi](https://doi.org/10.1038/nature12450)  
+`METHODS` · citations: 744 · score: 0.090 · [doi](https://doi.org/10.1038/nature12450)  
 
 
-**204. The minimal preprocessing pipelines for the Human Connectome Project**  
+**313. The minimal preprocessing pipelines for the Human Connectome Project**  
 Matthew F. Glasser, Stamatios N. Sotiropoulos, Joshua Wilson et al. · 2013 · **  
-`METHODS` · citations: 5,762 · score: 0.039 · [doi](https://doi.org/10.1016/j.neuroimage.2013.04.127)  
+`METHODS` · citations: 5,762 · score: 0.040 · [doi](https://doi.org/10.1016/j.neuroimage.2013.04.127)  
 
 
-**205. Function in the human connectome: Task-fMRI and individual differences in behavior**  
-Deanna M. Barch, Gregory C. Burgess, Michael P. Harms et al. · 2013 · **  
-`METHODS` · citations: 1,671 · score: 0.026 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.033)  
+**314. Structural and molecular interrogation of intact biological systems**  
+Kwanghun Chung, Jenelle L. Wallace, Sung‐Yon Kim et al. · 2013 · **  
+`METHODS` · citations: 2,058 · score: 0.038 · [doi](https://doi.org/10.1038/nature12107)  
 
 
-**206. BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics**  
-Mingrui Xia, Jinhui Wang, Yong He · 2013 · **  
-`METHODS` · citations: 4,215 · score: 0.025 · [doi](https://doi.org/10.1371/journal.pone.0068910)  
+**315. CBTRUS Statistical Report: Primary Brain and Central Nervous System Tumors Diagnosed in the United States in 2006-2010**  
+Quinn T. Ostrom, Haley Gittleman, P Farah et al. · 2013 · **  
+`METHODS` · citations: 12,081 · score: 0.031 · [doi](https://doi.org/10.1093/neuonc/not151)  
 
 
-**207. Resting-state fMRI in the Human Connectome Project**  
-Stephen M. Smith, Christian F. Beckmann, Jesper Andersson et al. · 2013 · **  
-`METHODS` · citations: 1,693 · score: 0.022 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.039)  
-
-
-**208. Pushing spatial and temporal resolution for functional and diffusion MRI in the Human Connectome Project**  
-Kâmil Uǧurbil, Junqian Xu, Edward J. Auerbach et al. · 2013 · **  
-`METHODS` · citations: 898 · score: 0.016 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.012)  
-
-
-**209. Advances in diffusion MRI acquisition and processing in the Human Connectome Project**  
-Stamatios N. Sotiropoulos, Saâd Jbabdi, Junqian Xu et al. · 2013 · **  
-`METHODS` · citations: 976 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuroimage.2013.05.057)  
-
-
-**210. Studying synapses in human brain with array tomography and electron microscopy**  
-Kevin R. Kay, Colin Smith, Ann K. Wright et al. · 2013 · **  
-`BIOLOGY` · citations: 121 · score: 0.013 · [doi](https://doi.org/10.1038/nprot.2013.078)  
-
-
-**211. Ultrasensitive fluorescent proteins for imaging neuronal activity**  
+**316. Ultrasensitive fluorescent proteins for imaging neuronal activity**  
 Tsai‐Wen Chen, Trevor J. Wardill, Yi Sun et al. · 2013 · **  
 `BIOLOGY` · citations: 6,969 · score: 0.065 · [doi](https://doi.org/10.1038/nature12354)  
 
 
-**212. The Rich Club of the<i>C. elegans</i>Neuronal Connectome**  
-Emma K. Towlson, Petra E. Vértes, Sebastian E. Ahnert et al. · 2013 · **  
-`BIOLOGY` · citations: 345 · score: 0.019 · [doi](https://doi.org/10.1523/jneurosci.3784-12.2013)  
+**317. <i>SHELXT</i>– Integrated space-group and crystal-structure determination**  
+George M. Sheldrick · 2014 · **  
+`METHODS` · citations: 27,704 · score: 0.066 · [doi](https://doi.org/10.1107/s2053273314026370)  
 
 
-**213. Learning Context Cues for Synapse Segmentation**  
-Carlos Becker, Karim Ali, Graham Knott et al. · 2013 · **  
-`BIOLOGY` · citations: 66 · score: 0.012 · [doi](https://doi.org/10.1109/tmi.2013.2267747)  
-
-
-**214. Highly Multiplexed Subcellular RNA Sequencing in Situ**  
+**318. Highly Multiplexed Subcellular RNA Sequencing in Situ**  
 Je Hyuk Lee, Evan R Daugharthy, Jonathan Scheiman et al. · 2014 · **  
 `METHODS` · citations: 1,005 · score: 0.030 · [doi](https://doi.org/10.1126/science.1250212)  
 
 
-**215. A million spiking-neuron integrated circuit with a scalable communication network and interface**  
-Paul Merolla, John V. Arthur, Rodrigo Alvarez-Icaza et al. · 2014 · **  
-`METHODS` · citations: 3,983 · score: 0.013 · [doi](https://doi.org/10.1126/science.1254642)  
+**319. The natverse: a versatile computational toolbox to combine and analyse neuroanatomical data**  
+Alexander Shakeel Bates, James D. Manton, Sridhar R. Jagannathan et al. · 2014 · **  
+`METHODS` · citations: 36 · score: 0.151 · [doi](https://doi.org/10.1101/006353)  
 
 
-**216. Imaging ATUM ultrathin section libraries with WaferMapper: a multi-scale approach to EM reconstruction of neural circuits**  
+**320. A mesoscale connectome of the mouse brain**  
+Seung Wook Oh, Julie A. Harris, Lydia Ng et al. · 2014 · **  
+`METHODS` · citations: 2,833 · score: 0.070 · [doi](https://doi.org/10.1038/nature13186)  
+
+
+**321. Space–time wiring specificity supports direction selectivity in the retina**  
+the EyeWirers, Jinseop S. Kim, Matthew Greene et al. · 2014 · **  
+`METHODS` · citations: 504 · score: 0.042 · [doi](https://doi.org/10.1038/nature13240)  
+
+
+**322. Imaging ATUM ultrathin section libraries with WaferMapper: a multi-scale approach to EM reconstruction of neural circuits**  
 Kenneth J. Hayworth, Josh Morgan, Richard Schalek et al. · 2014 · **  
 `METHODS` · citations: 295 · score: 0.035 · [doi](https://doi.org/10.3389/fncir.2014.00068)  
 
 
-**217. The natverse: a versatile computational toolbox to combine and analyse neuroanatomical data**  
-Alexander Shakeel Bates, James D. Manton, Sridhar R. Jagannathan et al. · 2014 · **  
-`METHODS` · citations: 36 · score: 0.162 · [doi](https://doi.org/10.1101/006353)  
+**323. A Systematic Nomenclature for the Insect Brain**  
+Kei Ito, Kazunori Shinomiya, Masayoshi Ito et al. · 2014 · **  
+`METHODS` · citations: 648 · score: 0.030 · [doi](https://doi.org/10.1016/j.neuron.2013.12.017)  
 
 
-**218. A mesoscale connectome of the mouse brain**  
-Seung Wook Oh, Julie A. Harris, Lydia Ng et al. · 2014 · **  
-`METHODS` · citations: 2,833 · score: 0.067 · [doi](https://doi.org/10.1038/nature13186)  
+**324. Older Adults' Reasons for Using Technology while Aging in Place**  
+Sebastiaan Theodorus Michaël Peek, Katrien Luijkx, M. D. Rijnaard et al. · 2015 · **  
+`METHODS` · citations: 19,719 · score: 0.052 · [doi](https://doi.org/10.1159/000430949)  
 
 
-**219. Design and Evaluation of Interactive Proofreading Tools for Connectomics**  
-Daniel Haehn, Seymour Knowles-Barley, Mike Roberts et al. · 2014 · **  
-`METHODS` · citations: 51 · score: 0.016 · [doi](https://doi.org/10.1109/tvcg.2014.2346371)  
+**325. A global reference for human genetic variation**  
+Corresponding authors, Adam Auton, Gonçalo R. Abecasis et al. · 2015 · **  
+`METHODS` · citations: 19,538 · score: 0.051 · [doi](https://doi.org/10.1038/nature15393)  
 
 
-**220. Graph-based active learning of agglomeration (GALA): a Python library to segment 2D and 3D neuroimages**  
-Juan Nunez-Iglesias, Ryan Kennedy, Stephen M. Plaza et al. · 2014 · **  
-`METHODS` · citations: 54 · score: 0.015 · [doi](https://doi.org/10.3389/fninf.2014.00034)  
+**326. limma powers differential expression analyses for RNA-sequencing and microarray studies**  
+Matthew E. Ritchie, Belinda Phipson, Di Wu et al. · 2015 · **  
+`METHODS` · citations: 41,828 · score: 0.104 · [doi](https://doi.org/10.1093/nar/gkv007)  
 
 
-**221. Distinct Profiles of Myelin Distribution Along Single Axons of Pyramidal Neurons in the Neocortex**  
-Giulio Srubek Tomassy, Daniel R. Berger, Hsu-Hsin Chen et al. · 2014 · **  
-`BIOLOGY` · citations: 588 · score: 0.013 · [doi](https://doi.org/10.1126/science.1249766)  
+**327. Expansion microscopy**  
+Fei Chen, Paul W. Tillberg, Edward S. Boyden · 2015 · **  
+`METHODS` · citations: 1,542 · score: 0.093 · [doi](https://doi.org/10.1126/science.1260088)  
 
 
-**222. Spatial reconstruction of single-cell gene expression data**  
-Rahul Satija, Jeffrey A. Farrell, David Gennert et al. · 2015 · **  
-`METHODS` · citations: 7,447 · score: 0.025 · [doi](https://doi.org/10.1038/nbt.3192)  
+**328. U-Net: Convolutional Networks for Biomedical Image Segmentation**  
+Olaf Ronneberger, Philipp Fischer, Thomas Brox · 2015 · **  
+`METHODS` · citations: 86,387 · score: 0.249 · [doi](https://doi.org/10.1007/978-3-319-24574-4_28)  
 
 
-**223. Saturated Reconstruction of a Volume of Neocortex**  
+**329. Saturated Reconstruction of a Volume of Neocortex**  
 Narayanan Kasthuri, Kenneth J. Hayworth, Daniel R. Berger et al. · 2015 · **  
-`METHODS` · citations: 1,125 · score: 0.105 · [doi](https://doi.org/10.1016/j.cell.2015.06.054)  
+`METHODS` · citations: 1,125 · score: 0.103 · [doi](https://doi.org/10.1016/j.cell.2015.06.054)  
 
 
-**224. Large-volume en-bloc staining for electron microscopy-based connectomics**  
-Yunfeng Hua, Philip Laserstein, Moritz Helmstaedter · 2015 · **  
-`METHODS` · citations: 354 · score: 0.026 · [doi](https://doi.org/10.1038/ncomms8923)  
+**330. Human-level control through deep reinforcement learning**  
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver et al. · 2015 · **  
+`METHODS` · citations: 29,167 · score: 0.083 · [doi](https://doi.org/10.1038/nature14236)  
 
 
-**225. High‐resolution, high‐throughput imaging with a multibeam scanning electron microscope**  
-Anna Lena Eberle, Shawn Mikula, Richard Schalek et al. · 2015 · **  
-`METHODS` · citations: 260 · score: 0.025 · [doi](https://doi.org/10.1111/jmi.12224)  
+**331. A multilevel multimodal circuit enhances action selection in Drosophila**  
+Tomoko Ohyama, Casey M Schneider-Mizell, Richard D. Fetter et al. · 2015 · **  
+`METHODS` · citations: 580 · score: 0.058 · [doi](https://doi.org/10.1038/nature14297)  
 
 
-**226. SegEM: Efficient Image Analysis for High-Resolution Connectomics**  
-Manuel Berning, Kevin M. Boergens, Moritz Helmstaedter · 2015 · **  
-`METHODS` · citations: 139 · score: 0.023 · [doi](https://doi.org/10.1016/j.neuron.2015.09.003)  
+**332. The Molecular Signatures Database Hallmark Gene Set Collection**  
+Arthur Liberzon, Chet Birger, Helga Thorvaldsdóttir et al. · 2015 · **  
+`METHODS` · citations: 13,922 · score: 0.034 · [doi](https://doi.org/10.1016/j.cels.2015.12.004)  
 
 
-**227. Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity**  
-Emily S. Finn, Xilin Shen, Dustin Scheinost et al. · 2015 · **  
-`METHODS` · citations: 2,967 · score: 0.022 · [doi](https://doi.org/10.1038/nn.4135)  
-
-
-**228. Large-scale automatic reconstruction of neuronal processes from electron microscopy images**  
-Verena Kaynig, Amelio Vázquez-Reina, Seymour Knowles-Barley et al. · 2015 · **  
-`METHODS` · citations: 117 · score: 0.020 · [doi](https://doi.org/10.1016/j.media.2015.02.001)  
-
-
-**229. Controllability of structural brain networks**  
-Shi Gu, Fabio Pasqualetti, Matthew Cieslak et al. · 2015 · **  
-`METHODS` · citations: 945 · score: 0.016 · [doi](https://doi.org/10.1038/ncomms9414)  
-
-
-**230. Cooperative and Competitive Spreading Dynamics on the Human Connectome**  
-Bratislav Mišić, Richard F. Betzel, Azadeh Nematzadeh et al. · 2015 · **  
-`METHODS` · citations: 401 · score: 0.015 · [doi](https://doi.org/10.1016/j.neuron.2015.05.035)  
-
-
-**231. High-performance probes for light and electron microscopy**  
-Sarada Viswanathan, Megan E. Williams, Erik B. Bloss et al. · 2015 · **  
-`METHODS` · citations: 287 · score: 0.014 · [doi](https://doi.org/10.1038/nmeth.3365)  
-
-
-**232. Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics**  
-Kenneth J. Hayworth, C. Shan Xu, Zhiyuan Lu et al. · 2015 · **  
-`METHODS` · citations: 151 · score: 0.014 · [doi](https://doi.org/10.1038/nmeth.3292)  
-
-
-**233. An integrated approach to correction for off-resonance effects and subject movement in diffusion MR imaging**  
-Jesper Andersson, Stamatios N. Sotiropoulos · 2015 · **  
-`METHODS` · citations: 3,706 · score: 0.013 · [doi](https://doi.org/10.1016/j.neuroimage.2015.10.019)  
-
-
-**234. Inter-individual stereotypy of the Platynereis larval visual connectome**  
-Nadine Randel, Réza Shahidi, Csaba Verasztó et al. · 2015 · **  
-`METHODS` · citations: 68 · score: 0.013 · [doi](https://doi.org/10.7554/elife.08069)  
-
-
-**235. Synaptic circuits and their variations within different columns in the visual system of <i>Drosophila</i>**  
+**333. Synaptic circuits and their variations within different columns in the visual system of <i>Drosophila</i>**  
 Shin-ya Takemura, C. Shan Xu, Zhiyuan Lu et al. · 2015 · **  
 `BIOLOGY` · citations: 305 · score: 0.040 · [doi](https://doi.org/10.1073/pnas.1509820112)  
 
 
-**236. A cellular and regulatory map of the cholinergic nervous system of C. elegans**  
-Laura Pereira, Paschalis Kratsios, Esther Serrano‐Saiz et al. · 2015 · **  
-`BIOLOGY` · citations: 418 · score: 0.013 · [doi](https://doi.org/10.7554/elife.12432)  
+**334. Inflammasome-activated gasdermin D causes pyroptosis by forming membrane pores**  
+Xing Liu, Zhibin Zhang, Jianbin Ruan et al. · 2016 · **  
+`METHODS` · citations: 3,105 · score: 0.046 · [doi](https://doi.org/10.1038/nature18629)  
 
 
-**237. Nanoconnectomic upper bound on the variability of synaptic plasticity**  
-Thomas M. Bartol, Cailey Bromer, Justin P. Kinney et al. · 2015 · **  
-`BIOLOGY` · citations: 317 · score: 0.012 · [doi](https://doi.org/10.7554/elife.10778)  
+**335. Cancer statistics, 2016**  
+Rebecca L. Siegel, Kimberly D. Miller, Ahmedin Jemal · 2016 · **  
+`METHODS` · citations: 16,130 · score: 0.042 · [doi](https://doi.org/10.3322/caac.21332)  
 
 
-**238. Ultrastructural Characterization of the Lower Motor System in a Mouse Model of Krabbe Disease**  
+**336. AJCC Cancer Staging Manual**  
+ · 2016 · **  
+`METHODS` · citations: 17,403 · score: 0.042 · [doi](https://doi.org/10.1007/978-3-319-40618-3)  
+
+
+**337. Ultrastructural Characterization of the Lower Motor System in a Mouse Model of Krabbe Disease**  
 Valentina Cappello, Laura Marchetti, Paola Parlanti et al. · 2016 · **  
 `METHODS` · citations: 13,254 · score: 0.034 · [doi](https://doi.org/10.1038/s41598-016-0001-8)  
 
 
-**239. Protein-retention expansion microscopy of cells and tissues labeled using standard fluorescent proteins and antibodies**  
-Paul W. Tillberg, Fei Chen, Kiryl D. Piatkevich et al. · 2016 · **  
-`METHODS` · citations: 708 · score: 0.052 · [doi](https://doi.org/10.1038/nbt.3625)  
+**338. Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization**  
+Veronika Eyring, Sandrine Bony, Gerald A. Meehl et al. · 2016 · **  
+`METHODS` · citations: 11,568 · score: 0.028 · [doi](https://doi.org/10.5194/gmd-9-1937-2016)  
 
 
-**240. Expansion microscopy with conventional antibodies and fluorescent proteins**  
-Tyler J. Chozinski, Aaron R. Halpern, Haruhisa Okawa et al. · 2016 · **  
-`METHODS` · citations: 472 · score: 0.038 · [doi](https://doi.org/10.1038/nmeth.3833)  
+**339. Global, regional, and national incidence, prevalence, and years lived with disability for 310 diseases and injuries, 1990–2015: a systematic analysis for the Global Burden of Disease Study 2015**  
+Theo Vos, Christine A. Allen, Megha Arora et al. · 2016 · **  
+`METHODS` · citations: 7,320 · score: 0.029 · [doi](https://doi.org/10.1016/s0140-6736(16)31678-6)  
 
 
-**241. Nanoscale imaging of RNA with expansion microscopy**  
-Fei Chen, Asmamaw T. Wassie, Allison Coté et al. · 2016 · **  
-`METHODS` · citations: 421 · score: 0.025 · [doi](https://doi.org/10.1038/nmeth.3899)  
+**340. Enrichr: a comprehensive gene set enrichment analysis web server 2016 update**  
+Maxim V. Kuleshov, Matthew R. Jones, Andrew D. Rouillard et al. · 2016 · **  
+`METHODS` · citations: 11,349 · score: 0.029 · [doi](https://doi.org/10.1093/nar/gkw377)  
 
 
-**242. Quantitative neuroanatomy for connectomics in Drosophila**  
-Casey M Schneider-Mizell, Stephan Gerhard, Mark Longair et al. · 2016 · **  
-`METHODS` · citations: 371 · score: 0.077 · [doi](https://doi.org/10.7554/elife.12059)  
-
-
-**243. NBLAST: Rapid, Sensitive Comparison of Neuronal Structure and Construction of Neuron Family Databases**  
+**341. NBLAST: Rapid, Sensitive Comparison of Neuronal Structure and Construction of Neuron Family Databases**  
 Marta Costa, James D. Manton, Aaron D. Ostrovsky et al. · 2016 · **  
 `METHODS` · citations: 332 · score: 0.042 · [doi](https://doi.org/10.1016/j.neuron.2016.06.012)  
 
 
-**244. Epigenetic Regulations of GABAergic Neurotransmission: Relevance for Neurological Disorders and Epigenetic Therapy**  
-Shikshya Shrestha, Steven M. Offer · 2016 · **  
-`METHODS` · citations: 8,955 · score: 0.036 · [doi](https://doi.org/10.1159/000444713)  
+**342. Multiplexed and scalable super-resolution imaging of three-dimensional protein localization in size-adjustable tissues**  
+Taeyun Ku, Justin Swaney, Jeong Yoon Park et al. · 2016 · **  
+`METHODS` · citations: 477 · score: 0.040 · [doi](https://doi.org/10.1038/nbt.3641)  
 
 
-**245. Anatomy and function of an excitatory network in the visual cortex**  
+**343. Expansion microscopy with conventional antibodies and fluorescent proteins**  
+Tyler J. Chozinski, Aaron R. Halpern, Haruhisa Okawa et al. · 2016 · **  
+`METHODS` · citations: 472 · score: 0.038 · [doi](https://doi.org/10.1038/nmeth.3833)  
+
+
+**344. Anatomy and function of an excitatory network in the visual cortex**  
 Wei-Chung Allen Lee, Vincent Bonin, Michael F. Reed et al. · 2016 · **  
-`METHODS` · citations: 574 · score: 0.031 · [doi](https://doi.org/10.1038/nature17192)  
+`METHODS` · citations: 574 · score: 0.032 · [doi](https://doi.org/10.1038/nature17192)  
 
 
-**246. A multi-modal parcellation of human cerebral cortex**  
+**345. A multi-modal parcellation of human cerebral cortex**  
 Matthew F. Glasser, Timothy S. Coalson, Emma C. Robinson et al. · 2016 · **  
 `METHODS` · citations: 5,467 · score: 0.031 · [doi](https://doi.org/10.1038/nature18933)  
 
 
-**247. A circuit mechanism for the propagation of waves of muscle contraction in Drosophila**  
-Akira Fushiki, Maarten Zwart, Hiroshi Kohsaka et al. · 2016 · **  
-`METHODS` · citations: 204 · score: 0.019 · [doi](https://doi.org/10.7554/elife.13253)  
+**346. The Cambridge Structural Database**  
+Colin R. Groom, Ian Bruno, Matthew P. Lightfoot et al. · 2016 · **  
+`METHODS` · citations: 9,916 · score: 0.030 · [doi](https://doi.org/10.1107/s2052520616003954)  
 
 
-**248. Synaptic transmission parallels neuromodulation in a central food-intake circuit**  
-Philipp Schlegel, Michael J. Texada, Anton Miroschnikow et al. · 2016 · **  
-`METHODS` · citations: 165 · score: 0.019 · [doi](https://doi.org/10.7554/elife.16799)  
+**347. Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks**  
+Jun-Yan Zhu, Taesung Park, Phillip Isola et al. · 2017 · **  
+`METHODS` · citations: 21,473 · score: 0.058 · [doi](https://doi.org/10.1109/iccv.2017.244)  
 
 
-**249. A platform for brain-wide imaging and reconstruction of individual neurons**  
-Michael N. Economo, Nathan Clack, Luke D. Lavis et al. · 2016 · **  
-`METHODS` · citations: 450 · score: 0.016 · [doi](https://doi.org/10.7554/elife.10566)  
-
-
-**250. The Fuzzy Logic of Network Connectivity in Mouse Visual Thalamus**  
-Josh Morgan, Daniel R. Berger, Arthur W. Wetzel et al. · 2016 · **  
-`METHODS` · citations: 294 · score: 0.014 · [doi](https://doi.org/10.1016/j.cell.2016.02.033)  
-
-
-**251. The wiring diagram of a glomerular olfactory system**  
-Matthew Berck, Avinash Khandelwal, Lindsey Claus et al. · 2016 · **  
-`BIOLOGY` · citations: 219 · score: 0.025 · [doi](https://doi.org/10.7554/elife.14859)  
-
-
-**252. Competitive Disinhibition Mediates Behavioral Choice and Sequences in Drosophila**  
-Tihana Jovanic, Casey M Schneider-Mizell, Mei Shao et al. · 2016 · **  
-`BIOLOGY` · citations: 240 · score: 0.019 · [doi](https://doi.org/10.1016/j.cell.2016.09.009)  
-
-
-**253. Dense EM-based reconstruction of the interglomerular projectome in the zebrafish olfactory bulb**  
-Adrian Wanner, Christel Genoud, Tafheem Masudi et al. · 2016 · **  
-`BIOLOGY` · citations: 172 · score: 0.016 · [doi](https://doi.org/10.1038/nn.4290)  
-
-
-**254. Synaptic circuitry of identified neurons in the antennal lobe of <i>Drosophila melanogaster</i>**  
-Jürgen Rybak, Giovanni Paolo Talarico, Santiago Ruiz et al. · 2016 · **  
-`BIOLOGY` · citations: 62 · score: 0.013 · [doi](https://doi.org/10.1002/cne.23966)  
-
-
-**255. Species-specific wiring for direction selectivity in the mammalian retina**  
-Huayu Ding, Robert G. Smith, Alon Poleg-Polsky et al. · 2016 · **  
-`BIOLOGY` · citations: 270 · score: 0.013 · [doi](https://doi.org/10.1038/nature18609)  
-
-
-**256. Scanning Electron Microscopy and X-Ray Microanalysis**  
+**348. Scanning Electron Microscopy and X-Ray Microanalysis**  
 Joseph I. Goldstein, Dale E. Newbury, Joseph R. Michael et al. · 2017 · **  
 `METHODS` · citations: 5,165 · score: 0.055 · [doi](https://doi.org/10.1007/978-1-4939-6676-9)  
 
 
-**257. MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**  
-Shawn Zheng, Eugene Palovcak, Jean‐Paul Armache et al. · 2017 · **  
-`METHODS` · citations: 8,716 · score: 0.023 · [doi](https://doi.org/10.1038/nmeth.4193)  
+**349. Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990–2016: a systematic analysis for the Global Burden of Disease Study 2016**  
+Theo Vos, Amanuel Alemu Abajobir, Kalkidan Hassen Abate et al. · 2017 · **  
+`METHODS` · citations: 13,428 · score: 0.037 · [doi](https://doi.org/10.1016/s0140-6736(17)32154-2)  
 
 
-**258. Structural absorption by barbule microstructures of super black bird of paradise feathers**  
-Dakota E. McCoy, Teresa J. Feo, Todd Alan Harvey et al. · 2017 · **  
-`METHODS` · citations: 7,464 · score: 0.019 · [doi](https://doi.org/10.1038/s41467-017-02088-w)  
+**350. Induction of the Vitamin D Receptor Attenuates Autophagy Dysfunction-Mediated Cell Death Following Traumatic Brain Injury**  
+Changmeng Cui, Jianzhong Cui, Feng Jin et al. · 2017 · **  
+`METHODS` · citations: 5,188 · score: 0.111 · [doi](https://doi.org/10.1159/000479571)  
 
 
-**259. Superresolution expansion microscopy reveals the three-dimensional organization of the <i>Drosophila</i> synaptonemal complex**  
-Cori K. Cahoon, Zulin Yu, Yongfu Wang et al. · 2017 · **  
-`METHODS` · citations: 146 · score: 0.015 · [doi](https://doi.org/10.1073/pnas.1705623114)  
-
-
-**260. Iterative expansion microscopy**  
-Jae‐Byum Chang, Fei Chen, Young‐Gyu Yoon et al. · 2017 · **  
-`METHODS` · citations: 396 · score: 0.024 · [doi](https://doi.org/10.1038/nmeth.4261)  
-
-
-**261. webKnossos: efficient online 3D data annotation for connectomics**  
+**351. webKnossos: efficient online 3D data annotation for connectomics**  
 Kevin M. Boergens, Manuel Berning, Tom Bocklisch et al. · 2017 · **  
 `METHODS` · citations: 204 · score: 0.047 · [doi](https://doi.org/10.1038/nmeth.4331)  
 
 
-**262. Enhanced FIB-SEM systems for large-volume 3D imaging**  
+**352. Enhanced FIB-SEM systems for large-volume 3D imaging**  
 C. Shan Xu, Kenneth J. Hayworth, Zhiyuan Lu et al. · 2017 · **  
-`METHODS` · citations: 429 · score: 0.044 · [doi](https://doi.org/10.7554/elife.25916)  
+`METHODS` · citations: 429 · score: 0.046 · [doi](https://doi.org/10.7554/elife.25916)  
 
 
-**263. Whole-brain serial-section electron microscopy in larval zebrafish**  
-David G. C. Hildebrand, Marcelo Cicconet, Russel Torres et al. · 2017 · **  
-`METHODS` · citations: 401 · score: 0.024 · [doi](https://doi.org/10.1038/nature22356)  
+**353. Heat Shock Protein A12B Protects Vascular Endothelial Cells Against Sepsis-Induced Acute Lung Injury in Mice**  
+Yi Chen, Lei Wang, Qiuxiang Kang et al. · 2017 · **  
+`METHODS` · citations: 10,702 · score: 0.045 · [doi](https://doi.org/10.1159/000477308)  
 
 
-**264. The comprehensive connectome of a neural substrate for ‘ON’ motion detection in Drosophila**  
-Shin-ya Takemura, Aljoscha Nern, Dmitri B. Chklovskii et al. · 2017 · **  
-`METHODS` · citations: 230 · score: 0.017 · [doi](https://doi.org/10.7554/elife.24394)  
+**354. Diagnosing Non-Intermittent Anomalies in Reinforcement Learning Policy Executions (Short Paper)**  
+Natan, Avraham, Stern, Roni, Kalech, Meir · 2017 · **  
+`METHODS` · citations: 11,253 · score: 0.028 · [doi](https://doi.org/10.4230/oasics.dx.2024.16)  
 
 
-**265. An interactive framework for whole-brain maps at cellular resolution**  
-Daniel Fürth, Thomas Vaissière, Ourania Tzortzi et al. · 2017 · **  
-`METHODS` · citations: 264 · score: 0.015 · [doi](https://doi.org/10.1038/s41593-017-0027-7)  
-
-
-**266. Transsynaptic Mapping of Second-Order Taste Neurons in Flies by trans-Tango**  
-Mustafa Talay, Ethan B. Richman, Nathaniel J. Snell et al. · 2017 · **  
-`METHODS` · citations: 349 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuron.2017.10.011)  
-
-
-**267. A complete electron microscopy volume of the brain of adult <i>Drosophila melanogaster</i>**  
-Zhihao Zheng, J. Scott Lauritzen, Eric Perlman et al. · 2017 · **  
-`METHODS` · citations: 52 · score: 0.014 · [doi](https://doi.org/10.1101/140905)  
-
-
-**268. The specificity and robustness of long-distance connections in weighted, interareal connectomes**  
-Richard F. Betzel, Danielle S. Bassett · 2017 · **  
-`METHODS` · citations: 249 · score: 0.014 · [doi](https://doi.org/10.1073/pnas.1720186115)  
-
-
-**269. The challenge of mapping the human connectome based on diffusion tractography**  
-Klaus Maier‐Hein, Peter Neher, Jean-Christophe Houde et al. · 2017 · **  
-`METHODS` · citations: 1,402 · score: 0.013 · [doi](https://doi.org/10.1038/s41467-017-01285-x)  
-
-
-**270. The complete connectome of a learning and memory centre in an insect brain**  
+**355. The complete connectome of a learning and memory centre in an insect brain**  
 Katharina Eichler, Feng Li, Ashok Litwin-Kumar et al. · 2017 · **  
-`BIOLOGY` · citations: 568 · score: 0.055 · [doi](https://doi.org/10.1038/nature23455)  
+`BIOLOGY` · citations: 568 · score: 0.053 · [doi](https://doi.org/10.1038/nature23455)  
 
 
-**271. A connectome of a learning and memory center in the adult Drosophila brain**  
+**356. A connectome of a learning and memory center in the adult Drosophila brain**  
 Shin-ya Takemura, Yoshinori Aso, Toshihide Hige et al. · 2017 · **  
 `BIOLOGY` · citations: 391 · score: 0.041 · [doi](https://doi.org/10.7554/elife.26975)  
 
 
-**272. SynEM, automated synapse detection for connectomics**  
-Benedikt Staffler, Manuel Berning, Kevin M. Boergens et al. · 2017 · **  
-`BIOLOGY` · citations: 71 · score: 0.028 · [doi](https://doi.org/10.7554/elife.26414)  
+**357. SWISS-MODEL: homology modelling of protein structures and complexes**  
+Andrew Waterhouse, Martino Bertoni, Stefan Bienert et al. · 2018 · **  
+`METHODS` · citations: 13,179 · score: 0.034 · [doi](https://doi.org/10.1093/nar/gky427)  
 
 
-**273. Axonal synapse sorting in medial entorhinal cortex**  
-Helene Schmidt, Anjali Gour, Jakob Straehle et al. · 2017 · **  
-`BIOLOGY` · citations: 152 · score: 0.025 · [doi](https://doi.org/10.1038/nature24005)  
+**358. STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets**  
+Damian Szklarczyk, Annika L. Gable, David Lyon et al. · 2018 · **  
+`METHODS` · citations: 18,843 · score: 0.047 · [doi](https://doi.org/10.1093/nar/gky1131)  
 
 
-**274. Automated synaptic connectivity inference for volume electron microscopy**  
-Sven Dorkenwald, Philipp J. Schubert, Marius F Killinger et al. · 2017 · **  
-`BIOLOGY` · citations: 152 · score: 0.023 · [doi](https://doi.org/10.1038/nmeth.4206)  
+**359. Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990–2017: a systematic analysis for the Global Burden of Disease Study 2017**  
+Spencer L James, Degu Abate, Kalkidan Hassen Abate et al. · 2018 · **  
+`METHODS` · citations: 13,807 · score: 0.035 · [doi](https://doi.org/10.1016/s0140-6736(18)32279-7)  
 
 
-**275. Wiring variations that enable and constrain neural computation in a sensory microcircuit**  
-William F. Tobin, Rachel I. Wilson, Wei-Chung Allen Lee · 2017 · **  
-`BIOLOGY` · citations: 147 · score: 0.018 · [doi](https://doi.org/10.7554/elife.24838)  
-
-
-**276. Conserved neural circuit structure across Drosophila larval development revealed by comparative connectomics**  
-Stephan Gerhard, Ingrid Andrade, Richard D. Fetter et al. · 2017 · **  
-`BIOLOGY` · citations: 120 · score: 0.016 · [doi](https://doi.org/10.7554/elife.29089)  
-
-
-**277. Imaging cellular ultrastructures using expansion microscopy (U-ExM)**  
-Davide Gambarotto, Fabian U. Zwettler, Maeva Le Guennec et al. · 2018 · **  
-`METHODS` · citations: 570 · score: 0.026 · [doi](https://doi.org/10.1038/s41592-018-0238-1)  
-
-
-**278. A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster**  
+**360. A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster**  
 Zhihao Zheng, J. Scott Lauritzen, Eric Perlman et al. · 2018 · **  
-`METHODS` · citations: 1,135 · score: 0.308 · [doi](https://doi.org/10.1016/j.cell.2018.06.019)  
+`METHODS` · citations: 1,135 · score: 0.297 · [doi](https://doi.org/10.1016/j.cell.2018.06.019)  
 
 
-**279. Neural circuit basis of aversive odour processing in <i>Drosophila</i> from sensory input to descending output**  
+**361. Neural circuit basis of aversive odour processing in <i>Drosophila</i> from sensory input to descending output**  
 Paavo Huoviala, Michael-John Dolan, Fiona M. Love et al. · 2018 · **  
-`METHODS` · citations: 48 · score: 0.119 · [doi](https://doi.org/10.1101/394403)  
+`METHODS` · citations: 48 · score: 0.113 · [doi](https://doi.org/10.1101/394403)  
 
 
-**280. High-precision automated reconstruction of neurons with flood-filling networks**  
+**362. High-precision automated reconstruction of neurons with flood-filling networks**  
 Michał Januszewski, Joergen Kornfeld, Peter H. Li et al. · 2018 · **  
 `METHODS` · citations: 389 · score: 0.084 · [doi](https://doi.org/10.1038/s41592-018-0049-4)  
 
 
-**281. VAST (Volume Annotation and Segmentation Tool): Efficient Manual and Semi-Automatic Labeling of Large 3D Image Stacks**  
+**363. VAST (Volume Annotation and Segmentation Tool): Efficient Manual and Semi-Automatic Labeling of Large 3D Image Stacks**  
 Daniel R. Berger, H. Sebastian Seung, Jeff W. Lichtman · 2018 · **  
 `METHODS` · citations: 234 · score: 0.037 · [doi](https://doi.org/10.3389/fncir.2018.00088)  
 
 
-**282. Fully-Automatic Synapse Prediction and Validation on a Large Data Set**  
-Gary B. Huang, Louis K. Scheffer, Stephen M. Plaza · 2018 · **  
-`METHODS` · citations: 5 · score: 0.020 · [doi](https://doi.org/10.3389/fncir.2018.00087)  
+**364. Minimal information for studies of extracellular vesicles 2018 (MISEV2018): a position statement of the International Society for Extracellular Vesicles and update of the MISEV2014 guidelines**  
+Clotilde Théry, Kenneth W. Witwer, Elena Aïkawa et al. · 2018 · **  
+`METHODS` · citations: 10,823 · score: 0.030 · [doi](https://doi.org/10.1080/20013078.2018.1535750)  
 
 
-**283. Large Scale Image Segmentation with Structured Loss Based Deep Learning for Connectome Reconstruction**  
-Jan Funke, Fabian Tschopp, William Grisaitis et al. · 2018 · **  
-`METHODS` · citations: 218 · score: 0.017 · [doi](https://doi.org/10.1109/tpami.2018.2835450)  
+**365. Cancer statistics, 2019**  
+Rebecca L. Siegel, Kimberly D. Miller, Ahmedin Jemal · 2019 · **  
+`METHODS` · citations: 20,874 · score: 0.053 · [doi](https://doi.org/10.3322/caac.21551)  
 
 
-**284. A Pipeline for Volume Electron Microscopy of the Caenorhabditis elegans Nervous System**  
-Ben Mulcahy, Daniel Witvliet, Douglas Holmyard et al. · 2018 · **  
-`METHODS` · citations: 53 · score: 0.016 · [doi](https://doi.org/10.3389/fncir.2018.00094)  
-
-
-**285. Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution**  
+**366. Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution**  
 Ruixuan Gao, Shoh Asano, Srigokul Upadhyayula et al. · 2019 · **  
-`METHODS` · citations: 395 · score: 0.063 · [doi](https://doi.org/10.1126/science.aau8302)  
+`METHODS` · citations: 395 · score: 0.061 · [doi](https://doi.org/10.1126/science.aau8302)  
 
 
-**286. Whole-animal connectomes of both Caenorhabditis elegans sexes**  
+**367. Whole-animal connectomes of both Caenorhabditis elegans sexes**  
 Steven J. Cook, Travis A. Jarrell, Christopher A. Brittin et al. · 2019 · **  
-`METHODS` · citations: 964 · score: 0.054 · [doi](https://doi.org/10.1038/s41586-019-1352-7)  
+`METHODS` · citations: 964 · score: 0.056 · [doi](https://doi.org/10.1038/s41586-019-1352-7)  
 
 
-**287. Automated Reconstruction of a Serial-Section EM <i>Drosophila</i> Brain with Flood-Filling Networks and Local Realignment**  
-Peter H. Li, Larry Lindsey, Michał Januszewski et al. · 2019 · **  
-`METHODS` · citations: 70 · score: 0.035 · [doi](https://doi.org/10.1101/605634)  
-
-
-**288. DVID: Distributed Versioned Image-Oriented Dataservice**  
+**368. DVID: Distributed Versioned Image-Oriented Dataservice**  
 William T. Katz, Stephen M. Plaza · 2019 · **  
-`METHODS` · citations: 35 · score: 0.029 · [doi](https://doi.org/10.3389/fncir.2019.00005)  
+`METHODS` · citations: 35 · score: 0.039 · [doi](https://doi.org/10.3389/fncir.2019.00005)  
 
 
-**289. Neurogenetic dissection of the Drosophila lateral horn reveals major outputs, diverse behavioural functions, and interactions with the mushroom body**  
-Michael-John Dolan, Shahar Frechter, Alexander Shakeel Bates et al. · 2019 · **  
-`METHODS` · citations: 188 · score: 0.015 · [doi](https://doi.org/10.7554/elife.43079)  
+**369. Automated Reconstruction of a Serial-Section EM <i>Drosophila</i> Brain with Flood-Filling Networks and Local Realignment**  
+Peter H. Li, Larry Lindsey, Michał Januszewski et al. · 2019 · **  
+`METHODS` · citations: 70 · score: 0.037 · [doi](https://doi.org/10.1101/605634)  
 
 
-**290. Serial-section electron microscopy using automated tape-collecting ultramicrotome (ATUM)**  
-Valentina Baena, Richard Schalek, Jeff W. Lichtman et al. · 2019 · **  
-`METHODS` · citations: 86 · score: 0.015 · [doi](https://doi.org/10.1016/bs.mcb.2019.04.004)  
-
-
-**291. Chemoconnectomics: Mapping Chemical Transmission in Drosophila**  
-Bowen Deng, Qi Li, Xinxing Liu et al. · 2019 · **  
-`METHODS` · citations: 379 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuron.2019.01.045)  
-
-
-**292. 3D cellular reconstruction of cortical glia and parenchymal morphometric analysis from Serial Block-Face Electron Microscopy of juvenile rat**  
-Corrado Calı, Marco Agus, Kalpana Kare et al. · 2019 · **  
-`METHODS` · citations: 101 · score: 0.012 · [doi](https://doi.org/10.1016/j.pneurobio.2019.101696)  
-
-
-**293. Dense connectomic reconstruction in layer 4 of the somatosensory cortex**  
+**370. Dense connectomic reconstruction in layer 4 of the somatosensory cortex**  
 Alessandro Motta, Manuel Berning, Kevin M. Boergens et al. · 2019 · **  
-`BIOLOGY` · citations: 354 · score: 0.036 · [doi](https://doi.org/10.1126/science.aay3134)  
+`BIOLOGY` · citations: 354 · score: 0.039 · [doi](https://doi.org/10.1126/science.aay3134)  
 
 
-**294. Binary and analog variation of synapses between cortical pyramidal neurons**  
-Sven Dorkenwald, Nicholas L. Turner, Thomas Macrina et al. · 2019 · **  
-`BIOLOGY` · citations: 64 · score: 0.021 · [doi](https://doi.org/10.1101/2019.12.29.890319)  
+**371. A pneumonia outbreak associated with a new coronavirus of probable bat origin**  
+Peng Zhou, Xing‐Lou Yang, Xian-Guang Wang et al. · 2020 · **  
+`METHODS` · citations: 23,190 · score: 0.086 · [doi](https://doi.org/10.1038/s41586-020-2012-7)  
 
 
-**295. Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation**  
+**372. Cancer statistics, 2020**  
+Rebecca L. Siegel, Kimberly D. Miller, Ahmedin Jemal · 2020 · **  
+`METHODS` · citations: 21,282 · score: 0.058 · [doi](https://doi.org/10.3322/caac.21590)  
+
+
+**373. Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation**  
 Daniel Wrapp, Nianshuang Wang, Kizzmekia S. Corbett et al. · 2020 · **  
 `METHODS` · citations: 9,712 · score: 0.047 · [doi](https://doi.org/10.1126/science.abb2507)  
 
 
-**296. Structural basis for the recognition of SARS-CoV-2 by full-length human ACE2**  
-Renhong Yan, Yuanyuan Zhang, Yaning Li et al. · 2020 · **  
-`METHODS` · citations: 5,569 · score: 0.018 · [doi](https://doi.org/10.1126/science.abb2762)  
+**374. U1 snRNP regulates cancer cell migration and invasion in vitro**  
+Jung‐Min Oh, Christopher C. Venters, Chao Di et al. · 2020 · **  
+`METHODS` · citations: 7,224 · score: 0.033 · [doi](https://doi.org/10.1038/s41467-019-13993-7)  
 
 
-**297. A Connectome of the Adult <i>Drosophila</i> Central Brain**  
+**375. A Connectome of the Adult <i>Drosophila</i> Central Brain**  
 C. Shan Xu, Michał Januszewski, Zhiyuan Lu et al. · 2020 · **  
-`METHODS` · citations: 147 · score: 0.338 · [doi](https://doi.org/10.1101/2020.01.21.911859)  
+`METHODS` · citations: 147 · score: 0.337 · [doi](https://doi.org/10.1101/2020.01.21.911859)  
 
 
-**298. A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy**  
+**376. A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy**  
 Wenjing Yin, Derrick Brittain, Jay Borseth et al. · 2020 · **  
-`METHODS` · citations: 148 · score: 0.320 · [doi](https://doi.org/10.1038/s41467-020-18659-3)  
+`METHODS` · citations: 148 · score: 0.315 · [doi](https://doi.org/10.1038/s41467-020-18659-3)  
 
 
-**299. The connectome of the adult Drosophila mushroom body provides insights into function**  
-Feng Li, Jack Lindsey, Elizabeth C. Marin et al. · 2020 · **  
-`METHODS` · citations: 418 · score: 0.270 · [doi](https://doi.org/10.7554/elife.62576)  
-
-
-**300. <i>neu</i> Print: Analysis Tools for EM Connectomics**  
+**377. <i>neu</i> Print: Analysis Tools for EM Connectomics**  
 Jody Clements, Tom Dolafi, Lowell Umayam et al. · 2020 · **  
-`METHODS` · citations: 78 · score: 0.267 · [doi](https://doi.org/10.1101/2020.01.16.909465)  
+`METHODS` · citations: 78 · score: 0.268 · [doi](https://doi.org/10.1101/2020.01.16.909465)  
 
 
-**301. The natverse, a versatile toolbox for combining and analysing neuroanatomical data**  
+**378. The natverse, a versatile toolbox for combining and analysing neuroanatomical data**  
 Alexander Shakeel Bates, James D. Manton, Sridhar R. Jagannathan et al. · 2020 · **  
-`METHODS` · citations: 249 · score: 0.250 · [doi](https://doi.org/10.7554/elife.53350)  
+`METHODS` · citations: 249 · score: 0.254 · [doi](https://doi.org/10.7554/elife.53350)  
 
 
-**302. Accelerated EM Connectome Reconstruction using 3D Visualization and Segmentation Graphs**  
+**379. Accelerated EM Connectome Reconstruction using 3D Visualization and Segmentation Graphs**  
 Philip M. Hubbard, Stuart Berg, Ting Zhao et al. · 2020 · **  
 `METHODS` · citations: 14 · score: 0.193 · [doi](https://doi.org/10.1101/2020.01.17.909572)  
 
 
-**303. Cell-type specific innervation of cortical pyramidal cells at their apical dendrites**  
+**380. Cell-type specific innervation of cortical pyramidal cells at their apical dendrites**  
 Ali Karimi, Jan Odenthal, Florian Drawitsch et al. · 2020 · **  
 `METHODS` · citations: 107 · score: 0.165 · [doi](https://doi.org/10.7554/elife.46876)  
 
 
-**304. Neural circuit mechanisms for steering control in <i>walking Drosophila</i>**  
+**381. Neural circuit mechanisms for steering control in <i>walking Drosophila</i>**  
 Aleksandr Rayshubskiy, Stephen L Holtz, Alexander Shakeel Bates et al. · 2020 · **  
-`METHODS` · citations: 75 · score: 0.150 · [doi](https://doi.org/10.1101/2020.04.04.024703)  
+`METHODS` · citations: 75 · score: 0.161 · [doi](https://doi.org/10.1101/2020.04.04.024703)  
 
 
-**305. Recurrent architecture for adaptive regulation of learning in the insect brain**  
+**382. An unbiased template of the Drosophila brain and ventral nerve cord**  
+John Bogovic, Hideo Otsuna, Larissa Heinrich et al. · 2020 · **  
+`METHODS` · citations: 154 · score: 0.137 · [doi](https://doi.org/10.1371/journal.pone.0236495)  
+
+
+**383. Recurrent architecture for adaptive regulation of learning in the insect brain**  
 Claire Eschbach, Akira Fushiki, Michael Winding et al. · 2020 · **  
-`METHODS` · citations: 183 · score: 0.132 · [doi](https://doi.org/10.1038/s41593-020-0607-9)  
+`METHODS` · citations: 183 · score: 0.129 · [doi](https://doi.org/10.1038/s41593-020-0607-9)  
 
 
-**306. Cross-species functional alignment reveals evolutionary hierarchy within the connectome**  
+**384. Cross-species functional alignment reveals evolutionary hierarchy within the connectome**  
 Ting Xu, Karl‐Heinz Nenning, Ernst Schwartz et al. · 2020 · **  
-`METHODS` · citations: 265 · score: 0.122 · [doi](https://doi.org/10.1016/j.neuroimage.2020.117346)  
+`METHODS` · citations: 265 · score: 0.121 · [doi](https://doi.org/10.1016/j.neuroimage.2020.117346)  
 
 
-**307. Towards HCP-Style macaque connectomes: 24-Channel 3T multi-array coil, MRI sequences and preprocessing**  
+**385. Towards HCP-Style macaque connectomes: 24-Channel 3T multi-array coil, MRI sequences and preprocessing**  
 Joonas A. Autio, Matthew F. Glasser, Takayuki Ose et al. · 2020 · **  
-`METHODS` · citations: 106 · score: 0.109 · [doi](https://doi.org/10.1016/j.neuroimage.2020.116800)  
+`METHODS` · citations: 106 · score: 0.113 · [doi](https://doi.org/10.1016/j.neuroimage.2020.116800)  
 
 
-**308. Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory and Hygrosensory Neurons in the Adult Drosophila Brain**  
+**386. Structured sampling of olfactory input by the fly mushroom body**  
+Zhihao Zheng, Feng Li, Corey B. Fisher et al. · 2020 · **  
+`METHODS` · citations: 39 · score: 0.106 · [doi](https://doi.org/10.1101/2020.04.17.047167)  
+
+
+**387. Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory and Hygrosensory Neurons in the Adult Drosophila Brain**  
 Elizabeth C. Marin, Laurin Büld, M. Theiß et al. · 2020 · **  
 `METHODS` · citations: 119 · score: 0.100 · [doi](https://doi.org/10.1016/j.cub.2020.06.028)  
 
 
-**309. Connectomes across development reveal principles of brain maturation**  
-Daniel Witvliet, Ben Mulcahy, James K. Mitchell et al. · 2020 · **  
-`METHODS` · citations: 59 · score: 0.097 · [doi](https://doi.org/10.1101/2020.04.30.066209)  
-
-
-**310. BrainSpace: a toolbox for the analysis of macroscale gradients in neuroimaging and connectomics datasets**  
+**388. BrainSpace: a toolbox for the analysis of macroscale gradients in neuroimaging and connectomics datasets**  
 Reinder Vos de Wael, Oualid Benkarim, Casey Paquola et al. · 2020 · **  
-`METHODS` · citations: 651 · score: 0.091 · [doi](https://doi.org/10.1038/s42003-020-0794-7)  
+`METHODS` · citations: 651 · score: 0.097 · [doi](https://doi.org/10.1038/s42003-020-0794-7)  
 
 
-**311. FlyWire: Online community for whole-brain connectomics**  
+**389. The Mind of a Mouse**  
+Larry Abbott, Davi D. Bock, Edward M. Callaway et al. · 2020 · **  
+`METHODS` · citations: 187 · score: 0.088 · [doi](https://doi.org/10.1016/j.cell.2020.08.010)  
+
+
+**390. Auditory activity is diverse and widespread throughout the central brain of Drosophila**  
+Diego A. Pacheco, Stephan Y. Thiberge, Eftychios A. Pnevmatikakis et al. · 2020 · **  
+`METHODS` · citations: 72 · score: 0.088 · [doi](https://doi.org/10.1038/s41593-020-00743-y)  
+
+
+**391. FlyWire: Online community for whole-brain connectomics**  
 Sven Dorkenwald, Claire McKellar, Thomas Macrina et al. · 2020 · **  
 `METHODS` · citations: 70 · score: 0.087 · [doi](https://doi.org/10.1101/2020.08.30.274225)  
 
 
-**312. Presynaptic developmental plasticity allows robust sparse wiring of the Drosophila mushroom body**  
+**392. Presynaptic developmental plasticity allows robust sparse wiring of the Drosophila mushroom body**  
 Najia A Elkahlah, Jackson A. Rogow, Maria Ahmed et al. · 2020 · **  
 `METHODS` · citations: 37 · score: 0.081 · [doi](https://doi.org/10.7554/elife.52278)  
 
 
-**313. Gbx2 Identifies Two Amacrine Cell Subtypes with Distinct Molecular, Morphological, and Physiological Properties**  
+**393. Dense neuronal reconstruction through X-ray holographic nano-tomography**  
+Aaron T. Kuan, Jasper S. Phelps, Logan A. Thomas et al. · 2020 · **  
+`METHODS` · citations: 157 · score: 0.077 · [doi](https://doi.org/10.1038/s41593-020-0704-9)  
+
+
+**394. Transforming FIB-SEM Systems for Large-Volume Connectomics and Cell Biology**  
+C. Shan Xu, Song Pang, Kenneth J. Hayworth et al. · 2020 · **  
+`METHODS` · citations: 29 · score: 0.065 · [doi](https://doi.org/10.1007/978-1-0716-0691-9_12)  
+
+
+**395. Gbx2 Identifies Two Amacrine Cell Subtypes with Distinct Molecular, Morphological, and Physiological Properties**  
 Patrick C. Kerstein, Joseph Leffler, Benjamin Sivyer et al. · 2020 · **  
 `METHODS` · citations: 23 · score: 0.060 · [doi](https://doi.org/10.1016/j.celrep.2020.108382)  
 
 
-**314. A Connectome and Analysis of the Adult <i>Drosophila</i> Central Brain**  
+**396. A Connectome and Analysis of the Adult <i>Drosophila</i> Central Brain**  
 Louis K. Scheffer, C. Shan Xu, Michał Januszewski et al. · 2020 · **  
 `METHODS` · citations: 35 · score: 0.060 · [doi](https://doi.org/10.1101/2020.04.07.030213)  
 
 
-**315. The connectome of the adult <i>Drosophila</i> mushroom body: implications for function**  
+**397. The connectome of the adult <i>Drosophila</i> mushroom body: implications for function**  
 Feng Li, Jack Lindsey, Elizabeth C. Marin et al. · 2020 · **  
 `METHODS` · citations: 19 · score: 0.060 · [doi](https://doi.org/10.1101/2020.08.29.273276)  
 
 
-**316. Evaluation of Direct Grafting Strategies <i>via</i> Trivalent Anchoring for Enabling Lipid Membrane and Cytoskeleton Staining in Expansion Microscopy**  
+**398. Evaluation of Direct Grafting Strategies <i>via</i> Trivalent Anchoring for Enabling Lipid Membrane and Cytoskeleton Staining in Expansion Microscopy**  
 Gang Wen, Marisa Vanheusden, Aline Acke et al. · 2020 · **  
 `METHODS` · citations: 96 · score: 0.059 · [doi](https://doi.org/10.1021/acsnano.9b09259)  
 
 
-**317. Transforming FIB-SEM Systems for Large-Volume Connectomics and Cell Biology**  
-C. Shan Xu, Song Pang, Kenneth J. Hayworth et al. · 2020 · **  
-`METHODS` · citations: 29 · score: 0.058 · [doi](https://doi.org/10.1007/978-1-0716-0691-9_12)  
+**399. <scp>UCSF ChimeraX</scp>: Structure visualization for researchers, educators, and developers**  
+Eric F. Pettersen, Thomas D. Goddard, Conrad C. Huang et al. · 2020 · **  
+`METHODS` · citations: 9,594 · score: 0.057 · [doi](https://doi.org/10.1002/pro.3943)  
 
 
-**318. Light microscopy of proteins in their ultrastructural context**  
-Ons M’Saad, Joerg Bewersdorf · 2020 · **  
-`METHODS` · citations: 204 · score: 0.052 · [doi](https://doi.org/10.1038/s41467-020-17523-8)  
-
-
-**319. Toward a “treadmill test” for cognition: Improved prediction of general cognitive ability from the task activated brain**  
+**400. Toward a “treadmill test” for cognition: Improved prediction of general cognitive ability from the task activated brain**  
 Chandra Sripada, Mike Angstadt, Saige Rutherford et al. · 2020 · **  
 `METHODS` · citations: 126 · score: 0.046 · [doi](https://doi.org/10.1002/hbm.25007)  
 
 
-**320. The Neuroanatomical Ultrastructure and Function of a Biological Ring Attractor**  
+**401. Light microscopy of proteins in their ultrastructural context**  
+Ons M’Saad, Joerg Bewersdorf · 2020 · **  
+`METHODS` · citations: 204 · score: 0.042 · [doi](https://doi.org/10.1038/s41467-020-17523-8)  
+
+
+**402. The Neuroanatomical Ultrastructure and Function of a Biological Ring Attractor**  
 Daniel B. Turner‐Evans, Kristopher T. Jensen, Saba Ali et al. · 2020 · **  
 `METHODS` · citations: 163 · score: 0.040 · [doi](https://doi.org/10.1016/j.neuron.2020.08.006)  
 
 
-**321. The neural basis for a persistent internal state in Drosophila females**  
+**403. The Mutex Watershed and its Objective: Efficient, Parameter-Free Graph Partitioning**  
+Steffen Wolf, Alberto Bailoni, Constantin Pape et al. · 2020 · **  
+`METHODS` · citations: 51 · score: 0.040 · [doi](https://doi.org/10.1109/tpami.2020.2980827)  
+
+
+**404. The neural basis for a persistent internal state in Drosophila females**  
 David Deutsch, Diego A. Pacheco, Lucas Encarnacion-Rivera et al. · 2020 · **  
-`METHODS` · citations: 121 · score: 0.037 · [doi](https://doi.org/10.7554/elife.59502)  
+`METHODS` · citations: 121 · score: 0.039 · [doi](https://doi.org/10.7554/elife.59502)  
 
 
-**322. Expansion microscopy of C. elegans**  
+**405. Expansion microscopy of C. elegans**  
 Chih-Chieh Yu, Nicholas C. Barry, Asmamaw T. Wassie et al. · 2020 · **  
-`METHODS` · citations: 99 · score: 0.036 · [doi](https://doi.org/10.7554/elife.46249)  
+`METHODS` · citations: 99 · score: 0.037 · [doi](https://doi.org/10.7554/elife.46249)  
 
 
-**323. Molecular resolution imaging by post-labeling expansion single-molecule localization microscopy (Ex-SMLM)**  
+**406. Molecular resolution imaging by post-labeling expansion single-molecule localization microscopy (Ex-SMLM)**  
 Fabian U. Zwettler, Sebastian Reinhard, Davide Gambarotto et al. · 2020 · **  
 `METHODS` · citations: 175 · score: 0.036 · [doi](https://doi.org/10.1038/s41467-020-17086-8)  
 
 
-**324. Input Connectivity Reveals Additional Heterogeneity of Dopaminergic Reinforcement in Drosophila**  
+**407. A molecular gradient along the longitudinal axis of the human hippocampus informs large-scale behavioral systems**  
+Jacob W. Vogel, Renaud La Joie, Michel J. Grothe et al. · 2020 · **  
+`METHODS` · citations: 167 · score: 0.036 · [doi](https://doi.org/10.1038/s41467-020-14518-3)  
+
+
+**408. Neuronal Subcompartment Classification and Merge Error Correction**  
+Hanyu Li, Michał Januszewski, Viren Jain et al. · 2020 · **  
+`METHODS` · citations: 15 · score: 0.035 · [doi](https://doi.org/10.1007/978-3-030-59722-1_9)  
+
+
+**409. Input Connectivity Reveals Additional Heterogeneity of Dopaminergic Reinforcement in Drosophila**  
 Nils Otto, Markus William Pleijzier, Isabel C. Morgan et al. · 2020 · **  
 `METHODS` · citations: 86 · score: 0.034 · [doi](https://doi.org/10.1016/j.cub.2020.05.077)  
 
 
-**325. Valence and State-Dependent Population Coding in Dopaminergic Neurons in the Fly Mushroom Body**  
+**410. Valence and State-Dependent Population Coding in Dopaminergic Neurons in the Fly Mushroom Body**  
 K.P. Siju, Vilim Štih, Sophie Aimon et al. · 2020 · **  
 `METHODS` · citations: 105 · score: 0.033 · [doi](https://doi.org/10.1016/j.cub.2020.04.037)  
 
 
-**326. Spatial readout of visual looming in the central brain of Drosophila**  
+**411. Spatial readout of visual looming in the central brain of Drosophila**  
 Mai M Morimoto, Aljoscha Nern, Arthur Zhao et al. · 2020 · **  
-`METHODS` · citations: 63 · score: 0.031 · [doi](https://doi.org/10.7554/elife.57685)  
+`METHODS` · citations: 63 · score: 0.032 · [doi](https://doi.org/10.7554/elife.57685)  
 
 
-**327. The connectome of the <scp> <i>Caenorhabditis elegans</i> </scp> pharynx**  
+**412. Feature-rich covalent stains for super-resolution and cleared tissue fluorescence microscopy**  
+Chenyi Mao, Min Yen Lee, Jing-Ru Jhan et al. · 2020 · **  
+`METHODS` · citations: 98 · score: 0.030 · [doi](https://doi.org/10.1126/sciadv.aba4542)  
+
+
+**413. The connectome of the <scp> <i>Caenorhabditis elegans</i> </scp> pharynx**  
 Steven J. Cook, Charles M. Crouse, Eviatar Yemini et al. · 2020 · **  
 `METHODS` · citations: 51 · score: 0.029 · [doi](https://doi.org/10.1002/cne.24932)  
 
 
-**328. Comparative Connectomics Reveals How Partner Identity, Location, and Activity Specify Synaptic Connectivity in Drosophila**  
+**414. Comparative Connectomics Reveals How Partner Identity, Location, and Activity Specify Synaptic Connectivity in Drosophila**  
 Javier Valdés-Alemán, Richard D. Fetter, Emily C. Sales et al. · 2020 · **  
 `METHODS` · citations: 66 · score: 0.029 · [doi](https://doi.org/10.1016/j.neuron.2020.10.004)  
 
 
-**329. A connectome of the <i>Drosophila</i> central complex reveals network motifs suitable for flexible navigation and context-dependent action selection**  
+**415. MitoEM Dataset: Large-Scale 3D Mitochondria Instance Segmentation from EM Images**  
+Donglai Wei, Zudi Lin, Daniel Franco-Barranco et al. · 2020 · **  
+`METHODS` · citations: 111 · score: 0.028 · [doi](https://doi.org/10.1007/978-3-030-59722-1_7)  
+
+
+**416. A connectome of the <i>Drosophila</i> central complex reveals network motifs suitable for flexible navigation and context-dependent action selection**  
 Brad K. Hulse, Hannah Haberkern, Romain Franconville et al. · 2020 · **  
 `METHODS` · citations: 52 · score: 0.028 · [doi](https://doi.org/10.1101/2020.12.08.413955)  
 
 
-**330. Comprehensive map of visual projection neurons for processing ultraviolet information in the <scp><i>Drosophila</i></scp> brain**  
-Chu‐Yi Tai, An‐Lun Chin, Ann‐Shyn Chiang · 2020 · **  
-`METHODS` · citations: 10 · score: 0.028 · [doi](https://doi.org/10.1002/cne.25068)  
-
-
-**331. Identifying neural substrates of competitive interactions and sequence transitions during mechanosensory responses in Drosophila**  
-Jean‐Baptiste Masson, François Laurent, Albert Cardona et al. · 2020 · **  
-`METHODS` · citations: 61 · score: 0.026 · [doi](https://doi.org/10.1371/journal.pgen.1008589)  
-
-
-**332. EASE: EM-Assisted Source Extraction from calcium imaging data**  
-Pengcheng Zhou, Jacob Reimer, Ding Zhou et al. · 2020 · **  
-`METHODS` · citations: 19 · score: 0.025 · [doi](https://doi.org/10.1101/2020.03.25.007468)  
-
-
-**333. Expansion Microscopy for Beginners: Visualizing Microtubules in Expanded Cultured HeLa Cells**  
-Chi Zhang, Jeong Seuk Kang, Shoh Asano et al. · 2020 · **  
-`METHODS` · citations: 37 · score: 0.024 · [doi](https://doi.org/10.1002/cpns.96)  
-
-
-**334. A unified connectomic target for deep brain stimulation in obsessive-compulsive disorder**  
-Ningfei Li, Juan Carlos Baldermann, Astrid Kibleur et al. · 2020 · **  
-`METHODS` · citations: 322 · score: 0.023 · [doi](https://doi.org/10.1038/s41467-020-16734-3)  
-
-
-**335. Circuits for integrating learnt and innate valences in the fly brain**  
-Claire Eschbach, Akira Fushiki, Michael Winding et al. · 2020 · **  
-`METHODS` · citations: 18 · score: 0.023 · [doi](https://doi.org/10.1101/2020.04.23.058339)  
-
-
-**336. Click-ExM enables expansion microscopy for all biomolecules**  
-De‐en Sun, Xinqi Fan, Yujie Shi et al. · 2020 · **  
-`METHODS` · citations: 164 · score: 0.018 · [doi](https://doi.org/10.1038/s41592-020-01005-2)  
-
-
-**337. 3D FIB-SEM reconstruction of microtubule–organelle interaction in whole primary mouse β cells**  
-Andreas Müller, Deborah Schmidt, C. Shan Xu et al. · 2020 · **  
-`METHODS` · citations: 112 · score: 0.018 · [doi](https://doi.org/10.1083/jcb.202010039)  
-
-
-**338. Automatic Reconstruction of Mitochondria and Endoplasmic Reticulum in Electron Microscopy Volumes by Deep Learning**  
-Jing Liu, Linlin Li, Yang Yang et al. · 2020 · **  
-`METHODS` · citations: 52 · score: 0.017 · [doi](https://doi.org/10.3389/fnins.2020.00599)  
-
-
-**339. Localized inhibition in the Drosophila mushroom body**  
-Hoger Amin, Anthi A. Apostolopoulou, Raquel Suárez-Grimalt et al. · 2020 · **  
-`METHODS` · citations: 67 · score: 0.017 · [doi](https://doi.org/10.7554/elife.56954)  
-
-
-**340. Dynamic coupling of whole-brain neuronal and neurotransmitter systems**  
-Morten L. Kringelbach, Josephine Cruzat, Joana Cabral et al. · 2020 · **  
-`METHODS` · citations: 312 · score: 0.015 · [doi](https://doi.org/10.1073/pnas.1921475117)  
-
-
-**341. Neural circuits in the mouse retina support color vision in the upper visual field**  
-Klaudia P. Szatko, Maria M. Korympidou, Yanli Ran et al. · 2020 · **  
-`METHODS` · citations: 136 · score: 0.015 · [doi](https://doi.org/10.1038/s41467-020-17113-8)  
-
-
-**342. Information flow, cell types and stereotypy in a full olfactory connectome**  
-Philipp Schlegel, Alexander Shakeel Bates, Tomke Stürner et al. · 2020 · **  
-`METHODS` · citations: 19 · score: 0.015 · [doi](https://doi.org/10.1101/2020.12.15.401257)  
-
-
-**343. Functional reorganization of brain networks across the human menstrual cycle**  
-Laura Pritschet, Tyler Santander, Caitlin M. Taylor et al. · 2020 · **  
-`METHODS` · citations: 207 · score: 0.015 · [doi](https://doi.org/10.1016/j.neuroimage.2020.117091)  
-
-
-**344. Flexible motor sequence generation during stereotyped escape responses**  
-Yuan Wang, Xiaoqian Zhang, Xin Qi et al. · 2020 · **  
-`METHODS` · citations: 57 · score: 0.015 · [doi](https://doi.org/10.7554/elife.56942)  
-
-
-**345. Topographic gradients of intrinsic dynamics across neocortex**  
-Golia Shafiei, Ross D. Markello, Reinder Vos de Wael et al. · 2020 · **  
-`METHODS` · citations: 175 · score: 0.014 · [doi](https://doi.org/10.7554/elife.62116)  
-
-
-**346. Predicting modular functions and neural coding of behavior from a synaptic wiring diagram**  
-Ashwin Vishwanathan, Alexandro D. Ramirez, Jingpeng Wu et al. · 2020 · **  
-`METHODS` · citations: 15 · score: 0.013 · [doi](https://doi.org/10.1101/2020.10.28.359620)  
-
-
-**347. Fluorescence Photobleaching as an Intrinsic Tool to Quantify the 3D Expansion Factor of Biological Samples in Expansion Microscopy**  
-Marisa Vanheusden, Raffaele Vitale, Rafael Camacho et al. · 2020 · **  
-`METHODS` · citations: 27 · score: 0.013 · [doi](https://doi.org/10.1021/acsomega.0c00118)  
-
-
-**348. Transforming representations of movement from body- to world-centric space**  
-Jenny Lu, Elena A. Westeinde, Lydia Hamburg et al. · 2020 · **  
-`METHODS` · citations: 22 · score: 0.013 · [doi](https://doi.org/10.1101/2020.12.22.424001)  
-
-
-**349. Molecular resolution imaging by post-labeling expansion single-molecule localization microscopy (Ex-SMLM)**  
-Fabian U. Zwettler, Sebastian Reinhard, Davide Gambarotto et al. · 2020 · **  
-`METHODS` · citations: 24 · score: 0.013 · [doi](https://doi.org/10.1101/2020.03.12.988923)  
-
-
-**350. Combining sample expansion and light sheet microscopy for the volumetric imaging of virus-infected cells with super-resolution**  
-Luca Mascheroni, Katharina M. Scherer, James D. Manton et al. · 2020 · **  
-`METHODS` · citations: 25 · score: 0.012 · [doi](https://doi.org/10.1364/boe.399404)  
-
-
-**351. Citizen science, cells and CNNs – deep learning for automatic segmentation of the nuclear envelope in electron microscopy data, trained with volunteer segmentations**  
-Helen Spiers, Harry Songhurst, Luke Nightingale et al. · 2020 · **  
-`METHODS` · citations: 14 · score: 0.012 · [doi](https://doi.org/10.1101/2020.07.28.223024)  
-
-
-**352. Freeze-frame imaging of synaptic activity using SynTagMA**  
-Alberto Pérez‐Alvarez, Brenna C. Fearey, Ryan J. O’Toole et al. · 2020 · **  
-`BIOLOGY` · citations: 54 · score: 0.013 · [doi](https://doi.org/10.1038/s41467-020-16315-4)  
-
-
-**353. Estimation of the number of synapses in the hippocampus and brain-wide by volume electron microscopy and genetic labeling**  
-Andrea Santuy, Laura Tomás‐Roca, José-Rodrigo Rodrı́guez et al. · 2020 · **  
-`BIOLOGY` · citations: 70 · score: 0.021 · [doi](https://doi.org/10.1038/s41598-020-70859-5)  
-
-
-**354. A genetic, genomic, and computational resource for exploring neural circuit function**  
+**417. A genetic, genomic, and computational resource for exploring neural circuit function**  
 Fred P. Davis, Aljoscha Nern, Serge Picard et al. · 2020 · **  
 `BIOLOGY` · citations: 287 · score: 0.503 · [doi](https://doi.org/10.7554/elife.50901)  
 
 
-**355. Chandelier cell anatomy and function reveal a variably distributed but common signal**  
-Casey M Schneider-Mizell, Ágnes L. Bodor, Forrest Collman et al. · 2020 · **  
-`BIOLOGY` · citations: 40 · score: 0.204 · [doi](https://doi.org/10.1101/2020.03.31.018952)  
-
-
-**356. Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly Brain**  
+**418. Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly Brain**  
 Alexander Shakeel Bates, Philipp Schlegel, Ruairí J.V. Roberts et al. · 2020 · **  
-`BIOLOGY` · citations: 201 · score: 0.199 · [doi](https://doi.org/10.1016/j.cub.2020.06.042)  
+`BIOLOGY` · citations: 201 · score: 0.203 · [doi](https://doi.org/10.1016/j.cub.2020.06.042)  
 
 
-**357. An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus**  
+**419. Chandelier cell anatomy and function reveal a variably distributed but common signal**  
+Casey M Schneider-Mizell, Ágnes L. Bodor, Forrest Collman et al. · 2020 · **  
+`BIOLOGY` · citations: 40 · score: 0.202 · [doi](https://doi.org/10.1101/2020.03.31.018952)  
+
+
+**420. An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus**  
 Josh Morgan, Jeff W. Lichtman · 2020 · **  
-`BIOLOGY` · citations: 70 · score: 0.151 · [doi](https://doi.org/10.1016/j.neuron.2020.02.001)  
+`BIOLOGY` · citations: 70 · score: 0.155 · [doi](https://doi.org/10.1016/j.neuron.2020.02.001)  
 
 
-**358. An anatomical substrate of credit assignment in reinforcement learning**  
-Joergen Kornfeld, Y Wang, Marcin Januszewski et al. · 2020 · **  
-`BIOLOGY` · citations: 36 · score: 0.102 · [doi](https://doi.org/10.1101/2020.02.18.954354)  
-
-
-**359. Neural circuitry linking mating and egg laying in Drosophila females**  
+**421. Neural circuitry linking mating and egg laying in Drosophila females**  
 Fei Wang, Kaiyu Wang, Nora Forknall et al. · 2020 · **  
 `BIOLOGY` · citations: 222 · score: 0.102 · [doi](https://doi.org/10.1038/s41586-020-2055-9)  
 
 
-**360. Neurotransmitter Classification from Electron Microscopy Images at Synaptic Sites in Drosophila Melanogaster**  
+**422. An anatomical substrate of credit assignment in reinforcement learning**  
+Joergen Kornfeld, Y Wang, Marcin Januszewski et al. · 2020 · **  
+`BIOLOGY` · citations: 36 · score: 0.102 · [doi](https://doi.org/10.1101/2020.02.18.954354)  
+
+
+**423. Neurotransmitter Classification from Electron Microscopy Images at Synaptic Sites in Drosophila Melanogaster**  
 Nils Eckstein, Alexander Shakeel Bates, Andrew S Champion et al. · 2020 · **  
-`BIOLOGY` · citations: 131 · score: 0.088 · [doi](https://doi.org/10.1101/2020.06.12.148775)  
+`BIOLOGY` · citations: 131 · score: 0.090 · [doi](https://doi.org/10.1101/2020.06.12.148775)  
 
 
-**361. Complete connectomic reconstruction of olfactory projection neurons in the fly brain**  
+**424. Complete connectomic reconstruction of olfactory projection neurons in the fly brain**  
 Alexander Shakeel Bates, Philipp Schlegel, Ruairí J.V. Roberts et al. · 2020 · **  
 `BIOLOGY` · citations: 33 · score: 0.083 · [doi](https://doi.org/10.1101/2020.01.19.911453)  
 
 
-**362. A brainwide atlas of synapses across the mouse life span**  
+**425. A brainwide atlas of synapses across the mouse life span**  
 Mélissa Cizeron, Zhen Qiu, Babis Koniaris et al. · 2020 · **  
 `BIOLOGY` · citations: 214 · score: 0.081 · [doi](https://doi.org/10.1126/science.aba3163)  
 
 
-**363. Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types**  
+**426. Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types**  
 Wenjun Yan, Mallory A. Laboulaye, Nicholas M. Tran et al. · 2020 · **  
 `BIOLOGY` · citations: 346 · score: 0.073 · [doi](https://doi.org/10.1523/jneurosci.0471-20.2020)  
 
 
-**364. Postnatal connectomic development of inhibition in mouse barrel cortex**  
+**427. Postnatal connectomic development of inhibition in mouse barrel cortex**  
 Anjali Gour, Kevin M. Boergens, Natalie Heike et al. · 2020 · **  
-`BIOLOGY` · citations: 101 · score: 0.056 · [doi](https://doi.org/10.1126/science.abb4534)  
+`BIOLOGY` · citations: 101 · score: 0.057 · [doi](https://doi.org/10.1126/science.abb4534)  
 
 
-**365. Whole-animal connectome and cell-type complement of the three-segmented <i>Platynereis dumerilii</i> larva**  
+**428. Whole-animal connectome and cell-type complement of the three-segmented <i>Platynereis dumerilii</i> larva**  
 Csaba Verasztó, Sanja Jasek, Martin Gühmann et al. · 2020 · **  
-`BIOLOGY` · citations: 59 · score: 0.049 · [doi](https://doi.org/10.1101/2020.08.21.260984)  
+`BIOLOGY` · citations: 59 · score: 0.048 · [doi](https://doi.org/10.1101/2020.08.21.260984)  
 
 
-**366. Multiscale and multimodal reconstruction of cortical structure and function**  
+**429. Multiscale and multimodal reconstruction of cortical structure and function**  
 Nicholas L. Turner, Thomas Macrina, J. Alexander Bae et al. · 2020 · **  
 `BIOLOGY` · citations: 42 · score: 0.048 · [doi](https://doi.org/10.1101/2020.10.14.338681)  
 
 
-**367. Reconstruction of motor control circuits in adult <i>Drosophila</i> using automated transmission electron microscopy**  
+**430. Conservation and divergence of related neuronal lineages in the Drosophila central brain**  
+Ying-Jou Lee, Ching-Po Yang, Rosa Linda Miyares et al. · 2020 · **  
+`BIOLOGY` · citations: 59 · score: 0.047 · [doi](https://doi.org/10.7554/elife.53518)  
+
+
+**431. Reconstruction of motor control circuits in adult <i>Drosophila</i> using automated transmission electron microscopy**  
 Jasper T. Maniates-Selvin, David G. C. Hildebrand, Brett J. Graham et al. · 2020 · **  
-`BIOLOGY` · citations: 35 · score: 0.041 · [doi](https://doi.org/10.1101/2020.01.10.902478)  
+`BIOLOGY` · citations: 35 · score: 0.042 · [doi](https://doi.org/10.1101/2020.01.10.902478)  
 
 
-**368. Cell types and neuronal circuitry underlying female aggression in Drosophila**  
-Catherine E. Schretter, Yoshinori Aso, Alice A. Robie et al. · 2020 · **  
-`BIOLOGY` · citations: 139 · score: 0.036 · [doi](https://doi.org/10.7554/elife.58942)  
+**432. Neural circuit mechanisms of sexual receptivity in Drosophila females**  
+Kaiyu Wang, Fei Wang, Nora Forknall et al. · 2020 · **  
+`BIOLOGY` · citations: 170 · score: 0.037 · [doi](https://doi.org/10.1038/s41586-020-2972-7)  
 
 
-**369. Wiring patterns from auditory sensory neurons to the escape and song‐relay pathways in fruit flies**  
+**433. Wiring patterns from auditory sensory neurons to the escape and song‐relay pathways in fruit flies**  
 Hyunsoo Kim, Mihoko Horigome, Yuki Ishikawa et al. · 2020 · **  
 `BIOLOGY` · citations: 30 · score: 0.036 · [doi](https://doi.org/10.1002/cne.24877)  
 
 
-**370. The Wiring Logic of an Identified Serotonergic Neuron That Spans Sensory Networks**  
+**434. Cell types and neuronal circuitry underlying female aggression in Drosophila**  
+Catherine E. Schretter, Yoshinori Aso, Alice A. Robie et al. · 2020 · **  
+`BIOLOGY` · citations: 139 · score: 0.036 · [doi](https://doi.org/10.7554/elife.58942)  
+
+
+**435. The Wiring Logic of an Identified Serotonergic Neuron That Spans Sensory Networks**  
 Kaylynn Coates, Steven A. Calle-Schuler, Levi M. Helmick et al. · 2020 · **  
-`BIOLOGY` · citations: 41 · score: 0.032 · [doi](https://doi.org/10.1523/jneurosci.0552-20.2020)  
+`BIOLOGY` · citations: 41 · score: 0.033 · [doi](https://doi.org/10.1523/jneurosci.0552-20.2020)  
 
 
-**371. Whole-body integration of gene expression and single-cell morphology**  
+**436. Whole-body integration of gene expression and single-cell morphology**  
 Hernando Martínez Vergara, Constantin Pape, Kimberly Meechan et al. · 2020 · **  
 `BIOLOGY` · citations: 28 · score: 0.031 · [doi](https://doi.org/10.1101/2020.02.26.961037)  
 
 
-**372. Circuits for integrating learned and innate valences in the insect brain**  
+**437. Circuits for integrating learned and innate valences in the insect brain**  
 Claire Eschbach, Akira Fushiki, Michael Winding et al. · 2020 · **  
 `BIOLOGY` · citations: 50 · score: 0.030 · [doi](https://doi.org/10.17863/cam.78882)  
-
-
-**373. The wiring logic of an identified serotonergic neuron that spans sensory networks**  
-Kaylynn Coates, Steven A. Calle-Schuler, Levi M. Helmick et al. · 2020 · **  
-`BIOLOGY` · citations: 3 · score: 0.023 · [doi](https://doi.org/10.1101/2020.02.24.963660)  
-
-
-**374. The Neural Basis for a Persistent Internal State in <i>Drosophila</i> Females**  
-David Deutsch, Diego A. Pacheco, Lucas Encarnacion-Rivera et al. · 2020 · **  
-`BIOLOGY` · citations: 6 · score: 0.017 · [doi](https://doi.org/10.1101/2020.02.13.947952)  
-
-
-**375. Feedback inhibition and its control in an insect olfactory circuit**  
-Subhasis Ray, Zane Aldworth, Mark Stopfer · 2020 · **  
-`BIOLOGY` · citations: 31 · score: 0.016 · [doi](https://doi.org/10.7554/elife.53281)  
-
-
-**376. SEQUIN Multiscale Imaging of Mammalian Central Synapses Reveals Loss of Synaptic Connectivity Resulting from Diffuse Traumatic Brain Injury**  
-Andrew D. Sauerbeck, Mihika Gangolli, Sydney J. Reitz et al. · 2020 · **  
-`BIOLOGY` · citations: 47 · score: 0.014 · [doi](https://doi.org/10.1016/j.neuron.2020.04.012)  
 
 
 
@@ -1945,44 +2259,24 @@ Andrew D. Sauerbeck, Mihika Gangolli, Sydney J. Reitz et al. · 2020 · **
 
 ### Other  __
 
-**377. A three-dimensional single-cell-resolution whole-brain atlas using CUBIC-X expansion microscopy and tissue clearing**  
-Tatsuya C. Murakami, Tomoyuki Mano, Shu Saikawa et al. · 2018 · **  
-`DATASET` · citations: 305 · score: 0.016 · [doi](https://doi.org/10.1038/s41593-018-0109-1)  
-
-
-**378. Automatic Detection of Synaptic Partners in a Whole-Brain <i>Drosophila</i> EM Dataset**  
-Julia Buhmann, Arlo Sheridan, Stephan Gerhard et al. · 2019 · **  
-`DATASET` · citations: 25 · score: 0.012 · [doi](https://doi.org/10.1101/2019.12.12.874172)  
-
-
-**379. GTree: an Open-source Tool for Dense Reconstruction of Brain-wide Neuronal Population**  
-Hang Zhou, Shiwei Li, Anan Li et al. · 2020 · **  
-`DATASET` · citations: 49 · score: 0.020 · [doi](https://doi.org/10.1007/s12021-020-09484-6)  
-
-
-**380. Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in <i>Drosophila</i>**  
+**438. Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in <i>Drosophila</i>**  
 Philipp Schlegel, Yijie Yin, Alexander Shakeel Bates et al. · 2023 · **  
-`DATASET` · citations: 107 · score: 0.081 · [doi](https://doi.org/10.1101/2023.06.27.546055)  
+`DATASET` · citations: 107 · score: 0.091 · [doi](https://doi.org/10.1101/2023.06.27.546055)  
 
 
-**381. Network Statistics of the Whole-Brain Connectome of <i>Drosophila</i>**  
+**439. Network Statistics of the Whole-Brain Connectome of <i>Drosophila</i>**  
 Albert Lin, Runzhe Yang, Sven Dorkenwald et al. · 2023 · **  
-`DATASET` · citations: 29 · score: 0.061 · [doi](https://doi.org/10.1101/2023.07.29.551086)  
+`DATASET` · citations: 29 · score: 0.072 · [doi](https://doi.org/10.1101/2023.07.29.551086)  
 
 
-**382. Whole-brain annotation and multi-connectome cell typing of Drosophila**  
+**440. Whole-brain annotation and multi-connectome cell typing of Drosophila**  
 Philipp Schlegel, Yijie Yin, Alexander Shakeel Bates et al. · 2024 · **  
-`DATASET` · citations: 324 · score: 0.103 · [doi](https://doi.org/10.1038/s41586-024-07686-5)  
+`DATASET` · citations: 324 · score: 0.118 · [doi](https://doi.org/10.1038/s41586-024-07686-5)  
 
 
-**383. Network statistics of the whole-brain connectome of Drosophila**  
+**441. Network statistics of the whole-brain connectome of Drosophila**  
 Albert Lin, Runzhe Yang, Sven Dorkenwald et al. · 2024 · **  
-`DATASET` · citations: 98 · score: 0.034 · [doi](https://doi.org/10.1038/s41586-024-07968-y)  
-
-
-**384. New Synapse Detection in the Whole-Brain Connectome of <i>Drosophila</i>**  
-Szi-chieh Yu, J. Alexander Bae, Arie Matsliah et al. · 2025 · **  
-`DATASET` · citations: 10 · score: 0.013 · [doi](https://doi.org/10.1101/2025.07.11.664377)  
+`DATASET` · citations: 98 · score: 0.038 · [doi](https://doi.org/10.1038/s41586-024-07968-y)  
 
 
 
@@ -1991,590 +2285,302 @@ Szi-chieh Yu, J. Alexander Bae, Arie Matsliah et al. · 2025 · **
 ## Phase 4 — Frontiers  (2021–present)
 
 
-### Biology / Computer science  _Jeff W. Lichtman, Hanspeter Pfister_
+### Biology / Neuroscience  _Oliver Hobert, Mei Zhen_
 
-**385. A multifaceted analysis reveals two distinct phases of chloroplast biogenesis during de-etiolation in Arabidopsis**  
-Rosa Pipitone, Simona Eicke, Barbara Pfister et al. · 2021 · **  
-`METHODS` · citations: 100 · score: 0.020 · [doi](https://doi.org/10.7554/elife.62709)  
-
-
-**386. Automated synapse-level reconstruction of neural circuits in the larval zebrafish brain**  
-Fabian Svara, Dominique Förster, Fumi Kubo et al. · 2022 · **  
-`BIOLOGY` · citations: 110 · score: 0.030 · [doi](https://doi.org/10.1038/s41592-022-01621-0)  
-
-
-
-### Biology / Neuroscience  _Albert Cardona, Gregory S.X.E. Jefferis_
-
-**387. The connectome predicts resting-state functional connectivity across the Drosophila brain**  
-Maxwell H. Turner, Kevin Mann, Thomas R. Clandinin · 2021 · **  
-`METHODS` · citations: 36 · score: 0.021 · [doi](https://doi.org/10.1016/j.cub.2021.03.004)  
-
-
-**388. Drosophila gustatory projections are segregated by taste modality and connectivity**  
-Stefanie Engert, Gabriella R Sterne, Davi D. Bock et al. · 2022 · **  
-`METHODS` · citations: 39 · score: 0.013 · [doi](https://doi.org/10.7554/elife.78110)  
-
-
-**389. Neuronal wiring diagram of an adult brain**  
-Sven Dorkenwald, Arie Matsliah, Amy Sterling et al. · 2024 · **  
-`METHODS` · citations: 447 · score: 0.316 · [doi](https://doi.org/10.1038/s41586-024-07558-y)  
+**442. Structural and developmental principles of neuropil assembly in C. elegans**  
+Mark W. Moyle, Kristopher M Barnes, Manik Kuchroo et al. · 2021 · **  
+`METHODS` · citations: 102 · score: 0.058 · [doi](https://doi.org/10.1038/s41586-020-03169-5)  
 
 
 
 ### Other  __
 
-**390. Accurate prediction of protein structures and interactions using a three-track neural network**  
-Minkyung Baek, Frank DiMaio, Ivan Anishchenko et al. · 2021 · **  
-`METHODS` · citations: 5,475 · score: 0.022 · [doi](https://doi.org/10.1126/science.abj8754)  
+**443. Inference and analysis of cell-cell communication using CellChat**  
+Suoqin Jin, Christian F. Guerrero‐Juarez, Lihua Zhang et al. · 2021 · **  
+`METHODS` · citations: 7,777 · score: 0.037 · [doi](https://doi.org/10.1038/s41467-021-21246-9)  
 
 
-**391. Connectomes across development reveal principles of brain maturation**  
+**444. Connectomes across development reveal principles of brain maturation**  
 Daniel Witvliet, Ben Mulcahy, James K. Mitchell et al. · 2021 · **  
-`METHODS` · citations: 429 · score: 0.426 · [doi](https://doi.org/10.1038/s41586-021-03778-8)  
+`METHODS` · citations: 429 · score: 0.424 · [doi](https://doi.org/10.1038/s41586-021-03778-8)  
 
 
-**392. Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy**  
+**445. Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy**  
 Jasper S. Phelps, David G. C. Hildebrand, Brett J. Graham et al. · 2021 · **  
-`METHODS` · citations: 279 · score: 0.123 · [doi](https://doi.org/10.1016/j.cell.2020.12.013)  
+`METHODS` · citations: 279 · score: 0.130 · [doi](https://doi.org/10.1016/j.cell.2020.12.013)  
 
 
-**393. FlyWire: online community for whole-brain connectomics**  
+**446. FlyWire: online community for whole-brain connectomics**  
 Sven Dorkenwald, Claire McKellar, Thomas Macrina et al. · 2021 · **  
-`METHODS` · citations: 284 · score: 0.119 · [doi](https://doi.org/10.1038/s41592-021-01330-0)  
+`METHODS` · citations: 284 · score: 0.125 · [doi](https://doi.org/10.1038/s41592-021-01330-0)  
 
 
-**394. Models of heterogeneous dopamine signaling in an insect learning and memory center**  
+**447. Models of heterogeneous dopamine signaling in an insect learning and memory center**  
 Linnie Jiang, Ashok Litwin-Kumar · 2021 · **  
-`METHODS` · citations: 37 · score: 0.114 · [doi](https://doi.org/10.1371/journal.pcbi.1009205)  
+`METHODS` · citations: 37 · score: 0.111 · [doi](https://doi.org/10.1371/journal.pcbi.1009205)  
 
 
-**395. Automatic detection of synaptic partners in a whole-brain Drosophila electron microscopy data set**  
-Julia Buhmann, Arlo Sheridan, Caroline Malin-Mayor et al. · 2021 · **  
-`METHODS` · citations: 184 · score: 0.100 · [doi](https://doi.org/10.1038/s41592-021-01183-7)  
-
-
-**396. Expansion sequencing: Spatially precise in situ transcriptomics in intact biological systems**  
-Shahar Alon, Daniel Goodwin, Anubhav Sinha et al. · 2021 · **  
-`METHODS` · citations: 398 · score: 0.097 · [doi](https://doi.org/10.1126/science.aax2656)  
-
-
-**397. Information flow, cell types and stereotypy in a full olfactory connectome**  
+**448. Information flow, cell types and stereotypy in a full olfactory connectome**  
 Philipp Schlegel, Alexander Shakeel Bates, Tomke Stürner et al. · 2021 · **  
-`METHODS` · citations: 182 · score: 0.096 · [doi](https://doi.org/10.7554/elife.66018)  
+`METHODS` · citations: 182 · score: 0.109 · [doi](https://doi.org/10.7554/elife.66018)  
 
 
-**398. A connectome of the Drosophila central complex reveals network motifs suitable for flexible navigation and context-dependent action selection**  
+**449. A connectome of the Drosophila central complex reveals network motifs suitable for flexible navigation and context-dependent action selection**  
 Brad K. Hulse, Hannah Haberkern, Romain Franconville et al. · 2021 · **  
-`METHODS` · citations: 386 · score: 0.094 · [doi](https://doi.org/10.7554/elife.66039)  
+`METHODS` · citations: 386 · score: 0.106 · [doi](https://doi.org/10.7554/elife.66039)  
 
 
-**399. A multi-scale brain map derived from whole-brain volumetric reconstructions**  
+**450. Expansion sequencing: Spatially precise in situ transcriptomics in intact biological systems**  
+Shahar Alon, Daniel Goodwin, Anubhav Sinha et al. · 2021 · **  
+`METHODS` · citations: 398 · score: 0.102 · [doi](https://doi.org/10.1126/science.aax2656)  
+
+
+**451. Automatic detection of synaptic partners in a whole-brain Drosophila electron microscopy data set**  
+Julia Buhmann, Arlo Sheridan, Caroline Malin-Mayor et al. · 2021 · **  
+`METHODS` · citations: 184 · score: 0.101 · [doi](https://doi.org/10.1038/s41592-021-01183-7)  
+
+
+**452. A multi-scale brain map derived from whole-brain volumetric reconstructions**  
 Christopher A. Brittin, Steven J. Cook, David H. Hall et al. · 2021 · **  
 `METHODS` · citations: 127 · score: 0.094 · [doi](https://doi.org/10.1038/s41586-021-03284-x)  
 
 
-**400. Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel <i>in situ</i> analyses**  
+**453. Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel <i>in situ</i> analyses**  
 Songlei Liu, Sukanya Punthambaker, Eswar Prasad R. Iyer et al. · 2021 · **  
-`METHODS` · citations: 63 · score: 0.080 · [doi](https://doi.org/10.1093/nar/gkab120)  
+`METHODS` · citations: 63 · score: 0.081 · [doi](https://doi.org/10.1093/nar/gkab120)  
 
 
-**401. FusionNet: A Deep Fully Residual Convolutional Neural Network for Image Segmentation in Connectomics**  
+**454. FusionNet: A Deep Fully Residual Convolutional Neural Network for Image Segmentation in Connectomics**  
 Tran Minh Quan, David G. C. Hildebrand, Won‐Ki Jeong · 2021 · **  
-`METHODS` · citations: 279 · score: 0.072 · [doi](https://doi.org/10.3389/fcomp.2021.613981)  
+`METHODS` · citations: 279 · score: 0.076 · [doi](https://doi.org/10.3389/fcomp.2021.613981)  
 
 
-**402. DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries**  
+**455. DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries**  
 Jordan Matelsky, Elizabeth P. Reilly, Erik C. Johnson et al. · 2021 · **  
-`METHODS` · citations: 35 · score: 0.059 · [doi](https://doi.org/10.1038/s41598-021-91025-5)  
+`METHODS` · citations: 35 · score: 0.065 · [doi](https://doi.org/10.1038/s41598-021-91025-5)  
 
 
-**403. A highly homogeneous polymer composed of tetrahedron-like monomers for high-isotropy expansion microscopy**  
+**456. A highly homogeneous polymer composed of tetrahedron-like monomers for high-isotropy expansion microscopy**  
 Ruixuan Gao, Chih-Chieh Yu, Linyi Gao et al. · 2021 · **  
-`METHODS` · citations: 85 · score: 0.052 · [doi](https://doi.org/10.1038/s41565-021-00875-7)  
+`METHODS` · citations: 85 · score: 0.055 · [doi](https://doi.org/10.1038/s41565-021-00875-7)  
 
 
-**404. An open-access volume electron microscopy atlas of whole cells and tissues**  
-C. Shan Xu, Song Pang, Gleb Shtengel et al. · 2021 · **  
-`METHODS` · citations: 196 · score: 0.041 · [doi](https://doi.org/10.1038/s41586-021-03992-4)  
+**457. Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)<sup>1</sup>**  
+Daniel J. Klionsky, Amal Kamal Abdel‐Aziz, Sara Abdelfatah et al. · 2021 · **  
+`METHODS` · citations: 2,498 · score: 0.053 · [doi](https://doi.org/10.1080/15548627.2020.1797280)  
 
 
-**405. Whole-cell organelle segmentation in volume electron microscopy**  
+**458. Whole-cell organelle segmentation in volume electron microscopy**  
 Larissa Heinrich, Davis Bennett, David Ackerman et al. · 2021 · **  
 `METHODS` · citations: 294 · score: 0.040 · [doi](https://doi.org/10.1038/s41586-021-03977-3)  
 
 
-**406. Genetic influences on hub connectivity of the human connectome**  
+**459. Genetic influences on hub connectivity of the human connectome**  
 Aurina Arnatkevičiūtė, Ben Fulcher, Stuart Oldham et al. · 2021 · **  
 `METHODS` · citations: 183 · score: 0.038 · [doi](https://doi.org/10.1038/s41467-021-24306-2)  
 
 
-**407. Petascale neural circuit reconstruction: automated methods**  
+**460. An open-access volume electron microscopy atlas of whole cells and tissues**  
+C. Shan Xu, Song Pang, Gleb Shtengel et al. · 2021 · **  
+`METHODS` · citations: 196 · score: 0.037 · [doi](https://doi.org/10.1038/s41586-021-03992-4)  
+
+
+**461. Petascale neural circuit reconstruction: automated methods**  
 Thomas Macrina, Kisuk Lee, Ran Lu et al. · 2021 · **  
-`METHODS` · citations: 60 · score: 0.032 · [doi](https://doi.org/10.1101/2021.08.04.455162)  
+`METHODS` · citations: 60 · score: 0.035 · [doi](https://doi.org/10.1101/2021.08.04.455162)  
 
 
-**408. Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era**  
+**462. Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era**  
 Aurel A. Lazar, Tingkai Liu, Mehmet Kerem Türkcan et al. · 2021 · **  
-`METHODS` · citations: 24 · score: 0.031 · [doi](https://doi.org/10.7554/elife.62362)  
+`METHODS` · citations: 24 · score: 0.033 · [doi](https://doi.org/10.7554/elife.62362)  
 
 
-**409. Classification and genetic targeting of cell types in the primary taste and premotor center of the adult Drosophila brain**  
-Gabriella R Sterne, Hideo Otsuna, Barry J. Dickson et al. · 2021 · **  
-`METHODS` · citations: 106 · score: 0.027 · [doi](https://doi.org/10.7554/elife.71679)  
+**463. Whole-brain tissue mapping toolkit using large-scale highly multiplexed immunofluorescence imaging and deep neural networks**  
+Dragan Maric, Jahandar Jahanipour, Xiaoyang Rebecca Li et al. · 2021 · **  
+`METHODS` · citations: 90 · score: 0.032 · [doi](https://doi.org/10.1038/s41467-021-21735-x)  
 
 
-**410. Circuit reorganization in the Drosophila mushroom body calyx accompanies memory consolidation**  
-Lothar Baltruschat, Luigi Prisco, Philipp Ranft et al. · 2021 · **  
-`METHODS` · citations: 52 · score: 0.023 · [doi](https://doi.org/10.1016/j.celrep.2021.108871)  
-
-
-**411. Electron Microscopic Reconstruction of Neural Circuitry in the Cochlea**  
-Yunfeng Hua, Xu Ding, Haoyu Wang et al. · 2021 · **  
-`METHODS` · citations: 73 · score: 0.022 · [doi](https://doi.org/10.1016/j.celrep.2020.108551)  
-
-
-**412. Synchronous and opponent thermosensors use flexible cross-inhibition to orchestrate thermal homeostasis**  
-Luis Hernandez-Nunez, Alicia Chen, Gonzalo Budelli et al. · 2021 · **  
-`METHODS` · citations: 46 · score: 0.020 · [doi](https://doi.org/10.1126/sciadv.abg6707)  
-
-
-**413. DeepACSON automated segmentation of white matter in 3D electron microscopy**  
-Ali Abdollahzadeh, Ilya Belevich, Eija Jokitalo et al. · 2021 · **  
-`METHODS` · citations: 57 · score: 0.020 · [doi](https://doi.org/10.1038/s42003-021-01699-w)  
-
-
-**414. CONFIRMS: A Toolkit for Scalable, Black Box Connectome Assessment and Investigation**  
-Caitlyn Bishop, Jordan Matelsky, Miller Wilt et al. · 2021 · **  
-`METHODS` · citations: 10 · score: 0.020 · [doi](https://doi.org/10.1109/embc46164.2021.9630109)  
-
-
-**415. 3D reconstruction of cell nuclei in a full <i>Drosophila</i> brain**  
-Shang Mu, Szi-chieh Yu, Nicholas L. Turner et al. · 2021 · **  
-`METHODS` · citations: 23 · score: 0.019 · [doi](https://doi.org/10.1101/2021.11.04.467197)  
-
-
-**416. Synaptic targets of photoreceptors specialized to detect color and skylight polarization in Drosophila**  
-Emil Kind, Kit D. Longden, Aljoscha Nern et al. · 2021 · **  
-`METHODS` · citations: 72 · score: 0.018 · [doi](https://doi.org/10.7554/elife.71858)  
-
-
-**417. Regulation of coordinated muscular relaxation in Drosophila larvae by a pattern-regulating intersegmental circuit**  
-Atsuki Hiramoto, Julius Jonaitis, Sawako Niki et al. · 2021 · **  
-`METHODS` · citations: 45 · score: 0.017 · [doi](https://doi.org/10.1038/s41467-021-23273-y)  
-
-
-**418. Oligodendrocyte precursor cells prune axons in the mouse neocortex**  
-JoAnn Buchanan, Leila Elabbady, Forrest Collman et al. · 2021 · **  
-`METHODS` · citations: 19 · score: 0.016 · [doi](https://doi.org/10.1101/2021.05.29.446047)  
-
-
-**419. Learning function from structure in neuromorphic networks**  
-Laura E. Suárez, Blake A. Richards, Guillaume Lajoie et al. · 2021 · **  
-`METHODS` · citations: 117 · score: 0.016 · [doi](https://doi.org/10.1038/s42256-021-00376-1)  
-
-
-**420. A connectome is not enough – what is still needed to understand the brain of<i>Drosophila</i>?**  
-Louis K. Scheffer, Ian A. Meinertzhagen · 2021 · **  
-`METHODS` · citations: 36 · score: 0.015 · [doi](https://doi.org/10.1242/jeb.242740)  
-
-
-**421. Deep learning for automatic segmentation of the nuclear envelope in electron microscopy data, trained with volunteer segmentations**  
-Helen Spiers, Harry Songhurst, Luke Nightingale et al. · 2021 · **  
-`METHODS` · citations: 52 · score: 0.015 · [doi](https://doi.org/10.1111/tra.12789)  
-
-
-**422. Brain connectivity inversely scales with developmental temperature in Drosophila**  
-Ferdi Rıdvan Kiral, Suchetana B. Dutta, Gerit Arne Linneweber et al. · 2021 · **  
-`METHODS` · citations: 60 · score: 0.015 · [doi](https://doi.org/10.1016/j.celrep.2021.110145)  
-
-
-**423. Learning and Segmenting Dense Voxel Embeddings for 3D Neuron Reconstruction**  
-Kisuk Lee, Ran Lu, Kyle Luther et al. · 2021 · **  
-`METHODS` · citations: 31 · score: 0.014 · [doi](https://doi.org/10.1109/tmi.2021.3097826)  
-
-
-**424. Label-retention expansion microscopy**  
-Xiaoyu Shi, Qi Li, Zhipeng Dai et al. · 2021 · **  
-`METHODS` · citations: 81 · score: 0.014 · [doi](https://doi.org/10.1083/jcb.202105067)  
-
-
-**425. Functional architecture of neural circuits for leg proprioception in Drosophila**  
-Chenghao Chen, Sweta Agrawal, Brandon Mark et al. · 2021 · **  
-`METHODS` · citations: 41 · score: 0.014 · [doi](https://doi.org/10.1016/j.cub.2021.09.035)  
-
-
-**426. An Integrated Toolkit for Extensible and Reproducible Neuroscience**  
-Jordan Matelsky, Luis M. Rodríguez, Daniel Xenes et al. · 2021 · **  
-`METHODS` · citations: 13 · score: 0.014 · [doi](https://doi.org/10.1109/embc46164.2021.9630199)  
-
-
-**427. EASI-FISH for thick tissue defines lateral hypothalamus spatio-molecular organization**  
-Yuhan Wang, Mark Eddison, Greg Fleishman et al. · 2021 · **  
-`METHODS` · citations: 196 · score: 0.014 · [doi](https://doi.org/10.1016/j.cell.2021.11.024)  
-
-
-**428. Local Shape Descriptors for Neuron Segmentation**  
-Arlo Sheridan, Tri Nguyen, Diptodip Deb et al. · 2021 · **  
-`METHODS` · citations: 17 · score: 0.013 · [doi](https://doi.org/10.1101/2021.01.18.427039)  
-
-
-**429. Expansion tomography for large volume tissue imaging with nanoscale resolution**  
-Ruixi Chen, Xiaofeng Cheng, Yongsheng Zhang et al. · 2021 · **  
-`METHODS` · citations: 18 · score: 0.012 · [doi](https://doi.org/10.1364/boe.431696)  
-
-
-**430. Functional connectomics spanning multiple areas of mouse visual cortex**  
+**464. Functional connectomics spanning multiple areas of mouse visual cortex**  
 J. Alexander Bae, Mahaly Baptiste, Caitlyn A. Bishop et al. · 2021 · **  
-`BIOLOGY` · citations: 194 · score: 0.106 · [doi](https://doi.org/10.1101/2021.07.28.454025)  
+`BIOLOGY` · citations: 194 · score: 0.104 · [doi](https://doi.org/10.1101/2021.07.28.454025)  
 
 
-**431. Structure and function of axo-axonic inhibition**  
+**465. Structure and function of axo-axonic inhibition**  
 Casey M Schneider-Mizell, Agnes L Bodor, Forrest Collman et al. · 2021 · **  
 `BIOLOGY` · citations: 90 · score: 0.091 · [doi](https://doi.org/10.7554/elife.73783)  
 
 
-**432. A connectomic study of a petascale fragment of human cerebral cortex**  
+**466. A connectomic study of a petascale fragment of human cerebral cortex**  
 Alexander Shapson-Coe, Michał Januszewski, Daniel R. Berger et al. · 2021 · **  
-`BIOLOGY` · citations: 279 · score: 0.077 · [doi](https://doi.org/10.1101/2021.05.29.446289)  
+`BIOLOGY` · citations: 279 · score: 0.083 · [doi](https://doi.org/10.1101/2021.05.29.446289)  
 
 
-**433. Whole-body integration of gene expression and single-cell morphology**  
+**467. Molecular topography of an entire nervous system**  
+Seth R. Taylor, Gabriel Santpere, Alexis Weinreb et al. · 2021 · **  
+`BIOLOGY` · citations: 734 · score: 0.073 · [doi](https://doi.org/10.1016/j.cell.2021.06.023)  
+
+
+**468. Whole-body integration of gene expression and single-cell morphology**  
 Hernando Martínez Vergara, Constantin Pape, Kimberly Meechan et al. · 2021 · **  
-`BIOLOGY` · citations: 147 · score: 0.041 · [doi](https://doi.org/10.1016/j.cell.2021.07.017)  
+`BIOLOGY` · citations: 147 · score: 0.038 · [doi](https://doi.org/10.1016/j.cell.2021.07.017)  
 
 
-**434. Circuits for integrating learned and innate valences in the insect brain**  
+**469. Circuits for integrating learned and innate valences in the insect brain**  
 Claire Eschbach, Akira Fushiki, Michael Winding et al. · 2021 · **  
-`BIOLOGY` · citations: 62 · score: 0.035 · [doi](https://doi.org/10.7554/elife.62567)  
+`BIOLOGY` · citations: 62 · score: 0.034 · [doi](https://doi.org/10.7554/elife.62567)  
 
 
-**435. A neuropeptidergic circuit gates selective escape behavior of Drosophila larvae**  
+**470. A neuropeptidergic circuit gates selective escape behavior of Drosophila larvae**  
 Bibi Nusreen Imambocus, Fangmin Zhou, A. Formozov et al. · 2021 · **  
 `BIOLOGY` · citations: 101 · score: 0.029 · [doi](https://doi.org/10.1016/j.cub.2021.10.069)  
 
 
-**436. Primate neuronal connections are sparse in cortex as compared to mouse**  
-Gregg Wildenberg, Matthew C. Rosen, Jack Lundell et al. · 2021 · **  
-`BIOLOGY` · citations: 43 · score: 0.021 · [doi](https://doi.org/10.1016/j.celrep.2021.109709)  
-
-
-**437. Three-Dimensional Synaptic Organization of Layer III of the Human Temporal Neocortex**  
-Nicolás Cano‐Astorga, Javier DeFelipe, Lidia Alonso‐Nanclares · 2021 · **  
-`BIOLOGY` · citations: 52 · score: 0.020 · [doi](https://doi.org/10.1093/cercor/bhab120)  
-
-
-**438. Neuromuscular connectomes across development reveal synaptic ordering rules**  
-Yaron Meirovitch, Kai Kang, Ryan W. Draft et al. · 2021 · **  
-`BIOLOGY` · citations: 8 · score: 0.015 · [doi](https://doi.org/10.1101/2021.09.20.460480)  
-
-
-**439. Corollary discharge promotes a sustained motor state in a neural circuit for navigation**  
-Ni Ji, Vivek Venkatachalam, Hillary Denise Rodgers et al. · 2021 · **  
-`BIOLOGY` · citations: 32 · score: 0.014 · [doi](https://doi.org/10.7554/elife.68848)  
-
-
-**440. neuPrint: An open access tool for EM connectomics**  
+**471. neuPrint: An open access tool for EM connectomics**  
 Stephen M. Plaza, Jody Clements, Tom Dolafi et al. · 2022 · **  
-`METHODS` · citations: 139 · score: 0.130 · [doi](https://doi.org/10.3389/fninf.2022.896292)  
+`METHODS` · citations: 139 · score: 0.136 · [doi](https://doi.org/10.3389/fninf.2022.896292)  
 
 
-**441. Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity**  
+**472. Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity**  
 Nicholas L. Turner, Thomas Macrina, J. Alexander Bae et al. · 2022 · **  
-`METHODS` · citations: 211 · score: 0.103 · [doi](https://doi.org/10.1016/j.cell.2022.01.023)  
+`METHODS` · citations: 211 · score: 0.108 · [doi](https://doi.org/10.1016/j.cell.2022.01.023)  
 
 
-**442. En bloc preparation of Drosophila brains enables high-throughput FIB-SEM connectomics**  
+**473. Structured sampling of olfactory input by the fly mushroom body**  
+Zhihao Zheng, Feng Li, Corey B. Fisher et al. · 2022 · **  
+`METHODS` · citations: 62 · score: 0.094 · [doi](https://doi.org/10.1016/j.cub.2022.06.031)  
+
+
+**474. En bloc preparation of Drosophila brains enables high-throughput FIB-SEM connectomics**  
 Zhiyuan Lu, C. Shan Xu, Kenneth J. Hayworth et al. · 2022 · **  
-`METHODS` · citations: 20 · score: 0.063 · [doi](https://doi.org/10.3389/fncir.2022.917251)  
+`METHODS` · citations: 20 · score: 0.059 · [doi](https://doi.org/10.3389/fncir.2022.917251)  
 
 
-**443. The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery**  
+**475. The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery**  
 Robert Hider, Dean M. Kleissas, Timothy Gion et al. · 2022 · **  
-`METHODS` · citations: 43 · score: 0.051 · [doi](https://doi.org/10.3389/fninf.2022.828787)  
+`METHODS` · citations: 43 · score: 0.056 · [doi](https://doi.org/10.3389/fninf.2022.828787)  
 
 
-**444. Neural network organization for courtship-song feature detection in Drosophila**  
+**476. Neural network organization for courtship-song feature detection in Drosophila**  
 Christa A. Baker, Claire McKellar, Rich Pang et al. · 2022 · **  
-`METHODS` · citations: 61 · score: 0.043 · [doi](https://doi.org/10.1016/j.cub.2022.06.019)  
+`METHODS` · citations: 61 · score: 0.045 · [doi](https://doi.org/10.1016/j.cub.2022.06.019)  
 
 
-**445. All-optical visualization of specific molecules in the ultrastructural context of brain tissue**  
+**477. All-optical visualization of specific molecules in the ultrastructural context of brain tissue**  
 Ons M’Saad, Ravikiran Kasula, Ilona Kondratiuk et al. · 2022 · **  
-`METHODS` · citations: 38 · score: 0.033 · [doi](https://doi.org/10.1101/2022.04.04.486901)  
+`METHODS` · citations: 38 · score: 0.037 · [doi](https://doi.org/10.1101/2022.04.04.486901)  
 
 
-**446. Visualizing cellular and tissue ultrastructure using Ten-fold Robust Expansion Microscopy (TREx)**  
+**478. Visualizing cellular and tissue ultrastructure using Ten-fold Robust Expansion Microscopy (TREx)**  
 Hugo GJ Damstra, Boaz Mohar, Mark Eddison et al. · 2022 · **  
-`METHODS` · citations: 173 · score: 0.027 · [doi](https://doi.org/10.7554/elife.73775)  
+`METHODS` · citations: 173 · score: 0.035 · [doi](https://doi.org/10.7554/elife.73775)  
 
 
-**447. Volume electron microscopy**  
-Christopher J. Peddie, Christel Genoud, Anna Kreshuk et al. · 2022 · **  
-`METHODS` · citations: 216 · score: 0.026 · [doi](https://doi.org/10.1038/s43586-022-00131-9)  
-
-
-**448. Tools for connectomic reconstruction and analysis of a female <i>Drosophila</i> ventral nerve cord**  
-Anthony W. Azevedo, Ellen Lesser, Jasper S. Phelps et al. · 2022 · **  
-`METHODS` · citations: 25 · score: 0.025 · [doi](https://doi.org/10.1101/2022.12.15.520299)  
-
-
-**449. Neuronal circuits integrating visual motion information in Drosophila melanogaster**  
-Kazunori Shinomiya, Aljoscha Nern, Ian A. Meinertzhagen et al. · 2022 · **  
-`METHODS` · citations: 65 · score: 0.024 · [doi](https://doi.org/10.1016/j.cub.2022.06.061)  
-
-
-**450. A scalable and modular automated pipeline for stitching of large electron microscopy datasets**  
-Gayathri Mahalingam, Russel Torres, Daniel Kapner et al. · 2022 · **  
-`METHODS` · citations: 62 · score: 0.023 · [doi](https://doi.org/10.7554/elife.76534)  
-
-
-**451. Oligodendrocyte precursor cells ingest axons in the mouse neocortex**  
-JoAnn Buchanan, Leila Elabbady, Forrest Collman et al. · 2022 · **  
-`METHODS` · citations: 135 · score: 0.020 · [doi](https://doi.org/10.1073/pnas.2202580119)  
-
-
-**452. A set of hub neurons and non-local connectivity features support global brain dynamics in C. elegans**  
-Kerem Uzel, Saul Kato, Manuel Zimmer · 2022 · **  
-`METHODS` · citations: 53 · score: 0.020 · [doi](https://doi.org/10.1016/j.cub.2022.06.039)  
-
-
-**453. Lipid Expansion Microscopy**  
-Brittany M. White, Pratik Kumar, Amanda N. Conwell et al. · 2022 · **  
-`METHODS` · citations: 57 · score: 0.019 · [doi](https://doi.org/10.1021/jacs.2c03743)  
-
-
-**454. Interpretable Graph Neural Networks for Connectome-Based Brain Disorder Analysis**  
-Hejie Cui, Wei Dai, Yanqiao Zhu et al. · 2022 · **  
-`METHODS` · citations: 86 · score: 0.016 · [doi](https://doi.org/10.1007/978-3-031-16452-1_36)  
-
-
-**455. Functional and multiscale 3D structural investigation of brain tissue through correlative in vivo physiology, synchrotron microtomography and volume electron microscopy**  
-Carles Bosch, Tobias Ackels, Alexandra Pacureanu et al. · 2022 · **  
-`METHODS` · citations: 42 · score: 0.013 · [doi](https://doi.org/10.1038/s41467-022-30199-6)  
-
-
-**456. Taste quality and hunger interactions in a feeding sensorimotor circuit**  
-Philip K. Shiu, Gabriella R Sterne, Stefanie Engert et al. · 2022 · **  
-`METHODS` · citations: 60 · score: 0.013 · [doi](https://doi.org/10.7554/elife.79887)  
-
-
-**457. The neuropeptidergic connectome of <i>C. elegans</i>**  
-Lidia Ripoll-Sánchez, Jan Watteyne, HaoSheng Sun et al. · 2022 · **  
-`METHODS` · citations: 18 · score: 0.012 · [doi](https://doi.org/10.1101/2022.10.30.514396)  
-
-
-**458. Binary and analog variation of synapses between cortical pyramidal neurons**  
+**479. Binary and analog variation of synapses between cortical pyramidal neurons**  
 Sven Dorkenwald, Nicholas L. Turner, Thomas Macrina et al. · 2022 · **  
-`BIOLOGY` · citations: 100 · score: 0.174 · [doi](https://doi.org/10.7554/elife.76120)  
+`BIOLOGY` · citations: 100 · score: 0.171 · [doi](https://doi.org/10.7554/elife.76120)  
 
 
-**459. Connectomic comparison of mouse and human cortex**  
+**480. Connectomic comparison of mouse and human cortex**  
 Sahil Loomba, Jakob Straehle, Vijayan Gangadharan et al. · 2022 · **  
-`BIOLOGY` · citations: 240 · score: 0.058 · [doi](https://doi.org/10.1126/science.abo0924)  
+`BIOLOGY` · citations: 240 · score: 0.061 · [doi](https://doi.org/10.1126/science.abo0924)  
 
 
-**460. Local shape descriptors for neuron segmentation**  
-Arlo Sheridan, Tri Nguyen, Diptodip Deb et al. · 2022 · **  
-`BIOLOGY` · citations: 51 · score: 0.023 · [doi](https://doi.org/10.1038/s41592-022-01711-z)  
+**481. Automated synapse-level reconstruction of neural circuits in the larval zebrafish brain**  
+Fabian Svara, Dominique Förster, Fumi Kubo et al. · 2022 · **  
+`BIOLOGY` · citations: 110 · score: 0.034 · [doi](https://doi.org/10.1038/s41592-022-01621-0)  
 
 
-**461. Synaptic counts approximate synaptic contact area in Drosophila**  
-Christopher L. Barnes, Daniel Bonnéry, Albert Cardona · 2022 · **  
-`BIOLOGY` · citations: 30 · score: 0.022 · [doi](https://doi.org/10.1371/journal.pone.0266064)  
+**482. MizAR 60 for Mizar 50**  
+Jakubův, Jan, Chvalovský, Karel, Goertzel, Zarathustra et al. · 2023 · **  
+`METHODS` · citations: 74,517 · score: 0.194 · [doi](https://doi.org/10.4230/lipics.itp.2023.19)  
 
 
-**462. Rapid reconstruction of neural circuits using tissue expansion and light sheet microscopy**  
-Joshua L. Lillvis, Hideo Otsuna, Xiaoyu Ding et al. · 2022 · **  
-`BIOLOGY` · citations: 61 · score: 0.020 · [doi](https://doi.org/10.7554/elife.81248)  
+**483. Cancer statistics, 2023**  
+Rebecca L. Siegel, Kimberly D. Miller, Nikita Sandeep Wagle et al. · 2023 · **  
+`METHODS` · citations: 16,277 · score: 0.044 · [doi](https://doi.org/10.3322/caac.21763)  
 
 
-**463. The connectome of an insect brain**  
-Michael Winding, Benjamin D. Pedigo, Christopher L. Barnes et al. · 2022 · **  
-`BIOLOGY` · citations: 8 · score: 0.015 · [doi](https://doi.org/10.1101/2022.11.28.516756)  
+**484. Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics**  
+T. B. Brown, Benjamin F. Mann · 2023 · **  
+`METHODS` · citations: 14,139 · score: 0.037 · [doi](https://doi.org/10.4230/lipics.giscience.2023.43)  
 
 
-**464. Perisomatic Features Enable Efficient and Dataset Wide Cell-Type Classifications Across Large-Scale Electron Microscopy Volumes**  
-Leila Elabbady, Sharmishtaa Seshamani, Shang Mu et al. · 2022 · **  
-`BIOLOGY` · citations: 23 · score: 0.015 · [doi](https://doi.org/10.1101/2022.07.20.499976)  
-
-
-**465. Anatomical distribution and functional roles of electrical synapses in Drosophila**  
-Georg Ammer, Renee Marie Vieira, Sandra Fendl et al. · 2022 · **  
-`BIOLOGY` · citations: 54 · score: 0.014 · [doi](https://doi.org/10.1016/j.cub.2022.03.040)  
-
-
-**466. Kv3.3 subunits control presynaptic action potential waveform and neurotransmitter release at a central excitatory synapse**  
-Amy Richardson, Victoria Ciampani, Mihai Stancu et al. · 2022 · **  
-`BIOLOGY` · citations: 29 · score: 0.013 · [doi](https://doi.org/10.7554/elife.75219)  
-
-
-**467. Generative network modeling reveals quantitative definitions of bilateral symmetry exhibited by a whole insect brain connectome**  
+**485. Generative network modeling reveals quantitative definitions of bilateral symmetry exhibited by a whole insect brain connectome**  
 Benjamin D. Pedigo, Michael Powell, Eric Bridgeford et al. · 2023 · **  
-`METHODS` · citations: 12 · score: 0.073 · [doi](https://doi.org/10.7554/elife.83739)  
+`METHODS` · citations: 12 · score: 0.091 · [doi](https://doi.org/10.7554/elife.83739)  
 
 
-**468. CAVE: Connectome Annotation Versioning Engine**  
-Sven Dorkenwald, Casey M Schneider-Mizell, Derrick Brittain et al. · 2023 · **  
-`METHODS` · citations: 35 · score: 0.058 · [doi](https://doi.org/10.1101/2023.07.26.550598)  
-
-
-**469. Neuronal wiring diagram of an adult brain**  
+**486. Neuronal wiring diagram of an adult brain**  
 Sven Dorkenwald, Arie Matsliah, Amy Sterling et al. · 2023 · **  
-`METHODS` · citations: 165 · score: 0.057 · [doi](https://doi.org/10.1101/2023.06.27.546656)  
+`METHODS` · citations: 165 · score: 0.088 · [doi](https://doi.org/10.1101/2023.06.27.546656)  
 
 
-**470. Neural signal propagation atlas of Caenorhabditis elegans**  
+**487. CAVE: Connectome Annotation Versioning Engine**  
+Sven Dorkenwald, Casey M Schneider-Mizell, Derrick Brittain et al. · 2023 · **  
+`METHODS` · citations: 35 · score: 0.064 · [doi](https://doi.org/10.1101/2023.07.26.550598)  
+
+
+**488. Neural signal propagation atlas of Caenorhabditis elegans**  
 Francesco Randi, Anuj Kumar Sharma, Sophie Dvali et al. · 2023 · **  
-`METHODS` · citations: 147 · score: 0.037 · [doi](https://doi.org/10.1038/s41586-023-06683-4)  
+`METHODS` · citations: 147 · score: 0.041 · [doi](https://doi.org/10.1038/s41586-023-06683-4)  
 
 
-**471. The neuropeptidergic connectome of C. elegans**  
-Lidia Ripoll-Sánchez, Jan Watteyne, HaoSheng Sun et al. · 2023 · **  
-`METHODS` · citations: 160 · score: 0.030 · [doi](https://doi.org/10.1016/j.neuron.2023.09.043)  
-
-
-**472. Synaptic connectome of the <i>Drosophila</i> circadian clock**  
-Nils Reinhard, Ayumi Fukuda, Giulia Manoli et al. · 2023 · **  
-`METHODS` · citations: 23 · score: 0.024 · [doi](https://doi.org/10.1101/2023.09.11.557222)  
-
-
-**473. Multi-layered maps of neuropil with segmentation-guided contrastive learning**  
-Sven Dorkenwald, Peter H. Li, Michał Januszewski et al. · 2023 · **  
-`METHODS` · citations: 27 · score: 0.024 · [doi](https://doi.org/10.1038/s41592-023-02059-8)  
-
-
-**474. Imaging brain tissue architecture across millimeter to nanometer scales**  
-Julia M. Michalska, Julia Lyudchik, Philipp Velicky et al. · 2023 · **  
-`METHODS` · citations: 26 · score: 0.019 · [doi](https://doi.org/10.1038/s41587-023-01911-8)  
-
-
-**475. Immersion Fixation and Staining of Multicubic Millimeter Volumes for Electron Microscopy–Based Connectomics of Human Brain Biopsies**  
-Neha Karlupia, Richard Schalek, Yuelong Wu et al. · 2023 · **  
-`METHODS` · citations: 30 · score: 0.018 · [doi](https://doi.org/10.1016/j.biopsych.2023.01.025)  
-
-
-**476. Virtual Fly Brain—An interactive atlas of the Drosophila nervous system**  
-Robert Court, Marta Costa, Clare Pilgrim et al. · 2023 · **  
-`METHODS` · citations: 58 · score: 0.015 · [doi](https://doi.org/10.3389/fphys.2023.1076533)  
-
-
-**477. A Connectome of the Male <i>Drosophila</i> Ventral Nerve Cord**  
-Shin-ya Takemura, Kenneth J. Hayworth, Gary B. Huang et al. · 2023 · **  
-`METHODS` · citations: 58 · score: 0.013 · [doi](https://doi.org/10.1101/2023.06.05.543757)  
-
-
-**478. Systematic annotation of a complete adult male <i>Drosophila</i> nerve cord connectome reveals principles of functional organisation**  
-Elizabeth C. Marin, Billy J Morris, Tomke Stürner et al. · 2023 · **  
-`METHODS` · citations: 35 · score: 0.013 · [doi](https://doi.org/10.1101/2023.06.05.543407)  
-
-
-**479. The connectome of an insect brain**  
+**489. The connectome of an insect brain**  
 Michael Winding, Benjamin D. Pedigo, Christopher L. Barnes et al. · 2023 · **  
-`BIOLOGY` · citations: 424 · score: 0.335 · [doi](https://doi.org/10.1126/science.add9330)  
+`BIOLOGY` · citations: 424 · score: 0.361 · [doi](https://doi.org/10.1126/science.add9330)  
 
 
-**480. Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution**  
-Janne K. Lappalainen, Fabian Tschopp, Sridhama Prakhya et al. · 2023 · **  
-`BIOLOGY` · citations: 29 · score: 0.025 · [doi](https://doi.org/10.1101/2023.03.11.532232)  
+**490. A searchable image resource of Drosophila GAL4 driver expression patterns with single neuron resolution**  
+Geoffrey W Meissner, Aljoscha Nern, Zachary Dorman et al. · 2023 · **  
+`BIOLOGY` · citations: 126 · score: 0.045 · [doi](https://doi.org/10.7554/elife.80660)  
 
 
-**481. Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex**  
-Casey M Schneider-Mizell, Ágnes L. Bodor, Derrick Brittain et al. · 2023 · **  
-`BIOLOGY` · citations: 73 · score: 0.016 · [doi](https://doi.org/10.1101/2023.01.23.525290)  
+**491. Accurate structure prediction of biomolecular interactions with AlphaFold 3**  
+Josh Abramson, Jonas Adler, Jack Dunger et al. · 2024 · **  
+`METHODS` · citations: 11,661 · score: 0.034 · [doi](https://doi.org/10.1038/s41586-024-07487-w)  
 
 
-**482. NeuronBridge: an intuitive web application for neuronal morphology search across large data sets**  
+**492. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries**  
+Freddie Bray, Mathieu Laversanne, Hyuna Sung et al. · 2024 · **  
+`METHODS` · citations: 20,640 · score: 0.052 · [doi](https://doi.org/10.3322/caac.21834)  
+
+
+**493. Neuronal wiring diagram of an adult brain**  
+Sven Dorkenwald, Arie Matsliah, Amy Sterling et al. · 2024 · **  
+`METHODS` · citations: 447 · score: 0.359 · [doi](https://doi.org/10.1038/s41586-024-07558-y)  
+
+
+**494. NeuronBridge: an intuitive web application for neuronal morphology search across large data sets**  
 Jody Clements, Cristian Goina, Philip M. Hubbard et al. · 2024 · **  
-`METHODS` · citations: 65 · score: 0.036 · [doi](https://doi.org/10.1186/s12859-024-05732-7)  
+`METHODS` · citations: 65 · score: 0.038 · [doi](https://doi.org/10.1186/s12859-024-05732-7)  
 
 
-**483. Connectomic reconstruction of a female Drosophila ventral nerve cord**  
-Anthony W. Azevedo, Ellen Lesser, Jasper S. Phelps et al. · 2024 · **  
-`METHODS` · citations: 98 · score: 0.023 · [doi](https://doi.org/10.1038/s41586-024-07389-x)  
+**495. CAT: a computational anatomy toolbox for the analysis of structural MRI data**  
+Christian Gaser, Robert Dahnke, Paul M. Thompson et al. · 2024 · **  
+`METHODS` · citations: 741 · score: 0.033 · [doi](https://doi.org/10.1093/gigascience/giae049)  
 
 
-**484. Neural circuit mechanisms underlying context-specific halting in Drosophila**  
-Neha Sapkal, Nino Mancini, Divya Sthanu Kumar et al. · 2024 · **  
-`METHODS` · citations: 43 · score: 0.022 · [doi](https://doi.org/10.1038/s41586-024-07854-7)  
-
-
-**485. Connectome-driven neural inventory of a complete visual system**  
-Aljoscha Nern, Frank Loesche, Shin-ya Takemura et al. · 2024 · **  
-`METHODS` · citations: 36 · score: 0.020 · [doi](https://doi.org/10.1101/2024.04.16.589741)  
-
-
-**486. Comparative connectomics of the descending and ascending neurons of the <i>Drosophila</i> nervous system: stereotypy and sexual dimorphism**  
-Tomke Stürner, P. D. Brooks, Laia Serratosa Capdevila et al. · 2024 · **  
-`METHODS` · citations: 24 · score: 0.017 · [doi](https://doi.org/10.1101/2024.06.04.596633)  
-
-
-**487. The fly connectome reveals a path to the effectome**  
-Dean A. Pospisil, Max Jameson Aragon, Sven Dorkenwald et al. · 2024 · **  
-`METHODS` · citations: 31 · score: 0.016 · [doi](https://doi.org/10.1038/s41586-024-07982-0)  
-
-
-**488. Anti-diuretic hormone ITP signals via a guanylate cyclase receptor to modulate systemic homeostasis in <i>Drosophila</i>**  
-Jayati Gera, Marishia Agard, Hannah Nave et al. · 2024 · **  
-`METHODS` · citations: 3 · score: 0.015 · [doi](https://doi.org/10.1101/2024.02.07.579245)  
-
-
-**489. A Connectome of the Male Drosophila Ventral Nerve Cord**  
-Shin-ya Takemura, Kenneth J. Hayworth, Gary B. Huang et al. · 2024 · **  
-`METHODS` · citations: 53 · score: 0.015 · [doi](https://doi.org/10.7554/elife.97769.1)  
-
-
-**490. Systematic annotation of a complete adult male Drosophila nerve cord connectome reveals principles of functional organisation**  
-Elizabeth C. Marin, Billy J Morris, Tomke Stürner et al. · 2024 · **  
-`METHODS` · citations: 39 · score: 0.013 · [doi](https://doi.org/10.7554/elife.97766.1)  
-
-
-**491. Synaptic architecture of leg and wing premotor control networks in Drosophila**  
-Ellen Lesser, Anthony W. Azevedo, Jasper S. Phelps et al. · 2024 · **  
-`METHODS` · citations: 65 · score: 0.012 · [doi](https://doi.org/10.1038/s41586-024-07600-z)  
-
-
-**492. Neural circuit mechanisms for steering control in walking Drosophila**  
-Aleksandr Rayshubskiy, Stephen L Holtz, Alexander Shakeel Bates et al. · 2024 · **  
-`METHODS` · citations: 24 · score: 0.012 · [doi](https://doi.org/10.7554/elife.102230)  
-
-
-**493. A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution**  
+**496. A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution**  
 Alexander Shapson-Coe, Michał Januszewski, Daniel R. Berger et al. · 2024 · **  
-`BIOLOGY` · citations: 288 · score: 0.290 · [doi](https://doi.org/10.1126/science.adk4858)  
+`BIOLOGY` · citations: 288 · score: 0.305 · [doi](https://doi.org/10.1126/science.adk4858)  
 
 
-**494. Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster**  
+**497. Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster**  
 Nils Eckstein, Alexander Shakeel Bates, Andrew S Champion et al. · 2024 · **  
-`BIOLOGY` · citations: 207 · score: 0.145 · [doi](https://doi.org/10.1016/j.cell.2024.03.016)  
+`BIOLOGY` · citations: 207 · score: 0.159 · [doi](https://doi.org/10.1016/j.cell.2024.03.016)  
 
 
-**495. A Drosophila computational brain model reveals sensorimotor processing**  
+**498. A Drosophila computational brain model reveals sensorimotor processing**  
 Philip K. Shiu, Gabriella R Sterne, Nico Spiller et al. · 2024 · **  
-`BIOLOGY` · citations: 67 · score: 0.033 · [doi](https://doi.org/10.1038/s41586-024-07763-9)  
+`BIOLOGY` · citations: 67 · score: 0.036 · [doi](https://doi.org/10.1038/s41586-024-07763-9)  
 
 
-**496. Neuronal parts list and wiring diagram for a visual system**  
+**499. Neuronal parts list and wiring diagram for a visual system**  
 Arie Matsliah, Szi-chieh Yu, Krzysztof Kruk et al. · 2024 · **  
-`BIOLOGY` · citations: 68 · score: 0.028 · [doi](https://doi.org/10.1038/s41586-024-07981-1)  
+`BIOLOGY` · citations: 68 · score: 0.030 · [doi](https://doi.org/10.1038/s41586-024-07981-1)  
 
 
-**497. Connectome-constrained networks predict neural activity across the fly visual system**  
-Janne K. Lappalainen, Fabian Tschopp, Sridhama Prakhya et al. · 2024 · **  
-`BIOLOGY` · citations: 83 · score: 0.020 · [doi](https://doi.org/10.1038/s41586-024-07939-3)  
-
-
-**498. CAVE: Connectome Annotation Versioning Engine**  
-Sven Dorkenwald, Casey M Schneider-Mizell, Derrick Brittain et al. · 2025 · **  
-`METHODS` · citations: 32 · score: 0.019 · [doi](https://doi.org/10.1038/s41592-024-02426-z)  
-
-
-**499. Functional connectomics spanning multiple areas of mouse visual cortex**  
+**500. Functional connectomics spanning multiple areas of mouse visual cortex**  
 J. Alexander Bae, Mahaly Baptiste, Maya R. Baptiste et al. · 2025 · **  
-`BIOLOGY` · citations: 117 · score: 0.038 · [doi](https://doi.org/10.1038/s41586-025-08790-w)  
-
-
-**500. Perisomatic ultrastructure efficiently classifies cells in mouse cortex**  
-Leila Elabbady, Sharmishtaa Seshamani, Shang Mu et al. · 2025 · **  
-`BIOLOGY` · citations: 15 · score: 0.015 · [doi](https://doi.org/10.1038/s41586-024-07765-7)  
+`BIOLOGY` · citations: 117 · score: 0.039 · [doi](https://doi.org/10.1038/s41586-025-08790-w)  
 

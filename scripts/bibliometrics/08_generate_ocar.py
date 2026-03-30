@@ -79,6 +79,7 @@ Return a JSON object with EXACTLY these keys:
     "resolution":  "2-3 sentences: key findings, what was demonstrated or released",
     "future_work": "1-2 sentences: open questions or limitations the paper leaves behind"
   }},
+  "plain_language_summary": "2-3 sentences explaining this paper to someone with no neuroscience background — use an analogy if helpful",
   "summaries": {{
     "beginner":     "2-3 sentences for a curious undergrad with intro biology",
     "intermediate": "3-4 sentences for a grad student with neuroscience background",
@@ -268,18 +269,20 @@ def main():
                 ocar_data = generate_ocar(client, paper)
                 entry = {
                     **paper,
-                    "ocar":               ocar_data.get("ocar", {}),
-                    "summaries":          ocar_data.get("summaries", {}),
-                    "discussion_prompts": ocar_data.get("discussion_prompts", []),
-                    "dimension":          ocar_data.get("dimension", "connectomics"),
-                    "tags":               ocar_data.get("tags", []),
+                    "ocar":                   ocar_data.get("ocar", {}),
+                    "plain_language_summary": ocar_data.get("plain_language_summary", ""),
+                    "summaries":              ocar_data.get("summaries", {}),
+                    "discussion_prompts":     ocar_data.get("discussion_prompts", []),
+                    "dimension":              ocar_data.get("dimension", "connectomics"),
+                    "tags":                   ocar_data.get("tags", []),
                 }
                 save_cached_ocar(pid, {
-                    "ocar":               entry["ocar"],
-                    "summaries":          entry["summaries"],
-                    "discussion_prompts": entry["discussion_prompts"],
-                    "dimension":          entry["dimension"],
-                    "tags":               entry["tags"],
+                    "ocar":                   entry["ocar"],
+                    "plain_language_summary": entry["plain_language_summary"],
+                    "summaries":              entry["summaries"],
+                    "discussion_prompts":     entry["discussion_prompts"],
+                    "dimension":              entry["dimension"],
+                    "tags":                   entry["tags"],
                 })
                 results.append(entry)
                 break

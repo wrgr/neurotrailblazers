@@ -4,19 +4,15 @@ Step 6: Generate a structured reading list with prerequisite ordering.
 
 Algorithm:
   1. Load ALL ranked papers
-  2. Hard-filter: keep only papers where title/abstract/concepts contain
-     nanoscale connectomics terms  →  removes off-topic high-citation papers
-     (BLAST, Benjamini-Hochberg, carbon nanotubes, etc.)
+  2. Soft-filter: remove only papers in true noise communities
+     (geology, seismology, mass spectrometry — non-biology fields that
+     crept in via citation chasing).  Methods papers, MRI/fMRI, CV, and
+     general neuroscience papers are kept: they are legitimate signal even
+     if not strictly nanoscale EM.
   3. Take top-N survivors by composite score
   4. Topological sort on internal citation subgraph (prerequisites first)
   5. Assign reading phases: Orientation → Foundations → Methods → Datasets → Frontiers
   6. Output reading_list.json + reading_list.md
-
-Why the nanoscale pre-filter is necessary:
-  The corpus was built by citation chasing from EM connectomics seeds.
-  Connectomics papers cite general methods (Fiji, U-Net, BLAST) heavily,
-  so those papers accumulate high in-degree and PageRank in our graph.
-  They are useful tools but not connectomics reading material.
 
 Usage:
   python 06_reading_list.py
@@ -258,13 +254,14 @@ def main():
 
     paper_to_community, community_info = build_community_map(communities)
 
-    # ── Step 1: connectomics relevance pre-filter ──────────────────
-    print(f"\nFiltering {len(rankings)} ranked papers for connectomics relevance...")
+    # ── Step 1: noise-community filter only ───────────────────────
+    # Remove papers belonging to entirely off-domain communities
+    # (geology, seismology, mass spectrometry).  Everything else is signal.
+    print(f"\nFiltering {len(rankings)} ranked papers (noise communities only)...")
     passed, filtered_out = [], []
     for p in rankings:
         pid = p["openalex_id"]
         abstract = reconstruct_abstract(pid)
-        # Merge concepts from corpus record
         corpus_p = corpus_lookup.get(pid, {})
         p["concepts"] = corpus_p.get("concepts", [])
         p["abstract"] = abstract
@@ -274,19 +271,13 @@ def main():
 
         if community_is_noise:
             filtered_out.append(("noise_community", p.get("title", "")))
-        elif not is_connectomics_relevant(p, abstract):
-            filtered_out.append(("off_topic", p.get("title", "")))
         else:
             passed.append(p)
 
-    noise_count = sum(1 for reason, _ in filtered_out if reason == "noise_community")
-    offtopic_count = sum(1 for reason, _ in filtered_out if reason == "off_topic")
     print(f"  Passed:   {len(passed)}")
-    print(f"  Filtered: {len(filtered_out)} total")
-    print(f"    → noise communities: {noise_count}")
-    print(f"    → off-topic (no connectomics terms): {offtopic_count}")
-    print(f"  Sample filtered-out papers:")
-    for reason, title in filtered_out[:8]:
+    print(f"  Filtered (noise communities): {len(filtered_out)}")
+    print(f"  Sample filtered-out:")
+    for reason, title in filtered_out[:5]:
         print(f"    [{reason}] {title[:70]}")
 
     # Take top-N survivors (already sorted by composite_score from rankings)

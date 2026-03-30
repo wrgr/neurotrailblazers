@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "A 3D whole-brain atlas at single-cell resolution that captures individual neuron positions across the entire brain was needed to serve as a reference framework for integrating diverse neuroscience datasets.",
+    "challenge": "Creating a single-cell resolution whole-brain atlas requires simultaneous tissue clearing and physical expansion of the brain to make individual cells resolvable by light microscopy, followed by registration to a common coordinate framework.",
+    "action": "The authors developed CUBIC-X, a protocol combining the CUBIC tissue clearing method with expansion microscopy to physically expand and optically clear mouse brains, enabling 3D imaging at single-cell resolution. They used this to build a whole-brain atlas registering cell positions to a common reference.",
+    "resolution": "CUBIC-X produced a 3D single-cell-resolution whole-brain atlas of the mouse, capturing neuron positions across all brain regions and enabling quantitative comparisons of cell number and distribution. The atlas provides a reference for co-registering other datasets.",
+    "future_work": "Extending the approach to molecular profiling of individual cells within the cleared volume, and improving alignment algorithms for inter-individual registration, are key future directions."
+  },
+  "summaries": {
+    "beginner": "Scientists made a mouse brain transparent and physically larger using special chemicals, then used a microscope to create a detailed 3D map showing where every cell is located in the entire brain.",
+    "intermediate": "CUBIC-X combines CUBIC tissue clearing with expansion microscopy to achieve single-cell resolution in optically cleared whole mouse brains. The resulting 3D atlas captures neuron positions brain-wide, enabling quantitative analysis of cell distributions and providing a common reference frame for integrating multi-modal neuroscience data.",
+    "advanced": "The CUBIC-X protocol achieves expansion factors sufficient to resolve individual somata across the mouse brain, combined with optical clearing for volumetric light-sheet imaging. The atlas enables brain-wide cell counting and positional analysis, but caveats include deformation artifacts from the expansion process (requiring careful non-linear registration), the inability to resolve fine neuronal morphology such as axons and dendrites, and the absence of molecular identity information without additional labeling."
+  },
+  "discussion_prompts": [
+    "What are the sources of spatial distortion introduced by the CUBIC-X expansion process, and how were they corrected during atlas registration?",
+    "How does the single-cell resolution of this atlas compare to existing mouse brain atlases (e.g., Allen Brain Atlas), and what new neuroscience questions become tractable with this level of detail?",
+    "How could CUBIC-X be combined with multiplexed protein or RNA labeling to add molecular identity information to the cell position atlas?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "species:mouse",
+    "method:tissue-clearing",
+    "method:expansion-microscopy",
+    "data:atlas",
+    "imaging:light-sheet",
+    "tool:cubic-x"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The FlyWire Drosophila brain connectome's initial synapse detection had known failure modes for certain neuron types with unusual cytoplasmic properties (dark cytosols, axo-axonic synapses), leaving a fraction of synaptic connections missed or erroneous.",
+    "challenge": "Detecting synapses in neurons with dark cytosols or atypical synaptic morphologies requires specialized algorithms or targeted retraining, as general-purpose synapse detectors trained on typical synapses fail to generalize to these edge cases.",
+    "action": "The authors identified systematic failure modes in the original FlyWire synapse detection pipeline, developed new detection models targeting these problematic categories, and applied them to the entire FAFB EM dataset to supplement the existing synapse table with newly detected connections.",
+    "resolution": "The updated synapse detection added a substantial number of previously missed synaptic connections in neurons with dark cytosols and identified novel axo-axonic synapse classes, improving the completeness of the FlyWire connectome. The improved synapse table was released as an update to the FlyWire resource.",
+    "future_work": "Continuous synapse table improvement through iterative detection model refinement, and development of methods for detecting modulatory (non-canonical) synaptic contacts, remain ongoing needs."
+  },
+  "summaries": {
+    "beginner": "Even the best automated systems for finding connections in brain images miss some synapses, especially at unusual-looking neurons. This 2025 paper found and fixed the most important gaps in the fly brain connectome's synapse map, adding thousands of previously missed connections.",
+    "intermediate": "This 2025 paper addresses known incompleteness in the FlyWire synapse detection pipeline by developing targeted algorithms for neurons with dark cytosols, axo-axonic synapses, and complex polyadic configurations. The resulting improved synapse table significantly increases connectivity completeness for affected neuron classes and was integrated into the FlyWire public resource.",
+    "advanced": "Synapse detection in whole-brain EM datasets is an iterative process, and this paper demonstrates the value of targeted retraining for systematically underperforming neuron classes. The identification of dark cytosol neurons as a major source of false negatives, and the development of specialized models for these classes, exemplifies how population-level error auditing can guide algorithmic improvement. A remaining caveat is that newly detected synapses have not been individually proofread, and the false positive rate for the specialized models on edge cases may be higher than for the general model."
+  },
+  "discussion_prompts": [
+    "How were neurons with problematic synapse detection identified \u2014 through community feedback, computational auditing, or both \u2014 and what does this reveal about quality control workflows for large connectome datasets?",
+    "What is the expected false positive rate for the new synapse detection models, and how should users weight newly detected synapses versus those from the original pipeline in circuit analysis?",
+    "What fraction of total synaptic connections in the FlyWire connectome were added by this improved detection, and for which specific neuron types is the connectivity picture most significantly changed?"
+  ],
+  "dimension": "segmentation",
+  "tags": [
+    "species:drosophila",
+    "dataset:flywire",
+    "method:synapse-detection",
+    "method:deep-learning",
+    "neuro:synapse",
+    "method:error-correction"
+  ]
+}

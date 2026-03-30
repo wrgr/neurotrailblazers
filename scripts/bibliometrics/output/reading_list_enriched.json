@@ -36,7 +36,11 @@
       "S. Trasatti",
       "\u041e. \u0410. \u041f\u0435\u0442\u0440\u0438\u0439"
     ],
-    "reading_order": 1
+    "reading_order": 1,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W2130793535",
@@ -67,7 +71,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 2
+    "reading_order": 2,
+    "core_number": 10,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2156761163",
@@ -99,7 +107,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 3
+    "reading_order": 3,
+    "core_number": 10,
+    "in_degree": 14,
+    "out_degree": 0,
+    "total_degree": 14
   },
   {
     "openalex_id": "https://openalex.org/W2158090607",
@@ -130,7 +142,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 4
+    "reading_order": 4,
+    "core_number": 20,
+    "in_degree": 34,
+    "out_degree": 0,
+    "total_degree": 34
   },
   {
     "openalex_id": "https://openalex.org/W2085989895",
@@ -162,7 +178,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 5
+    "reading_order": 5,
+    "core_number": 27,
+    "in_degree": 103,
+    "out_degree": 0,
+    "total_degree": 103
   },
   {
     "openalex_id": "https://openalex.org/W2117726420",
@@ -195,7 +215,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 6
+    "reading_order": 6,
+    "core_number": 17,
+    "in_degree": 34,
+    "out_degree": 0,
+    "total_degree": 34
   },
   {
     "openalex_id": "https://openalex.org/W1942214720",
@@ -226,7 +250,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 7
+    "reading_order": 7,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W1665095741",
@@ -257,7 +285,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 8
+    "reading_order": 8,
+    "core_number": 10,
+    "in_degree": 9,
+    "out_degree": 2,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W1992419399",
@@ -290,7 +322,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 9
+    "reading_order": 9,
+    "core_number": 6,
+    "in_degree": 6,
+    "out_degree": 2,
+    "total_degree": 8
   },
   {
     "openalex_id": "https://openalex.org/W2034269086",
@@ -318,7 +354,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 10
+    "reading_order": 10,
+    "core_number": 4,
+    "in_degree": 10,
+    "out_degree": 0,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2021687531",
@@ -349,7 +389,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 11
+    "reading_order": 11,
+    "core_number": 20,
+    "in_degree": 17,
+    "out_degree": 8,
+    "total_degree": 25
   },
   {
     "openalex_id": "https://openalex.org/W2102085111",
@@ -383,7 +427,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 12
+    "reading_order": 12,
+    "core_number": 2,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2151137320",
@@ -415,7 +463,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 13
+    "reading_order": 13,
+    "core_number": 19,
+    "in_degree": 29,
+    "out_degree": 4,
+    "total_degree": 33
   },
   {
     "openalex_id": "https://openalex.org/W2042422091",
@@ -447,7 +499,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 14
+    "reading_order": 14,
+    "core_number": 23,
+    "in_degree": 46,
+    "out_degree": 2,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W2056081184",
@@ -479,7 +535,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 15
+    "reading_order": 15,
+    "core_number": 27,
+    "in_degree": 43,
+    "out_degree": 4,
+    "total_degree": 47
   },
   {
     "openalex_id": "https://openalex.org/W2164727176",
@@ -510,7 +570,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 16
+    "reading_order": 16,
+    "core_number": 32,
+    "in_degree": 88,
+    "out_degree": 8,
+    "total_degree": 96
   },
   {
     "openalex_id": "https://openalex.org/W2096410114",
@@ -542,7 +606,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 17
+    "reading_order": 17,
+    "core_number": 8,
+    "in_degree": 19,
+    "out_degree": 2,
+    "total_degree": 21
   },
   {
     "openalex_id": "https://openalex.org/W2063001897",
@@ -573,7 +641,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 18
+    "reading_order": 18,
+    "core_number": 23,
+    "in_degree": 39,
+    "out_degree": 0,
+    "total_degree": 39
   },
   {
     "openalex_id": "https://openalex.org/W2019370496",
@@ -605,7 +677,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 19
+    "reading_order": 19,
+    "core_number": 27,
+    "in_degree": 71,
+    "out_degree": 2,
+    "total_degree": 73
   },
   {
     "openalex_id": "https://openalex.org/W2071881327",
@@ -636,7 +712,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 20
+    "reading_order": 20,
+    "core_number": 20,
+    "in_degree": 33,
+    "out_degree": 3,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W2125435699",
@@ -666,7 +746,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 21
+    "reading_order": 21,
+    "core_number": 5,
+    "in_degree": 7,
+    "out_degree": 0,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2142875089",
@@ -696,7 +780,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 22
+    "reading_order": 22,
+    "core_number": 26,
+    "in_degree": 45,
+    "out_degree": 5,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W2163480486",
@@ -728,7 +816,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 23
+    "reading_order": 23,
+    "core_number": 21,
+    "in_degree": 44,
+    "out_degree": 12,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W2128314959",
@@ -762,7 +854,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 24
+    "reading_order": 24,
+    "core_number": 32,
+    "in_degree": 101,
+    "out_degree": 24,
+    "total_degree": 125
   },
   {
     "openalex_id": "https://openalex.org/W2006096283",
@@ -798,7 +894,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 25
+    "reading_order": 25,
+    "core_number": 27,
+    "in_degree": 94,
+    "out_degree": 9,
+    "total_degree": 103
   },
   {
     "openalex_id": "https://openalex.org/W2147607085",
@@ -830,7 +930,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 26
+    "reading_order": 26,
+    "core_number": 19,
+    "in_degree": 47,
+    "out_degree": 3,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W2146693559",
@@ -863,7 +967,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 27
+    "reading_order": 27,
+    "core_number": 32,
+    "in_degree": 374,
+    "out_degree": 26,
+    "total_degree": 400
   },
   {
     "openalex_id": "https://openalex.org/W2088256340",
@@ -895,7 +1003,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 28
+    "reading_order": 28,
+    "core_number": 26,
+    "in_degree": 130,
+    "out_degree": 27,
+    "total_degree": 157
   },
   {
     "openalex_id": "https://openalex.org/W2160382843",
@@ -931,7 +1043,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 29
+    "reading_order": 29,
+    "core_number": 4,
+    "in_degree": 6,
+    "out_degree": 1,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2001591494",
@@ -962,7 +1078,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 30
+    "reading_order": 30,
+    "core_number": 6,
+    "in_degree": 22,
+    "out_degree": 2,
+    "total_degree": 24
   },
   {
     "openalex_id": "https://openalex.org/W2169791141",
@@ -993,7 +1113,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 31
+    "reading_order": 31,
+    "core_number": 22,
+    "in_degree": 49,
+    "out_degree": 1,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W1970695058",
@@ -1025,7 +1149,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 32
+    "reading_order": 32,
+    "core_number": 32,
+    "in_degree": 158,
+    "out_degree": 17,
+    "total_degree": 175
   },
   {
     "openalex_id": "https://openalex.org/W1999055090",
@@ -1056,7 +1184,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 33
+    "reading_order": 33,
+    "core_number": 25,
+    "in_degree": 40,
+    "out_degree": 17,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W2136435696",
@@ -1089,7 +1221,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 34
+    "reading_order": 34,
+    "core_number": 30,
+    "in_degree": 123,
+    "out_degree": 14,
+    "total_degree": 137
   },
   {
     "openalex_id": "https://openalex.org/W1981764342",
@@ -1122,7 +1258,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 35
+    "reading_order": 35,
+    "core_number": 26,
+    "in_degree": 60,
+    "out_degree": 11,
+    "total_degree": 71
   },
   {
     "openalex_id": "https://openalex.org/W2105436594",
@@ -1155,7 +1295,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 36
+    "reading_order": 36,
+    "core_number": 26,
+    "in_degree": 76,
+    "out_degree": 26,
+    "total_degree": 102
   },
   {
     "openalex_id": "https://openalex.org/W1999653836",
@@ -1187,7 +1331,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 37
+    "reading_order": 37,
+    "core_number": 32,
+    "in_degree": 501,
+    "out_degree": 70,
+    "total_degree": 571
   },
   {
     "openalex_id": "https://openalex.org/W2087523977",
@@ -1220,7 +1368,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 38
+    "reading_order": 38,
+    "core_number": 26,
+    "in_degree": 85,
+    "out_degree": 34,
+    "total_degree": 119
   },
   {
     "openalex_id": "https://openalex.org/W2026981426",
@@ -1253,7 +1405,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 39
+    "reading_order": 39,
+    "core_number": 26,
+    "in_degree": 67,
+    "out_degree": 24,
+    "total_degree": 91
   },
   {
     "openalex_id": "https://openalex.org/W2136608905",
@@ -1286,7 +1442,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 40
+    "reading_order": 40,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2069702026",
@@ -1318,7 +1478,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 41
+    "reading_order": 41,
+    "core_number": 26,
+    "in_degree": 192,
+    "out_degree": 33,
+    "total_degree": 225
   },
   {
     "openalex_id": "https://openalex.org/W2124953625",
@@ -1349,7 +1513,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 42
+    "reading_order": 42,
+    "core_number": 32,
+    "in_degree": 114,
+    "out_degree": 88,
+    "total_degree": 202
   },
   {
     "openalex_id": "https://openalex.org/W2977883299",
@@ -1384,7 +1552,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 43
+    "reading_order": 43,
+    "core_number": 26,
+    "in_degree": 77,
+    "out_degree": 3,
+    "total_degree": 80
   },
   {
     "openalex_id": "https://openalex.org/W1973824709",
@@ -1416,7 +1588,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 44
+    "reading_order": 44,
+    "core_number": 26,
+    "in_degree": 122,
+    "out_degree": 17,
+    "total_degree": 139
   },
   {
     "openalex_id": "https://openalex.org/W2000616436",
@@ -1449,7 +1625,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 45
+    "reading_order": 45,
+    "core_number": 26,
+    "in_degree": 88,
+    "out_degree": 32,
+    "total_degree": 120
   },
   {
     "openalex_id": "https://openalex.org/W2058483899",
@@ -1480,7 +1660,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 46
+    "reading_order": 46,
+    "core_number": 20,
+    "in_degree": 61,
+    "out_degree": 11,
+    "total_degree": 72
   },
   {
     "openalex_id": "https://openalex.org/W4241074797",
@@ -1511,7 +1695,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 47
+    "reading_order": 47,
+    "core_number": 26,
+    "in_degree": 89,
+    "out_degree": 11,
+    "total_degree": 100
   },
   {
     "openalex_id": "https://openalex.org/W1983485726",
@@ -1543,7 +1731,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 48
+    "reading_order": 48,
+    "core_number": 32,
+    "in_degree": 249,
+    "out_degree": 73,
+    "total_degree": 322
   },
   {
     "openalex_id": "https://openalex.org/W2020519533",
@@ -1579,7 +1771,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 49
+    "reading_order": 49,
+    "core_number": 27,
+    "in_degree": 141,
+    "out_degree": 31,
+    "total_degree": 172
   },
   {
     "openalex_id": "https://openalex.org/W2148080316",
@@ -1612,7 +1808,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 50
+    "reading_order": 50,
+    "core_number": 8,
+    "in_degree": 10,
+    "out_degree": 1,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W2024729467",
@@ -1648,7 +1848,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 51
+    "reading_order": 51,
+    "core_number": 30,
+    "in_degree": 286,
+    "out_degree": 37,
+    "total_degree": 323
   },
   {
     "openalex_id": "https://openalex.org/W2048030072",
@@ -1680,7 +1884,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 52
+    "reading_order": 52,
+    "core_number": 7,
+    "in_degree": 44,
+    "out_degree": 5,
+    "total_degree": 49
   },
   {
     "openalex_id": "https://openalex.org/W2016323639",
@@ -1711,7 +1919,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 53
+    "reading_order": 53,
+    "core_number": 26,
+    "in_degree": 151,
+    "out_degree": 33,
+    "total_degree": 184
   },
   {
     "openalex_id": "https://openalex.org/W2000209446",
@@ -1747,7 +1959,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 54
+    "reading_order": 54,
+    "core_number": 7,
+    "in_degree": 11,
+    "out_degree": 1,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W2139919351",
@@ -1779,7 +1995,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 55
+    "reading_order": 55,
+    "core_number": 26,
+    "in_degree": 129,
+    "out_degree": 15,
+    "total_degree": 144
   },
   {
     "openalex_id": "https://openalex.org/W2080403608",
@@ -1815,7 +2035,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 56
+    "reading_order": 56,
+    "core_number": 30,
+    "in_degree": 61,
+    "out_degree": 33,
+    "total_degree": 94
   },
   {
     "openalex_id": "https://openalex.org/W1480729244",
@@ -1851,7 +2075,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 57
+    "reading_order": 57,
+    "core_number": 3,
+    "in_degree": 2,
+    "out_degree": 4,
+    "total_degree": 6
   },
   {
     "openalex_id": "https://openalex.org/W2145150141",
@@ -1887,7 +2115,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 58
+    "reading_order": 58,
+    "core_number": 2,
+    "in_degree": 3,
+    "out_degree": 2,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2919115771",
@@ -1920,7 +2152,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 59
+    "reading_order": 59,
+    "core_number": 22,
+    "in_degree": 162,
+    "out_degree": 6,
+    "total_degree": 168
   },
   {
     "openalex_id": "https://openalex.org/W2040385059",
@@ -1954,7 +2190,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 60
+    "reading_order": 60,
+    "core_number": 1,
+    "in_degree": 2,
+    "out_degree": 1,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2169205464",
@@ -1990,7 +2230,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 61
+    "reading_order": 61,
+    "core_number": 2,
+    "in_degree": 3,
+    "out_degree": 3,
+    "total_degree": 6
   },
   {
     "openalex_id": "https://openalex.org/W2366536035",
@@ -2023,7 +2267,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 62
+    "reading_order": 62,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2265062179",
@@ -2059,7 +2307,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 63
+    "reading_order": 63,
+    "core_number": 6,
+    "in_degree": 11,
+    "out_degree": 2,
+    "total_degree": 13
   },
   {
     "openalex_id": "https://openalex.org/W2301131921",
@@ -2095,7 +2347,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 64
+    "reading_order": 64,
+    "core_number": 5,
+    "in_degree": 8,
+    "out_degree": 2,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2762087180",
@@ -2131,7 +2387,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 65
+    "reading_order": 65,
+    "core_number": 6,
+    "in_degree": 16,
+    "out_degree": 2,
+    "total_degree": 18
   },
   {
     "openalex_id": "https://openalex.org/W4211091012",
@@ -2163,7 +2423,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 66
+    "reading_order": 66,
+    "core_number": 32,
+    "in_degree": 112,
+    "out_degree": 52,
+    "total_degree": 164
   },
   {
     "openalex_id": "https://openalex.org/W2760242188",
@@ -2196,7 +2460,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 67
+    "reading_order": 67,
+    "core_number": 26,
+    "in_degree": 40,
+    "out_degree": 41,
+    "total_degree": 81
   },
   {
     "openalex_id": "https://openalex.org/W2788640168",
@@ -2232,7 +2500,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 68
+    "reading_order": 68,
+    "core_number": 6,
+    "in_degree": 40,
+    "out_degree": 8,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W2833620410",
@@ -2265,7 +2537,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 69
+    "reading_order": 69,
+    "core_number": 32,
+    "in_degree": 18,
+    "out_degree": 66,
+    "total_degree": 84
   },
   {
     "openalex_id": "https://openalex.org/W2905344744",
@@ -2298,7 +2574,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 70
+    "reading_order": 70,
+    "core_number": 23,
+    "in_degree": 123,
+    "out_degree": 41,
+    "total_degree": 164
   },
   {
     "openalex_id": "https://openalex.org/W2951686954",
@@ -2327,7 +2607,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 71
+    "reading_order": 71,
+    "core_number": 8,
+    "in_degree": 500,
+    "out_degree": 1,
+    "total_degree": 501
   },
   {
     "openalex_id": "https://openalex.org/W2954996726",
@@ -2359,7 +2643,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 72
+    "reading_order": 72,
+    "core_number": 10,
+    "in_degree": 10,
+    "out_degree": 4,
+    "total_degree": 14
   },
   {
     "openalex_id": "https://openalex.org/W3046275966",
@@ -2395,7 +2683,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 73
+    "reading_order": 73,
+    "core_number": 4,
+    "in_degree": 3,
+    "out_degree": 1,
+    "total_degree": 4
   },
   {
     "openalex_id": "https://openalex.org/W3016007634",
@@ -2431,7 +2723,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 74
+    "reading_order": 74,
+    "core_number": 26,
+    "in_degree": 555,
+    "out_degree": 73,
+    "total_degree": 628
   },
   {
     "openalex_id": "https://openalex.org/W3011154449",
@@ -2467,7 +2763,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 75
+    "reading_order": 75,
+    "core_number": 12,
+    "in_degree": 8,
+    "out_degree": 12,
+    "total_degree": 20
   },
   {
     "openalex_id": "https://openalex.org/W3012009865",
@@ -2503,7 +2803,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 76
+    "reading_order": 76,
+    "core_number": 16,
+    "in_degree": 13,
+    "out_degree": 9,
+    "total_degree": 22
   },
   {
     "openalex_id": "https://openalex.org/W3007736625",
@@ -2537,7 +2841,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 77
+    "reading_order": 77,
+    "core_number": 30,
+    "in_degree": 35,
+    "out_degree": 61,
+    "total_degree": 96
   },
   {
     "openalex_id": "https://openalex.org/W3021638720",
@@ -2566,7 +2874,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 78
+    "reading_order": 78,
+    "core_number": 20,
+    "in_degree": 34,
+    "out_degree": 16,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W3094325446",
@@ -2602,7 +2914,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 79
+    "reading_order": 79,
+    "core_number": 27,
+    "in_degree": 8,
+    "out_degree": 40,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W2998583117",
@@ -2638,7 +2954,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 80
+    "reading_order": 80,
+    "core_number": 23,
+    "in_degree": 34,
+    "out_degree": 36,
+    "total_degree": 70
   },
   {
     "openalex_id": "https://openalex.org/W3040489328",
@@ -2671,7 +2991,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 81
+    "reading_order": 81,
+    "core_number": 19,
+    "in_degree": 5,
+    "out_degree": 19,
+    "total_degree": 24
   },
   {
     "openalex_id": "https://openalex.org/W3174246647",
@@ -2707,7 +3031,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 82
+    "reading_order": 82,
+    "core_number": 1,
+    "in_degree": 0,
+    "out_degree": 1,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W3197078253",
@@ -2743,7 +3071,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 83
+    "reading_order": 83,
+    "core_number": 27,
+    "in_degree": 12,
+    "out_degree": 80,
+    "total_degree": 92
   },
   {
     "openalex_id": "https://openalex.org/W3134372233",
@@ -2774,7 +3106,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 84
+    "reading_order": 84,
+    "core_number": 8,
+    "in_degree": 26,
+    "out_degree": 6,
+    "total_degree": 32
   },
   {
     "openalex_id": "https://openalex.org/W3198853168",
@@ -2808,7 +3144,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 85
+    "reading_order": 85,
+    "core_number": 7,
+    "in_degree": 26,
+    "out_degree": 15,
+    "total_degree": 41
   },
   {
     "openalex_id": "https://openalex.org/W4281842027",
@@ -2840,7 +3180,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 86
+    "reading_order": 86,
+    "core_number": 32,
+    "in_degree": 17,
+    "out_degree": 56,
+    "total_degree": 73
   },
   {
     "openalex_id": "https://openalex.org/W4318480345",
@@ -2873,7 +3217,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 87
+    "reading_order": 87,
+    "core_number": 27,
+    "in_degree": 2,
+    "out_degree": 54,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W2142220522",
@@ -2912,7 +3260,11 @@
       "E. K. Grebel",
       "Scott F. Anderson"
     ],
-    "reading_order": 88
+    "reading_order": 88,
+    "core_number": 4,
+    "in_degree": 7,
+    "out_degree": 0,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2048450239",
@@ -2946,7 +3298,11 @@
       "Thomas Euler",
       "Philipp Berens"
     ],
-    "reading_order": 89
+    "reading_order": 89,
+    "core_number": 16,
+    "in_degree": 22,
+    "out_degree": 1,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W1902027874",
@@ -2981,7 +3337,11 @@
       "Thomas Euler",
       "Philipp Berens"
     ],
-    "reading_order": 90
+    "reading_order": 90,
+    "core_number": 10,
+    "in_degree": 15,
+    "out_degree": 1,
+    "total_degree": 16
   },
   {
     "openalex_id": "https://openalex.org/W2134208433",
@@ -3018,7 +3378,11 @@
       "Edward S. Boyden",
       "Markus Sauer"
     ],
-    "reading_order": 91
+    "reading_order": 91,
+    "core_number": 4,
+    "in_degree": 7,
+    "out_degree": 2,
+    "total_degree": 9
   },
   {
     "openalex_id": "https://openalex.org/W2145504425",
@@ -3053,7 +3417,11 @@
       "Jeff W. Lichtman",
       "Hanspeter Pfister"
     ],
-    "reading_order": 92
+    "reading_order": 92,
+    "core_number": 26,
+    "in_degree": 256,
+    "out_degree": 4,
+    "total_degree": 260
   },
   {
     "openalex_id": "https://openalex.org/W2147101007",
@@ -3088,7 +3456,11 @@
       "Oliver Hobert",
       "Mei Zhen"
     ],
-    "reading_order": 93
+    "reading_order": 93,
+    "core_number": 10,
+    "in_degree": 19,
+    "out_degree": 1,
+    "total_degree": 20
   },
   {
     "openalex_id": "https://openalex.org/W2018858346",
@@ -3122,7 +3494,11 @@
       "J. E. Fischer",
       "Catherine Journet"
     ],
-    "reading_order": 94
+    "reading_order": 94,
+    "core_number": 1,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2071707134",
@@ -3156,7 +3532,11 @@
       "J. E. Fischer",
       "Catherine Journet"
     ],
-    "reading_order": 95
+    "reading_order": 95,
+    "core_number": 1,
+    "in_degree": 0,
+    "out_degree": 1,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W2120145199",
@@ -3193,7 +3573,11 @@
       "Paolo Giannozzi",
       "Stefano Baroni"
     ],
-    "reading_order": 96
+    "reading_order": 96,
+    "core_number": 1,
+    "in_degree": 2,
+    "out_degree": 1,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2008620264",
@@ -3228,7 +3612,11 @@
       "Yang\u2010Yu Liu",
       "Albert-\u0139aszl\u00f3 Barab\u00e1si"
     ],
-    "reading_order": 97
+    "reading_order": 97,
+    "core_number": 32,
+    "in_degree": 263,
+    "out_degree": 3,
+    "total_degree": 266
   },
   {
     "openalex_id": "https://openalex.org/W2128654538",
@@ -3267,7 +3655,11 @@
       "Yury Gogotsi",
       "A. K. Ge\u01d0m"
     ],
-    "reading_order": 98
+    "reading_order": 98,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2145132952",
@@ -3304,7 +3696,11 @@
       "Olaf Sporns",
       "Edward T. Bullmore"
     ],
-    "reading_order": 99
+    "reading_order": 99,
+    "core_number": 30,
+    "in_degree": 75,
+    "out_degree": 0,
+    "total_degree": 75
   },
   {
     "openalex_id": "https://openalex.org/W2052644075",
@@ -3338,7 +3734,11 @@
       "Olaf Sporns",
       "Edward T. Bullmore"
     ],
-    "reading_order": 100
+    "reading_order": 100,
+    "core_number": 27,
+    "in_degree": 81,
+    "out_degree": 2,
+    "total_degree": 83
   },
   {
     "openalex_id": "https://openalex.org/W2120357670",
@@ -3369,7 +3769,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 101
+    "reading_order": 101,
+    "core_number": 5,
+    "in_degree": 10,
+    "out_degree": 0,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W1618384257",
@@ -3400,7 +3804,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 102
+    "reading_order": 102,
+    "core_number": 22,
+    "in_degree": 50,
+    "out_degree": 0,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W2753533763",
@@ -3428,7 +3836,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 103
+    "reading_order": 103,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W1847168837",
@@ -3461,7 +3873,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 104
+    "reading_order": 104,
+    "core_number": 13,
+    "in_degree": 19,
+    "out_degree": 0,
+    "total_degree": 19
   },
   {
     "openalex_id": "https://openalex.org/W3134937924",
@@ -3492,7 +3908,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 105
+    "reading_order": 105,
+    "core_number": 11,
+    "in_degree": 11,
+    "out_degree": 0,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W1971937094",
@@ -3522,7 +3942,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 106
+    "reading_order": 106,
+    "core_number": 32,
+    "in_degree": 74,
+    "out_degree": 0,
+    "total_degree": 74
   },
   {
     "openalex_id": "https://openalex.org/W2133059825",
@@ -3553,7 +3977,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 107
+    "reading_order": 107,
+    "core_number": 18,
+    "in_degree": 56,
+    "out_degree": 0,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W2141403362",
@@ -3585,7 +4013,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 108
+    "reading_order": 108,
+    "core_number": 20,
+    "in_degree": 24,
+    "out_degree": 0,
+    "total_degree": 24
   },
   {
     "openalex_id": "https://openalex.org/W2157380583",
@@ -3617,7 +4049,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 109
+    "reading_order": 109,
+    "core_number": 15,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2050810476",
@@ -3651,7 +4087,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 110
+    "reading_order": 110,
+    "core_number": 23,
+    "in_degree": 36,
+    "out_degree": 0,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W145803873",
@@ -3682,7 +4122,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 111
+    "reading_order": 111,
+    "core_number": 22,
+    "in_degree": 35,
+    "out_degree": 0,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W2021230596",
@@ -3715,7 +4159,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 112
+    "reading_order": 112,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W1496512675",
@@ -3748,7 +4196,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 113
+    "reading_order": 113,
+    "core_number": 12,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W1526093332",
@@ -3782,7 +4234,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 114
+    "reading_order": 114,
+    "core_number": 8,
+    "in_degree": 7,
+    "out_degree": 1,
+    "total_degree": 8
   },
   {
     "openalex_id": "https://openalex.org/W2905110430",
@@ -3808,7 +4264,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 115
+    "reading_order": 115,
+    "core_number": 28,
+    "in_degree": 57,
+    "out_degree": 0,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W2160938187",
@@ -3842,7 +4302,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 116
+    "reading_order": 116,
+    "core_number": 32,
+    "in_degree": 719,
+    "out_degree": 0,
+    "total_degree": 719
   },
   {
     "openalex_id": "https://openalex.org/W2167150855",
@@ -3874,7 +4338,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 117
+    "reading_order": 117,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W2229412420",
@@ -3906,7 +4374,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 118
+    "reading_order": 118,
+    "core_number": 10,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W3127623214",
@@ -3937,7 +4409,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 119
+    "reading_order": 119,
+    "core_number": 27,
+    "in_degree": 54,
+    "out_degree": 0,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W1605353467",
@@ -3959,7 +4435,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 120
+    "reading_order": 120,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W2079948225",
@@ -3993,7 +4473,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 121
+    "reading_order": 121,
+    "core_number": 12,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2319937903",
@@ -4024,7 +4508,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 122
+    "reading_order": 122,
+    "core_number": 26,
+    "in_degree": 36,
+    "out_degree": 0,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W2006067904",
@@ -4056,7 +4544,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 123
+    "reading_order": 123,
+    "core_number": 26,
+    "in_degree": 100,
+    "out_degree": 0,
+    "total_degree": 100
   },
   {
     "openalex_id": "https://openalex.org/W2055043387",
@@ -4091,7 +4583,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 124
+    "reading_order": 124,
+    "core_number": 10,
+    "in_degree": 17,
+    "out_degree": 0,
+    "total_degree": 17
   },
   {
     "openalex_id": "https://openalex.org/W2103681669",
@@ -4125,7 +4621,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 125
+    "reading_order": 125,
+    "core_number": 9,
+    "in_degree": 10,
+    "out_degree": 0,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2135346934",
@@ -4151,7 +4651,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 126
+    "reading_order": 126,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2071714163",
@@ -4185,7 +4689,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 127
+    "reading_order": 127,
+    "core_number": 17,
+    "in_degree": 28,
+    "out_degree": 1,
+    "total_degree": 29
   },
   {
     "openalex_id": "https://openalex.org/W2098580305",
@@ -4214,7 +4722,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 128
+    "reading_order": 128,
+    "core_number": 32,
+    "in_degree": 184,
+    "out_degree": 0,
+    "total_degree": 184
   },
   {
     "openalex_id": "https://openalex.org/W1897638147",
@@ -4246,7 +4758,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 129
+    "reading_order": 129,
+    "core_number": 18,
+    "in_degree": 35,
+    "out_degree": 0,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W2111748868",
@@ -4278,7 +4794,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 130
+    "reading_order": 130,
+    "core_number": 26,
+    "in_degree": 81,
+    "out_degree": 1,
+    "total_degree": 82
   },
   {
     "openalex_id": "https://openalex.org/W2064440086",
@@ -4309,7 +4829,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 131
+    "reading_order": 131,
+    "core_number": 27,
+    "in_degree": 33,
+    "out_degree": 1,
+    "total_degree": 34
   },
   {
     "openalex_id": "https://openalex.org/W1849206188",
@@ -4341,7 +4865,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 132
+    "reading_order": 132,
+    "core_number": 4,
+    "in_degree": 4,
+    "out_degree": 1,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2094017021",
@@ -4372,7 +4900,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 133
+    "reading_order": 133,
+    "core_number": 30,
+    "in_degree": 38,
+    "out_degree": 2,
+    "total_degree": 40
   },
   {
     "openalex_id": "https://openalex.org/W1872002431",
@@ -4404,7 +4936,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 134
+    "reading_order": 134,
+    "core_number": 17,
+    "in_degree": 22,
+    "out_degree": 1,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W2110065044",
@@ -4436,7 +4972,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 135
+    "reading_order": 135,
+    "core_number": 26,
+    "in_degree": 100,
+    "out_degree": 0,
+    "total_degree": 100
   },
   {
     "openalex_id": "https://openalex.org/W4239510810",
@@ -4468,7 +5008,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 136
+    "reading_order": 136,
+    "core_number": 12,
+    "in_degree": 21,
+    "out_degree": 0,
+    "total_degree": 21
   },
   {
     "openalex_id": "https://openalex.org/W2119821739",
@@ -4500,7 +5044,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 137
+    "reading_order": 137,
+    "core_number": 9,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2148275477",
@@ -4532,7 +5080,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 138
+    "reading_order": 138,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W1483242733",
@@ -4563,7 +5115,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 139
+    "reading_order": 139,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2063237661",
@@ -4599,7 +5155,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 140
+    "reading_order": 140,
+    "core_number": 18,
+    "in_degree": 19,
+    "out_degree": 2,
+    "total_degree": 21
   },
   {
     "openalex_id": "https://openalex.org/W2138996400",
@@ -4632,7 +5192,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 141
+    "reading_order": 141,
+    "core_number": 31,
+    "in_degree": 58,
+    "out_degree": 3,
+    "total_degree": 61
   },
   {
     "openalex_id": "https://openalex.org/W2029101220",
@@ -4665,7 +5229,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 142
+    "reading_order": 142,
+    "core_number": 23,
+    "in_degree": 128,
+    "out_degree": 0,
+    "total_degree": 128
   },
   {
     "openalex_id": "https://openalex.org/W2133589238",
@@ -4701,7 +5269,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 143
+    "reading_order": 143,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2145889472",
@@ -4733,7 +5305,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 144
+    "reading_order": 144,
+    "core_number": 13,
+    "in_degree": 23,
+    "out_degree": 0,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W2117140276",
@@ -4764,7 +5340,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 145
+    "reading_order": 145,
+    "core_number": 25,
+    "in_degree": 53,
+    "out_degree": 0,
+    "total_degree": 53
   },
   {
     "openalex_id": "https://openalex.org/W2157823046",
@@ -4798,7 +5378,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 146
+    "reading_order": 146,
+    "core_number": 6,
+    "in_degree": 6,
+    "out_degree": 0,
+    "total_degree": 6
   },
   {
     "openalex_id": "https://openalex.org/W1511198581",
@@ -4834,7 +5418,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 147
+    "reading_order": 147,
+    "core_number": 4,
+    "in_degree": 5,
+    "out_degree": 0,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2123341385",
@@ -4867,7 +5455,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 148
+    "reading_order": 148,
+    "core_number": 17,
+    "in_degree": 29,
+    "out_degree": 0,
+    "total_degree": 29
   },
   {
     "openalex_id": "https://openalex.org/W2112796928",
@@ -4901,7 +5493,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 149
+    "reading_order": 149,
+    "core_number": 15,
+    "in_degree": 58,
+    "out_degree": 0,
+    "total_degree": 58
   },
   {
     "openalex_id": "https://openalex.org/W2131938193",
@@ -4934,7 +5530,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 150
+    "reading_order": 150,
+    "core_number": 22,
+    "in_degree": 68,
+    "out_degree": 0,
+    "total_degree": 68
   },
   {
     "openalex_id": "https://openalex.org/W1603661052",
@@ -4963,7 +5563,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 151
+    "reading_order": 151,
+    "core_number": 26,
+    "in_degree": 64,
+    "out_degree": 0,
+    "total_degree": 64
   },
   {
     "openalex_id": "https://openalex.org/W1995017064",
@@ -4999,7 +5603,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 152
+    "reading_order": 152,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2112090702",
@@ -5031,7 +5639,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 153
+    "reading_order": 153,
+    "core_number": 32,
+    "in_degree": 492,
+    "out_degree": 2,
+    "total_degree": 494
   },
   {
     "openalex_id": "https://openalex.org/W2124486024",
@@ -5063,7 +5675,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 154
+    "reading_order": 154,
+    "core_number": 20,
+    "in_degree": 35,
+    "out_degree": 2,
+    "total_degree": 37
   },
   {
     "openalex_id": "https://openalex.org/W2124386111",
@@ -5094,7 +5710,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 155
+    "reading_order": 155,
+    "core_number": 17,
+    "in_degree": 26,
+    "out_degree": 0,
+    "total_degree": 26
   },
   {
     "openalex_id": "https://openalex.org/W1644749979",
@@ -5128,7 +5748,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 156
+    "reading_order": 156,
+    "core_number": 16,
+    "in_degree": 22,
+    "out_degree": 0,
+    "total_degree": 22
   },
   {
     "openalex_id": "https://openalex.org/W1761828760",
@@ -5161,7 +5785,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 157
+    "reading_order": 157,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2138621811",
@@ -5192,7 +5820,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 158
+    "reading_order": 158,
+    "core_number": 7,
+    "in_degree": 11,
+    "out_degree": 0,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W1976969221",
@@ -5225,7 +5857,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 159
+    "reading_order": 159,
+    "core_number": 12,
+    "in_degree": 15,
+    "out_degree": 1,
+    "total_degree": 16
   },
   {
     "openalex_id": "https://openalex.org/W2170596158",
@@ -5261,7 +5897,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 160
+    "reading_order": 160,
+    "core_number": 27,
+    "in_degree": 47,
+    "out_degree": 3,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W2769133055",
@@ -5294,7 +5934,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 161
+    "reading_order": 161,
+    "core_number": 21,
+    "in_degree": 37,
+    "out_degree": 2,
+    "total_degree": 39
   },
   {
     "openalex_id": "https://openalex.org/W2129057035",
@@ -5324,7 +5968,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 162
+    "reading_order": 162,
+    "core_number": 30,
+    "in_degree": 41,
+    "out_degree": 5,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W2151721316",
@@ -5357,7 +6005,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 163
+    "reading_order": 163,
+    "core_number": 27,
+    "in_degree": 109,
+    "out_degree": 4,
+    "total_degree": 113
   },
   {
     "openalex_id": "https://openalex.org/W2113319997",
@@ -5390,7 +6042,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 164
+    "reading_order": 164,
+    "core_number": 27,
+    "in_degree": 78,
+    "out_degree": 4,
+    "total_degree": 82
   },
   {
     "openalex_id": "https://openalex.org/W2110437310",
@@ -5424,7 +6080,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 165
+    "reading_order": 165,
+    "core_number": 26,
+    "in_degree": 58,
+    "out_degree": 4,
+    "total_degree": 62
   },
   {
     "openalex_id": "https://openalex.org/W2127810309",
@@ -5460,7 +6120,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 166
+    "reading_order": 166,
+    "core_number": 23,
+    "in_degree": 90,
+    "out_degree": 0,
+    "total_degree": 90
   },
   {
     "openalex_id": "https://openalex.org/W1977767269",
@@ -5491,7 +6155,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 167
+    "reading_order": 167,
+    "core_number": 8,
+    "in_degree": 33,
+    "out_degree": 0,
+    "total_degree": 33
   },
   {
     "openalex_id": "https://openalex.org/W2001141328",
@@ -5524,7 +6192,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 168
+    "reading_order": 168,
+    "core_number": 12,
+    "in_degree": 19,
+    "out_degree": 0,
+    "total_degree": 19
   },
   {
     "openalex_id": "https://openalex.org/W2065769502",
@@ -5557,7 +6229,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 169
+    "reading_order": 169,
+    "core_number": 32,
+    "in_degree": 109,
+    "out_degree": 4,
+    "total_degree": 113
   },
   {
     "openalex_id": "https://openalex.org/W2070207525",
@@ -5591,7 +6267,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 170
+    "reading_order": 170,
+    "core_number": 17,
+    "in_degree": 35,
+    "out_degree": 3,
+    "total_degree": 38
   },
   {
     "openalex_id": "https://openalex.org/W2144885342",
@@ -5626,7 +6306,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 171
+    "reading_order": 171,
+    "core_number": 21,
+    "in_degree": 37,
+    "out_degree": 5,
+    "total_degree": 42
   },
   {
     "openalex_id": "https://openalex.org/W2030363891",
@@ -5661,7 +6345,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 172
+    "reading_order": 172,
+    "core_number": 32,
+    "in_degree": 65,
+    "out_degree": 8,
+    "total_degree": 73
   },
   {
     "openalex_id": "https://openalex.org/W2168909179",
@@ -5697,7 +6385,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 173
+    "reading_order": 173,
+    "core_number": 5,
+    "in_degree": 10,
+    "out_degree": 0,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W1967094886",
@@ -5729,7 +6421,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 174
+    "reading_order": 174,
+    "core_number": 16,
+    "in_degree": 23,
+    "out_degree": 0,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W1480376833",
@@ -5760,7 +6456,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 175
+    "reading_order": 175,
+    "core_number": 13,
+    "in_degree": 16,
+    "out_degree": 0,
+    "total_degree": 16
   },
   {
     "openalex_id": "https://openalex.org/W2005926772",
@@ -5792,7 +6492,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 176
+    "reading_order": 176,
+    "core_number": 14,
+    "in_degree": 45,
+    "out_degree": 0,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W1522048223",
@@ -5823,7 +6527,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 177
+    "reading_order": 177,
+    "core_number": 11,
+    "in_degree": 25,
+    "out_degree": 0,
+    "total_degree": 25
   },
   {
     "openalex_id": "https://openalex.org/W2018019092",
@@ -5856,7 +6564,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 178
+    "reading_order": 178,
+    "core_number": 15,
+    "in_degree": 37,
+    "out_degree": 2,
+    "total_degree": 39
   },
   {
     "openalex_id": "https://openalex.org/W2138790588",
@@ -5888,7 +6600,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 179
+    "reading_order": 179,
+    "core_number": 21,
+    "in_degree": 35,
+    "out_degree": 0,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W2136573752",
@@ -5921,7 +6637,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 180
+    "reading_order": 180,
+    "core_number": 22,
+    "in_degree": 39,
+    "out_degree": 1,
+    "total_degree": 40
   },
   {
     "openalex_id": "https://openalex.org/W2148726987",
@@ -5953,7 +6673,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 181
+    "reading_order": 181,
+    "core_number": 22,
+    "in_degree": 38,
+    "out_degree": 1,
+    "total_degree": 39
   },
   {
     "openalex_id": "https://openalex.org/W2162010696",
@@ -5989,7 +6713,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 182
+    "reading_order": 182,
+    "core_number": 32,
+    "in_degree": 167,
+    "out_degree": 5,
+    "total_degree": 172
   },
   {
     "openalex_id": "https://openalex.org/W2038195874",
@@ -6021,7 +6749,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 183
+    "reading_order": 183,
+    "core_number": 19,
+    "in_degree": 53,
+    "out_degree": 4,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W2060464767",
@@ -6053,7 +6785,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 184
+    "reading_order": 184,
+    "core_number": 32,
+    "in_degree": 183,
+    "out_degree": 7,
+    "total_degree": 190
   },
   {
     "openalex_id": "https://openalex.org/W2081906155",
@@ -6089,7 +6825,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 185
+    "reading_order": 185,
+    "core_number": 17,
+    "in_degree": 23,
+    "out_degree": 0,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W2073449985",
@@ -6125,7 +6865,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 186
+    "reading_order": 186,
+    "core_number": 10,
+    "in_degree": 18,
+    "out_degree": 0,
+    "total_degree": 18
   },
   {
     "openalex_id": "https://openalex.org/W1974049455",
@@ -6158,7 +6902,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 187
+    "reading_order": 187,
+    "core_number": 28,
+    "in_degree": 54,
+    "out_degree": 0,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W2058046532",
@@ -6194,7 +6942,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 188
+    "reading_order": 188,
+    "core_number": 32,
+    "in_degree": 207,
+    "out_degree": 1,
+    "total_degree": 208
   },
   {
     "openalex_id": "https://openalex.org/W4235770099",
@@ -6228,7 +6980,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 189
+    "reading_order": 189,
+    "core_number": 26,
+    "in_degree": 76,
+    "out_degree": 2,
+    "total_degree": 78
   },
   {
     "openalex_id": "https://openalex.org/W2133903921",
@@ -6262,7 +7018,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 190
+    "reading_order": 190,
+    "core_number": 32,
+    "in_degree": 162,
+    "out_degree": 6,
+    "total_degree": 168
   },
   {
     "openalex_id": "https://openalex.org/W2156737316",
@@ -6294,7 +7054,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 191
+    "reading_order": 191,
+    "core_number": 32,
+    "in_degree": 126,
+    "out_degree": 4,
+    "total_degree": 130
   },
   {
     "openalex_id": "https://openalex.org/W2124637492",
@@ -6326,7 +7090,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 192
+    "reading_order": 192,
+    "core_number": 32,
+    "in_degree": 150,
+    "out_degree": 11,
+    "total_degree": 161
   },
   {
     "openalex_id": "https://openalex.org/W2153624566",
@@ -6362,7 +7130,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 193
+    "reading_order": 193,
+    "core_number": 32,
+    "in_degree": 158,
+    "out_degree": 7,
+    "total_degree": 165
   },
   {
     "openalex_id": "https://openalex.org/W2040956707",
@@ -6393,7 +7165,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 194
+    "reading_order": 194,
+    "core_number": 26,
+    "in_degree": 50,
+    "out_degree": 9,
+    "total_degree": 59
   },
   {
     "openalex_id": "https://openalex.org/W2004293194",
@@ -6428,7 +7204,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 195
+    "reading_order": 195,
+    "core_number": 25,
+    "in_degree": 51,
+    "out_degree": 5,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W2162407586",
@@ -6464,7 +7244,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 196
+    "reading_order": 196,
+    "core_number": 20,
+    "in_degree": 48,
+    "out_degree": 1,
+    "total_degree": 49
   },
   {
     "openalex_id": "https://openalex.org/W2159659012",
@@ -6497,7 +7281,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 197
+    "reading_order": 197,
+    "core_number": 19,
+    "in_degree": 63,
+    "out_degree": 1,
+    "total_degree": 64
   },
   {
     "openalex_id": "https://openalex.org/W2166689829",
@@ -6525,7 +7313,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 198
+    "reading_order": 198,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2117663940",
@@ -6558,7 +7350,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 199
+    "reading_order": 199,
+    "core_number": 27,
+    "in_degree": 88,
+    "out_degree": 1,
+    "total_degree": 89
   },
   {
     "openalex_id": "https://openalex.org/W2148606196",
@@ -6589,7 +7385,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 200
+    "reading_order": 200,
+    "core_number": 32,
+    "in_degree": 127,
+    "out_degree": 21,
+    "total_degree": 148
   },
   {
     "openalex_id": "https://openalex.org/W2133665775",
@@ -6623,7 +7423,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 201
+    "reading_order": 201,
+    "core_number": 11,
+    "in_degree": 19,
+    "out_degree": 0,
+    "total_degree": 19
   },
   {
     "openalex_id": "https://openalex.org/W2144081223",
@@ -6654,7 +7458,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 202
+    "reading_order": 202,
+    "core_number": 4,
+    "in_degree": 7,
+    "out_degree": 0,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2151103935",
@@ -6685,7 +7493,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 203
+    "reading_order": 203,
+    "core_number": 23,
+    "in_degree": 62,
+    "out_degree": 1,
+    "total_degree": 63
   },
   {
     "openalex_id": "https://openalex.org/W2038665424",
@@ -6717,7 +7529,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 204
+    "reading_order": 204,
+    "core_number": 26,
+    "in_degree": 480,
+    "out_degree": 8,
+    "total_degree": 488
   },
   {
     "openalex_id": "https://openalex.org/W2143285014",
@@ -6751,7 +7567,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 205
+    "reading_order": 205,
+    "core_number": 29,
+    "in_degree": 70,
+    "out_degree": 5,
+    "total_degree": 75
   },
   {
     "openalex_id": "https://openalex.org/W2107396783",
@@ -6783,7 +7603,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 206
+    "reading_order": 206,
+    "core_number": 9,
+    "in_degree": 25,
+    "out_degree": 1,
+    "total_degree": 26
   },
   {
     "openalex_id": "https://openalex.org/W2095293504",
@@ -6815,7 +7639,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 207
+    "reading_order": 207,
+    "core_number": 32,
+    "in_degree": 111,
+    "out_degree": 10,
+    "total_degree": 121
   },
   {
     "openalex_id": "https://openalex.org/W2135908272",
@@ -6848,7 +7676,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 208
+    "reading_order": 208,
+    "core_number": 23,
+    "in_degree": 45,
+    "out_degree": 1,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W22297218",
@@ -6873,7 +7705,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 209
+    "reading_order": 209,
+    "core_number": 10,
+    "in_degree": 15,
+    "out_degree": 0,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2020830322",
@@ -6907,7 +7743,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 210
+    "reading_order": 210,
+    "core_number": 2,
+    "in_degree": 1,
+    "out_degree": 1,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2117940227",
@@ -6942,7 +7782,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 211
+    "reading_order": 211,
+    "core_number": 19,
+    "in_degree": 26,
+    "out_degree": 0,
+    "total_degree": 26
   },
   {
     "openalex_id": "https://openalex.org/W2594075087",
@@ -6978,7 +7822,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 212
+    "reading_order": 212,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W2065126285",
@@ -7012,7 +7860,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 213
+    "reading_order": 213,
+    "core_number": 15,
+    "in_degree": 105,
+    "out_degree": 2,
+    "total_degree": 107
   },
   {
     "openalex_id": "https://openalex.org/W2142784661",
@@ -7043,7 +7895,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 214
+    "reading_order": 214,
+    "core_number": 26,
+    "in_degree": 118,
+    "out_degree": 2,
+    "total_degree": 120
   },
   {
     "openalex_id": "https://openalex.org/W2129109788",
@@ -7079,7 +7935,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 215
+    "reading_order": 215,
+    "core_number": 32,
+    "in_degree": 119,
+    "out_degree": 10,
+    "total_degree": 129
   },
   {
     "openalex_id": "https://openalex.org/W1760829075",
@@ -7115,7 +7975,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 216
+    "reading_order": 216,
+    "core_number": 32,
+    "in_degree": 194,
+    "out_degree": 7,
+    "total_degree": 201
   },
   {
     "openalex_id": "https://openalex.org/W1985392528",
@@ -7150,7 +8014,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 217
+    "reading_order": 217,
+    "core_number": 26,
+    "in_degree": 119,
+    "out_degree": 9,
+    "total_degree": 128
   },
   {
     "openalex_id": "https://openalex.org/W2017987256",
@@ -7182,7 +8050,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 218
+    "reading_order": 218,
+    "core_number": 32,
+    "in_degree": 90,
+    "out_degree": 4,
+    "total_degree": 94
   },
   {
     "openalex_id": "https://openalex.org/W2096287682",
@@ -7218,7 +8090,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 219
+    "reading_order": 219,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 1,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2105100844",
@@ -7254,7 +8130,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 220
+    "reading_order": 220,
+    "core_number": 3,
+    "in_degree": 4,
+    "out_degree": 1,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2153191810",
@@ -7284,7 +8164,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 221
+    "reading_order": 221,
+    "core_number": 26,
+    "in_degree": 107,
+    "out_degree": 0,
+    "total_degree": 107
   },
   {
     "openalex_id": "https://openalex.org/W2054455698",
@@ -7320,7 +8204,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 222
+    "reading_order": 222,
+    "core_number": 23,
+    "in_degree": 140,
+    "out_degree": 1,
+    "total_degree": 141
   },
   {
     "openalex_id": "https://openalex.org/W1993673892",
@@ -7353,7 +8241,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 223
+    "reading_order": 223,
+    "core_number": 30,
+    "in_degree": 80,
+    "out_degree": 3,
+    "total_degree": 83
   },
   {
     "openalex_id": "https://openalex.org/W2131006763",
@@ -7386,7 +8278,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 224
+    "reading_order": 224,
+    "core_number": 15,
+    "in_degree": 126,
+    "out_degree": 12,
+    "total_degree": 138
   },
   {
     "openalex_id": "https://openalex.org/W2005158297",
@@ -7422,7 +8318,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 225
+    "reading_order": 225,
+    "core_number": 24,
+    "in_degree": 73,
+    "out_degree": 2,
+    "total_degree": 75
   },
   {
     "openalex_id": "https://openalex.org/W1987924998",
@@ -7457,7 +8357,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 226
+    "reading_order": 226,
+    "core_number": 32,
+    "in_degree": 224,
+    "out_degree": 13,
+    "total_degree": 237
   },
   {
     "openalex_id": "https://openalex.org/W2070722739",
@@ -7492,7 +8396,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 227
+    "reading_order": 227,
+    "core_number": 32,
+    "in_degree": 123,
+    "out_degree": 31,
+    "total_degree": 154
   },
   {
     "openalex_id": "https://openalex.org/W2151936673",
@@ -7523,7 +8431,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 228
+    "reading_order": 228,
+    "core_number": 32,
+    "in_degree": 137,
+    "out_degree": 8,
+    "total_degree": 145
   },
   {
     "openalex_id": "https://openalex.org/W2004626802",
@@ -7559,7 +8471,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 229
+    "reading_order": 229,
+    "core_number": 26,
+    "in_degree": 92,
+    "out_degree": 3,
+    "total_degree": 95
   },
   {
     "openalex_id": "https://openalex.org/W2101135654",
@@ -7595,7 +8511,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 230
+    "reading_order": 230,
+    "core_number": 30,
+    "in_degree": 154,
+    "out_degree": 7,
+    "total_degree": 161
   },
   {
     "openalex_id": "https://openalex.org/W2990138404",
@@ -7624,7 +8544,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 231
+    "reading_order": 231,
+    "core_number": 8,
+    "in_degree": 13,
+    "out_degree": 0,
+    "total_degree": 13
   },
   {
     "openalex_id": "https://openalex.org/W1969103349",
@@ -7658,7 +8582,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 232
+    "reading_order": 232,
+    "core_number": 17,
+    "in_degree": 32,
+    "out_degree": 3,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W2027781650",
@@ -7694,7 +8622,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 233
+    "reading_order": 233,
+    "core_number": 31,
+    "in_degree": 100,
+    "out_degree": 6,
+    "total_degree": 106
   },
   {
     "openalex_id": "https://openalex.org/W2116658855",
@@ -7730,7 +8662,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 234
+    "reading_order": 234,
+    "core_number": 30,
+    "in_degree": 101,
+    "out_degree": 9,
+    "total_degree": 110
   },
   {
     "openalex_id": "https://openalex.org/W1974764791",
@@ -7761,7 +8697,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 235
+    "reading_order": 235,
+    "core_number": 32,
+    "in_degree": 166,
+    "out_degree": 19,
+    "total_degree": 185
   },
   {
     "openalex_id": "https://openalex.org/W2110232607",
@@ -7797,7 +8737,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 236
+    "reading_order": 236,
+    "core_number": 26,
+    "in_degree": 120,
+    "out_degree": 5,
+    "total_degree": 125
   },
   {
     "openalex_id": "https://openalex.org/W2143816834",
@@ -7827,7 +8771,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 237
+    "reading_order": 237,
+    "core_number": 14,
+    "in_degree": 16,
+    "out_degree": 5,
+    "total_degree": 21
   },
   {
     "openalex_id": "https://openalex.org/W2129981175",
@@ -7863,7 +8811,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 238
+    "reading_order": 238,
+    "core_number": 25,
+    "in_degree": 64,
+    "out_degree": 3,
+    "total_degree": 67
   },
   {
     "openalex_id": "https://openalex.org/W1994823455",
@@ -7897,7 +8849,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 239
+    "reading_order": 239,
+    "core_number": 6,
+    "in_degree": 19,
+    "out_degree": 0,
+    "total_degree": 19
   },
   {
     "openalex_id": "https://openalex.org/W2154431984",
@@ -7932,7 +8888,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 240
+    "reading_order": 240,
+    "core_number": 6,
+    "in_degree": 13,
+    "out_degree": 2,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2133465414",
@@ -7965,7 +8925,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 241
+    "reading_order": 241,
+    "core_number": 5,
+    "in_degree": 7,
+    "out_degree": 1,
+    "total_degree": 8
   },
   {
     "openalex_id": "https://openalex.org/W1966327575",
@@ -7997,7 +8961,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 242
+    "reading_order": 242,
+    "core_number": 7,
+    "in_degree": 12,
+    "out_degree": 2,
+    "total_degree": 14
   },
   {
     "openalex_id": "https://openalex.org/W2162298934",
@@ -8031,7 +8999,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 243
+    "reading_order": 243,
+    "core_number": 16,
+    "in_degree": 24,
+    "out_degree": 3,
+    "total_degree": 27
   },
   {
     "openalex_id": "https://openalex.org/W2131681506",
@@ -8065,7 +9037,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 244
+    "reading_order": 244,
+    "core_number": 31,
+    "in_degree": 121,
+    "out_degree": 5,
+    "total_degree": 126
   },
   {
     "openalex_id": "https://openalex.org/W1965637518",
@@ -8099,7 +9075,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 245
+    "reading_order": 245,
+    "core_number": 26,
+    "in_degree": 283,
+    "out_degree": 7,
+    "total_degree": 290
   },
   {
     "openalex_id": "https://openalex.org/W2104066896",
@@ -8134,7 +9114,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 246
+    "reading_order": 246,
+    "core_number": 21,
+    "in_degree": 41,
+    "out_degree": 4,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W2159929956",
@@ -8170,7 +9154,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 247
+    "reading_order": 247,
+    "core_number": 32,
+    "in_degree": 368,
+    "out_degree": 31,
+    "total_degree": 399
   },
   {
     "openalex_id": "https://openalex.org/W2040399449",
@@ -8205,7 +9193,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 248
+    "reading_order": 248,
+    "core_number": 17,
+    "in_degree": 57,
+    "out_degree": 0,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W2047572290",
@@ -8238,7 +9230,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 249
+    "reading_order": 249,
+    "core_number": 26,
+    "in_degree": 46,
+    "out_degree": 5,
+    "total_degree": 51
   },
   {
     "openalex_id": "https://openalex.org/W2163314583",
@@ -8272,7 +9268,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 250
+    "reading_order": 250,
+    "core_number": 26,
+    "in_degree": 435,
+    "out_degree": 0,
+    "total_degree": 435
   },
   {
     "openalex_id": "https://openalex.org/W2787894218",
@@ -8305,7 +9305,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 251
+    "reading_order": 251,
+    "core_number": 8,
+    "in_degree": 13,
+    "out_degree": 0,
+    "total_degree": 13
   },
   {
     "openalex_id": "https://openalex.org/W2125910575",
@@ -8338,7 +9342,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 252
+    "reading_order": 252,
+    "core_number": 16,
+    "in_degree": 26,
+    "out_degree": 1,
+    "total_degree": 27
   },
   {
     "openalex_id": "https://openalex.org/W2097065948",
@@ -8371,7 +9379,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 253
+    "reading_order": 253,
+    "core_number": 4,
+    "in_degree": 3,
+    "out_degree": 1,
+    "total_degree": 4
   },
   {
     "openalex_id": "https://openalex.org/W2127048411",
@@ -8402,7 +9414,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 254
+    "reading_order": 254,
+    "core_number": 32,
+    "in_degree": 101,
+    "out_degree": 21,
+    "total_degree": 122
   },
   {
     "openalex_id": "https://openalex.org/W2034538997",
@@ -8433,7 +9449,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 255
+    "reading_order": 255,
+    "core_number": 26,
+    "in_degree": 48,
+    "out_degree": 18,
+    "total_degree": 66
   },
   {
     "openalex_id": "https://openalex.org/W2094574421",
@@ -8469,7 +9489,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 256
+    "reading_order": 256,
+    "core_number": 25,
+    "in_degree": 39,
+    "out_degree": 14,
+    "total_degree": 53
   },
   {
     "openalex_id": "https://openalex.org/W2169805405",
@@ -8505,7 +9529,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 257
+    "reading_order": 257,
+    "core_number": 26,
+    "in_degree": 111,
+    "out_degree": 17,
+    "total_degree": 128
   },
   {
     "openalex_id": "https://openalex.org/W2167822639",
@@ -8537,7 +9565,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 258
+    "reading_order": 258,
+    "core_number": 32,
+    "in_degree": 458,
+    "out_degree": 41,
+    "total_degree": 499
   },
   {
     "openalex_id": "https://openalex.org/W2079450984",
@@ -8573,7 +9605,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 259
+    "reading_order": 259,
+    "core_number": 32,
+    "in_degree": 182,
+    "out_degree": 10,
+    "total_degree": 192
   },
   {
     "openalex_id": "https://openalex.org/W2104135721",
@@ -8609,7 +9645,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 260
+    "reading_order": 260,
+    "core_number": 18,
+    "in_degree": 53,
+    "out_degree": 4,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W2167635287",
@@ -8645,7 +9685,11 @@
       "E. K. Grebel",
       "Scott F. Anderson"
     ],
-    "reading_order": 261
+    "reading_order": 261,
+    "core_number": 1,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2460281481",
@@ -8684,7 +9728,11 @@
       "Edward S. Boyden",
       "Markus Sauer"
     ],
-    "reading_order": 262
+    "reading_order": 262,
+    "core_number": 23,
+    "in_degree": 209,
+    "out_degree": 7,
+    "total_degree": 216
   },
   {
     "openalex_id": "https://openalex.org/W2320983896",
@@ -8719,7 +9767,11 @@
       "Edward S. Boyden",
       "Markus Sauer"
     ],
-    "reading_order": 263
+    "reading_order": 263,
+    "core_number": 13,
+    "in_degree": 29,
+    "out_degree": 5,
+    "total_degree": 34
   },
   {
     "openalex_id": "https://openalex.org/W2593436234",
@@ -8755,7 +9807,11 @@
       "Thomas Euler",
       "Philipp Berens"
     ],
-    "reading_order": 264
+    "reading_order": 264,
+    "core_number": 2,
+    "in_degree": 0,
+    "out_degree": 4,
+    "total_degree": 4
   },
   {
     "openalex_id": "https://openalex.org/W2163605009",
@@ -8791,7 +9847,11 @@
       "Thomas Euler",
       "Philipp Berens"
     ],
-    "reading_order": 265
+    "reading_order": 265,
+    "core_number": 17,
+    "in_degree": 86,
+    "out_degree": 2,
+    "total_degree": 88
   },
   {
     "openalex_id": "https://openalex.org/W1491075702",
@@ -8827,7 +9887,11 @@
       "Albert Cardona",
       "Gregory S.X.E. Jefferis"
     ],
-    "reading_order": 266
+    "reading_order": 266,
+    "core_number": 26,
+    "in_degree": 243,
+    "out_degree": 9,
+    "total_degree": 252
   },
   {
     "openalex_id": "https://openalex.org/W2261263381",
@@ -8866,7 +9930,11 @@
       "Albert Cardona",
       "Gregory S.X.E. Jefferis"
     ],
-    "reading_order": 267
+    "reading_order": 267,
+    "core_number": 26,
+    "in_degree": 265,
+    "out_degree": 37,
+    "total_degree": 302
   },
   {
     "openalex_id": "https://openalex.org/W3112375501",
@@ -8905,7 +9973,11 @@
       "Albert Cardona",
       "Gregory S.X.E. Jefferis"
     ],
-    "reading_order": 268
+    "reading_order": 268,
+    "core_number": 26,
+    "in_degree": 154,
+    "out_degree": 49,
+    "total_degree": 203
   },
   {
     "openalex_id": "https://openalex.org/W3022122308",
@@ -8944,7 +10016,11 @@
       "Oliver Hobert",
       "Mei Zhen"
     ],
-    "reading_order": 269
+    "reading_order": 269,
+    "core_number": 23,
+    "in_degree": 35,
+    "out_degree": 25,
+    "total_degree": 60
   },
   {
     "openalex_id": "https://openalex.org/W3030819592",
@@ -8983,7 +10059,11 @@
       "Albert Cardona",
       "Gregory S.X.E. Jefferis"
     ],
-    "reading_order": 270
+    "reading_order": 270,
+    "core_number": 26,
+    "in_degree": 13,
+    "out_degree": 37,
+    "total_degree": 50
   },
   {
     "openalex_id": "https://openalex.org/W2125826054",
@@ -9019,7 +10099,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 271
+    "reading_order": 271,
+    "core_number": 3,
+    "in_degree": 6,
+    "out_degree": 0,
+    "total_degree": 6
   },
   {
     "openalex_id": "https://openalex.org/W2102902846",
@@ -9055,7 +10139,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 272
+    "reading_order": 272,
+    "core_number": 1,
+    "in_degree": 1,
+    "out_degree": 0,
+    "total_degree": 1
   },
   {
     "openalex_id": "https://openalex.org/W4238452917",
@@ -9079,7 +10167,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 273
+    "reading_order": 273,
+    "core_number": 25,
+    "in_degree": 66,
+    "out_degree": 0,
+    "total_degree": 66
   },
   {
     "openalex_id": "https://openalex.org/W2156755609",
@@ -9114,7 +10206,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 274
+    "reading_order": 274,
+    "core_number": 20,
+    "in_degree": 42,
+    "out_degree": 2,
+    "total_degree": 44
   },
   {
     "openalex_id": "https://openalex.org/W2128366179",
@@ -9148,7 +10244,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 275
+    "reading_order": 275,
+    "core_number": 25,
+    "in_degree": 60,
+    "out_degree": 6,
+    "total_degree": 66
   },
   {
     "openalex_id": "https://openalex.org/W1969013163",
@@ -9184,7 +10284,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 276
+    "reading_order": 276,
+    "core_number": 26,
+    "in_degree": 96,
+    "out_degree": 13,
+    "total_degree": 109
   },
   {
     "openalex_id": "https://openalex.org/W2169331639",
@@ -9220,7 +10324,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 277
+    "reading_order": 277,
+    "core_number": 27,
+    "in_degree": 160,
+    "out_degree": 6,
+    "total_degree": 166
   },
   {
     "openalex_id": "https://openalex.org/W2008607322",
@@ -9256,7 +10364,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 278
+    "reading_order": 278,
+    "core_number": 32,
+    "in_degree": 150,
+    "out_degree": 17,
+    "total_degree": 167
   },
   {
     "openalex_id": "https://openalex.org/W2166073443",
@@ -9290,7 +10402,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 279
+    "reading_order": 279,
+    "core_number": 17,
+    "in_degree": 22,
+    "out_degree": 1,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W2114538750",
@@ -9326,7 +10442,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 280
+    "reading_order": 280,
+    "core_number": 26,
+    "in_degree": 111,
+    "out_degree": 20,
+    "total_degree": 131
   },
   {
     "openalex_id": "https://openalex.org/W2115017507",
@@ -9362,7 +10482,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 281
+    "reading_order": 281,
+    "core_number": 11,
+    "in_degree": 23,
+    "out_degree": 1,
+    "total_degree": 24
   },
   {
     "openalex_id": "https://openalex.org/W1999574084",
@@ -9394,7 +10518,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 282
+    "reading_order": 282,
+    "core_number": 6,
+    "in_degree": 10,
+    "out_degree": 2,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W1977691361",
@@ -9427,7 +10555,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 283
+    "reading_order": 283,
+    "core_number": 26,
+    "in_degree": 332,
+    "out_degree": 4,
+    "total_degree": 336
   },
   {
     "openalex_id": "https://openalex.org/W2101420429",
@@ -9460,7 +10592,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 284
+    "reading_order": 284,
+    "core_number": 27,
+    "in_degree": 503,
+    "out_degree": 10,
+    "total_degree": 513
   },
   {
     "openalex_id": "https://openalex.org/W2040092971",
@@ -9495,7 +10631,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 285
+    "reading_order": 285,
+    "core_number": 31,
+    "in_degree": 199,
+    "out_degree": 25,
+    "total_degree": 224
   },
   {
     "openalex_id": "https://openalex.org/W2031654716",
@@ -9528,7 +10668,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 286
+    "reading_order": 286,
+    "core_number": 26,
+    "in_degree": 286,
+    "out_degree": 18,
+    "total_degree": 304
   },
   {
     "openalex_id": "https://openalex.org/W2012559638",
@@ -9560,7 +10704,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 287
+    "reading_order": 287,
+    "core_number": 32,
+    "in_degree": 271,
+    "out_degree": 30,
+    "total_degree": 301
   },
   {
     "openalex_id": "https://openalex.org/W2089572795",
@@ -9596,7 +10744,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 288
+    "reading_order": 288,
+    "core_number": 32,
+    "in_degree": 212,
+    "out_degree": 23,
+    "total_degree": 235
   },
   {
     "openalex_id": "https://openalex.org/W2022235653",
@@ -9632,7 +10784,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 289
+    "reading_order": 289,
+    "core_number": 26,
+    "in_degree": 324,
+    "out_degree": 19,
+    "total_degree": 343
   },
   {
     "openalex_id": "https://openalex.org/W2101234009",
@@ -9668,7 +10824,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 290
+    "reading_order": 290,
+    "core_number": 20,
+    "in_degree": 70,
+    "out_degree": 0,
+    "total_degree": 70
   },
   {
     "openalex_id": "https://openalex.org/W1997183854",
@@ -9701,7 +10861,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 291
+    "reading_order": 291,
+    "core_number": 6,
+    "in_degree": 31,
+    "out_degree": 0,
+    "total_degree": 31
   },
   {
     "openalex_id": "https://openalex.org/W2092098765",
@@ -9737,7 +10901,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 292
+    "reading_order": 292,
+    "core_number": 26,
+    "in_degree": 299,
+    "out_degree": 0,
+    "total_degree": 299
   },
   {
     "openalex_id": "https://openalex.org/W2259938310",
@@ -9768,7 +10936,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 293
+    "reading_order": 293,
+    "core_number": 8,
+    "in_degree": 21,
+    "out_degree": 1,
+    "total_degree": 22
   },
   {
     "openalex_id": "https://openalex.org/W2160834915",
@@ -9804,7 +10976,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 294
+    "reading_order": 294,
+    "core_number": 2,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2108344016",
@@ -9840,7 +11016,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 295
+    "reading_order": 295,
+    "core_number": 4,
+    "in_degree": 5,
+    "out_degree": 0,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2799061466",
@@ -9866,7 +11046,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 296
+    "reading_order": 296,
+    "core_number": 7,
+    "in_degree": 9,
+    "out_degree": 1,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W1904365287",
@@ -9901,7 +11085,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 297
+    "reading_order": 297,
+    "core_number": 7,
+    "in_degree": 10,
+    "out_degree": 1,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W2170747616",
@@ -9936,7 +11124,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 298
+    "reading_order": 298,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 1,
+    "total_degree": 4
   },
   {
     "openalex_id": "https://openalex.org/W2110052313",
@@ -9972,7 +11164,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 299
+    "reading_order": 299,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 1,
+    "total_degree": 4
   },
   {
     "openalex_id": "https://openalex.org/W2036100004",
@@ -10008,7 +11204,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 300
+    "reading_order": 300,
+    "core_number": 26,
+    "in_degree": 117,
+    "out_degree": 9,
+    "total_degree": 126
   },
   {
     "openalex_id": "https://openalex.org/W2167279371",
@@ -10044,7 +11244,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 301
+    "reading_order": 301,
+    "core_number": 26,
+    "in_degree": 626,
+    "out_degree": 9,
+    "total_degree": 635
   },
   {
     "openalex_id": "https://openalex.org/W2099540110",
@@ -10077,7 +11281,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 302
+    "reading_order": 302,
+    "core_number": 21,
+    "in_degree": 95,
+    "out_degree": 1,
+    "total_degree": 96
   },
   {
     "openalex_id": "https://openalex.org/W2147762902",
@@ -10113,7 +11321,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 303
+    "reading_order": 303,
+    "core_number": 26,
+    "in_degree": 275,
+    "out_degree": 26,
+    "total_degree": 301
   },
   {
     "openalex_id": "https://openalex.org/W2026140461",
@@ -10147,7 +11359,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 304
+    "reading_order": 304,
+    "core_number": 26,
+    "in_degree": 129,
+    "out_degree": 11,
+    "total_degree": 140
   },
   {
     "openalex_id": "https://openalex.org/W1996024251",
@@ -10183,7 +11399,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 305
+    "reading_order": 305,
+    "core_number": 7,
+    "in_degree": 13,
+    "out_degree": 2,
+    "total_degree": 15
   },
   {
     "openalex_id": "https://openalex.org/W2026616100",
@@ -10219,7 +11439,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 306
+    "reading_order": 306,
+    "core_number": 14,
+    "in_degree": 25,
+    "out_degree": 3,
+    "total_degree": 28
   },
   {
     "openalex_id": "https://openalex.org/W2033579242",
@@ -10255,7 +11479,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 307
+    "reading_order": 307,
+    "core_number": 26,
+    "in_degree": 144,
+    "out_degree": 12,
+    "total_degree": 156
   },
   {
     "openalex_id": "https://openalex.org/W2133416234",
@@ -10291,7 +11519,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 308
+    "reading_order": 308,
+    "core_number": 3,
+    "in_degree": 4,
+    "out_degree": 1,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2111619626",
@@ -10325,7 +11557,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 309
+    "reading_order": 309,
+    "core_number": 1,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2121289914",
@@ -10361,7 +11597,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 310
+    "reading_order": 310,
+    "core_number": 26,
+    "in_degree": 612,
+    "out_degree": 22,
+    "total_degree": 634
   },
   {
     "openalex_id": "https://openalex.org/W2018289835",
@@ -10394,7 +11634,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 311
+    "reading_order": 311,
+    "core_number": 4,
+    "in_degree": 6,
+    "out_degree": 1,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W1989621138",
@@ -10430,7 +11674,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 312
+    "reading_order": 312,
+    "core_number": 26,
+    "in_degree": 283,
+    "out_degree": 16,
+    "total_degree": 299
   },
   {
     "openalex_id": "https://openalex.org/W1983208069",
@@ -10466,7 +11714,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 313
+    "reading_order": 313,
+    "core_number": 27,
+    "in_degree": 218,
+    "out_degree": 32,
+    "total_degree": 250
   },
   {
     "openalex_id": "https://openalex.org/W2076507262",
@@ -10502,7 +11754,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 314
+    "reading_order": 314,
+    "core_number": 23,
+    "in_degree": 123,
+    "out_degree": 13,
+    "total_degree": 136
   },
   {
     "openalex_id": "https://openalex.org/W2148977460",
@@ -10538,7 +11794,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 315
+    "reading_order": 315,
+    "core_number": 4,
+    "in_degree": 5,
+    "out_degree": 4,
+    "total_degree": 9
   },
   {
     "openalex_id": "https://openalex.org/W2171332611",
@@ -10574,7 +11834,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 316
+    "reading_order": 316,
+    "core_number": 25,
+    "in_degree": 209,
+    "out_degree": 5,
+    "total_degree": 214
   },
   {
     "openalex_id": "https://openalex.org/W2132454074",
@@ -10605,7 +11869,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 317
+    "reading_order": 317,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2151013106",
@@ -10641,7 +11909,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 318
+    "reading_order": 318,
+    "core_number": 20,
+    "in_degree": 44,
+    "out_degree": 1,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W3105004163",
@@ -10677,7 +11949,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 319
+    "reading_order": 319,
+    "core_number": 26,
+    "in_degree": 25,
+    "out_degree": 51,
+    "total_degree": 76
   },
   {
     "openalex_id": "https://openalex.org/W1975389666",
@@ -10713,7 +11989,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 320
+    "reading_order": 320,
+    "core_number": 31,
+    "in_degree": 245,
+    "out_degree": 26,
+    "total_degree": 271
   },
   {
     "openalex_id": "https://openalex.org/W2040156859",
@@ -10749,7 +12029,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 321
+    "reading_order": 321,
+    "core_number": 26,
+    "in_degree": 168,
+    "out_degree": 11,
+    "total_degree": 179
   },
   {
     "openalex_id": "https://openalex.org/W2157151515",
@@ -10785,7 +12069,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 322
+    "reading_order": 322,
+    "core_number": 26,
+    "in_degree": 158,
+    "out_degree": 8,
+    "total_degree": 166
   },
   {
     "openalex_id": "https://openalex.org/W1971175217",
@@ -10821,7 +12109,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 323
+    "reading_order": 323,
+    "core_number": 26,
+    "in_degree": 121,
+    "out_degree": 3,
+    "total_degree": 124
   },
   {
     "openalex_id": "https://openalex.org/W2167311298",
@@ -10857,7 +12149,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 324
+    "reading_order": 324,
+    "core_number": 8,
+    "in_degree": 8,
+    "out_degree": 1,
+    "total_degree": 9
   },
   {
     "openalex_id": "https://openalex.org/W2104549677",
@@ -10893,7 +12189,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 325
+    "reading_order": 325,
+    "core_number": 7,
+    "in_degree": 10,
+    "out_degree": 2,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W2146512944",
@@ -10929,7 +12229,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 326
+    "reading_order": 326,
+    "core_number": 6,
+    "in_degree": 6,
+    "out_degree": 5,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W2406725268",
@@ -10962,7 +12266,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 327
+    "reading_order": 327,
+    "core_number": 23,
+    "in_degree": 330,
+    "out_degree": 11,
+    "total_degree": 341
   },
   {
     "openalex_id": "https://openalex.org/W1901129140",
@@ -10995,7 +12303,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 328
+    "reading_order": 328,
+    "core_number": 24,
+    "in_degree": 239,
+    "out_degree": 2,
+    "total_degree": 241
   },
   {
     "openalex_id": "https://openalex.org/W1513082520",
@@ -11031,7 +12343,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 329
+    "reading_order": 329,
+    "core_number": 26,
+    "in_degree": 441,
+    "out_degree": 26,
+    "total_degree": 467
   },
   {
     "openalex_id": "https://openalex.org/W2145339207",
@@ -11067,7 +12383,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 330
+    "reading_order": 330,
+    "core_number": 11,
+    "in_degree": 23,
+    "out_degree": 3,
+    "total_degree": 26
   },
   {
     "openalex_id": "https://openalex.org/W2087543137",
@@ -11103,7 +12423,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 331
+    "reading_order": 331,
+    "core_number": 26,
+    "in_degree": 258,
+    "out_degree": 16,
+    "total_degree": 274
   },
   {
     "openalex_id": "https://openalex.org/W2214074259",
@@ -11139,7 +12463,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 332
+    "reading_order": 332,
+    "core_number": 4,
+    "in_degree": 2,
+    "out_degree": 5,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2232480453",
@@ -11175,7 +12503,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 333
+    "reading_order": 333,
+    "core_number": 26,
+    "in_degree": 157,
+    "out_degree": 14,
+    "total_degree": 171
   },
   {
     "openalex_id": "https://openalex.org/W2462773201",
@@ -11211,7 +12543,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 334
+    "reading_order": 334,
+    "core_number": 6,
+    "in_degree": 9,
+    "out_degree": 0,
+    "total_degree": 9
   },
   {
     "openalex_id": "https://openalex.org/W2235523093",
@@ -11244,7 +12580,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 335
+    "reading_order": 335,
+    "core_number": 3,
+    "in_degree": 4,
+    "out_degree": 1,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2502134830",
@@ -11268,7 +12608,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 336
+    "reading_order": 336,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2549976854",
@@ -11304,7 +12648,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 337
+    "reading_order": 337,
+    "core_number": 9,
+    "in_degree": 12,
+    "out_degree": 0,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W2193503481",
@@ -11340,7 +12688,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 338
+    "reading_order": 338,
+    "core_number": 0,
+    "in_degree": 0,
+    "out_degree": 0,
+    "total_degree": 0
   },
   {
     "openalex_id": "https://openalex.org/W2527824850",
@@ -11376,7 +12728,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 339
+    "reading_order": 339,
+    "core_number": 4,
+    "in_degree": 8,
+    "out_degree": 3,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W2345356016",
@@ -11412,7 +12768,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 340
+    "reading_order": 340,
+    "core_number": 5,
+    "in_degree": 5,
+    "out_degree": 2,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2951976236",
@@ -11447,7 +12807,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 341
+    "reading_order": 341,
+    "core_number": 26,
+    "in_degree": 181,
+    "out_degree": 14,
+    "total_degree": 195
   },
   {
     "openalex_id": "https://openalex.org/W2494923364",
@@ -11483,7 +12847,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 342
+    "reading_order": 342,
+    "core_number": 23,
+    "in_degree": 134,
+    "out_degree": 17,
+    "total_degree": 151
   },
   {
     "openalex_id": "https://openalex.org/W2317883772",
@@ -11519,7 +12887,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 343
+    "reading_order": 343,
+    "core_number": 23,
+    "in_degree": 156,
+    "out_degree": 4,
+    "total_degree": 160
   },
   {
     "openalex_id": "https://openalex.org/W2309258625",
@@ -11555,7 +12927,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 344
+    "reading_order": 344,
+    "core_number": 26,
+    "in_degree": 164,
+    "out_degree": 12,
+    "total_degree": 176
   },
   {
     "openalex_id": "https://openalex.org/W2499800833",
@@ -11591,7 +12967,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 345
+    "reading_order": 345,
+    "core_number": 27,
+    "in_degree": 156,
+    "out_degree": 19,
+    "total_degree": 175
   },
   {
     "openalex_id": "https://openalex.org/W2319902168",
@@ -11625,7 +13005,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 346
+    "reading_order": 346,
+    "core_number": 0,
+    "in_degree": 1,
+    "out_degree": 1,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2962793481",
@@ -11659,7 +13043,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 347
+    "reading_order": 347,
+    "core_number": 15,
+    "in_degree": 27,
+    "out_degree": 0,
+    "total_degree": 27
   },
   {
     "openalex_id": "https://openalex.org/W1504193762",
@@ -11695,7 +13083,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 348
+    "reading_order": 348,
+    "core_number": 6,
+    "in_degree": 6,
+    "out_degree": 0,
+    "total_degree": 6
   },
   {
     "openalex_id": "https://openalex.org/W2751884637",
@@ -11731,7 +13123,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 349
+    "reading_order": 349,
+    "core_number": 4,
+    "in_degree": 6,
+    "out_degree": 3,
+    "total_degree": 9
   },
   {
     "openalex_id": "https://openalex.org/W2743254891",
@@ -11767,7 +13163,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 350
+    "reading_order": 350,
+    "core_number": 8,
+    "in_degree": 43,
+    "out_degree": 2,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W2625278673",
@@ -11803,7 +13203,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 351
+    "reading_order": 351,
+    "core_number": 26,
+    "in_degree": 201,
+    "out_degree": 17,
+    "total_degree": 218
   },
   {
     "openalex_id": "https://openalex.org/W4211114670",
@@ -11836,7 +13240,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 352
+    "reading_order": 352,
+    "core_number": 26,
+    "in_degree": 166,
+    "out_degree": 20,
+    "total_degree": 186
   },
   {
     "openalex_id": "https://openalex.org/W2620241325",
@@ -11872,7 +13280,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 353
+    "reading_order": 353,
+    "core_number": 1,
+    "in_degree": 4,
+    "out_degree": 1,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W2736601468",
@@ -11902,7 +13314,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 354
+    "reading_order": 354,
+    "core_number": 3,
+    "in_degree": 2,
+    "out_degree": 1,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W2619970632",
@@ -11938,7 +13354,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 355
+    "reading_order": 355,
+    "core_number": 26,
+    "in_degree": 249,
+    "out_degree": 17,
+    "total_degree": 266
   },
   {
     "openalex_id": "https://openalex.org/W2737808707",
@@ -11974,7 +13394,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 356
+    "reading_order": 356,
+    "core_number": 26,
+    "in_degree": 152,
+    "out_degree": 9,
+    "total_degree": 161
   },
   {
     "openalex_id": "https://openalex.org/W2804822363",
@@ -12010,7 +13434,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 357
+    "reading_order": 357,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W2900569176",
@@ -12046,7 +13474,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 358
+    "reading_order": 358,
+    "core_number": 6,
+    "in_degree": 7,
+    "out_degree": 3,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2912654919",
@@ -12082,7 +13514,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 359
+    "reading_order": 359,
+    "core_number": 4,
+    "in_degree": 5,
+    "out_degree": 2,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2949808130",
@@ -12118,7 +13554,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 360
+    "reading_order": 360,
+    "core_number": 26,
+    "in_degree": 791,
+    "out_degree": 43,
+    "total_degree": 834
   },
   {
     "openalex_id": "https://openalex.org/W2888474428",
@@ -12150,7 +13590,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 361
+    "reading_order": 361,
+    "core_number": 26,
+    "in_degree": 31,
+    "out_degree": 23,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W2760861884",
@@ -12186,7 +13630,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 362
+    "reading_order": 362,
+    "core_number": 26,
+    "in_degree": 388,
+    "out_degree": 23,
+    "total_degree": 411
   },
   {
     "openalex_id": "https://openalex.org/W2894822713",
@@ -12219,7 +13667,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 363
+    "reading_order": 363,
+    "core_number": 26,
+    "in_degree": 115,
+    "out_degree": 38,
+    "total_degree": 153
   },
   {
     "openalex_id": "https://openalex.org/W2900756811",
@@ -12255,7 +13707,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 364
+    "reading_order": 364,
+    "core_number": 4,
+    "in_degree": 5,
+    "out_degree": 2,
+    "total_degree": 7
   },
   {
     "openalex_id": "https://openalex.org/W2911188335",
@@ -12288,7 +13744,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 365
+    "reading_order": 365,
+    "core_number": 3,
+    "in_degree": 6,
+    "out_degree": 2,
+    "total_degree": 8
   },
   {
     "openalex_id": "https://openalex.org/W2910779362",
@@ -12324,7 +13784,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 366
+    "reading_order": 366,
+    "core_number": 25,
+    "in_degree": 109,
+    "out_degree": 43,
+    "total_degree": 152
   },
   {
     "openalex_id": "https://openalex.org/W2954731284",
@@ -12360,7 +13824,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 367
+    "reading_order": 367,
+    "core_number": 26,
+    "in_degree": 328,
+    "out_degree": 20,
+    "total_degree": 348
   },
   {
     "openalex_id": "https://openalex.org/W2913989356",
@@ -12392,7 +13860,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 368
+    "reading_order": 368,
+    "core_number": 25,
+    "in_degree": 31,
+    "out_degree": 15,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W2939177427",
@@ -12428,7 +13900,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 369
+    "reading_order": 369,
+    "core_number": 26,
+    "in_degree": 60,
+    "out_degree": 36,
+    "total_degree": 96
   },
   {
     "openalex_id": "https://openalex.org/W2982268628",
@@ -12464,7 +13940,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 370
+    "reading_order": 370,
+    "core_number": 26,
+    "in_degree": 212,
+    "out_degree": 32,
+    "total_degree": 244
   },
   {
     "openalex_id": "https://openalex.org/W3004280078",
@@ -12500,7 +13980,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 371
+    "reading_order": 371,
+    "core_number": 4,
+    "in_degree": 9,
+    "out_degree": 1,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2999417355",
@@ -12533,7 +14017,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 372
+    "reading_order": 372,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 2,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W3007643904",
@@ -12569,7 +14057,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 373
+    "reading_order": 373,
+    "core_number": 4,
+    "in_degree": 8,
+    "out_degree": 3,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W2998840182",
@@ -12605,7 +14097,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 374
+    "reading_order": 374,
+    "core_number": 7,
+    "in_degree": 11,
+    "out_degree": 1,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W3001500463",
@@ -12641,7 +14137,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 375
+    "reading_order": 375,
+    "core_number": 26,
+    "in_degree": 70,
+    "out_degree": 33,
+    "total_degree": 103
   },
   {
     "openalex_id": "https://openalex.org/W3090744416",
@@ -12677,7 +14177,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 376
+    "reading_order": 376,
+    "core_number": 26,
+    "in_degree": 91,
+    "out_degree": 31,
+    "total_degree": 122
   },
   {
     "openalex_id": "https://openalex.org/W3000246863",
@@ -12713,7 +14217,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 377
+    "reading_order": 377,
+    "core_number": 25,
+    "in_degree": 78,
+    "out_degree": 14,
+    "total_degree": 92
   },
   {
     "openalex_id": "https://openalex.org/W3015689959",
@@ -12749,7 +14257,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 378
+    "reading_order": 378,
+    "core_number": 26,
+    "in_degree": 155,
+    "out_degree": 56,
+    "total_degree": 211
   },
   {
     "openalex_id": "https://openalex.org/W2999635087",
@@ -12785,7 +14297,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 379
+    "reading_order": 379,
+    "core_number": 21,
+    "in_degree": 14,
+    "out_degree": 9,
+    "total_degree": 23
   },
   {
     "openalex_id": "https://openalex.org/W3007440872",
@@ -12820,7 +14336,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 380
+    "reading_order": 380,
+    "core_number": 23,
+    "in_degree": 36,
+    "out_degree": 15,
+    "total_degree": 51
   },
   {
     "openalex_id": "https://openalex.org/W3015110848",
@@ -12856,7 +14376,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 381
+    "reading_order": 381,
+    "core_number": 26,
+    "in_degree": 35,
+    "out_degree": 38,
+    "total_degree": 73
   },
   {
     "openalex_id": "https://openalex.org/W3114097778",
@@ -12892,7 +14416,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 382
+    "reading_order": 382,
+    "core_number": 26,
+    "in_degree": 89,
+    "out_degree": 22,
+    "total_degree": 111
   },
   {
     "openalex_id": "https://openalex.org/W3012591046",
@@ -12928,7 +14456,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 383
+    "reading_order": 383,
+    "core_number": 26,
+    "in_degree": 83,
+    "out_degree": 20,
+    "total_degree": 103
   },
   {
     "openalex_id": "https://openalex.org/W3083962177",
@@ -12964,7 +14496,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 384
+    "reading_order": 384,
+    "core_number": 25,
+    "in_degree": 12,
+    "out_degree": 21,
+    "total_degree": 33
   },
   {
     "openalex_id": "https://openalex.org/W3015818477",
@@ -13000,7 +14536,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 385
+    "reading_order": 385,
+    "core_number": 25,
+    "in_degree": 4,
+    "out_degree": 37,
+    "total_degree": 41
   },
   {
     "openalex_id": "https://openalex.org/W3016997274",
@@ -13036,7 +14576,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 386
+    "reading_order": 386,
+    "core_number": 26,
+    "in_degree": 25,
+    "out_degree": 31,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W3038575087",
@@ -13072,7 +14616,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 387
+    "reading_order": 387,
+    "core_number": 26,
+    "in_degree": 62,
+    "out_degree": 17,
+    "total_degree": 79
   },
   {
     "openalex_id": "https://openalex.org/W3010641024",
@@ -13108,7 +14656,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 388
+    "reading_order": 388,
+    "core_number": 25,
+    "in_degree": 27,
+    "out_degree": 24,
+    "total_degree": 51
   },
   {
     "openalex_id": "https://openalex.org/W3087638917",
@@ -13140,7 +14692,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 389
+    "reading_order": 389,
+    "core_number": 26,
+    "in_degree": 113,
+    "out_degree": 12,
+    "total_degree": 125
   },
   {
     "openalex_id": "https://openalex.org/W3110209352",
@@ -13174,7 +14730,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 390
+    "reading_order": 390,
+    "core_number": 21,
+    "in_degree": 25,
+    "out_degree": 11,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W3082752815",
@@ -13210,7 +14770,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 391
+    "reading_order": 391,
+    "core_number": 26,
+    "in_degree": 57,
+    "out_degree": 27,
+    "total_degree": 84
   },
   {
     "openalex_id": "https://openalex.org/W2999915254",
@@ -13244,7 +14808,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 392
+    "reading_order": 392,
+    "core_number": 16,
+    "in_degree": 13,
+    "out_degree": 4,
+    "total_degree": 17
   },
   {
     "openalex_id": "https://openalex.org/W3086094719",
@@ -13280,7 +14848,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 393
+    "reading_order": 393,
+    "core_number": 26,
+    "in_degree": 72,
+    "out_degree": 28,
+    "total_degree": 100
   },
   {
     "openalex_id": "https://openalex.org/W3038470276",
@@ -13314,7 +14886,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 394
+    "reading_order": 394,
+    "core_number": 25,
+    "in_degree": 13,
+    "out_degree": 25,
+    "total_degree": 38
   },
   {
     "openalex_id": "https://openalex.org/W3103266272",
@@ -13349,7 +14925,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 395
+    "reading_order": 395,
+    "core_number": 12,
+    "in_degree": 2,
+    "out_degree": 15,
+    "total_degree": 17
   },
   {
     "openalex_id": "https://openalex.org/W3083478861",
@@ -13385,7 +14965,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 396
+    "reading_order": 396,
+    "core_number": 26,
+    "in_degree": 16,
+    "out_degree": 53,
+    "total_degree": 69
   },
   {
     "openalex_id": "https://openalex.org/W3081607834",
@@ -13421,7 +15005,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 397
+    "reading_order": 397,
+    "core_number": 26,
+    "in_degree": 9,
+    "out_degree": 37,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W3012401333",
@@ -13457,7 +15045,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 398
+    "reading_order": 398,
+    "core_number": 23,
+    "in_degree": 39,
+    "out_degree": 17,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W3083406432",
@@ -13493,7 +15085,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 399
+    "reading_order": 399,
+    "core_number": 6,
+    "in_degree": 9,
+    "out_degree": 3,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W3023265517",
@@ -13528,7 +15124,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 400
+    "reading_order": 400,
+    "core_number": 14,
+    "in_degree": 5,
+    "out_degree": 13,
+    "total_degree": 18
   },
   {
     "openalex_id": "https://openalex.org/W3046519579",
@@ -13560,7 +15160,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 401
+    "reading_order": 401,
+    "core_number": 23,
+    "in_degree": 45,
+    "out_degree": 16,
+    "total_degree": 61
   },
   {
     "openalex_id": "https://openalex.org/W3084308099",
@@ -13596,7 +15200,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 402
+    "reading_order": 402,
+    "core_number": 26,
+    "in_degree": 41,
+    "out_degree": 20,
+    "total_degree": 61
   },
   {
     "openalex_id": "https://openalex.org/W2942082708",
@@ -13632,7 +15240,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 403
+    "reading_order": 403,
+    "core_number": 20,
+    "in_degree": 19,
+    "out_degree": 13,
+    "total_degree": 32
   },
   {
     "openalex_id": "https://openalex.org/W3110215284",
@@ -13668,7 +15280,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 404
+    "reading_order": 404,
+    "core_number": 25,
+    "in_degree": 43,
+    "out_degree": 24,
+    "total_degree": 67
   },
   {
     "openalex_id": "https://openalex.org/W3021302753",
@@ -13704,7 +15320,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 405
+    "reading_order": 405,
+    "core_number": 23,
+    "in_degree": 29,
+    "out_degree": 16,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W3040121687",
@@ -13740,7 +15360,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 406
+    "reading_order": 406,
+    "core_number": 23,
+    "in_degree": 39,
+    "out_degree": 22,
+    "total_degree": 61
   },
   {
     "openalex_id": "https://openalex.org/W3007459937",
@@ -13775,7 +15399,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 407
+    "reading_order": 407,
+    "core_number": 11,
+    "in_degree": 3,
+    "out_degree": 11,
+    "total_degree": 14
   },
   {
     "openalex_id": "https://openalex.org/W3092939189",
@@ -13809,7 +15437,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 408
+    "reading_order": 408,
+    "core_number": 21,
+    "in_degree": 14,
+    "out_degree": 16,
+    "total_degree": 30
   },
   {
     "openalex_id": "https://openalex.org/W3038776264",
@@ -13845,7 +15477,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 409
+    "reading_order": 409,
+    "core_number": 26,
+    "in_degree": 42,
+    "out_degree": 17,
+    "total_degree": 59
   },
   {
     "openalex_id": "https://openalex.org/W3021650768",
@@ -13881,7 +15517,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 410
+    "reading_order": 410,
+    "core_number": 18,
+    "in_degree": 28,
+    "out_degree": 8,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W3102686699",
@@ -13917,7 +15557,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 411
+    "reading_order": 411,
+    "core_number": 26,
+    "in_degree": 35,
+    "out_degree": 22,
+    "total_degree": 57
   },
   {
     "openalex_id": "https://openalex.org/W3029927751",
@@ -13953,7 +15597,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 412
+    "reading_order": 412,
+    "core_number": 21,
+    "in_degree": 23,
+    "out_degree": 12,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W3021530092",
@@ -13989,7 +15637,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 413
+    "reading_order": 413,
+    "core_number": 22,
+    "in_degree": 22,
+    "out_degree": 20,
+    "total_degree": 42
   },
   {
     "openalex_id": "https://openalex.org/W3096195703",
@@ -14025,7 +15677,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 414
+    "reading_order": 414,
+    "core_number": 25,
+    "in_degree": 37,
+    "out_degree": 24,
+    "total_degree": 61
   },
   {
     "openalex_id": "https://openalex.org/W3089720110",
@@ -14061,7 +15717,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 415
+    "reading_order": 415,
+    "core_number": 21,
+    "in_degree": 41,
+    "out_degree": 13,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W3111715159",
@@ -14097,7 +15757,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 416
+    "reading_order": 416,
+    "core_number": 26,
+    "in_degree": 18,
+    "out_degree": 58,
+    "total_degree": 76
   },
   {
     "openalex_id": "https://openalex.org/W2999498932",
@@ -14133,7 +15797,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 417
+    "reading_order": 417,
+    "core_number": 26,
+    "in_degree": 96,
+    "out_degree": 22,
+    "total_degree": 118
   },
   {
     "openalex_id": "https://openalex.org/W3038854314",
@@ -14169,7 +15837,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 418
+    "reading_order": 418,
+    "core_number": 26,
+    "in_degree": 100,
+    "out_degree": 33,
+    "total_degree": 133
   },
   {
     "openalex_id": "https://openalex.org/W3014608058",
@@ -14205,7 +15877,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 419
+    "reading_order": 419,
+    "core_number": 23,
+    "in_degree": 31,
+    "out_degree": 15,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W3010515960",
@@ -14236,7 +15912,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 420
+    "reading_order": 420,
+    "core_number": 23,
+    "in_degree": 24,
+    "out_degree": 8,
+    "total_degree": 32
   },
   {
     "openalex_id": "https://openalex.org/W3008543536",
@@ -14272,7 +15952,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 421
+    "reading_order": 421,
+    "core_number": 26,
+    "in_degree": 60,
+    "out_degree": 10,
+    "total_degree": 70
   },
   {
     "openalex_id": "https://openalex.org/W3005800393",
@@ -14308,7 +15992,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 422
+    "reading_order": 422,
+    "core_number": 22,
+    "in_degree": 23,
+    "out_degree": 12,
+    "total_degree": 35
   },
   {
     "openalex_id": "https://openalex.org/W3035293229",
@@ -14344,7 +16032,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 423
+    "reading_order": 423,
+    "core_number": 26,
+    "in_degree": 85,
+    "out_degree": 61,
+    "total_degree": 146
   },
   {
     "openalex_id": "https://openalex.org/W2999410130",
@@ -14380,7 +16072,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 424
+    "reading_order": 424,
+    "core_number": 26,
+    "in_degree": 18,
+    "out_degree": 28,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W3035080083",
@@ -14416,7 +16112,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 425
+    "reading_order": 425,
+    "core_number": 11,
+    "in_degree": 15,
+    "out_degree": 3,
+    "total_degree": 18
   },
   {
     "openalex_id": "https://openalex.org/W3029650759",
@@ -14452,7 +16152,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 426
+    "reading_order": 426,
+    "core_number": 17,
+    "in_degree": 21,
+    "out_degree": 15,
+    "total_degree": 36
   },
   {
     "openalex_id": "https://openalex.org/W3109383100",
@@ -14488,7 +16192,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 427
+    "reading_order": 427,
+    "core_number": 23,
+    "in_degree": 38,
+    "out_degree": 10,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W3080144203",
@@ -14524,7 +16232,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 428
+    "reading_order": 428,
+    "core_number": 26,
+    "in_degree": 39,
+    "out_degree": 25,
+    "total_degree": 64
   },
   {
     "openalex_id": "https://openalex.org/W3092940722",
@@ -14560,7 +16272,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 429
+    "reading_order": 429,
+    "core_number": 26,
+    "in_degree": 25,
+    "out_degree": 52,
+    "total_degree": 77
   },
   {
     "openalex_id": "https://openalex.org/W3014749649",
@@ -14596,7 +16312,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 430
+    "reading_order": 430,
+    "core_number": 20,
+    "in_degree": 26,
+    "out_degree": 5,
+    "total_degree": 31
   },
   {
     "openalex_id": "https://openalex.org/W3000276337",
@@ -14632,7 +16352,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 431
+    "reading_order": 431,
+    "core_number": 26,
+    "in_degree": 20,
+    "out_degree": 32,
+    "total_degree": 52
   },
   {
     "openalex_id": "https://openalex.org/W3108685405",
@@ -14668,7 +16392,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 432
+    "reading_order": 432,
+    "core_number": 25,
+    "in_degree": 58,
+    "out_degree": 4,
+    "total_degree": 62
   },
   {
     "openalex_id": "https://openalex.org/W3003320082",
@@ -14704,7 +16432,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 433
+    "reading_order": 433,
+    "core_number": 22,
+    "in_degree": 17,
+    "out_degree": 9,
+    "total_degree": 26
   },
   {
     "openalex_id": "https://openalex.org/W3095201035",
@@ -14740,7 +16472,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 434
+    "reading_order": 434,
+    "core_number": 26,
+    "in_degree": 55,
+    "out_degree": 16,
+    "total_degree": 71
   },
   {
     "openalex_id": "https://openalex.org/W3041080922",
@@ -14776,7 +16512,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 435
+    "reading_order": 435,
+    "core_number": 26,
+    "in_degree": 16,
+    "out_degree": 29,
+    "total_degree": 45
   },
   {
     "openalex_id": "https://openalex.org/W3008456724",
@@ -14812,7 +16552,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 436
+    "reading_order": 436,
+    "core_number": 26,
+    "in_degree": 12,
+    "out_degree": 42,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W4226323836",
@@ -14848,7 +16592,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 437
+    "reading_order": 437,
+    "core_number": 24,
+    "in_degree": 19,
+    "out_degree": 25,
+    "total_degree": 44
   },
   {
     "openalex_id": "https://openalex.org/W4382199186",
@@ -14884,7 +16632,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 438
+    "reading_order": 438,
+    "core_number": 26,
+    "in_degree": 61,
+    "out_degree": 49,
+    "total_degree": 110
   },
   {
     "openalex_id": "https://openalex.org/W4385374596",
@@ -14920,7 +16672,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 439
+    "reading_order": 439,
+    "core_number": 26,
+    "in_degree": 14,
+    "out_degree": 52,
+    "total_degree": 66
   },
   {
     "openalex_id": "https://openalex.org/W4403062913",
@@ -14956,7 +16712,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 440
+    "reading_order": 440,
+    "core_number": 26,
+    "in_degree": 255,
+    "out_degree": 60,
+    "total_degree": 315
   },
   {
     "openalex_id": "https://openalex.org/W4403062850",
@@ -14992,7 +16752,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 441
+    "reading_order": 441,
+    "core_number": 26,
+    "in_degree": 64,
+    "out_degree": 40,
+    "total_degree": 104
   },
   {
     "openalex_id": "https://openalex.org/W3129538072",
@@ -15029,7 +16793,11 @@
       "Oliver Hobert",
       "Mei Zhen"
     ],
-    "reading_order": 442
+    "reading_order": 442,
+    "core_number": 20,
+    "in_degree": 49,
+    "out_degree": 10,
+    "total_degree": 59
   },
   {
     "openalex_id": "https://openalex.org/W3132661792",
@@ -15064,7 +16832,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 443
+    "reading_order": 443,
+    "core_number": 7,
+    "in_degree": 6,
+    "out_degree": 6,
+    "total_degree": 12
   },
   {
     "openalex_id": "https://openalex.org/W3192789395",
@@ -15100,7 +16872,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 444
+    "reading_order": 444,
+    "core_number": 26,
+    "in_degree": 428,
+    "out_degree": 21,
+    "total_degree": 449
   },
   {
     "openalex_id": "https://openalex.org/W3120038054",
@@ -15136,7 +16912,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 445
+    "reading_order": 445,
+    "core_number": 26,
+    "in_degree": 147,
+    "out_degree": 42,
+    "total_degree": 189
   },
   {
     "openalex_id": "https://openalex.org/W4206755867",
@@ -15172,7 +16952,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 446
+    "reading_order": 446,
+    "core_number": 26,
+    "in_degree": 184,
+    "out_degree": 28,
+    "total_degree": 212
   },
   {
     "openalex_id": "https://openalex.org/W3189819408",
@@ -15204,7 +16988,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 447
+    "reading_order": 447,
+    "core_number": 17,
+    "in_degree": 14,
+    "out_degree": 10,
+    "total_degree": 24
   },
   {
     "openalex_id": "https://openalex.org/W3165096146",
@@ -15240,7 +17028,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 448
+    "reading_order": 448,
+    "core_number": 26,
+    "in_degree": 101,
+    "out_degree": 57,
+    "total_degree": 158
   },
   {
     "openalex_id": "https://openalex.org/W3208266771",
@@ -15276,7 +17068,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 449
+    "reading_order": 449,
+    "core_number": 26,
+    "in_degree": 124,
+    "out_degree": 67,
+    "total_degree": 191
   },
   {
     "openalex_id": "https://openalex.org/W3125011419",
@@ -15312,7 +17108,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 450
+    "reading_order": 450,
+    "core_number": 22,
+    "in_degree": 36,
+    "out_degree": 15,
+    "total_degree": 51
   },
   {
     "openalex_id": "https://openalex.org/W3174415204",
@@ -15348,7 +17148,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 451
+    "reading_order": 451,
+    "core_number": 26,
+    "in_degree": 136,
+    "out_degree": 12,
+    "total_degree": 148
   },
   {
     "openalex_id": "https://openalex.org/W3131776733",
@@ -15383,7 +17187,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 452
+    "reading_order": 452,
+    "core_number": 23,
+    "in_degree": 66,
+    "out_degree": 22,
+    "total_degree": 88
   },
   {
     "openalex_id": "https://openalex.org/W3135358979",
@@ -15419,7 +17227,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 453
+    "reading_order": 453,
+    "core_number": 8,
+    "in_degree": 3,
+    "out_degree": 7,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W2582996697",
@@ -15452,7 +17264,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 454
+    "reading_order": 454,
+    "core_number": 22,
+    "in_degree": 18,
+    "out_degree": 26,
+    "total_degree": 44
   },
   {
     "openalex_id": "https://openalex.org/W3174465650",
@@ -15488,7 +17304,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 455
+    "reading_order": 455,
+    "core_number": 26,
+    "in_degree": 14,
+    "out_degree": 34,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W3147908094",
@@ -15524,7 +17344,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 456
+    "reading_order": 456,
+    "core_number": 23,
+    "in_degree": 24,
+    "out_degree": 14,
+    "total_degree": 38
   },
   {
     "openalex_id": "https://openalex.org/W3108936441",
@@ -15560,7 +17384,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 457
+    "reading_order": 457,
+    "core_number": 7,
+    "in_degree": 26,
+    "out_degree": 14,
+    "total_degree": 40
   },
   {
     "openalex_id": "https://openalex.org/W3201820946",
@@ -15596,7 +17424,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 458
+    "reading_order": 458,
+    "core_number": 23,
+    "in_degree": 60,
+    "out_degree": 28,
+    "total_degree": 88
   },
   {
     "openalex_id": "https://openalex.org/W3179229384",
@@ -15631,7 +17463,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 459
+    "reading_order": 459,
+    "core_number": 30,
+    "in_degree": 11,
+    "out_degree": 45,
+    "total_degree": 56
   },
   {
     "openalex_id": "https://openalex.org/W3204294504",
@@ -15667,7 +17503,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 460
+    "reading_order": 460,
+    "core_number": 23,
+    "in_degree": 60,
+    "out_degree": 13,
+    "total_degree": 73
   },
   {
     "openalex_id": "https://openalex.org/W3189506822",
@@ -15703,7 +17543,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 461
+    "reading_order": 461,
+    "core_number": 26,
+    "in_degree": 47,
+    "out_degree": 37,
+    "total_degree": 84
   },
   {
     "openalex_id": "https://openalex.org/W3130492894",
@@ -15737,7 +17581,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 462
+    "reading_order": 462,
+    "core_number": 26,
+    "in_degree": 15,
+    "out_degree": 31,
+    "total_degree": 46
   },
   {
     "openalex_id": "https://openalex.org/W3133839297",
@@ -15773,7 +17621,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 463
+    "reading_order": 463,
+    "core_number": 7,
+    "in_degree": 3,
+    "out_degree": 7,
+    "total_degree": 10
   },
   {
     "openalex_id": "https://openalex.org/W3185216564",
@@ -15809,7 +17661,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 464
+    "reading_order": 464,
+    "core_number": 26,
+    "in_degree": 90,
+    "out_degree": 45,
+    "total_degree": 135
   },
   {
     "openalex_id": "https://openalex.org/W3216865711",
@@ -15845,7 +17701,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 465
+    "reading_order": 465,
+    "core_number": 25,
+    "in_degree": 33,
+    "out_degree": 21,
+    "total_degree": 54
   },
   {
     "openalex_id": "https://openalex.org/W3170914969",
@@ -15881,7 +17741,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 466
+    "reading_order": 466,
+    "core_number": 26,
+    "in_degree": 120,
+    "out_degree": 30,
+    "total_degree": 150
   },
   {
     "openalex_id": "https://openalex.org/W3180956051",
@@ -15917,7 +17781,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 467
+    "reading_order": 467,
+    "core_number": 21,
+    "in_degree": 119,
+    "out_degree": 10,
+    "total_degree": 129
   },
   {
     "openalex_id": "https://openalex.org/W3191154272",
@@ -15953,7 +17821,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 468
+    "reading_order": 468,
+    "core_number": 24,
+    "in_degree": 46,
+    "out_degree": 31,
+    "total_degree": 77
   },
   {
     "openalex_id": "https://openalex.org/W3212123783",
@@ -15989,7 +17861,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 469
+    "reading_order": 469,
+    "core_number": 24,
+    "in_degree": 28,
+    "out_degree": 25,
+    "total_degree": 53
   },
   {
     "openalex_id": "https://openalex.org/W3212780914",
@@ -16025,7 +17901,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 470
+    "reading_order": 470,
+    "core_number": 21,
+    "in_degree": 33,
+    "out_degree": 18,
+    "total_degree": 51
   },
   {
     "openalex_id": "https://openalex.org/W4286208813",
@@ -16061,7 +17941,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 471
+    "reading_order": 471,
+    "core_number": 26,
+    "in_degree": 81,
+    "out_degree": 24,
+    "total_degree": 105
   },
   {
     "openalex_id": "https://openalex.org/W4213455879",
@@ -16097,7 +17981,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 472
+    "reading_order": 472,
+    "core_number": 26,
+    "in_degree": 109,
+    "out_degree": 59,
+    "total_degree": 168
   },
   {
     "openalex_id": "https://openalex.org/W4283834186",
@@ -16133,7 +18021,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 473
+    "reading_order": 473,
+    "core_number": 26,
+    "in_degree": 34,
+    "out_degree": 35,
+    "total_degree": 69
   },
   {
     "openalex_id": "https://openalex.org/W4313292394",
@@ -16169,7 +18061,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 474
+    "reading_order": 474,
+    "core_number": 25,
+    "in_degree": 15,
+    "out_degree": 26,
+    "total_degree": 41
   },
   {
     "openalex_id": "https://openalex.org/W4213114724",
@@ -16205,7 +18101,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 475
+    "reading_order": 475,
+    "core_number": 24,
+    "in_degree": 43,
+    "out_degree": 20,
+    "total_degree": 63
   },
   {
     "openalex_id": "https://openalex.org/W4284663210",
@@ -16241,7 +18141,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 476
+    "reading_order": 476,
+    "core_number": 26,
+    "in_degree": 36,
+    "out_degree": 26,
+    "total_degree": 62
   },
   {
     "openalex_id": "https://openalex.org/W4223892272",
@@ -16277,7 +18181,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 477
+    "reading_order": 477,
+    "core_number": 23,
+    "in_degree": 15,
+    "out_degree": 33,
+    "total_degree": 48
   },
   {
     "openalex_id": "https://openalex.org/W4220993885",
@@ -16313,7 +18221,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 478
+    "reading_order": 478,
+    "core_number": 23,
+    "in_degree": 36,
+    "out_degree": 22,
+    "total_degree": 58
   },
   {
     "openalex_id": "https://openalex.org/W4309161063",
@@ -16349,7 +18261,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 479
+    "reading_order": 479,
+    "core_number": 26,
+    "in_degree": 55,
+    "out_degree": 31,
+    "total_degree": 86
   },
   {
     "openalex_id": "https://openalex.org/W4283328497",
@@ -16385,7 +18301,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 480
+    "reading_order": 480,
+    "core_number": 26,
+    "in_degree": 92,
+    "out_degree": 20,
+    "total_degree": 112
   },
   {
     "openalex_id": "https://openalex.org/W4307231400",
@@ -16421,7 +18341,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 481
+    "reading_order": 481,
+    "core_number": 26,
+    "in_degree": 47,
+    "out_degree": 28,
+    "total_degree": 75
   },
   {
     "openalex_id": "https://openalex.org/W4385245566",
@@ -16457,7 +18381,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 482
+    "reading_order": 482,
+    "core_number": 10,
+    "in_degree": 20,
+    "out_degree": 0,
+    "total_degree": 20
   },
   {
     "openalex_id": "https://openalex.org/W4315754639",
@@ -16491,7 +18419,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 483
+    "reading_order": 483,
+    "core_number": 3,
+    "in_degree": 3,
+    "out_degree": 0,
+    "total_degree": 3
   },
   {
     "openalex_id": "https://openalex.org/W4292779060",
@@ -16523,7 +18455,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 484
+    "reading_order": 484,
+    "core_number": 2,
+    "in_degree": 2,
+    "out_degree": 0,
+    "total_degree": 2
   },
   {
     "openalex_id": "https://openalex.org/W4361190985",
@@ -16559,7 +18495,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 485
+    "reading_order": 485,
+    "core_number": 26,
+    "in_degree": 10,
+    "out_degree": 28,
+    "total_degree": 38
   },
   {
     "openalex_id": "https://openalex.org/W4382684379",
@@ -16595,7 +18535,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 486
+    "reading_order": 486,
+    "core_number": 26,
+    "in_degree": 96,
+    "out_degree": 111,
+    "total_degree": 207
   },
   {
     "openalex_id": "https://openalex.org/W4385334281",
@@ -16631,7 +18575,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 487
+    "reading_order": 487,
+    "core_number": 26,
+    "in_degree": 25,
+    "out_degree": 60,
+    "total_degree": 85
   },
   {
     "openalex_id": "https://openalex.org/W4388126567",
@@ -16665,7 +18613,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 488
+    "reading_order": 488,
+    "core_number": 22,
+    "in_degree": 59,
+    "out_degree": 18,
+    "total_degree": 77
   },
   {
     "openalex_id": "https://openalex.org/W4323809195",
@@ -16701,7 +18653,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 489
+    "reading_order": 489,
+    "core_number": 26,
+    "in_degree": 419,
+    "out_degree": 46,
+    "total_degree": 465
   },
   {
     "openalex_id": "https://openalex.org/W4321595559",
@@ -16737,7 +18693,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 490
+    "reading_order": 490,
+    "core_number": 26,
+    "in_degree": 79,
+    "out_degree": 38,
+    "total_degree": 117
   },
   {
     "openalex_id": "https://openalex.org/W4396721167",
@@ -16768,7 +18728,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 491
+    "reading_order": 491,
+    "core_number": 5,
+    "in_degree": 7,
+    "out_degree": 1,
+    "total_degree": 8
   },
   {
     "openalex_id": "https://openalex.org/W4393935425",
@@ -16804,7 +18768,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 492
+    "reading_order": 492,
+    "core_number": 3,
+    "in_degree": 1,
+    "out_degree": 4,
+    "total_degree": 5
   },
   {
     "openalex_id": "https://openalex.org/W4403062911",
@@ -16840,7 +18808,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 493
+    "reading_order": 493,
+    "core_number": 26,
+    "in_degree": 442,
+    "out_degree": 90,
+    "total_degree": 532
   },
   {
     "openalex_id": "https://openalex.org/W4392864582",
@@ -16876,7 +18848,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 494
+    "reading_order": 494,
+    "core_number": 26,
+    "in_degree": 34,
+    "out_degree": 30,
+    "total_degree": 64
   },
   {
     "openalex_id": "https://openalex.org/W4401338748",
@@ -16912,7 +18888,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 495
+    "reading_order": 495,
+    "core_number": 9,
+    "in_degree": 4,
+    "out_degree": 7,
+    "total_degree": 11
   },
   {
     "openalex_id": "https://openalex.org/W4396780205",
@@ -16948,7 +18928,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 496
+    "reading_order": 496,
+    "core_number": 26,
+    "in_degree": 283,
+    "out_degree": 36,
+    "total_degree": 319
   },
   {
     "openalex_id": "https://openalex.org/W4396780652",
@@ -16984,7 +18968,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 497
+    "reading_order": 497,
+    "core_number": 26,
+    "in_degree": 156,
+    "out_degree": 71,
+    "total_degree": 227
   },
   {
     "openalex_id": "https://openalex.org/W4403062868",
@@ -17020,7 +19008,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 498
+    "reading_order": 498,
+    "core_number": 26,
+    "in_degree": 47,
+    "out_degree": 37,
+    "total_degree": 84
   },
   {
     "openalex_id": "https://openalex.org/W4403062866",
@@ -17056,7 +19048,11 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 499
+    "reading_order": 499,
+    "core_number": 26,
+    "in_degree": 56,
+    "out_degree": 39,
+    "total_degree": 95
   },
   {
     "openalex_id": "https://openalex.org/W4409283533",
@@ -17092,6 +19088,10 @@
     "community_id": -1,
     "community_label": "Other",
     "community_top_authors": [],
-    "reading_order": 500
+    "reading_order": 500,
+    "core_number": 26,
+    "in_degree": 61,
+    "out_degree": 53,
+    "total_degree": 114
   }
 ]

@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "The outbreak of SARS-CoV-2 in 2019-2020 demanded rapid structural characterization of the viral spike protein \u2014 the primary vaccine and therapeutic target \u2014 to enable structure-guided vaccine and antibody design.",
+    "challenge": "Determining a high-resolution structure of the trimeric SARS-CoV-2 spike in its native prefusion conformation required cryo-EM of a labile glycoprotein complex that readily adopts post-fusion conformations, necessitating stabilizing mutations and rapid data collection.",
+    "action": "The authors determined the cryo-EM structure of the stabilized SARS-CoV-2 spike ectodomain trimer in the prefusion conformation at 3.5 \u00c5 resolution, using prefusion-stabilizing proline substitutions and single-particle cryo-EM.",
+    "resolution": "The structure revealed the overall architecture of the SARS-CoV-2 spike trimer, including the receptor-binding domain (RBD) in both 'up' (receptor-accessible) and 'down' (closed) conformations, the ACE2 binding interface, and antigenic surfaces for antibody design. This structure was immediately used to guide vaccine development and antibody characterization.",
+    "future_work": "Future structural studies should characterize spike variants, complexes with neutralizing antibodies, and the post-fusion conformation to fully map antigenic variation and guide next-generation vaccine designs."
+  },
+  "summaries": {
+    "beginner": "At the start of the COVID-19 pandemic, scientists quickly determined the exact 3D shape of the coronavirus's spike protein \u2014 the part of the virus that attaches to human cells. This structure was critical for designing COVID vaccines and treatments.",
+    "intermediate": "Cryo-EM structure determination of the SARS-CoV-2 spike trimer at 3.5 \u00c5 resolution provided the immediate structural basis for vaccine and antibody development during the COVID-19 pandemic. The prefusion-stabilized trimer revealed the RBD's conformational flexibility and ACE2 binding interface, enabling structure-guided immunogen design.",
+    "advanced": "This rapid cryo-EM structure determination of the SARS-CoV-2 spike uses 2P proline stabilizing mutations (adapted from MERS-CoV spike work) to trap the prefusion conformation. The 3.5 \u00c5 structure resolves the RBD in both 'up' and 'down' states, delineates the ACE2 binding surface, and maps the fusion peptide. This structure directly informed mRNA vaccine immunogen design by multiple groups. Caveats include the use of detergent-solubilized ectodomain rather than membrane-embedded spike, and glycan modeling uncertainty at native glycosylation sites."
+  },
+  "discussion_prompts": [
+    "How did the availability of this cryo-EM structure accelerate COVID-19 vaccine development, and what specific structural features were most important for immunogen design?",
+    "What are the technical advantages of cryo-EM over X-ray crystallography for determining the structure of a large, glycosylated, conformationally dynamic complex like the coronavirus spike?",
+    "How have subsequent variant spike structures changed our understanding of ACE2 binding affinity and antibody neutralization compared to the original Wuhan strain structure?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:cryo-em",
+    "topic:sars-cov-2",
+    "structure:spike-protein",
+    "application:non-neuro",
+    "imaging:single-particle",
+    "topic:vaccine-design"
+  ]
+}

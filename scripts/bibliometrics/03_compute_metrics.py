@@ -384,7 +384,7 @@ def main():
 
     print("\n--- Author Rankings ---")
     author_rankings = rank_authors(author_metrics)
-    save_json(author_rankings[:200], "author_rankings.json")
+    save_json(author_rankings[:1000], "author_rankings.json")
     print(f"  Top 5 authors:")
     for a in author_rankings[:5]:
         print(f"    [{a['composite_score']:.3f}] {a['name']} ({a['paper_count']} papers)")

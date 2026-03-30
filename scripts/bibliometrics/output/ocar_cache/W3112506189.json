@@ -1,0 +1,28 @@
+{
+  "ocar": {
+    "opportunity": "Standard expansion microscopy relies on protein anchoring to the hydrogel, but many biologically important molecules\u2014including lipids, nucleic acids, glycans, and small metabolites\u2014cannot be efficiently incorporated using existing chemistry, severely limiting the scope of ExM.",
+    "challenge": "Different biomolecule classes have distinct chemical properties that require distinct anchoring strategies; a universal approach for anchoring arbitrary biomolecules would need to exploit chemistry broadly applicable across chemical diversity without disrupting gel expansion or spatial fidelity.",
+    "action": "The authors developed Click-ExM, which uses metabolic labeling with click chemistry handles followed by copper-catalyzed or strain-promoted azide-alkyne cycloaddition to anchor virtually any biomolecule to the expansion gel, circumventing the limitation to protein-based labeling.",
+    "resolution": "Click-ExM enabled expansion microscopy of lipids, nucleic acids, and other non-protein biomolecules with nanoscale resolution, demonstrating that the technique is broadly applicable across the biomolecular diversity of the cell. The approach was validated on multiple targets in diverse cell types.",
+    "future_work": "Optimization of metabolic labeling efficiency for less abundant or non-dividing cell types, and multiplexed Click-ExM for simultaneous visualization of multiple biomolecule classes, are important future goals."
+  },
+  "summaries": {
+    "beginner": "Expansion microscopy usually only works for proteins in cells. This paper developed a trick using click chemistry that lets the technique work for almost any kind of molecule in the cell, including fats, DNA, and sugars, making it a much more universal super-resolution tool.",
+    "intermediate": "Click-ExM extends expansion microscopy to non-protein biomolecules by using metabolic incorporation of click chemistry handles, followed by covalent anchoring to the expansion hydrogel via azide-alkyne cycloaddition. This approach enables nanoscale-resolution imaging of lipids, nucleic acids, glycans, and other biomolecules that are inaccessible to standard ExM protocols.",
+    "advanced": "Click-ExM addresses the fundamental limitation of protein-centric ExM by leveraging bioorthogonal click chemistry to anchor metabolically labeled biomolecules. The metabolic labeling step requires cell proliferation or biosynthetic activity to incorporate unnatural substrates, which limits applicability to non-dividing or metabolically inactive cells; additionally, the degree of metabolic labeling varies by biomolecule and cell type, introducing quantitative variability in the apparent biomolecule distribution."
+  },
+  "discussion_prompts": [
+    "What are the main limitations of metabolic click chemistry labeling compared to direct chemical modification or antibody-based labeling, and how do these affect the biological questions accessible with Click-ExM?",
+    "How would you validate that Click-ExM accurately preserves the relative spatial distribution of lipids or nucleic acids, given the additional chemical processing steps required?",
+    "What specific biological questions about non-protein biomolecule distributions at the nanoscale become tractable with Click-ExM that were not previously addressable?"
+  ],
+  "dimension": "image-acquisition",
+  "tags": [
+    "method:expansion-microscopy",
+    "method:click-chemistry",
+    "method:super-resolution",
+    "imaging:fluorescence",
+    "cell-biology:lipids",
+    "cell-biology:nucleic-acids"
+  ]
+}

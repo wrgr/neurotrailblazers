@@ -1,0 +1,16 @@
+{
+  "id": "yendiki-2011-tracula",
+  "title": "Automated probabilistic reconstruction of white-matter pathways in health and disease using an atlas of the underlying anatomy",
+  "authors": ["Yendiki A", "Panneck P", "Srinivasan P", "Stevens A", "Zollei L", "Augustinack J", "Wang R", "Salat D", "Ehrlich S", "Behrens T", "Jbabdi S", "Gollub R", "Fischl B"],
+  "year": 2011,
+  "journal": "Frontiers in Neuroinformatics",
+  "doi": "10.3389/fninf.2011.00023",
+  "url": "https://www.frontiersin.org/articles/10.3389/fninf.2011.00023/full",
+  "abstract": "TRACULA (TRActs Constrained by UnderLying Anatomy) uses prior anatomical knowledge to reconstruct white-matter pathways from diffusion MRI, enabling automated macro-scale connectome estimation.",
+  "seed_expert": "Anastasia Yendiki",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "methodology"],
+  "tags": ["TRACULA", "tractography", "diffusion-MRI", "white-matter", "macro-connectomics"],
+  "duplicate_of_existing": null,
+  "notes": "Key macro-scale connectomics method. BRAIN CONNECTS PI for primate/human connectomes."
+}

@@ -1,114 +1,192 @@
 ---
-layout: page
-title: "Technical Track Journal Club"
+layout: default
+title: "Journal Club"
 permalink: /technical-training/journal-club/
-slug: technical-track-journal-club
-track: research-in-action
-pathways:
-  - research workflow
-  - mentoring
+description: "Interactive journal club with 100+ curated connectomics papers. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
 ---
 
-## How this list is organized
-This journal club list is separate from the lesson pages but follows the technical training sequence. Each item is tagged by the most relevant units so teams can schedule readings alongside module progression. Required readings are the minimum shared core. Optional readings and media broaden context for deeper discussion.
+<div class="layout-content layout-page">
 
-## Required papers (3)
-### 1) White et al. (1986) - The structure of the nervous system of *C. elegans*
-**Link:** https://doi.org/10.1098/rstb.1986.0056  
-**Best fit units:** 01, 02, atlas-reference  
-This is the foundational paper that provided the first near-complete wiring map for a simple organism. It shows what is possible when structural reconstruction is pursued rigorously and systematically. In plain terms, it is the historical proof that mapping wiring diagrams can produce biologically meaningful insights.
-**Facilitator prompts:** What evidence in this paper is descriptive vs mechanistic? Which methodological limits would change interpretation if repeated today?
+<section class="jc-hero">
+  <h1>Journal Club</h1>
+  <p>{{ site.data.journal_papers.papers.size }} curated connectomics papers across 11 dimensions, each presented with the OCAR framework &mdash; Opportunity, Challenge, Action, Resolution, and Future Work.</p>
+  <div class="jc-hero-stats">
+    <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} papers</span>
+    <span class="jc-hero-stat">11 dimensions</span>
+    <span class="jc-hero-stat">3 expertise levels</span>
+    <span class="jc-hero-stat">1986 &ndash; 2025</span>
+  </div>
+</section>
 
-### 2) Denk and Horstmann (2004) - Serial block-face scanning electron microscopy
-**Link:** https://doi.org/10.1371/journal.pbio.0020329  
-**Best fit units:** 03, 04  
-This paper introduced a key imaging approach that made high-throughput 3D ultrastructural imaging more practical. It is essential for understanding why modern connectomics became technically feasible at larger scales. In journal club, it helps connect preparation and imaging methods to later computational reconstruction demands.
-**Facilitator prompts:** Which acquisition tradeoffs are explicit versus implicit? What modern QA metrics would you add to this workflow?
+<section class="section section-compact">
+  <h2 style="margin-top:0">Suggested Reading Paths</h2>
+  <div class="jc-paths">
+    <div class="jc-path-card">
+      <h3>Historical Arc</h3>
+      <p>White 1986 &rarr; Denk &amp; Horstmann 2004 &rarr; Briggman &amp; Bock 2012 &rarr; Kasthuri 2015 &rarr; Zheng 2018 &rarr; Dorkenwald 2024</p>
+    </div>
+    <div class="jc-path-card">
+      <h3>Methods Deep Dive</h3>
+      <p><strong>Imaging:</strong> Xu 2017 &rarr; Yin 2020<br>
+         <strong>Segmentation:</strong> Turaga 2010 &rarr; Januszewski 2018 &rarr; Sheridan 2023<br>
+         <strong>Proofreading:</strong> Plaza 2014 &rarr; Dorkenwald 2022</p>
+    </div>
+    <div class="jc-path-card">
+      <h3>Analysis &amp; Interpretation</h3>
+      <p>Bullmore &amp; Sporns 2009 &rarr; Rubinov &amp; Sporns 2010 &rarr; Winding 2023 &rarr; Lappalainen 2024</p>
+    </div>
+    <div class="jc-path-card">
+      <h3>Cross-Scale (EM + MRI)</h3>
+      <p>Sporns 2005 &rarr; Maier-Hein 2017 &rarr; Glasser 2016 &rarr; Bae 2021 &rarr; Bassett &amp; Sporns 2017</p>
+    </div>
+  </div>
+</section>
 
-### 3) Januszewski et al. (2018) - High-precision automated reconstruction with flood-filling networks
-**Link:** https://doi.org/10.1038/s41592-018-0049-4  
-**Best fit units:** 08, 09  
-This paper is a cornerstone for modern segmentation at scale. It demonstrates how deep learning can dramatically reduce manual burden while still requiring quality control. For learners, it clarifies how algorithm design and proofreading must be treated as one integrated workflow.
-**Facilitator prompts:** Which failure cases persist despite automation? How should FFN-style performance be reported for scientific, not only engineering, validity?
+<section class="section section-compact">
+  <div class="jc-filters" id="jc-filters">
+    <label for="jc-expertise">Expertise:</label>
+    <select id="jc-expertise">
+      <option value="beginner">Beginner</option>
+      <option value="intermediate" selected>Intermediate</option>
+      <option value="advanced">Advanced</option>
+    </select>
 
-## Optional papers (3)
-### 1) Kasthuri et al. (2015) - Saturated reconstruction of neocortex
-**Link:** https://doi.org/10.1016/j.cell.2015.06.054  
-**Best fit units:** 02, 03, 05  
-This work is a major reference for dense ultrastructural reconstruction in mammalian cortex. It highlights both the biological richness and the technical complexity of large reconstructions. It is especially useful for discussions about scale, annotation burden, and interpretation limits.
-**Facilitator prompts:** What decisions in this study are scale-limited? Which parts would be redesigned for current cloud-scale workflows?
+    <label for="jc-dimension">Dimension:</label>
+    <select id="jc-dimension">
+      <option value="all">All dimensions</option>
+      <option value="neuroanatomy">Neuroanatomy</option>
+      <option value="imaging">Imaging &amp; Sample Prep</option>
+      <option value="computer-vision-ml">Computer Vision &amp; ML</option>
+      <option value="data-storage">Data Storage &amp; Pipelines</option>
+      <option value="proofreading">Proofreading &amp; QC</option>
+      <option value="cell-types">Cell Types</option>
+      <option value="connectomics">Graph Construction</option>
+      <option value="network-analysis">Network Analysis</option>
+      <option value="mri-connectomics">MRI Connectomics</option>
+      <option value="neuroai">NeuroAI &amp; Modeling</option>
+      <option value="case-studies">Case Studies</option>
+    </select>
 
-### 2) Harris and Weinberg (2012) - Ultrastructure of synapses in the mammalian brain
-**Link:** https://doi.org/10.1101/cshperspect.a005587  
-**Best fit units:** 05, 06, 08  
-This review gives a practical structural vocabulary for interpreting synapses and nearby compartments. It helps teams align on what features are biologically meaningful versus ambiguous in EM imagery. In training settings, it supports more consistent proofreading judgments.
-**Facilitator prompts:** Which synaptic cues are robust across datasets? Which cues are most susceptible to staining/contrast variation?
+    <label for="jc-sort">Sort:</label>
+    <select id="jc-sort">
+      <option value="year-desc">Newest first</option>
+      <option value="year-asc">Oldest first</option>
+      <option value="dimension">By dimension</option>
+    </select>
 
-### 3) Bassett, Zurn, and Gold (2018) - On the nature and use of models in network neuroscience
-**Link:** https://doi.org/10.1038/s41583-018-0038-8  
-**Best fit units:** 09, atlas-reference  
-This paper provides a conceptual framework for how models should be used in neuroscience without overclaiming. It is a strong discussion piece for separating descriptive, predictive, and explanatory modeling goals. It is particularly useful when connecting connectomics analyses to NeuroAI ambitions.
-**Facilitator prompts:** Which model claims in connectomics are currently descriptive only? What evidence upgrades them to explanatory?
+    <label for="jc-search">Search:</label>
+    <input type="text" id="jc-search" placeholder="keyword, author, tag…">
 
-## Relevant videos/media (up to 3)
-### 1) Sebastian Seung TED Talk - "I Am My Connectome"
-**Link:** https://www.ted.com/talks/sebastian_seung_i_am_my_connectome  
-**Best fit units:** 01, 02  
-This talk is a high-level motivation piece that is still useful for orientation. It communicates why wiring diagrams matter in an accessible way for mixed audiences. It works best as a kickoff discussion, followed by more technical papers.
-**Facilitator prompts:** Which statements are motivational rhetoric vs testable technical claims?
+    <span class="jc-filter-count" id="jc-count"></span>
+  </div>
 
-### 2) MICrONS Explorer (interactive dataset platform)
-**Link:** https://www.microns-explorer.org/  
-**Best fit units:** 02, 04, 08, 09  
-This is a practical media resource rather than a single lecture. It lets learners interact with connectomics data and see how analysis questions are grounded in real structures. For journal club, it works well as a live demonstration companion to paper discussion.
-**Facilitator prompts:** What metadata do you need before interpreting any visualization from this platform?
+  <div class="jc-grid" id="jc-grid">
+    {% assign sorted_papers = site.data.journal_papers.papers | sort: "year" | reverse %}
+    {% for paper in sorted_papers %}
+      {% include cards/journal-paper-card.html paper=paper %}
+    {% endfor %}
+  </div>
+  <div class="jc-empty hidden" id="jc-empty">No papers match your filters. Try broadening your search.</div>
+</section>
 
-### 3) FlyWire platform and tutorials
-**Link:** https://flywire.ai/  
-**Best fit units:** 02, 05, 06, 08  
-This platform provides hands-on exposure to segmentation, proofreading, and morphology interpretation. It is helpful for translating reading discussions into concrete annotation decisions. In mixed-skill groups, it gives immediate visual examples that reduce abstract confusion.
-**Facilitator prompts:** Which proofreading decisions are reproducible across annotators, and which require adjudication policy?
+<section class="section section-compact">
+  <h2>Journal Club Prep Checklist</h2>
+  <ul>
+    <li>Assign one person to lead methods critique and one to lead limitations critique.</li>
+    <li>Require each participant to bring one claim, one supporting metric, and one unresolved uncertainty.</li>
+    <li>Track discussion outcomes: method takeaway, reproducibility concern, follow-up action.</li>
+    <li>Label all benchmark and performance numbers with publication year and context.</li>
+  </ul>
 
-## Journal-club technical prep checklist
-- Assign one person to lead methods critique and one person to lead limitations critique.
-- Require each participant to bring one claim, one supporting metric, and one unresolved uncertainty.
-- Track discussion outcomes in a short log: method takeaway, reproducibility concern, follow-up action.
-- Label all benchmark and performance numbers with publication year and context.
+  <h2>Suggested Cadence</h2>
+  <ul>
+    <li><strong>Week A:</strong> Required paper + one media demo aligned to current unit.</li>
+    <li><strong>Week B:</strong> Optional paper focused on failure modes or interpretation limits.</li>
+    <li><strong>Week C:</strong> Synthesis session using the atlas reference and dictionary terms.</li>
+  </ul>
+</section>
 
-## Suggested cadence
-- Week A: required paper + one media demo aligned to current unit.
-- Week B: optional paper focused on failure modes or interpretation limits.
-- Week C: synthesis session using the atlas reference and dictionary terms.
+</div>
 
----
+<script>
+(function () {
+  var grid      = document.getElementById('jc-grid');
+  var cards     = Array.from(grid.querySelectorAll('.jc-card'));
+  var countEl   = document.getElementById('jc-count');
+  var emptyEl   = document.getElementById('jc-empty');
+  var expSel    = document.getElementById('jc-expertise');
+  var dimSel    = document.getElementById('jc-dimension');
+  var sortSel   = document.getElementById('jc-sort');
+  var searchInp = document.getElementById('jc-search');
 
-## Full paper collection — browse by dimension, date, or tag
+  // Expertise level switching (tabs inside cards)
+  function setExpertise(level) {
+    cards.forEach(function (card) {
+      var tabs = card.querySelectorAll('.jc-tab');
+      var levels = card.querySelectorAll('.jc-level');
+      tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.level === level); });
+      levels.forEach(function (l) { l.classList.toggle('active', l.dataset.level === level); });
+    });
+  }
 
-The journal club readings above are a curated starting set. The full **[Journal Paper Collection](/content-library/journal-papers/)** contains **~100 papers** across 11 connectomics dimensions, each with:
+  // Tab click inside individual cards
+  grid.addEventListener('click', function (e) {
+    var tab = e.target.closest('.jc-tab');
+    if (!tab) return;
+    var card = tab.closest('.jc-card');
+    card.querySelectorAll('.jc-tab').forEach(function (t) { t.classList.remove('active'); });
+    card.querySelectorAll('.jc-level').forEach(function (l) { l.classList.remove('active'); });
+    tab.classList.add('active');
+    card.querySelector('.jc-level[data-level="' + tab.dataset.level + '"]').classList.add('active');
+  });
 
-- **Three-level summaries** (beginner / intermediate / advanced)
-- **Discussion prompts** ready for journal club use
-- **Tags** for cross-referencing with content library entries
+  // Tag click to search
+  grid.addEventListener('click', function (e) {
+    var tag = e.target.closest('.jc-tag');
+    if (!tag) return;
+    searchInp.value = tag.dataset.tag;
+    applyFilters();
+  });
 
-All papers are stored as structured data in `_data/journal_papers.yml` and can be sorted or filtered by:
+  function applyFilters() {
+    var dim    = dimSel.value;
+    var query  = searchInp.value.toLowerCase().trim();
+    var visible = 0;
 
-| Browse by | How |
-|-----------|-----|
-| **Dimension** | [Neuroanatomy](/content-library/journal-papers/neuroanatomy/), [Imaging](/content-library/journal-papers/imaging/), [CV/ML](/content-library/journal-papers/computer-vision-ml/), [Data Storage](/content-library/journal-papers/data-storage/), [Proofreading](/content-library/journal-papers/proofreading/), [Cell Types](/content-library/journal-papers/cell-types/), [Graph Construction](/content-library/journal-papers/connectomics/), [Network Analysis](/content-library/journal-papers/network-analysis/), [MRI Connectomics](/content-library/journal-papers/mri-connectomics/), [NeuroAI](/content-library/journal-papers/neuroai/), [Case Studies](/content-library/journal-papers/case-studies/) |
-| **Publication date** | Every paper record includes a `year` field. Sort `_data/journal_papers.yml` by year to build chronological reading sequences — from foundational papers (White 1986, Biswal 1995) through the modern era (FlyWire 2024, H01 2024). |
-| **Tag** | Papers share the same tag taxonomy as content library entries. Filter by tag (e.g., `case-studies:FlyWire`) to find all papers and reference materials on a specific topic. |
-| **Expertise level** | Use beginner summaries for orientation sessions, intermediate for standard journal club, advanced for methods-focused critique. |
+    cards.forEach(function (card) {
+      var matchDim   = dim === 'all' || card.dataset.dimension === dim;
+      var matchQuery = !query ||
+        card.textContent.toLowerCase().indexOf(query) !== -1 ||
+        (card.dataset.tags && card.dataset.tags.toLowerCase().indexOf(query) !== -1);
+      var show = matchDim && matchQuery;
+      card.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
 
-### Suggested reading paths
+    countEl.textContent = visible + ' of ' + cards.length + ' papers';
+    emptyEl.classList.toggle('hidden', visible > 0);
+  }
 
-**Path 1 — Historical arc (chronological):**
-White 1986 → Denk & Horstmann 2004 → Briggman & Bock 2012 → Kasthuri 2015 → Zheng 2018 → Dorkenwald 2024
+  function applySort() {
+    var val = sortSel.value;
+    var sorted = cards.slice();
+    if (val === 'year-desc') {
+      sorted.sort(function (a, b) { return parseInt(b.dataset.year) - parseInt(a.dataset.year); });
+    } else if (val === 'year-asc') {
+      sorted.sort(function (a, b) { return parseInt(a.dataset.year) - parseInt(b.dataset.year); });
+    } else if (val === 'dimension') {
+      sorted.sort(function (a, b) { return a.dataset.dimension.localeCompare(b.dataset.dimension); });
+    }
+    sorted.forEach(function (card) { grid.appendChild(card); });
+  }
 
-**Path 2 — Methods deep dive (by pipeline stage):**
-Imaging: Xu 2017 → Yin 2020 | Segmentation: Turaga 2010 → Januszewski 2018 → Sheridan 2023 | Proofreading: Plaza 2014 → Dorkenwald 2022 (FlyWire)
+  expSel.addEventListener('change', function () { setExpertise(this.value); });
+  dimSel.addEventListener('change', function () { applyFilters(); });
+  sortSel.addEventListener('change', function () { applySort(); applyFilters(); });
+  searchInp.addEventListener('input', function () { applyFilters(); });
 
-**Path 3 — Analysis & interpretation:**
-Bullmore & Sporns 2009 → Rubinov & Sporns 2010 → Winding 2023 → Lappalainen 2024
-
-**Path 4 — Cross-scale integration (EM + MRI):**
-Sporns 2005 → Maier-Hein 2017 → Glasser 2016 → Bae 2021 → Bassett & Sporns 2017
+  // Init
+  setExpertise(expSel.value);
+  applyFilters();
+})();
+</script>

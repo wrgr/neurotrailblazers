@@ -19,6 +19,8 @@ items:
         url: "/tracks/career-and-community/"
   - title: "Technical Course"
     url: "/technical-training/"
+  - title: "Journal Club"
+    url: "/technical-training/journal-club/"
   - title: "Modules"
     url: "/modules/"
     dropdown: []

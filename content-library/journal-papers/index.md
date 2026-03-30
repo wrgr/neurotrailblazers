@@ -2,12 +2,12 @@
 layout: page
 title: "Journal Paper Collection"
 permalink: /content-library/journal-papers/
-description: "~100 curated connectomics journal papers organized by dimension, with summaries at beginner, intermediate, and advanced expertise levels. Each paper includes tags for cross-referencing with the content library and discussion prompts for journal club."
+description: "100+ curated connectomics journal papers organized by dimension, with summaries at beginner, intermediate, and advanced expertise levels. Each paper includes tags for cross-referencing with the content library and discussion prompts for journal club."
 ---
 
 # Journal Paper Collection
 
-A curated library of ~100 essential connectomics papers organized across 11 dimensions — from ultrastructure to MRI — and tagged for cross-referencing with the content library. Each paper includes:
+A curated library of 100+ essential connectomics papers organized across 11 dimensions — from ultrastructure to MRI — and tagged for cross-referencing with the content library. Each paper includes:
 
 - **Three-level summaries** — beginner (no prerequisites), intermediate (familiar with basics), advanced (active researcher)
 - **Tags** — linking papers to the content library tag taxonomy for combinable micro lessons
@@ -52,7 +52,7 @@ All papers are also available as structured data in `_data/journal_papers.yml` f
 | [NeuroAI & Modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Structure-function, bio-inspired AI, connectome-constrained models |
 | [Datasets & Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | C. elegans, FlyWire, MICrONS, H01, landmark projects |
 
-**Total: ~98 papers** across 11 dimensions.
+**Total: 100+ papers** across 11 dimensions (including recent additions from 2022–2025).
 
 ---
 

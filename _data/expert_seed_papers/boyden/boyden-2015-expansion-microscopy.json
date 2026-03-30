@@ -1,15 +1,29 @@
 {
   "id": "boyden-2015-expansion-microscopy",
   "title": "Expansion microscopy",
-  "authors": ["Chen F", "Tillberg PW", "Boyden ES"],
+  "authors": [
+    "Chen F",
+    "Tillberg PW",
+    "Boyden ES"
+  ],
   "year": 2015,
   "journal": "Science",
   "doi": "10.1126/science.1260088",
   "url": "https://www.science.org/doi/10.1126/science.1260088",
   "abstract": "By synthesizing a swellable polymer network within a specimen, it can be physically expanded, isotropically separating labels below the diffraction limit. We demonstrate ~70nm lateral resolution in brain tissue using a conventional confocal microscope.",
   "seed_expert": "Ed Boyden",
-  "dimensions": ["image-acquisition", "methodology"],
-  "tags": ["expansion-microscopy", "ExM", "super-resolution", "polymer", "optical"],
+  "dimensions": [
+    "image-acquisition",
+    "methodology"
+  ],
+  "tags": [
+    "expansion-microscopy",
+    "ExM",
+    "super-resolution",
+    "polymer",
+    "optical"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Foundational ExM paper — potential alternative to EM for connectomics."
+  "notes": "Foundational ExM paper \u2014 potential alternative to EM for connectomics.",
+  "author_tier": 1
 }

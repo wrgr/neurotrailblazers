@@ -1,15 +1,49 @@
 {
   "id": "plaza-2017-mushroom-body",
   "title": "A connectome of a learning and memory center in the adult Drosophila brain",
-  "authors": ["Takemura SY", "Aso Y", "Hige T", "Wong AM", "Lu Z", "Xu CS", "Rivlin PK", "Hess HF", "Zhao T", "Parag T", "Berg S", "Huang GB", "Katz WT", "Olbris DJ", "Plaza SM", "Umayam L", "Aber R", "Kainmueller D", "Preibisch S", "Saalfeld S", "Meinertzhagen IA", "Scheffer LK", "Rubin GM"],
+  "authors": [
+    "Takemura SY",
+    "Aso Y",
+    "Hige T",
+    "Wong AM",
+    "Lu Z",
+    "Xu CS",
+    "Rivlin PK",
+    "Hess HF",
+    "Zhao T",
+    "Parag T",
+    "Berg S",
+    "Huang GB",
+    "Katz WT",
+    "Olbris DJ",
+    "Plaza SM",
+    "Umayam L",
+    "Aber R",
+    "Kainmueller D",
+    "Preibisch S",
+    "Saalfeld S",
+    "Meinertzhagen IA",
+    "Scheffer LK",
+    "Rubin GM"
+  ],
   "year": 2017,
   "journal": "eLife",
   "doi": "10.7554/eLife.26975",
   "url": "https://elifesciences.org/articles/26975",
   "abstract": "We reconstructed all 983 neurons within the mushroom body alpha lobe using FIB-SEM at 8nm isotropic voxels, revealing unexpected KC-to-DAN synapses and that only 6% of KC-MBON synapses receive direct DAN input.",
   "seed_expert": "Stephen Plaza",
-  "dimensions": ["connectomics", "case-studies"],
-  "tags": ["mushroom-body", "drosophila", "learning-memory", "FIB-SEM", "alpha-lobe"],
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "mushroom-body",
+    "drosophila",
+    "learning-memory",
+    "FIB-SEM",
+    "alpha-lobe"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Complete mushroom body alpha lobe connectome with unexpected synaptic motifs."
+  "notes": "Complete mushroom body alpha lobe connectome with unexpected synaptic motifs.",
+  "author_tier": 2
 }

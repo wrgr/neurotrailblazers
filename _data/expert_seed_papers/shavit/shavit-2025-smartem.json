@@ -1,15 +1,32 @@
 {
   "id": "shavit-2025-smartem",
   "title": "SmartEM: machine-learning guided electron microscopy",
-  "authors": ["Meirovitch Y", "Mi L", "Saribekyan H", "Bhatt A", "Meirovitch Y", "Shavit N", "Lichtman JW"],
+  "authors": [
+    "Meirovitch Y",
+    "Mi L",
+    "Saribekyan H",
+    "Bhatt A",
+    "Meirovitch Y",
+    "Shavit N",
+    "Lichtman JW"
+  ],
   "year": 2025,
   "journal": "Nature Methods",
   "doi": "10.1038/s41592-025-02929-3",
   "url": "https://www.nature.com/articles/s41592-025-02929-3",
   "abstract": "SmartEM integrates machine learning into real-time EM image acquisition, achieving a 7-fold acceleration by intelligently allocating imaging resolution where it matters most, making connectomics more accessible to labs without high-throughput microscopes.",
   "seed_expert": "Nir Shavit",
-  "dimensions": ["image-acquisition", "computer-vision-ml"],
-  "tags": ["SmartEM", "intelligent-acquisition", "acceleration", "ML-guided"],
+  "dimensions": [
+    "image-acquisition",
+    "computer-vision-ml"
+  ],
+  "tags": [
+    "SmartEM",
+    "intelligent-acquisition",
+    "acceleration",
+    "ML-guided"
+  ],
   "duplicate_of_existing": null,
-  "notes": "7x imaging speedup via ML-guided acquisition; BRAIN CONNECTS funded."
+  "notes": "7x imaging speedup via ML-guided acquisition; BRAIN CONNECTS funded.",
+  "author_tier": 2
 }

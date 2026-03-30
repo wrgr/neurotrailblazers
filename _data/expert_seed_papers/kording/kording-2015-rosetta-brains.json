@@ -1,15 +1,37 @@
 {
   "id": "kording-2015-rosetta-brains",
   "title": "Rosetta Brains: A Strategy for Molecularly-Annotated Connectomics",
-  "authors": ["Marblestone AH", "Daugharthy ER", "Kalhor R", "Peikon ID", "Kebschull JM", "Shipman SL", "Mishchenko Y", "Lee J", "Kording KP", "Boyden ES", "Zador AM", "Church GM"],
+  "authors": [
+    "Marblestone AH",
+    "Daugharthy ER",
+    "Kalhor R",
+    "Peikon ID",
+    "Kebschull JM",
+    "Shipman SL",
+    "Mishchenko Y",
+    "Lee J",
+    "Kording KP",
+    "Boyden ES",
+    "Zador AM",
+    "Church GM"
+  ],
   "year": 2014,
   "journal": "arXiv preprint",
   "doi": null,
   "url": "https://arxiv.org/abs/1404.5103",
   "abstract": "We propose a strategy for obtaining molecularly annotated connectomes by combining barcoding-based connectivity mapping with in situ sequencing of gene expression, creating a 'Rosetta Stone' linking molecular identity to connectivity.",
   "seed_expert": "Konrad Kording",
-  "dimensions": ["methodology", "connectomics"],
-  "tags": ["molecular-annotation", "barcoding", "in-situ-sequencing", "multi-modal"],
+  "dimensions": [
+    "methodology",
+    "connectomics"
+  ],
+  "tags": [
+    "molecular-annotation",
+    "barcoding",
+    "in-situ-sequencing",
+    "multi-modal"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Visionary proposal connecting molecular identity to wiring. Links Kording, Boyden, Zador, Church."
+  "notes": "Visionary proposal connecting molecular identity to wiring. Links Kording, Boyden, Zador, Church.",
+  "author_tier": 1
 }

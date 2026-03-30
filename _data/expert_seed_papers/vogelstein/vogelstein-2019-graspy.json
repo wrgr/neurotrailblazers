@@ -1,15 +1,31 @@
 {
   "id": "vogelstein-2019-graspy",
   "title": "GraSPy: Graph Statistics in Python",
-  "authors": ["Chung J", "Pedigo BD", "Bridgeford EW", "Varjavand BK", "Helm HS", "Vogelstein JT"],
+  "authors": [
+    "Chung J",
+    "Pedigo BD",
+    "Bridgeford EW",
+    "Varjavand BK",
+    "Helm HS",
+    "Vogelstein JT"
+  ],
   "year": 2019,
   "journal": "Journal of Machine Learning Research",
   "doi": null,
   "url": "https://jmlr.org/papers/v20/19-490.html",
   "abstract": "GraSPy is an open-source Python package for graph statistical analysis. It provides tools for random graph models, spectral embeddings, graph hypothesis testing, and network visualization.",
   "seed_expert": "Joshua Vogelstein",
-  "dimensions": ["data-infrastructure", "network-analysis"],
-  "tags": ["software", "Python", "graph-statistics", "open-source"],
+  "dimensions": [
+    "data-infrastructure",
+    "network-analysis"
+  ],
+  "tags": [
+    "software",
+    "Python",
+    "graph-statistics",
+    "open-source"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Key software tool for statistical analysis of connectomes."
+  "notes": "Key software tool for statistical analysis of connectomes.",
+  "author_tier": 1
 }

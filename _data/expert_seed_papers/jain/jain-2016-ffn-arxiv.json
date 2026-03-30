@@ -1,15 +1,30 @@
 {
   "id": "jain-2016-ffn-arxiv",
   "title": "Flood-Filling Networks",
-  "authors": ["Januszewski M", "Maitin-Shepard J", "Li PH", "Kornfeld J", "Denk W", "Jain V"],
+  "authors": [
+    "Januszewski M",
+    "Maitin-Shepard J",
+    "Li PH",
+    "Kornfeld J",
+    "Denk W",
+    "Jain V"
+  ],
   "year": 2016,
   "journal": "arXiv preprint",
   "doi": null,
   "url": "https://arxiv.org/abs/1611.00421",
   "abstract": "We propose flood-filling networks, a unified end-to-end trainable ML approach in which a recurrent 3D convolutional network directly produces individual neuron segments from raw EM images, substantially improving accuracy over previous methods.",
   "seed_expert": "Viren Jain",
-  "dimensions": ["computer-vision-ml"],
-  "tags": ["flood-filling-network", "recurrent-CNN", "segmentation", "end-to-end"],
+  "dimensions": [
+    "computer-vision-ml"
+  ],
+  "tags": [
+    "flood-filling-network",
+    "recurrent-CNN",
+    "segmentation",
+    "end-to-end"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Original FFN preprint. The Nature Methods version (2018) is in existing 102."
+  "notes": "Original FFN preprint. The Nature Methods version (2018) is in existing 102.",
+  "author_tier": 1
 }

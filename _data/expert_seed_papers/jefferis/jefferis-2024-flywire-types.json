@@ -1,15 +1,40 @@
 {
   "id": "jefferis-2024-flywire-types",
   "title": "Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila",
-  "authors": ["Schlegel P", "Yin Y", "Bates AS", "Dorkenwald S", "Eichler K", "Brooks P", "Han DS", "Gkantia M", "Athrey M", "Moitra S", "Pacheco D", "Costa M", "Jefferis GSXE"],
+  "authors": [
+    "Schlegel P",
+    "Yin Y",
+    "Bates AS",
+    "Dorkenwald S",
+    "Eichler K",
+    "Brooks P",
+    "Han DS",
+    "Gkantia M",
+    "Athrey M",
+    "Moitra S",
+    "Pacheco D",
+    "Costa M",
+    "Jefferis GSXE"
+  ],
   "year": 2024,
   "journal": "Nature",
   "doi": "10.1038/s41586-024-07686-5",
   "url": "https://www.nature.com/articles/s41586-024-07686-5",
   "abstract": "We annotate the entire FlyWire connectome, assign cell types to all 139,255 neurons, and quantify circuit stereotypy by comparing wiring across individual flies, finding that most circuit motifs are highly conserved.",
   "seed_expert": "Gregory Jefferis",
-  "dimensions": ["cell-types", "case-studies", "connectomics"],
-  "tags": ["FlyWire", "cell-typing", "circuit-stereotypy", "drosophila", "whole-brain"],
+  "dimensions": [
+    "cell-types",
+    "case-studies",
+    "connectomics"
+  ],
+  "tags": [
+    "FlyWire",
+    "cell-typing",
+    "circuit-stereotypy",
+    "drosophila",
+    "whole-brain"
+  ],
   "duplicate_of_existing": "schlegel-2024",
-  "notes": "Already in existing 102. Complete cell type annotation of the fly brain."
+  "notes": "Already in existing 102. Complete cell type annotation of the fly brain.",
+  "author_tier": 1
 }

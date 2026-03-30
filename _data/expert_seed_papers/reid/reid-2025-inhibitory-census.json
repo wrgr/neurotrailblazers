@@ -1,15 +1,39 @@
 {
   "id": "reid-2025-inhibitory-census",
   "title": "Inhibitory specificity from a connectomic census of mouse visual cortex",
-  "authors": ["Bodor AL", "Schneider-Mizell CM", "Bhatt AN", "Brittain D", "Celii B", "Elabbady L", "Bae JA", "Bodor AL", "Dorkenwald S", "Collman F", "Reid RC", "da Costa NM", "Seung HS"],
+  "authors": [
+    "Bodor AL",
+    "Schneider-Mizell CM",
+    "Bhatt AN",
+    "Brittain D",
+    "Celii B",
+    "Elabbady L",
+    "Bae JA",
+    "Bodor AL",
+    "Dorkenwald S",
+    "Collman F",
+    "Reid RC",
+    "da Costa NM",
+    "Seung HS"
+  ],
   "year": 2025,
   "journal": "Nature",
   "doi": "10.1038/s41586-024-07780-8",
   "url": "https://www.nature.com/articles/s41586-024-07780-8",
   "abstract": "Using mm-scale volumetric EM, we investigate connectivity of all inhibitory neurons across 1,352 cells spanning all layers of mouse visual cortex, producing a wiring diagram of >70,000 synapses and identifying a disinhibitory specialist class targeting basket cells.",
   "seed_expert": "R. Clay Reid",
-  "dimensions": ["connectomics", "cell-types", "case-studies"],
-  "tags": ["MICrONS", "inhibitory-neurons", "basket-cells", "disinhibition"],
+  "dimensions": [
+    "connectomics",
+    "cell-types",
+    "case-studies"
+  ],
+  "tags": [
+    "MICrONS",
+    "inhibitory-neurons",
+    "basket-cells",
+    "disinhibition"
+  ],
   "duplicate_of_existing": "bodor-2025",
-  "notes": "Already in existing 102. Connectomic census of inhibitory cell types."
+  "notes": "Already in existing 102. Connectomic census of inhibitory cell types.",
+  "author_tier": 1
 }

@@ -1,15 +1,26 @@
 {
   "id": "denk-2004-sbfsem",
   "title": "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure",
-  "authors": ["Denk W", "Horstmann H"],
+  "authors": [
+    "Denk W",
+    "Horstmann H"
+  ],
   "year": 2004,
   "journal": "PLoS Biology",
   "doi": "10.1371/journal.pbio.0020329",
   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020329",
   "abstract": "We describe serial block-face scanning electron microscopy (SBFSEM), using a microtome mounted inside a SEM to automatically cut and image successive thin sections of tissue, enabling automated 3D ultrastructural imaging at nanometer resolution.",
   "seed_expert": "Winfried Denk",
-  "dimensions": ["image-acquisition"],
-  "tags": ["SBFSEM", "serial-block-face", "automated-sectioning", "foundational-technology"],
+  "dimensions": [
+    "image-acquisition"
+  ],
+  "tags": [
+    "SBFSEM",
+    "serial-block-face",
+    "automated-sectioning",
+    "foundational-technology"
+  ],
   "duplicate_of_existing": "denk-horstmann-2004",
-  "notes": "Already in existing 102. Invention of SBFSEM — foundational technology for connectomics."
+  "notes": "Already in existing 102. Invention of SBFSEM \u2014 foundational technology for connectomics.",
+  "author_tier": 1
 }

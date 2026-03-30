@@ -1,15 +1,34 @@
 {
   "id": "zador-2017-synseq",
   "title": "Using high-throughput barcode sequencing to efficiently map connectomes",
-  "authors": ["Peikon ID", "Kebschull JM", "Vagin VV", "Ravens DI", "Sun YC", "Brber E", "Kuber N", "Peikon ID", "Zador AM"],
+  "authors": [
+    "Peikon ID",
+    "Kebschull JM",
+    "Vagin VV",
+    "Ravens DI",
+    "Sun YC",
+    "Brber E",
+    "Kuber N",
+    "Peikon ID",
+    "Zador AM"
+  ],
   "year": 2017,
   "journal": "Nucleic Acids Research",
   "doi": "10.1093/nar/gkx292",
   "url": "https://academic.oup.com/nar/article/45/12/e115/3760189",
   "abstract": "SYNseq converts the connectome into a form exploiting high-throughput DNA sequencing by labeling each neuron with a unique RNA barcode targeted to the synapse using engineered proteins.",
   "seed_expert": "Anthony Zador",
-  "dimensions": ["methodology", "connectomics"],
-  "tags": ["SYNseq", "barcoding", "synapse-targeting", "sequencing"],
+  "dimensions": [
+    "methodology",
+    "connectomics"
+  ],
+  "tags": [
+    "SYNseq",
+    "barcoding",
+    "synapse-targeting",
+    "sequencing"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Extends barcoding from projection mapping to synaptic connectivity."
+  "notes": "Extends barcoding from projection mapping to synaptic connectivity.",
+  "author_tier": 1
 }

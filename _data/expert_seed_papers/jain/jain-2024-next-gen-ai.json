@@ -1,15 +1,27 @@
 {
   "id": "jain-2024-next-gen-ai",
   "title": "Next-generation AI for connectomics",
-  "authors": ["Januszewski M", "Jain V"],
+  "authors": [
+    "Januszewski M",
+    "Jain V"
+  ],
   "year": 2024,
   "journal": "Nature Methods",
   "doi": "10.1038/s41592-024-02336-0",
   "url": "https://www.nature.com/articles/s41592-024-02336-0",
   "abstract": "A perspective on the future of AI methods for connectomics, discussing how foundation models, self-supervised learning, and other advances will further transform neural circuit reconstruction.",
   "seed_expert": "Viren Jain",
-  "dimensions": ["computer-vision-ml", "methodology"],
-  "tags": ["AI", "foundation-models", "perspective", "future-directions"],
+  "dimensions": [
+    "computer-vision-ml",
+    "methodology"
+  ],
+  "tags": [
+    "AI",
+    "foundation-models",
+    "perspective",
+    "future-directions"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Forward-looking perspective on AI advances for connectomics."
+  "notes": "Forward-looking perspective on AI advances for connectomics.",
+  "author_tier": 1
 }

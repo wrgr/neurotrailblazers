@@ -1,15 +1,42 @@
 {
   "id": "dorkenwald-2024-flywire-wiring",
   "title": "Neuronal wiring diagram of an adult brain",
-  "authors": ["Dorkenwald S", "Matsliah A", "Sterling AR", "Schlegel P", "Yu SC", "McKellar CE", "Lin A", "Costa M", "Eichler K", "Yin Y", "Silversmith W", "Bock DD", "Jefferis GSXE", "Seung HS", "Murthy M"],
+  "authors": [
+    "Dorkenwald S",
+    "Matsliah A",
+    "Sterling AR",
+    "Schlegel P",
+    "Yu SC",
+    "McKellar CE",
+    "Lin A",
+    "Costa M",
+    "Eichler K",
+    "Yin Y",
+    "Silversmith W",
+    "Bock DD",
+    "Jefferis GSXE",
+    "Seung HS",
+    "Murthy M"
+  ],
   "year": 2024,
   "journal": "Nature",
   "doi": "10.1038/s41586-024-07558-y",
   "url": "https://www.nature.com/articles/s41586-024-07558-y",
   "abstract": "The FlyWire connectome: a complete map of 139,255 neurons and ~50 million chemical synapses in an adult Drosophila brain, combining automated AI segmentation with community proofreading.",
   "seed_expert": "Sven Dorkenwald",
-  "dimensions": ["connectomics", "case-studies", "proofreading"],
-  "tags": ["FlyWire", "whole-brain", "drosophila", "AI-segmentation", "community-proofreading"],
+  "dimensions": [
+    "connectomics",
+    "case-studies",
+    "proofreading"
+  ],
+  "tags": [
+    "FlyWire",
+    "whole-brain",
+    "drosophila",
+    "AI-segmentation",
+    "community-proofreading"
+  ],
   "duplicate_of_existing": "dorkenwald-2024-flywire",
-  "notes": "Already in existing 102. Cross-listed with Bock, Seung, Jefferis."
+  "notes": "Already in existing 102. Cross-listed with Bock, Seung, Jefferis.",
+  "author_tier": 2
 }

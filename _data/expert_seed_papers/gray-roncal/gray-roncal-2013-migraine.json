@@ -1,15 +1,38 @@
 {
   "id": "gray-roncal-2013-migraine",
   "title": "MIGRAINE: MRI Graph Reliability Analysis and Inference for Connectomics",
-  "authors": ["Gray Roncal WR", "Koterba ZH", "Mhembere D", "Kleissas DM", "Vogelstein JT", "Burns R", "Bowles AR", "Donavos DK", "Ryman S", "Jung RE", "Roncal L", "Huber MM", "Vogelstein RJ"],
+  "authors": [
+    "Gray Roncal WR",
+    "Koterba ZH",
+    "Mhembere D",
+    "Kleissas DM",
+    "Vogelstein JT",
+    "Burns R",
+    "Bowles AR",
+    "Donavos DK",
+    "Ryman S",
+    "Jung RE",
+    "Roncal L",
+    "Huber MM",
+    "Vogelstein RJ"
+  ],
   "year": 2013,
   "journal": "arXiv preprint / GlobalSIP",
   "doi": null,
   "url": "https://arxiv.org/abs/1312.4875",
   "abstract": "Connectomes can be estimated in humans at ~1mm3 scale using diffusion and functional MRI. We present a scalable implementation of open-source algorithms to rapidly estimate MR connectomes and develop a novel nonparametric non-Euclidean reliability metric.",
   "seed_expert": "William Gray Roncal",
-  "dimensions": ["methodology", "data-infrastructure"],
-  "tags": ["MRI-connectomics", "reliability", "pipeline", "diffusion-MRI"],
+  "dimensions": [
+    "methodology",
+    "data-infrastructure"
+  ],
+  "tags": [
+    "MRI-connectomics",
+    "reliability",
+    "pipeline",
+    "diffusion-MRI"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Macro-scale MRI connectomics pipeline and reliability analysis."
+  "notes": "Macro-scale MRI connectomics pipeline and reliability analysis.",
+  "author_tier": 2
 }

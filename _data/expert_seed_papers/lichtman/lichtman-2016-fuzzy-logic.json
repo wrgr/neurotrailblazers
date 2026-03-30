@@ -1,15 +1,29 @@
 {
   "id": "lichtman-2016-fuzzy-logic",
   "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
-  "authors": ["Morgan JL", "Berger DR", "Wetzel AW", "Lichtman JW"],
+  "authors": [
+    "Morgan JL",
+    "Berger DR",
+    "Wetzel AW",
+    "Lichtman JW"
+  ],
   "year": 2016,
   "journal": "Cell",
   "doi": "10.1016/j.cell.2016.02.033",
   "url": "https://www.cell.com/cell/fulltext/S0092-8674(16)30085-2",
   "abstract": "Using serial-section EM reconstruction in the mouse lateral geniculate nucleus, this study reveals that thalamic connectivity follows 'fuzzy logic' rather than strict point-to-point wiring, with retinal ganglion cell axons distributing synapses among multiple relay neurons.",
   "seed_expert": "Jeff Lichtman",
-  "dimensions": ["connectomics", "case-studies"],
-  "tags": ["thalamus", "LGN", "visual-system", "serial-EM"],
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "thalamus",
+    "LGN",
+    "visual-system",
+    "serial-EM"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Important case study on thalamocortical wiring specificity."
+  "notes": "Important case study on thalamocortical wiring specificity.",
+  "author_tier": 1
 }

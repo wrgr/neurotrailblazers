@@ -1,15 +1,35 @@
 {
   "id": "helmstaedter-2019-layer4",
   "title": "Dense connectomic reconstruction in layer 4 of the somatosensory cortex",
-  "authors": ["Motta A", "Berning M", "Boergens KM", "Staffler B", "Beining M", "Loomba S", "Hennig P", "Wissler H", "Helmstaedter M"],
+  "authors": [
+    "Motta A",
+    "Berning M",
+    "Boergens KM",
+    "Staffler B",
+    "Beining M",
+    "Loomba S",
+    "Hennig P",
+    "Wissler H",
+    "Helmstaedter M"
+  ],
   "year": 2019,
   "journal": "Science",
   "doi": "10.1126/science.aay3134",
   "url": "https://www.science.org/doi/10.1126/science.aay3134",
-  "abstract": "Dense reconstruction of ~500,000 cubic micrometers from layer 4 of mouse barrel cortex yielded 2.7m of neuronal cables implementing a connectome of ~400,000 synapses between 34,221 axons and 11,400 postsynaptic processes — 300x larger than previous dense cortical reconstructions.",
+  "abstract": "Dense reconstruction of ~500,000 cubic micrometers from layer 4 of mouse barrel cortex yielded 2.7m of neuronal cables implementing a connectome of ~400,000 synapses between 34,221 axons and 11,400 postsynaptic processes \u2014 300x larger than previous dense cortical reconstructions.",
   "seed_expert": "Moritz Helmstaedter",
-  "dimensions": ["connectomics", "case-studies"],
-  "tags": ["dense-reconstruction", "barrel-cortex", "layer-4", "somatosensory", "Hebbian"],
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "dense-reconstruction",
+    "barrel-cortex",
+    "layer-4",
+    "somatosensory",
+    "Hebbian"
+  ],
   "duplicate_of_existing": "motta-2019",
-  "notes": "Already in existing 102. Largest dense cortical connectome at publication."
+  "notes": "Already in existing 102. Largest dense cortical connectome at publication.",
+  "author_tier": 1
 }

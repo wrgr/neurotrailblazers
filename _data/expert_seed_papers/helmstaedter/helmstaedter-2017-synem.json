@@ -1,15 +1,31 @@
 {
   "id": "helmstaedter-2017-synem",
   "title": "SynEM, automated synapse detection for connectomics",
-  "authors": ["Staffler B", "Berning M", "Boergens KM", "Gour A", "van der Smagt P", "Helmstaedter M"],
+  "authors": [
+    "Staffler B",
+    "Berning M",
+    "Boergens KM",
+    "Gour A",
+    "van der Smagt P",
+    "Helmstaedter M"
+  ],
   "year": 2017,
   "journal": "eLife",
   "doi": "10.7554/eLife.26414",
   "url": "https://elifesciences.org/articles/26414",
   "abstract": "Automatic detection of synapses is a key requirement for connectomics. SynEM uses convolutional neural networks to detect synapses in 3D EM data, achieving accuracy sufficient for dense connectomic reconstruction.",
   "seed_expert": "Moritz Helmstaedter",
-  "dimensions": ["computer-vision-ml", "connectomics"],
-  "tags": ["synapse-detection", "CNN", "automated", "SynEM"],
+  "dimensions": [
+    "computer-vision-ml",
+    "connectomics"
+  ],
+  "tags": [
+    "synapse-detection",
+    "CNN",
+    "automated",
+    "SynEM"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Automated synapse detection enabling dense cortical connectomics."
+  "notes": "Automated synapse detection enabling dense cortical connectomics.",
+  "author_tier": 1
 }

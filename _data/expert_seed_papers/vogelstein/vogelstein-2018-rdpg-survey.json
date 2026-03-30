@@ -1,15 +1,35 @@
 {
   "id": "vogelstein-2018-rdpg-survey",
   "title": "Statistical Inference on Random Dot Product Graphs: A Survey",
-  "authors": ["Athreya A", "Fishkind DE", "Tang M", "Priebe CE", "Park Y", "Vogelstein JT", "Levin K", "Lyzinski V", "Qin Y", "Sussman DL"],
+  "authors": [
+    "Athreya A",
+    "Fishkind DE",
+    "Tang M",
+    "Priebe CE",
+    "Park Y",
+    "Vogelstein JT",
+    "Levin K",
+    "Lyzinski V",
+    "Qin Y",
+    "Sussman DL"
+  ],
   "year": 2018,
   "journal": "Journal of Machine Learning Research",
   "doi": null,
   "url": "https://jmlr.org/papers/v18/17-448.html",
   "abstract": "This survey describes a comprehensive paradigm for statistical inference on random dot product graphs, centered on spectral embeddings with proofs of consistency and asymptotic normality, applicable to connectome analysis.",
   "seed_expert": "Joshua Vogelstein",
-  "dimensions": ["network-analysis", "methodology"],
-  "tags": ["RDPG", "spectral-embedding", "graph-inference", "survey"],
+  "dimensions": [
+    "network-analysis",
+    "methodology"
+  ],
+  "tags": [
+    "RDPG",
+    "spectral-embedding",
+    "graph-inference",
+    "survey"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Theoretical foundation for spectral methods in connectome analysis."
+  "notes": "Theoretical foundation for spectral methods in connectome analysis.",
+  "author_tier": 1
 }

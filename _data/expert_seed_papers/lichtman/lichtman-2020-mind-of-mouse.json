@@ -1,15 +1,39 @@
 {
   "id": "lichtman-2020-mind-of-mouse",
   "title": "The Mind of a Mouse",
-  "authors": ["Abbott LF", "Bhatt DH", "Bharioke A", "Denk W", "Helmstaedter M", "Bhatt AN", "Kasthuri N", "Knowles-Barley S", "Lee WCA", "Lichtman JW", "Tsao DY", "Van Essen DC", "Seung HS", "Jain V"],
+  "authors": [
+    "Abbott LF",
+    "Bhatt DH",
+    "Bharioke A",
+    "Denk W",
+    "Helmstaedter M",
+    "Bhatt AN",
+    "Kasthuri N",
+    "Knowles-Barley S",
+    "Lee WCA",
+    "Lichtman JW",
+    "Tsao DY",
+    "Van Essen DC",
+    "Seung HS",
+    "Jain V"
+  ],
   "year": 2020,
   "journal": "Cell",
   "doi": "10.1016/j.cell.2020.08.010",
   "url": "https://www.cell.com/cell/fulltext/S0092-8674(20)31067-0",
   "abstract": "A perspective arguing for the creation of a complete mouse brain connectome, discussing the scientific rationale, technical feasibility, and expected impact of mapping every synapse in the mouse brain.",
   "seed_expert": "Jeff Lichtman",
-  "dimensions": ["connectomics", "ethics-society"],
-  "tags": ["mouse-connectome", "perspective", "whole-brain", "roadmap"],
+  "dimensions": [
+    "connectomics",
+    "ethics-society"
+  ],
+  "tags": [
+    "mouse-connectome",
+    "perspective",
+    "whole-brain",
+    "roadmap"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Influential perspective making the case for whole mouse brain connectomics."
+  "notes": "Influential perspective making the case for whole mouse brain connectomics.",
+  "author_tier": 1
 }

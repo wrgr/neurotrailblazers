@@ -1,15 +1,49 @@
 {
   "id": "dacosta-2025-sst-types",
   "title": "Connectomics of predicted Sst transcriptomic types in mouse visual cortex",
-  "authors": ["Schneider-Mizell CM", "Bodor AL", "Brittain D", "Buchanan J", "Bumbarger DJ", "Elabbady L", "Gamlin CR", "Hartmann D", "Jia Z", "Jordan D", "Kemnitz N", "Olbris DJ", "Silversmith W", "Takeno MM", "Torres R", "Wilson AM", "Wong W", "Wu J", "Yu SC", "Collman F", "da Costa NM", "Reid RC", "Seung HS"],
+  "authors": [
+    "Schneider-Mizell CM",
+    "Bodor AL",
+    "Brittain D",
+    "Buchanan J",
+    "Bumbarger DJ",
+    "Elabbady L",
+    "Gamlin CR",
+    "Hartmann D",
+    "Jia Z",
+    "Jordan D",
+    "Kemnitz N",
+    "Olbris DJ",
+    "Silversmith W",
+    "Takeno MM",
+    "Torres R",
+    "Wilson AM",
+    "Wong W",
+    "Wu J",
+    "Yu SC",
+    "Collman F",
+    "da Costa NM",
+    "Reid RC",
+    "Seung HS"
+  ],
   "year": 2025,
   "journal": "Nature",
   "doi": "10.1038/s41586-025-08805-6",
   "url": "https://www.nature.com/articles/s41586-025-08805-6",
   "abstract": "This study leverages Patch-seq to predict transcriptomically defined Sst interneuron subtypes and maps their synaptic connectivity using mm-scale EM, revealing cell-type-specific patterns of inhibitory wiring in mouse visual cortex.",
-  "seed_expert": "Nuno Maçarico da Costa",
-  "dimensions": ["cell-types", "connectomics"],
-  "tags": ["MICrONS", "Sst-interneurons", "Patch-seq", "transcriptomics", "inhibitory"],
+  "seed_expert": "Nuno Ma\u00e7arico da Costa",
+  "dimensions": [
+    "cell-types",
+    "connectomics"
+  ],
+  "tags": [
+    "MICrONS",
+    "Sst-interneurons",
+    "Patch-seq",
+    "transcriptomics",
+    "inhibitory"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Bridges transcriptomic cell types with connectomic wiring."
+  "notes": "Bridges transcriptomic cell types with connectomic wiring.",
+  "author_tier": 1
 }

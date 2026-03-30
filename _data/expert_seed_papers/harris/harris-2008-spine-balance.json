@@ -1,15 +1,27 @@
 {
   "id": "harris-2008-spine-balance",
   "title": "Balancing structure and function at hippocampal dendritic spines",
-  "authors": ["Bourne JN", "Harris KM"],
+  "authors": [
+    "Bourne JN",
+    "Harris KM"
+  ],
   "year": 2008,
   "journal": "Annual Review of Neuroscience",
   "doi": "10.1146/annurev.neuro.31.060407.125646",
   "url": "https://www.annualreviews.org/doi/10.1146/annurev.neuro.31.060407.125646",
   "abstract": "A comprehensive review of dendritic spine structure-function relationships, covering spine morphology classes, their molecular composition, and how structural plasticity mechanisms balance stability and flexibility.",
   "seed_expert": "Kristen Harris",
-  "dimensions": ["neuroanatomy"],
-  "tags": ["dendritic-spines", "plasticity", "hippocampus", "review", "structure-function"],
+  "dimensions": [
+    "neuroanatomy"
+  ],
+  "tags": [
+    "dendritic-spines",
+    "plasticity",
+    "hippocampus",
+    "review",
+    "structure-function"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Definitive review on spine structure-function for the connectomics era."
+  "notes": "Definitive review on spine structure-function for the connectomics era.",
+  "author_tier": 1
 }

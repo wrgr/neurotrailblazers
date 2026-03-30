@@ -1,15 +1,32 @@
 {
   "id": "boyden-2020-spectral-connectomics",
   "title": "Light microscopy based approach for mapping connectivity with molecular specificity",
-  "authors": ["Shen FY", "Harrington MM", "Walker LA", "Cheng HPJ", "Boyden ES", "Bhatt DH"],
+  "authors": [
+    "Shen FY",
+    "Harrington MM",
+    "Walker LA",
+    "Cheng HPJ",
+    "Boyden ES",
+    "Bhatt DH"
+  ],
   "year": 2020,
   "journal": "Nature Communications",
   "doi": "10.1038/s41467-020-18422-8",
   "url": "https://www.nature.com/articles/s41467-020-18422-8",
   "abstract": "We devise spectral connectomics combining Brainbow multicolor labeling with multi-round immunostaining Expansion Microscopy (miriEx) to simultaneously interrogate morphology, molecular markers, and connectivity in the same brain section.",
   "seed_expert": "Ed Boyden",
-  "dimensions": ["image-acquisition", "methodology"],
-  "tags": ["spectral-connectomics", "Brainbow", "miriEx", "molecular-markers", "light-microscopy"],
+  "dimensions": [
+    "image-acquisition",
+    "methodology"
+  ],
+  "tags": [
+    "spectral-connectomics",
+    "Brainbow",
+    "miriEx",
+    "molecular-markers",
+    "light-microscopy"
+  ],
   "duplicate_of_existing": null,
-  "notes": "Optical alternative to EM connectomics with molecular annotation."
+  "notes": "Optical alternative to EM connectomics with molecular annotation.",
+  "author_tier": 1
 }

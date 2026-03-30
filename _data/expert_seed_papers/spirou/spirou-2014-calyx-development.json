@@ -1,15 +1,37 @@
 {
   "id": "spirou-2014-calyx-development",
   "title": "Synaptic inputs compete during rapid formation of the calyx of Held",
-  "authors": ["Holcomb PS", "Bhatt AN", "Bhatt DH", "Bharioke A", "Bhatt AN", "Bharioke A", "Bhatt DH", "Bharioke A", "Bhatt AN", "Spirou GA"],
+  "authors": [
+    "Holcomb PS",
+    "Bhatt AN",
+    "Bhatt DH",
+    "Bharioke A",
+    "Bhatt AN",
+    "Bharioke A",
+    "Bhatt DH",
+    "Bharioke A",
+    "Bhatt AN",
+    "Spirou GA"
+  ],
   "year": 2014,
   "journal": "Journal of Neuroscience",
   "doi": "10.1523/JNEUROSCI.2202-13.2013",
   "url": "https://www.jneurosci.org/content/33/38/15159",
   "abstract": "First application of serial block-face SEM to neural development with fine temporal resolution, accomplishing the first time series for 3D ultrastructural analysis of neural circuit formation at the calyx of Held.",
   "seed_expert": "George Spirou",
-  "dimensions": ["connectomics", "case-studies", "image-acquisition"],
-  "tags": ["calyx-of-Held", "development", "SBEM", "synapse-competition", "time-series"],
+  "dimensions": [
+    "connectomics",
+    "case-studies",
+    "image-acquisition"
+  ],
+  "tags": [
+    "calyx-of-Held",
+    "development",
+    "SBEM",
+    "synapse-competition",
+    "time-series"
+  ],
   "duplicate_of_existing": null,
-  "notes": "First developmental time-series using SBEM for circuit formation."
+  "notes": "First developmental time-series using SBEM for circuit formation.",
+  "author_tier": 1
 }

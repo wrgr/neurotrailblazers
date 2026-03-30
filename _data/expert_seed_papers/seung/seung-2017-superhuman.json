@@ -1,15 +1,30 @@
 {
   "id": "seung-2017-superhuman",
   "title": "Superhuman accuracy on the SNEMI3D connectomics challenge",
-  "authors": ["Lee K", "Zung J", "Li PH", "Jain V", "Seung HS"],
+  "authors": [
+    "Lee K",
+    "Zung J",
+    "Li PH",
+    "Jain V",
+    "Seung HS"
+  ],
   "year": 2017,
   "journal": "arXiv preprint",
   "doi": null,
   "url": "https://arxiv.org/abs/1706.00120",
   "abstract": "We report the first submission to surpass the estimate of human accuracy on the SNEMI3D connectomics benchmark. A 3D U-Net variant trained on affinity prediction achieves superhuman boundary detection in EM volumes.",
   "seed_expert": "H. Sebastian Seung",
-  "dimensions": ["computer-vision-ml"],
-  "tags": ["SNEMI3D", "benchmark", "superhuman", "3D-UNet", "affinity"],
+  "dimensions": [
+    "computer-vision-ml"
+  ],
+  "tags": [
+    "SNEMI3D",
+    "benchmark",
+    "superhuman",
+    "3D-UNet",
+    "affinity"
+  ],
   "duplicate_of_existing": "lee-2017-superhuman",
-  "notes": "Already in existing 102. First superhuman result on EM segmentation benchmark."
+  "notes": "Already in existing 102. First superhuman result on EM segmentation benchmark.",
+  "author_tier": 1
 }

@@ -1,0 +1,16 @@
+{
+  "id": "murthy-2024-visual-parts-list",
+  "title": "Neuronal parts list and wiring diagram for a visual system",
+  "authors": ["Matsliah A", "Yu SC", "Dorkenwald S", "Sterling AR", "Schlegel P", "McKellar CE", "Lin A", "Costa M", "Eichler K", "Yin Y", "Bock DD", "Jefferis GSXE", "Seung HS", "Murthy M"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07981-1",
+  "url": "https://www.nature.com/articles/s41586-024-07981-1",
+  "abstract": "A complete parts list and wiring diagram for the Drosophila optic lobe visual system derived from the FlyWire whole-brain connectome. Identifies all neuronal cell types in the optic lobe and maps their synaptic connectivity, providing a comprehensive blueprint of visual processing circuits.",
+  "seed_expert": "Mala Murthy",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["optic-lobe", "drosophila", "visual-system"],
+  "duplicate_of_existing": "matsliah-2024",
+  "notes": "FlyWire optic lobe companion paper. Cross-listed from Murthy lab."
+}

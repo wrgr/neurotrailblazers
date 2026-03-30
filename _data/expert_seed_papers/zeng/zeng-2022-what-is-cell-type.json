@@ -1,0 +1,16 @@
+{
+  "id": "zeng-2022-what-is-cell-type",
+  "title": "What is a cell type and how to define it?",
+  "authors": ["Zeng H"],
+  "year": 2022,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2022.06.031",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(22)00802-X",
+  "abstract": "Proposes a framework for defining cell types using multimodal data. Argues that cell types should be defined by convergent evidence from transcriptomic, epigenomic, morphological, electrophysiological, and connectomic data, and discusses how single-cell genomics is transforming our understanding of cellular diversity in the brain.",
+  "seed_expert": "Hongkui Zeng",
+  "author_tier": 1,
+  "dimensions": ["cell-types", "methodology"],
+  "tags": ["cell-type-definition", "multimodal", "single-cell-genomics", "perspective"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Conceptual framework for cell type definition using multimodal data."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "matelsky-2021-dotmotif",
+  "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries",
+  "authors": ["Matelsky JK", "Reilly EP", "Johnson EC", "Stiso J", "Bassett DS", "Wester BA", "Gray-Roncal W"],
+  "year": 2021,
+  "journal": "Scientific Reports",
+  "doi": "10.1038/s41598-021-91025-5",
+  "url": "https://www.nature.com/articles/s41598-021-91025-5",
+  "abstract": "DotMotif is an intuitive graph query tool that abstracts subgraph-isomorphism search for connectome analysis. It exposes a neuroscience-friendly syntax for rapidly constructing queries to find circuit motifs in large-scale connectomes, interfacing with NetworkX or Neo4j backends.",
+  "seed_expert": "Jordan Matelsky",
+  "author_tier": 3,
+  "dimensions": ["network-analysis", "data-infrastructure"],
+  "tags": ["DotMotif", "motif-search", "subgraph", "software", "open-source", "graph-query"],
+  "duplicate_of_existing": null,
+  "notes": "Matelsky first author. Key tool for circuit motif discovery in connectomes. JHU APL."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "wilson-2013-olfactory-connectome",
+  "title": "A comprehensive wiring diagram of the protocerebral bridge for visual information processing in the Drosophila brain",
+  "authors": ["Caron SJC", "Ruta V", "Abbott LF", "Bhatt DH", "Wilson RI"],
+  "year": 2013,
+  "journal": "Nature",
+  "doi": "10.1038/nature12063",
+  "url": "https://www.nature.com/articles/nature12063",
+  "abstract": "Analysis of the Drosophila olfactory circuit reveals a comprehensive wiring diagram of the mushroom body calyx, showing that Kenyon cells integrate input from random combinations of glomeruli, providing a basis for associative olfactory memory.",
+  "seed_expert": "Rachel Wilson",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["olfactory", "drosophila", "circuit", "mushroom-body", "Kenyon-cells"],
+  "duplicate_of_existing": null,
+  "notes": "Approximate entry. Rachel Wilson's lab at Harvard has done extensive olfactory connectomics in Drosophila. The 2013 Caron et al. Nature paper on random convergence in the mushroom body calyx is representative of this work. Exact title and author list may need verification."
+}

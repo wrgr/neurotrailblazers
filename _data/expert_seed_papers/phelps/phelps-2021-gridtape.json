@@ -1,0 +1,16 @@
+{
+  "id": "phelps-2021-gridtape",
+  "title": "Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy",
+  "authors": ["Phelps JS", "Hildebrand DGC", "Graham BJ", "Kuan AT", "Thomas LA", "Nguyen TM", "Buhmann J", "Azevedo AW", "Sustar A", "Aber S", "Lee WCA"],
+  "year": 2021,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2020.12.013",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(20)31672-9",
+  "abstract": "We introduce GridTape, an automated transmission electron microscopy platform for large-scale serial section imaging, and use it to reconstruct motor control circuits in the adult Drosophila ventral nerve cord, revealing principles of motor circuit organization.",
+  "seed_expert": "Jasper Phelps",
+  "author_tier": 4,
+  "dimensions": ["image-acquisition", "case-studies"],
+  "tags": ["GridTape", "TEM", "drosophila", "motor-circuits", "ventral-nerve-cord", "automation"],
+  "duplicate_of_existing": null,
+  "notes": "GridTape TEM technology enabled high-throughput serial section imaging. Published January 2021 in Cell."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "kebschull-2025-mapseq2",
+  "title": "MAPseq2: A Sensitive and Cost-Effective Barcoded Connectomics Method",
+  "authors": ["Kebschull JM"],
+  "year": 2025,
+  "journal": "bioRxiv",
+  "doi": "",
+  "url": "",
+  "abstract": "MAPseq2 is an improved version of the MAPseq barcoded connectomics technique that achieves greater sensitivity and substantially reduced cost compared to the original method. Enables high-throughput single-neuron projection mapping with improved barcode detection efficiency, making barcoded connectomics accessible to a wider range of laboratories.",
+  "seed_expert": "Justus Kebschull",
+  "author_tier": 2,
+  "dimensions": ["methodology"],
+  "tags": ["MAPseq2", "barcoding", "cost-reduction"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Next-generation barcoded connectomics method improving on MAPseq."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "johnson-2021-annotation-standards",
+  "title": "Connectomics annotation metadata standardization for increased accessibility and queryability",
+  "authors": ["Johnson EC", "Wester B", "Matelsky JK", "Xenes D", "Gray-Roncal W", "Rivlin PK", "Hider R Jr", "Kleissas D"],
+  "year": 2021,
+  "journal": "Frontiers in Neuroinformatics",
+  "doi": "10.3389/fninf.2021.766335",
+  "url": "https://www.frontiersin.org/articles/10.3389/fninf.2021.766335/full",
+  "abstract": "We present a metadata standardization framework for connectomics annotations, enabling cross-dataset queryability and interoperability to accelerate collaborative neuroscience.",
+  "seed_expert": "Eric Johnson",
+  "author_tier": 3,
+  "dimensions": ["data-infrastructure", "methodology"],
+  "tags": ["metadata", "standardization", "FAIR", "interoperability", "annotation"],
+  "duplicate_of_existing": "wester-2021-annotation-standards",
+  "notes": "Already in existing 102. Cross-listed under Eric Johnson as first author. Also filed under wester/wester-2021-annotation-standards."
+}

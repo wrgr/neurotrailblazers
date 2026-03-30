@@ -1,0 +1,16 @@
+{
+  "id": "murthy-2024-flywire-flagship",
+  "title": "Neuronal wiring diagram of an adult brain",
+  "authors": ["Dorkenwald S", "Matsliah A", "Sterling AR", "Schlegel P", "Yu SC", "McKellar CE", "Lin A", "Costa M", "Eichler K", "Yin Y", "Silversmith W", "Bock DD", "Jefferis GSXE", "Seung HS", "Murthy M"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07558-y",
+  "url": "https://www.nature.com/articles/s41586-024-07558-y",
+  "abstract": "The FlyWire connectome: a complete map of 139,255 neurons and approximately 50 million chemical synapses in an adult Drosophila brain, combining automated AI segmentation with community proofreading to produce the first whole-brain wiring diagram of an adult animal.",
+  "seed_expert": "Mala Murthy",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["FlyWire", "whole-brain", "drosophila", "AI-segmentation", "community-proofreading"],
+  "duplicate_of_existing": "dorkenwald-2024-flywire",
+  "notes": "Murthy co-senior author. Cross-listed with Dorkenwald, Bock, Seung, Jefferis."
+}

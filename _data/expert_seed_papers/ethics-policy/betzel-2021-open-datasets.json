@@ -1,0 +1,16 @@
+{
+  "id": "betzel-2021-open-datasets",
+  "title": "Large, Open Datasets for Human Connectomics Research: Considerations for Reproducible and Responsible Data Use",
+  "authors": ["Betzel RF", "Bhatt DH"],
+  "year": 2021,
+  "journal": "NeuroImage",
+  "doi": "10.1016/j.neuroimage.2021.118579",
+  "url": "https://www.sciencedirect.com/science/article/pii/S1053811921008697",
+  "abstract": "Examines the opportunities and challenges of large, open datasets for human connectomics research. Discusses considerations for reproducible and responsible use of shared neuroimaging data, including privacy concerns, informed consent, data quality, analytical flexibility, and the importance of transparent reporting practices.",
+  "seed_expert": "Ethics-Policy",
+  "author_tier": 2,
+  "dimensions": ["ethics-society", "methodology"],
+  "tags": ["open-data", "human-connectomics", "reproducibility", "responsible-use", "privacy"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Considerations for responsible use of open connectomics datasets."
+}

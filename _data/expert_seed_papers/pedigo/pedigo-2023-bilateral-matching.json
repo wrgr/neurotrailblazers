@@ -1,0 +1,16 @@
+{
+  "id": "pedigo-2023-bilateral-matching",
+  "title": "Bisected graph matching improves automated pairing of bilaterally homologous neurons from connectomes",
+  "authors": ["Pedigo BD", "Powell M", "Bridgeford EW", "Winding M", "Priebe CE", "Vogelstein JT"],
+  "year": 2023,
+  "journal": "Network Neuroscience",
+  "doi": "10.1162/netn_a_00287",
+  "url": "https://direct.mit.edu/netn/article/7/2/522/115276",
+  "abstract": "Proposes bisected graph matching, a method that improves automated pairing of bilaterally homologous neurons in connectomes. By leveraging known correspondences between brain hemispheres as seeds, the algorithm achieves higher accuracy in matching left-right neuron pairs compared to standard graph matching approaches, validated on the Drosophila larval connectome.",
+  "seed_expert": "Benjamin Pedigo",
+  "author_tier": 4,
+  "dimensions": ["network-analysis", "methodology"],
+  "tags": ["graph-matching", "bilateral-homology", "drosophila-larva", "network-methods"],
+  "duplicate_of_existing": "pedigo-2023",
+  "notes": "Duplicate of existing. Cross-listed with Vogelstein and Priebe labs."
+}

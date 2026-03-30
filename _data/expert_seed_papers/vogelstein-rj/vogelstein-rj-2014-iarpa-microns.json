@@ -1,0 +1,16 @@
+{
+  "id": "vogelstein-rj-2014-iarpa",
+  "title": "IARPA MICrONS program management and connectomics strategy",
+  "authors": ["Vogelstein RJ"],
+  "year": 2014,
+  "journal": "IARPA Program",
+  "doi": null,
+  "url": "https://www.iarpa.gov/research-programs/microns",
+  "abstract": "R. Jacob Vogelstein served as the IARPA program manager who conceived and led the Machine Intelligence from Cortical Networks (MICrONS) program, a ~$100M effort to reverse-engineer cortical circuits to advance AI. The program funded teams at Allen Institute, Princeton, and Baylor to generate the largest functional connectomics dataset to date.",
+  "seed_expert": "R. Jacob Vogelstein",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "ethics-society"],
+  "tags": ["MICrONS", "IARPA", "program-management", "funding-strategy", "AI-neuroscience"],
+  "duplicate_of_existing": null,
+  "notes": "Not a traditional paper but critically important: RJ Vogelstein conceived and managed the MICrONS program at IARPA. Brother of Joshua Vogelstein."
+}

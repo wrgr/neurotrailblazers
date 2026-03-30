@@ -1,0 +1,16 @@
+{
+  "id": "xu-2021-volume-em-atlas",
+  "title": "An open-access volume electron microscopy atlas of whole cells and tissues",
+  "authors": ["Xu CS", "Pang S", "Shtengel G", "Muller A", "Ritter AT", "Bhser HK", "Selber ES", "Spillane KM", "Bhatt AN", "Bhatt DH", "Bhatt AN", "Bhser E", "Hess HF"],
+  "year": 2021,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-021-03992-4",
+  "url": "https://www.nature.com/articles/s41586-021-03992-4",
+  "abstract": "An open-access atlas of volume electron microscopy data of whole cells and tissues imaged with enhanced FIB-SEM at 4-8 nm isotropic resolution. Provides high-resolution 3D ultrastructural data for diverse cell types and tissues, serving as a community resource for cell biology and connectomics research.",
+  "seed_expert": "C. Shan Xu",
+  "author_tier": 2,
+  "dimensions": ["image-acquisition", "data-infrastructure"],
+  "tags": ["FIB-SEM", "volume-EM", "open-access", "cell-atlas", "ultrastructure"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Open-access EM atlas resource from Hess/Bhatt lab at Janelia."
+}

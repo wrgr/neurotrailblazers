@@ -1,0 +1,16 @@
+{
+  "id": "loomba-2022-cortical-interneurons",
+  "title": "Connectomic comparison of mouse and human cortex",
+  "authors": ["Loomba S", "Straehle J", "Gangadharan V", "Heber N", "Kim MH", "Baldo M", "Pallotto M", "Bhatt DH", "Helmstaedter M"],
+  "year": 2022,
+  "journal": "Science",
+  "doi": "10.1126/science.abo0924",
+  "url": "https://www.science.org/doi/10.1126/science.abo0924",
+  "abstract": "We performed a connectomic comparison of mouse and human cortical tissue, revealing species-specific differences in interneuron connectivity and synaptic organization, including substantially higher interneuron-to-interneuron connectivity in human cortex.",
+  "seed_expert": "Sahil Loomba",
+  "author_tier": 4,
+  "dimensions": ["connectomics", "cell-types"],
+  "tags": ["cortex", "interneurons", "human", "mouse", "comparative", "Helmstaedter-lab"],
+  "duplicate_of_existing": null,
+  "notes": "Approximate entry. From the Helmstaedter lab at MPI for Brain Research. The 2022 Science paper on mouse-human cortical comparison is Loomba's key connectomics contribution. Exact author list may need verification."
+}

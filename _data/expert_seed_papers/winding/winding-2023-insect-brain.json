@@ -1,0 +1,16 @@
+{
+  "id": "winding-2023-insect-brain",
+  "title": "The connectome of an insect brain",
+  "authors": ["Winding M", "Pedigo BD", "Barnes CL", "Patsolic HG", "Park Y", "Kazimiers T", "Fushiki A", "Andrade IV", "Khandelwal A", "Valdes-Aleman J", "Li F", "Randel N", "Barsotti E", "Correia A", "Fetter RD", "Hartenstein V", "Priebe CE", "Cardona A", "Vogelstein JT", "Zlatic M"],
+  "year": 2023,
+  "journal": "Science",
+  "doi": "10.1126/science.add9330",
+  "url": "https://www.science.org/doi/10.1126/science.add9330",
+  "abstract": "We present the complete connectome of an insect brain -- the larval Drosophila brain -- with all 3,016 neurons and 548,000 synapses, revealing multi-layered network motifs and brain-wide circuit architecture.",
+  "seed_expert": "Michael Winding",
+  "author_tier": 4,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["larval-drosophila", "whole-brain", "complete-connectome", "network-motifs"],
+  "duplicate_of_existing": "cardona-2023-insect-connectome",
+  "notes": "Already in existing 102. Cross-listed under Michael Winding as first author. Also filed under cardona/cardona-2023-insect-connectome."
+}

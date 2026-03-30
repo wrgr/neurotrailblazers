@@ -1,0 +1,16 @@
+{
+  "id": "turaga-2024-connectome-constrained",
+  "title": "Connectome-constrained networks predict neural activity across the fly visual system",
+  "authors": ["Lappalainen JK", "Tschopp FD", "Prber S", "Bhatt AN", "Bhatt DH", "Turaga SC"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07939-3",
+  "url": "https://www.nature.com/articles/s41586-024-07939-3",
+  "abstract": "Demonstrates that neural network models constrained by connectome-derived wiring diagrams can predict neural activity patterns in the Drosophila visual system. Shows that incorporating synaptic connectivity structure into deep learning models yields more accurate predictions of neural responses than unconstrained models, establishing a bridge between structural connectomics and functional neuroscience.",
+  "seed_expert": "Srinivas Turaga",
+  "author_tier": 1,
+  "dimensions": ["connectomics", "computer-vision-ml", "case-studies"],
+  "tags": ["fly-visual-system", "deep-learning", "structure-function"],
+  "duplicate_of_existing": "lappalainen-2024",
+  "notes": "Key structure-function paper. Turaga senior author. Demonstrates predictive power of connectome constraints."
+}

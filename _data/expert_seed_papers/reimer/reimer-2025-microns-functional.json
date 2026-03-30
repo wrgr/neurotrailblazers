@@ -1,0 +1,16 @@
+{
+  "id": "reimer-2025-microns",
+  "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+  "authors": ["MICrONS Consortium", "Turner NL", "Macrina T", "Bae JA", "Yang R", "Wilson AM", "Schneider-Mizell CM", "Lee K", "Lu R", "Wu J", "Bodor AL", "Bleckert AA", "Brittain D", "Dorkenwald S", "Collman F", "Reimer J", "Tolias AS", "Reid RC", "da Costa NM", "Seung HS"],
+  "year": 2025,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-025-08790-w",
+  "url": "https://www.nature.com/articles/s41586-025-08790-w",
+  "abstract": "The MICrONS functional connectomics dataset includes dense calcium imaging of ~75,000 neurons co-registered with an EM reconstruction of >200,000 cells and 0.5 billion synapses. Jake Reimer led the functional imaging component at Baylor.",
+  "seed_expert": "Jake Reimer",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["MICrONS", "calcium-imaging", "functional-imaging", "Baylor"],
+  "duplicate_of_existing": "microns-2025",
+  "notes": "Cross-listed with Reid, da Costa, Tolias. Reimer led functional imaging at Baylor College of Medicine."
+}

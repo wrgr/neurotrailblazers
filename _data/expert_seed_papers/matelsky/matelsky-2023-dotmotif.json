@@ -1,0 +1,16 @@
+{
+  "id": "matelsky-2023-dotmotif",
+  "title": "DotMotif: an open-source tool for connectome subgraph isomorphism search",
+  "authors": ["Matelsky JK", "Reilly EP", "Johnson EC", "Stiso J", "Bassett DS", "Bhatt DH", "Gray-Roncal W"],
+  "year": 2021,
+  "journal": "Scientific Reports",
+  "doi": "10.1038/s41598-021-91025-w",
+  "url": "https://www.nature.com/articles/s41598-021-91025-w",
+  "abstract": "DotMotif enables pattern matching in connectome graphs for finding recurring circuit motifs. Provides a domain-specific language for specifying neural circuit patterns and an efficient search engine for identifying subgraph isomorphisms in large connectome datasets. Supports directed, typed, and weighted graphs, enabling discovery of stereotyped wiring patterns across brain regions and species.",
+  "seed_expert": "Jordan Matelsky",
+  "author_tier": 3,
+  "dimensions": ["network-analysis", "data-infrastructure"],
+  "tags": ["motif-search", "subgraph", "software", "open-source"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Open-source connectome motif search tool. Cross-listed with Gray-Roncal."
+}

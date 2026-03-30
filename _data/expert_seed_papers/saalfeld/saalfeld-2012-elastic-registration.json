@@ -1,0 +1,16 @@
+{
+  "id": "saalfeld-2012-elastic-registration",
+  "title": "Elastic volume reconstruction from series of ultra-thin microscopy sections",
+  "authors": ["Saalfeld S", "Fetter RD", "Cardona A", "Tomancak P"],
+  "year": 2012,
+  "journal": "Nature Methods",
+  "doi": "10.1038/nmeth.2072",
+  "url": "https://www.nature.com/articles/nmeth.2072",
+  "abstract": "We present methods for elastic alignment and reconstruction of volumes from serial section microscopy images, addressing the deformations introduced during sectioning and imaging that corrupt the geometry of biological specimens.",
+  "seed_expert": "Stephan Saalfeld",
+  "author_tier": 2,
+  "dimensions": ["computer-vision-ml", "methodology"],
+  "tags": ["image-registration", "elastic-alignment", "serial-section", "volume-reconstruction"],
+  "duplicate_of_existing": null,
+  "notes": "Stephan Saalfeld at HHMI Janelia. Foundational image registration method widely used in connectomics pipelines for aligning serial EM sections."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "morgan-2016-fuzzy-logic",
+  "title": "The fuzzy logic of network connectivity in mouse visual thalamus",
+  "authors": ["Morgan JL", "Berger DR", "Wetzel AW", "Lichtman JW"],
+  "year": 2016,
+  "journal": "Cell",
+  "doi": "10.1016/j.cell.2015.12.029",
+  "url": "https://www.cell.com/cell/fulltext/S0092-8674(15)01682-8",
+  "abstract": "Serial EM reconstruction of the mouse lateral geniculate nucleus reveals that thalamic connectivity follows 'fuzzy logic' with retinal ganglion cell axons distributing synapses among multiple relay neurons, creating complex convergent/divergent networks.",
+  "seed_expert": "Josh Morgan",
+  "author_tier": 2,
+  "dimensions": ["connectomics", "case-studies"],
+  "tags": ["thalamus", "LGN", "retina", "visual-system", "ATUM", "convergence"],
+  "duplicate_of_existing": null,
+  "notes": "Morgan is first author. Key thalamic connectomics paper from Lichtman lab. Cross-listed with Lichtman."
+}

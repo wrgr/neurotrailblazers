@@ -1,0 +1,16 @@
+{
+  "id": "hayworth-2015-thick-partitioning",
+  "title": "Ultrastructurally-smooth thick partitioning and volume stitching for large-scale connectomics",
+  "authors": ["Hayworth KJ", "Xu CS", "Lu Z", "Knott GW", "Chklovskii DB", "Bhatt DH", "Hess HF"],
+  "year": 2015,
+  "journal": "Nature Methods",
+  "doi": "10.1038/nmeth.3292",
+  "url": "https://www.nature.com/articles/nmeth.3292",
+  "abstract": "Introduces a method for ultrastructurally-smooth thick sectioning and volume stitching that enables large-scale connectomics with serial section electron microscopy. The technique partitions tissue into thick slabs with minimal surface damage, which are then individually imaged and computationally stitched, overcoming volume size limitations of conventional serial sectioning approaches.",
+  "seed_expert": "Kenneth Hayworth",
+  "author_tier": 2,
+  "dimensions": ["image-acquisition", "methodology"],
+  "tags": ["serial-section-EM", "thick-sectioning", "volume-stitching", "sample-preparation"],
+  "duplicate_of_existing": "hayworth-2015",
+  "notes": "Duplicate of existing. Key sample preparation method for large-volume EM connectomics."
+}

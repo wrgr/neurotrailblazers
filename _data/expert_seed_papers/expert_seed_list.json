@@ -1,8 +1,10 @@
 {
-  "version": "2.0",
+  "version": "3.0",
   "date_compiled": "2026-03-30",
-  "description": "Expanded expert seed list for systematic connectomics paper search",
-  "total_experts": 29,
+  "description": "Comprehensive tiered author list for connectomics corpus. Overcomplete by design — filter downstream by tier, citation count, or author position.",
+  "total_experts_tier1": 29,
+  "total_contributors_all_tiers": 55,
+  "design_philosophy": "Overcomplete > undercomplete. We can filter to find cores (last-author PIs), most-cited, or first-author key contributors. Better to have the full network and prune than to miss important people.",
   "sources_crosschecked": [
     "Original 22-expert seed list",
     "Existing 102-paper journal_papers.yml corpus",

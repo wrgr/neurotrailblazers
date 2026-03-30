@@ -1,0 +1,16 @@
+{
+  "id": "murthy-2024-network-stats",
+  "title": "Network Statistics of the Whole-Brain Connectome of Drosophila",
+  "authors": ["Lin A", "Yang R", "Dorkenwald S", "Matsliah A", "Sterling AR", "Schlegel P", "Yu SC", "McKellar CE", "Costa M", "Eichler K", "Bock DD", "Jefferis GSXE", "Seung HS", "Murthy M"],
+  "year": 2024,
+  "journal": "Nature",
+  "doi": "10.1038/s41586-024-07615-6",
+  "url": "https://www.nature.com/articles/s41586-024-07615-6",
+  "abstract": "Comprehensive graph-theoretic analysis of the FlyWire whole-brain connectome of Drosophila. Characterizes network properties including degree distributions, clustering, modularity, rich-club organization, and information flow across the entire brain, revealing organizational principles of neural circuit architecture at whole-brain scale.",
+  "seed_expert": "Mala Murthy",
+  "author_tier": 1,
+  "dimensions": ["network-analysis", "case-studies"],
+  "tags": ["FlyWire", "drosophila", "whole-brain", "graph-analysis"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Network-level analysis companion to the FlyWire flagship connectome paper."
+}

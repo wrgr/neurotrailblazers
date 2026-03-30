@@ -1,0 +1,16 @@
+{
+  "id": "jwa-2022-data-sharing",
+  "title": "The Spectrum of Data Sharing Policies in Neuroimaging Data Repositories",
+  "authors": ["Jwa AS", "Poldrack RA"],
+  "year": 2022,
+  "journal": "Human Brain Mapping",
+  "doi": "10.1002/hbm.25803",
+  "url": "https://onlinelibrary.wiley.com/doi/10.1002/hbm.25803",
+  "abstract": "Surveys and categorizes data sharing policies across major neuroimaging data repositories. Analyzes the spectrum of policies governing access, reuse, and redistribution of brain imaging data, identifying gaps and inconsistencies that may hinder reproducibility and collaboration. Proposes recommendations for harmonizing data sharing practices in the neuroimaging community.",
+  "seed_expert": "Ethics-Policy",
+  "author_tier": 2,
+  "dimensions": ["ethics-society", "data-infrastructure"],
+  "tags": ["data-sharing", "neuroimaging", "policy", "reproducibility", "repositories"],
+  "duplicate_of_existing": null,
+  "notes": "New paper. Ethics/policy perspective on data sharing in neuroimaging."
+}

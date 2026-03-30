@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Cancer biology was fragmented across hundreds of specific molecular targets and mechanisms. A unifying framework was needed to identify the common functional properties that all cancers must acquire, regardless of tissue of origin or specific mutations, to provide a conceptual organizing principle for the field.",
+    "challenge": "The extraordinary diversity of cancer types, molecular aberrations, and tissue contexts made generalizations difficult. Synthesizing the literature to identify universal principles required both broad knowledge and willingness to make high-level conceptual claims that could anchor diverse experimental findings.",
+    "action": "Hanahan and Weinberg reviewed the cancer biology literature to identify six fundamental biological capabilities acquired during multistep tumor development — the 'Hallmarks of Cancer' — and organized existing mechanistic findings under this framework, linking each hallmark to enabling molecular alterations.",
+    "resolution": "The six hallmarks framework (self-sufficiency in growth signals, insensitivity to anti-growth signals, evading apoptosis, limitless replicative potential, sustained angiogenesis, and tissue invasion/metastasis) became the dominant organizing concept in cancer biology, shaping research priorities, clinical trials, and drug development for over two decades.",
+    "future_work": "An updated version (2011) added four additional emerging hallmarks and enabling characteristics, and the framework continues to evolve as new cancer biology is integrated."
+  },
+  "plain_language_summary": "This landmark paper organized the vast complexity of cancer into six fundamental properties that all cancers share — like a common checklist that distinguishes cancer cells from normal cells. It gave cancer researchers a shared conceptual map, like agreeing on the rules of a game, which transformed how the field organized its work.",
+  "summaries": {
+    "beginner": "There are hundreds of different types of cancer, but this paper found that all of them share six common features — like self-sufficiency in growth signals and the ability to invade other tissues. By identifying these shared 'hallmarks,' it gave cancer researchers a common framework to organize their work.",
+    "intermediate": "Hanahan and Weinberg's Hallmarks of Cancer provided a conceptual framework organizing cancer biology around six acquired functional capabilities enabling tumor development. The paper is included in connectomics citation networks as an extremely high-citation reference from an adjacent biological discipline, representing the phenomenon of highly-cited papers from other fields appearing in cross-domain citation analyses.",
+    "advanced": "This paper is a landmark in conceptual synthesis rather than in experimental methods. Its inclusion in connectomics citation networks reflects citation co-occurrence patterns in broad neuroscience or cell biology databases, rather than direct methodological relevance. From a bibliometric perspective, its appearance illustrates how citation network analyses of connectomics must carefully distinguish domain-specific influential papers from off-topic high-citation works that inflate citation-based importance scores."
+  },
+  "discussion_prompts": [
+    "Why do highly-cited papers from entirely different biological domains (cancer biology, virology) appear in connectomics citation networks, and how should bibliometric analyses handle this?",
+    "Are there analogous 'hallmark' frameworks in connectomics or neuroscience that provide similar conceptual unification, and what would they look like?",
+    "What does the citation structure of a field's core literature reveal about the disciplinary boundaries and interdisciplinary connections of connectomics?"
+  ],
+  "dimension": "review",
+  "tags": ["off-domain", "cancer-biology", "citation-network-artifact", "review", "conceptual-framework"]
+}

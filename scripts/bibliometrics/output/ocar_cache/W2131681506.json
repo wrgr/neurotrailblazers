@@ -1,0 +1,22 @@
+{
+  "ocar": {
+    "opportunity": "Community detection — identifying densely interconnected clusters within large networks — is essential for understanding modular organization in biological networks including connectomes. Existing community detection methods were too slow for large networks or produced suboptimal community assignments.",
+    "challenge": "Optimizing network modularity (the standard objective for community detection) is an NP-hard problem. Existing methods that achieved good solutions were computationally intractable for networks with millions of nodes, such as social, information, and biological networks at scale.",
+    "action": "Blondel and colleagues developed the Louvain algorithm, a greedy hierarchical modularity optimization method that iteratively assigns nodes to communities by maximizing local modularity gain, then collapses communities into super-nodes and repeats. The algorithm produces a hierarchy of community structures.",
+    "resolution": "The Louvain algorithm achieved near-optimal modularity at computational complexity orders of magnitude lower than previous methods, enabling community detection in networks with millions of nodes in minutes. It became the most widely used community detection algorithm and is extensively applied to connectome graph analysis.",
+    "future_work": "Resolution limit issues, sensitivity to random initialization, and extensions to directed/weighted networks and multi-layer graphs are active areas of development for community detection methods."
+  },
+  "plain_language_summary": "Networks — including brain connectivity networks — tend to have clusters of nodes that are densely connected to each other and more sparsely connected to the rest. This paper developed a fast algorithm called Louvain that finds these clusters in very large networks in a reasonable amount of time, making it the go-to tool for identifying functional modules in connectome data.",
+  "summaries": {
+    "beginner": "Networks often have groups of closely connected nodes — like friend groups in social networks or functional regions in the brain. This paper developed the Louvain algorithm, a fast method that automatically finds these groups in very large networks. It has become the standard tool for identifying brain circuit modules in connectomics data.",
+    "intermediate": "The Louvain algorithm uses greedy local modularity optimization followed by network coarsening to efficiently detect community structure in large networks. Its near-linear computational complexity enables application to connectome-scale graphs with millions of nodes and edges, making it the most commonly applied community detection algorithm in connectomics and systems neuroscience.",
+    "advanced": "Louvain's two-phase iterative procedure — local modularity gain optimization and network aggregation — achieves near-optimal modularity at O(n log n) complexity, enabling community detection at network scales previously computationally intractable. When applied to connectomes, Louvain-detected communities are interpreted as functional modules, though the modularity resolution limit (inability to detect communities smaller than ~√(2m) nodes) and the stochasticity of the greedy optimization are important caveats. The Leiden algorithm was developed as an improvement addressing quality and stability issues in Louvain."
+  },
+  "discussion_prompts": [
+    "What does the community structure detected by the Louvain algorithm in connectome graphs correspond to biologically, and how should these modules be validated?",
+    "How does the resolution limit of modularity optimization affect the detection of small functional modules in dense connectome graphs?",
+    "How do the communities identified by Louvain in structural connectomes relate to functionally defined circuits, and what is the relationship between structural modularity and functional modularity?"
+  ],
+  "dimension": "graph-analysis",
+  "tags": ["method:community-detection", "method:louvain", "graph-analysis", "method:network-science", "connectomics", "software"]
+}

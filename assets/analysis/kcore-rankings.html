@@ -140,6 +140,25 @@ header p { font-size: 1.1em; opacity: 0.9; }
   .rankings-grid { grid-template-columns: 1fr; }
   header h1 { font-size: 1.6em; }
 }
+
+@media (max-width: 640px) {
+  body { padding: 10px; }
+  header { padding: 20px 15px; }
+  header h1 { font-size: 1.4em; margin-bottom: 6px; }
+  header p { font-size: 0.85em; }
+  .content { padding: 15px; }
+  .rankings-grid { grid-template-columns: 1fr; gap: 12px; }
+  .ranking-card {
+    padding: 15px;
+    margin-bottom: 12px;
+  }
+  .ranking-card h2 { font-size: 1em; margin-bottom: 10px; }
+  .ranking-table { font-size: 0.8em; }
+  .ranking-table th { padding: 6px 4px; }
+  .ranking-table td { padding: 6px 4px; }
+  .ranking-rank { min-width: 30px; }
+  footer { padding: 20px 15px; font-size: 0.8em; }
+}
 footer {
   background: #f8f9fa;
   padding: 30px 40px;

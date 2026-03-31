@@ -241,9 +241,8 @@ let simulation = null;
 let filteredNodes = [];
 let filteredLinks = [];
 let selectedNodeId = null;
-
-const WIDTH = 1200;
-const HEIGHT = 600;
+let SVG_WIDTH = 1200;
+let SVG_HEIGHT = 600;
 
 // Color scheme by generation
 const GENERATION_COLORS = {
@@ -304,9 +303,13 @@ function initVisualization() {
   const container = document.getElementById('viz-container');
   const rect = container.getBoundingClientRect();
 
+  // Use actual container dimensions if available, otherwise use defaults
+  SVG_WIDTH = Math.max(rect.width || 1200, 600);
+  SVG_HEIGHT = Math.max(rect.height || 600, 400);
+
   svg = d3.select('#viz')
-    .attr('width', rect.width)
-    .attr('height', rect.height);
+    .attr('width', SVG_WIDTH)
+    .attr('height', SVG_HEIGHT);
 
   // Setup zoom
   svg.call(d3.zoom().scaleExtent([0.5, 5]).on('zoom', (e) => {
@@ -373,10 +376,10 @@ function renderGraph() {
       })
       .strength(0.4))
     .force('charge', d3.forceManyBody().strength(-100))
-    .force('y', d3.forceY(d => (d.generation / 2) * (svg.attr('height') - 100))
+    .force('y', d3.forceY(d => (d.generation / 2) * (SVG_HEIGHT - 100))
       .strength(0.5))
-    .force('x', d3.forceX(svg.attr('width') / 2).strength(0.1))
-    .force('center', d3.forceCenter(svg.attr('width') / 2, svg.attr('height') / 2))
+    .force('x', d3.forceX(SVG_WIDTH / 2).strength(0.1))
+    .force('center', d3.forceCenter(SVG_WIDTH / 2, SVG_HEIGHT / 2))
     .force('collide', d3.forceCollide(15));
 
   // Draw links

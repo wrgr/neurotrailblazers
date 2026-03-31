@@ -41,8 +41,8 @@ def generate_field_map_full():
     # Prepare data for embedding
     citation_json = json.dumps(citation_graph)
     coauthorship_json = json.dumps(coauthorship_graph)
-    papers_json = json.dumps(paper_rankings[:200] if paper_rankings else [])
-    authors_json = json.dumps(author_rankings[:200] if author_rankings else [])
+    papers_json = json.dumps(paper_rankings[:500] if paper_rankings else [])
+    authors_json = json.dumps(author_rankings if author_rankings else [])  # Include ALL authors
     communities_json = json.dumps(communities_data or [])
     stats_json = json.dumps(stats or {})
 
@@ -165,7 +165,7 @@ function toggleSection(el) {{
     return;
   }}
   let html = '<table><tr><th class="rank">#</th><th>Paper</th><th class="score">Score</th></tr>';
-  paperRankings.slice(0, 100).forEach((p, i) => {{
+  paperRankings.slice(0, 500).forEach((p, i) => {{
     const score = (p.composite_score || 0).toFixed(3);
     const title = (p.title || '').substring(0, 50);
     html += `<tr><td class="rank">${{i+1}}</td><td title="${{p.title}}">${{title}}</td><td class="score">${{score}}</td></tr>`;
@@ -182,7 +182,7 @@ function toggleSection(el) {{
     return;
   }}
   let html = '<table><tr><th class="rank">#</th><th>Author</th><th class="score">Papers</th></tr>';
-  authorRankings.slice(0, 100).forEach((a, i) => {{
+  authorRankings.forEach((a, i) => {{
     const papers = a.paper_count || 0;
     const name = (a.name || '').substring(0, 40);
     html += `<tr><td class="rank">${{i+1}}</td><td title="${{a.name}}">${{name}}</td><td class="score">${{papers}}</td></tr>`;
@@ -421,7 +421,7 @@ function toggleSection(el) {{
     return;
   }}
   let html = '<table><tr><th class="rank">#</th><th>Author</th><th class="score">Papers</th></tr>';
-  authorRankings.slice(0, 100).forEach((a, i) => {{
+  authorRankings.forEach((a, i) => {{
     const papers = a.paper_count || 0;
     const name = (a.name || '').substring(0, 40);
     html += `<tr><td class="rank">${{i+1}}</td><td title="${{a.name}}">${{name}}</td><td class="score">${{papers}}</td></tr>`;

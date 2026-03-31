@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EM Connectomics — K-Core & Rankings</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+  padding: 20px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+header h1 { font-size: 2.2em; margin-bottom: 8px; }
+header p { font-size: 1.1em; opacity: 0.9; }
+.content {
+  padding: 40px;
+}
+.section {
+  margin-bottom: 60px;
+}
+.section h2 {
+  font-size: 1.8em;
+  color: #667eea;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+.section p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+/* K-Core Distribution */
+#kcore-chart {
+  display: block;
+  margin: 30px 0;
+}
+.chart-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* Rankings Tables */
+.rankings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.ranking-table {
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.ranking-table h3 {
+  background: #667eea;
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+}
+.ranking-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ranking-table th {
+  background: #f0f0f0;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+.ranking-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+}
+.ranking-table tr:hover {
+  background: #f0f4ff;
+}
+.rank-num {
+  font-weight: 600;
+  color: #667eea;
+  width: 40px;
+}
+.kcore-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+.kcore-ultra { background: #D62728; color: white; }
+.kcore-core { background: #FF7F0E; color: white; }
+.kcore-bridge { background: #2CA02C; color: white; }
+.kcore-outer { background: #999; color: white; }
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+.stat-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+}
+.stat-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+.stat-value {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #667eea;
+}
+@media (max-width: 900px) {
+  .rankings-grid { grid-template-columns: 1fr; }
+  header h1 { font-size: 1.6em; }
+}
+footer {
+  background: #f8f9fa;
+  padding: 30px 40px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>📊 K-Core Distribution & Rankings</h1>
+    <p>Connectomics Literature Analysis by Network Density</p>
+  </header>
+
+  <div class="content">
+    <!-- K-Core Distribution Section -->
+    <div class="section">
+      <h2>K-Core Network Structure</h2>
+      <p>
+        K-core decomposition reveals structural density in the citation network. A paper with k-core value of 25
+        belongs to a densely-connected subgraph where every node has at least 25 connections to others in that subgraph.
+      </p>
+
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-label">Ultra-Core (k ≥ 32)</div>
+          <div class="stat-value">213</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Core (k ≥ 25)</div>
+          <div class="stat-value">1,064</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Bridge (k ≥ 20)</div>
+          <div class="stat-value">2,074</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Total Papers Analyzed</div>
+          <div class="stat-value">7,925</div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <svg id="kcore-chart" width="100%" height="400"></svg>
+      </div>
+    </div>
+
+    <!-- Top Papers Section -->
+    <div class="section">
+      <h2>Top Papers by Citations (Primary Corpus: k ≥ 25)</h2>
+      <p>Most-cited papers in the 1,064-paper core connectomics corpus.</p>
+
+      <div class="ranking-table">
+        <h3>Top 20 Most-Cited Papers</h3>
+        <table id="top-papers">
+          <thead>
+            <tr>
+              <th style="width:40px">Rank</th>
+              <th style="width:60px">K-Core</th>
+              <th>Title</th>
+              <th style="width:80px">Year</th>
+              <th style="width:100px">Citations</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Top Authors Section -->
+    <div class="section">
+      <h2>Top Authors (by Publications & Impact)</h2>
+      <p>Leaders in connectomics research by paper count and collaboration breadth.</p>
+
+      <div class="rankings-grid">
+        <div class="ranking-table">
+          <h3>Top 15 by Paper Count</h3>
+          <table id="top-authors">
+            <thead>
+              <tr>
+                <th style="width:40px">Rank</th>
+                <th>Author</th>
+                <th style="width:70px">Papers</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="ranking-table">
+          <h3>Most Collaborative (Co-authors)</h3>
+          <table id="collaborative-authors">
+            <thead>
+              <tr>
+                <th style="width:40px">Rank</th>
+                <th>Author</th>
+                <th style="width:70px">Co-authors</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Data Source</strong></p>
+    <p>OpenAlex corpus (7,925 papers) with k-core decomposition on citation network (94,039 edges)</p>
+  </footer>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// K-Core Distribution Data
+const KCORE_DIST = {
+  "32": 213, "31": 54, "30": 80, "29": 26, "28": 29, "27": 146, "26": 391, "25": 125,
+  "24": 137, "23": 294, "22": 175, "21": 188, "20": 216, "19": 134, "18": 203, "17": 259,
+  "16": 156, "15": 261, "14": 191, "13": 199, "12": 298, "11": 236, "10": 239,
+  "9": 291, "8": 278, "7": 323, "6": 307, "5": 320, "4": 426, "3": 499, "2": 514, "1": 498, "0": 219
+};
+
+// Top Papers (from citations_by_tier.json, primary corpus k>=25)
+const TOP_PAPERS = [
+  {"rank": 1, "title": "Collective dynamics of 'small-world' networks", "year": 1998, "cited_by_count": 42581, "kcore": 32},
+  {"rank": 2, "title": "Emergence of Scaling in Random Networks", "year": 1999, "cited_by_count": 35882, "kcore": 32},
+  {"rank": 3, "title": "Statistical mechanics of complex networks", "year": 2002, "cited_by_count": 20311, "kcore": 32},
+  {"rank": 4, "title": "The Structure and Function of Complex Networks", "year": 2003, "cited_by_count": 18482, "kcore": 32},
+  {"rank": 5, "title": "Automated Anatomical Labeling of Activations in SPM", "year": 2002, "cited_by_count": 16610, "kcore": 32},
+  {"rank": 6, "title": "Finding and evaluating community structure in networks", "year": 2004, "cited_by_count": 13957, "kcore": 32},
+  {"rank": 7, "title": "A default mode of brain function", "year": 2001, "cited_by_count": 12300, "kcore": 32},
+  {"rank": 8, "title": "Modularity and community structure in networks", "year": 2006, "cited_by_count": 12046, "kcore": 32},
+  {"rank": 9, "title": "Complex brain networks: graph theoretical analysis", "year": 2009, "cited_by_count": 11885, "kcore": 32},
+  {"rank": 10, "title": "Complex network measures of brain connectivity", "year": 2009, "cited_by_count": 11747, "kcore": 32},
+  {"rank": 11, "title": "Community detection in graphs", "year": 2009, "cited_by_count": 11132, "kcore": 31},
+  {"rank": 12, "title": "Complex networks: Structure and dynamics", "year": 2006, "cited_by_count": 10837, "kcore": 32},
+  {"rank": 13, "title": "A network model of the whole Caenorhabditis elegans connectome", "year": 1986, "cited_by_count": 10681, "kcore": 30},
+  {"rank": 14, "title": "Small-world brain networks", "year": 1998, "cited_by_count": 10546, "kcore": 32},
+  {"rank": 15, "title": "Functional connectivity in the resting brain", "year": 2005, "cited_by_count": 10323, "kcore": 32},
+  {"rank": 16, "title": "Brain connectivity and its disturbances in psychiatric disorders", "year": 2011, "cited_by_count": 8844, "kcore": 31},
+  {"rank": 17, "title": "Network analysis of the mammalian connectome", "year": 2009, "cited_by_count": 8721, "kcore": 30},
+  {"rank": 18, "title": "Principles of connectomics", "year": 2016, "cited_by_count": 8459, "kcore": 30},
+  {"rank": 19, "title": "The C. elegans connectome", "year": 2019, "cited_by_count": 8336, "kcore": 31},
+  {"rank": 20, "title": "A connectomic basis for arithmetic in a vertebrate brain", "year": 2020, "cited_by_count": 8145, "kcore": 29}
+];
+
+// Top Authors
+const TOP_AUTHORS = [
+  {"rank": 1, "name": "Jeff W. Lichtman", "paper_count": 92, "co_author_count": 488},
+  {"rank": 2, "name": "Olaf Sporns", "paper_count": 76, "co_author_count": 221},
+  {"rank": 3, "name": "Albert Cardona", "paper_count": 72, "co_author_count": 255},
+  {"rank": 4, "name": "Edward T. Bullmore", "paper_count": 70, "co_author_count": 247},
+  {"rank": 5, "name": "H. Sebastian Seung", "paper_count": 64, "co_author_count": 494},
+  {"rank": 6, "name": "Danielle S. Bassett", "paper_count": 63, "co_author_count": 171},
+  {"rank": 7, "name": "Gregory S.X.E. Jefferis", "paper_count": 60, "co_author_count": 597},
+  {"rank": 8, "name": "Yong He", "paper_count": 57, "co_author_count": 277},
+  {"rank": 9, "name": "Davi D. Bock", "paper_count": 56, "co_author_count": 444},
+  {"rank": 10, "name": "David C. Van Essen", "paper_count": 53, "co_author_count": 354},
+  {"rank": 11, "name": "Philipp Schlegel", "paper_count": 52, "co_author_count": 467},
+  {"rank": 12, "name": "Edward S. Boyden", "paper_count": 51, "co_author_count": 496},
+  {"rank": 13, "name": "Gerald M. Rubin", "paper_count": 51, "co_author_count": 408},
+  {"rank": 14, "name": "Martijn P. van den Heuvel", "paper_count": 50, "co_author_count": 145},
+  {"rank": 15, "name": "Hanspeter Pfister", "paper_count": 48, "co_author_count": 329}
+];
+
+// Draw K-Core Distribution
+function drawKcoreChart() {
+  const data = Object.entries(KCORE_DIST).map(([k, count]) => ({
+    kcore: parseInt(k),
+    count: count
+  })).sort((a, b) => b.kcore - a.kcore);
+
+  const svg = d3.select('#kcore-chart');
+  const W = svg.node().clientWidth || 1000;
+  const H = 400;
+  const margin = {top: 20, right: 20, bottom: 40, left: 60};
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  svg.attr('width', W).attr('height', H);
+  svg.selectAll('*').remove();
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Scales
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.kcore)])
+    .range([0, w]);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.count)])
+    .range([h, 0]);
+
+  const color = d => {
+    if (d.kcore >= 32) return '#D62728';
+    if (d.kcore >= 25) return '#FF7F0E';
+    if (d.kcore >= 20) return '#2CA02C';
+    return '#999';
+  };
+
+  // Axes
+  g.append('g')
+    .attr('transform', `translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format('d')));
+
+  g.append('g')
+    .call(d3.axisLeft(y));
+
+  // Bars
+  g.selectAll('.bar')
+    .data(data)
+    .enter()
+    .append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.kcore) - w / (2 * data.length))
+    .attr('y', d => y(d.count))
+    .attr('width', w / data.length)
+    .attr('height', d => h - y(d.count))
+    .attr('fill', color)
+    .attr('opacity', 0.8);
+
+  // Labels
+  g.append('text')
+    .attr('transform', `translate(${w / 2},${h + 35})`)
+    .style('text-anchor', 'middle')
+    .text('K-Core Value');
+
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (h / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Number of Papers');
+}
+
+// Populate Top Papers Table
+function populatePapersTable() {
+  const tbody = document.querySelector('#top-papers tbody');
+  TOP_PAPERS.forEach(paper => {
+    const row = tbody.insertRow();
+    row.innerHTML = `
+      <td class="rank-num">${paper.rank}</td>
+      <td><span class="kcore-badge kcore-ultra">${paper.kcore}</span></td>
+      <td style="font-weight: 500;">${paper.title.substring(0, 60)}...</td>
+      <td style="text-align: center;">${paper.year}</td>
+      <td style="text-align: right; font-weight: 600;">${paper.cited_by_count.toLocaleString()}</td>
+    `;
+  });
+}
+
+// Populate Top Authors Table
+function populateAuthorsTable() {
+  const byCount = document.querySelector('#top-authors tbody');
+  const byCollab = document.querySelector('#collaborative-authors tbody');
+
+  // Sort by paper count and co-author count
+  const byPaperCount = [...TOP_AUTHORS].sort((a, b) => b.paper_count - a.paper_count);
+  const byCoauthor = [...TOP_AUTHORS].sort((a, b) => b.co_author_count - a.co_author_count);
+
+  byPaperCount.forEach((author, idx) => {
+    const row = byCount.insertRow();
+    row.innerHTML = `
+      <td class="rank-num">${idx + 1}</td>
+      <td>${author.name}</td>
+      <td style="text-align: center; font-weight: 600;">${author.paper_count}</td>
+    `;
+  });
+
+  byCoauthor.forEach((author, idx) => {
+    const row = byCollab.insertRow();
+    row.innerHTML = `
+      <td class="rank-num">${idx + 1}</td>
+      <td>${author.name}</td>
+      <td style="text-align: center; font-weight: 600;">${author.co_author_count}</td>
+    `;
+  });
+}
+
+// Initialize on page load
+window.addEventListener('load', () => {
+  drawKcoreChart();
+  populatePapersTable();
+  populateAuthorsTable();
+});
+
+// Redraw on resize
+window.addEventListener('resize', drawKcoreChart);
+</script>
+</body>
+</html>

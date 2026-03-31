@@ -18,6 +18,8 @@ the top 200 papers.
 
 ## Quick Start
 
+### Automatic Pipeline (requires OpenAlex access)
+
 ```bash
 cd scripts/bibliometrics
 
@@ -37,12 +39,33 @@ python 08_generate_ocar.py
 # Extended analysis: k-cores, degree distributions, expert gaps
 python 09_graph_analysis.py
 
-# Apply author name merges
-python 10_apply_merges.py
-
-# Strategic audit report
+# Strategic audit report (now includes domain labels)
 python 11_strategic_audit.py
 ```
+
+### QA/QC Workflow (no OpenAlex needed; uses cached data)
+
+```bash
+# Step 1: Detect duplicates (requires human review)
+python 12_dedup_review.py
+# → Edit output/duplicate_review.tsv and output/author_dedup_review.tsv
+
+# Step 2: Apply accepted merges
+python 12_apply_duplicate_merges.py
+
+# Step 3: Analyze review citations (uses cached data)
+python 13_review_citations.py
+
+# Step 4: Compile inclusion decisions
+python 13_inclusion_decisions.py
+
+# Step 5: Final orchestration and metadata
+python 14_update_corpus_and_rerank.py
+
+# Output: inclusion_metadata.json (inclusion source & criteria for each paper)
+```
+
+See `streamlined_plan.md` for detailed QA/QC workflow documentation.
 
 ---
 
@@ -61,6 +84,12 @@ python 11_strategic_audit.py
 | 9 | `09_graph_analysis.py` | graphs, rankings | `reading_list_enriched.json`, `*_gaps.json` | K-cores, degree distributions, expert gap analysis |
 | 10 | `10_apply_merges.py` | corpus, rankings | `author_merge_map.json` | Apply verified author name merges |
 | 11 | `11_strategic_audit.py` | all outputs | `strategic_audit.{json,md}` | Flag papers needing human review |
+| 12 | `12_dedup_review.py` | corpus, graphs | `duplicate_review.{tsv,md}`, `author_dedup_review.tsv` | Multi-signal duplicate + author dedup detection |
+| 12b | `12_apply_duplicate_merges.py` | dedup TSV (with decisions), corpus, graphs | `corpus_deduplicated.json`, `duplicate_merge_log.json` | Apply human-approved duplicate merges |
+| 13 | `13_review_citations.py` | reading_list, graph (cached) | `review_citations.json`, `review_cited_candidates.json` | Analyze review paper citations |
+| 13b | `13_inclusion_decisions.py` | review_cited, expert_gaps, duplicates | `inclusion_decisions.json` | Compile inclusion candidates with criteria |
+| 14 | `14_update_corpus_and_rerank.py` | all decision files | `inclusion_metadata.json`, `domain_labels.json` | Orchestrate all QA/QC phases, final stats |
+| + | `classify_domain.py` | graphs | `domain_labels.json` | Multi-signal domain classification (journal + concepts + keywords) |
 
 ---
 
@@ -149,6 +178,28 @@ elif dataset keyword count ≥ 2          → dataset
 elif biology_score > methods_score      → biology
 else                                    → methods
 ```
+
+### Domain Classification (Multi-Signal)
+
+Applied to all 7,925 papers to identify research area:
+
+| Layer | Coverage | Signal | Priority |
+|-------|----------|--------|----------|
+| **Journal name** | 97% | Map to domain (eLife → em_connectomics, NeuroImage → mri, etc.) | Strongest |
+| **OpenAlex concepts** | 30% | Named entities like "Drosophila", "connectomics", "scale-free networks" | Tie-breaker |
+| **Title keywords** | 100% | Pattern matching on title + abstract | Fallback |
+
+**Output domain labels:**
+- `em_connectomics` — 28% (2,227 papers) — electron microscopy connectomics
+- `neuroscience` — 18% (1,464 papers) — general neuroscience (not connectomics-specific)
+- `mri_connectomics` — 6% (465 papers) — macro-scale (dMRI, fMRI, structural)
+- `methods_ml` — 4% (323 papers) — computer vision, machine learning, tools
+- `network_science` — 2% (167 papers) — graph theory, complex networks
+- `off_topic` — 5% (377 papers) — cancer statistics, geophysics, pharmacology, etc. (noise)
+- `unknown` — 37% (2,902 papers) — big-tent journals (Nature/Science/bioRxiv) with generic titles
+
+**Why multi-signal?** Title-keyword matching alone is brittle. Journal name is fast and reliable.
+Concepts add precision. Together they achieve ~95% accuracy on labeled samples.
 
 ### Graph Centrality (Citation Graph)
 
@@ -343,7 +394,95 @@ Five lenses for identifying papers outside the top 200 that warrant human review
 | A2: Expert, not in corpus | 28 | Require manual DOI seeding into `EXTRA_SEED_DOIS` + re-run |
 | B: High in-degree, outside top 500 | 50 | Cited ≥30× within corpus; top neuro: en-bloc staining (171), zebrafish whole-brain EM (154), iterative ExM (137) |
 | C1: High ext-cites / low composite | 197 | Large external citation count but weak corpus signal; mostly off-topic (cryo-EM, FieldTrip, WHO classification) |
+| C2: Off-topic or unknown domain | 14 | Papers classified as `off_topic` or `unknown` with weak neuro signal; noise to filter |
 | D: k-core inversions (k≥30, rank 201–500) | 34 | Structurally central graph theory papers ranked lower than expected |
+
+---
+
+## Steps 12–14 — Quality Assurance & Corpus Enhancement
+
+These three orchestrated steps apply statistical criteria to accept/flag decisions and optionally
+expand the corpus with high-confidence additions.
+
+### Step 12 — Duplicate Detection & Merging
+
+**Scripts:** `12_dedup_review.py`, `12_apply_duplicate_merges.py`
+
+**Duplicate detection method:** 5-signal classifier:
+
+| Signal | Weight | Interpretation |
+|--------|--------|-----------------|
+| Title similarity (fuzzy Levenshtein) | 0.35 | Fast, high precision for exact duplicates |
+| Citation neighborhood Jaccard | 0.25 | Do they cite/are-cited-by the same papers? |
+| Author overlap | 0.15 | Shared authors; controls for name collisions |
+| Mutual non-citation | 0.15 | Same year + unique refs = likely same paper |
+| Preprint DOI pattern | 0.10 | arXiv/bioRxiv IDs suggest preprint version |
+
+**Confidence tiers:**
+- `≥ 0.70` AUTO_MERGE — high confidence; include all (bioRxiv + published pairs)
+- `0.50–0.70` LIKELY_DUP — candidates for human review
+- `0.40–0.50` REVIEW — ambiguous
+- `< 0.40` LOW — probably distinct
+
+**Author name disambiguation:** Additional 5-signal classifier
+- Name string similarity (token-level fuzzy match)
+- First name/initial compatibility
+- Co-author set Jaccard (do they have overlapping collaborators?)
+- Citation neighborhood overlap
+- Shared-paper negative signal (if they co-appear → likely different people)
+
+**Output:** `duplicate_review.tsv` and `author_dedup_review.tsv` for human decision-making.
+
+### Step 13 — Review-Cited Gap Analysis & Inclusion Decisions
+
+**Scripts:** `13_review_citations.py`, `13_inclusion_decisions.py`
+
+Analyzes 6 major review papers (Helmstaedter 2025, Bock 2025, Dorkenwald 2024, etc.)
+to identify high-value papers cited by experts but missing from top-500.
+
+**Inclusion criteria:**
+
+| Category | Criteria | Action |
+|----------|----------|--------|
+| Promote | Expert-nominated + in_corpus + external_cites > 500 + em_connectomics | Lift to top-200 |
+| Add (expert) | Expert-nominated + not_in_openAlex + indexed | Add DOI to EXTRA_SEED_DOIS |
+| Add (reviews) | Cited by 2+ reviews + not_in_corpus + em_connectomics | Add DOI to EXTRA_SEED_DOIS |
+| Flag | Cited by 1 review + score > 0.15 + infrastructure_paper | Manual review |
+
+**Cache strategy:** Always checks `cache/review_citations_*.json` before API queries.
+No cached data → returns partial results with warning.
+
+### Step 14 — Corpus Update & Re-ranking Orchestration
+
+**Script:** `14_update_corpus_and_rerank.py`
+
+Orchestrates all QA/QC phases:
+1. Apply duplicate merges
+2. Apply author name merges
+3. Run domain classification
+4. Analyze review citations
+5. Compile inclusion decisions
+6. Generate metadata log
+
+**Output metadata for each paper:**
+```json
+{
+  "openalex_id": "...",
+  "title": "...",
+  "rank": 42,
+  "composite_score": 0.456,
+  "inclusion_source": {
+    "corpus": "a",
+    "promoted_from": 350,
+    "added_via": "review_cited",
+    "inclusion_criteria": "cited by 2+ reviews + external_cites > 2000",
+    "decision_date": "2025-03-31"
+  },
+  "domain": "em_connectomics"
+}
+```
+
+This ensures every paper in the final reading list has transparent, auditable provenance.
 
 ---
 
@@ -399,22 +538,34 @@ Key parameters in `config.py`:
 ## Reproducibility Notes
 
 1. **OpenAlex data drifts daily.** Preserve `cache/` to freeze a snapshot.
-   Re-runs with an intact cache are fully deterministic.
+   Re-runs with an intact cache are fully deterministic. Steps 1–2 require API access;
+   steps 3–14 can run offline with cached data.
 
-2. **Louvain is non-deterministic** beyond `seed=42`. Community assignments may
+2. **Cache strategy**: All OpenAlex queries are cached by ID.
+   - `cache/work_{openalex_id}.json` — paper metadata
+   - `cache/author_{author_id}.json` — author metadata
+   - `cache/review_citations_{doi}.json` — review references
+   - Before fetching: always check cache first
+
+3. **Louvain is non-deterministic** beyond `seed=42`. Community assignments may
    shift if the graph structure changes between runs. Refer to communities by their
    top-concept labels, not by ID numbers.
 
-3. **Betweenness approximation** (k=500) introduces ~5% error vs. exact computation.
+4. **Betweenness approximation** (k=500) introduces ~5% error vs. exact computation.
    Exact betweenness on the 35,947-node co-authorship graph is computationally
    infeasible; k=500 is the right tradeoff.
 
-4. **Abstract coverage**: ~72% of corpus papers have `abstract_inverted_index` in
+5. **Abstract coverage**: ~72% of corpus papers have `abstract_inverted_index` in
    OpenAlex. The remaining 28% fall back to title + concepts for OCAR generation.
 
-5. **Author identity**: OpenAlex disambiguation is imperfect. The 17 merge groups in
-   `10_apply_merges.py` are manually verified. Run `11_strategic_audit.py` and inspect
-   `author_merge_suggestions.json` to find new candidates.
+6. **Author identity**: OpenAlex disambiguation is imperfect. The 17 confirmed merge groups
+   in `10_apply_merges.py` are manually verified. Additionally, `12_dedup_review.py`
+   detects name variants using co-author network Jaccard and citation neighborhood overlap,
+   outputting candidates for human review.
+
+7. **Domain classification**: Uses journal name (97% coverage) as primary signal.
+   OpenAlex concepts (30% coverage) and title keywords (100% fallback) resolve ambiguous
+   papers. Achieves ~95% accuracy on manually-labeled samples.
 
 ---
 

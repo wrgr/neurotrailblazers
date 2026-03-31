@@ -13,7 +13,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 FROM_STEP="${1:-1}"
-[[ "$1" == "--from" ]] && FROM_STEP="${2:-1}"
+[[ "${1:-}" == "--from" ]] && FROM_STEP="${2:-1}"
 
 log() { echo "[$(date '+%H:%M:%S')] $*"; }
 

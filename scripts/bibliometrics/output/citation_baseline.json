@@ -101,6 +101,19 @@
     ]
   },
   {
+    "openalex_id": "https://openalex.org/W4239510810",
+    "doi": "10.1007/bf00994018",
+    "title": "Support-vector networks",
+    "year": 1995,
+    "total_citations": 72095,
+    "citations_per_year": 2253.0,
+    "role": "methods",
+    "authors": [
+      "Corinna Cortes",
+      "Vladimir Vapnik"
+    ]
+  },
+  {
     "openalex_id": "https://openalex.org/W2167279371",
     "doi": "10.1038/nmeth.2019",
     "title": "Fiji: an open-source platform for biological-image analysis",
@@ -233,6 +246,20 @@
     ]
   },
   {
+    "openalex_id": "https://openalex.org/W1480376833",
+    "doi": "10.1007/978-0-387-21606-5",
+    "title": "The Elements of Statistical Learning",
+    "year": 2001,
+    "total_citations": 46594,
+    "citations_per_year": 1792.1,
+    "role": "methods",
+    "authors": [
+      "Trevor Hastie",
+      "J. Friedman",
+      "Robert Tibshirani"
+    ]
+  },
+  {
     "openalex_id": "https://openalex.org/W2133059825",
     "doi": "10.1109/tsmc.1979.4310076",
     "title": "A Threshold Selection Method from Gray-Level Histograms",
@@ -286,19 +313,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W4239510810",
-    "doi": "10.1007/bf00994018",
-    "title": "Support-vector networks",
-    "year": 1995,
-    "total_citations": 39987,
-    "citations_per_year": 1249.6,
-    "role": "methods",
-    "authors": [
-      "Corinna Cortes",
-      "Vladimir Vapnik"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W2008620264",
     "doi": "10.1126/science.286.5439.509",
     "title": "Emergence of Scaling in Random Networks",
@@ -322,19 +336,6 @@
     "authors": [
       "Thomas K\u00fchn",
       "Richard Schlegel"
-    ]
-  },
-  {
-    "openalex_id": "https://openalex.org/W2119821739",
-    "doi": "10.1023/a:1022627411411",
-    "title": "Support-Vector Networks",
-    "year": 1995,
-    "total_citations": 32108,
-    "citations_per_year": 1003.4,
-    "role": "methods",
-    "authors": [
-      "Corinna Cortes",
-      "Vladimir Vapnik"
     ]
   },
   {
@@ -437,20 +438,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W1480376833",
-    "doi": "10.1007/978-0-387-21606-5",
-    "title": "The Elements of Statistical Learning",
-    "year": 2001,
-    "total_citations": 24213,
-    "citations_per_year": 931.3,
-    "role": "methods",
-    "authors": [
-      "Trevor Hastie",
-      "J. Friedman",
-      "Robert Tibshirani"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W3004280078",
     "doi": "10.1038/s41586-020-2012-7",
     "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
@@ -490,20 +477,6 @@
     "authors": [
       "Patrick E. Shrout",
       "Joseph L. Fleiss"
-    ]
-  },
-  {
-    "openalex_id": "https://openalex.org/W2787894218",
-    "doi": "10.1007/978-0-387-84858-7",
-    "title": "The Elements of Statistical Learning",
-    "year": 2009,
-    "total_citations": 22381,
-    "citations_per_year": 1243.4,
-    "role": "methods",
-    "authors": [
-      "Trevor Hastie",
-      "Robert Tibshirani",
-      "Jerome H. Friedman"
     ]
   },
   {
@@ -624,6 +597,18 @@
     ]
   },
   {
+    "openalex_id": "https://openalex.org/W2052644075",
+    "doi": "10.1016/s1053-8119(02)91132-8",
+    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
+    "year": 2002,
+    "total_citations": 20085,
+    "citations_per_year": 803.4,
+    "role": "methods",
+    "authors": [
+      "Mark Jenkinson"
+    ]
+  },
+  {
     "openalex_id": "https://openalex.org/W2167311298",
     "doi": "10.1159/000430949",
     "title": "Older Adults' Reasons for Using Technology while Aging in Place",
@@ -668,6 +653,18 @@
     ]
   },
   {
+    "openalex_id": "https://openalex.org/W2319937903",
+    "doi": "10.1016/0303-8467(89)90128-5",
+    "title": "Co-planar stereotaxic atlas of the human brain",
+    "year": 1989,
+    "total_citations": 19287,
+    "citations_per_year": 507.6,
+    "role": "methods",
+    "authors": [
+      "Lauri A. Laitinen"
+    ]
+  },
+  {
     "openalex_id": "https://openalex.org/W2259938310",
     "doi": "10.1038/nature11247",
     "title": "An integrated encyclopedia of DNA elements in the human genome",
@@ -693,6 +690,19 @@
       "David Lyon",
       "Alexander Junge",
       "Stefan Wyder"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2229412420",
+    "doi": "10.1145/37401.37422",
+    "title": "Marching cubes: A high resolution 3D surface construction algorithm",
+    "year": 1987,
+    "total_citations": 18579,
+    "citations_per_year": 464.5,
+    "role": "methods",
+    "authors": [
+      "William E. Lorensen",
+      "H. E. Cline"
     ]
   },
   {
@@ -724,6 +734,22 @@
     ]
   },
   {
+    "openalex_id": "https://openalex.org/W2160382843",
+    "doi": "",
+    "title": "The 2007 WHO Classification of Tumours of the Central Nervous System",
+    "year": 2007,
+    "total_citations": 18455,
+    "citations_per_year": 922.8,
+    "role": "review",
+    "authors": [
+      "Hiroko Ohgaki",
+      "Otmar D. Wiestler",
+      "Webster K. Cavenee",
+      "Peter C. Burger",
+      "Anne Jouvet"
+    ]
+  },
+  {
     "openalex_id": "https://openalex.org/W2020830322",
     "doi": "10.3322/canjclin.55.2.74",
     "title": "Global Cancer Statistics, 2002",
@@ -748,6 +774,32 @@
     "role": "methods",
     "authors": [
       "J. Ridley Stroop"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2151721316",
+    "doi": "10.1006/nimg.1998.0395",
+    "title": "Cortical Surface-Based Analysis",
+    "year": 1999,
+    "total_citations": 17715,
+    "citations_per_year": 632.7,
+    "role": "methods",
+    "authors": [
+      "Anders M. Dale",
+      "Bruce Fischl",
+      "Martin I. Sereno"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2001233357",
+    "doi": "10.1097/00006324-199511000-00013",
+    "title": "DESCARTES?? ERROR: Emotion, Reason, and the Human Brain",
+    "year": 1995,
+    "total_citations": 17681,
+    "citations_per_year": 552.5,
+    "role": "methods",
+    "authors": [
+      "Elwin Marg"
     ]
   },
   {
@@ -1010,22 +1062,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W2160382843",
-    "doi": "",
-    "title": "The 2007 WHO Classification of Tumours of the Central Nervous System",
-    "year": 2007,
-    "total_citations": 13889,
-    "citations_per_year": 694.5,
-    "role": "review",
-    "authors": [
-      "Hiroko Ohgaki",
-      "Otmar D. Wiestler",
-      "Webster K. Cavenee",
-      "Peter C. Burger",
-      "Anne Jouvet"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W1902027874",
     "doi": "10.1038/44565",
     "title": "Learning the parts of objects by non-negative matrix factorization",
@@ -1260,6 +1296,22 @@
       "John D. Bransford",
       "Ann L. Brown",
       "Rodney R. Cocking"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2509795914",
+    "doi": "10.1093/europace/euw295",
+    "title": "2016 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS",
+    "year": 2016,
+    "total_citations": 12885,
+    "citations_per_year": 1171.4,
+    "role": "methods",
+    "authors": [
+      "Paulus Kirchhof",
+      "Stefano Benussi",
+      "Dipak Kotecha",
+      "Anders Ahlsson",
+      "Dan Atar"
     ]
   },
   {
@@ -1508,19 +1560,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W3127623214",
-    "doi": "",
-    "title": "Co-Planar Stereotaxic Atlas of the Human Brain",
-    "year": 1988,
-    "total_citations": 11679,
-    "citations_per_year": 299.5,
-    "role": "methods",
-    "authors": [
-      "J Talairach",
-      "P Tournoux"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W4396721167",
     "doi": "10.1038/s41586-024-07487-w",
     "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
@@ -1709,20 +1748,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W2151721316",
-    "doi": "10.1006/nimg.1998.0395",
-    "title": "Cortical Surface-Based Analysis",
-    "year": 1999,
-    "total_citations": 11343,
-    "citations_per_year": 405.1,
-    "role": "methods",
-    "authors": [
-      "Anders M. Dale",
-      "Bruce Fischl",
-      "Martin I. Sereno"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W2182271449",
     "doi": "10.1002/14651858",
     "title": "Cochrane Database of Systematic Reviews",
@@ -1764,6 +1789,19 @@
       "Natan, Avraham",
       "Stern, Roni",
       "Kalech, Meir"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W4211123396",
+    "doi": "10.1016/s0140-6736(14)61393-3",
+    "title": "Parkinson's disease",
+    "year": 2015,
+    "total_citations": 11205,
+    "citations_per_year": 933.8,
+    "role": "review",
+    "authors": [
+      "Lorraine V. Kalia",
+      "Anthony E. Lang"
     ]
   },
   {
@@ -1955,18 +1993,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W2052644075",
-    "doi": "10.1016/s1053-8119(02)91132-8",
-    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
-    "year": 2002,
-    "total_citations": 10589,
-    "citations_per_year": 423.6,
-    "role": "methods",
-    "authors": [
-      "Mark Jenkinson"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W3122877168",
     "doi": "10.1108/s1474-7979(2009)0000020014",
     "title": "",
@@ -2065,19 +2091,6 @@
     "authors": [
       "Don Wesley Green",
       "Robert Howard Perry"
-    ]
-  },
-  {
-    "openalex_id": "https://openalex.org/W2229412420",
-    "doi": "10.1145/37401.37422",
-    "title": "Marching cubes: A high resolution 3D surface construction algorithm",
-    "year": 1987,
-    "total_citations": 10126,
-    "citations_per_year": 253.2,
-    "role": "methods",
-    "authors": [
-      "William E. Lorensen",
-      "H. E. Cline"
     ]
   },
   {
@@ -2280,33 +2293,6 @@
     "role": "review",
     "authors": [
       "Bruce Fischl"
-    ]
-  },
-  {
-    "openalex_id": "https://openalex.org/W4235770099",
-    "doi": "10.1006/nimg.2002.1132",
-    "title": "Improved Optimization for the Robust and Accurate Linear Registration and Motion Correction of Brain Images",
-    "year": 2002,
-    "total_citations": 9496,
-    "citations_per_year": 379.8,
-    "role": "methods",
-    "authors": [
-      "Mark Jenkinson",
-      "Peter Bannister",
-      "Michael Brady",
-      "Stephen M. Smith"
-    ]
-  },
-  {
-    "openalex_id": "https://openalex.org/W1581387623",
-    "doi": "",
-    "title": "Descarte's error : emotion, reason, and the human brain",
-    "year": 1994,
-    "total_citations": 9495,
-    "citations_per_year": 287.7,
-    "role": "methods",
-    "authors": [
-      "Ant\u00f3nio R. Dam\u00e1sio"
     ]
   },
   {
@@ -2669,19 +2655,6 @@
     ]
   },
   {
-    "openalex_id": "https://openalex.org/W4233857083",
-    "doi": "10.1145/37402.37422",
-    "title": "Marching cubes: A high resolution 3D surface construction algorithm",
-    "year": 1987,
-    "total_citations": 8453,
-    "citations_per_year": 211.3,
-    "role": "methods",
-    "authors": [
-      "William E. Lorensen",
-      "H. E. Cline"
-    ]
-  },
-  {
     "openalex_id": "https://openalex.org/W2952167528",
     "doi": "10.1371/journal.pcbi.1005595",
     "title": "Unicycler: Resolving bacterial genome assemblies from short and long sequencing reads",
@@ -2879,6 +2852,34 @@
       "Mohamed Eddaoudi",
       "M. O\u2019Keeffe",
       "Omar M. Yaghi"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2155298532",
+    "doi": "10.1016/j.neuroimage.2007.07.007",
+    "title": "A fast diffeomorphic image registration algorithm",
+    "year": 2007,
+    "total_citations": 8222,
+    "citations_per_year": 411.1,
+    "role": "methods",
+    "authors": [
+      "John Ashburner"
+    ]
+  },
+  {
+    "openalex_id": "https://openalex.org/W2070050178",
+    "doi": "10.1186/1471-2105-14-128",
+    "title": "Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool",
+    "year": 2013,
+    "total_citations": 8187,
+    "citations_per_year": 584.8,
+    "role": "methods",
+    "authors": [
+      "Edward Y. Chen",
+      "Christopher M. Tan",
+      "Yan Kou",
+      "Qiaonan Duan",
+      "Zichen Wang"
     ]
   }
 ]

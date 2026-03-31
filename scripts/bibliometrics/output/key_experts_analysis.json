@@ -1,0 +1,6001 @@
+[
+  {
+    "rank": 1,
+    "name": "Jeff W. Lichtman",
+    "paper_count": 92,
+    "co_author_count": 488,
+    "collaborative_reach": 0.5844425869959515,
+    "total_papers": 92,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "foundational": 8,
+      "well_cited": 9,
+      "synthesis_integration": 7,
+      "cited_technical": 7,
+      "balanced_contribution": 17,
+      "methodological_focus": 26,
+      "active_contributor": 15,
+      "orphaned_paper": 1
+    },
+    "important_papers_count": 10,
+    "synthesis_papers_count": 7,
+    "top_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Imaging Neuronal Subsets in Transgenic Mice Expressing Multiple Spectral Variant",
+        "year": 2000,
+        "role": "well_cited",
+        "score": 0.1889,
+        "citations": 3127
+      },
+      {
+        "title": "mEMbrain: an interactive deep learning MATLAB tool for connectomic segmentation ",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1665,
+        "citations": 18
+      },
+      {
+        "title": "SmartEM: machine-learning guided electron microscopy",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 6
+      },
+      {
+        "title": "SmartEM: machine learning-guided electron microscopy",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 1
+      },
+      {
+        "title": "An Individual Interneuron Participates in Many Kinds of Inhibition and Innervate",
+        "year": 2020,
+        "role": "cited_technical",
+        "score": 0.1612,
+        "citations": 70
+      },
+      {
+        "title": "Reconstruction of genetically identified neurons imaged by serial-section electr",
+        "year": 2016,
+        "role": "balanced_contribution",
+        "score": 0.1572,
+        "citations": 92
+      },
+      {
+        "title": "Correlative light and electron microscopy reveals the fine circuit structure und",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1565,
+        "citations": 9
+      },
+      {
+        "title": "Tissue clearing",
+        "year": 2021,
+        "role": "synthesis_integration",
+        "score": 0.1555,
+        "citations": 174
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "Transgenic strategies for combinatorial expression of fluorescent proteins in th",
+        "year": 2007,
+        "role": "foundational",
+        "score": 0.0884,
+        "citations": 1872
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "name": "Olaf Sporns",
+    "paper_count": 76,
+    "co_author_count": 221,
+    "collaborative_reach": 0.2337131599371457,
+    "total_papers": 76,
+    "role_distribution": {
+      "methods_infrastructure": 10,
+      "well_cited": 20,
+      "synthesis_integration": 16,
+      "balanced_contribution": 9,
+      "methodological_focus": 7,
+      "cited_technical": 3,
+      "landmark_influential": 4,
+      "foundational": 7
+    },
+    "important_papers_count": 11,
+    "synthesis_papers_count": 26,
+    "top_papers": [
+      {
+        "title": "Cerebral cartography and connectomics",
+        "year": 2015,
+        "role": "methods_infrastructure",
+        "score": 0.2269,
+        "citations": 70
+      },
+      {
+        "title": "An Anatomical Substrate for Integration among Functional Networks in Human Corte",
+        "year": 2013,
+        "role": "well_cited",
+        "score": 0.2231,
+        "citations": 421
+      },
+      {
+        "title": "Structural and Functional Aspects Relating to Cost and Benefit of Rich Club Orga",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2136,
+        "citations": 268
+      },
+      {
+        "title": "The human connectome: Origins and challenges",
+        "year": 2013,
+        "role": "methods_infrastructure",
+        "score": 0.2129,
+        "citations": 437
+      },
+      {
+        "title": "Connectome Networks: From Cells to Systems",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.204,
+        "citations": 28
+      },
+      {
+        "title": "Connectome architecture favours within-module diffusion and between-module routi",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2036,
+        "citations": 1
+      },
+      {
+        "title": "Brain Networks and Cognitive Architectures",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.2012,
+        "citations": 573
+      },
+      {
+        "title": "Network-Level Structure-Function Relationships in Human Neocortex",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1927,
+        "citations": 327
+      },
+      {
+        "title": "MR connectomics: Principles and challenges",
+        "year": 2010,
+        "role": "synthesis_integration",
+        "score": 0.1924,
+        "citations": 274
+      },
+      {
+        "title": "Human Connectomics across the Life Span",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1895,
+        "citations": 246
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Complex brain networks: graph theoretical analysis of structural and functional ",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.1037,
+        "citations": 11885
+      },
+      {
+        "title": "The Human Connectome: A Structural Description of the Human Brain",
+        "year": 2005,
+        "role": "landmark_influential",
+        "score": 0.099,
+        "citations": 3333
+      },
+      {
+        "title": "Complex network measures of brain connectivity: Uses and interpretations",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.078,
+        "citations": 11747
+      },
+      {
+        "title": "Mapping the Structural Core of Human Cerebral Cortex",
+        "year": 2008,
+        "role": "landmark_influential",
+        "score": 0.0533,
+        "citations": 4335
+      },
+      {
+        "title": "Network neuroscience",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0497,
+        "citations": 2363
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "name": "Albert Cardona",
+    "paper_count": 72,
+    "co_author_count": 255,
+    "collaborative_reach": 0.41702818550853604,
+    "total_papers": 72,
+    "role_distribution": {
+      "landmark_influential": 3,
+      "methods_infrastructure": 1,
+      "synthesis_integration": 5,
+      "balanced_contribution": 12,
+      "methodological_focus": 24,
+      "cited_technical": 7,
+      "active_contributor": 7,
+      "well_cited": 8,
+      "foundational": 5
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "Fiji: an open-source platform for biological-image analysis",
+        "year": 2012,
+        "role": "landmark_influential",
+        "score": 0.3113,
+        "citations": 68853
+      },
+      {
+        "title": "The connectome of an insect brain",
+        "year": 2023,
+        "role": "landmark_influential",
+        "score": 0.3033,
+        "citations": 432
+      },
+      {
+        "title": "Invariant synaptic density across species",
+        "year": 2024,
+        "role": "methods_infrastructure",
+        "score": 0.1823,
+        "citations": 3
+      },
+      {
+        "title": "Neural architectures in the light of comparative connectomics",
+        "year": 2021,
+        "role": "synthesis_integration",
+        "score": 0.1715,
+        "citations": 23
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in <i>Drosophila</i>",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 43
+      },
+      {
+        "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor out",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1583,
+        "citations": 91
+      },
+      {
+        "title": "Combining brain-wide activity imaging with electron microscopy reveals a distrib",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1513,
+        "citations": 0
+      },
+      {
+        "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1438,
+        "citations": 19
+      },
+      {
+        "title": "Neural substrates of cold nociception in Drosophila larva",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1409,
+        "citations": 0
+      },
+      {
+        "title": "Sensorimotor pathway controlling stopping behavior during chemotaxis in the Dros",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1404,
+        "citations": 86
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Fiji: an open-source platform for biological-image analysis",
+        "year": 2012,
+        "role": "landmark_influential",
+        "score": 0.3113,
+        "citations": 68853
+      },
+      {
+        "title": "The connectome of an insect brain",
+        "year": 2023,
+        "role": "landmark_influential",
+        "score": 0.3033,
+        "citations": 432
+      },
+      {
+        "title": "CATMAID: collaborative annotation toolkit for massive amounts of image data",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.1265,
+        "citations": 434
+      },
+      {
+        "title": "TrakEM2 Software for Neural Circuit Reconstruction",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0823,
+        "citations": 1098
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in Drosophila",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0694,
+        "citations": 371
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "name": "Edward T. Bullmore",
+    "paper_count": 70,
+    "co_author_count": 247,
+    "collaborative_reach": 0.2896993878022389,
+    "total_papers": 70,
+    "role_distribution": {
+      "methods_infrastructure": 5,
+      "well_cited": 16,
+      "synthesis_integration": 14,
+      "balanced_contribution": 10,
+      "methodological_focus": 8,
+      "landmark_influential": 1,
+      "cited_technical": 3,
+      "active_contributor": 3,
+      "foundational": 10
+    },
+    "important_papers_count": 11,
+    "synthesis_papers_count": 19,
+    "top_papers": [
+      {
+        "title": "Connectomics: A new paradigm for understanding brain disease",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2653,
+        "citations": 254
+      },
+      {
+        "title": "Opportunities and Challenges for Psychiatry in the Connectomic Era",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.2358,
+        "citations": 79
+      },
+      {
+        "title": "Annual Research Review: Growth connectomics \u2013 the organization and reorganizatio",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2223,
+        "citations": 205
+      },
+      {
+        "title": "Simple models of human brain functional networks",
+        "year": 2012,
+        "role": "well_cited",
+        "score": 0.2221,
+        "citations": 383
+      },
+      {
+        "title": "Imaging structural co-variance between human brain regions",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2126,
+        "citations": 1093
+      },
+      {
+        "title": "The Anatomical Distance of Functional Connections Predicts Brain Network Topolog",
+        "year": 2012,
+        "role": "synthesis_integration",
+        "score": 0.2112,
+        "citations": 322
+      },
+      {
+        "title": "Connectomic Intermediate Phenotypes for Psychiatric Disorders",
+        "year": 2012,
+        "role": "synthesis_integration",
+        "score": 0.2104,
+        "citations": 119
+      },
+      {
+        "title": "Cognitive relevance of the community structure of the human brain functional coa",
+        "year": 2013,
+        "role": "well_cited",
+        "score": 0.2102,
+        "citations": 501
+      },
+      {
+        "title": "Cognitive Effort Drives Workspace Configuration of Human Brain Functional Networ",
+        "year": 2011,
+        "role": "balanced_contribution",
+        "score": 0.2094,
+        "citations": 442
+      },
+      {
+        "title": "Disrupted Modularity and Local Connectivity of Brain Functional Networks in Chil",
+        "year": 2010,
+        "role": "balanced_contribution",
+        "score": 0.2053,
+        "citations": 492
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Complex brain networks: graph theoretical analysis of structural and functional ",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.1037,
+        "citations": 11885
+      },
+      {
+        "title": "A Resilient, Low-Frequency, Small-World Human Brain Functional Network with High",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.0415,
+        "citations": 2448
+      },
+      {
+        "title": "Efficiency and Cost of Economical Brain Functional Networks",
+        "year": 2007,
+        "role": "foundational",
+        "score": 0.0324,
+        "citations": 2567
+      },
+      {
+        "title": "The economy of brain network organization",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0315,
+        "citations": 3339
+      },
+      {
+        "title": "Neurophysiological Architecture of Functional Magnetic Resonance Images of Human",
+        "year": 2005,
+        "role": "foundational",
+        "score": 0.0302,
+        "citations": 1363
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "name": "H. Sebastian Seung",
+    "paper_count": 64,
+    "co_author_count": 494,
+    "collaborative_reach": 0.5432316282222434,
+    "total_papers": 64,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "methods_infrastructure": 1,
+      "landmark_connectome": 1,
+      "synthesis_integration": 10,
+      "balanced_contribution": 16,
+      "foundational": 2,
+      "methodological_focus": 12,
+      "cited_technical": 8,
+      "well_cited": 10,
+      "active_contributor": 2
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 11,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Convolutional nets for reconstructing neural circuits from brain images acquired",
+        "year": 2019,
+        "role": "synthesis_integration",
+        "score": 0.1627,
+        "citations": 59
+      },
+      {
+        "title": "Fast imaging of millimeter-scale areas with beam deflection transmission electro",
+        "year": 2024,
+        "role": "synthesis_integration",
+        "score": 0.1617,
+        "citations": 32
+      },
+      {
+        "title": "Igneous: Distributed dense 3D segmentation meshing, neuron skeletonization, and ",
+        "year": 2022,
+        "role": "synthesis_integration",
+        "score": 0.16,
+        "citations": 20
+      },
+      {
+        "title": "Connectomic reconstruction from hippocampal CA3 reveals spatially graded mossy f",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1481,
+        "citations": 1
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "Space\u2013time wiring specificity supports direction selectivity in the retina",
+        "year": 2014,
+        "role": "foundational",
+        "score": 0.0377,
+        "citations": 504
+      }
+    ]
+  },
+  {
+    "rank": 6,
+    "name": "Danielle S. Bassett",
+    "paper_count": 63,
+    "co_author_count": 171,
+    "collaborative_reach": 0.0,
+    "total_papers": 63,
+    "role_distribution": {
+      "methods_infrastructure": 9,
+      "synthesis_integration": 20,
+      "balanced_contribution": 7,
+      "methodological_focus": 12,
+      "cited_technical": 1,
+      "foundational": 5,
+      "well_cited": 9
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 29,
+    "top_papers": [
+      {
+        "title": "The physics of brain network structure, function and control",
+        "year": 2019,
+        "role": "methods_infrastructure",
+        "score": 0.2412,
+        "citations": 396
+      },
+      {
+        "title": "Understanding the Emergence of Neuropsychiatric Disorders With Network Neuroscie",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.2276,
+        "citations": 110
+      },
+      {
+        "title": "Resolving Structural Variability in Network Models and the Brain",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2184,
+        "citations": 105
+      },
+      {
+        "title": "The modular organization of human anatomical brain networks: Accounting for the ",
+        "year": 2017,
+        "role": "synthesis_integration",
+        "score": 0.2137,
+        "citations": 184
+      },
+      {
+        "title": "Emerging Frontiers of Neuroengineering: A Network Science of Brain Connectivity",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.2119,
+        "citations": 66
+      },
+      {
+        "title": "Modeling and interpreting mesoscale network dynamics",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.2109,
+        "citations": 138
+      },
+      {
+        "title": "Task-Based Core-Periphery Organization of Human Brain Dynamics",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.21,
+        "citations": 375
+      },
+      {
+        "title": "A network engineering perspective on probing and perturbing cognition with neuro",
+        "year": 2017,
+        "role": "synthesis_integration",
+        "score": 0.2038,
+        "citations": 68
+      },
+      {
+        "title": "Resolving Anatomical and Functional Structure in Human Brain Organization: Ident",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.2024,
+        "citations": 74
+      },
+      {
+        "title": "Understanding complexity in the human brain",
+        "year": 2011,
+        "role": "balanced_contribution",
+        "score": 0.2005,
+        "citations": 582
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Network neuroscience",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0497,
+        "citations": 2363
+      },
+      {
+        "title": "Small-World Brain Networks",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.0256,
+        "citations": 2647
+      },
+      {
+        "title": "Hierarchical Organization of Human Cortical Networks in Health and Schizophrenia",
+        "year": 2008,
+        "role": "foundational",
+        "score": 0.0179,
+        "citations": 1265
+      },
+      {
+        "title": "Brain Graphs: Graphical Models of the Human Brain Connectome",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.0167,
+        "citations": 1175
+      },
+      {
+        "title": "Dynamic reconfiguration of human brain networks during learning",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.0155,
+        "citations": 1779
+      }
+    ]
+  },
+  {
+    "rank": 7,
+    "name": "Gregory S.X.E. Jefferis",
+    "paper_count": 60,
+    "co_author_count": 597,
+    "collaborative_reach": 0.42246910923451764,
+    "total_papers": 60,
+    "role_distribution": {
+      "landmark_influential": 3,
+      "foundational": 5,
+      "well_cited": 5,
+      "methods_infrastructure": 4,
+      "synthesis_integration": 13,
+      "balanced_contribution": 16,
+      "methodological_focus": 10,
+      "active_contributor": 3,
+      "cited_technical": 1
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 17,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Genetically targeted 3D visualisation of <i>Drosophila</i> neurons under Electro",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.1899,
+        "citations": 0
+      },
+      {
+        "title": "Genetically targeted 3D visualisation of Drosophila neurons under Electron Micro",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.1852,
+        "citations": 36
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      }
+    ]
+  },
+  {
+    "rank": 8,
+    "name": "Yong He",
+    "paper_count": 57,
+    "co_author_count": 277,
+    "collaborative_reach": 0.0,
+    "total_papers": 57,
+    "role_distribution": {
+      "methods_infrastructure": 8,
+      "synthesis_integration": 18,
+      "balanced_contribution": 11,
+      "methodological_focus": 10,
+      "active_contributor": 2,
+      "foundational": 2,
+      "well_cited": 6
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 26,
+    "top_papers": [
+      {
+        "title": "Small-world human brain networks: Perspectives and challenges",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.3069,
+        "citations": 434
+      },
+      {
+        "title": "Functional connectomics from a \u201cbig data\u201d perspective",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.237,
+        "citations": 88
+      },
+      {
+        "title": "Graph theoretical modeling of baby brain networks",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.2297,
+        "citations": 109
+      },
+      {
+        "title": "Magnetic Resonance Imaging and Graph Theoretical Analysis of Complex Brain Netwo",
+        "year": 2011,
+        "role": "methods_infrastructure",
+        "score": 0.2276,
+        "citations": 103
+      },
+      {
+        "title": "Understanding Structural-Functional Relationships in the Human Brain",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2218,
+        "citations": 229
+      },
+      {
+        "title": "Assessment of system dysfunction in the brain through MRI-based connectomics",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.217,
+        "citations": 213
+      },
+      {
+        "title": "Topological organization of the human brain functional connectome across the lif",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2165,
+        "citations": 461
+      },
+      {
+        "title": "Toward Developmental Connectomics of the Human Brain",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.2145,
+        "citations": 151
+      },
+      {
+        "title": "Topological Organization of Functional Brain Networks in Healthy Children: Diffe",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2058,
+        "citations": 174
+      },
+      {
+        "title": "Disrupted Functional Brain Connectome in Individuals at Risk for Alzheimer's Dis",
+        "year": 2012,
+        "role": "synthesis_integration",
+        "score": 0.2006,
+        "citations": 430
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0229,
+        "citations": 4215
+      },
+      {
+        "title": "Small-World Anatomical Networks in the Human Brain Revealed by Cortical Thicknes",
+        "year": 2007,
+        "role": "foundational",
+        "score": 0.0209,
+        "citations": 1348
+      }
+    ]
+  },
+  {
+    "rank": 9,
+    "name": "Davi D. Bock",
+    "paper_count": 56,
+    "co_author_count": 444,
+    "collaborative_reach": 0.3710318083959104,
+    "total_papers": 56,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "well_cited": 6,
+      "synthesis_integration": 5,
+      "methodological_focus": 15,
+      "cited_technical": 4,
+      "balanced_contribution": 16,
+      "foundational": 3,
+      "active_contributor": 5
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Structured sampling of olfactory input by the fly mushroom body",
+        "year": 2022,
+        "role": "synthesis_integration",
+        "score": 0.151,
+        "citations": 140
+      },
+      {
+        "title": "A competitive disinhibitory network for robust optic flow processing in Drosophi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1436,
+        "citations": 10
+      },
+      {
+        "title": "Neural Basis for Looming Size and Velocity Encoding in the Drosophila Giant Fibe",
+        "year": 2019,
+        "role": "cited_technical",
+        "score": 0.143,
+        "citations": 160
+      },
+      {
+        "title": "A large fraction of neocortical myelin ensheathes axons of local inhibitory neur",
+        "year": 2016,
+        "role": "balanced_contribution",
+        "score": 0.1323,
+        "citations": 292
+      },
+      {
+        "title": "A competitive disinhibitory network for robust optic flow processing in <i>Droso",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1307,
+        "citations": 12
+      },
+      {
+        "title": "<i>Drosophila</i> gustatory projections are segregated by taste modality and con",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.1305,
+        "citations": 2
+      },
+      {
+        "title": "Synaptic targets of photoreceptors specialized to detect color and skylight pola",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.129,
+        "citations": 1
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1281,
+        "citations": 932
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      },
+      {
+        "title": "Volume electron microscopy for neuronal circuit reconstruction",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.0618,
+        "citations": 346
+      }
+    ]
+  },
+  {
+    "rank": 10,
+    "name": "David C. Van Essen",
+    "paper_count": 53,
+    "co_author_count": 354,
+    "collaborative_reach": 0.4520546190094491,
+    "total_papers": 53,
+    "role_distribution": {
+      "foundational": 8,
+      "methods_infrastructure": 3,
+      "synthesis_integration": 4,
+      "balanced_contribution": 9,
+      "methodological_focus": 10,
+      "cited_technical": 4,
+      "well_cited": 12,
+      "active_contributor": 3
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 7,
+    "top_papers": [
+      {
+        "title": "Distributed Hierarchical Processing in the Primate Cerebral Cortex",
+        "year": 1991,
+        "role": "foundational",
+        "score": 0.2006,
+        "citations": 7905
+      },
+      {
+        "title": "Parcellating Cerebral Cortex: How Invasive Animal Studies Inform Noninvasive Map",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.1921,
+        "citations": 163
+      },
+      {
+        "title": "The nonhuman primate neuroimaging and neuroanatomy project",
+        "year": 2021,
+        "role": "methods_infrastructure",
+        "score": 0.1885,
+        "citations": 116
+      },
+      {
+        "title": "The future of the human connectome",
+        "year": 2012,
+        "role": "synthesis_integration",
+        "score": 0.1772,
+        "citations": 203
+      },
+      {
+        "title": "Cartography and Connectomes",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.1661,
+        "citations": 108
+      },
+      {
+        "title": "Hierarchical Heterogeneity across Human Cortex Shapes Large-Scale Neural Dynamic",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1567,
+        "citations": 399
+      },
+      {
+        "title": "The Mouse Cortical Connectome, Characterized by an Ultra-Dense Cortical Graph, M",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1512,
+        "citations": 226
+      },
+      {
+        "title": "Mapping Connections in Humans and\u00a0Non-Human Primates",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1492,
+        "citations": 114
+      },
+      {
+        "title": "Trends and properties of human cerebral cortex: Correlations with cortical myeli",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1481,
+        "citations": 488
+      },
+      {
+        "title": "The impact of traditional neuroimaging methods on the spatial localization of co",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1448,
+        "citations": 353
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Distributed Hierarchical Processing in the Primate Cerebral Cortex",
+        "year": 1991,
+        "role": "foundational",
+        "score": 0.2006,
+        "citations": 7905
+      },
+      {
+        "title": "The human brain is intrinsically organized into dynamic, anticorrelated function",
+        "year": 2005,
+        "role": "foundational",
+        "score": 0.0693,
+        "citations": 8772
+      },
+      {
+        "title": "The WU-Minn Human Connectome Project: An overview",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.063,
+        "citations": 6094
+      },
+      {
+        "title": "The minimal preprocessing pipelines for the Human Connectome Project",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0388,
+        "citations": 5762
+      },
+      {
+        "title": "A multi-modal parcellation of human cerebral cortex",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0315,
+        "citations": 5467
+      }
+    ]
+  },
+  {
+    "rank": 11,
+    "name": "Philipp Schlegel",
+    "paper_count": 52,
+    "co_author_count": 467,
+    "collaborative_reach": 0.3641301935624043,
+    "total_papers": 52,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "synthesis_integration": 10,
+      "foundational": 5,
+      "well_cited": 6,
+      "balanced_contribution": 12,
+      "methodological_focus": 12,
+      "cited_technical": 2,
+      "active_contributor": 2,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 7,
+    "synthesis_papers_count": 11,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A Connectome of the Adult <i>Drosophila</i> Central Brain",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.3117,
+        "citations": 147
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "The natverse: a versatile computational toolbox to combine and analyse neuroanat",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.172,
+        "citations": 36
+      },
+      {
+        "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor out",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1583,
+        "citations": 91
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      }
+    ]
+  },
+  {
+    "rank": 12,
+    "name": "Edward S. Boyden",
+    "paper_count": 51,
+    "co_author_count": 496,
+    "collaborative_reach": 0.3905523960004896,
+    "total_papers": 51,
+    "role_distribution": {
+      "synthesis_integration": 5,
+      "balanced_contribution": 14,
+      "methodological_focus": 9,
+      "cited_technical": 7,
+      "landmark_influential": 1,
+      "active_contributor": 8,
+      "well_cited": 2,
+      "foundational": 5
+    },
+    "important_papers_count": 6,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "Combinatorial protein barcodes enable self-correcting neuron tracing with nanosc",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1413,
+        "citations": 3
+      },
+      {
+        "title": "Expansion microscopy using a single anchor molecule for high-yield multiplexed i",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1409,
+        "citations": 22
+      },
+      {
+        "title": "Expansion microscopy: enabling single cell analysis in intact biological systems",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1384,
+        "citations": 30
+      },
+      {
+        "title": "Rapid reconstruction of neural circuits using tissue expansion and lattice light",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.1371,
+        "citations": 8
+      },
+      {
+        "title": "Nanoscale imaging of clinical specimens using conventional and rapid-expansion p",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1349,
+        "citations": 41
+      },
+      {
+        "title": "Visualizing proteins by expansion microscopy",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1345,
+        "citations": 45
+      },
+      {
+        "title": "Q&amp;A: Expansion microscopy",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1327,
+        "citations": 67
+      },
+      {
+        "title": "Expansion microscopy: development and neuroscience applications",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1313,
+        "citations": 56
+      },
+      {
+        "title": "Expansion Microscopy of Lipid Membranes",
+        "year": 2019,
+        "role": "cited_technical",
+        "score": 0.131,
+        "citations": 59
+      },
+      {
+        "title": "Dense, continuous membrane labeling and expansion microscopy visualization of ul",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1303,
+        "citations": 24
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Expansion microscopy",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0901,
+        "citations": 1542
+      },
+      {
+        "title": "Protein-retention expansion microscopy of cells and tissues labeled using standa",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0509,
+        "citations": 708
+      },
+      {
+        "title": "Imaging cellular ultrastructures using expansion microscopy (U-ExM)",
+        "year": 2018,
+        "role": "foundational",
+        "score": 0.0253,
+        "citations": 570
+      },
+      {
+        "title": "Nanoscale imaging of RNA with expansion microscopy",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0245,
+        "citations": 421
+      },
+      {
+        "title": "Expansion microscopy: principles and uses in biological research",
+        "year": 2018,
+        "role": "foundational",
+        "score": 0.0233,
+        "citations": 482
+      }
+    ]
+  },
+  {
+    "rank": 13,
+    "name": "Gerald M. Rubin",
+    "paper_count": 51,
+    "co_author_count": 408,
+    "collaborative_reach": 0.35694943212644104,
+    "total_papers": 51,
+    "role_distribution": {
+      "well_cited": 11,
+      "foundational": 5,
+      "synthesis_integration": 4,
+      "balanced_contribution": 15,
+      "methodological_focus": 11,
+      "methods_infrastructure": 2,
+      "active_contributor": 1,
+      "cited_technical": 2
+    },
+    "important_papers_count": 6,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "A genetic, genomic, and computational resource for exploring neural circuit func",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.5118,
+        "citations": 330
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Driver lines for studying associative learning in Drosophila",
+        "year": 2024,
+        "role": "synthesis_integration",
+        "score": 0.1751,
+        "citations": 51
+      },
+      {
+        "title": "A split-GAL4 driver line resource for Drosophila neuron types",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 45
+      },
+      {
+        "title": "<i>En bloc</i> preparation of <i>Drosophila</i> brains enables high-throughput F",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1463,
+        "citations": 12
+      },
+      {
+        "title": "Small-field visual projection neurons detect translational optic flow and suppor",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1414,
+        "citations": 30
+      },
+      {
+        "title": "Nitric oxide acts as a cotransmitter in a subset of dopaminergic neurons to dive",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1363,
+        "citations": 150
+      },
+      {
+        "title": "Connectomic reconstruction predicts the functional organization of visual inputs",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1352,
+        "citations": 14
+      },
+      {
+        "title": "Synaptic targets of photoreceptors specialized to detect color and skylight pola",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.129,
+        "citations": 1
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A genetic, genomic, and computational resource for exploring neural circuit func",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.5118,
+        "citations": 330
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "A visual motion detection circuit suggested by Drosophila connectomics",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0821,
+        "citations": 744
+      },
+      {
+        "title": "A GAL4-Driver Line Resource for Drosophila Neurobiology",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0782,
+        "citations": 1627
+      },
+      {
+        "title": "Optimized tools for multicolor stochastic labeling reveal diverse stereotyped ce",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.0517,
+        "citations": 666
+      }
+    ]
+  },
+  {
+    "rank": 14,
+    "name": "Martijn P. van den Heuvel",
+    "paper_count": 50,
+    "co_author_count": 145,
+    "collaborative_reach": 0.0,
+    "total_papers": 50,
+    "role_distribution": {
+      "methods_infrastructure": 7,
+      "well_cited": 7,
+      "synthesis_integration": 15,
+      "balanced_contribution": 7,
+      "methodological_focus": 8,
+      "cited_technical": 1,
+      "active_contributor": 1,
+      "foundational": 4
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 22,
+    "top_papers": [
+      {
+        "title": "Brain Networks in Schizophrenia",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2538,
+        "citations": 536
+      },
+      {
+        "title": "The parcellation-based connectome: Limitations and extensions",
+        "year": 2013,
+        "role": "methods_infrastructure",
+        "score": 0.2245,
+        "citations": 287
+      },
+      {
+        "title": "An Anatomical Substrate for Integration among Functional Networks in Human Corte",
+        "year": 2013,
+        "role": "well_cited",
+        "score": 0.2231,
+        "citations": 421
+      },
+      {
+        "title": "The Neonatal Connectome During Preterm Brain Development",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2188,
+        "citations": 407
+      },
+      {
+        "title": "Assessment of system dysfunction in the brain through MRI-based connectomics",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.217,
+        "citations": 213
+      },
+      {
+        "title": "Gradients of structure\u2013function tethering across neocortex",
+        "year": 2019,
+        "role": "synthesis_integration",
+        "score": 0.2137,
+        "citations": 555
+      },
+      {
+        "title": "Structural and Functional Aspects Relating to Cost and Benefit of Rich Club Orga",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2136,
+        "citations": 268
+      },
+      {
+        "title": "Connectome sensitivity or specificity: which is more important?",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.2128,
+        "citations": 312
+      },
+      {
+        "title": "Rich Club Organization and Intermodule Communication in the Cat Connectome",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2051,
+        "citations": 171
+      },
+      {
+        "title": "Linking Macroscale Graph Analytical Organization to Microscale Neuroarchitectoni",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.2024,
+        "citations": 182
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Rich-Club Organization of the Human Connectome",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.0336,
+        "citations": 2443
+      },
+      {
+        "title": "Network hubs in the human brain",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.02,
+        "citations": 2223
+      },
+      {
+        "title": "Efficiency of Functional Brain Networks and Intellectual Performance",
+        "year": 2009,
+        "role": "foundational",
+        "score": 0.0134,
+        "citations": 1112
+      },
+      {
+        "title": "High-cost, high-capacity backbone for global brain communication",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0116,
+        "citations": 830
+      }
+    ]
+  },
+  {
+    "rank": 15,
+    "name": "Hanspeter Pfister",
+    "paper_count": 48,
+    "co_author_count": 329,
+    "collaborative_reach": 0.282963534381076,
+    "total_papers": 48,
+    "role_distribution": {
+      "foundational": 2,
+      "synthesis_integration": 4,
+      "methodological_focus": 20,
+      "balanced_contribution": 11,
+      "landmark_influential": 1,
+      "cited_technical": 2,
+      "active_contributor": 5,
+      "well_cited": 2,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 3,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Visualization in Connectomics",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.1622,
+        "citations": 26
+      },
+      {
+        "title": "SmartEM: machine-learning guided electron microscopy",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 6
+      },
+      {
+        "title": "Mapping Alzheimer\u2019s Molecular Pathologies in Large-Scale Connectomics Data: A Pu",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1499,
+        "citations": 3
+      },
+      {
+        "title": "A connectomic resource for neural cataloguing and circuit dissection of the larv",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1439,
+        "citations": 9
+      },
+      {
+        "title": "ViMO - Visual Analysis of Neuronal Connectivity Motifs",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1402,
+        "citations": 17
+      },
+      {
+        "title": "Multiplexed volumetric CLEM enabled by antibody derivatives provides new insight",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1338,
+        "citations": 5
+      },
+      {
+        "title": "WASPSYN: A Challenge for Domain Adaptive Synapse Detection in Microwasp Brain Co",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 1
+      },
+      {
+        "title": "Scalable Interactive Visualization for Connectomics",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1289,
+        "citations": 29
+      },
+      {
+        "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1287,
+        "citations": 0
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      }
+    ]
+  },
+  {
+    "rank": 16,
+    "name": "Stephen M. Smith",
+    "paper_count": 47,
+    "co_author_count": 311,
+    "collaborative_reach": 0.2127045327081919,
+    "total_papers": 47,
+    "role_distribution": {
+      "methods_infrastructure": 2,
+      "balanced_contribution": 8,
+      "methodological_focus": 8,
+      "synthesis_integration": 2,
+      "cited_technical": 10,
+      "active_contributor": 1,
+      "foundational": 7,
+      "well_cited": 9
+    },
+    "important_papers_count": 7,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "The nonhuman primate neuroimaging and neuroanatomy project",
+        "year": 2021,
+        "role": "methods_infrastructure",
+        "score": 0.1885,
+        "citations": 116
+      },
+      {
+        "title": "Task-free MRI predicts individual differences in brain activity during task perf",
+        "year": 2016,
+        "role": "balanced_contribution",
+        "score": 0.1643,
+        "citations": 819
+      },
+      {
+        "title": "Genetic control over the resting brain",
+        "year": 2010,
+        "role": "balanced_contribution",
+        "score": 0.1605,
+        "citations": 482
+      },
+      {
+        "title": "Multimodal surface matching with higher-order smoothness constraints",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1439,
+        "citations": 372
+      },
+      {
+        "title": "Image processing and Quality Control for the first 10,000 brain imaging datasets",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1431,
+        "citations": 1707
+      },
+      {
+        "title": "Using temporal ICA to selectively remove global noise while preserving global si",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1412,
+        "citations": 284
+      },
+      {
+        "title": "Brain network dynamics are hierarchically organized in time",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1385,
+        "citations": 935
+      },
+      {
+        "title": "Studying neuroanatomy using MRI",
+        "year": 2017,
+        "role": "methodological_focus",
+        "score": 0.1343,
+        "citations": 326
+      },
+      {
+        "title": "The developing human connectome project: A minimal processing pipeline for neona",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1225,
+        "citations": 522
+      },
+      {
+        "title": "Extending the Human Connectome Project across ages: Imaging protocols for the Li",
+        "year": 2018,
+        "role": "methodological_focus",
+        "score": 0.1213,
+        "citations": 592
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "The WU-Minn Human Connectome Project: An overview",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.063,
+        "citations": 6094
+      },
+      {
+        "title": "Correspondence of the brain's functional architecture during activation and rest",
+        "year": 2009,
+        "role": "foundational",
+        "score": 0.0365,
+        "citations": 5389
+      },
+      {
+        "title": "Toward discovery science of human brain function",
+        "year": 2010,
+        "role": "foundational",
+        "score": 0.0334,
+        "citations": 3071
+      },
+      {
+        "title": "A multi-modal parcellation of human cerebral cortex",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0315,
+        "citations": 5467
+      },
+      {
+        "title": "The Human Connectome Project: A data acquisition perspective",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0272,
+        "citations": 2760
+      }
+    ]
+  },
+  {
+    "rank": 17,
+    "name": "Sven Dorkenwald",
+    "paper_count": 45,
+    "co_author_count": 433,
+    "collaborative_reach": 0.43398626428716863,
+    "total_papers": 45,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "foundational": 5,
+      "methods_infrastructure": 1,
+      "synthesis_integration": 8,
+      "balanced_contribution": 14,
+      "methodological_focus": 9,
+      "well_cited": 5,
+      "cited_technical": 1,
+      "active_contributor": 1
+    },
+    "important_papers_count": 6,
+    "synthesis_papers_count": 9,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "Learning cellular morphology with neural networks",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1401,
+        "citations": 78
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1055,
+        "citations": 324
+      }
+    ]
+  },
+  {
+    "rank": 18,
+    "name": "Moritz Helmstaedter",
+    "paper_count": 43,
+    "co_author_count": 182,
+    "collaborative_reach": 0.32037776351086744,
+    "total_papers": 43,
+    "role_distribution": {
+      "methods_infrastructure": 2,
+      "landmark_connectome": 1,
+      "synthesis_integration": 4,
+      "balanced_contribution": 8,
+      "methodological_focus": 7,
+      "landmark_influential": 1,
+      "foundational": 5,
+      "well_cited": 9,
+      "cited_technical": 4,
+      "active_contributor": 2
+    },
+    "important_papers_count": 7,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "Synaptic-resolution connectomics: towards large brains and connectomic screening",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.246,
+        "citations": 2
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Big data in nanoscale connectomics, and the greed for training labels",
+        "year": 2019,
+        "role": "methods_infrastructure",
+        "score": 0.1914,
+        "citations": 26
+      },
+      {
+        "title": "FluoEM, virtual labeling of axons in three-dimensional electron microscopy data ",
+        "year": 2018,
+        "role": "synthesis_integration",
+        "score": 0.1709,
+        "citations": 31
+      },
+      {
+        "title": "Cellular connectomes as arbiters of local circuit models in the cerebral cortex",
+        "year": 2021,
+        "role": "synthesis_integration",
+        "score": 0.167,
+        "citations": 14
+      },
+      {
+        "title": "Cell-type specific innervation of cortical pyramidal cells at their apical dendr",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1625,
+        "citations": 107
+      },
+      {
+        "title": "Computational methods and challenges for large-scale circuit mapping",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.1536,
+        "citations": 75
+      },
+      {
+        "title": "Connectomic reconstruction of a cortical column",
+        "year": 2024,
+        "role": "balanced_contribution",
+        "score": 0.148,
+        "citations": 26
+      },
+      {
+        "title": "Full reconstruction of large lobula plate tangential cells in Drosophila from a ",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1248,
+        "citations": 29
+      },
+      {
+        "title": "Detecting Synapse Location and Connectivity by Signed Proximity Estimation and P",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.1177,
+        "citations": 10
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+        "year": 2011,
+        "role": "landmark_influential",
+        "score": 0.1121,
+        "citations": 931
+      },
+      {
+        "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1009,
+        "citations": 285
+      },
+      {
+        "title": "Cellular-resolution connectomics: challenges of dense neural circuit reconstruct",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0445,
+        "citations": 344
+      },
+      {
+        "title": "webKnossos: efficient online 3D data annotation for connectomics",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0356,
+        "citations": 204
+      }
+    ]
+  },
+  {
+    "rank": 19,
+    "name": "Aljoscha Nern",
+    "paper_count": 42,
+    "co_author_count": 296,
+    "collaborative_reach": 0.2814197702368702,
+    "total_papers": 42,
+    "role_distribution": {
+      "well_cited": 6,
+      "foundational": 3,
+      "synthesis_integration": 5,
+      "balanced_contribution": 10,
+      "methodological_focus": 14,
+      "active_contributor": 1,
+      "cited_technical": 2,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "A genetic, genomic, and computational resource for exploring neural circuit func",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.5118,
+        "citations": 330
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "A split-GAL4 driver line resource for Drosophila neuron types",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 45
+      },
+      {
+        "title": "An unbiased template of the Drosophila brain and ventral nerve cord",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.1587,
+        "citations": 154
+      },
+      {
+        "title": "An unbiased template of the <i>Drosophila</i> brain and ventral nerve cord",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1458,
+        "citations": 20
+      },
+      {
+        "title": "A competitive disinhibitory network for robust optic flow processing in Drosophi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1436,
+        "citations": 10
+      },
+      {
+        "title": "Small-field visual projection neurons detect translational optic flow and suppor",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1414,
+        "citations": 30
+      },
+      {
+        "title": "Connectomic reconstruction predicts the functional organization of visual inputs",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1352,
+        "citations": 14
+      },
+      {
+        "title": "A competitive disinhibitory network for robust optic flow processing in <i>Droso",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1307,
+        "citations": 12
+      },
+      {
+        "title": "Synaptic targets of photoreceptors specialized to detect color and skylight pola",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.129,
+        "citations": 1
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A genetic, genomic, and computational resource for exploring neural circuit func",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.5118,
+        "citations": 330
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "A visual motion detection circuit suggested by Drosophila connectomics",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0821,
+        "citations": 744
+      },
+      {
+        "title": "Optimized tools for multicolor stochastic labeling reveal diverse stereotyped ce",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.0517,
+        "citations": 666
+      }
+    ]
+  },
+  {
+    "rank": 20,
+    "name": "Andrew Zalesky",
+    "paper_count": 42,
+    "co_author_count": 232,
+    "collaborative_reach": 0.0,
+    "total_papers": 42,
+    "role_distribution": {
+      "methods_infrastructure": 4,
+      "synthesis_integration": 8,
+      "balanced_contribution": 8,
+      "well_cited": 4,
+      "methodological_focus": 12,
+      "active_contributor": 2,
+      "foundational": 4
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 12,
+    "top_papers": [
+      {
+        "title": "Building connectomes using diffusion MRI: why, how and but",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.2571,
+        "citations": 311
+      },
+      {
+        "title": "Opportunities and Challenges for Psychiatry in the Connectomic Era",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.2358,
+        "citations": 79
+      },
+      {
+        "title": "Connectome sensitivity or specificity: which is more important?",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.2128,
+        "citations": 312
+      },
+      {
+        "title": "Competitive and cooperative dynamics of large-scale brain functional networks su",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.2024,
+        "citations": 585
+      },
+      {
+        "title": "On the use of correlation as a measure of network connectivity",
+        "year": 2012,
+        "role": "well_cited",
+        "score": 0.2018,
+        "citations": 451
+      },
+      {
+        "title": "Navigation of brain networks",
+        "year": 2018,
+        "role": "synthesis_integration",
+        "score": 0.1989,
+        "citations": 201
+      },
+      {
+        "title": "Connectivity differences in brain networks",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.1858,
+        "citations": 267
+      },
+      {
+        "title": "Proportional thresholding in resting-state fMRI functional connectivity networks",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1854,
+        "citations": 504
+      },
+      {
+        "title": "Developmental Changes in Brain Network Hub Connectivity in Late Adolescence",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.1818,
+        "citations": 181
+      },
+      {
+        "title": "Fragility and volatility of structural hubs in the human connectome",
+        "year": 2018,
+        "role": "synthesis_integration",
+        "score": 0.1787,
+        "citations": 125
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "The connectomics of brain disorders",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.0228,
+        "citations": 1757
+      },
+      {
+        "title": "Whole-brain anatomical networks: Does the choice of nodes matter?",
+        "year": 2009,
+        "role": "foundational",
+        "score": 0.0184,
+        "citations": 1200
+      },
+      {
+        "title": "Graph analysis of the human connectome: Promise, progress, and pitfalls",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0157,
+        "citations": 792
+      },
+      {
+        "title": "Schizophrenia, neuroimaging and connectomics",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0135,
+        "citations": 739
+      }
+    ]
+  },
+  {
+    "rank": 21,
+    "name": "Richard Schalek",
+    "paper_count": 42,
+    "co_author_count": 282,
+    "collaborative_reach": 0.3000355108198186,
+    "total_papers": 42,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "foundational": 6,
+      "synthesis_integration": 4,
+      "balanced_contribution": 7,
+      "methodological_focus": 11,
+      "cited_technical": 4,
+      "active_contributor": 7,
+      "orphaned_paper": 1
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "SmartEM: machine-learning guided electron microscopy",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 6
+      },
+      {
+        "title": "SmartEM: machine learning-guided electron microscopy",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 1
+      },
+      {
+        "title": "Reconstruction of genetically identified neurons imaged by serial-section electr",
+        "year": 2016,
+        "role": "balanced_contribution",
+        "score": 0.1572,
+        "citations": 92
+      },
+      {
+        "title": "Correlative light and electron microscopy reveals the fine circuit structure und",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1565,
+        "citations": 9
+      },
+      {
+        "title": "Connectomics of the Octopus vulgaris vertical lobe provides insight into conserv",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1553,
+        "citations": 34
+      },
+      {
+        "title": "Mapping Alzheimer\u2019s Molecular Pathologies in Large-Scale Connectomics Data: A Pu",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1499,
+        "citations": 3
+      },
+      {
+        "title": "A connectomic resource for neural cataloguing and circuit dissection of the larv",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1439,
+        "citations": 9
+      },
+      {
+        "title": "A Scalable Staining Strategy for Whole-Brain Connectomics",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1388,
+        "citations": 11
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      },
+      {
+        "title": "Automating the Collection of Ultrathin Serial Sections for Large Volume TEM Reco",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.0551,
+        "citations": 181
+      }
+    ]
+  },
+  {
+    "rank": 22,
+    "name": "Wei-Chung Allen Lee",
+    "paper_count": 42,
+    "co_author_count": 353,
+    "collaborative_reach": 0.351269789854046,
+    "total_papers": 42,
+    "role_distribution": {
+      "well_cited": 5,
+      "methods_infrastructure": 1,
+      "synthesis_integration": 3,
+      "balanced_contribution": 9,
+      "methodological_focus": 13,
+      "foundational": 5,
+      "cited_technical": 1,
+      "active_contributor": 5
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "A petascale automated imaging pipeline for mapping neuronal circuits with high-t",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2868,
+        "citations": 226
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "Organization of an ascending circuit that conveys flight motor state in Drosophi",
+        "year": 2024,
+        "role": "balanced_contribution",
+        "score": 0.1538,
+        "citations": 27
+      },
+      {
+        "title": "High-throughput transmission electron microscopy with automated serial sectionin",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1521,
+        "citations": 44
+      },
+      {
+        "title": "Specificity and randomness: structure\u2013function relationships in neural circuits",
+        "year": 2011,
+        "role": "methodological_focus",
+        "score": 0.1366,
+        "citations": 26
+      },
+      {
+        "title": "Scaling up X-ray holographic nanotomography for neuronal tissue imaging",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1354,
+        "citations": 3
+      },
+      {
+        "title": "Reconstruction of motor control circuits in adult Drosophila using automated tra",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1332,
+        "citations": 314
+      },
+      {
+        "title": "Recurrent connectivity supports carbon dioxide sensitivity in <i>Aedes aegypti</",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1326,
+        "citations": 1
+      },
+      {
+        "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1281,
+        "citations": 932
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Reconstruction of motor control circuits in adult Drosophila using automated tra",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1332,
+        "citations": 314
+      },
+      {
+        "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1281,
+        "citations": 932
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      },
+      {
+        "title": "Anatomy and function of an excitatory network in the visual cortex",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0277,
+        "citations": 574
+      },
+      {
+        "title": "Whole-brain serial-section electron microscopy in larval zebrafish",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0213,
+        "citations": 403
+      }
+    ]
+  },
+  {
+    "rank": 23,
+    "name": "Casey M. Schneider-Mizell",
+    "paper_count": 40,
+    "co_author_count": 330,
+    "collaborative_reach": 0.0,
+    "total_papers": 40,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "balanced_contribution": 11,
+      "synthesis_integration": 4,
+      "foundational": 4,
+      "methodological_focus": 13,
+      "well_cited": 7
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in <i>Drosophila</i>",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 43
+      },
+      {
+        "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor out",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1583,
+        "citations": 91
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      },
+      {
+        "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse vi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 8
+      },
+      {
+        "title": "Serotonergic modulation of swallowing in a complete fly vagus nerve connectome",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1245,
+        "citations": 20
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in Drosophila",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0694,
+        "citations": 371
+      },
+      {
+        "title": "A multilevel multimodal circuit enhances action selection in Drosophila",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.049,
+        "citations": 580
+      },
+      {
+        "title": "The complete connectome of a learning and memory centre in an insect brain",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0454,
+        "citations": 568
+      }
+    ]
+  },
+  {
+    "rank": 24,
+    "name": "C. Shan Xu",
+    "paper_count": 39,
+    "co_author_count": 329,
+    "collaborative_reach": 0.2684174482046692,
+    "total_papers": 39,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "synthesis_integration": 3,
+      "balanced_contribution": 8,
+      "methodological_focus": 10,
+      "cited_technical": 4,
+      "well_cited": 4,
+      "active_contributor": 5,
+      "foundational": 3,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "A Connectome of the Adult <i>Drosophila</i> Central Brain",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.3117,
+        "citations": 147
+      },
+      {
+        "title": "A resource for the Drosophila antennal lobe provided by the connectome of glomer",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1618,
+        "citations": 57
+      },
+      {
+        "title": "Gas cluster ion beam SEM for imaging of large tissue samples with 10\u2009nm isotropi",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1547,
+        "citations": 66
+      },
+      {
+        "title": "Combining brain-wide activity imaging with electron microscopy reveals a distrib",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1513,
+        "citations": 0
+      },
+      {
+        "title": "<i>En bloc</i> preparation of <i>Drosophila</i> brains enables high-throughput F",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1463,
+        "citations": 12
+      },
+      {
+        "title": "Enabling FIB-SEM Systems for Large Volume Connectomics and Cell Biology",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1418,
+        "citations": 46
+      },
+      {
+        "title": "A complete reconstruction of the early visual system of an adult insect",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1341,
+        "citations": 27
+      },
+      {
+        "title": "Protocol for preparation of heterogeneous biological samples for 3D electron mic",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.1278,
+        "citations": 43
+      },
+      {
+        "title": "Cross-species comparative connectomics reveals the evolution of an olfactory cir",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1266,
+        "citations": 4
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Enhanced FIB-SEM systems for large-volume 3D imaging",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0414,
+        "citations": 429
+      },
+      {
+        "title": "A connectome of a learning and memory center in the adult Drosophila brain",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0354,
+        "citations": 391
+      },
+      {
+        "title": "Synaptic circuits and their variations within different columns in the visual sy",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.035,
+        "citations": 305
+      }
+    ]
+  },
+  {
+    "rank": 25,
+    "name": "Marta Costa",
+    "paper_count": 39,
+    "co_author_count": 413,
+    "collaborative_reach": 0.314250492401426,
+    "total_papers": 39,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "foundational": 4,
+      "well_cited": 5,
+      "synthesis_integration": 10,
+      "balanced_contribution": 8,
+      "methodological_focus": 8,
+      "active_contributor": 1,
+      "cited_technical": 1
+    },
+    "important_papers_count": 6,
+    "synthesis_papers_count": 10,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "The natverse: a versatile computational toolbox to combine and analyse neuroanat",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.172,
+        "citations": 36
+      },
+      {
+        "title": "Neural circuit basis of aversive odour processing in <i>Drosophila</i> from sens",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1241,
+        "citations": 48
+      },
+      {
+        "title": "Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory and",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1229,
+        "citations": 119
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      }
+    ]
+  },
+  {
+    "rank": 26,
+    "name": "Forrest Collman",
+    "paper_count": 38,
+    "co_author_count": 448,
+    "collaborative_reach": 0.41441211730783084,
+    "total_papers": 38,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "foundational": 2,
+      "methods_infrastructure": 1,
+      "balanced_contribution": 11,
+      "synthesis_integration": 4,
+      "cited_technical": 2,
+      "methodological_focus": 12,
+      "well_cited": 3,
+      "active_contributor": 2
+    },
+    "important_papers_count": 3,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Connectomic reconstruction from hippocampal CA3 reveals spatially graded mossy f",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1481,
+        "citations": 1
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "Canonical genetic signatures of the adult human brain",
+        "year": 2015,
+        "role": "cited_technical",
+        "score": 0.1363,
+        "citations": 718
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      }
+    ]
+  },
+  {
+    "rank": 27,
+    "name": "Michael P. Milham",
+    "paper_count": 38,
+    "co_author_count": 346,
+    "collaborative_reach": 0.0,
+    "total_papers": 38,
+    "role_distribution": {
+      "synthesis_integration": 7,
+      "balanced_contribution": 15,
+      "cited_technical": 5,
+      "methodological_focus": 7,
+      "foundational": 1,
+      "well_cited": 3
+    },
+    "important_papers_count": 1,
+    "synthesis_papers_count": 7,
+    "top_papers": [
+      {
+        "title": "Topological organization of the human brain functional connectome across the lif",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.2165,
+        "citations": 461
+      },
+      {
+        "title": "Unraveling the Miswired Connectome: A Developmental Perspective",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.1998,
+        "citations": 376
+      },
+      {
+        "title": "Human Connectomics across the Life Span",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1895,
+        "citations": 246
+      },
+      {
+        "title": "An open science resource for establishing reliability and reproducibility in fun",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1774,
+        "citations": 490
+      },
+      {
+        "title": "Clinical applications of the functional connectome",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.173,
+        "citations": 334
+      },
+      {
+        "title": "Toward reliable characterization of functional homogeneity in the human brain: P",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.1673,
+        "citations": 514
+      },
+      {
+        "title": "Assessing Variations in Areal Organization for the Intrinsic Brain: From Fingerp",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1627,
+        "citations": 100
+      },
+      {
+        "title": "Reliable intrinsic connectivity networks: Test\u2013retest evaluation using ICA and d",
+        "year": 2009,
+        "role": "balanced_contribution",
+        "score": 0.1611,
+        "citations": 762
+      },
+      {
+        "title": "The NKI-Rockland Sample: A Model for Accelerating the Pace of Discovery Science ",
+        "year": 2012,
+        "role": "cited_technical",
+        "score": 0.1604,
+        "citations": 890
+      },
+      {
+        "title": "Connectivity trajectory across lifespan differentiates the precuneus from the de",
+        "year": 2013,
+        "role": "methodological_focus",
+        "score": 0.1592,
+        "citations": 135
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Toward discovery science of human brain function",
+        "year": 2010,
+        "role": "foundational",
+        "score": 0.0334,
+        "citations": 3071
+      }
+    ]
+  },
+  {
+    "rank": 28,
+    "name": "Alex Fornito",
+    "paper_count": 36,
+    "co_author_count": 118,
+    "collaborative_reach": 0.0,
+    "total_papers": 36,
+    "role_distribution": {
+      "methods_infrastructure": 6,
+      "synthesis_integration": 9,
+      "balanced_contribution": 7,
+      "well_cited": 4,
+      "methodological_focus": 6,
+      "foundational": 4
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 15,
+    "top_papers": [
+      {
+        "title": "Connectomics: A new paradigm for understanding brain disease",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2653,
+        "citations": 254
+      },
+      {
+        "title": "Brain Networks in Schizophrenia",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2538,
+        "citations": 536
+      },
+      {
+        "title": "The development of brain network hubs",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.2395,
+        "citations": 268
+      },
+      {
+        "title": "Opportunities and Challenges for Psychiatry in the Connectomic Era",
+        "year": 2016,
+        "role": "methods_infrastructure",
+        "score": 0.2358,
+        "citations": 79
+      },
+      {
+        "title": "Controversies and progress on standardization of large-scale brain network nomen",
+        "year": 2023,
+        "role": "methods_infrastructure",
+        "score": 0.221,
+        "citations": 108
+      },
+      {
+        "title": "Bridging the Gap between Connectome and Transcriptome",
+        "year": 2018,
+        "role": "synthesis_integration",
+        "score": 0.2143,
+        "citations": 415
+      },
+      {
+        "title": "Connectome sensitivity or specificity: which is more important?",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.2128,
+        "citations": 312
+      },
+      {
+        "title": "Connectomic Intermediate Phenotypes for Psychiatric Disorders",
+        "year": 2012,
+        "role": "synthesis_integration",
+        "score": 0.2104,
+        "citations": 119
+      },
+      {
+        "title": "Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis ",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.2097,
+        "citations": 92
+      },
+      {
+        "title": "Competitive and cooperative dynamics of large-scale brain functional networks su",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.2024,
+        "citations": 585
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "The connectomics of brain disorders",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.0228,
+        "citations": 1757
+      },
+      {
+        "title": "Whole-brain anatomical networks: Does the choice of nodes matter?",
+        "year": 2009,
+        "role": "foundational",
+        "score": 0.0184,
+        "citations": 1200
+      },
+      {
+        "title": "Graph analysis of the human connectome: Promise, progress, and pitfalls",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0157,
+        "citations": 792
+      },
+      {
+        "title": "Schizophrenia, neuroimaging and connectomics",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0135,
+        "citations": 739
+      }
+    ]
+  },
+  {
+    "rank": 29,
+    "name": "Kisuk Lee",
+    "paper_count": 36,
+    "co_author_count": 367,
+    "collaborative_reach": 0.3376922708855325,
+    "total_papers": 36,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "methods_infrastructure": 1,
+      "balanced_contribution": 11,
+      "synthesis_integration": 3,
+      "foundational": 2,
+      "methodological_focus": 13,
+      "well_cited": 3,
+      "active_contributor": 2
+    },
+    "important_papers_count": 3,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Convolutional nets for reconstructing neural circuits from brain images acquired",
+        "year": 2019,
+        "role": "synthesis_integration",
+        "score": 0.1627,
+        "citations": 59
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      },
+      {
+        "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse vi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 8
+      },
+      {
+        "title": "Connectome of a human foveal retina",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1265,
+        "citations": 2
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "Space\u2013time wiring specificity supports direction selectivity in the retina",
+        "year": 2014,
+        "role": "foundational",
+        "score": 0.0377,
+        "citations": 504
+      }
+    ]
+  },
+  {
+    "rank": 30,
+    "name": "Matthew F. Glasser",
+    "paper_count": 36,
+    "co_author_count": 206,
+    "collaborative_reach": 0.0,
+    "total_papers": 36,
+    "role_distribution": {
+      "methods_infrastructure": 3,
+      "balanced_contribution": 7,
+      "methodological_focus": 9,
+      "cited_technical": 3,
+      "synthesis_integration": 1,
+      "active_contributor": 1,
+      "foundational": 4,
+      "well_cited": 8
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Parcellating Cerebral Cortex: How Invasive Animal Studies Inform Noninvasive Map",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.1921,
+        "citations": 163
+      },
+      {
+        "title": "The nonhuman primate neuroimaging and neuroanatomy project",
+        "year": 2021,
+        "role": "methods_infrastructure",
+        "score": 0.1885,
+        "citations": 116
+      },
+      {
+        "title": "Hierarchical Heterogeneity across Human Cortex Shapes Large-Scale Neural Dynamic",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1567,
+        "citations": 399
+      },
+      {
+        "title": "Mapping Connections in Humans and\u00a0Non-Human Primates",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1492,
+        "citations": 114
+      },
+      {
+        "title": "Trends and properties of human cerebral cortex: Correlations with cortical myeli",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1481,
+        "citations": 488
+      },
+      {
+        "title": "The impact of traditional neuroimaging methods on the spatial localization of co",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1448,
+        "citations": 353
+      },
+      {
+        "title": "Multimodal surface matching with higher-order smoothness constraints",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1439,
+        "citations": 372
+      },
+      {
+        "title": "Ciftify: A framework for surface-based analysis of legacy MR acquisitions",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.1432,
+        "citations": 174
+      },
+      {
+        "title": "Using temporal ICA to selectively remove global noise while preserving global si",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1412,
+        "citations": 284
+      },
+      {
+        "title": "Canonical genetic signatures of the adult human brain",
+        "year": 2015,
+        "role": "cited_technical",
+        "score": 0.1363,
+        "citations": 718
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "The minimal preprocessing pipelines for the Human Connectome Project",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0388,
+        "citations": 5762
+      },
+      {
+        "title": "A multi-modal parcellation of human cerebral cortex",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0315,
+        "citations": 5467
+      },
+      {
+        "title": "Function in the human connectome: Task-fMRI and individual differences in behavi",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0245,
+        "citations": 1671
+      },
+      {
+        "title": "Resting-state fMRI in the Human Connectome Project",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0218,
+        "citations": 1693
+      }
+    ]
+  },
+  {
+    "rank": 31,
+    "name": "Stephan Saalfeld",
+    "paper_count": 36,
+    "co_author_count": 391,
+    "collaborative_reach": 0.4289244073434164,
+    "total_papers": 36,
+    "role_distribution": {
+      "synthesis_integration": 5,
+      "landmark_influential": 3,
+      "well_cited": 7,
+      "balanced_contribution": 7,
+      "methodological_focus": 4,
+      "foundational": 5,
+      "active_contributor": 3,
+      "methods_infrastructure": 1,
+      "cited_technical": 1
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "A Connectome of the Adult <i>Drosophila</i> Central Brain",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.3117,
+        "citations": 147
+      },
+      {
+        "title": "Fiji: an open-source platform for biological-image analysis",
+        "year": 2012,
+        "role": "landmark_influential",
+        "score": 0.3113,
+        "citations": 68853
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in <i>Drosophila</i>",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 43
+      },
+      {
+        "title": "An unbiased template of the Drosophila brain and ventral nerve cord",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.1587,
+        "citations": 154
+      },
+      {
+        "title": "An unbiased template of the <i>Drosophila</i> brain and ventral nerve cord",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1458,
+        "citations": 20
+      },
+      {
+        "title": "Rapid reconstruction of neural circuits using tissue expansion and lattice light",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.1371,
+        "citations": 8
+      },
+      {
+        "title": "CATMAID: collaborative annotation toolkit for massive amounts of image data",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.1265,
+        "citations": 434
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      },
+      {
+        "title": "Comparative connectomics and escape behavior in larvae of closely related Drosop",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1092,
+        "citations": 16
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Fiji: an open-source platform for biological-image analysis",
+        "year": 2012,
+        "role": "landmark_influential",
+        "score": 0.3113,
+        "citations": 68853
+      },
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "CATMAID: collaborative annotation toolkit for massive amounts of image data",
+        "year": 2009,
+        "role": "landmark_influential",
+        "score": 0.1265,
+        "citations": 434
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      },
+      {
+        "title": "TrakEM2 Software for Neural Circuit Reconstruction",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0823,
+        "citations": 1098
+      }
+    ]
+  },
+  {
+    "rank": 32,
+    "name": "Daniel R. Berger",
+    "paper_count": 35,
+    "co_author_count": 281,
+    "collaborative_reach": 0.29880717844422766,
+    "total_papers": 35,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "foundational": 3,
+      "synthesis_integration": 4,
+      "methodological_focus": 11,
+      "balanced_contribution": 3,
+      "cited_technical": 5,
+      "active_contributor": 4,
+      "well_cited": 3
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "SmartEM: machine-learning guided electron microscopy",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 6
+      },
+      {
+        "title": "SmartEM: machine learning-guided electron microscopy",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1618,
+        "citations": 1
+      },
+      {
+        "title": "Connectomics of the Octopus vulgaris vertical lobe provides insight into conserv",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1553,
+        "citations": 34
+      },
+      {
+        "title": "Mapping Alzheimer\u2019s Molecular Pathologies in Large-Scale Connectomics Data: A Pu",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1499,
+        "citations": 3
+      },
+      {
+        "title": "A connectomic resource for neural cataloguing and circuit dissection of the larv",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1439,
+        "citations": 9
+      },
+      {
+        "title": "A Scalable Staining Strategy for Whole-Brain Connectomics",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1388,
+        "citations": 11
+      },
+      {
+        "title": "Multiplexed volumetric CLEM enabled by antibody derivatives provides new insight",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1338,
+        "citations": 5
+      },
+      {
+        "title": "Nanobody immunostaining for correlated light and electron microscopy with preser",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1333,
+        "citations": 120
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Connectomes across development reveal principles of brain maturation",
+        "year": 2021,
+        "role": "landmark_influential",
+        "score": 0.4306,
+        "citations": 488
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      },
+      {
+        "title": "Imaging ATUM ultrathin section libraries with WaferMapper: a multi-scale approac",
+        "year": 2014,
+        "role": "foundational",
+        "score": 0.0323,
+        "citations": 295
+      }
+    ]
+  },
+  {
+    "rank": 33,
+    "name": "Gustavo Deco",
+    "paper_count": 35,
+    "co_author_count": 136,
+    "collaborative_reach": 0.0,
+    "total_papers": 35,
+    "role_distribution": {
+      "methods_infrastructure": 3,
+      "synthesis_integration": 8,
+      "balanced_contribution": 10,
+      "methodological_focus": 12,
+      "active_contributor": 1,
+      "well_cited": 1
+    },
+    "important_papers_count": 0,
+    "synthesis_papers_count": 11,
+    "top_papers": [
+      {
+        "title": "Exploring the network dynamics underlying brain activity during rest",
+        "year": 2014,
+        "role": "methods_infrastructure",
+        "score": 0.2289,
+        "citations": 375
+      },
+      {
+        "title": "Rethinking segregation and integration: contributions of whole-brain modelling",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.1976,
+        "citations": 680
+      },
+      {
+        "title": "Ongoing Cortical Activity at Rest: Criticality, Multistability, and Ghost Attrac",
+        "year": 2012,
+        "role": "balanced_contribution",
+        "score": 0.1699,
+        "citations": 759
+      },
+      {
+        "title": "Understanding principles of integration and segregation using whole-brain comput",
+        "year": 2017,
+        "role": "synthesis_integration",
+        "score": 0.1666,
+        "citations": 181
+      },
+      {
+        "title": "From neurotransmitters to networks: Transcending organisational hierarchies with",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1652,
+        "citations": 54
+      },
+      {
+        "title": "Bottom up modeling of the connectome: Linking structure and function in the rest",
+        "year": 2013,
+        "role": "synthesis_integration",
+        "score": 0.1617,
+        "citations": 84
+      },
+      {
+        "title": "Towards the virtual brain: network modeling of the intact and the damaged brain.",
+        "year": 2010,
+        "role": "balanced_contribution",
+        "score": 0.1602,
+        "citations": 165
+      },
+      {
+        "title": "Functional connectivity dynamically evolves on multiple time-scales over a stati",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1578,
+        "citations": 414
+      },
+      {
+        "title": "Structural connectivity in schizophrenia and its impact on the dynamics of spont",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1569,
+        "citations": 79
+      },
+      {
+        "title": "Toward naturalistic neuroscience: Mechanisms underlying the flattening of brain ",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1553,
+        "citations": 109
+      }
+    ],
+    "important_papers": []
+  },
+  {
+    "rank": 34,
+    "name": "Hua Han",
+    "paper_count": 35,
+    "co_author_count": 117,
+    "collaborative_reach": 0.0,
+    "total_papers": 35,
+    "role_distribution": {
+      "synthesis_integration": 1,
+      "methodological_focus": 17,
+      "balanced_contribution": 4,
+      "active_contributor": 13
+    },
+    "important_papers_count": 0,
+    "synthesis_papers_count": 1,
+    "top_papers": [
+      {
+        "title": "Massive Data Management and Sharing Module for Connectome Reconstruction",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.1553,
+        "citations": 3
+      },
+      {
+        "title": "Graph partitioning algorithms with biological connectivity decisions for neuron ",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1293,
+        "citations": 32
+      },
+      {
+        "title": "Large scale three-dimensional reconstruction of an entire Caenorhabditis elegans",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1267,
+        "citations": 40
+      },
+      {
+        "title": "Joint reconstruction of neuron and ultrastructure via connectivity consensus in ",
+        "year": 2022,
+        "role": "methodological_focus",
+        "score": 0.1233,
+        "citations": 28
+      },
+      {
+        "title": "DeepMulticut: Deep Learning of Multicut Problem for Neuron Segmentation From Ele",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1187,
+        "citations": 5
+      },
+      {
+        "title": "A novel 3D instance segmentation network for synapse reconstruction from serial ",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1186,
+        "citations": 1
+      },
+      {
+        "title": "DeepPartitioning: Deep Learning of Graph Partitioning for Neuron Segmentation Fr",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1186,
+        "citations": 0
+      },
+      {
+        "title": "Effective automated pipeline for 3D reconstruction of synapses based on deep lea",
+        "year": 2018,
+        "role": "methodological_focus",
+        "score": 0.1152,
+        "citations": 19
+      },
+      {
+        "title": "SegNeuron: 3D Neuron Instance Segmentation in\u00a0Any EM Volume with\u00a0a\u00a0Generalist Mo",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1038,
+        "citations": 1
+      },
+      {
+        "title": "A fast forward 3D connection algorithm for mitochondria and synapse segmentation",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1024,
+        "citations": 22
+      }
+    ],
+    "important_papers": []
+  },
+  {
+    "rank": 35,
+    "name": "Narayanan Kasthuri",
+    "paper_count": 35,
+    "co_author_count": 187,
+    "collaborative_reach": 0.0,
+    "total_papers": 35,
+    "role_distribution": {
+      "balanced_contribution": 5,
+      "methodological_focus": 17,
+      "cited_technical": 6,
+      "well_cited": 2,
+      "landmark_influential": 1,
+      "active_contributor": 3,
+      "foundational": 1
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 0,
+    "top_papers": [
+      {
+        "title": "Quantifying Mesoscale Neuroanatomy Using X-Ray Microtomography",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1484,
+        "citations": 99
+      },
+      {
+        "title": "Cell type specific labeling and partial connectomes of dopaminergic circuits rev",
+        "year": 2020,
+        "role": "methodological_focus",
+        "score": 0.137,
+        "citations": 1
+      },
+      {
+        "title": "Primate neuronal connections are sparse as compared to mouse",
+        "year": 2020,
+        "role": "methodological_focus",
+        "score": 0.1359,
+        "citations": 1
+      },
+      {
+        "title": "Expansion Microscopy of Lipid Membranes",
+        "year": 2019,
+        "role": "cited_technical",
+        "score": 0.131,
+        "citations": 59
+      },
+      {
+        "title": "Dense, continuous membrane labeling and expansion microscopy visualization of ul",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1303,
+        "citations": 24
+      },
+      {
+        "title": "ConnectomeExplorer: Query-Guided Visual Analysis of Large Volumetric Neuroscienc",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1232,
+        "citations": 75
+      },
+      {
+        "title": "AxonEM Dataset: 3D Axon Instance Segmentation of Brain Cortical Regions",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.121,
+        "citations": 16
+      },
+      {
+        "title": "NeuroLines: A Subway Map Metaphor for Visualizing Nanoscale Neuronal Connectivit",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1204,
+        "citations": 72
+      },
+      {
+        "title": "Flexible Learning-Free Segmentation and Reconstruction of Neural Volumes",
+        "year": 2018,
+        "role": "methodological_focus",
+        "score": 0.1177,
+        "citations": 18
+      },
+      {
+        "title": "Stacked Endoplasmic Reticulum Sheets Are Connected by Helicoidal Membrane Motifs",
+        "year": 2013,
+        "role": "cited_technical",
+        "score": 0.1173,
+        "citations": 254
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Saturated Reconstruction of a Volume of Neocortex",
+        "year": 2015,
+        "role": "landmark_influential",
+        "score": 0.0941,
+        "citations": 1125
+      },
+      {
+        "title": "High-contrast en bloc staining of neuronal tissue for field emission scanning el",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.033,
+        "citations": 309
+      }
+    ]
+  },
+  {
+    "rank": 36,
+    "name": "Harald F. Hess",
+    "paper_count": 34,
+    "co_author_count": 266,
+    "collaborative_reach": 0.24009283184152586,
+    "total_papers": 34,
+    "role_distribution": {
+      "balanced_contribution": 8,
+      "synthesis_integration": 1,
+      "foundational": 4,
+      "methodological_focus": 9,
+      "cited_technical": 4,
+      "active_contributor": 4,
+      "well_cited": 3,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 2,
+    "top_papers": [
+      {
+        "title": "A resource for the Drosophila antennal lobe provided by the connectome of glomer",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1618,
+        "citations": 57
+      },
+      {
+        "title": "Gas cluster ion beam SEM for imaging of large tissue samples with 10\u2009nm isotropi",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1547,
+        "citations": 66
+      },
+      {
+        "title": "Combining brain-wide activity imaging with electron microscopy reveals a distrib",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1513,
+        "citations": 0
+      },
+      {
+        "title": "<i>En bloc</i> preparation of <i>Drosophila</i> brains enables high-throughput F",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1463,
+        "citations": 12
+      },
+      {
+        "title": "Enabling FIB-SEM Systems for Large Volume Connectomics and Cell Biology",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1418,
+        "citations": 46
+      },
+      {
+        "title": "Imaging Intracellular Fluorescent Proteins at Nanometer Resolution",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.1359,
+        "citations": 8785
+      },
+      {
+        "title": "A complete reconstruction of the early visual system of an adult insect",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1341,
+        "citations": 27
+      },
+      {
+        "title": "Accelerating Neuron Reconstruction with PATHFINDER",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 4
+      },
+      {
+        "title": "Protocol for preparation of heterogeneous biological samples for 3D electron mic",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.1278,
+        "citations": 43
+      },
+      {
+        "title": "Cross-species comparative connectomics reveals the evolution of an olfactory cir",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1266,
+        "citations": 4
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Imaging Intracellular Fluorescent Proteins at Nanometer Resolution",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.1359,
+        "citations": 8785
+      },
+      {
+        "title": "Enhanced FIB-SEM systems for large-volume 3D imaging",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0414,
+        "citations": 429
+      },
+      {
+        "title": "A connectome of a learning and memory center in the adult Drosophila brain",
+        "year": 2017,
+        "role": "foundational",
+        "score": 0.0354,
+        "citations": 391
+      },
+      {
+        "title": "Synaptic circuits and their variations within different columns in the visual sy",
+        "year": 2015,
+        "role": "foundational",
+        "score": 0.035,
+        "citations": 305
+      }
+    ]
+  },
+  {
+    "rank": 37,
+    "name": "Micha\u0142 Januszewski",
+    "paper_count": 34,
+    "co_author_count": 305,
+    "collaborative_reach": 0.32567288629241414,
+    "total_papers": 34,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "cited_technical": 3,
+      "synthesis_integration": 6,
+      "foundational": 2,
+      "balanced_contribution": 7,
+      "methodological_focus": 8,
+      "active_contributor": 5,
+      "methods_infrastructure": 1
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 7,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Accelerated EM Connectome Reconstruction using 3D Visualization and Segmentation",
+        "year": 2020,
+        "role": "cited_technical",
+        "score": 0.3149,
+        "citations": 14
+      },
+      {
+        "title": "A Connectome of the Adult <i>Drosophila</i> Central Brain",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.3117,
+        "citations": 147
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1631,
+        "citations": 34
+      },
+      {
+        "title": "Gas cluster ion beam SEM for imaging of large tissue samples with 10\u2009nm isotropi",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1547,
+        "citations": 66
+      },
+      {
+        "title": "A connectomic resource for neural cataloguing and circuit dissection of the larv",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1439,
+        "citations": 9
+      },
+      {
+        "title": "Learning cellular morphology with neural networks",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1401,
+        "citations": 78
+      },
+      {
+        "title": "Accelerating Neuron Reconstruction with PATHFINDER",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 4
+      },
+      {
+        "title": "Segmentation-Enhanced CycleGAN",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1192,
+        "citations": 22
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "High-precision automated reconstruction of neurons with flood-filling networks",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.0771,
+        "citations": 425
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      }
+    ]
+  },
+  {
+    "rank": 38,
+    "name": "Richard D. Fetter",
+    "paper_count": 34,
+    "co_author_count": 156,
+    "collaborative_reach": 0.2199056307654821,
+    "total_papers": 34,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "synthesis_integration": 2,
+      "balanced_contribution": 6,
+      "cited_technical": 5,
+      "methodological_focus": 5,
+      "well_cited": 5,
+      "foundational": 5,
+      "active_contributor": 4
+    },
+    "important_papers_count": 7,
+    "synthesis_papers_count": 2,
+    "top_papers": [
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "The connectome of an insect brain",
+        "year": 2023,
+        "role": "landmark_influential",
+        "score": 0.3033,
+        "citations": 432
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in <i>Drosophila</i>",
+        "year": 2015,
+        "role": "synthesis_integration",
+        "score": 0.166,
+        "citations": 43
+      },
+      {
+        "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor out",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1583,
+        "citations": 91
+      },
+      {
+        "title": "Single excitatory axons form clustered synapses onto CA1 pyramidal cell dendrite",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1356,
+        "citations": 141
+      },
+      {
+        "title": "A genetically specified connectomics approach applied to long-range feeding regu",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1329,
+        "citations": 79
+      },
+      {
+        "title": "Divergent Connectivity of Homologous Command-like Neurons Mediates Segment-Speci",
+        "year": 2017,
+        "role": "cited_technical",
+        "score": 0.1296,
+        "citations": 133
+      },
+      {
+        "title": "Multilevel feedback architecture for adaptive regulation of learning in the inse",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.1149,
+        "citations": 12
+      },
+      {
+        "title": "Synaptic specificity is collectively determined by partner identity, location an",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.1127,
+        "citations": 5
+      },
+      {
+        "title": "The complete connectome of a learning and memory center in an insect brain",
+        "year": 2017,
+        "role": "methodological_focus",
+        "score": 0.1018,
+        "citations": 8
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogas",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.31,
+        "citations": 1135
+      },
+      {
+        "title": "The connectome of an insect brain",
+        "year": 2023,
+        "role": "landmark_influential",
+        "score": 0.3033,
+        "citations": 432
+      },
+      {
+        "title": "A visual motion detection circuit suggested by Drosophila connectomics",
+        "year": 2013,
+        "role": "foundational",
+        "score": 0.0821,
+        "citations": 744
+      },
+      {
+        "title": "Quantitative neuroanatomy for connectomics in Drosophila",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0694,
+        "citations": 371
+      },
+      {
+        "title": "Elastic volume reconstruction from series of ultra-thin microscopy sections",
+        "year": 2012,
+        "role": "foundational",
+        "score": 0.0513,
+        "citations": 359
+      }
+    ]
+  },
+  {
+    "rank": 39,
+    "name": "Viren Jain",
+    "paper_count": 33,
+    "co_author_count": 205,
+    "collaborative_reach": 0.31421352710750405,
+    "total_papers": 33,
+    "role_distribution": {
+      "foundational": 2,
+      "landmark_connectome": 1,
+      "synthesis_integration": 6,
+      "methodological_focus": 6,
+      "balanced_contribution": 5,
+      "well_cited": 4,
+      "active_contributor": 5,
+      "landmark_influential": 1,
+      "cited_technical": 3
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1631,
+        "citations": 34
+      },
+      {
+        "title": "Structured sampling of olfactory input by the fly mushroom body",
+        "year": 2022,
+        "role": "synthesis_integration",
+        "score": 0.151,
+        "citations": 140
+      },
+      {
+        "title": "Mapping Alzheimer\u2019s Molecular Pathologies in Large-Scale Connectomics Data: A Pu",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1499,
+        "citations": 3
+      },
+      {
+        "title": "A connectomic resource for neural cataloguing and circuit dissection of the larv",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1439,
+        "citations": 9
+      },
+      {
+        "title": "Learning cellular morphology with neural networks",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1401,
+        "citations": 78
+      },
+      {
+        "title": "Multiplexed volumetric CLEM enabled by antibody derivatives provides new insight",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1338,
+        "citations": 5
+      },
+      {
+        "title": "Solving Large Multicut Problems for Connectomics via Domain Decomposition",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1264,
+        "citations": 36
+      },
+      {
+        "title": "Multiplexed volumetric CLEM enabled by scFvs provides insights into the cytology",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1212,
+        "citations": 8
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolut",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.2839,
+        "citations": 288
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "High-precision automated reconstruction of neurons with flood-filling networks",
+        "year": 2018,
+        "role": "landmark_influential",
+        "score": 0.0771,
+        "citations": 425
+      },
+      {
+        "title": "A connectomic study of a petascale fragment of human cerebral cortex",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.0731,
+        "citations": 279
+      }
+    ]
+  },
+  {
+    "rank": 40,
+    "name": "Alexander Shakeel Bates",
+    "paper_count": 32,
+    "co_author_count": 389,
+    "collaborative_reach": 0.27693997378285484,
+    "total_papers": 32,
+    "role_distribution": {
+      "landmark_influential": 2,
+      "foundational": 4,
+      "well_cited": 4,
+      "methods_infrastructure": 1,
+      "synthesis_integration": 8,
+      "balanced_contribution": 8,
+      "methodological_focus": 4,
+      "active_contributor": 1
+    },
+    "important_papers_count": 6,
+    "synthesis_papers_count": 9,
+    "top_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly B",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2367,
+        "citations": 234
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1768,
+        "citations": 26
+      },
+      {
+        "title": "The natverse: a versatile computational toolbox to combine and analyse neuroanat",
+        "year": 2014,
+        "role": "synthesis_integration",
+        "score": 0.172,
+        "citations": 36
+      },
+      {
+        "title": "Neural circuit mechanisms for steering control in <i>walking Drosophila</i>",
+        "year": 2020,
+        "role": "synthesis_integration",
+        "score": 0.14,
+        "citations": 75
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "role": "landmark_influential",
+        "score": 0.9115,
+        "citations": 1198
+      },
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical da",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.3108,
+        "citations": 249
+      },
+      {
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into func",
+        "year": 2020,
+        "role": "foundational",
+        "score": 0.2938,
+        "citations": 418
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      }
+    ]
+  },
+  {
+    "rank": 41,
+    "name": "Graham Knott",
+    "paper_count": 32,
+    "co_author_count": 105,
+    "collaborative_reach": 0.0,
+    "total_papers": 32,
+    "role_distribution": {
+      "balanced_contribution": 10,
+      "synthesis_integration": 1,
+      "methodological_focus": 3,
+      "foundational": 1,
+      "cited_technical": 6,
+      "active_contributor": 7,
+      "well_cited": 4
+    },
+    "important_papers_count": 1,
+    "synthesis_papers_count": 1,
+    "top_papers": [
+      {
+        "title": "Gas cluster ion beam SEM for imaging of large tissue samples with 10\u2009nm isotropi",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.1547,
+        "citations": 66
+      },
+      {
+        "title": "Correlative light and volume electron microscopy to study brain development",
+        "year": 2023,
+        "role": "synthesis_integration",
+        "score": 0.1545,
+        "citations": 13
+      },
+      {
+        "title": "Correlative In Vivo 2 Photon and Focused Ion Beam Scanning Electron Microscopy o",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1356,
+        "citations": 88
+      },
+      {
+        "title": "Neuron Segmentation With High-Level Biological Priors",
+        "year": 2017,
+        "role": "balanced_contribution",
+        "score": 0.1297,
+        "citations": 38
+      },
+      {
+        "title": "Is EM dead?",
+        "year": 2013,
+        "role": "balanced_contribution",
+        "score": 0.1246,
+        "citations": 81
+      },
+      {
+        "title": "The effects of aging on neuropil structure in mouse somatosensory cortex\u2014A 3D el",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1228,
+        "citations": 76
+      },
+      {
+        "title": "Semiautomated correlative 3D electron microscopy of in vivo\u2013imaged axons and den",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1205,
+        "citations": 52
+      },
+      {
+        "title": "NeuroMorph: A Toolset for the Morphometric Analysis and Visualization of 3D Mode",
+        "year": 2014,
+        "role": "balanced_contribution",
+        "score": 0.1144,
+        "citations": 86
+      },
+      {
+        "title": "Block Face Scanning Electron Microscopy of Fluorescently Labeled Axons Without U",
+        "year": 2018,
+        "role": "methodological_focus",
+        "score": 0.0978,
+        "citations": 23
+      },
+      {
+        "title": "Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused ",
+        "year": 2008,
+        "role": "foundational",
+        "score": 0.0978,
+        "citations": 729
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused ",
+        "year": 2008,
+        "role": "foundational",
+        "score": 0.0978,
+        "citations": 729
+      }
+    ]
+  },
+  {
+    "rank": 42,
+    "name": "Kevin L. Briggman",
+    "paper_count": 32,
+    "co_author_count": 125,
+    "collaborative_reach": 0.3323040140627306,
+    "total_papers": 32,
+    "role_distribution": {
+      "landmark_connectome": 1,
+      "foundational": 3,
+      "methodological_focus": 5,
+      "landmark_influential": 1,
+      "balanced_contribution": 5,
+      "well_cited": 6,
+      "cited_technical": 5,
+      "active_contributor": 6
+    },
+    "important_papers_count": 5,
+    "synthesis_papers_count": 0,
+    "top_papers": [
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Towards neural circuit reconstruction with volume electron microscopy techniques",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.141,
+        "citations": 271
+      },
+      {
+        "title": "GAUSS-EM, guided accumulation of ultrathin serial sections with a static magneti",
+        "year": 2024,
+        "role": "methodological_focus",
+        "score": 0.1271,
+        "citations": 8
+      },
+      {
+        "title": "Permeabilization-free <i>en bloc</i> immunohistochemistry for correlative micros",
+        "year": 2020,
+        "role": "methodological_focus",
+        "score": 0.1121,
+        "citations": 3
+      },
+      {
+        "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+        "year": 2011,
+        "role": "landmark_influential",
+        "score": 0.1121,
+        "citations": 931
+      },
+      {
+        "title": "Connectomic analysis reveals an interneuron with an integral role in the retinal",
+        "year": 2020,
+        "role": "methodological_focus",
+        "score": 0.1037,
+        "citations": 33
+      },
+      {
+        "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1009,
+        "citations": 285
+      },
+      {
+        "title": "Spatiotemporally Asymmetric Excitation Supports Mammalian Retinal Motion Sensiti",
+        "year": 2019,
+        "role": "balanced_contribution",
+        "score": 0.0978,
+        "citations": 63
+      },
+      {
+        "title": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentat",
+        "year": 2009,
+        "role": "well_cited",
+        "score": 0.0977,
+        "citations": 386
+      },
+      {
+        "title": "Specific Wiring of Distinct Amacrine Cells in the Directionally Selective Retina",
+        "year": 2015,
+        "role": "cited_technical",
+        "score": 0.0976,
+        "citations": 72
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Towards neural circuit reconstruction with volume electron microscopy techniques",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.141,
+        "citations": 271
+      },
+      {
+        "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+        "year": 2011,
+        "role": "landmark_influential",
+        "score": 0.1121,
+        "citations": 931
+      },
+      {
+        "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1009,
+        "citations": 285
+      },
+      {
+        "title": "Volume electron microscopy for neuronal circuit reconstruction",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.0618,
+        "citations": 346
+      }
+    ]
+  },
+  {
+    "rank": 43,
+    "name": "Nico Kemnitz",
+    "paper_count": 32,
+    "co_author_count": 345,
+    "collaborative_reach": 0.35065517008740366,
+    "total_papers": 32,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "methods_infrastructure": 1,
+      "balanced_contribution": 12,
+      "synthesis_integration": 4,
+      "foundational": 1,
+      "methodological_focus": 9,
+      "well_cited": 3,
+      "cited_technical": 1
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Fast imaging of millimeter-scale areas with beam deflection transmission electro",
+        "year": 2024,
+        "role": "synthesis_integration",
+        "score": 0.1617,
+        "citations": 32
+      },
+      {
+        "title": "Igneous: Distributed dense 3D segmentation meshing, neuron skeletonization, and ",
+        "year": 2022,
+        "role": "synthesis_integration",
+        "score": 0.16,
+        "citations": 20
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      },
+      {
+        "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse vi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 8
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      }
+    ]
+  },
+  {
+    "rank": 44,
+    "name": "R. Clay Reid",
+    "paper_count": 32,
+    "co_author_count": 361,
+    "collaborative_reach": 0.37894528445256404,
+    "total_papers": 32,
+    "role_distribution": {
+      "well_cited": 5,
+      "balanced_contribution": 7,
+      "synthesis_integration": 3,
+      "methodological_focus": 11,
+      "foundational": 2,
+      "active_contributor": 1,
+      "cited_technical": 3
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 3,
+    "top_papers": [
+      {
+        "title": "A petascale automated imaging pipeline for mapping neuronal circuits with high-t",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.2868,
+        "citations": 226
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "Reconstructing the human brain\u2019s wiring diagram from axons up",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1402,
+        "citations": 1
+      },
+      {
+        "title": "Specificity and randomness: structure\u2013function relationships in neural circuits",
+        "year": 2011,
+        "role": "methodological_focus",
+        "score": 0.1366,
+        "citations": 26
+      },
+      {
+        "title": "Large-scale neuroanatomy using LASSO: Loop-based Automated Serial Sectioning Ope",
+        "year": 2018,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 12
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      },
+      {
+        "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse vi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 8
+      },
+      {
+        "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1281,
+        "citations": 932
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Network anatomy and in vivo physiology of visual cortical neurons",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1281,
+        "citations": 932
+      },
+      {
+        "title": "Anatomy and function of an excitatory network in the visual cortex",
+        "year": 2016,
+        "role": "foundational",
+        "score": 0.0277,
+        "citations": 574
+      }
+    ]
+  },
+  {
+    "rank": 45,
+    "name": "Richard F. Betzel",
+    "paper_count": 32,
+    "co_author_count": 116,
+    "collaborative_reach": 0.0,
+    "total_papers": 32,
+    "role_distribution": {
+      "methods_infrastructure": 8,
+      "synthesis_integration": 13,
+      "balanced_contribution": 3,
+      "methodological_focus": 5,
+      "well_cited": 3
+    },
+    "important_papers_count": 0,
+    "synthesis_papers_count": 21,
+    "top_papers": [
+      {
+        "title": "Controversies and progress on standardization of large-scale brain network nomen",
+        "year": 2023,
+        "role": "methods_infrastructure",
+        "score": 0.221,
+        "citations": 108
+      },
+      {
+        "title": "Hierarchical communities in the larval <i>Drosophila</i> connectome: Links to ce",
+        "year": 2024,
+        "role": "methods_infrastructure",
+        "score": 0.2182,
+        "citations": 13
+      },
+      {
+        "title": "Distance-dependent consensus thresholds for generating group-representative stru",
+        "year": 2018,
+        "role": "methods_infrastructure",
+        "score": 0.2141,
+        "citations": 208
+      },
+      {
+        "title": "The modular organization of human anatomical brain networks: Accounting for the ",
+        "year": 2017,
+        "role": "synthesis_integration",
+        "score": 0.2137,
+        "citations": 184
+      },
+      {
+        "title": "Modeling and interpreting mesoscale network dynamics",
+        "year": 2017,
+        "role": "methods_infrastructure",
+        "score": 0.2109,
+        "citations": 138
+      },
+      {
+        "title": "Connectome architecture favours within-module diffusion and between-module routi",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2036,
+        "citations": 1
+      },
+      {
+        "title": "Modular Segregation of Structural Brain Networks Supports the Development of Exe",
+        "year": 2017,
+        "role": "synthesis_integration",
+        "score": 0.1948,
+        "citations": 417
+      },
+      {
+        "title": "Network-Level Structure-Function Relationships in Human Neocortex",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1927,
+        "citations": 327
+      },
+      {
+        "title": "Human Connectomics across the Life Span",
+        "year": 2016,
+        "role": "synthesis_integration",
+        "score": 0.1895,
+        "citations": 246
+      },
+      {
+        "title": "Contributions of network structure, chemoarchitecture and diagnostic categories ",
+        "year": 2024,
+        "role": "methods_infrastructure",
+        "score": 0.186,
+        "citations": 42
+      }
+    ],
+    "important_papers": []
+  },
+  {
+    "rank": 46,
+    "name": "Tara L. Spires\u2010Jones",
+    "paper_count": 32,
+    "co_author_count": 219,
+    "collaborative_reach": 0.0,
+    "total_papers": 32,
+    "role_distribution": {
+      "cited_technical": 4,
+      "active_contributor": 22,
+      "methodological_focus": 5,
+      "balanced_contribution": 1
+    },
+    "important_papers_count": 0,
+    "synthesis_papers_count": 0,
+    "top_papers": [
+      {
+        "title": "Apolipoprotein E4 effects in Alzheimer\u2019s disease are mediated by synaptotoxic ol",
+        "year": 2012,
+        "role": "cited_technical",
+        "score": 0.071,
+        "citations": 333
+      },
+      {
+        "title": "Non-Fibrillar Oligomeric Amyloid-\u03b2 within Synapses",
+        "year": 2016,
+        "role": "active_contributor",
+        "score": 0.064,
+        "citations": 83
+      },
+      {
+        "title": "Nanoscale structure of amyloid-\u03b2 plaques in Alzheimer\u2019s disease",
+        "year": 2019,
+        "role": "active_contributor",
+        "score": 0.0607,
+        "citations": 89
+      },
+      {
+        "title": "Synaptic phosphorylated \u03b1-synuclein in dementia with Lewy bodies",
+        "year": 2017,
+        "role": "active_contributor",
+        "score": 0.06,
+        "citations": 123
+      },
+      {
+        "title": "The clinical promise of biomarkers of synapse damage or loss in Alzheimer\u2019s dise",
+        "year": 2020,
+        "role": "methodological_focus",
+        "score": 0.0589,
+        "citations": 352
+      },
+      {
+        "title": "Synaptic oligomeric tau in Alzheimer\u2019s disease \u2014 A potential culprit in the spre",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.0584,
+        "citations": 188
+      },
+      {
+        "title": "Comparative profiling of the synaptic proteome from Alzheimer\u2019s disease patients",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.0563,
+        "citations": 108
+      },
+      {
+        "title": "Amyloid Beta and Tau Cooperate to Cause Reversible Behavioral and Transcriptiona",
+        "year": 2019,
+        "role": "methodological_focus",
+        "score": 0.0548,
+        "citations": 177
+      },
+      {
+        "title": "Tau Accumulation Causes Mitochondrial Distribution Deficits in Neurons in a Mous",
+        "year": 2011,
+        "role": "cited_technical",
+        "score": 0.0548,
+        "citations": 268
+      },
+      {
+        "title": "Synaptic alterations in the rTg4510 mouse model of tauopathy",
+        "year": 2012,
+        "role": "active_contributor",
+        "score": 0.0547,
+        "citations": 128
+      }
+    ],
+    "important_papers": []
+  },
+  {
+    "rank": 47,
+    "name": "Winfried Denk",
+    "paper_count": 32,
+    "co_author_count": 115,
+    "collaborative_reach": 0.41034138118864416,
+    "total_papers": 32,
+    "role_distribution": {
+      "landmark_influential": 3,
+      "landmark_connectome": 1,
+      "foundational": 4,
+      "balanced_contribution": 5,
+      "well_cited": 9,
+      "active_contributor": 3,
+      "cited_technical": 7
+    },
+    "important_papers_count": 8,
+    "synthesis_papers_count": 0,
+    "top_papers": [
+      {
+        "title": "Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional ",
+        "year": 2004,
+        "role": "landmark_influential",
+        "score": 0.3048,
+        "citations": 1691
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Towards neural circuit reconstruction with volume electron microscopy techniques",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.141,
+        "citations": 271
+      },
+      {
+        "title": "Full reconstruction of large lobula plate tangential cells in Drosophila from a ",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1248,
+        "citations": 29
+      },
+      {
+        "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+        "year": 2011,
+        "role": "landmark_influential",
+        "score": 0.1121,
+        "citations": 931
+      },
+      {
+        "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1009,
+        "citations": 285
+      },
+      {
+        "title": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentat",
+        "year": 2009,
+        "role": "well_cited",
+        "score": 0.0977,
+        "citations": 386
+      },
+      {
+        "title": "Directionally selective calcium signals in dendrites of starburst amacrine cells",
+        "year": 2002,
+        "role": "well_cited",
+        "score": 0.0976,
+        "citations": 598
+      },
+      {
+        "title": "The Mind of a Mouse",
+        "year": 2020,
+        "role": "well_cited",
+        "score": 0.0947,
+        "citations": 187
+      },
+      {
+        "title": "Controlling FIB\u2010SBEM slice thickness by monitoring the transmitted ion beam",
+        "year": 2013,
+        "role": "active_contributor",
+        "score": 0.081,
+        "citations": 19
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional ",
+        "year": 2004,
+        "role": "landmark_influential",
+        "score": 0.3048,
+        "citations": 1691
+      },
+      {
+        "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+        "year": 2013,
+        "role": "landmark_connectome",
+        "score": 0.2009,
+        "citations": 1074
+      },
+      {
+        "title": "Towards neural circuit reconstruction with volume electron microscopy techniques",
+        "year": 2006,
+        "role": "foundational",
+        "score": 0.141,
+        "citations": 271
+      },
+      {
+        "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+        "year": 2011,
+        "role": "landmark_influential",
+        "score": 0.1121,
+        "citations": 931
+      },
+      {
+        "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+        "year": 2011,
+        "role": "foundational",
+        "score": 0.1009,
+        "citations": 285
+      }
+    ]
+  },
+  {
+    "rank": 48,
+    "name": "Jan Funke",
+    "paper_count": 31,
+    "co_author_count": 380,
+    "collaborative_reach": 0.28074466233994344,
+    "total_papers": 31,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "methods_infrastructure": 2,
+      "foundational": 3,
+      "synthesis_integration": 3,
+      "balanced_contribution": 8,
+      "methodological_focus": 5,
+      "well_cited": 4,
+      "active_contributor": 5
+    },
+    "important_papers_count": 4,
+    "synthesis_papers_count": 5,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "A multi-resolution imaging and analysis pipeline for comparative circuit reconst",
+        "year": 2026,
+        "role": "synthesis_integration",
+        "score": 0.1517,
+        "citations": 0
+      },
+      {
+        "title": "Combinatorial protein barcodes enable self-correcting neuron tracing with nanosc",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1413,
+        "citations": 3
+      },
+      {
+        "title": "Reconstruction of motor control circuits in adult Drosophila using automated tra",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1332,
+        "citations": 314
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      },
+      {
+        "title": "Who Is Talking to Whom: Synaptic Partner Detection in Anisotropic Volumes of Ins",
+        "year": 2015,
+        "role": "balanced_contribution",
+        "score": 0.1195,
+        "citations": 21
+      },
+      {
+        "title": "Analyzing Image Segmentation for Connectomics",
+        "year": 2018,
+        "role": "balanced_contribution",
+        "score": 0.1186,
+        "citations": 23
+      },
+      {
+        "title": "Structured connectivity in the cerebellum enables noise-resilient pattern separa",
+        "year": 2021,
+        "role": "methodological_focus",
+        "score": 0.0869,
+        "citations": 4
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Neurotransmitter classification from electron microscopy images at synaptic site",
+        "year": 2024,
+        "role": "foundational",
+        "score": 0.1942,
+        "citations": 338
+      },
+      {
+        "title": "Reconstruction of motor control circuits in adult Drosophila using automated tra",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1332,
+        "citations": 314
+      },
+      {
+        "title": "Automatic detection of synaptic partners in a whole-brain Drosophila\u2009electron mi",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1204,
+        "citations": 209
+      }
+    ]
+  },
+  {
+    "rank": 49,
+    "name": "Jingpeng Wu",
+    "paper_count": 31,
+    "co_author_count": 298,
+    "collaborative_reach": 0.3412265295769195,
+    "total_papers": 31,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "balanced_contribution": 9,
+      "synthesis_integration": 4,
+      "foundational": 1,
+      "methodological_focus": 12,
+      "well_cited": 2,
+      "cited_technical": 2
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 4,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Convolutional nets for reconstructing neural circuits from brain images acquired",
+        "year": 2019,
+        "role": "synthesis_integration",
+        "score": 0.1627,
+        "citations": 59
+      },
+      {
+        "title": "Igneous: Distributed dense 3D segmentation meshing, neuron skeletonization, and ",
+        "year": 2022,
+        "role": "synthesis_integration",
+        "score": 0.16,
+        "citations": 20
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      },
+      {
+        "title": "A complete reconstruction of the early visual system of an adult insect",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1341,
+        "citations": 27
+      },
+      {
+        "title": "The synaptic architecture of layer 5 thick tufted excitatory neurons in mouse vi",
+        "year": 2025,
+        "role": "methodological_focus",
+        "score": 0.1323,
+        "citations": 8
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      }
+    ]
+  },
+  {
+    "rank": 50,
+    "name": "Ran Lu",
+    "paper_count": 31,
+    "co_author_count": 345,
+    "collaborative_reach": 0.24362493244038574,
+    "total_papers": 31,
+    "role_distribution": {
+      "landmark_influential": 1,
+      "methods_infrastructure": 1,
+      "balanced_contribution": 11,
+      "synthesis_integration": 5,
+      "foundational": 1,
+      "methodological_focus": 9,
+      "well_cited": 3
+    },
+    "important_papers_count": 2,
+    "synthesis_papers_count": 6,
+    "top_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "Distributed control circuits across a brain-and-cord connectome",
+        "year": 2025,
+        "role": "methods_infrastructure",
+        "score": 0.2252,
+        "citations": 19
+      },
+      {
+        "title": "Binary and analog variation of synapses between cortical pyramidal neurons",
+        "year": 2022,
+        "role": "balanced_contribution",
+        "score": 0.1764,
+        "citations": 164
+      },
+      {
+        "title": "Chandelier cell anatomy and function reveal a variably distributed but common si",
+        "year": 2020,
+        "role": "balanced_contribution",
+        "score": 0.1728,
+        "citations": 40
+      },
+      {
+        "title": "Convolutional nets for reconstructing neural circuits from brain images acquired",
+        "year": 2019,
+        "role": "synthesis_integration",
+        "score": 0.1627,
+        "citations": 59
+      },
+      {
+        "title": "Fast imaging of millimeter-scale areas with beam deflection transmission electro",
+        "year": 2024,
+        "role": "synthesis_integration",
+        "score": 0.1617,
+        "citations": 32
+      },
+      {
+        "title": "Connectomic reconstruction from hippocampal CA3 reveals spatially graded mossy f",
+        "year": 2025,
+        "role": "synthesis_integration",
+        "score": 0.1481,
+        "citations": 1
+      },
+      {
+        "title": "NEURD offers automated proofreading and feature extraction for connectomics",
+        "year": 2025,
+        "role": "balanced_contribution",
+        "score": 0.142,
+        "citations": 19
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      },
+      {
+        "title": "The Synaptic Architecture of Layer 5 Thick Tufted Excitatory Neurons in the Visu",
+        "year": 2023,
+        "role": "methodological_focus",
+        "score": 0.1355,
+        "citations": 7
+      }
+    ],
+    "important_papers": [
+      {
+        "title": "Neuronal wiring diagram of an adult brain",
+        "year": 2024,
+        "role": "landmark_influential",
+        "score": 0.3412,
+        "citations": 612
+      },
+      {
+        "title": "FlyWire: online community for whole-brain connectomics",
+        "year": 2021,
+        "role": "foundational",
+        "score": 0.1362,
+        "citations": 424
+      }
+    ]
+  }
+]

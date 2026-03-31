@@ -1,0 +1,166 @@
+{
+  "description": "15 papers from user seed list (journal_papers.yml) not found in corpus. Flagged for future enrichment.",
+  "decision": "DEFER - wait for preprints to be published, verify DOI matching",
+  "confidence_threshold": 1.0,
+  "total_missing": 15,
+  "papers": [
+    {
+      "id": 1,
+      "title": "Random Graphs",
+      "authors": "Bollobás",
+      "year": 1985,
+      "doi": null,
+      "reason": "No DOI - foundational graph theory, should search by title/author",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "neuPrint: Analysis Tools for EM Connectomics",
+      "authors": "Clements, Dolafi, Umayam et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.01.16.909465",
+      "reason": "bioRxiv preprint - likely published by now",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "Co-Planar Stereotaxic Atlas of the Human Brain",
+      "authors": "Talairach, Tournoux",
+      "year": 1988,
+      "doi": null,
+      "reason": "No DOI - foundational neuroanatomy atlas, search by title",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "title": "Structured sampling of olfactory input by the fly mushroom body",
+      "authors": "Zheng, Li, Fisher et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.04.17.047167",
+      "reason": "bioRxiv preprint",
+      "status": "FLAGGED",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+      "authors": "Bae, Baptiste, Bishop et al.",
+      "year": 2021,
+      "doi": "10.1101/2021.07.28.454025",
+      "reason": "bioRxiv preprint",
+      "status": "FLAGGED",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "title": "Connectomes across development reveal principles of brain maturation",
+      "authors": "Witvliet, Mulcahy, Mitchell et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.04.30.066209",
+      "reason": "bioRxiv preprint (published version IS in corpus at rank #3)",
+      "status": "PARTIAL_MATCH",
+      "priority": "low",
+      "note": "Published version already included"
+    },
+    {
+      "id": 7,
+      "title": "[Title missing in YAML]",
+      "authors": "Eckstein, Bates, Champion et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.06.12.148775",
+      "reason": "bioRxiv preprint, title parsing issue",
+      "status": "FLAGGED",
+      "priority": "medium"
+    },
+    {
+      "id": 8,
+      "title": "Neuronal wiring diagram of an adult brain",
+      "authors": "Dorkenwald, Matsliah, Sterling et al.",
+      "year": 2023,
+      "doi": "10.1101/2023.06.27.546656",
+      "reason": "bioRxiv preprint (2023) - very recent, check for published version",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 9,
+      "title": "FlyWire: Online community for whole-brain connectomics",
+      "authors": "Dorkenwald, McKellar, Macrina et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.08.30.274225",
+      "reason": "bioRxiv preprint - core infrastructure paper",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 10,
+      "title": "[Title missing in YAML]",
+      "authors": "Bates, Schlegel, Roberts et al.",
+      "year": 2020,
+      "doi": "10.1101/2020.01.19.911453",
+      "reason": "bioRxiv preprint, title parsing issue",
+      "status": "FLAGGED",
+      "priority": "medium"
+    },
+    {
+      "id": 11,
+      "title": "Support-Vector Networks",
+      "authors": "Cortes, Vapnik",
+      "year": 1995,
+      "doi": "10.1023/a:1022627411411",
+      "reason": "DOI format may not match - foundational ML paper",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 12,
+      "title": "Network Statistics of the Whole-Brain Connectome of Drosophila",
+      "authors": "Lin, Yang, Dorkenwald et al.",
+      "year": 2023,
+      "doi": "10.1101/2023.07.29.551086",
+      "reason": "bioRxiv preprint (2023) - recent connectomics analysis",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "title": "Transforming FIB-SEM Systems for Large-Volume Connectomics and Cell Biology",
+      "authors": "Xu, Pang, Hayworth et al.",
+      "year": 2020,
+      "doi": "10.1007/978-1-0716-0691-9_12",
+      "reason": "Book chapter - may not be in OpenAlex",
+      "status": "FLAGGED",
+      "priority": "medium"
+    },
+    {
+      "id": 14,
+      "title": "CAVE: Connectome Annotation Versioning Engine",
+      "authors": "Dorkenwald, Schneider-Mizell, Brittain et al.",
+      "year": 2023,
+      "doi": "10.1101/2023.07.26.550598",
+      "reason": "bioRxiv preprint (2023) - core infrastructure/tooling",
+      "status": "FLAGGED",
+      "priority": "high"
+    },
+    {
+      "id": 15,
+      "title": "The Elements of Statistical Learning",
+      "authors": "Hastie, Tibshirani, Friedman",
+      "year": 2009,
+      "doi": "10.1007/978-0-387-84858-7",
+      "reason": "Textbook - foundational ML reference",
+      "status": "FLAGGED",
+      "priority": "high"
+    }
+  ],
+  "action_plan": {
+    "phase1_defer": "Wait for bioRxiv preprints to publish; verify DOI matching for non-preprints",
+    "phase2_add": "Add to corpus with confidence=1.0 (user hand-curation signal) when ready",
+    "phase3_recompute": "Re-run metrics, author rankings, journal club after adding to corpus"
+  },
+  "created": "2026-03-31",
+  "status": "PENDING_VERIFICATION"
+}

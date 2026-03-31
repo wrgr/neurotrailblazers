@@ -30,6 +30,11 @@ def create_kcore_visualization():
     print("Loading citation graph...")
     with open(OUT / "graphs" / "citation_graph.json") as f:
         graph_data = json.load(f)
+
+    # Handle both "links" (D3 format) and "edges" (NetworkX format)
+    if "links" in graph_data and "edges" not in graph_data:
+        graph_data["edges"] = graph_data.pop("links")
+
     graph = json_graph.node_link_graph(graph_data, directed=True)
 
     print("Loading enriched reading list with k-core data...")
@@ -118,40 +123,40 @@ def create_kcore_visualization():
 <meta charset="utf-8">
 <title>Citation Network by K-Core Shell</title>
 <style>
-  body {{
+  body {{{{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     margin: 0;
     padding: 20px;
     background: #0a0a1a;
     color: #e0e0e0;
-  }}
-  h1 {{
+  }}}}
+  h1 {{{{
     margin-top: 0;
-  }}
-  #viz {{
+  }}}}
+  #viz {{{{
     border: 1px solid #2a2a4a;
     border-radius: 6px;
     background: #0a0a1a;
     width: 100%;
     height: 800px;
-  }}
-  .legend {{
+  }}}}
+  .legend {{{{
     margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-  }}
-  .legend-item {{
+  }}}}
+  .legend-item {{{{
     display: flex;
     align-items: center;
     gap: 8px;
-  }}
-  .legend-color {{
+  }}}}
+  .legend-color {{{{
     width: 16px;
     height: 16px;
     border-radius: 3px;
-  }}
-  .info {{
+  }}}}
+  .info {{{{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -162,14 +167,14 @@ def create_kcore_visualization():
     max-width: 300px;
     font-size: 12px;
     z-index: 10;
-  }}
-  .controls {{
+  }}}}
+  .controls {{{{
     margin: 20px 0;
-  }}
-  input[type="range"] {{
+  }}}}
+  input[type="range"] {{{{
     width: 200px;
     vertical-align: middle;
-  }}
+  }}}}
 </style>
 
 <h1>Citation Network: K-Core Decomposition</h1>
@@ -221,7 +226,7 @@ def create_kcore_visualization():
 
 <script src="https://d3js.org/d3.v7.min.js"><\/script>
 <script>
-const data = {
+const data = {{
   nodes: {json.dumps(nodes)},
   links: {json.dumps(links)}
 }};

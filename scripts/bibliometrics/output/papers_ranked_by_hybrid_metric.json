@@ -1,0 +1,3502 @@
+[
+  {
+    "rank": 1,
+    "openalex_id": "https://openalex.org/W2905110430",
+    "title": "Random Graphs",
+    "year": 1985,
+    "cited_by_count": 6168,
+    "kcore": 28,
+    "composite_score": 0.3384321811067051,
+    "combined_score": 0.9466
+  },
+  {
+    "rank": 2,
+    "openalex_id": "https://openalex.org/W2962725064",
+    "title": "Task-Based Core-Periphery Organization of Human Brain Dynamics",
+    "year": 2013,
+    "cited_by_count": 375,
+    "kcore": 32,
+    "composite_score": null,
+    "combined_score": 0.7
+  },
+  {
+    "rank": 3,
+    "openalex_id": "https://openalex.org/W2794272206",
+    "title": "Clustering Coefficients for Correlation Networks",
+    "year": 2018,
+    "cited_by_count": 122,
+    "kcore": 32,
+    "composite_score": null,
+    "combined_score": 0.7
+  },
+  {
+    "rank": 4,
+    "openalex_id": "https://openalex.org/W2039112885",
+    "title": "The human connectome: Origins and challenges",
+    "year": 2013,
+    "cited_by_count": 437,
+    "kcore": 30,
+    "composite_score": null,
+    "combined_score": 0.6742
+  },
+  {
+    "rank": 5,
+    "openalex_id": "https://openalex.org/W761823288",
+    "title": "The influence of construction methodology on structural brain network measures: A review",
+    "year": 2015,
+    "cited_by_count": 106,
+    "kcore": 30,
+    "composite_score": null,
+    "combined_score": 0.6742
+  },
+  {
+    "rank": 6,
+    "openalex_id": "https://openalex.org/W4221106502",
+    "title": "Homophilic wiring principles underpin neuronal network topology <i>in vitro</i>",
+    "year": 2022,
+    "cited_by_count": 28,
+    "kcore": 29,
+    "composite_score": null,
+    "combined_score": 0.6613
+  },
+  {
+    "rank": 7,
+    "openalex_id": "https://openalex.org/W2615397937",
+    "title": "Understanding principles of integration and segregation using whole-brain computational connectomics: implications for neuropsychiatric disorders",
+    "year": 2017,
+    "cited_by_count": 181,
+    "kcore": 28,
+    "composite_score": null,
+    "combined_score": 0.6484
+  },
+  {
+    "rank": 8,
+    "openalex_id": "https://openalex.org/W2030574287",
+    "title": "Brain network local interconnectivity loss in aging<i>APOE</i>-4 allele carriers",
+    "year": 2011,
+    "cited_by_count": 176,
+    "kcore": 27,
+    "composite_score": null,
+    "combined_score": 0.6355
+  },
+  {
+    "rank": 9,
+    "openalex_id": "https://openalex.org/W3123947939",
+    "title": "A Whole-Cortex Probabilistic Diffusion Tractography Connectome",
+    "year": 2021,
+    "cited_by_count": 75,
+    "kcore": 26,
+    "composite_score": null,
+    "combined_score": 0.6226
+  },
+  {
+    "rank": 10,
+    "openalex_id": "https://openalex.org/W4391654522",
+    "title": "Driver lines for studying associative learning in Drosophila",
+    "year": 2024,
+    "cited_by_count": 5,
+    "kcore": 26,
+    "composite_score": null,
+    "combined_score": 0.6226
+  },
+  {
+    "rank": 11,
+    "openalex_id": "https://openalex.org/W3210218431",
+    "title": "Advanced Technologies for Local Neural Circuits in the Cerebral Cortex",
+    "year": 2021,
+    "cited_by_count": 4,
+    "kcore": 26,
+    "composite_score": null,
+    "combined_score": 0.6226
+  },
+  {
+    "rank": 12,
+    "openalex_id": "https://openalex.org/W1587124315",
+    "title": "Challenges of microtome\u2010based serial block\u2010face scanning electron microscopy in neuroscience",
+    "year": 2015,
+    "cited_by_count": 70,
+    "kcore": 25,
+    "composite_score": null,
+    "combined_score": 0.6097
+  },
+  {
+    "rank": 13,
+    "openalex_id": "https://openalex.org/W4377564881",
+    "title": "Neuroscience Needs Network Science",
+    "year": 2023,
+    "cited_by_count": 85,
+    "kcore": 25,
+    "composite_score": null,
+    "combined_score": 0.6097
+  },
+  {
+    "rank": 14,
+    "openalex_id": "https://openalex.org/W2951795510",
+    "title": "Ciftify: A framework for surface-based analysis of legacy MR acquisitions",
+    "year": 2019,
+    "cited_by_count": 174,
+    "kcore": 24,
+    "composite_score": null,
+    "combined_score": 0.5848
+  },
+  {
+    "rank": 15,
+    "openalex_id": "https://openalex.org/W4283384540",
+    "title": "From calcium imaging to graph topology",
+    "year": 2022,
+    "cited_by_count": 13,
+    "kcore": 24,
+    "composite_score": null,
+    "combined_score": 0.5848
+  },
+  {
+    "rank": 16,
+    "openalex_id": "https://openalex.org/W2153624566",
+    "title": "Network Motifs: Simple Building Blocks of Complex Networks",
+    "year": 2002,
+    "cited_by_count": 7360,
+    "kcore": 32,
+    "composite_score": 0.09797045307777846,
+    "combined_score": 0.5636
+  },
+  {
+    "rank": 17,
+    "openalex_id": "https://openalex.org/W1952174810",
+    "title": "Toward a standardized structural\u2013functional group connectome in MNI space",
+    "year": 2015,
+    "cited_by_count": 104,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 18,
+    "openalex_id": "https://openalex.org/W7118211023",
+    "title": "A dedicated brain circuit controls forward walking in <i>Drosophila</i>",
+    "year": 2026,
+    "cited_by_count": 0,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 19,
+    "openalex_id": "https://openalex.org/W4410189222",
+    "title": "Light-microscopy-based connectomic reconstruction of mammalian brain tissue",
+    "year": 2025,
+    "cited_by_count": 34,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 20,
+    "openalex_id": "https://openalex.org/W4394873049",
+    "title": "Expanding boundaries \u2013 a cell biologist's guide to expansion microscopy",
+    "year": 2024,
+    "cited_by_count": 30,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 21,
+    "openalex_id": "https://openalex.org/W4205809079",
+    "title": "Towards a Comprehensive Optical Connectome at Single Synapse Resolution via Expansion Microscopy",
+    "year": 2022,
+    "cited_by_count": 13,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 22,
+    "openalex_id": "https://openalex.org/W3161983246",
+    "title": "Nanoscale resolution imaging of the whole mouse embryos and larval zebrafish using expansion microscopy",
+    "year": 2021,
+    "cited_by_count": 33,
+    "kcore": 23,
+    "composite_score": null,
+    "combined_score": 0.5599
+  },
+  {
+    "rank": 23,
+    "openalex_id": "https://openalex.org/W4411275288",
+    "title": "Neural substrates of cold nociception in Drosophila larva",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 22,
+    "composite_score": null,
+    "combined_score": 0.535
+  },
+  {
+    "rank": 24,
+    "openalex_id": "https://openalex.org/W2058046532",
+    "title": "Automated Anatomical Labeling of Activations in SPM Using a Macroscopic Anatomical Parcellation of the MNI MRI Single-Subject Brain",
+    "year": 2002,
+    "cited_by_count": 16610,
+    "kcore": 32,
+    "composite_score": 0.07529080237379468,
+    "combined_score": 0.5226
+  },
+  {
+    "rank": 25,
+    "openalex_id": "https://openalex.org/W2807269390",
+    "title": "Accelerated intermittent theta burst stimulation in major depression induces decreases in modularity: A connectome analysis",
+    "year": 2018,
+    "cited_by_count": 34,
+    "kcore": 21,
+    "composite_score": null,
+    "combined_score": 0.5101
+  },
+  {
+    "rank": 26,
+    "openalex_id": "https://openalex.org/W2162615325",
+    "title": "PANDA: a pipeline toolbox for analyzing brain diffusion images",
+    "year": 2013,
+    "cited_by_count": 760,
+    "kcore": 21,
+    "composite_score": null,
+    "combined_score": 0.5101
+  },
+  {
+    "rank": 27,
+    "openalex_id": "https://openalex.org/W2130246912",
+    "title": "Structural connectivity based whole brain modelling in epilepsy",
+    "year": 2014,
+    "cited_by_count": 68,
+    "kcore": 21,
+    "composite_score": null,
+    "combined_score": 0.5101
+  },
+  {
+    "rank": 28,
+    "openalex_id": "https://openalex.org/W2911723462",
+    "title": "Three-Dimensional and Chemical Mapping of Intracellular Signaling Nanodomains in Health and Disease with Enhanced Expansion Microscopy",
+    "year": 2019,
+    "cited_by_count": 45,
+    "kcore": 21,
+    "composite_score": null,
+    "combined_score": 0.5101
+  },
+  {
+    "rank": 29,
+    "openalex_id": "https://openalex.org/W4223480446",
+    "title": "Blind demixing methods for recovering dense neuronal morphology from barcode imaging data",
+    "year": 2022,
+    "cited_by_count": 4,
+    "kcore": 21,
+    "composite_score": null,
+    "combined_score": 0.5101
+  },
+  {
+    "rank": 30,
+    "openalex_id": "https://openalex.org/W2156737316",
+    "title": "Specificity and Stability in Topology of Protein Networks",
+    "year": 2002,
+    "cited_by_count": 3071,
+    "kcore": 32,
+    "composite_score": 0.06530095551837087,
+    "combined_score": 0.5045
+  },
+  {
+    "rank": 31,
+    "openalex_id": "https://openalex.org/W2794495549",
+    "title": "The logic of single-cell projections from visual cortex",
+    "year": 2018,
+    "cited_by_count": 336,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 32,
+    "openalex_id": "https://openalex.org/W2150009200",
+    "title": "The Neural Architecture of the Language Comprehension Network: Converging Evidence from Lesion and Connectivity Analyses",
+    "year": 2011,
+    "cited_by_count": 1037,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 33,
+    "openalex_id": "https://openalex.org/W2330532773",
+    "title": "Clarifying Human White Matter",
+    "year": 2016,
+    "cited_by_count": 139,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 34,
+    "openalex_id": "https://openalex.org/W2057138653",
+    "title": "Functional segmentation of the brain cortex using high model order group PICA",
+    "year": 2009,
+    "cited_by_count": 383,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 35,
+    "openalex_id": "https://openalex.org/W1743269311",
+    "title": "Rich club analysis in the Alzheimer's disease connectome reveals a relatively undisturbed structural core network",
+    "year": 2015,
+    "cited_by_count": 141,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 36,
+    "openalex_id": "https://openalex.org/W2890996272",
+    "title": "Benchmarking functional connectome-based predictive models for resting-state fMRI",
+    "year": 2019,
+    "cited_by_count": 358,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 37,
+    "openalex_id": "https://openalex.org/W4407577144",
+    "title": "What Drosophila can tell us about state-dependent peptidergic signaling in insects",
+    "year": 2025,
+    "cited_by_count": 9,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 38,
+    "openalex_id": "https://openalex.org/W4417363318",
+    "title": "Differential modulation of feedforward inhibition reflects topographic organization in the olfactory system",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 39,
+    "openalex_id": "https://openalex.org/W2949501662",
+    "title": "Presynaptic LRP4 promotes synapse number and function of excitatory CNS neurons",
+    "year": 2017,
+    "cited_by_count": 67,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 40,
+    "openalex_id": "https://openalex.org/W4383535022",
+    "title": "Expanded vacuum-stable gels for multiplexed high-resolution spatial histopathology",
+    "year": 2023,
+    "cited_by_count": 23,
+    "kcore": 20,
+    "composite_score": null,
+    "combined_score": 0.4852
+  },
+  {
+    "rank": 41,
+    "openalex_id": "https://openalex.org/W3013136515",
+    "title": "Transfer Learning Analysis of Image Processing Workflows for Electron Microscopy Datasets",
+    "year": 2019,
+    "cited_by_count": 2,
+    "kcore": 19,
+    "composite_score": null,
+    "combined_score": 0.4603
+  },
+  {
+    "rank": 42,
+    "openalex_id": "https://openalex.org/W4319663634",
+    "title": "A Visual Interface for Exploring Hypotheses About Neural Circuits",
+    "year": 2023,
+    "cited_by_count": 8,
+    "kcore": 19,
+    "composite_score": null,
+    "combined_score": 0.4603
+  },
+  {
+    "rank": 43,
+    "openalex_id": "https://openalex.org/W2622807797",
+    "title": "Symmetry Breaking in Space-Time Hierarchies Shapes Brain Dynamics and Behavior",
+    "year": 2017,
+    "cited_by_count": 140,
+    "kcore": 19,
+    "composite_score": null,
+    "combined_score": 0.4603
+  },
+  {
+    "rank": 44,
+    "openalex_id": "https://openalex.org/W3094044834",
+    "title": "Dissecting Neuronal Activation on a Brain-Wide Scale With Immediate Early Genes",
+    "year": 2020,
+    "cited_by_count": 42,
+    "kcore": 19,
+    "composite_score": null,
+    "combined_score": 0.4603
+  },
+  {
+    "rank": 45,
+    "openalex_id": "https://openalex.org/W3131776733",
+    "title": "A multi-scale brain map derived from whole-brain volumetric reconstructions",
+    "year": 2021,
+    "cited_by_count": 127,
+    "kcore": 23,
+    "composite_score": 0.09404725168684253,
+    "combined_score": 0.4404
+  },
+  {
+    "rank": 46,
+    "openalex_id": "https://openalex.org/W3105396174",
+    "title": "Toward an Automated HPC Pipeline for Processing Large Scale Electron Microscopy Data",
+    "year": 2020,
+    "cited_by_count": 11,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 47,
+    "openalex_id": "https://openalex.org/W2591303174",
+    "title": "Brain correlates of hypnosis: A systematic review and meta-analytic exploration",
+    "year": 2017,
+    "cited_by_count": 296,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 48,
+    "openalex_id": "https://openalex.org/W2803095812",
+    "title": "Consistency and differences between centrality measures across distinct classes of networks",
+    "year": 2019,
+    "cited_by_count": 306,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 49,
+    "openalex_id": "https://openalex.org/W4404395552",
+    "title": "Biased cell adhesion organizes the Drosophila visual motion integration circuit",
+    "year": 2024,
+    "cited_by_count": 11,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 50,
+    "openalex_id": "https://openalex.org/W7128680969",
+    "title": "Proprioceptive limit detectors contribute to sensorimotor control of the Drosophila leg",
+    "year": 2026,
+    "cited_by_count": 1,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 51,
+    "openalex_id": "https://openalex.org/W4400477646",
+    "title": "Reviewer #2 (Public Review): Whole-body connectome of a segmented annelid larva",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 52,
+    "openalex_id": "https://openalex.org/W4410771965",
+    "title": "Mating status-dependent dopaminergic modulation of auditory sensory neurons in <i>Drosophila</i>",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 53,
+    "openalex_id": "https://openalex.org/W4408147523",
+    "title": "Decoding neuronal wiring by joint inference of cell identity and synaptic connectivity",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 54,
+    "openalex_id": "https://openalex.org/W1570094373",
+    "title": "Fluorescent-Protein Stabilization and High-Resolution Imaging of Cleared, Intact Mouse Brains",
+    "year": 2015,
+    "cited_by_count": 176,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 55,
+    "openalex_id": "https://openalex.org/W4379471030",
+    "title": "Far-field super-resolution chemical microscopy",
+    "year": 2023,
+    "cited_by_count": 26,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 56,
+    "openalex_id": "https://openalex.org/W2167739898",
+    "title": "Directional <i>Trans</i>-Synaptic Labeling of Specific Neuronal Connections in Live Animals",
+    "year": 2015,
+    "cited_by_count": 39,
+    "kcore": 18,
+    "composite_score": null,
+    "combined_score": 0.4353
+  },
+  {
+    "rank": 57,
+    "openalex_id": "https://openalex.org/W3007736625",
+    "title": "Linking Structure and Function in Macroscale Brain Networks",
+    "year": 2020,
+    "cited_by_count": 841,
+    "kcore": 30,
+    "composite_score": 0.040254605585824166,
+    "combined_score": 0.4335
+  },
+  {
+    "rank": 58,
+    "openalex_id": "https://openalex.org/W3125011419",
+    "title": "Expansion sequencing: Spatially precise in situ transcriptomics in intact biological systems",
+    "year": 2021,
+    "cited_by_count": 398,
+    "kcore": 22,
+    "composite_score": 0.09714867409286793,
+    "combined_score": 0.4331
+  },
+  {
+    "rank": 59,
+    "openalex_id": "https://openalex.org/W2136435696",
+    "title": "<i>The Brain's Default Network</i>",
+    "year": 2008,
+    "cited_by_count": 9731,
+    "kcore": 30,
+    "composite_score": 0.03940507822518163,
+    "combined_score": 0.4319
+  },
+  {
+    "rank": 60,
+    "openalex_id": "https://openalex.org/W2136395604",
+    "title": "Whole-brain anatomical networks: Does the choice of nodes matter?",
+    "year": 2009,
+    "cited_by_count": 1200,
+    "kcore": 32,
+    "composite_score": 0.01875854550512509,
+    "combined_score": 0.4204
+  },
+  {
+    "rank": 61,
+    "openalex_id": "https://openalex.org/W2026384313",
+    "title": "Graph theoretical analysis of complex networks in the brain",
+    "year": 2007,
+    "cited_by_count": 1038,
+    "kcore": 32,
+    "composite_score": 0.014298277668871193,
+    "combined_score": 0.4124
+  },
+  {
+    "rank": 62,
+    "openalex_id": "https://openalex.org/W2889488215",
+    "title": "Overall survival time prediction for high-grade glioma patients based on large-scale brain functional networks",
+    "year": 2018,
+    "cited_by_count": 57,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 63,
+    "openalex_id": "https://openalex.org/W1534964070",
+    "title": "Cerebral network disorders after stroke: evidence from imaging\u2010based connectivity analyses of active and resting brain states in humans",
+    "year": 2012,
+    "cited_by_count": 295,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 64,
+    "openalex_id": "https://openalex.org/W2170460437",
+    "title": "Comparing surface-based and volume-based analyses of functional neuroimaging data in patients with schizophrenia",
+    "year": 2008,
+    "cited_by_count": 132,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 65,
+    "openalex_id": "https://openalex.org/W2135671625",
+    "title": "Imaging retinotopic maps in the human brain",
+    "year": 2010,
+    "cited_by_count": 403,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 66,
+    "openalex_id": "https://openalex.org/W4388673710",
+    "title": "Interactions between specialized gain control mechanisms in olfactory processing",
+    "year": 2023,
+    "cited_by_count": 16,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 67,
+    "openalex_id": "https://openalex.org/W4293753524",
+    "title": "The Nature of Complex Networks",
+    "year": 2022,
+    "cited_by_count": 61,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 68,
+    "openalex_id": "https://openalex.org/W2336631630",
+    "title": "Energy scaling and reduction in controlling complex networks",
+    "year": 2016,
+    "cited_by_count": 55,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 69,
+    "openalex_id": "https://openalex.org/W2092322785",
+    "title": "Targeting the dynamics of complex networks",
+    "year": 2012,
+    "cited_by_count": 54,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 70,
+    "openalex_id": "https://openalex.org/W2756106833",
+    "title": "UbasM: An effective balanced optical clearing method for intact biomedical imaging",
+    "year": 2017,
+    "cited_by_count": 77,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 71,
+    "openalex_id": "https://openalex.org/W4382918237",
+    "title": "Fibration symmetries and cluster synchronization in the Caenorhabditis elegans connectome",
+    "year": 2024,
+    "cited_by_count": 5,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 72,
+    "openalex_id": "https://openalex.org/W4313362073",
+    "title": "Modeling the Evolution of Biological Neural Networks Based on Caenorhabditis elegans Connectomes across Development",
+    "year": 2022,
+    "cited_by_count": 5,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 73,
+    "openalex_id": "https://openalex.org/W2559998841",
+    "title": "Three Small-Receptive-Field Ganglion Cells in the Mouse Retina Are Distinctly Tuned to Size, Speed, and Object Motion",
+    "year": 2016,
+    "cited_by_count": 98,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 74,
+    "openalex_id": "https://openalex.org/W2761972343",
+    "title": "Local processing in neurites of VGluT3-expressing amacrine cells differentially organizes visual information",
+    "year": 2017,
+    "cited_by_count": 31,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 75,
+    "openalex_id": "https://openalex.org/W2885666142",
+    "title": "Neural Mechanisms of Motion Processing in the Mammalian Retina",
+    "year": 2018,
+    "cited_by_count": 125,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 76,
+    "openalex_id": "https://openalex.org/W4386086198",
+    "title": "A circuit suppressing retinal drive to the optokinetic system during fast image motion",
+    "year": 2023,
+    "cited_by_count": 30,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 77,
+    "openalex_id": "https://openalex.org/W1898957235",
+    "title": "Functional Circuitry of the Retina",
+    "year": 2015,
+    "cited_by_count": 217,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 78,
+    "openalex_id": "https://openalex.org/W2593098328",
+    "title": "Connectomics of synaptic microcircuits: lessons from the outer retina",
+    "year": 2017,
+    "cited_by_count": 9,
+    "kcore": 17,
+    "composite_score": null,
+    "combined_score": 0.4104
+  },
+  {
+    "rank": 79,
+    "openalex_id": "https://openalex.org/W2064440086",
+    "title": "Objective analysis of the topological organization of the primate cortical visual system",
+    "year": 1992,
+    "cited_by_count": 471,
+    "kcore": 27,
+    "composite_score": 0.046897803974841654,
+    "combined_score": 0.4068
+  },
+  {
+    "rank": 80,
+    "openalex_id": "https://openalex.org/W1983208069",
+    "title": "The minimal preprocessing pipelines for the Human Connectome Project",
+    "year": 2013,
+    "cited_by_count": 5762,
+    "kcore": 27,
+    "composite_score": 0.03950360198410886,
+    "combined_score": 0.3934
+  },
+  {
+    "rank": 81,
+    "openalex_id": "https://openalex.org/W2056518369",
+    "title": "Bioimage Informatics in the context of Drosophila research",
+    "year": 2014,
+    "cited_by_count": 24,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 82,
+    "openalex_id": "https://openalex.org/W4399495385",
+    "title": "Unveiling universal aspects of the cellular anatomy of the brain",
+    "year": 2024,
+    "cited_by_count": 11,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 83,
+    "openalex_id": "https://openalex.org/W4286008945",
+    "title": "One-to-one mapping between deep network units and real neurons uncovers a visual population code for social behavior",
+    "year": 2022,
+    "cited_by_count": 12,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 84,
+    "openalex_id": "https://openalex.org/W4311781579",
+    "title": "Structural and functional imaging of brains",
+    "year": 2022,
+    "cited_by_count": 32,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 85,
+    "openalex_id": "https://openalex.org/W4281634929",
+    "title": "Cross-modality synthesis of EM time series and live fluorescence imaging",
+    "year": 2022,
+    "cited_by_count": 11,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 86,
+    "openalex_id": "https://openalex.org/W3214523109",
+    "title": "Structural Analysis of the Caenorhabditis elegans Dauer Larval Anterior Sensilla by Focused Ion Beam-Scanning Electron Microscopy",
+    "year": 2021,
+    "cited_by_count": 17,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 87,
+    "openalex_id": "https://openalex.org/W2808598853",
+    "title": "Stimulus-dependent engagement of neural mechanisms for reliable motion detection in the mouse retina",
+    "year": 2018,
+    "cited_by_count": 17,
+    "kcore": 16,
+    "composite_score": null,
+    "combined_score": 0.3855
+  },
+  {
+    "rank": 88,
+    "openalex_id": "https://openalex.org/W1902393076",
+    "title": "Integration of a high\u2010NA light microscope in a scanning electron microscope",
+    "year": 2013,
+    "cited_by_count": 87,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 89,
+    "openalex_id": "https://openalex.org/W2914880800",
+    "title": "Reconstruction of 1,000 projection neurons reveals new cell types and organization of long-range connectivity in the mouse brain",
+    "year": 2019,
+    "cited_by_count": 61,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 90,
+    "openalex_id": "https://openalex.org/W200594673",
+    "title": "Bridging Microscopes",
+    "year": 2012,
+    "cited_by_count": 67,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 91,
+    "openalex_id": "https://openalex.org/W2184883188",
+    "title": "Reconstruction, Electron Microscopy",
+    "year": 2015,
+    "cited_by_count": 0,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 92,
+    "openalex_id": "https://openalex.org/W2105034316",
+    "title": "RESTORE: Robust estimation of tensors by outlier rejection",
+    "year": 2005,
+    "cited_by_count": 634,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 93,
+    "openalex_id": "https://openalex.org/W4414573403",
+    "title": "Visual circuitry for distance estimation in Drosophila",
+    "year": 2025,
+    "cited_by_count": 2,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 94,
+    "openalex_id": "https://openalex.org/W3215403303",
+    "title": "The conserved core of the nereid brain: Circular CNS, apical nervous system and lhx6-arx-dlx neurons",
+    "year": 2021,
+    "cited_by_count": 36,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 95,
+    "openalex_id": "https://openalex.org/W2809668524",
+    "title": "The State of the NIH BRAIN Initiative",
+    "year": 2018,
+    "cited_by_count": 76,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 96,
+    "openalex_id": "https://openalex.org/W2794081436",
+    "title": "Next generation histology methods for three-dimensional imaging of fresh and archival human brain tissues",
+    "year": 2018,
+    "cited_by_count": 142,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 97,
+    "openalex_id": "https://openalex.org/W3043662900",
+    "title": "Using Expansion Microscopy to Visualize and Characterize the Morphology of Mitochondrial Cristae",
+    "year": 2020,
+    "cited_by_count": 22,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 98,
+    "openalex_id": "https://openalex.org/W4387107858",
+    "title": "A single neuron in C.\u00a0elegans orchestrates multiple motor outputs through parallel modes of transmission",
+    "year": 2023,
+    "cited_by_count": 29,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 99,
+    "openalex_id": "https://openalex.org/W4400931903",
+    "title": "Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous Systems",
+    "year": 2024,
+    "cited_by_count": 3,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 100,
+    "openalex_id": "https://openalex.org/W4315631803",
+    "title": "Synaptogenesis: unmasking molecular mechanisms using <i>Caenorhabditis elegans</i>",
+    "year": 2023,
+    "cited_by_count": 28,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 101,
+    "openalex_id": "https://openalex.org/W2397405284",
+    "title": "Retinal Circuitry Balances Contrast Tuning of Excitation and Inhibition to Enable Reliable Computation of Direction Selectivity",
+    "year": 2016,
+    "cited_by_count": 54,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 102,
+    "openalex_id": "https://openalex.org/W4200081697",
+    "title": "Cholinergic feedback to bipolar cells contributes to motion detection in the mouse retina",
+    "year": 2021,
+    "cited_by_count": 34,
+    "kcore": 15,
+    "composite_score": null,
+    "combined_score": 0.3606
+  },
+  {
+    "rank": 103,
+    "openalex_id": "https://openalex.org/W4223892272",
+    "title": "All-optical visualization of specific molecules in the ultrastructural context of brain tissue",
+    "year": 2022,
+    "cited_by_count": 38,
+    "kcore": 23,
+    "composite_score": 0.03698928940793746,
+    "combined_score": 0.3372
+  },
+  {
+    "rank": 104,
+    "openalex_id": "https://openalex.org/W4295873325",
+    "title": "RoboEM: automated 3D flight tracing for synaptic-resolution connectomics",
+    "year": 2022,
+    "cited_by_count": 7,
+    "kcore": 26,
+    "composite_score": 0.014869306763731154,
+    "combined_score": 0.336
+  },
+  {
+    "rank": 105,
+    "openalex_id": "https://openalex.org/W2887758323",
+    "title": "High-resolution synchrotron-based X-ray microtomography as a tool to unveil the three-dimensional neuronal architecture of the brain",
+    "year": 2018,
+    "cited_by_count": 54,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 106,
+    "openalex_id": "https://openalex.org/W4280606479",
+    "title": "On the prediction of human intelligence from neuroimaging: A systematic review of methods and reporting",
+    "year": 2022,
+    "cited_by_count": 61,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 107,
+    "openalex_id": "https://openalex.org/W4415585926",
+    "title": "A neural circuit for context-dependent multimodal signaling in Drosophila",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 108,
+    "openalex_id": "https://openalex.org/W4406059876",
+    "title": "Theory of morphodynamic information processing: Linking sensing to behaviour",
+    "year": 2025,
+    "cited_by_count": 6,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 109,
+    "openalex_id": "https://openalex.org/W4407581365",
+    "title": "The Synaptic Complexity of a High\u2010Integration Lobula Giant Neuron in Crabs",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 110,
+    "openalex_id": "https://openalex.org/W2743770531",
+    "title": "Subcellular reorganization and altered phosphorylation of the astrocytic gap junction protein connexin43 in human and experimental temporal lobe epilepsy",
+    "year": 2017,
+    "cited_by_count": 86,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 111,
+    "openalex_id": "https://openalex.org/W4411964605",
+    "title": "Mining neural connectivity via spatiotemporal features of neural calcium activity data",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 14,
+    "composite_score": null,
+    "combined_score": 0.3357
+  },
+  {
+    "rank": 112,
+    "openalex_id": "https://openalex.org/W3128928323",
+    "title": "Transsynaptic mapping of Drosophila mushroom body output neurons",
+    "year": 2021,
+    "cited_by_count": 62,
+    "kcore": 26,
+    "composite_score": 0.010651771503866855,
+    "combined_score": 0.3283
+  },
+  {
+    "rank": 113,
+    "openalex_id": "https://openalex.org/W2621790546",
+    "title": "Rich cell-type-specific network topology in neocortical microcircuitry",
+    "year": 2017,
+    "cited_by_count": 198,
+    "kcore": 26,
+    "composite_score": 0.009329252355624507,
+    "combined_score": 0.326
+  },
+  {
+    "rank": 114,
+    "openalex_id": "https://openalex.org/W3029650759",
+    "title": "Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types",
+    "year": 2020,
+    "cited_by_count": 346,
+    "kcore": 17,
+    "composite_score": 0.07339917709039512,
+    "combined_score": 0.3256
+  },
+  {
+    "rank": 115,
+    "openalex_id": "https://openalex.org/W4391365091",
+    "title": "Nested neural circuits generate distinct acoustic signals during Drosophila courtship",
+    "year": 2024,
+    "cited_by_count": 54,
+    "kcore": 26,
+    "composite_score": 0.008035352649689291,
+    "combined_score": 0.3236
+  },
+  {
+    "rank": 116,
+    "openalex_id": "https://openalex.org/W4288010040",
+    "title": "A scalable and modular automated pipeline for stitching of large electron microscopy datasets",
+    "year": 2022,
+    "cited_by_count": 62,
+    "kcore": 23,
+    "composite_score": 0.02671290338533252,
+    "combined_score": 0.3187
+  },
+  {
+    "rank": 117,
+    "openalex_id": "https://openalex.org/W2033865518",
+    "title": "Automated image computing reshapes computational neuroscience",
+    "year": 2013,
+    "cited_by_count": 25,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 118,
+    "openalex_id": "https://openalex.org/W4409292989",
+    "title": "A map of neural signals and circuits traces the logic of brain computation",
+    "year": 2025,
+    "cited_by_count": 4,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 119,
+    "openalex_id": "https://openalex.org/W2185640743",
+    "title": "Sex beyond the genitalia: The human brain mosaic",
+    "year": 2015,
+    "cited_by_count": 693,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 120,
+    "openalex_id": "https://openalex.org/W2155624710",
+    "title": "NeuroVault.org: a web-based repository for collecting and sharing unthresholded statistical maps of the human brain",
+    "year": 2015,
+    "cited_by_count": 646,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 121,
+    "openalex_id": "https://openalex.org/W4225124959",
+    "title": "The Neuronal Circuit of the Dorsal Circadian Clock Neurons in Drosophila melanogaster",
+    "year": 2022,
+    "cited_by_count": 45,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 122,
+    "openalex_id": "https://openalex.org/W4417123257",
+    "title": "Linking structure and function: biological insights from fly connectomes",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 123,
+    "openalex_id": "https://openalex.org/W3172635995",
+    "title": "Desmosomal connectomics of all somatic muscles in an annelid larva",
+    "year": 2021,
+    "cited_by_count": 0,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 124,
+    "openalex_id": "https://openalex.org/W2118089467",
+    "title": "Determining minimum set of driver nodes in protein-protein interaction networks",
+    "year": 2015,
+    "cited_by_count": 58,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 125,
+    "openalex_id": "https://openalex.org/W4361003919",
+    "title": "Single-molecule localization microscopy reveals the ultrastructural constitution of distal appendages in expanded mammalian centrioles",
+    "year": 2023,
+    "cited_by_count": 33,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 126,
+    "openalex_id": "https://openalex.org/W4415702440",
+    "title": "A positive feedback loop promotes the active internal state of the C. elegans egg-laying circuit",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 13,
+    "composite_score": null,
+    "combined_score": 0.3108
+  },
+  {
+    "rank": 127,
+    "openalex_id": "https://openalex.org/W2466406789",
+    "title": "Species-specific wiring for direction selectivity in the mammalian retina",
+    "year": 2016,
+    "cited_by_count": 270,
+    "kcore": 24,
+    "composite_score": 0.013034115001752418,
+    "combined_score": 0.3068
+  },
+  {
+    "rank": 128,
+    "openalex_id": "https://openalex.org/W4375858899",
+    "title": "High-contrast en bloc staining of mouse whole-brain and human brain samples for EM-based connectomics",
+    "year": 2023,
+    "cited_by_count": 30,
+    "kcore": 24,
+    "composite_score": 0.010355224527749965,
+    "combined_score": 0.302
+  },
+  {
+    "rank": 129,
+    "openalex_id": "https://openalex.org/W3029927751",
+    "title": "Feature-rich covalent stains for super-resolution and cleared tissue fluorescence microscopy",
+    "year": 2020,
+    "cited_by_count": 98,
+    "kcore": 21,
+    "composite_score": 0.029862827968771013,
+    "combined_score": 0.2986
+  },
+  {
+    "rank": 130,
+    "openalex_id": "https://openalex.org/W2058483899",
+    "title": "The Neuronal Organization of the Retina",
+    "year": 2012,
+    "cited_by_count": 1154,
+    "kcore": 20,
+    "composite_score": 0.035725250708096505,
+    "combined_score": 0.2962
+  },
+  {
+    "rank": 131,
+    "openalex_id": "https://openalex.org/W3178364274",
+    "title": "Label-retention expansion microscopy",
+    "year": 2021,
+    "cited_by_count": 81,
+    "kcore": 23,
+    "composite_score": 0.014055546095112137,
+    "combined_score": 0.2958
+  },
+  {
+    "rank": 132,
+    "openalex_id": "https://openalex.org/W4385926070",
+    "title": "Linking neural circuits to the mechanics of animal behavior in Drosophila larval locomotion",
+    "year": 2023,
+    "cited_by_count": 19,
+    "kcore": 23,
+    "composite_score": 0.009238737924893992,
+    "combined_score": 0.2871
+  },
+  {
+    "rank": 133,
+    "openalex_id": "https://openalex.org/W2769501787",
+    "title": "Expansion microscopy of zebrafish for neuroscience and developmental biology studies",
+    "year": 2017,
+    "cited_by_count": 99,
+    "kcore": 23,
+    "composite_score": 0.008873227152178293,
+    "combined_score": 0.2864
+  },
+  {
+    "rank": 134,
+    "openalex_id": "https://openalex.org/W4317866744",
+    "title": "Hierarchical architecture of dopaminergic circuits enables second-order conditioning in Drosophila",
+    "year": 2023,
+    "cited_by_count": 58,
+    "kcore": 23,
+    "composite_score": 0.008648439802735506,
+    "combined_score": 0.286
+  },
+  {
+    "rank": 135,
+    "openalex_id": "https://openalex.org/W3028311939",
+    "title": "Caesar: Segment-Wise Alignment Method for Solving Discontinuous Deformations",
+    "year": 2020,
+    "cited_by_count": 6,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 136,
+    "openalex_id": "https://openalex.org/W4212929379",
+    "title": "Quantum Neurobiology",
+    "year": 2022,
+    "cited_by_count": 12,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 137,
+    "openalex_id": "https://openalex.org/W2009125262",
+    "title": "Circuit Neuroscience in Zebrafish",
+    "year": 2010,
+    "cited_by_count": 220,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 138,
+    "openalex_id": "https://openalex.org/W2734952001",
+    "title": "The Neuroscience of Intelligence",
+    "year": 2016,
+    "cited_by_count": 197,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 139,
+    "openalex_id": "https://openalex.org/W3033878890",
+    "title": "FastSurfer - A fast and accurate deep learning based neuroimaging pipeline",
+    "year": 2020,
+    "cited_by_count": 618,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 140,
+    "openalex_id": "https://openalex.org/W4415481883",
+    "title": "Polyadic synapses introduce unique wiring architectures in T5 cells of Drosophila",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 141,
+    "openalex_id": "https://openalex.org/W4408168313",
+    "title": "Taking flight, the use of Drosophila melanogaster for neuroscience research in Uruguay",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 142,
+    "openalex_id": "https://openalex.org/W2752687826",
+    "title": "Information cascades in complex networks",
+    "year": 2017,
+    "cited_by_count": 243,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 143,
+    "openalex_id": "https://openalex.org/W1834582464",
+    "title": "Minimum input selection for structural controllability",
+    "year": 2015,
+    "cited_by_count": 71,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 144,
+    "openalex_id": "https://openalex.org/W4390047752",
+    "title": "Communities in C. elegans connectome through the prism of non-backtracking walks",
+    "year": 2023,
+    "cited_by_count": 6,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 145,
+    "openalex_id": "https://openalex.org/W4410288794",
+    "title": "Statistical mechanics for networks of real neurons",
+    "year": 2025,
+    "cited_by_count": 6,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 146,
+    "openalex_id": "https://openalex.org/W4410698762",
+    "title": "Neuromodulatory processing in the bi-pathway brain architecture",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 147,
+    "openalex_id": "https://openalex.org/W4392120454",
+    "title": "Learning dynamic representations of the functional connectome in neurobiological networks",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 148,
+    "openalex_id": "https://openalex.org/W2803718659",
+    "title": "The roles of supervised machine learning in systems neuroscience",
+    "year": 2019,
+    "cited_by_count": 151,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 149,
+    "openalex_id": "https://openalex.org/W2040259781",
+    "title": "Interplay of Cell-Autonomous and Nonautonomous Mechanisms Tailors Synaptic Connectivity of Converging Axons In\u00a0Vivo",
+    "year": 2014,
+    "cited_by_count": 81,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 150,
+    "openalex_id": "https://openalex.org/W2264331349",
+    "title": "Differential signalling and glutamate receptor compositions in the OFF bipolar cell types in the mouse retina",
+    "year": 2015,
+    "cited_by_count": 83,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 151,
+    "openalex_id": "https://openalex.org/W4386804852",
+    "title": "A cerebellar disinhibitory circuit supports synaptic plasticity",
+    "year": 2023,
+    "cited_by_count": 6,
+    "kcore": 12,
+    "composite_score": null,
+    "combined_score": 0.2859
+  },
+  {
+    "rank": 152,
+    "openalex_id": "https://openalex.org/W2991351351",
+    "title": "A Genetic Model of the Connectome",
+    "year": 2019,
+    "cited_by_count": 61,
+    "kcore": 23,
+    "composite_score": 0.00829304220269434,
+    "combined_score": 0.2854
+  },
+  {
+    "rank": 153,
+    "openalex_id": "https://openalex.org/W4313453891",
+    "title": "Magnify is a universal molecular anchoring strategy for expansion microscopy",
+    "year": 2023,
+    "cited_by_count": 126,
+    "kcore": 23,
+    "composite_score": 0.007898078070299295,
+    "combined_score": 0.2847
+  },
+  {
+    "rank": 154,
+    "openalex_id": "https://openalex.org/W2016397514",
+    "title": "Neuronal Cell Types and Connectivity: Lessons from the Retina",
+    "year": 2014,
+    "cited_by_count": 143,
+    "kcore": 23,
+    "composite_score": 0.007454421048204541,
+    "combined_score": 0.2839
+  },
+  {
+    "rank": 155,
+    "openalex_id": "https://openalex.org/W4286449197",
+    "title": "What is a cell type and how to define it?",
+    "year": 2022,
+    "cited_by_count": 424,
+    "kcore": 22,
+    "composite_score": 0.01407372488860829,
+    "combined_score": 0.2829
+  },
+  {
+    "rank": 156,
+    "openalex_id": "https://openalex.org/W4386697575",
+    "title": "Synaptic connectome of the <i>Drosophila</i> circadian clock",
+    "year": 2023,
+    "cited_by_count": 23,
+    "kcore": 20,
+    "composite_score": 0.02711614395297053,
+    "combined_score": 0.2807
+  },
+  {
+    "rank": 157,
+    "openalex_id": "https://openalex.org/W3109251618",
+    "title": "Nanoscale imaging of bacterial infections by sphingolipid expansion microscopy",
+    "year": 2020,
+    "cited_by_count": 78,
+    "kcore": 22,
+    "composite_score": 0.011553368635189635,
+    "combined_score": 0.2784
+  },
+  {
+    "rank": 158,
+    "openalex_id": "https://openalex.org/W2611412176",
+    "title": "Synaptic and peptidergic connectome of a neurosecretory center in the annelid brain",
+    "year": 2017,
+    "cited_by_count": 142,
+    "kcore": 22,
+    "composite_score": 0.007567725976117028,
+    "combined_score": 0.2712
+  },
+  {
+    "rank": 159,
+    "openalex_id": "https://openalex.org/W4309825836",
+    "title": "Oligodendrocyte precursor cells ingest axons in the mouse neocortex",
+    "year": 2022,
+    "cited_by_count": 135,
+    "kcore": 20,
+    "composite_score": 0.019851129324578342,
+    "combined_score": 0.2676
+  },
+  {
+    "rank": 160,
+    "openalex_id": "https://openalex.org/W3014773913",
+    "title": "Expansion Microscopy for Cell Biology Analysis in Fungi",
+    "year": 2020,
+    "cited_by_count": 52,
+    "kcore": 21,
+    "composite_score": 0.010756214137490467,
+    "combined_score": 0.264
+  },
+  {
+    "rank": 161,
+    "openalex_id": "https://openalex.org/W2145339207",
+    "title": "Human-level control through deep reinforcement learning",
+    "year": 2015,
+    "cited_by_count": 29167,
+    "kcore": 11,
+    "composite_score": 0.08213592313466314,
+    "combined_score": 0.264
+  },
+  {
+    "rank": 162,
+    "openalex_id": "https://openalex.org/W3035080083",
+    "title": "A brainwide atlas of synapses across the mouse life span",
+    "year": 2020,
+    "cited_by_count": 214,
+    "kcore": 11,
+    "composite_score": 0.08063375296720691,
+    "combined_score": 0.2613
+  },
+  {
+    "rank": 163,
+    "openalex_id": "https://openalex.org/W4376225645",
+    "title": "Data-Driven Morphological Feature Perception of Single Neuron With Graph Neural Network",
+    "year": 2023,
+    "cited_by_count": 13,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 164,
+    "openalex_id": "https://openalex.org/W4200394929",
+    "title": "Protocols for Generating Surfaces and Measuring 3D Organelle Morphology Using Amira",
+    "year": 2021,
+    "cited_by_count": 65,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 165,
+    "openalex_id": "https://openalex.org/W4410490286",
+    "title": "Inferring neural population codes for <i>Drosophila</i> acoustic communication",
+    "year": 2025,
+    "cited_by_count": 2,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 166,
+    "openalex_id": "https://openalex.org/W3017257927",
+    "title": "Retinal Mosaics Across Fly Species: Variations on a Theme",
+    "year": 2020,
+    "cited_by_count": 11,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 167,
+    "openalex_id": "https://openalex.org/W2035494988",
+    "title": "Towards real-world complexity: an introduction to multiplex networks",
+    "year": 2015,
+    "cited_by_count": 160,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 168,
+    "openalex_id": "https://openalex.org/W2598846857",
+    "title": "General features of inhibition in the inner retina",
+    "year": 2017,
+    "cited_by_count": 45,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 169,
+    "openalex_id": "https://openalex.org/W2804023749",
+    "title": "Rod and cone interactions in the retina",
+    "year": 2018,
+    "cited_by_count": 63,
+    "kcore": 11,
+    "composite_score": null,
+    "combined_score": 0.261
+  },
+  {
+    "rank": 170,
+    "openalex_id": "https://openalex.org/W1207903865",
+    "title": "Globally Optimal Closed-Surface Segmentation for Connectomics",
+    "year": 2012,
+    "cited_by_count": 101,
+    "kcore": 20,
+    "composite_score": 0.015151664473515212,
+    "combined_score": 0.2591
+  },
+  {
+    "rank": 171,
+    "openalex_id": "https://openalex.org/W2125910575",
+    "title": "Gephi: An Open Source Software for Exploring and Manipulating Networks",
+    "year": 2009,
+    "cited_by_count": 11089,
+    "kcore": 16,
+    "composite_score": 0.03450757913987379,
+    "combined_score": 0.2424
+  },
+  {
+    "rank": 172,
+    "openalex_id": "https://openalex.org/W4323566431",
+    "title": "Organoid intelligence (OI): the new frontier in biocomputing and intelligence-in-a-dish",
+    "year": 2023,
+    "cited_by_count": 243,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 173,
+    "openalex_id": "https://openalex.org/W2024665862",
+    "title": "Pattern Classification of Large-Scale Functional Brain Networks: Identification of Informative Neuroimaging Markers for Epilepsy",
+    "year": 2012,
+    "cited_by_count": 77,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 174,
+    "openalex_id": "https://openalex.org/W4292470408",
+    "title": "Origins of proprioceptor feature selectivity and topographic maps in the <i>Drosophila</i> leg",
+    "year": 2022,
+    "cited_by_count": 2,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 175,
+    "openalex_id": "https://openalex.org/W4400413957",
+    "title": "eLife Assessment: Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior in Drosophila larvae",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 176,
+    "openalex_id": "https://openalex.org/W4400413945",
+    "title": "Author response: Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior in Drosophila larvae",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 177,
+    "openalex_id": "https://openalex.org/W4296396035",
+    "title": "Fighting Flies: Quantifying and Analyzing<i>Drosophila</i>Aggression",
+    "year": 2023,
+    "cited_by_count": 2,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 178,
+    "openalex_id": "https://openalex.org/W2083826278",
+    "title": "Revealing networks from dynamics: an introduction",
+    "year": 2014,
+    "cited_by_count": 183,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 179,
+    "openalex_id": "https://openalex.org/W1994223414",
+    "title": "A Simple Method for 3D Analysis of Immunolabeled Axonal Tracts in a Transparent Nervous System",
+    "year": 2014,
+    "cited_by_count": 196,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 180,
+    "openalex_id": "https://openalex.org/W4401925926",
+    "title": "Mapping the developmental structure of stereotyped and individual-unique behavioral spaces in C.\u00a0elegans",
+    "year": 2024,
+    "cited_by_count": 10,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 181,
+    "openalex_id": "https://openalex.org/W3203433440",
+    "title": "Extrasynaptic signaling enables an asymmetric juvenile motor circuit to produce a symmetric undulation",
+    "year": 2021,
+    "cited_by_count": 1,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 182,
+    "openalex_id": "https://openalex.org/W2153674508",
+    "title": "General features of the retinal connectome determine the computation of motion anticipation",
+    "year": 2015,
+    "cited_by_count": 58,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 183,
+    "openalex_id": "https://openalex.org/W2896939252",
+    "title": "Synaptic circuits for irradiance coding by intrinsically photosensitive retinal ganglion cells",
+    "year": 2018,
+    "cited_by_count": 19,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 184,
+    "openalex_id": "https://openalex.org/W2976724692",
+    "title": "Retinal horizontal cells use different synaptic sites for global feedforward and local feedback signaling",
+    "year": 2019,
+    "cited_by_count": 4,
+    "kcore": 10,
+    "composite_score": null,
+    "combined_score": 0.2361
+  },
+  {
+    "rank": 185,
+    "openalex_id": "https://openalex.org/W2170723553",
+    "title": "Target control of complex networks",
+    "year": 2014,
+    "cited_by_count": 418,
+    "kcore": 18,
+    "composite_score": 0.011130501631729614,
+    "combined_score": 0.226
+  },
+  {
+    "rank": 186,
+    "openalex_id": "https://openalex.org/W1982821381",
+    "title": "Exact controllability of complex networks",
+    "year": 2013,
+    "cited_by_count": 568,
+    "kcore": 18,
+    "composite_score": 0.01013407008533403,
+    "combined_score": 0.2242
+  },
+  {
+    "rank": 187,
+    "openalex_id": "https://openalex.org/W2037084455",
+    "title": "Retinal bipolar cells: elementary building blocks of vision",
+    "year": 2014,
+    "cited_by_count": 556,
+    "kcore": 17,
+    "composite_score": 0.016029872042949315,
+    "combined_score": 0.2219
+  },
+  {
+    "rank": 188,
+    "openalex_id": "https://openalex.org/W2097722513",
+    "title": "Realistic control of network dynamics",
+    "year": 2013,
+    "cited_by_count": 357,
+    "kcore": 18,
+    "composite_score": 0.00883311798700042,
+    "combined_score": 0.2218
+  },
+  {
+    "rank": 189,
+    "openalex_id": "https://openalex.org/W2886628548",
+    "title": "Whole-neuron synaptic mapping reveals local balance between excitatory and inhibitory synapse organization",
+    "year": 2018,
+    "cited_by_count": 9,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 190,
+    "openalex_id": "https://openalex.org/W2739969873",
+    "title": "ChromEMT: Visualizing 3D chromatin structure and compaction in interphase and mitotic cells",
+    "year": 2017,
+    "cited_by_count": 897,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 191,
+    "openalex_id": "https://openalex.org/W2166279367",
+    "title": "Learning from the past and looking to the future: Emerging perspectives for improving the treatment of psychiatric disorders",
+    "year": 2015,
+    "cited_by_count": 131,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 192,
+    "openalex_id": "https://openalex.org/W3123309518",
+    "title": "A Cellular-Resolution Atlas of the Larval Zebrafish Brain",
+    "year": 2018,
+    "cited_by_count": 12,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 193,
+    "openalex_id": "https://openalex.org/W2066692087",
+    "title": "From link-prediction in brain connectomes and protein interactomes to the local-community-paradigm in complex networks",
+    "year": 2013,
+    "cited_by_count": 408,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 194,
+    "openalex_id": "https://openalex.org/W2513813309",
+    "title": "Spectral Entropies as Information-Theoretic Tools for Complex Network Comparison",
+    "year": 2016,
+    "cited_by_count": 157,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 195,
+    "openalex_id": "https://openalex.org/W2092917423",
+    "title": "The power to control",
+    "year": 2013,
+    "cited_by_count": 54,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 196,
+    "openalex_id": "https://openalex.org/W3215162076",
+    "title": "Multiview confocal super-resolution microscopy",
+    "year": 2021,
+    "cited_by_count": 117,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 197,
+    "openalex_id": "https://openalex.org/W4401429117",
+    "title": "Stimulated emission depletion microscopy",
+    "year": 2024,
+    "cited_by_count": 53,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 198,
+    "openalex_id": "https://openalex.org/W4387331590",
+    "title": "Expansion microscopy resolves the thylakoid structure of spinach",
+    "year": 2023,
+    "cited_by_count": 20,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 199,
+    "openalex_id": "https://openalex.org/W4395444784",
+    "title": "The Visual Systems of Zebrafish",
+    "year": 2024,
+    "cited_by_count": 33,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 200,
+    "openalex_id": "https://openalex.org/W4405710674",
+    "title": "Neurons and molecules involved in noxious light sensation in <i>Caenorhabditis elegans</i>",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 201,
+    "openalex_id": "https://openalex.org/W4392190004",
+    "title": "MetaWorm: An Integrative Data-Driven Model Simulating <i>C. elegans</i> Brain, Body and Environment Interactions",
+    "year": 2024,
+    "cited_by_count": 3,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 202,
+    "openalex_id": "https://openalex.org/W4404010246",
+    "title": "Hierarchical regulation of functionally antagonistic neuropeptides expressed in a single neuron pair",
+    "year": 2024,
+    "cited_by_count": 13,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 203,
+    "openalex_id": "https://openalex.org/W4309227567",
+    "title": "Brain-wide representations of behavior spanning multiple timescales and states in <i>C. elegans</i>",
+    "year": 2022,
+    "cited_by_count": 6,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 204,
+    "openalex_id": "https://openalex.org/W4385519683",
+    "title": "Specific configurations of electrical synapses filter sensory information to drive choices in behavior",
+    "year": 2023,
+    "cited_by_count": 2,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 205,
+    "openalex_id": "https://openalex.org/W3199290428",
+    "title": "Development and diversification of bipolar interneurons in the mammalian retina",
+    "year": 2021,
+    "cited_by_count": 36,
+    "kcore": 9,
+    "composite_score": null,
+    "combined_score": 0.2112
+  },
+  {
+    "rank": 206,
+    "openalex_id": "https://openalex.org/W4378602954",
+    "title": "Serial Block Face\u2010Scanning Electron Microscopy as a Burgeoning Technology",
+    "year": 2023,
+    "cited_by_count": 35,
+    "kcore": 17,
+    "composite_score": 0.009883732499389815,
+    "combined_score": 0.2108
+  },
+  {
+    "rank": 207,
+    "openalex_id": "https://openalex.org/W2024312356",
+    "title": "Excitatory Synaptic Inputs to Mouse On-Off Direction-Selective Retinal Ganglion Cells Lack Direction Tuning",
+    "year": 2014,
+    "cited_by_count": 84,
+    "kcore": 17,
+    "composite_score": 0.009017333312486456,
+    "combined_score": 0.2093
+  },
+  {
+    "rank": 208,
+    "openalex_id": "https://openalex.org/W3211786357",
+    "title": "Differential adhesion regulates neurite placement via a retrograde zippering mechanism",
+    "year": 2021,
+    "cited_by_count": 20,
+    "kcore": 17,
+    "composite_score": 0.00899501674410697,
+    "combined_score": 0.2092
+  },
+  {
+    "rank": 209,
+    "openalex_id": "https://openalex.org/W3012986867",
+    "title": "Data-driven control of complex networks",
+    "year": 2021,
+    "cited_by_count": 156,
+    "kcore": 17,
+    "composite_score": 0.008574417452378467,
+    "combined_score": 0.2085
+  },
+  {
+    "rank": 210,
+    "openalex_id": "https://openalex.org/W2064449994",
+    "title": "The Synaptic and Circuit Mechanisms Underlying a Change in Spatial Encoding in the Retina",
+    "year": 2014,
+    "cited_by_count": 140,
+    "kcore": 17,
+    "composite_score": 0.007814154543349201,
+    "combined_score": 0.2071
+  },
+  {
+    "rank": 211,
+    "openalex_id": "https://openalex.org/W3015422409",
+    "title": "Spaced Training Forms Complementary Long-Term Memories of Opposite Valence in Drosophila",
+    "year": 2020,
+    "cited_by_count": 116,
+    "kcore": 15,
+    "composite_score": 0.018132895544693522,
+    "combined_score": 0.1999
+  },
+  {
+    "rank": 212,
+    "openalex_id": "https://openalex.org/W4402797646",
+    "title": "niiv: Interactive Self-supervised Neural Implicit Isotropic Volume Reconstruction",
+    "year": 2024,
+    "cited_by_count": 2,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 213,
+    "openalex_id": "https://openalex.org/W4404580551",
+    "title": "Densely Populated Cell and Organelles Segmentation with U-Net Ensembles",
+    "year": 2024,
+    "cited_by_count": 1,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 214,
+    "openalex_id": "https://openalex.org/W4412970320",
+    "title": "\u2018Backpropagation and the brain\u2019 realized in cortical error neuron microcircuits",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 215,
+    "openalex_id": "https://openalex.org/W2058716938",
+    "title": "Fourier shell correlation threshold criteria",
+    "year": 2005,
+    "cited_by_count": 896,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 216,
+    "openalex_id": "https://openalex.org/W4411457435",
+    "title": "Adjoint propagation of error signal through modular recurrent neural networks for biologically plausible learning",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 217,
+    "openalex_id": "https://openalex.org/W4414669875",
+    "title": "Pathway to Independence: a forecast for the future of developmental biology",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 218,
+    "openalex_id": "https://openalex.org/W4394724613",
+    "title": "Tastant-receptor interactions: insights from the fruit fly",
+    "year": 2024,
+    "cited_by_count": 13,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 219,
+    "openalex_id": "https://openalex.org/W4400056693",
+    "title": "A leg model based on anatomical landmarks to study 3D joint kinematics of walking in Drosophila melanogaster",
+    "year": 2024,
+    "cited_by_count": 6,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 220,
+    "openalex_id": "https://openalex.org/W2518104650",
+    "title": "Finding the Most Influential Nodes in Pinning Controllability of Complex Networks",
+    "year": 2016,
+    "cited_by_count": 51,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 221,
+    "openalex_id": "https://openalex.org/W2094092485",
+    "title": "Controllability and observability of Boolean networks arising from biology",
+    "year": 2015,
+    "cited_by_count": 50,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 222,
+    "openalex_id": "https://openalex.org/W2551956852",
+    "title": "Identifying important nodes by adaptive LeaderRank",
+    "year": 2016,
+    "cited_by_count": 62,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 223,
+    "openalex_id": "https://openalex.org/W1781719596",
+    "title": "Community Detection in Social and Biological Networks Using Differential Evolution",
+    "year": 2012,
+    "cited_by_count": 68,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 224,
+    "openalex_id": "https://openalex.org/W4207080044",
+    "title": "Expansion microscopy of Plasmodium gametocytes reveals the molecular architecture of a bipartite microtubule organisation centre coordinating mitosis with axoneme assembly",
+    "year": 2022,
+    "cited_by_count": 81,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 225,
+    "openalex_id": "https://openalex.org/W3011921025",
+    "title": "Click-ExM enables expansion microscopy for all biomolecules",
+    "year": 2020,
+    "cited_by_count": 19,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 226,
+    "openalex_id": "https://openalex.org/W4309362852",
+    "title": "Deducing ensemble dynamics and information flow from the whole-brain imaging data",
+    "year": 2022,
+    "cited_by_count": 2,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 227,
+    "openalex_id": "https://openalex.org/W4390649530",
+    "title": "The Neuron as a Direct Data-Driven Controller",
+    "year": 2024,
+    "cited_by_count": 1,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 228,
+    "openalex_id": "https://openalex.org/W4378976450",
+    "title": "Ultrastructural analysis reveals mitochondrial placement independent of synapse placement in fine caliber C. elegans neurons",
+    "year": 2023,
+    "cited_by_count": 1,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 229,
+    "openalex_id": "https://openalex.org/W3213538380",
+    "title": "cAMP controls a trafficking mechanism that maintains the neuron specificity and subcellular placement of electrical synapses",
+    "year": 2021,
+    "cited_by_count": 17,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 230,
+    "openalex_id": "https://openalex.org/W2115135130",
+    "title": "Off\u2010alpha and OFF\u2010beta ganglion cells in cat retina: II. Neural circuitry as revealed by electron microscopy of HRP stains",
+    "year": 1993,
+    "cited_by_count": 114,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 231,
+    "openalex_id": "https://openalex.org/W2180165874",
+    "title": "Dopamine D1 receptor expression is bipolar cell type\u2010specific in the mouse retina",
+    "year": 2015,
+    "cited_by_count": 66,
+    "kcore": 8,
+    "composite_score": null,
+    "combined_score": 0.1863
+  },
+  {
+    "rank": 232,
+    "openalex_id": "https://openalex.org/W2003949298",
+    "title": "Minimal Controllability Problems",
+    "year": 2014,
+    "cited_by_count": 330,
+    "kcore": 15,
+    "composite_score": 0.008235343594192942,
+    "combined_score": 0.1821
+  },
+  {
+    "rank": 233,
+    "openalex_id": "https://openalex.org/W2128472904",
+    "title": "The Reward Circuit: Linking Primate Anatomy and Human Imaging",
+    "year": 2009,
+    "cited_by_count": 3693,
+    "kcore": 14,
+    "composite_score": 0.012292608706895747,
+    "combined_score": 0.1765
+  },
+  {
+    "rank": 234,
+    "openalex_id": "https://openalex.org/W2922383491",
+    "title": "Mapping causal pathways from genetics to neuropsychiatric disorders using genome\u2010wide imaging genetics: Current status and future directions",
+    "year": 2019,
+    "cited_by_count": 31,
+    "kcore": 14,
+    "composite_score": 0.008998083273684782,
+    "combined_score": 0.1705
+  },
+  {
+    "rank": 235,
+    "openalex_id": "https://openalex.org/W2799061466",
+    "title": "Pattern Classification",
+    "year": 2012,
+    "cited_by_count": 19490,
+    "kcore": 7,
+    "composite_score": 0.05570155942624826,
+    "combined_score": 0.1646
+  },
+  {
+    "rank": 236,
+    "openalex_id": "https://openalex.org/W4392233140",
+    "title": "A spatial map of hepatic mitochondria uncovers functional heterogeneity shaped by nutrient-sensing signaling",
+    "year": 2024,
+    "cited_by_count": 49,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 237,
+    "openalex_id": "https://openalex.org/W3007739539",
+    "title": "Visualizing synaptic plasticity in vivo by large-scale imaging of endogenous AMPA receptors",
+    "year": 2020,
+    "cited_by_count": 7,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 238,
+    "openalex_id": "https://openalex.org/W7129026680",
+    "title": "Adjoint propagation of error signal through modular recurrent neural networks for biologically plausible learning",
+    "year": 2026,
+    "cited_by_count": 0,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 239,
+    "openalex_id": "https://openalex.org/W3215046848",
+    "title": "Behavior Individuality: A Focus on Drosophila melanogaster",
+    "year": 2021,
+    "cited_by_count": 21,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 240,
+    "openalex_id": "https://openalex.org/W2807222267",
+    "title": "Locating multiple diffusion sources in time varying networks from sparse observations",
+    "year": 2018,
+    "cited_by_count": 40,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 241,
+    "openalex_id": "https://openalex.org/W2067483874",
+    "title": "Controllability analysis of multi-agent systems with directed and weighted interconnection",
+    "year": 2012,
+    "cited_by_count": 65,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 242,
+    "openalex_id": "https://openalex.org/W2021812458",
+    "title": "Observability and coarse graining of consensus dynamics through the external equitable partition",
+    "year": 2013,
+    "cited_by_count": 78,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 243,
+    "openalex_id": "https://openalex.org/W4390954688",
+    "title": "Theory of percolation on hypergraphs",
+    "year": 2024,
+    "cited_by_count": 42,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 244,
+    "openalex_id": "https://openalex.org/W2076199148",
+    "title": "Globally networked risks and how to respond",
+    "year": 2013,
+    "cited_by_count": 1212,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 245,
+    "openalex_id": "https://openalex.org/W4240267565",
+    "title": "Extrasynaptic Signaling Enables an Asymmetric Juvenile Motor Circuit to Produce a Symmetric Gait",
+    "year": 2021,
+    "cited_by_count": 0,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 246,
+    "openalex_id": "https://openalex.org/W4399605168",
+    "title": "Generation of biophysical neuron model parameters from recorded electrophysiological responses",
+    "year": 2024,
+    "cited_by_count": 1,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 247,
+    "openalex_id": "https://openalex.org/W4400281540",
+    "title": "C.\u00a0elegans touch receptor neurons direct mechanosensory complex organization via repurposing conserved basal lamina proteins",
+    "year": 2024,
+    "cited_by_count": 9,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 248,
+    "openalex_id": "https://openalex.org/W4281730817",
+    "title": "Mechanosensitive body\u2013brain interactions in Caenorhabditis elegans",
+    "year": 2022,
+    "cited_by_count": 11,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 249,
+    "openalex_id": "https://openalex.org/W4389985607",
+    "title": "ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electrophysiological Responses",
+    "year": 2023,
+    "cited_by_count": 0,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 250,
+    "openalex_id": "https://openalex.org/W4380992693",
+    "title": "Mechanisms of simultaneous linear and nonlinear computations at the mammalian cone photoreceptor synapse",
+    "year": 2023,
+    "cited_by_count": 16,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 251,
+    "openalex_id": "https://openalex.org/W3098652539",
+    "title": "The small world of osteocytes: connectomics of the lacuno-canalicular network in bone",
+    "year": 2017,
+    "cited_by_count": 143,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 252,
+    "openalex_id": "https://openalex.org/W2989651750",
+    "title": "Midget retinal ganglion cell dendritic and mitochondrial degeneration is an early feature of human glaucoma",
+    "year": 2019,
+    "cited_by_count": 99,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 253,
+    "openalex_id": "https://openalex.org/W2950701625",
+    "title": "Functional characterization of retinal ganglion cells using tailored nonlinear modeling",
+    "year": 2019,
+    "cited_by_count": 35,
+    "kcore": 7,
+    "composite_score": null,
+    "combined_score": 0.1614
+  },
+  {
+    "rank": 254,
+    "openalex_id": "https://openalex.org/W3040854513",
+    "title": "Neural circuits in the mouse retina support color vision in the upper visual field",
+    "year": 2020,
+    "cited_by_count": 136,
+    "kcore": 12,
+    "composite_score": 0.015468801394428904,
+    "combined_score": 0.1564
+  },
+  {
+    "rank": 255,
+    "openalex_id": "https://openalex.org/W2889526415",
+    "title": "Norepinephrine stimulates glycogenolysis in astrocytes to fuel neurons with lactate",
+    "year": 2018,
+    "cited_by_count": 77,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 256,
+    "openalex_id": "https://openalex.org/W2741754476",
+    "title": "Ultrasound image-based thyroid nodule automatic segmentation using convolutional neural networks",
+    "year": 2017,
+    "cited_by_count": 181,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 257,
+    "openalex_id": "https://openalex.org/W7128796268",
+    "title": "Validating Neurite EXchange Imaging (NEXI) using diffusion Monte Carlo simulations in realistic numerical gray matter substrates",
+    "year": 2026,
+    "cited_by_count": 0,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 258,
+    "openalex_id": "https://openalex.org/W4412467905",
+    "title": "Recent advances on hormones and behavior in vertebrates: inspiration for and from invertebrate science",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 259,
+    "openalex_id": "https://openalex.org/W2591489017",
+    "title": "Explorability and the origin of network sparsity in living systems",
+    "year": 2017,
+    "cited_by_count": 49,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 260,
+    "openalex_id": "https://openalex.org/W2345162151",
+    "title": "Intelligence, Cognition, and Language of Green Plants",
+    "year": 2016,
+    "cited_by_count": 65,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 261,
+    "openalex_id": "https://openalex.org/W2921957626",
+    "title": "Covering Problems and Core Percolations on Hypergraphs",
+    "year": 2020,
+    "cited_by_count": 61,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 262,
+    "openalex_id": "https://openalex.org/W3205980824",
+    "title": "Ultrastructure expansion microscopy in <i>Trypanosoma brucei</i>",
+    "year": 2021,
+    "cited_by_count": 50,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 263,
+    "openalex_id": "https://openalex.org/W2010107585",
+    "title": "The computational worm: spatial orientation and its neuronal basis in C. elegans",
+    "year": 2011,
+    "cited_by_count": 91,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 264,
+    "openalex_id": "https://openalex.org/W4389263735",
+    "title": "Why an animal needs a brain",
+    "year": 2023,
+    "cited_by_count": 8,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 265,
+    "openalex_id": "https://openalex.org/W2408816909",
+    "title": "Mechanism of High-Frequency Signaling at a Depressing Ribbon Synapse",
+    "year": 2016,
+    "cited_by_count": 37,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 266,
+    "openalex_id": "https://openalex.org/W2015667532",
+    "title": "Amacrine cells of the mammalian retina: Neurocircuitry and functional roles",
+    "year": 1997,
+    "cited_by_count": 112,
+    "kcore": 6,
+    "composite_score": null,
+    "combined_score": 0.1365
+  },
+  {
+    "rank": 267,
+    "openalex_id": "https://openalex.org/W2047036345",
+    "title": "Microcircuitry of the Cat Retina",
+    "year": 1983,
+    "cited_by_count": 239,
+    "kcore": 8,
+    "composite_score": 0.026124868842744425,
+    "combined_score": 0.1241
+  },
+  {
+    "rank": 268,
+    "openalex_id": "https://openalex.org/W4385061890",
+    "title": "Noise-Induced Synaptopathy Impacts the Long and Short Sensory Hair Cells Differently in the Mammalian Cochlea",
+    "year": 2023,
+    "cited_by_count": 0,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 269,
+    "openalex_id": "https://openalex.org/W2156236044",
+    "title": "Controversies and priorities in amyotrophic lateral sclerosis",
+    "year": 2013,
+    "cited_by_count": 525,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 270,
+    "openalex_id": "https://openalex.org/W1990435776",
+    "title": "Network Analysis: Methodological Foundations",
+    "year": 2010,
+    "cited_by_count": 646,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 271,
+    "openalex_id": "https://openalex.org/W3112078786",
+    "title": "Systems Neuroscience of Natural Behaviors in Rodents",
+    "year": 2020,
+    "cited_by_count": 122,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 272,
+    "openalex_id": "https://openalex.org/W4385432957",
+    "title": "A Synthetic Nervous System for\u00a0on and\u00a0Off Motion Detection Inspired by\u00a0the\u00a0Drosophila melanogaster Optic Lobe",
+    "year": 2023,
+    "cited_by_count": 3,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 273,
+    "openalex_id": "https://openalex.org/W2920994549",
+    "title": "Network-Based Heterogeneous Particle Swarm Optimization and Its Application in UAV Communication Coverage",
+    "year": 2019,
+    "cited_by_count": 61,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 274,
+    "openalex_id": "https://openalex.org/W2111514154",
+    "title": "Biological network analysis with CentiScaPe: centralities and experimental dataset integration",
+    "year": 2015,
+    "cited_by_count": 129,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 275,
+    "openalex_id": "https://openalex.org/W3158891634",
+    "title": "Artificial intelligence-based computational framework for drug-target prioritization and inference of novel repositionable drugs for Alzheimer\u2019s disease",
+    "year": 2021,
+    "cited_by_count": 66,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 276,
+    "openalex_id": "https://openalex.org/W2147330086",
+    "title": "Minimum curvilinearity to enhance topological prediction of protein interactions by network embedding",
+    "year": 2013,
+    "cited_by_count": 128,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 277,
+    "openalex_id": "https://openalex.org/W2054191858",
+    "title": "Structural controllability of multi-agent networks: Robustness against simultaneous failures",
+    "year": 2013,
+    "cited_by_count": 87,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 278,
+    "openalex_id": "https://openalex.org/W4366439857",
+    "title": "A novel dimension reduction method with information entropy to evaluate network resilience",
+    "year": 2023,
+    "cited_by_count": 20,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 279,
+    "openalex_id": "https://openalex.org/W2912661667",
+    "title": "Keystoneness, centrality, and the structural controllability of ecological networks",
+    "year": 2019,
+    "cited_by_count": 64,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 280,
+    "openalex_id": "https://openalex.org/W3207344627",
+    "title": "Sub-centrosomal mapping identifies augmin-\u03b3TuRC as part of a centriole-stabilizing scaffold",
+    "year": 2021,
+    "cited_by_count": 51,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 281,
+    "openalex_id": "https://openalex.org/W4311632386",
+    "title": "Sharing Massive Biomedical Data at Magnitudes Lower Bandwidth Using Implicit Neural Function",
+    "year": 2022,
+    "cited_by_count": 3,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 282,
+    "openalex_id": "https://openalex.org/W4400280482",
+    "title": "Sharing massive biomedical data at magnitudes lower bandwidth using implicit neural function",
+    "year": 2024,
+    "cited_by_count": 6,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 283,
+    "openalex_id": "https://openalex.org/W4386055793",
+    "title": "A hyperpolarizing neuron recruits undocked innexin hemichannels to transmit neural information in <i>Caenorhabditis elegans</i>",
+    "year": 2023,
+    "cited_by_count": 0,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 284,
+    "openalex_id": "https://openalex.org/W4416717371",
+    "title": "The vab-1/Eph receptor and ephrins efn-1 and efn-4 are required for C. elegans chemosensory and thermosensory circuit assembly and function",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 285,
+    "openalex_id": "https://openalex.org/W4378071292",
+    "title": "Phylogenetic tracing of midbrain-specific regulatory sequences suggests single origin of eubilaterian brains",
+    "year": 2023,
+    "cited_by_count": 27,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 286,
+    "openalex_id": "https://openalex.org/W2172018341",
+    "title": "Distinct Roles for Inhibition in Spatial and Temporal Tuning of Local Edge Detectors in the Rabbit Retina",
+    "year": 2014,
+    "cited_by_count": 21,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 287,
+    "openalex_id": "https://openalex.org/W2493700155",
+    "title": "Electronic approaches to restoration of sight",
+    "year": 2016,
+    "cited_by_count": 107,
+    "kcore": 5,
+    "composite_score": null,
+    "combined_score": 0.1116
+  },
+  {
+    "rank": 288,
+    "openalex_id": "https://openalex.org/W3165822876",
+    "title": "Three-dimensional residual channel attention networks denoise and sharpen fluorescence microscopy image volumes",
+    "year": 2021,
+    "cited_by_count": 207,
+    "kcore": 9,
+    "composite_score": 0.009765397555099548,
+    "combined_score": 0.1074
+  },
+  {
+    "rank": 289,
+    "openalex_id": "https://openalex.org/W3140854437",
+    "title": "Review of deep learning: concepts, CNN architectures, challenges, applications, future directions",
+    "year": 2021,
+    "cited_by_count": 7187,
+    "kcore": 7,
+    "composite_score": 0.020348239432301653,
+    "combined_score": 0.1007
+  },
+  {
+    "rank": 290,
+    "openalex_id": "https://openalex.org/W2156718197",
+    "title": "Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering",
+    "year": 2002,
+    "cited_by_count": 4511,
+    "kcore": 7,
+    "composite_score": 0.01617315011173869,
+    "combined_score": 0.0932
+  },
+  {
+    "rank": 291,
+    "openalex_id": "https://openalex.org/W4407873108",
+    "title": "3D spatial transcriptomics reveals the molecular structure of input and output pathways in the mouse olfactory bulb",
+    "year": 2025,
+    "cited_by_count": 4,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 292,
+    "openalex_id": "https://openalex.org/W4407407287",
+    "title": "Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 293,
+    "openalex_id": "https://openalex.org/W7126031331",
+    "title": "Sleep regulation in Drosophila: a review of neural circuits and genetics",
+    "year": 2026,
+    "cited_by_count": 1,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 294,
+    "openalex_id": "https://openalex.org/W4403066080",
+    "title": "Use citizen science to turbocharge big-data projects",
+    "year": 2024,
+    "cited_by_count": 0,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 295,
+    "openalex_id": "https://openalex.org/W2064774590",
+    "title": "Study on some bus transport networks in China with considering spatial characteristics",
+    "year": 2014,
+    "cited_by_count": 44,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 296,
+    "openalex_id": "https://openalex.org/W2056057323",
+    "title": "Leveraging gene co-expression networks to pinpoint the regulation of complex traits and disease, with a focus on cardiovascular traits",
+    "year": 2013,
+    "cited_by_count": 48,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 297,
+    "openalex_id": "https://openalex.org/W4360942148",
+    "title": "Lost in local translation: TDP-43 and FUS in axonal/neuromuscular junction maintenance and dysregulation in amyotrophic lateral sclerosis",
+    "year": 2023,
+    "cited_by_count": 57,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 298,
+    "openalex_id": "https://openalex.org/W4221037421",
+    "title": "Temperature sensing and context-dependent thermal behavior in nematodes",
+    "year": 2022,
+    "cited_by_count": 23,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 299,
+    "openalex_id": "https://openalex.org/W4415960783",
+    "title": "Playing dice with behavior: drivers of stochastic individuality",
+    "year": 2025,
+    "cited_by_count": 2,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 300,
+    "openalex_id": "https://openalex.org/W4382599338",
+    "title": "Deep intelligent predictive model for the identification of diabetes",
+    "year": 2023,
+    "cited_by_count": 27,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 301,
+    "openalex_id": "https://openalex.org/W4395448801",
+    "title": "Optimization in Visual Motion Estimation",
+    "year": 2024,
+    "cited_by_count": 6,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 302,
+    "openalex_id": "https://openalex.org/W4408165533",
+    "title": "Optimizing performance of parallel computing platforms for large-scale genome data analysis",
+    "year": 2025,
+    "cited_by_count": 27,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 303,
+    "openalex_id": "https://openalex.org/W2905044836",
+    "title": "Non-parametric Physiological Classification of Retinal Ganglion Cells in the Mouse Retina",
+    "year": 2018,
+    "cited_by_count": 29,
+    "kcore": 4,
+    "composite_score": null,
+    "combined_score": 0.0867
+  },
+  {
+    "rank": 304,
+    "openalex_id": "https://openalex.org/W2593511418",
+    "title": "MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy",
+    "year": 2017,
+    "cited_by_count": 8716,
+    "kcore": 5,
+    "composite_score": 0.02308672824268285,
+    "combined_score": 0.0799
+  },
+  {
+    "rank": 305,
+    "openalex_id": "https://openalex.org/W2142290615",
+    "title": "Intrinsic connectivity of human auditory areas: a tracing study with DiI",
+    "year": 2001,
+    "cited_by_count": 114,
+    "kcore": 6,
+    "composite_score": 0.0075769505143445815,
+    "combined_score": 0.0647
+  },
+  {
+    "rank": 306,
+    "openalex_id": "https://openalex.org/W4365807860",
+    "title": "Backdoor Attacks to Deep Learning Models and Countermeasures: A Survey",
+    "year": 2023,
+    "cited_by_count": 25,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 307,
+    "openalex_id": "https://openalex.org/W4409352694",
+    "title": "Bridging macroscopic and microscopic modeling of electric field by brain stimulation",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 308,
+    "openalex_id": "https://openalex.org/W4377291716",
+    "title": "A closer look at the synapse: dlg1[4K] enables cell-specific visualization of PSD-95/DLG1",
+    "year": 2023,
+    "cited_by_count": 1,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 309,
+    "openalex_id": "https://openalex.org/W2171340202",
+    "title": "Computational Approaches for Analyzing Information Flow in Biological Networks",
+    "year": 2012,
+    "cited_by_count": 179,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 310,
+    "openalex_id": "https://openalex.org/W2055375625",
+    "title": "From the physics of interacting polymers to optimizing routes on the London Underground",
+    "year": 2013,
+    "cited_by_count": 64,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 311,
+    "openalex_id": "https://openalex.org/W1978394457",
+    "title": "Robust Synchronization for 2-D Discrete-Time Coupled Dynamical Networks",
+    "year": 2012,
+    "cited_by_count": 63,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 312,
+    "openalex_id": "https://openalex.org/W3194902725",
+    "title": "Wearable Biofuel Cells: Advances from Fabrication to Application",
+    "year": 2021,
+    "cited_by_count": 95,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 313,
+    "openalex_id": "https://openalex.org/W2891945780",
+    "title": "Fast Similarity Search via Optimal Sparse Lifting",
+    "year": 2018,
+    "cited_by_count": 15,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 314,
+    "openalex_id": "https://openalex.org/W4229366349",
+    "title": "Changes in glial cell phenotypes precede overt neurofibrillary tangle formation, correlate with markers of cortical cell damage, and predict cognitive status of individuals at Braak III-IV stages",
+    "year": 2022,
+    "cited_by_count": 19,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 315,
+    "openalex_id": "https://openalex.org/W3002111288",
+    "title": "Type I Interferon Regulates a Coordinated Gene Network to Enhance Cytotoxic T Cell\u2013Mediated Tumor Killing",
+    "year": 2020,
+    "cited_by_count": 66,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 316,
+    "openalex_id": "https://openalex.org/W4399325206",
+    "title": "Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral conditioning in robotics",
+    "year": 2024,
+    "cited_by_count": 32,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 317,
+    "openalex_id": "https://openalex.org/W7116630719",
+    "title": "Volatile and non-volatile pathogen cues shape host extracellular vesicles production in pre-infection response",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 318,
+    "openalex_id": "https://openalex.org/W928499721",
+    "title": "Comparative integrated omics: identification of key functionalities in microbial community-wide metabolic networks",
+    "year": 2015,
+    "cited_by_count": 106,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 319,
+    "openalex_id": "https://openalex.org/W4283386236",
+    "title": "A deep convolutional neural network to predict the curve progression of adolescent idiopathic scoliosis: a pilot study",
+    "year": 2022,
+    "cited_by_count": 36,
+    "kcore": 3,
+    "composite_score": null,
+    "combined_score": 0.0618
+  },
+  {
+    "rank": 320,
+    "openalex_id": "https://openalex.org/W2396849069",
+    "title": "Coming of age: ten years of next-generation sequencing technologies",
+    "year": 2016,
+    "cited_by_count": 4335,
+    "kcore": 4,
+    "composite_score": 0.01215220877135556,
+    "combined_score": 0.0472
+  },
+  {
+    "rank": 321,
+    "openalex_id": "https://openalex.org/W3089724060",
+    "title": "An End to End System for Measuring Axon Growth",
+    "year": 2020,
+    "cited_by_count": 4,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 322,
+    "openalex_id": "https://openalex.org/W4406973648",
+    "title": "Oligodendrocyte precursor cells facilitate neuronal lysosome release",
+    "year": 2025,
+    "cited_by_count": 9,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 323,
+    "openalex_id": "https://openalex.org/W4413951348",
+    "title": "Exact counting of subtrees with diameter no more than d in trees: A generating function approach",
+    "year": 2025,
+    "cited_by_count": 13,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 324,
+    "openalex_id": "https://openalex.org/W2969932535",
+    "title": "Visualization of insect metamorphosis",
+    "year": 2019,
+    "cited_by_count": 71,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 325,
+    "openalex_id": "https://openalex.org/W4394687193",
+    "title": "Population parameters of Drosophila larval cooperative foraging",
+    "year": 2024,
+    "cited_by_count": 5,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 326,
+    "openalex_id": "https://openalex.org/W2488259067",
+    "title": "Cascading failure model in power grids using the complex network theory",
+    "year": 2016,
+    "cited_by_count": 95,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 327,
+    "openalex_id": "https://openalex.org/W3048305287",
+    "title": "Network Engineering Using Autonomous Agents Increases Cooperation in Human Groups",
+    "year": 2020,
+    "cited_by_count": 46,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 328,
+    "openalex_id": "https://openalex.org/W2945412501",
+    "title": "Strengthening Insights in Microbial Ecological Networks from Theory to Applications",
+    "year": 2019,
+    "cited_by_count": 50,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 329,
+    "openalex_id": "https://openalex.org/W3175144511",
+    "title": "CD45 pre-exclusion from the tips of T cell microvilli prior to antigen recognition",
+    "year": 2021,
+    "cited_by_count": 71,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 330,
+    "openalex_id": "https://openalex.org/W4200535840",
+    "title": "The detyrosination/re-tyrosination cycle of tubulin and its role and dysfunction in neurons and cardiomyocytes",
+    "year": 2021,
+    "cited_by_count": 77,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 331,
+    "openalex_id": "https://openalex.org/W2996862224",
+    "title": "Could 3D models of cancer enhance drug screening?",
+    "year": 2019,
+    "cited_by_count": 272,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 332,
+    "openalex_id": "https://openalex.org/W2788506234",
+    "title": "Meiosis: the chromosomal foundation of reproduction",
+    "year": 2018,
+    "cited_by_count": 159,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 333,
+    "openalex_id": "https://openalex.org/W4392242084",
+    "title": "Multisensory gamma stimulation promotes glymphatic clearance of amyloid",
+    "year": 2024,
+    "cited_by_count": 262,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 334,
+    "openalex_id": "https://openalex.org/W7117299898",
+    "title": "Neuronal Activity Regulating the Dauer Entry Decision in <i>Caenorhabditis elegans</i>",
+    "year": 2025,
+    "cited_by_count": 0,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 335,
+    "openalex_id": "https://openalex.org/W4413816360",
+    "title": "Divergent organelle allocation in the evolution of sperm gigantism revealed from subcellular quantification of nematode sperm with electron microscopy",
+    "year": 2025,
+    "cited_by_count": 1,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 336,
+    "openalex_id": "https://openalex.org/W3095707721",
+    "title": "Optimization technique combined with deep learning method for teeth recognition in dental panoramic radiographs",
+    "year": 2020,
+    "cited_by_count": 80,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 337,
+    "openalex_id": "https://openalex.org/W1976947708",
+    "title": "Electrophysiological and Morphological Characterization of Neuronal Microcircuits in Acute Brain Slices Using Paired Patch-Clamp Recordings",
+    "year": 2015,
+    "cited_by_count": 28,
+    "kcore": 2,
+    "composite_score": null,
+    "combined_score": 0.0369
+  },
+  {
+    "rank": 338,
+    "openalex_id": "https://openalex.org/W3007815224",
+    "title": "Perivascular spaces in the brain: anatomy, physiology and pathology",
+    "year": 2020,
+    "cited_by_count": 822,
+    "kcore": 2,
+    "composite_score": 0.011408070815707785,
+    "combined_score": 0.02
+  },
+  {
+    "rank": 339,
+    "openalex_id": "https://openalex.org/W2117630026",
+    "title": "The effect of particle design on cellular internalization pathways",
+    "year": 2008,
+    "cited_by_count": 2861,
+    "kcore": 2,
+    "composite_score": 0.0095819966369308,
+    "combined_score": 0.0167
+  },
+  {
+    "rank": 340,
+    "openalex_id": "https://openalex.org/W4399265552",
+    "title": "An Outlook for\u00a0AI Innovation in\u00a0Multimodal Communication Research",
+    "year": 2024,
+    "cited_by_count": 5,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 341,
+    "openalex_id": "https://openalex.org/W1988894481",
+    "title": "Securing cyberspace: Identifying key actors in hacker communities",
+    "year": 2012,
+    "cited_by_count": 68,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 342,
+    "openalex_id": "https://openalex.org/W1939711497",
+    "title": "Genetics of aggressive behavior: An overview",
+    "year": 2015,
+    "cited_by_count": 142,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 343,
+    "openalex_id": "https://openalex.org/W2127449417",
+    "title": "RCytoscape: tools for exploratory network analysis",
+    "year": 2013,
+    "cited_by_count": 102,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 344,
+    "openalex_id": "https://openalex.org/W3191440186",
+    "title": "To the Surface and Back: Exo- and Endocytic Pathways in Trypanosoma brucei",
+    "year": 2021,
+    "cited_by_count": 47,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 345,
+    "openalex_id": "https://openalex.org/W2991416247",
+    "title": "Mesenchymal stem cell perspective: cell biology to clinical progress",
+    "year": 2019,
+    "cited_by_count": 1962,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 346,
+    "openalex_id": "https://openalex.org/W4295847276",
+    "title": "Pain modulation in the spinal cord",
+    "year": 2022,
+    "cited_by_count": 26,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 347,
+    "openalex_id": "https://openalex.org/W4376636133",
+    "title": "Prediction of compressive mechanical properties of three-dimensional mesoscopic aluminium foam based on deep learning method",
+    "year": 2023,
+    "cited_by_count": 36,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 348,
+    "openalex_id": "https://openalex.org/W3160165418",
+    "title": "Self-Checking Deep Neural Networks in Deployment",
+    "year": 2021,
+    "cited_by_count": 36,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 349,
+    "openalex_id": "https://openalex.org/W1976791644",
+    "title": "A GPU-accelerated immersive audio-visual framework for interaction with molecular dynamics using consumer depth sensors",
+    "year": 2014,
+    "cited_by_count": 26,
+    "kcore": 1,
+    "composite_score": null,
+    "combined_score": 0.012
+  },
+  {
+    "rank": 350,
+    "openalex_id": "https://openalex.org/W1965606785",
+    "title": "Plant Phenolics: Extraction, Analysis and Their Antioxidant and Anticancer Properties",
+    "year": 2010,
+    "cited_by_count": 4167,
+    "kcore": 1,
+    "composite_score": 0.011032092751815818,
+    "combined_score": 0.0065
+  }
+]

@@ -27,12 +27,12 @@
     }
   },
   "expert_validation": {
-    "expert_total": 177,
+    "expert_total": 332,
     "data_driven_total": 7867,
-    "found_in_both": 115,
-    "recall": 0.6497,
+    "found_in_both": 270,
+    "recall": 0.8133,
     "missed_by_data_driven": 62,
-    "novel_in_data_driven": 7752,
+    "novel_in_data_driven": 7597,
     "missed_papers": [
       {
         "doi": "10.1101/2025.09.22.677863",
@@ -241,7 +241,7 @@
       },
       {
         "doi": "10.1016/j.neuron.2009.02.021",
-        "title": "'Reading the book of memory: Sparse sampling versus dense mapping of connectomes'",
+        "title": "Reading the book of memory: Sparse sampling versus dense mapping of connectomes",
         "seed_expert": ""
       },
       {
@@ -276,12 +276,12 @@
       },
       {
         "doi": "10.1093/bioinformatics/btt529",
-        "title": "'CATMAID: Collaborative annotation toolkit for massive amounts of image data'",
+        "title": "CATMAID: Collaborative annotation toolkit for massive amounts of image data",
         "seed_expert": ""
       },
       {
         "doi": "10.1101/2021.03.31.437929",
-        "title": "'OME-Zarr: a cloud-optimized bioimaging file format with international community support'",
+        "title": "OME-Zarr: a cloud-optimized bioimaging file format with international community support",
         "seed_expert": ""
       }
     ]
@@ -394,7 +394,7 @@
         "sample_titles": [
           "GRETNA: a graph theoretical network analysis toolbox for imaging connectomics",
           "Functional connectivity in the resting brain: A network analysis of the default ",
-          "Brain network analysis reveals affected connectome structure in bipolar I disord"
+          "Network Analysis of Intrinsic Functional Brain Connectivity in Alzheimer's Disea"
         ],
         "adequate": true
       }

@@ -205,3 +205,159 @@ Confirmed merges applied in `author_merge_map.json`:
 | Moritz Helmstaedter / Davi D. Bock / Marta Costa | abbreviated forms | minor dedup |
 | C. Shan Xu | Shan Xu, C Shan Xu | minor — deduplicates FIB-SEM leader |
 | Unicode normalization (8 pairs) | en-dash ↔ hyphen variants | cosmetic |
+
+---
+
+## E. Review-Cited Gap Analysis
+
+Papers cited by 2+ major nanoscale connectomics reviews (Helmstaedter 2025, Bock 2025, Khajeh & Lee 2025, Lichtman 2014, Kasthuri 2019) but missing from the top 500. These represent expert consensus on important work that our quantitative ranking missed.
+
+### E1. Cited by 3 reviews
+
+| Ext.Cites | Rank | Title | Reviews |
+| --- | --- | --- | --- |
+| 34 | 1962 | Light-microscopy-based connectomic reconstruction of mammalian brain tissue (2025) | Helmstaedter, Bock, Khajeh |
+
+### E2. Cited by 2 reviews (sorted by citation count)
+
+| Ext.Cites | Rank | Title |
+| --- | --- | --- |
+| 425 | 1427 | Ultrastructural analysis of adult mouse neocortex (2015) |
+| 401 | 630 | Whole-brain serial-section EM in larval zebrafish (Hildebrand 2017) |
+| 317 | 1282 | Nanoconnectomic upper bound on the variability of synaptic plasticity (2015) |
+| 294 | 1083 | The Fuzzy Logic of Network Connectivity in Mouse Visual Thalamus (2016) |
+| 284 | 1381 | Digital Museum of Retinal Ganglion Cells (2018) |
+| 260 | 558 | High-resolution, high-throughput imaging with a multibeam SEM (2015) |
+| 152 | 620 | Automated synaptic connectivity inference for volume EM (2017) |
+| 130 | 535 | Progress and remaining challenges in high-throughput volume EM (2018) |
+| 83 | 663 | Connectome-constrained networks predict neural activity across fly brain (2024) |
+
+### E3. Unranked 2025 reviews (too new for citation-based scoring)
+
+| Journal | Title | Authors |
+| --- | --- | --- |
+| Nat. Rev. Neurosci. | Synaptic-resolution connectomics: towards large brains and connectomic screening | Helmstaedter |
+| Nat. Rev. Neurosci. | Synaptic connectomics: status and prospects | Bock |
+| Nat. Methods | Connectomics beyond electron microscopy | Khajeh & Lee |
+| arXiv | Rethinking scale in network neuroscience | Beaudoin, Rheault et al. |
+
+### E4. Notable single-review citations not in top 500
+
+| Ext.Cites | Rank | Title | Review |
+| --- | --- | --- | --- |
+| 246 | 986 | The big data challenges of connectomics (Lichtman 2014) | Also 86 in-degree (see B) |
+| 26 | — | Big data in nanoscale connectomics, and the greed for training labels (Kasthuri 2019) | Kasthuri seed paper |
+
+---
+
+## F. Preprint/Published Duplicate Audit
+
+**65 suspected duplicate pairs** found in the top 2000 where the same paper appears as both a preprint (bioRxiv/arXiv) and published journal article. OpenAlex treats these as separate works, causing:
+
+- **Citation splitting**: ~147,000 citations distributed across duplicate entries instead of consolidated
+- **PageRank dilution**: citation flow split between two nodes instead of one
+- **Rank distortion**: papers ranked lower than their true combined influence warrants
+- **Double-counting**: some preprint+published pairs both appear in top 500
+
+### F1. Duplicate pairs where BOTH versions are in top 500 (wasting slots)
+
+| Best Rank | Other Rank | Combined Cites | Title |
+| --- | --- | --- | --- |
+| 3 | 112 | 488 | Connectomes across development reveal principles of brain maturation |
+| 6 | 123 | 612 | Neuronal wiring diagram of an adult brain |
+| 67 | 124 | 354 | FlyWire: online community for whole-brain connectomics |
+| 86 | 107 | 101 | Structured sampling of olfactory input by the fly mushroom body |
+| 30 | 131 | 234 | Complete connectomic reconstruction of olfactory projection neurons |
+| 83 | 138 | 72,095 | Support-vector networks (two DOIs for same paper) |
+| 221 | 236 | 1,718 | Principles and Techniques of Electron Microscopy (two editions) |
+| 244 | 263 | 20,085 | Improved Optimization for Robust Linear Registration (two DOIs) |
+| 340 | 445 | 175 | Whole-body integration of gene expression and single-cell morphology |
+| 401 | 449 | 112 | Circuits for integrating learned and innate valences |
+| 157 | 331 | 127 | Network Statistics of the Whole-Brain Connectome of Drosophila |
+
+**Action**: Merge these pairs — keep the published version, sum citations/edges, free up 11 top-500 slots.
+
+### F2. Merges that would ENTER top 500 (currently outside)
+
+| Current Best Rank | Merged Est. Rank | Combined Cites | Title |
+| --- | --- | --- | --- |
+| 562 | ~377 | 43 | Multi-layered maps of neuropil with segmentation-guided contrastive learning |
+| 762 | ~320 | 170 | Transforming representations of movement from body- to world-centric space |
+| 931/1013 | ~320 | 82 | Connectome-driven neural inventory of a complete visual system |
+| 521 | ~348 | 92 | Synaptic connectome of the Drosophila circadian clock |
+| 1040 | ~498 | 111 | A Connectome of the Male Drosophila Ventral Nerve Cord |
+| 523 | ~384 | 178 | The neuropeptidergic connectome of C. elegans |
+| 743 | ~370 | 154 | Oligodendrocyte precursor cells ingest axons in the mouse neocortex |
+| 609 | ~273 | 123 | Connectomic reconstruction of a female Drosophila ventral nerve cord |
+
+**Action**: Merge these pairs — 8 papers would enter top 500 with their true combined scores.
+
+### F3. Off-topic duplicates inflated by splitting
+
+| Best Rank | Combined Cites | Title |
+| --- | --- | --- |
+| 196 | 42,156 | Cancer statistics, 2020 (two DOIs) |
+| 281 | 24,803 | Cancer statistics, 2023 |
+| 358 | 27,235 | Global burden of disease (multiple editions) |
+
+**Action**: These are noise — should be excluded entirely, not merged.
+
+---
+
+## G. Remaining Author Name Variant Issues
+
+Beyond the merges already applied (Section "Author Merge Summary" above), 25 additional name variant groups detected in top 500, including 6 prolific authors:
+
+| Last Name | Variants | Papers | Issue |
+| --- | --- | --- | --- |
+| Smith | "Stephen J Smith" (2p) vs "Stephen M. Smith" (10p) | 12 | **Different people** — array tomography vs FSL/HCP. Not a merge candidate |
+| Xu | "C. Shan Xu" (9p) vs "Chuan Xu" (1p) | 10 | **Different people** — FIB-SEM vs C. elegans. Not a merge candidate |
+| Hayworth | "K Hayworth" (1p) vs "Kenneth J. Hayworth" (9p) | 10 | **Same person** — should merge |
+| Barabási | "Albert-László Barabási" vs "Albert-Ĺaszló Barabási" (diacritic) | 6 | **Same person** — Unicode normalization needed |
+| Newman | "M. E. J. Newman" / "Mark Newman" / "Michael Newman" / "Michelle G. Newman" | 6 | **Mixed** — M.E.J. = Mark = Michael (same). Michelle is different |
+| Albert | "R. Albert" vs "Réka Albert" | 5 | **Same person** — initial vs full name |
+
+**Impact**: Author-level metrics (productivity, collaboration) are fragmented. Community detection in co-authorship networks may split clusters that should be connected.
+
+---
+
+## H. QA Checklist — Final Human Review
+
+Structured checklist for curator sign-off before publishing the reading list.
+
+### H1. Corpus Integrity
+
+- [ ] **Preprint dedup**: Confirm all 65 duplicate pairs resolved (merge published version, redirect preprint citations)
+- [ ] **Off-topic removal**: Confirm cancer statistics, pharmacology, WHO classification papers excluded from final list
+- [ ] **Author name normalization**: Confirm Hayworth, Barabási, Newman, Albert merges applied
+- [ ] **Author name false positives**: Confirm Smith (Stephen J vs Stephen M) and Xu (C. Shan vs Chuan) kept separate
+
+### H2. Coverage Validation
+
+- [ ] **Review-cited gaps (Section E)**: Decide on inclusion of 18 multi-review-cited papers outside top 500
+- [ ] **High in-degree omissions (Section B)**: Decide on inclusion of top 10 structurally central papers (171–100 in-degree)
+- [ ] **Expert seed papers not in corpus (Section A2)**: Decide which of 28 expert-curated papers to manually add (CATMAID, OME-Zarr, Cellpose 3, etc.)
+- [ ] **2025 frontier reviews (Section E3)**: Confirm manual addition of Helmstaedter, Bock, Khajeh & Lee reviews
+
+### H3. Ranking Accuracy
+
+- [ ] **Citation splitting**: After preprint merge, re-run composite scoring to get corrected ranks
+- [ ] **Freed slots**: After removing ~11 duplicate pairs from top 500, backfill with highest-ranked papers from 501–520
+- [ ] **Score threshold**: Verify new rank-500 cutoff after dedup and merges
+
+### H4. Dimension Assignment
+
+- [ ] **Cross-check dimension labels**: Verify that OCAR-assigned dimensions match expert judgment (especially "methods-general" → "computer-vision-ml" mapping)
+- [ ] **Case studies completeness**: Only 4 papers tagged "case-studies" — confirm this is intentional or add landmark dataset papers
+
+### H5. Content Quality
+
+- [ ] **OCAR card spot-check**: Read 10 randomly sampled OCAR cards for accuracy and tone
+- [ ] **Summary level calibration**: Verify beginner/intermediate/advanced summaries are appropriately differentiated
+- [ ] **Discussion prompt relevance**: Confirm prompts are discussion-worthy, not trivially answerable
+
+### H6. Noise Monitoring
+
+- [ ] **Non-neuro papers in top 500**: Count papers with Neuro=✗ flag; decide acceptable threshold
+- [ ] **Network-science generics**: Decide how many pure graph theory papers (Barabási, Newman, Watts-Strogatz) belong vs. crowd out EM connectomics work
+- [ ] **MRI crossover**: Confirm appropriate balance of MRI-connectomics vs EM-connectomics papers

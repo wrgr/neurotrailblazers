@@ -106,6 +106,25 @@ description: "Internal bibliometric analysis of the EM connectomics literature: 
 </section>
 
 <section class="section section-compact">
+  <h2>Quality Audit Summary</h2>
+
+  <h3>Preprint/Published Duplicates</h3>
+  <p><strong>65 duplicate pairs</strong> detected in the top 2000. Key impacts:</p>
+  <ul>
+    <li><strong>11 pairs</strong> where both versions occupy top-500 slots (wasting capacity)</li>
+    <li><strong>8 papers</strong> that would enter the top 500 if their preprint + published citations were merged</li>
+    <li><strong>~147,000 citations</strong> split across duplicates instead of consolidated</li>
+    <li><strong>3 off-topic duplicates</strong> (cancer statistics) inflated by having multiple DOIs</li>
+  </ul>
+
+  <h3>Author Name Variants</h3>
+  <p><strong>25 name variant groups</strong> detected, 6 involving prolific authors. Mix of true duplicates (Hayworth, Barab&aacute;si, Albert) and false positives (Stephen J Smith &ne; Stephen M Smith). Affects co-authorship metrics and community detection.</p>
+
+  <h3>QA Checklist</h3>
+  <p>A structured human-review checklist covering corpus integrity, coverage validation, ranking accuracy, dimension assignment, content quality, and noise monitoring is in <code>strategic_audit.md</code> Section H.</p>
+</section>
+
+<section class="section section-compact">
   <h2>Source Data</h2>
   <p>Full analysis outputs are in <code>scripts/bibliometrics/output/</code>:</p>
   <ul>

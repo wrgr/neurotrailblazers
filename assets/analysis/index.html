@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroTrailblazers: Connectomics Analysis (K-Core Filtered)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; opacity: 0.9; }
+    
+    .metadata {
+      background: #f8f9fa;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
+    }
+    .metadata h2 { font-size: 1.2em; margin-bottom: 10px; color: #667eea; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .stat-box {
+      background: white;
+      padding: 15px;
+      border-left: 4px solid #667eea;
+      border-radius: 4px;
+    }
+    .stat-label { font-size: 0.9em; color: #666; }
+    .stat-value { font-size: 1.8em; font-weight: bold; color: #667eea; margin-top: 5px; }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    .tier-section {
+      margin-bottom: 50px;
+    }
+    .tier-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+    .tier-color {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .tier-header h2 {
+      font-size: 1.8em;
+    }
+    
+    .tier-red { background: #D62728; }
+    .tier-orange { background: #FF7F0E; }
+    .tier-green { background: #2CA02C; }
+    
+    .visualizations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      margin: 30px 0;
+    }
+    .viz-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .viz-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+    .viz-title {
+      background: #f8f9fa;
+      padding: 15px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+    .viz-link {
+      display: block;
+      padding: 20px;
+      text-align: center;
+      background: white;
+      text-decoration: none;
+      color: #667eea;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .viz-link:hover {
+      background: #f0f0f0;
+    }
+    
+    .description {
+      background: #f0f4ff;
+      padding: 20px;
+      border-left: 4px solid #667eea;
+      margin: 20px 0;
+      border-radius: 4px;
+      line-height: 1.7;
+    }
+    
+    footer {
+      background: #f8f9fa;
+      padding: 30px 40px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9em;
+      color: #666;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      .container { margin: 10px; }
+      .content, header, footer { padding: 20px; }
+      .visualizations { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Connectomics Bibliometrics</h1>
+      <p>K-Core Filtered Analysis & Visualizations</p>
+    </header>
+    
+    <div class="metadata">
+      <h2>Analysis Overview</h2>
+      <p style="margin-bottom: 15px;">
+        This analysis applies k-core decomposition to identify the structural core of connectomics literature.
+        <strong>K-core ≥ 25</strong> (1,064 papers) is the primary corpus for statistics and analysis.
+      </p>
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-label">Total Papers Analyzed</div>
+          <div class="stat-value">7,925</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Primary Corpus (k ≥ 25)</div>
+          <div class="stat-value">1,064</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Ultra-Core (k ≥ 32)</div>
+          <div class="stat-value">213</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Analysis Date</div>
+          <div class="stat-value">Mar 31, 2026</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="description">
+        <strong>What is K-Core?</strong><br>
+        K-core decomposition reveals the structural density of citation networks. A paper with k-core=25 
+        means it belongs to a dense subgraph where every paper has at least 25 connections to other papers 
+        in that subgraph. This is a topology-based measure of centrality, distinct from simple citation counts.
+      </div>
+      
+      <!-- TIER 1: Ultra-Core -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <div class="tier-color tier-red"></div>
+          <h2>Tier 0: Ultra-Core (k ≥ 32)</h2>
+          <span style="margin-left: auto; color: #666;">213 papers</span>
+        </div>
+        <p style="margin-bottom: 15px;">
+          The innermost structural core of connectomics literature. Highest citation density, seminal papers, 
+          and landmark datasets. <strong>Use for: reference and foundational knowledge.</strong>
+        </p>
+        <div class="visualizations">
+          <div class="viz-card">
+            <div class="viz-title">📊 Network Map (k ≥ 32)</div>
+            <a href="analysis/field_map.html" class="viz-link">View Citation Network</a>
+          </div>
+          <div class="viz-card">
+            <div class="viz-title">📈 Evolution Graph</div>
+            <a href="analysis/evolution_graph.html" class="viz-link">View Temporal Evolution</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TIER 2: EM Connectomics (PRIMARY) -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <div class="tier-color tier-orange"></div>
+          <h2>Tier 1: EM Connectomics Core (k ≥ 25) ⭐ PRIMARY</h2>
+          <span style="margin-left: auto; color: #666;">1,064 papers</span>
+        </div>
+        <p style="margin-bottom: 15px;">
+          <strong>Main analysis corpus.</strong> Natural inflection point in the k-core distribution (13.4% of full corpus).
+          Balances structural rigor with field completeness. <strong>Use for: statistics, graphs, general analysis.</strong>
+        </p>
+        <div class="description" style="background: #fff3cd; border-color: #ffc107;">
+          ✓ This is the recommended corpus for statistics and public analysis<br>
+          ✓ Good coverage of established methods and recent advances<br>
+          ✓ Natural topology-based cutoff point
+        </div>
+        <div class="visualizations">
+          <div class="viz-card">
+            <div class="viz-title">📊 Network Map (k ≥ 25)</div>
+            <a href="analysis/field_map.html" class="viz-link">View Citation Network</a>
+          </div>
+          <div class="viz-card">
+            <div class="viz-title">📈 Evolution Graph</div>
+            <a href="analysis/evolution_graph.html" class="viz-link">View Temporal Evolution</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TIER 3: Core + Bridge -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <div class="tier-color tier-green"></div>
+          <h2>Tier 2: Core + Bridge Papers (k ≥ 20)</h2>
+          <span style="margin-left: auto; color: #666;">2,074 papers</span>
+        </div>
+        <p style="margin-bottom: 15px;">
+          Includes bridge papers connecting different connectomics subfields. Better representation of 
+          emerging techniques and recent work. <strong>Use for: journal club reference, technique discovery.</strong>
+        </p>
+        <div class="description">
+          ✓ Captures emerging techniques and subfields<br>
+          ✓ Better coverage of post-2020 work<br>
+          ⚠ Some peripheral papers included; use with topic filtering for journal club
+        </div>
+      </div>
+      
+      <!-- Key Stats -->
+      <div class="tier-section">
+        <h2>Most-Cited Papers & Authors</h2>
+        <p style="margin-bottom: 15px;">
+          Rankings are available in <code>citations_by_tier.json</code> with:
+        </p>
+        <ul style="margin-left: 20px; line-height: 2;">
+          <li><strong>Top 50 papers</strong> by citation count in each tier</li>
+          <li><strong>Top 50 authors</strong> by total citations (with paper counts and averages)</li>
+        </ul>
+        <p style="margin-top: 15px; color: #666;">
+          <strong>Key insight:</strong> The tier distribution reveals different "populations":
+          Ultra-core dominated by network science / graph theory authors (Sporns, Albert, Barabási);
+          Core connectomics tier adds image analysis leaders (Saalfeld, Cardona);
+          Bridge tier introduces deep learning methods (U-Net, TensorFlow authors).
+        </p>
+      </div>
+      
+    </div>
+    
+    <footer>
+      <p><strong>Data & Methods</strong></p>
+      <p style="margin: 10px 0;">
+        • OpenAlex corpus: 7,925 papers from 3 independent harvesting paths (auto-seed, keyword, dataset-anchored)<br>
+        • K-core decomposition on citation network (7,925 nodes, 94,039 edges)<br>
+        • Deduplication, domain classification, and inclusion decisions applied<br>
+        • Analysis generated: March 31, 2026
+      </p>
+      <p style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 20px;">
+        <strong>Important Caveat:</strong> New papers discovered in this analysis have TBD entries for 
+        OCAR/journal club fields (to avoid generation costs). Curated selections to be added manually.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

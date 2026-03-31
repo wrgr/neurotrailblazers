@@ -2,7 +2,7 @@
 layout: default
 title: "Journal Club"
 permalink: /technical-training/journal-club/
-description: "Interactive journal club with 100+ curated connectomics papers. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
+description: "Interactive journal club with 269 curated connectomics papers. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
 ---
 
 <div class="layout-content layout-page">

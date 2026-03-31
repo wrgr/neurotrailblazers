@@ -158,6 +158,46 @@ svg text { font-family: inherit; pointer-events: none; }
   .sidebar { width: 100%; margin-top: auto; border-left: none; border-top: 1px solid #2a2a4a; max-height: 40vh; }
   #graph { margin-bottom: 40vh; }
 }
+
+/* Node filtering UI */
+.filter-section { margin-top: 16px; padding-top: 12px; border-top: 1px solid #2a2a4a; }
+.filter-section h3 { margin-bottom: 10px; font-size: 0.95em; }
+.filter-controls { margin-bottom: 12px; display: flex; gap: 4px; flex-wrap: wrap; }
+.filter-controls button { padding: 4px 8px; font-size: 10px; }
+.visibility-count { font-size: 10px; color: #888; margin-bottom: 8px; }
+.paper-list { 
+  font-size: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: #0a0a1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  padding: 8px;
+}
+.paper-filter-item {
+  padding: 4px;
+  margin: 2px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+.paper-filter-item:hover { background: #1a1a3a; }
+.paper-filter-item input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+.paper-filter-item label {
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.node.hidden { opacity: 0.1; pointer-events: none; }
+.node.dim { opacity: 0.3; }
+.link { stroke: #5a5a8a; stroke-opacity: 0.25; stroke-width: 0.3; }
+.link.dim { stroke-opacity: 0.05; stroke-width: 0.2; }
 </style>
 </head>
 <body>
@@ -434,6 +474,124 @@ function dragEnd(e, d) {
 
 window.addEventListener('load', renderNetwork);
 window.addEventListener('resize', renderNetwork);
+
+
+// ===== NODE FILTERING SYSTEM (Citation Network) =====
+let citNetHiddenNodeIds = new Set();
+let citNetNodes = [];
+let citNetLinks = [];
+
+function updateCitNetFilterUI() {
+  const visibleCount = (citNetNodes || []).length - citNetHiddenNodeIds.size;
+  const totalCount = (citNetNodes || []).length;
+  document.getElementById('visible-count').textContent = Math.max(0, visibleCount);
+  document.getElementById('total-count').textContent = totalCount;
+
+  if (!citNetNodes || citNetNodes.length === 0) return;
+
+  const paperList = document.getElementById('paper-list');
+  const searchTerm = document.getElementById('filter-search')?.value.toLowerCase() || '';
+
+  const filtered = citNetNodes
+    .filter(node => node.title.toLowerCase().includes(searchTerm))
+    .sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0))
+    .slice(0, 200);
+
+  paperList.innerHTML = filtered.map(node => `
+    <div class="paper-filter-item">
+      <input type="checkbox" id="check-${node.id}" 
+             ${citNetHiddenNodeIds.has(node.id) ? '' : 'checked'}
+             onchange="toggleCitNetPaperVisibility(${node.id})">
+      <label for="check-${node.id}" title="${node.title}">
+        ${node.title.substring(0, 45)}...
+      </label>
+    </div>
+  `).join('');
+}
+
+function toggleCitNetPaperVisibility(nodeId) {
+  if (citNetHiddenNodeIds.has(nodeId)) {
+    citNetHiddenNodeIds.delete(nodeId);
+  } else {
+    citNetHiddenNodeIds.add(nodeId);
+  }
+  applyCitNetNodeFiltering();
+}
+
+function showAllPapers() {
+  citNetHiddenNodeIds.clear();
+  applyCitNetNodeFiltering();
+}
+
+function hideAllPapers() {
+  citNetHiddenNodeIds = new Set(citNetNodes.map(n => n.id));
+  applyCitNetNodeFiltering();
+}
+
+function showTopPapers(n) {
+  citNetHiddenNodeIds.clear();
+  citNetNodes
+    .sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0))
+    .slice(n)
+    .forEach(node => citNetHiddenNodeIds.add(node.id));
+  applyCitNetNodeFiltering();
+}
+
+function applyCitNetNodeFiltering() {
+  const nodeElements = document.querySelectorAll('.node');
+  nodeElements.forEach(el => {
+    const nodeData = d3.select(el).datum();
+    if (!nodeData) return;
+
+    if (citNetHiddenNodeIds.has(nodeData.id)) {
+      d3.select(el).classed('hidden', true);
+    } else {
+      d3.select(el).classed('hidden', false);
+    }
+  });
+
+  const linkElements = document.querySelectorAll('line');
+  linkElements.forEach(el => {
+    const linkData = d3.select(el).datum();
+    if (!linkData) return;
+
+    const sourceHidden = citNetHiddenNodeIds.has(linkData.source.id || linkData.source);
+    const targetHidden = citNetHiddenNodeIds.has(linkData.target.id || linkData.target);
+
+    if (sourceHidden || targetHidden) {
+      d3.select(el).classed('dim', true);
+    } else {
+      d3.select(el).classed('dim', false);
+    }
+  });
+
+  updateCitNetFilterUI();
+}
+
+// Initialize filter UI
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('filter-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', updateCitNetFilterUI);
+  }
+});
 </script>
 </body>
 </html>
+  <div class="filter-section">
+    <h3>Filter Papers</h3>
+    <div class="filter-controls">
+      <button onclick="showAllPapers()" style="font-size: 9px; padding: 3px 6px;">All</button>
+      <button onclick="hideAllPapers()" style="font-size: 9px; padding: 3px 6px;">Hide</button>
+      <button onclick="showTopPapers(50)" style="font-size: 9px; padding: 3px 6px;">Top50</button>
+      <button onclick="showTopPapers(100)" style="font-size: 9px; padding: 3px 6px;">Top100</button>
+    </div>
+    <div class="visibility-count">
+      Visible: <span id="visible-count">-</span> / <span id="total-count">-</span>
+    </div>
+    <input type="text" id="filter-search" placeholder="Search papers..." 
+           style="width: 100%; padding: 4px; margin-bottom: 8px; background: #1a1a3a; 
+           border: 1px solid #2a2a4a; color: #ccccff; border-radius: 2px; font-size: 10px;">
+    <div class="paper-list" id="paper-list"></div>
+  </div>
+

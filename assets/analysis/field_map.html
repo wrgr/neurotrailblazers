@@ -36,7 +36,8 @@ tr:hover { background: #1a1a3a; }
          border-radius: 4px; margin: 2px; font-size: 11px; }
 .stat .value { color: #88cc88; font-weight: 600; }
 .node { cursor: pointer; }
-.link { stroke: #5a5a8a; stroke-opacity: 0.5; stroke-width: 0.75; }
+.link { stroke: #5a5a8a; stroke-opacity: 0.25; stroke-width: 0.3; }
+.link.dim { stroke-opacity: 0.05; stroke-width: 0.2; }
 #tooltip { position: absolute; background: #1a1a3a; border: 1px solid #4a4a7a;
             padding: 8px 12px; border-radius: 4px; font-size: 12px;
             pointer-events: none; display: none; max-width: 350px; z-index: 100; }
@@ -44,6 +45,45 @@ tr:hover { background: #1a1a3a; }
                  border-radius: 4px; padding: 12px; margin-top: 12px; display: none; }
 #detail-panel h3 { color: #aaaaff; font-size: 13px; margin-bottom: 4px; }
 #detail-panel .meta { font-size: 11px; color: #888; }
+
+/* Node filtering UI */
+#filter-section { margin-top: 16px; padding-top: 12px; border-top: 1px solid #2a2a4a; }
+#filter-section h2 { margin-bottom: 10px; }
+#filter-controls { margin-bottom: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
+#filter-controls button { padding: 4px 10px; font-size: 10px; }
+.visibility-count { font-size: 10px; color: #888; margin-bottom: 8px; }
+#paper-list { 
+  font-size: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: #0a0a1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  padding: 8px;
+}
+.paper-filter-item {
+  padding: 4px;
+  margin: 2px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+.paper-filter-item:hover { background: #1a1a3a; }
+.paper-filter-item input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+.paper-filter-item label {
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.node.hidden { opacity: 0.1; pointer-events: none; }
+.node.dim { opacity: 0.3; }
+.link.dim { stroke-opacity: 0.1; }
 </style>
 </head>
 <body>
@@ -66,7 +106,26 @@ tr:hover { background: #1a1a3a; }
 
   <div id="detail-panel">
     <h3 id="detail-title"></h3>
-    <div class="meta" id="detail-meta"></div>
+    <div class="meta" id="detail-meta">
+  <div id="filter-section">
+    <h2 onclick="toggleSection(this)">Filter Papers [+]</h2>
+    <div class="section-content open" id="filter-content">
+      <div id="filter-controls">
+        <button onclick="showAllPapers()">Show All</button>
+        <button onclick="hideAllPapers()">Hide All</button>
+        <button onclick="showTopPapers(50)">Top 50</button>
+        <button onclick="showTopPapers(100)">Top 100</button>
+      </div>
+      <div class="visibility-count">
+        Visible: <span id="visible-count">-</span> / <span id="total-count">-</span>
+      </div>
+      <input type="text" id="filter-search" placeholder="Search papers..." 
+             style="width: 100%; padding: 4px; margin-bottom: 8px; background: #1a1a3a; 
+             border: 1px solid #2a2a4a; color: #ccccff; border-radius: 2px; font-size: 11px;">
+      <div id="paper-list"></div>
+    </div>
+  </div>
+</div>
   </div>
 
   <div class="section">
@@ -278,6 +337,141 @@ function renderGraph(data) {
 if (!coauthorData || !coauthorData.nodes || coauthorData.nodes.length === 0) {
   document.getElementById('btn-coauthor').disabled = true;
   document.getElementById('btn-coauthor').title = 'Co-authorship data not available';
+
+
+// ===== NODE FILTERING SYSTEM =====
+let hiddenNodeIds = new Set();
+let citationNodes = [];
+let citationLinks = [];
+
+function updateFilterUI() {
+  // Update visibility count
+  const visibleCount = (citationNodes || []).length - hiddenNodeIds.size;
+  const totalCount = (citationNodes || []).length;
+  document.getElementById('visible-count').textContent = Math.max(0, visibleCount);
+  document.getElementById('total-count').textContent = totalCount;
+
+  // Build paper list for filtering
+  if (!citationNodes || citationNodes.length === 0) return;
+
+  const paperList = document.getElementById('paper-list');
+  const searchTerm = document.getElementById('filter-search').value.toLowerCase();
+
+  const filtered = citationNodes
+    .filter(node => node.title.toLowerCase().includes(searchTerm))
+    .sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0))
+    .slice(0, 200); // Limit to top 200 for performance
+
+  paperList.innerHTML = filtered.map(node => `
+    <div class="paper-filter-item">
+      <input type="checkbox" id="check-${node.id}" 
+             ${hiddenNodeIds.has(node.id) ? '' : 'checked'}
+             onchange="togglePaperVisibility(${node.id})">
+      <label for="check-${node.id}" title="${node.title}">
+        ${node.title.substring(0, 50)}...
+      </label>
+    </div>
+  `).join('');
+}
+
+function togglePaperVisibility(nodeId) {
+  if (hiddenNodeIds.has(nodeId)) {
+    hiddenNodeIds.delete(nodeId);
+  } else {
+    hiddenNodeIds.add(nodeId);
+  }
+  applyNodeFiltering();
+}
+
+function showAllPapers() {
+  hiddenNodeIds.clear();
+  applyNodeFiltering();
+}
+
+function hideAllPapers() {
+  hiddenNodeIds = new Set(citationNodes.map(n => n.id));
+  applyNodeFiltering();
+}
+
+function showTopPapers(n) {
+  hiddenNodeIds.clear();
+  citationNodes
+    .sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0))
+    .slice(n)
+    .forEach(node => hiddenNodeIds.add(node.id));
+  applyNodeFiltering();
+}
+
+function applyNodeFiltering() {
+  // Update visual state
+  const nodeElements = document.querySelectorAll('.node');
+  nodeElements.forEach(el => {
+    const nodeData = d3.select(el).datum();
+    if (!nodeData) return;
+
+    if (hiddenNodeIds.has(nodeData.id)) {
+      d3.select(el).classed('hidden', true);
+    } else {
+      d3.select(el).classed('hidden', false);
+    }
+  });
+
+  // Hide links to/from hidden nodes
+  const linkElements = document.querySelectorAll('.link');
+  linkElements.forEach(el => {
+    const linkData = d3.select(el).datum();
+    if (!linkData) return;
+
+    const sourceHidden = hiddenNodeIds.has(linkData.source.id || linkData.source);
+    const targetHidden = hiddenNodeIds.has(linkData.target.id || linkData.target);
+
+    if (sourceHidden || targetHidden) {
+      d3.select(el).classed('dim', true);
+    } else {
+      d3.select(el).classed('dim', false);
+    }
+  });
+
+  updateFilterUI();
+}
+
+// Store the original data when graph is rendered
+const originalRenderGraph = window.renderGraph || function(){};
+window.renderGraph = function(data) {
+  if (data && data.nodes) {
+    citationNodes = data.nodes.slice();
+    citationLinks = (data.links || []).slice();
+    hiddenNodeIds.clear();
+    updateFilterUI();
+  }
+  // Call original if it exists, otherwise just return
+};
+
+// Hook into switchGraph to capture data
+const originalSwitchGraph = window.switchGraph || function(){};
+window.switchGraph = function(type) {
+  if (type === 'citation') {
+    citationNodes = (window.citationData?.nodes || []).slice();
+    citationLinks = (window.citationData?.links || []).slice();
+  }
+  originalSwitchGraph(type);
+  setTimeout(applyNodeFiltering, 100); // Re-apply filters after render
+};
+
+// Update filter UI on search
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('filter-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', updateFilterUI);
+  }
+  // Initial population
+  setTimeout(() => {
+    if (window.citationData?.nodes) {
+      citationNodes = window.citationData.nodes.slice();
+      updateFilterUI();
+    }
+  }, 500);
+});
 }
 
 // Initial render

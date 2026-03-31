@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EM Connectomics — Citation Network</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0a1a;
+  color: #e0e0e0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  z-index: 20;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+header h1 { font-size: 1.6em; margin: 0; }
+header p { font-size: 0.85em; opacity: 0.9; margin: 3px 0 0; }
+#graph {
+  flex: 1;
+  margin-top: 70px;
+  background: #0a0a1a;
+  position: relative;
+}
+.sidebar {
+  width: 320px;
+  background: #111128;
+  border-left: 1px solid #2a2a4a;
+  padding: 20px;
+  overflow-y: auto;
+  margin-top: 70px;
+  max-height: calc(100vh - 70px);
+}
+.sidebar h3 {
+  color: #aaaadd;
+  font-size: 1em;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2a2a4a;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.control-group {
+  margin-bottom: 15px;
+}
+.control-group label {
+  display: block;
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 5px;
+}
+.control-group input,
+.control-group select {
+  width: 100%;
+  padding: 6px;
+  background: #1a1a3a;
+  border: 1px solid #3a3a5a;
+  color: #e0e0e0;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+.paper-detail {
+  background: #1a1a3a;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  margin-bottom: 15px;
+  display: none;
+}
+.paper-detail.active {
+  display: block;
+}
+.paper-title {
+  color: #8888ff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+.detail-label { font-weight: 600; }
+.detail-value { color: #fff; }
+.legend {
+  background: #1a1a3a;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  font-size: 0.8em;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.legend-text { color: #aaa; }
+svg text { font-family: inherit; pointer-events: none; }
+.link { stroke: #3a3a5a; stroke-opacity: 0.3; }
+.node { cursor: pointer; }
+.node circle { stroke: #0a0a1a; stroke-width: 2px; }
+.node.selected circle { stroke: #ffff00; stroke-width: 3px; }
+.tooltip {
+  position: fixed;
+  background: #1a1a3a;
+  border: 1px solid #4a4a7a;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  pointer-events: none;
+  display: none;
+  z-index: 100;
+  max-width: 280px;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 0.85em;
+}
+.stat-item {
+  background: #1a1a3a;
+  padding: 8px;
+  border-radius: 3px;
+  text-align: center;
+}
+.stat-val { color: #88ff88; font-weight: 600; font-size: 1.1em; }
+.stat-lbl { color: #666; font-size: 0.75em; }
+@media (max-width: 900px) {
+  .sidebar { width: 100%; margin-top: auto; border-left: none; border-top: 1px solid #2a2a4a; max-height: 40vh; }
+  #graph { margin-bottom: 40vh; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>📑 Citation Network</h1>
+  <p>Papers colored by K-Core value, connected by citation relationships</p>
+</header>
+
+<div class="container">
+  <svg id="graph"></svg>
+
+  <div class="sidebar">
+    <h3>🔍 Network Explorer</h3>
+
+    <div class="controls">
+      <div class="control-group">
+        <label>Filter by K-Core</label>
+        <select id="kcore-filter" onchange="updateNetwork()">
+          <option value="all">All Papers</option>
+          <option value="25">Core (k ≥ 25)</option>
+          <option value="32">Ultra-Core (k ≥ 32)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Search Paper</label>
+        <input type="text" id="search-input" placeholder="By year or k-core..." onkeyup="updateSearch()">
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-val" id="node-count">0</div>
+        <div class="stat-lbl">Papers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="edge-count">0</div>
+        <div class="stat-lbl">Citations</div>
+      </div>
+    </div>
+
+    <div class="paper-detail" id="paper-detail">
+      <div class="paper-title" id="detail-title"></div>
+      <div class="detail-row">
+        <span class="detail-label">Year:</span>
+        <span class="detail-value" id="detail-year"></span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Citations:</span>
+        <span class="detail-value" id="detail-citations"></span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">K-Core:</span>
+        <span class="detail-value" id="detail-kcore"></span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Connections:</span>
+        <span class="detail-value" id="detail-connections"></span>
+      </div>
+    </div>
+
+    <h3>Legend</h3>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #D62728;"></div>
+        <div class="legend-text">Ultra-Core (k ≥ 32)</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #FF7F0E;"></div>
+        <div class="legend-text">Core (k ≥ 25)</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #2CA02C;"></div>
+        <div class="legend-text">Bridge (k ≥ 20)</div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #888;"></div>
+        <div class="legend-text">Other</div>
+      </div>
+      <p style="margin-top: 10px; font-size: 0.75em; color: #888;">
+        Node size = citation count<br>
+        Edge weight = citation strength
+      </p>
+    </div>
+
+    <p style="margin-top: 15px; font-size: 0.75em; color: #888;">
+      <strong>Interactions:</strong> Click to select, drag to move, scroll to zoom
+    </p>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// Sample citation network data - milestone papers
+const PAPERS = [
+  {id: 'p1', title: "Collective dynamics of 'small-world' networks", year: 1998, citations: 42581, kcore: 32, authors: "Watts & Strogatz"},
+  {id: 'p2', title: "Emergence of Scaling in Random Networks", year: 1999, citations: 35882, kcore: 32, authors: "Barabási & Albert"},
+  {id: 'p3', title: "Statistical mechanics of complex networks", year: 2002, citations: 20311, kcore: 32, authors: "Albert & Barabási"},
+  {id: 'p4', title: "The Structure and Function of Complex Networks", year: 2003, citations: 18482, kcore: 32, authors: "Newman"},
+  {id: 'p5', title: "A default mode of brain function", year: 2001, citations: 12300, kcore: 32, authors: "Raichle et al."},
+  {id: 'p6', title: "Complex brain networks analysis", year: 2009, citations: 11885, kcore: 32, authors: "Bullmore & Sporns"},
+  {id: 'p7', title: "Connectome assembly in C. elegans", year: 2005, citations: 3333, kcore: 31, authors: "Sporns et al."},
+  {id: 'p8', title: "Network analysis of mammalian connectome", year: 2009, citations: 8721, kcore: 30, authors: "Sporns et al."},
+  {id: 'p9', title: "Principles of connectomics", year: 2016, citations: 8459, kcore: 30, authors: "Lichtman & Denk"},
+  {id: 'p10', title: "C. elegans connectome dataset", year: 1977, citations: 10681, kcore: 30, authors: "White et al."},
+  {id: 'p11', title: "Kasthuri cortical connectome", year: 2014, citations: 1074, kcore: 30, authors: "Kasthuri et al."},
+  {id: 'p12', title: "FAFB fruit fly connectome", year: 2018, citations: 1135, kcore: 28, authors: "Zheng et al."},
+  {id: 'p13', title: "Hemibrain connectome", year: 2020, citations: 1198, kcore: 27, authors: "Scheffer et al."},
+  {id: 'p14', title: "FlyWire interactive connectome", year: 2024, citations: 447, kcore: 26, authors: "Dorkenwald et al."},
+  {id: 'p15', title: "H01 human cortex connectome", year: 2024, citations: 288, kcore: 28, authors: "MICrONS"},
+];
+
+// Citation links (who cites whom)
+const CITATIONS = [
+  {source: 'p1', target: 'p6', strength: 8},
+  {source: 'p1', target: 'p8', strength: 7},
+  {source: 'p2', target: 'p3', strength: 9},
+  {source: 'p3', target: 'p4', strength: 8},
+  {source: 'p5', target: 'p6', strength: 7},
+  {source: 'p10', target: 'p7', strength: 8},
+  {source: 'p7', target: 'p8', strength: 6},
+  {source: 'p7', target: 'p9', strength: 5},
+  {source: 'p6', target: 'p8', strength: 6},
+  {source: 'p9', target: 'p12', strength: 5},
+  {source: 'p10', target: 'p9', strength: 4},
+  {source: 'p12', target: 'p14', strength: 6},
+  {source: 'p11', target: 'p12', strength: 4},
+  {source: 'p13', target: 'p14', strength: 5},
+  {source: 'p14', target: 'p15', strength: 3},
+];
+
+let filteredPapers = [...PAPERS];
+let filteredCitations = [...CITATIONS];
+let selectedPaper = null;
+
+const getColor = (kcore) => {
+  if (kcore >= 32) return '#D62728';
+  if (kcore >= 25) return '#FF7F0E';
+  if (kcore >= 20) return '#2CA02C';
+  return '#888';
+};
+
+function updateNetwork() {
+  const kcore = document.getElementById('kcore-filter').value;
+  filteredPapers = PAPERS.filter(p =>
+    kcore === 'all' ||
+    (kcore === '25' && p.kcore >= 25) ||
+    (kcore === '32' && p.kcore >= 32)
+  );
+  filteredCitations = CITATIONS.filter(c =>
+    filteredPapers.some(p => p.id === c.source) &&
+    filteredPapers.some(p => p.id === c.target)
+  );
+  renderNetwork();
+}
+
+function updateSearch() {
+  const query = document.getElementById('search-input').value.toLowerCase();
+  const matching = filteredPapers.find(p =>
+    p.year.toString().includes(query) ||
+    p.kcore.toString().includes(query)
+  );
+  if (matching) selectPaper(matching);
+}
+
+function renderNetwork() {
+  const svg = d3.select('#graph');
+  const width = svg.node().clientWidth || 1000;
+  const height = svg.node().clientHeight || 600;
+
+  svg.selectAll('*').remove();
+
+  const simulation = d3.forceSimulation(filteredPapers)
+    .force('link', d3.forceLink(filteredCitations)
+      .id(d => d.id)
+      .distance(100)
+      .strength(0.3))
+    .force('charge', d3.forceManyBody().strength(-400))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(d => 6 + Math.sqrt(d.citations) / 30));
+
+  const links = svg.append('g')
+    .selectAll('line')
+    .data(filteredCitations)
+    .enter()
+    .append('line')
+    .attr('class', 'link')
+    .attr('stroke-width', d => d.strength / 2);
+
+  const nodes = svg.append('g')
+    .selectAll('g.node')
+    .data(filteredPapers)
+    .enter()
+    .append('g')
+    .attr('class', 'node')
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', drag)
+      .on('end', dragEnd));
+
+  nodes.append('circle')
+    .attr('r', d => 4 + Math.sqrt(d.citations) / 35)
+    .attr('fill', d => getColor(d.kcore))
+    .attr('opacity', 0.8)
+    .on('click', (e, d) => selectPaper(d))
+    .on('mouseover', (e, d) => showTooltip(e, d))
+    .on('mouseout', hideTooltip);
+
+  simulation.on('tick', () => {
+    links
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    nodes.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  document.getElementById('node-count').textContent = filteredPapers.length;
+  document.getElementById('edge-count').textContent = filteredCitations.length;
+
+  window.networkState = { svg, simulation, nodes, links };
+}
+
+function selectPaper(paper) {
+  selectedPaper = paper;
+  const detail = document.getElementById('paper-detail');
+  detail.classList.add('active');
+  document.getElementById('detail-title').textContent = paper.title;
+  document.getElementById('detail-year').textContent = paper.year;
+  document.getElementById('detail-citations').textContent = paper.citations.toLocaleString();
+  document.getElementById('detail-kcore').textContent = paper.kcore;
+
+  const connected = filteredCitations.filter(c =>
+    c.source.id === paper.id || c.target.id === paper.id
+  ).length;
+  document.getElementById('detail-connections').textContent = connected;
+
+  if (window.networkState) {
+    window.networkState.nodes.classed('selected', n => n.id === paper.id);
+  }
+}
+
+function showTooltip(event, paper) {
+  const tooltip = document.getElementById('tooltip');
+  tooltip.innerHTML = `<strong>${paper.year}</strong><br>${paper.title.substring(0, 50)}...<br>Citations: ${paper.citations}`;
+  tooltip.style.display = 'block';
+  tooltip.style.left = (event.pageX + 10) + 'px';
+  tooltip.style.top = (event.pageY + 10) + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').style.display = 'none';
+}
+
+function dragStart(e, d) {
+  if (!e.active) window.networkState.simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function drag(e, d) {
+  d.fx = e.x;
+  d.fy = e.y;
+}
+
+function dragEnd(e, d) {
+  if (!e.active) window.networkState.simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+window.addEventListener('load', renderNetwork);
+window.addEventListener('resize', renderNetwork);
+</script>
+</body>
+</html>

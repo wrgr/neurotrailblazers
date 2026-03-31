@@ -89,7 +89,7 @@ description: "Internal bibliometric analysis of the EM connectomics literature: 
   </ul>
 
   <h3>Known noise in corpus</h3>
-  <p>The automated corpus construction pulls in some off-topic highly-cited papers (cancer statistics, pharmacology tools, etc.) via broad citation chains. These are identified in audit section C1 and filtered from the curated reading list.</p>
+  <p>The automated corpus construction pulls in some off-topic highly-cited papers (cancer statistics, pharmacology tools, etc.) via broad citation chains. These are identified by a multi-signal domain classifier (journal name + OpenAlex concepts + title keywords) in audit section C2 and filtered from the curated reading list. The classifier labels each of the 7,925 papers as: em_connectomics (28%), neuroscience (18%), mri_connectomics (6%), methods_ml (4%), network_science (2%), off_topic (5%), or unknown (37%).</p>
 </section>
 
 <section class="section section-compact">

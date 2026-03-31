@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Club — Inclusive (≥0.10)</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #0a0a1a; color: #e0e0e0; padding: 30px; max-width: 1200px; margin: 0 auto; }
+h1 { color: #8888ff; margin-bottom: 10px; }
+.subtitle { color: #888; margin-bottom: 30px; font-size: 14px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 15px; margin-bottom: 40px; }
+.stat-box { background: #1a1a3a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 6px; }
+.stat-number { font-size: 24px; font-weight: bold; color: #88cc88; }
+.stat-label { font-size: 12px; color: #888; margin-top: 5px; }
+.thresholds { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+.btn { background: #2a2a5a; color: #ccccff; border: 1px solid #4a4a7a;
+        padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn:hover { background: #3a3a7a; }
+.btn.active { background: #4a4aaa; border-color: #6a6acc; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #222244; }
+th { background: #1a1a3a; color: #8888cc; font-weight: 600; }
+tr:hover { background: #0f0f2a; }
+.rank { color: #666688; width: 30px; }
+.tier { padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+.tier-platinum { background: #4a4a2a; color: #ffdd44; }
+.tier-gold { background: #3a3a2a; color: #ffaa44; }
+.tier-silver { background: #2a2a3a; color: #cccccc; }
+.tier-bronze { background: #2a2a2a; color: #8888aa; }
+</style>
+</head>
+<body>
+<h1>📚 Journal Club — Inclusive (≥0.10)</h1>
+<div class="subtitle">
+  64 papers selected by network importance metrics
+</div>
+
+<div class="stats">
+  <div class="stat-box">
+    <div class="stat-number">64</div>
+    <div class="stat-label">Papers</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">10</div>
+    <div class="stat-label">Platinum</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">5</div>
+    <div class="stat-label">Gold</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">7</div>
+    <div class="stat-label">Silver</div>
+  </div>
+</div>
+
+<table>
+<tr>
+  <th class="rank">#</th>
+  <th>Tier</th>
+  <th>Paper</th>
+  <th>Year</th>
+  <th>Score</th>
+  <th>Citations</th>
+  <th>In/Out</th>
+</tr><tr>
+  <td class="rank">1</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="The Human Connectome: A Structural Description of the Human Brain">The Human Connectome: A Structural Description of the Human Brain</td>
+  <td>2005</td>
+  <td>0.099</td>
+  <td>0</td>
+  <td>367/26</td>
+</tr><tr>
+  <td class="rank">2</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="TrakEM2 Software for Neural Circuit Reconstruction">TrakEM2 Software for Neural Circuit Reconstruction</td>
+  <td>2012</td>
+  <td>0.082</td>
+  <td>0</td>
+  <td>232/26</td>
+</tr><tr>
+  <td class="rank">3</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Structural Properties of the Caenorhabditis elegans Neuronal Network">Structural Properties of the Caenorhabditis elegans Neuronal Network</td>
+  <td>2011</td>
+  <td>0.069</td>
+  <td>0</td>
+  <td>182/25</td>
+</tr><tr>
+  <td class="rank">4</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types">Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacr</td>
+  <td>2020</td>
+  <td>0.071</td>
+  <td>0</td>
+  <td>19/15</td>
+</tr><tr>
+  <td class="rank">5</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="A Computational Framework for Ultrastructural Mapping of Neural Circuitry">A Computational Framework for Ultrastructural Mapping of Neural Circui</td>
+  <td>2009</td>
+  <td>0.060</td>
+  <td>0</td>
+  <td>39/14</td>
+</tr><tr>
+  <td class="rank">6</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Cylindrical diameters method for calibrating section thickness in serial electron microscopy">Cylindrical diameters method for calibrating section thickness in seri</td>
+  <td>2001</td>
+  <td>0.066</td>
+  <td>0</td>
+  <td>22/0</td>
+</tr><tr>
+  <td class="rank">7</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Supervised Learning of Image Restoration with Convolutional Networks">Supervised Learning of Image Restoration with Convolutional Networks</td>
+  <td>2007</td>
+  <td>0.055</td>
+  <td>0</td>
+  <td>60/3</td>
+</tr><tr>
+  <td class="rank">8</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study.">Axo-somatic and axo-dendritic synapses of the cerebral cortex: an elec</td>
+  <td>1959</td>
+  <td>0.045</td>
+  <td>0</td>
+  <td>47/0</td>
+</tr><tr>
+  <td class="rank">9</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm">Segmentation of brain MR images through a hidden Markov random field m</td>
+  <td>2001</td>
+  <td>0.042</td>
+  <td>0</td>
+  <td>38/1</td>
+</tr><tr>
+  <td class="rank">10</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Graph analysis of the human connectome: Promise, progress, and pitfalls">Graph analysis of the human connectome: Promise, progress, and pitfall</td>
+  <td>2013</td>
+  <td>0.016</td>
+  <td>0</td>
+  <td>114/140</td>
+</tr><tr>
+  <td class="rank">11</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Unified segmentation">Unified segmentation</td>
+  <td>2005</td>
+  <td>0.028</td>
+  <td>0</td>
+  <td>36/4</td>
+</tr><tr>
+  <td class="rank">12</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type">Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on </td>
+  <td>1998</td>
+  <td>0.033</td>
+  <td>0</td>
+  <td>18/1</td>
+</tr><tr>
+  <td class="rank">13</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Scale: a chemical approach for fluorescence imaging and reconstruction of transparent mouse brain">Scale: a chemical approach for fluorescence imaging and reconstruction</td>
+  <td>2011</td>
+  <td>0.023</td>
+  <td>0</td>
+  <td>69/7</td>
+</tr><tr>
+  <td class="rank">14</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Automated synaptic connectivity inference for volume electron microscopy">Automated synaptic connectivity inference for volume electron microsco</td>
+  <td>2017</td>
+  <td>0.020</td>
+  <td>0</td>
+  <td>83/25</td>
+</tr><tr>
+  <td class="rank">15</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Immersion Fixation and Staining of Multicubic Millimeter Volumes for Electron Microscopy–Based Connectomics of Human Brain Biopsies">Immersion Fixation and Staining of Multicubic Millimeter Volumes for E</td>
+  <td>2023</td>
+  <td>0.021</td>
+  <td>0</td>
+  <td>15/20</td>
+</tr><tr>
+  <td class="rank">16</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Micro-connectomics: probing the organization of neuronal networks at the cellular scale">Micro-connectomics: probing the organization of neuronal networks at t</td>
+  <td>2017</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>24/57</td>
+</tr><tr>
+  <td class="rank">17</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Whole-Brain Profiling of Cells and Circuits in Mammals by Tissue Clearing and Light-Sheet Microscopy">Whole-Brain Profiling of Cells and Circuits in Mammals by Tissue Clear</td>
+  <td>2020</td>
+  <td>0.015</td>
+  <td>0</td>
+  <td>19/32</td>
+</tr><tr>
+  <td class="rank">18</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Neuroscience Needs Network Science">Neuroscience Needs Network Science</td>
+  <td>2023</td>
+  <td>0.011</td>
+  <td>0</td>
+  <td>10/30</td>
+</tr><tr>
+  <td class="rank">19</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Perisomatic ultrastructure efficiently classifies cells in mouse cortex">Perisomatic ultrastructure efficiently classifies cells in mouse corte</td>
+  <td>2025</td>
+  <td>0.012</td>
+  <td>0</td>
+  <td>8/22</td>
+</tr><tr>
+  <td class="rank">20</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Instance segmentation of mitochondria in electron microscopy images with a generalist deep learning model trained on a diverse dataset">Instance segmentation of mitochondria in electron microscopy images wi</td>
+  <td>2023</td>
+  <td>0.010</td>
+  <td>0</td>
+  <td>19/24</td>
+</tr><tr>
+  <td class="rank">21</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="The neuropeptidergic connectome of <i>C. elegans</i>">The neuropeptidergic connectome of <i>C. elegans</i></td>
+  <td>2022</td>
+  <td>0.009</td>
+  <td>0</td>
+  <td>8/27</td>
+</tr><tr>
+  <td class="rank">22</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Nonlinear structured-illumination microscopy with a photoswitchable protein reveals cellular structures at 50-nm resolution">Nonlinear structured-illumination microscopy with a photoswitchable pr</td>
+  <td>2011</td>
+  <td>0.017</td>
+  <td>0</td>
+  <td>16/1</td>
+</tr><tr>
+  <td class="rank">23</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Prospects and limitations of expansion microscopy in chromatin ultrastructure determination">Prospects and limitations of expansion microscopy in chromatin ultrast</td>
+  <td>2020</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>9/25</td>
+</tr><tr>
+  <td class="rank">24</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Sparse MRI: The application of compressed sensing for rapid MR imaging">Sparse MRI: The application of compressed sensing for rapid MR imaging</td>
+  <td>2007</td>
+  <td>0.020</td>
+  <td>0</td>
+  <td>6/0</td>
+</tr><tr>
+  <td class="rank">25</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Activity Dependent Degeneration Explains Hub Vulnerability in Alzheimer's Disease">Activity Dependent Degeneration Explains Hub Vulnerability in Alzheime</td>
+  <td>2012</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">26</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Comparison of diffusion tractography and tract-tracing measures of connectivity strength in rhesus macaque connectome">Comparison of diffusion tractography and tract-tracing measures of con</td>
+  <td>2015</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">27</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Non-Stationarity in the “Resting Brain’s” Modular Architecture">Non-Stationarity in the “Resting Brain’s” Modular Architecture</td>
+  <td>2012</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">28</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Structural basis for the recognition of SARS-CoV-2 by full-length human ACE2">Structural basis for the recognition of SARS-CoV-2 by full-length huma</td>
+  <td>2020</td>
+  <td>0.019</td>
+  <td>0</td>
+  <td>3/7</td>
+</tr><tr>
+  <td class="rank">29</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="The nonhuman primate neuroimaging and neuroanatomy project">The nonhuman primate neuroimaging and neuroanatomy project</td>
+  <td>2021</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">30</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Center-surround interactions underlie bipolar cell motion sensitivity in the mouse retina">Center-surround interactions underlie bipolar cell motion sensitivity </td>
+  <td>2022</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>3/30</td>
+</tr><tr>
+  <td class="rank">31</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="C. elegans wired and wireless connectome: insights into principles of nervous system structure and function">C. elegans wired and wireless connectome: insights into principles of </td>
+  <td>2025</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">32</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="OBSOLETE: The Senses: Retinal Connectomics">OBSOLETE: The Senses: Retinal Connectomics</td>
+  <td>2016</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">33</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Minimizing Manual Image Segmentation Turn-Around Time for Neuronal Reconstruction by Embracing Uncertainty">Minimizing Manual Image Segmentation Turn-Around Time for Neuronal Rec</td>
+  <td>2012</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>12/4</td>
+</tr><tr>
+  <td class="rank">34</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="The contribution of TMS–EEG coregistration in the exploration of the human cortical connectome">The contribution of TMS–EEG coregistration in the exploration of the h</td>
+  <td>2014</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">35</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="AMST: Alignment to Median Smoothed Template for Focused Ion Beam Scanning Electron Microscopy Image Stacks">AMST: Alignment to Median Smoothed Template for Focused Ion Beam Scann</td>
+  <td>2020</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>7/7</td>
+</tr><tr>
+  <td class="rank">36</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Nanoscale fluorescence imaging of biological ultrastructure via molecular anchoring and physical expansion">Nanoscale fluorescence imaging of biological ultrastructure via molecu</td>
+  <td>2022</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">37</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Reproducibility and intercorrelation of graph theoretical measures in structural brain connectivity networks">Reproducibility and intercorrelation of graph theoretical measures in </td>
+  <td>2018</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">38</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Dynamical intrinsic functional architecture of the brain during absence seizures">Dynamical intrinsic functional architecture of the brain during absenc</td>
+  <td>2013</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">39</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Tissue Clearing and Expansion Methods for Imaging Brain Pathology in Neurodegeneration: From Circuits to Synapses and Beyond">Tissue Clearing and Expansion Methods for Imaging Brain Pathology in N</td>
+  <td>2020</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">40</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Expansion Light Sheet Microscopy Resolves Subcellular Structures in Large Portions of the Songbird Brain">Expansion Light Sheet Microscopy Resolves Subcellular Structures in La</td>
+  <td>2019</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">41</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Building and integrating brain-wide maps of nervous system function in invertebrates">Building and integrating brain-wide maps of nervous system function in</td>
+  <td>2024</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">42</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="FAST-EM array tomography: a workflow for multibeam volume electron microscopy">FAST-EM array tomography: a workflow for multibeam volume electron mic</td>
+  <td>2024</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">43</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Nanoscale volumetric fluorescence imaging via photochemical sectioning">Nanoscale volumetric fluorescence imaging via photochemical sectioning</td>
+  <td>2024</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">44</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Escape steering by cholecystokinin peptidergic signaling">Escape steering by cholecystokinin peptidergic signaling</td>
+  <td>2022</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>7/10</td>
+</tr><tr>
+  <td class="rank">45</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Accelerated intermittent theta burst stimulation in major depression induces decreases in modularity: A connectome analysis">Accelerated intermittent theta burst stimulation in major depression i</td>
+  <td>2018</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">46</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Detecting Synapse Location and Connectivity by Signed Proximity Estimation and Pruning with Deep Nets">Detecting Synapse Location and Connectivity by Signed Proximity Estima</td>
+  <td>2019</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">47</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Neuron Segmentation With High-Level Biological Priors">Neuron Segmentation With High-Level Biological Priors</td>
+  <td>2017</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">48</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="The Intrinsic Similarity of Topological Structure in Biological Neural Networks">The Intrinsic Similarity of Topological Structure in Biological Neural</td>
+  <td>2023</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">49</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Neurobiological commonalities and distinctions among 3 major psychiatric disorders: a graph theoretical analysis of the structural connectome">Neurobiological commonalities and distinctions among 3 major psychiatr</td>
+  <td>2019</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">50</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Comparative 2D and 3D Ultrastructural Analyses of Dendritic Spines from CA1 Pyramidal Neurons in the Mouse Hippocampus">Comparative 2D and 3D Ultrastructural Analyses of Dendritic Spines fro</td>
+  <td>2021</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">51</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="A Diffusion MRI Tractography Connectome of the Mouse Brain and Comparison with Neuronal Tracer Data">A Diffusion MRI Tractography Connectome of the Mouse Brain and Compari</td>
+  <td>2015</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">52</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="NBS-Predict: A prediction-based extension of the network-based statistic">NBS-Predict: A prediction-based extension of the network-based statist</td>
+  <td>2021</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">53</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Current Progress and Challenges in Large-Scale 3D Mitochondria Instance Segmentation">Current Progress and Challenges in Large-Scale 3D Mitochondria Instanc</td>
+  <td>2023</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">54</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Light-sheet fluorescence expansion microscopy: fast mapping of neural circuits at super resolution">Light-sheet fluorescence expansion microscopy: fast mapping of neural </td>
+  <td>2019</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">55</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Reconstruction of a connectome of single neurons in mouse brains by cross-validating multi-scale multi-modality data">Reconstruction of a connectome of single neurons in mouse brains by cr</td>
+  <td>2025</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">56</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Spatial-data-driven layouting for brain network visualization">Spatial-data-driven layouting for brain network visualization</td>
+  <td>2022</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">57</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Neuropilin receptors guide distinct phases of sensory and motor neuronal segmentation">Neuropilin receptors guide distinct phases of sensory and motor neuron</td>
+  <td>2009</td>
+  <td>0.014</td>
+  <td>0</td>
+  <td>11/0</td>
+</tr><tr>
+  <td class="rank">58</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Expansion microscopy facilitates quantitative super-resolution studies of cytoskeletal structures in kinetoplastid parasites">Expansion microscopy facilitates quantitative super-resolution studies</td>
+  <td>2021</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">59</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="High-resolution volumetric imaging constrains compartmental models to explore synaptic integration and temporal processing by cochlear nucleus globular bushy cells">High-resolution volumetric imaging constrains compartmental models to </td>
+  <td>2023</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">60</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Toolkits for detailed and high-throughput interrogation of synapses in C. elegans">Toolkits for detailed and high-throughput interrogation of synapses in</td>
+  <td>2023</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">61</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Large scale brain models of epilepsy: dynamics meets connectomics">Large scale brain models of epilepsy: dynamics meets connectomics</td>
+  <td>2012</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">62</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Serial Block Face‐Scanning Electron Microscopy as a Burgeoning Technology">Serial Block Face‐Scanning Electron Microscopy as a Burgeoning Technol</td>
+  <td>2023</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">63</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Visual Stimulation Switches the Polarity of Excitatory Input to Starburst Amacrine Cells">Visual Stimulation Switches the Polarity of Excitatory Input to Starbu</td>
+  <td>2014</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr><tr>
+  <td class="rank">64</td>
+  <td><span class="tier tier-bronze">Bronze</span></td>
+  <td title="Network Architecture of Gap Junctional Coupling among Parallel Processing Channels in the Mammalian Retina">Network Architecture of Gap Junctional Coupling among Parallel Process</td>
+  <td>2020</td>
+  <td>0.000</td>
+  <td>0</td>
+  <td>0/0</td>
+</tr></table>
+</body>
+</html>

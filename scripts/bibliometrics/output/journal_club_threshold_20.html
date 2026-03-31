@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal Club — Core (≥0.20)</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #0a0a1a; color: #e0e0e0; padding: 30px; max-width: 1200px; margin: 0 auto; }
+h1 { color: #8888ff; margin-bottom: 10px; }
+.subtitle { color: #888; margin-bottom: 30px; font-size: 14px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 15px; margin-bottom: 40px; }
+.stat-box { background: #1a1a3a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 6px; }
+.stat-number { font-size: 24px; font-weight: bold; color: #88cc88; }
+.stat-label { font-size: 12px; color: #888; margin-top: 5px; }
+.thresholds { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+.btn { background: #2a2a5a; color: #ccccff; border: 1px solid #4a4a7a;
+        padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn:hover { background: #3a3a7a; }
+.btn.active { background: #4a4aaa; border-color: #6a6acc; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #222244; }
+th { background: #1a1a3a; color: #8888cc; font-weight: 600; }
+tr:hover { background: #0f0f2a; }
+.rank { color: #666688; width: 30px; }
+.tier { padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+.tier-platinum { background: #4a4a2a; color: #ffdd44; }
+.tier-gold { background: #3a3a2a; color: #ffaa44; }
+.tier-silver { background: #2a2a3a; color: #cccccc; }
+.tier-bronze { background: #2a2a2a; color: #8888aa; }
+</style>
+</head>
+<body>
+<h1>📚 Journal Club — Core (≥0.20)</h1>
+<div class="subtitle">
+  22 papers selected by network importance metrics
+</div>
+
+<div class="stats">
+  <div class="stat-box">
+    <div class="stat-number">22</div>
+    <div class="stat-label">Papers</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">10</div>
+    <div class="stat-label">Platinum</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">5</div>
+    <div class="stat-label">Gold</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">7</div>
+    <div class="stat-label">Silver</div>
+  </div>
+</div>
+
+<table>
+<tr>
+  <th class="rank">#</th>
+  <th>Tier</th>
+  <th>Paper</th>
+  <th>Year</th>
+  <th>Score</th>
+  <th>Citations</th>
+  <th>In/Out</th>
+</tr><tr>
+  <td class="rank">1</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="The Human Connectome: A Structural Description of the Human Brain">The Human Connectome: A Structural Description of the Human Brain</td>
+  <td>2005</td>
+  <td>0.099</td>
+  <td>0</td>
+  <td>367/26</td>
+</tr><tr>
+  <td class="rank">2</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="TrakEM2 Software for Neural Circuit Reconstruction">TrakEM2 Software for Neural Circuit Reconstruction</td>
+  <td>2012</td>
+  <td>0.082</td>
+  <td>0</td>
+  <td>232/26</td>
+</tr><tr>
+  <td class="rank">3</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Structural Properties of the Caenorhabditis elegans Neuronal Network">Structural Properties of the Caenorhabditis elegans Neuronal Network</td>
+  <td>2011</td>
+  <td>0.069</td>
+  <td>0</td>
+  <td>182/25</td>
+</tr><tr>
+  <td class="rank">4</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types">Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacr</td>
+  <td>2020</td>
+  <td>0.071</td>
+  <td>0</td>
+  <td>19/15</td>
+</tr><tr>
+  <td class="rank">5</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="A Computational Framework for Ultrastructural Mapping of Neural Circuitry">A Computational Framework for Ultrastructural Mapping of Neural Circui</td>
+  <td>2009</td>
+  <td>0.060</td>
+  <td>0</td>
+  <td>39/14</td>
+</tr><tr>
+  <td class="rank">6</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Cylindrical diameters method for calibrating section thickness in serial electron microscopy">Cylindrical diameters method for calibrating section thickness in seri</td>
+  <td>2001</td>
+  <td>0.066</td>
+  <td>0</td>
+  <td>22/0</td>
+</tr><tr>
+  <td class="rank">7</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Supervised Learning of Image Restoration with Convolutional Networks">Supervised Learning of Image Restoration with Convolutional Networks</td>
+  <td>2007</td>
+  <td>0.055</td>
+  <td>0</td>
+  <td>60/3</td>
+</tr><tr>
+  <td class="rank">8</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study.">Axo-somatic and axo-dendritic synapses of the cerebral cortex: an elec</td>
+  <td>1959</td>
+  <td>0.045</td>
+  <td>0</td>
+  <td>47/0</td>
+</tr><tr>
+  <td class="rank">9</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Segmentation of brain MR images through a hidden Markov random field model and the expectation-maximization algorithm">Segmentation of brain MR images through a hidden Markov random field m</td>
+  <td>2001</td>
+  <td>0.042</td>
+  <td>0</td>
+  <td>38/1</td>
+</tr><tr>
+  <td class="rank">10</td>
+  <td><span class="tier tier-platinum">Platinum</span></td>
+  <td title="Graph analysis of the human connectome: Promise, progress, and pitfalls">Graph analysis of the human connectome: Promise, progress, and pitfall</td>
+  <td>2013</td>
+  <td>0.016</td>
+  <td>0</td>
+  <td>114/140</td>
+</tr><tr>
+  <td class="rank">11</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Unified segmentation">Unified segmentation</td>
+  <td>2005</td>
+  <td>0.028</td>
+  <td>0</td>
+  <td>36/4</td>
+</tr><tr>
+  <td class="rank">12</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type">Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on </td>
+  <td>1998</td>
+  <td>0.033</td>
+  <td>0</td>
+  <td>18/1</td>
+</tr><tr>
+  <td class="rank">13</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Scale: a chemical approach for fluorescence imaging and reconstruction of transparent mouse brain">Scale: a chemical approach for fluorescence imaging and reconstruction</td>
+  <td>2011</td>
+  <td>0.023</td>
+  <td>0</td>
+  <td>69/7</td>
+</tr><tr>
+  <td class="rank">14</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Automated synaptic connectivity inference for volume electron microscopy">Automated synaptic connectivity inference for volume electron microsco</td>
+  <td>2017</td>
+  <td>0.020</td>
+  <td>0</td>
+  <td>83/25</td>
+</tr><tr>
+  <td class="rank">15</td>
+  <td><span class="tier tier-gold">Gold</span></td>
+  <td title="Immersion Fixation and Staining of Multicubic Millimeter Volumes for Electron Microscopy–Based Connectomics of Human Brain Biopsies">Immersion Fixation and Staining of Multicubic Millimeter Volumes for E</td>
+  <td>2023</td>
+  <td>0.021</td>
+  <td>0</td>
+  <td>15/20</td>
+</tr><tr>
+  <td class="rank">16</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Micro-connectomics: probing the organization of neuronal networks at the cellular scale">Micro-connectomics: probing the organization of neuronal networks at t</td>
+  <td>2017</td>
+  <td>0.007</td>
+  <td>0</td>
+  <td>24/57</td>
+</tr><tr>
+  <td class="rank">17</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Whole-Brain Profiling of Cells and Circuits in Mammals by Tissue Clearing and Light-Sheet Microscopy">Whole-Brain Profiling of Cells and Circuits in Mammals by Tissue Clear</td>
+  <td>2020</td>
+  <td>0.015</td>
+  <td>0</td>
+  <td>19/32</td>
+</tr><tr>
+  <td class="rank">18</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Neuroscience Needs Network Science">Neuroscience Needs Network Science</td>
+  <td>2023</td>
+  <td>0.011</td>
+  <td>0</td>
+  <td>10/30</td>
+</tr><tr>
+  <td class="rank">19</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Perisomatic ultrastructure efficiently classifies cells in mouse cortex">Perisomatic ultrastructure efficiently classifies cells in mouse corte</td>
+  <td>2025</td>
+  <td>0.012</td>
+  <td>0</td>
+  <td>8/22</td>
+</tr><tr>
+  <td class="rank">20</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Instance segmentation of mitochondria in electron microscopy images with a generalist deep learning model trained on a diverse dataset">Instance segmentation of mitochondria in electron microscopy images wi</td>
+  <td>2023</td>
+  <td>0.010</td>
+  <td>0</td>
+  <td>19/24</td>
+</tr><tr>
+  <td class="rank">21</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="The neuropeptidergic connectome of <i>C. elegans</i>">The neuropeptidergic connectome of <i>C. elegans</i></td>
+  <td>2022</td>
+  <td>0.009</td>
+  <td>0</td>
+  <td>8/27</td>
+</tr><tr>
+  <td class="rank">22</td>
+  <td><span class="tier tier-silver">Silver</span></td>
+  <td title="Nonlinear structured-illumination microscopy with a photoswitchable protein reveals cellular structures at 50-nm resolution">Nonlinear structured-illumination microscopy with a photoswitchable pr</td>
+  <td>2011</td>
+  <td>0.017</td>
+  <td>0</td>
+  <td>16/1</td>
+</tr></table>
+</body>
+</html>

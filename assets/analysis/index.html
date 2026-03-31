@@ -253,15 +253,29 @@
       
       <!-- Key Stats -->
       <div class="tier-section">
-        <h2>Most-Cited Papers & Authors</h2>
+        <h2>Rankings, Networks & Citation Lineage</h2>
         <p style="margin-bottom: 15px;">
-          Rankings are available in <code>citations_by_tier.json</code> with:
+          Explore detailed rankings, network structure, and knowledge flow:
         </p>
-        <ul style="margin-left: 20px; line-height: 2;">
-          <li><strong>Top 50 papers</strong> by citation count in each tier</li>
-          <li><strong>Top 50 authors</strong> by total citations (with paper counts and averages)</li>
-        </ul>
-        <p style="margin-top: 15px; color: #666;">
+        <div class="visualizations">
+          <div class="viz-card">
+            <div class="viz-title">📊 K-Core & Rankings</div>
+            <a href="analysis/kcore-rankings.html" class="viz-link">View K-Core Distribution, Top Papers & Authors</a>
+          </div>
+          <div class="viz-card">
+            <div class="viz-title">🤝 Co-author Network</div>
+            <a href="../scripts/bibliometrics/output/coauthor_map_full.html" class="viz-link">View Full Co-authorship Graph</a>
+          </div>
+          <div class="viz-card">
+            <div class="viz-title">📑 Citation Network</div>
+            <a href="analysis/citation-network.html" class="viz-link">View Paper Citation Graph</a>
+          </div>
+          <div class="viz-card">
+            <div class="viz-title">📜 Citation Lineage</div>
+            <a href="analysis/citation-lineage.html" class="viz-link">View Papers in Citation Order</a>
+          </div>
+        </div>
+        <p style="margin-top: 30px; color: #666;">
           <strong>Key insight:</strong> The tier distribution reveals different "populations":
           Ultra-core dominated by network science / graph theory authors (Sporns, Albert, Barabási);
           Core connectomics tier adds image analysis leaders (Saalfeld, Cardona);

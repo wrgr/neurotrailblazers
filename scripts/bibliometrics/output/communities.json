@@ -1,205 +1,100 @@
 [
   {
-    "community_id": 268,
-    "size": 1967,
+    "community_id": 10,
+    "size": 1504,
     "members": [
-      "https://openalex.org/W2067868188",
-      "https://openalex.org/W4409283533",
-      "https://openalex.org/W3209425047",
-      "https://openalex.org/W1606084096",
-      "https://openalex.org/W2075968419",
-      "https://openalex.org/W7117474182",
-      "https://openalex.org/W4407062849",
-      "https://openalex.org/W3201034152",
-      "https://openalex.org/W3112230531",
-      "https://openalex.org/W3204350680",
-      "https://openalex.org/W2081906155",
-      "https://openalex.org/W2594180796",
-      "https://openalex.org/W2560328367",
-      "https://openalex.org/W2772266245",
-      "https://openalex.org/W4239510810",
-      "https://openalex.org/W2026133800",
-      "https://openalex.org/W1588198770",
-      "https://openalex.org/W3132264483",
-      "https://openalex.org/W2954406194",
-      "https://openalex.org/W2425615611",
-      "https://openalex.org/W7117997853",
-      "https://openalex.org/W3158432719",
-      "https://openalex.org/W4313525966",
-      "https://openalex.org/W2598487345",
-      "https://openalex.org/W2794297846",
-      "https://openalex.org/W4390946922",
-      "https://openalex.org/W4292553471",
-      "https://openalex.org/W2948608123",
-      "https://openalex.org/W1975696281",
-      "https://openalex.org/W7116868963",
-      "https://openalex.org/W3180332828",
-      "https://openalex.org/W4409666298",
-      "https://openalex.org/W1926373965",
-      "https://openalex.org/W4405615242",
-      "https://openalex.org/W2040294988",
-      "https://openalex.org/W1991640189",
-      "https://openalex.org/W2765088010",
-      "https://openalex.org/W4414898385",
-      "https://openalex.org/W4411178990",
-      "https://openalex.org/W4388096063",
-      "https://openalex.org/W2920953286",
-      "https://openalex.org/W2589121062",
-      "https://openalex.org/W4362459426",
-      "https://openalex.org/W3015704836",
-      "https://openalex.org/W4225261422",
-      "https://openalex.org/W4213255120",
-      "https://openalex.org/W2028978949",
-      "https://openalex.org/W3091882848",
-      "https://openalex.org/W2972418846",
-      "https://openalex.org/W4408532845"
-    ],
-    "top_concepts": [
-      {
-        "name": "Biology",
-        "count": 1275
-      },
-      {
-        "name": "Computer science",
-        "count": 1273
-      },
-      {
-        "name": "Neuroscience",
-        "count": 1065
-      },
-      {
-        "name": "Artificial intelligence",
-        "count": 919
-      },
-      {
-        "name": "Physics",
-        "count": 574
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Jeff W. Lichtman",
-        "score": 96.0
-      },
-      {
-        "name": "Hanspeter Pfister",
-        "score": 56.0
-      },
-      {
-        "name": "H. Sebastian Seung",
-        "score": 50.0
-      },
-      {
-        "name": "Moritz Helmstaedter",
-        "score": 45.0
-      },
-      {
-        "name": "Richard Schalek",
-        "score": 40.0
-      }
-    ],
-    "year_range": [
-      1959,
-      2026
-    ],
-    "label": "Biology"
-  },
-  {
-    "community_id": 9,
-    "size": 1613,
-    "members": [
-      "https://openalex.org/W2481432072",
-      "https://openalex.org/W2343741871",
-      "https://openalex.org/W2085143064",
-      "https://openalex.org/W2951795510",
-      "https://openalex.org/W2095651675",
-      "https://openalex.org/W2472295098",
-      "https://openalex.org/W4282822545",
-      "https://openalex.org/W4379539304",
-      "https://openalex.org/W2621395617",
-      "https://openalex.org/W4308178026",
-      "https://openalex.org/W2108076065",
-      "https://openalex.org/W1847168837",
-      "https://openalex.org/W2728438250",
-      "https://openalex.org/W2052888471",
-      "https://openalex.org/W4413826923",
-      "https://openalex.org/W1922040578",
-      "https://openalex.org/W2791793893",
-      "https://openalex.org/W7133307816",
-      "https://openalex.org/W4290075581",
-      "https://openalex.org/W2117140276",
-      "https://openalex.org/W2150914399",
-      "https://openalex.org/W2766646477",
-      "https://openalex.org/W4309046960",
-      "https://openalex.org/W1985821218",
-      "https://openalex.org/W2078530990",
-      "https://openalex.org/W4220711214",
-      "https://openalex.org/W4316016059",
-      "https://openalex.org/W1974578052",
-      "https://openalex.org/W2803837136",
-      "https://openalex.org/W3155846106",
-      "https://openalex.org/W2146630029",
-      "https://openalex.org/W1949946847",
-      "https://openalex.org/W2901962575",
-      "https://openalex.org/W2010195483",
-      "https://openalex.org/W2585998010",
-      "https://openalex.org/W2884183601",
-      "https://openalex.org/W2314682713",
-      "https://openalex.org/W2172409629",
-      "https://openalex.org/W2588596488",
-      "https://openalex.org/W2041832654",
-      "https://openalex.org/W2605615531",
-      "https://openalex.org/W2090414491",
-      "https://openalex.org/W1908903040",
-      "https://openalex.org/W7133337383",
-      "https://openalex.org/W4408184458",
-      "https://openalex.org/W2949653992",
-      "https://openalex.org/W3142568287",
-      "https://openalex.org/W2154282155",
-      "https://openalex.org/W2963186114",
-      "https://openalex.org/W2000619457"
+      "https://openalex.org/W2901214657",
+      "https://openalex.org/W1925906180",
+      "https://openalex.org/W3122081420",
+      "https://openalex.org/W2111130146",
+      "https://openalex.org/W2076276327",
+      "https://openalex.org/W2136573752",
+      "https://openalex.org/W2174507744",
+      "https://openalex.org/W2898087980",
+      "https://openalex.org/W2169239134",
+      "https://openalex.org/W1996379253",
+      "https://openalex.org/W2979923937",
+      "https://openalex.org/W4413363062",
+      "https://openalex.org/W2112350817",
+      "https://openalex.org/W2063251739",
+      "https://openalex.org/W3000451470",
+      "https://openalex.org/W1999345164",
+      "https://openalex.org/W3204752043",
+      "https://openalex.org/W2022381144",
+      "https://openalex.org/W3165031368",
+      "https://openalex.org/W2125435699",
+      "https://openalex.org/W2789530810",
+      "https://openalex.org/W2950467641",
+      "https://openalex.org/W2970898057",
+      "https://openalex.org/W2734952001",
+      "https://openalex.org/W2146693559",
+      "https://openalex.org/W4407551360",
+      "https://openalex.org/W2156761163",
+      "https://openalex.org/W2807269390",
+      "https://openalex.org/W2146406922",
+      "https://openalex.org/W4230920194",
+      "https://openalex.org/W2031170958",
+      "https://openalex.org/W2041325253",
+      "https://openalex.org/W4388500467",
+      "https://openalex.org/W3187839368",
+      "https://openalex.org/W2950317798",
+      "https://openalex.org/W2154281919",
+      "https://openalex.org/W2966154809",
+      "https://openalex.org/W2985650045",
+      "https://openalex.org/W2952463830",
+      "https://openalex.org/W2902923903",
+      "https://openalex.org/W2094510930",
+      "https://openalex.org/W2151591509",
+      "https://openalex.org/W2066397523",
+      "https://openalex.org/W2113003488",
+      "https://openalex.org/W2779020697",
+      "https://openalex.org/W4220685893",
+      "https://openalex.org/W4225264166",
+      "https://openalex.org/W2887145400",
+      "https://openalex.org/W2592672814",
+      "https://openalex.org/W2126136676"
     ],
     "top_concepts": [
       {
         "name": "Neuroscience",
-        "count": 1322
+        "count": 1265
       },
       {
         "name": "Psychology",
-        "count": 1166
+        "count": 1126
       },
       {
         "name": "Computer science",
-        "count": 1026
-      },
-      {
-        "name": "Artificial intelligence",
-        "count": 607
+        "count": 954
       },
       {
         "name": "Functional connectivity",
-        "count": 595
+        "count": 583
+      },
+      {
+        "name": "Artificial intelligence",
+        "count": 575
       }
     ],
     "top_authors": [
       {
         "name": "Olaf Sporns",
-        "score": 75.0
+        "score": 72.0
       },
       {
         "name": "Edward T. Bullmore",
-        "score": 71.0
+        "score": 67.0
       },
       {
         "name": "Danielle S. Bassett",
-        "score": 57.0
+        "score": 58.0
       },
       {
         "name": "Yong He",
-        "score": 55.0
+        "score": 54.0
       },
       {
-        "name": "David C. Van Essen",
+        "name": "Martijn P. van den Heuvel",
         "score": 51.0
       }
     ],
@@ -210,185 +105,290 @@
     "label": "Neuroscience"
   },
   {
-    "community_id": 267,
-    "size": 1173,
+    "community_id": 269,
+    "size": 1498,
     "members": [
-      "https://openalex.org/W4378213119",
-      "https://openalex.org/W4410923984",
-      "https://openalex.org/W7140177469",
-      "https://openalex.org/W4388654873",
-      "https://openalex.org/W4413471064",
-      "https://openalex.org/W2797168660",
-      "https://openalex.org/W7133236466",
-      "https://openalex.org/W7118466075",
-      "https://openalex.org/W4379966098",
-      "https://openalex.org/W7126082772",
-      "https://openalex.org/W4412642752",
-      "https://openalex.org/W4416910541",
-      "https://openalex.org/W3105004163",
-      "https://openalex.org/W7125399036",
-      "https://openalex.org/W4412707962",
-      "https://openalex.org/W4411346046",
-      "https://openalex.org/W3125414531",
-      "https://openalex.org/W4323833104",
-      "https://openalex.org/W4408835672",
-      "https://openalex.org/W4404182873",
-      "https://openalex.org/W4413744123",
-      "https://openalex.org/W4391262573",
-      "https://openalex.org/W4409528091",
-      "https://openalex.org/W3199336337",
-      "https://openalex.org/W4411690241",
-      "https://openalex.org/W4390786883",
-      "https://openalex.org/W4392898030",
-      "https://openalex.org/W2135532782",
-      "https://openalex.org/W4412470075",
-      "https://openalex.org/W3115420625",
-      "https://openalex.org/W4411203355",
-      "https://openalex.org/W4413770236",
-      "https://openalex.org/W3003590531",
-      "https://openalex.org/W2949152168",
-      "https://openalex.org/W1983885633",
-      "https://openalex.org/W4384944453",
-      "https://openalex.org/W4413160933",
-      "https://openalex.org/W2955890909",
-      "https://openalex.org/W4411070678",
-      "https://openalex.org/W4406090179",
-      "https://openalex.org/W4402640912",
-      "https://openalex.org/W4317866744",
-      "https://openalex.org/W4399265552",
-      "https://openalex.org/W3030819592",
-      "https://openalex.org/W2917804807",
-      "https://openalex.org/W4285744379",
-      "https://openalex.org/W3112375501",
-      "https://openalex.org/W4226323836",
-      "https://openalex.org/W4412497056",
-      "https://openalex.org/W4224739806"
+      "https://openalex.org/W1968339859",
+      "https://openalex.org/W2113287822",
+      "https://openalex.org/W4400526950",
+      "https://openalex.org/W2592023542",
+      "https://openalex.org/W4416402166",
+      "https://openalex.org/W3116209719",
+      "https://openalex.org/W3130084904",
+      "https://openalex.org/W4376602770",
+      "https://openalex.org/W3125844064",
+      "https://openalex.org/W2574651848",
+      "https://openalex.org/W2623960274",
+      "https://openalex.org/W1588198770",
+      "https://openalex.org/W2129981175",
+      "https://openalex.org/W4317583699",
+      "https://openalex.org/W2094574421",
+      "https://openalex.org/W4206207149",
+      "https://openalex.org/W1956591954",
+      "https://openalex.org/W2819569942",
+      "https://openalex.org/W4313483755",
+      "https://openalex.org/W3005087090",
+      "https://openalex.org/W3110418156",
+      "https://openalex.org/W2952117376",
+      "https://openalex.org/W2946858360",
+      "https://openalex.org/W4323566431",
+      "https://openalex.org/W1967094886",
+      "https://openalex.org/W4379768018",
+      "https://openalex.org/W2004410965",
+      "https://openalex.org/W2147101007",
+      "https://openalex.org/W2613492737",
+      "https://openalex.org/W2979382191",
+      "https://openalex.org/W4378602954",
+      "https://openalex.org/W4415936007",
+      "https://openalex.org/W2147762902",
+      "https://openalex.org/W7133299324",
+      "https://openalex.org/W1618384257",
+      "https://openalex.org/W4409283539",
+      "https://openalex.org/W2899321578",
+      "https://openalex.org/W4317390343",
+      "https://openalex.org/W2127810309",
+      "https://openalex.org/W3087638917",
+      "https://openalex.org/W2070915934",
+      "https://openalex.org/W4319075083",
+      "https://openalex.org/W2783920042",
+      "https://openalex.org/W3203422678",
+      "https://openalex.org/W4387129484",
+      "https://openalex.org/W2626078173",
+      "https://openalex.org/W4385245566",
+      "https://openalex.org/W3186179742",
+      "https://openalex.org/W4416837147",
+      "https://openalex.org/W2058409428"
     ],
     "top_concepts": [
       {
         "name": "Biology",
-        "count": 1014
-      },
-      {
-        "name": "Neuroscience",
-        "count": 949
-      },
-      {
-        "name": "Gene",
-        "count": 540
+        "count": 1016
       },
       {
         "name": "Computer science",
-        "count": 531
+        "count": 905
       },
       {
-        "name": "Genetics",
-        "count": 403
+        "name": "Neuroscience",
+        "count": 842
+      },
+      {
+        "name": "Artificial intelligence",
+        "count": 645
+      },
+      {
+        "name": "Physics",
+        "count": 460
       }
     ],
     "top_authors": [
       {
-        "name": "Albert Cardona",
-        "score": 74.0
+        "name": "Jeff W. Lichtman",
+        "score": 81.0
       },
       {
-        "name": "Gregory S.X.E. Jefferis",
-        "score": 70.0
+        "name": "Hanspeter Pfister",
+        "score": 46.0
       },
       {
-        "name": "Gerald M. Rubin",
-        "score": 66.0
+        "name": "Moritz Helmstaedter",
+        "score": 39.0
       },
       {
-        "name": "Philipp Schlegel",
-        "score": 65.0
+        "name": "H. Sebastian Seung",
+        "score": 38.0
       },
       {
-        "name": "Aljoscha Nern",
-        "score": 53.0
+        "name": "Richard Schalek",
+        "score": 37.0
       }
     ],
     "year_range": [
-      1951,
+      1959,
       2026
     ],
     "label": "Biology"
   },
   {
-    "community_id": 13,
-    "size": 759,
+    "community_id": 265,
+    "size": 1063,
     "members": [
-      "https://openalex.org/W4311040592",
-      "https://openalex.org/W4310989416",
-      "https://openalex.org/W4307906847",
-      "https://openalex.org/W2890167612",
-      "https://openalex.org/W4318053013",
-      "https://openalex.org/W2751884637",
-      "https://openalex.org/W1995017064",
-      "https://openalex.org/W2126795224",
-      "https://openalex.org/W3011176674",
-      "https://openalex.org/W1480729244",
-      "https://openalex.org/W3000440874",
-      "https://openalex.org/W3196648159",
-      "https://openalex.org/W3106933574",
-      "https://openalex.org/W2110052313",
-      "https://openalex.org/W3128704728",
-      "https://openalex.org/W3014067025",
-      "https://openalex.org/W4400198134",
-      "https://openalex.org/W3092542424",
-      "https://openalex.org/W2991193436",
-      "https://openalex.org/W4313423387",
-      "https://openalex.org/W4292722731",
-      "https://openalex.org/W4379967416",
-      "https://openalex.org/W3119003394",
-      "https://openalex.org/W3217752287",
-      "https://openalex.org/W3093601965",
-      "https://openalex.org/W2099709490",
-      "https://openalex.org/W2133416234",
-      "https://openalex.org/W3083241614",
-      "https://openalex.org/W4388658692",
-      "https://openalex.org/W2507786344",
-      "https://openalex.org/W3120897771",
-      "https://openalex.org/W3015197879",
-      "https://openalex.org/W4292247056",
-      "https://openalex.org/W4365505082",
-      "https://openalex.org/W4382918572",
-      "https://openalex.org/W3139101533",
-      "https://openalex.org/W2788640168",
-      "https://openalex.org/W4377092829",
-      "https://openalex.org/W3185152407",
-      "https://openalex.org/W3194129824",
-      "https://openalex.org/W4394995522",
-      "https://openalex.org/W2988906435",
-      "https://openalex.org/W2004314923",
-      "https://openalex.org/W4386810347",
-      "https://openalex.org/W4396862504",
-      "https://openalex.org/W3042716426",
-      "https://openalex.org/W2991467992",
-      "https://openalex.org/W4213007256",
-      "https://openalex.org/W4322763428",
-      "https://openalex.org/W2148898943"
+      "https://openalex.org/W3095729435",
+      "https://openalex.org/W4400477886",
+      "https://openalex.org/W4410456152",
+      "https://openalex.org/W4383899786",
+      "https://openalex.org/W3201219904",
+      "https://openalex.org/W4380730538",
+      "https://openalex.org/W2951363643",
+      "https://openalex.org/W3080144203",
+      "https://openalex.org/W4408394397",
+      "https://openalex.org/W4411037119",
+      "https://openalex.org/W3038776264",
+      "https://openalex.org/W3084308099",
+      "https://openalex.org/W4411642401",
+      "https://openalex.org/W3213626355",
+      "https://openalex.org/W4226290270",
+      "https://openalex.org/W2047572290",
+      "https://openalex.org/W4414573403",
+      "https://openalex.org/W4390876815",
+      "https://openalex.org/W2134098914",
+      "https://openalex.org/W4414542995",
+      "https://openalex.org/W4408403786",
+      "https://openalex.org/W7128495312",
+      "https://openalex.org/W3217781884",
+      "https://openalex.org/W2951101573",
+      "https://openalex.org/W2016922062",
+      "https://openalex.org/W3199336337",
+      "https://openalex.org/W4389669889",
+      "https://openalex.org/W4382874425",
+      "https://openalex.org/W4417401683",
+      "https://openalex.org/W4362198282",
+      "https://openalex.org/W4285084188",
+      "https://openalex.org/W2284226572",
+      "https://openalex.org/W3021638720",
+      "https://openalex.org/W4414163653",
+      "https://openalex.org/W4404019986",
+      "https://openalex.org/W2605475473",
+      "https://openalex.org/W1971175217",
+      "https://openalex.org/W2786672974",
+      "https://openalex.org/W3087540486",
+      "https://openalex.org/W3038575087",
+      "https://openalex.org/W4296396035",
+      "https://openalex.org/W4306659502",
+      "https://openalex.org/W4411037100",
+      "https://openalex.org/W4401984302",
+      "https://openalex.org/W4386918155",
+      "https://openalex.org/W3181455983",
+      "https://openalex.org/W4306797752",
+      "https://openalex.org/W4405948399",
+      "https://openalex.org/W4404395552",
+      "https://openalex.org/W1991433684"
     ],
     "top_concepts": [
       {
         "name": "Biology",
-        "count": 627
+        "count": 892
+      },
+      {
+        "name": "Neuroscience",
+        "count": 836
+      },
+      {
+        "name": "Computer science",
+        "count": 506
+      },
+      {
+        "name": "Gene",
+        "count": 466
+      },
+      {
+        "name": "Genetics",
+        "count": 347
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Albert Cardona",
+        "score": 62.0
+      },
+      {
+        "name": "Gregory S.X.E. Jefferis",
+        "score": 54.0
+      },
+      {
+        "name": "Philipp Schlegel",
+        "score": 52.0
+      },
+      {
+        "name": "Gerald M. Rubin",
+        "score": 48.0
+      },
+      {
+        "name": "Davi D. Bock",
+        "score": 45.0
+      }
+    ],
+    "year_range": [
+      1986,
+      2026
+    ],
+    "label": "Biology"
+  },
+  {
+    "community_id": 268,
+    "size": 746,
+    "members": [
+      "https://openalex.org/W3045772015",
+      "https://openalex.org/W4385318621",
+      "https://openalex.org/W4380489615",
+      "https://openalex.org/W4392723795",
+      "https://openalex.org/W4303648529",
+      "https://openalex.org/W2790410554",
+      "https://openalex.org/W4295765163",
+      "https://openalex.org/W3131348992",
+      "https://openalex.org/W2999417355",
+      "https://openalex.org/W4307847978",
+      "https://openalex.org/W2155464214",
+      "https://openalex.org/W2096386031",
+      "https://openalex.org/W4281906838",
+      "https://openalex.org/W3093318878",
+      "https://openalex.org/W3010441732",
+      "https://openalex.org/W4211123396",
+      "https://openalex.org/W3096762873",
+      "https://openalex.org/W3130988593",
+      "https://openalex.org/W4395084505",
+      "https://openalex.org/W3012921035",
+      "https://openalex.org/W4313531093",
+      "https://openalex.org/W4388616803",
+      "https://openalex.org/W4315607658",
+      "https://openalex.org/W3111590447",
+      "https://openalex.org/W4365505172",
+      "https://openalex.org/W3216865611",
+      "https://openalex.org/W2560322684",
+      "https://openalex.org/W2902161130",
+      "https://openalex.org/W4411384291",
+      "https://openalex.org/W4316362789",
+      "https://openalex.org/W3088966482",
+      "https://openalex.org/W3004280078",
+      "https://openalex.org/W4365514387",
+      "https://openalex.org/W3092136311",
+      "https://openalex.org/W1967303488",
+      "https://openalex.org/W2950967305",
+      "https://openalex.org/W3090774295",
+      "https://openalex.org/W4365150486",
+      "https://openalex.org/W2894710047",
+      "https://openalex.org/W3213488744",
+      "https://openalex.org/W4316363324",
+      "https://openalex.org/W4401021901",
+      "https://openalex.org/W2051051060",
+      "https://openalex.org/W2169205464",
+      "https://openalex.org/W2023536393",
+      "https://openalex.org/W2139636031",
+      "https://openalex.org/W2076485183",
+      "https://openalex.org/W2911188335",
+      "https://openalex.org/W4285743683",
+      "https://openalex.org/W2590568317"
+    ],
+    "top_concepts": [
+      {
+        "name": "Biology",
+        "count": 619
       },
       {
         "name": "Apoptosis",
-        "count": 425
+        "count": 422
       },
       {
         "name": "Biochemistry",
-        "count": 404
+        "count": 407
       },
       {
         "name": "Cell biology",
-        "count": 399
+        "count": 404
       },
       {
         "name": "Autophagy",
-        "count": 396
+        "count": 392
       }
     ],
     "top_authors": [
@@ -420,90 +420,195 @@
     "label": "Biology"
   },
   {
-    "community_id": 265,
-    "size": 532,
+    "community_id": 43,
+    "size": 657,
     "members": [
-      "https://openalex.org/W2027684355",
-      "https://openalex.org/W1606375300",
-      "https://openalex.org/W2163480486",
-      "https://openalex.org/W3189315346",
-      "https://openalex.org/W1938602245",
-      "https://openalex.org/W2793999976",
-      "https://openalex.org/W2337912488",
-      "https://openalex.org/W2907028664",
-      "https://openalex.org/W1821202608",
-      "https://openalex.org/W4226070056",
-      "https://openalex.org/W2021198525",
-      "https://openalex.org/W2970705789",
-      "https://openalex.org/W2610131202",
-      "https://openalex.org/W2896253905",
-      "https://openalex.org/W2943693586",
-      "https://openalex.org/W2060705109",
-      "https://openalex.org/W2977943484",
-      "https://openalex.org/W2063716346",
-      "https://openalex.org/W2092994772",
-      "https://openalex.org/W2608101173",
-      "https://openalex.org/W2113189361",
-      "https://openalex.org/W2111725629",
-      "https://openalex.org/W2046955087",
-      "https://openalex.org/W3015217009",
-      "https://openalex.org/W2345356016",
-      "https://openalex.org/W2244531893",
-      "https://openalex.org/W2288444165",
-      "https://openalex.org/W2146053060",
-      "https://openalex.org/W3048305287",
-      "https://openalex.org/W2085949089",
+      "https://openalex.org/W4410163618",
+      "https://openalex.org/W2800392236",
+      "https://openalex.org/W4321327620",
+      "https://openalex.org/W3142963577",
+      "https://openalex.org/W2952540588",
+      "https://openalex.org/W2083721303",
+      "https://openalex.org/W4228997517",
+      "https://openalex.org/W4200575802",
+      "https://openalex.org/W4387130407",
+      "https://openalex.org/W4284960951",
+      "https://openalex.org/W3188650243",
+      "https://openalex.org/W4225753846",
+      "https://openalex.org/W4285684864",
+      "https://openalex.org/W2980582603",
+      "https://openalex.org/W2920725020",
+      "https://openalex.org/W2001083377",
+      "https://openalex.org/W4379471030",
+      "https://openalex.org/W3021818310",
+      "https://openalex.org/W2051036306",
+      "https://openalex.org/W2466623622",
+      "https://openalex.org/W3208470271",
+      "https://openalex.org/W3140854437",
+      "https://openalex.org/W3018581516",
+      "https://openalex.org/W2133652870",
+      "https://openalex.org/W2913679706",
+      "https://openalex.org/W2114229060",
+      "https://openalex.org/W4387823519",
+      "https://openalex.org/W2913524656",
+      "https://openalex.org/W3089778110",
+      "https://openalex.org/W2906765606",
+      "https://openalex.org/W2069493993",
+      "https://openalex.org/W2296740725",
+      "https://openalex.org/W3114373167",
+      "https://openalex.org/W3125932221",
+      "https://openalex.org/W4401993084",
+      "https://openalex.org/W2494923364",
+      "https://openalex.org/W2093391583",
+      "https://openalex.org/W3215275457",
+      "https://openalex.org/W4399601895",
+      "https://openalex.org/W7117436418",
+      "https://openalex.org/W3184235822",
+      "https://openalex.org/W3087583469",
+      "https://openalex.org/W2052003865",
+      "https://openalex.org/W3027879430",
+      "https://openalex.org/W2794495549",
+      "https://openalex.org/W2912095512",
+      "https://openalex.org/W4413706353",
+      "https://openalex.org/W3198260936",
+      "https://openalex.org/W4280585084",
+      "https://openalex.org/W4401327820"
+    ],
+    "top_concepts": [
+      {
+        "name": "Biology",
+        "count": 492
+      },
+      {
+        "name": "Computer science",
+        "count": 376
+      },
+      {
+        "name": "Neuroscience",
+        "count": 263
+      },
+      {
+        "name": "Physics",
+        "count": 242
+      },
+      {
+        "name": "Artificial intelligence",
+        "count": 224
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Edward S. Boyden",
+        "score": 44.0
+      },
+      {
+        "name": "Qingming Luo",
+        "score": 17.0
+      },
+      {
+        "name": "Markus Sauer",
+        "score": 17.0
+      },
+      {
+        "name": "Hongkui Zeng",
+        "score": 16.0
+      },
+      {
+        "name": "Kwanghun Chung",
+        "score": 15.0
+      }
+    ],
+    "year_range": [
+      1979,
+      2026
+    ],
+    "label": "Biology"
+  },
+  {
+    "community_id": 267,
+    "size": 557,
+    "members": [
+      "https://openalex.org/W2336631630",
+      "https://openalex.org/W2013308234",
+      "https://openalex.org/W2147654946",
+      "https://openalex.org/W2291387931",
+      "https://openalex.org/W1516111018",
+      "https://openalex.org/W2018165711",
+      "https://openalex.org/W2128018982",
+      "https://openalex.org/W2032998042",
+      "https://openalex.org/W1996441425",
+      "https://openalex.org/W7133352822",
+      "https://openalex.org/W2767828695",
+      "https://openalex.org/W1988894481",
+      "https://openalex.org/W3008082060",
+      "https://openalex.org/W1981162246",
+      "https://openalex.org/W2038195874",
+      "https://openalex.org/W2739734465",
       "https://openalex.org/W2094753844",
-      "https://openalex.org/W2740197008",
-      "https://openalex.org/W2911668712",
-      "https://openalex.org/W2626474346",
-      "https://openalex.org/W3004658896",
-      "https://openalex.org/W2614184674",
-      "https://openalex.org/W2753939719",
-      "https://openalex.org/W1905389911",
-      "https://openalex.org/W2048934130",
-      "https://openalex.org/W2282840184",
-      "https://openalex.org/W4321380739",
-      "https://openalex.org/W2170306891",
+      "https://openalex.org/W2793999976",
+      "https://openalex.org/W2063716346",
+      "https://openalex.org/W2010280523",
+      "https://openalex.org/W2896253905",
+      "https://openalex.org/W1834582464",
+      "https://openalex.org/W4393719624",
+      "https://openalex.org/W2001141328",
+      "https://openalex.org/W2018049970",
+      "https://openalex.org/W4405257445",
+      "https://openalex.org/W2796139589",
       "https://openalex.org/W4248272037",
-      "https://openalex.org/W4205750568",
-      "https://openalex.org/W4312574125",
-      "https://openalex.org/W2597816781",
-      "https://openalex.org/W2162896254",
-      "https://openalex.org/W2118089467",
-      "https://openalex.org/W2150343509",
-      "https://openalex.org/W2130466555"
+      "https://openalex.org/W2068367947",
+      "https://openalex.org/W2038574937",
+      "https://openalex.org/W2950013675",
+      "https://openalex.org/W4417251396",
+      "https://openalex.org/W2085949089",
+      "https://openalex.org/W2594560868",
+      "https://openalex.org/W3037110710",
+      "https://openalex.org/W2018838463",
+      "https://openalex.org/W2160995259",
+      "https://openalex.org/W1981192414",
+      "https://openalex.org/W2070050178",
+      "https://openalex.org/W2815764461",
+      "https://openalex.org/W2396849069",
+      "https://openalex.org/W2053367939",
+      "https://openalex.org/W1995960783",
+      "https://openalex.org/W1884503243",
+      "https://openalex.org/W1968127437",
+      "https://openalex.org/W1828262756",
+      "https://openalex.org/W1971937094",
+      "https://openalex.org/W2104488364",
+      "https://openalex.org/W3099365323",
+      "https://openalex.org/W2190793089"
     ],
     "top_concepts": [
       {
         "name": "Computer science",
-        "count": 476
+        "count": 480
       },
       {
         "name": "Mathematics",
-        "count": 337
+        "count": 338
       },
       {
         "name": "Artificial intelligence",
-        "count": 274
+        "count": 273
       },
       {
         "name": "Biology",
-        "count": 214
+        "count": 236
       },
       {
         "name": "Physics",
-        "count": 200
+        "count": 203
       }
     ],
     "top_authors": [
       {
         "name": "Yang\u2010Yu Liu",
-        "score": 20.0
+        "score": 19.0
       },
       {
         "name": "Albert-\u0139aszl\u00f3 Barab\u00e1si",
-        "score": 19.0
+        "score": 18.0
       },
       {
         "name": "Guanrong Chen",
@@ -525,312 +630,102 @@
     "label": "Computer science"
   },
   {
-    "community_id": 11,
-    "size": 484,
+    "community_id": 47,
+    "size": 371,
     "members": [
-      "https://openalex.org/W4389168625",
-      "https://openalex.org/W3165130624",
-      "https://openalex.org/W2913524656",
-      "https://openalex.org/W2317883772",
-      "https://openalex.org/W3161983246",
-      "https://openalex.org/W2894010348",
-      "https://openalex.org/W2195858147",
-      "https://openalex.org/W3110867746",
-      "https://openalex.org/W2743770531",
-      "https://openalex.org/W4293475074",
-      "https://openalex.org/W2770017816",
-      "https://openalex.org/W3118577024",
-      "https://openalex.org/W2794357293",
-      "https://openalex.org/W2794081436",
-      "https://openalex.org/W3015285478",
-      "https://openalex.org/W3035659966",
-      "https://openalex.org/W3017611842",
-      "https://openalex.org/W4205935230",
-      "https://openalex.org/W2771033349",
-      "https://openalex.org/W4229034535",
-      "https://openalex.org/W4313907592",
-      "https://openalex.org/W4399601895",
-      "https://openalex.org/W4388908688",
-      "https://openalex.org/W2076507262",
-      "https://openalex.org/W2767057242",
-      "https://openalex.org/W4323350237",
-      "https://openalex.org/W2901664647",
-      "https://openalex.org/W2018286352",
-      "https://openalex.org/W3027879430",
-      "https://openalex.org/W4410590827",
-      "https://openalex.org/W2080430067",
-      "https://openalex.org/W2972525308",
-      "https://openalex.org/W4377990704",
-      "https://openalex.org/W2789364354",
-      "https://openalex.org/W2949501662",
-      "https://openalex.org/W2759011314",
-      "https://openalex.org/W2100788922",
-      "https://openalex.org/W4206382856",
-      "https://openalex.org/W2980582603",
-      "https://openalex.org/W4389565269",
-      "https://openalex.org/W2885194328",
-      "https://openalex.org/W4294884771",
-      "https://openalex.org/W4207080044",
-      "https://openalex.org/W2521335002",
-      "https://openalex.org/W4400780286",
-      "https://openalex.org/W4401428716",
-      "https://openalex.org/W2998840182",
-      "https://openalex.org/W4283022300",
-      "https://openalex.org/W4407568896",
-      "https://openalex.org/W3176035260"
-    ],
-    "top_concepts": [
-      {
-        "name": "Biology",
-        "count": 373
-      },
-      {
-        "name": "Computer science",
-        "count": 247
-      },
-      {
-        "name": "Physics",
-        "count": 215
-      },
-      {
-        "name": "Microscopy",
-        "count": 190
-      },
-      {
-        "name": "Optics",
-        "count": 188
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Edward S. Boyden",
-        "score": 45.0
-      },
-      {
-        "name": "Markus Sauer",
-        "score": 18.0
-      },
-      {
-        "name": "Paul W. Tillberg",
-        "score": 14.0
-      },
-      {
-        "name": "Kwanghun Chung",
-        "score": 12.0
-      },
-      {
-        "name": "Shoh Asano",
-        "score": 12.0
-      }
-    ],
-    "year_range": [
-      1979,
-      2026
-    ],
-    "label": "Biology"
-  },
-  {
-    "community_id": 266,
-    "size": 402,
-    "members": [
-      "https://openalex.org/W4384825968",
-      "https://openalex.org/W4394917880",
-      "https://openalex.org/W4378976450",
-      "https://openalex.org/W4404521961",
-      "https://openalex.org/W4294927560",
-      "https://openalex.org/W4416428970",
-      "https://openalex.org/W4409730396",
-      "https://openalex.org/W4393937885",
-      "https://openalex.org/W3173376021",
-      "https://openalex.org/W4384564286",
-      "https://openalex.org/W2010107585",
-      "https://openalex.org/W4315631803",
-      "https://openalex.org/W4220958656",
-      "https://openalex.org/W4366411698",
-      "https://openalex.org/W4200585880",
-      "https://openalex.org/W2144821174",
-      "https://openalex.org/W2111987679",
-      "https://openalex.org/W4410218166",
-      "https://openalex.org/W4410580304",
-      "https://openalex.org/W4309227567",
-      "https://openalex.org/W4401412434",
-      "https://openalex.org/W4399940420",
-      "https://openalex.org/W4399621652",
-      "https://openalex.org/W3084112837",
-      "https://openalex.org/W3028605833",
-      "https://openalex.org/W4386315668",
-      "https://openalex.org/W4406563964",
-      "https://openalex.org/W7116670649",
-      "https://openalex.org/W4376602753",
-      "https://openalex.org/W3013843370",
-      "https://openalex.org/W4322726757",
-      "https://openalex.org/W7140932874",
-      "https://openalex.org/W4388126567",
-      "https://openalex.org/W4390197952",
-      "https://openalex.org/W4307833441",
-      "https://openalex.org/W4240267565",
-      "https://openalex.org/W4414957592",
-      "https://openalex.org/W4307487168",
-      "https://openalex.org/W4401925926",
-      "https://openalex.org/W3156389892",
-      "https://openalex.org/W4415324652",
-      "https://openalex.org/W4282940805",
-      "https://openalex.org/W4405925084",
-      "https://openalex.org/W4413946669",
-      "https://openalex.org/W4413376503",
-      "https://openalex.org/W4205117213",
-      "https://openalex.org/W4377564881",
-      "https://openalex.org/W3180956051",
-      "https://openalex.org/W2561134813",
-      "https://openalex.org/W4307227376"
-    ],
-    "top_concepts": [
-      {
-        "name": "Biology",
-        "count": 347
-      },
-      {
-        "name": "Neuroscience",
-        "count": 318
-      },
-      {
-        "name": "Gene",
-        "count": 193
-      },
-      {
-        "name": "Computer science",
-        "count": 183
-      },
-      {
-        "name": "Caenorhabditis elegans",
-        "count": 163
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Oliver Hobert",
-        "score": 33.0
-      },
-      {
-        "name": "Mei Zhen",
-        "score": 23.0
-      },
-      {
-        "name": "Isabel Beets",
-        "score": 18.0
-      },
-      {
-        "name": "Steven W. Flavell",
-        "score": 18.0
-      },
-      {
-        "name": "William R Schafer",
-        "score": 14.0
-      }
-    ],
-    "year_range": [
-      1986,
-      2026
-    ],
-    "label": "Biology"
-  },
-  {
-    "community_id": 269,
-    "size": 274,
-    "members": [
-      "https://openalex.org/W2131565896",
-      "https://openalex.org/W2020310113",
-      "https://openalex.org/W2138913040",
-      "https://openalex.org/W2153674508",
-      "https://openalex.org/W2961926658",
-      "https://openalex.org/W2474925868",
-      "https://openalex.org/W4408135144",
-      "https://openalex.org/W2040259781",
-      "https://openalex.org/W3020985329",
-      "https://openalex.org/W3098652539",
-      "https://openalex.org/W4392949579",
-      "https://openalex.org/W2025304928",
-      "https://openalex.org/W4226092056",
-      "https://openalex.org/W2792023400",
-      "https://openalex.org/W4283386236",
-      "https://openalex.org/W4292547043",
-      "https://openalex.org/W4317937270",
-      "https://openalex.org/W2772709371",
-      "https://openalex.org/W2972930020",
-      "https://openalex.org/W2327847910",
-      "https://openalex.org/W2040399449",
-      "https://openalex.org/W2282666059",
-      "https://openalex.org/W2808389365",
-      "https://openalex.org/W2999387404",
-      "https://openalex.org/W3094576540",
-      "https://openalex.org/W2170747616",
-      "https://openalex.org/W2172018341",
-      "https://openalex.org/W3215153135",
-      "https://openalex.org/W4408165533",
-      "https://openalex.org/W2060657371",
-      "https://openalex.org/W2115135130",
-      "https://openalex.org/W2298669488",
-      "https://openalex.org/W2902986011",
-      "https://openalex.org/W7125818543",
-      "https://openalex.org/W2528135459",
-      "https://openalex.org/W4220847015",
-      "https://openalex.org/W1976791644",
+      "https://openalex.org/W3135990939",
+      "https://openalex.org/W2466877391",
       "https://openalex.org/W1996609490",
-      "https://openalex.org/W2099927806",
-      "https://openalex.org/W3160165418",
-      "https://openalex.org/W2773064559",
-      "https://openalex.org/W3019764653",
-      "https://openalex.org/W4200081697",
-      "https://openalex.org/W2077229035",
-      "https://openalex.org/W2327005788",
-      "https://openalex.org/W3181587624",
-      "https://openalex.org/W1786098380",
+      "https://openalex.org/W2950701625",
+      "https://openalex.org/W2040399449",
+      "https://openalex.org/W2804023749",
+      "https://openalex.org/W4200245436",
+      "https://openalex.org/W2781369588",
+      "https://openalex.org/W2503761780",
+      "https://openalex.org/W3029650759",
+      "https://openalex.org/W2010857256",
+      "https://openalex.org/W2588173842",
+      "https://openalex.org/W2051666014",
+      "https://openalex.org/W4282979317",
+      "https://openalex.org/W2588030037",
+      "https://openalex.org/W2560328367",
+      "https://openalex.org/W22297218",
+      "https://openalex.org/W4205617607",
+      "https://openalex.org/W2156266633",
+      "https://openalex.org/W4226092056",
+      "https://openalex.org/W2736601468",
+      "https://openalex.org/W2020310113",
+      "https://openalex.org/W2047036345",
+      "https://openalex.org/W2101675075",
+      "https://openalex.org/W3049077804",
+      "https://openalex.org/W2743807044",
+      "https://openalex.org/W2911798429",
+      "https://openalex.org/W2014159104",
+      "https://openalex.org/W2397405284",
+      "https://openalex.org/W3111658548",
+      "https://openalex.org/W4396508120",
+      "https://openalex.org/W2989651750",
+      "https://openalex.org/W2884430236",
+      "https://openalex.org/W4302283168",
+      "https://openalex.org/W1884620995",
+      "https://openalex.org/W2767812266",
+      "https://openalex.org/W7123441323",
+      "https://openalex.org/W4386086198",
+      "https://openalex.org/W4313700805",
+      "https://openalex.org/W2982169647",
       "https://openalex.org/W3017931079",
-      "https://openalex.org/W4376636133",
-      "https://openalex.org/W2040156859"
+      "https://openalex.org/W2770859475",
+      "https://openalex.org/W2808389365",
+      "https://openalex.org/W4297224634",
+      "https://openalex.org/W2106069155",
+      "https://openalex.org/W2145889472",
+      "https://openalex.org/W2761972343",
+      "https://openalex.org/W4360610227",
+      "https://openalex.org/W4401566587",
+      "https://openalex.org/W2902837227"
     ],
     "top_concepts": [
       {
         "name": "Biology",
-        "count": 222
+        "count": 229
+      },
+      {
+        "name": "Computer science",
+        "count": 217
       },
       {
         "name": "Neuroscience",
-        "count": 218
+        "count": 211
+      },
+      {
+        "name": "Artificial intelligence",
+        "count": 164
       },
       {
         "name": "Retina",
-        "count": 162
-      },
-      {
-        "name": "Computer science",
-        "count": 122
-      },
-      {
-        "name": "Biochemistry",
-        "count": 106
+        "count": 156
       }
     ],
     "top_authors": [
       {
         "name": "Thomas Euler",
-        "score": 19.0
-      },
-      {
-        "name": "Philipp Berens",
-        "score": 17.0
-      },
-      {
-        "name": "Kevin L. Briggman",
         "score": 16.0
       },
       {
-        "name": "Timm Schubert",
-        "score": 15.0
+        "name": "Kevin L. Briggman",
+        "score": 14.0
       },
       {
         "name": "Rachel Wong",
         "score": 13.0
+      },
+      {
+        "name": "Philipp Berens",
+        "score": 13.0
+      },
+      {
+        "name": "Fred Rieke",
+        "score": 12.0
       }
     ],
     "year_range": [
@@ -840,59 +735,164 @@
     "label": "Biology"
   },
   {
-    "community_id": 131,
+    "community_id": 52,
+    "size": 361,
+    "members": [
+      "https://openalex.org/W3089407290",
+      "https://openalex.org/W4390954457",
+      "https://openalex.org/W3163993681",
+      "https://openalex.org/W4393910209",
+      "https://openalex.org/W3217764984",
+      "https://openalex.org/W4409493444",
+      "https://openalex.org/W4399940420",
+      "https://openalex.org/W4389206933",
+      "https://openalex.org/W4404477699",
+      "https://openalex.org/W4408377765",
+      "https://openalex.org/W2102304447",
+      "https://openalex.org/W4387908507",
+      "https://openalex.org/W4307760054",
+      "https://openalex.org/W4399327211",
+      "https://openalex.org/W3199313916",
+      "https://openalex.org/W2040092971",
+      "https://openalex.org/W4377564881",
+      "https://openalex.org/W4393131271",
+      "https://openalex.org/W4389370632",
+      "https://openalex.org/W4384564286",
+      "https://openalex.org/W4405925084",
+      "https://openalex.org/W2010107585",
+      "https://openalex.org/W7130562695",
+      "https://openalex.org/W4362663637",
+      "https://openalex.org/W4377971277",
+      "https://openalex.org/W4213105194",
+      "https://openalex.org/W4226284307",
+      "https://openalex.org/W4360860763",
+      "https://openalex.org/W7134037892",
+      "https://openalex.org/W4288041219",
+      "https://openalex.org/W4362461311",
+      "https://openalex.org/W3028605833",
+      "https://openalex.org/W4415932383",
+      "https://openalex.org/W4307833441",
+      "https://openalex.org/W4389095547",
+      "https://openalex.org/W4399589660",
+      "https://openalex.org/W4327652982",
+      "https://openalex.org/W7117299898",
+      "https://openalex.org/W4320032485",
+      "https://openalex.org/W4410487315",
+      "https://openalex.org/W4205573784",
+      "https://openalex.org/W4383823256",
+      "https://openalex.org/W4389263735",
+      "https://openalex.org/W4214905425",
+      "https://openalex.org/W4392346249",
+      "https://openalex.org/W4381469767",
+      "https://openalex.org/W2583615521",
+      "https://openalex.org/W4404388635",
+      "https://openalex.org/W4386462278",
+      "https://openalex.org/W4367550186"
+    ],
+    "top_concepts": [
+      {
+        "name": "Biology",
+        "count": 305
+      },
+      {
+        "name": "Neuroscience",
+        "count": 285
+      },
+      {
+        "name": "Computer science",
+        "count": 180
+      },
+      {
+        "name": "Gene",
+        "count": 174
+      },
+      {
+        "name": "Caenorhabditis elegans",
+        "count": 150
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Oliver Hobert",
+        "score": 24.0
+      },
+      {
+        "name": "Mei Zhen",
+        "score": 17.0
+      },
+      {
+        "name": "Isabel Beets",
+        "score": 15.0
+      },
+      {
+        "name": "William R Schafer",
+        "score": 15.0
+      },
+      {
+        "name": "Steven W. Flavell",
+        "score": 13.0
+      }
+    ],
+    "year_range": [
+      1986,
+      2026
+    ],
+    "label": "Biology"
+  },
+  {
+    "community_id": 13,
     "size": 196,
     "members": [
-      "https://openalex.org/W2004487260",
-      "https://openalex.org/W2028843000",
-      "https://openalex.org/W2119756048",
-      "https://openalex.org/W2975778935",
-      "https://openalex.org/W2621719259",
-      "https://openalex.org/W2061738460",
-      "https://openalex.org/W2097594208",
-      "https://openalex.org/W1873025507",
-      "https://openalex.org/W2161372802",
-      "https://openalex.org/W1997744066",
-      "https://openalex.org/W2113547018",
-      "https://openalex.org/W2167962746",
-      "https://openalex.org/W2165180302",
-      "https://openalex.org/W2883724767",
-      "https://openalex.org/W3035832621",
-      "https://openalex.org/W2523345220",
-      "https://openalex.org/W1930176674",
-      "https://openalex.org/W3003320109",
-      "https://openalex.org/W2625025200",
-      "https://openalex.org/W2771620931",
-      "https://openalex.org/W2922390419",
-      "https://openalex.org/W2120744756",
-      "https://openalex.org/W2017572837",
-      "https://openalex.org/W2320746350",
-      "https://openalex.org/W1669004732",
+      "https://openalex.org/W2528896200",
       "https://openalex.org/W1884248324",
-      "https://openalex.org/W2801080498",
-      "https://openalex.org/W2105095422",
-      "https://openalex.org/W2980877498",
-      "https://openalex.org/W4283210778",
-      "https://openalex.org/W4220747815",
-      "https://openalex.org/W2018012328",
-      "https://openalex.org/W3014736419",
-      "https://openalex.org/W1964195730",
-      "https://openalex.org/W2024225823",
-      "https://openalex.org/W2096316732",
-      "https://openalex.org/W2789432037",
-      "https://openalex.org/W3172731349",
-      "https://openalex.org/W1497749959",
-      "https://openalex.org/W1586002633",
-      "https://openalex.org/W1528695685",
-      "https://openalex.org/W1983289649",
+      "https://openalex.org/W2365062941",
+      "https://openalex.org/W2018019092",
+      "https://openalex.org/W2122493817",
+      "https://openalex.org/W2139968168",
+      "https://openalex.org/W2892219240",
+      "https://openalex.org/W2094552064",
+      "https://openalex.org/W1940372763",
+      "https://openalex.org/W2131006763",
+      "https://openalex.org/W2143468202",
+      "https://openalex.org/W2140334255",
+      "https://openalex.org/W2530019569",
       "https://openalex.org/W2059679871",
+      "https://openalex.org/W2088443388",
+      "https://openalex.org/W2165903263",
+      "https://openalex.org/W2883724767",
+      "https://openalex.org/W2789432037",
+      "https://openalex.org/W2004487260",
+      "https://openalex.org/W1975914737",
+      "https://openalex.org/W1610297352",
+      "https://openalex.org/W2343651276",
+      "https://openalex.org/W2050333142",
       "https://openalex.org/W3133705929",
-      "https://openalex.org/W4390950120",
+      "https://openalex.org/W2165180302",
+      "https://openalex.org/W1924737941",
+      "https://openalex.org/W2033800529",
+      "https://openalex.org/W2122498005",
+      "https://openalex.org/W1959403776",
+      "https://openalex.org/W2917961615",
+      "https://openalex.org/W2163263919",
+      "https://openalex.org/W2770490344",
+      "https://openalex.org/W3157568328",
+      "https://openalex.org/W1528695685",
+      "https://openalex.org/W2899632269",
+      "https://openalex.org/W2139713088",
+      "https://openalex.org/W2081513016",
+      "https://openalex.org/W2136215475",
+      "https://openalex.org/W2972315732",
+      "https://openalex.org/W2347006227",
+      "https://openalex.org/W3014736419",
+      "https://openalex.org/W2100605727",
       "https://openalex.org/W2898845733",
-      "https://openalex.org/W2064713248",
-      "https://openalex.org/W2567407721",
-      "https://openalex.org/W2141845572",
-      "https://openalex.org/W2100605727"
+      "https://openalex.org/W2611953475",
+      "https://openalex.org/W2900647367",
+      "https://openalex.org/W1537855447",
+      "https://openalex.org/W1968843244",
+      "https://openalex.org/W2500983594",
+      "https://openalex.org/W2006055411",
+      "https://openalex.org/W2028843000"
     ],
     "top_concepts": [
       {
@@ -912,7 +912,7 @@
         "count": 116
       },
       {
-        "name": "Computer science",
+        "name": "Optics",
         "count": 96
       }
     ],
@@ -945,79 +945,79 @@
     "label": "Geology"
   },
   {
-    "community_id": 223,
-    "size": 85,
+    "community_id": 237,
+    "size": 90,
     "members": [
-      "https://openalex.org/W2054937781",
-      "https://openalex.org/W2327619764",
-      "https://openalex.org/W2321443289",
-      "https://openalex.org/W2070262652",
-      "https://openalex.org/W2077692714",
-      "https://openalex.org/W2047813746",
-      "https://openalex.org/W3039228613",
-      "https://openalex.org/W2070355489",
-      "https://openalex.org/W1989645735",
-      "https://openalex.org/W1995979103",
-      "https://openalex.org/W4234044776",
-      "https://openalex.org/W2049285151",
-      "https://openalex.org/W3004227146",
-      "https://openalex.org/W3198999861",
-      "https://openalex.org/W2091647611",
-      "https://openalex.org/W2147837896",
-      "https://openalex.org/W2044269902",
-      "https://openalex.org/W2111387415",
-      "https://openalex.org/W1988555029",
-      "https://openalex.org/W2597101834",
-      "https://openalex.org/W2292225348",
-      "https://openalex.org/W2891633202",
-      "https://openalex.org/W2613087091",
-      "https://openalex.org/W4240811803",
-      "https://openalex.org/W4386137920",
-      "https://openalex.org/W3165300360",
-      "https://openalex.org/W2113796459",
-      "https://openalex.org/W2105781382",
-      "https://openalex.org/W2896108319",
-      "https://openalex.org/W2006084368",
-      "https://openalex.org/W2060295277",
-      "https://openalex.org/W2946882282",
-      "https://openalex.org/W2312443345",
-      "https://openalex.org/W2041738960",
-      "https://openalex.org/W28508286",
+      "https://openalex.org/W2923416622",
+      "https://openalex.org/W4402504106",
+      "https://openalex.org/W2889495297",
+      "https://openalex.org/W4386086544",
       "https://openalex.org/W2270134119",
-      "https://openalex.org/W3015457053",
+      "https://openalex.org/W2039396629",
+      "https://openalex.org/W2044269902",
+      "https://openalex.org/W2070262652",
+      "https://openalex.org/W2089073763",
+      "https://openalex.org/W2132262459",
+      "https://openalex.org/W4386137920",
+      "https://openalex.org/W2084275081",
+      "https://openalex.org/W2463368692",
+      "https://openalex.org/W1989645735",
+      "https://openalex.org/W1516384029",
+      "https://openalex.org/W2054937781",
+      "https://openalex.org/W2070355489",
+      "https://openalex.org/W1988555029",
+      "https://openalex.org/W2593436234",
+      "https://openalex.org/W2111387415",
+      "https://openalex.org/W2312443345",
+      "https://openalex.org/W2597101834",
+      "https://openalex.org/W2009337748",
+      "https://openalex.org/W2293824145",
+      "https://openalex.org/W2794360572",
+      "https://openalex.org/W2169678694",
+      "https://openalex.org/W2065657816",
+      "https://openalex.org/W28508286",
+      "https://openalex.org/W2891633202",
+      "https://openalex.org/W2335028556",
+      "https://openalex.org/W2110171384",
+      "https://openalex.org/W2314665996",
       "https://openalex.org/W3160443803",
-      "https://openalex.org/W1968541251",
-      "https://openalex.org/W2080367602",
-      "https://openalex.org/W2068912499",
-      "https://openalex.org/W7131217967",
-      "https://openalex.org/W4411077595",
-      "https://openalex.org/W2781578718",
-      "https://openalex.org/W2295668630",
-      "https://openalex.org/W2411297045",
-      "https://openalex.org/W4411077857",
-      "https://openalex.org/W2078181849",
-      "https://openalex.org/W1972859975",
-      "https://openalex.org/W52637270"
+      "https://openalex.org/W2041738960",
+      "https://openalex.org/W2060295277",
+      "https://openalex.org/W2105781382",
+      "https://openalex.org/W2914009687",
+      "https://openalex.org/W2292225348",
+      "https://openalex.org/W1982125426",
+      "https://openalex.org/W4387164156",
+      "https://openalex.org/W3036654196",
+      "https://openalex.org/W3004227146",
+      "https://openalex.org/W2073590018",
+      "https://openalex.org/W2077692714",
+      "https://openalex.org/W4411098762",
+      "https://openalex.org/W2946882282",
+      "https://openalex.org/W2015688756",
+      "https://openalex.org/W3165300360",
+      "https://openalex.org/W2077310580",
+      "https://openalex.org/W2080367602"
     ],
     "top_concepts": [
       {
         "name": "Chemistry",
-        "count": 78
+        "count": 83
       },
       {
         "name": "Chromatography",
         "count": 66
       },
       {
+        "name": "Organic chemistry",
+        "count": 62
+      },
+      {
         "name": "Mass spectrometry",
         "count": 60
       },
       {
-        "name": "Organic chemistry",
-        "count": 59
-      },
-      {
-        "name": "Ion",
+        "name": "Computer science",
         "count": 56
       }
     ],
@@ -1050,54 +1050,73 @@
     "label": "Chemistry"
   },
   {
-    "community_id": 16,
-    "size": 24,
+    "community_id": 15,
+    "size": 43,
     "members": [
-      "https://openalex.org/W1557303332",
+      "https://openalex.org/W2462495054",
+      "https://openalex.org/W2063795822",
+      "https://openalex.org/W1982830599",
+      "https://openalex.org/W2150375089",
+      "https://openalex.org/W2168590813",
+      "https://openalex.org/W2015990656",
+      "https://openalex.org/W2000777473",
+      "https://openalex.org/W2952959359",
+      "https://openalex.org/W2120357670",
+      "https://openalex.org/W2010010320",
+      "https://openalex.org/W1968700646",
+      "https://openalex.org/W2971969415",
       "https://openalex.org/W2119588417",
       "https://openalex.org/W2013122647",
-      "https://openalex.org/W2026826561",
-      "https://openalex.org/W2103876354",
-      "https://openalex.org/W1982830599",
-      "https://openalex.org/W1914381346",
-      "https://openalex.org/W1516755758",
-      "https://openalex.org/W2159874460",
-      "https://openalex.org/W2063795822",
+      "https://openalex.org/W2000399989",
       "https://openalex.org/W2034674335",
-      "https://openalex.org/W1589353809",
-      "https://openalex.org/W2137587432",
+      "https://openalex.org/W1516755758",
+      "https://openalex.org/W1557303332",
+      "https://openalex.org/W2026826561",
       "https://openalex.org/W2084760609",
-      "https://openalex.org/W2010010320",
-      "https://openalex.org/W2168590813",
-      "https://openalex.org/W1768956672",
+      "https://openalex.org/W4410952377",
+      "https://openalex.org/W2161594710",
+      "https://openalex.org/W2577664326",
+      "https://openalex.org/W2120019338",
+      "https://openalex.org/W1603591159",
+      "https://openalex.org/W2166667242",
+      "https://openalex.org/W1914381346",
+      "https://openalex.org/W2159874460",
       "https://openalex.org/W2116900663",
-      "https://openalex.org/W1968700646",
-      "https://openalex.org/W1635746382",
+      "https://openalex.org/W2137587432",
       "https://openalex.org/W1612007229",
-      "https://openalex.org/W2952959359",
+      "https://openalex.org/W2023015865",
+      "https://openalex.org/W2133589238",
+      "https://openalex.org/W2037852973",
+      "https://openalex.org/W2958197594",
+      "https://openalex.org/W1768956672",
       "https://openalex.org/W2122011624",
-      "https://openalex.org/W1603591159"
+      "https://openalex.org/W1589353809",
+      "https://openalex.org/W2103876354",
+      "https://openalex.org/W1989477529",
+      "https://openalex.org/W3022532439",
+      "https://openalex.org/W2160648917",
+      "https://openalex.org/W1635746382"
     ],
     "top_concepts": [
       {
         "name": "Neuroscience",
-        "count": 24
+        "count": 38
       },
       {
         "name": "Cognition",
+        "count": 33
+      },
+      {
+        "name": "Psychology",
+        "count": 26
+      },
+      {
+        "name": "Biology",
         "count": 21
       },
       {
         "name": "Prefrontal cortex",
         "count": 20
-      },
-      {
-        "name": "Dopamine",
-        "count": 18
-      },
-      {
-        "name": "Receptor",
-        "count": 15
       }
     ],
     "top_authors": [
@@ -1106,62 +1125,62 @@
         "score": 5.0
       },
       {
+        "name": "Giacomo Rizzolatti",
+        "score": 3.0
+      },
+      {
+        "name": "Francine M. Bene\u0161",
+        "score": 2.0
+      },
+      {
         "name": "David A. Lewis",
         "score": 2.0
       },
       {
-        "name": "Bita Moghaddam",
-        "score": 2.0
-      },
-      {
-        "name": "Anita Verma",
-        "score": 2.0
-      },
-      {
-        "name": "Leonid S. Krimer",
+        "name": "Vittorio Gallese",
         "score": 2.0
       }
     ],
     "year_range": [
-      1995,
-      2018
+      1935,
+      2025
     ],
     "label": "Neuroscience"
   },
   {
-    "community_id": 10,
+    "community_id": 11,
     "size": 22,
     "members": [
-      "https://openalex.org/W2063713461",
       "https://openalex.org/W2301441340",
-      "https://openalex.org/W2170560268",
-      "https://openalex.org/W2911457485",
       "https://openalex.org/W3102072134",
-      "https://openalex.org/W2768983069",
-      "https://openalex.org/W2042187174",
-      "https://openalex.org/W2922381667",
-      "https://openalex.org/W110873930",
-      "https://openalex.org/W2144573642",
-      "https://openalex.org/W2790041266",
-      "https://openalex.org/W2019719802",
-      "https://openalex.org/W2005348841",
-      "https://openalex.org/W2016934694",
       "https://openalex.org/W2017344875",
+      "https://openalex.org/W2019719802",
       "https://openalex.org/W2018808042",
-      "https://openalex.org/W2005444962",
-      "https://openalex.org/W2608348806",
-      "https://openalex.org/W2022985124",
       "https://openalex.org/W1972096864",
+      "https://openalex.org/W2922381667",
+      "https://openalex.org/W2042187174",
+      "https://openalex.org/W2144573642",
+      "https://openalex.org/W2057242214",
+      "https://openalex.org/W2768983069",
+      "https://openalex.org/W2016934694",
+      "https://openalex.org/W2608348806",
+      "https://openalex.org/W2063713461",
+      "https://openalex.org/W2911457485",
+      "https://openalex.org/W2790041266",
+      "https://openalex.org/W2022985124",
+      "https://openalex.org/W2005444962",
       "https://openalex.org/W2538416976",
-      "https://openalex.org/W2057242214"
+      "https://openalex.org/W2005348841",
+      "https://openalex.org/W2170560268",
+      "https://openalex.org/W110873930"
     ],
     "top_concepts": [
       {
-        "name": "Medicine",
+        "name": "Physics",
         "count": 20
       },
       {
-        "name": "Physics",
+        "name": "Medicine",
         "count": 20
       },
       {
@@ -1203,33 +1222,33 @@
       1993,
       2019
     ],
-    "label": "Medicine"
+    "label": "Physics"
   },
   {
-    "community_id": 187,
+    "community_id": 219,
     "size": 21,
     "members": [
+      "https://openalex.org/W2142220522",
+      "https://openalex.org/W1943306457",
+      "https://openalex.org/W2167635287",
+      "https://openalex.org/W2029438261",
+      "https://openalex.org/W2522000147",
+      "https://openalex.org/W2170689655",
+      "https://openalex.org/W2107337450",
+      "https://openalex.org/W3022668787",
+      "https://openalex.org/W1515149315",
       "https://openalex.org/W2052937506",
       "https://openalex.org/W2117885077",
       "https://openalex.org/W2121951791",
-      "https://openalex.org/W147232447",
-      "https://openalex.org/W2109510044",
-      "https://openalex.org/W2100833883",
-      "https://openalex.org/W1515149315",
-      "https://openalex.org/W2167635287",
-      "https://openalex.org/W1994671833",
-      "https://openalex.org/W2522000147",
-      "https://openalex.org/W2107337450",
-      "https://openalex.org/W2029438261",
       "https://openalex.org/W2761986865",
-      "https://openalex.org/W2136757324",
-      "https://openalex.org/W2170689655",
-      "https://openalex.org/W3022668787",
-      "https://openalex.org/W1943306457",
-      "https://openalex.org/W2102600871",
+      "https://openalex.org/W147232447",
       "https://openalex.org/W2166436681",
+      "https://openalex.org/W2100833883",
+      "https://openalex.org/W1994671833",
+      "https://openalex.org/W2109510044",
       "https://openalex.org/W3098899650",
-      "https://openalex.org/W2142220522"
+      "https://openalex.org/W2136757324",
+      "https://openalex.org/W2102600871"
     ],
     "top_concepts": [
       {
@@ -1259,19 +1278,19 @@
         "score": 5.0
       },
       {
-        "name": "Michael R. Blanton",
-        "score": 4.0
-      },
-      {
-        "name": "Daniel J. Eisenstein",
-        "score": 4.0
-      },
-      {
         "name": "Scott F. Anderson",
         "score": 4.0
       },
       {
+        "name": "Michael R. Blanton",
+        "score": 4.0
+      },
+      {
         "name": "Michael A. Carr",
+        "score": 4.0
+      },
+      {
+        "name": "Daniel J. Eisenstein",
         "score": 4.0
       }
     ],
@@ -1282,28 +1301,28 @@
     "label": "Physics"
   },
   {
-    "community_id": 155,
+    "community_id": 100,
     "size": 19,
     "members": [
-      "https://openalex.org/W2096421416",
-      "https://openalex.org/W1988080928",
-      "https://openalex.org/W1973260029",
-      "https://openalex.org/W2748717829",
-      "https://openalex.org/W2570166109",
-      "https://openalex.org/W2080880982",
-      "https://openalex.org/W2072923279",
-      "https://openalex.org/W2085537249",
-      "https://openalex.org/W1975192769",
-      "https://openalex.org/W2128654538",
-      "https://openalex.org/W1993066888",
-      "https://openalex.org/W2022731012",
       "https://openalex.org/W2125612486",
-      "https://openalex.org/W1596779608",
-      "https://openalex.org/W2960135205",
-      "https://openalex.org/W2118609172",
-      "https://openalex.org/W2126421651",
+      "https://openalex.org/W2072923279",
+      "https://openalex.org/W2128654538",
       "https://openalex.org/W2726710569",
-      "https://openalex.org/W1989037178"
+      "https://openalex.org/W1988080928",
+      "https://openalex.org/W2096421416",
+      "https://openalex.org/W1596779608",
+      "https://openalex.org/W2085537249",
+      "https://openalex.org/W2960135205",
+      "https://openalex.org/W2022731012",
+      "https://openalex.org/W1993066888",
+      "https://openalex.org/W1989037178",
+      "https://openalex.org/W2126421651",
+      "https://openalex.org/W1975192769",
+      "https://openalex.org/W2118609172",
+      "https://openalex.org/W1973260029",
+      "https://openalex.org/W2080880982",
+      "https://openalex.org/W2570166109",
+      "https://openalex.org/W2748717829"
     ],
     "top_concepts": [
       {
@@ -1329,23 +1348,23 @@
     ],
     "top_authors": [
       {
-        "name": "Yury Gogotsi",
-        "score": 4.0
-      },
-      {
         "name": "A. K. Ge\u01d0m",
         "score": 4.0
       },
       {
-        "name": "Kostya S. Novoselov",
+        "name": "Yury Gogotsi",
+        "score": 4.0
+      },
+      {
+        "name": "Valeria Nicolosi",
+        "score": 3.0
+      },
+      {
+        "name": "Jonathan N. Coleman",
         "score": 3.0
       },
       {
         "name": "M. I. Katsnelson",
-        "score": 3.0
-      },
-      {
-        "name": "Valeria Nicolosi",
         "score": 3.0
       }
     ],
@@ -1356,172 +1375,39 @@
     "label": "Materials science"
   },
   {
-    "community_id": 5,
+    "community_id": 0,
     "size": 13,
     "members": [
-      "https://openalex.org/W3135039045",
-      "https://openalex.org/W2330525264",
-      "https://openalex.org/W2885532005",
-      "https://openalex.org/W4234120870",
-      "https://openalex.org/W4399322378",
-      "https://openalex.org/W2297500596",
-      "https://openalex.org/W190186167",
-      "https://openalex.org/W4285495105",
-      "https://openalex.org/W3187233725",
-      "https://openalex.org/W3106403330",
-      "https://openalex.org/W4311342668",
-      "https://openalex.org/W2174880608",
-      "https://openalex.org/W1978622497"
-    ],
-    "top_concepts": [
-      {
-        "name": "Medicine",
-        "count": 9
-      },
-      {
-        "name": "Sociology",
-        "count": 6
-      },
-      {
-        "name": "Computer science",
-        "count": 6
-      },
-      {
-        "name": "Psychology",
-        "count": 6
-      },
-      {
-        "name": "Political science",
-        "count": 5
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Kay Caldwell",
-        "score": 2.0
-      },
-      {
-        "name": "Anita Atwal",
-        "score": 2.0
-      },
-      {
-        "name": "Ann Elisabeth Gunnulfsen",
-        "score": 1.0
-      },
-      {
-        "name": "Anthonia U. Chinweuba",
-        "score": 1.0
-      },
-      {
-        "name": "Arheiam Arheiam",
-        "score": 1.0
-      }
-    ],
-    "year_range": [
-      2005,
-      2024
-    ],
-    "label": "Medicine"
-  },
-  {
-    "community_id": 177,
-    "size": 12,
-    "members": [
-      "https://openalex.org/W4284895141",
-      "https://openalex.org/W2413645005",
-      "https://openalex.org/W2139154969",
-      "https://openalex.org/W1988922014",
-      "https://openalex.org/W2791501901",
-      "https://openalex.org/W2754407935",
-      "https://openalex.org/W2108560309",
-      "https://openalex.org/W2778730774",
-      "https://openalex.org/W2119553686",
-      "https://openalex.org/W1972899192",
-      "https://openalex.org/W2073066307",
-      "https://openalex.org/W2112450500"
-    ],
-    "top_concepts": [
-      {
-        "name": "Biology",
-        "count": 12
-      },
-      {
-        "name": "Embryo",
-        "count": 10
-      },
-      {
-        "name": "Anatomy",
-        "count": 9
-      },
-      {
-        "name": "Cell biology",
-        "count": 9
-      },
-      {
-        "name": "Neural crest",
-        "count": 9
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Julaine Roffers\u2010Agarwal",
-        "score": 2.0
-      },
-      {
-        "name": "Laura S. Gammill",
-        "score": 2.0
-      },
-      {
-        "name": "\u0415\u043b\u0435\u043d\u0430 \u041a\u0438\u0441\u0435\u043b\u0435\u0432\u0430",
-        "score": 2.0
-      },
-      {
-        "name": "Anton Strunov",
-        "score": 2.0
-      },
-      {
-        "name": "\u0410\u043b\u043b\u0430 \u0417\u0430\u0439\u0434\u043c\u0430\u043d",
-        "score": 2.0
-      }
-    ],
-    "year_range": [
-      2009,
-      2022
-    ],
-    "label": "Biology"
-  },
-  {
-    "community_id": 12,
-    "size": 11,
-    "members": [
-      "https://openalex.org/W2051145133",
       "https://openalex.org/W2067351926",
-      "https://openalex.org/W2079615115",
-      "https://openalex.org/W1489057355",
-      "https://openalex.org/W1971427016",
-      "https://openalex.org/W1995526658",
-      "https://openalex.org/W2027303099",
-      "https://openalex.org/W2008878870",
-      "https://openalex.org/W2099701551",
+      "https://openalex.org/W2051145133",
       "https://openalex.org/W2123850713",
-      "https://openalex.org/W2120405033"
+      "https://openalex.org/W1995526658",
+      "https://openalex.org/W2120405033",
+      "https://openalex.org/W2079615115",
+      "https://openalex.org/W2008878870",
+      "https://openalex.org/W2027303099",
+      "https://openalex.org/W2099701551",
+      "https://openalex.org/W1489057355",
+      "https://openalex.org/W2808831456",
+      "https://openalex.org/W2028067695",
+      "https://openalex.org/W1971427016"
     ],
     "top_concepts": [
       {
         "name": "Econometrics",
-        "count": 10
+        "count": 11
       },
       {
         "name": "Statistics",
-        "count": 7
+        "count": 9
       },
       {
         "name": "Mathematics",
-        "count": 7
+        "count": 9
       },
       {
         "name": "Computer science",
-        "count": 7
+        "count": 8
       },
       {
         "name": "Economics",
@@ -1538,39 +1424,174 @@
         "score": 3.0
       },
       {
+        "name": "Robert F. Engle",
+        "score": 2.0
+      },
+      {
         "name": "Carlos M. Jarque",
         "score": 2.0
       },
       {
         "name": "Anil K. Bera",
         "score": 2.0
-      },
-      {
-        "name": "Robert F. Engle",
-        "score": 2.0
       }
     ],
     "year_range": [
       1951,
-      1998
+      2018
     ],
     "label": "Econometrics"
   },
   {
-    "community_id": 82,
+    "community_id": 180,
+    "size": 13,
+    "members": [
+      "https://openalex.org/W2073066307",
+      "https://openalex.org/W4284895141",
+      "https://openalex.org/W2061452687",
+      "https://openalex.org/W2139154969",
+      "https://openalex.org/W2112450500",
+      "https://openalex.org/W2754407935",
+      "https://openalex.org/W2413645005",
+      "https://openalex.org/W2791501901",
+      "https://openalex.org/W1988922014",
+      "https://openalex.org/W2119553686",
+      "https://openalex.org/W2778730774",
+      "https://openalex.org/W1972899192",
+      "https://openalex.org/W2108560309"
+    ],
+    "top_concepts": [
+      {
+        "name": "Biology",
+        "count": 13
+      },
+      {
+        "name": "Embryo",
+        "count": 10
+      },
+      {
+        "name": "Neural crest",
+        "count": 9
+      },
+      {
+        "name": "Cell biology",
+        "count": 9
+      },
+      {
+        "name": "Anatomy",
+        "count": 9
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "\u0410\u043b\u043b\u0430 \u0417\u0430\u0439\u0434\u043c\u0430\u043d",
+        "score": 2.0
+      },
+      {
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u041a\u0438\u0441\u0435\u043b\u0435\u0432\u0430",
+        "score": 2.0
+      },
+      {
+        "name": "Anton Strunov",
+        "score": 2.0
+      },
+      {
+        "name": "Julaine Roffers\u2010Agarwal",
+        "score": 2.0
+      },
+      {
+        "name": "Laura S. Gammill",
+        "score": 2.0
+      }
+    ],
+    "year_range": [
+      2009,
+      2022
+    ],
+    "label": "Biology"
+  },
+  {
+    "community_id": 6,
+    "size": 12,
+    "members": [
+      "https://openalex.org/W4399322378",
+      "https://openalex.org/W1978622497",
+      "https://openalex.org/W4285495105",
+      "https://openalex.org/W4234120870",
+      "https://openalex.org/W2885532005",
+      "https://openalex.org/W2330525264",
+      "https://openalex.org/W4311342668",
+      "https://openalex.org/W3135039045",
+      "https://openalex.org/W2297500596",
+      "https://openalex.org/W3106403330",
+      "https://openalex.org/W2174880608",
+      "https://openalex.org/W3187233725"
+    ],
+    "top_concepts": [
+      {
+        "name": "Medicine",
+        "count": 8
+      },
+      {
+        "name": "Psychology",
+        "count": 6
+      },
+      {
+        "name": "Sociology",
+        "count": 5
+      },
+      {
+        "name": "Computer science",
+        "count": 5
+      },
+      {
+        "name": "Philosophy",
+        "count": 4
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Reginald L. Bell",
+        "score": 1.0
+      },
+      {
+        "name": "Sandylane Yadis Oquendo",
+        "score": 1.0
+      },
+      {
+        "name": "Jenny Harris",
+        "score": 1.0
+      },
+      {
+        "name": "James Green",
+        "score": 1.0
+      },
+      {
+        "name": "Nick Sevdalis",
+        "score": 1.0
+      }
+    ],
+    "year_range": [
+      2005,
+      2024
+    ],
+    "label": "Medicine"
+  },
+  {
+    "community_id": 83,
     "size": 11,
     "members": [
-      "https://openalex.org/W2527042386",
-      "https://openalex.org/W2160785667",
-      "https://openalex.org/W2169328609",
-      "https://openalex.org/W2096320304",
-      "https://openalex.org/W2106706072",
-      "https://openalex.org/W2039618794",
-      "https://openalex.org/W2105759630",
-      "https://openalex.org/W2301656337",
       "https://openalex.org/W1026348989",
+      "https://openalex.org/W2527042386",
+      "https://openalex.org/W2039618794",
+      "https://openalex.org/W2301656337",
+      "https://openalex.org/W2160785667",
+      "https://openalex.org/W2474894284",
+      "https://openalex.org/W2105759630",
       "https://openalex.org/W2143338675",
-      "https://openalex.org/W2474894284"
+      "https://openalex.org/W2169328609",
+      "https://openalex.org/W2106706072",
+      "https://openalex.org/W2096320304"
     ],
     "top_concepts": [
       {
@@ -1586,11 +1607,11 @@
         "count": 8
       },
       {
-        "name": "Photovoltaic system",
+        "name": "Chemistry",
         "count": 8
       },
       {
-        "name": "Chemistry",
+        "name": "Photovoltaic system",
         "count": 8
       }
     ],
@@ -1623,16 +1644,16 @@
     "label": "Materials science"
   },
   {
-    "community_id": 198,
+    "community_id": 199,
     "size": 7,
     "members": [
-      "https://openalex.org/W2106727463",
-      "https://openalex.org/W2157248428",
       "https://openalex.org/W2064167919",
-      "https://openalex.org/W2074266529",
       "https://openalex.org/W2472329501",
+      "https://openalex.org/W2029259783",
+      "https://openalex.org/W2106727463",
+      "https://openalex.org/W2074266529",
       "https://openalex.org/W2055475096",
-      "https://openalex.org/W2029259783"
+      "https://openalex.org/W2157248428"
     ],
     "top_concepts": [
       {
@@ -1658,23 +1679,23 @@
     ],
     "top_authors": [
       {
-        "name": "Nandana Bhardwaj",
-        "score": 1.0
-      },
-      {
-        "name": "Subhas C. Kundu",
-        "score": 1.0
-      },
-      {
-        "name": "Wee Eong Teo",
-        "score": 1.0
-      },
-      {
-        "name": "Seeram Ramakrishna",
-        "score": 1.0
-      },
-      {
         "name": "Thandavamoorthy Subbiah",
+        "score": 1.0
+      },
+      {
+        "name": "Gajanan Bhat",
+        "score": 1.0
+      },
+      {
+        "name": "Richard W. Tock",
+        "score": 1.0
+      },
+      {
+        "name": "Siva Parameswaran",
+        "score": 1.0
+      },
+      {
+        "name": "Seshadri Ramkumar",
         "score": 1.0
       }
     ],
@@ -1685,15 +1706,15 @@
     "label": "Materials science"
   },
   {
-    "community_id": 211,
+    "community_id": 119,
     "size": 6,
     "members": [
       "https://openalex.org/W2164231461",
-      "https://openalex.org/W2012247153",
+      "https://openalex.org/W2144304061",
       "https://openalex.org/W2050250373",
       "https://openalex.org/W2103977502",
-      "https://openalex.org/W2144304061",
-      "https://openalex.org/W2089433206"
+      "https://openalex.org/W2089433206",
+      "https://openalex.org/W2012247153"
     ],
     "top_concepts": [
       {
@@ -1719,6 +1740,10 @@
     ],
     "top_authors": [
       {
+        "name": "T. F. Eck",
+        "score": 3.0
+      },
+      {
         "name": "B. N. Holben",
         "score": 3.0
       },
@@ -1727,15 +1752,11 @@
         "score": 3.0
       },
       {
-        "name": "T. F. Eck",
-        "score": 3.0
-      },
-      {
         "name": "I. Slutsker",
         "score": 3.0
       },
       {
-        "name": "D. Tanr\u00e9",
+        "name": "Jeffrey S. Reid",
         "score": 2.0
       }
     ],
@@ -1746,26 +1767,26 @@
     "label": "Environmental science"
   },
   {
-    "community_id": 89,
+    "community_id": 90,
     "size": 5,
     "members": [
-      "https://openalex.org/W1994869187",
+      "https://openalex.org/W2018858346",
       "https://openalex.org/W2071707134",
-      "https://openalex.org/W1673405048",
+      "https://openalex.org/W1994869187",
       "https://openalex.org/W2008302913",
-      "https://openalex.org/W2018858346"
+      "https://openalex.org/W1673405048"
     ],
     "top_concepts": [
+      {
+        "name": "Carbon nanotube",
+        "count": 4
+      },
       {
         "name": "Fullerene",
         "count": 4
       },
       {
         "name": "Materials science",
-        "count": 4
-      },
-      {
-        "name": "Carbon nanotube",
         "count": 4
       },
       {
@@ -1783,7 +1804,7 @@
         "score": 2.0
       },
       {
-        "name": "Lawrence B. Ebert",
+        "name": "Sumio Iijima",
         "score": 1.0
       },
       {
@@ -1791,11 +1812,11 @@
         "score": 1.0
       },
       {
-        "name": "Catherine Journet",
+        "name": "Lawrence B. Ebert",
         "score": 1.0
       },
       {
-        "name": "Wolfgang K. Maser",
+        "name": "Andreas The\u00df",
         "score": 1.0
       }
     ],
@@ -1803,16 +1824,16 @@
       1991,
       2005
     ],
-    "label": "Fullerene"
+    "label": "Carbon nanotube"
   },
   {
-    "community_id": 127,
+    "community_id": 157,
     "size": 4,
     "members": [
-      "https://openalex.org/W2054692642",
-      "https://openalex.org/W2103972037",
+      "https://openalex.org/W2116334496",
       "https://openalex.org/W2955897898",
-      "https://openalex.org/W2116334496"
+      "https://openalex.org/W2054692642",
+      "https://openalex.org/W2103972037"
     ],
     "top_concepts": [
       {
@@ -1828,7 +1849,7 @@
         "count": 3
       },
       {
-        "name": "Base station",
+        "name": "Extremely high frequency",
         "count": 2
       },
       {
@@ -1838,23 +1859,23 @@
     ],
     "top_authors": [
       {
-        "name": "Angel Lozano",
-        "score": 2.0
-      },
-      {
         "name": "Theodore S. Rappaport",
         "score": 2.0
       },
       {
-        "name": "Jeffrey G. Andrews",
+        "name": "Angel Lozano",
+        "score": 2.0
+      },
+      {
+        "name": "Shu Sun",
         "score": 1.0
       },
       {
-        "name": "Stefano Buzzi",
+        "name": "Rimma Mayzus",
         "score": 1.0
       },
       {
-        "name": "Wan Choi",
+        "name": "Hang Zhao",
         "score": 1.0
       }
     ],
@@ -1865,7 +1886,65 @@
     "label": "Computer science"
   },
   {
-    "community_id": 70,
+    "community_id": 75,
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2898712814",
+      "https://openalex.org/W1963721320",
+      "https://openalex.org/W2806432392"
+    ],
+    "top_concepts": [
+      {
+        "name": "Materials science",
+        "count": 3
+      },
+      {
+        "name": "Nanotechnology",
+        "count": 3
+      },
+      {
+        "name": "Transmission electron microscopy",
+        "count": 1
+      },
+      {
+        "name": "Electron",
+        "count": 1
+      },
+      {
+        "name": "Electron microscope",
+        "count": 1
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "David B. Williams",
+        "score": 1.0
+      },
+      {
+        "name": "C. Barry Carter",
+        "score": 1.0
+      },
+      {
+        "name": "Loredana Prote\u015fescu",
+        "score": 1.0
+      },
+      {
+        "name": "Sergii Yakunin",
+        "score": 1.0
+      },
+      {
+        "name": "Maryna I. Bodnarchuk",
+        "score": 1.0
+      }
+    ],
+    "year_range": [
+      2009,
+      2018
+    ],
+    "label": "Materials science"
+  },
+  {
+    "community_id": 94,
     "size": 3,
     "members": [
       "https://openalex.org/W2601081289",
@@ -1923,12 +2002,70 @@
     "label": "Computer science"
   },
   {
-    "community_id": 71,
+    "community_id": 122,
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2056941140",
+      "https://openalex.org/W2028772401",
+      "https://openalex.org/W4211160986"
+    ],
+    "top_concepts": [
+      {
+        "name": "Materials science",
+        "count": 3
+      },
+      {
+        "name": "Optoelectronics",
+        "count": 3
+      },
+      {
+        "name": "Photovoltaic system",
+        "count": 3
+      },
+      {
+        "name": "Nanotechnology",
+        "count": 3
+      },
+      {
+        "name": "Composite material",
+        "count": 2
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Christoph J. Brabec",
+        "score": 2.0
+      },
+      {
+        "name": "Sean E. Shaheen",
+        "score": 1.0
+      },
+      {
+        "name": "Niyazi Serdar Sari\u00e7ift\u00e7i",
+        "score": 1.0
+      },
+      {
+        "name": "F. Padinger",
+        "score": 1.0
+      },
+      {
+        "name": "Thomas Fromherz",
+        "score": 1.0
+      }
+    ],
+    "year_range": [
+      2001,
+      2009
+    ],
+    "label": "Materials science"
+  },
+  {
+    "community_id": 125,
     "size": 3,
     "members": [
       "https://openalex.org/W1997585234",
-      "https://openalex.org/W2972593701",
-      "https://openalex.org/W2573377826"
+      "https://openalex.org/W2573377826",
+      "https://openalex.org/W2972593701"
     ],
     "top_concepts": [
       {
@@ -1962,15 +2099,15 @@
         "score": 1.0
       },
       {
-        "name": "Yuvraj Y. Birdja",
+        "name": "Zhi Wei Seh",
         "score": 1.0
       },
       {
-        "name": "Elena P\u00e9rez\u2010Gallent",
+        "name": "Jakob Kibsgaard",
         "score": 1.0
       },
       {
-        "name": "Marta C. Figueiredo",
+        "name": "Colin F. Dickens",
         "score": 1.0
       }
     ],
@@ -1981,194 +2118,20 @@
     "label": "Electrochemistry"
   },
   {
-    "community_id": 74,
+    "community_id": 144,
     "size": 3,
     "members": [
-      "https://openalex.org/W2806432392",
-      "https://openalex.org/W1963721320",
-      "https://openalex.org/W2898712814"
+      "https://openalex.org/W2611395271",
+      "https://openalex.org/W1978426240",
+      "https://openalex.org/W2027888086"
     ],
     "top_concepts": [
-      {
-        "name": "Materials science",
-        "count": 3
-      },
-      {
-        "name": "Nanotechnology",
-        "count": 3
-      },
-      {
-        "name": "Nanoparticle",
-        "count": 1
-      },
-      {
-        "name": "Complementarity (molecular biology)",
-        "count": 1
-      },
-      {
-        "name": "Characterization (materials science)",
-        "count": 1
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Stefanos Mourdikoudis",
-        "score": 1.0
-      },
-      {
-        "name": "Roger M. Pallares",
-        "score": 1.0
-      },
-      {
-        "name": "Nguy\u1ec5n Th\u1ecb Kim Thanh",
-        "score": 1.0
-      },
-      {
-        "name": "Loredana Prote\u015fescu",
-        "score": 1.0
-      },
-      {
-        "name": "Sergii Yakunin",
-        "score": 1.0
-      }
-    ],
-    "year_range": [
-      2009,
-      2018
-    ],
-    "label": "Materials science"
-  },
-  {
-    "community_id": 113,
-    "size": 3,
-    "members": [
-      "https://openalex.org/W2022010275",
-      "https://openalex.org/W2148465347",
-      "https://openalex.org/W2045912757"
-    ],
-    "top_concepts": [
-      {
-        "name": "Materials science",
-        "count": 3
-      },
-      {
-        "name": "Nanotechnology",
-        "count": 3
-      },
-      {
-        "name": "Graphene",
-        "count": 2
-      },
-      {
-        "name": "Engineering",
-        "count": 2
-      },
       {
         "name": "Physics",
-        "count": 2
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Maher F. El\u2010Kady",
-        "score": 1.0
-      },
-      {
-        "name": "Richard B. Kaner",
-        "score": 1.0
-      },
-      {
-        "name": "Nina I. Kovtyukhova",
-        "score": 1.0
-      },
-      {
-        "name": "Patricia J. Ollivier",
-        "score": 1.0
-      },
-      {
-        "name": "Benjamin Martin",
-        "score": 1.0
-      }
-    ],
-    "year_range": [
-      1999,
-      2014
-    ],
-    "label": "Materials science"
-  },
-  {
-    "community_id": 119,
-    "size": 3,
-    "members": [
-      "https://openalex.org/W2028772401",
-      "https://openalex.org/W4211160986",
-      "https://openalex.org/W2056941140"
-    ],
-    "top_concepts": [
-      {
-        "name": "Materials science",
         "count": 3
       },
-      {
-        "name": "Optoelectronics",
-        "count": 3
-      },
-      {
-        "name": "Nanotechnology",
-        "count": 3
-      },
-      {
-        "name": "Photovoltaic system",
-        "count": 3
-      },
-      {
-        "name": "Composite material",
-        "count": 2
-      }
-    ],
-    "top_authors": [
-      {
-        "name": "Christoph J. Brabec",
-        "score": 2.0
-      },
-      {
-        "name": "Lukas Schmidt\u2010Mende",
-        "score": 1.0
-      },
-      {
-        "name": "Andreas Fechtenk\u00f6tter",
-        "score": 1.0
-      },
-      {
-        "name": "Kl\u00e4us M\u00fcllen",
-        "score": 1.0
-      },
-      {
-        "name": "Ellen Moons",
-        "score": 1.0
-      }
-    ],
-    "year_range": [
-      2001,
-      2009
-    ],
-    "label": "Materials science"
-  },
-  {
-    "community_id": 142,
-    "size": 3,
-    "members": [
-      "https://openalex.org/W2027888086",
-      "https://openalex.org/W2611395271",
-      "https://openalex.org/W1978426240"
-    ],
-    "top_concepts": [
       {
         "name": "Condensed matter physics",
-        "count": 3
-      },
-      {
-        "name": "Physics",
         "count": 3
       },
       {
@@ -2186,23 +2149,23 @@
     ],
     "top_authors": [
       {
-        "name": "Daniel S. Fisher",
-        "score": 1.0
-      },
-      {
-        "name": "Matthew P. A. Fisher",
-        "score": 1.0
-      },
-      {
-        "name": "David A. Huse",
-        "score": 1.0
-      },
-      {
         "name": "N. P. Armitage",
         "score": 1.0
       },
       {
         "name": "E. J. Mel\u00e9",
+        "score": 1.0
+      },
+      {
+        "name": "Ashvin Vishwanath",
+        "score": 1.0
+      },
+      {
+        "name": "Mikael C. Rechtsman",
+        "score": 1.0
+      },
+      {
+        "name": "Julia M. Zeuner",
         "score": 1.0
       }
     ],
@@ -2210,10 +2173,10 @@
       1991,
       2018
     ],
-    "label": "Condensed matter physics"
+    "label": "Physics"
   },
   {
-    "community_id": 149,
+    "community_id": 147,
     "size": 3,
     "members": [
       "https://openalex.org/W2129775337",
@@ -2271,7 +2234,7 @@
     "label": "Ecosystem"
   },
   {
-    "community_id": 195,
+    "community_id": 196,
     "size": 3,
     "members": [
       "https://openalex.org/W4231021828",
@@ -2323,5 +2286,63 @@
       2016
     ],
     "label": "Medicine"
+  },
+  {
+    "community_id": 245,
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2045912757",
+      "https://openalex.org/W2022010275",
+      "https://openalex.org/W2148465347"
+    ],
+    "top_concepts": [
+      {
+        "name": "Materials science",
+        "count": 3
+      },
+      {
+        "name": "Nanotechnology",
+        "count": 3
+      },
+      {
+        "name": "Graphene",
+        "count": 2
+      },
+      {
+        "name": "Polymer",
+        "count": 2
+      },
+      {
+        "name": "Composite material",
+        "count": 2
+      }
+    ],
+    "top_authors": [
+      {
+        "name": "Jian Lin",
+        "score": 1.0
+      },
+      {
+        "name": "Zhiwei Peng",
+        "score": 1.0
+      },
+      {
+        "name": "Yuanyue Liu",
+        "score": 1.0
+      },
+      {
+        "name": "Francisco Ruiz\u2010Zepeda",
+        "score": 1.0
+      },
+      {
+        "name": "Ruquan Ye",
+        "score": 1.0
+      }
+    ],
+    "year_range": [
+      1999,
+      2014
+    ],
+    "label": "Materials science"
   }
 ]

@@ -87,30 +87,88 @@ def main():
                         print(f"    Keeping: {candidate.get('type')} {candidate_year}")
                         break
 
-    # Filter corpus
+    # Merge citations from removed arXiv into published versions
+    # Create a mapping of removed arXiv indices to their published versions
+    arxiv_merges = {}
+
+    # For papers marked to remove, find their corresponding published version and merge citations
+    for arxiv_idx in arxiv_to_remove:
+        arxiv_paper = corpus[arxiv_idx]
+        arxiv_title = arxiv_paper.get('title', '').lower()
+        arxiv_authors = set(a.get('id', '') for a in arxiv_paper.get('authors', []))
+        arxiv_year = arxiv_paper.get('year', 0)
+
+        # Find the published version
+        for i, candidate in enumerate(corpus):
+            if i == arxiv_idx or i in arxiv_to_remove:
+                continue
+
+            ctype = candidate.get('type', '').lower()
+            if ctype in ['preprint', 'posted-content']:
+                continue
+
+            candidate_title = candidate.get('title', '').lower()
+            candidate_authors = set(a.get('id', '') for a in candidate.get('authors', []))
+            candidate_year = candidate.get('year', 0)
+
+            if arxiv_title in candidate_title or candidate_title in arxiv_title:
+                overlap = len(arxiv_authors & candidate_authors)
+                min_authors = min(len(arxiv_authors), len(candidate_authors))
+                if min_authors > 0 and overlap / min_authors >= 0.5:
+                    if abs(arxiv_year - candidate_year) <= 1:
+                        # Merge: add arXiv citations to published version
+                        arxiv_merges[arxiv_idx] = {
+                            'published_idx': i,
+                            'arxiv_cites': arxiv_paper.get('cited_by_count', 0)
+                        }
+                        # Add to the published version
+                        if 'merged_versions' not in candidate:
+                            candidate['merged_versions'] = []
+                        candidate['merged_versions'].append({
+                            'doi': arxiv_paper.get('doi'),
+                            'year': arxiv_year,
+                            'type': 'preprint',
+                            'citations': arxiv_paper.get('cited_by_count', 0)
+                        })
+                        candidate['cited_by_count'] = candidate.get('cited_by_count', 0) + arxiv_paper.get('cited_by_count', 0)
+                        break
+
+    # Filter corpus (remove arXiv versions)
     corpus_filtered = [p for i, p in enumerate(corpus) if i not in arxiv_to_remove]
 
     print(f"\nResults:")
     print(f"  Original: {len(corpus)}")
-    print(f"  Removed:  {len(arxiv_to_remove)} arXiv preprints")
+    print(f"  Merged:   {len(arxiv_to_remove)} arXiv preprints into published versions")
     print(f"  Final:    {len(corpus_filtered)}")
+
+    # Log merges
+    merge_log = []
+    for arxiv_idx, merge_info in arxiv_merges.items():
+        arxiv_paper = corpus[arxiv_idx]
+        published_idx = merge_info['published_idx']
+        published_paper = corpus[published_idx]
+
+        merge_log.append({
+            'removed_arxiv': {
+                'doi': arxiv_paper.get('doi'),
+                'year': arxiv_paper.get('year'),
+                'title': arxiv_paper.get('title')[:100],
+                'citations': arxiv_paper.get('cited_by_count')
+            },
+            'merged_into': {
+                'doi': published_paper.get('doi'),
+                'year': published_paper.get('year'),
+                'type': published_paper.get('type'),
+                'new_total_citations': published_paper.get('cited_by_count')
+            }
+        })
+
+    with open(OUTPUT_DIR / "arxiv_merge_log.json", "w") as f:
+        json.dump(merge_log, f, indent=2)
 
     # Save
     with open(OUTPUT_DIR / "corpus_final.json", "w") as f:
         json.dump(corpus_filtered, f, indent=2)
-
-    # Log removals
-    with open(OUTPUT_DIR / "arxiv_removal_log.json", "w") as f:
-        removed_papers = [corpus[i] for i in arxiv_to_remove]
-        json.dump([
-            {
-                'doi': p.get('doi'),
-                'year': p.get('year'),
-                'title': p.get('title')[:100],
-                'type': p.get('type')
-            }
-            for p in removed_papers
-        ], f, indent=2)
 
 
 if __name__ == "__main__":

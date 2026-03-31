@@ -5545,7 +5545,7 @@
       "year": 2024,
       "title": "Petascale pipeline for precise alignment of images from serial section electron ",
       "type": "article",
-      "citations": 32
+      "citations": 45
     },
     "removed": [
       {
@@ -5596,7 +5596,7 @@
       "year": 2017,
       "title": "SynEM, automated synapse detection for connectomics",
       "type": "article",
-      "citations": 71
+      "citations": 74
     },
     "removed": [
       {
@@ -5613,7 +5613,7 @@
       "year": 2021,
       "title": "FlyWire: online community for whole-brain connectomics",
       "type": "article",
-      "citations": 284
+      "citations": 354
     },
     "removed": [
       {
@@ -5664,7 +5664,7 @@
       "year": 2020,
       "title": "Dense neuronal reconstruction through X-ray holographic nano-tomography",
       "type": "article",
-      "citations": 157
+      "citations": 169
     },
     "removed": [
       {
@@ -5681,7 +5681,7 @@
       "year": 2022,
       "title": "Structured sampling of olfactory input by the fly mushroom body",
       "type": "article",
-      "citations": 62
+      "citations": 101
     },
     "removed": [
       {
@@ -5698,7 +5698,7 @@
       "year": 2024,
       "title": "Synaptic wiring motifs in posterior parietal cortex support decision-making",
       "type": "article",
-      "citations": 59
+      "citations": 80
     },
     "removed": [
       {
@@ -5715,7 +5715,7 @@
       "year": 2022,
       "title": "Local shape descriptors for neuron segmentation",
       "type": "article",
-      "citations": 51
+      "citations": 68
     },
     "removed": [
       {
@@ -5732,7 +5732,7 @@
       "year": 2024,
       "title": "Systematic annotation of a complete adult male Drosophila nerve cord connectome ",
       "type": "preprint",
-      "citations": 39
+      "citations": 49
     },
     "removed": [
       {
@@ -5749,7 +5749,7 @@
       "year": 2025,
       "title": "CAVE: Connectome Annotation Versioning Engine",
       "type": "article",
-      "citations": 35
+      "citations": 67
     },
     "removed": [
       {
@@ -5783,7 +5783,7 @@
       "year": 2023,
       "title": "ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume ",
       "type": "preprint",
-      "citations": 4
+      "citations": 5
     },
     "removed": [
       {
@@ -5800,7 +5800,7 @@
       "year": 2023,
       "title": "ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume ",
       "type": "preprint",
-      "citations": 4
+      "citations": 6
     },
     "removed": [
       {
@@ -5834,7 +5834,7 @@
       "year": 2021,
       "title": "Label-retention expansion microscopy",
       "type": "article",
-      "citations": 81
+      "citations": 115
     },
     "removed": [
       {
@@ -5851,7 +5851,7 @@
       "year": 2018,
       "title": "Highly multiplexed immunofluorescence imaging of human tissues and tumors using ",
       "type": "article",
-      "citations": 725
+      "citations": 829
     },
     "removed": [
       {
@@ -5868,7 +5868,7 @@
       "year": 2020,
       "title": "A petascale automated imaging pipeline for mapping neuronal circuits with high-t",
       "type": "article",
-      "citations": 148
+      "citations": 187
     },
     "removed": [
       {
@@ -5892,7 +5892,7 @@
         "doi": "10.1101/2021.05.29.446047",
         "year": 2021,
         "type": "preprint",
-        "citations": 19
+        "citations": 30
       }
     ]
   },
@@ -5902,7 +5902,7 @@
       "year": 2022,
       "title": "Oligodendrocyte precursor cells ingest axons in the mouse neocortex",
       "type": "article",
-      "citations": 135
+      "citations": 165
     },
     "removed": [
       {
@@ -5919,7 +5919,7 @@
       "year": 2021,
       "title": "X-ray microscopy enables multiscale high-resolution 3D imaging of plant cells, t",
       "type": "article",
-      "citations": 83
+      "citations": 89
     },
     "removed": [
       {
@@ -5970,7 +5970,7 @@
       "year": 2021,
       "title": "Oligodendrocyte precursor cells prune axons in the mouse neocortex",
       "type": "preprint",
-      "citations": 19
+      "citations": 30
     },
     "removed": [
       {
@@ -6021,7 +6021,7 @@
       "year": 2025,
       "title": "Segment Anything for Microscopy",
       "type": "article",
-      "citations": 144
+      "citations": 207
     },
     "removed": [
       {
@@ -6038,7 +6038,7 @@
       "year": 2020,
       "title": "Freeze-frame imaging of synaptic activity using SynTagMA",
       "type": "article",
-      "citations": 54
+      "citations": 63
     },
     "removed": [
       {
@@ -6055,7 +6055,7 @@
       "year": 2022,
       "title": "Visual recognition of social signals by a tectothalamic neural circuit",
       "type": "article",
-      "citations": 79
+      "citations": 94
     },
     "removed": [
       {
@@ -6072,7 +6072,7 @@
       "year": 2023,
       "title": "Multi-layered maps of neuropil with segmentation-guided contrastive learning",
       "type": "article",
-      "citations": 27
+      "citations": 43
     },
     "removed": [
       {
@@ -6174,7 +6174,7 @@
       "year": 2023,
       "title": "Individuality across environmental context in <i>Drosophila melanogaster</i>",
       "type": "preprint",
-      "citations": 2
+      "citations": 3
     },
     "removed": [
       {
@@ -6208,7 +6208,7 @@
       "year": 2026,
       "title": "Individuality across environmental context in Drosophila melanogaster",
       "type": "article",
-      "citations": 1
+      "citations": 3
     },
     "removed": [
       {
@@ -6242,7 +6242,7 @@
       "year": 2026,
       "title": "Individuality across environmental context in Drosophila melanogaster",
       "type": "article",
-      "citations": 1
+      "citations": 4
     },
     "removed": [
       {
@@ -6293,7 +6293,7 @@
       "year": 2025,
       "title": "Spatial transcriptomics in the adult Drosophila brain and body",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -6327,7 +6327,7 @@
       "year": 2025,
       "title": "The Oviposition Inhibitory Neuron is a Potential Hub of Multi-Circuit Integratio",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -6514,7 +6514,7 @@
       "year": 2024,
       "title": "Driver lines for studying associative learning in Drosophila",
       "type": "article",
-      "citations": 15
+      "citations": 36
     },
     "removed": [
       {
@@ -6531,7 +6531,7 @@
       "year": 2024,
       "title": "Fast imaging of millimeter-scale areas with beam deflection transmission electro",
       "type": "article",
-      "citations": 11
+      "citations": 21
     },
     "removed": [
       {
@@ -6548,7 +6548,7 @@
       "year": 2025,
       "title": "Synaptic architecture of a memory engram in the mouse hippocampus",
       "type": "article",
-      "citations": 24
+      "citations": 35
     },
     "removed": [
       {
@@ -6565,7 +6565,7 @@
       "year": 2024,
       "title": "Heterogeneous and higher-order cortical connectivity undergirds efficient, robus",
       "type": "article",
-      "citations": 12
+      "citations": 21
     },
     "removed": [
       {
@@ -6582,7 +6582,7 @@
       "year": 2024,
       "title": "A connectome manipulation framework for the systematic and reproducible study of",
       "type": "article",
-      "citations": 8
+      "citations": 12
     },
     "removed": [
       {
@@ -6599,7 +6599,7 @@
       "year": 2024,
       "title": "Whole-body connectome of a segmented annelid larva",
       "type": "article",
-      "citations": 15
+      "citations": 31
     },
     "removed": [
       {
@@ -6616,7 +6616,7 @@
       "year": 2024,
       "title": "Whole-body connectome of a segmented annelid larva",
       "type": "article",
-      "citations": 15
+      "citations": 35
     },
     "removed": [
       {
@@ -6684,7 +6684,7 @@
       "year": 2025,
       "title": "Whole-body connectome of a segmented annelid larva",
       "type": "article",
-      "citations": 4
+      "citations": 8
     },
     "removed": [
       {
@@ -6718,7 +6718,7 @@
       "year": 2025,
       "title": "The GABAA receptor RDL modulates the auditory sensitivity of malaria mosquitoes",
       "type": "article",
-      "citations": 4
+      "citations": 6
     },
     "removed": [
       {
@@ -6735,7 +6735,7 @@
       "year": 2025,
       "title": "Volume electron microscopy reveals unique laminar synaptic characteristics in th",
       "type": "article",
-      "citations": 2
+      "citations": 4
     },
     "removed": [
       {
@@ -7279,7 +7279,7 @@
       "year": 2024,
       "title": "Vascular Development of Fetal and Postnatal Neocortex of the Pig, the European W",
       "type": "article",
-      "citations": 3
+      "citations": 4
     },
     "removed": [
       {
@@ -7296,7 +7296,7 @@
       "year": 2025,
       "title": "Mitochondria are absent from microglial processes performing surveillance, chemo",
       "type": "article",
-      "citations": 2
+      "citations": 3
     },
     "removed": [
       {
@@ -7313,7 +7313,7 @@
       "year": 2025,
       "title": "Paired and solitary ionocytes in the zebrafish olfactory epithelium",
       "type": "article",
-      "citations": 2
+      "citations": 3
     },
     "removed": [
       {
@@ -7330,7 +7330,7 @@
       "year": 2025,
       "title": "Emergence of Functional Heart-Brain Circuits in a Vertebrate",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -7398,7 +7398,7 @@
       "year": 2025,
       "title": "Ultrastructural membrane dynamics of mouse and human cortical synapses",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -7551,7 +7551,7 @@
       "year": 2019,
       "title": "Reconstruction of 1,000 Projection Neurons Reveals New Cell Types and Organizati",
       "type": "article",
-      "citations": 552
+      "citations": 614
     },
     "removed": [
       {
@@ -7568,7 +7568,7 @@
       "year": 2024,
       "title": "Structure, interaction and nervous connectivity of beta cell primary cilia",
       "type": "article",
-      "citations": 16
+      "citations": 26
     },
     "removed": [
       {
@@ -7585,7 +7585,7 @@
       "year": 2021,
       "title": "Optical tissue clearing enables rapid, precise and comprehensive assessment of t",
       "type": "article",
-      "citations": 9
+      "citations": 12
     },
     "removed": [
       {
@@ -7602,7 +7602,7 @@
       "year": 2023,
       "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
       "type": "article",
-      "citations": 7
+      "citations": 14
     },
     "removed": [
       {
@@ -7619,7 +7619,7 @@
       "year": 2023,
       "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
       "type": "article",
-      "citations": 7
+      "citations": 17
     },
     "removed": [
       {
@@ -7636,7 +7636,7 @@
       "year": 2023,
       "title": "Molecular identification of wide-field amacrine cells in mouse retina that encod",
       "type": "preprint",
-      "citations": 5
+      "citations": 9
     },
     "removed": [
       {
@@ -7653,7 +7653,7 @@
       "year": 2023,
       "title": "Molecular identification of wide-field amacrine cells in mouse retina that encod",
       "type": "preprint",
-      "citations": 5
+      "citations": 11
     },
     "removed": [
       {
@@ -7704,7 +7704,7 @@
       "year": 2024,
       "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
       "type": "preprint",
-      "citations": 3
+      "citations": 5
     },
     "removed": [
       {
@@ -7721,7 +7721,7 @@
       "year": 2025,
       "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
       "type": "article",
-      "citations": 3
+      "citations": 5
     },
     "removed": [
       {
@@ -7738,7 +7738,7 @@
       "year": 2025,
       "title": "Morphology and ultrastructure of external sense organs of Drosophila larvae",
       "type": "article",
-      "citations": 3
+      "citations": 7
     },
     "removed": [
       {
@@ -7789,7 +7789,7 @@
       "year": 2022,
       "title": "Bisected graph matching improves automated pairing of bilaterally homologous neu",
       "type": "article",
-      "citations": 7
+      "citations": 11
     },
     "removed": [
       {
@@ -7925,7 +7925,7 @@
       "year": 2024,
       "title": "Toolkits for detailed and high-throughput interrogation of synapses in C. elegan",
       "type": "article",
-      "citations": 2
+      "citations": 4
     },
     "removed": [
       {
@@ -8163,7 +8163,7 @@
       "year": 2024,
       "title": "A split-GAL4 driver line resource for Drosophila neuron types",
       "type": "article",
-      "citations": 16
+      "citations": 29
     },
     "removed": [
       {
@@ -8180,7 +8180,7 @@
       "year": 2025,
       "title": "A split-GAL4 driver line resource for Drosophila neuron types",
       "type": "article",
-      "citations": 16
+      "citations": 32
     },
     "removed": [
       {
@@ -8197,7 +8197,7 @@
       "year": 2025,
       "title": "A split-GAL4 driver line resource for Drosophila neuron types",
       "type": "article",
-      "citations": 16
+      "citations": 45
     },
     "removed": [
       {
@@ -8231,7 +8231,7 @@
       "year": 2025,
       "title": "Cell type-specific driver lines targeting the Drosophila central complex and the",
       "type": "article",
-      "citations": 8
+      "citations": 20
     },
     "removed": [
       {
@@ -8282,7 +8282,7 @@
       "year": 2024,
       "title": "Cell type-specific driver lines targeting the <i>Drosophila</i> central complex ",
       "type": "preprint",
-      "citations": 12
+      "citations": 16
     },
     "removed": [
       {
@@ -8299,7 +8299,7 @@
       "year": 2025,
       "title": "Cell type-specific driver lines targeting the Drosophila central complex and the",
       "type": "article",
-      "citations": 12
+      "citations": 32
     },
     "removed": [
       {
@@ -8316,7 +8316,7 @@
       "year": 2025,
       "title": "Cell type-specific driver lines targeting the Drosophila central complex and the",
       "type": "article",
-      "citations": 12
+      "citations": 36
     },
     "removed": [
       {
@@ -8333,7 +8333,7 @@
       "year": 2025,
       "title": "Cell type-specific driver lines targeting the Drosophila central complex and the",
       "type": "article",
-      "citations": 12
+      "citations": 20
     },
     "removed": [
       {
@@ -8350,7 +8350,7 @@
       "year": 2025,
       "title": "Cell type-specific driver lines targeting the Drosophila central complex and the",
       "type": "article",
-      "citations": 12
+      "citations": 24
     },
     "removed": [
       {
@@ -8384,7 +8384,7 @@
       "year": 2020,
       "title": "Viv: Multiscale Visualization of High-Resolution Multiplexed Bioimaging Data on ",
       "type": "preprint",
-      "citations": 62
+      "citations": 76
     },
     "removed": [
       {
@@ -8435,7 +8435,7 @@
       "year": 2024,
       "title": "Mechanism of barotaxis in marine zooplankton",
       "type": "article",
-      "citations": 14
+      "citations": 27
     },
     "removed": [
       {
@@ -8486,7 +8486,7 @@
       "year": 2022,
       "title": "Research data management for bioimaging: the 2021 NFDI4BIOIMAGE community survey",
       "type": "preprint",
-      "citations": 8
+      "citations": 14
     },
     "removed": [
       {
@@ -8503,7 +8503,7 @@
       "year": 2019,
       "title": "A Data Structure for Real-Time Aggregation Queries of Big Brain Networks",
       "type": "article",
-      "citations": 6
+      "citations": 8
     },
     "removed": [
       {
@@ -8520,7 +8520,7 @@
       "year": 2024,
       "title": "Mechanism of barotaxis in marine zooplankton",
       "type": "article",
-      "citations": 14
+      "citations": 41
     },
     "removed": [
       {
@@ -8554,7 +8554,7 @@
       "year": 2023,
       "title": "The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila m",
       "type": "article",
-      "citations": 5
+      "citations": 8
     },
     "removed": [
       {
@@ -8588,7 +8588,7 @@
       "year": 2024,
       "title": "Mechanism of barotaxis in marine zooplankton",
       "type": "article",
-      "citations": 14
+      "citations": 19
     },
     "removed": [
       {
@@ -8605,7 +8605,7 @@
       "year": 2023,
       "title": "The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila m",
       "type": "article",
-      "citations": 5
+      "citations": 13
     },
     "removed": [
       {
@@ -8622,7 +8622,7 @@
       "year": 2023,
       "title": "Rewarding Capacity of Optogenetically Activating a Giant GABAergic Central-Brain",
       "type": "article",
-      "citations": 2
+      "citations": 3
     },
     "removed": [
       {
@@ -8673,7 +8673,7 @@
       "year": 2025,
       "title": "Inhibitory circuits control leg movements during Drosophila grooming",
       "type": "preprint",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -8731,7 +8731,7 @@
         "doi": "10.7554/elife.106446.1",
         "year": 2025,
         "type": "preprint",
-        "citations": 1
+        "citations": 2
       }
     ]
   },
@@ -8775,7 +8775,7 @@
       "year": 2025,
       "title": "Inhibitory circuits control leg movements during Drosophila grooming",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -8860,7 +8860,7 @@
       "year": 2022,
       "title": "Regional cytoarchitecture of the adult and developing mouse enteric nervous syst",
       "type": "article",
-      "citations": 38
+      "citations": 41
     },
     "removed": [
       {
@@ -8877,7 +8877,7 @@
       "year": 2020,
       "title": "A workflow for visualizing human cancer biopsies using large-format electron mic",
       "type": "article",
-      "citations": 24
+      "citations": 30
     },
     "removed": [
       {
@@ -8894,7 +8894,7 @@
       "year": 2022,
       "title": "Sample Preparation and Warping Accuracy for Correlative Multimodal Imaging in th",
       "type": "article",
-      "citations": 12
+      "citations": 15
     },
     "removed": [
       {
@@ -8911,7 +8911,7 @@
       "year": 2025,
       "title": "Dense, continuous membrane labeling and expansion microscopy visualization of ul",
       "type": "article",
-      "citations": 12
+      "citations": 18
     },
     "removed": [
       {
@@ -8928,7 +8928,7 @@
       "year": 2023,
       "title": "A high-throughput 3D X-ray histology facility for biomedical research and precli",
       "type": "preprint",
-      "citations": 9
+      "citations": 13
     },
     "removed": [
       {
@@ -8945,7 +8945,7 @@
       "year": 2024,
       "title": "Sharing massive biomedical data at magnitudes lower bandwidth using implicit neu",
       "type": "article",
-      "citations": 6
+      "citations": 9
     },
     "removed": [
       {
@@ -8962,7 +8962,7 @@
       "year": 2024,
       "title": "Gut Analysis Toolbox \u2013 automating quantitative analysis of enteric neurons",
       "type": "article",
-      "citations": 5
+      "citations": 7
     },
     "removed": [
       {
@@ -8979,7 +8979,7 @@
       "year": 2025,
       "title": "Morphology and connectivity of retinal horizontal cells in two avian species",
       "type": "article",
-      "citations": 5
+      "citations": 7
     },
     "removed": [
       {
@@ -9030,7 +9030,7 @@
       "year": 2025,
       "title": "Lamellar Schwann cells in the Pacinian corpuscle potentiate vibration perception",
       "type": "article",
-      "citations": 3
+      "citations": 5
     },
     "removed": [
       {
@@ -9081,7 +9081,7 @@
       "year": 2025,
       "title": "Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear co",
       "type": "article",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {
@@ -9098,7 +9098,7 @@
       "year": 2025,
       "title": "Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear co",
       "type": "article",
-      "citations": 1
+      "citations": 3
     },
     "removed": [
       {
@@ -9115,7 +9115,7 @@
       "year": 2025,
       "title": "Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear co",
       "type": "article",
-      "citations": 1
+      "citations": 3
     },
     "removed": [
       {
@@ -9353,7 +9353,7 @@
       "year": 2024,
       "title": "The Brain Image Library: A Community-Contributed Microscopy Resource for Neurosc",
       "type": "article",
-      "citations": 7
+      "citations": 10
     },
     "removed": [
       {
@@ -9404,7 +9404,7 @@
       "year": 2019,
       "title": "Recurrent U-Net for Resource-Constrained Segmentation",
       "type": "article",
-      "citations": 107
+      "citations": 119
     },
     "removed": [
       {
@@ -9421,7 +9421,7 @@
       "year": 2021,
       "title": "A simple and robust method for automating analysis of na\u00efve and regenerating per",
       "type": "article",
-      "citations": 11
+      "citations": 14
     },
     "removed": [
       {
@@ -9455,7 +9455,7 @@
       "year": 2020,
       "title": "Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivit",
       "type": "preprint",
-      "citations": 1
+      "citations": 2
     },
     "removed": [
       {

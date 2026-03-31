@@ -114,18 +114,16 @@ def merge_papers(canonical, duplicates):
     """
     Merge duplicate papers into canonical version.
     Keeps canonical but aggregates citation information.
+    SUMS citations from all versions (preprint + published versions).
     """
+    # SUM all citations from all versions
     total_citations = canonical.get('cited_by_count', 0)
     for dup in duplicates:
         total_citations += dup.get('cited_by_count', 0)
 
-    # Use the maximum (they should cite the same work)
-    canonical['cited_by_count'] = max(
-        canonical.get('cited_by_count', 0),
-        max(d.get('cited_by_count', 0) for d in duplicates)
-    )
+    canonical['cited_by_count'] = total_citations
 
-    # Note merged versions
+    # Track which versions were merged and their individual citation counts
     canonical['merged_versions'] = [
         {
             'doi': dup.get('doi'),
@@ -135,6 +133,9 @@ def merge_papers(canonical, duplicates):
         }
         for dup in duplicates
     ]
+
+    # Add note about merged citations
+    canonical['citation_note'] = f"Citation count is sum of {len(duplicates) + 1} versions (canonical + duplicates)"
 
     return canonical
 

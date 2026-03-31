@@ -105,3 +105,9 @@ exclude:
   - Gemfile.lock
   - node_modules
   - scripts
+
+# Fix for Jekyll SCSS encoding issues
+encoding: utf-8
+sass:
+  syntax: scss
+  style: compressed

@@ -126,26 +126,73 @@ first_last_author_distribution.json
 - **Phase 4 (visualizations)**: 2-3 hours
 - **Total**: ~6-9 hours including testing
 
-## Testing Strategy
-1. Verify first/last authors get higher scores than middle authors
-2. Compare author rankings before/after weighting
-3. Validate that known prolific first/last authors rank higher
-4. Check for any degenerate cases (papers with 1 author, etc.)
+## Testing & Experimentation Strategy
+
+### Safe, Reversible Testing
+Since all weights are configurable, you can safely experiment:
+
+1. **Generate multiple ranking sets with different weights**:
+   - Weight 1.0 (baseline, current system)
+   - Weight 1.5 (conservative)
+   - Weight 2.0 (balanced)
+   - Weight 3.0 (aggressive)
+
+2. **Compare results**:
+   - Which authors move up/down with each weight?
+   - Does 1.5x align better with your intuition than 2.0x?
+   - Are there any unexpected effects?
+
+3. **Validate**:
+   - Known prolific first/last authors should rank higher
+   - Compare against existing manual rankings
+   - Check for degenerate cases (single-author papers, etc.)
+
+4. **Choose weight** once you've verified the output makes sense
+   - No lock-in: can always re-run with different weights
+   - All intermediate results preserved for comparison
+
+### Validation Checklist
+- [ ] Authors with many first-authored papers rank higher than expected
+- [ ] Authors with many last-authored papers rank higher than expected
+- [ ] Serial middle-author contributors rank lower (expected behavior)
+- [ ] No edge cases (papers with 1 author, missing author data, etc.)
 
 ## Migration Notes
 - **Backwards compatible**: Original rankings remain unchanged
 - **Optional feature**: Weighted rankings run in parallel
 - **User choice**: Web UI can toggle between weighted/unweighted views
 
-## Configuration
+## Configuration (Fully Reversible)
+
+The system uses configurable alpha coefficients - **you can adjust or disable weighting at any time**:
+
 ```python
-# Alpha coefficient for author position weighting
-FIRST_AUTHOR_WEIGHT = 2.0
-LAST_AUTHOR_WEIGHT = 2.0
-COFIRST_WEIGHT = 2.0  # If detected
-COLAST_WEIGHT = 2.0   # If detected
-MIDDLE_AUTHOR_WEIGHT = 1.0
+# Alpha coefficient for author position weighting (configurable)
+FIRST_AUTHOR_WEIGHT = 2.0      # Set to 1.0 to disable first-author emphasis
+LAST_AUTHOR_WEIGHT = 2.0       # Set to 1.0 to disable last-author emphasis
+COFIRST_WEIGHT = 2.0            # If detected in author metadata
+COLAST_WEIGHT = 2.0             # If detected in author metadata
+MIDDLE_AUTHOR_WEIGHT = 1.0      # Always 1.0 (baseline)
 ```
+
+### Easy Rollback / Testing
+You can generate rankings with different weight configurations:
+
+```bash
+# No weighting (original behavior)
+python 03_compute_metrics.py --first-weight 1.0 --last-weight 1.0
+
+# Conservative weighting (1.5x)
+python 03_compute_metrics.py --first-weight 1.5 --last-weight 1.5
+
+# Aggressive weighting (3x)
+python 03_compute_metrics.py --first-weight 3.0 --last-weight 3.0
+
+# Asymmetric (first emphasized more than last)
+python 03_compute_metrics.py --first-weight 3.0 --last-weight 1.5
+```
+
+All outputs go to `author_rankings_weighted_[config].json`, so you can compare side-by-side.
 
 ## Related Questions
 1. Should we use different alphas for different fields? (e.g., 3x for experimental papers?)

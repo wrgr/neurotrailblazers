@@ -361,3 +361,32 @@ Structured checklist for curator sign-off before publishing the reading list.
 - [ ] **Non-neuro papers in top 500**: Count papers with Neuro=✗ flag; decide acceptable threshold
 - [ ] **Network-science generics**: Decide how many pure graph theory papers (Barabási, Newman, Watts-Strogatz) belong vs. crowd out EM connectomics work
 - [ ] **MRI crossover**: Confirm appropriate balance of MRI-connectomics vs EM-connectomics papers
+
+### H7. Pedagogical Balance
+
+- [ ] **Temporal coverage**: Plot papers-per-5-year-bin. Flag any bin with <5% of papers — citation metrics bias toward old (accumulated cites) and very recent (recency PageRank), squeezing mid-era work (e.g., 2015–2019)
+- [ ] **Species/system matrix**: Cross-tabulate papers by organism (C. elegans, Drosophila, mouse, zebrafish, human) × methodology. Flag any organism with <3 papers or any organism×method cell that's empty but should be covered
+- [ ] **Review-to-primary ratio**: Currently ~18% reviews. Target 15–25% for graduate-level reading. Flag if outside range
+- [ ] **Negative results / cautionary papers**: Manually identify 5–10 papers on failure modes, method limitations, or interpretive caution. These rarely surface in citation rankings but are pedagogically essential (e.g., "why segmentation still fails at X", "limitations of static connectomes for inferring function")
+- [ ] **Methods → biology progression**: Verify that Phase 1–2 papers are methods-heavy and Phase 3–4 papers shift toward biological findings. Check that the topological sort doesn't front-load biology papers that depend on methods introduced later
+- [ ] **Prerequisite completeness**: For each top-50 paper, verify that its key methodological dependencies appear earlier in the reading order. Pedagogical prerequisites aren't always formal citations (e.g., SBFSEM concepts are needed before Helmstaedter 2013, even if the specific tutorial isn't cited)
+
+### H8. Anchor Review Reconciliation
+
+Repeatable step for validating coverage against authoritative reviews.
+
+**Procedure:**
+1. Designate 3–5 anchor reviews by field leaders (currently: Helmstaedter 2025, Bock 2025, Khajeh & Lee 2025; could add Lichtman 2014, Kasthuri 2019)
+2. For each anchor review, compute what fraction of its references appear in the top 500
+3. Flag any reference cited by ≥2 anchor reviews that is NOT in the top 500 (these are Section E papers)
+4. Do NOT automatically include all 1-hop references — reviews cite heterogeneously (Helmstaedter 2025 cites 117 papers; many are peripheral)
+5. Use the multi-review consensus as a promotion signal, not a hard rule
+
+**Current coverage rates:**
+- Helmstaedter 2025: 52 / 117 references in top 500 (44%)
+- Bock 2025: 6 / 9 (67%)
+- Khajeh & Lee 2025: 6 / 11 (55%)
+- Lichtman 2014: 10 / 18 (56%)
+- Kasthuri 2019: 29 / 57 (51%)
+
+**Target**: ≥60% coverage of each anchor review's references. Shortfalls indicate either (a) the review cites peripheral work or (b) genuine gaps in our corpus. Human judgment needed to distinguish.

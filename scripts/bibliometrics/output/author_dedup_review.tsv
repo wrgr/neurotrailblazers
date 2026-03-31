@@ -1,0 +1,981 @@
+category	confidence	name_sim	first_match	coauth_jaccard	ref_jaccard	shared_papers	papers_a	papers_b	total_papers	in_500	name_a	name_b	decision
+SAME_PERSON	0.797	0.909	1.0	0.600	0.462	0	1	1	2	2	Nicole Neubarth	Nicole N. Neubarth	
+SAME_PERSON	0.763	0.933	1.0	0.333	0.641	0	4	1	5	3	Ingrid Andrade	Ingrid V Andrade	
+SAME_PERSON	0.746	0.880	1.0	0.600	0.176	0	1	1	2	2	Fabian C. Roth	Fabian Roth	
+SAME_PERSON	0.730	0.759	0.7	1.000	0.000	0	1	1	2	2	J. Friedman	Jerome H. Friedman	
+SAME_PERSON	0.727	0.903	1.0	0.333	0.453	0	1	2	3	2	Caitlyn A. Bishop	Caitlyn Bishop	
+DIFFERENT_PEOPLE	0.700	1.000	1.0	1.000	0.000	1	1	1	2	0	 Zamin Iqbal 	 Zamin Iqbal	
+SAME_PERSON	0.695	0.870	1.0	0.286	0.373	0	3	1	4	0	Zhang J. Chen	Zhang Chen	
+SAME_PERSON	0.681	0.897	0.7	0.600	0.111	0	1	1	2	1	Gregory S. Couch	Greg S. Couch	
+SAME_PERSON	0.678	0.952	0.7	0.600	0.000	0	1	1	2	0	Ji-Youn Seo	Ji‐Youn Seo	
+SAME_PERSON	0.672	0.778	0.7	0.750	0.000	0	1	1	2	0	Fan Yang	Fujun Yang	
+SAME_PERSON	0.651	0.971	1.0	0.000	0.389	0	1	1	2	1	Leighton H. Duncan	Leighton H Duncan	
+LIKELY_SAME	0.648	0.960	1.0	0.000	0.389	0	1	1	2	1	Mark W. Moyle	Mark W Moyle	
+LIKELY_SAME	0.641	0.963	1.0	0.143	0.100	0	1	1	2	2	Agnes L. Bodor	Agnes L Bodor	
+LIKELY_SAME	0.633	0.971	1.0	0.143	0.026	0	1	1	2	1	Evan R Daugharthy	Evan R. Daugharthy	
+LIKELY_SAME	0.629	0.957	0.7	0.400	0.000	0	1	1	2	0	Der‐Fen Suen	Der-Fen Suen	
+LIKELY_SAME	0.627	0.970	1.0	0.000	0.231	0	1	1	2	1	Lukas C Kapitein	Lukas C. Kapitein	
+LIKELY_SAME	0.614	0.968	1.0	0.000	0.144	0	6	1	7	1	Ross D. Markello	Ross D Markello	
+LIKELY_SAME	0.610	0.917	1.0	0.056	0.112	0	4	1	5	1	Ben Fulcher	Ben D Fulcher	
+LIKELY_SAME	0.601	0.842	0.7	0.000	0.667	0	1	1	2	2	M. P. Young	MP Young	
+DIFFERENT_PEOPLE	0.594	0.615	0.7	0.600	1.000	1	1	1	2	0	Salman Khan	Sher Afzal Khan	
+LIKELY_SAME	0.594	0.974	1.0	0.000	0.000	0	1	3	4	2	Joshua T. Vogelstein	Joshua T Vogelstein	
+LIKELY_SAME	0.592	0.909	1.0	0.000	0.095	0	2	1	3	1	Patricia K. Rivlin	Patricia Rivlin	
+LIKELY_SAME	0.588	1.000	0.7	0.167	0.043	0	12	1	13	6	Albert-Ĺaszló Barabási	Albert-László Barabási	
+LIKELY_SAME	0.586	0.944	1.0	0.000	0.000	0	1	5	6	1	Steven L. Petersen	Steven E. Petersen	
+LIKELY_SAME	0.583	0.933	1.0	0.000	0.000	0	1	2	3	0	Robert G. Smith	Robert E. Smith	
+LIKELY_SAME	0.582	0.667	0.7	0.400	0.169	0	1	2	3	0	M. P. Schmidt	Martin Schmidt	
+LIKELY_SAME	0.577	0.667	0.7	0.000	0.800	0	1	1	2	2	Albert-László Barabási	A.-L. Barabási	
+LIKELY_SAME	0.576	0.903	1.0	0.000	0.000	0	4	15	19	9	Stephen J Smith	Stephen M. Smith	
+LIKELY_SAME	0.570	0.786	0.7	0.333	0.000	0	1	1	2	0	G M Edelman	Gerald M. Edelman	
+DIFFERENT_PEOPLE	0.565	0.774	0.7	0.429	0.828	1	2	1	3	2	Mahaly Baptiste	Maya R. Baptiste	
+LIKELY_SAME	0.562	0.850	1.0	0.000	0.000	0	1	1	2	0	Søren T. Christensen	Søren Rahn Christensen	
+LIKELY_SAME	0.561	0.615	0.7	0.167	0.500	0	1	1	2	1	Satoshi Ogawa	Shotaro Ogawa	
+LIKELY_SAME	0.559	0.778	0.7	0.000	0.500	0	1	1	2	0	Jielin Xu	Jingli Xu	
+LIKELY_SAME	0.557	0.667	0.7	0.000	0.667	0	2	1	3	3	Hawoong Jeong	H. Jeong	
+LIKELY_SAME	0.556	0.917	0.7	0.077	0.120	0	4	1	5	2	Josh Morgan	Joshua Morgan	
+LIKELY_SAME	0.554	0.762	0.7	0.250	0.074	0	2	1	3	1	Giulio Tononi	G Tononi	
+LIKELY_SAME	0.552	0.800	0.7	0.250	0.000	0	1	1	2	2	JK Stevens	John K. Stevens	
+LIKELY_SAME	0.551	0.842	0.7	0.000	0.333	0	1	1	2	0	Xinan Zhang	Xi Zhang	
+LIKELY_SAME	0.550	0.815	0.7	0.000	0.375	0	2	1	3	3	Jack W. Scannell	JW Scannell	
+LIKELY_SAME	0.547	0.966	0.7	0.000	0.103	0	12	1	13	6	Albert Cardona	Alberto Cardona	
+LIKELY_SAME	0.547	0.788	0.0	0.571	0.378	0	2	1	3	0	Luke E. Brezovec	Bella E. Brezovec	
+LIKELY_SAME	0.546	0.824	0.7	0.000	0.333	0	1	1	2	0	Yuanhua Li	Yuan Li	
+LIKELY_SAME	0.545	0.812	0.7	0.000	0.348	0	1	1	2	2	Michael Newman	Michelle G. Newman	
+LIKELY_SAME	0.540	1.000	0.7	0.000	0.000	0	1	1	2	1	Fabián Pedregosa	Fabian Pedregosa	
+LIKELY_SAME	0.534	0.974	0.7	0.000	0.000	0	1	1	2	1	Jean‐Baptiste Poline	Jean-Baptiste Poline	
+LIKELY_SAME	0.533	0.786	0.7	0.000	0.308	0	1	1	2	2	Z. N. Oltvai	Zoltán N. Oltvai	
+LIKELY_SAME	0.532	0.968	0.7	0.000	0.000	0	1	1	2	1	M‐Marsel Mesulam	M.‐Marsel Mesulam	
+LIKELY_SAME	0.529	0.923	0.7	0.000	0.053	0	1	2	3	3	Y Wang	Yi Wang	
+LIKELY_SAME	0.527	0.947	0.7	0.000	0.000	0	1	1	2	0	Yuan Wang	Yuhan Wang	
+LIKELY_SAME	0.525	1.000	0.0	0.273	0.382	0	4	1	5	3	Ágnes L. Bodor	Agnes L. Bodor	
+LIKELY_SAME	0.525	0.941	0.7	0.000	0.000	0	1	1	2	0	Juan Zhou	Jun Zhou	
+LIKELY_SAME	0.524	0.923	0.7	0.000	0.024	0	1	1	2	1	Y Wang	Yu Wang	
+LIKELY_SAME	0.523	0.933	0.7	0.000	0.000	0	1	1	2	0	Juan Liu	Jun Liu	
+LIKELY_SAME	0.523	0.933	0.7	0.000	0.000	0	1	1	2	0	Yu Wang	Yue Wang	
+LIKELY_SAME	0.521	0.923	0.7	0.000	0.000	0	1	1	2	0	Ming Wu	Min Wu	
+LIKELY_SAME	0.520	0.963	0.0	0.400	0.193	0	4	1	5	3	Ágnes L. Bodor	Agnes L Bodor	
+LIKELY_SAME	0.519	0.917	0.7	0.000	0.000	0	1	1	2	0	Ling‐Ling Chen	Linlin Chen	
+LIKELY_SAME	0.518	0.643	0.7	0.000	0.450	0	1	2	3	0	Jeong Seuk Kang	Jinyoung Kang	
+LIKELY_SAME	0.516	0.690	0.7	0.214	0.000	0	5	2	7	3	Narayanan Kasthuri	N. Kasthuri	
+LIKELY_SAME	0.515	0.824	0.7	0.000	0.128	0	1	1	2	0	Yu Wang	Yuhan Wang	
+LIKELY_SAME	0.515	0.900	0.7	0.000	0.000	0	1	1	2	1	Yaning Chen	Ying Chen	
+LIKELY_SAME	0.515	0.900	0.7	0.000	0.000	0	1	1	2	0	Linlin Chen	Lili Chen	
+LIKELY_SAME	0.515	0.900	0.7	0.000	0.000	0	2	1	3	0	Yizhen Jia	Yichen Jia	
+LIKELY_SAME	0.515	0.828	0.7	0.053	0.033	0	10	1	11	3	Louis K. Scheffer	Lou Scheffer	
+LIKELY_SAME	0.514	0.800	0.7	0.000	0.161	0	5	1	6	5	Réka Albert	R. Albert	
+LIKELY_SAME	0.514	0.897	0.7	0.000	0.000	0	1	1	2	0	Martin L. Smith	Marie L. Smith	
+LIKELY_SAME	0.514	0.895	0.7	0.000	0.000	0	2	1	3	1	Abhishek Bhattacharya	Abhi Bhattacharya	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	2	Xing Liu	Xingyu Liu	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Yan Zhao	Yifan Zhao	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Wei Wang	Weina Wang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	2	1	3	0	Liang Wang	Lin Wang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Qing Yang	Qian Yang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Guan Yang	Gang Yang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	6	1	7	1	Alexander L. Cohen	Alexandra O. Cohen	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Huan Zhou	Hang Zhou	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	1	Lei Zhang	Lin Zhang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Hao Zhang	Hua Zhang	
+LIKELY_SAME	0.512	0.889	0.7	0.000	0.000	0	1	1	2	0	Hui Zhang	Hua Zhang	
+LIKELY_SAME	0.512	0.667	0.7	0.000	0.368	0	1	4	5	4	Michelle G. Newman	M. E. J. Newman	
+LIKELY_SAME	0.512	0.842	0.7	0.000	0.073	0	1	1	2	0	Zhao Chen	Zhang Chen	
+LIKELY_SAME	0.511	0.882	0.7	0.000	0.000	0	1	1	2	0	G. Pfurtscheller	Gert Pfurtscheller	
+LIKELY_SAME	0.510	0.880	0.7	0.000	0.000	0	1	1	2	0	Xiaoran Yang	Xiaoquan Yang	
+LIKELY_SAME	0.510	0.880	0.7	0.000	0.000	0	1	1	2	0	Keelin Murphy	Kevin Murphy	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Lei Wang	Lin Wang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	0	Yu Wang	Yuan Wang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	0	CR Yang	Carl Yang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Yi Chen	Yali Chen	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Yi Chen	Ying Chen	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Xu Zhang	Xi Zhang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Ye Zhang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yu Zhang	
+LIKELY_SAME	0.509	0.875	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yu Zhang	
+LIKELY_SAME	0.509	0.778	0.7	0.000	0.161	0	1	1	2	0	Yu Wang	Yongfu Wang	
+LIKELY_SAME	0.509	0.621	0.7	0.000	0.423	0	1	4	5	4	Michael Newman	M. E. J. Newman	
+LIKELY_SAME	0.507	0.870	0.7	0.000	0.000	0	1	1	2	0	Zhiliang Chen	Zhang Chen	
+LIKELY_SAME	0.506	0.818	0.7	0.000	0.075	0	1	1	2	0	Yuxin Zhang	Yueyi Zhang	
+LIKELY_SAME	0.505	0.846	0.7	0.000	0.023	0	3	1	4	0	Xiao‐Jing Wang	Xianning Wang	
+LIKELY_SAME	0.504	0.824	0.7	0.000	0.057	0	1	1	2	0	Long Wang	Lin Wang	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	6	1	7	1	Yang‐Yu Liu	Yuanyue Liu	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yue Wang	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	1	1	2	1	Xian-Guang Wang	Xiaogang Wang	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yu Wang	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	1	1	2	1	Ying Cui	Yi Cui	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	1	1	2	0	Ye Duan	Yu Duan	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	2	1	3	0	Martin Schmidt	Morten Schmidt	
+LIKELY_SAME	0.504	0.857	0.7	0.000	0.000	0	2	1	3	0	Anirban Chakraborty	Anit Chakraborty	
+LIKELY_SAME	0.503	0.800	0.7	0.029	0.041	0	19	1	20	10	Michał Januszewski	Marcin Januszewski	
+LIKELY_SAME	0.502	0.846	0.7	0.000	0.000	0	3	1	4	0	Xiao‐Jing Wang	Xiaogang Wang	
+LIKELY_SAME	0.502	0.846	0.7	0.000	0.000	0	1	1	2	0	Chenghao Chen	Chun‐Chao Chen	
+LIKELY_SAME	0.501	0.778	0.7	0.000	0.108	0	2	1	3	0	Xi Chen	Xuejin Chen	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	1	Xing Liu	Xinxing Liu	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	2	3	1	Tingkai Liu	Ting Liu	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Sifan Wang	Shan Wang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Linlin Wang	Lin Wang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	2	1	3	0	Liang Wang	Long Wang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Wenjie Yang	Wei Yang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Yijun Chen	Ying Chen	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	1	Yiyin Zhou	Ying Zhou	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yueyi Zhang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Hong Zhang	Hao Zhang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Yu Zhang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Yu Zhang	Yueyi Zhang	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	0	Jiaquan Lin	Jian Lin	
+LIKELY_SAME	0.501	0.842	0.7	0.000	0.000	0	1	1	2	1	Jia Huang	Jing Huang	
+REVIEW	0.500	0.824	0.7	0.000	0.026	0	2	1	3	2	Yi Wang	Yimin Wang	
+REVIEW	0.500	0.839	0.7	0.000	0.000	0	1	1	2	1	Brian A. Williams	Bryan Williams	
+REVIEW	0.499	0.800	0.7	0.000	0.062	0	4	1	5	3	M. E. J. Newman	MEJ Newman	
+REVIEW	0.498	0.833	0.7	0.000	0.000	0	1	1	2	0	Hai Li	Hao Li	
+REVIEW	0.498	0.833	0.7	0.000	0.000	0	1	1	2	0	Young I. Cho	Youngbin Cho	
+REVIEW	0.498	0.741	0.7	0.000	0.154	0	4	1	5	3	Malcolm P. Young	M. P. Young	
+REVIEW	0.497	0.828	0.7	0.000	0.000	0	2	1	3	1	Davis Bennett	David A. Bennett	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yu-Li Wang	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yajie Wang	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	1	1	2	0	Yu Wang	Yu-Li Wang	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yuan Wang	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	1	1	2	1	Yi Chen	Yijun Chen	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	1	1	2	0	Shu Sun	Shu‐Wei Sun	
+REVIEW	0.496	0.824	0.7	0.000	0.000	0	8	1	9	0	Yong He	Yaodong He	
+REVIEW	0.496	0.727	0.7	0.000	0.159	0	1	1	2	0	Ruixi Chen	Ritchie Chen	
+REVIEW	0.495	0.700	0.7	0.000	0.200	0	1	1	2	0	Yuhan Wang	Yimin Wang	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	1	Xing‐Lou Yang	Xiong Yang	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Xiong Yang	Xiaoran Yang	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Ling‐Ling Chen	Lili Chen	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Gaoqiang Chen	Gang Chen	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Guanrong Chen	Gang Chen	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Lin Zhang	Lingyun Zhang	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Sujeong Kim	Seong‐Gi Kim	
+DIFFERENT_PEOPLE	0.495	0.818	0.7	0.600	0.000	1	1	1	2	0	C Baigent	Colin Baigent	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Shazia Alam	Sabina Alam	
+REVIEW	0.495	0.818	0.7	0.000	0.000	0	1	1	2	0	Shazia Alam	Shadab Alam	
+REVIEW	0.494	0.800	0.7	0.000	0.029	0	1	1	2	0	Jun Cao	Jing Cao	
+REVIEW	0.494	0.800	0.7	0.000	0.028	0	2	1	3	0	Jan Funke	Julia Funke	
+REVIEW	0.494	0.815	0.7	0.000	0.000	0	2	1	3	1	Scott M. Nelson	S. M. Nelson	
+REVIEW	0.493	0.812	0.7	0.000	0.000	0	1	2	3	0	Manuel Serrano	M. Ángeles Serrano	
+REVIEW	0.493	0.812	0.7	0.000	0.000	0	1	1	2	0	Kathryn E. Holt	Katherine B. Holt	
+REVIEW	0.493	0.812	0.7	0.000	0.000	0	1	1	2	0	John J. Connors	Joseph M. Connors	
+REVIEW	0.492	0.750	0.7	0.000	0.095	0	1	1	2	1	Y Wang	Yimin Wang	
+REVIEW	0.491	0.667	0.7	0.000	0.231	0	4	1	5	3	Malcolm P. Young	MP Young	
+REVIEW	0.491	0.778	0.7	0.000	0.043	0	2	1	3	0	Jing Liu	Jiamin Liu	
+REVIEW	0.491	0.778	0.7	0.000	0.040	0	6	2	8	1	Yang‐Yu Liu	Yong Liu	
+REVIEW	0.490	0.783	0.7	0.000	0.031	0	1	1	2	0	Chenghao Chen	Chang Chen	
+REVIEW	0.490	0.690	0.7	0.111	0.000	0	12	2	14	8	Kenneth J. Hayworth	K Hayworth	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jun Li	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Hai Li	Haiwen Li	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Jinteng Li	Jiatong Li	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Yuxin Li	Yuan Li	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	6	1	7	1	Yang‐Yu Liu	Yuhang Liu	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	2	1	3	0	Jing Liu	Jun Liu	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Yuhang Liu	Yuting Liu	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yuan Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yue Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Lei Wang	Lu Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Haidong Wang	Han Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Yuan Wang	Yaonan Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Lu Wang	Lin Wang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Daseng Yang	Dong Yang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	2	2	4	2	Joseph F. Murray	John D. Murray	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	7	1	8	3	Fei Chen	Fenglei Chen	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Yaning Chen	Yali Chen	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Yuan Zhou	Yanfen Zhou	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	2	Lei Zhang	Lihua Zhang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Lihua Zhang	Lin Zhang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Ye Zhang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Xiaoqian Zhang	Xinan Zhang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Shao‐Cong Sun	Shao-Tang Sun	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Thouis R. Jones	Thomas B. Jones	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Zi-jian Huang	Zhimin Huang	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Gang Wen	Guanghui Wen	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Erik K. Alexander	E L Alexander	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	1	Lili Wan	Lei Wan	
+REVIEW	0.490	0.800	0.7	0.000	0.000	0	1	1	2	0	Yuan Cao	Yue Cao	
+REVIEW	0.489	0.783	0.7	0.000	0.023	0	1	1	2	0	Xiong Yang	Xiaoquan Yang	
+REVIEW	0.489	0.762	0.7	0.000	0.056	0	1	1	2	0	Yuhan Wang	Yaonan Wang	
+REVIEW	0.488	0.778	0.7	0.000	0.024	0	1	1	2	0	Xu Ding	Xiaoyu Ding	
+DIFFERENT_PEOPLE	0.488	0.750	0.0	0.600	1.000	1	1	1	2	0	Fengting Huang	Jing Huang	
+REVIEW	0.487	0.750	0.7	0.000	0.065	0	2	1	3	2	Yi Wang	Yuan Wang	
+REVIEW	0.487	0.727	0.7	0.000	0.100	0	1	1	2	1	Sung‐Yon Kim	Sujeong Kim	
+REVIEW	0.487	0.593	0.7	0.143	0.086	0	1	1	2	0	Jeremy Fisher	John D. Fisher	
+REVIEW	0.487	0.667	0.7	0.000	0.200	0	1	1	2	0	Yongfu Wang	Yuhan Wang	
+REVIEW	0.486	0.786	0.7	0.000	0.000	0	1	1	2	1	Earl K. Miller	Eric L. Miller	
+REVIEW	0.486	0.786	0.7	0.000	0.000	0	1	1	2	1	Xian-Guang Wang	Xianning Wang	
+REVIEW	0.486	0.700	0.7	0.000	0.139	0	1	1	2	0	Joha Park	Juhyuk Park	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	He-liang Yin	HaiFang Yin	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Chun‐Ying Liu	Chuntai Liu	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Xianning Wang	Xindi Wang	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Long Wang	Lihong V. Wang	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Zhongwei Chen	Zhang Chen	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	2	1	3	1	Peng Zhou	Pengcheng Zhou	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yuxin Zhang	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	1	Qinghua Zhang	Qiyu Zhang	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Zhimin Huang	Ziwei Huang	
+REVIEW	0.486	0.783	0.7	0.000	0.000	0	1	1	2	0	Wen-Qing Huang	Wei Huang	
+REVIEW	0.485	0.778	0.7	0.000	0.007	0	3	1	4	0	Jinhui Wang	Ji Wang	
+REVIEW	0.485	0.750	0.7	0.000	0.048	0	1	1	2	1	Michael Newman	MEJ Newman	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	2	3	1	Yangyang Yu	Yang Yu	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	3	1	4	1	Jingpeng Wu	Jing Wu	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	1	Yanxia Li	Yaning Li	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Jinzhi Li	Jianyi Li	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Weiquan Li	Weifu Li	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	2	1	3	0	Yong Liu	Yuhang Liu	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	2	1	3	0	Yong Liu	Yuting Liu	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Juan Liu	Jiamin Liu	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	1	Zhou Wang	Ziyu Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	2	3	1	Lei Wang	Liang Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	3	1	4	0	Haoyu Wang	Han Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yue Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yuhan Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yajie Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Junmei Wang	Ji Wang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	2	Yi Chen	Yaning Chen	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yali Chen	Ying Chen	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yuan Zhou	Ying Zhou	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yida Zhang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yida Zhang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Hao Zhang	Hui Zhang	
+REVIEW	0.484	0.778	0.7	0.000	0.000	0	1	1	2	0	Yu Zhang	Yida Zhang	
+REVIEW	0.484	0.774	0.7	0.000	0.000	0	1	1	2	2	Chang-Huain Hsieh	Ching‐Lin Hsieh	
+REVIEW	0.484	0.774	0.7	0.000	0.000	0	1	1	2	0	Divya Sthanu Kumar	Darshan Kumar	
+REVIEW	0.483	0.583	0.7	0.167	0.033	0	1	1	2	1	Jeong Yoon Park	Joha Park	
+REVIEW	0.482	0.769	0.7	0.000	0.000	0	1	2	3	1	Meng Xu	Min Xu	
+REVIEW	0.482	0.769	0.7	0.000	0.000	0	1	1	2	0	Xiaogang Wang	Xianning Wang	
+REVIEW	0.482	0.769	0.7	0.000	0.000	0	1	3	4	0	Zhiliang Chen	Zhang J. Chen	
+REVIEW	0.482	0.769	0.7	0.000	0.000	0	1	1	2	0	Gaoqiang Chen	Guanrong Chen	
+REVIEW	0.481	0.727	0.7	0.000	0.060	0	3	1	4	0	Zhang J. Chen	Zhao Chen	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	1	Xingyu Liu	Xinxing Liu	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Yuhang Liu	Yuanyue Liu	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Yingtao Liu	Yuting Liu	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	1	Tso‐Ming Lee	Tzumin Lee	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Kevin Smith	Kirk Smith	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	2	3	0	Weina Wang	Wen-Xu Wang	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	2	3	0	Linlin Wang	Liang Wang	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Yingjie Yang	Yang Yang	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Yida Zhang	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Yida Zhang	Yueyi Zhang	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	1	Mark Newman	MEJ Newman	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Jianxi Gao	Jianjun Gao	
+REVIEW	0.480	0.762	0.7	0.000	0.000	0	1	1	2	0	Sarim Khan	Salman Khan	
+REVIEW	0.479	0.727	0.7	0.000	0.050	0	1	1	2	0	Qiang Wang	Quanxin Wang	
+REVIEW	0.478	0.640	0.7	0.000	0.189	0	2	1	3	0	Chin‐Lin Chen	Chenghao Chen	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	2	1	3	0	Min Xu	Minghua Xu	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Jin-Yong Park	Juhong Park	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Yanxia Li	Yuan Li	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Hailian Li	Hai Li	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Jie Li	Jinteng Li	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Yaning Li	Yuan Li	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Weifu Li	Wenqi Li	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	B. Miller	Bruce L. Miller	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	2	1	3	0	Jing Liu	Juan Liu	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yu-Li Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yuhan Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yajie Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Zichen Wang	Zhenshan Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	2	1	3	0	Liang Wang	Lihong V. Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Long Wang	Lu Wang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Heng Chen	Hu Chen	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Lihua Zhang	Lingyun Zhang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	1	Da Wei Huang	Daniel Huang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	1	1	2	0	Zi-jian Huang	Ziwei Huang	
+REVIEW	0.478	0.750	0.7	0.000	0.000	0	3	1	4	0	J. Simpson	Joanna Simpson	
+REVIEW	0.477	0.667	0.7	0.000	0.133	0	1	1	2	0	Yaonan Wang	Yimin Wang	
+REVIEW	0.476	0.700	0.7	0.000	0.071	0	1	1	2	0	Zhi Zhou	Zongwei Zhou	
+REVIEW	0.476	0.727	0.7	0.000	0.025	0	2	1	3	0	Chin‐Lin Chen	Chang Chen	
+REVIEW	0.475	0.667	0.7	0.000	0.125	0	1	1	2	0	Yingying Guo	Yan-Rong Guo	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	5	1	6	1	Douglas G. Altman	D G Altman	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	2	1	3	1	Paul D. Adams	Peter D. Adams	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yongsheng Zhang	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	1	1	2	1	Sacha B. Nelson	S. M. Nelson	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	1	1	2	0	Janel Johnson	Justin Johnson	
+REVIEW	0.475	0.741	0.7	0.000	0.000	0	1	1	2	1	Bradley T. Hyman	B. T. Hyman	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	J. H. Park	Joha Park	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Yanxia Li	Yuanhua Li	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jinteng Li	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Hailian Li	Haiwen Li	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Jiatong Li	Jianyi Li	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	2	1	3	0	Ziwei Liu	Zhikai Liu	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	2	1	3	0	Yong Liu	Yingtao Liu	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Lei Wang	Linlin Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yuan Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yongfu Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	2	3	0	Wei Wang	Wen-Xu Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yuan Wang	Yajie Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yuan Wang	Yimin Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Haixia Wang	Han Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Jinlong Wang	Ji Wang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Kenian Chen	Kun Chen	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yali Chen	Yijun Chen	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Yiyin Zhou	Yuan Zhou	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Xu Zhang	Xinan Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yuxin Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yueyi Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yuxin Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Hong Zhang	Hui Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Hong Zhang	Hua Zhang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	2	1	3	2	Bo Huang	Bevin Huang	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	1	Hyunsoo Kim	Hoon Kim	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Hui‐Seon Kim	Hoon Kim	
+REVIEW	0.474	0.737	0.7	0.000	0.000	0	1	1	2	0	Yingchuan Qi	Yuan Qi	
+REVIEW	0.474	0.706	0.7	0.000	0.050	0	1	1	2	0	Yu Wang	Yimin Wang	
+DIFFERENT_PEOPLE	0.474	0.696	0.0	0.600	1.000	1	1	1	2	0	Weina Wang	Zhenshan Wang	
+REVIEW	0.473	0.583	0.7	0.000	0.250	0	1	1	2	0	Ziming Wang	Zhenshan Wang	
+REVIEW	0.473	0.733	0.7	0.000	0.000	0	1	2	3	2	Sacha B. Nelson	Scott M. Nelson	
+REVIEW	0.473	0.706	0.7	0.000	0.042	0	3	1	4	0	Yan Lu	Yangning Lu	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Juhyuk Park	Juhong Park	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Bo Li	Bei Li	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	6	3	9	5	Kimberly D. Miller	Karla L. Miller	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	4	1	5	2	Yongxin Zhao	Yifan Zhao	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	3	1	4	0	Haoyu Wang	Haidong Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	3	1	4	0	Jinhui Wang	Junmei Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Zichen Wang	Ziming Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Yongfu Wang	Yaonan Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Shan Wang	Shuohong Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Lin Wang	Lihong V. Wang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Suoqin Jin	Seok Min Jin	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Brian E. Chen	Bing Chen	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Zhiliang Chen	Zhao Chen	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Yunshun Chen	Yijun Chen	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Zhongwei Chen	Zhao Chen	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Lei Zhang	Lingyun Zhang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yida Zhang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Yuanyuan Zhang	Yu Zhang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Xiaoqian Zhang	Xi Zhang	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	2	1	3	1	Sen Song	Sheng‐Kwei Song	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	1	Hyeon-Jin Kim	Haein Kim	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Jeong‐Lim Kim	Jaegil Kim	
+REVIEW	0.472	0.727	0.7	0.000	0.000	0	1	1	2	0	Sabina Alam	Shadab Alam	
+REVIEW	0.471	0.722	0.7	0.000	0.000	0	1	1	2	0	Bernard R. Brooks	Benjamin Rix Brooks	
+REVIEW	0.470	0.720	0.7	0.000	0.000	0	1	1	2	0	Jiaojian Wang	Jinlong Wang	
+REVIEW	0.470	0.720	0.7	0.000	0.000	0	1	1	2	0	Yuanyuan Zhang	Yuxin Zhang	
+REVIEW	0.470	0.720	0.7	0.000	0.000	0	1	1	2	0	Yuanyuan Zhang	Yueyi Zhang	
+REVIEW	0.470	0.720	0.7	0.000	0.000	0	1	1	2	2	Michael Newman	Mark Newman	
+REVIEW	0.470	0.720	0.7	0.000	0.000	0	1	1	2	1	Jia Huang	Jessica S. Huang	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	4	1	5	2	Youngser Park	Young-Gyun Park	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	1	Bo Li	Baowen Li	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	2	1	3	1	Hanyu Li	Hai Li	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	2	1	3	1	Hanyu Li	Hao Li	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	2	1	3	0	Linlin Li	Li Li	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	3	4	1	Xian-Guang Wang	Xiao‐Jing Wang	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	0	Shengxiong Wang	Shuohong Wang	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	1	Joseph I. Goldstein	Jacqueline I. Goldstein	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	3	1	4	2	Kwanghun Chung	Ka Young Chung	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	2	Mike Clarke	Michael F. Clarke	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	0	Kenji Watanabe	Kyoko Watanabe	
+REVIEW	0.469	0.714	0.7	0.000	0.000	0	1	1	2	0	Jun Lü	Jinhu Lü	
+REVIEW	0.468	0.692	0.7	0.000	0.033	0	1	2	3	0	Ruben Smith	Robert E. Smith	
+REVIEW	0.468	0.700	0.7	0.000	0.019	0	1	1	2	0	Jiaojian Wang	Ji Wang	
+REVIEW	0.467	0.710	0.7	0.000	0.000	0	1	1	2	0	Matthew D. Keller	Mark S. Keller	
+REVIEW	0.467	0.667	0.7	0.000	0.071	0	8	1	9	0	Yong He	Ye He	
+REVIEW	0.467	0.696	0.7	0.000	0.019	0	3	1	4	0	Xiao‐Jing Wang	Xindi Wang	
+REVIEW	0.467	0.667	0.7	0.000	0.067	0	1	1	2	0	Yongfu Wang	Yimin Wang	
+DIFFERENT_PEOPLE	0.467	0.667	0.0	0.600	1.000	1	1	1	2	1	Jianzhong Cui	Ying Cui	
+REVIEW	0.466	0.696	0.7	0.000	0.017	0	1	1	2	0	P. D. Brooks	Paul Brooks	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Meng Xu	Minghua Xu	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	2	Ran Li	Ruiqiang Li	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	2	1	3	1	Hanyu Li	Haiwen Li	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Yanxia Li	Yuxin Li	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Yaning Li	Yuxin Li	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Lei Liu	Lijuan Liu	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Jiamin Liu	Jun Liu	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	T M Lee	Tzumin Lee	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yongfu Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Y Wang	Yaonan Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yuhan Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Lei Wang	Long Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Yu Wang	Yajie Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Wei Wang	W.H. Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	2	1	3	0	Liang Wang	Lu Wang	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	C. Chen	Chang Chen	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	1	Yi Sun	Yongbin Sun	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	8	9	1	Yisheng He	Yong He	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Hoon Kim	Haein Kim	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	Xin Qi	Xiaoying Qi	
+REVIEW	0.466	0.706	0.7	0.000	0.000	0	1	1	2	0	J. N. S. Matthews	Jamil A. Matthews	
+REVIEW	0.466	0.667	0.7	0.000	0.061	0	1	1	2	0	Sujeong Kim	Samuel Kim	
+REVIEW	0.466	0.703	0.7	0.000	0.000	0	2	2	4	1	Robert A. Weinberg	Richard J. Weinberg	
+REVIEW	0.466	0.703	0.7	0.000	0.000	0	1	1	2	0	Alexandro D. Ramirez	Alyson N. Ramirez	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Joha Park	Juhong Park	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	1	JG White	Joseph White	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Hailian Li	Huijuan Li	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yuanhua Li	Yonghui Li	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Wen‐Hsiung Li	Weifu Li	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Wen‐Hsiung Li	Wenqi Li	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	6	1	7	1	Yang‐Yu Liu	Yuting Liu	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Cong Liu	Chun‐Ying Liu	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Zhikai Liu	Zhuang Liu	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	4	1	5	2	Yongxin Zhao	Yan Zhao	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	1	Zhou Wang	Zichen Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Zichen Wang	Ziyu Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yuhan Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yajie Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yimin Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Ziyu Wang	Ziming Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yongfu Wang	Yuan Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yuhan Wang	Yajie Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yajie Wang	Yimin Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Linlin Wang	Long Wang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	3	1	4	0	Hejie Cui	Hengmin Cui	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yang Yang	Yi‐Hsin Yang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Hsu-Hsin Chen	Hu Chen	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Haiyan Chen	Heng Chen	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	4	1	5	5	David H. Hall	DH Hall	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yanfen Zhou	Ying Zhou	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	2	Y. Zhang	Yifeng Zhang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yu Zhang	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	1	Jun-Yan Zhu	Jiang Zhu	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Hui‐Seon Kim	Haein Kim	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Wan Choi	Wonbong Choi	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yuhan Hao	Yueling Hao	
+REVIEW	0.465	0.700	0.7	0.000	0.000	0	1	1	2	0	Yueling Hao	Yihui Hao	
+REVIEW	0.465	0.667	0.7	0.000	0.054	0	12	1	13	6	Albert-Ĺaszló Barabási	A.-L. Barabási	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	1	Weizhong Li	Wen‐Hsiung Li	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	2	1	3	2	Guoping Feng	Guihai Feng	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	3	1	4	0	Jinhui Wang	Jinlong Wang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Haidong Wang	Haixia Wang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Xiaogang Wang	Xindi Wang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Tianxing Jiang	Tao Jiang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Yingjie Yang	Yi‐Hsin Yang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	1	Yaning Chen	Yunshun Chen	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Wen‐Ying Chen	Weixun Chen	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Chun‐Chao Chen	Chang Chen	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yueyi Zhang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yongsheng Zhang	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Tae-Geon Kim	Tahnbee Kim	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Chi‐yuan Hsu	Chia Wei Hsu	
+REVIEW	0.464	0.696	0.7	0.000	0.000	0	1	1	2	0	Dav Clark	Damon A. Clark	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	1	Jeong Yoon Park	Juhong Park	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Robert G. Smith	Ruben Smith	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	2	1	3	0	Gregory A. Roth	George Roth	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Zhiliang Chen	Zhongwei Chen	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	3	1	4	0	Zhang J. Chen	Zhongwei Chen	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Jae‐Byum Chang	Joann Y Chang	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Zhimin Huang	Zhen‐Feng Huang	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	2	3	0	Debora Keller	Daniel Keller	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	2	3	1	Ann L. Brown	A. G. A. Brown	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	James J. Gibson	Jude Gibson	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Michael Becker	McCoy Becker	
+REVIEW	0.463	0.692	0.7	0.000	0.000	0	1	1	2	0	Jacob A. O’Brien	John O’Brien	
+REVIEW	0.462	0.690	0.7	0.000	0.000	0	1	1	2	0	Michael Wilson	Margaret Wilson	
+REVIEW	0.462	0.690	0.7	0.000	0.000	0	1	1	2	0	Ting‐Chang Chang	Tze-Ling Chang	
+REVIEW	0.462	0.688	0.7	0.000	0.000	0	1	1	2	1	Derric Williams	David B. Williams	
+REVIEW	0.462	0.688	0.7	0.000	0.000	0	1	1	2	0	Matthew C. Rosen	Michael K. Rosen	
+REVIEW	0.462	0.688	0.7	0.000	0.000	0	3	1	4	1	Christine A. Allen	Craig D. Allen	
+REVIEW	0.462	0.688	0.7	0.000	0.000	0	1	1	2	1	Andrew P. Holmes	Alexander Holmes	
+REVIEW	0.461	0.686	0.7	0.000	0.000	0	1	3	4	1	E. D. Williams	Elizabeth A. Williams	
+REVIEW	0.461	0.684	0.7	0.000	0.000	0	4	1	5	2	James R. Anderson	Johnathon D. Anderson	
+DIFFERENT_PEOPLE	0.459	0.636	0.0	0.600	1.000	1	1	1	2	0	Qiang Wang	Pinchun Wang	
+REVIEW	0.459	0.667	0.7	0.000	0.015	0	3	1	4	2	Yuelong Wu	Yumei Wu	
+REVIEW	0.459	0.667	0.7	0.000	0.014	0	3	1	4	0	Jinhui Wang	Jiaojian Wang	
+DIFFERENT_PEOPLE	0.458	0.632	0.0	0.600	1.000	1	1	1	2	0	Fei Jiang	Yong Jiang	
+REVIEW	0.457	0.606	0.7	0.000	0.104	0	1	2	3	1	Peter Schubert	Philipp J. Schubert	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Shan Xu	Shengjin Xu	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	J. H. Park	Juhyuk Park	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	J. H. Park	Juhong Park	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	2	1	3	1	Hanyu Li	Hailian Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	2	1	3	1	Hanyu Li	Huijuan Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jie Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jinzhi Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jianyi Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Weizhong Li	Weiquan Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Jie Li	Jinzhi Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Jie Li	Jianyi Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Jie Li	Jun Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Anan Li	Aming Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Zewen Li	Zhengke Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Jinzhi Li	Jun Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yuanhua Li	Yuxin Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Baowen Li	Bei Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Hao Li	Haiwen Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Jianyi Li	Jun Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Weiquan Li	Wenqi Li	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	6	1	7	1	Yang‐Yu Liu	Yingtao Liu	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yuhang Liu	Yingtao Liu	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yuanyue Liu	Yuting Liu	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	2	Tso‐Ming Lee	T M Lee	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yongfu Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	2	1	3	2	Yi Wang	Yaonan Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	3	1	4	0	Haoyu Wang	Haixia Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yu Wang	Yaonan Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yongfu Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yimin Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Shan Wang	Shengxiong Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yajie Wang	Yaonan Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Pinchun Wang	Peter Lincoln Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Linlin Wang	Lu Wang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Lin Shao	Longquan Shao	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Xing‐Lou Yang	Xiaoran Yang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Yaning Chen	Yijun Chen	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yunshun Chen	Ying Chen	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Hsu-Hsin Chen	Haiyan Chen	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Haiyan Chen	Hu Chen	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	2	3	0	Jie Kang	Jinyoung Kang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Yiyin Zhou	Yanfen Zhou	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yuanyuan Zhang	Yida Zhang	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Yisheng He	Ye He	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	M. P. Young	Matthew D. Young	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	2	Seiji Ogawa	Satoshi Ogawa	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Hyeon-Jin Kim	Hui‐Seon Kim	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	1	Hyeon-Jin Kim	Hoon Kim	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Woohyuk Choi	Wonbong Choi	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Qing-Dong Cao	Qingjiu Cao	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Yuhan Hao	Yihui Hao	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	M. P. Schmidt	Morten Schmidt	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Abhishek Das	Abhranil Das	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	2	1	3	0	Zhuyu Peng	Zhiwei Peng	
+REVIEW	0.457	0.667	0.7	0.000	0.000	0	1	1	2	0	Lars Pedersen	Lotte B. Pedersen	
+REVIEW	0.455	0.571	0.7	0.000	0.147	0	1	1	2	1	Sung‐Yon Kim	Samuel Kim	
+DIFFERENT_PEOPLE	0.454	0.615	0.0	0.600	1.000	1	1	1	2	1	Changmeng Cui	Jianzhong Cui	
+REVIEW	0.453	0.636	0.7	0.000	0.026	0	1	1	2	0	Xiaofeng Cheng	Xu Cheng	
+DIFFERENT_PEOPLE	0.452	0.609	0.0	0.600	1.000	1	1	1	2	0	Pengcheng Zhou	Ding Zhou	
+DIFFERENT_PEOPLE	0.452	0.609	0.0	0.600	1.000	1	1	1	2	0	Xin‐Ying Lin	Yuanyuan Lin	
+REVIEW	0.452	0.647	0.7	0.000	0.000	0	1	1	2	0	Brittany M. White	Benjamin H. White	
+REVIEW	0.452	0.647	0.7	0.000	0.000	0	1	1	2	0	David A. Bennett	Dorothy C. Bennett	
+REVIEW	0.452	0.647	0.7	0.000	0.000	0	1	1	2	0	Craig A. James	Christopher J. James	
+REVIEW	0.452	0.647	0.7	0.000	0.000	0	1	1	2	0	Marion Campbell	Michael J. Campbell	
+REVIEW	0.451	0.645	0.7	0.000	0.000	0	1	1	2	1	Simon G. Thompson	Steve Thompson	
+REVIEW	0.451	0.645	0.7	0.000	0.000	0	2	1	3	1	Julia Buhmann	Joachim M. Buhmann	
+REVIEW	0.451	0.643	0.7	0.000	0.000	0	1	1	2	1	Jeong Yoon Park	Jin-Yong Park	
+REVIEW	0.451	0.643	0.7	0.000	0.000	0	1	1	2	1	Michelle G. Newman	MEJ Newman	
+REVIEW	0.450	0.615	0.7	0.000	0.043	0	1	1	2	0	Yongsheng Zhang	Yuxin Zhang	
+DIFFERENT_PEOPLE	0.450	0.600	0.0	0.600	1.000	1	1	1	2	0	Zhiyuan Xu	Handong Xu	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	1	Anil K. Jain	Abhishek Jain	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Ki-beom LEE	Kristen M. Lee	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	1	Xian-Guang Wang	Xindi Wang	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Sifan Wang	Shengxiong Wang	
+DIFFERENT_PEOPLE	0.450	0.600	0.0	0.600	1.000	1	1	1	2	0	Shan Wang	Ziming Wang	
+DIFFERENT_PEOPLE	0.450	0.600	0.0	0.600	1.000	1	1	1	2	0	Qiang Wang	Yajie Wang	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Linlin Wang	Lihong V. Wang	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	1	Xing‐Lou Yang	Xiaoquan Yang	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	2	1	3	3	Beth L. Chen	Brian E. Chen	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	2	1	3	0	Chin‐Lin Chen	Chun‐Chao Chen	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Juanjuan Han	Jung Hoon Han	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Ziwei Huang	Zhen‐Feng Huang	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	2	1	3	0	Suresh Kumar	Sandeep Kumar	
+DIFFERENT_PEOPLE	0.450	0.867	0.0	0.333	1.000	1	1	1	2	0	Eva Oberdörster	Jan Oberdörster	
+REVIEW	0.450	0.640	0.7	0.000	0.000	0	1	1	2	0	Nelson Cowan	Noah J. Cowan	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	0	Jin-Yong Park	Joha Park	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Zhou Wang	Zhenshan Wang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Lei Wang	Lihong V. Wang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	0	Hsu-Hsin Chen	Heng Chen	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Xu Zhang	Xiaoqian Zhang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yuanyuan Zhang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	0	Ye Zhang	Yuanyuan Zhang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Ivan Chang	I.T.H. Chang	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Sung‐Yon Kim	Seong‐Gi Kim	
+REVIEW	0.449	0.636	0.7	0.000	0.000	0	1	1	2	1	Hyunsoo Kim	Hui‐Seon Kim	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Haiyan Xu	Handong Xu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	3	1	4	0	Junqian Xu	Jielin Xu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	3	1	4	0	Junqian Xu	Jingli Xu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	2	3	0	Jianquan Lu	Jenny Lu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Xinwei Yu	Xinghuo Yu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Xinwei Yu	Xiuzhen Yu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Ruiqiang Li	Rufei Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Yanxia Li	Yonghui Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Jincun Li	Jiatong Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Weizhong Li	Weifu Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Weizhong Li	Wenqi Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Yaning Li	Yuanhua Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Yaning Li	Yonghui Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Jinzhi Li	Jinteng Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Jinzhi Li	Jiatong Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Huijuan Li	Haiwen Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Jinteng Li	Jianyi Li	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	2	1	3	0	Ting Liu	Tony X. Liu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	2	1	3	0	Yong Liu	Yuanyue Liu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Cong Liu	Chuntai Liu	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Yue Wang	Yaonan Wang	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Weina Wang	W.H. Wang	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Yi Chen	Yunshun Chen	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	2	1	3	0	Chin‐Lin Chen	C. Chen	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	1	Zudi Lin	Zhi-tao Lin	
+REVIEW	0.448	0.632	0.7	0.000	0.000	0	1	1	2	0	Shu Sun	Shao‐Cong Sun	
+REVIEW	0.447	0.615	0.7	0.000	0.022	0	1	1	2	0	Yongsheng Zhang	Yueyi Zhang	
+DIFFERENT_PEOPLE	0.447	0.588	0.0	0.600	1.000	1	1	1	2	0	Jun Li	Kuncheng Li	
+DIFFERENT_PEOPLE	0.447	0.588	0.0	0.600	1.000	1	1	1	2	0	Yali Chen	Kun Chen	
+REVIEW	0.447	0.615	0.7	0.000	0.019	0	3	2	5	1	Jinseop S. Kim	Jung Soo Kim	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	2	1	3	1	Ju Lu	Jianquan Lu	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	1	Di Wu	Dingfeng Wu	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Hailian Li	Hao Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Jie Li	Jiatong Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	3	1	4	0	Qi Li	Qinghong Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Hai Li	Huijuan Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Huijuan Li	Hao Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Jinteng Li	Jun Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Jiatong Li	Jun Li	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	4	1	5	2	Malcolm P. Young	Matthew D. Young	
+REVIEW	0.446	0.625	0.7	0.000	0.000	0	1	1	2	0	Cameron S. Carter	C. Barry Carter	
+REVIEW	0.446	0.600	0.7	0.000	0.038	0	1	1	2	1	Hyunsoo Kim	Haein Kim	
+REVIEW	0.445	0.621	0.7	0.000	0.000	0	1	1	2	0	Yongsheng Zhang	Yuanyuan Zhang	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	2	2	4	1	Ju Lu	Jenny Lu	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	1	1	2	0	Preti Jain	Prashant K. Jain	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Yuanyuan Zhang	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	4	1	5	4	M. E. J. Newman	Mark Newman	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	2	1	3	1	Chih-Yung Lin	Chun‐Chieh Lin	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	1	1	2	0	Jessica S. Huang	Jing Huang	
+REVIEW	0.444	0.615	0.7	0.000	0.000	0	2	1	3	1	Marvin M. Chun	Miyoung Chun	
+DIFFERENT_PEOPLE	0.443	0.571	0.0	0.600	1.000	1	1	1	2	1	Changmeng Cui	Ying Cui	
+DIFFERENT_PEOPLE	0.443	0.571	0.0	0.600	1.000	1	1	1	2	0	Chang Chen	Xuejin Chen	
+DIFFERENT_PEOPLE	0.442	0.710	0.7	0.500	0.000	1	1	1	2	0	A. B. Singleton	Andrew Singleton	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	8	1	9	5	Kisuk Lee	Kristen M. Lee	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	0	Sifan Wang	Shuohong Wang	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	0	Junmei Wang	Jinlong Wang	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	0	Jeong Seuk Kang	Jie Kang	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	1	Y. Zhang	Yongsheng Zhang	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	0	Yongsheng Zhang	Yu Zhang	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	1	1	2	0	Yongbin Sun	Yang‐Kook Sun	
+REVIEW	0.442	0.609	0.7	0.000	0.000	0	2	1	3	0	Jung Soo Kim	Jinhyun Kim	
+DIFFERENT_PEOPLE	0.442	0.667	0.0	0.500	1.000	1	1	1	2	0	Ivan H. El‐Sayed	Mostafa A. El‐Sayed	
+REVIEW	0.441	0.560	0.7	0.000	0.073	0	3	1	4	1	Jinseop S. Kim	Jinhyun Kim	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	1	Guifang Yu	Gui-Qiu Yu	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Xinghuo Yu	Xiuzhen Yu	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Bingfeng Li	Baowen Li	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	8	1	9	5	Kisuk Lee	Ki-beom LEE	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	1	Zhou Wang	Ziming Wang	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	2	1	3	0	Wen-Xu Wang	W.H. Wang	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	1	Ching-Po Yang	CR Yang	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Sara Goodwin	Stephen F. Goodwin	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Chenghao Chen	C. Chen	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	C. Chen	Chun‐Chao Chen	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Shu Sun	Shao-Tang Sun	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	1	Yisheng He	Yaodong He	
+REVIEW	0.440	0.600	0.7	0.000	0.000	0	1	1	2	0	Woohyuk Choi	Wan Choi	
+REVIEW	0.439	0.571	0.7	0.000	0.043	0	1	1	2	0	Christopher T. Lee	Chi‐Hon Lee	
+DIFFERENT_PEOPLE	0.439	0.556	0.0	0.600	1.000	1	1	1	2	0	Jiaquan Lin	Sen Lin	
+DIFFERENT_PEOPLE	0.439	0.556	0.0	0.600	1.000	1	1	1	2	0	Weixia Duan	Yu Duan	
+REVIEW	0.439	0.571	0.7	0.000	0.038	0	3	2	5	2	Fei Wang	Fangfang Wang	
+REVIEW	0.438	0.593	0.7	0.000	0.000	0	1	1	2	0	Zi-jian Huang	Zhen‐Feng Huang	
+REVIEW	0.438	0.593	0.7	0.000	0.000	0	1	1	2	0	Matthew L. Baker	Monya Baker	
+REVIEW	0.437	0.588	0.7	0.000	0.000	0	1	1	2	2	Kristopher M Barnes	Kelly A. Barnes	
+REVIEW	0.437	0.588	0.7	0.000	0.000	0	1	1	2	0	Bingfeng Li	Bei Li	
+REVIEW	0.437	0.588	0.7	0.000	0.000	0	1	1	2	0	Yonghui Li	Yuan Li	
+DIFFERENT_PEOPLE	0.436	0.545	0.0	0.600	1.000	1	1	1	2	0	Yajie Wang	Pinchun Wang	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	0	Jin-Yong Park	Juhyuk Park	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	8	1	9	5	Kisuk Lee	Kyeong-Seok Lee	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	0	Chang-Ryul Lee	Chi‐Hon Lee	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	0	Junmei Wang	Jiaojian Wang	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	3	1	4	0	Yanqiao Zhu	Yongchuan Zhu	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	1	MP Young	Matthew D. Young	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	1	Seiji Ogawa	Shotaro Ogawa	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	1	1	2	2	Hyeon-Jin Kim	Hyunsoo Kim	
+REVIEW	0.436	0.583	0.7	0.000	0.000	0	2	1	3	0	Jung Soo Kim	Jeong‐Lim Kim	
+REVIEW	0.436	0.538	0.7	0.000	0.073	0	1	1	2	1	Jeong Yoon Park	Juhyuk Park	
+REVIEW	0.435	0.581	0.7	0.000	0.000	0	2	1	3	1	Davis Bennett	Dorothy C. Bennett	
+REVIEW	0.435	0.581	0.7	0.000	0.000	0	4	1	5	1	Jacob W. Vogel	Julia Moore Vogel	
+REVIEW	0.435	0.545	0.7	0.000	0.056	0	1	1	2	1	Tingkai Liu	Tony X. Liu	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	1	Ran Li	Rufei Li	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Xiaoxiao Li	Xinping Li	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	1	Songlei Liu	Shijie Liu	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Yu-Li Wang	Yaonan Wang	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Yongfu Wang	Yajie Wang	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Lu Wang	Lihong V. Wang	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	2	Jiahui Yang	Joyce Yang	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	2	1	3	2	Beth L. Chen	Bing Chen	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Jake Y. Chen	Jiji Chen	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Yunshun Chen	Yali Chen	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	1	Julie Han	Juanjuan Han	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	1	Lydia Ng	Lisa F. P. Ng	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Yuke Zhu	Yongchuan Zhu	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Samuel Kim	Seong‐Gi Kim	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Jaegil Kim	Jinhyun Kim	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Rocky Gupta	Ravindra K. Gupta	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Yue Cao	Y. Charles Cao	
+REVIEW	0.433	0.571	0.7	0.000	0.000	0	1	1	2	0	Samuel Weiss	Stephen J. Weiss	
+DIFFERENT_PEOPLE	0.432	0.526	0.0	0.600	1.000	1	1	1	2	0	Jingli Xu	Zhiyuan Xu	
+DIFFERENT_PEOPLE	0.432	0.526	0.0	0.600	1.000	1	1	1	2	0	Jingli Xu	Handong Xu	
+REVIEW	0.431	0.562	0.7	0.000	0.000	0	2	1	3	1	Douglas R. Green	Don Wesley Green	
+DIFFERENT_PEOPLE	0.430	0.522	0.0	0.600	1.000	1	1	1	2	0	Salman Khan	Mukhtaj Khan	
+DIFFERENT_PEOPLE	0.430	0.788	0.0	0.333	1.000	1	1	1	2	0	Günter Oberdörster	Eva Oberdörster	
+DIFFERENT_PEOPLE	0.430	0.788	0.0	0.333	1.000	1	1	1	2	0	Günter Oberdörster	Jan Oberdörster	
+REVIEW	0.430	0.560	0.7	0.000	0.000	0	1	1	2	1	Jeong Yoon Park	J. H. Park	
+REVIEW	0.430	0.560	0.7	0.000	0.000	0	1	1	2	0	Yongsheng Zhang	Yida Zhang	
+REVIEW	0.430	0.560	0.7	0.000	0.000	0	1	1	2	0	Sarim Khan	Sher Afzal Khan	
+DIFFERENT_PEOPLE	0.430	0.519	0.0	0.600	1.000	1	1	1	2	0	Mukhtaj Khan	Sher Afzal Khan	
+REVIEW	0.429	0.522	0.7	0.000	0.058	0	4	3	7	2	Albert Lin	Andrew C. Lin	
+REVIEW	0.429	0.556	0.7	0.000	0.000	0	9	1	10	3	Peter H. Li	Peng Li	
+REVIEW	0.429	0.556	0.7	0.000	0.000	0	1	1	2	0	Yonghui Li	Yuxin Li	
+REVIEW	0.429	0.556	0.7	0.000	0.000	0	1	1	2	1	Yi Sun	Yang‐Kook Sun	
+REVIEW	0.428	0.552	0.7	0.000	0.000	0	1	1	2	2	Michelle G. Newman	Mark Newman	
+REVIEW	0.428	0.552	0.7	0.000	0.000	0	1	1	2	1	Conrad C. Huang	Chengjun Huang	
+DIFFERENT_PEOPLE	0.428	0.778	0.0	0.333	1.000	1	1	1	2	1	Michalis Faloutsos	Christos Faloutsos	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	0	Wen‐Hsiung Li	Weiquan Li	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	0	Yingtao Liu	Yuanyue Liu	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	0	Ziyu Wang	Zhenshan Wang	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	1	Ching-Po Yang	Carl Yang	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	1	Julie Han	Jung Hoon Han	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	0	Shao‐Cong Sun	Shu‐Wei Sun	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	2	1	3	0	Jung Soo Kim	Jaegil Kim	
+REVIEW	0.426	0.545	0.7	0.000	0.000	0	1	1	2	0	Yuan Cao	Y. Charles Cao	
+DIFFERENT_PEOPLE	0.425	0.500	0.0	0.600	1.000	1	1	1	2	0	Yonghui Li	Jun Li	
+REVIEW	0.425	0.500	0.0	0.600	0.000	0	1	1	2	0	Yi‐Hsin Yang	Carl Yang	
+REVIEW	0.425	0.538	0.7	0.000	0.000	0	1	1	2	0	Ki-beom LEE	Kyeong-Seok Lee	
+REVIEW	0.425	0.538	0.7	0.000	0.000	0	3	1	4	1	Jinseop S. Kim	Jeong‐Lim Kim	
+DIFFERENT_PEOPLE	0.425	0.765	0.0	0.333	1.000	1	1	1	2	1	Petros Faloutsos	Christos Faloutsos	
+REVIEW	0.424	0.909	0.0	0.167	0.032	0	10	1	11	5	H. Sebastian Seung	Sebastian Seung	
+REVIEW	0.423	0.533	0.7	0.000	0.000	0	1	1	2	1	Xiaoyang Rebecca Li	Xiaoxiao Li	
+REVIEW	0.423	0.533	0.7	0.000	0.000	0	1	1	2	0	Yaodong He	Ye He	
+REVIEW	0.423	0.533	0.7	0.000	0.000	0	1	1	2	0	Sandeep Robert Datta	Soma Datta	
+REVIEW	0.422	0.526	0.7	0.000	0.000	0	1	1	2	0	Daoyong Li	Dunzhu Li	
+REVIEW	0.422	0.526	0.7	0.000	0.000	0	2	1	3	0	Ziwei Liu	Zhuang Liu	
+REVIEW	0.422	0.526	0.7	0.000	0.000	0	3	1	4	0	Yanqiao Zhu	Yuke Zhu	
+REVIEW	0.420	0.522	0.7	0.000	0.000	0	1	1	2	0	Jin-Yong Park	J. H. Park	
+REVIEW	0.420	0.522	0.7	0.000	0.000	0	1	1	2	0	Shao-Tang Sun	Shu‐Wei Sun	
+REVIEW	0.420	0.522	0.7	0.000	0.000	0	1	1	2	0	Jeong‐Lim Kim	Jinhyun Kim	
+REVIEW	0.420	0.519	0.7	0.000	0.000	0	1	1	2	0	Harry M. T. Choi	Hannah Choi	
+DIFFERENT_PEOPLE	0.419	0.476	0.0	0.600	1.000	1	1	1	2	0	Yonghui Li	Kuncheng Li	
+REVIEW	0.416	0.643	0.0	0.250	0.286	0	2	1	3	0	Fangfang Wang	Shengxiong Wang	
+REVIEW	0.415	0.500	0.7	0.000	0.000	0	1	1	2	1	John Henry J. Scott	Jessica Scott	
+REVIEW	0.415	0.500	0.7	0.000	0.000	0	1	1	2	1	Bo Li	Bingfeng Li	
+REVIEW	0.415	0.500	0.7	0.000	0.000	0	3	1	4	1	Jinseop S. Kim	Jaegil Kim	
+DIFFERENT_PEOPLE	0.414	0.556	0.0	0.500	1.000	1	1	1	2	0	Xinghuo Yu	Wenwu Yu	
+DIFFERENT_PEOPLE	0.411	0.444	0.0	0.600	1.000	1	1	1	2	1	Yanxia Li	Jincun Li	
+REVIEW	0.411	0.483	0.7	0.000	0.000	0	1	1	2	1	Xiaoyang Rebecca Li	Xinping Li	
+REVIEW	0.411	0.483	0.7	0.000	0.000	0	1	1	2	0	Kyeong-Seok Lee	Kristen M. Lee	
+REVIEW	0.409	0.476	0.7	0.000	0.000	0	1	1	2	0	Yingying Guo	Yuzhu Guo	
+REVIEW	0.409	0.476	0.7	0.000	0.000	0	1	1	2	0	Yuzhu Guo	Yan-Rong Guo	
+DIFFERENT_PEOPLE	0.405	0.522	0.0	0.500	1.000	2	3	2	5	0	Haoyu Wang	Fangfang Wang	
+REVIEW	0.405	0.462	0.7	0.000	0.000	0	1	1	2	0	Joon Myong Song	Jiajia Song	
+DIFFERENT_PEOPLE	0.404	0.417	0.0	0.600	1.000	1	1	1	2	0	Morten Schmidt	Sigrún Alba Jóhannesdóttir Schmidt	
+REVIEW	0.404	0.455	0.7	0.000	0.000	0	6	1	7	3	Szi-chieh Yu	Shuying Yu	
+REVIEW	0.399	0.438	0.7	0.000	0.000	0	1	1	2	0	Chang-Ryul Lee	Christopher T. Lee	
+DIFFERENT_PEOPLE	0.395	0.647	0.0	0.333	1.000	1	1	1	2	1	Michalis Faloutsos	Petros Faloutsos	
+REVIEW	0.395	0.889	0.0	0.000	0.152	0	1	1	2	0	Juan Zhou	Yuan Zhou	
+DIFFERENT_PEOPLE	0.394	0.375	0.0	0.600	1.000	1	1	1	2	0	Shiwei Li	Anan Li	
+DIFFERENT_PEOPLE	0.392	0.636	0.0	0.333	1.000	1	1	1	2	0	Sujeong Kim	Yong‐ung Kim	
+REVIEW	0.392	0.818	0.0	0.000	0.250	0	1	1	2	0	Shan Wang	Zhenshan Wang	
+REVIEW	0.392	0.818	0.0	0.000	0.250	0	1	1	2	1	Jia Huang	Zi-jian Huang	
+REVIEW	0.392	0.408	0.7	0.000	0.000	0	1	1	2	0	Steffen Schmidt	Sigrún Alba Jóhannesdóttir Schmidt	
+REVIEW	0.386	0.476	0.0	0.167	0.500	0	1	1	2	0	Xiaogang Wang	Yue Wang	
+REVIEW	0.385	0.941	0.0	0.000	0.000	0	1	1	2	0	Shan Wang	Han Wang	
+REVIEW	0.379	0.714	0.0	0.000	0.333	0	1	1	2	0	Chengjun Huang	Fengting Huang	
+REVIEW	0.377	0.909	0.0	0.000	0.000	0	1	1	2	1	Yifeng Zhang	Feng Zhang	
+REVIEW	0.377	0.667	0.0	0.000	0.400	0	2	1	3	1	Peng Zhou	Huan Zhou	
+REVIEW	0.376	0.706	0.0	0.000	0.333	0	1	1	2	0	Huijuan Li	Yuan Li	
+REVIEW	0.376	0.706	0.0	0.000	0.333	0	1	1	2	0	Jinteng Li	Peng Li	
+REVIEW	0.375	0.700	0.0	0.000	0.333	0	1	1	2	0	Shan Wang	Haixia Wang	
+REVIEW	0.375	0.900	0.0	0.000	0.000	0	1	2	3	0	Qiang Wang	Liang Wang	
+REVIEW	0.375	0.700	0.0	0.000	0.333	0	1	1	2	0	Yali Chen	Haiyan Chen	
+REVIEW	0.375	0.900	0.0	0.000	0.000	0	1	1	2	0	Zhang Chen	Chang Chen	
+REVIEW	0.375	0.900	0.0	0.000	0.000	0	1	1	2	1	Lihua Zhang	Hua Zhang	
+REVIEW	0.375	0.900	0.0	0.000	0.000	0	2	1	3	0	Qing Huang	Jing Huang	
+REVIEW	0.375	0.900	0.0	0.000	0.000	0	1	1	2	0	Ziwei Huang	Wei Huang	
+REVIEW	0.374	0.778	0.0	0.000	0.200	0	1	1	2	0	Ziyu Wang	Yuan Wang	
+REVIEW	0.373	0.700	0.0	0.100	0.155	0	2	1	3	0	Liang Wang	Xindi Wang	
+REVIEW	0.373	0.842	0.0	0.000	0.080	0	1	1	2	0	Heng Chen	Zhang Chen	
+REVIEW	0.372	0.875	0.0	0.000	0.024	0	2	2	4	0	Ting Liu	Jing Liu	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	2	1	3	0	Ting Liu	Yuting Liu	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Juan Liu	Lijuan Liu	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Yuhan Wang	Han Wang	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Yang Yang	Gang Yang	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Ying Chen	Bing Chen	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Huan Zhou	Juan Zhou	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Huan Zhou	Yuan Zhou	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Ding Zhou	Ying Zhou	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	2	1	3	0	Chi Zhang	Hui Zhang	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Bin Zhang	Lin Zhang	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Hui Zhang	Rui Zhang	
+REVIEW	0.372	0.889	0.0	0.000	0.000	0	1	1	2	0	Yu Zhang	Qiyu Zhang	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	1	2	3	1	Xing Liu	Ting Liu	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	1	2	3	1	Xing Liu	Jing Liu	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	2	1	3	0	Yong Liu	Cong Liu	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	3	1	4	3	Fei Wang	Lei Wang	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	3	1	4	2	Fei Wang	Wei Wang	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	1	1	2	1	Lei Wang	Wei Wang	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	1	1	2	0	Yu Wang	Ziyu Wang	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	3	1	4	1	Mei Shao	Pei Shao	
+REVIEW	0.369	0.875	0.0	0.000	0.000	0	1	1	2	1	Xu Zhang	Yu Zhang	
+REVIEW	0.369	0.850	0.0	0.000	0.041	0	3	1	4	2	Christopher L. Barnes	Kristopher M Barnes	
+REVIEW	0.368	0.846	0.0	0.000	0.044	0	3	1	4	0	Xiao‐Jing Wang	Jiaojian Wang	
+REVIEW	0.368	0.778	0.0	0.000	0.154	0	2	1	3	0	Chi Zhang	Hao Zhang	
+REVIEW	0.367	0.870	0.0	0.000	0.000	0	2	1	3	0	Chin‐Lin Chen	Linlin Chen	
+DIFFERENT_PEOPLE	0.367	0.480	0.7	0.333	0.159	1	2	1	3	1	Peter T. Fox	P. Mickle Fox	
+REVIEW	0.367	0.833	0.0	0.000	0.058	0	5	3	8	2	Ran Lu	Yan Lu	
+REVIEW	0.367	0.667	0.0	0.083	0.194	0	3	1	4	1	Bryan W. Jones	Cory Jones	
+REVIEW	0.367	0.867	0.0	0.000	0.000	0	1	1	2	0	Noel W. Davies	Daniel W. Davies	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Xiaoran Yang	Guan Yang	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Dong Yang	Guan Yang	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Fenglei Chen	Yali Chen	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Fenglei Chen	Wen‐Ying Chen	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Yali Chen	Wen‐Ying Chen	
+REVIEW	0.367	0.667	0.0	0.000	0.333	0	1	1	2	0	Chengjun Huang	Jing Huang	
+REVIEW	0.366	0.778	0.0	0.000	0.143	0	1	2	3	1	Xingyu Liu	Jing Liu	
+REVIEW	0.365	0.762	0.0	0.000	0.167	0	1	1	2	0	Yijun Chen	Weixun Chen	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Ming Wu	Jing Wu	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	9	1	10	7	Feng Li	Peng Li	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	2	1	3	2	Yi Wang	Ji Wang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Yu Wang	Lu Wang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Ziming Wang	Yimin Wang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Long Wang	Jinlong Wang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	2	3	1	Yi Chen	Xi Chen	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Wen‐Ying Chen	Ying Chen	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	1	Zhibin Zhang	Bin Zhang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	1	Da Wei Huang	Wei Huang	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	2	1	3	0	R. Hill	J. Hill	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	2	3	0	He Tian	Ye Tian	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Jinjun Shi	Mingjun Shi	
+REVIEW	0.364	0.857	0.0	0.000	0.000	0	1	1	2	0	Liwei Peng	Zhiwei Peng	
+REVIEW	0.361	0.696	0.0	0.000	0.250	0	1	1	2	0	Jiaquan Lin	Yuanyuan Lin	
+REVIEW	0.361	0.818	0.0	0.000	0.045	0	3	3	6	0	Daniel Kerschensteiner	Martin Kerschensteiner	
+REVIEW	0.361	0.818	0.0	0.000	0.042	0	9	1	10	4	Vinod Menon	David Menon	
+REVIEW	0.361	0.692	0.0	0.000	0.250	0	1	1	2	0	Ben Jackson	Cody B. Jackson	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Haiyan Xu	Zhiyuan Xu	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	3	4	1	Zhou Wang	Haoyu Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	5	1	6	2	Kaiyu Wang	Ziyu Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	3	4	1	Chao Wang	Haoyu Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Yuhan Wang	Shan Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Qiang Wang	Bing Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	2	1	3	0	Liang Wang	Bing Wang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Xiong Yang	Qing Yang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Xiong Yang	Dong Yang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Heng Chen	Chang Chen	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Zhang Chen	Gang Chen	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Chang Chen	Gang Chen	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	1	Lei Zhang	Neil Zhang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Xi Zhang	
+REVIEW	0.361	0.842	0.0	0.000	0.000	0	1	1	2	1	Jia Huang	Xiao Huang	
+REVIEW	0.360	0.839	0.0	0.000	0.000	0	1	1	2	0	Gonçalo Rodrigues	João Rodrigues	
+REVIEW	0.359	0.636	0.0	0.000	0.333	0	1	1	2	0	Xiaoguang Zhao	Yan Zhao	
+REVIEW	0.359	0.636	0.0	0.000	0.333	0	1	1	2	0	Ziming Wang	Haixia Wang	
+REVIEW	0.359	0.824	0.0	0.000	0.021	0	12	1	13	8	C. Shan Xu	Shan Xu	
+DIFFERENT_PEOPLE	0.359	0.762	0.0	0.333	0.568	1	3	1	4	0	Jinhui Wang	Xindi Wang	
+REVIEW	0.358	0.833	0.0	0.000	0.000	0	1	1	2	2	Lihua Zhang	Qinghua Zhang	
+REVIEW	0.358	0.833	0.0	0.000	0.000	0	1	1	2	0	Jinglan Zhang	Xinan Zhang	
+REVIEW	0.358	0.833	0.0	0.000	0.000	0	2	1	3	0	Qing Huang	Wen-Qing Huang	
+REVIEW	0.358	0.824	0.0	0.000	0.015	0	5	1	6	2	Kaiyu Wang	Yu Wang	
+REVIEW	0.358	0.632	0.0	0.000	0.333	0	1	1	2	0	Kun Chen	Haiyan Chen	
+REVIEW	0.357	0.828	0.0	0.000	0.000	0	1	3	4	2	Earl K. Miller	Karla L. Miller	
+REVIEW	0.357	0.828	0.0	0.000	0.000	0	1	1	2	0	Bruce L. Miller	Eric L. Miller	
+REVIEW	0.357	0.828	0.0	0.000	0.000	0	1	1	2	1	Carl D. Hacker	Sally D. Hacker	
+REVIEW	0.357	0.828	0.0	0.000	0.000	0	1	1	2	0	Mark Richardson	Amy Richardson	
+REVIEW	0.357	0.526	0.0	0.000	0.500	0	1	1	2	0	Jielin Xu	Zhiyuan Xu	
+REVIEW	0.357	0.800	0.0	0.000	0.043	0	1	1	2	0	Kai Kang	Di Kang	
+REVIEW	0.356	0.733	0.0	0.000	0.154	0	2	1	3	1	Emma C. Robinson	P. A. Robinson	
+REVIEW	0.356	0.625	0.0	0.000	0.333	0	1	1	2	0	Cong Liu	Juan Liu	
+REVIEW	0.356	0.769	0.0	0.000	0.091	0	1	1	2	0	Jia Guo	Li Guo	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yaning Li	Aming Li	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Min Liu	Jiamin Liu	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Lijuan Liu	Jun Liu	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	3	1	4	1	Ting Zhao	Bin Zhao	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Hang Zhao	Yan Zhao	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Chao Wang	Han Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	3	1	4	0	Haoyu Wang	Yu Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Ziyu Wang	Yue Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yuan Wang	Han Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yajie Wang	Ji Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Lin Wang	Bing Wang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yang Yang	Fan Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Qing Yang	Bin Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Bin Yang	Qian Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Fan Yang	Guan Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Fan Yang	Qian Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Fan Yang	Gang Yang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	2	3	0	Ruixi Chen	Xi Chen	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Huan Zhou	Jun Zhou	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Jun Zhou	Yuan Zhou	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Lei Zhang	Ye Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Lei Zhang	Xi Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Xu Zhang	Hui Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Xu Zhang	Rui Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	1	Xu Zhang	Hua Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	2	1	3	0	Chi Zhang	Xi Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Bin Zhang	Xi Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Lin Zhang	Xi Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Hui Zhang	Yu Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Hui Zhang	Xi Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yu Zhang	Rui Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Yu Zhang	Hua Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Xi Zhang	Kai Zhang	
+REVIEW	0.356	0.824	0.0	0.000	0.000	0	1	1	2	0	Xi Zhang	Rui Zhang	
+REVIEW	0.355	0.769	0.0	0.000	0.083	0	1	1	2	1	Y Wang	Lu Wang	
+REVIEW	0.355	0.783	0.0	0.000	0.060	0	3	2	5	0	Xiao‐Jing Wang	Liang Wang	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	3	1	4	1	Jingpeng Wu	Dingfeng Wu	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	1	2	0	Chenghao Chen	Heng Chen	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	1	2	1	Qinghua Zhang	Hua Zhang	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	1	2	0	Hao Zhang	Shaojun Zhang	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Xinan Zhang	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	1	2	1	M. P. Young	I. R. Young	
+REVIEW	0.355	0.818	0.0	0.000	0.000	0	1	2	3	0	Chun Peng	Hanchuan Peng	
+REVIEW	0.354	0.667	0.0	0.000	0.250	0	1	1	2	0	Ziming Wang	Weina Wang	
+REVIEW	0.354	0.667	0.0	0.000	0.250	0	1	1	2	0	Haixia Wang	Weina Wang	
+REVIEW	0.354	0.696	0.0	0.000	0.200	0	1	1	2	0	Daoyong Li	Taoyingnan Li	
+REVIEW	0.354	0.815	0.0	0.000	0.000	0	1	1	2	2	Neil J. Friedman	J. Friedman	
+REVIEW	0.354	0.815	0.0	0.000	0.000	0	1	1	2	0	Chengjun Huang	Sheng‐Fu Huang	
+REVIEW	0.353	0.812	0.0	0.000	0.000	0	2	1	3	1	Emma C. Robinson	Mark D. Robinson	
+REVIEW	0.353	0.800	0.0	0.000	0.020	0	5	3	8	2	Kaiyu Wang	Haoyu Wang	
+REVIEW	0.353	0.800	0.0	0.000	0.020	0	1	1	2	0	Lin Wang	Ji Wang	
+REVIEW	0.353	0.737	0.0	0.000	0.125	0	1	1	2	0	Bin Zhang	Yida Zhang	
+DIFFERENT_PEOPLE	0.353	0.516	0.0	0.444	0.750	2	3	2	5	2	Kalkidan Hassen Abate	Degu Abate	
+REVIEW	0.352	0.609	0.0	0.000	0.333	0	1	1	2	0	Yunshun Chen	Kenian Chen	
+REVIEW	0.352	0.778	0.0	0.000	0.049	0	1	1	2	0	Xiong Yang	Bin Yang	
+REVIEW	0.352	0.762	0.0	0.000	0.075	0	1	1	2	0	Yuxin Zhang	Qiyu Zhang	
+REVIEW	0.351	0.737	0.0	0.000	0.114	0	1	1	2	0	Jing Cao	Qingjiu Cao	
+REVIEW	0.351	0.632	0.0	0.000	0.286	0	1	1	2	0	Yujie Shi	Xiaoyu Shi	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	1	Ju Lu	Lu Lu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	6	3	9	6	Szi-chieh Yu	Chih-Chieh Yu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Guifang Yu	Jinfang Yu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	3	1	4	0	Qi Li	Li Li	
+REVIEW	0.350	0.600	0.0	0.000	0.333	0	1	1	2	0	Huijuan Li	Yuanhua Li	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Webb Miller	B. Miller	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Anna Fischer	Sarah Fischer	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Rakesh K. Jain	Prashant K. Jain	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	6	1	7	2	Yang‐Yu Liu	Xingyu Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Xing Liu	Min Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	0	Ting Liu	Min Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	0	Jing Liu	Min Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Fan Liu	Juan Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Zhuang Liu	Yuhang Liu	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	3	1	4	1	Ting Zhao	Jingbo Zhao	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	3	2	5	4	Fei Wang	Yi Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	3	1	4	2	Fei Wang	Ji Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Y Wang	Ziyu Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	2	Xian-Guang Wang	Nianshuang Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	3	Yi Wang	Lei Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	2	Yi Wang	Wei Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	2	Yi Wang	Lin Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Lei Wang	Ji Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Sifan Wang	Qiang Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	2	3	0	Sifan Wang	Liang Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yue Wang	Lu Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Wei Wang	Ji Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yongfu Wang	Long Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yuan Wang	Ruofan Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Ziming Wang	Bing Wang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yang Yang	Daseng Yang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Daseng Yang	Gang Yang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Wei Yang	Li Yang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Li Yang	Bin Yang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	7	1	8	4	Fei Chen	Yi Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	7	2	9	3	Fei Chen	Xi Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Yaning Chen	Bing Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Yaning Chen	Gang Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	2	3	0	Zhiliang Chen	Chin‐Lin Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Alicia Chen	Yali Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Alicia Chen	Lili Chen	
+REVIEW	0.350	0.600	0.0	0.000	0.333	0	1	1	2	0	Fenglei Chen	Kun Chen	
+REVIEW	0.350	0.600	0.0	0.000	0.333	0	1	1	2	0	Kun Chen	Wen‐Ying Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Kun Chen	Hu Chen	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Anchi Cheng	Ran Cheng	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yifan Cheng	Ran Cheng	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Jie Kang	Di Kang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Lei Zhang	Yueyi Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Lihua Zhang	Hao Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Lihua Zhang	Hui Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Bin Zhang	Yuxin Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Bin Zhang	Xinan Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Feng Zhang	Hong Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Lin Zhang	Yuxin Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Lin Zhang	Xinan Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Hui Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yuxin Zhang	Rui Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Hui Zhang	Yueyi Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Rui Zhang	Yueyi Zhang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Bin Lin	Jian Lin	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	2	1	3	1	Erik C. Johnson	Mark G. Johnson	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Bevin Huang	Wei Huang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Saige Rutherford	A V Rutherford	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	1	Simon B. Laughlin	Justin G. Laughlin	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	2	3	1	Rafael Lozano	Angel Lozano	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Yuan Cao	Jun Cao	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Shiang Fang	Jing Fang	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Ryan Kennedy	Henry Kennedy	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Izumi Nishio	Mizuho Nishio	
+REVIEW	0.350	0.800	0.0	0.000	0.000	0	1	1	2	0	Rune Christensen	Søren T. Christensen	

@@ -347,7 +347,8 @@
       "external_citations": 354,
       "corpus_in_degree": 171,
       "composite_score": 0.026024578176867413,
-      "neuro_signal": 2
+      "neuro_signal": 2,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2136395604",
@@ -356,7 +357,8 @@
       "external_citations": 1200,
       "corpus_in_degree": 167,
       "composite_score": 0.01843686530781687,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2612078078",
@@ -365,7 +367,8 @@
       "external_citations": 401,
       "corpus_in_degree": 154,
       "composite_score": 0.022808805512115723,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W1979426401",
@@ -374,7 +377,8 @@
       "external_citations": 2647,
       "corpus_in_degree": 150,
       "composite_score": 0.02553904506855479,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2014022174",
@@ -383,7 +387,8 @@
       "external_citations": 1757,
       "corpus_in_degree": 143,
       "composite_score": 0.024899944219336795,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2111902267",
@@ -392,7 +397,8 @@
       "external_citations": 2967,
       "corpus_in_degree": 141,
       "composite_score": 0.02335563491661414,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2009650955",
@@ -401,7 +407,8 @@
       "external_citations": 1265,
       "corpus_in_degree": 141,
       "composite_score": 0.01787258853378083,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2005476331",
@@ -410,7 +417,8 @@
       "external_citations": 2223,
       "corpus_in_degree": 137,
       "composite_score": 0.021209055980487238,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W4232515155",
@@ -419,7 +427,8 @@
       "external_citations": 396,
       "corpus_in_degree": 137,
       "composite_score": 0.02268822298409658,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     },
     {
       "openalex_id": "https://openalex.org/W1990574575",
@@ -428,7 +437,8 @@
       "external_citations": 830,
       "corpus_in_degree": 130,
       "composite_score": 0.011754872481272945,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2161515775",
@@ -437,7 +447,8 @@
       "external_citations": 1175,
       "corpus_in_degree": 126,
       "composite_score": 0.01730615694513186,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2566875547",
@@ -446,7 +457,8 @@
       "external_citations": 329,
       "corpus_in_degree": 125,
       "composite_score": 0.0245170386906823,
-      "neuro_signal": 2
+      "neuro_signal": 2,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2161493176",
@@ -455,7 +467,8 @@
       "external_citations": 1188,
       "corpus_in_degree": 124,
       "composite_score": 0.01694203236914555,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2142029338",
@@ -464,7 +477,8 @@
       "external_citations": 1779,
       "corpus_in_degree": 123,
       "composite_score": 0.015543596621254225,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2033078279",
@@ -473,7 +487,8 @@
       "external_citations": 1192,
       "corpus_in_degree": 122,
       "composite_score": 0.02519851156701899,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2902929870",
@@ -482,7 +497,8 @@
       "external_citations": 570,
       "corpus_in_degree": 120,
       "composite_score": 0.02534277739987335,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     },
     {
       "openalex_id": "https://openalex.org/W1608731182",
@@ -491,7 +507,8 @@
       "external_citations": 260,
       "corpus_in_degree": 119,
       "composite_score": 0.02532528855172372,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2803790834",
@@ -500,7 +517,8 @@
       "external_citations": 218,
       "corpus_in_degree": 118,
       "composite_score": 0.017053447094954426,
-      "neuro_signal": 3
+      "neuro_signal": 3,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2096672020",
@@ -509,7 +527,8 @@
       "external_citations": 1693,
       "corpus_in_degree": 117,
       "composite_score": 0.02148351178675561,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2146406922",
@@ -518,7 +537,8 @@
       "external_citations": 792,
       "corpus_in_degree": 114,
       "composite_score": 0.016587453364332077,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2133015986",
@@ -527,7 +547,8 @@
       "external_citations": 1348,
       "corpus_in_degree": 114,
       "composite_score": 0.020770956288617408,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2472582738",
@@ -536,7 +557,8 @@
       "external_citations": 421,
       "corpus_in_degree": 114,
       "composite_score": 0.025262570208518596,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     },
     {
       "openalex_id": "https://openalex.org/W2949152168",
@@ -545,7 +567,8 @@
       "external_citations": 219,
       "corpus_in_degree": 114,
       "composite_score": 0.02446783952287111,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W1756731880",
@@ -554,7 +577,8 @@
       "external_citations": 139,
       "corpus_in_degree": 107,
       "composite_score": 0.023771924555925382,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2015334431",
@@ -563,7 +587,8 @@
       "external_citations": 345,
       "corpus_in_degree": 107,
       "composite_score": 0.018996438928293932,
-      "neuro_signal": 3
+      "neuro_signal": 3,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2071608556",
@@ -572,7 +597,8 @@
       "external_citations": 1671,
       "corpus_in_degree": 106,
       "composite_score": 0.024645173123055968,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2005821483",
@@ -581,7 +607,8 @@
       "external_citations": 4215,
       "corpus_in_degree": 106,
       "composite_score": 0.023454730033139505,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2765915208",
@@ -590,7 +617,8 @@
       "external_citations": 258,
       "corpus_in_degree": 106,
       "composite_score": 0.017248966310605778,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2127070446",
@@ -599,7 +627,8 @@
       "external_citations": 739,
       "corpus_in_degree": 105,
       "composite_score": 0.013608190108296354,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2165985389",
@@ -608,7 +637,8 @@
       "external_citations": 1112,
       "corpus_in_degree": 105,
       "composite_score": 0.01335069402276283,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2139713088",
@@ -617,7 +647,8 @@
       "external_citations": 2392,
       "corpus_in_degree": 104,
       "composite_score": 0.027508448760056547,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "off_topic"
     },
     {
       "openalex_id": "https://openalex.org/W2592023542",
@@ -626,7 +657,8 @@
       "external_citations": 152,
       "corpus_in_degree": 102,
       "composite_score": 0.023127805323688997,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     },
     {
       "openalex_id": "https://openalex.org/W2002429803",
@@ -635,7 +667,8 @@
       "external_citations": 1385,
       "corpus_in_degree": 102,
       "composite_score": 0.026922668878348967,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2112151839",
@@ -644,7 +677,8 @@
       "external_citations": 948,
       "corpus_in_degree": 100,
       "composite_score": 0.023130494886067263,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2126838454",
@@ -653,7 +687,8 @@
       "external_citations": 2779,
       "corpus_in_degree": 100,
       "composite_score": 0.01702824466429347,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2034184519",
@@ -662,7 +697,8 @@
       "external_citations": 353,
       "corpus_in_degree": 99,
       "composite_score": 0.02701422078794426,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2148601705",
@@ -671,7 +707,8 @@
       "external_citations": 3103,
       "corpus_in_degree": 99,
       "composite_score": 0.024032132626244727,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2766639217",
@@ -680,7 +717,8 @@
       "external_citations": 1402,
       "corpus_in_degree": 98,
       "composite_score": 0.01447586235772342,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2083707522",
@@ -689,7 +727,8 @@
       "external_citations": 151,
       "corpus_in_degree": 98,
       "composite_score": 0.014051980077044229,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     },
     {
       "openalex_id": "https://openalex.org/W1975821649",
@@ -698,7 +737,8 @@
       "external_citations": 1556,
       "corpus_in_degree": 97,
       "composite_score": 0.01729911878281354,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1921182138",
@@ -707,7 +747,8 @@
       "external_citations": 1644,
       "corpus_in_degree": 96,
       "composite_score": 0.01935208275682719,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2307899896",
@@ -716,7 +757,8 @@
       "external_citations": 294,
       "corpus_in_degree": 95,
       "composite_score": 0.014292982072261647,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2109273473",
@@ -725,7 +767,8 @@
       "external_citations": 657,
       "corpus_in_degree": 95,
       "composite_score": 0.01852499975818297,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2159549823",
@@ -734,7 +777,8 @@
       "external_citations": 1543,
       "corpus_in_degree": 95,
       "composite_score": 0.014549251286416353,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2136199096",
@@ -743,7 +787,8 @@
       "external_citations": 1183,
       "corpus_in_degree": 94,
       "composite_score": 0.01428067612805271,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2536956629",
@@ -752,7 +797,8 @@
       "external_citations": 2539,
       "corpus_in_degree": 94,
       "composite_score": 0.014308949115769923,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2126956247",
@@ -761,7 +807,8 @@
       "external_citations": 1002,
       "corpus_in_degree": 92,
       "composite_score": 0.011971961357529766,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2143502460",
@@ -770,7 +817,8 @@
       "external_citations": 1460,
       "corpus_in_degree": 92,
       "composite_score": 0.01754829425273264,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "unknown"
     },
     {
       "openalex_id": "https://openalex.org/W2529695649",
@@ -779,7 +827,8 @@
       "external_citations": 240,
       "corpus_in_degree": 92,
       "composite_score": 0.019077880211195088,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2058711140",
@@ -788,7 +837,8 @@
       "external_citations": 691,
       "corpus_in_degree": 91,
       "composite_score": 0.00908630321856759,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     }
   ],
   "C_tail_high_extcites": [
@@ -801,6 +851,7 @@
       "external_citations": 22750,
       "in_degree": 24,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -812,6 +863,7 @@
       "external_citations": 20874,
       "in_degree": 6,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -823,6 +875,7 @@
       "external_citations": 20643,
       "in_degree": 10,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -834,6 +887,7 @@
       "external_citations": 20640,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -845,6 +899,7 @@
       "external_citations": 19719,
       "in_degree": 8,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -856,6 +911,7 @@
       "external_citations": 19538,
       "in_degree": 10,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -867,6 +923,7 @@
       "external_citations": 19490,
       "in_degree": 9,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -878,6 +935,7 @@
       "external_citations": 18843,
       "in_degree": 7,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -889,6 +947,7 @@
       "external_citations": 18548,
       "in_degree": 23,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -900,6 +959,7 @@
       "external_citations": 18373,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -911,6 +971,7 @@
       "external_citations": 18192,
       "in_degree": 10,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -922,6 +983,7 @@
       "external_citations": 17403,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -933,6 +995,7 @@
       "external_citations": 16277,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -944,6 +1007,7 @@
       "external_citations": 16166,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -955,6 +1019,7 @@
       "external_citations": 16130,
       "in_degree": 4,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -966,6 +1031,7 @@
       "external_citations": 16125,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -977,6 +1043,7 @@
       "external_citations": 15770,
       "in_degree": 3,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -988,6 +1055,7 @@
       "external_citations": 15741,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -999,6 +1067,7 @@
       "external_citations": 15619,
       "in_degree": 13,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1010,6 +1079,7 @@
       "external_citations": 15208,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1021,6 +1091,7 @@
       "external_citations": 14685,
       "in_degree": 7,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1032,6 +1103,7 @@
       "external_citations": 14139,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1043,6 +1115,7 @@
       "external_citations": 13980,
       "in_degree": 94,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1054,6 +1127,7 @@
       "external_citations": 13922,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1065,6 +1139,7 @@
       "external_citations": 13889,
       "in_degree": 6,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1076,6 +1151,7 @@
       "external_citations": 13873,
       "in_degree": 15,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1087,6 +1163,7 @@
       "external_citations": 13808,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1098,6 +1175,7 @@
       "external_citations": 13807,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1109,6 +1187,7 @@
       "external_citations": 13788,
       "in_degree": 154,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1120,6 +1199,7 @@
       "external_citations": 13715,
       "in_degree": 19,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1131,6 +1211,7 @@
       "external_citations": 13658,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1142,6 +1223,7 @@
       "external_citations": 13652,
       "in_degree": 4,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1153,6 +1235,7 @@
       "external_citations": 13617,
       "in_degree": 19,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1164,6 +1247,7 @@
       "external_citations": 13562,
       "in_degree": 7,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1175,6 +1259,7 @@
       "external_citations": 13428,
       "in_degree": 6,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1186,6 +1271,7 @@
       "external_citations": 13254,
       "in_degree": 12,
       "neuro_signal": 2,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1197,6 +1283,7 @@
       "external_citations": 13179,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1208,6 +1295,7 @@
       "external_citations": 13092,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1219,6 +1307,7 @@
       "external_citations": 13065,
       "in_degree": 6,
       "neuro_signal": 2,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1230,6 +1319,7 @@
       "external_citations": 12938,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1241,6 +1331,7 @@
       "external_citations": 12898,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1252,6 +1343,7 @@
       "external_citations": 12773,
       "in_degree": 71,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1263,6 +1355,7 @@
       "external_citations": 12750,
       "in_degree": 25,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1274,6 +1367,7 @@
       "external_citations": 12614,
       "in_degree": 25,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1285,6 +1379,7 @@
       "external_citations": 12599,
       "in_degree": 29,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1296,6 +1391,7 @@
       "external_citations": 12587,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1307,6 +1403,7 @@
       "external_citations": 12531,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1318,6 +1415,7 @@
       "external_citations": 12175,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1329,6 +1427,7 @@
       "external_citations": 12093,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1340,6 +1439,7 @@
       "external_citations": 12081,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1351,6 +1451,7 @@
       "external_citations": 12046,
       "in_degree": 137,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1362,6 +1463,7 @@
       "external_citations": 11946,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1373,6 +1475,7 @@
       "external_citations": 11929,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1384,6 +1487,7 @@
       "external_citations": 11840,
       "in_degree": 10,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1395,6 +1499,7 @@
       "external_citations": 11812,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1406,6 +1511,7 @@
       "external_citations": 11701,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1417,6 +1523,7 @@
       "external_citations": 11661,
       "in_degree": 7,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1428,6 +1535,7 @@
       "external_citations": 11584,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1439,6 +1547,7 @@
       "external_citations": 11568,
       "in_degree": 0,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1450,6 +1559,7 @@
       "external_citations": 11564,
       "in_degree": 77,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1461,6 +1571,7 @@
       "external_citations": 11546,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1472,6 +1583,7 @@
       "external_citations": 11497,
       "in_degree": 6,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1483,6 +1595,7 @@
       "external_citations": 11488,
       "in_degree": 7,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1494,6 +1607,7 @@
       "external_citations": 11461,
       "in_degree": 53,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1505,6 +1619,7 @@
       "external_citations": 11445,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1516,6 +1631,7 @@
       "external_citations": 11431,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1527,6 +1643,7 @@
       "external_citations": 11349,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1538,6 +1655,7 @@
       "external_citations": 11253,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1549,6 +1667,7 @@
       "external_citations": 11157,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1560,6 +1679,7 @@
       "external_citations": 11132,
       "in_degree": 101,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1571,6 +1691,7 @@
       "external_citations": 11129,
       "in_degree": 0,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1582,6 +1703,7 @@
       "external_citations": 11123,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1593,6 +1715,7 @@
       "external_citations": 11104,
       "in_degree": 22,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1604,6 +1727,7 @@
       "external_citations": 11089,
       "in_degree": 26,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1615,6 +1739,7 @@
       "external_citations": 10837,
       "in_degree": 123,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1626,6 +1751,7 @@
       "external_citations": 10823,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1637,6 +1763,7 @@
       "external_citations": 10749,
       "in_degree": 33,
       "neuro_signal": 1,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1648,6 +1775,7 @@
       "external_citations": 10702,
       "in_degree": 4,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1659,6 +1787,7 @@
       "external_citations": 10594,
       "in_degree": 18,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1670,6 +1799,7 @@
       "external_citations": 10589,
       "in_degree": 81,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1681,6 +1811,7 @@
       "external_citations": 10126,
       "in_degree": 15,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1692,6 +1823,7 @@
       "external_citations": 10081,
       "in_degree": 74,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1703,6 +1835,7 @@
       "external_citations": 9916,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1714,6 +1847,7 @@
       "external_citations": 9824,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1725,6 +1859,7 @@
       "external_citations": 9731,
       "in_degree": 123,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1736,6 +1871,7 @@
       "external_citations": 9712,
       "in_degree": 8,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1747,6 +1883,7 @@
       "external_citations": 9682,
       "in_degree": 3,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1758,6 +1895,7 @@
       "external_citations": 9594,
       "in_degree": 9,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1769,6 +1907,7 @@
       "external_citations": 9561,
       "in_degree": 89,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1780,6 +1919,7 @@
       "external_citations": 9496,
       "in_degree": 76,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1791,6 +1931,7 @@
       "external_citations": 9481,
       "in_degree": 34,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1802,6 +1943,7 @@
       "external_citations": 9015,
       "in_degree": 13,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1813,6 +1955,7 @@
       "external_citations": 9007,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1824,6 +1967,7 @@
       "external_citations": 8990,
       "in_degree": 11,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1835,6 +1979,7 @@
       "external_citations": 8955,
       "in_degree": 29,
       "neuro_signal": 2,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1846,6 +1991,7 @@
       "external_citations": 8910,
       "in_degree": 51,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1857,6 +2003,7 @@
       "external_citations": 8542,
       "in_degree": 25,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1868,6 +2015,7 @@
       "external_citations": 8330,
       "in_degree": 5,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1879,6 +2027,7 @@
       "external_citations": 7951,
       "in_degree": 44,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1890,6 +2039,7 @@
       "external_citations": 7877,
       "in_degree": 29,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1901,6 +2051,7 @@
       "external_citations": 7820,
       "in_degree": 14,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1912,6 +2063,7 @@
       "external_citations": 7777,
       "in_degree": 6,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1923,6 +2075,7 @@
       "external_citations": 7396,
       "in_degree": 101,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1934,6 +2087,7 @@
       "external_citations": 7320,
       "in_degree": 8,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1945,6 +2099,7 @@
       "external_citations": 7255,
       "in_degree": 39,
       "neuro_signal": 1,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1956,6 +2111,7 @@
       "external_citations": 7243,
       "in_degree": 53,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1967,6 +2123,7 @@
       "external_citations": 7224,
       "in_degree": 11,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1978,6 +2135,7 @@
       "external_citations": 7163,
       "in_degree": 4,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -1989,6 +2147,7 @@
       "external_citations": 7155,
       "in_degree": 16,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2000,6 +2159,7 @@
       "external_citations": 7138,
       "in_degree": 38,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2011,6 +2171,7 @@
       "external_citations": 6809,
       "in_degree": 158,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2022,6 +2183,7 @@
       "external_citations": 6639,
       "in_degree": 10,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2033,6 +2195,7 @@
       "external_citations": 6553,
       "in_degree": 45,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2044,6 +2207,7 @@
       "external_citations": 6449,
       "in_degree": 28,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2055,6 +2219,7 @@
       "external_citations": 6402,
       "in_degree": 35,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2066,6 +2231,7 @@
       "external_citations": 6389,
       "in_degree": 19,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2077,6 +2243,7 @@
       "external_citations": 6376,
       "in_degree": 66,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2088,6 +2255,7 @@
       "external_citations": 6372,
       "in_degree": 78,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2099,6 +2267,7 @@
       "external_citations": 5785,
       "in_degree": 23,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2110,6 +2279,7 @@
       "external_citations": 5762,
       "in_degree": 218,
       "neuro_signal": 1,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2121,6 +2291,7 @@
       "external_citations": 5657,
       "in_degree": 53,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2132,6 +2303,7 @@
       "external_citations": 5467,
       "in_degree": 156,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2143,6 +2315,7 @@
       "external_citations": 5389,
       "in_degree": 182,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2154,6 +2327,7 @@
       "external_citations": 5165,
       "in_degree": 6,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2165,6 +2339,7 @@
       "external_citations": 5061,
       "in_degree": 183,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2176,6 +2351,7 @@
       "external_citations": 5003,
       "in_degree": 50,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2187,6 +2363,7 @@
       "external_citations": 4726,
       "in_degree": 19,
       "neuro_signal": 2,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2198,6 +2375,7 @@
       "external_citations": 4725,
       "in_degree": 2,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2209,6 +2387,7 @@
       "external_citations": 4685,
       "in_degree": 88,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2220,6 +2399,7 @@
       "external_citations": 4537,
       "in_degree": 39,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2231,6 +2411,7 @@
       "external_citations": 4368,
       "in_degree": 212,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2242,6 +2423,7 @@
       "external_citations": 4335,
       "in_degree": 368,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2253,6 +2435,7 @@
       "external_citations": 4222,
       "in_degree": 15,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2264,6 +2447,7 @@
       "external_citations": 4112,
       "in_degree": 47,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2275,6 +2459,7 @@
       "external_citations": 4007,
       "in_degree": 11,
       "neuro_signal": 3,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2286,6 +2471,7 @@
       "external_citations": 3934,
       "in_degree": 90,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2297,6 +2483,7 @@
       "external_citations": 3921,
       "in_degree": 22,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2308,6 +2495,7 @@
       "external_citations": 3713,
       "in_degree": 1,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2319,6 +2507,7 @@
       "external_citations": 3702,
       "in_degree": 70,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2330,6 +2519,7 @@
       "external_citations": 3569,
       "in_degree": 103,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2341,6 +2531,7 @@
       "external_citations": 3533,
       "in_degree": 75,
       "neuro_signal": 2,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2352,6 +2543,7 @@
       "external_citations": 3449,
       "in_degree": 46,
       "neuro_signal": 1,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2363,6 +2555,7 @@
       "external_citations": 3394,
       "in_degree": 43,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2374,6 +2567,7 @@
       "external_citations": 3339,
       "in_degree": 249,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2385,6 +2579,7 @@
       "external_citations": 3297,
       "in_degree": 58,
       "neuro_signal": 1,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2396,6 +2591,7 @@
       "external_citations": 3117,
       "in_degree": 15,
       "neuro_signal": 2,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2407,6 +2603,7 @@
       "external_citations": 3105,
       "in_degree": 9,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2418,6 +2615,7 @@
       "external_citations": 3071,
       "in_degree": 150,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2429,6 +2627,7 @@
       "external_citations": 2760,
       "in_degree": 141,
       "neuro_signal": 1,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2440,6 +2639,7 @@
       "external_citations": 2703,
       "in_degree": 34,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2451,6 +2651,7 @@
       "external_citations": 2567,
       "in_degree": 166,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2462,6 +2663,7 @@
       "external_citations": 2498,
       "in_degree": 26,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2473,6 +2675,7 @@
       "external_citations": 2448,
       "in_degree": 224,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2484,6 +2687,7 @@
       "external_citations": 2443,
       "in_degree": 271,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2495,6 +2699,7 @@
       "external_citations": 2432,
       "in_degree": 35,
       "neuro_signal": 0,
+      "domain": "network_science",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2506,6 +2711,7 @@
       "external_citations": 2363,
       "in_degree": 112,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2517,6 +2723,7 @@
       "external_citations": 2258,
       "in_degree": 10,
       "neuro_signal": 1,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2528,6 +2735,7 @@
       "external_citations": 2253,
       "in_degree": 105,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2539,6 +2747,7 @@
       "external_citations": 2078,
       "in_degree": 101,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2550,6 +2759,7 @@
       "external_citations": 2058,
       "in_degree": 123,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2561,6 +2771,7 @@
       "external_citations": 1938,
       "in_degree": 48,
       "neuro_signal": 0,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2572,6 +2783,7 @@
       "external_citations": 1863,
       "in_degree": 100,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2583,6 +2795,7 @@
       "external_citations": 1790,
       "in_degree": 50,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2594,6 +2807,7 @@
       "external_citations": 1782,
       "in_degree": 47,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2605,6 +2819,7 @@
       "external_citations": 1582,
       "in_degree": 119,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2616,6 +2831,7 @@
       "external_citations": 1578,
       "in_degree": 9,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2627,6 +2843,7 @@
       "external_citations": 1491,
       "in_degree": 32,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2638,6 +2855,7 @@
       "external_citations": 1474,
       "in_degree": 26,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2649,6 +2867,7 @@
       "external_citations": 1412,
       "in_degree": 114,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2660,6 +2879,7 @@
       "external_citations": 1363,
       "in_degree": 119,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2671,6 +2891,7 @@
       "external_citations": 1329,
       "in_degree": 15,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2682,6 +2903,7 @@
       "external_citations": 1232,
       "in_degree": 26,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2693,6 +2915,7 @@
       "external_citations": 1154,
       "in_degree": 61,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2704,6 +2927,7 @@
       "external_citations": 1031,
       "in_degree": 45,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2715,6 +2939,7 @@
       "external_citations": 1020,
       "in_degree": 126,
       "neuro_signal": 0,
+      "domain": "off_topic",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2726,6 +2951,7 @@
       "external_citations": 1005,
       "in_degree": 44,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2737,6 +2963,7 @@
       "external_citations": 964,
       "in_degree": 328,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2748,6 +2975,7 @@
       "external_citations": 917,
       "in_degree": 45,
       "neuro_signal": 5,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2759,6 +2987,7 @@
       "external_citations": 841,
       "in_degree": 35,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2770,6 +2999,7 @@
       "external_citations": 786,
       "in_degree": 26,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2781,6 +3011,7 @@
       "external_citations": 774,
       "in_degree": 40,
       "neuro_signal": 1,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2792,6 +3023,7 @@
       "external_citations": 741,
       "in_degree": 4,
       "neuro_signal": 0,
+      "domain": "mri_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2803,6 +3035,7 @@
       "external_citations": 708,
       "in_degree": 209,
       "neuro_signal": 1,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2814,6 +3047,7 @@
       "external_citations": 662,
       "in_degree": 80,
       "neuro_signal": 2,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2825,6 +3059,7 @@
       "external_citations": 648,
       "in_degree": 121,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2836,6 +3071,7 @@
       "external_citations": 624,
       "in_degree": 24,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2847,6 +3083,7 @@
       "external_citations": 616,
       "in_degree": 34,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2858,6 +3095,7 @@
       "external_citations": 597,
       "in_degree": 129,
       "neuro_signal": 1,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2869,6 +3107,7 @@
       "external_citations": 577,
       "in_degree": 58,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2880,6 +3119,7 @@
       "external_citations": 574,
       "in_degree": 164,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2891,6 +3131,7 @@
       "external_citations": 568,
       "in_degree": 249,
       "neuro_signal": 1,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2902,6 +3143,7 @@
       "external_citations": 562,
       "in_degree": 42,
       "neuro_signal": 0,
+      "domain": "methods_ml",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2913,6 +3155,7 @@
       "external_citations": 561,
       "in_degree": 65,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2924,6 +3167,7 @@
       "external_citations": 514,
       "in_degree": 144,
       "neuro_signal": 3,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2935,6 +3179,7 @@
       "external_citations": 512,
       "in_degree": 17,
       "neuro_signal": 0,
+      "domain": "unknown",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2946,6 +3191,7 @@
       "external_citations": 504,
       "in_degree": 168,
       "neuro_signal": 0,
+      "domain": "em_connectomics",
       "note": "high ext-cites, low composite"
     },
     {
@@ -2957,10 +3203,166 @@
       "external_citations": 504,
       "in_degree": 54,
       "neuro_signal": 0,
+      "domain": "neuroscience",
       "note": "high ext-cites, low composite"
     }
   ],
-  "C_tail_offtrack": [],
+  "C_tail_offtrack": [
+    {
+      "openalex_id": "https://openalex.org/W3108936441",
+      "title": "Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)<sup>1</sup>",
+      "year": 2021,
+      "journal": "",
+      "composite_score": 0.0534,
+      "external_citations": 2498,
+      "in_degree": 26,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2131006763",
+      "title": "Surface-wave array tomography in SE Tibet from ambient seismic noise and two-station analysis - I. Phase velocity maps",
+      "year": 2006,
+      "journal": "",
+      "composite_score": 0.0403,
+      "external_citations": 1020,
+      "in_degree": 126,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2107396783",
+      "title": "Consensus Problems in Networks of Agents With Switching Topology and Time-Delays",
+      "year": 2004,
+      "journal": "",
+      "composite_score": 0.0384,
+      "external_citations": 12614,
+      "in_degree": 25,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133589238",
+      "title": "Heart rate variability: Standards of measurement, physiological interpretation, and clinical use",
+      "year": 1996,
+      "journal": "",
+      "composite_score": 0.0375,
+      "external_citations": 15208,
+      "in_degree": 2,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2133416234",
+      "title": "2013 ESH/ESC Guidelines for the management of arterial hypertension",
+      "year": 2013,
+      "journal": "",
+      "composite_score": 0.0374,
+      "external_citations": 13652,
+      "in_degree": 4,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2751884637",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for 195 countries, 1990\u20132016: a systematic analysis for the Global Burden of Disease Study 2016",
+      "year": 2017,
+      "journal": "",
+      "composite_score": 0.0367,
+      "external_citations": 13428,
+      "in_degree": 6,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2105100844",
+      "title": "<i>MGMT</i> Gene Silencing and Benefit from Temozolomide in Glioblastoma",
+      "year": 2005,
+      "journal": "",
+      "composite_score": 0.0361,
+      "external_citations": 7163,
+      "in_degree": 4,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2160834915",
+      "title": "Safety, Activity, and Immune Correlates of Anti\u2013PD-1 Antibody in Cancer",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 12531,
+      "in_degree": 3,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2912654919",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990\u20132017: a systematic analysis for the Global Burden of Disease Study 2017",
+      "year": 2018,
+      "journal": "",
+      "composite_score": 0.0345,
+      "external_citations": 13807,
+      "in_degree": 5,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2108344016",
+      "title": "Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0341,
+      "external_citations": 8330,
+      "in_degree": 5,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2110052313",
+      "title": "A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990\u20132010: a systematic analysis for the Global Burden of Disease Study 2010",
+      "year": 2012,
+      "journal": "",
+      "composite_score": 0.0326,
+      "external_citations": 11946,
+      "in_degree": 3,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2001591494",
+      "title": "Autophagy: process and function",
+      "year": 2007,
+      "journal": "",
+      "composite_score": 0.0289,
+      "external_citations": 3921,
+      "in_degree": 22,
+      "role": "review",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W2527824850",
+      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 310 diseases and injuries, 1990\u20132015: a systematic analysis for the Global Burden of Disease Study 2015",
+      "year": 2016,
+      "journal": "",
+      "composite_score": 0.0287,
+      "external_citations": 7320,
+      "in_degree": 8,
+      "role": "methods",
+      "domain": "off_topic"
+    },
+    {
+      "openalex_id": "https://openalex.org/W3046275966",
+      "title": "Dementia prevention, intervention, and care: 2020 report of the Lancet Commission",
+      "year": 2020,
+      "journal": "",
+      "composite_score": 0.0286,
+      "external_citations": 9824,
+      "in_degree": 3,
+      "role": "review",
+      "domain": "off_topic"
+    }
+  ],
   "D_tail_inner_core": [
     {
       "openalex_id": "https://openalex.org/W2070722739",
@@ -2970,7 +3372,8 @@
       "core_number": 32,
       "in_degree": 123,
       "external_citations": 10837,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2151936673",
@@ -2980,7 +3383,8 @@
       "core_number": 32,
       "in_degree": 137,
       "external_citations": 12046,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2159929956",
@@ -2990,7 +3394,8 @@
       "core_number": 32,
       "in_degree": 368,
       "external_citations": 4335,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W4211091012",
@@ -3000,7 +3405,8 @@
       "core_number": 32,
       "in_degree": 112,
       "external_citations": 2363,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1970695058",
@@ -3010,7 +3416,8 @@
       "core_number": 32,
       "in_degree": 158,
       "external_citations": 6809,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1971937094",
@@ -3020,7 +3427,8 @@
       "core_number": 32,
       "in_degree": 74,
       "external_citations": 10081,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2124953625",
@@ -3030,7 +3438,8 @@
       "core_number": 32,
       "in_degree": 114,
       "external_citations": 1412,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2127048411",
@@ -3040,7 +3449,8 @@
       "core_number": 32,
       "in_degree": 101,
       "external_citations": 11132,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W1987924998",
@@ -3050,7 +3460,8 @@
       "core_number": 32,
       "in_degree": 224,
       "external_citations": 2448,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2060464767",
@@ -3060,7 +3471,8 @@
       "core_number": 32,
       "in_degree": 183,
       "external_citations": 5061,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "network_science"
     },
     {
       "openalex_id": "https://openalex.org/W2079450984",
@@ -3070,7 +3482,8 @@
       "core_number": 32,
       "in_degree": 182,
       "external_citations": 5389,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2012559638",
@@ -3080,7 +3493,8 @@
       "core_number": 32,
       "in_degree": 271,
       "external_citations": 2443,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2833620410",
@@ -3090,7 +3504,8 @@
       "core_number": 32,
       "in_degree": 18,
       "external_citations": 415,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2008607322",
@@ -3100,7 +3515,8 @@
       "core_number": 32,
       "in_degree": 150,
       "external_citations": 3071,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1983485726",
@@ -3110,7 +3526,8 @@
       "core_number": 32,
       "in_degree": 249,
       "external_citations": 3339,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1974764791",
@@ -3120,7 +3537,8 @@
       "core_number": 32,
       "in_degree": 166,
       "external_citations": 2567,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2089572795",
@@ -3130,7 +3548,8 @@
       "core_number": 32,
       "in_degree": 212,
       "external_citations": 4368,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W4281842027",
@@ -3140,7 +3559,8 @@
       "core_number": 32,
       "in_degree": 17,
       "external_citations": 203,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2030363891",
@@ -3150,7 +3570,8 @@
       "core_number": 32,
       "in_degree": 65,
       "external_citations": 561,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2128314959",
@@ -3160,7 +3581,8 @@
       "core_number": 32,
       "in_degree": 101,
       "external_citations": 2078,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2129109788",
@@ -3170,7 +3592,8 @@
       "core_number": 32,
       "in_degree": 119,
       "external_citations": 1363,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2017987256",
@@ -3180,7 +3603,8 @@
       "core_number": 32,
       "in_degree": 90,
       "external_citations": 3934,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "unknown"
     },
     {
       "openalex_id": "https://openalex.org/W2027781650",
@@ -3190,7 +3614,8 @@
       "core_number": 31,
       "in_degree": 100,
       "external_citations": 1863,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2138996400",
@@ -3200,7 +3625,8 @@
       "core_number": 31,
       "in_degree": 58,
       "external_citations": 577,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W1993673892",
@@ -3210,7 +3636,8 @@
       "core_number": 30,
       "in_degree": 80,
       "external_citations": 662,
-      "neuro_signal": 2
+      "neuro_signal": 2,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2101135654",
@@ -3220,7 +3647,8 @@
       "core_number": 30,
       "in_degree": 154,
       "external_citations": 13788,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W3007736625",
@@ -3230,7 +3658,8 @@
       "core_number": 30,
       "in_degree": 35,
       "external_citations": 841,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W2136435696",
@@ -3240,7 +3669,8 @@
       "core_number": 30,
       "in_degree": 123,
       "external_citations": 9731,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "unknown"
     },
     {
       "openalex_id": "https://openalex.org/W2116658855",
@@ -3250,7 +3680,8 @@
       "core_number": 30,
       "in_degree": 101,
       "external_citations": 7396,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "neuroscience"
     },
     {
       "openalex_id": "https://openalex.org/W3179229384",
@@ -3260,7 +3691,8 @@
       "core_number": 30,
       "in_degree": 11,
       "external_citations": 183,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2145132952",
@@ -3270,7 +3702,8 @@
       "core_number": 30,
       "in_degree": 75,
       "external_citations": 3533,
-      "neuro_signal": 2
+      "neuro_signal": 2,
+      "domain": "em_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2094017021",
@@ -3280,7 +3713,8 @@
       "core_number": 30,
       "in_degree": 38,
       "external_citations": 286,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "unknown"
     },
     {
       "openalex_id": "https://openalex.org/W2129057035",
@@ -3290,7 +3724,8 @@
       "core_number": 30,
       "in_degree": 41,
       "external_citations": 376,
-      "neuro_signal": 0
+      "neuro_signal": 0,
+      "domain": "mri_connectomics"
     },
     {
       "openalex_id": "https://openalex.org/W2080403608",
@@ -3300,7 +3735,8 @@
       "core_number": 30,
       "in_degree": 61,
       "external_citations": 447,
-      "neuro_signal": 1
+      "neuro_signal": 1,
+      "domain": "methods_ml"
     }
   ]
 }

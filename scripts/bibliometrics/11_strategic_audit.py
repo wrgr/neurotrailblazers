@@ -19,6 +19,7 @@ from pathlib import Path
 from collections import defaultdict
 
 from config import OUTPUT_DIR
+from classify_domain import classify_node, enrich_and_classify
 
 CONNECTOMICS_SIGNAL = [
     "connectom", "synapse", "electron microscopy", "neural circuit",
@@ -33,6 +34,16 @@ def neuro_score(title, abstract=""):
     return sum(1 for t in CONNECTOMICS_SIGNAL if t in txt)
 
 
+def domain_label(paper, domain_lookup=None, graph_domain=None):
+    """Multi-signal domain classification (journal + concepts + title)."""
+    pid = paper.get("openalex_id") or paper.get("id", "")
+    if domain_lookup and pid in domain_lookup:
+        return domain_lookup[pid]
+    if graph_domain and pid in graph_domain:
+        return graph_domain[pid]
+    return classify_node(paper)
+
+
 def load(fname):
     with open(OUTPUT_DIR / fname) as f:
         return json.load(f)
@@ -43,8 +54,19 @@ def main():
     rl_enriched   = load("reading_list_enriched.json")
     gaps          = load("expert_list_gaps.json")
     omissions     = load("high_indegree_omissions.json")
+    graph_data    = load("graphs/citation_graph.json")
 
     enrich_lookup = {p["openalex_id"]: p for p in rl_enriched}
+
+    # Build domain lookup using graph journal metadata as fallback
+    _domain_lookup = enrich_and_classify(reading_list, graph_data["nodes"])
+    _graph_domain = {n["id"]: classify_node(n) for n in graph_data["nodes"]}
+    # Merge into single lookup for convenience
+    _all_domains = {**_graph_domain, **_domain_lookup}
+
+    def get_domain(paper):
+        pid = paper.get("openalex_id") or paper.get("id", "")
+        return _all_domains.get(pid, classify_node(paper))
 
     # Sort reading list by composite_score, label top-200 vs 201-500
     by_score = sorted(reading_list, key=lambda x: -x.get("composite_score", 0))
@@ -90,6 +112,7 @@ def main():
                 "corpus_in_degree": o["corpus_in_degree"],
                 "composite_score": o["composite_score"],
                 "neuro_signal": neuro_score(o["title"]),
+                "domain": get_domain(o),
             })
 
     # ── C. Tail papers 201-500: anomalies ─────────────────────────────
@@ -111,11 +134,13 @@ def main():
                 "external_citations": ext_cites,
                 "in_degree": ep.get("in_degree", 0),
                 "neuro_signal": ns,
+                "domain": get_domain(p),
                 "note": "high ext-cites, low composite",
             })
 
-        # Low neuro signal in tail → possible off-topic paper that slipped through
-        if ns == 0 and comp > 0.08:
+        # Off-topic domain classification → possible noise paper
+        dom = get_domain(p)
+        if dom == "off_topic":
             audit["C_tail_offtrack"].append({
                 "openalex_id": pid,
                 "title": p.get("title",""),
@@ -125,6 +150,7 @@ def main():
                 "external_citations": ext_cites,
                 "in_degree": ep.get("in_degree", 0),
                 "role": p.get("role",""),
+                "domain": dom,
             })
 
     audit["C_tail_high_extcites"].sort(key=lambda x: -x["external_citations"])
@@ -144,6 +170,7 @@ def main():
                 "in_degree": ep.get("in_degree", 0),
                 "external_citations": p.get("total_citations", 0),
                 "neuro_signal": neuro_score(p.get("title",""), p.get("abstract","")),
+                "domain": get_domain(p),
             })
 
     audit["D_tail_inner_core"].sort(key=lambda x: -x["core_number"])
@@ -192,34 +219,35 @@ def main():
     section(
         "B. High in-degree papers outside top-500 (cited heavily within corpus)",
         audit["B_high_indegree_omissions"],
-        ["In-deg", "Ext.Cites", "Neuro?", "Year", "Title"],
+        ["In-deg", "Ext.Cites", "Domain", "Year", "Title"],
         lambda x: [x["corpus_in_degree"], x["external_citations"],
-                   "✓" if x["neuro_signal"]>0 else "✗",
-                   x.get("year",""), x["title"][:65]],
+                   x.get("domain", "?"),
+                   x.get("year",""), x["title"][:60]],
     )
     section(
         "C1. Tail papers (rank 201–500) with high external citations but low composite score",
         audit["C_tail_high_extcites"][:30],
-        ["Score", "Ext.Cites", "In-deg", "Neuro?", "Year", "Title"],
+        ["Score", "Ext.Cites", "In-deg", "Domain", "Year", "Title"],
         lambda x: [x["composite_score"], x["external_citations"], x["in_degree"],
-                   "✓" if x["neuro_signal"]>0 else "✗",
-                   x.get("year",""), x["title"][:60]],
+                   x.get("domain", "?"),
+                   x.get("year",""), x["title"][:55]],
     )
     section(
-        "C2. Tail papers with zero neuro-signal in title+abstract → possible off-topic",
+        "C2. Off-topic or unclassified papers in tail (rank 201–500)",
         audit["C_tail_offtrack"][:30],
-        ["Score", "Ext.Cites", "Role", "Year", "Title"],
-        lambda x: [x["composite_score"], x["external_citations"], x["role"],
-                   x.get("year",""), x["title"][:65]],
+        ["Score", "Ext.Cites", "Domain", "Role", "Year", "Title"],
+        lambda x: [x["composite_score"], x["external_citations"],
+                   x.get("domain", "?"), x["role"],
+                   x.get("year",""), x["title"][:55]],
     )
     section(
         "D. Tail papers in k≥30 inner core — structurally central, ranked lower than expected",
         audit["D_tail_inner_core"][:30],
-        ["Core-k", "Score", "In-deg", "Ext.Cites", "Neuro?", "Year", "Title"],
+        ["Core-k", "Score", "In-deg", "Ext.Cites", "Domain", "Year", "Title"],
         lambda x: [x["core_number"], x["composite_score"], x["in_degree"],
                    x["external_citations"],
-                   "✓" if x["neuro_signal"]>0 else "✗",
-                   x.get("year",""), x["title"][:55]],
+                   x.get("domain", "?"),
+                   x.get("year",""), x["title"][:50]],
     )
 
     # Author merge summary

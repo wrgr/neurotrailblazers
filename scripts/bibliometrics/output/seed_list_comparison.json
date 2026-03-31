@@ -1,0 +1,9 @@
+{
+  "comparison_date": "2026-03-31",
+  "seed_list": "journal_club_final_strict.json",
+  "corpus_size": 7503,
+  "seed_in_corpus": 131,
+  "seed_missing": 0,
+  "coverage": "100.0%",
+  "missing_papers": []
+}

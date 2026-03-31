@@ -18,7 +18,8 @@ This document describes the **complete workflow** from raw OpenAlex data to fina
 | 2 | `02_build_graphs.py` | 30 min | `corpus_merged.json` | `graphs/citation_graph.json` + 3 others | Build directed citation graph + co-citation, coupling, co-authorship |
 | 3 | `03_compute_metrics.py` | 20 min | graphs, corpus | `paper_rankings.json`, `author_rankings.json`, `communities.json` | PageRank, betweenness, community detection, composite scores |
 | 4 | `04_validate.py` | 5 min | rankings, expert data | `validation_report.json` | Cross-check against expert seed papers (66 researchers) |
-| 5 | `05_html_report.py` | 10 min | rankings, communities | `field_map.html` | Interactive D3 citation network visualization |
+| 5 | `05_html_report.py` | 10 min | rankings, communities | `field_map.html` | Interactive D3 citation network visualization (top 500 papers) |
+| 5b | `06b_kcore_visualization.py` | 5 min | graphs, enriched list | `kcore_map.html` | K-core shells visualization (network position, 6 colored shells) |
 | 6 | `06_reading_list.py` | 5 min | rankings, communities | `reading_list.json`, `.md` | Top-500 papers, topologically sorted |
 | 7 | `07_evolution_graph.py` | 10 min | corpus, communities | `evolution_graph.html` | Timeline of field evolution 2000–2025 |
 | 8 | `08_generate_ocar.py` | 90 min | `reading_list.json` | `ocar_entries.json/.yaml` | OCAR study cards (via Claude API) for top 200 |
@@ -37,7 +38,10 @@ bash run_pipeline.sh
 # Or resume from specific step
 bash run_pipeline.sh --from 3  # Skip corpus collection, start at graphs
 
-# Generate OCAR cards (requires API key)
+# Generate k-core visualization (run after step 9)
+python 06b_kcore_visualization.py
+
+# Generate OCAR cards (requires API key, run after step 6)
 export ANTHROPIC_API_KEY=sk-ant-...
 python 08_generate_ocar.py
 ```
@@ -49,9 +53,10 @@ python 08_generate_ocar.py
 - `paper_rankings.json` (2,000 papers) — full ranking with metrics
 - `author_rankings.json` (1,000 authors) — ranked by composite score
 
-**Visualizations:**
-- `field_map.html` — D3 force-directed citation network (interactive)
-- `evolution_graph.html` — Timeline of field evolution
+**Visualizations (top 500 papers only):**
+- `field_map.html` — D3 force-directed citation network, colored by community (5 MB)
+- `kcore_map.html` — K-core shells, colored by network position (3 MB)
+- `evolution_graph.html` — Timeline of field evolution 2000–2025 (2 MB)
 
 **Study Materials:**
 - `ocar_entries.json` / `.yaml` — 200 OCAR cards (Opportunity/Challenge/Action/Resolution)
@@ -192,11 +197,33 @@ python 14_update_corpus_and_rerank.py --full-rebuild
 
 ## Part C: Final Outputs & Artifacts
 
+### Graph Strategy
+
+**Primary graph:** ~500 papers (top-ranked from reading list)
+- This is the **main visualization** and **basis for statistics**
+- Bounded size makes it useful for interpretation and teaching
+- Can expand to ~550 if manual review adds important papers
+
+**Secondary (analysis) graph:** 7,925 papers
+- Used for computing PageRank, k-cores, metrics
+- Used to identify gaps and anomalies
+- Not visualized (too large); reduced to 500 for viz
+
+**Journal club subset:** Top 200 papers
+- Receive detailed OCAR cards (Opportunity/Challenge/Action/Resolution)
+- Get full expert review and discussion prompts
+- Used for structured learning in journal club
+
+**Visualization outputs:**
+1. `field_map.html` — Force-directed citation graph (top 500 papers)
+2. `kcore_map.html` — K-core shells (color-coded by network position)
+3. `evolution_graph.html` — Temporal evolution (2000–2025)
+
 ### After All Steps: Reading List with Full Provenance
 
 **Core Artifacts:**
 
-1. **`reading_list_final.json`** — 500-paper list with:
+1. **`reading_list_final.json`** — 500-paper list (±50 for manual additions) with:
    - Title, authors, year, journal
    - Composite score (PageRank + citations + betweenness + recent)
    - Rank (1–500)
@@ -206,12 +233,18 @@ python 14_update_corpus_and_rerank.py --full-rebuild
    - Phase: 0 (orientation) through 4 (frontiers)
 
 2. **Interactive Visualizations:**
-   - `field_map.html` — Force-directed citation network, color by community
+   - `field_map.html` — Force-directed citation network of top 500 papers, color by community (5 MB)
+   - `kcore_map.html` — K-core shells (new): nodes color-coded by network position
+     - Red (k≥30): Inner core, highest centrality
+     - Orange (k=25–29): EM connectomics zone, structurally central
+     - Green (k=20–24): Bridge papers
+     - Purple/Gray: Peripheral papers
    - `evolution_graph.html` — Temporal evolution of research (streamgraph, 2000–2025)
 
 3. **Study Materials:**
-   - `ocar_entries.json` — 200 papers with OCAR cards (Opportunity/Challenge/Action/Resolution/Future)
+   - `ocar_entries.json` — 200 papers with OCAR cards (Opportunity/Challenge/Action/Resolution/Future Work)
    - `ocar_entries.yaml` — Same, ready to append to `_data/journal_papers.yml`
+   - Each card includes: beginner/intermediate/advanced summaries, discussion prompts, key figures
 
 4. **Quality Assurance:**
    - `strategic_audit.md` — Papers flagged for human review (5 lenses), with domain labels
@@ -295,9 +328,9 @@ python 08_generate_ocar.py
 
 **Deliverables:**
 - `reading_list.json` (top 500)
-- `field_map.html`, `evolution_graph.html`
-- `ocar_entries.yaml` (200 cards)
-- `strategic_audit.md` (papers flagged for review)
+- `field_map.html`, `kcore_map.html`, `evolution_graph.html`
+- `ocar_entries.yaml` (200 cards with detailed study materials)
+- `strategic_audit.md` (papers flagged for review, with domain labels)
 
 ### Session 2: QA/QC & Corpus Enhancement (2–4 hours, no API)
 
@@ -319,9 +352,9 @@ python 14_update_corpus_and_rerank.py --full-rebuild
 ```
 
 **Deliverables:**
-- Updated `reading_list_final.json` with domain labels
+- Updated `reading_list_final.json` with domain labels and k-core positions
 - `inclusion_metadata.json` (provenance for every paper)
-- `field_map.html`, `evolution_graph.html` (updated rankings)
+- `field_map.html`, `kcore_map.html`, `evolution_graph.html` (updated rankings)
 
 ### Session 3: Publish Results
 
@@ -331,6 +364,7 @@ cp output/ocar_entries.yaml ../../../_data/journal_papers.yml
 
 # Update analysis page
 cp output/field_map.html ../../../assets/analysis/
+cp output/kcore_map.html ../../../assets/analysis/
 cp output/evolution_graph.html ../../../assets/analysis/
 
 # Commit and deploy
@@ -381,7 +415,7 @@ git push
 
 - **Rankings:** `reading_list.json`, `paper_rankings.json`, `author_rankings.json`
 - **Graphs:** `graphs/citation_graph.json`, `graphs/co_citation.json`, `graphs/coupling.json`, `graphs/coauthorship.json` (~500 MB total)
-- **Visualizations:** `field_map.html` (~5 MB), `evolution_graph.html` (~2 MB)
+- **Visualizations:** `field_map.html` (~5 MB), `kcore_map.html` (~3 MB), `evolution_graph.html` (~2 MB)
 - **Study cards:** `ocar_entries.json`, `ocar_entries.yaml` (+ `ocar_cache/` 322 papers)
 - **Metadata:** `communities.json`, `corpus_stats.json`, `validation_report.json`
 - **QA/QC:** `strategic_audit.json`, `duplicate_merge_log.json`, `inclusion_metadata.json`, etc.

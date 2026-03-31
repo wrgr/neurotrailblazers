@@ -44,32 +44,44 @@ def load_top_authors(n=100):
 
 def expert_author_signal(paper, top_authors_dict):
     """
-    Check if paper first or last author is in top-100.
+    Check if paper is first-authored or last-authored by top-100 expert.
+
+    Only scores first and last authors (not all co-authors) to avoid gaming
+    the signal through casual collaboration.
 
     Args:
-        paper: dict with 'authors' list
-        top_authors_dict: {author_id: author_data}
+        paper: dict with 'authors' list or 'first_author'/'last_author'
+        top_authors_dict: {author_id: author_data} (top-100 by citations)
 
     Returns:
         float: score 0.0–1.0
-        - 1.0: first author is in top-100
-        - 0.8: last author is in top-100
-        - 0.5: any author (first 3 or last 2) in top-50
-        - 0.0: no top authors
+        - 1.0: first author in top-50 by citations
+        - 0.9: last author in top-50 by citations
+        - 0.7: first author in top-51–100
+        - 0.6: last author in top-51–100
+        - 0.2: neither first nor last is top-100
+        - 0.0: no top authors, or author list unavailable
+
+    Note: Real implementation requires OpenAlex author IDs.
+    This is a placeholder; would be filled by fetching author data.
     """
     if not paper.get('authors'):
         return 0.0
 
     authors = paper['authors']
-    # Approximate: check by name (we don't have author IDs in reading list)
+    if len(authors) == 0:
+        return 0.0
 
-    # In real implementation, would use OpenAlex author IDs
-    # For now: heuristic based on author position and presence in top list
+    first_author = authors[0]
+    last_author = authors[-1]
 
-    # This is a placeholder; real version would:
-    # 1. Fetch author IDs from OpenAlex
-    # 2. Check if any ID in top_authors_dict
-    # 3. Score higher for first author, lower for middle authors
+    # In real implementation, would:
+    # 1. Get OpenAlex author ID for first_author and last_author
+    # 2. Check if ID in top_authors_dict
+    # 3. Return score based on rank
+
+    # For now: placeholder returning 0.0
+    # TODO: Implement once author_rankings.json provides author->ID mapping
 
     return 0.0  # Placeholder
 

@@ -42,12 +42,14 @@ Current signals miss these cases. We add two structural/authorship signals.
 
 ## Signal 2: Expert First/Last Authorship
 
-**What it measures:** Is the paper led by a top-100 prolific expert?
+**What it measures:** Is the paper **first-authored or last-authored** by a top-100 prolific expert?
 
 **Why it matters:** 
 - Top-100 experts are field leaders; their new work is likely important
-- First/last author = primary responsibility for paper
-- Lean toward inclusion when top experts publish (even if not yet highly cited)
+- **First author** = primary researcher, originated the work
+- **Last author** = senior researcher, group leader, corresponding author, takes intellectual responsibility
+- Lean toward inclusion when top experts lead or mentor on a paper (even if not yet highly cited)
+- **Note:** We only score first/last authors, not all co-authors (avoids gaming signal by casual collaboration)
 
 **Scoring:**
 

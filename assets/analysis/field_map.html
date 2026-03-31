@@ -337,7 +337,7 @@ function renderGraph(data) {
 if (!coauthorData || !coauthorData.nodes || coauthorData.nodes.length === 0) {
   document.getElementById('btn-coauthor').disabled = true;
   document.getElementById('btn-coauthor').title = 'Co-authorship data not available';
-
+}
 
 // ===== NODE FILTERING SYSTEM =====
 let hiddenNodeIds = new Set();

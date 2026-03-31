@@ -1,0 +1,407 @@
+[05:32:19] ========== PHASE B: QA/QC (Cached, no OpenAlex) ==========
+[05:32:19] Step B1: Dedup review...
+Loading citation graph...
+Traceback (most recent call last):
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/12_dedup_review.py", line 38, in <module>
+    with open(OUT / "graphs/citation_graph.json") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'scripts/bibliometrics/output/graphs/citation_graph.json'
+[05:32:19] ✓ Dedup review complete
+[05:32:19] Step B2: Auto-review (high confidence)...
+
+======================================================================
+AUTO-REVIEW: High-Confidence Duplicate & Author Decisions
+======================================================================
+
+Thresholds:
+  Duplicate AUTO_ACCEPT:  >= 0.7
+  Duplicate REVIEW FLAG:  >= 0.40
+  Author AUTO_ACCEPT:     >= 0.7
+  Author REVIEW FLAG:     >= 0.35
+
+Processing duplicates...
+Traceback (most recent call last):
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/12_auto_review.py", line 344, in <module>
+    main()
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/12_auto_review.py", line 253, in main
+    dup_accept, dup_flagged, dup_rejected, dup_log = auto_review_duplicates(
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/12_auto_review.py", line 96, in auto_review_duplicates
+    rows, header = load_tsv(tsv_path)
+    ^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 0)
+[05:32:19] ✓ Auto-review complete
+[05:32:19] Step B3: Apply duplicate merges...
+Loading decisions from duplicate_review.tsv...
+  Found 0 ACCEPT decisions
+Loading corpus...
+  7925 papers before dedup
+Loading citation graph...
+  7925 nodes, 94223 edges before dedup
+
+Applying merge decisions...
+
+Merge results:
+  Papers removed: 0
+  Citations consolidated: 0
+  Corpus size: 7925 → 7925
+  Graph size: 7925 → 7925 nodes
+
+Saving deduplicated corpus and graph...
+Saved → output/corpus_deduplicated.json
+Saved → output/graphs/citation_graph_deduplicated.json
+Saved → output/duplicate_merge_log.json
+[05:32:22] ✓ Duplicate merges applied
+[05:32:22] Step B4: Review citations...
+Loading corpus and graph...
+  500 papers in reading list
+  7925 nodes in graph
+
+Analyzing review citations...
+
+Analyzing FlyWire: Online community for whole-brain connectomics (10.1038/s41586-024-07558-y)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing A connectome and analysis of the adult Drosophila central brain (10.7554/eLife.57443)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing A Complete Electron Microscopy Volume of the Brain of a Larval Fruit Fly (10.1016/j.cell.2018.06.019)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Wiring specificity in the direction-selectivity circuit of the retina (10.1038/nn.2868)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Saturated Reconstruction of a Volume of Neocortex (10.1038/nature12346)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Network anatomy and in vivo physiology of visual cortical neurons (10.1038/nature10011)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Identifying candidates for inclusion...
+
+=== Review Citation Analysis ===
+
+FlyWire: Online community for whole-brain connectomics (2024)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+A connectome and analysis of the adult Drosophila central brain (2020)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+A Complete Electron Microscopy Volume of the Brain of a Larval Fruit Fly (2018)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Wiring specificity in the direction-selectivity circuit of the retina (2011)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Saturated Reconstruction of a Volume of Neocortex (2015)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Network anatomy and in vivo physiology of visual cortical neurons (2011)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+=== Candidates for Inclusion ===
+Promote to top-200: 0
+
+Add to corpus: 0
+
+Flag for review: 0
+
+Saved → output/review_citations.json
+Saved → output/review_cited_candidates.json
+[05:32:22] ✓ Citations reviewed
+[05:32:22] Step B5: Inclusion decisions...
+Loading analysis files...
+Traceback (most recent call last):
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/13_inclusion_decisions.py", line 160, in <module>
+    main()
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/13_inclusion_decisions.py", line 52, in main
+    expert_in_corpus = expert_gaps.get('A_expert_in_corpus', [])
+                       ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+[05:32:22] ✓ Inclusion decisions made
+[05:32:22] Step B6: Update corpus and rerank...
+
+======================================================================
+CONNECTOMICS CORPUS FINAL UPDATE & RE-RANKING
+======================================================================
+
+Phase 0: Checking dependencies...
+
+Phase 1: Apply duplicate merges...
+
+============================================================
+Running 12_apply_duplicate_merges...
+============================================================
+Loading decisions from duplicate_review.tsv...
+  Found 0 ACCEPT decisions
+Loading corpus...
+  7925 papers before dedup
+Loading citation graph...
+  7925 nodes, 94223 edges before dedup
+
+Applying merge decisions...
+
+Merge results:
+  Papers removed: 0
+  Citations consolidated: 0
+  Corpus size: 7925 → 7925
+  Graph size: 7925 → 7925 nodes
+
+Saving deduplicated corpus and graph...
+Saved → output/corpus_deduplicated.json
+Saved → output/graphs/citation_graph_deduplicated.json
+Saved → output/duplicate_merge_log.json
+
+Phase 2: Apply author merges...
+
+============================================================
+Running 10_apply_merges...
+============================================================
+Author Merge Report
+============================================================
+
+Merge: 'William Gray-Roncal'
+  ← 'William Gray Roncal' (0 papers)
+  ← 'William R. Gray Roncal' (0 papers)
+  ← 'William R. Gray-Roncal' (0 papers)
+  ← 'Will Gray-Roncal' (0 papers)
+  Combined: 34 unique papers  |  orig rank: #None
+
+Merge: 'Shin-ya Takemura'
+  ← 'Satoko Takemura' (0 papers)
+  Combined: 32 unique papers  |  orig rank: #45
+
+Merge: 'Alexander Shakeel Bates'
+  ← 'Alexander S. Bates' (0 papers)
+  Combined: 38 unique papers  |  orig rank: #64
+
+Merge: 'Gregory S.X.E. Jefferis'
+  ← 'Gregory S. X. E. Jefferis' (0 papers)
+  ← 'Gregory SXE Jefferis' (0 papers)
+  ← 'G Jefferis' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #4
+
+Merge: 'H. Sebastian Seung'
+  ← 'H Sebastian Seung' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #2
+
+Merge: 'Olaf Sporns'
+  ← 'O Sporns' (0 papers)
+  Combined: 77 unique papers  |  orig rank: #264
+
+Merge: 'Moritz Helmstaedter'
+  ← 'M Helmstaedter' (0 papers)
+  Combined: 49 unique papers  |  orig rank: #25
+
+Merge: 'Davi D. Bock'
+  ← 'D Bock' (0 papers)
+  Combined: 64 unique papers  |  orig rank: #12
+
+Merge: 'Marta Costa'
+  ← 'M Costa' (0 papers)
+  Combined: 50 unique papers  |  orig rank: #19
+
+Merge: 'Thomas Müller-Reichert'
+  ← 'Thomas Müller‐Reichert' (0 papers)
+  ← 'Thomas Müller‑Reichert' (0 papers)
+  Combined: 8 unique papers  |  orig rank: #None
+
+Merge: 'Adam A. Atanas'
+  ← 'Adam A Atanas' (0 papers)
+  Combined: 9 unique papers  |  orig rank: #352
+
+Merge: 'Mark W. Moyle'
+  ← 'Mark W Moyle' (0 papers)
+  Combined: 7 unique papers  |  orig rank: #None
+
+Merge: 'Christopher J. Potter'
+  ← 'Christopher J Potter' (0 papers)
+  Combined: 5 unique papers  |  orig rank: #None
+
+Merge: 'Chun-Chieh Lin'
+  ← 'Chun‐Chieh Lin' (0 papers)
+  ← 'Chun‑Chieh Lin' (0 papers)
+  Combined: 4 unique papers  |  orig rank: #None
+
+Merge: 'Casey M. Schneider-Mizell'
+  ← 'Casey M Schneider-Mizell' (0 papers)
+  Combined: 50 unique papers  |  orig rank: #None
+
+Merge: 'Wei-Chung Allen Lee'
+  ← 'Wei-Chung Lee' (0 papers)
+  ← 'W.C.A. Lee' (0 papers)
+  Combined: 52 unique papers  |  orig rank: #26
+
+Merge: 'C. Shan Xu'
+  ← 'C Shan Xu' (0 papers)
+  ← 'Shan Xu' (0 papers)
+  Combined: 45 unique papers  |  orig rank: #33
+
+Will Gray-Roncal combined: 34 unique papers
+  (outside top-1000 before merge due to name fragmentation)
+
+
+Saved → output/author_merge_map.json
+Saved → output/author_merge_report.txt
+
+Phase 3: Domain classification...
+  Running classify_domain.py...
+  Saved → domain_labels.json
+
+Phase 4: Review citations...
+
+============================================================
+Running 13_review_citations...
+============================================================
+Loading corpus and graph...
+  500 papers in reading list
+  7925 nodes in graph
+
+Analyzing review citations...
+
+Analyzing FlyWire: Online community for whole-brain connectomics (10.1038/s41586-024-07558-y)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing A connectome and analysis of the adult Drosophila central brain (10.7554/eLife.57443)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing A Complete Electron Microscopy Volume of the Brain of a Larval Fruit Fly (10.1016/j.cell.2018.06.019)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Wiring specificity in the direction-selectivity circuit of the retina (10.1038/nn.2868)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Saturated Reconstruction of a Volume of Neocortex (10.1038/nature12346)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Analyzing Network anatomy and in vivo physiology of visual cortical neurons (10.1038/nature10011)...
+  No cached citations found.
+  To fetch from OpenAlex, run: python 13_review_citations.py --refresh
+
+Identifying candidates for inclusion...
+
+=== Review Citation Analysis ===
+
+FlyWire: Online community for whole-brain connectomics (2024)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+A connectome and analysis of the adult Drosophila central brain (2020)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+A Complete Electron Microscopy Volume of the Brain of a Larval Fruit Fly (2018)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Wiring specificity in the direction-selectivity circuit of the retina (2011)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Saturated Reconstruction of a Volume of Neocortex (2015)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+Network anatomy and in vivo physiology of visual cortical neurons (2011)
+  Total cited: 0
+  In corpus: 0
+  EM connectomics: 0
+  Off-topic: 0
+
+=== Candidates for Inclusion ===
+Promote to top-200: 0
+
+Add to corpus: 0
+
+Flag for review: 0
+
+Saved → output/review_citations.json
+Saved → output/review_cited_candidates.json
+
+Phase 5: Inclusion decisions...
+
+============================================================
+Running 13_inclusion_decisions...
+============================================================
+Loading analysis files...
+Traceback (most recent call last):
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/13_inclusion_decisions.py", line 160, in <module>
+    main()
+  File "/home/user/neurotrailblazers/scripts/bibliometrics/13_inclusion_decisions.py", line 52, in main
+    expert_in_corpus = expert_gaps.get('A_expert_in_corpus', [])
+                       ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+⚠️  Inclusion decision compilation failed
+
+Phase 6: Compile inclusion metadata...
+Warning: inclusion_decisions.json not found, skipping
+  Saved → inclusion_metadata.json
+
+Phase 7: Full metric recomputation (--full-rebuild)...
+  This requires OpenAlex access. Skipping for now.
+  To re-run: python 03_compute_metrics.py
+
+======================================================================
+WORKFLOW COMPLETE
+======================================================================
+
+Output files generated:
+  • inclusion_metadata.json — source & inclusion criteria for each paper
+  • domain_labels.json — domain classification for all papers
+  • review_citations.json — analysis of review citations
+  • inclusion_decisions.json — promotion & addition candidates
+  • duplicate_merge_log.json (if merges applied)
+  • author_merge_log.json (if author merges applied)
+
+Next steps:
+  1. Review output files and human decisions in TSV files
+  2. If changes were made, consider re-running steps 03–06
+  3. Generate updated OCAR cards: python 08_generate_ocar.py
+  4. Update website: /technical-training/journal-club/analysis.md
+
+✓ All phases complete. Corpus ready for review and publication.
+[05:32:25] ✓ Corpus updated and reranked
+[05:32:25] ========== PHASE C: Publish ==========
+[05:32:25] Step C1: Copying HTML reports...
+[05:32:25] ✓ HTML reports copied to assets/analysis/
+[05:32:25] Step C2: Copying journal papers YAML...
+cp: cannot create regular file '../../../_data/journal_papers.yml': No such file or directory

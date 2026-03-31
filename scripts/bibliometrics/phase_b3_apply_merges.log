@@ -1,0 +1,19 @@
+Loading decisions from duplicate_review.tsv...
+  Found 0 ACCEPT decisions
+Loading corpus...
+  7925 papers before dedup
+Loading citation graph...
+  7925 nodes, 94223 edges before dedup
+
+Applying merge decisions...
+
+Merge results:
+  Papers removed: 0
+  Citations consolidated: 0
+  Corpus size: 7925 → 7925
+  Graph size: 7925 → 7925 nodes
+
+Saving deduplicated corpus and graph...
+Saved → output/corpus_deduplicated.json
+Saved → output/graphs/citation_graph_deduplicated.json
+Saved → output/duplicate_merge_log.json

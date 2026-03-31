@@ -10,11 +10,11 @@
 
 ## Expert Paper Validation
 
-- Expert papers: 177
+- Expert papers: 332
 - Data-driven papers: 7867
-- **Recall**: 65.0% (115/177)
+- **Recall**: 81.3% (270/332)
 - Missed by data-driven: 62
-- Novel discoveries: 7752
+- Novel discoveries: 7597
 
 ### Missed Papers (sample)
 

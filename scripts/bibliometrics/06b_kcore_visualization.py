@@ -221,7 +221,7 @@ def create_kcore_visualization():
 
 <script src="https://d3js.org/d3.v7.min.js"><\/script>
 <script>
-const data = {
+const data = {{
   nodes: {json.dumps(nodes)},
   links: {json.dumps(links)}
 }};

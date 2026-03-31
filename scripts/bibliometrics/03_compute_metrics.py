@@ -29,6 +29,11 @@ def load_graph(filename):
     path = OUTPUT_DIR / "graphs" / filename
     with open(path) as f:
         data = json.load(f)
+
+    # Handle both "links" (D3 format) and "edges" (NetworkX format)
+    if "links" in data and "edges" not in data:
+        data["edges"] = data.pop("links")
+
     return json_graph.node_link_graph(data)
 
 

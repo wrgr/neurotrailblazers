@@ -139,6 +139,44 @@
       .content, header, footer { padding: 20px; }
       .visualizations { grid-template-columns: 1fr; }
     }
+
+    @media (max-width: 640px) {
+      body { padding: 8px; }
+      .container { margin: 0; border-radius: 8px; }
+      header { padding: 20px 15px; }
+      header h1 { font-size: 1.6em; margin-bottom: 8px; }
+      header p { font-size: 1em; }
+      .metadata { padding: 15px 20px; }
+      .metadata h2 { font-size: 1.1em; }
+      .stats { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+      .stat-box { padding: 12px; border-left-width: 3px; }
+      .stat-label { font-size: 0.8em; }
+      .stat-value { font-size: 1.5em; margin-top: 4px; }
+      .content { padding: 15px; }
+      .description {
+        padding: 15px;
+        border-left-width: 3px;
+        margin: 15px 0;
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+      .tier-section { margin-bottom: 25px; }
+      .tier-header { gap: 10px; padding-bottom: 8px; margin-bottom: 12px; }
+      .tier-color { width: 24px; height: 24px; }
+      .tier-header h2 { font-size: 1.2em; }
+      .tier-header span { font-size: 0.85em; }
+      .visualizations {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 15px 0;
+      }
+      .viz-card { box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+      .viz-card:hover { transform: translateY(-2px); }
+      .viz-title { padding: 12px; font-size: 0.95em; }
+      .viz-link { padding: 15px; font-size: 0.95em; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      .tier-section > p { font-size: 0.9em; margin-bottom: 12px; }
+      footer { padding: 20px 15px; font-size: 0.85em; }
+    }
   </style>
 </head>
 <body>

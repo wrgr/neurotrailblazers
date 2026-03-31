@@ -33,9 +33,40 @@ button { background:#2a2a5a; color:#ccccff; border:1px solid #4a4a7a;
           padding:5px 12px; border-radius:4px; cursor:pointer; margin:2px; font-size:12px; }
 button:hover { background:#3a3a7a; }
 button.active { background:#4a4aaa; }
+a { color:#8888ff; text-decoration:none; }
+a:hover { color:#aaaaff; }
+#back-button { display:inline-block; background:#2a2a5a; color:#8888ff; border:1px solid #4a4a7a;
+               padding:5px 12px; border-radius:4px; margin-bottom:12px; font-size:12px;
+               text-decoration:none; cursor:pointer; }
+#back-button:hover { background:#3a3a7a; color:#aaaaff; }
+@media (max-width: 900px) {
+  body { padding:10px; }
+  h1 { font-size:18px; }
+  .subtitle { font-size:12px; }
+  .panel { padding:12px; margin-bottom:12px; }
+  h2 { font-size:14px; margin-bottom:10px; }
+  .legend { gap:6px; }
+  .legend-item { font-size:10px; padding:2px 4px; }
+  svg { height:300px !important; }
+}
+@media (max-width: 640px) {
+  body { padding:8px; }
+  h1 { font-size:16px; margin-bottom:4px; }
+  .subtitle { font-size:11px; margin-bottom:12px; }
+  .panel { padding:10px; margin-bottom:10px; border-radius:4px; }
+  h2 { font-size:12px; margin-bottom:8px; }
+  .legend { flex-wrap:wrap; gap:4px; }
+  .legend-item { font-size:9px; padding:2px 4px; }
+  .legend-dot { width:8px; height:8px; }
+  button { padding:4px 10px; font-size:10px; margin:1px; }
+  #controls { margin-bottom:8px; }
+  .technique-badge { font-size:10px; padding:2px 6px; }
+  svg { height:250px !important; }
+}
 </style>
 </head>
 <body>
+<a href="index.html" id="back-button">← Back to Analysis</a>
 <h1>EM Connectomics — Evolution of Research (2000–2025)</h1>
 <p class="subtitle">Data-driven bibliometric analysis · 7,925 papers · OpenAlex</p>
 

@@ -224,12 +224,31 @@ svg text { font-family: inherit; pointer-events: none; }
 .node.dim { opacity: 0.3; }
 .link { stroke: #5a5a8a; stroke-opacity: 0.25; stroke-width: 0.3; }
 .link.dim { stroke-opacity: 0.05; stroke-width: 0.2; }
+.back-button {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.back-button:hover {
+  background: #5568d3;
+}
+header { display: flex; align-items: center; justify-content: center; gap: 30px; }
+header .title-group { flex: 1; text-align: center; }
 </style>
 </head>
 <body>
 <header>
-  <h1>📑 Citation Network</h1>
-  <p>Papers colored by K-Core value, connected by citation relationships</p>
+  <a href="index.html" class="back-button">← Back</a>
+  <div class="title-group">
+    <h1>📑 Citation Network</h1>
+    <p>Papers colored by K-Core value, connected by citation relationships</p>
+  </div>
 </header>
 
 <div class="container">

@@ -30,11 +30,13 @@ tr:hover { background: #1a1a3a; }
                     padding: 6px 12px; border-radius: 4px; cursor: pointer; margin: 2px; }
 .controls button:hover { background: #3a3a7a; }
 .controls button.active { background: #4a4aaa; border-color: #6a6acc; }
+.controls button:disabled { background: #1a1a3a; color: #666688; cursor: not-allowed; border-color: #3a3a5a; }
+.controls button:disabled:hover { background: #1a1a3a; }
 .stat { display: inline-block; background: #1a1a3a; padding: 4px 8px;
          border-radius: 4px; margin: 2px; font-size: 11px; }
 .stat .value { color: #88cc88; font-weight: 600; }
 .node { cursor: pointer; }
-.link { stroke: #333366; stroke-opacity: 0.3; }
+.link { stroke: #5a5a8a; stroke-opacity: 0.5; stroke-width: 0.75; }
 #tooltip { position: absolute; background: #1a1a3a; border: 1px solid #4a4a7a;
             padding: 8px 12px; border-radius: 4px; font-size: 12px;
             pointer-events: none; display: none; max-width: 350px; z-index: 100; }
@@ -270,6 +272,12 @@ function renderGraph(data) {
   function dragStart(e) { if (!e.active) simulation.alphaTarget(0.3).restart(); e.subject.fx = e.subject.x; e.subject.fy = e.subject.y; }
   function dragging(e) { e.subject.fx = e.x; e.subject.fy = e.y; }
   function dragEnd(e) { if (!e.active) simulation.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }
+}
+
+// Disable coauthor button if no data available
+if (!coauthorData || !coauthorData.nodes || coauthorData.nodes.length === 0) {
+  document.getElementById('btn-coauthor').disabled = true;
+  document.getElementById('btn-coauthor').title = 'Co-authorship data not available';
 }
 
 // Initial render

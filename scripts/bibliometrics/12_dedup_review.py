@@ -2,16 +2,26 @@
 """
 Multi-signal duplicate detection for the connectomics paper corpus.
 
-Combines five independent signals into a single confidence score:
+Part 1 — Paper duplicates:
+  Combines five independent signals into a single confidence score:
   1. Title similarity       (fuzzy string match)
   2. DOI pattern            (bioRxiv/arXiv prefix detection)
   3. Citation neighborhood  (Jaccard similarity of in/out edges)
   4. Author overlap         (shared first/last author)
   5. Mutual non-citation    (true duplicates rarely cite each other)
 
+Part 2 — Author name disambiguation:
+  Combines five signals for author name dedup:
+  1. Name string similarity
+  2. First name/initial compatibility
+  3. Co-author network overlap (Jaccard of co-author sets)
+  4. Citation neighborhood overlap (do their papers cite similar work?)
+  5. Shared-paper flag (appear on same paper → different people)
+
 Outputs:
-  - duplicate_review.tsv  — ranked pairs for human review
-  - duplicate_review.md   — formatted markdown report
+  - duplicate_review.tsv       — ranked paper pairs for human review
+  - duplicate_review.md        — formatted markdown report
+  - author_dedup_review.tsv    — ranked author name pairs for human review
 
 Run:  python3 scripts/bibliometrics/12_dedup_review.py
 """
@@ -426,4 +436,221 @@ with open(md_path, "w") as f:
         f.write("\n")
 
 print(f"  Wrote {md_path}")
+
+# ══════════════════════════════════════════════════════════════════════════
+# PART 2: AUTHOR NAME DISAMBIGUATION
+# ══════════════════════════════════════════════════════════════════════════
+
+print("\n" + "=" * 60)
+print("PART 2: AUTHOR NAME DISAMBIGUATION")
+print("=" * 60)
+
+import unicodedata
+
+# Build author -> papers and paper -> authors from rankings
+author_papers = defaultdict(set)
+paper_authors_map = {}
+
+for r in rankings:
+    oid = r["openalex_id"]
+    authors = r.get("authors", [])
+    paper_authors_map[oid] = authors
+    for a in authors:
+        author_papers[a].add(oid)
+
+def normalize_author(name):
+    name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"\s+", " ", name.lower().strip())
+
+def extract_first_name(name):
+    parts = name.split()
+    return parts[0].lower() if len(parts) > 1 else ""
+
+# Group authors by last name
+author_last_groups = defaultdict(list)
+for author_name in author_papers:
+    last = extract_last_name(author_name)
+    if last:
+        author_last_groups[last].append(author_name)
+
+author_results = []
+
+for last_name, name_list in author_last_groups.items():
+    if len(name_list) < 2:
+        continue
+    for i in range(len(name_list)):
+        for j in range(i + 1, len(name_list)):
+            a, b = name_list[i], name_list[j]
+            paps_a = author_papers[a]
+            paps_b = author_papers[b]
+
+            # Signal 1: Name string similarity
+            name_sim = SequenceMatcher(
+                None, normalize_author(a), normalize_author(b)
+            ).ratio()
+
+            # Signal 2: First name/initial compatibility
+            fa, fb = extract_first_name(a), extract_first_name(b)
+            if fa and fb:
+                if fa == fb:
+                    first_match = 1.0
+                elif fa[0] == fb[0]:
+                    first_match = 0.7
+                else:
+                    first_match = 0.0
+            else:
+                first_match = 0.3
+
+            # Signal 3: Co-author overlap
+            coauth_a = set()
+            for p in paps_a:
+                for ca in paper_authors_map.get(p, []):
+                    if ca != a:
+                        coauth_a.add(normalize_author(ca))
+            coauth_b = set()
+            for p in paps_b:
+                for cb in paper_authors_map.get(p, []):
+                    if cb != b:
+                        coauth_b.add(normalize_author(cb))
+            coauth_j = jaccard(coauth_a, coauth_b)
+
+            # Signal 4: Citation neighborhood overlap
+            refs_a = set()
+            for p in paps_a:
+                refs_a |= cites.get(p, set())
+            refs_b = set()
+            for p in paps_b:
+                refs_b |= cites.get(p, set())
+            ref_j = jaccard(refs_a, refs_b)
+
+            # Signal 5: Shared papers (same paper → likely different people)
+            shared = paps_a & paps_b
+
+            # Composite
+            auth_confidence = (
+                0.25 * name_sim
+                + 0.20 * first_match
+                + 0.25 * coauth_j
+                + 0.15 * ref_j
+                + 0.15 * (0.0 if shared else 1.0)
+            )
+
+            if auth_confidence < 0.35:
+                continue
+
+            in500_ct = len((paps_a | paps_b) & top500_ids)
+
+            if shared:
+                category = "DIFFERENT_PEOPLE"
+            elif auth_confidence >= 0.65:
+                category = "SAME_PERSON"
+            elif auth_confidence >= 0.50:
+                category = "LIKELY_SAME"
+            else:
+                category = "REVIEW"
+
+            author_results.append({
+                "name_a": a, "name_b": b,
+                "papers_a": len(paps_a), "papers_b": len(paps_b),
+                "total_papers": len(paps_a) + len(paps_b),
+                "in_500": in500_ct,
+                "name_sim": name_sim,
+                "first_match": first_match,
+                "coauth_jaccard": coauth_j,
+                "ref_jaccard": ref_j,
+                "shared_papers": len(shared),
+                "confidence": auth_confidence,
+                "category": category,
+            })
+
+author_results.sort(key=lambda x: -x["confidence"])
+
+same = [r for r in author_results if r["category"] == "SAME_PERSON"]
+likely = [r for r in author_results if r["category"] == "LIKELY_SAME"]
+auth_review = [r for r in author_results if r["category"] == "REVIEW"]
+different = [r for r in author_results if r["category"] == "DIFFERENT_PEOPLE"]
+
+print(f"\n  SAME_PERSON (conf ≥ 0.65, no shared papers): {len(same)}")
+print(f"  LIKELY_SAME (conf ≥ 0.50):                    {len(likely)}")
+print(f"  REVIEW (conf ≥ 0.35):                         {len(auth_review)}")
+print(f"  DIFFERENT_PEOPLE (share a paper):              {len(different)}")
+
+# Write author dedup TSV
+author_tsv = OUT / "author_dedup_review.tsv"
+with open(author_tsv, "w") as f:
+    headers = [
+        "category", "confidence", "name_sim", "first_match", "coauth_jaccard",
+        "ref_jaccard", "shared_papers", "papers_a", "papers_b", "total_papers",
+        "in_500", "name_a", "name_b", "decision",
+    ]
+    f.write("\t".join(headers) + "\n")
+    for r in author_results:
+        row = [
+            r["category"],
+            f"{r['confidence']:.3f}",
+            f"{r['name_sim']:.3f}",
+            f"{r['first_match']:.1f}",
+            f"{r['coauth_jaccard']:.3f}",
+            f"{r['ref_jaccard']:.3f}",
+            str(r["shared_papers"]),
+            str(r["papers_a"]),
+            str(r["papers_b"]),
+            str(r["total_papers"]),
+            str(r["in_500"]),
+            r["name_a"],
+            r["name_b"],
+            "",  # human decision column
+        ]
+        f.write("\t".join(row) + "\n")
+
+print(f"  Wrote {author_tsv}  ({len(author_results)} pairs)")
+
+# Append to markdown report
+with open(md_path, "a") as f:
+    f.write("\n---\n\n")
+    f.write("# Part 2: Author Name Disambiguation\n\n")
+    f.write("Five signals: name similarity, first-name compatibility, co-author overlap,\n")
+    f.write("citation neighborhood overlap, and shared-paper flag.\n\n")
+
+    f.write("| Signal | Weight | What it catches |\n")
+    f.write("| --- | --- | --- |\n")
+    f.write("| Name string similarity | 0.25 | Obvious name variants |\n")
+    f.write("| First name/initial match | 0.20 | 'J. Friedman' = 'Jerome H. Friedman' |\n")
+    f.write("| Co-author Jaccard | 0.25 | Same collaborators → same person |\n")
+    f.write("| Citation neighborhood | 0.15 | Same research topic |\n")
+    f.write("| No shared paper | 0.15 | Co-authors on same paper → different people |\n\n")
+
+    f.write(f"| Category | Count |\n")
+    f.write(f"| --- | --- |\n")
+    f.write(f"| SAME_PERSON | {len(same)} |\n")
+    f.write(f"| LIKELY_SAME | {len(likely)} |\n")
+    f.write(f"| REVIEW | {len(auth_review)} |\n")
+    f.write(f"| DIFFERENT_PEOPLE | {len(different)} |\n\n")
+
+    f.write("## SAME_PERSON — merge these\n\n")
+    for r in same:
+        star = "★ " if r["in_500"] > 0 else ""
+        f.write(f"- {star}**{r['name_a']}** ({r['papers_a']}p) = **{r['name_b']}** ({r['papers_b']}p)")
+        f.write(f" | conf={r['confidence']:.3f} coauth={r['coauth_jaccard']:.2f} refs={r['ref_jaccard']:.2f}")
+        f.write(f" | {r['in_500']} in top 500\n")
+        f.write(f"  - Decision: ___________\n")
+    f.write("\n")
+
+    f.write("## LIKELY_SAME — quick human check\n\n")
+    for r in likely[:30]:
+        star = "★ " if r["in_500"] > 0 else ""
+        f.write(f"- {star}**{r['name_a']}** ({r['papers_a']}p) ≈ **{r['name_b']}** ({r['papers_b']}p)")
+        f.write(f" | conf={r['confidence']:.3f} coauth={r['coauth_jaccard']:.2f} refs={r['ref_jaccard']:.2f}\n")
+        f.write(f"  - Decision: ___________\n")
+    if len(likely) > 30:
+        f.write(f"\n... and {len(likely) - 30} more (see author_dedup_review.tsv)\n")
+    f.write("\n")
+
+    f.write("## DIFFERENT_PEOPLE — do NOT merge\n\n")
+    for r in different[:15]:
+        f.write(f"- **{r['name_a']}** ≠ **{r['name_b']}** (share {r['shared_papers']} paper(s))\n")
+    if len(different) > 15:
+        f.write(f"\n... and {len(different) - 15} more\n")
+
+print(f"  Updated {md_path}")
 print("\nDone.")

@@ -333,14 +333,14 @@ Would enter top 500 if merged: **20**
 - B #9999: [2022] Bisected graph matching improves automated pairing of bilaterally homologous neurons from   (7 cites)
 - Decision: ___________
 
-**60.** conf=0.750 title=1.00 cit=1.00 auth=0.0 `diff_DOIs`
-- A #9999: [2017] The small world of osteocytes: connectomics of the lacuno-canalicular network in bone  (152 cites)
-- B #9999: [2017] The small world of osteocytes: connectomics of the lacuno-canalicular network in bone  (143 cites)
-- Decision: ___________
-
-**61.** conf=0.750 title=1.00 cit=0.60 auth=0.0 `B=preprint`
+**60.** conf=0.750 title=1.00 cit=0.60 auth=0.0 `B=preprint`
 - A #9999: [2020] A workflow for visualizing human cancer biopsies using large-format electron microscopy  (24 cites)
 - B #9999: [2019] A workflow for visualizing human cancer biopsies using large-format electron microscopy  (6 cites)
+- Decision: ___________
+
+**61.** conf=0.750 title=1.00 cit=1.00 auth=0.0 `diff_DOIs`
+- A #9999: [2017] The small world of osteocytes: connectomics of the lacuno-canalicular network in bone  (152 cites)
+- B #9999: [2017] The small world of osteocytes: connectomics of the lacuno-canalicular network in bone  (143 cites)
 - Decision: ___________
 
 **62.** conf=0.746 title=1.00 cit=0.58 auth=0.0 `A=preprint`
@@ -419,233 +419,233 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **77.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Spyglass: a framework for reproducible and shareable neuroscience research  (9 cites)
-- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
-- Decision: ___________
-
-**78.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- B #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
-- Decision: ___________
-
-**79.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Efficient cell-wide mapping of mitochondria in electron microscopic volumes using webKnoss  (0 cites)
-- B #9999: [2025] Efficient cell-wide mapping of mitochondria in electron microscopic volumes using webKnoss  (5 cites)
-- Decision: ___________
-
-**80.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (5 cites)
-- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
-- Decision: ___________
-
-**81.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Direct segmentation of cortical cytoarchitectonic domains using ultra-high-resolution whol  (0 cites)
-- B #9999: [2024] Direct segmentation of cortical cytoarchitectonic domains using ultra-high-resolution whol  (0 cites)
-- Decision: ___________
-
-**82.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
-- A #9999: [2019] Fast, Versatile and Quantitative Annotation of Complex Images  (5 cites)
-- B #9999: [2018] Fast, versatile, and quantitative annotation of complex images  (0 cites)
-- Decision: ___________
-
-**83.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
-- B #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
-- Decision: ___________
-
-**84.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**85.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] <i>C. elegans</i> epicuticlins define specific compartments in the apical extracellular ma  (1 cites)
-- B #9999: [2024] <i>C. elegans</i> epicuticlins define specific compartments in the apical extracellular ma  (6 cites)
-- Decision: ___________
-
-**86.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] The Brain Image Library: A Community-Contributed Microscopy Resource for Neuroscientists  (3 cites)
-- B #9999: [2024] The Brain Image Library: A Community-Contributed Microscopy Resource for Neuroscientists  (7 cites)
-- Decision: ___________
-
-**87.** conf=0.725 title=1.00 cit=0.50 auth=0.0
-- A #9999: [2021] NucMM Dataset: 3D Neuronal Nuclei Instance Segmentation at Sub-Cubic Millimeter Scale  (1 cites)
-- B #9999: [2021] NucMM Dataset: 3D Neuronal Nuclei Instance Segmentation at Sub-Cubic Millimeter Scale  (27 cites)
-- Decision: ___________
-
-**88.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (5 cites)
-- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
-- Decision: ___________
-
-**89.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Spyglass: a framework for reproducible and shareable neuroscience research  (9 cites)
-- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
-- Decision: ___________
-
-**90.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2019] DeepCLIP: Predicting the effect of mutations on protein-RNA binding with Deep Learning  (59 cites)
-- B #9999: [2020] DeepCLIP: predicting the effect of mutations on protein–RNA binding with deep learning  (101 cites)
-- Decision: ___________
-
-**91.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2021] Escape Steering by Cholecystokinin Peptidergic Signaling  (0 cites)
-- B #1986: [2022] Escape steering by cholecystokinin peptidergic signaling  (27 cites)
-- Decision: ___________
-
-**92.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2022] Sharing Massive Biomedical Data at Magnitudes Lower Bandwidth Using Implicit Neural Functi  (3 cites)
-- B #9999: [2024] Sharing massive biomedical data at magnitudes lower bandwidth using implicit neural functi  (6 cites)
-- Decision: ___________
-
-**93.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2020] Multi-modal imaging of a single mouse brain over five orders of magnitude of resolution  (3 cites)
-- B #9999: [2021] Multi-modal imaging of a single mouse brain over five orders of magnitude of resolution  (32 cites)
-- Decision: ___________
-
-**94.** conf=0.725 title=1.00 cit=0.90 auth=0.0 `diff_DOIs`
-- A #9999: [2012] How to suppress undesired synchronization  (57 cites)
-- B #9999: [2012] How to suppress undesired synchronization  (62 cites)
-- Decision: ___________
-
-**95.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
-- A #9999: [2018] Connectomics of the zebrafish's lateral-line neuromast reveals wiring and miswiring in a s  (62 cites)
-- B #9999: [2018] Connectomics of the zebrafish’s lateral-line neuromast reveals wiring and miswiring in a s  (5 cites)
-- Decision: ___________
-
-**96.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Accelerating the continuous community sharing of digital neuromorphology data  (1 cites)
-- B #9999: [2024] Accelerating the continuous community sharing of digital neuromorphology data  (12 cites)
-- Decision: ___________
-
-**97.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
-- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
-- Decision: ___________
-
-**98.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] A hyperpolarizing neuron recruits undocked innexin hemichannels to transmit neural informa  (0 cites)
-- B #9999: [2024] A hyperpolarizing neuron recruits undocked innexin hemichannels to transmit neural informa  (5 cites)
-- Decision: ___________
-
-**99.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] Neuronal activity regulating the dauer entry decision in <i>Caenorhabditis elegans</i>  (0 cites)
 - B #9999: [2025] Neuronal Activity Regulating the Dauer Entry Decision in <i>Caenorhabditis elegans</i>  (0 cites)
 - Decision: ___________
 
-**100.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2025] Morphology and connectivity of retinal horizontal cells in two avian species  (2 cites)
-- B #9999: [2025] Morphology and connectivity of retinal horizontal cells in two avian species  (5 cites)
+**78.** conf=0.725 title=1.00 cit=0.90 auth=0.0 `diff_DOIs`
+- A #9999: [2012] How to suppress undesired synchronization  (57 cites)
+- B #9999: [2012] How to suppress undesired synchronization  (62 cites)
 - Decision: ___________
 
-**101.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Automated segmentation of synchrotron-scanned fossils  (0 cites)
-- B #9999: [2025] Automated segmentation of synchrotron-scanned fossils  (0 cites)
-- Decision: ___________
-
-**102.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Lamellar Schwann cells in the Pacinian corpuscle potentiate vibration perception  (3 cites)
-- B #9999: [2025] Lamellar Schwann cells in the Pacinian corpuscle potentiate vibration perception  (2 cites)
-- Decision: ___________
-
-**103.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**104.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
-- Decision: ___________
-
-**105.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2019] An adult brain atlas reveals broad neuroanatomical changes in independently evolved popula  (13 cites)
-- B #9999: [2019] An Adult Brain Atlas Reveals Broad Neuroanatomical Changes in Independently Evolved Popula  (44 cites)
-- Decision: ___________
-
-**106.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2025] Close-Up of vesicular ER Exit Sites by Volume Electron Imaging using FIB-SEM  (3 cites)
-- B #9999: [2025] Close-up of vesicular ER exit sites by volume electron imaging using FIB-SEM  (0 cites)
-- Decision: ___________
-
-**107.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (3 cites)
-- B #9999: [2025] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
-- Decision: ___________
-
-**108.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
-- A #9999: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (11 cites)
-- B #956: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (19 cites)
-- Decision: ___________
-
-**109.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**110.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- Decision: ___________
-
-**111.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- Decision: ___________
-
-**112.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+**79.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
 - B #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
 - Decision: ___________
 
-**113.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2022] Topographic axonal projection at single-cell precision supports local retinotopy in the mo  (3 cites)
-- B #9999: [2023] Topographic axonal projection at single-cell precision supports local retinotopy in the mo  (22 cites)
+**80.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2021] Escape Steering by Cholecystokinin Peptidergic Signaling  (0 cites)
+- B #1986: [2022] Escape steering by cholecystokinin peptidergic signaling  (27 cites)
 - Decision: ___________
 
-**114.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+**81.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2025] Close-Up of vesicular ER Exit Sites by Volume Electron Imaging using FIB-SEM  (3 cites)
+- B #9999: [2025] Close-up of vesicular ER exit sites by volume electron imaging using FIB-SEM  (0 cites)
 - Decision: ___________
 
-**115.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (3 cites)
-- B #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
+**82.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
 - Decision: ___________
 
-**116.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2022] Cross-modality Synthesis of EM Time Series and Live Fluorescence Imaging  (1 cites)
-- B #9999: [2022] Cross-modality synthesis of EM time series and live fluorescence imaging  (11 cites)
+**83.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] A hyperpolarizing neuron recruits undocked innexin hemichannels to transmit neural informa  (0 cites)
+- B #9999: [2024] A hyperpolarizing neuron recruits undocked innexin hemichannels to transmit neural informa  (5 cites)
 - Decision: ___________
 
-**117.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #1205: [2024] Whole-body connectome of a segmented annelid larva  (15 cites)
-- B #9999: [2025] Whole-body connectome of a segmented annelid larva  (4 cites)
+**84.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2025] Morphology and connectivity of retinal horizontal cells in two avian species  (2 cites)
+- B #9999: [2025] Morphology and connectivity of retinal horizontal cells in two avian species  (5 cites)
 - Decision: ___________
 
-**118.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+**85.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Accelerating the continuous community sharing of digital neuromorphology data  (1 cites)
+- B #9999: [2024] Accelerating the continuous community sharing of digital neuromorphology data  (12 cites)
 - Decision: ___________
 
-**119.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
-- A #9999: [2023] Compression-based inference of network motif sets  (0 cites)
-- B #9999: [2024] Compression-based inference of network motif sets  (3 cites)
-- Decision: ___________
-
-**120.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+**86.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] Paired and solitary ionocytes in the zebrafish olfactory epithelium  (2 cites)
 - B #9999: [2025] Paired and solitary ionocytes in the zebrafish olfactory epithelium  (1 cites)
 - Decision: ___________
 
-**121.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+**87.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
+- B #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
+- Decision: ___________
+
+**88.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #1205: [2024] Whole-body connectome of a segmented annelid larva  (15 cites)
+- B #9999: [2025] Whole-body connectome of a segmented annelid larva  (4 cites)
+- Decision: ___________
+
+**89.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**90.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2022] Cross-modality Synthesis of EM Time Series and Live Fluorescence Imaging  (1 cites)
+- B #9999: [2022] Cross-modality synthesis of EM time series and live fluorescence imaging  (11 cites)
+- Decision: ___________
+
+**91.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**92.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Direct segmentation of cortical cytoarchitectonic domains using ultra-high-resolution whol  (0 cites)
+- B #9999: [2024] Direct segmentation of cortical cytoarchitectonic domains using ultra-high-resolution whol  (0 cites)
+- Decision: ___________
+
+**93.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Automated segmentation of synchrotron-scanned fossils  (0 cites)
+- B #9999: [2025] Automated segmentation of synchrotron-scanned fossils  (0 cites)
+- Decision: ___________
+
+**94.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Spyglass: a framework for reproducible and shareable neuroscience research  (9 cites)
+- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
+- Decision: ___________
+
+**95.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**96.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**97.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (3 cites)
+- B #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
+- Decision: ___________
+
+**98.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (5 cites)
+- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
+- Decision: ___________
+
+**99.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- B #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
+- Decision: ___________
+
+**100.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
+- A #9999: [2019] Fast, Versatile and Quantitative Annotation of Complex Images  (5 cites)
+- B #9999: [2018] Fast, versatile, and quantitative annotation of complex images  (0 cites)
+- Decision: ___________
+
+**101.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**102.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2019] An adult brain atlas reveals broad neuroanatomical changes in independently evolved popula  (13 cites)
+- B #9999: [2019] An Adult Brain Atlas Reveals Broad Neuroanatomical Changes in Independently Evolved Popula  (44 cites)
+- Decision: ___________
+
+**103.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] The Brain Image Library: A Community-Contributed Microscopy Resource for Neuroscientists  (3 cites)
+- B #9999: [2024] The Brain Image Library: A Community-Contributed Microscopy Resource for Neuroscientists  (7 cites)
+- Decision: ___________
+
+**104.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- Decision: ___________
+
+**105.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - B #9999: [2026] Neural connectome of the ctenophore statocyst  (0 cites)
 - Decision: ___________
 
-**122.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+**106.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] <i>C. elegans</i> epicuticlins define specific compartments in the apical extracellular ma  (1 cites)
+- B #9999: [2024] <i>C. elegans</i> epicuticlins define specific compartments in the apical extracellular ma  (6 cites)
+- Decision: ___________
+
+**107.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (5 cites)
+- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
+- Decision: ___________
+
+**108.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- Decision: ___________
+
+**109.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
+- A #9999: [2018] Connectomics of the zebrafish's lateral-line neuromast reveals wiring and miswiring in a s  (62 cites)
+- B #9999: [2018] Connectomics of the zebrafish’s lateral-line neuromast reveals wiring and miswiring in a s  (5 cites)
+- Decision: ___________
+
+**110.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - B #9999: [2024] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- Decision: ___________
+
+**111.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Lamellar Schwann cells in the Pacinian corpuscle potentiate vibration perception  (3 cites)
+- B #9999: [2025] Lamellar Schwann cells in the Pacinian corpuscle potentiate vibration perception  (2 cites)
+- Decision: ___________
+
+**112.** conf=0.725 title=1.00 cit=0.50 auth=0.0
+- A #9999: [2021] NucMM Dataset: 3D Neuronal Nuclei Instance Segmentation at Sub-Cubic Millimeter Scale  (1 cites)
+- B #9999: [2021] NucMM Dataset: 3D Neuronal Nuclei Instance Segmentation at Sub-Cubic Millimeter Scale  (27 cites)
+- Decision: ___________
+
+**113.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Spyglass: a framework for reproducible and shareable neuroscience research  (9 cites)
+- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
+- Decision: ___________
+
+**114.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2020] Multi-modal imaging of a single mouse brain over five orders of magnitude of resolution  (3 cites)
+- B #9999: [2021] Multi-modal imaging of a single mouse brain over five orders of magnitude of resolution  (32 cites)
+- Decision: ___________
+
+**115.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (3 cites)
+- B #9999: [2025] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
+- Decision: ___________
+
+**116.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**117.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2023] Compression-based inference of network motif sets  (0 cites)
+- B #9999: [2024] Compression-based inference of network motif sets  (3 cites)
+- Decision: ___________
+
+**118.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `B=preprint`
+- A #9999: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (11 cites)
+- B #956: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (19 cites)
+- Decision: ___________
+
+**119.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2022] Sharing Massive Biomedical Data at Magnitudes Lower Bandwidth Using Implicit Neural Functi  (3 cites)
+- B #9999: [2024] Sharing massive biomedical data at magnitudes lower bandwidth using implicit neural functi  (6 cites)
+- Decision: ___________
+
+**120.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2024] Efficient cell-wide mapping of mitochondria in electron microscopic volumes using webKnoss  (0 cites)
+- B #9999: [2025] Efficient cell-wide mapping of mitochondria in electron microscopic volumes using webKnoss  (5 cites)
+- Decision: ___________
+
+**121.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2019] DeepCLIP: Predicting the effect of mutations on protein-RNA binding with Deep Learning  (59 cites)
+- B #9999: [2020] DeepCLIP: predicting the effect of mutations on protein–RNA binding with deep learning  (101 cites)
+- Decision: ___________
+
+**122.** conf=0.725 title=1.00 cit=0.50 auth=0.0 `A=preprint`
+- A #9999: [2022] Topographic axonal projection at single-cell precision supports local retinotopy in the mo  (3 cites)
+- B #9999: [2023] Topographic axonal projection at single-cell precision supports local retinotopy in the mo  (22 cites)
 - Decision: ___________
 
 **123.** conf=0.723 title=1.00 cit=0.49 auth=0.0 `A=preprint`
@@ -710,7 +710,7 @@ Would enter top 500 if merged: **20**
 
 **135.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate <i>Drosophila</i> larval aversive olfactory   (0 cites)
-- B #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
+- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
 - Decision: ___________
 
 **136.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
@@ -720,22 +720,22 @@ Would enter top 500 if merged: **20**
 
 **137.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate <i>Drosophila</i> larval aversive olfactory   (0 cites)
-- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
+- B #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
 - Decision: ___________
 
-**138.** conf=0.722 title=1.00 cit=0.89 auth=0.0 `diff_DOIs`
-- A #9999: [2013] Effect of correlations on network controllability  (202 cites)
-- B #9999: [2012] Effect of correlations on network controllability  (172 cites)
-- Decision: ___________
-
-**139.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
+**138.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] Intricate response dynamics enhances stimulus discrimination in the resource-limited <i>C.  (3 cites)
 - B #9999: [2024] Intricate response dynamics enhances stimulus discrimination in the resource-limited C. el  (5 cites)
 - Decision: ___________
 
+**139.** conf=0.722 title=1.00 cit=0.89 auth=0.0 `diff_DOIs`
+- A #9999: [2013] Effect of correlations on network controllability  (202 cites)
+- B #9999: [2012] Effect of correlations on network controllability  (172 cites)
+- Decision: ___________
+
 **140.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
 - Decision: ___________
 
 **141.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
@@ -745,7 +745,7 @@ Would enter top 500 if merged: **20**
 
 **142.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
 - Decision: ___________
 
 **143.** conf=0.722 title=0.99 cit=0.50 auth=0.0 `A=preprint`
@@ -825,22 +825,22 @@ Would enter top 500 if merged: **20**
 
 **158.** conf=0.720 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Individuality across environmental context in <i>Drosophila melanogaster</i>  (2 cites)
-- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
+- B #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
 - Decision: ___________
 
 **159.** conf=0.720 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Individuality across environmental context in <i>Drosophila melanogaster</i>  (2 cites)
-- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
 - Decision: ___________
 
 **160.** conf=0.720 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Individuality across environmental context in <i>Drosophila melanogaster</i>  (2 cites)
-- B #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
 - Decision: ___________
 
 **161.** conf=0.720 title=0.99 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Individuality across environmental context in <i>Drosophila melanogaster</i>  (2 cites)
-- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
 - Decision: ___________
 
 **162.** conf=0.720 title=0.99 cit=0.50 auth=0.0 `A=preprint`
@@ -870,32 +870,32 @@ Would enter top 500 if merged: **20**
 
 **167.** conf=0.719 title=0.98 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Spatial transcriptomics in the adult <i>Drosophila</i> brain and body  (1 cites)
-- B #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
+- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
 - Decision: ___________
 
 **168.** conf=0.719 title=0.98 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2023] Spatial transcriptomics in the adult <i>Drosophila</i> brain and body  (1 cites)
-- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- B #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
 - Decision: ___________
 
 **169.** conf=0.719 title=0.98 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] Social Experience Shapes Fighting Strategies in <i>Drosophila</i>  (0 cites)
-- B #9999: [2025] Social experience shapes fighting strategies in Drosophila  (0 cites)
+- B #9999: [2025] Social Experience Shapes Fighting Strategies in Drosophila  (0 cites)
 - Decision: ___________
 
 **170.** conf=0.719 title=0.98 cit=0.50 auth=0.0 `A=preprint`
 - A #9999: [2024] Social Experience Shapes Fighting Strategies in <i>Drosophila</i>  (0 cites)
-- B #9999: [2025] Social Experience Shapes Fighting Strategies in Drosophila  (0 cites)
+- B #9999: [2025] Social experience shapes fighting strategies in Drosophila  (0 cites)
 - Decision: ___________
 
 **171.** conf=0.719 title=1.00 cit=0.48 auth=0.0 `A=preprint`
 - A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
-- B #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
+- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
 - Decision: ___________
 
 **172.** conf=0.719 title=1.00 cit=0.48 auth=0.0 `A=preprint`
 - A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
-- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- B #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
 - Decision: ___________
 
 **173.** conf=0.719 title=1.00 cit=0.48 auth=0.0 `A=preprint`
@@ -959,13 +959,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **185.** conf=0.717 title=1.00 cit=0.47 auth=0.0 `A=preprint`
-- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
+- A #9999: [2024] A connectomics-driven analysis reveals novel characterization of border regions in mouse v  (0 cites)
+- B #9999: [2025] A connectomics-driven analysis reveals novel characterization of border regions in mouse v  (0 cites)
 - Decision: ___________
 
 **186.** conf=0.717 title=1.00 cit=0.47 auth=0.0 `A=preprint`
-- A #9999: [2024] A connectomics-driven analysis reveals novel characterization of border regions in mouse v  (0 cites)
-- B #9999: [2025] A connectomics-driven analysis reveals novel characterization of border regions in mouse v  (0 cites)
+- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
 - Decision: ___________
 
 **187.** conf=0.717 title=1.00 cit=0.47 auth=0.0 `A=preprint`
@@ -974,18 +974,18 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **188.** conf=0.716 title=1.00 cit=0.46 auth=0.0 `B=preprint`
+- A #9999: [2020] Toward an Automated HPC Pipeline for Processing Large Scale Electron Microscopy Data  (11 cites)
+- B #9999: [2020] Toward an Automated HPC Pipeline for Processing Large Scale Electron Microscopy Data  (2 cites)
+- Decision: ___________
+
+**189.** conf=0.716 title=1.00 cit=0.46 auth=0.0 `B=preprint`
 - A #858: [2017] Wiring variations that enable and constrain neural computation in a sensory microcircuit  (147 cites)
 - B #9999: [2017] Wiring variations that enable and constrain neural computation in a sensory microcircuit  (3 cites)
 - Decision: ___________
 
-**189.** conf=0.716 title=1.00 cit=0.46 auth=0.0 `A=preprint`
+**190.** conf=0.716 title=1.00 cit=0.46 auth=0.0 `A=preprint`
 - A #9999: [2024] Deriving connectivity from spiking activity in detailed models of large-scale cortical mic  (0 cites)
 - B #9999: [2025] Deriving connectivity from spiking activity in detailed models of large-scale cortical mic  (0 cites)
-- Decision: ___________
-
-**190.** conf=0.716 title=1.00 cit=0.46 auth=0.0 `B=preprint`
-- A #9999: [2020] Toward an Automated HPC Pipeline for Processing Large Scale Electron Microscopy Data  (11 cites)
-- B #9999: [2020] Toward an Automated HPC Pipeline for Processing Large Scale Electron Microscopy Data  (2 cites)
 - Decision: ___________
 
 **191.** conf=0.716 title=0.99 cit=0.48 auth=0.0 `A=preprint`
@@ -995,7 +995,7 @@ Would enter top 500 if merged: **20**
 
 **192.** conf=0.715 title=0.99 cit=0.48 auth=0.0 `A=preprint`
 - A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in <i>C. elegans</i>  (0 cites)
-- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
+- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
 - Decision: ___________
 
 **193.** conf=0.715 title=0.99 cit=0.48 auth=0.0 `A=preprint`
@@ -1005,27 +1005,27 @@ Would enter top 500 if merged: **20**
 
 **194.** conf=0.715 title=0.99 cit=0.48 auth=0.0 `A=preprint`
 - A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in <i>C. elegans</i>  (0 cites)
-- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
 - Decision: ___________
 
-**195.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
-- A #9999: [2024] Temporal resolution of spike coding in feedforward networks with signal convergence and di  (0 cites)
-- B #9999: [2025] Temporal resolution of spike coding in feedforward networks with signal convergence and di  (1 cites)
-- Decision: ___________
-
-**196.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
-- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- B #9999: [2025] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- Decision: ___________
-
-**197.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
+**195.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Organization of mouse prefrontal cortex subnetwork revealed by spatial single-cell multi-o  (0 cites)
 - B #9999: [2026] Organization of mouse prefrontal cortex subnetwork revealed by spatial single-cell multi-o  (0 cites)
 - Decision: ___________
 
-**198.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
+**196.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
 - A #9999: [2020] X-ray microscopy enables multiscale high-resolution 3D imaging of plant cells, tissues, an  (6 cites)
 - B #9999: [2021] X-ray microscopy enables multiscale high-resolution 3D imaging of plant cells, tissues, an  (83 cites)
+- Decision: ___________
+
+**197.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
+- A #9999: [2024] Temporal resolution of spike coding in feedforward networks with signal convergence and di  (0 cites)
+- B #9999: [2025] Temporal resolution of spike coding in feedforward networks with signal convergence and di  (1 cites)
+- Decision: ___________
+
+**198.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
+- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- B #9999: [2025] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
 - Decision: ___________
 
 **199.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
@@ -1039,13 +1039,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **201.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
-- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (2 cites)
-- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
+- A #9999: [2019] Reconstruction of 1,000 projection neurons reveals new cell types and organization of long  (61 cites)
+- B #9999: [2019] Reconstruction of 1,000 Projection Neurons Reveals New Cell Types and Organization of Long  (1 cites)
 - Decision: ___________
 
 **202.** conf=0.715 title=1.00 cit=0.46 auth=0.0 `A=preprint`
-- A #9999: [2019] Reconstruction of 1,000 projection neurons reveals new cell types and organization of long  (61 cites)
-- B #9999: [2019] Reconstruction of 1,000 Projection Neurons Reveals New Cell Types and Organization of Long  (1 cites)
+- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (2 cites)
+- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
 - Decision: ___________
 
 **203.** conf=0.715 title=0.99 cit=0.47 auth=0.0 `A=preprint`
@@ -1075,12 +1075,12 @@ Would enter top 500 if merged: **20**
 
 **208.** conf=0.714 title=0.98 cit=0.48 auth=0.0 `A=preprint`
 - A #1361: [2024] A split-GAL4 driver line resource for <i>Drosophila</i> neuron types  (13 cites)
-- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
+- B #9999: [2024] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
 - Decision: ___________
 
 **209.** conf=0.714 title=0.98 cit=0.48 auth=0.0 `A=preprint`
 - A #1361: [2024] A split-GAL4 driver line resource for <i>Drosophila</i> neuron types  (13 cites)
-- B #9999: [2024] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
+- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
 - Decision: ___________
 
 **210.** conf=0.714 title=1.00 cit=0.45 auth=0.0 `A=preprint`
@@ -1119,13 +1119,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **217.** conf=0.713 title=1.00 cit=0.45 auth=0.0 `A=preprint`
-- A #9999: [2024] Accelerated protein retention expansion microscopy using microwave radiation  (0 cites)
-- B #9999: [2024] Accelerated protein retention expansion microscopy using microwave radiation  (1 cites)
+- A #9999: [2023] Specific configurations of electrical synapses filter sensory information to drive choices  (2 cites)
+- B #9999: [2023] Specific Configurations of Electrical Synapses Filter Sensory Information to Drive Choices  (0 cites)
 - Decision: ___________
 
 **218.** conf=0.713 title=1.00 cit=0.45 auth=0.0 `A=preprint`
-- A #9999: [2023] Specific configurations of electrical synapses filter sensory information to drive choices  (2 cites)
-- B #9999: [2023] Specific Configurations of Electrical Synapses Filter Sensory Information to Drive Choices  (0 cites)
+- A #9999: [2024] Accelerated protein retention expansion microscopy using microwave radiation  (0 cites)
+- B #9999: [2024] Accelerated protein retention expansion microscopy using microwave radiation  (1 cites)
 - Decision: ___________
 
 **219.** conf=0.712 title=0.99 cit=0.46 auth=0.0 `A=preprint`
@@ -1170,12 +1170,12 @@ Would enter top 500 if merged: **20**
 
 **227.** conf=0.711 title=1.00 cit=0.44 auth=0.0 `A=preprint`
 - A #9999: [2023] Driver lines for studying associative learning in Drosophila  (15 cites)
-- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
 - Decision: ___________
 
 **228.** conf=0.711 title=1.00 cit=0.44 auth=0.0 `A=preprint`
 - A #9999: [2023] Driver lines for studying associative learning in Drosophila  (15 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
+- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
 - Decision: ___________
 
 **229.** conf=0.710 title=1.00 cit=0.44 auth=0.0 `A=preprint`
@@ -1189,18 +1189,18 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **231.** conf=0.710 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #1883: [2023] Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the  (5 cites)
-- B #9999: [2023] Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the  (0 cites)
-- Decision: ___________
-
-**232.** conf=0.710 title=1.00 cit=0.44 auth=0.0 `A=preprint`
 - A #1205: [2024] Whole-body connectome of a segmented annelid larva  (15 cites)
 - B #9999: [2024] Whole-body connectome of a segmented annelid larva  (3 cites)
 - Decision: ___________
 
+**232.** conf=0.710 title=1.00 cit=0.44 auth=0.0 `A=preprint`
+- A #1883: [2023] Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the  (5 cites)
+- B #9999: [2023] Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the  (0 cites)
+- Decision: ___________
+
 **233.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (2 cites)
-- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (24 cites)
+- A #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
+- B #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
 - Decision: ___________
 
 **234.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
@@ -1209,23 +1209,23 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **235.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
-- B #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
-- Decision: ___________
-
-**236.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
 - A #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
 - B #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
 - Decision: ___________
 
+**236.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
+- A #9999: [2020] Optimization of negative stage bias potential for faster imaging in large-scale electron m  (1 cites)
+- B #9999: [2021] Optimization of negative stage bias potential for faster imaging in large-scale electron m  (11 cites)
+- Decision: ___________
+
 **237.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #9999: [2023] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
-- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (2 cites)
+- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (24 cites)
 - Decision: ___________
 
 **238.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #9999: [2020] Optimization of negative stage bias potential for faster imaging in large-scale electron m  (1 cites)
-- B #9999: [2021] Optimization of negative stage bias potential for faster imaging in large-scale electron m  (11 cites)
+- A #9999: [2023] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - Decision: ___________
 
 **239.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
@@ -1234,8 +1234,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **240.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
-- A #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
-- B #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
+- A #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
+- B #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
 - Decision: ___________
 
 **241.** conf=0.709 title=1.00 cit=0.44 auth=0.0 `A=preprint`
@@ -1289,13 +1289,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **251.** conf=0.708 title=1.00 cit=0.43 auth=0.0 `A=preprint`
-- A #9999: [2022] Rewarding capacity of optogenetically activating a giant GABAergic central-brain interneur  (1 cites)
-- B #9999: [2023] Rewarding Capacity of Optogenetically Activating a Giant GABAergic Central-Brain Interneur  (2 cites)
+- A #9999: [2023] ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume scanning e  (1 cites)
+- B #9999: [2023] ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume scanning e  (4 cites)
 - Decision: ___________
 
 **252.** conf=0.708 title=1.00 cit=0.43 auth=0.0 `A=preprint`
-- A #9999: [2023] ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume scanning e  (1 cites)
-- B #9999: [2023] ATUM-Tomo: A multi-scale approach to cellular ultrastructure by combined volume scanning e  (4 cites)
+- A #9999: [2022] Rewarding capacity of optogenetically activating a giant GABAergic central-brain interneur  (1 cites)
+- B #9999: [2023] Rewarding Capacity of Optogenetically Activating a Giant GABAergic Central-Brain Interneur  (2 cites)
 - Decision: ___________
 
 **253.** conf=0.708 title=0.97 cit=0.47 auth=0.0 `B=preprint`
@@ -1324,28 +1324,28 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **258.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
+- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- Decision: ___________
+
+**259.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
 - A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - B #9999: [2026] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - Decision: ___________
 
-**259.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
+**260.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
 - A #9999: [2024] Mitochondria are absent from microglial processes performing surveillance, chemotaxis, and  (1 cites)
 - B #9999: [2025] Mitochondria are absent from microglial processes performing surveillance, chemotaxis, and  (2 cites)
 - Decision: ___________
 
-**260.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `B=preprint`
+**261.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `B=preprint`
 - A #9999: [2013] An Open Science Platform for the Next Generation of Data  (3 cites)
 - B #9999: [2015] An Open Science Platform for the Next Generation of Data  (0 cites)
 - Decision: ___________
 
-**261.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
+**262.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
 - A #9999: [2025] Serotonin selectively modulates visual responses of object motion detectors in <i>Drosophi  (1 cites)
 - B #9999: [2025] Serotonin selectively modulates visual responses of object motion detectors in <i>Drosophi  (1 cites)
-- Decision: ___________
-
-**262.** conf=0.707 title=1.00 cit=0.43 auth=0.0 `A=preprint`
-- A #9999: [2024] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
 - Decision: ___________
 
 **263.** conf=0.707 title=0.99 cit=0.44 auth=0.0 `A=preprint`
@@ -1355,12 +1355,12 @@ Would enter top 500 if merged: **20**
 
 **264.** conf=0.706 title=0.99 cit=0.44 auth=0.0 `A=preprint`
 - A #9999: [2024] Heterogeneous responses to embryonic critical period perturbations within the <i>Drosophil  (2 cites)
-- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (0 cites)
+- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (1 cites)
 - Decision: ___________
 
 **265.** conf=0.706 title=0.99 cit=0.44 auth=0.0 `A=preprint`
 - A #9999: [2024] Heterogeneous responses to embryonic critical period perturbations within the <i>Drosophil  (2 cites)
-- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (1 cites)
+- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (0 cites)
 - Decision: ___________
 
 **266.** conf=0.706 title=1.00 cit=0.42 auth=0.0 `A=preprint`
@@ -1493,29 +1493,29 @@ Would enter top 500 if merged: **20**
 - B #9999: [2019] Automated 3D Axonal Morphometry of White Matter  (74 cites)
 - Decision: ___________
 
-**292.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
-- A #9999: [2022] Functional imaging and quantification of multi-neuronal olfactory responses in <i>C. elega  (5 cites)
-- B #1442: [2023] Functional imaging and quantification of multineuronal olfactory responses in <i>C. elegan  (51 cites)
-- Decision: ___________
-
-**293.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
-- A #9999: [2019] Operations Research Methods for Estimating the Population Size of Neuron Types  (1 cites)
-- B #9999: [2020] Operations research methods for estimating the population size of neuron types  (11 cites)
-- Decision: ___________
-
-**294.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `B=preprint`
+**292.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `B=preprint`
 - A #1056: [2021] Learning and Segmenting Dense Voxel Embeddings for 3D Neuron Reconstruction  (31 cites)
 - B #9999: [2019] Learning and Segmenting Dense Voxel Embeddings for 3D Neuron Reconstruction  (5 cites)
 - Decision: ___________
 
+**293.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
+- A #9999: [2022] Functional imaging and quantification of multi-neuronal olfactory responses in <i>C. elega  (5 cites)
+- B #1442: [2023] Functional imaging and quantification of multineuronal olfactory responses in <i>C. elegan  (51 cites)
+- Decision: ___________
+
+**294.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
+- A #9999: [2019] Operations Research Methods for Estimating the Population Size of Neuron Types  (1 cites)
+- B #9999: [2020] Operations research methods for estimating the population size of neuron types  (11 cites)
+- Decision: ___________
+
 **295.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
-- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
+- A #9999: [2018] A Data Structure for real-time Aggregation Queries of Big Brain Networks  (2 cites)
+- B #9999: [2019] A Data Structure for Real-Time Aggregation Queries of Big Brain Networks  (6 cites)
 - Decision: ___________
 
 **296.** conf=0.700 title=1.00 cit=0.40 auth=0.0 `A=preprint`
-- A #9999: [2018] A Data Structure for real-time Aggregation Queries of Big Brain Networks  (2 cites)
-- B #9999: [2019] A Data Structure for Real-Time Aggregation Queries of Big Brain Networks  (6 cites)
+- A #9999: [2024] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (1 cites)
 - Decision: ___________
 
 ## LIKELY_DUP (443 pairs)
@@ -1566,8 +1566,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **10.** conf=0.697 title=1.00 cit=0.39 auth=0.0 `A=preprint`
-- A #9999: [2023] Hierarchical regulation of functionally antagonistic neuropeptides expressed in a single n  (4 cites)
-- B #9999: [2024] Hierarchical regulation of functionally antagonistic neuropeptides expressed in a single n  (13 cites)
+- A #9999: [2019] Scaling Distributed Training of Flood-Filling Networks on HPC Infrastructure for Brain Map  (1 cites)
+- B #9999: [2019] Scaling Distributed Training of Flood-Filling Networks on HPC Infrastructure for Brain Map  (7 cites)
 - Decision: ___________
 
 **11.** conf=0.697 title=1.00 cit=0.39 auth=0.0 `diff_DOIs`
@@ -1576,13 +1576,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **12.** conf=0.697 title=1.00 cit=0.39 auth=0.0 `A=preprint`
-- A #9999: [2020] Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity  (1 cites)
-- B #9999: [2020] Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity  (1 cites)
+- A #9999: [2023] Hierarchical regulation of functionally antagonistic neuropeptides expressed in a single n  (4 cites)
+- B #9999: [2024] Hierarchical regulation of functionally antagonistic neuropeptides expressed in a single n  (13 cites)
 - Decision: ___________
 
 **13.** conf=0.697 title=1.00 cit=0.39 auth=0.0 `A=preprint`
-- A #9999: [2019] Scaling Distributed Training of Flood-Filling Networks on HPC Infrastructure for Brain Map  (1 cites)
-- B #9999: [2019] Scaling Distributed Training of Flood-Filling Networks on HPC Infrastructure for Brain Map  (7 cites)
+- A #9999: [2020] Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity  (1 cites)
+- B #9999: [2020] Leveraging Tools from Autonomous Navigation for Rapid, Robust Neuron Connectivity  (1 cites)
 - Decision: ___________
 
 **14.** conf=0.697 title=1.00 cit=0.39 auth=0.0 `A=preprint`
@@ -1651,43 +1651,43 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **27.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
-- A #9999: [2023] Permanent deconstruction of intracellular primary cilia in differentiating granule cell ne  (2 cites)
-- B #1977: [2024] Permanent deconstruction of intracellular primary cilia in differentiating granule cell ne  (22 cites)
-- Decision: ___________
-
-**28.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
-- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
-- Decision: ___________
-
-**29.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
 - A #9999: [2024] niiv: Interactive Self-supervised Neural Implicit Isotropic Volume Reconstruction  (2 cites)
 - B #9999: [2026] niiv: Interactive Self-supervised Neural Implicit Isotropic Volume Reconstruction  (0 cites)
 - Decision: ___________
 
-**30.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
-- A #9999: [2024] Adjacent Neuronal Fascicle Guides Motoneuron 24 Dendritic Branching and Axonal Routing Dec  (1 cites)
-- B #9999: [2024] Adjacent Neuronal Fascicle Guides Motoneuron 24 Dendritic Branching and Axonal Routing Dec  (1 cites)
-- Decision: ___________
-
-**31.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
-- A #9999: [2023] Femtosecond laser preparation of resin embedded samples for correlative microscopy workflo  (1 cites)
-- B #9999: [2023] Femtosecond laser preparation of resin embedded samples for correlative microscopy workflo  (10 cites)
-- Decision: ___________
-
-**32.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
-- A #9999: [2018] Open Source Brain: a collaborative resource for visualizing, analyzing, simulating and dev  (17 cites)
-- B #9999: [2019] Open Source Brain: A Collaborative Resource for Visualizing, Analyzing, Simulating, and De  (86 cites)
-- Decision: ___________
-
-**33.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+**28.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
 - A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - B #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
 - Decision: ___________
 
-**34.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+**29.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+- A #9999: [2023] Femtosecond laser preparation of resin embedded samples for correlative microscopy workflo  (1 cites)
+- B #9999: [2023] Femtosecond laser preparation of resin embedded samples for correlative microscopy workflo  (10 cites)
+- Decision: ___________
+
+**30.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+- A #9999: [2023] Permanent deconstruction of intracellular primary cilia in differentiating granule cell ne  (2 cites)
+- B #1977: [2024] Permanent deconstruction of intracellular primary cilia in differentiating granule cell ne  (22 cites)
+- Decision: ___________
+
+**31.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
 - A #9999: [2021] A simple and robust method for automating analysis of naïve and regenerating peripheral ne  (3 cites)
 - B #9999: [2021] A simple and robust method for automating analysis of naïve and regenerating peripheral ne  (11 cites)
+- Decision: ___________
+
+**32.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+- A #9999: [2023] Mechanism of barotaxis in marine zooplankton  (14 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
+- Decision: ___________
+
+**33.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+- A #9999: [2024] Adjacent Neuronal Fascicle Guides Motoneuron 24 Dendritic Branching and Axonal Routing Dec  (1 cites)
+- B #9999: [2024] Adjacent Neuronal Fascicle Guides Motoneuron 24 Dendritic Branching and Axonal Routing Dec  (1 cites)
+- Decision: ___________
+
+**34.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
+- A #9999: [2018] Open Source Brain: a collaborative resource for visualizing, analyzing, simulating and dev  (17 cites)
+- B #9999: [2019] Open Source Brain: A Collaborative Resource for Visualizing, Analyzing, Simulating, and De  (86 cites)
 - Decision: ___________
 
 **35.** conf=0.694 title=1.00 cit=0.38 auth=0.0 `A=preprint`
@@ -1746,13 +1746,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **46.** conf=0.689 title=1.00 cit=0.36 auth=0.0 `A=preprint`
-- A #9999: [2021] Desmosomal connectomics of all somatic muscles in an annelid larva  (0 cites)
-- B #1594: [2022] Desmosomal connectomics of all somatic muscles in an annelid larva  (14 cites)
+- A #9999: [2016] Functional Genetic Screen to Identify Interneurons Governing Behaviorally Distinct Aspects  (1 cites)
+- B #9999: [2016] Functional Genetic Screen to Identify Interneurons Governing Behaviorally Distinct Aspects  (29 cites)
 - Decision: ___________
 
 **47.** conf=0.689 title=1.00 cit=0.36 auth=0.0 `A=preprint`
-- A #9999: [2016] Functional Genetic Screen to Identify Interneurons Governing Behaviorally Distinct Aspects  (1 cites)
-- B #9999: [2016] Functional Genetic Screen to Identify Interneurons Governing Behaviorally Distinct Aspects  (29 cites)
+- A #9999: [2021] Desmosomal connectomics of all somatic muscles in an annelid larva  (0 cites)
+- B #1594: [2022] Desmosomal connectomics of all somatic muscles in an annelid larva  (14 cites)
 - Decision: ___________
 
 **48.** conf=0.689 title=0.99 cit=0.38 auth=0.0 `A=preprint`
@@ -1806,13 +1806,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **58.** conf=0.686 title=1.00 cit=0.34 auth=0.0 `A=preprint`
-- A #9999: [2024] Scaling Properties for Artificial Neural Network Models of a Small Nervous System  (0 cites)
-- B #9999: [2024] Scaling Properties for Artificial Neural Network Models of a Small Nervous System  (0 cites)
+- A #9999: [2025] MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Conn  (0 cites)
+- B #9999: [2025] MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Conn  (0 cites)
 - Decision: ___________
 
 **59.** conf=0.686 title=1.00 cit=0.34 auth=0.0 `A=preprint`
-- A #9999: [2025] MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Conn  (0 cites)
-- B #9999: [2025] MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Conn  (0 cites)
+- A #9999: [2024] Scaling Properties for Artificial Neural Network Models of a Small Nervous System  (0 cites)
+- B #9999: [2024] Scaling Properties for Artificial Neural Network Models of a Small Nervous System  (0 cites)
 - Decision: ___________
 
 **60.** conf=0.686 title=1.00 cit=0.34 auth=0.0 `A=preprint`
@@ -1840,9 +1840,9 @@ Would enter top 500 if merged: **20**
 - B #9999: [2025] Statistical signature of subtle behavioral changes in large-scale assays  (2 cites)
 - Decision: ___________
 
-**65.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
-- A #9999: [2024] Differential temporal filtering in the fly optic lobe  (0 cites)
-- B #9999: [2025] Differential temporal filtering in the fly optic lobe  (0 cites)
+**65.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `B=preprint`
+- A #9999: [2016] Deep learning in bioinformatics  (1518 cites)
+- B #9999: [2016] Deep Learning in Bioinformatics  (21 cites)
 - Decision: ___________
 
 **66.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
@@ -1851,8 +1851,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **67.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
-- A #9999: [2023] Noise-induced synaptopathy impacts the long and short sensory hair cells differently in th  (0 cites)
-- B #9999: [2023] Noise-Induced Synaptopathy Impacts the Long and Short Sensory Hair Cells Differently in th  (0 cites)
+- A #9999: [2025] Conservation and diversification of mating behavior patterns among three sibling species i  (1 cites)
+- B #9999: [2025] Conservation and diversification of mating behavior patterns among three sibling species i  (0 cites)
 - Decision: ___________
 
 **68.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
@@ -1861,23 +1861,23 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **69.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
-- A #9999: [2025] Conservation and diversification of mating behavior patterns among three sibling species i  (1 cites)
-- B #9999: [2025] Conservation and diversification of mating behavior patterns among three sibling species i  (0 cites)
+- A #9999: [2022] Descending neuron population dynamics during odor-evoked and spontaneous limb-dependent be  (0 cites)
+- B #1606: [2022] Descending neuron population dynamics during odor-evoked and spontaneous limb-dependent be  (44 cites)
 - Decision: ___________
 
-**70.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `B=preprint`
-- A #9999: [2016] Deep learning in bioinformatics  (1518 cites)
-- B #9999: [2016] Deep Learning in Bioinformatics  (21 cites)
-- Decision: ___________
-
-**71.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
+**70.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
 - A #9999: [2025] RETINA: Reconstruction-based Pre-Trained Enhanced TransUNet for Electron Microscopy Segmen  (0 cites)
 - B #9999: [2025] RETINA: Reconstruction-based pre-trained enhanced TransUNet for electron microscopy segmen  (3 cites)
 - Decision: ___________
 
+**71.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
+- A #9999: [2024] Differential temporal filtering in the fly optic lobe  (0 cites)
+- B #9999: [2025] Differential temporal filtering in the fly optic lobe  (0 cites)
+- Decision: ___________
+
 **72.** conf=0.683 title=1.00 cit=0.33 auth=0.0 `A=preprint`
-- A #9999: [2022] Descending neuron population dynamics during odor-evoked and spontaneous limb-dependent be  (0 cites)
-- B #1606: [2022] Descending neuron population dynamics during odor-evoked and spontaneous limb-dependent be  (44 cites)
+- A #9999: [2023] Noise-induced synaptopathy impacts the long and short sensory hair cells differently in th  (0 cites)
+- B #9999: [2023] Noise-Induced Synaptopathy Impacts the Long and Short Sensory Hair Cells Differently in th  (0 cites)
 - Decision: ___________
 
 **73.** conf=0.683 title=0.99 cit=0.35 auth=0.0 `A=preprint`
@@ -1911,28 +1911,28 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **79.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
-- A #9999: [2022] Presynaptic contact and activity opposingly regulate postsynaptic dendrite outgrowth  (1 cites)
-- B #9999: [2022] Presynaptic contact and activity opposingly regulate postsynaptic dendrite outgrowth  (14 cites)
+- A #9999: [2021] Analysis of Rod/Cone Gap Junctions from the Reconstruction of Mouse Photoreceptor Terminal  (0 cites)
+- B #9999: [2022] Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminal  (29 cites)
 - Decision: ___________
 
 **80.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
-- A #9999: [2022] Flexible specificity of memory in Drosophila depends on a comparison between choices  (0 cites)
-- B #9999: [2023] Flexible specificity of memory in Drosophila depends on a comparison between choices  (5 cites)
-- Decision: ___________
-
-**81.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
 - A #9999: [2024] Prediction of neural activity in connectome-constrained recurrent networks  (2 cites)
 - B #9999: [2025] Prediction of neural activity in connectome-constrained recurrent networks  (3 cites)
 - Decision: ___________
 
-**82.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
+**81.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
 - A #9999: [2024] Daily ultrastructural remodeling of clock neurons  (3 cites)
 - B #9999: [2025] Daily ultrastructural remodeling of clock neurons  (1 cites)
 - Decision: ___________
 
+**82.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
+- A #9999: [2022] Presynaptic contact and activity opposingly regulate postsynaptic dendrite outgrowth  (1 cites)
+- B #9999: [2022] Presynaptic contact and activity opposingly regulate postsynaptic dendrite outgrowth  (14 cites)
+- Decision: ___________
+
 **83.** conf=0.680 title=1.00 cit=0.32 auth=0.0 `A=preprint`
-- A #9999: [2021] Analysis of Rod/Cone Gap Junctions from the Reconstruction of Mouse Photoreceptor Terminal  (0 cites)
-- B #9999: [2022] Analysis of rod/cone gap junctions from the reconstruction of mouse photoreceptor terminal  (29 cites)
+- A #9999: [2022] Flexible specificity of memory in Drosophila depends on a comparison between choices  (0 cites)
+- B #9999: [2023] Flexible specificity of memory in Drosophila depends on a comparison between choices  (5 cites)
 - Decision: ___________
 
 **84.** conf=0.679 title=1.00 cit=0.32 auth=0.0 `A=preprint`
@@ -2001,13 +2001,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **97.** conf=0.675 title=1.00 cit=0.30 auth=0.0 `A=preprint`
-- A #9999: [2022] MoBIE: A Fiji plugin for sharing and exploration of multi-modal cloud-hosted big image dat  (9 cites)
-- B #1364: [2023] MoBIE: a Fiji plugin for sharing and exploration of multi-modal cloud-hosted big image dat  (33 cites)
+- A #9999: [2020] Electron Microscopic Reconstruction of Neural Circuitry in the Cochlea  (3 cites)
+- B #567: [2021] Electron Microscopic Reconstruction of Neural Circuitry in the Cochlea  (73 cites)
 - Decision: ___________
 
 **98.** conf=0.675 title=1.00 cit=0.30 auth=0.0 `A=preprint`
-- A #9999: [2020] Electron Microscopic Reconstruction of Neural Circuitry in the Cochlea  (3 cites)
-- B #567: [2021] Electron Microscopic Reconstruction of Neural Circuitry in the Cochlea  (73 cites)
+- A #9999: [2022] MoBIE: A Fiji plugin for sharing and exploration of multi-modal cloud-hosted big image dat  (9 cites)
+- B #1364: [2023] MoBIE: a Fiji plugin for sharing and exploration of multi-modal cloud-hosted big image dat  (33 cites)
 - Decision: ___________
 
 **99.** conf=0.674 title=0.90 cit=0.43 auth=0.0 `A=preprint`
@@ -2041,13 +2041,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **105.** conf=0.672 title=0.99 cit=0.30 auth=0.0 `A=preprint`
-- A #9999: [2024] Nervous system-wide analysis of all C. elegans cadherins reveals neuron-specific functions  (1 cites)
-- B #9999: [2025] Nervous system–wide analysis of all <i>C. elegans</i> cadherins reveals neuron-specific fu  (9 cites)
+- A #9999: [2018] Developmentally arrested precursors of pontine neurons establish an embryonic blueprint of  (0 cites)
+- B #9999: [2019] Developmentally Arrested Precursors of Pontine Neurons Establish an Embryonic Blueprint of  (44 cites)
 - Decision: ___________
 
 **106.** conf=0.672 title=0.99 cit=0.30 auth=0.0 `A=preprint`
-- A #9999: [2018] Developmentally arrested precursors of pontine neurons establish an embryonic blueprint of  (0 cites)
-- B #9999: [2019] Developmentally Arrested Precursors of Pontine Neurons Establish an Embryonic Blueprint of  (44 cites)
+- A #9999: [2024] Nervous system-wide analysis of all C. elegans cadherins reveals neuron-specific functions  (1 cites)
+- B #9999: [2025] Nervous system–wide analysis of all <i>C. elegans</i> cadherins reveals neuron-specific fu  (9 cites)
 - Decision: ___________
 
 **107.** conf=0.672 title=0.98 cit=0.31 auth=0.0 `A=preprint`
@@ -2115,14 +2115,14 @@ Would enter top 500 if merged: **20**
 - B #1383: [2023] Instance segmentation of mitochondria in electron microscopy images with a generalist deep  (101 cites)
 - Decision: ___________
 
-**120.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `A=preprint`
-- A #9999: [2025] Bridging macroscopic and microscopic modeling of electric field by brain stimulation  (0 cites)
-- B #9999: [2025] Bridging macroscopic and microscopic modeling of electric field by brain stimulation  (7 cites)
+**120.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `B=preprint`
+- A #9999: [2017] Quantifying Mesoscale Neuroanatomy Using X-Ray Microtomography  (99 cites)
+- B #9999: [2016] Quantifying mesoscale neuroanatomy using X-ray microtomography  (0 cites)
 - Decision: ___________
 
 **121.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `A=preprint`
-- A #9999: [2019] Recurrent U-Net for Resource-Constrained Segmentation  (12 cites)
-- B #9999: [2019] Recurrent U-Net for Resource-Constrained Segmentation  (107 cites)
+- A #9999: [2025] Bridging macroscopic and microscopic modeling of electric field by brain stimulation  (0 cites)
+- B #9999: [2025] Bridging macroscopic and microscopic modeling of electric field by brain stimulation  (7 cites)
 - Decision: ___________
 
 **122.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `A=preprint`
@@ -2130,9 +2130,9 @@ Would enter top 500 if merged: **20**
 - B #9999: [2025] Divergent organelle allocation in the evolution of sperm gigantism revealed from subcellul  (1 cites)
 - Decision: ___________
 
-**123.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `B=preprint`
-- A #9999: [2017] Quantifying Mesoscale Neuroanatomy Using X-Ray Microtomography  (99 cites)
-- B #9999: [2016] Quantifying mesoscale neuroanatomy using X-ray microtomography  (0 cites)
+**123.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `A=preprint`
+- A #9999: [2019] Recurrent U-Net for Resource-Constrained Segmentation  (12 cites)
+- B #9999: [2019] Recurrent U-Net for Resource-Constrained Segmentation  (107 cites)
 - Decision: ___________
 
 **124.** conf=0.662 title=1.00 cit=0.25 auth=0.0 `A=preprint`
@@ -2157,12 +2157,12 @@ Would enter top 500 if merged: **20**
 
 **128.** conf=0.660 title=0.99 cit=0.26 auth=0.0 `A=preprint`
 - A #9999: [2024] Inhibitory circuits control leg movements during <i>Drosophila</i> grooming  (1 cites)
-- B #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
 - Decision: ___________
 
 **129.** conf=0.660 title=0.99 cit=0.26 auth=0.0 `A=preprint`
 - A #9999: [2024] Inhibitory circuits control leg movements during <i>Drosophila</i> grooming  (1 cites)
-- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- B #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
 - Decision: ___________
 
 **130.** conf=0.659 title=0.99 cit=0.25 auth=0.0 `A=preprint`
@@ -2250,14 +2250,14 @@ Would enter top 500 if merged: **20**
 - B #9999: [2024] Dendrite architecture determines mitochondrial distribution patterns in vivo  (10 cites)
 - Decision: ___________
 
-**147.** conf=0.642 title=1.00 cit=0.17 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Theory of Morphodynamic Information Processing: Linking Sensing to Behaviour  (1 cites)
-- B #9999: [2025] Theory of morphodynamic information processing: Linking sensing to behaviour  (6 cites)
-- Decision: ___________
-
-**148.** conf=0.642 title=1.00 cit=0.17 auth=0.0 `A=preprint`
+**147.** conf=0.642 title=1.00 cit=0.17 auth=0.0 `A=preprint`
 - A #9999: [2024] The GABAA receptor RDL modulates the auditory sensitivity of malaria mosquitoes.  (4 cites)
 - B #9999: [2025] The GABAA receptor RDL modulates the auditory sensitivity of malaria mosquitoes  (2 cites)
+- Decision: ___________
+
+**148.** conf=0.642 title=1.00 cit=0.17 auth=0.0 `diff_DOIs`
+- A #9999: [2023] Theory of Morphodynamic Information Processing: Linking Sensing to Behaviour  (1 cites)
+- B #9999: [2025] Theory of morphodynamic information processing: Linking sensing to behaviour  (6 cites)
 - Decision: ___________
 
 **149.** conf=0.641 title=0.99 cit=0.18 auth=0.0 `A=preprint`
@@ -2341,133 +2341,133 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **165.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- Decision: ___________
-
-**166.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (0 cites)
-- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (1 cites)
-- Decision: ___________
-
-**167.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- Decision: ___________
-
-**168.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2022] SARS-CoV-2 nucleocapsid protein adheres to replication organelles before viral assembly at  (113 cites)
-- B #9999: [2022] SARS-CoV-2 nucleocapsid protein adheres to replication organelles before viral assembly at  (101 cites)
-- Decision: ___________
-
-**169.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**170.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
-- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
-- Decision: ___________
-
-**171.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**172.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
-- Decision: ___________
-
-**173.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
-- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
-- Decision: ___________
-
-**174.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Are Transformers Truly Foundational for Robotics?  (0 cites)
-- B #9999: [2025] Are transformers truly foundational for robotics?  (3 cites)
-- Decision: ___________
-
-**175.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Social Experience Shapes Fighting Strategies in Drosophila  (0 cites)
 - B #9999: [2025] Social experience shapes fighting strategies in Drosophila  (0 cites)
 - Decision: ___________
 
-**176.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Morphology and ultrastructure of pharyngeal sense organs of Drosophila larvae  (0 cites)
-- B #9999: [2025] Morphology and ultrastructure of pharyngeal sense organs of Drosophila larvae  (0 cites)
-- Decision: ___________
-
-**177.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
-- Decision: ___________
-
-**178.** conf=0.625 title=1.00 cit=0.50 auth=0.0
-- A #9999: [2019] Probabilistic Atlases to Enforce Topological Constraints  (0 cites)
-- B #9999: [2020] Probabilistic Atlases to Enforce Topological Constraints  (5 cites)
-- Decision: ___________
-
-**179.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
-- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
-- Decision: ___________
-
-**180.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
-- Decision: ___________
-
-**181.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- Decision: ___________
-
-**182.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
-- Decision: ___________
-
-**183.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (14 cites)
-- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
-- Decision: ___________
-
-**184.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+**166.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
 - B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
 - Decision: ___________
 
-**185.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2026] A pilot study for whole proteome tagging in C. elegans  (0 cites)
-- B #9999: [2026] A pilot study for whole proteome tagging in C. elegans  (0 cites)
+**167.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
 - Decision: ___________
 
-**186.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+**168.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral cond  (0 cites)
+- B #9999: [2024] Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral cond  (32 cites)
+- Decision: ___________
+
+**169.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2022] Research data management for bioimaging: the 2021 NFDI4BIOIMAGE community survey  (6 cites)
+- B #9999: [2022] Research data management for bioimaging: the 2021 NFDI4BIOIMAGE community survey  (8 cites)
+- Decision: ___________
+
+**170.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
+- B #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
+- Decision: ___________
+
+**171.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (0 cites)
+- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
+- Decision: ___________
+
+**172.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**173.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- Decision: ___________
+
+**174.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2014] Network Identification via Node Knockout  (64 cites)
+- B #9999: [2012] Network Identification via Node Knockout  (65 cites)
+- Decision: ___________
+
+**175.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
 - B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
 - Decision: ___________
 
+**176.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2026] A pilot study for whole proteome tagging in C. elegans  (0 cites)
+- B #9999: [2026] A pilot study for whole proteome tagging in C. elegans  (0 cites)
+- Decision: ___________
+
+**177.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
+- Decision: ___________
+
+**178.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (14 cites)
+- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
+- Decision: ___________
+
+**179.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**180.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Olfactory combinatorial coding supports risk-reward decision making in C. elegans  (0 cites)
+- B #9999: [2025] Olfactory combinatorial coding supports risk-reward decision making in C. elegans  (0 cites)
+- Decision: ___________
+
+**181.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
+- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- Decision: ___________
+
+**182.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- Decision: ___________
+
+**183.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
+- Decision: ___________
+
+**184.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (4 cites)
+- Decision: ___________
+
+**185.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
+- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
+- Decision: ___________
+
+**186.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
+- B #9999: [2025] Spyglass: a framework for reproducible and shareable neuroscience research  (0 cites)
+- Decision: ___________
+
 **187.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
-- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
 - Decision: ___________
 
 **188.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
-- B #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
+- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
 - Decision: ___________
 
 **189.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
-- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
 - Decision: ___________
 
 **190.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2005] Non-participant observation: using video tapes to collect data in nursing research  (108 cites)
-- B #9999: [2005] Non-participant observation: using video tapes to collect data in nursing research  (28 cites)
+- A #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
+- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
 - Decision: ___________
 
 **191.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
@@ -2476,253 +2476,253 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **192.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral cond  (0 cites)
-- B #9999: [2024] Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral cond  (32 cites)
-- Decision: ___________
-
-**193.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
-- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (0 cites)
-- Decision: ___________
-
-**194.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
-- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
-- Decision: ___________
-
-**195.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Neural connectome of the ctenophore statocyst  (3 cites)
-- B #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
-- Decision: ___________
-
-**196.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (0 cites)
-- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
-- Decision: ___________
-
-**197.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- Decision: ___________
-
-**198.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (4 cites)
-- Decision: ___________
-
-**199.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] A comprehensive mechanosensory connectome reveals a somatotopically organized neural circu  (0 cites)
-- B #9999: [2025] A comprehensive mechanosensory connectome reveals a somatotopically organized neural circu  (0 cites)
-- Decision: ___________
-
-**200.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Population parameters of Drosophila larval cooperative foraging.  (0 cites)
-- B #9999: [2024] Population parameters of Drosophila larval cooperative foraging  (5 cites)
-- Decision: ___________
-
-**201.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
-- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
-- Decision: ___________
-
-**202.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2026] Identity and functions of monoaminergic neurons in the predatory nematode Pristionchus pac  (0 cites)
-- B #9999: [2026] Identity and functions of monoaminergic neurons in the predatory nematode Pristionchus pac  (0 cites)
-- Decision: ___________
-
-**203.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2014] Network Identification via Node Knockout  (64 cites)
-- B #9999: [2012] Network Identification via Node Knockout  (65 cites)
-- Decision: ___________
-
-**204.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
-- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
-- Decision: ___________
-
-**205.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- Decision: ___________
-
-**206.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- Decision: ___________
-
-**207.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Statistics of C. elegans turning behavior reveals optimality under biasing constraints  (0 cites)
-- B #9999: [2024] Statistics of C. elegans turning behavior reveals optimality under biasing constraints  (0 cites)
-- Decision: ___________
-
-**208.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
-- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
-- Decision: ___________
-
-**209.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
-- B #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (0 cites)
-- Decision: ___________
-
-**210.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A Connectome of the Male Drosophila Ventral Nerve Cord  (15 cites)
-- B #1040: [2024] A Connectome of the Male Drosophila Ventral Nerve Cord  (53 cites)
-- Decision: ___________
-
-**211.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
-- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
-- Decision: ___________
-
-**212.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2014] NSF Workshop Report: Discovering General Principles of Nervous System Organization by Comp  (54 cites)
-- B #9999: [2014] NSF workshop report: Discovering general principles of nervous system organization by comp  (41 cites)
-- Decision: ___________
-
-**213.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
-- B #9999: [2026] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- Decision: ___________
-
-**214.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
-- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
-- Decision: ___________
-
-**215.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
-- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
-- Decision: ___________
-
-**216.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
-- Decision: ___________
-
-**217.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- Decision: ___________
-
-**218.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2019] Biological Sample Preparation by High-pressure Freezing, Microwave-assisted Contrast Enhan  (17 cites)
-- B #9999: [2019] Biological Sample Preparation by High-pressure Freezing, Microwave-assisted Contrast Enhan  (5 cites)
-- Decision: ___________
-
-**219.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- Decision: ___________
-
-**220.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
-- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
-- Decision: ___________
-
-**221.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Olfactory combinatorial coding supports risk-reward decision making in C. elegans  (0 cites)
-- B #9999: [2025] Olfactory combinatorial coding supports risk-reward decision making in C. elegans  (0 cites)
-- Decision: ___________
-
-**222.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
-- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
-- Decision: ___________
-
-**223.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
-- B #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
-- Decision: ___________
-
-**224.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
-- B #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
-- Decision: ___________
-
-**225.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (4 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- Decision: ___________
-
-**226.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2023] A high-throughput 3D X-ray histology facility for biomedical research and preclinical appl  (4 cites)
-- B #9999: [2023] A high-throughput 3D X-ray histology facility for biomedical research and preclinical appl  (9 cites)
-- Decision: ___________
-
-**227.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (14 cites)
-- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
-- Decision: ___________
-
-**228.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
-- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
-- Decision: ___________
-
-**229.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2022] Research data management for bioimaging: the 2021 NFDI4BIOIMAGE community survey  (6 cites)
-- B #9999: [2022] Research data management for bioimaging: the 2021 NFDI4BIOIMAGE community survey  (8 cites)
-- Decision: ___________
-
-**230.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
-- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
-- Decision: ___________
-
-**231.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2022] Aversive Associative Learning and Memory Formation by Pairing Two Chemicals in &lt;em&gt;C  (1 cites)
-- B #9999: [2022] Aversive Associative Learning and Memory Formation by Pairing Two Chemicals in &lt;em&gt;C  (0 cites)
-- Decision: ___________
-
-**232.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (11 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
-- Decision: ___________
-
-**233.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Homosensory and heterosensory dishabituation engage distinct circuits in Drosophila  (0 cites)
-- B #9999: [2025] Homosensory and heterosensory dishabituation engage distinct circuits in Drosophila  (0 cites)
-- Decision: ___________
-
-**234.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A comprehensive neuroanatomical survey of the Drosophila Lobula Plate Tangential Neurons w  (12 cites)
-- B #9999: [2024] A comprehensive neuroanatomical survey of the Drosophila Lobula Plate Tangential Neurons w  (2 cites)
-- Decision: ___________
-
-**235.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
-- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
-- Decision: ___________
-
-**236.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
-- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
-- Decision: ___________
-
-**237.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
-- B #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
-- Decision: ___________
-
-**238.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
-- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
-- Decision: ___________
-
-**239.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
 - B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
 - Decision: ___________
 
-**240.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+**193.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- Decision: ___________
+
+**194.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A comprehensive neuroanatomical survey of the Drosophila Lobula Plate Tangential Neurons w  (12 cites)
+- B #9999: [2024] A comprehensive neuroanatomical survey of the Drosophila Lobula Plate Tangential Neurons w  (2 cites)
+- Decision: ___________
+
+**195.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Are Transformers Truly Foundational for Robotics?  (0 cites)
+- B #9999: [2025] Are transformers truly foundational for robotics?  (3 cites)
+- Decision: ___________
+
+**196.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2019] Biological Sample Preparation by High-pressure Freezing, Microwave-assisted Contrast Enhan  (17 cites)
+- B #9999: [2019] Biological Sample Preparation by High-pressure Freezing, Microwave-assisted Contrast Enhan  (5 cites)
+- Decision: ___________
+
+**197.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2022] SARS-CoV-2 nucleocapsid protein adheres to replication organelles before viral assembly at  (113 cites)
+- B #9999: [2022] SARS-CoV-2 nucleocapsid protein adheres to replication organelles before viral assembly at  (101 cites)
+- Decision: ___________
+
+**198.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- Decision: ___________
+
+**199.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (14 cites)
+- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
+- Decision: ___________
+
+**200.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Statistics of C. elegans turning behavior reveals optimality under biasing constraints  (0 cites)
+- B #9999: [2024] Statistics of C. elegans turning behavior reveals optimality under biasing constraints  (0 cites)
+- Decision: ___________
+
+**201.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
+- Decision: ___________
+
+**202.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
+- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
+- Decision: ___________
+
+**203.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2022] Aversive Associative Learning and Memory Formation by Pairing Two Chemicals in &lt;em&gt;C  (1 cites)
+- B #9999: [2022] Aversive Associative Learning and Memory Formation by Pairing Two Chemicals in &lt;em&gt;C  (0 cites)
+- Decision: ___________
+
+**204.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2023] A high-throughput 3D X-ray histology facility for biomedical research and preclinical appl  (4 cites)
+- B #9999: [2023] A high-throughput 3D X-ray histology facility for biomedical research and preclinical appl  (9 cites)
+- Decision: ___________
+
+**205.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
+- B #9999: [2025] Selective life-long suppression of an odor processing channel in response to critical peri  (0 cites)
+- Decision: ___________
+
+**206.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
+- Decision: ___________
+
+**207.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
+- B #9999: [2024] Molecular identification of wide-field amacrine cells in mouse retina that encode stimulus  (2 cites)
+- Decision: ___________
+
+**208.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A Connectome of the Male Drosophila Ventral Nerve Cord  (15 cites)
+- B #1040: [2024] A Connectome of the Male Drosophila Ventral Nerve Cord  (53 cites)
+- Decision: ___________
+
+**209.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**210.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
+- Decision: ___________
+
+**211.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2026] Identity and functions of monoaminergic neurons in the predatory nematode Pristionchus pac  (0 cites)
+- B #9999: [2026] Identity and functions of monoaminergic neurons in the predatory nematode Pristionchus pac  (0 cites)
+- Decision: ___________
+
+**212.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
+- Decision: ___________
+
+**213.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (0 cites)
+- B #9999: [2025] Cell type-specific driver lines targeting the Drosophila central complex and their use to   (8 cites)
+- Decision: ___________
+
+**214.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2014] NSF Workshop Report: Discovering General Principles of Nervous System Organization by Comp  (54 cites)
+- B #9999: [2014] NSF workshop report: Discovering general principles of nervous system organization by comp  (41 cites)
+- Decision: ___________
+
+**215.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (1 cites)
+- B #9999: [2025] Emergence of Functional Heart-Brain Circuits in a Vertebrate  (0 cites)
+- Decision: ___________
+
+**216.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- Decision: ___________
+
+**217.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
+- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- Decision: ___________
+
+**218.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
+- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
+- Decision: ___________
+
+**219.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
+- B #9999: [2025] Synaptic density and relative connectivity conservation maintain circuit stability across   (0 cites)
+- Decision: ___________
+
+**220.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
+- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- Decision: ___________
+
+**221.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Homosensory and heterosensory dishabituation engage distinct circuits in Drosophila  (0 cites)
+- B #9999: [2025] Homosensory and heterosensory dishabituation engage distinct circuits in Drosophila  (0 cites)
+- Decision: ___________
+
+**222.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (1 cites)
+- B #9999: [2025] Ultrastructural sublaminar-specific diversity of excitatory synaptic boutons in layer 1 of  (0 cites)
+- Decision: ___________
+
+**223.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (1 cites)
+- B #9999: [2025] Individuality across environmental context in Drosophila melanogaster  (0 cites)
+- Decision: ___________
+
+**224.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2005] Non-participant observation: using video tapes to collect data in nursing research  (108 cites)
+- B #9999: [2005] Non-participant observation: using video tapes to collect data in nursing research  (28 cites)
+- Decision: ___________
+
+**225.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
+- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- Decision: ___________
+
+**226.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Neural connectome of the ctenophore statocyst  (3 cites)
+- B #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
+- Decision: ___________
+
+**227.** conf=0.625 title=1.00 cit=0.50 auth=0.0
+- A #9999: [2019] Probabilistic Atlases to Enforce Topological Constraints  (0 cites)
+- B #9999: [2020] Probabilistic Atlases to Enforce Topological Constraints  (5 cites)
+- Decision: ___________
+
+**228.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (4 cites)
+- B #9999: [2025] A pair of dopaminergic neurons DAN-c1 mediate Drosophila larval aversive olfactory learnin  (0 cites)
+- Decision: ___________
+
+**229.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] A split-GAL4 driver line resource for Drosophila neuron types  (16 cites)
+- B #9999: [2025] A split-GAL4 driver line resource for Drosophila neuron types  (0 cites)
+- Decision: ___________
+
+**230.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Population parameters of Drosophila larval cooperative foraging.  (0 cites)
+- B #9999: [2024] Population parameters of Drosophila larval cooperative foraging  (5 cites)
+- Decision: ___________
+
+**231.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Morphology and ultrastructure of pharyngeal sense organs of Drosophila larvae  (0 cites)
+- B #9999: [2025] Morphology and ultrastructure of pharyngeal sense organs of Drosophila larvae  (0 cites)
+- Decision: ___________
+
+**232.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**233.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
 - A #9999: [2024] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - Decision: ___________
 
+**234.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
+- B #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
+- Decision: ___________
+
+**235.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- Decision: ___________
+
+**236.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (3 cites)
+- B #9999: [2025] Molecular characterization of gustatory second-order neurons reveals integrative mechanism  (0 cites)
+- Decision: ___________
+
+**237.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (0 cites)
+- B #9999: [2025] Heterogeneous responses to embryonic critical period perturbations within the Drosophila l  (1 cites)
+- Decision: ___________
+
+**238.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- B #9999: [2025] Probing the role of synaptic adhesion molecule RTN4RL2 in setting up cochlear connectivity  (0 cites)
+- Decision: ___________
+
+**239.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
+- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- Decision: ___________
+
+**240.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
+- A #9999: [2025] A comprehensive mechanosensory connectome reveals a somatotopically organized neural circu  (0 cites)
+- B #9999: [2025] A comprehensive mechanosensory connectome reveals a somatotopically organized neural circu  (0 cites)
+- Decision: ___________
+
 **241.** conf=0.625 title=1.00 cit=0.50 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Spatial transcriptomics in the adult Drosophila brain and body  (7 cites)
-- B #9999: [2025] Spatial transcriptomics in the adult Drosophila brain and body  (1 cites)
+- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (1 cites)
+- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
 - Decision: ___________
 
 **242.** conf=0.625 title=0.83 cit=0.34 auth=0.0 `A=preprint`
@@ -2762,12 +2762,12 @@ Would enter top 500 if merged: **20**
 
 **249.** conf=0.620 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
-- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
 - Decision: ___________
 
 **250.** conf=0.620 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (4 cites)
+- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
+- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
 - Decision: ___________
 
 **251.** conf=0.620 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
@@ -2776,8 +2776,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **252.** conf=0.620 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
+- A #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (4 cites)
 - Decision: ___________
 
 **253.** conf=0.620 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
@@ -2796,13 +2796,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **256.** conf=0.619 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
-- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (24 cites)
+- A #9999: [2025] Inhibitory columnar feedback neurons are involved in motion processing in Drosophila  (0 cites)
+- B #9999: [2026] Inhibitory columnar feedback neurons are involved in motion processing in Drosophila  (0 cites)
 - Decision: ___________
 
 **257.** conf=0.619 title=1.00 cit=0.48 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Inhibitory columnar feedback neurons are involved in motion processing in Drosophila  (0 cites)
-- B #9999: [2026] Inhibitory columnar feedback neurons are involved in motion processing in Drosophila  (0 cites)
+- A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
+- B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (24 cites)
 - Decision: ___________
 
 **258.** conf=0.619 title=0.43 cit=0.28 auth=1.0 `A=preprint`
@@ -2846,13 +2846,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **266.** conf=0.617 title=1.00 cit=0.47 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (7 cites)
-- B #9999: [2025] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
+- A #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
+- B #9999: [2025] Four individually identified paired dopamine neurons signal taste punishment in larval Dro  (1 cites)
 - Decision: ___________
 
 **267.** conf=0.617 title=1.00 cit=0.47 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
-- B #9999: [2025] Four individually identified paired dopamine neurons signal taste punishment in larval Dro  (1 cites)
+- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (7 cites)
+- B #9999: [2025] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
 - Decision: ___________
 
 **268.** conf=0.617 title=1.00 cit=0.47 auth=0.0 `diff_DOIs`
@@ -2881,13 +2881,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **273.** conf=0.615 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
-- A #9999: [2023] The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila melanogaste  (2 cites)
-- B #9999: [2025] The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila melanogaste  (0 cites)
+- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (6 cites)
+- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
 - Decision: ___________
 
 **274.** conf=0.615 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
 - A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (6 cites)
-- B #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
 - Decision: ___________
 
 **275.** conf=0.615 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
@@ -2896,8 +2896,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **276.** conf=0.615 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (6 cites)
-- B #9999: [2024] Toolkits for detailed and high-throughput interrogation of synapses in C. elegans  (2 cites)
+- A #9999: [2023] The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila melanogaste  (2 cites)
+- B #9999: [2025] The unique synaptic circuitry of specialized olfactory glomeruli in Drosophila melanogaste  (0 cites)
 - Decision: ___________
 
 **277.** conf=0.615 title=1.00 cit=0.46 auth=0.0 `diff_DOIs`
@@ -2926,12 +2926,12 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **282.** conf=0.614 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
+- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
 - B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
 - Decision: ___________
 
 **283.** conf=0.614 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
+- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
 - B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
 - Decision: ___________
 
@@ -2941,23 +2941,23 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **285.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
-- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (5 cites)
-- Decision: ___________
-
-**286.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Driver lines for studying associative learning in Drosophila  (5 cites)
 - B #9999: [2025] Driver lines for studying associative learning in Drosophila  (4 cites)
 - Decision: ___________
 
+**286.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Driver lines for studying associative learning in Drosophila  (11 cites)
+- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (5 cites)
+- Decision: ___________
+
 **287.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Driver lines for studying associative learning in Drosophila  (5 cites)
-- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
+- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
 - Decision: ___________
 
 **288.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Driver lines for studying associative learning in Drosophila  (5 cites)
-- B #9999: [2025] Driver lines for studying associative learning in Drosophila  (0 cites)
+- B #9999: [2024] Driver lines for studying associative learning in Drosophila  (1 cites)
 - Decision: ___________
 
 **289.** conf=0.613 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
@@ -2971,13 +2971,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **291.** conf=0.612 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Exploring neurodevelopment via spatiotemporal collation of anatomical networks with NeuroS  (0 cites)
-- B #9999: [2025] Exploring neurodevelopment via spatiotemporal collation of anatomical networks with NeuroS  (0 cites)
+- A #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
+- B #9999: [2025] Neural substrates of cold nociception in Drosophila larva  (0 cites)
 - Decision: ___________
 
 **292.** conf=0.612 title=1.00 cit=0.45 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
-- B #9999: [2025] Neural substrates of cold nociception in Drosophila larva  (0 cites)
+- A #9999: [2024] Exploring neurodevelopment via spatiotemporal collation of anatomical networks with NeuroS  (0 cites)
+- B #9999: [2025] Exploring neurodevelopment via spatiotemporal collation of anatomical networks with NeuroS  (0 cites)
 - Decision: ___________
 
 **293.** conf=0.611 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
@@ -3001,37 +3001,37 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **297.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
+- A #9999: [2024] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- Decision: ___________
+
+**298.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
 - A #9999: [2024] Morphology and ultrastructure of external sense organs of Drosophila larvae  (3 cites)
 - B #9999: [2025] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
 - Decision: ___________
 
-**298.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Generation of biophysical neuron model parameters from recorded electrophysiological respo  (1 cites)
-- B #9999: [2025] Generation of biophysical neuron model parameters from recorded electrophysiological respo  (0 cites)
-- Decision: ___________
-
 **299.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
-- B #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
-- Decision: ___________
-
-**300.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
-- A #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
-- B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
-- Decision: ___________
-
-**301.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Adjoint propagation of error signal through modular recurrent neural networks for biologic  (0 cites)
-- B #9999: [2026] Adjoint propagation of error signal through modular recurrent neural networks for biologic  (0 cites)
-- Decision: ___________
-
-**302.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
 - A #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (21 cites)
 - B #9999: [2023] Hunger- and thirst-sensing neurons modulate a neuroendocrine network to coordinate sugar a  (0 cites)
 - Decision: ___________
 
+**300.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
+- B #9999: [2025] Four Individually Identified Paired Dopamine Neurons Signal Taste Punishment in Larval Dro  (0 cites)
+- Decision: ___________
+
+**301.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Generation of biophysical neuron model parameters from recorded electrophysiological respo  (1 cites)
+- B #9999: [2025] Generation of biophysical neuron model parameters from recorded electrophysiological respo  (0 cites)
+- Decision: ___________
+
+**302.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Adjoint propagation of error signal through modular recurrent neural networks for biologic  (0 cites)
+- B #9999: [2026] Adjoint propagation of error signal through modular recurrent neural networks for biologic  (0 cites)
+- Decision: ___________
+
 **303.** conf=0.609 title=1.00 cit=0.44 auth=0.0 `diff_DOIs`
-- A #9999: [2024] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
+- A #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - B #9999: [2025] ElectroPhysiomeGAN: Generation of Biophysical Neuron Model Parameters from Recorded Electr  (0 cites)
 - Decision: ___________
 
@@ -3046,8 +3046,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **306.** conf=0.607 title=1.00 cit=0.43 auth=0.0 `diff_DOIs`
-- A #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- A #9999: [2025] Neural connectome of the ctenophore statocyst  (3 cites)
+- B #9999: [2026] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - Decision: ___________
 
 **307.** conf=0.607 title=1.00 cit=0.43 auth=0.0 `diff_DOIs`
@@ -3056,12 +3056,12 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **308.** conf=0.607 title=1.00 cit=0.43 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
-- B #9999: [2026] Neural Connectome of the Ctenophore Statocyst  (0 cites)
+- A #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
 - Decision: ___________
 
 **309.** conf=0.607 title=1.00 cit=0.43 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Neural connectome of the ctenophore statocyst  (3 cites)
+- A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
 - B #9999: [2026] Neural Connectome of the Ctenophore Statocyst  (0 cites)
 - Decision: ___________
 
@@ -3076,17 +3076,17 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **312.** conf=0.606 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
-- B #9999: [2026] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
-- Decision: ___________
-
-**313.** conf=0.606 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Neural substrates of cold nociception in Drosophila larva  (0 cites)
 - B #9999: [2025] Neural substrates of cold nociception in Drosophila larva  (0 cites)
 - Decision: ___________
 
-**314.** conf=0.606 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
+**313.** conf=0.606 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
+- B #9999: [2026] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
+- Decision: ___________
+
+**314.** conf=0.606 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Deep Neural Networks to Register and Annotate Cells in Moving and Deforming Nervous System  (0 cites)
 - B #9999: [2026] Deep neural networks to register and annotate cells in moving and deforming nervous system  (0 cites)
 - Decision: ___________
 
@@ -3106,23 +3106,23 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **318.** conf=0.604 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
-- B #9999: [2024] Morphology and ultrastructure of external sense organs of Drosophila larvae  (3 cites)
+- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
 - Decision: ___________
 
 **319.** conf=0.604 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
-- B #9999: [2025] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
-- Decision: ___________
-
-**320.** conf=0.604 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
 - A #9999: [2023] Brain Size Scaling Through Development in the Whitelined Sphinx Moth (Hyles Lineata) Shows  (0 cites)
 - B #9999: [2024] Brain size scaling through development in the whitelined sphinx moth (Hyles lineata) shows  (3 cites)
 - Decision: ___________
 
+**320.** conf=0.604 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
+- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
+- B #9999: [2025] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
+- Decision: ___________
+
 **321.** conf=0.604 title=1.00 cit=0.42 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
+- A #9999: [2023] Morphology and ultrastructure of external sense organs of Drosophila larvae  (2 cites)
+- B #9999: [2024] Morphology and ultrastructure of external sense organs of Drosophila larvae  (3 cites)
 - Decision: ___________
 
 **322.** conf=0.603 title=1.00 cit=0.41 auth=0.0 `diff_DOIs`
@@ -3176,13 +3176,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **332.** conf=0.598 title=1.00 cit=0.39 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
-- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- A #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
+- B #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
 - Decision: ___________
 
 **333.** conf=0.598 title=1.00 cit=0.39 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
-- B #9999: [2023] Neural substrates of cold nociception in Drosophila larva  (0 cites)
+- A #9999: [2025] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
+- B #9999: [2026] Profiling presynaptic scaffolds using split-GFP reconstitution reveals cell-type-specific   (0 cites)
 - Decision: ___________
 
 **334.** conf=0.598 title=1.00 cit=0.39 auth=0.0 `diff_DOIs`
@@ -3216,43 +3216,43 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **340.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
-- Decision: ___________
-
-**341.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
-- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
-- Decision: ___________
-
-**342.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
-- B #9999: [2026] Neural connectome of the ctenophore statocyst  (0 cites)
-- Decision: ___________
-
-**343.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
 - A #9999: [2025] Neural connectome of the ctenophore statocyst  (3 cites)
 - B #9999: [2026] Neural connectome of the ctenophore statocyst  (0 cites)
 - Decision: ___________
 
-**344.** conf=0.593 title=1.00 cit=0.37 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
-- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+**341.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Neural Connectome of the Ctenophore Statocyst  (1 cites)
+- B #9999: [2026] Neural connectome of the ctenophore statocyst  (0 cites)
 - Decision: ___________
 
-**345.** conf=0.593 title=1.00 cit=0.37 auth=0.0 `diff_DOIs`
+**342.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (3 cites)
+- Decision: ___________
+
+**343.** conf=0.594 title=1.00 cit=0.38 auth=0.0 `diff_DOIs`
+- A #9999: [2024] Mechanism of barotaxis in marine zooplankton  (5 cites)
+- B #9999: [2024] Mechanism of barotaxis in marine zooplankton  (0 cites)
+- Decision: ___________
+
+**344.** conf=0.593 title=1.00 cit=0.37 auth=0.0 `diff_DOIs`
 - A #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
 - B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
 - Decision: ___________
 
+**345.** conf=0.593 title=1.00 cit=0.37 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- B #9999: [2026] Inhibitory circuits control leg movements during Drosophila grooming  (0 cites)
+- Decision: ___________
+
 **346.** conf=0.591 title=1.00 cit=0.36 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (5 cites)
-- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
+- A #9999: [2022] High-throughput segmentation of unmyelinated axons by deep learning  (22 cites)
+- B #9999: [2021] High-throughput segmentation of unmyelinated axons by deep learning  (1 cites)
 - Decision: ___________
 
 **347.** conf=0.591 title=1.00 cit=0.36 auth=0.0 `diff_DOIs`
-- A #9999: [2022] High-throughput segmentation of unmyelinated axons by deep learning  (22 cites)
-- B #9999: [2021] High-throughput segmentation of unmyelinated axons by deep learning  (1 cites)
+- A #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (5 cites)
+- B #9999: [2024] Feedback inhibition by a descending GABAergic neuron regulates timing of escape behavior i  (0 cites)
 - Decision: ___________
 
 **348.** conf=0.591 title=1.00 cit=0.36 auth=0.0 `diff_DOIs`
@@ -3276,13 +3276,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **352.** conf=0.588 title=1.00 cit=0.35 auth=0.0 `diff_DOIs`
-- A #9999: [2024] Reviewer #3 (Public Review): Feedback inhibition by a descending GABAergic neuron regulate  (0 cites)
-- B #9999: [2024] Reviewer #3 (Public Review): Feedback inhibition by a descending GABAergic neuron regulate  (0 cites)
+- A #9999: [2023] Online citizen science with the Zooniverse for analysis of biological volumetric data  (0 cites)
+- B #9999: [2023] Online citizen science with the Zooniverse for analysis of biological volumetric data  (9 cites)
 - Decision: ___________
 
 **353.** conf=0.588 title=1.00 cit=0.35 auth=0.0 `diff_DOIs`
-- A #9999: [2023] Online citizen science with the Zooniverse for analysis of biological volumetric data  (0 cites)
-- B #9999: [2023] Online citizen science with the Zooniverse for analysis of biological volumetric data  (9 cites)
+- A #9999: [2024] Reviewer #3 (Public Review): Feedback inhibition by a descending GABAergic neuron regulate  (0 cites)
+- B #9999: [2024] Reviewer #3 (Public Review): Feedback inhibition by a descending GABAergic neuron regulate  (0 cites)
 - Decision: ___________
 
 **354.** conf=0.586 title=0.43 cit=0.14 auth=1.0 `A=preprint`
@@ -3300,14 +3300,14 @@ Would enter top 500 if merged: **20**
 - B #9999: [2025] Morphology and ultrastructure of pharyngeal sense organs of <i>Drosophila</i> larvae  (0 cites)
 - Decision: ___________
 
-**357.** conf=0.583 title=1.00 cit=0.33 auth=0.0
-- A #9999: [2021] The Difference in Expression of Autophagy-Related Proteins in Lesional and Perilesional Sk  (8 cites)
-- B #9999: [2021] The Difference in Expression of Autophagy-Related Proteins in Lesional and Perilesional Sk  (10 cites)
-- Decision: ___________
-
-**358.** conf=0.583 title=1.00 cit=0.33 auth=0.0 `diff_DOIs`
+**357.** conf=0.583 title=1.00 cit=0.33 auth=0.0 `diff_DOIs`
 - A #62: [1989] Co-planar stereotaxic atlas of the human brain  (7608 cites)
 - B #44: [1988] Co-Planar Stereotaxic Atlas of the Human Brain  (11679 cites)
+- Decision: ___________
+
+**358.** conf=0.583 title=1.00 cit=0.33 auth=0.0
+- A #9999: [2021] The Difference in Expression of Autophagy-Related Proteins in Lesional and Perilesional Sk  (8 cites)
+- B #9999: [2021] The Difference in Expression of Autophagy-Related Proteins in Lesional and Perilesional Sk  (10 cites)
 - Decision: ___________
 
 **359.** conf=0.582 title=0.91 cit=0.06 auth=0.0 `B=preprint`
@@ -3447,12 +3447,12 @@ Would enter top 500 if merged: **20**
 
 **386.** conf=0.538 title=0.85 cit=0.36 auth=0.0 `diff_DOIs`
 - A #9999: [2024] A neurotransmitter atlas of the nervous system of C. elegans males and hermaphrodites  (3 cites)
-- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
+- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
 - Decision: ___________
 
 **387.** conf=0.538 title=0.85 cit=0.36 auth=0.0 `diff_DOIs`
 - A #9999: [2024] A neurotransmitter atlas of the nervous system of C. elegans males and hermaphrodites  (3 cites)
-- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (20 cites)
+- B #9999: [2024] A neurotransmitter atlas of C. elegans males and hermaphrodites  (2 cites)
 - Decision: ___________
 
 **388.** conf=0.537 title=0.82 cit=0.40 auth=1.0 `diff_DOIs`
@@ -3486,13 +3486,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **394.** conf=0.531 title=1.00 cit=0.12 auth=0.0 `diff_DOIs`
-- A #832: [2019] A Cellular-Resolution Atlas of the Larval Zebrafish Brain  (283 cites)
-- B #9999: [2018] A Cellular-Resolution Atlas of the Larval Zebrafish Brain  (12 cites)
+- A #9999: [2020] Viv: Multiscale Visualization of High-Resolution Multiplexed Bioimaging Data on the Web  (14 cites)
+- B #1416: [2022] Viv: multiscale visualization of high-resolution multiplexed bioimaging data on the web  (62 cites)
 - Decision: ___________
 
 **395.** conf=0.531 title=1.00 cit=0.12 auth=0.0 `diff_DOIs`
-- A #9999: [2020] Viv: Multiscale Visualization of High-Resolution Multiplexed Bioimaging Data on the Web  (14 cites)
-- B #1416: [2022] Viv: multiscale visualization of high-resolution multiplexed bioimaging data on the web  (62 cites)
+- A #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
+- B #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
 - Decision: ___________
 
 **396.** conf=0.531 title=1.00 cit=0.12 auth=0.0 `diff_DOIs`
@@ -3501,8 +3501,8 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **397.** conf=0.531 title=1.00 cit=0.12 auth=0.0 `diff_DOIs`
-- A #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
-- B #9999: [2025] A three-dimensional immunofluorescence atlas of the brain of the hackled-orb weaver spider  (0 cites)
+- A #832: [2019] A Cellular-Resolution Atlas of the Larval Zebrafish Brain  (283 cites)
+- B #9999: [2018] A Cellular-Resolution Atlas of the Larval Zebrafish Brain  (12 cites)
 - Decision: ___________
 
 **398.** conf=0.531 title=0.32 cit=0.07 auth=1.0 `A=preprint`
@@ -3666,13 +3666,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **430.** conf=0.509 title=0.31 cit=0.00 auth=1.0 `B=preprint`
-- A #1623: [2017] The fundamental advantages of temporal networks  (491 cites)
-- B #345: [2019] Automated Reconstruction of a Serial-Section EM <i>Drosophila</i> Brain with Flood-Filling  (70 cites)
+- A #1714: [2020] The effect of network thresholding and weighting on structural brain networks in the UK Bi  (129 cites)
+- B #956: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (19 cites)
 - Decision: ___________
 
 **431.** conf=0.509 title=0.31 cit=0.00 auth=1.0 `B=preprint`
-- A #1714: [2020] The effect of network thresholding and weighting on structural brain networks in the UK Bi  (129 cites)
-- B #956: [2021] Oligodendrocyte precursor cells prune axons in the mouse neocortex  (19 cites)
+- A #1623: [2017] The fundamental advantages of temporal networks  (491 cites)
+- B #345: [2019] Automated Reconstruction of a Serial-Section EM <i>Drosophila</i> Brain with Flood-Filling  (70 cites)
 - Decision: ___________
 
 **432.** conf=0.509 title=0.42 cit=0.25 auth=1.0 `diff_DOIs`
@@ -4522,14 +4522,14 @@ Would enter top 500 if merged: **20**
 - B #353: [2020] Neural circuit mechanisms of sexual receptivity in Drosophila females  (170 cites)
 - Decision: ___________
 
-**158.** conf=0.417 title=0.44 cit=0.06 auth=0.0 `diff_DOIs`
-- A #9999: [2025] Volume Electron Microscopy: Imaging Principles, Computational Advances and Applications in  (0 cites)
-- B #9999: [2025] Volume Electron Microscopy of Cortical Organoids: Methods for Region Identification, Conne  (0 cites)
-- Decision: ___________
-
-**159.** conf=0.417 title=0.33 cit=0.20 auth=1.0 `B=preprint`
+**158.** conf=0.417 title=0.33 cit=0.20 auth=1.0 `B=preprint`
 - A #890: [1997] Akt Phosphorylation of BAD Couples Survival Signals to the Cell-Intrinsic Death Machinery  (5689 cites)
 - B #1346: [1999] Cellular survival: a play in three Akts  (4218 cites)
+- Decision: ___________
+
+**159.** conf=0.417 title=0.44 cit=0.06 auth=0.0 `diff_DOIs`
+- A #9999: [2025] Volume Electron Microscopy: Imaging Principles, Computational Advances and Applications in  (0 cites)
+- B #9999: [2025] Volume Electron Microscopy of Cortical Organoids: Methods for Region Identification, Conne  (0 cites)
 - Decision: ___________
 
 **160.** conf=0.417 title=0.12 cit=0.30 auth=1.0 `diff_DOIs`
@@ -4643,13 +4643,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **182.** conf=0.412 title=0.32 cit=0.00 auth=1.0 `diff_DOIs`
-- A #822: [2020] Structural basis for the recognition of SARS-CoV-2 by full-length human ACE2  (5569 cites)
-- B #155: [2020] Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types  (346 cites)
+- A #1845: [2003] Experiments and theory in strain gradient elasticity  (2964 cites)
+- B #1204: [2003] Pulmonary Toxicity of Single-Wall Carbon Nanotubes in Mice 7 and 90 Days After Intratrache  (1988 cites)
 - Decision: ___________
 
 **183.** conf=0.412 title=0.32 cit=0.00 auth=1.0 `diff_DOIs`
-- A #1845: [2003] Experiments and theory in strain gradient elasticity  (2964 cites)
-- B #1204: [2003] Pulmonary Toxicity of Single-Wall Carbon Nanotubes in Mice 7 and 90 Days After Intratrache  (1988 cites)
+- A #822: [2020] Structural basis for the recognition of SARS-CoV-2 by full-length human ACE2  (5569 cites)
+- B #155: [2020] Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types  (346 cites)
 - Decision: ___________
 
 **184.** conf=0.412 title=0.32 cit=0.00 auth=1.0 `diff_DOIs`
@@ -4758,13 +4758,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **205.** conf=0.408 title=0.31 cit=0.00 auth=1.0 `diff_DOIs`
-- A #137: [2021] Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel <i>in situ  (63 cites)
-- B #1332: [2021] Connectomic features underlying diverse synaptic connection strengths and subcellular comp  (40 cites)
+- A #749: [2015] Deep Learning Face Attributes in the Wild  (7549 cites)
+- B #524: [2016] Control principles of complex systems  (667 cites)
 - Decision: ___________
 
 **206.** conf=0.408 title=0.31 cit=0.00 auth=1.0 `diff_DOIs`
-- A #749: [2015] Deep Learning Face Attributes in the Wild  (7549 cites)
-- B #524: [2016] Control principles of complex systems  (667 cites)
+- A #137: [2021] Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel <i>in situ  (63 cites)
+- B #1332: [2021] Connectomic features underlying diverse synaptic connection strengths and subcellular comp  (40 cites)
 - Decision: ___________
 
 **207.** conf=0.408 title=0.53 cit=0.29 auth=0.0 `diff_DOIs`
@@ -4908,13 +4908,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **235.** conf=0.402 title=0.29 cit=0.00 auth=1.0 `diff_DOIs`
-- A #1492: [2017] Nanoscale imaging of clinical specimens using pathology-optimized expansion microscopy  (239 cites)
-- B #1619: [2018] NeuTu: Software for Collaborative, Large-Scale, Segmentation-Based Connectome Reconstructi  (58 cites)
+- A #1799: [2014] Aggregation and morphology control enables multiple cases of high-efficiency polymer solar  (3077 cites)
+- B #266: [2016] Inflammasome-activated gasdermin D causes pyroptosis by forming membrane pores  (3105 cites)
 - Decision: ___________
 
 **236.** conf=0.402 title=0.29 cit=0.00 auth=1.0 `diff_DOIs`
-- A #1799: [2014] Aggregation and morphology control enables multiple cases of high-efficiency polymer solar  (3077 cites)
-- B #266: [2016] Inflammasome-activated gasdermin D causes pyroptosis by forming membrane pores  (3105 cites)
+- A #1492: [2017] Nanoscale imaging of clinical specimens using pathology-optimized expansion microscopy  (239 cites)
+- B #1619: [2018] NeuTu: Software for Collaborative, Large-Scale, Segmentation-Based Connectome Reconstructi  (58 cites)
 - Decision: ___________
 
 **237.** conf=0.401 title=0.58 cit=0.20 auth=0.0 `diff_DOIs`
@@ -4943,13 +4943,13 @@ Would enter top 500 if merged: **20**
 - Decision: ___________
 
 **242.** conf=0.400 title=0.29 cit=0.00 auth=1.0 `diff_DOIs`
-- A #1482: [2013] Structural and Functional Brain Networks: From Connections to Cognition  (2124 cites)
-- B #1706: [2014] Excitatory Synaptic Inputs to Mouse On-Off Direction-Selective Retinal Ganglion Cells Lack  (84 cites)
+- A #1224: [2021] SLC45A4 promotes glycolysis and prevents AMPK/ULK1‐induced autophagy in TP53 mutant pancre  (18 cites)
+- B #1588: [2021] Three-dimensional residual channel attention networks denoise and sharpen fluorescence mic  (207 cites)
 - Decision: ___________
 
 **243.** conf=0.400 title=0.29 cit=0.00 auth=1.0 `diff_DOIs`
-- A #1224: [2021] SLC45A4 promotes glycolysis and prevents AMPK/ULK1‐induced autophagy in TP53 mutant pancre  (18 cites)
-- B #1588: [2021] Three-dimensional residual channel attention networks denoise and sharpen fluorescence mic  (207 cites)
+- A #1482: [2013] Structural and Functional Brain Networks: From Connections to Cognition  (2124 cites)
+- B #1706: [2014] Excitatory Synaptic Inputs to Mouse On-Off Direction-Selective Retinal Ganglion Cells Lack  (84 cites)
 - Decision: ___________
 
 ## Papers That Would Enter Top 500 If Merged (20)
@@ -4975,3 +4975,133 @@ Would enter top 500 if merged: **20**
 - #668 → ~#481 | **Autophagy and microbial pathogenesis** (81+14 cites)
 - #621 → ~#378 | **MotionCor2: anisotropic correction of beam-induced motion for improved** (8716+52 cites)
 
+
+---
+
+# Part 2: Author Name Disambiguation
+
+Five signals: name similarity, first-name compatibility, co-author overlap,
+citation neighborhood overlap, and shared-paper flag.
+
+| Signal | Weight | What it catches |
+| --- | --- | --- |
+| Name string similarity | 0.25 | Obvious name variants |
+| First name/initial match | 0.20 | 'J. Friedman' = 'Jerome H. Friedman' |
+| Co-author Jaccard | 0.25 | Same collaborators → same person |
+| Citation neighborhood | 0.15 | Same research topic |
+| No shared paper | 0.15 | Co-authors on same paper → different people |
+
+| Category | Count |
+| --- | --- |
+| SAME_PERSON | 10 |
+| LIKELY_SAME | 111 |
+| REVIEW | 814 |
+| DIFFERENT_PEOPLE | 45 |
+
+## SAME_PERSON — merge these
+
+- ★ **Nicole Neubarth** (1p) = **Nicole N. Neubarth** (1p) | conf=0.797 coauth=0.60 refs=0.46 | 2 in top 500
+  - Decision: ___________
+- ★ **Ingrid Andrade** (4p) = **Ingrid V Andrade** (1p) | conf=0.763 coauth=0.33 refs=0.64 | 3 in top 500
+  - Decision: ___________
+- ★ **Fabian C. Roth** (1p) = **Fabian Roth** (1p) | conf=0.746 coauth=0.60 refs=0.18 | 2 in top 500
+  - Decision: ___________
+- ★ **J. Friedman** (1p) = **Jerome H. Friedman** (1p) | conf=0.730 coauth=1.00 refs=0.00 | 2 in top 500
+  - Decision: ___________
+- ★ **Caitlyn A. Bishop** (1p) = **Caitlyn Bishop** (2p) | conf=0.727 coauth=0.33 refs=0.45 | 2 in top 500
+  - Decision: ___________
+- **Zhang J. Chen** (3p) = **Zhang Chen** (1p) | conf=0.695 coauth=0.29 refs=0.37 | 0 in top 500
+  - Decision: ___________
+- ★ **Gregory S. Couch** (1p) = **Greg S. Couch** (1p) | conf=0.681 coauth=0.60 refs=0.11 | 1 in top 500
+  - Decision: ___________
+- **Ji-Youn Seo** (1p) = **Ji‐Youn Seo** (1p) | conf=0.678 coauth=0.60 refs=0.00 | 0 in top 500
+  - Decision: ___________
+- **Fan Yang** (1p) = **Fujun Yang** (1p) | conf=0.672 coauth=0.75 refs=0.00 | 0 in top 500
+  - Decision: ___________
+- ★ **Leighton H. Duncan** (1p) = **Leighton H Duncan** (1p) | conf=0.651 coauth=0.00 refs=0.39 | 1 in top 500
+  - Decision: ___________
+
+## LIKELY_SAME — quick human check
+
+- ★ **Mark W. Moyle** (1p) ≈ **Mark W Moyle** (1p) | conf=0.648 coauth=0.00 refs=0.39
+  - Decision: ___________
+- ★ **Agnes L. Bodor** (1p) ≈ **Agnes L Bodor** (1p) | conf=0.641 coauth=0.14 refs=0.10
+  - Decision: ___________
+- ★ **Evan R Daugharthy** (1p) ≈ **Evan R. Daugharthy** (1p) | conf=0.633 coauth=0.14 refs=0.03
+  - Decision: ___________
+- **Der‐Fen Suen** (1p) ≈ **Der-Fen Suen** (1p) | conf=0.629 coauth=0.40 refs=0.00
+  - Decision: ___________
+- ★ **Lukas C Kapitein** (1p) ≈ **Lukas C. Kapitein** (1p) | conf=0.627 coauth=0.00 refs=0.23
+  - Decision: ___________
+- ★ **Ross D. Markello** (6p) ≈ **Ross D Markello** (1p) | conf=0.614 coauth=0.00 refs=0.14
+  - Decision: ___________
+- ★ **Ben Fulcher** (4p) ≈ **Ben D Fulcher** (1p) | conf=0.610 coauth=0.06 refs=0.11
+  - Decision: ___________
+- ★ **M. P. Young** (1p) ≈ **MP Young** (1p) | conf=0.601 coauth=0.00 refs=0.67
+  - Decision: ___________
+- ★ **Joshua T. Vogelstein** (1p) ≈ **Joshua T Vogelstein** (3p) | conf=0.594 coauth=0.00 refs=0.00
+  - Decision: ___________
+- ★ **Patricia K. Rivlin** (2p) ≈ **Patricia Rivlin** (1p) | conf=0.592 coauth=0.00 refs=0.10
+  - Decision: ___________
+- ★ **Albert-Ĺaszló Barabási** (12p) ≈ **Albert-László Barabási** (1p) | conf=0.588 coauth=0.17 refs=0.04
+  - Decision: ___________
+- ★ **Steven L. Petersen** (1p) ≈ **Steven E. Petersen** (5p) | conf=0.586 coauth=0.00 refs=0.00
+  - Decision: ___________
+- **Robert G. Smith** (1p) ≈ **Robert E. Smith** (2p) | conf=0.583 coauth=0.00 refs=0.00
+  - Decision: ___________
+- **M. P. Schmidt** (1p) ≈ **Martin Schmidt** (2p) | conf=0.582 coauth=0.40 refs=0.17
+  - Decision: ___________
+- ★ **Albert-László Barabási** (1p) ≈ **A.-L. Barabási** (1p) | conf=0.577 coauth=0.00 refs=0.80
+  - Decision: ___________
+- ★ **Stephen J Smith** (4p) ≈ **Stephen M. Smith** (15p) | conf=0.576 coauth=0.00 refs=0.00
+  - Decision: ___________
+- **G M Edelman** (1p) ≈ **Gerald M. Edelman** (1p) | conf=0.570 coauth=0.33 refs=0.00
+  - Decision: ___________
+- **Søren T. Christensen** (1p) ≈ **Søren Rahn Christensen** (1p) | conf=0.562 coauth=0.00 refs=0.00
+  - Decision: ___________
+- ★ **Satoshi Ogawa** (1p) ≈ **Shotaro Ogawa** (1p) | conf=0.561 coauth=0.17 refs=0.50
+  - Decision: ___________
+- **Jielin Xu** (1p) ≈ **Jingli Xu** (1p) | conf=0.559 coauth=0.00 refs=0.50
+  - Decision: ___________
+- ★ **Hawoong Jeong** (2p) ≈ **H. Jeong** (1p) | conf=0.557 coauth=0.00 refs=0.67
+  - Decision: ___________
+- ★ **Josh Morgan** (4p) ≈ **Joshua Morgan** (1p) | conf=0.556 coauth=0.08 refs=0.12
+  - Decision: ___________
+- ★ **Giulio Tononi** (2p) ≈ **G Tononi** (1p) | conf=0.554 coauth=0.25 refs=0.07
+  - Decision: ___________
+- ★ **JK Stevens** (1p) ≈ **John K. Stevens** (1p) | conf=0.552 coauth=0.25 refs=0.00
+  - Decision: ___________
+- **Xinan Zhang** (1p) ≈ **Xi Zhang** (1p) | conf=0.551 coauth=0.00 refs=0.33
+  - Decision: ___________
+- ★ **Jack W. Scannell** (2p) ≈ **JW Scannell** (1p) | conf=0.550 coauth=0.00 refs=0.38
+  - Decision: ___________
+- ★ **Albert Cardona** (12p) ≈ **Alberto Cardona** (1p) | conf=0.547 coauth=0.00 refs=0.10
+  - Decision: ___________
+- **Luke E. Brezovec** (2p) ≈ **Bella E. Brezovec** (1p) | conf=0.547 coauth=0.57 refs=0.38
+  - Decision: ___________
+- **Yuanhua Li** (1p) ≈ **Yuan Li** (1p) | conf=0.546 coauth=0.00 refs=0.33
+  - Decision: ___________
+- ★ **Michael Newman** (1p) ≈ **Michelle G. Newman** (1p) | conf=0.545 coauth=0.00 refs=0.35
+  - Decision: ___________
+
+... and 81 more (see author_dedup_review.tsv)
+
+## DIFFERENT_PEOPLE — do NOT merge
+
+- ** Zamin Iqbal ** ≠ ** Zamin Iqbal** (share 1 paper(s))
+- **Salman Khan** ≠ **Sher Afzal Khan** (share 1 paper(s))
+- **Mahaly Baptiste** ≠ **Maya R. Baptiste** (share 1 paper(s))
+- **C Baigent** ≠ **Colin Baigent** (share 1 paper(s))
+- **Fengting Huang** ≠ **Jing Huang** (share 1 paper(s))
+- **Weina Wang** ≠ **Zhenshan Wang** (share 1 paper(s))
+- **Jianzhong Cui** ≠ **Ying Cui** (share 1 paper(s))
+- **Qiang Wang** ≠ **Pinchun Wang** (share 1 paper(s))
+- **Fei Jiang** ≠ **Yong Jiang** (share 1 paper(s))
+- **Changmeng Cui** ≠ **Jianzhong Cui** (share 1 paper(s))
+- **Pengcheng Zhou** ≠ **Ding Zhou** (share 1 paper(s))
+- **Xin‐Ying Lin** ≠ **Yuanyuan Lin** (share 1 paper(s))
+- **Zhiyuan Xu** ≠ **Handong Xu** (share 1 paper(s))
+- **Shan Wang** ≠ **Ziming Wang** (share 1 paper(s))
+- **Qiang Wang** ≠ **Yajie Wang** (share 1 paper(s))
+
+... and 30 more

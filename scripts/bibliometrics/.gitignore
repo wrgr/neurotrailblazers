@@ -11,7 +11,6 @@ output/corpus_merged.json
 output/graphs/coupling_graph.json
 output/graphs/coauthorship_graph.json
 output/graphs/cocitation_graph.json
-output/graphs/citation_graph.json
 
 # Python bytecode
 __pycache__/

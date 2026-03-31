@@ -151,7 +151,27 @@ def save_graph(graph, filename):
     graphs_dir = OUTPUT_DIR / "graphs"
     graphs_dir.mkdir(parents=True, exist_ok=True)
     path = graphs_dir / filename
-    data = json_graph.node_link_data(graph)
+
+    # Manual conversion to ensure edges are included (node_link_data has bugs)
+    nodes_list = []
+    for node_id, attrs in graph.nodes(data=True):
+        node = {"id": node_id}
+        node.update(attrs)
+        nodes_list.append(node)
+
+    links_list = []
+    for source, target, attrs in graph.edges(data=True):
+        link = {"source": source, "target": target}
+        link.update(attrs)
+        links_list.append(link)
+
+    data = {
+        "directed": graph.is_directed(),
+        "multigraph": graph.is_multigraph(),
+        "nodes": nodes_list,
+        "links": links_list
+    }
+
     with open(path, "w") as f:
         json.dump(data, f, indent=2, default=str)
     print(f"  Saved to {path}")

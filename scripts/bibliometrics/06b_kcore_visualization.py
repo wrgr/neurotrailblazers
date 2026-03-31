@@ -30,6 +30,11 @@ def create_kcore_visualization():
     print("Loading citation graph...")
     with open(OUT / "graphs" / "citation_graph.json") as f:
         graph_data = json.load(f)
+
+    # Handle both "links" (D3 format) and "edges" (NetworkX format)
+    if "links" in graph_data and "edges" not in graph_data:
+        graph_data["edges"] = graph_data.pop("links")
+
     graph = json_graph.node_link_graph(graph_data, directed=True)
 
     print("Loading enriched reading list with k-core data...")

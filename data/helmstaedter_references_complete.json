@@ -6,9 +6,8 @@
     "title":"A critique of pure learning and what artificial neural networks can learn from animal brains",
     "journal":"Nat. Commun.",
     "volume":"10",
-    "doi":"10.1038\/s41467-019-11786-6",
-    "id":"Zador2019",
-    "citation":"Zador, A. M. (2019). A critique of pure learning and what artificial neural networks can learn from animal brains. Nat. Commun. 10. DOI: 10.1038\/s41467-019-11786-6"
+    "doi":"10.1038/s41467-019-11786-6",
+    "id":"Zador2019"
   },
   {
     "type":"JOUR",
@@ -17,9 +16,8 @@
     "title":"Brain-wide mapping reveals that engrams for a single memory are distributed across multiple brain regions",
     "journal":"Nat. Commun.",
     "volume":"13",
-    "doi":"10.1038\/s41467-022-29384-4",
-    "id":"Roy2022",
-    "citation":"Roy, D. S. (2022). Brain-wide mapping reveals that engrams for a single memory are distributed across multiple brain regions. Nat. Commun. 13. DOI: 10.1038\/s41467-022-29384-4"
+    "doi":"10.1038/s41467-022-29384-4",
+    "id":"Roy2022"
   },
   {
     "type":"JOUR",
@@ -28,9 +26,8 @@
     "title":"Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure",
     "journal":"PLoS Biol.",
     "volume":"2",
-    "doi":"10.1371\/journal.pbio.0020329",
-    "id":"Denk2004",
-    "citation":"Denk, W.; Horstmann, H. (2004). Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. PLoS Biol. 2. DOI: 10.1371\/journal.pbio.0020329"
+    "doi":"10.1371/journal.pbio.0020329",
+    "id":"Denk2004"
   },
   {
     "type":"JOUR",
@@ -39,9 +36,8 @@
     "title":"The big and the small: challenges of imaging the brain's circuits",
     "journal":"Science",
     "volume":"334",
-    "doi":"10.1126\/science.1209168",
-    "id":"Lichtman2011",
-    "citation":"Lichtman, J. W.; Denk, W. (2011). The big and the small: challenges of imaging the brain's circuits. Science 334. DOI: 10.1126\/science.1209168"
+    "doi":"10.1126/science.1209168",
+    "id":"Lichtman2011"
   },
   {
     "type":"JOUR",
@@ -50,9 +46,8 @@
     "title":"3D structural imaging of the brain with photons and electrons",
     "journal":"Curr. Opin. Neurobiol.",
     "volume":"18",
-    "doi":"10.1016\/j.conb.2009.03.005",
-    "id":"Helmstaedter2008",
-    "citation":"Helmstaedter, M.; Briggman, K. L.; Denk, W. (2008). 3D structural imaging of the brain with photons and electrons. Curr. Opin. Neurobiol. 18. DOI: 10.1016\/j.conb.2009.03.005"
+    "doi":"10.1016/j.conb.2009.03.005",
+    "id":"Helmstaedter2008"
   },
   {
     "type":"JOUR",
@@ -61,9 +56,8 @@
     "title":"Towards neural circuit reconstruction with volume electron microscopy techniques",
     "journal":"Curr. Opin. Neurobiol.",
     "volume":"16",
-    "doi":"10.1016\/j.conb.2006.08.010",
-    "id":"Briggman2006",
-    "citation":"Briggman, K. L.; Denk, W. (2006). Towards neural circuit reconstruction with volume electron microscopy techniques. Curr. Opin. Neurobiol. 16. DOI: 10.1016\/j.conb.2006.08.010"
+    "doi":"10.1016/j.conb.2006.08.010",
+    "id":"Briggman2006"
   },
   {
     "type":"JOUR",
@@ -72,8 +66,137 @@
     "title":"The human connectome: a structural description of the human brain",
     "journal":"PLoS Comput. Biol.",
     "volume":"1",
-    "doi":"10.1371\/journal.pcbi.0010042",
-    "id":"Sporns2005",
-    "citation":"Sporns, O.; Tononi, G.; Kotter, R. (2005). The human connectome: a structural description of the human brain. PLoS Comput. Biol. 1. DOI: 10.1371\/journal.pcbi.0010042"
+    "doi":"10.1371/journal.pcbi.0010042",
+    "id":"Sporns2005"
+  },
+  {
+    "type":"STD",
+    "authors":"",
+    "year":"",
+    "title":"Sievers, M. et al. Connectomic reconstruction of a cortical column. Preprint at bioRxiv https://doi.org/10.1101/2024.03.22.586254 (2024).",
+    "journal":"",
+    "volume":"",
+    "doi":"10.1101/2024.03.22.586254",
+    "id":"ref8"
+  },
+  {
+    "type":"JOUR",
+    "authors":"",
+    "year":"2025",
+    "title":"Functional connectomics spanning multiple areas of mouse visual cortex",
+    "journal":"Nature",
+    "volume":"640",
+    "doi":"10.1038/s41586-025-08790-w",
+    "id":"ref9"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Loomba, S.",
+    "year":"2022",
+    "title":"Connectomic comparison of mouse and human cortex",
+    "journal":"Science",
+    "volume":"377",
+    "doi":"10.1126/science.abo0924",
+    "id":"Loomba2022"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Shapson-Coe, A.",
+    "year":"2024",
+    "title":"A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution",
+    "journal":"Science",
+    "volume":"384",
+    "doi":"10.1126/science.adk4858",
+    "id":"Shapson-Coe2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Winding, M.",
+    "year":"2023",
+    "title":"The connectome of an insect brain",
+    "journal":"Science",
+    "volume":"379",
+    "doi":"10.1126/science.add9330",
+    "id":"Winding2023"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Zheng, Z.",
+    "year":"2018",
+    "title":"A complete electron microscopy volume of the brain of adult Drosophila melanogaster",
+    "journal":"Cell",
+    "volume":"174",
+    "doi":"10.1016/j.cell.2018.06.019",
+    "id":"Zheng2018"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Dorkenwald, S.",
+    "year":"2024",
+    "title":"Neuronal wiring diagram of an adult brain",
+    "journal":"Nature",
+    "volume":"634",
+    "doi":"10.1038/s41586-024-07558-y",
+    "id":"Dorkenwald2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Schlegel, P.",
+    "year":"2024",
+    "title":"Whole-brain annotation and multi-connectome cell typing of Drosophila",
+    "journal":"Nature",
+    "volume":"634",
+    "doi":"10.1038/s41586-024-07686-5",
+    "id":"Schlegel2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Schmidt, M.; Motta, A.; Sievers, M.; Helmstaedter, M.",
+    "year":"2024",
+    "title":"RoboEM: automated 3D flight tracing for synaptic-resolution connectomics",
+    "journal":"Nat. Methods",
+    "volume":"21",
+    "doi":"10.1038/s41592-024-02226-5",
+    "id":"Schmidt2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Celii, B.",
+    "year":"2025",
+    "title":"NEURD offers automated proofreading and feature extraction for connectomics",
+    "journal":"Nature",
+    "volume":"640",
+    "doi":"10.1038/s41586-025-08660-5",
+    "id":"Celii2025"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Treidel, L. A.",
+    "year":"2024",
+    "title":"Insect flight: state of the field and future directions",
+    "journal":"Integr. Comp. Biol.",
+    "volume":"64",
+    "doi":"10.1093/icb/icae106",
+    "id":"Treidel2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Furutachi, S.; Franklin, A. D.; Aldea, A. M.; Mrsic-Flogel, T. D.; Hofer, S. B.",
+    "year":"2024",
+    "title":"Cooperative thalamocortical circuit mechanism for sensory prediction errors",
+    "journal":"Nature",
+    "volume":"633",
+    "doi":"10.1038/s41586-024-07851-w",
+    "id":"Furutachi2024"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Chen, S.",
+    "year":"2024",
+    "title":"Brain-wide neural activity underlying memory-guided movement",
+    "journal":"Cell",
+    "volume":"187",
+    "doi":"10.1016/j.cell.2023.12.035",
+    "id":"Chen2024"
   }
 ]

@@ -162,6 +162,25 @@ def compute_paper_graph_metrics(citation_graph):
     return metrics
 
 
+def get_author_position_weight(position, alpha=2.0):
+    """
+    Get weight multiplier for author based on position.
+
+    Args:
+        position: "first", "last", "middle", or "only"
+        alpha: weight multiplier for first/last authors (default 2.0)
+
+    Returns:
+        Weight multiplier (float)
+    """
+    if position in ("first", "last"):
+        return alpha
+    elif position == "only":
+        return 1.0  # Single author, normal weight
+    else:  # "middle"
+        return 1.0
+
+
 def compute_author_metrics(coauthorship_graph, corpus, paper_metrics):
     """
     Compute author-level metrics from co-authorship graph and paper metrics.
@@ -214,6 +233,105 @@ def compute_author_metrics(coauthorship_graph, corpus, paper_metrics):
             "paper_count": len(papers),
             "recent_paper_count": len(recent_papers),
             "total_pagerank": total_pagerank,
+        }
+
+    return metrics
+
+
+def compute_author_metrics_weighted(coauthorship_graph, corpus, paper_metrics,
+                                   first_author_weight=2.0, last_author_weight=2.0):
+    """
+    Compute weighted author metrics where first/last authors get higher contribution credit.
+
+    Args:
+        coauthorship_graph: co-authorship network
+        corpus: list of papers with author_positions metadata
+        paper_metrics: dict of paper metrics by openalex_id
+        first_author_weight: multiplier for first authors (default 2.0)
+        last_author_weight: multiplier for last authors (default 2.0)
+
+    Returns:
+        Dict of author metrics with weighted contributions
+    """
+    metrics = {}
+
+    print("  Computing weighted co-authorship centrality...")
+    if coauthorship_graph.number_of_nodes() > 0:
+        degree = dict(coauthorship_graph.degree(weight="weight"))
+        if coauthorship_graph.number_of_nodes() > 2000:
+            betweenness = nx.betweenness_centrality(
+                coauthorship_graph, weight="weight", k=500
+            )
+        else:
+            betweenness = nx.betweenness_centrality(coauthorship_graph, weight="weight")
+        try:
+            eigenvector = nx.eigenvector_centrality(
+                coauthorship_graph, weight="weight", max_iter=500
+            )
+        except (nx.PowerIterationFailedConvergence, nx.NetworkXError):
+            eigenvector = {n: 0 for n in coauthorship_graph}
+    else:
+        degree = betweenness = eigenvector = {}
+
+    # Build author → papers mapping with position data
+    author_papers = defaultdict(list)
+    for paper in corpus:
+        positions = {ap["id"]: ap["position"] for ap in paper.get("author_positions", [])}
+        for author in paper.get("authors", []):
+            aid = author.get("id")
+            if aid:
+                position = positions.get(aid, "middle")
+                author_papers[aid].append((paper, position))
+
+    for aid in coauthorship_graph.nodes():
+        papers_with_pos = author_papers.get(aid, [])
+
+        # Count papers by position
+        first_author_papers = [p for p, pos in papers_with_pos if pos == "first"]
+        last_author_papers = [p for p, pos in papers_with_pos if pos == "last"]
+        middle_author_papers = [p for p, pos in papers_with_pos if pos == "middle"]
+        only_author_papers = [p for p, pos in papers_with_pos if pos == "only"]
+
+        # Recent papers (by position)
+        recent_papers_all = [p for p, pos in papers_with_pos if (p.get("year") or 0) >= 2022]
+
+        # Weighted PageRank contribution
+        total_pagerank_weighted = 0.0
+        for paper, position in papers_with_pos:
+            paper_pr = paper_metrics.get(paper["openalex_id"], {}).get("pagerank", 0)
+            if position == "first":
+                weight = first_author_weight
+            elif position == "last":
+                weight = last_author_weight
+            else:
+                weight = 1.0
+
+            # Distribute paper's PageRank by weight
+            num_authors = len(paper.get("authors", []))
+            if num_authors > 0:
+                # Each author gets their weighted share of the paper's PageRank
+                total_weight = sum(
+                    (first_author_weight if pos == "first" else
+                     last_author_weight if pos == "last" else 1.0)
+                    for pos in paper.get("author_positions", [{}])
+                )
+                if total_weight == 0:
+                    total_weight = 1.0
+                share = (weight / total_weight) * paper_pr
+                total_pagerank_weighted += share
+
+        metrics[aid] = {
+            "name": coauthorship_graph.nodes[aid].get("name", ""),
+            "weighted_degree": degree.get(aid, 0),
+            "betweenness": betweenness.get(aid, 0),
+            "eigenvector": eigenvector.get(aid, 0),
+            "paper_count": len(papers_with_pos),
+            "first_author_count": len(first_author_papers),
+            "last_author_count": len(last_author_papers),
+            "middle_author_count": len(middle_author_papers),
+            "only_author_count": len(only_author_papers),
+            "recent_paper_count": len(recent_papers_all),
+            "total_pagerank_weighted": total_pagerank_weighted,
         }
 
     return metrics
@@ -341,6 +459,34 @@ def rank_authors(author_metrics):
     return results
 
 
+def rank_authors_weighted(author_metrics, first_weight=2.0, last_weight=2.0):
+    """Composite author ranking with position-weighted contributions."""
+    results = list(author_metrics.values())
+
+    if results:
+        max_pr_w = max(r.get("total_pagerank_weighted", 0) for r in results) or 1
+        max_bt = max(r.get("betweenness", 0) for r in results) or 1
+        max_deg = max(r.get("weighted_degree", 0) for r in results) or 1
+
+        for r in results:
+            # Higher weight for first/last authorship
+            first_last_ratio = (
+                (r.get("first_author_count", 0) + r.get("last_author_count", 0)) /
+                max(r.get("paper_count", 1), 1)
+            ) if r.get("paper_count", 0) > 0 else 0
+
+            r["composite_score_weighted"] = (
+                0.40 * (r.get("total_pagerank_weighted", 0) / max_pr_w) +  # Higher weight on PageRank
+                0.20 * (r.get("betweenness", 0) / max_bt) +
+                0.15 * (r.get("weighted_degree", 0) / max_deg) +
+                0.15 * (r.get("recent_paper_count", 0) / max(r.get("paper_count", 1), 1)) +
+                0.10 * first_last_ratio  # Bonus for being first/last author
+            )
+
+    results.sort(key=lambda x: x.get("composite_score_weighted", 0), reverse=True)
+    return results
+
+
 def save_json(data, filename):
     path = OUTPUT_DIR / filename
     with open(path, "w") as f:
@@ -393,6 +539,20 @@ def main():
     print(f"  Top 5 authors:")
     for a in author_rankings[:5]:
         print(f"    [{a['composite_score']:.3f}] {a['name']} ({a['paper_count']} papers)")
+
+    # Weighted author rankings (position-based)
+    print("\n--- Weighted Author Rankings (position-weighted, alpha=2.0) ---")
+    author_metrics_weighted = compute_author_metrics_weighted(
+        coauthorship_graph, corpus, paper_metrics,
+        first_author_weight=2.0, last_author_weight=2.0
+    )
+    author_rankings_weighted = rank_authors_weighted(author_metrics_weighted, first_weight=2.0, last_weight=2.0)
+    save_json(author_rankings_weighted[:1000], "author_rankings_weighted.json")
+    print(f"  Top 5 authors (weighted):")
+    for a in author_rankings_weighted[:5]:
+        print(f"    [{a['composite_score_weighted']:.3f}] {a['name']} "
+              f"({a['paper_count']} papers: {a.get('first_author_count', 0)} first, "
+              f"{a.get('last_author_count', 0)} last, {a.get('middle_author_count', 0)} middle)")
 
     # Corpus stats
     print("\n--- Corpus Stats ---")

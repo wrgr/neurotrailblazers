@@ -32,6 +32,44 @@ def load_corpus():
         return json.load(f)
 
 
+def enrich_corpus_with_author_positions(corpus):
+    """
+    Enrich corpus with author position metadata for weighted contribution analysis.
+
+    Adds "author_positions" to each paper with position info for each author:
+    - "first": first author (position 0)
+    - "last": last author (position -1)
+    - "middle": any other position
+    - "only": single author paper
+    """
+    for paper in corpus:
+        authors = paper.get("authors", [])
+        num_authors = len(authors)
+
+        if num_authors == 0:
+            paper["author_positions"] = []
+        elif num_authors == 1:
+            paper["author_positions"] = [{"id": authors[0].get("id"), "position": "only"}]
+        else:
+            positions = []
+            for i, author in enumerate(authors):
+                if i == 0:
+                    position = "first"
+                elif i == num_authors - 1:
+                    position = "last"
+                else:
+                    position = "middle"
+                positions.append({
+                    "id": author.get("id"),
+                    "name": author.get("name"),
+                    "position": position
+                })
+            paper["author_positions"] = positions
+
+    return corpus
+
+
+
 def build_citation_graph(corpus):
     """
     Build directed citation graph.
@@ -181,6 +219,14 @@ def main():
     print("Loading corpus...")
     corpus = load_corpus()
     print(f"  {len(corpus)} papers")
+
+    print("\nEnriching corpus with author position metadata...")
+    corpus = enrich_corpus_with_author_positions(corpus)
+    # Save enriched corpus for use in metrics computation
+    enriched_path = OUTPUT_DIR / "corpus_merged.json"
+    with open(enriched_path, "w") as f:
+        json.dump(corpus, f, indent=2, default=str)
+    print(f"  Saved enriched corpus to {enriched_path}")
 
     print("\nBuilding citation graph...")
     cg = build_citation_graph(corpus)

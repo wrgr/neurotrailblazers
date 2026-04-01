@@ -20,32 +20,40 @@ class DOIExtractor:
         """Extract all DOIs and associated metadata from reference text."""
         references = []
 
-        # Split into individual references
-        # References are typically separated by blank lines or by author pattern
-        lines = text.strip().split('\n')
+        # Split by DOI pattern - each reference has exactly one DOI
+        # Find all DOI patterns and extract surrounding text
+        doi_pattern = r'10\.\d{4,}/[^\s\)]+(?:\))?'
 
-        current_ref_lines = []
+        # Find all matches with positions
+        import re
+        matches = list(re.finditer(doi_pattern, text))
 
-        for line in lines:
-            line = line.strip()
+        if not matches:
+            return references
 
-            if not line:
-                # Blank line - process accumulated reference
-                if current_ref_lines:
-                    ref_text = ' '.join(current_ref_lines)
-                    parsed = self._parse_reference(ref_text)
-                    if parsed:
-                        references.append(parsed)
-                    current_ref_lines = []
-            else:
-                current_ref_lines.append(line)
+        for i, match in enumerate(matches):
+            doi = match.group(0).rstrip(')')
+            start_pos = match.start()
 
-        # Don't forget last reference
-        if current_ref_lines:
-            ref_text = ' '.join(current_ref_lines)
-            parsed = self._parse_reference(ref_text)
-            if parsed:
-                references.append(parsed)
+            # Find the start of this reference
+            # Go back to find author name (capital letter after punctuation)
+            ref_start = max(0, start_pos - 300)
+            ref_text_part = text[ref_start:match.end()]
+
+            # Extract author
+            author_match = re.search(r'([A-Z][a-z]+(?:,|\s+[A-Z]\.)?)', ref_text_part)
+            author = author_match.group(1) if author_match else 'Unknown'
+
+            # Extract year
+            year_match = re.search(r'\((\d{4})\)', ref_text_part)
+            year = year_match.group(1) if year_match else None
+
+            references.append({
+                'doi': doi,
+                'author': author.strip(),
+                'year': year,
+                'full_text': ref_text_part.strip()
+            })
 
         return references
 

@@ -1,0 +1,79 @@
+[
+    {
+    "type":"JOUR",
+    "authors":"Zador, A. M.",
+    "year":"2019",
+    "title":"A critique of pure learning and what artificial neural networks can learn from animal brains",
+    "journal":"Nat. Commun.",
+    "volume":"10",
+    "doi":"10.1038\/s41467-019-11786-6",
+    "id":"Zador2019",
+    "citation":"Zador, A. M. (2019). A critique of pure learning and what artificial neural networks can learn from animal brains. Nat. Commun. 10. DOI: 10.1038\/s41467-019-11786-6"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Roy, D. S.",
+    "year":"2022",
+    "title":"Brain-wide mapping reveals that engrams for a single memory are distributed across multiple brain regions",
+    "journal":"Nat. Commun.",
+    "volume":"13",
+    "doi":"10.1038\/s41467-022-29384-4",
+    "id":"Roy2022",
+    "citation":"Roy, D. S. (2022). Brain-wide mapping reveals that engrams for a single memory are distributed across multiple brain regions. Nat. Commun. 13. DOI: 10.1038\/s41467-022-29384-4"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Denk, W.; Horstmann, H.",
+    "year":"2004",
+    "title":"Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure",
+    "journal":"PLoS Biol.",
+    "volume":"2",
+    "doi":"10.1371\/journal.pbio.0020329",
+    "id":"Denk2004",
+    "citation":"Denk, W.; Horstmann, H. (2004). Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. PLoS Biol. 2. DOI: 10.1371\/journal.pbio.0020329"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Lichtman, J. W.; Denk, W.",
+    "year":"2011",
+    "title":"The big and the small: challenges of imaging the brain's circuits",
+    "journal":"Science",
+    "volume":"334",
+    "doi":"10.1126\/science.1209168",
+    "id":"Lichtman2011",
+    "citation":"Lichtman, J. W.; Denk, W. (2011). The big and the small: challenges of imaging the brain's circuits. Science 334. DOI: 10.1126\/science.1209168"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Helmstaedter, M.; Briggman, K. L.; Denk, W.",
+    "year":"2008",
+    "title":"3D structural imaging of the brain with photons and electrons",
+    "journal":"Curr. Opin. Neurobiol.",
+    "volume":"18",
+    "doi":"10.1016\/j.conb.2009.03.005",
+    "id":"Helmstaedter2008",
+    "citation":"Helmstaedter, M.; Briggman, K. L.; Denk, W. (2008). 3D structural imaging of the brain with photons and electrons. Curr. Opin. Neurobiol. 18. DOI: 10.1016\/j.conb.2009.03.005"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Briggman, K. L.; Denk, W.",
+    "year":"2006",
+    "title":"Towards neural circuit reconstruction with volume electron microscopy techniques",
+    "journal":"Curr. Opin. Neurobiol.",
+    "volume":"16",
+    "doi":"10.1016\/j.conb.2006.08.010",
+    "id":"Briggman2006",
+    "citation":"Briggman, K. L.; Denk, W. (2006). Towards neural circuit reconstruction with volume electron microscopy techniques. Curr. Opin. Neurobiol. 16. DOI: 10.1016\/j.conb.2006.08.010"
+  },
+  {
+    "type":"JOUR",
+    "authors":"Sporns, O.; Tononi, G.; Kotter, R.",
+    "year":"2005",
+    "title":"The human connectome: a structural description of the human brain",
+    "journal":"PLoS Comput. Biol.",
+    "volume":"1",
+    "doi":"10.1371\/journal.pcbi.0010042",
+    "id":"Sporns2005",
+    "citation":"Sporns, O.; Tononi, G.; Kotter, R. (2005). The human connectome: a structural description of the human brain. PLoS Comput. Biol. 1. DOI: 10.1371\/journal.pcbi.0010042"
+  }
+]

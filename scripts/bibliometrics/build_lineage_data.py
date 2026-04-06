@@ -2,24 +2,51 @@
 """
 Build citation lineage data for ancestry visualization.
 
-Processes corpus_kcore_25.json to create:
-1. Nodes with generation/level info
-2. Links based on actual citation relationships
-3. Topological sort respecting citation dependencies
+Loads papers from one of three sources (in priority order):
+1. Pre-built lineage_data.json from connectome-kb (copy directly)
+2. corpus_canonical.json from connectome-kb (filter tier=="included", recompute)
+3. Legacy corpus_kcore_25.json (backward compatibility)
 
 Output: assets/analysis/lineage_data.json
 """
 import json
+import shutil
 from pathlib import Path
 from collections import defaultdict, deque
 
-OUTPUT_DIR = Path("output")
-ASSETS_DIR = Path("../../assets/analysis")
+from config import KB_OUTPUTS_PATH, OUTPUT_DIR, ASSETS_DIR
+
 
 def load_corpus():
-    """Load core papers with citation data."""
-    with open(OUTPUT_DIR / "corpus_kcore_25.json") as f:
+    """
+    Load core papers with citation data.
+
+    Returns dict of {openalex_id: paper}, or None if pre-built lineage
+    was copied directly from KB (no recompute needed).
+    """
+    # Tier 1: KB already built lineage_data.json — copy and skip recompute
+    kb_lineage = KB_OUTPUTS_PATH / "lineage_data.json"
+    if kb_lineage.exists():
+        ASSETS_DIR.mkdir(parents=True, exist_ok=True)
+        out = ASSETS_DIR / "lineage_data.json"
+        shutil.copy(kb_lineage, out)
+        print(f"  Copied pre-built lineage from KB: {kb_lineage}")
+        return None
+
+    # Tier 2: KB corpus_canonical.json — load and filter by tier
+    kb_corpus = KB_OUTPUTS_PATH / "corpus_canonical.json"
+    if kb_corpus.exists():
+        with open(kb_corpus) as f:
+            all_papers = json.load(f)
+        papers = [p for p in all_papers if p.get("tier") == "included"]
+        print(f"  Loaded {len(papers)} included papers from KB corpus_canonical.json")
+        return {p["openalex_id"]: p for p in papers}
+
+    # Tier 3: Legacy fallback
+    legacy = OUTPUT_DIR / "corpus_kcore_25.json"
+    with open(legacy) as f:
         papers = json.load(f)
+    print(f"  Loaded {len(papers)} papers from legacy corpus_kcore_25.json")
     return {p['openalex_id']: p for p in papers}
 
 def build_citation_graph(papers):
@@ -149,7 +176,13 @@ def build_lineage_data(papers, graph, in_degree, out_degree, generations):
 def main():
     print("Loading corpus...")
     papers = load_corpus()
-    print(f"  Loaded {len(papers)} core papers (k ≥ 25)")
+
+    # If load_corpus returned None, lineage was already copied from KB
+    if papers is None:
+        print("Done (used pre-built KB lineage).")
+        return
+
+    print(f"  {len(papers)} papers loaded")
 
     print("Building citation graph...")
     graph, in_degree, out_degree = build_citation_graph(papers)
@@ -172,7 +205,7 @@ def main():
         'metadata': {
             'total_papers': len(nodes),
             'total_citations': len(links),
-            'generation_count': max(generations.values()) + 1,
+            'generation_count': max(generations.values()) + 1 if generations else 0,
             'year_range': [
                 min(p['year'] for p in papers.values()),
                 max(p['year'] for p in papers.values()),
@@ -181,6 +214,7 @@ def main():
     }
 
     # Save to assets directory for use in visualization
+    ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     output_path = ASSETS_DIR / "lineage_data.json"
     print(f"\nSaving to {output_path}...")
     with open(output_path, 'w') as f:

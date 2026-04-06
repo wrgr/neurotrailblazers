@@ -7,6 +7,7 @@ Change these and re-run — the pipeline reuses cached API responses.
 Scope: Nanoscale / synaptic-resolution connectomics (EM, barcoding, ExM, X-ray).
 Excludes macro-connectomics (dMRI/fMRI) unless bridging to nanoscale.
 """
+import os
 from pathlib import Path
 
 # ── Paths ──────────────────────────────────────────────────────────────
@@ -15,7 +16,15 @@ REPO_ROOT = BASE_DIR.parent.parent
 SEED_PAPERS_DIR = REPO_ROOT / "_data" / "expert_seed_papers"
 JOURNAL_PAPERS_YML = REPO_ROOT / "_data" / "journal_papers.yml"
 CACHE_DIR = BASE_DIR / "cache"
-OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR = BASE_DIR / "outputs"
+GRAPHS_DIR = OUTPUT_DIR / "graphs"
+ASSETS_DIR = REPO_ROOT / "assets" / "analysis"
+
+# Path to connectome-kb website exports (set via env var or default to sibling repo)
+KB_OUTPUTS_PATH = Path(os.environ.get(
+    "KB_OUTPUTS_PATH",
+    str(REPO_ROOT.parent / "connectome-kb" / "outputs" / "website"),
+))
 
 # ── OpenAlex API ───────────────────────────────────────────────────────
 OPENALEX_BASE = "https://api.openalex.org"

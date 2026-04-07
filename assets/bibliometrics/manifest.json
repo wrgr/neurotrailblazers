@@ -1,0 +1,61 @@
+{
+  "generated_at_utc": "2026-04-07T16:23:28.967749+00:00",
+  "source": "connectome-kb/src/compute_viz_metrics.py",
+  "files": [
+    {
+      "path": "author_rankings.json",
+      "exists": true,
+      "size_bytes": 1629725
+    },
+    {
+      "path": "communities.json",
+      "exists": true,
+      "size_bytes": 29764
+    },
+    {
+      "path": "corpus_canonical.json",
+      "exists": true,
+      "size_bytes": 7627406
+    },
+    {
+      "path": "graphs/citation_graph.json",
+      "exists": true,
+      "size_bytes": 10911891
+    },
+    {
+      "path": "graphs/coauthorship_graph.json",
+      "exists": true,
+      "size_bytes": 451764
+    },
+    {
+      "path": "graphs/cocitation_graph.json",
+      "exists": true,
+      "size_bytes": 103378100
+    },
+    {
+      "path": "graphs/coupling_graph.json",
+      "exists": true,
+      "size_bytes": 103378100
+    },
+    {
+      "path": "lineage_data.json",
+      "exists": true,
+      "size_bytes": 434070
+    },
+    {
+      "path": "paper_rankings.json",
+      "exists": true,
+      "size_bytes": 5850775
+    },
+    {
+      "path": "strategic_audit.json",
+      "exists": true,
+      "size_bytes": 114887
+    },
+    {
+      "path": "strategic_audit.md",
+      "exists": true,
+      "size_bytes": 47807
+    }
+  ]
+}

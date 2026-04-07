@@ -1,0 +1,3578 @@
+{
+  "metadata": {
+    "top_200_size": 200,
+    "top_500_size": 500,
+    "tail_size": 300,
+    "indegree_non_top500_p95_threshold": 29,
+    "tail_inner_core_threshold": 24
+  },
+  "A_holdout_in_corpus_ranked_low": [
+    {
+      "category": "biology",
+      "title": "Comparative connectomics reveals noncanonical wiring for color vision in human foveal retina",
+      "doi": "10.1073/pnas.2300545120",
+      "openalex_id": "https://openalex.org/W4366981297",
+      "rank": 1977,
+      "notes": "comparative retina biology"
+    }
+  ],
+  "A_holdout_missing_from_corpus": [
+    {
+      "category": "analysis",
+      "title": "The connectome predicts resting state functional connectivity across the Drosophila brain",
+      "doi": "10.1016/j.cub.2021.09.064",
+      "notes": "connectome-enabled analysis"
+    },
+    {
+      "category": "analysis",
+      "title": "Hierarchical communities in the larval Drosophila connectome",
+      "doi": "10.1038/s41593-024-01716-8",
+      "notes": "community structure analysis"
+    },
+    {
+      "category": "analysis",
+      "title": "Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster",
+      "doi": "10.1038/s41586-024-07432-x",
+      "notes": "EM + synaptic classification"
+    }
+  ],
+  "A_holdout_recovered_top500": [
+    {
+      "category": "tooling",
+      "title": "neuPrint: An open access tool for EM connectomics",
+      "doi": "10.3389/fninf.2022.896292",
+      "openalex_id": "https://openalex.org/W4286208813",
+      "rank": 17,
+      "notes": "clearly in-scope EM connectomics tooling"
+    },
+    {
+      "category": "annotation",
+      "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+      "doi": "10.1038/s41586-024-07686-5",
+      "openalex_id": "https://openalex.org/W4403062913",
+      "rank": 11,
+      "notes": "downstream annotation/cell typing"
+    },
+    {
+      "category": "analysis",
+      "title": "Network statistics of the whole-brain connectome of Drosophila",
+      "doi": "10.1038/s41586-024-07968-y",
+      "openalex_id": "https://openalex.org/W4403062850",
+      "rank": 32,
+      "notes": "network analysis; good preprint->journal merge case"
+    },
+    {
+      "category": "biology",
+      "title": "Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory and Hygrosensory Neurons in the Adult Drosophila Brain",
+      "doi": "10.1016/j.cub.2020.06.028",
+      "openalex_id": "https://openalex.org/W3038575087",
+      "rank": 48,
+      "notes": "downstream biology"
+    },
+    {
+      "category": "analysis",
+      "title": "The rich club of the C. elegans neuronal connectome",
+      "doi": "10.1523/JNEUROSCI.3784-12.2013",
+      "openalex_id": "https://openalex.org/W2015334431",
+      "rank": 371,
+      "notes": "worm network analysis"
+    },
+    {
+      "category": "biology",
+      "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+      "doi": "10.1038/nature09818",
+      "openalex_id": "https://openalex.org/W1977691361",
+      "rank": 232,
+      "notes": "retinal connectomics biology"
+    }
+  ],
+  "B_high_indegree_omissions": [
+    {
+      "rank": 894,
+      "in_degree": 263,
+      "total_citations": 30680,
+      "domain": "unknown",
+      "year": 1974,
+      "title": "THE GENETICS OF <i>CAENORHABDITIS ELEGANS</i>",
+      "openalex_id": "https://openalex.org/W1944127002"
+    },
+    {
+      "rank": 891,
+      "in_degree": 259,
+      "total_citations": 85618,
+      "domain": "network_science",
+      "year": 1998,
+      "title": "Collective dynamics of \u2018small-world\u2019 networks",
+      "openalex_id": "https://openalex.org/W2112090702"
+    },
+    {
+      "rank": 545,
+      "in_degree": 144,
+      "total_citations": 72200,
+      "domain": "unknown",
+      "year": 1999,
+      "title": "Emergence of Scaling in Random Networks",
+      "openalex_id": "https://openalex.org/W2008620264"
+    },
+    {
+      "rank": 530,
+      "in_degree": 106,
+      "total_citations": 1092,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "Eight different types of dopaminergic neurons innervate the Drosophila mushroom body neuropil: anatomical and physiological heterogeneity",
+      "openalex_id": "https://openalex.org/W1966282260"
+    },
+    {
+      "rank": 524,
+      "in_degree": 95,
+      "total_citations": 1554,
+      "domain": "unknown",
+      "year": 2015,
+      "title": "Neural dynamics for landmark orientation and angular path integration",
+      "openalex_id": "https://openalex.org/W1503270516"
+    },
+    {
+      "rank": 987,
+      "in_degree": 92,
+      "total_citations": 362,
+      "domain": "unknown",
+      "year": 2006,
+      "title": "Automating the Collection of Ultrathin Serial Sections for Large Volume TEM Reconstructions",
+      "openalex_id": "https://openalex.org/W2153191810"
+    },
+    {
+      "rank": 516,
+      "in_degree": 86,
+      "total_citations": 3249,
+      "domain": "neuroscience",
+      "year": 1989,
+      "title": "Dendritic spines of CA 1 pyramidal cells in the rat hippocampus: serial electron microscopy with reference to their biophysical characteristics",
+      "openalex_id": "https://openalex.org/W2117664079"
+    },
+    {
+      "rank": 534,
+      "in_degree": 86,
+      "total_citations": 1612,
+      "domain": "em_connectomics",
+      "year": 1975,
+      "title": "Electron microscopical reconstruction of the anterior sensory anatomy of the nematode <i>caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2006130293"
+    },
+    {
+      "rank": 999,
+      "in_degree": 80,
+      "total_citations": 2416,
+      "domain": "unknown",
+      "year": 1998,
+      "title": "Cortex: Statistics and Geometry of Neuronal Connectivity",
+      "openalex_id": "https://openalex.org/W1603661052"
+    },
+    {
+      "rank": 562,
+      "in_degree": 79,
+      "total_citations": 722,
+      "domain": "neuroscience",
+      "year": 2005,
+      "title": "Punishment Prediction by Dopaminergic Neurons in Drosophila",
+      "openalex_id": "https://openalex.org/W2045783185"
+    },
+    {
+      "rank": 719,
+      "in_degree": 78,
+      "total_citations": 14972,
+      "domain": "methods_ml",
+      "year": 2016,
+      "title": "3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation",
+      "openalex_id": "https://openalex.org/W2464708700"
+    },
+    {
+      "rank": 508,
+      "in_degree": 77,
+      "total_citations": 1110,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "Dense, Unspecific Connectivity of Neocortical Parvalbumin-Positive Interneurons: A Canonical Microcircuit for Inhibition?",
+      "openalex_id": "https://openalex.org/W2014350866"
+    },
+    {
+      "rank": 531,
+      "in_degree": 77,
+      "total_citations": 350,
+      "domain": "methods_ml",
+      "year": 2017,
+      "title": "Multicut brings automated neurite segmentation closer to human performance",
+      "openalex_id": "https://openalex.org/W2584383026"
+    },
+    {
+      "rank": 640,
+      "in_degree": 75,
+      "total_citations": 540,
+      "domain": "unknown",
+      "year": 2018,
+      "title": "Genetic Reagents for Making Split-GAL4 Lines in <i>Drosophila</i>",
+      "openalex_id": "https://openalex.org/W2765915208"
+    },
+    {
+      "rank": 599,
+      "in_degree": 73,
+      "total_citations": 15228,
+      "domain": "network_science",
+      "year": 2001,
+      "title": "Efficient Behavior of Small-World Networks",
+      "openalex_id": "https://openalex.org/W2060464767"
+    },
+    {
+      "rank": 543,
+      "in_degree": 72,
+      "total_citations": 921,
+      "domain": "neuroscience",
+      "year": 2017,
+      "title": "Do the right thing: neural network mechanisms of memory formation, expression and update in Drosophila",
+      "openalex_id": "https://openalex.org/W2774719659"
+    },
+    {
+      "rank": 544,
+      "in_degree": 66,
+      "total_citations": 544,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Sweet Taste and Nutrient Value Subdivide Rewarding Dopaminergic Neurons in Drosophila",
+      "openalex_id": "https://openalex.org/W2034840220"
+    },
+    {
+      "rank": 505,
+      "in_degree": 63,
+      "total_citations": 1124,
+      "domain": "neuroscience",
+      "year": 1999,
+      "title": "The Fundamental Role of Pirouettes in<i>Caenorhabditis elegans</i>Chemotaxis",
+      "openalex_id": "https://openalex.org/W2143604818"
+    },
+    {
+      "rank": 511,
+      "in_degree": 62,
+      "total_citations": 363,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Conserved neural circuit structure across Drosophila larval development revealed by comparative connectomics",
+      "openalex_id": "https://openalex.org/W2951641862"
+    },
+    {
+      "rank": 597,
+      "in_degree": 62,
+      "total_citations": 5289,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "The connectomics of brain disorders",
+      "openalex_id": "https://openalex.org/W2014022174"
+    },
+    {
+      "rank": 502,
+      "in_degree": 61,
+      "total_citations": 332,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "Synaptic transmission parallels neuromodulation in a central food-intake circuit",
+      "openalex_id": "https://openalex.org/W2952723908"
+    },
+    {
+      "rank": 603,
+      "in_degree": 61,
+      "total_citations": 2962,
+      "domain": "unknown",
+      "year": 2010,
+      "title": "Three groups of interneurons account for nearly 100% of neocortical GABAergic neurons",
+      "openalex_id": "https://openalex.org/W1970719523"
+    },
+    {
+      "rank": 556,
+      "in_degree": 60,
+      "total_citations": 1158,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "Whole-brain activity mapping onto a zebrafish brain atlas",
+      "openalex_id": "https://openalex.org/W2277956273"
+    },
+    {
+      "rank": 602,
+      "in_degree": 60,
+      "total_citations": 672,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "Cellular diversity in the Drosophila midbrain revealed by single-cell transcriptomics",
+      "openalex_id": "https://openalex.org/W2783612008"
+    },
+    {
+      "rank": 659,
+      "in_degree": 60,
+      "total_citations": 474,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "GABAergic Neurons Are Less Selective to Stimulus Orientation than Excitatory Neurons in Layer II/III of Visual Cortex, as Revealed by<i>In Vivo</i>Functional Ca<sup>2+</sup>Imaging in Transgenic Mice",
+      "openalex_id": "https://openalex.org/W2028616747"
+    },
+    {
+      "rank": 520,
+      "in_degree": 59,
+      "total_citations": 558,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "A spike-timing mechanism for action selection",
+      "openalex_id": "https://openalex.org/W1977675569"
+    },
+    {
+      "rank": 512,
+      "in_degree": 58,
+      "total_citations": 860,
+      "domain": "unknown",
+      "year": 2015,
+      "title": "Whole-brain calcium imaging with cellular resolution in freely behaving <i>Caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2220010338"
+    },
+    {
+      "rank": 542,
+      "in_degree": 58,
+      "total_citations": 358,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Reward signal in a recurrent circuit drives appetitive long-term memory formation",
+      "openalex_id": "https://openalex.org/W2179301060"
+    },
+    {
+      "rank": 563,
+      "in_degree": 58,
+      "total_citations": 468,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "Neural correlates of water reward in thirsty Drosophila",
+      "openalex_id": "https://openalex.org/W2026297218"
+    },
+    {
+      "rank": 624,
+      "in_degree": 58,
+      "total_citations": 590,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "Reinforcement signalling in Drosophila; dopamine does it all after all",
+      "openalex_id": "https://openalex.org/W2072920560"
+    },
+    {
+      "rank": 631,
+      "in_degree": 58,
+      "total_citations": 3548,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "How Inhibition Shapes Cortical Activity",
+      "openalex_id": "https://openalex.org/W1997953085"
+    },
+    {
+      "rank": 655,
+      "in_degree": 58,
+      "total_citations": 872,
+      "domain": "em_connectomics",
+      "year": 1995,
+      "title": "Synaptic code for sensory modalities revealed by C. elegans GLR-1 glutamate receptor",
+      "openalex_id": "https://openalex.org/W2088777486"
+    },
+    {
+      "rank": 1274,
+      "in_degree": 58,
+      "total_citations": 46108,
+      "domain": "unknown",
+      "year": 1952,
+      "title": "A quantitative description of membrane current and its application to conduction and excitation in nerve",
+      "openalex_id": "https://openalex.org/W1985940938"
+    },
+    {
+      "rank": 705,
+      "in_degree": 57,
+      "total_citations": 6198,
+      "domain": "unknown",
+      "year": 2002,
+      "title": "Specificity and Stability in Topology of Protein Networks",
+      "openalex_id": "https://openalex.org/W2156737316"
+    },
+    {
+      "rank": 501,
+      "in_degree": 56,
+      "total_citations": 14394,
+      "domain": "unknown",
+      "year": 2008,
+      "title": "Exploring Network Structure, Dynamics, and Function using NetworkX",
+      "openalex_id": "https://openalex.org/W2132022337"
+    },
+    {
+      "rank": 506,
+      "in_degree": 56,
+      "total_citations": 522,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "A map of octopaminergic neurons in the <i>Drosophila</i> brain",
+      "openalex_id": "https://openalex.org/W1977146259"
+    },
+    {
+      "rank": 546,
+      "in_degree": 56,
+      "total_citations": 566,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "An Imbalancing Act: Gap Junctions Reduce the Backward Motor Circuit Activity to Bias C.\u00a0elegans for Forward Locomotion",
+      "openalex_id": "https://openalex.org/W2031012150"
+    },
+    {
+      "rank": 666,
+      "in_degree": 56,
+      "total_citations": 1180,
+      "domain": "unknown",
+      "year": 1975,
+      "title": "Normal and mutant thermotaxis in the nematode Caenorhabditis elegans.",
+      "openalex_id": "https://openalex.org/W2118590890"
+    },
+    {
+      "rank": 1000,
+      "in_degree": 56,
+      "total_citations": 940,
+      "domain": "unknown",
+      "year": 1990,
+      "title": "Neuronal architecture of the antennal lobe in Drosophila melanogaster",
+      "openalex_id": "https://openalex.org/W2054944848"
+    },
+    {
+      "rank": 518,
+      "in_degree": 55,
+      "total_citations": 856,
+      "domain": "unknown",
+      "year": 2010,
+      "title": "Efficient Physical Embedding of Topologically Complex Information Processing Networks in Brains and Computer Circuits",
+      "openalex_id": "https://openalex.org/W1998071216"
+    },
+    {
+      "rank": 1264,
+      "in_degree": 54,
+      "total_citations": 2812,
+      "domain": "methods_ml",
+      "year": 2014,
+      "title": "Directed evolution of APEX2 for electron microscopy and proximity labeling",
+      "openalex_id": "https://openalex.org/W2023949937"
+    },
+    {
+      "rank": 526,
+      "in_degree": 53,
+      "total_citations": 2406,
+      "domain": "mri_connectomics",
+      "year": 2009,
+      "title": "Whole-brain anatomical networks: Does the choice of nodes matter?",
+      "openalex_id": "https://openalex.org/W2136395604"
+    },
+    {
+      "rank": 619,
+      "in_degree": 53,
+      "total_citations": 336,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "A Higher Brain Circuit for Immediate Integration of Conflicting Sensory Information in Drosophila",
+      "openalex_id": "https://openalex.org/W2166375192"
+    },
+    {
+      "rank": 1068,
+      "in_degree": 53,
+      "total_citations": 109724,
+      "domain": "unknown",
+      "year": 2004,
+      "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+      "openalex_id": "https://openalex.org/W2151103935"
+    },
+    {
+      "rank": 1077,
+      "in_degree": 53,
+      "total_citations": 2672,
+      "domain": "unknown",
+      "year": 2003,
+      "title": "<i>In vivo</i> two-photon calcium imaging of neuronal networks",
+      "openalex_id": "https://openalex.org/W2046031057"
+    },
+    {
+      "rank": 600,
+      "in_degree": 52,
+      "total_citations": 1846,
+      "domain": "unknown",
+      "year": 1986,
+      "title": "Mutant sensory cilia in the nematode Caenorhabditis elegans",
+      "openalex_id": "https://openalex.org/W2057104531"
+    },
+    {
+      "rank": 650,
+      "in_degree": 52,
+      "total_citations": 440,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Memory-Relevant Mushroom Body Output Synapses Are Cholinergic",
+      "openalex_id": "https://openalex.org/W2290925166"
+    },
+    {
+      "rank": 782,
+      "in_degree": 52,
+      "total_citations": 2392,
+      "domain": "unknown",
+      "year": 2013,
+      "title": "Cortical interneurons that specialize in disinhibitory control",
+      "openalex_id": "https://openalex.org/W1992910467"
+    },
+    {
+      "rank": 521,
+      "in_degree": 51,
+      "total_citations": 506,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "Response Features of Parvalbumin-Expressing Interneurons Suggest Precise Roles for Subtypes of Inhibition in Visual Cortex",
+      "openalex_id": "https://openalex.org/W2046426203"
+    },
+    {
+      "rank": 559,
+      "in_degree": 51,
+      "total_citations": 1622,
+      "domain": "unknown",
+      "year": 2006,
+      "title": "Chemosensation in C. elegans",
+      "openalex_id": "https://openalex.org/W1965404074"
+    },
+    {
+      "rank": 581,
+      "in_degree": 51,
+      "total_citations": 696,
+      "domain": "neuroscience",
+      "year": 2009,
+      "title": "Olfactory Information Processing in Drosophila",
+      "openalex_id": "https://openalex.org/W2007613723"
+    },
+    {
+      "rank": 607,
+      "in_degree": 51,
+      "total_citations": 4510,
+      "domain": "mri_connectomics",
+      "year": 1997,
+      "title": "The columnar organization of the neocortex",
+      "openalex_id": "https://openalex.org/W2103934527"
+    },
+    {
+      "rank": 1276,
+      "in_degree": 51,
+      "total_citations": 3912,
+      "domain": "unknown",
+      "year": 1996,
+      "title": "Chaos in Neuronal Networks with Balanced Excitatory and Inhibitory Activity",
+      "openalex_id": "https://openalex.org/W2008284899"
+    },
+    {
+      "rank": 548,
+      "in_degree": 50,
+      "total_citations": 1458,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "NeuroMorpho.Org: A Central Resource for Neuronal Morphologies",
+      "openalex_id": "https://openalex.org/W2061186544"
+    },
+    {
+      "rank": 561,
+      "in_degree": 50,
+      "total_citations": 218,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Functional and anatomical specificity in a higher olfactory centre",
+      "openalex_id": "https://openalex.org/W2952625560"
+    },
+    {
+      "rank": 568,
+      "in_degree": 50,
+      "total_citations": 758,
+      "domain": "neuroscience",
+      "year": 2019,
+      "title": "Chemoconnectomics: Mapping Chemical Transmission in Drosophila",
+      "openalex_id": "https://openalex.org/W2916714824"
+    },
+    {
+      "rank": 583,
+      "in_degree": 50,
+      "total_citations": 1090,
+      "domain": "unknown",
+      "year": 2010,
+      "title": "Dendritic organization of sensory input to cortical neurons in vivo",
+      "openalex_id": "https://openalex.org/W1997375364"
+    },
+    {
+      "rank": 598,
+      "in_degree": 50,
+      "total_citations": 806,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "High-Throughput Mapping of Single-Neuron Projections by Sequencing of Barcoded RNA",
+      "openalex_id": "https://openalex.org/W2517512733"
+    },
+    {
+      "rank": 536,
+      "in_degree": 49,
+      "total_citations": 1026,
+      "domain": "unknown",
+      "year": 1993,
+      "title": "The GABAergic nervous system of Caenorhabditis elegans",
+      "openalex_id": "https://openalex.org/W2074821443"
+    },
+    {
+      "rank": 616,
+      "in_degree": 49,
+      "total_citations": 854,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Sequential Use of Mushroom Body Neuron Subsets during Drosophila Odor Memory Processing",
+      "openalex_id": "https://openalex.org/W2040000470"
+    },
+    {
+      "rank": 625,
+      "in_degree": 49,
+      "total_citations": 873,
+      "domain": "methods_ml",
+      "year": 2011,
+      "title": "mGRASP enables mapping mammalian synaptic connectivity with light microscopy",
+      "openalex_id": "https://openalex.org/W2099021265"
+    },
+    {
+      "rank": 635,
+      "in_degree": 49,
+      "total_citations": 584,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Feedback from Network States Generates Variability in a Probabilistic Olfactory Circuit",
+      "openalex_id": "https://openalex.org/W2006324173"
+    },
+    {
+      "rank": 646,
+      "in_degree": 49,
+      "total_citations": 374,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "A neural command circuit for grooming movement control",
+      "openalex_id": "https://openalex.org/W1809771702"
+    },
+    {
+      "rank": 1113,
+      "in_degree": 49,
+      "total_citations": 666,
+      "domain": "unknown",
+      "year": 1976,
+      "title": "The projection of the lateral geniculate nucleus to area 17 of the rat cerebral cortex. I. General description",
+      "openalex_id": "https://openalex.org/W2006700032"
+    },
+    {
+      "rank": 528,
+      "in_degree": 48,
+      "total_citations": 1269,
+      "domain": "unknown",
+      "year": 2003,
+      "title": "Functional mapping of neurons that control locomotory behavior in <i>Caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2076792376"
+    },
+    {
+      "rank": 549,
+      "in_degree": 48,
+      "total_citations": 816,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "Species-specific wiring for direction selectivity in the mammalian retina",
+      "openalex_id": "https://openalex.org/W2466406789"
+    },
+    {
+      "rank": 641,
+      "in_degree": 48,
+      "total_citations": 430,
+      "domain": "unknown",
+      "year": 2007,
+      "title": "Supervised Learning of Image Restoration with Convolutional Networks",
+      "openalex_id": "https://openalex.org/W2129981175"
+    },
+    {
+      "rank": 685,
+      "in_degree": 48,
+      "total_citations": 226,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Four Individually Identified Paired Dopamine Neurons Signal Reward in Larval Drosophila",
+      "openalex_id": "https://openalex.org/W2253563636"
+    },
+    {
+      "rank": 722,
+      "in_degree": 48,
+      "total_citations": 1304,
+      "domain": "neuroscience",
+      "year": 2012,
+      "title": "Parvalbumin-Expressing Interneurons Linearly Transform Cortical Responses to Visual Stimuli",
+      "openalex_id": "https://openalex.org/W2009759904"
+    },
+    {
+      "rank": 574,
+      "in_degree": 47,
+      "total_citations": 392,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "The Role of Dopamine in Drosophila Larval Classical Olfactory Conditioning",
+      "openalex_id": "https://openalex.org/W2091835225"
+    },
+    {
+      "rank": 682,
+      "in_degree": 47,
+      "total_citations": 902,
+      "domain": "methods_ml",
+      "year": 2013,
+      "title": "Improved tools for the Brainbow toolbox",
+      "openalex_id": "https://openalex.org/W2007981920"
+    },
+    {
+      "rank": 686,
+      "in_degree": 47,
+      "total_citations": 1662,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Ultrastructure of dendritic spines: correlation between synaptic and spine morphologies",
+      "openalex_id": "https://openalex.org/W2090043895"
+    },
+    {
+      "rank": 701,
+      "in_degree": 47,
+      "total_citations": 2072,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "CaImAn an open source tool for scalable calcium imaging data analysis",
+      "openalex_id": "https://openalex.org/W2805271873"
+    },
+    {
+      "rank": 731,
+      "in_degree": 47,
+      "total_citations": 4641,
+      "domain": "neuroscience",
+      "year": 2002,
+      "title": "Protoplasmic Astrocytes in CA1 Stratum Radiatum Occupy Separate Anatomical Domains",
+      "openalex_id": "https://openalex.org/W2129567809"
+    },
+    {
+      "rank": 810,
+      "in_degree": 47,
+      "total_citations": 372,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Two Independent Mushroom Body Output Circuits Retrieve the Six Discrete Components of Drosophila Aversive Memory",
+      "openalex_id": "https://openalex.org/W1523805957"
+    },
+    {
+      "rank": 533,
+      "in_degree": 46,
+      "total_citations": 916,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Supralinear increase of recurrent inhibition during sparse activity in the somatosensory cortex",
+      "openalex_id": "https://openalex.org/W2112541959"
+    },
+    {
+      "rank": 579,
+      "in_degree": 46,
+      "total_citations": 2028,
+      "domain": "unknown",
+      "year": 1995,
+      "title": "Recurrent Excitation in Neocortical Circuits",
+      "openalex_id": "https://openalex.org/W1991233288"
+    },
+    {
+      "rank": 693,
+      "in_degree": 46,
+      "total_citations": 952,
+      "domain": "unknown",
+      "year": 2013,
+      "title": "The emergence of functional microcircuits in visual cortex",
+      "openalex_id": "https://openalex.org/W1982782013"
+    },
+    {
+      "rank": 717,
+      "in_degree": 46,
+      "total_citations": 452,
+      "domain": "unknown",
+      "year": 2011,
+      "title": "Normalization for Sparse Encoding of Odors by a Wide-Field Interneuron",
+      "openalex_id": "https://openalex.org/W2069478187"
+    },
+    {
+      "rank": 729,
+      "in_degree": 46,
+      "total_citations": 1743,
+      "domain": "neuroscience",
+      "year": 2012,
+      "title": "The Brain Activity Map Project and the Challenge of Functional Connectomics",
+      "openalex_id": "https://openalex.org/W2061744336"
+    },
+    {
+      "rank": 812,
+      "in_degree": 46,
+      "total_citations": 682,
+      "domain": "mri_connectomics",
+      "year": 2015,
+      "title": "Generative models of the human connectome",
+      "openalex_id": "https://openalex.org/W2182367256"
+    },
+    {
+      "rank": 1163,
+      "in_degree": 46,
+      "total_citations": 1170,
+      "domain": "unknown",
+      "year": 1973,
+      "title": "Chemotaxis by the Nematode <i>Caenorhabditis elegans:</i> Identification of Attractants and Analysis of the Response by Use of Mutants",
+      "openalex_id": "https://openalex.org/W2065877884"
+    },
+    {
+      "rank": 1227,
+      "in_degree": 46,
+      "total_citations": 2898,
+      "domain": "neuroscience",
+      "year": 2004,
+      "title": "Sparse coding of sensory inputs",
+      "openalex_id": "https://openalex.org/W2074376560"
+    },
+    {
+      "rank": 509,
+      "in_degree": 45,
+      "total_citations": 636,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "The Neural Circuits and Synaptic Mechanisms Underlying Motor Initiation in C.\u00a0elegans",
+      "openalex_id": "https://openalex.org/W2016016611"
+    },
+    {
+      "rank": 541,
+      "in_degree": 45,
+      "total_citations": 546,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "System-wide Rewiring Underlies Behavioral Differences in Predatory and Bacterial-Feeding Nematodes",
+      "openalex_id": "https://openalex.org/W2111987679"
+    },
+    {
+      "rank": 551,
+      "in_degree": 45,
+      "total_citations": 287,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "SynEM, automated synapse detection for connectomics",
+      "openalex_id": "https://openalex.org/W2581591112"
+    },
+    {
+      "rank": 668,
+      "in_degree": 45,
+      "total_citations": 308,
+      "domain": "neuroscience",
+      "year": 2019,
+      "title": "A Neural Circuit Arbitrates between Persistence and Withdrawal in Hungry Drosophila",
+      "openalex_id": "https://openalex.org/W2970479630"
+    },
+    {
+      "rank": 759,
+      "in_degree": 45,
+      "total_citations": 1828,
+      "domain": "unknown",
+      "year": 1975,
+      "title": "The dauerlarva, a post-embryonic developmental variant of the nematode Caenorhabditis elegans",
+      "openalex_id": "https://openalex.org/W1966145280"
+    },
+    {
+      "rank": 1350,
+      "in_degree": 45,
+      "total_citations": 3448,
+      "domain": "unknown",
+      "year": 2009,
+      "title": "The human brain in numbers: a linearly scaled-up primate brain",
+      "openalex_id": "https://openalex.org/W2005926822"
+    },
+    {
+      "rank": 515,
+      "in_degree": 44,
+      "total_citations": 2334,
+      "domain": "unknown",
+      "year": 2014,
+      "title": "Interneuron cell types are fit to function",
+      "openalex_id": "https://openalex.org/W1970789949"
+    },
+    {
+      "rank": 651,
+      "in_degree": 44,
+      "total_citations": 1188,
+      "domain": "unknown",
+      "year": 1980,
+      "title": "The Caenorhabditis elegans male: Postembryonic development of nongonadal structures",
+      "openalex_id": "https://openalex.org/W1969042688"
+    },
+    {
+      "rank": 874,
+      "in_degree": 44,
+      "total_citations": 768,
+      "domain": "unknown",
+      "year": 2012,
+      "title": "Simple models of human brain functional networks",
+      "openalex_id": "https://openalex.org/W2118050239"
+    },
+    {
+      "rank": 525,
+      "in_degree": 43,
+      "total_citations": 120,
+      "domain": "neuroscience",
+      "year": 2019,
+      "title": "Convolutional nets for reconstructing neural circuits from brain images acquired by serial section electron microscopy",
+      "openalex_id": "https://openalex.org/W2943035624"
+    },
+    {
+      "rank": 702,
+      "in_degree": 43,
+      "total_citations": 375,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Communication from Learned to Innate Olfactory Processing Centers Is Required for Memory Retrieval in Drosophila",
+      "openalex_id": "https://openalex.org/W2892347062"
+    },
+    {
+      "rank": 715,
+      "in_degree": 43,
+      "total_citations": 1202,
+      "domain": "unknown",
+      "year": 2012,
+      "title": "Division and subtraction by distinct cortical inhibitory networks in vivo",
+      "openalex_id": "https://openalex.org/W2124196462"
+    },
+    {
+      "rank": 735,
+      "in_degree": 43,
+      "total_citations": 2024,
+      "domain": "unknown",
+      "year": 2006,
+      "title": "Detecting rich-club ordering in complex networks",
+      "openalex_id": "https://openalex.org/W2126956247"
+    },
+    {
+      "rank": 773,
+      "in_degree": 43,
+      "total_citations": 974,
+      "domain": "em_connectomics",
+      "year": 1975,
+      "title": "Dopaminergic neurons in the nematode <i>Caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2001920462"
+    },
+    {
+      "rank": 776,
+      "in_degree": 43,
+      "total_citations": 1426,
+      "domain": "methods_ml",
+      "year": 2016,
+      "title": "Protein-retention expansion microscopy of cells and tissues labeled using standard fluorescent proteins and antibodies",
+      "openalex_id": "https://openalex.org/W2460281481"
+    },
+    {
+      "rank": 865,
+      "in_degree": 43,
+      "total_citations": 736,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "A Presynaptic Gain Control Mechanism Fine-Tunes Olfactory Behavior",
+      "openalex_id": "https://openalex.org/W1989753378"
+    },
+    {
+      "rank": 975,
+      "in_degree": 43,
+      "total_citations": 1630,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "A disinhibitory circuit mediates motor integration in the somatosensory cortex",
+      "openalex_id": "https://openalex.org/W2042662796"
+    },
+    {
+      "rank": 1189,
+      "in_degree": 43,
+      "total_citations": 76680,
+      "domain": "unknown",
+      "year": 2007,
+      "title": "Matplotlib: A 2D Graphics Environment",
+      "openalex_id": "https://openalex.org/W2011301426"
+    },
+    {
+      "rank": 591,
+      "in_degree": 42,
+      "total_citations": 5536,
+      "domain": "mri_connectomics",
+      "year": 2012,
+      "title": "The Human Connectome Project: A data acquisition perspective",
+      "openalex_id": "https://openalex.org/W2020519533"
+    },
+    {
+      "rank": 629,
+      "in_degree": 42,
+      "total_citations": 598,
+      "domain": "neuroscience",
+      "year": 1999,
+      "title": "Neuronal Control of Locomotion in C. elegans Is Modified by a Dominant Mutation in the GLR-1 Ionotropic Glutamate Receptor",
+      "openalex_id": "https://openalex.org/W2058615553"
+    },
+    {
+      "rank": 689,
+      "in_degree": 42,
+      "total_citations": 1492,
+      "domain": "unknown",
+      "year": 1983,
+      "title": "EGG-LAYING DEFECTIVE MUTANTS OF THE NEMATODE <i>CAENORHABDITIS ELEGANS</i>",
+      "openalex_id": "https://openalex.org/W1948927501"
+    },
+    {
+      "rank": 694,
+      "in_degree": 42,
+      "total_citations": 255,
+      "domain": "neuroscience",
+      "year": 2017,
+      "title": "Electron Microscopic Reconstruction of Functionally Identified Cells in a Neural Integrator",
+      "openalex_id": "https://openalex.org/W2735195016"
+    },
+    {
+      "rank": 714,
+      "in_degree": 42,
+      "total_citations": 198,
+      "domain": "methods_ml",
+      "year": 2019,
+      "title": "Gas cluster ion beam SEM for imaging of large tissue samples with 10\u2009nm isotropic resolution",
+      "openalex_id": "https://openalex.org/W2987919509"
+    },
+    {
+      "rank": 1254,
+      "in_degree": 42,
+      "total_citations": 7716,
+      "domain": "em_connectomics",
+      "year": 1997,
+      "title": "Regulation of Synaptic Efficacy by Coincidence of Postsynaptic APs and EPSPs",
+      "openalex_id": "https://openalex.org/W1986246844"
+    },
+    {
+      "rank": 572,
+      "in_degree": 41,
+      "total_citations": 2356,
+      "domain": "unknown",
+      "year": 2011,
+      "title": "Brain Graphs: Graphical Models of the Human Brain Connectome",
+      "openalex_id": "https://openalex.org/W2161515775"
+    },
+    {
+      "rank": 584,
+      "in_degree": 41,
+      "total_citations": 1064,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "Correlated light and electron microscopy: ultrastructure lights up!",
+      "openalex_id": "https://openalex.org/W1517319742"
+    },
+    {
+      "rank": 609,
+      "in_degree": 41,
+      "total_citations": 792,
+      "domain": "em_connectomics",
+      "year": 1989,
+      "title": "Density of neurons and synapses in the cerebral cortex of the mouse",
+      "openalex_id": "https://openalex.org/W1560129441"
+    },
+    {
+      "rank": 638,
+      "in_degree": 41,
+      "total_citations": 308,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Nitric oxide acts as a cotransmitter in a subset of dopaminergic neurons to diversify memory dynamics",
+      "openalex_id": "https://openalex.org/W2987761357"
+    },
+    {
+      "rank": 767,
+      "in_degree": 41,
+      "total_citations": 152,
+      "domain": "em_connectomics",
+      "year": 2010,
+      "title": "The Viking viewer for connectomics: scalable multi\u2010user annotation and summarization of large volume data sets",
+      "openalex_id": "https://openalex.org/W2106083403"
+    },
+    {
+      "rank": 772,
+      "in_degree": 41,
+      "total_citations": 376,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Compartmentalized calcium dynamics in a C. elegans interneuron encode head movement",
+      "openalex_id": "https://openalex.org/W2078100642"
+    },
+    {
+      "rank": 820,
+      "in_degree": 41,
+      "total_citations": 862,
+      "domain": "em_connectomics",
+      "year": 2011,
+      "title": "Visual place learning in Drosophila melanogaster",
+      "openalex_id": "https://openalex.org/W2043369736"
+    },
+    {
+      "rank": 1003,
+      "in_degree": 41,
+      "total_citations": 291,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Connectomics and function of a memory network: the mushroom body of larval Drosophila",
+      "openalex_id": "https://openalex.org/W2898302556"
+    },
+    {
+      "rank": 513,
+      "in_degree": 40,
+      "total_citations": 6158,
+      "domain": "network_science",
+      "year": 2000,
+      "title": "Classes of small-world networks",
+      "openalex_id": "https://openalex.org/W2104085672"
+    },
+    {
+      "rank": 537,
+      "in_degree": 40,
+      "total_citations": 4150,
+      "domain": "unknown",
+      "year": 2008,
+      "title": "Neuronal Diversity and Temporal Dynamics: The Unity of Hippocampal Circuit Operations",
+      "openalex_id": "https://openalex.org/W2008027377"
+    },
+    {
+      "rank": 564,
+      "in_degree": 40,
+      "total_citations": 282,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor outputs in a Drosophila feeding connectome",
+      "openalex_id": "https://openalex.org/W2903859832"
+    },
+    {
+      "rank": 566,
+      "in_degree": 40,
+      "total_citations": 412,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Elucidating the Neuronal Architecture of Olfactory Glomeruli in the Drosophila Antennal Lobe",
+      "openalex_id": "https://openalex.org/W2522315145"
+    },
+    {
+      "rank": 573,
+      "in_degree": 40,
+      "total_citations": 9474,
+      "domain": "neuroscience",
+      "year": 1998,
+      "title": "Synaptic Modifications in Cultured Hippocampal Neurons: Dependence on Spike Timing, Synaptic Strength, and Postsynaptic Cell Type",
+      "openalex_id": "https://openalex.org/W2147101007"
+    },
+    {
+      "rank": 639,
+      "in_degree": 40,
+      "total_citations": 902,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Functional maps of neocortical local circuitry",
+      "openalex_id": "https://openalex.org/W2052805224"
+    },
+    {
+      "rank": 734,
+      "in_degree": 40,
+      "total_citations": 314,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Comparisons between the ON- and OFF-edge motion pathways in the Drosophila brain",
+      "openalex_id": "https://openalex.org/W2910016083"
+    },
+    {
+      "rank": 784,
+      "in_degree": 40,
+      "total_citations": 942,
+      "domain": "neuroscience",
+      "year": 1997,
+      "title": "Reprogramming Chemotaxis Responses: Sensory Neurons Define Olfactory Preferences in C. elegans",
+      "openalex_id": "https://openalex.org/W2113585283"
+    },
+    {
+      "rank": 833,
+      "in_degree": 40,
+      "total_citations": 184,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "Reconstruction of genetically identified neurons imaged by serial-section electron microscopy",
+      "openalex_id": "https://openalex.org/W2472513471"
+    },
+    {
+      "rank": 519,
+      "in_degree": 39,
+      "total_citations": 486,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "Visual Representations by Cortical Somatostatin Inhibitory Neurons\u2014Selective But with Weak and Delayed Responses",
+      "openalex_id": "https://openalex.org/W2048962026"
+    },
+    {
+      "rank": 557,
+      "in_degree": 39,
+      "total_citations": 315,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Extracellular space preservation aids the connectomic analysis of neural circuits",
+      "openalex_id": "https://openalex.org/W2275318964"
+    },
+    {
+      "rank": 569,
+      "in_degree": 39,
+      "total_citations": 2038,
+      "domain": "unknown",
+      "year": 1979,
+      "title": "Morphology and intracortical projections of functionally characterised neurones in the cat visual cortex",
+      "openalex_id": "https://openalex.org/W2046384002"
+    },
+    {
+      "rank": 587,
+      "in_degree": 39,
+      "total_citations": 6910,
+      "domain": "mri_connectomics",
+      "year": 2011,
+      "title": "Functional and Effective Connectivity: A Review",
+      "openalex_id": "https://openalex.org/W2061564920"
+    },
+    {
+      "rank": 623,
+      "in_degree": 39,
+      "total_citations": 528,
+      "domain": "neuroscience",
+      "year": 2005,
+      "title": "Geometric and functional organization of cortical circuits",
+      "openalex_id": "https://openalex.org/W2012661701"
+    },
+    {
+      "rank": 632,
+      "in_degree": 39,
+      "total_citations": 624,
+      "domain": "mri_connectomics",
+      "year": 2011,
+      "title": "Cell Type\u2013Specific Three-Dimensional Structure of Thalamocortical Circuits in a Column of Rat Vibrissal Cortex",
+      "openalex_id": "https://openalex.org/W2168144640"
+    },
+    {
+      "rank": 517,
+      "in_degree": 38,
+      "total_citations": 621,
+      "domain": "em_connectomics",
+      "year": 2008,
+      "title": "Synaptic circuits of the <i>Drosophila</i> optic lobe: The input terminals to the medulla",
+      "openalex_id": "https://openalex.org/W2047572290"
+    },
+    {
+      "rank": 550,
+      "in_degree": 38,
+      "total_citations": 784,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Drosophila olfactory memory: single genes to complex neural circuits",
+      "openalex_id": "https://openalex.org/W2082265738"
+    },
+    {
+      "rank": 578,
+      "in_degree": 38,
+      "total_citations": 286,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Weighing the Evidence in Peters\u2019 Rule: Does Neuronal Morphology Predict Connectivity?",
+      "openalex_id": "https://openalex.org/W2562589097"
+    },
+    {
+      "rank": 595,
+      "in_degree": 38,
+      "total_citations": 832,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "The neural basis of Drosophila gravity-sensing and hearing",
+      "openalex_id": "https://openalex.org/W2031242418"
+    },
+    {
+      "rank": 604,
+      "in_degree": 38,
+      "total_citations": 252,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Organization of the Drosophila larval visual circuit",
+      "openalex_id": "https://openalex.org/W2611960039"
+    },
+    {
+      "rank": 606,
+      "in_degree": 38,
+      "total_citations": 174,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "NeuTu: Software for Collaborative, Large-Scale, Segmentation-Based Connectome Reconstruction",
+      "openalex_id": "https://openalex.org/W2901860341"
+    },
+    {
+      "rank": 622,
+      "in_degree": 38,
+      "total_citations": 336,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Sequencing the Connectome",
+      "openalex_id": "https://openalex.org/W2055806116"
+    },
+    {
+      "rank": 626,
+      "in_degree": 38,
+      "total_citations": 2382,
+      "domain": "mri_connectomics",
+      "year": 2013,
+      "title": "Graph analysis of the human connectome: Promise, progress, and pitfalls",
+      "openalex_id": "https://openalex.org/W2146406922"
+    },
+    {
+      "rank": 652,
+      "in_degree": 38,
+      "total_citations": 2058,
+      "domain": "unknown",
+      "year": 2013,
+      "title": "Cortical connectivity and sensory coding",
+      "openalex_id": "https://openalex.org/W2089242029"
+    },
+    {
+      "rank": 656,
+      "in_degree": 38,
+      "total_citations": 320,
+      "domain": "neuroscience",
+      "year": 2019,
+      "title": "Neural Basis for Looming Size and Velocity Encoding in the Drosophila Giant Fiber Escape Pathway",
+      "openalex_id": "https://openalex.org/W2919639595"
+    },
+    {
+      "rank": 783,
+      "in_degree": 38,
+      "total_citations": 1374,
+      "domain": "unknown",
+      "year": 2009,
+      "title": "GABAergic Hub Neurons Orchestrate Synchrony in Developing Hippocampal Networks",
+      "openalex_id": "https://openalex.org/W1967695195"
+    },
+    {
+      "rank": 803,
+      "in_degree": 38,
+      "total_citations": 232,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "The Organization of Projections from Olfactory Glomeruli onto Higher-Order Neurons",
+      "openalex_id": "https://openalex.org/W2807998183"
+    },
+    {
+      "rank": 514,
+      "in_degree": 37,
+      "total_citations": 620,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "Specific synapses develop preferentially among sister excitatory neurons in the neocortex",
+      "openalex_id": "https://openalex.org/W2045233939"
+    },
+    {
+      "rank": 535,
+      "in_degree": 37,
+      "total_citations": 316,
+      "domain": "neuroscience",
+      "year": 2009,
+      "title": "Visual Receptive Field Structure of Cortical Inhibitory Neurons Revealed by Two-Photon Imaging Guided Recording",
+      "openalex_id": "https://openalex.org/W2015147756"
+    },
+    {
+      "rank": 576,
+      "in_degree": 37,
+      "total_citations": 2817,
+      "domain": "unknown",
+      "year": 1998,
+      "title": "Neurobiology of the <i>Caenorhabditis elegans</i> Genome",
+      "openalex_id": "https://openalex.org/W2079441999"
+    },
+    {
+      "rank": 585,
+      "in_degree": 37,
+      "total_citations": 1434,
+      "domain": "methods_ml",
+      "year": 2016,
+      "title": "Multiplexed and scalable super-resolution imaging of three-dimensional protein localization in size-adjustable tissues",
+      "openalex_id": "https://openalex.org/W2494923364"
+    },
+    {
+      "rank": 594,
+      "in_degree": 37,
+      "total_citations": 473,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Brain-wide Organization of Neuronal Activity and Convergent Sensorimotor Transformations in Larval Zebrafish",
+      "openalex_id": "https://openalex.org/W2953308498"
+    },
+    {
+      "rank": 596,
+      "in_degree": 37,
+      "total_citations": 1218,
+      "domain": "unknown",
+      "year": 2003,
+      "title": "Two Dynamically Distinct Inhibitory Networks in Layer 4 of the Neocortex",
+      "openalex_id": "https://openalex.org/W2022568453"
+    },
+    {
+      "rank": 608,
+      "in_degree": 37,
+      "total_citations": 282,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Single excitatory axons form clustered synapses onto CA1 pyramidal cell dendrites",
+      "openalex_id": "https://openalex.org/W2790439218"
+    },
+    {
+      "rank": 663,
+      "in_degree": 37,
+      "total_citations": 440,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Whole-central nervous system functional imaging in larval Drosophila",
+      "openalex_id": "https://openalex.org/W1894928878"
+    },
+    {
+      "rank": 675,
+      "in_degree": 37,
+      "total_citations": 452,
+      "domain": "unknown",
+      "year": 2016,
+      "title": "Robust registration of calcium images by learned contrast synthesis",
+      "openalex_id": "https://openalex.org/W2228548648"
+    },
+    {
+      "rank": 678,
+      "in_degree": 37,
+      "total_citations": 597,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "Counting synapses using FIB/SEM microscopy: a true revolution for ultrastructural volume reconstruction",
+      "openalex_id": "https://openalex.org/W2063752629"
+    },
+    {
+      "rank": 680,
+      "in_degree": 37,
+      "total_citations": 516,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Single-cell\u2013initiated monosynaptic tracing reveals layer-specific cortical network modules",
+      "openalex_id": "https://openalex.org/W1583675730"
+    },
+    {
+      "rank": 697,
+      "in_degree": 37,
+      "total_citations": 1200,
+      "domain": "em_connectomics",
+      "year": 2002,
+      "title": "Directionally selective calcium signals in dendrites of starburst amacrine cells",
+      "openalex_id": "https://openalex.org/W2159659012"
+    },
+    {
+      "rank": 736,
+      "in_degree": 37,
+      "total_citations": 224,
+      "domain": "unknown",
+      "year": 2011,
+      "title": "Are mushroom bodies cerebellum-like structures?",
+      "openalex_id": "https://openalex.org/W1968554674"
+    },
+    {
+      "rank": 751,
+      "in_degree": 37,
+      "total_citations": 1948,
+      "domain": "unknown",
+      "year": 2001,
+      "title": "Total number and distribution of inhibitory and excitatory synapses on hippocampal CA1 pyramidal cells",
+      "openalex_id": "https://openalex.org/W2078529082"
+    },
+    {
+      "rank": 757,
+      "in_degree": 37,
+      "total_citations": 216,
+      "domain": "unknown",
+      "year": 2015,
+      "title": "What the fly\u2019s nose tells the fly\u2019s brain",
+      "openalex_id": "https://openalex.org/W1904621031"
+    },
+    {
+      "rank": 813,
+      "in_degree": 37,
+      "total_citations": 2806,
+      "domain": "unknown",
+      "year": 2016,
+      "title": "Suite2p: beyond 10,000 neurons with standard two-photon microscopy",
+      "openalex_id": "https://openalex.org/W2469581795"
+    },
+    {
+      "rank": 834,
+      "in_degree": 37,
+      "total_citations": 832,
+      "domain": "neuroscience",
+      "year": 2005,
+      "title": "Tyramine Functions Independently of Octopamine in the Caenorhabditis elegans Nervous System",
+      "openalex_id": "https://openalex.org/W2046691888"
+    },
+    {
+      "rank": 886,
+      "in_degree": 37,
+      "total_citations": 682,
+      "domain": "em_connectomics",
+      "year": 1995,
+      "title": "Mechanosensory signalling in C. elegans mediated by the GLR-1 glutamate receptor",
+      "openalex_id": "https://openalex.org/W1983218230"
+    },
+    {
+      "rank": 1153,
+      "in_degree": 37,
+      "total_citations": 694,
+      "domain": "unknown",
+      "year": 1966,
+      "title": "A NEW STAINING METHOD (OTO) FOR ENHANCING CONTRAST OF LIPID-CONTAINING MEMBRANES AND DROPLETS IN OSMIUM TETROXIDE-FIXED TISSUE WITH OSMIOPHILIC THIOCARBOHYDRAZIDE (TCH)",
+      "openalex_id": "https://openalex.org/W2053341730"
+    },
+    {
+      "rank": 1171,
+      "in_degree": 37,
+      "total_citations": 3166,
+      "domain": "unknown",
+      "year": 1965,
+      "title": "The mechanism of directionally selective units in rabbit's retina.",
+      "openalex_id": "https://openalex.org/W2018837082"
+    },
+    {
+      "rank": 510,
+      "in_degree": 36,
+      "total_citations": 183,
+      "domain": "unknown",
+      "year": 2017,
+      "title": "Learning from connectomics on the fly",
+      "openalex_id": "https://openalex.org/W2760242188"
+    },
+    {
+      "rank": 540,
+      "in_degree": 36,
+      "total_citations": 390,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "Structured Synaptic Connectivity between Hippocampal Regions",
+      "openalex_id": "https://openalex.org/W2053826724"
+    },
+    {
+      "rank": 558,
+      "in_degree": 36,
+      "total_citations": 326,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Serial Section Scanning Electron Microscopy (S3EM) on Silicon Wafers for Ultra-Structural Volume Imaging of Cells and Tissues",
+      "openalex_id": "https://openalex.org/W2090416745"
+    },
+    {
+      "rank": 610,
+      "in_degree": 36,
+      "total_citations": 258,
+      "domain": "unknown",
+      "year": 2019,
+      "title": "Serial-section electron microscopy using automated tape-collecting ultramicrotome (ATUM)",
+      "openalex_id": "https://openalex.org/W2959132662"
+    },
+    {
+      "rank": 665,
+      "in_degree": 36,
+      "total_citations": 722,
+      "domain": "neuroscience",
+      "year": 1989,
+      "title": "Pharyngeal pumping continues after laser killing of the pharyngeal nervous system of C. elegans",
+      "openalex_id": "https://openalex.org/W2072449837"
+    },
+    {
+      "rank": 674,
+      "in_degree": 36,
+      "total_citations": 2080,
+      "domain": "unknown",
+      "year": 1966,
+      "title": "Organization of the primate retina: electron microscopy",
+      "openalex_id": "https://openalex.org/W2036453841"
+    },
+    {
+      "rank": 774,
+      "in_degree": 36,
+      "total_citations": 632,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "Modular Control of Glutamatergic Neuronal Identity in C.\u00a0elegans by Distinct Homeodomain Proteins",
+      "openalex_id": "https://openalex.org/W2072419797"
+    },
+    {
+      "rank": 1322,
+      "in_degree": 36,
+      "total_citations": 1268,
+      "domain": "unknown",
+      "year": 1995,
+      "title": "Histology Of The Nervous System",
+      "openalex_id": "https://openalex.org/W2989575095"
+    },
+    {
+      "rank": 1365,
+      "in_degree": 36,
+      "total_citations": 14502,
+      "domain": "unknown",
+      "year": 1973,
+      "title": "Long\u2010lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path",
+      "openalex_id": "https://openalex.org/W2009782005"
+    },
+    {
+      "rank": 1422,
+      "in_degree": 36,
+      "total_citations": 2882,
+      "domain": "unknown",
+      "year": 2003,
+      "title": "Balanced inhibition underlies tuning and sharpens spike timing in auditory cortex",
+      "openalex_id": "https://openalex.org/W2106700142"
+    },
+    {
+      "rank": 522,
+      "in_degree": 35,
+      "total_citations": 268,
+      "domain": "unknown",
+      "year": 1980,
+      "title": "A systematic approach to reconstructing microcircuitry by electron microscopy of serial sections",
+      "openalex_id": "https://openalex.org/W2050810476"
+    },
+    {
+      "rank": 611,
+      "in_degree": 35,
+      "total_citations": 642,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "BigDataViewer: visualization and processing for large image data sets",
+      "openalex_id": "https://openalex.org/W1580913419"
+    },
+    {
+      "rank": 676,
+      "in_degree": 35,
+      "total_citations": 214,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "<i>Drosophila</i>Larvae Establish Appetitive Olfactory Memories via Mushroom Body Neurons of Embryonic Origin",
+      "openalex_id": "https://openalex.org/W2095057163"
+    },
+    {
+      "rank": 679,
+      "in_degree": 35,
+      "total_citations": 604,
+      "domain": "neuroscience",
+      "year": 1999,
+      "title": "Lateral Signaling Mediated by Axon Contact and Calcium Entry Regulates Asymmetric Odorant Receptor Expression in C. elegans",
+      "openalex_id": "https://openalex.org/W2118509956"
+    },
+    {
+      "rank": 681,
+      "in_degree": 35,
+      "total_citations": 1154,
+      "domain": "neuroscience",
+      "year": 1996,
+      "title": "odr-10 Encodes a Seven Transmembrane Domain Olfactory Receptor Required for Responses to the Odorant Diacetyl",
+      "openalex_id": "https://openalex.org/W2148211715"
+    },
+    {
+      "rank": 683,
+      "in_degree": 35,
+      "total_citations": 520,
+      "domain": "em_connectomics",
+      "year": 2014,
+      "title": "Neuronal connectome of a sensory-motor circuit for visual navigation",
+      "openalex_id": "https://openalex.org/W2020766301"
+    },
+    {
+      "rank": 747,
+      "in_degree": 35,
+      "total_citations": 240,
+      "domain": "neuroscience",
+      "year": 2019,
+      "title": "Neuronal cell types in the fly: single-cell anatomy meets single-cell genomics",
+      "openalex_id": "https://openalex.org/W2911295867"
+    },
+    {
+      "rank": 789,
+      "in_degree": 35,
+      "total_citations": 1260,
+      "domain": "em_connectomics",
+      "year": 1992,
+      "title": "Three\u2010dimensional analysis of the structure and composition of CA3 branched dendritic spines and their synaptic relationships with mossy fiber boutons in the rat hippocampus",
+      "openalex_id": "https://openalex.org/W2050032667"
+    },
+    {
+      "rank": 804,
+      "in_degree": 35,
+      "total_citations": 214,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Reciprocal synapses between mushroom body and dopamine neurons form a positive feedback loop required for learning",
+      "openalex_id": "https://openalex.org/W2613567252"
+    },
+    {
+      "rank": 829,
+      "in_degree": 35,
+      "total_citations": 262,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "MDN brain descending neurons coordinately activate backward and inhibit forward locomotion",
+      "openalex_id": "https://openalex.org/W2885496356"
+    },
+    {
+      "rank": 879,
+      "in_degree": 35,
+      "total_citations": 908,
+      "domain": "neuroscience",
+      "year": 1996,
+      "title": "Mutations in a Cyclic Nucleotide\u2013Gated Channel Lead to Abnormal Thermosensation and Chemosensation in C. elegans",
+      "openalex_id": "https://openalex.org/W2004113088"
+    },
+    {
+      "rank": 893,
+      "in_degree": 35,
+      "total_citations": 747,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Wiring cost and topological participation of the mouse brain connectome",
+      "openalex_id": "https://openalex.org/W1900134997"
+    },
+    {
+      "rank": 913,
+      "in_degree": 35,
+      "total_citations": 262,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "Organization of descending neurons in Drosophila melanogaster",
+      "openalex_id": "https://openalex.org/W2436709356"
+    },
+    {
+      "rank": 970,
+      "in_degree": 35,
+      "total_citations": 1754,
+      "domain": "unknown",
+      "year": 2016,
+      "title": "Small-World Brain Networks Revisited",
+      "openalex_id": "https://openalex.org/W2511999769"
+    },
+    {
+      "rank": 539,
+      "in_degree": 34,
+      "total_citations": 436,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "EM connectomics reveals axonal target variation in a sequence-generating network",
+      "openalex_id": "https://openalex.org/W2598487345"
+    },
+    {
+      "rank": 615,
+      "in_degree": 34,
+      "total_citations": 296,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "Building a functional connectome of the Drosophila central complex",
+      "openalex_id": "https://openalex.org/W2888531822"
+    },
+    {
+      "rank": 628,
+      "in_degree": 34,
+      "total_citations": 1036,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "Complementary Function and Integrated Wiring of the Evolutionarily Distinct<i>Drosophila</i>Olfactory Subsystems",
+      "openalex_id": "https://openalex.org/W1979639373"
+    },
+    {
+      "rank": 658,
+      "in_degree": 34,
+      "total_citations": 376,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Temperature representation in the Drosophila brain",
+      "openalex_id": "https://openalex.org/W2035789116"
+    },
+    {
+      "rank": 780,
+      "in_degree": 34,
+      "total_citations": 1666,
+      "domain": "unknown",
+      "year": 2005,
+      "title": "Pathogenic bacteria induce aversive olfactory learning in Caenorhabditis elegans",
+      "openalex_id": "https://openalex.org/W2082213186"
+    },
+    {
+      "rank": 815,
+      "in_degree": 34,
+      "total_citations": 298,
+      "domain": "methods_ml",
+      "year": 2012,
+      "title": "Staining and embedding the whole mouse brain for electron microscopy",
+      "openalex_id": "https://openalex.org/W2137763388"
+    },
+    {
+      "rank": 831,
+      "in_degree": 34,
+      "total_citations": 252,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Selective Inhibition Mediates the Sequential Recruitment of Motor Pools",
+      "openalex_id": "https://openalex.org/W2472629575"
+    },
+    {
+      "rank": 832,
+      "in_degree": 34,
+      "total_citations": 740,
+      "domain": "unknown",
+      "year": 1990,
+      "title": "Effects of starvation and neuroactive drugs on feeding in <i>Caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2067517788"
+    },
+    {
+      "rank": 857,
+      "in_degree": 34,
+      "total_citations": 861,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Digital Museum of Retinal Ganglion Cells with Dense Anatomy and Physiology",
+      "openalex_id": "https://openalex.org/W2803596769"
+    },
+    {
+      "rank": 876,
+      "in_degree": 34,
+      "total_citations": 834,
+      "domain": "unknown",
+      "year": 1991,
+      "title": "Control of Larval Development by Chemosensory Neurons in <i>Caenorhabditis elegans</i>",
+      "openalex_id": "https://openalex.org/W2054712073"
+    },
+    {
+      "rank": 1237,
+      "in_degree": 34,
+      "total_citations": 4788,
+      "domain": "unknown",
+      "year": 1957,
+      "title": "MODALITY AND TOPOGRAPHIC PROPERTIES OF SINGLE NEURONS OF CAT'S SOMATIC SENSORY CORTEX",
+      "openalex_id": "https://openalex.org/W2253776861"
+    },
+    {
+      "rank": 1349,
+      "in_degree": 34,
+      "total_citations": 294,
+      "domain": "em_connectomics",
+      "year": 2001,
+      "title": "Cylindrical diameters method for calibrating section thickness in serial electron microscopy",
+      "openalex_id": "https://openalex.org/W1967094886"
+    },
+    {
+      "rank": 554,
+      "in_degree": 33,
+      "total_citations": 190,
+      "domain": "unknown",
+      "year": 2008,
+      "title": "Automation of 3D reconstruction of neural tissue from large volume of conventional serial section transmission electron micrographs",
+      "openalex_id": "https://openalex.org/W2070360070"
+    },
+    {
+      "rank": 660,
+      "in_degree": 33,
+      "total_citations": 988,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Genetic Dissection of Neural Circuits: A Decade of Progress",
+      "openalex_id": "https://openalex.org/W2800617744"
+    }
+  ],
+  "C_tail_high_extcites_low_composite": [],
+  "C_tail_off_topic": [],
+  "D_tail_inner_core_ranked_low": [
+    {
+      "rank": 203,
+      "kcore": 26,
+      "composite_score": 0.8378,
+      "in_degree": 211,
+      "total_citations": 1743,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "A multilevel multimodal circuit enhances action selection in Drosophila",
+      "openalex_id": "https://openalex.org/W2087543137"
+    },
+    {
+      "rank": 204,
+      "kcore": 26,
+      "composite_score": 0.8376,
+      "in_degree": 61,
+      "total_citations": 1480,
+      "domain": "unknown",
+      "year": 1999,
+      "title": "Development of the <i>Drosophila</i> mushroom bodies: sequential generation of three distinct types of neurons from a neuroblast",
+      "openalex_id": "https://openalex.org/W2155720250"
+    },
+    {
+      "rank": 220,
+      "kcore": 26,
+      "composite_score": 0.8347,
+      "in_degree": 186,
+      "total_citations": 1506,
+      "domain": "em_connectomics",
+      "year": 2014,
+      "title": "Mushroom body output neurons encode valence and guide memory-based action selection in Drosophila",
+      "openalex_id": "https://openalex.org/W1999985543"
+    },
+    {
+      "rank": 228,
+      "kcore": 26,
+      "composite_score": 0.8327,
+      "in_degree": 76,
+      "total_citations": 2060,
+      "domain": "neuroscience",
+      "year": 2005,
+      "title": "Molecular, Anatomical, and Functional Organization of the Drosophila Olfactory System",
+      "openalex_id": "https://openalex.org/W2115354701"
+    },
+    {
+      "rank": 234,
+      "kcore": 26,
+      "composite_score": 0.8313,
+      "in_degree": 15,
+      "total_citations": 74,
+      "domain": "em_connectomics",
+      "year": 2020,
+      "title": "Presynaptic developmental plasticity allows robust sparse wiring of the Drosophila mushroom body",
+      "openalex_id": "https://openalex.org/W2999915254"
+    },
+    {
+      "rank": 238,
+      "kcore": 26,
+      "composite_score": 0.831,
+      "in_degree": 152,
+      "total_citations": 2622,
+      "domain": "neuroscience",
+      "year": 2003,
+      "title": "Mushroom body memoir: from maps to models",
+      "openalex_id": "https://openalex.org/W2048054368"
+    },
+    {
+      "rank": 248,
+      "kcore": 26,
+      "composite_score": 0.8288,
+      "in_degree": 177,
+      "total_citations": 1332,
+      "domain": "unknown",
+      "year": 2015,
+      "title": "Optimized tools for multicolor stochastic labeling reveal diverse stereotyped cell arrangements in the fly visual system",
+      "openalex_id": "https://openalex.org/W1491075702"
+    },
+    {
+      "rank": 255,
+      "kcore": 26,
+      "composite_score": 0.8274,
+      "in_degree": 10,
+      "total_citations": 80,
+      "domain": "em_connectomics",
+      "year": 2022,
+      "title": "Postsynaptic plasticity of cholinergic synapses underlies the induction and expression of appetitive and familiarity memories in Drosophila",
+      "openalex_id": "https://openalex.org/W4306406722"
+    },
+    {
+      "rank": 274,
+      "kcore": 26,
+      "composite_score": 0.8238,
+      "in_degree": 130,
+      "total_citations": 666,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "NBLAST: Rapid, Sensitive Comparison of Neuronal Structure and Construction of Neuron Family Databases",
+      "openalex_id": "https://openalex.org/W2951976236"
+    },
+    {
+      "rank": 277,
+      "kcore": 26,
+      "composite_score": 0.8234,
+      "in_degree": 15,
+      "total_citations": 82,
+      "domain": "neuroscience",
+      "year": 2020,
+      "title": "The Wiring Logic of an Identified Serotonergic Neuron That Spans Sensory Networks",
+      "openalex_id": "https://openalex.org/W3041080922"
+    },
+    {
+      "rank": 285,
+      "kcore": 26,
+      "composite_score": 0.8218,
+      "in_degree": 138,
+      "total_citations": 992,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Coordinated and Compartmentalized Neuromodulation Shapes Sensory Processing in Drosophila",
+      "openalex_id": "https://openalex.org/W2219709225"
+    },
+    {
+      "rank": 289,
+      "kcore": 26,
+      "composite_score": 0.8212,
+      "in_degree": 13,
+      "total_citations": 93,
+      "domain": "em_connectomics",
+      "year": 2021,
+      "title": "Predictive olfactory learning in Drosophila",
+      "openalex_id": "https://openalex.org/W3136962029"
+    },
+    {
+      "rank": 291,
+      "kcore": 26,
+      "composite_score": 0.821,
+      "in_degree": 72,
+      "total_citations": 1152,
+      "domain": "em_connectomics",
+      "year": 2008,
+      "title": "Lateral presynaptic inhibition mediates gain control in an olfactory circuit",
+      "openalex_id": "https://openalex.org/W2081986958"
+    },
+    {
+      "rank": 299,
+      "kcore": 26,
+      "composite_score": 0.8193,
+      "in_degree": 17,
+      "total_citations": 130,
+      "domain": "em_connectomics",
+      "year": 2021,
+      "title": "Transsynaptic mapping of Drosophila mushroom body output neurons",
+      "openalex_id": "https://openalex.org/W3128928323"
+    },
+    {
+      "rank": 301,
+      "kcore": 26,
+      "composite_score": 0.819,
+      "in_degree": 111,
+      "total_citations": 1290,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Layered reward signalling through octopamine and dopamine in Drosophila",
+      "openalex_id": "https://openalex.org/W2028791709"
+    },
+    {
+      "rank": 308,
+      "kcore": 26,
+      "composite_score": 0.818,
+      "in_degree": 90,
+      "total_citations": 644,
+      "domain": "em_connectomics",
+      "year": 2013,
+      "title": "Glutamate is an inhibitory neurotransmitter in the <i>Drosophila</i> olfactory system",
+      "openalex_id": "https://openalex.org/W2088981001"
+    },
+    {
+      "rank": 313,
+      "kcore": 26,
+      "composite_score": 0.8165,
+      "in_degree": 111,
+      "total_citations": 786,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Activity of Defined Mushroom Body Output Neurons Underlies Learned Olfactory Behavior in Drosophila",
+      "openalex_id": "https://openalex.org/W2064763329"
+    },
+    {
+      "rank": 323,
+      "kcore": 26,
+      "composite_score": 0.8153,
+      "in_degree": 13,
+      "total_citations": 38,
+      "domain": "em_connectomics",
+      "year": 2021,
+      "title": "The anterior paired lateral neuron normalizes odour-evoked activity in the Drosophila mushroom body calyx",
+      "openalex_id": "https://openalex.org/W4200220731"
+    },
+    {
+      "rank": 325,
+      "kcore": 26,
+      "composite_score": 0.8149,
+      "in_degree": 116,
+      "total_citations": 440,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "The wiring diagram of a glomerular olfactory system",
+      "openalex_id": "https://openalex.org/W2949152168"
+    },
+    {
+      "rank": 344,
+      "kcore": 26,
+      "composite_score": 0.8112,
+      "in_degree": 117,
+      "total_citations": 1296,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "A Systematic Nomenclature for the Insect Brain",
+      "openalex_id": "https://openalex.org/W1971175217"
+    },
+    {
+      "rank": 360,
+      "kcore": 26,
+      "composite_score": 0.8089,
+      "in_degree": 97,
+      "total_citations": 738,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "The functional organization of descending sensory-motor pathways in Drosophila",
+      "openalex_id": "https://openalex.org/W2780788446"
+    },
+    {
+      "rank": 363,
+      "kcore": 26,
+      "composite_score": 0.8087,
+      "in_degree": 73,
+      "total_citations": 444,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Wiring variations that enable and constrain neural computation in a sensory microcircuit",
+      "openalex_id": "https://openalex.org/W2571305441"
+    },
+    {
+      "rank": 367,
+      "kcore": 26,
+      "composite_score": 0.8083,
+      "in_degree": 58,
+      "total_citations": 774,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "Diversity and wiring variability of olfactory local interneurons in the Drosophila antennal lobe",
+      "openalex_id": "https://openalex.org/W2127869243"
+    },
+    {
+      "rank": 372,
+      "kcore": 26,
+      "composite_score": 0.8077,
+      "in_degree": 99,
+      "total_citations": 690,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "Sparse, decorrelated odor coding in the mushroom body enhances learned odor discrimination",
+      "openalex_id": "https://openalex.org/W2047234954"
+    },
+    {
+      "rank": 375,
+      "kcore": 26,
+      "composite_score": 0.8071,
+      "in_degree": 83,
+      "total_citations": 556,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "Cellular-Resolution Population Imaging Reveals Robust Sparse Coding in the <i>Drosophila</i> Mushroom Body",
+      "openalex_id": "https://openalex.org/W1991915036"
+    },
+    {
+      "rank": 381,
+      "kcore": 26,
+      "composite_score": 0.8066,
+      "in_degree": 69,
+      "total_citations": 360,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "Integration of the olfactory code across dendritic claws of single mushroom body neurons",
+      "openalex_id": "https://openalex.org/W2078932002"
+    },
+    {
+      "rank": 391,
+      "kcore": 26,
+      "composite_score": 0.8058,
+      "in_degree": 124,
+      "total_citations": 930,
+      "domain": "em_connectomics",
+      "year": 2013,
+      "title": "Random convergence of olfactory inputs in the Drosophila mushroom body",
+      "openalex_id": "https://openalex.org/W2004437322"
+    },
+    {
+      "rank": 401,
+      "kcore": 26,
+      "composite_score": 0.8042,
+      "in_degree": 49,
+      "total_citations": 456,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "A Map of Olfactory Representation in the Drosophila Mushroom Body",
+      "openalex_id": "https://openalex.org/W2167703052"
+    },
+    {
+      "rank": 404,
+      "kcore": 26,
+      "composite_score": 0.8039,
+      "in_degree": 201,
+      "total_citations": 870,
+      "domain": "methods_ml",
+      "year": 2009,
+      "title": "CATMAID: collaborative annotation toolkit for massive amounts of image data",
+      "openalex_id": "https://openalex.org/W2163314583"
+    },
+    {
+      "rank": 407,
+      "kcore": 26,
+      "composite_score": 0.8036,
+      "in_degree": 53,
+      "total_citations": 374,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Organization of antennal lobe\u2010associated neurons in adult <i>Drosophila melanogaster</i> brain",
+      "openalex_id": "https://openalex.org/W2052289243"
+    },
+    {
+      "rank": 408,
+      "kcore": 26,
+      "composite_score": 0.803,
+      "in_degree": 65,
+      "total_citations": 522,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "The GABAergic anterior paired lateral neuron suppresses and is suppressed by olfactory learning",
+      "openalex_id": "https://openalex.org/W1965413214"
+    },
+    {
+      "rank": 414,
+      "kcore": 26,
+      "composite_score": 0.8023,
+      "in_degree": 7,
+      "total_citations": 50,
+      "domain": "unknown",
+      "year": 2020,
+      "title": "Multiple network properties overcome random connectivity to enable stereotypic sensory responses",
+      "openalex_id": "https://openalex.org/W3007375800"
+    },
+    {
+      "rank": 415,
+      "kcore": 26,
+      "composite_score": 0.8022,
+      "in_degree": 83,
+      "total_citations": 314,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "Functional architecture of reward learning in mushroom body extrinsic neurons of larval Drosophila",
+      "openalex_id": "https://openalex.org/W2793333536"
+    },
+    {
+      "rank": 417,
+      "kcore": 26,
+      "composite_score": 0.8019,
+      "in_degree": 120,
+      "total_citations": 764,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Heterosynaptic Plasticity Underlies Aversive Olfactory Learning in Drosophila",
+      "openalex_id": "https://openalex.org/W2187086501"
+    },
+    {
+      "rank": 423,
+      "kcore": 26,
+      "composite_score": 0.8012,
+      "in_degree": 14,
+      "total_citations": 116,
+      "domain": "unknown",
+      "year": 2020,
+      "title": "Cellular and circuit mechanisms of olfactory associative learning in<i>Drosophila</i>",
+      "openalex_id": "https://openalex.org/W3006118537"
+    },
+    {
+      "rank": 426,
+      "kcore": 26,
+      "composite_score": 0.8009,
+      "in_degree": 80,
+      "total_citations": 1240,
+      "domain": "neuroscience",
+      "year": 2009,
+      "title": "A Neural Circuit Mechanism Integrating Motivational State with Memory Expression in Drosophila",
+      "openalex_id": "https://openalex.org/W2168414233"
+    },
+    {
+      "rank": 428,
+      "kcore": 26,
+      "composite_score": 0.8002,
+      "in_degree": 64,
+      "total_citations": 376,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Neurogenetic dissection of the Drosophila lateral horn reveals major outputs, diverse behavioural functions, and interactions with the mushroom body",
+      "openalex_id": "https://openalex.org/W2946807361"
+    },
+    {
+      "rank": 430,
+      "kcore": 26,
+      "composite_score": 0.8001,
+      "in_degree": 76,
+      "total_citations": 720,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Integration of Parallel Opposing Memories Underlies Memory Extinction",
+      "openalex_id": "https://openalex.org/W2891505771"
+    },
+    {
+      "rank": 434,
+      "kcore": 26,
+      "composite_score": 0.7996,
+      "in_degree": 44,
+      "total_citations": 196,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "Different classes of input and output neurons reveal new features in microglomeruli of the adult <i>Drosophila</i> mushroom body calyx",
+      "openalex_id": "https://openalex.org/W1977880382"
+    },
+    {
+      "rank": 436,
+      "kcore": 26,
+      "composite_score": 0.7992,
+      "in_degree": 66,
+      "total_citations": 804,
+      "domain": "neuroscience",
+      "year": 2017,
+      "title": "Optimal Degrees of Synaptic Connectivity",
+      "openalex_id": "https://openalex.org/W2588048611"
+    },
+    {
+      "rank": 442,
+      "kcore": 26,
+      "composite_score": 0.7981,
+      "in_degree": 31,
+      "total_citations": 256,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "Different Kenyon Cell Populations Drive Learned Approach and Avoidance in Drosophila",
+      "openalex_id": "https://openalex.org/W2062037120"
+    },
+    {
+      "rank": 456,
+      "kcore": 26,
+      "composite_score": 0.7963,
+      "in_degree": 85,
+      "total_citations": 1208,
+      "domain": "neuroscience",
+      "year": 2006,
+      "title": "Light-Induced Activation of Distinct Modulatory Neurons Triggers Appetitive or Aversive Learning in Drosophila Larvae",
+      "openalex_id": "https://openalex.org/W2117672081"
+    },
+    {
+      "rank": 458,
+      "kcore": 26,
+      "composite_score": 0.7962,
+      "in_degree": 45,
+      "total_citations": 556,
+      "domain": "em_connectomics",
+      "year": 2002,
+      "title": "Synaptic organization of the mushroom body calyx in <i>Drosophila melanogaster</i>",
+      "openalex_id": "https://openalex.org/W2050693050"
+    },
+    {
+      "rank": 464,
+      "kcore": 26,
+      "composite_score": 0.7953,
+      "in_degree": 49,
+      "total_citations": 570,
+      "domain": "neuroscience",
+      "year": 2004,
+      "title": "Integration of Chemosensory Pathways in the Drosophila Second-Order Olfactory Centers",
+      "openalex_id": "https://openalex.org/W1983156044"
+    },
+    {
+      "rank": 466,
+      "kcore": 26,
+      "composite_score": 0.7949,
+      "in_degree": 74,
+      "total_citations": 452,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Aversive Learning and Appetitive Motivation Toggle Feed-Forward Inhibition in the Drosophila Mushroom Body",
+      "openalex_id": "https://openalex.org/W2404664646"
+    },
+    {
+      "rank": 474,
+      "kcore": 26,
+      "composite_score": 0.7939,
+      "in_degree": 16,
+      "total_citations": 116,
+      "domain": "em_connectomics",
+      "year": 2023,
+      "title": "Hierarchical architecture of dopaminergic circuits enables second-order conditioning in Drosophila",
+      "openalex_id": "https://openalex.org/W4317866744"
+    },
+    {
+      "rank": 485,
+      "kcore": 26,
+      "composite_score": 0.7916,
+      "in_degree": 78,
+      "total_citations": 528,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Olfactory learning skews mushroom body output pathways to steer behavioral choice in Drosophila",
+      "openalex_id": "https://openalex.org/W2192457000"
+    },
+    {
+      "rank": 490,
+      "kcore": 26,
+      "composite_score": 0.791,
+      "in_degree": 56,
+      "total_citations": 352,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "Testing Odor Response Stereotypy in the Drosophila Mushroom Body",
+      "openalex_id": "https://openalex.org/W2123953466"
+    },
+    {
+      "rank": 492,
+      "kcore": 26,
+      "composite_score": 0.791,
+      "in_degree": 108,
+      "total_citations": 680,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "Dopaminergic neurons write and update memories with cell-type-specific rules",
+      "openalex_id": "https://openalex.org/W2488060953"
+    },
+    {
+      "rank": 201,
+      "kcore": 25,
+      "composite_score": 0.8381,
+      "in_degree": 189,
+      "total_citations": 1524,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Dense connectomic reconstruction in layer 4 of the somatosensory cortex",
+      "openalex_id": "https://openalex.org/W2982268628"
+    },
+    {
+      "rank": 202,
+      "kcore": 25,
+      "composite_score": 0.8379,
+      "in_degree": 146,
+      "total_citations": 1548,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "The Connectome of a Decision-Making Neural Network",
+      "openalex_id": "https://openalex.org/W2033579242"
+    },
+    {
+      "rank": 205,
+      "kcore": 25,
+      "composite_score": 0.8376,
+      "in_degree": 195,
+      "total_citations": 4404,
+      "domain": "em_connectomics",
+      "year": 2012,
+      "title": "TrakEM2 Software for Neural Circuit Reconstruction",
+      "openalex_id": "https://openalex.org/W2147762902"
+    },
+    {
+      "rank": 208,
+      "kcore": 25,
+      "composite_score": 0.8365,
+      "in_degree": 131,
+      "total_citations": 1797,
+      "domain": "methods_ml",
+      "year": 2013,
+      "title": "From the connectome to brain function",
+      "openalex_id": "https://openalex.org/W2139919351"
+    },
+    {
+      "rank": 209,
+      "kcore": 25,
+      "composite_score": 0.8356,
+      "in_degree": 19,
+      "total_citations": 152,
+      "domain": "neuroscience",
+      "year": 2023,
+      "title": "Generating parallel representations of position and identity in the olfactory system",
+      "openalex_id": "https://openalex.org/W4378213119"
+    },
+    {
+      "rank": 211,
+      "kcore": 25,
+      "composite_score": 0.8355,
+      "in_degree": 14,
+      "total_citations": 150,
+      "domain": "em_connectomics",
+      "year": 2020,
+      "title": "The Drosophila Split Gal4 System for Neural Circuit Mapping",
+      "openalex_id": "https://openalex.org/W3106447471"
+    },
+    {
+      "rank": 213,
+      "kcore": 25,
+      "composite_score": 0.8355,
+      "in_degree": 247,
+      "total_citations": 8508,
+      "domain": "em_connectomics",
+      "year": 2014,
+      "title": "A mesoscale connectome of the mouse brain",
+      "openalex_id": "https://openalex.org/W1975389666"
+    },
+    {
+      "rank": 215,
+      "kcore": 25,
+      "composite_score": 0.8353,
+      "in_degree": 83,
+      "total_citations": 1161,
+      "domain": "unknown",
+      "year": 2009,
+      "title": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation",
+      "openalex_id": "https://openalex.org/W2169805405"
+    },
+    {
+      "rank": 218,
+      "kcore": 25,
+      "composite_score": 0.8348,
+      "in_degree": 107,
+      "total_citations": 1520,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "GFP Reconstitution Across Synaptic Partners (GRASP) Defines Cell Contacts and Synapses in Living Nervous Systems",
+      "openalex_id": "https://openalex.org/W1996761102"
+    },
+    {
+      "rank": 219,
+      "kcore": 25,
+      "composite_score": 0.8348,
+      "in_degree": 23,
+      "total_citations": 137,
+      "domain": "neuroscience",
+      "year": 2024,
+      "title": "Fine-grained descending control of steering in walking Drosophila",
+      "openalex_id": "https://openalex.org/W4402557652"
+    },
+    {
+      "rank": 223,
+      "kcore": 25,
+      "composite_score": 0.8341,
+      "in_degree": 131,
+      "total_citations": 1220,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Synaptic circuits and their variations within different columns in the visual system of <i>Drosophila</i>",
+      "openalex_id": "https://openalex.org/W2232480453"
+    },
+    {
+      "rank": 224,
+      "kcore": 25,
+      "composite_score": 0.834,
+      "in_degree": 117,
+      "total_citations": 655,
+      "domain": "neuroscience",
+      "year": 2017,
+      "title": "Micro-connectomics: probing the organization of neuronal networks at the cellular scale",
+      "openalex_id": "https://openalex.org/W2583615521"
+    },
+    {
+      "rank": 229,
+      "kcore": 25,
+      "composite_score": 0.8326,
+      "in_degree": 14,
+      "total_citations": 43,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "A comprehensive neuroanatomical survey of the Drosophila Lobula Plate Tangential Neurons with predictions for their optic flow sensitivity",
+      "openalex_id": "https://openalex.org/W4390786883"
+    },
+    {
+      "rank": 232,
+      "kcore": 25,
+      "composite_score": 0.8317,
+      "in_degree": 325,
+      "total_citations": 2802,
+      "domain": "em_connectomics",
+      "year": 2011,
+      "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+      "openalex_id": "https://openalex.org/W1977691361"
+    },
+    {
+      "rank": 233,
+      "kcore": 25,
+      "composite_score": 0.8316,
+      "in_degree": 17,
+      "total_citations": 124,
+      "domain": "unknown",
+      "year": 2023,
+      "title": "Visual processing in the fly, from photoreceptors to behavior",
+      "openalex_id": "https://openalex.org/W4367669130"
+    },
+    {
+      "rank": 237,
+      "kcore": 25,
+      "composite_score": 0.8311,
+      "in_degree": 119,
+      "total_citations": 1012,
+      "domain": "em_connectomics",
+      "year": 2014,
+      "title": "Space\u2013time wiring specificity supports direction selectivity in the retina",
+      "openalex_id": "https://openalex.org/W2040156859"
+    },
+    {
+      "rank": 241,
+      "kcore": 25,
+      "composite_score": 0.83,
+      "in_degree": 113,
+      "total_citations": 522,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "High\u2010resolution, high\u2010throughput imaging with a multibeam scanning electron microscope",
+      "openalex_id": "https://openalex.org/W1608731182"
+    },
+    {
+      "rank": 243,
+      "kcore": 25,
+      "composite_score": 0.8295,
+      "in_degree": 13,
+      "total_citations": 72,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Comparative connectomics of the descending and ascending neurons of the <i>Drosophila</i> nervous system: stereotypy and sexual dimorphism",
+      "openalex_id": "https://openalex.org/W4399395323"
+    },
+    {
+      "rank": 244,
+      "kcore": 25,
+      "composite_score": 0.8294,
+      "in_degree": 80,
+      "total_citations": 618,
+      "domain": "neuroscience",
+      "year": 2012,
+      "title": "Structural neurobiology: missing link to a mechanistic understanding of neural computation",
+      "openalex_id": "https://openalex.org/W2000616436"
+    },
+    {
+      "rank": 249,
+      "kcore": 25,
+      "composite_score": 0.8286,
+      "in_degree": 82,
+      "total_citations": 434,
+      "domain": "neuroscience",
+      "year": 2006,
+      "title": "Uniform Serial Sectioning for Transmission Electron Microscopy",
+      "openalex_id": "https://openalex.org/W2004626802"
+    },
+    {
+      "rank": 258,
+      "kcore": 25,
+      "composite_score": 0.8269,
+      "in_degree": 98,
+      "total_citations": 705,
+      "domain": "em_connectomics",
+      "year": 2018,
+      "title": "VAST (Volume Annotation and Segmentation Tool): Efficient Manual and Semi-Automatic Labeling of Large 3D Image Stacks",
+      "openalex_id": "https://openalex.org/W2894822713"
+    },
+    {
+      "rank": 259,
+      "kcore": 25,
+      "composite_score": 0.8265,
+      "in_degree": 64,
+      "total_citations": 1556,
+      "domain": "em_connectomics",
+      "year": 2010,
+      "title": "An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy",
+      "openalex_id": "https://openalex.org/W1969013163"
+    },
+    {
+      "rank": 261,
+      "kcore": 25,
+      "composite_score": 0.8263,
+      "in_degree": 18,
+      "total_citations": 90,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Transforming descending input into behavior: The organization of premotor circuits in the Drosophila Male Adult Nerve Cord connectome",
+      "openalex_id": "https://openalex.org/W4392917988"
+    },
+    {
+      "rank": 264,
+      "kcore": 25,
+      "composite_score": 0.8255,
+      "in_degree": 23,
+      "total_citations": 132,
+      "domain": "neuroscience",
+      "year": 2022,
+      "title": "Descending neurons coordinate anterior grooming behavior in Drosophila",
+      "openalex_id": "https://openalex.org/W4210430776"
+    },
+    {
+      "rank": 265,
+      "kcore": 25,
+      "composite_score": 0.8253,
+      "in_degree": 66,
+      "total_citations": 361,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "Large-scale automatic reconstruction of neuronal processes from electron microscopy images",
+      "openalex_id": "https://openalex.org/W1976032673"
+    },
+    {
+      "rank": 268,
+      "kcore": 25,
+      "composite_score": 0.825,
+      "in_degree": 79,
+      "total_citations": 1047,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Crowdsourcing the creation of image segmentation algorithms for connectomics",
+      "openalex_id": "https://openalex.org/W1898703532"
+    },
+    {
+      "rank": 269,
+      "kcore": 25,
+      "composite_score": 0.8248,
+      "in_degree": 15,
+      "total_citations": 88,
+      "domain": "em_connectomics",
+      "year": 2022,
+      "title": "Descending neuron population dynamics during odor-evoked and spontaneous limb-dependent behaviors",
+      "openalex_id": "https://openalex.org/W4307210433"
+    },
+    {
+      "rank": 270,
+      "kcore": 25,
+      "composite_score": 0.8245,
+      "in_degree": 114,
+      "total_citations": 862,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Enhanced FIB-SEM systems for large-volume 3D imaging",
+      "openalex_id": "https://openalex.org/W4211114670"
+    },
+    {
+      "rank": 275,
+      "kcore": 25,
+      "composite_score": 0.8236,
+      "in_degree": 79,
+      "total_citations": 556,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "SegEM: Efficient Image Analysis for High-Resolution Connectomics",
+      "openalex_id": "https://openalex.org/W1756731880"
+    },
+    {
+      "rank": 276,
+      "kcore": 25,
+      "composite_score": 0.8235,
+      "in_degree": 107,
+      "total_citations": 1083,
+      "domain": "methods_ml",
+      "year": 2012,
+      "title": "Elastic volume reconstruction from series of ultra-thin microscopy sections",
+      "openalex_id": "https://openalex.org/W2026140461"
+    },
+    {
+      "rank": 279,
+      "kcore": 25,
+      "composite_score": 0.8227,
+      "in_degree": 19,
+      "total_citations": 78,
+      "domain": "em_connectomics",
+      "year": 2022,
+      "title": "Drosophila gustatory projections are segregated by taste modality and connectivity",
+      "openalex_id": "https://openalex.org/W4281478671"
+    },
+    {
+      "rank": 280,
+      "kcore": 25,
+      "composite_score": 0.8226,
+      "in_degree": 54,
+      "total_citations": 688,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "3D structural imaging of the brain with photons and electrons",
+      "openalex_id": "https://openalex.org/W2105436594"
+    },
+    {
+      "rank": 281,
+      "kcore": 25,
+      "composite_score": 0.8224,
+      "in_degree": 100,
+      "total_citations": 618,
+      "domain": "methods_ml",
+      "year": 2012,
+      "title": "High-contrast en bloc staining of neuronal tissue for field emission scanning electron microscopy",
+      "openalex_id": "https://openalex.org/W2036100004"
+    },
+    {
+      "rank": 282,
+      "kcore": 25,
+      "composite_score": 0.8222,
+      "in_degree": 125,
+      "total_citations": 1182,
+      "domain": "unknown",
+      "year": 2011,
+      "title": "The Big and the Small: Challenges of Imaging the Brain\u2019s Circuits",
+      "openalex_id": "https://openalex.org/W1973824709"
+    },
+    {
+      "rank": 287,
+      "kcore": 25,
+      "composite_score": 0.8216,
+      "in_degree": 64,
+      "total_citations": 534,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "Semi-automated reconstruction of neural circuits using electron microscopy",
+      "openalex_id": "https://openalex.org/W2087523977"
+    },
+    {
+      "rank": 290,
+      "kcore": 25,
+      "composite_score": 0.821,
+      "in_degree": 14,
+      "total_citations": 78,
+      "domain": "em_connectomics",
+      "year": 2020,
+      "title": "Distinct subpopulations of mechanosensory chordotonal organ neurons elicit grooming of the fruit fly antennae",
+      "openalex_id": "https://openalex.org/W3094308512"
+    },
+    {
+      "rank": 298,
+      "kcore": 25,
+      "composite_score": 0.8196,
+      "in_degree": 18,
+      "total_citations": 76,
+      "domain": "em_connectomics",
+      "year": 2025,
+      "title": "Eye structure shapes neuron function in Drosophila motion vision",
+      "openalex_id": "https://openalex.org/W4412600769"
+    },
+    {
+      "rank": 300,
+      "kcore": 25,
+      "composite_score": 0.8192,
+      "in_degree": 204,
+      "total_citations": 2193,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused Ion Beam Milling",
+      "openalex_id": "https://openalex.org/W1965637518"
+    },
+    {
+      "rank": 309,
+      "kcore": 25,
+      "composite_score": 0.8176,
+      "in_degree": 70,
+      "total_citations": 596,
+      "domain": "methods_ml",
+      "year": 2013,
+      "title": "Why not connectomics?",
+      "openalex_id": "https://openalex.org/W2012469563"
+    },
+    {
+      "rank": 311,
+      "kcore": 25,
+      "composite_score": 0.8167,
+      "in_degree": 14,
+      "total_citations": 61,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "A split-GAL4 driver line resource for Drosophila neuron types",
+      "openalex_id": "https://openalex.org/W4401115576"
+    },
+    {
+      "rank": 314,
+      "kcore": 25,
+      "composite_score": 0.8165,
+      "in_degree": 17,
+      "total_citations": 108,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Predicting visual function by interpreting a neuronal wiring diagram",
+      "openalex_id": "https://openalex.org/W4403062871"
+    },
+    {
+      "rank": 316,
+      "kcore": 25,
+      "composite_score": 0.8163,
+      "in_degree": 81,
+      "total_citations": 608,
+      "domain": "methods_ml",
+      "year": 2017,
+      "title": "Automated synaptic connectivity inference for volume electron microscopy",
+      "openalex_id": "https://openalex.org/W2592023542"
+    },
+    {
+      "rank": 317,
+      "kcore": 25,
+      "composite_score": 0.8158,
+      "in_degree": 70,
+      "total_citations": 343,
+      "domain": "unknown",
+      "year": 2019,
+      "title": "Automated Reconstruction of a Serial-Section EM Drosophila Brain with Flood-Filling Networks and Local Realignment",
+      "openalex_id": "https://openalex.org/W2965831377"
+    },
+    {
+      "rank": 318,
+      "kcore": 25,
+      "composite_score": 0.8158,
+      "in_degree": 63,
+      "total_citations": 330,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "Large-Scale Automated Histology in the Pursuit of Connectomes",
+      "openalex_id": "https://openalex.org/W2151003399"
+    },
+    {
+      "rank": 319,
+      "kcore": 25,
+      "composite_score": 0.8157,
+      "in_degree": 51,
+      "total_citations": 699,
+      "domain": "neuroscience",
+      "year": 2011,
+      "title": "Wiring Economy and Volume Exclusion Determine Neuronal Placement in the Drosophila Brain",
+      "openalex_id": "https://openalex.org/W2133006601"
+    },
+    {
+      "rank": 324,
+      "kcore": 25,
+      "composite_score": 0.8149,
+      "in_degree": 52,
+      "total_citations": 435,
+      "domain": "neuroscience",
+      "year": 2009,
+      "title": "Reading the Book of Memory: Sparse Sampling versus Dense Mapping of Connectomes",
+      "openalex_id": "https://openalex.org/W2034538997"
+    },
+    {
+      "rank": 331,
+      "kcore": 25,
+      "composite_score": 0.8138,
+      "in_degree": 147,
+      "total_citations": 590,
+      "domain": "em_connectomics",
+      "year": 2014,
+      "title": "Imaging ATUM ultrathin section libraries with WaferMapper: a multi-scale approach to EM reconstruction of neural circuits",
+      "openalex_id": "https://openalex.org/W2157151515"
+    },
+    {
+      "rank": 334,
+      "kcore": 25,
+      "composite_score": 0.8132,
+      "in_degree": 82,
+      "total_citations": 462,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "The comprehensive connectome of a neural substrate for \u2018ON\u2019 motion detection in Drosophila",
+      "openalex_id": "https://openalex.org/W2605475473"
+    },
+    {
+      "rank": 345,
+      "kcore": 25,
+      "composite_score": 0.8111,
+      "in_degree": 67,
+      "total_citations": 1850,
+      "domain": "neuroscience",
+      "year": 2017,
+      "title": "Neuronal cell-type classification: challenges, opportunities and the path forward",
+      "openalex_id": "https://openalex.org/W2744478946"
+    },
+    {
+      "rank": 347,
+      "kcore": 25,
+      "composite_score": 0.8108,
+      "in_degree": 173,
+      "total_citations": 1614,
+      "domain": "neuroscience",
+      "year": 2007,
+      "title": "Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits",
+      "openalex_id": "https://openalex.org/W2145504425"
+    },
+    {
+      "rank": 349,
+      "kcore": 25,
+      "composite_score": 0.8104,
+      "in_degree": 71,
+      "total_citations": 393,
+      "domain": "neuroscience",
+      "year": 2018,
+      "title": "Progress and remaining challenges in high-throughput volume electron microscopy",
+      "openalex_id": "https://openalex.org/W2802399484"
+    },
+    {
+      "rank": 350,
+      "kcore": 25,
+      "composite_score": 0.8104,
+      "in_degree": 17,
+      "total_citations": 215,
+      "domain": "unknown",
+      "year": 2022,
+      "title": "Structured cerebellar connectivity supports resilient pattern separation",
+      "openalex_id": "https://openalex.org/W4309873897"
+    },
+    {
+      "rank": 355,
+      "kcore": 25,
+      "composite_score": 0.8099,
+      "in_degree": 68,
+      "total_citations": 480,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Competitive Disinhibition Mediates Behavioral Choice and Sequences in Drosophila",
+      "openalex_id": "https://openalex.org/W2529695649"
+    },
+    {
+      "rank": 358,
+      "kcore": 25,
+      "composite_score": 0.8095,
+      "in_degree": 98,
+      "total_citations": 888,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "The Fuzzy Logic of Network Connectivity in Mouse Visual Thalamus",
+      "openalex_id": "https://openalex.org/W2307899896"
+    },
+    {
+      "rank": 365,
+      "kcore": 25,
+      "composite_score": 0.8085,
+      "in_degree": 14,
+      "total_citations": 80,
+      "domain": "em_connectomics",
+      "year": 2023,
+      "title": "Global change in brain state during spontaneous and forced walk in Drosophila is composed of combined activity patterns of different neuron classes",
+      "openalex_id": "https://openalex.org/W4366082722"
+    },
+    {
+      "rank": 368,
+      "kcore": 25,
+      "composite_score": 0.8083,
+      "in_degree": 11,
+      "total_citations": 39,
+      "domain": "em_connectomics",
+      "year": 2023,
+      "title": "A leaky integrate-and-fire computational model based on the connectome of the entire adult <i>Drosophila</i> brain reveals insights into sensorimotor processing",
+      "openalex_id": "https://openalex.org/W4367845689"
+    },
+    {
+      "rank": 369,
+      "kcore": 25,
+      "composite_score": 0.8081,
+      "in_degree": 75,
+      "total_citations": 688,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "Dense EM-based reconstruction of the interglomerular projectome in the zebrafish olfactory bulb",
+      "openalex_id": "https://openalex.org/W2340082345"
+    },
+    {
+      "rank": 370,
+      "kcore": 25,
+      "composite_score": 0.808,
+      "in_degree": 38,
+      "total_citations": 332,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "Toward large-scale connectome reconstructions",
+      "openalex_id": "https://openalex.org/W2043847720"
+    },
+    {
+      "rank": 373,
+      "kcore": 25,
+      "composite_score": 0.8077,
+      "in_degree": 54,
+      "total_citations": 592,
+      "domain": "neuroscience",
+      "year": 2010,
+      "title": "Machines that learn to segment images: a crucial technology for connectomics",
+      "openalex_id": "https://openalex.org/W2026981426"
+    },
+    {
+      "rank": 377,
+      "kcore": 25,
+      "composite_score": 0.807,
+      "in_degree": 116,
+      "total_citations": 1068,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Large-volume en-bloc staining for electron microscopy-based connectomics",
+      "openalex_id": "https://openalex.org/W2254436645"
+    },
+    {
+      "rank": 380,
+      "kcore": 25,
+      "composite_score": 0.8068,
+      "in_degree": 71,
+      "total_citations": 880,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "High-resolution whole-brain staining for electron microscopic circuit reconstruction",
+      "openalex_id": "https://openalex.org/W1991875744"
+    },
+    {
+      "rank": 384,
+      "kcore": 25,
+      "composite_score": 0.8065,
+      "in_degree": 62,
+      "total_citations": 546,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "Ome sweet ome: what can the genome tell us about the connectome?",
+      "openalex_id": "https://openalex.org/W2076922159"
+    },
+    {
+      "rank": 385,
+      "kcore": 25,
+      "composite_score": 0.8065,
+      "in_degree": 53,
+      "total_citations": 1892,
+      "domain": "neuroscience",
+      "year": 2006,
+      "title": "Bruchpilot, a Protein with Homology to ELKS/CAST, Is Required for Structural Integrity and Function of Synaptic Active Zones in Drosophila",
+      "openalex_id": "https://openalex.org/W2053050328"
+    },
+    {
+      "rank": 387,
+      "kcore": 25,
+      "composite_score": 0.8062,
+      "in_degree": 13,
+      "total_citations": 81,
+      "domain": "unknown",
+      "year": 2022,
+      "title": "A Survey of Visualization and Analysis in High\u2010Resolution Connectomics",
+      "openalex_id": "https://openalex.org/W4298724002"
+    },
+    {
+      "rank": 389,
+      "kcore": 25,
+      "composite_score": 0.8058,
+      "in_degree": 47,
+      "total_citations": 771,
+      "domain": "unknown",
+      "year": 2014,
+      "title": "Discovery of Brainwide Neural-Behavioral Maps via Multiscale Unsupervised Structure Learning",
+      "openalex_id": "https://openalex.org/W1993695976"
+    },
+    {
+      "rank": 390,
+      "kcore": 25,
+      "composite_score": 0.8058,
+      "in_degree": 91,
+      "total_citations": 795,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "The CNS connectome of a tadpole larva of Ciona intestinalis (L.) highlights sidedness in the brain of a chordate sibling",
+      "openalex_id": "https://openalex.org/W2559748052"
+    },
+    {
+      "rank": 394,
+      "kcore": 25,
+      "composite_score": 0.8054,
+      "in_degree": 78,
+      "total_citations": 666,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Superhuman Accuracy on the SNEMI3D Connectomics Challenge",
+      "openalex_id": "https://openalex.org/W2621042378"
+    },
+    {
+      "rank": 398,
+      "kcore": 25,
+      "composite_score": 0.8048,
+      "in_degree": 55,
+      "total_citations": 806,
+      "domain": "em_connectomics",
+      "year": 2019,
+      "title": "Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution",
+      "openalex_id": "https://openalex.org/W2910779362"
+    },
+    {
+      "rank": 422,
+      "kcore": 25,
+      "composite_score": 0.8013,
+      "in_degree": 12,
+      "total_citations": 75,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Connectomic reconstruction predicts visual features used for navigation",
+      "openalex_id": "https://openalex.org/W4403062876"
+    },
+    {
+      "rank": 424,
+      "kcore": 25,
+      "composite_score": 0.8011,
+      "in_degree": 58,
+      "total_citations": 1059,
+      "domain": "unknown",
+      "year": 2014,
+      "title": "Exploring the third dimension: Volume electron microscopy comes of age",
+      "openalex_id": "https://openalex.org/W2034184519"
+    },
+    {
+      "rank": 433,
+      "kcore": 25,
+      "composite_score": 0.7996,
+      "in_degree": 37,
+      "total_citations": 352,
+      "domain": "neuroscience",
+      "year": 2013,
+      "title": "Systematic Analysis of Neural Projections Reveals Clonal Composition of the Drosophila Brain",
+      "openalex_id": "https://openalex.org/W2005735307"
+    },
+    {
+      "rank": 441,
+      "kcore": 25,
+      "composite_score": 0.7986,
+      "in_degree": 67,
+      "total_citations": 612,
+      "domain": "em_connectomics",
+      "year": 2017,
+      "title": "Axonal synapse sorting in medial entorhinal cortex",
+      "openalex_id": "https://openalex.org/W2760555119"
+    },
+    {
+      "rank": 448,
+      "kcore": 25,
+      "composite_score": 0.7974,
+      "in_degree": 54,
+      "total_citations": 408,
+      "domain": "em_connectomics",
+      "year": 2016,
+      "title": "A circuit mechanism for the propagation of waves of muscle contraction in Drosophila",
+      "openalex_id": "https://openalex.org/W2288653959"
+    },
+    {
+      "rank": 453,
+      "kcore": 25,
+      "composite_score": 0.7968,
+      "in_degree": 41,
+      "total_citations": 518,
+      "domain": "unknown",
+      "year": 2006,
+      "title": "The Drosophila Larva as a Model for Studying Chemosensation and Chemosensory Learning: A Review",
+      "openalex_id": "https://openalex.org/W2114284525"
+    },
+    {
+      "rank": 462,
+      "kcore": 25,
+      "composite_score": 0.7955,
+      "in_degree": 87,
+      "total_citations": 816,
+      "domain": "methods_ml",
+      "year": 2017,
+      "title": "webKnossos: efficient online 3D data annotation for connectomics",
+      "openalex_id": "https://openalex.org/W2625278673"
+    },
+    {
+      "rank": 469,
+      "kcore": 25,
+      "composite_score": 0.7945,
+      "in_degree": 11,
+      "total_citations": 168,
+      "domain": "unknown",
+      "year": 2022,
+      "title": "Endocrine cybernetics: neuropeptides as molecular switches in behavioural decisions",
+      "openalex_id": "https://openalex.org/W4288046971"
+    },
+    {
+      "rank": 473,
+      "kcore": 25,
+      "composite_score": 0.7941,
+      "in_degree": 55,
+      "total_citations": 638,
+      "domain": "unknown",
+      "year": 2016,
+      "title": "Volume scanning electron microscopy for imaging biological ultrastructure",
+      "openalex_id": "https://openalex.org/W2480732292"
+    },
+    {
+      "rank": 476,
+      "kcore": 25,
+      "composite_score": 0.7936,
+      "in_degree": 63,
+      "total_citations": 1233,
+      "domain": "em_connectomics",
+      "year": 1991,
+      "title": "Synaptic organization of columnar elements in the lamina of the wild type in <i>Drosophila melanogaster</i>",
+      "openalex_id": "https://openalex.org/W2111748868"
+    },
+    {
+      "rank": 479,
+      "kcore": 25,
+      "composite_score": 0.7932,
+      "in_degree": 62,
+      "total_citations": 446,
+      "domain": "neuroscience",
+      "year": 2014,
+      "title": "A GAL4 Driver Resource for Developmental and Behavioral Studies on the Larval CNS of Drosophila",
+      "openalex_id": "https://openalex.org/W1997996755"
+    },
+    {
+      "rank": 480,
+      "kcore": 25,
+      "composite_score": 0.7931,
+      "in_degree": 76,
+      "total_citations": 608,
+      "domain": "methods_ml",
+      "year": 2015,
+      "title": "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics",
+      "openalex_id": "https://openalex.org/W2083707522"
+    },
+    {
+      "rank": 484,
+      "kcore": 25,
+      "composite_score": 0.7924,
+      "in_degree": 10,
+      "total_citations": 46,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Social state alters vision using three circuit mechanisms in Drosophila",
+      "openalex_id": "https://openalex.org/W4404566636"
+    },
+    {
+      "rank": 214,
+      "kcore": 24,
+      "composite_score": 0.8355,
+      "in_degree": 16,
+      "total_citations": 95,
+      "domain": "em_connectomics",
+      "year": 2022,
+      "title": "Synaptic counts approximate synaptic contact area in Drosophila",
+      "openalex_id": "https://openalex.org/W4226069364"
+    },
+    {
+      "rank": 236,
+      "kcore": 24,
+      "composite_score": 0.8311,
+      "in_degree": 19,
+      "total_citations": 134,
+      "domain": "em_connectomics",
+      "year": 2022,
+      "title": "Taste quality and hunger interactions in a feeding sensorimotor circuit",
+      "openalex_id": "https://openalex.org/W4283826890"
+    },
+    {
+      "rank": 250,
+      "kcore": 24,
+      "composite_score": 0.8286,
+      "in_degree": 60,
+      "total_citations": 1550,
+      "domain": "neuroscience",
+      "year": 2008,
+      "title": "Genetic Dissection of Neural Circuits",
+      "openalex_id": "https://openalex.org/W1999055090"
+    },
+    {
+      "rank": 253,
+      "kcore": 24,
+      "composite_score": 0.8284,
+      "in_degree": 87,
+      "total_citations": 4020,
+      "domain": "methods_ml",
+      "year": 2009,
+      "title": "Imaging neural activity in worms, flies and mice with improved GCaMP calcium indicators",
+      "openalex_id": "https://openalex.org/W2109234881"
+    },
+    {
+      "rank": 260,
+      "kcore": 24,
+      "composite_score": 0.8265,
+      "in_degree": 109,
+      "total_citations": 3750,
+      "domain": "unknown",
+      "year": 2007,
+      "title": "Transgenic strategies for combinatorial expression of fluorescent proteins in the nervous system",
+      "openalex_id": "https://openalex.org/W2110232607"
+    },
+    {
+      "rank": 272,
+      "kcore": 24,
+      "composite_score": 0.824,
+      "in_degree": 50,
+      "total_citations": 292,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "A Computational Framework for Ultrastructural Mapping of Neural Circuitry",
+      "openalex_id": "https://openalex.org/W2094574421"
+    },
+    {
+      "rank": 284,
+      "kcore": 24,
+      "composite_score": 0.8219,
+      "in_degree": 63,
+      "total_citations": 573,
+      "domain": "unknown",
+      "year": 2011,
+      "title": "Synthesis and 5\u03b1-Reductase Inhibitory Activity of C21 Steroids Having 1,4-diene or 4,6-diene 20-ones and 4-Azasteroid 20-Oximes",
+      "openalex_id": "https://openalex.org/W1860446288"
+    },
+    {
+      "rank": 295,
+      "kcore": 24,
+      "composite_score": 0.8199,
+      "in_degree": 15,
+      "total_citations": 117,
+      "domain": "methods_ml",
+      "year": 2023,
+      "title": "High-contrast en bloc staining of mouse whole-brain and human brain samples for EM-based connectomics",
+      "openalex_id": "https://openalex.org/W4375858899"
+    },
+    {
+      "rank": 306,
+      "kcore": 24,
+      "composite_score": 0.8181,
+      "in_degree": 79,
+      "total_citations": 2136,
+      "domain": "unknown",
+      "year": 2012,
+      "title": "Beyond the connectome: How neuromodulators shape neural circuits",
+      "openalex_id": "https://openalex.org/W2009912939"
+    },
+    {
+      "rank": 312,
+      "kcore": 24,
+      "composite_score": 0.8166,
+      "in_degree": 127,
+      "total_citations": 22221,
+      "domain": "network_science",
+      "year": 2002,
+      "title": "Network Motifs: Simple Building Blocks of Complex Networks",
+      "openalex_id": "https://openalex.org/W2153624566"
+    },
+    {
+      "rank": 320,
+      "kcore": 24,
+      "composite_score": 0.8156,
+      "in_degree": 35,
+      "total_citations": 332,
+      "domain": "neuroscience",
+      "year": 2005,
+      "title": "Glomerular Maps without Cellular Redundancy at Successive Levels of the Drosophila Larval Olfactory Circuit",
+      "openalex_id": "https://openalex.org/W2129160696"
+    },
+    {
+      "rank": 330,
+      "kcore": 24,
+      "composite_score": 0.8141,
+      "in_degree": 13,
+      "total_citations": 67,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Whole-body connectome of a segmented annelid larva",
+      "openalex_id": "https://openalex.org/W4400477864"
+    },
+    {
+      "rank": 335,
+      "kcore": 24,
+      "composite_score": 0.8131,
+      "in_degree": 37,
+      "total_citations": 236,
+      "domain": "em_connectomics",
+      "year": 2009,
+      "title": "The Interscutularis Muscle Connectome",
+      "openalex_id": "https://openalex.org/W2139421798"
+    },
+    {
+      "rank": 340,
+      "kcore": 24,
+      "composite_score": 0.8118,
+      "in_degree": 13,
+      "total_citations": 112,
+      "domain": "em_connectomics",
+      "year": 2021,
+      "title": "A neuronal ensemble encoding adaptive choice during sensory conflict in Drosophila",
+      "openalex_id": "https://openalex.org/W3179852190"
+    },
+    {
+      "rank": 341,
+      "kcore": 24,
+      "composite_score": 0.8117,
+      "in_degree": 15,
+      "total_citations": 60,
+      "domain": "em_connectomics",
+      "year": 2021,
+      "title": "Permeabilization-free en bloc immunohistochemistry for correlative microscopy",
+      "openalex_id": "https://openalex.org/W3160415498"
+    },
+    {
+      "rank": 354,
+      "kcore": 24,
+      "composite_score": 0.8099,
+      "in_degree": 15,
+      "total_citations": 77,
+      "domain": "neuroscience",
+      "year": 2021,
+      "title": "The connectome predicts resting-state functional connectivity across the Drosophila brain",
+      "openalex_id": "https://openalex.org/W3137392009"
+    },
+    {
+      "rank": 388,
+      "kcore": 24,
+      "composite_score": 0.8058,
+      "in_degree": 70,
+      "total_citations": 1278,
+      "domain": "em_connectomics",
+      "year": 2015,
+      "title": "Ultrastructural analysis of adult mouse neocortex comparing aldehyde perfusion with cryo fixation",
+      "openalex_id": "https://openalex.org/W1926373965"
+    },
+    {
+      "rank": 393,
+      "kcore": 24,
+      "composite_score": 0.8055,
+      "in_degree": 71,
+      "total_citations": 630,
+      "domain": "neuroscience",
+      "year": 2015,
+      "title": "Connectomics-Based Analysis of Information Flow in the Drosophila Brain",
+      "openalex_id": "https://openalex.org/W2000904439"
+    },
+    {
+      "rank": 419,
+      "kcore": 24,
+      "composite_score": 0.8014,
+      "in_degree": 48,
+      "total_citations": 438,
+      "domain": "methods_ml",
+      "year": 2010,
+      "title": "As-rigid-as-possible mosaicking and serial section registration of large ssTEM datasets",
+      "openalex_id": "https://openalex.org/W2128366179"
+    },
+    {
+      "rank": 421,
+      "kcore": 24,
+      "composite_score": 0.8013,
+      "in_degree": 18,
+      "total_citations": 78,
+      "domain": "em_connectomics",
+      "year": 2024,
+      "title": "Connectomic reconstruction of a cortical column",
+      "openalex_id": "https://openalex.org/W4393196410"
+    },
+    {
+      "rank": 429,
+      "kcore": 24,
+      "composite_score": 0.8001,
+      "in_degree": 61,
+      "total_citations": 776,
+      "domain": "neuroscience",
+      "year": 2016,
+      "title": "From Cajal to Connectome and Beyond",
+      "openalex_id": "https://openalex.org/W2196860498"
+    },
+    {
+      "rank": 452,
+      "kcore": 24,
+      "composite_score": 0.797,
+      "in_degree": 11,
+      "total_citations": 75,
+      "domain": "neuroscience",
+      "year": 2024,
+      "title": "Predicting modular functions and neural coding of behavior from a synaptic wiring diagram",
+      "openalex_id": "https://openalex.org/W4404612853"
+    },
+    {
+      "rank": 471,
+      "kcore": 24,
+      "composite_score": 0.7944,
+      "in_degree": 11,
+      "total_citations": 84,
+      "domain": "em_connectomics",
+      "year": 2023,
+      "title": "Somatotopic organization among parallel sensory pathways that promote a grooming sequence in Drosophila",
+      "openalex_id": "https://openalex.org/W4378807331"
+    }
+  ]
+}

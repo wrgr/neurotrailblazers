@@ -1,0 +1,1042 @@
+[
+  {
+    "community_id": 0,
+    "label": "Community 0",
+    "size": 1454,
+    "members": [
+      "https://openalex.org/W3038470276",
+      "https://openalex.org/W4375858899",
+      "https://openalex.org/W4389305055",
+      "https://openalex.org/W4390815345",
+      "https://openalex.org/W4362636855",
+      "https://openalex.org/W4200547087",
+      "https://openalex.org/W4415294573",
+      "https://openalex.org/W2759011314",
+      "https://openalex.org/W3201820946",
+      "https://openalex.org/W4401322407",
+      "https://openalex.org/W2910779362",
+      "https://openalex.org/W4322739958",
+      "https://openalex.org/W2891523280",
+      "https://openalex.org/W4401455304",
+      "https://openalex.org/W4317390343",
+      "https://openalex.org/W3091391064",
+      "https://openalex.org/W4417515878",
+      "https://openalex.org/W4412741024",
+      "https://openalex.org/W4400935533",
+      "https://openalex.org/W3158432719",
+      "https://openalex.org/W3114321737",
+      "https://openalex.org/W7134897345",
+      "https://openalex.org/W4411928052",
+      "https://openalex.org/W2952338181",
+      "https://openalex.org/W4309873897",
+      "https://openalex.org/W2941378716",
+      "https://openalex.org/W2783933163",
+      "https://openalex.org/W4417098329",
+      "https://openalex.org/W2038665424",
+      "https://openalex.org/W2023949937",
+      "https://openalex.org/W1513082520",
+      "https://openalex.org/W2117664079",
+      "https://openalex.org/W2121289914",
+      "https://openalex.org/W1977691361",
+      "https://openalex.org/W2145504425",
+      "https://openalex.org/W1965637518",
+      "https://openalex.org/W2040156859",
+      "https://openalex.org/W1926373965",
+      "https://openalex.org/W2002057610",
+      "https://openalex.org/W1973824709",
+      "https://openalex.org/W2026140461",
+      "https://openalex.org/W2053341730",
+      "https://openalex.org/W2069702026",
+      "https://openalex.org/W2016323639",
+      "https://openalex.org/W2031654716",
+      "https://openalex.org/W2088256340",
+      "https://openalex.org/W1608731182",
+      "https://openalex.org/W1991875744",
+      "https://openalex.org/W1997732141",
+      "https://openalex.org/W2153191810"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 1532.0
+      }
+    ],
+    "year_range": [
+      1947,
+      2026
+    ],
+    "top_datasets": [
+      "Larval zebrafish ssEM",
+      "Retinal connectomes",
+      "MICRONS",
+      "C. elegans connectome",
+      "H01"
+    ],
+    "top_methods": [
+      "segmentation",
+      "proofreading",
+      "Flood-Fill Networks",
+      "synapse detection",
+      "CAVE"
+    ]
+  },
+  {
+    "community_id": 5,
+    "label": "Community 5",
+    "size": 968,
+    "members": [
+      "https://openalex.org/W4387130422",
+      "https://openalex.org/W4399940420",
+      "https://openalex.org/W4402236339",
+      "https://openalex.org/W4417144466",
+      "https://openalex.org/W4388035644",
+      "https://openalex.org/W3011830677",
+      "https://openalex.org/W3165479247",
+      "https://openalex.org/W4307728134",
+      "https://openalex.org/W2005926822",
+      "https://openalex.org/W2054930781",
+      "https://openalex.org/W2135369850",
+      "https://openalex.org/W2022235653",
+      "https://openalex.org/W1986285987",
+      "https://openalex.org/W2139741076",
+      "https://openalex.org/W2055806116",
+      "https://openalex.org/W2113197787",
+      "https://openalex.org/W2738724892",
+      "https://openalex.org/W2309258625",
+      "https://openalex.org/W2971899185",
+      "https://openalex.org/W2336155947",
+      "https://openalex.org/W2969343193",
+      "https://openalex.org/W2517512733",
+      "https://openalex.org/W2980964315",
+      "https://openalex.org/W3038145748",
+      "https://openalex.org/W2773680851",
+      "https://openalex.org/W2950958289",
+      "https://openalex.org/W3204443805",
+      "https://openalex.org/W3204722966",
+      "https://openalex.org/W4391450294",
+      "https://openalex.org/W4401947187",
+      "https://openalex.org/W4409283533",
+      "https://openalex.org/W4413946593",
+      "https://openalex.org/W4413946611",
+      "https://openalex.org/W4409283549",
+      "https://openalex.org/W4409312938",
+      "https://openalex.org/W2583615521",
+      "https://openalex.org/W1985940938",
+      "https://openalex.org/W1986246844",
+      "https://openalex.org/W1975389666",
+      "https://openalex.org/W1514853588",
+      "https://openalex.org/W1489333352",
+      "https://openalex.org/W1985392528",
+      "https://openalex.org/W1970719523",
+      "https://openalex.org/W1603661052",
+      "https://openalex.org/W1970789949",
+      "https://openalex.org/W1968899084",
+      "https://openalex.org/W1976738367",
+      "https://openalex.org/W1967695195",
+      "https://openalex.org/W1983923341",
+      "https://openalex.org/W1973654985"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 970.0
+      }
+    ],
+    "year_range": [
+      1909,
+      2026
+    ],
+    "top_datasets": [
+      "Retinal connectomes",
+      "MICRONS",
+      "C. elegans connectome",
+      "Larval zebrafish ssEM",
+      "H01"
+    ],
+    "top_methods": [
+      "segmentation",
+      "proofreading",
+      "NEURD",
+      "CAVE",
+      "synapse detection"
+    ]
+  },
+  {
+    "community_id": 3,
+    "label": "Community 3",
+    "size": 756,
+    "members": [
+      "https://openalex.org/W4400038628",
+      "https://openalex.org/W3095201035",
+      "https://openalex.org/W4411882021",
+      "https://openalex.org/W4402016799",
+      "https://openalex.org/W4392039821",
+      "https://openalex.org/W7125018740",
+      "https://openalex.org/W7128680969",
+      "https://openalex.org/W4402356987",
+      "https://openalex.org/W4318753912",
+      "https://openalex.org/W4411977683",
+      "https://openalex.org/W4379513944",
+      "https://openalex.org/W2903859832",
+      "https://openalex.org/W4409629708",
+      "https://openalex.org/W2899255966",
+      "https://openalex.org/W4409640138",
+      "https://openalex.org/W7118318821",
+      "https://openalex.org/W4285610457",
+      "https://openalex.org/W4403062913",
+      "https://openalex.org/W4399366694",
+      "https://openalex.org/W4376225645",
+      "https://openalex.org/W1989621138",
+      "https://openalex.org/W1929289657",
+      "https://openalex.org/W2020766301",
+      "https://openalex.org/W1906134570",
+      "https://openalex.org/W2104120052",
+      "https://openalex.org/W3016007634",
+      "https://openalex.org/W2949808130",
+      "https://openalex.org/W2261263381",
+      "https://openalex.org/W2605475473",
+      "https://openalex.org/W4323809195",
+      "https://openalex.org/W4206755867",
+      "https://openalex.org/W3120038054",
+      "https://openalex.org/W4353091694",
+      "https://openalex.org/W4396780652",
+      "https://openalex.org/W3174415204",
+      "https://openalex.org/W4280579676",
+      "https://openalex.org/W4402437891",
+      "https://openalex.org/W4403062866",
+      "https://openalex.org/W4403062868",
+      "https://openalex.org/W4403062863",
+      "https://openalex.org/W4403062871",
+      "https://openalex.org/W4400517761",
+      "https://openalex.org/W3084308099",
+      "https://openalex.org/W4403062911",
+      "https://openalex.org/W4403062933",
+      "https://openalex.org/W4403062876",
+      "https://openalex.org/W4409729644",
+      "https://openalex.org/W4404252550",
+      "https://openalex.org/W4412828391",
+      "https://openalex.org/W4415003091"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 757.0
+      }
+    ],
+    "year_range": [
+      1907,
+      2026
+    ],
+    "top_datasets": [
+      "Hemibrain",
+      "Retinal connectomes",
+      "FlyWire",
+      "FAFB",
+      "Larval zebrafish ssEM"
+    ],
+    "top_methods": [
+      "proofreading",
+      "segmentation",
+      "neuPrint",
+      "synapse detection",
+      "CAVE"
+    ]
+  },
+  {
+    "community_id": 1,
+    "label": "Community 1",
+    "size": 721,
+    "members": [
+      "https://openalex.org/W4386315668",
+      "https://openalex.org/W4405925084",
+      "https://openalex.org/W4392367562",
+      "https://openalex.org/W2804752101",
+      "https://openalex.org/W4294927560",
+      "https://openalex.org/W4401602330",
+      "https://openalex.org/W4403542175",
+      "https://openalex.org/W4400281540",
+      "https://openalex.org/W4414785548",
+      "https://openalex.org/W4416332310",
+      "https://openalex.org/W3214292143",
+      "https://openalex.org/W4385880833",
+      "https://openalex.org/W4399589660",
+      "https://openalex.org/W4415227622",
+      "https://openalex.org/W4405963572",
+      "https://openalex.org/W7116630719",
+      "https://openalex.org/W4408243672",
+      "https://openalex.org/W4399605168",
+      "https://openalex.org/W4409158231",
+      "https://openalex.org/W2040092971",
+      "https://openalex.org/W2111987679",
+      "https://openalex.org/W2160938187",
+      "https://openalex.org/W2954731284",
+      "https://openalex.org/W2974348455",
+      "https://openalex.org/W3192789395",
+      "https://openalex.org/W4417123232",
+      "https://openalex.org/W1868105705",
+      "https://openalex.org/W1636429246",
+      "https://openalex.org/W1532017810",
+      "https://openalex.org/W1989952069",
+      "https://openalex.org/W1993673892",
+      "https://openalex.org/W2009912939",
+      "https://openalex.org/W2033579242",
+      "https://openalex.org/W2031012150",
+      "https://openalex.org/W2006615800",
+      "https://openalex.org/W2001130345",
+      "https://openalex.org/W2079441999",
+      "https://openalex.org/W2076792376",
+      "https://openalex.org/W2054444499",
+      "https://openalex.org/W2078393476",
+      "https://openalex.org/W2159254892",
+      "https://openalex.org/W2139919351",
+      "https://openalex.org/W2164693027",
+      "https://openalex.org/W2170893097",
+      "https://openalex.org/W2144150832",
+      "https://openalex.org/W2161130983",
+      "https://openalex.org/W2218429564",
+      "https://openalex.org/W2295460112",
+      "https://openalex.org/W2360366423",
+      "https://openalex.org/W4284970310"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 720.0
+      }
+    ],
+    "year_range": [
+      1934,
+      2026
+    ],
+    "top_datasets": [
+      "C. elegans connectome",
+      "Larval zebrafish ssEM",
+      "Retinal connectomes"
+    ],
+    "top_methods": [
+      "segmentation",
+      "synapse detection"
+    ]
+  },
+  {
+    "community_id": 2,
+    "label": "Community 2",
+    "size": 586,
+    "members": [
+      "https://openalex.org/W3205938552",
+      "https://openalex.org/W2610021178",
+      "https://openalex.org/W2787478603",
+      "https://openalex.org/W4404182656",
+      "https://openalex.org/W4412538818",
+      "https://openalex.org/W2146693559",
+      "https://openalex.org/W1588942736",
+      "https://openalex.org/W1983485726",
+      "https://openalex.org/W305292912",
+      "https://openalex.org/W1900134997",
+      "https://openalex.org/W1979767955",
+      "https://openalex.org/W1602141137",
+      "https://openalex.org/W1968941013",
+      "https://openalex.org/W1923830127",
+      "https://openalex.org/W1979387725",
+      "https://openalex.org/W1985840384",
+      "https://openalex.org/W2008620264",
+      "https://openalex.org/W1999653836",
+      "https://openalex.org/W1998071216",
+      "https://openalex.org/W2015334431",
+      "https://openalex.org/W2000904439",
+      "https://openalex.org/W2031938158",
+      "https://openalex.org/W2013013263",
+      "https://openalex.org/W1988516611",
+      "https://openalex.org/W2060464767",
+      "https://openalex.org/W2071158443",
+      "https://openalex.org/W2109273473",
+      "https://openalex.org/W2063804532",
+      "https://openalex.org/W2088430597",
+      "https://openalex.org/W2074019524",
+      "https://openalex.org/W2105475977",
+      "https://openalex.org/W2105728001",
+      "https://openalex.org/W2048240549",
+      "https://openalex.org/W2054766268",
+      "https://openalex.org/W2079687194",
+      "https://openalex.org/W2112090702",
+      "https://openalex.org/W2153624566",
+      "https://openalex.org/W2143502460",
+      "https://openalex.org/W2126956247",
+      "https://openalex.org/W2158299803",
+      "https://openalex.org/W2144662207",
+      "https://openalex.org/W2146630029",
+      "https://openalex.org/W2152003723",
+      "https://openalex.org/W2113981240",
+      "https://openalex.org/W2774217687",
+      "https://openalex.org/W2989575095",
+      "https://openalex.org/W4211147837",
+      "https://openalex.org/W2346522032",
+      "https://openalex.org/W4234034543",
+      "https://openalex.org/W2963877739"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 579.0
+      }
+    ],
+    "year_range": [
+      1964,
+      2026
+    ],
+    "top_datasets": [
+      "C. elegans connectome",
+      "Larval zebrafish ssEM",
+      "H01",
+      "Retinal connectomes",
+      "MICRONS"
+    ],
+    "top_methods": [
+      "segmentation",
+      "DotMotif",
+      "CAVE"
+    ]
+  },
+  {
+    "community_id": 4,
+    "label": "Community 4",
+    "size": 471,
+    "members": [
+      "https://openalex.org/W3012591046",
+      "https://openalex.org/W3112375501",
+      "https://openalex.org/W3158663966",
+      "https://openalex.org/W3094123565",
+      "https://openalex.org/W3014940227",
+      "https://openalex.org/W4402809655",
+      "https://openalex.org/W7127613205",
+      "https://openalex.org/W4402518088",
+      "https://openalex.org/W4200220731",
+      "https://openalex.org/W2619970632",
+      "https://openalex.org/W1978947708",
+      "https://openalex.org/W2074376560",
+      "https://openalex.org/W2071762535",
+      "https://openalex.org/W2141652419",
+      "https://openalex.org/W2172897039",
+      "https://openalex.org/W2152255315",
+      "https://openalex.org/W3165096146",
+      "https://openalex.org/W2093419082",
+      "https://openalex.org/W2115699934",
+      "https://openalex.org/W2571305441",
+      "https://openalex.org/W2009156797",
+      "https://openalex.org/W2070934930",
+      "https://openalex.org/W2771517789",
+      "https://openalex.org/W2130607429",
+      "https://openalex.org/W30856124",
+      "https://openalex.org/W2441639711",
+      "https://openalex.org/W4283834186",
+      "https://openalex.org/W2618224307",
+      "https://openalex.org/W2052860141",
+      "https://openalex.org/W2028791709",
+      "https://openalex.org/W1966282260",
+      "https://openalex.org/W1979639373",
+      "https://openalex.org/W1980949515",
+      "https://openalex.org/W2054944848",
+      "https://openalex.org/W2004437322",
+      "https://openalex.org/W2040000470",
+      "https://openalex.org/W1989753378",
+      "https://openalex.org/W2007613723",
+      "https://openalex.org/W2047234954",
+      "https://openalex.org/W1983156044",
+      "https://openalex.org/W2050693050",
+      "https://openalex.org/W1965413214",
+      "https://openalex.org/W1977146259",
+      "https://openalex.org/W2035789116",
+      "https://openalex.org/W2052289243",
+      "https://openalex.org/W2073858450",
+      "https://openalex.org/W2035373814",
+      "https://openalex.org/W1991841378",
+      "https://openalex.org/W1904621031",
+      "https://openalex.org/W2015343981"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 470.0
+      }
+    ],
+    "year_range": [
+      1981,
+      2026
+    ],
+    "top_datasets": [
+      "Hemibrain",
+      "Retinal connectomes",
+      "C. elegans connectome",
+      "MICRONS",
+      "FlyWire"
+    ],
+    "top_methods": [
+      "neuPrint",
+      "segmentation",
+      "synapse detection",
+      "CAVE",
+      "proofreading"
+    ]
+  },
+  {
+    "community_id": 8,
+    "label": "Community 8",
+    "size": 174,
+    "members": [
+      "https://openalex.org/W2466406789",
+      "https://openalex.org/W3017931079",
+      "https://openalex.org/W4402596207",
+      "https://openalex.org/W2018837082",
+      "https://openalex.org/W2046297486",
+      "https://openalex.org/W2069903330",
+      "https://openalex.org/W2047946144",
+      "https://openalex.org/W2037923854",
+      "https://openalex.org/W1995043049",
+      "https://openalex.org/W2031131256",
+      "https://openalex.org/W2025045656",
+      "https://openalex.org/W1967519473",
+      "https://openalex.org/W1978810668",
+      "https://openalex.org/W1838064955",
+      "https://openalex.org/W2073953561",
+      "https://openalex.org/W1535997313",
+      "https://openalex.org/W2042934568",
+      "https://openalex.org/W2059431654",
+      "https://openalex.org/W1592687629",
+      "https://openalex.org/W2038841717",
+      "https://openalex.org/W1496512675",
+      "https://openalex.org/W1568272074",
+      "https://openalex.org/W1981804374",
+      "https://openalex.org/W2029613523",
+      "https://openalex.org/W2020803590",
+      "https://openalex.org/W1970041396",
+      "https://openalex.org/W1972072039",
+      "https://openalex.org/W1669823852",
+      "https://openalex.org/W2031075659",
+      "https://openalex.org/W1989776650",
+      "https://openalex.org/W1868697848",
+      "https://openalex.org/W1999513736",
+      "https://openalex.org/W1537531622",
+      "https://openalex.org/W2051666014",
+      "https://openalex.org/W1503424764",
+      "https://openalex.org/W1757146080",
+      "https://openalex.org/W2065456330",
+      "https://openalex.org/W1989596675",
+      "https://openalex.org/W2027954383",
+      "https://openalex.org/W2009452186",
+      "https://openalex.org/W166440457",
+      "https://openalex.org/W2041459859",
+      "https://openalex.org/W2031488676",
+      "https://openalex.org/W800321352",
+      "https://openalex.org/W2102165670",
+      "https://openalex.org/W2167058119",
+      "https://openalex.org/W2159659012",
+      "https://openalex.org/W2138387337",
+      "https://openalex.org/W2109304711",
+      "https://openalex.org/W2094604151"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 173.0
+      }
+    ],
+    "year_range": [
+      1907,
+      2025
+    ],
+    "top_datasets": [
+      "Retinal connectomes",
+      "MICRONS",
+      "Larval zebrafish ssEM"
+    ],
+    "top_methods": [
+      "segmentation"
+    ]
+  },
+  {
+    "community_id": 6,
+    "label": "Community 6",
+    "size": 169,
+    "members": [
+      "https://openalex.org/W7125600835",
+      "https://openalex.org/W4312210215",
+      "https://openalex.org/W3200539549",
+      "https://openalex.org/W7127442430",
+      "https://openalex.org/W2612078078",
+      "https://openalex.org/W2805125490",
+      "https://openalex.org/W4404612853",
+      "https://openalex.org/W2057243734",
+      "https://openalex.org/W2790948182",
+      "https://openalex.org/W2132610577",
+      "https://openalex.org/W2892691268",
+      "https://openalex.org/W4223894505",
+      "https://openalex.org/W4408495245",
+      "https://openalex.org/W4411319700",
+      "https://openalex.org/W4410698762",
+      "https://openalex.org/W2013455564",
+      "https://openalex.org/W1986446939",
+      "https://openalex.org/W2007606111",
+      "https://openalex.org/W4307231400",
+      "https://openalex.org/W2075968419",
+      "https://openalex.org/W3138399967",
+      "https://openalex.org/W1713197352",
+      "https://openalex.org/W2944449037",
+      "https://openalex.org/W2734370200",
+      "https://openalex.org/W4411206709",
+      "https://openalex.org/W3000946617",
+      "https://openalex.org/W4225424661",
+      "https://openalex.org/W2895353742",
+      "https://openalex.org/W2979235709",
+      "https://openalex.org/W3093513705",
+      "https://openalex.org/W2985576891",
+      "https://openalex.org/W3125147118",
+      "https://openalex.org/W2743350487",
+      "https://openalex.org/W2089315051",
+      "https://openalex.org/W2991987583",
+      "https://openalex.org/W4395444784",
+      "https://openalex.org/W4414163653",
+      "https://openalex.org/W4411111888",
+      "https://openalex.org/W4377241318",
+      "https://openalex.org/W2080092859",
+      "https://openalex.org/W2153649171",
+      "https://openalex.org/W2277956273",
+      "https://openalex.org/W2267456908",
+      "https://openalex.org/W2035380851",
+      "https://openalex.org/W2123327766",
+      "https://openalex.org/W2064907322",
+      "https://openalex.org/W2116741119",
+      "https://openalex.org/W2009125262",
+      "https://openalex.org/W2186694278",
+      "https://openalex.org/W2069156135"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 169.0
+      }
+    ],
+    "year_range": [
+      1973,
+      2026
+    ],
+    "top_datasets": [
+      "Larval zebrafish ssEM",
+      "Retinal connectomes",
+      "Hemibrain",
+      "MICRONS"
+    ],
+    "top_methods": [
+      "segmentation",
+      "CAVE",
+      "Flood-Fill Networks"
+    ]
+  },
+  {
+    "community_id": 79,
+    "label": "Community 79",
+    "size": 86,
+    "members": [
+      "https://openalex.org/W4389685660",
+      "https://openalex.org/W2030508474",
+      "https://openalex.org/W1672576559",
+      "https://openalex.org/W7124827626",
+      "https://openalex.org/W2032687897",
+      "https://openalex.org/W2170644095",
+      "https://openalex.org/W1584834830",
+      "https://openalex.org/W2000039441",
+      "https://openalex.org/W2121515004",
+      "https://openalex.org/W1929267935",
+      "https://openalex.org/W2156788921",
+      "https://openalex.org/W2103071556",
+      "https://openalex.org/W2152304945",
+      "https://openalex.org/W2037653131",
+      "https://openalex.org/W2140131793",
+      "https://openalex.org/W2161964141",
+      "https://openalex.org/W2078207717",
+      "https://openalex.org/W2002774469",
+      "https://openalex.org/W1958661641",
+      "https://openalex.org/W1920580857",
+      "https://openalex.org/W2094185290",
+      "https://openalex.org/W2088198588",
+      "https://openalex.org/W2947726842",
+      "https://openalex.org/W1976861043",
+      "https://openalex.org/W2068394373",
+      "https://openalex.org/W1979702721",
+      "https://openalex.org/W2171285101",
+      "https://openalex.org/W2153235303",
+      "https://openalex.org/W1977434686",
+      "https://openalex.org/W2088676602",
+      "https://openalex.org/W2156998090",
+      "https://openalex.org/W1997101343",
+      "https://openalex.org/W2141210743",
+      "https://openalex.org/W2155133303",
+      "https://openalex.org/W2123047934",
+      "https://openalex.org/W2059895668",
+      "https://openalex.org/W1597819025",
+      "https://openalex.org/W2119395157",
+      "https://openalex.org/W2098069894",
+      "https://openalex.org/W1996499871",
+      "https://openalex.org/W2133143628",
+      "https://openalex.org/W2133595485",
+      "https://openalex.org/W2093844611",
+      "https://openalex.org/W2107804537",
+      "https://openalex.org/W2012590437",
+      "https://openalex.org/W2252783105",
+      "https://openalex.org/W2137860879",
+      "https://openalex.org/W1976981142",
+      "https://openalex.org/W1988590560",
+      "https://openalex.org/W1982373527"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 86.0
+      }
+    ],
+    "year_range": [
+      1992,
+      2026
+    ],
+    "top_datasets": [
+      "MICRONS",
+      "Hemibrain"
+    ],
+    "top_methods": [
+      "CAVE"
+    ]
+  },
+  {
+    "community_id": 138,
+    "label": "Community 138",
+    "size": 8,
+    "members": [
+      "https://openalex.org/W2012658698",
+      "https://openalex.org/W2417566118",
+      "https://openalex.org/W2037696353",
+      "https://openalex.org/W1986744233",
+      "https://openalex.org/W32544700",
+      "https://openalex.org/W2059430101",
+      "https://openalex.org/W2041286070",
+      "https://openalex.org/W2015165507"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 8.0
+      }
+    ],
+    "year_range": [
+      1998,
+      2011
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 133,
+    "label": "Community 133",
+    "size": 7,
+    "members": [
+      "https://openalex.org/W2034817948",
+      "https://openalex.org/W2051997064",
+      "https://openalex.org/W1997255077",
+      "https://openalex.org/W2032247354",
+      "https://openalex.org/W2029680964",
+      "https://openalex.org/W2004008632",
+      "https://openalex.org/W2123400241"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 7.0
+      }
+    ],
+    "year_range": [
+      1990,
+      2010
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 131,
+    "label": "Community 131",
+    "size": 6,
+    "members": [
+      "https://openalex.org/W2011445141",
+      "https://openalex.org/W2027748950",
+      "https://openalex.org/W2018383059",
+      "https://openalex.org/W1990297490",
+      "https://openalex.org/W2121756720",
+      "https://openalex.org/W2000848599"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 6.0
+      }
+    ],
+    "year_range": [
+      2005,
+      2007
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 9,
+    "label": "Community 9",
+    "size": 5,
+    "members": [
+      "https://openalex.org/W4296409870",
+      "https://openalex.org/W2908201961",
+      "https://openalex.org/W4414552828",
+      "https://openalex.org/W7117296674",
+      "https://openalex.org/W2983793352"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 5.0
+      }
+    ],
+    "year_range": [
+      2018,
+      2025
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 72,
+    "label": "Community 72",
+    "size": 5,
+    "members": [
+      "https://openalex.org/W2142014540",
+      "https://openalex.org/W2019982592",
+      "https://openalex.org/W2093606841",
+      "https://openalex.org/W2075756157",
+      "https://openalex.org/W2320377869"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 5.0
+      }
+    ],
+    "year_range": [
+      1984,
+      1993
+    ],
+    "top_datasets": [
+      "Hemibrain"
+    ],
+    "top_methods": []
+  },
+  {
+    "community_id": 168,
+    "label": "Community 168",
+    "size": 5,
+    "members": [
+      "https://openalex.org/W2085113776",
+      "https://openalex.org/W2032920499",
+      "https://openalex.org/W2518920681",
+      "https://openalex.org/W2080175587",
+      "https://openalex.org/W3044693026"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 5.0
+      }
+    ],
+    "year_range": [
+      2006,
+      2020
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 10,
+    "label": "Community 10",
+    "size": 4,
+    "members": [
+      "https://openalex.org/W4385664020",
+      "https://openalex.org/W2142220522",
+      "https://openalex.org/W2042114541",
+      "https://openalex.org/W1992858446"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 4.0
+      }
+    ],
+    "year_range": [
+      2006,
+      2023
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 38,
+    "label": "Community 38",
+    "size": 4,
+    "members": [
+      "https://openalex.org/W2007123792",
+      "https://openalex.org/W2406923932",
+      "https://openalex.org/W3086193980",
+      "https://openalex.org/W2801983622"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 4.0
+      }
+    ],
+    "year_range": [
+      2012,
+      2020
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 20,
+    "label": "Community 20",
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2062620653",
+      "https://openalex.org/W1986604088",
+      "https://openalex.org/W1841364166"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 3.0
+      }
+    ],
+    "year_range": [
+      2005,
+      2006
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 76,
+    "label": "Community 76",
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2169169311",
+      "https://openalex.org/W1979449774",
+      "https://openalex.org/W2113187269"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 3.0
+      }
+    ],
+    "year_range": [
+      1995,
+      2009
+    ],
+    "top_datasets": [
+      "Hemibrain"
+    ],
+    "top_methods": []
+  },
+  {
+    "community_id": 104,
+    "label": "Community 104",
+    "size": 3,
+    "members": [
+      "https://openalex.org/W1997198091",
+      "https://openalex.org/W2920510256",
+      "https://openalex.org/W2040454459"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 3.0
+      }
+    ],
+    "year_range": [
+      2006,
+      2019
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  },
+  {
+    "community_id": 176,
+    "label": "Community 176",
+    "size": 3,
+    "members": [
+      "https://openalex.org/W1984474417",
+      "https://openalex.org/W2133567501",
+      "https://openalex.org/W2127168579"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 3.0
+      }
+    ],
+    "year_range": [
+      1987,
+      1999
+    ],
+    "top_datasets": [
+      "MICRONS"
+    ],
+    "top_methods": []
+  },
+  {
+    "community_id": 234,
+    "label": "Community 234",
+    "size": 3,
+    "members": [
+      "https://openalex.org/W2588935519",
+      "https://openalex.org/W2145768262",
+      "https://openalex.org/W2010175538"
+    ],
+    "top_concepts": [],
+    "top_authors": [
+      {
+        "name": "",
+        "score": 3.0
+      }
+    ],
+    "year_range": [
+      2009,
+      2017
+    ],
+    "top_datasets": [],
+    "top_methods": []
+  }
+]

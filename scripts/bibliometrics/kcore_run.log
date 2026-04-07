@@ -1,4 +1,0 @@
-  File "/home/user/neurotrailblazers/scripts/bibliometrics/06b_kcore_visualization.py", line 323
-    """
-       ^
-SyntaxError: f-string: single '}' is not allowed

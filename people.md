@@ -1,5 +1,8 @@
 # Bibliometric Connectomics Pipeline
 
+> Legacy bibliography pipeline execution has moved to `connectome-kb`; this repo now consumes synced visualization assets.
+
+
 A principled, reproducible pipeline that maps the EM connectomics literature using
 OpenAlex citation data. It constructs three independent paper corpora, builds four
 graph representations, computes centrality metrics, detects communities, generates
@@ -19,7 +22,7 @@ the top 200 papers.
 ## Quick Start
 
 ```bash
-cd scripts/bibliometrics
+cd ../connectome-kb
 
 # Install dependencies
 pip install -r requirements.txt

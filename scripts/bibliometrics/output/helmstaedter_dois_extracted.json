@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "source": "Helmstaedter, M. (2026) Synaptic-resolution connectomics. Nature Rev. Neurosci.",
+    "total_references": 48,
+    "with_doi": 48,
+    "generated": "2026-04-01"
+  },
+  "references": [
+    {
+      "doi": "10.1038/ncomms3770",
+      "author": "Zador,",
+      "year": "2019",
+      "full_text": "Zador, A. M. A critique of pure learning and what artificial neural networks can learn from animal brains. Nat. Commun. 10, 3770 (2019). - PubMed - PMC - DOI 10.1038/ncomms3770"
+    },
+    {
+      "doi": "10.1038/s41467-022-29385-5",
+      "author": "Nat",
+      "year": "2019",
+      "full_text": "ificial neural networks can learn from animal brains. Nat. Commun. 10, 3770 (2019). - PubMed - PMC - DOI 10.1038/ncomms3770\nRoy, D. S. et al. Brain-wide mapping reveals that engrams for a single memory are distributed across multiple brain regions. Nat. Commun. 13, 1799 (2022). - PubMed - PMC - DOI 10.1038/s41467-022-29385-5"
+    },
+    {
+      "doi": "10.1371/journal.pbio.0020329",
+      "author": "Nat",
+      "year": "2022",
+      "full_text": "are distributed across multiple brain regions. Nat. Commun. 13, 1799 (2022). - PubMed - PMC - DOI 10.1038/s41467-022-29385-5\nDenk, W. & Horstmann, H. Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. PLoS Biol. 2, e329 (2004). - PubMed - PMC - DOI 10.1371/journal.pbio.0020329"
+    },
+    {
+      "doi": "10.1126/science.1206837",
+      "author": "Lo",
+      "year": "2004",
+      "full_text": "scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. PLoS Biol. 2, e329 (2004). - PubMed - PMC - DOI 10.1371/journal.pbio.0020329\nLichtman, J. W. & Denk, W. The big and the small: challenges of imaging the brain's circuits. Science 334, 618\u2013623 (2011). - PubMed - DOI 10.1126/science.1206837"
+    },
+    {
+      "doi": "10.1016/j.conb.2008.09.005",
+      "author": "Science",
+      "year": "2011",
+      "full_text": "he big and the small: challenges of imaging the brain's circuits. Science 334, 618\u2013623 (2011). - PubMed - DOI 10.1126/science.1206837\nHelmstaedter, M., Briggman, K. L. & Denk, W. 3D structural imaging of the brain with photons and electrons. Curr. Opin. Neurobiol. 18, 633\u2013641 (2008). - PubMed - DOI 10.1016/j.conb.2008.09.005"
+    },
+    {
+      "doi": "10.1016/j.conb.2006.06.002",
+      "author": "Curr",
+      "year": "2008",
+      "full_text": "maging of the brain with photons and electrons. Curr. Opin. Neurobiol. 18, 633\u2013641 (2008). - PubMed - DOI 10.1016/j.conb.2008.09.005\nBriggman, K. L. & Denk, W. Towards neural circuit reconstruction with volume electron microscopy techniques. Curr. Opin. Neurobiol. 16, 562\u2013570 (2006). - PubMed - DOI 10.1016/j.conb.2006.06.002"
+    },
+    {
+      "doi": "10.1371/journal.pcbi.0010042",
+      "author": "Curr",
+      "year": "2006",
+      "full_text": "construction with volume electron microscopy techniques. Curr. Opin. Neurobiol. 16, 562\u2013570 (2006). - PubMed - DOI 10.1016/j.conb.2006.06.002\nSporns, O., Tononi, G. & Kotter, R. The human connectome: a structural description of the human brain. PLoS Comput. Biol. 1, e42 (2005). - PubMed - PMC - DOI 10.1371/journal.pcbi.0010042"
+    },
+    {
+      "doi": "10.1101/2024.03.22.586254",
+      "author": "Sporns,",
+      "year": "2005",
+      "full_text": "6.06.002\nSporns, O., Tononi, G. & Kotter, R. The human connectome: a structural description of the human brain. PLoS Comput. Biol. 1, e42 (2005). - PubMed - PMC - DOI 10.1371/journal.pcbi.0010042\nSievers, M. et al. Connectomic reconstruction of a cortical column. Preprint at bioRxiv https://doi.org/10.1101/2024.03.22.586254"
+    },
+    {
+      "doi": "10.1101/2024.03.22.586254",
+      "author": "Kotter,",
+      "year": "2005",
+      "full_text": "Kotter, R. The human connectome: a structural description of the human brain. PLoS Comput. Biol. 1, e42 (2005). - PubMed - PMC - DOI 10.1371/journal.pcbi.0010042\nSievers, M. et al. Connectomic reconstruction of a cortical column. Preprint at bioRxiv https://doi.org/10.1101/2024.03.22.586254 (2024). 10.1101/2024.03.22.586254"
+    },
+    {
+      "doi": "10.1038/s41586-025-08790-w",
+      "author": "Sievers,",
+      "year": "2024",
+      "full_text": "i.0010042\nSievers, M. et al. Connectomic reconstruction of a cortical column. Preprint at bioRxiv https://doi.org/10.1101/2024.03.22.586254 (2024). 10.1101/2024.03.22.586254\nMICrONS Consortium. Functional connectomics spanning multiple areas of mouse visual cortex. Nature 640, 435\u2013447 (2025). - DOI 10.1038/s41586-025-08790-w"
+    },
+    {
+      "doi": "10.1126/science.abo0924",
+      "author": "Cr",
+      "year": "2024",
+      "full_text": "(2024). 10.1101/2024.03.22.586254\nMICrONS Consortium. Functional connectomics spanning multiple areas of mouse visual cortex. Nature 640, 435\u2013447 (2025). - DOI 10.1038/s41586-025-08790-w\nLoomba, S. et al. Connectomic comparison of mouse and human cortex. Science 377, eabo0924 (2022). - PubMed - DOI 10.1126/science.abo0924"
+    },
+    {
+      "doi": "10.1126/science.adk4858",
+      "author": "Loomba,",
+      "year": "2022",
+      "full_text": "0-w\nLoomba, S. et al. Connectomic comparison of mouse and human cortex. Science 377, eabo0924 (2022). - PubMed - DOI 10.1126/science.abo0924\nShapson-Coe, A. et al. A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science 384, eadk4858 (2024). - PubMed - PMC - DOI 10.1126/science.adk4858"
+    },
+    {
+      "doi": "10.1126/science.aad9330",
+      "author": "Shapson",
+      "year": "2024",
+      "full_text": "nce.abo0924\nShapson-Coe, A. et al. A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science 384, eadk4858 (2024). - PubMed - PMC - DOI 10.1126/science.adk4858\nWinding, M. et al. The connectome of an insect brain. Science 379, eadd9330 (2023). - PubMed - PMC - DOI 10.1126/science.aad9330"
+    },
+    {
+      "doi": "10.1016/j.cell.2018.06.019",
+      "author": "Winding,",
+      "year": "2023",
+      "full_text": "/science.adk4858\nWinding, M. et al. The connectome of an insect brain. Science 379, eadd9330 (2023). - PubMed - PMC - DOI 10.1126/science.aad9330\nZheng, Z. et al. A complete electron microscopy volume of the brain of adult Drosophila melanogaster. Cell 174, 730\u2013743.e722 (2018). - PubMed - PMC - DOI 10.1016/j.cell.2018.06.019"
+    },
+    {
+      "doi": "10.1038/s41586-024-07558-x",
+      "author": "Zheng,",
+      "year": "2018",
+      "full_text": "9330\nZheng, Z. et al. A complete electron microscopy volume of the brain of adult Drosophila melanogaster. Cell 174, 730\u2013743.e722 (2018). - PubMed - PMC - DOI 10.1016/j.cell.2018.06.019\nDorkenwald, S. et al. Neuronal wiring diagram of an adult brain. Nature 634, 124\u2013138 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-07558-x"
+    },
+    {
+      "doi": "10.1038/s41586-024-07419-0",
+      "author": "Dorkenwald,",
+      "year": "2024",
+      "full_text": "j.cell.2018.06.019\nDorkenwald, S. et al. Neuronal wiring diagram of an adult brain. Nature 634, 124\u2013138 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-07558-x\nSchlegel, P. et al. Whole-brain annotation and multi-connectome cell typing of Drosophila. Nature 634, 139\u2013152 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-07419-0"
+    },
+    {
+      "doi": "10.1038/s41592-024-02237-2",
+      "author": "Drosophila",
+      "year": "2024",
+      "full_text": "ti-connectome cell typing of Drosophila. Nature 634, 139\u2013152 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-07419-0\nSchmidt, M., Motta, A., Sievers, M. & Helmstaedter, M. RoboEM: automated 3D flight tracing for synaptic-resolution connectomics. Nat. Methods 21, 908\u2013913 (2024). - PubMed - PMC - DOI 10.1038/s41592-024-02237-2"
+    },
+    {
+      "doi": "10.1038/s41586-025-08896-3",
+      "author": "Robo",
+      "year": "2024",
+      "full_text": ". RoboEM: automated 3D flight tracing for synaptic-resolution connectomics. Nat. Methods 21, 908\u2013913 (2024). - PubMed - PMC - DOI 10.1038/s41592-024-02237-2\nCelii, B. et al. NEURD offers automated proofreading and feature extraction for connectomics. Nature 640, 487\u2013496 (2025). - PubMed - PMC - DOI 10.1038/s41586-025-08896-3"
+    },
+    {
+      "doi": "10.1093/icb/icad145",
+      "author": "Nature",
+      "year": "2025",
+      "full_text": "i, B. et al. NEURD offers automated proofreading and feature extraction for connectomics. Nature 640, 487\u2013496 (2025). - PubMed - PMC - DOI 10.1038/s41586-025-08896-3\nTreidel, L. A. et al. Insect flight: state of the field and future directions. Integr. Comp. Biol. 64, 533\u2013555 (2024). - PubMed - DOI 10.1093/icb/icad145"
+    },
+    {
+      "doi": "10.1038/s41586-024-06988-3",
+      "author": "Integr",
+      "year": "2024",
+      "full_text": "uture directions. Integr. Comp. Biol. 64, 533\u2013555 (2024). - PubMed - DOI 10.1093/icb/icad145\nFurutachi, S., Franklin, A. D., Aldea, A. M., Mrsic-Flogel, T. D. & Hofer, S. B. Cooperative thalamocortical circuit mechanism for sensory prediction errors. Nature 633, 398\u2013406 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-06988-3"
+    },
+    {
+      "doi": "10.1016/j.cell.2024.02.026",
+      "author": "Hofer,",
+      "year": "2024",
+      "full_text": ". & Hofer, S. B. Cooperative thalamocortical circuit mechanism for sensory prediction errors. Nature 633, 398\u2013406 (2024). - PubMed - PMC - DOI 10.1038/s41586-024-06988-3\nChen, S. et al. Brain-wide neural activity underlying memory-guided movement. Cell 187, 676\u2013691.e616 (2024). - PubMed - PMC - DOI 10.1016/j.cell.2024.02.026"
+    },
+    {
+      "doi": "10.1038/nature16960",
+      "author": "Cell",
+      "year": "2024",
+      "full_text": "in-wide neural activity underlying memory-guided movement. Cell 187, 676\u2013691.e616 (2024). - PubMed - PMC - DOI 10.1016/j.cell.2024.02.026\nLi, N., Daie, K., Svoboda, K. & Druckmann, S. Robust neuronal dynamics in premotor cortex during motor planning. Nature 532, 459\u2013464 (2016). - PubMed - PMC - DOI 10.1038/nature16960"
+    },
+    {
+      "doi": "10.1038/s41586-025-08847-6",
+      "author": "Druckmann,",
+      "year": "2016",
+      "full_text": ", K. & Druckmann, S. Robust neuronal dynamics in premotor cortex during motor planning. Nature 532, 459\u2013464 (2016). - PubMed - PMC - DOI 10.1038/nature16960\nFindling, C. et al. Brain-wide representations of prior information in mouse decision-making. Nature 645, 192\u2013200 (2025). - PubMed - PMC - DOI 10.1038/s41586-025-08847-6"
+    },
+    {
+      "doi": "10.1016/j.neuron.2017.12.033",
+      "author": "Nature",
+      "year": "2025",
+      "full_text": "representations of prior information in mouse decision-making. Nature 645, 192\u2013200 (2025). - PubMed - PMC - DOI 10.1038/s41586-025-08847-6\nFournier, J., Muller, C. M., Schneider, I. & Laurent, G. Spatial information in a non-retinotopic visual cortex. Neuron 97, 164\u2013180.e167 (2018). - PubMed - DOI 10.1016/j.neuron.2017.12.033"
+    },
+    {
+      "doi": "10.1016/j.brainstructfunc.2020.08.020",
+      "author": "Laurent,",
+      "year": "2018",
+      "full_text": "r, I. & Laurent, G. Spatial information in a non-retinotopic visual cortex. Neuron 97, 164\u2013180.e167 (2018). - PubMed - DOI 10.1016/j.neuron.2017.12.033\nMontardy, Q. et al. Mapping the neural circuitry of predator fear in the nonhuman primate. Brain Struct. Funct. 226, 195\u2013205 (2021). - PubMed - DOI 10.1016/j.brainstructfunc.2020.08.020"
+    },
+    {
+      "doi": "10.1038/nature09820",
+      "author": "Brain",
+      "year": "2021",
+      "full_text": "try of predator fear in the nonhuman primate. Brain Struct. Funct. 226, 195\u2013205 (2021). - PubMed - DOI 10.1016/j.brainstructfunc.2020.08.020\nBriggman, K. L., Helmstaedter, M. & Denk, W. Wiring specificity in the direction-selectivity circuit of the retina. Nature 471, 183\u2013188 (2011). - PubMed - DOI 10.1038/nature09820"
+    },
+    {
+      "doi": "10.1038/nature12988",
+      "author": "Denk,",
+      "year": "2011",
+      "full_text": "taedter, M. & Denk, W. Wiring specificity in the direction-selectivity circuit of the retina. Nature 471, 183\u2013188 (2011). - PubMed - DOI 10.1038/nature09820\nKim, J. S. et al. Space-time wiring specificity supports direction selectivity in the retina. Nature 509, 331\u2013336 (2014). - PubMed - PMC - DOI 10.1038/nature12988"
+    },
+    {
+      "doi": "10.1038/nature14132",
+      "author": "Nature",
+      "year": "2014",
+      "full_text": "tion selectivity in the retina. Nature 509, 331\u2013336 (2014). - PubMed - PMC - DOI 10.1038/nature12988\nDing, H., Smith, R. G., Poleg-Polsky, A., Diamond, J. S. & Briggman, K. L. Species-specific wiring for direction selectivity in the mammalian retina. Nature 535, 105\u2013110 (2016). - PubMed - PMC - DOI 10.1038/nature14132"
+    },
+    {
+      "doi": "10.1038/nature12563",
+      "author": "Species",
+      "year": "2016",
+      "full_text": "gman, K. L. Species-specific wiring for direction selectivity in the mammalian retina. Nature 535, 105\u2013110 (2016). - PubMed - PMC - DOI 10.1038/nature14132\nTakemura, S. Y. et al. A visual motion detection circuit suggested by Drosophila connectomics. Nature 500, 175\u2013181 (2013). - PubMed - PMC - DOI 10.1038/nature12563"
+    },
+    {
+      "doi": "10.7554/elife.24394",
+      "author": "Drosophila",
+      "year": "2013",
+      "full_text": "visual motion detection circuit suggested by Drosophila connectomics. Nature 500, 175\u2013181 (2013). - PubMed - PMC - DOI 10.1038/nature12563\nTakemura, S. Y. et al. The comprehensive connectome of a neural substrate for 'ON' motion detection in Drosophila. eLife 6, e24394 (2017). - PubMed - PMC - DOI 10.7554/elife.24394"
+    },
+    {
+      "doi": "10.1038/nn.4050",
+      "author": "The",
+      "year": "2017",
+      "full_text": "al. The comprehensive connectome of a neural substrate for 'ON' motion detection in Drosophila. eLife 6, e24394 (2017). - PubMed - PMC - DOI 10.7554/elife.24394\nBorst, A. & Helmstaedter, M. Common circuit design in fly and mammalian motion vision. Nat. Neurosci. 18, 1067\u20131076 (2015). - PubMed - DOI 10.1038/nn.4050"
+    },
+    {
+      "doi": "10.1038/s41467-022-35531-w",
+      "author": "Borst,",
+      "year": "2015",
+      "full_text": "fe.24394\nBorst, A. & Helmstaedter, M. Common circuit design in fly and mammalian motion vision. Nat. Neurosci. 18, 1067\u20131076 (2015). - PubMed - DOI 10.1038/nn.4050\nZador, A. et al. Catalyzing next-generation artificial intelligence through neuroAI. Nat. Commun. 14, 1597 (2023). - PubMed - PMC - DOI 10.1038/s41467-022-35531-w"
+    },
+    {
+      "doi": "10.1016/j.neuron.2015.01.028",
+      "author": "Zador,",
+      "year": "2023",
+      "full_text": "I 10.1038/nn.4050\nZador, A. et al. Catalyzing next-generation artificial intelligence through neuroAI. Nat. Commun. 14, 1597 (2023). - PubMed - PMC - DOI 10.1038/s41467-022-35531-w\nHelmstaedter, M. The mutual inspirations of machine learning and neuroscience. Neuron 86, 25\u201328 (2015). - PubMed - DOI 10.1016/j.neuron.2015.01.028"
+    },
+    {
+      "doi": "10.1016/j.neuron.2017.06.011",
+      "author": "Helmstaedter,",
+      "year": "2015",
+      "full_text": "1-w\nHelmstaedter, M. The mutual inspirations of machine learning and neuroscience. Neuron 86, 25\u201328 (2015). - PubMed - DOI 10.1016/j.neuron.2015.01.028\nHassabis, D., Kumaran, D., Summerfield, C. & Botvinick, M. Neuroscience-inspired artificial intelligence. Neuron 95, 245\u2013258 (2017). - PubMed - DOI 10.1016/j.neuron.2017.06.011"
+    },
+    {
+      "doi": "10.1016/j.cell.2020.08.037",
+      "author": "Hassabis,",
+      "year": "2017",
+      "full_text": "ed - DOI 10.1016/j.neuron.2015.01.028\nHassabis, D., Kumaran, D., Summerfield, C. & Botvinick, M. Neuroscience-inspired artificial intelligence. Neuron 95, 245\u2013258 (2017). - PubMed - DOI 10.1016/j.neuron.2017.06.011\nAbbott, L. F. et al. The mind of a mouse. Cell 182, 1372\u20131376 (2020). - PubMed - DOI 10.1016/j.cell.2020.08.037"
+    },
+    {
+      "doi": "10.3389/fnhum.2009.00031",
+      "author": "Pub",
+      "year": "2020",
+      "full_text": ". - PubMed - DOI 10.1016/j.neuron.2017.06.011\nAbbott, L. F. et al. The mind of a mouse. Cell 182, 1372\u20131376 (2020). - PubMed - DOI 10.1016/j.cell.2020.08.037\nHerculano-Houzel, S. The human brain in numbers: a linearly scaled-up primate brain. Front. Hum. Neurosci. 3, 31 (2009). - PubMed - PMC - DOI 10.3389/fnhum.2009.00031"
+    },
+    {
+      "doi": "10.1038/s41586-021-03465-4",
+      "author": "The",
+      "year": "2009",
+      "full_text": "zel, S. The human brain in numbers: a linearly scaled-up primate brain. Front. Hum. Neurosci. 3, 31 (2009). - PubMed - PMC - DOI 10.3389/fnhum.2009.00031\nBakken, T. E. et al. Comparative cellular analysis of motor cortex in human, marmoset and mouse. Nature 598, 111\u2013119 (2021). - PubMed - PMC - DOI 10.1038/s41586-021-03465-4"
+    },
+    {
+      "doi": "10.1038/s41586-021-03569-3",
+      "author": "Comparative",
+      "year": "2021",
+      "full_text": "et al. Comparative cellular analysis of motor cortex in human, marmoset and mouse. Nature 598, 111\u2013119 (2021). - PubMed - PMC - DOI 10.1038/s41586-021-03465-4\nBerg, J. et al. Human neocortical expansion involves glutamatergic neuron diversification. Nature 598, 151\u2013158 (2021). - PubMed - PMC - DOI 10.1038/s41586-021-03569-3"
+    },
+    {
+      "doi": "10.1016/j.neuron.2009.01.015",
+      "author": "Nature",
+      "year": "2021",
+      "full_text": "ic neuron diversification. Nature 598, 151\u2013158 (2021). - PubMed - PMC - DOI 10.1038/s41586-021-03569-3\nLefort, S., Tomm, C., Floyd Sarria, J. C. & Petersen, C. C. The excitatory neuronal network of the C2 barrel column in mouse primary somatosensory cortex. Neuron 61, 301\u2013316 (2009). - PubMed - DOI 10.1016/j.neuron.2009.01.015"
+    },
+    {
+      "doi": "10.1073/pnas.1306820110",
+      "author": "Neuron",
+      "year": "2009",
+      "full_text": "ork of the C2 barrel column in mouse primary somatosensory cortex. Neuron 61, 301\u2013316 (2009). - PubMed - DOI 10.1016/j.neuron.2009.01.015\nMeyer, H. S. et al. Cellular organization of cortical barrel columns is whisker-specific. Proc. Natl Acad. Sci. USA 110, 19113\u201319118 (2013). - PubMed - PMC - DOI 10.1073/pnas.1306820110"
+    },
+    {
+      "doi": "10.1038/nmeth.2445",
+      "author": "Proc",
+      "year": "2013",
+      "full_text": "ation of cortical barrel columns is whisker-specific. Proc. Natl Acad. Sci. USA 110, 19113\u201319118 (2013). - PubMed - PMC - DOI 10.1073/pnas.1306820110\nHelmstaedter, M. Cellular-resolution connectomics: challenges of dense neural circuit reconstruction. Nat. Methods 10, 501\u2013507 (2013). - PubMed - DOI 10.1038/nmeth.2445"
+    },
+    {
+      "doi": "10.1038/s41592-021-01166-8",
+      "author": "Nat",
+      "year": "2013",
+      "full_text": "ectomics: challenges of dense neural circuit reconstruction. Nat. Methods 10, 501\u2013507 (2013). - PubMed - DOI 10.1038/nmeth.2445\nBuhmann, J. et al. Automatic detection of synaptic partners in a whole-brain Drosophila electron microscopy data set. Nat. Methods 18, 771\u2013774 (2021). - PubMed - PMC - DOI 10.1038/s41592-021-01166-8"
+    },
+    {
+      "doi": "10.1038/nature12346",
+      "author": "Drosophila",
+      "year": "2021",
+      "full_text": "ynaptic partners in a whole-brain Drosophila electron microscopy data set. Nat. Methods 18, 771\u2013774 (2021). - PubMed - PMC - DOI 10.1038/s41592-021-01166-8\nHelmstaedter, M. et al. Connectomic reconstruction of the inner plexiform layer in the mouse retina. Nature 500, 168\u2013174 (2013). - PubMed - DOI 10.1038/nature12346"
+    },
+    {
+      "doi": "10.1126/science.287.5451.273",
+      "author": "Nature",
+      "year": "2013",
+      "full_text": "econstruction of the inner plexiform layer in the mouse retina. Nature 500, 168\u2013174 (2013). - PubMed - DOI 10.1038/nature12346\nGupta, A., Wang, Y. & Markram, H. Organizing principles for a diversity of GABAergic interneurons and synapses in the neocortex. Science 287, 273\u2013278 (2000). - PubMed - DOI 10.1126/science.287.5451.273"
+    },
+    {
+      "doi": "10.1038/s41586-021-03229-w",
+      "author": "Science",
+      "year": "2000",
+      "full_text": "rgic interneurons and synapses in the neocortex. Science 287, 273\u2013278 (2000). - PubMed - DOI 10.1126/science.287.5451.273\nHoller, S., Kostinger, G., Martin, K. A. C., Schuhknecht, G. F. P. & Stratford, K. J. Structure and function of a neocortical synapse. Nature 591, 111\u2013116 (2021). - PubMed - DOI 10.1038/s41586-021-03229-w"
+    },
+    {
+      "doi": "10.1038/nature23236",
+      "author": "Martin,",
+      "year": "2021",
+      "full_text": "er, G., Martin, K. A. C., Schuhknecht, G. F. P. & Stratford, K. J. Structure and function of a neocortical synapse. Nature 591, 111\u2013116 (2021). - PubMed - DOI 10.1038/s41586-021-03229-w\nSchmidt, H. et al. Axonal synapse sorting in medial entorhinal cortex. Nature 549, 469\u2013475 (2017). - PubMed - DOI 10.1038/nature23236"
+    },
+    {
+      "doi": "10.7554/elife.24364",
+      "author": "Schmidt,",
+      "year": "2017",
+      "full_text": "s41586-021-03229-w\nSchmidt, H. et al. Axonal synapse sorting in medial entorhinal cortex. Nature 549, 469\u2013475 (2017). - PubMed - DOI 10.1038/nature23236\nKornfeld, J. et al. EM connectomics reveals axonal target variation in a sequence-generating network. eLife 6, e24364 (2017). - PubMed - PMC - DOI 10.7554/elife.24364"
+    },
+    {
+      "doi": "10.1016/j.conb.2011.12.002",
+      "author": "Life",
+      "year": "2017",
+      "full_text": "EM connectomics reveals axonal target variation in a sequence-generating network. eLife 6, e24364 (2017). - PubMed - PMC - DOI 10.7554/elife.24364\nBriggman, K. L. & Bock, D. D. Volume electron microscopy for neuronal circuit reconstruction. Curr. Opin. Neurobiol. 22, 154\u2013161 (2012). - PubMed - DOI 10.1016/j.conb.2011.12.002"
+    }
+  ]
+}

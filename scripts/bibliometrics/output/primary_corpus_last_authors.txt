@@ -1,0 +1,408 @@
+Unique Last Authors from PRIMARY Corpus (K≥25 + In-degree≥2)
+Total papers: 959
+Unique last authors: 402
+
+Authors (sorted by frequency, then alphabetically):
+
+ 41  Edward T. Bullmore
+ 37  Olaf Sporns
+ 25  Danielle S. Bassett
+ 22  Yong He
+ 19  Gregory S.X.E. Jefferis
+ 19  H. Sebastian Seung
+ 19  Michael P. Milham
+ 15  Bratislav Mišić
+ 15  Moritz Helmstaedter
+ 12  Martijn P. van den Heuvel
+ 12  Michael Breakspear
+ 12  Steven E. Petersen
+ 11  David C. Van Essen
+ 11  Ian A. Meinertzhagen
+ 10  Alan C. Evans
+ 10  Andrew Zalesky
+ 10  Marcus E. Raichle
+  9  Jeff W. Lichtman
+  8  Alex Fornito
+  8  Gerald M. Rubin
+  8  Michael B. Reiser
+  8  Winfried Denk
+  7  Albert Cardona
+  7  Rolf Kötter
+  7  Vinod Menon
+  6  B.T. Thomas Yeo
+  6  Cornelis J. Stam
+  6  Dmitri B. Chklovskii
+  6  Jan Funke
+  6  Mark D’Esposito
+  6  Stephen M. Smith
+  6  Wei-Chung Allen Lee
+  5  Damien A. Fair
+  5  Davi D. Bock
+  5  FlyLight Project Team
+  5  Hilleke E. Hulshoff Pol
+  5  Mala Murthy
+  5  Marta Zlatic
+  5  Morten L. Kringelbach
+  5  Scott T. Grafton
+  5  Srinivas C. Turaga
+  4  Adrian Wanner
+  4  Albert-Ĺaszló Barabási
+  4  Barry J. Dickson
+  4  Boris C. Bernhardt
+  4  Gustavo Deco
+  4  Gwyneth M Card
+  4  Harald F. Hess
+  4  Karl Friston
+  4  Kristin Scott
+  4  Matthew F. Glasser
+  4  Michael D. Greicius
+  4  R. Todd Constable
+  4  René S. Kahn
+  4  Viren Jain
+  4  Xi‐Nian Zuo
+  3  Anders M. Dale
+  3  Bruce Fischl
+  3  Claus C. Hilgetag
+  3  John D. Murray
+  3  Karl Zilles
+  3  Kâmil Uǧurbil
+  3  Louis K. Scheffer
+  3  Malcolm P. Young
+  3  Mark Jenkinson
+  3  Maurizio Corbetta
+  3  Nico U.F. Dosenbach
+  3  Nuno Maçarico da Costa
+  3  Paul M. Matthews
+  3  Pavel Tomančák
+  3  Richard F. Betzel
+  3  Scott Waddell
+  3  Stephen M. Plaza
+  3  Theodore D. Satterthwaite
+  3  Thomas R. Clandinin
+  3  Tianzi Jiang
+  3  Timothy E.J. Behrens
+  3  Viktor Jirsa
+  3  Vivek Jayaraman
+  3  Yoshinori Aso
+  2  Alan Connelly
+  2  Andreas Meyer‐Lindenberg
+  2  Andrew M. Dacks
+  2  Beatríz Luna
+  2  Bradley L. Schlaggar
+  2  Chadi G. Abdallah
+  2  Chi Zhang
+  2  Christel Genoud
+  2  D. Zeidler
+  2  Dana S. Galili
+  2  Daniel L. Schacter
+  2  Dimitri Van De Ville
+  2  Emmanuel A. Stamatakis
+  2  Essa Yacoub
+  2  Forrest Collman
+  2  Franco Pestilli
+  2  Fred A. Hamprecht
+  2  Gordon L. Shulman
+  2  Gáspár Jékely
+  2  Hanspeter Pfister
+  2  Henry Kennedy
+  2  Hesheng Liu
+  2  Hongkui Zeng
+  2  Javier M. Buldú
+  2  Jinhui Wang
+  2  John C Tuthill
+  2  Joshua R. Sanes
+  2  Karel Svoboda
+  2  Katharina Eichler
+  2  Konrad Rokicki
+  2  Luca Cocchi
+  2  Lucy Collinson
+  2  M. E. J. Newman
+  2  Manuel Zimmer
+  2  Massimo Marchiori
+  2  Mei Zhen
+  2  Michael J. Pankratz
+  2  Michael S. Gazzaniga
+  2  Nir Shavit
+  2  Patric Hagmann
+  2  Paul J. Laurienti
+  2  Qiyong Gong
+  2  R. Clay Reid
+  2  R. Nathan Spreng
+  2  Rachel I. Wilson
+  2  Ragini Verma
+  2  Rainer W. Friedrich
+  2  Randy L. Buckner
+  2  Russell A. Poldrack
+  2  Saâd Jbabdi
+  2  Scott W. Emmons
+  2  Stephan Saalfeld
+  2  Steven H. Strogatz
+  2  Todd S. Braver
+  2  Yaron Meirovitch
+  2  Yasuo Kawaguchi
+  1  A. Fornito
+  1  A. Vania Apkarian
+  1  Abraham Z. Snyder
+  1  Adeel Razi
+  1  Albert-László Barabási
+  1  Alessandro Vespignani
+  1  Alexander Romanowski
+  1  Almut Schüz
+  1  Ameera X. Patel
+  1  Andreas Burkhalter
+  1  Andreas Daffertshofer
+  1  Andreas Draguhn
+  1  Andreas T. Schaefer
+  1  Andrew J. Saykin
+  1  Andrew M. Seeds
+  1  Andrew Simmons
+  1  Andrew Straw
+  1  Angelo Bifone
+  1  Anita Dittrich
+  1  Ankit N. Khambhati
+  1  Armin Bahl
+  1  Arnaud Messé
+  1  Aron K. Barbey
+  1  Ashish Raj
+  1  Ashwin Vishwanathan
+  1  Ben Fulcher
+  1  Ben Lich
+  1  Benjamin H. White
+  1  Berend Malchow
+  1  Bernhard A. Sabel
+  1  Bert Sakmann
+  1  Bill S. Hansson
+  1  Binyamin Hochner
+  1  Bratislav Misic
+  1  Brian A. Wandell
+  1  Bullmore, Edward T.
+  1  Caio Seguin
+  1  Carey E. Priebe
+  1  Carlos G. Puntonet
+  1  Carter T. Butts
+  1  Casey M Schneider-Mizell
+  1  Charles F. Stevens
+  1  Ching‐Po Lin
+  1  Chris Frith
+  1  Christian F. Beckmann
+  1  Christopher J. Honey
+  1  Christopher T Zugates
+  1  Christos Pantelis
+  1  Chuanjun Zhuo
+  1  Clare E. Mackay
+  1  Clifford R. Jack
+  1  Cornelia I. Bargmann
+  1  Daniel Rueckert
+  1  Daniel Tranel
+  1  Daniele Marinazzo
+  1  David B. Dunson
+  1  David Meunier
+  1  David Osumi-Sutherland
+  1  Deanna J. Greene
+  1  Derek K. Jones
+  1  Detlev Arendt
+  1  Donald Gross
+  1  Dong‐Uk Hwang
+  1  Douglas S. Kim
+  1  Douglas Totten
+  1  Edmund Sonuga‐Barke
+  1  Elisabeth C.W. van Straaten
+  1  Eric Betzig
+  1  Eric Halgren
+  1  Eric Westman
+  1  Etienne Lefebvre
+  1  Eugene Duff
+  1  Eunsook Ma
+  1  Eve Marder
+  1  Fei Wang
+  1  Felix Blankenburg
+  1  Fernando Calamante
+  1  Florian Engert
+  1  Fon Powell
+  1  Frank G. Hillary
+  1  Frederik Barkhof
+  1  G M Edelman
+  1  Gagan S. Wig
+  1  Gaolang Gong
+  1  Georg Langs
+  1  Gerald T. Finnerty
+  1  Gilbert L. Henry
+  1  Giovanni B. Frisoni
+  1  Godfrey D. Pearlson
+  1  Gonzalo G. de Polavieja
+  1  Gorka Zamora‐López
+  1  Gregory S. X. E. Jefferis
+  1  Guangming Lu
+  1  Guillaume Marrelec
+  1  György Buzsáki
+  1  Hao Huang
+  1  Harvey B. Pollard
+  1  Heinz Horstmann
+  1  Henry Markram
+  1  Herwig Baier
+  1  Hiroshi Fukuda
+  1  Hong‐Wei Dong
+  1  I. Kovács
+  1  Ian H. Gotlib
+  1  Idan Segev
+  1  Ilona C Grunwald Kadow
+  1  Jaap C. Reijneveld
+  1  Jack W. Scannell
+  1  Jacob P. Hoogenboom
+  1  James M. Jeanne
+  1  James M. Shine
+  1  Jamie L. Hurlburt
+  1  Jansen Seguido
+  1  Jason B. Mattingley
+  1  Jean M. Carlson
+  1  Jeanette A. Mumford
+  1  Jean‐Pierre Changeux
+  1  Jenn-Kang Hwang
+  1  Jessica S. Damoiseaux
+  1  Jia Liu
+  1  Jianxin Wang
+  1  JoAnn Buchanan
+  1  Joaquín Goñi
+  1  Joergen Kornfeld
+  1  Johann G. Danzl
+  1  John Blangero
+  1  John C. Fiala
+  1  John Duncan
+  1  John M. Beggs
+  1  John McGonigle
+  1  John Suckling
+  1  Jon S. Simons
+  1  Jonathan D. Zwi
+  1  Jonathan Smallwood
+  1  Jonathan Wirsich
+  1  Jordan Grafman
+  1  Jos B. T. M. Roerdink
+  1  Joseph O’Neill
+  1  Joshua I. Gold
+  1  Joshua T Vogelstein
+  1  José M. Sánchez‐Bornot
+  1  Judith M. Ford
+  1  Jürgen Rybak
+  1  Kang Sim
+  1  Karla L. Miller
+  1  Karla R. Kaun
+  1  Katherine Morrison
+  1  Kenneth Knoblauch
+  1  Kevin L. Briggman
+  1  Kim Sneppen
+  1  Klaas Ε. Stephan
+  1  Kristen M. Harris
+  1  Larry J. Seidman
+  1  Larry W. Swanson
+  1  Lauri A. Laitinen
+  1  Lena Lörsch
+  1  Leslie B. Vosshall
+  1  Lester Melie‐García
+  1  Lichtman Jw
+  1  Linton C. Freeman
+  1  Liyu Huang
+  1  Longchuan Li
+  1  Lucina Q. Uddin
+  1  Luiz Pessoa
+  1  Luı́s A. Nunes Amaral
+  1  M. P. Young
+  1  M. Ángeles Serrano
+  1  M.‐Marsel Mesulam
+  1  MP Young
+  1  Mahmoud Hassan
+  1  Manon J.N.L. Benders
+  1  Marc Joliot
+  1  Marcelo G. Mattar
+  1  Marcus Kaiser
+  1  Maria A. Rocca
+  1  Mario Chávez
+  1  Marion Silies
+  1  Mark A. Mintun
+  1  Mark Hallett
+  1  Mark Newman
+  1  Marta Costa
+  1  Martin I. Sereno
+  1  Mathias F. Wernet
+  1  Matthew F. S. Rushworth
+  1  Maxime Descoteaux
+  1  Maximilian Joesch
+  1  Mehrtash Babadi
+  1  Michael A. Long
+  1  Michael Newman
+  1  Michael Petrides
+  1  Michael W. Cole
+  1  Michael W. Weiner
+  1  Michel Thiebaut de Schotten
+  1  Michelle Girvan
+  1  Neda Bernasconi
+  1  Ni Shu
+  1  Nichole R. Lighthall
+  1  Nitin Gogtay
+  1  Onur Güntürkün
+  1  P. Ellen Grant
+  1  Partha P. Mitra
+  1  Pasko Rakić
+  1  Paulino Ribeiro Villas-Boas
+  1  Pauly Ossenblok
+  1  Peter C.M. van Zijl
+  1  Peter Fransson
+  1  Peter J. Mucha
+  1  Peter Stiers
+  1  Philip McGuire
+  1  Piet Van Mieghem
+  1  Raghavendra Singh
+  1  Ralf J. Sommer
+  1  Reed George
+  1  Rex E. Jung
+  1  Richard Coppola
+  1  Rick van Minkelen
+  1  Robert E. Marc
+  1  Robert M. Weisskoff
+  1  Robert W. Cox
+  1  Rodney J. Douglas
+  1  Ronald Killiany
+  1  Ruben Schmidt
+  1  Réka Albert
+  1  S. D. O'Neil
+  1  Santo Fortunato
+  1  Sarah Genon
+  1  Sarah Parisot
+  1  Sarah Whittle
+  1  Sei Saitoh
+  1  Serena J. Counsell
+  1  Sharna D. Jamadar
+  1  Shawn Mikula
+  1  Shelli R. Kesler
+  1  Shin Ishii
+  1  Simon R. Cox
+  1  Sophie Achard
+  1  Stein Aerts
+  1  Stephen J Smith
+  1  Stephen M. Lawrie
+  1  Steven Laureys
+  1  Stuart Berg
+  1  Sung Soo Kim
+  1  Susan Y. Bookheimer
+  1  Sydney Brenner
+  1  Takashi Kawase
+  1  Takuya Hayashi
+  1  Tamás Vicsek
+  1  Thomas Misgeld
+  1  Timothy S. Coalson
+  1  Tony J. Prescott
+  1  Toshihide Hige
+  1  Uri Alon
+  1  Volker Hartenstein
+  1  W.D. Penny
+  1  Walter Schneider
+  1  William Gray-Roncal
+  1  William R Schafer
+  1  William W. Seeley
+  1  Xiao‐Jing Wang
+  1  Yanchao Bi
+  1  Yiyin Zhou
+  1  Yosef Hochberg
+  1  Yufeng Wang
+  1  Zhijun Zhang
+  1  Zoltán F. Kisvárday
+  1  for the Alzheimer's Disease Neuroimaging Initiative

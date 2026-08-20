@@ -1,0 +1,26 @@
+{% comment %}
+  Renders the mode axis from _data/modes.yml.
+  Modes with status "in_development" are rendered as unavailable rather than
+  hidden, so the gap is visible instead of implied.
+  Usage: {% include ui/mode-picker.html %}
+{% endcomment %}
+<div class="cards-grid cards-grid-wide">
+  {% for m in site.data.modes.modes %}
+  <article class="card{% if m.status != 'available' %} card-muted{% endif %}">
+    <div class="card-icon">{{ m.icon }}</div>
+    <h3 class="card-title">{{ m.title }}</h3>
+    {% if m.status == 'available' %}
+      <p class="card-meta">Available</p>
+    {% else %}
+      <p class="card-meta">In development &mdash; not yet built</p>
+    {% endif %}
+    <p class="card-description">{{ m.tagline }}</p>
+    <p><small><strong>For:</strong> {{ m.audience }}</small></p>
+    <div class="mt-1">
+      <a href="{{ '/modes/#' | append: m.slug | relative_url }}" class="btn {% if m.status == 'available' %}btn-primary{% else %}btn-secondary{% endif %}">
+        {% if m.status == 'available' %}How this mode works{% else %}What it would take{% endif %}
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

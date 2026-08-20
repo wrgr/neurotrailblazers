@@ -38,6 +38,7 @@ combines_with:
   - graph-representations
   - motif-analysis
   - neuroai-bridge
+content_type: core
 ---
 
 ## Overview

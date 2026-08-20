@@ -32,6 +32,7 @@ combines_with:
   - artifact-taxonomy
   - em-principles
   - reconstruction-pipeline
+content_type: core
 ---
 
 ## Overview

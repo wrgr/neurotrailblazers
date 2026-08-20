@@ -7,6 +7,7 @@ track: career-and-community
 pathways:
   - professional growth
   - hidden curriculum
+content_type: navigation
 ---
 
 <div class="main-content">
@@ -23,33 +24,43 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>Choose Your Path</h2>
-        <div class="cards-grid">
+        <h2>Two questions, not one</h2>
+        <p>Getting oriented here means answering two separate questions, and most people only think to ask the first. <strong>What</strong> you are learning is the track. <strong>How</strong> you are using it &mdash; alone, in a session someone is running, or inside a research group &mdash; is the mode. They are independent, and the second one changes what you should be reading as much as the first does.</p>
+
+        <h3>1. How are you using this?</h3>
+        {% include ui/mode-picker.html %}
+        <p class="mt-1"><a href="{{ '/modes/' | relative_url }}">What each mode assumes, gives, and does not give &rarr;</a></p>
+
+        <h3>2. What are you learning?</h3>
+        <div class="cards-grid cards-grid-wide">
             <div class="card">
-                <div class="card-icon">🧠</div>
-                <h3 class="card-title">Core Concepts & Methods</h3>
-                <p class="card-description">Build technical fluency in connectomics from motivation and imaging through analysis methods.</p>
+                <div class="card-icon">&#129504;</div>
+                <h3 class="card-title">Core Concepts &amp; Methods</h3>
+                <p class="card-description">Build technical fluency in connectomics from motivation and imaging through analysis methods. The default answer if you are new, whatever your career stage.</p>
                 <div class="mt-1">
                     <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Track</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-icon">🔬</div>
+                <div class="card-icon">&#128736;</div>
                 <h3 class="card-title">Research in Action</h3>
-                <p class="card-description">Apply methods through workflows, quality control, tools, and research execution practice.</p>
+                <p class="card-description">Apply methods through workflows, quality control, tools, and research execution practice. Works best alongside a live project rather than instead of one.</p>
                 <div class="mt-1">
                     <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Practice Track</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-icon">🤝</div>
-                <h3 class="card-title">Career & Community</h3>
-                <p class="card-description">Navigate mentorship, hidden curriculum, and professional growth pathways.</p>
+                <div class="card-icon">&#129309;</div>
+                <h3 class="card-title">Career &amp; Community</h3>
+                <p class="card-description">Navigate mentorship, the hidden curriculum, and professional growth. Relevant from week one, not only at the end.</p>
                 <div class="mt-1">
                     <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Community Track</a>
                 </div>
             </div>
         </div>
+
+        <h3>Or neither</h3>
+        <p>The tracks are a convenience, not a gate. If you have a specific question rather than a curriculum-sized one, go straight to <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the dictionary, content library, journal club, atlas, hidden curriculum and datasets are written to be looked things up in, and none of them requires you to have started anywhere.</p>
     </section>
 
     {% include ui/technical-track-roadmap.html %}
@@ -57,14 +68,14 @@ pathways:
     <section class="section">
         <h2>Understanding Our Structure</h2>
 
-        <h3>Three Track Architecture</h3>
-        <p>We organize learning around three tracks aligned to the Fadel dimensions:</p>
+        <h3>Core with tracks</h3>
+        <p>The site has two layers, and telling them apart saves a lot of wandering.</p>
         <ul class="mb-2" style="margin-left: 2rem;">
-            <li><strong>Core Concepts & Methods:</strong> Knowledge + skills foundations</li>
-            <li><strong>Research in Action:</strong> Applied workflows and reproducible practice</li>
-            <li><strong>Career & Community:</strong> Character + meta-learning, mentorship, hidden curriculum</li>
+            <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
+            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</strong> Each selects from the core, sequences it, and adds labs that end in an artifact. Three of them, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
+            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory programme built on the same core &mdash; is named on that page but is not built yet.</li>
         </ul>
-        <p><a href="{{ '/tracks/' | relative_url }}">Explore all tracks</a></p>
+        <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
 
         <h3>Key Datasets</h3>
         <p>Learn with real scientific data from landmark studies:</p>
@@ -162,7 +173,7 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>Your first hour</h2>
+        <h2 id="your-first-hour">Your first hour</h2>
         <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
 
         <div class="checklist-box">

@@ -10,6 +10,7 @@ pathways:
   - mentor support
 summary: "Instructor-facing guide for pacing, differentiation, assessment, and scaling."
 use_layout_hero: false
+content_type: delivery
 ---
 
 <div class="main-content">

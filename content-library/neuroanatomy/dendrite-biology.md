@@ -49,6 +49,7 @@ combines_with:
   - synapse-classification
   - organelle-cues
 use_layout_hero: false
+content_type: core
 ---
 
 # Dendrite Biology and Ultrastructure

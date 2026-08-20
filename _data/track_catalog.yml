@@ -11,6 +11,22 @@ tracks:
       - technical foundation
       - methods depth
       - analytical reasoning
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Read the ten technical units in order, do every lab, and treat units 05-07 as the centre of gravity rather than a descriptive interlude. Roughly 40-60 hours."
+        start_url: /technical-training/01-why-map-the-brain/
+        start_label: "Open Unit 01"
+        note: "The perceptual units are the part that most needs a second pair of eyes. Find one partner before you reach Unit 05."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 01 and 03-11 have session kits. A common shape is a five-session block: framing, imaging, reading the images (two sessions), then reconstruction infrastructure."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "The two image-reading sessions carry the load. Do not compress them to make room for infrastructure."
+      - slug: research-intensive
+        available: false
+        shape: "Would sit downstream of this track: the units become the reference a trainee consults while working, and the calibration gate replaces the self-scored drills."
     module_numbers: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     time_estimate: "40-60 hours of focused work, typically over 8-12 weeks"
     entry_requirement: "None. Introductory biology and comfort with basic arithmetic are enough to start."
@@ -77,6 +93,22 @@ tracks:
       - research workflow
       - reproducibility
       - project execution
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Workable alone, but only if you have a real dataset in front of you. Without one the proofreading and analysis labs become thought experiments, which is exactly the failure mode this track exists to prevent."
+        start_url: /datasets/access/
+        start_label: "Get data access first"
+        note: "Do the version-pinning habit from the first query, not after your first result drifts."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 06, 07, 12-16, 18, 20 and 21 have session kits. Best run alongside a live project rather than as a standalone course."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "Bring your own group's data if you have it. The generic scenarios work, but the arguments about triage priority get real when the volume is theirs."
+      - slug: research-intensive
+        available: false
+        shape: "This is the track the intensive would be built on. The proofreading and QC work here is the closest the site comes to contributory tasks, but nothing downstream currently consumes the output."
     module_numbers: [6, 7, 12, 13, 14, 15, 16, 18, 20, 21]
     time_estimate: "50-70 hours, typically over 10-14 weeks, alongside a real project"
     entry_requirement: "Core Concepts & Methods, or equivalent working familiarity with EM data and reconstruction."
@@ -139,6 +171,22 @@ tracks:
       - mentoring
       - professional growth
       - hidden curriculum
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Read the hidden curriculum alongside whatever technical work you are doing, not as a block at the end. The modules add structure; the hidden curriculum is the part that is otherwise transmitted only by proximity to someone who already knows."
+        start_url: /hidden-curriculum/
+        start_label: "Open the hidden curriculum"
+        note: "The parts about conflict, belonging, and career mechanics are worth reading before you need them."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 01, 02, 17, 19 and 22-25 have session kits. Every other session kit on the site also nominates one norm to name out loud, which is where most of this track's delivery actually happens."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "A norm named once in a technical session lands harder than a dedicated session on professional development."
+      - slug: research-intensive
+        available: false
+        shape: "Would matter most here. The norms that decide who thrives in a lab are the ones an intensive programme transmits by default to some people and not others; making them explicit is the point."
     module_numbers: [1, 2, 17, 19, 22, 23, 24, 25]
     time_estimate: "25-35 hours, spread across the whole of a training period rather than completed in a block"
     entry_requirement: "None. This track is relevant from week one, not only at the end."

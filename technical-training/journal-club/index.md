@@ -7,6 +7,7 @@ pathways:
   - technical foundation
   - shared vocabulary
 description: "Interactive journal club with a curated connectomics reading list. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
+content_type: core
 ---
 
 <div class="layout-content layout-page">

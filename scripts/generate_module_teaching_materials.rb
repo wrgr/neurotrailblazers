@@ -490,6 +490,7 @@ module_paths.each do |path|
     permalink: /modules/slides/module#{num}/
     slug: module#{num}-slides
     track: core-concepts-methods
+    content_type: delivery
     pathways:
       - classroom delivery
       - teaching preparation
@@ -555,6 +556,7 @@ module_paths.each do |path|
     permalink: /teaching/sessions/module#{num}/
     slug: session-module#{num}
     track: career-and-community
+    content_type: delivery
     pathways:
       - classroom delivery
       - mentor support
@@ -667,6 +669,7 @@ File.write(sessions_index, <<~MD)
   permalink: /teaching/sessions/
   slug: session-kits
   track: career-and-community
+  content_type: delivery
   pathways:
     - classroom delivery
     - mentor support
@@ -703,6 +706,7 @@ File.write(index_path, <<~MD)
   permalink: /modules/slides/
   slug: module-slides
   track: core-concepts-methods
+  content_type: delivery
   pathways:
     - classroom delivery
   ---

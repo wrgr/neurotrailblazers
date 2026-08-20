@@ -48,6 +48,7 @@ combines_with:
   - dendrite-biology
   - axon-biology
 use_layout_hero: false
+content_type: core
 ---
 
 # Organelle Cues for Compartment Identification

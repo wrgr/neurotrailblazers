@@ -6,6 +6,7 @@ permalink: /hidden-curriculum/
 track: career-and-community
 pathways:
   - hidden curriculum
+content_type: core
 ---
 
 ## What "hidden curriculum" means here

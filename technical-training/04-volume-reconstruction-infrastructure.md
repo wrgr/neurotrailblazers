@@ -11,6 +11,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "2 hours reading + 90 minute lab"
 prerequisites: "Units 01-03; comfort reading code helps but is not required"
+content_type: path
 ---
 
 ## Before you start

@@ -5,6 +5,7 @@ permalink: /content-library/journal-papers/infrastructure/
 description: "This dimension has been split into Computer Vision & ML and Data Storage & Pipelines for more focused organization."
 dimension: infrastructure
 use_layout_hero: false
+content_type: core
 ---
 
 # Computational Infrastructure Journal Papers — Redirected

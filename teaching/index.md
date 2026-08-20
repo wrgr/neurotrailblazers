@@ -10,6 +10,7 @@ pathways:
   - mentor support
 summary: "Central hub for teaching materials across all modules."
 use_layout_hero: false
+content_type: delivery
 ---
 
 <div class="main-content">
@@ -28,6 +29,12 @@ use_layout_hero: false
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course Hub</a>
     </div>
+  </section>
+
+  <section class="section">
+    <h2>Where this sits</h2>
+    <p>This is <strong>delivery material</strong>: written for whoever is running a session, not for whoever is learning. It is the <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a> of the same curriculum that <a href="{{ '/modes/#self-study' | relative_url }}">self-study</a> learners read directly.</p>
+    <p>Nothing here is a separate body of content. Session kits are generated from the module pages, and the depth behind every activity lives in <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the content library, dictionary, journal club, atlas and hidden curriculum. If a learner asks a question a kit does not answer, the core is where you look.</p>
   </section>
 
   <section class="section">

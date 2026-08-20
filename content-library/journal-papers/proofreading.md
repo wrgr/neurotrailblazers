@@ -12,6 +12,7 @@ tags:
   - proofreading:proofreading-tools
   - proofreading:crowd-sourced-proofreading
 use_layout_hero: false
+content_type: core
 ---
 
 # Proofreading & Quality Control Journal Papers

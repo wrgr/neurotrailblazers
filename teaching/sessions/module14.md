@@ -5,6 +5,7 @@ description: "Everything needed to run Module 14 as a taught session: prep, timi
 permalink: /teaching/sessions/module14/
 slug: session-module14
 track: career-and-community
+content_type: delivery
 pathways:
   - classroom delivery
   - mentor support

@@ -4,6 +4,7 @@ title: "Connectome Quality Notebooks"
 description: "A computational path through connectome quality assessment: reference code for each step, and the analyses to build for yourself."
 permalink: /notebooks/connectome-quality/
 use_layout_hero: false
+content_type: path
 ---
 
 <div class="main-content">

@@ -19,6 +19,14 @@ CONTENT_GLOBS = [
   "start-here.md",
   "models.md",
   "education/models.md",
+  "content-library/*.md",
+  "content-library/*/*.md",
+  "hidden-curriculum/*.md",
+  "teaching/*.md",
+  "teaching/sessions/*.md",
+  "modules/slides/*.md",
+  "core/*.md",
+  "modes/*.md",
 ].freeze
 
 REQUIRED_BY_TYPE = {
@@ -38,6 +46,39 @@ TRACK_METADATA_PATH_PREFIXES = %w[
   concepts/
   technical-training/
 ].freeze
+
+# The core-with-tracks axis. Every published page declares which layer it
+# belongs to, so the distinction is checkable rather than implied:
+#
+#   core       reference material, consulted rather than worked through
+#   path       ordered content that belongs to a track and ends in an artifact
+#   delivery   material for whoever runs a session, not for the learner
+#   navigation hub pages whose job is to route to one of the above
+CONTENT_TYPES = %w[core path delivery navigation].freeze
+
+# Directories where a missing content_type is an error rather than an omission.
+# Anything under these is published curriculum and has to declare its layer.
+CONTENT_TYPE_REQUIRED_PREFIXES = %w[
+  content-library/
+  hidden-curriculum/
+  technical-training/
+  modules/
+  teaching/
+  tracks/
+  core/
+  modes/
+  datasets/
+  tools/
+  avatars/
+  frameworks/
+].freeze
+
+def requires_content_type?(path)
+  rel = path.relative_path_from(ROOT).to_s
+  return true if rel == "start-here.md"
+
+  CONTENT_TYPE_REQUIRED_PREFIXES.any? { |prefix| rel.start_with?(prefix) }
+end
 
 def requires_track_metadata?(path)
   rel = path.relative_path_from(ROOT).to_s
@@ -122,6 +163,12 @@ def validate_file(path)
     slug = fm["slug"]
     expected_slug = path.basename(".md").to_s
     problems << "slug '#{slug}' does not match filename '#{expected_slug}'" if slug && slug != expected_slug
+  end
+
+  if fm.key?("content_type") && !CONTENT_TYPES.include?(fm["content_type"])
+    problems << "content_type '#{fm["content_type"]}' is not one of: #{CONTENT_TYPES.join(', ')}"
+  elsif !fm.key?("content_type") && requires_content_type?(path)
+    problems << "missing content_type (one of: #{CONTENT_TYPES.join(', ')})"
   end
 
   if requires_track_metadata?(path)

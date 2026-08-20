@@ -11,6 +11,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "2 hours reading + 90 minute calibration lab"
 prerequisites: "Unit 05"
+content_type: path
 ---
 
 ## Before you start

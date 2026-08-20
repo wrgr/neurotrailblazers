@@ -33,6 +33,7 @@ combines_with:
   - em-principles
   - artifact-taxonomy
   - acquisition-qa
+content_type: core
 ---
 
 ## Overview

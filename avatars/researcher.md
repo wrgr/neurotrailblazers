@@ -37,6 +37,7 @@ image: /assets/images/avatars/researcher.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD
 use_layout_hero: false
+content_type: core
 ---
 
 <div class="main-content">

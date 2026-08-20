@@ -46,6 +46,7 @@ combines_with:
   - proofreading-strategies
   - worked-examples
 use_layout_hero: false
+content_type: core
 ---
 
 # Proofreading Tools for Connectome Reconstruction

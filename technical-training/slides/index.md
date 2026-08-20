@@ -3,6 +3,7 @@ layout: page
 title: "Technical Training Lecture Plans"
 permalink: /technical-training/slides/
 slug: technical-training-slides
+content_type: delivery
 ---
 
 ## Lecture plans for the technical track

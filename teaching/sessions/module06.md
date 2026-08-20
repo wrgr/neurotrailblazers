@@ -5,6 +5,7 @@ description: "Everything needed to run Module 06 as a taught session: prep, timi
 permalink: /teaching/sessions/module06/
 slug: session-module06
 track: career-and-community
+content_type: delivery
 pathways:
   - classroom delivery
   - mentor support

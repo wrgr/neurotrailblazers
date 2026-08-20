@@ -11,6 +11,7 @@ pathways:
 level: "Advanced"
 time_estimate: "2.5 hours reading + 2 hour analysis lab"
 prerequisites: "Units 01, 04, 08; basic probability and Python"
+content_type: path
 ---
 
 ## Before you start

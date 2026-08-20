@@ -9,6 +9,7 @@ pathways:
   - technical foundation
   - shared vocabulary
 use_layout_hero: false
+content_type: core
 ---
 
 <div class="main-content">

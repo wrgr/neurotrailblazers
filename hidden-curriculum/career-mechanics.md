@@ -6,6 +6,7 @@ permalink: /hidden-curriculum/career-mechanics/
 track: career-and-community
 pathways:
   - hidden curriculum
+content_type: core
 ---
 
 ## Before you start

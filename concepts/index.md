@@ -9,6 +9,7 @@ pathways:
   - hidden curriculum
 summary: "Find content by concept and learner need rather than module number."
 use_layout_hero: false
+content_type: navigation
 ---
 
 <div class="main-content">

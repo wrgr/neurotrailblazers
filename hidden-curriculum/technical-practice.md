@@ -6,6 +6,7 @@ permalink: /hidden-curriculum/technical-practice/
 track: career-and-community
 pathways:
   - hidden curriculum
+content_type: core
 ---
 
 ## What this page is

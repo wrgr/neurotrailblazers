@@ -11,6 +11,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "2 hours reading + 90 minute lab"
 prerequisites: "Units 01-02"
+content_type: path
 ---
 
 ## Before you start

@@ -13,6 +13,7 @@ tags:
   - connectomics:hub
   - connectomics:connectome-comparison
 use_layout_hero: false
+content_type: core
 ---
 
 # Graph Analysis & Network Science Journal Papers

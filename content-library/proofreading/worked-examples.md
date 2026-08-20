@@ -41,6 +41,7 @@ combines_with:
   - proofreading-tools
   - metrics-and-qa
 use_layout_hero: false
+content_type: core
 ---
 
 # Proofreading Worked Examples

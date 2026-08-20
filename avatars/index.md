@@ -9,6 +9,7 @@ pathways:
   - mentoring
   - professional growth
 use_layout_hero: false
+content_type: core
 ---
 
 <div class="main-content">

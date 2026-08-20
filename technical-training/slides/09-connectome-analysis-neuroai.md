@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Connectome Analysis and NeuroAI"
 permalink: /technical-training/slides/09-connectome-analysis-neuroai/
 slug: slides-09-connectome-analysis-neuroai
+content_type: delivery
 ---
 
 ## What this document is

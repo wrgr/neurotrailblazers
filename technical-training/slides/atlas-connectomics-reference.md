@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Atlas Connectomics Reference"
 permalink: /technical-training/slides/atlas-connectomics-reference/
 slug: slides-atlas-connectomics-reference
+content_type: delivery
 ---
 
 ## What this document is

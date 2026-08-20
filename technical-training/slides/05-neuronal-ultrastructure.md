@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Neuronal Ultrastructure"
 permalink: /technical-training/slides/05-neuronal-ultrastructure/
 slug: slides-05-neuronal-ultrastructure
+content_type: delivery
 ---
 
 ## What this document is

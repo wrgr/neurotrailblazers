@@ -20,6 +20,7 @@ related_tools:
   - connectome-quality
 last_reviewed: 2026-03-09
 maintainer: TBD
+content_type: core
 ---
 
 Two frameworks run through NeuroTrailblazers. **MERIT** structures how a research

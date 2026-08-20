@@ -5,6 +5,7 @@ description: "One ready-to-run page per module: prep checklist, timing, material
 permalink: /teaching/sessions/
 slug: session-kits
 track: career-and-community
+content_type: delivery
 pathways:
   - classroom delivery
   - mentor support

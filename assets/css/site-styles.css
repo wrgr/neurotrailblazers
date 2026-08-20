@@ -2172,3 +2172,49 @@ footer {
    today. Fixing it properly means giving the whole site a dark surface palette,
    not patching individual components, so it is left as its own piece of work.
    -------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+   Core-and-tracks architecture: reference-surface cards, mode cards.
+
+   The default .card caps at 260px, which suits a title plus one line but turns
+   into a very tall narrow column when the card carries a paragraph. The wide
+   variant is for cards that hold real prose.
+   --------------------------------------------------------------------------- */
+.cards-grid-wide {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: stretch;
+}
+
+.cards-grid-wide .card {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push a card's call-to-action to the bottom so buttons line up across a row
+   even when the cards carry different amounts of text. */
+.cards-grid-wide .card > .mt-1:last-child {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.card-meta {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+
+/* A card for something that is declared but does not exist yet. Muted rather
+   than hidden, so the gap is visible instead of implied. */
+.card-muted {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  box-shadow: none;
+}
+
+.card-muted .card-title,
+.card-muted .card-description {
+  color: var(--muted);
+}

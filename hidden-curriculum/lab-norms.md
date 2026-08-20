@@ -6,6 +6,7 @@ permalink: /hidden-curriculum/lab-norms/
 track: career-and-community
 pathways:
   - hidden curriculum
+content_type: core
 ---
 
 ## Where this starts

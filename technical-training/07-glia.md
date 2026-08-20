@@ -11,6 +11,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "90 minutes reading + 60 minute drill"
 prerequisites: "Units 05-06"
+content_type: path
 ---
 
 ## Before you start

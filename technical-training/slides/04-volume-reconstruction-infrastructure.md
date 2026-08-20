@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Volume Reconstruction Infrastructure"
 permalink: /technical-training/slides/04-volume-reconstruction-infrastructure/
 slug: slides-04-volume-reconstruction-infrastructure
+content_type: delivery
 ---
 
 ## What this document is

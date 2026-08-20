@@ -48,6 +48,7 @@ combines_with:
   - c-elegans-revisited
   - mouseconnects-himc
 use_layout_hero: false
+content_type: core
 ---
 
 # H01 Human Cortex Fragment

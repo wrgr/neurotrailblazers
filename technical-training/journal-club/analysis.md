@@ -9,6 +9,7 @@ pathways:
 sitemap: false
 robots: noindex
 description: "This page moved to /kb/."
+content_type: core
 ---
 
 <div class="layout-content layout-page">

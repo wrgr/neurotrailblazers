@@ -13,6 +13,7 @@ tags:
   - network-analysis:subgraph-isomorphism
   - network-analysis:random-graph-model
 use_layout_hero: false
+content_type: core
 ---
 
 # Network Analysis & Statistics Journal Papers

@@ -11,6 +11,7 @@ pathways:
 level: "Advanced"
 time_estimate: "2.5 hours reading + 2 hour lab"
 prerequisites: "Units 03-07"
+content_type: path
 ---
 
 ## Before you start

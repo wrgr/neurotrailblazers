@@ -33,6 +33,7 @@ combines_with:
   - tissue-preparation
   - artifact-taxonomy
   - acquisition-qa
+content_type: core
 ---
 
 ## Overview

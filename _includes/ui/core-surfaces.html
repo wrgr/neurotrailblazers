@@ -1,0 +1,18 @@
+{% comment %}
+  Renders the core reference layer from _data/core_surfaces.yml.
+  Optional: compact=true drops the "reach for it when" line.
+  Usage: {% include ui/core-surfaces.html %}
+{% endcomment %}
+<div class="cards-grid cards-grid-wide">
+  {% for s in site.data.core_surfaces.surfaces %}
+  <article class="card">
+    <div class="card-icon">{{ s.icon }}</div>
+    <h3 class="card-title"><a href="{{ s.url | relative_url }}">{{ s.title }}</a></h3>
+    <p class="card-meta">{{ s.size }}</p>
+    <p class="card-description">{{ s.summary }}</p>
+    {% unless include.compact %}
+    <p><small><strong>Reach for it when:</strong> {{ s.reach_for_it_when }}</small></p>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>

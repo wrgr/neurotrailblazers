@@ -11,6 +11,7 @@ pathways:
 level: "Foundational"
 time_estimate: "90 minutes reading + 60 minute lab"
 prerequisites: "None. Introductory neuroscience helps but is not required."
+content_type: path
 ---
 
 ## Before you start

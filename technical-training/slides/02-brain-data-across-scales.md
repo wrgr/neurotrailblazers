@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Brain Data Across Scales"
 permalink: /technical-training/slides/02-brain-data-across-scales/
 slug: slides-02-brain-data-across-scales
+content_type: delivery
 ---
 
 ## What this document is

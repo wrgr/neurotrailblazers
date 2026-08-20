@@ -41,6 +41,7 @@ combines_with:
   - graph-representations
   - network-analysis-methods
   - neuroai-bridge
+content_type: core
 ---
 
 ## Overview

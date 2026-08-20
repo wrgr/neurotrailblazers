@@ -4,6 +4,7 @@ title: "Slide Deck: Module 08"
 permalink: /modules/slides/module08/
 slug: module08-slides
 track: core-concepts-methods
+content_type: delivery
 pathways:
   - classroom delivery
   - teaching preparation

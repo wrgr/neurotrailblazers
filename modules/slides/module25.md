@@ -4,6 +4,7 @@ title: "Slide Deck: Module 25"
 permalink: /modules/slides/module25/
 slug: module25-slides
 track: core-concepts-methods
+content_type: delivery
 pathways:
   - classroom delivery
   - teaching preparation

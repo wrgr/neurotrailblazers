@@ -49,6 +49,7 @@ combines_with:
   - organelle-cues
   - soma-ultrastructure
 use_layout_hero: false
+content_type: core
 ---
 
 # Myelin Sheath and Nodes of Ranvier

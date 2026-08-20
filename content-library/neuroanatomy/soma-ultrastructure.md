@@ -47,6 +47,7 @@ combines_with:
   - dendrite-biology
   - axon-biology
 use_layout_hero: false
+content_type: core
 ---
 
 # Neuronal Soma Ultrastructure

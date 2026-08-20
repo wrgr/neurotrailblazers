@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Segmentation and Proofreading"
 permalink: /technical-training/slides/08-segmentation-and-proofreading/
 slug: slides-08-segmentation-and-proofreading
+content_type: delivery
 ---
 
 ## What this document is

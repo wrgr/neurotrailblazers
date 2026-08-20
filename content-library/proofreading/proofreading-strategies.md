@@ -43,6 +43,7 @@ combines_with:
   - metrics-and-qa
   - worked-examples
 use_layout_hero: false
+content_type: core
 ---
 
 # Proofreading Strategies for Connectome Reconstruction

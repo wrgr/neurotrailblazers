@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: EM Prep and Imaging"
 permalink: /technical-training/slides/03-em-prep-and-imaging/
 slug: slides-03-em-prep-and-imaging
+content_type: delivery
 ---
 
 ## What this document is

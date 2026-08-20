@@ -6,6 +6,7 @@ permalink: /hidden-curriculum/reading-and-judging/
 track: career-and-community
 pathways:
   - hidden curriculum
+content_type: core
 ---
 
 ## Why this page exists

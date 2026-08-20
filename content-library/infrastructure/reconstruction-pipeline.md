@@ -34,6 +34,7 @@ combines_with:
   - data-formats
   - provenance-and-versioning
   - acquisition-qa
+content_type: core
 ---
 
 ## Overview

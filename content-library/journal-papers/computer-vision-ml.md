@@ -13,6 +13,7 @@ tags:
   - computer-vision-ml:agglomeration
   - computer-vision-ml:boundary-detection
 use_layout_hero: false
+content_type: core
 ---
 
 # Computer Vision & ML Journal Papers

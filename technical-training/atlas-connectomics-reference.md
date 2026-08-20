@@ -11,6 +11,7 @@ pathways:
 level: "Reference"
 time_estimate: "Use as needed"
 prerequisites: "None; most useful alongside Units 02-04"
+content_type: core
 ---
 
 ## How to use this page

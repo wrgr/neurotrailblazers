@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Why Map the Brain"
 permalink: /technical-training/slides/01-why-map-the-brain/
 slug: slides-01-why-map-the-brain
+content_type: delivery
 ---
 
 ## What this document is

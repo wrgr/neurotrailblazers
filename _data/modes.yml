@@ -1,0 +1,111 @@
+# The mode axis.
+#
+# NeuroTrailblazers segments material two independent ways:
+#
+#   topic  -> _data/track_catalog.yml   (what you are learning)
+#   mode   -> this file                 (how you are using it)
+#
+# A track is a path through the core reference material. A mode is the
+# situation you are in while walking it: alone, in a hosted session, or
+# inside a research group. The same core pages serve all three; what
+# changes is the sequencing, the assessment, and who supplies feedback.
+#
+# `status` is stated honestly. `available` means the surface exists and is
+# linked. `in_development` means it does not exist yet and must not be
+# presented as though it does.
+modes:
+  - slug: self-study
+    title: Self-study
+    short_title: Self-study
+    icon: "\U0001F9ED"
+    status: available
+    tagline: "One person, a browser, and public data. No cohort, no schedule."
+    audience: "Anyone working through the material on their own time, at any career stage."
+    description: >-
+      You set the pace, choose the order, and mark your own work. Every unit is
+      written to be readable without a lecturer standing next to it: worked
+      examples run to completion, self-checks are answerable before the answer is
+      revealed, and each lab ends in an artifact you can look at and judge.
+    how_it_works:
+      - "Pick a track, or ignore the tracks entirely and follow a question through the core reference."
+      - "Read a unit, attempt its self-checks with the answers closed, then do the lab."
+      - "Compare your lab artifact against the three-level rubric printed in the unit."
+      - "Use the dictionary the moment a term stops you. Most apparent difficulty in this field is vocabulary."
+    what_you_need: "A browser. Public volumes open in Neuroglancer with no account. A few labs suggest Python, but each states a no-code alternative."
+    assessment: "Self-scored against the rubric in each unit. Nothing is recorded, submitted, or graded."
+    honest_limits:
+      - "You cannot calibrate alone. Self-scored perceptual judgement drifts, and it drifts confidently. The single highest-value thing you can add is one other person to compare calls with."
+      - "There is no deadline, and the units that matter most (05-07) are the slowest and least immediately rewarding. Most people who stall, stall there."
+      - "Nothing here confers a credential. What it produces is a set of artifacts you can show someone."
+    mitigations:
+      - "Work the perceptual drills with one partner, even asynchronously. Two people scoring the same patches beats three rounds of self-review."
+      - "Post a lab artifact somewhere it will be read. A brief written for an audience is a different document from one written for yourself."
+      - "Use the structured self-checks as tests, not as reading. Opening the answer first converts a retrieval opportunity into re-reading, which feels productive and is not."
+    start:
+      label: "Start with your first hour"
+      url: /start-here/#your-first-hour
+
+  - slug: hosted-workshop
+    title: Hosted workshop
+    short_title: Workshop
+    icon: "\U0001F465"
+    status: available
+    tagline: "A facilitator runs a session. Timing, materials, and rubric are already written."
+    audience: "Instructors, mentors, and program staff running a taught session, a lab meeting, or a summer-program block."
+    description: >-
+      Every module has a session kit: run of show with timings, prep checklist,
+      the activity and its handouts, the misconceptions to surface in debrief, an
+      assessment rubric, an exit prompt, and a page on what to do when the session
+      goes wrong. The kits are generated from the module pages, so a session and
+      its source material cannot drift apart.
+    how_it_works:
+      - "Read the facilitator guide once. It covers the assessment stance the kits assume."
+      - "Pick a module, open its session kit, and work the prep checklist the day before."
+      - "Run the session from the run-of-show. Learner worksheets and slide decks are linked from the kit."
+      - "Debrief against the listed misconceptions rather than asking whether there are questions."
+    what_you_need: "A room, a projector or shared screen, and verified data access. The kits assume no software installation by learners."
+    assessment: "A three-level rubric per activity plus an exit prompt. Grading is of the reasoning, not the answer."
+    honest_limits:
+      - "The kits assume a facilitator who has done the activity themselves. They are not a script for someone encountering the material for the first time in the room."
+      - "Timings are for a group that can already navigate a volume. A first session with absolute beginners runs long."
+      - "Sessions are single-module. Sequencing several into a coherent programme is still the facilitator's job; the track pages are the closest thing to a syllabus."
+    mitigations:
+      - "Do the activity yourself first, including the part where you are unsure, and narrate that uncertainty in the room."
+      - "Show learners the rubric before they start, not after. It changes what they produce."
+      - "Name one hidden-curriculum norm per session out loud. The kits nominate a candidate for each."
+    start:
+      label: "Open the facilitator guide"
+      url: /teaching/facilitator-guide/
+
+  - slug: research-intensive
+    title: Research intensive
+    short_title: Intensive
+    icon: "\U0001F52C"
+    status: in_development
+    tagline: "A longer, contributory programme that draws on this material. Not built yet."
+    audience: "Trainees working inside a lab or programme on real data, producing work others will rely on."
+    description: >-
+      The intended third mode is an intensive, research-and-contribution focused
+      programme that uses this site as its reference layer rather than its
+      syllabus: a cohort works on live data, contributes proofreading or analysis
+      that is actually used, and is assessed on work that leaves the classroom.
+      It does not exist yet. This entry is here so the gap is visible rather than
+      implied.
+    how_it_works:
+      - "Not yet defined."
+    what_you_need: "Not yet defined."
+    assessment: "Not yet defined."
+    honest_limits:
+      - "Nothing on this site currently delivers this mode. Any page that reads as though it does is a page to fix."
+      - "It needs three things the self-study and workshop modes do not: a calibration gate that a lab would trust, real tasks whose output is used, and a reviewer who signs off. None are in place."
+    mitigations: []
+    planned_dependencies:
+      - title: "A calibration gate"
+        detail: "A perceptual assessment on native-resolution data with labels derived from released segmentations, reporting accuracy within a learner's own high-confidence calls rather than raw accuracy. Units 05-07 argue calibration matters more than accuracy; the gate has to measure what the curriculum claims to value."
+      - title: "Real tasks with real consumers"
+        detail: "Proofreading or analysis work that someone downstream actually uses. Practice tasks whose output is discarded do not produce the thing this mode exists to produce."
+      - title: "Structured review"
+        detail: "A named reviewer, a rubric, and a return path. The worksheets already carry peer-review sections; what is missing is the exchange."
+    start:
+      label: "See what the core already supports"
+      url: /core/

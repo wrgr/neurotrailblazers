@@ -5,6 +5,7 @@ layout: page
 description: "Browse all NeuroTrailblazers modules with full tutorial content, competency targets, and linked resources."
 permalink: /modules/
 use_layout_hero: false
+content_type: navigation
 ---
 
 <div class="main-content">

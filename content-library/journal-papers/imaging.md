@@ -13,6 +13,7 @@ tags:
   - imaging:ATUM
   - imaging:serial-section
 use_layout_hero: false
+content_type: core
 ---
 
 # Imaging & Sample Preparation Journal Papers

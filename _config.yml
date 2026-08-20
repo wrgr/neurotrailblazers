@@ -65,15 +65,19 @@ navigation:
     url: "/"
   - title: "Start Here"
     url: "/start-here/"
+  - title: "Core"
+    url: "/core/"
+  - title: "Tracks"
+    url: "/tracks/"
   - title: "Technical Course"
     url: "/technical-training/"
   - title: "Modules"
     url: "/modules/"
     dropdown: []
-  - title: "Resources"
-    url: "/datasets/"
   - title: "Teaching"
     url: "/teaching/"
+  - title: "Tools"
+    url: "/tools/"
   - title: "About"
     url: "/frameworks/"
 
@@ -105,6 +109,25 @@ exclude:
   - Gemfile.lock
   - node_modules
   - scripts
+  # Working files for the technical track: unit source specs, deck specs,
+  # ingest transcripts, reviews, and templates. These are build inputs, not
+  # pages. Publishing them produced ~60 unstyled draft pages that duplicated
+  # the real technical units and exposed local authoring paths. The rendered
+  # decks under course/decks/marp/out/ are static assets and stay published.
+  - course/source-ingest
+  - course/units
+  - course/reviews
+  - course/templates
+  - course/workboard.md
+  - course/capability-development-plan.md
+  - course/decision-rules.md
+  - course/instructional-framework.md
+  - course/decks/content-import-matrix.md
+  - course/decks/marp/modules
+  - course/decks/marp/*.marp.md
+  - course/decks/marp/README.md
+  - course/decks/0*.md
+  - course/decks/atlas-connectomics-reference.md
 
 # Fix for Jekyll SCSS encoding issues
 encoding: utf-8

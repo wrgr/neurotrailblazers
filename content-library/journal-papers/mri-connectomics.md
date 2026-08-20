@@ -12,6 +12,7 @@ tags:
   - mri-connectomics:Human-Connectome-Project
   - mri-connectomics:parcellation
 use_layout_hero: false
+content_type: core
 ---
 
 # MRI Connectomics Journal Papers

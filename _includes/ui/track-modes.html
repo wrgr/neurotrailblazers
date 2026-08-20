@@ -1,0 +1,29 @@
+{% comment %}
+  Renders one track's shape in each mode, joining _data/track_catalog.yml's
+  per-track `modes` list against _data/modes.yml for titles and status.
+  Usage: {% include ui/track-modes.html track=track %}
+{% endcomment %}
+{% assign trk = include.track %}
+{% if trk.modes %}
+<section class="section">
+  <h2>This track in each mode</h2>
+  <p>The topic is the same in all three; what changes is the sequencing, who supplies feedback, and what counts as done. See <a href="{{ '/modes/' | relative_url }}">modes</a> for the full description of each.</p>
+  <div class="cards-grid cards-grid-wide">
+    {% for tm in trk.modes %}
+      {% assign mode = site.data.modes.modes | where: 'slug', tm.slug | first %}
+      <article class="card{% unless tm.available %} card-muted{% endunless %}">
+        <div class="card-icon">{{ mode.icon }}</div>
+        <h3 class="card-title">{{ mode.title }}</h3>
+        {% unless tm.available %}<p class="card-meta">Not available yet</p>{% endunless %}
+        <p class="card-description">{{ tm.shape }}</p>
+        {% if tm.note %}<p><small><strong>Worth knowing:</strong> {{ tm.note }}</small></p>{% endif %}
+        {% if tm.available and tm.start_url %}
+        <div class="mt-1">
+          <a href="{{ tm.start_url | relative_url }}" class="btn btn-primary">{{ tm.start_label }}</a>
+        </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

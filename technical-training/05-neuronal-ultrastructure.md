@@ -11,6 +11,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "2.5 hours reading + 60 minute tutorial + 75 minute studio"
 prerequisites: "Units 01-03"
+content_type: path
 ---
 
 ## Before you start

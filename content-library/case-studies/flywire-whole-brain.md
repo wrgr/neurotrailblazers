@@ -45,6 +45,7 @@ combines_with:
   - microns-visual-cortex
   - mouseconnects-himc
 use_layout_hero: false
+content_type: core
 ---
 
 # FlyWire Whole-Brain Connectome

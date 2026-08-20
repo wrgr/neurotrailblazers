@@ -35,6 +35,7 @@ combines_with:
   - reconstruction-pipeline
   - data-formats
   - acquisition-qa
+content_type: core
 ---
 
 ## Overview

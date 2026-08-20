@@ -8,6 +8,7 @@ pathways:
   - research workflow
   - reproducibility
 use_layout_hero: false
+content_type: navigation
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'research-in-action' | first %}
@@ -27,9 +28,11 @@ use_layout_hero: false
 
   {% include ui/track-sequence.html track=track %}
 
+  {% include ui/track-modes.html track=track %}
+
   <section class="section">
     <h2>Modules in This Track</h2>
-    <div class="cards-grid">
+    <div class="cards-grid cards-grid-wide">
       {% for num in track.module_numbers %}
         {% assign mod = site.data.modules | where: 'number', num | first %}
         {% if mod %}
@@ -46,7 +49,7 @@ use_layout_hero: false
 
   <section class="section">
     <h2>Resources</h2>
-    <div class="cards-grid">
+    <div class="cards-grid cards-grid-wide">
       {% for item in track.resources %}
       <article class="card">
         <h3 class="card-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>

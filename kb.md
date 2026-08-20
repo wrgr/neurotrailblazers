@@ -3,6 +3,7 @@ layout: default
 title: "Connectome KB"
 permalink: /kb/
 description: "Visualization layer for bibliometric outputs generated in connectome-kb."
+content_type: core
 ---
 
 <div class="layout-content layout-page">

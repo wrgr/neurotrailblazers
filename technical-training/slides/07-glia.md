@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Glia"
 permalink: /technical-training/slides/07-glia/
 slug: slides-07-glia
+content_type: delivery
 ---
 
 ## What this document is

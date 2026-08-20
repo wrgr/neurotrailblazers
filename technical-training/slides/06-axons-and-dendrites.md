@@ -3,6 +3,7 @@ layout: page
 title: "Lecture Plan: Axons and Dendrites"
 permalink: /technical-training/slides/06-axons-and-dendrites/
 slug: slides-06-axons-and-dendrites
+content_type: delivery
 ---
 
 ## What this document is

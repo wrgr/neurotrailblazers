@@ -1929,6 +1929,32 @@ footer {
 
 /* --- Reference tables ---------------------------------------------------- */
 
+/* Wide reference tables scroll inside their own box rather than widening the
+   page: without this a five-column artifact catalogue is 626px in a 390px
+   viewport and every page on the site scrolls horizontally.
+
+   The scrolling belongs on a wrapper, not on the table. Setting the table
+   itself to `display: block` and restoring `display: table` on thead and tbody
+   splits them into two independent table boxes, each sizing its columns from
+   its own content — so the header stops lining up with the rows beneath it,
+   which is worse than the overflow it fixed. Kramdown cannot emit a wrapper,
+   so `wrapContentTables()` in assets/js/module-interactives.js adds one. */
+.table-scroll {
+  margin: 1.4rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+/* The wrapper owns the frame, so a wrapped table must not draw its own. */
+.table-scroll > table {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
 .layout-content table,
 .main-content table {
   width: 100%;
@@ -1939,22 +1965,9 @@ footer {
   background: var(--white);
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  /* Wide reference tables scroll inside their own box rather than widening the
-     page. Without this a five-column artifact catalogue is 626px in a 390px
-     viewport and every page on the site scrolls horizontally. */
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Restore table layout semantics inside the scroll container. */
-.layout-content table > thead,
-.main-content table > thead,
-.layout-content table > tbody,
-.main-content table > tbody {
-  display: table;
-  width: 100%;
-  min-width: 100%;
+  /* No `display` override: the table keeps one layout context so its columns
+     stay aligned. Without JS it may overflow a narrow viewport, which is the
+     lesser fault. */
 }
 
 .layout-content table th,

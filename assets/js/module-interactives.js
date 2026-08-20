@@ -353,6 +353,43 @@
     updateProgress(root);
   }
 
+  /**
+   * Wrap markdown-generated reference tables in a horizontal scroll container.
+   *
+   * A five-column artifact catalogue is 626px wide in a 390px viewport, which
+   * scrolls the whole page sideways. The scrolling has to live on a wrapper:
+   * doing it on the table itself means `display: block`, which costs the table
+   * its layout context and leaves the header row sizing its columns
+   * independently of the body. Kramdown has no way to emit the wrapper, and an
+   * IAL on every table in every markdown file is not maintainable, so it is
+   * added here. Without JS the table simply renders native and may overflow.
+   */
+  function wrapContentTables() {
+    var tables = document.querySelectorAll(
+      '.layout-content table, .main-content table'
+    );
+    tables.forEach(function (table) {
+      var parent = table.parentNode;
+      if (!parent || parent.classList.contains('table-scroll')) return;
+      // Leave tables that are already inside a scrolling or purpose-built
+      // container alone — this is for markdown body content only.
+      if (table.closest('.nt-interactive-lab')) return;
+
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      // A scrollable region must be focusable to be reachable by keyboard.
+      wrapper.setAttribute('tabindex', '0');
+      wrapper.setAttribute('role', 'region');
+      var caption = table.querySelector('caption');
+      wrapper.setAttribute(
+        'aria-label',
+        caption ? caption.textContent.trim() : 'Scrollable table'
+      );
+      parent.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     try {
       var params = new URLSearchParams(window.location.search || '');
@@ -360,6 +397,7 @@
     } catch (err) {
       calibrateMode = false;
     }
+    wrapContentTables();
     var roots = document.querySelectorAll('.nt-interactive-lab');
     roots.forEach(init);
   });

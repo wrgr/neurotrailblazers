@@ -57,7 +57,7 @@ Historical classification systems (Cajal, Lorente de Nó, Markram et al.) relied
 
 In mammalian cortex, the most fundamental classification is:
 
-**Excitatory neurons (~80% of cortical neurons):**
+**Excitatory neurons (~80% of neurons in rodent and primate neocortex; the ratio differs by region, layer and species, so state which you mean — DeFelipe & Fariñas 1992; Markram et al. 2004):**
 - Glutamatergic
 - Spiny dendrites (dendritic spines = sites of excitatory input)
 - Pyramidal morphology (most common) or stellate/spiny stellate (layer 4)

@@ -120,12 +120,30 @@ A critical practical decision: **at what minimum synapse count do you call two n
 - Threshold = 3-5: Common in published analyses. Reduces noise but may miss genuine weak connections.
 - No threshold: Use continuous weights (synapse count) and avoid binarizing.
 
-**The effect of thresholding is dramatic.** In a typical cortical dataset:
-- At threshold = 1: ~500,000 edges
-- At threshold = 3: ~150,000 edges
-- At threshold = 5: ~60,000 edges
+**The effect of thresholding is dramatic, and you should measure it rather than
+assume it.** Synapse counts per connected pair are heavily skewed toward one, so
+most of the edges in a raw graph are single-synapse — which means raising the
+threshold from 1 to 3 typically removes a large majority of edges, not a
+trimming. The exact fraction depends on the dataset, the synapse detector's
+precision, and the proofreading level, so it is not a constant worth quoting.
 
-Degree distributions, clustering coefficients, and motif counts all change substantially with threshold. **Every analysis must report its threshold and justify the choice.**
+Get it for your own graph in three lines, on a named dataset at a pinned
+version:
+
+```python
+import numpy as np
+# weights: synapse count per connected pair, from your materialized synapse table
+for t in (1, 2, 3, 5, 10):
+    print(t, int((weights >= t).sum()))
+```
+
+Then re-run your headline statistic at each threshold. Degree distributions,
+clustering coefficients and motif counts all move, and if your result only holds
+at one threshold that is something a reader needs to know.
+
+**Every analysis must report its threshold and justify the choice** — and the
+justification has to be about biology or detector precision, not about which
+value made the effect significant.
 
 ---
 

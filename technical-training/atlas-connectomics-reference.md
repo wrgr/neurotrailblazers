@@ -67,8 +67,11 @@ before citing them** — dataset sizes in particular change as proofreading cont
 | Teaching ultrastructure reading | Harris CA1 resource; any of the above in Neuroglancer |
 
 > **Before proposing new acquisition, check this table.** A large fraction of good
-> connectomics questions can be answered by re-analysis of existing public data, and
-> re-analysis is roughly five orders of magnitude cheaper. See Unit 02's common errors.
+> connectomics questions can be answered by re-analysis of existing public data. The
+> cost difference is not marginal: acquiring a new mm-scale volume is a multi-year,
+> multi-million-dollar programme, while re-analysing one is a compute bill and your
+> time. Work the comparison out for your own question with Unit 03's cost arithmetic
+> before assuming you need new data. See Unit 02's common errors.
 
 ---
 
@@ -171,7 +174,7 @@ This page is a lookup table and this panel is deck context, not reference materi
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S19-01.png' | relative_url }}" alt="Atlas closing references visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S19:</strong> Closing references. Check them against the choosing table in §1 before proposing new acquisition — a large share of good connectomics questions can be answered by re-analysis of existing public data, at roughly five orders of magnitude less cost.</p>
+    <p class="card-description"><strong>Module14 L3 S19:</strong> Closing references. Check them against the choosing table in §1 before proposing new acquisition — a large share of good connectomics questions can be answered by re-analysis of existing public data, at a small fraction of the cost.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">

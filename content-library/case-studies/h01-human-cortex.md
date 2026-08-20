@@ -53,6 +53,22 @@ content_type: core
 
 # H01 Human Cortex Fragment
 
+> ### Before you quote a number from this page
+>
+> Every figure below — cell counts, synapse counts, volume sizes, proofreading
+> coverage — is a property of **a particular release** of this dataset, not of
+> the tissue. Releases are re-segmented, re-proofread and re-materialized, and
+> the numbers move when they are.
+>
+> This page deliberately does not pin a version, because it would be stale
+> within months and you would inherit a wrong number with a citation attached.
+> Treat what follows as orientation. Before any figure reaches a paper, a talk,
+> or a grant, pull it yourself from the release you are analysing and record the
+> version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
+> covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
+> has the lab.
+
+
 ## Overview
 
 The H01 dataset represents a watershed moment in neuroscience: the first nanoscale

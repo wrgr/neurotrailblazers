@@ -81,7 +81,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Visual signatures:**
 - **Resin voids**: Light areas with no biological structure, often with sharp edges. Distinct from extracellular space (which has biological boundaries).
-- **Shrinkage**: Tissue contracts ~10-30% during processing. Anisotropic shrinkage distorts cell shapes and distances. Neuropil appears denser than in vivo.
+- **Shrinkage**: Tissue contracts during processing, by an amount that depends on the protocol and is worth measuring rather than assuming — figures in the 10-30% range are commonly quoted, but treat any single number as protocol-specific. Anisotropic shrinkage distorts cell shapes and distances. Neuropil appears denser than in vivo.
 - **Chattering during sectioning**: If resin is too hard or soft, the diamond knife vibrates, creating periodic thickness variations visible as alternating light/dark bands.
 
 ---
@@ -102,7 +102,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 ### Section compression
 
-**Cause:** The diamond knife compresses the section in the cutting direction, typically by 10-30%. This creates anisotropic distortion — features are shortened along the cutting axis.
+**Cause:** The diamond knife compresses the section in the cutting direction. The magnitude varies with knife angle, cutting speed and block face, so calibrate it against a known geometry rather than applying a published figure. This creates anisotropic distortion — features are shortened along the cutting axis.
 
 **Visual signatures:** Circular profiles appear elliptical. Grid-like patterns (if present) show directional distortion. The compression axis is consistent within a section but may vary between sections.
 
@@ -131,7 +131,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Downstream impact:** Missing sections are the most common cause of split errors in neurite tracing. A thin axon (~100 nm) in a dataset with 30 nm z-resolution spans only 3-4 sections. One missing section means 25-33% of the local z-information is lost, which can be enough to lose the axon entirely.
 
-**Mitigation:** ATUM-based collection has reduced missing-section rates to <0.1% for well-optimized protocols. SBEM and FIB-SEM inherently avoid this problem because sections are not physically collected. Computational approaches: interpolation of the missing section, or explicit "uncertain gap" annotation.
+**Mitigation:** ATUM-based collection reduces missing-section rates substantially, because sections are collected onto tape rather than destroyed as they are imaged, so a lost region can sometimes be re-imaged. Track your own rate against the gates in Unit 03 §3 rather than assuming a published figure applies. SBEM and FIB-SEM inherently avoid this problem because sections are not physically collected. Computational approaches: interpolation of the missing section, or explicit "uncertain gap" annotation.
 
 ---
 

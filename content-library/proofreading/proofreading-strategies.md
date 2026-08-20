@@ -115,10 +115,14 @@ accurate.
 Kasthuri et al. (2015) described saturated reconstruction of a
 1,500 cubic micrometer volume from mouse neocortex. The effort required
 thousands of person-hours for what amounts to a tiny fraction of even one
-cortical column. Extrapolating, exhaustive proofreading of a full
-MICrONS-scale volume (roughly 1 mm^3) would require an estimated
-50,000-500,000 person-hours. This makes exhaustive proofreading
-impractical for large volumes.
+cortical column. You can extrapolate this yourself, and the arithmetic is more useful than a
+quoted figure. A cortical mm^3 holds on the order of 10^5 neurons. At the
+2-4 hours per neuron this page estimates for full single-cell proofreading in
+§7, exhaustive coverage lands in the hundreds of thousands of person-hours —
+that is decades of full-time work for a single person, and it is why no
+mm-scale volume is exhaustively proofread. Substitute your own per-neuron rate,
+measured on your pilot, and the conclusion does not change: exhaustive
+proofreading is not a plan, it is an alternative to having one.
 
 ### 2.5 Instructor Tip
 
@@ -231,10 +235,13 @@ such as:
 - **Agglomeration score.** The automated pipeline's own confidence at each
   merge point. Low-confidence merges are more likely wrong.
 
-Lu et al. (2019) trained a classifier on these features and achieved
-80-90 % precision at 60-70 % recall for merge error detection. Zung et al.
-(2017) proposed a metric learning approach that embeds supervoxels such
-that errors can be detected by distance in embedding space.
+Classifiers trained on these features detect merge errors well enough to be
+worth running and not well enough to be trusted alone; Zung et al. (2017)
+proposed a metric-learning approach that embeds supervoxels so errors can be
+detected by distance in embedding space. Take the precision and recall figures
+from the detector you are actually running, on data resembling yours, and
+report them alongside your results — a detector's performance on a benchmark
+does not transfer to your tissue and your pipeline.
 
 ### 4.4 Ranking Heuristics
 

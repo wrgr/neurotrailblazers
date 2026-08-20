@@ -91,16 +91,16 @@ pathways:
         </div>
 
         <div class="cards-grid">
-            <a href="{{ '/avatars/undergradstudent' | relative_url }}" class="avatar-card avatar-card-blue">
+            <a href="{{ '/avatars/undergradstudent/' | relative_url }}" class="avatar-card avatar-card-blue">
                 <h3>Julian: Undergraduate Student</h3>
             </a>
-            <a href="{{ '/avatars/gradstudent' | relative_url }}" class="avatar-card avatar-card-purple">
+            <a href="{{ '/avatars/gradstudent/' | relative_url }}" class="avatar-card avatar-card-purple">
                 <h3>Maya: Graduate Student</h3>
             </a>
-            <a href="{{ '/avatars/researcher' | relative_url }}" class="avatar-card avatar-card-cyan">
+            <a href="{{ '/avatars/researcher/' | relative_url }}" class="avatar-card avatar-card-cyan">
                 <h3>Amir: Researcher</h3>
             </a>
-            <a href="{{ '/avatars/mentor' | relative_url }}" class="avatar-card avatar-card-orange">
+            <a href="{{ '/avatars/mentor/' | relative_url }}" class="avatar-card avatar-card-orange">
                 <h3>Dr. Nguyen: Mentor/PI</h3>
             </a>
         </div>
@@ -162,52 +162,89 @@ pathways:
     </section>
 
     <section class="section">
-        <h2>Quick Start Checklist</h2>
+        <h2>Your first hour</h2>
+        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
+
         <div class="checklist-box">
-            <h3>Get Started in 5 Steps:</h3>
+            <h3>Sixty minutes, one artifact</h3>
             <div class="checklist">
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>1. Read this Start Here guide</span>
+                    <span><strong>0-10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>2. Choose your learning path above</span>
+                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalogue in section 2.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>3. Review the <a href="{{ '/models/' | relative_url }}">educational models</a></span>
+                    <span><strong>25-45 min &mdash; Make a judgement and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span>4. Meet your student <a href="{{ '/avatars/' | relative_url }}">avatar</a></span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span>5. Begin with one concept or technical unit.</span>
+                    <span><strong>45-60 min &mdash; Write the artifact.</strong> Do the Unit 01 lab: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. The last item is the one that matters, and it is the one most people leave blank.</span>
                 </label>
             </div>
+            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If you finish with an empty step 4, that is also information &mdash; it means you have not yet found the boundary of your evidence, which is exactly what Unit 01 exists to teach.</small></p>
         </div>
     </section>
 
     <section class="section">
-        <h2>Get Support</h2>
-        <p>Questions? Need help choosing your path? Here are your options:</p>
+        <h2>Which track, and when</h2>
+        <p>Most people should start with <strong>Core Concepts &amp; Methods</strong> and layer the others in as their research practice develops. The exceptions are worth naming:</p>
+        <table>
+            <thead>
+                <tr><th>If this describes you</th><th>Start here</th><th>Why</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>New to the field, whatever your level</td>
+                    <td><a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a>, at Unit 01</td>
+                    <td>The perceptual units 05&ndash;07 are the slowest part and everything downstream depends on them. Starting anywhere else means coming back.</td>
+                </tr>
+                <tr>
+                    <td>Strong engineering or ML background, new to neuroscience</td>
+                    <td><a href="{{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}">Unit 04</a> or <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a>, then back to 05&ndash;07</td>
+                    <td>Your systems intuitions transfer directly and give you a foothold. Skipping 05&ndash;07 entirely does not work: a model trained on annotations from people who cannot tell an astrocytic process from a dendrite learns to make that mistake at scale.</td>
+                </tr>
+                <tr>
+                    <td>Already working on a connectomics project</td>
+                    <td><a href="{{ '/tracks/research-in-action/' | relative_url }}">Research in Action</a></td>
+                    <td>It is organized around the decisions a live project forces: proofreading budgets, version pinning, and defensible analysis.</td>
+                </tr>
+                <tr>
+                    <td>Teaching or mentoring others</td>
+                    <td><a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>, then the <a href="{{ '/teaching/' | relative_url }}">teaching kits</a></td>
+                    <td>What you need is the assessment instrument and the run-of-show, not the reading.</td>
+                </tr>
+                <tr>
+                    <td>Here for the professional side</td>
+                    <td><a href="{{ '/tracks/career-and-community/' | relative_url }}">Career &amp; Community</a></td>
+                    <td>Relevant from week one, not only at the end. Deferring it until the technical work is finished is the most common mistake on this track.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Each track page carries a time estimate, an ordered sequence with per-step outcomes, and a description of what &ldquo;done&rdquo; means as a capability rather than as a set of pages visited.</p>
+    </section>
+
+    <section class="section">
+        <h2>Getting unstuck</h2>
+        <p>Two things a page cannot give you, and where to find them:</p>
         <div class="cards-grid">
             <div class="card">
-                <div class="card-icon">💬</div>
-                <h3>Student Community</h3>
-                <p>Connect with other learners in our discussion forums and study groups.</p>
+                <div class="card-icon">&#128172;</div>
+                <h3>A technical answer</h3>
+                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask-an-Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
             </div>
             <div class="card">
-                <div class="card-icon">👥</div>
-                <h3>Mentor Matching</h3>
-                <p>Get paired with an experienced researcher who can guide your journey.</p>
+                <div class="card-icon">&#128100;</div>
+                <h3>Calibration against other people</h3>
+                <p>You cannot calibrate your own judgement alone. The units' drills are built to be run with a partner, and comparing calls with one other person is worth more than three rounds of self-review. A journal club or a community proofreading effort supplies the same thing at larger scale.</p>
             </div>
             <div class="card">
-                <div class="card-icon">📧</div>
-                <h3>Direct Support</h3>
-                <p>Contact our team directly for technical help or curriculum questions.</p>
+                <div class="card-icon">&#128218;</div>
+                <h3>Depth on a specific topic</h3>
+                <p>The <a href="{{ '/content-library/' | relative_url }}">content library</a> holds the long-form reference material behind every unit &mdash; instructor-level detail on ultrastructure, imaging, proofreading metrics, and analysis, with worked examples and reading lists.</p>
             </div>
         </div>
     </section>
@@ -218,7 +255,7 @@ pathways:
         <div class="flex-center mt-2">
             <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">View Learning Tracks</a>
             <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Explore Datasets</a>
-            <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
+            <a href="{{ '/datasets/workflow/' | relative_url }}" class="btn btn-secondary">See Our Workflow</a>
         </div>
     </div>
 </div>

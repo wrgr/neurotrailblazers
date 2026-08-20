@@ -111,12 +111,13 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| 00:00-08:00 | Frame the capability target |
-| 08:00-20:00 | Model one worked example aloud |
-| 20:00-38:00 | Guided learner activity |
-| 38:00-50:00 | Debrief and misconception correction |
-| 50:00-58:00 | Competency check |
-| 58:00-60:00 | Exit prompt |
+| 00:00-08:00 | Constructive vs destructive criticism |
+| 08:00-12:00 | What reviewers look for in connectomics |
+| 12:00-28:00 | Methods-evidence audit exercise |
+| 28:00-38:00 | Ethics-risk scan |
+| 38:00-50:00 | Decision memo drafting |
+| 50:00-58:00 | Peer review of reviews |
+| 58:00-60:00 | Competency check |
 
 ---
 

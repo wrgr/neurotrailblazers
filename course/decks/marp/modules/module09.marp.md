@@ -82,7 +82,10 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** a skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- **Misconception guardrail:** morphological measurements are comparable across cells that were proofread to different levels.
+- **Misconception guardrail:** total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- **Misconception guardrail:** a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
 ---
 

@@ -111,12 +111,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| 00:00-08:00 | Frame the capability target |
-| 08:00-20:00 | Model one worked example aloud |
-| 20:00-38:00 | Guided learner activity |
-| 38:00-50:00 | Debrief and misconception correction |
-| 50:00-58:00 | Competency check |
-| 58:00-60:00 | Exit prompt |
+| 00:00-08:00 | Setup and target framing |
+| 08:00-18:00 | Instructor modeling: ingest and anomaly screening |
+| 18:00-32:00 | Team preprocessing design |
+| 32:00-44:00 | QC pass |
+| 44:00-54:00 | Cross-team review |
+| 54:00-60:00 | Competency checkpoint |
 
 ---
 

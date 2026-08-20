@@ -59,9 +59,11 @@ Learners produce a complete, reproducible Jupyter notebook that queries a connec
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- A notebook that runs clean from a restarted kernel, with a header cell recording title, author, date, dataset, and materialization version
+- One descriptive analysis with at least one summary statistic reported in a markdown cell
+- One labelled figure exported as PNG, with a caption stating what it shows and what it does not license you to conclude
+- The underlying data table exported as CSV, plus a metadata JSON recording dataset version, query parameters, and analysis date
+- If any cell fails, fix it and re-run
 
 ---
 

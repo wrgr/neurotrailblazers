@@ -48,9 +48,9 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Completed annotation table (patch ID, layer call, structure call, evidence, confidence)
+- Two uncertainty notes with proposed resolution strategies
+- One "lesson learned" about how context changed an interpretation
 
 ---
 
@@ -94,7 +94,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: Cortical layer can be read off a single EM patch without soma density or neuropil context.
+- [ ] I did not assume: The hippocampal laminar logic transfers to neocortex because both are cortex.
+- [ ] I did not assume: An atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
+- [ ] I did not assume: Annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
 
 ---
 

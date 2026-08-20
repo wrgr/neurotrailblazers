@@ -86,7 +86,10 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.
+- **Misconception guardrail:** reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.
+- **Misconception guardrail:** a motif observed more often than expected is a functional building block.
+- **Misconception guardrail:** synapse count is a direct measure of connection strength rather than a proxy for it.
 
 ---
 

@@ -175,6 +175,12 @@ Write 3-5 sentences describing your commitments regarding:
 - How you will attribute contributions from collaborators.
 - How you will handle errors (your own and others').
 
+**Outputs**
+- Norms inventory of five unwritten norms, each with how it is learned and what violating it costs, with the two hardest starred.
+- Three written communication scripts, customized to your own situation: asking for help, giving feedback, admitting uncertainty.
+- Mentor and support map with at least three filled rows, including one peer, one senior person, and one contact outside your immediate team.
+- Ethics commitment of 3-5 sentences covering provenance, attribution, and error handling.
+
 ## Assessment rubric
 - **Minimum:** clear norms list, help-seeking plan, and at least one communication script.
 - **Strong:** realistic escalation paths, reflection on barriers, ethics commitment with specific practices, mentor map with backup contacts.

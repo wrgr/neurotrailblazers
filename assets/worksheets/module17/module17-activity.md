@@ -115,12 +115,13 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| 00:00-08:00 | Frame the capability target |
-| 08:00-20:00 | Model one worked example aloud |
-| 20:00-38:00 | Guided learner activity |
-| 38:00-50:00 | Debrief and misconception correction |
-| 50:00-58:00 | Competency check |
-| 58:00-60:00 | Exit prompt |
+| 00:00-08:00 | Good writing vs bad writing in connectomics |
+| 08:00-18:00 | Claim-evidence matrix construction |
+| 18:00-28:00 | Results paragraph drafting |
+| 28:00-38:00 | Methods and provenance exercise |
+| 38:00-50:00 | Reviewer response practice |
+| 50:00-58:00 | Peer exchange and feedback |
+| 58:00-60:00 | Competency check |
 
 ---
 

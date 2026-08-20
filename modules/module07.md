@@ -105,6 +105,15 @@ Without versioned documentation, two researchers analyzing the "same" dataset at
 
 Good correction logs also serve a pedagogical function. When new proofreaders join a project, they can review past correction decisions to learn the team's standards. Entries like "Merged fragments 847291 and 847305 because continuous membrane visible in z-slices 4021-4035; confirmed by checking orthogonal views" teach both the decision criteria and the verification process.
 
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** proofreading is cleanup that ends when the data looks right, rather than an allocation problem under a fixed budget.
+- **Misconception guardrail:** a single aggregate quality score is enough to decide whether a release is good.
+- **Misconception guardrail:** throughput is a sufficient measure of annotator performance without agreement statistics alongside it.
+- **Misconception guardrail:** a result can be reported without stating the proofreading level of the cells it rests on.
+
 ## Core workflow
 1. **Classify** errors by type (merge/split/boundary) and estimated impact (high/medium/low). Use the error taxonomy from the content library as a reference checklist.
 2. **Prioritize** correction queue: high-impact merges first, then splits in the region of interest, then boundary errors. Defer or discard low-impact errors outside the analysis region.

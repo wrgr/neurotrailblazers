@@ -48,9 +48,9 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Motif count table (observed vs expected vs z-score for each motif type)
+- Circuit diagrams for top 3 enriched motifs
+- 1-page circuit logic brief with interpretations and caveats
 
 ---
 
@@ -95,7 +95,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: Asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.
+- [ ] I did not assume: Reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.
+- [ ] I did not assume: A motif observed more often than expected is a functional building block.
+- [ ] I did not assume: Synapse count is a direct measure of connection strength rather than a proxy for it.
 
 ---
 

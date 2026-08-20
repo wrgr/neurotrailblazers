@@ -48,9 +48,9 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- 3 hypothesis sheets (hypothesis, metric, null, interpretation boundary, non-claim)
+- Peer critique notes (minimum 2 substantive comments per hypothesis)
+- Revised hypotheses incorporating feedback
 
 ---
 
@@ -95,7 +95,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: A significant result against a random-graph null is evidence of biological structure.
+- [ ] I did not assume: The statistical test is the scientific step, when the choice of null model is.
+- [ ] I did not assume: A metric can be chosen after seeing the data without cost to the inference.
+- [ ] I did not assume: Reporting the tests that worked is sufficient without reporting how many were run.
 
 ---
 

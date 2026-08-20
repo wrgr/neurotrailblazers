@@ -95,6 +95,15 @@ Neuronal cell types have characteristic morphological signatures. A layer 5 thic
 
 Always report: reconstruction completeness (estimated fraction of arbor within volume), known errors, and how these might affect the measured descriptors.
 
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** a skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- **Misconception guardrail:** morphological measurements are comparable across cells that were proofread to different levels.
+- **Misconception guardrail:** total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- **Misconception guardrail:** a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
+
 ## Core workflow
 1. Build skeleton from volumetric segmentation using TEASAR or equivalent algorithm.
 2. Quality-check the skeleton: prune spurious branches, verify branch points, check for disconnected fragments.

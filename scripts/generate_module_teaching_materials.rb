@@ -42,8 +42,12 @@ def list_items(text)
   text.each_line.map(&:strip).select { |ln| ln.match?(/^(\-|\*|\d+\.)\s+/) }
 end
 
+# Collects misconception guardrail lines from a section. Skips headings, which may
+# themselves contain the word (e.g. "### Misconception guardrails").
 def misconception_items(text)
-  text.each_line.map(&:strip).select { |ln| ln.downcase.include?('misconception') }
+  text.each_line.map(&:strip).select do |ln|
+    ln.downcase.include?('misconception') && !ln.start_with?('#')
+  end
 end
 
 def normalize_bullets(items, fallback = '- See module page for details.')
@@ -58,12 +62,21 @@ def demote_headings(text)
   text.gsub(/^(#{'#'}{3,5})\s+/) { "#{Regexp.last_match(1)}# " }
 end
 
-# Pulls a labelled sub-block out of a section, e.g. the "**Outputs**" list inside
-# the Studio activity section. Returns '' when absent.
+# Pulls a labelled sub-block out of a section, e.g. the outputs list inside the
+# Studio activity section. Module pages label these inconsistently, so accept all
+# of: "**Outputs**", "**Outputs:**", "**Outputs**:", "### Outputs", "## Outputs".
+# Returns '' when absent.
 def labelled_block(text, label)
-  rx = /^\*\*#{Regexp.escape(label)}\*\*:?\s*$\n(.*?)(?=^\*\*|\z)/m
-  m = text.match(rx)
-  m ? m[1].strip : ''
+  lbl = Regexp.escape(label)
+  patterns = [
+    /^\*\*#{lbl}:?\*\*:?\s*$\n(.*?)(?=^\*\*|^\#{2,}\s|\z)/mi,
+    /^\#{2,6}\s+#{lbl}\s*$\n(.*?)(?=^\#{2,6}\s|^\*\*|\z)/mi
+  ]
+  patterns.each do |rx|
+    m = text.match(rx)
+    return m[1].strip if m && !m[1].strip.empty?
+  end
+  ''
 end
 
 def inline_labelled(text, label)
@@ -76,8 +89,18 @@ def rubric_lines(text)
   text.each_line.map(&:strip).select { |ln| ln.match?(/^\-\s+\*\*/) }
 end
 
+# Numbered steps, tolerating the bold-wrapped form some module pages use
+# ("**1. 00:00-08:00 - Label**") as well as the plain "1. Label" form.
 def numbered_steps(text)
-  text.each_line.map(&:strip).select { |ln| ln.match?(/^\d+\.\s+/) }
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^(\*\*)?\d+\.\s+/) }
+end
+
+# Lines that begin with a time range, with or without bold or a leading number:
+# "**00:00-08:00 | Label**", "1. **00:00-08:00** Label", "00:00-08:00 - Label".
+def timed_lines(text)
+  text.each_line.map(&:strip).select do |ln|
+    ln.gsub('**', '').match?(/\A(\d+\.\s+)?\d{1,2}:\d{2}\s*[-\u2013\u2014]\s*\d{1,2}:\d{2}/)
+  end
 end
 
 def bullet_or_dash(items, fallback)
@@ -140,6 +163,7 @@ module_paths.each do |path|
   task_steps = bullet_or_dash(numbered_steps(workflow_section), []) if task_steps.empty?
   workflow_steps = bullet_or_dash(numbered_steps(workflow_section), [])
   run_steps = bullet_or_dash(numbered_steps(run_of_show), [])
+  run_steps = bullet_or_dash(timed_lines(run_of_show), []) if run_steps.empty?
   rubric_rows = rubric_lines(rubric_section)
   misconceptions = bullet_or_dash(misconception_items(concept_section), [])
   preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
@@ -180,7 +204,7 @@ module_paths.each do |path|
       "| 58:00-60:00 | Exit prompt |"
     else
       run_steps.map do |r|
-        clean = r.gsub('**', '').strip
+        clean = r.gsub('**', '').strip.sub(/\A\d+\.\s+/, '')
         time, _, rest = clean.partition(/\s*[|:\u2014-]\s+/)
         if rest.to_s.strip.empty? || !time.match?(/\d/)
           "| | #{clean.gsub('|', '/')} |"

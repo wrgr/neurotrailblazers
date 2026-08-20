@@ -47,9 +47,9 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Completed QA worksheet for all six patches
+- Spatial artifact map (annotated sketch or diagram)
+- One-page recommendation memo with summary table
 
 ---
 
@@ -93,7 +93,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: You can proofread your way out of a bad image.
+- [ ] I did not assume: A noisy image is worse for segmentation than a clean image with faint membranes.
+- [ ] I did not assume: Artifact severity can be judged from a count, when the spatial distribution matters more.
+- [ ] I did not assume: Quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
 
 ---
 
@@ -101,12 +104,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| 00:00-08:00 | Frame the capability target |
-| 08:00-20:00 | Model one worked example aloud |
-| 20:00-38:00 | Guided learner activity |
-| 38:00-50:00 | Debrief and misconception correction |
-| 50:00-58:00 | Competency check |
-| 58:00-60:00 | Exit prompt |
+| 00:00-08:00 | EM basics refresher |
+| 08:00-20:00 | Artifact recognition walkthrough |
+| 20:00-34:00 | Learner triage round |
+| 34:00-46:00 | QA threshold debate |
+| 46:00-56:00 | Decision logging practice |
+| 56:00-60:00 | Competency check |
 
 ---
 

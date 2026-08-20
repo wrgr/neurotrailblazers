@@ -88,7 +88,10 @@ Not all errors are worth fixing. A merge error on a large interneuron with 500 s
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** proofreading is cleanup that ends when the data looks right, rather than an allocation problem under a fixed budget.
+- **Misconception guardrail:** a single aggregate quality score is enough to decide whether a release is good.
+- **Misconception guardrail:** throughput is a sufficient measure of annotator performance without agreement statistics alongside it.
+- **Misconception guardrail:** a result can be reported without stating the proofreading level of the cells it rests on.
 
 ---
 

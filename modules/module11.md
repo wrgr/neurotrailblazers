@@ -97,6 +97,15 @@ Segmentation and synapse detection errors can create or destroy motif instances:
 
 Always ask: "Could this motif be an artifact of reconstruction errors?" Sensitivity analysis across proofreading versions helps: if a motif finding changes substantially between data versions, it may not be robust.
 
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.
+- **Misconception guardrail:** reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.
+- **Misconception guardrail:** a motif observed more often than expected is a functional building block.
+- **Misconception guardrail:** synapse count is a direct measure of connection strength rather than a proxy for it.
+
 ## Core workflow
 1. Identify synapse candidates: find synapses in the region of interest with correct pre/post assignment.
 2. Build local connectivity motif: extract the subgraph connecting the pre and post neurons and their immediate neighbors.

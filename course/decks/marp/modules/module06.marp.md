@@ -80,7 +80,10 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** merge and split errors are equally costly, so error counts alone rank corrections.
+- **Misconception guardrail:** an object that looks like a plausible neuron is evidence that the segmentation is correct.
+- **Misconception guardrail:** the most visually obvious errors are the ones most worth fixing.
+- **Misconception guardrail:** a segmentation can be finished, rather than released at a stated level with stated remaining error.
 
 ---
 

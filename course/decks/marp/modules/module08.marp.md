@@ -81,7 +81,10 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** a significant result against a random-graph null is evidence of biological structure.
+- **Misconception guardrail:** the statistical test is the scientific step, when the choice of null model is.
+- **Misconception guardrail:** a metric can be chosen after seeing the data without cost to the inference.
+- **Misconception guardrail:** reporting the tests that worked is sufficient without reporting how many were run.
 
 ---
 

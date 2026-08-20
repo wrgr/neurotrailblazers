@@ -191,6 +191,12 @@ Learners produce a complete, reproducible Jupyter notebook that queries a connec
 ### Part D: Reproducibility check (5 minutes)
 1. Restart kernel and run all cells.
 2. Verify all outputs regenerate correctly.
+
+**Outputs**
+- A notebook that runs clean from a restarted kernel, with a header cell recording title, author, date, dataset, and materialization version.
+- One descriptive analysis with at least one summary statistic reported in a markdown cell.
+- One labelled figure exported as PNG, with a caption stating what it shows and what it does not license you to conclude.
+- The underlying data table exported as CSV, plus a metadata JSON recording dataset version, query parameters, and analysis date.
 3. If any cell fails, fix it and re-run.
 
 ## Assessment rubric

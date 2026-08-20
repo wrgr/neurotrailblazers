@@ -50,9 +50,10 @@ Learners produce two artifacts: a question-to-hypothesis sheet and a personal mo
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Question-to-hypothesis sheet: broad question, narrowed target, named structural measurement, named dataset, one non-claim, one falsification condition
+- Motivation statement of 150-300 words, including a specific plan for sustaining effort through tedious stretches
+- Written peer feedback on a partner's statement, addressing specificity and sustainability
+- One revision made to your own sheet or statement in response to that feedback
 
 ---
 

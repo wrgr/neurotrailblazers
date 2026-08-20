@@ -94,7 +94,10 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** cortical layer can be read off a single EM patch without soma density or neuropil context.
+- **Misconception guardrail:** the hippocampal laminar logic transfers to neocortex because both are cortex.
+- **Misconception guardrail:** an atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
+- **Misconception guardrail:** annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
 
 ---
 

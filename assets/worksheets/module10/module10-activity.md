@@ -49,9 +49,10 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Graph statistics summary table
+- Degree distribution plot (log-log scale)
+- Community detection results with cell-type comparison
+- 1-page report
 
 ---
 
@@ -97,7 +98,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: The connectivity graph is the data, rather than one lossy projection of it that discards all geometry.
+- [ ] I did not assume: The synapse threshold is a technical detail that does not need reporting.
+- [ ] I did not assume: A graph metric means the same thing biologically as it does in its original network-science context.
+- [ ] I did not assume: Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.
 
 ---
 

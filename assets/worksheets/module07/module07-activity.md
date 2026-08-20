@@ -48,9 +48,10 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Triage table with impact ratings and one-line justifications
+- Correction log with before/after segment IDs and rationale for each fix
+- Metrics comparison table (pre- and post-proofreading)
+- Release recommendation memo with explicit go/no-go decision
 
 ---
 
@@ -95,7 +96,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: Proofreading is cleanup that ends when the data looks right, rather than an allocation problem under a fixed budget.
+- [ ] I did not assume: A single aggregate quality score is enough to decide whether a release is good.
+- [ ] I did not assume: Throughput is a sufficient measure of annotator performance without agreement statistics alongside it.
+- [ ] I did not assume: A result can be reported without stating the proofreading level of the cells it rests on.
 
 ---
 

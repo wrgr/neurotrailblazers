@@ -48,9 +48,10 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Morphology descriptor table (10 neurons × 5 descriptors)
+- Scatter plot with proposed classification boundary
+- Classification comparison table (morphology call vs synapse call)
+- Brief report on any mismatches and their likely cause
 
 ---
 
@@ -95,7 +96,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: A skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- [ ] I did not assume: Morphological measurements are comparable across cells that were proofread to different levels.
+- [ ] I did not assume: Total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- [ ] I did not assume: A cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
 ---
 

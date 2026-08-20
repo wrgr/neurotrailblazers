@@ -88,6 +88,15 @@ For projects like MouseConnects/HI-MC (which targets hippocampus), learners need
 ### 4) Uncertainty is higher at boundaries
 Layer boundaries, region boundaries, and the edges of the imaged volume are where context is most ambiguous. At a L2/L3 boundary, a pyramidal cell could be classified as either layer. At the edge of the volume, processes are truncated and cannot be traced to their soma. Annotators should flag these boundary cases with explicit uncertainty rather than forcing a classification.
 
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** cortical layer can be read off a single EM patch without soma density or neuropil context.
+- **Misconception guardrail:** the hippocampal laminar logic transfers to neocortex because both are cortex.
+- **Misconception guardrail:** an atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
+- **Misconception guardrail:** annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
+
 ## Core workflow
 1. Identify anatomical region/layer using soma density, cell-type signatures, and neuropil texture.
 2. Map candidate structures to known context (expected cell types, expected synapse types).

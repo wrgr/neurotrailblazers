@@ -50,9 +50,10 @@ Learners produce a one-page research navigation document that serves as a practi
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Norms inventory of five unwritten norms, each with how it is learned and what violating it costs, with the two hardest starred
+- Three written communication scripts, customized to your own situation: asking for help, giving feedback, admitting uncertainty
+- Mentor and support map with at least three filled rows, including one peer, one senior person, and one contact outside your immediate team
+- Ethics commitment of 3-5 sentences covering provenance, attribution, and error handling
 
 ---
 

@@ -56,12 +56,29 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-08:00 frame the capability target and activate prior knowledge.
-- 08:00-20:00 instructor models one worked example, thinking aloud about uncertainty.
-- 20:00-38:00 guided learner activity.
-- 38:00-50:00 debrief and misconception correction.
-- 50:00-58:00 competency check.
-- 58:00-60:00 exit prompt and next-step assignment.
+- Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
+- Read Technical Unit 04, section 2, on materialization versions and root-ID instability.
+- **00:00-06:00 | Framing: the silent bug**
+- Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
+- Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
+- **06:00-16:00 | The five-element checklist, modelled**
+- Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
+- Show what breaks when each one is missing, in turn.
+- **16:00-30:00 | Guided practice: audit your own work**
+- Learners score their brought-in analysis against the five elements. Most will fail two or three; say so in advance to make that safe.
+- Produce a remediation list ordered by how cheap each fix is.
+- **30:00-40:00 | Clean-environment rerun**
+- Attempt a rerun of a partner's analysis from their instructions alone, without asking them questions.
+- Log every point of friction. The friction log is the deliverable, not the successful rerun.
+- **40:00-50:00 | Known limitations, written honestly**
+- Each learner drafts a limitations paragraph naming concrete failure modes, excluded samples, and failed runs — not generic caveats.
+- Discuss why this is a hidden-curriculum norm: reviewers expect it, and almost nobody is taught to write it.
+- **50:00-57:00 | Competency check**
+- Submit: completed five-element record, friction report on a partner's package, and one limitations paragraph.
+- **57:00-60:00 | Exit ticket**
+- "One thing in my current work that another person could not reproduce today."
+- **At 30 minutes:** every learner has identified at least one missing element in their own work. A learner reporting five out of five has probably not audited honestly — check.
+- **At 50 minutes:** limitations paragraphs name specific failure modes rather than generic hedges.
 
 ---
 

@@ -85,7 +85,10 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** you can proofread your way out of a bad image.
+- **Misconception guardrail:** a noisy image is worse for segmentation than a clean image with faint membranes.
+- **Misconception guardrail:** artifact severity can be judged from a count, when the spatial distribution matters more.
+- **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
 
 ---
 

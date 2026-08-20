@@ -48,9 +48,10 @@ Keep these in view. At the end, answer each in one sentence.
 
 ### What you hand in
 
-- Artifact produced during the activity
-- One stated limitation or uncertainty
-- One revision made in response to feedback
+- Ranked error list with type classifications and impact estimates
+- Correction log with before/after evidence for each fix
+- Metric summary table
+- Release note
 
 ---
 
@@ -95,7 +96,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I have stated one thing I am still unsure about.
+- [ ] I did not assume: Merge and split errors are equally costly, so error counts alone rank corrections.
+- [ ] I did not assume: An object that looks like a plausible neuron is evidence that the segmentation is correct.
+- [ ] I did not assume: The most visually obvious errors are the ones most worth fixing.
+- [ ] I did not assume: A segmentation can be finished, rather than released at a stated level with stated remaining error.
 
 ---
 

@@ -82,7 +82,10 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** the connectivity graph is the data, rather than one lossy projection of it that discards all geometry.
+- **Misconception guardrail:** the synapse threshold is a technical detail that does not need reporting.
+- **Misconception guardrail:** a graph metric means the same thing biologically as it does in its original network-science context.
+- **Misconception guardrail:** Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.
 
 ---
 

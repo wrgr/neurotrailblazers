@@ -107,12 +107,13 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| 00:00-08:00 | Frame the capability target |
-| 08:00-20:00 | Model one worked example aloud |
-| 20:00-38:00 | Guided learner activity |
-| 38:00-50:00 | Debrief and misconception correction |
-| 50:00-58:00 | Competency check |
-| 58:00-60:00 | Exit prompt |
+| 00:00-06:00 | Framing: the silent bug |
+| 06:00-16:00 | The five-element checklist, modelled |
+| 16:00-30:00 | Guided practice: audit your own work |
+| 30:00-40:00 | Clean-environment rerun |
+| 40:00-50:00 | Known limitations, written honestly |
+| 50:00-57:00 | Competency check |
+| 57:00-60:00 | Exit ticket |
 
 ---
 

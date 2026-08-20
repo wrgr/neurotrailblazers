@@ -72,9 +72,9 @@ Curated papers covering neuronal ultrastructure as observed in electron microsco
 
 ---
 
-## 3. Bhatt, Zhang & Bhatt (2009) — Dendritic Spine Dynamics
+## 3. Bhatt, Zhang & Gan (2009) — Dendritic Spine Dynamics
 
-**Citation:** Bhatt DH, Zhang S, Bhatt AN. Dendritic spine dynamics. *Annual Review of Physiology*. 2009;71:261-282.
+**Citation:** Bhatt DH, Zhang S, Gan WB. Dendritic spine dynamics. *Annual Review of Physiology*. 2009;71:261-282.
 **DOI:** [10.1146/annurev.physiol.010908.163140](https://doi.org/10.1146/annurev.physiol.010908.163140)
 
 **Tags:** `neuroanatomy:dendrite` `neuroanatomy:spine` `neuroanatomy:synapse` `neuroanatomy:cytoskeleton` `methodology:experimental-design`

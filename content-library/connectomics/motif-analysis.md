@@ -278,5 +278,5 @@ A motif that is statistically enriched is not necessarily a "functional circuit.
 - Matelsky JK et al. (2021) "DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries." *Scientific Reports* 11:13045.
 - Milo R et al. (2002) "Network motifs: simple building blocks of complex networks." *Science* 298(5594):824-827.
 - Milo R et al. (2004) "Superfamilies of evolved and designed networks." *Science* 303(5663):1538-1542.
-- Perin R, Berger TK, Bhatt M (2011) "A synaptic organizing principle for cortical neuronal groups." *PNAS* 108(13):5419-5424.
-- Song S, Sjöström PJ, Reigl M, Nelson S, Bhatt DB (2005) "Highly nonrandom features of synaptic connectivity in local cortical circuits." *PLoS Biology* 3(3):e68.
+- Perin R, Berger TK, Markram H (2011) "A synaptic organizing principle for cortical neuronal groups." *PNAS* 108(13):5419-5424.
+- Song S, Sjöström PJ, Reigl M, Nelson S, Chklovskii DB (2005) "Highly nonrandom features of synaptic connectivity in local cortical circuits." *PLoS Biology* 3(3):e68.

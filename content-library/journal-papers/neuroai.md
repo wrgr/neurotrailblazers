@@ -147,28 +147,29 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ---
 
-## 6. Eckstein et al. (2024) — Neuroscience Needs Network Ecology
+## 6. Barabási et al. (2023) — Neuroscience Needs Network Science
 
-**Citation:** Eckstein N, Bates AS, Champion A, Du M, Yin Y, Schlegel P, et al. Neuroscience needs network ecology. *Neuron*. 2024;112(9):1397-1408.
-**DOI:** [10.1016/j.neuron.2024.03.008](https://doi.org/10.1016/j.neuron.2024.03.008)
+**Citation:** Barabási DL, Bianconi G, Bullmore E, Burgess M, Chung S, Eliassi-Rad T, et al. Neuroscience needs network science. *The Journal of Neuroscience*. 2023;43(34):5989-5995.
+**DOI:** [10.1523/JNEUROSCI.1014-23.2023](https://doi.org/10.1523/JNEUROSCI.1014-23.2023)
 
-**Tags:** `neuroai:structure-function` `neuroai:connectome-constrained-model` `connectomics:graph-theory` `connectomics:motif` `methodology:statistical-analysis` `case-studies:Drosophila`
+**Tags:** `neuroai:structure-function` `neuroai:connectome-constrained-model` `connectomics:graph-theory` `connectomics:motif` `methodology:statistical-analysis`
 
 ### Summaries
 
-**Beginner:** Having a complete brain wiring diagram is incredible, but what do you actually do with it? This paper argues that neuroscience needs tools from "network ecology" — the study of complex interaction networks in ecosystems — to make sense of connectome data. Just as ecologists study food webs (who eats whom), neuroscientists should study connectomes using frameworks that account for the asymmetric, hierarchical nature of neural circuits.
+**Beginner:** Having a complete wiring diagram is remarkable, but what do you actually do with it? Twenty authors from network science and neuroscience argue that the field needs shared theory, not just bigger datasets. Their case is that neuroscience keeps re-deriving ideas network science already has, and that the two communities need a common language before connectome data can answer the questions people want to ask of it.
 
-**Intermediate:** Eckstein et al. argue that standard connectomics analysis tools (from network science and social networks) miss important biological structure. They advocate for approaches from network ecology that handle: asymmetric interactions (excitatory versus inhibitory), hierarchical organization, spatial embedding, and multi-scale structure simultaneously. Applied to the *Drosophila* connectome, they show that ecological network tools reveal circuit organization that standard graph measures miss, including trophic level analysis (information processing depth) and interaction strength distributions.
+**Intermediate:** This is a position piece from a workshop, arguing that connectome-scale data has outrun the theory available to interpret it. The authors set out where network science already has machinery neuroscience needs — multilayer and temporal networks, controllability, generative models, network comparison — and where neural circuits break the assumptions those tools were built on: signed and directed edges, spatial embedding, and the fact that a structural connection is not a functional one. The practical argument for a connectomics reader is that importing a graph statistic without importing its assumptions is how a result stops being checkable.
 
-**Advanced:** The core argument is that generic graph-theoretic measures (degree, clustering, modularity) are not biologically informed enough for neural circuits. The ecological tools they advocate handle: (1) signed, weighted, directed graphs natively; (2) the distinction between processing hierarchies and recurrent loops; (3) asymmetries where connectivity meaning depends on cell type. The trophic analysis framework provides a continuous "processing depth" measure that outperforms community-detection-based layer assignment. This approach complements Winding et al.'s spectral signal flow analysis.
+**Advanced:** The paper is best read as a map of the gap rather than a method. It identifies the specific mismatches between standard network-science measures and neural data — degree and clustering assume unsigned undirected edges; community detection assumes a resolution you must choose; most generative null models ignore the distance dependence that dominates cortical connectivity — and it names the areas where theory is genuinely missing rather than merely unapplied. For anyone running the analyses in Unit 09, the value is the explicit statement that the null model and the thresholding choice are theoretical commitments, not preprocessing.
 
-**Key figures:** Fig. 1 (network ecology parallels), Fig. 2 (trophic level analysis), Fig. 3 (interaction strength), Fig. 4 (comparison with standard graph measures)
+**Key figures:** Read it for the argument rather than the figures; it is a perspective piece, not a results paper.
 
 **Discussion prompts:**
-- Which ecological network concepts translate directly to neural circuits, and which require adaptation?
-- How do signed (excitatory/inhibitory) analyses change conclusions compared with unsigned analyses?
+- Which network-science measures in your own analysis carry assumptions your connectome violates, and what would it take to check?
+- The authors argue theory is the bottleneck rather than data. Is that true for the question you are working on?
+- Where does a network-science framing actively mislead about a neural circuit?
 
-**Related content:** [Network analysis methods](/content-library/connectomics/network-analysis-methods/), [Motif analysis](/content-library/connectomics/motif-analysis/), [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/)
+**Related content:** [Network analysis methods](/content-library/connectomics/network-analysis-methods/), [Motif analysis](/content-library/connectomics/motif-analysis/), [Graph representations](/content-library/connectomics/graph-representations/)
 
 ---
 

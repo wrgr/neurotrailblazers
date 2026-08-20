@@ -172,7 +172,7 @@ Every stage must record:
 
 ## References
 
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*. doi:10.1101/2023.07.26.550598.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss based on deep learning for connectome reconstruction." *IEEE Transactions on Pattern Analysis and Machine Intelligence* 41(7):1669-1680.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.

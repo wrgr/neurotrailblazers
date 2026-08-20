@@ -251,7 +251,7 @@ The highest-level representation: neurons as nodes, synaptic connections as edge
 
 ## References
 
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Sato M et al. (2000) "TEASAR: Tree-structure extraction algorithm for accurate and robust skeletons." *Proc. Pacific Conference on Computer Graphics and Applications*.
 - Rubinov M, Sporns O (2010) "Complex network measures of brain connectivity: Uses and interpretations." *NeuroImage* 52(3):1059-1069.
 - Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443.

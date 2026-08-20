@@ -315,8 +315,9 @@ an aggressive (low) threshold produces more merges and fewer splits.
   Saalfeld, S., & Turaga, S. C. (2017). A deep structured learning
   approach towards automating connectome reconstruction from 3D electron
   microscopy data. *arXiv preprint arXiv:1709.02974*.
-- Lee, K., Lu, R., Luther, K., & Bhatt, M. (2019). Superhuman accuracy on
-  the SNEMI3D connectomics benchmark. *arXiv preprint arXiv:1706.00120*.
+- Lee, K., Zung, J., Li, P., Jain, V., & Seung, H. S. (2017). Superhuman
+  accuracy on the SNEMI3D connectomics challenge. *arXiv preprint
+  arXiv:1706.00120*.
 - Plaza, S. M., Scheffer, L. K., & Chklovskii, D. B. (2014). Toward
   large-scale connectome reconstructions. *Current Opinion in
   Neurobiology*, 25, 201-210.

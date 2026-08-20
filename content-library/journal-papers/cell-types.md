@@ -122,9 +122,9 @@ Curated papers on neuronal and glial cell type identification, classification fr
 
 ---
 
-## 5. Schneider-Mizell et al. (2024) — Quantitative Neuroanatomy and Cell Type Classification in MICrONS
+## 5. Schneider-Mizell et al. (2023) — Cell-Type-Specific Inhibitory Circuitry from a Connectomic Census
 
-**Citation:** Schneider-Mizell CM, Bodor AL, Collman F, Brittain D, Bleckert A, Dorkenwald S, et al. Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex. *bioRxiv*. 2024.
+**Citation:** Schneider-Mizell CM, Bodor AL, Collman F, Brittain D, Bleckert A, Dorkenwald S, et al. Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex. *bioRxiv*. 2023.
 **DOI:** [10.1101/2023.01.23.525290](https://doi.org/10.1101/2023.01.23.525290)
 
 **Tags:** `cell-types:neuron-classification` `cell-types:inhibitory` `cell-types:connectivity-based-classification` `cell-types:morphological-classification` `case-studies:MICrONS` `case-studies:mouse` `connectomics:graph-theory`

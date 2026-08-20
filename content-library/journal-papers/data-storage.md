@@ -23,8 +23,8 @@ Curated papers on connectomics data management, annotation systems, file formats
 
 ## 1. Dorkenwald et al. (2023) — CAVE: Connectome Annotation Versioning Engine
 
-**Citation:** Dorkenwald S, McKellar CE, Macrina T, Kemnitz N, Lee K, Lu R, et al. CAVE: Connectome Annotation Versioning Engine. *bioRxiv*. 2023.
-**DOI:** [10.1101/2023.07.26.550598](https://doi.org/10.1101/2023.07.26.550598)
+**Citation:** Dorkenwald S, Schneider-Mizell CM, Brittain D, Halageri A, Jordan C, Kemnitz N, et al. CAVE: Connectome Annotation Versioning Engine. *Nature Methods*. 2024.
+**DOI:** [10.1038/s41592-024-02426-z](https://doi.org/10.1038/s41592-024-02426-z)
 
 **Tags:** `data-storage:CAVE` `data-storage:provenance` `data-storage:versioning` `data-storage:pipeline` `proofreading:proofreading-tools` `methodology:reproducibility`
 
@@ -151,10 +151,10 @@ Curated papers on connectomics data management, annotation systems, file formats
 
 ---
 
-## 6. Saalfeld et al. (2012) — CATMAID: Collaborative Annotation Toolkit for Massive Amounts of Image Data
+## 6. Saalfeld et al. (2009) — CATMAID: Collaborative Annotation Toolkit for Massive Amounts of Image Data
 
 **Citation:** Saalfeld S, Cardona A, Hartenstein V, Tomancak P. CATMAID: Collaborative annotation toolkit for massive amounts of image data. *Bioinformatics*. 2009;25(15):1984-1986.
-**DOI:** [10.1093/bioinformatics/btt529](https://doi.org/10.1093/bioinformatics/btt529)
+**DOI:** [10.1093/bioinformatics/btp266](https://doi.org/10.1093/bioinformatics/btp266)
 
 **Tags:** `data-storage:neuroglancer` `data-storage:pipeline` `data-storage:cloud-storage` `proofreading:proofreading-tools` `methodology:collaboration`
 
@@ -177,10 +177,10 @@ Curated papers on connectomics data management, annotation systems, file formats
 
 ---
 
-## 7. Ackerman et al. (2022) — BossDB: A Cloud-Native Approach for Petascale Neuroscience Data Management
+## 7. Hider et al. (2022) — BossDB: A Cloud-Native Approach for Petascale Neuroscience Data Management
 
-**Citation:** Ackerman W, Matelsky J, Wester B, Miller M, Vega A, Roncal WG, et al. BossDB: A cloud-native approach for petascale neuroscience data management. *Frontiers in Neuroinformatics*. 2022.
-**DOI:** [10.3389/fninf.2021.828787](https://doi.org/10.3389/fninf.2021.828787)
+**Citation:** Hider R Jr, Kleissas D, Gion T, Xenes D, Matelsky J, Pryor D, et al. The Brain Observatory Storage Service and Database (BossDB): a cloud-native approach for petascale neuroscience discovery. *Frontiers in Neuroinformatics*. 2022;16:828787.
+**DOI:** [10.3389/fninf.2022.828787](https://doi.org/10.3389/fninf.2022.828787)
 
 **Tags:** `data-storage:cloud-storage` `data-storage:data-format` `data-storage:pipeline` `methodology:open-data` `infrastructure:scalability`
 

@@ -441,10 +441,10 @@ VIP, Lamp5). You have a team of 5 proofreaders and 3 months.
   neocortex. *Cell*, 162(3), 648-661.
 - Kim, J. S., et al. (2014). Space-time wiring specificity supports
   direction selectivity in the retina. *Nature*, 509, 331-336.
-- Lu, R., Lee, K., & Bhatt, M. (2019). Automated error detection in
-  connectome reconstruction. *IEEE Conference on Computer Vision and
-  Pattern Recognition (CVPR)*.
-- Zung, J., Tartavull, I., Lee, K., & Bhatt, M. (2017). An error
+- Li, H., Januszewski, M., Jain, V., & Li, P. H. (2020). Neuronal
+  subcompartment classification and merge error correction. In *Medical
+  Image Computing and Computer Assisted Intervention (MICCAI)*.
+- Zung, J., Tartavull, I., Lee, K., & Seung, H. S. (2017). An error
   detection and correction framework for connectomics. *Advances in
   Neural Information Processing Systems (NeurIPS)*, 30.
 

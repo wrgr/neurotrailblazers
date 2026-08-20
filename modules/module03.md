@@ -217,7 +217,7 @@ Learners produce a complete, reproducible Jupyter notebook that queries a connec
 
 ## Academic references
 - Kluyver, T., et al. (2016). Jupyter Notebooks: a publishing format for reproducible computational workflows. *Proceedings of the 20th International Conference on Electronic Publishing*, 87-90.
-- Dorkenwald, S., et al. (2023). CAVE: Connectome Annotation Versioning Engine. *bioRxiv*. https://doi.org/10.1101/2023.07.26.550598
+- Dorkenwald, S., et al. (2024). CAVE: Connectome Annotation Versioning Engine. *Nature Methods*. https://doi.org/10.1038/s41592-024-02426-z
 - Silversmith, W., et al. (2021). cloud-volume: Serverless client for arbitrary volumetric data. *Zenodo*. https://doi.org/10.5281/zenodo.3956205
 - Hagberg, A. A., Schult, D. A., & Swart, P. J. (2008). Exploring network structure, dynamics, and function using NetworkX. *Proceedings of the 7th Python in Science Conference*, 11-15.
 - Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult brain. *Nature*, 634, 124-138.

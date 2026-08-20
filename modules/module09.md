@@ -182,7 +182,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 ## References
 - Costa M et al. (2016) "NBLAST: rapid, sensitive comparison of neuronal structure and construction of neuron family databases." *Neuron* 91(2):293-311.
 - Sato M et al. (2000) "TEASAR: Tree-structure extraction algorithm for accurate and robust skeletons." *Pacific Conference on Computer Graphics and Applications*.
-- Scorcioni R, Polavaram S, Bhatt GA (2008) "L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies." *Nature Protocols* 3(5):866-876.
+- Scorcioni R, Polavaram S, Ascoli GA (2008) "L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies." *Nature Protocols* 3(5):866-876.
 - Ascoli GA et al. (2007) "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex." *Nature Reviews Neuroscience* 8(7):557-568.
 
 ## Quick practice prompt

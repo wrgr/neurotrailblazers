@@ -60,7 +60,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Mitigation:** Transcardial perfusion with buffered fixative provides the most uniform fixation for mammalian brain. Immersion fixation of resected tissue (as in human surgical samples like H01) is less uniform — expect a quality gradient from surface to interior.
 
-**Reference:** Bhatt, Bhatt & Bhatt (2009); Bhatt & Bhatt (various); Bhatt DH (2009). For the H01 dataset specifically, see Shapson-Coe et al. (2024) which discusses fixation quality in human surgical tissue.
+**Reference:** For the H01 dataset specifically, see Shapson-Coe et al. (2024), which discusses fixation quality in human surgical tissue.
 
 ### Staining artifacts
 
@@ -225,7 +225,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure." *PLoS Biology* 2(11):e329.
 - Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
-- Hua Y, Laserstein P, Bhatt M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
+- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Kasthuri N et al. (2015) "Saturated reconstruction of a volume of neocortex." *Cell* 162(3):648-661.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 - Xu CS et al. (2021) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 10:e65541.

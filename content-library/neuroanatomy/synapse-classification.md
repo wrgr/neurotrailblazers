@@ -275,9 +275,8 @@ Rate your confidence:
 2. Colonnier M (1968) "Synaptic patterns on different cell types in the different laminae of the cat visual cortex: an electron microscope study." *Brain Research* 9:268-287.
 3. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587.
 4. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
-5. Bhatt DH, Zhang S, Bhatt WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
+5. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
 6. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3-CA1 axons in rat hippocampal slices." *Journal of Neuroscience* 18:8300-8310.
-7. Harris KM, Bhatt DH (2004) "Bhatt and Harris on synaptic ultrastructure." Reference for synapse quantification.
 
 ---
 

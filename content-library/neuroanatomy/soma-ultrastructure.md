@@ -230,10 +230,9 @@ The soma is a major hub for membrane trafficking:
 ## References
 
 1. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System: Neurons and Their Supporting Cells*, 3rd edition. Oxford University Press.
-2. Bhatt DH, Zhang S, Bhatt WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
+2. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
 3. Shapson-Coe A, Januszewski M, Berger DR, et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 4. Alberts B, Johnson A, Lewis J, et al. (2015) *Molecular Biology of the Cell*, 6th edition. Garland Science. (General cell biology reference for organelle structure.)
-5. Bhatt DH, Harris KM (2004) "Bhatt and Harris on neuronal ultrastructure." Reference for soma identification criteria.
 
 ---
 

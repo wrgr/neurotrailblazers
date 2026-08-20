@@ -324,7 +324,7 @@ model for understanding larger brains:
 - White, J. G., Southgate, E., Thomson, J. N., & Brenner, S. (1986). The structure of
   the nervous system of the nematode *Caenorhabditis elegans*. *Philosophical
   Transactions of the Royal Society B*, 314(1165), 1-340.
-- Varshney, L. R., Chen, B. L., Paniagua, E., Hall, D. H., & Bhatt, D. B. (2011).
+- Varshney, L. R., Chen, B. L., Paniagua, E., Hall, D. H., & Chklovskii, D. B. (2011).
   Structural properties of the *Caenorhabditis elegans* neuronal network. *PLoS
   Computational Biology*, 7(2), e1001066.
 - Cook, S. J., et al. (2019). Whole-animal connectomes of both *Caenorhabditis

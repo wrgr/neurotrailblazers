@@ -22,7 +22,7 @@ missing = []
 
 Dir.glob(File.join(deck_dir, '*.md')).sort.each do |deck_path|
   slug = File.basename(deck_path, '.md')
-  ids = File.read(deck_path).scan(fig_id_regex).uniq
+  ids = File.read(deck_path, encoding: 'UTF-8').scan(fig_id_regex).uniq
   next if ids.empty?
 
   target_dir = File.join(asset_root, slug)

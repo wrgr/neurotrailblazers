@@ -23,7 +23,7 @@ SCAN_GLOBS.each do |glob|
   Dir.glob(File.join(ROOT, glob)).each do |path|
     next if SKIP_PATTERNS.any? { |pat| path.match?(pat) }
 
-    content = File.read(path)
+    content = File.read(path, encoding: 'UTF-8')
     ids = content.scan(FIG_ID_REGEX).uniq
     refs_by_file[path] = ids unless ids.empty?
   end
@@ -55,7 +55,7 @@ puts "\nValidation complete with warnings."
 
 marp_missing = {}
 Dir.glob(File.join(ROOT, 'course/decks/marp/*.marp.md')).each do |path|
-  content = File.read(path)
+  content = File.read(path, encoding: 'UTF-8')
   missing_paths = content.scan(MARP_IMAGE_REGEX).flatten.uniq.each_with_object([]) do |img_ref, acc|
     next if img_ref.start_with?('http://', 'https://')
 

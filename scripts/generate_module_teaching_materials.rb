@@ -12,7 +12,7 @@ MARP_DIR = File.join(ROOT, 'course', 'decks', 'marp', 'modules')
 WORKSHEET_DIR = File.join(ROOT, 'assets', 'worksheets')
 
 def parse_file(path)
-  raw = File.read(path)
+  raw = File.read(path, encoding: 'UTF-8')
   parts = raw.split(/^---\s*$\n/, 3)
   return nil if parts.length < 3
 
@@ -21,10 +21,17 @@ def parse_file(path)
   [fm, body]
 end
 
+# Matches a level-2 section by heading. Module pages vary their heading wording
+# ("60-minute tutorial run-of-show" vs "Detailed run-of-show (90 minutes)",
+# "Studio activity" vs "Studio activity: ..."), so fall back to a substring match
+# before giving up. An exact match always wins.
 def section(body, heading)
-  rx = /^##\s+#{Regexp.escape(heading)}\s*$\n(.*?)(?=^##\s+|\z)/m
-  match = body.match(rx)
-  match ? match[1].strip : ''
+  exact = body.match(/^##\s+#{Regexp.escape(heading)}\s*$\n(.*?)(?=^##\s+|\z)/m)
+  return exact[1].strip if exact
+
+  key = heading.sub(/\A\d+-minute\s+/i, '').sub(/\Atutorial\s+/i, '')
+  loose = body.match(/^##\s+[^\n]*#{Regexp.escape(key)}[^\n]*$\n(.*?)(?=^##\s+|\z)/mi)
+  loose ? loose[1].strip : ''
 end
 
 def first_paragraph(text)
@@ -43,6 +50,40 @@ def normalize_bullets(items, fallback = '- See module page for details.')
   return fallback if items.empty?
 
   items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '- ') }.join("\n")
+end
+
+# Returns the body of a section with its sub-headings demoted one level, so a
+# module section can be embedded under a worksheet heading without clashing.
+def demote_headings(text)
+  text.gsub(/^(#{'#'}{3,5})\s+/) { "#{Regexp.last_match(1)}# " }
+end
+
+# Pulls a labelled sub-block out of a section, e.g. the "**Outputs**" list inside
+# the Studio activity section. Returns '' when absent.
+def labelled_block(text, label)
+  rx = /^\*\*#{Regexp.escape(label)}\*\*:?\s*$\n(.*?)(?=^\*\*|\z)/m
+  m = text.match(rx)
+  m ? m[1].strip : ''
+end
+
+def inline_labelled(text, label)
+  m = text.match(/^\*\*#{Regexp.escape(label)}:\*\*\s*(.+)$/)
+  m ? m[1].strip : ''
+end
+
+# Extracts the "- **Technical:** ..." style rubric lines, keeping the label.
+def rubric_lines(text)
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^\-\s+\*\*/) }
+end
+
+def numbered_steps(text)
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^\d+\.\s+/) }
+end
+
+def bullet_or_dash(items, fallback)
+  return fallback if items.empty?
+
+  items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '') }
 end
 
 FileUtils.mkdir_p(SLIDE_PAGE_DIR)
@@ -68,7 +109,7 @@ module_paths.each do |path|
   concept_section = section(body, 'Concept set')
   workflow = first_paragraph(section(body, 'Core workflow'))
   workflow_section = section(body, 'Core workflow')
-  run_of_show = section(body, '60-minute tutorial run-of-show')
+  run_of_show = section(body, 'run-of-show')
   activity_section = section(body, 'Studio activity')
   activity = first_paragraph(activity_section)
   rubric_section = section(body, 'Assessment rubric')
@@ -77,35 +118,241 @@ module_paths.each do |path|
   references = Array(fm['references'])
 
   workflow_items = normalize_bullets(list_items(workflow_section))
-  run_items = normalize_bullets(list_items(run_of_show))
+  default_run = "- 00:00-08:00 frame the capability target and activate prior knowledge.\n" \
+                "- 08:00-20:00 instructor models one worked example, thinking aloud about uncertainty.\n" \
+                "- 20:00-38:00 guided learner activity.\n" \
+                "- 38:00-50:00 debrief and misconception correction.\n" \
+                "- 50:00-58:00 competency check.\n" \
+                "- 58:00-60:00 exit prompt and next-step assignment."
+  run_items = normalize_bullets(list_items(run_of_show), default_run)
   misconception_lines = normalize_bullets(misconception_items(concept_section), '- Surface and correct one likely misconception during debrief.')
   rubric_items = normalize_bullets(list_items(rubric_section), "- Use module rubric headings on the module page.")
 
   worksheet_mod_dir = File.join(WORKSHEET_DIR, "module#{num}")
   FileUtils.mkdir_p(worksheet_mod_dir)
   worksheet_path = File.join(worksheet_mod_dir, "module#{num}-activity.md")
+
+  scenario = inline_labelled(activity_section, 'Scenario')
+  scenario = activity if scenario.empty?
+  outputs = bullet_or_dash(list_items(labelled_block(activity_section, 'Outputs')), [])
+  outputs = bullet_or_dash(list_items(labelled_block(activity_section, 'Expected outputs')), []) if outputs.empty?
+  task_steps = bullet_or_dash(numbered_steps(activity_section), [])
+  task_steps = bullet_or_dash(numbered_steps(workflow_section), []) if task_steps.empty?
+  workflow_steps = bullet_or_dash(numbered_steps(workflow_section), [])
+  run_steps = bullet_or_dash(numbered_steps(run_of_show), [])
+  rubric_rows = rubric_lines(rubric_section)
+  misconceptions = bullet_or_dash(misconception_items(concept_section), [])
+  preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
+  preclass = bullet_or_dash(list_items(labelled_block(run_of_show, 'Pre-class')), []) if preclass.empty?
+  prereqs = Array(fm['prerequisites_list'])
+  key_questions = Array(fm['key_questions'])
+  duration = fm['duration'].to_s
+  related_units = Array(fm['related_tools']) + Array(fm['datasets'])
+
+  outputs_block =
+    if outputs.empty?
+      "- Artifact produced during the activity\n- One stated limitation or uncertainty\n- One revision made in response to feedback"
+    else
+      outputs.map { |o| "- #{o.sub(/,\z/, '').sub(/\.\z/, '')}" }.join("\n")
+    end
+
+  task_block =
+    if task_steps.empty?
+      "1. Read the scenario and restate the goal in your own words.\n2. Produce the artifact.\n3. Record evidence and limitations below."
+    else
+      task_steps.each_with_index.map { |t, k| "#{k + 1}. #{t}" }.join("\n")
+    end
+
+  workflow_block =
+    if workflow_steps.empty?
+      "- [ ] See the module page for the workflow."
+    else
+      workflow_steps.map { |w| "- [ ] #{w}" }.join("\n")
+    end
+
+  timing_block =
+    if run_steps.empty?
+      "| 00:00-08:00 | Frame the capability target |\n" \
+      "| 08:00-20:00 | Model one worked example aloud |\n" \
+      "| 20:00-38:00 | Guided learner activity |\n" \
+      "| 38:00-50:00 | Debrief and misconception correction |\n" \
+      "| 50:00-58:00 | Competency check |\n" \
+      "| 58:00-60:00 | Exit prompt |"
+    else
+      run_steps.map do |r|
+        clean = r.gsub('**', '').strip
+        time, _, rest = clean.partition(/\s*[|:\u2014-]\s+/)
+        if rest.to_s.strip.empty? || !time.match?(/\d/)
+          "| | #{clean.gsub('|', '/')} |"
+        else
+          "| #{time.strip} | #{rest.strip.gsub('|', '/')} |"
+        end
+      end.join("\n")
+    end
+
+  rubric_block =
+    if rubric_rows.empty?
+      "- Use the rubric headings on the module page."
+    else
+      rubric_rows.join("\n")
+    end
+
+  misconception_block =
+    if misconceptions.empty?
+      "- [ ] I have stated one thing I am still unsure about."
+    else
+      misconceptions.map do |m|
+        text = m.gsub('**', '')
+                .sub(/\A[-*\d.]+\s*/, '')
+                .sub(/\AMisconception(\s+(guardrail|to\s+prevent|to\s+watch))?\s*:\s*/i, '')
+                .strip
+        text = text[0].upcase + text[1..].to_s unless text.empty?
+        "- [ ] I did not assume: #{text}"
+      end.join("\n")
+    end
+
+  prereq_block =
+    if prereqs.empty?
+      "- [ ] The module prerequisites listed on the module page"
+    else
+      prereqs.map { |p| "- [ ] #{p}" }.join("\n")
+    end
+  prereq_block += "\n" + preclass.map { |p| "- [ ] #{p}" }.join("\n") unless preclass.empty?
+
+  question_block =
+    if key_questions.empty?
+      ''
+    else
+      "\n## Questions this module answers\n\nKeep these in view. At the end, answer each in one sentence.\n\n" +
+        key_questions.each_with_index.map { |q, k| "#{k + 1}. #{q}\n   - Your answer:" }.join("\n") + "\n"
+    end
+
   File.write(worksheet_path, <<~MD)
     # Module #{num} Activity Worksheet
 
-    ## Module
-    #{title}
+    **Module:** #{title}#{duration.empty? ? '' : "  \n**Duration:** #{duration}"}  
+    *Generated from the module page. Edit `modules/module#{num}.md`, not this file.*
 
-    ## Capability Target
+    ---
+
+    ## Capability target
+
     #{capability}
 
-    ## Studio Activity Instructions
-    #{activity}
+    You are done when you can demonstrate this, not when you have filled in every box below.
 
-    ## Evidence and Reasoning Notes
-    - Claim:
-    - Evidence:
-    - Limitation:
+    ---
 
-    ## Rubric Check
-    #{rubric}
+    ## Before you start
 
-    ## Exit Prompt
+    Check that you have:
+
+    #{prereq_block}
+
+    Bring one question you already have about this topic. Write it here so you can check
+    at the end whether it was answered:
+
+    > My question:
+    #{question_block}
+    ---
+
+    ## The task
+
+    **Scenario:** #{scenario}
+
+    #{task_block}
+
+    ### What you hand in
+
+    #{outputs_block}
+
+    ---
+
+    ## Working checklist
+
+    Tick as you go. If you skip a step, write why — a skipped step with a stated reason
+    is a decision; a skipped step without one is a gap.
+
+    #{workflow_block}
+
+    ---
+
+    ## Evidence and reasoning
+
+    Fill one row per claim you make in your artifact. A claim without a limitation is
+    not finished.
+
+    | # | Claim | Evidence (what specifically) | Limitation / what would change my mind |
+    |---|---|---|---|
+    | 1 | | | |
+    | 2 | | | |
+    | 3 | | | |
+
+    **Confidence.** For your main claim, mark one and say why:
+
+    - [ ] **High** — two or more independent lines of evidence agree
+    - [ ] **Medium** — one strong line, or several that share a weakness
+    - [ ] **Uncertain** — the deciding evidence is not available to me
+
+    Why:
+
+    **One alternative I considered and rejected**, and the reason:
+
+    ---
+
+    ## Misconception self-check
+
+    These are the errors this module is designed to prevent. Confirm you did not make
+    them, or note where you nearly did:
+
+    #{misconception_block}
+
+    ---
+
+    ## Session timing (facilitator reference)
+
+    | Time | Segment |
+    |---|---|
+    #{timing_block}
+
+    ---
+
+    ## Rubric
+
+    Score yourself before anyone else does. Where you fall short, name the specific next
+    action rather than a general intention.
+
+    #{rubric_block}
+
+    **My self-assessment:**
+
+    - Strongest part of my work, and the evidence for that:
+    - Weakest part, and the specific next action:
+
+    ---
+
+    ## Exit prompt
+
     #{prompt}
+
+    **Your answer:**
+
+    ---
+
+    ## Peer review (swap worksheets)
+
+    Reviewing someone else's reasoning is the fastest way to see the gaps in your own.
+    Assess the **evidence quality**, not whether you agree with the conclusion.
+
+    - Is every claim paired with specific evidence?
+    - Is at least one limitation stated, and is it a real one?
+    - Is the confidence level justified by the number of *independent* evidence lines?
+    - One thing this person did better than me:
+    - One question I would ask them:
+
+    ---
+
+    *Module page: `/modules/module#{num}/` · Slides: `/modules/slides/module#{num}/` · [Facilitator guide](/teaching/facilitator-guide/)*
   MD
 
   marp_path = File.join(MARP_DIR, "module#{num}.marp.md")

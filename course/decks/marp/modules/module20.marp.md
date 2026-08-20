@@ -47,12 +47,26 @@ Design and execute a connectomics inference plan that includes null-model choice
 ---
 
 ## Core Workflow
-- See module page for details.
+- **Question-to-test mapping**
+- Convert biological question into estimand(s), test set, and effect-size target.
+- **Null-model design**
+- Define null constraints and why they preserve key confounders.
+- **Inference execution**
+- Run model/tests with preregistered thresholds and multiplicity controls.
+- **Robustness checks**
+- Test sensitivity to preprocessing variant, sampling region, and parameter choice.
+- **Claim calibration**
+- Report supported, uncertain, and unsupported claims in separate blocks.
 
 ---
 
 ## 60-Minute Run-of-Show
-- See module page for details.
+- 00:00-08:00 frame the capability target and activate prior knowledge.
+- 08:00-20:00 instructor models one worked example, thinking aloud about uncertainty.
+- 20:00-38:00 guided learner activity.
+- 38:00-50:00 debrief and misconception correction.
+- 50:00-58:00 competency check.
+- 58:00-60:00 exit prompt and next-step assignment.
 
 ---
 
@@ -64,7 +78,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 ---
 
 ## Studio Activity
-
+**Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
 
 ---
 

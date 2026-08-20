@@ -47,12 +47,21 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Core Workflow
-- See module page for details.
+- Define release scope (dataset slice, code commit, parameter set).
+- Add machine-readable metadata and provenance fields.
+- Validate rerun path in a clean environment.
+- Write methods/limitations notes for external users.
+- Publish with changelog and deprecation policy.
 
 ---
 
 ## 60-Minute Run-of-Show
-- See module page for details.
+- 00:00-08:00 frame the capability target and activate prior knowledge.
+- 08:00-20:00 instructor models one worked example, thinking aloud about uncertainty.
+- 20:00-38:00 guided learner activity.
+- 38:00-50:00 debrief and misconception correction.
+- 50:00-58:00 competency check.
+- 58:00-60:00 exit prompt and next-step assignment.
 
 ---
 
@@ -64,7 +73,7 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Studio Activity
-
+**Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
 
 ---
 

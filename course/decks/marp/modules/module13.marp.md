@@ -47,7 +47,11 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ---
 
 ## Core Workflow
-- See module page for details.
+- Define task and biological decision context.
+- Construct feature set with rationale and preprocessing log.
+- Choose split strategy that blocks leakage pathways.
+- Train baseline + candidate models and compare error profiles.
+- Report metrics, limitations, and deployment constraints.
 
 ---
 
@@ -69,7 +73,7 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ---
 
 ## Studio Activity
-
+**Scenario:** You need to classify neurite fragments into coarse categories for downstream proofreading prioritization.
 
 ---
 

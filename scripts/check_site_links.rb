@@ -29,7 +29,7 @@ def candidate_paths(site_root, path)
 end
 
 html_files.each do |file|
-  content = File.read(file)
+  content = File.read(file, encoding: 'UTF-8')
   links = content.scan(/(?:href|src)=["']([^"']+)["']/i).flatten
   links.each do |href|
     next if href.start_with?('http://', 'https://', 'mailto:', 'tel:', 'javascript:', 'data:')

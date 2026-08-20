@@ -47,7 +47,11 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Core Workflow
-- See module page for details.
+- Define analysis question and required data granularity.
+- Select storage/index strategy aligned to access pattern.
+- Prototype baseline query and profile bottlenecks.
+- Add provenance logging and version controls.
+- Validate reproducibility and publish query package.
 
 ---
 
@@ -69,7 +73,7 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Studio Activity
-
+**Scenario:** Your team must deliver a weekly motif-analysis report from a multi-terabyte connectomics store.
 
 ---
 

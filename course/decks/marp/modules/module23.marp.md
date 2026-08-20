@@ -47,7 +47,11 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 ---
 
 ## Core Workflow
-- See module page for details.
+- Distill project into one claim hierarchy.
+- Draft 250-word abstract and remove unsupported claims.
+- Build poster wireframe around three key evidence panels.
+- Rehearse 90-second and 3-minute versions.
+- Run critique for clarity, limitations, and professional interaction plan.
 
 ---
 
@@ -69,7 +73,7 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 ---
 
 ## Studio Activity
-
+**Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members.
 
 ---
 

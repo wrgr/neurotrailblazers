@@ -50,13 +50,13 @@ def requires_track_metadata?(path)
 end
 
 def extract_frontmatter(path)
-  text = path.read
+  text = path.read(encoding: 'UTF-8')
   return nil unless text.start_with?("---")
 
   parts = text.split(/^---\s*$\n?/)
   # parts: ["", "yaml", "content..."] or similar
   yaml = parts[1]
-  YAML.safe_load(yaml, [Date]) || {}
+  YAML.safe_load(yaml, permitted_classes: [Date], aliases: true) || {}
 rescue Psych::SyntaxError => e
   warn "[YAML ERROR] #{path}: #{e.message}"
   nil

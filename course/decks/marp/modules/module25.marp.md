@@ -47,7 +47,11 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 ---
 
 ## Core Workflow
-- See module page for details.
+- Define competency claims and evidence needed.
+- Select artifacts and write one evidence caption per artifact.
+- Add reflection notes on decisions, errors, and revisions.
+- Run peer/mentor review with rubric-aligned feedback.
+- Revise and publish final portfolio package.
 
 ---
 
@@ -69,7 +73,7 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 ---
 
 ## Studio Activity
-
+**Scenario:** You are preparing your final portfolio for a competitive research opportunity.
 
 ---
 

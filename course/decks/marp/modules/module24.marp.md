@@ -47,7 +47,11 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 ---
 
 ## Core Workflow
-- See module page for details.
+- Define target pathways (2-3 realistic options).
+- Create capability gap matrix (current evidence vs required evidence).
+- Build outreach plan (mentors, timelines, artifacts to share).
+- Draft application/interview narratives anchored in concrete work.
+- Review and iterate with mentor/peer feedback.
 
 ---
 
@@ -69,7 +73,7 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 ---
 
 ## Studio Activity
-
+**Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics.
 
 ---
 

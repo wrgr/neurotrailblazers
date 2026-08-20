@@ -39,24 +39,49 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ---
 
 ## Concept Focus
-
+### 1) Synaptic organization as circuit logic
+Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
+- **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
+- **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
+- **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
+- **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.
 
 ---
 
 ## Core Workflow
-- Identify synapse candidates and context.
-- Build local connectivity motif representation.
-- Evaluate against null or baseline expectation.
-- State supported claim + caveat.
+- Identify synapse candidates: find synapses in the region of interest with correct pre/post assignment.
+- Build local connectivity motif: extract the subgraph connecting the pre and post neurons and their immediate neighbors.
+- Classify the motif: reciprocal pair, feed-forward loop, feedback inhibition, convergent input, etc.
+- Evaluate against null: is this motif more common than expected?
+- State supported claim (what the data shows) + caveat (what it doesn't prove and what could confound it).
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-10: synapse cue recap.
-- 10:00-24: motif construction examples.
-- 24:00-38: learner motif analysis.
-- 38:00-50: alternative explanation challenge.
-- 50:00-60: competency check.
+- Review the synapse classification content library entry (Gray Type I/II)
+- Review the motif analysis content library entry (key motif types section)
+- **00:00-10:00 | Synapse cue recap**
+- Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.
+- Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
+- **10:00-24:00 | Motif construction examples**
+- Walk through 3 motifs in the MICrONS dataset:
+- Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
+- Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
+- Feedback inhibition: pyramidal → basket cell → same pyramidal
+- For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
+- **24:00-38:00 | Learner motif analysis**
+- Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
+- Count each motif type. Which are most common?
+- Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
+- **38:00-50:00 | Alternative explanation challenge**
+- For each enriched motif, learners must propose one alternative (non-functional) explanation:
+- "Reciprocal connections are enriched because nearby neurons are more likely to connect" (spatial proximity)
+- "Feed-forward loops are enriched because of cell-type structure" (E→I and I→E are common)
+- Group discussion: how would you test whether the spatial explanation is sufficient?
+- **50:00-60:00 | Competency check**
+- Each learner writes a motif claim/caveat pair:
+- "In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment."
+- Exit ticket: "One motif claim and one plausible confound."
 
 ---
 
@@ -66,7 +91,7 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ---
 
 ## Studio Activity
-Analyze one local motif and produce a claim/caveat pair.
+**Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 ---
 
@@ -78,9 +103,9 @@ Analyze one local motif and produce a claim/caveat pair.
 ---
 
 ## Assessment Rubric
-- Minimum: clear motif description and evidence-backed claim.
-- Strong: thoughtful alternative hypothesis and uncertainty framing.
-- Failure: motif claim without error-awareness.
+- **Minimum pass**: Clear motif description and evidence-backed claim for at least one motif.
+- **Strong performance**: Thoughtful alternative hypotheses for each enriched motif. Multiple null models considered. Sensitivity to reconstruction quality discussed.
+- **Common failure to flag**: Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
 
 ---
 

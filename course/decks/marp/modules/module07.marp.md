@@ -39,24 +39,51 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 ---
 
 ## Concept Focus
-
+### 1) Impact-weighted triage
+Not all errors are worth fixing. A merge error on a large interneuron with 500 synapses is far more impactful than a split error on a tiny axon fragment with 2 synapses. Impact factors include: (a) size of the affected segment (larger = more connections affected), (b) position in the analysis region of interest, (c) error type (merges corrupt the graph more directly than splits), (d) confidence of the error detection (is it definitely wrong or ambiguous?).
 
 ---
 
 ## Core Workflow
-- Classify errors by type and impact.
-- Prioritize correction queue.
-- Apply and verify fixes.
-- Record QC decision with thresholds.
+- **Classify** errors by type (merge/split/boundary) and estimated impact (high/medium/low). Use the error taxonomy from the content library as a reference checklist.
+- **Prioritize** correction queue: high-impact merges first, then splits in the region of interest, then boundary errors. Defer or discard low-impact errors outside the analysis region.
+- **Apply** corrections using Neuroglancer/CAVE split and merge operations. For each correction, note the supervoxel IDs involved and the evidence that motivated the edit.
+- **Verify** each correction: check that the fix didn't introduce new errors. Splitting a merge sometimes creates an orphan fragment that needs re-merging elsewhere. Merging a split sometimes absorbs a nearby fragment that shouldn't be included. Always inspect the result in at least two orthogonal views.
+- **Record** QC decision: compute metrics, compare to release thresholds, issue go/rework recommendation. If the recommendation is "rework," specify which error categories need further attention and estimate the additional effort required.
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-10: triage philosophy.
-- 10:00-24: queue classification.
-- 24:00-38: correction sprint.
-- 38:00-50: threshold-based release decisions.
-- 50:00-60: competency check.
+- Read the proofreading strategies content library entry
+- Review the worked examples content library entry (at least Scenario 1 and 4)
+- **00:00-10:00 | Triage philosophy**
+- Open with: "You have 100 errors flagged in your volume and time to fix 20. Which 20 do you choose?"
+- Discuss: visual salience does not equal scientific importance. The ugliest error (a weird tentacle from a merge) may be less important than a subtle split in a key neuron.
+- Introduce impact-weighting framework.
+- Show a concrete example: two errors side by side, one visually dramatic but low-impact, one subtle but high-impact. Ask learners which they would fix first and why.
+- **10:00-24:00 | Queue classification exercise**
+- Present 12 pre-identified errors with brief descriptions. Learners work in pairs to:
+- Classify each by type (merge/split/boundary)
+- Estimate impact (high/medium/low) based on segment size and analysis relevance
+- Rank the top 5 for correction
+- Debrief: compare rankings across pairs. Where do teams disagree? Disagreements often reveal implicit assumptions about what matters.
+- **24:00-38:00 | Correction sprint**
+- Learners fix their top 5 errors in the practice dataset.
+- Instructor circulates: "Show me why you think this is a merge error." "What evidence did you check before splitting?"
+- Emphasis on verification after each correction.
+- Common pitfall to watch for: learners who split a merge but forget to re-merge the orphaned fragment with the correct parent segment.
+- **38:00-50:00 | Threshold-based release decisions**
+- Compute metrics before and after the correction sprint.
+- Introduce release thresholds: "If ERL > 30 um and synapse F1 > 0.80, we release. If not, more proofreading."
+- Group discussion: are we above threshold? If not, what would we fix next?
+- Key teaching moment: the threshold should be set before proofreading begins, not adjusted after seeing the results. Moving the goalposts undermines the purpose of having thresholds.
+- **50:00-60:00 | Competency check**
+- Each learner writes a 4-sentence "release recommendation memo":
+- Current quality metrics
+- What was fixed
+- What remains unfixed and why
+- Go/no-go recommendation
+- Exit ticket: "One rule for when an error MUST be fixed before release."
 
 ---
 
@@ -66,7 +93,7 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 ---
 
 ## Studio Activity
-Produce a prioritized correction queue and one release recommendation memo.
+**Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
 
 ---
 
@@ -78,14 +105,14 @@ Produce a prioritized correction queue and one release recommendation memo.
 ---
 
 ## Assessment Rubric
-- Minimum: consistent queueing and justified release call.
-- Strong: strong impact reasoning and uncertainty handling.
-- Failure: ad hoc corrections without policy.
+- **Minimum pass**: Consistent queueing by type and impact. Release decision justified by metrics. Correction log present.
+- **Strong performance**: Impact reasoning explicitly tied to the scientific question (reciprocal connectivity). Uncertainty handling is transparent -- learner acknowledges what they could not determine and explains how that uncertainty affects the release decision. Memo is clear and actionable.
+- **Common failure to flag**: Ad hoc corrections without policy -- fixing whatever looks wrong rather than systematically prioritizing by impact. Another common failure is issuing a release recommendation without referencing specific metric values.
 
 ---
 
 ## Exit Ticket
-Write one rule for when an error must be fixed before release.
+Write one rule for when an error must be fixed before release. Your rule should specify: (1) the type of error, (2) the condition under which it is mandatory to fix, and (3) why that condition matters for downstream analysis. Example format: "A [type] error must be fixed before release when [condition], because [scientific reasoning]."
 
 ---
 

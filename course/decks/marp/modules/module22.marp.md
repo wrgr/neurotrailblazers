@@ -47,7 +47,11 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 ---
 
 ## Core Workflow
-- See module page for details.
+- Build claim tree (question -> claim -> evidence -> caveat).
+- Select minimal slide set that preserves inferential logic.
+- Rehearse with timed transitions and anticipated critiques.
+- Run peer critique focused on overclaiming and ambiguity.
+- Revise with explicit uncertainty statements.
 
 ---
 
@@ -75,7 +79,7 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 ---
 
 ## Studio Activity
-
+**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees).
 
 ---
 

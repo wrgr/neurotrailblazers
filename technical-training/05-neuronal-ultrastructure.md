@@ -301,7 +301,7 @@ Work these panels with the organelle table in §1 open, and name the cue family 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png' | relative_url }}" alt="Ultrastructure training visual: dendritic context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S08:</strong> Dendritic ultrastructure. Look for the organelle evidence that separates a shaft from a passing axon — polyribosome rosettes, loose microtubule arrays, smooth ER — and note which of those a weakly stained region would take away from you first.</p>
+    <p class="card-description"><strong>RIV-ULTRA S08:</strong> A somatic region — nuclear envelope with heterochromatin above, one long mitochondrion below. Use it to anchor the soma end of the compartment table in §1: rough ER and a nucleus put you in a cell body, and that is the one place where the ribosome cue is unambiguous rather than a judgement call.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Ultrastructure training visual: synapse cues" style="width:100%; border-radius:8px;">
@@ -317,15 +317,11 @@ Work these panels with the organelle table in §1 open, and name the cue family 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png' | relative_url }}" alt="Ultrastructure training visual: ambiguity case" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S20:</strong> An ambiguity case. Work out what evidence is missing rather than arguing from what is present, then assign a tier from §3. “Uncertain, deciding cue not resolvable in these sections” is a valid output and it is what populates the review queue.</p>
+    <p class="card-description"><strong>RIV-ULTRA S20:</strong> A two-panel reference — an EM micrograph with a 1&nbsp;µm scale bar beside a labelled schematic naming presynaptic terminal, presynaptic and postsynaptic membranes, cleft, vesicles, and the postsynaptic dendrite. Read the schematic first, then find each labelled part in the micrograph beside it. That translation — idealised diagram to real noisy tissue — is the step §2's three criteria have to survive.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png' | relative_url }}" alt="Ultrastructure training visual: advanced structural example" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example — geometry, organelle content, synaptic role, neighbourhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
-  </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S30-01.png' | relative_url }}" alt="Ultrastructure training visual: synthesis panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S30:</strong> A synthesis check. Before signing any call, state separately what the evidence licenses and what it does not: asymmetric morphology licenses “putatively excitatory” and never “excitatory”, and nothing visible in a still licenses a statement about synaptic strength.</p>
   </article>
 </div>
 

@@ -65,7 +65,6 @@ Technical Training: Nanoscale Connectomics
 ---
 
 ## High-complexity edge case
-![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S22-01.png)
 - Escalate unresolved ambiguity to adjudication queue.
 
 ---

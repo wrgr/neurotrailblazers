@@ -219,14 +219,6 @@ Work these against the identification protocol in §3, naming the step that deci
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png' | relative_url }}" alt="Glia training visual: microglia context" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>RIV-GLIA S09:</strong> Microglia cues. Look for the pairing that carries the call — a dark, often elongated or bean-shaped nucleus with heterochromatin clumped against the envelope, plus lysosomal and phagosomal content in dense cytoplasm. Microglia are the least stereotyped of the three classes because morphology tracks activation state, so weight nuclear evidence above process shape.</p>
   </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S15-01.png' | relative_url }}" alt="Glia training visual: oligodendrocyte reconstruction" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S15:</strong> Oligodendrocyte identification. Where a nucleus is in view it is the cue that works even at low magnification: small, round, and the densest in the field. If it reads as oligodendrocyte but the nucleus is not dark enough, OPC is the leading hypothesis and the correct action is to flag rather than force the call.</p>
-  </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png' | relative_url }}" alt="Glia training visual: myelin-related glia context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S16:</strong> Myelin context. Check where oligodendrocyte cytoplasm sits relative to the sheath — inner and outer tongues and paranodal loops are glial, and absorbing them into the axon is a merge waiting to happen. Myelin also settles a Unit 06 question for free: dendrites are never myelinated.</p>
-  </article>
 </div>
 
 <p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two manifest-listed IDs (`S02`, `S07`) were not present in extracted thumbnails and are pending recovery.</small></p>

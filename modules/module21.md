@@ -142,6 +142,7 @@ A practical reproducibility checklist for any connectomics analysis release shou
 - **At 50 minutes:** limitations paragraphs name specific failure modes rather than generic hedges.
 
 ## Studio activity: reproducibility hardening sprint
+{: #studio-activity}
 **Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
 
 **Tasks**

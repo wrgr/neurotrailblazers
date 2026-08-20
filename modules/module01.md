@@ -141,6 +141,7 @@ Motivation drives persistence, but technical progress requires disciplined quest
 - **Instructor script:** "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
 
 ## Studio activity: "Write your connectomics motivation statement"
+{: #studio-activity}
 
 ### Overview
 Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement.

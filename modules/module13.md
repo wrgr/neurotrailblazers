@@ -179,6 +179,7 @@ You have 4,000 labeled neurite fragments in five coarse classes and train a grad
    Each learner names the leakage channel they consider most likely still present in their own work.
 
 ## Studio activity: leakage-resistant ML mini-pipeline
+{: #studio-activity}
 **Scenario:** You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.
 
 **Tasks**

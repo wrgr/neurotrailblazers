@@ -39,8 +39,7 @@ key_questions:
   - "What thresholds justify release versus rework?"
 slides:
   - "/assets/slides/module07/module07-proofreading-and-quality-control.pdf"
-notebook:
-  - "/assets/notebooks/module07/module07-proofreading-and-quality-control.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
 personas:
@@ -162,6 +161,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "One rule for when an error MUST be fixed before release."
 
 ## Studio activity: release decision simulation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
 

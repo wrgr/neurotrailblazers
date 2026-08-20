@@ -174,6 +174,7 @@ The follow-up, sent within three days:
 Note the moves: it names when and where so she can place him, restates her own question so she recognizes it, sends something concrete rather than asking for something, and offers future contact without demanding a reply. It does not ask for a position; asking now would convert a professional contact into an awkward one.
 
 ## Studio activity: conference simulation lab
+{: #studio-activity}
 **Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members. Two of the people who stop are specialists who will ask about segmentation quality; one is a program director who will ask what it means; one is a peer at your own stage who wants your code.
 
 **Tasks**

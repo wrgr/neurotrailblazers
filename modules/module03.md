@@ -162,6 +162,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 - Exit ticket: (1) link to submitted notebook; (2) one sentence describing the most useful library you learned today and why.
 
 ## Studio activity: "Build a connectomics analysis notebook"
+{: #studio-activity}
 
 ### Overview
 Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results.

@@ -148,6 +148,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "One motif claim and one plausible confound."
 
 ## Studio activity: motif discovery and interpretation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 

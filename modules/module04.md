@@ -146,6 +146,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "Name one anatomical cue that changed your interpretation today."
 
 ## Studio activity
+{: #studio-activity}
 
 ### Anatomy-in-context annotation exercise (60-75 minutes)
 

@@ -150,6 +150,7 @@ The numbers below are illustrative — they show how the gates behave, not measu
 6. **56:00-60:00** competency check: each learner states one output class they would refuse to gate, and why.
 
 ## Studio activity
+{: #studio-activity}
 **Scenario:** Build an LLM-assisted triage helper for proofreading queues. Reviewers can inspect about 500 segments per week; the current heuristic ranks candidates by segment size and produces roughly 40% true errors in the top 500. Your team wants to know whether an LLM-assisted ranker, drawing on segment statistics and free-text QC notes, should replace it. You have a labeled holdout of 300 segments and one expert available for four hours.
 
 **Tasks**

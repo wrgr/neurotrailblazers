@@ -188,6 +188,7 @@ The repaired opener runs about 35 seconds. The effect is still described as enri
 That answer classifies the question as a methods challenge, concedes the mechanism, offers two independent pieces of counter-evidence, states what was not done, and ends on a specific test. It runs about forty seconds, and it leaves her better off than silence: the room now knows she understands her own failure mode.
 
 ## Studio activity: mini-talk and critique loop
+{: #studio-activity}
 **Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise: in a cortical EM volume, layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
 
 **Tasks**

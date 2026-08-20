@@ -32,7 +32,6 @@ Reliability and lineage are first-class scientific requirements.
 ---
 
 ## Visual context: pipeline overview
-![w:940](../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S02-01.png)
 - Prompt: where would you place mandatory quality gates?
 
 ---

@@ -141,6 +141,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "Write one claim and one explicit non-claim from the same test outcome."
 
 ## Studio activity: hypothesis design and peer critique (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** Your lab is planning a study of feedforward vs feedback connectivity in mouse visual cortex using the MICrONS dataset. You need to design three testable hypotheses about the circuit architecture.
 

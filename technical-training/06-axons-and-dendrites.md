@@ -278,14 +278,6 @@ Use these with the protocol in §3 in hand, and force yourself to name the step 
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png' | relative_url }}" alt="Axon/dendrite training visual: edge-case morphology" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case. Before applying “PSD implies dendrite”, check the exception list in §2 — an axon initial segment receiving chandelier input is postsynaptic and still an axon. The tell is membrane undercoating plus fasciculated microtubules within roughly 20–60 µm of a soma.</p>
   </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S22-01.png' | relative_url }}" alt="Axon/dendrite training visual: high-complexity cue" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S22:</strong> A high-complexity case. Watch for cue conflict and read it as a segmentation alarm rather than a hard classification: ribosomes and a presynaptic vesicle cluster in one cortical process means the leading hypothesis is “this is not one object”, not “one cue is wrong”.</p>
-  </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S23-01.png' | relative_url }}" alt="Axon/dendrite training visual: late-stage synthesis example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S23:</strong> A final class assignment. Record a confidence alongside the call, because the arithmetic in §4 depends on it — a direction error removes a true edge and adds its reverse, doubling the effect on any direction-sensitive statistic. Re-running the headline result on high-confidence edges only is the mitigation that works.</p>
-  </article>
 </div>
 
 <p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Some manifest-listed IDs used in planning (`S04`, `S06`, `S10`, `S16`) were not present in extracted thumbnails and were replaced with available neighboring cues.</small></p>

@@ -180,6 +180,7 @@ The fourth line is the one most people delete, and it is the strongest line in t
 **The revision, logged.** Maya reorders the caption and adds one sentence to the reflection note. Her revision log entry reads: `2026-03-04 — reordered caption lines after peer review (S. Adeyemi): limitation ahead of verification, so the method change is read before the numbers. Kept rows 1-80; removing them would have hidden the change that is the point of the artifact.` The log entry names the reviewer, the change, and the reasoning for the change that was not made. That last part is what a reviewer reads as judgment rather than compliance.
 
 ## Studio activity: capstone evidence review board
+{: #studio-activity}
 **Scenario:** You are preparing your final portfolio for a competitive research opportunity. Assume the reviewer spends two minutes on the first pass and opens exactly one artifact.
 
 **Tasks**

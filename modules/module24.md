@@ -183,6 +183,7 @@ On the call, and afterwards with two of her current group members, he uses a fix
 Julian's follow-up, sent the same day, is two sentences: thanks, and the specific thing he will do next. He now has a contact he initiated himself, one that does not route through his supervisor. That is the difference this module exists to produce.
 
 ## Studio activity: application strategy lab
+{: #studio-activity}
 **Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics. Use real targets, real names, and real deadlines; generic targets produce generic plans.
 
 **Tasks**

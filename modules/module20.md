@@ -40,8 +40,7 @@ key_questions:
   - "How should multiplicity be handled across motif families?"
   - "What claims are robust versus exploratory?"
 slides: []
-notebook:
-  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
   - "/datasets/mouseconnects"
@@ -142,6 +141,7 @@ Researcher degrees of freedom in null model selection further compound these iss
 - **At 50 minutes:** learners distinguish an exploratory finding from a confirmatory one in their own write-up.
 
 ## Studio activity: motif inference challenge
+{: #studio-activity}
 **Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
 
 **Tasks**

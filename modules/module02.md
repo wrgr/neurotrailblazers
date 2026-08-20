@@ -150,6 +150,7 @@ Every research environment operates on two sets of rules: the official ones (wri
 - **Instructor script:** "Keep this playbook accessible. Revise it as you learn more about your research environment."
 
 ## Studio activity: "Build your lab navigation playbook"
+{: #studio-activity}
 
 ### Overview
 Learners produce a one-page research navigation document that serves as a practical reference throughout the program.

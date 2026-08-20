@@ -136,6 +136,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
 
 ## Studio activity: graph analysis report (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 

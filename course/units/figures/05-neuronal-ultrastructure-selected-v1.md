@@ -8,7 +8,6 @@
 - `FIG-RIV-ULTRA-S14-01` (comparative ultrastructure)
 - `FIG-RIV-ULTRA-S20-01` (boundary/interpretation case)
 - `FIG-RIV-ULTRA-S24-01` (advanced structural example)
-- `FIG-RIV-ULTRA-S30-01` (late-stage synthesis visual)
 
 ## Use guidance
 - Preserve this as the canonical morphology-reference set.

@@ -12,7 +12,6 @@
 ## Slide production blocks
 1. Title and systems framing
 - Key message: connectome reconstruction is a full-stack engineering problem.
-- Figure: `FIG-SRC-MODULE14_LESSON1-S02-01`
 
 2. High-level architecture
 - Key message: ingest, transform, inference, and serving layers must be explicit.

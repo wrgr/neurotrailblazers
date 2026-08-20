@@ -289,10 +289,6 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
     <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case at high risk of a wrong correction. Estimate cost to fix before committing: a forty-minute trace through a difficult region loses to five five-minute corrections elsewhere, unless the cell is in your analysis set and the error sits near the root of the arbor.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S22-01.png' | relative_url }}" alt="Segmentation proofreading visual: advanced morphology cue set" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S22:</strong> A difficult boundary call. These are where the pipeline’s structural failures live — thin spine necks, steep z-trajectories, tightly apposed membranes, artifact regions. Naming the failure class tells you which error to expect, and splits are repairable in a way merges are not.</p>
-  </article>
-  <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png' | relative_url }}" alt="Segmentation proofreading visual: method overview context" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Module14 L2 S03:</strong> A method overview with QC in the loop. Ask where the measurement points are: a pipeline without a fixed evaluation set of neurons can only report aggregate scores, and aggregate scores are how a merge regression ships behind an improved total VI.</p>
   </article>

@@ -146,6 +146,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "Name one morphology feature that could be confounded by reconstruction quality."
 
 ## Studio activity: comparative morphometry (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 

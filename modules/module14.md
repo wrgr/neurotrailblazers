@@ -170,6 +170,7 @@ You are choosing between an incumbent model A and a candidate model B for a prod
 6. **56:00-60:00** competency check: each learner states their release gate as a sentence that could fail.
 
 ## Studio activity
+{: #studio-activity}
 **Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
 
 **Tasks**

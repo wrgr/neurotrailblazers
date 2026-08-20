@@ -125,6 +125,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Exit ticket: "Name the error type you found hardest to detect and why."
 
 ## Studio activity: correction triage simulation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
 

@@ -40,9 +40,7 @@ key_questions:
   - "How do we preserve provenance at scale?"
 slides:
   - "/assets/slides/module12/module12-big-data-in-connectomics.pdf"
-notebook:
-  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
-  - "/notebooks/intro/DashSynapseExplorer.ipynb"
+notebook: []
 datasets:
   - "/datasets/mouseconnects"
   - "/datasets/workflow"
@@ -67,8 +65,7 @@ references:
   - "MICrONS data platform documentation."
   - "Januszewski et al. (2018) for scalable reconstruction context."
 videos: []
-downloads:
-  - "/notebooks/intro/DashSynapseExplorer.ipynb"
+downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
 ---
@@ -197,6 +194,7 @@ Use these as starting positions and justify any departure.
    Each learner names the single query that will dominate their own project's cost, and the mitigation they will try first.
 
 ## Studio activity: petascale query design lab
+{: #studio-activity}
 **Scenario:** Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week's run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.
 
 **Tasks**
@@ -280,7 +278,6 @@ To ground the abstract concepts, here are the data scales learners will encounte
 ## Teaching resources
 - Workflow context: [Connectomics Workflow]({{ '/datasets/workflow' | relative_url }})
 - Dataset context: [MouseConnects]({{ '/datasets/mouseconnects' | relative_url }})
-- Notebook: [Dash Synapse Explorer]({{ '/notebooks/intro/DashSynapseExplorer.ipynb' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
 ## References

@@ -1,121 +1,905 @@
+# Connectomics Dictionary
+# Fields: term, category, definition, typical (representative values),
+#         matters (why it matters in practice), confuse (commonly confused with),
+#         units (technical-training units where the term is used)
 terms:
-  - term: Connectome
-    category: Core
-    definition: A map of neural connections within a defined nervous system, region, or volume.
-  - term: Connectomics
-    category: Core
-    definition: The study and reconstruction of neural connectivity at multiple scales.
-  - term: Synapse
-    category: Core
-    definition: A specialized junction where one neuron communicates with another cell.
-  - term: Neurite
-    category: Morphology
-    definition: A generic projection from a neuron, often before classifying as axon or dendrite.
-  - term: Dendrite
-    category: Morphology
-    definition: A neuronal process that typically receives synaptic input and integrates signals.
-  - term: Axon
-    category: Morphology
-    definition: A neuronal process that typically transmits output signals to downstream targets.
-  - term: Bouton
-    category: Morphology
-    definition: An axonal swelling commonly associated with presynaptic release sites.
-  - term: Dendritic spine
-    category: Morphology
-    definition: A small protrusion from a dendrite that often contains excitatory postsynaptic sites.
-  - term: Soma
-    category: Morphology
-    definition: The cell body of a neuron containing the nucleus and major organelles.
-  - term: Ultrastructure
-    category: Morphology
-    definition: Fine structural detail visible at electron-microscopy resolution.
-  - term: Astrocyte
-    category: Glia
-    definition: A glial cell type involved in metabolic support, signaling context, and structural organization.
-  - term: Microglia
-    category: Glia
-    definition: Immune-associated glial cells that monitor and respond to tissue state.
-  - term: Oligodendrocyte
-    category: Glia
-    definition: A glial cell that forms myelin around axons in the central nervous system.
-  - term: Myelin
-    category: Glia
-    definition: Insulating membrane wrapping around axons that supports rapid signal conduction.
-  - term: Voxel
-    category: Imaging
-    definition: A three-dimensional pixel representing volume intensity at a given resolution.
-  - term: Anisotropy
-    category: Imaging
-    definition: Unequal resolution across axes in volumetric imaging data.
-  - term: Serial section EM
-    category: Imaging
-    definition: Electron microscopy workflow using consecutive tissue sections for 3D reconstruction.
-  - term: SBF-SEM
-    category: Imaging
-    definition: Serial block-face scanning electron microscopy for repeated imaging and sectioning in one system.
-  - term: FIB-SEM
-    category: Imaging
-    definition: Focused ion beam scanning EM providing high-resolution volumetric imaging.
-  - term: Segmentation
-    category: Reconstruction
-    definition: Partitioning image data into labeled objects such as cells, neurites, or organelles.
-  - term: Proofreading
-    category: Reconstruction
-    definition: Human review and correction of automated segmentations.
-  - term: Merge error
-    category: Reconstruction
-    definition: A segmentation failure where two distinct structures are fused into one label.
-  - term: Split error
-    category: Reconstruction
-    definition: A segmentation failure where one structure is fragmented into multiple labels.
-  - term: Skeletonization
-    category: Reconstruction
-    definition: Reduction of a segmented structure to a simplified centerline graph representation.
-  - term: Registration
-    category: Reconstruction
-    definition: Alignment of images or volumes into a common coordinate frame.
-  - term: Stitching
-    category: Reconstruction
-    definition: Combining overlapping image tiles into a coherent larger image volume.
-  - term: Null model
-    category: Analysis
-    definition: A control model used to test whether observed network patterns exceed chance expectations.
-  - term: Motif
-    category: Analysis
-    definition: A small recurring connectivity pattern within a larger network graph.
-  - term: Subgraph isomorphism
-    category: Analysis
-    definition: The problem of finding occurrences of a query graph inside a larger graph.
-  - term: Graph database
-    category: Analysis
-    definition: A database optimized for storing and querying graph-structured data.
-  - term: Cypher
-    category: Analysis
-    definition: A declarative graph query language commonly used with property graph systems.
-  - term: DotMotif
-    category: Analysis
-    definition: A motif query language/framework for expressively defining connectome motifs.
-  - term: GrandIso
-    category: Analysis
-    definition: A subgraph isomorphism implementation used for efficient motif search workflows.
-  - term: Precision
-    category: Metrics
-    definition: Fraction of predicted positives that are correct.
-  - term: Recall
-    category: Metrics
-    definition: Fraction of true positives recovered by a method.
-  - term: F1 score
-    category: Metrics
-    definition: Harmonic mean of precision and recall.
-  - term: ERL (Expected Run Length)
-    category: Metrics
-    definition: A continuity-oriented metric estimating traceable path length before error.
-  - term: VI (Variation of Information)
-    category: Metrics
-    definition: Information-theoretic distance between two segmentations.
-  - term: Provenance
-    category: Infrastructure
-    definition: Record of data origin, processing history, and version lineage.
-  - term: Multiresolution pyramid
-    category: Infrastructure
-    definition: Hierarchical data representation at multiple scales for fast access and visualization.
+- term: Connectome
+  category: Core
+  definition: A map of neural connections within a defined nervous system, region, or volume, at a stated
+    resolution and completeness.
+  matters: The word alone says nothing about scale or reliability. A 'connectome' may mean 302 fully verified
+    neurons or a partially proofread cubic millimetre. Always state region, resolution, and proofreading
+    level alongside the term.
+  confuse: Connectivity matrix (a representation) vs connectome (the mapped object).
+  units:
+  - '01'
+- term: Connectomics
+  category: Core
+  definition: The study and reconstruction of neural connectivity, spanning acquisition, reconstruction,
+    proofreading, and analysis.
+  units:
+  - '01'
+- term: Nanoscale connectomics
+  category: Core
+  definition: Connectomics at synapse resolution, requiring electron microscopy or comparable methods,
+    as distinct from mesoscale projection mapping or macroscale tractography.
+  matters: The qualifier is what commits you to EM-scale cost. Dropping it in a proposal invites reviewers
+    to assume a cheaper method would do.
+  units:
+  - '01'
+  - '02'
+- term: Structure-function inference
+  category: Core
+  definition: Reasoning from anatomical connectivity to the computations a circuit might perform.
+  matters: Structure constrains the space of possible dynamics; it does not determine them. Every such
+    inference should name its extra assumptions.
+  confuse: Constraint (defensible) vs simulation (not supported by anatomy alone).
+  units:
+  - '01'
+  - 09
+- term: Dense reconstruction
+  category: Core
+  definition: Reconstruction of every object within a volume, rather than a selected subset.
+  typical: Kasthuri et al. 2015 reconstructed ~1,500 cubic micrometres densely.
+  confuse: Sparse reconstruction traces selected neurons and leaves the rest unsegmented; it is far cheaper
+    and answers different questions.
+  units:
+  - '01'
+  - 08
+- term: Saturated reconstruction
+  category: Core
+  definition: Dense reconstruction carried to the point where every object in the volume is accounted
+    for, including glia and vasculature.
+  units:
+  - '01'
+- term: Completeness
+  category: Core
+  definition: The fraction of a neuron, or of a volume, that has actually been reconstructed.
+  matters: Differential completeness between two populations masquerades as biological difference. Match
+    completeness before comparing.
+  units:
+  - '01'
+  - 08
+- term: Neurite
+  category: Morphology
+  definition: A generic neuronal process, used when the axon/dendrite distinction has not yet been made.
+  matters: Useful precisely because it is non-committal. Prefer it to a guess.
+  units:
+  - '05'
+  - '06'
+- term: Dendrite
+  category: Morphology
+  definition: A neuronal process that typically receives synaptic input; contains ribosomes, tapers with
+    distance from the soma, and may bear spines.
+  typical: Shaft diameter 0.5-3 um in cortex.
+  confuse: 'Thin distal dendrites vs axons: use ribosomes, taper, and spines rather than calibre.'
+  units:
+  - '05'
+  - '06'
+- term: Axon
+  category: Morphology
+  definition: A neuronal process that transmits output; contains vesicle-filled boutons, lacks ribosomes,
+    and maintains roughly constant calibre between boutons.
+  typical: Unmyelinated cortical axons 80-300 nm diameter.
+  units:
+  - '05'
+  - '06'
+- term: Axon initial segment (AIS)
+  category: Morphology
+  definition: The proximal axonal segment where action potentials initiate, identified in EM by a dense
+    granular undercoating beneath the membrane and by fasciculated microtubules.
+  typical: Roughly 20-60 um long, beginning at the soma or a proximal dendrite.
+  matters: 'A rare case where an axon is postsynaptic: chandelier cells synapse onto the AIS, so ''PSD
+    implies dendrite'' fails here.'
+  units:
+  - '05'
+  - '06'
+- term: Bouton
+  category: Morphology
+  definition: An axonal swelling containing a synaptic vesicle cluster and usually one or more presynaptic
+    release sites.
+  confuse: En passant boutons occur along an axon; terminal boutons at its end. Dendritic varicosities
+    are swellings without vesicle clusters.
+  units:
+  - '05'
+  - '06'
+- term: Dendritic spine
+  category: Morphology
+  definition: A protrusion from a dendrite bearing an excitatory postsynaptic site, comprising a head
+    and a narrow neck.
+  typical: Head 300-800 nm; neck 50-200 nm diameter.
+  matters: Spine necks are close to the resolution floor and are a leading cause of split errors.
+  units:
+  - '05'
+  - '06'
+  - 08
+- term: Spine apparatus
+  category: Morphology
+  definition: Stacked smooth endoplasmic reticulum laminae found within a minority of dendritic spines,
+    more common in large spines.
+  units:
+  - '05'
+- term: Soma
+  category: Morphology
+  definition: The neuronal cell body, containing the nucleus, Nissl substance (rough ER), and Golgi apparatus.
+  typical: Cortical neuron soma 10-25 um diameter.
+  units:
+  - '05'
+- term: Ultrastructure
+  category: Morphology
+  definition: Fine structural detail resolvable only at electron-microscopy resolution.
+  units:
+  - '05'
+- term: Synapse
+  category: Core
+  definition: A specialized junction for chemical or electrical communication between neurons.
+  matters: 'In EM, calling a chemical synapse requires all three of: a presynaptic vesicle cluster, a
+    cleft of uniform width, and a postsynaptic density - persisting across sections.'
+  confuse: Membrane apposition, adherens junctions, and tangentially cut membranes all mimic synapses;
+    none has a vesicle cluster.
+  units:
+  - '05'
+- term: Synaptic cleft
+  category: Morphology
+  definition: The extracellular gap between pre- and postsynaptic membranes at a chemical synapse.
+  typical: ~20-30 nm at asymmetric synapses; ~15-20 nm at symmetric ones.
+  units:
+  - '05'
+- term: Postsynaptic density (PSD)
+  category: Morphology
+  definition: The electron-dense protein assembly beneath the postsynaptic membrane.
+  typical: 30-50 nm thick, 200-800 nm wide.
+  matters: Its thickness relative to the presynaptic side is what distinguishes Gray type I from type
+    II.
+  units:
+  - '05'
+- term: Active zone
+  category: Morphology
+  definition: The presynaptic membrane specialization where synaptic vesicles dock and release neurotransmitter.
+  units:
+  - '05'
+- term: Synaptic vesicle
+  category: Morphology
+  definition: A small membrane-bound vesicle in the presynaptic terminal containing neurotransmitter.
+  typical: Clear round vesicles ~35-50 nm; dense-core vesicles 80-120 nm.
+  matters: A vesicle cluster at the apposition is the non-negotiable first criterion for calling a synapse.
+  units:
+  - '05'
+- term: Gray type I / asymmetric synapse
+  category: Morphology
+  definition: A synapse with a thick prominent PSD, wide cleft, and round clear vesicles; usually onto
+    spines.
+  matters: Usually inferred to be excitatory (glutamatergic). This is an inference from morphology, not
+    an observation - state it as 'putatively excitatory'.
+  units:
+  - '05'
+- term: Gray type II / symmetric synapse
+  category: Morphology
+  definition: A synapse with pre- and postsynaptic densities of comparable thickness, narrower cleft,
+    and pleomorphic vesicles; usually onto shafts, soma, or AIS.
+  matters: Usually inferred inhibitory (GABAergic), with the same caveat about inference.
+  units:
+  - '05'
+- term: Node of Ranvier
+  category: Morphology
+  definition: A gap in the myelin sheath along a myelinated axon, where the axolemma shows a dense undercoating.
+  units:
+  - '06'
+  - '07'
+- term: Paranode
+  category: Morphology
+  definition: The region flanking a node of Ranvier where myelin terminal loops form junctions with the
+    axon.
+  units:
+  - '07'
+- term: Microtubule
+  category: Morphology
+  definition: A cytoskeletal tubule, present in both axons and dendrites; fasciculated bundles are characteristic
+    of the AIS.
+  typical: ~25 nm outer diameter.
+  units:
+  - '05'
+  - '06'
+- term: Neurofilament
+  category: Morphology
+  definition: An intermediate filament abundant in axons, especially myelinated ones.
+  typical: ~10 nm diameter.
+  units:
+  - '05'
+  - '06'
+- term: Polyribosome
+  category: Morphology
+  definition: A cluster of ribosomes on mRNA, seen as a rosette in EM; present in somata and dendrites,
+    effectively absent from axons.
+  matters: The single most reliable axon/dendrite discriminator when visible. Absence, however, is weak
+    evidence in very thin processes.
+  units:
+  - '05'
+  - '06'
+- term: Glycogen granule
+  category: Morphology
+  definition: A small, very electron-dense particle found in clusters in astrocytes and not in neurons.
+  typical: 20-30 nm.
+  matters: Near-diagnostic for astrocyte when present; absence is weak evidence because granules are sparse
+    and clustered.
+  units:
+  - '07'
+- term: Astrocyte
+  category: Cell types
+  definition: A glial cell with pale cytoplasm, glycogen granules, GFAP intermediate filaments, sheet-like
+    space-filling processes, and endfeet on blood vessels.
+  matters: The most frequent partner in glia-neuron merge errors, because astrocytic processes interleave
+    with every neurite in the neuropil.
+  units:
+  - '07'
+- term: Oligodendrocyte
+  category: Cell types
+  definition: A glial cell that myelinates CNS axons; identified by an extremely electron-dense small
+    round nucleus and dense ribosome-rich cytoplasm.
+  typical: Each cell myelinates roughly 20-60 axonal segments.
+  units:
+  - '07'
+- term: Oligodendrocyte precursor cell (OPC / NG2 cell)
+  category: Cell types
+  definition: A glial progenitor with a paler nucleus than a mature oligodendrocyte; the hardest routine
+    glial identification.
+  matters: Do not use 'OPC' as a synonym for 'uncertain'; they are different annotations with different
+    follow-ups.
+  units:
+  - '07'
+- term: Microglia
+  category: Cell types
+  definition: The resident immune cell of the CNS; identified by a dark elongated nucleus with peripheral
+    heterochromatin, long narrow ER cisternae, and lysosomal inclusions.
+  matters: Morphology varies with activation state, making microglia the least stereotyped glial class.
+  units:
+  - '07'
+- term: Myelin
+  category: Cell types
+  definition: Concentric wraps of oligodendrocyte membrane insulating an axon.
+  matters: Presence of myelin identifies a process as axonal with high confidence.
+  units:
+  - '06'
+  - '07'
+- term: Perisynaptic astrocytic process (PAP)
+  category: Cell types
+  definition: A very thin astrocytic lamella wrapping a synapse, part of the tripartite synapse.
+  typical: Often under 100 nm thick - among the hardest structures in the volume to segment.
+  units:
+  - '07'
+- term: Cell type
+  category: Cell types
+  definition: A grouping of neurons defined by shared morphology, connectivity, molecular identity, or
+    physiology.
+  matters: Types defined by different criteria do not always agree. When connectivity-defined and transcriptomic
+    types disagree, that disagreement is a finding, not an error to be resolved by preference.
+  units:
+  - 09
+- term: Chandelier cell
+  category: Cell types
+  definition: A cortical interneuron that forms axo-axonic cartridge synapses onto the axon initial segments
+    of pyramidal cells.
+  matters: The canonical example of the polarity-rule exception in Unit 06.
+  units:
+  - '06'
+- term: Voxel
+  category: Imaging
+  definition: A three-dimensional sample of image intensity; the unit of volumetric data.
+  typical: Connectomics ssTEM commonly 4 x 4 x 40 nm.
+  units:
+  - '02'
+  - '03'
+- term: Anisotropy
+  category: Imaging
+  definition: Unequal resolution across axes, typical of serial-section EM where z resolution is coarser
+    than xy.
+  typical: 4 x 4 x 40 nm is 10x anisotropic in z.
+  matters: Anisotropy is the largest single driver of automated segmentation error, and it silently breaks
+    any isotropic distance, smoothing, or morphology operation.
+  units:
+  - '02'
+  - '03'
+  - 08
+- term: Isotropic
+  category: Imaging
+  definition: Equal resolution in all three axes, as produced by FIB-SEM.
+  typical: 4-8 nm isotropic.
+  units:
+  - '02'
+  - '03'
+- term: Serial section EM (ssEM / ssTEM / ssSEM)
+  category: Imaging
+  definition: Volume EM in which the block is cut into thin sections that are collected and then imaged.
+  matters: Sections survive imaging, so they can be re-imaged and imaged in parallel across instruments
+    - which is what makes petascale acquisition possible in finite time.
+  confuse: Block-face methods destroy the imaged material and cannot be re-imaged.
+  units:
+  - '03'
+- term: SBF-SEM / SBEM
+  category: Imaging
+  definition: 'Serial block-face scanning EM: image the block face, shave off a slice inside the chamber,
+    repeat.'
+  typical: 10-20 nm xy, 25-50 nm z.
+  matters: No section handling means no lost sections and better z-alignment, at the cost of destroying
+    the sample.
+  units:
+  - '03'
+- term: FIB-SEM
+  category: Imaging
+  definition: 'Focused ion beam SEM: an ion beam mills a few nanometres at a time, giving isotropic voxels.'
+  typical: 4-8 nm isotropic; volumes typically 10^5-10^6 cubic micrometres.
+  matters: The best tracing conditions available, limited by volume and speed.
+  units:
+  - '03'
+- term: Multibeam SEM
+  category: Imaging
+  definition: SEM using many electron beams in parallel to multiply throughput.
+  typical: 61 or 91 beams, aggregating on the order of a gigapixel per second.
+  matters: The throughput advance that moved cubic-millimetre volumes from impossible to feasible.
+  units:
+  - '03'
+- term: ATUM
+  category: Sample prep
+  definition: 'Automated tape-collecting ultramicrotome: sections are collected continuously onto tape
+    for later SEM imaging.'
+  units:
+  - '03'
+- term: GridTape
+  category: Sample prep
+  definition: A reinforced tape substrate with apertures allowing transmission-mode imaging of tape-collected
+    sections.
+  units:
+  - '03'
+- term: Landing energy
+  category: Imaging
+  definition: The energy at which electrons strike the sample in SEM.
+  typical: 1-2 keV for block-face connectomics.
+  matters: Higher energy gives more signal from deeper, at the cost of charging and beam damage.
+  units:
+  - '03'
+- term: Dwell time
+  category: Imaging
+  definition: The time the beam spends on each pixel.
+  typical: 0.1-2 microseconds.
+  matters: SNR grows roughly as the square root of dose, so doubling SNR costs roughly four times the
+    acquisition time.
+  units:
+  - '03'
+- term: Charging
+  category: Imaging
+  definition: Accumulation of electrons on a non-conductive surface, producing bright streaks and local
+    distortion.
+  matters: Raises the split rate. Mitigated by conductive staining, low landing energy, and charge compensation.
+  units:
+  - '03'
+- term: Curtaining
+  category: Imaging
+  definition: Vertical striping in FIB-SEM images caused by uneven milling rate.
+  units:
+  - '03'
+- term: Knife chatter
+  category: Imaging
+  definition: Periodic banding perpendicular to the cutting direction, from knife or block vibration.
+  matters: Adds false boundaries and raises the split rate; recoverable by proofreading.
+  units:
+  - '03'
+- term: Fold
+  category: Imaging
+  definition: A wrinkle in a collected section, producing a band of duplicated or compressed tissue.
+  matters: 'A data-loss artifact: the tissue in the fold cannot be recovered by any downstream effort.'
+  units:
+  - '03'
+- term: Lost section
+  category: Imaging
+  definition: A section destroyed or not collected, producing a z-gap in the volume.
+  matters: Distribution matters more than count. Four scattered losses are routine; four consecutive losses
+    cut the dataset in two for thin processes.
+  units:
+  - '03'
+- term: Contrast-to-noise ratio (CNR)
+  category: Imaging
+  definition: The contrast between a structure and its background, relative to noise.
+  matters: Membrane CNR, not overall image SNR, is the quantity that predicts merge errors. Measure it
+    specifically.
+  units:
+  - '03'
+- term: Fixation
+  category: Sample prep
+  definition: Chemical cross-linking, typically with glutaraldehyde and paraformaldehyde, that arrests
+    ultrastructure before autolysis.
+  matters: Slow or failed fixation shows as swollen astrocytic processes and enlarged extracellular space,
+    which distorts every geometric measurement.
+  units:
+  - '03'
+- term: rOTO
+  category: Sample prep
+  definition: 'Reduced osmium - thiocarbohydrazide - osmium: an amplified heavy-metal staining protocol.'
+  matters: Produces membrane contrast strong enough for fast low-dose imaging, and makes the block conductive
+    enough for block-face SEM.
+  units:
+  - '03'
+- term: En bloc staining
+  category: Sample prep
+  definition: Applying stain to the resin-embedded block rather than to cut sections.
+  matters: Required for block-face methods, where sections are never handled separately.
+  units:
+  - '03'
+- term: Shrinkage
+  category: Sample prep
+  definition: Tissue volume loss during dehydration and embedding.
+  typical: Roughly 5-20% linear, depending on protocol.
+  matters: Systematic, not random. Prefer ratios and within-volume comparisons over absolute lengths compared
+    across studies.
+  units:
+  - '03'
+- term: Ultramicrotome
+  category: Sample prep
+  definition: The instrument that cuts resin-embedded tissue into sections tens of nanometres thick using
+    a diamond knife.
+  typical: 30-50 nm sections for connectomics.
+  units:
+  - '03'
+- term: Segmentation
+  category: Reconstruction
+  definition: Assigning each voxel to an object, producing neuron and glia labels from image data.
+  units:
+  - '04'
+  - 08
+- term: Affinity map
+  category: Reconstruction
+  definition: A per-voxel prediction of whether neighbouring voxels belong to the same object.
+  matters: Intermediate product roughly the size of the raw data; usually deleted after supervoxel generation.
+  units:
+  - '04'
+  - 08
+- term: Supervoxel
+  category: Reconstruction
+  definition: A small, deliberately over-segmented fragment that serves as the immutable atom of the segmentation.
+  matters: Immutability is what makes concurrent proofreading and stable synapse assignment possible.
+  units:
+  - '04'
+  - 08
+- term: Agglomeration
+  category: Reconstruction
+  definition: Merging supervoxels into whole objects.
+  units:
+  - '04'
+  - 08
+- term: Flood-filling network (FFN)
+  category: Reconstruction
+  definition: A segmentation approach that iteratively grows a single object from a seed, conditioned
+    on the mask built so far.
+  units:
+  - 08
+- term: Local shape descriptor
+  category: Reconstruction
+  definition: An auxiliary learned representation of local object shape used to improve agglomeration
+    decisions.
+  units:
+  - 08
+- term: Skeletonization
+  category: Reconstruction
+  definition: Reducing a segmented object to a centreline graph with radii.
+  matters: The representation you need for path distance from soma; cheap to store, so archive it alongside
+    any connectivity graph.
+  units:
+  - '02'
+  - '04'
+- term: Mesh
+  category: Reconstruction
+  definition: A triangulated surface representation of a segmented object.
+  units:
+  - '02'
+  - '04'
+- term: Stitching
+  category: Reconstruction
+  definition: Aligning image tiles within one section using their overlap regions.
+  units:
+  - '03'
+  - '04'
+- term: Registration
+  category: Reconstruction
+  definition: Aligning images to a common coordinate frame - across sections, across modalities, or to
+    an atlas.
+  matters: Report residuals locally with a maximum, not as a global mean, and validate on held-out anchors.
+  units:
+  - '02'
+  - '04'
+- term: Elastic / non-linear alignment
+  category: Reconstruction
+  definition: Registration allowing local deformation, needed because sections deform non-rigidly.
+  matters: A flexible enough warp will align anything, including things that do not correspond. Escalate
+    from rigid to affine to elastic only as residuals demand.
+  units:
+  - '04'
+- term: Synapse detection
+  category: Reconstruction
+  definition: Automated identification of synapses and assignment of pre- and postsynaptic partners.
+  matters: Store partners as supervoxel IDs, never as neuron IDs, so assignments survive proofreading.
+  units:
+  - '04'
+- term: Proofreading
+  category: Proofreading & QA
+  definition: Human correction of automated segmentation errors.
+  matters: At petascale this is an allocation problem under a fixed budget, not an open-ended cleanup.
+    It is usually the dominant project cost.
+  units:
+  - 08
+- term: Merge error
+  category: Proofreading & QA
+  definition: Two distinct objects incorrectly fused into one.
+  matters: 'The expensive error: invisible in summary statistics, it manufactures connectivity, and it
+    biases motif counts superlinearly toward denser motifs.'
+  confuse: Splits are visible and locally repairable; merges are neither.
+  units:
+  - '06'
+  - '07'
+  - 08
+  - 09
+- term: Split error
+  category: Proofreading & QA
+  definition: One object incorrectly divided into multiple pieces.
+  matters: Bounded and visible. Pipelines deliberately trade merges for splits at every level.
+  units:
+  - 08
+- term: Orphan fragment
+  category: Proofreading & QA
+  definition: A segmented piece not attributed to any traced object.
+  units:
+  - 08
+- term: Proofreading level
+  category: Proofreading & QA
+  definition: A defined tier of reconstruction completeness for a cell, with written criteria.
+  matters: Every connectomics result should state the proofreading level of the cells it rests on. Without
+    it, a low connection count cannot be distinguished from incompleteness.
+  units:
+  - 08
+- term: Stopping rule
+  category: Proofreading & QA
+  definition: A pre-stated, measurable condition determining when proofreading is complete.
+  matters: 'The strongest form is convergence-based: stop when further independent proofreading of a sample
+    changes the endpoint metric by less than a stated amount.'
+  units:
+  - 08
+- term: Triage
+  category: Proofreading & QA
+  definition: Ranking candidate corrections by expected effect on the endpoint per unit of annotator time.
+  matters: Rank by impact, not conspicuousness. A small glia merge often outranks a large obvious split.
+  units:
+  - '07'
+  - 08
+- term: Inter-annotator agreement
+  category: Proofreading & QA
+  definition: The degree to which independent annotators produce the same labels on the same data.
+  matters: Report it alongside throughput. Optimizing throughput alone reliably produces fast, inconsistent
+    annotation.
+  units:
+  - '05'
+  - 08
+- term: Calibration
+  category: Proofreading & QA
+  definition: The correspondence between stated confidence and actual accuracy.
+  matters: In production annotation, calibration is worth more than raw accuracy, because it lets the
+    system route review effort to the cases that need it.
+  units:
+  - '05'
+  - '06'
+- term: Gold standard
+  category: Proofreading & QA
+  definition: An exhaustively verified reference reconstruction used to measure error rates.
+  units:
+  - 08
+- term: Precision
+  category: Proofreading & QA
+  definition: Of the items called positive, the fraction that are correct.
+  units:
+  - 08
+- term: Recall
+  category: Proofreading & QA
+  definition: Of the items that are truly positive, the fraction found.
+  units:
+  - 08
+- term: F1 score
+  category: Proofreading & QA
+  definition: The harmonic mean of precision and recall.
+  matters: Weights the two equally, which is rarely right for connectomics, where merge and split errors
+    have very different costs.
+  units:
+  - 08
+- term: Variation of Information (VI)
+  category: Proofreading & QA
+  definition: An information-theoretic measure of disagreement between two segmentations, decomposable
+    into split and merge components.
+  matters: Always report the two components separately. Total VI can improve while merges get worse, because
+    splits usually dominate the sum.
+  units:
+  - 08
+- term: Expected Run Length (ERL)
+  category: Proofreading & QA
+  definition: The mean error-free path length along skeletons before an error is encountered.
+  matters: Answers 'how far can I trace before hitting a problem?' Relatively insensitive to merges unless
+    merges are explicitly penalized.
+  units:
+  - 08
+- term: Endpoint metric
+  category: Proofreading & QA
+  definition: The scientific quantity a project is actually measuring, as opposed to a generic quality
+    score.
+  matters: Ship on the endpoint. 'Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1
+    to 2.8' is a stronger quality statement than any VI value.
+  units:
+  - 08
+  - 09
+- term: Chunked array
+  category: Data & infrastructure
+  definition: A large array stored as many independently addressable blocks, so consumers fetch only what
+    they need.
+  typical: Chunks commonly 64^3 to 512^3 voxels.
+  units:
+  - '04'
+- term: Multiresolution pyramid
+  category: Data & infrastructure
+  definition: A series of progressively downsampled copies of a volume, enabling interactive zoom.
+  typical: Costs roughly 30-50% additional storage.
+  units:
+  - '02'
+  - '04'
+- term: Sharding
+  category: Data & infrastructure
+  definition: Bundling many small chunks into larger files with an index, to avoid per-object overhead
+    in object stores.
+  matters: At petascale, per-request charges on billions of tiny objects can exceed storage costs.
+  units:
+  - '04'
+- term: Precomputed format
+  category: Data & infrastructure
+  definition: The chunked, multiresolution volume format used by Neuroglancer.
+  units:
+  - '04'
+- term: OME-Zarr / N5
+  category: Data & infrastructure
+  definition: Cloud-oriented chunked array formats used for large bioimaging volumes.
+  units:
+  - '04'
+- term: ChunkedGraph
+  category: Data & infrastructure
+  definition: A hierarchical graph over immutable supervoxels in which an object is a connected component,
+    enabling fast concurrent edits.
+  matters: A merge becomes adding an edge rather than rewriting voxels - the design that makes distributed
+    proofreading feasible.
+  units:
+  - '04'
+- term: Root ID
+  category: Data & infrastructure
+  definition: The identifier of a segmented object as of a particular moment in time.
+  matters: Not stable. A root ID in a notebook, paper, or figure caption is meaningless without a version
+    or timestamp.
+  units:
+  - '04'
+- term: Materialization
+  category: Data & infrastructure
+  definition: A frozen snapshot in which annotations are joined to the segmentation state at a specific
+    timestamp and written to queryable tables.
+  matters: Analyses run against a materialization version, and that version belongs in your methods section
+    like a software version or genome build.
+  units:
+  - '04'
+  - 09
+- term: CAVE
+  category: Data & infrastructure
+  definition: 'Connectome Annotation Versioning Engine: the versioned proofreading and annotation platform
+    behind MICrONS and FlyWire.'
+  units:
+  - '04'
+- term: Neuroglancer
+  category: Data & infrastructure
+  definition: A browser-based viewer for petascale volumes, meshes, and annotations.
+  units:
+  - '04'
+- term: CloudVolume
+  category: Data & infrastructure
+  definition: A Python client for reading and writing chunked precomputed volumes.
+  units:
+  - '04'
+- term: CATMAID
+  category: Data & infrastructure
+  definition: A collaborative web platform for skeleton tracing in large image volumes.
+  units:
+  - '04'
+- term: webKnossos
+  category: Data & infrastructure
+  definition: A web platform for viewing, annotating, and proofreading volume EM data.
+  units:
+  - '04'
+- term: neuPrint
+  category: Data & infrastructure
+  definition: A graph-database service for querying released connectomes such as hemibrain and MANC.
+  units:
+  - '04'
+  - 09
+- term: BossDB
+  category: Data & infrastructure
+  definition: A community archive and access service for volumetric neuroscience datasets.
+  units:
+  - '04'
+- term: Provenance
+  category: Data & infrastructure
+  definition: 'The recorded lineage of a data product: inputs, code revision, parameters, model version,
+    and environment.'
+  matters: If it is not machine-readable, it does not exist. Per-tile timestamps in particular are what
+    let you ask whether a defect follows block position, anatomy, or acquisition time.
+  units:
+  - '03'
+  - '04'
+- term: Idempotency
+  category: Data & infrastructure
+  definition: The property that re-running a stage on the same inputs produces the same output.
+  matters: Broken by GPU non-determinism, unpinned dependencies, and unseeded randomness. Pin them and
+    test the re-run.
+  units:
+  - '04'
+- term: Egress
+  category: Data & infrastructure
+  definition: The cost of moving data out of a cloud region.
+  matters: Moving a petabyte out can cost more than storing it for a year. Bring compute to the data.
+  units:
+  - '04'
+- term: Connectivity graph
+  category: Analysis & statistics
+  definition: A directed graph whose nodes are neurons (or types, or compartments) and whose edges represent
+    connections.
+  matters: Construction involves at least six consequential choices - node definition, edge definition,
+    threshold, weighting, inclusion criteria, boundary handling - each of which changes the answer and
+    must be reported.
+  units:
+  - '02'
+  - 09
+- term: Synapse threshold
+  category: Analysis & statistics
+  definition: The minimum number of synapses required to call a connection an edge.
+  typical: Commonly 1, 2, or 3.
+  matters: Not innocent. Because the synapses-per-connection distribution is heavy-tailed, moving from
+    1 to 3 can remove more than half the edges - and does so unevenly across cell types. Report it and
+    re-run at a second value.
+  units:
+  - 09
+- term: Null model
+  category: Analysis & statistics
+  definition: A randomized reference distribution encoding what would count as an uninteresting explanation.
+  matters: Choosing the null is the scientific step; running the test is bookkeeping. Preserve everything
+    you are not asking about.
+  units:
+  - 09
+- term: Configuration model
+  category: Analysis & statistics
+  definition: A null that preserves each node's in- and out-degree while randomizing connections.
+  matters: The minimum acceptable null for a connectome. Erdos-Renyi ignores degree heterogeneity and
+    will show apparent enrichment of almost any motif.
+  units:
+  - 09
+- term: Distance-dependent null
+  category: Analysis & statistics
+  definition: A null preserving degree and the empirical relationship between connection probability and
+    distance.
+  matters: Required for spatially embedded data, which means all volume EM. Many reported motif enrichments
+    do not survive it.
+  units:
+  - 09
+- term: Motif
+  category: Analysis & statistics
+  definition: A small subgraph pattern whose frequency is compared against a null model.
+  units:
+  - 09
+- term: Triad census
+  category: Analysis & statistics
+  definition: Counting each of the 16 isomorphism classes of directed three-node subgraphs.
+  matters: Sixteen tests, and they are strongly dependent on each other. Use permutation inference and
+    report how many tests you ran.
+  units:
+  - 09
+- term: Reciprocity
+  category: Analysis & statistics
+  definition: The frequency of bidirectional connections between node pairs.
+  matters: The textbook case where the apparent effect collapses as the null gets stronger - degree heterogeneity
+    and spatial proximity together explain much of the naive enrichment.
+  units:
+  - 09
+- term: Subgraph isomorphism
+  category: Analysis & statistics
+  definition: The problem of finding occurrences of a query pattern within a larger graph.
+  units:
+  - 09
+- term: DotMotif
+  category: Analysis & statistics
+  definition: A declarative language and toolset for expressing and searching connectome motifs.
+  units:
+  - 09
+- term: Graph matching
+  category: Analysis & statistics
+  definition: Finding the correspondence between the nodes of two graphs, for example left and right hemisphere
+    connectomes.
+  matters: Yields a measure of wiring stereotypy - a question only connectomics can answer.
+  units:
+  - 09
+- term: Spectral embedding
+  category: Analysis & statistics
+  definition: Representing nodes as points in a low-dimensional space derived from the adjacency structure.
+  units:
+  - 09
+- term: Modularity / community detection
+  category: Analysis & statistics
+  definition: Partitioning a graph into densely connected groups.
+  matters: Returns a partition for any graph, including a random one, and has a resolution limit. Always
+    compare against degree-preserving rewired graphs.
+  units:
+  - 09
+- term: Multiple comparisons
+  category: Analysis & statistics
+  definition: The inflation of false positives when many hypotheses are tested.
+  matters: Report the number of tests run, including the ones you ran and did not report.
+  units:
+  - 09
+- term: Error sensitivity analysis
+  category: Analysis & statistics
+  definition: Simulating measured merge and split rates on the reconstructed graph and reporting the resulting
+    spread on the effect size.
+  matters: Cheap to run and one of the strongest things you can put in a supplement. If the band crosses
+    the null, say so.
+  units:
+  - 09
+- term: Connectome-constrained model
+  category: Analysis & statistics
+  definition: A dynamical model whose connectivity is fixed by a measured connectome, with remaining parameters
+    fitted to data.
+  matters: 'The strongest current NeuroAI result type: the connectome removes free parameters, which is
+    what makes the model falsifiable.'
+  units:
+  - 09
+- term: Peters' rule
+  category: Analysis & statistics
+  definition: The hypothesis that connectivity can be predicted from the spatial overlap of axonal and
+    dendritic arbors.
+  matters: A poor predictor of actual synaptic connectivity in cortex, which is precisely why light-microscopy
+    overlap cannot substitute for EM.
+  units:
+  - '01'
+  - '02'
+- term: Bin A / Bin B / Bin C claim
+  category: Practice
+  definition: 'A triage of connectomics claims: supported by structure alone (A), by structure plus a
+    declared assumption (B), or not supportable by structure (C).'
+  matters: Any Bin B claim must name its assumption in the same sentence. The most common failure in connectomics
+    writing is a Bin C sentence in the abstract supported by a Bin A measurement in the results.
+  units:
+  - '01'
+- term: Non-claim
+  category: Practice
+  definition: An explicitly stated sentence a study will not assert, with the reason.
+  matters: The best single predictor of a weak study brief is an empty non-claim. If you cannot name a
+    sentence you refuse to write, you have not found the boundary of your evidence.
+  units:
+  - '01'
+- term: Pilot reconstruction
+  category: Practice
+  definition: Taking a small sub-volume through the entire pipeline before committing to full acquisition.
+  matters: Costs 1-2% of a project and is the only way to discover a prep-level problem while the prep
+    can still be changed.
+  units:
+  - '03'
+- term: Cue family
+  category: Practice
+  definition: A grouping of annotation evidence by shared failure mode - geometry, organelle content,
+    synaptic role, context, long-range continuity.
+  matters: Two cues that fail together are one cue. High confidence requires two cues from different families.
+  units:
+  - '05'
+  - '06'
+- term: Confidence tier
+  category: Practice
+  definition: An operational label - high, medium, uncertain - defined by the count and independence of
+    supporting cues.
+  matters: '''Uncertain'' is a valid output. The uncertain set is the review priority queue and the best
+    proxy for local data difficulty.'
+  units:
+  - '05'
+  - '06'

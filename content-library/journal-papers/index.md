@@ -24,14 +24,14 @@ There are two, built for different jobs, and they overlap by **35 papers**:
 
 | | This collection | [Journal club corpus]({{ '/technical-training/journal-club/' | relative_url }}) |
 |---|---|---|
-| **Size** | 96 papers | 200 papers |
+| **Size** | 96 papers | 191 papers |
 | **Selected by** | Hand, for teaching a specific dimension | Bibliometric ranking over the field's literature |
 | **Lives in** | These eleven markdown pages | `_data/journal_papers.yml` |
 | **Each entry has** | Three-level summaries, key figures, discussion prompts, related content | OCAR structure, plain-language summary, discussion prompts, filterable metadata |
 | **Reach for it when** | You are teaching or studying a topic and want the argument laid out | You are surveying what exists, or picking a paper to discuss |
 
 The two are **not** mirrors of each other. 61 of the papers here are not in the structured
-corpus, and 165 of the corpus papers are not annotated here. If you want programmatic
+corpus, and 156 of the corpus papers are not annotated here. If you want programmatic
 filtering, use the corpus; if you want a paper explained, use this collection.
 
 ---
@@ -147,10 +147,10 @@ Structured records exist for the **separate 200-paper journal club corpus** in
 ```
 
 Its `dimension` values are bibliometric categories and are **not** the eleven teaching
-dimensions used on this page: `connectomics` (51), `methods-general` (34),
-`graph-analysis` (24), `image-acquisition` (24), `neuroanatomy` (15), `infrastructure`
-(13), `segmentation` (10), `cell-types` (8), `neuroai` (7), `proofreading` (7),
-`review` (7).
+dimensions used on this page: `connectomics` (46), `methods-general` (33),
+`graph-analysis` (24), `image-acquisition` (24), `neuroanatomy` (14), `infrastructure`
+(13), `segmentation` (9), `cell-types` (8), `neuroai` (7), `review` (7),
+`proofreading` (6).
 
 That enables filtering such as "every `graph-analysis` paper from before 2010, with
 beginner summaries" — but it will not find the key figures or related-content links from

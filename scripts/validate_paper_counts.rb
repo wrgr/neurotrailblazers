@@ -89,9 +89,37 @@ end
 data = YAML.safe_load(DATA.read(encoding: "UTF-8"), aliases: true)
 records = data.is_a?(Hash) ? data.fetch("papers", []) : Array(data)
 
-if records.size < 200
-  problems << "_data/journal_papers.yml: #{records.size} papers. A generator bug once " \
-              "cut this to 1; if the drop is intentional, update this floor deliberately."
+MIN_CORPUS_PAPERS = 190
+
+if records.size < MIN_CORPUS_PAPERS
+  problems << "_data/journal_papers.yml: #{records.size} papers, floor is " \
+              "#{MIN_CORPUS_PAPERS}. A generator bug once cut this to 1; if the drop is " \
+              "intentional, move the floor deliberately."
+end
+
+# Ids and DOIs must each be unique. Nine ids appeared twice before August 2026 --
+# every pair one paper entered as both its bioRxiv preprint and its published
+# version -- so the corpus advertised more papers than it held, showed six
+# landmark papers twice under different years, and made `where: 'id'` lookups and
+# the card's data-id attribute ambiguous. DOIs were unique throughout, which is
+# why nothing caught it.
+%w[id doi].each do |key|
+  seen = Hash.new(0)
+  records.each { |r| seen[r[key].to_s.downcase] += 1 if r[key] && !r[key].to_s.empty? }
+  repeated = seen.select { |_, n| n > 1 }.keys.sort
+  next if repeated.empty?
+
+  problems << "_data/journal_papers.yml: duplicate #{key}(s): #{repeated.join(', ')}"
+end
+
+# Every record needs a journal. All 191 shipped with journal: '' while the card
+# renders <em>{{ p.journal }}</em>, so a journal club page displayed an empty
+# journal on every card.
+blank_journal = records.select { |r| r["journal"].to_s.strip.empty? }
+unless blank_journal.empty?
+  ids = blank_journal.map { |r| r["id"] }.sort
+  problems << "_data/journal_papers.yml: #{ids.size} record(s) with no journal: " \
+              "#{ids.first(5).join(', ')}#{ids.size > 5 ? ', ...' : ''}"
 end
 
 real_fields = records.flat_map(&:keys).uniq

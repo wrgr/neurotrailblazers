@@ -167,6 +167,67 @@ To maintain consistent classification across a team:
 
 ---
 
+## How reliable is each cue?
+
+The protocol above lists cues; it does not say which ones fail, and that is the
+information you need to work under uncertainty. Roughly, in decreasing order of
+reliability:
+
+| Cue | Reliability | Fails when |
+|---|---|---|
+| **Polyribosomes / rough ER present** | Very high for dendrite. Axons lack them | The section misses them; a thin dendrite may show none in any single plane |
+| **Vesicle-filled varicosity with an active zone** | Very high for axon | The bouton is out of plane; a dendrite receiving many inputs can look busy at low magnification |
+| **Postsynaptic densities on the process itself** | High for dendrite | Axo-axonic synapses exist, and are common on the AIS specifically |
+| **Myelination** | Very high for axon | Only a minority of axons are myelinated, so absence proves nothing |
+| **Microtubule arrangement** | Moderate | Both compartments contain microtubules; the difference is spacing and fasciculation, which needs a clean cross-section |
+| **Spines** | High for dendrite | Aspiny and sparsely spiny dendrites are common — most inhibitory neurons |
+| **Calibre** | **Low on its own** | Thin dendrites and thick axons both exist. Unit 06 §1 gives 80-300 nm for unmyelinated neurites and 50-200 nm for spine necks — overlapping ranges |
+| **Branching angle** | Low | Suggestive at best, and strongly affected by section angle |
+
+**The rule the units enforce: two independent cue families before a confident
+call.** Independence is the operative word. Calibre and branching angle are both
+geometric and both fail on a tangential cut, so they are one family, not two.
+Organelle content and synaptic role are genuinely independent of geometry, and
+that is why they carry the call.
+
+### Attaching a confidence tier
+
+Use the same three-bin vocabulary the rest of the site uses, so a call travels
+with its evidence:
+
+- **Bin A** — two independent cue families agree, both clearly visible. Record
+  the call and which cues you used.
+- **Bin B** — one strong cue, or two weak agreeing ones. Record the call *and*
+  what would change your mind.
+- **Bin C** — cues conflict, or the section is uninformative. Record
+  "uncertain". This is a real answer, and a dataset where nobody ever writes it
+  is a dataset where people are guessing.
+
+A tier is only useful if it predicts accuracy. Unit 06's rubric asks that
+high-confidence calls be right at least 90% of the time while a non-trivial
+share stay uncertain; if your Bin A accuracy matches your overall accuracy, the
+tiers are decoration.
+
+### Species and tissue caveats
+
+Everything above is calibrated on mammalian cortical neuropil. It does not
+transfer unchanged:
+
+- In *Drosophila*, most neurites are unmyelinated, many neurons are unipolar,
+  and the same process can be pre- and postsynaptic along its length — the
+  axon/dendrite dichotomy is often the wrong frame entirely.
+- In *C. elegans*, processes are thin enough that organelle cues are frequently
+  absent from a given section.
+- In human tissue (H01 and comparable surgical material), fixation quality
+  varies with depth from the resection surface, and the first cue to degrade is
+  membrane contrast — which is the one the automated segmentation depends on.
+
+Before applying this protocol to a new dataset, classify twenty processes you
+can verify and check that the cues behave as described. If they do not, it is
+the protocol that needs adjusting, not the tissue.
+
+---
+
 ## Common misconceptions
 
 | Misconception | Reality | How to verify |

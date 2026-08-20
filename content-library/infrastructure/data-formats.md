@@ -249,6 +249,93 @@ The highest-level representation: neurons as nodes, synaptic connections as edge
 
 ---
 
+## Skeletonization: the method changes the answer
+
+Every skeleton is an approximation of a shape, and different approximations
+disagree. This matters more than it sounds, because morphology statistics are
+computed *from the skeleton*, not from the neuron — so path length, branch
+count and tortuosity are properties of a method as much as of a cell.
+
+| Approach | How it works | What it is good at | What it loses |
+|---|---|---|---|
+| **TEASAR-family** (kimimaro and relatives) | Repeated shortest-path extraction through a distance-transformed segmentation, with penalties that push the path toward the object's centre | Robustness on noisy segmentation; deterministic; scales to whole volumes | Tends to over-penetrate into spine heads or shave them off entirely, depending on the invalidation radius |
+| **Mesh contraction** | Iteratively collapse a surface mesh toward its medial axis, then extract a curve skeleton | Follows fine geometry closely; good radius estimates | Sensitive to mesh defects; expensive; a hole in the mesh can reroute a branch |
+| **Manual tracing** (CATMAID-style) | A human places and connects nodes | The gold standard for topology; annotator judgement handles ambiguity | Slow, and carries the annotator's systematic biases |
+
+**The practical consequence:** a morphology statistic is only comparable within
+one skeletonization method, at one parameter setting. If you compare branch
+counts between two datasets skeletonized differently, you are partly measuring
+the difference between the algorithms. State the method and its parameters
+alongside any morphometric result, exactly as you would state a proofreading
+level alongside a connectivity result.
+
+Spines are where the methods diverge most, and they are also where the
+biological question usually is. If spines matter to your analysis, check what
+your skeletonizer does to them on a handful of cells you have looked at by eye
+before trusting it on ten thousand you have not.
+
+---
+
+## What each conversion loses
+
+The representations are not interchangeable, and the pipeline between them is
+one-way. Knowing which direction you are travelling tells you what you can
+still ask.
+
+| From → to | What is preserved | What is gone for good |
+|---|---|---|
+| **Volume → mesh** | Surface geometry, volume, surface area | Interior structure, image intensity, every organelle cue from Units 05-07 |
+| **Mesh → skeleton** | Topology, path length, radius | Surface detail, spine head shape, membrane apposition — you can no longer ask whether two processes touch |
+| **Skeleton → graph** | Connectivity, synapse counts | All geometry. Distance-dependent nulls become impossible unless you kept soma positions |
+| **Volume → graph** (the full pipeline) | The connectivity claim | Everything you would need to check that claim against the images |
+
+The last row is the important one. By the time you are working with an
+adjacency matrix, every judgement made upstream — segmentation, agglomeration,
+synapse detection, proofreading — has been baked in and is invisible. That is
+why provenance metadata is not bureaucracy: it is the only remaining link
+between a number and the evidence for it.
+
+**A round trip is not lossless.** Meshing a segmentation and re-voxelizing the
+mesh does not return the original labels; the surface has been resampled and
+smoothed. If you need the voxels, keep the voxels.
+
+---
+
+## Storage, in proportion
+
+Format choices look abstract until they meet a storage budget. For a
+mm³-scale volume, the orders of magnitude are roughly as Unit 04 §2 sets them
+out: raw and aligned imagery in the petabytes, segmentation labels in the
+hundreds of terabytes with label-aware compression, meshes in the low
+terabytes, and skeletons in the tens of gigabytes.
+
+The ratio worth remembering is the last one: **skeletons are around five orders
+of magnitude smaller than the imagery they came from.** That is why skeletons
+get archived and shared while imagery gets left in the bucket it was
+reconstructed in, and why a great deal of comparative morphology work is
+possible for anyone with a laptop.
+
+Chunk size is the other lever, and there is no correct value. Small chunks make
+random access cheap and multiply the number of objects, which object stores
+handle badly; large chunks reverse both. Pick from your access pattern — a
+viewer paging through xy planes and an analysis streaming along z want
+different shapes — and expect to shard the result.
+
+---
+
+## Common misconceptions
+
+| Misconception | Reality |
+|---|---|
+| "The mesh and the segmentation are the same thing." | The mesh is derived from the segmentation and is regenerated whenever an edit changes it. Two people looking at the same mesh URL after an edit are looking at different objects. |
+| "Skeletons are just simplified meshes." | They are a different kind of object: a graph with radii, not a surface. You cannot recover a mesh from a skeleton, and the statistics you compute from each are not comparable. |
+| "Path length is a property of the neuron." | It is a property of the neuron *and* the skeletonization method. Report the method. |
+| "Zarr, N5 and Precomputed are basically interchangeable." | All three are chunked multiscale layouts, but the metadata conventions differ and a reader for one will not open another without conversion. |
+| "If I keep the graph, I can always go back to the images." | Only if you also kept the dataset name, the segmentation version and the query. The graph alone contains no route back. |
+| "Compression choice is a performance detail." | Lossy compression on segmentation labels is not a performance detail; it changes object boundaries. Label data needs lossless, label-aware codecs. |
+
+---
+
 ## References
 
 - Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.

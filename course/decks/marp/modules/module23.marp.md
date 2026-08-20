@@ -34,7 +34,7 @@ Teaching Deck
 ---
 
 ## Capability Target
-Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two metres away, and you leave the session with at least two named follow-ups you initiated yourself.
+Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two meters away, and you leave the session with at least two named follow-ups you initiated yourself.
 
 ---
 
@@ -50,7 +50,7 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 - Distill the project into one claim hierarchy: one headline claim, at most two supporting claims, one limitation attached to each.
 - Draft the 250-word abstract against the sentence budget, then delete every sentence that does not help a reviewer judge credibility or significance.
 - Check the abstract names species, region, imaging modality, segmentation pipeline, version or materialization, proofreading state, and n. If any is missing, a reviewer will assume the worst case.
-- Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two metres.
+- Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two meters.
 - Write and rehearse the 90-second and 3-minute versions. The 90-second version is not the 3-minute version spoken quickly; it is a different script with the background removed.
 - Prepare a follow-up template and a target list of five to eight people you want to talk to, with one specific question for each.
 - Run critique for clarity, limitations, and the professional interaction plan, and revise before the submission deadline rather than after acceptance.
@@ -63,7 +63,7 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 - **08:00-20:00 | Abstract sprint (individual)**
 - Learners draft against the sentence budget with a visible word counter. Circulate asking only: "which sentence carries the number?"
 - **20:00-32:00 | Poster wireframe build (pairs)**
-- Wireframe on paper at one-eighth scale. Partners stand two metres back and report what they can read. Anything unreadable moves up or grows.
+- Wireframe on paper at one-eighth scale. Partners stand two meters back and report what they can read. Anything unreadable moves up or grows.
 - **32:00-44:00 | 90-second pitch practice**
 - Deliver to a partner against a timer, twice, with the second delivery required to be shorter. Ban the background sentence on the second pass.
 - **44:00-54:00 | Q&A and networking simulation**

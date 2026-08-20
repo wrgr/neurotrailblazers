@@ -168,7 +168,14 @@ module_paths.each do |path|
   misconceptions = bullet_or_dash(misconception_items(concept_section), [])
   preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
   preclass = bullet_or_dash(list_items(labelled_block(run_of_show, 'Pre-class')), []) if preclass.empty?
+  # Fall back to the free-text `prerequisites` field when the structured list is
+  # empty. Modules 01-11 populate only the former, and reading just the list left
+  # eleven worksheets showing a generic placeholder.
   prereqs = Array(fm['prerequisites_list'])
+  if prereqs.empty? && !fm['prerequisites'].to_s.strip.empty?
+    text = fm['prerequisites'].to_s.strip
+    prereqs = text.casecmp('none').zero? ? [] : [text]
+  end
   key_questions = Array(fm['key_questions'])
   duration = fm['duration'].to_s
   related_units = Array(fm['related_tools']) + Array(fm['datasets'])
@@ -236,7 +243,9 @@ module_paths.each do |path|
     end
 
   prereq_block =
-    if prereqs.empty?
+    if prereqs.empty? && fm['prerequisites'].to_s.strip.casecmp('none').zero?
+      "- [ ] Nothing. This module assumes no prior work in this curriculum."
+    elsif prereqs.empty?
       "- [ ] The module prerequisites listed on the module page"
     else
       prereqs.map { |p| "- [ ] #{p}" }.join("\n")

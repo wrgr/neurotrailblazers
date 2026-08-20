@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two metres away, and you leave the session with at least two named follow-ups you initiated yourself.
+Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two meters away, and you leave the session with at least two named follow-ups you initiated yourself.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -43,7 +43,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 **Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members. Two of the people who stop are specialists who will ask about segmentation quality; one is a program director who will ask what it means; one is a peer at your own stage who wants your code.
 
-1. Produce one abstract against the sentence budget and one poster wireframe tested at two metres.
+1. Produce one abstract against the sentence budget and one poster wireframe tested at two meters.
 2. Deliver a 90-second pitch to a timer, twice, cutting on the second pass.
 3. Respond to two audience questions, including one about reconstruction quality.
 4. Draft one follow-up outreach message that sends something rather than asking for something.
@@ -66,7 +66,7 @@ is a decision; a skipped step without one is a gap.
 - [ ] Distill the project into one claim hierarchy: one headline claim, at most two supporting claims, one limitation attached to each.
 - [ ] Draft the 250-word abstract against the sentence budget, then delete every sentence that does not help a reviewer judge credibility or significance.
 - [ ] Check the abstract names species, region, imaging modality, segmentation pipeline, version or materialization, proofreading state, and n. If any is missing, a reviewer will assume the worst case.
-- [ ] Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two metres.
+- [ ] Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two meters.
 - [ ] Write and rehearse the 90-second and 3-minute versions. The 90-second version is not the 3-minute version spoken quickly; it is a different script with the background removed.
 - [ ] Prepare a follow-up template and a target list of five to eight people you want to talk to, with one specific question for each.
 - [ ] Run critique for clarity, limitations, and the professional interaction plan, and revise before the submission deadline rather than after acceptance.

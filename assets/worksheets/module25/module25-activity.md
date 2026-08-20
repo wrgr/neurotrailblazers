@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Submit a capstone portfolio that proves technical capability, communicates decision quality, and demonstrates iterative growth through feedback.
+Submit a capstone portfolio that proves technical capability, communicates decision quality, and demonstrates iterative growth through feedback. Operationally: every artifact carries a caption naming the competency it proves and what a reviewer can check, the portfolio distinguishes what you did from what you were given, and at least one artifact shows a version that was wrong alongside the correction and the reason.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -41,12 +41,12 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You are preparing your final portfolio for a competitive research opportunity.
+**Scenario:** You are preparing your final portfolio for a competitive research opportunity. Assume the reviewer spends two minutes on the first pass and opens exactly one artifact.
 
-1. Select 6-10 artifacts and map each to one competency claim.
-2. Write evidence captions and reflection notes.
-3. Receive peer review against rubric criteria.
-4. Produce a revision plan with priorities and deadlines.
+1. Select 6-10 artifacts and map each to one competency claim, cutting duplicates.
+2. Write four-line evidence captions and reflection notes, with line three naming something verifiable.
+3. Receive peer review against rubric criteria, having stated a decision, a criterion, and a deadline for each artifact.
+4. Produce a revision plan with priorities and deadlines, ordered by effect on what the portfolio proves.
 
 ### What you hand in
 
@@ -54,6 +54,7 @@ Keep these in view. At the end, answer each in one sentence.
 - Reflection set
 - Peer feedback log
 - Final revision plan
+- Permission and provenance check across all artifacts
 
 ---
 
@@ -62,11 +63,13 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Define competency claims and evidence needed.
-- [ ] Select artifacts and write one evidence caption per artifact.
-- [ ] Add reflection notes on decisions, errors, and revisions.
-- [ ] Run peer/mentor review with rubric-aligned feedback.
-- [ ] Revise and publish final portfolio package.
+- [ ] Define the competency claims first, in writing, then ask what evidence each requires. Working the other way round produces a folder of what you happen to have.
+- [ ] Select artifacts against those claims, cutting duplicates and keeping the version that shows the most judgment rather than the most polish.
+- [ ] Write one four-line evidence caption per artifact, checking that line three names something a stranger can verify.
+- [ ] Add reflection notes on decisions, errors, and revisions, naming the alternative not taken in each case.
+- [ ] Run the permission and provenance check across every artifact, and pin dataset versions.
+- [ ] Run peer or mentor review with a stated decision, criterion, stage, and deadline for each artifact you send.
+- [ ] Revise, record what changed and why in a visible revision log, and publish the package with a README that tells a two-minute reader where to start.
 
 ---
 
@@ -98,9 +101,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Quantity of artifacts does not equal quality of evidence.
-- [ ] I did not assume: Self-praise without analysis is not reflective practice.
-- [ ] I did not assume: "final" version without revision trace is incomplete.
+- [ ] I did not assume: More artifacts make a stronger portfolio.
+- [ ] I did not assume: Describing what you enjoyed about a project counts as reflection.
+- [ ] I did not assume: A final version is stronger evidence when the earlier drafts are removed.
+- [ ] I did not assume: A good artifact speaks for itself and needs no caption.
+- [ ] I did not assume: Asking a narrow question wastes the reviewer's expertise.
+- [ ] I did not assume: Work you did yourself is automatically yours to publish.
 
 ---
 
@@ -122,9 +128,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**
-- **Strong performance**
-- **Common failure modes**
+- **Minimum pass:** portfolio claims are evidence-backed; reflection identifies at least one meaningful revision loop; feedback is incorporated with clear changes; contributions in group work are stated explicitly.
+- **Strong performance:** demonstrates cross-module synthesis and transfer, highlights uncertainty and correction with technical maturity, communicates a future growth plan with concrete milestones, and includes at least one artifact whose earlier wrong version is shown alongside the correction and its reason.
+- **Common failure to flag:** artifact dump with weak competency mapping, reflection limited to narrative without analytical depth, and minimal response to peer critique. Also flag portfolios where every caption line three is missing, since that is the difference between a folder and evidence.
 
 **My self-assessment:**
 
@@ -135,10 +141,7 @@ action rather than a general intention.
 
 ## Exit prompt
 
-Choose one artifact and write:
-1. one competency claim it supports,
-2. one limitation,
-3. one revision you would make next.
+Choose one artifact and write its four lines: one competency claim it supports, what you did versus what you were given, one thing a reviewer can verify and where, and one limitation with the revision you would make next.
 
 **Your answer:**
 

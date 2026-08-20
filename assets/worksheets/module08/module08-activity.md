@@ -18,7 +18,7 @@ You are done when you can demonstrate this, not when you have filled in every bo
 
 Check that you have:
 
-- [ ] The module prerequisites listed on the module page
+- [ ] Modules 01-07
 
 Bring one question you already have about this topic. Write it here so you can check
 at the end whether it was answered:

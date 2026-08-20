@@ -14,76 +14,78 @@ Checking every one against Crossref showed it is not:
 | DOIs that return 404 | 5 |
 | Records with no DOI at all | 18 |
 
-Examples, each verified:
+`boyden-2025-liconn` lists seven authors; LICONN (`10.1038/s41586-025-08985-1`) is by
+Tavakoli, Lyudchik, Januszewski and ten others — none of the seven. `dorkenwald-2024-neurd`
+resolves to a subcellular-imaging paper. `plaza-2023-manc` and `rivlin-2023-manc` — the
+same paper twice — both resolve to a cardiomyocyte drug-safety study.
+`10.1109/TPAMI.2018.2835451`, cited for Funke's structured-loss paper, does not exist.
 
-- `boyden-2025-liconn` lists seven authors. The LICONN paper
-  (`10.1038/s41586-025-08985-1`) is by Tavakoli, Lyudchik, Januszewski and ten others.
-  **None of the seven listed names is on it.**
-- `dorkenwald-2024-neurd` carries a DOI that resolves to a subcellular-architecture
-  imaging paper.
-- `plaza-2023-manc` and `rivlin-2023-manc` — the same paper, twice — both carry a DOI
-  that resolves to a cardiomyocyte drug-safety study.
-- `10.1109/TPAMI.2018.2835451`, cited for the Funke structured-loss paper, does not exist.
+**Titles are mostly correct. That is what made it dangerous** — it looks checked, and
+nothing signals that only one field is trustworthy.
 
-**Titles are mostly correct. That is what made it dangerous** — the corpus looks checked,
-and nothing in it flags that only the titles are trustworthy.
+## The methodology was sound; it was never executed
 
-### The methodology was sound; the execution never happened
+`discovery_strategy.json` specifies a real pipeline: a four-tier author taxonomy defined
+by **criteria**, and five discovery steps — forward citations, co-citation, reverse
+PageRank over the citation graph, co-authorship betweenness for bridging authors, and
+targeted gap-fill for thin dimensions. It names the tools (Semantic Scholar / OpenAlex,
+networkx) and the phases.
 
-`discovery_strategy.json` specifies a real pipeline: tiered authors, forward-citation and
-co-citation expansion, "Semantic Scholar API: /paper/{id}/citations". `expert_seed_list.json`
-cross-checks 29 experts against BossDB PIs and BRAIN CONNECTS awards.
+None of it ran. The outputs carry the signature of generation, not retrieval.
 
-None of that appears to have been run. The outputs carry the signature of generation
-rather than retrieval: plausible author lists that are wrong, plausible DOIs that resolve
-elsewhere, and a manifest claiming 137 records where 150 exist.
+So the reset is not a new strategy. **It is that strategy, executed, with verification as
+a gate.** The brief below does that.
 
-So the fix is not a better strategy. **It is executing the existing strategy against real
-APIs, with verification as a hard gate rather than an afterthought.** That is what the
-brief below enforces.
+### One correction to an earlier draft of this brief
+
+A previous version opened by handing the research tool a list of ~40 investigator names.
+Those names were written from recall — reintroducing, at the very first step, the exact
+failure being repaired. The strategy document defines tiers by criteria and treats names
+as *hypotheses to investigate*, which is the better design.
+
+**The query below therefore contains no remembered names.** It bootstraps from seven
+DOIs verified against Crossref in this session and derives everyone else from the real
+author records on those papers and from the citation graph.
 
 ---
 
 ## The query
 
-Paste this whole block into the deep research tool.
-
 ```
-Build a verified seed bibliography of 120-180 papers for a nanoscale connectomics
-training curriculum aimed at undergraduates through early-career researchers.
+Execute a documented citation-discovery methodology to build a verified seed
+bibliography of 120-180 papers for a nanoscale connectomics training curriculum
+(audience: undergraduates through early-career researchers).
 
-## Hard constraints — read these first
+This is an execution task, not a recall task. The method below matters more
+than the output size.
 
-These override everything else in this brief. A shorter, honest list beats a
-complete-looking one.
+## Hard constraints — these override everything else
 
-1. RETRIEVE, NEVER RECALL. Every paper must come from a search result or a
-   citation record you actually fetched in this session. Do not add a paper
-   because you know it exists.
-2. EVERY DOI MUST RESOLVE. Verify each one by resolving it (Crossref
-   api.crossref.org/works/{doi}, or the publisher). A DOI you did not resolve
+1. RETRIEVE, NEVER RECALL. Every paper and every person in your output must
+   trace to a record you fetched in this session. If you cannot name the query
+   that surfaced it, it does not go in.
+2. NO NAME MAY ENTER FROM MEMORY. Do not begin from a list of researchers you
+   believe are important. Every investigator must be *derived* — from the author
+   record of a verified paper, or from the citation/co-authorship graph.
+3. EVERY DOI MUST RESOLVE. Verify by resolving it. A DOI you did not resolve
    does not go in the output.
-3. METADATA IS COPIED, NOT WRITTEN. Title, full author list, year, journal and
-   DOI must be transcribed from the resolved record. Never reconstruct an
-   author list from memory, and never abbreviate one to "et al." in the data.
-4. IF YOU CANNOT VERIFY IT, LEAVE IT OUT. Put it in a separate
-   "unverified_candidates" list with the reason. Do not guess a DOI to make a
-   record complete.
-5. DO NOT FILL COVERAGE GAPS BY INVENTION. If a dimension below is thin because
-   you could not find qualifying work, report it as thin. An under-covered
-   dimension named honestly is useful; a padded one is not.
+4. METADATA IS COPIED, NOT WRITTEN. Title, complete author list, year, journal,
+   DOI transcribed from the resolved record. Never reconstruct an author list,
+   and never truncate one to "et al." in the data — several of these papers have
+   hundreds of authors.
+5. IF YOU CANNOT VERIFY IT, LEAVE IT OUT. Put it under "unverified_candidates"
+   with what you were missing. Never guess a DOI to complete a record.
+6. NEVER PAD A THIN DIMENSION. Report it as thin instead.
 
 Why this is spelled out: the corpus this replaces was assembled from memory. Its
-titles were largely right and almost everything else was wrong — plausible
-author lists that belonged to no such paper, DOIs resolving to unrelated work,
-and several DOIs that do not exist. It looked verified, which is precisely what
-made it unusable.
+titles were largely right and almost everything else was wrong — author lists
+belonging to no such paper, DOIs resolving to unrelated work, DOIs that do not
+exist. It looked verified. That is what made it unusable.
 
-## Known-answer check — run this before anything else
+## Step 0 — known-answer check, before any other work
 
-Retrieve these seven DOIs and confirm your pipeline reproduces the metadata
-exactly. If any comes back different, stop and report the discrepancy rather
-than proceeding.
+Resolve these seven DOIs and confirm you reproduce the metadata exactly. If any
+differs, stop and report rather than proceeding.
 
   10.1038/s41586-025-08985-1  Tavakoli, Lyudchik, Januszewski et al. (2025) Nature
                               Light-microscopy-based connectomic reconstruction of
@@ -104,32 +106,65 @@ than proceeding.
   10.1126/science.add9330     Winding, Pedigo, Barnes et al. (2023) Science
                               The connectome of an insect brain
 
-## Selection method
+These seven are also your ANCHOR SET for everything below. They were chosen to
+span invertebrate and vertebrate, EM and light microscopy, and 2015 to 2025.
 
-Start from these field-shaping investigators and expand by citation graph, not
-by recall:
+## Step 1 — derive the investigator pool from the anchors
 
-  Seung, Lichtman, Denk, Helmstaedter, Jain, Januszewski, Sporns, Vogelstein JT,
-  Bock, Cardona, Jefferis, Plaza, Scheffer, Saalfeld, Funke, Turaga, Harris KM,
-  Kasthuri, Hayworth, Xu CS, Collman, Reid, Tolias, Zeng, Briggman, Kording,
-  Zador, Priebe, Pfister, Murthy, Wilson RI, Samuel, Yendiki, Shapson-Coe,
-  Dorkenwald, Schneider-Mizell, Gray Roncal, Wester, Matelsky, Boyden
+Pull the complete author record for each anchor paper, with institutional
+affiliations. Do not filter by whether you recognise a name.
 
-For each: retrieve their connectomics-relevant publications, then expand via
-(a) forward citations — papers citing several corpus papers are strong
-candidates — and (b) co-citation — papers frequently cited alongside corpus
-papers. Report which expansion produced each addition.
+Then widen from verifiable programme sources rather than from recall:
+  - NIH RePORTER, for BRAIN CONNECTS and BRAIN Initiative connectomics awards —
+    take the PIs listed on the awards.
+  - The dataset and publication listings of the major public data platforms
+    (BossDB, neuPrint, FlyWire, MICrONS/CAVE, DANDI) — take the PIs and
+    contributors those pages credit.
 
-Tier every paper:
-  1 — field-shaping. Defined a subfield, led a landmark project, or introduced a
-      method the field now depends on.
-  2 — key contribution. First-author landmark work, or a widely adopted method
-      or tool paper.
-  3 — useful supporting work: benchmarks, datasets, reviews, negative results.
+Record, for every person, how they entered the pool. A person with no
+derivation path is dropped, however plausible they seem.
 
-## Coverage required
+## Step 2 — expand by citation graph
 
-Aim for balance across these, and report the count per dimension:
+Use OpenAlex (free, no key; `api.openalex.org/works/doi:{doi}` resolves a work
+and returns authorships, institutions, referenced works and citation counts) or
+Semantic Scholar. Check the current API docs for filter syntax rather than
+assuming it.
+
+  a. FORWARD CITATIONS. For each corpus paper, retrieve the works citing it. A
+     paper citing five or more corpus papers is a strong candidate.
+  b. CO-CITATION. Find papers frequently cited alongside corpus papers.
+  c. CENTRALITY. Build the citation graph over the corpus plus its one-hop
+     neighbourhood and rank by PageRank. High-scoring papers not yet in the
+     corpus are candidates — this surfaces connectors rather than merely
+     well-cited work.
+  d. AUTHOR BRIDGING. Build the co-authorship graph and compute betweenness.
+     High-betweenness authors span subcommunities (someone co-authoring with
+     both macro-scale network neuroscience and nanoscale EM groups) and their
+     work is often the missing link between dimensions.
+
+Report which of (a)-(d) surfaced each addition.
+
+## Step 3 — tier by criteria, not by reputation
+
+  Tier 1, field-shapers: last/corresponding author on three or more landmark
+    connectomics papers; led or co-led a major project; introduced foundational
+    methods or terminology.
+  Tier 2, key contributors: first or co-first author on a landmark paper;
+    developed a broadly adopted tool or method; sustained multi-year technical
+    contribution. Often the person who actually built the thing.
+  Tier 3, infrastructure builders: built or maintains critical infrastructure;
+    frequently middle author but essential to the work.
+  Tier 4, emerging: first author on a high-impact paper from 2022 onward;
+    active in an emerging subfield.
+
+Assign tiers from the evidence you retrieved — authorship position, project
+role, citation position — and state the evidence for each tier-1 assignment.
+
+## Step 4 — coverage and gap-fill
+
+Report the count per dimension, then run targeted searches for any that come
+back thin:
 
   - why map connectomes; what structure can and cannot establish
   - measurement scales and modality trade-offs (EM, X-ray, LM, expansion, MRI)
@@ -142,64 +177,66 @@ Aim for balance across these, and report the count per dimension:
   - connectome graph construction, null models, motif and network analysis
   - NeuroAI and connectome-constrained modelling
   - landmark datasets and case studies (C. elegans, Drosophila, mouse, human)
-  - ethics, data sharing, open science, and community/citizen-science efforts
+  - ethics, data sharing, open science, community and citizen-science efforts
 
-Include foundational older work (pre-2010) where it is still load-bearing, and
-weight recent work (2023-2026) more heavily than a citation count alone would,
-since the field is moving fast and a training corpus goes stale from the top.
+Keep foundational pre-2010 work where it is still load-bearing, and weight
+2023-2026 more heavily than citation count alone would, since a training corpus
+goes stale from the top and citation counts lag by years.
 
-## Output format
+## Output
 
 One JSON object per paper:
 
 {
   "title": "exact title from the resolved record",
-  "authors": ["Family Initials", "..."],   // complete, in order, from the record
+  "authors": ["Family Initials", "..."],   // complete, in order, transcribed
   "year": 2024,
   "journal": "container title from the record",
   "doi": "10.xxxx/xxxxx",
-  "url": "publisher or open-access URL you actually visited",
-  "abstract_summary": "2-3 sentences, your own words, on what the paper
-                       established and what it did not",
-  "dimensions": ["from the coverage list above"],
+  "url": "URL you actually visited",
+  "abstract_summary": "2-3 sentences, your words, on what it established and
+                       what it did not",
+  "dimensions": ["from the coverage list"],
   "tier": 1,
-  "seed_expert": "which investigator's work led you here",
-  "found_via": "direct search | forward citation from {doi} | co-citation with {doi}",
-  "verified": {
-    "doi_resolved": true,
-    "source": "crossref",
-    "date": "YYYY-MM-DD"
-  }
+  "tier_evidence": "why this tier, from what you retrieved",
+  "found_via": "anchor | forward citation from {doi} | co-citation | pagerank |
+                author bridging | gap-fill search '{query}'",
+  "verified": { "doi_resolved": true, "source": "openalex|crossref",
+                "date": "YYYY-MM-DD" }
 }
 
-Plus three summary sections:
+Plus four sections:
 
-  1. METHOD — what you searched, which APIs and databases, date of retrieval,
-     and how you expanded from the seed authors.
-  2. COVERAGE — count per dimension, count per tier, distribution by year, and
-     any dimension you consider under-covered and why.
-  3. UNVERIFIED CANDIDATES — papers you believe belong but could not confirm,
-     each with what you were missing. This section is expected to be non-empty;
-     an empty one suggests the constraints were not applied.
+  1. METHOD — APIs used, date of retrieval, how the investigator pool was
+     derived, graph sizes at each step, and any step you could not complete.
+  2. INVESTIGATOR POOL — everyone derived, their tier, and their derivation
+     path.
+  3. COVERAGE — per dimension, per tier, by year; and which dimensions are thin
+     and why.
+  4. UNVERIFIED CANDIDATES — papers you believe belong but could not confirm,
+     with what was missing. Expected to be non-empty; an empty section suggests
+     the constraints were not applied.
 ```
 
 ---
 
-## After it comes back
+## Checking what comes back
 
-Do not merge the output on trust — that is how the current state happened. Run the
-existing tooling against it first:
+Do not merge on trust — that is how the current state happened.
 
-1. **`scripts/audit_citations.py`** already resolves DOIs and compares real authors
-   against cited ones. Point it at the new records before anything else.
-2. **Spot-check the known-answer seven** in the returned data by hand.
-3. **Check the unverified-candidates list is non-empty.** If a research pass over
-   ~150 papers reports zero it could not confirm, the constraints were ignored.
-4. **Verify author lists are complete**, not truncated to three names plus "et al." —
-   FlyWire has 294 authors and MICrONS 96, so a uniformly short list is a signal.
-5. Only then write the records, and keep the `verified` block as shipped provenance.
+1. **`scripts/audit_citations.py`** resolves DOIs and compares real authors against
+   claimed ones. Run it first.
+2. **Spot-check the anchor seven** in the returned data.
+3. **Confirm `UNVERIFIED CANDIDATES` is non-empty.** Zero over ~150 papers means the
+   constraints were skipped.
+4. **Check `found_via` is populated and varied.** If everything says "direct search",
+   the citation-graph steps did not run and you have a search-engine result, not a
+   derived corpus.
+5. **Check author lists are complete.** Crossref lists 294 authors for FlyWire and 96
+   for MICrONS; uniformly short lists are the signature of memory.
+6. **Check the investigator pool has derivation paths.** A name with none is recall
+   leaking back in.
 
-Once the corpus is trustworthy, `scripts/check_curriculum_currency.py` (planned) can
-key on its DOIs to report which expert-selected papers the curriculum never cites —
-the signal that prompted this whole thread. That report is only meaningful on verified
-DOIs, which is why the reset comes first.
+Once the corpus is trustworthy, `scripts/check_curriculum_currency.py` (planned) keys on
+its DOIs to report which expert-selected papers the curriculum never cites. That report
+is only meaningful on verified DOIs, which is why the reset comes first.

@@ -39,8 +39,7 @@ key_questions:
   - "What thresholds justify release versus rework?"
 slides:
   - "/assets/slides/module07/module07-proofreading-and-quality-control.pdf"
-notebook:
-  - "/assets/notebooks/module07/module07-proofreading-and-quality-control.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
 personas:
@@ -58,6 +57,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -104,6 +104,15 @@ Every correction should be logged: what was changed, why, when, and by whom. CAV
 Without versioned documentation, two researchers analyzing the "same" dataset at different times may get different results because proofreading edits changed the segmentation between their queries. Materialization versions solve this: you pin your analysis to a specific version number, and anyone can reproduce your results by querying that same version. This is the connectomics equivalent of specifying which genome assembly build you used for a genomics analysis.
 
 Good correction logs also serve a pedagogical function. When new proofreaders join a project, they can review past correction decisions to learn the team's standards. Entries like "Merged fragments 847291 and 847305 because continuous membrane visible in z-slices 4021-4035; confirmed by checking orthogonal views" teach both the decision criteria and the verification process.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** proofreading is cleanup that ends when the data looks right, rather than an allocation problem under a fixed budget.
+- **Misconception guardrail:** a single aggregate quality score is enough to decide whether a release is good.
+- **Misconception guardrail:** throughput is a sufficient measure of annotator performance without agreement statistics alongside it.
+- **Misconception guardrail:** a result can be reported without stating the proofreading level of the cells it rests on.
 
 ## Core workflow
 1. **Classify** errors by type (merge/split/boundary) and estimated impact (high/medium/low). Use the error taxonomy from the content library as a reference checklist.
@@ -153,6 +162,7 @@ Good correction logs also serve a pedagogical function. When new proofreaders jo
    - Exit ticket: "One rule for when an error MUST be fixed before release."
 
 ## Studio activity: release decision simulation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
 

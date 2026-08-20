@@ -1,0 +1,29 @@
+{% comment %}
+  Renders the mode axis from _data/modes.yml.
+  Modes with status "in_development" are rendered as unavailable rather than
+  hidden, so the gap is visible instead of implied.
+  Usage: {% include ui/mode-picker.html %}
+{% endcomment %}
+<div class="arch-grid">
+  {% for m in site.data.modes.modes %}
+  {% assign live = false %}{% if m.status == 'available' %}{% assign live = true %}{% endif %}
+  <article class="arch-card{% unless live %} is-planned{% endunless %}" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+    <span class="arch-chip" aria-hidden="true">{{ m.icon }}</span>
+    <h3 class="arch-title">{{ m.title }}</h3>
+    <p class="arch-meta">
+      {% if live %}
+        <span class="pill pill-status is-available">Available</span>
+      {% else %}
+        <span class="pill pill-status is-planned">Not built yet</span>
+      {% endif %}
+    </p>
+    <p class="arch-body">{{ m.tagline }}</p>
+    <p class="arch-note"><strong>For:</strong> {{ m.audience }}</p>
+    <div class="arch-actions">
+      <a href="{{ '/modes/#' | append: m.slug | relative_url }}" class="btn {% if live %}btn-primary{% else %}btn-secondary{% endif %}">
+        {% if live %}How this mode works{% else %}What it would take{% endif %}
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

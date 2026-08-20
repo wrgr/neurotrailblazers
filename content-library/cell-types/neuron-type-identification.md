@@ -36,6 +36,7 @@ combines_with:
   - axon-dendrite-classification
   - glia-recognition
   - data-formats
+content_type: core
 ---
 
 ## Overview

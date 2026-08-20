@@ -17,10 +17,10 @@ concepts:
         - title: Unit 01 Lesson
           url: /technical-training/01-why-map-the-brain/
       activity:
-        - title: Unit 01 Quick Activity
-          url: /technical-training/01-why-map-the-brain/#quick-activity
+        - title: Unit 01 Lab
+          url: /technical-training/01-why-map-the-brain/#lab-write-a-study-brief-60-minutes
       slides:
-        - title: Unit 01 Slides
+        - title: Unit 01 Lecture Plan
           url: /technical-training/slides/01-why-map-the-brain/
       references:
         - title: Journal Club Reading List
@@ -44,10 +44,10 @@ concepts:
         - title: Unit 02 Lesson
           url: /technical-training/02-brain-data-across-scales/
       activity:
-        - title: Unit 02 Quick Activity
-          url: /technical-training/02-brain-data-across-scales/#quick-activity
+        - title: Unit 02 Lab
+          url: /technical-training/02-brain-data-across-scales/#lab-scale-selection-memo-75-minutes
       slides:
-        - title: Unit 02 Slides
+        - title: Unit 02 Lecture Plan
           url: /technical-training/slides/02-brain-data-across-scales/
       references:
         - title: Workflow Overview
@@ -71,10 +71,10 @@ concepts:
         - title: Unit 03 Lesson
           url: /technical-training/03-em-prep-and-imaging/
       activity:
-        - title: Unit 03 Quick Activity
-          url: /technical-training/03-em-prep-and-imaging/#quick-activity
+        - title: Unit 03 Lab
+          url: /technical-training/03-em-prep-and-imaging/#lab-acquisition-qa-report-on-a-real-volume-90-minutes
       slides:
-        - title: Unit 03 Slides
+        - title: Unit 03 Lecture Plan
           url: /technical-training/slides/03-em-prep-and-imaging/
       references:
         - title: Connectome Quality Tool
@@ -98,10 +98,10 @@ concepts:
         - title: Unit 04 Lesson
           url: /technical-training/04-volume-reconstruction-infrastructure/
       activity:
-        - title: Unit 04 Quick Activity
-          url: /technical-training/04-volume-reconstruction-infrastructure/#quick-activity
+        - title: Unit 04 Lab
+          url: /technical-training/04-volume-reconstruction-infrastructure/#lab-query-a-petascale-volume-reproducibly-90-minutes
       slides:
-        - title: Unit 04 Slides
+        - title: Unit 04 Lecture Plan
           url: /technical-training/slides/04-volume-reconstruction-infrastructure/
       references:
         - title: Framework Overview
@@ -126,9 +126,9 @@ concepts:
           url: /technical-training/05-neuronal-ultrastructure/
       activity:
         - title: Unit 05 Studio Activity
-          url: /technical-training/05-neuronal-ultrastructure/#studio-activity-ultrastructure-consensus-round
+          url: /technical-training/05-neuronal-ultrastructure/#6-studio-activity-ultrastructure-consensus-round-75-min
       slides:
-        - title: Unit 05 Slides
+        - title: Unit 05 Lecture Plan
           url: /technical-training/slides/05-neuronal-ultrastructure/
       references:
         - title: Connectomics Dictionary
@@ -152,10 +152,10 @@ concepts:
         - title: Unit 06 Lesson
           url: /technical-training/06-axons-and-dendrites/
       activity:
-        - title: Unit 06 Quick Activity
-          url: /technical-training/06-axons-and-dendrites/#quick-activity
+        - title: Unit 06 Lab
+          url: /technical-training/06-axons-and-dendrites/#lab-calibration-round-90-minutes
       slides:
-        - title: Unit 06 Slides
+        - title: Unit 06 Lecture Plan
           url: /technical-training/slides/06-axons-and-dendrites/
       references:
         - title: Unit 08 QC Context
@@ -179,10 +179,10 @@ concepts:
         - title: Unit 07 Lesson
           url: /technical-training/07-glia/
       activity:
-        - title: Unit 07 Quick Activity
-          url: /technical-training/07-glia/#quick-activity
+        - title: Unit 07 Lab
+          url: /technical-training/07-glia/#4-drill-glia-discrimination-60-minutes
       slides:
-        - title: Unit 07 Slides
+        - title: Unit 07 Lecture Plan
           url: /technical-training/slides/07-glia/
       references:
         - title: Connectome Quality Tool
@@ -206,10 +206,10 @@ concepts:
         - title: Unit 08 Lesson
           url: /technical-training/08-segmentation-and-proofreading/
       activity:
-        - title: Unit 08 Quick Activity
-          url: /technical-training/08-segmentation-and-proofreading/#quick-activity
+        - title: Unit 08 Lab
+          url: /technical-training/08-segmentation-and-proofreading/#lab-proofreading-plan-with-a-defended-budget-2-hours
       slides:
-        - title: Unit 08 Slides
+        - title: Unit 08 Lecture Plan
           url: /technical-training/slides/08-segmentation-and-proofreading/
       references:
         - title: Connectome Quality Tool
@@ -233,10 +233,10 @@ concepts:
         - title: Unit 09 Lesson
           url: /technical-training/09-connectome-analysis-neuroai/
       activity:
-        - title: Unit 09 Quick Activity
-          url: /technical-training/09-connectome-analysis-neuroai/#quick-activity
+        - title: Unit 09 Lab
+          url: /technical-training/09-connectome-analysis-neuroai/#lab-a-defensible-motif-analysis-2-hours
       slides:
-        - title: Unit 09 Slides
+        - title: Unit 09 Lecture Plan
           url: /technical-training/slides/09-connectome-analysis-neuroai/
       references:
         - title: Journal Club Reading List
@@ -260,10 +260,10 @@ concepts:
         - title: Atlas Reference Lesson
           url: /technical-training/atlas-connectomics-reference/
       activity:
-        - title: Atlas Quick Activity
-          url: /technical-training/atlas-connectomics-reference/#quick-activity
+        - title: Atlas Lab
+          url: /technical-training/atlas-connectomics-reference/#mini-lab-curate-one-entry-30-minutes
       slides:
-        - title: Atlas Slides
+        - title: Atlas Lecture Plan
           url: /technical-training/slides/atlas-connectomics-reference/
       references:
         - title: Framework Overview

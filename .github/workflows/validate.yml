@@ -1,0 +1,78 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+# Two jobs, because the Ruby versions cannot be reconciled in one:
+#   - The stdlib-only validation scripts are run under Ruby 3.3 with plain `ruby`.
+#     They need no gems, so Bundler is never invoked and the Gemfile is irrelevant.
+#   - The Jekyll build needs `bundle install`, and the Gemfile pins `ruby "3.1.6"`.
+#     Bundler refuses to install under any other version ("Your Ruby version is 3.3.6,
+#     but your Gemfile specified 3.1.6"), so that job runs on 3.1.6. The pin is left
+#     in the Gemfile deliberately: it matches the GitHub Pages runtime this site
+#     deploys to, and stripping it would make CI test a stack production does not use.
+
+jobs:
+  scripts:
+    name: Content validation scripts (Ruby 3.3)
+    runs-on: ubuntu-latest
+    env:
+      # The scripts read content files with an explicit UTF-8 encoding, but the locale
+      # still governs Ruby's default external encoding and Jekyll's SCSS converter.
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          # No bundler-cache: these scripts use stdlib only and must not touch the Gemfile.
+
+      # All three scripts below were warning-only until August 2026: they printed
+      # "[WARN] ..." lines and then exited 0 regardless, so a regression was visible in
+      # the log but could never fail a build. They now exit non-zero when they collect
+      # problems, and each gate was verified by injecting a fault and confirming the
+      # non-zero exit.
+      - name: Frontmatter validation
+        run: ruby scripts/validate_frontmatter.rb
+
+      # Also fixed an early `exit 0` that skipped the Marp image-path check entirely
+      # whenever the figure-reference check happened to pass. Both checks now always run.
+      - name: Figure reference validation
+        run: ruby scripts/validate_figure_refs.rb
+
+      - name: Technical evidence validation
+        run: ruby scripts/validate_technical_evidence.rb
+
+  build:
+    name: Jekyll build and link audit (Ruby 3.1.6)
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - uses: actions/checkout@v4
+
+      # Pinned to match the Gemfile's `ruby "3.1.6"`. See the note at the top of this file.
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.6'
+          bundler-cache: true
+
+      # A real gate: a build failure exits non-zero.
+      - name: Build site
+        run: bundle exec jekyll build
+
+      # A real gate: exits 1 if _site is missing or any internal link is broken.
+      # Run with plain `ruby` — stdlib only — but it requires _site/ from the step above.
+      - name: Internal link audit
+        run: ruby scripts/check_site_links.rb
+
+      # check_site_links.rb only confirms that a link's target page exists; it ignores
+      # fragments. This catches the other half: deep links into a heading that has since
+      # been renamed. Rewriting the technical units broke ten such links in
+      # _data/concepts.yml without any check noticing.
+      - name: Fragment (anchor) audit
+        run: ruby scripts/check_anchor_links.rb

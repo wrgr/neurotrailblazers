@@ -47,7 +47,6 @@
 
 10. High-complexity correction panel
 - Key message: correction priority should track downstream impact.
-- Figure: `FIG-RIV-AXDEN-S22-01`
 
 11. Metrics and release gates
 - Key message: pair VI, edge P/R, ERL, and synapse-centric F1 with audit logs.

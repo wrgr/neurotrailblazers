@@ -39,37 +39,61 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Concept Focus
-- Image quality as a scientific constraint.
-- Artifact taxonomy linked to downstream error.
-- QA gates and escalation logic.
+### Image quality as a scientific constraint
 
 ---
 
 ## Core Workflow
 - Inspect image quality and artifact signatures.
-- Classify severity and likely impact.
-- Decide pass/rework with rationale.
-- Log findings for reproducibility.
+- Classify severity and likely impact on segmentation.
+- Decide pass/flag/rework with documented rationale.
+- Log findings in a structured QA record for reproducibility.
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-08: EM basics refresher.
-- 08:00-20: artifact recognition walkthrough.
-- 20:00-34: learner triage round.
-- 34:00-46: QA threshold debate.
-- 46:00-56: decision logging practice.
-- 56:00-60: competency check.
+- Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
+- Preview the three sample image patches posted to the course portal: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
+- Projected EM image gallery (8-10 patches at varying quality levels)
+- Printed or digital QA decision worksheet (one per student)
+- Timer visible to the class
+- Artifact reference card (single page, double-sided)
+- *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
+- Show four images (ssTEM, SBEM, FIB-SEM, and one intentionally ambiguous). Cold-call students for modality identification and reasoning.
+- Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
+- *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
+- Walk through knife chatter, charging, folds, missing sections, and staining gradients with annotated example images.
+- For each artifact, show the segmentation output on the same region so students can see the predicted error type realized in practice.
+- *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
+- *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
+- Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
+- *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
+- *Instructor cue*: "Pair A said this patch is a pass. Pair B said rework. Both of you, defend your position."
+- Facilitate structured debate on 2-3 patches where pairs disagreed. Push students to articulate the cost tradeoff: what is the cost of re-acquiring versus the cost of proofreading the resulting errors?
+- Introduce the concept of escalation levels (hard stop, flag and monitor, pass) and ask students to re-classify their six patches using this framework.
+- *Instructor cue*: "A QA decision that is not logged does not exist. You are now going to write a QA log entry for your hardest patch."
+- Students write a structured QA entry: image ID, artifact type, severity, decision, rationale, and any conditions (e.g., "pass if proofreading budget is allocated to rows 12-18").
+- Show an example of a well-written and a poorly-written QA entry for comparison.
+- *Instructor cue*: "Final check. I am showing one new patch. You have two minutes to write your QA verdict on an index card. Include artifact type, severity, decision, and one sentence of rationale."
+- Collect index cards. Review after class to identify students who need follow-up.
+- **08:00**: Can students distinguish EM modalities from image appearance?
+- **20:00**: Can students predict segmentation error type from artifact type?
+- **34:00**: Can students apply severity ratings consistently across patches?
+- **46:00**: Can students articulate cost tradeoffs in QA decisions?
+- **56:00**: Can students write a structured QA log entry?
 
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** you can proofread your way out of a bad image.
+- **Misconception guardrail:** a noisy image is worse for segmentation than a clean image with faint membranes.
+- **Misconception guardrail:** artifact severity can be judged from a count, when the spatial distribution matters more.
+- **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
 
 ---
 
 ## Studio Activity
-Classify 6 patches by artifact type/severity and propose action.
+{: #studio-activity}
 
 ---
 
@@ -81,14 +105,14 @@ Classify 6 patches by artifact type/severity and propose action.
 ---
 
 ## Assessment Rubric
-- Minimum: accurate major artifact calls + action decision.
-- Strong: clear impact reasoning and consistent thresholds.
-- Failure: artifact labels without downstream implications.
+- **Minimum (pass)**: Accurate identification of major artifacts across all patches, correct mapping to segmentation error type, and a defensible pass/flag/rework decision for each patch.
+- **Strong (merit)**: Clear articulation of cost tradeoffs, consistent severity thresholds across patches, spatially aware analysis, and a well-structured recommendation memo with specific conditions.
+- **Failure**: Artifact labels assigned without reference to downstream segmentation implications, or QA decisions made without documented rationale.
 
 ---
 
 ## Exit Ticket
-Pick one artifact and explain how it could create a merge or split error later.
+Pick one artifact and explain how it could create a merge or split error later. Then estimate: if this artifact appears on 5% of sections, how many additional proofreading hours would it add to a 1000-section volume?
 
 ---
 

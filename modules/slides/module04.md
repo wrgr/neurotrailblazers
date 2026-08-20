@@ -4,6 +4,7 @@ title: "Slide Deck: Module 04"
 permalink: /modules/slides/module04/
 slug: module04-slides
 track: core-concepts-methods
+content_type: delivery
 pathways:
   - classroom delivery
   - teaching preparation

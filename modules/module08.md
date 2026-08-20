@@ -55,6 +55,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -90,6 +91,15 @@ Every connectomics claim requires comparison to a null model. Without a null, yo
 
 ### 4) Interpretation boundaries: what you can and cannot claim
 Structure constrains possible computation but does not determine function. A connectomics result can say "this wiring pattern is consistent with function X" or "this wiring pattern is more common than expected," but it cannot say "this circuit computes X" without functional evidence. Always state both the supported claim and the explicit non-claim.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** a significant result against a random-graph null is evidence of biological structure.
+- **Misconception guardrail:** the statistical test is the scientific step, when the choice of null model is.
+- **Misconception guardrail:** a metric can be chosen after seeing the data without cost to the inference.
+- **Misconception guardrail:** reporting the tests that worked is sufficient without reporting how many were run.
 
 ## Core workflow
 1. Define question and estimand: what structural feature would constrain or inform the biological question?
@@ -132,6 +142,7 @@ Structure constrains possible computation but does not determine function. A con
    - Exit ticket: "Write one claim and one explicit non-claim from the same test outcome."
 
 ## Studio activity: hypothesis design and peer critique (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** Your lab is planning a study of feedforward vs feedback connectivity in mouse visual cortex using the MICrONS dataset. You need to design three testable hypotheses about the circuit architecture.
 

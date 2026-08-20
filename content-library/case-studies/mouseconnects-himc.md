@@ -49,6 +49,8 @@ combines_with:
   - microns-visual-cortex
   - flywire-whole-brain
   - h01-human-cortex
+use_layout_hero: false
+content_type: core
 ---
 
 # MouseConnects and HI-MC

@@ -44,6 +44,8 @@ combines_with:
   - proofreading-tools
   - metrics-and-qa
   - worked-examples
+use_layout_hero: false
+content_type: core
 ---
 
 # Error Taxonomy in Connectome Proofreading

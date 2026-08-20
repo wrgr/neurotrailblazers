@@ -10,9 +10,10 @@ MODULE_DIR = File.join(ROOT, 'modules')
 SLIDE_PAGE_DIR = File.join(ROOT, 'modules', 'slides')
 MARP_DIR = File.join(ROOT, 'course', 'decks', 'marp', 'modules')
 WORKSHEET_DIR = File.join(ROOT, 'assets', 'worksheets')
+SESSION_DIR = File.join(ROOT, 'teaching', 'sessions')
 
 def parse_file(path)
-  raw = File.read(path)
+  raw = File.read(path, encoding: 'UTF-8')
   parts = raw.split(/^---\s*$\n/, 3)
   return nil if parts.length < 3
 
@@ -21,10 +22,17 @@ def parse_file(path)
   [fm, body]
 end
 
+# Matches a level-2 section by heading. Module pages vary their heading wording
+# ("60-minute tutorial run-of-show" vs "Detailed run-of-show (90 minutes)",
+# "Studio activity" vs "Studio activity: ..."), so fall back to a substring match
+# before giving up. An exact match always wins.
 def section(body, heading)
-  rx = /^##\s+#{Regexp.escape(heading)}\s*$\n(.*?)(?=^##\s+|\z)/m
-  match = body.match(rx)
-  match ? match[1].strip : ''
+  exact = body.match(/^##\s+#{Regexp.escape(heading)}\s*$\n(.*?)(?=^##\s+|\z)/m)
+  return exact[1].strip if exact
+
+  key = heading.sub(/\A\d+-minute\s+/i, '').sub(/\Atutorial\s+/i, '')
+  loose = body.match(/^##\s+[^\n]*#{Regexp.escape(key)}[^\n]*$\n(.*?)(?=^##\s+|\z)/mi)
+  loose ? loose[1].strip : ''
 end
 
 def first_paragraph(text)
@@ -35,8 +43,12 @@ def list_items(text)
   text.each_line.map(&:strip).select { |ln| ln.match?(/^(\-|\*|\d+\.)\s+/) }
 end
 
+# Collects misconception guardrail lines from a section. Skips headings, which may
+# themselves contain the word (e.g. "### Misconception guardrails").
 def misconception_items(text)
-  text.each_line.map(&:strip).select { |ln| ln.downcase.include?('misconception') }
+  text.each_line.map(&:strip).select do |ln|
+    ln.downcase.include?('misconception') && !ln.start_with?('#')
+  end
 end
 
 def normalize_bullets(items, fallback = '- See module page for details.')
@@ -45,9 +57,63 @@ def normalize_bullets(items, fallback = '- See module page for details.')
   items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '- ') }.join("\n")
 end
 
+# Returns the body of a section with its sub-headings demoted one level, so a
+# module section can be embedded under a worksheet heading without clashing.
+def demote_headings(text)
+  text.gsub(/^(#{'#'}{3,5})\s+/) { "#{Regexp.last_match(1)}# " }
+end
+
+# Pulls a labelled sub-block out of a section, e.g. the outputs list inside the
+# Studio activity section. Module pages label these inconsistently, so accept all
+# of: "**Outputs**", "**Outputs:**", "**Outputs**:", "### Outputs", "## Outputs".
+# Returns '' when absent.
+def labelled_block(text, label)
+  lbl = Regexp.escape(label)
+  patterns = [
+    /^\*\*#{lbl}:?\*\*:?\s*$\n(.*?)(?=^\*\*|^\#{2,}\s|\z)/mi,
+    /^\#{2,6}\s+#{lbl}\s*$\n(.*?)(?=^\#{2,6}\s|^\*\*|\z)/mi
+  ]
+  patterns.each do |rx|
+    m = text.match(rx)
+    return m[1].strip if m && !m[1].strip.empty?
+  end
+  ''
+end
+
+def inline_labelled(text, label)
+  m = text.match(/^\*\*#{Regexp.escape(label)}:\*\*\s*(.+)$/)
+  m ? m[1].strip : ''
+end
+
+# Extracts the "- **Technical:** ..." style rubric lines, keeping the label.
+def rubric_lines(text)
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^\-\s+\*\*/) }
+end
+
+# Numbered steps, tolerating the bold-wrapped form some module pages use
+# ("**1. 00:00-08:00 - Label**") as well as the plain "1. Label" form.
+def numbered_steps(text)
+  text.each_line.map(&:strip).select { |ln| ln.match?(/^(\*\*)?\d+\.\s+/) }
+end
+
+# Lines that begin with a time range, with or without bold or a leading number:
+# "**00:00-08:00 | Label**", "1. **00:00-08:00** Label", "00:00-08:00 - Label".
+def timed_lines(text)
+  text.each_line.map(&:strip).select do |ln|
+    ln.gsub('**', '').match?(/\A(\d+\.\s+)?\d{1,2}:\d{2}\s*[-\u2013\u2014]\s*\d{1,2}:\d{2}/)
+  end
+end
+
+def bullet_or_dash(items, fallback)
+  return fallback if items.empty?
+
+  items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '') }
+end
+
 FileUtils.mkdir_p(SLIDE_PAGE_DIR)
 FileUtils.mkdir_p(MARP_DIR)
 FileUtils.mkdir_p(WORKSHEET_DIR)
+FileUtils.mkdir_p(SESSION_DIR)
 
 module_paths = Dir.glob(File.join(MODULE_DIR, 'module*.md')).sort
 count = 0
@@ -68,7 +134,7 @@ module_paths.each do |path|
   concept_section = section(body, 'Concept set')
   workflow = first_paragraph(section(body, 'Core workflow'))
   workflow_section = section(body, 'Core workflow')
-  run_of_show = section(body, '60-minute tutorial run-of-show')
+  run_of_show = section(body, 'run-of-show')
   activity_section = section(body, 'Studio activity')
   activity = first_paragraph(activity_section)
   rubric_section = section(body, 'Assessment rubric')
@@ -77,35 +143,251 @@ module_paths.each do |path|
   references = Array(fm['references'])
 
   workflow_items = normalize_bullets(list_items(workflow_section))
-  run_items = normalize_bullets(list_items(run_of_show))
+  default_run = "- 00:00-08:00 frame the capability target and activate prior knowledge.\n" \
+                "- 08:00-20:00 instructor models one worked example, thinking aloud about uncertainty.\n" \
+                "- 20:00-38:00 guided learner activity.\n" \
+                "- 38:00-50:00 debrief and misconception correction.\n" \
+                "- 50:00-58:00 competency check.\n" \
+                "- 58:00-60:00 exit prompt and next-step assignment."
+  run_items = normalize_bullets(list_items(run_of_show), default_run)
   misconception_lines = normalize_bullets(misconception_items(concept_section), '- Surface and correct one likely misconception during debrief.')
   rubric_items = normalize_bullets(list_items(rubric_section), "- Use module rubric headings on the module page.")
 
   worksheet_mod_dir = File.join(WORKSHEET_DIR, "module#{num}")
   FileUtils.mkdir_p(worksheet_mod_dir)
   worksheet_path = File.join(worksheet_mod_dir, "module#{num}-activity.md")
+
+  scenario = inline_labelled(activity_section, 'Scenario')
+  scenario = activity if scenario.empty?
+  outputs = bullet_or_dash(list_items(labelled_block(activity_section, 'Outputs')), [])
+  outputs = bullet_or_dash(list_items(labelled_block(activity_section, 'Expected outputs')), []) if outputs.empty?
+  task_steps = bullet_or_dash(numbered_steps(activity_section), [])
+  task_steps = bullet_or_dash(numbered_steps(workflow_section), []) if task_steps.empty?
+  workflow_steps = bullet_or_dash(numbered_steps(workflow_section), [])
+  run_steps = bullet_or_dash(numbered_steps(run_of_show), [])
+  run_steps = bullet_or_dash(timed_lines(run_of_show), []) if run_steps.empty?
+  rubric_rows = rubric_lines(rubric_section)
+  misconceptions = bullet_or_dash(misconception_items(concept_section), [])
+  preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
+  preclass = bullet_or_dash(list_items(labelled_block(run_of_show, 'Pre-class')), []) if preclass.empty?
+  # Fall back to the free-text `prerequisites` field when the structured list is
+  # empty. Modules 01-11 populate only the former, and reading just the list left
+  # eleven worksheets showing a generic placeholder.
+  prereqs = Array(fm['prerequisites_list'])
+  if prereqs.empty? && !fm['prerequisites'].to_s.strip.empty?
+    text = fm['prerequisites'].to_s.strip
+    prereqs = text.casecmp('none').zero? ? [] : [text]
+  end
+  key_questions = Array(fm['key_questions'])
+  duration = fm['duration'].to_s
+  related_units = Array(fm['related_tools']) + Array(fm['datasets'])
+
+  outputs_block =
+    if outputs.empty?
+      "- Artifact produced during the activity\n- One stated limitation or uncertainty\n- One revision made in response to feedback"
+    else
+      outputs.map { |o| "- #{o.sub(/,\z/, '').sub(/\.\z/, '')}" }.join("\n")
+    end
+
+  task_block =
+    if task_steps.empty?
+      "1. Read the scenario and restate the goal in your own words.\n2. Produce the artifact.\n3. Record evidence and limitations below."
+    else
+      task_steps.each_with_index.map { |t, k| "#{k + 1}. #{t}" }.join("\n")
+    end
+
+  workflow_block =
+    if workflow_steps.empty?
+      "- [ ] See the module page for the workflow."
+    else
+      workflow_steps.map { |w| "- [ ] #{w}" }.join("\n")
+    end
+
+  timing_block =
+    if run_steps.empty?
+      "| 00:00-08:00 | Frame the capability target |\n" \
+      "| 08:00-20:00 | Model one worked example aloud |\n" \
+      "| 20:00-38:00 | Guided learner activity |\n" \
+      "| 38:00-50:00 | Debrief and misconception correction |\n" \
+      "| 50:00-58:00 | Competency check |\n" \
+      "| 58:00-60:00 | Exit prompt |"
+    else
+      run_steps.map do |r|
+        clean = r.gsub('**', '').strip.sub(/\A\d+\.\s+/, '')
+        time, _, rest = clean.partition(/\s*[|:\u2014-]\s+/)
+        if rest.to_s.strip.empty? || !time.match?(/\d/)
+          "| | #{clean.gsub('|', '/')} |"
+        else
+          "| #{time.strip} | #{rest.strip.gsub('|', '/')} |"
+        end
+      end.join("\n")
+    end
+
+  rubric_block =
+    if rubric_rows.empty?
+      "- Use the rubric headings on the module page."
+    else
+      rubric_rows.join("\n")
+    end
+
+  misconception_block =
+    if misconceptions.empty?
+      "- [ ] I have stated one thing I am still unsure about."
+    else
+      misconceptions.map do |m|
+        text = m.gsub('**', '')
+                .sub(/\A[-*\d.]+\s*/, '')
+                .sub(/\AMisconception(\s+(guardrail|to\s+prevent|to\s+watch))?\s*:\s*/i, '')
+                .strip
+        text = text[0].upcase + text[1..].to_s unless text.empty?
+        "- [ ] I did not assume: #{text}"
+      end.join("\n")
+    end
+
+  prereq_block =
+    if prereqs.empty? && fm['prerequisites'].to_s.strip.casecmp('none').zero?
+      "- [ ] Nothing. This module assumes no prior work in this curriculum."
+    elsif prereqs.empty?
+      "- [ ] The module prerequisites listed on the module page"
+    else
+      prereqs.map { |p| "- [ ] #{p}" }.join("\n")
+    end
+  prereq_block += "\n" + preclass.map { |p| "- [ ] #{p}" }.join("\n") unless preclass.empty?
+
+  question_block =
+    if key_questions.empty?
+      ''
+    else
+      "\n## Questions this module answers\n\nKeep these in view. At the end, answer each in one sentence.\n\n" +
+        key_questions.each_with_index.map { |q, k| "#{k + 1}. #{q}\n   - Your answer:" }.join("\n") + "\n"
+    end
+
   File.write(worksheet_path, <<~MD)
     # Module #{num} Activity Worksheet
 
-    ## Module
-    #{title}
+    **Module:** #{title}#{duration.empty? ? '' : "  \n**Duration:** #{duration}"}  
+    *Generated from the module page. Edit `modules/module#{num}.md`, not this file.*
 
-    ## Capability Target
+    ---
+
+    ## Capability target
+
     #{capability}
 
-    ## Studio Activity Instructions
-    #{activity}
+    You are done when you can demonstrate this, not when you have filled in every box below.
 
-    ## Evidence and Reasoning Notes
-    - Claim:
-    - Evidence:
-    - Limitation:
+    ---
 
-    ## Rubric Check
-    #{rubric}
+    ## Before you start
 
-    ## Exit Prompt
+    Check that you have:
+
+    #{prereq_block}
+
+    Bring one question you already have about this topic. Write it here so you can check
+    at the end whether it was answered:
+
+    > My question:
+    #{question_block}
+    ---
+
+    ## The task
+
+    **Scenario:** #{scenario}
+
+    #{task_block}
+
+    ### What you hand in
+
+    #{outputs_block}
+
+    ---
+
+    ## Working checklist
+
+    Tick as you go. If you skip a step, write why — a skipped step with a stated reason
+    is a decision; a skipped step without one is a gap.
+
+    #{workflow_block}
+
+    ---
+
+    ## Evidence and reasoning
+
+    Fill one row per claim you make in your artifact. A claim without a limitation is
+    not finished.
+
+    | # | Claim | Evidence (what specifically) | Limitation / what would change my mind |
+    |---|---|---|---|
+    | 1 | | | |
+    | 2 | | | |
+    | 3 | | | |
+
+    **Confidence.** For your main claim, mark one and say why:
+
+    - [ ] **High** — two or more independent lines of evidence agree
+    - [ ] **Medium** — one strong line, or several that share a weakness
+    - [ ] **Uncertain** — the deciding evidence is not available to me
+
+    Why:
+
+    **One alternative I considered and rejected**, and the reason:
+
+    ---
+
+    ## Misconception self-check
+
+    These are the errors this module is designed to prevent. Confirm you did not make
+    them, or note where you nearly did:
+
+    #{misconception_block}
+
+    ---
+
+    ## Session timing (facilitator reference)
+
+    | Time | Segment |
+    |---|---|
+    #{timing_block}
+
+    ---
+
+    ## Rubric
+
+    Score yourself before anyone else does. Where you fall short, name the specific next
+    action rather than a general intention.
+
+    #{rubric_block}
+
+    **My self-assessment:**
+
+    - Strongest part of my work, and the evidence for that:
+    - Weakest part, and the specific next action:
+
+    ---
+
+    ## Exit prompt
+
     #{prompt}
+
+    **Your answer:**
+
+    ---
+
+    ## Peer review (swap worksheets)
+
+    Reviewing someone else's reasoning is the fastest way to see the gaps in your own.
+    Assess the **evidence quality**, not whether you agree with the conclusion.
+
+    - Is every claim paired with specific evidence?
+    - Is at least one limitation stated, and is it a real one?
+    - Is the confidence level justified by the number of *independent* evidence lines?
+    - One thing this person did better than me:
+    - One question I would ask them:
+
+    ---
+
+    *Module page: `/modules/module#{num}/` · Slides: `/modules/slides/module#{num}/` · [Facilitator guide](/teaching/facilitator-guide/)*
   MD
 
   marp_path = File.join(MARP_DIR, "module#{num}.marp.md")
@@ -208,6 +490,7 @@ module_paths.each do |path|
     permalink: /modules/slides/module#{num}/
     slug: module#{num}-slides
     track: core-concepts-methods
+    content_type: delivery
     pathways:
       - classroom delivery
       - teaching preparation
@@ -227,8 +510,193 @@ module_paths.each do |path|
     </div>
   MD
 
+
+  # ---- Ready-to-run session kit -------------------------------------------
+  # One page a facilitator opens ten minutes before walking in. Everything it
+  # shows already existed, scattered across the module page, the worksheet, the
+  # slide page and two deck artifacts in course/decks/marp/out/.
+  timing_rows =
+    if run_steps.empty?
+      "| 00:00-08:00 | Frame the capability target | Prior knowledge, not recap |\n" \
+      "| 08:00-20:00 | Model one worked example aloud | Narrate your own uncertainty |\n" \
+      "| 20:00-38:00 | Guided learner activity | Circulate; ask about evidence, not answers |\n" \
+      "| 38:00-50:00 | Debrief and misconception correction | Compare publicly |\n" \
+      "| 50:00-58:00 | Competency check | Individual, written |\n" \
+      "| 58:00-60:00 | Exit prompt | One thing still uncertain |"
+    else
+      run_steps.map do |r|
+        clean = r.gsub('**', '').strip.sub(/\A\d+\.\s+/, '')
+        time, _, rest = clean.partition(/\s*[|:—-]\s+/)
+        if rest.to_s.strip.empty? || !time.match?(/\d/)
+          "| | #{clean.gsub('|', '/')} | |"
+        else
+          "| #{time.strip} | #{rest.strip.gsub('|', '/')} | |"
+        end
+      end.join("\n")
+    end
+
+  misconception_rows =
+    if misconceptions.empty?
+      "- No misconception guardrails are defined for this module yet. Add them to the module page's Concept set as `- **Misconception guardrail:** <the belief>` and they will appear here."
+    else
+      misconceptions.map do |m|
+        t = m.gsub('**', '').sub(/\A[-*\d.]+\s*/, '')
+             .sub(/\AMisconception(\s+(guardrail|to\s+prevent|to\s+watch))?\s*:\s*/i, '').strip
+        t = t[0].upcase + t[1..].to_s unless t.empty?
+        "- **They may believe:** #{t}\n  - *Surface it by asking:* \"What would have to be true for that to hold? What would change your mind?\""
+      end.join("\n")
+    end
+
+  session_path = File.join(SESSION_DIR, "module#{num}.md")
+  File.write(session_path, <<~MD)
+    ---
+    layout: page
+    title: "Session Kit: #{title}"
+    description: "Everything needed to run Module #{num} as a taught session: prep, timing, materials, misconceptions, rubric."
+    permalink: /teaching/sessions/module#{num}/
+    slug: session-module#{num}
+    track: career-and-community
+    content_type: delivery
+    pathways:
+      - classroom delivery
+      - mentor support
+    ---
+
+    *Generated from `modules/module#{num}.md`. Edit the module page, not this file.*
+
+    ## At a glance
+
+    | | |
+    |---|---|
+    | **Duration** | #{duration.empty? ? '60 minutes' : duration} |
+    | **Capability target** | #{capability} |
+    | **Learners leave with** | #{outputs.empty? ? 'An evidence-backed artifact from the studio activity' : outputs.first.to_s.sub(/[.,]\z/, '')} |
+
+    ## Before you walk in
+
+    - [ ] You can state the capability target in one sentence without reading it.
+    - [ ] You have **one** worked example you will narrate, including where you are unsure.
+    - [ ] Data access works — accounts, viewer, notebook — **verified today, not last week**.
+    - [ ] The rubric is visible to learners before they start, not after.
+    - [ ] You have decided what "uncertain" earns, and you will say so out loud.
+    #{prereqs.empty? ? '' : "\nLearners should arrive having covered:\n\n" + prereqs.map { |p| "- #{p}" }.join("\n")}
+    #{preclass.empty? ? '' : "\nPre-class preparation set for learners:\n\n" + preclass.map { |p| "- #{p}" }.join("\n")}
+
+    ## Materials
+
+    <div class="resource-card">
+      <div class="resource-links">
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open deck (HTML)</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.pptx' | relative_url }}">Download deck (.pptx)</a>
+        <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Learner worksheet</a>
+        <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>
+      </div>
+    </div>
+
+    ## Run of show
+
+    | Time | Segment | Your note |
+    |---|---|---|
+    #{timing_rows}
+
+    ## The activity
+
+    **Scenario:** #{scenario}
+
+    #{task_block}
+
+    **What learners hand in**
+
+    #{outputs_block}
+
+    ## Misconceptions to target
+
+    These are the errors this session exists to prevent. Surface them in the debrief
+    rather than pre-empting them in the lecture — a misconception a learner has
+    voiced is far easier to correct than one they are holding silently.
+
+    #{misconception_rows}
+
+    ## Naming the norm
+
+    Every session is a chance to make one piece of the hidden curriculum explicit.
+    Pick a moment where you would normally just *do* the professional thing, and say
+    out loud why you are doing it — then ask whether anyone was taught that.
+
+    For this session, the candidate is whichever norm the activity most depends on:
+    stating an assumption in the same sentence as the claim, recording the version a
+    number came from, or saying "uncertain" and having it count as a real answer.
+    See [the hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) for the
+    collected set and why naming them is a fairness intervention rather than etiquette.
+
+    ## Assessment
+
+    #{rubric_block}
+
+    **Grade the reasoning, not the answer.** A correct call with no evidence chain
+    should not outscore a well-reasoned incorrect one — and saying so publicly changes
+    behaviour within one session.
+
+    ## Exit prompt
+
+    #{prompt}
+
+    ## If this session goes wrong
+
+    - **Nobody talks in the debrief.** You asked "any questions?" Ask instead: "Which
+      cue would you drop first if the data got worse?"
+    - **Everyone finishes early.** They are pattern-matching, not judging. Give an
+      ambiguous case where the answer is "uncertain" and see what happens.
+    - **Nobody finishes.** The scaffolding came off too fast. Work the next case
+      together rather than pressing on.
+    - **A learner is silently lost.** The most likely cause is unstated vocabulary.
+      Point them at the [dictionary]({{ '/technical-training/dictionary/' | relative_url }}) and check back.
+
+    ---
+
+    *[All session kits]({{ '/teaching/sessions/' | relative_url }}) · [Facilitator guide]({{ '/teaching/facilitator-guide/' | relative_url }})*
+  MD
+
   count += 1
 end
+
+sessions_index = File.join(SESSION_DIR, 'index.md')
+File.write(sessions_index, <<~MD)
+  ---
+  layout: page
+  title: "Session Kits"
+  description: "One ready-to-run page per module: prep checklist, timing, materials, misconceptions, rubric."
+  permalink: /teaching/sessions/
+  slug: session-kits
+  track: career-and-community
+  content_type: delivery
+  pathways:
+    - classroom delivery
+    - mentor support
+  ---
+
+  Each kit is the single page to open ten minutes before walking in. Everything in it
+  already existed — capability target, run of show, worksheet, rubric, rendered deck —
+  but was spread across five locations. These assemble it.
+
+  Kits are generated from the module pages. To change one, edit
+  `modules/moduleNN.md` and re-run `scripts/generate_module_teaching_materials.rb`.
+
+  For the reasoning behind the session design — why half of contact time should be
+  learner judgement rather than explanation, how to differentiate across the learner
+  personas, and what to do when a session goes wrong — see the
+  [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
+
+  <div class="cards-grid">
+  {% assign kits = site.pages | where_exp: 'p', "p.path contains 'teaching/sessions/module'" | sort: 'path' %}
+  {% for p in kits %}
+    <article class="card">
+      <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title | remove: 'Session Kit: ' }}</a></h3>
+      <p class="card-description">{{ p.description }}</p>
+    </article>
+  {% endfor %}
+  </div>
+MD
 
 index_path = File.join(SLIDE_PAGE_DIR, 'index.md')
 File.write(index_path, <<~MD)
@@ -238,6 +706,7 @@ File.write(index_path, <<~MD)
   permalink: /modules/slides/
   slug: module-slides
   track: core-concepts-methods
+  content_type: delivery
   pathways:
     - classroom delivery
   ---
@@ -257,4 +726,4 @@ File.write(index_path, <<~MD)
   </div>
 MD
 
-puts "Generated teaching materials for #{count} modules."
+puts "Generated teaching materials and session kits for #{count} modules."

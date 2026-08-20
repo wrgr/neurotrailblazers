@@ -46,6 +46,8 @@ combines_with:
   - organelle-cues
   - dendrite-biology
   - axon-biology
+use_layout_hero: false
+content_type: core
 ---
 
 # Neuronal Soma Ultrastructure

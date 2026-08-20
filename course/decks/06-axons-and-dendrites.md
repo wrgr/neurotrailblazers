@@ -33,11 +33,9 @@
 
 7. High-complexity proofreading cue
 - Key message: contextual neighborhood review changes final class assignment.
-- Figure: `FIG-RIV-AXDEN-S22-01`
 
 8. Late-stage synthesis case
 - Key message: adjudication logs should include alternate hypotheses.
-- Figure: `FIG-RIV-AXDEN-S23-01`
 
 9. Team calibration workflow
 - Key message: shared edge-case review sessions reduce reviewer drift.

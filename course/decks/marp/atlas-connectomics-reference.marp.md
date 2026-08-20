@@ -39,7 +39,6 @@ Operational reference system for papers, datasets, tools, and media mapped to re
 ---
 
 ## Visual context: comparative resource panel
-![w:940](../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S20-03.png)
 
 ---
 

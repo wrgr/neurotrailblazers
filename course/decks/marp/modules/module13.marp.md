@@ -34,20 +34,27 @@ Teaching Deck
 ---
 
 ## Capability Target
-Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits.
+Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits. Concretely: choose a split strategy from the leakage channels present in your data rather than from convention, pick metrics from the decision the model will support, quantify how much of your reported performance survives a harder split, and write a limitation statement specific enough that a reader knows which uses of your model you would refuse.
 
 ---
 
 ## Concept Focus
 ### 1) Feature engineering defines the hypothesis space
-- **Technical:** feature choices encode assumptions about what variation is biologically meaningful.
-- **Plain language:** your model can only learn what your features allow.
+- **Technical:** feature choices encode assumptions about what variation is biologically meaningful. For a neurite-fragment classifier a defensible starting set is skeleton path length, mean and variance of caliber, branch count, tortuosity, synapse count as presynaptic and as postsynaptic partner, and mitochondrial volume fraction — each of which corresponds to a cue a human annotator actually uses. Every feature you add also adds a way for the model to identify the *dataset* rather than the *biology*: raw intensity statistics, for instance, encode staining batch almost perfectly.
+- **Plain language:** your model can only learn what your features allow, and it will learn the easiest thing they allow.
 - **Misconception guardrail:** adding more features always improves science.
 
 ---
 
 ## Core Workflow
-- See module page for details.
+- Write the biological decision the model will support, naming who acts on the output and what they do differently as a result.
+- Enumerate leakage channels present in your data — fragment duplication, spatial adjacency, annotator provenance, label circularity — and choose the split that blocks the strongest one.
+- Construct the feature set with a one-line rationale per feature, and record the segmentation version the features were computed from.
+- Fit all preprocessing (scaling, imputation, feature selection) inside the training fold only.
+- Train a trivial baseline first — majority class, or a single-feature threshold — and report it alongside every later model.
+- Evaluate with the metric that matches the decision from step 1, plus per-class recall and prevalence.
+- Run error analysis on the failures: sample 20-30 misclassified examples and classify the failure reason by hand.
+- Write the model card: intended use, unsupported uses, evaluation splits, metrics with intervals, and the domain in which the numbers hold.
 
 ---
 
@@ -64,12 +71,15 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ## Misconceptions to Watch
 - **Misconception guardrail:** adding more features always improves science.
 - **Misconception guardrail:** one summary metric is enough.
-- **Misconception guardrail:** random split always gives valid generalization estimates.
+- **Misconception guardrail:** a random split always gives a valid generalization estimate.
+- **Misconception guardrail:** a 99% accurate classifier is a useful classifier.
+- **Misconception guardrail:** the training labels are the truth the model is failing to reach.
 
 ---
 
 ## Studio Activity
-
+{: #studio-activity}
+**Scenario:** You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.
 
 ---
 
@@ -82,17 +92,19 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 
 ## Assessment Rubric
 - **Minimum pass**
-- Feature and split decisions are justified.
-- Metrics include at least one biologically targeted criterion.
+- Feature and split decisions are justified against a named leakage channel.
+- Metrics include at least one biologically targeted criterion tied to a real capacity or threshold.
 - Limitation statement is specific and actionable.
 - **Strong performance**
-- Identifies and mitigates likely leakage channels.
-- Uses error analysis to propose next data improvements.
-- Distinguishes exploratory model from deployment-ready model.
+- Quantifies how much performance each successive split control removes.
+- Uses error analysis to propose the next data improvement rather than the next model.
+- Names the assumption behind the chosen block size or grouping in the same sentence as the number.
+- Distinguishes an exploratory model from a deployment-ready one and states what would have to change.
 - **Common failure modes**
-- Leakage-prone random splits for spatially correlated data.
-- Overfocus on aggregate accuracy.
+- Leakage-prone random splits on spatially correlated data.
+- Overfocus on aggregate accuracy with prevalence unreported.
 - Claims of biological insight unsupported by model diagnostics.
+- Features computed against an unpinned segmentation version.
 
 ---
 

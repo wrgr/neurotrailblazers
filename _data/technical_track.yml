@@ -1,13 +1,13 @@
 ---
 name: "Technical Connectomics Track"
 course_positioning: "Canonical open connectomics course that complements the broader NeuroTrailblazers site."
-status: "planned"
-last_updated: 2026-03-09
+status: "published"
+last_updated: 2026-08-20
 maintainer: TBD
 modules:
   - slug: "01-why-map-the-brain"
     title: "Why Map the Brain"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - hypothesis-framing
     user_needs:
@@ -15,10 +15,10 @@ modules:
       - avoiding overclaiming
     mapped_modules:
       - module01
-    mapping_note: "Primary overlap with orientation, motivation, and connectomics purpose."
+    mapping_note: "Shares orientation, motivation, and connectomics-purpose material with module01; this unit goes further into hypothesis framing and claim discipline."
   - slug: "02-brain-data-across-scales"
     title: "Brain Data Across Scales"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - scale-selection
     user_needs:
@@ -28,10 +28,10 @@ modules:
       - module04
       - module05
       - module12
-    mapping_note: "Coverage split across neuroanatomy, EM imaging basics, and data scale."
+    mapping_note: "Legacy coverage of this material is split across modules 04, 05, and 12 (neuroanatomy, EM imaging basics, data scale); this unit consolidates it around scale selection."
   - slug: "03-em-prep-and-imaging"
     title: "EM Prep and Imaging"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - em-artifacts-and-qa
     user_needs:
@@ -39,10 +39,10 @@ modules:
       - debugging acquisition issues
     mapped_modules:
       - module05
-    mapping_note: "Current overlap centers on EM principles and image interpretation."
+    mapping_note: "Overlaps module05 on EM principles and image interpretation; this unit adds preparation, acquisition, and QA detail."
   - slug: "04-volume-reconstruction-infrastructure"
     title: "Volume Reconstruction Infrastructure"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - reconstruction-architecture
     user_needs:
@@ -51,10 +51,10 @@ modules:
     mapped_modules:
       - module12
       - module18
-    mapping_note: "Partial overlap through big-data systems and preprocessing pipelines."
+    mapping_note: "Overlaps modules 12 and 18 on big-data systems and preprocessing pipelines; this unit treats reconstruction infrastructure end to end."
   - slug: "05-neuronal-ultrastructure"
     title: "Neuronal Ultrastructure"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - ultrastructure-annotation
     user_needs:
@@ -64,10 +64,10 @@ modules:
       - module04
       - module09
       - module11
-    mapping_note: "Distributed overlap across neuroanatomy, morphology, and synaptic logic."
+    mapping_note: "Overlaps modules 04, 09, and 11 across neuroanatomy, morphology, and synaptic logic; this unit focuses on reading ultrastructure cues in EM."
   - slug: "06-axons-and-dendrites"
     title: "Axons and Dendrites"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - process-classification
     user_needs:
@@ -76,10 +76,10 @@ modules:
     mapped_modules:
       - module04
       - module09
-    mapping_note: "Current treatment appears in structural neuroanatomy and morphology modules."
+    mapping_note: "Related treatment appears in the structural neuroanatomy and morphology modules (04 and 09); this unit focuses on axon-versus-dendrite classification and its error costs."
   - slug: "07-glia"
     title: "Glia"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - glia-identification
     user_needs:
@@ -87,10 +87,10 @@ modules:
       - interpreting myelin context
     mapped_modules:
       - module04
-    mapping_note: "Only partial coverage currently; likely a strong candidate for dedicated content."
+    mapping_note: "Module04 covers glia only in passing; this unit is the dedicated treatment."
   - slug: "08-segmentation-and-proofreading"
     title: "Segmentation and Proofreading"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - proofreading-qc
     user_needs:
@@ -99,10 +99,10 @@ modules:
     mapped_modules:
       - module06
       - module07
-    mapping_note: "Direct overlap with existing segmentation and quality-control sequence."
+    mapping_note: "Directly overlaps the modules 06-07 segmentation and quality-control sequence; this unit adds error triage and proofreading quality metrics."
   - slug: "09-connectome-analysis-neuroai"
     title: "Connectome Analysis and NeuroAI"
-    status: "mapped_to_existing"
+    status: "authored"
     primary_concepts:
       - motif-analysis
     user_needs:
@@ -114,14 +114,14 @@ modules:
       - module14
       - module15
       - module20
-    mapping_note: "Strong overlap across graph analysis, ML, CV, LLM, and inference modules."
+    mapping_note: "Overlaps modules 10, 13, 14, 15, and 20 across graph analysis, ML, CV, LLM, and inference; this unit focuses on motif analysis and null-model choice."
   - slug: "atlas-connectomics-reference"
     title: "Atlas Connectomics Reference"
-    status: "planned"
+    status: "authored"
     primary_concepts:
       - reproducibility-and-atlas
     user_needs:
       - finding reliable resources
       - maintaining citation hygiene
     mapped_modules: []
-    mapping_note: "No direct equivalent yet; best handled as dedicated reference content."
+    mapping_note: "No legacy module equivalent; this unit stands alone as reference and curation content."

@@ -39,35 +39,57 @@ Design one hypothesis test with metric, null model, and interpretation boundary 
 ---
 
 ## Concept Focus
-
+### 1) What makes a connectomics hypothesis testable?
+A testable connectomics hypothesis must specify: (a) a structural feature that can be measured from the reconstructed data (e.g., synapse count, motif frequency, path length), (b) a comparison or null expectation (e.g., "more frequent than in a degree-preserving random graph"), and (c) an interpretation boundary (what the result does and does not prove). Many fascinating biological questions ("How does the cortex generate consciousness?") are not directly testable with connectomics because they lack measurable structural endpoints.
 
 ---
 
 ## Core Workflow
-- Define question and estimand.
-- Choose measurable outputs.
-- Select null model.
-- Test and interpret results.
-- Document supported vs unsupported claims.
+- Define question and estimand: what structural feature would constrain or inform the biological question?
+- Choose measurable outputs: specific metric(s) computed from the connectome graph.
+- Select null model: the most stringent null relevant to the claim.
+- Test and interpret results: compute metric, compare to null distribution, compute z-score and p-value.
+- Document supported vs unsupported claims: what the result proves, what it doesn't, and what additional evidence would be needed.
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-08: framing examples.
-- 08:00-20: hypothesis drafting.
-- 20:00-34: metric/null model selection.
-- 34:00-46: interpretation workshop.
-- 46:00-60: competency check.
+- Read the motif analysis content library entry (focus on null models section)
+- Draft one biological question you'd like to test with connectomics data
+- **00:00-08:00 | Framing: good vs bad hypotheses**
+- Show 4 example hypotheses (2 good, 2 poor). Group identifies which are testable and why.
+- Key criteria: measurable endpoint, specified null, interpretation boundary.
+- **08:00-20:00 | Hypothesis drafting**
+- Each learner drafts a hypothesis using a template:
+- "In [dataset/region], [structural feature] is [comparison] compared to [null model]."
+- "This would support [interpretation] but would NOT prove [over-claim]."
+- Peer review: partner evaluates whether the hypothesis is testable.
+- **20:00-34:00 | Metric and null model selection**
+- For each drafted hypothesis, select the appropriate metric and null model.
+- Instructor walks through one example end-to-end: hypothesis → metric → null → expected result → interpretation.
+- Discussion: "What happens if you use the wrong null model?" Show how the same data looks significant or non-significant depending on null choice.
+- **34:00-46:00 | Interpretation workshop**
+- Present 3 pre-computed results (with p-values and z-scores). For each, learners write:
+- Supported claim (what the data shows)
+- Explicit non-claim (what the data does NOT show)
+- One confound that could explain the result
+- Group discussion of each result.
+- **46:00-60:00 | Competency check**
+- Each learner submits their final hypothesis with metric, null model, and interpretation boundaries.
+- Exit ticket: "Write one claim and one explicit non-claim from the same test outcome."
 
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** a significant result against a random-graph null is evidence of biological structure.
+- **Misconception guardrail:** the statistical test is the scientific step, when the choice of null model is.
+- **Misconception guardrail:** a metric can be chosen after seeing the data without cost to the inference.
+- **Misconception guardrail:** reporting the tests that worked is sufficient without reporting how many were run.
 
 ---
 
 ## Studio Activity
-Create a hypothesis-testing sheet and critique a peer's interpretation boundaries.
+{: #studio-activity}
 
 ---
 
@@ -79,9 +101,9 @@ Create a hypothesis-testing sheet and critique a peer's interpretation boundarie
 ---
 
 ## Assessment Rubric
-- Minimum: coherent hypothesis/metric/null trio.
-- Strong: clear uncertainty and non-claim statements.
-- Failure: vague hypothesis without measurable endpoint.
+- **Minimum pass**: Coherent hypothesis/metric/null trio for at least 2 of 3 hypotheses.
+- **Strong performance**: Clear uncertainty and non-claim statements. Null model choice justified. Peer critique identifies genuine issues.
+- **Common failure to flag**: Vague hypothesis without measurable endpoint ("we will study connectivity patterns") or missing null model.
 
 ---
 

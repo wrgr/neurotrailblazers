@@ -1,0 +1,71 @@
+# The core reference layer.
+#
+# These are the surfaces the tracks draw on. They are consulted, not walked:
+# none of them has a required order, and none of them is meant to be finished.
+# Path content (technical units, modules) and delivery material (session kits,
+# decks, worksheets) are deliberately absent from this list.
+surfaces:
+  - slug: content-library
+    title: Content library
+    url: /content-library/
+    size: "45 entries across 8 topic areas"
+    icon: "\U0001F4DA"
+    summary: >-
+      Long-form reference documents at instructor depth: neuroanatomy,
+      ultrastructure, imaging, infrastructure, cell types, connectomics,
+      proofreading and case studies. Each entry runs a full argument with worked
+      examples, misconceptions, and real references, rather than summarising one.
+    reach_for_it_when: "You need the depth behind a claim a unit made in one sentence."
+  - slug: dictionary
+    title: Connectomics dictionary
+    url: /technical-training/dictionary/
+    size: "127 terms"
+    icon: "\U0001F524"
+    summary: >-
+      Every term carries a definition, typical values with units, why the term
+      matters, and what it is commonly confused with. The confusion field is the
+      useful one: most vocabulary errors in this field are near-miss substitutions,
+      not blanks.
+    reach_for_it_when: "A word stops you. Look it up immediately rather than reading past it."
+  - slug: journal-club
+    title: Journal club
+    url: /technical-training/journal-club/
+    size: "200 papers with discussion prompts"
+    icon: "\U0001F4F0"
+    summary: >-
+      The literature organised by topic, each entry stating what the paper
+      established, what it did not establish, and the specific thing worth
+      arguing with. Discussion prompts are written for a group but work alone.
+    reach_for_it_when: "You want to judge a claim, or you are looking for the paper behind a method."
+  - slug: atlas
+    title: Atlas and reference tables
+    url: /technical-training/atlas-connectomics-reference/
+    size: "Scales, numbers, acronyms, datasets"
+    icon: "\U0001F4CA"
+    summary: >-
+      The lookup layer: spatial and temporal scales side by side, canonical
+      dataset dimensions, the acronym set, and the numbers that recur across the
+      curriculum, with units attached and sources named.
+    reach_for_it_when: "You need a number, a scale comparison, or to decode an acronym mid-paper."
+  - slug: hidden-curriculum
+    title: The hidden curriculum
+    url: /hidden-curriculum/
+    size: "8 pages"
+    icon: "\U0001F511"
+    summary: >-
+      The operating knowledge research training assumes you already have:
+      technical practice, reading and judging, lab norms, career mechanics,
+      meta-learning, belonging, and handling conflict. Written down because it is
+      otherwise transmitted only by proximity to someone who already knows, which
+      distributes it unequally by background.
+    reach_for_it_when: "You are unsure what is expected of you, and asking would cost something."
+  - slug: datasets
+    title: Datasets
+    url: /datasets/
+    size: "Access guide, workflow, catalogue"
+    icon: "\U0001F4BE"
+    summary: >-
+      What public volumes exist, what each can and cannot answer, how to get
+      access, and the acquisition-to-interpretation workflow they sit inside.
+      Includes the version-pinning practice that every downstream analysis depends on.
+    reach_for_it_when: "You are choosing data, citing data, or trying to open some."

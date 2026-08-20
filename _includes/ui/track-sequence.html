@@ -1,0 +1,45 @@
+{% comment %}
+  Renders the learner-facing path for one track: time, entry requirement,
+  an ordered sequence with outcomes, completion criteria, and common detours.
+  Usage: {% include ui/track-sequence.html track=track %}
+{% endcomment %}
+{% assign trk = include.track %}
+{% if trk.sequence %}
+<section class="section">
+  <h2>How to work through this track</h2>
+  <p>
+    {% if trk.time_estimate %}<strong>Time:</strong> {{ trk.time_estimate }}.{% endif %}
+    {% if trk.entry_requirement %} <strong>Starting point:</strong> {{ trk.entry_requirement }}{% endif %}
+  </p>
+
+  <ol class="track-sequence">
+    {% for s in trk.sequence %}
+    <li style="margin-bottom:1rem;">
+      <strong>{{ s.step }}</strong>{% if s.hours %} <small>(~{{ s.hours }} h)</small>{% endif %}<br>
+      <span class="card-description">{{ s.do }}</span><br>
+      <small><strong>You finish with:</strong> {{ s.outcome }}</small>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+{% if trk.done_looks_like %}
+<section class="section">
+  <h2>What "done" looks like</h2>
+  <p>Completion here is a capability, not a set of pages visited. You are through this track when:</p>
+  <ul class="list-tight">
+    {% for d in trk.done_looks_like %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if trk.common_detours %}
+<section class="section">
+  <h2>Common detours</h2>
+  <p>The predictable ways learners lose time on this track:</p>
+  <ul class="list-tight">
+    {% for d in trk.common_detours %}<li>{{ d }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endif %}

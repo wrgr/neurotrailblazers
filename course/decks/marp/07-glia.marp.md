@@ -47,12 +47,10 @@ Technical Training: Nanoscale Connectomics
 ---
 
 ## Oligodendrocyte-associated cue context
-![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S15-01.png)
 
 ---
 
 ## Myelin-context interpretation
-![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png)
 - Instructor cue: ask how myelin context changes proofreading priority.
 
 ---

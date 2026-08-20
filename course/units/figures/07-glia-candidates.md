@@ -9,5 +9,3 @@ Total candidates: 7
 | `FIG-RIV-GLIA-S03-01` | `RIV-GLIA` | slide 3 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S03-01.png` |
 | `FIG-RIV-GLIA-S07-01` | `RIV-GLIA` | slide 7 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S07-01.png` |
 | `FIG-RIV-GLIA-S09-01` | `RIV-GLIA` | slide 9 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S09-01.png` |
-| `FIG-RIV-GLIA-S15-01` | `RIV-GLIA` | slide 15 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S15-01.png` |
-| `FIG-RIV-GLIA-S16-01` | `RIV-GLIA` | slide 16 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S16-01.png` |

@@ -33,6 +33,7 @@ combines_with:
   - neuron-type-identification
   - glia-recognition
   - em-principles
+content_type: core
 ---
 
 ## Overview

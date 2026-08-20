@@ -23,8 +23,6 @@ Total candidates: 85
 | `FIG-RIV-AXDEN-S19-01` | `RIV-AXDEN` | slide 19 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-AXDEN-S19-01.png` |
 | `FIG-RIV-AXDEN-S20-01` | `RIV-AXDEN` | slide 20 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-AXDEN-S20-01.png` |
 | `FIG-RIV-AXDEN-S21-01` | `RIV-AXDEN` | slide 21 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-AXDEN-S21-01.png` |
-| `FIG-RIV-AXDEN-S22-01` | `RIV-AXDEN` | slide 22 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-AXDEN-S22-01.png` |
-| `FIG-RIV-AXDEN-S23-01` | `RIV-AXDEN` | slide 23 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-AXDEN-S23-01.png` |
 | `FIG-RIV-ULTRA-S01-01` | `RIV-ULTRA` | slide 1 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S01-01.png` |
 | `FIG-RIV-ULTRA-S04-01` | `RIV-ULTRA` | slide 4 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S04-01.png` |
 | `FIG-RIV-ULTRA-S06-01` | `RIV-ULTRA` | slide 6 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S06-01.png` |
@@ -47,14 +45,11 @@ Total candidates: 85
 | `FIG-RIV-ULTRA-S27-01` | `RIV-ULTRA` | slide 27 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S27-01.png` |
 | `FIG-RIV-ULTRA-S28-01` | `RIV-ULTRA` | slide 28 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S28-01.png` |
 | `FIG-RIV-ULTRA-S29-01` | `RIV-ULTRA` | slide 29 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S29-01.png` |
-| `FIG-RIV-ULTRA-S30-01` | `RIV-ULTRA` | slide 30 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-ULTRA-S30-01.png` |
 | `FIG-RIV-GLIA-S01-01` | `RIV-GLIA` | slide 1 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S01-01.png` |
 | `FIG-RIV-GLIA-S02-01` | `RIV-GLIA` | slide 2 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S02-01.png` |
 | `FIG-RIV-GLIA-S03-01` | `RIV-GLIA` | slide 3 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S03-01.png` |
 | `FIG-RIV-GLIA-S07-01` | `RIV-GLIA` | slide 7 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S07-01.png` |
 | `FIG-RIV-GLIA-S09-01` | `RIV-GLIA` | slide 9 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S09-01.png` |
-| `FIG-RIV-GLIA-S15-01` | `RIV-GLIA` | slide 15 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S15-01.png` |
-| `FIG-RIV-GLIA-S16-01` | `RIV-GLIA` | slide 16 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/frompat/extracted/thumbnails/FIG-RIV-GLIA-S16-01.png` |
 | `FIG-SRC-MODULE14_LESSON2-S02-01` | `SRC-MODULE14_LESSON2` | slide 2 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/assets_outreach/extracted/thumbnails/FIG-SRC-MODULE14_LESSON2-S02-01.png` |
 | `FIG-SRC-MODULE14_LESSON2-S02-02` | `SRC-MODULE14_LESSON2` | slide 2 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/assets_outreach/extracted/thumbnails/FIG-SRC-MODULE14_LESSON2-S02-02.png` |
 | `FIG-SRC-MODULE14_LESSON2-S02-03` | `SRC-MODULE14_LESSON2` | slide 2 | `/Users/wgray13/Downloads/nt_figure_extraction_package (1)/connectomics_figures/assets_outreach/extracted/thumbnails/FIG-SRC-MODULE14_LESSON2-S02-03.png` |

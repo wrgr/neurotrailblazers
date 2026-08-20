@@ -48,6 +48,8 @@ combines_with:
   - myelin-and-nodes
   - synapse-classification
   - soma-ultrastructure
+use_layout_hero: false
+content_type: core
 ---
 
 # Axon Biology and Ultrastructure

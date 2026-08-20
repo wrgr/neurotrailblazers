@@ -1,0 +1,18 @@
+{% comment %}
+  Renders the core reference layer from _data/core_surfaces.yml.
+  Optional: compact=true drops the "reach for it when" footer strip.
+  Usage: {% include ui/core-surfaces.html %}
+{% endcomment %}
+<div class="arch-grid">
+  {% for s in site.data.core_surfaces.surfaces %}
+  <article class="arch-card" style="--accent: var(--layer-core); --accent-tint: var(--layer-core-tint);">
+    <span class="arch-chip" aria-hidden="true">{{ s.icon }}</span>
+    <h3 class="arch-title"><a href="{{ s.url | relative_url }}">{{ s.title }}</a></h3>
+    <p class="arch-meta"><span class="pill pill-layer">core</span><span class="pill pill-plain">{{ s.size }}</span></p>
+    <p class="arch-body">{{ s.summary }}</p>
+    {% unless include.compact %}
+    <p class="arch-note"><strong>Reach for it when:</strong> {{ s.reach_for_it_when }}</p>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>

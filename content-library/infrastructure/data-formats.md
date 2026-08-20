@@ -35,6 +35,7 @@ combines_with:
   - reconstruction-pipeline
   - provenance-and-versioning
   - neuron-type-identification
+content_type: core
 ---
 
 ## Overview

@@ -11,6 +11,8 @@ tags:
   - data-storage:data-format
   - data-storage:provenance
   - data-storage:cloud-storage
+use_layout_hero: false
+content_type: core
 ---
 
 # Data Storage & Pipelines Journal Papers
@@ -145,7 +147,7 @@ Curated papers on connectomics data management, annotation systems, file formats
 - How does neuPrint's data model handle the evolution of neuron type classifications over time?
 - What query patterns are easy vs. difficult in neuPrint's current architecture?
 
-**Related content:** [Hemibrain paper (this page, #3)](#3-scheffer-et-al-2020--a-connectome-and-analysis-of-the-adult-drosophila-central-brain), [Graph analysis](/content-library/connectomics/graph-analysis/)
+**Related content:** [Hemibrain paper (this page, #3)](#3-scheffer-et-al-2020--a-connectome-and-analysis-of-the-adult-drosophila-central-brain), [Network analysis methods](/content-library/connectomics/network-analysis-methods/)
 
 ---
 

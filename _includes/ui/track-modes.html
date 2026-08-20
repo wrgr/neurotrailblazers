@@ -1,0 +1,38 @@
+{% comment %}
+  Renders one track's shape in each mode, joining _data/track_catalog.yml's
+  per-track `modes` list against _data/modes.yml for titles and status.
+  Usage: {% include ui/track-modes.html track=track %}
+{% endcomment %}
+{% assign trk = include.track %}
+{% if trk.modes %}
+<section class="section">
+  <div class="axis-head">
+    <span class="axis-eyebrow">Mode axis</span>
+    <h2>This track in each mode</h2>
+    <p class="axis-lede">The topic is the same in all three. What changes is the sequencing, who supplies feedback, and what counts as done &mdash; see <a href="{{ '/modes/' | relative_url }}">modes</a> for the full description of each.</p>
+  </div>
+  <div class="arch-grid">
+    {% for tm in trk.modes %}
+      {% assign mode = site.data.modes.modes | where: 'slug', tm.slug | first %}
+      <article class="arch-card{% unless tm.available %} is-planned{% endunless %}" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+        <span class="arch-chip" aria-hidden="true">{{ mode.icon }}</span>
+        <h3 class="arch-title">{{ mode.title }}</h3>
+        <p class="arch-meta">
+          {% if tm.available %}
+            <span class="pill pill-status is-available">Available</span>
+          {% else %}
+            <span class="pill pill-status is-planned">Not built yet</span>
+          {% endif %}
+        </p>
+        <p class="arch-body">{{ tm.shape }}</p>
+        {% if tm.note %}<p class="arch-note"><strong>Worth knowing:</strong> {{ tm.note }}</p>{% endif %}
+        {% if tm.available and tm.start_url %}
+        <div class="arch-actions">
+          <a href="{{ tm.start_url | relative_url }}" class="btn btn-primary">{{ tm.start_label }}</a>
+        </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

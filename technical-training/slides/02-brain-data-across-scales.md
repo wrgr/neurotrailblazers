@@ -1,9 +1,23 @@
 ---
 layout: page
-title: "Slide Deck Draft: Brain Data Across Scales"
+title: "Lecture Plan: Brain Data Across Scales"
 permalink: /technical-training/slides/02-brain-data-across-scales/
 slug: slides-02-brain-data-across-scales
+content_type: delivery
 ---
+
+## What this document is
+
+This page is a **build plan for an instructor assembling a lecture** on this unit. It gives the
+slide sequence, per-slide timing, the points at which figures belong, and the speaker notes that
+carry the argument. It is a design document, not a rendered deck: there are no slides on this
+page to project, and nothing here is written to be shown to learners as it stands.
+
+A separately maintained Marp deck for this unit does exist, and it is linked at the foot of this
+page under *Rendered deck artifacts*. That deck was authored in its own right and does not follow
+this plan slide for slide, so treat this page as the teaching design and the Marp file as one
+existing implementation of it. The learner-facing material is the unit page linked under
+*Connections*.
 
 ## Session profile
 - Audience: learners who will design or evaluate cross-scale studies.
@@ -55,14 +69,14 @@ slug: slides-02-brain-data-across-scales
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module04]({{ '/modules/module04/' | relative_url }}), [module05]({{ '/modules/module05/' | relative_url }}), [module12]({{ '/modules/module12/' | relative_url }})
 
-## Slide artifacts
+## Rendered deck artifacts
 <div class="resource-card">
-  <p>Use the links below to access the rendered lecture artifacts for this unit.</p>
+  <p>These are the separately maintained Marp deck artifacts for this unit. They are not generated from the plan above, so their sequence and timing differ from it.</p>
   <div class="resource-links">
     <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.html' | relative_url }}">Open HTML Deck</a>
     <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.pptx' | relative_url }}">Download PowerPoint (.pptx)</a>
     <a class="resource-link" href="{{ '/technical-training/' | append: page.slug | remove: 'slides-' | append: '/' | relative_url }}">Open Unit Page</a>
   </div>
-  <p><strong>Slide source path:</strong> <code>course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md</code></p>
+  <p><strong>Marp source path:</strong> <code>course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md</code></p>
   <p><strong>Batch render helper:</strong> <code>./scripts/render_marp.sh</code></p>
 </div>

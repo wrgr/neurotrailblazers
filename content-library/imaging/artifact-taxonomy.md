@@ -33,6 +33,7 @@ combines_with:
   - em-principles
   - acquisition-qa
   - tissue-preparation
+content_type: core
 ---
 
 ## Overview

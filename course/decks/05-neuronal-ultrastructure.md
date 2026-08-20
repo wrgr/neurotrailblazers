@@ -44,7 +44,6 @@
 
 8. Synthesis panel
 - Key message: cue triangulation scales to complex scenes when procedure is consistent.
-- Figure: `FIG-RIV-ULTRA-S30-01`
 - Instructor note: close with decision checklist learners can reuse.
 
 9. Failure modes and anti-patterns

@@ -12,7 +12,6 @@
 ### frompat (`RIV-AXDEN`) axon/dendrite discrimination cues
 - `FIG-RIV-AXDEN-S13-01` (axon vs dendrite comparison)
 - `FIG-RIV-AXDEN-S18-01` (edge-case classification)
-- `FIG-RIV-AXDEN-S22-01` (advanced morphology cue)
 
 ### assets_outreach (`SRC-MODULE14_LESSON2`) pipeline/QC context
 - `FIG-SRC-MODULE14_LESSON2-S03-01` (method overview, fallback for missing S04 extraction)

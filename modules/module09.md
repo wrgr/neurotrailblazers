@@ -54,6 +54,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -94,6 +95,15 @@ Neuronal cell types have characteristic morphological signatures. A layer 5 thic
 - **Skeletonization artifacts** can create false branches (from noisy segmentation boundaries) or miss thin processes.
 
 Always report: reconstruction completeness (estimated fraction of arbor within volume), known errors, and how these might affect the measured descriptors.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** a skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- **Misconception guardrail:** morphological measurements are comparable across cells that were proofread to different levels.
+- **Misconception guardrail:** total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- **Misconception guardrail:** a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
 ## Core workflow
 1. Build skeleton from volumetric segmentation using TEASAR or equivalent algorithm.
@@ -137,6 +147,7 @@ Always report: reconstruction completeness (estimated fraction of arbor within v
    - Exit ticket: "Name one morphology feature that could be confounded by reconstruction quality."
 
 ## Studio activity: comparative morphometry (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 

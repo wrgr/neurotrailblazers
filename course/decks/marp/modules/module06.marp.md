@@ -39,35 +39,56 @@ Detect and categorize core segmentation errors and execute one correction cycle 
 ---
 
 ## Concept Focus
-
+### 1) What segmentation does and why it matters
+Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and it's the foundation of the entire connectome. Without accurate segmentation, you cannot identify individual neurons, trace their morphology, or determine their synaptic connections. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) achieve "superhuman" accuracy on benchmarks but still make errors at rates that compound across large volumes.
 
 ---
 
 ## Core Workflow
-- Load segmented patch.
-- Identify merge/split candidates.
-- Apply correction protocol.
-- Recalculate quality indicators.
-- Log decisions.
+- Load segmented patch in Neuroglancer or equivalent viewer.
+- Identify merge/split candidates by scrolling through z and checking 3D meshes for implausible morphology.
+- Apply correction: split merged segments at the boundary, merge split fragments by verifying continuity.
+- Recalculate quality indicators: did the correction improve local metrics?
+- Log decisions: record what was changed, why, and what evidence supported the decision.
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-08: segmentation goals.
-- 08:00-22: error taxonomy examples.
-- 22:00-36: guided correction round.
-- 36:00-48: quality-metric interpretation.
-- 48:00-60: debrief and competency check.
+- Read the error taxonomy content library entry
+- Open the practice dataset in Neuroglancer and browse for 5 minutes
+- **00:00-08:00 | Segmentation goals**
+- "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
+- Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
+- Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
+- **08:00-22:00 | Error taxonomy with real examples**
+- Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
+- Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
+- Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
+- For each: "What would this error do to your analysis?"
+- **22:00-36:00 | Guided correction round**
+- Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
+- Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
+- **36:00-48:00 | Quality metric interpretation**
+- Introduce: "How do we know if our corrections actually helped?"
+- Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
+- Compute metrics before and after the correction round. Did they improve?
+- **48:00-60:00 | Debrief and competency check**
+- Each learner presents one correction with evidence chain.
+- Group discussion: "Which correction had the biggest impact on the graph? Why?"
+- Exit ticket: "Name the error type you found hardest to detect and why."
 
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** merge and split errors are equally costly, so error counts alone rank corrections.
+- **Misconception guardrail:** an object that looks like a plausible neuron is evidence that the segmentation is correct.
+- **Misconception guardrail:** the most visually obvious errors are the ones most worth fixing.
+- **Misconception guardrail:** a segmentation can be finished, rather than released at a stated level with stated remaining error.
 
 ---
 
 ## Studio Activity
-Run one correction loop on a sample patch set and submit before/after notes.
+{: #studio-activity}
 
 ---
 
@@ -79,9 +100,9 @@ Run one correction loop on a sample patch set and submit before/after notes.
 ---
 
 ## Assessment Rubric
-- Minimum: correct error labels and one valid correction.
-- Strong: correction prioritization tied to downstream impact.
-- Failure: correction without evidence of quality change.
+- **Minimum pass**: Correct error labels and at least one valid correction with evidence.
+- **Strong performance**: Correction prioritization explicitly tied to downstream analysis impact. Metrics show measurable improvement.
+- **Common failure to flag**: Correction without evidence of quality change — fixing things without checking whether it helped.
 
 ---
 

@@ -57,6 +57,7 @@ videos:
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -141,6 +142,7 @@ Motivation drives persistence, but technical progress requires disciplined quest
 - **Instructor script:** "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
 
 ## Studio activity: "Write your connectomics motivation statement"
+{: #studio-activity}
 
 ### Overview
 Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement.
@@ -162,6 +164,12 @@ Write 150-300 words addressing:
 
 ### Peer review (10 minutes)
 Exchange motivation statements with a partner. Provide feedback on: (1) specificity --- does the statement name concrete goals? (2) sustainability --- does the plan for maintaining motivation seem realistic?
+
+**Outputs**
+- Question-to-hypothesis sheet: broad question, narrowed target, named structural measurement, named dataset, one non-claim, one falsification condition.
+- Motivation statement of 150-300 words, including a specific plan for sustaining effort through tedious stretches.
+- Written peer feedback on a partner's statement, addressing specificity and sustainability.
+- One revision made to your own sheet or statement in response to that feedback.
 
 ## Assessment rubric
 - **Minimum:** question, metric, limitation all present; motivation statement addresses why and how.

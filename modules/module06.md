@@ -57,6 +57,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -75,6 +76,15 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 
 ### 3) Correction priority: not all errors are equal
 The key insight for beginners: fix errors that change your biological conclusions, not errors that look ugly. A merge error connecting two neurons in your circuit of interest is far more important than a split error in a distant fragment you'll never analyze. Impact-weighted triage is essential.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** merge and split errors are equally costly, so error counts alone rank corrections.
+- **Misconception guardrail:** an object that looks like a plausible neuron is evidence that the segmentation is correct.
+- **Misconception guardrail:** the most visually obvious errors are the ones most worth fixing.
+- **Misconception guardrail:** a segmentation can be finished, rather than released at a stated level with stated remaining error.
 
 ## Core workflow
 1. Load segmented patch in Neuroglancer or equivalent viewer.
@@ -116,6 +126,7 @@ The key insight for beginners: fix errors that change your biological conclusion
    - Exit ticket: "Name the error type you found hardest to detect and why."
 
 ## Studio activity: correction triage simulation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
 

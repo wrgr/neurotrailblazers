@@ -40,8 +40,7 @@ key_questions:
   - "What design choices commonly mislead interpretation?"
 slides:
   - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pdf"
-notebook:
-  - "/assets/notebooks/module16/module16-scientific-visualization-for-connectomics.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
   - "/datasets/mouseconnects"
@@ -64,6 +63,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -172,6 +172,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - No figure uses a rainbow/jet colormap.
 
 ## Studio activity: connectomics figure package
+{: #studio-activity}
 
 **Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.
 

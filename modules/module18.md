@@ -40,8 +40,7 @@ key_questions:
   - "How do we separate data repair from data distortion?"
   - "What metadata is required to make preprocessing reproducible?"
 slides: []
-notebook:
-  - "/assets/notebooks/module12/module12-big-data-in-connectomics.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
   - "/datasets/mouseconnects"
@@ -69,6 +68,7 @@ videos:
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -143,6 +143,7 @@ Most downstream failures in connectome analysis are not model failures first; th
    - Publish analysis-ready tables plus: preprocessing decision log, transform code with commit hash, QC metric report with threshold justifications, known limitations and residual risks.
 
 ## Studio activity: preprocessing release simulation
+{: #studio-activity}
 
 **Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table.
 
@@ -181,7 +182,7 @@ Most downstream failures in connectome analysis are not model failures first; th
 ## Teaching resources
 - Lesson context: [Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
 - QC context: [Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
-- Slides: [Infrastructure deck draft]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
+- Slides: [Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
 - Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 

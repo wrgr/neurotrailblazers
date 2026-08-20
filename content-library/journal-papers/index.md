@@ -3,6 +3,8 @@ layout: page
 title: "Journal Paper Collection"
 permalink: /content-library/journal-papers/
 description: "100+ curated connectomics journal papers organized by dimension, with summaries at beginner, intermediate, and advanced expertise levels. Each paper includes tags for cross-referencing with the content library and discussion prompts for journal club."
+use_layout_hero: false
+content_type: core
 ---
 
 # Journal Paper Collection
@@ -43,7 +45,7 @@ All papers are also available as structured data in `_data/journal_papers.yml` f
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|
-| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 12 | Diffusion tractography, functional connectivity, HCP, parcellation |
+| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion tractography, functional connectivity, HCP, parcellation |
 
 ### Cross-Cutting
 

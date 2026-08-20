@@ -1,7 +1,6 @@
 # Figure Shortlist v1: 04 Volume Reconstruction Infrastructure
 
 ## Selected figures (`SRC-MODULE14_LESSON1`)
-- `FIG-SRC-MODULE14_LESSON1-S02-01` (unit opener/problem framing)
 - `FIG-SRC-MODULE14_LESSON1-S04-01` (high-level architecture)
 - `FIG-SRC-MODULE14_LESSON1-S05-01` (ingest service context)
 - `FIG-SRC-MODULE14_LESSON1-S07-01` (workflow/API integration)

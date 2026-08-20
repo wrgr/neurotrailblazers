@@ -55,6 +55,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -84,6 +85,15 @@ In real connectomes, many neuron pairs share only 1-2 synapses. Are these "real"
 
 ### 4) Null models and the interpretation trap
 A graph metric is meaningless without a baseline. "Clustering coefficient = 0.15" tells you nothing until you compare to a random graph with the same degree distribution (where clustering might be 0.02 — making 0.15 highly significant). Every metric computation should include the corresponding null-model comparison.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** the connectivity graph is the data, rather than one lossy projection of it that discards all geometry.
+- **Misconception guardrail:** the synapse threshold is a technical detail that does not need reporting.
+- **Misconception guardrail:** a graph metric means the same thing biologically as it does in its original network-science context.
+- **Misconception guardrail:** Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.
 
 ## Core workflow
 1. Define node/edge schema: what are your nodes, what are your edges, what weighting scheme?
@@ -127,6 +137,7 @@ A graph metric is meaningless without a baseline. "Clustering coefficient = 0.15
    - Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
 
 ## Studio activity: graph analysis report (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 

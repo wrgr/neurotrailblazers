@@ -35,6 +35,7 @@ combines_with:
   - connectome-history
   - network-analysis-methods
   - motif-analysis
+content_type: core
 ---
 
 ## Overview

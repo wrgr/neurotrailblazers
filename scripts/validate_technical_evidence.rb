@@ -13,8 +13,8 @@ unless File.exist?(track_path) && File.exist?(evidence_path)
   exit 0
 end
 
-track = YAML.safe_load(File.read(track_path), permitted_classes: [Date], aliases: true) || {}
-evidence = YAML.safe_load(File.read(evidence_path), permitted_classes: [Date], aliases: true) || {}
+track = YAML.safe_load(File.read(track_path, encoding: 'UTF-8'), permitted_classes: [Date], aliases: true) || {}
+evidence = YAML.safe_load(File.read(evidence_path, encoding: 'UTF-8'), permitted_classes: [Date], aliases: true) || {}
 
 track_slugs = Array(track['modules']).map { |m| m['slug'] }.compact
 unit_entries = Array(evidence['units'])
@@ -53,3 +53,4 @@ extra.each { |slug| warnings << "[WARN] evidence entry has no matching technical
 
 puts "Technical evidence validation complete (#{warnings.empty? ? 'no warnings' : 'warnings below'})."
 warnings.each { |w| puts w }
+exit(warnings.empty? ? 0 : 1)

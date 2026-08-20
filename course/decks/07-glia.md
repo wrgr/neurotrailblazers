@@ -21,11 +21,9 @@
 
 4. Oligodendrocyte and myelin context
 - Key message: myelin-associated cues prevent neuron/glia boundary errors.
-- Figure: `FIG-RIV-GLIA-S15-01`
 
 5. Myelin-producing glia context panel
 - Key message: local myelin architecture improves class confidence.
-- Figure: `FIG-RIV-GLIA-S16-01`
 
 6. Ambiguity classes and escalation rules
 - Key message: classify uncertainty type before adjudication.

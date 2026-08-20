@@ -34,6 +34,8 @@ resource_links: []
 image: /assets/images/datasets/mouseconnects.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD
+use_layout_hero: false
+content_type: core
 ---
 
 <div class="hero">

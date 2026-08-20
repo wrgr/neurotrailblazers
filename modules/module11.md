@@ -56,6 +56,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -96,6 +97,15 @@ Segmentation and synapse detection errors can create or destroy motif instances:
 - A **missed synapse** removes a real edge, breaking real motifs.
 
 Always ask: "Could this motif be an artifact of reconstruction errors?" Sensitivity analysis across proofreading versions helps: if a motif finding changes substantially between data versions, it may not be robust.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** asymmetric morphology means a synapse is excitatory, rather than putatively excitatory under a stated assumption.
+- **Misconception guardrail:** reconstruction errors add symmetric noise to motif counts, when merges bias them toward denser motifs.
+- **Misconception guardrail:** a motif observed more often than expected is a functional building block.
+- **Misconception guardrail:** synapse count is a direct measure of connection strength rather than a proxy for it.
 
 ## Core workflow
 1. Identify synapse candidates: find synapses in the region of interest with correct pre/post assignment.
@@ -139,6 +149,7 @@ Always ask: "Could this motif be an artifact of reconstruction errors?" Sensitiv
    - Exit ticket: "One motif claim and one plausible confound."
 
 ## Studio activity: motif discovery and interpretation (60-75 minutes)
+{: #studio-activity}
 
 **Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 

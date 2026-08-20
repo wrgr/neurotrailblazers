@@ -11,14 +11,66 @@ tracks:
       - technical foundation
       - methods depth
       - analytical reasoning
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Read the ten technical units in order, do every lab, and treat units 05-07 as the centre of gravity rather than a descriptive interlude. Roughly 40-60 hours."
+        start_url: /technical-training/01-why-map-the-brain/
+        start_label: "Open Unit 01"
+        note: "The perceptual units are the part that most needs a second pair of eyes. Find one partner before you reach Unit 05."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 01 and 03-11 have session kits. A common shape is a five-session block: framing, imaging, reading the images (two sessions), then reconstruction infrastructure."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "The two image-reading sessions carry the load. Do not compress them to make room for infrastructure."
+      - slug: research-intensive
+        available: false
+        shape: "Would sit downstream of this track: the units become the reference a trainee consults while working, and the calibration gate replaces the self-scored drills."
     module_numbers: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    time_estimate: "40-60 hours of focused work, typically over 8-12 weeks"
+    entry_requirement: "None. Introductory biology and comfort with basic arithmetic are enough to start."
+    sequence:
+      - step: "Frame a question you could actually test"
+        do: "Technical Unit 01, and write the study brief in its lab."
+        outcome: "A one-page brief with a measurable structural endpoint, a null model, and an explicit non-claim."
+        hours: 3
+      - step: "Learn what each measurement scale can and cannot resolve"
+        do: "Technical Unit 02 and its scale-selection memo."
+        outcome: "You can defend a modality choice against two named alternatives."
+        hours: 3
+      - step: "Understand where the data comes from and how it fails"
+        do: "Technical Unit 03, then run its QA report on a real public volume."
+        outcome: "An artifact report with coordinates, classified as data loss or labour."
+        hours: 4
+      - step: "Learn to read the images"
+        do: "Technical Units 05, 06, and 07, with the drills. This is the slowest part and the one worth the most."
+        outcome: "Calibrated compartment, process, and glia calls with justified confidence."
+        hours: 12
+      - step: "See how a reconstruction is built and served"
+        do: "Technical Unit 04, and run its reproducible query lab."
+        outcome: "A version-pinned notebook that queries a petascale dataset."
+        hours: 4
+      - step: "Consolidate through the module library"
+        do: "Modules 1, 3-11, using the technical units as the depth reference."
+        outcome: "Module competency checks passed."
+        hours: 15
+    done_looks_like:
+      - "You can look at an EM patch and produce a call, a confidence tier, and an evidence chain drawing on two independent cue families."
+      - "Your high-confidence calls are right substantially more often than your overall accuracy - your confidence carries information."
+      - "You can estimate the data volume and rough cost of a proposed experiment before anyone builds a budget."
+      - "You can name what a given dataset cannot tell you."
+    common_detours:
+      - "Skipping Units 05-07 because they look descriptive. They are the perceptual core; everything downstream depends on them."
+      - "Reading the units without doing the labs. The labs are the curriculum."
+      - "Rushing to analysis before you can judge reconstruction quality, which produces confident results built on uninspected data."
     resources:
       - title: Technical Training Course Hub
         url: /technical-training/
         summary: Canonical connectomics sequence from imaging to NeuroAI.
-      - title: Technical Slides and Lecture Drafts
+      - title: Technical Lecture Plans
         url: /technical-training/slides/
-        summary: Lecture-ready sequence with slide-source links.
+        summary: "Per-unit build plans for instructors: slide sequence, timing, figure placement, and speaker notes, with links to the rendered Marp decks."
       - title: Journal Club Reading List
         url: /technical-training/journal-club/
         summary: Required and optional readings aligned to the technical sequence.
@@ -41,7 +93,55 @@ tracks:
       - research workflow
       - reproducibility
       - project execution
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Workable alone, but only if you have a real dataset in front of you. Without one the proofreading and analysis labs become thought experiments, which is exactly the failure mode this track exists to prevent."
+        start_url: /datasets/access/
+        start_label: "Get data access first"
+        note: "Do the version-pinning habit from the first query, not after your first result drifts."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 06, 07, 12-16, 18, 20 and 21 have session kits. Best run alongside a live project rather than as a standalone course."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "Bring your own group's data if you have it. The generic scenarios work, but the arguments about triage priority get real when the volume is theirs."
+      - slug: research-intensive
+        available: false
+        shape: "This is the track the intensive would be built on. The proofreading and QC work here is the closest the site comes to contributory tasks, but nothing downstream currently consumes the output."
     module_numbers: [6, 7, 12, 13, 14, 15, 16, 18, 20, 21]
+    time_estimate: "50-70 hours, typically over 10-14 weeks, alongside a real project"
+    entry_requirement: "Core Concepts & Methods, or equivalent working familiarity with EM data and reconstruction."
+    sequence:
+      - step: "Get reproducible access to real data"
+        do: "Dataset access guide, then Technical Unit 04's query lab."
+        outcome: "A version-pinned notebook with a reproducibility header."
+        hours: 5
+      - step: "Learn proofreading as an allocation problem"
+        do: "Technical Unit 08 and its planning lab."
+        outcome: "A proofreading plan with a triage rule, defined levels, and a stopping rule someone else could evaluate."
+        hours: 8
+      - step: "Measure quality against your own endpoint"
+        do: "The connectome quality notebook path, steps 1-4."
+        outcome: "A measured statement of how proofreading changes your headline number."
+        hours: 8
+      - step: "Analyse without fooling yourself"
+        do: "Technical Unit 09, including the three-null worked example and the error simulation."
+        outcome: "A motif analysis with a defended null, corrected multiple comparisons, and an error band."
+        hours: 10
+      - step: "Build the operational habits"
+        do: "Modules 12-16, 18, 20, 21."
+        outcome: "Working practice in pipelines, big data, visualization, and reproducibility."
+        hours: 20
+    done_looks_like:
+      - "Every figure you produce records its dataset version, query code, and date."
+      - "You can state your proofreading level and stopping rule, and defend both."
+      - "You report an effect size under more than one null model, and you say which you pre-specified."
+      - "You have run an error-sensitivity simulation on your own result and know whether it survives."
+    common_detours:
+      - "Analysing against an unpinned segmentation. The code runs; the answer drifts."
+      - "Optimizing an aggregate quality metric instead of the endpoint the project actually reports."
+      - "Treating Erdos-Renyi as an acceptable null for a spatially embedded, degree-heterogeneous graph."
     resources:
       - title: Workflow Overview
         url: /datasets/workflow/
@@ -71,7 +171,55 @@ tracks:
       - mentoring
       - professional growth
       - hidden curriculum
+    modes:
+      - slug: self-study
+        available: true
+        shape: "Read the hidden curriculum alongside whatever technical work you are doing, not as a block at the end. The modules add structure; the hidden curriculum is the part that is otherwise transmitted only by proximity to someone who already knows."
+        start_url: /hidden-curriculum/
+        start_label: "Open the hidden curriculum"
+        note: "The parts about conflict, belonging, and career mechanics are worth reading before you need them."
+      - slug: hosted-workshop
+        available: true
+        shape: "Modules 01, 02, 17, 19 and 22-25 have session kits. Every other session kit on the site also nominates one norm to name out loud, which is where most of this track's delivery actually happens."
+        start_url: /teaching/sessions/
+        start_label: "Browse session kits"
+        note: "A norm named once in a technical session lands harder than a dedicated session on professional development."
+      - slug: research-intensive
+        available: false
+        shape: "Would matter most here. The norms that decide who thrives in a lab are the ones an intensive programme transmits by default to some people and not others; making them explicit is the point."
     module_numbers: [1, 2, 17, 19, 22, 23, 24, 25]
+    time_estimate: "25-35 hours, spread across the whole of a training period rather than completed in a block"
+    entry_requirement: "None. This track is relevant from week one, not only at the end."
+    sequence:
+      - step: "Orient, and name the norms out loud"
+        do: "Start Here, the learner personas, and Module 01."
+        outcome: "A written list of the norms as you understood them - which your mentor then corrects."
+        hours: 4
+      - step: "Understand the mentoring arc you are inside"
+        do: "The MERIT stages on the education models page."
+        outcome: "You can say which stage you are in and what support is appropriate to it."
+        hours: 3
+      - step: "Learn to communicate the work"
+        do: "Modules 17 and 19, and rehearse one hard question before any presentation."
+        outcome: "A result you can defend, including its limitations."
+        hours: 8
+      - step: "Build a network that is yours"
+        do: "Modules 22-23; initiate three professional conversations without your mentor present."
+        outcome: "Relationships that do not route through your supervisor."
+        hours: 8
+      - step: "Plan the next step deliberately"
+        do: "Modules 24-25 and the Future Forward material."
+        outcome: "A decision you can articulate, and a plan for learning outside a structured program."
+        hours: 8
+    done_looks_like:
+      - "You can state what you do not know without treating it as an admission."
+      - "You know how authorship, review, and funding actually work in your field."
+      - "You have professional relationships you built yourself."
+      - "You can describe your next step as a choice among options you evaluated, not as a default."
+    common_detours:
+      - "Deferring this track until the technical work is finished. The norms are needed first, not last."
+      - "Borrowing a mentor's network and mistaking it for having one."
+      - "Reading the hidden curriculum as soft skills rather than as operating knowledge distributed unequally by background."
     resources:
       - title: Start Here
         url: /start-here/

@@ -1,136 +1,462 @@
 ---
 layout: page
 title: "08 Segmentation and Proofreading"
+description: "How automated segmentation fails, which metrics reveal which failure, and how to run proofreading as a prioritized, measured, budget-bounded operation rather than an open-ended cleanup."
 permalink: /technical-training/08-segmentation-and-proofreading/
 slug: 08-segmentation-and-proofreading
-track: research-in-action
+track: core-concepts-methods
 pathways:
-  - research workflow
-  - reproducibility
+  - technical foundation
+  - methods depth
+level: "Advanced"
+time_estimate: "2.5 hours reading + 2 hour lab"
+prerequisites: "Units 03-07"
+content_type: path
 ---
 
-## Why this unit
-Proofreading is the scientific QC layer that determines whether downstream analyses are trustworthy.
+## Before you start
 
-## Learning goals
-- Classify and correct merge/split/boundary errors.
-- Tie corrections to explicit quality metrics and logs.
+| | |
+|---|---|
+| **Time** | ~2.5 h, plus a 2 h lab |
+| **Prerequisites** | Units 03–07. Unit 06's error-cost reasoning is used heavily here. |
+| **You need** | A proofreading-capable viewer (Neuroglancer against a CAVE dataset, or webKnossos) and an account |
+| **You finish with** | A proofreading plan with an explicit stopping rule, a triage ranking, and a defended budget |
 
-## Core technical anchors
-- Metrics: VI, edge precision/recall, ERL, synapse-centric F1.
-- Priority strategy for high-impact error correction.
-- Human-machine workflow separation: discovery, adjudication, finalization.
+**The framing that makes this unit different from a tool tutorial.** Proofreading is
+not "fixing the segmentation until it is right". Segmentation is never right, and at
+petascale nobody will ever look at most of it. Proofreading is an **allocation problem
+under a fixed budget**: which corrections, in which order, stopping when.
 
-## Method deep dive: production proofreading loop
-1. Candidate triage:
-   Rank errors by estimated downstream impact (edge loss, motif distortion, cell identity risk).
-2. Local correction:
-   Resolve merge/split/boundary errors with 2D/3D contextual validation.
-3. Global consistency:
-   Recheck branch continuity and synaptic partner plausibility.
-4. Metric update:
-   Recompute targeted QC metrics after each correction batch.
-5. Release gate:
-   Promote only segments that pass predefined quality thresholds.
+Teams that treat it as cleanup run out of money with a half-corrected volume and no
+defensible claim. Teams that treat it as allocation deliver a specific scientific
+result with quantified error bounds. The difference is entirely in how the work is
+prioritized and when it is declared finished.
 
-## Recommended QC thresholding strategy
-- Use block-level dashboards for VI and edge precision/recall, not just whole-volume means.
-- Track ERL by cell class to detect morphology-dependent blind spots.
-- Maintain synapse-centric precision/recall for biologically relevant correctness.
-- Require explicit uncertainty tags for unresolved defects rather than silent acceptance.
+---
 
-## Frequent failure modes
-- Over-fixing low-impact errors:
-  Prioritize corrections that materially change downstream conclusions.
-- Inconsistent adjudication:
-  Maintain standard operating examples for merge/split edge cases.
-- Metric gaming:
-  Pair global metrics with qualitative audits of biologically important structures.
-- Human-fatigue drift:
-  Rotate reviewers and monitor disagreement trends over time.
+## What you'll be able to do
 
-## Practical workflow
-1. Detect candidate errors in 2D and 3D context.
-2. Classify error type (merge, split, boundary ambiguity, identity confusion).
-3. Correct labels and record decision rationale.
-4. Validate continuity and synaptic context after correction.
-5. Log quality metrics for reproducibility and team review.
+1. Name the error types automated segmentation produces and rank them by cost for a given endpoint.
+2. Choose the right metric for a given question and say what each metric hides.
+3. Build a triage ranking that prioritizes by effect on the endpoint rather than by conspicuousness.
+4. Define a stopping rule that is checkable by someone other than you.
+5. Estimate proofreading effort and defend the estimate.
+
+---
+
+## 1. How automated segmentation works, briefly
+
+Enough to reason about its failures. (Full detail: Unit 04 §1 and the content library.)
+
+**The affinity/agglomeration family.** A network predicts, per voxel, the affinity
+between neighbouring voxels. Watershed at a conservative threshold produces
+**supervoxels** that are deliberately too small. An agglomeration step then merges
+supervoxels into objects, using mean affinity, learned agglomeration, or shape-based
+descriptors that let the model reason about whether a merge produces a plausible
+neurite shape.
+
+**The flood-filling family.** A network iteratively grows one object from a seed,
+maintaining a mask and repeatedly asking "does this next voxel belong?" This produces
+strong results because the network sees the object it is building, but it is
+sequential and expensive.
+
+**Where both fail, structurally:**
+
+- **Thin processes.** A 60 nm spine neck at 40 nm z-resolution may appear in only one
+  or two sections. There is very little evidence to work with, so spine necks are a
+  perennial source of splits.
+- **Steep z-trajectories.** Anisotropy again. A process crossing sections at a shallow
+  angle to the imaging plane presents a small, rapidly-moving cross-section.
+- **Membrane contact.** Two membranes tightly apposed over many sections may not be
+  separable, especially with weak staining (Unit 03).
+- **Artifact regions.** Folds, charging, missing sections — the network was not
+  trained on tissue that does not exist.
+- **Rare morphologies.** Anything under-represented in the training set: unusual cell
+  types, developmental stages, pathology, and — importantly — the boundaries of the
+  volume.
+
+**The design choice that shapes everything downstream:** the pipeline is deliberately
+tuned to over-segment. It prefers splits to merges. That is a decision about which
+error is cheaper to repair, and it dictates that proofreading is mostly *joining*.
+
+---
+
+## 2. Error taxonomy and cost
+
+| Error | What it is | Detection difficulty | Cost | Who finds it |
+|---|---|---|---|---|
+| **Split** | One neuron in multiple pieces | Easy — arbor looks truncated | Bounded, local, visible | Automated heuristics (endpoint detection) and humans |
+| **Merge** | Two neurons fused | **Hard** — object looks fine unless you check morphology | Corrupts connectivity; propagates | Humans noticing implausible morphology; cue conflict (Unit 06) |
+| **Glia–neuron merge** | Glial process fused to neuron | Hard | High — manufactures local false connectivity (Unit 07 §1) | Humans |
+| **Orphan fragment** | A piece belonging to no traced object | Easy to count | Low individually; large in aggregate as unattributed volume | Automated |
+| **False synapse** | Detection where no synapse exists | Medium | Inflates degree; worst on weak (1-synapse) connections | Human verification on a sample |
+| **Missed synapse** | Real synapse not detected | Hard (you are looking for absence) | Deflates degree, non-uniformly by synapse size | Human verification on a sample |
+| **Wrong synapse partner** | Correct cleft, wrong pre- or post- assignment | Hard | Direction/identity error, as in Unit 06 | Human |
+
+### The asymmetry, stated once more
+
+**Splits are visible and bounded. Merges are invisible and unbounded.** A split leaves
+evidence of itself — a neuron that stops in mid-neuropil. A merge leaves an object
+that looks like a neuron and is not. The whole architecture of the field, from
+watershed thresholds to proofreading protocols to quality metrics, is organized around
+this asymmetry.
+
+---
+
+## 3. Metrics: what each one is blind to
+
+The content library has the mathematics; this section is about *choosing*.
+
+| Metric | Measures | Blind to | Use when |
+|---|---|---|---|
+| **Variation of Information (VI)** | Total disagreement between two segmentations, decomposable into split and merge components | Object size — a merge of two tiny fragments and a merge of two full neurons contribute very differently, and not in the way you might want | Comparing segmentation versions on the same volume |
+| **Expected Run Length (ERL)** | Mean error-free path length along skeletons | Merges, unless explicitly penalized; also insensitive to small dangling fragments | Tracing-oriented questions: "how far can I follow a neurite before hitting an error?" |
+| **Edge precision / recall** | Correctness of connections in the derived graph | Weights all edges equally, so a 1-synapse and a 50-synapse connection count the same | Graph-level claims |
+| **Synapse precision / recall** | Correctness of detected synapses | Assumes correct segmentation underneath — a synapse assigned to a merged object scores as correct | Synapse-level claims |
+| **Completeness (per neuron)** | Fraction of a neuron actually reconstructed | Says nothing about correctness of what is there | Per-cell claims like input counts |
+
+> **Use at least two metrics from different rows, and always report VI's split and
+> merge components separately.** A single VI number can improve while merges get worse,
+> because the split component dominates. That is a real and common way to ship a
+> regression.
+
+### The metric that actually matters
+
+None of the above. **The metric that matters is the effect on your endpoint.**
+
+Concretely: if your result is "cell type A makes 3× more synapses onto type B than
+onto type C", then the question is not "what is our VI?" It is: *how much would the
+observed 3× change under a plausible correction of the remaining errors?*
+
+Procedure:
+
+1. Take a random sample of the cells in the analysis — 20 is often enough to be
+   informative.
+2. Proofread them exhaustively, to a standard well above your production standard.
+3. Recompute the endpoint on that sample, before and after.
+4. Report the shift. "Exhaustive proofreading of a 20-cell sample changed the ratio
+   from 3.1 to 2.8" is a far stronger statement about data quality than any VI value,
+   and reviewers understand it immediately.
+
+This costs a few dozen person-hours and it converts "we proofread the data" into a
+quantified error bound. It is the single highest-value practice in this unit.
+
+### Check yourself
+
+<details markdown="1">
+<summary>Version B of your segmentation has lower total VI than version A, and your
+team wants to ship it. What do you check first?</summary>
+
+**Decompose VI into split and merge components.**
+
+Total VI is dominated by whichever component is larger, and in an over-segmented
+pipeline that is usually splits. Version B may have reduced splits (perhaps by more
+aggressive agglomeration) while *increasing* merges — and the total would still
+improve.
+
+Since merges are the expensive error, a "better" total VI with worse merges is a
+regression for connectomics purposes, even though the headline number improved.
+
+Also check: ERL (does tracing actually get easier?), and — decisively — recompute
+the endpoint metric on a fixed evaluation set of neurons. Ship on the endpoint, not
+on the aggregate score.
+</details>
+
+---
+
+## 4. The production proofreading loop
+
+```
+1. SEED       Select target cells by scientific priority, not by convenience
+                or by which segment happens to be biggest.
+2. TRIAGE     Rank candidate corrections by expected effect on the endpoint.
+3. CORRECT    Apply merges/splits with evidence recorded (Unit 05 evidence chains).
+4. VERIFY     Independent second pass on a sample; measure agreement.
+5. MEASURE    Recompute quality metrics AND the endpoint metric.
+6. STOP       Apply the stopping rule. Record the state as a release.
+```
+
+### Triage: ranking corrections
+
+Rank by **expected change in the endpoint per unit of annotator time**, not by error
+conspicuousness. In practice this means scoring candidates on:
+
+- **Proximity to the endpoint.** An error on a cell in your analysis set outranks an
+  identical error on a cell that is not.
+- **Error type.** Merges outrank splits at equal size, because merges corrupt rather
+  than truncate.
+- **Size.** A split that truncates 60% of an arbor outranks one that loses a 3 µm
+  twig — but note that a *small* merge can be worse than a *large* split, so size
+  ranks within type, not across types.
+- **Path centrality.** An error on the primary neurite near the soma disconnects
+  everything distal to it. Errors near the root are worth far more than errors at the
+  tips.
+- **Cost to fix.** A correction requiring 40 minutes of careful tracing through a fold
+  may lose to five 5-minute corrections elsewhere.
+
+**Automated candidate generation** feeds this queue: endpoint detectors (a neurite
+that stops without tapering to a natural ending is a split candidate), morphology
+implausibility detectors (an object with two somata; an object with both ribosomes and
+presynaptic vesicle clusters — the Unit 06 alarm), and agglomeration-confidence
+thresholds. Humans then adjudicate a *ranked* queue rather than browsing.
+
+### Stopping rules
+
+This is where most projects fail, because "keep going until it looks good" has no
+termination condition and no defensible reporting.
+
+A stopping rule must be **stated in advance**, **measurable**, and **tied to the
+endpoint**. Examples of usable rules:
+
+- **Convergence:** "Stop when a second independent proofreading pass over a 20-cell
+  sample changes the endpoint metric by less than 5%." *This is the strongest general
+  rule* — it directly measures whether more effort would change the answer.
+- **Budget with declared coverage:** "Proofread to level N on 200 cells; report per-cell
+  proofreading level with every result; make no claims about cells below level N."
+- **Threshold:** "Every cell in the analysis set has ≥ 95% of its dendritic arbor
+  recovered relative to a manually traced reference on a validation subset."
+
+**Levels are the practical mechanism.** Rather than a binary proofread/not-proofread,
+define levels — e.g. *L0 raw*, *L1 gross merges removed*, *L2 dendrite complete*,
+*L3 axon extended*, *L4 exhaustive* — with written criteria for each. Then:
+
+- Cells carry their level as metadata.
+- Analyses state the required level and exclude cells below it.
+- Effort is directed at raising specific cells to a specific level, which is a
+  plannable task with an estimable cost.
+
+> **The reporting rule.** Every connectomics result should state the proofreading
+> level of the cells it rests on, and the criteria defining that level. A result that
+> does not is uninterpretable, because the reader cannot tell whether a low measured
+> connection count reflects biology or incompleteness.
+
+---
+
+## 5. Human factors, because this is a labour operation
+
+At petascale, proofreading is a workforce, and it behaves like one.
+
+**Training and calibration.** New annotators need a calibration set with known
+answers, and periodic recalibration — drift is real and it is gradual. Run the Unit 05
+consensus round and the Unit 06 calibration lab as onboarding, then repeat quarterly.
+
+**Measure agreement, not just throughput.** Throughput alone rewards speed over
+correctness, and it will get you exactly that. Track: inter-annotator agreement on a
+shared subset, and per-annotator error rate on gold-standard tasks seeded invisibly
+into the normal queue. Discuss agreement openly; treat disagreement as protocol
+feedback rather than individual failure.
+
+**Fatigue is a data-quality variable.** Error rates rise across a long session.
+Structure work in bounded blocks and rotate task types.
+
+**Community proofreading works, with structure.** The FlyWire whole-brain connectome
+was completed with millions of edits from a large distributed community over several
+years — an existence proof that this scales beyond a single lab. What made it work was
+not enthusiasm but infrastructure: task queues, automated candidate generation, tiered
+permissions, edit provenance, expert adjudication for hard cases, and clear
+attribution.
+
+**The tooling requirement that follows.** Every edit records who, when, what, and
+ideally why. This is not surveillance; it is what lets you (a) roll back a bad batch,
+(b) identify a training gap when one annotator's edits are systematically different,
+and (c) reconstruct the state of an analysis at any past time (Unit 04 §2).
+
+---
 
 ## Visual training set
+
+The first six panels carry ultrastructure cues forward from Units 05–06; the rest are pipeline context. Use them as triage practice rather than identification practice: for each one, ask what error a wrong reading would produce, and whether that error is a bounded, visible split or an unbounded, invisible merge.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png' | relative_url }}" alt="Segmentation proofreading visual: neuronal structure orientation" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S06:</strong> orientation cue for robust proofreading context.</p>
+    <p class="card-description"><strong>RIV-ULTRA S06:</strong> Orientation for proofreading judgement. Set the frame before touching anything: proofreading is allocation under a fixed budget rather than cleanup, so the question about any candidate correction is what it changes about the endpoint per minute of annotator time.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Segmentation proofreading visual: synapse identification cues" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S09:</strong> synapse-oriented features relevant to correction decisions.</p>
+    <p class="card-description"><strong>RIV-ULTRA S09:</strong> Synapse features that drive correction decisions. Apply the Unit 05 criteria before crediting a detection — a synapse assigned to a merged object still scores as correct under synapse precision, which is exactly what that metric is blind to.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png' | relative_url }}" alt="Segmentation proofreading visual: ultrastructural feature panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S11:</strong> vesicle and organelle cues for ambiguity resolution.</p>
+    <p class="card-description"><strong>RIV-ULTRA S11:</strong> Vesicle and organelle cues on ambiguous objects. Look for combinations that cannot coexist in one cortical process; implausible-morphology detection is how merges get found at all, since a merged object otherwise looks like a perfectly ordinary neuron.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png' | relative_url }}" alt="Segmentation proofreading visual: axon versus dendrite comparison" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S13:</strong> axon-vs-dendrite differentiation for identity checks.</p>
+    <p class="card-description"><strong>RIV-AXDEN S13:</strong> Axon against dendrite, for identity checks. Every edge direction in the final graph rests on this call, and a reversed edge is not noise — it deletes a true edge and adds its opposite. Audit the edges whose direction would change your conclusion rather than auditing uniformly.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S18-01.png' | relative_url }}" alt="Segmentation proofreading visual: edge-case process morphology" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S18:</strong> edge-case morphology for high-risk correction review.</p>
-  </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S22-01.png' | relative_url }}" alt="Segmentation proofreading visual: advanced morphology cue set" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S22:</strong> advanced cue set for difficult boundary calls.</p>
+    <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case at high risk of a wrong correction. Estimate cost to fix before committing: a forty-minute trace through a difficult region loses to five five-minute corrections elsewhere, unless the cell is in your analysis set and the error sits near the root of the arbor.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png' | relative_url }}" alt="Segmentation proofreading visual: method overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S03:</strong> method overview context for processing/QC integration.</p>
+    <p class="card-description"><strong>Module14 L2 S03:</strong> A method overview with QC in the loop. Ask where the measurement points are: a pipeline without a fixed evaluation set of neurons can only report aggregate scores, and aggregate scores are how a merge regression ships behind an improved total VI.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png' | relative_url }}" alt="Segmentation proofreading visual: graph and pipeline transition" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S08:</strong> graph/pipeline transition context.</p>
+    <p class="card-description"><strong>Module14 L2 S08:</strong> The transition from voxels to graph. Everything upstream of this point is repairable; everything downstream inherits whatever came through. Note that edge precision and recall weight a one-synapse and a fifty-synapse connection equally, which hides the connections most vulnerable to error.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S09-01.png' | relative_url }}" alt="Segmentation proofreading visual: automated detection context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S09:</strong> automated detection context for human-machine workflows.</p>
+    <p class="card-description"><strong>Module14 L2 S09:</strong> Automated detection feeding human work. The right reading is candidate generation rather than automation: detectors propose a ranked queue — endpoint detectors for splits, implausibility detectors for merges — and humans adjudicate the ranking instead of browsing the volume.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S10-01.png' | relative_url }}" alt="Segmentation proofreading visual: processing-stage quality context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S10:</strong> quality-relevant processing stage.</p>
+    <p class="card-description"><strong>Module14 L2 S10:</strong> A quality-relevant processing stage. For whatever this stage emits, ask what provenance travels with it — who, when, what, and ideally why — because rolling back a bad batch and detecting one annotator’s drift both depend on that record existing.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S13-01.png' | relative_url }}" alt="Segmentation proofreading visual: evaluation and metrics context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S13:</strong> evaluation/metrics context for QC reporting.</p>
+    <p class="card-description"><strong>Module14 L2 S13:</strong> Evaluation and metrics reporting. Hold it to the rule in §3: at least two metrics from different rows, VI always split into its merge and split components, and the number that actually decides anything is the shift in your endpoint after exhaustively proofreading a twenty-cell sample.</p>
   </article>
 </div>
 
 <p><small>Attribution: Pat Rivlin training materials for `RIV-*` visuals; outreach visuals from module14 lesson2 extraction. Some planned IDs were unavailable in extracted thumbnails and were replaced with nearest available alternatives.</small></p>
 
-## Discussion prompts
-- Which error types most strongly alter downstream network conclusions?
-- Where should human review be mandatory, even with strong model performance?
-- What QC metadata is minimally required to make proofreading decisions auditable?
+---
 
-## Related resources
-- Journal club list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
-- Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
+## Lab: proofreading plan with a defended budget (2 hours)
+
+**Part A — hands on (60 min).**
+
+In a proofreading-capable viewer on a public dataset:
+
+1. Pick a neuron with visible errors. Trace its arbor and **log every error you find**:
+   type, location, estimated size of the affected arbor fraction, and estimated fix
+   time.
+2. Fix the three highest-impact errors by your own ranking, and record your ranking
+   rationale *before* fixing.
+3. After fixing, recount the neuron's input synapses. Report the change from before.
+   This number is your personal demonstration of why proofreading level must be
+   reported with results.
+4. Note one error you chose *not* to fix, and why.
+
+**Part B — the plan (60 min).**
+
+Your project needs 200 proofread layer-2/3 pyramidal cells to test a cell-type
+targeting hypothesis. Write a two-page proofreading plan:
+
+1. **Endpoint metric**, stated precisely, with units.
+2. **Proofreading levels**, defined with written criteria a new annotator could apply.
+   State which level each part of your analysis requires and why.
+3. **Triage ranking rule**, with the factors from §4 and their relative weights. Give
+   a worked example applying it to two competing candidate corrections.
+4. **Stopping rule**, stated so that a person who is not you could determine whether it
+   has been met.
+5. **Budget:** person-hours, derived from your own Part A timing extrapolated with
+   stated assumptions. Show the arithmetic.
+6. **Quality plan:** which metrics, on what sample, at what frequency; how you will
+   measure inter-annotator agreement; and the endpoint-shift measurement from §3.
+7. **What you will report** in the eventual paper about data quality — write the
+   actual methods paragraph.
+
+### Rubric
+
+| | Not yet | Proficient | Strong |
+|---|---|---|---|
+| **Endpoint** | Vague | Precise with units | Precise, and the required proofreading level is derived *from* it rather than asserted |
+| **Levels** | Binary done/not-done | Levels defined | Criteria are operational — two annotators would assign the same level |
+| **Triage** | "Fix the big ones" | Multi-factor ranking | Weights justified, worked example given, cost-to-fix included |
+| **Stopping rule** | Absent or unfalsifiable | Stated and measurable | Convergence-based, tied to the endpoint, checkable by a third party |
+| **Budget** | Guessed | Derived from measured timing | Assumptions stated, sensitivity considered, and a contingency for the hard tail |
+| **Quality plan** | Metrics named | Metrics with sampling plan | Includes endpoint-shift measurement and inter-annotator agreement |
+| **Reporting** | Not attempted | Mentions proofreading | A methods paragraph a reviewer would accept, with per-cell level reported |
+
+<details markdown="1">
+<summary>The estimation trap in step 5 — read after drafting your budget</summary>
+
+Almost everyone underestimates, and almost always the same way: by extrapolating
+from the *median* neuron.
+
+Proofreading time per neuron is heavy-tailed. Most cells are quick; a minority
+consume many times the median because they sit in an artifact region, have an
+unusually extensive axon, or are tangled with a neighbour across many sections. If
+you budget median × 200, you will be short — and the shortfall will land at the end
+of the project, when it is most damaging.
+
+Better practice:
+
+- Estimate from the **mean**, and estimate the mean from a sample large enough to
+  include tail cases (in practice, don't trust a sample of fewer than ~10–15 cells).
+- Or: budget median × N, and add an explicit contingency for the tail, stated as a
+  separate line item.
+- Or best: define your stopping rule so that pathological cells are *excluded by
+  policy* after a stated time cap, and report the exclusion rate. A stated 6%
+  exclusion rate is honest and cheap; an unbudgeted tail is neither.
+
+This is also a good illustration of why the stopping rule and the budget must be
+designed together rather than sequentially.
+</details>
+
+---
+
+## Common errors and how to recover
+
+**Proofreading without a stopping rule.** Recover: write one now, tie it to the
+endpoint, and get someone else to confirm they could evaluate it.
+
+**Optimizing the aggregate metric.** Recover: fix an evaluation set of neurons and an
+endpoint metric; ship on those.
+
+**Triage by conspicuousness.** Recover: score candidates on a written rubric; audit a
+sample of decisions against it.
+
+**Unreported proofreading level.** Recover: attach level metadata per cell; filter
+analyses by level; state it in the methods.
+
+**Rewarding throughput alone.** Recover: publish agreement statistics alongside
+throughput and discuss them as protocol feedback.
+
+**Assuming the error rate is uniform.** It is not — it is much higher near volume
+boundaries, in artifact regions, and for thin processes. Recover: report error rate
+by region and by process calibre, and let that drive both triage and the caveats.
+
+---
+
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **State the proofreading level of the cells a result rests on.**
+  Without it a reader cannot tell whether a low connection count is biology or incompleteness. Almost no published analysis includes this, which is exactly why including it is noticed.
+
+- **Define the stopping rule before you start, and make it checkable by someone else.**
+  "Until it looks good" is not a stopping rule. Writing one down in advance is what converts proofreading from open-ended cleanup into a plannable task.
+
+- **Report what you excluded and why.**
+  A stated 6% exclusion rate is honest and cheap. An unbudgeted tail discovered at the end is neither.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
+## What this unit does not cover
+
+Segmentation model architecture and training in depth, and the statistical analysis of
+the resulting graph (Unit 09). Tool-specific keyboard workflows change too fast to
+document here; use the vendor documentation and record your team's conventions in your
+own protocol.
+
+---
+
+## Go deeper
+
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — full catalogue with examples
+- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, and precision/recall worked in detail
+- [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) — seeding, extension, and triage patterns
+- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — the platform landscape
+- [Worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}) — annotated correction cases
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) — hands-on quality exploration
 
 ## Course links
-- Existing overlap: [module06]({{ '/modules/module06/' | relative_url }}), [module07]({{ '/modules/module07/' | relative_url }})
-- Next unit: [09 Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 
-## Quick activity
-Take one candidate merge/split case and write a short correction log with before/after rationale and one QC metric.
-
-
-## Content library references
-- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — Merge, split, boundary, and identity errors in detail
-- [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) — Exhaustive, targeted, priority-ranked, crowd-sourced approaches
-- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — CAVE, Neuroglancer, Spelunker, NeuTu
-- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, edge F1, synapse-centric F1 with formulas
-- [Proofreading worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}) — Step-by-step correction scenarios
-- [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization and reproducible proofreading
-- [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) — Collaborative proofreading at scale
-
-## Teaching slide deck
-- Slide draft page: [Segmentation and Proofreading deck draft]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
+- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
+- Related modules: [Module 07]({{ '/modules/module07/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
+- Lecture plan: [Segmentation and Proofreading lecture plan]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
+- **Next unit:** [09 Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

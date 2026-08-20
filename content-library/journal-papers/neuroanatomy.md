@@ -12,6 +12,8 @@ tags:
   - neuroanatomy:spine
   - neuroanatomy:organelle
   - imaging:electron-microscopy
+use_layout_hero: false
+content_type: core
 ---
 
 # Neuroanatomy Journal Papers

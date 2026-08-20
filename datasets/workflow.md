@@ -33,6 +33,8 @@ resource_links: []
 image: /assets/images/datasets/workflow.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD
+use_layout_hero: false
+content_type: core
 ---
 
 <div class="main-content">
@@ -638,6 +640,37 @@ maintainer: TBD
   
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* The blocks below kept desktop padding and fixed grid columns at phone
+     widths, so .next-steps (3rem of padding each side) left 236px of content
+     for a .cta-grid whose column was a fixed 280px. The card ran to 405px in a
+     390px viewport and the whole page scrolled sideways. */
+  .next-steps {
+    padding: 1.5rem 1.1rem;
+    margin-top: 2.5rem;
+  }
+
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-card {
+    padding: 1.25rem;
+  }
+
+  .workflow-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+
+  .workflow-preview {
+    padding: 1.25rem;
   }
 }
 </style>

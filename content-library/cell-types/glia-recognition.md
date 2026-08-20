@@ -35,6 +35,7 @@ combines_with:
   - axon-dendrite-classification
   - neuron-type-identification
   - artifact-taxonomy
+content_type: core
 ---
 
 ## Overview

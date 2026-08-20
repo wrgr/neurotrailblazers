@@ -11,6 +11,8 @@ pathways:
   - methods depth
 last_reviewed: 2026-03-10
 maintainer: TBD
+use_layout_hero: false
+content_type: navigation
 ---
 
 <div class="main-content">
@@ -24,10 +26,11 @@ maintainer: TBD
 
   <section class="section">
     <p>This track follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
+    <p>The ten units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track. The reference material they draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running it for a group, the <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a> are the same material in <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
     <div class="cta-buttons">
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Slide Decks</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Lecture Plans</a>
       <a href="{{ '/teaching/' | relative_url }}" class="btn btn-secondary">Teaching Hub</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Concept Explorer</a>
     </div>

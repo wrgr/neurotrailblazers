@@ -1,11 +1,35 @@
 ---
 # Primary site navigation items.
-# Canonical source for header/nav; mirrors initial _config.yml.navigation.
+# Canonical source for header/nav; _config.yml.navigation is a fallback mirror.
+#
+# The shape follows the site architecture: Core is the reference layer, Tracks
+# are the paths through it (topic axis) plus the modes of use (mode axis), and
+# Teaching holds the delivery material. Anything that is neither reference,
+# path, nor delivery belongs under Tools or About.
 items:
   - title: "Home"
     url: "/"
   - title: "Start Here"
     url: "/start-here/"
+  - title: "Core"
+    url: "/core/"
+    dropdown:
+      - title: "What the core is"
+        url: "/core/"
+      - title: "Content Library"
+        url: "/content-library/"
+      - title: "Connectomics Dictionary"
+        url: "/technical-training/dictionary/"
+      - title: "Journal Club"
+        url: "/technical-training/journal-club/"
+      - title: "Journal Papers"
+        url: "/content-library/journal-papers/"
+      - title: "Atlas & Reference"
+        url: "/technical-training/atlas-connectomics-reference/"
+      - title: "Hidden Curriculum"
+        url: "/hidden-curriculum/"
+      - title: "Datasets"
+        url: "/datasets/"
   - title: "Tracks"
     url: "/tracks/"
     dropdown:
@@ -17,41 +41,39 @@ items:
         url: "/tracks/research-in-action/"
       - title: "Career & Community"
         url: "/tracks/career-and-community/"
+      - title: "Modes of Use"
+        url: "/modes/"
+      - title: "Side Quests"
+        url: "/side-quests/"
+      - title: "Concept Explorer"
+        url: "/concepts/"
   - title: "Technical Course"
     url: "/technical-training/"
-  - title: "Journal Club"
-    url: "/technical-training/journal-club/"
   - title: "Modules"
     url: "/modules/"
     dropdown: []
-  - title: "Resources"
-    url: "/datasets/"
-    dropdown:
-      - title: "Content Library"
-        url: "/content-library/"
-      - title: "Journal Papers"
-        url: "/content-library/journal-papers/"
-      - title: "Journal Club"
-        url: "/technical-training/journal-club/"
-      - title: "Concepts"
-        url: "/concepts/"
-      - title: "Datasets"
-        url: "/datasets/"
-      - title: "Workflow"
-        url: "/datasets/workflow/"
-      - title: "Ask an Expert"
-        url: "/ask-an-expert/"
-      - title: "Proofreading Tool"
-        url: "/tools/connectome-quality/"
   - title: "Teaching"
     url: "/teaching/"
     dropdown:
       - title: "Teaching Hub"
         url: "/teaching/"
+      - title: "Session Kits"
+        url: "/teaching/sessions/"
       - title: "Facilitator Guide"
         url: "/teaching/facilitator-guide/"
       - title: "Module Slides"
         url: "/modules/slides/"
+  - title: "Tools"
+    url: "/tools/"
+    dropdown:
+      - title: "All Tools"
+        url: "/tools/"
+      - title: "Ask an Expert"
+        url: "/ask-an-expert/"
+      - title: "Proofreading Tool"
+        url: "/tools/connectome-quality/"
+      - title: "Workflow"
+        url: "/datasets/workflow/"
   - title: "About"
     url: "/frameworks/"
     dropdown:

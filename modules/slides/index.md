@@ -4,6 +4,7 @@ title: "Module Slide Decks"
 permalink: /modules/slides/
 slug: module-slides
 track: core-concepts-methods
+content_type: delivery
 pathways:
   - classroom delivery
 ---

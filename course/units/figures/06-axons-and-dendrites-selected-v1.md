@@ -7,8 +7,6 @@
 - `FIG-RIV-AXDEN-S13-01` (side-by-side comparison)
 - `FIG-RIV-AXDEN-S14-01` (advanced morphology case)
 - `FIG-RIV-AXDEN-S18-01` (edge-case classification)
-- `FIG-RIV-AXDEN-S22-01` (high-complexity proofreading cue)
-- `FIG-RIV-AXDEN-S23-01` (late-stage synthesis cue)
 
 ## Use guidance
 - Keep this unit strongly visual and cue-driven.

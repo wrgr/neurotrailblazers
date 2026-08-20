@@ -13,6 +13,8 @@ tags:
   - case-studies:MICrONS
   - case-studies:H01
   - case-studies:dense-reconstruction
+use_layout_hero: false
+content_type: core
 ---
 
 # Datasets & Case Studies Journal Papers

@@ -47,6 +47,8 @@ combines_with:
   - h01-human-cortex
   - mouseconnects-himc
   - flywire-whole-brain
+use_layout_hero: false
+content_type: core
 ---
 
 # MICrONS Visual Cortex

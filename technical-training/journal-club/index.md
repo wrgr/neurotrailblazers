@@ -2,17 +2,22 @@
 layout: default
 title: "Journal Club"
 permalink: /technical-training/journal-club/
-description: "Interactive journal club with 269 curated connectomics papers. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - shared vocabulary
+description: "Interactive journal club with a curated connectomics reading list. Filter by expertise level, dimension, or keyword. Each paper presented with the OCAR framework — Opportunity, Challenge, Action, Resolution, and Future Work."
+content_type: core
 ---
 
 <div class="layout-content layout-page">
 
 <section class="jc-hero">
   <h1>Journal Club</h1>
-  <p>{{ site.data.journal_papers.papers.size }} curated connectomics papers across 11 dimensions, each presented with the OCAR framework &mdash; Opportunity, Challenge, Action, Resolution, and Future Work.</p>
+  <p>{{ site.data.journal_papers.papers.size }} curated connectomics papers across {{ site.data.journal_papers.papers | map: 'dimension' | compact | uniq | size }} dimensions, each presented with the OCAR framework &mdash; Opportunity, Challenge, Action, Resolution, and Future Work.</p>
   <div class="jc-hero-stats">
     <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} papers</span>
-    <span class="jc-hero-stat">11 dimensions</span>
+    <span class="jc-hero-stat">{{ site.data.journal_papers.papers | map: 'dimension' | compact | uniq | size }} dimensions</span>
     <span class="jc-hero-stat">3 expertise levels</span>
     <span class="jc-hero-stat">1986 &ndash; 2025</span>
   </div>
@@ -52,19 +57,20 @@ description: "Interactive journal club with 269 curated connectomics papers. Fil
     </select>
 
     <label for="jc-dimension">Dimension:</label>
+    {%- comment -%}
+      Options are generated from the data rather than hardcoded. The hardcoded list
+      had drifted: five of its values matched no paper at all, and six dimensions
+      that do exist in the data had no option. Generating them means the filter
+      cannot silently diverge from the corpus again.
+    {%- endcomment -%}
+    {%- assign dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq | sort -%}
     <select id="jc-dimension">
       <option value="all">All dimensions</option>
-      <option value="neuroanatomy">Neuroanatomy</option>
-      <option value="imaging">Imaging &amp; Sample Prep</option>
-      <option value="computer-vision-ml">Computer Vision &amp; ML</option>
-      <option value="data-storage">Data Storage &amp; Pipelines</option>
-      <option value="proofreading">Proofreading &amp; QC</option>
-      <option value="cell-types">Cell Types</option>
-      <option value="connectomics">Graph Construction</option>
-      <option value="network-analysis">Network Analysis</option>
-      <option value="mri-connectomics">MRI Connectomics</option>
-      <option value="neuroai">NeuroAI &amp; Modeling</option>
-      <option value="case-studies">Case Studies</option>
+      {%- for dim in dims %}
+      {%- assign mapped = site.data.content_tags.dimension_labels[dim] %}
+      {%- if mapped %}{% assign label = mapped %}{% else %}{% assign label = dim | replace: '-', ' ' | capitalize %}{% endif %}
+      <option value="{{ dim }}">{{ label }}</option>
+      {%- endfor %}
     </select>
 
     <label for="jc-sort">Sort:</label>

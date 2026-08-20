@@ -39,8 +39,7 @@ key_questions:
   - "What minimum image quality supports downstream segmentation?"
 slides:
   - "/assets/slides/module05/module05-electron-microscopy-and-image-basics.pdf"
-notebook:
-  - "/assets/notebooks/module05/module05-electron-microscopy-and-image-basics.ipynb"
+notebook: []
 datasets:
   - "/datasets/workflow"
 personas:
@@ -59,6 +58,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -106,6 +106,15 @@ Three primary EM modalities are used in modern connectomics, each with distinct 
 - **Focused ion beam SEM (FIB-SEM)**: A gallium ion beam mills ~4-8 nm layers from the block face. Typical resolution: ~4 nm isotropic (XY = Z). The isotropic voxels simplify 3D segmentation and enable tracing of even the finest neurites, but throughput is low and volumes are typically limited to tens of micrometers per side. Artifacts include curtaining (ion beam striping) and re-deposition.
 
 The choice of modality depends on the scientific question. Large-scale circuit mapping (e.g., MICrONS) uses SBEM or ssTEM for throughput; ultrastructural studies of specific synaptic features may favor FIB-SEM for its isotropic resolution.
+
+### Misconception guardrails
+
+Each of these is a belief a learner plausibly holds on arriving. Name it, then check your own work against it.
+
+- **Misconception guardrail:** you can proofread your way out of a bad image.
+- **Misconception guardrail:** a noisy image is worse for segmentation than a clean image with faint membranes.
+- **Misconception guardrail:** artifact severity can be judged from a count, when the spatial distribution matters more.
+- **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
 
 ## Core workflow
 
@@ -175,6 +184,7 @@ Before the session, students should:
 Select three EM image patches from the course dataset that were not covered in class. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
 
 ## Studio activity
+{: #studio-activity}
 
 ### Scenario
 

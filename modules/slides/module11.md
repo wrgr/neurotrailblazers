@@ -4,6 +4,7 @@ title: "Slide Deck: Module 11"
 permalink: /modules/slides/module11/
 slug: module11-slides
 track: core-concepts-methods
+content_type: delivery
 pathways:
   - classroom delivery
   - teaching preparation

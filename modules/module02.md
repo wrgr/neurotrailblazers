@@ -57,6 +57,7 @@ videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
+content_type: path
 ---
 
 ## Capability target
@@ -150,6 +151,7 @@ Every research environment operates on two sets of rules: the official ones (wri
 - **Instructor script:** "Keep this playbook accessible. Revise it as you learn more about your research environment."
 
 ## Studio activity: "Build your lab navigation playbook"
+{: #studio-activity}
 
 ### Overview
 Learners produce a one-page research navigation document that serves as a practical reference throughout the program.
@@ -174,6 +176,12 @@ Write 3-5 sentences describing your commitments regarding:
 - How you will track data provenance in your work.
 - How you will attribute contributions from collaborators.
 - How you will handle errors (your own and others').
+
+**Outputs**
+- Norms inventory of five unwritten norms, each with how it is learned and what violating it costs, with the two hardest starred.
+- Three written communication scripts, customized to your own situation: asking for help, giving feedback, admitting uncertainty.
+- Mentor and support map with at least three filled rows, including one peer, one senior person, and one contact outside your immediate team.
+- Ethics commitment of 3-5 sentences covering provenance, attribution, and error handling.
 
 ## Assessment rubric
 - **Minimum:** clear norms list, help-seeking plan, and at least one communication script.

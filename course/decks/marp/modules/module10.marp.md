@@ -39,35 +39,58 @@ Build one connectome graph representation and justify two metric choices for a d
 ---
 
 ## Concept Focus
-
+### 1) From EM to graph: a lossy transformation
+A connectome graph is an abstraction. The path from EM images to a graph involves: raw images → segmentation → synapse detection → neuron-to-neuron edge list → graph. Each step loses information: the graph retains connectivity topology but discards spatial relationships, organelle details, and membrane geometry. This is a feature (graphs are computationally efficient and analytically tractable) and a limitation (the graph cannot answer questions that require spatial context).
 
 ---
 
 ## Core Workflow
-- Define node/edge schema.
-- Construct graph and inspect integrity.
-- Compute candidate metrics.
-- Interpret metrics against hypothesis.
-- Document abstraction limits.
+- Define node/edge schema: what are your nodes, what are your edges, what weighting scheme?
+- Construct graph from synapse table (e.g., using CAVEclient + NetworkX). Inspect: number of nodes, edges, density, connected components.
+- Compute candidate metrics: degree distribution, clustering, path length, reciprocity, modularity.
+- Compare each metric to null-model expectation (degree-preserving random graph as minimum).
+- Interpret metrics against hypothesis. Report which metrics are significant and which are not.
+- Document abstraction limits: what information was lost in the graph construction?
 
 ---
 
 ## 60-Minute Run-of-Show
-- 00:00-08: graph abstraction choices.
-- 08:00-20: graph build demo.
-- 20:00-34: metric computation.
-- 34:00-46: interpretation and null concerns.
-- 46:00-60: competency check.
+- Read the graph representations content library entry
+- Install NetworkX: `pip install networkx`
+- **00:00-08:00 | Graph abstraction choices**
+- Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. "These are three views of the same biology. Today we work with (b) and (c)."
+- Discussion: "What did we gain and lose in each transformation?"
+- **08:00-20:00 | Graph build demo**
+- Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
+- Visualize the graph with spring layout. Color nodes by cell type.
+- "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
+- **20:00-34:00 | Metric computation**
+- Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
+- Plot degree distribution (log-log). Is it heavy-tailed?
+- Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
+- **34:00-46:00 | Interpretation and null concerns**
+- "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
+- Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?
+- Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.
+- **46:00-60:00 | Competency check**
+- Each learner writes a 1-paragraph graph analysis summary:
+- Schema (nodes, edges, threshold)
+- Two metrics with values and null-model comparisons
+- One biological interpretation and one limitation
+- Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
 
 ---
 
 ## Misconceptions to Watch
-- Surface and correct one likely misconception during debrief.
+- **Misconception guardrail:** the connectivity graph is the data, rather than one lossy projection of it that discards all geometry.
+- **Misconception guardrail:** the synapse threshold is a technical detail that does not need reporting.
+- **Misconception guardrail:** a graph metric means the same thing biologically as it does in its original network-science context.
+- **Misconception guardrail:** Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.
 
 ---
 
 ## Studio Activity
-Create a graph summary report with node/edge schema, metric table, and interpretation notes.
+{: #studio-activity}
 
 ---
 
@@ -79,9 +102,9 @@ Create a graph summary report with node/edge schema, metric table, and interpret
 ---
 
 ## Assessment Rubric
-- Minimum: coherent graph model and metric rationale.
-- Strong: clear link between metric and biological question.
-- Failure: metric dumping without hypothesis alignment.
+- **Minimum pass**: Coherent graph model and metric rationale. Null comparison included.
+- **Strong performance**: Clear link between each metric and a biological question. Multiple null models tested. Community structure validated against external data.
+- **Common failure to flag**: Metric dumping without hypothesis alignment — computing every metric available without explaining what question each answers.
 
 ---
 

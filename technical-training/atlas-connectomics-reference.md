@@ -156,22 +156,25 @@ filling. An atlas of tools without limits is advertising.
 ---
 
 ## Visual context set
+
+This page is a lookup table and this panel is deck context, not reference material — nothing here should be cited. Use it instead to rehearse the habit §1 asks for: confirm every specification against the primary source, because dataset sizes and cell counts change as proofreading continues.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png' | relative_url }}" alt="Atlas references opener visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S03-02:</strong> references opener context.</p>
+    <p class="card-description"><strong>Module14 L3 S03-02:</strong> The opening of the source deck’s reference stream. Treat any figure it carries as provisional — volume sizes, cell counts, and synapse counts in this field are release-dependent, so check them against the primary source before citing (Unit 04 §2).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S10-01.png' | relative_url }}" alt="Atlas mid-reference stream visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S10:</strong> reference-stream context.</p>
+    <p class="card-description"><strong>Module14 L3 S10:</strong> Mid-stream references. Use it to test the curation standard in §4: for each resource named, ask whether you could write its <code>known_limits</code> sentence. That field is the one most often left blank, and an atlas of tools without limits is advertising.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S19-01.png' | relative_url }}" alt="Atlas closing references visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S19:</strong> closing references context.</p>
+    <p class="card-description"><strong>Module14 L3 S19:</strong> Closing references. Check them against the choosing table in §1 before proposing new acquisition — a large share of good connectomics questions can be answered by re-analysis of existing public data, at roughly five orders of magnitude less cost.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S44:</strong> developmental motif reference context.</p>
+    <p class="card-description"><strong>Techtalk S44:</strong> Developmental motif comparison, cross-referenced here from Unit 09. Use it as the pointer into the <em>C. elegans</em> developmental series in §1 — the dataset to reach for when the question is how connectivity changes with maturation rather than what it is in one adult.</p>
   </article>
 </div>
 
@@ -201,4 +204,4 @@ the unit mapping identifies where in that unit's workflow the resource fits.
 - [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}) — shared vocabulary
 - [Dataset access guide]({{ '/datasets/access/' | relative_url }}) — clients and starter notebooks
 - [Case studies]({{ '/content-library/' | relative_url }}) — extended treatments of MICrONS, FlyWire, H01, *C. elegans*, and MouseConnects
-- Slide plan: [Atlas Connectomics Reference deck]({{ '/technical-training/slides/atlas-connectomics-reference/' | relative_url }})
+- Lecture plan: [Atlas Connectomics Reference lecture plan]({{ '/technical-training/slides/atlas-connectomics-reference/' | relative_url }})

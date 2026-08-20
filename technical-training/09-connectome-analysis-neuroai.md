@@ -326,82 +326,85 @@ description of the present state and it costs nothing to be right about.
 ---
 
 ## Visual training set
+
+These are concept and tooling slides from the source decks, several of them historical — use them for the framing rather than the numbers. For each panel, ask what null model its implied claim would need, since §2 shows the same data yielding “2.9-fold enrichment” or “no detectable effect” depending on a choice made before any test is run.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="NeuroAI visual: motivating question" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S10:</strong> motivation question linking natural and artificial intelligence.</p>
+    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question linking natural and artificial intelligence. Hold it against the asymmetry in §5: machine learning has given connectomics far more than the reverse so far, and saying that plainly is part of writing about NeuroAI credibly.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="NeuroAI visual: brain data framing" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S11:</strong> brain-data framing for analysis context.</p>
+    <p class="card-description"><strong>Techtalk S11:</strong> Brain data, framed for analysis. Before any statistic, the six construction choices in §1 have to be made — node, edge, weight, direction, inclusion, boundary — and each changes the answer. A graph is a versioned artifact with recorded parameters, not a script someone ran once.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png' | relative_url }}" alt="NeuroAI visual: reverse-engineering analogy" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S12:</strong> reverse-engineering analogy for computational decomposition.</p>
+    <p class="card-description"><strong>Techtalk S12:</strong> The reverse-engineering analogy. Ask what the analogy assumes a wiring diagram supplies: synapse counts are a proxy for strength and not synaptic weights, and sign, short-term dynamics, plasticity state, and neuromodulatory context are all absent.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S13-01.png' | relative_url }}" alt="NeuroAI visual: pipeline overview" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S13:</strong> NeuroAI pipeline framing.</p>
+    <p class="card-description"><strong>Techtalk S13:</strong> A NeuroAI pipeline. The strongest result type it can support is a connectome-constrained model — fix connectivity from the measurement, fit what remains, predict responses that are then tested. That is the version where the connectome removes free parameters rather than decorating a figure.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S24-01.png' | relative_url }}" alt="NeuroAI visual: subgraph motif search concept" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S24:</strong> subgraph motif-search concept.</p>
+    <p class="card-description"><strong>Techtalk S24:</strong> Motif search as a concept. A motif is enriched only relative to a null, so ask what would count as the uninteresting explanation here — degree heterogeneity, spatial proximity, or cell-type composition — and require the null to preserve it.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S26-01.png' | relative_url }}" alt="NeuroAI visual: query language tooling context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S26:</strong> query-language/tooling transition.</p>
+    <p class="card-description"><strong>Techtalk S26:</strong> The turn from concept to query tooling. Note what a declarative query does not do for you: it returns counts against whatever graph you built, carrying every §1 construction choice, including the synapse threshold that quietly removed most of your edges.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S31-01.png' | relative_url }}" alt="NeuroAI visual: subgraph isomorphism algorithm context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S31:</strong> subgraph-isomorphism algorithm context.</p>
+    <p class="card-description"><strong>Techtalk S31:</strong> Subgraph isomorphism, the computational core. The hard part in practice is statistical rather than algorithmic — triad counts are strongly correlated with one another, so treating the sixteen classes as independent tests overstates confidence and argues for permutation-based inference.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S32-01.png' | relative_url }}" alt="NeuroAI visual: performance benchmark" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S32:</strong> performance-benchmark context.</p>
+    <p class="card-description"><strong>Techtalk S32:</strong> A performance benchmark. Read it as historical, per the attribution below, and read benchmarks generally the way the atlas advises — scores on small, clean volumes systematically overstate performance on production data with artifacts, rare morphologies, and volume boundaries.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S33-01.png' | relative_url }}" alt="NeuroAI visual: throughput and scale claim context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S33:</strong> throughput/scale context (fallback for missing S34 extraction).</p>
+    <p class="card-description"><strong>Techtalk S33:</strong> Throughput and scale. Scale changes what is countable, not what is inferable: a larger graph tightens the error bars on a statistic and does nothing about the null-model choice or the merge-error bias that decide whether the statistic means anything.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S39-01.png' | relative_url }}" alt="NeuroAI visual: atlas scans hypothesis" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S39:</strong> atlas-scan hypothesis example.</p>
+    <p class="card-description"><strong>Techtalk S39:</strong> A hypothesis expressed as a scan across the graph. Count the tests, including those you run and do not report — sweeping one hypothesis over many candidates is a multiple-comparison problem, and the correction has to cover the whole sweep.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S42-01.png' | relative_url }}" alt="NeuroAI visual: DotMotif syntax example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S42:</strong> DotMotif syntax and query expression example.</p>
+    <p class="card-description"><strong>Techtalk S42:</strong> Motif query syntax. Its real value is that the motif definition becomes an explicit, reviewable artifact instead of a description in prose — which is what turns “pre-register the motif and the null” into a practical instruction rather than an aspiration.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="NeuroAI visual: developmental motifs" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S44:</strong> developmental motif-comparison context.</p>
+    <p class="card-description"><strong>Techtalk S44:</strong> Motif comparison across development. Comparisons are the most durable result type in this field because a shared reconstruction bias partly cancels between the two sides — the same reasoning behind preferring within-dataset comparisons in Unit 06 §4.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S03-01.png' | relative_url }}" alt="NeuroAI visual: project overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S03:</strong> project-overview context.</p>
+    <p class="card-description"><strong>Module13 L3 S03:</strong> Project overview. Work backwards from whatever the endpoint claim is, because inclusion criteria — which cells enter the graph at all — is the highest-leverage and least-reported decision in §1.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S11-01.png' | relative_url }}" alt="NeuroAI visual: data growth and scale context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S11:</strong> data-growth and scale context.</p>
+    <p class="card-description"><strong>Module13 L3 S11:</strong> Data growth. In a connectome dataset growth usually means proofreading continued, so a re-run against a later materialization giving different numbers is correct behaviour rather than a bug — provided the version is stated (Unit 04 §2).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S14-01.png' | relative_url }}" alt="NeuroAI visual: processing comparison context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S14:</strong> processing-comparison context.</p>
+    <p class="card-description"><strong>Module13 L3 S14:</strong> A processing comparison. Ask what is held constant across the arms being compared; if the graphs came from different construction parameters or different materialization versions, the comparison is measuring the pipeline rather than the biology.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S20-01.png' | relative_url }}" alt="NeuroAI visual: connectivity estimation context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S20:</strong> connectivity-estimation context.</p>
+    <p class="card-description"><strong>Module13 L3 S20:</strong> Connectivity estimation. Estimation inherits reconstruction error asymmetrically — merges inflate dense motifs superlinearly while splits deflate everything roughly proportionally — so the residual bias points toward the more interesting answer rather than away from it.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S24-01.png' | relative_url }}" alt="NeuroAI visual: classification model context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S24:</strong> classification/model context.</p>
+    <p class="card-description"><strong>Module13 L3 S24:</strong> A classification model built on connectivity. Where connectivity-derived clusters agree with morphological or transcriptomic types you have converging evidence for a type; where they disagree, that disagreement is the finding, and it should not be resolved by quietly picking the preferred answer.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S29-01.png' | relative_url }}" alt="NeuroAI visual: late-stage synthesis" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S29:</strong> late-stage synthesis context.</p>
+    <p class="card-description"><strong>Module13 L3 S29:</strong> Late-stage synthesis. This is where the error-sensitivity check belongs: perturb the graph at your own measured merge and split rates, recompute the statistic across many perturbations, and report the spread as an error band before a reviewer finds it for you.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S37-01.png' | relative_url }}" alt="NeuroAI visual: application-stage context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S37:</strong> application-stage context.</p>
+    <p class="card-description"><strong>Module13 L3 S37:</strong> The application stage. Scope the claim explicitly — a connectome constrains the space of possible dynamics, and it is not weights, not dynamics, and not a runnable brain. Stating that plainly costs nothing and is what makes the rest credible.</p>
   </article>
 </div>
 
@@ -502,5 +505,5 @@ Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 09]({{ '/modules/module09/' | relative_url }}), [Module 15]({{ '/modules/module15/' | relative_url }})
-- Slide plan: [Connectome Analysis and NeuroAI deck]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})
+- Lecture plan: [Connectome Analysis and NeuroAI lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})
 - **Next:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})

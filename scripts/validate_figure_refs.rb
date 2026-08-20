@@ -39,19 +39,21 @@ puts "Figure ref validation from #{ROOT}"
 puts "Scanned files: #{refs_by_file.size}"
 puts "Available asset IDs: #{asset_ids.size}"
 
+# Note: this used to `exit 0` here when nothing was missing, which skipped the
+# Marp image-path check below entirely. Both checks now always run, and the exit
+# code at the end reflects either of them.
 if missing.empty?
   puts 'No missing figure references found.'
-  exit 0
 end
 
-puts "\nMissing figure references detected:"
-missing.sort.each do |path, ids|
-  rel = path.delete_prefix("#{ROOT}/")
-  puts "- #{rel}"
-  ids.sort.each { |id| puts "  - #{id}" }
+unless missing.empty?
+  puts "\nMissing figure references detected:"
+  missing.sort.each do |path, ids|
+    rel = path.delete_prefix("#{ROOT}/")
+    puts "- #{rel}"
+    ids.sort.each { |id| puts "  - #{id}" }
+  end
 end
-
-puts "\nValidation complete with warnings."
 
 marp_missing = {}
 Dir.glob(File.join(ROOT, 'course/decks/marp/*.marp.md')).each do |path|
@@ -76,5 +78,10 @@ else
   end
 end
 
-puts "\nDone."
-exit 0
+if marp_missing.empty? && missing.empty?
+  puts "\nDone: no problems found."
+  exit 0
+end
+
+puts "\nDone: figure reference problems found."
+exit 1

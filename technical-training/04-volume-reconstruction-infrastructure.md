@@ -370,22 +370,25 @@ time on triage and prioritization rather than on algorithms.
 ---
 
 ## Visual context set
+
+Read these as architecture sketches to check your own mental model against. For each one, ask where the immutable layer sits and where the mutable one does — the whole design in §2 follows from freezing supervoxels and letting only the grouping change.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png' | relative_url }}" alt="High-level architecture visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S04:</strong> high-level architecture context.</p>
+    <p class="card-description"><strong>Module14 L1 S04:</strong> A high-level architecture view. Map the eight stages of §1 onto it and name the artifact each stage actually produces, because the artifact is the thing you debug. A stage whose output you cannot name is a stage you do not yet understand.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S07-01.png' | relative_url }}" alt="Workflow API integration visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S07:</strong> workflow/API integration context.</p>
+    <p class="card-description"><strong>Module14 L1 S07:</strong> Workflow and API integration. Ask what a query crossing these boundaries returns and whether it is pinned: a root ID carries no meaning without a materialization version or timestamp (§2), and this layer is where that omission quietly enters an analysis.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png' | relative_url }}" alt="Service decomposition visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S12:</strong> service decomposition context.</p>
+    <p class="card-description"><strong>Module14 L1 S12:</strong> Service decomposition. Match each service to the consumers in §3 — proofreader, analysis job, synapse query — which want mutually incompatible chunk layouts. Storing the same data in several representations is the answer to “why is this here three times?”, not redundancy.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S08-01.png' | relative_url }}" alt="Scalable analytics context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L1 S08:</strong> scalable analytics context.</p>
+    <p class="card-description"><strong>Module13 L1 S08:</strong> Scalable analytics. Weigh whatever scaling story it tells against the cost table in §5: compute and storage are line items you can negotiate with a vendor, and proofreading labour is the dominant cost that no architecture removes.</p>
   </article>
 </div>
 
@@ -500,5 +503,5 @@ across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 12]({{ '/modules/module12/' | relative_url }}), [Module 18]({{ '/modules/module18/' | relative_url }})
-- Slide plan: [Volume Reconstruction Infrastructure deck]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
+- Lecture plan: [Volume Reconstruction Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
 - **Next unit:** [05 Neuronal Ultrastructure]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})

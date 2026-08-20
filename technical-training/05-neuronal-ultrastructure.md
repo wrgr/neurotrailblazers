@@ -291,38 +291,41 @@ presynaptic cell without tracing the axon to a soma.
 ---
 
 ## Visual training set
+
+Work these panels with the organelle table in §1 open, and name the cue family behind every call you make. They are stills, and single-plane inspection is precisely the habit this unit exists to break — step 4 of the protocol overturns more calls than any other. Treat the panel as a reference for what a cue looks like, and do your actual calling in a volume you can scroll through z.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png' | relative_url }}" alt="Ultrastructure training visual: neuron structure overview" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S04:</strong> neuron-structure overview for compartment grounding.</p>
+    <p class="card-description"><strong>RIV-ULTRA S04:</strong> Neuron structure at the compartment level. Use it to fix vocabulary before you meet anything ambiguous: for each compartment, recall from §1 which organelles you would expect present and, more usefully, which would be absent. Ribosomes ruling out axon is the highest-value entry in that table.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png' | relative_url }}" alt="Ultrastructure training visual: dendritic context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S08:</strong> dendritic ultrastructure context.</p>
+    <p class="card-description"><strong>RIV-ULTRA S08:</strong> Dendritic ultrastructure. Look for the organelle evidence that separates a shaft from a passing axon — polyribosome rosettes, loose microtubule arrays, smooth ER — and note which of those a weakly stained region would take away from you first.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Ultrastructure training visual: synapse cues" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S09:</strong> synapse-identification cue set.</p>
+    <p class="card-description"><strong>RIV-ULTRA S09:</strong> The synapse cue set. Hold anything you would call to all three criteria in §2: a vesicle cluster at the apposition itself, a cleft of uniform width, and a density on the receiving side. Dark contrast alone is the commonest beginner error — no vesicles, no synapse.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png' | relative_url }}" alt="Ultrastructure training visual: vesicle and organellar detail" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S10:</strong> vesicle and organellar features relevant to annotation.</p>
+    <p class="card-description"><strong>RIV-ULTRA S10:</strong> Vesicles and organelles at annotation scale. Check size against §1 before naming anything — clear synaptic vesicles run 35–50 nm and dense-core vesicles 80–120 nm, so this is a measurement rather than an impression. Remember that vesicle shape is partly a fixation artifact and is not independent of vesicle visibility.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S14-01.png' | relative_url }}" alt="Ultrastructure training visual: comparative panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S14:</strong> comparative ultrastructure panel.</p>
+    <p class="card-description"><strong>RIV-ULTRA S14:</strong> A comparative panel. Use it for the discipline §4 calls the whole game: pick two features that differ between profiles and ask whether they come from different cue families or share a failure mode. Two cues that degrade together under poor staining are one cue.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png' | relative_url }}" alt="Ultrastructure training visual: ambiguity case" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S20:</strong> ambiguity case for context-aware interpretation.</p>
+    <p class="card-description"><strong>RIV-ULTRA S20:</strong> An ambiguity case. Work out what evidence is missing rather than arguing from what is present, then assign a tier from §3. “Uncertain, deciding cue not resolvable in these sections” is a valid output and it is what populates the review queue.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png' | relative_url }}" alt="Ultrastructure training visual: advanced structural example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S24:</strong> advanced structural example for review.</p>
+    <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example — geometry, organelle content, synaptic role, neighbourhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S30-01.png' | relative_url }}" alt="Ultrastructure training visual: synthesis panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S30:</strong> synthesis panel for final interpretation checks.</p>
+    <p class="card-description"><strong>RIV-ULTRA S30:</strong> A synthesis check. Before signing any call, state separately what the evidence licenses and what it does not: asymmetric morphology licenses “putatively excitatory” and never “excitatory”, and nothing visible in a still licenses a statement about synaptic strength.</p>
   </article>
 </div>
 
@@ -340,7 +343,7 @@ presynaptic cell without tracing the axon to a soma.
 
 ### Materials
 
-- [Neuronal Ultrastructure deck]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
+- [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
 - The figure panel above (RIV-ULTRA shortlist)
 - A shared annotation sheet with columns: patch ID | compartment call | synapse call |
   confidence tier | cue family 1 | cue family 2 | what would change my mind
@@ -461,5 +464,5 @@ Unit 08.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 09]({{ '/modules/module09/' | relative_url }}), [Module 11]({{ '/modules/module11/' | relative_url }})
-- Slide plan: [Neuronal Ultrastructure deck]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
+- Lecture plan: [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
 - **Next unit:** [06 Axons and Dendrites]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }})

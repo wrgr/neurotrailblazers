@@ -135,8 +135,11 @@ def validate_file(path)
 
   unless problems.empty?
     puts "[WARN] #{path} (#{t}): #{problems.join(' | ')}"
+    PROBLEM_COUNT[:n] += 1
   end
 end
+
+PROBLEM_COUNT = { n: 0 }
 
 puts "Running frontmatter validation from #{ROOT}..."
 
@@ -146,4 +149,10 @@ CONTENT_GLOBS.each do |pattern|
   end
 end
 
-puts "Validation complete."
+if PROBLEM_COUNT[:n].zero?
+  puts 'Validation complete: no problems found.'
+  exit 0
+end
+
+puts "Validation complete: #{PROBLEM_COUNT[:n]} file(s) with problems."
+exit 1

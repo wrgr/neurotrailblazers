@@ -250,38 +250,41 @@ worst possible property for an error to have.
 ---
 
 ## Visual training set
+
+Use these with the protocol in §3 in hand, and force yourself to name the step that resolved each case — or the step at which you stopped. They are single planes, which is the habit to break: steps 4 and 5 both require following a process for micrometres through z. Treat the panel as a reference for what each cue looks like rather than as a surface you can classify from.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png' | relative_url }}" alt="Axon/dendrite training visual: orientation" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S01:</strong> orientation figure for process-type comparison.</p>
+    <p class="card-description"><strong>RIV-AXDEN S01:</strong> Orientation for the axon-versus-dendrite comparison. Fix the four cue families first — organelle content, calibre geometry, synaptic polarity, context — because confidence here comes from which families agree, not from how many observations of the same kind you stack up.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png' | relative_url }}" alt="Axon/dendrite training visual: dendritic morphology cue" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S08:</strong> dendrite-focused morphology cue.</p>
+    <p class="card-description"><strong>RIV-AXDEN S08:</strong> A dendrite-focused cue. Look for the geometry evidence that survives bad staining: steady taper with distance from soma, and daughter branches thinner than the parent at a branch point. That taper rule is independent of stain quality, which makes it valuable exactly when the ribosome cue has failed you.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png' | relative_url }}" alt="Axon/dendrite training visual: classification cue" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S11:</strong> process classification cue in dense context.</p>
+    <p class="card-description"><strong>RIV-AXDEN S11:</strong> Classification in dense neuropil — the normal case, where no soma is reachable. Run step 1 of the protocol first: a single clean synapse anywhere in view settles polarity faster than a long scroll, and the side carrying the vesicle cluster is the axon.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S13-01.png' | relative_url }}" alt="Axon/dendrite training visual: side-by-side comparison" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S13:</strong> side-by-side axon/dendrite comparison panel.</p>
+    <p class="card-description"><strong>RIV-AXDEN S13:</strong> A side-by-side comparison. Name three differences, label each with its family, then ask which of them you would still see at ten percent weaker membrane contrast. That ordering is your personal cue-robustness ranking, and the calibration lab is where you measure it.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S14-01.png' | relative_url }}" alt="Axon/dendrite training visual: advanced cue set" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S14:</strong> advanced feature set for ambiguity handling.</p>
+    <p class="card-description"><strong>RIV-AXDEN S14:</strong> An ambiguity case. Resist stacking more of the same evidence: high confidence requires two cues from different families. If everything available belongs to one family, the honest output is medium confidence with the missing family named.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png' | relative_url }}" alt="Axon/dendrite training visual: edge-case morphology" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S18:</strong> edge-case morphology requiring multi-cue interpretation.</p>
+    <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case. Before applying “PSD implies dendrite”, check the exception list in §2 — an axon initial segment receiving chandelier input is postsynaptic and still an axon. The tell is membrane undercoating plus fasciculated microtubules within roughly 20–60 µm of a soma.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S22-01.png' | relative_url }}" alt="Axon/dendrite training visual: high-complexity cue" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S22:</strong> high-complexity proofreading cue.</p>
+    <p class="card-description"><strong>RIV-AXDEN S22:</strong> A high-complexity case. Watch for cue conflict and read it as a segmentation alarm rather than a hard classification: ribosomes and a presynaptic vesicle cluster in one cortical process means the leading hypothesis is “this is not one object”, not “one cue is wrong”.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S23-01.png' | relative_url }}" alt="Axon/dendrite training visual: late-stage synthesis example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S23:</strong> synthesis example for final class assignment.</p>
+    <p class="card-description"><strong>RIV-AXDEN S23:</strong> A final class assignment. Record a confidence alongside the call, because the arithmetic in §4 depends on it — a direction error removes a true edge and adds its reverse, doubling the effect on any direction-sensitive statistic. Re-running the headline result on high-confidence edges only is the mitigation that works.</p>
   </article>
 </div>
 
@@ -391,5 +394,5 @@ prioritization (Unit 08) or motif analysis (Unit 09).
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 09]({{ '/modules/module09/' | relative_url }})
-- Slide plan: [Axons and Dendrites deck]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})
+- Lecture plan: [Axons and Dendrites lecture plan]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})
 - **Next unit:** [07 Glia]({{ '/technical-training/07-glia/' | relative_url }})

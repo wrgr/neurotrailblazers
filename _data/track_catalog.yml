@@ -52,9 +52,9 @@ tracks:
       - title: Technical Training Course Hub
         url: /technical-training/
         summary: Canonical connectomics sequence from imaging to NeuroAI.
-      - title: Technical Slides and Lecture Drafts
+      - title: Technical Lecture Plans
         url: /technical-training/slides/
-        summary: Lecture-ready sequence with slide-source links.
+        summary: "Per-unit build plans for instructors: slide sequence, timing, figure placement, and speaker notes, with links to the rendered Marp decks."
       - title: Journal Club Reading List
         url: /technical-training/journal-club/
         summary: Required and optional readings aligned to the technical sequence.

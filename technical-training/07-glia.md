@@ -203,26 +203,29 @@ the deciding cue was not resolvable. That is a useful annotation.
 ---
 
 ## Visual training set
+
+Work these against the identification protocol in §3, naming the step that decides each case. They are single planes and the decisive glial cue usually is not one: step 4 asks how a cross-section behaves over five to ten sections, and perisynaptic astrocytic sheets under 100 nm thick are the hardest structures in the volume. Use the panel as a reference for what the cues look like, and do the calling in a volume you can scroll through z.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png' | relative_url }}" alt="Glia training visual: overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S01:</strong> opening context visual for glia-focused proofreading.</p>
+    <p class="card-description"><strong>RIV-GLIA S01:</strong> Orientation for glia proofreading. Set the stake before you start looking: glia occupy roughly 20–40% of cortical volume, and a glia-neuron merge does not merely add a branch — it drags a neuron’s arbor past synapses it never contacted, so the false-input yield per micrometre of merged path is unusually high.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png' | relative_url }}" alt="Glia training visual: astrocyte context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S03:</strong> astrocyte-related morphology and synaptic neighborhood context.</p>
+    <p class="card-description"><strong>RIV-GLIA S03:</strong> Astrocyte morphology in a synaptic neighbourhood. Read cross-sectional shape before anything else: an astrocytic process is space-filling, taking whatever contour is left over after the neurites pack, where a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png' | relative_url }}" alt="Glia training visual: microglia context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S09:</strong> microglia recognition cues in local structural context.</p>
+    <p class="card-description"><strong>RIV-GLIA S09:</strong> Microglia cues. Look for the pairing that carries the call — a dark, often elongated or bean-shaped nucleus with heterochromatin clumped against the envelope, plus lysosomal and phagosomal content in dense cytoplasm. Microglia are the least stereotyped of the three classes because morphology tracks activation state, so weight nuclear evidence above process shape.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S15-01.png' | relative_url }}" alt="Glia training visual: oligodendrocyte reconstruction" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S15:</strong> oligodendrocyte-focused morphology/reconstruction cue.</p>
+    <p class="card-description"><strong>RIV-GLIA S15:</strong> Oligodendrocyte identification. Where a nucleus is in view it is the cue that works even at low magnification: small, round, and the densest in the field. If it reads as oligodendrocyte but the nucleus is not dark enough, OPC is the leading hypothesis and the correct action is to flag rather than force the call.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S16-01.png' | relative_url }}" alt="Glia training visual: myelin-related glia context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S16:</strong> myelin-related context for glia interpretation.</p>
+    <p class="card-description"><strong>RIV-GLIA S16:</strong> Myelin context. Check where oligodendrocyte cytoplasm sits relative to the sheath — inner and outer tongues and paranodal loops are glial, and absorbing them into the axon is a merge waiting to happen. Myelin also settles a Unit 06 question for free: dendrites are never myelinated.</p>
   </article>
 </div>
 
@@ -347,5 +350,5 @@ of scope for cortical volume EM.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 04]({{ '/modules/module04/' | relative_url }})
-- Slide plan: [Glia deck]({{ '/technical-training/slides/07-glia/' | relative_url }})
+- Lecture plan: [Glia lecture plan]({{ '/technical-training/slides/07-glia/' | relative_url }})
 - **Next unit:** [08 Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})

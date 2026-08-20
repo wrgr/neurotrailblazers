@@ -27,7 +27,7 @@ maintainer: TBD
     <div class="cta-buttons">
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Slide Decks</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Lecture Plans</a>
       <a href="{{ '/teaching/' | relative_url }}" class="btn btn-secondary">Teaching Hub</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Concept Explorer</a>
     </div>

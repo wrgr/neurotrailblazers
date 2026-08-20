@@ -253,22 +253,25 @@ architecture that follows from this.
 ---
 
 ## Visual context set
+
+Use this panel to rehearse the three-scale separation from §1. For each slide, say which scale it is actually about — acquisition, reconstruction, or analysis — because pipeline diagrams routinely blur all three, and noticing the blur is the skill this unit is teaching.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON1-S06-01.png' | relative_url }}" alt="Scale and voxel-size context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L1 S06:</strong> scale/voxel context.</p>
+    <p class="card-description"><strong>Module12 L1 S06:</strong> Voxel size and scale. Whatever resolution the slide names, run it through the decision rule in §1: reconstruction scale is always coarser than acquisition scale, so ask what the smallest reliably segmentable object would be rather than what the voxel size implies.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S04-01.png' | relative_url }}" alt="Macroscale pipeline visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L2 S04:</strong> macroscale pipeline view.</p>
+    <p class="card-description"><strong>Module12 L2 S04:</strong> A macroscale pipeline. Place it on the modality chart in §2 and name which two corners of the resolution/volume/throughput triangle it buys — and therefore which one it gives up. Nothing at macroscale resolves neurites in neuropil, so connectivity read off it is model output, not observation.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S05-01.png' | relative_url }}" alt="Microscale bridge visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L2 S05:</strong> microscale/preprocessing bridge.</p>
+    <p class="card-description"><strong>Module12 L2 S05:</strong> The bridge from macroscale to microscale. This is exactly where scale leakage is manufactured: check what claim is being carried across the join, and whether the transfer comes with a stated registration residual and its maximum, not just its mean (§4).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput imaging context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S08:</strong> high-throughput imaging context.</p>
+    <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput imaging. Ask what representation the output eventually becomes — volume, mesh, skeleton, or graph (§3) — because that decision is effectively made here, and every conversion downstream is lossy and one-way.</p>
   </article>
 </div>
 
@@ -383,5 +386,5 @@ statistics that operate on the resulting graph (Unit 09).
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 05]({{ '/modules/module05/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
-- Slide plan: [Brain Data Across Scales deck]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})
+- Lecture plan: [Brain Data Across Scales lecture plan]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})
 - **Next unit:** [03 EM Prep and Imaging]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})

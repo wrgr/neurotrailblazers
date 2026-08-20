@@ -264,50 +264,53 @@ and (c) reconstruct the state of an analysis at any past time (Unit 04 §2).
 ---
 
 ## Visual training set
+
+The first six panels carry ultrastructure cues forward from Units 05–06; the rest are pipeline context. Use them as triage practice rather than identification practice: for each one, ask what error a wrong reading would produce, and whether that error is a bounded, visible split or an unbounded, invisible merge.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png' | relative_url }}" alt="Segmentation proofreading visual: neuronal structure orientation" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S06:</strong> orientation cue for robust proofreading context.</p>
+    <p class="card-description"><strong>RIV-ULTRA S06:</strong> Orientation for proofreading judgement. Set the frame before touching anything: proofreading is allocation under a fixed budget rather than cleanup, so the question about any candidate correction is what it changes about the endpoint per minute of annotator time.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Segmentation proofreading visual: synapse identification cues" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S09:</strong> synapse-oriented features relevant to correction decisions.</p>
+    <p class="card-description"><strong>RIV-ULTRA S09:</strong> Synapse features that drive correction decisions. Apply the Unit 05 criteria before crediting a detection — a synapse assigned to a merged object still scores as correct under synapse precision, which is exactly what that metric is blind to.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png' | relative_url }}" alt="Segmentation proofreading visual: ultrastructural feature panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S11:</strong> vesicle and organelle cues for ambiguity resolution.</p>
+    <p class="card-description"><strong>RIV-ULTRA S11:</strong> Vesicle and organelle cues on ambiguous objects. Look for combinations that cannot coexist in one cortical process; implausible-morphology detection is how merges get found at all, since a merged object otherwise looks like a perfectly ordinary neuron.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png' | relative_url }}" alt="Segmentation proofreading visual: axon versus dendrite comparison" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S13:</strong> axon-vs-dendrite differentiation for identity checks.</p>
+    <p class="card-description"><strong>RIV-AXDEN S13:</strong> Axon against dendrite, for identity checks. Every edge direction in the final graph rests on this call, and a reversed edge is not noise — it deletes a true edge and adds its opposite. Audit the edges whose direction would change your conclusion rather than auditing uniformly.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S18-01.png' | relative_url }}" alt="Segmentation proofreading visual: edge-case process morphology" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S18:</strong> edge-case morphology for high-risk correction review.</p>
+    <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case at high risk of a wrong correction. Estimate cost to fix before committing: a forty-minute trace through a difficult region loses to five five-minute corrections elsewhere, unless the cell is in your analysis set and the error sits near the root of the arbor.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S22-01.png' | relative_url }}" alt="Segmentation proofreading visual: advanced morphology cue set" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S22:</strong> advanced cue set for difficult boundary calls.</p>
+    <p class="card-description"><strong>RIV-AXDEN S22:</strong> A difficult boundary call. These are where the pipeline’s structural failures live — thin spine necks, steep z-trajectories, tightly apposed membranes, artifact regions. Naming the failure class tells you which error to expect, and splits are repairable in a way merges are not.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png' | relative_url }}" alt="Segmentation proofreading visual: method overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S03:</strong> method overview context for processing/QC integration.</p>
+    <p class="card-description"><strong>Module14 L2 S03:</strong> A method overview with QC in the loop. Ask where the measurement points are: a pipeline without a fixed evaluation set of neurons can only report aggregate scores, and aggregate scores are how a merge regression ships behind an improved total VI.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png' | relative_url }}" alt="Segmentation proofreading visual: graph and pipeline transition" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S08:</strong> graph/pipeline transition context.</p>
+    <p class="card-description"><strong>Module14 L2 S08:</strong> The transition from voxels to graph. Everything upstream of this point is repairable; everything downstream inherits whatever came through. Note that edge precision and recall weight a one-synapse and a fifty-synapse connection equally, which hides the connections most vulnerable to error.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S09-01.png' | relative_url }}" alt="Segmentation proofreading visual: automated detection context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S09:</strong> automated detection context for human-machine workflows.</p>
+    <p class="card-description"><strong>Module14 L2 S09:</strong> Automated detection feeding human work. The right reading is candidate generation rather than automation: detectors propose a ranked queue — endpoint detectors for splits, implausibility detectors for merges — and humans adjudicate the ranking instead of browsing the volume.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S10-01.png' | relative_url }}" alt="Segmentation proofreading visual: processing-stage quality context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S10:</strong> quality-relevant processing stage.</p>
+    <p class="card-description"><strong>Module14 L2 S10:</strong> A quality-relevant processing stage. For whatever this stage emits, ask what provenance travels with it — who, when, what, and ideally why — because rolling back a bad batch and detecting one annotator’s drift both depend on that record existing.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S13-01.png' | relative_url }}" alt="Segmentation proofreading visual: evaluation and metrics context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L2 S13:</strong> evaluation/metrics context for QC reporting.</p>
+    <p class="card-description"><strong>Module14 L2 S13:</strong> Evaluation and metrics reporting. Hold it to the rule in §3: at least two metrics from different rows, VI always split into its merge and split components, and the number that actually decides anything is the shift in your endpoint after exhaustively proofreading a twenty-cell sample.</p>
   </article>
 </div>
 
@@ -436,5 +439,5 @@ own protocol.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 07]({{ '/modules/module07/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
-- Slide plan: [Segmentation and Proofreading deck]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
+- Lecture plan: [Segmentation and Proofreading lecture plan]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
 - **Next unit:** [09 Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

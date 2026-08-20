@@ -378,22 +378,25 @@ penetration or geometry. Without per-tile timestamps you cannot ask the question
 ---
 
 ## Visual context set
+
+These are context slides rather than QA specimens; the artifact catalogue in §2 is what you take to a real volume. Use each panel to rehearse the diagnostic question that runs through this unit — which coordinate system does a defect live in: block position, anatomy, or acquisition time?
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S04-01.png' | relative_url }}" alt="High-resolution imaging context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S04:</strong> high-resolution imaging context.</p>
+    <p class="card-description"><strong>Module12 L3 S04:</strong> High-resolution imaging. Tie it to the dose budget in §1.5: SNR improves only with the square root of dose, so doubling it costs roughly four times the acquisition time. Ask what was traded for image quality here, and hold to the standing rule — protect membrane contrast, because faint membranes cause merges.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput sectioning context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S08:</strong> high-throughput sectioning context.</p>
+    <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput sectioning. Section handling is where lost sections, folds, wrinkles, and knife chatter originate (§1.4). Ask which of those the depicted approach is exposed to, then sort each one into the data-loss or the labour column of the artifact table.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S10-01.png' | relative_url }}" alt="Imaging pipeline transition visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S10:</strong> imaging-to-pipeline transition.</p>
+    <p class="card-description"><strong>Module12 L3 S10:</strong> The handoff from imaging to reconstruction. This is the boundary past which acquisition quality becomes a ceiling nothing downstream can raise. Check what metadata crosses it — per-tile timestamps and machine-readable defect masks are what let you diagnose an anomaly months later (§3–§4).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S08-01.png' | relative_url }}" alt="Manual versus automated context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L2 S08:</strong> manual vs automated context.</p>
+    <p class="card-description"><strong>Module13 L2 S08:</strong> Manual work set against automated work. Use it to locate the pilot-reconstruction rule in §3: a small sub-volume taken all the way through segmentation and human proofreading is what tells you whether your staining produces a merge rate the proofreading budget can absorb — while you can still change the staining.</p>
   </article>
 </div>
 
@@ -489,5 +492,5 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 05]({{ '/modules/module05/' | relative_url }})
-- Slide plan: [EM Prep and Imaging deck]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})
+- Lecture plan: [EM Prep and Imaging lecture plan]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})
 - **Next unit:** [04 Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})

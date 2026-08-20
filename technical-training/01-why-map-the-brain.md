@@ -315,22 +315,25 @@ result today.
 ---
 
 ## Visual context set
+
+These four slides are framing devices, not evidence. Use each one to rehearse the sort in §3: for whatever claim the slide invites, ask whether structure alone could establish it, whether it needs a declared assumption, or whether it needs physiology the data does not contain.
+
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Motivating question visual for why map the brain" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S10:</strong> motivating question framing.</p>
+    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question, asked before any instrument is chosen. Use it to practise the move this unit is built on — name the measurable structural endpoint, the null model, and the explicit non-claim that would have to replace it before the question is fundable.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="Brain data framing visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S11:</strong> brain-data framing context.</p>
+    <p class="card-description"><strong>Techtalk S11:</strong> Framing for what counts as brain data. Read it against the resolution table in §1: for whatever measurement the slide treats as data, ask which rows of that table it resolves, and therefore whether it can distinguish arbor overlap from an actual connection.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png' | relative_url }}" alt="Reverse engineering analogy visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S12:</strong> reverse-engineering analogy and limits.</p>
+    <p class="card-description"><strong>Techtalk S12:</strong> The reverse-engineering analogy, and where it stops. Check it against the bin boundaries in §3 — a wiring diagram is a constraint on the space of possible dynamics, not a simulation, so any “this circuit computes X” reading of the analogy is a Bin C claim wearing Bin A clothing.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Course motivation context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L1 S04:</strong> motivation and scope framing.</p>
+    <p class="card-description"><strong>Module12 L1 S04:</strong> Scope framing for the course. Compare whatever ambition it states against the extrapolation table in §2, and ask where on the fly-to-mouse-to-human ladder it lands — and whether the limiting factor at that rung is microscopy or proofreading labour.</p>
   </article>
 </div>
 
@@ -421,5 +424,5 @@ different questions at different scales; see Unit 02 for how these fit together.
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 01]({{ '/modules/module01/' | relative_url }})
-- Slide plan: [Why Map the Brain deck]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})
+- Lecture plan: [Why Map the Brain lecture plan]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})
 - **Next unit:** [02 Brain Data Across Scales]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})

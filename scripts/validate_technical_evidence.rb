@@ -53,3 +53,4 @@ extra.each { |slug| warnings << "[WARN] evidence entry has no matching technical
 
 puts "Technical evidence validation complete (#{warnings.empty? ? 'no warnings' : 'warnings below'})."
 warnings.each { |w| puts w }
+exit(warnings.empty? ? 0 : 1)

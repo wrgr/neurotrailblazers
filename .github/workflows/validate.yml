@@ -54,6 +54,15 @@ jobs:
       - name: Journal paper count and schema validation
         run: ruby scripts/validate_paper_counts.rb
 
+      # The published decks under course/decks/marp/out/ are what instructors open.
+      # 29 of 35 had gone stale: sources regenerated, outputs not, so every "Open deck"
+      # link served content that no longer matched its module page. Nothing caught it
+      # because mtimes do not survive a clone, making "output older than source?"
+      # unanswerable in CI. render_marp.sh now records a SHA-256 per source and this
+      # compares the live sources against it. Gate verified by injecting a fault.
+      - name: Deck freshness
+        run: ruby scripts/check_deck_freshness.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

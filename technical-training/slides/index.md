@@ -28,8 +28,9 @@ matching page.
 
 - Marp sources: `course/decks/marp/`
 - Reference guide: `course/decks/marp/README.md`
-- Rendered HTML and PowerPoint: `course/decks/marp/out/`
-- Batch render helper: `./scripts/render_marp.sh`
+- Rendered HTML: `course/decks/marp/out/` (committed, and what the site links to)
+- Batch render helper: `./scripts/render_marp.sh` &mdash; add `--pptx` for PowerPoint,
+  which is not committed because 35 exports came to 88&nbsp;MB
 
 Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relative_url }}).
 
@@ -40,7 +41,7 @@ Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relat
     <h3 class="card-title"><a href="{{ '/technical-training/slides/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
     <p class="card-description">Instructor build plan: slide sequence, timing, figure placement, speaker notes, and the session artifact.</p>
     <p><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">Open unit page</a></p>
-    <p><a href="{{ '/course/decks/marp/out/' | append: deck | append: '.html' | relative_url }}">Open rendered deck (HTML)</a> | <a href="{{ '/course/decks/marp/out/' | append: deck | append: '.pptx' | relative_url }}">PowerPoint</a></p>
+    <p><a href="{{ '/course/decks/marp/out/' | append: deck | append: '.html' | relative_url }}">Open rendered deck (HTML)</a> | <a href="{{ site.deck_source_base }}/{{ deck }}.marp.md">Markdown source</a></p>
   </article>
   {% endfor %}
 </div>

@@ -45,7 +45,7 @@ Pre-class preparation set for learners:
 <div class="resource-card">
   <div class="resource-links">
     <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module13.html' | relative_url }}">Open deck (HTML)</a>
-    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module13.pptx' | relative_url }}">Download deck (.pptx)</a>
+    <a class="resource-link" href="{{ site.deck_source_base }}/modules/module13.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module13/module13-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module13/' | relative_url }}">Full module page</a>
   </div>

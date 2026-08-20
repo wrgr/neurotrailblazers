@@ -16,6 +16,9 @@ See `bibliometrics/` for complete technical documentation of the EM connectomics
 ## Planning & Execution Documents
 See `planning/` for project plans and progress tracking.
 
+- **RESEARCH_INTENSIVE_BACKLOG.md** — Backlogged spec for the research-intensive
+  mode: open challenges packaged as independent study projects, each with a starter
+  and a success gate, plus what has to exist before any of them ship.
 - **FINAL_RECOMPUTATION_PLAN.md** — Final recomputation pass tasks
 - **ENRICHMENT_AND_RECOMPUTATION_PLAN.md** — Enrichment strategy & recomputation plan
 - **PIPELINE_COMPLETE.md** — Pipeline completion status

@@ -201,6 +201,40 @@ the unit mapping identifies where in that unit's workflow the resource fits.
 
 ---
 
+## References
+
+§4 of this page requires every contributed entry to carry "a standardized
+citation string, with DOI". This section is that rule applied to the page
+itself. Every dataset named in §1 is here, with the **published** reference
+rather than its preprint — several of these circulated as bioRxiv preprints for
+years and are still cited that way.
+
+### Invertebrate
+
+- White JG, Southgate E, Thomson JN, Brenner S (1986). The structure of the nervous system of the nematode *Caenorhabditis elegans*. *Philosophical Transactions of the Royal Society B* 314:1-340. [10.1098/rstb.1986.0056](https://doi.org/10.1098/rstb.1986.0056)
+- Cook SJ, Jarrell TA, Brittin CA, et al. (2019). Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* 571:63-71. [10.1038/s41586-019-1352-7](https://doi.org/10.1038/s41586-019-1352-7)
+- Witvliet D, Mulcahy B, Mitchell JK, et al. (2021). Connectomes across development reveal principles of brain maturation. *Nature* 596:257-261. [10.1038/s41586-021-03778-8](https://doi.org/10.1038/s41586-021-03778-8)
+- Winding M, Pedigo BD, Barnes CL, et al. (2023). The connectome of an insect brain. *Science* 379:eadd9330. [10.1126/science.add9330](https://doi.org/10.1126/science.add9330)
+- Scheffer LK, Xu CS, Januszewski M, et al. (2020). A connectome and analysis of the adult *Drosophila* central brain. *eLife* 9:e57443. [10.7554/eLife.57443](https://doi.org/10.7554/eLife.57443)
+- Zheng Z, Lauritzen JS, Perlman E, et al. (2018). A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*. *Cell* 174:730-743. [10.1016/j.cell.2018.06.019](https://doi.org/10.1016/j.cell.2018.06.019)
+- Dorkenwald S, Matsliah A, Sterling AR, et al. (2024). Neuronal wiring diagram of an adult brain. *Nature* 634:124-138. [10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
+- Takemura S, Hayworth KJ, Huang GB, et al. (2024). A connectome of the male *Drosophila* ventral nerve cord. *eLife* 13:RP97769. [10.7554/eLife.97769](https://doi.org/10.7554/eLife.97769)
+
+### Vertebrate
+
+- Briggman KL, Helmstaedter M, Denk W (2011). Wiring specificity in the direction-selectivity circuit of the retina. *Nature* 471:183-188. [10.1038/nature09818](https://doi.org/10.1038/nature09818)
+- Helmstaedter M, Briggman KL, Turaga SC, et al. (2013). Connectomic reconstruction of the inner plexiform layer in the mouse retina. *Nature* 500:168-174. [10.1038/nature12346](https://doi.org/10.1038/nature12346)
+- Kasthuri N, Hayworth KJ, Berger DR, et al. (2015). Saturated reconstruction of a volume of neocortex. *Cell* 162:648-661. [10.1016/j.cell.2015.06.054](https://doi.org/10.1016/j.cell.2015.06.054)
+- Harris KM, Spacek J, Bell ME, et al. (2015). A resource from 3D electron microscopy of hippocampal neuropil from adult rat stratum radiatum. *Scientific Data* 2:150046. [10.1038/sdata.2015.46](https://doi.org/10.1038/sdata.2015.46)
+- Hildebrand DGC, Cicconet M, Torres RM, et al. (2017). Whole-brain serial-section electron microscopy in larval zebrafish. *Nature* 545:345-349. [10.1038/nature22356](https://doi.org/10.1038/nature22356)
+- The MICrONS Consortium (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435-447. [10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Shapson-Coe A, Januszewski M, Berger DR, et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+
+*MouseConnects / HI-MC is an in-progress BRAIN CONNECTS programme rather than a
+released dataset; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }})
+for its current state. Tool entries in §2 link to their own documentation, which
+is the citable source for a version.*
+
 ## Related
 
 - [Technical Training hub]({{ '/technical-training/' | relative_url }})

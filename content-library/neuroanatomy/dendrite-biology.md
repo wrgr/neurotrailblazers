@@ -48,6 +48,7 @@ combines_with:
   - soma-ultrastructure
   - synapse-classification
   - organelle-cues
+use_layout_hero: false
 ---
 
 # Dendrite Biology and Ultrastructure

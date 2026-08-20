@@ -35,6 +35,7 @@ recommended_tools:
 image: /assets/images/avatars/mentor.jpg
 last_reviewed: 2026-03-09
 maintainer: TBD
+use_layout_hero: false
 ---
 
 <div class="main-content">

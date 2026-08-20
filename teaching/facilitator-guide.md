@@ -9,6 +9,7 @@ pathways:
   - classroom delivery
   - mentor support
 summary: "Instructor-facing guide for pacing, differentiation, assessment, and scaling."
+use_layout_hero: false
 ---
 
 <div class="main-content">

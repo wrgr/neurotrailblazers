@@ -11,6 +11,7 @@ tags:
   - neuroai:deep-learning
   - neuroai:representation-learning
   - neuroai:simulation
+use_layout_hero: false
 ---
 
 # NeuroAI & Computational Modeling Journal Papers

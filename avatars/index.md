@@ -8,6 +8,7 @@ track: career-and-community
 pathways:
   - mentoring
   - professional growth
+use_layout_hero: false
 ---
 
 <div class="main-content">

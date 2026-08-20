@@ -3,6 +3,7 @@ layout: page
 title: "Connectome Quality Notebooks"
 description: "A computational path through connectome quality assessment: what to run, in what order, with the reference notebooks and the analyses to build for yourself."
 permalink: /notebooks/connectome-quality/
+use_layout_hero: false
 ---
 
 <div class="main-content">

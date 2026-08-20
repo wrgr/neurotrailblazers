@@ -9,6 +9,7 @@ pathways:
   - classroom delivery
   - mentor support
 summary: "Central hub for teaching materials across all modules."
+use_layout_hero: false
 ---
 
 <div class="main-content">

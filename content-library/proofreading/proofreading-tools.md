@@ -45,6 +45,7 @@ combines_with:
   - error-taxonomy
   - proofreading-strategies
   - worked-examples
+use_layout_hero: false
 ---
 
 # Proofreading Tools for Connectome Reconstruction

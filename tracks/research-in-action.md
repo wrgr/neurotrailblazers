@@ -7,6 +7,7 @@ track: research-in-action
 pathways:
   - research workflow
   - reproducibility
+use_layout_hero: false
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'research-in-action' | first %}

@@ -11,6 +11,7 @@ tags:
   - data-storage:data-format
   - data-storage:provenance
   - data-storage:cloud-storage
+use_layout_hero: false
 ---
 
 # Data Storage & Pipelines Journal Papers

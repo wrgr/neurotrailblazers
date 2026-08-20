@@ -47,6 +47,7 @@ combines_with:
   - microns-visual-cortex
   - c-elegans-revisited
   - mouseconnects-himc
+use_layout_hero: false
 ---
 
 # H01 Human Cortex Fragment

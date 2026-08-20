@@ -7,6 +7,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - methods depth
+use_layout_hero: false
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'core-concepts-methods' | first %}

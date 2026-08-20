@@ -12,6 +12,7 @@ tags:
   - connectomics:small-world
   - connectomics:hub
   - connectomics:connectome-comparison
+use_layout_hero: false
 ---
 
 # Graph Analysis & Network Science Journal Papers

@@ -7,6 +7,7 @@ track: career-and-community
 pathways:
   - mentoring
   - professional growth
+use_layout_hero: false
 ---
 
 {% assign track = site.data.track_catalog.tracks | where: 'slug', 'career-and-community' | first %}

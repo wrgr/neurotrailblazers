@@ -40,6 +40,7 @@ combines_with:
   - proofreading-strategies
   - proofreading-tools
   - metrics-and-qa
+use_layout_hero: false
 ---
 
 # Proofreading Worked Examples

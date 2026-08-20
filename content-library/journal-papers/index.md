@@ -3,6 +3,7 @@ layout: page
 title: "Journal Paper Collection"
 permalink: /content-library/journal-papers/
 description: "100+ curated connectomics journal papers organized by dimension, with summaries at beginner, intermediate, and advanced expertise levels. Each paper includes tags for cross-referencing with the content library and discussion prompts for journal club."
+use_layout_hero: false
 ---
 
 # Journal Paper Collection

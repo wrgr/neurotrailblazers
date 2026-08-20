@@ -50,6 +50,7 @@ combines_with:
   - dendrite-biology
   - axon-biology
   - organelle-cues
+use_layout_hero: false
 ---
 
 # Synapse Classification and Identification

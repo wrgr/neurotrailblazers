@@ -1,4 +1,11 @@
-{% if page.use_layout_hero == true %}
+{%- comment -%}
+  Renders the page title as an H1. This used to be opt-in via `use_layout_hero: true`,
+  which no content page ever set, so 89 pages shipped with no H1 at all -- bad for
+  screen readers, for search, and for anyone landing mid-site with no idea what page
+  they are on. It is now opt-OUT: set `use_layout_hero: false` on pages that already
+  render their own <h1> in the body, or the page would show two titles.
+{%- endcomment -%}
+{% unless page.use_layout_hero == false %}
 <section class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <h1 class="hero-title-impact">{{ page.title }}</h1>
@@ -7,4 +14,4 @@
     {% endif %}
   </div>
 </section>
-{% endif %}
+{% endunless %}

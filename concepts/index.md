@@ -8,6 +8,7 @@ pathways:
   - professional growth
   - hidden curriculum
 summary: "Find content by concept and learner need rather than module number."
+use_layout_hero: false
 ---
 
 <div class="main-content">

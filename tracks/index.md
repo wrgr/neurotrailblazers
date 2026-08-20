@@ -8,6 +8,7 @@ pathways:
   - program design
   - professional growth
 summary: "Three-track learning architecture aligned to Fadel dimensions."
+use_layout_hero: false
 ---
 
 <div class="main-content">

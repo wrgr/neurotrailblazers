@@ -45,6 +45,7 @@ combines_with:
   - error-taxonomy
   - proofreading-strategies
   - worked-examples
+use_layout_hero: false
 ---
 
 # Metrics and Quality Assurance for Connectome Proofreading

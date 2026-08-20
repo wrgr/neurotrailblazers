@@ -11,6 +11,7 @@ tags:
   - proofreading:QA-metrics
   - proofreading:proofreading-tools
   - proofreading:crowd-sourced-proofreading
+use_layout_hero: false
 ---
 
 # Proofreading & Quality Control Journal Papers

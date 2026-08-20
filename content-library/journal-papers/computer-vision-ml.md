@@ -12,6 +12,7 @@ tags:
   - computer-vision-ml:synapse-detection
   - computer-vision-ml:agglomeration
   - computer-vision-ml:boundary-detection
+use_layout_hero: false
 ---
 
 # Computer Vision & ML Journal Papers

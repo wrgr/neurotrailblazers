@@ -44,6 +44,7 @@ combines_with:
   - c-elegans-revisited
   - microns-visual-cortex
   - mouseconnects-himc
+use_layout_hero: false
 ---
 
 # FlyWire Whole-Brain Connectome

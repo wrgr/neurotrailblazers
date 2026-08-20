@@ -42,6 +42,7 @@ combines_with:
   - error-taxonomy
   - metrics-and-qa
   - worked-examples
+use_layout_hero: false
 ---
 
 # Proofreading Strategies for Connectome Reconstruction

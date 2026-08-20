@@ -11,6 +11,7 @@ pathways:
   - methods depth
 last_reviewed: 2026-03-10
 maintainer: TBD
+use_layout_hero: false
 ---
 
 <div class="main-content">

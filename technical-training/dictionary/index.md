@@ -8,6 +8,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
+use_layout_hero: false
 ---
 
 <div class="main-content">

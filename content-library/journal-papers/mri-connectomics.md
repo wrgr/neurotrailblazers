@@ -11,6 +11,7 @@ tags:
   - mri-connectomics:functional-connectivity
   - mri-connectomics:Human-Connectome-Project
   - mri-connectomics:parcellation
+use_layout_hero: false
 ---
 
 # MRI Connectomics Journal Papers

@@ -12,6 +12,7 @@ tags:
   - imaging:SBEM
   - imaging:ATUM
   - imaging:serial-section
+use_layout_hero: false
 ---
 
 # Imaging & Sample Preparation Journal Papers

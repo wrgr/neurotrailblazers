@@ -11,6 +11,7 @@ tags:
   - cell-types:connectivity-based-classification
   - cell-types:molecular-markers
   - cell-types:cell-census
+use_layout_hero: false
 ---
 
 # Cell Types & Classification Journal Papers

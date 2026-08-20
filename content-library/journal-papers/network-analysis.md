@@ -12,6 +12,7 @@ tags:
   - network-analysis:statistical-testing
   - network-analysis:subgraph-isomorphism
   - network-analysis:random-graph-model
+use_layout_hero: false
 ---
 
 # Network Analysis & Statistics Journal Papers

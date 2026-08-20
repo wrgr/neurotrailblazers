@@ -48,6 +48,7 @@ combines_with:
   - axon-biology
   - organelle-cues
   - soma-ultrastructure
+use_layout_hero: false
 ---
 
 # Myelin Sheath and Nodes of Ranvier

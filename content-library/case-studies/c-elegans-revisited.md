@@ -48,6 +48,7 @@ combines_with:
   - flywire-whole-brain
   - h01-human-cortex
   - microns-visual-cortex
+use_layout_hero: false
 ---
 
 # C. elegans Revisited

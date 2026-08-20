@@ -401,6 +401,11 @@ body {
   display: flex;
   align-items: center;
   min-height: 2rem;
+  /* Without wrapping, a long status pill ("In Progress (2023-2028)") sits on one
+     unbreakable line beside the type pill and pushes /datasets/ past the viewport
+     on a phone. */
+  flex-wrap: wrap;
+  gap: 0.35rem 0;
 }
 
 .dataset-type {
@@ -437,6 +442,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .dataset-icon {

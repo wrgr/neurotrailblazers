@@ -7,6 +7,7 @@ terms:
   category: Core
   definition: A map of neural connections within a defined nervous system, region, or volume, at a stated
     resolution and completeness.
+  typical: "Ranges from 302 fully verified neurons (C. elegans) to a partially proofread cubic millimetre - which is why the word alone says nothing."
   matters: The word alone says nothing about scale or reliability. A 'connectome' may mean 302 fully verified
     neurons or a partially proofread cubic millimetre. Always state region, resolution, and proofreading
     level alongside the term.
@@ -17,20 +18,25 @@ terms:
   category: Core
   definition: The study and reconstruction of neural connectivity, spanning acquisition, reconstruction,
     proofreading, and analysis.
+  matters: "The word covers acquisition, reconstruction, proofreading and analysis, and the failure modes at each stage are different. Most disagreements about a connectomics result are really disagreements about which stage the uncertainty came from."
+  confuse: "Connectomics (the field and its methods) vs connectome (the object produced). A methods paper and a dataset paper make very different kinds of claim."
   units:
   - '01'
 - term: Nanoscale connectomics
   category: Core
   definition: Connectomics at synapse resolution, requiring electron microscopy or comparable methods,
     as distinct from mesoscale projection mapping or macroscale tractography.
+  typical: "Voxels of a few nm in xy; the only scale at which a synapse is directly resolvable (Unit 02 §1)."
   matters: The qualifier is what commits you to EM-scale cost. Dropping it in a proposal invites reviewers
     to assume a cheaper method would do.
+  confuse: "Nanoscale (EM, synapse-resolution) vs macroscale (MRI tractography, 0.5-2 mm). Both are called connectomics and they support entirely different claims."
   units:
   - '01'
   - '02'
 - term: Structure-function inference
   category: Core
   definition: Reasoning from anatomical connectivity to the computations a circuit might perform.
+  typical: "Constrained by what structure cannot show: sign, strength, plasticity state and neuromodulation are all invisible in EM."
   matters: Structure constrains the space of possible dynamics; it does not determine them. Every such
     inference should name its extra assumptions.
   confuse: Constraint (defensible) vs simulation (not supported by anatomy alone).
@@ -41,6 +47,7 @@ terms:
   category: Core
   definition: Reconstruction of every object within a volume, rather than a selected subset.
   typical: Kasthuri et al. 2015 reconstructed ~1,500 cubic micrometres densely.
+  matters: "Dense reconstruction is what makes negative results possible: if every process in the volume is reconstructed, an absent connection is evidence of absence rather than of not having looked."
   confuse: Sparse reconstruction traces selected neurons and leaves the rest unsegmented; it is far cheaper
     and answers different questions.
   units:
@@ -50,20 +57,27 @@ terms:
   category: Core
   definition: Dense reconstruction carried to the point where every object in the volume is accounted
     for, including glia and vasculature.
+  typical: "Achieved in small volumes; approximated, never reached, at mm scale."
+  matters: "It is the strongest completeness claim available - every object in the volume reconstructed, not just the ones of interest - and it is what a dense volume has to achieve before absence means anything."
+  confuse: "Saturated vs dense. Dense means everything was segmented; saturated means everything was segmented and verified. The second is much rarer than the word's casual use suggests."
   units:
   - '01'
 - term: Completeness
   category: Core
   definition: The fraction of a neuron, or of a volume, that has actually been reconstructed.
+  typical: "Stated as a fraction of the circuit contained, not of the volume imaged: a 1 mm3 cortical volume still truncates most long-range axons."
   matters: Differential completeness between two populations masquerades as biological difference. Match
     completeness before comparing.
+  confuse: "Completeness vs recall. Recall is about detection within your volume; completeness is about whether the volume contains the circuit at all. A perfect reconstruction of an incomplete volume is still incomplete."
   units:
   - '01'
   - 08
 - term: Neurite
   category: Morphology
   definition: A generic neuronal process, used when the axon/dendrite distinction has not yet been made.
+  typical: "Unmyelinated processes in cortical neuropil are 80-300 nm; dendritic shafts 0.5-3 um; spine necks 50-200 nm (Unit 06 §1)."
   matters: Useful precisely because it is non-committal. Prefer it to a guess.
+  confuse: "Used as a deliberate hedge when the axon/dendrite call has not been made. Saying 'neurite' is an honest 'I have not decided'; using it after you have decided loses information."
   units:
   - '05'
   - '06'
@@ -72,6 +86,7 @@ terms:
   definition: A neuronal process that typically receives synaptic input; contains ribosomes, tapers with
     distance from the soma, and may bear spines.
   typical: Shaft diameter 0.5-3 um in cortex.
+  matters: "Dendrites are the postsynaptic side of most excitatory connections, so mislabelling one as an axon inverts every edge it carries. They are also the easier call: polyribosomes and rough ER are near-diagnostic and axons lack both (Unit 05 §1)."
   confuse: 'Thin distal dendrites vs axons: use ribosomes, taper, and spines rather than calibre.'
   units:
   - '05'
@@ -81,6 +96,8 @@ terms:
   definition: A neuronal process that transmits output; contains vesicle-filled boutons, lacks ribosomes,
     and maintains roughly constant calibre between boutons.
   typical: Unmyelinated cortical axons 80-300 nm diameter.
+  matters: "The axon/dendrite call is the most frequent judgement in annotation and it drives everything downstream: reverse it and you reverse the direction of every connection the process makes."
+  confuse: "A thin dendrite vs an axon. Calibre alone does not settle it — use the organelle evidence (polyribosomes and abundant rough ER mean dendrite; regularly spaced microtubules with vesicle-filled varicosities mean axon)."
   units:
   - '05'
   - '06'
@@ -91,6 +108,7 @@ terms:
   typical: Roughly 20-60 um long, beginning at the soma or a proximal dendrite.
   matters: 'A rare case where an axon is postsynaptic: chandelier cells synapse onto the AIS, so ''PSD
     implies dendrite'' fails here.'
+  confuse: "AIS vs node of Ranvier. Both carry a dense undercoating and fasciculated microtubules; the AIS is continuous with the soma, a node sits between two myelin sheaths."
   units:
   - '05'
   - '06'
@@ -98,6 +116,8 @@ terms:
   category: Morphology
   definition: An axonal swelling containing a synaptic vesicle cluster and usually one or more presynaptic
     release sites.
+  typical: "0.5-2 um swellings on an axon; en passant boutons are far more common than terminal boutons in cortical neuropil."
+  matters: "Boutons are where you look for synapses, so how you count them sets your edge weights. A bouton with two active zones onto the same target is one connection with weight two, not two connections."
   confuse: En passant boutons occur along an axon; terminal boutons at its end. Dendritic varicosities
     are swellings without vesicle clusters.
   units:
@@ -109,6 +129,7 @@ terms:
     and a narrow neck.
   typical: Head 300-800 nm; neck 50-200 nm diameter.
   matters: Spine necks are close to the resolution floor and are a leading cause of split errors.
+  confuse: "A spine neck vs a thin axon. Both are sub-100 nm processes; follow it — a spine neck terminates in a head with a PSD and connects back to a dendritic shaft, an axon keeps going."
   units:
   - '05'
   - '06'
@@ -117,22 +138,31 @@ terms:
   category: Morphology
   definition: Stacked smooth endoplasmic reticulum laminae found within a minority of dendritic spines,
     more common in large spines.
+  typical: "Stacked laminae ~30 nm apart, in a minority of mostly large spines (Unit 05 §1)."
+  matters: "Its presence marks a mature, usually large spine, so it is a useful correlate of synaptic strength when you cannot measure PSD area directly."
+  confuse: "Spine apparatus vs ordinary smooth ER in the spine neck. The apparatus is a stack with dense material between laminae, not a single tubule."
   units:
   - '05'
 - term: Soma
   category: Morphology
   definition: The neuronal cell body, containing the nucleus, Nissl substance (rough ER), and Golgi apparatus.
   typical: Cortical neuron soma 10-25 um diameter.
+  matters: "Somata anchor identity: a segment containing a soma can be assigned a cell type and counted once, which is what makes cell-level statistics possible at all. A volume that clips somata cannot report per-cell degree honestly."
+  confuse: "Neuronal soma (large nucleus, prominent nucleolus, abundant rough ER) vs astrocytic soma (~8-10 um, pale watery cytoplasm, glycogen) vs microglial soma (~6-8 um, dark dense cytoplasm) — Unit 07 §1-2."
   units:
   - '05'
 - term: Ultrastructure
   category: Morphology
   definition: Fine structural detail resolvable only at electron-microscopy resolution.
+  typical: "The features that matter here span roughly 10 nm (neurofilament) to 1 um (Golgi stack) — Unit 05 §1."
+  matters: "Everything the field calls a 'cue' is an ultrastructural feature, and the whole perceptual skill set in Units 05-07 amounts to reading them reliably and knowing which ones fail."
+  confuse: "Ultrastructure (what EM resolves) vs morphology (the shape of the whole cell, resolvable by light microscopy). The distinction is what makes EM necessary for synapses."
   units:
   - '05'
 - term: Synapse
   category: Core
   definition: A specialized junction for chemical or electrical communication between neurons.
+  typical: "Cleft 20-30 nm (asymmetric) or ~15-20 nm (symmetric); PSD 30-50 nm thick and 200-800 nm wide (Unit 05 §1)."
   matters: 'In EM, calling a chemical synapse requires all three of: a presynaptic vesicle cluster, a
     cleft of uniform width, and a postsynaptic density - persisting across sections.'
   confuse: Membrane apposition, adherens junctions, and tangentially cut membranes all mimic synapses;
@@ -143,6 +173,8 @@ terms:
   category: Morphology
   definition: The extracellular gap between pre- and postsynaptic membranes at a chemical synapse.
   typical: ~20-30 nm at asymmetric synapses; ~15-20 nm at symmetric ones.
+  matters: "Uniform cleft width is one of the three criteria for calling a synapse at all. Appositions with variable-width gaps are contacts, not synapses, and treating them as synapses is the commonest way to inflate a connectome's edge count."
+  confuse: "A cleft vs the ordinary extracellular space between two apposed membranes. The cleft is uniform in width along its length and often shows faint cross-bridges."
   units:
   - '05'
 - term: Postsynaptic density (PSD)
@@ -151,11 +183,15 @@ terms:
   typical: 30-50 nm thick, 200-800 nm wide.
   matters: Its thickness relative to the presynaptic side is what distinguishes Gray type I from type
     II.
+  confuse: "A PSD vs a tangentially cut membrane, which also appears as a dark thickening. A real PSD has a cleft of uniform width and a vesicle cluster opposite it; a grazing cut has neither."
   units:
   - '05'
 - term: Active zone
   category: Morphology
   definition: The presynaptic membrane specialization where synaptic vesicles dock and release neurotransmitter.
+  typical: "200-800 nm across, matching the PSD it faces (Unit 05 §1)."
+  matters: "It is the presynaptic half of the synapse call. A vesicle cluster with no membrane specialisation opposite it is not evidence of a synapse — the active zone and the PSD are supposed to be co-extensive, and when they are not, you are usually looking at a tangential cut."
+  confuse: "Vesicle cluster (can sit anywhere in a bouton) vs active zone (the docking site at the membrane itself)."
   units:
   - '05'
 - term: Synaptic vesicle
@@ -163,26 +199,34 @@ terms:
   definition: A small membrane-bound vesicle in the presynaptic terminal containing neurotransmitter.
   typical: Clear round vesicles ~35-50 nm; dense-core vesicles 80-120 nm.
   matters: A vesicle cluster at the apposition is the non-negotiable first criterion for calling a synapse.
+  confuse: "Clear round vesicles (35-50 nm, excitatory terminals) vs dense-core vesicles (80-120 nm, peptidergic) vs pleomorphic/flattened vesicles (inhibitory, though the flattening is partly a fixation artifact). Size is measurable and reliable; shape is suggestive and is not."
   units:
   - '05'
 - term: Gray type I / asymmetric synapse
   category: Morphology
   definition: A synapse with a thick prominent PSD, wide cleft, and round clear vesicles; usually onto
     spines.
+  typical: "Cleft 20-30 nm; PSD 30-50 nm thick and 200-800 nm wide; round clear vesicles 35-50 nm (Unit 05 §1)."
   matters: Usually inferred to be excitatory (glutamatergic). This is an inference from morphology, not
     an observation - state it as 'putatively excitatory'.
+  confuse: "Type I vs type II. The discriminator is the thickness asymmetry between pre- and postsynaptic densities, not the vesicle shape alone — vesicle flattening is partly a fixation artifact."
   units:
   - '05'
 - term: Gray type II / symmetric synapse
   category: Morphology
   definition: A synapse with pre- and postsynaptic densities of comparable thickness, narrower cleft,
     and pleomorphic vesicles; usually onto shafts, soma, or AIS.
+  typical: "Cleft ~15-20 nm; densities thin and near-equal on both sides; vesicles often pleomorphic (Unit 05 §1)."
   matters: Usually inferred inhibitory (GABAergic), with the same caveat about inference.
+  confuse: "A genuinely symmetric synapse vs an asymmetric one cut tangentially, which can lose the appearance of PSD thickening. Check across sections before calling it."
   units:
   - '05'
 - term: Node of Ranvier
   category: Morphology
   definition: A gap in the myelin sheath along a myelinated axon, where the axolemma shows a dense undercoating.
+  typical: "~1 um of exposed axolemma between sheaths; nodal undercoating ~20 nm, as at the AIS (Unit 05 §1)."
+  matters: "Nodes anchor the identity of a myelinated axon across a break in its sheath, and they are where automated segmentation most often splits a long-range axon."
+  confuse: "Node vs a myelin sheath that has simply ended, and node vs AIS. A node has paranodal loops on both sides; a sheath end has them on one."
   units:
   - '06'
   - '07'
@@ -190,6 +234,9 @@ terms:
   category: Morphology
   definition: The region flanking a node of Ranvier where myelin terminal loops form junctions with the
     axon.
+  typical: "A few hundred nm of tapering loops flanking each side of the node."
+  matters: "Paranodal loops are the structural evidence that you are at a node rather than at a gap in a sheath, so they settle a call that otherwise depends on tracing many sections."
+  confuse: "Paranode (loops contacting the axolemma) vs juxtaparanode (the region just beyond it, molecularly distinct but not separable by morphology in EM)."
   units:
   - '07'
 - term: Microtubule
@@ -197,6 +244,8 @@ terms:
   definition: A cytoskeletal tubule, present in both axons and dendrites; fasciculated bundles are characteristic
     of the AIS.
   typical: ~25 nm outer diameter.
+  matters: "Microtubule arrangement is a primary axon/dendrite cue: loose parallel arrays suggest dendrite, regular fasciculated spacing suggests axon or AIS. It is one of the few cues visible in a single section."
+  confuse: "Microtubules (~25 nm, hollow ring in cross-section) vs neurofilaments (~10 nm, solid, usually bundled). The size difference is the reliable discriminator."
   units:
   - '05'
   - '06'
@@ -204,6 +253,8 @@ terms:
   category: Morphology
   definition: An intermediate filament abundant in axons, especially myelinated ones.
   typical: ~10 nm diameter.
+  matters: "Dense neurofilament bundles point to a myelinated axon, which is one of the more reliable large-calibre cues in white matter and deep neuropil."
+  confuse: "Neurofilaments (~10 nm) vs microtubules (~25 nm) vs astrocytic GFAP intermediate filaments (also ~10 nm). Filament diameter alone cannot separate neurofilament from GFAP — use the surrounding cytoplasm, which is pale and organelle-poor in astrocytes."
   units:
   - '05'
   - '06'
@@ -211,8 +262,10 @@ terms:
   category: Morphology
   definition: A cluster of ribosomes on mRNA, seen as a rosette in EM; present in somata and dendrites,
     effectively absent from axons.
+  typical: "Individual ribosomes ~25 nm, seen in rosettes of five or more (Unit 05 §1)."
   matters: The single most reliable axon/dendrite discriminator when visible. Absence, however, is weak
     evidence in very thin processes.
+  confuse: "Polyribosome rosettes vs glycogen granule clusters. Both are dark and clustered at similar scale, but glycogen means astrocyte and polyribosomes mean dendrite or soma — so confusing them inverts the cell-class call, not just a detail."
   units:
   - '05'
   - '06'
@@ -222,14 +275,17 @@ terms:
   typical: 20-30 nm.
   matters: Near-diagnostic for astrocyte when present; absence is weak evidence because granules are sparse
     and clustered.
+  confuse: "Glycogen granules vs ribosomes. Both are small and dark, both cluster. Glycogen is 20-30 nm and effectively astrocyte-only; ribosomes are ~25 nm, sit on ER membranes or in rosettes, and mark dendrites and somata."
   units:
   - '07'
 - term: Astrocyte
   category: Cell types
   definition: A glial cell with pale cytoplasm, glycogen granules, GFAP intermediate filaments, sheet-like
     space-filling processes, and endfeet on blood vessels.
+  typical: "Soma ~8-10 um; perisynaptic processes under 100 nm; glycogen granules 20-30 nm (Unit 07 §1)."
   matters: The most frequent partner in glia-neuron merge errors, because astrocytic processes interleave
     with every neurite in the neuropil.
+  confuse: "Astrocytic process vs thin dendrite or spine neck. The pale watery cytoplasm and glycogen settle it; calibre alone does not. This is the confusion Unit 07 exists to fix, because glia-neuron merges manufacture false connectivity."
   units:
   - '07'
 - term: Oligodendrocyte
@@ -237,27 +293,35 @@ terms:
   definition: A glial cell that myelinates CNS axons; identified by an extremely electron-dense small
     round nucleus and dense ribosome-rich cytoplasm.
   typical: Each cell myelinates roughly 20-60 axonal segments.
+  matters: "Oligodendrocyte processes connect to myelin sheaths, and a sheath merged into its axon is a common and costly reconstruction error in white matter."
+  confuse: "Oligodendrocyte vs microglia — see Microglia. Also oligodendrocyte vs OPC, which requires context rather than cytoplasm."
   units:
   - '07'
 - term: Oligodendrocyte precursor cell (OPC / NG2 cell)
   category: Cell types
   definition: A glial progenitor with a paler nucleus than a mature oligodendrocyte; the hardest routine
     glial identification.
+  typical: "Soma similar to a small oligodendrocyte, with more branched processes and, unusually for glia, genuine synaptic input."
   matters: Do not use 'OPC' as a synonym for 'uncertain'; they are different annotations with different
     follow-ups.
+  confuse: "OPC vs oligodendrocyte. OPCs receive synapses, which is the one cue that separates them structurally — and it also means an OPC process can be mistaken for a dendrite."
   units:
   - '07'
 - term: Microglia
   category: Cell types
   definition: The resident immune cell of the CNS; identified by a dark elongated nucleus with peripheral
     heterochromatin, long narrow ER cisternae, and lysosomal inclusions.
+  typical: "Soma ~6-8 um, smaller than most neurons, with dark dense cytoplasm (Unit 07 §2)."
   matters: Morphology varies with activation state, making microglia the least stereotyped glial class.
+  confuse: "Microglia vs oligodendrocytes. Both have dark cytoplasm; oligodendrocytes sit near myelinated axons and have a rounder, denser nucleus, while microglia have irregular processes and often contain inclusions."
   units:
   - '07'
 - term: Myelin
   category: Cell types
   definition: Concentric wraps of oligodendrocyte membrane insulating an axon.
+  typical: "Compact lamellae with a period of roughly 12 nm; sheath thickness scales with axon calibre."
   matters: Presence of myelin identifies a process as axonal with high confidence.
+  confuse: "Myelin lamellae vs knife chatter. Both are periodic banding, and at low magnification in a poorly stained block they are genuinely hard to tell apart."
   units:
   - '06'
   - '07'
@@ -265,27 +329,35 @@ terms:
   category: Cell types
   definition: A very thin astrocytic lamella wrapping a synapse, part of the tripartite synapse.
   typical: Often under 100 nm thick - among the hardest structures in the volume to segment.
+  matters: "PAPs are the hardest structures in the volume to segment: sub-100 nm sheets wrapping the very synapses you are trying to detect. Where they are merged into a neuron, they manufacture connectivity that does not exist."
+  confuse: "A PAP vs a spine neck or a thin axon. All three are under 100 nm. The astrocytic cytoplasm is the cue, and at that calibre there is often too little of it to see."
   units:
   - '07'
 - term: Cell type
   category: Cell types
   definition: A grouping of neurons defined by shared morphology, connectivity, molecular identity, or
     physiology.
+  typical: "In practice a type is assigned from morphology plus connectivity; EM alone cannot recover transcriptomic type."
   matters: Types defined by different criteria do not always agree. When connectivity-defined and transcriptomic
     types disagree, that disagreement is a finding, not an error to be resolved by preference.
+  confuse: "Morphological type vs transcriptomic type. They do not map one-to-one, and a paper that says 'cell type' without saying which it means is not making a checkable claim."
   units:
   - 09
 - term: Chandelier cell
   category: Cell types
   definition: A cortical interneuron that forms axo-axonic cartridge synapses onto the axon initial segments
     of pyramidal cells.
+  typical: "Recognised by cartridges of boutons running along axon initial segments rather than by soma appearance."
   matters: The canonical example of the polarity-rule exception in Unit 06.
+  confuse: "Chandelier cartridges vs ordinary en passant bouton chains. The giveaway is the postsynaptic target: cartridges synapse onto the AIS specifically."
   units:
   - '06'
 - term: Voxel
   category: Imaging
   definition: A three-dimensional sample of image intensity; the unit of volumetric data.
   typical: Connectomics ssTEM commonly 4 x 4 x 40 nm.
+  matters: "Voxel size sets both what you can resolve and what the volume costs, and the two pull in opposite directions. Every capacity estimate in Unit 03 starts from a voxel count."
+  confuse: "Voxel size vs resolution. A 4 nm voxel does not guarantee 4 nm of resolvable detail — staining, dose and optics all cap it below the sampling grid."
   units:
   - '02'
   - '03'
@@ -296,6 +368,7 @@ terms:
   typical: 4 x 4 x 40 nm is 10x anisotropic in z.
   matters: Anisotropy is the largest single driver of automated segmentation error, and it silently breaks
     any isotropic distance, smoothing, or morphology operation.
+  confuse: "Anisotropic voxels vs anisotropic tissue. The first is a property of your sampling (4 x 4 x 40 nm is 10x anisotropic in z); the second is a property of the neuropil. Only the first is yours to choose."
   units:
   - '02'
   - '03'
@@ -304,12 +377,15 @@ terms:
   category: Imaging
   definition: Equal resolution in all three axes, as produced by FIB-SEM.
   typical: 4-8 nm isotropic.
+  matters: "Isotropic voxels remove the direction-dependence of every tracing decision — a process running in z is as traceable as one running in x. It is the single largest quality difference between FIB-SEM and serial-section methods."
+  confuse: "Isotropic acquisition vs isotropic resampling. Interpolating anisotropic data onto a cubic grid produces isotropic voxels without producing isotropic information."
   units:
   - '02'
   - '03'
 - term: Serial section EM (ssEM / ssTEM / ssSEM)
   category: Imaging
   definition: Volume EM in which the block is cut into thin sections that are collected and then imaged.
+  typical: "4 x 4 x 40 nm is the working standard for large volumes, up to ~1 mm3 today (Unit 02 §1)."
   matters: Sections survive imaging, so they can be re-imaged and imaged in parallel across instruments
     - which is what makes petascale acquisition possible in finite time.
   confuse: Block-face methods destroy the imaged material and cannot be re-imaged.
@@ -322,6 +398,7 @@ terms:
   typical: 10-20 nm xy, 25-50 nm z.
   matters: No section handling means no lost sections and better z-alignment, at the cost of destroying
     the sample.
+  confuse: "SBEM vs ssTEM/ssSEM. SBEM destroys each section as it images the block face, so there is nothing to re-image; serial-section methods keep the sections, so a lost region can sometimes be recovered."
   units:
   - '03'
 - term: FIB-SEM
@@ -329,6 +406,7 @@ terms:
   definition: 'Focused ion beam SEM: an ion beam mills a few nanometres at a time, giving isotropic voxels.'
   typical: 4-8 nm isotropic; volumes typically 10^5-10^6 cubic micrometres.
   matters: The best tracing conditions available, limited by volume and speed.
+  confuse: "FIB-SEM vs SBF-SEM. Both are block-face methods, but FIB mills with an ion beam to a few nm and gives isotropic voxels, while SBF cuts with a diamond knife at 25-50 nm. FIB buys tracing quality and pays in volume."
   units:
   - '03'
 - term: Multibeam SEM
@@ -336,18 +414,25 @@ terms:
   definition: SEM using many electron beams in parallel to multiply throughput.
   typical: 61 or 91 beams, aggregating on the order of a gigapixel per second.
   matters: The throughput advance that moved cubic-millimetre volumes from impossible to feasible.
+  confuse: "Multibeam raises throughput, not resolution. It is the reason mm-scale ssEM volumes are feasible at all, but each beam still images at the same nm scale as a single beam."
   units:
   - '03'
 - term: ATUM
   category: Sample prep
   definition: 'Automated tape-collecting ultramicrotome: sections are collected continuously onto tape
     for later SEM imaging.'
+  typical: "30-50 nm sections onto tape, imaged later by SEM (Unit 03 §1)."
+  matters: "ATUM collects sections onto tape rather than destroying them, so a region can be re-imaged. That single property is why it underpins the largest published volumes."
+  confuse: "ATUM (collect then image) vs SBEM (image then destroy). The difference decides whether a bad region is recoverable."
   units:
   - '03'
 - term: GridTape
   category: Sample prep
   definition: A reinforced tape substrate with apertures allowing transmission-mode imaging of tape-collected
     sections.
+  typical: "Used for ssTEM at 4 x 4 x 40 nm scale."
+  matters: "It is what makes high-throughput TEM of serial sections practical: sections land on an indexed tape with support films already in place, so imaging can be automated."
+  confuse: "GridTape (TEM, film-backed apertures) vs ATUM tape (SEM, solid tape). Both are reel-to-reel collection; the imaging modality differs."
   units:
   - '03'
 - term: Landing energy
@@ -355,6 +440,7 @@ terms:
   definition: The energy at which electrons strike the sample in SEM.
   typical: 1-2 keV for block-face connectomics.
   matters: Higher energy gives more signal from deeper, at the cost of charging and beam damage.
+  confuse: "Higher landing energy reaches deeper and gives more signal, but also charges and damages more. It is not a quality dial; it is a trade against surface specificity (Unit 03 §1)."
   units:
   - '03'
 - term: Dwell time
@@ -363,65 +449,85 @@ terms:
   typical: 0.1-2 microseconds.
   matters: SNR grows roughly as the square root of dose, so doubling SNR costs roughly four times the
     acquisition time.
+  confuse: "Longer dwell buys SNR but also dose. It trades against beam current for the same signal, and against total acquisition time linearly — which at petascale is the binding constraint."
   units:
   - '03'
 - term: Charging
   category: Imaging
   definition: Accumulation of electrons on a non-conductive surface, producing bright streaks and local
     distortion.
+  typical: "Local, transient, and worst on poorly conductive or thickly embedded regions; drives splits rather than merges (Unit 03 §2)."
   matters: Raises the split rate. Mitigated by conductive staining, low landing energy, and charge compensation.
+  confuse: "Charging streaks vs beam damage. Charging trails the scan direction and can be tuned away; beam damage is cumulative, worsens on re-imaging, and is not recoverable."
   units:
   - '03'
 - term: Curtaining
   category: Imaging
   definition: Vertical striping in FIB-SEM images caused by uneven milling rate.
+  typical: "Vertical stripes parallel to the milling direction (Unit 03 §2)."
+  matters: "It is the FIB-SEM equivalent of knife chatter: a texture artifact that degrades boundary detection and shows up as extra splits rather than as visible data loss."
+  confuse: "Curtaining (FIB-SEM, milling-rate variation) vs knife chatter (diamond-knife sectioning, vibration). Both are periodic banding; only the geometry distinguishes them."
   units:
   - '03'
 - term: Knife chatter
   category: Imaging
   definition: Periodic banding perpendicular to the cutting direction, from knife or block vibration.
+  typical: "Periodic bands at fixed spacing, perpendicular to the cutting direction; classed as labour rather than data loss (Unit 03 §2)."
   matters: Adds false boundaries and raises the split rate; recoverable by proofreading.
+  confuse: "Chatter vs curtaining — see Curtaining. Chatter is also easily mistaken for genuine periodic structure such as myelin lamellae."
   units:
   - '03'
 - term: Fold
   category: Imaging
   definition: A wrinkle in a collected section, producing a band of duplicated or compressed tissue.
+  typical: "Unit 03 §3 flags a section when folds cover more than 5% of its area."
   matters: 'A data-loss artifact: the tissue in the fold cannot be recovered by any downstream effort.'
+  confuse: "A fold vs a tear. A fold duplicates and compresses tissue into a dark band; a tear removes it. Both are data loss, but a fold can masquerade as dense staining."
   units:
   - '03'
 - term: Lost section
   category: Imaging
   definition: A section destroyed or not collected, producing a z-gap in the volume.
+  typical: "Unit 03 §3 stops acquisition at more than 2 consecutive lost sections, or a cumulative rate above 1%."
   matters: Distribution matters more than count. Four scattered losses are routine; four consecutive losses
     cut the dataset in two for thin processes.
+  confuse: "A lost section is unrecoverable data loss; a misaligned section is recoverable labour. They look similar in a z-scroll and cost completely different amounts."
   units:
   - '03'
 - term: Contrast-to-noise ratio (CNR)
   category: Imaging
   definition: The contrast between a structure and its background, relative to noise.
+  typical: "Tracked as a drop against a baseline rather than an absolute: Unit 03 §3 stops acquisition at a >20% membrane CNR drop."
   matters: Membrane CNR, not overall image SNR, is the quantity that predicts merge errors. Measure it
     specifically.
+  confuse: "CNR vs SNR. SNR asks whether the signal is above noise; CNR asks whether two tissue classes are separable, which is the only thing segmentation cares about."
   units:
   - '03'
 - term: Fixation
   category: Sample prep
   definition: Chemical cross-linking, typically with glutaraldehyde and paraformaldehyde, that arrests
     ultrastructure before autolysis.
+  typical: "Aldehyde fixation followed by osmium; quality is judged by membrane continuity and the absence of extraction, not by a number."
   matters: Slow or failed fixation shows as swollen astrocytic processes and enlarged extracellular space,
     which distorts every geometric measurement.
+  confuse: "Fixation quality is often blamed for what is really a staining or imaging problem. Weak membranes can come from any of the three, and the fix differs in each case."
   units:
   - '03'
 - term: rOTO
   category: Sample prep
   definition: 'Reduced osmium - thiocarbohydrazide - osmium: an amplified heavy-metal staining protocol.'
+  typical: "Reduced osmium-thiocarbohydrazide-osmium; the standard amplification for en bloc staining of large volumes (Unit 03 §1)."
   matters: Produces membrane contrast strong enough for fast low-dose imaging, and makes the block conductive
     enough for block-face SEM.
+  confuse: "rOTO amplifies membrane contrast, which is what segmentation depends on. Under-amplified blocks produce weak membranes, and weak membranes produce merge errors - the expensive kind."
   units:
   - '03'
 - term: En bloc staining
   category: Sample prep
   definition: Applying stain to the resin-embedded block rather than to cut sections.
+  typical: "Heavy-metal staining of the whole block before embedding, rather than post-section — the prerequisite for block-face and tape-based methods (Unit 03 §1)."
   matters: Required for block-face methods, where sections are never handled separately.
+  confuse: "En bloc vs post-section staining. Post-section staining cannot be used for block-face imaging, because there is no free-standing section to stain."
   units:
   - '03'
 - term: Shrinkage
@@ -430,6 +536,7 @@ terms:
   typical: Roughly 5-20% linear, depending on protocol.
   matters: Systematic, not random. Prefer ratios and within-volume comparisons over absolute lengths compared
     across studies.
+  confuse: "Shrinkage is systematic and affects every measurement you report in nm. It is not noise and it does not average out — a volume measurement taken from EM is a measurement of fixed, dehydrated tissue."
   units:
   - '03'
 - term: Ultramicrotome
@@ -437,31 +544,43 @@ terms:
   definition: The instrument that cuts resin-embedded tissue into sections tens of nanometres thick using
     a diamond knife.
   typical: 30-50 nm sections for connectomics.
+  matters: "Section thickness is set here, and it is the parameter that decides your z-resolution and therefore how traceable thin processes are."
+  confuse: "Cutting thinner improves z-continuity and multiplies the number of sections, the acquisition time, and the chance of losing one. Unit 03 §1 gives the range as 30-50 nm."
   units:
   - '03'
 - term: Segmentation
   category: Reconstruction
   definition: Assigning each voxel to an object, producing neuron and glia labels from image data.
+  typical: "0.2-0.8 PB of labels for a mm3 volume, with label-aware compression (Unit 04 §2)."
+  matters: "Everything downstream is a property of the segmentation, not of the tissue. A connectome is a claim about a specific segmentation at a specific version, and saying so is the difference between a reproducible result and an anecdote."
+  confuse: "Segmentation vs reconstruction. Segmentation is the automated labelling; reconstruction is the whole pipeline through proofreading. Papers use them interchangeably and the quality claims are not interchangeable."
   units:
   - '04'
   - 08
 - term: Affinity map
   category: Reconstruction
   definition: A per-voxel prediction of whether neighbouring voxels belong to the same object.
+  typical: "A per-voxel edge score in each direction, thresholded to produce supervoxels."
   matters: Intermediate product roughly the size of the raw data; usually deleted after supervoxel generation.
+  confuse: "Affinity map vs boundary map. Affinities are between voxel pairs and are directional; a boundary map is a single per-voxel score. The distinction matters when you tune the threshold."
   units:
   - '04'
   - 08
 - term: Supervoxel
   category: Reconstruction
   definition: A small, deliberately over-segmented fragment that serves as the immutable atom of the segmentation.
+  typical: "The atomic unit of the ChunkedGraph: edits change which supervoxels group together, never the supervoxels themselves (Unit 04 §1)."
   matters: Immutability is what makes concurrent proofreading and stable synapse assignment possible.
+  confuse: "Supervoxel vs segment vs root ID. A supervoxel is a fragment, a segment is a group of them, and a root ID names that group at a moment in time. Confusing the three is why version-pinning gets skipped."
   units:
   - '04'
   - 08
 - term: Agglomeration
   category: Reconstruction
-  definition: Merging supervoxels into whole objects.
+  definition: "Merging supervoxels into whole objects, using learned or hand-tuned rules about which neighbouring fragments belong to the same cell."
+  typical: "A single tunable threshold that decides the merge/split balance for the whole volume."
+  matters: "The agglomeration threshold is where the merge/split trade-off is actually set. Move it one way and you buy long correct runs and expensive merges; move it the other and you buy safe fragments and a large proofreading queue."
+  confuse: "Agglomeration vs segmentation. Segmentation produces supervoxels; agglomeration decides which of them are the same neuron. Most correctable error is introduced here, not in the first step."
   units:
   - '04'
   - 08
@@ -469,31 +588,45 @@ terms:
   category: Reconstruction
   definition: A segmentation approach that iteratively grows a single object from a seed, conditioned
     on the mask built so far.
+  typical: "Iterative, single-object; expensive to run and the reason segmentation compute is quoted in GPU-days."
+  matters: "FFNs made mm-scale reconstruction feasible by tracing one object at a time with a moving field of view, rather than classifying every voxel independently."
+  confuse: "FFN (object-at-a-time, recurrent) vs affinity-based pipelines (voxel-at-a-time, then agglomerate). They fail differently, so their error populations are not interchangeable."
   units:
   - 08
 - term: Local shape descriptor
   category: Reconstruction
   definition: An auxiliary learned representation of local object shape used to improve agglomeration
     decisions.
+  typical: "Auxiliary per-voxel targets - local object size, orientation, offset - predicted alongside affinities."
+  matters: "It gives an affinity-based pipeline some of the object-level context an FFN gets for free, at a fraction of the compute."
+  confuse: "It is a training signal, not a segmentation. The output is still affinities that need agglomerating."
   units:
   - 08
 - term: Skeletonization
   category: Reconstruction
   definition: Reducing a segmented object to a centreline graph with radii.
+  typical: "0.1-5 MB per neuron; 10-100 GB for a whole volume, which makes skeletons cheap enough to archive (Unit 02 §3, Unit 04 §2)."
   matters: The representation you need for path distance from soma; cheap to store, so archive it alongside
     any connectivity graph.
+  confuse: "Skeletonization method changes the answer. Path length and branch counts differ measurably between TEASAR-style and mesh-contraction skeletons, so a morphology statistic is only comparable within one method."
   units:
   - '02'
   - '04'
 - term: Mesh
   category: Reconstruction
   definition: A triangulated surface representation of a segmented object.
+  typical: "10-100 MB per neuron across levels of detail; 1-10 TB for a whole volume (Unit 02 §3, Unit 04 §2)."
+  matters: "Meshes are what you actually look at in Neuroglancer, and what surface-area and spine-shape measurements come from. They are regenerated whenever an edit changes the segmentation."
+  confuse: "Mesh vs skeleton. A mesh carries surface geometry and no topology; a skeleton carries topology and radius and no surface. Path length comes from the skeleton, spine head shape from the mesh."
   units:
   - '02'
   - '04'
 - term: Stitching
   category: Reconstruction
   definition: Aligning image tiles within one section using their overlap regions.
+  typical: "5-15% tile overlap is the working range (Unit 03 §1)."
+  matters: "Stitching errors appear on a regular grid, which makes them easy to mistake for real periodic structure and easy to miss entirely if you only inspect within tiles."
+  confuse: "Stitching (tiles within a section) vs registration (section to section). A seam artifact is stitching; a shift between adjacent z is registration."
   units:
   - '03'
   - '04'
@@ -501,33 +634,42 @@ terms:
   category: Reconstruction
   definition: Aligning images to a common coordinate frame - across sections, across modalities, or to
     an atlas.
+  typical: "Applied per section pair, then globally; quality is judged by residual, not by appearance."
   matters: Report residuals locally with a maximum, not as a global mean, and validate on held-out anchors.
+  confuse: "Registration (aligning sections to each other) vs stitching (assembling tiles within one section). Both are alignment; they fail at different scales and are diagnosed differently."
   units:
   - '02'
   - '04'
 - term: Elastic / non-linear alignment
   category: Reconstruction
   definition: Registration allowing local deformation, needed because sections deform non-rigidly.
+  typical: "Unit 03 §3 asks for a 99th-percentile alignment residual under 1 voxel at native xy before ingest."
   matters: A flexible enough warp will align anything, including things that do not correspond. Escalate
     from rigid to affine to elastic only as residuals demand.
+  confuse: "Elastic alignment can hide a real problem by deforming tissue to fit. A low residual on badly folded sections means the fit absorbed the fold, not that the fold is gone."
   units:
   - '04'
 - term: Synapse detection
   category: Reconstruction
   definition: Automated identification of synapses and assignment of pre- and postsynaptic partners.
+  typical: "~5 x 10^8 rows for a mm3 synapse table, 50-200 GB - the hottest analytical table in the stack (Unit 04 §2)."
   matters: Store partners as supervoxel IDs, never as neuron IDs, so assignments survive proofreading.
+  confuse: "Detecting a synapse and assigning its partners are separate problems with separate error rates. A correct cleft with the pre- and postsynaptic sides swapped reverses the edge."
   units:
   - '04'
 - term: Proofreading
   category: Proofreading & QA
-  definition: Human correction of automated segmentation errors.
+  definition: "Human correction of automated reconstruction errors - splitting merged objects, joining split ones, and adjudicating synapses - under a fixed time budget."
+  typical: "Always partial. Unit 08 frames it as an allocation problem, not a cleanup phase with an end."
   matters: At petascale this is an allocation problem under a fixed budget, not an open-ended cleanup.
     It is usually the dominant project cost.
+  confuse: "Proofreading is not quality assurance. QA measures what you have; proofreading changes it. A volume can be heavily proofread and still unmeasured."
   units:
   - 08
 - term: Merge error
   category: Proofreading & QA
-  definition: Two distinct objects incorrectly fused into one.
+  definition: "Two or more distinct objects incorrectly joined into one segment - two neurons fused, or a glial process fused to a neuron."
+  typical: "The expensive class: hard to spot, because the merged object still looks like a plausible neuron (Unit 08 §1)."
   matters: 'The expensive error: invisible in summary statistics, it manufactures connectivity, and it
     biases motif counts superlinearly toward denser motifs.'
   confuse: Splits are visible and locally repairable; merges are neither.
@@ -538,95 +680,127 @@ terms:
   - 09
 - term: Split error
   category: Proofreading & QA
-  definition: One object incorrectly divided into multiple pieces.
+  definition: "One true object incorrectly divided into two or more segments - a neuron broken at a thin neurite, an artifact, or a section boundary."
+  typical: "The cheap class: obvious, and correctable by joining, which is why proofreading effort concentrates on merges (Unit 08 §1)."
   matters: Bounded and visible. Pipelines deliberately trade merges for splits at every level.
+  confuse: "Splits are visible and merges are not, so a segmentation tuned to minimise the errors you can see is tuned to maximise the ones that corrupt connectivity."
   units:
   - 08
 - term: Orphan fragment
   category: Proofreading & QA
   definition: A segmented piece not attributed to any traced object.
+  typical: "A segment with no soma and no confident continuation; most of a raw segmentation by object count."
+  matters: "Orphans are the visible part of the split problem, and they dominate the count of objects in a raw segmentation while contributing almost nothing to connectivity."
+  confuse: "An orphan fragment vs a genuinely truncated process at the volume boundary. The second is a completeness limit, not an error."
   units:
   - 08
 - term: Proofreading level
   category: Proofreading & QA
   definition: A defined tier of reconstruction completeness for a cell, with written criteria.
+  typical: "Stated per cell or per class, not per volume: 'somata verified, axons proofread to 10 um, dendrites untouched' is a usable statement."
   matters: Every connectomics result should state the proofreading level of the cells it rests on. Without
     it, a low connection count cannot be distinguished from incompleteness.
+  confuse: "There is no field-wide standard for what a level means, so a level is only interpretable if the paper defines its own. A result reported without one cannot be compared to anything."
   units:
   - 08
 - term: Stopping rule
   category: Proofreading & QA
   definition: A pre-stated, measurable condition determining when proofreading is complete.
+  typical: "Qualitative by nature: a stated condition such as 'stop when the headline number moves by less than its error band across a proofreading round'."
   matters: 'The strongest form is convergence-based: stop when further independent proofreading of a sample
     changes the endpoint metric by less than a stated amount.'
+  confuse: "A stopping rule is not a budget. A budget says when you run out of time; a stopping rule says when more work stops changing the answer, and only the second is defensible in a paper."
   units:
   - 08
 - term: Triage
   category: Proofreading & QA
   definition: Ranking candidate corrections by expected effect on the endpoint per unit of annotator time.
+  typical: "Ranked by impact on the endpoint metric, not by how wrong an error looks."
   matters: Rank by impact, not conspicuousness. A small glia merge often outranks a large obvious split.
+  confuse: "Triage by conspicuousness vs triage by impact. Fixing whatever looks worst is the default failure mode, and it systematically overspends on splits."
   units:
   - '07'
   - 08
 - term: Inter-annotator agreement
   category: Proofreading & QA
   definition: The degree to which independent annotators produce the same labels on the same data.
+  typical: "Reported alongside throughput; Unit 08 treats throughput without agreement as an unusable performance measure."
   matters: Report it alongside throughput. Optimizing throughput alone reliably produces fast, inconsistent
     annotation.
+  confuse: "Agreement is not accuracy. Two annotators trained the same way can agree closely and both be wrong in the same direction, which is exactly what happens when a cue is taught badly."
   units:
   - '05'
   - 08
 - term: Calibration
   category: Proofreading & QA
   definition: The correspondence between stated confidence and actual accuracy.
+  typical: "Unit 06's rubric asks for high-confidence accuracy at or above 90% alongside a non-trivial uncertain rate; a learner whose high-confidence accuracy equals their overall accuracy is uncalibrated."
   matters: In production annotation, calibration is worth more than raw accuracy, because it lets the
     system route review effort to the cases that need it.
+  confuse: "Calibration vs accuracy. You can be 70% accurate and perfectly calibrated, or 85% accurate and useless because your confidence carries no information. Only the first can be worked with."
   units:
   - '05'
   - '06'
 - term: Gold standard
   category: Proofreading & QA
   definition: An exhaustively verified reference reconstruction used to measure error rates.
+  typical: "A small densely proofread subvolume, usually agreed by more than one annotator."
+  matters: "Every quality number you report is measured against it, so its own error rate becomes a floor on what you can claim. A gold standard built by one annotator carries that annotator's systematic mistakes into every downstream evaluation."
+  confuse: "Gold standard vs ground truth. Ground truth is what is actually there; a gold standard is a human's best reconstruction of it, and the gap between them is real."
   units:
   - 08
 - term: Precision
   category: Proofreading & QA
   definition: Of the items called positive, the fraction that are correct.
+  typical: "Reported with recall, never alone."
+  matters: "In synapse detection, precision is what stops you inflating connectivity: every false positive adds an edge that was never there, and weak one-synapse connections are where false positives concentrate."
+  confuse: "Precision vs recall. Precision asks 'of what I called, how much was real'; recall asks 'of what was real, how much did I find'. Reporting one without the other is uninterpretable."
   units:
   - 08
 - term: Recall
   category: Proofreading & QA
   definition: Of the items that are truly positive, the fraction found.
+  typical: "Reported with precision, never alone."
+  matters: "Low synapse-detection recall shrinks every edge weight in your graph, and it does so unevenly - thin processes and small synapses are missed most, which biases exactly the connections that are hardest to interpret."
+  confuse: "Recall vs completeness. Recall is about detection within the volume you have; completeness is about how much of the circuit that volume contains at all."
   units:
   - 08
 - term: F1 score
   category: Proofreading & QA
-  definition: The harmonic mean of precision and recall.
+  definition: "The harmonic mean of precision and recall, used to summarise detection performance - most often synapse detection - in a single number."
+  typical: "Reported per class; a synapse detector's F1 is not comparable across datasets with different synapse densities."
   matters: Weights the two equally, which is rarely right for connectomics, where merge and split errors
     have very different costs.
+  confuse: "F1 weights precision and recall equally, which is almost never what connectomics wants. Merge and split errors have very different costs, and so do false and missed synapses."
   units:
   - 08
 - term: Variation of Information (VI)
   category: Proofreading & QA
   definition: An information-theoretic measure of disagreement between two segmentations, decomposable
     into split and merge components.
+  typical: "Reported as a split component and a merge component separately; the sum alone hides which error dominates."
   matters: Always report the two components separately. Total VI can improve while merges get worse, because
     splits usually dominate the sum.
+  confuse: "A single summed VI can be identical for a segmentation that is merge-heavy and one that is split-heavy, and those two need completely different proofreading strategies."
   units:
   - 08
 - term: Expected Run Length (ERL)
   category: Proofreading & QA
   definition: The mean error-free path length along skeletons before an error is encountered.
+  typical: "Reported in um of correctly reconstructed path; sensitive to merge errors, which truncate runs sharply."
   matters: Answers 'how far can I trace before hitting a problem?' Relatively insensitive to merges unless
     merges are explicitly penalized.
+  confuse: "ERL rewards long correct runs and punishes merges hard, so it can look excellent on a volume riddled with splits. Pair it with a split-sensitive measure."
   units:
   - 08
 - term: Endpoint metric
   category: Proofreading & QA
   definition: The scientific quantity a project is actually measuring, as opposed to a generic quality
     score.
+  typical: "Whatever number the paper actually reports - reciprocity rate, motif count, mean degree - rather than a segmentation-quality score."
   matters: Ship on the endpoint. 'Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1
     to 2.8' is a stronger quality statement than any VI value.
+  confuse: "Endpoint metric vs quality metric. VI and ERL measure the reconstruction; the endpoint metric measures your claim. Optimising the first without checking the second is the most common way to spend a proofreading budget badly."
   units:
   - 08
   - 09
@@ -635,12 +809,16 @@ terms:
   definition: A large array stored as many independently addressable blocks, so consumers fetch only what
     they need.
   typical: Chunks commonly 64^3 to 512^3 voxels.
+  matters: "It is why you can open a petabyte volume in a browser: only the chunks in view are fetched, so cost scales with what you look at rather than with what exists."
+  confuse: "Chunk size is a performance decision with no right answer. Small chunks make random access cheap and metadata expensive; large chunks do the reverse."
   units:
   - '04'
 - term: Multiresolution pyramid
   category: Data & infrastructure
   definition: A series of progressively downsampled copies of a volume, enabling interactive zoom.
   typical: Costs roughly 30-50% additional storage.
+  matters: "It is what lets a viewer show a whole volume and a single synapse with the same interaction cost, and it is why a stored volume is larger than its raw data."
+  confuse: "The pyramid adds roughly 30-50% on top of the base resolution (Unit 04 §2), which is a real line in a storage budget rather than a rounding error."
   units:
   - '02'
   - '04'
@@ -648,40 +826,54 @@ terms:
   category: Data & infrastructure
   definition: Bundling many small chunks into larger files with an index, to avoid per-object overhead
     in object stores.
+  typical: "Groups many small chunks into fewer large files, trading random-access granularity for a manageable object count."
   matters: At petascale, per-request charges on billions of tiny objects can exceed storage costs.
+  confuse: "Sharding solves a filesystem problem, not a data problem. It exists because object stores handle a billion tiny files badly."
   units:
   - '04'
 - term: Precomputed format
   category: Data & infrastructure
   definition: The chunked, multiresolution volume format used by Neuroglancer.
+  typical: "Chunked image, segmentation, mesh and skeleton sources under one directory tree."
+  matters: "It is Neuroglancer's native layout, so a volume served as Precomputed can be opened by anyone with a URL and no local software."
+  confuse: "Precomputed (Neuroglancer's layout) vs OME-Zarr (the community standard). Both are chunked; they are not interchangeable without conversion."
   units:
   - '04'
 - term: OME-Zarr / N5
   category: Data & infrastructure
   definition: Cloud-oriented chunked array formats used for large bioimaging volumes.
+  typical: "Chunked, compressed, with multiscale metadata alongside the arrays."
+  matters: "They are the open, chunked formats that let a volume be read by many tools without conversion, which is the difference between an archived dataset and a usable one."
+  confuse: "OME-Zarr and N5 are storage layouts, not viewers or databases. Reading one still requires a client that understands the multiscale metadata."
   units:
   - '04'
 - term: ChunkedGraph
   category: Data & infrastructure
   definition: A hierarchical graph over immutable supervoxels in which an object is a connected component,
     enabling fast concurrent edits.
+  typical: "Stores supervoxel groupings as a hierarchy so an edit is a local change, not a re-segmentation."
   matters: A merge becomes adding an edge rather than rewriting voxels - the design that makes distributed
     proofreading feasible.
+  confuse: "It is not a segmentation. It is the structure that records which supervoxels are currently grouped, which is why a root ID is only meaningful with a timestamp or materialization."
   units:
   - '04'
 - term: Root ID
   category: Data & infrastructure
   definition: The identifier of a segmented object as of a particular moment in time.
+  typical: "Changes whenever an edit touches the object; stable only within a materialization (Unit 04 §1)."
   matters: Not stable. A root ID in a notebook, paper, or figure caption is meaningless without a version
     or timestamp.
+  confuse: "A root ID is not a neuron's name. It is a pointer to a grouping at a moment, and reusing one across versions is the most common reproducibility failure in this field."
   units:
   - '04'
 - term: Materialization
   category: Data & infrastructure
   definition: A frozen snapshot in which annotations are joined to the segmentation state at a specific
     timestamp and written to queryable tables.
+  typical: "Named by version number and date; a query without one is not reproducible (Unit 04 §1)."
   matters: Analyses run against a materialization version, and that version belongs in your methods section
     like a software version or genome build.
+  confuse: "Materialization version vs dataset name. 'minnie65_public' names the dataset; only the materialization version names the state of it that your number came from."
   units:
   - '04'
   - 09
@@ -689,68 +881,97 @@ terms:
   category: Data & infrastructure
   definition: 'Connectome Annotation Versioning Engine: the versioned proofreading and annotation platform
     behind MICrONS and FlyWire.'
+  typical: "Backs MICrONS and FlyWire; queried through caveclient with an explicit materialization version."
+  matters: "CAVE is what makes a petascale segmentation editable and citable at the same time: it versions the edits, so a query can be pinned to a materialization and reproduced later."
+  confuse: "CAVE (the annotation and versioning system) vs ChunkedGraph (the edit-tracking data structure inside it). CAVE is the service; the ChunkedGraph is one component."
   units:
   - '04'
 - term: Neuroglancer
   category: Data & infrastructure
   definition: A browser-based viewer for petascale volumes, meshes, and annotations.
+  typical: "Browser-based; state encoded in the URL, which is what makes a view citable."
+  matters: "It is the shared viewer of the field, and a Neuroglancer link with a pinned segmentation source is the standard way to point someone at exactly what you are looking at."
+  confuse: "A Neuroglancer link records the view, not the data version. Two people can open the same link and see different segments if the underlying segmentation has been edited."
   units:
   - '04'
 - term: CloudVolume
   category: Data & infrastructure
   definition: A Python client for reading and writing chunked precomputed volumes.
+  typical: "Reads Precomputed, Zarr and N5 from cloud buckets."
+  matters: "It is the practical way to pull image, segmentation, mesh and skeleton data out of public volumes from Python, and it is what most analysis notebooks start with."
+  confuse: "CloudVolume (reads the data) vs caveclient (queries the annotations). A synapse table comes from the second, not the first."
   units:
   - '04'
 - term: CATMAID
   category: Data & infrastructure
   definition: A collaborative web platform for skeleton tracing in large image volumes.
+  typical: "Skeleton-first: neurons are traced as node trees rather than segmented as volumes."
+  matters: "It is the tool most manually traced invertebrate connectomes were built in, so its data model shows up in the datasets even where the tool is no longer used."
+  confuse: "CATMAID (manual skeleton tracing) vs Neuroglancer (viewing dense segmentation). They represent neurons differently, and a skeleton traced in one is not a segment in the other."
   units:
   - '04'
 - term: webKnossos
   category: Data & infrastructure
   definition: A web platform for viewing, annotating, and proofreading volume EM data.
+  typical: "Browser-based, with its own chunked backing store."
+  matters: "It is the annotation and proofreading environment behind several large volumes, and one of the few that handles skeleton tracing and volume proofreading in the same tool."
+  confuse: "webKnossos (annotate and proofread) vs Neuroglancer (view). Both open large volumes in a browser; only one is built for making edits."
   units:
   - '04'
 - term: neuPrint
   category: Data & infrastructure
   definition: A graph-database service for querying released connectomes such as hemibrain and MANC.
+  typical: "Neo4j-backed; queried in Cypher, with neurons as nodes and connections as weighted edges."
+  matters: "It is how the hemibrain and related fly datasets are queried, and its graph-first model is a good fit for motif and pathway questions."
+  confuse: "neuPrint (graph queries over a finished connectome) vs CAVE (annotations over an editable segmentation). neuPrint serves snapshots; CAVE serves live state."
   units:
   - '04'
   - 09
 - term: BossDB
   category: Data & infrastructure
   definition: A community archive and access service for volumetric neuroscience datasets.
+  typical: "Cloud-hosted, chunked, accessed through intern or CloudVolume."
+  matters: "It is one of the few places large public EM volumes are hosted with a documented API, so it is often how you get the data at all."
+  confuse: "BossDB (storage and serving) vs CAVE (annotation and versioning). They solve different halves of the problem and are frequently used together."
   units:
   - '04'
 - term: Provenance
   category: Data & infrastructure
   definition: 'The recorded lineage of a data product: inputs, code revision, parameters, model version,
     and environment.'
+  typical: "At minimum: dataset, materialization version, query code, and date. Unit 04's lab asks for exactly this header on every notebook."
   matters: If it is not machine-readable, it does not exist. Per-tile timestamps in particular are what
     let you ask whether a defect follows block position, anatomy, or acquisition time.
+  confuse: "Provenance is not citation. Citing the paper tells a reader which project produced the data; provenance tells them which state of it produced your number."
   units:
   - '03'
   - '04'
 - term: Idempotency
   category: Data & infrastructure
   definition: The property that re-running a stage on the same inputs produces the same output.
+  typical: "A property a pipeline stage either has or does not; the ones that lack it are where reruns silently corrupt state."
   matters: Broken by GPU non-determinism, unpinned dependencies, and unseeded randomness. Pin them and
     test the re-run.
+  confuse: "Idempotent is not the same as deterministic. A stage can produce identical output every run and still double-write if it is invoked twice."
   units:
   - '04'
 - term: Egress
   category: Data & infrastructure
   definition: The cost of moving data out of a cloud region.
+  typical: "The dominant cost of working with public petascale data from outside the hosting cloud, and the reason analysis is usually run next to the data."
   matters: Moving a petabyte out can cost more than storing it for a year. Bring compute to the data.
+  confuse: "Storage cost vs egress cost. Storage is charged for holding the data; egress is charged for moving it, and at petabyte scale egress is what surprises people."
   units:
   - '04'
 - term: Connectivity graph
   category: Analysis & statistics
   definition: A directed graph whose nodes are neurons (or types, or compartments) and whose edges represent
     connections.
+  typical: "Nodes are neurons, edges are connections weighted by synapse count; the threshold that turns synapses into edges is a choice, not a given."
   matters: Construction involves at least six consequential choices - node definition, edge definition,
     threshold, weighting, inclusion criteria, boundary handling - each of which changes the answer and
     must be reported.
+  confuse: "The graph is not the connectome. It is one representation of it, produced by decisions about thresholding, cell inclusion and boundary truncation that all change the answer."
   units:
   - '02'
   - 09
@@ -761,106 +982,141 @@ terms:
   matters: Not innocent. Because the synapses-per-connection distribution is heavy-tailed, moving from
     1 to 3 can remove more than half the edges - and does so unevenly across cell types. Report it and
     re-run at a second value.
+  confuse: "The threshold is a claim about what counts as a connection, and it moves results a long way. Unit 09 treats it as a parameter to report and vary, not a setting to pick once."
   units:
   - 09
 - term: Null model
   category: Analysis & statistics
   definition: A randomized reference distribution encoding what would count as an uninteresting explanation.
+  typical: "Qualitative by nature. What matters is that it is stated, and stated before the test."
   matters: Choosing the null is the scientific step; running the test is bookkeeping. Preserve everything
     you are not asking about.
+  confuse: "The null is not a technicality; it is the claim. Choosing it after seeing the data converts a hypothesis test into a description, and the two do not carry the same weight."
   units:
   - 09
 - term: Configuration model
   category: Analysis & statistics
   definition: A null that preserves each node's in- and out-degree while randomizing connections.
+  typical: "Preserves each node's in- and out-degree exactly while randomising who connects to whom."
   matters: The minimum acceptable null for a connectome. Erdos-Renyi ignores degree heterogeneity and
     will show apparent enrichment of almost any motif.
+  confuse: "It controls for degree and nothing else. In a spatially embedded connectome, distance explains much of what it will flag as structure, which is why Unit 09 works three nulls rather than one."
   units:
   - 09
 - term: Distance-dependent null
   category: Analysis & statistics
   definition: A null preserving degree and the empirical relationship between connection probability and
     distance.
+  typical: "Preserves the connection-probability-versus-distance curve while randomising the rest."
   matters: Required for spatially embedded data, which means all volume EM. Many reported motif enrichments
     do not survive it.
+  confuse: "It is the null that usually matters most in cortex and is the one most often skipped. Erdos-Renyi will call almost any spatially embedded network 'structured'."
   units:
   - 09
 - term: Motif
   category: Analysis & statistics
   definition: A small subgraph pattern whose frequency is compared against a null model.
+  typical: "Two- and three-node patterns; reciprocal pairs and the triad census are the usual starting points."
+  matters: "Motif enrichment is one of the main structural claims connectomics makes, and it is entirely dependent on the null chosen. Unit 09 shows the same data supporting '2.9x enrichment' or 'no detectable effect' depending on that choice."
+  confuse: "Motif count vs motif enrichment. The count is a fact about your graph; the enrichment is a comparison, and only the comparison is a claim."
   units:
   - 09
 - term: Triad census
   category: Analysis & statistics
   definition: Counting each of the 16 isomorphism classes of directed three-node subgraphs.
+  typical: "16 possible three-node patterns in a directed graph, counted together."
   matters: Sixteen tests, and they are strongly dependent on each other. Use permutation inference and
     report how many tests you ran.
+  confuse: "The census is 16 simultaneous tests, so it needs multiple-comparison correction - and it inherits every sensitivity the underlying edges have to reconstruction error."
   units:
   - 09
 - term: Reciprocity
   category: Analysis & statistics
   definition: The frequency of bidirectional connections between node pairs.
+  typical: "Reported as an enrichment over a null, never as a raw rate."
   matters: The textbook case where the apparent effect collapses as the null gets stronger - degree heterogeneity
     and spatial proximity together explain much of the naive enrichment.
+  confuse: "Reciprocity is unusually sensitive to merge errors: one merge that fuses a pre- and postsynaptic partner manufactures a reciprocal pair that does not exist."
   units:
   - 09
 - term: Subgraph isomorphism
   category: Analysis & statistics
   definition: The problem of finding occurrences of a query pattern within a larger graph.
+  typical: "NP-complete in general; tractable here because the patterns sought are tiny."
+  matters: "It is the formal problem behind every motif search, and it is why exhaustive motif counting is expensive on large graphs."
+  confuse: "Induced vs non-induced subgraphs. Whether absent edges must also be absent changes the count substantially, and papers often do not say which they used."
   units:
   - 09
 - term: DotMotif
   category: Analysis & statistics
   definition: A declarative language and toolset for expressing and searching connectome motifs.
+  typical: "Queries subgraph patterns against a connectome graph."
+  matters: "It turns motif search into a declarative query, so the definition of the motif you tested is written down and reviewable rather than buried in loop code."
+  confuse: "Finding a motif is not showing it is enriched. The count needs a null model before it means anything."
   units:
   - 09
 - term: Graph matching
   category: Analysis & statistics
   definition: Finding the correspondence between the nodes of two graphs, for example left and right hemisphere
     connectomes.
+  typical: "Used to align two connectomes - across individuals, hemispheres, or species - when node identities are not shared."
   matters: Yields a measure of wiring stereotypy - a question only connectomics can answer.
+  confuse: "A good match score does not imply corresponding cells. With enough nodes, plausible alignments exist between graphs with no biological correspondence at all."
   units:
   - 09
 - term: Spectral embedding
   category: Analysis & statistics
   definition: Representing nodes as points in a low-dimensional space derived from the adjacency structure.
+  typical: "Eigenvectors of a graph Laplacian or adjacency matrix, truncated to a few dimensions."
+  matters: "It gives a continuous representation of connectivity that can be clustered or compared, which is useful when discrete community detection is too brittle."
+  confuse: "Embedding dimension is a free parameter that changes the structure you see. Choosing it by how good the clusters look is circular."
   units:
   - 09
 - term: Modularity / community detection
   category: Analysis & statistics
-  definition: Partitioning a graph into densely connected groups.
+  definition: "Partitioning a network into groups with denser connectivity inside groups than between them, and scoring how well the partition separates them."
+  typical: "Resolution-dependent: the same graph yields different module counts under different resolution parameters."
   matters: Returns a partition for any graph, including a random one, and has a resolution limit. Always
     compare against degree-preserving rewired graphs.
+  confuse: "Modularity always returns communities, including on random graphs. A module count means nothing without a null comparison and a stated resolution."
   units:
   - 09
 - term: Multiple comparisons
   category: Analysis & statistics
   definition: The inflation of false positives when many hypotheses are tested.
+  typical: "A triad census tests 16 patterns at once; a cell-type-pair analysis tests as many pairs as you have types squared."
   matters: Report the number of tests run, including the ones you ran and did not report.
+  confuse: "Correcting for the tests you report is not enough. The count that matters includes the tests you ran and discarded, which is why pre-specifying matters more than the correction method."
   units:
   - 09
 - term: Error sensitivity analysis
   category: Analysis & statistics
   definition: Simulating measured merge and split rates on the reconstructed graph and reporting the resulting
     spread on the effect size.
+  typical: "Inject merge and split errors at the rates the source dataset reports, and re-measure your endpoint."
   matters: Cheap to run and one of the strongest things you can put in a supplement. If the band crosses
     the null, say so.
+  confuse: "Error sensitivity is not the same as a confidence interval. A CI covers sampling noise; this covers reconstruction error, which is systematic and usually larger."
   units:
   - 09
 - term: Connectome-constrained model
   category: Analysis & statistics
   definition: A dynamical model whose connectivity is fixed by a measured connectome, with remaining parameters
     fitted to data.
+  typical: "A simulation whose connectivity is fixed to a measured wiring diagram, with dynamics fitted separately."
   matters: 'The strongest current NeuroAI result type: the connectome removes free parameters, which is
     what makes the model falsifiable.'
+  confuse: "Constraining a model by a connectome does not validate the connectome. If the reconstruction has systematic errors, the model inherits them and can still fit the data."
   units:
   - 09
 - term: Peters' rule
   category: Analysis & statistics
   definition: The hypothesis that connectivity can be predicted from the spatial overlap of axonal and
     dendritic arbors.
+  typical: "Predicts connection probability from axo-dendritic overlap alone."
   matters: A poor predictor of actual synaptic connectivity in cortex, which is precisely why light-microscopy
     overlap cannot substitute for EM.
+  confuse: "Peters' rule is a null hypothesis, not a finding. Its value is as the baseline that specific connectivity has to beat, and it is routinely cited as though it were a description of how brains wire."
   units:
   - '01'
   - '02'
@@ -868,29 +1124,37 @@ terms:
   category: Practice
   definition: 'A triage of connectomics claims: supported by structure alone (A), by structure plus a
     declared assumption (B), or not supportable by structure (C).'
+  typical: "Qualitative. Bin A is supported by the structure you measured, Bin B needs an assumption you should name, Bin C needs data you do not have."
   matters: Any Bin B claim must name its assumption in the same sentence. The most common failure in connectomics
     writing is a Bin C sentence in the abstract supported by a Bin A measurement in the results.
+  confuse: "The bins are about evidence, not confidence. A Bin C claim stated confidently is still Bin C, and saying which bin you are in is what makes a discussion section checkable."
   units:
   - '01'
 - term: Non-claim
   category: Practice
   definition: An explicitly stated sentence a study will not assert, with the reason.
+  typical: "One sentence, written before the analysis, naming something the data cannot establish."
   matters: The best single predictor of a weak study brief is an empty non-claim. If you cannot name a
     sentence you refuse to write, you have not found the boundary of your evidence.
+  confuse: "A non-claim is not a limitation paragraph. It is a specific sentence you refuse to write, decided in advance - which is why Unit 01's lab asks for it before any result exists."
   units:
   - '01'
 - term: Pilot reconstruction
   category: Practice
   definition: Taking a small sub-volume through the entire pipeline before committing to full acquisition.
+  typical: "A small subvolume run through the full pipeline to measure the error rate before committing to scale (Unit 03 §3)."
   matters: Costs 1-2% of a project and is the only way to discover a prep-level problem while the prep
     can still be changed.
+  confuse: "A pilot tests the pipeline, not the biology. Its purpose is to find out whether your proofreading budget can absorb the error rate you are about to generate."
   units:
   - '03'
 - term: Cue family
   category: Practice
   definition: A grouping of annotation evidence by shared failure mode - geometry, organelle content,
     synaptic role, context, long-range continuity.
+  typical: "Units 05-07 ask for two independent families before a confident call - organelle content and geometry, say, rather than two geometric cues."
   matters: Two cues that fail together are one cue. High confidence requires two cues from different families.
+  confuse: "Two cues from the same family are not independent evidence. Calibre and branching pattern both fail together on a tangential cut."
   units:
   - '05'
   - '06'
@@ -898,8 +1162,10 @@ terms:
   category: Practice
   definition: An operational label - high, medium, uncertain - defined by the count and independence of
     supporting cues.
+  typical: "Unit 06 asks for high-confidence accuracy at or above 90%, with a non-trivial share of calls left uncertain."
   matters: '''Uncertain'' is a valid output. The uncertain set is the review priority queue and the best
     proxy for local data difficulty.'
+  confuse: "A tier is only useful if it predicts accuracy. If your high-confidence calls are no better than your overall rate, the tier is decoration."
   units:
   - '05'
   - '06'

@@ -63,6 +63,14 @@ jobs:
       - name: Deck freshness
         run: ruby scripts/check_deck_freshness.rb
 
+      # The dictionary page tells readers its entries carry a typical value, a
+      # why-it-matters line and the common confusion, and calls the second "the
+      # real content". Of 127 terms, 79 had matters, 27 had typical and 8 had
+      # confuse. Same defect class as the "100+ papers" claim, so the same
+      # treatment. Gate verified by injection.
+      - name: Dictionary completeness
+        run: ruby scripts/validate_dictionary.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

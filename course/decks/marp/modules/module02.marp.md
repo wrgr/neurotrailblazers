@@ -99,8 +99,7 @@ Create a personal research-navigation plan that includes role expectations, comm
 ---
 
 ## Studio Activity
-### Overview
-Learners produce a one-page research navigation document that serves as a practical reference throughout the program.
+{: #studio-activity}
 
 ---
 

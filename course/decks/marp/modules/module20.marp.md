@@ -97,6 +97,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
 
 ---

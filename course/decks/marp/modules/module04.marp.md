@@ -102,7 +102,7 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Studio Activity
-### Anatomy-in-context annotation exercise (60-75 minutes)
+{: #studio-activity}
 
 ---
 

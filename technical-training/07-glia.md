@@ -322,6 +322,25 @@ claim at all, glia must be proofread to a stated standard, not opportunistically
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Measure what your correction pass did to the endpoint, once, and reuse the number.**
+  "Correcting glia changed mean input count by X%" is the argument that gets glia into a proofreading budget. Without it, the work reads as tidying.
+
+- **Rank by impact, not by how obvious the error looks.**
+  A small glia merge routinely outranks a large conspicuous split. Queues built by eye get this backwards.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Vasculature and the neurovascular unit beyond astrocytic endfeet, and glial biology

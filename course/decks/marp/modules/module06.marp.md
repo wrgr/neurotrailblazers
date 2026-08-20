@@ -88,7 +88,7 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 ---
 
 ## Studio Activity
-**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
+{: #studio-activity}
 
 ---
 

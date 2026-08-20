@@ -481,6 +481,25 @@ artifact keys before you need them. You will need them.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Pin the version, and put it in the figure caption.**
+  An object ID without a materialization version or timestamp is meaningless. This is the most common silent correctness bug in connectomics analysis, and it is invisible — your code still runs.
+
+- **Treat provenance as a pipeline stage with its own tests.**
+  If the acquisition log is not machine-readable, it does not exist. You will discover this the first time you need to ask whether a defect follows block position or acquisition time.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Segmentation model architectures and proofreading practice (Unit 08), the metrics used

@@ -484,6 +484,28 @@ version (Unit 04 §2). Put it in the figure caption.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Report how many tests you ran — including the ones you ran and did not report.**
+  This is the norm that separates an analysis from a fishing expedition, and it is almost never taught directly.
+
+- **Report the effect under every null model you tried, not the one that worked.**
+  If you went looking for a fourth null after three failed, that is a multiple-comparison problem no correction can repair afterwards. Say what you tried.
+
+- **Write the sentence describing what would make the result uninteresting, before choosing a null.**
+  If you cannot write it, you do not yet know what you are testing.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Biophysical modelling, detailed statistical theory for random graphs, and functional

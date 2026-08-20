@@ -78,6 +78,7 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.
 
 ---

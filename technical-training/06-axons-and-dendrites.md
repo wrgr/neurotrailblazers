@@ -365,6 +365,25 @@ affects a conclusion.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Report confidence per call, then re-run the headline result on high-confidence calls only.**
+  If the effect survives, say so. If it does not, you have learned the most important thing about your result — and reporting that is what distinguishes a careful analyst.
+
+- **Choose the cheaper error deliberately, and say that you did.**
+  Biasing yourself toward the recoverable mistake is not sloppiness; it is an asymmetric loss function applied on purpose. Say so, or it reads as carelessness.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Glial processes, which are the *other* major source of thin-process confusion and are

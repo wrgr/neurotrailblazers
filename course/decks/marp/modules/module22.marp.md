@@ -88,6 +88,7 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise: in a cortical EM volume, layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
 
 ---

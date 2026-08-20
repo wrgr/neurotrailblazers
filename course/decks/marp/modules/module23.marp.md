@@ -82,6 +82,7 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members. Two of the people who stop are specialists who will ask about segmentation quality; one is a program director who will ask what it means; one is a peer at your own stage who wants your code.
 
 ---

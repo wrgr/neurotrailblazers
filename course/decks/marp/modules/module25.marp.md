@@ -84,6 +84,7 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** You are preparing your final portfolio for a competitive research opportunity. Assume the reviewer spends two minutes on the first pass and opens exactly one artifact.
 
 ---

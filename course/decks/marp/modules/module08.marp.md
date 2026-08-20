@@ -89,7 +89,7 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 ---
 
 ## Studio Activity
-**Scenario:** Your lab is planning a study of feedforward vs feedback connectivity in mouse visual cortex using the MICrONS dataset. You need to design three testable hypotheses about the circuit architecture.
+{: #studio-activity}
 
 ---
 

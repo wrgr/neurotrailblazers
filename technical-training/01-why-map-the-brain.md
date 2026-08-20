@@ -402,6 +402,28 @@ comparing, and report proofreading state per cell.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Name the assumption in the same sentence as the claim.**
+  "Putatively excitatory (asymmetric morphology)" costs four words. Writing "excitatory" instead is not a shorthand; it is a different claim.
+
+- **Write down the sentence you refuse to write.**
+  Every study brief should carry an explicit non-claim. Reviewers read it as confidence, not weakness — but nobody tells you that, so most people leave it blank.
+
+- **Prefer ratios to absolute counts when comparing.**
+  A ratio between comparably reconstructed populations quietly controls for a great deal of reconstruction bias. Experienced people reach for it automatically.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Imaging physics (Unit 03), segmentation methods (Unit 08), and the statistics of

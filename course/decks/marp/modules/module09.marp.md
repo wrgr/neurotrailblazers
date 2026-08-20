@@ -90,7 +90,7 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Studio Activity
-**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
+{: #studio-activity}
 
 ---
 

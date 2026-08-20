@@ -84,6 +84,7 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics. Use real targets, real names, and real deadlines; generic targets produce generic plans.
 
 ---

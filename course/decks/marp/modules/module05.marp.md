@@ -93,7 +93,7 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Studio Activity
-### Scenario
+{: #studio-activity}
 
 ---
 

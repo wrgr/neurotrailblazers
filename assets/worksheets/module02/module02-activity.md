@@ -38,8 +38,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** ### Overview
-Learners produce a one-page research navigation document that serves as a practical reference throughout the program.
+**Scenario:** {: #studio-activity}
 
 1. List 5 unwritten norms you have encountered (or expect to encounter) in research settings.
 2. For each norm, write: (a) what the norm is, (b) how you learned it (or how you think most people learn it), (c) what happens when someone violates it.

@@ -90,7 +90,7 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 ---
 
 ## Studio Activity
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+{: #studio-activity}
 
 ---
 

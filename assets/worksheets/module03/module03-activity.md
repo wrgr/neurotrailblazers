@@ -38,8 +38,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** ### Overview
-Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results.
+**Scenario:** {: #studio-activity}
 
 1. Create a new notebook with a header cell: title, your name, date, dataset name, materialization version.
 2. Create a setup cell with all imports and version pinning.

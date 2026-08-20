@@ -92,7 +92,7 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ---
 
 ## Studio Activity
-**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists "MICrONS Consortium" as a co-author without individual contribution details. The discussion section states that "this motif likely plays a causal role in seizure propagation."
+{: #studio-activity}
 
 ---
 

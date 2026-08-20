@@ -412,6 +412,28 @@ by region and by process calibre, and let that drive both triage and the caveats
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **State the proofreading level of the cells a result rests on.**
+  Without it a reader cannot tell whether a low connection count is biology or incompleteness. Almost no published analysis includes this, which is exactly why including it is noticed.
+
+- **Define the stopping rule before you start, and make it checkable by someone else.**
+  "Until it looks good" is not a stopping rule. Writing one down in advance is what converts proofreading from open-ended cleanup into a plannable task.
+
+- **Report what you excluded and why.**
+  A stated 6% exclusion rate is honest and cheap. An unbudgeted tail discovered at the end is neither.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Segmentation model architecture and training in depth, and the statistical analysis of

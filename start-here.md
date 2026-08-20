@@ -218,6 +218,11 @@ pathways:
                     <td>What you need is the assessment instrument and the run-of-show, not the reading.</td>
                 </tr>
                 <tr>
+                    <td>Anyone, at any stage</td>
+                    <td><a href="{{ '/hidden-curriculum/' | relative_url }}">The hidden curriculum</a></td>
+                    <td>The unwritten norms &mdash; how to read a paper, what a PI expects but won&rsquo;t say, how funding and authorship really work, how to disagree with someone senior. Not a track; read it alongside whatever else you are doing.</td>
+                </tr>
+                <tr>
                     <td>Here for the professional side</td>
                     <td><a href="{{ '/tracks/career-and-community/' | relative_url }}">Career &amp; Community</a></td>
                     <td>Relevant from week one, not only at the end. Deferring it until the technical work is finished is the most common mistake on this track.</td>

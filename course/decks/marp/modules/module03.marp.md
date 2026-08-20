@@ -107,8 +107,7 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ---
 
 ## Studio Activity
-### Overview
-Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results.
+{: #studio-activity}
 
 ---
 

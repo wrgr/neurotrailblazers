@@ -90,6 +90,7 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
 
 ---

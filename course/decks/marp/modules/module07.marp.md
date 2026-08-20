@@ -96,7 +96,7 @@ Not all errors are worth fixing. A merge error on a large interneuron with 500 s
 ---
 
 ## Studio Activity
-**Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
+{: #studio-activity}
 
 ---
 

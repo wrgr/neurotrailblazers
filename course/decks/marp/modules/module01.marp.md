@@ -88,8 +88,7 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Studio Activity
-### Overview
-Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement.
+{: #studio-activity}
 
 ---
 

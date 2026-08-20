@@ -366,6 +366,25 @@ to "what modality?" is "none — this is a re-analysis".
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Report registration residuals locally, with the maximum — never as a global mean.**
+  A mean residual of 3 µm can hide a 40 µm failure in one corner. A reader who knows the field looks for the distribution first and distrusts a paper that reports only the mean.
+
+- **Archive the next-richer representation.**
+  Keeping skeletons alongside a connectivity graph costs a few gigabytes and answers the reviewer question you cannot otherwise answer without re-running the pipeline.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 The physics of image formation and the artifact catalogue (Unit 03), the systems

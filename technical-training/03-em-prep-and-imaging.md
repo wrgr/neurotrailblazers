@@ -471,6 +471,28 @@ structures and use the measured value in all geometry.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **Separate data loss from labour when you report quality.**
+  One quality score conceals the only distinction the project actually needs. This is the difference between "expensive to fix" and "unanswerable forever".
+
+- **Report the distribution, not the count.**
+  Four scattered lost sections and four consecutive lost sections have the same headline number and completely different consequences.
+
+- **Pilot before you scale.**
+  Running a small sub-volume through the whole pipeline costs 1–2% of a project. Skipping it is the most expensive habit in the field, and no one is ever told to do it explicitly.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 The alignment and segmentation algorithms that consume this data (Units 04 and 08),

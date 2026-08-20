@@ -78,6 +78,7 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Studio Activity
+{: #studio-activity}
 **Scenario:** Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week's run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.
 
 ---

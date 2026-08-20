@@ -439,6 +439,25 @@ section/tile/scan geometry.
 
 ---
 
+## The norm behind this unit
+
+Some of what this unit teaches is technique. Some of it is **professional norm** — the
+things experienced people do without being asked, and which nobody states out loud
+because they assume you already know. Those are worth naming, because they are
+[distributed unequally by background]({{ '/hidden-curriculum/' | relative_url }}) rather
+than by ability.
+
+From this unit:
+
+- **"Uncertain" is a real answer and should be rewarded out loud.**
+  An annotator who never says "no" is not calibrated. Learners suppress uncertainty because they read it as failure; a facilitator has to say the opposite explicitly, once, early.
+
+- **Two cues from different families, or it is not high confidence.**
+  Three observations that share a failure mode are one observation. Nobody states this, and it is the single most common reasoning error in annotation.
+
+The collected set, and why making these explicit is a fairness intervention rather than
+etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+
 ## What this unit does not cover
 
 Systematic axon-vs-dendrite classification, which gets its own treatment in Unit 06;

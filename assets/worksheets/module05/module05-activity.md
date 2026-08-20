@@ -38,7 +38,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** ### Scenario
+**Scenario:** {: #studio-activity}
 
 1. Inspect image quality and artifact signatures.
 2. Classify severity and likely impact on segmentation.

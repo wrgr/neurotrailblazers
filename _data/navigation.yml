@@ -54,6 +54,8 @@ items:
         url: "/teaching/facilitator-guide/"
       - title: "Module Slides"
         url: "/modules/slides/"
+  - title: "Hidden Curriculum"
+    url: "/hidden-curriculum/"
   - title: "About"
     url: "/frameworks/"
     dropdown:

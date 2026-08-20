@@ -38,8 +38,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** ### Overview
-Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement.
+**Scenario:** {: #studio-activity}
 
 1. State your broad curiosity question (1 sentence).
 2. Narrow to a specific circuit, region, or organism (1 sentence).

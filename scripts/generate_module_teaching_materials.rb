@@ -10,6 +10,7 @@ MODULE_DIR = File.join(ROOT, 'modules')
 SLIDE_PAGE_DIR = File.join(ROOT, 'modules', 'slides')
 MARP_DIR = File.join(ROOT, 'course', 'decks', 'marp', 'modules')
 WORKSHEET_DIR = File.join(ROOT, 'assets', 'worksheets')
+SESSION_DIR = File.join(ROOT, 'teaching', 'sessions')
 
 def parse_file(path)
   raw = File.read(path, encoding: 'UTF-8')
@@ -112,6 +113,7 @@ end
 FileUtils.mkdir_p(SLIDE_PAGE_DIR)
 FileUtils.mkdir_p(MARP_DIR)
 FileUtils.mkdir_p(WORKSHEET_DIR)
+FileUtils.mkdir_p(SESSION_DIR)
 
 module_paths = Dir.glob(File.join(MODULE_DIR, 'module*.md')).sort
 count = 0
@@ -507,8 +509,191 @@ module_paths.each do |path|
     </div>
   MD
 
+
+  # ---- Ready-to-run session kit -------------------------------------------
+  # One page a facilitator opens ten minutes before walking in. Everything it
+  # shows already existed, scattered across the module page, the worksheet, the
+  # slide page and two deck artifacts in course/decks/marp/out/.
+  timing_rows =
+    if run_steps.empty?
+      "| 00:00-08:00 | Frame the capability target | Prior knowledge, not recap |\n" \
+      "| 08:00-20:00 | Model one worked example aloud | Narrate your own uncertainty |\n" \
+      "| 20:00-38:00 | Guided learner activity | Circulate; ask about evidence, not answers |\n" \
+      "| 38:00-50:00 | Debrief and misconception correction | Compare publicly |\n" \
+      "| 50:00-58:00 | Competency check | Individual, written |\n" \
+      "| 58:00-60:00 | Exit prompt | One thing still uncertain |"
+    else
+      run_steps.map do |r|
+        clean = r.gsub('**', '').strip.sub(/\A\d+\.\s+/, '')
+        time, _, rest = clean.partition(/\s*[|:—-]\s+/)
+        if rest.to_s.strip.empty? || !time.match?(/\d/)
+          "| | #{clean.gsub('|', '/')} | |"
+        else
+          "| #{time.strip} | #{rest.strip.gsub('|', '/')} | |"
+        end
+      end.join("\n")
+    end
+
+  misconception_rows =
+    if misconceptions.empty?
+      "- No misconception guardrails are defined for this module yet. Add them to the module page's Concept set as `- **Misconception guardrail:** <the belief>` and they will appear here."
+    else
+      misconceptions.map do |m|
+        t = m.gsub('**', '').sub(/\A[-*\d.]+\s*/, '')
+             .sub(/\AMisconception(\s+(guardrail|to\s+prevent|to\s+watch))?\s*:\s*/i, '').strip
+        t = t[0].upcase + t[1..].to_s unless t.empty?
+        "- **They may believe:** #{t}\n  - *Surface it by asking:* \"What would have to be true for that to hold? What would change your mind?\""
+      end.join("\n")
+    end
+
+  session_path = File.join(SESSION_DIR, "module#{num}.md")
+  File.write(session_path, <<~MD)
+    ---
+    layout: page
+    title: "Session Kit: #{title}"
+    description: "Everything needed to run Module #{num} as a taught session: prep, timing, materials, misconceptions, rubric."
+    permalink: /teaching/sessions/module#{num}/
+    slug: session-module#{num}
+    track: career-and-community
+    pathways:
+      - classroom delivery
+      - mentor support
+    ---
+
+    *Generated from `modules/module#{num}.md`. Edit the module page, not this file.*
+
+    ## At a glance
+
+    | | |
+    |---|---|
+    | **Duration** | #{duration.empty? ? '60 minutes' : duration} |
+    | **Capability target** | #{capability} |
+    | **Learners leave with** | #{outputs.empty? ? 'An evidence-backed artifact from the studio activity' : outputs.first.to_s.sub(/[.,]\z/, '')} |
+
+    ## Before you walk in
+
+    - [ ] You can state the capability target in one sentence without reading it.
+    - [ ] You have **one** worked example you will narrate, including where you are unsure.
+    - [ ] Data access works — accounts, viewer, notebook — **verified today, not last week**.
+    - [ ] The rubric is visible to learners before they start, not after.
+    - [ ] You have decided what "uncertain" earns, and you will say so out loud.
+    #{prereqs.empty? ? '' : "\nLearners should arrive having covered:\n\n" + prereqs.map { |p| "- #{p}" }.join("\n")}
+    #{preclass.empty? ? '' : "\nPre-class preparation set for learners:\n\n" + preclass.map { |p| "- #{p}" }.join("\n")}
+
+    ## Materials
+
+    <div class="resource-card">
+      <div class="resource-links">
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open deck (HTML)</a>
+        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.pptx' | relative_url }}">Download deck (.pptx)</a>
+        <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Learner worksheet</a>
+        <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>
+      </div>
+    </div>
+
+    ## Run of show
+
+    | Time | Segment | Your note |
+    |---|---|---|
+    #{timing_rows}
+
+    ## The activity
+
+    **Scenario:** #{scenario}
+
+    #{task_block}
+
+    **What learners hand in**
+
+    #{outputs_block}
+
+    ## Misconceptions to target
+
+    These are the errors this session exists to prevent. Surface them in the debrief
+    rather than pre-empting them in the lecture — a misconception a learner has
+    voiced is far easier to correct than one they are holding silently.
+
+    #{misconception_rows}
+
+    ## Naming the norm
+
+    Every session is a chance to make one piece of the hidden curriculum explicit.
+    Pick a moment where you would normally just *do* the professional thing, and say
+    out loud why you are doing it — then ask whether anyone was taught that.
+
+    For this session, the candidate is whichever norm the activity most depends on:
+    stating an assumption in the same sentence as the claim, recording the version a
+    number came from, or saying "uncertain" and having it count as a real answer.
+    See [the hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) for the
+    collected set and why naming them is a fairness intervention rather than etiquette.
+
+    ## Assessment
+
+    #{rubric_block}
+
+    **Grade the reasoning, not the answer.** A correct call with no evidence chain
+    should not outscore a well-reasoned incorrect one — and saying so publicly changes
+    behaviour within one session.
+
+    ## Exit prompt
+
+    #{prompt}
+
+    ## If this session goes wrong
+
+    - **Nobody talks in the debrief.** You asked "any questions?" Ask instead: "Which
+      cue would you drop first if the data got worse?"
+    - **Everyone finishes early.** They are pattern-matching, not judging. Give an
+      ambiguous case where the answer is "uncertain" and see what happens.
+    - **Nobody finishes.** The scaffolding came off too fast. Work the next case
+      together rather than pressing on.
+    - **A learner is silently lost.** The most likely cause is unstated vocabulary.
+      Point them at the [dictionary]({{ '/technical-training/dictionary/' | relative_url }}) and check back.
+
+    ---
+
+    *[All session kits]({{ '/teaching/sessions/' | relative_url }}) · [Facilitator guide]({{ '/teaching/facilitator-guide/' | relative_url }})*
+  MD
+
   count += 1
 end
+
+sessions_index = File.join(SESSION_DIR, 'index.md')
+File.write(sessions_index, <<~MD)
+  ---
+  layout: page
+  title: "Session Kits"
+  description: "One ready-to-run page per module: prep checklist, timing, materials, misconceptions, rubric."
+  permalink: /teaching/sessions/
+  slug: session-kits
+  track: career-and-community
+  pathways:
+    - classroom delivery
+    - mentor support
+  ---
+
+  Each kit is the single page to open ten minutes before walking in. Everything in it
+  already existed — capability target, run of show, worksheet, rubric, rendered deck —
+  but was spread across five locations. These assemble it.
+
+  Kits are generated from the module pages. To change one, edit
+  `modules/moduleNN.md` and re-run `scripts/generate_module_teaching_materials.rb`.
+
+  For the reasoning behind the session design — why half of contact time should be
+  learner judgement rather than explanation, how to differentiate across the learner
+  personas, and what to do when a session goes wrong — see the
+  [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
+
+  <div class="cards-grid">
+  {% assign kits = site.pages | where_exp: 'p', "p.path contains 'teaching/sessions/module'" | sort: 'path' %}
+  {% for p in kits %}
+    <article class="card">
+      <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title | remove: 'Session Kit: ' }}</a></h3>
+      <p class="card-description">{{ p.description }}</p>
+    </article>
+  {% endfor %}
+  </div>
+MD
 
 index_path = File.join(SLIDE_PAGE_DIR, 'index.md')
 File.write(index_path, <<~MD)
@@ -537,4 +722,4 @@ File.write(index_path, <<~MD)
   </div>
 MD
 
-puts "Generated teaching materials for #{count} modules."
+puts "Generated teaching materials and session kits for #{count} modules."

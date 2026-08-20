@@ -296,7 +296,8 @@ Before a session, confirm:
 <section class="section">
   <div class="resource-card">
     <div class="resource-links">
-      <a class="resource-link" href="{{ '/teaching/' | relative_url }}">Teaching Hub — module kits</a>
+      <a class="resource-link" href="{{ '/teaching/sessions/' | relative_url }}">Session kits — one page per session</a>
+      <a class="resource-link" href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>
       <a class="resource-link" href="{{ '/technical-training/' | relative_url }}">Technical course units</a>
       <a class="resource-link" href="{{ '/technical-training/slides/' | relative_url }}">Technical slide plans</a>
       <a class="resource-link" href="{{ '/modules/slides/' | relative_url }}">Module slide pages</a>

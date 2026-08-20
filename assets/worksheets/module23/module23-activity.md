@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries.
+Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two metres away, and you leave the session with at least two named follow-ups you initiated yourself.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -41,12 +41,12 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members.
+**Scenario:** You have one accepted poster slot and must communicate your connectomics result to mixed audience members. Two of the people who stop are specialists who will ask about segmentation quality; one is a program director who will ask what it means; one is a peer at your own stage who wants your code.
 
-1. Produce one abstract and one poster wireframe.
-2. Deliver a 90-second pitch.
-3. Respond to two audience questions.
-4. Draft one follow-up outreach message.
+1. Produce one abstract against the sentence budget and one poster wireframe tested at two metres.
+2. Deliver a 90-second pitch to a timer, twice, cutting on the second pass.
+3. Respond to two audience questions, including one about reconstruction quality.
+4. Draft one follow-up outreach message that sends something rather than asking for something.
 
 ### What you hand in
 
@@ -54,6 +54,7 @@ Keep these in view. At the end, answer each in one sentence.
 - Poster wireframe
 - Pitch script
 - Follow-up message template
+- A named target list of five people and one question for each
 
 ---
 
@@ -62,11 +63,13 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Distill project into one claim hierarchy.
-- [ ] Draft 250-word abstract and remove unsupported claims.
-- [ ] Build poster wireframe around three key evidence panels.
-- [ ] Rehearse 90-second and 3-minute versions.
-- [ ] Run critique for clarity, limitations, and professional interaction plan.
+- [ ] Distill the project into one claim hierarchy: one headline claim, at most two supporting claims, one limitation attached to each.
+- [ ] Draft the 250-word abstract against the sentence budget, then delete every sentence that does not help a reviewer judge credibility or significance.
+- [ ] Check the abstract names species, region, imaging modality, segmentation pipeline, version or materialization, proofreading state, and n. If any is missing, a reviewer will assume the worst case.
+- [ ] Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two metres.
+- [ ] Write and rehearse the 90-second and 3-minute versions. The 90-second version is not the 3-minute version spoken quickly; it is a different script with the background removed.
+- [ ] Prepare a follow-up template and a target list of five to eight people you want to talk to, with one specific question for each.
+- [ ] Run critique for clarity, limitations, and the professional interaction plan, and revise before the submission deadline rather than after acceptance.
 
 ---
 
@@ -98,9 +101,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Broad motivation cannot substitute for concrete results.
-- [ ] I did not assume: Visual density is not rigor.
-- [ ] I did not assume: "good science speaks for itself" without communication strategy.
+- [ ] I did not assume: A strong motivating paragraph can compensate for thin results.
+- [ ] I did not assume: Dense text signals that the work is thorough.
+- [ ] I did not assume: Good science speaks for itself and networking is optional decoration.
+- [ ] I did not assume: If the conversation went well, the other person will follow up.
 
 ---
 
@@ -122,9 +126,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**
-- **Strong performance**
-- **Common failure modes**
+- **Minimum pass:** abstract claims are evidence-grounded and name dataset, version, and n; poster layout surfaces core result and limitation; the pitch communicates method, result, and limit within time.
+- **Strong performance:** handles Q&A with precise uncertainty language, adapts to the audience in front of them without changing the evidentiary standard, and produces follow-ups that are specific, sent within days, and initiated rather than inherited from a supervisor.
+- **Common failure to flag:** overstuffed abstracts with missing quantitative anchors, posters organized by chronology instead of argument, and overconfident responses to unresolved technical questions. Also flag a learner whose entire target list consists of people their supervisor already knows.
 
 **My self-assessment:**
 
@@ -135,12 +139,7 @@ action rather than a general intention.
 
 ## Exit prompt
 
-Write a 5-sentence mini-abstract including:
-1. question,
-2. method,
-3. result,
-4. limitation,
-5. implication.
+Write a 5-sentence mini-abstract including question, method with dataset version, result with one number, limitation, and implication. Then count how many words went to the field and how many to your result; if the first number is larger, rewrite the opening sentence.
 
 **Your answer:**
 

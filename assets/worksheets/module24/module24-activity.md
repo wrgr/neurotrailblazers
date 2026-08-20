@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Produce a 12-month pathway plan (skills, applications, mentoring actions) with explicit fit criteria and decision checkpoints.
+Produce a 12-month pathway plan (skills, applications, mentoring actions) with explicit fit criteria and decision checkpoints. Operationally: you can name two or three realistic next steps and say what evidence each requires, you have written the actual outreach messages rather than planning to, and every deadline that gates a step is in a calendar with its lead time attached.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -41,12 +41,12 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics.
+**Scenario:** You are planning your next step (graduate school, research assistantship, or industry role) in connectomics. Use real targets, real names, and real deadlines; generic targets produce generic plans.
 
-1. Build a fit matrix for three options.
-2. Draft one mentor outreach message per option.
-3. Define a 90-day capability-building plan.
-4. Identify one hidden-curriculum risk and mitigation.
+1. Build a fit matrix for three options, including the reversibility and cost columns.
+2. Draft one mentor outreach message per option, each naming a specific piece of that person's work, linking one artifact, and asking one answerable question.
+3. Define a 90-day capability-building plan in which every gap closes into an artifact.
+4. Identify one hidden-curriculum risk and its mitigation, and one mentorship-map role you currently have nobody in.
 
 ### What you hand in
 
@@ -54,6 +54,7 @@ Keep these in view. At the end, answer each in one sentence.
 - Outreach draft set
 - 90-day action plan
 - Risk/mitigation note
+- Mentorship map with named gaps
 
 ---
 
@@ -62,11 +63,13 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Define target pathways (2-3 realistic options).
-- [ ] Create capability gap matrix (current evidence vs required evidence).
-- [ ] Build outreach plan (mentors, timelines, artifacts to share).
-- [ ] Draft application/interview narratives anchored in concrete work.
-- [ ] Review and iterate with mentor/peer feedback.
+- [ ] Define two or three realistic target pathways, each named specifically enough to have a deadline (not "graduate school" but "three neuroscience PhD programs with connectomics groups").
+- [ ] Build the capability gap matrix: rows are targets, columns are the capabilities each selects on, cells hold the artifact that demonstrates it or the word "gap".
+- [ ] Convert each gap into a 90-day action with an artifact as output, discarding gaps you cannot close in the time available rather than carrying them as anxiety.
+- [ ] Build the outreach plan: who, in what order, with what artifact attached, and by what date.
+- [ ] Draft application and interview narratives anchored in concrete work, using one project as the spine and naming what went wrong in it.
+- [ ] Run due diligence on each target by talking to current and former group members, using a fixed question set so answers are comparable.
+- [ ] Iterate with mentor and peer feedback, then set dated decision checkpoints at which you will choose rather than defer.
 
 ---
 
@@ -98,9 +101,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Prestige alone is not fit.
+- [ ] I did not assume: A program's prestige is a sufficient proxy for whether it fits you.
 - [ ] I did not assume: Publication volume alone predicts mentorship quality.
-- [ ] I did not assume: Lack of insider knowledge is not lack of ability.
+- [ ] I did not assume: Not knowing the unwritten rules means you are not cut out for this.
+- [ ] I did not assume: A career decision made now must be defended for the rest of your career.
+- [ ] I did not assume: A good supervisor makes other mentors unnecessary.
+- [ ] I did not assume: Asking for a letter is an imposition that should be kept as brief as possible.
 
 ---
 
@@ -122,9 +128,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**
-- **Strong performance**
-- **Common failure modes**
+- **Minimum pass:** pathway choices are justified by capability evidence; outreach messages are specific and professional; the plan includes concrete timelines and milestones with real deadlines attached.
+- **Strong performance:** incorporates mentorship and belonging considerations explicitly; anticipates barriers and states mitigations; uses reversibility and cost as explicit criteria; and produces at least one contact the learner initiated independently of their supervisor.
+- **Common failure to flag:** overgeneralized plans with no evidence of fit, outreach drafts that could be sent to any laboratory, and hidden-curriculum barriers named but not mitigated. Also flag plans in which every mentorship-map role is filled by the same person.
 
 **My self-assessment:**
 
@@ -135,10 +141,7 @@ action rather than a general intention.
 
 ## Exit prompt
 
-Draft one 5-sentence mentor outreach email including:
-1. alignment statement,
-2. one relevant artifact,
-3. one specific question.
+Draft one 5-sentence mentor outreach email with an alignment statement naming a specific piece of their work, one relevant artifact you can link, and one question answerable in a single sentence. Then check it against one test: could this email have been sent to anyone else? If yes, rewrite the first sentence.
 
 **Your answer:**
 

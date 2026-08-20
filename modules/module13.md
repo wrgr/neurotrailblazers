@@ -99,7 +99,7 @@ Connectomics is unusually leaky. Fragments of one neuron appear in many rows. Ne
 - **Misconception guardrail:** a 99% accurate classifier is a useful classifier.
 
 ### 5) Labels are a hypothesis, not ground truth
-- **Technical:** cell-type labels come from expert judgement, and experts disagree at rates that vary by type and by dataset. Features are computed on a segmentation that contains merge and split errors, so a fraction of your rows describe objects that do not exist. Measure label agreement on a re-annotated subset before treating disagreement between model and label as model error, and pin the segmentation version used to compute features — features from an unpinned segmentation are not reproducible.
+- **Technical:** cell-type labels come from expert judgment, and experts disagree at rates that vary by type and by dataset. Features are computed on a segmentation that contains merge and split errors, so a fraction of your rows describe objects that do not exist. Measure label agreement on a re-annotated subset before treating disagreement between model and label as model error, and pin the segmentation version used to compute features — features from an unpinned segmentation are not reproducible.
 - **Plain language:** your ceiling is set by how well two experts agree, not by 100%.
 - **Misconception guardrail:** the training labels are the truth the model is failing to reach.
 
@@ -109,7 +109,7 @@ Connectomics is unusually leaky. Fragments of one neuron appear in many rows. Ne
 |---|---|---|
 | Random row split | None | Optimistic by a wide and unknown margin; useful only as an upper bound |
 | Group by parent neuron | Fragments of one neuron on both sides | Fewer effective samples; requires reliable parent IDs at a pinned version |
-| Spatial block (e.g. 100 µm tiles) | Shared staining, alignment, local artifacts | Fewer, noisier folds; block size is a judgement call you must defend |
+| Spatial block (e.g. 100 µm tiles) | Shared staining, alignment, local artifacts | Fewer, noisier folds; block size is a judgment call you must defend |
 | By proofreading batch or annotator | Annotator style and QC-round provenance | May confound with region if batches were assigned region by region |
 | Held-out dataset or species | Domain shift | Smallest and hardest test; under-states in-domain performance |
 

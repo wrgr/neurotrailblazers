@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely, you should finish this module able to size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from the access pattern you actually have rather than from the format everyone else uses, predict which single query will dominate your compute bill, and pin every published number to a segmentation version that a stranger can re-query a year from now.
+Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -44,13 +44,13 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** Your team must deliver a weekly motif-analysis report from a connectomics store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and a cell-type annotation table for about 8,400 classified neurons. The volume is approximately 1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report must be regenerated every Monday and cited in a manuscript in preparation. Last week's report took nine hours and produced numbers that do not match the version from three weeks ago; nobody knows why.
+**Scenario:** Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week's run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.
 
-1. Propose a storage and index layout for the expected query patterns, stating chunk shape, sharding decision, and which products you would mirror locally with byte estimates for each.
-2. Write or outline the two queries that will dominate cost, estimate their runtime from a sampled measurement, and name the specific operation you expect to be the bottleneck.
-3. Define the minimum provenance fields for the weekly output, and state what happens operationally when one is missing.
-4. Diagnose the three-week discrepancy: list the candidate causes in the order you would check them, and say what evidence would distinguish them.
-5. Produce one optimization proposal with an expected speedup and its cost, and one reproducibility safeguard that a person could execute without your help.
+1. Propose a storage and index layout for the expected query patterns: chunk shape, sharding decision, and which products you mirror locally, with a byte estimate for each.
+2. Outline the two queries that will dominate cost, estimate runtime from a sampled measurement, and name the operation you expect to be the bottleneck.
+3. Define the minimum provenance fields for the weekly output and state what happens operationally when one is missing.
+4. Diagnose the three-week discrepancy: list candidate causes in the order you would check them and the evidence that distinguishes them.
+5. Produce one optimization proposal with an expected speedup and its cost, and one reproducibility safeguard someone else could execute without you.
 
 ### What you hand in
 

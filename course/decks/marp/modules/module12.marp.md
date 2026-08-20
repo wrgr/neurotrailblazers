@@ -34,13 +34,13 @@ Teaching Deck
 ---
 
 ## Capability Target
-Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely, you should finish this module able to size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from the access pattern you actually have rather than from the format everyone else uses, predict which single query will dominate your compute bill, and pin every published number to a segmentation version that a stranger can re-query a year from now.
+Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.
 
 ---
 
 ## Concept Focus
 ### 1) Storage layout is chosen by access pattern, not by format popularity
-- **Technical:** chunked array formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the smallest unit of I/O, so you always pay for the whole chunk even when you want one plane of it. Reading a single 512 x 512 pixel section-plane view touches 2 x 2 = 4 chunks at 256³ and 8 x 8 = 64 chunks at 64³ — but the byte cost runs the other way, because each 256³ chunk carries 16.8 million voxels of z-depth you did not ask for. The 256³ layout moves about 67 MB of decompressed data for that view; the 64³ layout moves about 17 MB. Anisotropic chunks such as 128 x 128 x 16 cut plane-oriented reads further and make z-oriented traversal worse. Typical EM compression ratios are 2-10x depending on codec; segmentation label volumes compress far better than raw images because they contain large uniform regions.
+- **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.
 - **Plain language:** the chunk is the smallest thing you can read, so shape it like the reads you will actually do.
 - **Misconception guardrail:** the format everyone else uses is automatically the right layout for your access pattern.
 
@@ -78,7 +78,7 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Studio Activity
-**Scenario:** Your team must deliver a weekly motif-analysis report from a connectomics store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and a cell-type annotation table for about 8,400 classified neurons. The volume is approximately 1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report must be regenerated every Monday and cited in a manuscript in preparation. Last week's report took nine hours and produced numbers that do not match the version from three weeks ago; nobody knows why.
+**Scenario:** Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week's run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.
 
 ---
 

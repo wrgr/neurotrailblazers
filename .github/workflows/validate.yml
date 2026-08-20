@@ -46,6 +46,14 @@ jobs:
       - name: Technical evidence validation
         run: ruby scripts/validate_technical_evidence.rb
 
+      # The journal paper hubs are hand-maintained markdown describing a data file, so
+      # they drift silently. They had drifted three ways at once: a "100+" total against
+      # 96 real entries, a documented schema naming two fields present on none of the
+      # 200 records, and unchecked per-dimension counts. Each gate here was verified by
+      # injecting a fault.
+      - name: Journal paper count and schema validation
+        run: ruby scripts/validate_paper_counts.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

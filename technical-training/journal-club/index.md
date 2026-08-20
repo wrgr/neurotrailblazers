@@ -19,7 +19,8 @@ content_type: core
     <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} papers</span>
     <span class="jc-hero-stat">{{ site.data.journal_papers.papers | map: 'dimension' | compact | uniq | size }} dimensions</span>
     <span class="jc-hero-stat">3 expertise levels</span>
-    <span class="jc-hero-stat">1986 &ndash; 2025</span>
+    {%- assign jc_years = site.data.journal_papers.papers | map: 'year' | compact | sort -%}
+    <span class="jc-hero-stat">{{ jc_years | first }} &ndash; {{ jc_years | last }}</span>
   </div>
 </section>
 

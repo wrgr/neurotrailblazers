@@ -260,7 +260,6 @@ papers:
   authors: Bollobás
   year: 1985
   journal: ''
-  doi: 'null'
   dimension: graph-analysis
   reading_phase: 1_foundations
   composite_score: 0.3384
@@ -1354,7 +1353,6 @@ papers:
   authors: Talairach, Tournoux
   year: 1988
   journal: ''
-  doi: 'null'
   dimension: neuroanatomy
   reading_phase: 1_foundations
   composite_score: 0.1583

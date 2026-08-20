@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits.
+Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits. Concretely: choose a split strategy from the leakage channels present in your data rather than from convention, pick metrics from the decision the model will support, quantify how much of your reported performance survives a harder split, and write a limitation statement specific enough that a reader knows which uses of your model you would refuse.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -20,6 +20,9 @@ Check that you have:
 
 - [ ] Basic scikit-learn workflow familiarity
 - [ ] Feature matrix handling in Python
+- [ ] Read [neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) so you know what the labels mean before you model them.
+- [ ] Bring a small labeled table of your own, or use the supplied fragment set.
+- [ ] Be ready to state, in one sentence, the decision your model would support.
 
 Bring one question you already have about this topic. Write it here so you can check
 at the end whether it was answered:
@@ -41,18 +44,21 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You need to classify neurite fragments into coarse categories for downstream proofreading prioritization.
+**Scenario:** You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.
 
-1. Propose feature set and leakage-safe split design.
-2. Train one baseline and one improved model (or pseudocode plan).
-3. Report two standard metrics and one biologically targeted metric.
-4. Draft a model limitation statement with non-supported use cases.
+1. Propose a feature set with a one-line rationale per feature, and flag any feature that could encode dataset identity.
+2. Design the split, naming the leakage channel each choice blocks and the cost you accept for it.
+3. Train one baseline and one improved model, or write the pseudocode plan if compute is unavailable.
+4. Report two standard metrics, one biologically targeted metric tied to the 500-segment review capacity, and per-class recall with prevalence.
+5. Sample 20 misclassified fragments, classify the failure reason by hand, and propose the one data improvement that would fix the largest group.
+6. Draft a model limitation statement naming at least three unsupported uses.
 
 ### What you hand in
 
-- Feature + split design sheet
-- Metric table with interpretation notes
-- Limitation statement
+- Feature and split design sheet with the leakage channel named for each split choice
+- Metric table including per-class recall, prevalence, and precision at *k* = 500
+- Error-analysis tally of 20 hand-classified failures
+- Limitation statement with supported and unsupported uses
 
 ---
 
@@ -61,11 +67,14 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Define task and biological decision context.
-- [ ] Construct feature set with rationale and preprocessing log.
-- [ ] Choose split strategy that blocks leakage pathways.
-- [ ] Train baseline + candidate models and compare error profiles.
-- [ ] Report metrics, limitations, and deployment constraints.
+- [ ] Write the biological decision the model will support, naming who acts on the output and what they do differently as a result.
+- [ ] Enumerate leakage channels present in your data — fragment duplication, spatial adjacency, annotator provenance, label circularity — and choose the split that blocks the strongest one.
+- [ ] Construct the feature set with a one-line rationale per feature, and record the segmentation version the features were computed from.
+- [ ] Fit all preprocessing (scaling, imputation, feature selection) inside the training fold only.
+- [ ] Train a trivial baseline first — majority class, or a single-feature threshold — and report it alongside every later model.
+- [ ] Evaluate with the metric that matches the decision from step 1, plus per-class recall and prevalence.
+- [ ] Run error analysis on the failures: sample 20-30 misclassified examples and classify the failure reason by hand.
+- [ ] Write the model card: intended use, unsupported uses, evaluation splits, metrics with intervals, and the domain in which the numbers hold.
 
 ---
 
@@ -99,7 +108,9 @@ them, or note where you nearly did:
 
 - [ ] I did not assume: Adding more features always improves science.
 - [ ] I did not assume: One summary metric is enough.
-- [ ] I did not assume: Random split always gives valid generalization estimates.
+- [ ] I did not assume: A random split always gives a valid generalization estimate.
+- [ ] I did not assume: A 99% accurate classifier is a useful classifier.
+- [ ] I did not assume: The training labels are the truth the model is failing to reach.
 
 ---
 

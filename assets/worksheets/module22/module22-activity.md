@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Deliver a 10-minute connectomics talk with evidence-linked claims, explicit uncertainty, and audience-appropriate language, then respond to questions without overclaiming.
+Deliver a 10-minute connectomics talk with evidence-linked claims, explicit uncertainty, and audience-appropriate language, then respond to questions without overclaiming. Operationally: every slide carries one claim and names the dataset version behind it, you can write down in advance the two questions you are most likely to be asked, and you have a rehearsed answer to each that ends in a next test rather than a defense.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -41,18 +41,19 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees).
+**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise: in a cortical EM volume, layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
 
-1. Create a 4-slide mini-talk from one figure/result.
-2. Deliver in 3 minutes.
-3. Answer two audience questions with evidence boundaries.
-4. Revise one slide and one spoken claim based on feedback.
+1. Create a 4-slide mini-talk with a provenance line on the method slide and a named uncertainty rung on the result slide.
+2. Deliver it in 3 minutes against a timer you can see.
+3. Answer two audience questions, naming the question type aloud before answering each.
+4. Revise one slide and one spoken claim from the feedback, recording what changed and why.
 
 ### What you hand in
 
 - 4-slide deck
 - Speaker notes with claim boundaries
 - Revision log after Q&A
+- Two prepared answers, each ending in a next test
 
 ---
 
@@ -61,11 +62,13 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Build claim tree (question -> claim -> evidence -> caveat).
-- [ ] Select minimal slide set that preserves inferential logic.
-- [ ] Rehearse with timed transitions and anticipated critiques.
-- [ ] Run peer critique focused on overclaiming and ambiguity.
-- [ ] Revise with explicit uncertainty statements.
+- [ ] Build the claim tree on paper: question at the root, two or three claims, one evidence item and one caveat under each, deleting any claim you cannot attach evidence to.
+- [ ] Write the time budget for your slot, then select the minimal slide set that preserves the inferential logic; every surviving slide must answer "which node of the claim tree is this?"
+- [ ] Draft the one-line provenance statement for the data slide: species and region, imaging modality and resolution, segmentation pipeline, proofreading or materialization version, and any exclusion criterion.
+- [ ] Rehearse against a timer with no audience and cut to the budget, then rehearse again with transitions spoken aloud, because the sentence carrying slide 4 into slide 5 is the one people improvise badly.
+- [ ] Run peer critique with one narrow brief: mark every sentence where the spoken claim is stronger than the slide's evidence.
+- [ ] Write the two most likely questions and a three-sentence answer to each, choosing the answer shape from the question-type taxonomy.
+- [ ] Revise with explicit uncertainty statements, checking the rung is identical in slide, speech, and prepared answer.
 
 ---
 
@@ -97,9 +100,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Storytelling does not replace evidence.
-- [ ] I did not assume: Removing caveats for speed is misleading.
-- [ ] I did not assume: Confident tone is not equivalent to strong evidence.
+- [ ] I did not assume: A compelling narrative arc can carry a claim the evidence does not support.
+- [ ] I did not assume: Caveats can be dropped for a general audience because they would not understand them anyway.
+- [ ] I did not assume: Answering confidently is what makes an answer credible.
+- [ ] I did not assume: Speaking faster is a legitimate way to fit more material into a fixed slot.
+- [ ] I did not assume: Hedging weakens a talk and should be minimized.
+- [ ] I did not assume: Every question in Q&A is an attack that must be rebutted.
 
 ---
 
@@ -121,9 +127,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**
-- **Strong performance**
-- **Common failure modes**
+- **Minimum pass:** claims are evidence-linked and caveats visible; language is audience-appropriate without technical distortion; Q&A responses include limits and follow-up tests; the deck names dataset and version.
+- **Strong performance:** anticipates likely critiques and addresses them proactively; balances accessibility with methodological precision; concedes the valid part of a challenge while defending the rest; keeps the same uncertainty rung in slide, speech, and answer.
+- **Common failure to flag:** overcompressed methods leading to overclaiming, jargon-heavy explanation with missing context, and defensive Q&A that asserts authority instead of citing evidence. Flag over-conceding too: abandoning a supported result under mild challenge is a calibration failure, not modesty.
 
 **My self-assessment:**
 
@@ -134,10 +140,7 @@ action rather than a general intention.
 
 ## Exit prompt
 
-Write your 60-second talk opener with:
-1. the core question,
-2. one evidence-backed finding,
-3. one explicit caveat.
+Write your 60-second talk opener with the core question, one evidence-backed finding, one explicit caveat, and one sentence pre-empting the challenge you most expect. Read it aloud against a timer; if it runs past 60 seconds, cut the background sentence first.
 
 **Your answer:**
 

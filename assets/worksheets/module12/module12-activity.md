@@ -8,7 +8,7 @@
 
 ## Capability target
 
-Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture.
+Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely, you should finish this module able to size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from the access pattern you actually have rather than from the format everyone else uses, predict which single query will dominate your compute bill, and pin every published number to a segmentation version that a stranger can re-query a year from now.
 
 You are done when you can demonstrate this, not when you have filled in every box below.
 
@@ -20,6 +20,9 @@ Check that you have:
 
 - [ ] Basic SQL/Python dataframe proficiency
 - [ ] Familiarity with EM volume structure
+- [ ] Read the [data formats]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) library pages.
+- [ ] Bring one query you have actually run, with its runtime and its data source.
+- [ ] Have a calculator or notebook open; the first exercise is arithmetic, not code.
 
 Bring one question you already have about this topic. Write it here so you can check
 at the end whether it was answered:
@@ -41,18 +44,20 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** Your team must deliver a weekly motif-analysis report from a multi-terabyte connectomics store.
+**Scenario:** Your team must deliver a weekly motif-analysis report from a connectomics store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and a cell-type annotation table for about 8,400 classified neurons. The volume is approximately 1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report must be regenerated every Monday and cited in a manuscript in preparation. Last week's report took nine hours and produced numbers that do not match the version from three weeks ago; nobody knows why.
 
-1. Propose storage/index layout for expected query patterns.
-2. Write or outline two critical queries and estimate performance risk.
-3. Define minimum provenance fields for outputs.
-4. Produce one optimization proposal and one reproducibility safeguard.
+1. Propose a storage and index layout for the expected query patterns, stating chunk shape, sharding decision, and which products you would mirror locally with byte estimates for each.
+2. Write or outline the two queries that will dominate cost, estimate their runtime from a sampled measurement, and name the specific operation you expect to be the bottleneck.
+3. Define the minimum provenance fields for the weekly output, and state what happens operationally when one is missing.
+4. Diagnose the three-week discrepancy: list the candidate causes in the order you would check them, and say what evidence would distinguish them.
+5. Produce one optimization proposal with an expected speedup and its cost, and one reproducibility safeguard that a person could execute without your help.
 
 ### What you hand in
 
-- Query architecture sketch
-- Baseline vs optimized query plan
-- Provenance checklist
+- Query architecture sketch with byte and object-count estimates
+- Baseline vs optimized query plan with measured or sampled runtimes
+- Provenance checklist with a stated failure action for each field
+- A one-paragraph diagnosis of the version discrepancy naming the most likely cause first
 
 ---
 
@@ -61,11 +66,13 @@ Keep these in view. At the end, answer each in one sentence.
 Tick as you go. If you skip a step, write why — a skipped step with a stated reason
 is a decision; a skipped step without one is a gap.
 
-- [ ] Define analysis question and required data granularity.
-- [ ] Select storage/index strategy aligned to access pattern.
-- [ ] Prototype baseline query and profile bottlenecks.
-- [ ] Add provenance logging and version controls.
-- [ ] Validate reproducibility and publish query package.
+- [ ] Write the analysis question as a sentence naming the table, the filter, and the unit of the answer — for example, "count synapses between layer 2/3 pyramidal cells and basket cells, per neuron pair, at cleft score above threshold."
+- [ ] Estimate the working set: how many rows, how many objects, how many bytes must move, and whether that fits in memory on the machine you have.
+- [ ] Choose storage and index strategy from the access pattern — chunk shape for volumetric reads, sharding if object counts exceed roughly 10^6, a pre-joined extract if the same join recurs.
+- [ ] Pin the segmentation: record the materialization version or timestamp, and refuse to proceed if it is unknown.
+- [ ] Prototype on a 0.1% sample, profile, and extrapolate the full runtime before running it once at full scale.
+- [ ] Add provenance fields to the output artifact itself, not to the surrounding notebook.
+- [ ] Validate reproducibility by having a second person re-run the query package from the recorded version and compare row counts and summary statistics.
 
 ---
 
@@ -97,9 +104,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Compute scale alone does not solve poor data design.
-- [ ] I did not assume: "it runs eventually" is not acceptable for iterative science.
-- [ ] I did not assume: Notebook history alone is insufficient provenance.
+- [ ] I did not assume: The format everyone else uses is automatically the right layout for your access pattern.
+- [ ] I did not assume: Storage cost is the storage line on the invoice.
+- [ ] I did not assume: The dataset size is the petabyte figure quoted for the raw imagery.
+- [ ] I did not assume: An object ID refers to the same neuron next month.
+- [ ] I did not assume: "it runs eventually" is acceptable for iterative science.
+- [ ] I did not assume: Notebook history is sufficient provenance.
 
 ---
 

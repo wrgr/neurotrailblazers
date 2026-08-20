@@ -24,6 +24,8 @@ pathways:
     <p><strong>Fadel alignment:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
   </section>
 
+  {% include ui/track-sequence.html track=track %}
+
   <section class="section">
     <h2>Modules in This Track</h2>
     <div class="cards-grid">

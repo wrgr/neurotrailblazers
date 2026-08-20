@@ -274,3 +274,20 @@ expertise_levels:
   - id: advanced
     label: "Advanced"
     description: "Active researcher or advanced trainee; interested in methodological details and limitations."
+
+# Display labels for the journal-club `dimension` values. The dropdown on
+# /technical-training/journal-club/ is generated from the corpus, so a dimension
+# missing from this map still appears -- it just falls back to a de-slugified
+# label. Add an entry here when the fallback reads badly.
+dimension_labels:
+  cell-types: "Cell Types & Classification"
+  connectomics: "Connectomics & Circuit Analysis"
+  graph-analysis: "Graph Analysis & Network Science"
+  image-acquisition: "Imaging & Acquisition"
+  infrastructure: "Data Infrastructure & Pipelines"
+  methods-general: "Methods (General)"
+  neuroai: "NeuroAI & Modeling"
+  neuroanatomy: "Neuroanatomy & Ultrastructure"
+  proofreading: "Proofreading & Quality Control"
+  review: "Reviews & Perspectives"
+  segmentation: "Segmentation & Computer Vision"

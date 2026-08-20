@@ -30,17 +30,26 @@ and finishing here does not put you further along one.**
 
 ## Before you start
 
-| | |
-|---|---|
-| **Time** | 20–30 hours, workable in evenings over a few weeks |
-| **Hard prerequisite** | You can tell an axon from a dendrite from a glial process in EM, with a confidence tier attached. If you cannot, do [Units 05–07]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) first — proofreading without that is guessing at speed |
-| **Soft prerequisite** | Comfort navigating a volume in Neuroglancer. Half an hour with the [dataset access guide]({{ '/datasets/access/' | relative_url }}) covers it |
-| **Not required** | Python, a lab affiliation, statistics beyond arithmetic, or any other track |
-| **Ends with** | A proofreading plan and a release memo that a lab can read and disagree with |
+<dl class="spec-strip">
+  <dt>Time</dt>
+  <dd>20&ndash;30 hours, workable in evenings over a few weeks.</dd>
+  <dt>Hard prerequisite</dt>
+  <dd>You can tell an axon from a dendrite from a glial process in EM, with a confidence tier attached. If you cannot, do <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05&ndash;07</a> first &mdash; proofreading without that is guessing at speed.</dd>
+  <dt>Soft prerequisite</dt>
+  <dd>Comfort navigating a volume in Neuroglancer. Half an hour with the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a> covers it.</dd>
+  <dt>Not required</dt>
+  <dd>Python, a lab affiliation, statistics beyond arithmetic, or any other track.</dd>
+  <dt>Ends with</dt>
+  <dd>A proofreading plan and a release memo that a lab can read and disagree with.</dd>
+</dl>
 
 ## The sequence
 
-### 1. Learn what can go wrong, and what each failure costs — 4 hours
+<ol class="quest-steps">
+
+<li class="quest-step" markdown="1">
+
+### Learn what can go wrong, and what each failure costs <span class="quest-hours">4 hours</span>
 
 Read [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }})
 in full, then [Unit 08 §2]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
@@ -51,10 +60,16 @@ that do. These are not equally bad, and which is worse depends entirely on what 
 claiming. A merge that creates a false reciprocal pair destroys a paper about reciprocal
 connectivity. A split in the same volume might cost nothing.
 
+<div class="quest-outcome" markdown="1">
 **You finish with:** the ability to look at a flagged error and say what it would do to a
 named scientific claim — not "it's bad," but "it would inflate my reciprocal count."
+</div>
 
-### 2. Learn what the metrics are blind to — 5 hours
+</li>
+
+<li class="quest-step" markdown="1">
+
+### Learn what the metrics are blind to <span class="quest-hours">5 hours</span>
 
 Read [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}),
 then [Unit 08 §3]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
@@ -65,8 +80,9 @@ to something. Learn the blind spots in the same pass as the definitions, because
 characteristic failure here is optimising a dashboard number while the thing your paper
 reports gets worse.
 
+<div class="quest-outcome" markdown="1">
 **You finish with:** for each metric, one sentence naming what it cannot see.
-
+</div>
 **Check yourself before moving on:**
 
 <details markdown="1">
@@ -83,7 +99,11 @@ bias to correct. ERL is a skeleton-path metric and rewards exactly the correctio
 extend paths, which is why it should never be read alone.
 </details>
 
-### 3. Learn the strategies, and when each is wrong — 4 hours
+</li>
+
+<li class="quest-step" markdown="1">
+
+### Learn the strategies, and when each is wrong <span class="quest-hours">4 hours</span>
 
 Read [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}).
 
@@ -92,10 +112,16 @@ Section 7 — *when to stop* — is the one to read twice. A stopping rule someo
 apply is the difference between a proofreading effort and an open-ended one, and almost
 nobody writes theirs down.
 
+<div class="quest-outcome" markdown="1">
 **You finish with:** a defensible answer to "why this strategy for this question," and a
 stopping rule stated as a condition rather than as a feeling.
+</div>
 
-### 4. Learn the tools you would actually use — 3 hours
+</li>
+
+<li class="quest-step" markdown="1">
+
+### Learn the tools you would actually use <span class="quest-hours">3 hours</span>
 
 Read [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}),
 then open a real volume and try the edit operations.
@@ -105,10 +131,16 @@ understand versioning and materialization well enough that you can say which seg
 version your corrections apply to — because an uncited version makes a correction log
 worthless to anyone else.
 
+<div class="quest-outcome" markdown="1">
 **You finish with:** a scratch volume you have made at least one edit in, and the version
 string written down.
+</div>
 
-### 5. Work the scenarios — 4 hours
+</li>
+
+<li class="quest-step" markdown="1">
+
+### Work the scenarios <span class="quest-hours">4 hours</span>
 
 Do all five in [Worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}):
 merge at a blood vessel, split through low-contrast sections, false autapse from a merge,
@@ -118,16 +150,26 @@ Attempt each before reading its resolution. Scenario 5 — disagreement — is t
 skip and the one that matters most in a real lab, because it is where you find out whether
 your confidence carries information or is just volume.
 
+<div class="quest-outcome" markdown="1">
 **You finish with:** your own call on each scenario, and a written note wherever yours
 differed from the worked answer and why.
+</div>
 
-### 6. Produce the artifact — 6–8 hours
+</li>
+
+<li class="quest-step" markdown="1">
+
+### Produce the artifact <span class="quest-hours">6–8 hours</span>
 
 Do the [Unit 08 lab]({{ '/technical-training/08-segmentation-and-proofreading/#lab-proofreading-plan-with-a-defended-budget-2-hours' | relative_url }})
 and the [Module 07 release-decision activity]({{ '/modules/module07/' | relative_url }}),
 on a real public volume rather than a hypothetical one.
 
 This is the part that is worth something outside this site. See below.
+
+</li>
+
+</ol>
 
 ## The artifact
 
@@ -193,22 +235,22 @@ stronger work than a go call with none.
 
 ## Where this connects
 
-<div class="cards-grid cards-grid-wide">
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a></h3>
-    <p class="card-description">The same material as a taught unit inside Core Concepts &amp; Methods, with the lab this side quest borrows.</p>
+<div class="arch-grid">
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <h3 class="arch-title"><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a></h3>
+    <p class="arch-body">The same material as a taught unit inside Core Concepts &amp; Methods, with the lab this side quest borrows.</p>
   </article>
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/modules/module07/' | relative_url }}">Module 07</a></h3>
-    <p class="card-description">The release-decision simulation, with a rubric. Has a <a href="{{ '/teaching/sessions/module07/' | relative_url }}">session kit</a> if you are running this for a group.</p>
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <h3 class="arch-title"><a href="{{ '/modules/module07/' | relative_url }}">Module 07</a></h3>
+    <p class="arch-body">The release-decision simulation, with a rubric. Has a <a href="{{ '/teaching/sessions/module07/' | relative_url }}">session kit</a> if you are running this for a group.</p>
   </article>
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/tools/connectome-quality/' | relative_url }}">Connectome Quality</a></h3>
-    <p class="card-description">The quality-checking tool page, with the criteria this side quest's metrics stage assumes.</p>
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <h3 class="arch-title"><a href="{{ '/tools/connectome-quality/' | relative_url }}">Connectome Quality</a></h3>
+    <p class="arch-body">The quality-checking tool page, with the criteria this side quest's metrics stage assumes.</p>
   </article>
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/content-library/journal-papers/' | relative_url }}">The literature</a></h3>
-    <p class="card-description">Proofreading and QA papers with what each established and what it did not, in the journal paper collection.</p>
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <h3 class="arch-title"><a href="{{ '/content-library/journal-papers/' | relative_url }}">The literature</a></h3>
+    <p class="arch-body">Proofreading and QA papers with what each established and what it did not, in the journal paper collection.</p>
   </article>
 </div>
 

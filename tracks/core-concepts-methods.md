@@ -32,15 +32,15 @@ content_type: navigation
 
   <section class="section">
     <h2>Modules in This Track</h2>
-    <div class="cards-grid cards-grid-wide">
+    <div class="arch-grid">
       {% for num in track.module_numbers %}
         {% assign mod = site.data.modules | where: 'number', num | first %}
         {% if mod %}
           {% if num < 10 %}{% assign numpad = '0' | append: num %}{% else %}{% assign numpad = num | append: '' %}{% endif %}
-          <article class="card">
-            <p class="card-meta">{{ mod.stage }}</p>
-            <h3 class="card-title"><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}">{{ numpad }}. {{ mod.title }}</a></h3>
-            <p class="card-description">{{ mod.description }}</p>
+          <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+            <p class="arch-meta"><span class="pill pill-layer">{{ mod.stage | downcase }}</span></p>
+            <h3 class="arch-title"><a href="{{ '/modules/module' | append: numpad | append: '/' | relative_url }}">{{ numpad }}. {{ mod.title }}</a></h3>
+            <p class="arch-body">{{ mod.description }}</p>
           </article>
         {% endif %}
       {% endfor %}
@@ -49,11 +49,11 @@ content_type: navigation
 
   <section class="section">
     <h2>Resources</h2>
-    <div class="cards-grid cards-grid-wide">
+    <div class="arch-grid">
       {% for item in track.resources %}
-      <article class="card">
-        <h3 class="card-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        <p class="card-description">{{ item.summary }}</p>
+      <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+        <h3 class="arch-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p class="arch-body">{{ item.summary }}</p>
       </article>
       {% endfor %}
     </div>

@@ -33,30 +33,43 @@ use_layout_hero: false
   </section>
 
   <section class="section">
-    <h2>Axis 1: topic</h2>
-    <div class="cards-grid cards-grid-wide">
+    <div class="axis-head">
+      <span class="axis-eyebrow">Axis 1</span>
+      <h2>Topic &mdash; what you are learning</h2>
+      <p class="axis-lede">Three tracks, aligned to the Fadel dimensions. Most people should start with Core Concepts &amp; Methods and layer the others in as their practice develops.</p>
+    </div>
+    <div class="arch-grid">
       {% for track in site.data.track_catalog.tracks %}
-      <article class="card">
-        <h3 class="card-title"><a href="{{ '/tracks/' | append: track.slug | append: '/' | relative_url }}">{{ track.title }}</a></h3>
-        <p class="card-meta">{{ track.fadel_alignment | join: ' + ' }}</p>
-        <p class="card-description">{{ track.description }}</p>
-        <p><small><strong>Scope:</strong> {{ track.module_numbers | size }} modules &middot; {{ track.time_estimate }}</small></p>
-        <p><small><strong>Starting point:</strong> {{ track.entry_requirement }}</small></p>
+      <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+        <h3 class="arch-title"><a href="{{ '/tracks/' | append: track.slug | append: '/' | relative_url }}">{{ track.title }}</a></h3>
+        <p class="arch-meta">
+          <span class="pill pill-layer">{{ track.fadel_alignment | join: ' + ' | downcase }}</span>
+          <span class="pill pill-plain">{{ track.module_numbers | size }} modules</span>
+        </p>
+        <p class="arch-body">{{ track.description }}</p>
+        <p class="arch-body"><small><strong>Time:</strong> {{ track.time_estimate }}</small></p>
+        <p class="arch-note"><strong>Starting point:</strong> {{ track.entry_requirement }}</p>
       </article>
       {% endfor %}
     </div>
   </section>
 
   <section class="section">
-    <h2>Axis 2: mode of use</h2>
-    <p>The same track is a different thing depending on the situation you are in. Two modes exist today; the third is declared because the gap is real, not because it is built.</p>
+    <div class="axis-head">
+      <span class="axis-eyebrow">Axis 2</span>
+      <h2>Mode of use &mdash; how you are using it</h2>
+      <p class="axis-lede">The same track is a different thing depending on the situation you are in. Two modes exist today; the third is declared because the gap is real, not because it is built.</p>
+    </div>
     {% include ui/mode-picker.html %}
     <p class="mt-1"><a href="{{ '/modes/' | relative_url }}">What each mode assumes, gives, and does not give &rarr;</a></p>
   </section>
 
   <section class="section">
-    <h2>What the tracks draw on</h2>
-    <p>Every track routes through the same reference layer. If a track's sequence does not suit you, going straight to the core is a legitimate way to use this site.</p>
+    <div class="axis-head">
+      <span class="axis-eyebrow">Underneath both axes</span>
+      <h2>The core they draw on</h2>
+      <p class="axis-lede">Every track routes through the same reference layer. If a track's sequence does not suit you, going straight to the core is a legitimate way to use this site.</p>
+    </div>
     {% include ui/core-surfaces.html compact=true %}
     <p class="mt-1"><a href="{{ '/core/' | relative_url }}">How the core and the tracks fit together &rarr;</a></p>
   </section>

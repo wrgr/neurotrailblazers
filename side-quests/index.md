@@ -30,20 +30,20 @@ for something you might reasonably spend a month on and never touch the rest.
 Two. One is built; the other is named because the gap is real, not because it is
 ready. Naming a category and then padding it would defeat the point of having one.
 
-<div class="cards-grid cards-grid-wide">
-  <article class="card">
-    <div class="card-icon">&#128295;</div>
-    <h3 class="card-title"><a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading</a></h3>
-    <p class="card-meta">~20&ndash;30 hours &middot; Available</p>
-    <p class="card-description">Correcting automated reconstruction errors, treated properly: as an allocation problem under a fixed budget rather than as cleanup that ends when the data looks right. Around 17,000 words of reference material, a full technical unit, five worked scenarios, and a portfolio artifact a lab can read.</p>
-    <div class="mt-1">
+<div class="arch-grid">
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <span class="arch-chip" aria-hidden="true">&#128295;</span>
+    <h3 class="arch-title"><a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading</a></h3>
+    <p class="arch-meta"><span class="pill pill-status is-available">Available</span><span class="pill pill-plain">20&ndash;30 hours</span></p>
+    <p class="arch-body">Correcting automated reconstruction errors, treated properly: as an allocation problem under a fixed budget rather than as cleanup that ends when the data looks right. Around 17,000 words of reference material, a full technical unit, five worked scenarios, and a portfolio artifact a lab can read.</p>
+    <div class="arch-actions">
       <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-primary">Open the side quest</a>
     </div>
   </article>
-  <article class="card card-muted">
-    <div class="card-icon">&#128064;</div>
-    <h3 class="card-title">Perceptual calibration</h3>
-    <p class="card-meta">Not built yet</p>
-    <p class="card-description">A drill on native-resolution EM crops with labels derived from released segmentations, scoring into a confusion matrix and reporting accuracy within your own high-confidence calls. <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05</a>&ndash;<a href="{{ '/technical-training/07-glia/' | relative_url }}">07</a> describe how to build one and argue for why it matters; the corpus does not exist. Listed here so the gap is visible.</p>
+  <article class="arch-card is-planned">
+    <span class="arch-chip" aria-hidden="true">&#128064;</span>
+    <h3 class="arch-title">Perceptual calibration</h3>
+    <p class="arch-meta"><span class="pill pill-status is-planned">Not built yet</span></p>
+    <p class="arch-body">A drill on native-resolution EM crops with labels derived from released segmentations, scoring into a confusion matrix and reporting accuracy within your own high-confidence calls. <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05</a>&ndash;<a href="{{ '/technical-training/07-glia/' | relative_url }}">07</a> describe how to build one and argue for why it matters; the corpus does not exist. Listed here so the gap is visible.</p>
   </article>
 </div>

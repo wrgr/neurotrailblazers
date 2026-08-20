@@ -35,69 +35,7 @@ each.
 
 {% include ui/mode-picker.html %}
 
----
-
-{% for m in site.data.modes.modes %}
-## {{ m.icon }} {{ m.title }} {#{{ m.slug }}}
-
-{% if m.status == 'available' %}
-**Status: available.** {{ m.tagline }}
-{% else %}
-**Status: in development. This mode does not exist yet.** {{ m.tagline }}
-{% endif %}
-
-{{ m.description }}
-
-**Who it is for:** {{ m.audience }}
-
-{% if m.status == 'available' %}
-### How it works
-
-{% for step in m.how_it_works %}1. {{ step }}
-{% endfor %}
-
-| | |
-|---|---|
-| **What you need** | {{ m.what_you_need }} |
-| **Assessment** | {{ m.assessment }} |
-
-### What this mode does not give you
-
-{% for l in m.honest_limits %}- {{ l }}
-{% endfor %}
-
-{% if m.mitigations and m.mitigations.size > 0 %}
-### What to do about that
-
-{% for x in m.mitigations %}- {{ x }}
-{% endfor %}
-{% endif %}
-
-<div class="cta-buttons">
-  <a href="{{ m.start.url | relative_url }}" class="btn btn-primary">{{ m.start.label }}</a>
-</div>
-
-{% else %}
-
-### Why it is listed here anyway
-
-{% for l in m.honest_limits %}- {{ l }}
-{% endfor %}
-
-### What it would take
-
-{% for d in m.planned_dependencies %}
-**{{ d.title }}.** {{ d.detail }}
-{% endfor %}
-
-<div class="cta-buttons">
-  <a href="{{ m.start.url | relative_url }}" class="btn btn-secondary">{{ m.start.label }}</a>
-</div>
-
-{% endif %}
-
----
-{% endfor %}
+{% for m in site.data.modes.modes %}{% include ui/mode-panel.html mode=m %}{% endfor %}
 
 ## Choosing
 

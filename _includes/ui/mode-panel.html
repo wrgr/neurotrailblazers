@@ -1,0 +1,88 @@
+{% comment %}
+  Full detail panel for one mode from _data/modes.yml.
+  Available and in-development modes render different bodies: an available mode
+  shows how it works and what it costs you; a planned one shows why it is
+  listed at all and what it would take. Neither is dressed up as the other.
+  Usage: {% include ui/mode-panel.html mode=m %}
+{% endcomment %}
+{% assign m = include.mode %}
+{% assign live = false %}{% if m.status == 'available' %}{% assign live = true %}{% endif %}
+<section class="mode-panel{% unless live %} is-planned{% endunless %}" id="{{ m.slug }}">
+  <div class="mode-panel-head">
+    <span class="mode-panel-icon" aria-hidden="true">{{ m.icon }}</span>
+    <h2>{{ m.title }}</h2>
+    {% if live %}
+      <span class="pill pill-status is-available">Available</span>
+    {% else %}
+      <span class="pill pill-status is-planned">In development &mdash; not built</span>
+    {% endif %}
+  </div>
+
+  <p class="mode-tagline">{{ m.tagline }}</p>
+  <p>{{ m.description }}</p>
+
+  {% if live %}
+    <h3>How it works</h3>
+    <ol class="mode-steps">
+      {% for step in m.how_it_works %}<li>{{ step }}</li>{% endfor %}
+    </ol>
+
+    <dl class="mode-facts">
+      <div>
+        <dt>Who it is for</dt>
+        <dd>{{ m.audience }}</dd>
+      </div>
+      <div>
+        <dt>What you need</dt>
+        <dd>{{ m.what_you_need }}</dd>
+      </div>
+      <div>
+        <dt>Assessment</dt>
+        <dd>{{ m.assessment }}</dd>
+      </div>
+    </dl>
+
+    <div class="mode-columns">
+      <div class="mode-col mode-col-limits">
+        <h4>What this mode does not give you</h4>
+        <ul>{% for l in m.honest_limits %}<li>{{ l }}</li>{% endfor %}</ul>
+      </div>
+      {% if m.mitigations and m.mitigations.size > 0 %}
+      <div class="mode-col mode-col-fixes">
+        <h4>What to do about that</h4>
+        <ul>{% for x in m.mitigations %}<li>{{ x }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="arch-actions">
+      <a href="{{ m.start.url | relative_url }}" class="btn btn-primary">{{ m.start.label }}</a>
+    </div>
+  {% else %}
+    <dl class="mode-facts">
+      <div>
+        <dt>Who it would be for</dt>
+        <dd>{{ m.audience }}</dd>
+      </div>
+    </dl>
+
+    <div class="arch-callout">
+      <h3>Why it is listed here anyway</h3>
+      <ul class="list-tight">{% for l in m.honest_limits %}<li>{{ l }}</li>{% endfor %}</ul>
+    </div>
+
+    <h3>What it would take</h3>
+    <div class="arch-grid">
+      {% for d in m.planned_dependencies %}
+      <article class="arch-card is-planned">
+        <h3 class="arch-title">{{ d.title }}</h3>
+        <p class="arch-body">{{ d.detail }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="arch-actions">
+      <a href="{{ m.start.url | relative_url }}" class="btn btn-secondary">{{ m.start.label }}</a>
+    </div>
+  {% endif %}
+</section>

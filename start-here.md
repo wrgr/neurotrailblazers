@@ -27,36 +27,45 @@ content_type: navigation
         <h2>Two questions, not one</h2>
         <p>Getting oriented here means answering two separate questions, and most people only think to ask the first. <strong>What</strong> you are learning is the track. <strong>How</strong> you are using it &mdash; alone, in a session someone is running, or inside a research group &mdash; is the mode. They are independent, and the second one changes what you should be reading as much as the first does.</p>
 
-        <h3>1. How are you using this?</h3>
+        <div class="axis-head">
+          <span class="axis-eyebrow">Question 1</span>
+          <h3>How are you using this?</h3>
+        </div>
         {% include ui/mode-picker.html %}
         <p class="mt-1"><a href="{{ '/modes/' | relative_url }}">What each mode assumes, gives, and does not give &rarr;</a></p>
 
-        <h3>2. What are you learning?</h3>
-        <div class="cards-grid cards-grid-wide">
-            <div class="card">
-                <div class="card-icon">&#129504;</div>
-                <h3 class="card-title">Core Concepts &amp; Methods</h3>
-                <p class="card-description">Build technical fluency in connectomics from motivation and imaging through analysis methods. The default answer if you are new, whatever your career stage.</p>
-                <div class="mt-1">
+        <div class="axis-head">
+          <span class="axis-eyebrow">Question 2</span>
+          <h3>What are you learning?</h3>
+        </div>
+        <div class="arch-grid">
+            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+                <span class="arch-chip" aria-hidden="true">&#129504;</span>
+                <h3 class="arch-title">Core Concepts &amp; Methods</h3>
+                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
+                <p class="arch-body">Build technical fluency in connectomics from motivation and imaging through analysis methods. The default answer if you are new, whatever your career stage.</p>
+                <div class="arch-actions">
                     <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Track</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-icon">&#128736;</div>
-                <h3 class="card-title">Research in Action</h3>
-                <p class="card-description">Apply methods through workflows, quality control, tools, and research execution practice. Works best alongside a live project rather than instead of one.</p>
-                <div class="mt-1">
+            </article>
+            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+                <span class="arch-chip" aria-hidden="true">&#128736;</span>
+                <h3 class="arch-title">Research in Action</h3>
+                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
+                <p class="arch-body">Apply methods through workflows, quality control, tools, and research execution practice. Works best alongside a live project rather than instead of one.</p>
+                <div class="arch-actions">
                     <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Practice Track</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-icon">&#129309;</div>
-                <h3 class="card-title">Career &amp; Community</h3>
-                <p class="card-description">Navigate mentorship, the hidden curriculum, and professional growth. Relevant from week one, not only at the end.</p>
-                <div class="mt-1">
+            </article>
+            <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
+                <span class="arch-chip" aria-hidden="true">&#129309;</span>
+                <h3 class="arch-title">Career &amp; Community</h3>
+                <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
+                <p class="arch-body">Navigate mentorship, the hidden curriculum, and professional growth. Relevant from week one, not only at the end.</p>
+                <div class="arch-actions">
                     <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Community Track</a>
                 </div>
-            </div>
+            </article>
         </div>
 
         <h3>Or neither</h3>

@@ -15,18 +15,24 @@ pathways:
 
 This site has two layers, and confusing them is the fastest way to get lost in it.
 
-**The core is reference.** Six bodies of material, written to be looked things up
-in: definitions, worked methods, papers with the argument stated, the norms nobody
-writes down. It has no order. You are not meant to finish it, and a page that says
-"next" is a page that has drifted out of the core.
+<ul class="layer-legend">
+  <li style="--accent: var(--layer-core);">
+    <span class="layer-name">Core &mdash; reference</span>
+    Six bodies of material, written to be looked things up in: definitions, worked methods, papers with the argument stated, the norms nobody writes down. No order. You are not meant to finish it, and a page that says &ldquo;next&rdquo; is a page that has drifted out of the core.
+  </li>
+  <li style="--accent: var(--layer-path);">
+    <span class="layer-name">Path &mdash; the tracks</span>
+    Each track selects from the core, puts it in an order, and adds labs that produce something. Three of them, split by topic. A track is finishable; the core is not.
+  </li>
+  <li style="--accent: var(--layer-delivery);">
+    <span class="layer-name">Delivery &mdash; running it</span>
+    Session kits, decks and worksheets, generated from the module pages. For whoever is running a session, not for whoever is learning. Ignorable if you are working alone.
+  </li>
+</ul>
 
-**Tracks are paths through the core.** Each one selects from this material, puts it
-in an order, and adds labs that produce something. Three of them exist, split by
-topic. A track is finishable; the core is not.
-
-**Modes are how you walk a track** &mdash; alone, in a hosted session, or (eventually)
-inside a research programme. The mode axis is independent of the topic axis: any
-track can be worked in any available mode.
+**Modes cut across all three** &mdash; you can walk a track alone, in a hosted session,
+or (eventually) inside a research programme. The mode axis is independent of the
+topic axis: any track can be worked in any available mode.
 
 So: *what* you are learning is the track, *how* you are using it is the mode, and
 *what it is built out of* is this page.
@@ -76,7 +82,23 @@ prerequisite for anything. The largest is **proofreading** — around 17,000 wor
 reference material plus a unit, five worked scenarios, and a portfolio artifact, treated
 as an allocation problem under a fixed budget rather than as a stage in a sequence.
 
-<div class="cta-buttons">
-  <a href="{{ '/side-quests/' | relative_url }}" class="btn btn-primary">Browse side quests</a>
-  <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-secondary">Proofreading</a>
+<div class="arch-grid">
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <span class="arch-chip" aria-hidden="true">&#128295;</span>
+    <h3 class="arch-title"><a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading</a></h3>
+    <p class="arch-meta"><span class="pill pill-layer">side quest</span><span class="pill pill-plain">20&ndash;30 hours</span></p>
+    <p class="arch-body">Correcting reconstruction errors as an allocation problem under a fixed budget. Six stages over the reference material, ending in a portfolio artifact a lab can read and disagree with.</p>
+    <div class="arch-actions">
+      <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-primary">Open the side quest</a>
+    </div>
+  </article>
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <span class="arch-chip" aria-hidden="true">&#128218;</span>
+    <h3 class="arch-title"><a href="{{ '/side-quests/' | relative_url }}">All side quests</a></h3>
+    <p class="arch-meta"><span class="pill pill-layer">index</span></p>
+    <p class="arch-body">What the category is, why material sits outside the tracks, and what else is named but not yet built.</p>
+    <div class="arch-actions">
+      <a href="{{ '/side-quests/' | relative_url }}" class="btn btn-secondary">Browse</a>
+    </div>
+  </article>
 </div>

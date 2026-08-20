@@ -117,7 +117,12 @@ without an instructor:
 | Education Models (MERIT) | 201 | 1,664 |
 | Connectome Quality notebooks | 58 | 1,015 |
 | Dictionary | 40 one-line terms | 127 entries with typical values, practical consequence, and common confusions |
-| Module worksheets (×25) | ~123 words of blank template each | ~730 words each of real task content, generated from module pages |
+| Module worksheets (×25) | ~123 words of blank template each | ~1,054 words each of real task content, generated from module pages |
+| Modules 12-15, 22-25 | 706-876 words each | 3,090-3,596 each |
+| Journal club corpus | 1 of 200 papers reachable | all 200 |
+| MRI connectomics reading list | 4 papers (index claimed 12) | 10 |
+| start-here first-run experience | self-referential checklist | a first hour ending in a written artifact, plus a track decision table |
+| README | documented a directory that does not exist | current layout, scripts, and which files are generated |
 | Journal papers: Computer Vision & ML | did not exist (linked from three pages) | 3,350 |
 | Journal papers: Network Analysis & Statistics | did not exist (linked from two pages) | 3,303 |
 
@@ -177,60 +182,74 @@ good, review well, and produce very little transferable capability.
 
 ## What has not been addressed
 
-Stated plainly so the remaining scope is visible.
+Stated plainly so the remaining scope is visible. Items 1, 3, 4, 5, and 6 from the
+original review are now closed; what follows is what is genuinely still open.
 
-**1. Some worksheet sections still fall back to generic text**, because the module
-pages they are generated from lack the corresponding content. The generator was rebuilt
-(see below) so worksheets now carry the real scenario, task steps, workflow checklist,
-timing, and rubric — but where a module page has no `**Outputs**` block in its studio
-activity, no misconception guardrails in its concept set, or no run-of-show, the
-worksheet falls back. Current fallback rates across the 25 worksheets: outputs 11/25,
-misconception self-check 8/25, session timing 6/25. **These are module content gaps, not
-generator bugs**, and the fix is to add those blocks to the module pages listed by:
+**1. Eight module pages remain between 1,100 and 1,500 words** — modules 04, 06, 08-11,
+20, and 21. They are no longer scaffolding (each has real concept content, guardrails,
+and a working studio activity) but they sit below the 2,000-2,600 band the rest of the
+library now occupies. Modules 06, 08, 10, and 11 are the ones a learner is most likely to
+land on from a technical unit, so they are the priority within this set.
 
-```
-grep -l 'Artifact produced during the activity' assets/worksheets/*/*.md
-```
+**2. The technical units are not evenly matched to the modules they overlap.** The
+`mapping_note` fields in `_data/technical_track.yml` describe the relationship
+accurately, but no page yet tells a learner working through, say, module 08 that Unit 09
+is the depth behind it and covers the null-model reasoning the module compresses. The
+modules-vs-units table on `/modules/` explains the two sequences in general; a per-module
+pointer would be better.
 
-**2. The 25 module pages average ~1,600 words** and sit between the old scaffolding and
-the new unit standard. Modules 13–15 and 20–25 are thinnest. They would benefit from the
-same treatment, particularly the *Check yourself* and answer-key elements.
+**3. Figure captions now teach, but nobody has checked them against the images.** The
+captions were rewritten by an agent that could not see the images, so they are phrased as
+instructions to look for something rather than assertions about what is present, and they
+are grounded in each unit's own content. That is honest but it is not verified. A
+subject-matter reviewer with the source slides open could improve them materially,
+particularly in `09-connectome-analysis-neuroai.md`, where twelve of the source captions
+were pure provenance stubs.
 
-**3. Slide pages are lecture plans, not slides.** `technical-training/slides/*` and
-`modules/slides/*` describe what each slide should contain rather than containing it.
-That is defensible as a design document for an instructor building a deck, but it should
-be labelled as such rather than titled "Slide Deck Draft".
+**4. Two of the site's data pipelines are unowned.** `_data/journal_papers.yml` was
+generated with malformed indentation that made 199 of its 200 papers unreachable, and the
+journal-club dimension filter had drifted to the point where five of its eleven options
+matched no paper. Both are fixed, and the filter is now generated from the corpus so it
+cannot drift again — but the generator that produced the broken YAML is not in this repo,
+so the same corruption could return on the next regeneration. Whoever owns that pipeline
+should add a `papers.size` assertion to it.
 
-**4. ~~Two validation scripts fail under Ruby 3.3.~~ Fixed.** All five scripts now run:
-`validate_frontmatter.rb` was updated for the Psych 4 `safe_load` keyword-argument
-change, and every script that reads content files now passes `encoding: 'UTF-8'`
-explicitly rather than relying on the locale's default external encoding. Two
-pre-existing frontmatter warnings on the journal-club pages were also cleared. The full
-current state: frontmatter, figure refs, technical evidence, and site links all pass, and
-the site builds clean under Jekyll 3.10.
-
-**5. Figure galleries were preserved verbatim but not re-captioned.** Captions such as
-"Techtalk S10: motivating question framing" describe the slide's provenance rather than
-what the reader should notice in the image. Instructional captions ("note the glycogen
-granules at lower left, absent from the neurite above") would make the galleries teach
-rather than decorate.
-
-**6. The technical track is still marked `status: planned`** in
-`_data/technical_track.yml`, and individual entries still carry
-`status: mapped_to_existing`. The units are now authored; that metadata should be
-revisited by whoever owns the curriculum roadmap.
-
----
+**5. The bibliometrics assets under `assets/analysis/` and `assets/bibliometrics/` were
+not reviewed.** They parse, and they are outside the learner-facing content this review
+covers, but they carry paper counts (925, 1,064, 2,213) that do not obviously reconcile
+with each other or with the 200-paper journal club.
 
 ## Recommended next steps, in priority order
 
-1. **Close the module content gaps the worksheet fallbacks expose.** Add an
-   `**Outputs**` block to each studio activity, misconception guardrails to each concept
-   set, and a run-of-show where missing. The worksheets then improve automatically on the
-   next generator run — this is the cheapest remaining improvement per unit of effort.
-2. **Modules 13–15 and 20–25**, using the unit template. These are the thinnest pages a
-   learner is likely to land on.
-3. **Instructional figure captions** across the technical units.
-4. **Reconcile the `planned` status metadata** with the authored state.
-5. **Add the checks to CI.** All five scripts now pass; running them on push would keep
-   them passing.
+1. **Modules 06, 08, 10, and 11**, using the unit template. Highest learner-facing impact
+   of what remains, and the shortest path for each: they already have the structure.
+2. **Per-module pointers to the technical unit that holds the depth**, so the two
+   sequences connect at the point of use rather than only on the library index.
+3. **A subject-matter pass over the figure captions** by someone who can see the images.
+4. **A size assertion in whatever pipeline generates `journal_papers.yml`**, so a
+   recurrence of the indentation bug fails loudly instead of silently shipping one paper.
+5. **Reconcile the bibliometrics paper counts** with the journal club corpus, or state
+   plainly that they are different corpora.
+
+---
+
+## A note on what this review found the second time
+
+The original review diagnosed thin content. That was correct but incomplete: a
+significant share of what looked like missing content turned out to be **working content
+that nothing could reach**.
+
+- 199 of 200 journal-club papers, unreachable through a YAML indentation error.
+- Eleven worksheets showing placeholder text for prerequisites that were sitting in front
+  matter the generator never read.
+- Eleven more falling back on outputs blocks that existed but were labelled in a form the
+  parser did not match.
+- Ten Concept Explorer deep links pointing at headings that had been renamed.
+- Five journal-club filter options matching no paper, and six real dimensions with no
+  option.
+
+None of these were visible as gaps. Every one of them rendered as a page that looked
+finished. The lesson for anyone maintaining this site is that **the checks matter as much
+as the content**: before this pass, four of the repo's five validation scripts printed
+warnings and exited zero regardless, so nothing they checked could ever fail a build.
+They now gate, and each gate was verified by injecting a fault rather than assumed.

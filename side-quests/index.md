@@ -1,0 +1,49 @@
+---
+layout: page
+title: "Side Quests"
+description: "Coherent bodies of work that are not prerequisites for anything. Do them because they are worth doing, not because a track told you to."
+permalink: /side-quests/
+slug: side-quests
+content_type: navigation
+track: core-concepts-methods
+pathways:
+  - technical foundation
+  - methods depth
+---
+
+## What a side quest is here
+
+The [tracks]({{ '/tracks/' | relative_url }}) are the main paths: ordered, cumulative,
+and designed so each one ends in a capability you can describe.
+
+A side quest is different. It is a coherent body of work that **does not sit on any
+track's critical path**. Finishing one does not put you further along a track, and you
+do not need to have finished a track to start one. It is worth doing on its own terms,
+and in at least one case it is worth more to a lab than most of what surrounds it.
+
+They are listed separately rather than folded into a track for a reason. Material
+buried inside a sequence gets read as "step 7 of 12," which is exactly the wrong frame
+for something you might reasonably spend a month on and never touch the rest.
+
+## What there is
+
+Two. One is built; the other is named because the gap is real, not because it is
+ready. Naming a category and then padding it would defeat the point of having one.
+
+<div class="cards-grid cards-grid-wide">
+  <article class="card">
+    <div class="card-icon">&#128295;</div>
+    <h3 class="card-title"><a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading</a></h3>
+    <p class="card-meta">~20&ndash;30 hours &middot; Available</p>
+    <p class="card-description">Correcting automated reconstruction errors, treated properly: as an allocation problem under a fixed budget rather than as cleanup that ends when the data looks right. Around 17,000 words of reference material, a full technical unit, five worked scenarios, and a portfolio artifact a lab can read.</p>
+    <div class="mt-1">
+      <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-primary">Open the side quest</a>
+    </div>
+  </article>
+  <article class="card card-muted">
+    <div class="card-icon">&#128064;</div>
+    <h3 class="card-title">Perceptual calibration</h3>
+    <p class="card-meta">Not built yet</p>
+    <p class="card-description">A drill on native-resolution EM crops with labels derived from released segmentations, scoring into a confusion matrix and reporting accuracy within your own high-confidence calls. <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05</a>&ndash;<a href="{{ '/technical-training/07-glia/' | relative_url }}">07</a> describe how to build one and argue for why it matters; the corpus does not exist. Listed here so the gap is visible.</p>
+  </article>
+</div>

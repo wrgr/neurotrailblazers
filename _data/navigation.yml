@@ -43,6 +43,8 @@ items:
         url: "/tracks/career-and-community/"
       - title: "Modes of Use"
         url: "/modes/"
+      - title: "Side Quests"
+        url: "/side-quests/"
       - title: "Concept Explorer"
         url: "/concepts/"
   - title: "Technical Course"

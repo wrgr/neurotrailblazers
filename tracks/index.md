@@ -63,8 +63,9 @@ use_layout_hero: false
 
   <section class="section">
     <h2>If you would rather not pick a track</h2>
-    <p>The tracks are a convenience, not a gate. Three routes that work as well for many people:</p>
+    <p>The tracks are a convenience, not a gate. Four routes that work as well for many people:</p>
     <div class="cta-buttons">
+      <a href="{{ '/side-quests/' | relative_url }}" class="btn btn-secondary">Take a side quest</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Follow a concept instead</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Work the technical sequence straight through</a>
       <a href="{{ '/core/' | relative_url }}" class="btn btn-secondary">Browse the core</a>

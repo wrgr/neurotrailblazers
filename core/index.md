@@ -72,20 +72,11 @@ them entirely. See [teaching]({{ '/teaching/' | relative_url }}).
 ## Side quests
 
 Some material is deliberately off the main paths: coherent, worth doing, and not a
-prerequisite for anything.
+prerequisite for anything. The largest is **proofreading** — around 17,000 words of
+reference material plus a unit, five worked scenarios, and a portfolio artifact, treated
+as an allocation problem under a fixed budget rather than as a stage in a sequence.
 
-<div class="cards-grid cards-grid-wide">
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}">Proofreading</a></h3>
-    <p class="card-description">Five reference entries on error taxonomy, strategy, tooling, metrics and worked examples, plus <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a>. Treat proofreading as an allocation problem under a fixed budget and it becomes a distinct skill with its own literature &mdash; one that a lab will value on its own, independently of the rest of the curriculum.</p>
-    <p><small><strong>Distinct path, not a stage.</strong> You do not need to have finished a track to start here, and finishing here does not put you further along one.</small></p>
-  </article>
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/content-library/journal-papers/' | relative_url }}">Reading the literature seriously</a></h3>
-    <p class="card-description">Two hundred papers organised by topic, each with what it established, what it did not, and what to argue with. Workable as its own long-running habit rather than as reading assigned by a unit.</p>
-  </article>
-  <article class="card">
-    <h3 class="card-title"><a href="{{ '/hidden-curriculum/' | relative_url }}">The hidden curriculum</a></h3>
-    <p class="card-description">Also core, and also worth reading as its own thing. Relevant from week one rather than at the end, and the only part of the site that is about what happens around the science rather than in it.</p>
-  </article>
+<div class="cta-buttons">
+  <a href="{{ '/side-quests/' | relative_url }}" class="btn btn-primary">Browse side quests</a>
+  <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-secondary">Proofreading</a>
 </div>

@@ -43,7 +43,7 @@ All papers are also available as structured data in `_data/journal_papers.yml` f
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|
-| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 12 | Diffusion tractography, functional connectivity, HCP, parcellation |
+| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion tractography, functional connectivity, HCP, parcellation |
 
 ### Cross-Cutting
 

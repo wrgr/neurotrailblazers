@@ -543,15 +543,30 @@ content_type: core
 
     <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
       <div class="dataset-header">
+        <h3><span class="dataset-icon">🪜</span> <a href="{{ '/datasets/getting-started' | relative_url }}">Getting Started with Data</a></h3>
+        <div class="dataset-meta">
+          <span class="dataset-type">Start here</span>
+          <span class="dataset-status">Onboarding</span>
+        </div>
+      </div>
+      <p>The gap between "the data is public" and "I have a DataFrame" is where most new teams stall. This guide closes it: a four-level ladder from browser to imagery cutouts, the CAVE token walkthrough start to finish, version pinning, byte math, and a failure-signature table for when it breaks.</p>
+      <div class="dataset-actions">
+        <a href="{{ '/datasets/getting-started' | relative_url }}" class="btn btn-primary">Take the Ladder</a>
+        <a href="{{ '/open-problems/' | relative_url }}" class="btn btn-secondary">Open Problems On-Ramps</a>
+      </div>
+    </div>
+
+    <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
+      <div class="dataset-header">
         <h3><span class="dataset-icon">🔧</span> <a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Tutorials</span>
           <span class="dataset-status">Resources</span>
         </div>
       </div>
-      <p>Step-by-step guides and example notebooks for downloading connectomics data from Google, the Allen Institute, Janelia, and bossDB.</p>
+      <p>Curated example notebooks for downloading connectomics data from Google, the Allen Institute, Janelia, and bossDB — the notebook collection behind the getting-started ladder.</p>
       <div class="dataset-actions">
-        <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary">View Guide</a>
+        <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary">View Notebooks</a>
       </div>
     </div>
 

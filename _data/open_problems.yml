@@ -1,0 +1,196 @@
+# Open problems for undergraduate teams — card and on-ramp data.
+#
+# Renders on /open-problems/ (cards + on-ramps). The full deep dive for each
+# problem lives at /content-library/connectomics/open-problems-undergrad/ and
+# each entry's `anchor` must match an explicit kramdown heading id on that page.
+#
+# On-ramp design rules (keep these when editing):
+#   - Steps are ordered and each is finishable in roughly an hour except step 4,
+#     which is the first real measurement and may take a week.
+#   - Every step has a `done` criterion a learner can check without a mentor.
+#   - Step 2 always routes through /datasets/getting-started/ at a named level,
+#     so the data barrier is crossed the same way everywhere.
+#   - Step 3 is always "reproduce a known number" — calibration before novelty.
+
+problems:
+  - slug: proofreading-budget
+    number: 1
+    icon: "🔀"
+    title: "The Proofreading Budget"
+    hook: "Automated segmentation still needs human correction, and nobody knows how much proofreading a scientific claim actually requires. Measure it."
+    team: "CS · data science · ML"
+    cost: "Laptop + Colab"
+    customer: "MouseConnects pipeline planners"
+    anchor: problem-1
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-1), then [Error taxonomy](/content-library/proofreading/error-taxonomy/) and [Metrics and QA](/content-library/proofreading/metrics-and-qa/)."
+        done: "You can explain to a teammate why an undetected merge error is worse than an undetected split error."
+      - name: "Get data in hand"
+        action: "Work through [Getting Started with Data](/datasets/getting-started/) to Level 2: a FlyWire snapshot loaded in pandas, plus a working CAVE token for versioned queries."
+        done: "A notebook cell prints the edge count of a pinned materialization version."
+      - name: "Calibrate"
+        action: "Reproduce the published FlyWire neuron count (139,255) from your downloaded snapshot."
+        done: "Your count matches, and you can say exactly which filter (proofread flag, synapse threshold) the published number assumes."
+      - name: "First measurement"
+        action: "Pull the same connectome at two public materialization versions and diff them: edges gained, edges lost, degree-distribution shift. This is one data point on a robustness-versus-proofreading curve."
+        done: "A two-version diff table and one plot, with both version IDs recorded in the notebook."
+      - name: "Scope the semester"
+        action: "Pick one of the three scoped projects in the deep dive (robustness curves, merge-detector benchmark, effort telemetry) and write a half-page abstract addressed to the customer."
+        done: "The abstract names the minimum reportable result — the deliverable you get even if the ambitious version fails."
+
+  - slug: synapse-generalization
+    number: 2
+    icon: "🎯"
+    title: "Synapse Detection That Generalizes"
+    hook: "Detectors trained on one dataset degrade on the next, and the ground truth to measure that degradation mostly doesn't exist. Build some."
+    team: "Biology · ML · careful eyes"
+    cost: "Laptop + Colab"
+    customer: "Every cross-region comparison in CONNECTS"
+    anchor: problem-2
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-2), then [Synapse classification](/content-library/neuroanatomy/synapse-classification/) and skim [Unit 05](/technical-training/05-neuronal-ultrastructure/)."
+        done: "You can state the three EM criteria for calling a synapse without looking them up."
+      - name: "Get data in hand"
+        action: "Work through [Getting Started with Data](/datasets/getting-started/) to Level 3-lite: one small EM imagery cutout from a public volume, plus the CREMI ground-truth volumes (plain HTTP download, no account)."
+        done: "You can open the cutout in Neuroglancer and scroll through sections without it feeling alien."
+      - name: "Calibrate"
+        action: "Find five synapses by eye in your cutout using the three criteria, then check yourself against the dataset's released synapse annotations."
+        done: "At least four of your five calls appear in the released table — or you can explain each disagreement."
+      - name: "First measurement"
+        action: "Load a CREMI volume with its annotations and compute synapse density per unit volume; compare against the same measurement in a MICrONS subvolume's synapse table."
+        done: "A density comparison with an honest paragraph on why the numbers differ (tissue? annotation protocol? detector?)."
+      - name: "Scope the semester"
+        action: "Pick cross-dataset degradation study or ground-truth annotation (with agreement statistics) and write the half-page abstract."
+        done: "If annotating: your protocol names the annotator count, the region, and the agreement statistic before anyone starts clicking."
+
+  - slug: cell-type-matching
+    number: 3
+    icon: "🧬"
+    title: "Cell Types Across Datasets"
+    hook: "The male and female fly connectomes are both public and the comparative literature is months old. Match types across sexes, individuals, and modalities."
+    team: "Biology · data science"
+    cost: "Laptop only"
+    customer: "Cross-dataset science in CONNECTS"
+    anchor: problem-3
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-3) and [Neuron type identification](/content-library/cell-types/neuron-type-identification/)."
+        done: "You can explain the difference between morphology-based and connectivity-based typing, with one strength and one failure mode each."
+      - name: "Get data in hand"
+        action: "Work through [Getting Started with Data](/datasets/getting-started/): Level 1 gets you FlyWire's annotation and classification tables (no account); Level 2's neuPrint token gets you the male CNS."
+        done: "Two DataFrames — female types, male types — loaded side by side."
+      - name: "Calibrate"
+        action: "Reproduce the per-superclass neuron counts that Codex displays for the female brain from the raw annotation table."
+        done: "Your groupby matches what the Codex interface shows for the same release."
+      - name: "First measurement"
+        action: "Pick one cell type reported in both sexes, and compare: neuron count, mean synaptic partners, top-5 partner types. You are now doing comparative connectomics."
+        done: "A one-page comparison; flag every difference and label it stereotypy, dimorphism candidate, or probably-methodological."
+      - name: "Scope the semester"
+        action: "Pick the female-versus-male recount, the typing-method shootout, or the transfer-learning classifier, and write the abstract."
+        done: "The abstract states which dataset releases and which type annotations are being treated as ground truth — and why that's defensible."
+
+  - slug: graph-algorithms
+    number: 4
+    icon: "🕸️"
+    title: "Graph Algorithms at Connectome Scale"
+    hook: "An open optimization challenge with a public leaderboard, null models nobody agrees on, and stability analyses nobody runs. No biology background needed to start."
+    team: "Math · CS · algorithms"
+    cost: "Laptop only"
+    customer: "FlyWire leaderboard + every motif paper"
+    anchor: problem-4
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-4), then [Network analysis methods](/content-library/connectomics/network-analysis-methods/) and [Motif analysis](/content-library/connectomics/motif-analysis/)."
+        done: "You can explain why motif significance depends on the null model, with the reciprocity-under-distance-null example."
+      - name: "Get data in hand"
+        action: "Work through [Getting Started with Data](/datasets/getting-started/) Level 1: the FlyWire connections table. Then download the [Minimum Feedback Challenge](https://codex.flywire.ai/app/mfas_challenge) graph and baseline code."
+        done: "The connectome loads as a directed weighted graph in igraph or graph-tool (not NetworkX — see the guide for why)."
+      - name: "Calibrate"
+        action: "Recompute the challenge graph's total synapse weight and check it against the number stated on the challenge page."
+        done: "Your total matches the challenge's stated denominator exactly."
+      - name: "First measurement"
+        action: "Run the provided baseline ordering and reproduce its score; or compute reciprocity in one neuropil under an Erdős–Rényi null and a configuration-model null."
+        done: "Either the baseline score reproduces, or you have two z-scores for the same statistic that disagree — and understand why that's the finding."
+      - name: "Scope the semester"
+        action: "Pick the challenge attack, the null-model sensitivity atlas (a full worked scoping example is in the deep dive), or approximate-algorithm benchmarking."
+        done: "For the challenge: your abstract names the algorithm family you'll try and the compute budget. For the atlas: it names the three published claims you'll re-test."
+
+  - slug: structure-function
+    number: 5
+    icon: "⚡"
+    title: "Structure → Function and Its Limits"
+    hook: "Wiring predicts orientation tuning well and receptive-field size badly. Map where the predictive boundary lies — the field's central open question."
+    team: "ML · computational neuroscience"
+    cost: "Colab GPU helpful"
+    customer: "The case for the next connectome"
+    anchor: problem-5
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-5) and [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/)."
+        done: "You can summarize what connectome-constrained models got right in the fly visual system and where connectome-only prediction breaks down."
+      - name: "Get data in hand"
+        action: "Per [Getting Started with Data](/datasets/getting-started/) Level 1: install the released fly visual system model (flyvis) and pull the ZAPBench loaders — both are pip/git installs with no credentials."
+        done: "The pretrained model runs end to end on the demo stimulus in Colab."
+      - name: "Calibrate"
+        action: "Reproduce one published response property from the released model's own demo (e.g., a cell type's direction selectivity)."
+        done: "Your reproduction matches the released figure qualitatively, and you know which random seed and checkpoint produced it."
+      - name: "First measurement"
+        action: "Perturb one thing — shuffle synapse signs within a cell type, or delete the weakest decile of edges — and measure how the reproduced property degrades."
+        done: "A one-plot sensitivity result: property X survives perturbation A but not B."
+      - name: "Scope the semester"
+        action: "Pick a ZAPBench benchmark entry, a prediction-versus-physiology audit, or a full lesion study, and write the abstract."
+        done: "For the audit: the abstract lists the specific published predictions you will check and the physiology sources you will check them against."
+
+  - slug: data-logistics
+    number: 6
+    icon: "💾"
+    title: "Data Logistics at Exabyte Scale"
+    hook: "A whole mouse brain is ~an exabyte. How much can you compress EM before the science changes? Nobody has published the systematic answer."
+    team: "Systems · data engineering"
+    cost: "Laptop + cloud egress patience"
+    customer: "CONNECTS acquisition budgets"
+    anchor: problem-6
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-6), then [Data formats](/content-library/infrastructure/data-formats/) and [Reconstruction pipeline](/content-library/infrastructure/reconstruction-pipeline/)."
+        done: "You can sketch the path from microscope to Neuroglancer tab and name the storage format at each hop."
+      - name: "Get data in hand"
+        action: "Work through [Getting Started with Data](/datasets/getting-started/) Level 3: CloudVolume cutouts from a public EM volume at two different mip levels."
+        done: "You predicted a cutout's size in bytes from its dimensions and dtype before downloading, and were right."
+      - name: "Calibrate"
+        action: "Measure actual transfer time and effective bandwidth for the same cutout at mip 0 vs a downsampled mip."
+        done: "A small table: mip, voxels, bytes, seconds — and the ratio makes sense."
+      - name: "First measurement"
+        action: "Recompress a cutout at increasing lossy ratios and plot a fidelity metric (SSIM to start) against compression ratio. This is the seed of the compression-safety benchmark."
+        done: "A rate-distortion curve on real EM data, with the code clean enough to swap in a downstream model as the metric."
+      - name: "Scope the semester"
+        action: "Pick the compression-safety benchmark (upgrade the metric from SSIM to 'does segmentation output change'), access-pattern profiling, or the artifact QA screener."
+        done: "The abstract names the downstream model whose output defines 'scientifically safe', not just an image metric."
+
+  - slug: annotation-science
+    number: 7
+    icon: "🧑‍🤝‍🧑"
+    title: "Annotation Science"
+    hook: "Connectomics runs some of the largest distributed annotation efforts in science, with almost no science about the annotators. Home turf for education, psych, and HCI teams."
+    team: "Education · psychology · HCI"
+    cost: "Laptop + human participants"
+    customer: "Every distributed proofreading campaign"
+    anchor: problem-7
+    onramp:
+      - name: "Orient"
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-7), then the [proofreading side quest](/side-quests/proofreading/) overview and [Error taxonomy](/content-library/proofreading/error-taxonomy/)."
+        done: "You can name the error classes a proofreading study would score, and what 'expert consensus gold standard' means operationally."
+      - name: "Get data in hand"
+        action: "Per [Getting Started with Data](/datasets/getting-started/) Level 0: open a public segmentation in the browser (no install, no account). Your 'data' is also this site's own worksheets — the standardized training instrument."
+        done: "You can drive Neuroglancer well enough to demonstrate a merge error and a split error to someone else."
+      - name: "Calibrate"
+        action: "Do the proofreading side-quest scenario yourself, timing every correction by error type."
+        done: "Your own time-per-correction table, by error class — the pilot datum for any study design."
+      - name: "First measurement"
+        action: "Run 2–3 volunteers through the same exercise informally and compute inter-annotator agreement and per-error-type times. (A real study needs ethics review — start that paperwork now, it takes longer than the pilot.)"
+        done: "An agreement statistic plus a draft IRB/ethics application if you're going the human-subjects route."
+      - name: "Scope the semester"
+        action: "Pick the learning-curve study, the consensus-aggregation benchmark, or retrospective analysis of public edit logs (which sidesteps most human-subjects overhead)."
+        done: "The abstract states whether the design needs ethics approval and the timeline accounts for it."

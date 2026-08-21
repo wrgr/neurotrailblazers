@@ -100,9 +100,17 @@ What follows is organized as seven problem areas. For each: what is actually
 open, why CONNECTS needs it solved, the current state of the art with numbers,
 and concretely scoped projects with entry points.
 
+> **Ready to start rather than read?** Every problem below is also a card with a
+> five-step on-ramp — read, get the data, reproduce a known number, first
+> measurement, scope the semester — at
+> [Open Problems]({{ '/open-problems/' | relative_url }}). The data step of every
+> ramp runs through
+> [Getting Started with Data]({{ '/datasets/getting-started/' | relative_url }}),
+> which exists because data access is the step most teams stall on.
+
 ---
 
-## Problem 1 — The proofreading budget: automated error detection and "how much is enough?"
+## Problem 1 — The proofreading budget: automated error detection and "how much is enough?" {#problem-1}
 
 **What is open.** Automated segmentation still makes merge errors (two neurons
 fused into one object) and split errors (one neuron broken into fragments), and
@@ -160,7 +168,7 @@ code; ConnectomeBench's task definitions; FlyWire edit history via CAVE.
 
 ---
 
-## Problem 2 — Synapse detection that generalizes
+## Problem 2 — Synapse detection that generalizes {#problem-2}
 
 **What is open.** Synapse detectors are typically trained per-dataset, on one
 species, one staining protocol, one microscope. Performance degrades — sometimes
@@ -209,7 +217,7 @@ published detector weights (e.g., from the MICrONS and FlyWire pipelines).
 
 ---
 
-## Problem 3 — Cell types: matching across individuals, sexes, species, and modalities
+## Problem 3 — Cell types: matching across individuals, sexes, species, and modalities {#problem-3}
 
 **What is open.** Cell typing in connectomics is done by morphology and
 connectivity; transcriptomic atlases type cells by gene expression. Whether
@@ -259,7 +267,7 @@ atlases for the cross-modality angle.
 
 ---
 
-## Problem 4 — Graph algorithms and statistics at connectome scale
+## Problem 4 — Graph algorithms and statistics at connectome scale {#problem-4}
 
 **What is open.** Connectome graphs are now large enough (10⁵ nodes, 10⁷–10⁸
 edges) that exact versions of the field's favourite analyses are intractable, and
@@ -304,7 +312,7 @@ around 10⁵ nodes — discovering exactly where is itself useful telemetry).
 
 ---
 
-## Problem 5 — Structure to function: prediction and its limits
+## Problem 5 — Structure to function: prediction and its limits {#problem-5}
 
 **What is open.** The founding bet of connectomics is that wiring constrains
 function. It is now testable, and the early answers are mixed in interesting
@@ -359,7 +367,7 @@ al.'s released model); MICrONS functional data via the public releases;
 
 ---
 
-## Problem 6 — Data logistics at exabyte scale
+## Problem 6 — Data logistics at exabyte scale {#problem-6}
 
 **What is open.** A whole mouse brain at synaptic resolution is on the order of
 an exabyte of raw imagery; a human brain estimate runs to zettabytes. Storage,
@@ -407,7 +415,7 @@ and [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction
 
 ---
 
-## Problem 7 — The human side: annotation science and distributed proofreading
+## Problem 7 — The human side: annotation science and distributed proofreading {#problem-7}
 
 **What is open.** Connectomics has quietly run some of the largest distributed
 scientific-annotation efforts ever — Eyewire's hundreds of thousands of
@@ -448,7 +456,7 @@ logs; this program's own worksheets as standardized training instruments.
 
 ---
 
-## Choosing: a decision protocol
+## Choosing: a decision protocol {#choosing}
 
 Four questions, in order, will land a team on the right problem:
 

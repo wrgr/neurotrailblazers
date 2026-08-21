@@ -54,6 +54,14 @@ without it, the enormous fMRI network-neuroscience literature swamps the corpus.
 query now opens with a BACKGROUND section supplying all of it, including the search
 vocabulary.
 
+**Unhandled edge cases.** The query stated rules that would have excluded real work or
+recreated known failures. "Every DOI must resolve" silently excluded books, theses and
+pre-2000 papers — often the foundational references. Nothing said to prefer a published
+version over its preprint, which is exactly how the old corpus ended up listing six
+landmark papers twice. Nothing covered consortium authorship, tools with no publication,
+or retracted work. The query now has an EDGE CASES section for each, plus eight
+self-consistency checks the run performs on its own output before reporting.
+
 **No size cap.** An earlier draft asked for 120–180 papers. That contradicts this project's
 own stated design philosophy — *"Overcomplete > undercomplete. We can filter to find cores…
 Better to have the full network and prune than to miss important people."* Inclusion
@@ -161,6 +169,12 @@ have encountered it, because it:
 The audience is undergraduates through early-career researchers. Pedagogical
 value is a real inclusion criterion here, not only impact.
 
+**"Landmark", used in the tier criteria below, means a paper meeting the first
+three of those bullets** — it changed what people believe, introduced something
+now in use, or released data others build on. Citation count is evidence for
+this, not the definition of it: a dataset paper that enabled fifty others can
+outrank a review that accumulated more citations.
+
 ## Search vocabulary
 
 Terms that identify this literature: connectomics; connectome; volume electron
@@ -199,6 +213,79 @@ model memory. Its titles were largely right and almost everything else was
 wrong — author lists belonging to no such paper, DOIs resolving to unrelated
 work, DOIs that did not exist at all. It looked verified. That is precisely what
 made it unusable, and it is the failure mode to design against.
+
+7. DEDUPLICATE BY WORK, NOT BY STRING. One record per paper. See EDGE CASES.
+8. CHECK RETRACTION STATUS. Do not silently include retracted work.
+
+# EDGE CASES
+
+These are the specific shapes that broke the previous attempt. Handle each
+explicitly.
+
+## Preprints and published versions
+
+Prefer the published version. Where you find a preprint, check whether it has
+since been published — Crossref records this as an `is-preprint-of` relation on
+the preprint's record — and use the published DOI, authors and journal.
+
+Where a preprint has no published version, keep it and set `journal` to the
+server with "(preprint)" appended, so it can never be mistaken for
+peer-reviewed work.
+
+**Never list both versions as separate records.** The previous corpus listed six
+landmark papers twice — once as bioRxiv, once as published — under different
+years with different summaries, which inflated its apparent size and made
+lookups ambiguous.
+
+## Works with no DOI
+
+Books, chapters, theses, standards and much pre-2000 work have no DOI. These are
+often exactly the foundational references a trainee needs, so constraint 3 must
+not silently exclude them.
+
+For these: set `"doi": null` and supply the strongest identifier you can
+resolve — ISBN, PMID, a handle, or a permanent publisher URL you actually
+visited — in `identifier` with `identifier_type` naming which it is. A work with
+no resolvable identifier of any kind goes to unverified_candidates.
+
+## Software and tools with no paper
+
+Several widely used tools in this field have no publication. Where the citable
+artifact is software, record the archived release DOI (Zenodo or equivalent) or
+the repository URL, set `work_type` to `software`, and use `abstract_summary` to
+say what it does and what depends on it.
+
+**Do not invent a paper for a tool that has none.** If you cannot find a citable
+artifact, put the tool in unverified_candidates with a note — that is useful
+information about the field, not a failure.
+
+## Consortium authorship
+
+Large collaborations are sometimes credited as a consortium rather than as
+individuals, and sources disagree about how. For one 2025 paper, Crossref gives
+an empty first author entry for the consortium while OpenAlex gives a named
+individual first.
+
+Record the author list exactly as the source you used gives it, name that source
+in `verified.source`, and if a consortium is credited say so in `authors_note`.
+Do not expand a consortium into individuals you infer, and do not drop it.
+
+## Retractions and corrections
+
+A training corpus must not quietly teach retracted work. OpenAlex exposes
+`is_retracted` on a work record — check it.
+
+Exclude retracted papers, unless the retraction is itself the teaching point, in
+which case include it and say so plainly in `abstract_summary`. Where a paper
+carries a correction or an expression of concern, keep it and note that in
+`abstract_summary` too.
+
+## Duplicates
+
+Deduplicate by DOI before output. Then check for the same work appearing under
+different identifiers — preprint versus published is the common case, but also
+watch for a paper with two publisher DOIs, and for conference and journal
+versions of the same work. Keep one record per work.
 
 # ON SIZE
 
@@ -245,8 +332,14 @@ syntax rather than assuming it.
      both macro-scale network neuroscience and nanoscale EM groups — and their
      work is often the missing link between areas.
 
-Iterate (a)-(d) until a round adds little. Report the round count and what each
-round added.
+Iterate (a)-(d) until the corpus stops growing meaningfully. A concrete stopping
+rule: stop when a full round adds fewer than 5% new qualifying papers, or when
+two consecutive rounds add nothing you keep. Report the round count, what each
+round added, and which condition stopped you.
+
+If you run out of time or budget before that point, say so in METHOD and report
+where you stopped. A corpus that is honestly incomplete is usable; one that
+claims completeness it did not reach is not.
 
 ## If you cannot execute code
 
@@ -319,17 +412,54 @@ Report how many you found and, for each miss, which step should have surfaced
 it. A pipeline missing several of these has a coverage gap worth diagnosing
 before the corpus is used.
 
+# BEFORE YOU OUTPUT — self-consistency checks
+
+Run these on your own output and report the result of each. They are cheap and
+they catch the failures that are hardest to spot by reading.
+
+  1. No two records share a DOI.
+  2. No two records are the same work under different identifiers.
+  3. Every record with `doi_resolved: true` has a DOI you actually resolved in
+     this session — not one you believe is correct.
+  4. Every record has a `found_via` naming a real step.
+  5. No author list has been truncated. Papers with hundreds of authors should
+     show hundreds of authors.
+  6. No record is retracted, unless flagged deliberately.
+  7. The MRI share is roughly one in ten or lower. If it is higher, the field
+     boundary in BACKGROUND was drawn wrong and the corpus needs re-filtering.
+  8. Every tier-1 assignment states its evidence.
+
+Report each as pass or fail with the count. A failed check is more useful to
+report than to quietly fix.
+
+
 # OUTPUT
 
-One JSON object per paper:
+Open with a run header:
+
+{
+  "generated": "YYYY-MM-DD",
+  "sources_used": ["openalex", "crossref", "nih reporter", "..."],
+  "paper_count": 0,
+  "method_summary": "one paragraph"
+}
+
+Then one JSON object per work:
 
 {
   "title": "exact title from the resolved record",
   "authors": ["Family Initials", "..."],   // complete, in order, transcribed
+  "authors_note": "only if a consortium is credited, or the list is unusual",
   "year": 2024,
-  "journal": "container title from the record",
-  "doi": "10.xxxx/xxxxx",
+  "journal": "container title; append '(preprint)' for an unpublished preprint",
+  "doi": "10.xxxx/xxxxx",                  // null if the work has none
+  "identifier": "ISBN/PMID/handle/URL",    // only when doi is null
+  "identifier_type": "isbn|pmid|handle|url",
+  "work_type": "article|review|preprint|book|chapter|software|dataset",
   "url": "URL you actually visited",
+  "open_access": { "is_oa": true, "oa_status": "gold|hybrid|green|closed" },
+  "is_retracted": false,
+  "notes_on_record": "correction, expression of concern, or nothing",
   "abstract_summary": "2-3 sentences, your words, on what it established and
                        what it did not",
   "areas": ["from the coverage list"],
@@ -342,17 +472,24 @@ One JSON object per paper:
                 "date": "YYYY-MM-DD" }
 }
 
+`open_access` matters for this audience specifically: the readers are students,
+and a corpus they cannot open is a reading list in name only. OpenAlex returns
+this on the work record as `open_access.is_oa` and `open_access.oa_status`.
+Report the overall open-access share in COVERAGE.
+
 Plus these sections:
 
   1. METHOD — APIs and sources used, date of retrieval, how the starting set was
      derived, graph sizes and round count, and any step you could not complete.
   2. INVESTIGATOR POOL — everyone derived, their tier, and their derivation path.
-  3. COVERAGE — per area, per tier, by year; which areas are thin and why.
+  3. COVERAGE — per area, per tier, by year, by work type, and the open-access
+     share; which areas are thin and why.
   4. SELF-TEST — result of Step 5.
   5. UNVERIFIED CANDIDATES — papers you believe belong but could not confirm,
      with what was missing. Expected to be non-empty; an empty section suggests
      the constraints were not applied.
-  6. CITATION EDGES — only if you could not run Step 2c/2d, per the note above.
+  6. SELF-CONSISTENCY — the eight checks, each pass or fail with counts.
+  7. CITATION EDGES — only if you could not run Step 2c/2d, per the note above.
 ```
 
 ---

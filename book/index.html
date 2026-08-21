@@ -197,6 +197,23 @@ permalink: /book/
     color: #fff;
   }
   .book-cta a.bk-btn.ghost { background: #fff; color: #2563eb; border: 2px solid #2563eb; }
+  .eli5-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+  .eli5-card {
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    background: #fff;
+  }
+  .eli5-card h4 { margin: 0 0 0.4rem; font-size: 1.05rem; font-family: 'Plus Jakarta Sans', sans-serif; }
+  .eli5-card p { font-size: 0.95rem; margin: 0.3rem 0; line-height: 1.5; }
+  .eli5-card .pro { color: #065f46; }
+  .eli5-card .con { color: #9a3412; }
+  .eli5-card .pro strong, .eli5-card .con strong { font-weight: 700; }
   @media print {
     .site-header, footer, .book-cta { display: none; }
     .chapter { page-break-before: always; }
@@ -859,9 +876,111 @@ permalink: /book/
     </div>
   </div>
 
-  <!-- ============ CHAPTER 7 ============ -->
+  <!-- ============ CHAPTER 7: WHY SO HARD ============ -->
+  <div class="chapter" id="ch-hard">
+    <div class="chapter-head"><span class="chapter-num">7</span><h2>Okay, but why is this so hard?</h2></div>
+    <div class="panel">
+      <svg viewBox="0 0 900 400" role="img" aria-labelledby="p7h-title">
+        <title id="p7h-title">A factory line of four impossible chores: a slicer cutting a blueberry-sized brain into film-thin slices, a giant camera photographing each slice, a mountain of hard drives, and a person with a robot untangling a bowl of glowing spaghetti.</title>
+        <rect width="900" height="400" fill="#fff7ed"/>
+        <rect y="330" width="900" height="70" fill="#ffedd5"/>
+        <!-- station 1: slicer -->
+        <g transform="translate(120 220)">
+          <rect x="-62" y="30" width="124" height="16" rx="6" fill="#94a3b8"/>
+          <rect x="-52" y="-46" width="34" height="76" rx="6" fill="#64748b"/>
+          <path d="M -18 -34 L 30 -34 L 30 -28 L -18 -22 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+          <circle cx="-35" cy="6" r="16" fill="#a78bfa" stroke="#7c3aed" stroke-width="2.5"/>
+          <path d="M -42 2 C -39 -2 -31 -2 -28 2" stroke="#7c3aed" stroke-width="1.6" fill="none"/>
+          <!-- ribbon of slices -->
+          <g fill="#ddd6fe" stroke="#a78bfa" stroke-width="1">
+            <rect x="8" y="-10" width="3" height="34" rx="1.5"/>
+            <rect x="16" y="-8" width="3" height="34" rx="1.5" transform="rotate(6 17 9)"/>
+            <rect x="24" y="-6" width="3" height="34" rx="1.5" transform="rotate(12 25 11)"/>
+            <rect x="33" y="-3" width="3" height="34" rx="1.5" transform="rotate(18 34 14)"/>
+            <rect x="43" y="1" width="3" height="34" rx="1.5" transform="rotate(24 44 18)"/>
+          </g>
+          <text x="0" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412" font-family="'Plus Jakarta Sans',sans-serif">1 · SLICE</text>
+          <text x="0" y="90" text-anchor="middle" font-size="11.5" fill="#78350f" font-family="'Source Sans 3',sans-serif">2,000× thinner than a hair</text>
+        </g>
+        <!-- station 2: camera -->
+        <g transform="translate(340 220)">
+          <rect x="-40" y="-20" width="80" height="52" rx="10" fill="#334155"/>
+          <circle cx="0" cy="6" r="20" fill="#0ea5e9" stroke="#0369a1" stroke-width="3"/>
+          <circle cx="-6" cy="0" r="6" fill="#e0f2fe"/>
+          <rect x="-14" y="-30" width="28" height="12" rx="4" fill="#334155"/>
+          <use href="#d-star" transform="translate(34 -30) scale(1.3)" fill="#fbbf24"/>
+          <line x1="-18" y1="46" x2="-26" y2="32" stroke="#334155" stroke-width="4"/>
+          <line x1="18" y1="46" x2="26" y2="32" stroke="#334155" stroke-width="4"/>
+          <text x="0" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412" font-family="'Plus Jakarta Sans',sans-serif">2 · PHOTOGRAPH</text>
+          <text x="0" y="90" text-anchor="middle" font-size="11.5" fill="#78350f" font-family="'Source Sans 3',sans-serif">every slice, at 4-nanometer zoom</text>
+        </g>
+        <!-- station 3: drive mountain -->
+        <g transform="translate(565 220)">
+          <g fill="#475569" stroke="#1e293b" stroke-width="1.5">
+            <rect x="-58" y="24" width="116" height="20" rx="4"/>
+            <rect x="-48" y="2" width="96" height="20" rx="4"/>
+            <rect x="-38" y="-20" width="76" height="20" rx="4"/>
+            <rect x="-28" y="-42" width="56" height="20" rx="4"/>
+            <rect x="-18" y="-64" width="36" height="20" rx="4"/>
+          </g>
+          <g fill="#4ade80">
+            <circle cx="46" cy="34" r="3"/><circle cx="36" cy="12" r="3"/><circle cx="26" cy="-10" r="3"/><circle cx="16" cy="-32" r="3"/><circle cx="6" cy="-54" r="3"/>
+          </g>
+          <text x="0" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412" font-family="'Plus Jakarta Sans',sans-serif">3 · STORE</text>
+          <text x="0" y="90" text-anchor="middle" font-size="11.5" fill="#78350f" font-family="'Source Sans 3',sans-serif">2 million GB per sand grain</text>
+        </g>
+        <!-- station 4: spaghetti untangle -->
+        <g transform="translate(780 220)">
+          <path d="M -50 20 A 50 30 0 0 0 50 20 L 42 44 L -42 44 Z" fill="#fde68a" stroke="#d97706" stroke-width="2.5"/>
+          <g fill="none" stroke-width="4" stroke-linecap="round">
+            <path d="M -34 14 C -20 -6 0 26 16 4 C 26 -8 34 10 40 2" stroke="#f472b6"/>
+            <path d="M -40 6 C -22 22 -6 -12 12 12 C 22 24 32 -2 42 12" stroke="#38bdf8"/>
+            <path d="M -28 20 C -10 4 8 22 30 8" stroke="#4ade80"/>
+          </g>
+          <!-- one strand pulled up -->
+          <path d="M 0 6 C -6 -30 18 -48 6 -78" stroke="#fbbf24" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- robot claw -->
+          <g transform="translate(6 -84)">
+            <rect x="-9" y="-16" width="18" height="14" rx="4" fill="#64748b"/>
+            <path d="M -7 -2 L -3 8 M 7 -2 L 3 8" stroke="#64748b" stroke-width="3.5" stroke-linecap="round"/>
+          </g>
+          <text x="0" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#9a3412" font-family="'Plus Jakarta Sans',sans-serif">4 · UNTANGLE</text>
+          <text x="0" y="90" text-anchor="middle" font-size="11.5" fill="#78350f" font-family="'Source Sans 3',sans-serif">every noodle, no mistakes</text>
+        </g>
+        <!-- Maya + Pip reacting -->
+        <g transform="translate(70 90)">
+          <use href="#ch-pip" transform="scale(0.8)"/>
+          <path d="M 34 -38 q 5 7 0 11 q -5 -4 0 -11" fill="#60a5fa"/>
+        </g>
+        <g transform="translate(690 80)">
+          <rect x="-160" y="-30" width="330" height="48" rx="12" fill="#fff" stroke="#fed7aa"/>
+          <text x="5" y="-10" text-anchor="middle" font-size="14" fill="#111827" font-family="'Source Sans 3',sans-serif">“None of these needs a miracle. All of them need</text>
+          <text x="5" y="9" text-anchor="middle" font-size="14" fill="#111827" font-family="'Source Sans 3',sans-serif">to work perfectly, together, a billion times in a row.”</text>
+        </g>
+        <text x="450" y="382" text-anchor="middle" font-size="14" font-style="italic" fill="#9a3412" font-family="'Source Sans 3',sans-serif">The four chores. Each one is fine at small scale. The brain is not small scale.</text>
+      </svg>
+    </div>
+    <p class="lede">If a fly brain is done and a cubic millimeter is done, why not just keep going? Because brain mapping is four chores multiplied together, and every one is already at the edge of possible.</p>
+    <p><strong>Chore 1: slice it.</strong> To see synapses you must cut the brain into slices about <strong>2,000 times thinner than a human hair</strong> — roughly 25,000 of them for every millimeter of depth — and you cannot tear one, because a lost slice severs every wire passing through it. Imagine slicing a blueberry into 25,000 intact sheets. Now do it for months without a bad day.</p>
+    <p><strong>Chore 2: photograph it.</strong> A synapse is invisible until you zoom to about 4 nanometers per pixel. At that magnification a single slice becomes billions of pixels, and the microscopes must run day and night — which is why teams turned to electron microscopes that image with 61 beams at once, like a camera with sixty-one lenses clicking together.</p>
+    <p><strong>Chore 3: store it.</strong> At that zoom, one sand-grain-sized piece of brain becomes about <strong>2 petabytes — 2 million gigabytes</strong> — of images. A whole mouse brain is ~500 of those grains: several hundred petabytes, one of the largest datasets ever contemplated in biology.</p>
+    <p><strong>Chore 4: untangle it.</strong> The photos show gray spaghetti. Someone must follow each strand — thinner than the slices, centimeters long — through thousands of consecutive images without once confusing two touching noodles. AI now does the overwhelming bulk of this, but its rare mistakes matter (one wrong merge welds two neurons into a fictional monster), so trained humans still check the hard cases. Computers you can rent by the hour; <em>trained proofreaders you cannot</em> — which is why the scarcest resource in this whole story is people, and why training them is a funded part of the program.</p>
+    <p>Here is the encouraging part: none of the four chores needs new physics or a stroke of genius. They need engineering, coordination, and stamina — precisely the kind of problem a funded, organized program can beat, and the reason the next chapter exists.</p>
+    <div class="evidence">
+      <h3>The evidence</h3>
+      <ul>
+        <li>Slice thickness in these projects is ~30–40 nanometers <a class="srcref" href="#src-12">[12]</a> <a class="srcref" href="#src-13">[13]</a>; a human hair is ~80,000 nanometers across, so "2,000× thinner" and "~25,000 slices per millimeter" are our arithmetic from those figures.</li>
+        <li>One cubic millimeter ≈ 2 petabytes of raw images (MICrONS); H01's single human millimeter is ~1.4 petabytes. <a class="srcref" href="#src-12">[12]</a> <a class="srcref" href="#src-13">[13]</a></li>
+        <li>Whole mouse brain: ~500 mm³ and several hundred petabytes; the named bottlenecks are sectioning reliability, storage, alignment, segmentation accuracy, and proofreading labor. <a class="srcref" href="#src-17">[17]</a></li>
+        <li>Even with state-of-the-art AI, the fly brain — the size of a poppy seed — took 287 human proofreaders to finish. <a class="srcref" href="#src-9">[9]</a></li>
+      </ul>
+      <p class="go-deeper">Go deeper on this site: <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">the scale arithmetic, worked out</a> · <a href="{{ '/datasets/workflow/' | relative_url }}">the pipeline, step by step</a></p>
+    </div>
+  </div>
+
+  <!-- ============ CHAPTER 8: CONNECTS ============ -->
   <div class="chapter" id="ch7">
-    <div class="chapter-head"><span class="chapter-num">7</span><h2>BRAIN CONNECTS: the summit push</h2></div>
+    <div class="chapter-head"><span class="chapter-num">8</span><h2>BRAIN CONNECTS: the summit push</h2></div>
     <div class="panel">
       <svg viewBox="0 0 900 420" role="img" aria-labelledby="p7-title">
         <title id="p7-title">A mountain named Mount Connectome with base camps flagged worm, fly, and cubic millimeter; climbers ascend toward a summit flag labeled whole mouse brain, with a distant peak labeled human brain in the clouds.</title>
@@ -933,6 +1052,28 @@ permalink: /book/
     </div>
     <p class="lede">In 2023, with the base camps established, NIH launched the summit push: <strong>BRAIN CONNECTS</strong> — Connectivity Across Scales.</p>
     <p>The program funds <strong>11 coordinated projects — roughly $150 million over five years, spanning more than 40 institutions</strong> — organized like a mountaineering expedition with three routes. One set of teams is scaling up electron-microscopy pipelines toward the first complete wiring diagram of a mammalian brain: the mouse. Another is developing DNA "barcoding" that labels each neuron with a genetic serial number, so brain-wide connections can be read out by sequencing. A third is building new imaging tools for the brains we ultimately care about most — non-human primates and humans — where slicing is not an option.</p>
+    <p>The three routes, explained like you're five:</p>
+    <div class="eli5-grid">
+      <div class="eli5-card">
+        <h4>📸 Slice &amp; photograph</h4>
+        <p>Cut the brain into film-thin slices, photograph every one under an electron microscope, and let AI follow each wire from photo to photo.</p>
+        <p class="pro"><strong>Superpower:</strong> sees every single connection, down to the last synapse.</p>
+        <p class="con"><strong>Price:</strong> mountains of data and years of careful checking.</p>
+      </div>
+      <div class="eli5-card">
+        <h4>🏷️ DNA name tags</h4>
+        <p>Give every neuron its own unique DNA "name tag." Wherever that neuron's wires travel, copies of the tag travel too — then DNA sequencing reads which tags ended up where.</p>
+        <p class="pro"><strong>Superpower:</strong> covers whole brains fast, without photographing everything.</p>
+        <p class="con"><strong>Price:</strong> tells you who connects to whom, but doesn't show you the wiring in pictures.</p>
+      </div>
+      <div class="eli5-card">
+        <h4>🩻 Gentler scanners</h4>
+        <p>For human and primate brains — which must never be sliced — build much sharper scanning and tracing tools that can follow wiring from outside the intact brain.</p>
+        <p class="pro"><strong>Superpower:</strong> works on the brains we ultimately want to heal.</p>
+        <p class="con"><strong>Price:</strong> sees the highways between regions, not every driveway.</p>
+      </div>
+    </div>
+    <p>CONNECTS funds all three on purpose. The photographs provide the ground truth, the name tags provide the reach, and the scanners carry the results toward human medicine — each route covering the others' blind spots.</p>
     <p>The flagship electron-microscopy effort — the project this website serves — is <strong>HI-MC, the center for high-throughput integrative mouse connectomics</strong>: Harvard, Princeton, Google Research, MIT, the Allen Institute, Cambridge, and Johns Hopkins APL, together mapping about <strong>10 cubic millimeters of the mouse hippocampal formation</strong> — the brain's memory headquarters, one of the first regions attacked by Alzheimer's disease. At ten times the volume of MICrONS and more than ten petabytes of expected imagery, it is deliberately sized to prove that the <em>whole</em> mouse brain — about 500 mm³, several hundred petabytes — is an engineering problem now, not a miracle. That is what a strategy looks like: each camp funds real science <em>and</em> retires the risk of the next climb.</p>
     <div class="evidence">
       <h3>The evidence</h3>
@@ -947,7 +1088,7 @@ permalink: /book/
 
   <!-- ============ CHAPTER 8 ============ -->
   <div class="chapter" id="ch8">
-    <div class="chapter-head"><span class="chapter-num">8</span><h2>What the map will do — and what it honestly won't</h2></div>
+    <div class="chapter-head"><span class="chapter-num">9</span><h2>What the map will do — and what it honestly won't</h2></div>
     <div class="panel">
       <svg viewBox="0 0 900 380" role="img" aria-labelledby="p8-title">
         <title id="p8-title">A split scene: on the left a crossed-out crystal ball labeled not a mind reader; on the right a doctor compares a healthy and a frayed circuit map beside a glowing 20-watt bulb and an AI chip.</title>
@@ -1035,7 +1176,7 @@ permalink: /book/
 
   <!-- ============ CHAPTER 9 ============ -->
   <div class="chapter" id="ch9">
-    <div class="chapter-head"><span class="chapter-num">9</span><h2>This map has room for your name on it</h2></div>
+    <div class="chapter-head"><span class="chapter-num">10</span><h2>This map has room for your name on it</h2></div>
     <div class="panel">
       <svg viewBox="0 0 900 380" role="img" aria-labelledby="p9-title">
         <title id="p9-title">A welcoming hall where diverse people trace glowing neurons on screens beneath a banner reading Open to Everyone; Maya holds the door open and waves the reader in.</title>

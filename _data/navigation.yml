@@ -81,6 +81,8 @@ items:
   - title: "About"
     url: "/frameworks/"
     dropdown:
+      - title: "The Illustrated Story"
+        url: "/book/"
       - title: "Learner Personas"
         url: "/avatars/"
       - title: "Frameworks"

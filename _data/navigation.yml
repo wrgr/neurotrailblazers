@@ -30,6 +30,8 @@ items:
         url: "/hidden-curriculum/"
       - title: "Datasets"
         url: "/datasets/"
+      - title: "Getting Started with Data"
+        url: "/datasets/getting-started/"
   - title: "Tracks"
     url: "/tracks/"
     dropdown:
@@ -45,6 +47,8 @@ items:
         url: "/modes/"
       - title: "Side Quests"
         url: "/side-quests/"
+      - title: "Open Problems"
+        url: "/open-problems/"
       - title: "Concept Explorer"
         url: "/concepts/"
   - title: "Technical Course"

@@ -33,9 +33,11 @@ content_type: core
 
 <div class="main-content">
 
-# Getting Started with EM Connectomics Datasets
+# Example Notebooks for EM Connectomics Datasets
 
-A guide to resources and example notebooks for accessing major public Electron Microscopy (EM) connectomics datasets.
+A collection of example notebooks for accessing major public Electron Microscopy (EM) connectomics datasets.
+
+<p><strong>New to the data entirely?</strong> Start with <a href="{{ '/datasets/getting-started/' | relative_url }}">Getting Started with Data</a> — the four-level ladder that tells you <em>which</em> of these ecosystems your question lives in, walks through token setup, and lists the failure signatures. The notebooks below are the per-platform examples behind it.</p>
 
 <div class="grid-md mt-2 mb-2">
   <div class="dataset-card">

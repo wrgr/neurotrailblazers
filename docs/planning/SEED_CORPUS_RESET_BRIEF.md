@@ -62,6 +62,26 @@ landmark papers twice. Nothing covered consortium authorship, tools with no publ
 or retracted work. The query now has an EDGE CASES section for each, plus eight
 self-consistency checks the run performs on its own output before reporting.
 
+**Bibliometric practice.** The steps described a literature search but did not say to
+*run* it like one. Added a BIBLIOMETRIC STANDARDS section: PRISMA-style search reporting
+so the run is reproducible; persistent author identifiers (ORCID and database author IDs)
+rather than name strings, which collide and are the largest source of author-attribution
+error; at least two databases with disagreements reported rather than silently resolved;
+year-normalised citation percentiles rather than raw counts, which systematically bury
+recent work; a capture-recapture coverage estimate from two independent strategies instead
+of asserting completeness; and concentration reporting by institution, journal, country
+and year, so a corpus that reflects one community's visibility says so.
+
+It also states plainly what the constraints only implied: **nothing is excluded for being
+awkward to cite.** Not massively multi-author papers — the flagship reconstructions carry
+hundreds of authors, which in this field signals a landmark dataset — and not works
+without a DOI. Verify, do not exclude; what cannot be verified is reported, not dropped.
+The same for language and country of origin.
+
+One useful discovery while checking: OpenAlex exposes `author_position` and
+`is_corresponding` per authorship, so the tier-1 criterion "last or corresponding author
+on three or more landmark papers" becomes something the run counts rather than judges.
+
 **No size cap.** An earlier draft asked for 120–180 papers. That contradicts this project's
 own stated design philosophy — *"Overcomplete > undercomplete. We can filter to find cores…
 Better to have the full network and prune than to miss important people."* Inclusion
@@ -287,6 +307,131 @@ different identifiers — preprint versus published is the common case, but also
 watch for a paper with two publisher DOIs, and for conference and journal
 versions of the same work. Keep one record per work.
 
+# BIBLIOMETRIC STANDARDS
+
+The steps below are a literature search. Run it the way a systematic review is
+run, not the way a reading list is assembled. These practices exist because
+every one of them corrects a known, measured bias.
+
+## Nothing is excluded for being awkward to cite
+
+Two categories were nearly lost to over-strict rules, and both are core here:
+
+  - **Massively multi-author papers.** The flagship reconstructions in this
+    field carry tens to hundreds of authors — one 2024 whole-brain paper has
+    close to three hundred. A long author list is a signal of a large
+    collaboration, which in this field usually means a landmark dataset. Never
+    down-rank or skip a paper for author count, and never abbreviate the list
+    in the data.
+  - **Works with no DOI.** Books, chapters, theses, technical reports, older
+    papers, standards, protocols. These are often the foundational references.
+    See EDGE CASES for how to record them.
+
+The rule is **verify, do not exclude**. A work you cannot verify goes to
+unverified_candidates with the reason — not into silence.
+
+Likewise do not exclude by language or country of origin. Note the language on
+the record. A corpus that is entirely English-language and entirely North
+American and European should say so in COVERAGE, because that is a finding
+about the search, not about the field.
+
+## Use persistent identifiers for people, not name strings
+
+Author name strings collide badly. "Lee K" matches many distinct researchers,
+and initial-only surnames are the single largest source of author-attribution
+error in bibliometrics.
+
+Wherever the source provides one, record the **ORCID** and the database's own
+author ID. OpenAlex returns both on each authorship
+(`authorships[].author.orcid` and `.id`), along with `author_position`,
+`is_corresponding`, `institutions` and `countries`.
+
+This matters directly for tiering: "last or corresponding author" is a fact you
+can **retrieve** from `author_position` and `is_corresponding`, not something to
+infer from a name's place in a rendered citation.
+
+## Query more than one database, and report where they disagree
+
+Every index has known coverage gaps. Crossref is publisher-deposited and
+inherits whatever publishers supply. OpenAlex is broader but has variable
+metadata quality. Semantic Scholar covers preprints and CS venues well. None is
+complete.
+
+Use at least two, and **report disagreements rather than silently picking one**.
+Where two sources give different author lists, years or venues for the same DOI,
+record which you used in `verified.source` and note the conflict. A disagreement
+between indexes is information about metadata reliability, not noise to smooth
+over.
+
+## Normalise citation counts; never compare raw ones
+
+Raw citation counts are not comparable across years — a 2015 paper has had a
+decade to accumulate what a 2025 paper has had months for. Ranking a corpus by
+raw count systematically buries recent work, which is precisely the failure a
+teaching corpus cannot afford.
+
+Where you use citation data for ranking, use **percentile within publication
+year** rather than the raw total. OpenAlex returns `counts_by_year`, which also
+lets you distinguish a paper accruing citations now from one that peaked years
+ago. Report both the percentile and the raw count so a reader can check.
+
+## Counterbalance preferential attachment
+
+Citation-graph expansion has a structural bias: it finds what is already
+well-connected. Highly cited work pulls in more neighbours, and recent or niche
+work — which has had no time to accumulate edges — is systematically missed.
+
+So the date-driven sweep in Step 1c is not redundant with the graph expansion.
+Run it independently and to completion, and report how many papers it found that
+the graph expansion did not. If that number is near zero, the sweep was not run
+independently enough.
+
+## Estimate coverage rather than asserting it
+
+"The search stopped yielding new papers" is not evidence of completeness — it is
+evidence that one strategy exhausted itself.
+
+Run two search strategies that are as independent as you can make them (for
+example: the institutional/funding route, and the subject-term literature
+sweep). Record how many papers each found, and how many both found. The overlap
+gives a rough capture-recapture estimate of the total:
+
+    estimated total  ≈  (found_by_A × found_by_B) / found_by_both
+
+Report all four numbers. Treat the estimate as indicative only — it assumes the
+two strategies are independent and equally likely to find any given paper, and
+neither assumption fully holds for literature search. It is still far more
+informative than a bare count, and a large gap between your corpus size and the
+estimate is a real signal that coverage is thin.
+
+## Report concentration
+
+A corpus dominated by one lab, one journal or one country is describing a
+research community's visibility, not its literature. In COVERAGE, report:
+
+  - share of papers from the top three institutions
+  - share from the top three journals
+  - distribution by country of the corresponding author
+  - publication-year histogram
+
+You are not required to fix an imbalance. You are required to surface it, so
+that whoever uses the corpus knows what they are looking at.
+
+## Report the search the way a systematic review reports it
+
+METHOD must let someone else re-run this and get approximately the same answer.
+For every search performed, record:
+
+  - the exact query string, verbatim
+  - the database and the date you ran it
+  - the number of results returned
+  - how many you screened, how many you included, how many you excluded
+  - the reasons for exclusion, in categories, with counts
+
+Then give the overall flow as a chain of numbers: records identified, duplicates
+removed, records screened, records excluded and why, records included. A search
+that cannot be re-run is not a method, it is an anecdote.
+
 # ON SIZE
 
 There is no target count and no cap. Include every paper meeting the inclusion
@@ -308,8 +453,10 @@ programmes, which are checkable:
      neuPrint, FlyWire, MICrONS/CAVE, DANDI, OpenOrganelle, WormWiring. Take the
      PIs, contributors and dataset papers those pages credit.
   c. LITERATURE SEARCH. Search the major indexes for the vocabulary listed in
-     BACKGROUND. Take both the most-cited and the most recent, separately, so
-     recency is not crushed by citation lag.
+     BACKGROUND. Run two passes and keep them separate: one ranked by citation
+     percentile within year, one ranked purely by date. The date pass is your
+     independent check on the citation graph, so run it to completion even when
+     it seems to be repeating work — see BIBLIOMETRIC STANDARDS.
 
 Record for every person and every paper how it entered. Anything with no
 derivation path is dropped, however plausible it looks.
@@ -317,9 +464,11 @@ derivation path is dropped, however plausible it looks.
 # STEP 2 — expand by citation graph
 
 Use OpenAlex (free, no key; `api.openalex.org/works/doi:{doi}` resolves a work
-and returns authorships, institutions, referenced works and citation counts) or
-Semantic Scholar or Crossref. Consult the current API documentation for filter
-syntax rather than assuming it.
+and returns authorships with ORCID and author IDs, institutions, countries,
+`author_position`, `is_corresponding`, referenced works, `counts_by_year` and
+language). Cross-check against at least one of Crossref or Semantic Scholar, and
+report disagreements per BIBLIOMETRIC STANDARDS. Consult the current API
+documentation for filter syntax rather than assuming it.
 
   a. FORWARD CITATIONS. For each corpus paper, retrieve the works citing it. A
      paper citing five or more corpus papers is a strong candidate.
@@ -370,8 +519,12 @@ Your job is the retrieval. That is the part that must not come from memory.
   Tier 4, emerging: first author on a high-impact paper from 2022 onward; active
     in an emerging subfield.
 
-Assign from retrieved evidence — authorship position, award role, tool
-authorship — and state the evidence for every tier-1 assignment.
+Assign from retrieved evidence, never from reputation. Authorship position is a
+retrievable fact: OpenAlex gives `author_position` and `is_corresponding` on
+each authorship, so "last or corresponding author on three or more landmark
+papers" is something you count, not something you judge. State the evidence for
+every tier-1 assignment, and identify people by ORCID or author ID wherever one
+exists — name strings collide.
 
 # STEP 4 — coverage
 
@@ -427,9 +580,13 @@ they catch the failures that are hardest to spot by reading.
   6. No record is retracted, unless flagged deliberately.
   7. The MRI share is roughly one in ten or lower. If it is higher, the field
      boundary in BACKGROUND was drawn wrong and the corpus needs re-filtering.
-  8. Every tier-1 assignment states its evidence.
+  8. Every tier-1 assignment states its evidence, counted from retrieved
+     authorship positions rather than judged.
+  9. No paper was excluded for author count or for lacking a DOI. If any was,
+     that is a bug — move it to unverified_candidates instead.
+ 10. Citation-based rankings used year-normalised percentiles, not raw counts.
 
-Report each as pass or fail with the count. A failed check is more useful to
+Report each of the ten as pass or fail with the count. A failed check is more useful to
 report than to quietly fix.
 
 
@@ -449,6 +606,10 @@ Then one JSON object per work:
 {
   "title": "exact title from the resolved record",
   "authors": ["Family Initials", "..."],   // complete, in order, transcribed
+  "author_ids": [                          // where the source provides them
+    {"name": "Family Initials", "orcid": "0000-...", "source_id": "A50...",
+     "position": "first|middle|last", "is_corresponding": false}
+  ],
   "authors_note": "only if a consortium is credited, or the list is unusual",
   "year": 2024,
   "journal": "container title; append '(preprint)' for an unpublished preprint",
@@ -458,6 +619,10 @@ Then one JSON object per work:
   "work_type": "article|review|preprint|book|chapter|software|dataset",
   "url": "URL you actually visited",
   "open_access": { "is_oa": true, "oa_status": "gold|hybrid|green|closed" },
+  "language": "en",
+  "citations": { "count": 0, "as_of": "YYYY-MM-DD",
+                 "percentile_in_year": 0.0 },   // normalised, see standards
+  "source_disagreement": "note it if two indexes differ on this record",
   "is_retracted": false,
   "notes_on_record": "correction, expression of concern, or nothing",
   "abstract_summary": "2-3 sentences, your words, on what it established and
@@ -479,11 +644,23 @@ Report the overall open-access share in COVERAGE.
 
 Plus these sections:
 
-  1. METHOD — APIs and sources used, date of retrieval, how the starting set was
-     derived, graph sizes and round count, and any step you could not complete.
+  1. METHOD — reported the way a systematic review reports a search. Every query
+     string verbatim, the database, the date, results returned, screened,
+     included, excluded with reasons and counts. Then the overall flow as a
+     chain of numbers. Plus: how the starting set was derived, graph sizes and
+     round count, and any step you could not complete.
+  1b. COVERAGE ESTIMATE — the capture-recapture numbers: how many papers each of
+     the two independent strategies found, how many both found, and the
+     resulting estimate, with the caveat that it is indicative only.
   2. INVESTIGATOR POOL — everyone derived, their tier, and their derivation path.
-  3. COVERAGE — per area, per tier, by year, by work type, and the open-access
-     share; which areas are thin and why.
+  3. COVERAGE — per area, per tier, by year, by work type, open-access share,
+     and language. Plus concentration: share from the top three institutions,
+     top three journals, and the distribution by corresponding-author country.
+     Which areas are thin and why. Surface imbalance; you are not asked to fix
+     it.
+  3b. INDEPENDENCE CHECK — how many papers the date-driven sweep found that the
+     citation-graph expansion did not. Near zero means the two were not
+     independent, which invalidates the coverage estimate above.
   4. SELF-TEST — result of Step 5.
   5. UNVERIFIED CANDIDATES — papers you believe belong but could not confirm,
      with what was missing. Expected to be non-empty; an empty section suggests

@@ -224,6 +224,79 @@ N4  [ 0   0   3   0   5   2   0   0   0   0 ]
 
 ---
 
+## Which of these survive an EM connectome
+
+The measures above are the standard network-science toolkit, and most of them
+were developed on graphs that differ from a connectome in ways that matter:
+complete, unweighted, unsigned, and not embedded in space. A nanoscale
+connectome is none of those things. Before applying any of them, work out which
+column you are in.
+
+| Measure | Sensitive to thresholding? | Sensitive to incompleteness? | Usable on a truncated volume? |
+|---|---|---|---|
+| **Degree** | Strongly — most edges are single-synapse | Strongly — boundary truncation removes real partners | Only for cells whose arbor is fully contained |
+| **Clustering coefficient** | Strongly | Strongly | Rarely |
+| **Path length / small-worldness** | Strongly | Severely — a missing edge can change many paths | No |
+| **Betweenness centrality** | Strongly | Severely, for the same reason | No |
+| **Modularity** | Moderately | Moderately | With care, if modules are local |
+| **Motif counts (local)** | Strongly | Moderately | Yes, within the contained region |
+| **Reciprocity** | Strongly | Moderately | Yes, for contained pairs |
+
+The pattern: **anything defined over global paths is the first thing to break,
+and the last thing people check.** Path length and betweenness assume you can
+see the whole graph. In a cubic millimetre of cortex you cannot — most
+long-range axons leave the volume — so a path-based statistic is measuring your
+volume boundary as much as the circuit.
+
+### Small-worldness in particular
+
+Small-worldness is the most-reported and least-informative statistic in this
+list. Two problems compound. First, it is weakly discriminating: an enormous
+range of networks satisfy it, so reporting that a connectome is small-world
+distinguishes it from very little. Second, it is highly sensitive to density
+and therefore to your synapse threshold — so a difference in small-worldness
+between two datasets can be a difference in how the graphs were built rather
+than in how the brains are wired.
+
+If you find yourself reporting it, ask what claim it is supporting that a more
+specific local statistic would not support better. Usually there is one, and
+usually it is a motif or a cell-type-pair connection probability.
+
+---
+
+## Working an analysis end to end
+
+The measures are easy; the decisions around them are the work. A defensible
+analysis states each decision before it produces a number.
+
+1. **Define the node set, and say what it excludes.** Cells with somata in the
+   volume? Cells with any process in it? The two differ by an order of
+   magnitude and support different claims. Truncated cells cannot carry degree.
+2. **Define the edge, and report the threshold.** Synapse count per ordered
+   pair, thresholded at some value. Re-run the analysis at two or three
+   thresholds and report whether the conclusion moves.
+3. **Pin the version.** Dataset, materialization, date, query. Without it the
+   analysis is not repeatable, including by you in six months.
+4. **Choose the null before you look.** For a spatially embedded,
+   degree-heterogeneous graph, Erdős–Rényi will call almost anything
+   structured. A degree-preserving configuration model controls for one thing;
+   a distance-preserving null controls for the one that usually dominates.
+   State which you pre-specified.
+5. **Correct for the tests you ran**, not only the ones you report. A triad
+   census is sixteen simultaneous tests.
+6. **Put an error band on it.** Inject merge and split errors at the rates your
+   dataset reports and re-measure. If the effect does not survive, that is the
+   result.
+
+Steps 4 through 6 are where most connectomics network analyses are weakest, and
+they are also where the reviewing is getting sharper. [Unit
+09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+works a reciprocity example in which the same data supports "2.9× enrichment,
+p < 10⁻⁶" or "no detectable effect" depending only on which null was chosen
+before any test ran.
+
+---
+
 ## Common misconceptions
 
 | Misconception | Reality | Teaching note |

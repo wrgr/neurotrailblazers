@@ -5,3 +5,12 @@
 .bundle/
 /_site/
 /vendor/bundle/
+
+# Marp PowerPoint exports. Rendered on demand with `./scripts/render_marp.sh --pptx`,
+# never committed: 35 of them came to 88 MB against a repo history already at 279 MB,
+# and every content edit re-committed all of them. The HTML decks are committed and
+# are what the site links to; the .marp.md sources are what you fork to adapt a deck.
+course/decks/marp/out/**/*.pptx
+
+# Marp CLI is installed with --no-save when decks need rendering; never committed.
+node_modules/

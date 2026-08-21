@@ -46,6 +46,31 @@ jobs:
       - name: Technical evidence validation
         run: ruby scripts/validate_technical_evidence.rb
 
+      # The journal paper hubs are hand-maintained markdown describing a data file, so
+      # they drift silently. They had drifted three ways at once: a "100+" total against
+      # 96 real entries, a documented schema naming two fields present on none of the
+      # 200 records, and unchecked per-dimension counts. Each gate here was verified by
+      # injecting a fault.
+      - name: Journal paper count and schema validation
+        run: ruby scripts/validate_paper_counts.rb
+
+      # The published decks under course/decks/marp/out/ are what instructors open.
+      # 29 of 35 had gone stale: sources regenerated, outputs not, so every "Open deck"
+      # link served content that no longer matched its module page. Nothing caught it
+      # because mtimes do not survive a clone, making "output older than source?"
+      # unanswerable in CI. render_marp.sh now records a SHA-256 per source and this
+      # compares the live sources against it. Gate verified by injecting a fault.
+      - name: Deck freshness
+        run: ruby scripts/check_deck_freshness.rb
+
+      # The dictionary page tells readers its entries carry a typical value, a
+      # why-it-matters line and the common confusion, and calls the second "the
+      # real content". Of 127 terms, 79 had matters, 27 had typical and 8 had
+      # confuse. Same defect class as the "100+ papers" claim, so the same
+      # treatment. Gate verified by injection.
+      - name: Dictionary completeness
+        run: ruby scripts/validate_dictionary.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

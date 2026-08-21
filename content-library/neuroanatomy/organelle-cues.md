@@ -268,8 +268,7 @@ Step-by-step organelle analysis:
 1. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 2. Lewis TL, Kwon SK, Lee A, et al. (2018) "MFF-dependent mitochondrial fission regulates presynaptic release and axon branching by limiting axonal mitochondria size." *Nature Communications* 9:5008.
 3. Steward O, Levy WB (1982) "Preferential localization of polyribosomes under the base of dendritic spines in granule cells of the dentate gyrus." *Journal of Neuroscience* 2:284-291.
-4. Bhatt DH, Zhang S, Bhatt WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
-5. Bhatt DH, Harris KM (2004) "Bhatt and Harris on mitochondria distribution in neuronal compartments." Reference for compartment-specific organelle analysis.
+4. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
 6. Spacek J, Harris KM (1997) "Three-dimensional organization of smooth endoplasmic reticulum in hippocampal CA1 dendrites." *Journal of Neuroscience* 17:190-203.
 7. Nixon RA (2013) "The role of autophagy in neurodegenerative disease." *Nature Medicine* 19:983-997.
 

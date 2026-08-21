@@ -48,7 +48,7 @@ Glia outnumber neurons in many brain regions and occupy a substantial fraction o
 
 ### The scale of the problem
 
-In mammalian cortex, approximately 20-40% of the tissue volume is occupied by glial cells and their processes (depending on region and species). In a densely segmented EM volume:
+In mammalian cortex a large share of the tissue volume - commonly estimated in the range of a fifth to two fifths, though it varies enough with region, species and how "glial volume" is defined that you should treat any single figure as indicative - is occupied by glial cells and their processes. In a densely segmented EM volume:
 
 - **Astrocytic processes** form a fine meshwork that ensheathe synapses, contact blood vessels, and interleave with neuronal processes throughout the neuropil
 - **Oligodendrocyte processes** extend myelin sheaths that wrap many axons

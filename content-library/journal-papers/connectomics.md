@@ -76,7 +76,7 @@ Curated papers on connectome graph analysis, network properties, circuit motifs,
 
 ## 3. Varshney et al. (2011) — Structural Properties of the C. elegans Neuronal Network
 
-**Citation:** Varshney LR, Chen BL, Paniagua E, Hall DH, Bhatt DB. Structural properties of the network of the *Caenorhabditis elegans*. *PLoS Computational Biology*. 2011;7(2):e1001066.
+**Citation:** Varshney LR, Chen BL, Paniagua E, Hall DH, Chklovskii DB. Structural properties of the network of the *Caenorhabditis elegans*. *PLoS Computational Biology*. 2011;7(2):e1001066.
 **DOI:** [10.1371/journal.pcbi.1001066](https://doi.org/10.1371/journal.pcbi.1001066)
 
 **Tags:** `connectomics:graph-theory` `connectomics:degree-distribution` `connectomics:small-world` `connectomics:hub` `connectomics:community-detection` `case-studies:C-elegans` `methodology:statistical-analysis`

@@ -274,24 +274,52 @@ propagated to the wrong fragment.
 
 ## 6. Relative Frequency and Impact Hierarchy
 
-Based on reports from large-scale proofreading campaigns:
+**There is no field-wide error frequency distribution, and you should be
+suspicious of any table that offers one.** The merge/split ratio is not a
+property of connectomics; it is an *output* of the agglomeration threshold,
+which is a dial the pipeline sets. Plaza, Scheffer & Chklovskii (2014) make the
+point directly: a conservative (high) threshold produces more splits and fewer
+merges, and an aggressive (low) threshold does the reverse. Two groups running
+different thresholds on the same volume get different distributions, and both
+are correct about their own data.
 
-| Error type | Approximate frequency | Downstream impact | Detectability |
+So the useful hierarchy is by **cost**, which is stable across pipelines, rather
+than by frequency, which is not:
+
+| Error type | Downstream impact | Detectability | Cost to fix |
 |---|---|---|---|
-| Merge errors | 40-60 % of all errors | Very high | Moderate (3D inspection) |
-| Split errors | 30-50 % of all errors | High | Moderate (dead-end search) |
-| Boundary errors | 5-15 % of all errors | Moderate | Low (quantitative only) |
-| Identity errors | < 2 % of all errors | Very high per instance | Very low |
+| **Merge** | Very high — manufactures connections that do not exist, and propagates along the merged object | **Poor.** The merged object still looks like a plausible neuron | High: requires locating the join, often across many sections |
+| **Split** | High — removes real connections, biased toward thin processes | Good. Dead ends are visible and searchable | Low: joining is a single operation |
+| **Boundary** | Moderate — biases spine volume, bouton size, synapse area | Poor. Only visible quantitatively | Moderate |
+| **Identity** | Very high per instance | Very poor | High, and often introduced *by* proofreading |
 
-Berger et al. (2018) found that in the Drosophila medulla, merge errors
-dominated in dense neuropil while split errors dominated in regions with
-thin axonal processes. Plaza et al. (2014) reported similar patterns in
-the Drosophila optic lobe, noting that the ratio of merge to split errors
-depends heavily on the agglomeration threshold used in the pipeline: a
-conservative (high) threshold produces more splits and fewer merges, while
-an aggressive (low) threshold produces more merges and fewer splits.
+The asymmetry that matters is between the second and third columns: **the errors
+that are easy to see are the cheap ones**. A segmentation tuned to minimise
+visible error is tuned to maximise the error that corrupts connectivity.
 
----
+### What to measure on your own volume
+
+Rather than importing a frequency table, get the distribution for the pipeline
+and tissue you are actually working with:
+
+1. Take a small subvolume and reconstruct it densely by hand, or use an existing
+   gold standard for the same dataset.
+2. Compare against the automated segmentation, and count merges and splits
+   separately. Report them separately — a summed VI hides which dominates.
+3. Repeat at two agglomeration thresholds. The change between them tells you how
+   much of your error population is a choice rather than a limitation.
+
+That number is worth more than any published range, because it is the one your
+proofreading budget has to absorb. Unit 03's pilot reconstruction exists for
+exactly this purpose, and Unit 08's planning lab is built around it.
+
+### On automated error detection
+
+Detector performance is likewise pipeline- and dataset-specific, and is reported
+per class. Two things hold generally enough to plan around: recall is lower for
+splits than for merges, and no current detector is complete enough that a human
+verification pass on a sample can be skipped. Quote the recall figure from the
+detector you are using, on data resembling yours — not a range from a review.
 
 ## 7. Common Misconceptions
 
@@ -302,7 +330,7 @@ an aggressive (low) threshold produces more merges and fewer splits.
 | "Split errors are less harmful than merge errors." | For connectivity analysis, split errors cause missing edges, which can be just as damaging as the false edges from merges, depending on the scientific question. |
 | "Boundary errors don't matter." | For any analysis involving synapse assignment or fine morphological measurement (spine volume, bouton size), boundary errors are critically important. |
 | "More proofreading always helps." | Poorly executed proofreading can introduce new errors (especially identity errors). Quality-controlled proofreading with verification is essential. |
-| "Automated error detection finds all errors." | Current detectors have recall of 60-80 % for merge errors and lower for splits. Many errors remain undetected by automated methods. |
+| "Automated error detection finds all errors." | No current detector is complete. Recall is reported per class and is consistently lower for splits than for merges, so a human verification pass on a sample cannot be skipped. Quote the figure from the detector you are actually running. |
 
 ---
 
@@ -315,8 +343,9 @@ an aggressive (low) threshold produces more merges and fewer splits.
   Saalfeld, S., & Turaga, S. C. (2017). A deep structured learning
   approach towards automating connectome reconstruction from 3D electron
   microscopy data. *arXiv preprint arXiv:1709.02974*.
-- Lee, K., Lu, R., Luther, K., & Bhatt, M. (2019). Superhuman accuracy on
-  the SNEMI3D connectomics benchmark. *arXiv preprint arXiv:1706.00120*.
+- Lee, K., Zung, J., Li, P., Jain, V., & Seung, H. S. (2017). Superhuman
+  accuracy on the SNEMI3D connectomics challenge. *arXiv preprint
+  arXiv:1706.00120*.
 - Plaza, S. M., Scheffer, L. K., & Chklovskii, D. B. (2014). Toward
   large-scale connectome reconstructions. *Current Opinion in
   Neurobiology*, 25, 201-210.

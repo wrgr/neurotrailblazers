@@ -59,6 +59,16 @@ email: "info@neurotrailblazers.org"
 twitter_username: neurotrailblazers
 github_username: wrgr
 
+# Base URL for linking a Marp slide source on GitHub.
+#
+# The .marp.md sources are excluded from the build (see `exclude` below) because
+# Jekyll would render them as unstyled duplicate pages, so they cannot be linked
+# as site paths. Markdown is the format worth handing someone who wants to adapt
+# a deck rather than present it as-is, and the repo is where they would fork it
+# from anyway. Kept here so the deck links live in one place instead of across
+# ~60 generated and hand-maintained pages.
+deck_source_base: "https://github.com/wrgr/neurotrailblazers/blob/main/course/decks/marp"
+
 # Navigation (backup — primary source is _data/navigation.yml)
 navigation:
   - title: "Home"

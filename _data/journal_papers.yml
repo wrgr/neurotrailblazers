@@ -8,7 +8,7 @@ papers:
   title: A connectome and analysis of the adult Drosophila central brain
   authors: Scheffer, Xu, Januszewski et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.57443
   dimension: connectomics
   reading_phase: 0_orientation
@@ -40,7 +40,7 @@ papers:
   title: A genetic, genomic, and computational resource for exploring neural circuit function
   authors: Davis, Nern, Picard et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.50901
   dimension: cell-types
   reading_phase: 2_core_methods
@@ -72,7 +72,7 @@ papers:
   title: Connectomes across development reveal principles of brain maturation
   authors: Witvliet, Mulcahy, Mitchell et al.
   year: 2021
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-021-03778-8
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -103,7 +103,7 @@ papers:
   title: Collective dynamics of ‘small-world’ networks
   authors: Watts, Strogatz
   year: 1998
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/30918
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -134,7 +134,7 @@ papers:
   title: The connectome of an insect brain
   authors: Winding, Pedigo, Barnes et al.
   year: 2023
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.add9330
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -166,7 +166,7 @@ papers:
   title: Neuronal wiring diagram of an adult brain
   authors: Dorkenwald, Matsliah, Sterling et al.
   year: 2024
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-024-07558-y
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -198,7 +198,7 @@ papers:
   title: Autophagy-Independent Functions of the Autophagy Machinery
   authors: Galluzzi, Green
   year: 2019
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2019.05.026
   dimension: methods-general
   reading_phase: 0_orientation
@@ -228,7 +228,7 @@ papers:
   title: The structure of the nervous system of the nematode <i>Caenorhabditis elegans</i>
   authors: White, Southgate, Thomson et al.
   year: 1986
-  journal: ''
+  journal: 'Philosophical Transactions of the Royal Society of London. B, Biological Sciences'
   doi: 10.1098/rstb.1986.0056
   dimension: connectomics
   reading_phase: 1_foundations
@@ -259,8 +259,7 @@ papers:
   title: Random Graphs
   authors: Bollobás
   year: 1985
-  journal: ''
-  doi: 'null'
+  journal: 'Academic Press'
   dimension: graph-analysis
   reading_phase: 1_foundations
   composite_score: 0.3384
@@ -289,7 +288,7 @@ papers:
   title: 'Molecular mechanisms of cell death: recommendations of the Nomenclature Committee on Cell Death 2018'
   authors: Galluzzi, Vitale, Aaronson et al.
   year: 2018
-  journal: ''
+  journal: 'Cell Death &amp; Differentiation'
   doi: 10.1038/s41418-017-0012-4
   dimension: methods-general
   reading_phase: 0_orientation
@@ -319,7 +318,7 @@ papers:
   title: A Connectome of the Adult <i>Drosophila</i> Central Brain
   authors: Xu, Januszewski, Lu et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.01.21.911859
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -351,7 +350,7 @@ papers:
   title: 'Fiji: an open-source platform for biological-image analysis'
   authors: Schindelin, Arganda‐Carreras, Frise et al.
   year: 2012
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/nmeth.2019
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -383,7 +382,7 @@ papers:
   title: Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue Nanostructure
   authors: Denk, Horstmann
   year: 2004
-  journal: ''
+  journal: 'PLoS Biology'
   doi: 10.1371/journal.pbio.0020329
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -414,7 +413,7 @@ papers:
   title: A petascale automated imaging pipeline for mapping neuronal circuits with high-throughput transmission electron microscopy
   authors: Yin, Brittain, Borseth et al.
   year: 2020
-  journal: ''
+  journal: 'Nature Communications'
   doi: 10.1038/s41467-020-18659-3
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -446,7 +445,7 @@ papers:
   title: A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution
   authors: Shapson-Coe, Januszewski, Berger et al.
   year: 2024
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.adk4858
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -478,7 +477,7 @@ papers:
   title: A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster
   authors: Zheng, Lauritzen, Perlman et al.
   year: 2018
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2018.06.019
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -510,7 +509,7 @@ papers:
   title: The connectome of the adult Drosophila mushroom body provides insights into function
   authors: Li, Lindsey, Marin et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.62576
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -542,7 +541,7 @@ papers:
   title: 'Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing'
   authors: Benjamini, Hochberg
   year: 1995
-  journal: ''
+  journal: 'Journal of the Royal Statistical Society Series B: Statistical Methodology'
   doi: 10.1111/j.2517-6161.1995.tb02031.x
   dimension: methods-general
   reading_phase: 1_foundations
@@ -572,7 +571,7 @@ papers:
   title: '<i>neu</i> Print: Analysis Tools for EM Connectomics'
   authors: Clements, Dolafi, Umayam et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.01.16.909465
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -604,7 +603,7 @@ papers:
   title: Emergence of Scaling in Random Networks
   authors: Barabási, Albert
   year: 1999
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.286.5439.509
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -634,7 +633,7 @@ papers:
   title: Basic local alignment search tool
   authors: Altschul, Gish, Miller et al.
   year: 1990
-  journal: ''
+  journal: 'Journal of Molecular Biology'
   doi: 10.1016/s0022-2836(05)80360-2
   dimension: methods-general
   reading_phase: 1_foundations
@@ -664,7 +663,7 @@ papers:
   title: The natverse, a versatile toolbox for combining and analysing neuroanatomical data
   authors: Bates, Manton, Jagannathan et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.53350
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -696,7 +695,7 @@ papers:
   title: 'U-Net: Convolutional Networks for Biomedical Image Segmentation'
   authors: Ronneberger, Fischer, Brox
   year: 2015
-  journal: ''
+  journal: 'Lecture Notes in Computer Science'
   doi: 10.1007/978-3-319-24574-4_28
   dimension: segmentation
   reading_phase: 2_core_methods
@@ -727,7 +726,7 @@ papers:
   title: Deep learning
   authors: LeCun, Bengio, Hinton
   year: 2015
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature14539
   dimension: neuroai
   reading_phase: 0_orientation
@@ -757,7 +756,7 @@ papers:
   title: ImageNet classification with deep convolutional neural networks
   authors: Krizhevsky, Sutskever, Hinton
   year: 2017
-  journal: ''
+  journal: 'Communications of the ACM'
   doi: 10.1145/3065386
   dimension: neuroai
   reading_phase: 2_core_methods
@@ -788,7 +787,7 @@ papers:
   title: “Mini-mental state”
   authors: Folstein, Folstein, McHugh
   year: 1975
-  journal: ''
+  journal: 'Journal of Psychiatric Research'
   doi: 10.1016/0022-3956(75)90026-6
   dimension: methods-general
   reading_phase: 1_foundations
@@ -818,7 +817,7 @@ papers:
   title: Connectomic reconstruction of the inner plexiform layer in the mouse retina
   authors: Helmstaedter, Briggman, Turaga et al.
   year: 2013
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature12346
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -850,7 +849,7 @@ papers:
   title: Controllability of complex networks
   authors: Liu, Slotine, Barabási
   year: 2011
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature10011
   dimension: graph-analysis
   reading_phase: 2_core_methods
@@ -881,7 +880,7 @@ papers:
   title: Gradient-based learning applied to document recognition
   authors: LeCun, Bottou, Bengio et al.
   year: 1998
-  journal: ''
+  journal: 'Proceedings of the IEEE'
   doi: 10.1109/5.726791
   dimension: neuroai
   reading_phase: 1_foundations
@@ -912,7 +911,7 @@ papers:
   title: Complete Connectomic Reconstruction of Olfactory Projection Neurons in the Fly Brain
   authors: Bates, Schlegel, Roberts et al.
   year: 2020
-  journal: ''
+  journal: 'Current Biology'
   doi: 10.1016/j.cub.2020.06.042
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -944,7 +943,7 @@ papers:
   title: Chandelier cell anatomy and function reveal a variably distributed but common signal
   authors: Schneider-Mizell, Bodor, Collman et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.03.31.018952
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -976,7 +975,7 @@ papers:
   title: Distributed Hierarchical Processing in the Primate Cerebral Cortex
   authors: Felleman, Essen
   year: 1991
-  journal: ''
+  journal: 'Cerebral Cortex'
   doi: 10.1093/cercor/1.1.1
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -1007,7 +1006,7 @@ papers:
   title: MizAR 60 for Mizar 50
   authors: Jan, Karel, Zarathustra et al.
   year: 2023
-  journal: ''
+  journal: 'Leibniz International Proceedings in Informatics (LIPIcs)'
   doi: 10.4230/lipics.itp.2023.19
   dimension: neuroai
   reading_phase: 4_frontiers
@@ -1037,7 +1036,7 @@ papers:
   title: Accelerated EM Connectome Reconstruction using 3D Visualization and Segmentation Graphs
   authors: Hubbard, Berg, Zhao et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.01.17.909572
   dimension: proofreading
   reading_phase: 2_core_methods
@@ -1069,7 +1068,7 @@ papers:
   title: Imaging Neuronal Subsets in Transgenic Mice Expressing Multiple Spectral Variants of GFP
   authors: Feng, Mellor, Bernstein et al.
   year: 2000
-  journal: ''
+  journal: 'Neuron'
   doi: 10.1016/s0896-6273(00)00084-2
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -1101,7 +1100,7 @@ papers:
   title: Distinctive Image Features from Scale-Invariant Keypoints
   authors: Lowe
   year: 2004
-  journal: ''
+  journal: 'International Journal of Computer Vision'
   doi: 10.1023/b:visi.0000029664.99615.94
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -1132,7 +1131,7 @@ papers:
   title: 'NIH Image to ImageJ: 25 years of image analysis'
   authors: Schneider, Rasband, Eliceiri
   year: 2012
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/nmeth.2089
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -1164,7 +1163,7 @@ papers:
   title: 'Matrix Metalloproteinases and Other Matrix Proteinases in Relation to Cariology: The Era of ‘Dentin Degradomics'''
   authors: Tjäderhane, Buzalaf, Carrilho et al.
   year: 2015
-  journal: ''
+  journal: 'Caries Research'
   doi: 10.1159/000363582
   dimension: methods-general
   reading_phase: 0_orientation
@@ -1193,7 +1192,7 @@ papers:
   title: Binary and analog variation of synapses between cortical pyramidal neurons
   authors: Dorkenwald, Turner, Macrina et al.
   year: 2022
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.76120
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -1225,7 +1224,7 @@ papers:
   title: Cell-type specific innervation of cortical pyramidal cells at their apical dendrites
   authors: Karimi, Odenthal, Drawitsch et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.46876
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -1257,7 +1256,7 @@ papers:
   title: Neural circuit mechanisms for steering control in <i>walking Drosophila</i>
   authors: Rayshubskiy, Holtz, Bates et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.1101/2020.04.04.024703
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -1289,7 +1288,7 @@ papers:
   title: Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster
   authors: Eckstein, Bates, Champion et al.
   year: 2024
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2024.03.016
   dimension: cell-types
   reading_phase: 4_frontiers
@@ -1321,7 +1320,7 @@ papers:
   title: 'Scikit-learn: Machine Learning in Python'
   authors: Pedregosa, Varoquaux, Gramfort et al.
   year: 2012
-  journal: ''
+  journal: 'arXiv (preprint)'
   doi: 10.48550/arxiv.1201.0490
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -1353,8 +1352,7 @@ papers:
   title: Co-Planar Stereotaxic Atlas of the Human Brain
   authors: Talairach, Tournoux
   year: 1988
-  journal: ''
-  doi: 'null'
+  journal: 'Thieme'
   dimension: neuroanatomy
   reading_phase: 1_foundations
   composite_score: 0.1583
@@ -1384,7 +1382,7 @@ papers:
   title: Oscillatory responses in cat visual cortex exhibit inter-columnar synchronization which reflects global stimulus properties
   authors: Gray, König, Engel et al.
   year: 1989
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/338334a0
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -1415,7 +1413,7 @@ papers:
   title: An Individual Interneuron Participates in Many Kinds of Inhibition and Innervates Much of the Mouse Visual Thalamus
   authors: Morgan, Lichtman
   year: 2020
-  journal: ''
+  journal: 'Neuron'
   doi: 10.1016/j.neuron.2020.02.001
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -1447,7 +1445,7 @@ papers:
   title: Short-Term Effects of Nose-Only Cigarette Smoke Exposure on Glutathione Redox Homeostasis, Cytochrome P450 1A1/2 and Respiratory Enzyme Activities in Mice Tissues
   authors: Raza, John, Nemmar
   year: 2013
-  journal: ''
+  journal: 'Cellular Physiology and Biochemistry'
   doi: 10.1159/000350087
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -1477,7 +1475,7 @@ papers:
   title: 'The natverse: a versatile computational toolbox to combine and analyse neuroanatomical data'
   authors: Bates, Manton, Jagannathan et al.
   year: 2014
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/006353
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -1509,7 +1507,7 @@ papers:
   title: Towards neural circuit reconstruction with volume electron microscopy techniques
   authors: Briggman, Denk
   year: 2006
-  journal: ''
+  journal: 'Current Opinion in Neurobiology'
   doi: 10.1016/j.conb.2006.08.010
   dimension: image-acquisition
   reading_phase: 0_orientation
@@ -1541,7 +1539,7 @@ papers:
   title: Measuring inconsistency in meta-analyses
   authors: Higgins, Thompson, Deeks et al.
   year: 2003
-  journal: ''
+  journal: 'BMJ'
   doi: 10.1136/bmj.327.7414.557
   dimension: methods-general
   reading_phase: 0_orientation
@@ -1571,7 +1569,7 @@ papers:
   title: Microcircuitry of bipolar cells in cat retina
   authors: McGuire, Stevens, Sterling
   year: 1984
-  journal: ''
+  journal: 'The Journal of Neuroscience'
   doi: 10.1523/jneurosci.04-12-02920.1984
   dimension: connectomics
   reading_phase: 1_foundations
@@ -1603,7 +1601,7 @@ papers:
   title: 'CATMAID: collaborative annotation toolkit for massive amounts of image data'
   authors: Saalfeld, Cardona, Hartenstein et al.
   year: 2009
-  journal: ''
+  journal: 'Bioinformatics'
   doi: 10.1093/bioinformatics/btp266
   dimension: proofreading
   reading_phase: 1_foundations
@@ -1635,7 +1633,7 @@ papers:
   title: Diameter of the World-Wide Web
   authors: Albert, Jeong, Barabási
   year: 1999
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/43601
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -1665,7 +1663,7 @@ papers:
   title: Network anatomy and in vivo physiology of visual cortical neurons
   authors: Bock, Lee, Kerlin et al.
   year: 2011
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature09802
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -1697,7 +1695,7 @@ papers:
   title: A Threshold Selection Method from Gray-Level Histograms
   authors: Otsu
   year: 1979
-  journal: ''
+  journal: 'IEEE Transactions on Systems, Man, and Cybernetics'
   doi: 10.1109/tsmc.1979.4310076
   dimension: segmentation
   reading_phase: 1_foundations
@@ -1728,7 +1726,7 @@ papers:
   title: An unbiased template of the Drosophila brain and ventral nerve cord
   authors: Bogovic, Otsuna, Heinrich et al.
   year: 2020
-  journal: ''
+  journal: 'PLOS ONE'
   doi: 10.1371/journal.pone.0236495
   dimension: neuroanatomy
   reading_phase: 2_core_methods
@@ -1760,7 +1758,7 @@ papers:
   title: 'neuPrint: An open access tool for EM connectomics'
   authors: Plaza, Clements, Dolafi et al.
   year: 2022
-  journal: ''
+  journal: 'Frontiers in Neuroinformatics'
   doi: 10.3389/fninf.2022.896292
   dimension: infrastructure
   reading_phase: 4_frontiers
@@ -1792,7 +1790,7 @@ papers:
   title: Imaging Intracellular Fluorescent Proteins at Nanometer Resolution
   authors: Betzig, Patterson, Sougrat et al.
   year: 2006
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.1127344
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -1824,7 +1822,7 @@ papers:
   title: 'Array Tomography: A New Tool for Imaging the Molecular Architecture and Ultrastructure of Neural Circuits'
   authors: Micheva, Smith
   year: 2007
-  journal: ''
+  journal: 'Neuron'
   doi: 10.1016/j.neuron.2007.06.014
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -1856,7 +1854,7 @@ papers:
   title: 'Image quality assessment: from error visibility to structural similarity'
   authors: Wang, Bovik, Sheikh et al.
   year: 2004
-  journal: ''
+  journal: 'IEEE Transactions on Image Processing'
   doi: 10.1109/tip.2003.819861
   dimension: methods-general
   reading_phase: 1_foundations
@@ -1888,7 +1886,7 @@ papers:
   title: Bias in meta-analysis detected by a simple, graphical test
   authors: Egger, Smith, Schneider et al.
   year: 1997
-  journal: ''
+  journal: 'BMJ'
   doi: 10.1136/bmj.315.7109.629
   dimension: methods-general
   reading_phase: 1_foundations
@@ -1916,43 +1914,11 @@ papers:
   - How might publication bias affect meta-analyses of synapse density or cell-type abundance estimates across different connectomics studies or labs?
   - What are the limitations of funnel plot asymmetry tests when applied to a small number of connectomics or neuroanatomy studies, and what alternatives exist?
   - Beyond publication bias, what other sources of heterogeneity in connectomics datasets could produce funnel plot asymmetry, and how would you distinguish them?
-- id: co-planar-stereotaxic-atlas-of-the-human-brain
-  title: Co-planar stereotaxic atlas of the human brain
-  authors: Laitinen
-  year: 1989
-  journal: ''
-  doi: 10.1016/0303-8467(89)90128-5
-  dimension: neuroanatomy
-  reading_phase: 1_foundations
-  composite_score: 0.13
-  role: methods
-  tags:
-  - neuroanatomy:brain-atlas
-  - species:human
-  - method:stereotaxic-coordinates
-  - imaging:structural-mri
-  - phase:foundations
-  - method:spatial-normalization
-  ocar:
-    opportunity: Neuroimaging and neuroanatomy studies require a standardized coordinate system to report brain locations and compare findings across individuals and studies, but no widely adopted spatial reference for the human brain existed.
-    challenge: The human brain varies substantially in size and shape across individuals, making it difficult to define universal coordinates that meaningfully correspond to the same anatomical structures in different people.
-    action: Talairach and Tournoux constructed a stereotaxic co-planar atlas of the human brain based on a single post-mortem specimen, defining a coordinate system anchored to the anterior and posterior commissures (AC-PC line). The atlas provides anatomical labels in 3D Talairach space that can be applied to any brain after linear transformation.
-    resolution: The Talairach coordinate system became the de facto standard for reporting functional neuroimaging (PET, fMRI) and neuroanatomy results for decades, enabling cross-study comparison of activation foci and lesion locations. It provided the conceptual framework upon which MNI and other modern brain atlases were built.
-    future_work: The Talairach atlas is based on a single individual and uses linear normalization, which inadequately handles inter-individual variability; population-average probabilistic atlases (e.g., MNI152) and non-linear registration methods have largely replaced it in modern neuroimaging.
-  plain_language_summary: To compare brain scan results across different people and different labs, scientists needed a shared address system for the brain — like GPS coordinates but for neuroanatomy. This atlas created a standard coordinate grid based on a single human brain, allowing researchers to say 'activity was seen at coordinates X, Y, Z' and have everyone understand the same location. It became the foundation for decades of human neuroimaging research.
-  summaries:
-    beginner: This atlas created a standard map of the human brain with a coordinate system, so that scientists studying different people's brains can all use the same address system to locate structures. Before this, there was no common language for saying exactly where in the brain something was found. It enabled the first systematic comparisons of brain activity across different experiments and individuals.
-    intermediate: The Talairach coordinate system is defined by a piecewise linear transformation that maps any individual brain onto a reference space anchored by the anterior and posterior commissures. Despite being derived from a single specimen, it enabled the first large-scale meta-analyses of PET and fMRI activation data. In modern connectomics, the concept of a reference coordinate system underpins all brain atlas efforts, from the Allen Brain Atlas to the Drosophila JRC2018 template.
-    advanced: 'The Talairach atlas''s fundamental limitation — using a single, aged, female specimen for a reference presumed to represent all human brains — motivated the development of the MNI152 probabilistic average template derived from 152 individuals. The piecewise linear normalization (12 octants) is systematically outperformed by non-linear diffeomorphic registration (ANTs, FSL FNIRT) for inter-subject alignment. Nevertheless, the Talairach framework established the key conceptual requirement for any connectomics or neuroimaging atlas: a consistent spatial reference enabling cross-study comparison, a principle directly applied in large EM connectomics projects through template brain construction and registration pipelines.'
-  discussion_prompts:
-  - What are the consequences of basing a universal human brain coordinate system on a single individual, and how do modern probabilistic atlases address this problem?
-  - How does the concept of a stereotaxic atlas translate from human neuroimaging to EM connectomics, where single-animal reconstructions serve as the reference?
-  - In what ways does inter-individual variability in brain structure challenge the goal of a universal neural wiring diagram, whether in humans or in Drosophila?
 - id: reconstruction-of-motor-control-circuits-in-adult-drosophila
   title: Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy
   authors: Phelps, Hildebrand, Graham et al.
   year: 2021
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2020.12.013
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -1984,7 +1950,7 @@ papers:
   title: Recurrent architecture for adaptive regulation of learning in the insect brain
   authors: Eschbach, Fushiki, Winding et al.
   year: 2020
-  journal: ''
+  journal: 'Nature Neuroscience'
   doi: 10.1038/s41593-020-0607-9
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -2016,7 +1982,7 @@ papers:
   title: Statistical mechanics of complex networks
   authors: Albert, Barabási
   year: 2002
-  journal: ''
+  journal: 'Reviews of Modern Physics'
   doi: 10.1103/revmodphys.74.47
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -2048,7 +2014,7 @@ papers:
   title: 'Synaptic organization of starburst amacrine cells in rabbit retina: Analysis of serial thin sections by electron microscopy and graphic reconstruction'
   authors: Famiglietti
   year: 1991
-  journal: ''
+  journal: 'Journal of Comparative Neurology'
   doi: 10.1002/cne.903090105
   dimension: connectomics
   reading_phase: 1_foundations
@@ -2080,7 +2046,7 @@ papers:
   title: 'FlyWire: online community for whole-brain connectomics'
   authors: Dorkenwald, McKellar, Macrina et al.
   year: 2021
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/s41592-021-01330-0
   dimension: proofreading
   reading_phase: 4_frontiers
@@ -2112,7 +2078,7 @@ papers:
   title: Multicolor and Electron Microscopic Imaging of Connexin Trafficking
   authors: Gaietta, Deerinck, Adams et al.
   year: 2002
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.1068793
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -2144,7 +2110,7 @@ papers:
   title: 'Ferroptosis: An Iron-Dependent Form of Nonapoptotic Cell Death'
   authors: Dixon, Lemberg, Lamprecht et al.
   year: 2012
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2012.03.042
   dimension: cell-types
   reading_phase: 2_core_methods
@@ -2176,7 +2142,7 @@ papers:
   title: Cross-species functional alignment reveals evolutionary hierarchy within the connectome
   authors: Xu, Nenning, Schwartz et al.
   year: 2020
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1016/j.neuroimage.2020.117346
   dimension: graph-analysis
   reading_phase: 2_core_methods
@@ -2208,7 +2174,7 @@ papers:
   title: Wiring specificity in the direction-selectivity circuit of the retina
   authors: Briggman, Helmstaedter, Denk
   year: 2011
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature09818
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -2240,7 +2206,7 @@ papers:
   title: Whole-brain annotation and multi-connectome cell typing of Drosophila
   authors: Schlegel, Yin, Bates et al.
   year: 2024
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-024-07686-5
   dimension: connectomics
   reading_phase: 3_landmark_datasets
@@ -2272,7 +2238,7 @@ papers:
   title: Error and attack tolerance of complex networks
   authors: Albert, Jeong, Barabási
   year: 2000
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/35019019
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -2304,7 +2270,7 @@ papers:
   title: Exploring complex networks
   authors: Strogatz
   year: 2001
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/35065725
   dimension: graph-analysis
   reading_phase: 0_orientation
@@ -2336,7 +2302,7 @@ papers:
   title: Spatial registration and normalization of images
   authors: Friston, Ashburner, Frith et al.
   year: 1995
-  journal: ''
+  journal: 'Human Brain Mapping'
   doi: 10.1002/hbm.460030303
   dimension: methods-general
   reading_phase: 1_foundations
@@ -2368,7 +2334,7 @@ papers:
   title: Neural circuit basis of aversive odour processing in <i>Drosophila</i> from sensory input to descending output
   authors: Huoviala, Dolan, Love et al.
   year: 2018
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/394403
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -2400,7 +2366,7 @@ papers:
   title: 'Towards HCP-Style macaque connectomes: 24-Channel 3T multi-array coil, MRI sequences and preprocessing'
   authors: Autio, Glasser, Ose et al.
   year: 2020
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1016/j.neuroimage.2020.116800
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -2432,7 +2398,7 @@ papers:
   title: A systematic approach to reconstructing microcircuitry by electron microscopy of serial sections
   authors: Stevens, Davis, Friedman et al.
   year: 1980
-  journal: ''
+  journal: 'Brain Research Reviews'
   doi: 10.1016/0165-0173(80)90010-7
   dimension: connectomics
   reading_phase: 1_foundations
@@ -2464,7 +2430,7 @@ papers:
   title: Induction of the Vitamin D Receptor Attenuates Autophagy Dysfunction-Mediated Cell Death Following Traumatic Brain Injury.
   authors: Cui, Cui, Jin et al.
   year: 2017
-  journal: ''
+  journal: 'Cellular Physiology and Biochemistry'
   doi: 10.1159/000479571
   dimension: cell-types
   reading_phase: 2_core_methods
@@ -2496,7 +2462,7 @@ papers:
   title: Models of heterogeneous dopamine signaling in an insect learning and memory center
   authors: Jiang, Litwin-Kumar
   year: 2021
-  journal: ''
+  journal: 'PLOS Computational Biology'
   doi: 10.1371/journal.pcbi.1009205
   dimension: neuroai
   reading_phase: 4_frontiers
@@ -2528,7 +2494,7 @@ papers:
   title: High-accuracy neurite reconstruction for high-throughput neuroanatomy
   authors: Helmstaedter, Briggman, Denk
   year: 2011
-  journal: ''
+  journal: 'Nature Neuroscience'
   doi: 10.1038/nn.2868
   dimension: proofreading
   reading_phase: 2_core_methods
@@ -2560,7 +2526,7 @@ papers:
   title: Information flow, cell types and stereotypy in a full olfactory connectome
   authors: Schlegel, Bates, Stürner et al.
   year: 2021
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.66018
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -2592,7 +2558,7 @@ papers:
   title: Support-vector networks
   authors: Cortes, Vapnik
   year: 1995
-  journal: ''
+  journal: 'Machine Learning'
   doi: 10.1007/bf00994018
   dimension: segmentation
   reading_phase: 1_foundations
@@ -2624,7 +2590,7 @@ papers:
   title: 'Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity'
   authors: Turner, Macrina, Bae et al.
   year: 2022
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2022.01.023
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -2656,7 +2622,7 @@ papers:
   title: Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation
   authors: Turaga, Murray, Jain et al.
   year: 2009
-  journal: ''
+  journal: 'Neural Computation'
   doi: 10.1162/neco.2009.10-08-881
   dimension: segmentation
   reading_phase: 1_foundations
@@ -2684,43 +2650,11 @@ papers:
   - How does the affinity graph representation compare to direct instance segmentation approaches (e.g., Mask R-CNN, FFN) for EM neuron segmentation, and when does each approach perform better?
   - What are the failure modes of CNN-predicted affinity graphs in challenging EM image regions (dense neuropil, imaging artifacts), and how are they addressed in modern pipelines?
   - How does the choice of graph partitioning algorithm applied to predicted affinity graphs affect final segmentation accuracy, and what are the computational trade-offs?
-- id: structured-sampling-of-olfactory-input-by-the-fly-mushroom-b
-  title: Structured sampling of olfactory input by the fly mushroom body
-  authors: Zheng, Li, Fisher et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.04.17.047167
-  dimension: connectomics
-  reading_phase: 2_core_methods
-  composite_score: 0.1065
-  role: methods
-  tags:
-  - species:drosophila
-  - data:hemibrain
-  - neuroanatomy:mushroom-body
-  - cell-types:kenyon-cells
-  - graph-analysis:wiring-specificity
-  - neuroai:learning-model
-  ocar:
-    opportunity: The mushroom body Kenyon cells (KCs) receive olfactory input from projection neurons (PNs), but how the connectivity between PNs and KCs is organized — randomly or with specific structure — was unclear, with major implications for how odors are encoded.
-    challenge: Distinguishing random from structured connectivity at the PN-KC synapse required knowing the complete wiring of both olfactory glomeruli and KC inputs across the full mushroom body, which was only possible with a complete connectome.
-    action: The authors analyzed the hemibrain connectome data to characterize all PN-to-KC connections in the Drosophila mushroom body, quantifying the sampling statistics of each KC and comparing observed connectivity to null models of random PN selection. They tested specific hypotheses about the combinatorial logic of odor coding in KCs.
-    resolution: KCs were found to receive input from a surprisingly structured set of projection neurons — not random but biased in ways that partially reflect olfactory receptor neuron glomerular identity, suggesting a semi-structured input sampling that balances generalization and specificity. This provided new constraints for models of associative memory in the mushroom body.
-    future_work: Understanding how the structured PN sampling observed here shapes the downstream odor representation in KC population activity, and whether similar structure exists in larval or other insect mushroom bodies, are important open questions.
-  plain_language_summary: The fly's memory center (the mushroom body) is thought to work like a random combination lock — each memory neuron receives a random mix of smell signals. This paper used a complete wiring map to test whether KC connections to smell neurons are truly random, finding that they are actually semi-structured in ways that might help distinguish similar smells. This challenges the standard 'random sampling' model of how odor memories are formed.
-  summaries:
-    beginner: Fruit flies form smell memories using a brain region called the mushroom body, where memory-forming cells receive inputs from smell-sensing neurons. This paper used a complete wiring map of the fly brain to check whether these connections are random (as theories predicted) or have some structure. They found the connections are not fully random — they have a partial structure that may help the fly tell similar smells apart.
-    intermediate: 'Analyzing PN-KC connectivity in the hemibrain connectome, this study found that KC claw connectivity deviates from random PN sampling: KCs tend to co-sample projection neurons from related glomerular classes more than expected by chance. This semi-structured sampling partially groups KCs by the olfactory category of their inputs, which has consequences for pattern separation efficiency. The findings update the theoretical Marr-Albus cerebellar analogy for mushroom body function, which assumes maximal randomness to maximize pattern separation.'
-    advanced: The connectivity analysis quantified the over- and under-representation of specific PN combinations in KC inputs using hypergeometric statistics, revealing non-random sampling at both the level of individual PN pairs and glomerular family clusters. The effect size is moderate — the structure is real but partial — suggesting a compromise between the pattern-separation benefits of random connectivity and constraints from developmental wiring rules. A caveat is that the hemibrain captures only half the mushroom body, and sampling statistics from a single animal may not fully represent population-level wiring. The study is methodologically notable for its use of the full connectome to rigorously test a long-standing theoretical assumption about circuit wiring logic.
-  discussion_prompts:
-  - How does the degree of non-random structure in PN-KC connectivity affect theoretical predictions for pattern separation capacity in the mushroom body?
-  - What developmental mechanisms could give rise to the semi-structured wiring observed in PN-KC connectivity, and how could they be tested experimentally?
-  - How does the mushroom body connectivity sampling rule compare to the organization of granule cell inputs in the cerebellum, which inspired the original theoretical model?
 - id: the-organization-of-behavior
   title: The Organization of Behavior
   authors: Hebb
   year: 2005
-  journal: ''
+  journal: 'Psychology Press'
   doi: 10.4324/9781410612403
   dimension: neuroai
   reading_phase: 1_foundations
@@ -2752,7 +2686,7 @@ papers:
   title: '<i>Reconstruct</i>: a free editor for serial section microscopy'
   authors: Fiala
   year: 2005
-  journal: ''
+  journal: 'Journal of Microscopy'
   doi: 10.1111/j.1365-2818.2005.01466.x
   dimension: infrastructure
   reading_phase: 1_foundations
@@ -2784,7 +2718,7 @@ papers:
   title: A connectome of the Drosophila central complex reveals network motifs suitable for flexible navigation and context-dependent action selection
   authors: Hulse, Haberkern, Franconville et al.
   year: 2021
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.66039
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -2816,7 +2750,7 @@ papers:
   title: Serial Section Scanning Electron Microscopy of Adult Brain Tissue Using Focused Ion Beam Milling
   authors: Knott, Marchman, Wall et al.
   year: 2008
-  journal: ''
+  journal: 'The Journal of Neuroscience'
   doi: 10.1523/jneurosci.3189-07.2008
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -2848,7 +2782,7 @@ papers:
   title: 'Complex brain networks: graph theoretical analysis of structural and functional systems'
   authors: Bullmore, Sporns
   year: 2009
-  journal: ''
+  journal: 'Nature Reviews Neuroscience'
   doi: 10.1038/nrn2575
   dimension: graph-analysis
   reading_phase: 0_orientation
@@ -2880,7 +2814,7 @@ papers:
   title: limma powers differential expression analyses for RNA-sequencing and microarray studies
   authors: Ritchie, Phipson, Wu et al.
   year: 2015
-  journal: ''
+  journal: 'Nucleic Acids Research'
   doi: 10.1093/nar/gkv007
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -2912,7 +2846,7 @@ papers:
   title: Functional connectomics spanning multiple areas of mouse visual cortex
   authors: Bae, Baptiste, Bishop et al.
   year: 2021
-  journal: ''
+  journal: 'Nature'
   doi: 10.1101/2021.07.28.454025
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -2944,7 +2878,7 @@ papers:
   title: Helical microtubules of graphitic carbon
   authors: Iijima
   year: 1991
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/354056a0
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -2976,7 +2910,7 @@ papers:
   title: 'The Human Connectome: A Structural Description of the Human Brain'
   authors: Sporns, Tononi, Kötter
   year: 2005
-  journal: ''
+  journal: 'PLoS Computational Biology'
   doi: 10.1371/journal.pcbi.0010042
   dimension: connectomics
   reading_phase: 0_orientation
@@ -3008,7 +2942,7 @@ papers:
   title: Saturated Reconstruction of a Volume of Neocortex
   authors: Kasthuri, Hayworth, Berger et al.
   year: 2015
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2015.06.054
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3040,7 +2974,7 @@ papers:
   title: Neural circuitry linking mating and egg laying in Drosophila females
   authors: Wang, Wang, Forknall et al.
   year: 2020
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-020-2055-9
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3072,7 +3006,7 @@ papers:
   title: An anatomical substrate of credit assignment in reinforcement learning
   authors: Kornfeld, Wang, Januszewski et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.02.18.954354
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3104,7 +3038,7 @@ papers:
   title: 'Expansion sequencing: Spatially precise in situ transcriptomics in intact biological systems'
   authors: Alon, Goodwin, Sinha et al.
   year: 2021
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.aax2656
   dimension: image-acquisition
   reading_phase: 4_frontiers
@@ -3136,7 +3070,7 @@ papers:
   title: Automatic detection of synaptic partners in a whole-brain Drosophila electron microscopy data set
   authors: Buhmann, Sheridan, Malin-Mayor et al.
   year: 2021
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/s41592-021-01183-7
   dimension: segmentation
   reading_phase: 4_frontiers
@@ -3168,7 +3102,7 @@ papers:
   title: A default mode of brain function
   authors: Raichle, MacLeod, Snyder et al.
   year: 2001
-  journal: ''
+  journal: 'Proceedings of the National Academy of Sciences'
   doi: 10.1073/pnas.98.2.676
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -3200,7 +3134,7 @@ papers:
   title: Connectomics Analysis Reveals First-, Second-, and Third-Order Thermosensory and Hygrosensory Neurons in the Adult Drosophila Brain
   authors: Marin, Büld, Theiß et al.
   year: 2020
-  journal: ''
+  journal: 'Current Biology'
   doi: 10.1016/j.cub.2020.06.028
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3232,7 +3166,7 @@ papers:
   title: 'Network Motifs: Simple Building Blocks of Complex Networks'
   authors: Milo, Shen-Orr, Itzkovitz et al.
   year: 2002
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.298.5594.824
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -3264,7 +3198,7 @@ papers:
   title: An Integrated Micro- and Macroarchitectural Analysis of the Drosophila Brain by Computer-Assisted Serial Section Electron Microscopy
   authors: Cardona, Saalfeld, Preibisch et al.
   year: 2010
-  journal: ''
+  journal: 'PLoS Biology'
   doi: 10.1371/journal.pbio.1000502
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3296,7 +3230,7 @@ papers:
   title: 'BrainSpace: a toolbox for the analysis of macroscale gradients in neuroimaging and connectomics datasets'
   authors: Wael, Benkarim, Paquola et al.
   year: 2020
-  journal: ''
+  journal: 'Communications Biology'
   doi: 10.1038/s42003-020-0794-7
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -3328,7 +3262,7 @@ papers:
   title: Structured sampling of olfactory input by the fly mushroom body
   authors: Zheng, Li, Fisher et al.
   year: 2022
-  journal: ''
+  journal: 'Current Biology'
   doi: 10.1016/j.cub.2022.06.031
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -3360,7 +3294,7 @@ papers:
   title: The optic lobe of Drosophila melanogaster. I. A Golgi analysis of wild-type structure
   authors: Fischbach, Dittrich
   year: 1989
-  journal: ''
+  journal: 'Cell and Tissue Research'
   doi: 10.1007/bf00218858
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -3392,7 +3326,7 @@ papers:
   title: A multi-scale brain map derived from whole-brain volumetric reconstructions
   authors: Brittin, Cook, Hall et al.
   year: 2021
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-021-03284-x
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -3424,7 +3358,7 @@ papers:
   title: Expansion microscopy
   authors: Chen, Tillberg, Boyden
   year: 2015
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.1260088
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -3456,7 +3390,7 @@ papers:
   title: Directionally selective calcium signals in dendrites of starburst amacrine cells
   authors: Euler, Detwiler, Denk
   year: 2002
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature00931
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -3484,43 +3418,11 @@ papers:
   - What biophysical mechanisms within individual SAC dendrites are sufficient to generate direction selectivity, and how have subsequent connectomic studies informed our understanding of these mechanisms?
   - How does dendritic compartmentalization in SACs inform broader theories of single-neuron computation and the role of active dendrites?
   - How have subsequent connectomic reconstructions of the retina confirmed or refined the model of SAC-mediated direction selectivity suggested by this calcium imaging study?
-- id: connectomes-across-development-reveal-principles-of-brain-ma
-  title: Connectomes across development reveal principles of brain maturation
-  authors: Witvliet, Mulcahy, Mitchell et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.04.30.066209
-  dimension: connectomics
-  reading_phase: 2_core_methods
-  composite_score: 0.0918
-  role: methods
-  tags:
-  - species:c-elegans
-  - imaging:serial-section-em
-  - method:connectomics
-  - method:developmental-analysis
-  - data:connectome
-  - behavior:development
-  ocar:
-    opportunity: How neural circuits change from birth to adulthood to support behavioral maturation is a fundamental question in neuroscience, but the extent of synaptic remodeling across development at the level of a complete connectome had never been quantified.
-    challenge: Obtaining complete connectome reconstructions of multiple individuals at different developmental stages requires extensive EM data collection and reconstruction, and distinguishing stereotyped developmental changes from individual variability demands isogenic animals and careful experimental design.
-    action: The authors used serial-section electron microscopy to reconstruct the full brains of eight isogenic C. elegans individuals spanning four postnatal stages, then systematically compared connectivity patterns across individuals and developmental time points.
-    resolution: While the overall geometric architecture of the C. elegans brain is preserved from birth to adulthood, substantial remodeling occurs at the level of individual chemical and electrical synapses. The study identified specific developmental rules governing synapse addition, removal, and strengthening, providing the first complete picture of connectome-level brain maturation.
-    future_work: Determining how gene expression and activity-dependent mechanisms drive the observed synaptic changes, and whether similar developmental remodeling rules apply in more complex nervous systems, are key future directions.
-  plain_language_summary: ''
-  summaries:
-    beginner: Just like how children's brains change as they grow up, the tiny worm C. elegans also has a brain that rewires itself from birth to adulthood. This paper mapped the complete brain wiring of eight worms at different ages and found that while the overall structure stays the same, the specific connections between neurons change a lot.
-    intermediate: By reconstructing the complete connectomes of eight isogenic C. elegans individuals across four postnatal developmental stages, this study reveals that gross brain geometry is conserved during maturation, but individual synaptic connections undergo extensive remodeling. The work establishes quantitative principles of developmental synapse addition and elimination at the whole-brain scale.
-    advanced: This landmark study generates eight complete C. elegans connectomes across development, enabling the first systematic quantification of connectome-level remodeling during postnatal maturation. Key findings include preservation of circuit topology on a conserved anatomical scaffold, combined with extensive individual synapse remodeling; the isogenic design controls for genetic variability, but environmental factors and stochastic developmental noise cannot be fully separated. The multi-individual, multi-stage dataset provides a unique resource for testing developmental circuit models.
-  discussion_prompts:
-  - What distinguishes stereotyped developmental remodeling from individual variability in connectome studies, and how should this distinction be approached statistically with small sample sizes?
-  - How do the principles of synapse addition and elimination observed in C. elegans development compare to models of Hebbian and homeostatic plasticity in vertebrate systems?
-  - What technical and conceptual challenges would need to be overcome to perform a similar multi-individual, multi-stage connectome study in a more complex nervous system, such as Drosophila larva?
 - id: generative-network-modeling-reveals-quantitative-definitions
   title: Generative network modeling reveals quantitative definitions of bilateral symmetry exhibited by a whole insect brain connectome
   authors: Pedigo, Powell, Bridgeford et al.
   year: 2023
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.83739
   dimension: graph-analysis
   reading_phase: 4_frontiers
@@ -3552,7 +3454,7 @@ papers:
   title: Transgenic strategies for combinatorial expression of fluorescent proteins in the nervous system
   authors: Livet, Weissman, Kang et al.
   year: 2007
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature06293
   dimension: methods-general
   reading_phase: 1_foundations
@@ -3584,7 +3486,7 @@ papers:
   title: Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in <i>Drosophila</i>
   authors: Schlegel, Yin, Bates et al.
   year: 2023
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2023.06.27.546055
   dimension: connectomics
   reading_phase: 3_landmark_datasets
@@ -3616,7 +3518,7 @@ papers:
   title: Structure and function of axo-axonic inhibition
   authors: Schneider-Mizell, Bodor, Collman et al.
   year: 2021
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.73783
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -3648,7 +3550,7 @@ papers:
   title: TrakEM2 Software for Neural Circuit Reconstruction
   authors: Cardona, Saalfeld, Schindelin et al.
   year: 2012
-  journal: ''
+  journal: 'PLoS ONE'
   doi: 10.1371/journal.pone.0038011
   dimension: infrastructure
   reading_phase: 2_core_methods
@@ -3680,7 +3582,7 @@ papers:
   title: A visual motion detection circuit suggested by Drosophila connectomics
   authors: Takemura, Bharioke, Lu et al.
   year: 2013
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature12450
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -3712,7 +3614,7 @@ papers:
   title: Object recognition from local scale-invariant features
   authors: Lowe
   year: 1999
-  journal: ''
+  journal: 'Proceedings of the Seventh IEEE International Conference on Computer Vision'
   doi: 10.1109/iccv.1999.790410
   dimension: methods-general
   reading_phase: 1_foundations
@@ -3740,43 +3642,11 @@ papers:
   - How are SIFT-like features used in EM image stack registration for connectomics, and where do they fail compared to deep learning-based alignment methods?
   - What properties of SIFT make it well-suited for cross-section alignment in serial-section electron microscopy?
   - In what ways has the emergence of deep feature descriptors (e.g., learned keypoints) improved over SIFT for connectomics-relevant image analysis tasks?
-- id: neurotransmitter-classification-from-electron-microscopy-ima
-  title: Neurotransmitter Classification from Electron Microscopy Images at Synaptic Sites in Drosophila Melanogaster
-  authors: Eckstein, Bates, Champion et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.06.12.148775
-  dimension: segmentation
-  reading_phase: 2_core_methods
-  composite_score: 0.0897
-  role: biology
-  tags:
-  - species:drosophila
-  - method:deep-learning
-  - neuro:neurotransmitter
-  - dataset:fafb
-  - neuro:synapse
-  - method:cnn
-  ocar:
-    opportunity: Connectomes provide structural wiring diagrams but lack information about synaptic sign (excitatory vs. inhibitory), a fundamental missing piece that prevents inferring circuit function from anatomy alone.
-    challenge: Determining neurotransmitter identity from EM images is challenging because synaptic vesicle morphology alone is not sufficient to classify all transmitter types, and biochemical assays are incompatible with the EM processing required for connectomics.
-    action: The authors trained convolutional neural networks to predict the neurotransmitter type released at individual synapses in Drosophila melanogaster directly from EM image patches of synaptic sites, using a training set where transmitter identity was known from genetic and immunohistochemical data.
-    resolution: The CNNs successfully classified multiple neurotransmitter types — including acetylcholine, GABA, glutamate, dopamine, serotonin, and octopamine — from EM images with high accuracy. This method can be applied to existing EM datasets to add synaptic sign information to connectomes without additional experimental labeling.
-    future_work: Extending the approach to mammalian systems where transmitter-EM correlates differ, and improving accuracy for rare transmitter types, are important future directions.
-  plain_language_summary: ''
-  summaries:
-    beginner: When neurons communicate, they release chemical signals called neurotransmitters, and knowing which chemical a neuron uses tells us if it's exciting or inhibiting its partners. Electron microscopy gives us beautiful images of neural connections but doesn't reveal the chemistry. This paper trained AI to predict the chemical identity of synapses just from looking at their EM images.
-    intermediate: The authors trained convolutional neural networks on annotated synaptic sites in Drosophila EM data to predict neurotransmitter identity from image features. By leveraging known genetic cell type labels as ground truth, they achieved multi-class transmitter prediction (ACh, GABA, Glu, DA, 5-HT, Oct) with high accuracy. Applied to whole-brain datasets, this transforms connectomes from pure wiring diagrams into signed graphs with excitatory/inhibitory labels.
-    advanced: This work addresses a fundamental limitation of connectomics by using deep learning to infer neurotransmitter phenotype from ultrastructural image features at synaptic profiles. The key insight is that transmitter-specific differences in vesicle morphology, active zone structure, and cytoplasmic texture are learnable by CNNs even when not obvious to human annotators. A critical caveat is that the approach was validated in Drosophila where transmitter-to-cell-type mappings are relatively stereotyped; generalization to mammals, where cotransmission and plasticity-dependent changes in transmitter expression are more common, requires careful evaluation.
-  discussion_prompts:
-  - What ultrastructural features does the CNN appear to use for transmitter classification, and are these features interpretable in terms of known biology (e.g., vesicle size, shape, density)?
-  - How does neurotransmitter prediction accuracy vary across transmitter classes, and what biological or imaging factors contribute to the harder-to-predict cases?
-  - What new circuit analyses become possible when synaptic sign is added to a connectome, and what classic neuroscience questions could be revisited with signed whole-brain graphs?
 - id: the-mind-of-a-mouse
   title: The Mind of a Mouse
   authors: Abbott, Bock, Callaway et al.
   year: 2020
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2020.08.010
   dimension: review
   reading_phase: 2_core_methods
@@ -3808,7 +3678,7 @@ papers:
   title: Auditory activity is diverse and widespread throughout the central brain of Drosophila
   authors: Pacheco, Thiberge, Pnevmatikakis et al.
   year: 2020
-  journal: ''
+  journal: 'Nature Neuroscience'
   doi: 10.1038/s41593-020-00743-y
   dimension: neuroanatomy
   reading_phase: 2_core_methods
@@ -3836,75 +3706,11 @@ papers:
   - What does the widespread distribution of auditory responses across the Drosophila brain suggest about the organization of sensory processing in small brains?
   - How has subsequent connectomic analysis of the Drosophila brain expanded or refined the picture of auditory circuit organization suggested by this functional mapping study?
   - What are the advantages and limitations of whole-brain calcium imaging versus electrophysiology for characterizing sensory processing across brain regions?
-- id: neuronal-wiring-diagram-of-an-adult-brain
-  title: Neuronal wiring diagram of an adult brain
-  authors: Dorkenwald, Matsliah, Sterling et al.
-  year: 2023
-  journal: ''
-  doi: 10.1101/2023.06.27.546656
-  dimension: connectomics
-  reading_phase: 4_frontiers
-  composite_score: 0.0879
-  role: methods
-  tags:
-  - species:drosophila
-  - scale:whole-brain
-  - imaging:fib-sem
-  - tool:flywire
-  - method:automated-segmentation
-  - proofreading
-  ocar:
-    opportunity: Understanding how the brain generates behavior requires knowing not just local circuit motifs but the complete synaptic wiring of the entire brain. No such complete neuronal wiring diagram existed for any adult complex brain, leaving fundamental questions about global information flow unanswered.
-    challenge: Reconstructing a complete adult brain connectome at synaptic resolution requires acquiring petabytes of EM images, segmenting billions of voxels into individual neurons, proofreading thousands of reconstruction errors, and building data infrastructure capable of storing and querying the resulting graph of millions of synapses.
-    action: The authors acquired FIB-SEM and transmission EM image volumes of the adult Drosophila brain, applied automated segmentation with extensive proofreading, and assembled a complete wiring diagram containing approximately 130,000 neurons and 15 million synapses. They characterized cell types, connectivity motifs, and information flow using graph analysis.
-    resolution: This work produced the first complete neuronal wiring diagram of an adult brain, the Drosophila connectome (FlyWire/hemibrain-scale). The dataset revealed cell-type-specific connectivity rules, brain-wide circuit pathways, and organizational principles governing sensory-to-motor information flow, providing an unprecedented resource for understanding neural computation.
-    future_work: Functional validation of the connectivity-derived predictions, extension to other developmental stages or mutant backgrounds, and comparison with the second hemisphere remain important next steps.
-  plain_language_summary: This paper completed the ultimate neuroscience jigsaw puzzle — mapping every single connection between every neuron in the brain of an adult fly. With 130,000 neurons and 15 million synapses recorded, it is like having a complete subway map for the brain instead of just knowing a few important lines, enabling researchers to trace any information pathway from sensory input to motor output.
-  summaries:
-    beginner: This paper created the first complete wiring diagram of an adult animal's brain — the fruit fly's brain — showing every connection between every neuron. With about 130,000 neurons and millions of connections mapped, it is a landmark achievement that lets scientists trace how information flows from the eyes or nose all the way to motor commands.
-    intermediate: The authors present the first complete adult brain connectome, reconstructed from EM images of Drosophila melanogaster. The dataset contains ~130,000 neurons and ~15 million synapses, with cell types annotated and connectivity analyzed at the brain-wide level. This resource enables systematic analysis of sensorimotor pathways, circuit motifs, and inter-area communication throughout the brain.
-    advanced: This landmark paper describes the reconstruction pipeline and initial analyses of the Drosophila adult whole-brain connectome. Petabyte-scale EM acquisition was combined with flood-fill network segmentation, automated synapse detection, and extensive community-based proofreading via FlyWire. Analyses revealed hierarchical organization of information flow, recurrent circuit motifs, and bilateral structural symmetry with quantifiable asymmetries. Key caveats include reconstruction errors in small-caliber neurites, incomplete coverage of the optic lobes, and the challenge of interpreting the functional significance of purely structural connectivity.
-  discussion_prompts:
-  - What new organizational principles of the brain became visible only when the complete wiring diagram was available, that could not have been seen from partial reconstructions?
-  - How should the field approach the problem of validating functional predictions derived from this structural connectome?
-  - What are the next scale milestones for connectomics — in terms of organism size, brain volume, or number of synapses — and what technologies need to advance to reach them?
-- id: flywire-online-community-for-whole-brain-connectomics
-  title: 'FlyWire: Online community for whole-brain connectomics'
-  authors: Dorkenwald, McKellar, Macrina et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.08.30.274225
-  dimension: proofreading
-  reading_phase: 2_core_methods
-  composite_score: 0.0873
-  role: methods
-  tags:
-  - tool:flywire
-  - method:proofreading
-  - species:drosophila
-  - method:crowdsourcing
-  - infrastructure:web-platform
-  - data:connectome
-  ocar:
-    opportunity: Reconstructing a complete whole-brain connectome beyond C. elegans requires proofreading at a scale that exceeds what any single lab can accomplish, demanding new community-based approaches to distribute the effort.
-    challenge: Coordinating distributed proofreading by many annotators on the same large EM dataset introduces conflicts, quality control challenges, and requires novel infrastructure for collaborative editing, version control, and consensus building at the scale of millions of neurons and synapses.
-    action: The authors developed FlyWire, a browser-based platform enabling online community proofreading of the Drosophila brain. The system provides a collaborative editing environment with graph-based segmentation editing, authentication, and social structures to coordinate large numbers of annotators.
-    resolution: FlyWire demonstrated that whole-brain connectome proofreading can be accomplished by an online community, with hundreds of participants contributing to the reconstruction of the full adult fly brain. The platform's design successfully managed conflicts, tracked contributions, and maintained data quality at the whole-brain scale.
-    future_work: Scaling the FlyWire model to larger volumes such as mammalian brain regions will require further advances in automated segmentation quality and more efficient human-AI collaborative proofreading workflows.
-  plain_language_summary: ''
-  summaries:
-    beginner: Mapping a whole brain in a fly requires checking and fixing millions of decisions made by computers. FlyWire is a website that lets anyone help with this task, like a Wikipedia for brain mapping, with hundreds of people working together to complete the fly brain map.
-    intermediate: FlyWire is a browser-based platform for community proofreading of whole-brain EM reconstructions, providing collaborative graph editing, user authentication, and quality control infrastructure. The paper describes how computational and social structures were designed to scale proofreading effort to the Drosophila whole-brain connectome with hundreds of distributed annotators.
-    advanced: FlyWire's architecture addresses the fundamental scalability problem in EM connectomics by distributing proofreading labor through a community platform with graph-based collaborative editing. Key design choices include chunk-based data serving, optimistic locking for concurrent edits, and contribution tracking for quality oversight. A notable caveat is that community proofreading introduces variable annotator expertise, requiring strategies to aggregate edits and detect and correct systematic errors; the paper describes how these challenges were managed in practice.
-  discussion_prompts:
-  - How does the FlyWire community model compare to other crowdsourced scientific data annotation efforts (e.g., Eyewire, Zooniverse), and what unique challenges does connectomics proofreading present?
-  - What quality control mechanisms are most effective for managing variable annotator expertise in collaborative connectomics proofreading?
-  - How would the FlyWire model need to be adapted to support community proofreading of mammalian brain volumes, which are orders of magnitude larger?
 - id: lc3-a-mammalian-homologue-of-yeast-apg8p-is-localized-in-aut
   title: LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing
   authors: Kabeya
   year: 2000
-  journal: ''
+  journal: 'The EMBO Journal'
   doi: 10.1093/emboj/19.21.5720
   dimension: methods-general
   reading_phase: 1_foundations
@@ -3936,7 +3742,7 @@ papers:
   title: A GAL4-Driver Line Resource for Drosophila Neurobiology
   authors: Jenett, Rubin, Ngo et al.
   year: 2012
-  journal: ''
+  journal: 'Cell Reports'
   doi: 10.1016/j.celrep.2012.09.011
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -3968,7 +3774,7 @@ papers:
   title: A pneumonia outbreak associated with a new coronavirus of probable bat origin
   authors: Zhou, Yang, Wang et al.
   year: 2020
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/s41586-020-2012-7
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -3999,7 +3805,7 @@ papers:
   title: <i>The Structure of Scientific Revolutions</i>
   authors: Kühn, Schlegel
   year: 1963
-  journal: ''
+  journal: 'Physics Today'
   doi: 10.1063/1.3050879
   dimension: review
   reading_phase: 1_foundations
@@ -4030,7 +3836,7 @@ papers:
   title: High-precision automated reconstruction of neurons with flood-filling networks
   authors: Januszewski, Kornfeld, Li et al.
   year: 2018
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/s41592-018-0049-4
   dimension: segmentation
   reading_phase: 2_core_methods
@@ -4058,43 +3864,11 @@ papers:
   - How does the recurrent state representation in FFNs enable better long-range segmentation consistency compared to independent local patch prediction, and what are the failure modes when this representation becomes confused?
   - What are the computational trade-offs of FFN inference versus faster agglomeration-based segmentation approaches, and how should this affect the choice of algorithm for different connectomics use cases?
   - How would you design a hybrid pipeline that uses FFNs for difficult ambiguous regions and faster methods for straightforward neurite segments, and how would you identify which regions require each approach?
-- id: complete-connectomic-reconstruction-of-olfactory-projection
-  title: Complete connectomic reconstruction of olfactory projection neurons in the fly brain
-  authors: Bates, Schlegel, Roberts et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.01.19.911453
-  dimension: connectomics
-  reading_phase: 2_core_methods
-  composite_score: 0.083
-  role: biology
-  tags:
-  - species:drosophila
-  - neuro:olfactory-system
-  - imaging:tem
-  - dataset:fafb
-  - neuro:antennal-lobe
-  - cell-types:projection-neurons
-  ocar:
-    opportunity: A complete, cell-type-resolved map of how olfactory information is projected from the primary olfactory center to higher brain areas was needed to understand parallel processing of odor information in Drosophila.
-    challenge: Reconstructing every olfactory projection neuron type and their synaptic targets across a whole-brain EM volume requires extensive manual and semi-automated tracing across a complex, densely packed neuropil.
-    action: Using the FAFB whole-brain EM dataset, the authors reconstructed all olfactory projection neurons from the antennal lobe, classified them into types by morphology and connectivity, and mapped their synaptic outputs to mushroom bodies, lateral horn, and other higher brain areas.
-    resolution: The complete census revealed 150+ projection neuron types with distinct glomerular innervation and downstream targeting logic, demonstrating parallel channels for odor identity versus valence processing. The dataset provides a reference framework for linking neural circuit architecture to olfactory behavior.
-    future_work: Connecting specific projection neuron types to odor response properties through functional recordings and behavioral genetics, and extending comparisons across sexes and ages, remain important goals.
-  plain_language_summary: ''
-  summaries:
-    beginner: Fruit flies detect smells using a relatively simple brain circuit. This paper mapped every relay neuron in the Drosophila smell pathway using electron microscopy, creating a complete reference chart of how different smells are routed to different parts of the brain.
-    intermediate: This peer-reviewed companion to the preprint version provides a definitive census of Drosophila olfactory projection neuron types reconstructed from the FAFB whole-brain EM dataset. The authors classified >150 types based on glomerular innervation and downstream connectivity, revealing systematic organizational principles for parallel olfactory processing streams targeting mushroom bodies and lateral horn.
-    advanced: The study provides a complete connectomic reference for the Drosophila olfactory projection neuron population, enabling precise quantification of convergence ratios, bilateral symmetry, and connectivity stereotypy across individuals where comparison data exist. A key finding is that multiglomerular projection neurons show distinct downstream targeting relative to uniglomerular types, suggesting specialized roles in combinatorial odor coding. Caveats include reliance on a single female brain and limited cross-validation of cell typing criteria between morphological and connectivity-based approaches.
-  discussion_prompts:
-  - How does the completeness of the projection neuron census in this study compare to what was achievable with light microscopy-based methods, and what novel cell types were revealed?
-  - What connectivity features distinguish projection neurons targeting mushroom bodies versus lateral horn, and how might these differences relate to memory versus innate valence processing?
-  - How do the bilateral symmetry patterns of olfactory projection neurons revealed by this connectome compare to predictions from developmental and genetic studies?
 - id: a-connectomic-study-of-a-petascale-fragment-of-human-cerebra
   title: A connectomic study of a petascale fragment of human cerebral cortex
   authors: Shapson-Coe, Januszewski, Berger et al.
   year: 2021
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2021.05.29.446289
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -4126,7 +3900,7 @@ papers:
   title: Human-level control through deep reinforcement learning
   authors: Mnih, Kavukcuoglu, Silver et al.
   year: 2015
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature14236
   dimension: neuroai
   reading_phase: 2_core_methods
@@ -4158,7 +3932,7 @@ papers:
   title: 'Three-Dimensional Structure and Composition of CA3→CA1 Axons in Rat Hippocampal Slices: Implications for Presynaptic Connectivity and Compartmentalization'
   authors: Shepherd, Harris
   year: 1998
-  journal: ''
+  journal: 'The Journal of Neuroscience'
   doi: 10.1523/jneurosci.18-20-08300.1998
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -4190,7 +3964,7 @@ papers:
   title: A pyramid approach to subpixel registration based on intensity
   authors: Thévenaz, Ruttimann, Unser
   year: 1998
-  journal: ''
+  journal: 'IEEE Transactions on Image Processing'
   doi: 10.1109/83.650848
   dimension: methods-general
   reading_phase: 1_foundations
@@ -4222,7 +3996,7 @@ papers:
   title: Presynaptic developmental plasticity allows robust sparse wiring of the Drosophila mushroom body
   authors: Elkahlah, Rogow, Ahmed et al.
   year: 2020
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.52278
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -4254,7 +4028,7 @@ papers:
   title: A brainwide atlas of synapses across the mouse life span
   authors: Cizeron, Qiu, Koniaris et al.
   year: 2020
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.aba3163
   dimension: neuroanatomy
   reading_phase: 2_core_methods
@@ -4286,7 +4060,7 @@ papers:
   title: Barcoded oligonucleotides ligated on RNA amplified for multiplexed and parallel <i>in situ</i> analyses
   authors: Liu, Punthambaker, Iyer et al.
   year: 2021
-  journal: ''
+  journal: 'Nucleic Acids Research'
   doi: 10.1093/nar/gkab120
   dimension: methods-general
   reading_phase: 4_frontiers
@@ -4314,43 +4088,11 @@ papers:
   - How could BOLORAMIS or similar spatial transcriptomics methods be integrated with EM connectomics to jointly characterize cell identity and synaptic connectivity?
   - What are the trade-offs between targeted in situ methods like BOLORAMIS and untargeted spatial transcriptomics approaches (e.g., Visium, MERFISH) for characterizing neural cell types?
   - How many transcriptomic markers are needed to reliably identify the cell types present in a connectomics dataset, and how should those markers be selected?
-- id: support-vector-networks
-  title: Support-Vector Networks
-  authors: Cortes, Vapnik
-  year: 1995
-  journal: ''
-  doi: 10.1023/a:1022627411411
-  dimension: methods-general
-  reading_phase: 1_foundations
-  composite_score: 0.0803
-  role: methods
-  tags:
-  - method:machine-learning
-  - method:svm
-  - method:classification
-  - connectomics
-  - neuroai
-  - segmentation
-  ocar:
-    opportunity: Machine learning for classification and regression required algorithms that could generalize well to unseen data without overfitting, particularly in high-dimensional spaces with limited training examples. Existing methods like neural networks were prone to overfitting and lacked theoretical guarantees.
-    challenge: Constructing a classifier that maximizes the margin between classes while minimizing structural risk requires solving a quadratic programming problem that scales with the number of training examples. Extending binary linear classifiers to nonlinear and multi-class problems required theoretical and computational innovations.
-    action: Cortes and Vapnik developed Support Vector Machines (SVMs), which find the maximum-margin separating hyperplane in feature space (or a kernel-induced feature space), formulating the problem as convex quadratic programming and demonstrating the kernel trick for implicit mapping to high-dimensional spaces.
-    resolution: SVMs demonstrated state-of-the-art performance on handwritten digit recognition and other benchmark tasks, with strong theoretical guarantees via VC dimension theory. SVMs became a foundational machine learning method used extensively in neuroscience for decoding neural population activity, automated segmentation in connectomics, and classification of EM-detected structures.
-    future_work: Deep learning has largely superseded SVMs for tasks with abundant training data, though SVMs remain competitive for small-sample problems and have interpretable geometric structure.
-  plain_language_summary: SVMs are a type of machine learning algorithm that finds the widest possible 'gap' between two categories of data, like drawing the thickest possible line separating apples from oranges on a graph. This approach became widely used in neuroscience for tasks like classifying neuron types from microscopy images or decoding brain activity patterns.
-  summaries:
-    beginner: Support Vector Machines (SVMs) are a classic machine learning method that classifies data by finding the best boundary between categories. They were widely used in neuroscience for identifying cell types in images and for decoding information from brain activity recordings.
-    intermediate: SVMs find the maximum-margin hyperplane separating data classes in a (potentially kernel-mapped) feature space, with strong generalization guarantees from structural risk minimization theory. In connectomics and neuroscience, SVMs have been applied to classification of EM-segmented structures, synapse detection, and neural decoding — often in settings with limited labeled training data where their small-sample efficiency is advantageous.
-    advanced: The SVM optimization problem (maximizing margin subject to classification constraints) reduces to a convex QP solvable by SMO or other methods, with solution sparsity guaranteed by the support vector representation. The kernel trick enables implicit mapping to high-dimensional feature spaces without explicit computation. In connectomics, SVMs were used in early automated segmentation pipelines for membrane detection and synapse classification; they have largely been superseded by deep convolutional networks but remain relevant for problems with limited training labels and where interpretable decision boundaries are valued.
-  discussion_prompts:
-  - In what connectomics or neuroscience tasks do SVMs still outperform or offer advantages over deep learning approaches, and why?
-  - How does the choice of kernel function in an SVM relate to assumptions about the feature space structure of neural data or image features?
-  - What is the relationship between the SVM maximum-margin principle and regularization in deep neural networks trained for connectomics segmentation?
 - id: complex-network-measures-of-brain-connectivity-uses-and-inte
   title: 'Complex network measures of brain connectivity: Uses and interpretations'
   authors: Rubinov, Sporns
   year: 2009
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1016/j.neuroimage.2009.10.003
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4382,7 +4124,7 @@ papers:
   title: The Structure and Function of Complex Networks
   authors: Newman
   year: 2003
-  journal: ''
+  journal: 'SIAM Review'
   doi: 10.1137/s003614450342480
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4414,7 +4156,7 @@ papers:
   title: '<i>Coot</i>: model-building tools for molecular graphics'
   authors: Emsley, Cowtan
   year: 2004
-  journal: ''
+  journal: 'Acta Crystallographica Section D Biological Crystallography'
   doi: 10.1107/s0907444904019158
   dimension: methods-general
   reading_phase: 1_foundations
@@ -4446,7 +4188,7 @@ papers:
   title: From molecular to modular cell biology
   authors: Hartwell, Hopfield, Leibler et al.
   year: 1999
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/35011540
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4478,7 +4220,7 @@ papers:
   title: Structural Properties of the Caenorhabditis elegans Neuronal Network
   authors: Varshney, Chen, Paniagua et al.
   year: 2011
-  journal: ''
+  journal: 'PLoS Computational Biology'
   doi: 10.1371/journal.pcbi.1001066
   dimension: graph-analysis
   reading_phase: 2_core_methods
@@ -4510,7 +4252,7 @@ papers:
   title: Initial sequencing and analysis of the human genome
   authors: Lander, Linton, Birren et al.
   year: 2001
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/35057062
   dimension: review
   reading_phase: 1_foundations
@@ -4542,7 +4284,7 @@ papers:
   title: Dense neuronal reconstruction through X-ray holographic nano-tomography
   authors: Kuan, Phelps, Thomas et al.
   year: 2020
-  journal: ''
+  journal: 'Nature Neuroscience'
   doi: 10.1038/s41593-020-0704-9
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -4574,7 +4316,7 @@ papers:
   title: 'FusionNet: A Deep Fully Residual Convolutional Neural Network for Image Segmentation in Connectomics'
   authors: Quan, Hildebrand, Jeong
   year: 2021
-  journal: ''
+  journal: 'Frontiers in Computer Science'
   doi: 10.3389/fcomp.2021.613981
   dimension: segmentation
   reading_phase: 4_frontiers
@@ -4606,7 +4348,7 @@ papers:
   title: 'Functional connectivity in the resting brain: A network analysis of the default mode hypothesis'
   authors: Greicius, Krasnow, Reiss et al.
   year: 2002
-  journal: ''
+  journal: 'Proceedings of the National Academy of Sciences'
   doi: 10.1073/pnas.0135058100
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4638,7 +4380,7 @@ papers:
   title: Fast unfolding of communities in large networks
   authors: Blondel, Guillaume, Lambiotte et al.
   year: 2008
-  journal: ''
+  journal: 'Journal of Statistical Mechanics: Theory and Experiment'
   doi: 10.1088/1742-5468/2008/10/p10008
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4670,7 +4412,7 @@ papers:
   title: Automated Anatomical Labeling of Activations in SPM Using a Macroscopic Anatomical Parcellation of the MNI MRI Single-Subject Brain
   authors: Tzourio-Mazoyer, Landeau, Papathanassiou et al.
   year: 2002
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1006/nimg.2001.0978
   dimension: methods-general
   reading_phase: 1_foundations
@@ -4702,7 +4444,7 @@ papers:
   title: Cortical Surface-Based Analysis
   authors: Dale, Fischl, Sereno
   year: 1999
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1006/nimg.1998.0395
   dimension: methods-general
   reading_phase: 1_foundations
@@ -4734,7 +4476,7 @@ papers:
   title: Quantitative neuroanatomy for connectomics in Drosophila
   authors: Schneider-Mizell, Gerhard, Longair et al.
   year: 2016
-  journal: ''
+  journal: 'eLife'
   doi: 10.7554/elife.12059
   dimension: proofreading
   reading_phase: 2_core_methods
@@ -4766,7 +4508,7 @@ papers:
   title: The Hallmarks of Cancer
   authors: Hanahan, Weinberg
   year: 2000
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/s0092-8674(00)81683-9
   dimension: review
   reading_phase: 0_orientation
@@ -4797,7 +4539,7 @@ papers:
   title: 'Modulating Innate and Adaptive Immunity by (R)-Roscovitine: Potential Therapeutic Opportunity in Cystic Fibrosis'
   authors: Meijer, Nelson, Riazanski et al.
   year: 2016
-  journal: ''
+  journal: 'Journal of Innate Immunity'
   doi: 10.1159/000444256
   dimension: review
   reading_phase: 0_orientation
@@ -4828,7 +4570,7 @@ papers:
   title: Computer Visualization of Three-Dimensional Image Data Using IMOD
   authors: Kremer, Mastronarde, McIntosh
   year: 1996
-  journal: ''
+  journal: 'Journal of Structural Biology'
   doi: 10.1006/jsbi.1996.0013
   dimension: infrastructure
   reading_phase: 1_foundations
@@ -4860,7 +4602,7 @@ papers:
   title: 'Mouse Retinal Cell Atlas: Molecular Identification of over Sixty Amacrine Cell Types'
   authors: Yan, Laboulaye, Tran et al.
   year: 2020
-  journal: ''
+  journal: 'The Journal of Neuroscience'
   doi: 10.1523/jneurosci.0471-20.2020
   dimension: cell-types
   reading_phase: 2_core_methods
@@ -4892,7 +4634,7 @@ papers:
   title: Molecular topography of an entire nervous system
   authors: Taylor, Santpere, Weinreb et al.
   year: 2021
-  journal: ''
+  journal: 'Cell'
   doi: 10.1016/j.cell.2021.06.023
   dimension: cell-types
   reading_phase: 4_frontiers
@@ -4923,7 +4665,7 @@ papers:
   title: Network Statistics of the Whole-Brain Connectome of <i>Drosophila</i>
   authors: Lin, Yang, Dorkenwald et al.
   year: 2023
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2023.07.29.551086
   dimension: graph-analysis
   reading_phase: 3_landmark_datasets
@@ -4955,7 +4697,7 @@ papers:
   title: 'WGCNA: an R package for weighted correlation network analysis'
   authors: Langfelder, Horvath
   year: 2008
-  journal: ''
+  journal: 'BMC Bioinformatics'
   doi: 10.1186/1471-2105-9-559
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -4987,7 +4729,7 @@ papers:
   title: Cylindrical diameters method for calibrating section thickness in serial electron microscopy
   authors: Fiala, Harris
   year: 2001
-  journal: ''
+  journal: 'Journal of Microscopy'
   doi: 10.1046/j.1365-2818.2001.00926.x
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -5018,7 +4760,7 @@ papers:
   title: The genetic architecture of the human cerebral cortex
   authors: Grasby, Jahanshad, Painter et al.
   year: 2020
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.aay6690
   dimension: neuroanatomy
   reading_phase: 0_orientation
@@ -5050,7 +4792,7 @@ papers:
   title: A mesoscale connectome of the mouse brain
   authors: Oh, Harris, Ng et al.
   year: 2014
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature13186
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -5082,7 +4824,7 @@ papers:
   title: 'QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials'
   authors: Giannozzi, Baroni, Bonini et al.
   year: 2009
-  journal: ''
+  journal: 'Journal of Physics: Condensed Matter'
   doi: 10.1088/0953-8984/21/39/395502
   dimension: infrastructure
   reading_phase: 1_foundations
@@ -5113,7 +4855,7 @@ papers:
   title: Three-Dimensional Reconstruction of Brain-wide Wiring Networks in Drosophila at Single-Cell Resolution
   authors: Chiang, Lin, Chuang et al.
   year: 2010
-  journal: ''
+  journal: 'Current Biology'
   doi: 10.1016/j.cub.2010.11.056
   dimension: neuroanatomy
   reading_phase: 2_core_methods
@@ -5145,7 +4887,7 @@ papers:
   title: The large-scale organization of metabolic networks
   authors: Jeong, Tombor, Albert et al.
   year: 2000
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/35036627
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -5173,11 +4915,11 @@ papers:
   - Do neural connectomes exhibit scale-free topology, and what statistical tests would be needed to rigorously establish or refute this claim?
   - How does the concept of hub vulnerability (robust to random failure, fragile to targeted attack) apply to neural circuits — which neurons might act as metabolic hubs?
   - What are the developmental or evolutionary mechanisms that might generate scale-free topology in both metabolic and neural networks?
-- id: the-elements-of-statistical-learning
+- id: the-elements-of-statistical-learning-1st-edition
   title: The Elements of Statistical Learning
   authors: Hastie, Friedman, Tibshirani
   year: 2001
-  journal: ''
+  journal: 'Springer Series in Statistics'
   doi: 10.1007/978-0-387-21606-5
   dimension: methods-general
   reading_phase: 1_foundations
@@ -5208,7 +4950,7 @@ papers:
   title: Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma
   authors: Stupp, Mason, Bent et al.
   year: 2005
-  journal: ''
+  journal: 'New England Journal of Medicine'
   doi: 10.1056/nejmoa043330
   dimension: methods-general
   reading_phase: 1_foundations
@@ -5239,7 +4981,7 @@ papers:
   title: Volume electron microscopy for neuronal circuit reconstruction
   authors: Briggman, Bock
   year: 2011
-  journal: ''
+  journal: 'Current Opinion in Neurobiology'
   doi: 10.1016/j.conb.2011.10.022
   dimension: image-acquisition
   reading_phase: 0_orientation
@@ -5271,7 +5013,7 @@ papers:
   title: The human brain is intrinsically organized into dynamic, anticorrelated functional networks
   authors: Fox, Snyder, Vincent et al.
   year: 2005
-  journal: ''
+  journal: 'Proceedings of the National Academy of Sciences'
   doi: 10.1073/pnas.0504136102
   dimension: methods-general
   reading_phase: 1_foundations
@@ -5303,7 +5045,7 @@ papers:
   title: 'ENIGMA and global neuroscience: A decade of large-scale studies of the brain in health and disease across more than 40 countries'
   authors: Thompson, Jahanshad, Ching et al.
   year: 2020
-  journal: ''
+  journal: 'Translational Psychiatry'
   doi: 10.1038/s41398-020-0705-1
   dimension: review
   reading_phase: 0_orientation
@@ -5335,7 +5077,7 @@ papers:
   title: <i>SHELXT</i>– Integrated space-group and crystal-structure determination
   authors: Sheldrick
   year: 2014
-  journal: ''
+  journal: 'Acta Crystallographica Section A Foundations and Advances'
   doi: 10.1107/s2053273314026370
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -5366,7 +5108,7 @@ papers:
   title: 'The WU-Minn Human Connectome Project: An overview'
   authors: Essen, Smith, Barch et al.
   year: 2013
-  journal: ''
+  journal: 'NeuroImage'
   doi: 10.1016/j.neuroimage.2013.05.041
   dimension: image-acquisition
   reading_phase: 0_orientation
@@ -5398,7 +5140,7 @@ papers:
   title: Specificity and Stability in Topology of Protein Networks
   authors: Maslov, Sneppen
   year: 2002
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.1065103
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -5430,7 +5172,7 @@ papers:
   title: 'Autophagy and Viruses: Adversaries or Allies?'
   authors: Dong, Levine
   year: 2013
-  journal: ''
+  journal: 'Journal of Innate Immunity'
   doi: 10.1159/000346388
   dimension: methods-general
   reading_phase: 0_orientation
@@ -5461,7 +5203,7 @@ papers:
   title: Ultrasensitive fluorescent proteins for imaging neuronal activity
   authors: Chen, Wardill, Sun et al.
   year: 2013
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature12354
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -5493,7 +5235,7 @@ papers:
   title: Transforming FIB-SEM Systems for Large-Volume Connectomics and Cell Biology
   authors: Xu, Pang, Hayworth et al.
   year: 2020
-  journal: ''
+  journal: 'Neuromethods'
   doi: 10.1007/978-1-0716-0691-9_12
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -5525,7 +5267,7 @@ papers:
   title: 'DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries'
   authors: Matelsky, Reilly, Johnson et al.
   year: 2021
-  journal: ''
+  journal: 'Scientific Reports'
   doi: 10.1038/s41598-021-91025-5
   dimension: graph-analysis
   reading_phase: 4_frontiers
@@ -5557,7 +5299,7 @@ papers:
   title: 'CAVE: Connectome Annotation Versioning Engine'
   authors: Dorkenwald, Schneider-Mizell, Brittain et al.
   year: 2023
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1101/2023.07.26.550598
   dimension: infrastructure
   reading_phase: 4_frontiers
@@ -5589,7 +5331,7 @@ papers:
   title: A Computational Framework for Ultrastructural Mapping of Neural Circuitry
   authors: Anderson, Jones, Yang et al.
   year: 2009
-  journal: ''
+  journal: 'PLoS Biology'
   doi: 10.1371/journal.pbio.1000074
   dimension: connectomics
   reading_phase: 1_foundations
@@ -5621,7 +5363,7 @@ papers:
   title: 'Ferroptosis: process and function'
   authors: Xie, Hou, Song et al.
   year: 2016
-  journal: ''
+  journal: 'Cell Death &amp; Differentiation'
   doi: 10.1038/cdd.2015.158
   dimension: methods-general
   reading_phase: 0_orientation
@@ -5652,7 +5394,7 @@ papers:
   title: Statistical power in network neuroscience
   authors: Helwegen, Libedinsky, Heuvel
   year: 2023
-  journal: ''
+  journal: 'Trends in Cognitive Sciences'
   doi: 10.1016/j.tics.2022.12.011
   dimension: review
   reading_phase: 0_orientation
@@ -5684,7 +5426,7 @@ papers:
   title: Cortical column and whole-brain imaging with molecular contrast and nanoscale resolution
   authors: Gao, Asano, Upadhyayula et al.
   year: 2019
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.aau8302
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -5716,7 +5458,7 @@ papers:
   title: 'RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome'
   authors: Li, Dewey
   year: 2011
-  journal: ''
+  journal: 'BMC Bioinformatics'
   doi: 10.1186/1471-2105-12-323
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -5748,7 +5490,7 @@ papers:
   title: Connectomic comparison of mouse and human cortex
   authors: Loomba, Straehle, Gangadharan et al.
   year: 2022
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.abo0924
   dimension: connectomics
   reading_phase: 4_frontiers
@@ -5780,7 +5522,7 @@ papers:
   title: Gbx2 Identifies Two Amacrine Cell Subtypes with Distinct Molecular, Morphological, and Physiological Properties
   authors: Kerstein, Leffler, Sivyer et al.
   year: 2020
-  journal: ''
+  journal: 'Cell Reports'
   doi: 10.1016/j.celrep.2020.108382
   dimension: cell-types
   reading_phase: 2_core_methods
@@ -5808,43 +5550,11 @@ papers:
   - What are the advantages and limitations of using transgenic mouse lines versus viral approaches or single-cell RNA sequencing for identifying and accessing specific retinal cell types?
   - How do the molecular and physiological differences between the two Gbx2+ amacrine subtypes suggest distinct functional roles in retinal processing?
   - What would a complete characterization of an amacrine cell subtype require, and how does this study advance toward that goal?
-- id: a-connectome-and-analysis-of-the-adult-i-drosophila-i-centra
-  title: A Connectome and Analysis of the Adult <i>Drosophila</i> Central Brain
-  authors: Scheffer, Xu, Januszewski et al.
-  year: 2020
-  journal: ''
-  doi: 10.1101/2020.04.07.030213
-  dimension: connectomics
-  reading_phase: 2_core_methods
-  composite_score: 0.06
-  role: methods
-  tags:
-  - species:drosophila
-  - imaging:fib-sem
-  - method:connectomics
-  - tool:hemibrain
-  - method:segmentation
-  - data:connectome
-  ocar:
-    opportunity: Understanding the neural basis of animal behavior requires a complete wiring diagram of the brain, but such a map had never been achieved for any organism with the behavioral complexity of Drosophila melanogaster.
-    challenge: Reconstructing the circuitry of the Drosophila central brain requires processing and analyzing petabyte-scale EM datasets, developing new methods for image alignment, automated segmentation, synapse detection, and proofreading, and organizing the resulting data into a comprehensive and usable atlas.
-    action: The authors developed and applied improved methods for EM data collection, alignment, segmentation, synapse detection, and proofreading to reconstruct a large fraction of the Drosophila central brain. They defined cell types, refined computational compartments, and created an exhaustive atlas of identified neurons.
-    resolution: The resulting connectome, known as the hemibrain dataset, provides synaptic-resolution connectivity for roughly half the Drosophila central brain, defining thousands of cell types and enabling circuit-level analysis across many brain regions. The dataset was released publicly and has since been used in hundreds of downstream studies.
-    future_work: Completion of the full Drosophila brain connectome (both hemispheres), integration with functional data, and development of computational tools to interpret the circuit-level data at scale remain major ongoing efforts.
-  plain_language_summary: ''
-  summaries:
-    beginner: Scientists finally created a detailed map showing how neurons connect in the fly brain. By photographing very thin slices of the brain with a powerful electron microscope and using computers to trace each neuron, they mapped the connections of about half the Drosophila brain and made the data freely available.
-    intermediate: This landmark paper presents the Drosophila hemibrain connectome, reconstructing synaptic-resolution connectivity for a large fraction of the adult central brain. The work introduces improved methods for EM preparation, imaging, segmentation, synapse detection, and proofreading, and delivers a publicly available atlas defining thousands of cell types organized into computational compartments.
-    advanced: The hemibrain dataset represents a methodological tour de force in connectomics, combining FIB-SEM imaging at 8 nm isotropic resolution with convolutional neural network-based segmentation and synapse detection, followed by extensive proofreading. Key contributions include improved alignment algorithms, a scalable cell-type classification framework, and a freely available synaptic connectivity graph. Important caveats include incomplete coverage (one hemisphere, partial brain), systematic proofreading biases toward well-studied regions, and the challenge of validating automated synapse predictions.
-  discussion_prompts:
-  - What criteria were used to define cell types in the hemibrain dataset, and how confident can we be in these classifications given the known variability between hemispheres and individuals?
-  - How does the availability of the hemibrain connectome change the questions that Drosophila neuroscientists can ask, and what new experimental approaches does it enable?
-  - What are the major remaining sources of error or incompleteness in the hemibrain dataset, and how might they affect circuit-level interpretations?
 - id: finding-and-evaluating-community-structure-in-networks
   title: Finding and evaluating community structure in networks
   authors: Newman, Girvan
   year: 2004
-  journal: ''
+  journal: 'Physical Review E'
   doi: 10.1103/physreve.69.026113
   dimension: graph-analysis
   reading_phase: 1_foundations
@@ -5872,11 +5582,11 @@ papers:
   - What is the resolution limit of modularity maximization, and how does it affect the detection of microcircuit communities in large-scale connectome graphs?
   - How should the random graph null model embedded in the modularity metric be adapted for spatially embedded networks like the brain, where short-range connections are more likely due to wiring cost constraints?
   - How do communities detected by modularity analysis in structural connectomes correspond to functionally defined brain networks from fMRI?
-- id: the-elements-of-statistical-learning
+- id: the-elements-of-statistical-learning-2nd-edition
   title: The Elements of Statistical Learning
   authors: Hastie, Tibshirani, Friedman
   year: 2009
-  journal: ''
+  journal: 'Springer Series in Statistics'
   doi: 10.1007/978-0-387-84858-7
   dimension: methods-general
   reading_phase: 1_foundations
@@ -5907,7 +5617,7 @@ papers:
   title: 'The connectome of the adult <i>Drosophila</i> mushroom body: implications for function'
   authors: Li, Lindsey, Marin et al.
   year: 2020
-  journal: ''
+  journal: 'bioRxiv (preprint)'
   doi: 10.1101/2020.08.29.273276
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -5939,7 +5649,7 @@ papers:
   title: Semi-automated reconstruction of neural circuits using electron microscopy
   authors: Chklovskii, Vitaladevuni, Scheffer
   year: 2010
-  journal: ''
+  journal: 'Current Opinion in Neurobiology'
   doi: 10.1016/j.conb.2010.08.002
   dimension: proofreading
   reading_phase: 0_orientation
@@ -5971,7 +5681,7 @@ papers:
   title: 'Cortex: Statistics and Geometry of Neuronal Connectivity'
   authors: Braitenberg, Schüz
   year: 1998
-  journal: ''
+  journal: 'Springer Berlin Heidelberg'
   doi: 10.1007/978-3-662-03733-1
   dimension: neuroanatomy
   reading_phase: 1_foundations
@@ -6003,7 +5713,7 @@ papers:
   title: Automating the Collection of Ultrathin Serial Sections for Large Volume TEM Reconstructions
   authors: Hayworth, Kasthuri, Schalek et al.
   year: 2006
-  journal: ''
+  journal: 'Microscopy and Microanalysis'
   doi: 10.1017/s1431927606066268
   dimension: image-acquisition
   reading_phase: 1_foundations
@@ -6035,7 +5745,7 @@ papers:
   title: Supervised Learning of Image Restoration with Convolutional Networks
   authors: Jain, Murray, Roth et al.
   year: 2007
-  journal: ''
+  journal: '2007 IEEE 11th International Conference on Computer Vision'
   doi: 10.1109/iccv.2007.4408909
   dimension: segmentation
   reading_phase: 1_foundations
@@ -6067,7 +5777,7 @@ papers:
   title: Evaluation of Direct Grafting Strategies <i>via</i> Trivalent Anchoring for Enabling Lipid Membrane and Cytoskeleton Staining in Expansion Microscopy
   authors: Wen, Vanheusden, Acke et al.
   year: 2020
-  journal: ''
+  journal: 'ACS Nano'
   doi: 10.1021/acsnano.9b09259
   dimension: image-acquisition
   reading_phase: 2_core_methods
@@ -6099,7 +5809,7 @@ papers:
   title: En bloc preparation of Drosophila brains enables high-throughput FIB-SEM connectomics
   authors: Lu, Xu, Hayworth et al.
   year: 2022
-  journal: ''
+  journal: 'Frontiers in Neural Circuits'
   doi: 10.3389/fncir.2022.917251
   dimension: image-acquisition
   reading_phase: 4_frontiers
@@ -6131,7 +5841,7 @@ papers:
   title: An integrated encyclopedia of DNA elements in the human genome
   authors: Foissac
   year: 2012
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature11247
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -6163,7 +5873,7 @@ papers:
   title: Cancer statistics, 2020
   authors: Siegel, Miller, Jemal
   year: 2020
-  journal: ''
+  journal: 'CA: A Cancer Journal for Clinicians'
   doi: 10.3322/caac.21590
   dimension: methods-general
   reading_phase: 2_core_methods
@@ -6194,7 +5904,7 @@ papers:
   title: A multilevel multimodal circuit enhances action selection in Drosophila
   authors: Ohyama, Schneider-Mizell, Fetter et al.
   year: 2015
-  journal: ''
+  journal: 'Nature'
   doi: 10.1038/nature14297
   dimension: connectomics
   reading_phase: 2_core_methods
@@ -6226,7 +5936,7 @@ papers:
   title: Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks
   authors: Zhu, Park, Isola et al.
   year: 2017
-  journal: ''
+  journal: '2017 IEEE International Conference on Computer Vision (ICCV)'
   doi: 10.1109/iccv.2017.244
   dimension: segmentation
   reading_phase: 2_core_methods
@@ -6258,7 +5968,7 @@ papers:
   title: Optimized tools for multicolor stochastic labeling reveal diverse stereotyped cell arrangements in the fly visual system
   authors: Nern, Pfeiffer, Rubin
   year: 2015
-  journal: ''
+  journal: 'Proceedings of the National Academy of Sciences'
   doi: 10.1073/pnas.1506763112
   dimension: neuroanatomy
   reading_phase: 2_core_methods
@@ -6290,7 +6000,7 @@ papers:
   title: Far-Field Optical Nanoscopy
   authors: Hell
   year: 2007
-  journal: ''
+  journal: 'Science'
   doi: 10.1126/science.1137395
   dimension: image-acquisition
   reading_phase: 0_orientation
@@ -6322,7 +6032,7 @@ papers:
   title: Mapping and quantifying mammalian transcriptomes by RNA-Seq
   authors: Mortazavi, Williams, McCue et al.
   year: 2008
-  journal: ''
+  journal: 'Nature Methods'
   doi: 10.1038/nmeth.1226
   dimension: cell-types
   reading_phase: 1_foundations

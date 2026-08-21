@@ -74,9 +74,12 @@ existing implementation of it. The learner-facing material is the unit page link
   <p>These are the separately maintained Marp deck artifacts for this unit. They are not generated from the plan above, so their sequence and timing differ from it.</p>
   <div class="resource-links">
     <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.html' | relative_url }}">Open HTML Deck</a>
-    <a class="resource-link" href="{{ '/course/decks/marp/out/' | append: page.slug | remove: 'slides-' | append: '.pptx' | relative_url }}">Download PowerPoint (.pptx)</a>
+    <a class="resource-link" href="{{ site.deck_source_base }}/{{ page.slug | remove: 'slides-' }}.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/technical-training/' | append: page.slug | remove: 'slides-' | append: '/' | relative_url }}">Open Unit Page</a>
   </div>
-  <p><strong>Marp source path:</strong> <code>course/decks/marp/{{ page.slug | remove: "slides-" }}.marp.md</code></p>
+  <p><small>The HTML deck presents directly in a browser. The Markdown source is the one to
+  take if you want to adapt it &mdash; it renders with <a href="https://marp.app/">Marp</a>.
+  For PowerPoint, run <code>./scripts/render_marp.sh --pptx</code>; the exports are not
+  committed because 35 of them came to 88&nbsp;MB.</small></p>
   <p><strong>Batch render helper:</strong> <code>./scripts/render_marp.sh</code></p>
 </div>

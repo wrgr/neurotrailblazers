@@ -50,7 +50,7 @@ The goal of tissue preparation for connectomics is to stabilize biological ultra
 
 **Primary fixatives for connectomics:**
 
-- **Glutaraldehyde (GA)**: The workhorse fixative for EM. A bifunctional crosslinker that bridges amino groups on adjacent proteins, creating a rigid meshwork. Concentration: typically 2-2.5% in phosphate or cacodylate buffer. Penetration rate: ~1 mm/hour (Bhatt & Bhatt, various). Provides excellent ultrastructural preservation but does not fix lipids — hence the need for subsequent osmium treatment.
+- **Glutaraldehyde (GA)**: The workhorse fixative for EM. A bifunctional crosslinker that bridges amino groups on adjacent proteins, creating a rigid meshwork. Concentration: typically 2-2.5% in phosphate or cacodylate buffer. Penetration is slow and depth-dependent, which is why block size is limited and why perfusion is preferred over immersion where it is possible; treat any single figure you see quoted for it as protocol-specific rather than a constant. Provides excellent ultrastructural preservation but does not fix lipids — hence the need for subsequent osmium treatment.
 
 - **Paraformaldehyde (PFA)**: A smaller, monofunctional crosslinker that penetrates faster than GA but provides weaker fixation. Often combined with GA (e.g., 4% PFA + 2.5% GA) for rapid initial stabilization followed by thorough crosslinking. PFA alone is insufficient for EM-quality preservation.
 
@@ -183,7 +183,7 @@ Three major approaches for connectomics, each with different tradeoffs:
 
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy." *PLoS Biology* 2(11):e329.
 - Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
-- Hua Y, Laserstein P, Bhatt M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
+- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Knott G et al. (2008) "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling." *Journal of Neuroscience* 28(12):2959-2964.
 - Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System: Neurons and Their Supporting Cells*. 3rd ed. Oxford University Press.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.

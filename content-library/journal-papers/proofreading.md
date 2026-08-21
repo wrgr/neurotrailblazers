@@ -96,10 +96,10 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 
 ---
 
-## 4. Matejek et al. (2019) — Biologically-Constrained Graphs for Accurate Segmentation
+## 4. Matejek et al. (2019) — Biologically-Constrained Graphs for Global Connectomics Reconstruction
 
-**Citation:** Matejek B, Haehn D, Zhu H, Parag T, Pfister H. Biologically-constrained graphs for long-range interactions in electron microscopy volume segmentation. In: *IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*. 2019:2040-2049.
-**DOI:** [10.1109/CVPR.2019.00214](https://doi.org/10.1109/CVPR.2019.00214)
+**Citation:** Matejek B, Haehn D, Zhu H, Wei D, Parag T, Pfister H. Biologically-constrained graphs for global connectomics reconstruction. In: *IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*. 2019.
+**DOI:** [10.1109/CVPR.2019.00219](https://doi.org/10.1109/CVPR.2019.00219)
 
 **Tags:** `infrastructure:segmentation` `infrastructure:agglomeration` `proofreading:merge-error` `proofreading:split-error` `neuroai:graph-neural-network` `methodology:benchmark`
 
@@ -121,7 +121,7 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 
 ---
 
-## 5. Dorkenwald et al. (2019) — Binary and Ternary Agglomeration for Connectomics
+## 5. Dorkenwald et al. (2017) — Automated Synaptic Connectivity Inference for Volume EM
 
 **Citation:** Dorkenwald S, Schubert PJ, Killinger MF, Urban G, Mikula S, Svara F, Kornfeld J. Automated synaptic connectivity inference for volume electron microscopy. *Nature Methods*. 2017;14(4):435-442.
 **DOI:** [10.1038/nmeth.4206](https://doi.org/10.1038/nmeth.4206)
@@ -146,9 +146,10 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 
 ---
 
-## 6. Lu et al. (2019) — Multicut Brings Automated Neuroscience Closer to Human Performance
+## 6. Beier et al. (2017) — Multicut Brings Automated Neurite Segmentation Closer to Human Performance
 
-**Citation:** Lu R, Bhargava P, Bhardwaj J, Bhatt U, Bhatt A. Large-scale structured prediction for connectomics using multicut and lifted multicut. In: *International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)*. 2019:373-381.
+**Citation:** Beier T, Pape C, Rahaman N, Prange T, Berg S, Bock DD, et al. Multicut brings automated neurite segmentation closer to human performance. *Nature Methods*. 2017;14(2):101-102.
+**DOI:** [10.1038/nmeth.4151](https://doi.org/10.1038/nmeth.4151)
 
 **Tags:** `infrastructure:agglomeration` `infrastructure:segmentation` `methodology:benchmark` `proofreading:merge-error` `proofreading:split-error`
 
@@ -170,7 +171,7 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 
 ---
 
-## 7. Hider et al. (2022) / Dorkenwald et al. (2022) — FlyWire: Online Community for Whole-Brain Connectomics
+## 7. Dorkenwald et al. (2022) — FlyWire: Online Community for Whole-Brain Connectomics
 
 **Citation:** Dorkenwald S, McKellar CE, Macrina T, Kemnitz N, Lee K, Lu R, et al. FlyWire: online community for whole-brain connectomics. *Nature Methods*. 2022;19:119-128.
 **DOI:** [10.1038/s41592-021-01330-0](https://doi.org/10.1038/s41592-021-01330-0)
@@ -198,7 +199,7 @@ Curated papers on proofreading workflows, error detection, quality metrics, and 
 ## 8. Seung (2009) — Reading the Book of Memory: Sparse Sampling Versus Dense Mapping of Connectomes
 
 **Citation:** Seung HS. Reading the book of memory: sparse sampling versus dense mapping of connectomes. *Neuron*. 2009;62(1):17-29.
-**DOI:** [10.1016/j.neuron.2009.02.021](https://doi.org/10.1016/j.neuron.2009.02.021)
+**DOI:** [10.1016/j.neuron.2009.03.020](https://doi.org/10.1016/j.neuron.2009.03.020)
 
 **Tags:** `proofreading:proofreading-strategy` `methodology:experimental-design` `connectomics:graph-theory`
 

@@ -124,7 +124,7 @@ Curated papers covering electron microscopy acquisition, sample preparation, and
 
 ---
 
-## 5. Hayworth et al. (2014) — Ultrathick Sections for Large-Volume ATUM-SEM
+## 5. Hayworth et al. (2015) — Ultrathick Sections for Large-Volume ATUM-SEM
 
 **Citation:** Hayworth KJ, Xu CS, Lu Z, Knott GW, Chklovskii DB, Bhola S, et al. Ultrastructurally-smooth thick partitioning and volume stitching for large-scale connectomics. *Nature Methods*. 2015;12(4):319-322.
 **DOI:** [10.1038/nmeth.3292](https://doi.org/10.1038/nmeth.3292)

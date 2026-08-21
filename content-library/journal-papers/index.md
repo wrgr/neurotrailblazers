@@ -2,14 +2,15 @@
 layout: page
 title: "Journal Paper Collection"
 permalink: /content-library/journal-papers/
-description: "100+ curated connectomics journal papers organized by dimension, with summaries at beginner, intermediate, and advanced expertise levels. Each paper includes tags for cross-referencing with the content library and discussion prompts for journal club."
+description: "96 connectomics papers hand-annotated across 11 teaching dimensions, with summaries at beginner, intermediate, and advanced expertise levels, key figures, and discussion prompts."
 use_layout_hero: false
 content_type: core
 ---
 
 # Journal Paper Collection
 
-A curated library of 100+ essential connectomics papers organized across 11 dimensions — from ultrastructure to MRI — and tagged for cross-referencing with the content library. Each paper includes:
+**96 papers**, hand-annotated across 11 teaching dimensions — from ultrastructure to MRI —
+and tagged for cross-referencing with the content library. Each entry carries:
 
 - **Three-level summaries** — beginner (no prerequisites), intermediate (familiar with basics), advanced (active researcher)
 - **Tags** — linking papers to the content library tag taxonomy for combinable micro lessons
@@ -17,7 +18,21 @@ A curated library of 100+ essential connectomics papers organized across 11 dime
 - **Discussion prompts** — ready-to-use journal club questions
 - **Related content** — links to content library entries for deeper context
 
-All papers are also available as structured data in `_data/journal_papers.yml` for programmatic filtering by dimension, tag, or expertise level.
+## This is not the only paper collection, and the difference matters
+
+There are two, built for different jobs, and they overlap by **35 papers**:
+
+| | This collection | [Journal club corpus]({{ '/technical-training/journal-club/' | relative_url }}) |
+|---|---|---|
+| **Size** | 96 papers | 191 papers |
+| **Selected by** | Hand, for teaching a specific dimension | Bibliometric ranking over the field's literature |
+| **Lives in** | These eleven markdown pages | `_data/journal_papers.yml` |
+| **Each entry has** | Three-level summaries, key figures, discussion prompts, related content | OCAR structure, plain-language summary, discussion prompts, filterable metadata |
+| **Reach for it when** | You are teaching or studying a topic and want the argument laid out | You are surveying what exists, or picking a paper to discuss |
+
+The two are **not** mirrors of each other. 61 of the papers here are not in the structured
+corpus, and 156 of the corpus papers are not annotated here. If you want programmatic
+filtering, use the corpus; if you want a paper explained, use this collection.
 
 ---
 
@@ -54,7 +69,9 @@ All papers are also available as structured data in `_data/journal_papers.yml` f
 | [NeuroAI & Modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Structure-function, bio-inspired AI, connectome-constrained models |
 | [Datasets & Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | C. elegans, FlyWire, MICrONS, H01, landmark projects |
 
-**Total: 100+ papers** across 11 dimensions (including recent additions from 2022–2025).
+**Total: 96 papers** across 11 dimensions. The counts above are maintained by hand and
+checked in CI by `scripts/validate_paper_counts.rb`, which counts the actual entries on
+each page and fails the build if this table drifts from them again.
 
 ---
 
@@ -98,9 +115,14 @@ Papers are organized to follow the technical training sequence. Each dimension a
 
 ---
 
-## Structured Data Access
+## Structured data access
 
-All papers are stored as structured YAML records in `_data/journal_papers.yml`. Each record contains:
+The pages above are markdown, not generated from data — the annotations are written by
+hand, which is why they carry key figures and related-content links that no data file
+holds.
+
+Structured records exist for the **separate 200-paper journal club corpus** in
+`_data/journal_papers.yml`. Its schema is:
 
 ```yaml
 - id: paper-id
@@ -109,15 +131,27 @@ All papers are stored as structured YAML records in `_data/journal_papers.yml`. 
   year: 2024
   journal: "Journal name"
   doi: "10.xxxx/xxxxx"
-  dimension: dimension-name
-  tags: [dimension:tag1, dimension:tag2]
-  key_figures: ["Fig. 1: description"]
-  discussion_prompts: ["Prompt 1", "Prompt 2"]
-  related_content: [/content-library/path/]
+  dimension: connectomics        # see below for the valid set
+  reading_phase: 1_foundations
+  role: methods
+  composite_score: 0.84          # bibliometric rank used for selection
+  tags: [tag1, tag2]
+  ocar:                          # Opportunity / Challenge / Action / Resolution
+    opportunity: "…"
+  plain_language_summary: "…"
   summaries:
-    beginner: "Plain-language summary"
-    intermediate: "Technical summary"
-    advanced: "Expert summary with methodological detail"
+    beginner: "…"
+    intermediate: "…"
+    advanced: "…"
+  discussion_prompts: ["Prompt 1", "Prompt 2"]
 ```
 
-This enables programmatic filtering, e.g., "show all papers tagged `case-studies:FlyWire` with beginner summaries" or "find papers related to `/content-library/proofreading/error-taxonomy/`".
+Its `dimension` values are bibliometric categories and are **not** the eleven teaching
+dimensions used on this page: `connectomics` (46), `methods-general` (33),
+`graph-analysis` (24), `image-acquisition` (24), `neuroanatomy` (14), `infrastructure`
+(13), `segmentation` (9), `cell-types` (8), `neuroai` (7), `review` (7),
+`proofreading` (6).
+
+That enables filtering such as "every `graph-analysis` paper from before 2010, with
+beginner summaries" — but it will not find the key figures or related-content links from
+this collection, because those live only in the markdown.

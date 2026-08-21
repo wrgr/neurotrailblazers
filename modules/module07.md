@@ -202,7 +202,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) -- Interactive metric computation and threshold visualization
 
 ## References
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
 - Funke J et al. (2017) "A benchmark for evaluation of large-scale reconstruction methods." *Frontiers in Computational Neuroscience*.
 - Meila M (2007) "Comparing clusterings -- an information based distance." *Journal of Multivariate Analysis* 98(5):873-895.

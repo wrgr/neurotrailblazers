@@ -282,7 +282,7 @@ To ground the abstract concepts, here are the data scales learners will encounte
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
 ## References
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex." *Science* 384(6696):eadk4858.
 - Turner NL et al. (2022) "Reconstruction of neocortex." *Cell* 185(6):1082-1100.

@@ -135,7 +135,7 @@ The spine apparatus is a smooth ER derivative found within the necks and heads o
 
 - **Appearance**: Stacked, flattened cisternae of smooth membrane separated by electron-dense plates (containing the protein synaptopodin).
 - **Size**: Typically 2-4 cisternae stacked together, spanning 100-300 nm.
-- **Function**: Serves as a local calcium store and is implicated in synaptic plasticity. Knockout of synaptopodin eliminates spine apparatuses and impairs long-term potentiation (Bhatt, Bhatt & Bhatt; Bhatt DH et al., 2009).
+- **Function**: Serves as a local calcium store and is implicated in synaptic plasticity. Knockout of synaptopodin eliminates spine apparatuses and impairs long-term potentiation (Deller et al., 2003).
 - **Not all spines have one**: Spine apparatuses are found in roughly 10-30% of spines, predominantly in larger mushroom-type spines (Spacek & Harris, 1997).
 
 ---
@@ -257,11 +257,11 @@ Step-by-step identification:
 
 ## References
 
-1. Harris KM, Jensen FE, Bhatt DH (1992) "Three-dimensional structure of dendritic spines and synapses in rat hippocampus (CA1) at postnatal day 15 and adult ages." *Journal of Neuroscience* 12:2685-2705.
+1. Harris KM, Jensen FE, Tsao B (1992) "Three-dimensional structure of dendritic spines and synapses in rat hippocampus (CA1) at postnatal day 15 and adult ages." *Journal of Neuroscience* 12:2685-2705.
 2. Bourne JN, Harris KM (2008) "Balancing structure and function at hippocampal dendritic spines." *Annual Review of Neuroscience* 31:47-67.
 3. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587.
 4. Fiala JC, Harris KM (1999) "Dendrite structure." In: *Dendrites* (Stuart G, Spruston N, Hausser M, eds), pp 1-34. Oxford University Press.
-5. Baas PW, Deitch JS, Black MM, Bhatt GA (1988) "Polarity orientation of microtubules in hippocampal neurons: uniformity in the axon and nonuniformity in the dendrite." *Proceedings of the National Academy of Sciences* 85:8335-8339.
+5. Baas PW, Deitch JS, Black MM, Banker GA (1988) "Polarity orientation of microtubules in hippocampal neurons: uniformity in the axon and nonuniformity in the dendrite." *Proceedings of the National Academy of Sciences* 85:8335-8339.
 6. Steward O, Levy WB (1982) "Preferential localization of polyribosomes under the base of dendritic spines in granule cells of the dentate gyrus." *Journal of Neuroscience* 2:284-291.
 7. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 8. Spacek J, Harris KM (1997) "Three-dimensional organization of smooth endoplasmic reticulum in hippocampal CA1 dendrites and dendritic spines of the immature and mature rat." *Journal of Neuroscience* 17:190-203.

@@ -203,7 +203,7 @@ With this information, anyone can reproduce the exact result. Without any single
 
 ## References
 
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*. doi:10.1101/2023.07.26.550598.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
 - Wilkinson MD et al. (2016) "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018.
 - Maslov S, Sneppen K (2002) "Specificity and stability in topology of protein networks." *Science* 296(5569):910-913.

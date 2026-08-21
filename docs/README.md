@@ -16,6 +16,9 @@ See `bibliometrics/` for complete technical documentation of the EM connectomics
 ## Planning & Execution Documents
 See `planning/` for project plans and progress tracking.
 
+- **SEED_CORPUS_RESET_BRIEF.md** — Why the expert seed corpus is being rebuilt rather
+  than repaired (only 56 of 125 records survived a Crossref check), and the deep-research
+  brief to regenerate it with verification as a hard gate.
 - **RESEARCH_INTENSIVE_BACKLOG.md** — Backlogged spec for the research-intensive
   mode: open challenges packaged as independent study projects, each with a starter
   and a success gate, plus what has to exist before any of them ship.

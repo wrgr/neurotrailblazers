@@ -126,6 +126,72 @@ Synapse detection is critical because the connectome graph depends on it — edg
 
 ---
 
+## What it costs, in the units that bind
+
+The single fact trainees most need about reconstruction is missing from most
+descriptions of it: what running the pipeline actually consumes. The binding
+constraints are not the same at each stage, which is why "it's expensive" is
+not useful planning information.
+
+| Stage | Binding constraint | Roughly what dominates |
+|---|---|---|
+| **Ingest and alignment** | Wall clock and I/O | Reading and rewriting petabytes; alignment itself is cheap by comparison |
+| **Boundary / affinity prediction** | **GPU time** | Every voxel passes through a network. This is where a mm³ reconstruction's compute bill is |
+| **Supervoxel and agglomeration** | CPU and memory | Graph operations over billions of fragments; memory, not FLOPs |
+| **Meshing and skeletonization** | CPU, embarrassingly parallel | Cheap per object, expensive because there are millions |
+| **Proofreading** | **Human hours** | The most expensive input, the hardest to scale, and the one you cannot buy more of at short notice |
+| **Serving** | Storage and egress | Ongoing rather than one-off; egress is what surprises people |
+
+Two things follow. First, **GPU time and human hours are the two large numbers,
+and they trade against each other**: a better segmentation costs more compute
+and less proofreading. That trade is the actual design decision behind a
+reconstruction pipeline, and the agglomeration threshold is the dial.
+
+Second, **only one of those two scales by spending money.** You can rent more
+GPUs this week. You cannot rent more trained proofreaders this week, and a
+proofreader who has not worked through something like Units 05-07 will generate
+errors faster than they fix them. That asymmetry is why acquisition QA and
+segmentation quality matter disproportionately: they are the levers that reduce
+demand on the input you cannot scale.
+
+**Do the arithmetic before you commit.** Take the voxel count from Unit 03's
+cost arithmetic, your model's throughput in voxels per GPU-hour, and your pilot's
+measured error rate against your per-neuron proofreading time. The result is a
+GPU-hour figure and a person-hour figure. If the second is larger than your
+programme can staff, the answer is not to proofread faster — it is to change the
+segmentation or the acquisition, upstream, where it is still cheap.
+
+---
+
+## Where the pipeline is *not* a pipeline
+
+The five-layer model above is a batch pipeline: data flows one way and each
+stage completes before the next begins. That is true right up until the first
+edit, and then it stops being true.
+
+Proofreading edits do not re-run the pipeline. They change which supervoxels are
+grouped together, and that grouping lives in the ChunkedGraph, which sits
+*beside* the batch pipeline rather than inside it. The consequences are the ones
+that confuse people most often:
+
+- **Supervoxels are immutable; segments are not.** An edit never changes a
+  fragment, only which fragments are joined. This is what makes an edit cheap
+  and reversible.
+- **Root IDs change under you.** The identifier for an object is valid at a
+  moment in time. Code that hardcodes one and runs six months later is querying
+  a different object, silently.
+- **Meshes are regenerated, not edited.** Which is why a Neuroglancer link can
+  show two people different shapes at the same URL.
+- **Materializations are snapshots of a moving target.** They exist so that an
+  analysis can be pinned to a state that will not move, which is the only way a
+  query is reproducible.
+
+If you take one thing from this page into your own work: **the batch pipeline
+produced the segmentation, but the ChunkedGraph is what you are actually
+querying**, and the version you pin is a property of the second, not the first.
+
+---
+
 ## Provenance and reproducibility
 
 Every stage must record:
@@ -172,7 +238,7 @@ Every stage must record:
 
 ## References
 
-- Dorkenwald S et al. (2022) "CAVE: Connectome Annotation Versioning Engine." *bioRxiv*. doi:10.1101/2023.07.26.550598.
+- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss based on deep learning for connectome reconstruction." *IEEE Transactions on Pattern Analysis and Machine Intelligence* 41(7):1669-1680.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.

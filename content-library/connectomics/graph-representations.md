@@ -120,12 +120,96 @@ A critical practical decision: **at what minimum synapse count do you call two n
 - Threshold = 3-5: Common in published analyses. Reduces noise but may miss genuine weak connections.
 - No threshold: Use continuous weights (synapse count) and avoid binarizing.
 
-**The effect of thresholding is dramatic.** In a typical cortical dataset:
-- At threshold = 1: ~500,000 edges
-- At threshold = 3: ~150,000 edges
-- At threshold = 5: ~60,000 edges
+**The effect of thresholding is dramatic, and you should measure it rather than
+assume it.** Synapse counts per connected pair are heavily skewed toward one, so
+most of the edges in a raw graph are single-synapse — which means raising the
+threshold from 1 to 3 typically removes a large majority of edges, not a
+trimming. The exact fraction depends on the dataset, the synapse detector's
+precision, and the proofreading level, so it is not a constant worth quoting.
 
-Degree distributions, clustering coefficients, and motif counts all change substantially with threshold. **Every analysis must report its threshold and justify the choice.**
+Get it for your own graph in three lines, on a named dataset at a pinned
+version:
+
+```python
+import numpy as np
+# weights: synapse count per connected pair, from your materialized synapse table
+for t in (1, 2, 3, 5, 10):
+    print(t, int((weights >= t).sum()))
+```
+
+Then re-run your headline statistic at each threshold. Degree distributions,
+clustering coefficients and motif counts all move, and if your result only holds
+at one threshold that is something a reader needs to know.
+
+**Every analysis must report its threshold and justify the choice** — and the
+justification has to be about biology or detector precision, not about which
+value made the effect significant.
+
+---
+
+## What the volume boundary does to your graph
+
+Every EM volume is a box cut out of a brain, and the cut is not random with
+respect to connectivity. This biases graph statistics in a direction you can
+predict and should correct for.
+
+- **Degree is truncated, unevenly.** A cell whose soma sits at the centre of the
+  volume keeps more of its arbor than one near the face. So measured degree
+  correlates with distance from the boundary — an artifact that looks exactly
+  like a spatial gradient in connectivity.
+- **Long-range connections are systematically missing.** Local axons stay;
+  projection axons leave. A cubic millimetre of cortex captures local
+  connectivity well and inter-areal connectivity barely at all, which means
+  "this circuit is locally recurrent" is nearly guaranteed by the sampling.
+- **The bias is not fixable by normalisation.** You cannot divide it out,
+  because you do not know what is missing. What you can do is restrict the node
+  set to cells whose relevant arbor is contained, and say so.
+
+**The practical rule:** state, for every graph statistic you report, which cells
+were eligible and why. "Cells with a soma in the volume and at least 80% of the
+dendritic arbor contained" is a checkable statement. "Cells in the volume" is
+not.
+
+---
+
+## Edges that are not connections, and connections that are not edges
+
+The mapping from biology to graph is lossier than the tidy definition suggests.
+
+| Situation | What the graph usually does | What it should probably do |
+|---|---|---|
+| **Polyadic synapse** — one presynaptic site, several postsynaptic partners (the norm in *Drosophila*) | Counts one edge per partner, each weight 1 | Depends on the question; if presynaptic resources are shared, the partners are not independent |
+| **Two synapses from one bouton onto one target** | Weight 2 | Reasonable, but note this is one contact site, not two independent connections |
+| **Gap junction** | Usually absent — most pipelines detect chemical synapses only | Say explicitly that electrical coupling is out of scope |
+| **Contact without a synapse** | No edge, correctly | But "no edge" is only meaningful in a densely reconstructed volume |
+| **Connection below your threshold** | No edge | An absent edge and a weak edge are different claims; a binarized graph cannot tell them apart |
+
+The last row is the one that changes results. **Absence of an edge means three
+different things** — no contact, contact without synapse, or synapse count below
+threshold — and a binary adjacency matrix collapses all three. If your claim
+depends on absence, say which kind you mean and how you established it.
+
+---
+
+## Weights: what the number on the edge is
+
+Synapse count is the default weight and it is a proxy, not a measurement of
+strength. Alternatives, with what each buys:
+
+- **Synapse count** — cheap, standard, comparable across studies. Ignores that
+  synapses differ in size by an order of magnitude.
+- **Summed PSD area or synapse volume** — closer to a physiological correlate,
+  and available from the segmentation. Sensitive to boundary errors, which is
+  exactly the error class that is hardest to see.
+- **Contact area** — measures apposition, not transmission. Useful for
+  Peters'-rule-style questions and misleading for connectivity ones.
+- **Binary** — throws away the most informative variable you have. Justified
+  only when the analysis genuinely needs it.
+
+Whatever you choose, the **proofreading level enters the weight**. An edge
+weight of 3 on an unproofread pair and an edge weight of 3 on a fully verified
+pair are not the same number, and averaging over both without saying so is one
+of the quieter ways a connectomics result goes wrong.
 
 ---
 

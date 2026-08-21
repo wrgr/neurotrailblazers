@@ -239,6 +239,6 @@ Pick one artifact and explain how it could create a merge or split error later. 
 
 - Briggman, K. L., & Bock, D. D. (2012). Volume electron microscopy for neuronal circuit reconstruction. *Current Opinion in Neurobiology*, 22(1), 154-161.
 - Denk, W., & Horstmann, H. (2004). Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure. *PLoS Biology*, 2(11), e329.
-- Hua, Y., Laserstein, P., & Bhatt, D. K. (2015). A simplified method for high-contrast en bloc staining of large tissue volumes using reduced osmium thiocarbohydrazide-osmium (rOTO). *Journal of Neuroscience Methods*, 242, 26-32.
+- Hua, Y., Laserstein, P., & Helmstaedter, M. (2015). A simplified method for high-contrast en bloc staining of large tissue volumes using reduced osmium thiocarbohydrazide-osmium (rOTO). *Journal of Neuroscience Methods*, 242, 26-32.
 - Peters, A., Palay, S. L., & Webster, H. deF. (1991). *The Fine Structure of the Nervous System: Neurons and Their Supporting Cells* (3rd ed.). Oxford University Press.
 - Hayworth, K. J., Morgan, J. L., Schalek, R., Berger, D. R., Hildebrand, D. G. C., & Lichtman, J. W. (2014). Imaging ATUM ultrathin section libraries with WaferMapper: A multi-scale approach to EM reconstruction of neural circuits. *Frontiers in Neural Circuits*, 8, 68.

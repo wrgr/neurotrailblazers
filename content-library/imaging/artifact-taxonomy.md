@@ -60,7 +60,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Mitigation:** Transcardial perfusion with buffered fixative provides the most uniform fixation for mammalian brain. Immersion fixation of resected tissue (as in human surgical samples like H01) is less uniform — expect a quality gradient from surface to interior.
 
-**Reference:** Bhatt, Bhatt & Bhatt (2009); Bhatt & Bhatt (various); Bhatt DH (2009). For the H01 dataset specifically, see Shapson-Coe et al. (2024) which discusses fixation quality in human surgical tissue.
+**Reference:** For the H01 dataset specifically, see Shapson-Coe et al. (2024), which discusses fixation quality in human surgical tissue.
 
 ### Staining artifacts
 
@@ -81,7 +81,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Visual signatures:**
 - **Resin voids**: Light areas with no biological structure, often with sharp edges. Distinct from extracellular space (which has biological boundaries).
-- **Shrinkage**: Tissue contracts ~10-30% during processing. Anisotropic shrinkage distorts cell shapes and distances. Neuropil appears denser than in vivo.
+- **Shrinkage**: Tissue contracts during processing, by an amount that depends on the protocol and is worth measuring rather than assuming — figures in the 10-30% range are commonly quoted, but treat any single number as protocol-specific. Anisotropic shrinkage distorts cell shapes and distances. Neuropil appears denser than in vivo.
 - **Chattering during sectioning**: If resin is too hard or soft, the diamond knife vibrates, creating periodic thickness variations visible as alternating light/dark bands.
 
 ---
@@ -102,7 +102,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 ### Section compression
 
-**Cause:** The diamond knife compresses the section in the cutting direction, typically by 10-30%. This creates anisotropic distortion — features are shortened along the cutting axis.
+**Cause:** The diamond knife compresses the section in the cutting direction. The magnitude varies with knife angle, cutting speed and block face, so calibrate it against a known geometry rather than applying a published figure. This creates anisotropic distortion — features are shortened along the cutting axis.
 
 **Visual signatures:** Circular profiles appear elliptical. Grid-like patterns (if present) show directional distortion. The compression axis is consistent within a section but may vary between sections.
 
@@ -131,7 +131,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 
 **Downstream impact:** Missing sections are the most common cause of split errors in neurite tracing. A thin axon (~100 nm) in a dataset with 30 nm z-resolution spans only 3-4 sections. One missing section means 25-33% of the local z-information is lost, which can be enough to lose the axon entirely.
 
-**Mitigation:** ATUM-based collection has reduced missing-section rates to <0.1% for well-optimized protocols. SBEM and FIB-SEM inherently avoid this problem because sections are not physically collected. Computational approaches: interpolation of the missing section, or explicit "uncertain gap" annotation.
+**Mitigation:** ATUM-based collection reduces missing-section rates substantially, because sections are collected onto tape rather than destroyed as they are imaged, so a lost region can sometimes be re-imaged. Track your own rate against the gates in Unit 03 §3 rather than assuming a published figure applies. SBEM and FIB-SEM inherently avoid this problem because sections are not physically collected. Computational approaches: interpolation of the missing section, or explicit "uncertain gap" annotation.
 
 ---
 
@@ -225,7 +225,7 @@ This document catalogs the major artifact classes encountered in connectomics EM
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure." *PLoS Biology* 2(11):e329.
 - Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
-- Hua Y, Laserstein P, Bhatt M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
+- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Kasthuri N et al. (2015) "Saturated reconstruction of a volume of neocortex." *Cell* 162(3):648-661.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 - Xu CS et al. (2021) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 10:e65541.

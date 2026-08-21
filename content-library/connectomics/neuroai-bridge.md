@@ -173,7 +173,7 @@ Embedding neurons in a low-dimensional latent space based on connectivity create
 
 ### The overclaiming risk
 
-**Bargmann & Marder (2013):** "From the connectome to brain function." The central caution: "The same circuit can produce multiple outputs... Bhatt different circuits can produce similar outputs." Connectomics provides necessary but not sufficient information for understanding brain function.
+**Bargmann & Marder (2013):** "From the connectome to brain function." The central caution: "The same circuit can produce multiple outputs, and different circuits can produce similar outputs." Connectomics provides necessary but not sufficient information for understanding brain function.
 
 **For NeuroAI specifically:** Drawing a specific AI architecture from a connectome motif requires multiple leaps of abstraction. The motif must be genuinely computational (not an artifact of spatial proximity), the computation must be relevant to AI tasks, and the implementation must translate across the biological-to-silicon gap. Each leap introduces uncertainty.
 

@@ -40,7 +40,7 @@ Learners should arrive having covered:
 <div class="resource-card">
   <div class="resource-links">
     <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module22.html' | relative_url }}">Open deck (HTML)</a>
-    <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module22.pptx' | relative_url }}">Download deck (.pptx)</a>
+    <a class="resource-link" href="{{ site.deck_source_base }}/modules/module22.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module22/module22-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module22/' | relative_url }}">Full module page</a>
   </div>

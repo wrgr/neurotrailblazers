@@ -54,6 +54,22 @@ content_type: core
 
 # C. elegans Revisited
 
+> ### Before you quote a number from this page
+>
+> Every figure below — cell counts, synapse counts, volume sizes, proofreading
+> coverage — is a property of **a particular release** of this dataset, not of
+> the tissue. Releases are re-segmented, re-proofread and re-materialized, and
+> the numbers move when they are.
+>
+> This page deliberately does not pin a version, because it would be stale
+> within months and you would inherit a wrong number with a citation attached.
+> Treat what follows as orientation. Before any figure reaches a paper, a talk,
+> or a grant, pull it yourself from the release you are analysing and record the
+> version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
+> covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
+> has the lab.
+
+
 ## Overview
 
 The connectome of the nematode *Caenorhabditis elegans* is where connectomics began.
@@ -324,7 +340,7 @@ model for understanding larger brains:
 - White, J. G., Southgate, E., Thomson, J. N., & Brenner, S. (1986). The structure of
   the nervous system of the nematode *Caenorhabditis elegans*. *Philosophical
   Transactions of the Royal Society B*, 314(1165), 1-340.
-- Varshney, L. R., Chen, B. L., Paniagua, E., Hall, D. H., & Bhatt, D. B. (2011).
+- Varshney, L. R., Chen, B. L., Paniagua, E., Hall, D. H., & Chklovskii, D. B. (2011).
   Structural properties of the *Caenorhabditis elegans* neuronal network. *PLoS
   Computational Biology*, 7(2), e1001066.
 - Cook, S. J., et al. (2019). Whole-animal connectomes of both *Caenorhabditis

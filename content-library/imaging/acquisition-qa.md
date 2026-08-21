@@ -45,14 +45,38 @@ Acquisition QA is the practice of catching problems *before* they propagate into
 
 ### The cost asymmetry
 
-Consider the cost of a staining gradient that reduces membrane contrast by 20% in one corner of a 1 mm³ volume:
+The argument for acquisition QA is not that defects are catastrophic. It is that
+the cost of a defect scales with how late you find it, and the escalation is
+steep enough that cheap checks pay for themselves many times over.
 
-- **At acquisition time:** 2-4 hours to detect via pilot imaging. Mitigation: re-stain the block or adjust imaging parameters for that region. Total cost: days.
-- **At segmentation time:** The model produces 3× more split errors in the under-stained region. This isn't discovered until the full segmentation is complete (weeks to months of compute).
-- **At proofreading time:** Proofreaders spend 3× more time in that region. With human proofreading costs estimated at $50-200 per neuron (depending on complexity), this translates to tens of thousands of dollars in avoidable labor.
-- **At analysis time:** If the staining gradient isn't caught even at proofreading, it creates a spatial bias in connectivity measurements — neurons in the under-stained region appear to have fewer connections (because more synapses were missed).
+Take a staining gradient that reduces membrane contrast by 20% in one corner of
+a 1 mm³ volume — the threshold at which Unit 03 §3 stops acquisition:
 
-**Teaching point:** "Every dollar spent on acquisition QA saves ten to a hundred dollars downstream."
+| Caught at | What it costs to deal with | Why the cost jumps |
+|---|---|---|
+| **Acquisition** | Hours of pilot imaging; re-stain the block or adjust parameters for that region | Nothing downstream has been built yet |
+| **Segmentation** | Weeks to months of compute already spent, and spent again if you re-run | The defect raises the split rate locally, and you only see it once the full segmentation exists |
+| **Proofreading** | Human hours, concentrated in the affected region | Proofreading is the most expensive input in the pipeline and the hardest to add capacity to |
+| **Analysis** | Potentially the result itself | An uncaught gradient is a *spatial bias*: neurons in the under-stained region appear to have fewer connections, because more of their synapses were missed |
+
+The last row is the one that matters. The first three cost money and time; the
+fourth costs correctness, and it does so in a way that looks like a finding.
+
+**Do the arithmetic for your own project.** The numbers differ by an order of
+magnitude between labs, so a figure quoted from someone else's project is not
+worth much — but the *shape* is robust, and you can establish it yourself
+before committing:
+
+1. Time a proofreader on a neuron in a clean region and one in a degraded region
+   of your pilot volume. The ratio is the multiplier you actually face.
+2. Multiply by the number of neurons your analysis needs and by your real hourly
+   cost.
+3. Compare against the cost of the acquisition-time fix, which is usually
+   measured in days of one person's time.
+
+If step 3 is smaller than step 2 — and it nearly always is by a wide margin —
+the QA gate pays for itself, and you now have a number you can defend to whoever
+controls the budget rather than a slogan.
 
 ### QA is not optional
 
@@ -238,6 +262,6 @@ A production connectomics acquisition should have a live dashboard showing:
 
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
-- Hua Y, Laserstein P, Bhatt M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
+- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443.
 - Zheng Z et al. (2018) "A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*." *Cell* 174(3):730-743.

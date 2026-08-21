@@ -134,7 +134,16 @@ Deep dives into landmark connectomics projects.
 
 ## Journal paper collection
 
-100+ curated papers across 11 connectomics dimensions, each with summaries at **beginner**, **intermediate**, and **advanced** expertise levels. All papers are also available as structured data in `_data/journal_papers.yml` for programmatic filtering. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+96 papers hand-annotated across 11 teaching dimensions, each with summaries at
+**beginner**, **intermediate**, and **advanced** expertise levels, plus key figures and
+discussion prompts. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+
+This is a different collection from the
+[journal club corpus]({{ '/technical-training/journal-club/' | relative_url }}), which
+holds {{ site.data.journal_papers.papers.size }} bibliometrically selected papers as
+structured data. The two overlap by 35 papers and are built for different jobs — the
+[collection index]({{ '/content-library/journal-papers/' | relative_url }}) explains which
+to reach for.
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|

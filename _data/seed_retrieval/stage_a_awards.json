@@ -1,0 +1,5881 @@
+{
+  "awards": [
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01NS142100-02",
+      "title": "BRAIN CONNECTS: Light microscopy for cell-type specific mesoscale to nanoscale dense connectomics",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R00MH128891-04",
+      "title": "New Methodologies for Connectomics",
+      "pi": "LU, XIAOTANG ",
+      "org": "UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01NS142013-02",
+      "title": "BRAIN CONNECTS: FAST-ET: fast automated serial tape-enabled electron tomography",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "BOSTON CHILDREN'S HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R24MH114785-09",
+      "title": "Boss: A cloud-based data archive for electron microscopy and x-ray microtomography",
+      "pi": "WESTER, BROCK A.",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R43MH143449-01",
+      "title": "Development of pan-ExM for whole-brain, molecularly annotated connectomics",
+      "pi": "M'SAAD, ONS ",
+      "org": "PANLUMINATE INC.",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U24NS139927-02",
+      "title": "BRAIN CONNECTS: An Integrative Connectomics Coordination Center (IC3)",
+      "pi": "ZENG, HONGKUI ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R01HD121730-01",
+      "title": "Connectomic mapping of microcircuits underlying infant directed behavior",
+      "pi": "DULAC, CATHERINE ",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5UM1NS132253-03",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01NS142100-01",
+      "title": "BRAIN CONNECTS: Light microscopy for cell-type specific mesoscale to nanoscale dense connectomics",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "4R00MH128891-03",
+      "title": "New Methodologies for Connectomics",
+      "pi": "LU, XIAOTANG ",
+      "org": "UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01NS136401-02",
+      "title": "BRAIN CONNECTS: Photoemission Electron Microscopy for Connectomics",
+      "pi": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5K99NS135650-02",
+      "title": "Circuit structure of cognitive maps in the hippocampus",
+      "pi": "ZHENG, ZHIHAO ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01NS142093-01",
+      "title": "X-ray nanotomography for scalable connectomics",
+      "pi": "SCHAEFER, ANDREAS ",
+      "org": "FRANCIS CRICK INSTITUTE, LTD",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U19NS132720-03",
+      "title": "C4: Neuroanatomy",
+      "pi": "WANG, SAMUEL SHENG-HUNG",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01NS142013-01",
+      "title": "FAST-ET: Fast Automated Serial Tape-Enabled Electron Tomography",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "BOSTON CHILDREN'S HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R24MH114785-08",
+      "title": "Boss: A cloud-based data archive for electron microscopy and x-ray microtomography",
+      "pi": "WESTER, BROCK A.",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R21EY037490-01",
+      "title": "The Development of the RGC Projectome",
+      "pi": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U24NS139927-01",
+      "title": "BRAIN CONNECTS: An Integrative Connectomics Coordination Center (IC3)",
+      "pi": "ZENG, HONGKUI ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01NS137250-02",
+      "title": "BRAIN CONNECTS: A Scalable Automated Proofreading Framework for Connectomics",
+      "pi": "RIVLIN, PATRICIA K",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY026978-09",
+      "title": "Synaptic Organization and Function of Retinal Interneurons and Downstream Visual Pathways",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS121874-03",
+      "title": "Structural Variation in Neuronal Circuits as a Basis for Functional and Behavioral Individuality",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01MH130907-04",
+      "title": "Bridging Function, Connectivity, and Transcriptomics of Mouse Cortical Neurons",
+      "pi": "ARKHIPOV, ANTON ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5UM1NS132253-02",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01NS136401-01",
+      "title": "BRAIN CONNECTS: Photoemission Electron Microscopy for Connectomics",
+      "pi": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1K99NS135650-01",
+      "title": "Circuit structure of cognitive maps in the hippocampus",
+      "pi": "ZHENG, ZHIHAO ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U19NS132720-02",
+      "title": "C4: Neuroanatomy",
+      "pi": "WANG, SAMUEL SHENG-HUNG",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R24MH114785-07",
+      "title": "Boss: A cloud-based data archive for electron microscopy and x-ray microtomography",
+      "pi": "WESTER, BROCK A.",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01NS137250-01",
+      "title": "BRAIN CONNECTS: A Scalable Automated Proofreading Framework for Connectomics",
+      "pi": "RIVLIN, PATRICIA K",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY026978-08",
+      "title": "Synaptic Organization and Function of Retinal Interneurons and Downstream Visual Pathways",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY028282-05",
+      "title": "The Human Foveal Connectome",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "4R01NS121874-02",
+      "title": "Structural Variation in Neuronal Circuits as a Basis for Functional and Behavioral Individuality",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01MH130907-03",
+      "title": "Bridging Function, Connectivity, and Transcriptomics of Mouse Cortical Neurons",
+      "pi": "ARKHIPOV, ANTON ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1ZIANS009456-01",
+      "title": "Neurovascular Coupling and Brain Homeostasis",
+      "pi": "MUGHAL, AMREEN ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1UM1NS132253-01",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5K99MH128891-02",
+      "title": "New Methodologies for Connectomics",
+      "pi": "LU, XIAOTANG ",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY010115-27",
+      "title": "Functional Connectomics of Primate V1",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U19NS132720-01",
+      "title": "C4: Neuroanatomy",
+      "pi": "WANG, SAMUEL SHENG-HUNG",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R43MH131493-02",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "2R24MH114785-06",
+      "title": "Boss: A cloud-based data archive for electron microscopy and x-ray microtomography",
+      "pi": "WESTER, BROCK A.",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY026978-07",
+      "title": "Synaptic Organization and Function of Retinal Interneurons and Downstream Visual Pathways",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5UG3MH123386-03",
+      "title": "A Tool for Synapse-level Circuit Analysis of Human Cerebral Cortex Specimens.",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY028282-04",
+      "title": "The Human Foveal Connectome",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5U01MH130907-02",
+      "title": "Bridging Function, Connectivity, and Transcriptomics of Mouse Cortical Neurons",
+      "pi": "ARKHIPOV, ANTON ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1K99MH128891-01",
+      "title": "New Methodologies for Connectomics",
+      "pi": "LU, XIAOTANG ",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY010115-26",
+      "title": "Functional Connectomics of Primate V1",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R43MH131493-01",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1RF1MH129261-01",
+      "title": "Scalable electron tomography for connectomics",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS108410-05",
+      "title": "Studying perceptual decision-making across cortex by combining population imaging, connectomics, and computational modeling",
+      "pi": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY026978-06",
+      "title": "Synaptic Organization and Function of Retinal Interneurons and Downstream Visual Pathways",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5UG3MH123386-02",
+      "title": "A Tool for Synapse-level Circuit Analysis of Human Cerebral Cortex Specimens.",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY028282-03",
+      "title": "The Human Foveal Connectome",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1U01MH130907-01",
+      "title": "Bridging Function, Connectivity, and Transcriptomics of Mouse Cortical Neurons",
+      "pi": "ARKHIPOV, ANTON ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY010115-25",
+      "title": "Functional Connectomics of Primate V1",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R44MH112349-04",
+      "title": "\"Grid-Tape\": A High-Throughput Platform for Brain Connectomics and Nanoscale Structural Analysis",
+      "pi": "SMITH, RYAN M",
+      "org": "LUXEL CORPORATION",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1RF1MH123398-01A1",
+      "title": "A robust, low-cost platform for EM connectomics",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS108410-04",
+      "title": "Studying perceptual decision-making across cortex by combining population imaging, connectomics, and computational modeling",
+      "pi": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "2R01EY026978-05",
+      "title": "Synaptic Organization and Function of Retinal Interneurons and Downstream Visual Pathways",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1UG3MH123386-01A1",
+      "title": "A Tool for Synapse-level Circuit Analysis of Human Cerebral Cortex Specimens.",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01EY028282-02",
+      "title": "The Human Foveal Connectome",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1RF1MH125932-01A1",
+      "title": "From synapses to genes through morphology: an integrated characterization of cell types based on connectomics and transcriptomics data",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R01NS121874-01",
+      "title": "Structural variation in neuronal circuits as a basis for functional and behavioral individuality",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "2R01EY010115-24A1",
+      "title": "Functional Connectomics of Primate V1",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "2R44MH112349-03",
+      "title": "\"Grid-Tape\": A High-Throughput Platform for Brain Connectomics and Nanoscale Structural Analysis",
+      "pi": "SMITH, RYAN M",
+      "org": "LUXEL CORPORATION",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS108410-03",
+      "title": "Studying perceptual decision-making across cortex by combining population imaging, connectomics, and computational modeling",
+      "pi": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "4R44MH121167-02",
+      "title": "Intelligent connectomic analysis tool for dense neuronal circuits",
+      "pi": "LEE, SHIH-JONG J",
+      "org": "DRVISION TECHNOLOGIES, LLC",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "6R44MH121167-03",
+      "title": "Intelligent connectomic analysis tool for dense neuronal circuits",
+      "pi": "LEE, SHIH-JONG J",
+      "org": "SVISION, LLC.",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R01EY028282-01A1",
+      "title": "The Human Foveal Connectome",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R21EY030623-02",
+      "title": "Tools and approaches for functional connectomics of dense neuropils",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS100459-05",
+      "title": "The role of pericytes in white matter disease",
+      "pi": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1RF1MH117808-01A1",
+      "title": "Tools to broaden access to high-throughput functional connectomics",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS108410-02",
+      "title": "Studying perceptual decision-making across cortex by combining population imaging, connectomics, and computational modeling",
+      "pi": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R44MH121167-01",
+      "title": "Intelligent connectomic analysis tool for dense neuronal circuits",
+      "pi": "LEE, SHIH-JONG J",
+      "org": "DRVISION TECHNOLOGIES, LLC",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5DP1MH110065-05",
+      "title": "Cell Biological Limitations Constrain Dendritic Branching Morphology and Neuronal Function",
+      "pi": "HOWARD, JONATHON ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R21EY030623-01",
+      "title": "Tools and approaches for functional connectomics of dense neuropils",
+      "pi": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1RF1MH120679-01",
+      "title": "Automating whole brain connectomics: development, validation, and application of an open toolkit",
+      "pi": "BOCK, DAVI ",
+      "org": "UNIVERSITY OF VERMONT & ST AGRIC COLLEGE",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS100459-04",
+      "title": "The role of pericytes in white matter disease",
+      "pi": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R43MH112349-02",
+      "title": "\"Grid-Tape\": A High-Throughput Platform for Brain Connectomics and Nanoscale Structural Analysis",
+      "pi": "SMITH, RYAN M",
+      "org": "LUXEL CORPORATION",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R01NS108410-01",
+      "title": "Studying perceptual decision-making across cortex by combining population imaging, connectomics, and computational modeling",
+      "pi": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5F31EY027695-02",
+      "title": "Ultrastructural analysis of melanopsin-containing retinal ganglion cells using a novel approach",
+      "pi": "SNELL, MEGAN LYNN LEYRER",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5DP1MH110065-04",
+      "title": "Cell Biological Limitations Constrain Dendritic Branching Morphology and Neuronal Function",
+      "pi": "HOWARD, JONATHON ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS100459-03",
+      "title": "The role of pericytes in white matter disease",
+      "pi": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5P30NS062685-09",
+      "title": "Electron Microscope Core  Core Facilities for Analysis of Neural Circuit Structu",
+      "pi": "SANES, JOSHUA R",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R43MH112349-01",
+      "title": "\"Grid-Tape\": A High-Throughput Platform for Brain Connectomics and Nanoscale Structural Analysis",
+      "pi": "SMITH, RYAN M",
+      "org": "LUXEL CORPORATION",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R41MH112318-02",
+      "title": "Whole Brain Nanoscale Preservation/Imaging",
+      "pi": "MCINTYRE, ROBERT ",
+      "org": "NECTOME, INC.",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "3R41MH112318-01S1",
+      "title": "Whole Brain Nanoscale Preservation/Imaging",
+      "pi": "MCINTYRE, ROBERT ",
+      "org": "NECTOME, INC.",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5DP1MH110065-03",
+      "title": "Cell Biological Limitations Constrain Dendritic Branching Morphology and Neuronal Function",
+      "pi": "HOWARD, JONATHON ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1F31EY027695-01",
+      "title": "Ultrastructural analysis of melanopsin-containing retinal ganglion cells using a novel approach",
+      "pi": "SNELL, MEGAN LYNN LEYRER",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R01NS100459-02",
+      "title": "The role of pericytes in white matter disease",
+      "pi": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5P30NS062685-08",
+      "title": "Electron Microscope Core  Core Facilities for Analysis of Neural Circuit Structu",
+      "pi": "SANES, JOSHUA R",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R41MH112318-01",
+      "title": "Whole Brain Nanoscale Preservation/Imaging",
+      "pi": "MCINTYRE, ROBERT ",
+      "org": "NECTOME, INC.",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5DP1MH110065-02",
+      "title": "Cell Biological Limitations Constrain Dendritic Branching Morphology and Neuronal Function",
+      "pi": "HOWARD, JONATHON ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R01NS100459-01",
+      "title": "The role of pericytes in white matter disease",
+      "pi": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5P30NS062685-07",
+      "title": "Electron Microscope Core  Core Facilities for Analysis of Neural Circuit Structu",
+      "pi": "SANES, JOSHUA R",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "2P30NS062685-06A1",
+      "title": "Electron Microscope Core  Core Facilities for Analysis of Neural Circuit Structu",
+      "pi": "SANES, JOSHUA R",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "5R21EB016223-02",
+      "title": "ALL-OPTICAL HIGH-THROUGHPUT FUNCTIONAL CONNECTIVITY MAPPING USING ADVANCED MICROS",
+      "pi": "TOLIAS, ANDREAS ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "connectomics electron microscopy",
+      "project_num": "1R21EB016223-01A1",
+      "title": "ALL-OPTICAL HIGH-THROUGHPUT FUNCTIONAL CONNECTIVITY MAPPING USING ADVANCED MICROS",
+      "pi": "SAGGAU, PETER ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2013
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24NS140384-02",
+      "title": "BRAIN CONNECTS: The Axonal Projectome EXchange (APEX)",
+      "pi": "PESTILLI, FRANCO ",
+      "org": "UNIVERSITY OF TEXAS AT AUSTIN",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24NS139927-02",
+      "title": "BRAIN CONNECTS: An Integrative Connectomics Coordination Center (IC3)",
+      "pi": "ZENG, HONGKUI ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS142100-02",
+      "title": "BRAIN CONNECTS: Light microscopy for cell-type specific mesoscale to nanoscale dense connectomics",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS142013-02",
+      "title": "BRAIN CONNECTS: FAST-ET: fast automated serial tape-enabled electron tomography",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "BOSTON CHILDREN'S HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132358-04",
+      "title": "BRAIN CONNECTS: The center for Large-scale Imaging of Neural Circuits (LINC)",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS136405-03",
+      "title": "BRAIN CONNECTS: Scalable Approaches for Bidirectional Brain-wide Trans-Neuronal Connectivity Mapping of Defined Cell Types",
+      "pi": "DUAN, XIN ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5I01BX006454-02",
+      "title": "Innate immunity and ischemic stroke",
+      "pi": "CAO, GUODONG ",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS136398-03",
+      "title": "BRAIN CONNECTS: High-Throughput Single Cell Projection Mapping and Spine Quantification in the Primate Brain by Synaptic Barcoding",
+      "pi": "MACOSKO, EVAN Z",
+      "org": "BROAD INSTITUTE, INC.",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS107970-08",
+      "title": "Biased randomness: a fundamental connectivity mechanism for associative brain centers.",
+      "pi": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS129654-04",
+      "title": "Circadian Control of Brain-peripheral Immune Response After Stroke",
+      "pi": "ESPOSITO, ELGA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "4RF1MH134515-04",
+      "title": "Inhibitory regulation of hippocampal CA3 neuron activity, learning, and memory",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS130044-04",
+      "title": "Investigation of neural ensembles driving pain chronification",
+      "pi": "BEIER, KEVIN T",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R21CA316284-01",
+      "title": "Exploiting Epigenetic Reprogramming of NGFR/NTRK Signaling in CARM1-Deficient Glioblastoma",
+      "pi": "SIDOLI, SIMONE ",
+      "org": "ALBERT EINSTEIN COLLEGE OF MEDICINE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U19AG073585-05",
+      "title": "EFFECTS OF VULNERABILITY AND RESILIENCY ON BRAIN HEALTH DURING THE MID-TO-LATE-LIFE TRANSITION",
+      "pi": "LAVRETSKY, HELEN ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1OT2CA320060-01",
+      "title": "Cancer Grand Challenges - InteroCANCEption -  Crosstalk between cancer and the nervous system via interoception",
+      "pi": "LIBERLES, STEPHEN DANIEL",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1OT2CA320055-01",
+      "title": "Cancer Grand Challenges - InteroCANCEption - Crosstalk between cancer and the nervous system via interoception",
+      "pi": "CHIU, ISAAC MING-CHENG",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5DP1AG100833-02",
+      "title": "Peripheral nervous system aging",
+      "pi": "BRUNET, ANNE ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F30AT013179-02",
+      "title": "Molecular and organizational mechanisms that build the vagal sensory code for interoception",
+      "pi": "HAFEZ, OMAR ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "3R01AG089354-01A1S1",
+      "title": "The Proteomic Signature of Sleep and its implication for Alzheimer's Disease",
+      "pi": "KNUTSON, KRISTEN ",
+      "org": "NORTHWESTERN UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DC020368-04",
+      "title": "Circuit mechanism of pheromone processing and innate behavior",
+      "pi": "YU, CONGRONG RON",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01AG089354-01A1",
+      "title": "The Proteomic Signature of Sleep and its implication for Alzheimer's Disease",
+      "pi": "KNUTSON, KRISTEN ",
+      "org": "NORTHWESTERN UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F31AG086042-03",
+      "title": "The Role of Peripheral Aged CD8+ T Cells in Hippocampal-Dependent Cognitive Decline",
+      "pi": "SUCHAROV COSTA, JULIANA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH138583-02",
+      "title": "Development of a novel NPY-sensitive microelectrode to detect endogenous NPY release",
+      "pi": "CUNCI, LISANDRO ",
+      "org": "UNIVERSITY OF PUERTO RICO RIO PIEDRAS",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P60AA011605-29",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Use Disorders",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P30DA018343-22",
+      "title": "Bioinformatics and Biostatistics Core",
+      "pi": "NAIRN, ANGUS C.",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK123549-08",
+      "title": "Mechanotransduction in gastrointestinal physiology",
+      "pi": "BEYDER, ARTHUR ",
+      "org": "MAYO CLINIC ROCHESTER",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5I01CX002787-02",
+      "title": "Integrating Immune Dysregulation and Reward Circuitry in Veterans with Mood Disorders and Suicide\"",
+      "pi": "SZESZKO, PHILIP R",
+      "org": "JAMES J PETERS VA  MEDICAL CENTER",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AG093792-02",
+      "title": "Neuroimage-genomic fingerprints for subtyping and prediction of Alzheimer's Disease and related dementia",
+      "pi": "MA, DA ",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY037228-02",
+      "title": "Mechanistic assessment of retinal ganglion cell genesis",
+      "pi": "MIESFELD, JOEL B",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AG093746-02",
+      "title": "Studying roles of CASP8 SVA GGGAGA repeat expansions in Alzheimer's disease",
+      "pi": "NGUYEN, LIEN ",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK132566-05",
+      "title": "A leptin-responsive lateral hypothalamus to ventrolateral periaqueductal gray circuit for palatable food overconsumption",
+      "pi": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DE025866-10",
+      "title": "Cxcl12-Hedgehog signaling in cranial bone regeneration",
+      "pi": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U24NS140384-01",
+      "title": "BRAIN CONNECTS: The Axonal Projectome EXchange (APEX)",
+      "pi": "PESTILLI, FRANCO ",
+      "org": "UNIVERSITY OF TEXAS AT AUSTIN",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U24NS139927-01",
+      "title": "BRAIN CONNECTS: An Integrative Connectomics Coordination Center (IC3)",
+      "pi": "ZENG, HONGKUI ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS142100-01",
+      "title": "BRAIN CONNECTS: Light microscopy for cell-type specific mesoscale to nanoscale dense connectomics",
+      "pi": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS137250-02",
+      "title": "BRAIN CONNECTS: A Scalable Automated Proofreading Framework for Connectomics",
+      "pi": "RIVLIN, PATRICIA K",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132161-03",
+      "title": "BRAIN CONNECTS: Mapping brain-wide connectivity of neuronal types using barcoded connectomics",
+      "pi": "CHEN, XIAOYIN ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132207-03",
+      "title": "BRAIN CONNECTS: Center for Mesoscale Connectomics",
+      "pi": "UGURBIL, KAMIL ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS136401-02",
+      "title": "BRAIN CONNECTS: Photoemission Electron Microscopy for Connectomics",
+      "pi": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132250-03",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS009457-02",
+      "title": "BRAIN CONNECTS: PatchLink, scalable tools for integrating connectomes, projectomes, and transcriptomes",
+      "pi": "KHALIQ, ZAYD M",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132358-03",
+      "title": "BRAIN CONNECTS: The center for Large-scale Imaging of Neural Circuits (LINC)",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132267-03",
+      "title": "BRAIN CONNECTS: PatchLink, scalable tools for integrating connectomes, projectomes, and transcriptomes",
+      "pi": "SORENSEN, STACI A",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132181-03",
+      "title": "BRAIN CONNECTS: Mapping Connectivity of the Human Brainstem in a Nuclear Coordinate System",
+      "pi": "FISCHL, BRUCE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS136405-02",
+      "title": "BRAIN CONNECTS: Scalable Approaches for Bidirectional Brain-wide Trans-Neuronal Connectivity Mapping of Defined Cell Types",
+      "pi": "DUAN, XIN ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5K99NS135647-02",
+      "title": "Encoding of Bodily State and Motor Action in a Minimal Circuit for Food Consumption",
+      "pi": "KOSSE, CHRISTIN ",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132317-03",
+      "title": "BRAIN CONNECTS: Multi-Beam Transmission Electron Microscopy of Iteratively Milled Semi-Thick Tissue Sections",
+      "pi": "WANNER, ADRIAN ANDREAS",
+      "org": "PAUL SCHERRER INSTITUT PSI",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1I01BX006454-01A1",
+      "title": "Innate immunity and ischemic stroke",
+      "pi": "CAO, GUODONG ",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAAG000545-04",
+      "title": "Center for Alzheimer's and Related Dementias: First stage single-cell brain resource for Alzheimer's disease and related dementias",
+      "pi": "COOKSON, MARK ",
+      "org": "NATIONAL INSTITUTE ON AGING",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132253-03",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS107970-07",
+      "title": "Biased randomness: a fundamental connectivity mechanism for associative brain centers.",
+      "pi": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS136398-02",
+      "title": "BRAIN CONNECTS: High-Throughput Single Cell Projection Mapping and Spine Quantification in the Primate Brain by Synaptic Barcoding",
+      "pi": "MACOSKO, EVAN Z",
+      "org": "BROAD INSTITUTE, INC.",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132158-03",
+      "title": "BRAIN CONNECTS: Rapid and Cost\u2010effective Connectomics with Intelligent Image Acquisition, Reconstruction, and Querying",
+      "pi": "SAMUEL, ARAVINTHAN D.",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132353-03",
+      "title": "BRAIN CONNECTS: Synaptic Resolution Whole-Brain Circuit Mapping of Molecularly Defined Cell Types Using a Barcoded Rabies Virus",
+      "pi": "TOLIAS, ANDREAS ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132173-03",
+      "title": "BRAIN CONNECTS: Comprehensive Regional Projection Map of Marmoset with Single Axon and Cell Type Resolution",
+      "pi": "FENG, GUOPING ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS129654-03",
+      "title": "Circadian Control of Brain-peripheral Immune Response After Stroke",
+      "pi": "ESPOSITO, ELGA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS130044-03",
+      "title": "Investigation of neural ensembles driving pain chronification",
+      "pi": "BEIER, KEVIN T",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "4RF1AG079256-02",
+      "title": "Understanding the functional impacts of A\u03b2 variants in Alzheimer's disease with human brain organoids",
+      "pi": "WEN, ZHEXING ",
+      "org": "EMORY UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH134515-03",
+      "title": "Inhibitory regulation of hippocampal CA3 neuron activity, learning, and memory",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AT011665-05",
+      "title": "Functional Neural Circuits of Stomach-Brain Interoception",
+      "pi": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5IK6RX003836-04",
+      "title": "RR&D Research Career Scientist Award Application",
+      "pi": "TYLER, DUSTIN J.",
+      "org": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U19AG073585-04",
+      "title": "EFFECTS OF VULNERABILITY AND RESILIENCY ON BRAIN HEALTH DURING THE MID-TO-LATE-LIFE TRANSITION",
+      "pi": "LAVRETSKY, HELEN ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01AT013626-01",
+      "title": "SCH: ASIC-Based Edge Al Wireless Vagus Nerve Implant for Exploring Diabetes Reversal.",
+      "pi": "MIRBOZORGI, SEYEDABDOLLAH ",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5DP1NS142432-02",
+      "title": "Neural control of rhythmic orofacial movements",
+      "pi": "LI, NUO ",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "4R33DA059924-03",
+      "title": "Methamphetamine, HIV integration and latency in the brain",
+      "pi": "MARCONDES, MARIA CECILIA GARIBALDI",
+      "org": "SAN DIEGO BIOMEDICAL RESEARCH INSTITUTE",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1DP1AG100833-01",
+      "title": "Peripheral nervous system aging",
+      "pi": "BRUNET, ANNE ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P30AG072973-05",
+      "title": "Core E: Outreach, Recruitment and Engagement Core",
+      "pi": "PERALES PUCHALT, JAIME ",
+      "org": "UNIVERSITY OF KANSAS MEDICAL CENTER",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F30AG081097-03",
+      "title": "Microbiome Contributions to Age-Associated Cognitive Decline",
+      "pi": "COX, TIMOTHY ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F30AT013179-01",
+      "title": "Molecular and organizational mechanisms that build the vagal sensory code for interoception",
+      "pi": "HAFEZ, OMAR ",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F31AG086042-02",
+      "title": "The Role of Peripheral Aged CD8+ T Cells in Hippocampal-Dependent Cognitive Decline",
+      "pi": "SUCHAROV COSTA, JULIANA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01MH138583-01",
+      "title": "Development of a novel NPY-sensitive microelectrode to detect endogenous NPY release",
+      "pi": "CUNCI, LISANDRO ",
+      "org": "UNIVERSITY OF PUERTO RICO RIO PIEDRAS",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7R01DC020368-03",
+      "title": "Circuit mechanism of pheromone processing and innate behavior",
+      "pi": "YU, CONGRONG RON",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAAG000609-33",
+      "title": "Sodium pump ligands in blood pressure regulation and profibrotic signaling in hypertension, chronic kidney disease and aging in males and females",
+      "pi": "FEDOROVA, OLGA V",
+      "org": "NATIONAL INSTITUTE ON AGING",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P60AA011605-28",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Use Disorders",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS058721-16",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "ARGILLI, EMANUELA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH126948-05",
+      "title": "Peripheral Inflammation and Stress Drive Ventral Striatal Maladaptations",
+      "pi": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ARIZONA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F31AG089912-02",
+      "title": "The Role of Neuronal Primary Cilia Deterioration in Alzheimer's Disease",
+      "pi": "MILLER, EMIKO L",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK123549-07",
+      "title": "Mechanotransduction in gastrointestinal physiology",
+      "pi": "BEYDER, ARTHUR ",
+      "org": "MAYO CLINIC ROCHESTER",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2P30DA018343-21",
+      "title": "Bioinformatics and Biostatistics Core",
+      "pi": "NAIRN, ANGUS C.",
+      "org": "YALE UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1I01CX002787-01A1",
+      "title": "Integrating Immune Dysregulation and Reward Circuitry in Veterans with Mood Disorders and Suicide\"",
+      "pi": "SZESZKO, PHILIP R",
+      "org": "JAMES J PETERS VA  MEDICAL CENTER",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01AG093792-01",
+      "title": "Neuroimage-genomic fingerprints for subtyping and prediction of Alzheimer's Disease and related dementia",
+      "pi": "MA, DA ",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24CA258407-05",
+      "title": "Enhance UCSC Xena: extend interactive visualization to ultra-large-scale multi-omics data and integrate with analysis resources",
+      "pi": "ZHU, JINGCHUN ",
+      "org": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01EY037228-01",
+      "title": "Mechanistic assessment of retinal ganglion cell genesis",
+      "pi": "MIESFELD, JOEL B",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK132566-04",
+      "title": "A leptin-responsive lateral hypothalamus to ventrolateral periaqueductal gray circuit for palatable food overconsumption",
+      "pi": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DE025866-09",
+      "title": "Cxcl12-Hedgehog signaling in cranial bone regeneration",
+      "pi": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01AG093746-01",
+      "title": "Studying roles of CASP8 SVA GGGAGA repeat expansions in Alzheimer's disease",
+      "pi": "NGUYEN, LIEN ",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5I50BX005878-05",
+      "title": "PRECISE-TBI: PRE Clinical lnteragency research resourcE-TBI",
+      "pi": "FLOYD, CANDACE L.",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAMH002782-24",
+      "title": "fMRI Studies of Risk for Mood and Anxiety Disorders in Children",
+      "pi": "PINE, DANIEL ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS137250-01",
+      "title": "BRAIN CONNECTS: A Scalable Automated Proofreading Framework for Connectomics",
+      "pi": "RIVLIN, PATRICIA K",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132161-02",
+      "title": "BRAIN CONNECTS: Mapping brain-wide connectivity of neuronal types using barcoded connectomics",
+      "pi": "CHEN, XIAOYIN ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132207-02",
+      "title": "BRAIN CONNECTS: Center for Mesoscale Connectomics",
+      "pi": "UGURBIL, KAMIL ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS136401-01",
+      "title": "BRAIN CONNECTS: Photoemission Electron Microscopy for Connectomics",
+      "pi": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132250-02",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS009457-01",
+      "title": "BRAIN CONNECTS: PatchLink, scalable tools for integrating connectomes, projectomes, and transcriptomes",
+      "pi": "KHALIQ, ZAYD M",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132181-02",
+      "title": "BRAIN CONNECTS: Mapping Connectivity of the Human Brainstem in a Nuclear Coordinate System",
+      "pi": "FISCHL, BRUCE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132267-02",
+      "title": "BRAIN CONNECTS: PatchLink, scalable tools for integrating connectomes, projectomes, and transcriptomes",
+      "pi": "SORENSEN, STACI A",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132358-02",
+      "title": "BRAIN CONNECTS: The center for Large-scale Imaging of Neural Circuits (LINC)",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS136405-01",
+      "title": "BRAIN CONNECTS: Scalable Approaches for Bidirectional Brain-wide Trans-Neuronal Connectivity Mapping of Defined Cell Types",
+      "pi": "DUAN, XIN ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1RF1NS137467-01",
+      "title": "Brain lymphatic activation for craniosynostosis and Alzheimer\u2019s disease",
+      "pi": "CHEN, JIANFU ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132317-02",
+      "title": "BRAIN CONNECTS: Multi-Beam Transmission Electron Microscopy of Iteratively Milled Semi-Thick Tissue Sections",
+      "pi": "WANNER, ADRIAN ANDREAS",
+      "org": "PAUL SCHERRER INSTITUT PSI",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1K99NS135647-01",
+      "title": "Encoding of Bodily State and Motor Action in a Minimal Circuit for Food Consumption",
+      "pi": "KOSSE, CHRISTIN ",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U01NS132158-02",
+      "title": "BRAIN CONNECTS: Rapid and Cost\u2010effective Connectomics with Intelligent Image Acquisition, Reconstruction, and Querying",
+      "pi": "SAMUEL, ARAVINTHAN D.",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132253-02",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS136398-01",
+      "title": "BRAIN CONNECTS: High-Throughput Single Cell Projection Mapping and Spine Quantification in the Primate Brain by Synaptic Barcoding",
+      "pi": "MACOSKO, EVAN Z",
+      "org": "BROAD INSTITUTE, INC.",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R01NS107970-06A1",
+      "title": "Biased randomness: a fundamental connectivity mechanism for associative brain centers.",
+      "pi": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7U01NS132353-02",
+      "title": "BRAIN CONNECTS: Synaptic resolution whole-brain circuit mapping of molecularly defined cell types using a barcoded rabies virus",
+      "pi": "TOLIAS, ANDREAS ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS129654-02",
+      "title": "Circadian Control of Brain-peripheral Immune Response After Stroke",
+      "pi": "ESPOSITO, ELGA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5UM1NS132173-02",
+      "title": "BRAIN CONNECTS: Comprehensive regional projection map of marmoset with single axon and cell type resolution",
+      "pi": "FENG, GUOPING ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS130044-02",
+      "title": "Investigation of neural ensembles driving pain chronification",
+      "pi": "BEIER, KEVIN T",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AT011665-04",
+      "title": "Functional Neural Circuits of Stomach-Brain Interoception",
+      "pi": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH125943-04",
+      "title": "Molecular mechanisms of target-specific synapse formation",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH134515-02",
+      "title": "Inhibitory regulation of hippocampal CA3 neuron activity, learning, and memory",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5IK6RX003836-02",
+      "title": "RR&D Research Career Scientist Award Application",
+      "pi": "TYLER, DUSTIN J.",
+      "org": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5IK6RX003836-03",
+      "title": "RR&D Research Career Scientist Award Application",
+      "pi": "TYLER, DUSTIN J.",
+      "org": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R61DA059924-02",
+      "title": "Methamphetamine, HIV integration and latency in the brain",
+      "pi": "MARCONDES, MARIA CECILIA GARIBALDI",
+      "org": "SAN DIEGO BIOMEDICAL RESEARCH INSTITUTE",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1DP1NS142432-01",
+      "title": "Neural control of rhythmic orofacial movements",
+      "pi": "LI, NUO ",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA049449-05",
+      "title": "Circuitry and function of ventral striatum subregions",
+      "pi": "WESSON, DANIEL W",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F30AG081097-02",
+      "title": "Microbiome Contributions to Age-Associated Cognitive Decline",
+      "pi": "COX, TIMOTHY ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R15NS124008-02",
+      "title": "Early GABAergic signaling influences axon morphology and cortical cell polarity",
+      "pi": "HINES, ROCHELLE MARIE",
+      "org": "UNIVERSITY OF NEVADA LAS VEGAS",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F31AG086042-01",
+      "title": "The Role of Peripheral Aged CD8+ T Cells in Hippocampal-Dependent Cognitive Decline",
+      "pi": "SUCHAROV COSTA, JULIANA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01ES032153-05",
+      "title": "Air Pollution Exposures in Early Life and Brain Development in Children",
+      "pi": "BENKI-NUGENT, SARAH F.",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DC020368-02",
+      "title": "Circuit Mechanism of Pheromone Processing and Innate Behavior",
+      "pi": "YU, CONGRONG RON",
+      "org": "STOWERS INSTITUTE FOR MEDICAL RESEARCH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS058721-15",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P60AA011605-27",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Use Disorders",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5K00NS124180-03",
+      "title": "How Do Astrocytes Participate in Demyelination and Myelin Repair",
+      "pi": "HRELIC COLON, CRYSTAL KORALIS",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH126948-04",
+      "title": "Peripheral Inflammation and Stress Drive Ventral Striatal Maladaptations",
+      "pi": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ARIZONA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R01DK123549-06",
+      "title": "Mechanotransduction in gastrointestinal physiology",
+      "pi": "BEYDER, ARTHUR ",
+      "org": "MAYO CLINIC ROCHESTER",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F31AG089912-01",
+      "title": "The Role of Neuronal Primary Cilia Deterioration in Alzheimer's Disease",
+      "pi": "MILLER, EMIKO L",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAMH002784-23",
+      "title": "Neurogenesis in the Adult Brain",
+      "pi": "CAMERON, HEATHER A",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24CA258407-04",
+      "title": "Enhance UCSC Xena: extend interactive visualization to ultra-large-scale multi-omics data and integrate with analysis resources",
+      "pi": "ZHU, JINGCHUN ",
+      "org": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK132566-03",
+      "title": "A leptin-responsive lateral hypothalamus to ventrolateral periaqueductal gray circuit for palatable food overconsumption",
+      "pi": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DE025866-08",
+      "title": "Cxcl12-Hedgehog signaling in cranial bone regeneration",
+      "pi": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5I50BX005878-04",
+      "title": "PRECISE-TBI: PRE Clinical lnteragency research resourcE-TBI",
+      "pi": "FLOYD, CANDACE L.",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAMH002782-23",
+      "title": "fMRI Studies of Risk for Mood and Anxiety Disorders in Children",
+      "pi": "PINE, DANIEL ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132161-01",
+      "title": "BRAIN CONNECTS: Mapping brain-wide connectivity of neuronal types using barcoded connectomics",
+      "pi": "CHEN, XIAOYIN ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1UM1NS132207-01",
+      "title": "BRAIN CONNECTS: Center for Mesoscale Connectomics",
+      "pi": "UGURBIL, KAMIL ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1UM1NS132250-01",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132267-01",
+      "title": "BRAIN CONNECTS: PatchLink, scalable tools for integrating connectomes, projectomes, and transcriptomes",
+      "pi": "SORENSEN, STACI A",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1UM1NS132358-01",
+      "title": "BRAIN CONNECTS: The center for Large-scale Imaging of Neural Circuits (LINC)",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132181-01",
+      "title": "BRAIN CONNECTS: Mapping Connectivity of the Human Brainstem in a Nuclear Coordinate System",
+      "pi": "FISCHL, BRUCE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS003032-17",
+      "title": "Therapy of Movement Disorders",
+      "pi": "HALLETT, MARK ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132317-01",
+      "title": "BRAIN CONNECTS: Multi-beam transmission electron microscopy of iteratively milled semi-thick tissue sections",
+      "pi": "WANNER, ADRIAN ANDREAS",
+      "org": "PAUL SCHERRER INSTITUT PSI",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1UM1NS132253-01",
+      "title": "BRAIN CONNECTS: Center for a pipeline of high throughput integrated volumetric electron microscopy for whole mouse brain connectomics",
+      "pi": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132353-01",
+      "title": "BRAIN CONNECTS: Synaptic resolution whole-brain circuit mapping of molecularly defined cell types using a barcoded rabies virus",
+      "pi": "TOLIAS, ANDREAS ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS132158-01",
+      "title": "BRAIN CONNECTS: Rapid and Cost\u2010effective Connectomics with Intelligent Image Acquisition, Reconstruction, and Querying",
+      "pi": "SAMUEL, ARAVINTHAN D.",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01NS129654-01A1",
+      "title": "Circadian Control of Brain-peripheral Immune Response After Stroke",
+      "pi": "ESPOSITO, ELGA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01NS130044-01",
+      "title": "Investigation of neural ensembles driving pain chronification",
+      "pi": "BEIER, KEVIN T",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01MH134515-01",
+      "title": "Inhibitory regulation of hippocampal CA3 neuron activity, learning, and memory",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS110577-05",
+      "title": "Spinal Effects of Cortical Stimulation: Mechanisms and Functional Impact",
+      "pi": "WOLPAW, JONATHAN RICKEL",
+      "org": "ALBANY RESEARCH INSTITUTE, INC.",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AT011665-03",
+      "title": "Functional Neural Circuits of Stomach-Brain Interoception",
+      "pi": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1UM1NS132173-01",
+      "title": "BRAIN CONNECTS: Comprehensive regional projection map of marmoset with single axon and cell type resolution",
+      "pi": "FENG, GUOPING ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7R21AG072107-02",
+      "title": "Developing a Microphysiological System of a Humanized Gut-Brain-Axis for Ageassociated Transmissible Neuropathologies",
+      "pi": "KULKARNI, SUBHASH ",
+      "org": "BETH ISRAEL DEACONESS MEDICAL CENTER",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH125943-03",
+      "title": "Molecular mechanisms of target-specific synapse formation",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R03DK131221-02",
+      "title": "Brain-gut-immune Profiling in Connective Tissue Disorder-related Gastrointestinal Dysfunction",
+      "pi": "KARRENTO, KATJA KRISTINA",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS109475-06",
+      "title": "Atypical Formation of Fiber Pathways and Cortical Folding in the Brain",
+      "pi": "TAKAHASHI (OKI), EMI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U19AG073585-03",
+      "title": "EFFECTS OF VULNERABILITY AND RESILIENCY ON BRAIN HEALTH DURING THE MID-TO-LATE-LIFE TRANSITION",
+      "pi": "LAVRETSKY, HELEN ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R61DA059924-01",
+      "title": "Methamphetamine, HIV integration and latency in the brain",
+      "pi": "MARCONDES, MARIA CECILIA GARIBALDI",
+      "org": "SAN DIEGO BIOMEDICAL RESEARCH INSTITUTE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA049449-04",
+      "title": "Circuitry and function of ventral striatum subregions",
+      "pi": "WESSON, DANIEL W",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F30AG081097-01",
+      "title": "Microbiome Contributions to Age-Associated Cognitive Decline",
+      "pi": "COX, TIMOTHY ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAMH002784-22",
+      "title": "Neurogenesis in the Adult Brain",
+      "pi": "CAMERON, HEATHER A",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DC018691-05",
+      "title": "Neuroengineering a Robust Vocal Learning Phenotype in Mice as a Model for Treating Communication Disorders",
+      "pi": "JARVIS, ERICH D",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY025536-07",
+      "title": "Photoreceptor neuron specific alternative splicing messenger RNA",
+      "pi": "STOILOV, PETER ",
+      "org": "WEST VIRGINIA UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01ES032153-04",
+      "title": "Air Pollution Exposures in Early Life and Brain Development in Children",
+      "pi": "BENKI-NUGENT, SARAH F.",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R21DA055427-02",
+      "title": "A telehealth tDCS approach to decrease cannabis use: Towards reducing multiple sclerosis disability in multiple sclerosis",
+      "pi": "CHARVET, LEIGH ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01DC020368-01A1",
+      "title": "Circuit Mechanism of Pheromone Processing and Innate Behavior",
+      "pi": "YU, CONGRONG RON",
+      "org": "STOWERS INSTITUTE FOR MEDICAL RESEARCH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2P60AA011605-26",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Use Disorders",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH120404-05",
+      "title": "Deciphering the building blocks of the macaque prefrontal cortical microcircuit",
+      "pi": "JIANG, XIAOLONG ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS058721-14",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "3R01NS058721-14S1",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F30MH125638-03",
+      "title": "Integration of Sensory and Temporal Information in CA3",
+      "pi": "CHEUNG, STEPHANIE ",
+      "org": "UNIVERSITY OF CALIFORNIA LOS ANGELES",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7R01MH126948-03",
+      "title": "Peripheral Inflammation and Stress Drive Ventral Striatal Maladaptations",
+      "pi": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ARIZONA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "4K00NS124180-02",
+      "title": "How Do Astrocytes Participate in Demyelination and Myelin Repair",
+      "pi": "HRELIC COLON, CRYSTAL KORALIS",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY031209-04",
+      "title": "Deconstructing and Modeling the Single Cell Architecture of the Age-Related Macular Degeneration Retina and RPE/Choroid",
+      "pi": "STAMBOLIAN, DWIGHT EDWARD",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH119149-05",
+      "title": "Nonconventional role of ADCY in Gq-mediated neuronal signaling and neuroplasticity",
+      "pi": "WANG, HONGBING ",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA048948-06",
+      "title": "Distress Tolerance and Smoking Cessation",
+      "pi": "ADDICOTT, MERIDETH A.",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AA026596-06",
+      "title": "Scaling up: A multi-site trial of e-SBI for alcohol use in Pregnancy",
+      "pi": "ONDERSMA, STEVEN J",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24CA258407-03",
+      "title": "Enhance UCSC Xena: extend interactive visualization to ultra-large-scale multi-omics data and integrate with analysis resources",
+      "pi": "ZHU, JINGCHUN ",
+      "org": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F31NS116947-03",
+      "title": "Characterizing the Neural Pathway Maintaining Urinary Continence and its Role in Hydrocephalic Incontinence",
+      "pi": "TISH, MARGARET ",
+      "org": "UNIVERSITY OF IOWA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DK132566-02",
+      "title": "A leptin-responsive lateral hypothalamus to ventrolateral periaqueductal gray circuit for palatable food overconsumption",
+      "pi": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DE025866-07",
+      "title": "Cxcl12-Hedgehog signaling in cranial bone regeneration",
+      "pi": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7I50BX005878-03",
+      "title": "PRECISE-TBI: PRE Clinical lnteragency research resourcE-TBI",
+      "pi": "FLOYD, CANDACE L.",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5I50BX005878-02",
+      "title": "PRECISE-TBI: PRE Clinical lnteragency research resourcE-TBI",
+      "pi": "FLOYD, CANDACE L.",
+      "org": "VA SALT LAKE CITY HEALTHCARE SYSTEM",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIAMH002782-22",
+      "title": "fMRI Studies of Risk for Mood and Anxiety Disorders in Children",
+      "pi": "PINE, DANIEL ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS003032-16",
+      "title": "Therapy of Movement Disorders",
+      "pi": "HALLETT, MARK ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS107970-05",
+      "title": "Biased randomness: a fundamental connectivity mechanism for associative brain centers",
+      "pi": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS110577-04",
+      "title": "Spinal Effects of Cortical Stimulation: Mechanisms and Functional Impact",
+      "pi": "WOLPAW, JONATHAN RICKEL",
+      "org": "ALBANY RESEARCH INSTITUTE, INC.",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1RF1AG079256-01",
+      "title": "Understanding the functional impacts of A\u03b2 variants in Alzheimer's disease with human brain organoids",
+      "pi": "WEN, ZHEXING ",
+      "org": "EMORY UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R21AG072107-01A1",
+      "title": "Developing a microphysiological system of a humanized Gut-Brain-Axis for age-associated transmissible neuropathologies",
+      "pi": "KULKARNI, SUBHASH ",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH125943-02",
+      "title": "Molecular mechanisms of target-specific synapse formation",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AT011665-02",
+      "title": "Functional Neural Circuits of Stomach-Brain Interoception",
+      "pi": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1IK6RX003836-01",
+      "title": "RR&D Research Career Scientist Award Application",
+      "pi": "TYLER, DUSTIN J.",
+      "org": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R03DK131221-01",
+      "title": "Brain-gut-immune Profiling in Connective Tissue Disorder-related Gastrointestinal Dysfunction",
+      "pi": "KARRENTO, KATJA KRISTINA",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS109475-05",
+      "title": "Atypical Formation of Fiber Pathways and Cortical Folding in the Brain",
+      "pi": "TAKAHASHI (OKI), EMI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U19AG073585-02",
+      "title": "EFFECTS OF VULNERABILITY AND RESILIENCY ON BRAIN HEALTH DURING THE MID-TO-LATE-LIFE TRANSITION",
+      "pi": "LAVRETSKY, HELEN ",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA049449-03",
+      "title": "Circuitry and function of ventral striatum subregions",
+      "pi": "WESSON, DANIEL W",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DC018691-04",
+      "title": "Neuroengineering a Robust Vocal Learning Phenotype in Mice as a Model for Treating Communication Disorders",
+      "pi": "JARVIS, ERICH D",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY025536-06",
+      "title": "Photoreceptor neuron specific alternative splicing messenger RNA",
+      "pi": "STOILOV, PETER ",
+      "org": "WEST VIRGINIA UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R21DA055427-01",
+      "title": "A telehealth tDCS approach to decrease cannabis use: Towards reducing multiple sclerosis disability in multiple sclerosis",
+      "pi": "CHARVET, LEIGH ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01ES032153-03",
+      "title": "Air Pollution Exposures in Early Life and Brain Development in Children",
+      "pi": "BENKI-NUGENT, SARAH F.",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS002978-24",
+      "title": "Cortical reorganization and plasticity In the healthy brain",
+      "pi": "COHEN, LEONARDO GREGORIO",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS109362-05",
+      "title": "Synaptic and Circuit Interactions to Shape Multisensory Processing",
+      "pi": "BASU, JAYEETA ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH126948-02",
+      "title": "PERIPHERAL INFLAMMATION AND STRESS DRIVE VENTRAL STRIATAL MALADAPTATIONS",
+      "pi": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH120404-04",
+      "title": "Deciphering the building blocks of the macaque prefrontal cortical microcircuit",
+      "pi": "JIANG, XIAOLONG ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F30MH125638-02",
+      "title": "Integration of Sensory and Temporal Information in CA3",
+      "pi": "CHEUNG, STEPHANIE ",
+      "org": "UNIVERSITY OF CALIFORNIA LOS ANGELES",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS058721-13",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY030192-04",
+      "title": "Single-Cell Transcriptomic Analysis of Human Retina",
+      "pi": "LI, MINGYAO ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P60AA011605-25",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Addiction",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY031209-03",
+      "title": "Deconstructing and Modeling the Single Cell Architecture of the Age-Related Macular Degeneration Retina and RPE/Choroid",
+      "pi": "STAMBOLIAN, DWIGHT EDWARD",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH117089-05",
+      "title": "Activity-Dependent Mechanisms Regulating Synaptic Excitation and Inhibition in Neural Circuits",
+      "pi": "XUE, MINGSHAN ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA048948-05",
+      "title": "Distress Tolerance and Smoking Cessation",
+      "pi": "ADDICOTT, MERIDETH A.",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH119149-04",
+      "title": "Nonconventional role of ADCY in Gq-mediated neuronal signaling and neuroplasticity",
+      "pi": "WANG, HONGBING ",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "3R01EY029595-04S2",
+      "title": "Functionally Validated Structural Endpoints for Early AMD",
+      "pi": "OWSLEY, CYNTHIA ",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AA026596-05",
+      "title": "Scaling up: A multi-site trial of e-SBI for alcohol use in Pregnancy",
+      "pi": "ONDERSMA, STEVEN J",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5U24CA258407-02",
+      "title": "Enhance UCSC Xena: extend interactive visualization to ultra-large-scale multi-omics data and integrate with analysis resources",
+      "pi": "ZHU, JINGCHUN ",
+      "org": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5F31NS116947-02",
+      "title": "Characterizing the Neural Pathway Maintaining Urinary Continence and its Role in Hydrocephalic Incontinence",
+      "pi": "TISH, MARGARET ",
+      "org": "UNIVERSITY OF IOWA",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R41NS129430-01",
+      "title": "A novel clot containing system for improved neurothrombectomy outcomes",
+      "pi": "SCHALLER, MICHAEL ",
+      "org": "XTRACT MEDICAL, INC.",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R01DE025866-06A1",
+      "title": "Cxcl12-Hedgehog signaling in cranial bone regeneration",
+      "pi": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01DK132566-01",
+      "title": "A leptin-responsive lateral hypothalamus to ventrolateral periaqueductal gray circuit for palatable food overconsumption",
+      "pi": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1I50BX005878-01",
+      "title": "PRECISE-TBI: PRE Clinical lnteragency research resourcE-TBI",
+      "pi": "FLOYD, CANDACE L.",
+      "org": "VA SALT LAKE CITY HEALTHCARE SYSTEM",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01AG057635-05",
+      "title": "Systematic Alzheimer's disease drug repositioning (SMART) based on bioinformatics-guided phenotype screening and image-omics",
+      "pi": "WONG, STEPHEN TC",
+      "org": "METHODIST HOSPITAL RESEARCH INSTITUTE",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1ZIANS003032-15",
+      "title": "Therapy of Movement Disorders",
+      "pi": "HALLETT, MARK ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS107970-04",
+      "title": "Biased randomness: a fundamental connectivity mechanism for associative brain centers",
+      "pi": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS110577-03",
+      "title": "Spinal Effects of Cortical Stimulation: Mechanisms and Functional Impact",
+      "pi": "WOLPAW, JONATHAN RICKEL",
+      "org": "ALBANY RESEARCH INSTITUTE, INC.",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH052716-25",
+      "title": "Neuroinflammation, Epigenetics and Male Vulnerability",
+      "pi": "MCCARTHY, MARGARET M.",
+      "org": "UNIVERSITY OF MARYLAND BALTIMORE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U01NS123972-01",
+      "title": "Data Science Core",
+      "pi": "PASCUCCI, VALERIO ",
+      "org": "UNIVERSITY OF MASSACHUSETTS AMHERST",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01MH125943-01",
+      "title": "Molecular mechanisms of target-specific synapse formation",
+      "pi": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01AT011665-01",
+      "title": "Functional Neural Circuits of Stomach-Brain Interoception",
+      "pi": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "7R01NS109475-04",
+      "title": "Atypical Formation of Fiber Pathways and Cortical Folding in the Brain",
+      "pi": "TAKAHASHI (OKI), EMI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS109475-03",
+      "title": "Atypical Formation of Fiber Pathways and Cortical Folding in the Brain",
+      "pi": "TAKAHASHI (OKI), EMI ",
+      "org": "BOSTON CHILDREN'S HOSPITAL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1U19AG073585-01",
+      "title": "EFFECTS OF VULNERABILITY AND RESILIENCY ON BRAIN HEALTH DURING THE MID-TO-LATE-LIFE TRANSITION",
+      "pi": "SMALL, GARY WILLIAM",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DA049449-02",
+      "title": "Circuitry and function of ventral striatum subregions",
+      "pi": "WESSON, DANIEL W",
+      "org": "UNIVERSITY OF FLORIDA",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R15NS124008-01",
+      "title": "Early mechanisms mediating the organization of the axon initial segment impact the formation of axo-axonic synapses",
+      "pi": "HINES, ROCHELLE MARIE",
+      "org": "UNIVERSITY OF NEVADA LAS VEGAS",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01DC018691-03",
+      "title": "Neuroengineering a Robust Vocal Learning Phenotype in Mice as a Model for Treating Communication Disorders",
+      "pi": "JARVIS, ERICH D",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R01EY025536-05A1",
+      "title": "Photoreceptor neuron specific alternative splicing messenger RNA",
+      "pi": "STOILOV, PETER ",
+      "org": "WEST VIRGINIA UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1RF1DA055668-01",
+      "title": "Multiscale theory of synapse function with model reduction by machine learning",
+      "pi": "MJOLSNESS, ERIC D",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01ES032153-02",
+      "title": "Air Pollution Exposures in Early Life and Brain Development in Children",
+      "pi": "BENKI-NUGENT, SARAH F.",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5K22AI143963-02",
+      "title": "Regulation of positive-stranded RNA virus infection by host factors of the endomembrane system",
+      "pi": "LENNEMANN, NICHOLAS J",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH120404-03",
+      "title": "Deciphering the building blocks of the macaque prefrontal cortical microcircuit",
+      "pi": "JIANG, XIAOLONG ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01NS109362-04",
+      "title": "Synaptic and Circuit Interactions to Shape Multisensory Processing",
+      "pi": "BASU, JAYEETA ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "2R01NS058721-12",
+      "title": "ACC: Callosal Agenesis as a Window into Common Neurodevelopmental Disorders",
+      "pi": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F30MH125638-01A1",
+      "title": "Integration of Sensory and Temporal Information in CA3",
+      "pi": "CHEUNG, STEPHANIE ",
+      "org": "UNIVERSITY OF CALIFORNIA LOS ANGELES",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1F99NS124180-01A1",
+      "title": "Vascular-Glial Signaling in Neurovascular Injury",
+      "pi": "HRELIC COLON, CRYSTAL KORALIS",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1P30AG072973-01",
+      "title": "Core E: Outreach, Recruitment and Engagement Core",
+      "pi": "VIDONI, ERIC DENNIS",
+      "org": "UNIVERSITY OF KANSAS MEDICAL CENTER",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "1R01MH126948-01",
+      "title": "PERIPHERAL INFLAMMATION AND STRESS DRIVE VENTRAL STRIATAL MALADAPTATIONS",
+      "pi": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY030192-03",
+      "title": "Single-Cell Transcriptomic Analysis of Human Retina",
+      "pi": "LI, MINGYAO ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01EY031209-02",
+      "title": "Deconstructing and Modeling the Single Cell Architecture of the Age-Related Macular Degeneration Retina and RPE/Choroid",
+      "pi": "STAMBOLIAN, DWIGHT EDWARD",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5P60AA011605-24",
+      "title": "Molecular and Circuit Pathogenesis of Alcohol Addiction",
+      "pi": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH117089-04",
+      "title": "Activity-Dependent Mechanisms Regulating Synaptic Excitation and Inhibition in Neural Circuits",
+      "pi": "XUE, MINGSHAN ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "5R01MH119149-03",
+      "title": "Nonconventional role of ADCY in Gq-mediated neuronal signaling and neuroplasticity",
+      "pi": "WANG, HONGBING ",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "BRAIN CONNECTS",
+      "project_num": "3F32DK115099-03S1",
+      "title": "Regulation of energy expenditure through BDNF neurons in the paraventricular hypothalamus",
+      "pi": "WU, SHAW-WEN ",
+      "org": "SCRIPPS FLORIDA",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U24NS137077-03",
+      "title": "Connectome 2.0: A BRAIN Technology Integration and Dissemination Resource for Ultra-High Gradient Magnetic Resonance Imaging of Human Brain Circuits Across Scales",
+      "pi": "HUANG, SUSIE YI",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB032830-04",
+      "title": "Robust and Efficient Learning of High-Resolution Brain MRI Reconstruction from Small Referenceless Data",
+      "pi": "AKCAKAYA, MEHMET ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB036730-01A1",
+      "title": "Fast motion navigators for brain diffusion MRI",
+      "pi": "ERNST, THOMAS M",
+      "org": "UNIVERSITY OF MARYLAND BALTIMORE",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB037388-02",
+      "title": "Continued Development of Infant Neuroimaging Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB036507-02",
+      "title": "Developing next-generation imaging technologies for in-vivo mesoscale diffusion MRI and microstructure imaging",
+      "pi": "WANG, FUYIXUE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01NS127353-07",
+      "title": "Mapping Human Neurocircuitry Across Scales with Diffusion MRI and Optical Imaging",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01NS136490-03",
+      "title": "Ultrahigh-resolution Functional MRI of the Human Brain at 10.5 Tesla",
+      "pi": "WU, XIAOPING ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2026
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U24NS137077-02",
+      "title": "Connectome 2.0: A BRAIN Technology Integration and Dissemination Resource for Ultra-High Gradient Magnetic Resonance Imaging of Human Brain Circuits Across Scales",
+      "pi": "HUANG, SUSIE YI",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1S10OD036259-01A1",
+      "title": "High Performance Gradient System for Advanced MRI Neuroimaging",
+      "pi": "WU, YU-CHIEN ",
+      "org": "INDIANA UNIVERSITY INDIANAPOLIS",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB032830-03",
+      "title": "Robust and Efficient Learning of High-Resolution Brain MRI Reconstruction from Small Referenceless Data",
+      "pi": "AKCAKAYA, MEHMET ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5UM1NS132250-03",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB037388-01A1",
+      "title": "Continued Development of Infant Neuroimaging Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB036507-01",
+      "title": "Developing next-generation imaging technologies for in-vivo mesoscale diffusion MRI and microstructure imaging",
+      "pi": "WANG, FUYIXUE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U24NS126935-04",
+      "title": "Dissemination of FlyWire, A Whole-Brain Connectomics Resource",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01NS136490-02",
+      "title": "Ultrahigh-resolution Functional MRI of the Human Brain at 10.5 Tesla",
+      "pi": "WU, XIAOPING ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01NS127353-06",
+      "title": "Mapping Human Neurocircuitry Across Scales with Diffusion MRI and Optical Imaging",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5K99NS132984-02",
+      "title": "Revealing the Functional and Microstructural Response of Human Hippocampus to Spatial Learning with High-Gradient Strength Diffusion MRI",
+      "pi": "RAMOS LLORDEN, GABRIEL ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2025
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1U24NS137077-01",
+      "title": "Connectome 2.0: A BRAIN Technology Integration and Dissemination Resource for Ultra-High Gradient Magnetic Resonance Imaging of Human Brain Circuits Across Scales",
+      "pi": "HUANG, SUSIE YI",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB032830-02",
+      "title": "Robust and Efficient Learning of High-Resolution Brain MRI Reconstruction from Small Referenceless Data",
+      "pi": "AKCAKAYA, MEHMET ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5UM1NS132250-02",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R25DA058940-02",
+      "title": "Promoting Collaborative Research on Human Connectome Analysis for Substance Use Disorders",
+      "pi": "WU, GUORONG RUDY",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U24NS126935-03",
+      "title": "Dissemination of FlyWire, A Whole-Brain Connectomics Resource",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "9RF1DA060772-02",
+      "title": "Relating structure and function in synapse-level wiring diagrams",
+      "pi": "LITWIN-KUMAR, ASHOK ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "9R01NS127353-05A1",
+      "title": "Mapping human neurocircuitry across scales with diffusion MRI and optical imaging",
+      "pi": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01NS136490-01",
+      "title": "Ultrahigh-resolution Functional MRI of the Human Brain at 10.5 Tesla",
+      "pi": "WU, XIAOPING ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1K99NS132984-01A1",
+      "title": "Revealing the Functional and Microstructural Response of Human Hippocampus to Spatial Learning with High-Gradient Strength Diffusion MRI",
+      "pi": "RAMOS LLORDEN, GABRIEL ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2024
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R43MH131493-02",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH122820-04",
+      "title": "Connectome Coordination Facility II",
+      "pi": "MARCUS, DANIEL SCOTT",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB032830-01A1",
+      "title": "Robust and Efficient Learning of High-Resolution Brain MRI Reconstruction from Small Referenceless Data",
+      "pi": "AKCAKAYA, MEHMET ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1UM1NS132250-01",
+      "title": "BRAIN CONNECTS: A Center for High-throughput Integrative Mouse Connectomics",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R25DA058940-01",
+      "title": "Promoting Collaborative Research on Human Connectome Analysis for Substance Use Disorders",
+      "pi": "WU, GUORONG RUDY",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U24NS126935-02",
+      "title": "Dissemination of FlyWire, A Whole-Brain Connectomics Resource",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB028797-04",
+      "title": "Advanced Neuroimaging through Novel Encoding Strategies and Hardware Design",
+      "pi": "BILGIC, BERKIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH119222-05",
+      "title": "Harmonizing multi-site diffusion MRI acquisitions for neuroscientific analysis across ages and brain disorders",
+      "pi": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL152740-04",
+      "title": "MINDS Imaging Ancillary Study",
+      "pi": "CESCHIN, RAFAEL C",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R43MH131493-01",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH122820-03",
+      "title": "Connectome Coordination Facility II",
+      "pi": "MARCUS, DANIEL SCOTT",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1RF1MH129268-01",
+      "title": "Accelerating connectomic proofreading for larger brains and multiple individuals",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1U24NS126935-01",
+      "title": "Dissemination of FlyWire, A Whole-Brain Connectomics Resource",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB028797-03",
+      "title": "Advanced Neuroimaging through Novel Encoding Strategies and Hardware Design",
+      "pi": "BILGIC, BERKIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH116173-05",
+      "title": "Next generation in-vivo diffusion imaging at submillimeter resolution",
+      "pi": "SETSOMPOP, KAWIN ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH119222-04",
+      "title": "Harmonizing multi-site diffusion MRI acquisitions for neuroscientific analysis across ages and brain disorders",
+      "pi": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY012793-22",
+      "title": "Structure and Function of Mammalian Ganglion Cells",
+      "pi": "BERSON, DAVID M.",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL152740-03",
+      "title": "MINDS Imaging Ancillary Study",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH117943-05",
+      "title": "Continued Development of Infant Brain Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R00EB023993-05",
+      "title": "Volumetric optical connectome microscopy of human cerebellar circuitry",
+      "pi": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZICMH002889-16",
+      "title": "NIMH MEG Core Facility",
+      "pi": "NUGENT, ALLISON ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH122820-02",
+      "title": "Connectome Coordination Facility II",
+      "pi": "MARCUS, DANIEL SCOTT",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R37NS039996-21",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIV NEW YORK MORNINGSIDE",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5P50MH094258-10",
+      "title": "Core 2 - Neuroimaging",
+      "pi": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH111918-06",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB028797-02",
+      "title": "Advanced Neuroimaging through Novel Encoding Strategies and Hardware Design",
+      "pi": "BILGIC, BERKIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "7R01MH116173-04",
+      "title": "Next generation in-vivo diffusion imaging at submillimeter resolution",
+      "pi": "SETSOMPOP, KAWIN ",
+      "org": "STANFORD UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH119222-03",
+      "title": "Harmonizing multi-site diffusion MRI acquisitions for neuroscientific analysis across ages and brain disorders",
+      "pi": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5K99NS114175-02",
+      "title": "Articulating the presynaptic input structure to functionally defined, learning-related synaptic clusters",
+      "pi": "HEDRICK, NATHAN G",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY012793-21",
+      "title": "Structure and Function of Mammalian Ganglion Cells",
+      "pi": "BERSON, DAVID M.",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL152740-02",
+      "title": "MINDS Imaging Ancillary Study",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH117943-04",
+      "title": "Continued Development of Infant Brain Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R00EB023993-04",
+      "title": "Volumetric optical connectome microscopy of human cerebellar circuitry",
+      "pi": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R21AG066970-01",
+      "title": "Advancing methods for structural connectome acquisition and estimation in older adults",
+      "pi": "ZHANG, ZHENGWU ",
+      "org": "UNIVERSITY OF ROCHESTER",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH118927-03",
+      "title": "CRCNS: Geometry-based Brain Connectome Analysis",
+      "pi": "DUNSON, DAVID BRIAN",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R24MH122820-01",
+      "title": "Connectome Coordination Facility II",
+      "pi": "MARCUS, DANIEL SCOTT",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R37NS039996-20",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIV NEW YORK MORNINGSIDE",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1DP2MH125812-01",
+      "title": "A molecular connectomics platform for multi-scale analysis of activity-dependent synapse development and plasticity",
+      "pi": "SPEER, COLENSO MCNAUGHTON",
+      "org": "UNIV OF MARYLAND, COLLEGE PARK",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5P50MH094258-09",
+      "title": "Core 2 - Neuroimaging",
+      "pi": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5F31EY029569-03",
+      "title": "Neural Networks of the Mouse Superior Colliculus",
+      "pi": "BENAVIDEZ, NORA LISSETT",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH111918-05",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB028797-01",
+      "title": "Advanced Neuroimaging through Novel Encoding Strategies and Hardware Design",
+      "pi": "BILGIC, BERKIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH116173-03",
+      "title": "Next generation in-vivo diffusion imaging at submillimeter resolution",
+      "pi": "SETSOMPOP, KAWIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1RF1MH123400-01",
+      "title": "Structure and Function of a Cubic Millimeter of Cortex: Crowdsourcing for Proofreading and Discovery",
+      "pi": "SEUNG, HYUNJUNE SEBASTIAN",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH119222-02",
+      "title": "Harmonizing multi-site diffusion MRI acquisitions for neuroscientific analysis across ages and brain disorders",
+      "pi": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY012793-20",
+      "title": "Structure and Function of Mammalian Ganglion Cells",
+      "pi": "BERSON, DAVID M.",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1K99NS114175-01",
+      "title": "Articulating the presynaptic input structure to functionally defined, learning-related synaptic clusters",
+      "pi": "HEDRICK, NATHAN G",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01HL152740-01",
+      "title": "MINDS Imaging Ancillary Study",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH117943-03",
+      "title": "Continued Development of Infant Brain Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "4R00EB023993-03",
+      "title": "Volumetric optical connectome microscopy of human cerebellar circuitry",
+      "pi": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH118927-02",
+      "title": "CRCNS: Geometry-based Brain Connectome Analysis",
+      "pi": "DUNSON, DAVID BRIAN",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "4R37NS039996-19",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIV NEW YORK MORNINGSIDE",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB022744-04",
+      "title": "Computational Tools for Modeling Human and Mouse Connectome with Multi-Shell Diffusion Imaging",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH108315-05",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY006678-32",
+      "title": "Neural Organization of Inner Retina",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3U01MH108168-04S1",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5P50MH094258-08",
+      "title": "Core 2 - Neuroimaging",
+      "pi": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01DC014728-04S1",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5F31EY029569-02",
+      "title": "Neural Networks of the Mouse Superior Colliculus",
+      "pi": "BENAVIDEZ, NORA LISSETT",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH111918-04",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH116173-02",
+      "title": "Next generation in-vivo diffusion imaging at submillimeter resolution",
+      "pi": "SETSOMPOP, KAWIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01DC014728-05",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01HL128818-05S1",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "2R01EY012793-19",
+      "title": "Structure and Function of Mammalian Ganglion Cells",
+      "pi": "BERSON, DAVID M.",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL128818-05",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH119222-01",
+      "title": "Harmonizing multi-site diffusion MRI acquisitions for neuroscientific analysis across ages and brain disorders",
+      "pi": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH117943-02",
+      "title": "Continued Development of Infant Brain Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5K99EB023993-02",
+      "title": "Volumetric optical connectome microscopy of human cerebellar circuitry",
+      "pi": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD008971-02",
+      "title": "Quantitative Imaging of Water Transport and Relaxation Processes in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1RF1MH117815-01",
+      "title": "Crowdsourcing the Fly Connectome",
+      "pi": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH118927-01",
+      "title": "CRCNS: Geometry-based Brain Connectome Analysis",
+      "pi": "DUNSON, DAVID BRIAN",
+      "org": "DUKE UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R37NS039996-18",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB022744-03",
+      "title": "Computational Tools for Modeling Human and Mouse Connectome with Multi-Shell Diffusion Imaging",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH108315-04",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY006678-31",
+      "title": "Neural Organization of Inner Retina",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U01MH108168-04",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5P50MH094258-07",
+      "title": "Core 2 - Neuroimaging",
+      "pi": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1F31EY029569-01",
+      "title": "Neural Networks of the Mouse Superior Colliculus",
+      "pi": "BENAVIDEZ, NORA LISSETT",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01EB022744-03S1",
+      "title": "Structural basis for network-based tau pathology propagation in Alzheimer's disease",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH111918-02",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "7R01MH111918-03",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH100635-05",
+      "title": "Multiscale Genetic Connectivity of Primate Social Circuits",
+      "pi": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH116173-01",
+      "title": "Next generation in-vivo diffusion imaging at submillimeter resolution",
+      "pi": "SETSOMPOP, KAWIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01DC014728-04",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01HL128818-04S1",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL128818-04",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH117943-01",
+      "title": "Continued Development of Infant Brain Analysis Tools",
+      "pi": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1K99EB023993-01A1",
+      "title": "Volumetric optical connectome microscopy of human cerebellar circuitry",
+      "pi": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD008971-01",
+      "title": "Quantitative Imaging of Water Transport and Relaxation Processes in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R37NS039996-17",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01EB022744-02S1",
+      "title": "Administrative Supplement to Computational Tools for Modeling Human and Mouse Connectome with Multi-Shell",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EB022744-02",
+      "title": "Computational Tools for Modeling Human and Mouse Connectome with Multi-Shell Diffusion Imaging",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R24MH108315-03S1",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH108315-03",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01EY006678-30",
+      "title": "Neural Organization of Inner Retina",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1S10OD023405-01",
+      "title": "Siemens Prisma Fit Upgrade for Human MRI",
+      "pi": "HETHERINGTON, HOBY P",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "2P50MH094258-06",
+      "title": "Core 2 - Neuroimaging",
+      "pi": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U01MH108168-03",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5UH2CA203710-02",
+      "title": "Retinal connectome: mobile game and crowdsourcing algorithms for EyeWire II",
+      "pi": "SEUNG, HYUNJUNE SEBASTIAN",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH111918-01A1",
+      "title": "Multiscale connectomic principles of resilience and susceptibility in mouse",
+      "pi": "DUMITRIU, DANI ",
+      "org": "ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH100635-04",
+      "title": "Multiscale Genetic Connectivity of Primate Social Circuits",
+      "pi": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01DC014728-03",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL128818-03",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD000266-20",
+      "title": "Imaging Water Diffusion in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R37NS039996-16",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01EB022744-01",
+      "title": "Computational Tools for Modeling Human and Mouse Connectome with Multi-Shell Diffusion Imaging",
+      "pi": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R24MH108315-02",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "2R01EY006678-29A1",
+      "title": "Neural Organization of Inner Retina",
+      "pi": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1S10OD021648-01",
+      "title": "State of the Art 3T Research Scanner",
+      "pi": "VAN ZIJL, PETER CM",
+      "org": "HUGO W. MOSER RES INST KENNEDY KRIEGER",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5U01MH108168-02",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3U01MH108168-01S1",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1UH2CA203710-01",
+      "title": "Retinal connectome: mobile game and crowdsourcing algorithms for EyeWire II",
+      "pi": "SEUNG, HYUNJUNE SEBASTIAN",
+      "org": "PRINCETON UNIVERSITY",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH100635-03",
+      "title": "Multiscale Genetic Connectivity of Primate Social Circuits",
+      "pi": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01DC014728-02",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "3R01HL128818-02S1",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01HL128818-02",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD000266-19",
+      "title": "Imaging Water Diffusion in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2016
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "2R37NS039996-15",
+      "title": "Sexually dimorphic regulation of neuronal identity in C.elegans",
+      "pi": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R24MH108315-01",
+      "title": "Connectome Coordination Facility",
+      "pi": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1U01MH108168-01",
+      "title": "Connectomes Related to Anxiety and Depression in Adolescents",
+      "pi": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "5R01MH100635-02",
+      "title": "Multiscale Genetic Connectivity of Primate Social Circuits",
+      "pi": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01DC014728-01",
+      "title": "Scanning Blockface EM of Murine and Human Taste Buds",
+      "pi": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01HL128818-01",
+      "title": "SVRIII: Brain Connectome and Neurodevelopment Outcomes",
+      "pi": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD000266-18",
+      "title": "Imaging Water Diffusion in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1S10OD017974-01",
+      "title": "High Performance Connectome Upgrade for Human 3T MR Scanner",
+      "pi": "LIM, KELVIN O.",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01MH100635-01A1",
+      "title": "Multiscale Genetic Connectivity of Primate Social Circuits",
+      "pi": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1ZIAHD000266-17",
+      "title": "Imaging Water Diffusion in the Brain and in Other Soft Tissues",
+      "pi": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "connectome reconstruction",
+      "project_num": "1R01NS076467-01",
+      "title": "High Resolution Connectomics of Mammalian Neural Circuits",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2011
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5U24NS109102-05",
+      "title": "A Facility to Generate Connectomics Information",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R43MH131493-02",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2023
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5U24NS109102-04",
+      "title": "A Facility to Generate Connectomics Information",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1R43MH131493-01",
+      "title": "Infrastructure automation for connectomic image analysis",
+      "pi": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "fiscal_year": 2022
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5U24NS109102-03",
+      "title": "A Facility to Generate Connectomics Information",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2021
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5U24NS109102-02",
+      "title": "A Facility to Generate Connectomics Information",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R21MH119517-02",
+      "title": "Methods for serially multiplexed labeling in EM reconstructions of brain tissue",
+      "pi": "OSTROFF, LINNAEA E",
+      "org": "UNIVERSITY OF CONNECTICUT STORRS",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIAEB000086-08",
+      "title": "Three-Dimensional Cell and Tissue Reconstruction by Serial Block Face SEM",
+      "pi": "LEAPMAN, RICHARD ",
+      "org": "NATIONAL INSTITUTE OF BIOMEDICAL IMAGING AND BIOENGINEERING",
+      "fiscal_year": 2020
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1RF1MH120679-01",
+      "title": "Automating whole brain connectomics: development, validation, and application of an open toolkit",
+      "pi": "BOCK, DAVI ",
+      "org": "UNIVERSITY OF VERMONT & ST AGRIC COLLEGE",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1R21MH119517-01",
+      "title": "Methods for serially multiplexed labeling in EM reconstructions of brain tissue",
+      "pi": "OSTROFF, LINNAEA E",
+      "org": "UNIVERSITY OF CONNECTICUT STORRS",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIAEB000086-07",
+      "title": "Three-Dimensional Cell and Tissue Reconstruction by Serial Block Face SEM",
+      "pi": "LEAPMAN, RICHARD ",
+      "org": "NATIONAL INSTITUTE OF BIOMEDICAL IMAGING AND BIOENGINEERING",
+      "fiscal_year": 2019
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1U24NS109102-01",
+      "title": "A Facility to Generate Connectomics Information",
+      "pi": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5F31EY027695-02",
+      "title": "Ultrastructural analysis of melanopsin-containing retinal ganglion cells using a novel approach",
+      "pi": "SNELL, MEGAN LYNN LEYRER",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIAHD001609-25",
+      "title": "Organization and Dynamics of Endomembrane Pathways and Organelles",
+      "pi": "LIPPINCOTT-SCHWARTZ, JENNIFER ",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIAEB000086-06",
+      "title": "Three-Dimensional Cell and Tissue Reconstruction by Serial Block Face SEM",
+      "pi": "LEAPMAN, RICHARD ",
+      "org": "NATIONAL INSTITUTE OF BIOMEDICAL IMAGING AND BIOENGINEERING",
+      "fiscal_year": 2018
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1F31EY027695-01",
+      "title": "Ultrastructural analysis of melanopsin-containing retinal ganglion cells using a novel approach",
+      "pi": "SNELL, MEGAN LYNN LEYRER",
+      "org": "BROWN UNIVERSITY",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIAEB000086-05",
+      "title": "Three-Dimensional Cell and Tissue Reconstruction by Serial Block Face SEM",
+      "pi": "LEAPMAN, RICHARD ",
+      "org": "NATIONAL INSTITUTE OF BIOMEDICAL IMAGING AND BIOENGINEERING",
+      "fiscal_year": 2017
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R03DC013622-03",
+      "title": "Network anatomy of olfactory processing",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2015
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1ZIANS003133-03",
+      "title": "Mapping the synaptic connectivity and function of sensory neuronal circuits",
+      "pi": "BRIGGMAN, KEVIN ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R21EB016223-02",
+      "title": "ALL-OPTICAL HIGH-THROUGHPUT FUNCTIONAL CONNECTIVITY MAPPING USING ADVANCED MICROS",
+      "pi": "TOLIAS, ANDREAS ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R03DC013622-02",
+      "title": "Network anatomy of olfactory processing",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2014
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1R21EB016223-01A1",
+      "title": "ALL-OPTICAL HIGH-THROUGHPUT FUNCTIONAL CONNECTIVITY MAPPING USING ADVANCED MICROS",
+      "pi": "SAGGAU, PETER ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "fiscal_year": 2013
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "5R44MH088088-04",
+      "title": "Scalable Software for Reverse Engineering Neural Circuits from Histology",
+      "pi": "LAW, CHRISTOPHER CHARLES",
+      "org": "KITWARE, INC.",
+      "fiscal_year": 2013
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1R03DC013622-01",
+      "title": "Network anatomy of olfactory processing",
+      "pi": "LEE, WEI-CHUNG ALLEN",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "fiscal_year": 2013
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "2R44MH088088-03",
+      "title": "Scalable Software for Reverse Engineering Neural Circuits from Histology",
+      "pi": "LAW, CHRISTOPHER CHARLES",
+      "org": "KITWARE, INC.",
+      "fiscal_year": 2012
+    },
+    {
+      "query": "volume electron microscopy brain mapping",
+      "project_num": "1Z01HD000261-09",
+      "title": "Quantitative Optical Imaging and Spectroscopy of Biologi",
+      "pi": "GANDJBAKHCHE, AMIR H",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "fiscal_year": 2006
+    }
+  ],
+  "pis": [
+    {
+      "name": "REID, R CLAY",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5U01NS142100-02",
+        "1U01NS142100-01",
+        "5R01EY010115-27",
+        "5R01EY010115-26",
+        "5R01EY010115-25",
+        "1RF1MH123398-01A1",
+        "1RF1MH125932-01A1",
+        "2R01EY010115-24A1",
+        "5U01NS142100-02",
+        "1U01NS142100-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LU, XIAOTANG ",
+      "org": "UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN",
+      "awards": [
+        "5R00MH128891-04",
+        "4R00MH128891-03",
+        "5K99MH128891-02",
+        "1K99MH128891-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LEE, WEI-CHUNG ALLEN",
+      "org": "BOSTON CHILDREN'S HOSPITAL",
+      "awards": [
+        "5U01NS142013-02",
+        "1U01NS142013-01",
+        "5R01NS121874-03",
+        "4R01NS121874-02",
+        "1RF1MH129261-01",
+        "1R01NS121874-01",
+        "1RF1MH117808-01A1",
+        "5U01NS142013-02",
+        "5R03DC013622-03",
+        "5R03DC013622-02",
+        "1R03DC013622-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WESTER, BROCK A.",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "awards": [
+        "5R24MH114785-09",
+        "5R24MH114785-08",
+        "5R24MH114785-07",
+        "2R24MH114785-06"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "M'SAAD, ONS ",
+      "org": "PANLUMINATE INC.",
+      "awards": [
+        "1R43MH143449-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ZENG, HONGKUI ",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5U24NS139927-02",
+        "1U24NS139927-01",
+        "5U24NS139927-02",
+        "1U24NS139927-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "DULAC, CATHERINE ",
+      "org": "HARVARD UNIVERSITY",
+      "awards": [
+        "1R01HD121730-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MACARICO DA COSTA, NUNO ",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5UM1NS132253-03",
+        "5UM1NS132253-02",
+        "1UM1NS132253-01",
+        "5UM1NS132253-03",
+        "5UM1NS132253-02",
+        "1UM1NS132253-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KASTHURI, NARAYANAN ",
+      "org": "UNIVERSITY OF CHICAGO",
+      "awards": [
+        "5U01NS136401-02",
+        "1R21EY037490-01",
+        "1U01NS136401-01",
+        "5U01NS136401-02",
+        "1U01NS136401-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ZHENG, ZHIHAO ",
+      "org": "PRINCETON UNIVERSITY",
+      "awards": [
+        "5K99NS135650-02",
+        "1K99NS135650-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SCHAEFER, ANDREAS ",
+      "org": "FRANCIS CRICK INSTITUTE, LTD",
+      "awards": [
+        "1U01NS142093-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANG, SAMUEL SHENG-HUNG",
+      "org": "PRINCETON UNIVERSITY",
+      "awards": [
+        "5U19NS132720-03",
+        "5U19NS132720-02",
+        "1U19NS132720-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "RIVLIN, PATRICIA K",
+      "org": "JOHNS HOPKINS UNIVERSITY",
+      "awards": [
+        "5U01NS137250-02",
+        "1U01NS137250-01",
+        "5U01NS137250-02",
+        "1U01NS137250-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KERSCHENSTEINER, DANIEL ",
+      "org": "WASHINGTON UNIVERSITY",
+      "awards": [
+        "5R01EY026978-09",
+        "5R01EY026978-08",
+        "5R01EY026978-07",
+        "5R01EY026978-06",
+        "2R01EY026978-05",
+        "5R21EY030623-02",
+        "1R21EY030623-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ARKHIPOV, ANTON ",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5U01MH130907-04",
+        "5U01MH130907-03",
+        "5U01MH130907-02",
+        "1U01MH130907-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "DACEY, DENNIS MICHAEL",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "awards": [
+        "5R01EY028282-05",
+        "5R01EY028282-04",
+        "5R01EY028282-03",
+        "5R01EY028282-02",
+        "1R01EY028282-01A1",
+        "5R01EY006678-32",
+        "5R01EY006678-31",
+        "5R01EY006678-30",
+        "2R01EY006678-29A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MUGHAL, AMREEN ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "awards": [
+        "1ZIANS009456-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "POPOVYCH, SERGIY ",
+      "org": "ZETTA AI, LLC",
+      "awards": [
+        "5R43MH131493-02",
+        "1R43MH131493-01",
+        "5R43MH131493-02",
+        "1R43MH131493-01",
+        "5R43MH131493-02",
+        "1R43MH131493-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LICHTMAN, JEFF W",
+      "org": "HARVARD UNIVERSITY",
+      "awards": [
+        "5UG3MH123386-03",
+        "5UG3MH123386-02",
+        "1UG3MH123386-01A1",
+        "5UM1NS132250-03",
+        "5UM1NS132250-02",
+        "1UM1NS132250-01",
+        "5UM1NS132250-03",
+        "5UM1NS132250-02",
+        "1UM1NS132250-01",
+        "1R01NS076467-01",
+        "5U24NS109102-05",
+        "5U24NS109102-04",
+        "5U24NS109102-03",
+        "5U24NS109102-02",
+        "1U24NS109102-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HARVEY, CHRISTOPHER D",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "awards": [
+        "5R01NS108410-05",
+        "5R01NS108410-04",
+        "5R01NS108410-03",
+        "5R01NS108410-02",
+        "1R01NS108410-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SMITH, RYAN M",
+      "org": "LUXEL CORPORATION",
+      "awards": [
+        "5R44MH112349-04",
+        "2R44MH112349-03",
+        "5R43MH112349-02",
+        "1R43MH112349-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LEE, SHIH-JONG J",
+      "org": "DRVISION TECHNOLOGIES, LLC",
+      "awards": [
+        "4R44MH121167-02",
+        "6R44MH121167-03",
+        "1R44MH121167-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ZLOKOVIC, BERISLAV V",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "awards": [
+        "5R01NS100459-05",
+        "5R01NS100459-04",
+        "5R01NS100459-03",
+        "5R01NS100459-02",
+        "1R01NS100459-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HOWARD, JONATHON ",
+      "org": "YALE UNIVERSITY",
+      "awards": [
+        "5DP1MH110065-05",
+        "5DP1MH110065-04",
+        "5DP1MH110065-03",
+        "5DP1MH110065-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BOCK, DAVI ",
+      "org": "UNIVERSITY OF VERMONT & ST AGRIC COLLEGE",
+      "awards": [
+        "1RF1MH120679-01",
+        "1RF1MH120679-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SNELL, MEGAN LYNN LEYRER",
+      "org": "BROWN UNIVERSITY",
+      "awards": [
+        "5F31EY027695-02",
+        "1F31EY027695-01",
+        "5F31EY027695-02",
+        "1F31EY027695-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SANES, JOSHUA R",
+      "org": "HARVARD UNIVERSITY",
+      "awards": [
+        "5P30NS062685-09",
+        "5P30NS062685-08",
+        "5P30NS062685-07",
+        "2P30NS062685-06A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MCINTYRE, ROBERT ",
+      "org": "NECTOME, INC.",
+      "awards": [
+        "5R41MH112318-02",
+        "3R41MH112318-01S1",
+        "1R41MH112318-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "TOLIAS, ANDREAS ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "awards": [
+        "5R21EB016223-02",
+        "5U01NS132353-03",
+        "7U01NS132353-02",
+        "1U01NS132353-01",
+        "5R21EB016223-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SAGGAU, PETER ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "awards": [
+        "1R21EB016223-01A1",
+        "1R21EB016223-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "PESTILLI, FRANCO ",
+      "org": "UNIVERSITY OF TEXAS AT AUSTIN",
+      "awards": [
+        "5U24NS140384-02",
+        "1U24NS140384-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "YENDIKI, ANASTASIA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5UM1NS132358-04",
+        "5UM1NS132358-03",
+        "5UM1NS132358-02",
+        "1UM1NS132358-01",
+        "5R01NS127353-07",
+        "5R01NS127353-06",
+        "9R01NS127353-05A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "DUAN, XIN ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "awards": [
+        "5U01NS136405-03",
+        "5U01NS136405-02",
+        "1U01NS136405-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CAO, GUODONG ",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "awards": [
+        "5I01BX006454-02",
+        "1I01BX006454-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MACOSKO, EVAN Z",
+      "org": "BROAD INSTITUTE, INC.",
+      "awards": [
+        "5U01NS136398-03",
+        "5U01NS136398-02",
+        "1U01NS136398-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CARON, SOPHIE ",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "awards": [
+        "5R01NS107970-08",
+        "5R01NS107970-07",
+        "2R01NS107970-06A1",
+        "5R01NS107970-05",
+        "5R01NS107970-04"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ESPOSITO, ELGA ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5R01NS129654-04",
+        "5R01NS129654-03",
+        "5R01NS129654-02",
+        "1R01NS129654-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WILLIAMS, MEGAN ELISE",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "awards": [
+        "4RF1MH134515-04",
+        "5R01MH134515-03",
+        "5R01MH125943-04",
+        "5R01MH134515-02",
+        "1R01MH134515-01",
+        "5R01MH125943-03",
+        "5R01MH125943-02",
+        "1R01MH125943-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BEIER, KEVIN T",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "awards": [
+        "5R01NS130044-04",
+        "5R01NS130044-03",
+        "5R01NS130044-02",
+        "1R01NS130044-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SIDOLI, SIMONE ",
+      "org": "ALBERT EINSTEIN COLLEGE OF MEDICINE",
+      "awards": [
+        "1R21CA316284-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LAVRETSKY, HELEN ",
+      "org": "WASHINGTON UNIVERSITY",
+      "awards": [
+        "5U19AG073585-05",
+        "5U19AG073585-04",
+        "5U19AG073585-03",
+        "5U19AG073585-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LIBERLES, STEPHEN DANIEL",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "awards": [
+        "1OT2CA320060-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CHIU, ISAAC MING-CHENG",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "awards": [
+        "1OT2CA320055-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BRUNET, ANNE ",
+      "org": "STANFORD UNIVERSITY",
+      "awards": [
+        "5DP1AG100833-02",
+        "1DP1AG100833-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HAFEZ, OMAR ",
+      "org": "YALE UNIVERSITY",
+      "awards": [
+        "5F30AT013179-02",
+        "1F30AT013179-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KNUTSON, KRISTEN ",
+      "org": "NORTHWESTERN UNIVERSITY",
+      "awards": [
+        "3R01AG089354-01A1S1",
+        "1R01AG089354-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "YU, CONGRONG RON",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "awards": [
+        "5R01DC020368-04",
+        "7R01DC020368-03",
+        "5R01DC020368-02",
+        "1R01DC020368-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SUCHAROV COSTA, JULIANA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "awards": [
+        "5F31AG086042-03",
+        "5F31AG086042-02",
+        "1F31AG086042-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CUNCI, LISANDRO ",
+      "org": "UNIVERSITY OF PUERTO RICO RIO PIEDRAS",
+      "awards": [
+        "5R01MH138583-02",
+        "1R01MH138583-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KASH, THOMAS L.",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "awards": [
+        "5P60AA011605-29",
+        "5P60AA011605-28",
+        "5P60AA011605-27",
+        "2P60AA011605-26",
+        "5P60AA011605-25",
+        "5P60AA011605-24"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "NAIRN, ANGUS C.",
+      "org": "YALE UNIVERSITY",
+      "awards": [
+        "5P30DA018343-22",
+        "2P30DA018343-21"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BEYDER, ARTHUR ",
+      "org": "MAYO CLINIC ROCHESTER",
+      "awards": [
+        "5R01DK123549-08",
+        "5R01DK123549-07",
+        "2R01DK123549-06"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SZESZKO, PHILIP R",
+      "org": "JAMES J PETERS VA  MEDICAL CENTER",
+      "awards": [
+        "5I01CX002787-02",
+        "1I01CX002787-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MA, DA ",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "awards": [
+        "5R01AG093792-02",
+        "1R01AG093792-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MIESFELD, JOEL B",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "awards": [
+        "5R01EY037228-02",
+        "1R01EY037228-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "NGUYEN, LIEN ",
+      "org": "UNIVERSITY OF FLORIDA",
+      "awards": [
+        "5R01AG093746-02",
+        "1R01AG093746-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SHIN, SORA ",
+      "org": "VIRGINIA POLYTECHNIC INST AND ST UNIV",
+      "awards": [
+        "5R01DK132566-05",
+        "5R01DK132566-04",
+        "5R01DK132566-03",
+        "5R01DK132566-02",
+        "1R01DK132566-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "YANG, YINGZI ",
+      "org": "HARVARD MEDICAL SCHOOL",
+      "awards": [
+        "5R01DE025866-10",
+        "5R01DE025866-09",
+        "5R01DE025866-08",
+        "5R01DE025866-07",
+        "2R01DE025866-06A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CHEN, XIAOYIN ",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5U01NS132161-03",
+        "5U01NS132161-02",
+        "1U01NS132161-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "UGURBIL, KAMIL ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "awards": [
+        "5UM1NS132207-03",
+        "5UM1NS132207-02",
+        "1UM1NS132207-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KHALIQ, ZAYD M",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "awards": [
+        "1ZIANS009457-02",
+        "1ZIANS009457-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SORENSEN, STACI A",
+      "org": "ALLEN INSTITUTE",
+      "awards": [
+        "5U01NS132267-03",
+        "5U01NS132267-02",
+        "1U01NS132267-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "FISCHL, BRUCE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5U01NS132181-03",
+        "5U01NS132181-02",
+        "1U01NS132181-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KOSSE, CHRISTIN ",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "awards": [
+        "5K99NS135647-02",
+        "1K99NS135647-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANNER, ADRIAN ANDREAS",
+      "org": "PAUL SCHERRER INSTITUT PSI",
+      "awards": [
+        "5U01NS132317-03",
+        "5U01NS132317-02",
+        "1U01NS132317-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "COOKSON, MARK ",
+      "org": "NATIONAL INSTITUTE ON AGING",
+      "awards": [
+        "1ZIAAG000545-04"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SAMUEL, ARAVINTHAN D.",
+      "org": "HARVARD UNIVERSITY",
+      "awards": [
+        "5U01NS132158-03",
+        "5U01NS132158-02",
+        "1U01NS132158-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "FENG, GUOPING ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "awards": [
+        "5UM1NS132173-03",
+        "5UM1NS132173-02",
+        "1UM1NS132173-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WEN, ZHEXING ",
+      "org": "EMORY UNIVERSITY",
+      "awards": [
+        "4RF1AG079256-02",
+        "1RF1AG079256-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LIU, ZHONGMING ",
+      "org": "UNIVERSITY OF MICHIGAN AT ANN ARBOR",
+      "awards": [
+        "5R01AT011665-05",
+        "5R01AT011665-04",
+        "5R01AT011665-03",
+        "5R01AT011665-02",
+        "1R01AT011665-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "TYLER, DUSTIN J.",
+      "org": "LOUIS STOKES CLEVELAND VA MEDICAL CENTER",
+      "awards": [
+        "5IK6RX003836-04",
+        "5IK6RX003836-02",
+        "5IK6RX003836-03",
+        "1IK6RX003836-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MIRBOZORGI, SEYEDABDOLLAH ",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "awards": [
+        "1R01AT013626-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LI, NUO ",
+      "org": "DUKE UNIVERSITY",
+      "awards": [
+        "5DP1NS142432-02",
+        "1DP1NS142432-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MARCONDES, MARIA CECILIA GARIBALDI",
+      "org": "SAN DIEGO BIOMEDICAL RESEARCH INSTITUTE",
+      "awards": [
+        "4R33DA059924-03",
+        "5R61DA059924-02",
+        "1R61DA059924-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "PERALES PUCHALT, JAIME ",
+      "org": "UNIVERSITY OF KANSAS MEDICAL CENTER",
+      "awards": [
+        "5P30AG072973-05"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "COX, TIMOTHY ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "awards": [
+        "5F30AG081097-03",
+        "5F30AG081097-02",
+        "1F30AG081097-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "FEDOROVA, OLGA V",
+      "org": "NATIONAL INSTITUTE ON AGING",
+      "awards": [
+        "1ZIAAG000609-33"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ARGILLI, EMANUELA ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "awards": [
+        "5R01NS058721-16"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BIBB, JAMES A",
+      "org": "UNIVERSITY OF ARIZONA",
+      "awards": [
+        "5R01MH126948-05",
+        "5R01MH126948-04",
+        "7R01MH126948-03",
+        "5R01MH126948-02",
+        "1R01MH126948-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MILLER, EMIKO L",
+      "org": "CASE WESTERN RESERVE UNIVERSITY",
+      "awards": [
+        "5F31AG089912-02",
+        "1F31AG089912-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ZHU, JINGCHUN ",
+      "org": "UNIVERSITY OF CALIFORNIA SANTA CRUZ",
+      "awards": [
+        "5U24CA258407-05",
+        "5U24CA258407-04",
+        "5U24CA258407-03",
+        "5U24CA258407-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "FLOYD, CANDACE L.",
+      "org": "VETERANS HEALTH ADMINISTRATION",
+      "awards": [
+        "5I50BX005878-05",
+        "5I50BX005878-04",
+        "7I50BX005878-03",
+        "5I50BX005878-02",
+        "1I50BX005878-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "PINE, DANIEL ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "awards": [
+        "1ZIAMH002782-24",
+        "1ZIAMH002782-23",
+        "1ZIAMH002782-22"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CHEN, JIANFU ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "awards": [
+        "1RF1NS137467-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WESSON, DANIEL W",
+      "org": "UNIVERSITY OF FLORIDA",
+      "awards": [
+        "5R01DA049449-05",
+        "5R01DA049449-04",
+        "5R01DA049449-03",
+        "5R01DA049449-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HINES, ROCHELLE MARIE",
+      "org": "UNIVERSITY OF NEVADA LAS VEGAS",
+      "awards": [
+        "2R15NS124008-02",
+        "1R15NS124008-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BENKI-NUGENT, SARAH F.",
+      "org": "UNIVERSITY OF WASHINGTON",
+      "awards": [
+        "5R01ES032153-05",
+        "5R01ES032153-04",
+        "5R01ES032153-03",
+        "5R01ES032153-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SHERR, ELLIOTT ",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "awards": [
+        "5R01NS058721-15",
+        "5R01NS058721-14",
+        "3R01NS058721-14S1",
+        "5R01NS058721-13",
+        "2R01NS058721-12"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HRELIC COLON, CRYSTAL KORALIS",
+      "org": "DUKE UNIVERSITY",
+      "awards": [
+        "5K00NS124180-03",
+        "4K00NS124180-02",
+        "1F99NS124180-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CAMERON, HEATHER A",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "awards": [
+        "1ZIAMH002784-23",
+        "1ZIAMH002784-22"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HALLETT, MARK ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "awards": [
+        "1ZIANS003032-17",
+        "1ZIANS003032-16",
+        "1ZIANS003032-15"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WOLPAW, JONATHAN RICKEL",
+      "org": "ALBANY RESEARCH INSTITUTE, INC.",
+      "awards": [
+        "5R01NS110577-05",
+        "5R01NS110577-04",
+        "5R01NS110577-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KULKARNI, SUBHASH ",
+      "org": "BETH ISRAEL DEACONESS MEDICAL CENTER",
+      "awards": [
+        "7R21AG072107-02",
+        "1R21AG072107-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KARRENTO, KATJA KRISTINA",
+      "org": "MEDICAL COLLEGE OF WISCONSIN",
+      "awards": [
+        "5R03DK131221-02",
+        "1R03DK131221-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "TAKAHASHI (OKI), EMI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5R01NS109475-06",
+        "5R01NS109475-05",
+        "7R01NS109475-04",
+        "5R01NS109475-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "JARVIS, ERICH D",
+      "org": "ROCKEFELLER UNIVERSITY",
+      "awards": [
+        "5R01DC018691-05",
+        "5R01DC018691-04",
+        "5R01DC018691-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "STOILOV, PETER ",
+      "org": "WEST VIRGINIA UNIVERSITY",
+      "awards": [
+        "5R01EY025536-07",
+        "5R01EY025536-06",
+        "2R01EY025536-05A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CHARVET, LEIGH ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "awards": [
+        "5R21DA055427-02",
+        "1R21DA055427-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "JIANG, XIAOLONG ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "awards": [
+        "5R01MH120404-05",
+        "5R01MH120404-04",
+        "5R01MH120404-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CHEUNG, STEPHANIE ",
+      "org": "UNIVERSITY OF CALIFORNIA LOS ANGELES",
+      "awards": [
+        "5F30MH125638-03",
+        "5F30MH125638-02",
+        "1F30MH125638-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "STAMBOLIAN, DWIGHT EDWARD",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "awards": [
+        "5R01EY031209-04",
+        "5R01EY031209-03",
+        "5R01EY031209-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANG, HONGBING ",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "awards": [
+        "5R01MH119149-05",
+        "5R01MH119149-04",
+        "5R01MH119149-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ADDICOTT, MERIDETH A.",
+      "org": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "awards": [
+        "5R01DA048948-06",
+        "5R01DA048948-05"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ONDERSMA, STEVEN J",
+      "org": "MICHIGAN STATE UNIVERSITY",
+      "awards": [
+        "5R01AA026596-06",
+        "5R01AA026596-05"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "TISH, MARGARET ",
+      "org": "UNIVERSITY OF IOWA",
+      "awards": [
+        "5F31NS116947-03",
+        "5F31NS116947-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "COHEN, LEONARDO GREGORIO",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "awards": [
+        "1ZIANS002978-24"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BASU, JAYEETA ",
+      "org": "NEW YORK UNIVERSITY SCHOOL OF MEDICINE",
+      "awards": [
+        "5R01NS109362-05",
+        "5R01NS109362-04"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LI, MINGYAO ",
+      "org": "UNIVERSITY OF PENNSYLVANIA",
+      "awards": [
+        "5R01EY030192-04",
+        "5R01EY030192-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "XUE, MINGSHAN ",
+      "org": "BAYLOR COLLEGE OF MEDICINE",
+      "awards": [
+        "5R01MH117089-05",
+        "5R01MH117089-04"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "OWSLEY, CYNTHIA ",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "awards": [
+        "3R01EY029595-04S2"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SCHALLER, MICHAEL ",
+      "org": "XTRACT MEDICAL, INC.",
+      "awards": [
+        "1R41NS129430-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WONG, STEPHEN TC",
+      "org": "METHODIST HOSPITAL RESEARCH INSTITUTE",
+      "awards": [
+        "5R01AG057635-05"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MCCARTHY, MARGARET M.",
+      "org": "UNIVERSITY OF MARYLAND BALTIMORE",
+      "awards": [
+        "5R01MH052716-25"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "PASCUCCI, VALERIO ",
+      "org": "UNIVERSITY OF MASSACHUSETTS AMHERST",
+      "awards": [
+        "1U01NS123972-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SMALL, GARY WILLIAM",
+      "org": "WASHINGTON UNIVERSITY",
+      "awards": [
+        "1U19AG073585-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MJOLSNESS, ERIC D",
+      "org": "UNIVERSITY OF CALIFORNIA-IRVINE",
+      "awards": [
+        "1RF1DA055668-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LENNEMANN, NICHOLAS J",
+      "org": "UNIVERSITY OF ALABAMA AT BIRMINGHAM",
+      "awards": [
+        "5K22AI143963-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "VIDONI, ERIC DENNIS",
+      "org": "UNIVERSITY OF KANSAS MEDICAL CENTER",
+      "awards": [
+        "1P30AG072973-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WU, SHAW-WEN ",
+      "org": "SCRIPPS FLORIDA",
+      "awards": [
+        "3F32DK115099-03S1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HUANG, SUSIE YI",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5U24NS137077-03",
+        "5U24NS137077-02",
+        "1U24NS137077-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "AKCAKAYA, MEHMET ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "awards": [
+        "5R01EB032830-04",
+        "5R01EB032830-03",
+        "5R01EB032830-02",
+        "1R01EB032830-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ERNST, THOMAS M",
+      "org": "UNIVERSITY OF MARYLAND BALTIMORE",
+      "awards": [
+        "1R01EB036730-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANG, LI ",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "awards": [
+        "5R01EB037388-02",
+        "1R01EB037388-01A1",
+        "5R01MH117943-05",
+        "5R01MH117943-04",
+        "5R01MH117943-03",
+        "5R01MH117943-02",
+        "1R01MH117943-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANG, FUYIXUE ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5R01EB036507-02",
+        "1R01EB036507-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WU, XIAOPING ",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "awards": [
+        "5R01NS136490-03",
+        "5R01NS136490-02",
+        "1R01NS136490-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WU, YU-CHIEN ",
+      "org": "INDIANA UNIVERSITY INDIANAPOLIS",
+      "awards": [
+        "1S10OD036259-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MURTHY, MALA ",
+      "org": "PRINCETON UNIVERSITY",
+      "awards": [
+        "5U24NS126935-04",
+        "5U24NS126935-03",
+        "5U24NS126935-02",
+        "1RF1MH129268-01",
+        "1U24NS126935-01",
+        "1RF1MH117815-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "RAMOS LLORDEN, GABRIEL ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5K99NS132984-02",
+        "1K99NS132984-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WU, GUORONG RUDY",
+      "org": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+      "awards": [
+        "5R25DA058940-02",
+        "1R25DA058940-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LITWIN-KUMAR, ASHOK ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "awards": [
+        "9RF1DA060772-02"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "MARCUS, DANIEL SCOTT",
+      "org": "WASHINGTON UNIVERSITY",
+      "awards": [
+        "5R24MH122820-04",
+        "5R24MH122820-03",
+        "5R24MH122820-02",
+        "1R24MH122820-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BILGIC, BERKIN ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5R01EB028797-04",
+        "5R01EB028797-03",
+        "5R01EB028797-02",
+        "1R01EB028797-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "RATHI, YOGESH ",
+      "org": "BRIGHAM AND WOMEN'S HOSPITAL",
+      "awards": [
+        "5R01MH119222-05",
+        "5R01MH119222-04",
+        "5R01MH119222-03",
+        "5R01MH119222-02",
+        "1R01MH119222-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "CESCHIN, RAFAEL C",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "awards": [
+        "5R01HL152740-04"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SETSOMPOP, KAWIN ",
+      "org": "STANFORD UNIVERSITY",
+      "awards": [
+        "5R01MH116173-05",
+        "7R01MH116173-04",
+        "5R01MH116173-03",
+        "5R01MH116173-02",
+        "1R01MH116173-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BERSON, DAVID M.",
+      "org": "BROWN UNIVERSITY",
+      "awards": [
+        "5R01EY012793-22",
+        "5R01EY012793-21",
+        "5R01EY012793-20",
+        "2R01EY012793-19"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "PANIGRAHY, ASHOK ",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "awards": [
+        "5R01HL152740-03",
+        "5R01HL152740-02",
+        "1R01HL152740-01",
+        "3R01HL128818-05S1",
+        "5R01HL128818-05",
+        "3R01HL128818-04S1",
+        "5R01HL128818-04",
+        "5R01HL128818-03",
+        "3R01HL128818-02S1",
+        "5R01HL128818-02",
+        "1R01HL128818-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WANG, HUI ",
+      "org": "MASSACHUSETTS GENERAL HOSPITAL",
+      "awards": [
+        "5R00EB023993-05",
+        "5R00EB023993-04",
+        "4R00EB023993-03",
+        "5K99EB023993-02",
+        "1K99EB023993-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "NUGENT, ALLISON ",
+      "org": "NATIONAL INSTITUTE OF MENTAL HEALTH",
+      "awards": [
+        "1ZICMH002889-16"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HOBERT, OLIVER ",
+      "org": "COLUMBIA UNIV NEW YORK MORNINGSIDE",
+      "awards": [
+        "5R37NS039996-21",
+        "5R37NS039996-20",
+        "4R37NS039996-19",
+        "5R37NS039996-18",
+        "5R37NS039996-17",
+        "5R37NS039996-16",
+        "2R37NS039996-15"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "TYSZKA, JULIAN M",
+      "org": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "awards": [
+        "5P50MH094258-10",
+        "5P50MH094258-09",
+        "5P50MH094258-08",
+        "5P50MH094258-07",
+        "2P50MH094258-06"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "DUMITRIU, DANI ",
+      "org": "COLUMBIA UNIVERSITY HEALTH SCIENCES",
+      "awards": [
+        "5R01MH111918-06",
+        "5R01MH111918-05",
+        "5R01MH111918-04",
+        "5R01MH111918-02",
+        "7R01MH111918-03",
+        "1R01MH111918-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HEDRICK, NATHAN G",
+      "org": "UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+      "awards": [
+        "5K99NS114175-02",
+        "1K99NS114175-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "ZHANG, ZHENGWU ",
+      "org": "UNIVERSITY OF ROCHESTER",
+      "awards": [
+        "1R21AG066970-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "DUNSON, DAVID BRIAN",
+      "org": "DUKE UNIVERSITY",
+      "awards": [
+        "5R01MH118927-03",
+        "5R01MH118927-02",
+        "1R01MH118927-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SPEER, COLENSO MCNAUGHTON",
+      "org": "UNIV OF MARYLAND, COLLEGE PARK",
+      "awards": [
+        "1DP2MH125812-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BENAVIDEZ, NORA LISSETT",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "awards": [
+        "5F31EY029569-03",
+        "5F31EY029569-02",
+        "1F31EY029569-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SEUNG, HYUNJUNE SEBASTIAN",
+      "org": "PRINCETON UNIVERSITY",
+      "awards": [
+        "1RF1MH123400-01",
+        "5UH2CA203710-02",
+        "1UH2CA203710-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "SHI, YONGGANG ",
+      "org": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "awards": [
+        "5R01EB022744-04",
+        "5R01EB022744-03",
+        "3R01EB022744-03S1",
+        "3R01EB022744-02S1",
+        "5R01EB022744-02",
+        "1R01EB022744-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "VAN ESSEN, DAVID C",
+      "org": "WASHINGTON UNIVERSITY",
+      "awards": [
+        "5R24MH108315-05",
+        "5R24MH108315-04",
+        "3R24MH108315-03S1",
+        "5R24MH108315-03",
+        "5R24MH108315-02",
+        "1R24MH108315-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "WHITFIELD-GABRIELI, SUSAN ",
+      "org": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "awards": [
+        "3U01MH108168-04S1",
+        "5U01MH108168-04",
+        "5U01MH108168-03",
+        "5U01MH108168-02",
+        "3U01MH108168-01S1",
+        "1U01MH108168-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "FINGER, THOMAS E",
+      "org": "UNIVERSITY OF COLORADO DENVER",
+      "awards": [
+        "3R01DC014728-04S1",
+        "5R01DC014728-05",
+        "5R01DC014728-04",
+        "5R01DC014728-03",
+        "5R01DC014728-02",
+        "1R01DC014728-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BASSER, PETER J.",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "awards": [
+        "1ZIAHD008971-02",
+        "1ZIAHD008971-01",
+        "1ZIAHD000266-20",
+        "1ZIAHD000266-19",
+        "1ZIAHD000266-18",
+        "1ZIAHD000266-17"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "KORENBERG, JULIE RUTH",
+      "org": "UTAH STATE HIGHER EDUCATION SYSTEM--UNIVERSITY OF UTAH",
+      "awards": [
+        "5R01MH100635-05",
+        "5R01MH100635-04",
+        "5R01MH100635-03",
+        "5R01MH100635-02",
+        "1R01MH100635-01A1"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "HETHERINGTON, HOBY P",
+      "org": "UNIVERSITY OF PITTSBURGH AT PITTSBURGH",
+      "awards": [
+        "1S10OD023405-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "VAN ZIJL, PETER CM",
+      "org": "HUGO W. MOSER RES INST KENNEDY KRIEGER",
+      "awards": [
+        "1S10OD021648-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LIM, KELVIN O.",
+      "org": "UNIVERSITY OF MINNESOTA",
+      "awards": [
+        "1S10OD017974-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "OSTROFF, LINNAEA E",
+      "org": "UNIVERSITY OF CONNECTICUT STORRS",
+      "awards": [
+        "5R21MH119517-02",
+        "1R21MH119517-01"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LEAPMAN, RICHARD ",
+      "org": "NATIONAL INSTITUTE OF BIOMEDICAL IMAGING AND BIOENGINEERING",
+      "awards": [
+        "1ZIAEB000086-08",
+        "1ZIAEB000086-07",
+        "1ZIAEB000086-06",
+        "1ZIAEB000086-05"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LIPPINCOTT-SCHWARTZ, JENNIFER ",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "awards": [
+        "1ZIAHD001609-25"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "BRIGGMAN, KEVIN ",
+      "org": "NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE",
+      "awards": [
+        "1ZIANS003133-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "LAW, CHRISTOPHER CHARLES",
+      "org": "KITWARE, INC.",
+      "awards": [
+        "5R44MH088088-04",
+        "2R44MH088088-03"
+      ],
+      "found_via": "nih reporter"
+    },
+    {
+      "name": "GANDJBAKHCHE, AMIR H",
+      "org": "EUNICE KENNEDY SHRIVER NATIONAL INSTITUTE OF CHILD HEALTH & HUMAN DEVELOPMENT",
+      "awards": [
+        "1Z01HD000261-09"
+      ],
+      "found_via": "nih reporter"
+    }
+  ]
+}

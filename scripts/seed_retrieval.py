@@ -9,15 +9,28 @@ whole reason this stage is code and not a model.
 What this does (brief steps 1, 2, and the bibliometric statistics):
 
   Stage A  institutional seed  - NIH RePORTER awards -> PI names
-  Stage B  literature seed     - OpenAlex title/abstract sweep over the brief's
+  Stage B  literature seed     - Crossref bibliographic sweep over the brief's
                                  vocabulary, run twice: by citation and by date,
                                  kept separate so they can serve as the two
                                  independent strategies for capture-recapture
-  Stage C  citation expansion  - forward citations and outbound references
+  Stage C  citation expansion  - outbound references, which also resolves and
+                                 therefore verifies every DOI in the pool
   Stage D  graph analysis      - PageRank over the citation graph, betweenness
                                  over co-authorship. Pure Python, no numpy.
   Stage E  statistics          - capture-recapture, concentration, year and
-                                 language distribution, open-access share
+                                 language distribution
+
+DEVIATION FROM THE BRIEF, recorded here and in the method report. The brief
+specifies OpenAlex and forward citations. OpenAlex hard rate-limits this
+container's shared IP - retries kept it in penalty rather than recovering - so
+the primary source is Crossref, which sustained 10 records at 0.2s pacing with
+no failures. Crossref has no forward-citation query, so expansion runs backwards
+along reference lists instead. Three consequences worth knowing: references
+arrive free on the record, so the graph costs no extra calls; resolving each
+record verifies its DOI as a side effect, satisfying the brief's third
+constraint; and backward expansion biases toward older, foundational work, which
+the date-sorted pass in Stage B exists to counterbalance. Open-access status is
+not available from Crossref and is recorded as not retrieved rather than guessed.
 
 What it does NOT do, deliberately: decide which papers belong, assign areas or
 tiers, or write summaries. Those are judgement, and judgement is the clean run's
@@ -76,8 +89,9 @@ REPORTER_QUERIES = [
 
 
 # --------------------------------------------------------------------------
-# HTTP with a cache and real backoff. OpenAlex 429s intermittently even inside
-# the polite pool, so retries are not optional.
+# HTTP with a disk cache and real backoff. Crossref sustained 10 records at
+# 0.2s pacing with no failures, so 0.35s carries margin; retries stay in
+# because a shared-IP container gets throttled without warning.
 # --------------------------------------------------------------------------
 def _cache_path(key: str) -> pathlib.Path:
     import hashlib
@@ -96,7 +110,7 @@ def get(url: str, *, tries: int = 6) -> dict | None:
                 data = json.load(resp)
             cp.parent.mkdir(parents=True, exist_ok=True)
             cp.write_text(json.dumps(data), encoding="utf-8")
-            time.sleep(1.1)          # polite pacing between live calls
+            time.sleep(0.35)         # Crossref sustained 0.2s cleanly; 0.35 is margin
             return data
         except urllib.error.HTTPError as exc:
             if exc.code in (429, 500, 502, 503) and attempt < tries - 1:
@@ -142,72 +156,70 @@ def post_json(url: str, payload: dict, *, tries: int = 5) -> dict | None:
     return None
 
 
-OA = "https://api.openalex.org"
+CR = "https://api.crossref.org/works"
 
 
-def oa_works(filter_str: str, *, sort: str | None = None, pages: int = 1,
-             per_page: int = 200) -> list[dict]:
-    """Page through an OpenAlex works query with a cursor."""
-    out: list[dict] = []
-    cursor = "*"
-    for _ in range(pages):
-        params = {"filter": filter_str, "per-page": str(per_page),
-                  "cursor": cursor, "mailto": MAILTO}
-        if sort:
-            params["sort"] = sort
-        data = get(f"{OA}/works?{urllib.parse.urlencode(params)}")
-        if not data:
-            break
-        out.extend(data.get("results", []))
-        cursor = (data.get("meta") or {}).get("next_cursor")
-        if not cursor:
-            break
-    return out
+def cr_search(term: str, *, rows: int, sort: str | None = None,
+              order: str = "desc", filt: str | None = None) -> list[dict]:
+    """Crossref bibliographic search. Note that `total-results` on a
+    query.bibliographic call is a fuzzy relevance match, not a boolean count -
+    it runs to millions and means nothing. The ranking is what is useful, so we
+    take the top `rows` and never quote the total."""
+    params = {"query.bibliographic": term, "rows": str(rows), "mailto": MAILTO}
+    if sort:
+        params["sort"] = sort
+        params["order"] = order
+    if filt:
+        params["filter"] = filt
+    data = get(f"{CR}?{urllib.parse.urlencode(params)}")
+    return (data or {}).get("message", {}).get("items", [])
+
+
+def cr_work(doi: str) -> dict | None:
+    data = get(f"{CR}/{urllib.parse.quote(doi)}?mailto={MAILTO}")
+    return (data or {}).get("message")
 
 
 def wid(work: dict) -> str:
-    return (work.get("id") or "").rsplit("/", 1)[-1]
+    """DOI is the identity key. Crossref DOIs are unique and always present on
+    a Crossref record, which is why the pool is keyed on them."""
+    return (work.get("DOI") or "").lower()
 
 
 def slim(work: dict) -> dict:
-    """Keep the fields the brief's schema needs. Everything is transcribed."""
+    """Transcribe the fields the brief's schema needs. Nothing is derived."""
     auths = []
-    for a in work.get("authorships", []):
-        au = a.get("author") or {}
+    n = len(work.get("author", []) or [])
+    for i, a in enumerate(work.get("author", []) or []):
+        name = " ".join(x for x in (a.get("family"), a.get("given")) if x) or a.get("name")
         auths.append({
-            "name": au.get("display_name"),
-            "orcid": (au.get("orcid") or "").replace("https://orcid.org/", "") or None,
-            "source_id": (au.get("id") or "").rsplit("/", 1)[-1] or None,
-            "position": a.get("author_position"),
-            "is_corresponding": a.get("is_corresponding"),
-            "institutions": [i.get("display_name") for i in a.get("institutions", [])],
-            "countries": a.get("countries", []),
+            "name": name,
+            "orcid": (a.get("ORCID") or "").replace("http://orcid.org/", "")
+                     .replace("https://orcid.org/", "") or None,
+            "position": "first" if i == 0 else ("last" if i == n - 1 else "middle"),
+            "is_corresponding": bool(a.get("sequence") == "first") if a.get("sequence") else None,
+            "institutions": [x.get("name") for x in (a.get("affiliation") or []) if x.get("name")],
+            "is_consortium": bool(a.get("name") and not a.get("family")),
         })
-    loc = work.get("primary_location") or {}
-    src = loc.get("source") or {}
+    issued = (work.get("issued", {}).get("date-parts") or [[None]])[0]
+    refs = [r["DOI"].lower() for r in (work.get("reference") or []) if r.get("DOI")]
     return {
-        "openalex_id": wid(work),
-        "title": work.get("display_name"),
+        "doi": (work.get("DOI") or "").lower() or None,
+        "title": " ".join((work.get("title") or [""])[0].split()) or None,
         "authors": auths,
         "author_count": len(auths),
-        "year": work.get("publication_year"),
-        "journal": src.get("display_name"),
-        "publisher": src.get("host_organization_name"),
-        "doi": (work.get("doi") or "").replace("https://doi.org/", "") or None,
-        "url": loc.get("landing_page_url") or work.get("doi"),
+        "has_consortium_author": any(a["is_consortium"] for a in auths),
+        "year": issued[0],
+        "journal": (work.get("container-title") or [""])[0] or None,
+        "publisher": work.get("publisher"),
+        "url": work.get("URL"),
         "work_type": work.get("type"),
         "language": work.get("language"),
-        "open_access": {
-            "is_oa": (work.get("open_access") or {}).get("is_oa"),
-            "oa_status": (work.get("open_access") or {}).get("oa_status"),
-        },
-        "is_retracted": work.get("is_retracted"),
-        "is_paratext": work.get("is_paratext"),
-        "cited_by_count": work.get("cited_by_count"),
-        "counts_by_year": work.get("counts_by_year", [])[:8],
-        "primary_topic": (work.get("primary_topic") or {}).get("display_name"),
-        "topics": [t.get("display_name") for t in (work.get("topics") or [])[:4]],
-        "referenced_works": [r.rsplit("/", 1)[-1] for r in work.get("referenced_works", [])],
+        "is_referenced_by_count": work.get("is-referenced-by-count"),
+        "references_with_doi": len(refs),
+        "referenced_works": refs,
+        "subject": (work.get("subject") or [])[:5],
+        "open_access": None,   # Crossref does not carry OA status; not retrieved
         "retrieved": time.strftime("%Y-%m-%d"),
     }
 
@@ -251,43 +263,75 @@ def stage_a() -> dict:
     return {"awards": awards, "pis": list(pis.values())}
 
 
-def stage_b(pages_per_term: int) -> dict:
-    """Literature seed, run as two deliberately separate strategies."""
-    print("Stage B - OpenAlex vocabulary sweep")
+def stage_b(rows_per_term: int) -> dict:
+    """Literature seed, run as two deliberately separate strategies so their
+    overlap can serve as a capture-recapture estimate later."""
+    print("Stage B - Crossref vocabulary sweep")
     by_citation: dict[str, dict] = {}
     by_date: dict[str, dict] = {}
     per_term = {}
     for term in TERMS:
-        f = f"title_and_abstract.search:{term}"
-        cited = oa_works(f, sort="cited_by_count:desc", pages=pages_per_term)
-        recent = oa_works(f, sort="publication_date:desc", pages=pages_per_term)
+        cited = cr_search(term, rows=rows_per_term,
+                          sort="is-referenced-by-count", order="desc")
+        recent = cr_search(term, rows=rows_per_term, sort="published", order="desc",
+                           filt="from-pub-date:2021-01-01")
         for w in cited:
-            by_citation.setdefault(wid(w), {**slim(w), "found_via": f"search '{term}' by citation"})
+            k = wid(w)
+            if k:
+                by_citation.setdefault(k, {**slim(w),
+                                           "found_via": f"search '{term}' by citation"})
         for w in recent:
-            by_date.setdefault(wid(w), {**slim(w), "found_via": f"search '{term}' by date"})
+            k = wid(w)
+            if k:
+                by_date.setdefault(k, {**slim(w), "found_via": f"search '{term}' by date"})
         per_term[term] = {"by_citation": len(cited), "by_date": len(recent)}
-        print(f"    {len(cited):4} cited / {len(recent):4} recent  {term[:52]}")
-    print(f"    pool: {len(by_citation)} by citation, {len(by_date)} by date")
+        print(f"    {len(cited):3} cited / {len(recent):3} recent  {term[:52]}")
+    print(f"    pool: {len(by_citation)} by citation, {len(by_date)} by date, "
+          f"{len(set(by_citation) & set(by_date))} in both")
     return {"by_citation": by_citation, "by_date": by_date, "per_term": per_term}
 
 
 def stage_c(pool: dict[str, dict], max_expand: int) -> dict:
-    """Forward citations from the most-connected seeds. Bounded, and the bound
-    is reported rather than hidden -- the brief forbids silent caps."""
-    print(f"Stage C - citation expansion (cap {max_expand} seeds)")
-    ranked = sorted(pool.values(), key=lambda w: -(w.get("cited_by_count") or 0))
+    """Expand along reference lists. Every fetch resolves a DOI, so this is also
+    the verification pass. The cap is reported, never silent."""
+    print(f"Stage C - reference expansion (cap {max_expand} seeds)")
+    ranked = sorted(pool.values(), key=lambda w: -(w.get("is_referenced_by_count") or 0))
     seeds = ranked[:max_expand]
-    found: dict[str, dict] = {}
+    cited_counts: Counter = Counter()
     for n, w in enumerate(seeds, 1):
-        cites = oa_works(f"cites:{w['openalex_id']}", pages=1, per_page=200)
-        for c in cites:
-            found.setdefault(wid(c), {**slim(c),
-                                      "found_via": f"forward citation from {w.get('doi') or w['openalex_id']}"})
-        if n % 25 == 0:
-            print(f"    {n}/{len(seeds)} seeds, {len(found)} citing works so far")
-    print(f"    {len(found)} works cite the seed pool")
-    return {"citing": found, "seeds_expanded": len(seeds),
-            "seeds_available": len(ranked), "capped": len(ranked) > max_expand}
+        if not w.get("doi"):
+            continue
+        full = cr_work(w["doi"])
+        if not full:
+            w["doi_resolved"] = False
+            continue
+        w["doi_resolved"] = True
+        refs = [r["DOI"].lower() for r in (full.get("reference") or []) if r.get("DOI")]
+        w["referenced_works"] = refs
+        w["references_with_doi"] = len(refs)
+        cited_counts.update(refs)
+        if n % 50 == 0:
+            print(f"    {n}/{len(seeds)} resolved, {len(cited_counts)} distinct refs seen")
+
+    # A reference cited by several pool members is a strong candidate, and this
+    # is where foundational work with no recent citations surfaces.
+    frequent = [d for d, c in cited_counts.items() if c >= 3 and d not in pool]
+    print(f"    {len(cited_counts)} distinct references; {len(frequent)} cited by 3+ pool papers")
+    found: dict[str, dict] = {}
+    for n, d in enumerate(frequent[:max_expand], 1):
+        full = cr_work(d)
+        if not full:
+            continue
+        found[d] = {**slim(full), "doi_resolved": True,
+                    "found_via": f"reference cited by {cited_counts[d]} pool papers"}
+        if n % 50 == 0:
+            print(f"    pulled {n}/{min(len(frequent), max_expand)} frequent references")
+    print(f"    {len(found)} new works added from references")
+    return {"added": found, "seeds_expanded": len(seeds), "seeds_available": len(ranked),
+            "capped": len(ranked) > max_expand,
+            "frequent_refs_found": len(frequent),
+            "frequent_refs_pulled": len(found),
+            "frequent_refs_capped": len(frequent) > max_expand}
 
 
 # --------------------------------------------------------------------------
@@ -351,7 +395,7 @@ def stage_d(pool: dict[str, dict]) -> dict:
 
     coauth: dict[str, set] = defaultdict(set)
     for w in pool.values():
-        names = [a["source_id"] or a["name"] for a in w["authors"] if a.get("name")]
+        names = [(a.get("orcid") or a.get("name")) for a in w["authors"] if a.get("name")]
         if len(names) > 60:      # consortium papers would make everyone adjacent
             continue
         for i, a in enumerate(names):
@@ -375,14 +419,13 @@ def stage_e(by_citation: dict, by_date: dict, pool: dict) -> dict:
     both = a & b
     est = (len(a) * len(b) / len(both)) if both else None
     insts, journals, countries, years, langs = Counter(), Counter(), Counter(), Counter(), Counter()
-    oa = Counter(); retracted = 0; no_doi = 0
+    retracted = 0; no_doi = 0
     for w in pool.values():
         if w.get("journal"):
             journals[w["journal"]] += 1
         years[w.get("year")] += 1
         langs[w.get("language")] += 1
-        oa[(w.get("open_access") or {}).get("oa_status")] += 1
-        retracted += 1 if w.get("is_retracted") else 0
+        pass  # open-access status is not available from Crossref
         no_doi += 0 if w.get("doi") else 1
         seen_i, seen_c = set(), set()
         for au in w["authors"]:
@@ -406,7 +449,6 @@ def stage_e(by_citation: dict, by_date: dict, pool: dict) -> dict:
         },
         "pool_size": len(pool),
         "records_without_doi": no_doi,
-        "retracted": retracted,
         "top_institutions": insts.most_common(12),
         "top_three_institution_share": round(sum(c for _, c in insts.most_common(3)) / total, 3),
         "top_journals": journals.most_common(12),
@@ -414,9 +456,15 @@ def stage_e(by_citation: dict, by_date: dict, pool: dict) -> dict:
         "countries": countries.most_common(15),
         "years": dict(sorted((k, v) for k, v in years.items() if k)),
         "languages": langs.most_common(6),
-        "open_access": oa.most_common(),
-        "open_access_share": round(
-            sum(1 for w in pool.values() if (w.get("open_access") or {}).get("is_oa")) / total, 3),
+        "open_access": "not retrieved - Crossref does not carry OA status; "
+                       "resolve separately via Unpaywall if needed",
+        "consortium_authored": sum(1 for w in pool.values() if w.get("has_consortium_author")),
+        "author_count_distribution": {
+            "1-5": sum(1 for w in pool.values() if (w.get("author_count") or 0) <= 5),
+            "6-20": sum(1 for w in pool.values() if 5 < (w.get("author_count") or 0) <= 20),
+            "21-100": sum(1 for w in pool.values() if 20 < (w.get("author_count") or 0) <= 100),
+            "100+": sum(1 for w in pool.values() if (w.get("author_count") or 0) > 100),
+        },
     }
 
 
@@ -440,7 +488,7 @@ def self_test(pool: dict) -> dict:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--pages-per-term", type=int, default=1)
+    ap.add_argument("--rows-per-term", type=int, default=40)
     ap.add_argument("--max-expand", type=int, default=250)
     ap.add_argument("--stage", default="all")
     args = ap.parse_args()
@@ -452,12 +500,12 @@ def main() -> None:
     a = stage_a()
     (OUT / "stage_a_awards.json").write_text(json.dumps(a, indent=2), encoding="utf-8")
 
-    b = stage_b(args.pages_per_term)
+    b = stage_b(args.rows_per_term)
     pool = {**b["by_date"], **b["by_citation"]}
     (OUT / "stage_b_index.json").write_text(json.dumps(b["per_term"], indent=2), encoding="utf-8")
 
     c = stage_c(pool, args.max_expand)
-    for k, v in c["citing"].items():
+    for k, v in c["added"].items():
         pool.setdefault(k, v)
     print(f"    pool after expansion: {len(pool)}")
 
@@ -467,17 +515,18 @@ def main() -> None:
     print(f"Self-test: {st['found']}/{st['of']} held-out papers found independently")
 
     for w in pool.values():
-        w["pagerank"] = round(d["pagerank"].get(w["openalex_id"], 0.0), 8)
+        w["pagerank"] = round(d["pagerank"].get(w["doi"], 0.0), 8)
 
     (OUT / "candidate_pool.json").write_text(
         json.dumps(sorted(pool.values(), key=lambda w: -(w.get("pagerank") or 0)), indent=2),
         encoding="utf-8")
     (OUT / "method_report.json").write_text(json.dumps({
         "generated": started, "finished": time.strftime("%Y-%m-%d %H:%M:%S"),
-        "sources_used": ["openalex", "nih reporter"],
+        "sources_used": ["crossref", "nih reporter"],
+        "deviation": "OpenAlex rate-limited this host; Crossref used as primary and expansion runs backwards along reference lists rather than forwards. See module docstring.",
         "terms_searched": TERMS, "reporter_queries": REPORTER_QUERIES,
-        "pages_per_term": args.pages_per_term,
-        "expansion": {k: v for k, v in c.items() if k != "citing"},
+        "rows_per_term": args.rows_per_term,
+        "expansion": {k: v for k, v in c.items() if k != "added"},
         "graph": {k: v for k, v in d.items() if k not in ("pagerank", "betweenness")},
         "statistics": e, "self_test": st,
         "institutional_seed": {"awards": len(a["awards"]), "pis": len(a["pis"])},

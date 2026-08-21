@@ -1,0 +1,126 @@
+{
+  "volume electron microscopy connectomics": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "serial section electron microscopy brain": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "serial block-face scanning electron microscopy": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "FIB-SEM connectomics": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "automated tape-collecting ultramicrotome": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "GridTape transmission electron microscopy": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "multibeam scanning electron microscopy brain": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "en bloc staining electron microscopy brain": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "neural circuit reconstruction electron microscopy": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "dense reconstruction neuropil": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "saturated reconstruction neocortex": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "neuron segmentation electron microscopy": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "flood-filling network segmentation": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "affinity prediction neuron segmentation": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "supervoxel agglomeration connectomics": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "proofreading connectome reconstruction": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "split and merge errors segmentation": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "synapse detection electron microscopy": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "synaptic partner assignment": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "skeletonization neuron morphology": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "electron microscopy image alignment stitching": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "connectome annotation versioning": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "expansion microscopy connectomics": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "X-ray holographic nano-tomography brain": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "connectome motif analysis": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "connectome null model": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "connectome-constrained model": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "whole brain connectome Drosophila": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "C. elegans connectome": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "petascale neuroscience data management": {
+    "by_citation": 5,
+    "by_date": 5
+  },
+  "cloud storage neuroimaging chunked": {
+    "by_citation": 5,
+    "by_date": 5
+  }
+}

@@ -15,3 +15,4 @@ course/decks/marp/out/**/*.pptx
 # Marp CLI is installed with --no-save when decks need rendering; never committed.
 node_modules/
 _data/seed_retrieval/cache/
+# Raw API responses from the seed retrieval. Regenerable, and large.

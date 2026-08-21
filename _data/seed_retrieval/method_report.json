@@ -1,0 +1,306 @@
+{
+  "generated": "2026-08-21 06:15:22",
+  "finished": "2026-08-21 06:17:09",
+  "sources_used": [
+    "crossref",
+    "nih reporter"
+  ],
+  "deviation": "OpenAlex rate-limited this host; Crossref used as primary and expansion runs backwards along reference lists rather than forwards. See module docstring.",
+  "terms_searched": [
+    "volume electron microscopy connectomics",
+    "serial section electron microscopy brain",
+    "serial block-face scanning electron microscopy",
+    "FIB-SEM connectomics",
+    "automated tape-collecting ultramicrotome",
+    "GridTape transmission electron microscopy",
+    "multibeam scanning electron microscopy brain",
+    "en bloc staining electron microscopy brain",
+    "neural circuit reconstruction electron microscopy",
+    "dense reconstruction neuropil",
+    "saturated reconstruction neocortex",
+    "neuron segmentation electron microscopy",
+    "flood-filling network segmentation",
+    "affinity prediction neuron segmentation",
+    "supervoxel agglomeration connectomics",
+    "proofreading connectome reconstruction",
+    "split and merge errors segmentation",
+    "synapse detection electron microscopy",
+    "synaptic partner assignment",
+    "skeletonization neuron morphology",
+    "electron microscopy image alignment stitching",
+    "connectome annotation versioning",
+    "expansion microscopy connectomics",
+    "X-ray holographic nano-tomography brain",
+    "connectome motif analysis",
+    "connectome null model",
+    "connectome-constrained model",
+    "whole brain connectome Drosophila",
+    "C. elegans connectome",
+    "petascale neuroscience data management",
+    "cloud storage neuroimaging chunked"
+  ],
+  "reporter_queries": [
+    "connectomics electron microscopy",
+    "BRAIN CONNECTS",
+    "connectome reconstruction",
+    "volume electron microscopy brain mapping"
+  ],
+  "rows_per_term": 5,
+  "expansion": {
+    "seeds_expanded": 8,
+    "seeds_available": 219,
+    "capped": true,
+    "frequent_refs_found": 0,
+    "frequent_refs_pulled": 0,
+    "frequent_refs_capped": false
+  },
+  "graph": {
+    "citation_edges": 49,
+    "coauthor_nodes": 877,
+    "betweenness_estimated_from": 300
+  },
+  "statistics": {
+    "capture_recapture": {
+      "found_by_citation_strategy": 96,
+      "found_by_date_strategy": 123,
+      "found_by_both": 0,
+      "estimated_total": null,
+      "caveat": "Lincoln-Petersen. Assumes the two strategies are independent and equally likely to find any paper; neither fully holds for literature search. Indicative only."
+    },
+    "pool_size": 219,
+    "records_without_doi": 0,
+    "top_institutions": [
+      [
+        "Professor, Department of Pharmaceutics, Srinivas College of Pharmacy, Valachil, Karnataka, India.",
+        1
+      ],
+      [
+        "Principal, Srinivas College of Pharmacy Srinivas College of Pharmacy, Valachil, Karnataka, India",
+        1
+      ],
+      [
+        "M-pharm Student, Department of Pharmaceutics, M-pharm Student, Department of Pharmaceutics,",
+        1
+      ],
+      [
+        "Toyota Financial Services, Dallas TX, USA",
+        1
+      ],
+      [
+        "b Faculty, School of Marketing, University of Technology Sydney (UTS), Australia",
+        1
+      ],
+      [
+        "a Coles College of Business, Kennesaw State University, Kennesaw, GA",
+        1
+      ],
+      [
+        "c Institute for Market-Based Management, Ludwig-Maximilians-University Munich, Germany",
+        1
+      ],
+      [
+        "Department of International Business and Technology Studies, Texas A&M International University, Laredo, TX, USA",
+        1
+      ],
+      [
+        "SRI International, Menlo Park, CA",
+        1
+      ],
+      [
+        "Comparative Genomics group, Bioinformatics and Genomics Programme, Centre for Genomic Regulation (CRG), Dr. Aiguader, 88 08003 Barcelona, Spain",
+        1
+      ],
+      [
+        "IDSIA, Corso Elvezia 36, 6900 Lugano, Switzerland",
+        1
+      ],
+      [
+        "Fakult\u00e4t f\u00fcr Informatik, Technische Universit\u00e4t M\u00fcnchen, 80290 M\u00fcnchen, Germany",
+        1
+      ]
+    ],
+    "top_three_institution_share": 0.014,
+    "top_journals": [
+      [
+        "Statistica Sinica",
+        12
+      ],
+      [
+        "Electric Power Systems Research",
+        11
+      ],
+      [
+        "NeuroImage",
+        6
+      ],
+      [
+        "Atenci\u00f3n Primaria",
+        5
+      ],
+      [
+        "International Journal of Strategic Innovative Marketing",
+        5
+      ],
+      [
+        "International Journal on Integrated Information Management",
+        5
+      ],
+      [
+        "Bioinformatics",
+        5
+      ],
+      [
+        "Nature",
+        5
+      ],
+      [
+        "Talanta",
+        4
+      ],
+      [
+        "China Journal of Chinese Materia Medica",
+        4
+      ],
+      [
+        "Nature Methods",
+        4
+      ],
+      [
+        "Journal of Materials Science &amp; Technology",
+        3
+      ]
+    ],
+    "top_three_journal_share": 0.132,
+    "countries": [],
+    "years": {
+      "1951": 1,
+      "1955": 1,
+      "1958": 1,
+      "1960": 1,
+      "1963": 1,
+      "1964": 1,
+      "1969": 1,
+      "1973": 1,
+      "1974": 2,
+      "1976": 1,
+      "1977": 1,
+      "1978": 1,
+      "1980": 1,
+      "1981": 2,
+      "1985": 1,
+      "1986": 1,
+      "1988": 1,
+      "1989": 1,
+      "1990": 2,
+      "1992": 1,
+      "1993": 2,
+      "1995": 1,
+      "1997": 2,
+      "1998": 2,
+      "1999": 1,
+      "2001": 3,
+      "2002": 4,
+      "2003": 1,
+      "2004": 1,
+      "2005": 4,
+      "2006": 4,
+      "2007": 3,
+      "2008": 4,
+      "2009": 2,
+      "2010": 2,
+      "2011": 4,
+      "2012": 3,
+      "2013": 5,
+      "2014": 5,
+      "2015": 8,
+      "2016": 2,
+      "2017": 4,
+      "2018": 1,
+      "2019": 1,
+      "2021": 3,
+      "2026": 7,
+      "2027": 54,
+      "2028": 16,
+      "2029": 9,
+      "2030": 1,
+      "2031": 4,
+      "2047": 1,
+      "2050": 1,
+      "2077": 1,
+      "2081": 1,
+      "2088": 1,
+      "2100": 4,
+      "2105": 1,
+      "2106": 1,
+      "2107": 1,
+      "2108": 2,
+      "2109": 1,
+      "2114": 3,
+      "2115": 5,
+      "2116": 1,
+      "2117": 1,
+      "2121": 2,
+      "2203": 5
+    },
+    "languages": [
+      [
+        "en",
+        142
+      ],
+      [
+        null,
+        76
+      ],
+      [
+        "ng",
+        1
+      ]
+    ],
+    "open_access": "not retrieved - Crossref does not carry OA status; resolve separately via Unpaywall if needed",
+    "consortium_authored": 2,
+    "author_count_distribution": {
+      "1-5": 159,
+      "6-20": 58,
+      "21-100": 2,
+      "100+": 0
+    }
+  },
+  "self_test": {
+    "found": 0,
+    "of": 7,
+    "detail": {
+      "10.1038/s41586-025-08985-1": {
+        "found": false,
+        "what": "light-microscopy connectomic reconstruction, 2025"
+      },
+      "10.1038/s41586-024-07558-y": {
+        "found": false,
+        "what": "whole adult fly brain wiring diagram, 2024"
+      },
+      "10.1038/s41586-025-08790-w": {
+        "found": false,
+        "what": "functional connectomics, mouse visual cortex, 2025"
+      },
+      "10.1126/science.adk4858": {
+        "found": false,
+        "what": "petavoxel human cortex fragment, 2024"
+      },
+      "10.7554/elife.57443": {
+        "found": false,
+        "what": "adult Drosophila central brain connectome, 2020"
+      },
+      "10.1016/j.cell.2015.06.054": {
+        "found": false,
+        "what": "saturated reconstruction of neocortex, 2015"
+      },
+      "10.1126/science.add9330": {
+        "found": false,
+        "what": "insect brain connectome, 2023"
+      }
+    }
+  },
+  "institutional_seed": {
+    "awards": 526,
+    "pis": 163
+  }
+}

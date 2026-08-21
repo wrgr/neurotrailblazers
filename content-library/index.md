@@ -88,6 +88,7 @@ Graph analysis, motif search, and the bridge to NeuroAI.
 | [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }}) | Degree, clustering, path length, community detection, spectral | 09 |
 | [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) | DotMotif, null models, subgraph isomorphism, statistics | 09 |
 | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) | Structure-function, bio-inspired architectures, connectome-constrained models | 09 |
+| [Open problems for undergraduate teams]({{ '/content-library/connectomics/open-problems-undergrad/' | relative_url }}) | Seven open problem areas scoped for undergrad teams, tied to BRAIN CONNECTS bottlenecks | 01, 08, 09 |
 
 ## Imaging
 

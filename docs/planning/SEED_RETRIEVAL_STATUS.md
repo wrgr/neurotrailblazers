@@ -57,61 +57,69 @@ hit rate (1/7 → 3/7); the 4 still-missing papers are all 2023–2025 releases
 full-size sweep should catch better since they're very recent and the "recent"
 strategy's `rows` cap was the likely limiter at reduced scale.
 
-## What's running right now
+## Final result of the corrected full run
 
-Full-scale run relaunched after the fix: `python3 -u scripts/seed_retrieval.py
---rows-per-term 60 --max-expand 400`, log at `/tmp/seedrun2.log`, started
-2026-08-21 ~15:15 UTC. **This is an untracked OS background process** (started via
-nested shell backgrounding, not the harness's tracked-task mechanism), so no
-automatic completion notification will arrive — check it directly:
+`python3 -u scripts/seed_retrieval.py --rows-per-term 60 --max-expand 400`
+completed. Output committed and pushed as `36bb777`.
 
-```
-ps aux | grep seed_retrieval          # confirm still running
-tail -50 /tmp/seedrun2.log            # progress
-```
+- **776 candidates**, 0 without a DOI, no implausible years (range 1955–2026).
+- **Self-test: 6 of 7** held-out papers found (up from 1/7 pre-fix). Only LICONN
+  (2025, light-microscopy connectomics — the newest and most narrowly-scoped of
+  the seven) is still missed.
+- Top journals: Nature (45), Neuron (31), Nature Methods (26), Microscopy and
+  Microanalysis (23), eLife (22), Cell (20), Science (16), PNAS (15) — a
+  legitimate neuroscience/microscopy distribution, not the chemical-engineering/
+  object-detection noise the pre-fix run produced.
+- Capture-recapture: 282 found by the all-time-relevance strategy, 210 by the
+  recent-filtered strategy, 115 by both, Lincoln-Petersen estimate ~515
+  (indicative only — the two strategies aren't fully independent).
+- `top_three_institution_share`: 0.015 (low concentration, as expected for a
+  field-wide sweep rather than a single-lab bias).
+- Author-count distribution: 517 papers with 1–5 authors, 223 with 6–20, 32 with
+  21–100, 4 with 100+ (consortium papers). 11 consortium-authored records.
 
-When it finishes, the log ends with `Wrote N candidates to _data/seed_retrieval/`
-and these files are rewritten:
-`_data/seed_retrieval/{candidate_pool,graph_scores,method_report,stage_b_index}.json`
-(`stage_a_awards.json` is written earlier, at the start of Stage B).
+**Incident during wrap-up:** a `git checkout --` run to clean the working tree
+executed *after* the background run had already finished writing fresh output,
+reverting the 776-candidate result back to an old committed 219-candidate
+smoke-test artifact. Recovered by replaying the script against its own disk
+cache (`_data/seed_retrieval/cache/`, gitignored, 842 cached responses) — same
+inputs, same result, ~8 seconds, no new API calls. Lesson for future sessions:
+don't run `git checkout --` on paths a background process still owns without
+confirming the process has actually exited.
 
-## What to do once it finishes
+## What to do next
 
-1. Read `_data/seed_retrieval/method_report.json` — report the self-test result
-   (`self_test.found`/`self_test.of`), pool size, capture-recapture estimate, and
-   concentration stats **honestly, without rounding up**. The self-test exists
-   specifically so it can fail visibly; it was never used to steer the search.
-2. Spot-check `candidate_pool.json` for remaining off-topic noise the same way
-   this session did (`journal`, `year` fields — watch for implausible years, and
-   for journals clearly outside the field).
-3. Commit and push the real output — the current committed state on
-   `claude/seed-corpus-retrieval` deliberately has the *stale smoke-test* data
-   reverted out (`git checkout --` was used to keep the tree clean while the real
-   run was mid-flight), so the fresh files are new work, not a diff to review
-   line-by-line.
-4. If quality looks sound (self-test meaningfully better than 1/7, low
-   off-topic rate on spot-check): hand `candidate_pool.json` +
-   `method_report.json` + `graph_scores.json` to the "clean run" judgment step —
-   the deep-research brief in `SEED_CORPUS_RESET_BRIEF.md` already specifies the
-   output schema (tiers, areas, summaries) that step should produce.
-5. If quality is still weak: the next likely lever is widening `--max-expand`
-   (the reference-expansion stage, Stage C) rather than the vocabulary sweep
-   itself — Stage C's "cited by 3+ pool papers" backward-expansion is a stronger
-   relevance signal than any single term search, since it requires convergent
-   citation from multiple already-verified-relevant seeds.
+1. Quality looks sound (6/7 self-test, clean journal/year distribution) — this
+   pool is ready to hand to the "clean run" judgment step. Give it
+   `candidate_pool.json` + `method_report.json` + `graph_scores.json`; the deep-
+   research brief in `SEED_CORPUS_RESET_BRIEF.md` already specifies the output
+   schema (tiers, areas, summaries) that step should produce.
+2. Optionally chase the LICONN gap before handoff: it's a single specific 2025
+   Nature paper, findable directly by DOI/title lookup rather than another full
+   sweep — the vocabulary-sweep terms don't include "LICONN" or "light
+   microscopy" phrasing, which is likely why it wasn't retrieved.
+3. Once judged output exists: run `scripts/audit_citations.py` against it before
+   it replaces `_data/expert_seed_papers/`.
 
 ## Independent cross-check channel (new, this session)
 
 At the user's request: `_data/seed_retrieval/recall_cross_check.md` is a
-**deliberately un-retrieved**, memory-based list (~180 papers, ~70 people)
-produced without looking at this repo's data, meant as a second independent
-"capture" for a capture-recapture-style sanity check on retrieval coverage — not
-as a citation source. It is explicitly marked unverified throughout; nothing in it
-should reach the corpus without going through Crossref verification first. Use it
-by diffing its titles against `candidate_pool.json`: real gaps (things on that list
-with no match in the pool) are worth a targeted Crossref lookup; things the pool
-found that aren't on that list just mean my training data under-weighted them,
-which is not a defect.
+**deliberately un-retrieved**, memory-based list produced without looking at
+this repo's data, meant as a second independent "capture" for a
+capture-recapture-style sanity check on retrieval coverage — not as a citation
+source. It is explicitly marked unverified throughout; nothing in it should
+reach the corpus without going through Crossref verification first. Use it by
+diffing its titles against `candidate_pool.json`: real gaps (things on that
+list with no match in the pool) are worth a targeted Crossref lookup; things
+the pool found that aren't on that list just mean my training data
+under-weighted them, which is not a defect.
+
+**Count correction:** the file's own "Honest accounting" section originally
+claimed ~180 papers; the actual bullet count is 77 papers plus ~90 people
+(~167 total). That overstatement has been fixed in the file itself — see the
+commit that corrects it. The user's ask was "at least 200"; 167 falls short of
+that threshold, so this list should be treated as a partial cross-check, not a
+complete one, unless extended.
 
 ## Still pending after all of the above
 
@@ -122,3 +130,5 @@ which is not a defect.
   it gets replaced only once verified, judged output exists.
 - Task #21 in the session's task list ("Rebuild the seed corpus from verified
   deep-research output") is `in_progress`, not done.
+- The recall cross-check (~167 entries) is short of the user's "at least 200"
+  ask — extend it if a fuller cross-check is wanted before handoff.

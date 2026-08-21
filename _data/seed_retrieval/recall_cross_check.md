@@ -35,7 +35,7 @@ ten nano-scale ones, no more).
 
 ---
 
-## Papers (~180)
+## Papers (95)
 
 ### Foundational / historical
 - White, Southgate, Thomson, Brenner 1986 — "The structure of the nervous system of the nematode *Caenorhabditis elegans*" (Phil Trans R Soc B)
@@ -146,10 +146,30 @@ ten nano-scale ones, no more).
 - Abbott, Bock, Callaway, ... Tsao, Wang 2020 — "The Mind of a Mouse" (Cell, perspective on MICrONS-scale goals)
 - Lichtman, Pfister, Shavit 2014 — "The big data challenges of connectomics" (Nat Neurosci)
 - Kornfeld & Denk 2018 — "Progress and remaining challenges in high-throughput volume electron microscopy" (Curr Opin Neurobiol, review)
+- Kleinfeld, Bharioke, Blinder, ... Wanner ~2011 — "Large-scale automated histology in the pursuit of connectomes" (J Neurosci, review)
+- Kasthuri & Lichtman ~2007 — "The rise of the 'projectome'" (Nat Methods, perspective)
+- Denk, Briggman, Helmstaedter 2012 — "Structural neurobiology: missing link to a mechanistic understanding of neural computation" (Nat Rev Neurosci, review)
+- Helmstaedter 2013 — "Cellular-resolution connectomics: challenges of dense neural circuit reconstruction" (Nat Methods, review)
+
+### Additional circuit reconstructions and tools (recalled after initial pass)
+- Anderson, Jones, Yang, Shaw, Watt, ... Marc 2009 — "A computational framework for ultrastructural mapping of neural circuitry" (PLoS Biol) — Marc lab retina connectome
+- Marc & Jones ~2011 — "Exploring the retinal connectome" (Mol Vis)
+- Kim, Greene, Zlateski, ... Seung 2014 — "Space-time wiring specificity supports direction selectivity in the retina" (Nature)
+- Motta, Berning, Boergens, ... Helmstaedter 2019 — "Dense connectomic reconstruction in layer 4 of the somatosensory cortex" (Science)
+- Oh, Harris, Ng, Winslow, ... Zeng 2014 — "A mesoscale connectome of the mouse brain" (Nature) — Allen Institute viral-tracing connectome; macro-adjacent, included as a cross-scale bridge
+- Zingg, Hintiryan, Gou, ... Dong 2014 — "Neural Networks of the Mouse Neocortex" (Cell) — mesoscale
+- Harris & Weinberg 2012 — "Ultrastructure of Synapses in the Mammalian Brain" (Cold Spring Harb Perspect Biol, review)
+- Mishchenko 2009 — semi-automated 3D EM reconstruction framework (J Neurosci Methods)
+- Schneider-Mizell, Gerhard, Longair, ... Cardona 2016 — "Quantitative neuroanatomy for connectomics in *Drosophila*" (eLife)
+- Gerhard, Andrade, Fetter, Cardona, Schneider-Mizell 2017 — "Conserved neural circuit structure across *Drosophila* larval development revealed by comparative connectomics" (eLife)
+- Costa, Manton, Ostrovsky, Prohaska, Jefferis 2016 — "NBLAST: Rapid, Sensitive Comparison of Neuronal Structure" (Neuron) — morphology-comparison tool used across the field
+- Bates, Manton, Jagannathan, ... Jefferis 2020 — "The natverse, a versatile toolbox for combining and analysing neuroanatomical data" (eLife)
+- Turner, Macrina, Wu, Silversmith, Lee, Seung ~2020 — MICrONS pilot-volume cortical reconstruction (bioRxiv)
+- Zlateski & Seung ~2015 — size-dependent single-linkage watershed segmentation method paper
 
 ---
 
-## People (~70)
+## People (~90)
 
 Organized by primary contribution; many worked across categories. Affiliations are
 as remembered at time of the cited work and may be stale — verify current
@@ -204,13 +224,29 @@ Scott Emmons · Daniel Witvliet · Mei Zhen · Aravinthan (Vinci) Samuel
 **Program / funding leadership**
 John Ngai (NIH BRAIN Initiative Director) · Walter Koroshetz (NINDS Director)
 
+**Retina connectomics**
+Robert Marc · Bryan William Jones · Jinseop (Sebastian) Kim
+
+**Allen Institute / mesoscale**
+Hongkui Zeng · Christof Koch · Anton Arkhipov · Julie Harris · Karel Svoboda ·
+David Kleinfeld
+
+**Analysis / morphology tools**
+Marta Costa · Alexander Bates (dup, natverse/NBLAST) · Sarah Gerhard ·
+Albert Cardona (dup, CATMAID + Drosophila tools)
+
 ---
 
 ## Honest accounting
 
-~180 papers, ~70 named people — a combined total comfortably over 200 without
-padding. I stopped where my confident recall stopped; I did not manufacture
-additional entries to reach a round number, and I did not manufacture DOIs at all.
-Several entries above are flagged low-confidence on author order or exact venue —
-those are exactly the ones worth running through Crossref first when reconciling
-this list against the retrieval pool.
+**Corrected count** (an earlier version of this file overstated it): 95 paper
+bullets, ~90 named people, ~185 combined — short of the "at least 200" ask.
+I stopped where my confident recall stopped; I did not manufacture additional
+entries to reach either the original claimed figure or the 200 target, and I
+did not manufacture DOIs at all. Several entries above are flagged
+low-confidence on author order or exact venue — those are exactly the ones
+worth running through Crossref first when reconciling this list against the
+retrieval pool. If a fuller cross-check is wanted, the honest way to extend it
+is deeper recall in under-covered categories (proofreading/QC methodology,
+non-Drosophila insect connectomes, additional network-null-model papers), not
+padding these categories with lower-confidence entries.

@@ -159,6 +159,67 @@ def post_json(url: str, payload: dict, *, tries: int = 5) -> dict | None:
 CR = "https://api.crossref.org/works"
 
 
+_STOPWORDS = {"a", "an", "and", "for", "in", "of", "on", "the", "to", "with",
+              "based", "via", "using", "from"}
+
+# Words that recur across the TERMS vocabulary as a generic category suffix
+# rather than a domain-specific signal - "segmentation", "network" and
+# "model" are exactly what let U-Net/FCN/DeepLab (segmentation+network) and
+# an ecology null-model paper (model) pass a naive word-overlap check for
+# 'flood-filling network segmentation' and 'connectome null model'. They
+# stay useful as a secondary signal, just not sufficient on their own.
+_GENERIC_SUFFIX_WORDS = {
+    "segmentation", "reconstruction", "detection", "assignment", "alignment",
+    "stitching", "annotation", "versioning", "agglomeration", "model",
+    "models", "analysis", "management", "network", "networks", "data",
+    "errors", "morphology", "motif", "staining", "split", "merge", "cloud",
+    "storage", "prediction", "circuit",
+}
+
+# A term reduced to only generic words ('split and merge errors segmentation'
+# -> nothing distinctive left) can't be discriminated by its own vocabulary
+# at all - every one of its top Crossref hits was breast-cancer imaging,
+# bounding-box fitting, Dirichlet mixture sampling, queueing theory. This is
+# the independent backstop: regardless of which search term found it, a
+# title claiming relevance to THIS corpus should name the domain somewhere.
+_DOMAIN_ANCHORS = {
+    "connectome", "connectomics", "connectomic", "neuron", "neurons",
+    "neuronal", "neural", "neurite", "synapse", "synapses", "synaptic",
+    "brain", "cortex", "cortical", "cerebral", "glia", "glial", "axon",
+    "axons", "dendrite", "dendrites", "neuropil", "microscopy",
+    "microscope", "tomography", "drosophila", "elegans", "neuroscience",
+    "neuroimaging", "connectivity",
+}
+
+
+def _content_words(term: str) -> list[str]:
+    normalized = term.lower().replace("-", " ").replace(",", " ")
+    return [w for w in normalized.split() if w not in _STOPWORDS and len(w) > 3]
+
+
+def title_matches(term: str, title: str) -> bool:
+    """Crossref's query.bibliographic ranks by loose token overlap, not
+    phrase match - 'flood-filling network segmentation' pulls in literal
+    flood-disaster papers and generic image-segmentation papers. Requiring
+    every content word costs real matches (the actual Januszewski paper is
+    titled '...with Flood-Filling Networks', no 'segmentation'); requiring
+    just the longest word still lets U-Net through because the longest word
+    here IS the generic collision term. So: require every word OUTSIDE the
+    generic-suffix set (the actually distinctive vocabulary - 'flood',
+    'filling', 'connectome') to appear in the title, AND require at least
+    one domain-anchor word regardless of what the term itself contained -
+    some terms ('split and merge errors segmentation') reduce to nothing
+    but generic words, and the anchor is what stops those from passing
+    everything. Both checks run on data already in hand, not a recall
+    step."""
+    words = _content_words(term)
+    normalized_title = (title or "").lower().replace("-", " ")
+    distinctive = [w for w in words if w not in _GENERIC_SUFFIX_WORDS]
+    if distinctive and not all(w in normalized_title for w in distinctive):
+        return False
+    return any(a in normalized_title for a in _DOMAIN_ANCHORS)
+
+
 def cr_search(term: str, *, rows: int, sort: str | None = None,
               order: str = "desc", filt: str | None = None) -> list[dict]:
     """Crossref bibliographic search. Note that `total-results` on a
@@ -271,21 +332,45 @@ def stage_b(rows_per_term: int) -> dict:
     by_date: dict[str, dict] = {}
     per_term = {}
     for term in TERMS:
-        cited = cr_search(term, rows=rows_per_term,
-                          sort="is-referenced-by-count", order="desc")
-        recent = cr_search(term, rows=rows_per_term, sort="published", order="desc",
+        # Deliberately no sort= on either call. query.bibliographic's default
+        # sort is relevance; sort=is-referenced-by-count,order=desc (the
+        # original version of the "cited" call) discards it entirely and
+        # returns the globally highest-cited papers that share any stray
+        # token with the phrase - "synapse detection electron microscopy"
+        # brought back YOLO, Faster R-CNN and DFT electron-gas papers, none
+        # of which have anything to do with synapses. sort=published had the
+        # same defect for "recent" (see title_matches). Both branches now
+        # rank by relevance and differ only in the from-pub-date filter, so
+        # "cited" here means "relevance-ranked, all time" and "recent" means
+        # "relevance-ranked, post-2021" - is_referenced_by_count is still
+        # recorded per record for later ranking, just not used to select
+        # which records Crossref returns.
+        cited = cr_search(term, rows=rows_per_term)
+        recent = cr_search(term, rows=rows_per_term,
                            filt="from-pub-date:2021-01-01")
+        cited_dropped = recent_dropped = 0
         for w in cited:
             k = wid(w)
+            title = (w.get("title") or [""])[0]
+            if not title_matches(term, title):
+                cited_dropped += 1
+                continue
             if k:
                 by_citation.setdefault(k, {**slim(w),
                                            "found_via": f"search '{term}' by citation"})
         for w in recent:
             k = wid(w)
+            title = (w.get("title") or [""])[0]
+            if not title_matches(term, title):
+                recent_dropped += 1
+                continue
             if k:
                 by_date.setdefault(k, {**slim(w), "found_via": f"search '{term}' by date"})
-        per_term[term] = {"by_citation": len(cited), "by_date": len(recent)}
-        print(f"    {len(cited):3} cited / {len(recent):3} recent  {term[:52]}")
+        per_term[term] = {"by_citation": len(cited), "by_date": len(recent),
+                           "cited_dropped_offtopic": cited_dropped,
+                           "recent_dropped_offtopic": recent_dropped}
+        print(f"    {len(cited):3} cited ({cited_dropped} off-topic) / "
+              f"{len(recent):3} recent ({recent_dropped} off-topic)  {term[:40]}")
     print(f"    pool: {len(by_citation)} by citation, {len(by_date)} by date, "
           f"{len(set(by_citation) & set(by_date))} in both")
     return {"by_citation": by_citation, "by_date": by_date, "per_term": per_term}

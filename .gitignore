@@ -16,3 +16,5 @@ course/decks/marp/out/**/*.pptx
 node_modules/
 _data/seed_retrieval/cache/
 # Raw API responses from the seed retrieval. Regenerable, and large.
+__pycache__/
+*.pyc

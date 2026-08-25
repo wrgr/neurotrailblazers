@@ -83,6 +83,8 @@ items:
     dropdown:
       - title: "The Illustrated Story"
         url: "/book/"
+      - title: "The Neuronauts (Public Story)"
+        url: "/neuronauts/"
       - title: "Learner Personas"
         url: "/avatars/"
       - title: "Frameworks"

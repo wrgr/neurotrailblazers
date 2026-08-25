@@ -12,5 +12,9 @@ layout: default
 <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
 <link rel="canonical" href="{{ page.redirect_to | relative_url }}">
 <script>
-  window.location.replace("{{ page.redirect_to | relative_url }}");
+  // Carry any fragment through the redirect (e.g. /book/#src-17 →
+  // /neuronauts/#src-17) so deep links land on their anchor when the
+  // target still defines it. The meta refresh above stays as the
+  // fragment-less no-JS fallback.
+  window.location.replace("{{ page.redirect_to | relative_url }}" + window.location.hash);
 </script>

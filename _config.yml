@@ -75,6 +75,8 @@ navigation:
     url: "/"
   - title: "Start Here"
     url: "/start-here/"
+  - title: "Neuronauts"
+    url: "/neuronauts/"
   - title: "Core"
     url: "/core/"
   - title: "Tracks"

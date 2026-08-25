@@ -11,6 +11,8 @@ items:
     url: "/"
   - title: "Start Here"
     url: "/start-here/"
+  - title: "Neuronauts"
+    url: "/neuronauts/"
   - title: "Core"
     url: "/core/"
     dropdown:
@@ -81,8 +83,6 @@ items:
   - title: "About"
     url: "/frameworks/"
     dropdown:
-      - title: "The Illustrated Story"
-        url: "/book/"
       - title: "Learner Personas"
         url: "/avatars/"
       - title: "Frameworks"

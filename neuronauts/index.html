@@ -203,7 +203,13 @@ permalink: /neuronauts/
     border-radius: 12px;
     background: #fff;
   }
-  @media (max-width: 520px) { .nn-tl-art { flex-basis: 104px; } .nn-tl-art svg { width: 104px; } }
+  /* On narrow phones the row cannot fit 220px of text plus the artwork,
+     so stack the vignette under its entry instead of overflowing. */
+  @media (max-width: 560px) {
+    .nn-tl-item { flex-direction: column; gap: 0.6rem; }
+    .nn-tl-body { min-width: 0; }
+    .nn-tl-art { flex-basis: auto; }
+  }
   .nn-tl-item::before {
     content: "";
     position: absolute;

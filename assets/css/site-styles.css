@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+/* Native smooth scrolling for fragment links. This replaces a JS click handler
+   in the default layout that called preventDefault() + scrollIntoView(), which
+   never updated location.hash -- so anchor clicks could not be bookmarked,
+   didn't enter browser history, and :target styling (e.g. highlighting a
+   citation's source entry) never activated. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --neural-blue: #2563eb;
   --cerebral-purple: #7c3aed;

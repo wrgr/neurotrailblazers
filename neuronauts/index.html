@@ -115,6 +115,22 @@ permalink: /neuronauts/
     white-space: nowrap;
   }
   .nn-act h2 { margin: 0; font-size: 1.55rem; color: #111827; }
+  /* stream colors: one hue per relay leg, used on badges, the route map,
+     the reorder slopegraph, and the 60-second list */
+  #leg1 .nn-leg-badge { background: #a21caf; }
+  #leg2 .nn-leg-badge { background: #059669; }
+  #leg3 .nn-leg-badge { background: #0891b2; }
+  #leg4 .nn-leg-badge { background: #4f46e5; }
+  #leg5 .nn-leg-badge { background: #ea580c; }
+  #leg6 .nn-leg-badge { background: #be185d; }
+  #leg7 .nn-leg-badge { background: #7c3aed; }
+  .nn-tldr li:nth-of-type(1) strong { color: #a21caf; }
+  .nn-tldr li:nth-of-type(2) strong { color: #059669; }
+  .nn-tldr li:nth-of-type(3) strong { color: #0891b2; }
+  .nn-tldr li:nth-of-type(4) strong { color: #4f46e5; }
+  .nn-tldr li:nth-of-type(5) strong { color: #ea580c; }
+  .nn-tldr li:nth-of-type(6) strong { color: #be185d; }
+  .nn-tldr li:nth-of-type(7) strong { color: #7c3aed; }
   .nn-act .nn-guide {
     font-size: 0.88rem;
     color: #6b7280;
@@ -170,7 +186,24 @@ permalink: /neuronauts/
     border-radius: 2px;
     background: linear-gradient(#7c3aed, #2563eb, #06b6d4);
   }
-  .nn-tl-item { position: relative; padding: 0 0 1.35rem 0.6rem; }
+  .nn-tl-item {
+    position: relative;
+    padding: 0 0 1.35rem 0.6rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .nn-tl-body { flex: 1; min-width: 220px; }
+  .nn-tl-art { flex: 0 0 128px; }
+  .nn-tl-art svg {
+    display: block;
+    width: 128px;
+    height: auto;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+  }
+  @media (max-width: 520px) { .nn-tl-art { flex-basis: 104px; } .nn-tl-art svg { width: 104px; } }
   .nn-tl-item::before {
     content: "";
     position: absolute;
@@ -191,6 +224,31 @@ permalink: /neuronauts/
     font-size: 1.05rem;
   }
   .nn-tl-item p { font-size: 0.95rem; margin: 0.25rem 0 0; line-height: 1.55; }
+  /* big numbers grid (merged from the companion storybook) */
+  .nn-num-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .nn-num {
+    border: 2px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 1.1rem 1rem 0.9rem;
+    text-align: center;
+    background: #fff;
+  }
+  .nn-num .n {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #2563eb;
+  }
+  .nn-num.purple .n { color: #7c3aed; }
+  .nn-num.cyan .n { color: #0891b2; }
+  .nn-num.orange .n { color: #ea580c; }
+  .nn-num .l { font-weight: 600; margin-top: 0.2rem; }
+  .nn-num .d { font-size: 0.82rem; color: #6b7280; margin-top: 0.25rem; line-height: 1.35; }
   /* future cards with evidence badges */
   .nn-future-grid {
     display: grid;
@@ -398,10 +456,25 @@ permalink: /neuronauts/
   }
   .nn-rail a:hover .lbl, .nn-rail a.active .lbl { opacity: 1; }
   .nn-rail a.active .dot { background: #2563eb; box-shadow: 0 0 0 1px #2563eb; }
+  /* Letter-size book rendering: print this page (or print-to-PDF) for a
+     paginated 8.5x11 copy — one act per page-start, panels kept whole. */
+  @page { size: letter; margin: 0.7in; }
   @media print {
     .site-header, footer, .nn-cta, .nn-progress, .nn-rail { display: none; }
+    .neuronauts { max-width: none; padding: 0; font-size: 10.5pt; }
+    .nn-cover { padding-top: 1.5in; }
+    .nn-toc { page-break-before: always; }
+    .nn-toc ol { columns: 2; }
     .nn-act { page-break-before: always; }
+    .nn-panel, .nn-notes, .nn-tl-item, .nn-future-card, .nn-num,
+    .nn-cast-card, .nn-gloss-card, .nn-why-card, .nn-tldr, .nn-baton {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
     .nn-panel { border-color: #999; }
+    .nn-sources li { page-break-inside: avoid; }
+    a { text-decoration: none; color: inherit; }
+    .neuronauts a.srcref, .nn-notes a.srcref { color: #92400e; }
   }
 </style>
 
@@ -690,7 +763,83 @@ permalink: /neuronauts/
     <p class="nn-lede">Here is the whole theory of this page in one paragraph. Everything you have ever thought, remembered, or felt ran along physical wires — real, touchable threads of living cells, thinner than a wisp of spider silk, connected to each other at trillions of tiny junctions. That wiring diagram is called a <strong>connectome</strong>. Nobody has ever seen yours. Nobody has ever seen a complete one for any mammal. And a worldwide community of scientists, engineers, and volunteers is — right now, this decade — building the machines and methods to change that.</p>
     <p>Why is that hard? Because of a brutal mismatch of scales. The wires (axons) can be tenths of a micrometer thick — far below what a light microscope can separate — so the only camera that can trace every wire is an <strong>electron microscope</strong>, which uses beams of electrons instead of light. But an electron microscope sees only a tiny window at a time, and a brain is enormous by comparison. Mapping even a millimeter of brain at wire-level detail means turning tissue into <em>trillions</em> of pixels: the completed cubic millimeter of mouse visual cortex weighed in at roughly two petabytes of images — about two million gigabytes, from a speck the size of a grain of sand <a class="srcref" href="#src-17" style="color:#92400e;font-weight:700;text-decoration:none">[17]</a>.</p>
     <p>So connectomics works like a <strong>relay race</strong>. One piece of brain is the baton. It passes through seven legs — preserved, stained, sliced, imaged, aligned, reconstructed, checked — and each leg transforms it: from tissue, to plastic, to slices, to pictures, to a digital volume, to a wiring diagram, to knowledge. Drop the baton at any leg and everything downstream fails. Run every leg well and you get something science has never had before: the complete circuit diagram of a thinking machine.</p>
-    <p>The Neuronauts will run the relay with you. Then — like all the best fan theories — we'll shuffle the scenes into chronological order and show you the arc: where the field has been, where it is, and where it is going.</p>
+    <p>The Neuronauts will run the relay with you. Here is the whole route in one picture — seven streams, one baton:</p>
+    <div class="nn-panel">
+      <svg viewBox="0 0 900 250" role="img" aria-labelledby="nn-streams-title">
+        <title id="nn-streams-title">A route map drawn as a winding river in seven colored segments, one per relay leg: stop time, slice, image, align, segment, proofread, discover. A block of brain enters at the left and a finished star map emerges at the right.</title>
+        <rect width="900" height="250" fill="#f8fafc"/>
+        <!-- the seven-stream river -->
+        <g fill="none" stroke-width="11" stroke-linecap="round">
+          <path d="M 58 125 C 85 100 105 100 128 112" stroke="#a21caf"/>
+          <path d="M 128 112 C 160 128 190 152 240 138" stroke="#059669"/>
+          <path d="M 240 138 C 290 124 310 96 352 100" stroke="#0891b2"/>
+          <path d="M 352 100 C 400 105 430 145 464 148" stroke="#4f46e5"/>
+          <path d="M 464 148 C 505 152 540 112 576 104" stroke="#ea580c"/>
+          <path d="M 576 104 C 615 96 655 135 688 145" stroke="#be185d"/>
+          <path d="M 688 145 C 725 155 780 130 820 118" stroke="#7c3aed"/>
+        </g>
+        <!-- brain block entering -->
+        <g transform="translate(45 125)">
+          <use href="#nn-brainblock" transform="scale(0.62)"/>
+        </g>
+        <!-- star map emerging -->
+        <g transform="translate(845 112)">
+          <circle r="24" fill="#0f1b3d" stroke="#7c3aed" stroke-width="3"/>
+          <g fill="#fde047">
+            <circle cx="-9" cy="-6" r="2.5"/><circle cx="7" cy="2" r="2.5"/><circle cx="0" cy="10" r="2.5"/><circle cx="9" cy="-9" r="2.5"/>
+          </g>
+          <path d="M -9 -6 L 7 2 L 0 10 M 7 2 L 9 -9" stroke="#67e8f9" stroke-width="1.5" fill="none"/>
+        </g>
+        <!-- stations: circle + number, labels alternating above/below -->
+        <g font-family="'Plus Jakarta Sans',sans-serif" text-anchor="middle">
+          <g transform="translate(128 112)">
+            <circle r="15" fill="#fff" stroke="#a21caf" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#a21caf">1</text>
+            <text y="-38" font-size="13" font-weight="700" fill="#a21caf">Stop time</text>
+            <text y="-23.5" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">fix &amp; stain</text>
+          </g>
+          <g transform="translate(240 138)">
+            <circle r="15" fill="#fff" stroke="#059669" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#059669">2</text>
+            <text y="42" font-size="13" font-weight="700" fill="#059669">Slice</text>
+            <text y="56" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">30–40 nm thin</text>
+          </g>
+          <g transform="translate(352 100)">
+            <circle r="15" fill="#fff" stroke="#0891b2" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#0891b2">3</text>
+            <text y="-28" font-size="13" font-weight="700" fill="#0891b2">Image</text>
+            <text y="-13.5" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">61 beams, petabytes</text>
+          </g>
+          <g transform="translate(464 148)">
+            <circle r="15" fill="#fff" stroke="#4f46e5" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#4f46e5">4</text>
+            <text y="42" font-size="13" font-weight="700" fill="#4f46e5">Align</text>
+            <text y="56" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">rebuild the loaf</text>
+          </g>
+          <g transform="translate(576 104)">
+            <circle r="15" fill="#fff" stroke="#ea580c" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#ea580c">5</text>
+            <text y="-28" font-size="13" font-weight="700" fill="#ea580c">Segment</text>
+            <text y="-13.5" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">AI colors every cell</text>
+          </g>
+          <g transform="translate(688 145)">
+            <circle r="15" fill="#fff" stroke="#be185d" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#be185d">6</text>
+            <text y="42" font-size="13" font-weight="700" fill="#be185d">Proofread</text>
+            <text y="56" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">humans make it true</text>
+          </g>
+          <g transform="translate(820 118)">
+            <circle r="15" fill="#fff" stroke="#7c3aed" stroke-width="4"/>
+            <text y="5" font-size="13" font-weight="800" fill="#7c3aed">7</text>
+            <text y="42" font-size="13" font-weight="700" fill="#7c3aed">Discover</text>
+            <text y="56" font-size="10.5" fill="#64748b" font-family="'Source Sans 3',sans-serif">read the map</text>
+          </g>
+        </g>
+        <text x="450" y="235" text-anchor="middle" font-size="13.5" font-style="italic" fill="#64748b" font-family="'Source Sans 3',sans-serif">Drop the baton at any station and everything downstream fails. These seven colors mark the route for the rest of this page.</text>
+      </svg>
+    </div>
+    <p class="nn-caption">The relay in one map. Each leg below wears its stream color.</p>
+    <p>Then — like all the best fan theories — we'll shuffle the scenes into chronological order and show you the arc: where the field has been, where it is, and where it is going.</p>
   </div>
 
   <!-- ============ MISSION BRIEFING ============ -->
@@ -1256,57 +1405,327 @@ permalink: /neuronauts/
   <div class="nn-act" id="nn-reorder">
     <div class="nn-act-head"><span class="nn-leg-badge">Part Two</span><h2>The reordering: the story so far</h2></div>
     <p class="nn-lede">Here's the trick every great fan theory pulls at the end: take all the scenes you just watched and put them in <em>chronological</em> order. Suddenly you don't see seven separate techniques. You see one story arc, a century and a quarter long — slow, then fast, then unstoppable.</p>
+    <p>Start with the seven streams themselves. The brain-to-map relay runs 1→7 — but history did not build the legs in that order. Watch the streams cross when you sort them by the year each one became an industrial reality:</p>
+    <div class="nn-panel">
+      <svg viewBox="0 0 900 460" role="img" aria-labelledby="nn-reorder-title">
+        <title id="nn-reorder-title">A slope chart. On the left, the seven relay legs in pipeline order. On the right, the same legs sorted by the year each became practical: slicing in 2004, discovery in 2011, alignment in 2012, proofreading in 2014, staining and imaging in 2015, segmentation in 2018. Colored lines cross heavily between the columns.</title>
+        <rect width="900" height="460" fill="#fff"/>
+        <text x="195" y="42" text-anchor="middle" font-size="15" font-weight="800" fill="#334155" font-family="'Plus Jakarta Sans',sans-serif">THE RELAY ORDER</text>
+        <text x="720" y="42" text-anchor="middle" font-size="15" font-weight="800" fill="#334155" font-family="'Plus Jakarta Sans',sans-serif">THE YEAR IT BECAME REAL</text>
+        <!-- crossing streams -->
+        <g fill="none" stroke-width="5" opacity="0.85">
+          <path d="M 305 80 C 450 80 470 300 610 300" stroke="#a21caf"/>
+          <path d="M 305 135 C 450 135 470 80 610 80" stroke="#059669"/>
+          <path d="M 305 190 C 450 190 470 355 610 355" stroke="#0891b2"/>
+          <path d="M 305 245 C 450 245 470 190 610 190" stroke="#4f46e5"/>
+          <path d="M 305 300 C 450 300 470 410 610 410" stroke="#ea580c"/>
+          <path d="M 305 355 C 450 355 470 245 610 245" stroke="#be185d"/>
+          <path d="M 305 410 C 450 410 470 135 610 135" stroke="#7c3aed"/>
+        </g>
+        <!-- left pills -->
+        <g font-family="'Plus Jakarta Sans',sans-serif" font-size="14" font-weight="700" fill="#fff">
+          <g><rect x="90" y="63" width="215" height="34" rx="17" fill="#a21caf"/><text x="197" y="85" text-anchor="middle">1 · Stop time</text></g>
+          <g><rect x="90" y="118" width="215" height="34" rx="17" fill="#059669"/><text x="197" y="140" text-anchor="middle">2 · Slice</text></g>
+          <g><rect x="90" y="173" width="215" height="34" rx="17" fill="#0891b2"/><text x="197" y="195" text-anchor="middle">3 · Image</text></g>
+          <g><rect x="90" y="228" width="215" height="34" rx="17" fill="#4f46e5"/><text x="197" y="250" text-anchor="middle">4 · Align</text></g>
+          <g><rect x="90" y="283" width="215" height="34" rx="17" fill="#ea580c"/><text x="197" y="305" text-anchor="middle">5 · Segment</text></g>
+          <g><rect x="90" y="338" width="215" height="34" rx="17" fill="#be185d"/><text x="197" y="360" text-anchor="middle">6 · Proofread</text></g>
+          <g><rect x="90" y="393" width="215" height="34" rx="17" fill="#7c3aed"/><text x="197" y="415" text-anchor="middle">7 · Discover</text></g>
+        </g>
+        <!-- right entries -->
+        <g font-family="'Source Sans 3',sans-serif" font-size="14.5">
+          <g><circle cx="622" cy="80" r="8" fill="#059669"/><text x="640" y="85"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2004</tspan> Slice — block-face SEM</text></g>
+          <g><circle cx="622" cy="135" r="8" fill="#7c3aed"/><text x="640" y="140"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2011</tspan> Discover — retina proof</text></g>
+          <g><circle cx="622" cy="190" r="8" fill="#4f46e5"/><text x="640" y="195"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2012</tspan> Align — elastic stitching</text></g>
+          <g><circle cx="622" cy="245" r="8" fill="#be185d"/><text x="640" y="250"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2014</tspan> Proofread — EyeWire</text></g>
+          <g><circle cx="622" cy="300" r="8" fill="#a21caf"/><text x="640" y="305"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2015</tspan> Stop time — en-bloc stain</text></g>
+          <g><circle cx="622" cy="355" r="8" fill="#0891b2"/><text x="640" y="360"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2015</tspan> Image — 61-beam SEM</text></g>
+          <g><circle cx="622" cy="410" r="8" fill="#ea580c"/><text x="640" y="415"><tspan font-weight="800" font-family="'Plus Jakarta Sans',sans-serif">2018</tspan> Segment — flood-filling AI</text></g>
+        </g>
+        <text x="450" y="447" text-anchor="middle" font-size="13.5" font-style="italic" fill="#64748b" font-family="'Source Sans 3',sans-serif">Discovery came seventh in the pipeline but second in history — the field proved the payoff before it could afford the whole relay.</text>
+      </svg>
+    </div>
+    <p class="nn-caption">The reorder, drawn. Milestone years: slicing <a class="srcref" href="#src-7">[7]</a>, discovery <a class="srcref" href="#src-19">[19]</a>, alignment <a class="srcref" href="#src-11">[11]</a>, proofreading <a class="srcref" href="#src-13">[13]</a>, staining <a class="srcref" href="#src-6">[6]</a>, imaging <a class="srcref" href="#src-9">[9]</a>, segmentation <a class="srcref" href="#src-12">[12]</a>.</p>
+    <p>Now zoom out from the streams to the whole century:</p>
     <div class="nn-timeline">
       <div class="nn-tl-item">
-        <div class="nn-tl-year">1900 — The theory that started everything</div>
-        <p>Santiago Ramón y Cajal, peering through a microscope and drawing what he saw in ink, argues that the brain is built from <em>separate cells</em> that touch but do not fuse — the "neuron doctrine." If the brain is discrete cells passing signals at junctions, then in principle a wiring diagram exists. The whole rest of this page is people taking that idea seriously. <a class="srcref" href="#src-32">[32]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">1900 — The theory that started everything</div>
+          <p>Santiago Ramón y Cajal, peering through a microscope and drawing what he saw in ink, argues that the brain is built from <em>separate cells</em> that touch but do not fuse — the "neuron doctrine." If the brain is discrete cells passing signals at junctions, then in principle a wiring diagram exists. The whole rest of this page is people taking that idea seriously. <a class="srcref" href="#src-32">[32]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="An ink drawing of a single neuron on parchment, with a pen nib beside it">
+            <rect width="128" height="100" fill="#fdf6e3"/>
+            <g stroke="#1c1917" fill="none" stroke-linecap="round">
+              <circle cx="52" cy="52" r="11" stroke-width="2.5" fill="#fdf6e3"/>
+              <path d="M 46 43 C 38 30 30 28 24 16 M 52 41 C 52 30 46 24 50 12 M 60 45 C 70 34 68 24 78 18 M 62 56 C 76 60 84 56 96 62 C 104 65 108 74 116 76" stroke-width="2.2"/>
+              <path d="M 24 16 l -5 -4 M 24 16 l 6 -3 M 50 12 l -4 -5 M 50 12 l 5 -3 M 78 18 l -2 -6 M 78 18 l 6 -1" stroke-width="1.6"/>
+            </g>
+            <path d="M 96 88 L 112 80 L 116 84 L 102 94 L 95 95 Z" fill="#78350f"/>
+            <circle cx="98" cy="91" r="1.6" fill="#1c1917"/>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">1950s–60s — Circuits have architecture</div>
-        <p>Vernon Mountcastle discovers that cortex is organized in repeating vertical columns; David Hubel and Torsten Wiesel show the visual cortex is built from orderly feature-detecting circuits. The brain isn't a uniform mush — it has <em>circuit designs</em> worth mapping. <a class="srcref" href="#src-33">[33]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">1950s–60s — Circuits have architecture</div>
+          <p>Vernon Mountcastle discovers that cortex is organized in repeating vertical columns; David Hubel and Torsten Wiesel show the visual cortex is built from orderly feature-detecting circuits. The brain isn't a uniform mush — it has <em>circuit designs</em> worth mapping. <a class="srcref" href="#src-33">[33]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A slab of cortex drawn as repeating vertical columns, with an eye above sensing an oriented bar">
+            <rect width="128" height="100" fill="#eff6ff"/>
+            <g transform="translate(14 38)">
+              <rect x="0" y="0" width="100" height="50" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+              <rect x="10" y="6" width="14" height="38" rx="4" fill="#93c5fd"/>
+              <rect x="32" y="6" width="14" height="38" rx="4" fill="#60a5fa"/>
+              <rect x="54" y="6" width="14" height="38" rx="4" fill="#93c5fd"/>
+              <rect x="76" y="6" width="14" height="38" rx="4" fill="#60a5fa"/>
+            </g>
+            <g transform="translate(44 20)">
+              <ellipse cx="0" cy="0" rx="16" ry="9" fill="#fff" stroke="#1e40af" stroke-width="2"/>
+              <circle cx="0" cy="0" r="4.5" fill="#1e40af"/>
+            </g>
+            <line x1="78" y1="10" x2="98" y2="28" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">1986 — The first map ever</div>
-        <p>After well over a decade of tracing by hand and eye, the complete wiring of the worm <em>C. elegans</em> is published: 302 neurons, ~5,000 chemical synapses. The paper is nicknamed "The Mind of a Worm." One animal, fully mapped — and proof that the question can be answered at all. <a class="srcref" href="#src-3">[3]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">1986 — The first map ever</div>
+          <p>After well over a decade of tracing by hand and eye, the complete wiring of the worm <em>C. elegans</em> is published: 302 neurons, ~5,000 chemical synapses. The paper is nicknamed "The Mind of a Worm." One animal, fully mapped — and proof that the question can be answered at all. <a class="srcref" href="#src-3">[3]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A friendly worm whose body carries a chain of mapped nodes, labeled 302 neurons">
+            <rect width="128" height="100" fill="#f0fdfa"/>
+            <path d="M 16 66 C 34 40 54 84 74 58 C 88 40 104 52 112 42" stroke="#0d9488" stroke-width="11" fill="none" stroke-linecap="round"/>
+            <circle cx="112" cy="42" r="9" fill="#0d9488"/>
+            <circle cx="109" cy="39" r="1.8" fill="#fff"/><circle cx="115" cy="39" r="1.8" fill="#fff"/>
+            <g fill="#fde047" stroke="#a16207" stroke-width="1">
+              <circle cx="28" cy="55" r="3.2"/><circle cx="44" cy="62" r="3.2"/><circle cx="60" cy="66" r="3.2"/><circle cx="76" cy="56" r="3.2"/><circle cx="92" cy="48" r="3.2"/>
+            </g>
+            <text x="64" y="92" text-anchor="middle" font-size="13" font-weight="800" fill="#115e59" font-family="'Plus Jakarta Sans',sans-serif">302 neurons</text>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">2004–2005 — The machines wake up, and the field gets a name</div>
-        <p>Serial block-face electron microscopy automates slicing-and-imaging inside one machine, and the word "connectome" is coined — deliberately echoing "genome," another complete map that once sounded impossible. Connectomics becomes a named engineering discipline, not just a heroic effort. <a class="srcref" href="#src-7">[7]</a> <a class="srcref" href="#src-34">[34]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2004–2005 — The machines wake up, and the field gets a name</div>
+          <p>Serial block-face electron microscopy automates slicing-and-imaging inside one machine, and the word "connectome" is coined — deliberately echoing "genome," another complete map that once sounded impossible. Connectomics becomes a named engineering discipline, not just a heroic effort. <a class="srcref" href="#src-7">[7]</a> <a class="srcref" href="#src-34">[34]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A microscope machine with a diamond knife, next to a name tag reading connectome">
+            <rect width="128" height="100" fill="#f8fafc"/>
+            <rect x="14" y="26" width="42" height="52" rx="7" fill="#334155"/>
+            <rect x="24" y="14" width="22" height="16" rx="4" fill="#475569"/>
+            <circle cx="27" cy="66" r="5" fill="#94a3b8"/><circle cx="43" cy="66" r="5" fill="#94a3b8"/>
+            <path d="M 56 44 L 72 36 L 72 52 Z" fill="#a5f3fc" stroke="#0891b2" stroke-width="1.8"/>
+            <g transform="translate(72 58)">
+              <rect x="0" y="0" width="48" height="26" rx="5" fill="#fff" stroke="#dc2626" stroke-width="2"/>
+              <rect x="0" y="0" width="48" height="9" rx="5" fill="#dc2626"/>
+              <text x="24" y="7.5" text-anchor="middle" font-size="6" font-weight="700" fill="#fff" font-family="'Source Sans 3',sans-serif">HELLO my name is</text>
+              <text x="24" y="20" text-anchor="middle" font-size="8.5" font-weight="800" fill="#1f2937" font-family="'Plus Jakarta Sans',sans-serif">connectome</text>
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">2011–2014 — The eye gives the proof of concept</div>
-        <p>In a single issue of <em>Nature</em>, two papers show the future: Bock and colleagues pair functional imaging with EM wiring in visual cortex, while retinal wiring maps begin settling a decades-old debate about how the eye detects motion — with EyeWire's online gamers soon joining as tracing partners. Connectomes officially answer real questions. <a class="srcref" href="#src-36">[36]</a> <a class="srcref" href="#src-19">[19]</a> <a class="srcref" href="#src-24">[24]</a> <a class="srcref" href="#src-13">[13]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2011–2014 — The eye gives the proof of concept</div>
+          <p>In a single issue of <em>Nature</em>, two papers show the future: Bock and colleagues pair functional imaging with EM wiring in visual cortex, while retinal wiring maps begin settling a decades-old debate about how the eye detects motion — with EyeWire's online gamers soon joining as tracing partners. Connectomes officially answer real questions. <a class="srcref" href="#src-36">[36]</a> <a class="srcref" href="#src-19">[19]</a> <a class="srcref" href="#src-24">[24]</a> <a class="srcref" href="#src-13">[13]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="An eye whose retina lights up with a wired circuit and a motion-direction arrow">
+            <rect width="128" height="100" fill="#fefce8"/>
+            <ellipse cx="64" cy="50" rx="46" ry="28" fill="#fff" stroke="#a16207" stroke-width="2.5"/>
+            <circle cx="64" cy="50" r="15" fill="#0ea5e9"/>
+            <circle cx="64" cy="50" r="7" fill="#0f172a"/>
+            <circle cx="60" cy="45" r="2.5" fill="#fff"/>
+            <path d="M 25 60 C 40 72 88 72 103 60" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="4 3"/>
+            <g stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round">
+              <path d="M 34 24 L 58 24"/>
+              <path d="M 58 24 l -7 -5 M 58 24 l -7 5"/>
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">2015 — The chemistry and the slicing catch up</div>
-        <p>En-bloc staining works for big volumes; tape-collecting ultramicrotomes archive thousands of slices; the 61-beam microscope multiplies imaging speed; a saturated reconstruction of mouse neocortex shows dense mapping is possible — while covering only about 0.0002% of a mouse brain, a number that told the field exactly how far it still had to climb. Every leg of the relay is now industrialized. <a class="srcref" href="#src-6">[6]</a> <a class="srcref" href="#src-8">[8]</a> <a class="srcref" href="#src-9">[9]</a> <a class="srcref" href="#src-35">[35]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2015 — The chemistry and the slicing catch up</div>
+          <p>En-bloc staining works for big volumes; tape-collecting ultramicrotomes archive thousands of slices; the 61-beam microscope multiplies imaging speed; a saturated reconstruction of mouse neocortex shows dense mapping is possible — while covering only about 0.0002% of a mouse brain, a number that told the field exactly how far it still had to climb. Every leg of the relay is now industrialized. <a class="srcref" href="#src-6">[6]</a> <a class="srcref" href="#src-8">[8]</a> <a class="srcref" href="#src-9">[9]</a> <a class="srcref" href="#src-35">[35]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A tape reel winding up a ribbon of tissue slices while a fan of electron beams shines from above">
+            <rect width="128" height="100" fill="#ecfdf5"/>
+            <g stroke="#22d3ee" stroke-width="2">
+              <line x1="96" y1="10" x2="82" y2="38"/><line x1="102" y1="10" x2="96" y2="38"/><line x1="108" y1="10" x2="110" y2="38"/><line x1="114" y1="10" x2="122" y2="38"/>
+            </g>
+            <path d="M 16 40 C 40 56 60 68 84 72" stroke="#10b981" stroke-width="4" fill="none"/>
+            <g fill="#fbcfe8" stroke="#be185d" stroke-width="1.4">
+              <rect x="20" y="34" width="16" height="12" rx="2.5" transform="rotate(14 28 40)"/>
+              <rect x="44" y="48" width="16" height="12" rx="2.5" transform="rotate(12 52 54)"/>
+              <rect x="66" y="58" width="16" height="12" rx="2.5" transform="rotate(8 74 64)"/>
+            </g>
+            <circle cx="98" cy="74" r="17" fill="#064e3b"/>
+            <circle cx="98" cy="74" r="6.5" fill="#a7f3d0"/>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">2018–2019 — AI joins the relay</div>
-        <p>Flood-filling networks slash reconstruction error rates; the whole adult fly brain is imaged and released; dense automated reconstruction reveals cortical wiring rules. The bottleneck shifts from tracing to checking. <a class="srcref" href="#src-12">[12]</a> <a class="srcref" href="#src-10">[10]</a> <a class="srcref" href="#src-23">[23]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2018–2019 — AI joins the relay</div>
+          <p>Flood-filling networks slash reconstruction error rates; the whole adult fly brain is imaged and released; dense automated reconstruction reveals cortical wiring rules. The bottleneck shifts from tracing to checking. <a class="srcref" href="#src-12">[12]</a> <a class="srcref" href="#src-10">[10]</a> <a class="srcref" href="#src-23">[23]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A friendly robot pouring color into gray neuron strands, which turn blue, orange, and green">
+            <rect width="128" height="100" fill="#fff7ed"/>
+            <g fill="none" stroke-width="5" stroke-linecap="round">
+              <path d="M 14 88 C 22 62 14 40 24 14" stroke="#2563eb"/>
+              <path d="M 34 88 C 44 66 34 42 46 16" stroke="#ea580c"/>
+              <path d="M 56 88 C 64 64 56 44 66 20" stroke="#059669"/>
+              <path d="M 76 88 C 84 66 78 46 88 24" stroke="#a8a29e"/>
+            </g>
+            <g transform="translate(101 42)">
+              <rect x="-15" y="-8" width="30" height="26" rx="7" fill="#0891b2"/>
+              <circle cx="0" cy="-19" r="10.5" fill="#a5f3fc" stroke="#0e7490" stroke-width="2"/>
+              <circle cx="-3.5" cy="-20" r="1.9" fill="#0f172a"/><circle cx="3.5" cy="-20" r="1.9" fill="#0f172a"/>
+              <path d="M -3 -15.5 Q 0 -13.5 3 -15.5" stroke="#0f172a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <line x1="0" y1="-30" x2="0" y2="-34" stroke="#0e7490" stroke-width="2"/>
+              <circle cx="0" cy="-36" r="2.3" fill="#fbbf24"/>
+              <g transform="translate(-21 4) rotate(-35)">
+                <rect x="-2" y="-14" width="4" height="14" rx="2" fill="#a16207"/>
+                <path d="M -3.5 0 Q 0 6 3.5 0 Z" fill="#2563eb"/>
+              </g>
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item">
-        <div class="nn-tl-year">2020 — The field commits to the mouse</div>
-        <p>The fly "hemibrain" (~25,000 neurons) goes public, and leading connectomists jointly publish "The Mind of a Mouse" — the case that a whole mouse brain connectome, ~1,000× larger than a cubic millimeter, is the right next summit. <a class="srcref" href="#src-16">[16]</a> <a class="srcref" href="#src-27">[27]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2020 — The field commits to the mouse</div>
+          <p>The fly "hemibrain" (~25,000 neurons) goes public, and leading connectomists jointly publish "The Mind of a Mouse" — the case that a whole mouse brain connectome, ~1,000× larger than a cubic millimeter, is the right next summit. <a class="srcref" href="#src-16">[16]</a> <a class="srcref" href="#src-27">[27]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A gray mouse gazes up at a mountain summit marked with a flag">
+            <rect width="128" height="100" fill="#eff6ff"/>
+            <path d="M 58 88 L 92 26 L 126 88 Z" fill="#93c5fd"/>
+            <path d="M 84 42 L 92 26 L 100 42 Z" fill="#eff6ff"/>
+            <g transform="translate(92 26)">
+              <line x1="0" y1="0" x2="0" y2="-14" stroke="#7f1d1d" stroke-width="2.5"/>
+              <path d="M 0 -14 L 12 -10 L 0 -6 Z" fill="#ef4444"/>
+            </g>
+            <g transform="translate(28 74)">
+              <ellipse cx="0" cy="0" rx="20" ry="12" fill="#9ca3af"/>
+              <circle cx="17" cy="-8" r="9.5" fill="#9ca3af"/>
+              <circle cx="13" cy="-16" r="5" fill="#d1d5db"/>
+              <circle cx="21" cy="-9" r="1.8" fill="#1f2937"/>
+              <path d="M -19 4 C -30 6 -34 0 -38 -6" stroke="#9ca3af" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <circle cx="26" cy="-7" r="1" fill="#f472b6"/>
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item milestone">
-        <div class="nn-tl-year">2023 — The funding arrives</div>
-        <p>The NIH BRAIN Initiative launches BRAIN CONNECTS: 11 awards, roughly $150 million over five years, 40+ institutions, aimed at making whole-mammalian-brain connectomics feasible. The complete larval fly connectome is published the same year. <a class="srcref" href="#src-26">[26]</a> <a class="srcref" href="#src-21">[21]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2023 — The funding arrives</div>
+          <p>The NIH BRAIN Initiative launches BRAIN CONNECTS: 11 awards, roughly $150 million over five years, 40+ institutions, aimed at making whole-mammalian-brain connectomics feasible. The complete larval fly connectome is published the same year. <a class="srcref" href="#src-26">[26]</a> <a class="srcref" href="#src-21">[21]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A columned institute building connected by lines to a network of eleven team nodes">
+            <rect width="128" height="100" fill="#faf5ff"/>
+            <g transform="translate(36 30)">
+              <path d="M -26 0 L 0 -16 L 26 0 Z" fill="#7c3aed"/>
+              <rect x="-24" y="0" width="48" height="26" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+              <rect x="-17" y="5" width="6" height="21" fill="#c4b5fd"/>
+              <rect x="-3" y="5" width="6" height="21" fill="#c4b5fd"/>
+              <rect x="11" y="5" width="6" height="21" fill="#c4b5fd"/>
+            </g>
+            <g stroke="#a78bfa" stroke-width="1.6">
+              <line x1="62" y1="44" x2="86" y2="26"/><line x1="62" y1="48" x2="96" y2="44"/><line x1="62" y1="52" x2="90" y2="64"/><line x1="58" y1="58" x2="74" y2="80"/><line x1="50" y1="60" x2="46" y2="82"/><line x1="42" y1="60" x2="22" y2="78"/>
+            </g>
+            <g fill="#7c3aed">
+              <circle cx="86" cy="26" r="5"/><circle cx="96" cy="44" r="5"/><circle cx="90" cy="64" r="5"/><circle cx="74" cy="80" r="5"/><circle cx="46" cy="82" r="5"/><circle cx="22" cy="78" r="5"/>
+              <circle cx="108" cy="16" r="5"/><circle cx="112" cy="62" r="5"/><circle cx="106" cy="82" r="5"/><circle cx="14" cy="60" r="5"/><circle cx="10" cy="38" r="5"/>
+            </g>
+            <text x="64" y="14" text-anchor="middle" font-size="11" font-weight="800" fill="#6d28d9" font-family="'Plus Jakarta Sans',sans-serif">11 teams · ~$150M</text>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item milestone">
-        <div class="nn-tl-year">2024 — The fly and the human fragment</div>
-        <p>FlyWire completes the first wiring diagram of an entire adult brain — 139,255 neurons, with citizen-scientist co-authors — while H01 reconstructs a cubic millimeter of <em>human</em> cortex at nanometer scale: 57,000 cells, 150 million synapses, 1.4 petabytes. <a class="srcref" href="#src-14">[14]</a> <a class="srcref" href="#src-15">[15]</a> <a class="srcref" href="#src-18">[18]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2024 — The fly and the human fragment</div>
+          <p>FlyWire completes the first wiring diagram of an entire adult brain — 139,255 neurons, with citizen-scientist co-authors — while H01 reconstructs a cubic millimeter of <em>human</em> cortex at nanometer scale: 57,000 cells, 150 million synapses, 1.4 petabytes. <a class="srcref" href="#src-14">[14]</a> <a class="srcref" href="#src-15">[15]</a> <a class="srcref" href="#src-18">[18]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A fruit fly beside a small glowing cube of human cortex labeled one cubic millimeter">
+            <rect width="128" height="100" fill="#fdf2f8"/>
+            <g transform="translate(38 46)">
+              <ellipse cx="0" cy="8" rx="13" ry="17" fill="#78350f"/>
+              <circle cx="0" cy="-13" r="9" fill="#92400e"/>
+              <circle cx="-4" cy="-15" r="3.5" fill="#dc2626"/><circle cx="4" cy="-15" r="3.5" fill="#dc2626"/>
+              <ellipse cx="-14" cy="0" rx="14" ry="7" fill="#bae6fd" opacity="0.85" transform="rotate(-28 -14 0)"/>
+              <ellipse cx="14" cy="0" rx="14" ry="7" fill="#bae6fd" opacity="0.85" transform="rotate(28 14 0)"/>
+              <text x="6" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#9d174d" font-family="'Source Sans 3',sans-serif">139,255 neurons</text>
+            </g>
+            <g transform="translate(94 44)">
+              <path d="M -14 -8 L 0 -16 L 14 -8 L 14 10 L 0 18 L -14 10 Z" fill="#fbcfe8" stroke="#be185d" stroke-width="2"/>
+              <path d="M -14 -8 L 0 0 L 14 -8 M 0 0 L 0 18" stroke="#be185d" stroke-width="1.6" fill="none"/>
+              <text x="0" y="34" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9d174d" font-family="'Source Sans 3',sans-serif">human, 1 mm³</text>
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item milestone">
-        <div class="nn-tl-year">2025 — Function meets structure, and the field gets its crown</div>
-        <p>MICrONS publishes the functional connectome of a cubic millimeter of mouse visual cortex — activity and wiring in the same 200,000 cells — and <em>Nature Methods</em> names EM-based connectomics its Method of the Year. <a class="srcref" href="#src-17">[17]</a> <a class="srcref" href="#src-20">[20]</a> <a class="srcref" href="#src-1">[1]</a></p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">2025 — Function meets structure, and the field gets its crown</div>
+          <p>MICrONS publishes the functional connectome of a cubic millimeter of mouse visual cortex — activity and wiring in the same 200,000 cells — and <em>Nature Methods</em> names EM-based connectomics its Method of the Year. <a class="srcref" href="#src-17">[17]</a> <a class="srcref" href="#src-20">[20]</a> <a class="srcref" href="#src-1">[1]</a></p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A crowned cube of brain tissue with a live activity trace running across it">
+            <rect width="128" height="100" fill="#eef2ff"/>
+            <g transform="translate(64 58)">
+              <path d="M -22 -12 L 0 -24 L 22 -12 L 22 14 L 0 26 L -22 14 Z" fill="#c7d2fe" stroke="#4f46e5" stroke-width="2.5"/>
+              <path d="M -22 -12 L 0 0 L 22 -12 M 0 0 L 0 26" stroke="#4f46e5" stroke-width="1.8" fill="none"/>
+              <path d="M -16 8 L -9 8 L -6 1 L -2 14 L 2 5 L 6 8 L 15 8" stroke="#059669" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g transform="translate(64 20)">
+              <path d="M -18 8 L -18 -6 L -9 1 L 0 -10 L 9 1 L 18 -6 L 18 8 Z" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+              <circle cx="-18" cy="-8" r="2.5" fill="#b45309"/><circle cx="0" cy="-12" r="2.5" fill="#b45309"/><circle cx="18" cy="-8" r="2.5" fill="#b45309"/>
+            </g>
+            <text x="64" y="96" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3730a3" font-family="'Source Sans 3',sans-serif">Method of the Year</text>
+          </svg>
+        </div>
       </div>
       <div class="nn-tl-item future">
-        <div class="nn-tl-year">Next — the whole mouse brain, and beyond</div>
-        <p>That's Part Three. Keep reading.</p>
+        <div class="nn-tl-body">
+          <div class="nn-tl-year">Next — the whole mouse brain, and beyond</div>
+          <p>That's Part Three. Keep reading.</p>
+        </div>
+        <div class="nn-tl-art">
+          <svg viewBox="0 0 128 100" role="img" aria-label="A mountain drawn in dashed outline, its summit flag not yet planted">
+            <rect width="128" height="100" fill="#fff7ed"/>
+            <path d="M 10 88 L 52 30 L 74 56 L 96 18 L 122 88 Z" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+            <g transform="translate(96 18)">
+              <line x1="0" y1="0" x2="0" y2="-13" stroke="#9a3412" stroke-width="2" stroke-dasharray="3 3"/>
+              <path d="M 0 -13 L 11 -9.5 L 0 -6 Z" fill="none" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="3 3"/>
+            </g>
+            <text x="64" y="96" text-anchor="middle" font-size="10.5" font-weight="700" fill="#9a3412" font-family="'Source Sans 3',sans-serif">~500 mm³ to go</text>
+          </svg>
+        </div>
       </div>
     </div>
     <p>Notice the shape of that curve: an idea in 1900, a first map after 86 years, and then — once the machines and the AI and the crowds arrived — the leaps came almost yearly: 302 neurons in 1986, about 139,000 by 2024, half a billion synapses per cubic millimeter by 2025. Each jump took new chemistry, new machines, new algorithms, and more people — which is exactly why the next jump is a story about <em>growing a field</em>, not just growing a dataset.</p>
+
+    <h3 style="margin-top:2.5rem">The whole story in eight numbers</h3>
+    <div class="nn-num-grid">
+      <div class="nn-num"><div class="n">86 billion</div><div class="l">neurons in your brain</div><div class="d">each making thousands of connections <a class="srcref" href="#src-38">[38]</a></div></div>
+      <div class="nn-num purple"><div class="n">3.4 billion</div><div class="l">people affected</div><div class="d">nervous-system conditions, the world's #1 cause of ill health <a class="srcref" href="#src-29">[29]</a></div></div>
+      <div class="nn-num cyan"><div class="n">$3 billion+</div><div class="l">BRAIN investment since 2014</div><div class="d">across 1,300+ projects <a class="srcref" href="#src-39">[39]</a></div></div>
+      <div class="nn-num orange"><div class="n">302 → 139,255</div><div class="l">neurons mapped, worm → fly</div><div class="d">1986 vs. 2024 — a 460-fold leap <a class="srcref" href="#src-3">[3]</a> <a class="srcref" href="#src-14">[14]</a></div></div>
+      <div class="nn-num"><div class="n">5,300+</div><div class="l">brain cell types cataloged</div><div class="d">first complete mammalian parts list, 2023 <a class="srcref" href="#src-40">[40]</a></div></div>
+      <div class="nn-num purple"><div class="n">2 petabytes</div><div class="l">of images per mm³</div><div class="d">a sand grain of cortex = 2 million gigabytes <a class="srcref" href="#src-17">[17]</a></div></div>
+      <div class="nn-num cyan"><div class="n">287</div><div class="l">proofreader co-authors</div><div class="d">scientists and citizen volunteers, together <a class="srcref" href="#src-14">[14]</a></div></div>
+      <div class="nn-num orange"><div class="n">~500 mm³</div><div class="l">one whole mouse brain</div><div class="d">the summit CONNECTS is engineering toward <a class="srcref" href="#src-26">[26]</a> <a class="srcref" href="#src-28">[28]</a></div></div>
+    </div>
   </div>
 
   <!-- ============ THE NEXT 5–10 YEARS ============ -->
@@ -1351,6 +1770,11 @@ permalink: /neuronauts/
         <p>Connectome-constrained AI models already predict real neural responses in the fly; the NeuroAI research program argues that brain wiring is a blueprint for more capable, more efficient artificial intelligence — your brain runs on roughly the power of a dim light bulb. The loop is one this program has taught for years: study behavior and activity, image the wiring, extract the circuit motifs, build them into intelligent systems — repeat. <a class="srcref" href="#src-22">[22]</a> <a class="srcref" href="#src-30">[30]</a> <a class="srcref" href="#src-35">[35]</a></p>
       </div>
       <div class="nn-future-card">
+        <span class="nn-badge established">Established</span>
+        <h4>Brain maps already reach the clinic</h4>
+        <p>The broader brain-mapping program this field belongs to is translating now: 2025 brought FDA approval of the first adaptive deep-brain stimulation system for Parkinson's, and a brain–computer interface that restored natural speech to a paralyzed patient. Maps of the brain, at every scale, become medicine. <a class="srcref" href="#src-41">[41]</a> <a class="srcref" href="#src-42">[42]</a></p>
+      </div>
+      <div class="nn-future-card">
         <span class="nn-badge aspirational">Aspirational</span>
         <h4>A healthy-wiring baseline for brain disease</h4>
         <p>Nervous-system conditions affect billions of people and are the world's leading cause of illness and disability. You cannot recognize <em>frayed</em> wiring until you know what intact wiring looks like — a reference connectome of regions like the hippocampus (ground zero for Alzheimer's disease and epilepsy) is the missing baseline. This is a prospect, stated as such: no one has yet diagnosed or treated a disease from a connectome. <a class="srcref" href="#src-29">[29]</a> <a class="srcref" href="#src-31">[31]</a></p>
@@ -1362,6 +1786,7 @@ permalink: /neuronauts/
       </div>
     </div>
 
+    <p style="margin-top:1.5rem">One more reason to believe maps pay for themselves: we've run this experiment before. The Human Genome Project cost about $3.8 billion of federal investment; one industry-commissioned analysis estimated it had generated close to $800 billion in economic activity within two decades — an analogy, quoted with its provenance flagged, but the underlying lesson is solid: a completed map becomes infrastructure, the one-time cost every later discovery reuses for free. <a class="srcref" href="#src-43">[43]</a></p>
     <p style="margin-top:1.5rem">And here is the throughline, one last time. The worm took a handful of heroes fifteen years. The fly took hundreds of people, including gamers, four decades later. The mouse will take <em>thousands</em> — engineers and educators and proofreaders and students who haven't chosen a major yet. The map gets drawn exactly as fast as the field grows the people to draw it. That is not a footnote to this story. That is the plot.</p>
   </div>
 
@@ -1420,13 +1845,19 @@ permalink: /neuronauts/
       <li id="src-28">Whole-mouse-brain scale arithmetic (~500 mm³; hundreds of petabytes of raw imagery at EM resolution): worked derivation in this site's technical course, <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01 — Why map the brain</a>; see also this site's <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">MouseConnects / HI-MC case study</a>.</li>
       <li id="src-29">GBD 2021 Nervous System Disorders Collaborators (2024). Global, regional, and national burden of disorders affecting the nervous system, 1990–2021. <em>The Lancet Neurology</em>, 23(4), 344–381. <a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(24)00038-3/fulltext">thelancet.com</a></li>
       <li id="src-30">Zador, A., et al. (2023). Catalyzing next-generation artificial intelligence through NeuroAI. <em>Nature Communications</em>, 14, 1597.</li>
-      <li id="src-31">The hippocampus as an early site of Alzheimer's pathology and a seizure focus in temporal-lobe epilepsy, and the case for a reference hippocampal connectome: see the HI-MC project materials in <a class="srcref" href="#src-28">[28]</a> and the companion story <a href="{{ '/book/' | relative_url }}">The Last Great Map</a>, chapter "What the map is not."</li>
+      <li id="src-31">The hippocampus as an early site of Alzheimer's pathology and a seizure focus in temporal-lobe epilepsy, and the case for a reference hippocampal connectome — the region HI-MC is mapping first: see the HI-MC project materials in <a class="srcref" href="#src-28">[28]</a>.</li>
       <li id="src-32">Ramón y Cajal, S. (1906). The structure and connexions of neurons. Nobel Lecture, 12 December 1906. <a href="https://www.nobelprize.org/prizes/medicine/1906/cajal/lecture/">nobelprize.org</a></li>
       <li id="src-33">Mountcastle, V. B. (1957). Modality and topographic properties of single neurons of cat's somatic sensory cortex. <em>Journal of Neurophysiology</em>, 20(4), 408–434; Hubel, D. H., &amp; Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. <em>The Journal of Physiology</em>, 160(1), 106–154.</li>
       <li id="src-34">Sporns, O., Tononi, G., &amp; Kötter, R. (2005). The human connectome: A structural description of the human brain. <em>PLoS Computational Biology</em>, 1(4), e42. (The term was coined independently the same year by Patric Hagmann.)</li>
-      <li id="src-35">Gray-Roncal, W. <em>Introduction to Connectomics: Nanoscale Overview</em> — the "Why Connectomics?" lecture, Johns Hopkins University Engineering for Professionals (Module 12, Lecture 3). Data-scale ladder based on analysis by Daniel Berger (assuming ~10 nm imaging resolution, ~1 MB per cubic micron); sectioning and reconstruction figures courtesy of D. Berger, N. Kasthuri, and J. Lichtman. Adapted into this site's <a href="{{ '/modules/module12/' | relative_url }}">Module 12</a>.</li>
+      <li id="src-35">Drawn from W. Gray-Roncal's "Why Connectomics?" lecture notes (WGR lecture series) — the author's own synthesis, which this page's mission briefing, historical arc, and data mountain adapt. The data-scale ladder follows an analysis by Daniel Berger (~10 nm imaging resolution, ~1 MB per cubic micron). Adapted into this site's <a href="{{ '/modules/module12/' | relative_url }}">Module 12</a>.</li>
       <li id="src-36">Bock, D. D., et al. (2011). Network anatomy and in vivo physiology of visual cortical neurons. <em>Nature</em>, 471, 177–182.</li>
       <li id="src-37">Van Essen, D. C., et al. (2013). The WU-Minn Human Connectome Project: An overview. <em>NeuroImage</em>, 80, 62–79.</li>
+      <li id="src-38">Azevedo, F. A. C., et al. (2009). Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain. <em>Journal of Comparative Neurology</em>, 513(5), 532–541.</li>
+      <li id="src-39">National Institutes of Health (2023). New NIH BRAIN Initiative awards move toward solving brain disorders — cumulative investment (&gt;$3B, 1,300+ projects). <a href="https://www.nih.gov/news-events/news-releases/new-nih-brain-initiative-awards-move-toward-solving-brain-disorders">nih.gov</a></li>
+      <li id="src-40">BRAIN Initiative Cell Census Network (December 2023). The first complete cell census and atlas of a mammalian brain — a package of studies in <em>Nature</em>. <a href="https://www.nature.com/immersive/d42859-023-00069-2">nature.com</a></li>
+      <li id="src-41">Medtronic press release (24 February 2025). U.S. FDA approval of the first adaptive deep brain stimulation system for people with Parkinson's. <a href="https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons">news.medtronic.com</a></li>
+      <li id="src-42">NIH Research Matters (2025). Brain-computer interface restores natural speech after paralysis — summary of the NIH-funded study published in <em>Nature Neuroscience</em>, 31 March 2025. <a href="https://www.nih.gov/news-events/nih-research-matters/brain-computer-interface-restores-natural-speech-after-paralysis">nih.gov</a></li>
+      <li id="src-43">Battelle Technology Partnership Practice (2011). <em>Economic Impact of the Human Genome Project</em>. An industry-commissioned analysis (~$3.8B federal investment, estimated ~$800B in economic activity by 2011); quoted here as an analogy, with that provenance flagged.</li>
     </ol>
   </div>
 
@@ -1438,7 +1869,7 @@ permalink: /neuronauts/
       <a class="nn-btn" href="{{ '/start-here/' | relative_url }}">Start Here</a>
       <a class="nn-btn ghost" href="{{ '/tools/connectome-quality/' | relative_url }}">Try Proofreading</a>
       <a class="nn-btn ghost" href="{{ '/datasets/' | relative_url }}">Fly Through a Real Brain</a>
-      <a class="nn-btn ghost" href="{{ '/book/' | relative_url }}">Read the Companion Story</a>
+      <a class="nn-btn ghost" href="{{ '/content-library/' | relative_url }}">Content Library</a>
     </div>
     <p style="font-size:0.85rem;color:#6b7280;margin-top:1.25rem">Print-friendly: use your browser's Print for a paginated copy. Teachers: pair this page with the <a href="{{ '/teaching/module22-public-engagement/' | relative_url }}">public-engagement session kit</a>.</p>
   </div>

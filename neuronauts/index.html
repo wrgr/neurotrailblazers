@@ -325,14 +325,104 @@ permalink: /neuronauts/
   .nn-toc a { color: #2563eb; text-decoration: none; font-weight: 600; }
   .nn-toc a:hover { text-decoration: underline; }
   @media (max-width: 560px) { .nn-toc ol { columns: 1; } }
+  /* short version strip */
+  .nn-tldr {
+    border: 2px solid #a5f3fc;
+    background: #ecfeff;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin: 1.75rem 0;
+  }
+  .nn-tldr h3 {
+    margin: 0 0 0.6rem;
+    font-size: 1.02rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0e7490;
+  }
+  .nn-tldr ol { margin: 0 0 0 1.25rem; padding: 0; }
+  .nn-tldr li { margin-bottom: 0.4rem; font-size: 0.97rem; line-height: 1.55; }
+  .nn-tldr li strong { color: #0f766e; }
+  .nn-tldr .nn-tldr-tail { font-size: 0.95rem; margin: 0.7rem 0 0; }
+  /* scroll progress bar */
+  .nn-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(90deg, #7c3aed, #2563eb, #06b6d4);
+    z-index: 60;
+    pointer-events: none;
+  }
+  /* floating section rail (wide screens only) */
+  .nn-rail {
+    position: fixed;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    z-index: 55;
+    display: none;
+  }
+  @media (min-width: 1280px) { .nn-rail { display: block; } }
+  .nn-rail a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.45rem;
+    padding: 3px 0;
+    text-decoration: none;
+  }
+  .nn-rail .dot {
+    flex: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+    transition: background 0.15s, box-shadow 0.15s;
+  }
+  .nn-rail .lbl {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #475569;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    padding: 0.12rem 0.55rem;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .nn-rail a:hover .lbl, .nn-rail a.active .lbl { opacity: 1; }
+  .nn-rail a.active .dot { background: #2563eb; box-shadow: 0 0 0 1px #2563eb; }
   @media print {
-    .site-header, footer, .nn-cta { display: none; }
+    .site-header, footer, .nn-cta, .nn-progress, .nn-rail { display: none; }
     .nn-act { page-break-before: always; }
     .nn-panel { border-color: #999; }
   }
 </style>
 
 <div class="neuronauts">
+
+  <div class="nn-progress" aria-hidden="true"></div>
+  <nav class="nn-rail" aria-label="Reading position">
+    <a href="#nn-cast"><span class="lbl">The crew</span><span class="dot"></span></a>
+    <a href="#nn-bigidea"><span class="lbl">The big idea</span><span class="dot"></span></a>
+    <a href="#nn-why"><span class="lbl">Why go?</span><span class="dot"></span></a>
+    <a href="#leg1"><span class="lbl">1 · Stop time</span><span class="dot"></span></a>
+    <a href="#leg2"><span class="lbl">2 · Slice</span><span class="dot"></span></a>
+    <a href="#leg3"><span class="lbl">3 · Image</span><span class="dot"></span></a>
+    <a href="#leg4"><span class="lbl">4 · Align</span><span class="dot"></span></a>
+    <a href="#leg5"><span class="lbl">5 · Segment</span><span class="dot"></span></a>
+    <a href="#leg6"><span class="lbl">6 · Proofread</span><span class="dot"></span></a>
+    <a href="#leg7"><span class="lbl">7 · Discover</span><span class="dot"></span></a>
+    <a href="#nn-reorder"><span class="lbl">The story so far</span><span class="dot"></span></a>
+    <a href="#nn-future"><span class="lbl">The next 5–10 years</span><span class="dot"></span></a>
+    <a href="#nn-sources"><span class="lbl">Sources</span><span class="dot"></span></a>
+  </nav>
 
   <!-- Shared cartoon characters: the Neuronauts.
        One base astronaut body, five suits. Referenced by panels below via <use>. -->
@@ -521,6 +611,20 @@ permalink: /neuronauts/
   </div>
 
   <p>In December 2025, the journal <em>Nature Methods</em> — the scorekeeper of how science gets done — named <strong>electron-microscopy-based connectomics</strong> its Method of the Year <a class="srcref" href="#src-1" style="color:#92400e;font-weight:700;text-decoration:none">[1]</a>. That is the field's way of saying: something that used to be impossible has quietly become an industry. This page tells the story of that something — as an expedition, in three parts:</p>
+
+  <div class="nn-tldr">
+    <h3>In a hurry? The whole story in 60 seconds</h3>
+    <ol>
+      <li><strong>Stop time.</strong> Chemicals freeze a piece of brain mid-thought, and heavy-metal stains ink every wire's outline.</li>
+      <li><strong>Slice.</strong> A diamond knife shaves it into thousands of slices, each a few thousand times thinner than a hair.</li>
+      <li><strong>Image.</strong> Electron microscopes photograph every slice — about two million gigabytes per cubic millimeter.</li>
+      <li><strong>Align.</strong> Software reassembles the slices into one seamless 3D volume you can fly through.</li>
+      <li><strong>Segment.</strong> AI colors in every neuron and finds every synapse, wire by wire.</li>
+      <li><strong>Proofread.</strong> Humans — scientists and gamers alike — fix the AI's mistakes and make the map true.</li>
+      <li><strong>Discover.</strong> Scientists read the finished map and settle decades-old debates about how brains compute.</li>
+    </ol>
+    <p class="nn-tldr-tail">That relay has already mapped a worm, a fly, and cubic millimeters of mouse and human brain (<a href="#nn-reorder">the story so far</a>); the next climb is a whole mouse brain (<a href="#nn-future">the next 5–10 years</a>). Every claim is sourced (<a href="#nn-sources">the receipts</a>). Got 25 minutes? The full adventure starts below.</p>
+  </div>
 
   <div class="nn-toc">
     <strong>The route</strong>
@@ -1338,5 +1442,31 @@ permalink: /neuronauts/
     </div>
     <p style="font-size:0.85rem;color:#6b7280;margin-top:1.25rem">Print-friendly: use your browser's Print for a paginated copy. Teachers: pair this page with the <a href="{{ '/teaching/module22-public-engagement/' | relative_url }}">public-engagement session kit</a>.</p>
   </div>
+
+  <script>
+    (function () {
+      var bar = document.querySelector('.nn-progress');
+      var onProgress = function () {
+        var h = document.documentElement;
+        var max = h.scrollHeight - h.clientHeight;
+        var top = window.scrollY || h.scrollTop || 0;
+        bar.style.width = (max > 0 ? (top / max) * 100 : 0) + '%';
+      };
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nn-rail a'));
+      var targets = links.map(function (a) {
+        return document.getElementById(a.getAttribute('href').slice(1));
+      });
+      var onActive = function () {
+        var pos = (window.scrollY || document.documentElement.scrollTop || 0) + window.innerHeight * 0.35;
+        var current = -1;
+        targets.forEach(function (t, i) { if (t && t.offsetTop <= pos) current = i; });
+        links.forEach(function (a, i) { a.classList.toggle('active', i === current); });
+      };
+      var onScroll = function () { onProgress(); onActive(); };
+      document.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      onScroll();
+    })();
+  </script>
 
 </div>

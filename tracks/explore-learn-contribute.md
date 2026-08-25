@@ -4,6 +4,10 @@ layout: page
 permalink: /tracks/explore-learn-contribute/
 description: "Three ways to use NeuroTrailblazers, from public exploration to authentic research contribution."
 content_type: navigation
+track: career-and-community
+pathways:
+  - program design
+  - public engagement
 ---
 
 # Explore → Learn → Contribute

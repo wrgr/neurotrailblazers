@@ -3,7 +3,7 @@ title: "How NeuroTrailblazers Fits BRAIN CONNECTS"
 layout: page
 permalink: /core/connects-ecosystem/
 description: "A learner-facing map of NIH BRAIN CONNECTS, IC3, APEX, Allen Institute resources, project teams, and NeuroTrailblazers."
-content_type: reference
+content_type: core
 ---
 
 # How NeuroTrailblazers Fits BRAIN CONNECTS

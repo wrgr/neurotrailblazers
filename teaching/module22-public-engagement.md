@@ -3,7 +3,7 @@ title: "Module 22 Companion: Public Engagement with Authentic CONNECTS Resources
 layout: page
 permalink: /teaching/module22-public-engagement/
 description: "A public-engagement session kit that extends Module 22 without replacing its evidence-first presentation curriculum."
-content_type: teaching
+content_type: delivery
 ---
 
 # Module 22 Companion: Public Engagement with Authentic CONNECTS Resources

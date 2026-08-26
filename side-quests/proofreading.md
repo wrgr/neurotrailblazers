@@ -34,7 +34,7 @@ and finishing here does not put you further along one.**
   <dt>Time</dt>
   <dd>20&ndash;30 hours, workable in evenings over a few weeks.</dd>
   <dt>Hard prerequisite</dt>
-  <dd>You can tell an axon from a dendrite from a glial process in EM, with a confidence tier attached. If you cannot, do <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05&ndash;07</a> first &mdash; proofreading without that is guessing at speed.</dd>
+  <dd>You can tell an axon from a dendrite from a glial process in EM, with a confidence tier attached. If you cannot, do the <a href="{{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }}">Neuroanatomy for Proofreaders side quest</a> (or <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05&ndash;07</a> in full) first &mdash; proofreading without that is guessing at speed.</dd>
   <dt>Soft prerequisite</dt>
   <dd>Comfort navigating a volume in Neuroglancer. Half an hour with the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a> covers it.</dd>
   <dt>Not required</dt>
@@ -236,6 +236,10 @@ stronger work than a go call with none.
 ## Where this connects
 
 <div class="arch-grid">
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <h3 class="arch-title"><a href="{{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }}">Neuroanatomy for Proofreaders</a></h3>
+    <p class="arch-body">The on-ramp: the EM identification training that makes the hard prerequisite above true, as its own side quest.</p>
+  </article>
   <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
     <h3 class="arch-title"><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a></h3>
     <p class="arch-body">The same material as a taught unit inside Core Concepts &amp; Methods, with the lab this side quest borrows.</p>

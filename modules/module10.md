@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module10/
 description: "Represent connectomes as graphs and interpret network metrics with biological and statistical caution."
 module_number: 10
+image: /assets/images/modules/module10.svg
+image_alt: "Stylized vector art: a network graph with one triangle motif highlighted."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

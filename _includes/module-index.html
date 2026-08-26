@@ -1,4 +1,4 @@
-## 📚 Full Module Index
+<h2>Full Module Index</h2>
 
 <p class="module-filters">
   <label for="stage-select">Stage:</label>
@@ -25,6 +25,7 @@
 {% for mod in site.data.modules %}
   <div class="card module-card stage-{{ mod.stage | downcase | replace: ' ', '-' }}" data-stage="{{ mod.stage }}" data-ccr="{{ mod.ccr | join: ' ' }}">
     {% assign padded_number = mod.number | plus: 0 | prepend: '0' | slice: -2, 2 %}
+    <img class="module-thumb" src="{{ '/assets/images/modules/module' | append: padded_number | append: '.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" width="1200" height="420">
     <a href="{{ '/modules/module' | append: padded_number | append: '/' | relative_url }}" class="module-number-link">{{ padded_number }}. {{ mod.title }}</a>
     <p class="module-description">{{ mod.description }}</p>
   </div>

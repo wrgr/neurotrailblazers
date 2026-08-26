@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module08/
 description: "Design and evaluate connectomics hypotheses using measurable outcomes, statistical logic, and explicit limitations."
 module_number: 8
+image: /assets/images/modules/module08.svg
+image_alt: "Stylized vector art: an observed value standing outside a null distribution."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

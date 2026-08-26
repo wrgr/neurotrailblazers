@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module03/
 description: "Build practical Python/Jupyter skills for reproducible connectomics data exploration."
 module_number: 3
+image: /assets/images/modules/module03.svg
+image_alt: "Stylized vector art: notebook code cells with prompt chevrons and a result sparkline."
 difficulty: "Beginner to Intermediate"
 duration: "4 hours"
 learning_objectives:

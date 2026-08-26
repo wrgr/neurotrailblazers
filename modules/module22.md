@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module22/
 description: "Deliver clear scientific talks and written summaries for technical and mixed audiences without oversimplifying connectomics evidence."
 module_number: 22
+image: /assets/images/modules/module22.svg
+image_alt: "Stylized vector art: speech arcs widening from a speaker to connected listeners."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module18/
 description: "Build reproducible preprocessing workflows for connectomics data, from integrity checks through analysis-ready releases."
 module_number: 18
+image: /assets/images/modules/module18.svg
+image_alt: "Stylized vector art: scattered noisy points passing a sieve into aligned clean rows."
 difficulty: "Intermediate"
 duration: "4-5 hours"
 learning_objectives:

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module25/
 description: "Assemble a capstone portfolio that demonstrates connectomics competencies with evidence, reflection, and iterative feedback."
 module_number: 25
+image: /assets/images/modules/module25.svg
+image_alt: "Stylized vector art: artifacts orbiting and converging on a completed center."
 difficulty: "Advanced"
 duration: "5-6 hours"
 learning_objectives:

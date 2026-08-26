@@ -2932,3 +2932,22 @@ a.arch-card,
   margin: 0.6rem 0 0;
   line-height: 1.5;
 }
+
+/* Module artwork: generated SVG banners (scripts/generate_module_art.rb).
+   The art paints its own dark ground, so it needs no theme handling here. */
+.module-art {
+  margin: 0 0 1.75rem;
+}
+.module-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.module-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.65rem;
+}

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module11/
 description: "Interpret synaptic organization and local circuit motifs from connectomics data with evidence-aware reasoning."
 module_number: 11
+image: /assets/images/modules/module11.svg
+image_alt: "Stylized vector art: two apposed synaptic boutons with vesicles across a cleft."
 difficulty: "Intermediate to Advanced"
 duration: "4 hours"
 learning_objectives:

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module01/
 description: "Launch into connectomics by turning curiosity into testable scientific questions with explicit motivation and boundaries."
 module_number: 1
+image: /assets/images/modules/module01.svg
+image_alt: "Stylized vector art: a question mark drawn in linked nodes resolving into a milestone path beside a neuron."
 difficulty: "Beginner"
 duration: "3-4 hours"
 learning_objectives:

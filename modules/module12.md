@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module12/
 description: "Design scalable data storage, querying, and analysis workflows for petascale connectomics datasets."
 module_number: 12
+image: /assets/images/modules/module12.svg
+image_alt: "Stylized vector art: a chunked isometric data volume with one chunk pulled out."
 difficulty: "Advanced"
 duration: "4-5 hours"
 learning_objectives:

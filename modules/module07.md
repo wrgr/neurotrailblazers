@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module07/
 description: "Develop proofreading strategies that prioritize high-impact corrections and maintain reproducible QC standards."
 module_number: 7
+image: /assets/images/modules/module07.svg
+image_alt: "Stylized vector art: a magnifying lens over a neurite where a boundary decision is marked."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

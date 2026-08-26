@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module21/
 description: "Operationalize reproducibility and FAIR principles for connectomics datasets, code, and releases."
 module_number: 21
+image: /assets/images/modules/module21.svg
+image_alt: "Stylized vector art: a pipeline of linked, openly latched stages."
 difficulty: "Intermediate to Advanced"
 duration: "4-5 hours"
 learning_objectives:

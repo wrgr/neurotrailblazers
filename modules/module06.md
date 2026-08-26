@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module06/
 description: "Learn core segmentation concepts, error modes, and practical correction workflows for connectomics."
 module_number: 6
+image: /assets/images/modules/module06.svg
+image_alt: "Stylized vector art: a tile mosaic with one region flood-filled across tile boundaries."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

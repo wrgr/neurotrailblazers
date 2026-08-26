@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module02/
 description: "Learn the unwritten norms of research practice while using real connectomics datasets responsibly."
 module_number: 2
+image: /assets/images/modules/module02.svg
+image_alt: "Stylized vector art: a faint hidden network threading between the visible grid of coursework."
 difficulty: "Beginner"
 duration: "4 hours"
 learning_objectives:

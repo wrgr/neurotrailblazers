@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module09/
 description: "Extract and interpret morphology and skeleton features to support connectomics analysis and cell-type reasoning."
 module_number: 9
+image: /assets/images/modules/module09.svg
+image_alt: "Stylized vector art: a filled neuron beside its skeletonized centerline twin."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

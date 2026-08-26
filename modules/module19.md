@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module19/
 description: "Apply peer-review practice and research-ethics decision making to real connectomics workflows, claims, and collaborations."
 module_number: 19
+image: /assets/images/modules/module19.svg
+image_alt: "Stylized vector art: two manuscripts exchanging annotated review passes."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

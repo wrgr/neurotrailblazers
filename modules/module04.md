@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module04/
 description: "Build neuroanatomical fluency for interpreting connectomics structures across scales."
 module_number: 4
+image: /assets/images/modules/module04.svg
+image_alt: "Stylized vector art: a neuron with dendritic arbor and a long axon dotted with boutons."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

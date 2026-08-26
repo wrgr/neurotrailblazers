@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module13/
 description: "Apply machine-learning workflows to connectomics features, with explicit controls for data leakage, bias, and interpretability."
 module_number: 13
+image: /assets/images/modules/module13.svg
+image_alt: "Stylized vector art: a layered neural network with one weighted path lit."
 difficulty: "Advanced"
 duration: "4-5 hours"
 learning_objectives:

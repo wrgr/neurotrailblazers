@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module20/
 description: "Build defensible statistical inference workflows for connectomics analyses, from null models to uncertainty reporting."
 module_number: 20
+image: /assets/images/modules/module20.svg
+image_alt: "Stylized vector art: two overlapping distributions with the effect gap bracketed."
 difficulty: "Advanced"
 duration: "4-6 hours"
 learning_objectives:

@@ -57,11 +57,13 @@ CI (`.github/workflows/validate.yml`).
 | `scripts/check_site_links.rb` | Audits internal links in `_site/`. Requires a build first. |
 | `scripts/check_anchor_links.rb` | Audits cross-page fragment links against the ids actually present in target pages. Requires a build first. |
 | `scripts/generate_module_teaching_materials.rb` | Regenerates worksheets, Marp module decks, and module slide pages from the module pages. |
+| `scripts/generate_module_art.rb` | Regenerates the 25 module art banners in `assets/images/modules/` — deterministic vector art, one per module, keyed to pipeline stage. |
 
 **Generated files — do not edit by hand.** `assets/worksheets/moduleNN/`,
 `course/decks/marp/modules/`, and `modules/slides/` are all produced by
 `generate_module_teaching_materials.rb` from the corresponding `modules/moduleNN.md`.
-Edit the module page and re-run the generator; hand edits are overwritten.
+`assets/images/modules/*.svg` is produced by `generate_module_art.rb`.
+Edit the module page (or the art generator) and re-run; hand edits are overwritten.
 
 The generator reads specific sections from each module page: `## Capability target`,
 `## Concept set` (including its `- **Misconception guardrail:**` lines), `## Core

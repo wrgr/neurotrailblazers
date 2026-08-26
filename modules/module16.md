@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module16/
 description: "Create clear, truthful visualizations of connectomics structures, uncertainty, and analysis results for technical communication."
 module_number: 16
+image: /assets/images/modules/module16.svg
+image_alt: "Stylized vector art: a clean chart with an uncertainty band on labeled axes."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

@@ -321,15 +321,18 @@ encountered unforeseen obstacles that required timeline adjustments.
 
 ## Key References
 
-- NIH BRAIN Initiative CONNECTS Program. (2023). Program announcement and funded
-  projects. *National Institutes of Health*.
+- NIH BRAIN Initiative. BRAIN CONNECTS: Comprehensive Centers for Mouse Brain
+  ([RFA-NS-22-048](https://grants.nih.gov/grants/guide/rfa-files/RFA-NS-22-048.html)).
+  *National Institutes of Health*.
 - Lichtman, J. W., & Sanes, J. R. (2008). Ome sweet ome: what can the genome tell us
   about the connectome? *Current Opinion in Neurobiology*, 18(3), 346-353.
 - Lichtman, J. W., Pfister, H., & Shavit, N. (2014). The big data challenges of
   connectomics. *Nature Neuroscience*, 17(11), 1448-1454.
-- MICrONS Consortium. (2021). Functional connectomics spanning multiple areas of mouse
-  visual cortex. *bioRxiv*, 2021.07.28.454025.
-- Dorkenwald, S., et al. (2022). CAVE: Connectome Annotation Versioning Engine.
-  *bioRxiv*.
+- The MICrONS Consortium. (2025). Functional connectomics spanning multiple areas of
+  mouse visual cortex. *Nature*, 641, 435-447.
+  [10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Dorkenwald, S., et al. (2024). CAVE: Connectome Annotation Versioning Engine.
+  *Nature Methods*, 21, 2258-2261.
+  [10.1038/s41592-024-02426-z](https://doi.org/10.1038/s41592-024-02426-z)
 - Amaral, D. G., & Witter, M. P. (1989). The three-dimensional organization of the
   hippocampal formation: a review of anatomical data. *Neuroscience*, 31(3), 571-591.

@@ -90,8 +90,8 @@ To raise confidence, look for cues that are *independent* of the ribosome call:
   head and neck is close to definitive for dendrite.
 - Look for **incoming asymmetric synapses** where this process is postsynaptic — a
   PSD *on this process* means it is receiving, which is dendritic (or somatic).
-- Follow the process toward larger calibre and check whether it thickens toward a
-  soma. Dendrites taper with distance from soma; axons maintain calibre.
+- Follow the process toward larger caliber and check whether it thickens toward a
+  soma. Dendrites taper with distance from soma; axons maintain caliber.
 
 Note the reasoning pattern, which is the transferable skill: **do not stack more
 of the same kind of evidence.** Three microtubule observations are one piece of
@@ -197,7 +197,7 @@ Work in this order. The order matters — cheap, reliable cues first.
 
 **Step 1 — Local geometry.** Diameter and its variation. Boutons are swellings
 connected by thin intervaricose segments; dendritic shafts have relatively smooth
-calibre; spine heads sit on necks.
+caliber; spine heads sit on necks.
 
 **Step 2 — Organelles present, and just as important, organelles *absent*.**
 Ribosomes present → not axon. Glycogen granules → astrocyte. Vesicle cluster →
@@ -249,7 +249,7 @@ Two cues that share a failure mode are one cue.
 
 Genuinely independent cue families:
 
-1. Geometry and calibre profile
+1. Geometry and caliber profile
 2. Organelle content (presence and absence)
 3. Synaptic role
 4. Neighborhood and tissue context

@@ -125,9 +125,9 @@ enough to see your own pattern, and your pattern is more actionable than your sc
 **When you get it wrong, do not just read the answer.** Write the one sentence naming
 *which cue or assumption misled you*. Unit 06's calibration lab makes this its fourth
 step for a reason: most people find a single cue dominates their errors, and a rule
-targeting that one cue fixes more than a general resolution to be careful. "When calibre
+targeting that one cue fixes more than a general resolution to be careful. "When caliber
 is the only available cue, mark uncertain" is a usable rule; "be more careful with
-calibre" is not.
+caliber" is not.
 
 ---
 

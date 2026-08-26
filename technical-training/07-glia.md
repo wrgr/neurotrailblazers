@@ -59,7 +59,7 @@ Take one merge: a fine astrocytic process is fused with a nearby dendrite.
 domain volume, synapse coverage, vascular contact — is also wrong.
 
 **What happens to your analysis:** the false inputs are not random. They are spatially
-local, which means they preferentially connect the neuron to its *neighbours*. A
+local, which means they preferentially connect the neuron to its *neighbors*. A
 motif analysis will see enhanced local clustering; a distance-dependence analysis will
 see inflated short-range connectivity. Again the bias points toward an interesting
 result.
@@ -210,11 +210,11 @@ Work these against the identification protocol in §3, naming the step that deci
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png' | relative_url }}" alt="Glia training visual: overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S01:</strong> Orientation for glia proofreading. Set the stake before you start looking: glia occupy roughly 20–40% of cortical volume, and a glia-neuron merge does not merely add a branch — it drags a neuron’s arbor past synapses it never contacted, so the false-input yield per micrometre of merged path is unusually high.</p>
+    <p class="card-description"><strong>RIV-GLIA S01:</strong> Orientation for glia proofreading. Set the stake before you start looking: glia occupy roughly 20–40% of cortical volume, and a glia-neuron merge does not merely add a branch — it drags a neuron’s arbor past synapses it never contacted, so the false-input yield per micrometer of merged path is unusually high.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png' | relative_url }}" alt="Glia training visual: astrocyte context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S03:</strong> Astrocyte morphology in a synaptic neighbourhood. Read cross-sectional shape before anything else: an astrocytic process is space-filling, taking whatever contour is left over after the neurites pack, where a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.</p>
+    <p class="card-description"><strong>RIV-GLIA S03:</strong> Astrocyte morphology in a synaptic neighborhood. Read cross-sectional shape before anything else: an astrocytic process is space-filling, taking whatever contour is left over after the neurites pack, where a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png' | relative_url }}" alt="Glia training visual: microglia context" style="width:100%; border-radius:8px;">
@@ -290,7 +290,7 @@ merges, at every level, on purpose.
 
 ---
 
-## 5. QA metrics for glia labelling
+## 5. QA metrics for glia labeling
 
 - **Glia–neuron boundary error rate** on a validation subset, reported separately from
   overall segmentation error, because it is a different failure with a different cost.

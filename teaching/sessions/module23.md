@@ -109,7 +109,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes
-behaviour within one session.
+behavior within one session.
 
 ## Exit prompt
 

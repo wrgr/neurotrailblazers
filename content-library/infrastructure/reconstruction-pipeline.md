@@ -158,7 +158,7 @@ demand on the input you cannot scale.
 cost arithmetic, your model's throughput in voxels per GPU-hour, and your pilot's
 measured error rate against your per-neuron proofreading time. The result is a
 GPU-hour figure and a person-hour figure. If the second is larger than your
-programme can staff, the answer is not to proofread faster — it is to change the
+program can staff, the answer is not to proofread faster — it is to change the
 segmentation or the acquisition, upstream, where it is still cheap.
 
 ---

@@ -31,7 +31,7 @@ This site has two layers, and confusing them is the fastest way to get lost in i
 </ul>
 
 **Modes cut across all three** &mdash; you can walk a track alone, in a hosted session,
-or (eventually) inside a research programme. The mode axis is independent of the
+or (eventually) inside a research program. The mode axis is independent of the
 topic axis: any track can be worked in any available mode.
 
 So: *what* you are learning is the track, *how* you are using it is the mode, and

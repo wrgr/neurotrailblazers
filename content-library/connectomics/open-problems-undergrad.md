@@ -75,7 +75,7 @@ Three structural facts make this the right moment:
 1. **The data is public and browser-accessible.** FlyWire (adult female fly
    brain), the Janelia male CNS connectome (the first complete male fly central
    nervous system, brain plus ventral nerve cord with an intact neck connective),
-   MICrONS (a cubic millimetre of mouse visual cortex with co-registered
+   MICrONS (a cubic millimeter of mouse visual cortex with co-registered
    functional imaging — roughly 200,000 cells and over half a billion synapses),
    H01 (a petabyte-scale fragment of human temporal cortex), the larval
    *Drosophila* CNS (3,016 neurons, Winding et al. 2023), and the eight
@@ -151,7 +151,7 @@ their conclusions vary with it.
   planners deciding where to spend human effort. Skills: Python, pandas,
   NetworkX; [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
   and [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}).
-- *A merge-error detector benchmark.* Assemble a labelled set of true merges
+- *A merge-error detector benchmark.* Assemble a labeled set of true merges
   from edit histories (every human split operation marks a former merge error),
   train baseline classifiers on morphology and graph features, and publish the
   benchmark. The field lacks a shared merge-detection benchmark the way
@@ -270,7 +270,7 @@ atlases for the cross-modality angle.
 ## Problem 4 — Graph algorithms and statistics at connectome scale {#problem-4}
 
 **What is open.** Connectome graphs are now large enough (10⁵ nodes, 10⁷–10⁸
-edges) that exact versions of the field's favourite analyses are intractable, and
+edges) that exact versions of the field's favorite analyses are intractable, and
 the statistical foundations are shakier than the literature admits. Three open
 strands. (a) **Combinatorial optimization:** ordering the fly connectome to
 maximize feedforward flow is a minimum-feedback-arc-set problem; FlyWire's open
@@ -332,7 +332,7 @@ is the central open scientific question of the field.
 **Why CONNECTS needs it.** It is the justification for the whole program. If
 function cannot be usefully constrained by structure, a mouse connectome is an
 expensive atlas; if it can, it is a foundation for mechanistic neuroscience and
-disease modelling. Every negative result that sharpens the boundary changes how
+disease modeling. Every negative result that sharpens the boundary changes how
 the next billion dollars of acquisition is prioritized (e.g., how much
 co-registered functional data CONNECTS projects must collect).
 
@@ -404,7 +404,7 @@ CS/data-engineering team.
   CAVE query logs where shareable) to characterize real read patterns, then
   evaluate chunking/sharding schemes against them.
 - *Automated artifact QA.* Train detectors for section folds, staining
-  artifacts, and alignment failures using the labelled examples that exist in
+  artifacts, and alignment failures using the labeled examples that exist in
   public volumes ([Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }})
   is the domain primer). Even a high-recall screener that flags sections for
   human review addresses a named CONNECTS bottleneck.
@@ -430,7 +430,7 @@ These are tractable human-subjects/HCI questions with direct pipeline impact.
 **Why CONNECTS needs it.** Even heavily automated pipelines keep humans in the
 loop for the hard residue, and MouseConnects-scale efforts plan on distributed
 communities — including, explicitly, NeuroTrailblazers-trained students. Every
-percentage point of annotator accuracy and retention changes the labour budget
+percentage point of annotator accuracy and retention changes the labor budget
 of a five-year project. This is also the one problem area where an education-,
 psychology-, or HCI-leaning team has the home advantage.
 
@@ -546,7 +546,7 @@ Answer before reading the answers.
    models already do fairly well on it (75–85% in ConnectomeBench's forced-choice
    setup). A merge produces a plausible-looking chimera; detecting it requires
    noticing that a single object's morphology or connectivity is internally
-   inconsistent, a global judgement. Stakes: an undetected merge fabricates
+   inconsistent, a global judgment. Stakes: an undetected merge fabricates
    edges between unrelated neurons, corrupting the graph silently; an undetected
    split mostly loses edges, a more visible and more recoverable error.
 2. Primarily question 1 (skill match against industrial teams with training

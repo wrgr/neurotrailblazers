@@ -34,7 +34,7 @@ modes:
     what_you_need: "A browser. Public volumes open in Neuroglancer with no account. A few labs suggest Python, but each states a no-code alternative."
     assessment: "Self-scored against the rubric in each unit. Nothing is recorded, submitted, or graded."
     honest_limits:
-      - "You cannot calibrate alone. Self-scored perceptual judgement drifts, and it drifts confidently. The single highest-value thing you can add is one other person to compare calls with."
+      - "You cannot calibrate alone. Self-scored perceptual judgment drifts, and it drifts confidently. The single highest-value thing you can add is one other person to compare calls with."
       - "There is no deadline, and the units that matter most (05-07) are the slowest and least immediately rewarding. Most people who stall, stall there."
       - "Nothing here confers a credential. What it produces is a set of artifacts you can show someone."
     mitigations:
@@ -68,7 +68,7 @@ modes:
     honest_limits:
       - "The kits assume a facilitator who has done the activity themselves. They are not a script for someone encountering the material for the first time in the room."
       - "Timings are for a group that can already navigate a volume. A first session with absolute beginners runs long."
-      - "Sessions are single-module. Sequencing several into a coherent programme is still the facilitator's job; the track pages are the closest thing to a syllabus."
+      - "Sessions are single-module. Sequencing several into a coherent program is still the facilitator's job; the track pages are the closest thing to a syllabus."
     mitigations:
       - "Do the activity yourself first, including the part where you are unsure, and narrate that uncertainty in the room."
       - "Show learners the rubric before they start, not after. It changes what they produce."
@@ -82,11 +82,11 @@ modes:
     short_title: Intensive
     icon: "\U0001F52C"
     status: in_development
-    tagline: "A longer, contributory programme that draws on this material. Not built yet."
-    audience: "Trainees working inside a lab or programme on real data, producing work others will rely on."
+    tagline: "A longer, contributory program that draws on this material. Not built yet."
+    audience: "Trainees working inside a lab or program on real data, producing work others will rely on."
     description: >-
       The intended third mode is an intensive, research-and-contribution focused
-      programme that uses this site as its reference layer rather than its
+      program that uses this site as its reference layer rather than its
       syllabus: a cohort works on live data, contributes proofreading or analysis
       that is actually used, and is assessed on work that leaves the classroom.
       It does not exist yet. This entry is here so the gap is visible rather than

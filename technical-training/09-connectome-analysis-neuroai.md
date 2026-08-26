@@ -157,7 +157,7 @@ Still significant, but the effect size collapsed from 2.9× to 1.4×. **Roughly
 two-thirds of the apparent enrichment was degree heterogeneity.**
 
 **Null 3 — degree- and distance-preserving.** Connection probability falls steeply with
-inter-somatic distance, and reciprocal partners are disproportionately near neighbours.
+inter-somatic distance, and reciprocal partners are disproportionately near neighbors.
 Rewiring while preserving both degree and the empirical distance-probability curve
 gives, say, mean 185, sd 14:
 
@@ -233,7 +233,7 @@ is the direction of the interesting result.
 **4. Cell-type confounding.** If types A and B are both numerous and preferentially
 interconnect, triads containing two A's and one B will be over-represented — and that
 is a type-composition effect, not a wiring motif. Either use a type-preserving null or
-analyse within type.
+analyze within type.
 
 ### The error-sensitivity check you should always run
 
@@ -385,7 +385,7 @@ These are concept and tooling slides from the source decks, several of them hist
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S11-01.png' | relative_url }}" alt="NeuroAI visual: data growth and scale context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S11:</strong> Data growth. In a connectome dataset growth usually means proofreading continued, so a re-run against a later materialization giving different numbers is correct behaviour rather than a bug — provided the version is stated (Unit 04 §2).</p>
+    <p class="card-description"><strong>Module13 L3 S11:</strong> Data growth. In a connectome dataset growth usually means proofreading continued, so a re-run against a later materialization giving different numbers is correct behavior rather than a bug — provided the version is stated (Unit 04 §2).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S14-01.png' | relative_url }}" alt="NeuroAI visual: processing comparison context" style="width:100%; border-radius:8px;">
@@ -509,7 +509,7 @@ etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practi
 
 ## What this unit does not cover
 
-Biophysical modelling, detailed statistical theory for random graphs, and functional
+Biophysical modeling, detailed statistical theory for random graphs, and functional
 data analysis. It also does not cover comparison across imaging modalities — see
 Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 

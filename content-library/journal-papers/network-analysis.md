@@ -94,7 +94,7 @@ treat as uninteresting?**
 
 **Beginner:** The paper that named the field. It argued that neuroscience needed a complete structural map of brain connectivity, and set out what such a map would be and why it would be worth the effort.
 
-**Intermediate:** Sporns et al. proposed the connectome as a research programme, defining it across scales (microscale neurons and synapses, mesoscale populations, macroscale regions and pathways) and arguing that graph-theoretic description would let structural data speak to function.
+**Intermediate:** Sporns et al. proposed the connectome as a research program, defining it across scales (microscale neurons and synapses, mesoscale populations, macroscale regions and pathways) and arguing that graph-theoretic description would let structural data speak to function.
 
 **Advanced:** Read this for the multi-scale framing, which remains the clearest statement of why scale choice is the first and most consequential decision in any connectomics project ([Unit 02](/technical-training/02-brain-data-across-scales/)). Read it also with appropriate distance: the paper's expectation that structure would substantially constrain function has been only partly borne out, and the intervening two decades have made the limits clearer — which is why the current standard is to state explicitly what a structural measurement does *not* establish ([Unit 01 §3](/technical-training/01-why-map-the-brain/)).
 
@@ -117,7 +117,7 @@ treat as uninteresting?**
 
 ### Summaries
 
-**Beginner:** A practical catalogue of the numbers you can compute from a brain network — how clustered it is, how far apart nodes are, which nodes are hubs — together with warnings about how each can mislead.
+**Beginner:** A practical catalog of the numbers you can compute from a brain network — how clustered it is, how far apart nodes are, which nodes are hubs — together with warnings about how each can mislead.
 
 **Intermediate:** The reference companion to the Brain Connectivity Toolbox. It defines degree, clustering, path length, efficiency, modularity, centrality, and small-worldness for binary and weighted, directed and undirected graphs, and discusses normalization and the choice of null models.
 
@@ -171,7 +171,7 @@ treat as uninteresting?**
 
 **Intermediate:** DotMotif provides a declarative domain-specific language for motif specification, including attribute constraints on nodes and edges, and executes queries across backends including in-memory graphs and graph databases. It makes complex motif searches expressible in a few lines and, importantly, makes the search itself a reproducible artifact.
 
-**Advanced:** The methodological value is reproducibility. A motif written in a declarative language is a precise, shareable, re-runnable specification, which removes an entire class of ambiguity from motif papers where the exact pattern searched is often described only in prose. Subgraph isomorphism is NP-hard in general, so pay attention to the practical scaling behaviour and to the attribute constraints that prune the search. Pair it with an explicit null-model strategy: a tool that makes it easy to search for many motifs also makes it easy to accumulate uncorrected multiple comparisons.
+**Advanced:** The methodological value is reproducibility. A motif written in a declarative language is a precise, shareable, re-runnable specification, which removes an entire class of ambiguity from motif papers where the exact pattern searched is often described only in prose. Subgraph isomorphism is NP-hard in general, so pay attention to the practical scaling behavior and to the attribute constraints that prune the search. Pair it with an explicit null-model strategy: a tool that makes it easy to search for many motifs also makes it easy to accumulate uncorrected multiple comparisons.
 
 **Key figures:** DotMotif language syntax; example motif queries; performance across backends.
 
@@ -217,13 +217,13 @@ treat as uninteresting?**
 
 ### Summaries
 
-**Beginner:** A complete wiring diagram of a larval fruit fly brain — around 3,000 neurons and 550,000 connections — small enough that the whole network can be analysed exhaustively rather than sampled.
+**Beginner:** A complete wiring diagram of a larval fruit fly brain — around 3,000 neurons and 550,000 connections — small enough that the whole network can be analyzed exhaustively rather than sampled.
 
 **Intermediate:** The paper presents the full larval *Drosophila* brain connectome and analyses it as a graph: hierarchical clustering of neuron types by connectivity, characterization of feedforward and recurrent pathways, identification of multisensory integration hubs, and comparison of the resulting architecture with artificial network motifs.
 
-**Advanced:** This dataset is the best available testbed for connectome statistics, because it is complete. Most methodological questions — how sensitive is community structure to the synapse threshold, does an apparent motif enrichment survive a distance-preserving null, how stable is a clustering under bootstrap — can be asked here without confounding by incomplete reconstruction, which is impossible in a cubic-millimetre cortical sample. The connectivity-based hierarchical clustering is also a concrete instance of cell typing from connectivity alone, and worth comparing against morphological typing in the same animal.
+**Advanced:** This dataset is the best available testbed for connectome statistics, because it is complete. Most methodological questions — how sensitive is community structure to the synapse threshold, does an apparent motif enrichment survive a distance-preserving null, how stable is a clustering under bootstrap — can be asked here without confounding by incomplete reconstruction, which is impossible in a cubic-millimeter cortical sample. The connectivity-based hierarchical clustering is also a concrete instance of cell typing from connectivity alone, and worth comparing against morphological typing in the same animal.
 
-**Key figures:** Whole-brain connectome overview; connectivity-based clustering; feedforward/recurrent pathway analysis; multisensory integration centres.
+**Key figures:** Whole-brain connectome overview; connectivity-based clustering; feedforward/recurrent pathway analysis; multisensory integration centers.
 
 **Discussion prompts:**
 - What analyses become possible with a complete connectome that a partial one cannot support?
@@ -290,7 +290,7 @@ treat as uninteresting?**
 | Milo 2002 | Establishes that the null must preserve degree |
 | Song 2005 | The physiological motif result that structural work argues with |
 | Sporns 2005 | Why measure networks at all; the multi-scale frame |
-| Rubinov & Sporns 2010 | The measure catalogue, and each measure's sensitivities |
+| Rubinov & Sporns 2010 | The measure catalog, and each measure's sensitivities |
 | Zalesky 2010 | Multiple comparisons over edges, and component-level inference |
 | Matelsky 2021 | Making the motif itself a reproducible specification |
 | Vogelstein 2021 | Model-based inference in place of descriptive statistics |

@@ -108,7 +108,7 @@ them, or note where you nearly did:
 | Time | Segment |
 |---|---|
 | 00:00-06:00 | Framing: the silent bug |
-| 06:00-16:00 | The five-element checklist, modelled |
+| 06:00-16:00 | The five-element checklist, modeled |
 | 16:00-30:00 | Guided practice: audit your own work |
 | 30:00-40:00 | Clean-environment rerun |
 | 40:00-50:00 | Known limitations, written honestly |

@@ -27,7 +27,7 @@ Connectomics infrastructure exists to solve one problem that has no analogue in 
 scientific computing: **the dataset is simultaneously enormous, mutable, and shared.**
 A petabyte of images would be easy if nobody edited it. A collaborative editing system
 would be easy if the objects were small. Connectomics needs both at once, plus
-reproducible analysis on top of an object that changes while you analyse it.
+reproducible analysis on top of an object that changes while you analyze it.
 
 Understanding how that is solved is not optional systems trivia. It determines whether
 your analysis is reproducible, and it is the source of the single most common
@@ -94,7 +94,7 @@ distribution and the maximum, per region. See Unit 03 §3.
 
 **Input:** aligned image.
 **Output:** a per-voxel prediction, same size as the input — either an affinity map
-(probability that neighbouring voxel pairs belong to the same object, typically in 3
+(probability that neighboring voxel pairs belong to the same object, typically in 3
 or more directions) or a boundary map.
 
 This is a dense convolutional network applied over petavoxels. It is the most
@@ -131,7 +131,7 @@ the key to the whole architecture and the next section explains why.
 Agglomeration merges supervoxels into neurons. Approaches include mean-affinity
 agglomeration, learned agglomeration using local shape descriptors, and flood-filling
 networks that grow objects iteratively from seeds. What matters architecturally is
-that the output is *a grouping of immutable atoms*, not a new voxel labelling.
+that the output is *a grouping of immutable atoms*, not a new voxel labeling.
 
 ### Stage 6 — Derived geometry
 
@@ -148,7 +148,7 @@ as cheap, incremental, and per-object.
 **Output:** a synapse table: coordinates, pre/post supervoxel IDs, confidence,
 size/area, and often cleft segmentation.
 
-Modelled as a separate detection problem, usually with its own network. **Store
+Modeled as a separate detection problem, usually with its own network. **Store
 partner identity as supervoxel IDs, not object IDs.** Supervoxel IDs are immutable, so
 when proofreading changes which neuron an object is, the synapse assignment follows
 automatically. Storing object IDs would require rewriting the synapse table on every
@@ -164,7 +164,7 @@ queries, and versioned annotation tables.
 
 ## 2. The core idea: an editable graph over immutable atoms
 
-Naive design: store the segmentation as a labelled volume. Then a proofreader merges
+Naive design: store the segmentation as a labeled volume. Then a proofreader merges
 two neurons and you rewrite… potentially gigabytes of voxels. With hundreds of
 proofreaders editing concurrently, this is unworkable.
 
@@ -210,7 +210,7 @@ timestamp, and written into queryable tables.
 - The version number is a **first-class part of your methods section**, exactly like a
   software version or a genome build.
 - Re-running the same analysis on a later version *will* give different numbers,
-  because proofreading continued. That is correct behaviour, not a bug — but it must
+  because proofreading continued. That is correct behavior, not a bug — but it must
   be visible.
 
 > **Rule.** Every figure you produce records the materialization version, the query
@@ -348,7 +348,7 @@ On 500 GPUs that is roughly 3.5 days of wall clock — and you will run it more 
 once, because the first model version is never the last. Budget for 3–5 full inference
 passes over the project lifetime.
 
-**But the dominant cost is none of the above.** It is **proofreading labour**. At
+**But the dominant cost is none of the above.** It is **proofreading labor**. At
 even a modest few hours of skilled human attention per fully-proofread neuron, a study
 needing 1,000 complete neurons is thousands of person-hours. Compute and storage are
 line items you can negotiate with a cloud vendor. Proofreading is a hiring, training,
@@ -389,7 +389,7 @@ Read these as architecture sketches to check your own mental model against. For 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S08-01.png' | relative_url }}" alt="Scalable analytics context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L1 S08:</strong> Scalable analytics. Weigh whatever scaling story it tells against the cost table in §5: compute and storage are line items you can negotiate with a vendor, and proofreading labour is the dominant cost that no architecture removes.</p>
+    <p class="card-description"><strong>Module13 L1 S08:</strong> Scalable analytics. Weigh whatever scaling story it tells against the cost table in §5: compute and storage are line items you can negotiate with a vendor, and proofreading labor is the dominant cost that no architecture removes.</p>
   </article>
 </div>
 
@@ -441,7 +441,7 @@ one-page plan:
 | **Query correctness** | Runs, unclear result | Correct counts with units | Handles autapses/self-loops, filters by synapse confidence, states the filter |
 | **Storage plan** | Raw only | All stages, with sizes | Retention policy per line, with cold/hot tiering and egress considered |
 | **Compute estimate** | Absent | GPU-days computed | Multiple passes justified; failure/re-run budget included |
-| **Labour estimate** | Absent | Included | Identified as dominant, with assumptions stated and sensitivity noted |
+| **Labor estimate** | Absent | Included | Identified as dominant, with assumptions stated and sensitivity noted |
 | **Tradeoffs** | Generic | Two decisions named | Scientific cost of each decision stated concretely |
 
 <details markdown="1">

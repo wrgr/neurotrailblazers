@@ -29,20 +29,20 @@ content_type: delivery
 Connectomics teaching has a structural problem that most technical curricula do not.
 **The gap between what a learner can be told and what they can do is unusually wide**,
 because the core skills — reading an EM image, judging a segmentation, choosing a null
-model — are *perceptual and judgemental*, not procedural. You cannot transmit them by
+model — are *perceptual and judgmental*, not procedural. You cannot transmit them by
 explanation. A learner who can recite the three criteria for calling a synapse will
 still, on their first real patch, call a tangentially cut membrane a synapse.
 
 Everything below follows from that. The design principle throughout is:
 
-> **Time spent making and comparing judgements beats time spent receiving
-> explanations.** Aim for at least half of contact time on learner judgement with
+> **Time spent making and comparing judgments beats time spent receiving
+> explanations.** Aim for at least half of contact time on learner judgment with
 > immediate comparison against a reference or a peer.
 
 The corollary is uncomfortable and worth stating plainly: a lecture-only delivery of
 this material will feel good, review well, and produce very little transferable
 capability. If you have 60 minutes and can either explain thoroughly or have learners
-make 20 scored judgements, choose the judgements.
+make 20 scored judgments, choose the judgments.
 
 </section>
 
@@ -64,13 +64,13 @@ Every module and technical unit is built to run in this shape:
 | Time | Phase | What must happen |
 |---|---|---|
 | 00:00–08:00 | Framing | State the capability target. Activate prior knowledge with a question, not a recap |
-| 08:00–20:00 | Modelling | Work **one** example aloud, including your own uncertainty. Do not work three cleanly; work one messily |
-| 20:00–38:00 | Guided practice | Learners produce judgements. You circulate and ask about *evidence*, not answers |
+| 08:00–20:00 | Modeling | Work **one** example aloud, including your own uncertainty. Do not work three cleanly; work one messily |
+| 20:00–38:00 | Guided practice | Learners produce judgments. You circulate and ask about *evidence*, not answers |
 | 38:00–50:00 | Debrief | Compare publicly. Target the named misconceptions |
 | 50:00–58:00 | Competency check | Individual, written, against the rubric |
 | 58:00–60:00 | Exit prompt | One thing more confident about, one thing still uncertain |
 
-**The modelling phase is where most facilitators lose the session.** The temptation is
+**The modeling phase is where most facilitators lose the session.** The temptation is
 to present clean examples that make the method look reliable. Do the opposite: choose
 an example where you genuinely have to weigh conflicting evidence, and narrate the
 weighing. Learners calibrate their own standard for "how sure should I be?" almost
@@ -113,7 +113,7 @@ uncertainty is normal.
   'uncertain' is a passing answer and I will say so out loud when someone uses it well."
 - Give a **worked example of the process**, not just the content — including how you
   decided which paper to read first and what you skipped.
-- Scaffold the first judgement heavily, then remove scaffolding fast. Under-challenge
+- Scaffold the first judgment heavily, then remove scaffolding fast. Under-challenge
   is as damaging as over-challenge here.
 - Make office hours **scheduled and normal**, not available on request. "Optional"
   reads as "for people who are struggling" to a learner watching for signals.
@@ -176,10 +176,10 @@ target itself produces a two-tier cohort and is visible to everyone in the room.
 
 ### Grade the reasoning, not the answer
 
-For every judgement task, the artifact is **label + confidence + evidence chain + one
+For every judgment task, the artifact is **label + confidence + evidence chain + one
 alternative considered**. Grade the last three. A correct label with no evidence chain
 should not outscore a well-reasoned incorrect one, and saying so publicly changes
-behaviour within one session.
+behavior within one session.
 
 This also solves the scaling problem: evidence chains can be peer-reviewed reliably
 against a rubric, whereas correctness often cannot be judged by a peer at all.
@@ -233,7 +233,7 @@ Much of the intended audience will work through this material alone. Design for 
 5. Log which rubric row you scored lowest on and target it in the next unit.
 
 **What a lone learner cannot get from the page**, and should seek deliberately:
-calibration against other people's judgements, and exposure to genuinely ambiguous
+calibration against other people's judgments, and exposure to genuinely ambiguous
 cases someone has curated. Both are reasons to join a journal club or a community
 proofreading effort, and it is worth telling learners that directly rather than
 implying the reading is sufficient.

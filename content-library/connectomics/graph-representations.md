@@ -153,15 +153,15 @@ Every EM volume is a box cut out of a brain, and the cut is not random with
 respect to connectivity. This biases graph statistics in a direction you can
 predict and should correct for.
 
-- **Degree is truncated, unevenly.** A cell whose soma sits at the centre of the
+- **Degree is truncated, unevenly.** A cell whose soma sits at the center of the
   volume keeps more of its arbor than one near the face. So measured degree
   correlates with distance from the boundary — an artifact that looks exactly
   like a spatial gradient in connectivity.
 - **Long-range connections are systematically missing.** Local axons stay;
-  projection axons leave. A cubic millimetre of cortex captures local
+  projection axons leave. A cubic millimeter of cortex captures local
   connectivity well and inter-areal connectivity barely at all, which means
   "this circuit is locally recurrent" is nearly guaranteed by the sampling.
-- **The bias is not fixable by normalisation.** You cannot divide it out,
+- **The bias is not fixable by normalization.** You cannot divide it out,
   because you do not know what is missing. What you can do is restrict the node
   set to cells whose relevant arbor is contained, and say so.
 

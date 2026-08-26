@@ -22,7 +22,7 @@ Most learners in this field study alone for most of the time. The
 [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) states the
 constraint that makes that hard here: **the gap between what a learner can be told and
 what they can do is unusually wide**, because the core skills are perceptual and
-judgemental rather than procedural. You cannot read your way to being able to call a
+judgmental rather than procedural. You cannot read your way to being able to call a
 merge error. Everything on this page is designed around that.
 
 This page is deliberately the most mechanical of the four. Each section gives a
@@ -76,7 +76,7 @@ learning fast.
 ## 2. Recognition is not recall, and re-reading exploits the difference
 
 Re-reading a passage makes it fluent. Your brain reads fluency as knowledge. It is not:
-fluency means you can *recognise* the material when it is in front of you, and
+fluency means you can *recognize* the material when it is in front of you, and
 recognition is a much lower bar than producing it when it is not.
 
 This is why re-reading and highlighting feel so productive. They generate the sensation
@@ -88,7 +88,7 @@ Neither generates retrieval.
 1. Finish a section. Close it. Genuinely close it.
 2. Blank page, three minutes, timer on. Write everything you can produce about that
    section: claims, mechanisms, the table's columns, the worked example's numbers.
-3. Reopen. Mark, in a different colour, everything you missed or got wrong.
+3. Reopen. Mark, in a different color, everything you missed or got wrong.
 4. **The marked items are your study list.** Nothing else from that section is.
 
 Do this once and you will find the gap between what you thought you had and what you
@@ -149,7 +149,7 @@ because a summary contains no mechanism and a perturbation question requires one
 
 **Test 3 — Generate the plausible error.** Say what the common mistake is and why it is
 tempting. If you cannot state the attractive wrong answer, you have not mapped the
-space; you have memorised one path through it.
+space; you have memorized one path through it.
 
 **Test 4 — Transfer.** Apply it to a case the source did not cover. Take Unit 08's
 triage logic and rank corrections for an endpoint the unit never mentions.
@@ -196,7 +196,7 @@ material is still fluent and retrieval is easy and worthless.
 Doing twenty axon/dendrite calls, then twenty glia calls, then twenty synapse calls
 produces high in-session accuracy and poor retention and transfer. The high in-session
 accuracy is exactly what makes it seductive: within a block you know what kind of
-problem is coming, so you never practise the hardest step, which is *deciding what kind
+problem is coming, so you never practice the hardest step, which is *deciding what kind
 of problem you are looking at*.
 
 **Concretely, for this site's material:** on your second pass through Units 05–07, do
@@ -277,8 +277,8 @@ cannot close a perceptual gap by reading, any more than you can learn to hear an
 interval by reading about intervals. The
 [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) puts the
 instructor version of this as: if you have 60 minutes and can either explain thoroughly
-or have learners make 20 scored judgements, choose the judgements. Alone, you are both
-parties. Choose the judgements.
+or have learners make 20 scored judgments, choose the judgments. Alone, you are both
+parties. Choose the judgments.
 
 **Julian, specifically.** The [first-generation persona]({{ '/avatars/undergradstudent/' | relative_url }})
 over-reads, and not from laziness — the opposite. Reading is private and cannot be
@@ -312,7 +312,7 @@ answers you gave in journal club. Fifty rows is enough to read.
 |---|---|---|
 | High-confidence accuracy ≈ overall accuracy | Your tiers carry no information; you are marking confidence by mood | Before committing any *high*, write one line: "what would change my mind?" If you cannot name it, it is not high |
 | High-confidence accuracy well below overall | Overconfident on a specific class of item | Find the class. It is usually one cue or one topic; write a rule that forces *uncertain* in exactly that case |
-| Nothing ever marked *high* | Underconfident, which is also a failure — it makes you slow and makes your judgements unusable to a team | Force a quota: at least 40% of calls get a tier. Then score them. The accuracy is usually high, and that is the evidence you need |
+| Nothing ever marked *high* | Underconfident, which is also a failure — it makes you slow and makes your judgments unusable to a team | Force a quota: at least 40% of calls get a tier. Then score them. The accuracy is usually high, and that is the evidence you need |
 | High tier accurate, non-trivial uncertain rate | Well calibrated | Nothing. Raise difficulty until it breaks again |
 
 **Underconfidence is not modesty and this site says so twice.**
@@ -443,7 +443,7 @@ acquisition. Block until you can do each category at all, then shuffle (§5).
 
 **You are studying alone and cannot tell whether your standard is right.** This is the
 one thing the page cannot give you. The Facilitator Guide names it directly: what a lone
-learner cannot get is calibration against other people's judgements and exposure to
+learner cannot get is calibration against other people's judgments and exposure to
 genuinely ambiguous curated cases. Both are reasons to join a
 [journal club]({{ '/technical-training/journal-club/' | relative_url }}) or a community
 proofreading effort, and doing so is a study decision rather than a social one.

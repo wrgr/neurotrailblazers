@@ -77,7 +77,7 @@ then [Unit 08 §3]({{ '/technical-training/08-segmentation-and-proofreading/' | 
 Variation of information, expected run length, edge precision and recall, synapse-centric
 precision and recall, completeness. Each one is a real measurement and each one is blind
 to something. Learn the blind spots in the same pass as the definitions, because the
-characteristic failure here is optimising a dashboard number while the thing your paper
+characteristic failure here is optimizing a dashboard number while the thing your paper
 reports gets worse.
 
 <div class="quest-outcome" markdown="1">
@@ -207,12 +207,12 @@ stronger work than a go call with none.
 
 - **Fixing what looks wrong instead of what matters.** The most common failure by a wide
   margin. Ad hoc correction feels productive and is uncorrelated with impact.
-- **Optimising an aggregate score.** VI and ERL are proxies. Your paper does not report them.
+- **Optimizing an aggregate score.** VI and ERL are proxies. Your paper does not report them.
 - **Proofreading without a version pin.** The corrections are real; the record is not.
 - **Skipping cross-annotator disagreement** because it is uncomfortable. It is the only
   calibration signal available to you.
 - **Treating throughput as performance.** Corrections per hour without an agreement
-  statistic beside it measures speed, not quality — and rewards exactly the wrong behaviour
+  statistic beside it measures speed, not quality — and rewards exactly the wrong behavior
   in anyone being watched.
 
 ## What this side quest does not cover

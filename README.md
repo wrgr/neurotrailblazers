@@ -23,7 +23,7 @@ working in nanoscale connectomics. This repository contains the source for the
 
 | Path | What it holds |
 |---|---|
-| `_data/` | Site data: the connectomics dictionary, concepts, track catalogue, module and journal-paper metadata, expert seed papers. |
+| `_data/` | Site data: the connectomics dictionary, concepts, track catalog, module and journal-paper metadata, expert seed papers. |
 | `course/` | Source material and Marp deck sources; `course/decks/marp/out/` holds rendered HTML and PPTX decks. |
 | `scripts/` | Generators and validators (see below). |
 | `assets/` | Styles, images, notebooks, slides, and generated worksheets. |

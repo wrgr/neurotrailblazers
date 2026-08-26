@@ -9,11 +9,11 @@ entities:
     use_for: ["program intent", "awards", "funding provenance"]
   ic3:
     award: "U24NS139927"
-    role: "integrative connectomics coordinating center"
+    role: "Integrative Connectomics Coordination Center"
     use_for: ["common pipelines", "CONNECTS-KB", "cross-modal integration", "CCFs", "public impact cases"]
   apex:
     award: "U24NS140384"
-    role: "axonal projectome coordinating center"
+    role: "Axonal Projectome EXchange (projectome data hub)"
     use_for: ["primate projectome", "multimodal axonal imaging", "standards", "benchmarking", "outreach"]
   allen:
     role: "scientific resource and education partner"

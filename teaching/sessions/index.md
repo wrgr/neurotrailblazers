@@ -19,7 +19,7 @@ Kits are generated from the module pages. To change one, edit
 `modules/moduleNN.md` and re-run `scripts/generate_module_teaching_materials.rb`.
 
 For the reasoning behind the session design — why half of contact time should be
-learner judgement rather than explanation, how to differentiate across the learner
+learner judgment rather than explanation, how to differentiate across the learner
 personas, and what to do when a session goes wrong — see the
 [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
 

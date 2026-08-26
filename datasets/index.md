@@ -67,18 +67,18 @@ content_type: core
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: High-throughput Imaging for Mouse Connectomics (HI-MC)</a></h3>
+        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: the Center for High-throughput Integrative Mouse Connectomics (HI-MC)</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress (2023-2028)</span>
         </div>
       </div>
-      <p>A flagship $40M NIH BRAIN CONNECTS effort to reconstruct <strong>10&nbsp;mm³</strong> of mouse hippocampal formation at nanometer resolution&mdash;the most ambitious connectomics project ever undertaken.</p>
+      <p>A flagship NIH BRAIN CONNECTS effort to reconstruct <strong>10&nbsp;mm³</strong> of mouse hippocampal formation at synaptic resolution&mdash;the most ambitious connectomics project ever undertaken.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Mouse (C57BL/6)</li>
         <li><strong>Target Volume:</strong> 10&nbsp;mm³</li>
         <li><strong>Estimated Size:</strong> &gt;10 PB</li>
-        <li><strong>Resolution:</strong> 8 nm isotropic</li>
+        <li><strong>Resolution:</strong> Synaptic (nanoscale EM)</li>
       </ul>
       <div class="dataset-actions">
 

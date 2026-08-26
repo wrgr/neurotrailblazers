@@ -68,7 +68,7 @@ content_type: core
     <p>
       MouseConnects represents the most ambitious connectomics effort to date, 
       aiming to reconstruct 10 mm³ of mouse hippocampal formation at nanometer resolution. 
-      This $40M NIH BRAIN CONNECTS project demonstrates how modern neuroscience combines advanced imaging, 
+      This flagship NIH BRAIN CONNECTS project demonstrates how modern neuroscience combines advanced imaging, 
       machine learning, and massive computational resources to unlock the secrets of memory circuits.
     </p>
     

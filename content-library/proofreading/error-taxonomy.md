@@ -294,8 +294,8 @@ than by frequency, which is not:
 | **Identity** | Very high per instance | Very poor | High, and often introduced *by* proofreading |
 
 The asymmetry that matters is between the second and third columns: **the errors
-that are easy to see are the cheap ones**. A segmentation tuned to minimise
-visible error is tuned to maximise the error that corrupts connectivity.
+that are easy to see are the cheap ones**. A segmentation tuned to minimize
+visible error is tuned to maximize the error that corrupts connectivity.
 
 ### What to measure on your own volume
 

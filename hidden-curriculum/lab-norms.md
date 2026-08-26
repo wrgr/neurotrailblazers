@@ -18,7 +18,7 @@ communication scripts, a mentor support map, and an ethics commitment, delivered
 can.** The playbook is the artifact; this page is not a substitute for it.
 
 This page picks up where Module 02 stops. Its Part B gives you three script templates
-and asks you to customise them. What it does not do — because a worksheet cannot — is
+and asks you to customize them. What it does not do — because a worksheet cannot — is
 say *why each clause is in the script*, what happens when you drop one, and how the
 scenarios it lists actually play out. That is what follows.
 
@@ -50,9 +50,9 @@ reverses the effect: it reads as flailing rather than as narrowing.
 with the analysis") into a bounded one. Unbounded requests are not refused, they are
 deferred, and deferral is indistinguishable from refusal on a deadline.
 
-**"Could you [specific request]"** — name the *size* of the favour you want. "Point me
+**"Could you [specific request]"** — name the *size* of the favor you want. "Point me
 at the right function", "look at this for five minutes", "tell me if this whole approach
-is wrong". People say yes to bounded favours and postpone unbounded ones.
+is wrong". People say yes to bounded favors and postpone unbounded ones.
 
 **A fifth clause Module 02 does not include, and should:**
 
@@ -71,7 +71,7 @@ one:
 > number than guess."
 
 Answers vary enormously between labs and people — that is the point. Once you have a
-number, honour it in both directions. Asking after two hours because two hours was the
+number, honor it in both directions. Asking after two hours because two hours was the
 agreed threshold is following an instruction, not admitting weakness, and you can say so
 in the message: *"this is the two-hour mark we agreed."*
 
@@ -89,7 +89,7 @@ If your model of asking questions was formed in a classroom, asking means admitt
 were not paying attention. In research it means the opposite: a question is a report on
 the state of a shared problem. Nobody announces the switch.
 
-And the fear is not irrational. Some environments do penalise questions, and telling
+And the fear is not irrational. Some environments do penalize questions, and telling
 someone their worry is imaginary when it is not is worse than useless. Calibrate by
 observation in your first month: who asks, in what venue, and what happens next. If
 senior people ask questions in public and nothing bad follows, the environment is safe
@@ -161,7 +161,7 @@ if someone writes the list. Usually that has to be you.
 
 **Lab meeting is a rehearsal for review, not an examination.** The audience is trying to
 find the hole in the argument because that is the service they are providing. Someone
-attacking your null model is doing you a favour that a reviewer would otherwise do
+attacking your null model is doing you a favor that a reviewer would otherwise do
 eighteen months later, in writing, to an editor.
 
 **"Any questions?" at the end of a talk usually means "we are at time".** It is a
@@ -228,7 +228,7 @@ process the moment you give them details. Both are legitimate. But the differenc
 determines whether you still have a choice afterwards, and you cannot un-tell someone.
 Ask first, every time, and ask it as a neutral procedural question, because it is one.
 
-**Write things down as they happen.** Dated notes, factual, no characterisation — what
+**Write things down as they happen.** Dated notes, factual, no characterization — what
 was said, when, who was present. Keep them somewhere you control rather than on the lab
 drive or, if the issue involves the institution, on institutional accounts.
 Contemporaneous notes are worth vastly more than a reconstruction six months later.
@@ -344,7 +344,7 @@ survivable, and several versions of it end with people trusting you more than be
 This is the instruction people find hardest and it is the one that matters. Somebody may
 be building on the wrong number *right now*. The cost of the error is a function of
 elapsed time, not of the state of your repair work. Waiting until you have a clean fix
-so that you can deliver the bad news alongside the good news is optimising for your own
+so that you can deliver the bad news alongside the good news is optimizing for your own
 comfort at their expense.
 
 ### The four-part script
@@ -366,7 +366,7 @@ Worked, in this field's terms:
 
 **Why there is no apology in position one.** An apology at the front makes the listener
 manage your feelings before they can act on the information, which delays the only part
-that is time-critical. Apologise once, briefly, at the end, and then stop; repeated
+that is time-critical. Apologize once, briefly, at the end, and then stop; repeated
 apology transfers the work of reassuring you onto the person you have just inconvenienced.
 
 ### Then convert it into a protocol change
@@ -392,8 +392,8 @@ acted on, that has become a research-integrity question and belongs at rung 3.
 
 ## The five-minute version
 
-- Agree a stuck-time threshold with your supervisor in week one, then honour it.
-- Ask in the public channel. Include what you tried, and the size of the favour.
+- Agree a stuck-time threshold with your supervisor in week one, then honor it.
+- Ask in the public channel. Include what you tried, and the size of the favor.
 - Send five lines after every meeting where something was decided.
 - Bring a recommendation, not just a problem.
 - Report bad news early. Report mistakes before they are fixed.

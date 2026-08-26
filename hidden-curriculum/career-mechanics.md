@@ -136,7 +136,7 @@ round.
 **Appeals exist and are rarely used.** An appeal is for a demonstrable error: a
 reviewer asserted something factually wrong about your method, or reviewed a version
 you did not submit. It is not for disagreement about importance. Editors will read a
-short, specific, unemotional appeal; they will not reopen a taste judgement.
+short, specific, unemotional appeal; they will not reopen a taste judgment.
 
 **Preprints change the timeline, not the process.** Posting a preprint puts a dated,
 citable version on the record while review runs. Journal policies on preprints vary, so
@@ -167,8 +167,8 @@ name; ask to be named:
 > say on everything I write."
 
 Naming matters because a named co-review is a record — it goes to the editor and it
-belongs on your CV — and an unnamed one is invisible labour. The scoped offer ("I'd
-draft the methods section") makes it cheap to accept rather than a favour.
+belongs on your CV — and an unnamed one is invisible labor. The scoped offer ("I'd
+draft the methods section") makes it cheap to accept rather than a favor.
 [Module 19]({{ '/modules/module19/' | relative_url }}) covers what to write once you are
 in the chair.
 
@@ -222,7 +222,7 @@ hold that job and will tell you a number.
 
 A CV is not a record of your life. It is a **claim-evidence document**, skimmed in
 somewhere between thirty and ninety seconds by a person whose immediate task is to make
-a large pile smaller. Everything follows from that reading behaviour.
+a large pile smaller. Everything follows from that reading behavior.
 
 **What the reader looks at, roughly in order:** where you are now and for how long;
 whether there is a first-author output and where it sits; whether the dates are
@@ -276,7 +276,7 @@ Listed, it is context. Hidden, it is an unexplained gap.
 ## 5. How collaborations form, and what one costs you
 
 **How they form.** Almost never from a broadcast offer to collaborate. They form when
-one person states a specific unmet need out loud and another person recognises that
+one person states a specific unmet need out loud and another person recognizes that
 they have the thing. This is the entire mechanism, and it is why
 [Module 23]({{ '/modules/module23/' | relative_url }})'s advice to open with a concrete
 one-line project framing is not small talk — a specific opener is what makes recognition
@@ -322,7 +322,7 @@ has told you something useful for free.
 
 Maya, in the [graduate persona]({{ '/avatars/gradstudent/' | relative_url }}), is the
 one this happens to. She is the bridge person, so people ask her for method help
-constantly, and the help arrives as a favour and departs as an acknowledgement. Repeated
+constantly, and the help arrives as a favor and departs as an acknowledgement. Repeated
 enough, it is a serious tax on her own first-author work.
 
 > "I can't take on the full analysis this term. What I can do is a two-hour session where
@@ -362,7 +362,7 @@ care costs at home while you are away.
   ones.
 - **Volunteering at the meeting**, which at some societies waives registration.
 
-Do not take any deadline from this page. The rule that generalises: **the money deadline
+Do not take any deadline from this page. The rule that generalizes: **the money deadline
 is earlier than the abstract deadline, and both are earlier than you think.** When you
 decide to target a meeting, spend one hour on its website finding the award deadlines
 and put them in the calendar before you write a word of the abstract.
@@ -386,7 +386,7 @@ To the PI or, better, to the departmental administrator, who actually knows:
 > card."
 
 The moves: you have already done the work of finding the rate, so this is not an
-open-ended request. You ask about **the mechanism**, not for a favour, which makes it a
+open-ended request. You ask about **the mechanism**, not for a favor, which makes it a
 process question an administrator answers all day. *"I'd rather set it up now"* gives a
 reason that requires no disclosure of your finances. You are entitled to say more than
 that if you want to, but nothing here requires you to.
@@ -398,7 +398,7 @@ that if you want to, but nothing here requires you to.
 Not as consolation. As a list of places where knowing the mechanism converts an
 invisible disadvantage into an ordinary task.
 
-| The mechanism | Who it quietly favours | What closes the gap |
+| The mechanism | Who it quietly favors | What closes the gap |
 |---|---|---|
 | Position funding is undiscussed | People with a parent or family friend who has held a grant and explains the term structure | The script in §1, asked once a year |
 | Peer review is invisible until you are an author | People whose supervisor showed them a decision letter as a trainee | Ask to read one complete review file (§2) |

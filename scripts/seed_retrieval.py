@@ -33,7 +33,7 @@ the date-sorted pass in Stage B exists to counterbalance. Open-access status is
 not available from Crossref and is recorded as not retrieved rather than guessed.
 
 What it does NOT do, deliberately: decide which papers belong, assign areas or
-tiers, or write summaries. Those are judgement, and judgement is the clean run's
+tiers, or write summaries. Those are judgment, and judgment is the clean run's
 job. This produces the candidate pool it judges.
 
 Everything is cached to disk by URL, so a re-run is cheap and an interrupted run
@@ -441,7 +441,7 @@ def pagerank(graph: dict[str, set], damping: float = 0.85, iters: int = 40) -> d
 
 def betweenness(adj: dict[str, set], sample: list[str] | None = None) -> dict[str, float]:
     """Brandes' algorithm, unweighted. `sample` limits the sources for speed;
-    the result is then an estimate and is labelled as one."""
+    the result is then an estimate and is labeled as one."""
     nodes = list(adj)
     sources = sample if sample is not None else nodes
     bc = dict.fromkeys(nodes, 0.0)

@@ -36,7 +36,7 @@ content_type: navigation
       </tr>
       <tr>
         <td><strong>Coverage</strong></td>
-        <td>The whole programme, including research practice, communication, ethics, and career development.</td>
+        <td>The whole program, including research practice, communication, ethics, and career development.</td>
         <td>The technical arc only: motivation, scales, imaging, infrastructure, ultrastructure, classification, glia, proofreading, analysis.</td>
       </tr>
       <tr>

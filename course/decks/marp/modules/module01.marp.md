@@ -61,7 +61,7 @@ Write one connectomics study question with measurable structural outputs and one
 - **Instructor script:** "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
 - **C. elegans** (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
 - **FlyWire whole-brain** (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
-- **MouseConnects HI-MC** (ongoing): scaling to mammalian cortex, the challenge of petascale data.
+- **MouseConnects HI-MC** (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
 - After each case study, ask: "What question drove this project?" Write answers on board.
 - **Instructor script:** "Now it is your turn. Take 5 minutes to write down the broadest brain question you care about. Do not filter." (5 min silent writing)
 - "Now narrow: what specific circuit or region relates to your question? What structural measurement would you need?" (5 min revision)

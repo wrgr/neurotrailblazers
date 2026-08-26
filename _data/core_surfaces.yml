@@ -14,7 +14,7 @@ surfaces:
       Long-form reference documents at instructor depth: neuroanatomy,
       ultrastructure, imaging, infrastructure, cell types, connectomics,
       proofreading and case studies. Each entry runs a full argument with worked
-      examples, misconceptions, and real references, rather than summarising one.
+      examples, misconceptions, and real references, rather than summarizing one.
     reach_for_it_when: "You need the depth behind a claim a unit made in one sentence."
   - slug: dictionary
     title: Connectomics dictionary
@@ -33,7 +33,7 @@ surfaces:
     size: "200 papers with discussion prompts"
     icon: "\U0001F4F0"
     summary: >-
-      The literature organised by topic, each entry stating what the paper
+      The literature organized by topic, each entry stating what the paper
       established, what it did not establish, and the specific thing worth
       arguing with. Discussion prompts are written for a group but work alone.
     reach_for_it_when: "You want to judge a claim, or you are looking for the paper behind a method."
@@ -62,7 +62,7 @@ surfaces:
   - slug: datasets
     title: Datasets
     url: /datasets/
-    size: "Access guide, workflow, catalogue"
+    size: "Access guide, workflow, catalog"
     icon: "\U0001F4BE"
     summary: >-
       What public volumes exist, what each can and cannot answer, how to get

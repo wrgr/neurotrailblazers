@@ -51,7 +51,7 @@ When the feeling arrives, write down the specific thing you did not know.
 Not dramatic. That is why it goes unaddressed.
 
 - You have a question and you do not ask it. Then someone else asks it and it turns out to have been a good question.
-- You do extra preparation for a meeting that others walk into cold — and read your own thoroughness as evidence you are behind, rather than as unpaid labour you are doing to feel safe.
+- You do extra preparation for a meeting that others walk into cold — and read your own thoroughness as evidence you are behind, rather than as unpaid labor you are doing to feel safe.
 - You wait to be certain before speaking, so you speak late or not at all. Meanwhile the norm in the room is to think out loud at 60% confidence.
 - You attribute your successes to luck or to the problem being easy, and your failures to yourself. Other people's successes get the reverse treatment.
 - You do not put your name on things.
@@ -121,9 +121,9 @@ Some environments are genuinely hostile, and some are hostile specifically to pe
 - You are asked to prove basic competence repeatedly, well past the point where it has been demonstrated.
 - Your contributions get reattributed, more than once, and correcting it is treated as the problem.
 - People leave, and the ones who leave say similar things on the way out.
-- The behaviour is known and the response is that you should manage around it.
+- The behavior is known and the response is that you should manage around it.
 
-If several of those hold, the thing to internalise is that **staying is not a measure of your worth, and leaving is not a failure of resilience.** Grit is a real construct and it is also routinely used to move responsibility for a bad environment onto the person suffering it. This site's own [evidence base]({{ '/education/models.html' | relative_url }}) hedges that literature deliberately; hold the same line about yourself.
+If several of those hold, the thing to internalize is that **staying is not a measure of your worth, and leaving is not a failure of resilience.** Grit is a real construct and it is also routinely used to move responsibility for a bad environment onto the person suffering it. This site's own [evidence base]({{ '/education/models.html' | relative_url }}) hedges that literature deliberately; hold the same line about yourself.
 
 Practical steps, in order: document contemporaneously, find one person outside the situation who can sanity-check your read, identify what you need from the environment to finish what you are doing, and treat exit as one legitimate option among several rather than as the last resort. [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) covers the mechanics of recourse and what protection it does and does not offer.
 
@@ -134,7 +134,7 @@ Practical steps, in order: document contemporaneously, find one person outside t
 <details markdown="1">
 <summary>You leave a lab meeting feeling out of your depth. What is the first thing to do?</summary>
 
-Write down the specific thing you did not know — before the feeling generalises into a conclusion about yourself.
+Write down the specific thing you did not know — before the feeling generalizes into a conclusion about yourself.
 
 Nine times out of ten there is a nameable item: a term, a convention, a piece of context about the project's history. Once it is named it is a task, and a task is a different object from a verdict.
 
@@ -161,7 +161,7 @@ If it is a gap, the useful move is to name your own version of it: the thing you
 
 **Waiting to feel ready.** Recover: pick one of the five contributions above and do it this week. The feeling is downstream of the act, not upstream.
 
-**Doing invisible extra preparation and treating it as evidence you are behind.** Recover: notice it is unpaid labour. Sometimes the right response is to do less of it and speak at the confidence level the room actually uses.
+**Doing invisible extra preparation and treating it as evidence you are behind.** Recover: notice it is unpaid labor. Sometimes the right response is to do less of it and speak at the confidence level the room actually uses.
 
 **Assuming everyone else's path was linear.** Recover: ask three people how they got here. This is the cheapest intervention on this page and among the most effective.
 
@@ -177,6 +177,6 @@ Clinical anxiety and depression, which are real, common in research populations,
 
 - [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) — the specific unwritten rules whose absence produces most of this feeling
 - [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) — the machinery that people with academic families absorbed for free
-- [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) — when the problem is someone else's behaviour
+- [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) — when the problem is someone else's behavior
 - [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) — telling improvement from familiarity, which is the other thing that gets misread as inadequacy
 - [Learner personas]({{ '/avatars/' | relative_url }}) — Julian and Amir are the two cases this page splits

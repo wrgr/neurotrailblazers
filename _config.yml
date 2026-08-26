@@ -1,6 +1,6 @@
 # NeuroTrailblazers - Jekyll Configuration
 title: "NeuroTrailblazers"
-description: "Illuminating Pathways for Trailblazing Neuroscience Researchers - A curriculum and mentorship platform for nanoscale connectomics discovery"
+description: "Illuminating Pathways for Trailblazing Neuroscience Research(ers) - A curriculum and mentorship platform for nanoscale connectomics discovery"
 baseurl: ""
 url: "https://neurotrailblazers.org"
 
@@ -95,7 +95,7 @@ navigation:
 
 # Grant and program information
 grant_info:
-  program: "NIH CONNECTS"
+  program: "NIH BRAIN CONNECTS"
   grant: "Mouse Connectome Project"
   funding_agency: "National Institutes of Health"
   focus: "connectome quality and dissemination"
@@ -104,7 +104,7 @@ grant_info:
 tagline_lines:
   - "We power breakthroughs by developing and deploying top research talent."
   - "Our research incubators equip students and mentors with the tools, guidance, and experience to accelerate innovation across cutting-edge fields such as neuroscience, AI, and decision science."
-  - "Neurotrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the CONNECTS community and beyond."
+  - "NeuroTrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the BRAIN CONNECTS community and beyond."
 
 # Color palette
 colors:

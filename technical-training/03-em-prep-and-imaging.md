@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "03 EM Prep and Imaging"
-description: "The tissue-to-image-stack chain in practical detail: fixation and staining chemistry, sectioning, imaging parameters, and an artifact catalogue mapped to downstream reconstruction cost."
+description: "The tissue-to-image-stack chain in practical detail: fixation and staining chemistry, sectioning, imaging parameters, and an artifact catalog mapped to downstream reconstruction cost."
 permalink: /technical-training/03-em-prep-and-imaging/
 slug: 03-em-prep-and-imaging
 track: core-concepts-methods
@@ -25,7 +25,7 @@ content_type: path
 
 **The governing fact of this unit:** acquisition quality sets a *ceiling* on
 reconstruction quality that no amount of downstream machine learning or proofreading
-labour can raise. A fold destroys the tissue. A missing section destroys the
+labor can raise. A fold destroys the tissue. A missing section destroys the
 continuity. You can annotate around damage, but you cannot recover what was never
 imaged. This is why acquisition QA is not a formality — it is the highest-leverage QC
 in the entire pipeline, and it is the one most often deferred.
@@ -110,7 +110,7 @@ without catastrophic charging.
 - **Weak membrane contrast** — thin or interrupted membrane outlines. *Downstream
   cost:* the dominant cause of automated **merge errors**, because the network cannot
   find a boundary that is barely there. This is the single most expensive prep failure.
-- **Staining gradient with depth** — the block edge is well stained, the centre is
+- **Staining gradient with depth** — the block edge is well stained, the center is
   pale, because reagents did not penetrate. Common in blocks that are too large.
   *Downstream cost:* segmentation quality varies systematically with position, which
   looks like a biological gradient if you are not careful.
@@ -122,7 +122,7 @@ without catastrophic charging.
 
 **What it does.** Water is replaced by solvent (graded ethanol or acetone), then by
 epoxy resin (Epon/Araldite, LX-112, Durcupan, Spurr's), which is polymerized to a
-solid block that can be cut at tens of nanometres.
+solid block that can be cut at tens of nanometers.
 
 **The unavoidable cost:** dehydration shrinks tissue, typically on the order of
 5–20% linearly depending on protocol. This is systematic, not random. **Every absolute
@@ -153,7 +153,7 @@ parallel.
 
 **Block-face (SBEM).** Image the block face, then shave off a slice with a diamond
 knife inside the chamber, repeat. FIB-SEM substitutes an ion beam that mills a few
-nanometres at a time, giving isotropic voxels.
+nanometers at a time, giving isotropic voxels.
 
 - *Advantage:* no section handling means no lost sections and dramatically better
   z-alignment. FIB-SEM's isotropy is the best tracing condition available.
@@ -204,7 +204,7 @@ someone says a 1 mm³ volume takes "about a year", this is the arithmetic behind
 
 <details markdown="1">
 <summary>Your images show good contrast at the block edges and washed-out membranes in
-the centre of every section. Which step failed, and what is the fix?</summary>
+the center of every section. Which step failed, and what is the fix?</summary>
 
 **Staining penetration** (§1.2). The reagents — most likely osmium, TCH, or lead —
 did not reach the block interior. The tell is that the gradient follows *block
@@ -223,7 +223,7 @@ stage that produced it.
 
 ---
 
-## 2. Artifact catalogue with downstream cost
+## 2. Artifact catalog with downstream cost
 
 This is the reference table to keep open while doing QA. The right-hand columns are
 what turn "the data looks bad" into a decision.
@@ -233,18 +233,18 @@ what turn "the data looks bad" into a decision.
 | **Lost section** | A z-gap; structures discontinuous across one z index, volume-wide | Section lost during collection | Every process crossing that z must be bridged by inference | **Data loss** — unrecoverable |
 | **Fold** | Dark band with duplicated/compressed tissue, usually linear | Section wrinkled on collection | Tissue in the fold is unusable; segmentation splits along it | **Data loss** in the folded strip |
 | **Tear / crack** | Sharp-edged gap, often following a vessel | Dehydration or sectioning stress | Local loss; false boundaries at edges | **Data loss**, localized |
-| **Knife chatter** | Periodic bands, fixed spacing, perpendicular to cutting direction | Knife or block vibration | Adds false boundaries; raises **split** rate | **Labour** — proofreadable |
-| **Compression** | Section shorter along cutting axis than expected | Knife compresses the section | Systematic geometric distortion; must be corrected in alignment | **Labour**, plus measurement bias |
-| **Charging** | Bright streaks or smears trailing the scan direction; local distortion | Non-conductive surface accumulating electrons | Model confidence collapses locally; **splits** | **Labour** |
-| **Curtaining** (FIB-SEM) | Vertical stripes parallel to milling direction | Uneven milling rate | Texture noise; degrades boundary detection | **Labour** |
-| **Weak membrane contrast** | Faint or interrupted membrane outlines | Understaining | **Merge errors** — the expensive kind | **Labour**, high |
-| **Precipitate** | Small very dark irregular particles | Staining chemistry | False synapse detections; minor false boundaries | **Labour**, low |
-| **Contamination / debris** | Foreign objects, often out of focus | Handling, chamber contamination | Local obstruction | **Labour**, low |
+| **Knife chatter** | Periodic bands, fixed spacing, perpendicular to cutting direction | Knife or block vibration | Adds false boundaries; raises **split** rate | **Labor** — proofreadable |
+| **Compression** | Section shorter along cutting axis than expected | Knife compresses the section | Systematic geometric distortion; must be corrected in alignment | **Labor**, plus measurement bias |
+| **Charging** | Bright streaks or smears trailing the scan direction; local distortion | Non-conductive surface accumulating electrons | Model confidence collapses locally; **splits** | **Labor** |
+| **Curtaining** (FIB-SEM) | Vertical stripes parallel to milling direction | Uneven milling rate | Texture noise; degrades boundary detection | **Labor** |
+| **Weak membrane contrast** | Faint or interrupted membrane outlines | Understaining | **Merge errors** — the expensive kind | **Labor**, high |
+| **Precipitate** | Small very dark irregular particles | Staining chemistry | False synapse detections; minor false boundaries | **Labor**, low |
+| **Contamination / debris** | Foreign objects, often out of focus | Handling, chamber contamination | Local obstruction | **Labor**, low |
 | **Beam damage** | Bubbling, mass loss, progressive contrast change | Excess dose | Degradation that worsens with re-imaging | **Data loss** if severe |
-| **Misalignment / drift** | Structures shift between adjacent sections | Stitching or registration failure | **False branch points**, synapse mislocalization | **Labour**, correctable by re-alignment |
-| **Seam visibility** | Intensity step at tile boundaries | Stitching / illumination correction failure | Boundary artifacts along a regular grid | **Labour**, correctable |
+| **Misalignment / drift** | Structures shift between adjacent sections | Stitching or registration failure | **False branch points**, synapse mislocalization | **Labor**, correctable by re-alignment |
+| **Seam visibility** | Intensity step at tile boundaries | Stitching / illumination correction failure | Boundary artifacts along a regular grid | **Labor**, correctable |
 
-**The cost distinction matters.** A *labour* artifact means your reconstruction will
+**The cost distinction matters.** A *labor* artifact means your reconstruction will
 be correct, eventually, after paying for it in proofreading hours or better
 algorithms. A *data loss* artifact means some biological question is unanswerable in
 that region, permanently. Report them separately. A QA report that gives one quality
@@ -380,7 +380,7 @@ penetration or geometry. Without per-tile timestamps you cannot ask the question
 
 ## Visual context set
 
-These are context slides rather than QA specimens; the artifact catalogue in §2 is what you take to a real volume. Use each panel to rehearse the diagnostic question that runs through this unit — which coordinate system does a defect live in: block position, anatomy, or acquisition time?
+These are context slides rather than QA specimens; the artifact catalog in §2 is what you take to a real volume. Use each panel to rehearse the diagnostic question that runs through this unit — which coordinate system does a defect live in: block position, anatomy, or acquisition time?
 
 <div class="cards-grid">
   <article class="card">
@@ -389,7 +389,7 @@ These are context slides rather than QA specimens; the artifact catalogue in §2
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput sectioning context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput sectioning. Section handling is where lost sections, folds, wrinkles, and knife chatter originate (§1.4). Ask which of those the depicted approach is exposed to, then sort each one into the data-loss or the labour column of the artifact table.</p>
+    <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput sectioning. Section handling is where lost sections, folds, wrinkles, and knife chatter originate (§1.4). Ask which of those the depicted approach is exposed to, then sort each one into the data-loss or the labor column of the artifact table.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S10-01.png' | relative_url }}" alt="Imaging pipeline transition visual" style="width:100%; border-radius:8px;">
@@ -417,13 +417,13 @@ not use a curated tutorial view; navigate to arbitrary coordinates.
    sections). Convenience sampling finds clean regions and will make you conclude the
    volume is flawless.
 2. **At each location**, scroll through at least 20 consecutive z sections. Record:
-   any artifacts from the §2 catalogue, membrane contrast on a 1–5 scale with a stated
+   any artifacts from the §2 catalog, membrane contrast on a 1–5 scale with a stated
    anchor for each level, and any z-continuity failures.
-3. **Classify each artifact** as *data loss* or *labour*, with a one-line
+3. **Classify each artifact** as *data loss* or *labor*, with a one-line
    justification.
 4. **Localize.** Give coordinates. An artifact report without coordinates cannot be
    acted on.
-5. **Estimate impact.** For each labour-class artifact, estimate the additional
+5. **Estimate impact.** For each labor-class artifact, estimate the additional
    proofreading burden — even crudely ("adds roughly one extra split to fix per
    100 µm of axon traced through this region"). State your assumption.
 6. **Compute the acquisition budget** for this volume from its published voxel size
@@ -437,8 +437,8 @@ not use a curated tutorial view; navigate to arbitrary coordinates.
 | | Not yet | Proficient | Strong |
 |---|---|---|---|
 | **Sampling** | Convenience locations | Stated sampling rule, followed | Rule justified, and coverage bias acknowledged |
-| **Identification** | "Image looks noisy" | Artifacts named from the catalogue | Root cause proposed, with the coordinate-system reasoning that supports it |
-| **Cost classification** | Absent | Data-loss vs labour assigned | Distribution considered (scattered vs clustered), not just count |
+| **Identification** | "Image looks noisy" | Artifacts named from the catalog | Root cause proposed, with the coordinate-system reasoning that supports it |
+| **Cost classification** | Absent | Data-loss vs labor assigned | Distribution considered (scattered vs clustered), not just count |
 | **Localization** | Prose only | Coordinates given | Machine-readable defect list a pipeline could consume |
 | **Impact** | Not attempted | Qualitative | Quantified with stated assumptions |
 | **Recommendations** | Generic | Tied to observations | Tied to observations *and* costed against the tradeoff triangle |
@@ -458,7 +458,7 @@ also a live demonstration of why annotation protocols need calibration sessions
 before scaling.
 
 **Reporting a single global quality number.** Recover: report per-region and
-per-section distributions, and always separate data loss from labour.
+per-section distributions, and always separate data loss from labor.
 
 **Chasing SNR instead of contrast.** A noisy image with crisp membranes segments
 better than a clean image with faint ones. Recover: measure membrane CNR specifically,
@@ -482,7 +482,7 @@ than by ability.
 
 From this unit:
 
-- **Separate data loss from labour when you report quality.**
+- **Separate data loss from labor when you report quality.**
   One quality score conceals the only distinction the project actually needs. This is the difference between "expensive to fix" and "unanswerable forever".
 
 - **Report the distribution, not the count.**
@@ -507,7 +507,7 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 
 - [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}) — full protocol detail and chemistry
 - [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — beam physics, TEM vs SEM, contrast mechanisms
-- [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — extended catalogue with images
+- [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — extended catalog with images
 - [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }}) — metrics, dashboards, and gate design
 
 ## Course links

@@ -138,7 +138,7 @@ assumption with known exceptions. So the claim is not "excitatory".
 > — [Unit 01 §3]({{ '/technical-training/01-why-map-the-brain/' | relative_url }})
 
 **Invisible to whom.** Anyone trained to write confidently. Years of schooling reward
-the assertive sentence and penalise the hedged one; scientific writing inverts that, and
+the assertive sentence and penalize the hedged one; scientific writing inverts that, and
 nobody announces the inversion. A first-generation researcher who has been told
 throughout their education to "be more confident in your writing" is following the last
 instruction they were given.
@@ -303,7 +303,7 @@ sample large enough to contain tail cases.
 A mean registration residual of 3 µm over a whole volume can hide a 40 µm failure in one
 corner.
 
-**Invisible to whom.** Anyone whose statistical training emphasised summary over
+**Invisible to whom.** Anyone whose statistical training emphasized summary over
 structure. A mean is the socially expected number to report, and it is the wrong one
 whenever the failure is local — which, in volume EM, it usually is.
 
@@ -318,9 +318,9 @@ distribution, not the count.
 [Unit 02 §4]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }}) and
 [Unit 03 §3]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}).
 
-### 16. Separate data loss from labour when you report quality
+### 16. Separate data loss from labor when you report quality
 
-A *labour* artifact means the reconstruction will be correct eventually, after paying
+A *labor* artifact means the reconstruction will be correct eventually, after paying
 for it in proofreading hours. A *data loss* artifact means some biological question is
 permanently unanswerable in that region.
 
@@ -379,7 +379,7 @@ more certain, and the feeling is the problem.
 staining-dependent cues — the single most common reasoning error in annotation.
 
 **Do this.** Use the five independent families — geometry, organelle content, synaptic
-role, neighbourhood context, long-range continuity — and require two from different
+role, neighborhood context, long-range continuity — and require two from different
 families before calling high confidence. The rule's real value is that it is
 *checkable*: a reviewer can look at an evidence chain and see whether it draws on one
 family or two.
@@ -407,7 +407,7 @@ rates a hundred times, recompute the statistic, report the spread as an error ba
 
 **Invisible to whom.** Anyone who has not watched a senior person do this and survive.
 Nobody volunteers a check capable of killing their own result until they have seen it
-modelled, which makes this norm almost purely a function of who supervised you.
+modeled, which makes this norm almost purely a function of who supervised you.
 
 **Absence looks like.** A clean effect size with no band, and a reviewer who runs the
 check mentally and stops believing the paper.
@@ -530,7 +530,7 @@ and on the record.
 **Invisible to whom.** Anyone taught that accuracy is symmetric. Every exam you have
 taken weighted all mistakes equally; almost no real measurement does.
 
-**Absence looks like.** An annotator quietly favouring one error type and never saying
+**Absence looks like.** An annotator quietly favoring one error type and never saying
 so, which is indistinguishable from carelessness to anyone reading the output.
 
 **Do this.** State the asymmetric loss function you are applying and why. "I bias toward

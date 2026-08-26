@@ -39,7 +39,7 @@ before citing them** — dataset sizes in particular change as proofreading cont
 | ***C. elegans*** (White et al. 1986; Cook et al. 2019; Witvliet et al. 2021) | 302 neurons; whole animal; a developmental series across maturation | ssTEM | The complete-nervous-system reference case. Witvliet's series is the best available data on how connectivity changes with development | WormWiring, WormAtlas |
 | **Larval *Drosophila* brain** (Winding et al. 2023) | ~3,000 neurons; ~550,000 synapses; whole brain | ssTEM | A whole brain small enough for exhaustive graph analysis; bilateral matching studies | CATMAID instances; published supplements |
 | ***Drosophila* hemibrain** (Scheffer et al. 2020) | ~25,000 neurons; ~20 million synapses; central brain | FIB-SEM, near-isotropic 8 nm | Cell-type census; the cleanest large connectome for analysis teaching, because isotropy makes tracing quality high | neuPrint |
-| **FAFB / FlyWire** (Zheng et al. 2018; Dorkenwald et al. 2024) | Whole adult brain; ~139,000 neurons; ~54.5 million synapses | ssTEM, 4 × 4 × 40 nm | The first whole-brain connectome of a behaviourally complex animal; community-proofread | FlyWire (registration required); CAVE |
+| **FAFB / FlyWire** (Zheng et al. 2018; Dorkenwald et al. 2024) | Whole adult brain; ~139,000 neurons; ~54.5 million synapses | ssTEM, 4 × 4 × 40 nm | The first whole-brain connectome of a behaviorally complex animal; community-proofread | FlyWire (registration required); CAVE |
 | ***Drosophila* male adult nerve cord (MANC)** | ~23,000 neurons | FIB-SEM | Motor circuits; connecting brain to periphery | neuPrint |
 
 ### Vertebrate
@@ -52,7 +52,7 @@ before citing them** — dataset sizes in particular change as proofreading cont
 | **MICrONS** (Allen Institute, Baylor, Princeton; 2025 release) | ~1 mm³ mouse visual cortex; ~200,000 cells; ~500 million synapses | ssTEM, 4 × 4 × 40 nm, **co-registered with in-vivo two-photon calcium imaging** | The reference functional-connectomics dataset. The co-registration is what makes it unique | CAVE / `caveclient`; MicronsBinder notebooks |
 | **H01 human cortex** (Shapson-Coe et al. 2024) | ~1 mm³ human temporal cortex; ~57,000 cells; ~150 million synapses; ~1.4 PB | ssTEM, ~4 × 4 × 30 nm | Human tissue at synapse resolution; species comparison | Google/Lichtman lab public release; Neuroglancer |
 | **Larval zebrafish whole brain** (Hildebrand et al. 2017) | Whole brain, larval | ssEM | Whole-vertebrate-brain scale in a tractable organism | Published resource |
-| **MouseConnects / HI-MC** (NIH BRAIN CONNECTS) | Scaling toward whole mouse brain | Volume EM | The current flagship scaling effort; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | Programme resources |
+| **MouseConnects / HI-MC** (NIH BRAIN CONNECTS) | Scaling toward whole mouse brain | Volume EM | The current flagship scaling effort; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | Program resources |
 
 ### Choosing among them
 
@@ -69,7 +69,7 @@ before citing them** — dataset sizes in particular change as proofreading cont
 > **Before proposing new acquisition, check this table.** A large fraction of good
 > connectomics questions can be answered by re-analysis of existing public data. The
 > cost difference is not marginal: acquiring a new mm-scale volume is a multi-year,
-> multi-million-dollar programme, while re-analysing one is a compute bill and your
+> multi-million-dollar program, while re-analyzing one is a compute bill and your
 > time. Work the comparison out for your own question with Unit 03's cost arithmetic
 > before assuming you need new data. See Unit 02's common errors.
 
@@ -230,7 +230,7 @@ years and are still cited that way.
 - The MICrONS Consortium (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435-447. [10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
 - Shapson-Coe A, Januszewski M, Berger DR, et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
 
-*MouseConnects / HI-MC is an in-progress BRAIN CONNECTS programme rather than a
+*MouseConnects / HI-MC is an in-progress BRAIN CONNECTS program rather than a
 released dataset; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }})
 for its current state. Tool entries in §2 link to their own documentation, which
 is the citable source for a version.*

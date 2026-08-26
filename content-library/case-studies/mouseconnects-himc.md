@@ -3,8 +3,8 @@ layout: page
 title: "MouseConnects and HI-MC"
 permalink: /content-library/case-studies/mouseconnects-himc/
 description: >
-  A comprehensive case study of the MouseConnects project and its HI-MC (Hippocampal
-  Connectome) initiative — an NIH BRAIN Initiative CONNECTS-funded effort to map the
+  A comprehensive case study of the MouseConnects project and HI-MC (the Center for
+  High-throughput Integrative Mouse Connectomics) — an NIH BRAIN CONNECTS-funded effort to map the
   synaptic connectome of the mouse hippocampus across ~10 mm³, representing the
   largest connectomics undertaking to date and a flagship project for NeuroTrailblazers.
 topics:
@@ -38,7 +38,7 @@ micro_lesson_id: ml-case-mouseconnects
 reference_images:
   - src: /assets/images/content-library/case-studies/mouseconnects-himc/target-volume.png
     alt: "MouseConnects HI-MC target volume showing hippocampal subregions CA1, CA3, and dentate gyrus"
-    caption: "MouseConnects HI-MC: NIH CONNECTS flagship project targeting 10 mm³ of mouse hippocampus spanning CA1, CA3, and dentate gyrus."
+    caption: "MouseConnects HI-MC: NIH BRAIN CONNECTS flagship project targeting 10 mm³ of mouse hippocampus spanning CA1, CA3, and dentate gyrus."
   - src: /assets/images/content-library/case-studies/mouseconnects-himc/pipeline-overview.png
     alt: "HI-MC end-to-end acquisition and reconstruction pipeline diagram"
     caption: "HI-MC pipeline: multi-beam SEM acquisition, cloud-based alignment, ML segmentation, distributed proofreading, and graph assembly at 10x MICrONS scale."
@@ -65,7 +65,7 @@ content_type: core
 > This page deliberately does not pin a version, because it would be stale
 > within months and you would inherit a wrong number with a citation attached.
 > Treat what follows as orientation. Before any figure reaches a paper, a talk,
-> or a grant, pull it yourself from the release you are analysing and record the
+> or a grant, pull it yourself from the release you are analyzing and record the
 > version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
 > covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
 > has the lab.
@@ -73,8 +73,8 @@ content_type: core
 
 ## Overview
 
-The MouseConnects project, funded through the NIH BRAIN Initiative CONNECTS
-(Connectome of a Neural Ensemble by Comprehensive Tracing at Synaptic resolution)
+The MouseConnects project, funded through the NIH BRAIN Initiative's Connectivity
+Across Scales (BRAIN CONNECTS)
 program, represents the most ambitious connectomics undertaking yet attempted. Led by
 Jeff Lichtman at Harvard University and Viren Jain at Google Research, with a network
 of collaborators across multiple institutions, the project aims to reconstruct the
@@ -84,8 +84,8 @@ spanning CA1, CA3, the dentate gyrus, and associated regions. Funded from 2023 t
 connectome roughly ten times the volume of MICrONS and orders of magnitude larger
 than any previous reconstruction.
 
-The project's specific hippocampal initiative, referred to as HI-MC (Hippocampal
-Connectome), focuses on capturing the complete synaptic wiring of one of the most
+The project's center, HI-MC — the Center for High-throughput Integrative Mouse
+Connectomics — focuses on capturing the complete synaptic wiring of one of the most
 studied and least understood circuits in neuroscience — the hippocampal formation,
 which is central to memory, spatial navigation, and the pathology of Alzheimer's
 disease and epilepsy.

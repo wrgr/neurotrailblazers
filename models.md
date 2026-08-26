@@ -25,13 +25,13 @@ content_type: core
 <div class="main-content">
 
 <div class="models-hero">
-  <h1>🧠 Research Incubator Model</h1>
+  <h1>Research Incubator Model</h1>
 </div>
 
 <section class="section">
 <div class="cards-grid">
-  <div class="card text-center" style="max-width: 600px; margin: 0 auto;">
-    <p><strong>We power breakthroughs by developing and deploying top research talent.</strong></p>
+  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+    <p><strong>This page is the summary of the program models.</strong> The working version &mdash; what happens in each MERIT stage, what the mentee produces, and the failure mode each stage exists to prevent &mdash; is the <a href="{{ '/education/models/' | relative_url }}">models-in-practice playbook</a>, with the evidence behind each choice.</p>
   </div>
 </div>
 </section>

@@ -123,7 +123,7 @@ Some environments are genuinely hostile, and some are hostile specifically to pe
 - People leave, and the ones who leave say similar things on the way out.
 - The behavior is known and the response is that you should manage around it.
 
-If several of those hold, the thing to internalize is that **staying is not a measure of your worth, and leaving is not a failure of resilience.** Grit is a real construct and it is also routinely used to move responsibility for a bad environment onto the person suffering it. This site's own [evidence base]({{ '/education/models.html' | relative_url }}) hedges that literature deliberately; hold the same line about yourself.
+If several of those hold, the thing to internalize is that **staying is not a measure of your worth, and leaving is not a failure of resilience.** Grit is a real construct and it is also routinely used to move responsibility for a bad environment onto the person suffering it. This site's own [evidence base]({{ '/education/models/' | relative_url }}) hedges that literature deliberately; hold the same line about yourself.
 
 Practical steps, in order: document contemporaneously, find one person outside the situation who can sanity-check your read, identify what you need from the environment to finish what you are doing, and treat exit as one legitimate option among several rather than as the last resort. [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) covers the mechanics of recourse and what protection it does and does not offer.
 

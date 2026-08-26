@@ -257,7 +257,19 @@ permalink: /neuronauts/
     .nn-tl-item.inv { margin-left: auto; }
     .nn-tl-item.sci::before { left: auto; right: -45px; }
     .nn-tl-item.inv::before { left: -45px; }
-    .nn-tl-item .nn-tl-chip { display: none; }
+    /* Visually hide the lane chips on wide screens (the layout shows the
+       lane), but keep them in the accessibility tree for screen readers. */
+    .nn-tl-item .nn-tl-chip {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+      border: 0;
+    }
     .nn-tl-item.wide { width: 100%; margin: 0; }
     .nn-tl-item.wide::before { left: calc(50% - 9px); right: auto; }
   }
@@ -1518,7 +1530,7 @@ permalink: /neuronauts/
         <div class="nn-tl-body">
           <span class="nn-tl-chip">Science</span>
           <div class="nn-tl-year">1949 — Learning lives in the wiring</div>
-          <p>Psychologist Donald Hebb proposes the rule every neuroscience student now chants: cells that fire together wire together. If experience physically strengthens connections, then the wiring diagram is not just anatomy — it is where memory lives. Mapping it means mapping what a brain has learned. <a class="srcref" href="#src-48">[48]</a></p>
+          <p>Psychologist Donald Hebb proposes the rule every neuroscience student now chants: cells that fire together wire together. If experience reshapes connections, then wiring is a place where learning leaves physical traces — the founding motivation for measuring who connects to whom, and how strongly. (The map alone doesn't read out <em>what</em> was learned — see the honest caveat in Leg 7.) <a class="srcref" href="#src-48">[48]</a></p>
         </div>
         <div class="nn-tl-art">
           <svg viewBox="0 0 128 100" role="img" aria-label="Two neurons firing together, the connection between them drawn growing thicker">
@@ -1670,7 +1682,7 @@ permalink: /neuronauts/
         <div class="nn-tl-body">
           <span class="nn-tl-chip">Investment</span>
           <div class="nn-tl-year">2006 — A campus for tool-builders</div>
-          <p>The Howard Hughes Medical Institute opens Janelia, a roughly half-billion-dollar research campus built for long-shot team science. Its fly-connectome teams go on to image the complete adult fly brain and release the hemibrain — the substrate FlyWire finishes. <a class="srcref" href="#src-52">[52]</a> <a class="srcref" href="#src-10">[10]</a> <a class="srcref" href="#src-16">[16]</a></p>
+          <p>The Howard Hughes Medical Institute opens Janelia, a roughly half-billion-dollar research campus built for long-shot team science. Its fly-connectome teams go on to image the complete adult fly brain — the FAFB volume that FlyWire later finishes — and to release the hemibrain, the first richly annotated partial connectome anyone could browse. <a class="srcref" href="#src-52">[52]</a> <a class="srcref" href="#src-10">[10]</a> <a class="srcref" href="#src-16">[16]</a></p>
         </div>
         <div class="nn-tl-art">
           <svg viewBox="0 0 128 100" role="img" aria-label="A modern curved glass research building with a fruit fly hovering above it">

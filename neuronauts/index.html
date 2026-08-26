@@ -513,15 +513,19 @@ permalink: /neuronauts/
   .nn-rail a:hover .lbl, .nn-rail a.active .lbl { opacity: 1; }
   .nn-rail a.active .dot { background: #2563eb; box-shadow: 0 0 0 1px #2563eb; }
   /* Letter-size book rendering: print this page (or print-to-PDF) for a
-     paginated 8.5x11 copy — one act per page-start, panels kept whole. */
+     paginated 8.5x11 copy — a standalone cover page, new pages only between
+     parts, panels kept whole. */
   @page { size: letter; margin: 0.7in; }
   @media print {
     .site-header, footer, .nn-cta, .nn-progress, .nn-rail { display: none; }
     .neuronauts { max-width: none; padding: 0; font-size: 10.5pt; }
-    .nn-cover { padding-top: 1.5in; }
-    .nn-toc { page-break-before: always; }
+    /* Cover page: title, cover art, and caption stand alone on page one. */
+    .nn-coverpage { page-break-after: always; }
+    .nn-cover { padding-top: 1.6in; }
     .nn-toc ol { columns: 2; }
-    .nn-act { page-break-before: always; }
+    /* New pages only between parts: Part Two (the reordering) and
+       Part Three (the next 5–10 years). Everything else flows. */
+    #nn-reorder, #nn-future { page-break-before: always; }
     .nn-panel, .nn-notes, .nn-tl-item, .nn-future-card, .nn-num,
     .nn-cast-card, .nn-gloss-card, .nn-why-card, .nn-tldr, .nn-baton {
       page-break-inside: avoid;
@@ -681,6 +685,9 @@ permalink: /neuronauts/
   </svg>
 
   <!-- ============ COVER ============ -->
+  <!-- The nn-coverpage wrapper is invisible on screen; in print it turns the
+       title, cover art, and caption into a standalone cover page. -->
+  <div class="nn-coverpage">
   <div class="nn-cover">
     <span class="nn-kicker">A guided expedition, with receipts</span>
     <h1>Connectomics: Exploring the Amazing Neuronal Pathways Inside Our Brains</h1>
@@ -734,6 +741,7 @@ permalink: /neuronauts/
     </svg>
   </div>
   <p class="nn-caption">The Neuronauts, moments before departure. Left to right: Captain Cortex, Axon, Dendra, Syn, and Glia.</p>
+  </div>
 
   <div class="nn-promise">
     <strong>Our promise to you:</strong> this page is written for curious readers of any age, with no biology background needed — and it never trades accuracy for a good story. Every factual claim traces to a numbered source at the bottom of the page, almost all of them peer-reviewed papers or official program announcements. When something is a hope rather than a result, we label it. That's the deal.

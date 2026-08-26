@@ -23,14 +23,6 @@ entities:
   neurotrailblazers:
     role: "learning architecture"
 
-pathways:
-  explore:
-    modules: [1, 4, 5, 11, 12, 22]
-  learn:
-    modules: "1-25"
-  contribute:
-    modules: [3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 23, 24, 25]
-
 p0_integrations:
   module_01: ["CONNECTS ecosystem map", "map-type orientation"]
   module_04: ["ABC Atlas link wrapper", "projectome-to-synapse"]

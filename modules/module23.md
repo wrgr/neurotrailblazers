@@ -82,7 +82,7 @@ This module also sits on the MERIT stage-5 failure mode. If every professional r
 - **Misconception guardrail:** a strong motivating paragraph can compensate for thin results.
 
 ### 2) Posters are spatial arguments
-- **Technical:** layout should mirror inferential flow (question, method, evidence, limits). Design for three reading distances: title and one-line finding readable from about two meters, headings and figure panels from a metre, methods and caveats only on close approach. Conventional minimums are a title around 72 to 100 point, headings 36 to 48, body no smaller than 24; check your meeting's template first, since some societies specify sizes.
+- **Technical:** layout should mirror inferential flow (question, method, evidence, limits). Design for three reading distances: title and one-line finding readable from about two meters, headings and figure panels from a meter, methods and caveats only on close approach. Conventional minimums are a title around 72 to 100 point, headings 36 to 48, body no smaller than 24; check your meeting's template first, since some societies specify sizes.
 - **Plain language:** if viewers cannot find your core result in 10 seconds, redesign.
 - **Misconception guardrail:** dense text signals that the work is thorough.
 
@@ -134,7 +134,7 @@ Trainees are usually told to "go to conferences" without being told which. The c
 | Consortium or initiative meeting (for example a BRAIN Initiative investigators meeting) | Dataset and tool announcements before publication; the people who build the infrastructure you use | Funded groups and their trainees | Often tied to funding or invitation | Access may depend on your lab's funding, a constraint worth naming rather than leaving trainees to infer |
 | Small discussion conference (Gordon Research Conference format) | Sustained contact with senior people; questions that change your project | Roughly a hundred, same people all week | Application and selection, capacity-limited | Highest contact value per attendee, but unpublished material is typically off the record and not citable, so it will not generate a citable output |
 | Computational meeting with competitive abstract review (for example COSYNE) | A methods-literate audience that will engage with your null model | Computational neuroscientists, many from machine learning | Competitive review; rejection is normal and not a verdict | Preparation cost is high and acceptance is uncertain, so do not make it your only submission |
-| Local or regional symposium | Low-stakes rehearsal; local collaborators; a real deadline | Your institution and neighbours | Usually open | Least prestige, least cost, and the best place to fail safely before a national meeting |
+| Local or regional symposium | Low-stakes rehearsal; local collaborators; a real deadline | Your institution and neighbors | Usually open | Least prestige, least cost, and the best place to fail safely before a national meeting |
 
 If you have never presented, a regional symposium followed by one large general meeting beats a single prestigious venue: the first converts the second from an ordeal into a repetition.
 

@@ -244,7 +244,7 @@ column you are in.
 
 The pattern: **anything defined over global paths is the first thing to break,
 and the last thing people check.** Path length and betweenness assume you can
-see the whole graph. In a cubic millimetre of cortex you cannot — most
+see the whole graph. In a cubic millimeter of cortex you cannot — most
 long-range axons leave the volume — so a path-based statistic is measuring your
 volume boundary as much as the circuit.
 

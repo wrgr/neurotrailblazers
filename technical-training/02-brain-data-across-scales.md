@@ -81,7 +81,7 @@ Learn this table. Ranges are typical rather than record-setting.
 | Light-sheet / whole-brain LM with tracers | 0.5–2 µm (xy) | Whole mouse brain | Long-range projection maps, many animals | Cannot resolve neurites in neuropil; no synapses |
 | Confocal / two-photon | 200–300 nm lateral | mm³, in vivo possible | Function (calcium), molecular labels, live | Diffraction-limited; overlap ≠ connection |
 | Expansion microscopy | ~25–70 nm effective | Up to ~mm³ with effort | Molecular identity *plus* near-EM geometry | Expansion distortion; not yet routine for dense reconstruction at scale |
-| Array tomography | ~50–100 nm lateral, 70 nm sections | ~10⁵ µm³ | Multiplexed protein labelling with synapse-scale geometry | Section loss; lower z-resolution than EM |
+| Array tomography | ~50–100 nm lateral, 70 nm sections | ~10⁵ µm³ | Multiplexed protein labeling with synapse-scale geometry | Section loss; lower z-resolution than EM |
 | Barcoded projection mapping (MAPseq/BARseq) | Single-cell identity, no geometry | Whole brain, 10⁴–10⁶ cells | Projection patterns of enormous numbers of individual cells, cheaply | No synapses, no morphology, no local circuit |
 | ssTEM / ssSEM (multibeam) | 4 × 4 × 40 nm | Up to ~1 mm³ today | Dense synapse-resolution reconstruction at scale | Anisotropic; section artifacts; enormous cost |
 | SBEM | 10–20 × 10–20 × 25–50 nm | ~10⁶–10⁷ µm³ | Automated block-face series, no section handling | Destructive; z-resolution limits thin-process tracing |
@@ -114,7 +114,7 @@ EM proofreading of thousands of complete long-range axons is not tractable today
 
 The honest limitation to state: barcoding gives you projection *presence* in a
 target region, not synapses in that region, and it is vulnerable to
-fibres-of-passage and to barcode-sharing artifacts.
+fibers-of-passage and to barcode-sharing artifacts.
 </details>
 
 <details markdown="1">
@@ -126,13 +126,13 @@ They are measuring different things at scales that do not nest cleanly.
 
 Tractography infers streamlines from voxel-scale water diffusion orientation. A
 streamline is a model output, not an observed axon. Known failure modes include
-false continuations at crossing-fibre regions and difficulty entering gyral crowns.
+false continuations at crossing-fiber regions and difficulty entering gyral crowns.
 A tractography "connection" is a statement about the most probable pathway given a
 diffusion model — it is *not* a claim that a specific axon terminates there.
 
 Meanwhile, an EM volume samples a small region. Absence of axons in that volume is
 evidence about *that volume*, at whatever detection sensitivity the reconstruction
-achieved. If the projection terminates in an adjacent layer or a neighbouring
+achieved. If the projection terminates in an adjacent layer or a neighboring
 column, EM would miss it.
 
 The resolution is not "one of them is wrong". It is that neither claim, as usually
@@ -149,7 +149,7 @@ is a common and expensive mistake because conversions are lossy and usually one-
 
 | Representation | What it is | Keeps | Discards | Typical size, one cortical neuron |
 |---|---|---|---|---|
-| **Volume / labelled voxels** | The segmentation itself | Everything, including membrane geometry and organelles | Nothing — but unusable for most analysis | GB per neuron at native resolution |
+| **Volume / labeled voxels** | The segmentation itself | Everything, including membrane geometry and organelles | Nothing — but unusable for most analysis | GB per neuron at native resolution |
 | **Mesh** | Triangulated surface | Surface geometry, volume, surface area, spine shape | Interior, intensity, organelles | 10–100 MB |
 | **Skeleton** | Centreline graph with radii | Topology, path length, branch structure, radius | Surface detail, spine head shape, membrane apposition | 0.1–5 MB |
 | **Connectivity graph** | Nodes = cells, edges = synapse counts | Who connects to whom, how strongly | *All* geometry — compartment, distance, position | Bytes per neuron |
@@ -220,7 +220,7 @@ fails. Steps, in order:
    the transform extrapolates.
 2. Decide whether to exclude that region or add anchors there.
 3. For the regions you keep, compute a per-cell assignment confidence using the
-   *local* residual and the local soma density. Where nearest-neighbour soma
+   *local* residual and the local soma density. Where nearest-neighbor soma
    spacing is comparable to local residual, mark assignments ambiguous rather than
    forcing a match.
 4. Report the number of cells excluded and the number ambiguous. A functional
@@ -313,10 +313,10 @@ Write a two-page memo that selects a data strategy. Required sections:
 | | Not yet | Proficient | Strong |
 |---|---|---|---|
 | **Decomposition** | Question restated | All required objects listed with sizes | Includes the non-anatomical requirement (functional tuning) and notes it forces in-vivo imaging *before* fixation |
-| **Resolution defence** | Asserts EM | States required scale per object | States what specifically fails one step coarser, per object |
+| **Resolution defense** | Asserts EM | States required scale per object | States what specifically fails one step coarser, per object |
 | **Rejections** | Alternatives listed | Rejected with a reason | Rejected with the specific unresolvable structure named |
 | **Registration** | Mentioned | Anchors and transform named | Residual target, holdout plan, and consequence of failure quantified |
-| **Budget** | Absent | Raw volume computed | Derived products and proofreading labour included; labour identified as dominant |
+| **Budget** | Absent | Raw volume computed | Derived products and proofreading labor included; labor identified as dominant |
 | **Bottleneck** | Generic ("funding") | A real pipeline step | A step with a stated failure probability and a concrete mitigation |
 
 <details markdown="1">
@@ -388,7 +388,7 @@ etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practi
 
 ## What this unit does not cover
 
-The physics of image formation and the artifact catalogue (Unit 03), the systems
+The physics of image formation and the artifact catalog (Unit 03), the systems
 architecture that stores and serves these representations (Unit 04), and the
 statistics that operate on the resulting graph (Unit 09).
 

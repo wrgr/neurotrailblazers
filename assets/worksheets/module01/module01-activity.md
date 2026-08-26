@@ -113,7 +113,7 @@ them, or note where you nearly did:
 |---|---|
 | C. elegans (White et al., 1986) | the first complete connectome. 302 neurons. What it enabled, what it could not explain. |
 | FlyWire whole-brain (Dorkenwald et al., 2024) | 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior. |
-| | MouseConnects HI-MC (ongoing): scaling to mammalian cortex, the challenge of petascale data. |
+| | MouseConnects HI-MC (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data. |
 
 ---
 

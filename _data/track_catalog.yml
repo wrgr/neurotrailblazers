@@ -14,7 +14,7 @@ tracks:
     modes:
       - slug: self-study
         available: true
-        shape: "Read the ten technical units in order, do every lab, and treat units 05-07 as the centre of gravity rather than a descriptive interlude. Roughly 40-60 hours."
+        shape: "Read the ten technical units in order, do every lab, and treat units 05-07 as the center of gravity rather than a descriptive interlude. Roughly 40-60 hours."
         start_url: /technical-training/01-why-map-the-brain/
         start_label: "Open Unit 01"
         note: "The perceptual units are the part that most needs a second pair of eyes. Find one partner before you reach Unit 05."
@@ -41,7 +41,7 @@ tracks:
         hours: 3
       - step: "Understand where the data comes from and how it fails"
         do: "Technical Unit 03, then run its QA report on a real public volume."
-        outcome: "An artifact report with coordinates, classified as data loss or labour."
+        outcome: "An artifact report with coordinates, classified as data loss or labor."
         hours: 4
       - step: "Learn to read the images"
         do: "Technical Units 05, 06, and 07, with the drills. This is the slowest part and the one worth the most."
@@ -125,7 +125,7 @@ tracks:
         do: "The connectome quality notebook path, steps 1-4."
         outcome: "A measured statement of how proofreading changes your headline number."
         hours: 8
-      - step: "Analyse without fooling yourself"
+      - step: "Analyze without fooling yourself"
         do: "Technical Unit 09, including the three-null worked example and the error simulation."
         outcome: "A motif analysis with a defended null, corrected multiple comparisons, and an error band."
         hours: 10
@@ -139,7 +139,7 @@ tracks:
       - "You report an effect size under more than one null model, and you say which you pre-specified."
       - "You have run an error-sensitivity simulation on your own result and know whether it survives."
     common_detours:
-      - "Analysing against an unpinned segmentation. The code runs; the answer drifts."
+      - "Analyzing against an unpinned segmentation. The code runs; the answer drifts."
       - "Optimizing an aggregate quality metric instead of the endpoint the project actually reports."
       - "Treating Erdos-Renyi as an acceptable null for a spatially embedded, degree-heterogeneous graph."
     resources:
@@ -163,7 +163,7 @@ tracks:
     title: Career & Community
     short_title: Pathways & Community
     description: Navigate hidden curriculum, mentorship, professional growth, and inclusive research identity development.
-    about: "This track supports the professional and personal development dimensions of research training, with explicit attention to the hidden curriculum—the unwritten norms, expectations, and social dynamics that shape who succeeds in science. It covers scientific communication, peer review, ethics, career planning, and portfolio development, grounded in the NIH CONNECTS mentorship model and equity-centered program design. It is relevant at every stage of training, not only at the end."
+    about: "This track supports the professional and personal development dimensions of research training, with explicit attention to the hidden curriculum—the unwritten norms, expectations, and social dynamics that shape who succeeds in science. It covers scientific communication, peer review, ethics, career planning, and portfolio development, grounded in the NIH BRAIN CONNECTS mentorship model and equity-centered program design. It is relevant at every stage of training, not only at the end."
     fadel_alignment:
       - Character
       - Meta-learning
@@ -186,7 +186,7 @@ tracks:
         note: "A norm named once in a technical session lands harder than a dedicated session on professional development."
       - slug: research-intensive
         available: false
-        shape: "Would matter most here. The norms that decide who thrives in a lab are the ones an intensive programme transmits by default to some people and not others; making them explicit is the point."
+        shape: "Would matter most here. The norms that decide who thrives in a lab are the ones an intensive program transmits by default to some people and not others; making them explicit is the point."
     module_numbers: [1, 2, 17, 19, 22, 23, 24, 25]
     time_estimate: "25-35 hours, spread across the whole of a training period rather than completed in a block"
     entry_requirement: "None. This track is relevant from week one, not only at the end."
@@ -232,7 +232,7 @@ tracks:
         summary: MERIT, CCR, and professional pathways workshop structures guiding NeuroTrailblazers training.
       - title: Frameworks
         url: /frameworks/
-        summary: COMPASS, MERIT, and research incubator frameworks for curriculum and mentorship design.
+        summary: MERIT, Professional Pathways, and research incubator frameworks for curriculum and mentorship design.
       - title: Tools
         url: /tools/
         summary: Practical support resources including expert consultation and quality guidance.

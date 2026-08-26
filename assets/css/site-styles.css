@@ -1941,7 +1941,7 @@ footer {
 /* --- Reference tables ---------------------------------------------------- */
 
 /* Wide reference tables scroll inside their own box rather than widening the
-   page: without this a five-column artifact catalogue is 626px in a 390px
+   page: without this a five-column artifact catalog is 626px in a 390px
    viewport and every page on the site scrolls horizontally.
 
    The scrolling belongs on a wrapper, not on the table. Setting the table
@@ -2273,13 +2273,13 @@ footer {
 /* ===========================================================================
    Core-and-tracks architecture components.
 
-   The site already has a strong idiom on its best pages: cards with a coloured
+   The site already has a strong idiom on its best pages: cards with a colored
    top rule (.jc-path-card, .lesson-step), pill-shaped stats, gradient heroes.
    These components extend it to the architecture pages so /core/, /modes/,
    /tracks/ and /side-quests/ read as part of the same site rather than as
    plain documents.
 
-   Each layer of the architecture gets a fixed accent colour, used consistently
+   Each layer of the architecture gets a fixed accent color, used consistently
    wherever that layer appears:
 
      core      teal    reference material, consulted not walked

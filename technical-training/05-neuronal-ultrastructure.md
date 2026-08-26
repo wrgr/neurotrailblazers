@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "05 Neuronal Ultrastructure"
-description: "How to actually read an EM image: the organelle catalogue with sizes, the minimum criteria for calling a synapse, Gray type I vs II, and a calibrated confidence protocol."
+description: "How to actually read an EM image: the organelle catalog with sizes, the minimum criteria for calling a synapse, Gray type I vs II, and a calibrated confidence protocol."
 permalink: /technical-training/05-neuronal-ultrastructure/
 slug: 05-neuronal-ultrastructure
 track: core-concepts-methods
@@ -19,11 +19,11 @@ content_type: path
 | | |
 |---|---|
 | **Time** | ~2.5 h reading; 60 min tutorial; 75 min studio |
-| **Prerequisites** | Units 01–03. Unit 03's artifact catalogue in particular — you cannot distinguish biology from artifact without it. |
+| **Prerequisites** | Units 01–03. Unit 03's artifact catalog in particular — you cannot distinguish biology from artifact without it. |
 | **You need** | A public EM volume open in Neuroglancer |
 | **You finish with** | Calibrated compartment and synapse calls with justified confidence tiers, plus a personal cue-reliability ranking |
 
-Everything downstream depends on someone being able to look at a patch of greyscale
+Everything downstream depends on someone being able to look at a patch of grayscale
 noise and say correctly what it is. Segmentation networks are trained on those
 judgments. Proofreading decisions rest on them. Every synapse count in every
 connectomics paper traces back to a human who decided that a particular smudge was a
@@ -44,7 +44,7 @@ This unit teaches the actual visual cues, with sizes. Not "use organelle evidenc
 
 ---
 
-## 1. The organelle catalogue
+## 1. The organelle catalog
 
 This is the reference table. Sizes are approximate and vary with preparation, but the
 *relative* sizes and the *presence/absence patterns* are what you actually use.
@@ -211,7 +211,7 @@ this magnification and plane.
 overturned. Scroll. A process that looked like a bouton may be a dendritic varicosity;
 a "vesicle cluster" may be a tangential slice through something else.
 
-**Step 5 — Neighbourhood.** What is around it? An axon in a myelinated bundle, a
+**Step 5 — Neighborhood.** What is around it? An axon in a myelinated bundle, a
 process wrapping a capillary, a profile inside a glial sheath — context frequently
 settles calls that local features cannot.
 
@@ -252,7 +252,7 @@ Genuinely independent cue families:
 1. Geometry and calibre profile
 2. Organelle content (presence and absence)
 3. Synaptic role
-4. Neighbourhood and tissue context
+4. Neighborhood and tissue context
 5. Long-range continuity — where the process *goes*
 
 **Rule for high confidence: two cues from different families.** This single rule does
@@ -276,7 +276,7 @@ faint spine apparatus.
 **Family 3 (synaptic role):** thick asymmetric PSD on the spine-head side; cleft of
 uniform width; visible across four consecutive sections.
 
-**Family 4 (context):** several other boutons in the neighbourhood contact spines
+**Family 4 (context):** several other boutons in the neighborhood contact spines
 similarly — consistent with normal excitatory neuropil, not with an artifact region.
 
 **Call:** presynaptic axonal bouton making a type I synapse onto a dendritic spine
@@ -302,7 +302,7 @@ Work these panels with the organelle table in §1 open, and name the cue family 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png' | relative_url }}" alt="Ultrastructure training visual: dendritic context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S08:</strong> A somatic region — nuclear envelope with heterochromatin above, one long mitochondrion below. Use it to anchor the soma end of the compartment table in §1: rough ER and a nucleus put you in a cell body, and that is the one place where the ribosome cue is unambiguous rather than a judgement call.</p>
+    <p class="card-description"><strong>RIV-ULTRA S08:</strong> A somatic region — nuclear envelope with heterochromatin above, one long mitochondrion below. Use it to anchor the soma end of the compartment table in §1: rough ER and a nucleus put you in a cell body, and that is the one place where the ribosome cue is unambiguous rather than a judgment call.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Ultrastructure training visual: synapse cues" style="width:100%; border-radius:8px;">
@@ -318,11 +318,11 @@ Work these panels with the organelle table in §1 open, and name the cue family 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png' | relative_url }}" alt="Ultrastructure training visual: ambiguity case" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S20:</strong> A two-panel reference — an EM micrograph with a 1&nbsp;µm scale bar beside a labelled schematic naming presynaptic terminal, presynaptic and postsynaptic membranes, cleft, vesicles, and the postsynaptic dendrite. Read the schematic first, then find each labelled part in the micrograph beside it. That translation — idealised diagram to real noisy tissue — is the step §2's three criteria have to survive.</p>
+    <p class="card-description"><strong>RIV-ULTRA S20:</strong> A two-panel reference — an EM micrograph with a 1&nbsp;µm scale bar beside a labeled schematic naming presynaptic terminal, presynaptic and postsynaptic membranes, cleft, vesicles, and the postsynaptic dendrite. Read the schematic first, then find each labeled part in the micrograph beside it. That translation — idealized diagram to real noisy tissue — is the step §2's three criteria have to survive.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png' | relative_url }}" alt="Ultrastructure training visual: advanced structural example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example — geometry, organelle content, synaptic role, neighbourhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
+    <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example — geometry, organelle content, synaptic role, neighborhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
   </article>
 </div>
 
@@ -352,7 +352,7 @@ The last column is the one that produces learning. Insist on it.
 | Time | Activity | Instructor focus |
 |---|---|---|
 | 00:00–05:00 | **Framing.** Prompt: "What goes wrong if we force a label too early?" | Set the capability target; state that "uncertain" is a passing answer |
-| 05:00–12:00 | **Expert modelling.** Work one patch aloud, following the §3 protocol | Think aloud about *uncertainty*, not just conclusions. Name each cue's family explicitly |
+| 05:00–12:00 | **Expert modeling.** Work one patch aloud, following the §3 protocol | Think aloud about *uncertainty*, not just conclusions. Name each cue's family explicitly |
 | 12:00–20:00 | **Guided practice 1.** Two easy patches, in pairs | Circulate; ask "which family is that cue from?" rather than "is that right?" |
 | 20:00–30:00 | **Public debrief.** Compare calls openly | Target the three misconceptions below |
 | 30:00–42:00 | **Guided practice 2.** Two borderline patches, independently | Require two independent cues plus one uncertainty statement per patch |
@@ -431,10 +431,10 @@ one family is one cue.
 rate per annotator as a calibration statistic, not a performance penalty.
 
 **Label drift along a long trace.** Recover: build in periodic re-checks — every N
-micrometres of tracing, re-verify the compartment call from scratch rather than
+micrometers of tracing, re-verify the compartment call from scratch rather than
 carrying the earlier decision forward.
 
-**Reading artifact as biology.** Recover: keep the Unit 03 artifact catalogue open.
+**Reading artifact as biology.** Recover: keep the Unit 03 artifact catalog open.
 When something is anomalous, ask whether its shape follows tissue or follows the
 section/tile/scan geometry.
 

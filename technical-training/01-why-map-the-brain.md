@@ -78,10 +78,10 @@ entire reason the field tolerates the cost described in the next section.
 ### Check yourself
 
 <details markdown="1">
-<summary>A colleague proposes using confocal microscopy of sparsely labelled neurons to
+<summary>A colleague proposes using confocal microscopy of sparsely labeled neurons to
 "map the connectome" of a cortical column. What is the strongest single objection?</summary>
 
-Sparse labelling plus diffraction-limited optics gives *potential* contact (arbor
+Sparse labeling plus diffraction-limited optics gives *potential* contact (arbor
 overlap), not synaptic connection. Contact-based predictions of connectivity —
 "Peters' rule" style inference — are known to be poor predictors of actual synaptic
 connectivity in cortex: neurons that touch frequently often do not connect, and
@@ -89,7 +89,7 @@ connection probability varies strongly by cell type. You would be measuring a
 proxy whose relationship to the quantity of interest is itself an open research
 question.
 
-A secondary objection: sparse labelling means you cannot see the unlabelled
+A secondary objection: sparse labeling means you cannot see the unlabeled
 partner, so even a true synapse has an anonymous other side.
 </details>
 
@@ -112,11 +112,11 @@ z: 1 mm / 40 nm   = 1,000,000 nm / 40 nm  =  25,000 voxels
 total = 250,000 x 250,000 x 25,000 = 1.56 x 10^15 voxels
 ```
 
-At 8-bit greyscale that is **~1.56 petabytes of raw image data for one cubic
-millimetre** — before alignment, before segmentation, before meshes, before any
+At 8-bit grayscale that is **~1.56 petabytes of raw image data for one cubic
+millimeter** — before alignment, before segmentation, before meshes, before any
 derived product. Published petascale volumes land in this range: the H01 human
 temporal cortex sample and the MICrONS mouse visual cortex volume are both roughly
-one cubic millimetre and both are reported in the 1.4–2 PB range depending on what is
+one cubic millimeter and both are reported in the 1.4–2 PB range depending on what is
 counted and how it is compressed.
 
 Now extrapolate, and notice where it breaks:
@@ -132,7 +132,7 @@ Now extrapolate, and notice where it breaks:
 **Teaching point.** The jump from fly to mouse cortex is ~40×. The jump from 1 mm³ to
 whole mouse brain is ~500×, and it is not a jump in imaging alone — it is a jump in
 sectioning reliability, storage economics, alignment robustness, segmentation
-accuracy, and above all *proofreading labour*. Programs such as NIH BRAIN CONNECTS
+accuracy, and above all *proofreading labor*. Programs such as NIH BRAIN CONNECTS
 exist because that 500× is an engineering problem, not a microscopy problem.
 
 ### Check yourself
@@ -185,7 +185,7 @@ figure caption.** "Putatively excitatory (asymmetric morphology)" costs four wor
 
 ### Bin C — structure cannot establish this
 
-- *"This circuit computes X during behaviour Y."* Requires physiology.
+- *"This circuit computes X during behavior Y."* Requires physiology.
 - *"This synapse is potentiated."* Requires a functional or molecular measure.
 - *"This wiring causes the animal's decision."* Requires perturbation.
 - *"Neuromodulatory state Z reconfigures this circuit."* Volume transmission is
@@ -245,7 +245,7 @@ layer 5 slender-tufted cells."</summary>
 **(i) Bin A**, provided "random" is defined against a stated null model and the
 claim is restricted to the reconstructed population. It becomes Bin B if it is
 extended to "input is unstructured", since unstructured with respect to one
-labelling scheme may be structured with respect to another.
+labeling scheme may be structured with respect to another.
 
 **(ii) Bin B, verging on C.** "Is GABAergic and forms symmetric synapses onto the
 pyramidal cell's soma and proximal dendrite" is Bin A/B. "Inhibits firing" is a
@@ -289,14 +289,14 @@ examples rather than enthusiasm.
 - ***C. elegans*, 302 neurons (White et al. 1986; Cook et al. 2019; Witvliet et al.
   2021).** The first complete nervous system. Its lasting lesson is negative and
   useful: having the complete wiring diagram of 302 neurons did *not* immediately
-  yield an understanding of behaviour. It took decades of physiology and genetics on
+  yield an understanding of behavior. It took decades of physiology and genetics on
   top of the map. Witvliet's developmental series added something the single adult
   map could not — which connections are stable across maturation and which are not.
 - **Adult *Drosophila* (hemibrain, ~25,000 neurons; FlyWire whole brain, ~139,000
   neurons and ~54.5 million synapses).** The first whole-brain connectome of an animal
-  with complex behaviour. It produced genuinely new biology: complete cell-type
+  with complex behavior. It produced genuinely new biology: complete cell-type
   censuses, the wiring of the central complex as a ring-attractor navigation system,
-  and connectome-constrained network models that predicted taste and behavioural
+  and connectome-constrained network models that predicted taste and behavioral
   responses which were then tested experimentally.
 - **MICrONS, ~1 mm³ mouse visual cortex (~200,000 cells, ~500 million synapses),
   with two-photon functional imaging of the same tissue.** The important thing here is
@@ -322,7 +322,7 @@ These four slides are framing devices, not evidence. Use each one to rehearse th
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Motivating question visual for why map the brain" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question, asked before any instrument is chosen. Use it to practise the move this unit is built on — name the measurable structural endpoint, the null model, and the explicit non-claim that would have to replace it before the question is fundable.</p>
+    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question, asked before any instrument is chosen. Use it to practice the move this unit is built on — name the measurable structural endpoint, the null model, and the explicit non-claim that would have to replace it before the question is fundable.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="Brain data framing visual" style="width:100%; border-radius:8px;">
@@ -334,7 +334,7 @@ These four slides are framing devices, not evidence. Use each one to rehearse th
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Course motivation context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L1 S04:</strong> Scope framing for the course. Compare whatever ambition it states against the extrapolation table in §2, and ask where on the fly-to-mouse-to-human ladder it lands — and whether the limiting factor at that rung is microscopy or proofreading labour.</p>
+    <p class="card-description"><strong>Module12 L1 S04:</strong> Scope framing for the course. Compare whatever ambition it states against the extrapolation table in §2, and ask where on the fly-to-mouse-to-human ladder it lands — and whether the limiting factor at that rung is microscopy or proofreading labor.</p>
   </article>
 </div>
 
@@ -439,7 +439,7 @@ different questions at different scales; see Unit 02 for how these fit together.
 - [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — Cajal through BRAIN CONNECTS, with the lessons from each era
 - [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — structure-function relationships and honest boundaries
 - [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) — the functional co-registration case study
-- [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) — the NIH CONNECTS flagship scaling effort
+- [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) — the NIH BRAIN CONNECTS flagship scaling effort
 - [*C. elegans* revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) — why a complete connectome was not an explanation
 
 ## Course links

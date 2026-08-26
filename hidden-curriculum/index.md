@@ -22,7 +22,7 @@ The second is not written down anywhere: which version number belongs in a figur
 caption, what "have a look at this" means when a supervisor says it, how long you
 should be stuck before you ask, how much a published result is worth arguing with,
 whose name goes on the paper and in what order, and what to do at 11pm when you
-realise the number you gave a collaborator last month was wrong.
+realize the number you gave a collaborator last month was wrong.
 
 That second body is the hidden curriculum. It is **operating knowledge distributed
 unequally by background**. Some people arrive already knowing how authorship works
@@ -39,7 +39,7 @@ and **making them explicit is a fairness intervention as much as a training one*
 
 Three things follow, and each changes what you should do:
 
-1. **Norms have to be stated, not modelled.** Watching a competent person work
+1. **Norms have to be stated, not modeled.** Watching a competent person work
    transmits a norm only to someone who already knows what to look for. Everyone else
    sees a person typing. So these pages state norms as sentences you could put on a
    checklist, not as habits to absorb.
@@ -49,7 +49,7 @@ Three things follow, and each changes what you should do:
    awkwardness.
 3. **"Ask if you're unsure" does not fix it.** You cannot ask about a norm whose
    existence you do not suspect. This is the reason the pages below are written as
-   lists of named norms rather than as an invitation to enquire.
+   lists of named norms rather than as an invitation to inquire.
 
 None of this means the norms are all good. Some are arbitrary, some are unfair, and a
 few exist because they were convenient for whoever was already in the room. Naming a
@@ -59,7 +59,7 @@ or ignore a rule you cannot see.
 ## The norms are already taught on this site, usually without a name
 
 The technical track is full of professional norms presented as technique. Read these
-five and notice that not one of them is labelled as a norm:
+five and notice that not one of them is labeled as a norm:
 
 - **Unit 01:** *"Any Bin B claim must name its assumption in the same sentence, or in
   the figure caption. 'Putatively excitatory (asymmetric morphology)' costs four
@@ -74,7 +74,7 @@ five and notice that not one of them is labelled as a norm:
   report."* — an ethical norm with a statistical justification bolted on.
 
 A reader who already speaks the professional register hears all five as statements
-about professional conduct and generalises them to the next paper, the next field, the
+about professional conduct and generalizes them to the next paper, the next field, the
 next meeting. A reader who does not hears five pieces of connectomics-specific advice
 and transfers none of them. That gap is the whole reason this section exists.
 Each technical unit now closes with a short *"the norm behind this unit"* section
@@ -91,7 +91,7 @@ like in real work.
 | [Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }}) | How to read a paper in the order experts actually read it, read the methods for what is *absent*, and tell a solid result from a fragile one | Anyone who has been told to "read the paper" and does not know what would count as having done it |
 | [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) | Asking for help, what a PI expects but will not say, how meetings work, escalation, authorship, and what to do after a mistake that affects someone else | Anyone in their first weeks in a lab, and anyone whose family did not contain an academic |
 | [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) | How the machinery actually works — applications, funding, references, transitions | Anyone at or approaching a transition point, who is being told to "network" without being told what that means operationally |
-| [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) | How to learn deliberately: what to practise, how to tell improvement from familiarity, how to run your own calibration | Anyone working hard and not getting better, which is a specific and fixable condition |
+| [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) | How to learn deliberately: what to practice, how to tell improvement from familiarity, how to run your own calibration | Anyone working hard and not getting better, which is a specific and fixable condition |
 | [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) | Identity, impostor feelings, and the difference between "I am struggling" and "this environment is hard for people like me" | Anyone deciding whether to stay, and anyone mentoring someone who is |
 | [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) | Disagreement, credit disputes, difficult supervisors, and what recourse actually exists | Anyone currently in one — and best read some months before you need it |
 

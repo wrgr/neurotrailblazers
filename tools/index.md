@@ -16,7 +16,7 @@ use_cases:
 recommended_modules: []
 related_datasets: []
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---
@@ -37,12 +37,12 @@ content_type: core
     <p><strong>The tools you will actually run</strong> &mdash; Neuroglancer, CAVE and
     <code>caveclient</code>, CloudVolume, neuPrint, CATMAID, webKnossos, <code>navis</code>,
     <code>graspologic</code>, DotMotif, BossDB &mdash; are third-party software. They are
-    catalogued by workflow stage in the
+    cataloged by workflow stage in the
     <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">connectomics atlas</a>,
     with what each one does and where it fits. For credentials, clients, and starter
     notebooks, go to the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>.</p>
     <p>If you are trying to work out which tool you need rather than how to use one you have
-    already chosen, the atlas table is the faster route: it is organised by the stage of the
+    already chosen, the atlas table is the faster route: it is organized by the stage of the
     pipeline you are standing in.</p>
   </section>
 

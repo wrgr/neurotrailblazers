@@ -33,7 +33,7 @@ related_frameworks:
 resource_links: []
 image: /assets/images/datasets/mouseconnects.jpg
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---
@@ -43,7 +43,7 @@ content_type: core
         <div class="hero-content">
             <div class="hero-text">
                 <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.9rem; margin-bottom: 1rem; display: inline-block;">
-                    NIH BRAIN Initiative • $40M Project • 2023–2028
+                    NIH BRAIN CONNECTS • Flagship Project • 2023–2028
                 </div>
                 <h1 class="hero-title-impact">
                     <span class="hero-title-main">MouseConnects</span>
@@ -70,12 +70,12 @@ content_type: core
             <div class="card dataset-card-blue text-center">
                 <div style="font-size: 2.5rem; font-weight: 700; color: var(--neural-blue); margin-bottom: 0.5rem;">10 mm³</div>
                 <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Brain Volume</div>
-                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">50× larger than previous connectomes</div>
+                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">10× the volume of MICrONS</div>
             </div>
             <div class="card dataset-card-purple text-center">
-                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cerebral-purple); margin-bottom: 0.5rem;">4 nm</div>
+                <div style="font-size: 2.5rem; font-weight: 700; color: var(--cerebral-purple); margin-bottom: 0.5rem;">Synaptic</div>
                 <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Resolution</div>
-                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">nanometer resolution</div>
+                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">nanoscale electron microscopy</div>
             </div>
             <div class="card dataset-card-cyan text-center">
                 <div style="font-size: 2.5rem; font-weight: 700; color: var(--axon-cyan); margin-bottom: 0.5rem;">>10 PB</div>

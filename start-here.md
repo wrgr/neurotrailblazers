@@ -82,7 +82,7 @@ content_type: navigation
         <ul class="mb-2" style="margin-left: 2rem;">
             <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
             <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</strong> Each selects from the core, sequences it, and adds labs that end in an artifact. Three of them, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
-            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory programme built on the same core &mdash; is named on that page but is not built yet.</li>
+            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
         </ul>
         <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
 
@@ -148,14 +148,14 @@ content_type: navigation
         <div class="cards-grid">
             <div class="card">
                 <h3>MERIT Framework</h3>
-                <p>Six stages aligned with the scientific method:</p>
+                <p>Six stages spanning selection through career transition:</p>
                 <ol class="list-tight">
-                    <li>Motivation & Inspiration</li>
-                    <li>Exploration & Discovery</li>
-                    <li>Research & Investigation</li>
-                    <li>Implementation & Practice</li>
-                    <li>Testing & Validation</li>
-                    <li>Sharing & Impact</li>
+                    <li>Merit-Based Selection</li>
+                    <li>Orientation & Research Foundations</li>
+                    <li>Skill Development & Mentored Research</li>
+                    <li>Independent Research & Early Dissemination</li>
+                    <li>Advanced Research & Professional Networking</li>
+                    <li>Career Transition & Lifelong Learning</li>
                 </ol>
             </div>
             <div class="card">
@@ -194,11 +194,11 @@ content_type: navigation
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalogue in section 2.</span>
+                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>25-45 min &mdash; Make a judgement and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
+                    <span><strong>25-45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
@@ -269,7 +269,7 @@ content_type: navigation
             <div class="card">
                 <div class="card-icon">&#128100;</div>
                 <h3>Calibration against other people</h3>
-                <p>You cannot calibrate your own judgement alone. The units' drills are built to be run with a partner, and comparing calls with one other person is worth more than three rounds of self-review. A journal club or a community proofreading effort supplies the same thing at larger scale.</p>
+                <p>You cannot calibrate your own judgment alone. The units' drills are built to be run with a partner, and comparing calls with one other person is worth more than three rounds of self-review. A journal club or a community proofreading effort supplies the same thing at larger scale.</p>
             </div>
             <div class="card">
                 <div class="card-icon">&#128218;</div>

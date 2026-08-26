@@ -21,7 +21,7 @@ recommended_modules:
 related_datasets:
   - mouseconnects
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---
@@ -46,13 +46,13 @@ content_type: core
 
   <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
-  Curious about how we map more than 100 million synapses in a cubic millimeter of brain tissue? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a leader of our HI-MC Mouse Connectome grant.
+  Curious about how we map more than 100 million synapses in a cubic millimeter of brain tissue? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a leader of HI-MC, our NIH BRAIN CONNECTS mouse connectomics center.
 
   **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
 
   Dr. Lichtman's work focuses on the **connectome**—the complete map of neural connections in the brain. He has been instrumental in developing **Brainbow** imaging and in advancing large-volume electron microscopy to reconstruct neural circuits with unprecedented precision.
 
-  He is a co-lead of the **Harvard-Mouse Connectome Project (HI-MC)**, which aims to chart 10 mm³ of mouse hippocampal brain tissue in full EM resolution.
+  He is a co-lead of the **Center for High-throughput Integrative Mouse Connectomics (HI-MC)**, which aims to chart 10 mm³ of mouse hippocampal brain tissue at full EM resolution.
 
   🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
 

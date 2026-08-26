@@ -63,7 +63,7 @@ content_type: core
 > This page deliberately does not pin a version, because it would be stale
 > within months and you would inherit a wrong number with a citation attached.
 > Treat what follows as orientation. Before any figure reaches a paper, a talk,
-> or a grant, pull it yourself from the release you are analysing and record the
+> or a grant, pull it yourself from the release you are analyzing and record the
 > version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
 > covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
 > has the lab.

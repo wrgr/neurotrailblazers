@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Modes of Use"
-description: "The same material, three situations: working alone, running a hosted session, or inside a research programme."
+description: "The same material, three situations: working alone, running a hosted session, or inside a research program."
 permalink: /modes/
 slug: modes
 content_type: navigation

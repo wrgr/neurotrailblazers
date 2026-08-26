@@ -131,7 +131,7 @@ Deep dives into landmark connectomics projects.
 | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) | mm³ mouse cortex, functional connectomics, structure-function linking | 01, 03, 08, 09 |
 | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) | Petavoxel human fragment, unique challenges, pathological features | 05, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
-| [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
+| [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
 
 ## Journal paper collection
 

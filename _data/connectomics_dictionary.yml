@@ -7,9 +7,9 @@ terms:
   category: Core
   definition: A map of neural connections within a defined nervous system, region, or volume, at a stated
     resolution and completeness.
-  typical: "Ranges from 302 fully verified neurons (C. elegans) to a partially proofread cubic millimetre - which is why the word alone says nothing."
+  typical: "Ranges from 302 fully verified neurons (C. elegans) to a partially proofread cubic millimeter - which is why the word alone says nothing."
   matters: The word alone says nothing about scale or reliability. A 'connectome' may mean 302 fully verified
-    neurons or a partially proofread cubic millimetre. Always state region, resolution, and proofreading
+    neurons or a partially proofread cubic millimeter. Always state region, resolution, and proofreading
     level alongside the term.
   confuse: Connectivity matrix (a representation) vs connectome (the mapped object).
   units:
@@ -46,7 +46,7 @@ terms:
 - term: Dense reconstruction
   category: Core
   definition: Reconstruction of every object within a volume, rather than a selected subset.
-  typical: Kasthuri et al. 2015 reconstructed ~1,500 cubic micrometres densely.
+  typical: Kasthuri et al. 2015 reconstructed ~1,500 cubic micrometers densely.
   matters: "Dense reconstruction is what makes negative results possible: if every process in the volume is reconstructed, an absent connection is evidence of absence rather than of not having looked."
   confuse: Sparse reconstruction traces selected neurons and leaves the rest unsegmented; it is far cheaper
     and answers different questions.
@@ -86,7 +86,7 @@ terms:
   definition: A neuronal process that typically receives synaptic input; contains ribosomes, tapers with
     distance from the soma, and may bear spines.
   typical: Shaft diameter 0.5-3 um in cortex.
-  matters: "Dendrites are the postsynaptic side of most excitatory connections, so mislabelling one as an axon inverts every edge it carries. They are also the easier call: polyribosomes and rough ER are near-diagnostic and axons lack both (Unit 05 §1)."
+  matters: "Dendrites are the postsynaptic side of most excitatory connections, so mislabeling one as an axon inverts every edge it carries. They are also the easier call: polyribosomes and rough ER are near-diagnostic and axons lack both (Unit 05 §1)."
   confuse: 'Thin distal dendrites vs axons: use ribosomes, taper, and spines rather than calibre.'
   units:
   - '05'
@@ -96,7 +96,7 @@ terms:
   definition: A neuronal process that transmits output; contains vesicle-filled boutons, lacks ribosomes,
     and maintains roughly constant calibre between boutons.
   typical: Unmyelinated cortical axons 80-300 nm diameter.
-  matters: "The axon/dendrite call is the most frequent judgement in annotation and it drives everything downstream: reverse it and you reverse the direction of every connection the process makes."
+  matters: "The axon/dendrite call is the most frequent judgment in annotation and it drives everything downstream: reverse it and you reverse the direction of every connection the process makes."
   confuse: "A thin dendrite vs an axon. Calibre alone does not settle it — use the organelle evidence (polyribosomes and abundant rough ER mean dendrite; regularly spaced microtubules with vesicle-filled varicosities mean axon)."
   units:
   - '05'
@@ -190,7 +190,7 @@ terms:
   category: Morphology
   definition: The presynaptic membrane specialization where synaptic vesicles dock and release neurotransmitter.
   typical: "200-800 nm across, matching the PSD it faces (Unit 05 §1)."
-  matters: "It is the presynaptic half of the synapse call. A vesicle cluster with no membrane specialisation opposite it is not evidence of a synapse — the active zone and the PSD are supposed to be co-extensive, and when they are not, you are usually looking at a tangential cut."
+  matters: "It is the presynaptic half of the synapse call. A vesicle cluster with no membrane specialization opposite it is not evidence of a synapse — the active zone and the PSD are supposed to be co-extensive, and when they are not, you are usually looking at a tangential cut."
   confuse: "Vesicle cluster (can sit anywhere in a bouton) vs active zone (the docking site at the membrane itself)."
   units:
   - '05'
@@ -347,7 +347,7 @@ terms:
   category: Cell types
   definition: A cortical interneuron that forms axo-axonic cartridge synapses onto the axon initial segments
     of pyramidal cells.
-  typical: "Recognised by cartridges of boutons running along axon initial segments rather than by soma appearance."
+  typical: "Recognized by cartridges of boutons running along axon initial segments rather than by soma appearance."
   matters: The canonical example of the polarity-rule exception in Unit 06.
   confuse: "Chandelier cartridges vs ordinary en passant bouton chains. The giveaway is the postsynaptic target: cartridges synapse onto the AIS specifically."
   units:
@@ -403,8 +403,8 @@ terms:
   - '03'
 - term: FIB-SEM
   category: Imaging
-  definition: 'Focused ion beam SEM: an ion beam mills a few nanometres at a time, giving isotropic voxels.'
-  typical: 4-8 nm isotropic; volumes typically 10^5-10^6 cubic micrometres.
+  definition: 'Focused ion beam SEM: an ion beam mills a few nanometers at a time, giving isotropic voxels.'
+  typical: 4-8 nm isotropic; volumes typically 10^5-10^6 cubic micrometers.
   matters: The best tracing conditions available, limited by volume and speed.
   confuse: "FIB-SEM vs SBF-SEM. Both are block-face methods, but FIB mills with an ion beam to a few nm and gives isotropic voxels, while SBF cuts with a diamond knife at 25-50 nm. FIB buys tracing quality and pays in volume."
   units:
@@ -413,7 +413,7 @@ terms:
   category: Imaging
   definition: SEM using many electron beams in parallel to multiply throughput.
   typical: 61 or 91 beams, aggregating on the order of a gigapixel per second.
-  matters: The throughput advance that moved cubic-millimetre volumes from impossible to feasible.
+  matters: The throughput advance that moved cubic-millimeter volumes from impossible to feasible.
   confuse: "Multibeam raises throughput, not resolution. It is the reason mm-scale ssEM volumes are feasible at all, but each beam still images at the same nm scale as a single beam."
   units:
   - '03'
@@ -472,7 +472,7 @@ terms:
 - term: Knife chatter
   category: Imaging
   definition: Periodic banding perpendicular to the cutting direction, from knife or block vibration.
-  typical: "Periodic bands at fixed spacing, perpendicular to the cutting direction; classed as labour rather than data loss (Unit 03 §2)."
+  typical: "Periodic bands at fixed spacing, perpendicular to the cutting direction; classed as labor rather than data loss (Unit 03 §2)."
   matters: Adds false boundaries and raises the split rate; recoverable by proofreading.
   confuse: "Chatter vs curtaining — see Curtaining. Chatter is also easily mistaken for genuine periodic structure such as myelin lamellae."
   units:
@@ -491,7 +491,7 @@ terms:
   typical: "Unit 03 §3 stops acquisition at more than 2 consecutive lost sections, or a cumulative rate above 1%."
   matters: Distribution matters more than count. Four scattered losses are routine; four consecutive losses
     cut the dataset in two for thin processes.
-  confuse: "A lost section is unrecoverable data loss; a misaligned section is recoverable labour. They look similar in a z-scroll and cost completely different amounts."
+  confuse: "A lost section is unrecoverable data loss; a misaligned section is recoverable labor. They look similar in a z-scroll and cost completely different amounts."
   units:
   - '03'
 - term: Contrast-to-noise ratio (CNR)
@@ -541,7 +541,7 @@ terms:
   - '03'
 - term: Ultramicrotome
   category: Sample prep
-  definition: The instrument that cuts resin-embedded tissue into sections tens of nanometres thick using
+  definition: The instrument that cuts resin-embedded tissue into sections tens of nanometers thick using
     a diamond knife.
   typical: 30-50 nm sections for connectomics.
   matters: "Section thickness is set here, and it is the parameter that decides your z-resolution and therefore how traceable thin processes are."
@@ -553,13 +553,13 @@ terms:
   definition: Assigning each voxel to an object, producing neuron and glia labels from image data.
   typical: "0.2-0.8 PB of labels for a mm3 volume, with label-aware compression (Unit 04 §2)."
   matters: "Everything downstream is a property of the segmentation, not of the tissue. A connectome is a claim about a specific segmentation at a specific version, and saying so is the difference between a reproducible result and an anecdote."
-  confuse: "Segmentation vs reconstruction. Segmentation is the automated labelling; reconstruction is the whole pipeline through proofreading. Papers use them interchangeably and the quality claims are not interchangeable."
+  confuse: "Segmentation vs reconstruction. Segmentation is the automated labeling; reconstruction is the whole pipeline through proofreading. Papers use them interchangeably and the quality claims are not interchangeable."
   units:
   - '04'
   - 08
 - term: Affinity map
   category: Reconstruction
-  definition: A per-voxel prediction of whether neighbouring voxels belong to the same object.
+  definition: A per-voxel prediction of whether neighboring voxels belong to the same object.
   typical: "A per-voxel edge score in each direction, thresholded to produce supervoxels."
   matters: Intermediate product roughly the size of the raw data; usually deleted after supervoxel generation.
   confuse: "Affinity map vs boundary map. Affinities are between voxel pairs and are directional; a boundary map is a single per-voxel score. The distinction matters when you tune the threshold."
@@ -577,7 +577,7 @@ terms:
   - 08
 - term: Agglomeration
   category: Reconstruction
-  definition: "Merging supervoxels into whole objects, using learned or hand-tuned rules about which neighbouring fragments belong to the same cell."
+  definition: "Merging supervoxels into whole objects, using learned or hand-tuned rules about which neighboring fragments belong to the same cell."
   typical: "A single tunable threshold that decides the merge/split balance for the whole volume."
   matters: "The agglomeration threshold is where the merge/split trade-off is actually set. Move it one way and you buy long correct runs and expensive merges; move it the other and you buy safe fragments and a large proofreading queue."
   confuse: "Agglomeration vs segmentation. Segmentation produces supervoxels; agglomeration decides which of them are the same neuron. Most correctable error is introduced here, not in the first step."
@@ -683,7 +683,7 @@ terms:
   definition: "One true object incorrectly divided into two or more segments - a neuron broken at a thin neurite, an artifact, or a section boundary."
   typical: "The cheap class: obvious, and correctable by joining, which is why proofreading effort concentrates on merges (Unit 08 §1)."
   matters: Bounded and visible. Pipelines deliberately trade merges for splits at every level.
-  confuse: "Splits are visible and merges are not, so a segmentation tuned to minimise the errors you can see is tuned to maximise the ones that corrupt connectivity."
+  confuse: "Splits are visible and merges are not, so a segmentation tuned to minimize the errors you can see is tuned to maximize the ones that corrupt connectivity."
   units:
   - 08
 - term: Orphan fragment
@@ -767,7 +767,7 @@ terms:
   - 08
 - term: F1 score
   category: Proofreading & QA
-  definition: "The harmonic mean of precision and recall, used to summarise detection performance - most often synapse detection - in a single number."
+  definition: "The harmonic mean of precision and recall, used to summarize detection performance - most often synapse detection - in a single number."
   typical: "Reported per class; a synapse detector's F1 is not comparable across datasets with different synapse densities."
   matters: Weights the two equally, which is rarely right for connectomics, where merge and split errors
     have very different costs.
@@ -800,7 +800,7 @@ terms:
   typical: "Whatever number the paper actually reports - reciprocity rate, motif count, mean degree - rather than a segmentation-quality score."
   matters: Ship on the endpoint. 'Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1
     to 2.8' is a stronger quality statement than any VI value.
-  confuse: "Endpoint metric vs quality metric. VI and ERL measure the reconstruction; the endpoint metric measures your claim. Optimising the first without checking the second is the most common way to spend a proofreading budget badly."
+  confuse: "Endpoint metric vs quality metric. VI and ERL measure the reconstruction; the endpoint metric measures your claim. Optimizing the first without checking the second is the most common way to spend a proofreading budget badly."
   units:
   - 08
   - 09
@@ -997,7 +997,7 @@ terms:
 - term: Configuration model
   category: Analysis & statistics
   definition: A null that preserves each node's in- and out-degree while randomizing connections.
-  typical: "Preserves each node's in- and out-degree exactly while randomising who connects to whom."
+  typical: "Preserves each node's in- and out-degree exactly while randomizing who connects to whom."
   matters: The minimum acceptable null for a connectome. Erdos-Renyi ignores degree heterogeneity and
     will show apparent enrichment of almost any motif.
   confuse: "It controls for degree and nothing else. In a spatially embedded connectome, distance explains much of what it will flag as structure, which is why Unit 09 works three nulls rather than one."
@@ -1007,7 +1007,7 @@ terms:
   category: Analysis & statistics
   definition: A null preserving degree and the empirical relationship between connection probability and
     distance.
-  typical: "Preserves the connection-probability-versus-distance curve while randomising the rest."
+  typical: "Preserves the connection-probability-versus-distance curve while randomizing the rest."
   matters: Required for spatially embedded data, which means all volume EM. Many reported motif enrichments
     do not survive it.
   confuse: "It is the null that usually matters most in cortex and is the one most often skipped. Erdos-Renyi will call almost any spatially embedded network 'structured'."

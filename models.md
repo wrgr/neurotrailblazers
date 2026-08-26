@@ -17,7 +17,7 @@ related_modules:
 related_tools:
   - ask-an-expert
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---
@@ -63,7 +63,7 @@ content_type: core
       <li>Advanced Research &amp; Professional Networking</li>
       <li>Career Transition &amp; Lifelong Learning</li>
     </ol>
-    <p><a href="{{ '/frameworks/' | relative_url }}">MERIT Whitepaper summary (PDF coming soon)</a></p>
+    <p><a href="{{ '/frameworks/' | relative_url }}">MERIT framework summary</a></p>
   </div>
   <div class="card">
     <h3>Professional Pathways Workshops</h3>
@@ -79,7 +79,7 @@ content_type: core
       <li>STEM Identity &amp; Purpose</li>
       <li>Future Forward</li>
     </ol>
-    <p><a href="{{ '/frameworks/' | relative_url }}">Professional Pathways guide summary (PDF coming soon)</a></p>
+    <p><a href="{{ '/frameworks/' | relative_url }}">Professional Pathways guide summary</a></p>
   </div>
   <div class="card">
     <h3>CCR Model</h3>

@@ -96,7 +96,7 @@ them, or note where you nearly did:
 - [ ] I did not assume: You can proofread your way out of a bad image.
 - [ ] I did not assume: A noisy image is worse for segmentation than a clean image with faint membranes.
 - [ ] I did not assume: Artifact severity can be judged from a count, when the spatial distribution matters more.
-- [ ] I did not assume: Quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
+- [ ] I did not assume: Quality assessment is a clerical checkpoint rather than a scientific judgment that propagates through every downstream claim.
 
 ---
 

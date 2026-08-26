@@ -84,7 +84,7 @@ Learners should arrive having covered:
 
 - A notebook that runs clean from a restarted kernel, with a header cell recording title, author, date, dataset, and materialization version
 - One descriptive analysis with at least one summary statistic reported in a markdown cell
-- One labelled figure exported as PNG, with a caption stating what it shows and what it does not license you to conclude
+- One labeled figure exported as PNG, with a caption stating what it shows and what it does not license you to conclude
 - The underlying data table exported as CSV, plus a metadata JSON recording dataset version, query parameters, and analysis date
 - If any cell fails, fix it and re-run
 
@@ -123,7 +123,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes
-behaviour within one session.
+behavior within one session.
 
 ## Exit prompt
 

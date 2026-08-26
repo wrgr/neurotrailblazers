@@ -8,12 +8,11 @@ This directory is the working area for building the canonical open connectomics 
   - Raw source assessments and mapping notes from PPT/PDF/doc inputs.
 - `units/`
   - Canonical unit source docs used to produce both website and presentation outputs.
-- `templates/`
-  - Authoring templates and repeatable production patterns.
-- `workboard.md`
-  - Single queue and status tracker for production.
-- `decision-rules.md`
-  - Editorial/source-priority rules.
+
+Planning boards, authoring templates, reviews, and editorial rules
+(`workboard.md`, `templates/`, `reviews/`, `decision-rules.md`,
+`capability-development-plan.md`, `instructional-framework.md`) live on the
+`holding/internal-planning` branch, off the deployed branch.
 
 ## Execution model
 1. Ingest source files and manifests.

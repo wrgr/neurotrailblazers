@@ -46,7 +46,7 @@ content_type: delivery
       different places.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
       Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
-      It covers why at least half of contact time has to be learner judgement rather than
+      It covers why at least half of contact time has to be learner judgment rather than
       explanation, how to differentiate across the four learner personas, and how to
       assess calibration rather than raw accuracy.</p>
   </section>

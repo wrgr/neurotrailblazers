@@ -90,7 +90,7 @@ often worth more than a long scroll.
 
 ### Family D — context and destination
 
-- Position within a **myelinated bundle** or a fibre tract → axon.
+- Position within a **myelinated bundle** or a fiber tract → axon.
 - Wrapped by an oligodendrocyte sheath → axon.
 - Arising from a soma with an **AIS** (membrane undercoating plus fasciculated
   microtubules, roughly 20–60 µm long) → axon, definitively.
@@ -194,7 +194,7 @@ Use when you cannot reach a soma — which is most of the time.
    NO  -> weak evidence only; absence at this calibre may just mean
           the process is too thin. Continue.
 
-3. Is there myelin, or is the process inside a fibre bundle?
+3. Is there myelin, or is the process inside a fiber bundle?
    YES -> AXON (high)
 
 4. Follow through z for at least 2-3 um and check:
@@ -252,7 +252,7 @@ worst possible property for an error to have.
 
 ## Visual training set
 
-Use these with the protocol in §3 in hand, and force yourself to name the step that resolved each case — or the step at which you stopped. They are single planes, which is the habit to break: steps 4 and 5 both require following a process for micrometres through z. Treat the panel as a reference for what each cue looks like rather than as a surface you can classify from.
+Use these with the protocol in §3 in hand, and force yourself to name the step that resolved each case — or the step at which you stopped. They are single planes, which is the habit to break: steps 4 and 5 both require following a process for micrometers through z. Treat the panel as a reference for what each cue looks like rather than as a surface you can classify from.
 
 <div class="cards-grid">
   <article class="card">

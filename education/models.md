@@ -19,7 +19,7 @@ related_tools:
   - ask-an-expert
   - connectome-quality
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 content_type: core
 ---
 
@@ -35,8 +35,8 @@ This page is the operational version. For the summary framing, see the
 
 ## MERIT — stage by stage
 
-*Mentoring Exceptional Researchers to Innovate and Thrive.* Six stages mirroring the
-arc of the scientific method, from selection through career transition. The value is
+*Mentoring Exceptional Researchers to Innovate and Thrive.* Six stages spanning a
+research trajectory, from selection through career transition. The value is
 not the names; it is that each stage has a **distinct failure mode**, and knowing which
 stage a mentee is in tells you which failure to watch for.
 

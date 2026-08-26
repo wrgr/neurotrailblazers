@@ -50,7 +50,7 @@ prioritized and when it is declared finished.
 Enough to reason about its failures. (Full detail: Unit 04 §1 and the content library.)
 
 **The affinity/agglomeration family.** A network predicts, per voxel, the affinity
-between neighbouring voxels. Watershed at a conservative threshold produces
+between neighboring voxels. Watershed at a conservative threshold produces
 **supervoxels** that are deliberately too small. An agglomeration step then merges
 supervoxels into objects, using mean affinity, learned agglomeration, or shape-based
 descriptors that let the model reason about whether a merge produces a plausible
@@ -233,7 +233,7 @@ define levels — e.g. *L0 raw*, *L1 gross merges removed*, *L2 dendrite complet
 
 ---
 
-## 5. Human factors, because this is a labour operation
+## 5. Human factors, because this is a labor operation
 
 At petascale, proofreading is a workforce, and it behaves like one.
 
@@ -271,7 +271,7 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png' | relative_url }}" alt="Segmentation proofreading visual: neuronal structure orientation" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S06:</strong> Orientation for proofreading judgement. Set the frame before touching anything: proofreading is allocation under a fixed budget rather than cleanup, so the question about any candidate correction is what it changes about the endpoint per minute of annotator time.</p>
+    <p class="card-description"><strong>RIV-ULTRA S06:</strong> Orientation for proofreading judgment. Set the frame before touching anything: proofreading is allocation under a fixed budget rather than cleanup, so the question about any candidate correction is what it changes about the endpoint per minute of annotator time.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Segmentation proofreading visual: synapse identification cues" style="width:100%; border-radius:8px;">
@@ -370,7 +370,7 @@ from the *median* neuron.
 
 Proofreading time per neuron is heavy-tailed. Most cells are quick; a minority
 consume many times the median because they sit in an artifact region, have an
-unusually extensive axon, or are tangled with a neighbour across many sections. If
+unusually extensive axon, or are tangled with a neighbor across many sections. If
 you budget median × 200, you will be short — and the shortfall will land at the end
 of the project, when it is most damaging.
 
@@ -446,7 +446,7 @@ own protocol.
 
 ## Go deeper
 
-- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — full catalogue with examples
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — full catalog with examples
 - [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, and precision/recall worked in detail
 - [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) — seeding, extension, and triage patterns
 - [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — the platform landscape

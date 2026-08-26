@@ -83,7 +83,7 @@ voiced is far easier to correct than one they are holding silently.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** Artifact severity can be judged from a count, when the spatial distribution matters more.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
+- **They may believe:** Quality assessment is a clerical checkpoint rather than a scientific judgment that propagates through every downstream claim.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm
@@ -106,7 +106,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes
-behaviour within one session.
+behavior within one session.
 
 ## Exit prompt
 

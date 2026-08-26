@@ -120,7 +120,7 @@ Motivation drives persistence, but technical progress requires disciplined quest
 - **Instructor script:** "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
   1. **C. elegans** (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
   2. **FlyWire whole-brain** (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
-  3. **MouseConnects HI-MC** (ongoing): scaling to mammalian cortex, the challenge of petascale data.
+  3. **MouseConnects HI-MC** (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
 - After each case study, ask: "What question drove this project?" Write answers on board.
 
 ### Block 3: Question framing workshop (28:00-48:00)

@@ -258,9 +258,9 @@ count and tortuosity are properties of a method as much as of a cell.
 
 | Approach | How it works | What it is good at | What it loses |
 |---|---|---|---|
-| **TEASAR-family** (kimimaro and relatives) | Repeated shortest-path extraction through a distance-transformed segmentation, with penalties that push the path toward the object's centre | Robustness on noisy segmentation; deterministic; scales to whole volumes | Tends to over-penetrate into spine heads or shave them off entirely, depending on the invalidation radius |
+| **TEASAR-family** (kimimaro and relatives) | Repeated shortest-path extraction through a distance-transformed segmentation, with penalties that push the path toward the object's center | Robustness on noisy segmentation; deterministic; scales to whole volumes | Tends to over-penetrate into spine heads or shave them off entirely, depending on the invalidation radius |
 | **Mesh contraction** | Iteratively collapse a surface mesh toward its medial axis, then extract a curve skeleton | Follows fine geometry closely; good radius estimates | Sensitive to mesh defects; expensive; a hole in the mesh can reroute a branch |
-| **Manual tracing** (CATMAID-style) | A human places and connects nodes | The gold standard for topology; annotator judgement handles ambiguity | Slow, and carries the annotator's systematic biases |
+| **Manual tracing** (CATMAID-style) | A human places and connects nodes | The gold standard for topology; annotator judgment handles ambiguity | Slow, and carries the annotator's systematic biases |
 
 **The practical consequence:** a morphology statistic is only comparable within
 one skeletonization method, at one parameter setting. If you compare branch
@@ -279,7 +279,7 @@ before trusting it on ten thousand you have not.
 ## What each conversion loses
 
 The representations are not interchangeable, and the pipeline between them is
-one-way. Knowing which direction you are travelling tells you what you can
+one-way. Knowing which direction you are traveling tells you what you can
 still ask.
 
 | From → to | What is preserved | What is gone for good |
@@ -290,7 +290,7 @@ still ask.
 | **Volume → graph** (the full pipeline) | The connectivity claim | Everything you would need to check that claim against the images |
 
 The last row is the important one. By the time you are working with an
-adjacency matrix, every judgement made upstream — segmentation, agglomeration,
+adjacency matrix, every judgment made upstream — segmentation, agglomeration,
 synapse detection, proofreading — has been baked in and is invisible. That is
 why provenance metadata is not bureaucracy: it is the only remaining link
 between a number and the evidence for it.

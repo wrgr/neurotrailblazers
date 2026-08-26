@@ -121,7 +121,7 @@ A practical reproducibility checklist for any connectomics analysis release shou
 1. **00:00-06:00 | Framing: the silent bug**
    - Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
    - Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
-2. **06:00-16:00 | The five-element checklist, modelled**
+2. **06:00-16:00 | The five-element checklist, modeled**
    - Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
    - Show what breaks when each one is missing, in turn.
 3. **16:00-30:00 | Guided practice: audit your own work**

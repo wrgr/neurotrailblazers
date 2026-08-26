@@ -114,7 +114,7 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - **Misconception guardrail:** you can proofread your way out of a bad image.
 - **Misconception guardrail:** a noisy image is worse for segmentation than a clean image with faint membranes.
 - **Misconception guardrail:** artifact severity can be judged from a count, when the spatial distribution matters more.
-- **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgement that propagates through every downstream claim.
+- **Misconception guardrail:** quality assessment is a clerical checkpoint rather than a scientific judgment that propagates through every downstream claim.
 
 ## Core workflow
 

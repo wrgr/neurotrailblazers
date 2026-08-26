@@ -27,7 +27,7 @@ use_layout_hero: false
     <p>Tracks are split two ways, and the two are independent:</p>
     <ul class="list-tight">
       <li><strong>Topic</strong> &mdash; three tracks, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
-      <li><strong>Mode of use</strong> &mdash; whether you are working alone, running a hosted session, or inside a research programme.</li>
+      <li><strong>Mode of use</strong> &mdash; whether you are working alone, running a hosted session, or inside a research program.</li>
     </ul>
     <p>Any track can be worked in any available mode. Pick the topic below, then the mode &mdash; or the other way round, if your situation is the fixed part.</p>
   </section>

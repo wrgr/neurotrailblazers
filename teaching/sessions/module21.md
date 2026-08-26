@@ -51,7 +51,7 @@ Learners should arrive having covered:
 | Time | Segment | Your note |
 |---|---|---|
 | 00:00-06:00 | Framing: the silent bug | |
-| 06:00-16:00 | The five-element checklist, modelled | |
+| 06:00-16:00 | The five-element checklist, modeled | |
 | 16:00-30:00 | Guided practice: audit your own work | |
 | 30:00-40:00 | Clean-environment rerun | |
 | 40:00-50:00 | Known limitations, written honestly | |
@@ -106,7 +106,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes
-behaviour within one session.
+behavior within one session.
 
 ## Exit prompt
 

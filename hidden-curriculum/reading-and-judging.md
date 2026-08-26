@@ -15,7 +15,7 @@ content_type: core
 specified. Nobody says which of the four quite different activities they mean, how long
 it should take, or what you should be able to do afterwards. People who grew up around
 academics tend to guess correctly. Everyone else reads front to back, highlights a lot,
-takes four hours, arrives at the meeting able to summarise and unable to judge, and
+takes four hours, arrives at the meeting able to summarize and unable to judge, and
 concludes they are slow.
 
 They are not slow. They were given an underspecified instruction and no one noticed.
@@ -244,7 +244,7 @@ effect size" is a level 3 claim.
 
 > "The motif enrichment is against a degree-preserving null, which is the right minimum.
 > But soma positions are available in this dataset, and reciprocal partners are
-> disproportionately near neighbours, so I'd expect a distance-preserving null to reduce
+> disproportionately near neighbors, so I'd expect a distance-preserving null to reduce
 > the effect — possibly to nothing. I think this is a question the authors could settle
 > in an afternoon."
 
@@ -275,7 +275,7 @@ for the flaw in *your* reasoning first.
   are different acts with different consequences, and conflating them is how a defensible
   technical objection becomes a reputational problem for the objector.
 - **The asymmetry is real.** A junior researcher's level 4 objection against a
-  well-resourced group will be scrutinised harder than the same objection from a
+  well-resourced group will be scrutinized harder than the same objection from a
   professor, and that is unfair. The workable response is not to lower your standards for
   the claim but to raise your standards for the write-up: numbers attached, one reader
   first, no adjectives.
@@ -295,7 +295,7 @@ Use it like this:
   produces exactly the confident-but-uncheckable state this page exists to prevent.
 - **Read the OCAR *Resolution* field, then go and test it with the four questions
   above.** Resolution is where a summary is most likely to inherit a claim the paper did
-  not establish, which makes it the ideal place to practise.
+  not establish, which makes it the ideal place to practice.
 - **Prepare in 45 minutes**, not three hours: the reading order (steps 1–3), one absence
   from the methods checklist, and one of the four fragility questions with an attempted
   answer. That is a fuller preparation than most people in the room will have done.
@@ -304,7 +304,7 @@ Use it like this:
 
 If you are running a journal club: assign the four fragility questions to four people
 rather than assigning a presenter. The presenter format produces a summary; the question
-format produces a judgement, which is the capability being trained.
+format produces a judgment, which is the capability being trained.
 
 ---
 
@@ -312,7 +312,7 @@ format produces a judgement, which is the capability being trained.
 
 **Preprints.** Read them the same way, and note the one real difference: nobody has yet
 had an incentive to ask the level 3 question. That makes preprints excellent material for
-practising on and poor material for citing as settled. Say "preprint" out loud when you
+practicing on and poor material for citing as settled. Say "preprint" out loud when you
 cite one in a meeting.
 
 **Papers outside your subfield.** Steps 1–3 still work; step 4 will not, because you

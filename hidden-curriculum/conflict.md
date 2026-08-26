@@ -13,7 +13,7 @@ content_type: core
 
 | | |
 |---|---|
-| **Read this** | Some months before you need it. Judgement is worse from inside a live dispute. |
+| **Read this** | Some months before you need it. Judgment is worse from inside a live dispute. |
 | **The core skill** | Telling apart a *scientific* disagreement from one about *credit or power*. Misreading which one you are in is the failure that produces most of the damage. |
 | **This page will not** | Pretend that formal processes are reliably safe, or that persistence always wins. |
 
@@ -25,7 +25,7 @@ Three kinds of conflict get treated as one, and they respond to completely diffe
 
 | | **Scientific** | **Credit / power** | **Conduct** |
 |---|---|---|---|
-| What it is about | Whether a claim is right | Who gets what, or who decides | Behaviour that breaches a rule or a person |
+| What it is about | Whether a claim is right | Who gets what, or who decides | Behavior that breaches a rule or a person |
 | Resolvable by | Evidence, and one of you changing your mind | Negotiation, norms, sometimes escalation | Process, documentation, sometimes exit |
 | Good-faith assumption | Usually safe | Sometimes | Do not rely on it |
 | Written record | Helpful | Important | Essential from the first incident |
@@ -104,7 +104,7 @@ Proportionality is everything here, and getting it wrong is the most common way 
 1. Establish what you actually want. Author position? Acknowledgement? An apology? Something different next time? Vagueness here loses arguments.
 2. Ask directly and privately first, framed as a question rather than an accusation: *"I want to check how we're thinking about authorship on this — my understanding was I'd be second, and I want to make sure I've got that right before it goes out."*
 3. If that fails, escalate to a person, not a process — a co-author with standing, a graduate director, a mentor outside the group. Processes are slow and blunt; people resolve most of these.
-4. Formal routes exist. They are appropriate for genuine misconduct. Understand before you start that they are costly and that "resolved" often does not mean "resolved in your favour".
+4. Formal routes exist. They are appropriate for genuine misconduct. Understand before you start that they are costly and that "resolved" often does not mean "resolved in your favor".
 
 **The proofreading case specific to this field:** community proofreading contributions are essential and chronically under-credited. If you are contributing at scale, ask early what the credit model is — contribution counts, acknowledgement, authorship thresholds. The projects that do this well state it up front; if a project cannot answer the question, that is information.
 
@@ -122,7 +122,7 @@ This section is deliberately blunt, because writing that soft-pedals it does rea
 
 **An ombudsperson is usually the safest first conversation** where one exists — typically confidential and non-reporting, so you can understand your options without starting anything.
 
-**Do not go alone if you can avoid it.** One other person who knows what is happening, ideally outside the power structure, materially changes both your judgement and your safety.
+**Do not go alone if you can avoid it.** One other person who knows what is happening, ideally outside the power structure, materially changes both your judgment and your safety.
 
 ---
 
@@ -130,7 +130,7 @@ This section is deliberately blunt, because writing that soft-pedals it does rea
 
 Leaving is a legitimate strategic choice, not a failure of resilience. Consider it seriously when:
 
-- The behaviour is known to people with the power to stop it, and has not been stopped.
+- The behavior is known to people with the power to stop it, and has not been stopped.
 - You are managing around a person rather than doing your work.
 - The cost is showing up outside work, persistently.
 - The thing you would gain by staying is one line on a CV.

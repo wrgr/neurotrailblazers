@@ -63,7 +63,7 @@ def demote_headings(text)
   text.gsub(/^(#{'#'}{3,5})\s+/) { "#{Regexp.last_match(1)}# " }
 end
 
-# Pulls a labelled sub-block out of a section, e.g. the outputs list inside the
+# Pulls a labeled sub-block out of a section, e.g. the outputs list inside the
 # Studio activity section. Module pages label these inconsistently, so accept all
 # of: "**Outputs**", "**Outputs:**", "**Outputs**:", "### Outputs", "## Outputs".
 # Returns '' when absent.
@@ -639,7 +639,7 @@ module_paths.each do |path|
 
     **Grade the reasoning, not the answer.** A correct call with no evidence chain
     should not outscore a well-reasoned incorrect one — and saying so publicly changes
-    behaviour within one session.
+    behavior within one session.
 
     ## Exit prompt
 
@@ -687,7 +687,7 @@ File.write(sessions_index, <<~MD)
   `modules/moduleNN.md` and re-run `scripts/generate_module_teaching_materials.rb`.
 
   For the reasoning behind the session design — why half of contact time should be
-  learner judgement rather than explanation, how to differentiate across the learner
+  learner judgment rather than explanation, how to differentiate across the learner
   personas, and what to do when a session goes wrong — see the
   [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
 

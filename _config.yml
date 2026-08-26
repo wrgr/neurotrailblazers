@@ -1,6 +1,6 @@
 # NeuroTrailblazers - Jekyll Configuration
 title: "NeuroTrailblazers"
-description: "Illuminating Pathways for Trailblazing Neuroscience Researchers - A curriculum and mentorship platform for nanoscale connectomics discovery"
+description: "Illuminating Pathways for Trailblazing Neuroscience Research(ers) - A curriculum and mentorship platform for nanoscale connectomics discovery"
 baseurl: ""
 url: "https://neurotrailblazers.org"
 
@@ -95,7 +95,7 @@ navigation:
 
 # Grant and program information
 grant_info:
-  program: "NIH CONNECTS"
+  program: "NIH BRAIN CONNECTS"
   grant: "Mouse Connectome Project"
   funding_agency: "National Institutes of Health"
   focus: "connectome quality and dissemination"
@@ -103,8 +103,8 @@ grant_info:
 # Program tagline used across pages
 tagline_lines:
   - "We power breakthroughs by developing and deploying top research talent."
-  - "Our research incubators equip students and mentors with the tools, guidance, and experience to accelerate innovation across cutting-edge fields such as neuroscience, AI, and decision science."
-  - "Neurotrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the CONNECTS community and beyond."
+  - "Our research incubators equip students and mentors with the tools, guidance, and experience to accelerate innovation in neuroscience and AI."
+  - "NeuroTrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the BRAIN CONNECTS community and beyond."
 
 # Color palette
 colors:
@@ -122,18 +122,16 @@ exclude:
   - node_modules
   - scripts
   # Working files for the technical track: unit source specs, deck specs,
-  # ingest transcripts, reviews, and templates. These are build inputs, not
-  # pages. Publishing them produced ~60 unstyled draft pages that duplicated
-  # the real technical units and exposed local authoring paths. The rendered
+  # and ingest transcripts. These are build inputs, not pages. Publishing
+  # them produced ~60 unstyled draft pages that duplicated the real
+  # technical units and exposed local authoring paths. The rendered
   # decks under course/decks/marp/out/ are static assets and stay published.
+  # (Planning boards, reviews, and templates live on the
+  # holding/internal-planning branch, off the deployed branch entirely.)
   - course/source-ingest
   - course/units
-  - course/reviews
-  - course/templates
-  - course/workboard.md
-  - course/capability-development-plan.md
-  - course/decision-rules.md
-  - course/instructional-framework.md
+  - course/README.md
+  - course/decks/README.md
   - course/decks/content-import-matrix.md
   - course/decks/marp/modules
   - course/decks/marp/*.marp.md

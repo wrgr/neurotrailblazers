@@ -46,8 +46,7 @@ NeuroTrailblazers owns the learner journey:
 - evidence literacy;
 - mentoring;
 - public interpretation;
-- career pathways;
-- Explore → Learn → Contribute progression.
+- career pathways.
 
 ## What not to duplicate
 Do not build a competing CONNECTS-KB, APEX projectome platform, ABC Atlas manual, MICrONS viewer, or project documentation better maintained by the originating team.

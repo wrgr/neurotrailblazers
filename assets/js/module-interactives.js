@@ -356,7 +356,7 @@
   /**
    * Wrap markdown-generated reference tables in a horizontal scroll container.
    *
-   * A five-column artifact catalogue is 626px wide in a 390px viewport, which
+   * A five-column artifact catalog is 626px wide in a 390px viewport, which
    * scrolls the whole page sideways. The scrolling has to live on a wrapper:
    * doing it on the table itself means `display: block`, which costs the table
    * its layout context and leaves the header row sizing its columns

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module14/
 description: "Apply computer vision methods to EM imagery for segmentation support, morphology extraction, and quality diagnostics."
 module_number: 14
+image: /assets/images/modules/module14.svg
+image_alt: "Stylized vector art: a convolution window sliding across an image grid toward a feature map."
 difficulty: "Advanced"
 duration: "4-5 hours"
 learning_objectives:

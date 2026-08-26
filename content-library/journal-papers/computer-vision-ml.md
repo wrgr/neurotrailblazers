@@ -119,9 +119,9 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 **Intermediate:** SegEM presents an end-to-end pipeline for SBEM data with a deliberate design choice: tune for **over-segmentation**, then rely on human agglomeration. The authors quantify the tradeoff between automated segmentation quality and the human effort required to finish the job, and they introduce practical training-data generation and validation procedures.
 
-**Advanced:** The lasting contribution is the explicit framing of segmentation quality as a *human-effort* variable rather than an accuracy score. That framing — how many corrections per millimeter of traced neurite does this segmentation cost? — is the correct optimization target for a production project, and it is the frame [Unit 08](/technical-training/08-segmentation-and-proofreading/) builds on. The paper's error analysis by process calibre is also worth studying: error rates are strongly non-uniform, concentrating in thin processes, so aggregate accuracy numbers systematically flatter a method.
+**Advanced:** The lasting contribution is the explicit framing of segmentation quality as a *human-effort* variable rather than an accuracy score. That framing — how many corrections per millimeter of traced neurite does this segmentation cost? — is the correct optimization target for a production project, and it is the frame [Unit 08](/technical-training/08-segmentation-and-proofreading/) builds on. The paper's error analysis by process caliber is also worth studying: error rates are strongly non-uniform, concentrating in thin processes, so aggregate accuracy numbers systematically flatter a method.
 
-**Key figures:** Pipeline overview; segmentation-quality vs human-effort tradeoff; error rates by neurite calibre.
+**Key figures:** Pipeline overview; segmentation-quality vs human-effort tradeoff; error rates by neurite caliber.
 
 **Discussion prompts:**
 - Why deliberately over-segment rather than tuning for balanced error?

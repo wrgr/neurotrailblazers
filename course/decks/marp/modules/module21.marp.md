@@ -42,7 +42,7 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ### 1) FAIR as implementation checklist
 - **Technical:** findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.
 - **Plain language:** "FAIR" only counts if someone else can actually find, open, and use your work.
-- **Misconception guardrail:** posting files online is not enough.
+- **Misconception guardrail:** posting files online makes work FAIR.
 
 ---
 
@@ -83,9 +83,9 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** posting files online is not enough.
-- **Misconception guardrail:** a notebook that runs once does not guarantee robust science.
-- **Misconception guardrail:** learners should not be penalized for norms that were never made explicit.
+- **Misconception guardrail:** posting files online makes work FAIR.
+- **Misconception guardrail:** a notebook that ran end-to-end once is proof of reproducible science.
+- **Misconception guardrail:** reproducibility norms are common sense that any careful trainee will infer without being taught.
 
 ---
 
@@ -104,17 +104,19 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 
 ## Assessment Rubric
 - **Minimum pass**
-- Core provenance fields are present and clear.
-- Re-run instructions are testable by peers.
-- Limitations and assumptions are explicit.
+- All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
+- Re-run instructions testable by a peer without contacting the author.
+- Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.
 - **Strong performance**
-- Identifies hidden reproducibility norms and makes them explicit.
-- Anticipates downstream reuse failure points.
-- Produces concise, audit-friendly documentation.
+- Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.
+- Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.
+- ID churn quantified whenever identifiers cross versions, and reported in the methods.
+- Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.
 - **Common failure modes**
-- Missing version identifiers for data/code.
-- Methods descriptions that omit key parameters.
-- "Reproducible in principle" claims without validation evidence.
+- Missing version identifiers for data or code.
+- Methods that omit key parameters or the environment specification.
+- "Reproducible in principle" claims without a validation rerun.
+- Limitations sections written as boilerplate rather than as concrete guidance.
 
 ---
 

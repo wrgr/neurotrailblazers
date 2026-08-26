@@ -3,6 +3,8 @@ layout: page
 title: "03 EM Prep and Imaging"
 description: "The tissue-to-image-stack chain in practical detail: fixation and staining chemistry, sectioning, imaging parameters, and an artifact catalog mapped to downstream reconstruction cost."
 permalink: /technical-training/03-em-prep-and-imaging/
+image: /assets/images/units/03-em-prep-and-imaging.svg
+image_alt: "Stylized vector art: a specimen block, a ribbon of serial sections, and a beam scanning a circular field."
 slug: 03-em-prep-and-imaging
 track: core-concepts-methods
 pathways:
@@ -505,6 +507,7 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 
 ## Go deeper
 
+- [Atlas and connectomics reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — the public volumes this unit tells you to open, with access routes and specs in one lookup table
 - [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}) — full protocol detail and chemistry
 - [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — beam physics, TEM vs SEM, contrast mechanisms
 - [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — extended catalog with images

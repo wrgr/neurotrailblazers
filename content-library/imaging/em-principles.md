@@ -2,6 +2,8 @@
 layout: page
 title: "EM Principles"
 permalink: /content-library/imaging/em-principles/
+image: /assets/images/content-library/imaging/em-principles.svg
+image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
 description: "Electron microscopy physics, contrast mechanisms, and resolution limits as they apply to connectomics imaging. Full instructor script with references and worked examples."
 topics:
   - electron-microscopy
@@ -199,9 +201,9 @@ Imagine you are looking at a single 2D EM image (SEM-BSE mode, ~8 nm pixel size)
 - Bozzola JJ, Russell LD (1999) *Electron Microscopy: Principles and Techniques for Biologists*. Jones & Bartlett. — Comprehensive EM methods textbook.
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure." *PLoS Biology* 2(11):e329. — Introduced SBEM for neuroscience.
-- Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12(4):319-322. — ATUM method.
+- Hayworth KJ et al. (2015) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12(4):319-322. [10.1038/nmeth.3292](https://doi.org/10.1038/nmeth.3292)
 - Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923. — rOTO staining for volume EM.
 - Knott G et al. (2008) "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling." *Journal of Neuroscience* 28(12):2959-2964.
 - White JG et al. (1986) "The structure of the nervous system of the nematode *Caenorhabditis elegans*." *Philosophical Transactions of the Royal Society B* 314(1165):1-340.
-- Xu CS et al. (2021) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 10:e65541. — Janelia enhanced FIB-SEM.
+- Xu CS et al. (2017) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 6:e25916. [10.7554/eLife.25916](https://doi.org/10.7554/eLife.25916) — Janelia enhanced FIB-SEM.
 - Zheng Z et al. (2018) "A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*." *Cell* 174(3):730-743. — FAFB dataset.

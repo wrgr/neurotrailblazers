@@ -48,7 +48,7 @@
 <ul>
 <li><strong>Technical:</strong> findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.</li>
 <li><strong>Plain language:</strong> &quot;FAIR&quot; only counts if someone else can actually find, open, and use your work.</li>
-<li><strong>Misconception guardrail:</strong> posting files online is not enough.</li>
+<li><strong>Misconception guardrail:</strong> posting files online makes work FAIR.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="7" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
@@ -92,9 +92,9 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
 <ul>
-<li><strong>Misconception guardrail:</strong> posting files online is not enough.</li>
-<li><strong>Misconception guardrail:</strong> a notebook that runs once does not guarantee robust science.</li>
-<li><strong>Misconception guardrail:</strong> learners should not be penalized for norms that were never made explicit.</li>
+<li><strong>Misconception guardrail:</strong> posting files online makes work FAIR.</li>
+<li><strong>Misconception guardrail:</strong> a notebook that ran end-to-end once is proof of reproducible science.</li>
+<li><strong>Misconception guardrail:</strong> reproducibility norms are common sense that any careful trainee will infer without being taught.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="10" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
@@ -114,17 +114,19 @@
 <h2 id="assessment-rubric">Assessment Rubric</h2>
 <ul>
 <li><strong>Minimum pass</strong></li>
-<li>Core provenance fields are present and clear.</li>
-<li>Re-run instructions are testable by peers.</li>
-<li>Limitations and assumptions are explicit.</li>
+<li>All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.</li>
+<li>Re-run instructions testable by a peer without contacting the author.</li>
+<li>Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.</li>
 <li><strong>Strong performance</strong></li>
-<li>Identifies hidden reproducibility norms and makes them explicit.</li>
-<li>Anticipates downstream reuse failure points.</li>
-<li>Produces concise, audit-friendly documentation.</li>
+<li>Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.</li>
+<li>Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.</li>
+<li>ID churn quantified whenever identifiers cross versions, and reported in the methods.</li>
+<li>Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.</li>
 <li><strong>Common failure modes</strong></li>
-<li>Missing version identifiers for data/code.</li>
-<li>Methods descriptions that omit key parameters.</li>
-<li>&quot;Reproducible in principle&quot; claims without validation evidence.</li>
+<li>Missing version identifiers for data or code.</li>
+<li>Methods that omit key parameters or the environment specification.</li>
+<li>&quot;Reproducible in principle&quot; claims without a validation rerun.</li>
+<li>Limitations sections written as boilerplate rather than as concrete guidance.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="13" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">

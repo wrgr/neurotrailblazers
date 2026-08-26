@@ -2,6 +2,8 @@
 layout: page
 title: "Dendrite Biology and Ultrastructure"
 permalink: /content-library/neuroanatomy/dendrite-biology/
+image: /assets/images/content-library/neuroanatomy/dendrite-biology.svg
+image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
   Comprehensive instructor reference on dendritic structure and ultrastructure as
   observed in electron microscopy, covering proximal-to-distal morphology gradients,

@@ -121,7 +121,7 @@ The pages above are markdown, not generated from data — the annotations are wr
 hand, which is why they carry key figures and related-content links that no data file
 holds.
 
-Structured records exist for the **separate 200-paper journal club corpus** in
+Structured records exist for the **separate {{ site.data.journal_papers.papers | size }}-paper journal club corpus** in
 `_data/journal_papers.yml`. Its schema is:
 
 ```yaml

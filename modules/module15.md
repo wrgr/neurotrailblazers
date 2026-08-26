@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module15/
 description: "Use LLM-assisted workflows for patch triage, annotation support, and documentation in connectomics without outsourcing scientific judgment."
 module_number: 15
+image: /assets/images/modules/module15.svg
+image_alt: "Stylized vector art: an EM patch beside chat bubbles of generated analysis."
 difficulty: "Advanced"
 duration: "4-5 hours"
 learning_objectives:

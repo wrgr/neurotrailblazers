@@ -101,9 +101,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum pass**: Correct error labels and at least one valid correction with evidence.
-- **Strong performance**: Correction prioritization explicitly tied to downstream analysis impact. Metrics show measurable improvement.
-- **Common failure to flag**: Correction without evidence of quality change — fixing things without checking whether it helped.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

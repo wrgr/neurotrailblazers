@@ -4,6 +4,11 @@ layout: default
 
 <div class="layout-content layout-module">
   {% include ui/page-hero.html %}
+  {% if page.image %}
+  <figure class="module-art">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}" loading="lazy" width="1200" height="420">
+  </figure>
+  {% endif %}
   {% include ui/module-lesson-map.html %}
   {% if page.interactive_lab != false %}
   {% include ui/module-interactive-lab.html %}

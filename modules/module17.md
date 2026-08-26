@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module17/
 description: "Write clear, evidence-grounded connectomics manuscripts, figure legends, and response letters for technical audiences."
 module_number: 17
+image: /assets/images/modules/module17.svg
+image_alt: "Stylized vector art: a manuscript page gaining structure, with a margin note arrowed into the text."
 difficulty: "Intermediate"
 duration: "4-5 hours"
 learning_objectives:

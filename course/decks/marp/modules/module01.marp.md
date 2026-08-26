@@ -40,9 +40,9 @@ Write one connectomics study question with measurable structural outputs and one
 
 ## Concept Focus
 ### 1) Question before method
-- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency).
+- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). Tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
 - **Plain language:** know what you are asking first.
-- **Misconception:** tools generate good questions automatically. In reality, tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+- **Misconception guardrail:** tools generate good questions automatically.
 
 ---
 
@@ -77,13 +77,13 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Misconceptions to Watch
-- **Misconception:** tools generate good questions automatically. In reality, tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
-- **Misconception:** connectome equals full explanation. The C. elegans connectome was completed decades ago, yet behavior prediction from wiring alone remains an open problem.
-- **Misconception:** broad vision statements are sufficient project plans.
-- **Misconception:** excitement at the start is enough to carry you through a multi-month project.
-- **Misconception:** if the work feels tedious, you chose the wrong field.
-- **Misconception:** good annotators never make errors. In practice, even expert proofreaders disagree on 5-10% of decisions.
-- **Misconception:** my individual contribution is too small to matter.
+- **Misconception guardrail:** tools generate good questions automatically.
+- **Misconception guardrail:** a completed connectome is a full explanation of behavior.
+- **Misconception guardrail:** broad vision statements are sufficient project plans.
+- **Misconception guardrail:** excitement at the start is enough to carry you through a multi-month project.
+- **Misconception guardrail:** if the work feels tedious, you chose the wrong field.
+- **Misconception guardrail:** good annotators never make errors.
+- **Misconception guardrail:** my individual contribution is too small to matter.
 
 ---
 
@@ -100,9 +100,19 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Assessment Rubric
-- **Minimum:** question, metric, limitation all present; motivation statement addresses why and how.
-- **Strong:** clear falsification condition, realistic scope, motivation statement includes specific sustainability strategies.
-- **Failure:** motivational text without measurable outputs; motivation statement is generic ("I like brains").
+- **Minimum:**
+- Question names organism, region or circuit, and one structural measurement with units.
+- Metric, dataset, and non-claim are all present and consistent with each other.
+- Motivation statement addresses both why and how.
+- **Strong:**
+- Falsification condition names the specific result that would count against the hypothesis.
+- Scope is sized so the first milestone could be finished within a week.
+- Motivation statement names at least two sustainability strategies with triggers ("when X dips, I will Y").
+- Non-claim correctly identifies a functional inference the structural data cannot support.
+- **Failure:**
+- Motivational text without measurable outputs, or a question no result could contradict.
+- Motivation statement is generic ("I like brains") or omits a plan for the motivation gap.
+- Claim language exceeds the evidence class of the proposed measurement.
 
 ---
 

@@ -2,6 +2,8 @@
 layout: page
 title: "Proofreading Strategies for Connectome Reconstruction"
 permalink: /content-library/proofreading/proofreading-strategies/
+image: /assets/images/content-library/proofreading/proofreading-strategies.svg
+image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: >
   A comprehensive instructor reference on the major strategies for proofreading
   automated neural segmentation, from exhaustive local correction to crowd-sourced

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module10/
 description: "Represent connectomes as graphs and interpret network metrics with biological and statistical caution."
 module_number: 10
+image: /assets/images/modules/module10.svg
+image_alt: "Stylized vector art: a network graph with one triangle motif highlighted."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:
@@ -95,6 +97,22 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - **Misconception guardrail:** a graph metric means the same thing biologically as it does in its original network-science context.
 - **Misconception guardrail:** Erdos-Renyi is an acceptable null for a spatially embedded, degree-heterogeneous connectome.
 
+## Worked example: the hub that was a merge error
+
+The numbers below are illustrative — they show the shape of the reasoning, not results from a specific published dataset.
+
+Your PI hands you a 500-neuron subgraph from a cortical column and asks whether the circuit has hub neurons. You build the graph at threshold ≥1 synapse: 500 nodes, 11,400 directed edges, density 0.046. Here is the expert's pass through it.
+
+**Step 1 — Look at the degree distribution before computing anything else.** Sorted out-degrees: the top node has 214 partners; the next highest has 91. A degree outlier at more than twice the runner-up is a data-quality question before it is a biology question, because a merge error fuses two neurons' partner lists and manufactures exactly this signature. Pull the mesh for the top node: two somata. It is a merge. Flag it upstream, exclude it from this analysis, and record the exclusion. The new top degree is 91, inside a smooth heavy tail — no single dramatic hub, but a top-5% tier of well-connected cells worth naming as candidates.
+
+**Step 2 — Compute clustering, then immediately ask "compared to what."** Clustering coefficient = 0.19. Alone, this number means nothing. Against 1,000 degree-preserving rewirings: null mean 0.11, sd 0.008 — the observed value is 1.7x the null, z about 10. Before writing "significant local structure," say the next sentence out loud: nearby neurons connect more often because their arbors overlap, and a spatially constrained null would absorb some of this. You cannot run that null without soma positions in hand this week, so the claim is scoped: "clustering exceeds the degree-preserving expectation; a spatial null has not been applied." That one sentence is the difference between a defensible report and a retraction-in-waiting; the spatial machinery itself is [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}).
+
+**Step 3 — Re-run the headline numbers at a second threshold.** At ≥3 synapses the graph keeps 4,100 edges — the 1-2 synapse pairs were 64% of all edges. Clustering rises to 0.24 against a null of 0.10, so the direction of the conclusion holds. But the hub candidate list changes: 3 of the top 10 cells by degree drop out, because their rank depended on many weak connections that may be detection noise. Report both thresholds and present the hub list as the intersection, with the cells that moved flagged.
+
+**Step 4 — Say what the abstraction lost.** The graph cannot distinguish a synapse on the soma from one on a distal dendrite, and it has discarded every spatial relationship, so "hub" here means "many partners," not "many strong or strategically placed inputs." If the biological question is about influence rather than partner count, the compartment-level information this graph discarded is the missing evidence, and the module that handles synapse placement is [Module 11]({{ '/modules/module11/' | relative_url }}).
+
+**What gets reported.** A metrics table at two thresholds with null comparisons, the merged object's exclusion with its evidence, the scoped clustering claim, and a hub candidate list stable across thresholds. **What this does not establish:** that the hubs are functionally important, that clustering survives a spatial null, or that the 1-synapse edges were noise — each of those is a further, separately designed test.
+
 ## Core workflow
 1. Define node/edge schema: what are your nodes, what are your edges, what weighting scheme?
 2. Construct graph from synapse table (e.g., using CAVEclient + NetworkX). Inspect: number of nodes, edges, density, connected components.
@@ -156,9 +174,36 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - 1-page report.
 
 ## Assessment rubric
-- **Minimum pass**: Coherent graph model and metric rationale. Null comparison included.
-- **Strong performance**: Clear link between each metric and a biological question. Multiple null models tested. Community structure validated against external data.
-- **Common failure to flag**: Metric dumping without hypothesis alignment — computing every metric available without explaining what question each answers.
+- **Minimum pass**
+  - The node/edge schema is stated explicitly — node definition, edge direction, weighting, and synapse threshold — before any metric appears.
+  - Each reported metric is paired with a null-model comparison; no bare metric values stand alone.
+  - At least two metrics are linked in writing to the specific question they answer for the PI's three asks (small-world, hubs, communities).
+  - The report names at least one piece of information the graph abstraction discarded and one question it therefore cannot answer.
+- **Strong performance**
+  - The headline result is re-run at a second synapse threshold, and the report states which conclusions held and which moved.
+  - Degree outliers are checked against the underlying reconstruction before being reported as hubs, with the check documented.
+  - More than one null model is used, or the limits of the single null are stated in words (what it does and does not control for).
+  - Detected communities are compared against external labels (cell types), and disagreement is reported as a finding rather than suppressed.
+- **Common failure to flag**
+  - Metric dumping — computing every available metric without explaining what question each answers.
+  - Hub or community claims made without checking whether a merge error or threshold choice manufactured them.
+  - A significance claim against Erdos-Renyi only, on a graph with obvious degree heterogeneity.
+
+## Common errors and how to recover
+
+- **A metric is reported without a baseline.** "Clustering = 0.19" is not a result. Recover by generating at least 1,000 degree-preserving rewirings, reporting the null mean and spread next to the observed value, and stating in one sentence what the null does not control (space, cell type).
+- **The synapse threshold was chosen once and never revisited.** In real connectomes 1-2 synapse pairs are typically the majority of edges, so the threshold silently decides your graph. Recover by re-running the headline numbers at a second threshold and reporting both; a conclusion that flips with the threshold is itself the finding.
+- **A "hub" turns out to be a reconstruction artifact.** A degree outlier far above the rest of the tail is a merge candidate. Recover by inspecting the object's morphology before publishing the hub list, excluding confirmed merges with a documented reason, and rechecking whether the hub tier survives.
+- **Community detection returned a partition and you believed it.** Modularity methods return a partition for any graph, including a random one. Recover by comparing the achieved modularity to that of rewired graphs, and by validating detected communities against independent labels such as cell types; details are in [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }}).
+- **The report reads as if the graph were the biology.** Path length in synapses is not conduction delay, and degree is not influence. Recover by adding a limits paragraph that names what the abstraction discarded — geometry, compartment targeting, synapse size — and which of the PI's questions actually need that information.
+
+## What this module does not cover
+
+- **Null models beyond degree preservation.** Distance-dependent, cell-type-stratified, and generative nulls — and the worked example showing an effect vanish as nulls strengthen — are [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) and [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}).
+- **Motif-level statistics.** The triad census, multiple-comparison handling, and merge-error bias on motif counts are [Module 11]({{ '/modules/module11/' | relative_url }}) and [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}).
+- **Hypothesis design discipline.** What makes a graph claim testable in the first place — metric scope, interpretation boundaries, pre-declared tests — is [Module 08]({{ '/modules/module08/' | relative_url }}).
+- **Where the edge list comes from.** Segmentation and synapse-detection error, and how much to trust a 1-synapse edge, are [Module 06]({{ '/modules/module06/' | relative_url }}) and [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
+- **Spectral methods, graph matching, and embeddings.** These are surveyed in [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }}); this module stops at the metric families a first analysis needs.
 
 ## Content library references
 - [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}) — Nodes, edges, weights, adjacency matrices, tools

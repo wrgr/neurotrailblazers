@@ -2,6 +2,8 @@
 layout: page
 title: "Synapse Classification and Identification"
 permalink: /content-library/neuroanatomy/synapse-classification/
+image: /assets/images/content-library/neuroanatomy/synapse-classification.svg
+image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
   Comprehensive instructor reference on synapse classification in electron microscopy,
   covering the Gray Type I/Type II system, synaptic cleft structure, pre- and

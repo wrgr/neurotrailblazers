@@ -2,6 +2,8 @@
 layout: page
 title: "Organelle Cues for Compartment Identification"
 permalink: /content-library/neuroanatomy/organelle-cues/
+image: /assets/images/content-library/neuroanatomy/organelle-cues.svg
+image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
   Comprehensive instructor reference on using organelle distribution and morphology
   as diagnostic cues for identifying neuronal compartments (soma, dendrite, axon,

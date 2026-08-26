@@ -96,8 +96,8 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ## Misconceptions to Watch
 - **Misconception guardrail:** cortical layer can be read off a single EM patch without soma density or neuropil context.
 - **Misconception guardrail:** the hippocampal laminar logic transfers to neocortex because both are cortex.
-- **Misconception guardrail:** an atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
-- **Misconception guardrail:** annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
+- **Misconception guardrail:** an atlas coordinate is a ground-truth location.
+- **Misconception guardrail:** annotation confidence should be uniform across a volume.
 
 ---
 
@@ -114,9 +114,19 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Assessment Rubric
-- **Minimum pass**: Context-aware call and confidence note for each patch. Layer identification is reasonable (within ±1 layer).
-- **Strong performance**: Clear rationale linking EM features to layer context. Uncertainty is explicit and well-reasoned. Cross-slice evidence cited.
-- **Common failure to flag**: Isolated local cue overconfidence — making a definitive call from a single feature without checking layer context or neighboring slices.
+- **Minimum pass**
+- Context-aware call and confidence note recorded for every patch.
+- Layer identification within ±1 layer for the majority of patches.
+- At least one evidence chain written in the form "features observed, therefore layer, therefore expected structures."
+- **Strong performance**
+- Each call links at least two independent EM cues (soma density, neuropil texture, cell-type signature) to layer context.
+- Confidence varies across patches in a calibrated way: boundary and volume-edge patches score lower than mid-layer patches.
+- Cross-slice (z) evidence cited wherever a single-section call was ambiguous.
+- Partner disagreements resolved by naming which cue was decisive, not by splitting the difference.
+- **Common failure to flag**
+- Definitive call from a single feature without a layer or neighbor-slice check.
+- Uniform "high" confidence across all patches, including boundary cases.
+- Hippocampal and neocortical laminar logic applied interchangeably.
 
 ---
 

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module23/
 description: "Prepare conference-ready abstracts and posters, and navigate scientific meetings with explicit hidden-curriculum support."
 module_number: 23
+image: /assets/images/modules/module23.svg
+image_alt: "Stylized vector art: a conference poster with title bar, figure panel, and a gathered audience."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

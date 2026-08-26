@@ -335,7 +335,7 @@ forever".
 **Do this.** Use the two cost classes from
 [Unit 03 §2]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})'s
 artifact table and report them separately. Report error rate by region and by process
-calibre too; it is never uniform.
+caliber too; it is never uniform.
 
 ---
 

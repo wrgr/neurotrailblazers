@@ -3,6 +3,8 @@ layout: page
 title: "06 Axons and Dendrites"
 description: "Classifying neuronal processes without reaching a soma: a cue table with independence structure, the exceptions that break the polarity rule, and why direction errors are the costliest annotation mistake."
 permalink: /technical-training/06-axons-and-dendrites/
+image: /assets/images/units/06-axons-and-dendrites.svg
+image_alt: "Stylized vector art: a spiny process above and a beaded process below, with a decision node between them."
 slug: 06-axons-and-dendrites
 track: core-concepts-methods
 pathways:
@@ -61,20 +63,20 @@ confidence.
 | **Microtubule arrangement** | Regularly spaced, often parallel; *fasciculated* in the AIS | Denser, less regular arrays | Moderate; degrades with staining quality |
 | **Smooth ER / spine apparatus** | — | Spine apparatus in a minority of spines | Moderate, confirmatory |
 
-### Family B — geometry and calibre
+### Family B — geometry and caliber
 
 | Cue | Axon | Dendrite |
 |---|---|---|
 | **Calibre along the process** | Roughly constant between boutons; beaded appearance overall | Tapers steadily with distance from soma |
 | **Swellings** | En passant boutons: discrete swellings with vesicles, connected by thin segments | Varicosities exist but lack vesicle clusters |
-| **Branch angle** | Often near-perpendicular, with little calibre change at the branch | Branches at a range of angles; **daughter branches are thinner than the parent** |
+| **Branch angle** | Often near-perpendicular, with little caliber change at the branch | Branches at a range of angles; **daughter branches are thinner than the parent** |
 | **Diameter range in neuropil** | 80–300 nm typical unmyelinated | 0.5–3 µm shafts; spine necks 50–200 nm |
 | **Myelin** | Possible | Never |
 | **Spines** | Never bears spines | Bears spines (on spiny cell types) |
 
 > **The taper rule is more useful than it looks.** At a dendritic branch point, the
 > cross-sectional areas of the daughters are systematically smaller than the parent.
-> At an axonal branch point, calibre is roughly preserved. When you can see a branch
+> At an axonal branch point, caliber is roughly preserved. When you can see a branch
 > point, this is a Family B cue that is fully independent of organelle staining
 > quality — which makes it valuable exactly when Family A is unreliable.
 
@@ -191,7 +193,7 @@ Use when you cannot reach a soma — which is most of the time.
 
 2. Are ribosomes visible?
    YES -> DENDRITE (confidence: high)
-   NO  -> weak evidence only; absence at this calibre may just mean
+   NO  -> weak evidence only; absence at this caliber may just mean
           the process is too thin. Continue.
 
 3. Is there myelin, or is the process inside a fiber bundle?
@@ -211,6 +213,56 @@ because a 150 nm process may simply be too thin to contain a visible polyribosom
 this plane. Absence is only evidence when the feature would have been visible if
 present. Beginners routinely over-read absence, and it is worth calling out
 explicitly during training.
+
+### Worked example: a 200 nm process, no soma in reach
+
+> **Patch:** cortical neuropil. An unbroken process, roughly 200 nm across, enters
+> the field, runs about 4 µm, and leaves. Staining is moderate. No soma is
+> reachable — the standard situation this protocol exists for.
+
+**Tissue check first (§2):** cortex, so the polarity rule is a safe default here.
+Answered once, from the protocol, not re-litigated per process.
+
+**Step 1 — synapse in view?** Not on the first pass through the visible stretch.
+Continue.
+
+**Step 2 — ribosomes?** None visible. The tempting move is to lean axon — but at
+200 nm the process may simply be too thin to show a polyribosome in any one plane,
+so this absence is weak evidence, exactly as the note above warns. Record it; do
+not spend it.
+
+**Step 3 — myelin or fiber bundle?** No. Continue.
+
+**Step 4 — follow through z.** Over about 3 µm the process holds its thin caliber,
+then swells once, discretely, and narrows again — beaded rather than tapering,
+which is Family B evidence for axon. Inside the swelling, small round profiles.
+Vesicles, or a grazing cut through something else? In this single section,
+genuinely unsure. Two sections further on, the ambiguity resolves: the round
+profiles cluster against an apposition with a bulbous partner, and the partner
+carries a dark thickening on its side — a PSD, persistent across sections.
+
+That is step 1 answered late: a vesicle cluster on *this* process, PSD on the
+partner. Presynaptic role — Family C.
+
+**Call:** axon — an en passant bouton onto a probable spine head. **Confidence:
+high.** Evidence chain: Family B (constant intervaricose caliber with one discrete
+vesicle-bearing swelling; no taper over 3 µm) plus Family C (presynaptic role at a
+persistent synapse). Two independent families, continuity confirmed — high tier
+under the Unit 05 definitions.
+
+Worth recording is what stayed *out* of the chain: thinness (caliber alone is the
+cue this unit's lab most often catches people over-trusting, and it would only
+duplicate Family B), and the ribosome absence from step 2, which never became
+evidence because it was unresolvable at this diameter.
+
+**Transferable principle:** the protocol's order is a cost order, and it loops —
+cheap checks first, then z-continuity, which frequently hands you the step 1
+answer you did not have at the start. One clean synapse settled in three sections
+what organelle evidence could not settle in four micrometers, and the discipline
+is refusing the cheap caliber call while you look for it. For the same protocol
+run to the opposite verdict — a dendrite call assembled over four passes — see the
+extended worked case in
+[Axon–dendrite classification]({{ '/content-library/cell-types/axon-dendrite-classification/' | relative_url }}).
 
 ---
 
@@ -257,7 +309,7 @@ Use these with the protocol in §3 in hand, and force yourself to name the step 
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png' | relative_url }}" alt="Axon/dendrite training visual: orientation" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-AXDEN S01:</strong> Orientation for the axon-versus-dendrite comparison. Fix the four cue families first — organelle content, calibre geometry, synaptic polarity, context — because confidence here comes from which families agree, not from how many observations of the same kind you stack up.</p>
+    <p class="card-description"><strong>RIV-AXDEN S01:</strong> Orientation for the axon-versus-dendrite comparison. Fix the four cue families first — organelle content, caliber geometry, synaptic polarity, context — because confidence here comes from which families agree, not from how many observations of the same kind you stack up.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png' | relative_url }}" alt="Axon/dendrite training visual: dendritic morphology cue" style="width:100%; border-radius:8px;">
@@ -308,13 +360,13 @@ exists) but presenting only a local crop to the learner. Include:
    what fraction were correct? If high-confidence accuracy is well below ~90%, you are
    overconfident, and that is a more important finding than your overall score.
 4. **Error analysis by cue.** For each error, which cue misled you? Tabulate. Most
-   people find one cue dominates their errors — commonly calibre, which is a Family B
+   people find one cue dominates their errors — commonly caliber, which is a Family B
    cue that beginners treat as if it were Family A.
 5. **Round 2, paired.** With a partner, re-do the 6 hard cases. Discuss before
    committing. Record whether discussion changed either call and why.
 6. **Protocol writing.** Together, write a one-page classification protocol that would
-   have prevented your most common error. Be specific: "when calibre is the only
-   available cue, mark uncertain" is a usable rule; "be careful with calibre" is not.
+   have prevented your most common error. Be specific: "when caliber is the only
+   available cue, mark uncertain" is a usable rule; "be careful with caliber" is not.
 
 ### Rubric
 
@@ -349,8 +401,8 @@ impressionistic, and it is the core of what makes annotation scale.
 
 ## Common errors and how to recover
 
-**Treating calibre as a primary cue.** It is Family B and it is context-dependent.
-Recover: rule that calibre alone never supports a high-confidence call.
+**Treating caliber as a primary cue.** It is Family B and it is context-dependent.
+Recover: rule that caliber alone never supports a high-confidence call.
 
 **Applying the polarity rule outside cortex.** Recover: put the tissue-specific
 exception list at the top of the annotation protocol, not in a footnote.

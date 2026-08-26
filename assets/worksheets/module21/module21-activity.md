@@ -97,9 +97,9 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Posting files online is not enough.
-- [ ] I did not assume: A notebook that runs once does not guarantee robust science.
-- [ ] I did not assume: Learners should not be penalized for norms that were never made explicit.
+- [ ] I did not assume: Posting files online makes work FAIR.
+- [ ] I did not assume: A notebook that ran end-to-end once is proof of reproducible science.
+- [ ] I did not assume: Reproducibility norms are common sense that any careful trainee will infer without being taught.
 
 ---
 

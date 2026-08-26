@@ -2,6 +2,8 @@
 layout: page
 title: "NeuroAI Bridge"
 permalink: /content-library/connectomics/neuroai-bridge/
+image: /assets/images/content-library/connectomics/neuroai-bridge.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "The bidirectional exchange between connectomics and artificial intelligence — bio-inspired architectures, connectome-constrained models, graph neural networks on connectomes, and honest boundaries."
 topics:
   - neuroai

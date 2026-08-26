@@ -120,9 +120,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**: Correct error labels and at least one valid correction with evidence.
-- **Strong performance**: Correction prioritization explicitly tied to downstream analysis impact. Metrics show measurable improvement.
-- **Common failure to flag**: Correction without evidence of quality change — fixing things without checking whether it helped.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **My self-assessment:**
 

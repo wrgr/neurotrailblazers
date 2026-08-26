@@ -2,6 +2,8 @@
 layout: page
 title: "Open Problems for Undergraduate Teams"
 permalink: /content-library/connectomics/open-problems-undergrad/
+image: /assets/images/content-library/connectomics/open-problems-undergrad.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "A deep dive into open problems in connectomics that an undergraduate team can genuinely work on — automated proofreading, synapse detection, cell-type matching, connectome-scale graph algorithms, structure-to-function prediction, data logistics, and annotation science — with why each matters for the BRAIN CONNECTS scaling effort, current state of the art, scoped project ideas, and entry points."
 topics:
   - open problems

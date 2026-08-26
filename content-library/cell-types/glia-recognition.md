@@ -2,6 +2,8 @@
 layout: page
 title: "Glia Recognition"
 permalink: /content-library/cell-types/glia-recognition/
+image: /assets/images/content-library/cell-types/glia-recognition.svg
+image_alt: "Stylized vector art: three cell silhouettes: branched, star-form, and amoeboid."
 description: "Identifying astrocytes, microglia, and oligodendrocytes in EM — morphological cues, boundary ambiguities, and annotation protocols. Full instructor script with references and worked examples."
 topics:
   - glia

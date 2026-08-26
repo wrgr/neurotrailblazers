@@ -3,6 +3,8 @@ layout: page
 title: "09 Connectome Analysis and NeuroAI"
 description: "Turning a reconstruction into a defensible statistical claim: graph construction choices, null models that preserve the right nuisance structure, motif analysis under reconstruction error, and what connectomes do and do not give machine learning."
 permalink: /technical-training/09-connectome-analysis-neuroai/
+image: /assets/images/units/09-connectome-analysis-neuroai.svg
+image_alt: "Stylized vector art: an adjacency matrix becoming a graph with one motif highlighted."
 slug: 09-connectome-analysis-neuroai
 track: core-concepts-methods
 pathways:
@@ -529,4 +531,4 @@ Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 09]({{ '/modules/module09/' | relative_url }}), [Module 15]({{ '/modules/module15/' | relative_url }})
 - Lecture plan: [Connectome Analysis and NeuroAI lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})
-- **Next:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})
+- **Keep at hand:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — not a tenth unit but the lookup table for every dataset figure this unit cites; the track itself ends here

@@ -2,6 +2,8 @@
 layout: page
 title: "Myelin Sheath and Nodes of Ranvier"
 permalink: /content-library/neuroanatomy/myelin-and-nodes/
+image: /assets/images/content-library/neuroanatomy/myelin-and-nodes.svg
+image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
   Comprehensive instructor reference on myelin ultrastructure and nodal domains
   as observed in electron microscopy, covering compact myelin periodicity, wrap

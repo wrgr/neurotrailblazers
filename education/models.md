@@ -1,6 +1,7 @@
 ---
 layout: framework
 title: Models
+permalink: /education/models/
 slug: education-models
 description: "The MERIT mentoring stages and Professional Pathways workshops as an operational playbook: what happens in each stage, what the mentee produces, and the failure mode each stage exists to prevent."
 summary: "Education-facing overview of MERIT and professional pathways workshop models, with stage-by-stage practice."

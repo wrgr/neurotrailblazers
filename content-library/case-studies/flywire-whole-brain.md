@@ -2,6 +2,8 @@
 layout: page
 title: "FlyWire Whole-Brain Connectome"
 permalink: /content-library/case-studies/flywire-whole-brain/
+image: /assets/images/content-library/case-studies/flywire-whole-brain.svg
+image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
   A comprehensive case study of the FlyWire project — the first complete connectome
   of an adult animal brain (Drosophila melanogaster), mapping ~139,255 neurons and

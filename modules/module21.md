@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module21/
 description: "Operationalize reproducibility and FAIR principles for connectomics datasets, code, and releases."
 module_number: 21
+image: /assets/images/modules/module21.svg
+image_alt: "Stylized vector art: a pipeline of linked, openly latched stages."
 difficulty: "Intermediate to Advanced"
 duration: "4-5 hours"
 learning_objectives:
@@ -77,22 +79,42 @@ Connectomics studies are technically dense and often impossible to interpret wit
 ### 1) FAIR as implementation checklist
 - **Technical:** findable identifiers, accessible storage, interoperable formats, and reusable metadata each require concrete engineering choices.
 - **Plain language:** "FAIR" only counts if someone else can actually find, open, and use your work.
-- **Misconception guardrail:** posting files online is not enough.
+- **Misconception guardrail:** posting files online makes work FAIR.
 
 ### 2) Reproducibility is layered
 - **Technical:** computational reproducibility (same code/data => same result) differs from inferential reproducibility (same conclusion under reasonable variation).
 - **Plain language:** rerunning code and trusting conclusions are related but not identical.
-- **Misconception guardrail:** a notebook that runs once does not guarantee robust science.
+- **Misconception guardrail:** a notebook that ran end-to-end once is proof of reproducible science.
 
 ### 3) Hidden curriculum in reproducibility
-- **Technical:** unwritten norms include naming conventions, release etiquette, assumption disclosure, and reviewer-ready method transparency.
+- **Technical:** unwritten norms include naming conventions, release etiquette, assumption disclosure, and reviewer-ready method transparency; trainees can only be fairly assessed against these norms after the norms have been taught.
 - **Plain language:** many expectations are "known by insiders" unless we teach them directly.
-- **Misconception guardrail:** learners should not be penalized for norms that were never made explicit.
+- **Misconception guardrail:** reproducibility norms are common sense that any careful trainee will infer without being taught.
 
 ### 4) FAIR applied to connectomics
 Each FAIR principle maps to concrete connectomics infrastructure. Findable means assigning DOIs for datasets and providing stable CAVE endpoints that resolve to specific data versions. Accessible means offering open APIs and tools like CloudVolume that allow programmatic data retrieval without manual download. Interoperable means using standard formats such as SWC for neuron morphologies, Zarr for volumetric data, and NWB for neurophysiology so that tools across labs can ingest each other's outputs. Reusable means materialization versioning in CAVE, which lets any researcher retrieve the exact state of the segmentation and annotations at a given point in time.
 
 A practical reproducibility checklist for any connectomics analysis release should include: the dataset version or release identifier, the CAVE materialization number (if applicable), the code commit hash for all analysis scripts, the environment specification (e.g., conda environment file or Docker image), and the full parameter configuration used. Without all five elements, a third party cannot reliably reproduce the analysis, even with access to the same underlying data.
+
+## Worked example: the number that changed while the code did not
+
+The numbers below are illustrative — they show the shape of the reasoning, not results from a specific release.
+
+In March you report 4,712 synapses between two labeled cell populations. In September a collaborator reruns your notebook, unchanged, and gets 5,103. Nothing in the code changed. Work the five-element checklist as a diagnostic.
+
+**Step 1: dataset version and materialization.** The notebook queries "latest." Proofreading continued for six months, so the segmentation your query resolves against today is not the one you analyzed in March. Root IDs are only meaningful as of a version; querying latest silently re-asks the question against a different brain state. This is the most common silent correctness failure in the field — the mechanics of why are [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}).
+
+**Step 2: quantify the drift instead of guessing.** Map your 214 stored root IDs forward with the platform's ID-lineage facility: 183 map 1:1, 24 split into two or more objects, 7 merged into other cells. So 31 of 214 objects changed under you. That churn number belongs in your methods, because it tells every reader how much proofreading moved the ground.
+
+**Step 3: reproduce and update — as two separate acts.** To reproduce March: query materialization version 795 explicitly, and recover 4,712 exactly. To update: rerun against version 1042 and get 5,103, which is now a statement about proofreading progress, not a bug. Both acts are legitimate; the error was conflating them by letting "latest" decide which one you were performing.
+
+**Step 4: pin the remaining four elements.** Code commit hash (eight characters in the figure caption), environment specification (an exported conda file or Docker digest — "Python 3.11" is not an environment), the full parameter configuration (synapse threshold of 3, the inclusion radius, every default you touched), and the dataset release identifier with its DOI. The test for each: could a stranger rerun this with no channel to ask you questions?
+
+**Step 5: prove it in a clean room.** A labmate reruns the package from the README alone. Friction log: an undeclared plotting dependency, a hard-coded path into your home directory, and a parameter cell that was edited after the figure was exported. Three fixes, one afternoon. The friction log is the deliverable — a package that has never been rerun cold is "reproducible in principle," which means unverified.
+
+**What gets released.** The data slice with a DOI, the materialization number in every figure caption, the commit hash, the environment file, the parameter configuration, a limitations note naming the two excluded tiles and the one failed run — and a changelog entry, so that version 2 can deprecate version 1 without erasing it.
+
+**What this example does not establish:** that the September number is wrong. Both numbers are right about different states of the reconstruction; the failure was that the March release could not say which state it described.
 
 ## Hidden curriculum scaffold
 - What senior reviewers expect but rarely state:
@@ -159,17 +181,36 @@ A practical reproducibility checklist for any connectomics analysis release shou
 
 ## Assessment rubric
 - **Minimum pass**
-  - Core provenance fields are present and clear.
-  - Re-run instructions are testable by peers.
-  - Limitations and assumptions are explicit.
+  - All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
+  - Re-run instructions testable by a peer without contacting the author.
+  - Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.
 - **Strong performance**
-  - Identifies hidden reproducibility norms and makes them explicit.
-  - Anticipates downstream reuse failure points.
-  - Produces concise, audit-friendly documentation.
+  - Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.
+  - Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.
+  - ID churn quantified whenever identifiers cross versions, and reported in the methods.
+  - Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.
 - **Common failure modes**
-  - Missing version identifiers for data/code.
-  - Methods descriptions that omit key parameters.
-  - "Reproducible in principle" claims without validation evidence.
+  - Missing version identifiers for data or code.
+  - Methods that omit key parameters or the environment specification.
+  - "Reproducible in principle" claims without a validation rerun.
+  - Limitations sections written as boilerplate rather than as concrete guidance.
+
+## Common errors and how to recover
+
+- **Root IDs stored without a version.** Six months later they resolve to different objects, or to nothing. Recover by finding the original timestamp (query logs, file dates), mapping the IDs forward through the lineage facility, and reporting the churn. If the timestamp is unrecoverable, the analysis must be rerun on a pinned version and the paper must say so.
+- **"It works on my machine."** The environment lives only in your shell history. Recover by exporting the environment specification and rerunning in a fresh container; treat every undeclared dependency the rerun exposes as a bug fix, not an embarrassment.
+- **Metadata complete, limitations generic.** "Results may be affected by reconstruction errors" guides no one. Recover by rewriting the limitations to name the excluded samples, the failed runs, and the single parameter the headline result is most sensitive to.
+- **Files posted but unusable.** No stable identifier, no license, a proprietary format. Recover by minting a DOI or stable ID, converting to standard formats (SWC, Zarr, NWB), attaching a license, and adding a README whose first section is the rerun path.
+- **Provenance reconstructed after the paper was written.** Retroactive provenance is guesswork wearing a checklist. Recover partially by auditing which elements can still be verified and flagging the rest; prevent the recurrence by capturing all five elements at analysis time — a recording cell at the top of every notebook costs five lines.
+
+## What this module does not cover
+
+- **The versioning infrastructure itself.** ChunkedGraph mechanics, materialization, and root-ID lineage are [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}).
+- **Format specifications.** What SWC, Zarr, and NWB actually contain and when to use each is [data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}).
+- **Whether the pinned analysis is statistically sound.** Reproducing a result exactly does not make it right; inference validity is [Module 20]({{ '/modules/module20/' | relative_url }}).
+- **Storage, cost, and query infrastructure.** Sizing and operating the systems that hold the data is [Module 12]({{ '/modules/module12/' | relative_url }}).
+- **Writing and presenting the released work.** Manuscript and presentation practice is [Module 22]({{ '/modules/module22/' | relative_url }}).
+- **Data governance and sharing agreements.** Licensing law, embargoes, and consortium policy are institution-specific and handled outside this curriculum; this module covers only what a release must contain to be reusable.
 
 ## Content library references
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — CAVE materialization and pipeline lineage

@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module24/
 description: "Build a realistic connectomics career strategy, including graduate school planning, portfolio positioning, and mentor-network development."
 module_number: 24
+image: /assets/images/modules/module24.svg
+image_alt: "Stylized vector art: one path forking into three branches, each ending in its own milestone."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

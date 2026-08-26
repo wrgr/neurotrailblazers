@@ -18,13 +18,13 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                     Core Concepts & Methods, Research in Action, and Career & Community.
                 </p>
                 <div class="cta-buttons">
-                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-primary btn-large">Enter Technical Track</a>
+                    <a href="{{ '/start-here/' | relative_url }}" class="btn btn-primary btn-large">Start Here</a>
+                    <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary btn-large">Enter Technical Track</a>
+                    <a href="{{ '/neuronauts/' | relative_url }}" class="btn btn-secondary btn-large">Read the Story</a>
                     <a href="{{ '/tracks/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tracks</a>
-                    <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary btn-large">Explore Concepts</a>
-                    <a href="{{ '/tools/' | relative_url }}" class="btn btn-secondary btn-large">Explore Tools</a>
                 </div>
                 <div class="hero-stats" role="list" aria-label="NeuroTrailblazers highlights">
-                    <div class="stat-pill" role="listitem"><strong>10</strong> technical units</div>
+                    <div class="stat-pill" role="listitem"><strong>9</strong> technical units</div>
                     <div class="stat-pill" role="listitem"><strong>3</strong> learning tracks</div>
                     <div class="stat-pill" role="listitem"><strong>5+</strong> connectomics datasets</div>
                 </div>
@@ -69,27 +69,66 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
     <div class="main-content">
         <section class="section reveal">
             <div class="section-header">
+                <h2 class="section-title">The Story, in One Minute</h2>
+                <p class="section-subtitle">Why this site exists, before you choose where to go in it.</p>
+            </div>
+            <p class="story-lede">Brains compute through wiring — billions of cells connected by trillions of synapses — and for most of history that wiring was invisible. It no longer is. Electron microscopes can now photograph every wire in a piece of brain, and in 2025 <em>Nature Methods</em> named EM connectomics its Method of the Year: something that used to be impossible has quietly become an industry. The maps already exist for a worm, a fly, and cubic millimeters of mouse and human cortex; the next expedition is a whole mouse brain. Getting there is a relay with seven legs, and every part of this site teaches one of them:</p>
+            <ol class="story-relay">
+                <li><a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}"><strong>Stop time.</strong> Chemicals freeze the tissue mid-thought; heavy-metal stains ink every wire's outline.</a></li>
+                <li><a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}"><strong>Slice.</strong> A diamond knife shaves it thousands of times thinner than a hair.</a></li>
+                <li><a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}"><strong>Image.</strong> Electron microscopes photograph every slice — about two million gigabytes per cubic millimeter.</a></li>
+                <li><a href="{{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}"><strong>Align.</strong> Software reassembles the slices into one seamless 3D volume.</a></li>
+                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}"><strong>Segment.</strong> AI colors in every neuron and finds every synapse.</a></li>
+                <li><a href="{{ '/side-quests/proofreading/' | relative_url }}"><strong>Proofread.</strong> Humans fix the AI's mistakes and make the map true.</a></li>
+                <li><a href="{{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}"><strong>Discover.</strong> Scientists read the finished map and settle decades-old debates.</a></li>
+            </ol>
+            <div class="cta-buttons">
+                <a href="{{ '/neuronauts/' | relative_url }}" class="btn btn-primary">Read the Full Story (25 min, fully sourced)</a>
+                <a href="{{ '/datasets/workflow/' | relative_url }}" class="btn btn-secondary">Walk the Pipeline in Detail</a>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="section-header">
                 <h2 class="section-title">Choose Your Pathway</h2>
                 <p class="section-subtitle">Purpose-built experiences for the people who move neuroscience forward.</p>
             </div>
             <div class="cards-grid pathway-grid">
                 <article class="card pathway-card">
+                    <div class="card-icon">🔭</div>
+                    <h3 class="card-title">Just Curious</h3>
+                    <p class="card-description">The story of the quest to map the brain, told for everyone — no background needed. Classrooms can pair it with a <a href="{{ '/teaching/projectome-to-synapse/' | relative_url }}">25-minute hands-on activity</a>.</p>
+                    <a href="{{ '/neuronauts/' | relative_url }}" class="btn btn-primary mt-1">Read the Neuronauts Story</a>
+                </article>
+                <article class="card pathway-card">
                     <div class="card-icon">🧠</div>
                     <h3 class="card-title">For Students</h3>
-                    <p class="card-description">Follow a guided path from fundamentals to advanced connectomics analysis with hands-on projects.</p>
+                    <p class="card-description">A guided path from fundamentals to connectomics analysis — pick your track, do the labs, end each unit with an artifact.</p>
                     <a href="{{ '/start-here/' | relative_url }}" class="btn btn-primary mt-1">Plan Your Path</a>
+                </article>
+                <article class="card pathway-card">
+                    <div class="card-icon">🔬</div>
+                    <h3 class="card-title">For Scientists</h3>
+                    <p class="card-description">The reference layer: content library, dataset access with versions, the atlas of specs and acronyms, and open problems scoped for teams.</p>
+                    <a href="{{ '/core/' | relative_url }}" class="btn btn-primary mt-1">Open the Core</a>
                 </article>
                 <article class="card pathway-card">
                     <div class="card-icon">🤝</div>
                     <h3 class="card-title">For Mentors</h3>
-                    <p class="card-description">Use structured mentoring resources to support learners with clarity, consistency, and measurable impact.</p>
-                    <a href="{{ '/tools/ask-an-expert/' | relative_url }}" class="btn btn-primary mt-1">Mentor Toolkit</a>
+                    <p class="card-description">The facilitator guide and 25 ready-to-run session kits: what to say, what to watch for, and how to grade the reasoning.</p>
+                    <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-primary mt-1">Facilitator Guide</a>
                 </article>
                 <article class="card pathway-card">
                     <div class="card-icon">🏛️</div>
-                    <h3 class="card-title">For Programs</h3>
-                    <p class="card-description">Adopt an evidence-informed model for scalable, research-aligned neuroscience education.</p>
+                    <h3 class="card-title">For Programs &amp; Funders</h3>
+                    <p class="card-description">The education model behind the site, the evidence it rests on, and how NeuroTrailblazers fits the BRAIN CONNECTS ecosystem.</p>
                     <a href="{{ '/models/' | relative_url }}" class="btn btn-primary mt-1">See the Model</a>
+                </article>
+                <article class="card pathway-card">
+                    <div class="card-icon">🗺️</div>
+                    <h3 class="card-title">How This Site Is Organized</h3>
+                    <p class="card-description">Reference you consult (<a href="{{ '/core/' | relative_url }}">the core</a>), ordered paths you follow (<a href="{{ '/tracks/' | relative_url }}">tracks</a> and <a href="{{ '/side-quests/' | relative_url }}">side quests</a>), and <a href="{{ '/modes/' | relative_url }}">modes</a> for studying alone or in a group.</p>
+                    <a href="{{ '/core/' | relative_url }}" class="btn btn-secondary mt-1">See the Map</a>
                 </article>
             </div>
         </section>
@@ -117,7 +156,7 @@ description: "A curriculum and mentorship platform for nanoscale connectomics di
                 </article>
                 <article class="card module-card">
                     <h3 class="card-title card-title-with-icon"><span class="icon-inline">📄</span> Journal Club</h3>
-                    <p class="card-description">Browse 100+ curated papers with OCAR summaries, filter by expertise level, dimension, or keyword.</p>
+                    <p class="card-description">Browse {{ site.data.journal_papers.papers | size }} curated papers with OCAR summaries, filter by expertise level, dimension, or keyword.</p>
                     <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary mt-1">Open Journal Club</a>
                 </article>
                 <article class="card dataset-card">

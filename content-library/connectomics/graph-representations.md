@@ -2,6 +2,8 @@
 layout: page
 title: "Graph Representations"
 permalink: /content-library/connectomics/graph-representations/
+image: /assets/images/content-library/connectomics/graph-representations.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "How connectomes are represented as graphs — nodes, edges, weights, adjacency matrices, and the tradeoffs of different graph encodings for neural circuit analysis."
 topics:
   - graphs

@@ -79,11 +79,11 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** Posting files online is not enough.
+- **They may believe:** Posting files online makes work FAIR.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** A notebook that runs once does not guarantee robust science.
+- **They may believe:** A notebook that ran end-to-end once is proof of reproducible science.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Learners should not be penalized for norms that were never made explicit.
+- **They may believe:** Reproducibility norms are common sense that any careful trainee will infer without being taught.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

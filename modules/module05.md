@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module05/
 description: "Understand EM image formation, artifacts, and interpretation basics for reliable connectomics analysis."
 module_number: 5
+image: /assets/images/modules/module05.svg
+image_alt: "Stylized vector art: an electron beam cone scanning a circular imaging field with raster lines."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:

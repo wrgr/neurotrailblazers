@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module22/
 description: "Deliver clear scientific talks and written summaries for technical and mixed audiences without oversimplifying connectomics evidence."
 module_number: 22
+image: /assets/images/modules/module22.svg
+image_alt: "Stylized vector art: speech arcs widening from a speaker to connected listeners."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:
@@ -226,6 +228,7 @@ That answer classifies the question as a methods challenge, concedes the mechani
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — What to cite in methods sections, and what belongs on your one provenance line
 
 ## Teaching resources
+- Public-engagement companion: [Module 22 companion for public audiences]({{ '/teaching/module22-public-engagement/' | relative_url }}) — the evidence-badge exercise and outreach framing for running this material outside a research audience
 - Technical context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - Evidence set: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Vocabulary support: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})

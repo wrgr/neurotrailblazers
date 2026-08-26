@@ -34,6 +34,8 @@ items:
         url: "/datasets/"
       - title: "Getting Started with Data"
         url: "/datasets/getting-started/"
+      - title: "The Field, Mapped"
+        url: "/kb/"
   - title: "Tracks"
     url: "/tracks/"
     dropdown:
@@ -57,7 +59,6 @@ items:
     url: "/technical-training/"
   - title: "Modules"
     url: "/modules/"
-    dropdown: []
   - title: "Teaching"
     url: "/teaching/"
     dropdown:
@@ -76,7 +77,7 @@ items:
         url: "/tools/"
       - title: "Ask an Expert"
         url: "/ask-an-expert/"
-      - title: "Proofreading Tool"
+      - title: "Connectome Quality"
         url: "/tools/connectome-quality/"
       - title: "Workflow"
         url: "/datasets/workflow/"
@@ -89,3 +90,7 @@ items:
         url: "/frameworks/"
       - title: "Program Models"
         url: "/models/"
+      - title: "Models in Practice"
+        url: "/education/models/"
+      - title: "BRAIN CONNECTS Fit"
+        url: "/core/connects-ecosystem/"

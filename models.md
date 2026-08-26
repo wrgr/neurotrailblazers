@@ -25,13 +25,13 @@ content_type: core
 <div class="main-content">
 
 <div class="models-hero">
-  <h1>🧠 Research Incubator Model</h1>
+  <h1>Research Incubator Model</h1>
 </div>
 
 <section class="section">
 <div class="cards-grid">
-  <div class="card text-center" style="max-width: 600px; margin: 0 auto;">
-    <p><strong>We power breakthroughs by developing and deploying top research talent.</strong></p>
+  <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
+    <p><strong>This page is the summary of the program models.</strong> The working version &mdash; what happens in each MERIT stage, what the mentee produces, and the failure mode each stage exists to prevent &mdash; is the <a href="{{ '/education/models/' | relative_url }}">models-in-practice playbook</a>, with the evidence behind each choice.</p>
   </div>
 </div>
 </section>
@@ -63,6 +63,7 @@ content_type: core
       <li>Advanced Research &amp; Professional Networking</li>
       <li>Career Transition &amp; Lifelong Learning</li>
     </ol>
+    <p>Each stage exists to prevent a specific failure: selection by credentials that reproduces existing access, orientation that assumes shared context and silently loses first-generation mentees, support withdrawn too fast (floundering) or too slowly (dependence), independence without scaffolding for the first real failure, networks borrowed from the mentor rather than built, and career choices made by drift. The two program-level failures the sequence guards against are stage compression and applying one mentoring posture to every stage.</p>
     <p><a href="{{ '/frameworks/' | relative_url }}">MERIT framework summary</a></p>
   </div>
   <div class="card">
@@ -79,6 +80,7 @@ content_type: core
       <li>STEM Identity &amp; Purpose</li>
       <li>Future Forward</li>
     </ol>
+    <p>The sequence exists to prevent the hidden curriculum from deciding outcomes: the operating knowledge that converts technical training into a career — how authorship, funding, and networks work — is distributed unequally by background, and each workshop states one piece of it that training otherwise assumes. Making it explicit is a fairness intervention as much as a training one.</p>
     <p><a href="{{ '/frameworks/' | relative_url }}">Professional Pathways guide summary</a></p>
   </div>
   <div class="card">
@@ -90,12 +92,13 @@ content_type: core
       <li><strong>Character:</strong> Curiosity, resilience, integrity, leadership</li>
       <li><strong>Meta-Learning:</strong> Planning, self-reflection, adaptation</li>
     </ul>
+    <p>The four dimensions exist to prevent a curriculum that teaches only the first one. Conventional programs are thinnest in character and meta-learning, which is where most of the Professional Pathways sequence sits; naming all four keeps those dimensions on the syllabus instead of leaving them to chance.</p>
   </div>
 </div>
 </section>
 <hr>
 
-## 🔗 References
+## References
 
 <ul>
   <li>Lopatto, D. (2007). Undergraduate research experiences support science career decisions and active learning. <em>CBE Life Sci Educ</em>, 6(4), 297–306.</li>

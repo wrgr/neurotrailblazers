@@ -122,9 +122,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**: Coherent graph model and metric rationale. Null comparison included.
-- **Strong performance**: Clear link between each metric and a biological question. Multiple null models tested. Community structure validated against external data.
-- **Common failure to flag**: Metric dumping without hypothesis alignment — computing every metric available without explaining what question each answers.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **My self-assessment:**
 

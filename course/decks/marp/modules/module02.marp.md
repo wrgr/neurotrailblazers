@@ -42,7 +42,8 @@ Create a personal research-navigation plan that includes role expectations, comm
 ### 1) The "hidden curriculum" of research
 - **Technical:** unwritten norms govern scientific research --- how to ask questions, how to admit uncertainty, how to give and receive feedback, how to navigate lab hierarchies. These norms vary by institution, lab, and PI, but common patterns exist: arrive at meetings prepared, version-control your work, attribute contributions explicitly, escalate problems early rather than late.
 - **Plain language:** there are rules nobody writes down but everyone is expected to follow.
-- **Misconception:** you will be taught everything you need to know. In practice, many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
+- **Misconception:** you will be taught everything you need to know.
+- **In practice:** Many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
 
 ---
 
@@ -90,11 +91,11 @@ Create a personal research-navigation plan that includes role expectations, comm
 ---
 
 ## Misconceptions to Watch
-- **Misconception:** you will be taught everything you need to know. In practice, many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
-- **Misconception:** if the data is publicly available, there are no ethical considerations. Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
-- **Misconception:** research is a solitary activity. Modern connectomics is closer to open-source software development than to the lone-genius model.
-- **Misconception:** good researchers do not make mistakes. In practice, the best researchers make mistakes, document them, and learn from them systematically.
-- **Misconception:** scripted communication is inauthentic. In reality, scripts are scaffolds that build confidence until the language becomes natural.
+- **Misconception:** you will be taught everything you need to know.
+- **Misconception:** if the data is publicly available, there are no ethical considerations.
+- **Misconception:** research is a solitary activity.
+- **Misconception:** good researchers do not make mistakes.
+- **Misconception:** scripted communication is inauthentic.
 
 ---
 

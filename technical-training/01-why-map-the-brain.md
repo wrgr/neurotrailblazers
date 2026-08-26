@@ -3,6 +3,8 @@ layout: page
 title: "01 Why Map the Brain"
 description: "What a synapse-resolution wiring diagram can and cannot tell you, and how to turn a broad brain question into a measurable connectomics study."
 permalink: /technical-training/01-why-map-the-brain/
+image: /assets/images/units/01-why-map-the-brain.svg
+image_alt: "Stylized vector art: an unresolved point cloud crossing a frontier line into a crisp measured graph."
 slug: 01-why-map-the-brain
 track: core-concepts-methods
 pathways:

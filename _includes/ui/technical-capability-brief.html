@@ -22,27 +22,14 @@
   </ul>
   {% endif %}
 
+  {% comment %}
+    The graded exercise is the unit's own lab, above. Restating the data file's
+    parallel studio activity here put two competing assignments on one page, so
+    this names the capability exercise and defers to the lab.
+  {% endcomment %}
   {% if cap.studio_activity %}
   <h3>Studio activity</h3>
-  <p><strong>{{ cap.studio_activity.title }}</strong> - {{ cap.studio_activity.objective }}</p>
-  <p>{{ cap.studio_activity.prompt }}</p>
-
-  {% if cap.studio_activity.steps %}
-  <ol>
-    {% for step in cap.studio_activity.steps %}
-    <li>{{ step }}</li>
-    {% endfor %}
-  </ol>
-  {% endif %}
-
-  {% if cap.studio_activity.outputs %}
-  <p><strong>Expected outputs:</strong></p>
-  <ul>
-    {% for output in cap.studio_activity.outputs %}
-    <li>{{ output }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  <p><strong>{{ cap.studio_activity.title }}</strong> - {{ cap.studio_activity.objective }} The unit's own lab above is the graded version of this exercise; do that one.</p>
   {% endif %}
 
   {% if cap.success_artifacts %}

@@ -2,6 +2,8 @@
 layout: page
 title: "Connectome History"
 permalink: /content-library/connectomics/connectome-history/
+image: /assets/images/content-library/connectomics/connectome-history.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "The history of connectomics from Cajal to whole-brain wiring diagrams — milestones, methods, and lessons learned across four decades of mapping neural circuits."
 topics:
   - history

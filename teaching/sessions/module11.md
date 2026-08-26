@@ -100,9 +100,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum pass**: Clear motif description and evidence-backed claim for at least one motif.
-- **Strong performance**: Thoughtful alternative hypotheses for each enriched motif. Multiple null models considered. Sensitivity to reconstruction quality discussed.
-- **Common failure to flag**: Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

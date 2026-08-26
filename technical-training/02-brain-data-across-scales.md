@@ -3,6 +3,8 @@ layout: page
 title: "02 Brain Data Across Scales"
 description: "How to choose a modality, resolution, and representation for a connectomics question, and how to link measurements across scales without over-claiming."
 permalink: /technical-training/02-brain-data-across-scales/
+image: /assets/images/units/02-brain-data-across-scales.svg
+image_alt: "Stylized vector art: three nested zoom frames, from brain outline to circuit to vesicles."
 slug: 02-brain-data-across-scales
 track: core-concepts-methods
 pathways:
@@ -170,6 +172,53 @@ entirely.
 - "Where on the dendrite do those synapses land?" → **skeleton** (path distance from soma) **+ synapse coordinates**
 - "Are spines on this dendrite larger than on that one?" → **mesh**
 - "Is this a merge error?" → **volume**, always. Every proofreading decision ultimately returns to the voxels.
+
+### Worked example: choosing a representation for an inhibition-distance question
+
+> **Question as posed:** "On layer 2/3 pyramidal cells, do putatively inhibitory
+> (symmetric) synapses sit closer to the soma, in path distance, than putatively
+> excitatory (asymmetric) ones?" Planned scope: ~300 proofread cells from an
+> existing public volume.
+
+Start from the endpoint, not from what the pipeline happens to emit. The
+measurement is a distribution of path distance from soma, per synapse, per synapse
+class. Now hold each representation against that requirement.
+
+**Graph:** discards all geometry, including the one quantity the question is
+about. Rejected in one line.
+
+**Volume:** contains everything, at GB per neuron — order 1 TB of hot label data
+for 300 cells — and computing path distance from voxels means extracting a
+centerline anyway. You would be building skeletons expensively, on demand, forever.
+
+**Mesh:** 10–100 MB per neuron, so 3–30 GB for the study. Surfaces are the right
+tool for spine shape, which this endpoint does not need, and path distance along
+the arbor is not a natural mesh operation.
+
+**Skeleton plus synapse coordinates:** 0.1–5 MB per neuron — 30 MB to 1.5 GB for
+all 300 cells — and path distance from soma is the native query on a centerline
+graph. This is exactly the pairing the list above prescribes for "where on the
+dendrite do those synapses land?"
+
+So far the decision looks free. Here is where it is not. Skeletons discard spine
+geometry, so a synapse on a spine head gets mapped to the nearest shaft node, and
+its path distance loses the neck. Asymmetric synapses land mostly on spines;
+symmetric ones mostly on shafts and somata (Unit 05). The shortening therefore
+falls mostly on one of the two classes being compared — a differential bias, the
+dangerous kind. How large is it? The skeleton cannot tell you; it discarded
+precisely that quantity. Probably small against distance bins tens of micrometers
+wide — but "probably" is not a number you can print.
+
+The resolution is the archiving rule from this section: run the analysis on
+skeletons, and archive the meshes — 3–30 GB, noise next to the roughly 2 PB
+aligned pyramid the volume already carries. On a 20-cell subsample, measure the
+spine-neck offset on the mesh, and either correct the distances or report the
+bound.
+
+**Transferable principle:** choose the representation whose native operation is
+your endpoint metric; reject the coarser candidates by naming the discarded
+quantity that disqualifies them; and archive the next-richer representation
+specifically so you can bound the bias the one you chose introduces.
 
 ---
 
@@ -396,6 +445,7 @@ statistics that operate on the resulting graph (Unit 09).
 
 ## Go deeper
 
+- [Atlas and connectomics reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — the dataset specs, scale figures, and acronyms this unit cites, in one lookup table
 - [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — volumes, meshes, skeletons, graphs in detail
 - [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — the resolution/field-of-view/throughput triangle from the physics side
 - [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — end-to-end architecture

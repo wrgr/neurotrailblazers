@@ -3,13 +3,15 @@ layout: page
 title: "05 Neuronal Ultrastructure"
 description: "How to actually read an EM image: the organelle catalog with sizes, the minimum criteria for calling a synapse, Gray type I vs II, and a calibrated confidence protocol."
 permalink: /technical-training/05-neuronal-ultrastructure/
+image: /assets/images/units/05-neuronal-ultrastructure.svg
+image_alt: "Stylized vector art: the inside of a membrane profile: a mitochondrion, a vesicle cluster, and a postsynaptic density."
 slug: 05-neuronal-ultrastructure
 track: core-concepts-methods
 pathways:
   - technical foundation
   - methods depth
 level: "Intermediate"
-time_estimate: "2.5 hours reading + 60 minute tutorial + 75 minute studio"
+time_estimate: "2.5 hours reading + 75 minute studio"
 prerequisites: "Units 01-03"
 content_type: path
 ---
@@ -90,8 +92,8 @@ To raise confidence, look for cues that are *independent* of the ribosome call:
   head and neck is close to definitive for dendrite.
 - Look for **incoming asymmetric synapses** where this process is postsynaptic — a
   PSD *on this process* means it is receiving, which is dendritic (or somatic).
-- Follow the process toward larger calibre and check whether it thickens toward a
-  soma. Dendrites taper with distance from soma; axons maintain calibre.
+- Follow the process toward larger caliber and check whether it thickens toward a
+  soma. Dendrites taper with distance from soma; axons maintain caliber.
 
 Note the reasoning pattern, which is the transferable skill: **do not stack more
 of the same kind of evidence.** Three microtubule observations are one piece of
@@ -197,7 +199,7 @@ Work in this order. The order matters — cheap, reliable cues first.
 
 **Step 1 — Local geometry.** Diameter and its variation. Boutons are swellings
 connected by thin intervaricose segments; dendritic shafts have relatively smooth
-calibre; spine heads sit on necks.
+caliber; spine heads sit on necks.
 
 **Step 2 — Organelles present, and just as important, organelles *absent*.**
 Ribosomes present → not axon. Glycogen granules → astrocyte. Vesicle cluster →
@@ -249,7 +251,7 @@ Two cues that share a failure mode are one cue.
 
 Genuinely independent cue families:
 
-1. Geometry and calibre profile
+1. Geometry and caliber profile
 2. Organelle content (presence and absence)
 3. Synaptic role
 4. Neighborhood and tissue context
@@ -330,61 +332,7 @@ Work these panels with the organelle table in §1 open, and name the cue family 
 
 ---
 
-## 5. Sixty-minute tutorial: run-of-show
-
-### Pre-class (10–15 min, async)
-
-- Read §1 and §2 of this unit. Bring the organelle table.
-- Open the figure panel above and preview at least three figures.
-- Bring one cue you find ambiguous.
-
-### Materials
-
-- [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
-- The figure panel above (RIV-ULTRA shortlist)
-- A shared annotation sheet with columns: patch ID | compartment call | synapse call |
-  confidence tier | cue family 1 | cue family 2 | what would change my mind
-
-The last column is the one that produces learning. Insist on it.
-
-### Minute by minute
-
-| Time | Activity | Instructor focus |
-|---|---|---|
-| 00:00–05:00 | **Framing.** Prompt: "What goes wrong if we force a label too early?" | Set the capability target; state that "uncertain" is a passing answer |
-| 05:00–12:00 | **Expert modeling.** Work one patch aloud, following the §3 protocol | Think aloud about *uncertainty*, not just conclusions. Name each cue's family explicitly |
-| 12:00–20:00 | **Guided practice 1.** Two easy patches, in pairs | Circulate; ask "which family is that cue from?" rather than "is that right?" |
-| 20:00–30:00 | **Public debrief.** Compare calls openly | Target the three misconceptions below |
-| 30:00–42:00 | **Guided practice 2.** Two borderline patches, independently | Require two independent cues plus one uncertainty statement per patch |
-| 42:00–52:00 | **Consensus round.** Groups reconcile using the tier definitions | Classify each disagreement: cue conflict / missing context / vocabulary mismatch |
-| 52:00–58:00 | **Competency check.** One fully justified call each | Label + confidence + evidence chain + one alternative considered and rejected |
-| 58:00–60:00 | **Exit ticket.** "One cue I trust more now; one I still mistrust" | Collect these — they are your calibration data for next session |
-
-### The three misconceptions to target explicitly
-
-1. **"Small process = axon."** Size alone is unreliable; thin dendritic branches and
-   spine necks are small too. Counter with a ribosome-bearing thin process.
-2. **"Dark contrast = synapse."** Counter with a tangentially sectioned membrane and
-   with an adherens junction.
-3. **"Every patch must end in a hard label."** Counter by praising a well-justified
-   "uncertain" in the public debrief. Learners calibrate to what gets rewarded, so
-   reward it visibly, once, early.
-
-### Formative checkpoints
-
-- **At 20 min:** ≥ 80% of pairs cite two cues from *different families*. If not, stop
-  and re-teach §4 — proceeding without this makes the rest of the session unproductive.
-- **At 42 min:** the disagreement log distinguishes cue conflict from missing context.
-- **At 58 min:** each learner justifies one call with explicit uncertainty language.
-
-### Post-class (20–30 min)
-
-Annotate three new patches; submit call, confidence, cue rationale by family, and one
-unresolved ambiguity with an escalation note.
-
----
-
-## 6. Studio activity: ultrastructure consensus round (75 min)
+## 5. Studio activity: ultrastructure consensus round (75 min)
 
 **Scenario.** Your team is preparing a training-ready annotation subset for
 segmentation QC. It deliberately contains borderline cases.

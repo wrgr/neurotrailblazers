@@ -32,31 +32,57 @@ content_type: core
     <div class="hero-text">
       <h1 class="hero-title-impact">Ask an Expert<span>: Chat with Dr. Jeff Lichtman</span></h1>
       <div class="hero-description-box">
-        <p class="hero-description">Our curated AI bot answers your questions about brain mapping and research life.</p>
+        <p class="hero-description">A curated AI chatbot, built on public materials by Dr. Jeff Lichtman, that answers questions about brain mapping and research life.</p>
+        <p><em>Disclaimer: This GPT does not represent direct communication with Dr. Lichtman and may not reflect his real-time views. Always refer to primary literature or direct mentorship when available.</em></p>
+        <p>Using the chatbot requires a ChatGPT account.</p>
         <p><a class="btn btn-primary btn-large" href="https://chatgpt.com/g/g-6885a29882f08191adff2e875123c430-dr-lichtman-connectome-guru" target="_blank">Launch Chatbot</a></p>
       </div>
     </div>
   </div>
 </div>
 
+<section class="section expert-bio" markdown="1">
+<div class="section-header">
+  <h2 class="section-title">What It Handles Well, and What It Does Not</h2>
+</div>
+
+The chatbot is an AI persona built from Dr. Lichtman's publicly available
+papers, lectures, and interviews. It is not the person, and the difference
+determines what it is good for.
+
+Questions it handles well:
+
+- Explaining core connectomics concepts — what a connectome is, how EM
+  reconstruction works, why quality control matters
+- Common student questions, including the ones you might hesitate to ask a
+  professor
+- Perspective and reflection drawn from his public talks: why map the brain,
+  what the field's open debates are
+- Pointers toward topics and published work to read next
+
+Questions it handles badly:
+
+- Anything about unpublished or in-progress work — it only knows public
+  materials
+- Dr. Lichtman's current views, plans, or opinions on recent events
+- Requests that need the actual person: recommendation letters, collaboration
+  or data requests, lab openings — the chatbot cannot contact him and speaks
+  for no one
+- Precise figures and citations — like any chatbot, it can state plausible
+  numbers confidently and wrongly; verify against primary sources such as the
+  papers linked below
+
+</section>
+
 <section class="section expert-bio">
 <div class="expert-bio-content">
   <div class="expert-bio-text" markdown="1">
-  👤 **Have a burning question about the brain?**
 
-  <img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+## About Dr. Lichtman
 
-  Curious about how we map more than 100 million synapses in a cubic millimeter of brain tissue? Our expert AI is modeled after insights and public materials from **Dr. Jeff Lichtman**, a pioneering figure in the field of connectomics and a leader of HI-MC, our NIH BRAIN CONNECTS mouse connectomics center.
+<img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
 
-  **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University and a Howard Hughes Medical Institute Investigator. A leading voice in neuroscience, he is renowned for developing groundbreaking imaging technologies and leading large-scale brain mapping initiatives.
-
-  Dr. Lichtman's work focuses on the **connectome**—the complete map of neural connections in the brain. He has been instrumental in developing **Brainbow** imaging and in advancing large-volume electron microscopy to reconstruct neural circuits with unprecedented precision.
-
-  He is a co-lead of the **Center for High-throughput Integrative Mouse Connectomics (HI-MC)**, which aims to chart 10 mm³ of mouse hippocampal brain tissue at full EM resolution.
-
-  🔬 His research has been featured in major outlets like *The New York Times*, *Nature*, and *Science*, and his lectures on neuroanatomy, plasticity, and connectomics have influenced a generation of scientists.
-
-  In April 2024, Harvard named Dr. Lichtman the Dean of Science for the Faculty of Arts and Sciences, underscoring his leadership in fostering cross-disciplinary collaboration and open, data-driven discovery.
+**Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University, a Howard Hughes Medical Institute Investigator, and, since April 2024, Dean of Science for Harvard's Faculty of Arts and Sciences. His work centers on the connectome — the complete map of neural connections in the brain — including the development of Brainbow imaging and large-volume electron microscopy for circuit reconstruction. He is a co-lead of the Center for High-throughput Integrative Mouse Connectomics (HI-MC), the NIH BRAIN CONNECTS center working to map 10 mm³ of mouse hippocampal tissue at full EM resolution (see the <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">MouseConnects case study</a>).
 
   </div>
 </div>
@@ -64,22 +90,7 @@ content_type: core
 
 <section class="section expert-bio" markdown="1">
 <div class="section-header">
-  <h2 class="section-title">🤖 How to Use the Chatbot</h2>
-</div>
-
-This chatbot is trained on publicly available knowledge, papers, and lectures by Dr. Lichtman. It is designed to:
-- Explain core concepts in connectomics
-- Answer common student questions
-- Provide philosophical and ethical reflections on brain science
-- Highlight the importance of high-quality data and collaboration
-
-⚠️ *Disclaimer: This GPT does not represent direct communication with Dr. Lichtman and may not reflect his real-time views. Always refer to primary literature or direct mentorship when available.*
-
-</section>
-
-<section class="section expert-bio" markdown="1">
-<div class="section-header">
-  <h2 class="section-title">📚 Recommended Resources</h2>
+  <h2 class="section-title">Recommended Resources</h2>
 </div>
 
 - [Nature (2025): MICrONS Connectome Paper](https://www.nature.com/articles/s41586-025-08790-w)

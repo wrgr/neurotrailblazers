@@ -102,9 +102,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum pass**: Coherent graph model and metric rationale. Null comparison included.
-- **Strong performance**: Clear link between each metric and a biological question. Multiple null models tested. Community structure validated against external data.
-- **Common failure to flag**: Metric dumping without hypothesis alignment — computing every metric available without explaining what question each answers.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

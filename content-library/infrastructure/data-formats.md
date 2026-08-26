@@ -2,6 +2,8 @@
 layout: page
 title: "Data Formats and Representations"
 permalink: /content-library/infrastructure/data-formats/
+image: /assets/images/content-library/infrastructure/data-formats.svg
+image_alt: "Stylized vector art: pipeline stages running above a chunk grid."
 description: "Connectomics data representations — volumes, meshes, skeletons, and graphs — when to use each, format specifications, and conversion tradeoffs."
 topics:
   - data-formats

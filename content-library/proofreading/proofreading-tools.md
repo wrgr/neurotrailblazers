@@ -2,6 +2,8 @@
 layout: page
 title: "Proofreading Tools for Connectome Reconstruction"
 permalink: /content-library/proofreading/proofreading-tools/
+image: /assets/images/content-library/proofreading/proofreading-tools.svg
+image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: >
   A detailed instructor reference on the software tools used for connectome
   proofreading, including CAVE, Neuroglancer, Spelunker, NeuTu, and CATMAID.

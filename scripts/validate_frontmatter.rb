@@ -31,8 +31,8 @@ CONTENT_GLOBS = [
 
 REQUIRED_BY_TYPE = {
   "modules" => %w[title module_number slug short_title pipeline_stage status],
-  "avatars" => %w[layout title role permalink slug summary strengths challenges goals recommended_modules recommended_datasets recommended_tools image last_reviewed maintainer],
-  "datasets" => %w[layout title slug summary modality species scale access_level use_cases recommended_modules related_tools related_frameworks resource_links image last_reviewed maintainer],
+  "avatars" => %w[layout title role permalink slug summary strengths challenges goals recommended_modules recommended_datasets recommended_tools last_reviewed maintainer],
+  "datasets" => %w[layout title slug summary modality species scale access_level use_cases recommended_modules related_tools related_frameworks resource_links last_reviewed maintainer],
   "tools" => %w[layout title slug summary use_cases recommended_modules related_datasets last_reviewed maintainer],
   "frameworks" => %w[layout title slug summary framework_type related_modules related_tools last_reviewed maintainer],
 }.freeze
@@ -163,6 +163,12 @@ def validate_file(path)
     slug = fm["slug"]
     expected_slug = path.basename(".md").to_s
     problems << "slug '#{slug}' does not match filename '#{expected_slug}'" if slug && slug != expected_slug
+  end
+
+  # An image key is optional, but a declared path has to resolve — 93 phantom
+  # image declarations accumulated before this check existed.
+  if fm["image"].is_a?(String) && fm["image"].start_with?("/")
+    problems << "image points to missing file: #{fm["image"]}" unless ROOT.join(fm["image"].delete_prefix("/")).exist?
   end
 
   if fm.key?("content_type") && !CONTENT_TYPES.include?(fm["content_type"])

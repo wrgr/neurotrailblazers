@@ -32,9 +32,12 @@ existing implementation of it. The learner-facing material is the unit page link
 4. Slide 4 (6 min): Morphological and contextual cues
 5. Slide 5 (6 min): Vascular and myelin context interpretation
 6. Slide 6 (6 min): Glia-neuron ambiguity classes
-7. Slide 7 (7 min): Worked case I: astrocyte-like process
-8. Slide 8 (7 min): Worked case II: microglia confusion case
-9. Slide 9 (6 min): Worked case III: oligodendrocyte/myelin boundaries
+7. Slide 7 (7 min): Worked case I: perivascular flattened profile
+   - Narrate the unit's worked example (astrocyte endfoot vs. neurite at a capillary), reasoning visible.
+8. Slide 8 (7 min): Worked case II: astrocyte process vs thin dendrite
+   - From the glia-recognition library entry's first worked example.
+9. Slide 9 (6 min): Worked case III: OPC vs small neuron soma
+   - From the glia-recognition library entry's second worked example.
 10. Slide 10 (5 min): QC metrics for glia labeling
 11. Slide 11 (5 min): Escalation and second-pass review workflow
 12. Slide 12 (5 min): Common failure patterns in practice

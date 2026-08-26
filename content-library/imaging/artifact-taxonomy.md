@@ -2,6 +2,8 @@
 layout: page
 title: "Artifact Taxonomy"
 permalink: /content-library/imaging/artifact-taxonomy/
+image: /assets/images/content-library/imaging/artifact-taxonomy.svg
+image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
 description: "Comprehensive catalog of EM imaging artifacts in connectomics, their causes, visual signatures, downstream impact on segmentation and proofreading, and mitigation strategies."
 topics:
   - artifacts

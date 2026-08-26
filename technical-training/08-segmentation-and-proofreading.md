@@ -3,6 +3,8 @@ layout: page
 title: "08 Segmentation and Proofreading"
 description: "How automated segmentation fails, which metrics reveal which failure, and how to run proofreading as a prioritized, measured, budget-bounded operation rather than an open-ended cleanup."
 permalink: /technical-training/08-segmentation-and-proofreading/
+image: /assets/images/units/08-segmentation-and-proofreading.svg
+image_alt: "Stylized vector art: two segments meeting at a marked split, a dashed merge bridge, and a partly spent budget bar."
 slug: 08-segmentation-and-proofreading
 track: core-concepts-methods
 pathways:
@@ -200,6 +202,56 @@ that stops without tapering to a natural ending is a split candidate), morpholog
 implausibility detectors (an object with two somata; an object with both ribosomes and
 presynaptic vesicle clusters — the Unit 06 alarm), and agglomeration-confidence
 thresholds. Humans then adjudicate a *ranked* queue rather than browsing.
+
+### Worked example: three candidates, one annotator-hour
+
+> **Setup:** the study needs 200 proofread layer 2/3 pyramidal cells for a
+> cell-type targeting endpoint — fraction of input synapses by presynaptic class,
+> per cell. The queue's top three candidates, with one annotator-hour available
+> before today's verification pass:
+>
+> - **A** — a split: an analysis-set cell's primary apical dendrite truncated
+>   close to the soma, detaching roughly 60% of the arbor. Estimated fix: 10 min.
+> - **B** — a glia–neuron merge: a fine astrocytic process fused onto another
+>   analysis-set cell's basal dendrite. Estimated fix: 20 min — thin, and it
+>   needs care.
+> - **C** — a conspicuous merge: two somata in one object, flagged by the
+>   morphology detector. Neither cell is in the analysis set. Estimated fix: 15 min.
+
+Score them on the five factors, with the assumptions said out loud.
+
+**Proximity to the endpoint.** A and B sit on analysis-set cells. C looks
+dismissible — but not yet: C could still corrupt the endpoint *indirectly*, if
+either fused neuron is presynaptic to an analysis cell, because the merge
+scrambles the presynaptic identity of those inputs. Check the partner lists —
+two minutes — and find no synapses onto the 200. Only now does C actually drop.
+The assumption "C does not touch the endpoint" has been tested, not presumed.
+
+**Error type.** B corrupts: the astrocytic path drags past synapses the dendrite
+never contacted, and those false inputs enter the class fractions silently
+(Unit 07 §1). A truncates: the input count is undercounted, but *visibly* — the
+cell fails the "dendrite complete" criterion for its level and is excluded until
+fixed. An unfixed A delays a cell; an unfixed B poisons one.
+
+**Size and path centrality.** Within splits, A is severe — near the root, with
+most of the arbor detached. But size ranks within type, not across types: A's
+60% does not outrank B's merge.
+
+**Cost to fix.** A is half B's price. Per expected endpoint change per minute, B
+still wins: removing silent corruption beats accelerating a visible, bounded
+repair.
+
+**The hour:** B (20) + A (10) + the partner check on C (2) = 32 minutes. The
+remaining 28 do not go to C — its only argument was conspicuousness, which is
+not a factor — but to the next analysis-set candidates in the queue: roughly
+five more corrections at a five-minute median. C is logged with a reason,
+unfixed.
+
+**Transferable principle:** rank by expected endpoint change per annotator
+minute, and test the "obviously irrelevant" candidate before dismissing it —
+two minutes of checking is part of the triage, not overhead. This is the
+exercise Part B of the lab asks you to write down for your own candidates, with
+the weights stated in advance.
 
 ### Stopping rules
 
@@ -409,7 +461,7 @@ throughput and discuss them as protocol feedback.
 
 **Assuming the error rate is uniform.** It is not — it is much higher near volume
 boundaries, in artifact regions, and for thin processes. Recover: report error rate
-by region and by process calibre, and let that drive both triage and the caveats.
+by region and by process caliber, and let that drive both triage and the caveats.
 
 ---
 

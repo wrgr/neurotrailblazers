@@ -97,9 +97,9 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: A generic random graph is rarely an adequate connectomics null.
-- [ ] I did not assume: Reporting only p-values without multiplicity context is incomplete.
-- [ ] I did not assume: Post-hoc storytelling is not confirmatory inference.
+- [ ] I did not assume: A generic random graph is an adequate null for a connectome.
+- [ ] I did not assume: A small p-value speaks for itself, regardless of how many tests were run.
+- [ ] I did not assume: A hypothesis found in the data can be confirmed by the same data.
 
 ---
 

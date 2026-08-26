@@ -4,6 +4,12 @@ layout: default
 
 <div class="layout-content layout-page">
   {% include ui/page-hero.html %}
+  {% if page.image %}
+  <figure class="module-art">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}" loading="lazy" width="1200" height="420">
+  </figure>
+  {% endif %}
+  {% include ui/entry-meta.html %}
   {{ content }}
   {% if page.url contains '/technical-training/' and page.url != '/technical-training/' %}
   {% unless page.url contains '/technical-training/slides/' or page.url contains '/technical-training/journal-club/' or page.url contains '/technical-training/dictionary/' %}

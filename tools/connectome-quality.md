@@ -37,86 +37,90 @@ content_type: core
         </div>
     </div>
 
+    <section class="section" markdown="1">
+
+## What Connectome Quality Means
+
+A reconstructed connectome is a claim: that these objects are neurons, that
+these contacts are synapses, and that the wiring diagram derived from them can
+carry scientific weight. Quality control is the practice of measuring how far
+that claim can be trusted, and no single number does it. Each standard metric
+measures one thing and is blind to another — the choosing is covered in
+[Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+and the mathematics in the
+[Metrics and QA reference]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}).
+
+**Variation of information (VI)** totals the disagreement between two
+segmentations and decomposes into a split component and a merge component. It
+misleads whenever it is reported as a single number: the split component
+usually dominates, so a total VI can improve while merge errors — the
+expensive kind — get worse. Report the two components separately, always.
+
+**Expected run length (ERL)** is the mean error-free path length along a
+neuron's skeleton: how far can you trace before hitting an error? It fits
+tracing-oriented questions, and misleads on merges, which it does not penalize
+unless explicitly made to.
+
+**Synapse precision and recall** score detected synapses against ground truth.
+They assume the segmentation underneath is correct — a synapse assigned to a
+merged object still scores as a hit — so they can look excellent on a volume
+whose wiring diagram is wrong.
+
+**Completeness** reports what fraction of a neuron was reconstructed, and says
+nothing about whether what is there is correct.
+
+Behind all four sits the field's central asymmetry: splits are visible and
+bounded, while merges are invisible and unbounded, which is why pipelines are
+deliberately tuned to over-segment. And behind the metrics sits the question
+they exist to serve — not "what is our VI?" but "how much would our result
+change under correction of the remaining errors?" Unit 08's answer is to
+exhaustively proofread a small random sample of analysis cells (about 20 is
+often informative) and report how the endpoint shifts.
+
+These methods are exercised on real projects:
+[MICrONS](https://www.microns-explorer.org/) provides densely reconstructed EM
+volumes with functional data that serve as a testbed for quality assessment,
+and CIRCUIT (Connectome Integrity and Reliability through Quantitative and
+Iterative Training), developed by William Gray-Roncal and collaborators, packages
+evaluation tools and metrics — topology, morphology, and synapse-based
+F1 score — for scalable use.
+
+## How Humans and Machines Divide the Work
+
+Automated segmentation produces the reconstruction; automated detectors then
+propose where it is wrong — endpoint detectors flag likely splits (a neurite
+that stops in mid-neuropil), implausible-morphology detectors flag likely
+merges (organelle and shape combinations that cannot coexist in one process).
+The output is a ranked queue of candidates, not a verdict.
+
+Humans adjudicate that queue. The division holds because the two error types
+demand different strengths: splits are findable by rule, but recognizing a
+merge requires the biological judgment that a "perfectly ordinary looking"
+object is in fact two cells — which is why
+[Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+assigns merge classes to human review. Newcomers enter this workflow through
+small, atomic proofreading tasks — validating boundaries in bounded regions,
+with every correction carrying an evidence chain — and that is a deliberate
+training design as much as a labor one: the
+[proofreading side quest]({{ '/side-quests/proofreading/' | relative_url }})
+builds the skill on real public volumes, and structured task designs with
+built-in quality checks let larger groups contribute without diluting the
+standard.
+
+    </section>
+
     <div class="cards-grid">
         <div class="card">
-            <h2>🌐 A Research Incubator: Training Through Discovery</h2>
-            <p>Connectomics offers a unique opportunity for students to engage directly in frontier neuroscience research. At NeuroTrailblazers, we treat quality control not just as a technical step — but as a learning gateway.</p>
-            <p>Students begin by visualizing data, progress to structured evaluations, and eventually contribute to real scientific discoveries through <strong>proofreading</strong>, <strong>metric development</strong>, and <strong>model validation</strong>.</p>
+            <h2>Learn by Doing</h2>
+            <p>The hands-on route is the <a href="{{ '/side-quests/proofreading/' | relative_url }}">proofreading side quest</a>: worked scenarios, real public volumes, and an artifact a lab can read. The <a href="{{ '/notebooks/connectome-quality/' | relative_url }}">notebooks page</a> holds the reference-code steps for computing the metrics on this page.</p>
         </div>
 
         <div class="card">
-            <h2>🔬 What Is Connectome Quality?</h2>
+            <h2>Where to go from here</h2>
             <ul>
-                <li><strong>Segmentation Accuracy</strong> – Are neuron boundaries correct?</li>
-                <li><strong>Synapse Fidelity</strong> – Are neural connections labeled properly?</li>
-                <li><strong>Continuity & Topology</strong> – Do neurites span slices plausibly?</li>
-                <li><strong>Annotation Consistency</strong> – Can humans and machines agree?</li>
-            </ul>
-            <p>These issues impact scientific interpretation, requiring rigorous evaluation.</p>
-        </div>
-
-        <div class="card">
-            <h2>🧠 Real-World Contexts</h2>
-            <h3>🧪 <strong>MICrONS</strong></h3>
-            <p>A flagship project funded by IARPA and BRAIN Initiative, MICrONS provides densely labeled EM volumes and functional data — a testbed for large-scale reconstruction and quality assessment.</p>
-            <h3>⚙️ <strong>CIRCUIT (Connectome Integrity and Reliability through Quantitative and Iterative Training)</strong></h3>
-            <p>Developed by William Gray-Roncal and collaborators, CIRCUIT establishes tools and metrics for scalable evaluation, integrating topology, morphology, and performance metrics like synapse-based F1 score.</p>
-        </div>
-
-        <div class="card">
-            <h2>🤖 Human & Machine Collaboration</h2>
-            <p>We explore a full spectrum of proofreading workflows:</p>
-            <ul>
-                <li>🔄 <strong>LLM-Powered Proofreading</strong> – Use large vision-language models to detect continuity errors, merges/splits, and suggest edits.</li>
-                <li>👁️ <strong>Atomic Task Manual Proofreading</strong> – Students validate segment boundaries in small image regions, learning structure through repetition.</li>
-                <li>🧑‍🔬 <strong>MTurk-Style Human-Machine Teaming</strong> – Crowdsource labeling tasks with structured quality assurance and incentive models.</li>
-            </ul>
-            <p>Each approach teaches different aspects of scientific rigor and contributes to better datasets.</p>
-        </div>
-
-        <div class="card">
-            <h2>🧰 Tools & Metrics for Quality</h2>
-            <ul>
-                <li><strong>Synapse-Based F1 Score</strong> – Precision/recall of synapse detections</li>
-                <li><strong>Expected Run Length (ERL)</strong> – How far can a neuron be traced error-free?</li>
-                <li><strong>Topology Metrics</strong> – Branch count, continuity, loops</li>
-                <li><strong>Gold-Standard Injection</strong> – Validated regions inserted to test models</li>
-            </ul>
-            <blockquote>
-                <p>🔍 See our <a href="{{ '/notebooks/connectome-quality/' | relative_url }}">Notebooks</a> for hands-on examples.</p>
-            </blockquote>
-        </div>
-
-        <div class="card">
-            <h2>👩🏽‍💻 Learn by Doing: Notebook Series</h2>
-            <ol>
-                <li><strong>Visualizing Segmentation Errors</strong></li>
-                <li><strong>Computing Synapse-Based F1 Scores</strong></li>
-                <li><strong>Simulating Merge/Split Errors</strong></li>
-                <li><strong>Using Topology for Validation</strong></li>
-                <li><strong>Proofreading & Gold-Standard Injection</strong></li>
-            </ol>
-            <p>These are designed for students — no prior neuroscience experience required!</p>
-        </div>
-
-        <div class="card">
-            <h2>🧠 Why This Matters</h2>
-            <p>Reliable connectomes power:</p>
-            <ul>
-                <li>Disease modeling (e.g., Alzheimer's, epilepsy)</li>
-                <li>Brain-inspired machine learning</li>
-                <li>Fundamental circuit discovery</li>
-            </ul>
-            <p>By learning how to spot and fix errors, students join the scientific pipeline and help push the field forward.</p>
-        </div>
-
-        <div class="card">
-            <h2>📣 Join the Community</h2>
-            <ul>
-                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Slack Workspace</a></li>
-                <li><a href="{{ '/notebooks/connectome-quality/' | relative_url }}">Contribute a Notebook</a></li>
-                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Proofread & Earn with MTurk-style Projects</a></li>
-                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Submit a New Metric</a></li>
+                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a> — the metrics on this page taught in full, with a graded lab</li>
+                <li><a href="{{ '/side-quests/proofreading/' | relative_url }}">The proofreading side quest</a> — the hands-on route, on real public volumes</li>
+                <li><a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> — the site's question route</li>
             </ul>
         </div>
     </div>

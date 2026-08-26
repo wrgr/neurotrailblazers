@@ -2908,3 +2908,97 @@ a.arch-card,
   .arch-card { padding: 1.1rem 1.1rem 1rem; }
   .quest-step { padding-left: 2.9rem; }
 }
+
+/* Metadata strip on content-library entries (ui/entry-meta.html): the
+   difficulty/tags/combines-with front matter the library index promises,
+   which previously never rendered anywhere. */
+.entry-meta {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border, #d7dde1);
+  border-radius: 8px;
+  background: var(--color-surface-alt, rgba(0, 0, 0, 0.02));
+  font-size: 0.9rem;
+}
+.entry-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+.entry-meta a.pill { text-decoration: none; }
+.entry-meta-tag { opacity: 0.85; }
+.entry-meta-combines {
+  margin: 0.6rem 0 0;
+  line-height: 1.5;
+}
+
+/* Module artwork: generated SVG banners (scripts/generate_module_art.rb).
+   The art paints its own dark ground, so it needs no theme handling here. */
+.module-art {
+  margin: 0 0 1.75rem;
+}
+.module-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.module-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.65rem;
+}
+
+/* Home-page one-minute story: the abbreviated Neuronauts relay. */
+.story-lede {
+  max-width: 70ch;
+  margin: 0 auto 1.5rem;
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+.story-relay {
+  max-width: 46rem;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: relay;
+  display: grid;
+  gap: 0.45rem;
+}
+.story-relay li {
+  counter-increment: relay;
+  position: relative;
+  padding-left: 2.6rem;
+}
+.story-relay li::before {
+  content: counter(relay);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--neural-blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.story-relay a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+}
+.story-relay a:hover {
+  background: rgba(37, 99, 235, 0.08);
+}
+.story-relay a strong {
+  color: var(--neural-blue);
+}

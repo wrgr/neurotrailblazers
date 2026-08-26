@@ -2,6 +2,8 @@
 layout: page
 title: "Metrics and Quality Assurance for Connectome Proofreading"
 permalink: /content-library/proofreading/metrics-and-qa/
+image: /assets/images/content-library/proofreading/metrics-and-qa.svg
+image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: >
   A comprehensive instructor reference on quantitative metrics for evaluating
   segmentation and proofreading quality, including Variation of Information,

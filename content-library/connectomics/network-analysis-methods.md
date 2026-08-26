@@ -2,6 +2,8 @@
 layout: page
 title: "Network Analysis Methods"
 permalink: /content-library/connectomics/network-analysis-methods/
+image: /assets/images/content-library/connectomics/network-analysis-methods.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "Core network science methods for connectome analysis — degree distributions, clustering, path length, community detection, centrality, and spectral methods with worked examples."
 topics:
   - network-analysis

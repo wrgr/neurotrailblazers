@@ -25,6 +25,10 @@ content_type: core
 </section>
 
 <section class="section section-compact">
+  <p>This is one of two paper collections on the site, built for different jobs. This corpus is bibliometrically selected and structured for filtering; the <a href="{{ '/content-library/journal-papers/' | relative_url }}">journal paper collection</a> holds 96 hand-annotated papers with beginner/intermediate/advanced summaries, key figures, and discussion prompts. They overlap by 35 papers &mdash; <a href="{{ '/content-library/journal-papers/' | relative_url }}">its index</a> explains which to reach for.</p>
+</section>
+
+<section class="section section-compact">
   <h2 style="margin-top:0">Suggested Reading Paths</h2>
   <div class="jc-paths">
     <div class="jc-path-card">

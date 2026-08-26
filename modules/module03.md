@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module03/
 description: "Build practical Python/Jupyter skills for reproducible connectomics data exploration."
 module_number: 3
+image: /assets/images/modules/module03.svg
+image_alt: "Stylized vector art: notebook code cells with prompt chevrons and a result sparkline."
 difficulty: "Beginner to Intermediate"
 duration: "4 hours"
 learning_objectives:
@@ -71,12 +73,14 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ### 1) Python as the lingua franca of connectomics
 - **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.
 - **Plain language:** if connectomics has a common language, it is Python.
-- **Misconception:** you need to be an expert programmer to do connectomics. In practice, most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
+- **Misconception:** you need to be an expert programmer to do connectomics.
+- **In practice:** Most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
 
 ### 2) Jupyter notebooks for reproducible analysis
 - **Technical:** a Jupyter notebook is an executable lab notebook that combines code cells, markdown narrative, and inline outputs. Reproducibility requires that notebooks run cleanly from top to bottom (no hidden state), document all dependencies (pinned package versions), and record the dataset version used. A notebook that cannot be re-run from a clean kernel is not reproducible --- it is a screenshot.
 - **Plain language:** your notebook should work for someone who has never seen it before.
-- **Misconception:** if the code runs on my machine, it is reproducible. Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
+- **Misconception:** if the code runs on my machine, it is reproducible.
+- **In practice:** Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
 
 ### 3) Key libraries overview
 - **CAVEclient:** the primary interface to the CAVE (Connectome Annotation Versioning Engine) database. Use it to query synapse tables, retrieve segment IDs, fetch cell type annotations, and access materialization versions. Example: `client.materialize.query_table('synapses_nt_v1')` returns a DataFrame of synapses with pre/post segment IDs, coordinates, and neurotransmitter predictions.
@@ -88,12 +92,14 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ### 4) Best practices for connectomics code
 - **Technical:** pin package versions in a `requirements.txt` or `environment.yml` file. Document every analysis step in markdown cells. Use git for version control of notebooks (consider pairing with `nbstripout` to avoid committing large outputs). Record the CAVE materialization version and dataset version in the notebook header. Structure notebooks linearly: setup, data loading, analysis, visualization, export.
 - **Plain language:** future you (and your collaborators) will thank present you for being organized.
-- **Misconception:** version control is only for software engineers. In research, version control is how you prove that your analysis produced the results you claim.
+- **Misconception:** version control is only for software engineers.
+- **In practice:** In research, version control is how you prove that your analysis produced the results you claim.
 
 ### 5) The notebook as a communication tool
 - **Technical:** notebooks serve multiple audiences. For yourself: they are a record of what you tried and what worked. For collaborators: they are a reproducible protocol. For reviewers: they are evidence that your analysis is sound. Write markdown cells as if explaining to a knowledgeable colleague who has not seen your specific analysis before.
 - **Plain language:** a good notebook tells a story that anyone in the field can follow.
-- **Misconception:** code comments are sufficient documentation. Markdown cells provide the narrative context --- the *why* --- that code comments alone cannot convey.
+- **Misconception:** code comments are sufficient documentation.
+- **In practice:** Markdown cells provide the narrative context --- the *why* --- that code comments alone cannot convey.
 
 ## Core concepts
 - Notebook as executable lab notebook.

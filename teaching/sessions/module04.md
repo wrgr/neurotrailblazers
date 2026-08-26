@@ -81,9 +81,9 @@ voiced is far easier to correct than one they are holding silently.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** The hippocampal laminar logic transfers to neocortex because both are cortex.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** An atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
+- **They may believe:** An atlas coordinate is a ground-truth location.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
+- **They may believe:** Annotation confidence should be uniform across a volume.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm
@@ -100,9 +100,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum pass**: Context-aware call and confidence note for each patch. Layer identification is reasonable (within ±1 layer).
-- **Strong performance**: Clear rationale linking EM features to layer context. Uncertainty is explicit and well-reasoned. Cross-slice evidence cited.
-- **Common failure to flag**: Isolated local cue overconfidence — making a definitive call from a single feature without checking layer context or neighboring slices.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

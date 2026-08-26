@@ -60,6 +60,8 @@ actually for.
 | Assessing whether a claim in a paper holds | [Journal club]({{ '/technical-training/journal-club/' | relative_url }}) | The abstract. The entries state what each paper actually established and what it did not. |
 | Unsure what is expected of you, socially or professionally | [Hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) | Guessing, or asking someone in a way that costs you. |
 | Choosing or citing data | [Datasets]({{ '/datasets/' | relative_url }}) | A paper's methods section alone. You need the version, not just the citation. |
+| Placing a paper in the field's landscape | [The field, mapped]({{ '/kb/' | relative_url }}) | Reading forward from its reference list. The interactive maps show what a paper descends from and what built on it. |
+| Explaining how this site relates to BRAIN CONNECTS, IC3, and APEX | [The ecosystem map]({{ '/core/connects-ecosystem/' | relative_url }}) | Guessing from program names. The map states what each center does and what this site's job is not. |
 
 ## What is *not* core
 

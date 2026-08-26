@@ -4,6 +4,8 @@ layout: module
 permalink: /modules/module08/
 description: "Design and evaluate connectomics hypotheses using measurable outcomes, statistical logic, and explicit limitations."
 module_number: 8
+image: /assets/images/modules/module08.svg
+image_alt: "Stylized vector art: an observed value standing outside a null distribution."
 difficulty: "Intermediate"
 duration: "4 hours"
 learning_objectives:
@@ -101,6 +103,26 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - **Misconception guardrail:** a metric can be chosen after seeing the data without cost to the inference.
 - **Misconception guardrail:** reporting the tests that worked is sufficient without reporting how many were run.
 
+## Worked example: the feed-forward loop that shrank as the null grew up
+
+The numbers below are illustrative — they show the shape of the reasoning, not results from a specific published dataset.
+
+A student proposes: "Feed-forward loops are enriched in this L4-to-L2/3-to-L5 circuit, supporting a temporal-filtering function." The dataset is a 300-neuron subgraph with 2,100 directed edges at a stated synapse threshold and a pinned materialization version. Here is how the hypothesis earns, and then loses, its claim.
+
+**Step 1 — Make it testable before touching data.** As written, the hypothesis has no comparison. Rewrite: "In this subgraph, the A→B, A→C, B→C triad is more frequent than expected under a degree-preserving null." Now it names a metric (triad count), a null, and implicitly a test. The functional clause — "supporting temporal filtering" — is moved out of the hypothesis and into the interpretation section, where it belongs as a consistency statement, not a claim.
+
+**Step 2 — Count, and compare to the weakest null first as a sanity bound.** Observed: 84 feed-forward loop instances. An Erdos-Renyi null with matched density expects about 22, a 3.8x enrichment. Write that down as an upper bound on how impressive this can possibly look, and do not report it as a finding — almost everything beats ER in a degree-heterogeneous graph.
+
+**Step 3 — Preserve degree.** 1,000 degree-preserving rewirings give a null mean of 51 with standard deviation 9. Enrichment drops to 1.6x, z = 3.7. More than half of the apparent effect was degree heterogeneity — a few high-degree neurons participate in many triads by arithmetic alone.
+
+**Step 4 — Ask what else the circuit already tells you.** The subgraph mixes excitatory and inhibitory types, and E and I populations have different connection rates. A cell-type-stratified null that preserves the E/I connection probabilities expects 78 loops: enrichment 1.08x, z = 0.7. Under the null most relevant to the claim, the effect is gone. The "motif" was mostly type composition: E→E and E→I edges are common enough that loops assemble from them at close to the observed rate.
+
+**Step 5 — Count the tests you ran.** This loop was one of 16 triad classes examined on the way to the hypothesis. At alpha = 0.05 across 16 correlated tests, even the z = 3.7 result from Step 3 needed correction before being reported, and the honest write-up says 16 tests were run whether or not the other 15 appear in the paper.
+
+**What gets reported.** The result under all three nulls, in one table, with the sentence: "Feed-forward loop frequency is consistent with degree distribution and cell-type composition; we find no evidence of additional loop-specific wiring." The explicit non-claim: this does not show the circuit lacks temporal filtering — function was never measured — and it does not rule out enrichment within a single cell type, which would need a within-type test the sample may be too small to power.
+
+**Why this is a good outcome.** A negative result against a strong null constrains the space of wiring rules the field needs to explain. The same reasoning applied to reciprocity, with the full null-model machinery, is worked in [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}); this module's job is the design discipline that makes such a result trustworthy either way.
+
 ## Core workflow
 1. Define question and estimand: what structural feature would constrain or inform the biological question?
 2. Choose measurable outputs: specific metric(s) computed from the connectome graph.
@@ -159,9 +181,36 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - Revised hypotheses incorporating feedback.
 
 ## Assessment rubric
-- **Minimum pass**: Coherent hypothesis/metric/null trio for at least 2 of 3 hypotheses.
-- **Strong performance**: Clear uncertainty and non-claim statements. Null model choice justified. Peer critique identifies genuine issues.
-- **Common failure to flag**: Vague hypothesis without measurable endpoint ("we will study connectivity patterns") or missing null model.
+- **Minimum pass**
+  - At least 2 of 3 hypotheses name a measurable structural endpoint, a specific comparison, and a null model — a reader could run the test from the sheet alone.
+  - Each testable hypothesis states one supported claim and one explicit non-claim, and the two are different in content, not restatements.
+  - The metric's scope (local vs global, per-pair vs per-population) matches the scope of the hypothesis it tests.
+  - The required dataset version is stated for each hypothesis.
+- **Strong performance**
+  - Null model choice is justified in words: the "uninteresting explanation" the null encodes is written out before the test is described.
+  - At least one hypothesis is evaluated under two nulls of different stringency, with a prediction of how the effect size should move.
+  - The analysis plan states how many tests will be run and names the correction, including tests that may go unreported.
+  - Peer critique identifies at least one genuine weakness per hypothesis (a confound, an over-claim, a metric mismatch), and the revision visibly responds to it.
+- **Common failure to flag**
+  - Vague hypothesis without measurable endpoint ("we will study connectivity patterns").
+  - Missing or default null model — Erdos-Renyi used where degree structure obviously matters.
+  - A functional claim ("this circuit computes X") stated as the hypothesis rather than as an interpretation boundary.
+
+## Common errors and how to recover
+
+- **Your hypothesis survives review but cannot be tested from the sheet.** If a colleague cannot state what number will be computed and what it will be compared against, the hypothesis is still an aspiration. Recover by forcing it into the template — "in [dataset], [metric] is [comparison] relative to [null]" — and moving everything that does not fit into the interpretation section.
+- **The result is significant against Erdos-Renyi and you want to stop there.** Almost everything is. Recover by re-testing against a degree-preserving null as the minimum, adding spatial or cell-type constraints when the claim requires them, and reporting the effect size under each null so the reader sees how much survives.
+- **You chose the metric after looking at the data.** The inference is now conditioned on the peek, and the nominal p-value is wrong. Recover by declaring the analysis exploratory, then confirming on held-out data — a different region, a different animal, or a pre-registered re-test on the next data release — before claiming the result.
+- **You ran a dozen variants and reported the one that worked.** No correction can repair this after the fact. Recover by listing every variant actually run, applying the correction across all of them, and reporting the survivors; if none survive, the honest write-up says so and states what sample size would be needed.
+- **The result flips between two reasonable null models.** This is information, not a nuisance. Recover by reporting both, and stating in words what the stricter null controls for — the flip usually means the effect is real but explained by degree, distance, or type composition rather than by a specific wiring rule.
+
+## What this module does not cover
+
+- **Null-model construction and the triad census in full.** Rewiring algorithms, distance-preserving nulls, permutation inference, and the complete worked reciprocity example are [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) and [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}).
+- **Building the graph you will test.** Node, edge, threshold, and inclusion decisions — each of which changes the answer — are [Module 10]({{ '/modules/module10/' | relative_url }}) and [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}).
+- **How reconstruction error biases the test.** Merge errors inflate dense motifs asymmetrically; the error-sensitivity simulation belongs to [Module 11]({{ '/modules/module11/' | relative_url }}) and [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}).
+- **Claim discipline at the framing stage.** What connectomics can answer at all, and the claim-bin vocabulary this module leans on, is [Technical Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}).
+- **Statistical theory.** Power analysis for graph statistics and formal random-graph theory are assumed background or deferred to the references; this module teaches design discipline, not derivations.
 
 ## Content library references
 - [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) — Null models, statistical testing, DotMotif

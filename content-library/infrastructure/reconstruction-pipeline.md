@@ -2,6 +2,8 @@
 layout: page
 title: "Reconstruction Pipeline"
 permalink: /content-library/infrastructure/reconstruction-pipeline/
+image: /assets/images/content-library/infrastructure/reconstruction-pipeline.svg
+image_alt: "Stylized vector art: pipeline stages running above a chunk grid."
 description: "End-to-end connectome reconstruction architecture — from raw image ingest through alignment, segmentation, agglomeration, synapse detection, and serving. Full instructor script with references."
 topics:
   - pipeline

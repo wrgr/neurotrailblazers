@@ -14,13 +14,13 @@ tracks:
     modes:
       - slug: self-study
         available: true
-        shape: "Read the ten technical units in order, do every lab, and treat units 05-07 as the center of gravity rather than a descriptive interlude. Roughly 40-60 hours."
+        shape: "Read the nine technical units in order, do every lab, and treat units 05-07 as the center of gravity rather than a descriptive interlude. Roughly 40-60 hours."
         start_url: /technical-training/01-why-map-the-brain/
         start_label: "Open Unit 01"
         note: "The perceptual units are the part that most needs a second pair of eyes. Find one partner before you reach Unit 05."
       - slug: hosted-workshop
         available: true
-        shape: "Modules 01 and 03-11 have session kits. A common shape is a five-session block: framing, imaging, reading the images (two sessions), then reconstruction infrastructure."
+        shape: "Every module has a session kit. A common shape is a five-session block: framing, imaging, reading the images (two sessions), then reconstruction infrastructure."
         start_url: /teaching/sessions/
         start_label: "Browse session kits"
         note: "The two image-reading sessions carry the load. Do not compress them to make room for infrastructure."

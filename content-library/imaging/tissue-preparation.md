@@ -2,6 +2,8 @@
 layout: page
 title: "Tissue Preparation"
 permalink: /content-library/imaging/tissue-preparation/
+image: /assets/images/content-library/imaging/tissue-preparation.svg
+image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
 description: "Complete guide to tissue preparation for connectomics EM — fixation, staining, embedding, and sectioning. Full instructor script with protocols, decision points, and references."
 topics:
   - tissue-preparation

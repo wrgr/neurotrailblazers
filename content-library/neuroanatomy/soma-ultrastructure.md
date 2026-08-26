@@ -2,6 +2,8 @@
 layout: page
 title: "Neuronal Soma Ultrastructure"
 permalink: /content-library/neuroanatomy/soma-ultrastructure/
+image: /assets/images/content-library/neuroanatomy/soma-ultrastructure.svg
+image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
   Comprehensive instructor reference on the ultrastructure of the neuronal cell body
   (soma) as observed in electron microscopy, covering nuclear morphology, Nissl substance,

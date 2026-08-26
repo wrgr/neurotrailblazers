@@ -94,13 +94,13 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** You need to be an expert programmer to do connectomics. In practice, most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
+- **They may believe:** You need to be an expert programmer to do connectomics.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** If the code runs on my machine, it is reproducible. Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
+- **They may believe:** If the code runs on my machine, it is reproducible.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Version control is only for software engineers. In research, version control is how you prove that your analysis produced the results you claim.
+- **They may believe:** Version control is only for software engineers.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Code comments are sufficient documentation. Markdown cells provide the narrative context --- the *why* --- that code comments alone cannot convey.
+- **They may believe:** Code comments are sufficient documentation.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

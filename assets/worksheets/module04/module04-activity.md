@@ -96,8 +96,8 @@ them, or note where you nearly did:
 
 - [ ] I did not assume: Cortical layer can be read off a single EM patch without soma density or neuropil context.
 - [ ] I did not assume: The hippocampal laminar logic transfers to neocortex because both are cortex.
-- [ ] I did not assume: An atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
-- [ ] I did not assume: Annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
+- [ ] I did not assume: An atlas coordinate is a ground-truth location.
+- [ ] I did not assume: Annotation confidence should be uniform across a volume.
 
 ---
 
@@ -118,9 +118,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**: Context-aware call and confidence note for each patch. Layer identification is reasonable (within ±1 layer).
-- **Strong performance**: Clear rationale linking EM features to layer context. Uncertainty is explicit and well-reasoned. Cross-slice evidence cited.
-- **Common failure to flag**: Isolated local cue overconfidence — making a definitive call from a single feature without checking layer context or neighboring slices.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **My self-assessment:**
 

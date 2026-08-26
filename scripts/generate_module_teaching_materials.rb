@@ -691,6 +691,14 @@ File.write(sessions_index, <<~MD)
   personas, and what to do when a session goes wrong — see the
   [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
 
+  Two hand-written companions sit alongside the generated kits, for sessions with
+  audiences the kits do not assume: the
+  [Module 22 public-engagement companion]({{ '/teaching/module22-public-engagement/' | relative_url }})
+  for running that material with non-research audiences, and
+  [From Projectome to Synapse]({{ '/teaching/projectome-to-synapse/' | relative_url }}),
+  a 25–40 minute hands-on activity that works from high school through graduate
+  programs.
+
   <div class="cards-grid">
   {% assign kits = site.pages | where_exp: 'p', "p.path contains 'teaching/sessions/module'" | sort: 'path' %}
   {% for p in kits %}

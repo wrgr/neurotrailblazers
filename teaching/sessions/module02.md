@@ -87,15 +87,15 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** You will be taught everything you need to know. In practice, many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
+- **They may believe:** You will be taught everything you need to know.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** If the data is publicly available, there are no ethical considerations. Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
+- **They may believe:** If the data is publicly available, there are no ethical considerations.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Research is a solitary activity. Modern connectomics is closer to open-source software development than to the lone-genius model.
+- **They may believe:** Research is a solitary activity.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Good researchers do not make mistakes. In practice, the best researchers make mistakes, document them, and learn from them systematically.
+- **They may believe:** Good researchers do not make mistakes.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Scripted communication is inauthentic. In reality, scripts are scaffolds that build confidence until the language becomes natural.
+- **They may believe:** Scripted communication is inauthentic.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

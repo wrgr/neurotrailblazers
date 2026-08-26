@@ -40,7 +40,7 @@ Produce a skeleton-based morphology summary with at least three descriptors and 
 
 ## Concept Focus
 ### 1) What is skeletonization and why do we need it?
-A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a **skeleton**: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity).
+A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a **skeleton**: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity) — at the cost of surface geometry and spine shape, which are discarded.
 
 ---
 
@@ -82,9 +82,9 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** a skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- **Misconception guardrail:** a skeleton is a lossless summary of a neuron.
 - **Misconception guardrail:** morphological measurements are comparable across cells that were proofread to different levels.
-- **Misconception guardrail:** total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- **Misconception guardrail:** total dendritic length is a property of the neuron itself, independent of how it was reconstructed.
 - **Misconception guardrail:** a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
 ---
@@ -102,9 +102,19 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Assessment Rubric
-- **Minimum pass**: Valid skeleton and descriptor set for all neurons. At least 3 descriptors.
-- **Strong performance**: Robust interpretation linking descriptors to cell-type identity. Explicit uncertainty framing for borderline cases. Investigation of mismatches.
-- **Common failure to flag**: Descriptor list without biological context — reporting numbers without explaining what they mean for the neuron's identity.
+- **Minimum pass**
+- Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.
+- Every classification carries a stated evidence chain, not just a label.
+- At least one explicit measurement limitation named, tied to a specific reconstruction issue.
+- **Strong performance**
+- Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.
+- Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.
+- Per-cell completeness estimated and reported next to every absolute measurement.
+- Ratios computed on contained compartments wherever truncation is present.
+- **Common failure to flag**
+- Descriptor list without biological context — numbers with no statement of what they mean for identity.
+- Classification from a single descriptor when the others disagree.
+- Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.
 
 ---
 

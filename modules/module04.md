@@ -83,7 +83,7 @@ For projects like MouseConnects/HI-MC (which targets hippocampus), learners need
 - **Trisynaptic circuit**: Entorhinal cortex → dentate gyrus (perforant path) → CA3 (mossy fibers) → CA1 (Schaffer collaterals). This canonical pathway has never been mapped at synaptic resolution across a large volume — a key goal of MouseConnects.
 
 ### 3) Scale bridging: from atlas to EM
-- **Allen Brain Atlas** coordinates provide region/layer context for any point in the EM volume (if the tissue was registered to the atlas before or after EM). Registration is typically done using blood vessel landmarks, layer boundaries, and cytoarchitectonic features.
+- **Allen Brain Atlas** coordinates provide region/layer context for any point in the EM volume (if the tissue was registered to the atlas before or after EM). Registration is typically done using blood vessel landmarks, layer boundaries, and cytoarchitectonic features — and it is an estimate: every registered coordinate carries a residual error that grows near region and layer boundaries.
 - **Practical implication:** Before annotating any patch, check: what region am I in? What layer? What cell types are expected here? This 5-second context check prevents many classification errors.
 
 ### 4) Uncertainty is higher at boundaries
@@ -95,8 +95,24 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 
 - **Misconception guardrail:** cortical layer can be read off a single EM patch without soma density or neuropil context.
 - **Misconception guardrail:** the hippocampal laminar logic transfers to neocortex because both are cortex.
-- **Misconception guardrail:** an atlas coordinate is a ground-truth location rather than a registered estimate with a residual.
-- **Misconception guardrail:** annotation confidence should be uniform across a volume, when boundaries and volume edges are systematically harder.
+- **Misconception guardrail:** an atlas coordinate is a ground-truth location.
+- **Misconception guardrail:** annotation confidence should be uniform across a volume.
+
+## Worked example: the same bouton in two neighborhoods
+
+The numbers below are illustrative — they show the shape of the reasoning, not measurements from a specific dataset.
+
+You are handed two EM patches, each about 15 x 15 µm. Each contains a large presynaptic bouton, roughly 2.5-3 µm across, densely packed with vesicles, contacting a spiny postsynaptic structure. Locally, the two boutons are nearly identical. The calls should not be.
+
+**Step 1: run the soma census before touching the bouton.** Zoom out to the surrounding 50 x 50 µm field. Around Patch 1, you find a sheet of very densely packed small round somata (8-10 µm) just superficial to a band of large pyramidal somata — the packing signature of the dentate granule cell layer bordering CA3. Around Patch 2, you find medium somata at moderate density, abundant spines, and high overall bouton density — consistent with sensory cortex layer 4. Ten seconds of context, and the two identical boutons now sit in different hypothesis spaces.
+
+**Step 2: state the region prior and what it predicts.** In CA3, a 3 µm vesicle-dense bouton contacting a complex, multi-headed spine is the signature mossy fiber terminal — the largest boutons in the brain (3-5 µm), targeting thorny excrescences on proximal CA3 dendrites. In cortical L4, a large bouton is most plausibly a thalamocortical terminal, but local axon collaterals also produce large boutons, and nothing inside the patch separates the two.
+
+**Step 3: weigh the independent cues.** Patch 1: size (3 µm), target type (complex spine), and laminar position (adjacent to granule layer) are three independent cues agreeing on one answer. Call: mossy fiber bouton, high confidence. Patch 2: size and layer agree, but the discriminating cue — the parent axon's origin — is not in the patch. Follow the axon across neighboring sections: after 6 sections it exits the field without resolving whether it ascends from white matter (thalamocortical) or emerges from a local soma (collateral). Call: putative thalamocortical terminal, medium confidence, parent trajectory unresolved.
+
+**Step 4: write the two records differently.** Patch 1: "Mossy fiber bouton; evidence: size, thorny excrescence target, position; confidence high." Patch 2: "Large bouton, putative thalamocortical (size + L4 position); parent axon untraceable within field; confidence medium; escalate if the classification matters downstream." Identical local evidence, different confidence — because confidence is a property of the evidence chain, not of the structure.
+
+**What this example does not establish:** that context always resolves ambiguity. Sometimes both context and local cues run out; the correct output is then a flagged uncertainty with an escalation path, not a forced label.
 
 ## Core workflow
 1. Identify anatomical region/layer using soma density, cell-type signatures, and neuropil texture.
@@ -166,9 +182,36 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - One "lesson learned" about how context changed an interpretation.
 
 ## Assessment rubric
-- **Minimum pass**: Context-aware call and confidence note for each patch. Layer identification is reasonable (within ±1 layer).
-- **Strong performance**: Clear rationale linking EM features to layer context. Uncertainty is explicit and well-reasoned. Cross-slice evidence cited.
-- **Common failure to flag**: Isolated local cue overconfidence — making a definitive call from a single feature without checking layer context or neighboring slices.
+- **Minimum pass**
+  - Context-aware call and confidence note recorded for every patch.
+  - Layer identification within ±1 layer for the majority of patches.
+  - At least one evidence chain written in the form "features observed, therefore layer, therefore expected structures."
+- **Strong performance**
+  - Each call links at least two independent EM cues (soma density, neuropil texture, cell-type signature) to layer context.
+  - Confidence varies across patches in a calibrated way: boundary and volume-edge patches score lower than mid-layer patches.
+  - Cross-slice (z) evidence cited wherever a single-section call was ambiguous.
+  - Partner disagreements resolved by naming which cue was decisive, not by splitting the difference.
+- **Common failure to flag**
+  - Definitive call from a single feature without a layer or neighbor-slice check.
+  - Uniform "high" confidence across all patches, including boundary cases.
+  - Hippocampal and neocortical laminar logic applied interchangeably.
+
+## Common errors and how to recover
+
+- **You called the layer from one feature.** One large soma does not make L5; L6 and even deep L4 contain large profiles. Recover by requiring two independent cues before any layer call — soma density plus neuropil texture, or cell-type signature plus position in the column — and recording both in the evidence chain.
+- **You forced a call at a boundary.** A pyramidal cell at the L2/3-L4 transition genuinely belongs to neither with confidence. Recover by flagging it with explicit ±1-layer uncertainty. Boundary flags are expected output, not failure; a sheet with no flags is the suspicious one.
+- **You treated the atlas coordinate as exact.** The registered location said L4; the local cytoarchitecture says L5. Recover by trusting the EM cues locally, reporting the disagreement, and remembering the registration residual is largest exactly where it matters most — near boundaries.
+- **You imported one region's laminar logic into another.** Six-layer cortical reasoning applied to hippocampus (or granule-layer expectations applied to neocortex) produces confident nonsense. Recover by re-anchoring on the region's own laminar scheme before classifying anything, starting with the soma census.
+- **A process at the volume edge got a definitive identity.** It cannot be traced to a soma, so compartment and cell-type calls are underdetermined. Recover by recording what is observable (caliber, vesicles, synapse polarity), marking the identity unresolved, and noting the truncation so downstream users do not inherit false certainty.
+
+## What this module does not cover
+
+- **Organelle-level identification.** Reading mitochondria, vesicle pools, and the cues that anchor compartment calls is [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}), [soma ultrastructure]({{ '/content-library/neuroanatomy/soma-ultrastructure/' | relative_url }}), and [organelle cues]({{ '/content-library/neuroanatomy/organelle-cues/' | relative_url }}).
+- **The axon-versus-dendrite decision protocol.** The cue families, the exceptions that break the polarity rule, and the calibration lab are [Technical Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}) and [axon-dendrite classification]({{ '/content-library/cell-types/axon-dendrite-classification/' | relative_url }}).
+- **Glia.** Distinguishing astrocytic and microglial processes from neurites is [Technical Unit 07]({{ '/technical-training/07-glia/' | relative_url }}) and [glia recognition]({{ '/content-library/cell-types/glia-recognition/' | relative_url }}).
+- **Cell-type classification at scale.** Morphometric and connectivity-based typing is [Module 09]({{ '/modules/module09/' | relative_url }}) and [neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}).
+- **Registration mechanics.** How atlas alignment is computed and where its residuals come from is [Technical Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }}).
+- **Synapse calling criteria.** The three-criterion synapse decision is [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) and [synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}).
 
 ## Content library references
 - [Soma ultrastructure]({{ '/content-library/neuroanatomy/soma-ultrastructure/' | relative_url }}) — Identifying neuronal soma in EM

@@ -79,11 +79,11 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** A generic random graph is rarely an adequate connectomics null.
+- **They may believe:** A generic random graph is an adequate null for a connectome.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Reporting only p-values without multiplicity context is incomplete.
+- **They may believe:** A small p-value speaks for itself, regardless of how many tests were run.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Post-hoc storytelling is not confirmatory inference.
+- **They may believe:** A hypothesis found in the data can be confirmed by the same data.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

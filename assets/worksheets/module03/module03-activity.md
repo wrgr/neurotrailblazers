@@ -109,10 +109,10 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: You need to be an expert programmer to do connectomics. In practice, most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
-- [ ] I did not assume: If the code runs on my machine, it is reproducible. Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
-- [ ] I did not assume: Version control is only for software engineers. In research, version control is how you prove that your analysis produced the results you claim.
-- [ ] I did not assume: Code comments are sufficient documentation. Markdown cells provide the narrative context --- the *why* --- that code comments alone cannot convey.
+- [ ] I did not assume: You need to be an expert programmer to do connectomics.
+- [ ] I did not assume: If the code runs on my machine, it is reproducible.
+- [ ] I did not assume: Version control is only for software engineers.
+- [ ] I did not assume: Code comments are sufficient documentation.
 
 ---
 

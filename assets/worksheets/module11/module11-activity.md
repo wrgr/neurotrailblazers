@@ -119,9 +119,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**: Clear motif description and evidence-backed claim for at least one motif.
-- **Strong performance**: Thoughtful alternative hypotheses for each enriched motif. Multiple null models considered. Sensitivity to reconstruction quality discussed.
-- **Common failure to flag**: Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **My self-assessment:**
 

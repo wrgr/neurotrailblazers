@@ -96,9 +96,9 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: A skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.
+- [ ] I did not assume: A skeleton is a lossless summary of a neuron.
 - [ ] I did not assume: Morphological measurements are comparable across cells that were proofread to different levels.
-- [ ] I did not assume: Total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.
+- [ ] I did not assume: Total dendritic length is a property of the neuron itself, independent of how it was reconstructed.
 - [ ] I did not assume: A cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.
 
 ---
@@ -120,9 +120,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum pass**: Valid skeleton and descriptor set for all neurons. At least 3 descriptors.
-- **Strong performance**: Robust interpretation linking descriptors to cell-type identity. Explicit uncertainty framing for borderline cases. Investigation of mismatches.
-- **Common failure to flag**: Descriptor list without biological context — reporting numbers without explaining what they mean for the neuron's identity.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **My self-assessment:**
 

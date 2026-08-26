@@ -71,27 +71,32 @@ Every research environment operates on two sets of rules: the official ones (wri
 ### 1) The "hidden curriculum" of research
 - **Technical:** unwritten norms govern scientific research --- how to ask questions, how to admit uncertainty, how to give and receive feedback, how to navigate lab hierarchies. These norms vary by institution, lab, and PI, but common patterns exist: arrive at meetings prepared, version-control your work, attribute contributions explicitly, escalate problems early rather than late.
 - **Plain language:** there are rules nobody writes down but everyone is expected to follow.
-- **Misconception:** you will be taught everything you need to know. In practice, many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
+- **Misconception:** you will be taught everything you need to know.
+- **In practice:** Many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
 
 ### 2) Research ethics in connectomics
 - **Technical:** connectomics raises specific ethical considerations. Data sharing norms require that datasets be made available for replication (e.g., FlyWire, MICrONS). Attribution must credit proofreaders, not just PIs. Human tissue data (e.g., from surgical resections for epilepsy studies) requires IRB oversight and careful de-identification. Provenance tracking ensures that analyses can be traced back to specific dataset versions.
 - **Plain language:** know where the data came from, who did the work, and what rules govern its use.
-- **Misconception:** if the data is publicly available, there are no ethical considerations. Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
+- **Misconception:** if the data is publicly available, there are no ethical considerations.
+- **In practice:** Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
 
 ### 3) Collaboration norms in large-scale projects
 - **Technical:** connectomics is inherently collaborative. The FlyWire project coordinated 287 proofreaders across time zones and institutions. MICrONS involved teams at the Allen Institute, Princeton, and Baylor. Effective collaboration requires shared conventions for naming, version control, conflict resolution, and communication channels. Disagreements about segment boundaries are resolved through consensus protocols, not authority.
 - **Plain language:** you will work with many people; learn the rules of teamwork before you need them.
-- **Misconception:** research is a solitary activity. Modern connectomics is closer to open-source software development than to the lone-genius model.
+- **Misconception:** research is a solitary activity.
+- **In practice:** Modern connectomics is closer to open-source software development than to the lone-genius model.
 
 ### 4) Failure as data
 - **Technical:** in research, negative results and errors are informative, not shameful. A failed segmentation run reveals something about image quality, algorithm parameters, or tissue preparation. A proofreading error that is caught and corrected improves the dataset and trains the annotator. Labs that punish errors get fewer error reports, not fewer errors.
 - **Plain language:** mistakes are information; hiding them helps nobody.
-- **Misconception:** good researchers do not make mistakes. In practice, the best researchers make mistakes, document them, and learn from them systematically.
+- **Misconception:** good researchers do not make mistakes.
+- **In practice:** The best researchers make mistakes, document them, and learn from them systematically.
 
 ### 5) Communication scripts for common situations
 - **Technical:** having pre-planned language for difficult situations reduces anxiety and improves outcomes. Key scripts include: asking for help ("I have been stuck on X for Y hours; here is what I have tried..."), admitting uncertainty ("I am not confident in this annotation because..."), giving feedback ("I noticed a potential issue with segment Z; could we review it together?"), and escalating problems ("This issue is beyond my current skill level; who should I consult?").
 - **Plain language:** practice what you will say before you need to say it.
-- **Misconception:** scripted communication is inauthentic. In reality, scripts are scaffolds that build confidence until the language becomes natural.
+- **Misconception:** scripted communication is inauthentic.
+- **In practice:** Scripts are scaffolds that build confidence until the language becomes natural.
 
 ## Hidden curriculum scaffold
 - Unspoken norms: meeting etiquette, version-control expectations, attribution etiquette, escalation paths.

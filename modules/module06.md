@@ -86,6 +86,24 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - **Misconception guardrail:** the most visually obvious errors are the ones most worth fixing.
 - **Misconception guardrail:** a segmentation can be finished, rather than released at a stated level with stated remaining error.
 
+## Worked example: object 8841 and the split you almost fixed first
+
+The numbers below are illustrative — they show the shape of the reasoning, not results from a specific dataset.
+
+You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis of layer 2/3 pyramidal cells. Two flagged candidates sit at the top of your queue, and you have about one hour of annotator time: object 8841, flagged for implausible morphology, and object 5510, a dead-end axon fragment flagged as a probable split. The split looks easier and more satisfying to fix. Here is why the expert fixes the other one first.
+
+**Step 1 — Diagnose before editing.** Load 8841's 3D mesh. It has two somata roughly 180 µm apart joined by a single thin process. Two somata in one object is a merge until proven otherwise, so trace the connecting process in 2D: caliber holds near 0.8 µm on both sides, then drops abruptly to about 0.2 µm across three sections that also contain a fold artifact. Abrupt caliber change plus a low-evidence artifact region is the classic merge site — the model had almost nothing to work with there and guessed wrong.
+
+**Step 2 — Estimate graph impact before fixing anything.** Object 8841 carries 212 synapses and 47 synaptic partners. If it is really two neurons, every one of those synapses is currently attributed to a hybrid cell that does not exist, and both halves sit inside your analysis set. Object 5510 is a 40 µm axon fragment with 9 output synapses that dead-ends at a missing section; its parent cell is outside the analysis set. The merge outranks the split on every axis that matters: it corrupts identities you will analyze, while the split truncates a cell you will not.
+
+**Step 3 — Fix with the evidence recorded.** Split 8841 at the identified boundary. Log the object ID, the operation, the coordinates, and the evidence in one line: "two somata; caliber 0.8 to 0.2 µm across fold at z=1140; ribosomes present on one side of the boundary only." The products carry 131 and 81 synapses.
+
+**Step 4 — Verify the fix helped, with numbers.** The hybrid object had 47 partners; the split products have 29 and 19, with one partner genuinely shared. Fourteen neuron pairs just lost an edge that never existed. The hybrid was a volume outlier for its putative type; both products now fall inside the normal L2/3 pyramidal size range. That before/after pair is the difference between "I edited" and "I improved the data."
+
+**Step 5 — Decide about 5510 explicitly, not by default.** Twenty minutes remain. Extending 5510 means tracing through a missing-section region — a 30-40 minute job with a real chance of introducing a new merge under time pressure. Log it as deferred, with the reason. A deferral with a recorded reason is a decision; an unexamined flag is just backlog.
+
+**What this example does not establish.** It does not show the subvolume is now clean, and it does not license the claim that merge errors are gone — only that the highest-impact known error was repaired and measured. Remaining error is unmeasured until someone samples for it, which is exactly what the release note in the studio activity must say.
+
 ## Core workflow
 1. Load segmented patch in Neuroglancer or equivalent viewer.
 2. Identify merge/split candidates by scrolling through z and checking 3D meshes for implausible morphology.
@@ -144,9 +162,35 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - Release note.
 
 ## Assessment rubric
-- **Minimum pass**: Correct error labels and at least one valid correction with evidence.
-- **Strong performance**: Correction prioritization explicitly tied to downstream analysis impact. Metrics show measurable improvement.
-- **Common failure to flag**: Correction without evidence of quality change — fixing things without checking whether it helped.
+- **Minimum pass**
+  - Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.
+  - At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.
+  - The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.
+  - Before/after quality indicators are computed for at least one correction, with the direction of change stated.
+- **Strong performance**
+  - The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.
+  - Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.
+  - At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.
+  - The release note states what remains unexamined and what error types are still expected, not only what was fixed.
+- **Common failure to flag**
+  - Correction without evidence of quality change — fixing things without checking whether it helped.
+  - Ranking by visual conspicuousness rather than by impact on the analysis.
+  - A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.
+
+## Common errors and how to recover
+
+- **You corrected ten errors and cannot say whether the data improved.** Recover by recomputing the same local indicators you would have used beforehand — partner counts, segment size distribution, edge changes — and attaching the before/after pair to each logged correction. If you no longer know the before state, sample five of your corrections and re-derive it from the edit history.
+- **You spent the session on the most visible errors.** Visibility and impact are different rankings: a dramatic-looking split on a fragment outside your analysis set is worth less than a subtle merge inside it. Recover by re-sorting the remaining queue by expected effect on the connectivity graph and recording the rank rationale before the next session.
+- **You merged two fragments that turned out to be different neurons.** This is the expensive direction — you converted a visible, bounded error into an invisible, unbounded one. Recover by reverting the edit, then adopting the rule that a merge requires positive evidence of continuity across sections (matching caliber, trajectory, and ultrastructure), not merely absence of a visible boundary.
+- **Your aggregate metric improved but the segmentation got worse for your question.** A single summary number can improve while merge errors increase, because splits usually dominate the total. Recover by reporting split-type and merge-type disagreement separately, and by re-checking a fixed set of analysis-relevant neurons rather than trusting the aggregate; the formulas are in [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}).
+- **Two annotators disagree about whether a candidate is an error at all.** Do not resolve it by seniority or by coin flip. Recover by writing down each reader's evidence, checking the site against the ultrastructure cues (a process with ribosomes is not an axon), and if it stays ambiguous, logging it as uncertain and excluding the affected object from analyses that depend on the call.
+
+## What this module does not cover
+
+- **The mathematics of quality metrics.** VI, ERL, and edge precision/recall — including what each is blind to — are worked in detail in [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) and [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
+- **Proofreading as a budgeted operation.** Triage weighting, stopping rules, proofreading levels, and effort estimation are [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) and [Module 07]({{ '/modules/module07/' | relative_url }}); this module runs one correction cycle, not a campaign.
+- **How the segmentation algorithms work.** Affinity prediction, watershed, agglomeration, and flood-filling networks are [Module 14]({{ '/modules/module14/' | relative_url }}); here you only need to know where they structurally fail.
+- **The ultrastructure cues behind identity calls.** Organelle evidence for axon-versus-dendrite and neuron-versus-glia decisions is [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}); this module uses those cues but does not teach them.
 
 ## Content library references
 - [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — Detailed merge/split/boundary/identity error descriptions

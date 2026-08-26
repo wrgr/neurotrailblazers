@@ -100,9 +100,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum pass**: Coherent hypothesis/metric/null trio for at least 2 of 3 hypotheses.
-- **Strong performance**: Clear uncertainty and non-claim statements. Null model choice justified. Peer critique identifies genuine issues.
-- **Common failure to flag**: Vague hypothesis without measurable endpoint ("we will study connectivity patterns") or missing null model.
+- **Minimum pass**
+- **Strong performance**
+- **Common failure to flag**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

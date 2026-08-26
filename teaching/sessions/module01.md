@@ -74,9 +74,9 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** Tools generate good questions automatically. In reality, tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+- **They may believe:** Tools generate good questions automatically.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Connectome equals full explanation. The C. elegans connectome was completed decades ago, yet behavior prediction from wiring alone remains an open problem.
+- **They may believe:** A completed connectome is a full explanation of behavior.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** Broad vision statements are sufficient project plans.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
@@ -84,7 +84,7 @@ voiced is far easier to correct than one they are holding silently.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** If the work feels tedious, you chose the wrong field.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Good annotators never make errors. In practice, even expert proofreaders disagree on 5-10% of decisions.
+- **They may believe:** Good annotators never make errors.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 - **They may believe:** My individual contribution is too small to matter.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
@@ -103,9 +103,9 @@ collected set and why naming them is a fairness intervention rather than etiquet
 
 ## Assessment
 
-- **Minimum:** question, metric, limitation all present; motivation statement addresses why and how.
-- **Strong:** clear falsification condition, realistic scope, motivation statement includes specific sustainability strategies.
-- **Failure:** motivational text without measurable outputs; motivation statement is generic ("I like brains").
+- **Minimum:**
+- **Strong:**
+- **Failure:**
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

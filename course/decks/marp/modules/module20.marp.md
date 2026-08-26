@@ -42,7 +42,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 ### 1) Null models encode scientific assumptions
 - **Technical:** null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.
 - **Plain language:** your "chance baseline" must reflect biology and data collection realities.
-- **Misconception guardrail:** a generic random graph is rarely an adequate connectomics null.
+- **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
 
 ---
 
@@ -90,9 +90,9 @@ Design and execute a connectomics inference plan that includes null-model choice
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** a generic random graph is rarely an adequate connectomics null.
-- **Misconception guardrail:** reporting only p-values without multiplicity context is incomplete.
-- **Misconception guardrail:** post-hoc storytelling is not confirmatory inference.
+- **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
+- **Misconception guardrail:** a small p-value speaks for itself, regardless of how many tests were run.
+- **Misconception guardrail:** a hypothesis found in the data can be confirmed by the same data.
 
 ---
 
@@ -111,17 +111,19 @@ Design and execute a connectomics inference plan that includes null-model choice
 
 ## Assessment Rubric
 - **Minimum pass**
-- Null model is justified and constraints are explicit.
-- Multiplicity handling is documented and applied.
-- Claims are partitioned by confidence level.
+- Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.
+- Total test count — including tests run and not reported — is documented, and a named correction is applied against it.
+- Claims are partitioned into exploratory and confirmatory blocks with different language in each.
 - **Strong performance**
-- Demonstrates sensitivity analysis against preprocessing and sampling choices.
-- Reports effect sizes and uncertainty, not significance alone.
-- Provides clear boundaries on generalization.
+- Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.
+- Effect sizes with uncertainty intervals appear alongside every significance statement.
+- Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.
+- Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.
 - **Common failure modes**
-- Null model choice disconnected from biological question.
-- Selective reporting of significant outcomes.
-- Conflation of exploratory signal with validated inference.
+- Null model choice disconnected from the biological question.
+- Selective reporting: significant outcomes shown, the full test count uncounted.
+- Exploratory signal conflated with validated inference.
+- Analytic p-values used where dependence between tests calls for permutation.
 
 ---
 

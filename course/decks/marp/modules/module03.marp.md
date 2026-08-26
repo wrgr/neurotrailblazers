@@ -42,7 +42,8 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ### 1) Python as the lingua franca of connectomics
 - **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.
 - **Plain language:** if connectomics has a common language, it is Python.
-- **Misconception:** you need to be an expert programmer to do connectomics. In practice, most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
+- **Misconception:** you need to be an expert programmer to do connectomics.
+- **In practice:** Most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
 
 ---
 
@@ -99,10 +100,10 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ---
 
 ## Misconceptions to Watch
-- **Misconception:** you need to be an expert programmer to do connectomics. In practice, most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
-- **Misconception:** if the code runs on my machine, it is reproducible. Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
-- **Misconception:** version control is only for software engineers. In research, version control is how you prove that your analysis produced the results you claim.
-- **Misconception:** code comments are sufficient documentation. Markdown cells provide the narrative context --- the *why* --- that code comments alone cannot convey.
+- **Misconception:** you need to be an expert programmer to do connectomics.
+- **Misconception:** if the code runs on my machine, it is reproducible.
+- **Misconception:** version control is only for software engineers.
+- **Misconception:** code comments are sufficient documentation.
 
 ---
 

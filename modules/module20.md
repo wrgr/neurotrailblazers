@@ -79,22 +79,42 @@ Connectomics analyses can produce thousands of statistically testable patterns. 
 ### 1) Null models encode scientific assumptions
 - **Technical:** null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.
 - **Plain language:** your "chance baseline" must reflect biology and data collection realities.
-- **Misconception guardrail:** a generic random graph is rarely an adequate connectomics null.
+- **Misconception guardrail:** a generic random graph is an adequate null for a connectome.
 
 ### 2) Multiplicity is structural, not optional
 - **Technical:** motif families and subgroup analyses require correction strategies and predeclared test hierarchies.
 - **Plain language:** if you test many patterns, some will look significant by accident.
-- **Misconception guardrail:** reporting only p-values without multiplicity context is incomplete.
+- **Misconception guardrail:** a small p-value speaks for itself, regardless of how many tests were run.
 
 ### 3) Exploratory and confirmatory analyses must be separated
 - **Technical:** hypothesis generation and hypothesis testing should have different reporting labels and evidence standards.
 - **Plain language:** be clear about what you discovered versus what you validated.
-- **Misconception guardrail:** post-hoc storytelling is not confirmatory inference.
+- **Misconception guardrail:** a hypothesis found in the data can be confirmed by the same data.
 
 ### 4) Statistical challenges unique to connectomics
 Connectomics datasets present several statistical difficulties that are uncommon in other fields. Massive multiple comparisons arise when testing thousands of motifs, cell-type pairs, or connection patterns simultaneously. Spatial autocorrelation is pervasive because nearby neurons share arbor overlap, creating non-independent edges that violate standard test assumptions. The threshold problem is particularly acute: choosing a minimum synapse count (e.g., 3 vs. 5 synapses to define a "real" connection) changes the resulting graph and all downstream statistics, yet no universally accepted threshold exists.
 
 Researcher degrees of freedom in null model selection further compound these issues. Different null models that preserve different graph properties (degree sequence, spatial distance distribution, cell-type composition) can yield contradictory conclusions from the same data. Best practices include using permutation tests over parametric alternatives when distributional assumptions are uncertain, reporting effect sizes alongside p-values to distinguish statistical significance from biological relevance, and performing sensitivity analyses across multiple thresholds and null model variants to confirm that findings are robust rather than artifacts of a single analytical choice.
+
+## Worked example: the motif that survived the null and died in the error band
+
+The numbers below are illustrative — they show the shape of the reasoning, not results from a specific dataset. The companion example — the same reciprocity count yielding 2.9x enrichment, 1.4x, or no effect depending on the null — is worked line by line in [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}); read it first. This example starts where that one ends: the null is already chosen well, and the claim still falls apart.
+
+You run a triad census on a 300-neuron subgraph: 16 directed three-node classes. The feedforward-loop triad looks enriched.
+
+**Step 1: choose the null from the hypothesis, not the toolbox.** The hypothesis is "feedforward structure beyond what degree and distance explain," so the null must preserve each node's in- and out-degree and the empirical connection-probability-versus-distance curve. Rewiring 10,000 times gives a null mean of 350 feedforward loops, sd 20, against an observed 402: enrichment 1.15x, z = 2.6, nominal p = 0.009. So far this looks publishable.
+
+**Step 2: count the tests you actually ran.** You tested all 16 triad classes, and before settling you looked at the graph under two synapse-count thresholds (at least 3 and at least 5 synapses per edge). That is 32 tests, not 1. Bonferroni at α = 0.05 requires p below 0.0016; your 0.009 does not clear it. Benjamini-Hochberg is more forgiving but depends on the other 31 results — and its verdict must be reported either way.
+
+**Step 3: respect the dependence between tests.** Triad counts move together — adding one edge changes many triads at once — so treating the 16 tests as independent overstates confidence in both directions. Permutation inference over the whole census, using the maximum-enrichment statistic, respects the dependence; here it gives a family-wise p of 0.06 for the feedforward loop. Borderline, honestly computed.
+
+**Step 4: run the error-sensitivity check.** Your validation work gives measured error rates: 2% merge, 6% split. Perturb the graph at those rates 200 times and recompute enrichment each time: the band spans 0.97 to 1.28 — it crosses 1.0. Worse, the bias is directional: merges manufacture dense motifs, so reconstruction error pushes the statistic toward exactly the result you are hoping for.
+
+**Step 5: check threshold sensitivity.** At threshold 3 synapses, enrichment is 1.15x; at threshold 5 it drops to 1.04x. The effect is concentrated in weak edges — which is also where synapse-detection false positives concentrate.
+
+**What gets reported.** An exploratory finding: "feedforward-loop counts are 1.15x the degree-and-distance null (permutation p = 0.06, family-wise), not robust to measured reconstruction error rates or to the edge threshold." The confirmatory path is written in the same paragraph: preregister the null, the threshold, and this single test, then run it on the next data release or a held-out region.
+
+**What this example does not establish:** that the motif is absent. It shows only that this dataset, at these error rates, cannot support the enrichment claim — which is itself a result worth stating plainly.
 
 ## Core workflow: connectomics inference protocol
 1. **Question-to-test mapping**
@@ -158,17 +178,36 @@ Researcher degrees of freedom in null model selection further compound these iss
 
 ## Assessment rubric
 - **Minimum pass**
-  - Null model is justified and constraints are explicit.
-  - Multiplicity handling is documented and applied.
-  - Claims are partitioned by confidence level.
+  - Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.
+  - Total test count — including tests run and not reported — is documented, and a named correction is applied against it.
+  - Claims are partitioned into exploratory and confirmatory blocks with different language in each.
 - **Strong performance**
-  - Demonstrates sensitivity analysis against preprocessing and sampling choices.
-  - Reports effect sizes and uncertainty, not significance alone.
-  - Provides clear boundaries on generalization.
+  - Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.
+  - Effect sizes with uncertainty intervals appear alongside every significance statement.
+  - Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.
+  - Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.
 - **Common failure modes**
-  - Null model choice disconnected from biological question.
-  - Selective reporting of significant outcomes.
-  - Conflation of exploratory signal with validated inference.
+  - Null model choice disconnected from the biological question.
+  - Selective reporting: significant outcomes shown, the full test count uncounted.
+  - Exploratory signal conflated with validated inference.
+  - Analytic p-values used where dependence between tests calls for permutation.
+
+## Common errors and how to recover
+
+- **You used an Erdos-Renyi null because it was one line of code.** Nearly every motif comes out "enriched," because degree heterogeneity alone produces that. Recover by rerunning under degree-preserving and degree-plus-distance nulls and reporting all three; the collapse in effect size across nulls is a finding, not a failure.
+- **You forgot the tests you did not report.** Threshold trials, subgroup peeks, and abandoned motif families all count toward multiplicity. Recover by reconstructing the full test count from your notebook history and correcting against that number; whatever exploration cannot be reconstructed gets labeled exploratory, permanently.
+- **Your p-values assume independent tests.** Triad counts are strongly correlated, so analytic corrections mislead in both directions. Recover by switching to permutation inference over the whole test family, which respects the dependence structure by construction.
+- **The result flips with the synapse threshold.** Recover by reporting the statistic across thresholds (2, 3, 5) rather than picking the favorable one. If the effect lives only in weak edges, say so — that localization is informative, because weak edges are where detection error concentrates.
+- **An exploratory find became confirmatory in the abstract.** Recover by relabeling honestly and writing the confirmatory path: preregistered null, threshold, and test, executed on a held-out region or the next data release. The same data cannot both generate and confirm the hypothesis.
+
+## What this module does not cover
+
+- **Graph construction choices.** Thresholding, direction, weights, and what each choice commits you to are [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) and [graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }}).
+- **Null-model mechanics in detail.** The full reciprocity worked example and the null-model table live in [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) and [motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}); this module teaches when to reach for them, not their internals.
+- **Measuring the error rates the sensitivity check needs.** Merge and split rates come from segmentation validation: [Module 14]({{ '/modules/module14/' | relative_url }}), [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}), and [metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}).
+- **ML validity — leakage, splits, and base rates.** That is [Module 13]({{ '/modules/module13/' | relative_url }}), and it applies whenever a model produces the labels you test on.
+- **Packaging the analysis for reuse.** Versioning, environments, and provenance are [Module 21]({{ '/modules/module21/' | relative_url }}).
+- **Bayesian and generative model comparison.** Fitting competing generative models and comparing them with complexity penalties is relevant and out of scope here; the module handles null-based testing operationally.
 
 ## Content library references
 - [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) — Null models and statistical testing for motifs

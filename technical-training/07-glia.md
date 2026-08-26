@@ -201,6 +201,57 @@ the deciding cue was not resolvable. That is a useful annotation.
    Route to the glia review queue.
 ```
 
+### Worked example: a flattened profile against a capillary
+
+> **Patch:** a pale profile, a few hundred nanometers thick and about 2 µm long,
+> pressed flat against the wall of a capillary. The parent process leaves the
+> plane. The segmentation currently assigns it to a nearby dendrite — so this is
+> also a candidate merge, and the call decides an edit.
+
+**Step 1 — soma?** No nucleus in view. Continue.
+
+**Step 2 — synaptic participation?** Scroll several sections in each direction:
+no vesicle cluster, no PSD anywhere on the profile. This step is not skippable
+even when the vascular context is already shouting the answer. A perivascular
+call made without ruling out synaptic participation is exactly how a dendrite
+that happens to end near a vessel stays merged into an astrocyte — or the
+reverse.
+
+**Step 3 — glycogen?** None visible. Weak evidence: granules are clustered and
+sparse, so one thin profile showing none decides nothing. Noted, not spent — the
+same discipline as the §2 check-yourself.
+
+**Step 4 — cross-sectional character over 5–10 sections.** The contour does not
+hold a tube shape. It spreads and flattens to track the vessel wall, section
+after section — space-filling behavior. Astrocyte-leaning, medium confidence on
+its own.
+
+**Step 5 — context.** A flattened expansion covering a vessel surface is the
+endfoot configuration, and the protocol scores a capillary wrap as
+high-confidence astrocyte. But one alternative has to be dispatched before
+taking that: microglial processes also contact vessels, and this is where an
+honest annotator hesitates. The unit's own recovery rule supplies the test —
+microglia require a nucleus or a lysosome-rich parent process, never a fragment.
+Follow the profile away from the vessel: the parent is pale, organelle-poor,
+with fine intermediate-filament bundles, and none of the dense, inclusion-rich
+cytoplasm a microglial process trails back to. Microglia is dismissed for cause,
+not by default.
+
+**Call:** astrocytic endfoot; **high confidence**. The dendrite assignment is
+therefore a glia–neuron merge, and per §1 it goes into the queue above more
+conspicuous splits. Evidence chain: space-filling sheet geometry across sections
+plus vessel-covering context — two independent cues — with synaptic
+participation ruled out and the microglial alternative rejected on cytoplasmic
+evidence. Steps 2 and 3 contributed only absences, and were weighted as
+absences.
+
+**Transferable principle:** context is the strongest cue in the glial protocol,
+but it is only safe *after* the exclusion steps have run. Work the cheap
+rule-outs first even when the context looks decisive — especially then, because
+a decisive-looking context is what tempts you to skip them. Two further cases —
+astrocyte versus thin dendrite, and OPC versus small neuron — are worked in
+[Glia recognition]({{ '/content-library/cell-types/glia-recognition/' | relative_url }}).
+
 ---
 
 ## Visual training set

@@ -97,12 +97,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Tools generate good questions automatically. In reality, tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
-- [ ] I did not assume: Connectome equals full explanation. The C. elegans connectome was completed decades ago, yet behavior prediction from wiring alone remains an open problem.
+- [ ] I did not assume: Tools generate good questions automatically.
+- [ ] I did not assume: A completed connectome is a full explanation of behavior.
 - [ ] I did not assume: Broad vision statements are sufficient project plans.
 - [ ] I did not assume: Excitement at the start is enough to carry you through a multi-month project.
 - [ ] I did not assume: If the work feels tedious, you chose the wrong field.
-- [ ] I did not assume: Good annotators never make errors. In practice, even expert proofreaders disagree on 5-10% of decisions.
+- [ ] I did not assume: Good annotators never make errors.
 - [ ] I did not assume: My individual contribution is too small to matter.
 
 ---
@@ -122,9 +122,9 @@ them, or note where you nearly did:
 Score yourself before anyone else does. Where you fall short, name the specific next
 action rather than a general intention.
 
-- **Minimum:** question, metric, limitation all present; motivation statement addresses why and how.
-- **Strong:** clear falsification condition, realistic scope, motivation statement includes specific sustainability strategies.
-- **Failure:** motivational text without measurable outputs; motivation statement is generic ("I like brains").
+- **Minimum:**
+- **Strong:**
+- **Failure:**
 
 **My self-assessment:**
 

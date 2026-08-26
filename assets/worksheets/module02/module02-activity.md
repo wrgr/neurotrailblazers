@@ -98,11 +98,11 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: You will be taught everything you need to know. In practice, many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
-- [ ] I did not assume: If the data is publicly available, there are no ethical considerations. Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
-- [ ] I did not assume: Research is a solitary activity. Modern connectomics is closer to open-source software development than to the lone-genius model.
-- [ ] I did not assume: Good researchers do not make mistakes. In practice, the best researchers make mistakes, document them, and learn from them systematically.
-- [ ] I did not assume: Scripted communication is inauthentic. In reality, scripts are scaffolds that build confidence until the language becomes natural.
+- [ ] I did not assume: You will be taught everything you need to know.
+- [ ] I did not assume: If the data is publicly available, there are no ethical considerations.
+- [ ] I did not assume: Research is a solitary activity.
+- [ ] I did not assume: Good researchers do not make mistakes.
+- [ ] I did not assume: Scripted communication is inauthentic.
 
 ---
 

@@ -2908,3 +2908,27 @@ a.arch-card,
   .arch-card { padding: 1.1rem 1.1rem 1rem; }
   .quest-step { padding-left: 2.9rem; }
 }
+
+/* Metadata strip on content-library entries (ui/entry-meta.html): the
+   difficulty/tags/combines-with front matter the library index promises,
+   which previously never rendered anywhere. */
+.entry-meta {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border, #d7dde1);
+  border-radius: 8px;
+  background: var(--color-surface-alt, rgba(0, 0, 0, 0.02));
+  font-size: 0.9rem;
+}
+.entry-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+.entry-meta a.pill { text-decoration: none; }
+.entry-meta-tag { opacity: 0.85; }
+.entry-meta-combines {
+  margin: 0.6rem 0 0;
+  line-height: 1.5;
+}

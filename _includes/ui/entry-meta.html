@@ -1,0 +1,35 @@
+{% comment -%}
+  Metadata strip for content-library entries. Renders the front matter the
+  library index promises readers: difficulty, tags, the units an entry backs,
+  and the combines-with pairings. Shown only on pages that declare a
+  micro_lesson_id.
+{% endcomment -%}
+{%- if page.micro_lesson_id -%}
+<aside class="entry-meta" aria-label="About this entry">
+  <div class="entry-meta-row">
+    {%- if page.difficulty -%}<span class="pill pill-plain">Difficulty: {{ page.difficulty }}</span>{%- endif -%}
+    {%- if page.primary_units -%}
+      {%- for unit_number in page.primary_units -%}
+        {%- for track_item in site.data.technical_track.modules -%}
+          {%- assign track_prefix = track_item.slug | slice: 0, 2 -%}
+          {%- if track_prefix == unit_number -%}
+            <a class="pill pill-plain" href="{{ '/technical-training/' | append: track_item.slug | append: '/' | relative_url }}">Backs Unit {{ unit_number }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if page.tags and page.tags.size > 0 -%}
+      {%- for tag in page.tags limit: 6 -%}<span class="pill pill-plain entry-meta-tag">{{ tag }}</span>{%- endfor -%}
+    {%- endif -%}
+  </div>
+  {%- if page.combines_with and page.combines_with.size > 0 -%}
+  <p class="entry-meta-combines"><strong>Combines well with:</strong>
+    {%- for combo_slug in page.combines_with -%}
+      {%- assign combo_file = combo_slug | append: '.md' -%}
+      {%- assign combo_page = site.pages | where: 'name', combo_file | first -%}
+      {%- if combo_page -%}<a href="{{ combo_page.url | relative_url }}">{{ combo_page.title }}</a>{% unless forloop.last -%} &middot; {% endunless -%}{%- endif -%}
+    {%- endfor -%}
+  </p>
+  {%- endif -%}
+</aside>
+{%- endif -%}

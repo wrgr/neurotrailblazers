@@ -44,7 +44,7 @@ content_type: core
   <section class="section section-compact">
     <div class="card-gray text-center" style="max-width: 700px; margin: 0 auto;">
       <p><strong>Learn with real scientific data from groundbreaking research.</strong></p>
-      <p>Explore carefully curated datasets from landmark connectomics studies. Each dataset represents years of cutting-edge research and offers unique insights into neural circuit organization.</p>
+      <p>These pages collect datasets from landmark connectomics studies &mdash; H01, MICrONS, FlyWire, the hemibrain, and others &mdash; with links to the data portals, the papers behind them, and the site material that uses each one.</p>
     </div>
   </section>
 
@@ -66,7 +66,7 @@ content_type: core
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🚀</span> <a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: the Center for High-throughput Integrative Mouse Connectomics (HI-MC)</a></h3>
+        <h3><a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: the Center for High-throughput Integrative Mouse Connectomics (HI-MC)</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress (2023-2028)</span>
@@ -88,11 +88,11 @@ content_type: core
   </section>
 
   <section class="section">
-    <h2>🌟 Featured Datasets</h2>
+    <h2>Featured Datasets</h2>
     
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🧠</span> <a href="https://h01-release.storage.googleapis.com/landing.html" target="_blank">H01 - Human Cortical Fragment</a></h3>
+        <h3><a href="https://h01-release.storage.googleapis.com/landing.html" target="_blank">H01 - Human Cortical Fragment</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Human Cortex</span>
           <span class="dataset-status">Published 2024</span>
@@ -116,7 +116,7 @@ content_type: core
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🐭</span> <a href="https://www.microns-explorer.org/" target="_blank">MICrONS - Mouse Visual Cortex</a></h3>
+        <h3><a href="https://www.microns-explorer.org/" target="_blank">MICrONS - Mouse Visual Cortex</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Mouse Visual Cortex</span>
           <span class="dataset-status">Published 2025</span>
@@ -141,7 +141,7 @@ content_type: core
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🪰</span> <a href="https://flywire.ai/" target="_blank">FlyWire - Complete Adult Fly Brain</a></h3>
+        <h3><a href="https://flywire.ai/" target="_blank">FlyWire - Complete Adult Fly Brain</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Drosophila Whole Brain</span>
           <span class="dataset-status">Published 2024</span>
@@ -166,7 +166,7 @@ content_type: core
 
     <div class="dataset-card featured">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🪰</span> <a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
+        <h3><a href="https://neuprint.janelia.org/" target="_blank">Hemibrain - Drosophila Central Brain</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Drosophila Central Brain</span>
           <span class="dataset-status">Published 2020</span>
@@ -190,7 +190,7 @@ content_type: core
   </section>
 
   <section class="section">
-    <h2>📅 Connectomics Timeline</h2>
+    <h2>Connectomics Timeline</h2>
     <div class="timeline">
       
       <!-- 1986 -->
@@ -380,7 +380,7 @@ content_type: core
   </section>
 
   <section class="section">
-    <h2>🗃️ Additional BossDB Hosted Datasets</h2>
+    <h2>Additional BossDB Hosted Datasets</h2>
     <p>BossDB is a great resource for many additional connectomics datasets (though not all). Explore <a href="https://bossdb.org/projects" target="_blank">bossdb.org/projects</a> for more. Notable examples include:</p>
     
     <div class="grid-md mt-2 mb-2">
@@ -499,12 +499,12 @@ content_type: core
   </section>
 
   <section class="section">
-    <h2>🔍 Dataset Categories</h2>
+    <h2>Dataset Categories</h2>
     <p>Connectomics datasets vary in scope, species, and methodology. Understanding these categories helps you choose the right data for your learning goals.</p>
 
     <div class="grid-md mt-2 mb-2">
       <div class="card-gray">
-        <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🧬 By Species</h3>
+        <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">By Species</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>C. elegans:</strong> Simple, complete nervous system (302 neurons)</li>
           <li><strong>Drosophila:</strong> Complex invertebrate brain (~140,000 neurons)</li>
@@ -514,7 +514,7 @@ content_type: core
       </div>
 
       <div class="card-gray">
-        <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🔬 By Resolution</h3>
+        <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">By Resolution</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>Synaptic:</strong> Individual synapses and connections</li>
           <li><strong>Cellular:</strong> Complete neuronal morphologies</li>
@@ -524,7 +524,7 @@ content_type: core
       </div>
 
       <div class="card-gray">
-        <h3 style="color: var(--synapse-green); margin-bottom: 1rem;">📊 By Data Type</h3>
+        <h3 style="color: var(--synapse-green); margin-bottom: 1rem;">By Data Type</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
           <li><strong>Structural:</strong> Electron microscopy-based anatomy</li>
           <li><strong>Functional:</strong> Calcium imaging or electrophysiology</li>
@@ -536,13 +536,13 @@ content_type: core
   </section>
 
   <section class="section text-center">
-    <h2>📂 Accessing These Datasets</h2>
+    <h2>Accessing These Datasets</h2>
     <p>Most datasets are freely available through dedicated platforms. Each dataset entry above includes direct links to data portals, original publications, and popular press coverage where available.</p>
     <div class="flex-center mt-2">
 
     <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🪜</span> <a href="{{ '/datasets/getting-started' | relative_url }}">Getting Started with Data</a></h3>
+        <h3><a href="{{ '/datasets/getting-started' | relative_url }}">Getting Started with Data</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Start here</span>
           <span class="dataset-status">Onboarding</span>
@@ -557,7 +557,7 @@ content_type: core
 
     <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
       <div class="dataset-header">
-        <h3><span class="dataset-icon">🔧</span> <a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
+        <h3><a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Tutorials</span>
           <span class="dataset-status">Resources</span>

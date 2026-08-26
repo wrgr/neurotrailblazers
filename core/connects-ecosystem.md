@@ -39,14 +39,15 @@ HI-MC provides a particularly useful synaptic-resolution learning spine:
 
 ## NeuroTrailblazers
 NeuroTrailblazers owns the learner journey:
-- sequencing and prerequisites;
-- authentic-resource activities;
-- hidden curriculum;
-- assessment;
-- evidence literacy;
-- mentoring;
-- public interpretation;
-- career pathways.
+
+- **Sequencing and prerequisites.** The [learning tracks]({{ '/tracks/' | relative_url }}) put the core reference material in an order, name what each track's "done" means as a capability, and say what to read before what.
+- **Authentic-resource activities.** [Getting Started with Data]({{ '/datasets/getting-started/' | relative_url }}) and the [dataset pages]({{ '/datasets/' | relative_url }}) route learners into the real tools — Codex, neuPrint, Neuroglancer, CAVE — rather than simulations of them.
+- **Hidden curriculum.** The [hidden curriculum section]({{ '/hidden-curriculum/' | relative_url }}) writes down the operating knowledge research training assumes — asking for help, authorship, reporting norms — as named, checkable statements.
+- **Assessment.** The [session kits]({{ '/teaching/sessions/' | relative_url }}) carry a rubric per module, and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) covers assessment designs that scale beyond one instructor.
+- **Evidence literacy.** [Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}) trains the discipline of saying what the evidence supports, what it supports only with a named assumption, and what to refuse to claim; [Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }}) applies it to the literature.
+- **Mentoring.** The [models-in-practice playbook]({{ '/education/models/' | relative_url }}) gives mentors the MERIT stages, what the mentee produces in each, and the failure mode each stage exists to prevent.
+- **Public interpretation.** [Module 22]({{ '/modules/module22/' | relative_url }}) and its [public-engagement companion]({{ '/teaching/module22-public-engagement/' | relative_url }}) train learners to explain connectomics to non-research audiences without overclaiming.
+- **Career pathways.** [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) and the [learner personas]({{ '/avatars/' | relative_url }}) map how the machinery of applications, funding, and transitions actually works, for concrete kinds of learners.
 
 ## What not to duplicate
 Do not build a competing CONNECTS-KB, APEX projectome platform, ABC Atlas manual, MICrONS viewer, or project documentation better maintained by the originating team.

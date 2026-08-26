@@ -53,8 +53,8 @@ content_type: core
 
 <nav class="avatar-nav">
   <a href="#story">Story</a>
-  <a href="#goals">Goals</a>
-  <a href="#strengths">Strengths</a>
+  <a href="#decisions">Decisions</a>
+  <a href="#path">How the Site Helps</a>
   <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
 </nav>
 
@@ -91,83 +91,79 @@ content_type: core
         </div>
     </section>
 
-    <section class="section" id="goals">
-        <h2>🎯 Julian's Goals</h2>
-        <p>Julian has clear aspirations but needs guidance on how to achieve them:</p>
+    <section class="section" id="decisions" markdown="1">
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-            <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--neural-blue);">
-                <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🔬 Short-term (This Year)</h3>
-                <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-                    <li>Join a research lab as an undergraduate researcher</li>
-                    <li>Learn computational neuroscience fundamentals</li>
-                    <li>Improve programming skills (Python, MATLAB)</li>
-                    <li>Present at undergraduate research symposium</li>
-                    <li>Connect with graduate students and mentors</li>
-                </ul>
-            </div>
+## The Decisions in Front of Julian
 
-            <div style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--cerebral-purple);">
-                <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🎓 Medium-term (Next 2 Years)</h3>
-                <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-                    <li>Apply to graduate programs in neuroscience</li>
-                    <li>Publish undergraduate research findings</li>
-                    <li>Apply for fellowship opportunities</li>
-                    <li>Develop specialization in connectomics</li>
-                    <li>Build professional network in the field</li>
-                </ul>
-            </div>
+**Ask to join a lab now, or show up with something in hand?** Julian has no
+research experience, works part-time, and cannot afford an unpaid semester of
+"learning the ropes." The conventional advice — email professors and volunteer —
+costs him exactly the resource he is shortest on: unstructured time. The
+alternative this site is built around is to arrive with a small, finished
+artifact instead. The [60-minute first contact]({{ '/datasets/getting-started/' | relative_url }}#the-60-minute-first-contact)
+in Getting Started with Data goes from "never touched the data" to a saved
+notebook with a real plot in one sitting, with no account and no install for
+the first two levels. The [proofreading side quest]({{ '/side-quests/proofreading/' | relative_url }})
+goes further: it ends in an artifact a lab can read, which converts a cold
+email from "can I help?" into "here is what I did."
 
-            <div style="background: linear-gradient(135deg, #ecfeff, #cffafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--axon-cyan);">
-                <h3 style="color: var(--axon-cyan); margin-bottom: 1rem;">🚀 Long-term (5+ Years)</h3>
-                <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-                    <li>Complete PhD in computational neuroscience</li>
-                    <li>Conduct research on neurological diseases</li>
-                    <li>Develop new methods for brain analysis</li>
-                    <li>Mentor other first-generation students</li>
-                    <li>Contribute to treatments for Alzheimer's</li>
-                </ul>
-            </div>
-        </div>
+**Which of his few free hours go where?** Julian is a biology major who just
+learned Python, so he could plausibly spend his time on more programming, more
+biology, or the research culture he has never seen. The site's answer is to
+sequence, not choose: start with the
+[Core Concepts &amp; Methods track]({{ '/tracks/core-concepts-methods/' | relative_url }}),
+which orders the technical material and states what "done" means as a
+capability, and read one
+[hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) page — starting
+with [lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) — before
+his first lab meeting, not after.
+
     </section>
 
-    <section class="section" id="strengths">
-        <h2>💪 Strengths & Challenges</h2>
-        <p>Like many first-generation students, Julian brings unique strengths while facing specific challenges:</p>
+    <section class="section" id="path" markdown="1">
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-            <div>
-                <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">✨ Strengths</h3>
-                <div style="space-y: 1rem;">
-                    <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                        <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🧠 Natural Curiosity</h4>
-                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Julian asks thoughtful questions and isn't afraid to dig deep into complex topics. His genuine fascination with the brain drives him to explore beyond coursework.</p>
-                    </div>
-                    <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                        <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">💪 Work Ethic</h4>
-                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Balancing work, school, and family responsibilities has taught Julian excellent time management and determination. He doesn't give up when things get tough.</p>
-                    </div>
-                    <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                        <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🌟 Fresh Perspective</h4>
-                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">As someone new to research culture, Julian approaches problems with an outsider's creativity and isn't constrained by "how things are usually done."</p>
-                    </div>
-                </div>
-            </div>
+## How the Site's Material Serves Him
 
-            <div>
-                <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">⚡ Challenges</h3>
-                <div style="space-y: 1rem;">
-                    <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                        <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">😰 Imposter Syndrome</h4>
-                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Julian sometimes feels like he doesn't belong in academic spaces and worries that others are more prepared or qualified than he is.</p>
-                    </div>
-                    <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                        <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">💰 Financial Pressure</h4>
-                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Working part-time to help family finances limits time for research opportunities, especially unpaid positions that other students can afford.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+The material that matters most for Julian is the part no course at his
+university teaches. As a first-generation student, he is exactly the reader the
+[hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) section names:
+someone reconstructing unwritten rules from overheard fragments. Those pages
+state the rules as checkable sentences — how to ask for help, how long to be
+stuck before asking, how authorship works — and
+[Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) addresses his
+imposter syndrome directly, as the predictable result of an information gap
+rather than a verdict on his ability.
+[Module 02]({{ '/modules/module02/' | relative_url }}) is the taught version,
+and its studio activity produces a personal navigation playbook he can carry
+into whichever lab takes him.
+
+His financial constraints shape the technical route too. Everything on the
+[data on-ramp]({{ '/datasets/getting-started/' | relative_url }}) runs on a
+laptop against public data: browsing is free with no account, the snapshot
+tables load in pandas with nothing more than `pip install pandas`, and the one
+paid-feeling step — token setup — costs only a free account. The
+[technical training units]({{ '/technical-training/' | relative_url }}) give
+him the biology-to-data bridge his coursework skips, and because they are
+self-paced, they fit around a commute and a part-time job in a way lab
+volunteering does not.
+
+When he gets stuck — and the getting-started page is explicit that two failed
+attempts on the same step is the threshold — the site gives him a low-stakes
+place to ask: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }}), an AI
+chat persona that handles the "am I allowed to not know this?" questions he is
+not yet comfortable bringing to a professor. It is a rehearsal space, not a
+mentor; the [avatars page]({{ '/avatars/' | relative_url }}) and the
+[Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
+are where the path to actual mentorship runs.
+
+One instruction from the hidden curriculum pages matters more for Julian than
+any other: turn each page into an artifact rather than a read. Add the
+provenance header to the notebook he just made. Write the three
+asking-for-help scripts in his own words — the exercise
+[Module 02]({{ '/modules/module02/' | relative_url }}) runs in session. Two
+years from now, a graduate application built from those small finished
+artifacts will say more than the GPA line, and it will be true.
+
     </section>
 
 </div>

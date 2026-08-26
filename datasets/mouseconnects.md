@@ -49,7 +49,7 @@ content_type: core
                     <span class="hero-title-sub">Complete Hippocampal Connectome</span>
                 </h1>
                 <div class="hero-description-box">
-                    <p>A synapse-level reconstruction of 10 mm³ of the mouse hippocampal formation – revolutionizing our understanding of memory circuits.</p>
+                    <p>A synapse-level reconstruction of 10 mm³ of the mouse hippocampal formation, targeting the circuits of memory and spatial navigation.</p>
                 </div>
                 <div class="cta-buttons">
                     <a href="#dataset-access" class="btn btn-primary btn-large">Explore the Data</a>
@@ -62,8 +62,8 @@ content_type: core
 
 <div class="container">
     <div class="section">
-        <h2 class="section-title">Revolutionary Scale & Impact</h2>
-        <p>MouseConnects represents a quantum leap in connectomics, targeting the mouse hippocampal formation - the brain region essential for memory formation and spatial navigation. This project will generate the first complete synaptic wiring diagram of a mammalian memory circuit.</p>
+        <h2 class="section-title">Scale</h2>
+        <p>MouseConnects targets the mouse hippocampal formation, the brain region essential for memory formation and spatial navigation. At 10 mm³ — roughly ten times the volume of MICrONS (1 mm³) — and more than 10 petabytes of expected raw imagery, it aims to produce the first synaptic wiring diagram of a mammalian memory circuit. The <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">case study</a> covers the scientific rationale and pipeline in depth.</p>
         
         <div class="cards-grid mt-2">
             <div class="card dataset-card-blue text-center">
@@ -79,23 +79,23 @@ content_type: core
             <div class="card dataset-card-cyan text-center">
                 <div style="font-size: 2.5rem; font-weight: 700; color: var(--axon-cyan); margin-bottom: 0.5rem;">>10 PB</div>
                 <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Data Size</div>
-                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">Unprecedented scale</div>
+                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">expected raw imagery</div>
             </div>
             <div class="card dataset-card-orange text-center">
                 <div style="font-size: 2.5rem; font-weight: 700; color: #f97316; margin-bottom: 0.5rem;">7 Sites</div>
-                <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Global Team</div>
-                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">Leading institutions worldwide</div>
+                <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Collaborating Team</div>
+                <div style="font-size: 0.9rem; color: #7f8c8d; font-style: italic;">institutions listed below</div>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2 class="section-title">Key Innovations</h2>
+        <h2 class="section-title">Key Methods</h2>
         <ul>
-            <li><strong>Novel mSEM-IBEAM Technology:</strong> Combines multibeam electron microscopy with ion beam milling</li>
-            <li><strong>Distributed Imaging:</strong> Multiple sites working in parallel for unprecedented speed</li>
-            <li><strong>AI-Powered Reconstruction:</strong> State-of-the-art machine learning for automated segmentation</li>
-            <li><strong>Open Science:</strong> All data and tools freely available to the global research community</li>
+            <li><strong>High-throughput EM acquisition:</strong> Automated serial-section electron microscopy, with multi-beam SEM and automated section handling to meet the timeline</li>
+            <li><strong>Distributed imaging:</strong> Two imaging sites (Harvard and Princeton) operating in parallel</li>
+            <li><strong>Automated reconstruction:</strong> Flood-filling network segmentation developed at Google Research, the same core technology used for FlyWire</li>
+            <li><strong>Open science:</strong> Data and tools to be released publicly as the project progresses</li>
         </ul>
 
         <h3>Scientific Questions Addressed</h3>
@@ -108,34 +108,31 @@ content_type: core
     </div>
 
     <div class="section section-highlight">
-        <h2 class="section-title">Cutting-Edge Technology Stack</h2>
+        <h2 class="section-title">Method Stack</h2>
         <div class="grid-md">
             <div class="card">
-                <div class="card-icon">🔬</div>
-                <h3 class="card-title">mSEM-IBEAM Imaging</h3>
-                <p class="card-description">91-beam scanning electron microscopy combined with ion beam milling for automated blockface imaging at unprecedented scale.</p>
+                <h3 class="card-title">EM Imaging</h3>
+                <p class="card-description">Automated serial-section electron microscopy at synaptic resolution, building on the Lichtman lab's acquisition methods and advances in multi-beam SEM throughput.</p>
                 <ul class="list-tight">
                     <li>Two imaging sites: Harvard & Princeton</li>
-                    <li>Automated wafer handling</li>
-                    <li>Real-time quality monitoring</li>
+                    <li>Tape-based section collection</li>
+                    <li>Automated section handling</li>
                 </ul>
             </div>
             
             <div class="card">
-                <div class="card-icon">☁️</div>
-                <h3 class="card-title">Google Cloud Processing</h3>
-                <p class="card-description">Massive-scale data processing using Google's cloud infrastructure for alignment, segmentation, and analysis.</p>
+                <h3 class="card-title">Cloud Processing</h3>
+                <p class="card-description">Cloud-based data processing on Google infrastructure for alignment, segmentation, and analysis of a dataset expected to exceed 10 PB.</p>
                 <ul class="list-tight">
                     <li>Flood-filling networks for neuron tracing</li>
                     <li>Automated synapse detection</li>
-                    <li>Real-time collaborative proofreading</li>
+                    <li>CAVE-based collaborative proofreading</li>
                 </ul>
             </div>
             
             <div class="card">
-                <div class="card-icon">🧬</div>
                 <h3 class="card-title">Multi-Modal Integration</h3>
-                <p class="card-description">Combining EM data with Patch-seq recordings, fMOST morphology, and transcriptomic cell typing.</p>
+                <p class="card-description">Planned integration of EM data with Patch-seq recordings, fMOST morphology, and transcriptomic cell typing — project targets, not yet released data.</p>
                 <ul class="list-tight">
                     <li>4,000+ Patch-seq recordings</li>
                     <li>Whole-brain fMOST reconstructions</li>
@@ -146,46 +143,46 @@ content_type: core
     </div>
 
     <div class="section">
-        <h2 class="section-title">World-Class Collaborative Team</h2>
+        <h2 class="section-title">Who Does What</h2>
         <div class="cards-grid">
             <div class="card dataset-card-blue">
-                <h4>🏛️ Harvard University</h4>
+                <h4>Harvard University</h4>
                 <p><strong>Jeff Lichtman, PI</strong><br>
                 Sample preparation and imaging expertise with decades of connectomics experience</p>
             </div>
             
             <div class="card dataset-card-purple">
-                <h4>🎓 Princeton University</h4>
+                <h4>Princeton University</h4>
                 <p><strong>Sebastian Seung & David Tank</strong><br>
                 mSEM imaging technology and deep learning algorithms for automated reconstruction</p>
             </div>
             
             <div class="card dataset-card-cyan">
-                <h4>☁️ Google Research</h4>
+                <h4>Google Research</h4>
                 <p><strong>Viren Jain</strong><br>
                 Cloud-scale processing infrastructure and machine learning segmentation algorithms</p>
             </div>
             
             <div class="card dataset-card-orange">
-                <h4>🧮 MIT</h4>
+                <h4>MIT</h4>
                 <p><strong>Ila Fiete</strong><br>
                 Circuit analysis, computational modeling, and theoretical frameworks for spatial coding</p>
             </div>
             
             <div class="card dataset-card-blue">
-                <h4>🧠 Allen Institute</h4>
+                <h4>Allen Institute</h4>
                 <p><strong>Hongkui Zeng</strong><br>
                 Patch-seq recordings, transcriptomic cell typing, and multi-modal data integration</p>
             </div>
             
             <div class="card dataset-card-purple">
-                <h4>🔬 University of Cambridge</h4>
+                <h4>University of Cambridge</h4>
                 <p><strong>Gregory Jefferis</strong><br>
                 Data integration, analysis pipelines, and connectome interpretation methods</p>
             </div>
             
             <div class="card dataset-card-cyan">
-                <h4>🚀 Johns Hopkins APL</h4>
+                <h4>Johns Hopkins APL</h4>
                 <p><strong>William Gray-Roncal</strong><br>
                 Connectome quality assurance, community training, and data dissemination</p>
             </div>

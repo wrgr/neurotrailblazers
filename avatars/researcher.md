@@ -53,6 +53,8 @@ content_type: core
 
 <nav class="avatar-nav">
   <a href="#story">Story</a>
+  <a href="#decisions">Decisions</a>
+  <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
   <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
 </nav>
@@ -88,76 +90,78 @@ content_type: core
   </div>
 </section>
 
-<section class="section" id="goals">
-  <h2>🎯 Amir's Goals</h2>
-  <p>Amir wants to apply his industry skills while learning the language of neuroscience:</p>
+<section class="section" id="decisions" markdown="1">
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-    <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--neural-blue);">
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🔬 Short-term (This Year)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Grasp core neuroscience terminology</li>
-        <li>Prototype ML models for connectomics datasets</li>
-        <li>Attend a neuroscience conference</li>
-        <li>Connect with academic collaborators</li>
-        <li>Share progress through workshops</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--cerebral-purple);">
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🎓 Medium-term (Next 2–3 Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Establish a cross-disciplinary research program</li>
-        <li>Co-author papers with neuroscientists</li>
-        <li>Develop tools for data integration</li>
-        <li>Mentor students bridging CS and neuroscience</li>
-        <li>Blend industry and academic perspectives</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #ecfeff, #cffafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--axon-cyan);">
-      <h3 style="color: var(--axon-cyan); margin-bottom: 1rem;">🚀 Long-term (5+ Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Lead a team applying AI to brain research</li>
-        <li>Create interpretable neural modeling frameworks</li>
-        <li>Support open science initiatives</li>
-        <li>Bridge industry and academia</li>
-        <li>Contribute to brain-inspired AI breakthroughs</li>
-      </ul>
-    </div>
-  </div>
+## The Decisions in Front of Amir
+
+**Where to enter the material.** Amir does not need another machine learning
+course, and sitting through one disguised as "computational neuroscience"
+would waste the asset he brings. His actual gap is biological: he can tune a
+segmentation model but cannot yet say what a dendrite means, which cues
+distinguish an axon from a glial process, or why a particular merge error is
+scientifically expensive. The right entry point is
+[Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}),
+[Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}),
+and [Unit 07]({{ '/technical-training/07-glia/' | relative_url }}) — the
+ultrastructure, neurites, and glia units — followed by
+[Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}),
+which connects that biology back to the pipeline vocabulary he already speaks.
+The [Neuroanatomy for Proofreaders side quest]({{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }})
+trains the same identification skill hands-on.
+
+**Prototype first, or scope first?** Industry habit says grab the data and
+start training. In this field that habit has a specific failure mode: root IDs
+and tables change between proofreading versions, so two files pulled a week
+apart can silently disagree. Before building anything, Amir should climb the
+ladder in [Getting Started with Data]({{ '/datasets/getting-started/' | relative_url }})
+— snapshot tables load in an afternoon with no authentication — and adopt its
+version-pinning rule from the first notebook. For choosing what to build, the
+[Open Problems]({{ '/open-problems/' | relative_url }}) ramps state questions
+the field actually has, each with a defined on-ramp, which is a faster route
+to a real collaboration than pitching a tool nobody asked for.
+
 </section>
 
-<section class="section" id="strengths">
-  <h2>💪 Strengths & Challenges</h2>
-  <p>Amir brings technical expertise but must adapt to a new research culture:</p>
+<section class="section" id="path" markdown="1">
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-    <div>
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">✨ Strengths</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">💡 Machine Learning Mastery</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Expertise in building scalable models and pipelines gives him an edge in analyzing big datasets.</p>
-        </div>
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🔧 Systems Thinking</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Sees how pieces fit together and optimizes workflows efficiently.</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">⚡ Challenges</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">📖 Limited Neuroscience Background</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Needs time to understand biology concepts that collaborators take for granted.</p>
-        </div>
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">⏳ Adjusting Pace</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Science often moves slower than industry projects, which can be frustrating.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+## How the Site's Material Serves Him
+
+Amir's stated struggle is reading dense neuroscience papers.
+[Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }})
+addresses it directly: the order experts actually read a paper in, how to read
+methods for what is absent, and how to tell a solid result from a fragile one.
+Paired with the [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+paper list, it converts his self-study from coverage into calibration — the
+same move he would make when learning a new ML subfield.
+
+His expertise becomes most useful to collaborators when it is expressed in the
+field's own quality vocabulary. The
+[Connectome Quality]({{ '/tools/connectome-quality/' | relative_url }}) page
+and the [Metrics and QA reference]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }})
+explain what VI, ERL, and synapse precision/recall each measure and — more
+importantly for a model builder — what each is blind to. A benchmark Amir
+proposes that ignores the field's split/merge asymmetry will be politely
+ignored; one that reports the components separately will be read. This is the
+concrete version of his "when to push his tech, when to adapt it" question.
+
+Finally, the pace mismatch he feels is partly a norms mismatch, and the
+[hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) pages describe
+the academic operating system — authorship, credit, escalation, how meetings
+work — that his industry experience does not transfer to. The
+[Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
+sequences that material; the
+[lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) page alone
+would have saved him his first two months of cross-cultural confusion.
+
+There is also a contribution path sized for him right now. The
+[getting-started page]({{ '/datasets/getting-started/' | relative_url }})
+states that corrections to its own drifting command snippets are a welcome
+first contribution, and the
+[proofreading side quest]({{ '/side-quests/proofreading/' | relative_url }})
+ends in an artifact a lab can read — both are ways to demonstrate seriousness
+to academic collaborators in their own currency before proposing anything
+larger.
+
 </section>
 
 <section class="section" id="insights">

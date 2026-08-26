@@ -52,6 +52,8 @@ content_type: core
 
 <nav class="avatar-nav">
   <a href="#story">Story</a>
+  <a href="#decisions">Decisions</a>
+  <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
   <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
 </nav>
@@ -87,80 +89,76 @@ content_type: core
   </div>
 </section>
 
-<section class="section" id="goals">
-  <h2>🎯 Maya's Goals</h2>
-  <p>Maya is eager to shape her research path and support others along the way:</p>
+<section class="section" id="decisions" markdown="1">
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-    <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--neural-blue);">
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🔬 Short-term (This Year)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Submit a first-author paper on segmentation methods</li>
-        <li>Improve deep learning skills and experiment tracking</li>
-        <li>Publish a toolbox for EM analysis</li>
-        <li>Balance coursework with research deadlines</li>
-        <li>Expand professional network</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--cerebral-purple);">
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🎓 Medium-term (Next 2–3 Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Finish PhD with a strong publication record</li>
-        <li>Speak at major conferences</li>
-        <li>Take on additional mentoring roles</li>
-        <li>Collaborate with neurotech companies</li>
-        <li>Clarify long-term career direction</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #ecfeff, #cffafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--axon-cyan);">
-      <h3 style="color: var(--axon-cyan); margin-bottom: 1rem;">🚀 Long-term (5+ Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Lead a research group bridging ML and neuroscience</li>
-        <li>Develop open-source tools for connectomics</li>
-        <li>Promote diversity and mentorship in the field</li>
-        <li>Advance multi-modal neural analysis</li>
-        <li>Create accessible training opportunities</li>
-      </ul>
-    </div>
-  </div>
+## The Decisions in Front of Maya
+
+**How much proofreading and quality-control depth does a model builder need?**
+Maya builds segmentation models, and the temptation is to treat proofreading as
+someone else's downstream cleanup. The site's technical material argues the
+opposite: [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+shows how a segmentation can improve its total VI score while its merge errors
+get worse, because the split component dominates — which means a model like
+hers can ship a regression behind a better headline number. Deciding to learn
+the error taxonomy and metric blind spots firsthand, through the
+[proofreading side quest]({{ '/side-quests/proofreading/' | relative_url }})
+and the [Connectome Quality]({{ '/tools/connectome-quality/' | relative_url }})
+notebooks, is a direct investment in her first-author paper, not a detour from
+it.
+
+**Mentor by improvisation, or mentor by design?** Maya mentors an
+undergraduate and is not sure her guidance counts as anything more than
+availability. The [models-in-practice playbook]({{ '/education/models/' | relative_url }})
+gives her a design: her mentee is in MERIT stage 3, where the failure modes
+are symmetric — support withdrawn too fast reads as personal inadequacy,
+support withdrawn too slowly produces dependence — and the signal to watch is
+whether the mentee initiates questions or waits for tasks. That one page turns
+"am I helping?" into a checkable question.
+
 </section>
 
-<section class="section" id="strengths">
-  <h2>💪 Strengths & Challenges</h2>
-  <p>Maya excels at building bridges across disciplines but still faces obstacles:</p>
+<section class="section" id="path" markdown="1">
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-    <div>
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">✨ Strengths</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🧠 Cross-disciplinary Knowledge</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Combines psychology, math, and computer science to tackle complex problems from multiple angles.</p>
-        </div>
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🤝 Collaborative Spirit</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Enjoys working with researchers from different backgrounds and helps newcomers feel welcome.</p>
-        </div>
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🗣 Clear Communicator</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Breaks down technical concepts so that both biologists and computer scientists can follow.</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">⚡ Challenges</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">🎯 Balancing Directions</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Juggling multiple research interests sometimes scatters her focus.</p>
-        </div>
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">🔎 Career Uncertainty</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Unsure whether to pursue academia or industry and how to prepare for both paths.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+## How the Site's Material Serves Her
+
+On the technical side, Maya's models are only as good as her understanding of
+the tissue they segment.
+[Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}),
+[Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}),
+and [Unit 07]({{ '/technical-training/07-glia/' | relative_url }}) supply the
+ultrastructural ground truth behind her training labels — including why
+glia-neuron merges are both hard to detect and expensive, which is exactly the
+error class her models need to be evaluated against. The
+[Metrics and QA reference]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }})
+works VI, ERL, and precision/recall in the mathematical detail her methods
+section will need.
+
+For the mentoring half of her life, the
+[hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) pages give her
+something concrete to hand Julian instead of vague reassurance: named norms,
+stated as sentences. This also solves her own problem of being "the explainer"
+— she can point to a page rather than reconstruct the explanation each time.
+If she runs a session for her lab or reading group, the
+[session kits]({{ '/teaching/sessions/' | relative_url }}) and
+[Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) are
+built for exactly that: one page to open ten minutes beforehand, with timing,
+misconceptions, and a rubric already assembled.
+
+Her academia-versus-industry uncertainty is a stage question, not a character
+flaw. [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }})
+describes how applications, funding, and references actually operate, and the
+[Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
+sequences that material so she can prepare for both paths at once instead of
+stalling on the choice.
+
+Her quiet doubt — that work counts only when it involves slicing brains or
+running gels — is answered by the site's own structure. The
+[Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }})
+norms she can bake into her toolbox release (versions pinned, assumptions
+named, exclusions reported) are what make a computational contribution one
+that other scientists can actually build on, which is the working definition
+of counting.
+
 </section>
 
 <section class="section" id="insights">

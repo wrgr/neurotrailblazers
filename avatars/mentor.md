@@ -52,6 +52,8 @@ content_type: core
 
 <nav class="avatar-nav">
   <a href="#story">Story</a>
+  <a href="#decisions">Decisions</a>
+  <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
   <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
 </nav>
@@ -87,80 +89,77 @@ content_type: core
   </div>
 </section>
 
-<section class="section" id="goals">
-  <h2>🎯 Dr. Nguyen's Goals</h2>
-  <p>She aims to grow a collaborative and supportive research environment:</p>
+<section class="section" id="decisions" markdown="1">
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-    <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--neural-blue);">
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">🔬 Short-term (This Year)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Secure stable funding for lab members</li>
-        <li>Publish high-quality datasets</li>
-        <li>Refine lab workflows and documentation</li>
-        <li>Coach students on presentations</li>
-        <li>Improve time management strategies</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--cerebral-purple);">
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">🎓 Medium-term (Next 2–3 Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Establish a network of collaborating labs</li>
-        <li>Promote open data practices</li>
-        <li>Expand research scope of the lab</li>
-        <li>Win a mid-career research award</li>
-        <li>Develop leadership skills in team science</li>
-      </ul>
-    </div>
-    <div style="background: linear-gradient(135deg, #ecfeff, #cffafe); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--axon-cyan);">
-      <h3 style="color: var(--axon-cyan); margin-bottom: 1rem;">🚀 Long-term (5+ Years)</h3>
-      <ul style="color: #4b5563; margin: 0; line-height: 1.6;">
-        <li>Lead major connectomics consortia</li>
-        <li>Advance equitable research practices</li>
-        <li>Achieve tenure and shape data-sharing policy</li>
-        <li>Mentor future leaders in the field</li>
-        <li>Ensure lab’s sustainability and impact</li>
-      </ul>
-    </div>
-  </div>
+## The Decisions in Front of Dr. Nguyen
+
+**Build training materials herself, or adopt ready-made ones?** Every new
+trainee costs Nguyen weeks of one-on-one onboarding, and her instinct — she is
+known for meticulous lab organization — is to write her own curriculum. The
+site removes most of that build cost. The
+[session kits]({{ '/teaching/sessions/' | relative_url }}) give her one
+ready-to-run page per module — prep checklist, timing, misconceptions, rubric —
+and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
+covers the part she would otherwise learn by failing: how to differentiate one
+session across learners as different as a first-generation sophomore and an
+industry ML scientist. Her real decision is which
+[modules]({{ '/modules/' | relative_url }}) to put on her lab's required
+sequence, not whether to write them.
+
+**Which norms to state out loud, and when?** Nguyen's lab has standards — for
+data quality, authorship, figure provenance — that currently live in her head
+and surface only when someone violates one. The
+[hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) section turns
+that into a concrete practice: norms stated as checkable sentences, in the
+first week, in writing. The
+[Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }})
+page collects twenty-six reporting and disclosure norms she can adopt as lab
+policy directly, and its framing — a missing norm is a defect, not an
+awkwardness — matches how she already thinks about data quality.
+
 </section>
 
-<section class="section" id="strengths">
-  <h2>💪 Strengths & Challenges</h2>
-  <p>Nguyen has a clear vision for her lab but must manage competing demands:</p>
+<section class="section" id="path" markdown="1">
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-    <div>
-      <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">✨ Strengths</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🎯 Strategic Vision</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Plans long-term projects that align scientific goals with trainee growth.</p>
-        </div>
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🤝 Dedicated Mentor</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Invests time in developing students and fosters a collaborative environment.</p>
-        </div>
-        <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--neural-blue); margin: 0 0 0.5rem 0;">🔬 Scientific Rigor</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Maintains high standards for data quality and reproducibility.</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">⚡ Challenges</h3>
-      <div style="space-y: 1rem;">
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">💼 Time Management</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">Juggling grants, teaching, and supervision leaves little space for deep work.</p>
-        </div>
-        <div style="background: rgba(124, 58, 237, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-          <h4 style="color: var(--cerebral-purple); margin: 0 0 0.5rem 0;">🏔 Leadership Isolation</h4>
-          <p style="margin: 0; color: #4b5563; font-size: 0.9rem;">As responsibilities grow, she has fewer peers to lean on for advice.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+## How the Site's Material Serves Her
+
+The [models-in-practice playbook]({{ '/education/models/' | relative_url }})
+is the page written most directly for her. It walks the six MERIT stages with,
+for each, what the mentee produces and the failure mode the stage exists to
+prevent — and names the two errors a busy PI is most likely to make: stage
+compression (running orientation in an afternoon) and uniform mentoring
+(applying one posture to a stage-2 student and a stage-5 student alike). Its
+stage-2 diagnostic is immediately usable in her lab: have each new trainee
+write down the norms as they understood them, and read the gap between what
+she said and what they wrote.
+
+For her open-science commitments, the site's data material doubles as lab
+infrastructure. [Module 21]({{ '/modules/module21/' | relative_url }}) carries
+the reproducibility rubric row — version pinned, assumptions named, exclusions
+reported — that she can add to her own lab's review checklist, and
+[Getting Started with Data]({{ '/datasets/getting-started/' | relative_url }})
+is the onboarding page she can assign to any new member instead of the
+recurring "how do I get a token" meeting. When her lab's proofreading
+standards need to align with collaborators', the
+[Connectome Quality]({{ '/tools/connectome-quality/' | relative_url }}) page
+and [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+give everyone the same vocabulary for errors and metrics.
+
+The loneliness of leadership has no page of its own, but the
+[Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
+treats mentoring, program design, and professional community as material to
+study rather than talents to have — which is itself the reframe she needs: the
+playbook's closing point is that leading a lab well is not time taken away
+from science; it is the science.
+
+One habit from the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
+transfers directly to her lab meetings: state norms explicitly, in the first
+five minutes, every time — and narrate the norm she herself got wrong in her
+second year. For a leader worried about balancing perfectionism with
+people-first practice, modeling uncertainty in public is the cheapest
+intervention on that list, and the guide explains why it outperforms working
+clean examples.
+
 </section>
 
 <section class="section" id="insights">

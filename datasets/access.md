@@ -25,7 +25,6 @@ related_tools:
 related_frameworks:
   - education-models
 resource_links: []
-image: /assets/images/datasets/access.jpg
 last_reviewed: 2026-03-09
 maintainer: NeuroTrailblazers Team
 content_type: core

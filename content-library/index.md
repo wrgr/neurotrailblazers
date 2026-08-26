@@ -27,10 +27,9 @@ Every entry below is a **standalone, richly detailed reference document**. Each 
 - Real scientific references with context
 - Worked examples with step-by-step reasoning
 - Common misconceptions and how to address them
-- **Tags** for cross-referencing across dimensions (using the taxonomy in `_data/content_tags.yml`)
-- **Reference images** with alt text and captions (placeholders for teaching illustrations)
-- **Micro lesson IDs** for combining entries into modular learning sequences
-- **Combines-with** links identifying entries that pair well for combined micro lessons
+- **Tags** for cross-referencing across dimensions
+- **Combines-with** links identifying entries that pair well together, shown at the top of each entry
+- Figure specifications for planned teaching illustrations — written as captions and alt text in each entry's metadata; the illustrations themselves are not yet produced
 
 Unit pages, slide decks, and modules **link to** these entries rather than duplicating content. This keeps the curriculum DRY (Don't Repeat Yourself) and ensures a single source of truth for each topic.
 

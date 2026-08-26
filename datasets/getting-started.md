@@ -27,7 +27,6 @@ related_tools:
 related_frameworks:
   - education-models
 resource_links: []
-image: /assets/images/datasets/datasets-index.jpg
 last_reviewed: 2026-08-21
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false

@@ -32,7 +32,6 @@ recommended_datasets:
 recommended_tools:
   - connectome-quality
   - ask-an-expert
-image: /assets/images/avatars/gradstudent.jpg
 last_reviewed: 2026-03-09
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false

@@ -28,7 +28,6 @@ recommended_datasets:
   - access
 recommended_tools:
   - ask-an-expert
-image: /assets/images/avatars/undergradstudent.jpg
 last_reviewed: 2026-03-09
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false

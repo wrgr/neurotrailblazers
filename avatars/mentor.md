@@ -32,7 +32,6 @@ recommended_datasets:
 recommended_tools:
   - ask-an-expert
   - connectome-quality
-image: /assets/images/avatars/mentor.jpg
 last_reviewed: 2026-03-09
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false

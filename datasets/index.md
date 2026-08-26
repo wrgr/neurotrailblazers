@@ -28,7 +28,6 @@ related_frameworks:
   - research-incubator-model
   - education-models
 resource_links: []
-image: /assets/images/datasets/datasets-index.jpg
 last_reviewed: 2026-03-09
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false

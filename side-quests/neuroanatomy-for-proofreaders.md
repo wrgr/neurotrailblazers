@@ -294,7 +294,10 @@ reread before the second round.
 Then make it a habit rather than an event: the
 [hidden curriculum]({{ '/hidden-curriculum/meta-learning/' | relative_url }})
 prescribes exactly this as a weekly mixed set, scored by tier, for as long as you are
-doing identification work at all.
+doing identification work at all. And if you want the loop closed by someone other
+than yourself, the community platforms under
+[Resources beyond this site](#resources-beyond-this-site) check your calls and gate
+access on them — the external review this drill cannot provide.
 
 <div class="quest-outcome" markdown="1">
 **You finish with:** a confusion matrix with accuracy by tier, an uncertain rate, a
@@ -417,6 +420,63 @@ are a usable review queue and an overconfident annotator's errors are invisible.
 - **Anything that certifies you.** Same honest limit as every self-study path here:
   the artifact is the thing you show, and one external review of it is worth more
   than three self-reviews.
+
+## Resources beyond this site
+
+Everything above links inward on purpose — the sequence is the point. But the wider
+field has resources this site cannot replicate, and four of them fit this quest
+directly. All were checked as live and as described in August 2026.
+
+**An atlas to keep open during stages 1–4.**
+[SynapseWeb](https://synapseweb.clm.utexas.edu/), from Kristen Harris's lab at UT
+Austin, is the closest thing the field has to a canonical ultrastructure reference:
+free tutorials on axons, dendrites, spines, and astrocytes built from real serial-EM
+reconstructions, plus Josef Spacek's
+[Atlas of Ultrastructural Neurocytology](https://synapseweb.clm.utexas.edu/atlas) —
+annotated micrographs covering the neuron, the glia, blood vessels, and, usefully for
+stage 0 of your checklist, abnormalities. When a cue table here names a structure you
+cannot picture, this is where to go picture it. The book-length treatment behind much
+of this material is Peters, Palay, and Webster, *The Fine Structure of the Nervous
+System: Neurons and Their Supporting Cells* (3rd ed., Oxford University Press, 1991)
+— out of print, so a library copy.
+
+**Practice with feedback, which stage 6 cannot give you.**
+The self-run drill's honest limit is that you grade yourself. Two open community
+platforms close that loop by checking your work and gating access on demonstrated
+competence — the closest existing thing to the hosted, scored drill this site lists
+as a gap:
+
+- [EyeWire II](https://eyewire.ai/) — the Seung Lab's community platform for
+  proofreading ~100,000 neurons of mouse retina. You learn the tools, pass a
+  challenge, and then map real assigned cells whose results the community verifies.
+- [FlyWire](https://flywire.ai/) — the fly connectome's community, still active on
+  new datasets. Signup grants a **sandbox** copy of the segmentation to practice
+  edits in consequence-free, and production proofreading is gated by an entry test;
+  the self-guided training includes a glossary of fly ultrastructure. One caveat this
+  quest equips you to state: fly neurites are the polarity-rule exception from stage
+  3, so the vertebrate axon-vs-dendrite cues transfer only partly.
+- [connectome.quest](https://connectome.quest/) — the Seung Lab's hub that routes to
+  both of the above (and more), with step-by-step guides and video tutorials, all on
+  the same Neuroglancer-family viewer the drill uses.
+
+**Tooling for the drill.**
+The [MICrONS Explorer tutorials](https://tutorial.microns-explorer.org/) walk the
+cubic-millimeter dataset's viewers step by step, and
+[WEBKNOSSOS](https://webknossos.org/) offers a free browser-based annotation
+environment with published EM datasets — useful if you want to practice volume
+annotation itself, with no gate, before touching a released segmentation.
+
+**The paper behind the community model.**
+Dorkenwald et al., "FlyWire: online community for whole-brain connectomics,"
+*Nature Methods*, 2022,
+[10.1038/s41592-021-01330-0](https://doi.org/10.1038/s41592-021-01330-0) — how
+sandbox training, entry tests, and distributed proofreading actually operate at
+scale. Read it when you want to know what a production pipeline will expect of you,
+which is also the best possible framing for the quest you do next.
+
+(For anyone *teaching* this material rather than learning it: FlyWire's
+[Codex Academy](https://codex.flywire.ai/academy_home) has classroom worksheets and
+videos for high school and college outreach — adjacent to this quest, not part of it.)
 
 ## Where this connects
 

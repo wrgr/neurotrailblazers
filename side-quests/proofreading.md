@@ -129,7 +129,10 @@ then open a real volume and try the edit operations.
 CAVE, Neuroglancer, Spelunker, NeuTu, CATMAID. You do not need all of them. You need to
 understand versioning and materialization well enough that you can say which segmentation
 version your corrections apply to — because an uncited version makes a correction log
-worthless to anyone else.
+worthless to anyone else. If you want a consequence-free place to try split and merge
+operations first, [FlyWire](https://flywire.ai/) grants a practice sandbox on signup, and
+the Seung Lab's [connectome.quest](https://connectome.quest/) hub routes to it and to
+[EyeWire II](https://eyewire.ai/) with step-by-step guides.
 
 <div class="quest-outcome" markdown="1">
 **You finish with:** a scratch volume you have made at least one edit in, and the version

@@ -529,4 +529,4 @@ Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 09]({{ '/modules/module09/' | relative_url }}), [Module 15]({{ '/modules/module15/' | relative_url }})
 - Lecture plan: [Connectome Analysis and NeuroAI lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})
-- **Next:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})
+- **Keep at hand:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — not a tenth unit but the lookup table for every dataset figure this unit cites; the track itself ends here

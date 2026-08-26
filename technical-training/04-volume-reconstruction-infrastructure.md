@@ -217,6 +217,50 @@ timestamp, and written into queryable tables.
 > code, and the date. Every paper states the version. If your collaborator cannot
 > reproduce your number, the first question is always "which version?"
 
+### Worked example: which version produced this number?
+
+> **The situation:** a figure your group submitted eight months ago reports that a
+> pyramidal cell — root ID quoted in the caption — receives 1,412 input synapses.
+> Re-running the notebook today returns 1,530 for an ID the lineage viewer says is
+> "the same cell." A reviewer asks which number is right.
+
+**Step 1 — look for the pin.** The notebook has no reproducibility header and the
+query does not pass a materialization version. It ran against "latest," which is
+the silent failure this section describes: the code still runs; it now answers a
+different question than it did in the winter.
+
+**Step 2 — recover the timestamp.** The notebook's commit history dates the run.
+That week brackets two materializations — call them 795 and 802 — so the date
+alone does not identify the version. This is the uncomfortable part: you are
+reconstructing provenance that should have been recorded, from evidence that was
+recorded for other reasons.
+
+**Step 3 — test both candidates.** Pin the query to each version in turn. Version
+795 returns 1,412. Exact agreement on the total is suggestive, not conclusive —
+two versions could coincidentally match on a sum — so check the per-partner
+synapse counts as well. They match row for row. The figure was computed against
+795.
+
+**Step 4 — explain the difference; don't just date it.** Map the old root ID
+forward through the lineage service. It resolves to a single current root — no
+splits — but the edit log shows a series of merge operations, each with author and
+timestamp, that attached previously split fragments of distal dendrite over the
+intervening months. The 118 additional inputs sit on the newly attached arbor.
+Both numbers are correct — for different objects. The original claim was
+under-specified, not wrong.
+
+**Step 5 — repair the record.** The response to the reviewer states:
+materialization 795, root ID as of that version, n = 1,412; under the current
+version the same lineage resolves to a more complete reconstruction with 1,530
+inputs. The revised methods section pins the version, and the notebook gains the
+five-line header it should have had.
+
+**Transferable principle:** every provenance question in this system is answerable
+because the architecture keeps append-only artifacts — the edit log, the lineage
+graph, the materialization snapshots. But answerable-after-an-afternoon-of-forensics
+and reproducible-by-construction are different states, and the version number in
+the figure caption is what separates them.
+
 ### Check yourself
 
 <details markdown="1">
@@ -512,6 +556,7 @@ across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 
 ## Go deeper
 
+- [Atlas and connectomics reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — dataset sizes, formats, and platform acronyms in one lookup table
 - [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) — stage-by-stage detail
 - [Data formats]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) — precomputed, N5, Zarr, sharding
 - [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) — the versioning model in depth

@@ -9,8 +9,8 @@ content_type: core
 <div class="layout-content layout-page">
 
 <section class="section section-compact">
-  <h1>Connectome KB Visualizations</h1>
-  <p>Core bibliometric graph construction runs in <code>connectome-kb</code>. This site hosts the visualization layer and synced artifacts.</p>
+  <h1>The Field, Mapped</h1>
+  <p>Three interactive views of the connectomics literature, built from the same corpus behind the <a href="{{ '/technical-training/journal-club/' | relative_url }}">journal club</a>. Use them to see where a paper you are reading sits: which cluster of work it belongs to, what it descends from, and what has since built on it. Drag to pan, scroll to zoom, hover a node for the paper it represents.</p>
 </section>
 
 <section class="section section-compact">

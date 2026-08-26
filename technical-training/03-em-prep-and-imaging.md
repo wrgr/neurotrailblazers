@@ -505,6 +505,7 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 
 ## Go deeper
 
+- [Atlas and connectomics reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — the public volumes this unit tells you to open, with access routes and specs in one lookup table
 - [Tissue preparation]({{ '/content-library/imaging/tissue-preparation/' | relative_url }}) — full protocol detail and chemistry
 - [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) — beam physics, TEM vs SEM, contrast mechanisms
 - [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) — extended catalog with images

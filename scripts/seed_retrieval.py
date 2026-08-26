@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Execute the retrieval half of docs/planning/SEED_CORPUS_RESET_BRIEF.md.
+"""Execute the retrieval half of SEED_CORPUS_RESET_BRIEF.md (now in
+docs/planning/ on the holding/internal-planning branch).
 
 The brief's first constraint is "retrieve, never recall". A script enforces that
 structurally rather than by instruction: every record here is whatever an API

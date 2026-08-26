@@ -19,7 +19,7 @@ related_tools:
   - ask-an-expert
   - connectome-quality
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 content_type: core
 ---
 

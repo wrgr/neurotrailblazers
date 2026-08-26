@@ -76,7 +76,9 @@ placeholder.
 Contributions are welcome — issues and pull requests with improvements, new content, or
 corrections.
 
-Before authoring learner-facing content, read `docs/CONTENT_REVIEW.md`. It documents the
+Before authoring learner-facing content, read `docs/CONTENT_REVIEW.md` on the
+[`holding/internal-planning`](https://github.com/wrgr/neurotrailblazers/tree/holding/internal-planning)
+branch (internal planning material lives there, off the deployed branch). It documents the
 standard the technical units are written to: observable competencies rather than topic
 lists, worked examples with the reasoning shown, retrieval-practice self-checks with
 answers, graded rubrics, and an honest statement of what a page does not cover.

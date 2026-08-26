@@ -122,18 +122,16 @@ exclude:
   - node_modules
   - scripts
   # Working files for the technical track: unit source specs, deck specs,
-  # ingest transcripts, reviews, and templates. These are build inputs, not
-  # pages. Publishing them produced ~60 unstyled draft pages that duplicated
-  # the real technical units and exposed local authoring paths. The rendered
+  # and ingest transcripts. These are build inputs, not pages. Publishing
+  # them produced ~60 unstyled draft pages that duplicated the real
+  # technical units and exposed local authoring paths. The rendered
   # decks under course/decks/marp/out/ are static assets and stay published.
+  # (Planning boards, reviews, and templates live on the
+  # holding/internal-planning branch, off the deployed branch entirely.)
   - course/source-ingest
   - course/units
-  - course/reviews
-  - course/templates
-  - course/workboard.md
-  - course/capability-development-plan.md
-  - course/decision-rules.md
-  - course/instructional-framework.md
+  - course/README.md
+  - course/decks/README.md
   - course/decks/content-import-matrix.md
   - course/decks/marp/modules
   - course/decks/marp/*.marp.md

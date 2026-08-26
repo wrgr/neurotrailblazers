@@ -32,7 +32,7 @@ related_frameworks:
 resource_links: []
 image: /assets/images/datasets/workflow.jpg
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---

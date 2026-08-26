@@ -10,7 +10,7 @@ pathways:
   - technical foundation
   - methods depth
 last_reviewed: 2026-03-10
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: navigation
 ---

@@ -30,7 +30,7 @@ related_frameworks:
 resource_links: []
 image: /assets/images/datasets/datasets-index.jpg
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---
@@ -241,8 +241,8 @@ content_type: core
           <ul class="dataset-facts">
             <li><strong>Species:</strong> Mouse</li>
             <li><strong>Region:</strong> Retina (inner plexiform layer)</li>
-            <li><strong>Volume:</strong> TBD</li>
-            <li><strong>Size:</strong> TBD</li>
+            <li><strong>Volume:</strong> See source publication</li>
+            <li><strong>Size:</strong> See source publication</li>
           </ul>
           <div class="dataset-actions">
             <a href="https://bossdb.org/project/helmstaedter2013" class="btn btn-secondary" target="_blank">BossDB Data</a>
@@ -279,8 +279,8 @@ content_type: core
           <ul class="dataset-facts">
             <li><strong>Species:</strong> Mouse</li>
             <li><strong>Region:</strong> Visual cortex</li>
-            <li><strong>Volume:</strong> TBD</li>
-            <li><strong>Size:</strong> TBD</li>
+            <li><strong>Volume:</strong> See source publication</li>
+            <li><strong>Size:</strong> See source publication</li>
           </ul>
           <div class="dataset-actions">
             <a href="https://bossdb.org/project/lee2016" class="btn btn-secondary" target="_blank">BossDB Data</a>
@@ -392,7 +392,7 @@ content_type: core
           <li><strong>Species:</strong> Mouse, Primate</li>
           <li><strong>Region:</strong> Cortical synapses</li>
           <li><strong>Type:</strong> Developmental comparison</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/wildenberg2023" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -408,7 +408,7 @@ content_type: core
           <li><strong>Region:</strong> Ventral nerve cord (VNC)</li>
           <li><strong>Motor Neurons:</strong> 507 limb motor neurons</li>
           <li><strong>Method:</strong> GridTape automated TEM</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/phelps_hildebrand_graham2021" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -424,7 +424,7 @@ content_type: core
           <li><strong>Individuals:</strong> 8 isogenic animals</li>
           <li><strong>Developmental Stages:</strong> Birth to adulthood</li>
           <li><strong>Focus:</strong> Developmental brain maturation</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/witvliet2020" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -440,7 +440,7 @@ content_type: core
           <li><strong>Region:</strong> Visual thalamus (lateral geniculate nucleus)</li>
           <li><strong>Synapses:</strong> 1,488 total (862 input, 626 output)</li>
           <li><strong>Focus:</strong> Single interneuron connectivity</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/morgan2020" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -457,7 +457,7 @@ content_type: core
           <li><strong>Ages:</strong> Postnatal days 3 and 7 (P3, P7)</li>
           <li><strong>Focus:</strong> Climbing fiber-Purkinje cell connectivity</li>
           <li><strong>Method:</strong> Serial-section scanning electron microscopy</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/wilson2019" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -473,7 +473,7 @@ content_type: core
           <li><strong>Region:</strong> Olfactory bulb</li>
           <li><strong>Neurons:</strong> >1,000 (~98% coverage)</li>
           <li><strong>Method:</strong> 3D electron microscopy</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/wanner16" class="btn btn-secondary" target="_blank">View on BossDB</a>
@@ -489,7 +489,7 @@ content_type: core
           <li><strong>Region:</strong> Optic medulla</li>
           <li><strong>Neurons:</strong> 379</li>
           <li><strong>Synapses:</strong> 8,637 chemical</li>
-          <li><strong>Size:</strong> TBD</li>
+          <li><strong>Size:</strong> See source publication</li>
         </ul>
         <div class="dataset-actions">
           <a href="https://bossdb.org/project/takemura2013" class="btn btn-secondary" target="_blank">View on BossDB</a>

@@ -12,7 +12,7 @@ framework_type: "Framework hub"
 related_modules: []
 related_tools: []
 last_reviewed: 2026-03-09
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
 ---

@@ -195,11 +195,8 @@ content_type: core
     <div class="section" id="dataset-access">
         <div class="checklist-box text-center">
             <div style="font-size: 4rem; margin-bottom: 1rem;">🚧</div>
-            <h2>Data Release Coming Soon</h2>
-            <p>The MouseConnects dataset is currently in active development. Data release, interactive browsers, and analysis tools will be made available as the project progresses. Stay tuned for updates!</p>
-            <div class="mt-1">
-                <a href="{{ '/tools/ask-an-expert/' | relative_url }}" class="btn btn-primary">Get Notified</a>
-            </div>
+            <h2>Data Not Yet Released</h2>
+            <p>The MouseConnects dataset is in active development; data, browsers, and analysis tools will be released as the project progresses. Until then, the <a href="{{ '/datasets/' | relative_url }}">released public datasets</a> are the place to practice, and the <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">case study</a> tracks what this project is building.</p>
         </div>
     </div>
 </div>

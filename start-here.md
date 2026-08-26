@@ -72,6 +72,35 @@ content_type: navigation
         <p>The tracks are a convenience, not a gate. If you have a specific question rather than a curriculum-sized one, go straight to <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the dictionary, content library, journal club, atlas, hidden curriculum and datasets are written to be looked things up in, and none of them requires you to have started anywhere.</p>
     </section>
 
+    <section class="section">
+        <h2 id="your-first-hour">Your first hour</h2>
+        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
+
+        <div class="checklist-box">
+            <h3>Sixty minutes, one artifact</h3>
+            <div class="checklist">
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span><strong>0-10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
+                </label>
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
+                </label>
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span><strong>25-45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
+                </label>
+                <label class="checklist-item">
+                    <input type="checkbox">
+                    <span><strong>45-60 min &mdash; Write the artifact.</strong> Do the Unit 01 lab: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. The last item is the one that matters, and it is the one most people leave blank.</span>
+                </label>
+            </div>
+            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If you finish with an empty step 4, that is also information &mdash; it means you have not yet found the boundary of your evidence, which is exactly what Unit 01 exists to teach.</small></p>
+        </div>
+    </section>
+
+
     {% include ui/technical-track-roadmap.html %}
 
     <section class="section">
@@ -143,70 +172,7 @@ content_type: navigation
 
     <section class="section">
         <h2>Our Educational Framework</h2>
-        <p>NeuroTrailblazers is built on evidence-based educational models:</p>
-        
-        <div class="cards-grid">
-            <div class="card">
-                <h3>MERIT Framework</h3>
-                <p>Six stages spanning selection through career transition:</p>
-                <ol class="list-tight">
-                    <li>Merit-Based Selection</li>
-                    <li>Orientation & Research Foundations</li>
-                    <li>Skill Development & Mentored Research</li>
-                    <li>Independent Research & Early Dissemination</li>
-                    <li>Advanced Research & Professional Networking</li>
-                    <li>Career Transition & Lifelong Learning</li>
-                </ol>
-            </div>
-            <div class="card">
-                <h3>Professional Pathways</h3>
-                <p>Structured support across:</p>
-                <ul class="list-tight">
-                    <li>Research fundamentals</li>
-                    <li>Data analysis skills</li>
-                    <li>Communication & presentation</li>
-                    <li>Career development</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>CCR Dimensions</h3>
-                <p>Four key areas of development:</p>
-                <ul class="list-tight">
-                    <li><strong>Knowledge:</strong> Content mastery</li>
-                    <li><strong>Skills:</strong> Technical abilities</li>
-                    <li><strong>Character:</strong> Research ethics</li>
-                    <li><strong>Meta-Learning:</strong> Learning how to learn</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2 id="your-first-hour">Your first hour</h2>
-        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
-
-        <div class="checklist-box">
-            <h3>Sixty minutes, one artifact</h3>
-            <div class="checklist">
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>0-10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>25-45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
-                </label>
-                <label class="checklist-item">
-                    <input type="checkbox">
-                    <span><strong>45-60 min &mdash; Write the artifact.</strong> Do the Unit 01 lab: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. The last item is the one that matters, and it is the one most people leave blank.</span>
-                </label>
-            </div>
-            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If you finish with an empty step 4, that is also information &mdash; it means you have not yet found the boundary of your evidence, which is exactly what Unit 01 exists to teach.</small></p>
-        </div>
+        <p>The program is built on three evidence-based models &mdash; the MERIT mentoring stages, the Professional Pathways workshops, and the CCR development dimensions. The <a href="{{ '/models/' | relative_url }}">program models page</a> summarizes them, and the <a href="{{ '/education/models/' | relative_url }}">models-in-practice playbook</a> shows what each stage looks like when it is working and the failure mode it exists to prevent.</p>
     </section>
 
     <section class="section">

@@ -77,7 +77,7 @@ items:
         url: "/tools/"
       - title: "Ask an Expert"
         url: "/ask-an-expert/"
-      - title: "Proofreading Tool"
+      - title: "Connectome Quality"
         url: "/tools/connectome-quality/"
       - title: "Workflow"
         url: "/datasets/workflow/"

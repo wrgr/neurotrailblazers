@@ -88,15 +88,8 @@ content_type: core
         </div>
 
         <div class="card">
-            <h2>👩🏽‍💻 Learn by Doing: Notebook Series</h2>
-            <ol>
-                <li><strong>Visualizing Segmentation Errors</strong></li>
-                <li><strong>Computing Synapse-Based F1 Scores</strong></li>
-                <li><strong>Simulating Merge/Split Errors</strong></li>
-                <li><strong>Using Topology for Validation</strong></li>
-                <li><strong>Proofreading & Gold-Standard Injection</strong></li>
-            </ol>
-            <p>These are designed for students — no prior neuroscience experience required!</p>
+            <h2>Learn by Doing</h2>
+            <p>The hands-on route is the <a href="{{ '/side-quests/proofreading/' | relative_url }}">proofreading side quest</a>: worked scenarios, real public volumes, and an artifact a lab can read. The <a href="{{ '/notebooks/connectome-quality/' | relative_url }}">notebooks page</a> holds the reference-code steps for computing the metrics on this page.</p>
         </div>
 
         <div class="card">
@@ -111,12 +104,11 @@ content_type: core
         </div>
 
         <div class="card">
-            <h2>📣 Join the Community</h2>
+            <h2>Where to go from here</h2>
             <ul>
-                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Slack Workspace</a></li>
-                <li><a href="{{ '/notebooks/connectome-quality/' | relative_url }}">Contribute a Notebook</a></li>
-                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Proofread & Earn with MTurk-style Projects</a></li>
-                <li><a href="{{ '/tools/ask-an-expert/' | relative_url }}">Submit a New Metric</a></li>
+                <li><a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a> — the metrics on this page taught in full, with a graded lab</li>
+                <li><a href="{{ '/side-quests/proofreading/' | relative_url }}">The proofreading side quest</a> — the hands-on route, on real public volumes</li>
+                <li><a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> — the site's question route</li>
             </ul>
         </div>
     </div>

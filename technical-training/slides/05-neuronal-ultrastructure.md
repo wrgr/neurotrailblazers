@@ -45,6 +45,58 @@ existing implementation of it. The learner-facing material is the unit page link
 13. Slide 13 (7 min): Hands-on labeling prompt
 14. Slide 14 (7 min): Debrief and bridge to process classification.
 
+## Sixty-minute tutorial: run-of-show
+
+### Pre-class (10–15 min, async)
+
+- Read §1 and §2 of the unit page. Bring the organelle table.
+- Open the unit page figure panel and preview at least three figures.
+- Bring one cue you find ambiguous.
+
+### Materials
+
+- [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
+- The figure panel above (RIV-ULTRA shortlist)
+- A shared annotation sheet with columns: patch ID | compartment call | synapse call |
+  confidence tier | cue family 1 | cue family 2 | what would change my mind
+
+The last column is the one that produces learning. Insist on it.
+
+### Minute by minute
+
+| Time | Activity | Instructor focus |
+|---|---|---|
+| 00:00–05:00 | **Framing.** Prompt: "What goes wrong if we force a label too early?" | Set the capability target; state that "uncertain" is a passing answer |
+| 05:00–12:00 | **Expert modeling.** Work one patch aloud, following the §3 protocol | Think aloud about *uncertainty*, not just conclusions. Name each cue's family explicitly |
+| 12:00–20:00 | **Guided practice 1.** Two easy patches, in pairs | Circulate; ask "which family is that cue from?" rather than "is that right?" |
+| 20:00–30:00 | **Public debrief.** Compare calls openly | Target the three misconceptions below |
+| 30:00–42:00 | **Guided practice 2.** Two borderline patches, independently | Require two independent cues plus one uncertainty statement per patch |
+| 42:00–52:00 | **Consensus round.** Groups reconcile using the tier definitions | Classify each disagreement: cue conflict / missing context / vocabulary mismatch |
+| 52:00–58:00 | **Competency check.** One fully justified call each | Label + confidence + evidence chain + one alternative considered and rejected |
+| 58:00–60:00 | **Exit ticket.** "One cue I trust more now; one I still mistrust" | Collect these — they are your calibration data for next session |
+
+### The three misconceptions to target explicitly
+
+1. **"Small process = axon."** Size alone is unreliable; thin dendritic branches and
+   spine necks are small too. Counter with a ribosome-bearing thin process.
+2. **"Dark contrast = synapse."** Counter with a tangentially sectioned membrane and
+   with an adherens junction.
+3. **"Every patch must end in a hard label."** Counter by praising a well-justified
+   "uncertain" in the public debrief. Learners calibrate to what gets rewarded, so
+   reward it visibly, once, early.
+
+### Formative checkpoints
+
+- **At 20 min:** ≥ 80% of pairs cite two cues from *different families*. If not, stop
+  and re-teach §4 — proceeding without this makes the rest of the session unproductive.
+- **At 42 min:** the disagreement log distinguishes cue conflict from missing context.
+- **At 58 min:** each learner justifies one call with explicit uncertainty language.
+
+### Post-class (20–30 min)
+
+Annotate three new patches; submit call, confidence, cue rationale by family, and one
+unresolved ambiguity with an escalation note.
+
 ## Figure integration points
 - Primary shortlist: `course/units/figures/05-neuronal-ultrastructure-selected-v1.md`.
 - Use at least three cue-comparison panels and one ambiguity panel.

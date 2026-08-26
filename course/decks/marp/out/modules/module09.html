@@ -45,7 +45,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="6" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="concept-focus">Concept Focus</h2>
 <h3 id="1-what-is-skeletonization-and-why-do-we-need-it">1) What is skeletonization and why do we need it?</h3>
-<p>A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a <strong>skeleton</strong>: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity).</p>
+<p>A segmented neuron occupies millions of voxels in the EM volume. To analyze its morphology efficiently, we reduce it to a <strong>skeleton</strong>: a tree graph where nodes represent points along the neurite centerline and edges represent the path between them. Skeletons compress a neuron's 3D structure from gigabytes to kilobytes while preserving topology (branching pattern, path lengths, connectivity) — at the cost of surface geometry and spine shape, which are discarded.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="7" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="core-workflow">Core Workflow</h2>
@@ -89,9 +89,9 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
 <ul>
-<li><strong>Misconception guardrail:</strong> a skeleton is a lossless summary of a neuron rather than a representation that discards surface geometry and spine shape.</li>
+<li><strong>Misconception guardrail:</strong> a skeleton is a lossless summary of a neuron.</li>
 <li><strong>Misconception guardrail:</strong> morphological measurements are comparable across cells that were proofread to different levels.</li>
-<li><strong>Misconception guardrail:</strong> total dendritic length is a property of the neuron rather than a property of the reconstruction of that neuron.</li>
+<li><strong>Misconception guardrail:</strong> total dendritic length is a property of the neuron itself, independent of how it was reconstructed.</li>
 <li><strong>Misconception guardrail:</strong> a cell type assigned from morphology alone needs no corroboration from connectivity or molecular identity.</li>
 </ul>
 </section>
@@ -110,9 +110,19 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="12" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="assessment-rubric">Assessment Rubric</h2>
 <ul>
-<li><strong>Minimum pass</strong>: Valid skeleton and descriptor set for all neurons. At least 3 descriptors.</li>
-<li><strong>Strong performance</strong>: Robust interpretation linking descriptors to cell-type identity. Explicit uncertainty framing for borderline cases. Investigation of mismatches.</li>
-<li><strong>Common failure to flag</strong>: Descriptor list without biological context — reporting numbers without explaining what they mean for the neuron's identity.</li>
+<li><strong>Minimum pass</strong></li>
+<li>Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.</li>
+<li>Every classification carries a stated evidence chain, not just a label.</li>
+<li>At least one explicit measurement limitation named, tied to a specific reconstruction issue.</li>
+<li><strong>Strong performance</strong></li>
+<li>Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.</li>
+<li>Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.</li>
+<li>Per-cell completeness estimated and reported next to every absolute measurement.</li>
+<li>Ratios computed on contained compartments wherever truncation is present.</li>
+<li><strong>Common failure to flag</strong></li>
+<li>Descriptor list without biological context — numbers with no statement of what they mean for identity.</li>
+<li>Classification from a single descriptor when the others disagree.</li>
+<li>Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="13" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">

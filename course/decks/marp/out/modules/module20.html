@@ -48,7 +48,7 @@
 <ul>
 <li><strong>Technical:</strong> null models should preserve relevant graph constraints (degree sequence, spatial limits, cell-class composition) while randomizing the tested structure.</li>
 <li><strong>Plain language:</strong> your &quot;chance baseline&quot; must reflect biology and data collection realities.</li>
-<li><strong>Misconception guardrail:</strong> a generic random graph is rarely an adequate connectomics null.</li>
+<li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="7" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
@@ -99,9 +99,9 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="misconceptions-to-watch">Misconceptions to Watch</h2>
 <ul>
-<li><strong>Misconception guardrail:</strong> a generic random graph is rarely an adequate connectomics null.</li>
-<li><strong>Misconception guardrail:</strong> reporting only p-values without multiplicity context is incomplete.</li>
-<li><strong>Misconception guardrail:</strong> post-hoc storytelling is not confirmatory inference.</li>
+<li><strong>Misconception guardrail:</strong> a generic random graph is an adequate null for a connectome.</li>
+<li><strong>Misconception guardrail:</strong> a small p-value speaks for itself, regardless of how many tests were run.</li>
+<li><strong>Misconception guardrail:</strong> a hypothesis found in the data can be confirmed by the same data.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="10" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
@@ -121,17 +121,19 @@
 <h2 id="assessment-rubric">Assessment Rubric</h2>
 <ul>
 <li><strong>Minimum pass</strong></li>
-<li>Null model is justified and constraints are explicit.</li>
-<li>Multiplicity handling is documented and applied.</li>
-<li>Claims are partitioned by confidence level.</li>
+<li>Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.</li>
+<li>Total test count — including tests run and not reported — is documented, and a named correction is applied against it.</li>
+<li>Claims are partitioned into exploratory and confirmatory blocks with different language in each.</li>
 <li><strong>Strong performance</strong></li>
-<li>Demonstrates sensitivity analysis against preprocessing and sampling choices.</li>
-<li>Reports effect sizes and uncertainty, not significance alone.</li>
-<li>Provides clear boundaries on generalization.</li>
+<li>Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.</li>
+<li>Effect sizes with uncertainty intervals appear alongside every significance statement.</li>
+<li>Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.</li>
+<li>Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.</li>
 <li><strong>Common failure modes</strong></li>
-<li>Null model choice disconnected from biological question.</li>
-<li>Selective reporting of significant outcomes.</li>
-<li>Conflation of exploratory signal with validated inference.</li>
+<li>Null model choice disconnected from the biological question.</li>
+<li>Selective reporting: significant outcomes shown, the full test count uncounted.</li>
+<li>Exploratory signal conflated with validated inference.</li>
+<li>Analytic p-values used where dependence between tests calls for permutation.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="13" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">

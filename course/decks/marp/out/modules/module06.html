@@ -108,9 +108,20 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="12" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">
 <h2 id="assessment-rubric">Assessment Rubric</h2>
 <ul>
-<li><strong>Minimum pass</strong>: Correct error labels and at least one valid correction with evidence.</li>
-<li><strong>Strong performance</strong>: Correction prioritization explicitly tied to downstream analysis impact. Metrics show measurable improvement.</li>
-<li><strong>Common failure to flag</strong>: Correction without evidence of quality change — fixing things without checking whether it helped.</li>
+<li><strong>Minimum pass</strong></li>
+<li>Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.</li>
+<li>At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.</li>
+<li>The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.</li>
+<li>Before/after quality indicators are computed for at least one correction, with the direction of change stated.</li>
+<li><strong>Strong performance</strong></li>
+<li>The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.</li>
+<li>Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.</li>
+<li>At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.</li>
+<li>The release note states what remains unexamined and what error types are still expected, not only what was fixed.</li>
+<li><strong>Common failure to flag</strong></li>
+<li>Correction without evidence of quality change — fixing things without checking whether it helped.</li>
+<li>Ranking by visual conspicuousness rather than by impact on the analysis.</li>
+<li>A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="default" lang="POSIX" data-marpit-pagination="13" style="--paginate:true;--theme:default;" data-marpit-pagination-total="15">

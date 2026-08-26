@@ -3,6 +3,8 @@ layout: page
 title: "03 EM Prep and Imaging"
 description: "The tissue-to-image-stack chain in practical detail: fixation and staining chemistry, sectioning, imaging parameters, and an artifact catalog mapped to downstream reconstruction cost."
 permalink: /technical-training/03-em-prep-and-imaging/
+image: /assets/images/units/03-em-prep-and-imaging.svg
+image_alt: "Stylized vector art: a specimen block, a ribbon of serial sections, and a beam scanning a circular field."
 slug: 03-em-prep-and-imaging
 track: core-concepts-methods
 pathways:

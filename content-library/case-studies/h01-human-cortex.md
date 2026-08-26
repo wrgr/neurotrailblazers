@@ -2,6 +2,8 @@
 layout: page
 title: "H01 Human Cortex Fragment"
 permalink: /content-library/case-studies/h01-human-cortex/
+image: /assets/images/content-library/case-studies/h01-human-cortex.svg
+image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
   A comprehensive case study of the H01 dataset — the first nanoscale connectomic
   reconstruction of human brain tissue, derived from a ~1 mm³ fragment of temporal

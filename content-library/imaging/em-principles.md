@@ -2,6 +2,8 @@
 layout: page
 title: "EM Principles"
 permalink: /content-library/imaging/em-principles/
+image: /assets/images/content-library/imaging/em-principles.svg
+image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
 description: "Electron microscopy physics, contrast mechanisms, and resolution limits as they apply to connectomics imaging. Full instructor script with references and worked examples."
 topics:
   - electron-microscopy

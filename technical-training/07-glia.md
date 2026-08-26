@@ -3,6 +3,8 @@ layout: page
 title: "07 Glia"
 description: "Recognizing astrocytes, oligodendrocytes, and microglia in EM, why glia-neuron boundary errors corrupt neuronal connectivity, and a drill-based protocol for getting them right."
 permalink: /technical-training/07-glia/
+image: /assets/images/units/07-glia.svg
+image_alt: "Stylized vector art: a star-shaped astrocyte extending an endfoot onto a capillary."
 slug: 07-glia
 track: core-concepts-methods
 pathways:

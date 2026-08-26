@@ -3,6 +3,8 @@ layout: page
 title: "04 Volume Reconstruction Infrastructure"
 description: "The systems that turn a petabyte of EM tiles into a queryable connectome: chunked storage, the alignment and segmentation pipeline, proofreading-safe versioning, and the materialization model that makes analysis reproducible."
 permalink: /technical-training/04-volume-reconstruction-infrastructure/
+image: /assets/images/units/04-volume-reconstruction-infrastructure.svg
+image_alt: "Stylized vector art: raw tiles aligning into a stack and flowing into a served data store."
 slug: 04-volume-reconstruction-infrastructure
 track: core-concepts-methods
 pathways:

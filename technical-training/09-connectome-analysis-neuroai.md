@@ -3,6 +3,8 @@ layout: page
 title: "09 Connectome Analysis and NeuroAI"
 description: "Turning a reconstruction into a defensible statistical claim: graph construction choices, null models that preserve the right nuisance structure, motif analysis under reconstruction error, and what connectomes do and do not give machine learning."
 permalink: /technical-training/09-connectome-analysis-neuroai/
+image: /assets/images/units/09-connectome-analysis-neuroai.svg
+image_alt: "Stylized vector art: an adjacency matrix becoming a graph with one motif highlighted."
 slug: 09-connectome-analysis-neuroai
 track: core-concepts-methods
 pathways:

@@ -2,6 +2,8 @@
 layout: page
 title: "Axon-Dendrite Classification"
 permalink: /content-library/cell-types/axon-dendrite-classification/
+image: /assets/images/content-library/cell-types/axon-dendrite-classification.svg
+image_alt: "Stylized vector art: three cell silhouettes: branched, star-form, and amoeboid."
 description: "Multi-cue strategy for distinguishing axons from dendrites in EM — morphology, organelles, synaptic role, continuity, and confidence scoring. Full instructor script with worked examples."
 topics:
   - axon

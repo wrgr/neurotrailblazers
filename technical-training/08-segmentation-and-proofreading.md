@@ -3,6 +3,8 @@ layout: page
 title: "08 Segmentation and Proofreading"
 description: "How automated segmentation fails, which metrics reveal which failure, and how to run proofreading as a prioritized, measured, budget-bounded operation rather than an open-ended cleanup."
 permalink: /technical-training/08-segmentation-and-proofreading/
+image: /assets/images/units/08-segmentation-and-proofreading.svg
+image_alt: "Stylized vector art: two segments meeting at a marked split, a dashed merge bridge, and a partly spent budget bar."
 slug: 08-segmentation-and-proofreading
 track: core-concepts-methods
 pathways:

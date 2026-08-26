@@ -2,6 +2,8 @@
 layout: page
 title: "Proofreading Worked Examples"
 permalink: /content-library/proofreading/worked-examples/
+image: /assets/images/content-library/proofreading/worked-examples.svg
+image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: "Five detailed step-by-step proofreading scenarios covering merge errors, split errors, false autapses, priority triage, and cross-annotator disagreement resolution in connectomics reconstruction."
 topics:
   - proofreading

@@ -3,6 +3,8 @@ layout: page
 title: "05 Neuronal Ultrastructure"
 description: "How to actually read an EM image: the organelle catalog with sizes, the minimum criteria for calling a synapse, Gray type I vs II, and a calibrated confidence protocol."
 permalink: /technical-training/05-neuronal-ultrastructure/
+image: /assets/images/units/05-neuronal-ultrastructure.svg
+image_alt: "Stylized vector art: the inside of a membrane profile: a mitochondrion, a vesicle cluster, and a postsynaptic density."
 slug: 05-neuronal-ultrastructure
 track: core-concepts-methods
 pathways:

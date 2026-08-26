@@ -57,6 +57,7 @@ content_type: navigation
       {% assign first_concept = concept_items | where: 'slug', first_concept_slug | first %}
       {% assign primary_need = item.user_needs | first %}
       <article class="card">
+        <img class="module-thumb" src="{{ '/assets/images/units/' | append: item.slug | append: '.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" width="1200" height="420">
         <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
         <p class="card-description">{{ item.summary | default: item.mapping_note }}</p>
         {% if item.user_needs %}

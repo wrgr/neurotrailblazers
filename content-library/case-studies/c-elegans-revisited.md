@@ -2,6 +2,8 @@
 layout: page
 title: "C. elegans Revisited"
 permalink: /content-library/case-studies/c-elegans-revisited/
+image: /assets/images/content-library/case-studies/c-elegans-revisited.svg
+image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
   A comprehensive case study tracing the history of the C. elegans connectome — from
   White et al. (1986) through modern re-analyses and developmental connectomics —

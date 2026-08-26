@@ -2,6 +2,8 @@
 layout: page
 title: "Motif Analysis"
 permalink: /content-library/connectomics/motif-analysis/
+image: /assets/images/content-library/connectomics/motif-analysis.svg
+image_alt: "Stylized vector art: a network graph with one community circled."
 description: "Network motif analysis for connectomics — defining motifs, null models, statistical testing, DotMotif queries, subgraph isomorphism, and interpretation. Full instructor script with worked examples."
 topics:
   - motifs

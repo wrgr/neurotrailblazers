@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="MICrONS Visual Cortex">
+<title>MICrONS Visual Cortex</title>
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0f172a"/>
+    <stop offset="1" stop-color="#111c33"/>
+  </linearGradient>
+  <radialGradient id="mist" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#1ABC9C" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#1ABC9C" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="mist2" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#06b6d4" stop-opacity="0.14"/>
+    <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="420" rx="0" fill="url(#ground)" stroke="none" stroke-width="0"/>
+<circle cx="176" cy="272" r="226" fill="url(#mist)"/>
+<circle cx="314" cy="174" r="142" fill="url(#mist)"/>
+<circle cx="1150" cy="28" r="131" fill="url(#mist)"/>
+<circle cx="553" cy="418" r="259" fill="url(#mist2)"/>
+<circle cx="225" cy="357" r="160" fill="url(#mist2)"/>
+<line x1="1095" y1="230" x2="1035" y2="67" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="1095" y1="230" x2="1018" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="1095" y1="230" x2="972" y2="376" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="637" y2="14" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="471" y2="277" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="428" y2="12" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="510" y2="248" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="364" y2="227" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="239" y2="118" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="523" y2="313" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="421" y1="99" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="1035" y1="67" x2="1018" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="1035" y1="67" x2="838" y2="170" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="637" y1="14" x2="428" y2="12" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="637" y1="14" x2="838" y2="170" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="637" y1="14" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="471" y1="277" x2="510" y2="248" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="471" y1="277" x2="364" y2="227" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="471" y1="277" x2="523" y2="313" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="471" y1="277" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="146" y1="324" x2="364" y2="227" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="146" y1="324" x2="239" y2="118" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="48" y1="73" x2="239" y2="118" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="428" y1="12" x2="510" y2="248" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="428" y1="12" x2="364" y2="227" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="428" y1="12" x2="239" y2="118" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="428" y1="12" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="510" y1="248" x2="364" y2="227" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="510" y1="248" x2="523" y2="313" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="510" y1="248" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="364" y1="227" x2="239" y2="118" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="364" y1="227" x2="523" y2="313" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="1018" y1="45" x2="838" y2="170" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="523" y1="313" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="838" y1="170" x2="629" y2="77" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<line x1="838" y1="170" x2="972" y2="376" stroke="#e2e8f0" stroke-width="1" stroke-linecap="round" opacity="0.07"/>
+<circle cx="1095" cy="230" r="3.02" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="421" cy="99" r="2.86" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="1035" cy="67" r="2.23" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="637" cy="14" r="3.61" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="471" cy="277" r="3.4" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="146" cy="324" r="3.72" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="48" cy="73" r="3.33" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="428" cy="12" r="3.78" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="510" cy="248" r="2.89" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="364" cy="227" r="2.87" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="239" cy="118" r="2.71" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="1018" cy="45" r="3.35" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="523" cy="313" r="2.7" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="838" cy="170" r="2.85" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="629" cy="77" r="3.75" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="972" cy="376" r="3.67" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.28"/>
+<circle cx="520.0" cy="210.0" r="110" fill="none" stroke="#1ABC9C" stroke-width="4" opacity="0.9"/>
+<circle cx="520.0" cy="210.0" r="110" fill="#1ABC9C" stroke="none" stroke-width="0" opacity="0.08"/>
+<circle cx="558.63" cy="280.06" r="6" fill="#e2e8f0" stroke="none" stroke-width="0" opacity="0.85"/>
+<circle cx="552.3" cy="173.16" r="6" fill="#e2e8f0" stroke="none" stroke-width="0" opacity="0.85"/>
+<circle cx="547.09" cy="259.01" r="6" fill="#e2e8f0" stroke="none" stroke-width="0" opacity="0.85"/>
+<circle cx="489.52" cy="215.64" r="6" fill="#e2e8f0" stroke="none" stroke-width="0" opacity="0.85"/>
+<circle cx="462.97" cy="169.41" r="6" fill="#e2e8f0" stroke="none" stroke-width="0" opacity="0.85"/>
+<circle cx="516.0" cy="195.0" r="12" fill="none" stroke="#06b6d4" stroke-width="3" opacity="0.95"/>
+<line x1="690.0" y1="156.0" x2="785.0" y2="156.0" stroke="#1ABC9C" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+<line x1="690.0" y1="192.0" x2="812.0" y2="192.0" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+<line x1="690.0" y1="228.0" x2="788.0" y2="228.0" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+<line x1="690.0" y1="264.0" x2="767.0" y2="264.0" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+</svg>

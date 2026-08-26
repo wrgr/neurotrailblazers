@@ -2,6 +2,8 @@
 layout: page
 title: "Error Taxonomy in Connectome Proofreading"
 permalink: /content-library/proofreading/error-taxonomy/
+image: /assets/images/content-library/proofreading/error-taxonomy.svg
+image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: >
   A comprehensive reference on the types of errors found in automated neural
   segmentation, their causes, downstream consequences, visual signatures, and

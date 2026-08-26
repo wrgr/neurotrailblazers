@@ -3,6 +3,8 @@ layout: page
 title: "Atlas: Connectomics Reference"
 description: "A working reference for the technical track: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
 permalink: /technical-training/atlas-connectomics-reference/
+image: /assets/images/units/atlas-connectomics-reference.svg
+image_alt: "Stylized vector art: a reference table with one row highlighted and a bookmark tab."
 slug: atlas-connectomics-reference
 track: core-concepts-methods
 pathways:

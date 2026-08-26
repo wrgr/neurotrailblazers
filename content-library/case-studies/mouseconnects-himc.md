@@ -2,6 +2,8 @@
 layout: page
 title: "MouseConnects and HI-MC"
 permalink: /content-library/case-studies/mouseconnects-himc/
+image: /assets/images/content-library/case-studies/mouseconnects-himc.svg
+image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
   A comprehensive case study of the MouseConnects project and HI-MC (the Center for
   High-throughput Integrative Mouse Connectomics) — an NIH BRAIN CONNECTS-funded effort to map the

@@ -2,6 +2,8 @@
 layout: page
 title: "Provenance and Versioning"
 permalink: /content-library/infrastructure/provenance-and-versioning/
+image: /assets/images/content-library/infrastructure/provenance-and-versioning.svg
+image_alt: "Stylized vector art: pipeline stages running above a chunk grid."
 description: "Data lineage, version control, and reproducibility infrastructure for connectomics — CAVE materialization, pipeline provenance, and best practices for traceable science."
 topics:
   - provenance

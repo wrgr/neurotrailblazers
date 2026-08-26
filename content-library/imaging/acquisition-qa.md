@@ -2,6 +2,8 @@
 layout: page
 title: "Acquisition QA"
 permalink: /content-library/imaging/acquisition-qa/
+image: /assets/images/content-library/imaging/acquisition-qa.svg
+image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
 description: "Quality assurance gates for connectomics EM acquisition — per-tile monitoring, pilot reconstructions, metadata requirements, and go/no-go criteria."
 topics:
   - quality-assurance

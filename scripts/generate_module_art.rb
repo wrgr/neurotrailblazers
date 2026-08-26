@@ -11,6 +11,7 @@
 # Do not hand-edit the SVGs; edit the motif here and re-run.
 
 require "yaml"
+require "date"
 require "pathname"
 
 ROOT = Pathname.new(__dir__).parent
@@ -628,32 +629,451 @@ end
 
 # --- assembly ----------------------------------------------------------------
 
-modules = YAML.load_file(ROOT.join("_data/modules.yml"))
-abort "expected 25 modules, got #{modules.size}" unless modules.size == 25
+def xml_escape(text)
+  text.gsub("&", "&amp;").gsub("<", "&lt;").gsub(">", "&gt;")
+end
 
-OUT_DIR.mkpath
-
-modules.each do |mod|
-  n = mod["number"]
-  stage = mod["stage"]
-  accent = STAGE_ACCENT.fetch(stage)
-  motif = MOTIFS.fetch(n)
-
+def render_banner(out_path, seed:, accent:, label:, motif:)
   svg = Svg.new
-  rng = Random.new(n * 7919)
+  rng = Random.new(seed)
   ground(svg, rng, accent)
   motif.call(svg, rng, accent)
 
-  title = mod["title"].gsub("&", "&amp;").gsub("<", "&lt;").gsub(">", "&gt;")
+  label = xml_escape(label)
   content = <<~SVG
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{W} #{H}" role="img" aria-label="Module #{format('%02d', n)}: #{title}">
-    <title>Module #{format('%02d', n)}: #{title}</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{W} #{H}" role="img" aria-label="#{label}">
+    <title>#{label}</title>
     #{defs(accent)}
     #{svg}
     </svg>
   SVG
+  out_path.dirname.mkpath
+  out_path.write(content)
+end
 
-  OUT_DIR.join(format("module%02d.svg", n)).write(content)
+modules = YAML.load_file(ROOT.join("_data/modules.yml"))
+abort "expected 25 modules, got #{modules.size}" unless modules.size == 25
+
+modules.each do |mod|
+  n = mod["number"]
+  render_banner(OUT_DIR.join(format("module%02d.svg", n)),
+                seed: n * 7919,
+                accent: STAGE_ACCENT.fetch(mod["stage"]),
+                label: "Module #{format('%02d', n)}: #{mod['title']}",
+                motif: MOTIFS.fetch(n))
 end
 
 puts "Generated #{modules.size} module art SVGs in #{OUT_DIR.relative_path_from(ROOT)}/"
+
+# --- technical unit banners --------------------------------------------------
+# Same visual system, one bespoke motif per unit, accent keyed to the unit's
+# subject matter (imaging violet, proofreading red, glia green, ...).
+
+UNIT_OUT = ROOT.join("assets/images/units")
+
+UNIT_MOTIFS = {}
+
+# 01 Why map the brain: an unresolved point cloud crossing a frontier into a crisp graph.
+UNIT_MOTIFS["01-why-map-the-brain"] = lambda do |svg, rng, accent|
+  26.times do
+    svg.circle(CX - 280 + rng.rand(240), CY - 120 + rng.rand(240), 2.5 + rng.rand * 3,
+               fill: INK, opacity: 0.18 + rng.rand * 0.25)
+  end
+  svg.line(CX - 10, CY - 150, CX - 10, CY + 150, stroke: accent, sw: 3, opacity: 0.7, dash: "10 8")
+  nodes = Array.new(8) { [CX + 40 + rng.rand(240), CY - 110 + rng.rand(220)] }
+  nodes.combination(2) do |(a, b)|
+    next if (a[0] - b[0]).abs + (a[1] - b[1]).abs > 260 || rng.rand > 0.55
+    svg.line(a[0], a[1], b[0], b[1], stroke: accent, sw: 2.2, opacity: 0.7)
+  end
+  nodes.each { |(x, y)| svg.circle(x, y, 6, fill: INK, opacity: 0.9) }
+  arrow(svg, CX - 70, CY, CX + 30, CY, accent, sw: 3.5)
+end
+
+# 02 Brain data across scales: nested zoom frames, brain to circuit to vesicles.
+UNIT_MOTIFS["02-brain-data-across-scales"] = lambda do |svg, rng, accent|
+  svg.rect(CX - 290, CY - 130, 260, 260, rx: 16, stroke: INK, sw: 3, opacity: 0.8)
+  svg.path("M #{CX - 250} #{CY + 40} C #{CX - 260} #{CY - 60}, #{CX - 130} #{CY - 90}, #{CX - 110} #{CY - 10}
+            C #{CX - 100} #{CY + 60}, #{CX - 220} #{CY + 90}, #{CX - 250} #{CY + 40}",
+           stroke: accent, sw: 3.5, opacity: 0.85)
+  svg.rect(CX - 40, CY - 88, 176, 176, rx: 12, stroke: INK, sw: 3, opacity: 0.8)
+  tri = [[CX + 4, CY - 40], [CX + 92, CY - 10], [CX + 30, CY + 52]]
+  tri.combination(2) { |(a, b)| svg.line(a[0], a[1], b[0], b[1], stroke: accent, sw: 2.5, opacity: 0.85) }
+  tri.each { |(x, y)| svg.circle(x, y, 6, fill: accent) }
+  svg.rect(CX + 180, CY - 58, 116, 116, rx: 10, stroke: INK, sw: 3, opacity: 0.8)
+  6.times { svg.circle(CX + 205 + rng.rand(66), CY - 34 + rng.rand(66), 7, stroke: accent, sw: 2.5, opacity: 0.9) }
+  svg.line(CX - 30, CY - 130 + 32, CX - 40, CY - 88 + 20, stroke: INK, sw: 2, opacity: 0.5)
+  svg.line(CX + 136, CY - 60, CX + 180, CY - 45, stroke: INK, sw: 2, opacity: 0.5)
+end
+
+# 03 EM prep and imaging: specimen block, section ribbon, beam onto a field.
+UNIT_MOTIFS["03-em-prep-and-imaging"] = lambda do |svg, rng, accent|
+  svg.poly([[CX - 290, CY - 40], [CX - 210, CY - 70], [CX - 150, CY - 40], [CX - 230, CY - 10]],
+           fill: accent, opacity: 0.35)
+  svg.poly([[CX - 290, CY - 40], [CX - 230, CY - 10], [CX - 230, CY + 60], [CX - 290, CY + 30]],
+           fill: accent, opacity: 0.6)
+  svg.poly([[CX - 230, CY - 10], [CX - 150, CY - 40], [CX - 150, CY + 30], [CX - 230, CY + 60]],
+           fill: accent, opacity: 0.45)
+  d = "M #{CX - 130} #{CY + 30}"
+  6.times { |i| d += " q 25 #{i.even? ? -34 : 34} 50 0" }
+  svg.path(d, stroke: INK, sw: 3, opacity: 0.75)
+  5.times { |i| svg.rect(CX - 118 + i * 50, CY + 6, 26, 18, rx: 2, stroke: INK, sw: 2, opacity: 0.6) }
+  svg.poly([[CX + 235, CY - 170], [CX + 195, CY - 60], [CX + 275, CY - 60]], fill: CYAN, opacity: 0.3)
+  svg.circle(CX + 235, CY + 30, 88, stroke: CYAN, sw: 3, opacity: 0.9)
+  5.times do |i|
+    y = CY - 20 + i * 24
+    half = Math.sqrt([88**2 - (y - (CY + 30))**2, 0].max)
+    svg.line(CX + 235 - half + 6, y, CX + 235 + half - 6, y, stroke: INK, sw: 1.5, opacity: 0.4)
+  end
+end
+
+# 04 Volume reconstruction infrastructure: tiles, aligned stack, served store.
+UNIT_MOTIFS["04-volume-reconstruction-infrastructure"] = lambda do |svg, rng, accent|
+  3.times do |r|
+    3.times do |c|
+      svg.rect(CX - 290 + c * 52, CY - 80 + r * 52, 46, 46, rx: 4, stroke: INK, sw: 2, opacity: 0.55)
+    end
+  end
+  4.times do |i|
+    svg.rect(CX - 80 + i * 7, CY - 74 + i * 12, 130, 26, rx: 5, stroke: accent, sw: 2.5, opacity: 0.85 - i * 0.12)
+  end
+  arrow(svg, CX - 120, CY, CX - 92, CY, INK, sw: 2.5, opacity: 0.6)
+  cyl_x = CX + 190
+  svg << %(<ellipse cx="#{cyl_x}" cy="#{CY - 60}" rx="72" ry="20" fill="none" stroke="#{accent}" stroke-width="3" opacity="0.9"/>)
+  svg.line(cyl_x - 72, CY - 60, cyl_x - 72, CY + 60, stroke: accent, sw: 3, opacity: 0.9)
+  svg.line(cyl_x + 72, CY - 60, cyl_x + 72, CY + 60, stroke: accent, sw: 3, opacity: 0.9)
+  svg << %(<path d="M #{cyl_x - 72} #{CY + 60} A 72 20 0 0 0 #{cyl_x + 72} #{CY + 60}" fill="none" stroke="#{accent}" stroke-width="3" opacity="0.9"/>)
+  2.times do |i|
+    svg << %(<path d="M #{cyl_x - 72} #{CY - 20 + i * 40} A 72 20 0 0 0 #{cyl_x + 72} #{CY - 20 + i * 40}" fill="none" stroke="#{accent}" stroke-width="2" opacity="0.5"/>)
+  end
+  arrow(svg, CX + 78, CY, CX + 108, CY, INK, sw: 2.5, opacity: 0.6)
+  svg.line(cyl_x, CY + 84, cyl_x, CY + 120, stroke: CYAN, sw: 3, opacity: 0.8)
+  [[-60, 0], [0, 0], [60, 0]].each do |(dx, _)|
+    svg.line(cyl_x, CY + 120, cyl_x + dx, CY + 150, stroke: CYAN, sw: 2.5, opacity: 0.7)
+    svg.circle(cyl_x + dx, CY + 154, 4.5, fill: CYAN)
+  end
+end
+
+# 05 Neuronal ultrastructure: inside a membrane profile - mitochondrion, vesicles, PSD.
+UNIT_MOTIFS["05-neuronal-ultrastructure"] = lambda do |svg, rng, accent|
+  svg.path("M #{CX - 290} #{CY - 120} C #{CX - 80} #{CY - 190}, #{CX + 200} #{CY - 150}, #{CX + 280} #{CY - 30}
+            C #{CX + 320} #{CY + 60}, #{CX + 120} #{CY + 160}, #{CX - 90} #{CY + 140}
+            C #{CX - 260} #{CY + 120}, #{CX - 340} #{CY - 30}, #{CX - 290} #{CY - 120}",
+           stroke: accent, sw: 4, opacity: 0.9)
+  svg << %(<ellipse cx="#{CX - 130}" cy="#{CY - 20}" rx="72" ry="38" fill="none" stroke="#{CYAN}" stroke-width="3" opacity="0.9" transform="rotate(-18 #{CX - 130} #{CY - 20})"/>)
+  4.times do |i|
+    svg.line(CX - 180 + i * 26, CY - 48 + i * 8, CX - 168 + i * 26, CY + 4 + i * 8, stroke: CYAN, sw: 2, opacity: 0.7)
+  end
+  10.times { svg.circle(CX + 60 + rng.rand(110), CY - 70 + rng.rand(90), 8, stroke: INK, sw: 2.2, opacity: 0.85) }
+  svg.line(CX + 40, CY + 88, CX + 210, CY + 74, stroke: accent, sw: 10, opacity: 0.9)
+  svg.line(CX + 40, CY + 108, CX + 210, CY + 94, stroke: INK, sw: 2, opacity: 0.5)
+  svg.circle(CX - 40, CY + 70, 13, stroke: INK, sw: 2.2, opacity: 0.6)
+  svg.circle(CX - 78, CY + 88, 9, stroke: INK, sw: 2.2, opacity: 0.6)
+end
+
+# 06 Axons and dendrites: spiny process vs beaded process, decision node between.
+UNIT_MOTIFS["06-axons-and-dendrites"] = lambda do |svg, rng, accent|
+  d1 = "M #{CX - 290} #{CY - 70} C #{CX - 130} #{CY - 110}, #{CX + 90} #{CY - 50}, #{CX + 290} #{CY - 90}"
+  svg.path(d1, stroke: accent, sw: 6, opacity: 0.9)
+  9.times do |i|
+    t = 0.08 + i * 0.105
+    x = CX - 290 + 580 * t
+    y = CY - 70 - 32 * Math.sin(t * 3.1) - 8
+    svg.line(x, y + 4, x + 4, y - 16, stroke: accent, sw: 2.5, opacity: 0.85)
+    svg.circle(x + 5, y - 21, 5.5, fill: accent, opacity: 0.9)
+  end
+  d2 = "M #{CX - 290} #{CY + 80} C #{CX - 100} #{CY + 50}, #{CX + 80} #{CY + 110}, #{CX + 290} #{CY + 70}"
+  svg.path(d2, stroke: CYAN, sw: 3.5, opacity: 0.9)
+  [0.18, 0.42, 0.66, 0.88].each do |t|
+    x = CX - 290 + 580 * t
+    y = CY + 80 - 26 * Math.sin(t * 2.8) + 10 * t
+    svg.circle(x, y - 3 * t, 11, fill: CYAN, opacity: 0.45)
+    svg.circle(x, y - 3 * t, 11, stroke: CYAN, sw: 2.5, opacity: 0.9)
+  end
+  svg.circle(CX, CY, 15, stroke: INK, sw: 3, opacity: 0.9)
+  svg.line(CX, CY - 15, CX, CY - 40, stroke: INK, sw: 2.5, opacity: 0.7)
+  svg.line(CX, CY + 15, CX, CY + 40, stroke: INK, sw: 2.5, opacity: 0.7)
+end
+
+# 07 Glia: a star-form astrocyte with an endfoot wrapping a capillary.
+UNIT_MOTIFS["07-glia"] = lambda do |svg, rng, accent|
+  soma(svg, CX - 60, CY - 20, 34, accent)
+  8.times do |i|
+    a = i * Math::PI / 4 + 0.2
+    branch(svg, Random.new(70 + i), CX - 60 + 36 * Math.cos(a), CY - 20 + 36 * Math.sin(a), a, 52, 3, accent)
+  end
+  svg.line(CX + 120, CY - 150, CX + 200, CY + 150, stroke: INK, sw: 26, opacity: 0.25, cap: "butt")
+  svg.line(CX + 120, CY - 150, CX + 200, CY + 150, stroke: INK, sw: 26, opacity: 0.0, cap: "butt")
+  svg.line(CX + 113, CY - 150, CX + 193, CY + 150, stroke: INK, sw: 3, opacity: 0.7)
+  svg.line(CX + 133, CY - 150, CX + 213, CY + 150, stroke: INK, sw: 3, opacity: 0.7)
+  svg.path("M #{CX + 26} #{CY - 6} C #{CX + 90} #{CY - 20}, #{CX + 118} #{CY - 26}, #{CX + 142} #{CY - 2}
+            C #{CX + 150} #{CY + 16}, #{CX + 120} #{CY + 30}, #{CX + 104} #{CY + 16}",
+           stroke: accent, sw: 4, opacity: 0.95)
+  5.times { svg.circle(CX - 80 + rng.rand(60), CY - 50 + rng.rand(60), 3, fill: accent, opacity: 0.8) }
+end
+
+# 08 Segmentation and proofreading: two segments, a split cut, a merge bridge, a budget bar.
+UNIT_MOTIFS["08-segmentation-and-proofreading"] = lambda do |svg, rng, accent|
+  svg.path("M #{CX - 280} #{CY - 40} C #{CX - 180} #{CY - 100}, #{CX - 60} #{CY - 20}, #{CX + 30} #{CY - 60}",
+           stroke: CYAN, sw: 14, opacity: 0.55)
+  svg.path("M #{CX + 30} #{CY - 60} C #{CX + 120} #{CY - 100}, #{CX + 210} #{CY - 40}, #{CX + 285} #{CY - 70}",
+           stroke: accent, sw: 14, opacity: 0.55)
+  svg.line(CX + 22, CY - 100, CX + 42, CY - 22, stroke: INK, sw: 3.5, opacity: 0.95, dash: "8 6")
+  svg.path("M #{CX - 150} #{CY - 62} C #{CX - 130} #{CY - 110}, #{CX - 60} #{CY - 110}, #{CX - 30} #{CY - 66}",
+           stroke: accent, sw: 3, opacity: 0.8, dash: "3 6")
+  svg.circle(CX - 90, CY - 96, 10, stroke: accent, sw: 3, opacity: 0.95)
+  svg.line(CX - 97, CY - 103, CX - 83, CY - 89, stroke: accent, sw: 3, opacity: 0.95)
+  svg.rect(CX - 200, CY + 70, 400, 26, rx: 13, stroke: INK, sw: 2.5, opacity: 0.7)
+  svg.rect(CX - 200, CY + 70, 250, 26, rx: 13, fill: accent, opacity: 0.75)
+  svg.line(CX + 50, CY + 58, CX + 50, CY + 108, stroke: INK, sw: 2.5, opacity: 0.9)
+end
+
+# 09 Connectome analysis and NeuroAI: adjacency matrix becoming a motif graph.
+UNIT_MOTIFS["09-connectome-analysis-neuroai"] = lambda do |svg, rng, accent|
+  6.times do |r|
+    6.times do |c|
+      x = CX - 280 + c * 36
+      y = CY - 108 + r * 36
+      filled = rng.rand < 0.3
+      svg.rect(x, y, 32, 32, rx: 3,
+               fill: filled ? accent : "none",
+               stroke: INK, sw: 1.4,
+               opacity: filled ? 0.6 : 0.3)
+    end
+  end
+  arrow(svg, CX - 30, CY, CX + 40, CY, INK, sw: 3, opacity: 0.7)
+  nodes = [[CX + 120, CY - 80], [CX + 230, CY - 60], [CX + 180, CY + 20], [CX + 100, CY + 60], [CX + 260, CY + 70]]
+  [[0, 1], [1, 2], [0, 2], [2, 3], [2, 4], [3, 4]].each_with_index do |(a, b), i|
+    hot = i < 3
+    svg.line(nodes[a][0], nodes[a][1], nodes[b][0], nodes[b][1],
+             stroke: hot ? accent : INK, sw: hot ? 4 : 2, opacity: hot ? 0.95 : 0.45)
+  end
+  nodes.each_with_index do |(x, y), i|
+    hot = i < 3
+    svg.circle(x, y, hot ? 9 : 6, fill: hot ? accent : INK, opacity: hot ? 1 : 0.6)
+  end
+end
+
+# Atlas: a reference table with one row found, and a bookmark tab.
+UNIT_MOTIFS["atlas-connectomics-reference"] = lambda do |svg, rng, accent|
+  svg.rect(CX - 240, CY - 130, 480, 260, rx: 12, stroke: INK, sw: 3, opacity: 0.8)
+  svg.line(CX - 240, CY - 84, CX + 240, CY - 84, stroke: INK, sw: 2.5, opacity: 0.7)
+  [-100, 30, 160].each { |dx| svg.line(CX + dx, CY - 130, CX + dx, CY + 130, stroke: INK, sw: 1.5, opacity: 0.35) }
+  [-40, 4, 48, 92].each do |dy|
+    svg.line(CX - 240, CY + dy, CX + 240, CY + dy, stroke: INK, sw: 1.2, opacity: 0.25)
+  end
+  svg.rect(CX - 240, CY - 40, 480, 44, fill: accent, opacity: 0.3)
+  svg.rect(CX - 240, CY - 40, 480, 44, stroke: accent, sw: 2.5, opacity: 0.9)
+  svg.poly([[CX + 190, CY - 130], [CX + 222, CY - 130], [CX + 222, CY - 74], [CX + 206, CY - 90], [CX + 190, CY - 74]],
+           fill: CYAN, opacity: 0.85)
+  [[-220, -110], [-80, 50], [50, 180]].each_with_index do |(x1, x2), i|
+    svg.line(CX + x1, CY - 18 - i * 0, CX + x2, CY - 18, stroke: INK, sw: 4, opacity: 0.7) if i.zero?
+  end
+end
+
+UNITS = [
+  ["01-why-map-the-brain", "Why Map the Brain", "#f59e0b",
+   "an unresolved point cloud crossing a frontier line into a crisp measured graph"],
+  ["02-brain-data-across-scales", "Brain Data Across Scales", "#2563eb",
+   "three nested zoom frames, from brain outline to circuit to vesicles"],
+  ["03-em-prep-and-imaging", "EM Prep and Imaging", "#7B68EE",
+   "a specimen block, a ribbon of serial sections, and a beam scanning a circular field"],
+  ["04-volume-reconstruction-infrastructure", "Volume Reconstruction Infrastructure", "#E67E22",
+   "raw tiles aligning into a stack and flowing into a served data store"],
+  ["05-neuronal-ultrastructure", "Neuronal Ultrastructure", "#4A90D9",
+   "the inside of a membrane profile: a mitochondrion, a vesicle cluster, and a postsynaptic density"],
+  ["06-axons-and-dendrites", "Axons and Dendrites", "#06b6d4",
+   "a spiny process above and a beaded process below, with a decision node between them"],
+  ["07-glia", "Glia", "#27AE60",
+   "a star-shaped astrocyte extending an endfoot onto a capillary"],
+  ["08-segmentation-and-proofreading", "Segmentation and Proofreading", "#E74C3C",
+   "two segments meeting at a marked split, a dashed merge bridge, and a partly spent budget bar"],
+  ["09-connectome-analysis-neuroai", "Connectome Analysis and NeuroAI", "#9B59B6",
+   "an adjacency matrix becoming a graph with one motif highlighted"],
+  ["atlas-connectomics-reference", "Atlas and Connectomics Reference", "#95A5A6",
+   "a reference table with one row highlighted and a bookmark tab"],
+].freeze
+
+UNITS.each_with_index do |(slug, title, accent, _alt), i|
+  render_banner(UNIT_OUT.join("#{slug}.svg"),
+                seed: 104_729 + i * 7919,
+                accent: accent,
+                label: "Unit: #{title}",
+                motif: UNIT_MOTIFS.fetch(slug))
+end
+
+puts "Generated #{UNITS.size} unit art SVGs in #{UNIT_OUT.relative_path_from(ROOT)}/"
+
+# --- content-library banners -------------------------------------------------
+# One banner per narrative entry. Entries share a motif family per section
+# (accent = the section's tag-dimension color from the library index), with
+# per-entry seeded variation in arrangement.
+
+LIB_OUT = ROOT.join("assets/images/content-library")
+
+FAMILY = {}
+
+# Neuroanatomy: organelle profiles inside a curved membrane section.
+FAMILY["neuroanatomy"] = lambda do |svg, rng, accent|
+  svg.path("M #{CX - 300} #{CY - 100 - rng.rand(40)} C #{CX - 100} #{CY - 180}, #{CX + 180} #{CY - 140}, #{CX + 290} #{CY - 20}
+            C #{CX + 330} #{CY + 70}, #{CX + 100} #{CY + 160}, #{CX - 110} #{CY + 130}
+            C #{CX - 280} #{CY + 110}, #{CX - 350} #{CY - 20}, #{CX - 300} #{CY - 100}",
+           stroke: accent, sw: 4, opacity: 0.9)
+  (3 + rng.rand(2)).times do
+    x = CX - 180 + rng.rand(340)
+    y = CY - 70 + rng.rand(150)
+    rot = rng.rand(360)
+    rx = 30 + rng.rand(34)
+    svg << %(<ellipse cx="#{x}" cy="#{y}" rx="#{rx}" ry="#{(rx * 0.55).round}" fill="none" stroke="#{CYAN}" stroke-width="2.6" opacity="0.85" transform="rotate(#{rot} #{x} #{y})"/>)
+  end
+  (6 + rng.rand(5)).times do
+    svg.circle(CX - 160 + rng.rand(340), CY - 70 + rng.rand(150), 6 + rng.rand * 3, stroke: INK, sw: 2, opacity: 0.7)
+  end
+end
+
+# Proofreading: a traced process with marked error sites.
+FAMILY["proofreading"] = lambda do |svg, rng, accent|
+  y0 = CY - 40 + rng.rand(60)
+  d = "M #{CX - 300} #{y0}"
+  x = CX - 300
+  y = y0
+  5.times do
+    x2 = x + 100 + rng.rand(60)
+    y2 = CY - 90 + rng.rand(180)
+    d += " C #{x + 50} #{y}, #{x2 - 50} #{y2}, #{x2} #{y2}"
+    x = x2
+    y = y2
+  end
+  svg.path(d, stroke: CYAN, sw: 5, opacity: 0.8)
+  (2 + rng.rand(2)).times do
+    mx = CX - 180 + rng.rand(360)
+    my = CY - 70 + rng.rand(140)
+    if rng.rand < 0.5
+      svg.line(mx - 12, my - 12, mx + 12, my + 12, stroke: accent, sw: 4, opacity: 0.95)
+      svg.line(mx - 12, my + 12, mx + 12, my - 12, stroke: accent, sw: 4, opacity: 0.95)
+    else
+      svg.circle(mx, my, 15, stroke: accent, sw: 3.5, opacity: 0.95)
+      svg.line(mx, my - 15, mx, my - 34, stroke: accent, sw: 3, opacity: 0.8)
+    end
+  end
+  svg.circle(CX + 210, CY + 70, 44, stroke: accent, sw: 4, opacity: 0.9)
+  svg.line(CX + 242, CY + 102, CX + 280, CY + 140, stroke: accent, sw: 7, opacity: 0.9)
+end
+
+# Connectomics: a graph with a community hull.
+FAMILY["connectomics"] = lambda do |svg, rng, accent|
+  nodes = Array.new(10 + rng.rand(4)) { [CX - 250 + rng.rand(500), CY - 120 + rng.rand(240)] }
+  nodes.combination(2) do |(a, b)|
+    next if (a[0] - b[0]).abs + (a[1] - b[1]).abs > 280 || rng.rand > 0.5
+    svg.line(a[0], a[1], b[0], b[1], stroke: INK, sw: 1.8, opacity: 0.35)
+  end
+  hull = nodes.sample(3, random: rng)
+  cxh = hull.sum { |p| p[0] } / 3.0
+  cyh = hull.sum { |p| p[1] } / 3.0
+  svg.circle(cxh, cyh, 78, stroke: accent, sw: 3, opacity: 0.55, dash: "6 8")
+  hull.combination(2) { |(a, b)| svg.line(a[0], a[1], b[0], b[1], stroke: accent, sw: 3.5, opacity: 0.95) }
+  nodes.each { |(x, y)| svg.circle(x, y, 5.5, fill: INK, opacity: 0.7) }
+  hull.each { |(x, y)| svg.circle(x, y, 8.5, fill: accent) }
+end
+
+# Imaging: a raster field with artifact marks.
+FAMILY["imaging"] = lambda do |svg, rng, accent|
+  svg.rect(CX - 260, CY - 130, 520, 260, rx: 12, stroke: INK, sw: 3, opacity: 0.75)
+  10.times do |i|
+    svg.line(CX - 240, CY - 108 + i * 24, CX + 240, CY - 108 + i * 24, stroke: INK, sw: 1.4, opacity: 0.3)
+  end
+  (2 + rng.rand(2)).times do
+    svg.circle(CX - 180 + rng.rand(360), CY - 80 + rng.rand(160), 18 + rng.rand(22), stroke: CYAN, sw: 2.5, opacity: 0.8)
+  end
+  fold_x = CX - 120 + rng.rand(240)
+  svg.path("M #{fold_x} #{CY - 130} C #{fold_x + 24} #{CY - 40}, #{fold_x - 24} #{CY + 40}, #{fold_x} #{CY + 130}",
+           stroke: accent, sw: 4, opacity: 0.9)
+  svg.circle(CX - 200 + rng.rand(400), CY - 90 + rng.rand(180), 9, fill: accent, opacity: 0.7)
+end
+
+# Infrastructure: pipeline stages over a chunk grid.
+FAMILY["infrastructure"] = lambda do |svg, rng, accent|
+  n = 4
+  xs = Array.new(n) { |i| CX - 240 + i * 160 }
+  xs.each_cons(2) { |a, b| arrow(svg, a + 44, CY - 30, b - 44, CY - 30, accent, sw: 3) }
+  xs.each do |x|
+    svg.rect(x - 44, CY - 74, 88, 88, rx: 12, stroke: INK, sw: 3, opacity: 0.85)
+    svg.rect(x - 44, CY - 74, 88, 88, rx: 12, fill: accent, opacity: 0.1)
+  end
+  hot = rng.rand(n)
+  svg.rect(xs[hot] - 44, CY - 74, 88, 88, rx: 12, stroke: accent, sw: 3.5, opacity: 0.95)
+  8.times do |i|
+    svg.rect(CX - 180 + i * 46, CY + 70, 40, 34, rx: 4, stroke: INK, sw: 1.6, opacity: 0.3 + (i == hot * 2 ? 0.4 : 0))
+  end
+end
+
+# Cell types: three distinct cell silhouettes in a row.
+FAMILY["cell-types"] = lambda do |svg, rng, accent|
+  soma(svg, CX - 180, CY, 34, accent)
+  branch(svg, rng, CX - 196, CY - 28, -1.7, 62, 4, accent)
+  branch(svg, rng, CX - 156, CY - 22, -0.6, 56, 4, accent)
+  soma(svg, CX + 10, CY + 10, 26, CYAN, opacity: 0.9)
+  6.times do |i|
+    a = i * Math::PI / 3 + 0.3
+    branch(svg, Random.new(200 + i), CX + 10 + 28 * Math.cos(a), CY + 10 + 28 * Math.sin(a), a, 40, 2, CYAN)
+  end
+  svg.circle(CX + 200, CY - 6, 24, fill: INK, opacity: 0.5)
+  svg.circle(CX + 200, CY - 6, 30, stroke: INK, sw: 3, opacity: 0.85)
+  [[-1, 1], [1, 1], [0, -1.3]].each do |(sx, sy)|
+    svg.path("M #{CX + 200 + sx * 24} #{CY - 6 + sy * 18} q #{sx * 30} #{sy * 22} #{sx * 44} #{sy * 52}",
+             stroke: INK, sw: 3, opacity: 0.75)
+  end
+end
+
+# Case studies: a specimen ring with landmark points and a data band.
+FAMILY["case-studies"] = lambda do |svg, rng, accent|
+  svg.circle(CX - 80, CY, 110, stroke: accent, sw: 4, opacity: 0.9)
+  svg.circle(CX - 80, CY, 110, fill: accent, opacity: 0.08)
+  (3 + rng.rand(3)).times do
+    a = rng.rand * Math::PI * 2
+    r = 30 + rng.rand(70)
+    svg.circle(CX - 80 + r * Math.cos(a), CY + r * Math.sin(a), 6, fill: INK, opacity: 0.85)
+  end
+  svg.circle(CX - 80 + rng.rand(60) - 30, CY + rng.rand(60) - 30, 12, stroke: CYAN, sw: 3, opacity: 0.95)
+  4.times do |i|
+    w = 60 + rng.rand(120)
+    svg.line(CX + 90, CY - 54 + i * 36, CX + 90 + w, CY - 54 + i * 36, stroke: i.zero? ? accent : INK, sw: 7, opacity: i.zero? ? 0.9 : 0.45)
+  end
+end
+
+# Section accents: the tag-dimension colors from the library index.
+LIB_SECTIONS = {
+  "neuroanatomy" => "#4A90D9",
+  "imaging" => "#7B68EE",
+  "infrastructure" => "#E67E22",
+  "proofreading" => "#E74C3C",
+  "cell-types" => "#27AE60",
+  "connectomics" => "#F39C12",
+  "case-studies" => "#1ABC9C",
+}.freeze
+
+LIB_ALT = {
+  "neuroanatomy" => "organelle profiles inside a curved membrane section",
+  "imaging" => "a raster imaging field crossed by artifact marks",
+  "infrastructure" => "pipeline stages running above a chunk grid",
+  "proofreading" => "a traced process with marked error sites under review",
+  "cell-types" => "three cell silhouettes: branched, star-form, and amoeboid",
+  "connectomics" => "a network graph with one community circled",
+  "case-studies" => "a specimen ring with landmark points beside a data band",
+}.freeze
+
+library_count = 0
+LIB_SECTIONS.each do |section, accent|
+  Dir[ROOT.join("content-library", section, "*.md")].sort.each do |file|
+    name = File.basename(file, ".md")
+    front = File.read(file, encoding: "UTF-8")[/\A---\n(.*?)\n---/m, 1]
+    title = front ? (YAML.safe_load(front, permitted_classes: [Date])["title"] || name) : name
+    render_banner(LIB_OUT.join(section, "#{name}.svg"),
+                  seed: (section + name).each_byte.reduce(17) { |h, b| h * 31 + b } % 2_147_483_647,
+                  accent: accent,
+                  label: title.to_s,
+                  motif: FAMILY.fetch(section))
+    library_count += 1
+  end
+end
+
+puts "Generated #{library_count} content-library art SVGs in #{LIB_OUT.relative_path_from(ROOT)}/"

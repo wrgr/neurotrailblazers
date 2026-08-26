@@ -2,6 +2,8 @@
 layout: page
 title: "Neuron Type Identification"
 permalink: /content-library/cell-types/neuron-type-identification/
+image: /assets/images/content-library/cell-types/neuron-type-identification.svg
+image_alt: "Stylized vector art: three cell silhouettes: branched, star-form, and amoeboid."
 description: "Classifying neuron types in EM connectomics — morphological, connectivity-based, and hybrid approaches. Full instructor script with references, examples, and decision frameworks."
 topics:
   - cell-types

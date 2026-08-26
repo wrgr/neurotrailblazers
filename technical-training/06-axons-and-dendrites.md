@@ -3,6 +3,8 @@ layout: page
 title: "06 Axons and Dendrites"
 description: "Classifying neuronal processes without reaching a soma: a cue table with independence structure, the exceptions that break the polarity rule, and why direction errors are the costliest annotation mistake."
 permalink: /technical-training/06-axons-and-dendrites/
+image: /assets/images/units/06-axons-and-dendrites.svg
+image_alt: "Stylized vector art: a spiny process above and a beaded process below, with a decision node between them."
 slug: 06-axons-and-dendrites
 track: core-concepts-methods
 pathways:

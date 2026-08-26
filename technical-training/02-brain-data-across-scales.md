@@ -3,6 +3,8 @@ layout: page
 title: "02 Brain Data Across Scales"
 description: "How to choose a modality, resolution, and representation for a connectomics question, and how to link measurements across scales without over-claiming."
 permalink: /technical-training/02-brain-data-across-scales/
+image: /assets/images/units/02-brain-data-across-scales.svg
+image_alt: "Stylized vector art: three nested zoom frames, from brain outline to circuit to vesicles."
 slug: 02-brain-data-across-scales
 track: core-concepts-methods
 pathways:

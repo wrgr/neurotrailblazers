@@ -2,6 +2,8 @@
 layout: page
 title: "MICrONS Visual Cortex"
 permalink: /content-library/case-studies/microns-visual-cortex/
+image: /assets/images/content-library/case-studies/microns-visual-cortex.svg
+image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
   A comprehensive case study of the MICrONS project — Machine Intelligence from
   Cortical Networks — which combined two-photon calcium imaging of ~75,000 neurons

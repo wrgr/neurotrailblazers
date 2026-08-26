@@ -26,7 +26,7 @@ content_type: navigation
 
   <section class="section">
     <p>This track follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
-    <p>The ten units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track. The reference material they draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running it for a group, the <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a> are the same material in <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
+    <p>The nine units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track, and the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">atlas</a> rides alongside them as a reference companion, consulted rather than completed. The reference material the units draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running related sessions for a group, the <a href="{{ '/modules/' | relative_url }}">modules</a> carry the same material in tutorial form, each with a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> for <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
     <div class="cta-buttons">
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
@@ -58,7 +58,7 @@ content_type: navigation
       {% assign primary_need = item.user_needs | first %}
       <article class="card">
         <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
-        <p class="card-description">{{ item.mapping_note }}</p>
+        <p class="card-description">{{ item.summary | default: item.mapping_note }}</p>
         {% if item.user_needs %}
         <p>
           {% for need in item.user_needs %}

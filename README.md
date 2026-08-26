@@ -11,7 +11,7 @@ working in nanoscale connectomics. This repository contains the source for the
 
 | Path | What it holds |
 |---|---|
-| `technical-training/` | The ten technical units — the canonical connectomics course, from motivation and scales through imaging, infrastructure, ultrastructure, proofreading, and analysis. Each is a self-contained lesson with worked examples, self-checks with answers, and a graded lab. |
+| `technical-training/` | The nine technical units — the canonical connectomics course, from motivation and scales through imaging, infrastructure, ultrastructure, proofreading, and analysis — plus the atlas reference that rides alongside them. Each unit is a self-contained lesson with worked examples, self-checks with answers, and a graded lab. |
 | `technical-training/slides/` | Instructor **lecture plans** for each unit: slide sequence, timing, figure placement, speaker notes. These are build plans, not rendered decks. |
 | `modules/` | The 25 curriculum modules, built for tutorial delivery — capability target, concept set, studio activity, rubric. |
 | `content-library/` | Long-form reference material behind the units: neuroanatomy, imaging, cell types, proofreading, connectomics, case studies, and annotated reading lists. |
@@ -27,7 +27,6 @@ working in nanoscale connectomics. This repository contains the source for the
 | `course/` | Source material and Marp deck sources; `course/decks/marp/out/` holds rendered HTML and PPTX decks. |
 | `scripts/` | Generators and validators (see below). |
 | `assets/` | Styles, images, notebooks, slides, and generated worksheets. |
-| `docs/` | Project documentation, including `CONTENT_REVIEW.md` — the pedagogical review and the authoring standard for new content. |
 
 ## Building the site
 

@@ -3,9 +3,10 @@ name: "Technical Connectomics Track"
 course_positioning: "Canonical open connectomics course that complements the broader NeuroTrailblazers site."
 status: "published"
 last_updated: 2026-08-20
-maintainer: TBD
+maintainer: NeuroTrailblazers Team
 modules:
   - slug: "01-why-map-the-brain"
+    summary: "Why wiring diagrams are worth the cost: what a connectome can and cannot support as evidence, and how to frame a question one could answer."
     title: "Why Map the Brain"
     status: "authored"
     primary_concepts:
@@ -17,6 +18,7 @@ modules:
       - module01
     mapping_note: "Shares orientation, motivation, and connectomics-purpose material with module01; this unit goes further into hypothesis framing and claim discipline."
   - slug: "02-brain-data-across-scales"
+    summary: "The scales of brain data, and how to choose a representation - volume, mesh, skeleton, or graph - for the question you are actually asking."
     title: "Brain Data Across Scales"
     status: "authored"
     primary_concepts:
@@ -30,6 +32,7 @@ modules:
       - module12
     mapping_note: "Legacy coverage of this material is split across modules 04, 05, and 12 (neuroanatomy, EM imaging basics, data scale); this unit consolidates it around scale selection."
   - slug: "03-em-prep-and-imaging"
+    summary: "How tissue becomes trustworthy images: fixation, staining, sectioning, acquisition, and the QA that decides whether a volume is worth reconstructing."
     title: "EM Prep and Imaging"
     status: "authored"
     primary_concepts:
@@ -41,6 +44,7 @@ modules:
       - module05
     mapping_note: "Overlaps module05 on EM principles and image interpretation; this unit adds preparation, acquisition, and QA detail."
   - slug: "04-volume-reconstruction-infrastructure"
+    summary: "The pipeline from raw tiles to a queryable reconstruction: alignment, segmentation, agglomeration, storage formats, and provenance."
     title: "Volume Reconstruction Infrastructure"
     status: "authored"
     primary_concepts:
@@ -53,6 +57,7 @@ modules:
       - module18
     mapping_note: "Overlaps modules 12 and 18 on big-data systems and preprocessing pipelines; this unit treats reconstruction infrastructure end to end."
   - slug: "05-neuronal-ultrastructure"
+    summary: "Reading neuronal ultrastructure in EM: the organelle catalog, the three criteria for calling a synapse, and calibrated confidence tiers."
     title: "Neuronal Ultrastructure"
     status: "authored"
     primary_concepts:
@@ -66,6 +71,7 @@ modules:
       - module11
     mapping_note: "Overlaps modules 04, 09, and 11 across neuroanatomy, morphology, and synaptic logic; this unit focuses on reading ultrastructure cues in EM."
   - slug: "06-axons-and-dendrites"
+    summary: "Telling axons from dendrites with an evidence chain: the four cue families, the exceptions that break the polarity rule, and why direction errors cost more."
     title: "Axons and Dendrites"
     status: "authored"
     primary_concepts:
@@ -78,6 +84,7 @@ modules:
       - module09
     mapping_note: "Related treatment appears in the structural neuroanatomy and morphology modules (04 and 09); this unit focuses on axon-versus-dendrite classification and its error costs."
   - slug: "07-glia"
+    summary: "Recognizing astrocytes, oligodendrocytes, and microglia - and why a glia-neuron merge is one of the most expensive mistakes in a reconstruction."
     title: "Glia"
     status: "authored"
     primary_concepts:
@@ -89,6 +96,7 @@ modules:
       - module04
     mapping_note: "Module04 covers glia only in passing; this unit is the dedicated treatment."
   - slug: "08-segmentation-and-proofreading"
+    summary: "Segmentation errors, the metrics that measure them and what each is blind to, and proofreading as allocation under a fixed budget."
     title: "Segmentation and Proofreading"
     status: "authored"
     primary_concepts:
@@ -101,6 +109,7 @@ modules:
       - module07
     mapping_note: "Directly overlaps the modules 06-07 segmentation and quality-control sequence; this unit adds error triage and proofreading quality metrics."
   - slug: "09-connectome-analysis-neuroai"
+    summary: "From reconstruction to claims: graph representations, motif analysis, null-model choice, and the bridge to NeuroAI."
     title: "Connectome Analysis and NeuroAI"
     status: "authored"
     primary_concepts:
@@ -116,6 +125,7 @@ modules:
       - module20
     mapping_note: "Overlaps modules 10, 13, 14, 15, and 20 across graph analysis, ML, CV, LLM, and inference; this unit focuses on motif analysis and null-model choice."
   - slug: "atlas-connectomics-reference"
+    summary: "A lookup table of the major datasets, tools, and reference figures - consulted when needed, not read in order."
     title: "Atlas Connectomics Reference"
     status: "authored"
     primary_concepts:

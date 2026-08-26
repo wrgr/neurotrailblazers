@@ -285,7 +285,7 @@ for the flaw in *your* reasoning first.
 ## Journal club, used properly
 
 The site's [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) is
-200 papers, each with an OCAR summary — Opportunity, Challenge, Action, Resolution,
+{{ site.data.journal_papers.papers | size }} papers, each with an OCAR summary — Opportunity, Challenge, Action, Resolution,
 Future Work — level-tiered summaries, and discussion prompts.
 
 Use it like this:

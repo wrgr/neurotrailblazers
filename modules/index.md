@@ -26,7 +26,7 @@ content_type: navigation
   <p>The site has two teaching sequences and they are not duplicates. Knowing which one you want saves a lot of wandering.</p>
   <table>
     <thead>
-      <tr><th></th><th>The 25 modules (this page)</th><th>The 10 <a href="{{ '/technical-training/' | relative_url }}">technical units</a></th></tr>
+      <tr><th></th><th>The 25 modules (this page)</th><th>The 9 <a href="{{ '/technical-training/' | relative_url }}">technical units</a></th></tr>
     </thead>
     <tbody>
       <tr>

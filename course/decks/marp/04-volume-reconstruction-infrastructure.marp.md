@@ -42,6 +42,13 @@ Reliability and lineage are first-class scientific requirements.
 
 ---
 
+## Real data: raw EM vs automated segmentation
+![w:620](../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg)
+- Flood-filling network output: 197 distinct objects in this one field.
+- Every colour is an object the pipeline asserts is continuous in 3D.
+
+---
+
 ## Visual context: serving and analysis interface
 ![w:940](../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S19-01.png)
 - Make clear distinction: data plane vs control plane.

@@ -43,6 +43,20 @@ Each stage introduces distinct, diagnosable error signatures.
 
 ---
 
+## Real data: one section of human cortex
+![w:780](../../../assets/images/content-library/case-studies/h01/01-whole-sample.jpg)
+- H01: a ~4 mm wedge, 5,019 sections at 33.9 nm mean thickness.
+- 1.8 PB raw acquisition; 326 days of 61-beam microscope time.
+
+---
+
+## Real data: the resolution you must reach everywhere
+![w:620](../../../assets/images/content-library/case-studies/h01/07-synapse-level.jpg)
+- Same sample at native 4 nm: membranes, mitochondria, vesicle clouds.
+- Synapse-finding needs this resolution across the whole 4 mm volume.
+
+---
+
 ## Artifact taxonomy with downstream impact
 - Physical (tear/fold/chatter): topology discontinuities.
 - Signal (charging/contrast drift): false boundaries, missed synapses.

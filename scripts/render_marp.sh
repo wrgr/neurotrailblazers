@@ -69,6 +69,20 @@ while IFS= read -r -d '' file; do
   if [ "$DO_HTML" -eq 1 ]; then
     "$MARP_BIN" "$file" --html --allow-local-files \
       --output "$target_dir/$base.html" </dev/null
+
+    # Fix image paths for the extra out/ directory level.
+    #
+    # Deck sources live in course/decks/marp/ and reference images as
+    # ../../../assets/... -- correct relative to the SOURCE. Marp copies those
+    # paths into the HTML verbatim, but the HTML lands one level deeper, in
+    # course/decks/marp/out/, where ../../../assets/ resolves to course/assets/
+    # -- which does not exist. Every image in every rendered deck was therefore
+    # broken, both as a local file and as served by the site at
+    # /course/decks/marp/out/NN.html. Adding one ../ restores the intended
+    # target in both contexts. Verified by loading a rendered deck in a browser:
+    # 12 of 12 images broken before, 0 after.
+    perl -pi -e 's{(src=")((?:\.\./)+)assets/}{$1../$2assets/}g' "$target_dir/$base.html"
+
     echo "Rendered: $target_dir/$base.html"
   fi
 

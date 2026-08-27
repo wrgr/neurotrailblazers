@@ -41,6 +41,22 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+## The merge/split dial, on one real object
+![w:1080](../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg)
+- H01 ships two agglomerations of the same data.
+- c2 calls this one object; c3 calls it two. Neither is a bug.
+- Across 104 proofread cells: c3 needed 1.6× fewer merges, 2.1× more splits.
+
+---
+
+## Before and after a human fixed it
+![w:1120](../../../assets/images/content-library/em/proofreading-before-after.jpg)
+- Green = genuinely this cell. Red = 11,038 voxels the algorithm wrongly absorbed.
+- The membrane it crossed is real but faint — would you have caught it?
+- Note where the error is NOT: at the soma, automated needs no correction.
+
+---
+
 ## Synapse-aware correction checks
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png)
 

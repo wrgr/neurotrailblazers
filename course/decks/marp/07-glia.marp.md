@@ -41,6 +41,20 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+## Real data: an astrocytic process
+![w:620](../../../assets/images/content-library/em/astrocyte-process.jpg)
+- Pale cytoplasm, irregular space-filling outline that wraps its neighbours.
+- Labelled 'astrocyte' by H01's subcompartment model.
+
+---
+
+## Real data: cortical vasculature
+![w:620](../../../assets/images/content-library/em/blood-vessel.jpg)
+- H01 contains ~230 mm of blood vessels across ~1 mm³.
+- Vessels are a common site of merge errors — glia wrap them closely.
+
+---
+
 ## Microglia-associated cue context
 ![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png)
 

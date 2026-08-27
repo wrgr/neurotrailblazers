@@ -44,6 +44,20 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+## Real data: a human cortical soma
+![w:620](../../../assets/images/content-library/em/soma-ultrastructure.jpg)
+- Large pale nucleus, single prominent nucleolus, RER-rich cytoplasm.
+- The nucleus/nucleolus cue is what makes somata findable at low magnification.
+
+---
+
+## Real data: dendrite and its organelles
+![w:620](../../../assets/images/content-library/em/dendrite-and-organelles.jpg)
+- Labelled 'dendrite' by H01's own subcompartment model.
+- Large branched mitochondria — an organelle cue that excludes axonal identity.
+
+---
+
 ## Synapse cue set
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png)
 - Require membrane apposition + vesicle field + postsynaptic context.

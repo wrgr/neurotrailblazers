@@ -561,15 +561,29 @@ permalink: /neuronauts/
        One base astronaut body, five suits. Referenced by panels below via <use>. -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <!-- Captain Cortex: purple suit, star emblem -->
+      <!-- Captain Cortex: purple suit, star emblem, gold neuron accents -->
       <g id="nn-cortex">
         <rect x="-10" y="30" width="8" height="18" rx="4" fill="#5b21b6"/>
         <rect x="2" y="30" width="8" height="18" rx="4" fill="#5b21b6"/>
         <ellipse cx="-6" cy="50" rx="7" ry="4" fill="#312e81"/>
         <ellipse cx="6" cy="50" rx="7" ry="4" fill="#312e81"/>
+        <!-- axon-cable tail: myelin beads trailing to a glowing synaptic bouton -->
+        <g>
+          <path d="M 3 32 C 17 33 24 42 22 50 C 21 55 14 59 7 56" fill="none" stroke="#312e81" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="10" cy="36" r="2.2" fill="#ede9fe"/>
+          <circle cx="18" cy="43" r="2.2" fill="#ede9fe"/>
+          <circle cx="21" cy="50" r="2.2" fill="#ede9fe"/>
+          <circle cx="6" cy="57" r="6" fill="#fde047" opacity="0.3"/>
+          <circle cx="6" cy="57" r="3.4" fill="#fde047"/>
+        </g>
         <rect x="-14" y="-2" width="28" height="36" rx="12" fill="#7c3aed"/>
         <rect x="-22" y="2" width="9" height="22" rx="4.5" fill="#7c3aed"/>
         <rect x="13" y="2" width="9" height="22" rx="4.5" fill="#7c3aed"/>
+        <!-- dendrite-branch etch on each shoulder -->
+        <g stroke="#ede9fe" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6">
+          <path d="M -17.5 21 L -17.5 12 M -17.5 15 L -20 10 M -17.5 15 L -15 10 M -17.5 18 L -19.5 14 M -17.5 18 L -15.5 14"/>
+          <path d="M 17.5 21 L 17.5 12 M 17.5 15 L 20 10 M 17.5 15 L 15 10 M 17.5 18 L 19.5 14 M 17.5 18 L 15.5 14"/>
+        </g>
         <circle cx="-17.5" cy="25" r="4.5" fill="#ede9fe"/>
         <circle cx="17.5" cy="25" r="4.5" fill="#ede9fe"/>
         <path d="M 0 3 L 1.8 8 L 7 8.2 L 3 11.5 L 4.3 16.5 L 0 13.6 L -4.3 16.5 L -3 11.5 L -7 8.2 L -1.8 8 Z" fill="#fde047"/>
@@ -580,16 +594,37 @@ permalink: /neuronauts/
         <circle cx="4.5" cy="-16" r="1.9" fill="#111827"/>
         <path d="M -4 -10 Q 0 -6.5 4 -10" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M -10 -25 A 15.5 15.5 0 0 1 6 -30" stroke="#fff" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+        <!-- helmet-rim neuron spines -->
+        <g stroke="#fde047" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+          <path d="M -15 -22 L -18.4 -25.2"/>
+          <path d="M -15.5 -10 L -19.2 -10.6"/>
+          <path d="M -9 -1 L -11.2 2.2"/>
+          <path d="M 9 -1 L 11.2 2.2"/>
+          <path d="M 15.5 -10 L 19.2 -10.6"/>
+          <path d="M 15 -22 L 18.4 -25.2"/>
+        </g>
       </g>
-      <!-- Axon: cyan suit, lightning emblem, antenna -->
+      <!-- Axon: cyan suit, lightning emblem, antenna, amber neuron accents -->
       <g id="nn-axon">
         <rect x="-10" y="30" width="8" height="18" rx="4" fill="#0e7490"/>
         <rect x="2" y="30" width="8" height="18" rx="4" fill="#0e7490"/>
         <ellipse cx="-6" cy="50" rx="7" ry="4" fill="#164e63"/>
         <ellipse cx="6" cy="50" rx="7" ry="4" fill="#164e63"/>
+        <g>
+          <path d="M 3 32 C 17 33 24 42 22 50 C 21 55 14 59 7 56" fill="none" stroke="#164e63" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="10" cy="36" r="2.2" fill="#cffafe"/>
+          <circle cx="18" cy="43" r="2.2" fill="#cffafe"/>
+          <circle cx="21" cy="50" r="2.2" fill="#cffafe"/>
+          <circle cx="6" cy="57" r="6" fill="#fbbf24" opacity="0.3"/>
+          <circle cx="6" cy="57" r="3.4" fill="#fbbf24"/>
+        </g>
         <rect x="-14" y="-2" width="28" height="36" rx="12" fill="#06b6d4"/>
         <rect x="-22" y="2" width="9" height="22" rx="4.5" fill="#06b6d4"/>
         <rect x="13" y="2" width="9" height="22" rx="4.5" fill="#06b6d4"/>
+        <g stroke="#cffafe" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6">
+          <path d="M -17.5 21 L -17.5 12 M -17.5 15 L -20 10 M -17.5 15 L -15 10 M -17.5 18 L -19.5 14 M -17.5 18 L -15.5 14"/>
+          <path d="M 17.5 21 L 17.5 12 M 17.5 15 L 20 10 M 17.5 15 L 15 10 M 17.5 18 L 19.5 14 M 17.5 18 L 15.5 14"/>
+        </g>
         <circle cx="-17.5" cy="25" r="4.5" fill="#cffafe"/>
         <circle cx="17.5" cy="25" r="4.5" fill="#cffafe"/>
         <path d="M 1 3 L -4 11 L 0 11 L -2 18 L 5 9 L 1 9 L 4 3 Z" fill="#fde047"/>
@@ -602,16 +637,35 @@ permalink: /neuronauts/
         <circle cx="4.5" cy="-16" r="1.9" fill="#111827"/>
         <path d="M -4 -10 Q 0 -6 4 -10.5" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M -10 -25 A 15.5 15.5 0 0 1 6 -30" stroke="#fff" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+        <!-- helmet-rim neuron spines (top skipped, antenna already lives there) -->
+        <g stroke="#fbbf24" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+          <path d="M -15.5 -10 L -19.2 -10.6"/>
+          <path d="M -9 -1 L -11.2 2.2"/>
+          <path d="M 9 -1 L 11.2 2.2"/>
+          <path d="M 15.5 -10 L 19.2 -10.6"/>
+        </g>
       </g>
-      <!-- Dendra: green suit, branch emblem, twin hair puffs -->
+      <!-- Dendra: green suit, branch emblem, twin hair puffs, mint neuron accents -->
       <g id="nn-dendra">
         <rect x="-10" y="30" width="8" height="18" rx="4" fill="#065f46"/>
         <rect x="2" y="30" width="8" height="18" rx="4" fill="#065f46"/>
         <ellipse cx="-6" cy="50" rx="7" ry="4" fill="#064e3b"/>
         <ellipse cx="6" cy="50" rx="7" ry="4" fill="#064e3b"/>
+        <g>
+          <path d="M 3 32 C 17 33 24 42 22 50 C 21 55 14 59 7 56" fill="none" stroke="#064e3b" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="10" cy="36" r="2.2" fill="#d1fae5"/>
+          <circle cx="18" cy="43" r="2.2" fill="#d1fae5"/>
+          <circle cx="21" cy="50" r="2.2" fill="#d1fae5"/>
+          <circle cx="6" cy="57" r="6" fill="#a7f3d0" opacity="0.3"/>
+          <circle cx="6" cy="57" r="3.4" fill="#a7f3d0"/>
+        </g>
         <rect x="-14" y="-2" width="28" height="36" rx="12" fill="#059669"/>
         <rect x="-22" y="2" width="9" height="22" rx="4.5" fill="#059669"/>
         <rect x="13" y="2" width="9" height="22" rx="4.5" fill="#059669"/>
+        <g stroke="#d1fae5" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6">
+          <path d="M -17.5 21 L -17.5 12 M -17.5 15 L -20 10 M -17.5 15 L -15 10 M -17.5 18 L -19.5 14 M -17.5 18 L -15.5 14"/>
+          <path d="M 17.5 21 L 17.5 12 M 17.5 15 L 20 10 M 17.5 15 L 15 10 M 17.5 18 L 19.5 14 M 17.5 18 L 15.5 14"/>
+        </g>
         <circle cx="-17.5" cy="25" r="4.5" fill="#d1fae5"/>
         <circle cx="17.5" cy="25" r="4.5" fill="#d1fae5"/>
         <path d="M 0 16 L 0 8 M 0 10 L -5 5 M 0 10 L 5 5 M 0 14 L -4 11 M 0 14 L 4 11" stroke="#a7f3d0" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -623,16 +677,36 @@ permalink: /neuronauts/
         <circle cx="4.5" cy="-16" r="1.9" fill="#111827"/>
         <path d="M -4 -10 Q 0 -6.5 4 -10" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M -10 -25 A 15.5 15.5 0 0 1 6 -30" stroke="#fff" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+        <g stroke="#a7f3d0" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+          <path d="M -15 -22 L -18.4 -25.2"/>
+          <path d="M -15.5 -10 L -19.2 -10.6"/>
+          <path d="M -9 -1 L -11.2 2.2"/>
+          <path d="M 9 -1 L 11.2 2.2"/>
+          <path d="M 15.5 -10 L 19.2 -10.6"/>
+          <path d="M 15 -22 L 18.4 -25.2"/>
+        </g>
       </g>
-      <!-- Syn: orange suit, spark emblem -->
+      <!-- Syn: orange suit, spark emblem, gold neuron accents -->
       <g id="nn-syn">
         <rect x="-10" y="30" width="8" height="18" rx="4" fill="#9a3412"/>
         <rect x="2" y="30" width="8" height="18" rx="4" fill="#9a3412"/>
         <ellipse cx="-6" cy="50" rx="7" ry="4" fill="#7c2d12"/>
         <ellipse cx="6" cy="50" rx="7" ry="4" fill="#7c2d12"/>
+        <g>
+          <path d="M 3 32 C 17 33 24 42 22 50 C 21 55 14 59 7 56" fill="none" stroke="#7c2d12" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="10" cy="36" r="2.2" fill="#ffedd5"/>
+          <circle cx="18" cy="43" r="2.2" fill="#ffedd5"/>
+          <circle cx="21" cy="50" r="2.2" fill="#ffedd5"/>
+          <circle cx="6" cy="57" r="6" fill="#fde047" opacity="0.3"/>
+          <circle cx="6" cy="57" r="3.4" fill="#fde047"/>
+        </g>
         <rect x="-14" y="-2" width="28" height="36" rx="12" fill="#ea580c"/>
         <rect x="-22" y="2" width="9" height="22" rx="4.5" fill="#ea580c"/>
         <rect x="13" y="2" width="9" height="22" rx="4.5" fill="#ea580c"/>
+        <g stroke="#ffedd5" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6">
+          <path d="M -17.5 21 L -17.5 12 M -17.5 15 L -20 10 M -17.5 15 L -15 10 M -17.5 18 L -19.5 14 M -17.5 18 L -15.5 14"/>
+          <path d="M 17.5 21 L 17.5 12 M 17.5 15 L 20 10 M 17.5 15 L 15 10 M 17.5 18 L 19.5 14 M 17.5 18 L 15.5 14"/>
+        </g>
         <circle cx="-17.5" cy="25" r="4.5" fill="#ffedd5"/>
         <circle cx="17.5" cy="25" r="4.5" fill="#ffedd5"/>
         <circle cx="0" cy="9" r="4" fill="#fde047"/>
@@ -647,16 +721,35 @@ permalink: /neuronauts/
         <circle cx="4.5" cy="-15" r="1.9" fill="#111827"/>
         <path d="M -4 -9 Q 0 -5.5 4 -9" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M -10 -25 A 15.5 15.5 0 0 1 6 -30" stroke="#fff" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+        <g stroke="#fde047" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+          <path d="M -15.5 -10 L -19.2 -10.6"/>
+          <path d="M -9 -1 L -11.2 2.2"/>
+          <path d="M 9 -1 L 11.2 2.2"/>
+          <path d="M 15.5 -10 L 19.2 -10.6"/>
+          <path d="M 15 -22 L 18.4 -25.2"/>
+        </g>
       </g>
-      <!-- Glia: rose suit, wrench emblem, toolbelt -->
+      <!-- Glia: rose suit, wrench emblem, toolbelt, cyan neuron accents -->
       <g id="nn-glia">
         <rect x="-10" y="30" width="8" height="18" rx="4" fill="#9d174d"/>
         <rect x="2" y="30" width="8" height="18" rx="4" fill="#9d174d"/>
         <ellipse cx="-6" cy="50" rx="7" ry="4" fill="#831843"/>
         <ellipse cx="6" cy="50" rx="7" ry="4" fill="#831843"/>
+        <g>
+          <path d="M 3 32 C 17 33 24 42 22 50 C 21 55 14 59 7 56" fill="none" stroke="#831843" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="10" cy="36" r="2.2" fill="#fce7f3"/>
+          <circle cx="18" cy="43" r="2.2" fill="#fce7f3"/>
+          <circle cx="21" cy="50" r="2.2" fill="#fce7f3"/>
+          <circle cx="6" cy="57" r="6" fill="#a5f3fc" opacity="0.3"/>
+          <circle cx="6" cy="57" r="3.4" fill="#a5f3fc"/>
+        </g>
         <rect x="-14" y="-2" width="28" height="36" rx="12" fill="#db2777"/>
         <rect x="-22" y="2" width="9" height="22" rx="4.5" fill="#db2777"/>
         <rect x="13" y="2" width="9" height="22" rx="4.5" fill="#db2777"/>
+        <g stroke="#fce7f3" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.6">
+          <path d="M -17.5 21 L -17.5 12 M -17.5 15 L -20 10 M -17.5 15 L -15 10 M -17.5 18 L -19.5 14 M -17.5 18 L -15.5 14"/>
+          <path d="M 17.5 21 L 17.5 12 M 17.5 15 L 20 10 M 17.5 15 L 15 10 M 17.5 18 L 19.5 14 M 17.5 18 L 15.5 14"/>
+        </g>
         <circle cx="-17.5" cy="25" r="4.5" fill="#fce7f3"/>
         <circle cx="17.5" cy="25" r="4.5" fill="#fce7f3"/>
         <rect x="-14" y="18" width="28" height="6" rx="3" fill="#831843"/>
@@ -670,6 +763,14 @@ permalink: /neuronauts/
         <circle cx="4.5" cy="-16" r="1.9" fill="#111827"/>
         <path d="M -4 -10 Q 0 -6.5 4 -10" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round"/>
         <path d="M -10 -25 A 15.5 15.5 0 0 1 6 -30" stroke="#fff" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+        <g stroke="#a5f3fc" stroke-width="1.6" stroke-linecap="round" opacity="0.9">
+          <path d="M -15 -22 L -18.4 -25.2"/>
+          <path d="M -15.5 -10 L -19.2 -10.6"/>
+          <path d="M -9 -1 L -11.2 2.2"/>
+          <path d="M 9 -1 L 11.2 2.2"/>
+          <path d="M 15.5 -10 L 19.2 -10.6"/>
+          <path d="M 15 -22 L 18.4 -25.2"/>
+        </g>
       </g>
       <!-- reusable bits -->
       <path id="nn-star" d="M 0 -5 L 1.2 -1.2 L 5 0 L 1.2 1.2 L 0 5 L -1.2 1.2 L -5 0 L -1.2 -1.2 Z"/>
@@ -789,31 +890,31 @@ permalink: /neuronauts/
     <p class="nn-lede">Every good expedition needs a crew. Ours is named after the real parts of a real neuron — so by the time you know the characters, you already know the anatomy.</p>
     <div class="nn-cast-grid">
       <div class="nn-cast-card c-cortex">
-        <svg viewBox="-30 -45 60 100" role="img" aria-label="Captain Cortex, an explorer in a purple spacesuit with a gold star emblem"><use href="#nn-cortex"/></svg>
+        <svg viewBox="-30 -47 60 116" role="img" aria-label="Captain Cortex, an explorer in a purple spacesuit with a gold star emblem, dendrite-branch shoulder trim, and a trailing axon-cable tail ending in a glowing synapse"><use href="#nn-cortex"/></svg>
         <h4>Captain Cortex</h4>
         <div class="nn-role">Mission Lead</div>
         <p>Named for the brain's wrinkled outer layer, where much of the mapping so far has happened. Asks the big question at every stop: <em>what will this step let us learn?</em></p>
       </div>
       <div class="nn-cast-card c-axon">
-        <svg viewBox="-30 -45 60 100" role="img" aria-label="Axon, an explorer in a cyan spacesuit with a lightning bolt emblem and an antenna helmet"><use href="#nn-axon"/></svg>
+        <svg viewBox="-30 -47 60 116" role="img" aria-label="Axon, an explorer in a cyan spacesuit with a lightning bolt emblem, an antenna helmet, and a trailing axon-cable tail ending in a glowing amber synapse"><use href="#nn-axon"/></svg>
         <h4>Axon</h4>
         <div class="nn-role">Scout</div>
         <p>Named for the neuron's output cable — the long, thin wire that carries signals away from the cell, sometimes across the whole brain. Fast, and proud of it.</p>
       </div>
       <div class="nn-cast-card c-dendra">
-        <svg viewBox="-30 -45 60 100" role="img" aria-label="Dendra, an explorer in a green spacesuit with a branching tree emblem"><use href="#nn-dendra"/></svg>
+        <svg viewBox="-30 -47 60 116" role="img" aria-label="Dendra, an explorer in a green spacesuit with a branching tree emblem, dendrite-branch shoulder trim, and a trailing axon-cable tail ending in a glowing mint synapse"><use href="#nn-dendra"/></svg>
         <h4>Dendra</h4>
         <div class="nn-role">Listener</div>
         <p>Named for dendrites — the branching antennae where a neuron receives its inputs. Notices everything. Keeps the crew's field notes.</p>
       </div>
       <div class="nn-cast-card c-syn">
-        <svg viewBox="-30 -45 60 100" role="img" aria-label="Syn, an explorer in an orange spacesuit with a glowing spark emblem"><use href="#nn-syn"/></svg>
+        <svg viewBox="-30 -47 60 116" role="img" aria-label="Syn, an explorer in an orange spacesuit with a glowing spark emblem and a trailing axon-cable tail ending in a glowing gold synapse"><use href="#nn-syn"/></svg>
         <h4>Syn</h4>
         <div class="nn-role">Connector</div>
         <p>Named for the synapse — the tiny junction where one neuron passes a message to the next. There are hundreds of millions in a single cubic millimeter of cortex <a class="srcref" href="#src-17" style="color:#92400e;font-weight:700;text-decoration:none">[17]</a>.</p>
       </div>
       <div class="nn-cast-card c-glia">
-        <svg viewBox="-30 -45 60 100" role="img" aria-label="Glia, an explorer in a rose-colored spacesuit with a toolbelt and wrench emblem"><use href="#nn-glia"/></svg>
+        <svg viewBox="-30 -47 60 116" role="img" aria-label="Glia, an explorer in a rose-colored spacesuit with a toolbelt and wrench emblem, and a trailing axon-cable tail ending in a glowing cyan synapse"><use href="#nn-glia"/></svg>
         <h4>Glia</h4>
         <div class="nn-role">Engineer</div>
         <p>Named for glial cells — the brain's support crew that feeds, insulates, and repairs neurons. Handles the chemistry, the machines, and the inevitable mishaps.</p>
@@ -2181,8 +2282,9 @@ permalink: /neuronauts/
       <a class="nn-btn ghost" href="{{ '/side-quests/proofreading/' | relative_url }}">Try Proofreading</a>
       <a class="nn-btn ghost" href="{{ '/datasets/' | relative_url }}">Fly Through a Real Brain</a>
       <a class="nn-btn ghost" href="{{ '/content-library/' | relative_url }}">Content Library</a>
+      <a class="nn-btn ghost" href="{{ '/neuronauts/3d-print/neuronaut-all-five.stl' | relative_url }}">Download 3D-Print Files</a>
     </div>
-    <p style="font-size:0.85rem;color:#6b7280;margin-top:1.25rem">Print-friendly: use your browser's Print for a paginated copy. Teachers: pair this page with the <a href="{{ '/teaching/module22-public-engagement/' | relative_url }}">public-engagement session kit</a>.</p>
+    <p style="font-size:0.85rem;color:#6b7280;margin-top:1.25rem">Print-friendly: use your browser's Print for a paginated copy. The crew also prints in plastic: grab the <a href="{{ '/neuronauts/3d-print/neuronaut-all-five.stl' | relative_url }}">3D-print STL files</a> (no supports needed) and build your own desk crew. Teachers: pair this page with the <a href="{{ '/teaching/module22-public-engagement/' | relative_url }}">public-engagement session kit</a>.</p>
   </div>
 
   <script>

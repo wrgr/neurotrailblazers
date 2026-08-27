@@ -6,7 +6,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
-description: "The journal club collection as a citation graph: 1,074 papers, linked by which core papers they cite. Filter by k-core, era, or organism; click a node to read it; drag to rearrange."
+description: "The journal club collection as a citation graph: 1,057 papers, linked by which core papers they cite. Filter by k-core, era, or organism; click a node to read it; drag to rearrange."
 content_type: core
 ---
 

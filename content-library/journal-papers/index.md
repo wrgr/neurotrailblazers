@@ -168,9 +168,9 @@ Structured records exist for the **full {{ site.data.journal_papers.papers | siz
 ```
 
 Its `dimension` values are citation-graph categories and are **not** the eleven teaching
-dimensions used on this page: `image-acquisition` (230), `connectomics` (207),
-`graph-analysis` (205), `segmentation` (142), `infrastructure` (107), `proofreading`
-(78), `neuroai` (26), `methods-general` (24), `neuroanatomy` (23), `cell-types` (22),
+dimensions used on this page: `image-acquisition` (226), `connectomics` (204),
+`graph-analysis` (203), `segmentation` (140), `infrastructure` (106), `proofreading`
+(76), `neuroai` (24), `methods-general` (23), `neuroanatomy` (23), `cell-types` (22),
 `review` (10).
 
 That enables filtering such as "every `graph-analysis` paper from before 2010, at k-core

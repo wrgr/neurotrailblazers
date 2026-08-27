@@ -57,6 +57,14 @@ if [ "$DO_PPTX" -eq 1 ] && [ -z "${CHROME_PATH:-}" ]; then
   done
 fi
 
+# Register any custom themes shipped alongside the decks. A deck that names a
+# theme in its front matter renders with the default theme unless that theme was
+# passed to --theme-set, and the fallback is silent.
+THEME_ARGS=()
+while IFS= read -r -d '' theme_dir; do
+  THEME_ARGS+=(--theme-set "$theme_dir")
+done < <(find "$SRC_DIR" -type d -name theme -print0 | sort -z)
+
 mkdir -p "$OUT_DIR"
 
 count=0
@@ -68,6 +76,7 @@ while IFS= read -r -d '' file; do
 
   if [ "$DO_HTML" -eq 1 ]; then
     "$MARP_BIN" "$file" --html --allow-local-files \
+      "${THEME_ARGS[@]}" \
       --output "$target_dir/$base.html" </dev/null
 
     # Fix image paths for the extra out/ directory level.
@@ -93,6 +102,7 @@ while IFS= read -r -d '' file; do
       --browser-timeout 120 \
       --browser-arg=--no-sandbox \
       --browser-arg=--disable-setuid-sandbox \
+      "${THEME_ARGS[@]}" \
       --output "$target_dir/$base.pptx" </dev/null
     echo "Rendered: $target_dir/$base.pptx"
   fi

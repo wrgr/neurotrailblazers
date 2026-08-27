@@ -48,6 +48,18 @@ npm install --no-save @marp-team/marp-cli   # if marp is not on PATH
 PPTX is what to use for Google Slides: export, then **File → Import slides** in Google
 Slides. The exports are not committed (see `.gitignore`).
 
+**A caveat on PPTX.** The default export renders each slide as an image, so the text is
+not editable in PowerPoint or Google Slides — treat those files as handouts, and treat
+the `.marp.md` source as the thing you edit. Marp's `--pptx-editable` produces real text
+boxes, but it converts through LibreOffice and needs a working `soffice` headless
+conversion path; it fails in a bare container (`source file could not be loaded`) and is
+marked experimental upstream. If you have LibreOffice locally, it is worth trying:
+
+```bash
+marp <deck>.marp.md --pptx --pptx-editable --allow-local-files \
+  --theme-set course/decks/marp/en585781/theme/ -o <deck>.pptx
+```
+
 Editing a source without re-rendering fails `scripts/check_deck_freshness.rb` in CI. Run
 the script; do not hand-edit `out/.render-manifest.json`.
 

@@ -16,6 +16,8 @@ prerequisites: "None. Introductory neuroscience helps but is not required."
 content_type: path
 ---
 
+{% include callouts/community-resources.html unit="01" %}
+
 ## Before you start
 
 | | |

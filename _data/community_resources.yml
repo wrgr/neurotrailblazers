@@ -1,0 +1,126 @@
+# Key community resources per technical-training unit, surfaced as a callout
+# via _includes/callouts/community-resources.html. Every entry was checked
+# against a live web search before being added here (title/journal/year/URL
+# cross-referenced against publisher, PubMed, or the resource's own site) --
+# do not add an entry you have not verified the same way.
+#
+# Unit 03 is deliberately absent: it already carries the more specific
+# em-imaging-visual-note.html callout, and adding a second box would be
+# redundant clutter on the same page.
+"01":
+  resources:
+    - name: "White, Southgate, Thomson & Brenner (1986)"
+      note: "The founding connectome paper — the first complete synaptic wiring diagram of an animal nervous system (C. elegans)."
+      citation: "\"The Structure of the Nervous System of the Nematode Caenorhabditis elegans,\" Phil. Trans. R. Soc. Lond. B 314(1165):1–340"
+      url: "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.1986.0056"
+    - name: "Bargmann & Marder (2013)"
+      note: "Directly addresses what a structural wiring diagram can and cannot tell you about function — the core question this unit asks."
+      citation: "\"From the connectome to brain function,\" Nature Methods 10:483–490"
+      url: "https://www.nature.com/articles/nmeth.2451"
+    - name: "Sporns, Tononi & Kötter (2005)"
+      note: "The paper that coined \"connectome\" and framed the field's motivating agenda."
+      citation: "\"The Human Connectome: A Structural Description of the Human Brain,\" PLoS Computational Biology 1(4):e42"
+      url: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0010042"
+    - name: "Sebastian Seung, Connectome: How the Brain's Wiring Makes Us Who We Are"
+      note: "Popular-science framing of the field's motivation and stakes, by a leading connectomics researcher (Houghton Mifflin Harcourt, 2012)."
+      url: ""
+
+"02":
+  resources:
+    - name: "Lichtman, Pfister & Shavit (2014)"
+      note: "Contrasts data scale, resolution, and volume tradeoffs across the imaging modalities used in connectomics."
+      citation: "\"The big data challenges of connectomics,\" Nature Neuroscience 17:1448–1454"
+      url: "https://www.nature.com/articles/nn.3837"
+    - name: "Human Connectome Project"
+      note: "The canonical large-scale MRI-based structural/functional connectivity dataset — the macro-scale anchor point against light-microscopy and EM."
+      url: "https://www.humanconnectome.org/"
+    - name: "Allen Brain Map"
+      note: "Allen Institute's multi-modal, multi-scale brain data portal. The institute hosts several distinct sub-portals (Allen Brain Atlas, Allen Brain Cell Atlas, Allen Brain Observatory) — check which sub-resource best fits before linking deeper than the main portal."
+      url: "https://portal.brain-map.org/"
+
+"04":
+  resources:
+    - name: "Neuroglancer"
+      note: "The de facto standard open-source WebGL viewer for large-scale volumetric/segmented EM data, used across virtually every major connectomics dataset."
+      url: "https://github.com/google/neuroglancer"
+    - name: "CAVE — Connectome Annotation Versioning Engine"
+      note: "The annotation/proofreading/versioning backend behind MICrONS, FlyWire, and other large volumes."
+      citation: "Dorkenwald et al. (2025), \"CAVE: Connectome Annotation Versioning Engine,\" Nature Methods 22:1112–1120"
+      url: "https://www.nature.com/articles/s41592-024-02426-z"
+    - name: "BossDB — Brain Observatory Storage Service and Database"
+      note: "Cloud-native storage/serving system built specifically for petascale volumetric EM/connectomics data."
+      citation: "Hider et al. (2022), \"The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery,\" Frontiers in Neuroinformatics"
+      url: "https://bossdb.org"
+    - name: "webKnossos"
+      note: "Open-source tool for large-scale 3D EM annotation and reconstruction (Max Planck / scalable minds)."
+      citation: "Boergens et al. (2017), \"webKnossos: efficient online 3D data annotation for connectomics,\" Nature Methods 14:691–694"
+      url: "https://webknossos.org"
+
+"05":
+  resources:
+    - name: "Peters, Palay & Webster, The Fine Structure of the Nervous System"
+      note: "The standard reference atlas/textbook for identifying neuronal organelles and ultrastructure in EM (3rd ed., Oxford University Press, 1991)."
+      url: ""
+    - name: "SynapseWeb — Atlas of Ultrastructural Neurocytology"
+      note: "Free, well-known online visual EM atlas from the Kristen Harris lab (UT Austin), built as a practical guide to interpreting EM findings."
+      url: "https://synapseweb.clm.utexas.edu/atlas"
+
+"06":
+  resources:
+    - name: "Harris & Weinberg (2012)"
+      note: "Canonical, widely-cited review on identifying synaptic ultrastructure — spines, active zones, PSDs — in EM."
+      citation: "\"Ultrastructure of Synapses in the Mammalian Brain,\" Cold Spring Harbor Perspectives in Biology 4(5):a005587"
+      url: "https://pubmed.ncbi.nlm.nih.gov/22357909/"
+    - name: "SynapseWeb"
+      note: "Its tutorials section specifically targets synapse, spine, and axon identification (same site as Unit 05)."
+      url: "https://synapseweb.clm.utexas.edu/"
+    - name: "Peters, Palay & Webster, The Fine Structure of the Nervous System"
+      note: "Its axon/dendrite ultrastructure chapters apply directly here too (see Unit 05)."
+      url: ""
+
+"07":
+  resources:
+    - name: "Savage, Picard, González-Ibáñez & Tremblay (2018)"
+      note: "Review specifically on EM identification of microglia."
+      citation: "\"A Brief History of Microglial Ultrastructure: Distinctive Features, Phenotypes, and Functions Discovered Over the Past 60 Years by Electron Microscopy,\" Frontiers in Immunology 9:803"
+      url: "https://www.frontiersin.org/articles/10.3389/fimmu.2018.00803/full"
+    - name: "Chiappini et al. (2025)"
+      note: "Current, directly on-topic review of astrocyte identification via volume EM."
+      citation: "\"Ultrastructure of astrocytes using volume electron microscopy: A scoping review,\" The Journal of Physiology 604(4):1498–1517"
+      url: "https://physoc.onlinelibrary.wiley.com/doi/10.1113/JP287455"
+    - name: "Peters, Palay & Webster, The Fine Structure of the Nervous System"
+      note: "Includes dedicated chapters on oligodendrocyte, astrocyte, and microglial ultrastructure — the oligodendrocyte anchor here, since no single modern review paper on oligodendrocyte EM identification was as canonical as the microglia/astrocyte reviews above (worth a closer look if you want a dedicated paper instead)."
+      url: ""
+
+"08":
+  resources:
+    - name: "FlyWire / Codex"
+      note: "Leading real-world example of AI-assisted segmentation plus community/crowd-sourced proofreading of a whole-brain EM connectome (Drosophila)."
+      citation: "Dorkenwald et al. (2022), \"FlyWire: online community for whole-brain connectomics,\" Nature Methods 19:119–128"
+      url: "https://codex.flywire.ai/"
+    - name: "Dorkenwald et al. (2024)"
+      note: "The completed FlyWire connectome paper — a capstone reference showing proofreading-at-scale outcomes."
+      citation: "\"Neuronal wiring diagram of an adult brain,\" Nature 634:124–138"
+      url: "https://www.nature.com/articles/s41586-024-07558-y"
+    - name: "CAVE"
+      note: "Its core function is proofreading and annotation versioning at scale (see Unit 04)."
+      citation: "Dorkenwald et al. (2025), Nature Methods 22:1112–1120"
+      url: "https://www.nature.com/articles/s41592-024-02426-z"
+
+"09":
+  resources:
+    - name: "DotMotif"
+      note: "Purpose-built open-source tool for motif and subgraph-isomorphism search in connectome graphs."
+      citation: "Matelsky et al. (2021), \"DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries,\" Scientific Reports 11:12525"
+      url: "https://github.com/aplbrain/dotmotif"
+    - name: "natverse"
+      note: "Widely-used R toolbox for connectome/neuroanatomy graph analysis, heavily used in Drosophila connectomics."
+      citation: "Bates et al. (2020), \"The natverse, a versatile toolbox for combining and analysing neuroanatomical data,\" eLife 9:e53350"
+      url: "https://natverse.org"
+    - name: "Lappalainen et al. (2024)"
+      note: "High-profile, current example of connectome-constrained modeling / NeuroAI: a bio-inspired network built from EM connectivity data to predict neural activity."
+      citation: "\"Connectome-constrained networks predict neural activity across the fly visual system,\" Nature 634:1132–1140"
+      url: "https://www.nature.com/articles/s41586-024-07939-3"
+    - name: "neuPrint"
+      note: "Public graph-query database and explorer for the Drosophila hemibrain connectome — a hands-on resource for connectome graph analysis."
+      url: "https://neuprint.janelia.org"

@@ -30,8 +30,34 @@ content_type: core
         <label><input type="checkbox" class="jcg-era-check" value="sota" checked> SOTA</label>
       </fieldset>
 
-      <label for="jcg-search">Highlight (title, author, organism):</label>
-      <input type="text" id="jcg-search" placeholder="e.g. mouse, FlyWire, Lichtman…">
+      <label for="jcg-dimension">Dimension:</label>
+      <select id="jcg-dimension">
+        <option value="all">All dimensions</option>
+        {%- for group in site.data.paper_views.dimension.groups %}
+        {%- assign mapped = site.data.content_tags.dimension_labels[group.key] %}
+        {%- if mapped %}{% assign dlabel = mapped %}{% else %}{% assign dlabel = group.key | replace: '-', ' ' | capitalize %}{% endif %}
+        <option value="{{ group.key }}">{{ dlabel }} ({{ group.n }})</option>
+        {%- endfor %}
+      </select>
+
+      <label for="jcg-organism">Organism:</label>
+      <select id="jcg-organism">
+        <option value="all">All organisms</option>
+        {%- for group in site.data.paper_views.organism.groups %}
+        <option value="{{ group.key }}">{{ group.label | default: group.key | capitalize }} ({{ group.n }})</option>
+        {%- endfor %}
+      </select>
+
+      <label for="jcg-dataset">Dataset:</label>
+      <select id="jcg-dataset">
+        <option value="all">All datasets</option>
+        {%- for group in site.data.paper_views.dataset.groups %}
+        <option value="{{ group.key }}">{{ group.label | default: group.key }} ({{ group.n }})</option>
+        {%- endfor %}
+      </select>
+
+      <label for="jcg-search">Highlight (title, author, method…):</label>
+      <input type="text" id="jcg-search" placeholder="e.g. FlyWire, Lichtman, CATMAID…">
 
       <button id="jcg-reset" type="button">Reset view</button>
 
@@ -43,6 +69,7 @@ content_type: core
 
     <div class="jcg-canvas-wrap">
       <canvas id="jcg-canvas"></canvas>
+      <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
       <div class="jcg-panel hidden" id="jcg-panel">
         <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
         <div class="jcg-panel-body" id="jcg-panel-body"></div>
@@ -61,7 +88,13 @@ content_type: core
 .jcg-era-fieldset { border: 1px solid var(--brain-gray); border-radius: 8px; padding: 0.5rem 0.75rem; }
 .jcg-era-fieldset legend { font-weight: 700; font-size: 0.8rem; padding: 0 0.3rem; }
 .jcg-era-fieldset label { display: block; font-weight: 400; margin: 0.2rem 0; }
-#jcg-search { padding: 0.4rem 0.6rem; border: 1px solid #d1d5db; border-radius: 6px; }
+.jcg-controls select,
+#jcg-search {
+  width: 100%; box-sizing: border-box; padding: 0.4rem 0.6rem;
+  border: 1px solid #d1d5db; border-radius: 6px; background: var(--white);
+  font-size: 0.85rem; color: #374151;
+}
+.jcg-controls input[type="range"] { width: 100%; }
 #jcg-reset {
   background: var(--brain-gray); border: 1px solid #d1d5db; border-radius: 6px;
   padding: 0.4rem 0.8rem; cursor: pointer; font-weight: 600; align-self: flex-start;
@@ -76,6 +109,17 @@ content_type: core
 .jcg-canvas-wrap { position: relative; background: var(--white); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
 #jcg-canvas { display: block; width: 100%; height: 640px; cursor: grab; }
 #jcg-canvas.dragging { cursor: grabbing; }
+
+.jcg-tooltip {
+  position: absolute; pointer-events: none; z-index: 5;
+  background: rgba(17, 24, 39, 0.92); color: #fff; border-radius: 6px;
+  padding: 0.4rem 0.6rem; font-size: 0.78rem; line-height: 1.4;
+  max-width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translate(12px, 12px);
+}
+.jcg-tooltip.hidden { display: none; }
+.jcg-tooltip strong { display: block; font-size: 0.82rem; margin-bottom: 0.15rem; }
+.jcg-tooltip span { color: #cbd5e1; }
 
 .jcg-panel {
   position: absolute; top: 1rem; right: 1rem; width: min(340px, calc(100% - 2rem));
@@ -122,6 +166,9 @@ content_type: core
   var kcoreEl = document.getElementById('jcg-kcore');
   var kcoreVal = document.getElementById('jcg-kcore-val');
   var eraChecks = Array.from(document.querySelectorAll('.jcg-era-check'));
+  var dimensionEl = document.getElementById('jcg-dimension');
+  var organismEl = document.getElementById('jcg-organism');
+  var datasetEl = document.getElementById('jcg-dataset');
   var searchEl = document.getElementById('jcg-search');
   var countEl  = document.getElementById('jcg-count');
   var resetBtn = document.getElementById('jcg-reset');
@@ -149,13 +196,29 @@ content_type: core
   var userAdjustedView = false;
   var frameCount = 0;
 
+  function percentile(sorted, p) {
+    var idx = Math.floor(sorted.length * p);
+    return sorted[Math.min(idx, sorted.length - 1)];
+  }
+
   function fitView() {
     if (!visibleNodes.length) return;
-    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    visibleNodes.forEach(function (n) {
-      minX = Math.min(minX, n.x); maxX = Math.max(maxX, n.x);
-      minY = Math.min(minY, n.y); maxY = Math.max(maxY, n.y);
-    });
+    // Percentile bounds (5th-95th) rather than true min/max: the force layout
+    // occasionally flings one or two nodes out before the speed cap and
+    // centering force reel them back in, and a naive min/max bounding box
+    // would zoom the whole view out to fit that one outlier, shrinking the
+    // real cluster to an unclickable speck. Fewer than 20 visible nodes skips
+    // the trim (not enough points for percentiles to mean anything).
+    var xs = visibleNodes.map(function (n) { return n.x; }).sort(function (a, b) { return a - b; });
+    var ys = visibleNodes.map(function (n) { return n.y; }).sort(function (a, b) { return a - b; });
+    var minX, maxX, minY, maxY;
+    if (xs.length >= 20) {
+      minX = percentile(xs, 0.05); maxX = percentile(xs, 0.95);
+      minY = percentile(ys, 0.05); maxY = percentile(ys, 0.95);
+    } else {
+      minX = xs[0]; maxX = xs[xs.length - 1];
+      minY = ys[0]; maxY = ys[ys.length - 1];
+    }
     var w = Math.max(maxX - minX, 1), h = Math.max(maxY - minY, 1);
     var canvasW = canvas.width / devicePixelRatio, canvasH = canvas.height / devicePixelRatio;
     var scale = Math.min(canvasW / w, canvasH / h) * 0.85;
@@ -171,7 +234,8 @@ content_type: core
       return {
         id: d.id, title: d.title, authors: d.authors, year: d.year, journal: d.journal,
         doi: d.doi, dimension: d.dimension, era: d.era, kcore: d.kcore || 0,
-        organism: d.organism || [], summary: d.summary, cites: d.cites || [],
+        organism: d.organism || [], dataset: d.dataset || [], method: d.method || [],
+        axis: d.axis, summary: d.summary, cites: d.cites || [],
         x: Math.cos(angle) * r, y: Math.sin(angle) * r, vx: 0, vy: 0
       };
     });
@@ -196,7 +260,15 @@ content_type: core
   function rebuild() {
     var minK = parseInt(kcoreEl.value, 10);
     var eras = eraChecks.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
-    visibleNodes = allNodes.filter(function (n) { return n.kcore >= minK && eras.indexOf(n.era) !== -1; });
+    var dim = dimensionEl.value;
+    var organism = organismEl.value;
+    var dataset = datasetEl.value;
+    visibleNodes = allNodes.filter(function (n) {
+      return n.kcore >= minK && eras.indexOf(n.era) !== -1 &&
+        (dim === 'all' || n.dimension === dim) &&
+        (organism === 'all' || n.organism.indexOf(organism) !== -1) &&
+        (dataset === 'all' || n.dataset.indexOf(dataset) !== -1);
+    });
     var idSet = {};
     visibleNodes.forEach(function (n) { idSet[n.id] = true; });
     visibleEdges = [];
@@ -220,7 +292,7 @@ content_type: core
     if (alpha < 0.01) return;
     var n = visibleNodes.length;
     if (n === 0) { alpha = 0; return; }
-    var repelK = 1800;
+    var repelK = 400;
     for (var i = 0; i < n; i++) {
       var a = visibleNodes[i];
       if (a === dragging) continue;
@@ -229,14 +301,24 @@ content_type: core
         if (i === j) continue;
         var b = visibleNodes[j];
         var dx = a.x - b.x, dy = a.y - b.y;
-        var d2 = dx * dx + dy * dy + 0.01;
+        // Epsilon of 25 (not 0.01) floors the minimum effective distance at ~5
+        // units, so two nodes spawning almost on top of each other don't produce
+        // a near-singular force that flings one to the edge of the simulation --
+        // that outlier then wrecked fitView()'s bounding box for everyone else.
+        var d2 = dx * dx + dy * dy + 25;
         var f = repelK / d2;
         fx += dx * f; fy += dy * f;
       }
       // gentle centering
-      fx += -a.x * 0.002; fy += -a.y * 0.002;
+      fx += -a.x * 0.01; fy += -a.y * 0.01;
       a.vx = (a.vx + fx * alpha) * 0.85;
       a.vy = (a.vy + fy * alpha) * 0.85;
+      // Speed cap: without this, a single high-alpha frame near a near-singular
+      // pair could still impart enough velocity to send a node flying outward
+      // faster than centering/damping can reel it back in before alpha decays.
+      var speed = Math.sqrt(a.vx * a.vx + a.vy * a.vy);
+      var maxSpeed = 30;
+      if (speed > maxSpeed) { a.vx = a.vx / speed * maxSpeed; a.vy = a.vy / speed * maxSpeed; }
     }
     visibleEdges.forEach(function (e) {
       if (!e.target) return;
@@ -280,7 +362,9 @@ content_type: core
       var matches = query && (
         n.title.toLowerCase().indexOf(query) !== -1 ||
         (n.authors || '').toLowerCase().indexOf(query) !== -1 ||
-        n.organism.join(' ').toLowerCase().indexOf(query) !== -1
+        n.organism.join(' ').toLowerCase().indexOf(query) !== -1 ||
+        n.method.join(' ').toLowerCase().indexOf(query) !== -1 ||
+        n.dataset.join(' ').toLowerCase().indexOf(query) !== -1
       );
       var r = radiusFor(n);
       ctx.beginPath();
@@ -289,6 +373,13 @@ content_type: core
       ctx.globalAlpha = query && !matches ? 0.15 : 1;
       ctx.fill();
       if (matches) {
+        ctx.lineWidth = 2 / view.scale;
+        ctx.strokeStyle = '#111827';
+        ctx.stroke();
+      }
+      if (n === hoveredNode) {
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, r + 3 / view.scale, 0, Math.PI * 2);
         ctx.lineWidth = 2 / view.scale;
         ctx.strokeStyle = '#111827';
         ctx.stroke();
@@ -405,8 +496,43 @@ content_type: core
   }
   panelClose.addEventListener('click', function () { panel.classList.add('hidden'); });
 
+  // --- hover tooltip: a lightweight preview, separate from the click panel ---
+  var tooltip = document.getElementById('jcg-tooltip');
+  var hoveredNode = null;
+  canvas.addEventListener('mousemove', function (e) {
+    if (dragging || panning) { tooltip.classList.add('hidden'); return; }
+    var pos = canvasPos(e);
+    var n = nodeAt(pos.x, pos.y);
+    if (n !== hoveredNode) {
+      hoveredNode = n;
+      canvas.style.cursor = n ? 'pointer' : '';
+    }
+    if (!n) { tooltip.classList.add('hidden'); return; }
+    tooltip.innerHTML = '<strong>' + escapeHtml(n.title) + '</strong>' +
+      '<span>' + (n.authors ? escapeHtml(n.authors.split(';')[0]) + ' et al., ' : '') + n.year +
+      ' &middot; ' + n.dimension.replace(/-/g, ' ') + ' &middot; k-core ' + n.kcore + '</span>';
+    tooltip.classList.remove('hidden');
+    // Flip to the opposite side of the cursor when the default offset would
+    // push the tooltip past the canvas edge and get clipped by overflow:hidden.
+    var tw = tooltip.offsetWidth, th = tooltip.offsetHeight;
+    var canvasCssW = canvas.width / devicePixelRatio, canvasCssH = canvas.height / devicePixelRatio;
+    var left = (pos.x + 12 + tw > canvasCssW) ? pos.x - tw - 12 : pos.x + 12;
+    var top = (pos.y + 12 + th > canvasCssH) ? pos.y - th - 12 : pos.y + 12;
+    tooltip.style.left = Math.max(0, left) + 'px';
+    tooltip.style.top = Math.max(0, top) + 'px';
+    tooltip.style.transform = 'none';
+  });
+  canvas.addEventListener('mouseleave', function () {
+    hoveredNode = null;
+    tooltip.classList.add('hidden');
+    canvas.style.cursor = '';
+  });
+
   kcoreEl.addEventListener('input', function () { kcoreVal.textContent = this.value; rebuild(); startLoop(); });
   eraChecks.forEach(function (c) { c.addEventListener('change', function () { rebuild(); startLoop(); }); });
+  dimensionEl.addEventListener('change', function () { rebuild(); startLoop(); });
+  organismEl.addEventListener('change', function () { rebuild(); startLoop(); });
+  datasetEl.addEventListener('change', function () { rebuild(); startLoop(); });
   searchEl.addEventListener('input', function () { /* draw() picks it up each frame while alpha > 0 */ if (alpha < 0.05) { alpha = 0.05; startLoop(); } });
   resetBtn.addEventListener('click', function () {
     userAdjustedView = false;

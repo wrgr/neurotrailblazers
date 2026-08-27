@@ -1,0 +1,21 @@
+{% comment %}
+  Usage: {% include callouts/community-resources.html unit="04" %}
+  Renders the verified resource list for that unit from
+  _data/community_resources.yml. Silently renders nothing if the unit has no
+  entry (e.g. unit 03, which uses em-imaging-visual-note.html instead).
+{% endcomment %}
+{% assign entry = site.data.community_resources[include.unit] %}
+{% if entry and entry.resources %}
+<div class="callout-box callout-note community-resources-note">
+  <p><strong>Key community resources for this unit:</strong></p>
+  <ul>
+    {% for r in entry.resources %}
+    <li>
+      {% if r.url and r.url != "" %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.name }}</a>{% else %}{{ r.name }}{% endif %}
+      {% if r.citation %} &mdash; <em>{{ r.citation }}</em>{% endif %}
+      {% if r.note %}<br>{{ r.note }}{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

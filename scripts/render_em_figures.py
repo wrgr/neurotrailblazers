@@ -399,6 +399,91 @@ def subcompartment_figure(out_dir, centre, nm_per_px=32, npx=760):
     save(img, out_dir, 'subcompartment-classes.jpg')
 
 
+def proofread_before_after(out_dir, cell_id=3955003482, centre=(2487902, 1440845, 28512),
+                           nm_per_px=8, npx=820):
+    """Raw EM, the automated segmentation's answer, and the proofread answer.
+
+    H01 ships 104 manually proofread cells alongside the automated segmentation,
+    so "before and after a human fixed it" is directly renderable rather than
+    reconstructed. Note where the errors are NOT: at a cell body the automated
+    result is essentially perfect. The corrections live out in the thin neurites,
+    which is exactly why proofreading is expensive.
+    """
+    pf = layer('proofread_104', '8.0x8.0x33.0')
+    auto = layer('c2', '8.0x8.0x33.0')
+    x0, y0 = int(centre[0] / nm_per_px) - npx // 2, int(centre[1] / nm_per_px) - npx // 2
+    z = int(centre[2] / 33)
+    P = pf[x0:x0 + npx, y0:y0 + npx, z, 0].read().result().T
+    A = auto[x0:x0 + npx, y0:y0 + npx, z, 0].read().result().T
+    grey = stretch(em(centre[0], centre[1], centre[2], nm_per_px, npx)).T
+
+    truth = P == cell_id
+    if truth.sum() < 500:
+        print("  (proofread cell not in this field; skipping before/after)")
+        return
+    sub = A[truth]; sub = sub[sub != 0]
+    vals, counts = np.unique(sub, return_counts=True)
+    auto_seg = vals[counts.argmax()]
+    predicted = A == auto_seg
+    wrong = predicted & ~truth          # merged on by the algorithm, removed by hand
+    right = predicted & truth
+
+    # Re-centre on the correction itself. The starting coordinate is the cell's
+    # soma, but the interesting thing is the boundary between what the algorithm
+    # claimed and what a human kept -- put that in the middle of the frame.
+    if wrong.any():
+        wy, wx = np.nonzero(wrong)
+        ry, rx = np.nonzero(right)
+        tx, ty = (wx.mean() + rx.mean()) / 2, (wy.mean() + ry.mean()) / 2
+        centre = (centre[0] + int((tx - npx / 2) * nm_per_px),
+                  centre[1] + int((ty - npx / 2) * nm_per_px), centre[2])
+        x0 = int(centre[0] / nm_per_px) - npx // 2
+        y0 = int(centre[1] / nm_per_px) - npx // 2
+        P = pf[x0:x0 + npx, y0:y0 + npx, z, 0].read().result().T
+        A = auto[x0:x0 + npx, y0:y0 + npx, z, 0].read().result().T
+        grey = stretch(em(centre[0], centre[1], centre[2], nm_per_px, npx)).T
+        truth = P == cell_id
+        predicted = A == auto_seg
+        wrong = predicted & ~truth
+        right = predicted & truth
+
+    GREEN, RED = (95, 190, 110), (233, 90, 90)
+    panels = []
+
+    def compose(mask_colour_pairs, title):
+        rgb = np.stack([grey] * 3, -1).astype(np.float32)
+        overlay = np.zeros_like(rgb)
+        any_m = np.zeros(grey.shape, bool)
+        for msk, col in mask_colour_pairs:
+            overlay[msk] = col
+            any_m |= msk
+        out = np.where(any_m[..., None], rgb * 0.45 + overlay * 0.55, rgb).astype(np.uint8)
+        img = Image.fromarray(out)
+        d = ImageDraw.Draw(img)
+        decorate(img, nm_per_px)
+        d.rectangle([0, 0, npx, 34], fill=(0, 0, 0))
+        d.text((10, 8), title, fill=(255, 255, 255), font=font(20))
+        return np.array(img)
+
+    panels.append(compose([], 'Raw EM'))
+    panels.append(compose([(right, GREEN), (wrong, RED)],
+                          'Automated — one object'))
+    panels.append(compose([(truth, GREEN)], 'After proofreading'))
+
+    gap = np.full((panels[0].shape[0], 10, 3), 255, np.uint8)
+    strip = Image.fromarray(np.hstack([panels[0], gap, panels[1], gap, panels[2]]))
+    d = ImageDraw.Draw(strip)
+    note = f'red = {wrong.sum():,} voxels the algorithm merged on; a human removed them'
+    f = font(19)
+    tw = d.textlength(note, font=f)
+    d.rectangle([strip.width // 2 - tw // 2 - 12, strip.height - 40,
+                 strip.width // 2 + tw // 2 + 12, strip.height - 8], fill=(0, 0, 0))
+    d.text((strip.width // 2 - tw // 2, strip.height - 36), note, fill=RED, font=f)
+    save(strip, out_dir, 'proofreading-before-after.jpg')
+    print(f"    (cell {cell_id}; automated segment {auto_seg}; "
+          f"{wrong.sum()} merged-on voxels)")
+
+
 def main():
     out_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_OUT
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -430,6 +515,7 @@ def main():
     raw_vs_overlay(out_dir, found.get('dendrite', anchor))
     myelin_field(out_dir, found.get('myelin', anchor))
     merge_split_figure(out_dir)
+    proofread_before_after(out_dir)
     print("done")
 
 

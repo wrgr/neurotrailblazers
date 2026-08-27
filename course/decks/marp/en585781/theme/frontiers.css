@@ -1,0 +1,283 @@
+/* @theme frontiers */
+/*
+ * Deck theme for EN.585.781 Frontiers in Neuroengineering, connectomics block.
+ * 16:9, high-contrast, sized for a projected lecture hall: nothing below 20px.
+ */
+
+@import 'default';
+
+:root {
+  --ink: #12161c;
+  --ink-soft: #414b59;
+  --rule: #d3d9e2;
+  --paper: #ffffff;
+  --paper-alt: #f4f6fa;
+  --accent: #1f6fb2;
+  --accent-dark: #14456e;
+  --warn: #a8410a;
+  
+  --good: #1c6b43;
+  --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+section {
+  width: 1280px;
+  height: 720px;
+  padding: 42px 56px 50px;
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.36;
+  color: var(--ink);
+  background: var(--paper);
+  letter-spacing: -0.005em;
+}
+
+section::after {
+  font-size: 15px;
+  color: #8892a2;
+  right: 34px;
+  bottom: 22px;
+}
+
+/* ---------- headings ---------- */
+
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.16;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 4px;
+  letter-spacing: -0.015em;
+}
+
+/* h3 is the standing deck convention for the one-line claim under the title */
+h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--accent);
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--rule);
+  letter-spacing: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 12px 0 5px;
+}
+
+/* ---------- body ---------- */
+
+ul, ol { margin: 4px 0 7px; padding-left: 23px; }
+li { margin-bottom: 6px; }
+li > ul, li > ol { margin: 5px 0 0; }
+li > ul > li { font-size: 19px; color: var(--ink-soft); margin-bottom: 4px; }
+
+strong { color: var(--accent-dark); font-weight: 700; }
+em { color: var(--ink-soft); }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #b9d3e8; }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+pre {
+  background: #10161f;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font-size: 18px;
+  line-height: 1.42;
+  box-shadow: none;
+}
+pre code {
+  background: none;
+  border: none;
+  color: #e6edf6;
+  font-size: 18px;
+  padding: 0;
+}
+
+blockquote {
+  border-left: 5px solid var(--accent);
+  background: var(--paper-alt);
+  margin: 10px 0;
+  padding: 11px 18px;
+  font-size: 20px;
+  color: var(--ink);
+  border-radius: 0 6px 6px 0;
+}
+blockquote::before, blockquote::after { content: none; }
+
+/* ---------- tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin: 7px 0;
+}
+th {
+  background: var(--accent-dark);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 6px 10px;
+  border: none;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+td {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: var(--paper-alt); }
+
+/* Dense tables: opt in with <!-- _class: dense --> */
+section.dense table { font-size: 15px; line-height: 1.28; }
+section.dense th { font-size: 14px; padding: 5px 7px; }
+section.dense td { padding: 4px 7px; }
+section.dense { font-size: 19px; }
+
+/* ---------- slide kinds ---------- */
+
+/* Deck cover */
+section.cover {
+  background: linear-gradient(135deg, #14456e 0%, #1f6fb2 55%, #2f8fc9 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 84px;
+}
+section.cover h1 { color: #fff; font-size: 56px; margin-bottom: 10px; }
+section.cover h3 {
+  color: #cfe6f7;
+  border-bottom: none;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 0;
+  margin-bottom: 34px;
+}
+section.cover p { font-size: 22px; color: #dceaf6; margin: 3px 0; }
+section.cover strong { color: #fff; }
+section.cover::after { color: rgba(255,255,255,0.55); }
+
+/* Part divider */
+section.part {
+  background: var(--accent-dark);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 84px;
+}
+section.part h1 { color: #fff; font-size: 48px; }
+section.part h3 { color: #a8cbe6; border-bottom: none; padding-bottom: 0; font-size: 26px; }
+section.part ul { font-size: 24px; color: #dceaf6; }
+section.part li { margin-bottom: 11px; }
+section.part strong { color: #fff; }
+section.part::after { color: rgba(255,255,255,0.55); }
+
+/* Emphasis / single-claim slide */
+section.claim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--paper-alt);
+}
+section.claim h2 { font-size: 36px; line-height: 1.22; color: var(--accent-dark); }
+section.claim p { font-size: 23px; color: var(--ink-soft); }
+
+/* Two columns: wrap content in <div class="cols">…</div> with two children */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cols--wide-left { grid-template-columns: 1.4fr 1fr; }
+.cols--wide-right { grid-template-columns: 1fr 1.4fr; }
+.cols > div > *:first-child { margin-top: 0; }
+
+/* Callout boxes */
+.box {
+  border: 1px solid var(--rule);
+  border-left: 5px solid var(--accent);
+  background: var(--paper-alt);
+  border-radius: 0 6px 6px 0;
+  padding: 9px 15px;
+  font-size: 19px;
+  margin: 8px 0;
+}
+.box--warn { border-left-color: var(--warn); background: #fdf3ed; }
+.box--good { border-left-color: var(--good); background: #eef7f1; }
+.box h4 { margin-top: 0; font-size: 17px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); }
+.box p:last-child, .box ul:last-child { margin-bottom: 0; }
+
+/* Small print: sources, attribution */
+.src { font-size: 14px; color: #7c869a; margin-top: 9px; line-height: 1.35; }
+.src a { border-bottom: none; color: #7c869a; }
+
+/* Question prompt for in-class use */
+.ask {
+  font-size: 22px;
+  color: var(--accent-dark);
+  font-weight: 600;
+  border-top: 2px solid var(--rule);
+  padding-top: 10px;
+  margin-top: 12px;
+}
+
+/* Slide-count badge on part dividers */
+.meta { font-size: 18px; color: #a8cbe6; margin-top: 20px; }
+
+img { border-radius: 6px; }
+
+/* Opt-in extra density for slides that still overrun the frame.
+   <!-- _class: tight --> shaves roughly 12%; combine with dense for tables. */
+section.tight { font-size: 20px; line-height: 1.3; padding: 36px 52px 44px; }
+section.tight h1 { font-size: 36px; margin-bottom: 9px; }
+section.tight h2 { font-size: 27px; }
+section.tight h3 { font-size: 18px; margin-bottom: 11px; padding-bottom: 7px; }
+section.tight li { margin-bottom: 4px; }
+section.tight p { margin: 6px 0; }
+section.tight .box { font-size: 17px; padding: 8px 13px; margin: 6px 0; }
+section.tight .ask { font-size: 20px; padding-top: 8px; margin-top: 9px; }
+section.tight table { font-size: 16px; }
+section.tight th { font-size: 15px; padding: 5px 8px; }
+section.tight td { padding: 4px 8px; }
+section.tight pre, section.tight pre code { font-size: 16px; }
+section.tight .cols { gap: 18px; }
+
+section.dense.tight table { font-size: 14px; line-height: 1.24; }
+section.dense.tight th { font-size: 13px; padding: 4px 6px; }
+section.dense.tight td { padding: 3px 6px; }
+
+/* Reference slides: many short citations, no need for lecture-hall sizing. */
+section.refs { font-size: 17px; line-height: 1.42; padding: 36px 52px 42px; }
+section.refs h2 { font-size: 26px; }
+section.refs h3 { font-size: 17px; margin-bottom: 10px; }
+section.refs p { margin: 7px 0; }
+section.refs strong { color: var(--accent-dark); }
+
+/* refs + tight: the reference slides that still overrun. Declared after the
+   .refs block so it wins on equal specificity. */
+section.refs.tight { font-size: 15px; line-height: 1.36; padding: 30px 48px 36px; }
+section.refs.tight h2 { font-size: 24px; }
+section.refs.tight h3 { font-size: 15px; margin-bottom: 8px; padding-bottom: 6px; }
+section.refs.tight p { margin: 6px 0; }

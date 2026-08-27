@@ -16,6 +16,8 @@ prerequisites: "Units 03-07"
 content_type: path
 ---
 
+{% include callouts/community-resources.html unit="08" %}
+
 ## Before you start
 
 | | |
@@ -50,6 +52,13 @@ prioritized and when it is declared finished.
 ## 1. How automated segmentation works, briefly
 
 Enough to reason about its failures. (Full detail: Unit 04 §1 and the content library.)
+
+For a worked case of everything in this unit on one real dataset, see
+[H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}):
+it shows flood-filling network output overlaid on raw EM, why H01 ships **two**
+agglomerations that trade merge errors against split errors in opposite directions, the
+measured split/merge correction counts for each, and what 104 proofread cells out of
+16,087 neurons means in practice.
 
 **The affinity/agglomeration family.** A network predicts, per voxel, the affinity
 between neighboring voxels. Watershed at a conservative threshold produces

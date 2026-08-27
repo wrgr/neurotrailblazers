@@ -29,7 +29,7 @@ Every entry below is a **standalone, richly detailed reference document**. Each 
 - Common misconceptions and how to address them
 - **Tags** for cross-referencing across dimensions
 - **Combines-with** links identifying entries that pair well together, shown at the top of each entry
-- Figure specifications for planned teaching illustrations — written as captions and alt text in each entry's metadata; the illustrations themselves are not yet produced
+- **Real electron micrographs** on the entries that make visual claims, rendered from the public H01 human cortex volume — see the [EM figure library]({{ '/content-library/em-figures/' | relative_url }}). Entries also carry older `reference_images` front matter describing figures that were specified but never produced; that metadata is not rendered, and is being replaced by the figures above as each entry is covered
 
 Unit pages, slide decks, and modules **link to** these entries rather than duplicating content. This keeps the curriculum DRY (Don't Repeat Yourself) and ensures a single source of truth for each topic.
 
@@ -55,6 +55,8 @@ Content is tagged across 9 dimensions for flexible combination:
 
 Ultrastructural biology of neurons as seen in electron microscopy.
 
+[Browse 23 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=neuroanatomy' | relative_url }}) &rarr;
+
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
 | [Soma ultrastructure]({{ '/content-library/neuroanatomy/soma-ultrastructure/' | relative_url }}) | Nuclear envelope, Nissl substance, Golgi, lipofuscin; EM identification | 05 |
@@ -68,6 +70,8 @@ Ultrastructural biology of neurons as seen in electron microscopy.
 
 Quality control of automated segmentation at connectome scale.
 
+[Browse 78 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=proofreading' | relative_url }}) &rarr;
+
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
 | [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) | Merge, split, boundary, and identity errors with examples | 08 |
@@ -79,6 +83,8 @@ Quality control of automated segmentation at connectome scale.
 ## Connectomics
 
 Graph analysis, motif search, and the bridge to NeuroAI.
+
+[Browse 207 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=connectomics' | relative_url }}) &rarr; (or [205 more tagged graph-analysis]({{ '/technical-training/journal-club/?dimension=graph-analysis' | relative_url }}))
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -93,6 +99,8 @@ Graph analysis, motif search, and the bridge to NeuroAI.
 
 EM acquisition, image formation, and artifact management.
 
+[Browse 230 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=image-acquisition' | relative_url }}) &rarr;
+
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
 | [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) | Beam physics, contrast mechanisms, SEM vs TEM, resolution limits | 03 |
@@ -104,6 +112,8 @@ EM acquisition, image formation, and artifact management.
 
 Reconstruction pipelines, data formats, and reproducibility.
 
+[Browse 107 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=infrastructure' | relative_url }}) &rarr;
+
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
 | [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) | Ingest, alignment, segmentation, agglomeration, serving | 04 |
@@ -113,6 +123,8 @@ Reconstruction pipelines, data formats, and reproducibility.
 ## Cell types
 
 Identification and classification of neuronal and glial cell types in EM.
+
+[Browse 22 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=cell-types' | relative_url }}) &rarr;
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -129,8 +141,17 @@ Deep dives into landmark connectomics projects.
 | [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) | 140K neurons, collaborative proofreading, brain-wide circuit analysis | 08, 09 |
 | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) | mm³ mouse cortex, functional connectomics, structure-function linking | 01, 03, 08, 09 |
 | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) | Petavoxel human fragment, unique challenges, pathological features | 05, 08 |
+| [H01, step by step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) | The full production pipeline — tissue, staining, sectioning, 61-beam imaging, alignment, segmentation, synapse detection — with figures rendered from the public volume | 03, 04, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
 | [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
+
+## EM figure library
+
+Every electron micrograph on this site in one place — with captions, attribution and
+ready-to-paste slide lines. All rendered from the public H01 human cortex volume and
+reusable under CC BY 4.0.
+
+[Browse the EM figure library]({{ '/content-library/em-figures/' | relative_url }}) &rarr;
 
 ## Journal paper collection
 
@@ -138,12 +159,12 @@ Deep dives into landmark connectomics projects.
 **beginner**, **intermediate**, and **advanced** expertise levels, plus key figures and
 discussion prompts. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
 
-This is a different collection from the
-[journal club corpus]({{ '/technical-training/journal-club/' | relative_url }}), which
-holds {{ site.data.journal_papers.papers.size }} bibliometrically selected papers as
-structured data. The two overlap by 35 papers and are built for different jobs — the
-[collection index]({{ '/content-library/journal-papers/' | relative_url }}) explains which
-to reach for.
+This is a hand-picked subset of the same underlying collection behind the
+[journal club]({{ '/technical-training/journal-club/' | relative_url }}), which holds
+the full {{ site.data.journal_papers.papers.size }}-paper visible core as structured,
+filterable data — not a second, competing library. The
+[collection index]({{ '/content-library/journal-papers/' | relative_url }}) explains
+which to reach for.
 
 | Dimension | Papers | Focus |
 |-----------|--------|-------|

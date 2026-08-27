@@ -129,6 +129,12 @@ to confirm they are assigned to the correct pre- and post-synaptic segments.
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/proofreading-before-after.jpg"
+   alt="Three panels of the same human cortex field: raw electron microscopy; the automated segmentation showing one object in green with a wrongly attached region in red; and the proofread result with only the green object remaining."
+   caption="A real merge error, before and after a human fixed it. Left: raw EM. Middle: the automated segmentation claims all of this is one cell &mdash; green is genuinely part of it, red is a separate process it wrongly absorbed. Right: the proofread version, with those 11,038 voxels removed. Look at the raw panel again and ask whether you would have caught it: the boundary the algorithm crossed is a real membrane, but a faint one, and the merged process is entirely plausible as a branch. This is what the &ldquo;merges are hard to see&rdquo; argument looks like in practice."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Automated segmentation is H01&#39;s <code>c2</code>; the corrected version is one of its 104 manually proofread cells. Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## Scenario 2: Split Neuron Through Low-Contrast Sections
 
 ### Background

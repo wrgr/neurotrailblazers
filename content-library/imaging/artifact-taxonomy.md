@@ -38,6 +38,8 @@ combines_with:
 content_type: core
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Overview
 
 Every EM dataset contains artifacts. The question is never "are there artifacts?" but rather "which artifacts are present, how severe are they, and what is their downstream cost?" Annotators and analysts who understand the artifact landscape make better decisions — they avoid over-interpreting corrupted regions, they know when to flag data for re-acquisition vs when to work around it, and they can trace apparent segmentation errors back to their imaging root cause.

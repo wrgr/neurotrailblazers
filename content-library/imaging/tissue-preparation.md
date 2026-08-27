@@ -38,6 +38,8 @@ combines_with:
 content_type: core
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Overview
 
 The goal of tissue preparation for connectomics is to stabilize biological ultrastructure, make it visible to electrons, and present it in a format compatible with serial imaging. Every step in the preparation chain — fixation, staining, dehydration, embedding, and sectioning — introduces tradeoffs between preservation fidelity, contrast quality, and throughput. Understanding these tradeoffs is essential for anyone who interprets EM data, because preparation choices create the artifact profile that propagates through the entire reconstruction pipeline.

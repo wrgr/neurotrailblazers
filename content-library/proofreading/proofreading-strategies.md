@@ -204,6 +204,12 @@ neurons of interest.
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/proofreading-before-after.jpg"
+   alt="Three panels of the same human cortex field: raw electron microscopy; the automated segmentation showing one object in green with a wrongly attached region in red; and the proofread result with only the green object remaining."
+   caption="The product of targeted proofreading. The automated segmentation (middle) attached a neighbouring process, shown in red, to this cell; a proofreader removed it (right). H01 ships 104 cells corrected this way against roughly 16,000 neurons in the volume &mdash; which is the cost argument of this entry in a single image. Note also where the error is <em>not</em>: at the cell body the automated result needs no correction at all. The corrections live in thin neurites, and that is what makes them expensive to find."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Automated segmentation is H01&#39;s <code>c2</code>; the corrected version is one of its 104 manually proofread cells. Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 4. Priority-Ranked Proofreading
 
 ### 4.1 Definition

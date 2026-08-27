@@ -55,6 +55,14 @@ content_type: core
 
 # H01 Human Cortex Fragment
 
+<div class="callout-box callout-note">
+  <p><strong>Looking for how it was built?</strong> This page is the overview — what H01
+  is and what it shows. <a href="{{ '/content-library/case-studies/h01-pipeline/' | relative_url }}">H01, Step by Step</a>
+  walks the whole production pipeline instead, stage by stage, from surgical tissue
+  through staining, sectioning, 61-beam imaging, alignment, segmentation and synapse
+  detection — illustrated with figures rendered directly from the public volume.</p>
+</div>
+
 > ### Before you quote a number from this page
 >
 > Every figure below — cell counts, synapse counts, volume sizes, proofreading

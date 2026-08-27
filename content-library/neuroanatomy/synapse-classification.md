@@ -105,6 +105,12 @@ Type II synapses show roughly equal density on both sides of the synaptic juncti
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg"
+   alt="Two synapses side by side at 4 nm per pixel: an excitatory synapse on the left and an inhibitory synapse on the right, each marked only by ticks at the frame edge so the densities are unobstructed."
+   caption="Two real synapses at matched scale, the dataset&#39;s own excitatory (left) and inhibitory (right) calls. Nothing is drawn over either synapse &mdash; the ticks sit at the frame edge and point to the centre &mdash; because the density is the evidence. Note how <em>subtle</em> the asymmetry is: at 4 nm a Type I PSD is only 8&ndash;12 pixels thick, and H01&#39;s own excitatory/inhibitory classifier is right about 85&ndash;87% of the time. This is the real difficulty of the task, not the idealised diagram version."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 2. The Continuum Problem
 
 An important caveat: not all synapses fit neatly into the Type I / Type II dichotomy. Colonnier (1968) was among the first to emphasize that synapses exist on a morphological continuum:

@@ -1,0 +1,17 @@
+{% comment %}
+  Usage:
+    {% include figure.html src="/assets/images/.../foo.jpg" alt="..."
+       caption="What the reader is looking at." credit="Source line." %}
+
+  A plain <figure> with a caption and an optional credit line. Exists because
+  the site had `reference_images` front matter on many pages that no layout
+  ever rendered, so figures silently did not appear. This renders inline where
+  it is called, so a figure is visible or it is not there at all.
+{% endcomment %}
+<figure class="ntb-figure">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  <figcaption>
+    {% if include.caption %}<span class="ntb-figure-caption">{{ include.caption }}</span>{% endif %}
+    {% if include.credit %}<span class="ntb-figure-credit">{{ include.credit }}</span>{% endif %}
+  </figcaption>
+</figure>

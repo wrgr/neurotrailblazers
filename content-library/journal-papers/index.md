@@ -18,21 +18,29 @@ and tagged for cross-referencing with the content library. Each entry carries:
 - **Discussion prompts** — ready-to-use journal club questions
 - **Related content** — links to content library entries for deeper context
 
-## This is not the only paper collection, and the difference matters
+## One collection, two ways to read it
 
-There are two, built for different jobs, and they overlap by **35 papers**:
+This page is a hand-curated **deep-dive subset** of the same underlying collection that
+powers the [journal club]({{ '/technical-training/journal-club/' | relative_url }}) — not
+a second library. The journal club now holds the **full visible core**,
+{{ site.data.journal_papers.papers | size }} papers selected and annotated by the field's
+citation graph. These eleven pages are a hand-picked ~96-paper path through the same
+territory, written to lay out the argument of each paper rather than to be filtered
+programmatically. See the [methodology page]({{ '/content-library/journal-papers/methodology/' | relative_url }})
+for how the full collection was built.
 
-| | This collection | [Journal club corpus]({{ '/technical-training/journal-club/' | relative_url }}) |
+| | This collection | [Full corpus]({{ '/technical-training/journal-club/' | relative_url }}) |
 |---|---|---|
-| **Size** | 96 papers | 191 papers |
-| **Selected by** | Hand, for teaching a specific dimension | Bibliometric ranking over the field's literature |
+| **Size** | 96 papers | {{ site.data.journal_papers.papers | size }} papers |
+| **Selected by** | Hand, for teaching a specific dimension | Citation-graph inclusion bar over the field's literature |
 | **Lives in** | These eleven markdown pages | `_data/journal_papers.yml` |
-| **Each entry has** | Three-level summaries, key figures, discussion prompts, related content | OCAR structure, plain-language summary, discussion prompts, filterable metadata |
-| **Reach for it when** | You are teaching or studying a topic and want the argument laid out | You are surveying what exists, or picking a paper to discuss |
+| **Each entry has** | Three-level summaries, key figures, discussion prompts, related content | OCAR structure, three-level summaries, discussion prompts, graph place (k-core, in/out links), filterable metadata |
+| **Reach for it when** | You are teaching or studying a topic and want the argument laid out | You are surveying what exists, browsing by organism/dataset/method/era, or exploring the citation graph |
 
-The two are **not** mirrors of each other. 61 of the papers here are not in the structured
-corpus, and 156 of the corpus papers are not annotated here. If you want programmatic
-filtering, use the corpus; if you want a paper explained, use this collection.
+At least 36 of the 96 papers here (matched by DOI) are also in the full corpus — the rest
+predate it, are more specialized than its inclusion bar, or are texts (books, standards)
+the corpus doesn't track. If you want programmatic filtering, browse the corpus; if you
+want a paper's argument laid out with key figures, use this collection.
 
 ---
 
@@ -121,22 +129,35 @@ The pages above are markdown, not generated from data — the annotations are wr
 hand, which is why they carry key figures and related-content links that no data file
 holds.
 
-Structured records exist for the **separate {{ site.data.journal_papers.papers | size }}-paper journal club corpus** in
+Structured records exist for the **full {{ site.data.journal_papers.papers | size }}-paper corpus** in
 `_data/journal_papers.yml`. Its schema is:
 
 ```yaml
 - id: paper-id
+  uuid: "10.xxxx/xxxxx"           # DOI lowercased, else a stable catalog work id
   title: "Paper title"
   authors: "Author list"
   year: 2024
   journal: "Journal name"
   doi: "10.xxxx/xxxxx"
-  dimension: connectomics        # see below for the valid set
+  landing_url: "https://…"
+  dimension: connectomics         # see below for the valid set
   reading_phase: 1_foundations
-  role: methods
-  composite_score: 0.84          # bibliometric rank used for selection
+  role: methods                   # methods / biology / survey / review / bridge
+  inclusion_role: contemporary    # history / contemporary / sota
+  era: "2019–2024"
+  k_core: 5                       # place in the citation-graph's densest core
+  in_degree: 2
+  out_degree: 4
   tags: [tag1, tag2]
-  ocar:                          # Opportunity / Challenge / Action / Resolution
+  streams:                        # pipeline stage, organism, dataset, method, axis
+    axis: pipeline_stage
+    organism: [mouse]
+    method: [FIB-SEM]
+  related:
+    cites: ["10.xxxx/…"]
+    cited_by: ["10.xxxx/…"]
+  ocar:                           # Opportunity / Challenge / Action / Resolution
     opportunity: "…"
   plain_language_summary: "…"
   summaries:
@@ -146,12 +167,14 @@ Structured records exist for the **separate {{ site.data.journal_papers.papers |
   discussion_prompts: ["Prompt 1", "Prompt 2"]
 ```
 
-Its `dimension` values are bibliometric categories and are **not** the eleven teaching
-dimensions used on this page: `connectomics` (46), `methods-general` (33),
-`graph-analysis` (24), `image-acquisition` (24), `neuroanatomy` (14), `infrastructure`
-(13), `segmentation` (9), `cell-types` (8), `neuroai` (7), `review` (7),
-`proofreading` (6).
+Its `dimension` values are citation-graph categories and are **not** the eleven teaching
+dimensions used on this page: `image-acquisition` (230), `connectomics` (207),
+`graph-analysis` (205), `segmentation` (142), `infrastructure` (107), `proofreading`
+(78), `neuroai` (26), `methods-general` (24), `neuroanatomy` (23), `cell-types` (22),
+`review` (10).
 
-That enables filtering such as "every `graph-analysis` paper from before 2010, with
-beginner summaries" — but it will not find the key figures or related-content links from
-this collection, because those live only in the markdown.
+That enables filtering such as "every `graph-analysis` paper from before 2010, at k-core
+≥5, with beginner summaries" — but it will not find the key figures or related-content
+links from this collection, because those live only in the markdown. See the
+[methodology page]({{ '/content-library/journal-papers/methodology/' | relative_url }})
+for how inclusion, k-core, and the other views are defined.

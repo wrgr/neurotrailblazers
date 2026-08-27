@@ -83,6 +83,8 @@ named persona friction rather than an individual failing.
 
 ---
 
+{% include diagrams/reading-order.html %}
+
 ## Reading the methods for what is *not* there
 
 The methods section is the only part of a paper where an omission is load-bearing. A

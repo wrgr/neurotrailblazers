@@ -16,6 +16,8 @@ prerequisites: "Units 01-03; comfort reading code helps but is not required"
 content_type: path
 ---
 
+{% include callouts/community-resources.html unit="04" %}
+
 ## Before you start
 
 | | |

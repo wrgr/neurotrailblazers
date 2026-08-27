@@ -37,6 +37,8 @@ combines_with:
 content_type: core
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Overview
 
 Acquisition QA is the practice of catching problems *before* they propagate into months of wasted reconstruction and proofreading effort. The core principle: imaging artifacts that degrade segmentation quality are far cheaper to detect and mitigate at acquisition time than to correct downstream. A dataset acquired without QA gates may look acceptable in raw images but harbor subtle contrast gradients, alignment drift, or staining inconsistencies that create thousands of unnecessary segmentation errors.

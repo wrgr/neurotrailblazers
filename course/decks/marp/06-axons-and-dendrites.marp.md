@@ -41,6 +41,27 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+## Classify these profiles, then check
+![w:1080](../../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg)
+- Left: raw human cortex. Right: the model's answer key.
+- Blue axon, green dendrite, orange astrocyte — note how many are genuinely hard.
+
+---
+
+## Real data: excitatory vs inhibitory synapse
+![w:1000](../../../assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg)
+- Matched scale, nothing drawn over either density.
+- At 4 nm a Type I PSD is 8–12 px — the asymmetry is subtle, and the classifier is 85–87% accurate.
+
+---
+
+## Real data: a myelinated axon
+![w:560](../../../assets/images/content-library/em/myelinated-axon.jpg)
+- Compact myelin reads as a dark annulus at 4 nm.
+- Individual lamellae (12 nm period = 3 px) are NOT resolvable here.
+
+---
+
 ## Visual context: axonal cue panel
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png)
 

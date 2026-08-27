@@ -65,6 +65,12 @@ If automated segmentation incorrectly merges a glial process with a nearby neuro
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/astrocyte-process.jpg"
+   alt="An astrocytic process in human cortex at 8 nm per pixel, showing pale watery cytoplasm and an irregular outline that conforms to the neighbouring profiles."
+   caption="An astrocytic process, labelled as astrocyte by H01&#39;s subcompartment model. Note the characteristically pale cytoplasm and the irregular, space-filling outline that wraps around neighbouring structures rather than holding a round profile of its own &mdash; the shape cue this section describes."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## Astrocytes
 
 ### EM identification cues

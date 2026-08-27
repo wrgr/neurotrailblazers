@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /technical-training/journal-club/graph-data.json
+sitemap: false
+---
+[
+{%- for p in site.data.journal_papers.papers -%}
+{%- assign cite_ids = p.related.cites | map: 'id' -%}
+{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"kcore":{{ p.k_core | jsonify }},"organism":{{ p.streams.organism | jsonify }},"dataset":{{ p.streams.datasets | jsonify }},"method":{{ p.streams.method | jsonify }},"axis":{{ p.streams.axis | jsonify }},"summary":{{ p.plain_language_summary | jsonify }},"cites":{{ cite_ids | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+]

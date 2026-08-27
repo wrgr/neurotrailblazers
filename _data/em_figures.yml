@@ -1,0 +1,94 @@
+# Catalogue of the electron-microscopy figures rendered from the public H01
+# volume. Drives /content-library/em-figures/ and is the shot list for slides.
+#
+# Every entry here is produced by scripts/render_h01_figures.py or
+# scripts/render_em_figures.py from the H01 release (Lichtman Lab, Harvard, and
+# Connectomics at Google), licensed CC BY 4.0. Cite Shapson-Coe et al.,
+# Science 384, eadk4858 (2024). doi:10.1126/science.adk4858
+#
+# `marp` is the ready-to-paste image line for a Marp slide, with the width that
+# suits that figure's aspect ratio on a 1280x720 slide.
+
+groups:
+  - id: scale
+    title: "Scale — from a whole sample to a synapse"
+    note: "Each step is roughly 4× closer than the last. Same tissue throughout."
+    figures:
+      - src: /assets/images/content-library/case-studies/h01/01-whole-sample.jpg
+        title: "One whole section"
+        detail: "A ~4 mm wedge of human temporal cortex. 5,019 sections were cut at 33.9 nm mean thickness."
+        marp: "![w:780](../../../assets/images/content-library/case-studies/h01/01-whole-sample.jpg)"
+      - src: /assets/images/content-library/case-studies/h01/03-cell-field.jpg
+        title: "≈460 µm — cell bodies and vessels"
+        detail: "Individual somata resolve, along with the pale profiles of blood vessels."
+        marp: "![w:620](../../../assets/images/content-library/case-studies/h01/03-cell-field.jpg)"
+      - src: /assets/images/content-library/case-studies/h01/05-neuron-soma.jpg
+        title: "≈29 µm — a single neuron"
+        detail: "Nuclear envelope, prominent nucleolus, surrounding neuropil, myelinated axons in cross-section."
+        marp: "![w:620](../../../assets/images/content-library/case-studies/h01/05-neuron-soma.jpg)"
+      - src: /assets/images/content-library/case-studies/h01/07-synapse-level.jpg
+        title: "≈3.6 µm — native 4 nm resolution"
+        detail: "Membranes, mitochondria and vesicle clouds. The resolution the whole volume was imaged at."
+        marp: "![w:620](../../../assets/images/content-library/case-studies/h01/07-synapse-level.jpg)"
+      - src: /assets/images/content-library/case-studies/h01/11-cortical-layers.jpg
+        title: "Cortical layers L1–L6 and white matter"
+        detail: "H01's released layer segmentation. The sample spans the full cortical thickness."
+        marp: "![w:900](../../../assets/images/content-library/case-studies/h01/11-cortical-layers.jpg)"
+
+  - id: anatomy
+    title: "Neuroanatomy"
+    note: "Structures located by querying H01's own label layers, not chosen by eye."
+    figures:
+      - src: /assets/images/content-library/em/soma-ultrastructure.jpg
+        title: "Neuronal soma"
+        detail: "Large pale nucleus, single prominent nucleolus — the cue that makes somata findable at low magnification."
+        marp: "![w:620](../../../assets/images/content-library/em/soma-ultrastructure.jpg)"
+      - src: /assets/images/content-library/em/dendrite-and-organelles.jpg
+        title: "Dendrite and organelles"
+        detail: "Labelled 'dendrite' by the subcompartment model. Large branched mitochondria exclude axonal identity."
+        marp: "![w:620](../../../assets/images/content-library/em/dendrite-and-organelles.jpg)"
+      - src: /assets/images/content-library/em/myelinated-axon.jpg
+        title: "Myelinated axon"
+        detail: "Compact myelin reads as a dark annulus at 4 nm. Individual lamellae (12 nm period = 3 px) are NOT resolvable."
+        marp: "![w:560](../../../assets/images/content-library/em/myelinated-axon.jpg)"
+      - src: /assets/images/content-library/em/myelin-in-grey-matter.jpg
+        title: "Myelin across a grey-matter field"
+        detail: "Every myelinated axon highlighted by the myelin mask — a small minority of profiles in cortex."
+        marp: "![w:620](../../../assets/images/content-library/em/myelin-in-grey-matter.jpg)"
+      - src: /assets/images/content-library/em/astrocyte-process.jpg
+        title: "Astrocytic process"
+        detail: "Pale cytoplasm and an irregular, space-filling outline that wraps its neighbours."
+        marp: "![w:620](../../../assets/images/content-library/em/astrocyte-process.jpg)"
+      - src: /assets/images/content-library/em/blood-vessel.jpg
+        title: "Cortical blood vessel"
+        detail: "H01 contains ~230 mm of vasculature. Vessels are a common site of merge errors."
+        marp: "![w:620](../../../assets/images/content-library/em/blood-vessel.jpg)"
+      - src: /assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg
+        title: "Excitatory vs inhibitory synapse"
+        detail: "Matched scale, nothing drawn over either density. At 4 nm a Type I PSD is 8–12 px — the asymmetry is genuinely subtle."
+        marp: "![w:1000](../../../assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg)"
+
+  - id: segmentation
+    title: "Segmentation and proofreading"
+    note: "The figures that show a pipeline decision rather than a structure."
+    figures:
+      - src: /assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg
+        title: "Classify these profiles, then check"
+        detail: "Raw EM beside the six-class answer key. Works as a live exercise: ask the room before revealing the right panel."
+        marp: "![w:1080](../../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg)"
+      - src: /assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg
+        title: "Flood-filling network output"
+        detail: "197 distinct objects in one small field. Every colour is an object the pipeline asserts is continuous in 3D."
+        marp: "![w:620](../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg)"
+      - src: /assets/images/content-library/em/segmentation-c2-vs-c3.jpg
+        title: "The merge/split dial: c2 vs c3"
+        detail: "c2 calls this one object; c3 calls it two. Across 104 proofread cells, c3 needed 1.6× fewer merge fixes and 2.1× more split fixes."
+        marp: "![w:1080](../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg)"
+      - src: /assets/images/content-library/em/proofreading-before-after.jpg
+        title: "Before and after a human fixed it"
+        detail: "Green is genuinely the cell; red is 11,038 voxels the algorithm absorbed and a proofreader removed. Note the soma needs no correction at all."
+        marp: "![w:1120](../../../assets/images/content-library/em/proofreading-before-after.jpg)"
+      - src: /assets/images/content-library/em/subcompartment-classes.jpg
+        title: "Six-class subcompartment model"
+        detail: "Axon, dendrite, soma, astrocyte, axon initial segment, cilium — the classification the pipeline uses to cut merge errors."
+        marp: "![w:620](../../../assets/images/content-library/em/subcompartment-classes.jpg)"

@@ -154,6 +154,12 @@ supervoxels that belong to different ground-truth neurons.
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/segmentation-c2-vs-c3.jpg"
+   alt="The same field of human cortex shown twice with segmentation overlaid: on the left the c2 agglomeration labels a region as one object in purple; on the right the c3 agglomeration splits the same region into two objects in red and blue."
+   caption="The merge/split trade-off, on one real object. H01 ships two agglomerations of the same segmentation: aggressive <strong>c2</strong> (left) calls this region <em>one</em> object; conservative <strong>c3</strong> (right) calls it <em>two</em>. Neither is a bug. Across 104 proofread cells, c3 needed 1.6&times; fewer merge corrections but 2.1&times; more split corrections than c2. The merge/split ratio is not a property of the field &mdash; it is a dial the pipeline sets, and this is what turning it looks like."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 3. Split Errors
 
 ### 3.1 Definition

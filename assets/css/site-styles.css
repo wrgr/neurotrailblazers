@@ -1763,6 +1763,12 @@ footer {
 }
 
 /* Filter bar */
+.jc-shown-note {
+  font-size: 0.85rem; color: #6b7280; background: #f9fafb; border: 1px solid #e5e7eb;
+  border-radius: 8px; padding: 0.6rem 0.9rem; margin: 0 0 1rem;
+}
+.jc-shown-note a { color: var(--neural-blue); }
+
 .jc-filters {
   display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
   padding: 1rem 1.25rem; background: var(--white); border-radius: 10px;
@@ -1803,6 +1809,11 @@ footer {
   transform: translateY(-2px);
 }
 .jc-card.hidden { display: none; }
+.jc-card-flash { animation: jc-flash 1.6s ease-out; }
+@keyframes jc-flash {
+  0% { box-shadow: 0 0 0 4px var(--neural-blue); }
+  100% { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+}
 
 /* Card header */
 .jc-card-header { display: flex; flex-direction: column; gap: 0.3rem; }
@@ -1823,6 +1834,15 @@ footer {
 .jc-card-journal { font-size: 0.82rem; color: #9ca3af; margin: 0; }
 .jc-card-journal a { color: var(--neural-blue); text-decoration: none; }
 .jc-card-journal a:hover { text-decoration: underline; }
+.jc-card-era.jc-chip {
+  background: #fef3c7; color: #92400e; font-size: 0.72rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 4px; cursor: pointer;
+}
+.jc-card-graph-place { display: flex; gap: 0.4rem; margin: 0; }
+.jc-graph-stat {
+  font-size: 0.7rem; color: #6b7280; background: #f3f4f6;
+  padding: 0.1rem 0.4rem; border-radius: 3px;
+}
 
 /* OCAR steps */
 .jc-card-ocar {
@@ -1885,9 +1905,14 @@ footer {
   font-weight: 600; text-decoration: none; transition: opacity 0.15s;
 }
 .jc-link:hover { opacity: 0.85; }
-.jc-link-code  { background: #dbeafe; color: #1e40af; }
-.jc-link-data  { background: #d1fae5; color: #065f46; }
+.jc-link-pdf   { background: #dbeafe; color: #1e40af; }
 .jc-link-paper { background: #ede9fe; color: #5b21b6; }
+
+/* Related core works */
+.jc-related-list { margin: 0.25rem 0 0.5rem 1rem; padding: 0; }
+.jc-related-list li { margin-bottom: 0.2rem; }
+.jc-related-link { color: var(--neural-blue); cursor: pointer; text-decoration: none; }
+.jc-related-link:hover { text-decoration: underline; }
 
 /* Citation */
 .jc-citation-plain {
@@ -1908,11 +1933,23 @@ footer {
 }
 .jc-tag:hover { background: #dbeafe; color: #1e40af; }
 
+/* Streams (organism / dataset / method) — same chip shape as tags, distinct hue per facet */
+.jc-card-streams { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.jc-tag-organism { background: #d1fae5; color: #065f46; }
+.jc-tag-dataset   { background: #ede9fe; color: #5b21b6; }
+.jc-tag-method    { background: #dbeafe; color: #1e40af; }
+
 /* Empty state */
 .jc-empty {
   text-align: center; padding: 3rem 1rem; color: #9ca3af;
   font-size: 1.1rem; grid-column: 1 / -1;
 }
+
+.jc-graph-cta {
+  display: inline-block; font-weight: 700; color: var(--neural-blue);
+  text-decoration: none;
+}
+.jc-graph-cta:hover { text-decoration: underline; }
 
 /* Reading paths */
 .jc-paths {
@@ -1937,6 +1974,40 @@ footer {
    separation, <details> was indistinguishable from body text, and both pushed
    the page sideways on a phone.
    ========================================================================== */
+
+/* --- Figures --------------------------------------------------------------- */
+.ntb-figure {
+  margin: 1.75rem 0; padding: 0; background: var(--white);
+  border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;
+}
+/* max-width, never width: a 560 px panel upscaled to full column width just
+   looks soft -- these are micrographs, so a pixel is data. Small figures sit
+   at their natural size, centred; large ones still shrink to fit. */
+.ntb-figure img {
+  display: block; max-width: 100%; height: auto; margin: 0 auto;
+  background: #f3f4f6;
+}
+.ntb-figure figcaption {
+  padding: 0.7rem 0.95rem; font-size: 0.86rem; line-height: 1.5; color: #374151;
+  border-top: 1px solid #e5e7eb;
+}
+.ntb-figure-caption { display: block; }
+.ntb-figure-credit {
+  display: block; margin-top: 0.35rem; font-size: 0.76rem; color: #6b7280;
+}
+
+/* --- Callout boxes --------------------------------------------------------- */
+.callout-box {
+  border-radius: 8px; padding: 0.9rem 1.1rem; margin: 1rem 0 1.5rem;
+  font-size: 0.9rem; line-height: 1.55;
+}
+.callout-box p:first-child { margin-top: 0; }
+.callout-box p:last-child { margin-bottom: 0; }
+.callout-box ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.callout-note {
+  background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a;
+}
+.callout-note a { color: #1e40af; }
 
 /* --- Reference tables ---------------------------------------------------- */
 
@@ -3002,3 +3073,6 @@ a.arch-card,
 .story-relay a strong {
   color: var(--neural-blue);
 }
+
+/* Inline SVG diagrams reuse the figure frame but need no image background. */
+.ntb-diagram svg { display: block; width: 100%; height: auto; background: var(--white); }

@@ -16,6 +16,8 @@ prerequisites: "Units 01-02"
 content_type: path
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Before you start
 
 | | |
@@ -411,6 +413,14 @@ These are context slides rather than QA specimens; the artifact catalog in §2 i
 
 **Setup.** Open any public volume in Neuroglancer — MICrONS, FlyWire/FAFB, or H01. Do
 not use a curated tutorial view; navigate to arbitrary coordinates.
+
+If you want to see what a whole preparation-and-acquisition chain looks like end to end
+before you start, [H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }})
+walks one real dataset through every stage in this unit — fixation, ROTO staining, ATUM
+sectioning, 61-beam imaging, and the QC that ran during acquisition — with the resulting
+micrographs at each scale. It also shows how to pull image data out of a public volume
+yourself, which is a faster route to the sampling step below than clicking through the
+viewer.
 
 **Task.** Produce a QA report.
 

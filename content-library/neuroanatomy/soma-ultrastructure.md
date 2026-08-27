@@ -75,6 +75,12 @@ In EM datasets the soma is typically captured across many serial sections. Annot
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/soma-ultrastructure.jpg"
+   alt="A human cortical neuronal cell body at 16 nm per pixel showing a large pale nucleus with a prominent dark nucleolus, surrounded by cytoplasm and dense neuropil."
+   caption="A human cortical soma. The large pale nucleus with its single prominent nucleolus is the cue described below &mdash; and the contrast with the surrounding neuropil is what makes somata findable at low magnification in the first place."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 2. The Nuclear Envelope
 
 The nucleus of a neuron is bounded by a double membrane — the nuclear envelope. Each membrane is approximately 6-8 nm thick, separated by a perinuclear space of roughly 20-40 nm. Key features visible in EM:

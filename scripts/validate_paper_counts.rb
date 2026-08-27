@@ -89,7 +89,7 @@ end
 data = YAML.safe_load(DATA.read(encoding: "UTF-8"), aliases: true)
 records = data.is_a?(Hash) ? data.fetch("papers", []) : Array(data)
 
-MIN_CORPUS_PAPERS = 190
+MIN_CORPUS_PAPERS = 1000
 
 if records.size < MIN_CORPUS_PAPERS
   problems << "_data/journal_papers.yml: #{records.size} papers, floor is " \

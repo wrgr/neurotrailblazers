@@ -16,6 +16,8 @@ prerequisites: "Units 01, 04, 08; basic probability and Python"
 content_type: path
 ---
 
+{% include callouts/community-resources.html unit="09" %}
+
 ## Before you start
 
 | | |

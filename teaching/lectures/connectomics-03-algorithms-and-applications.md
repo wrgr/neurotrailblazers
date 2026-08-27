@@ -14,7 +14,7 @@ use_layout_hero: false
 ---
 
 *Lecture 3 of the [connectomics lecture series]({{ '/teaching/lectures/' | relative_url }}).
-58 slides in three parts, about 150 minutes. Openly licensed — **CC BY-ND 4.0**.*
+58 slides in three parts, about 150 minutes. Openly licensed — **CC BY-SA 4.0**.*
 
 ## What this lecture covers
 
@@ -73,17 +73,19 @@ The reciprocity worked example in Part B, across three slides. The same data —
 
 ## Licence and credit
 
-**CC BY-ND 4.0.** Teach from this lecture anywhere, including commercially; copy and
-redistribute it in any medium; present it unmodified. No permission needed. Publicly
-distributing a modified version is not permitted — but
-[ask]({{ '/teaching/lectures/' | relative_url }}#licence), because the project would
-rather grant permission than have the material go unused.
+**CC BY-SA 4.0.** Teach from this lecture anywhere, including commercially; copy and
+redistribute it in any medium; and re-cut, shorten, translate, or merge it into your own
+material. No permission needed. Two conditions: credit the original and say if you
+changed anything, and distribute your adapted version under
+[the same licence]({{ '/teaching/lectures/' | relative_url }}#licence).
 
 > Gray Roncal, W. (2026). *Nanoscale Connectomics: Algorithms and Applications* (EN.585.781 Frontiers in Neuroengineering,
-> Module 9). NeuroTrailblazers. CC BY-ND 4.0.
+> Module 9). NeuroTrailblazers. CC BY-SA 4.0.
 > https://neurotrailblazers.org/teaching/lectures/
 
-Found something wrong or out of date?
+For an adaptation, prefix with *"Adapted from"* and note what you changed.
+
+Found something wrong or out of date — or built a version worth sharing back?
 [Open an issue](https://github.com/wrgr/neurotrailblazers/issues).
 
 ## Related

@@ -16,7 +16,7 @@ description: "EN.585.781 Frontiers in Neuroengineering. Scope of connectomics ac
 
 Part A — The case for mapping Part B — Three scales that are not the same thing Part C — The field as it stands
 
-<p class="src">Openly licensed for community use — <strong>CC BY-ND 4.0</strong>. Teach from it freely, with credit. neurotrailblazers.org</p>
+<p class="src">Openly licensed for community use — <strong>CC BY-SA 4.0</strong>. Teach it, adapt it, share it onward the same way. neurotrailblazers.org</p>
 
 <!--
 Welcome. This is the first of three connectomics modules. My goal for today is not
@@ -1424,26 +1424,28 @@ Modules 8 and 9 are about earning each of those three.
 <div class="cols">
 <div>
 
-**Licence: CC BY-ND 4.0** Creative Commons Attribution-NoDerivatives 4.0 International.
-<https://creativecommons.org/licenses/by-nd/4.0/>
+**Licence: CC BY-SA 4.0**
+Creative Commons Attribution-ShareAlike 4.0 International.
+<https://creativecommons.org/licenses/by-sa/4.0/>
 
-**You may** teach from these slides in any setting, including commercially; copy and redistribute them in any medium; and present them unmodified. No permission needed.
+**You may** teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them into your own material** — and distribute the result. No permission needed.
 
-**You may not** publicly distribute a modified version — re-cut, re-ordered, translated, restyled, or merged into another deck. Editing a private copy for your own class is not restricted; sharing the result is.
+**Two conditions.** *Attribution* — credit the original, link the licence, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same licence, so it stays as open as what it came from.
 
 </div>
 <div>
 
 **How to credit**
 
-Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-ND 4.0. neurotrailblazers.org/teaching/lectures/
+Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
 
-**Want to adapt them?** Ask. The project would rather grant permission than have the material go unused, and adaptations that improve the teaching are welcome back.
+For an adaptation, prefix with *"Adapted from"* and note what you changed.
 
-**Editable source.** The Marp markdown is in the repository — the exported PowerPoint renders each slide as an image, so the markdown is the thing to edit.
-<https://github.com/wrgr/neurotrailblazers>
+**Editable source.** The Marp markdown is in the repository — the exported PowerPoint renders each slide as an image, so the markdown is the thing to edit. <https://github.com/wrgr/neurotrailblazers>
+
+**Improved something?** The project would like to hear about it — open an issue.
 
 </div>
 </div>
 
-<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction. If you add figures to an adaptation, check they are compatible with CC BY-SA 4.0.</p>

@@ -100,3 +100,13 @@ render to HTML, then measure `scrollHeight - clientHeight` on each
 - Proposed CDM revisions and an email draft: `course/en585781/`
 - Source units: `technical-training/01`–`04`, `08`, `09`
 - Instructor lecture plans for those units: `technical-training/slides/`
+
+## Licence
+
+**CC BY-SA 4.0** — see [`LICENSE`](LICENSE). Teach from these decks, adapt them, and
+distribute the result; credit the original, say what you changed, and license your
+version the same way. They contain no third-party figures, so adapting them raises no
+image-licensing questions.
+
+The learner- and instructor-facing pages are at
+[`/teaching/lectures/`](../../../../teaching/lectures/).

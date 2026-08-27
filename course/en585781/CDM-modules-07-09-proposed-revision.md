@@ -162,7 +162,8 @@ document is already going to the same reviewers. Not a connectomics-block issue.
 
 ## What is already built
 
-The three rebuilt decks — 58, 55, and 57 slides, each in three parts — are in the
+The three rebuilt decks — 59, 56, and 58 slides, each in three parts — are in the
 NeuroTrailblazers repository at `course/decks/marp/en585781/`, with rendered HTML and
-PowerPoint exports. They are written to the proposed MLOs above. If the MLOs change in
+PowerPoint exports, and are published for community use at
+`/teaching/lectures/` under **CC BY-SA 4.0**. They are written to the proposed MLOs above. If the MLOs change in
 review, the decks will be updated to match rather than the other way round.

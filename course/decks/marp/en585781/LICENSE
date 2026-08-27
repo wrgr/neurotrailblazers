@@ -1,4 +1,4 @@
-Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
 Copyright (c) 2026 William Gray Roncal and the NeuroTrailblazers project.
 
@@ -10,45 +10,63 @@ course/decks/marp/out/en585781/:
   module08-tools-and-methods
   module09-algorithms-and-applications
 
-Full license text: https://creativecommons.org/licenses/by-nd/4.0/legalcode
-Human-readable summary: https://creativecommons.org/licenses/by-nd/4.0/
+Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-sa/4.0/
 
 
 WHAT YOU MAY DO
 
   - Teach from these decks, in any setting, including commercially.
   - Copy and redistribute them in any medium or format.
-  - Present them unmodified, with attribution.
+  - Re-cut, re-order, shorten, translate, restyle, or merge them into your own
+    material, and distribute the result.
 
-You do not need to ask permission. Attribution is the only condition.
+You do not need to ask permission. Two conditions apply.
 
 
-WHAT THE LICENSE DOES NOT ALLOW
+THE TWO CONDITIONS
 
-  - Distributing a modified version. NoDerivatives means adaptations --
-    re-cut, re-ordered, translated, restyled, or merged into another deck --
-    may not be shared publicly.
+  Attribution. Credit the original, link to the license, and indicate whether
+  you changed anything. You may do this in any reasonable manner, but not in a
+  way that suggests the project endorses you or your use.
 
-  Modifying a copy for your own private use is not restricted; sharing the
-  result is. If you want to distribute an adaptation, ask -- the project is
-  generally happy to say yes, and would rather grant permission than have the
-  material go unused.
+  ShareAlike. If you remix, transform, or build on this material, you must
+  distribute your version under this same license -- CC BY-SA 4.0. Adaptations
+  stay as open as what they were built from.
+
+  No additional restrictions. You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
 
 
 HOW TO ATTRIBUTE
 
-  Gray Roncal, W. (2026). "Introduction to Connectomics" (EN.585.781 Frontiers
-  in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-ND 4.0.
-  https://neurotrailblazers.org/teaching/lectures/
+  Unmodified:
+
+    Gray Roncal, W. (2026). "Introduction to Connectomics" (EN.585.781
+    Frontiers in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0.
+    https://neurotrailblazers.org/teaching/lectures/
+
+  Adapted:
+
+    Adapted from Gray Roncal, W. (2026). "Introduction to Connectomics"
+    (EN.585.781 Frontiers in Neuroengineering, Module 7). NeuroTrailblazers.
+    CC BY-SA 4.0. https://neurotrailblazers.org/teaching/lectures/
+    Changes: [what you changed].
 
   Substitute the relevant title and module number. A credit line on a title
   slide or in a syllabus is sufficient; you do not need to reproduce this file.
+
+  If your adaptation improves the teaching, the project would like to hear
+  about it: https://github.com/wrgr/neurotrailblazers/issues
 
 
 A NOTE ON THE CONTENTS
 
   These decks contain no third-party figures. They are text, tables, and
-  ASCII diagrams, so redistributing them raises no image-licensing questions.
+  ASCII diagrams, so redistributing or adapting them raises no image-licensing
+  questions -- and nothing in them is encumbered by a license incompatible
+  with ShareAlike.
 
   They cite published work extensively. Citations are references, not
   reproductions -- the cited papers carry their own licenses, and nothing here
@@ -56,9 +74,11 @@ A NOTE ON THE CONTENTS
   statistic, that fact is attributed to its source on the slide or in the
   references slide.
 
-  Externally sourced figures used elsewhere in this repository are catalogued
-  with their individual licenses in assets/images/external/ATTRIBUTION.md.
-  None of them appear in these decks.
+  If you add third-party figures to an adaptation, check that their licenses
+  are compatible with CC BY-SA 4.0 before you distribute it. Externally
+  sourced figures used elsewhere in this repository are catalogued with their
+  individual licenses in assets/images/external/ATTRIBUTION.md; none of them
+  appear in these decks.
 
 
 NO WARRANTY

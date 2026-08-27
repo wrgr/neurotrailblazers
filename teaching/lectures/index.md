@@ -9,7 +9,7 @@ content_type: delivery
 pathways:
   - classroom delivery
   - graduate teaching
-summary: "Three ready-to-teach connectomics lectures, CC BY-ND 4.0."
+summary: "Three ready-to-teach connectomics lectures, CC BY-SA 4.0."
 use_layout_hero: false
 ---
 
@@ -119,32 +119,37 @@ Exports land in `course/decks/marp/out/en585781/`.
 
 ## Licence
 
-**Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0).**
-<https://creativecommons.org/licenses/by-nd/4.0/>
+**Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).**
+<https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these lectures in any setting, including commercially; copy and
-redistribute them in any medium; and present them unmodified. No permission needed.
+redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them
+into your own material** — and distribute the result. No permission needed.
 
-**You may not** publicly distribute a modified version — re-cut, re-ordered, translated,
-restyled, or merged into another deck. Editing a private copy for your own class is not
-restricted; sharing the result is.
-
-**Want to adapt them?** Ask. The project would rather grant permission than have the
-material go unused, and adaptations that improve the teaching are welcome back. Open an
-issue on [the repository](https://github.com/wrgr/neurotrailblazers/issues).
+**Two conditions.** *Attribution* — credit the original, link the licence, and indicate
+whether you changed anything. *ShareAlike* — if you adapt the material, distribute your
+version under this same licence, so adaptations stay as open as what they were built
+from.
 
 **How to credit:**
 
 > Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in
-> Neuroengineering, Module 7). NeuroTrailblazers. CC BY-ND 4.0.
+> Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0.
 > https://neurotrailblazers.org/teaching/lectures/
 
-A credit line on a title slide or in a syllabus is sufficient.
+For an adaptation, prefix with *"Adapted from"* and note what you changed. A credit line
+on a title slide or in a syllabus is sufficient.
+
+**If your adaptation improves the teaching**, the project would like to hear about it —
+[open an issue](https://github.com/wrgr/neurotrailblazers/issues). Re-cut versions for
+different course lengths are exactly the thing worth sharing back.
 
 **On the contents.** These decks contain no third-party figures — they are text, tables,
-and ASCII diagrams — so redistributing them raises no image-licensing questions. They
-cite published work extensively; citation is not reproduction, and the cited papers carry
-their own licences.
+and ASCII diagrams — so redistributing or adapting them raises no image-licensing
+questions, and nothing in them is encumbered by a licence incompatible with ShareAlike.
+They cite published work extensively; citation is not reproduction, and the cited papers
+carry their own licences. If you add figures to an adaptation, check they are compatible
+with CC BY-SA 4.0 before distributing it.
 
 ---
 

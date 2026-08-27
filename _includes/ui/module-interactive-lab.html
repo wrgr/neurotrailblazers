@@ -6,11 +6,13 @@
 {% assign annotation = module_data.annotation | default: default_data.annotation %}
 {% assign steps = module_data.progress_steps | default: default_data.progress_steps %}
 
+{% if module_data %}
 <section class="section nt-interactive-lab" data-module-slug="{{ page.slug }}" data-quiz-pass="{{ quiz.pass_score | default: 2 }}">
   <h2>Interactive Lab</h2>
   <p>Practice in short loops: checkpoint quiz, microtask decision, and competency progress tracking.</p>
 
   <div class="cards-grid nt-interactive-grid">
+    {% if module_data.quiz %}
     <article class="card nt-interactive-card">
       <h3 class="card-title">{{ quiz.title | default: 'Checkpoint Quiz' }}</h3>
       <form class="nt-quiz-form">
@@ -32,6 +34,7 @@
       </form>
       <p class="nt-score" aria-live="polite"></p>
     </article>
+    {% endif %}
 
     <article class="card nt-interactive-card">
       <h3 class="card-title">{{ task.title | default: 'Microtask Decision' }}</h3>
@@ -97,3 +100,4 @@
     {% endif %}
   </div>
 </section>
+{% endif %}

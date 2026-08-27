@@ -54,7 +54,6 @@ default:
   - Review assessment rubric
   - Pass checkpoint quiz
   - Complete microtask
-  - Complete annotation challenge
 modules:
   module01:
     quiz:

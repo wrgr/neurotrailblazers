@@ -3073,3 +3073,6 @@ a.arch-card,
 .story-relay a strong {
   color: var(--neural-blue);
 }
+
+/* Inline SVG diagrams reuse the figure frame but need no image background. */
+.ntb-diagram svg { display: block; width: 100%; height: auto; background: var(--white); }

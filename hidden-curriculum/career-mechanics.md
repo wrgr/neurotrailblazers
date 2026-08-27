@@ -72,6 +72,8 @@ discretionary and finite. *No-cost extension* — permission to spend remaining 
 past the original end date, which extends the position without adding money to it.
 *Effort* — the fraction of a person's time formally charged to an award.
 
+{% include diagrams/funding-flow.html %}
+
 ### The script: asking what pays for you
 
 Ask it when you accept a position, at your first one-to-one, or at the start of an

@@ -29,7 +29,7 @@ Every entry below is a **standalone, richly detailed reference document**. Each 
 - Common misconceptions and how to address them
 - **Tags** for cross-referencing across dimensions
 - **Combines-with** links identifying entries that pair well together, shown at the top of each entry
-- Figure specifications for planned teaching illustrations — written as captions and alt text in each entry's metadata; the illustrations themselves are not yet produced
+- **Real electron micrographs** on the entries that make visual claims, rendered from the public H01 human cortex volume — see the [EM figure library]({{ '/content-library/em-figures/' | relative_url }}). Entries also carry older `reference_images` front matter describing figures that were specified but never produced; that metadata is not rendered, and is being replaced by the figures above as each entry is covered
 
 Unit pages, slide decks, and modules **link to** these entries rather than duplicating content. This keeps the curriculum DRY (Don't Repeat Yourself) and ensures a single source of truth for each topic.
 
@@ -144,6 +144,14 @@ Deep dives into landmark connectomics projects.
 | [H01, step by step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) | The full production pipeline — tissue, staining, sectioning, 61-beam imaging, alignment, segmentation, synapse detection — with figures rendered from the public volume | 03, 04, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
 | [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
+
+## EM figure library
+
+Every electron micrograph on this site in one place — with captions, attribution and
+ready-to-paste slide lines. All rendered from the public H01 human cortex volume and
+reusable under CC BY 4.0.
+
+[Browse the EM figure library]({{ '/content-library/em-figures/' | relative_url }}) &rarr;
 
 ## Journal paper collection
 

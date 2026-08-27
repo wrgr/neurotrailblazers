@@ -80,6 +80,12 @@ Myelin formation begins when a glial process contacts an axon and begins to spir
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/myelin-in-grey-matter.jpg"
+   alt="A field of human cortical grey matter with every myelinated axon highlighted in orange by the dataset's myelin mask, showing that they are a small minority of the profiles present."
+   caption="Every myelinated axon in this grey-matter field, lit up by H01&#39;s myelin mask. The overwhelming majority of profiles are unmyelinated &mdash; which is the claim in &sect;11 made visible. Myelin occupies only a few percent of a cortical field, while accounting for a far larger share of white matter."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 2. Compact Myelin Ultrastructure
 
 Compact myelin has a highly regular, periodic structure that is one of the most distinctive features in EM.

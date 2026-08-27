@@ -60,6 +60,12 @@ The key principle: **no single cue is reliable alone; classification requires co
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg"
+   alt="Human cortical neuropil at 8 nm shown twice: raw greyscale on the left, and on the right the same field coloured by the six-class subcompartment model into axon, dendrite and astrocyte."
+   caption="Work the protocol on this before reading the answer. Left is raw human cortex; right is the same pixels coloured by H01&#39;s own six-class subcompartment model. The large green profile is a dendrite &mdash; note the mitochondria and the calibre. Blue profiles are axons, most far smaller. Orange is astrocyte, threading between everything. The point of the exercise is how many blue and green profiles are genuinely hard to separate by eye at this scale."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## The four-pass classification protocol
 
 ### Pass 1: Morphology

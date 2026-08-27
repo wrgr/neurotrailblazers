@@ -73,6 +73,12 @@ Dendrites receive synaptic input from presynaptic terminals, integrate excitator
 
 ---
 
+{% include figure.html
+   src="/assets/images/content-library/em/dendrite-and-organelles.jpg"
+   alt="A dendritic profile in human cortex at 4 nm per pixel showing a dark mitochondrion within pale cytoplasm, surrounded by smaller neighbouring profiles."
+   caption="A dendritic profile at full resolution, identified as dendrite by the dataset&#39;s subcompartment model. The dark elongated body is a mitochondrion &mdash; larger and more branched than the ones typical of axons, which is one of the organelle cues this entry relies on."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ## 2. Proximal vs. Distal Morphology
 
 The character of a dendrite changes dramatically from its base to its tips.

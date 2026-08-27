@@ -429,31 +429,38 @@ Suppose the ground-truth skeletons have these path lengths:
 - T2: 60 um total cable
 - T3: 50 um total cable
 
-For T1: S1 contains all of T1, and no other ground-truth neuron shares
-S1's label on T1's skeleton. ERL contribution from T1 = 80 um (no error
-encountered along T1's skeleton within S1, because S1 only has merge
-contamination from T2 voxels, which are not on T1's skeleton path).
+**For T1:** tracing along T1's skeleton, the predicted label is S1 the whole
+way, so no error is encountered and the run is the full 80 um.
 
-Wait -- the merge error means S1 also contains part of T2. If we trace
-along T1's skeleton, the predicted label is S1 the entire way. Since no
-other neuron's skeleton overlaps with this path in the prediction, there
-is no merge error detected from T1's perspective.
+This is worth pausing on, because it is the most common misreading of ERL.
+S1 *is* merge-contaminated — it also contains part of T2. But ERL is measured
+**along each ground-truth skeleton**, and the contaminating T2 voxels do not
+lie on T1's skeleton path. So from T1's perspective the trace is clean. A merge
+error does not penalise every neuron involved in it; it penalises the ones whose
+skeleton actually runs into the contamination.
 
-For T2: the first 10 um of T2's skeleton (the portion in S1) has label
-S1. Then the remaining 50 um (in S2) has label S2. There is a split error
-at the 10 um mark. So ERL contribution from T2: two runs of 10 um and
-50 um. However, the 10 um portion in S1 also constitutes a merge error
-(S1 contains T1 voxels too), so this run is terminated by both a split
-and a merge.
+**For T2:** the first 10 um of T2's skeleton (the portion inside S1) carries
+label S1; the remaining 50 um (inside S2) carries label S2. The label changes at
+the 10 um mark, so the skeleton breaks into two runs: **10 um and 50 um**. The
+10 um run is terminated by both errors at once — it is a split (the label
+changes) *and* a merge (S1 also contains T1).
 
-For T3: S3 = T3 exactly. ERL contribution = 50 um.
+**For T3:** S3 = T3 exactly. One clean run of **50 um**.
 
-Weighted average ERL = (80 + 10 + 50 + 50) / 4 paths... (The precise
-calculation depends on the sampling method, but the key point is that T2's
-fragmentation reduces the average.)
+Four runs in total: 80, 10, 50 and 50 um.
 
-**Simplified ERL estimate:** approximately 47 um (indicating that on
-average you can trace ~47 um before hitting an error).
+    ERL ≈ (80 + 10 + 50 + 50) / 4 = 190 / 4 = 47.5 um
+
+**ERL ≈ 47.5 um**: on average you can trace about 47 um before hitting an
+error. Compare that with the 190 um of cable in the volume — a single split in
+T2 has pulled the expected run length down to roughly a quarter of the longest
+individual neuron.
+
+Two caveats on that arithmetic. Real implementations weight runs by length
+rather than averaging them evenly, and they sample skeleton paths rather than
+enumerating them, so a production ERL will differ in the second digit. The
+teaching point survives either convention: **T2's fragmentation, not the volume
+of misassigned voxels, is what moves the number.**
 
 ### 8.4 Instructor Tip
 

@@ -2,7 +2,7 @@
 layout: page
 title: "How the Paper Collection Is Built"
 permalink: /content-library/journal-papers/methodology/
-description: "How the 1,074-paper visible core was selected, what a card carries, and why views (not separate corpora) are how it's filtered."
+description: "How the 1,057-paper visible core was selected, what a card carries, and why views (not separate corpora) are how it's filtered."
 use_layout_hero: false
 content_type: core
 ---

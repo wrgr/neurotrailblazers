@@ -1,0 +1,1279 @@
+{
+  "report_version": 1,
+  "generated_by": "neurotrailblazers corpus audit",
+  "generated_context": "IA/knowledge-graph project preparation -- audit run against _data/journal_papers.yml before building a citation graph on top of it",
+  "upstream_target": "connectomics-survey / neurotrailblazers_visible_core (source_artifact/neurotrailblazers_visible_core/collection.json)",
+  "corpus": {
+    "name": "visible_core",
+    "records": 1074,
+    "records_after_merges": 1057
+  },
+  "summary": {
+    "duplicate_versions": 17,
+    "false_positives_documented": 3,
+    "field_errors": 6,
+    "structural_issues": 1,
+    "journal_doi_mismatches": 64,
+    "mangled_record_id_slugs": 49
+  },
+  "method": "Fuzzy title matching (Jaccard>=0.45 or containment>=0.85) over 1,074 records produced 35 candidates; each adjudicated by author-surname overlap AND by reading both OCAR action/resolution fields (not by title/author-overlap heuristics alone -- see NOTDUP-003, which clears a naive author-similarity threshold at 0.75 and is still not a duplicate). Exact and normalized title matching found zero collisions on their own.",
+  "issues": [
+    {
+      "id": "DUP-001",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Hemibrain",
+      "curated_paper": true,
+      "canonical": {
+        "uuid": "10.7554/elife.57443",
+        "record_id": "scheffer-2020-elife-57443",
+        "title": "A connectome and analysis of the adult Drosophila central brain",
+        "year": 2020,
+        "journal": "bioRxiv",
+        "in_degree": 98,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/2020.01.21.911859",
+        "record_id": "xu-2020-2020-01-21-911859",
+        "title": "A Connectome of the Adult Drosophila Central Brain",
+        "year": 2020,
+        "journal": "bioRxiv",
+        "in_degree": 15,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 0.979,
+        "shared_authors": 95,
+        "min_author_count": 97,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2020.01.21.911859"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-002",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Flood-filling networks",
+      "curated_paper": true,
+      "canonical": {
+        "uuid": "10.1038/s41592-018-0049-4",
+        "record_id": "januszewski-2017-s41592-018-0049-4",
+        "title": "High-precision automated reconstruction of neurons with flood-filling networks",
+        "year": 2017,
+        "journal": "Nature Methods",
+        "in_degree": 60,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "work_3de0825b6d9efa49",
+        "record_id": "januszewski-2016-6d9efa49",
+        "title": "Flood-Filling Networks",
+        "year": 2016,
+        "journal": "arXiv.org",
+        "in_degree": 21,
+        "k_core": 12
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 6,
+        "min_author_count": 6,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "work_3de0825b6d9efa49"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-003",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Mushroom body connectome",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.7554/elife.62576",
+        "record_id": "li-2020-elife-62576",
+        "title": "The connectome of the adult Drosophila mushroom body provides insights into function",
+        "year": 2020,
+        "journal": "eLife",
+        "in_degree": 62,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/2020.08.29.273276",
+        "record_id": "li-2020-2020-08-29-273276",
+        "title": "The connectome of the adult Drosophila mushroom body: implications for function",
+        "year": 2020,
+        "journal": "bioRxiv",
+        "in_degree": 7,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 24,
+        "min_author_count": 24,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2020.08.29.273276"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-004",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "C. elegans multiscale brain map",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41586-021-03284-x",
+        "record_id": "brittin-2021-s41586-021-03284-x",
+        "title": "A multiscale brain map derived from whole-brain volumetric reconstructions",
+        "year": 2021,
+        "journal": "Nature",
+        "in_degree": 33,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/2020.05.24.112870",
+        "record_id": "brittin-2020-2020-05-24-112870",
+        "title": "Beyond the connectome: A map of a brain architecture derived from whole-brain volumetric reconstructions",
+        "year": 2020,
+        "journal": "bioRxiv",
+        "in_degree": 1,
+        "k_core": 6
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 5,
+        "min_author_count": 5,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2020.05.24.112870"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-005",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "natverse",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.7554/elife.53350",
+        "record_id": "bates-2020-elife-53350",
+        "title": "The natverse, a versatile toolbox for combining and analysing neuroanatomical data",
+        "year": 2020,
+        "journal": "eLife",
+        "in_degree": 24,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/006353",
+        "record_id": "manton-2014-006353",
+        "title": "The natverse: a versatile computational toolbox to combine and analyse neuroanatomical data",
+        "year": 2014,
+        "journal": "bioRxiv",
+        "in_degree": 4,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 7,
+        "min_author_count": 7,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/006353"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-006",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Inhibitory specificity",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41586-024-07780-8",
+        "record_id": "schneidermizell-2025-s41586-024-07780-8",
+        "title": "Inhibitory specificity from a connectomic census of mouse visual cortex",
+        "year": 2025,
+        "journal": "Nature",
+        "in_degree": 18,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/2023.01.23.525290",
+        "record_id": "schneidermizell-2023-2023-01-23-525290",
+        "title": "Cell-type-specific inhibitory circuitry from a connectomic census of mouse visual cortex",
+        "year": 2023,
+        "journal": "bioRxiv",
+        "in_degree": 11,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 0.976,
+        "shared_authors": 40,
+        "min_author_count": 41,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2023.01.23.525290"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-007",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Connectome-constrained networks",
+      "curated_paper": true,
+      "canonical": {
+        "uuid": "10.1038/s41586-024-07939-3",
+        "record_id": "lappalainen-2024-s41586-024-07939-3",
+        "title": "Connectome-constrained networks predict neural activity across the fly visual system",
+        "year": 2024,
+        "journal": "Nature",
+        "in_degree": 17,
+        "k_core": 11
+      },
+      "duplicate": {
+        "uuid": "10.1101/2023.03.11.532232",
+        "record_id": "lappalainen-2023-2023-03-11-532232",
+        "title": "Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution",
+        "year": 2023,
+        "journal": "bioRxiv",
+        "in_degree": 6,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 10,
+        "min_author_count": 10,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2023.03.11.532232"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-008",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Recurrent architecture insect brain",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41593-020-0607-9",
+        "record_id": "eschbach-2020-s41593-020-0607-9",
+        "title": "Recurrent architecture for adaptive regulation of learning in the insect brain",
+        "year": 2020,
+        "journal": "Nature Neuroscience",
+        "in_degree": 15,
+        "k_core": 13
+      },
+      "duplicate": {
+        "uuid": "10.1101/649731",
+        "record_id": "eschbach-2019-649731",
+        "title": "Multilevel feedback architecture for adaptive regulation of learning in the insect brain",
+        "year": 2019,
+        "journal": "bioRxiv",
+        "in_degree": 0,
+        "k_core": 3
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 16,
+        "min_author_count": 16,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/649731"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-009",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Comparative connectomics DN/AN",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41586-025-08925-z",
+        "record_id": "strner-2025-s41586-025-08925-z",
+        "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+        "year": 2025,
+        "journal": "Nature",
+        "in_degree": 11,
+        "k_core": 12
+      },
+      "duplicate": {
+        "uuid": "10.1101/2024.06.04.596633",
+        "record_id": "strner-2024-2024-06-04-596633",
+        "title": "Comparative connectomics of the descending and ascending neurons of the Drosophila nervous system: stereotypy and sexual dimorphism",
+        "year": 2024,
+        "journal": "bioRxiv",
+        "in_degree": 8,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 36,
+        "min_author_count": 36,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2024.06.04.596633"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-010",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Drosophila computational brain model",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41586-024-07763-9",
+        "record_id": "shiu-2024-s41586-024-07763-9",
+        "title": "A Drosophila computational brain model reveals sensorimotor processing",
+        "year": 2024,
+        "journal": "Nature",
+        "in_degree": 8,
+        "k_core": 9
+      },
+      "duplicate": {
+        "uuid": "10.1101/2023.05.02.539144",
+        "record_id": "shiu-2023-2023-05-02-539144",
+        "title": "A leaky integrate-and-fire computational model based on the connectome of the entire adult Drosophila brain reveals insights into sensorimotor processing",
+        "year": 2023,
+        "journal": "bioRxiv",
+        "in_degree": 3,
+        "k_core": 8
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 26,
+        "min_author_count": 26,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2023.05.02.539144"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-011",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Feeding connectome",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.7554/elife.40247",
+        "record_id": "miroschnikow-2018-elife-40247",
+        "title": "Convergence of monosynaptic and polysynaptic sensory paths onto common motor outputs in a Drosophila feeding connectome",
+        "year": 2018,
+        "journal": "eLife",
+        "in_degree": 8,
+        "k_core": 12
+      },
+      "duplicate": {
+        "uuid": "10.1101/368878",
+        "record_id": "miroschnikow-2018-368878",
+        "title": "The Feeding Connectome: Convergence of Monosynaptic and Polysynaptic Sensory Paths onto Common Motor Outputs",
+        "year": 2018,
+        "journal": "bioRxiv",
+        "in_degree": 0,
+        "k_core": 6
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 10,
+        "min_author_count": 10,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/368878"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-012",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Multiplexed volumetric CLEM",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41467-024-50411-z",
+        "record_id": "han-2024-s41467-024-50411-z",
+        "title": "Multiplexed volumetric CLEM enabled by scFvs provides insights into the cytology of cerebellar cortex",
+        "year": 2024,
+        "journal": "Nature Communications",
+        "in_degree": 3,
+        "k_core": 11
+      },
+      "duplicate": {
+        "uuid": "10.21203/rs.3.rs-3121892/v1",
+        "record_id": "han-2023-v1",
+        "title": "Multiplexed volumetric CLEM enabled by antibody derivatives provides new insights into the cytology of the mouse cerebellar cortex",
+        "year": 2023,
+        "journal": "Research Square",
+        "in_degree": 0,
+        "k_core": 13
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 19,
+        "min_author_count": 19,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.21203/rs.3.rs-3121892/v1"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-013",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "WASPSYN",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1109/tmi.2024.3400276",
+        "record_id": "li-2024-tmi-2024-3400276",
+        "title": "WASPSYN: A Challenge for Domain Adaptive Synapse Detection in Microwasp Brain Connectomes",
+        "year": 2024,
+        "journal": "IEEE Transactions on Medical Imaging",
+        "in_degree": 2,
+        "k_core": 12
+      },
+      "duplicate": {
+        "uuid": "10.48550/arxiv.2302.00545",
+        "record_id": "wu-2023-arxiv-2302-00545",
+        "title": "An Out-of-Domain Synapse Detection Challenge for Microwasp Brain Connectomes",
+        "year": 2023,
+        "journal": "arXiv.org",
+        "in_degree": 0,
+        "k_core": 7
+      },
+      "evidence": {
+        "author_surname_overlap": 0.889,
+        "shared_authors": 8,
+        "min_author_count": 9,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.48550/arxiv.2302.00545"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-014",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Scalable reproducible framework",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1093/gigascience/giaa147",
+        "record_id": "johnson-2020-giaa147",
+        "title": "Toward a scalable framework for reproducible processing of volumetric, nanoscale neuroimaging datasets",
+        "year": 2020,
+        "journal": "GigaScience",
+        "in_degree": 2,
+        "k_core": 12
+      },
+      "duplicate": {
+        "uuid": "10.1101/615161",
+        "record_id": "johnson-2019-615161",
+        "title": "Toward A Reproducible, Scalable Framework for Processing Large Neuroimaging Datasets",
+        "year": 2019,
+        "journal": "bioRxiv",
+        "in_degree": 1,
+        "k_core": 9
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 17,
+        "min_author_count": 17,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/615161"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-015",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "ScaleSF LM/EM",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1016/j.isci.2021.103601",
+        "record_id": "furuta-2021-j-isci-2021-103601",
+        "title": "Multi-scale light microscopy/electron microscopy neuronal imaging from brain to synapse with a tissue clearing method, ScaleSF",
+        "year": 2021,
+        "journal": "iScience",
+        "in_degree": 1,
+        "k_core": 6
+      },
+      "duplicate": {
+        "uuid": "10.1101/2021.04.02.438164",
+        "record_id": "furuta-2021-2021-04-02-438164",
+        "title": "Title: Multi-Scale LM/EM Neuronal Imaging from Brain to Synapse with a Tissue Clearing Method, ScaleSF",
+        "year": 2021,
+        "journal": "bioRxiv",
+        "in_degree": 0,
+        "k_core": 5
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 12,
+        "min_author_count": 12,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2021.04.02.438164"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-016",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Zebrafish telencephalon",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1016/j.cub.2023.12.003",
+        "record_id": "anneser-2023-j-cub-2023-12-003",
+        "title": "Molecular organization of neuronal cell types and neuromodulatory systems in the zebrafish telencephalon",
+        "year": 2023,
+        "journal": "Current Biology",
+        "in_degree": 0,
+        "k_core": 3
+      },
+      "duplicate": {
+        "uuid": "10.1101/2023.10.04.560846",
+        "record_id": "anneser-2023-2023-10-04-560846",
+        "title": "Molecular logic of neuromodulatory systems in the zebrafish telencephalon",
+        "year": 2023,
+        "journal": "bioRxiv",
+        "in_degree": 0,
+        "k_core": 4
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 4,
+        "min_author_count": 4,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2023.10.04.560846"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "DUP-017",
+      "type": "duplicate_version",
+      "severity": "high",
+      "label": "Antennal grooming",
+      "curated_paper": false,
+      "canonical": {
+        "uuid": "10.1038/s41467-026-72152-x",
+        "record_id": "zdil-2026-s41467-026-72152-x",
+        "title": "Centralized brain networks controlling antennal grooming coordination",
+        "year": 2026,
+        "journal": "Nature Communications",
+        "in_degree": 0,
+        "k_core": 7
+      },
+      "duplicate": {
+        "uuid": "10.1101/2024.12.17.628844",
+        "record_id": "zdil-2024-2024-12-17-628844",
+        "title": "Centralized brain networks underlie body part coordination during grooming",
+        "year": 2024,
+        "journal": "bioRxiv",
+        "in_degree": 1,
+        "k_core": 1
+      },
+      "evidence": {
+        "author_surname_overlap": 1.0,
+        "shared_authors": 5,
+        "min_author_count": 5,
+        "verified_by": [
+          "author_overlap",
+          "ocar_action_and_resolution_read"
+        ]
+      },
+      "action": "merge_into_canonical",
+      "merge_rule": "union cites/cited_by edge sets then recompute in_degree/out_degree/k_core; do NOT sum degrees",
+      "retain": {
+        "alt_dois": [
+          "10.1101/2024.12.17.628844"
+        ]
+      },
+      "local_status": "merged_locally_2026-08-27"
+    },
+    {
+      "id": "NOTDUP-001",
+      "type": "near_duplicate_false_positive",
+      "severity": "info",
+      "label": "primate retina direction selectivity",
+      "uuid_a": "10.1038/s41467-022-30405-5",
+      "uuid_b": "10.1101/2021.07.21.453225",
+      "action": "keep_separate",
+      "rationale": "Zero author overlap: Dacey lab (Kim, Peterson, Crook, ... Dacey) vs Neitz lab (Patterson, Bembry, ... Neitz). Same year and topic, different groups.",
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "NOTDUP-002",
+      "type": "near_duplicate_false_positive",
+      "severity": "info",
+      "label": "neuronal boundary detection networks",
+      "uuid_a": "10.1109/iccv.2017.262",
+      "uuid_b": "work_ac9f66d6d45899c4",
+      "action": "keep_separate",
+      "rationale": "Different labs two years apart (Yuille/JHU 2017 ICCV vs Lee-Seung/Princeton 2015 NeurIPS). The ICCV paper benchmarks against VD2D/VD2D3D, the Seung-lab predecessors: a citation relationship, not identity.",
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "NOTDUP-003",
+      "type": "near_duplicate_false_positive",
+      "severity": "info",
+      "label": "FIB-SEM systems",
+      "uuid_a": "10.7554/elife.25916",
+      "uuid_b": "10.1101/852863",
+      "action": "keep_separate",
+      "rationale": "0.75 author overlap but a genuine sequel: 10^6 vs 3x10^7 um^3, stability engineering vs hot-knife partitioning, 10 authors vs 4, different specimens. NOTE: clears naive author-similarity thresholds and is still not a duplicate.",
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "FIELD-001",
+      "type": "incorrect_year",
+      "severity": "high",
+      "uuid": "10.1101/006353",
+      "record_id": "manton-2014-006353",
+      "field": "year",
+      "current": 2014,
+      "expected": 2019,
+      "evidence": "Record's own pdf_url path is biorxiv.org/content/biorxiv/early/2019/11/07/006353.full.pdf; natverse published eLife 2020.",
+      "downstream_corruption": [
+        "era",
+        "inclusion_role",
+        "why"
+      ],
+      "current_downstream": {
+        "era": "2010–2015",
+        "inclusion_role": "history",
+        "why": "history_milestone"
+      },
+      "action": "correct year, then recompute derived era/inclusion_role/why",
+      "local_status": "moot_locally_record_was_merged_away_2026-08-27_still_a_real_upstream_bug"
+    },
+    {
+      "id": "FIELD-002",
+      "type": "incorrect_dimension",
+      "severity": "medium",
+      "uuid": "work_ac9f66d6d45899c4",
+      "record_id": "lee-2015-d45899c4",
+      "field": "dimension",
+      "current": "image-acquisition",
+      "expected": "segmentation",
+      "evidence": "Lee/Seung 2015 is a neuronal boundary-detection convnet paper, not an acquisition paper.",
+      "action": "retag",
+      "local_status": "corrected_locally_2026-08-27"
+    },
+    {
+      "id": "FIELD-003",
+      "type": "incorrect_dimension",
+      "severity": "medium",
+      "uuid": "10.1038/s41586-021-03284-x",
+      "record_id": "brittin-2021-s41586-021-03284-x",
+      "field": "dimension",
+      "current": "image-acquisition",
+      "expected": "connectomics or graph-analysis",
+      "evidence": "Brittin 2021 is a circuit-architecture / connectome-variability paper, not imaging methodology. Its preprint 10.1101/2020.05.24.112870 carries the same mis-tag.",
+      "action": "retag both records",
+      "local_status": "corrected_locally_2026-08-27"
+    },
+    {
+      "id": "FIELD-004",
+      "type": "systematic_audit_requested",
+      "severity": "medium",
+      "field": [
+        "dimension",
+        "era",
+        "inclusion_role"
+      ],
+      "evidence": "3 of 4 spot-checked records carried a wrong dimension. era/inclusion_role/why are derived from year and inherit its errors (see FIELD-001).",
+      "action": "audit these derived fields corpus-wide rather than patching individual records",
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "STRUCT-001",
+      "type": "truncated_edge_lists",
+      "severity": "critical",
+      "field": [
+        "related.cites",
+        "related.cited_by"
+      ],
+      "observed": {
+        "max_list_length": 8,
+        "records_at_cap_cites": 278,
+        "records_at_cap_cited_by": 186,
+        "total_cites_edges": 4338,
+        "total_cited_by_edges": 2782,
+        "records_with_zero_cites": 174,
+        "mean_cites_per_paper": 4.0
+      },
+      "expected": "50-100 references per paper (~50,000-100,000 edges for 1,074 papers)",
+      "evidence": "Both lists cap at exactly 8 across all 1,074 records. in_degree/out_degree disagree with list lengths on 388 and 340 records respectively (e.g. Hemibrain in_degree=98 but ships 8 cited_by entries), indicating degrees are computed on a fuller graph than the one exported.",
+      "impact": "Consumers drawing a citation graph render ~5% of the real edge set while sizing nodes from the full graph. Truncation is not uniform: it disproportionately flattens the most-cited papers.",
+      "action": "raise or remove the per-record cap in the collection.json export",
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "FIELD-005",
+      "type": "journal_doi_mismatch",
+      "severity": "high",
+      "count": 64,
+      "evidence": "journal field disagrees with DOI-prefix publisher on ~106 of 1074 records (~10%), crossed in both directions.",
+      "diagnostic_note": "Likely the same root cause as the duplicate-version issue (DUP-*): fields sourced from two versions of one work rather than a formatting bug. NOT explained by this repo's backfill_journal() in sync_journal_papers.py, which only fills EMPTY journal fields and only maps 10.1101/* to bioRxiv -- these records already have a (wrong) journal value.",
+      "action": "cross-check journal against DOI-registrant for every record; treat mismatches as a second duplicate-detection signal, not merely a cosmetic fix",
+      "examples": [
+        {
+          "uuid": "10.1016/j.isci.2026.115624",
+          "record_id": "ceballos-2026-j-isci-2026-115624",
+          "doi_prefix": "10.1016",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Elsevier) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1126/science.adx2143",
+          "record_id": "cook-2025-science-adx2143",
+          "doi_prefix": "10.1126",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Science/AAAS) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.7554/elife.88824",
+          "record_id": "gruber-2025-elife-88824",
+          "doi_prefix": "10.7554",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (eLife) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s41467-026-74466-2",
+          "record_id": "milisav-2025-s41467-026-74466-2",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s41593-025-02080-4",
+          "record_id": "beiran-2024-s41593-025-02080-4",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1101/lm.053827.123",
+          "record_id": "fiala-2024-lm-053827-123",
+          "doi_prefix": "10.1101",
+          "journal_field": "Learning & memory (Cold Spring Harbor, N.Y.)",
+          "issue": "bioRxiv/medRxiv DOI but journal field says otherwise"
+        },
+        {
+          "uuid": "10.7554/elife.96303",
+          "record_id": "meissnerbernard-2024-elife-96303",
+          "doi_prefix": "10.7554",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (eLife) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s43588-024-00735-z",
+          "record_id": "milisav-2024-s43588-024-00735-z",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s41467-025-62030-3",
+          "record_id": "petkantchin-2024-s41467-025-62030-3",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1093/cercor/bhae433",
+          "record_id": "reimann-2024-bhae433",
+          "doi_prefix": "10.1093",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (OUP) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s41467-024-54694-0",
+          "record_id": "reinhard-2024-s41467-024-54694-0",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1101/lm.053726.122",
+          "record_id": "sen-2024-lm-053726-122",
+          "doi_prefix": "10.1101",
+          "journal_field": "Learning & memory (Cold Spring Harbor, N.Y.)",
+          "issue": "bioRxiv/medRxiv DOI but journal field says otherwise"
+        },
+        {
+          "uuid": "10.1038/s41467-024-45971-z",
+          "record_id": "cornean-2023-s41467-024-45971-z",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1038/s41467-024-49616-z",
+          "record_id": "ganguly-2023-s41467-024-49616-z",
+          "doi_prefix": "10.1038",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Nature-family) but journal field says bioRxiv/medRxiv"
+        },
+        {
+          "uuid": "10.1016/j.isci.2024.110266",
+          "record_id": "imoto-2023-j-isci-2024-110266",
+          "doi_prefix": "10.1016",
+          "journal_field": "bioRxiv",
+          "issue": "published-journal DOI (Elsevier) but journal field says bioRxiv/medRxiv"
+        }
+      ],
+      "full_list_count": 64,
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    },
+    {
+      "id": "FIELD-006",
+      "type": "mangled_record_id_slug",
+      "severity": "low",
+      "count": 49,
+      "evidence": "record_id (the human-readable slug id, distinct from uuid/DOI) drops non-ASCII characters from first-author surnames during slugification, e.g. 'zdil-' for Özdil, 'strner-' for Stürner, 'kovcs-' for Kovács.",
+      "impact": "Cosmetic / readability only since uuid (DOI) is the join key -- but one record has an EMPTY author slug and its record_id begins with a hyphen.",
+      "action": "transliterate (NFKD strip-diacritics) rather than drop non-ASCII characters when generating record_id; ensure the empty-slug case cannot occur",
+      "examples": [
+        {
+          "uuid": "10.64898/2026.02.12.705493",
+          "record_id": "barroszulaica-2026-2026-02-12-705493",
+          "first_author": "Natalí Barros-Zulaica",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.64898/2026.06.05.730322",
+          "record_id": "fernndez-2026-2026-06-05-730322",
+          "first_author": "M. P. Fernández",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuroscience.2026.02.044",
+          "record_id": "lobato-2026-j-neuroscience-2026",
+          "first_author": "Fábio Lobato",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.64898/2026.05.28.727403",
+          "record_id": "strh-2026-2026-05-28-727403",
+          "first_author": "Sebastian Ströh",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1186/s12915-026-02641-4",
+          "record_id": "szilgyi-2026-s12915-026-02641-4",
+          "first_author": "Gábor Szilágyi",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41467-026-72152-x",
+          "record_id": "zdil-2026-s41467-026-72152-x",
+          "first_author": "P. G. Özdil",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41586-025-08925-z",
+          "record_id": "strner-2025-s41586-025-08925-z",
+          "first_author": "T. Stürner",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2024.03.17.585258",
+          "record_id": "veraszt-2025-2024-03-17-585258",
+          "first_author": "C. Verasztó",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1145/3665318.3677154",
+          "record_id": "cal-2024-3665318-3677154",
+          "first_author": "C. Calì",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/lm.053827.123",
+          "record_id": "fiala-2024-lm-053827-123",
+          "first_author": "André Fiala",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.4103/atn.atn-d-24-00009",
+          "record_id": "lujn-2024-atn-atn-d-24-00009",
+          "first_author": "Rafael Luján",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41596-024-00957-5",
+          "record_id": "mller-2024-s41596-024-00957-5",
+          "first_author": "A. Müller",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2024.06.04.596633",
+          "record_id": "strner-2024-2024-06-04-596633",
+          "first_author": "T. Stürner",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s42003-024-06491-0",
+          "record_id": "turganolopez-2024-s42003-024-06491-0",
+          "first_author": "M. Turégano-Lopez",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2024.12.17.628844",
+          "record_id": "zdil-2024-2024-12-17-628844",
+          "first_author": "P. G. Özdil",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1126/sciadv.adf3471",
+          "record_id": "cervantes-2023-sciadv-adf3471",
+          "first_author": "Diégo Cordero Cervantes",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2023.04.06.535891",
+          "record_id": "gonzlezsegarra-2023-2023-04-06-535891",
+          "first_author": "Amanda J. González-Segarra",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41586-023-06099-0",
+          "record_id": "hrkey-2023-s41586-023-06099-0",
+          "first_author": "S. Hürkey",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.7554/elife.89297",
+          "record_id": "patio-2023-elife-89297",
+          "first_author": "M. Patiño",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1523/eneuro.0053-22.2022",
+          "record_id": "-2022-eneuro-0053-22-2022",
+          "first_author": "Ryosuke Tanaka (田中涼介)",
+          "empty_slug": true
+        },
+        {
+          "uuid": "10.1101/2022.03.14.484348",
+          "record_id": "berlemont-2022-2022-03-14-484348",
+          "first_author": "Kévin Berlemont",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1103/physrevresearch.4.023057",
+          "record_id": "dor-2022-physrevresearch-4-02",
+          "first_author": "G. Ódor",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41587-025-02905-4",
+          "record_id": "msaad-2022-s41587-025-02905-4",
+          "first_author": "O. M’Saad",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuron.2023.09.043",
+          "record_id": "ripollsnchez-2022-j-neuron-2023-09-043",
+          "first_author": "Lidia Ripoll-Sánchez",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.31234/osf.io/hqgz7",
+          "record_id": "arnatkevicit-2021-hqgz7",
+          "first_author": "A. Arnatkevic̆iūtė",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.cub.2021.03.053",
+          "record_id": "don-2021-j-cub-2021-03-053",
+          "first_author": "E. Donà",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.7554/elife.65745",
+          "record_id": "hckesfeld-2021-elife-65745",
+          "first_author": "Sebastian Hückesfeld",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1002/cne.25268",
+          "record_id": "yez-2021-cne-25268",
+          "first_author": "J. Yáñez",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1186/s13227-021-00180-3",
+          "record_id": "zpolat-2021-s13227-021-00180-3",
+          "first_author": "B. Özpolat",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2020.05.04.076315",
+          "record_id": "kovcs-2020-2020-05-04-076315",
+          "first_author": "István A. Kovács",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/2020.08.21.260984",
+          "record_id": "veraszt-2020-2020-08-21-260984",
+          "first_author": "C. Verasztó",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuron.2019.10.031",
+          "record_id": "barabsi-2019-j-neuron-2019-10-031",
+          "first_author": "Dániel L. Barabási",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1101/548081",
+          "record_id": "januszewski-2019-548081",
+          "first_author": "Michał Januszewski",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1089/brain.2018.0587",
+          "record_id": "larivire-2019-brain-2018-0587",
+          "first_author": "S. Larivière",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1371/journal.pcbi.1005989",
+          "record_id": "arnatkevicit-2018-journal-pcbi-1005989",
+          "first_author": "A. Arnatkevic̆iūtė",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1371/journal.pone.0198131",
+          "record_id": "cal-2018-journal-pone-0198131",
+          "first_author": "C. Calì",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuron.2017.12.037",
+          "record_id": "gmnu-2018-j-neuron-2017-12-037",
+          "first_author": "R. Gămănuţ",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1140/epjst/e2018-800037-y",
+          "record_id": "hernndez-2018-e2018-800037-y",
+          "first_author": "Adrián Hernández",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1162/netn_a_00084",
+          "record_id": "petrovi-2018-netn-a-00084",
+          "first_author": "Miljan Petrović",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.7554/elife.36440",
+          "record_id": "veraszt-2018-elife-36440",
+          "first_author": "C. Verasztó",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuroimage.2017.07.046",
+          "record_id": "dazparra-2017-j-neuroimage-2017-07",
+          "first_author": "Antonio Díaz-Parra",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/s41592-018-0049-4",
+          "record_id": "januszewski-2017-s41592-018-0049-4",
+          "first_author": "Michał Januszewski",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/nrn.2016.182",
+          "record_id": "schrter-2017-nrn-2016-182",
+          "first_author": "Manuel S. Schröter",
+          "empty_slug": false
+        },
+        {
+          "uuid": "work_3de0825b6d9efa49",
+          "record_id": "januszewski-2016-6d9efa49",
+          "first_author": "Michał Januszewski",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.3389/fnana.2016.00110",
+          "record_id": "kisvrday-2016-fnana-2016-00110",
+          "first_author": "Z. Kisvárday",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1038/srep38424",
+          "record_id": "zamoralpez-2016-srep38424",
+          "first_author": "G. Zamora-López",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1016/j.neuron.2014.08.001",
+          "record_id": "vlezfort-2014-j-neuron-2014-08-001",
+          "first_author": "Mateo Vélez‐Fort",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.1109/iccv.2011.6126240",
+          "record_id": "reina-2011-iccv-2011-6126240",
+          "first_author": "Amelio Vázquez Reina",
+          "empty_slug": false
+        },
+        {
+          "uuid": "10.3389/fninf.2011.00007",
+          "record_id": "sugar-2011-fninf-2011-00007",
+          "first_author": "Jørgen Sugar",
+          "empty_slug": false
+        }
+      ],
+      "local_status": "not_patched_locally_awaiting_full_requery"
+    }
+  ],
+  "local_remediation_note": "This repo applied local, stopgap fixes on 2026-08-27 for the issues below that could be resolved without full re-retrieval: all 17 DUP-* merges (scripts/apply_duplicate_merges.py), and the FIELD-002/FIELD-003 dimension corrections. FIELD-001 (natverse year) became moot locally because the mis-dated record was one of the 17 merged away -- but the underlying bug is still real in your export and will keep recurring on every future regeneration until fixed upstream. STRUCT-001 (truncated edge lists) and FIELD-005 (journal/DOI mismatches) were NOT patched locally -- this repo plans a full from-scratch re-query (via Crossref) rather than continuing to patch your export, so those remain exactly as reported below. Sending this report anyway since the bugs are real for any other consumer of this export."
+}

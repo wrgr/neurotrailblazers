@@ -66,8 +66,8 @@ A collection of example notebooks for accessing major public Electron Microscopy
     <p>Download the MICrONS dataset via the <code>allensdk</code> Python library.</p>
     <ul class="dataset-facts">
       <li><code>pip install allensdk</code></li>
-      <li><a href="https://github.com/AllenInstitute/MicronsBinder/blob/main/notebooks/intro_to_microns_data.ipynb" target="_blank">MICrONS Data Access</a></li>
-      <li><a href="https://github.com/AllenInstitute/MicronsBinder/blob/main/notebooks/meshing.ipynb" target="_blank">Visualizing Meshes</a></li>
+      <li><a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/mm3_intro/CAVEsetup.ipynb" target="_blank">MICrONS Data Access</a></li>
+      <li><a href="https://github.com/AllenInstitute/MicronsBinder/blob/master/notebooks/mm3_intro/MeshAccess.ipynb" target="_blank">Visualizing Meshes</a></li>
     </ul>
   </div>
 
@@ -82,8 +82,8 @@ A collection of example notebooks for accessing major public Electron Microscopy
     <p>Work with the hemibrain connectome using <code>neuprint-python</code>.</p>
     <ul class="dataset-facts">
       <li><code>pip install neuprint-python</code></li>
-      <li><a href="https://github.com/connectome-neuprint/neuprint-python/blob/master/notebooks/Neuprint_Tutorial.ipynb" target="_blank">neuPrint Starter Guide</a></li>
-      <li><a href="https://github.com/connectome-neuprint/neuprint-python/blob/master/notebooks/Neuprint_Recipes.ipynb" target="_blank">Common Recipes</a></li>
+      <li><a href="https://connectome-neuprint.github.io/neuprint-python/docs/quickstart.html" target="_blank">neuPrint Starter Guide</a></li>
+      <li><a href="https://github.com/connectome-neuprint/neuprint-python/blob/master/examples/skeleton-with-synapses.ipynb" target="_blank">Common Recipes</a></li>
     </ul>
   </div>
 
@@ -98,7 +98,7 @@ A collection of example notebooks for accessing major public Electron Microscopy
     <p>Explore a variety of EM volumes hosted on bossDB using the <code>intern</code> client.</p>
     <ul class="dataset-facts">
       <li><code>pip install intern</code></li>
-      <li><a href="https://github.com/jhuapl-boss/intern/blob/master/notebooks/Boss_cutout_example.ipynb" target="_blank">bossDB Cutout Example</a></li>
+      <li><a href="https://github.com/jhuapl-boss/intern/wiki/Boss-Download-Cutout-Tutorial" target="_blank">bossDB Cutout Example</a></li>
     </ul>
   </div>
 

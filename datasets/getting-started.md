@@ -174,7 +174,7 @@ place newcomers stall, so here it is start to finish.**
 
 ### The CAVE token, start to finish
 
-[CAVE](https://www.caveclient.org/) serves MICrONS, FlyWire, and other
+[CAVE](https://www.caveconnecto.me/CAVEclient/) serves MICrONS, FlyWire, and other
 CAVE-hosted datasets. Once, per machine:
 
 ```python

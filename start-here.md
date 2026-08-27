@@ -11,7 +11,6 @@ content_type: navigation
 ---
 
 <div class="main-content">
-    {% assign concepts_base = '/concepts/' | relative_url %}
     <div class="hero hero-spaced hero-rounded">
         <div class="hero-content">
             <h1>Start Your NeuroTrailblazing Journey</h1>
@@ -156,18 +155,6 @@ content_type: navigation
 
         <p>Each avatar includes a backstory, visible successes, and a noble failure—offering a relatable entry point for diverse learners.</p>
         <p><em>Inspired by stories like those described in <a href="https://www.molbiolcell.org/doi/10.1091/mbc.E24-09-0416">When Life Gets in the Way of Science</a></em></p>
-    </section>
-
-    <section class="section">
-        <h2>Explore by Concept</h2>
-        <p>If module numbering feels heavy, use concept-first discovery based on your immediate learning need.</p>
-        <div class="cta-buttons">
-            <a href="{{ '/concepts/' | relative_url }}" class="btn btn-primary">Open Concept Explorer</a>
-            <a href="{{ concepts_base }}?track=core-concepts-methods&need=matching%20method%20to%20question" class="btn btn-secondary">Match Method to Question</a>
-            <a href="{{ concepts_base }}?track=research-in-action&need=prioritizing%20corrections" class="btn btn-secondary">Prioritize QC Corrections</a>
-            <a href="{{ concepts_base }}?track=career-and-community&need=finding%20mentorship%20support" class="btn btn-secondary">Find Mentorship Support</a>
-            <a href="{{ '/tracks/' | relative_url }}" class="btn btn-secondary">Browse Tracks</a>
-        </div>
     </section>
 
     <section class="section">

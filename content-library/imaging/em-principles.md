@@ -38,6 +38,8 @@ combines_with:
 content_type: core
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Overview
 
 Electron microscopy is the enabling technology of nanoscale connectomics. To interpret EM images correctly — and to understand why certain artifacts arise and how they propagate into segmentation errors — practitioners need a working understanding of how electrons interact with biological tissue to produce contrast. This document covers the core physics, the two major EM modalities used in connectomics, and the practical resolution and contrast considerations that shape every downstream analysis step.

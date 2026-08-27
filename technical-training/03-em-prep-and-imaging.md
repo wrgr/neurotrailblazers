@@ -16,6 +16,8 @@ prerequisites: "Units 01-02"
 content_type: path
 ---
 
+{% include callouts/em-imaging-visual-note.html %}
+
 ## Before you start
 
 | | |

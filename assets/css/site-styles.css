@@ -1975,6 +1975,27 @@ footer {
    the page sideways on a phone.
    ========================================================================== */
 
+/* --- Figures --------------------------------------------------------------- */
+.ntb-figure {
+  margin: 1.75rem 0; padding: 0; background: var(--white);
+  border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;
+}
+/* max-width, never width: a 560 px panel upscaled to full column width just
+   looks soft -- these are micrographs, so a pixel is data. Small figures sit
+   at their natural size, centred; large ones still shrink to fit. */
+.ntb-figure img {
+  display: block; max-width: 100%; height: auto; margin: 0 auto;
+  background: #f3f4f6;
+}
+.ntb-figure figcaption {
+  padding: 0.7rem 0.95rem; font-size: 0.86rem; line-height: 1.5; color: #374151;
+  border-top: 1px solid #e5e7eb;
+}
+.ntb-figure-caption { display: block; }
+.ntb-figure-credit {
+  display: block; margin-top: 0.35rem; font-size: 0.76rem; color: #6b7280;
+}
+
 /* --- Callout boxes --------------------------------------------------------- */
 .callout-box {
   border-radius: 8px; padding: 0.9rem 1.1rem; margin: 1rem 0 1.5rem;

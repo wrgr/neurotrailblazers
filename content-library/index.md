@@ -141,6 +141,7 @@ Deep dives into landmark connectomics projects.
 | [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) | 140K neurons, collaborative proofreading, brain-wide circuit analysis | 08, 09 |
 | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) | mm³ mouse cortex, functional connectomics, structure-function linking | 01, 03, 08, 09 |
 | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) | Petavoxel human fragment, unique challenges, pathological features | 05, 08 |
+| [H01, step by step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) | The full production pipeline — tissue, staining, sectioning, 61-beam imaging, alignment, segmentation, synapse detection — with figures rendered from the public volume | 03, 04, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
 | [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
 

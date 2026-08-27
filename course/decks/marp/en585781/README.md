@@ -82,6 +82,14 @@ Slide classes, set with `<!-- _class: ... -->`:
 Inline helpers: `.cols` (two columns), `.box` / `.box--warn` / `.box--good` (callouts),
 `.ask` (a question to put to the room), `.src` (attribution).
 
+**Do not re-wrap prose in the sources.** Marp Core sets markdown-it `breaks: true`, so a
+newline inside a paragraph renders as a `<br>`. Prose paragraphs and list items are
+therefore written as one long line each, and text reflows normally inside the slide and
+inside `.cols` columns. Wrapping a paragraph at 80 or 90 columns -- which is what an
+editor's fill command will do -- turns every wrap point into a hard line break and
+sentences start breaking mid-phrase. Tables, code fences, headings, HTML, and the
+speaker-note comments are unaffected either way.
+
 **Every slide must fit inside 720px.** Overflow is silent in Marp — content is simply cut
 off in the rendered HTML and in PPTX export. A checker is worth running after edits:
 render to HTML, then measure `scrollHeight - clientHeight` on each

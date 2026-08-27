@@ -13,11 +13,10 @@
 <h1 id="tools-and-methods">Tools and Methods</h1>
 <h3 id="module-8--en585781-frontiers-in-neuroengineering">Module 8 · EN.585.781 Frontiers in Neuroengineering</h3>
 <p><strong>Will Gray Roncal</strong> · Johns Hopkins University</p>
-<p>Part A — From tissue to voxels<br />
-Part B — Storage, infrastructure, and what it costs<br />
-Part C — Reproducible pipelines</p>
+<p>Part A — From tissue to voxels Part B — Storage, infrastructure, and what it costs Part C — Reproducible pipelines</p>
+<p class="src">Openly licensed for community use — <strong>CC BY-ND 4.0</strong>. Teach from it freely, with credit. neurotrailblazers.org</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="2" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="2" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="where-we-left-off">Where we left off</h2>
 <h3 id="module-7-established-the-claim-discipline-module-8-builds-the-instrument">Module 7 established the claim discipline. Module 8 builds the instrument.</h3>
 <div class="cols">
@@ -32,58 +31,43 @@ Part C — Reproducible pipelines</p>
 </div>
 <div>
 <p><strong>What Module 8 adds:</strong></p>
-<p>Every one of those facts is a <em>consequence of a design decision</em> someone made in the<br />
-pipeline. This module is those decisions.</p>
+<p>Every one of those facts is a <em>consequence of a design decision</em> someone made in the pipeline. This module is those decisions.</p>
 <div class="box box--good">
-<p><strong>The organizing question all module:</strong> <em>if this number is wrong, which stage<br />
-produced the error, and how would I know?</em></p>
+<p><strong>The organizing question all module:</strong> <em>if this number is wrong, which stage produced the error, and how would I know?</em></p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="3" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="3" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="learning-objectives">Learning objectives</h2>
 <h3 id="by-the-end-of-module-8-you-will-be-able-to">By the end of Module 8 you will be able to:</h3>
-<p><strong>8.1</strong> — <strong>Identify</strong> the tools and formats used for nanoscale data acquisition,<br />
-storage, and serving.</p>
-<p><strong>8.2</strong> — <strong>Trace</strong> an artifact in a reconstruction back to the pipeline stage that<br />
-produced it.</p>
-<p><strong>8.3</strong> — <strong>Apply</strong> the principles of reproducible pipelines to a query against a<br />
-public connectomics volume.</p>
-<p><strong>8.4</strong> — <strong>Estimate</strong> the capacity, compute, and labor cost of a proposed nanoscale<br />
-acquisition.</p>
+<p><strong>8.1</strong> — <strong>Identify</strong> the tools and formats used for nanoscale data acquisition, storage, and serving.</p>
+<p><strong>8.2</strong> — <strong>Trace</strong> an artifact in a reconstruction back to the pipeline stage that produced it.</p>
+<p><strong>8.3</strong> — <strong>Apply</strong> the principles of reproducible pipelines to a query against a public connectomics volume.</p>
+<p><strong>8.4</strong> — <strong>Estimate</strong> the capacity, compute, and labor cost of a proposed nanoscale acquisition.</p>
 <div class="box">
-<p>8.3 is the graded artifact: a notebook that returns the same number when someone else<br />
-runs it next year. That is harder than it sounds, and the reason is Part C.</p>
+<p>8.3 is the graded artifact: a notebook that returns the same number when someone else runs it next year. That is harder than it sounds, and the reason is Part C.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="4" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="4" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="roadmap">Roadmap</h2>
 <div class="cols">
 <div>
-<p><strong>Part A — From tissue to voxels</strong><br />
-The preparation chain, the artifacts each step produces, the imaging tradeoffs, and<br />
-the QA that catches problems while they are still fixable.</p>
-<p><strong>Part B — Storage and infrastructure</strong><br />
-The eight-stage reference pipeline, chunked multi-resolution arrays, and the capacity<br />
-and cost model for a petascale volume.</p>
+<p><strong>Part A — From tissue to voxels</strong> The preparation chain, the artifacts each step produces, the imaging tradeoffs, and the QA that catches problems while they are still fixable.</p>
+<p><strong>Part B — Storage and infrastructure</strong> The eight-stage reference pipeline, chunked multi-resolution arrays, and the capacity and cost model for a petascale volume.</p>
 </div>
 <div>
-<p><strong>Part C — Reproducible pipelines</strong><br />
-Why object IDs are not stable, what a materialization version is, and the platform<br />
-landscape you will actually use.</p>
+<p><strong>Part C — Reproducible pipelines</strong> Why object IDs are not stable, what a materialization version is, and the platform landscape you will actually use.</p>
 <div class="box box--good">
-<p><strong>Standing rule for the module.</strong> Every stage exists to solve a specific problem and<br />
-introduces a characteristic failure. <strong>Learn the pairs.</strong></p>
+<p><strong>Standing rule for the module.</strong> Every stage exists to solve a specific problem and introduces a characteristic failure. <strong>Learn the pairs.</strong></p>
 </div>
 <div class="box">
-<p><strong>Streams advanced here</strong> (Module 7's framing): <strong>2 — throughput and automation</strong>,<br />
-<strong>7 — openness and community</strong>, and the infrastructure half of <strong>1 — scale</strong>.</p>
+<p><strong>Streams advanced here</strong> (Module 7's framing): <strong>2 — throughput and automation</strong>, <strong>7 — openness and community</strong>, and the infrastructure half of <strong>1 — scale</strong>.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="5" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="5" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="56">
 <h1 id="part-a">Part A</h1>
 <h3 id="from-tissue-to-voxels">From tissue to voxels</h3>
 <ul>
@@ -93,7 +77,7 @@ introduces a characteristic failure. <strong>Learn the pairs.</strong></p>
 </ul>
 <div class="meta">Slides 6–21</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="6" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="6" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="where-module-8-sits-on-the-discovery-pipeline">Where Module 8 sits on the discovery pipeline</h2>
 <h3 id="the-same-map-from-module-7-this-module-owns-the-two-middle-columns">The same map from Module 7. This module owns the two middle columns.</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>   QUESTION        SPECIMEN         IMAGE           RECONSTRUCTION      GRAPH        CLAIM
@@ -106,13 +90,11 @@ introduces a characteristic failure. <strong>Learn the pairs.</strong></p>
    Module 7        ===== PART A ===== PART B/C =====    Module 9      Module 9    Module 9
 </code></pre>
 <div class="box box--warn">
-<p><strong>Quality is a ceiling, not a floor.</strong> Nothing downstream raises the quality of what<br />
-acquisition delivered. A segmentation network cannot find a membrane whose metal is<br />
-not in the tissue.</p>
+<p><strong>Quality is a ceiling, not a floor.</strong> Nothing downstream raises the quality of what acquisition delivered. A segmentation network cannot find a membrane whose metal is not in the tissue.</p>
 <p>This is why Part A comes first, and why it is the least glamorous part of the field.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-class="claim" data-theme="frontiers" lang="POSIX" class="claim" data-marpit-pagination="7" style="--paginate:true;--class:claim;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-class="claim" data-theme="frontiers" lang="POSIX" class="claim" data-marpit-pagination="7" style="--paginate:true;--class:claim;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="projects-do-not-usually-die-at-the-algorithm">Projects do not usually die at the algorithm.</h2>
 <h2 id="they-die-in-the-three-weeks-of-chemistry-nobody-photographed">They die in the three weeks of chemistry nobody photographed.</h2>
 <div class="cols">
@@ -123,55 +105,44 @@ not in the tissue.</p>
 </div>
 <div>
 <div class="box box--warn">
-<p><strong>And the failure arrives late.</strong> Prep problems surface after acquisition — months and<br />
-a petabyte later — when the only remaining options are expensive.</p>
-<p>The pilot reconstruction (slide 19) exists entirely to move that discovery forward in<br />
-time.</p>
+<p><strong>And the failure arrives late.</strong> Prep problems surface after acquisition — months and a petabyte later — when the only remaining options are expensive.</p>
+<p>The pilot reconstruction (slide 19) exists entirely to move that discovery forward in time.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="8" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="8" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="step-1--fixation">Step 1 — Fixation</h2>
 <h3 id="arrest-ultrastructure-within-seconds-before-autolysis-destroys-it">Arrest ultrastructure within seconds, before autolysis destroys it</h3>
-<p><strong>Typical protocol.</strong> Transcardial perfusion with a buffered aldehyde mix — commonly<br />
-~2–2.5% glutaraldehyde plus 2% paraformaldehyde in 0.1 M cacodylate or phosphate<br />
-buffer, at physiological pH, often with added calcium.</p>
-<p>Glutaraldehyde is the workhorse because it is bifunctional and cross-links rapidly.<br />
-Paraformaldehyde penetrates faster and buys time.</p>
+<p><strong>Typical protocol.</strong> Transcardial perfusion with a buffered aldehyde mix — commonly ~2–2.5% glutaraldehyde plus 2% paraformaldehyde in 0.1 M cacodylate or phosphate buffer, at physiological pH, often with added calcium.</p>
+<p>Glutaraldehyde is the workhorse because it is bifunctional and cross-links rapidly. Paraformaldehyde penetrates faster and buys time.</p>
 <div class="cols">
 <div>
 <p><strong>Failure signatures in the final image</strong></p>
 <ul>
-<li><strong>Swollen astrocytic processes, enlarged extracellular space</strong> — slow or delayed<br />
-fixation</li>
+<li><strong>Swollen astrocytic processes, enlarged extracellular space</strong> — slow or delayed fixation</li>
 <li><strong>Dark, shrunken, hypercontracted neurons</strong> — perfusion pressure or osmolarity</li>
-<li><strong>Blood cells retained in vessels</strong> — incomplete perfusion; nearby tissue is likely<br />
-under-fixed</li>
+<li><strong>Blood cells retained in vessels</strong> — incomplete perfusion; nearby tissue is likely under-fixed</li>
 </ul>
 </div>
 <div>
 <div class="box box--warn">
-<p><strong>A trap worth naming.</strong> Enlarged extracellular space makes automated segmentation<br />
-<em>easier</em> — more space between objects. It also distorts every geometric measurement,<br />
-and it means the tissue you reconstructed is not the tissue that existed <em>in vivo</em>.</p>
+<p><strong>A trap worth naming.</strong> Enlarged extracellular space makes automated segmentation <em>easier</em> — more space between objects. It also distorts every geometric measurement, and it means the tissue you reconstructed is not the tissue that existed <em>in vivo</em>.</p>
 <p><strong>Easier to segment is not the same as more correct.</strong></p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="9" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="step-2--contrast-generation-staining">Step 2 — Contrast generation (staining)</h2>
 <h3 id="biological-tissue-is-nearly-transparent-to-electrons-all-contrast-is-heavy-metal">Biological tissue is nearly transparent to electrons. All contrast is heavy metal.</h3>
 <div class="cols">
 <div>
 <p><strong>The standard sequence — rOTO</strong></p>
 <ol>
-<li><strong>Osmium tetroxide</strong> — binds unsaturated lipids, so it stains membranes. The source<br />
-of the dark outlines you trace.</li>
+<li><strong>Osmium tetroxide</strong> — binds unsaturated lipids, so it stains membranes. The source of the dark outlines you trace.</li>
 <li><strong>Reduced osmium</strong> (with potassium ferrocyanide) — enhances membrane contrast.</li>
-<li><strong>Thiocarbohydrazide (TCH)</strong> — a bridging agent that binds bound osmium and offers<br />
-new sites.</li>
+<li><strong>Thiocarbohydrazide (TCH)</strong> — a bridging agent that binds bound osmium and offers new sites.</li>
 <li><strong>Second osmium</strong> — deposits more metal on the TCH bridges.</li>
 <li><strong>Uranyl acetate</strong>, en bloc — general contrast.</li>
 <li><strong>Lead aspartate</strong> (Walton) — final enhancement, on the block.</li>
@@ -180,16 +151,14 @@ new sites.</li>
 <div>
 <div class="box box--good">
 <p><strong>Why rOTO dominates volume EM — two reasons, both structural:</strong></p>
-<p><strong>1.</strong> Membrane contrast strong enough to image <strong>quickly at low dose</strong>, which is what<br />
-makes petascale acquisition finish.</p>
-<p><strong>2.</strong> The metal load makes the block <strong>electrically conductive</strong>, which is what makes<br />
-block-face SEM possible at all without catastrophic charging.</p>
+<p><strong>1.</strong> Membrane contrast strong enough to image <strong>quickly at low dose</strong>, which is what makes petascale acquisition finish.</p>
+<p><strong>2.</strong> The metal load makes the block <strong>electrically conductive</strong>, which is what makes block-face SEM possible at all without catastrophic charging.</p>
 </div>
 <p class="src">Hua, Laserstein & Helmstaedter 2015 (10.1038/ncomms8923); Mikula & Denk 2015 (10.1038/nmeth.3361) for whole-brain staining.</p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="10" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="10" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="staining-failures-are-the-expensive-ones">Staining failures are the expensive ones</h2>
 <table>
 <thead>
@@ -218,62 +187,42 @@ block-face SEM possible at all without catastrophic charging.</p>
 </tbody>
 </table>
 <div class="box box--warn">
-<p><strong>The diagnostic question for every defect, all module:</strong> <em>which coordinate system does<br />
-it live in — block position, anatomy, or acquisition time?</em></p>
-<p>Block position → penetration or geometry. Acquisition time → instrument drift or<br />
-reagent degradation. Anatomy → possibly real biology.</p>
+<p><strong>The diagnostic question for every defect, all module:</strong> <em>which coordinate system does it live in — block position, anatomy, or acquisition time?</em></p>
+<p>Block position → penetration or geometry. Acquisition time → instrument drift or reagent degradation. Anatomy → possibly real biology.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="11" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="11" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="step-3--dehydration-and-embedding">Step 3 — Dehydration and embedding</h2>
 <h3 id="water-out-resin-in--and-a-tax-nobody-escapes">Water out, resin in — and a tax nobody escapes</h3>
-<p>Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldite,<br />
-LX-112, Durcupan, Spurr's), polymerized to a block that can be cut at tens of<br />
-nanometers.</p>
+<p>Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldite, LX-112, Durcupan, Spurr's), polymerized to a block that can be cut at tens of nanometers.</p>
 <div class="box box--warn">
-<p><strong>The unavoidable cost: dehydration shrinks tissue, typically 5–20% linearly</strong><br />
-depending on protocol. This is <strong>systematic, not random.</strong></p>
+<p><strong>The unavoidable cost: dehydration shrinks tissue, typically 5–20% linearly</strong> depending on protocol. This is <strong>systematic, not random.</strong></p>
 <p><strong>Every absolute length, area, and volume measurement in EM connectomics is affected.</strong></p>
 </div>
 <p><strong>What to do about it, practically:</strong></p>
 <ul>
 <li>Report measurements <strong>as measured</strong>, and state the protocol.</li>
-<li><strong>Prefer ratios and within-volume comparisons</strong> to absolute values compared across<br />
-studies. A ratio between two populations in the same block cancels the shrinkage;<br />
-an absolute spine-head volume compared to another lab's number does not.</li>
+<li><strong>Prefer ratios and within-volume comparisons</strong> to absolute values compared across studies. A ratio between two populations in the same block cancels the shrinkage; an absolute spine-head volume compared to another lab's number does not.</li>
 </ul>
-<p><strong>Failure signatures:</strong> cracks and tears from too-rapid dehydration or incomplete<br />
-infiltration; resin too soft or too brittle to section cleanly — which shows up at the<br />
-next step, not this one.</p>
+<p><strong>Failure signatures:</strong> cracks and tears from too-rapid dehydration or incomplete infiltration; resin too soft or too brittle to section cleanly — which shows up at the next step, not this one.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="12" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="12" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="step-4--sectioning-two-families-two-artifact-profiles">Step 4 — Sectioning: two families, two artifact profiles</h2>
 <div class="cols">
 <div>
-<p><strong>Serial sectioning</strong> (ssTEM / ssSEM)<br />
-An ultramicrotome with a diamond knife cuts 30–50 nm sections onto grids, tape<br />
-(<strong>ATUM</strong>), or a reinforced substrate (<strong>GridTape</strong>).</p>
-<p><em>Advantage:</em> the block is <strong>not consumed by imaging.</strong> A section can be re-imaged at<br />
-higher resolution, and imaging parallelizes across instruments. This is how petascale<br />
-volumes get acquired in finite time.</p>
-<p><em>Signature artifacts:</em> <strong>lost sections</strong>, folds, wrinkles, <strong>knife chatter</strong> (periodic<br />
-bands perpendicular to the cutting direction), compression along the cutting axis,<br />
-debris, scratches.</p>
+<p><strong>Serial sectioning</strong> (ssTEM / ssSEM) An ultramicrotome with a diamond knife cuts 30–50 nm sections onto grids, tape (<strong>ATUM</strong>), or a reinforced substrate (<strong>GridTape</strong>).</p>
+<p><em>Advantage:</em> the block is <strong>not consumed by imaging.</strong> A section can be re-imaged at higher resolution, and imaging parallelizes across instruments. This is how petascale volumes get acquired in finite time.</p>
+<p><em>Signature artifacts:</em> <strong>lost sections</strong>, folds, wrinkles, <strong>knife chatter</strong> (periodic bands perpendicular to the cutting direction), compression along the cutting axis, debris, scratches.</p>
 </div>
 <div>
-<p><strong>Block-face</strong> (SBEM / FIB-SEM)<br />
-Image the block face, then remove a slice — a diamond knife inside the chamber<br />
-(SBEM), or an ion beam milling a few nanometers at a time (FIB-SEM).</p>
-<p><em>Advantage:</em> no section handling means <strong>no lost sections</strong> and dramatically better<br />
-z-alignment. FIB-SEM's isotropy is the best tracing condition available.</p>
-<p><em>Signature artifacts:</em> the material is <strong>destroyed</strong>, so nothing can be re-imaged;<br />
-<strong>charging</strong>, since the surface is not conductive-coated between cuts; and for<br />
-FIB-SEM, <strong>curtaining</strong> — vertical striping from uneven milling.</p>
+<p><strong>Block-face</strong> (SBEM / FIB-SEM) Image the block face, then remove a slice — a diamond knife inside the chamber (SBEM), or an ion beam milling a few nanometers at a time (FIB-SEM).</p>
+<p><em>Advantage:</em> no section handling means <strong>no lost sections</strong> and dramatically better z-alignment. FIB-SEM's isotropy is the best tracing condition available.</p>
+<p><em>Signature artifacts:</em> the material is <strong>destroyed</strong>, so nothing can be re-imaged; <strong>charging</strong>, since the surface is not conductive-coated between cuts; and for FIB-SEM, <strong>curtaining</strong> — vertical striping from uneven milling.</p>
 </div>
 </div>
 <p class="src">Denk & Horstmann 2004 (SBF-SEM); Knott 2008 and Xu et al. 2017 (FIB-SEM); Hayworth et al. 2014 (ATUM/WaferMapper), 2015 (hot-knife), 2019 (GCIB-SEM); Phelps et al. 2021 (GridTape).</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="13" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="13" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="choosing-the-acquisition-modality">Choosing the acquisition modality</h2>
 
 <table>
@@ -332,11 +281,10 @@ FIB-SEM, <strong>curtaining</strong> — vertical striping from uneven milling.<
 </tbody>
 </table>
 <div class="box box--good">
-<p><strong>Read the last two columns together.</strong> The right question is never &quot;which is best&quot;<br />
-but <em>&quot;which failure am I willing to own for the next two years?&quot;</em></p>
+<p><strong>Read the last two columns together.</strong> The right question is never &quot;which is best&quot; but <em>&quot;which failure am I willing to own for the next two years?&quot;</em></p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="14" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="14" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="step-5--imaging-parameters-and-the-dose-budget">Step 5 — Imaging parameters, and the dose budget</h2>
 
 <table>
@@ -382,101 +330,69 @@ but <em>&quot;which failure am I willing to own for the next two years?&quot;</e
 </tbody>
 </table>
 <div class="box box--warn">
-<p><strong>Dose is a budget.</strong> SNR improves roughly with the <strong>square root</strong> of electron dose,<br />
-and dose = beam current × dwell time. <strong>Doubling SNR costs roughly 4× the acquisition<br />
-time.</strong></p>
-<p>This is why &quot;just image it better&quot; is rarely the answer at petascale. The honest trade<br />
-is usually to accept a noisier image and spend the savings on better segmentation and<br />
-more proofreading — <strong>but never at the cost of membrane contrast</strong>, because noise<br />
-raises splits (recoverable) and faint membranes raise merges (much less so).</p>
+<p><strong>Dose is a budget.</strong> SNR improves roughly with the <strong>square root</strong> of electron dose, and dose = beam current × dwell time. <strong>Doubling SNR costs roughly 4× the acquisition time.</strong></p>
+<p>This is why &quot;just image it better&quot; is rarely the answer at petascale. The honest trade is usually to accept a noisier image and spend the savings on better segmentation and more proofreading — <strong>but never at the cost of membrane contrast</strong>, because noise raises splits (recoverable) and faint membranes raise merges (much less so).</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="15" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="15" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="attacking-throughput-directly">Attacking throughput directly</h2>
 <h3 id="multibeam-and-what-came-after">Multibeam, and what came after</h3>
 <div class="cols">
 <div>
-<p><strong>Multibeam SEM</strong> (Eberle et al. 2015). 61 or 91 electron beams scanning in parallel,<br />
-aggregating on the order of a <strong>gigapixel per second</strong>. This is the technology that<br />
-moved 1 mm³ from <em>impossible</em> to <em>an eighteen-month project</em>.</p>
-<p><strong>FAST-EM array tomography</strong> (Kievits &amp; Hoogenboom 2024). A multibeam volume-EM<br />
-workflow built around optical detection, targeting routine multibeam operation rather<br />
-than heroic single runs.</p>
-<p><strong>SmartEM</strong> (2025). Machine-learning-guided acquisition: spend dwell time <strong>where the<br />
-image is hard</strong>, not uniformly. The first serious attack on the dose budget itself<br />
-rather than on the beam count.</p>
+<p><strong>Multibeam SEM</strong> (Eberle et al. 2015). 61 or 91 electron beams scanning in parallel, aggregating on the order of a <strong>gigapixel per second</strong>. This is the technology that moved 1 mm³ from <em>impossible</em> to <em>an eighteen-month project</em>.</p>
+<p><strong>FAST-EM array tomography</strong> (Kievits &amp; Hoogenboom 2024). A multibeam volume-EM workflow built around optical detection, targeting routine multibeam operation rather than heroic single runs.</p>
+<p><strong>SmartEM</strong> (2025). Machine-learning-guided acquisition: spend dwell time <strong>where the image is hard</strong>, not uniformly. The first serious attack on the dose budget itself rather than on the beam count.</p>
 </div>
 <div>
 <div class="box box--good">
 <p><strong>Read these as three different moves on the same constraint.</strong></p>
-<p>Multibeam parallelizes the <em>instrument</em>.<br />
-FAST-EM industrializes the <em>workflow</em>.<br />
-SmartEM makes the <em>dose allocation</em> adaptive.</p>
-<p>Only the third changes the square-root relationship that governs everything else — and<br />
-it is the one to watch.</p>
+<p>Multibeam parallelizes the <em>instrument</em>. FAST-EM industrializes the <em>workflow</em>. SmartEM makes the <em>dose allocation</em> adaptive.</p>
+<p>Only the third changes the square-root relationship that governs everything else — and it is the one to watch.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="16" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="16" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="buying-volume-back-for-fib-sem">Buying volume back for FIB-SEM</h2>
 <h3 id="two-engineering-moves-that-change-the-ceiling-rather-than-the-tradeoff">Two engineering moves that change the ceiling rather than the tradeoff</h3>
 <div class="cols">
 <div>
-<p><strong>Hot-knife partitioning</strong> (Hayworth et al. 2015). Cut the block into thick slabs with<br />
-an ultrastructurally smooth interface, image each slab by FIB-SEM independently, then<br />
-<strong>stitch the volumes back together.</strong></p>
-<p>FIB-SEM's volume limit is per-run. Partitioning turns one impossible run into many<br />
-feasible ones, at the cost of a small number of well-characterized interfaces.</p>
-<p><strong>GCIB-SEM</strong> (Hayworth et al. 2019). A gas cluster ion beam removes material more<br />
-gently and over a wider area than a focused ion beam, reaching ~10 nm isotropic on<br />
-much larger tissue faces.</p>
+<p><strong>Hot-knife partitioning</strong> (Hayworth et al. 2015). Cut the block into thick slabs with an ultrastructurally smooth interface, image each slab by FIB-SEM independently, then <strong>stitch the volumes back together.</strong></p>
+<p>FIB-SEM's volume limit is per-run. Partitioning turns one impossible run into many feasible ones, at the cost of a small number of well-characterized interfaces.</p>
+<p><strong>GCIB-SEM</strong> (Hayworth et al. 2019). A gas cluster ion beam removes material more gently and over a wider area than a focused ion beam, reaching ~10 nm isotropic on much larger tissue faces.</p>
 </div>
 <div>
 <div class="box box--good">
 <p><strong>Why this pattern is worth naming.</strong></p>
-<p>Most progress in this field is <em>not</em> a better microscope. It is someone noticing that<br />
-a hard constraint is actually a <strong>per-run</strong> constraint, and finding a way to<br />
-partition the problem.</p>
-<p>Hot-knife does it for volume. Multibeam does it for throughput. SmartEM does it for<br />
-dose. Community proofreading does it for labor.</p>
+<p>Most progress in this field is <em>not</em> a better microscope. It is someone noticing that a hard constraint is actually a <strong>per-run</strong> constraint, and finding a way to partition the problem.</p>
+<p>Hot-knife does it for volume. Multibeam does it for throughput. SmartEM does it for dose. Community proofreading does it for labor.</p>
 <p><strong>When you meet a ceiling, ask what it is per.</strong></p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="17" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="17" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="alternative-routes-when-the-em-chain-is-not-the-only-chain">Alternative routes: when the EM chain is not the only chain</h2>
 <div class="cols">
 <div>
-<p><strong>Expansion microscopy.</strong> Physically swell the specimen in a hydrogel so that<br />
-diffraction-limited optics resolve ~25–70 nm effective features. Buys <strong>molecular<br />
-identity</strong> alongside near-EM geometry — the one thing standard EM cannot give.</p>
-<p><em>Costs:</em> expansion distortion that must be characterized, and dense reconstruction at<br />
-scale is not yet routine.</p>
-<p><strong>LICONN</strong> (Tavakoli et al. 2025). Light-microscopy-based connectomic reconstruction of<br />
-mammalian brain tissue — the first demonstrated LM route to <strong>dense, synapse-level</strong><br />
-reconstruction.</p>
+<p><strong>Expansion microscopy.</strong> Physically swell the specimen in a hydrogel so that diffraction-limited optics resolve ~25–70 nm effective features. Buys <strong>molecular identity</strong> alongside near-EM geometry — the one thing standard EM cannot give.</p>
+<p><em>Costs:</em> expansion distortion that must be characterized, and dense reconstruction at scale is not yet routine.</p>
+<p><strong>LICONN</strong> (Tavakoli et al. 2025). Light-microscopy-based connectomic reconstruction of mammalian brain tissue — the first demonstrated LM route to <strong>dense, synapse-level</strong> reconstruction.</p>
 </div>
 <div>
 <div class="box">
 <p><strong>Why this belongs in a tools module rather than a news slide.</strong></p>
-<p>If an LM route scales, several Part B line items change at once: no ultramicrotome, no<br />
-section loss, protein labels available in the same specimen, and a very different<br />
-storage and staining economics.</p>
-<p>It does not make EM obsolete — resolution, validation history, and dense-neuropil<br />
-performance still favor EM today. But <strong>the cost argument from Module 7 is the thing<br />
-under pressure</strong>, and that is worth tracking deliberately.</p>
+<p>If an LM route scales, several Part B line items change at once: no ultramicrotome, no section loss, protein labels available in the same specimen, and a very different storage and staining economics.</p>
+<p>It does not make EM obsolete — resolution, validation history, and dense-neuropil performance still favor EM today. But <strong>the cost argument from Module 7 is the thing under pressure</strong>, and that is worth tracking deliberately.</p>
 </div>
 </div>
 </div>
 <p class="src">Tavakoli et al. 2025, 10.1038/s41586-025-08985-1.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="18" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="18" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="worked-example-how-long-does-acquisition-take">Worked example: how long does acquisition take?</h2>
 <blockquote>
-<p>A volume is 800 µm × 800 µm × 800 µm at 4 × 4 × 40 nm. Your instrument sustains<br />
-0.2 gigapixels per second including overheads. How long?</p>
+<p>A volume is 800 µm × 800 µm × 800 µm at 4 × 4 × 40 nm. Your instrument sustains 0.2 gigapixels per second including overheads. How long?</p>
 </blockquote>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>voxels_xy per section = (800,000 / 4)^2 = 200,000^2   = 4.0 x 10^10 px
 sections              =  800,000 / 40                 = 20,000
@@ -484,15 +400,12 @@ total pixels          = 4.0e10 x 2.0e4                = 8.0 x 10^14 px
 
 time = 8.0e14 / 2.0e8 px/s = 4.0 x 10^6 s             ~= 46 days continuous
 </code></pre>
-<p>Then multiply by your real duty cycle. <strong>At 60% uptime this is ~77 days</strong> — and that<br />
-counts only imaging. Not sectioning. Not QA. Not re-imaging failed sections.</p>
+<p>Then multiply by your real duty cycle. <strong>At 60% uptime this is ~77 days</strong> — and that counts only imaging. Not sectioning. Not QA. Not re-imaging failed sections.</p>
 <div class="box">
-<p>When someone says a 1 mm³ volume takes &quot;about a year&quot;, <strong>this is the arithmetic behind<br />
-it.</strong> You now have both halves of the sizing calculation: Module 7 gave you petabytes,<br />
-this gives you months.</p>
+<p>When someone says a 1 mm³ volume takes &quot;about a year&quot;, <strong>this is the arithmetic behind it.</strong> You now have both halves of the sizing calculation: Module 7 gave you petabytes, this gives you months.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="19" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="19" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-artifact-catalog">The artifact catalog</h2>
 
 <table>
@@ -593,46 +506,32 @@ this gives you months.</p>
 </tbody>
 </table>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="20" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="20" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="two-cost-classes-and-why-the-distinction-is-the-point">Two cost classes, and why the distinction is the point</h2>
 <div class="cols">
 <div>
-<p><strong>Labor artifact</strong> → your reconstruction will be correct <em>eventually</em>, after paying in<br />
-proofreading hours or better algorithms.</p>
-<p><strong>Data loss artifact</strong> → some biological question is <strong>unanswerable in that region,<br />
-permanently.</strong></p>
+<p><strong>Labor artifact</strong> → your reconstruction will be correct <em>eventually</em>, after paying in proofreading hours or better algorithms.</p>
+<p><strong>Data loss artifact</strong> → some biological question is <strong>unanswerable in that region, permanently.</strong></p>
 <div class="box box--warn">
-<p>A QA report that gives one quality score conceals exactly the distinction the project<br />
-needs. <strong>Report them separately.</strong></p>
+<p>A QA report that gives one quality score conceals exactly the distinction the project needs. <strong>Report them separately.</strong></p>
 </div>
 </div>
 <div>
 <p class="ask">Rank for triage on a 20,000-section volume: (a) 4 lost sections scattered, (b) 4 <em>consecutive</em> lost sections, (c) charging on 15% of sections, (d) 10% weaker membrane contrast throughout.</p>
 <p><strong>(b) &gt; (d) &gt; (c) &gt; (a).</strong></p>
-<p><strong>(b)</strong> = a 160 nm gap. Most thin neurites cannot be bridged; the volume is effectively<br />
-two independently reconstructable halves.<br />
-<strong>(d)</strong> raises the merge rate <em>everywhere</em>, invisibly, and cannot be fixed by<br />
-re-imaging — the metal is not in the tissue.<br />
-<strong>(c)</strong> is bounded and mostly raises splits.<br />
-<strong>(a)</strong> is normal operating loss. Log it; do not panic.</p>
+<p><strong>(b)</strong> = a 160 nm gap. Most thin neurites cannot be bridged; the volume is effectively two independently reconstructable halves. <strong>(d)</strong> raises the merge rate <em>everywhere</em>, invisibly, and cannot be fixed by re-imaging — the metal is not in the tissue. <strong>(c)</strong> is bounded and mostly raises splits. <strong>(a)</strong> is normal operating loss. Log it; do not panic.</p>
 </div>
 </div>
 <div class="box box--good">
-<p><strong>Transferable lesson: distribution matters more than count.</strong> Four scattered losses<br />
-and four consecutive losses have the same headline number and completely different<br />
-consequences. <strong>Never report an artifact rate without its spatial distribution.</strong></p>
+<p><strong>Transferable lesson: distribution matters more than count.</strong> Four scattered losses and four consecutive losses have the same headline number and completely different consequences. <strong>Never report an artifact rate without its spatial distribution.</strong></p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="21" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="21" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="acquisition-qa-that-actually-catches-problems">Acquisition QA that actually catches problems</h2>
 <h3 id="the-non-negotiable-rule">The non-negotiable rule</h3>
 <div class="box box--good">
-<p><strong>Run a pilot reconstruction before full acquisition.</strong> Take ~100 × 100 × 100 µm<br />
-through the <em>entire</em> pipeline — align, segment, skeletonize, and have a human proofread<br />
-a handful of neurons. <strong>Measure the error rate.</strong></p>
-<p>This costs perhaps <strong>1–2% of the project</strong>, and it is the only way to discover that<br />
-your staining protocol produces a merge rate the segmentation cannot handle <em>while you<br />
-can still change the staining protocol.</em></p>
+<p><strong>Run a pilot reconstruction before full acquisition.</strong> Take ~100 × 100 × 100 µm through the <em>entire</em> pipeline — align, segment, skeletonize, and have a human proofread a handful of neurons. <strong>Measure the error rate.</strong></p>
+<p>This costs perhaps <strong>1–2% of the project</strong>, and it is the only way to discover that your staining protocol produces a merge rate the segmentation cannot handle <em>while you can still change the staining protocol.</em></p>
 </div>
 <p><strong>Metrics to log continuously — per section and per tile, not just per volume:</strong></p>
 <ul>
@@ -644,7 +543,7 @@ can still change the staining protocol.</em></p>
 <li><strong>Defect masks</strong> — machine-readable, stored with the volume, surfaced in the viewer.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="22" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="22" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="gates-define-what-stops-acquisition-in-advance">Gates: define what stops acquisition, in advance</h2>
 <table>
 <thead>
@@ -688,12 +587,11 @@ can still change the staining protocol.</em></p>
 </tbody>
 </table>
 <div class="box box--warn">
-<p>The specific numbers are yours to set — they depend on your endpoint and your budget.<br />
-What is <strong>not</strong> optional is setting them <em>before you start</em>, in writing.</p>
+<p>The specific numbers are yours to set — they depend on your endpoint and your budget. What is <strong>not</strong> optional is setting them <em>before you start</em>, in writing.</p>
 <p><strong>A threshold chosen after seeing the data is not a threshold.</strong></p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="23" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="23" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="part-a-checkpoint--provenance-and-why-per-tile-timestamps-matter">Part A checkpoint — provenance, and why per-tile timestamps matter</h2>
 <p><strong>The minimum machine-readable record, for every derived product:</strong></p>
 <div class="cols">
@@ -707,44 +605,32 @@ What is <strong>not</strong> optional is setting them <em>before you start</em>,
 </div>
 <div>
 <ul>
-<li><strong>Imaging</strong> — instrument and serial number, landing energy, beam current, dwell time,<br />
-detector, tile size and overlap, pixel size, <strong>acquisition timestamp per tile</strong></li>
+<li><strong>Imaging</strong> — instrument and serial number, landing energy, beam current, dwell time, detector, tile size and overlap, pixel size, <strong>acquisition timestamp per tile</strong></li>
 <li><strong>Processing</strong> — every transform applied, with parameters and software version</li>
 </ul>
 </div>
 </div>
 <div class="box box--good">
-<p><strong>Why the tile-level timestamp earns its place.</strong> When you later find a quality<br />
-anomaly, the first diagnostic question is always: <em>does this defect follow block<br />
-position, anatomy, or acquisition time?</em></p>
-<p>Time-correlated → instrument drift or reagent degradation.<br />
-Position-correlated → penetration or geometry.</p>
+<p><strong>Why the tile-level timestamp earns its place.</strong> When you later find a quality anomaly, the first diagnostic question is always: <em>does this defect follow block position, anatomy, or acquisition time?</em></p>
+<p>Time-correlated → instrument drift or reagent degradation. Position-correlated → penetration or geometry.</p>
 <p><strong>Without per-tile timestamps you cannot ask the question at all.</strong></p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="24" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="24" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="part-a-checkpoint--four-things-to-stop-believing">Part A checkpoint — four things to stop believing</h2>
 <div class="cols">
 <div>
-<p><strong>&quot;Better images are always worth it.&quot;</strong><br />
-Dose is a budget and SNR goes as its square root. Doubling SNR costs ~4× the time.<br />
-Spend it on membrane contrast, not on general prettiness.</p>
-<p><strong>&quot;Open-looking neuropil is good data.&quot;</strong><br />
-It segments more easily <em>and</em> it means the fixation distorted the tissue. Easier is<br />
-not more correct.</p>
+<p><strong>&quot;Better images are always worth it.&quot;</strong> Dose is a budget and SNR goes as its square root. Doubling SNR costs ~4× the time. Spend it on membrane contrast, not on general prettiness.</p>
+<p><strong>&quot;Open-looking neuropil is good data.&quot;</strong> It segments more easily <em>and</em> it means the fixation distorted the tissue. Easier is not more correct.</p>
 </div>
 <div>
-<p><strong>&quot;An artifact rate summarizes an artifact.&quot;</strong><br />
-Four scattered lost sections and four consecutive ones have the same rate and entirely<br />
-different consequences. Distribution beats count.</p>
-<p><strong>&quot;We will assess quality when acquisition finishes.&quot;</strong><br />
-Then you will assess it having spent the budget. The pilot reconstruction is 1–2% of<br />
-the project and it is the only stage where the answer can still change the protocol.</p>
+<p><strong>&quot;An artifact rate summarizes an artifact.&quot;</strong> Four scattered lost sections and four consecutive ones have the same rate and entirely different consequences. Distribution beats count.</p>
+<p><strong>&quot;We will assess quality when acquisition finishes.&quot;</strong> Then you will assess it having spent the budget. The pilot reconstruction is 1–2% of the project and it is the only stage where the answer can still change the protocol.</p>
 </div>
 </div>
 <p class="ask">Break. Part B: what happens to those voxels once they exist.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="25" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="25" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="56">
 <h1 id="part-b">Part B</h1>
 <h3 id="storage-infrastructure-and-what-it-costs">Storage, infrastructure, and what it costs</h3>
 <ul>
@@ -754,7 +640,7 @@ the project and it is the only stage where the answer can still change the proto
 </ul>
 <div class="meta">Slides 22–38</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="26" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="26" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-reference-pipeline-eight-stages-eight-artifacts">The reference pipeline: eight stages, eight artifacts</h2>
 
 <table>
@@ -809,128 +695,90 @@ the project and it is the only stage where the answer can still change the proto
 </tbody>
 </table>
 <div class="box">
-<p><strong>Learn what each artifact <em>is</em>, because that is what you will debug.</strong> &quot;The<br />
-segmentation is wrong&quot; is not actionable. &quot;Stage 3 has block-boundary seams on a 512³<br />
-grid&quot; is.</p>
+<p><strong>Learn what each artifact <em>is</em>, because that is what you will debug.</strong> &quot;The segmentation is wrong&quot; is not actionable. &quot;Stage 3 has block-boundary seams on a 512³ grid&quot; is.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-class="tight" data-theme="frontiers" lang="POSIX" class="tight" data-marpit-pagination="27" style="--paginate:true;--class:tight;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-class="tight" data-theme="frontiers" lang="POSIX" class="tight" data-marpit-pagination="27" style="--paginate:true;--class:tight;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="what-write-once-actually-means-in-practice">What &quot;write-once&quot; actually means in practice</h2>
 <h3 id="an-ingest-checklist-because-this-is-the-one-stage-you-cannot-redo">An ingest checklist, because this is the one stage you cannot redo</h3>
 <ol>
 <li>
-<p><strong>Checksum every tile on arrival</strong>, and store the checksums separately from the<br />
-tiles. A silently corrupted tile discovered two years later is indistinguishable<br />
-from a biological oddity.</p>
+<p><strong>Checksum every tile on arrival</strong>, and store the checksums separately from the tiles. A silently corrupted tile discovered two years later is indistinguishable from a biological oddity.</p>
 </li>
 <li>
-<p><strong>Validate the manifest against the tiles.</strong> Every tile the microscope claims to<br />
-have written exists, has the expected dimensions, and carries its metadata.</p>
+<p><strong>Validate the manifest against the tiles.</strong> Every tile the microscope claims to have written exists, has the expected dimensions, and carries its metadata.</p>
 </li>
 <li>
-<p><strong>Join metadata to tiles at ingest, not later.</strong> Position, timestamp, beam<br />
-conditions, session, operator. Metadata that arrives as a spreadsheet a month later<br />
-will not be joined correctly, ever.</p>
+<p><strong>Join metadata to tiles at ingest, not later.</strong> Position, timestamp, beam conditions, session, operator. Metadata that arrives as a spreadsheet a month later will not be joined correctly, ever.</p>
 </li>
 <li>
-<p><strong>Write to immutable storage</strong> with object versioning and a lifecycle policy that<br />
-moves it to cold tiers once validated.</p>
+<p><strong>Write to immutable storage</strong> with object versioning and a lifecycle policy that moves it to cold tiers once validated.</p>
 </li>
 <li>
-<p><strong>Record the ingest itself</strong> — who, when, from which instrument, with which tool<br />
-version.</p>
+<p><strong>Record the ingest itself</strong> — who, when, from which instrument, with which tool version.</p>
 </li>
 </ol>
 <div class="box box--warn">
-<p><strong>The test of an ingest stage:</strong> could you re-run the <em>entire</em> downstream pipeline from<br />
-scratch, five years from now, with nobody from the original team available? If not, the<br />
-archive is not an archive; it is a copy.</p>
+<p><strong>The test of an ingest stage:</strong> could you re-run the <em>entire</em> downstream pipeline from scratch, five years from now, with nobody from the original team available? If not, the archive is not an archive; it is a copy.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-class="tight" data-theme="frontiers" lang="POSIX" class="tight" data-marpit-pagination="28" style="--paginate:true;--class:tight;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-class="tight" data-theme="frontiers" lang="POSIX" class="tight" data-marpit-pagination="28" style="--paginate:true;--class:tight;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="stage-1%E2%80%932--ingest-stitching-and-alignment">Stage 1–2 — Ingest, stitching, and alignment</h2>
 <div class="cols">
 <div>
-<p><strong>Ingest.</strong> The archive is <strong>write-once.</strong> Nothing downstream ever modifies it. If a<br />
-later stage is wrong, you re-run from here.</p>
-<p>Treat the raw archive as <strong>the only irreplaceable asset in the project</strong> — everything<br />
-else is recomputable, expensively.</p>
-<p><em>Common failure:</em> metadata that is not machine-readable, so tile position, timestamp,<br />
-and acquisition parameters cannot be joined to defects found later.</p>
+<p><strong>Ingest.</strong> The archive is <strong>write-once.</strong> Nothing downstream ever modifies it. If a later stage is wrong, you re-run from here.</p>
+<p>Treat the raw archive as <strong>the only irreplaceable asset in the project</strong> — everything else is recomputable, expensively.</p>
+<p><em>Common failure:</em> metadata that is not machine-readable, so tile position, timestamp, and acquisition parameters cannot be joined to defects found later.</p>
 </div>
 <div>
-<p><strong>Stitching</strong> (within a section) places tiles using their overlap. Mostly rigid or<br />
-affine per tile.</p>
-<p><strong>Alignment</strong> (across sections) registers section <em>n</em> to <em>n−1</em>. Hard, because sections<br />
-deform non-rigidly and <strong>errors accumulate</strong>:</p>
+<p><strong>Stitching</strong> (within a section) places tiles using their overlap. Mostly rigid or affine per tile.</p>
+<p><strong>Alignment</strong> (across sections) registers section <em>n</em> to <em>n−1</em>. Hard, because sections deform non-rigidly and <strong>errors accumulate</strong>:</p>
 <div class="box box--warn">
 <p>A 0.1-voxel-per-section bias over 20,000 sections is a <strong>2,000-voxel drift.</strong></p>
 </div>
-<p>Modern pipelines use coarse-to-fine elastic registration with a <strong>global relaxation<br />
-step</strong> that distributes residual error across the whole stack rather than letting it<br />
-accumulate in one direction.</p>
+<p>Modern pipelines use coarse-to-fine elastic registration with a <strong>global relaxation step</strong> that distributes residual error across the whole stack rather than letting it accumulate in one direction.</p>
 </div>
 </div>
 <div class="box">
-<p><strong>What you must retain: the transforms, versioned.</strong> Any coordinate in aligned space is<br />
-meaningless without knowing which alignment version produced it. When alignment is<br />
-revised, <strong>every stored annotation coordinate must be re-mapped</strong> — which is why<br />
-alignment revisions are rare and carefully planned.</p>
+<p><strong>What you must retain: the transforms, versioned.</strong> Any coordinate in aligned space is meaningless without knowing which alignment version produced it. When alignment is revised, <strong>every stored annotation coordinate must be re-mapped</strong> — which is why alignment revisions are rare and carefully planned.</p>
 </div>
 <p class="src">Saalfeld et al. 2012 (10.1038/nmeth.2072, elastic alignment); SOFIMA (Google, flow-based alignment).</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="29" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="29" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="stage-3%E2%80%935--affinities-supervoxels-agglomeration">Stage 3–5 — Affinities, supervoxels, agglomeration</h2>
 <div class="cols">
 <div>
-<p><strong>Stage 3 — affinity prediction.</strong> A dense convolutional network applied over<br />
-petavoxels. The most compute-intensive stage, embarrassingly parallel over blocks —<br />
-<strong>with the caveat that blocks must overlap</strong>, because the network needs context beyond<br />
-the region it predicts.</p>
-<p><em>Common failure:</em> block-boundary seams, visible later as a <strong>regular grid</strong> of<br />
-segmentation errors. Detect it by asking whether the error distribution matches your<br />
-block grid. (Part A's coordinate-system question again.)</p>
+<p><strong>Stage 3 — affinity prediction.</strong> A dense convolutional network applied over petavoxels. The most compute-intensive stage, embarrassingly parallel over blocks — <strong>with the caveat that blocks must overlap</strong>, because the network needs context beyond the region it predicts.</p>
+<p><em>Common failure:</em> block-boundary seams, visible later as a <strong>regular grid</strong> of segmentation errors. Detect it by asking whether the error distribution matches your block grid. (Part A's coordinate-system question again.)</p>
 </div>
 <div>
-<p><strong>Stage 4 — supervoxels.</strong> Watershed at a threshold that <em>guarantees</em><br />
-over-segmentation: a supervoxel may be a piece of a neurite, but it should almost never<br />
-span two neurites.</p>
+<p><strong>Stage 4 — supervoxels.</strong> Watershed at a threshold that <em>guarantees</em> over-segmentation: a supervoxel may be a piece of a neurite, but it should almost never span two neurites.</p>
 <div class="box box--good">
-<p><strong>The pipeline accepts many splits in order to avoid merges</strong> — because merges are the<br />
-expensive error. This single decision propagates to every downstream design choice in<br />
-the module.</p>
+<p><strong>The pipeline accepts many splits in order to avoid merges</strong> — because merges are the expensive error. This single decision propagates to every downstream design choice in the module.</p>
 </div>
-<p><strong>Stage 5 — agglomeration.</strong> Mean-affinity, learned agglomeration with local shape<br />
-descriptors, or flood-filling networks growing objects from seeds. Architecturally,<br />
-the output is <strong>a grouping of immutable atoms</strong>, not a new voxel labeling.</p>
+<p><strong>Stage 5 — agglomeration.</strong> Mean-affinity, learned agglomeration with local shape descriptors, or flood-filling networks growing objects from seeds. Architecturally, the output is <strong>a grouping of immutable atoms</strong>, not a new voxel labeling.</p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="30" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="30" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="stage-6%E2%80%937--geometry-and-synapses">Stage 6–7 — Geometry and synapses</h2>
 <div class="cols">
 <div>
-<p><strong>Derived geometry.</strong> Meshes for 3D viewing (multi-LOD), skeletons for morphometry and<br />
-path distance, per-object statistics.</p>
-<p>These are <strong>regenerated when the segmentation changes, which is constantly.</strong> Design<br />
-them as cheap, incremental, and per-object. A geometry pipeline that must run<br />
-volume-wide to reflect one proofreading edit is a pipeline that will not run.</p>
+<p><strong>Derived geometry.</strong> Meshes for 3D viewing (multi-LOD), skeletons for morphometry and path distance, per-object statistics.</p>
+<p>These are <strong>regenerated when the segmentation changes, which is constantly.</strong> Design them as cheap, incremental, and per-object. A geometry pipeline that must run volume-wide to reflect one proofreading edit is a pipeline that will not run.</p>
 </div>
 <div>
-<p><strong>Synapse detection.</strong> A separate detection problem with its own network. Output: a<br />
-table of coordinates, pre/post identity, confidence, cleft size.</p>
+<p><strong>Synapse detection.</strong> A separate detection problem with its own network. Output: a table of coordinates, pre/post identity, confidence, cleft size.</p>
 <div class="box box--warn">
 <p><strong>Store partner identity as supervoxel IDs, not object IDs.</strong></p>
-<p>Supervoxel IDs are immutable, so when proofreading changes which neuron an object is,<br />
-the synapse assignment <strong>follows automatically.</strong></p>
-<p>Storing object IDs means rewriting the synapse table on every edit — a design mistake<br />
-that is easy to make and painful to undo.</p>
+<p>Supervoxel IDs are immutable, so when proofreading changes which neuron an object is, the synapse assignment <strong>follows automatically.</strong></p>
+<p>Storing object IDs means rewriting the synapse table on every edit — a design mistake that is easy to make and painful to undo.</p>
 </div>
 </div>
 </div>
 <p class="src">SynEM (Staffler et al. 2017, 10.7554/eLife.26414); SyConn (Dorkenwald et al. 2017, 10.1038/nmeth.4206); Synful partner prediction (Buhmann et al. 2021, 10.1038/s41592-021-01183-7).</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="31" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="31" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="how-pipeline-errors-present-downstream">How pipeline errors present downstream</h2>
 <h3 id="each-defect-has-a-signature-learn-to-read-backwards-from-the-symptom">Each defect has a signature. Learn to read backwards from the symptom.</h3>
 
@@ -981,18 +829,15 @@ that is easy to make and painful to undo.</p>
 </tbody>
 </table>
 <div class="box box--good">
-<p><strong>The move is always the same:</strong> identify which coordinate system the defect lives in —<br />
-<strong>block position, anatomy, acquisition time, or processing grid</strong> — and that identifies<br />
-the stage.</p>
+<p><strong>The move is always the same:</strong> identify which coordinate system the defect lives in — <strong>block position, anatomy, acquisition time, or processing grid</strong> — and that identifies the stage.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="32" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="32" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="serving-the-precomputed-contract">Serving: the precomputed contract</h2>
 <h3 id="why-a-browser-can-fly-through-a-petabyte">Why a browser can fly through a petabyte</h3>
 <div class="cols">
 <div>
-<p><strong>The contract Neuroglancer relies on</strong> is simple and worth understanding, because<br />
-everything else in the ecosystem is built to satisfy it:</p>
+<p><strong>The contract Neuroglancer relies on</strong> is simple and worth understanding, because everything else in the ecosystem is built to satisfy it:</p>
 <ul>
 <li>data lives at <strong>predictable URLs</strong> derived from (scale, chunk coordinates)</li>
 <li>an <strong>info JSON</strong> declares voxel size, extents, data type, and the available scales</li>
@@ -1002,32 +847,22 @@ everything else in the ecosystem is built to satisfy it:</p>
 </div>
 <div>
 <div class="box box--good">
-<p><strong>The consequence is the field's quiet superpower.</strong> Because serving is just static<br />
-objects, <em>anyone</em> can host a volume, and any client that speaks the format can read<br />
-it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without<br />
-negotiating anything.</p>
+<p><strong>The consequence is the field's quiet superpower.</strong> Because serving is just static objects, <em>anyone</em> can host a volume, and any client that speaks the format can read it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without negotiating anything.</p>
 <p>Compare this to a database that must be running for the data to exist.</p>
 </div>
 <p class="src">Precomputed format spec: github.com/google/neuroglancer. Zarr / OME-Zarr and N5 make the same architectural bet with different conventions.</p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="33" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="33" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="storage-chunked-multi-resolution-arrays">Storage: chunked, multi-resolution arrays</h2>
 <h3 id="the-neuroglancer-precomputed-format-n5-zarr--ome-zarr-and-relatives">The Neuroglancer precomputed format, N5, Zarr / OME-Zarr, and relatives</h3>
-<p><strong>Chunks.</strong> The volume is divided into blocks — commonly 64³ to 512³ voxels — stored as<br />
-individual objects. <strong>You fetch only the chunks you need.</strong> This is the whole reason<br />
-interactive viewing of a petabyte is possible.</p>
-<p><strong>Resolution pyramid.</strong> Progressively downsampled copies. Zooming out fetches a coarse<br />
-level instead of a million fine chunks. Costs about <strong>30–50% extra storage</strong>.</p>
-<p><strong>Sharding.</strong> Millions of tiny objects are slow and expensive in object stores, so<br />
-chunks are bundled into larger shard files with an index. A pure cost/latency<br />
-optimization that <strong>matters enormously at petascale</strong>.</p>
-<p><strong>Compression.</strong> Lossy (JPEG) for image data, where a little compression noise is<br />
-acceptable. <strong>Lossless and label-aware</strong> for label data — where a single flipped bit<br />
-changes an object's identity.</p>
+<p><strong>Chunks.</strong> The volume is divided into blocks — commonly 64³ to 512³ voxels — stored as individual objects. <strong>You fetch only the chunks you need.</strong> This is the whole reason interactive viewing of a petabyte is possible.</p>
+<p><strong>Resolution pyramid.</strong> Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about <strong>30–50% extra storage</strong>.</p>
+<p><strong>Sharding.</strong> Millions of tiny objects are slow and expensive in object stores, so chunks are bundled into larger shard files with an index. A pure cost/latency optimization that <strong>matters enormously at petascale</strong>.</p>
+<p><strong>Compression.</strong> Lossy (JPEG) for image data, where a little compression noise is acceptable. <strong>Lossless and label-aware</strong> for label data — where a single flipped bit changes an object's identity.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="34" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="34" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="chunk-shape-is-an-access-pattern-decision">Chunk shape is an access-pattern decision</h2>
 <h3 id="and-the-three-consumers-want-opposite-things">And the three consumers want opposite things</h3>
 <table>
@@ -1058,13 +893,11 @@ changes an object's identity.</p>
 </table>
 <div class="box box--good">
 <p><strong>You cannot optimize for all three with one layout.</strong></p>
-<p>Production systems store <strong>multiple representations</strong> — the image pyramid for viewing,<br />
-the segmentation graph for editing, and materialized tables for analysis — precisely so<br />
-each consumer gets a layout suited to it.</p>
+<p>Production systems store <strong>multiple representations</strong> — the image pyramid for viewing, the segmentation graph for editing, and materialized tables for analysis — precisely so each consumer gets a layout suited to it.</p>
 <p>When someone asks <em>&quot;why is this stored three times?&quot;</em> — that is the answer.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="35" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="35" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="capacity-worked-for-1-mm%C2%B3-at-4-%C3%97-4-%C3%97-40-nm">Capacity, worked, for 1 mm³ at 4 × 4 × 40 nm</h2>
 
 <table>
@@ -1119,94 +952,68 @@ each consumer gets a layout suited to it.</p>
 </tbody>
 </table>
 <div class="box">
-<p><strong>The operational lesson.</strong> The raw volume is written once and read rarely. The<br />
-synapse table and the segmentation are read <strong>constantly</strong>, by many people, with<br />
-latency expectations in milliseconds.</p>
-<p><strong>Budget for query load, not just capacity.</strong> A petabyte in cold object storage is<br />
-cheap. A 200 GB table answering 50 concurrent interactive queries is the part that<br />
-needs engineering.</p>
+<p><strong>The operational lesson.</strong> The raw volume is written once and read rarely. The synapse table and the segmentation are read <strong>constantly</strong>, by many people, with latency expectations in milliseconds.</p>
+<p><strong>Budget for query load, not just capacity.</strong> A petabyte in cold object storage is cheap. A 200 GB table answering 50 concurrent interactive queries is the part that needs engineering.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="36" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="36" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="compute-cost-and-the-one-that-actually-dominates">Compute cost, and the one that actually dominates</h2>
 <div class="cols">
 <div>
-<p><strong>GPU cost, order of magnitude.</strong> Suppose a segmentation network processes ~10⁷<br />
-voxels/second/GPU end-to-end including I/O. For 1.5 × 10¹⁵ voxels:</p>
+<p><strong>GPU cost, order of magnitude.</strong> Suppose a segmentation network processes ~10⁷ voxels/second/GPU end-to-end including I/O. For 1.5 × 10¹⁵ voxels:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>1.5e15 / 1e7 = 1.5e8 GPU-seconds
              ~= 1,736 GPU-days
 </code></pre>
-<p>On 500 GPUs, roughly <strong>3.5 days of wall clock</strong> — and you will run it more than once,<br />
-because the first model version is never the last.</p>
+<p>On 500 GPUs, roughly <strong>3.5 days of wall clock</strong> — and you will run it more than once, because the first model version is never the last.</p>
 <p><strong>Budget 3–5 full inference passes</strong> over the project lifetime.</p>
 </div>
 <div>
 <div class="box box--warn">
 <p><strong>But the dominant cost is none of the above. It is proofreading labor.</strong></p>
-<p>At even a few hours of skilled human attention per fully-proofread neuron, a study<br />
-needing 1,000 complete neurons is <strong>thousands of person-hours.</strong></p>
-<p>Compute and storage are line items you can negotiate with a cloud vendor.<br />
-<strong>Proofreading is a hiring, training, retention, and quality-management problem</strong> —<br />
-and it is why Module 9 Part A spends its time on triage rather than on algorithms.</p>
+<p>At even a few hours of skilled human attention per fully-proofread neuron, a study needing 1,000 complete neurons is <strong>thousands of person-hours.</strong></p>
+<p>Compute and storage are line items you can negotiate with a cloud vendor. <strong>Proofreading is a hiring, training, retention, and quality-management problem</strong> — and it is why Module 9 Part A spends its time on triage rather than on algorithms.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="37" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="37" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="cost-traps-specific-to-this-domain">Cost traps specific to this domain</h2>
 <ul>
 <li>
-<p><strong>Egress.</strong> Moving a petabyte <em>out</em> of a cloud region can cost more than storing it<br />
-for a year. <strong>Co-locate compute with data</strong>; give collaborators compute <em>next to</em> the<br />
-data rather than copies of it.</p>
+<p><strong>Egress.</strong> Moving a petabyte <em>out</em> of a cloud region can cost more than storing it for a year. <strong>Co-locate compute with data</strong>; give collaborators compute <em>next to</em> the data rather than copies of it.</p>
 </li>
 <li>
-<p><strong>Small-object overhead.</strong> Billions of unsharded chunks incur per-request charges and<br />
-listing costs that can <strong>exceed storage costs</strong>. Shard.</p>
+<p><strong>Small-object overhead.</strong> Billions of unsharded chunks incur per-request charges and listing costs that can <strong>exceed storage costs</strong>. Shard.</p>
 </li>
 <li>
-<p><strong>Forgotten intermediates.</strong> Affinity maps are the size of the raw data. Delete them<br />
-after supervoxel generation, or set a lifecycle policy — but only once you are<br />
-confident you will not need to re-agglomerate.</p>
+<p><strong>Forgotten intermediates.</strong> Affinity maps are the size of the raw data. Delete them after supervoxel generation, or set a lifecycle policy — but only once you are confident you will not need to re-agglomerate.</p>
 </li>
 <li>
-<p><strong>Idle hot storage.</strong> Move the raw archive to cold tiers immediately after ingest<br />
-validation.</p>
+<p><strong>Idle hot storage.</strong> Move the raw archive to cold tiers immediately after ingest validation.</p>
 </li>
 </ul>
 <div class="box box--good">
-<p><strong>Part B checkpoint.</strong> Take your Module 7 study brief and put a number on it: raw<br />
-petabytes, months of imaging, GPU-days, and — the one that decides feasibility —<br />
-proofreading person-hours. If any of the four is unknown to within an order of<br />
-magnitude, the brief is not yet a plan.</p>
+<p><strong>Part B checkpoint.</strong> Take your Module 7 study brief and put a number on it: raw petabytes, months of imaging, GPU-days, and — the one that decides feasibility — proofreading person-hours. If any of the four is unknown to within an order of magnitude, the brief is not yet a plan.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="38" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="38" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="annotation-tables-and-spatial-queries">Annotation tables and spatial queries</h2>
 <h3 id="the-layer-where-analysis-actually-happens">The layer where analysis actually happens</h3>
-<p><strong>What lives here.</strong> Synapses, cell-type calls, manual annotations, proofreading status,<br />
-nucleus detections, per-cell statistics — each a table keyed to the segmentation.</p>
+<p><strong>What lives here.</strong> Synapses, cell-type calls, manual annotations, proofreading status, nucleus detections, per-cell statistics — each a table keyed to the segmentation.</p>
 <p><strong>Two query shapes dominate, and they need different indexes:</strong></p>
 <div class="cols">
 <div>
-<p><strong>Relational.</strong> <em>&quot;Give me every synapse where the presynaptic object is in this list of<br />
-root IDs.&quot;</em> Wants an index on object identity, and a join to the current segmentation<br />
-state.</p>
+<p><strong>Relational.</strong> <em>&quot;Give me every synapse where the presynaptic object is in this list of root IDs.&quot;</em> Wants an index on object identity, and a join to the current segmentation state.</p>
 </div>
 <div>
-<p><strong>Spatial.</strong> <em>&quot;Give me every synapse in this bounding box.&quot;</em> Wants a spatial index —<br />
-and at 5 × 10⁸ rows the difference between having one and not is the difference<br />
-between milliseconds and minutes.</p>
+<p><strong>Spatial.</strong> <em>&quot;Give me every synapse in this bounding box.&quot;</em> Wants a spatial index — and at 5 × 10⁸ rows the difference between having one and not is the difference between milliseconds and minutes.</p>
 </div>
 </div>
 <div class="box box--warn">
-<p><strong>The join to segmentation state is where versions bite.</strong> A synapse table row stores<br />
-<em>supervoxel</em> IDs. Turning those into &quot;which neuron?&quot; requires the ChunkedGraph <em>as of a<br />
-timestamp.</em> That lookup is exactly what a materialization freezes — and why Part C is<br />
-the next slide and not an appendix.</p>
+<p><strong>The join to segmentation state is where versions bite.</strong> A synapse table row stores <em>supervoxel</em> IDs. Turning those into &quot;which neuron?&quot; requires the ChunkedGraph <em>as of a timestamp.</em> That lookup is exactly what a materialization freezes — and why Part C is the next slide and not an appendix.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="39" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-class="part" data-theme="frontiers" lang="POSIX" class="part" data-marpit-pagination="39" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="56">
 <h1 id="part-c">Part C</h1>
 <h3 id="reproducible-pipelines">Reproducible pipelines</h3>
 <ul>
@@ -1216,81 +1023,58 @@ the next slide and not an appendix.</p>
 </ul>
 <div class="meta">Slides 39–56</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-class="claim" data-theme="frontiers" lang="POSIX" class="claim" data-marpit-pagination="40" style="--paginate:true;--class:claim;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-class="claim" data-theme="frontiers" lang="POSIX" class="claim" data-marpit-pagination="40" style="--paginate:true;--class:claim;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-number-one-reproducibility-failure-in-connectomics-analysis">The number-one reproducibility failure in connectomics analysis</h2>
 <h2 id="is-silent">is silent.</h2>
 <p>Your code runs fine. It just answers a different question than it did last week.</p>
 <p class="ask">Why? Because <strong>object IDs are not stable.</strong></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="41" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="41" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-problem-and-the-design-that-solves-it">The problem, and the design that solves it</h2>
 <div class="cols">
 <div>
-<p><strong>The naive design.</strong> Store the segmentation as a labeled volume. Then a proofreader<br />
-merges two neurons and you rewrite… potentially gigabytes of voxels.</p>
+<p><strong>The naive design.</strong> Store the segmentation as a labeled volume. Then a proofreader merges two neurons and you rewrite… potentially gigabytes of voxels.</p>
 <p>With hundreds of proofreaders editing concurrently, this is unworkable.</p>
 </div>
 <div>
-<p><strong>The ChunkedGraph solution.</strong> Store supervoxels once, <strong>immutably</strong>. Represent the<br />
-segmentation as a <em>graph</em> whose nodes are supervoxels and whose edges say &quot;these are<br />
-the same object.&quot; An object is a <strong>connected component</strong> of that graph.</p>
+<p><strong>The ChunkedGraph solution.</strong> Store supervoxels once, <strong>immutably</strong>. Represent the segmentation as a <em>graph</em> whose nodes are supervoxels and whose edges say &quot;these are the same object.&quot; An object is a <strong>connected component</strong> of that graph.</p>
 </div>
 </div>
 <ul>
 <li><strong>A merge is adding an edge.</strong> Microseconds, not gigabytes.</li>
 <li><strong>A split is removing edges</strong> — a minimum cut separating two user-specified points.</li>
-<li><strong>The graph is hierarchical and chunked</strong>, so component queries over millions of<br />
-supervoxels stay fast.</li>
-<li><strong>Every edit is an entry in an append-only log</strong>, with author, timestamp, operation.<br />
-Nothing is destroyed; any past state is recoverable.</li>
-<li><strong>Concurrent editing works</strong>, because edits are small graph operations reconciled<br />
-independently.</li>
+<li><strong>The graph is hierarchical and chunked</strong>, so component queries over millions of supervoxels stay fast.</li>
+<li><strong>Every edit is an entry in an append-only log</strong>, with author, timestamp, operation. Nothing is destroyed; any past state is recoverable.</li>
+<li><strong>Concurrent editing works</strong>, because edits are small graph operations reconciled independently.</li>
 </ul>
 <p class="src">CAVE / PyChunkedGraph (Dorkenwald et al., 10.1038/s41592-024-02426-z); DVID (Katz & Plaza 2019); CATMAID (Saalfeld et al. 2009) solved the related problem for skeleton tracing.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="42" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="42" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-consequence-for-you-the-analyst">The consequence for you, the analyst</h2>
 <div class="box box--warn">
-<p>In a ChunkedGraph system, <strong>the ID of a neuron changes every time it is edited.</strong> A<br />
-&quot;root ID&quot; identifies an object <em>as of a moment in time.</em></p>
-<p><strong>An object ID in your notebook, your paper, or your figure caption is meaningless<br />
-without a timestamp or version.</strong></p>
+<p>In a ChunkedGraph system, <strong>the ID of a neuron changes every time it is edited.</strong> A &quot;root ID&quot; identifies an object <em>as of a moment in time.</em></p>
+<p><strong>An object ID in your notebook, your paper, or your figure caption is meaningless without a timestamp or version.</strong></p>
 </div>
-<p><strong>Materialization</strong> is the fix. The system periodically produces a frozen snapshot in<br />
-which every annotation — synapses, cell-type labels, manual annotations — has been<br />
-joined to the segmentation state at a specific timestamp, and written into queryable<br />
-tables.</p>
+<p><strong>Materialization</strong> is the fix. The system periodically produces a frozen snapshot in which every annotation — synapses, cell-type labels, manual annotations — has been joined to the segmentation state at a specific timestamp, and written into queryable tables.</p>
 <ul>
 <li>Analyses run <strong>against a materialization version</strong>, e.g. version 943.</li>
-<li>The version number is <strong>a first-class part of your methods section</strong>, exactly like a<br />
-software version or a genome build.</li>
-<li>Re-running on a later version <strong>will</strong> give different numbers, because proofreading<br />
-continued. <em>That is correct behavior, not a bug</em> — but it must be visible.</li>
+<li>The version number is <strong>a first-class part of your methods section</strong>, exactly like a software version or a genome build.</li>
+<li>Re-running on a later version <strong>will</strong> give different numbers, because proofreading continued. <em>That is correct behavior, not a bug</em> — but it must be visible.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="43" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="43" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="worked-example-which-version-produced-this-number">Worked example: which version produced this number?</h2>
 <blockquote>
-<p><strong>The situation.</strong> A figure your group submitted eight months ago reports that a<br />
-pyramidal cell receives <strong>1,412</strong> input synapses. Re-running the notebook today<br />
-returns <strong>1,530</strong> for an ID the lineage viewer says is &quot;the same cell.&quot; A reviewer<br />
-asks which number is right.</p>
+<p><strong>The situation.</strong> A figure your group submitted eight months ago reports that a pyramidal cell receives <strong>1,412</strong> input synapses. Re-running the notebook today returns <strong>1,530</strong> for an ID the lineage viewer says is &quot;the same cell.&quot; A reviewer asks which number is right.</p>
 </blockquote>
-<p><strong>Step 1 — look for the pin.</strong> The notebook has no reproducibility header and the query<br />
-does not pass a materialization version. It ran against <em>&quot;latest&quot;</em> — which was one<br />
-thing in December and another thing now.</p>
-<p><strong>Step 2 — recognize that both numbers are correct.</strong> 1,412 was the cell's input count<br />
-under the segmentation state of eight months ago. 1,530 is its count today, after<br />
-further proofreading closed more of the arbor.</p>
-<p><strong>Step 3 — answer the reviewer honestly.</strong> Neither number is wrong; the <em>paper</em> is<br />
-wrong, because it reported a version-dependent quantity without its version.</p>
+<p><strong>Step 1 — look for the pin.</strong> The notebook has no reproducibility header and the query does not pass a materialization version. It ran against <em>&quot;latest&quot;</em> — which was one thing in December and another thing now.</p>
+<p><strong>Step 2 — recognize that both numbers are correct.</strong> 1,412 was the cell's input count under the segmentation state of eight months ago. 1,530 is its count today, after further proofreading closed more of the arbor.</p>
+<p><strong>Step 3 — answer the reviewer honestly.</strong> Neither number is wrong; the <em>paper</em> is wrong, because it reported a version-dependent quantity without its version.</p>
 <div class="box box--warn">
-<p><strong>Step 4 — notice the deeper problem.</strong> You cannot now reconstruct which version<br />
-produced 1,412, so you cannot reproduce your own figure. The fix is not a better<br />
-memory. It is a header.</p>
+<p><strong>Step 4 — notice the deeper problem.</strong> You cannot now reconstruct which version produced 1,412, so you cannot reproduce your own figure. The fix is not a better memory. It is a header.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="44" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="44" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-reproducibility-header">The reproducibility header</h2>
 <h3 id="six-lines-at-the-top-of-every-notebook-non-negotiable">Six lines at the top of every notebook. Non-negotiable.</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># --- reproducibility header -------------------------------------------</span>
@@ -1303,30 +1087,18 @@ SEED           = <span class="hljs-number">20260314</span>               <span c
 <span class="hljs-comment"># ----------------------------------------------------------------------</span>
 </code></pre>
 <div class="box box--good">
-<p><strong>The rule.</strong> Every figure records the materialization version, the query code, and the<br />
-date. Every paper states the version.</p>
-<p><strong>If your collaborator cannot reproduce your number, the first question is always<br />
-&quot;which version?&quot;</strong> — and it should be answerable in one second, from the figure.</p>
+<p><strong>The rule.</strong> Every figure records the materialization version, the query code, and the date. Every paper states the version.</p>
+<p><strong>If your collaborator cannot reproduce your number, the first question is always &quot;which version?&quot;</strong> — and it should be answerable in one second, from the figure.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="45" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="45" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-other-four-reproducibility-requirements">The other four reproducibility requirements</h2>
-<p><strong>Every stage output records:</strong> input artifact IDs, code revision (commit hash), the<br />
-full parameter set, model artifact hash and framework version, container image digest,<br />
-random seeds, and wall-clock/resource usage.</p>
-<p><strong>Idempotency.</strong> Re-running a stage on the same inputs with the same parameters<br />
-produces the same output. <em>This sounds trivial and is not</em> — GPU non-determinism,<br />
-unpinned dependencies, and unseeded randomness all break it. <strong>Pin them explicitly and<br />
-test that a re-run matches.</strong></p>
-<p><strong>Region-scoped invalidation.</strong> When a region is re-processed, only downstream<br />
-artifacts <em>for that region</em> are invalidated. A pipeline whose only recovery option is<br />
-&quot;re-run everything&quot; <strong>cannot fix a local defect at petascale</strong> — so this is a<br />
-structural requirement, not a nicety.</p>
-<p><strong>Release candidates.</strong> Segmentation is versioned and released like software: produce a<br />
-candidate, compute quality metrics (Module 9), review, then promote or reject.<br />
-<strong>Analyses cite the release.</strong></p>
+<p><strong>Every stage output records:</strong> input artifact IDs, code revision (commit hash), the full parameter set, model artifact hash and framework version, container image digest, random seeds, and wall-clock/resource usage.</p>
+<p><strong>Idempotency.</strong> Re-running a stage on the same inputs with the same parameters produces the same output. <em>This sounds trivial and is not</em> — GPU non-determinism, unpinned dependencies, and unseeded randomness all break it. <strong>Pin them explicitly and test that a re-run matches.</strong></p>
+<p><strong>Region-scoped invalidation.</strong> When a region is re-processed, only downstream artifacts <em>for that region</em> are invalidated. A pipeline whose only recovery option is &quot;re-run everything&quot; <strong>cannot fix a local defect at petascale</strong> — so this is a structural requirement, not a nicety.</p>
+<p><strong>Release candidates.</strong> Segmentation is versioned and released like software: produce a candidate, compute quality metrics (Module 9), review, then promote or reject. <strong>Analyses cite the release.</strong></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="46" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="46" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="environments-pinning-containers-and-the-honest-re-run-test">Environments: pinning, containers, and the honest re-run test</h2>
 <div class="cols">
 <div>
@@ -1337,8 +1109,7 @@ candidate, compute quality metrics (Module 9), review, then promote or reject.<b
 <li>CUDA/driver versions where GPU results are involved</li>
 <li>Random seeds for every stochastic step</li>
 </ul>
-<p><strong>Then test it.</strong> Run the pipeline twice in fresh environments and diff the outputs.<br />
-Most pipelines fail this the first time, and the failure is always informative.</p>
+<p><strong>Then test it.</strong> Run the pipeline twice in fresh environments and diff the outputs. Most pipelines fail this the first time, and the failure is always informative.</p>
 </div>
 <div>
 <div class="box box--warn">
@@ -1351,45 +1122,37 @@ Most pipelines fail this the first time, and the failure is always informative.<
 <li>Wall-clock or hostname leaking into an output path or a seed</li>
 </ol>
 </div>
-<p>Items 1 and 4 are free to fix. Item 3 may cost throughput to fix, and that is a<br />
-decision to make deliberately and <strong>record</strong>, not to discover.</p>
+<p>Items 1 and 4 are free to fix. Item 3 may cost throughput to fix, and that is a decision to make deliberately and <strong>record</strong>, not to discover.</p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="47" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="47" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="sharing-fair-licensing-and-what-public-actually-means">Sharing: FAIR, licensing, and what &quot;public&quot; actually means</h2>
 <div class="cols">
 <div>
-<p><strong>Findable.</strong> A persistent identifier and rich metadata — not a lab web page that moves<br />
-when a postdoc graduates.</p>
-<p><strong>Accessible.</strong> An open protocol. Precomputed-over-HTTP satisfies this almost by<br />
-accident, which is part of why it won.</p>
-<p><strong>Interoperable.</strong> Standard formats and vocabularies, so a second tool can read your<br />
-volume without a bespoke adapter.</p>
-<p><strong>Reusable.</strong> A clear license, and provenance detailed enough for someone to judge<br />
-fitness for <em>their</em> purpose — not just yours.</p>
+<p><strong>Findable.</strong> A persistent identifier and rich metadata — not a lab web page that moves when a postdoc graduates.</p>
+<p><strong>Accessible.</strong> An open protocol. Precomputed-over-HTTP satisfies this almost by accident, which is part of why it won.</p>
+<p><strong>Interoperable.</strong> Standard formats and vocabularies, so a second tool can read your volume without a bespoke adapter.</p>
+<p><strong>Reusable.</strong> A clear license, and provenance detailed enough for someone to judge fitness for <em>their</em> purpose — not just yours.</p>
 </div>
 <div>
 <div class="box box--warn">
-<p><strong>&quot;Publicly available&quot; is not one thing.</strong> Ask which of these a dataset actually<br />
-offers:</p>
+<p><strong>&quot;Publicly available&quot; is not one thing.</strong> Ask which of these a dataset actually offers:</p>
 <ul>
 <li>viewable in a browser, but not downloadable</li>
 <li>downloadable, but no license stated</li>
 <li>licensed, but no provenance</li>
 <li>everything above, but <strong>egress costs are yours</strong></li>
 </ul>
-<p>The fourth is the common case at petascale, and it is why co-located compute matters<br />
-more than &quot;open data&quot; as a slogan.</p>
+<p>The fourth is the common case at petascale, and it is why co-located compute matters more than &quot;open data&quot; as a slogan.</p>
 </div>
 </div>
 </div>
 <div class="box">
-<p><strong>Human tissue adds a layer.</strong> Consent frameworks, de-identification, and IRB<br />
-conditions travel with the data. State them in the dataset record, not in an email.</p>
+<p><strong>Human tissue adds a layer.</strong> Consent frameworks, de-identification, and IRB conditions travel with the data. State them in the dataset record, not in an email.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="48" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-paginate="true" data-class="dense" data-theme="frontiers" lang="POSIX" class="dense" data-marpit-pagination="48" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="the-platform-landscape">The platform landscape</h2>
 
 <table>
@@ -1445,30 +1208,24 @@ conditions travel with the data. State them in the dataset record, not in an ema
 </table>
 <p class="src">BossDB (10.1038/s41592-018-0181-1); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); VAST (10.3389/fncir.2018.00088).</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="49" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="49" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="choosing-a-platform-for-the-assignment">Choosing a platform for the assignment</h2>
 <div class="cols">
 <div>
-<p><strong>Start with neuPrint if</strong> you want connectivity fast. The connectome is frozen, the<br />
-graph is served, and there is no version problem to reason about — which is a feature<br />
-for a first query and a limitation later.</p>
-<p><strong>Use CAVE / caveclient if</strong> you want MICrONS or FlyWire <em>with</em> the versioning<br />
-machinery. This is the realistic case and the one the assignment rewards.</p>
-<p><strong>Use CloudVolume / BossDB if</strong> your question needs voxels, meshes, or skeletons rather<br />
-than a graph.</p>
+<p><strong>Start with neuPrint if</strong> you want connectivity fast. The connectome is frozen, the graph is served, and there is no version problem to reason about — which is a feature for a first query and a limitation later.</p>
+<p><strong>Use CAVE / caveclient if</strong> you want MICrONS or FlyWire <em>with</em> the versioning machinery. This is the realistic case and the one the assignment rewards.</p>
+<p><strong>Use CloudVolume / BossDB if</strong> your question needs voxels, meshes, or skeletons rather than a graph.</p>
 </div>
 <div>
 <div class="box box--good">
 <p><strong>A good assignment query is small and specific.</strong></p>
-<p><em>&quot;For MICrONS materialization v943, what is the distribution of synapse counts per<br />
-connection among proofread L2/3 pyramidal cells?&quot;</em></p>
-<p>Pinned version. Named population. A distribution, not a single number. Runs in<br />
-minutes. Reproducible by a stranger.</p>
+<p><em>&quot;For MICrONS materialization v943, what is the distribution of synapse counts per connection among proofread L2/3 pyramidal cells?&quot;</em></p>
+<p>Pinned version. Named population. A distribution, not a single number. Runs in minutes. Reproducible by a stranger.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="50" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="50" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="what-has-to-change-for-a-whole-mouse-brain">What has to change for a whole mouse brain</h2>
 <h3 id="500%C3%97-is-an-engineering-program-not-a-microscope-purchase">500× is an engineering program, not a microscope purchase</h3>
 <table>
@@ -1513,12 +1270,10 @@ minutes. Reproducible by a stranger.</p>
 </tbody>
 </table>
 <div class="box">
-<p>Note which row is bold. Every other row is a research problem with an obvious line of<br />
-attack. <strong>Proofreading is the one where the answer is not yet in view</strong> — which is<br />
-exactly why Module 9 opens there.</p>
+<p>Note which row is bold. Every other row is a research problem with an obvious line of attack. <strong>Proofreading is the one where the answer is not yet in view</strong> — which is exactly why Module 9 opens there.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="51" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="51" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="part-c-checkpoint--a-five-minute-reproducibility-audit">Part C checkpoint — a five-minute reproducibility audit</h2>
 <h3 id="run-this-on-any-connectomics-figure-including-your-own">Run this on any connectomics figure, including your own</h3>
 <table>
@@ -1560,17 +1315,13 @@ exactly why Module 9 opens there.</p>
 </tbody>
 </table>
 <div class="box box--good">
-<p><strong>Do this to your own assignment notebook before submitting it.</strong> Every row you cannot<br />
-answer is a point the rubric will find, and — more usefully — a question a reviewer<br />
-would have asked eighteen months from now, when you no longer remember.</p>
+<p><strong>Do this to your own assignment notebook before submitting it.</strong> Every row you cannot answer is a point the rubric will find, and — more usefully — a question a reviewer would have asked eighteen months from now, when you no longer remember.</p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="52" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="52" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="module-8-assignment">Module 8 assignment</h2>
 <h3 id="five-short-answer-questions-plus-a-reproducible-query-due-before-module-9">Five short-answer questions plus a reproducible query. Due before Module 9.</h3>
-<p><strong>Short answer.</strong> Acquisition-time arithmetic; an artifact triage ranking with<br />
-justification; a capacity estimate; a chunk-shape choice for a stated access pattern;<br />
-diagnosing a defect by its coordinate system.</p>
+<p><strong>Short answer.</strong> Acquisition-time arithmetic; an artifact triage ranking with justification; a capacity estimate; a chunk-shape choice for a stated access pattern; diagnosing a defect by its coordinate system.</p>
 <p><strong>The reproducible query (graded artifact).</strong> A notebook that:</p>
 <table>
 <thead>
@@ -1607,17 +1358,12 @@ diagnosing a defect by its coordinate system.</p>
 </tbody>
 </table>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="53" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="53" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="discussion-forum-and-journal-club">Discussion forum and journal club</h2>
 <div class="cols">
 <div>
-<p><strong>Discussion prompt 1 — the artifact you would fear most.</strong><br />
-Pick one artifact from the catalog. Argue for where it belongs in the labor/data-loss<br />
-split, and describe the QA metric that would catch it earliest. Disagree with a<br />
-classmate who ranked it differently.</p>
-<p><strong>Discussion prompt 2 — the version problem in your field.</strong><br />
-Every field has a version problem: genome builds, atlas versions, model checkpoints.<br />
-Describe one from your own area, and what the community did (or failed to do) about it.</p>
+<p><strong>Discussion prompt 1 — the artifact you would fear most.</strong> Pick one artifact from the catalog. Argue for where it belongs in the labor/data-loss split, and describe the QA metric that would catch it earliest. Disagree with a classmate who ranked it differently.</p>
+<p><strong>Discussion prompt 2 — the version problem in your field.</strong> Every field has a version problem: genome builds, atlas versions, model checkpoints. Describe one from your own area, and what the community did (or failed to do) about it.</p>
 </div>
 <div>
 <div class="box">
@@ -1629,19 +1375,16 @@ Describe one from your own area, and what the community did (or failed to do) ab
 <li>SmartEM 2025 — ML-guided acquisition</li>
 <li>Tavakoli et al. 2025 — LICONN</li>
 </ul>
-<p>Present the <strong>problem the method solves</strong>, the <strong>cost it pays</strong>, and the claim you<br />
-think it does <em>not</em> support.</p>
+<p>Present the <strong>problem the method solves</strong>, the <strong>cost it pays</strong>, and the claim you think it does <em>not</em> support.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="54" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-paginate="true" data-theme="frontiers" lang="POSIX" data-marpit-pagination="54" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="what-to-bring-to-module-9">What to bring to Module 9</h2>
 <div class="cols">
 <div>
-<p><strong>Module 9 turns voxels into claims.</strong> Segmentation and its error metrics, proofreading<br />
-triage, graph construction, null models, motifs, and what connectomics and machine<br />
-learning actually give each other.</p>
+<p><strong>Module 9 turns voxels into claims.</strong> Segmentation and its error metrics, proofreading triage, graph construction, null models, motifs, and what connectomics and machine learning actually give each other.</p>
 <p><strong>Come with:</strong></p>
 <ul>
 <li>your reproducible query, run and working</li>
@@ -1652,43 +1395,41 @@ learning actually give each other.</p>
 <div>
 <div class="box box--good">
 <p><strong>The one idea to carry forward.</strong></p>
-<p>Every number in connectomics is <strong>produced by a versioned pipeline</strong> whose stages each<br />
-have a characteristic failure.</p>
-<p>Reproducibility is not paperwork. It is the only thing that lets you say <em>which</em><br />
-number you are defending.</p>
+<p>Every number in connectomics is <strong>produced by a versioned pipeline</strong> whose stages each have a characteristic failure.</p>
+<p>Reproducibility is not paperwork. It is the only thing that lets you say <em>which</em> number you are defending.</p>
 </div>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-paginate="true" data-class="refs tight" data-theme="frontiers" lang="POSIX" class="refs tight" data-marpit-pagination="55" style="--paginate:true;--class:refs tight;--theme:frontiers;" data-marpit-pagination-total="55">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-paginate="true" data-class="refs tight" data-theme="frontiers" lang="POSIX" class="refs tight" data-marpit-pagination="55" style="--paginate:true;--class:refs tight;--theme:frontiers;" data-marpit-pagination-total="56">
 <h2 id="references-and-sources">References and sources</h2>
 
-<p><strong>Preparation and staining.</strong> Hua, Laserstein &amp; Helmstaedter 2015<br />
-(10.1038/ncomms8923, rOTO en-bloc); Mikula &amp; Denk 2015 (10.1038/nmeth.3361,<br />
-whole-brain staining); Pallotto et al. 2015 (10.7554/eLife.08206, ECS-preserving<br />
-fixation).</p>
-<p><strong>Sectioning and acquisition.</strong> Denk &amp; Horstmann 2004 (10.1371/journal.pbio.0020329);<br />
-Knott et al. 2008 (10.1523/JNEUROSCI.3189-07.2008); Bock et al. 2011<br />
-(10.1038/nature09802, TEMCA); Hayworth et al. 2014 (10.3389/fncir.2014.00068, ATUM +<br />
-WaferMapper), 2015 (10.1038/nmeth.3292, hot-knife), 2019 (10.1038/s41592-019-0641-2,<br />
-GCIB-SEM); Eberle et al. 2015 (10.1111/jmi.12224, multibeam); Xu et al. 2017<br />
-(10.7554/eLife.25916); Phelps et al. 2021 (10.1016/j.cell.2020.12.013, GridTape);<br />
-Kievits &amp; Hoogenboom 2024 (10.1515/mim-2024-0005, FAST-EM); SmartEM 2025<br />
-(10.1038/s41592-025-02929-3).</p>
-<p><strong>Alignment, segmentation, synapses.</strong> Saalfeld et al. 2012 (10.1038/nmeth.2072);<br />
-SOFIMA (github.com/google-research/sofima); Januszewski et al. 2018<br />
-(10.1038/s41592-018-0049-4, flood-filling); Berning et al. 2015<br />
-(10.1016/j.neuron.2015.09.003, SegEM); Funke et al. 2019<br />
-(10.1109/TPAMI.2018.2835450); Staffler et al. 2017 (10.7554/eLife.26414, SynEM);<br />
-Dorkenwald et al. 2017 (10.1038/nmeth.4206, SyConn); Buhmann et al. 2021<br />
-(10.1038/s41592-021-01183-7, Synful).</p>
-<p><strong>Infrastructure.</strong> BossDB (10.1038/s41592-018-0181-1); neuPrint<br />
-(10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID<br />
-(10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); CATMAID<br />
-(10.1093/bioinformatics/btp266); VAST (10.3389/fncir.2018.00088); CloudVolume<br />
-(github.com/seung-lab/cloud-volume); Neuroglancer (github.com/google/neuroglancer).</p>
+<p><strong>Preparation and staining.</strong> Hua, Laserstein &amp; Helmstaedter 2015 (10.1038/ncomms8923, rOTO en-bloc); Mikula &amp; Denk 2015 (10.1038/nmeth.3361, whole-brain staining); Pallotto et al. 2015 (10.7554/eLife.08206, ECS-preserving fixation).</p>
+<p><strong>Sectioning and acquisition.</strong> Denk &amp; Horstmann 2004 (10.1371/journal.pbio.0020329); Knott et al. 2008 (10.1523/JNEUROSCI.3189-07.2008); Bock et al. 2011 (10.1038/nature09802, TEMCA); Hayworth et al. 2014 (10.3389/fncir.2014.00068, ATUM + WaferMapper), 2015 (10.1038/nmeth.3292, hot-knife), 2019 (10.1038/s41592-019-0641-2, GCIB-SEM); Eberle et al. 2015 (10.1111/jmi.12224, multibeam); Xu et al. 2017 (10.7554/eLife.25916); Phelps et al. 2021 (10.1016/j.cell.2020.12.013, GridTape); Kievits &amp; Hoogenboom 2024 (10.1515/mim-2024-0005, FAST-EM); SmartEM 2025 (10.1038/s41592-025-02929-3).</p>
+<p><strong>Alignment, segmentation, synapses.</strong> Saalfeld et al. 2012 (10.1038/nmeth.2072); SOFIMA (github.com/google-research/sofima); Januszewski et al. 2018 (10.1038/s41592-018-0049-4, flood-filling); Berning et al. 2015 (10.1016/j.neuron.2015.09.003, SegEM); Funke et al. 2019 (10.1109/TPAMI.2018.2835450); Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Dorkenwald et al. 2017 (10.1038/nmeth.4206, SyConn); Buhmann et al. 2021 (10.1038/s41592-021-01183-7, Synful).</p>
+<p><strong>Infrastructure.</strong> BossDB (10.1038/s41592-018-0181-1); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); CATMAID (10.1093/bioinformatics/btp266); VAST (10.3389/fncir.2018.00088); CloudVolume (github.com/seung-lab/cloud-volume); Neuroglancer (github.com/google/neuroglancer).</p>
 <p><strong>Course material.</strong> NeuroTrailblazers technical training Units 03, 04.<br />
 <a href="https://neurotrailblazers.org">https://neurotrailblazers.org</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-class="refs" data-theme="frontiers" lang="POSIX" class="refs" data-marpit-pagination="56" style="--paginate:true;--class:refs;--theme:frontiers;" data-marpit-pagination-total="56">
+<h2 id="use-adapt-and-credit">Use, adapt, and credit</h2>
+<h3 id="these-slides-are-openly-licensed-for-community-use">These slides are openly licensed for community use</h3>
+<div class="cols">
+<div>
+<p><strong>Licence: CC BY-ND 4.0</strong> Creative Commons Attribution-NoDerivatives 4.0 International.<br />
+<a href="https://creativecommons.org/licenses/by-nd/4.0/">https://creativecommons.org/licenses/by-nd/4.0/</a></p>
+<p><strong>You may</strong> teach from these slides in any setting, including commercially; copy and redistribute them in any medium; and present them unmodified. No permission needed.</p>
+<p><strong>You may not</strong> publicly distribute a modified version — re-cut, re-ordered, translated, restyled, or merged into another deck. Editing a private copy for your own class is not restricted; sharing the result is.</p>
+</div>
+<div>
+<p><strong>How to credit</strong></p>
+<p>Gray Roncal, W. (2026). <em>Nanoscale Connectomics: Tools and Methods</em> (EN.585.781 Frontiers in Neuroengineering, Module 8). NeuroTrailblazers. CC BY-ND 4.0. neurotrailblazers.org/teaching/lectures/</p>
+<p><strong>Want to adapt them?</strong> Ask. The project would rather grant permission than have the material go unused, and adaptations that improve the teaching are welcome back.</p>
+<p><strong>Editable source.</strong> The Marp markdown is in the repository — the exported PowerPoint renders each slide as an image, so the markdown is the thing to edit.<br />
+<a href="https://github.com/wrgr/neurotrailblazers">https://github.com/wrgr/neurotrailblazers</a></p>
+</div>
+</div>
+<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction.</p>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
 </script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>Module 7 asked what a connectome is and what it can support. This module answers a

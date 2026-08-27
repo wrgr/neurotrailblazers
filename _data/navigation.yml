@@ -64,6 +64,8 @@ items:
     dropdown:
       - title: "Teaching Hub"
         url: "/teaching/"
+      - title: "Connectomics Lecture Series"
+        url: "/teaching/lectures/"
       - title: "Session Kits"
         url: "/teaching/sessions/"
       - title: "Facilitator Guide"

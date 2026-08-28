@@ -4,7 +4,7 @@ relief standee) for services like Shapeways full-color printing.
 """
 import numpy as np
 import trimesh
-from shapely.geometry import Polygon, LineString
+from shapely.geometry import Polygon, LineString, Point
 from shapely.ops import unary_union
 import trimesh.creation as tc
 
@@ -75,7 +75,7 @@ def emblem_from_shapely(poly, thickness, hexcolor):
     geoms = list(poly.geoms) if poly.geom_type == "MultiPolygon" else [poly]
     meshes = [tc.extrude_polygon(g, height=thickness) for g in geoms if not g.is_empty]
     m = trimesh.util.concatenate(meshes)
-    R = trimesh.transformations.rotation_matrix(-np.pi / 2, [1, 0, 0])
+    R = trimesh.transformations.rotation_matrix(np.pi / 2, [1, 0, 0])
     m.apply_transform(R)
     return colored(m, hexcolor)
 
@@ -112,7 +112,7 @@ DEFAULT_TAIL_GLOW = (7, -3, 2.2)
 
 
 # ---------------------------------------------------------------------
-def build_character(colors, hair_fn, emblem_fn, eye_z=54.5, mouth_z=51.5, extra_fn=None):
+def build_character(colors, hair_fn, emblem_fn, mouth_fn, eye_z=54.5, mouth_z=51.5, extra_fn=None):
     c = colors
     parts = [base_disc()]
 
@@ -145,7 +145,7 @@ def build_character(colors, hair_fn, emblem_fn, eye_z=54.5, mouth_z=51.5, extra_
     # eyes + mouth (on the head's front hemisphere)
     for sx in (-2.5, 2.5):
         parts.append(sphere((sx, 8.0, eye_z), 1.05, "#111827"))
-    parts.append(capsule_between((-2.1, 8.2, mouth_z), (2.1, 8.2, mouth_z), 0.65, "#111827"))
+    mouth_fn(parts, c, mouth_z)
 
     # chest emblem, centered on the torso front at world (0, 9.4, 34)
     emblem_fn(parts, c)
@@ -163,7 +163,7 @@ def build_character(colors, hair_fn, emblem_fn, eye_z=54.5, mouth_z=51.5, extra_
     return [p for p in parts if p is not None]
 
 
-def polygon_emblem(points_xy_up, thickness=1.6, at=(0, 7.6, 34)):
+def polygon_emblem(points_xy_up, thickness=1.6, at=(0, 8.5, 34)):
     def fn(parts, c):
         m = emblem_mesh(points_xy_up, thickness, c["accent"])
         m.apply_translation(list(at))
@@ -171,7 +171,7 @@ def polygon_emblem(points_xy_up, thickness=1.6, at=(0, 7.6, 34)):
     return fn
 
 
-def stroke_emblem(strokes, width=1.6, thickness=1.6, at=(0, 7.6, 34)):
+def stroke_emblem(strokes, width=1.6, thickness=1.6, at=(0, 8.5, 34)):
     """strokes: list of point-lists, each a polyline in local (x=right,
     y=up) coords; unioned into one filled badge shape (a crisper look than
     mounting separate thin 3D capsule sticks)."""
@@ -180,6 +180,17 @@ def stroke_emblem(strokes, width=1.6, thickness=1.6, at=(0, 7.6, 34)):
     def fn(parts, c):
         m = emblem_from_shapely(poly, thickness, c["accent"])
         m.apply_translation(list(at))
+        parts.append(m)
+    return fn
+
+
+def mouth_shape(poly, thickness=1.0, y=8.7, hexcolor="#111827"):
+    """A flat mouth badge (same technique as the chest emblems) mounted on
+    the head's front hemisphere at world (0, y, mouth_z) -- mouth_z comes
+    from build_character's per-character parameter at call time."""
+    def fn(parts, c, mouth_z):
+        m = emblem_from_shapely(poly, thickness, hexcolor)
+        m.apply_translation([0, y, mouth_z])
         parts.append(m)
     return fn
 
@@ -209,8 +220,12 @@ def cortex_hair(parts, c):
         parts.append(sphere((hx, 1, hz), 4.3, c["hair"]))
 
 
+# confident, warm closed smile -- the mission lead
+CORTEX_MOUTH = stroke_polygon([(-3.4, 0.4), (-1.7, -0.9), (0, -1.3), (1.7, -0.9), (3.4, 0.4)], width=1.1)
+
+
 def build_cortex():
-    return build_character(CORTEX, cortex_hair, polygon_emblem(CORTEX_STAR))
+    return build_character(CORTEX, cortex_hair, polygon_emblem(CORTEX_STAR), mouth_shape(CORTEX_MOUTH))
 
 
 # ---------------------------------------------------------------------
@@ -231,8 +246,14 @@ def axon_extra(parts, c):
     parts.append(sphere((0, 0, 68.6), 1.7, c["accent"]))
 
 
+# excited, wide-open grin -- the fast scout
+AXON_MOUTH = stroke_polygon([(-2.3, 0), (2.3, 0)], width=2.0)
+
+
 def build_axon():
-    return build_character(AXON, axon_hair, polygon_emblem(AXON_BOLT), extra_fn=axon_extra)
+    return build_character(
+        AXON, axon_hair, polygon_emblem(AXON_BOLT, at=(0, 8.5, 32)), mouth_shape(AXON_MOUTH), extra_fn=axon_extra,
+    )
 
 
 # ---------------------------------------------------------------------
@@ -256,8 +277,14 @@ DENDRA_TWIG = [
 ]
 
 
+# soft, gentle closed smile -- the attentive listener
+DENDRA_MOUTH = stroke_polygon([(-2.4, 0.15), (-1.2, -0.4), (0, -0.55), (1.2, -0.4), (2.4, 0.15)], width=0.75)
+
+
 def build_dendra():
-    return build_character(DENDRA, dendra_hair, stroke_emblem(DENDRA_TWIG, width=1.5, at=(0, 7.6, 36)))
+    return build_character(
+        DENDRA, dendra_hair, stroke_emblem(DENDRA_TWIG, width=1.5, at=(0, 8.5, 36)), mouth_shape(DENDRA_MOUTH),
+    )
 
 
 # ---------------------------------------------------------------------
@@ -271,10 +298,14 @@ def syn_hair(parts, c):
     parts.append(ellipsoid((0, -1, 61.5), 3.2, 6.8, 5.5, c["hair"]))
 
 
+# excited, surprised little "o" -- the energetic connector
+SYN_MOUTH = Point(0, -0.3).buffer(1.7, quad_segs=16)
+
+
 def build_syn():
     return build_character(
-        SYN, syn_hair, polygon_emblem(sparkle_points(r_out=6.0, r_in=1.6), at=(0, 7.6, 34)),
-        eye_z=55, mouth_z=52.5,
+        SYN, syn_hair, polygon_emblem(sparkle_points(r_out=6.0, r_in=1.6), at=(0, 8.5, 34)),
+        mouth_shape(SYN_MOUTH), eye_z=55, mouth_z=52.5,
     )
 
 
@@ -302,7 +333,7 @@ GLIA_WRENCH_POLY = unary_union([
 
 def glia_emblem(parts, c):
     m = emblem_from_shapely(GLIA_WRENCH_POLY, 1.6, c["accent"])
-    m.apply_translation([0, 7.6, 33])
+    m.apply_translation([0, 8.5, 33])
     parts.append(m)
 
 
@@ -316,8 +347,12 @@ def glia_extra(parts, c):
         parts.append(capsule_between((sx, 0.5, 20), (sx, 6.4, 20), 1.6, c["suit_dark"]))
 
 
+# focused, one-sided smirk -- the engineer mid-repair
+GLIA_MOUTH = stroke_polygon([(-2.6, -0.2), (-0.6, -0.5), (0.8, -0.35), (2.3, 0.9)], width=0.85)
+
+
 def build_glia():
-    return build_character(GLIA, glia_hair, glia_emblem, extra_fn=glia_extra)
+    return build_character(GLIA, glia_hair, glia_emblem, mouth_shape(GLIA_MOUTH), extra_fn=glia_extra)
 
 
 def verify_connected(parts, margin=0.5, min_volume=0.15):

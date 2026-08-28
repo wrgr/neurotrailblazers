@@ -9,35 +9,75 @@ glowing synaptic bouton, plus a raised chest emblem, eyes, and mouth.
 ## Files
 
 - `neuronaut-cortex.stl`, `neuronaut-axon.stl`, `neuronaut-dendra.stl`,
-  `neuronaut-syn.stl`, `neuronaut-glia.stl` — one figure each, ~45 mm wide ×
-  84–94 mm tall × 4.5 mm thick, each on its own integrated base plaque.
-- `neuronaut-all-five.stl` — all five arranged side by side on one plate
-  (264.8 × 93.6 × 4.5 mm), ready to slice as a single print job.
+  `neuronaut-syn.stl`, `neuronaut-glia.stl` — one figure panel each, ~38 mm
+  wide × 79–88 mm tall × 4.5 mm thick, each with a small tab below the
+  boots.
+- `neuronaut-stand-base.stl` — a shared base block (46 × 26 × 12 mm) with a
+  slot cut through it sized to any figure's tab. Print one per figure you
+  want displayed at once.
+- `neuronaut-all-five.stl` — all five figure panels plus one stand base,
+  arranged on one plate (298 × 101 × 12 mm), ready to slice as a single
+  print job.
 - `generate_stl.py` — the generator script (Python + shapely + trimesh).
-  Re-run it after editing the character geometry in `neuronauts/index.html`
-  to regenerate matching STLs; see the constants at the top (`SCALE`,
-  `BASE_MM`, `DETAIL_MM`, `PLAQUE`) to adjust size or proportions.
+  See [Keeping this in sync](#keeping-this-in-sync-with-indexhtml) before
+  editing character geometry in `neuronauts/index.html`.
+
+## Assembly
+
+A figure panel is only 4.5 mm thick — balanced on that edge it's not
+stable on its own. Press each figure's tab into a stand base's slot (a
+firm push fit; add a dot of glue if you want it permanent) to display it
+upright. Both pieces print flat with no supports.
 
 ## Design
 
-Two-layer relief, extruded from the flat SVG artwork:
+**Figure panel** — a two-layer relief, extruded from the flat SVG artwork:
 
 - **Base layer** (3.2 mm): the full body silhouette — legs, boots, torso,
   arms, gloves, helmet, head, hair, and the axon-cable tail — fused to a
-  rounded rectangular base plaque so each figure stands with no supports.
+  rectangular tab below the boots.
 - **Detail layer** (+1.3 mm on top): the chest emblem, eyes, and mouth, for
   a painted-relief look.
 
+**Stand base** — a solid block with a through-slot boolean-cut to the tab's
+size plus clearance, so any figure snaps into any base.
+
 ## Print settings
 
-No supports or brim needed — every figure has a flat bottom and a wide,
-stable base plaque. Suggested starting point for FDM:
+No supports or brim needed for either part — both have a flat bottom.
+Suggested starting point for FDM:
 
 - Layer height: 0.12–0.16 mm (captures the emblem and facial detail best)
-- Infill: 15–20 % is plenty at this thickness
-- Orientation: print flat, base plaque down, as-is
+- Infill: 15–20 % is plenty for the figure panels; 15% is fine for the
+  base too since it's mostly a friction-fit shell
+- Orientation: print both parts flat, as-is, exactly as exported — for
+  the figure panel this means detail-side (the raised emblem/eyes/mouth)
+  facing *up*. The panel isn't uniformly flat: only the base layer (3.2mm)
+  is meant to sit on the bed, with the raised detail layer (+1.3mm)
+  facing away from it. Print it detail-side down instead and the raised
+  bumps become the only points touching the bed, leaving most of the
+  panel suspended 1.3mm above it with nothing under it. Base block:
+  either large flat face down.
 - Nozzle: 0.4 mm; hand-paint the raised details after printing for the
   full multi-color look from the page
 
-For resin printers, print upright (rotate 90° so the base plaque is a
-vertical wall) for the cleanest surface finish on the face.
+For resin printers, either part can also print flat with no supports;
+there's no need to print the figure panel on edge.
+
+## Keeping this in sync with index.html
+
+`generate_stl.py` reconstructs each character's geometry by hand in
+Python — it does not parse `neuronauts/index.html`, so editing a
+character's SVG there does not automatically change the generated STLs.
+To catch that drift instead of silently generating stale models, the
+script hashes each character's `<g id="nn-*">` markup in `index.html` and
+compares it against `EXPECTED_SVG_HASHES` at the top of the file; if
+they don't match, it refuses to run.
+
+After intentionally changing a character's SVG in `index.html`:
+
+1. Update the matching shape function in `generate_stl.py` (e.g.
+   `cortex_shapes()`) to reflect the new geometry.
+2. Run `python generate_stl.py --freeze-hashes` and paste the printed
+   hashes into `EXPECTED_SVG_HASHES`.
+3. Re-run `python generate_stl.py .` to regenerate the STLs.

@@ -1,21 +1,46 @@
 """
-Generate flat-standee 3D-print STLs for the five Neuronauts characters,
+Generate flat 3D-print STLs for the five Neuronauts characters,
 reconstructed from the exact coordinates used in the site's inline SVG
 (neuronauts/index.html, <g id="nn-cortex/axon/dendra/syn/glia">).
 
-Design: a two-layer relief standee.
-  - Layer A ("base"): the full body silhouette (legs, boots, torso, arms,
-    gloves, helmet, head, hair, axon-cable tail + bouton, tools/belt),
-    extruded to BASE_MM thickness, fused to a flat rounded base plaque so
-    the model stands with no supports needed.
-  - Layer B ("detail"): the chest emblem + eyes + mouth, raised an extra
-    DETAIL_MM on top of layer A, for a painted-relief look.
+Design: a two-piece standee.
+  - Figure panel: a two-layer relief.
+      Layer A ("base"): the full body silhouette (legs, boots, torso, arms,
+      gloves, helmet, head, hair, axon-cable tail + bouton, tools/belt),
+      extruded to BASE_MM thickness, with a small rectangular TAB fused
+      below the boots so the flat panel can slot into a stand.
+      Layer B ("detail"): the chest emblem + eyes + mouth, raised an extra
+      DETAIL_MM on top of layer A, for a painted-relief look.
+    Prints flat (no supports) but does NOT stand up on its own: a bare
+    BASE_MM-thick panel balanced on its edge is not stable. Use the base
+    below to display it upright.
+  - Stand base (`neuronaut-stand-base.stl`, shared by all five figures):
+    a squat block with a through-slot sized to the tab (plus clearance)
+    so any figure panel presses into it and stands vertically. Also
+    prints flat, no supports. Print one base per figure you want
+    displayed at once.
+
 Units: SVG coordinates are the original character-local units (as used in
 neuronauts/index.html); XY is scaled by SCALE to millimeters, Z is set
 directly in millimeters.
+
+Sync with neuronauts/index.html: the shapely geometry below is a manual
+transcription of each character's <g id="nn-*"> markup, not a live parse
+of it, so editing the SVG in index.html does NOT automatically update
+these shapes. To catch that drift, EXPECTED_SVG_HASHES below records a
+hash of each character's exact <g> markup as of the last time this
+geometry was updated; running this script re-hashes the live file and
+refuses to generate stale STLs if they no longer match. After
+intentionally changing a character's SVG, update the corresponding
+shape function(s) in this file to match, then run
+`python generate_stl.py --freeze-hashes` to print the new hashes to
+paste into EXPECTED_SVG_HASHES.
 """
+import hashlib
 import math
-import numpy as np
+import re
+from pathlib import Path
+
 from shapely.geometry import Polygon, LineString, box, Point
 from shapely.ops import unary_union
 import shapely.affinity as aff
@@ -24,8 +49,85 @@ import trimesh
 SCALE = 0.8          # mm per SVG unit (XY)
 BASE_MM = 3.2         # base layer thickness
 DETAIL_MM = 1.3        # extra height for raised emblem/eyes/mouth
-PLAQUE = (-28, 50, 28, 74)  # x0, y0, x1, y1 in SVG units (rounded rect)
-PLAQUE_R = 5
+
+TAB = (-11, 54, 11, 67)   # x0, y0, x1, y1 in SVG units: tab fused below the boots
+TAB_R = 2
+
+STAND_LENGTH_MM = 46.0    # base block footprint
+STAND_WIDTH_MM = 26.0
+STAND_HEIGHT_MM = 12.0
+STAND_R_MM = 4.0
+SLOT_CLEARANCE_MM = 0.4   # extra width/depth added to the tab's own size for a friction fit
+
+SOURCE_HTML = Path(__file__).resolve().parent.parent / "index.html"
+
+# sha256 of each character's exact "<g id=\"nn-<name>\">...</g>" markup in
+# neuronauts/index.html, as of the last time the shapes below were updated
+# to match it. Regenerate with `python generate_stl.py --freeze-hashes`
+# after intentionally changing both the SVG and this file together.
+EXPECTED_SVG_HASHES = {
+    "cortex": "9a84c49651be9daa8f5a9b9d0dda1b92249b93de22b8be39f7be3876ce512ce5",
+    "axon": "b17083b69035c0638f383c59a6f964c39685b90f0e542e37e681ae4fae6d9ad9",
+    "dendra": "ff814881b398cecd1dee952c8c7dc07be4e30d0b29679c60d9b1157b767c32dc",
+    "syn": "934caf4386f27d62ff2a4a0de7f08859c9c0065740bdd2f52d642be8fe23e318",
+    "glia": "c917f4e86b4f3479688a58ff6b04a160b7b828127e626164d701771460bd8632",
+}
+
+
+def extract_character_svg(name, html_text=None):
+    """Return the exact "<g id=\"nn-<name>\">...</g>" markup from index.html,
+    including its nested <g> children (shoulder etches, tail, helmet
+    spines, ...) up to the matching closing tag."""
+    text = html_text if html_text is not None else SOURCE_HTML.read_text()
+    start_tag = f'<g id="nn-{name}">'
+    start = text.find(start_tag)
+    if start == -1:
+        raise RuntimeError(f'Could not find {start_tag!r} in {SOURCE_HTML}')
+    depth = 0
+    pos = start
+    for m in re.finditer(r"<g[ >]|</g>", text[start:]):
+        depth += 1 if m.group().startswith("<g") else -1
+        if depth == 0:
+            pos = start + m.end()
+            break
+    else:
+        raise RuntimeError(f'Unbalanced <g> tags scanning nn-{name} in {SOURCE_HTML}')
+    return text[start:pos]
+
+
+def check_svg_in_sync():
+    """Fail loudly if index.html's character markup no longer matches the
+    markup EXPECTED_SVG_HASHES was recorded from, instead of silently
+    generating STLs that no longer match the published artwork."""
+    html_text = SOURCE_HTML.read_text()
+    mismatches = []
+    for name, expected in EXPECTED_SVG_HASHES.items():
+        actual = hashlib.sha256(extract_character_svg(name, html_text).encode()).hexdigest()
+        if actual != expected:
+            mismatches.append((name, actual))
+    if mismatches:
+        lines = [
+            "neuronauts/3d-print/generate_stl.py is out of sync with neuronauts/index.html.",
+            "The SVG markup for these characters has changed since the shapely geometry",
+            "below was last written, so the STLs would no longer match the published art:",
+        ]
+        for name, actual in mismatches:
+            lines.append(f'  - nn-{name}: expected hash {EXPECTED_SVG_HASHES[name]!r}, got {actual!r}')
+        lines.append(
+            "Update the corresponding shape function(s) in this file to match the new SVG, "
+            "then run `python generate_stl.py --freeze-hashes` and paste the printed hashes "
+            "into EXPECTED_SVG_HASHES."
+        )
+        raise SystemExit("\n".join(lines))
+
+
+def freeze_hashes():
+    html_text = SOURCE_HTML.read_text()
+    print("EXPECTED_SVG_HASHES = {")
+    for name in EXPECTED_SVG_HASHES:
+        h = hashlib.sha256(extract_character_svg(name, html_text).encode()).hexdigest()
+        print(f'    "{name}": "{h}",')
+    print("}")
 
 
 def circle(cx, cy, r, res=48):
@@ -150,9 +252,9 @@ def tail():
     return unary_union([cable, beads, bouton])
 
 
-def plaque():
-    x0, y0, x1, y1 = PLAQUE
-    return rounded_rect(x0, y0, x1 - x0, y1 - y0, PLAQUE_R)
+def tab():
+    x0, y0, x1, y1 = TAB
+    return rounded_rect(x0, y0, x1 - x0, y1 - y0, TAB_R)
 
 
 def mouth_smile(cy_offset=0):
@@ -247,7 +349,7 @@ def extrude(poly, height, z0=0.0):
 
 def build(name, fn, out_dir):
     base_shape, detail_shape = fn()
-    full_base = unary_union([base_shape, plaque()])
+    full_base = unary_union([base_shape, tab()])
     full_base = full_base.buffer(0)
     detail_shape = detail_shape.intersection(full_base.buffer(0.5))
 
@@ -273,9 +375,37 @@ def build(name, fn, out_dir):
     return combined
 
 
+def build_stand_base():
+    """A squat block with a through-slot sized to fit any figure's tab, so
+    the flat panel can be pressed in and stand upright. Boolean-cut with
+    the manifold3d engine; both pieces still print flat, no supports."""
+    block = trimesh.creation.box(extents=[STAND_LENGTH_MM, STAND_WIDTH_MM, STAND_HEIGHT_MM])
+
+    tab_x0, tab_y0, tab_x1, tab_y1 = TAB
+    tab_len_mm = (tab_x1 - tab_x0) * SCALE     # tab width becomes the slot's long axis
+    tab_thick_mm = BASE_MM                     # tab thickness = the flat panel thickness
+
+    slot = trimesh.creation.box(extents=[
+        tab_len_mm + SLOT_CLEARANCE_MM,
+        tab_thick_mm + SLOT_CLEARANCE_MM,
+        STAND_HEIGHT_MM + 4.0,  # taller than the block for a clean through-cut
+    ])
+    stand = trimesh.boolean.difference([block, slot], engine="manifold")
+    stand.apply_translation([0, 0, STAND_HEIGHT_MM / 2.0])
+    return stand
+
+
 if __name__ == "__main__":
     import sys
-    out_dir = sys.argv[1] if len(sys.argv) > 1 else "."
+
+    args = sys.argv[1:]
+    if "--freeze-hashes" in args:
+        freeze_hashes()
+        raise SystemExit(0)
+
+    check_svg_in_sync()
+
+    out_dir = args[0] if args else "."
     meshes = []
     spacing = 55.0  # mm between figures on the shared plate
     for i, (name, fn) in enumerate(CHARACTERS.items()):
@@ -283,6 +413,21 @@ if __name__ == "__main__":
         plate_copy = m.copy()
         plate_copy.apply_translation([i * spacing, 0, 0])
         meshes.append(plate_copy)
+
+    stand = build_stand_base()
+    stand_path = f"{out_dir}/neuronaut-stand-base.stl"
+    stand.export(stand_path)
+    w, d, h = stand.extents
+    print(f"stand-base: watertight={stand.is_watertight} extents=({w:.1f}, {d:.1f}, {h:.1f}) mm -> {stand_path}")
+
+    # Place the stand to the right of the actual rightmost figure (not a
+    # fixed index*spacing guess, which drifts out of sync with the real
+    # figure widths and overlapped Glia's tail) plus a clear gap.
+    plate_gap = 10.0
+    last_max_x = max(m.bounds[1][0] for m in meshes)
+    plate_stand = stand.copy()
+    plate_stand.apply_translation([last_max_x + plate_gap + STAND_LENGTH_MM / 2.0, 0, 0])
+    meshes.append(plate_stand)
 
     plate = trimesh.util.concatenate(meshes)
     plate_path = f"{out_dir}/neuronaut-all-five.stl"

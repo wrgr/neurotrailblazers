@@ -14,27 +14,41 @@
 #   -> OpenAlex concepts scope screen: 1,363 -> 1,199 (287/300 expansion,
 #      799/947 lexical, 78/81 provisional survive)
 #   -> dedup (artifact-drop + author/title-verified merges): 1,199 -> 1,034
+#   -> provisional-set scope filter (session 5): 38 of the 77 provisional
+#      papers dropped by hand-read classification -- 21 macro-scale
+#      fMRI/diffusion-MRI/clinical connectomics that concepts_in_scope()
+#      cannot distinguish from nano-scale EM connectomics (both carry the
+#      same generic "neuroscience"/"connectome" OpenAlex concept tags), plus
+#      17 vocabulary-collision false positives (generic graph-algorithm
+#      papers matched on "community detection"/"subgraph"; serial-block-face-
+#      EM papers on non-neural tissue -- teeth, eyes, placenta -- matched on
+#      "serial block-face scanning electron microscopy"). See
+#      resolve_dedup.py::PROVISIONAL_SCOPE_DROPS for the full list with
+#      reasons, and recent_sweep_dropped_macro.json for the audit log.
+#      1,034 -> 996
 #
 # NEVER seeded from: candidate_pool.json, expert_seed_papers/, the live
 # (pre-rebuild) corpus, or reading_paths.json -- all four are legacy-
 # validation-only.
 #
-# provisional: true (77 records) means the paper was found via the 2025/2026
+# provisional: true (39 records) means the paper was found via the 2025/2026
 # date-filtered recency sweep, not the regular graduated-threshold pipeline --
 # citation-based inclusion is structurally unreliable this early (a paper
 # published this year hasn't had time to accumulate citations anywhere), so
 # these are included on real-but-thin corroboration (>=1 link to the existing
-# pool) rather than the same confidence bar as the rest of the corpus.
+# pool) rather than the same confidence bar as the rest of the corpus. Of the
+# original 77 candidates, 38 were dropped for being macro-scale or off-topic
+# (see above) -- the 39 that survive are on-topic on top of being corroborated.
 # annotation_status is "provisional_recency" for these, distinct from
 # "pending_annotation" for everything else -- any downstream consumer must
 # render this distinctly, never silently blank.
 #
-# references_available: false (291/1034 records) means neither Semantic
+# references_available: false (291/996 records) means neither Semantic
 # Scholar nor Crossref returned a resolvable reference list for that DOI --
 # an honest "we don't know", never conflated with "cites nothing".
 #
-# in_degree/out_degree are computed ONLY from edges within this 1,034-paper
-# set (5,018 total in-corpus edges; real full reference lists run much higher
+# in_degree/out_degree are computed ONLY from edges within this 996-paper
+# set (4912 total in-corpus edges; real full reference lists run much higher
 # per paper on average -- most of any paper's real references point outside
 # this small, curated pool, which is expected, not a cap bug).
 #
@@ -294,102 +308,6 @@ papers:
     sources:
     - lexical:A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster
     round: 0
-- id: 2026-10-1002-alz-71496
-  uuid: 10.1002/alz.71496
-  work_id: null
-  title: 'Neurovascular–metabolic dysregulation, metabolic connectomics, and metabolic functional changes
-    in Alzheimer''s disease: A preclinical and clinical comparison'
-  authors: J. A. C. Chong Chie; S. Persohn; Olivia R. Simcox; Alyssa Y. Collins; P. Salama; P. Territo
-  year: 2026
-  journal: Alzheimer's &amp; Dementia
-  doi: 10.1002/alz.71496
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 1
-  references_available: true
-  references:
-  - 10.1002/alz.13538
-  - 10.1002/alz.13828
-  - 10.1002/alz.13842
-  - 10.1002/alz.13851
-  - 10.1002/alz.70528
-  - 10.1002/alz.70790
-  - 10.1002/alz.71218
-  - 10.1002/trc2.12110
-  - 10.1002/trc2.70139
-  - 10.1007/s00415-024-12800-8
-  - 10.1007/s00429-024-02773-9
-  - 10.1007/s00429‐024‐02773‐9
-  - 10.1016/b978-0-12-802151-4.00007-4
-  - 10.1016/j.arr.2022.101619
-  - 10.1016/j.bcp.2013.08.006
-  - 10.1016/j.clindermatol.2014.07.001
-  - 10.1016/j.neuroimage.2009.10.003
-  - 10.1016/j.neuroimage.2010.01.042
-  - 10.1016/j.neuroimage.2019.04.034
-  - 10.1016/j.neuroimage.2020.117031
-  - 10.1016/j.neuron.2014.05.041
-  - 10.1016/j.nic.2005.09.008
-  - 10.1016/j.nut.2010.07.021
-  - 10.1016/j.tem.2021.09.004
-  - 10.1016/j.tics.2022.11.015
-  - 10.1016/s0306-4530(03)00088-x
-  - 10.1038/s12276-023-00993-3
-  - 10.1038/s41577-024-01104-7
-  - 10.1038/s41583-023-00720-x
-  - 10.1038/s41598-017-14186-2
-  - 10.1038/s41684-024-01458-4
-  - 10.1073/pnas.1323099111
-  - 10.1093/bioinformatics/btu611
-  - 10.1093/ilar/ilu022
-  - 10.1101/2023.12.13.571584
-  - 10.1101/2025.07.10.663714
-  - 10.1101/845842
-  - 10.1111/cns.13982
-  - 10.1111/cts.13055
-  - 10.1111/j.1749-6632.2011.06325.x
-  - 10.1126/science.1184819
-  - 10.1126/scitranslmed.abe5640
-  - 10.1146/annurev-animal-020420-033029
-  - 10.1186/s42826-022-00128-1
-  - 10.1371/journal.pbio.3002667
-  - 10.15212/amm-2023-0001
-  - 10.21037/atm.2018.10.59
-  - 10.24272/j.issn.2095-8137.2024.274
-  - 10.3233/jad-240058
-  - 10.3389/fmed.2024.1474043
-  - 10.3389/fnagi.2022.838436
-  - 10.3389/fnagi.2022.886575
-  - 10.3389/fnbeh.2019.00048
-  - 10.3389/fnbeh.2022.869511
-  - 10.3389/fnins.2021.662242
-  - 10.3389/fnins.2022.816331
-  - 10.3389/fnint.2022.818685
-  - 10.3389/fnmol.2025.1676946
-  - 10.3390/ani13071223
-  - 10.3390/biomedicines12112418
-  - 10.3390/ijms252111720
-  - 10.4103/ijp.ijp_860_22
-  - 10.7554/elife.79418
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:connectomics neurological disease model
-    round: null
 - id: 2012-10-1002-bies-201100185
   uuid: 10.1002/bies.201100185
   work_id: null
@@ -3175,455 +3093,6 @@ papers:
     sources:
     - 'lexical:The Human Connectome: A Structural Description of the Human Brain'
     round: 0
-- id: 2025-10-1002-hbm-70114
-  uuid: 10.1002/hbm.70114
-  work_id: null
-  title: Novel Genes Associated With Working Memory Are Identified by Combining Connectome, Transcriptome,
-    and Genome
-  authors: Xiaoyu Zhao; Ruochen Yin; Chuansheng Chen; S. Markett; Xinrui Wang; Gui Xue; Q. Dong; Chunhui
-    Chen
-  year: 2025
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70114
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 2
-  references_available: true
-  references:
-  - 10.1001/jamapsychiatry.2014.528
-  - 10.1001/jamapsychiatry.2017.3292
-  - 10.1002/ana.23644
-  - 10.1002/hbm.24045
-  - 10.1002/hbm.25143
-  - 10.1002/hbm.25446
-  - 10.1007/s00415-014-7433-5
-  - 10.1007/s00415‐014‐7433‐5
-  - 10.1007/s40473-014-0028-8
-  - 10.1007/s40473‐014‐0028‐8
-  - 10.1016/j.ajog.2010.01.047
-  - 10.1016/j.biopsych.2020.02.016
-  - 10.1016/j.biopsych.2021.01.015
-  - 10.1016/j.biopsych.2021.12.004
-  - 10.1016/j.biopsych.2022.06.034
-  - 10.1016/j.cortex.2020.08.012
-  - 10.1016/j.cub.2017.05.046
-  - 10.1016/j.cub.2018.08.043
-  - 10.1016/j.jecp.2009.11.003
-  - 10.1016/j.msard.2018.07.009
-  - 10.1016/j.neuroimage.2012.09.070
-  - 10.1016/j.neuroimage.2014.11.051
-  - 10.1016/j.neuroimage.2017.03.064
-  - 10.1016/j.neuroimage.2019.01.011
-  - 10.1016/j.neuroimage.2019.116370
-  - 10.1016/j.neuroimage.2020.116895
-  - 10.1016/j.neuron.2015.09.020
-  - 10.1016/j.neuron.2018.09.023
-  - 10.1016/j.nicl.2019.101892
-  - 10.1016/j.pediatrneurol.2014.08.025
-  - 10.1016/j.psychres.2019.112551
-  - 10.1016/j.ridd.2014.12.016
-  - 10.1016/j.tics.2016.12.007
-  - 10.1016/j.tics.2018.10.005
-  - 10.1016/j.xhgg.2023.100216
-  - 10.1037/edu0000090
-  - 10.1038/mp.2009.133
-  - 10.1038/mp.2013.24
-  - 10.1038/mp.2016.206
-  - 10.1038/nature10423
-  - 10.1038/nature11405
-  - 10.1038/nature17671
-  - 10.1038/ng.3367
-  - 10.1038/nn.3655
-  - 10.1038/nn.4135
-  - 10.1038/nn2024
-  - 10.1038/npp.2015.30
-  - 10.1038/nprot.2016.178
-  - 10.1038/nrn1201
-  - 10.1038/s41467-017-01261-5
-  - 10.1038/s41467-018-04920-3
-  - 10.1038/s41467‐017‐01261‐5
-  - 10.1038/s41467‐018‐04920‐3
-  - 10.1038/s41467‐021‐24306‐2
-  - 10.1038/s41467‐022‐32383‐0
-  - 10.1038/s41588‐022‐01016‐z
-  - 10.1038/s42003-021-02268-x
-  - 10.1038/s42003‐021‐02268‐x
-  - 10.1038/s42003‐022‐04028‐x
-  - 10.1038/s42003‐023‐05279‐y
-  - 10.1038/tp.2014.81
-  - 10.1073/pnas.1422487112
-  - 10.1080/01443410.2011.643578
-  - 10.1089/brain.2011.0046
-  - 10.1093/brain/awac069
-  - 10.1093/cercor/bhr174
-  - 10.1093/cercor/bht352
-  - 10.1093/cercor/bhv013
-  - 10.1093/cercor/bhw157
-  - 10.1093/cercor/bhy344
-  - 10.1101/2020.02.22.961136
-  - 10.1101/2020.06.21.163915
-  - 10.1101/2021.05.06.442918
-  - 10.1101/857953
-  - 10.1111/mbe.12198
-  - 10.1126/science.aaa1934
-  - 10.1136/adc.2009.167965
-  - 10.1146/annurev‐psych‐010814‐015031
-  - 10.1146/annurev‐psych‐021422‐041757
-  - 10.1152/jn.00338.2011
-  - 10.1162/15324430152748236
-  - 10.1162/jocn_a_01195
-  - 10.1162/jocn_a_01487
-  - 10.1186/s13059-020-02252-4
-  - 10.1186/s13059‐020‐02252‐4
-  - 10.1192/j.eurpsy.2022.537
-  - 10.1192/j.eurpsy.2022.538
-  - 10.1371/journal.pbio.3001938
-  - 10.31887/dcns.2018.20.2/smarek
-  - 10.3233/jad‐215067
-  - 10.3389/fgene.2022.915275
-  - 10.3390/biomedicines10061249
-  - 10.3390/ijms24087049
-  - 10.7554/elife.72129
-  - 10.7554/elife.72129.sa0
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
-- id: 2025-10-1002-hbm-70123
-  uuid: 10.1002/hbm.70123
-  work_id: null
-  title: Connectome‐Based Predictive Modeling of Trait Mindfulness
-  authors: I. Treves; Aaron K. Kucyi; Madelynn S. Park; T. Kral; Simon B. Goldberg; Richard J. Davidson;
-    Melissa A Rosenkranz; S. Whitfield-Gabrieli; John D. E. Gabrieli
-  year: 2025
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70123
-  alt_dois: []
-  in_degree: 0
-  out_degree: 3
-  total_citations: 7
-  references_available: true
-  references:
-  - 10.1001/jamapsychiatry.2019.3671
-  - 10.1001/jamapsychiatry.2023.5083
-  - 10.1002/9781119991083.ch42
-  - 10.1002/hbm.20440
-  - 10.1002/jmri.23572
-  - 10.1006/nimg.2001.0746
-  - 10.1006/nimg.2002.1132
-  - 10.1007/978-3-030-77644-2_15-1
-  - 10.1007/s10548-023-00950-3
-  - 10.1007/s10548‐023‐00950‐3
-  - 10.1007/s11336-012-9294-0
-  - 10.1007/s11336‐012‐9294‐0
-  - 10.1007/s12671-017-0762-6
-  - 10.1007/s12671-018-1032-y
-  - 10.1007/s12671-019-01175-x
-  - 10.1007/s12671-020-01492-6
-  - 10.1007/s12671‐013‐0196‐8
-  - 10.1007/s12671‐017‐0762‐6
-  - 10.1007/s12671‐018‐0990‐4
-  - 10.1007/s12671‐018‐1032‐y
-  - 10.1007/s12671‐019‐01175‐x
-  - 10.1007/s12671‐019‐01258‐9
-  - 10.1007/s12671‐020‐01492‐6
-  - 10.1007/s12671‐023‐02201‐9
-  - 10.1016/j.bandc.2023.106001
-  - 10.1016/j.bbi.2021.08.226
-  - 10.1016/j.bpsgos.2024.100367
-  - 10.1016/j.copsyc.2018.10.015
-  - 10.1016/j.cpr.2019.101785
-  - 10.1016/j.jpain.2018.10.011
-  - 10.1016/j.jpain.2022.07.011
-  - 10.1016/j.neubiorev.2020.01.023
-  - 10.1016/j.neubiorev.2022.104846
-  - 10.1016/j.neubiorev.2023.105183
-  - 10.1016/j.neuroimage.2005.02.018
-  - 10.1016/j.neuroimage.2007.04.042
-  - 10.1016/j.neuroimage.2011.02.034
-  - 10.1016/j.neuroimage.2011.08.048
-  - 10.1016/j.neuroimage.2013.05.081
-  - 10.1016/j.neuroimage.2013.05.116
-  - 10.1016/j.neuroimage.2014.03.028
-  - 10.1016/j.neuroimage.2014.10.044
-  - 10.1016/j.neuroimage.2015.05.073
-  - 10.1016/j.neuroimage.2015.10.079
-  - 10.1016/j.neuroimage.2018.09.056
-  - 10.1016/j.neuroimage.2019.02.057
-  - 10.1016/j.neuroimage.2019.116287
-  - 10.1016/j.neuroimage.2020.117072
-  - 10.1016/j.neuroimage.2021.118625
-  - 10.1016/j.neuroimage.2023.120503
-  - 10.1016/j.neuron.2011.09.006
-  - 10.1016/j.neuron.2014.10.047
-  - 10.1016/j.neuron.2015.06.037
-  - 10.1016/j.neuropsychologia.2022.108451
-  - 10.1016/j.neuroscience.2014.08.006
-  - 10.1016/j.paid.2011.01.037
-  - 10.1016/j.paid.2013.09.002
-  - 10.1016/j.paid.2014.12.044
-  - 10.1016/j.paid.2015.09.035
-  - 10.1016/j.paid.2019.109769
-  - 10.1016/j.tics.2008.01.001
-  - 10.1016/j.tics.2011.08.003
-  - 10.1016/j.tics.2013.09.016
-  - 10.1016/j.tics.2016.03.014
-  - 10.1016/s1053-8119(02)91132-8
-  - 10.1017/s0033291718003598
-  - 10.1037//0021-843x.100.4.569
-  - 10.1037/0021-843x.100.4.569
-  - 10.1037/0022-3514.84.4.822
-  - 10.1037/0022‐3514.84.4.822
-  - 10.1037/a0022713
-  - 10.1037/a0022819
-  - 10.1037/a0026678
-  - 10.1037/emo0000323
-  - 10.1037/pas0000233
-  - 10.1037/pas0000263
-  - 10.1037/pas0000268
-  - 10.1037/pas0000957
-  - 10.1038/nn.4135
-  - 10.1038/nn.4179
-  - 10.1038/nprot.2016.178
-  - 10.1038/s41380‐023‐02032‐z
-  - 10.1038/s41467-021-22027-0
-  - 10.1038/s41467-023-39142-9
-  - 10.1038/s41467‐021‐22027‐0
-  - 10.1038/s41467‐021‐27336‐y
-  - 10.1038/s41467‐023‐39142‐9
-  - 10.1038/s41533-019-0149-3
-  - 10.1038/s41583‐019‐0212‐7
-  - 10.1038/s41586-022-04492-9
-  - 10.1038/s41586‐022‐04492‐9
-  - 10.1038/s41586‐022‐05118‐w
-  - 10.1038/s41591-020-1142-7
-  - 10.1038/s41597‐024‐03636‐y
-  - 10.1038/s41598-022-11594-x
-  - 10.1038/s41598‐017‐06599‐w
-  - 10.1038/s41598‐022‐15195‐6
-  - 10.1038/sdata.2018.307
-  - 10.1038/sdata.2018.308
-  - 10.1073/pnas.0135058100
-  - 10.1073/pnas.0911855107
-  - 10.1073/pnas.1713532115
-  - 10.1073/pnas.1721259115
-  - 10.1073/pnas.1912226117
-  - 10.1073/pnas.98.2.676
-  - 10.1080/17470919.2015.1092469
-  - 10.1080/17470919.2021.2009559
-  - 10.1089/brain.2012.0073
-  - 10.1089/brain.2017.0520
-  - 10.1093/cercor/bhaa390
-  - 10.1093/cercor/bhw253
-  - 10.1093/cercor/bhx230
-  - 10.1093/clipsy.bph077
-  - 10.1093/scan/nss115
-  - 10.1101/2021.04.02.21254853
-  - 10.1101/2022.10.06.511122
-  - 10.1101/2023.09.27.559869
-  - 10.1101/796714
-  - 10.1111/cpsp.12038
-  - 10.1111/nyas.13171
-  - 10.1126/science.288.5472.1835
-  - 10.1162/jocn_a_02230
-  - 10.1162/netn_a_00387
-  - 10.1177/08902070231174575
-  - 10.1177/0956797612459659
-  - 10.1177/1073191104268029
-  - 10.1177/1073191105283504
-  - 10.1177/1073191107313003
-  - 10.1177/1533210108316307
-  - 10.1186/s40359-020-00428-y
-  - 10.1186/s40359‐021‐00618‐2
-  - 10.1371/journal.pone.0278501
-  - 10.1523/jneurosci.5587‐06.2007
-  - 10.31234/osf.io/3bzg6
-  - 10.31234/osf.io/b9yjz
-  - 10.31887/dcns.2018.20.2/smarek
-  - 10.3389/fnhum.2015.00461
-  - 10.3389/fnhum.2019.00112
-  - 10.3389/fnhum.2020.00336
-  - 10.3389/fnsys.2017.00006
-  - 10.56441/hilbertpress.2207.6598
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=3,back=3,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
-- id: 2025-10-1002-hbm-70231
-  uuid: 10.1002/hbm.70231
-  work_id: null
-  title: Structural Connectivity Differences Reflect Microstructural Heterogeneity of the Human Insular
-    Cortex
-  authors: Julian Quabs; Nora Bittner; Svenja Caspers
-  year: 2025
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70231
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 6
-  references_available: true
-  references:
-  - 10.1001/jamapsychiatry.2014.2206
-  - 10.1002/ana.24252
-  - 10.1002/cne.20660
-  - 10.1002/cne.23368
-  - 10.1002/cne.23436
-  - 10.1002/cne.902120102
-  - 10.1002/cne.902120103
-  - 10.1002/cne.902120104
-  - 10.1002/cne.902270112
-  - 10.1002/cne.902300402
-  - 10.1002/cne.902520304
-  - 10.1002/cne.903630408
-  - 10.1002/ejp.806
-  - 10.1002/hbm.21338
-  - 10.1002/ima.22005
-  - 10.1002/mrm.1910150117
-  - 10.1006/nimg.1998.0395
-  - 10.1007/3-540-44503-x_27
-  - 10.1007/978-1-4757-9619-3_5
-  - 10.1007/978-3-319-75468-0_16
-  - 10.1007/bfb0075309
-  - 10.1007/s00103‐012‐1490‐7
-  - 10.1007/s00429-010-0255-z
-  - 10.1007/s00429-018-1620-6
-  - 10.1007/s00429-019-01975-w
-  - 10.1007/s00429‐010‐0255‐z
-  - 10.1007/s00429‐018‐1620‐6
-  - 10.1007/s00429‐019‐01975‐w
-  - 10.1007/s10548‐011‐0205‐y
-  - 10.1016/0306-4522(81)90184-6
-  - 10.1016/0306‐4522(81)90184‐6
-  - 10.1016/b978-0-444-63622-5.00003-6
-  - 10.1016/j.bandl.2014.06.003
-  - 10.1016/j.bpsc.2017.12.004
-  - 10.1016/j.brs.2023.11.001
-  - 10.1016/j.cortex.2019.05.019
-  - 10.1016/j.cortex.2019.09.002
-  - 10.1016/j.crfs.2023.100522
-  - 10.1016/j.media.2013.03.009
-  - 10.1016/j.neuroimage.2007.02.049
-  - 10.1016/j.neuroimage.2011.09.015
-  - 10.1016/j.neuroimage.2011.11.016
-  - 10.1016/j.neuroimage.2012.01.021
-  - 10.1016/j.neuroimage.2012.02.071
-  - 10.1016/j.neuroimage.2012.03.021
-  - 10.1016/j.neuroimage.2012.06.005
-  - 10.1016/j.neuroimage.2013.04.003
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuroimage.2015.07.067
-  - 10.1016/j.neuroimage.2016.06.058
-  - 10.1016/j.neuroimage.2016.11.066
-  - 10.1016/j.neuroimage.2019.02.039
-  - 10.1016/j.neuroimage.2019.02.042
-  - 10.1016/j.neuroimage.2020.116859
-  - 10.1016/j.neuroimage.2021.118417
-  - 10.1016/j.neuroimage.2022.119453
-  - 10.1016/j.neuroimage.2024.120591
-  - 10.1016/j.neurol.2018.12.003
-  - 10.1016/s0004-3702(97)00063-5
-  - 10.1016/s0165-0173(03)00172-3
-  - 10.1016/s0165-0173(96)00011-2
-  - 10.1016/s0959‐4388(03)00090‐4
-  - 10.1016/s1053‐8119(03)00336‐7
-  - 10.1038/npp.2017.154
-  - 10.1038/nrn2555
-  - 10.1038/nrn3857
-  - 10.1038/s41467-021-23885-4
-  - 10.1038/s41467‐017‐01285‐x
-  - 10.1038/s41467‐021‐23885‐4
-  - 10.1038/s41467‐023‐38671‐7
-  - 10.1038/s41562-022-01501-9
-  - 10.1038/s41562‐022‐01501‐9
-  - 10.1038/s41597‐023‐02527‐y
-  - 10.1038/s41598-018-26995-0
-  - 10.1038/s41598‐018‐26995‐0
-  - 10.1067/mhj.2002.123579
-  - 10.1080/01616412.1985.11739692
-  - 10.1093/brain/awg032
-  - 10.1093/braincomms/fcad144
-  - 10.1093/cercor/bhac168
-  - 10.1093/cercor/bhn054
-  - 10.1093/cercor/bhp208
-  - 10.1093/cercor/bhq186
-  - 10.1093/cercor/bhv308
-  - 10.1093/cercor/bhx211
-  - 10.1093/cercor/bhx334
-  - 10.1101/2022.06.11.495736
-  - 10.1101/2025.02.18.638889
-  - 10.1101/487306
-  - 10.1101/531350
-  - 10.1126/science.abb4588
-  - 10.1176/appi.ajp.2020.20091340
-  - 10.1212/01.wnl.0000230197.40410.db
-  - 10.1287/isre.2013.0480
-  - 10.1523/jneurosci.17-24-09686.1997
-  - 10.1523/jneurosci.17‐24‐09686.1997
-  - 10.1523/jneurosci.4262-15.2016
-  - 10.1523/jneurosci.4262‐15.2016
-  - 10.1523/jneurosci.5664‐09.2010
-  - 10.31219/osf.io/c67kn
-  - 10.31219/osf.io/zu8fv
-  - 10.3171/2021.12.jns212297
-  - 10.3389/fnagi.2014.00149
-  - 10.3389/fnana.2019.00043
-  - 10.3389/fnana.2023.1131167
-  - 10.3389/fnbeh.2015.00309
-  - 10.3389/fnhum.2022.980353
-  - 10.3389/fninf.2014.00044
-  - 10.3389/fnins.2021.645936
-  - 10.3390/brainsci11081041
-  - 10.5220/0009908402340240
-  - 10.7554/elife.53086
-  - 10.7554/elife.55585
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
 - id: 2025-10-1002-hbm-70343
   uuid: 10.1002/hbm.70343
   work_id: null
@@ -3695,586 +3164,6 @@ papers:
     sources:
     - 'lexical:The Human Connectome: A Structural Description of the Human Brain'
     round: 0
-- id: 2025-10-1002-hbm-70358
-  uuid: 10.1002/hbm.70358
-  work_id: null
-  title: Connectome‐Based Predictive Models of General and Specific Executive Functions
-  authors: Shijie Qu; Yueyue Qu; Kwangsun Yoo; Marvin M. Chun
-  year: 2025
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70358
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.20127
-  - 10.1002/hbm.21199
-  - 10.1002/hbm.22180
-  - 10.1002/hbm.23219
-  - 10.1002/hbm.23517
-  - 10.1006/cogp.1999.0734
-  - 10.1007/s00429‐010‐0262‐0
-  - 10.1007/s00429‐014‐0723‐y
-  - 10.1016/0885‐2014(95)90024‐1
-  - 10.1016/j.celrep.2020.108066
-  - 10.1016/j.celrep.2023.113597
-  - 10.1016/j.cortex.2012.05.022
-  - 10.1016/j.cortex.2016.04.023
-  - 10.1016/j.neuroimage.2010.01.090
-  - 10.1016/j.neuroimage.2012.02.018
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.039
-  - 10.1016/j.neuroimage.2013.05.081
-  - 10.1016/j.neuroimage.2013.11.046
-  - 10.1016/j.neuroimage.2014.09.045
-  - 10.1016/j.neuroimage.2016.12.002
-  - 10.1016/j.neuroimage.2017.11.010
-  - 10.1016/j.neuroimage.2019.01.068
-  - 10.1016/j.neuroimage.2019.04.060
-  - 10.1016/j.neuroimage.2019.116370
-  - 10.1016/j.neuroimage.2021.117963
-  - 10.1016/j.neuroimage.2022.119279
-  - 10.1016/j.neuroimage.2022.119665
-  - 10.1016/j.neuroimage.2023.120238
-  - 10.1016/j.neuroimage.2023.120386
-  - 10.1016/j.neuron.2007.02.013
-  - 10.1016/j.neuron.2020.01.029
-  - 10.1016/j.neuropsychologia.2006.02.006
-  - 10.1016/j.neuropsychologia.2008.04.023
-  - 10.1016/j.neuropsychologia.2018.05.002
-  - 10.1016/j.neuropsychologia.2019.107134
-  - 10.1016/j.tics.2008.01.001
-  - 10.1016/j.tics.2012.10.008
-  - 10.1016/j.tics.2022.11.005
-  - 10.1016/j.tins.2015.07.003
-  - 10.1016/s0065‐2407(09)03706‐9
-  - 10.1016/s0749‐596x(02)00511‐9
-  - 10.1016/s1364‐6613(00)01538‐2
-  - 10.1037//0096‐3445.129.1.4
-  - 10.1037/0033‐295x.91.3.295
-  - 10.1037/0096‐3445.128.3.309
-  - 10.1037/0096‐3445.130.4.641
-  - 10.1037/0096‐3445.132.1.47
-  - 10.1037/0278‐7393.30.6.1302
-  - 10.1037/h0043688
-  - 10.1037/h0054651
-  - 10.1038/nn.4135
-  - 10.1038/nn.4179
-  - 10.1038/nn1003
-  - 10.1038/nprot.2016.178
-  - 10.1038/nrn755
-  - 10.1038/s41386‐021‐01132‐0
-  - 10.1038/s41386‐021‐01152‐w
-  - 10.1038/s41467‐018‐04920‐3
-  - 10.1038/s41467‐021‐27336‐y
-  - 10.1038/s41467‐022‐29766‐8
-  - 10.1038/s41562‐022‐01301‐1
-  - 10.1038/s41586‐025‐09250‐1
-  - 10.1038/s41598‐019‐40345‐8
-  - 10.1038/s41598‐020‐62832‐z
-  - 10.1073/pnas.0504136102
-  - 10.1073/pnas.1113148109
-  - 10.1073/pnas.1121251109
-  - 10.1073/pnas.1713532115
-  - 10.1073/pnas.1715766115
-  - 10.1076/chin.8.2.71.8724
-  - 10.1080/00221309.1948.9918159
-  - 10.1093/acprof:oso/9780195134971.003.0029
-  - 10.1093/arclin/acp063
-  - 10.1093/brain/awh169
-  - 10.1093/cercor/bhad537
-  - 10.1093/cercor/bhx179
-  - 10.1093/cercor/bhy123
-  - 10.1098/rstb.2017.0284
-  - 10.1111/1467‐8721.00160
-  - 10.1111/j.1467‐9280.2006.01681.x
-  - 10.1111/j.1467‐9280.2007.01948.x
-  - 10.1111/j.2044‐8295.1990.tb02349.x
-  - 10.1146/annurev.ne.13.030190.000325
-  - 10.1146/annurev.neuro.24.1.167
-  - 10.1146/annurev‐neuro‐061010‐113731
-  - 10.1146/annurev‐psych‐113011‐143750
-  - 10.1162/089892998562645
-  - 10.1162/imag_a_00478
-  - 10.1162/jocn.2006.18.11.1843
-  - 10.1162/jocn_a_00281
-  - 10.1162/jocn_a_00859
-  - 10.1162/jocn_a_01487
-  - 10.1162/netn_a_00302
-  - 10.1177/001872086300500102
-  - 10.1177/0963721411429458
-  - 10.1196/annals.1440.011
-  - 10.1348/026151003321164627
-  - 10.1371/journal.pone.0098860
-  - 10.1523/jneurosci.0536‐12.2012
-  - 10.1523/jneurosci.3408‐16.2017
-  - 10.1523/jneurosci.5587‐06.2007
-  - 10.1523/jneurosci.5626‐10.2011
-  - 10.31887/dcns.2018.20.2/smarek
-  - 10.3758/bf03196169
-  - 10.3758/bf03196323
-  - 10.3758/bf03203267
-  - 10.3758/cabn.7.4.367
-  - 10.3758/pbr.17.1.1
-  - 10.3758/s13415‐011‐0083‐5
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
-- id: 2025-10-1002-hbm-70469
-  uuid: 10.1002/hbm.70469
-  work_id: null
-  title: 'VarCoNet: A Variability‐Aware Self‐Supervised Framework for Functional Connectome Extraction
-    From Resting‐State fMRI'
-  authors: Charalampos Lamprou; A. Alshehhi; L. Hadjileontiadis; M. Seghier
-  year: 2025
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70469
-  alt_dois: []
-  in_degree: 0
-  out_degree: 4
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.23675
-  - 10.1002/hbm.25394
-  - 10.1002/hbm.26469
-  - 10.1002/hbm.26561
-  - 10.1006/nimg.2000.0568
-  - 10.1007/978-1-0716-3195-9
-  - 10.1016/b978-0-12-800778-5.00009-8
-  - 10.1016/j.biopsych.2022.04.008
-  - 10.1016/j.jneumeth.2015.07.013
-  - 10.1016/j.jneumeth.2019.108506
-  - 10.1016/j.media.2023.102841
-  - 10.1016/j.media.2023.102932
-  - 10.1016/j.media.2024.103403
-  - 10.1016/j.neuroimage.2006.11.051
-  - 10.1016/j.neuroimage.2008.12.017
-  - 10.1016/j.neuroimage.2010.01.002
-  - 10.1016/j.neuroimage.2011.05.060
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuroimage.2013.05.099
-  - 10.1016/j.neuroimage.2013.12.009
-  - 10.1016/j.neuroimage.2014.03.034
-  - 10.1016/j.neuroimage.2015.02.064
-  - 10.1016/j.neuroimage.2018.02.061
-  - 10.1016/j.neuroimage.2019.116189
-  - 10.1016/j.neuroimage.2020.117181
-  - 10.1016/j.neuroimage.2024.120651
-  - 10.1016/j.patrec.2024.09.010
-  - 10.1016/j.tics.2018.03.003
-  - 10.1016/s1053‐8119(03)00112‐5
-  - 10.1037/0003-066x.57.5.341
-  - 10.1037/0003‐066x.57.5.341
-  - 10.1038/mp.2013.78
-  - 10.1038/nature02447
-  - 10.1038/nbt.2601
-  - 10.1038/ncomms9885
-  - 10.1038/nn.4135
-  - 10.1038/s41386‐024‐01941‐z
-  - 10.1038/s41592-018-0235-4
-  - 10.1038/s41592-023-01901-3
-  - 10.1038/s41592‐018‐0235‐4
-  - 10.1038/s41592‐023‐01901‐3
-  - 10.1038/s41593‐023‐01299‐3
-  - 10.1038/sdata.2017.10
-  - 10.1073/pnas.1010412107
-  - 10.1080/15265161.2020.1730495
-  - 10.1089/brain.2011.000
-  - 10.1089/brain.2011.0008
-  - 10.1093/cercor/bhab099
-  - 10.1093/cercor/bhs352
-  - 10.1093/cercor/bhw265
-  - 10.1109/cvpr46437.2021.00537
-  - 10.1109/isbi60581.2025.10981209
-  - 10.1109/tbme.2019.2958333
-  - 10.1109/tmi.2022.3201974
-  - 10.1109/tnnls.2024.3449419
-  - 10.1126/science.aad8127
-  - 10.1162/089892902760807203
-  - 10.1201/9780429246593
-  - 10.1371/journal.pone.0068910
-  - 10.31887/dcns.2016.18.3/efinn
-  - 10.3389/fnhum.2014.00262
-  - 10.48550/arxiv.2205.11578
-  - 10.48550/arxiv.2205.12465
-  - 10.48550/arxiv.2210.06681
-  - 10.52202/068431-1545
-  - 10.7554/elife.63591
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=4,back=4,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
-- id: 2026-10-1002-hbm-70498
-  uuid: 10.1002/hbm.70498
-  work_id: null
-  title: Distinct Resting‐State Connectomes for Face and Scene Perception Predict Individual Task Performance
-  authors: Orhan Soyuhos; Aurelia Scarpa; Daniel Baldauf
-  year: 2026
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70498
-  alt_dois: []
-  in_degree: 0
-  out_degree: 3
-  total_citations: 1
-  references_available: true
-  references:
-  - 10.1002/hbm.22136
-  - 10.1002/hbm.26628
-  - 10.1002/hipo.22046
-  - 10.1006/cbmr.1996.0014
-  - 10.1007/bf02512476
-  - 10.1007/pl00007990
-  - 10.1007/s00221‐011‐2579‐1
-  - 10.1007/s00429‐023‐02641‐y
-  - 10.1016/j.clinph.2004.04.029
-  - 10.1016/j.cortex.2018.03.011
-  - 10.1016/j.jneumeth.2020.108985
-  - 10.1016/j.neubiorev.2015.06.010
-  - 10.1016/j.neuroimage.2010.01.002
-  - 10.1016/j.neuroimage.2011.02.054
-  - 10.1016/j.neuroimage.2013.02.073
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.033
-  - 10.1016/j.neuroimage.2013.05.039
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuroimage.2013.05.056
-  - 10.1016/j.neuroimage.2013.05.077
-  - 10.1016/j.neuroimage.2015.04.030
-  - 10.1016/j.neuroimage.2015.04.046
-  - 10.1016/j.neuroimage.2016.05.070
-  - 10.1016/j.neuroimage.2018.03.002
-  - 10.1016/j.neuroimage.2020.116538
-  - 10.1016/j.neuroimage.2025.121171
-  - 10.1016/j.neuron.2011.09.006
-  - 10.1016/j.neuron.2014.05.014
-  - 10.1016/j.neuron.2014.12.018
-  - 10.1016/j.neuron.2014.12.027
-  - 10.1016/j.neuron.2015.12.018
-  - 10.1016/j.neuron.2024.10.005
-  - 10.1016/j.neuropsychologia.2006.04.015
-  - 10.1016/j.neuropsychologia.2015.06.033
-  - 10.1016/j.tics.2008.07.004
-  - 10.1016/j.tics.2013.06.009
-  - 10.1016/j.tics.2021.11.002
-  - 10.1016/j.tics.2024.09.013
-  - 10.1016/s0896‐6273(00)81138‐1
-  - 10.1016/s0896‐6273(03)00167‐3
-  - 10.1016/s1364‐6613(00)01482‐0
-  - 10.1016/s1364‐6613(02)01908‐3
-  - 10.1016/s1364‐6613(99)01303‐0
-  - 10.1038/33402
-  - 10.1038/35049064
-  - 10.1038/35084005
-  - 10.1038/35094565
-  - 10.1038/nature08103
-  - 10.1038/nature18933
-  - 10.1038/nmeth.1635
-  - 10.1038/nn.3001
-  - 10.1038/nn.3101
-  - 10.1038/nn.3635
-  - 10.1038/nn.4135
-  - 10.1038/nprot.2016.178
-  - 10.1038/nrn2201
-  - 10.1038/nrn3137
-  - 10.1038/nrn3747
-  - 10.1038/nrn893
-  - 10.1038/s41467‐019‐09239‐1
-  - 10.1038/s41467‐021‐22848‐z
-  - 10.1038/s41593‐022‐01110‐9
-  - 10.1038/s41598‐024‐62098‐9
-  - 10.1073/pnas.0504136102
-  - 10.1073/pnas.0700668104
-  - 10.1073/pnas.0807304106
-  - 10.1073/pnas.0905267106
-  - 10.1073/pnas.0913863107
-  - 10.1073/pnas.1515657113
-  - 10.1073/pnas.1713447114
-  - 10.1073/pnas.2321346121
-  - 10.1080/14640749308401064
-  - 10.1093/cercor/bhs048
-  - 10.1093/nc/niaf006
-  - 10.1098/rstb.2006.1934
-  - 10.1101/2024.03.21.585573
-  - 10.1109/79.962275
-  - 10.1111/ejn.15936
-  - 10.1111/j.2517‐6161.1995.tb02031.x
-  - 10.1126/science.1110913
-  - 10.1126/science.1119983
-  - 10.1126/science.1247003
-  - 10.1126/science.aad8127
-  - 10.1146/annurev‐neuro‐071013‐014207
-  - 10.1146/annurev‐vision‐082114‐035518
-  - 10.1146/annurev‐vision‐091718‐014809
-  - 10.1152/jn.00338.2011
-  - 10.1155/2011/156869
-  - 10.1155/2011/879716
-  - 10.1162/imag.a.162
-  - 10.1162/imag_a_00449
-  - 10.1162/jocna01428
-  - 10.1177/09637214241304349
-  - 10.1212/wnl.32.4.331
-  - 10.1212/wnl.58.1.71
-  - 10.1523/eneuro.0178‐16.2016
-  - 10.1523/jneurosci.0582‐17.2017
-  - 10.1523/jneurosci.0873‐11.2011
-  - 10.1523/jneurosci.16‐16‐05205.1996
-  - 10.1523/jneurosci.17‐11‐04302.1997
-  - 10.1523/jneurosci.2609‐12.2012
-  - 10.3389/fnhum.2013.00017
-  - 10.3389/fnhum.2016.00412
-  - 10.3389/fnsys.2015.00175
-  - 10.7554/elife.47391
-  - 10.7554/elife.91601
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=3,back=3,fwd=0)
-    - 'lexical_recent:Reading the Book of Memory: Sparse Sampling versus Dense Mapping of Connectomes'
-    round: null
-- id: 2026-10-1002-hbm-70510
-  uuid: 10.1002/hbm.70510
-  work_id: null
-  title: Sub‐Networks of the Brain R2 Structural Connectome Integrity Matrix (SCIM) and Older Adult Cognitive
-    and Motor Functioning
-  authors: Melissa Lamar; M. Wagner; S. Leurgans; W. Fan; Shengwei Zhang; V. Poole; Lisa L. Barnes; Mayra
-    L. Estrella; J. Schneider; Konstantinos Arfanakis
-  year: 2026
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70510
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/ana.21706
-  - 10.1002/gps.2087
-  - 10.1002/hbm.23032
-  - 10.1002/hbm.25372
-  - 10.1002/hbm.26326
-  - 10.1002/hbm.26344
-  - 10.1002/hbm.26794
-  - 10.1002/mrm.21586
-  - 10.1007/s00415-018-9118-y
-  - 10.1007/s11065-009-9113-2
-  - 10.1007/s11682-007-9001-4
-  - 10.1016/j.media.2007.06.004
-  - 10.1016/j.neulet.2022.136699
-  - 10.1016/j.neures.2004.09.006
-  - 10.1016/j.neurobiolaging.2016.05.023
-  - 10.1016/j.neurobiolaging.2018.05.020
-  - 10.1016/j.neurobiolaging.2018.08.005
-  - 10.1016/j.neuroimage.2009.10.003
-  - 10.1016/j.neuroimage.2018.08.037
-  - 10.1016/j.neuroimage.2020.117462
-  - 10.1016/j.neuroimage.2021.118449
-  - 10.1016/s0730-725x(96)00234-2
-  - 10.1017/s1355617715001113
-  - 10.1037/0882-7974.17.2.179
-  - 10.1038/s41598-018-25917-4
-  - 10.1056/nejmra1706158
-  - 10.1093/brain/awaa372
-  - 10.1093/brain/awaa380
-  - 10.1093/braincomms/fcaa102
-  - 10.1159/000509626
-  - 10.1161/strokeaha.121.034344
-  - 10.1186/1741-7015-9-42
-  - 10.1212/wnl.0000000000005551
-  - 10.1371/journal.pone.0253484
-  - 10.21037/qims-19-1014
-  - 10.2174/156720512801322627
-  - 10.3233/jad-161057
-  - 10.3233/jad-179939
-  - 10.3233/jad-2011-101788
-  - 10.3390/biomedicines12010061
-  - 10.3758/s13415-024-01219-3
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
-- id: 2026-10-1002-hbm-70563
-  uuid: 10.1002/hbm.70563
-  work_id: null
-  title: 'Network‐Level Convergence of Adiposity‐Related Gray Matter Alterations: A Coordinate‐Based Connectome
-    Mapping Meta‐Analysis With Imaging Transcriptomics'
-  authors: Yingxian Li; Ming Lin; Gengbiao Zhang; Hongyi Zheng; Wenbin Zheng
-  year: 2026
-  journal: Human Brain Mapping
-  doi: 10.1002/hbm.70563
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.20916
-  - 10.1002/hbm.22021
-  - 10.1002/hbm.22104
-  - 10.1002/hbm.23272
-  - 10.1002/oby.20386
-  - 10.1002/oby.21551
-  - 10.1002/oby.23834
-  - 10.1002/oby.24251
-  - 10.1002/osp4.145
-  - 10.1007/s00234-019-02202-3
-  - 10.1007/s00429-013-0657-9
-  - 10.1007/s11033-025-10577-1
-  - 10.1007/s13679-017-0289-0
-  - 10.1007/s13679-024-00588-7
-  - 10.1016/j.appet.2012.08.027
-  - 10.1016/j.appet.2015.10.017
-  - 10.1016/j.bbi.2014.04.001
-  - 10.1016/j.biopsych.2022.10.016
-  - 10.1016/j.biopsych.2024.07.021
-  - 10.1016/j.nbd.2026.107363
-  - 10.1016/j.neubiorev.2016.06.041
-  - 10.1016/j.neubiorev.2020.05.012
-  - 10.1016/j.neubiorev.2021.08.028
-  - 10.1016/j.neurobiolaging.2015.12.020
-  - 10.1016/j.neuroimage.2006.01.047
-  - 10.1016/j.neuroimage.2012.09.005
-  - 10.1016/j.neuroimage.2015.07.086
-  - 10.1016/j.neuroimage.2017.10.062
-  - 10.1016/j.neuroimage.2018.10.006
-  - 10.1016/j.neuroimage.2019.07.019
-  - 10.1016/j.neuroimage.2020.116696
-  - 10.1016/j.neuroimage.2025.121554
-  - 10.1016/j.neuroimage.2026.121929
-  - 10.1016/j.nicl.2017.07.004
-  - 10.1016/j.physbeh.2009.03.020
-  - 10.1016/j.physbeh.2021.113540
-  - 10.1016/j.soard.2019.09.074
-  - 10.1016/s0140-6736(24)01296-0
-  - 10.1016/s1474-4422(17)30084-4
-  - 10.1016/s2213-8587(24)00316-4
-  - 10.1016/s2213-8587(25)00004-x
-  - 10.1038/ijo.2011.175
-  - 10.1038/ijo.2012.13
-  - 10.1038/ijo.2014.121
-  - 10.1038/ijo.2016.222
-  - 10.1038/ijo.2016.98
-  - 10.1038/mp.2017.51
-  - 10.1038/nrn3901
-  - 10.1038/nrneurol.2017.185
-  - 10.1038/oby.2007.4
-  - 10.1038/s41366-018-0164-4
-  - 10.1038/s41380-023-02025-y
-  - 10.1038/s41398-026-04005-6
-  - 10.1038/s41593-024-01624-4
-  - 10.1038/s41598-025-20328-8
-  - 10.1038/s42003-024-06361-9
-  - 10.1038/s44220-023-00128-7
-  - 10.1038/sdata.2015.31
-  - 10.1038/srep40595
-  - 10.1056/nejmra1706158
-  - 10.1073/pnas.1010459107
-  - 10.1073/pnas.1513302113
-  - 10.1093/brain/awu132
-  - 10.1093/cercor/bhw008
-  - 10.1093/cercor/bhw157
-  - 10.1093/clinchem/hvaf058
-  - 10.1093/scan/nsz085
-  - 10.1101/678284
-  - 10.1111/obr.12265
-  - 10.1152/physrev.00032.2015
-  - 10.1162/imag_a_00513
-  - 10.1192/j.eurpsy.2026.10164
-  - 10.1196/annals.1440.011
-  - 10.2337/db14-0421
-  - 10.3389/fnbeh.2015.00360
-  - 10.3389/fnhum.2011.00058
-  - 10.3389/fnhum.2019.00290
-  - 10.3389/fnhum.2019.00360
-  - 10.3389/fnhum.2022.926804
-  - 10.3389/fnins.2016.00234
-  - 10.3389/fnins.2016.00413
-  - 10.3389/fnut.2014.00007
-  - 10.3389/fnut.2026.1706597
-  - 10.3389/fphar.2024.1469053
-  - 10.3389/fpsyt.2022.955741
-  - 10.3390/biom15050638
-  - 10.3390/brainsci11121587
-  - 10.3390/brainsci15050446
-  - 10.3390/ijms25052944
-  - 10.3390/nu12010127
-  - 10.7554/elife.84683
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
 - id: 2011-10-1002-hipo-20768
   uuid: 10.1002/hipo.20768
   work_id: null
@@ -4719,7 +3608,7 @@ papers:
   journal: NeuroImage
   doi: 10.1006/nimg.2001.0978
   alt_dois: []
-  in_degree: 16
+  in_degree: 15
   out_degree: 0
   total_citations: 16574
   references_available: true
@@ -6926,7 +5815,7 @@ papers:
   journal: Lecture Notes in Computer Science
   doi: 10.1007/978-3-319-24574-4_28
   alt_dois: []
-  in_degree: 13
+  in_degree: 12
   out_degree: 1
   total_citations: 100550
   references_available: true
@@ -9162,70 +8051,6 @@ papers:
     sources:
     - 'lexical:The Big and the Small: Challenges of Imaging the Brain''s Circuits'
     round: 0
-- id: 2025-10-1007-s00429-025-02998-2
-  uuid: 10.1007/s00429-025-02998-2
-  work_id: null
-  title: A thousand ways to tailor your tractography-based connectome
-  authors: Alessandra Griffa; Francois Rheault; Alessandro Daducci; Andrew Zalesky
-  year: 2025
-  journal: Brain Structure and Function
-  doi: 10.1007/s00429-025-02998-2
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 2
-  references_available: true
-  references:
-  - 10.1002/ima.22005
-  - 10.1007/s00429-016-1238-5
-  - 10.1016/b978-0-12-818894-1.00014-8
-  - 10.1016/j.neuroimage.2009.12.027
-  - 10.1016/j.neuroimage.2013.04.056
-  - 10.1016/j.neuroimage.2014.04.074
-  - 10.1016/j.neuroimage.2016.06.035
-  - 10.1016/j.neuroimage.2018.06.060
-  - 10.1016/j.neuroimage.2018.10.029
-  - 10.1016/j.neuroimage.2018.10.070
-  - 10.1016/j.neuroimage.2018.11.018
-  - 10.1016/j.neuroimage.2019.116471
-  - 10.1016/j.neuroimage.2020.117201
-  - 10.1016/j.neuroimage.2020.117695
-  - 10.1016/j.neuroimage.2021.118417
-  - 10.1016/j.neuroimage.2021.118830
-  - 10.1016/j.neuroimage.2021.118870
-  - 10.1016/j.neuroimage.2022.118922
-  - 10.1016/j.neuroimage.2022.119423
-  - 10.1016/j.nicl.2018.08.021
-  - 10.1038/nrn2575
-  - 10.1038/s41467-017-01285-x
-  - 10.1038/s41562-019-0659-6
-  - 10.1038/s41583-024-00846-6
-  - 10.1038/s41592-021-01185-5
-  - 10.1093/brain/awaf055
-  - 10.1126/sciadv.aba8245
-  - 10.1162/netn_a_00075
-  - 10.1162/netn_a_00342
-  - 10.1523/jneurosci.0493-16.2016
-  - 10.3389/fnana.2016.00058
-  - 10.52294/apertureneuro.2022.2.neod9565
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:The connectome of an insect brain
-    round: null
 - id: 1999-10-1007-s007950050023
   uuid: 10.1007/s007950050023
   work_id: null
@@ -9740,59 +8565,6 @@ papers:
     - lexical:The big data challenges of connectomics
     - lexical:Big data in nanoscale connectomics, and the greed for training labels
     round: 0
-- id: 2025-10-1007-s41109-025-00715-w
-  uuid: 10.1007/s41109-025-00715-w
-  work_id: null
-  title: 'Arlclustering: an R package for community detection in social networks based on user interaction
-    and association rule learning'
-  authors: Mohamed El-Moussaoui; Mohamed Hanine; Ali Kartit; T. Agouti
-  year: 2025
-  journal: Applied Network Science
-  doi: 10.1007/s41109-025-00715-w
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 3
-  references_available: true
-  references:
-  - 10.1007/s00265-003-0651-y
-  - 10.1007/s10489-018-1297-9
-  - 10.1007/s11067-015-9288-4
-  - 10.1007/s11227-024-05904-5
-  - 10.1016/j.neucom.2024.128169
-  - 10.1073/pnas.0601602103
-  - 10.1073/pnas.122653799
-  - 10.1086/jar.33.4.3629752
-  - 10.1103/physreve.70.066111
-  - 10.1103/physreve.74.036104
-  - 10.1103/physreve.96.042307
-  - 10.1109/citds54976.2022.9914051
-  - 10.1109/icetcs61022.2024.10543905
-  - 10.1109/ictai.2013.26
-  - 10.1126/science.1089167
-  - 10.1137/17m1144143
-  - 10.1140/epjb/e2004-00124-y
-  - 10.11591/ijecedd
-  - 10.3390/electronics13061119
-  - 10.48550/arxiv.2309.11798
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:Community detection in networks: A user guide'
-    round: null
 - id: 2012-10-1007-springerreference-113623
   uuid: 10.1007/springerreference_113623
   work_id: null
@@ -11475,284 +10247,6 @@ papers:
     - lexical:neuPrint EM connectomics
     - lexical:connectomics neurological disease model
     round: 0
-- id: 2025-10-1016-b978-0-12-818894-1-00007-0
-  uuid: 10.1016/b978-0-12-818894-1.00007-0
-  work_id: null
-  title: Connectivity and connectomics
-  authors: Andrew Zalesky; Stamatios N. Sotiropoulos; Saâd Jbabdi; Alex Fornito
-  year: 2025
-  journal: Handbook of Diffusion MR Tractography
-  doi: 10.1016/b978-0-12-818894-1.00007-0
-  alt_dois: []
-  in_degree: 0
-  out_degree: 27
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/1522-2594(200010)44:4<625::aid-mrm17>3.0.co;2-o
-  - 10.1002/1531-8249(199902)45:2<265::aid-ana21>3.0.co;2-3
-  - 10.1002/ana.24974
-  - 10.1002/hbm.20517
-  - 10.1002/hbm.21332
-  - 10.1002/hbm.22828
-  - 10.1002/hbm.22902
-  - 10.1002/hbm.23936
-  - 10.1002/hbm.24007
-  - 10.1002/hbm.24917
-  - 10.1002/jmri.10350
-  - 10.1002/mds.26633
-  - 10.1002/mrm.10609
-  - 10.1002/mrm.20418
-  - 10.1002/mrm.20667
-  - 10.1002/mrm.21749
-  - 10.1002/mrm.21789
-  - 10.1002/mrm.25045
-  - 10.1002/mrm.27471
-  - 10.1002/mrm.28037
-  - 10.1002/nbm.3752
-  - 10.1002/nbm.3945
-  - 10.1002/nbm.779
-  - 10.1007/s00429-014-0849-y
-  - 10.1007/s00429-015-1179-4
-  - 10.1007/s00429-018-1628-y
-  - 10.1016/j.biopsych.2010.08.022
-  - 10.1016/j.biopsych.2019.10.011
-  - 10.1016/j.biopsych.2020.02.016
-  - 10.1016/j.cell.2014.02.023
-  - 10.1016/j.conb.2011.08.005
-  - 10.1016/j.conb.2012.12.004
-  - 10.1016/j.cortex.2008.05.004
-  - 10.1016/j.cortex.2012.12.007
-  - 10.1016/j.media.2015.10.011
-  - 10.1016/j.media.2019.101543
-  - 10.1016/j.mri.2006.08.001
-  - 10.1016/j.mri.2019.04.013
-  - 10.1016/j.neuroimage.2005.05.014
-  - 10.1016/j.neuroimage.2006.09.018
-  - 10.1016/j.neuroimage.2007.02.012
-  - 10.1016/j.neuroimage.2007.02.016
-  - 10.1016/j.neuroimage.2007.04.039
-  - 10.1016/j.neuroimage.2007.04.067
-  - 10.1016/j.neuroimage.2008.05.002
-  - 10.1016/j.neuroimage.2008.06.012
-  - 10.1016/j.neuroimage.2008.08.010
-  - 10.1016/j.neuroimage.2009.03.077
-  - 10.1016/j.neuroimage.2009.05.032
-  - 10.1016/j.neuroimage.2009.10.001
-  - 10.1016/j.neuroimage.2009.10.003
-  - 10.1016/j.neuroimage.2009.12.027
-  - 10.1016/j.neuroimage.2009.12.051
-  - 10.1016/j.neuroimage.2010.06.041
-  - 10.1016/j.neuroimage.2010.08.063
-  - 10.1016/j.neuroimage.2010.09.016
-  - 10.1016/j.neuroimage.2011.01.032
-  - 10.1016/j.neuroimage.2011.03.006
-  - 10.1016/j.neuroimage.2011.03.069
-  - 10.1016/j.neuroimage.2011.10.049
-  - 10.1016/j.neuroimage.2011.12.090
-  - 10.1016/j.neuroimage.2012.01.068
-  - 10.1016/j.neuroimage.2012.06.005
-  - 10.1016/j.neuroimage.2012.06.081
-  - 10.1016/j.neuroimage.2012.11.049
-  - 10.1016/j.neuroimage.2012.12.066
-  - 10.1016/j.neuroimage.2013.03.024
-  - 10.1016/j.neuroimage.2013.04.031
-  - 10.1016/j.neuroimage.2013.04.087
-  - 10.1016/j.neuroimage.2013.05.054
-  - 10.1016/j.neuroimage.2013.09.054
-  - 10.1016/j.neuroimage.2013.12.058
-  - 10.1016/j.neuroimage.2014.02.024
-  - 10.1016/j.neuroimage.2014.04.074
-  - 10.1016/j.neuroimage.2014.07.061
-  - 10.1016/j.neuroimage.2014.07.067
-  - 10.1016/j.neuroimage.2014.10.004
-  - 10.1016/j.neuroimage.2015.04.050
-  - 10.1016/j.neuroimage.2015.05.011
-  - 10.1016/j.neuroimage.2015.05.046
-  - 10.1016/j.neuroimage.2015.05.090
-  - 10.1016/j.neuroimage.2015.09.009
-  - 10.1016/j.neuroimage.2015.09.041
-  - 10.1016/j.neuroimage.2016.04.014
-  - 10.1016/j.neuroimage.2016.06.035
-  - 10.1016/j.neuroimage.2016.09.053
-  - 10.1016/j.neuroimage.2017.01.060
-  - 10.1016/j.neuroimage.2017.02.005
-  - 10.1016/j.neuroimage.2017.05.012
-  - 10.1016/j.neuroimage.2017.06.050
-  - 10.1016/j.neuroimage.2017.07.015
-  - 10.1016/j.neuroimage.2017.08.035
-  - 10.1016/j.neuroimage.2017.12.036
-  - 10.1016/j.neuroimage.2017.12.043
-  - 10.1016/j.neuroimage.2018.08.055
-  - 10.1016/j.neuroimage.2018.10.029
-  - 10.1016/j.neuroimage.2018.12.015
-  - 10.1016/j.neuroimage.2019.02.039
-  - 10.1016/j.neuroimage.2019.05.005
-  - 10.1016/j.neuroimage.2019.05.011
-  - 10.1016/j.neuroimage.2019.116207
-  - 10.1016/j.neuroimage.2019.116276
-  - 10.1016/j.neuroimage.2019.116443
-  - 10.1016/j.neuroimage.2020.116654
-  - 10.1016/j.neuroimage.2020.116923
-  - 10.1016/j.neuroimage.2020.117061
-  - 10.1016/j.neuroimage.2020.117201
-  - 10.1016/j.neuroimage.2020.117206
-  - 10.1016/j.neuroimage.2020.117273
-  - 10.1016/j.neuroimage.2020.117510
-  - 10.1016/j.neuroimage.2020.117693
-  - 10.1016/j.neuron.2013.07.036
-  - 10.1016/j.neuron.2013.10.027
-  - 10.1016/j.neuron.2015.05.035
-  - 10.1016/j.nicl.2014.07.013
-  - 10.1016/j.physrep.2005.10.009
-  - 10.1016/j.physrep.2009.11.002
-  - 10.1016/j.pneurobio.2013.12.005
-  - 10.1016/j.socnet.2004.11.008
-  - 10.1016/j.socnet.2010.03.006
-  - 10.1016/j.tics.2013.09.016
-  - 10.1016/j.tics.2016.03.001
-  - 10.1016/j.tics.2017.11.002
-  - 10.1016/j.tics.2018.08.009
-  - 10.1016/j.tics.2018.10.005
-  - 10.1016/j.tics.2020.01.008
-  - 10.1016/j.tins.2004.02.007
-  - 10.1016/s0166-2236(98)01318-6
-  - 10.1038/30918
-  - 10.1038/nature13186
-  - 10.1038/nature18933
-  - 10.1038/nature24056
-  - 10.1038/ncomms13812
-  - 10.1038/ncomms9414
-  - 10.1038/nmeth.3098
-  - 10.1038/nn.2905
-  - 10.1038/nn.3001
-  - 10.1038/nn.4125
-  - 10.1038/nn.4134
-  - 10.1038/nn.4576
-  - 10.1038/nn1075
-  - 10.1038/nn1777
-  - 10.1038/nprot.2016.178
-  - 10.1038/nrn.2017.149
-  - 10.1038/nrn2575
-  - 10.1038/nrn2961
-  - 10.1038/nrn3214
-  - 10.1038/nrn893
-  - 10.1038/s41467-017-01285-x
-  - 10.1038/s41467-019-12201-w
-  - 10.1038/s41467-019-12765-7
-  - 10.1038/s41583-018-0071-7
-  - 10.1038/s41583-020-0262-x
-  - 10.1038/s41586-019-1352-7
-  - 10.1038/s41593-020-00711-6
-  - 10.1038/srep00336
-  - 10.1073/pnas.0403743101
-  - 10.1073/pnas.0808904106
-  - 10.1073/pnas.0811168106
-  - 10.1073/pnas.1005062107
-  - 10.1073/pnas.1009073107
-  - 10.1073/pnas.1018962108
-  - 10.1073/pnas.1018985108
-  - 10.1073/pnas.1111738109
-  - 10.1073/pnas.1218972110
-  - 10.1073/pnas.1315529111
-  - 10.1073/pnas.1400181111
-  - 10.1073/pnas.1405672111
-  - 10.1073/pnas.1418198112
-  - 10.1073/pnas.1513302113
-  - 10.1073/pnas.1801351115
-  - 10.1073/pnas.200327197
-  - 10.1088/0031-9155/53/19/009
-  - 10.1089/brain.2011.0033
-  - 10.1089/brain.2013.0183
-  - 10.1093/brain/awm008
-  - 10.1093/cercor/bhm225
-  - 10.1093/cercor/bhn014
-  - 10.1093/cercor/bhn102
-  - 10.1093/cercor/bhs270
-  - 10.1093/cercor/bhs397
-  - 10.1093/cercor/bhu326
-  - 10.1093/cercor/bhv121
-  - 10.1093/cercor/bhw089
-  - 10.1093/comnet/cnu016
-  - 10.1093/neuros/nyz285
-  - 10.1093/schbul/sbn161
-  - 10.1097/01.wco.0000236618.82086.01
-  - 10.1098/rstb.2005.1650
-  - 10.1103/physreve.81.046106
-  - 10.1103/physrevlett.87.198701
-  - 10.1103/revmodphys.74.47
-  - 10.1109/72.761722
-  - 10.1109/tbme.2006.888830
-  - 10.1109/tmi.2003.822821
-  - 10.1109/tmi.2008.2012113
-  - 10.1109/tmi.2008.923644
-  - 10.1109/tmi.2013.2285500
-  - 10.1109/tmi.2014.2352414
-  - 10.1111/j.1469-7580.2011.01414.x
-  - 10.1111/j.1749-6632.2010.05888.x
-  - 10.1111/j.2517-6161.1995.tb02031.x
-  - 10.1111/jon.12298
-  - 10.1126/sciadv.aba8245
-  - 10.1126/science.1065103
-  - 10.1126/science.286.5439.509
-  - 10.1137/070710111
-  - 10.1137/s003614450342480
-  - 10.1145/2501654.2501657
-  - 10.1146/annurev-psych-122414-033634
-  - 10.1162/netn_a_00002
-  - 10.1162/netn_a_00040
-  - 10.1162/netn_a_00075
-  - 10.1177/1073858406293182
-  - 10.1177/1073858406295918
-  - 10.1177/1073858416667720
-  - 10.1191/0962280203sm341ra
-  - 10.1371/journal.pbio.0060159
-  - 10.1371/journal.pbio.1002512
-  - 10.1371/journal.pbio.3000810
-  - 10.1371/journal.pcbi.0010042
-  - 10.1371/journal.pcbi.0020095
-  - 10.1371/journal.pcbi.1000334
-  - 10.1371/journal.pcbi.1000748
-  - 10.1371/journal.pcbi.1002937
-  - 10.1371/journal.pcbi.1003530
-  - 10.1371/journal.pcbi.1003557
-  - 10.1371/journal.pcbi.1005283
-  - 10.1371/journal.pcbi.1005989
-  - 10.1371/journal.pcbi.1006833
-  - 10.1371/journal.pone.0013701
-  - 10.1371/journal.pone.0135247
-  - 10.1371/journal.pone.0220061
-  - 10.1523/jneurosci.0493-16.2016
-  - 10.1523/jneurosci.1448-13.2013
-  - 10.1523/jneurosci.2874-10.2010
-  - 10.1523/jneurosci.3539-11.2011
-  - 10.1523/jneurosci.3874-05.2006
-  - 10.1523/jneurosci.5102-10.2011
-  - 10.1523/jneurosci.5108-12.2013
-  - 10.3171/2011.7.jns11250
-  - 10.3389/fncel.2019.00413
-  - 10.3389/fninf.2011.00023
-  - 10.3389/fnins.2016.00247
-  - 10.3389/neuro.11.037.2009
-  - 10.7554/elife.35237
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=29,back=29,fwd=0)
-    - lexical_recent:Why not connectomics?
-    round: null
 - id: 2023-10-1016-b978-0-323-85280-7-00005-1
   uuid: 10.1016/b978-0-323-85280-7.00005-1
   work_id: null
@@ -12645,74 +11139,6 @@ papers:
     - lexical:neuPrint EM connectomics
     - lexical:connectomics neurological disease model
     round: 0
-- id: 2025-10-1016-j-artint-2025-104474
-  uuid: 10.1016/j.artint.2025.104474
-  work_id: null
-  title: LAD2025, A constraint-based solver for the subgraph isomorphism problem
-  authors: Christine Solnon
-  year: 2025
-  journal: Artificial Intelligence
-  doi: 10.1016/j.artint.2025.104474
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 2
-  references_available: true
-  references:
-  - 10.1007/978-3-030-19212-9_2
-  - 10.1007/978-3-030-20081-7_1
-  - 10.1007/978-3-030-51372-6_19
-  - 10.1007/978-3-319-10428-7_12
-  - 10.1007/978-3-319-23219-5_21
-  - 10.1007/978-3-319-50349-3_8
-  - 10.1007/978-3-319-93031-2_22
-  - 10.1007/978-3-319-98334-9_7
-  - 10.1007/978-3-540-72788-0_28
-  - 10.1007/s10601-009-9074-3
-  - 10.1016/j.artint.2008.10.006
-  - 10.1016/j.artint.2010.05.002
-  - 10.1016/j.artint.2024.104219
-  - 10.1016/j.cviu.2010.12.013
-  - 10.1016/j.patcog.2014.05.019
-  - 10.1016/s0167-8655(02)00253-2
-  - 10.1017/s0960129501003577
-  - 10.1109/icdar.2009.202
-  - 10.1109/ictai.2019.00019
-  - 10.1109/swat.1971.1
-  - 10.1109/tcbb.2016.2515595
-  - 10.1109/tpami.2004.75
-  - 10.1109/tpami.2017.2696940
-  - 10.1137/0201010
-  - 10.1137/0202019
-  - 10.1145/321921.321925
-  - 10.1609/aaai.v30i1.10437
-  - 10.1609/aaai.v34i09.7086
-  - 10.1609/aaai.v38i8.28642
-  - 10.1613/jair.5768
-  - 10.24963/ijcai.2021/193
-  - 10.24963/ijcai.2023/626
-  - 10.24963/ijcai.2025/291
-  - 10.4153/cjm-1956-045-5
-  - 10.4230/lipics.cp.2021.9
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - 'lexical_recent:DotMotif: an open-source tool for connectome subgraph isomorphism search and graph
-      queries'
-    round: null
 - id: 2017-10-1016-j-artres-2017-10-009
   uuid: 10.1016/j.artres.2017.10.009
   work_id: null
@@ -13365,7 +11791,7 @@ papers:
   journal: Cell
   doi: 10.1016/j.cell.2014.02.023
   alt_dois: []
-  in_degree: 15
+  in_degree: 14
   out_degree: 11
   total_citations: 705
   references_available: true
@@ -13550,7 +11976,7 @@ papers:
   journal: Cell
   doi: 10.1016/j.cell.2015.09.029
   alt_dois: []
-  in_degree: 13
+  in_degree: 12
   out_degree: 8
   total_citations: 1406
   references_available: true
@@ -15816,7 +14242,7 @@ papers:
   journal: Current Opinion in Neurobiology
   doi: 10.1016/j.conb.2011.08.005
   alt_dois: []
-  in_degree: 7
+  in_degree: 6
   out_degree: 9
   total_citations: 238
   references_available: true
@@ -17343,78 +15769,6 @@ papers:
     sources:
     - lexical:connectomics neurological disease model
     round: 0
-- id: 2025-10-1016-j-exer-2025-110577
-  uuid: 10.1016/j.exer.2025.110577
-  work_id: null
-  title: Investigation of two pore types in Schlemm’s canal inner wall endothelium in flow-type areas
-    using serial block-face scanning electron microscopy
-  authors: David L. Swain; Thuy-Duong Le; C. Lam; Haiyan Gong
-  year: 2025
-  journal: Experimental Eye Research
-  doi: 10.1016/j.exer.2025.110577
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 2
-  references_available: true
-  references:
-  - 10.1001/archopht.1963.00960040789022
-  - 10.1007/bf00410037
-  - 10.1016/0002-9394(72)90394-7
-  - 10.1016/0002-9394(73)91145-8
-  - 10.1016/0002-9394(75)90284-6
-  - 10.1016/0014-4835(71)90149-7
-  - 10.1016/0014-4835(84)90050-2
-  - 10.1016/0014-4835(92)90151-h
-  - 10.1016/j.actbio.2018.02.037
-  - 10.1016/j.exer.2005.10.011
-  - 10.1016/j.exer.2007.10.018
-  - 10.1016/j.exer.2008.11.033
-  - 10.1016/j.exer.2009.08.002
-  - 10.1016/j.exer.2011.05.012
-  - 10.1016/j.exer.2014.11.008
-  - 10.1016/j.exer.2016.01.008
-  - 10.1016/j.exer.2020.108064
-  - 10.1016/j.exer.2021.108488
-  - 10.1016/j.ophtha.2017.03.058
-  - 10.1016/s0002-9394(00)00538-9
-  - 10.1016/s0014-4835(70)80030-6
-  - 10.1016/s0014-4835(71)80073-8
-  - 10.1016/s0014-4835(89)80060-0
-  - 10.1038/srep40717
-  - 10.1073/pnas.1410602111
-  - 10.1080/713773926
-  - 10.1111/j.1365-2818.2005.01466.x
-  - 10.1111/j.1755-3768.1972.tb05954.x
-  - 10.1136/bjo.56.3.157
-  - 10.1136/bjo.80.5.389
-  - 10.1167/iovs.12-10930
-  - 10.1167/iovs.16-19644
-  - 10.1167/iovs.16-20189
-  - 10.1167/iovs.17-22759
-  - 10.1167/iovs.18-26011
-  - 10.1371/journal.pone.0122483
-  - 10.1371/journal.pone.0147176
-  - 10.3389/fcell.2022.867376
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue
-      Nanostructure
-    round: null
 - id: 2018-10-1016-j-ins-2017-11-055
   uuid: 10.1016/j.ins.2017.11.055
   work_id: null
@@ -17470,54 +15824,6 @@ papers:
     sources:
     - 'lexical:Community detection in networks: A user guide'
     round: 0
-- id: 2026-10-1016-j-ins-2026-123913
-  uuid: 10.1016/j.ins.2026.123913
-  work_id: null
-  title: 'LG-Index: Learning-based graph indexing for subgraph queries'
-  authors: Bin Yang; Zhaonian Zou; Jianxiong Ye
-  year: 2026
-  journal: Information Sciences
-  doi: 10.1016/j.ins.2026.123913
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1007/s00778-022-00749-x
-  - 10.1016/j.bdr.2021.100304
-  - 10.1021/acssynbio.2c00255
-  - 10.1038/s41598-024-56498-0
-  - 10.1093/bioinformatics/btaf408
-  - 10.1109/tkde.2020.2994641
-  - 10.1109/tnnls.2020.2978386
-  - 10.1109/tpami.2004.75
-  - 10.1145/1114244.1114248
-  - 10.1145/296854.277632
-  - 10.1145/362686.362692
-  - 10.1177/0145482x221150592
-  - 10.1186/s12859-024-05991-4
-  - 10.1371/journal.pone.0076911
-  - 10.21105/joss.00331
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:DotMotif: an open-source tool for connectome subgraph isomorphism search and graph
-      queries'
-    round: null
 - id: 2018-10-1016-j-isci-2018-09-008
   uuid: 10.1016/j.isci.2018.09.008
   work_id: null
@@ -18392,69 +16698,6 @@ papers:
     sources:
     - expansion(hits=9,year=2014,threshold=5)
     round: 1
-- id: 2026-10-1016-j-neucom-2026-133938
-  uuid: 10.1016/j.neucom.2026.133938
-  work_id: null
-  title: 'Morphology-aware representational brain connectome (MRBC): A deep feature-driven engine with
-    robust representation, reproducibility, and clinical relevance'
-  authors: Hu Yu; Yiyu Zhang; Jingming Li; Zhiwei Song; Zhengyuan Lyu; Si-Yue Fu; Libin Yang; Sen Ruan;
-    Xiaojuan Guo
-  year: 2026
-  journal: Neurocomputing
-  doi: 10.1016/j.neucom.2026.133938
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/brb3.448
-  - 10.1002/hbm.22156
-  - 10.1002/hbm.23083
-  - 10.1002/hbm.26450
-  - 10.1006/nimg.2001.0978
-  - 10.1007/s00138-012-0462-0
-  - 10.1016/j.dcn.2021.100966
-  - 10.1016/j.jad.2017.12.083
-  - 10.1016/j.media.2020.101840
-  - 10.1016/j.neulet.2018.07.029
-  - 10.1016/j.neuroimage.2010.05.045
-  - 10.1016/j.neuroimage.2021.118018
-  - 10.1016/j.neuron.2017.11.039
-  - 10.1016/j.pnpbp.2015.06.009
-  - 10.1016/j.tins.2023.11.011
-  - 10.1037/1082-989x.1.1.30
-  - 10.1093/cercor/bhr221
-  - 10.1109/tmi.2021.3060634
-  - 10.1109/tmi.2022.3222093
-  - 10.1186/s13229-021-00439-5
-  - 10.1371/journal.pone.0141840
-  - 10.1371/journal.pone.0201243
-  - 10.3233/jad-150311
-  - 10.3389/fnana.2017.00034
-  - 10.3389/fnhum.2018.00204
-  - 10.3389/fnins.2016.00394
-  - 10.3389/fnins.2022.1038514
-  - 10.3389/fnins.2025.1596459
-  - 10.3390/jcm9061846
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:CAVE: Connectome Annotation Versioning Engine'
-    round: null
 - id: 2015-10-1016-j-neulet-2017-10-003
   uuid: 10.1016/j.neulet.2017.10.003
   work_id: null
@@ -18584,7 +16827,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2009.10.003
   alt_dois: []
-  in_degree: 44
+  in_degree: 40
   out_degree: 15
   total_citations: 11278
   references_available: true
@@ -18681,7 +16924,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2009.12.027
   alt_dois: []
-  in_degree: 16
+  in_degree: 14
   out_degree: 14
   total_citations: 1181
   references_available: true
@@ -18774,7 +17017,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2012.06.081
   alt_dois: []
-  in_degree: 11
+  in_degree: 9
   out_degree: 3
   total_citations: 2336
   references_available: true
@@ -18972,7 +17215,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2013.04.087
   alt_dois: []
-  in_degree: 9
+  in_degree: 7
   out_degree: 24
   total_citations: 752
   references_available: true
@@ -19235,7 +17478,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2013.04.127
   alt_dois: []
-  in_degree: 13
+  in_degree: 7
   out_degree: 0
   total_citations: 5384
   references_available: true
@@ -19330,7 +17573,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2013.05.041
   alt_dois: []
-  in_degree: 19
+  in_degree: 13
   out_degree: 3
   total_citations: 5957
   references_available: true
@@ -19546,7 +17789,7 @@ papers:
   journal: NeuroImage
   doi: 10.1016/j.neuroimage.2015.09.041
   alt_dois: []
-  in_degree: 7
+  in_degree: 6
   out_degree: 12
   total_citations: 303
   references_available: true
@@ -20617,7 +18860,7 @@ papers:
   journal: Neuron
   doi: 10.1016/j.neuron.2011.09.006
   alt_dois: []
-  in_degree: 15
+  in_degree: 11
   out_degree: 7
   total_citations: 4179
   references_available: true
@@ -22390,7 +20633,7 @@ papers:
   journal: Physics Reports
   doi: 10.1016/j.physrep.2016.09.002
   alt_dois: []
-  in_degree: 2
+  in_degree: 1
   out_degree: 4
   total_citations: 2085
   references_available: true
@@ -22619,145 +20862,6 @@ papers:
     - milestone
     - 'lexical:Community detection in networks: A user guide'
     round: 0
-- id: 2026-10-1016-j-placenta-2026-03-012
-  uuid: 10.1016/j.placenta.2026.03.012
-  work_id: null
-  title: Ultrastructural analysis of bovine trophoblast giant cells during their migration by serial block-face
-    scanning electron microscopy (SBF-SEM).
-  authors: Louiza Tiedje; Sophia Pankoke; Julia Hollenbach; Rüdiger Koch; Christoph Wrede; C. Pfarrer
-  year: 2026
-  journal: Placenta
-  doi: 10.1016/j.placenta.2026.03.012
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/aja.1000890204
-  - 10.1002/aja.1001590305
-  - 10.1002/ar.1091320308
-  - 10.1002/ar.1091630103
-  - 10.1002/jez.1402660607
-  - 10.1007/bf00215761
-  - 10.1007/bf00338709
-  - 10.1007/s00418-003-0507-6
-  - 10.1007/s004290050275
-  - 10.1016/0143-4004(91)90507-c
-  - 10.1016/0143-4004(92)90025-o
-  - 10.1016/j.mrrev.2020.108361
-  - 10.1016/j.placenta.2020.10.032
-  - 10.1016/j.placenta.2022.04.003
-  - 10.1016/j.theriogenology.2013.04.010
-  - 10.1016/j.ydbio.2024.10.006
-  - 10.1016/s0022-5320(83)90072-2
-  - 10.1038/nature24050
-  - 10.1038/s41598-022-16919-4
-  - 10.1073/pnas.1215787110
-  - 10.1093/biolre/ioac107
-  - 10.1093/evolut/qpad209
-  - 10.1111/j.1751-0813.1979.tb07062.x
-  - 10.1111/joa.13191
-  - 10.1126/science.1092053
-  - 10.1152/ajprenal.00097.2020
-  - 10.1159/000489257
-  - 10.1371/journal.pbio.0020329
-  - 10.1371/journal.pbio.1002340
-  - 10.1530/jrf.0.0590425
-  - 10.3390/vetsci10010044
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue
-      Nanostructure
-    round: null
-- id: 2025-10-1016-j-rineng-2025-105200
-  uuid: 10.1016/j.rineng.2025.105200
-  work_id: null
-  title: 'Connectome Graph Attention Network (CGAT): A Multimodal approach for enhanced classification
-    of Alzheimer''s disease'
-  authors: P. Udayakumar; R. Subhashini
-  year: 2025
-  journal: Results in Engineering
-  doi: 10.1016/j.rineng.2025.105200
-  alt_dois:
-  - 10.2139/ssrn.5177789
-  in_degree: 1
-  out_degree: 0
-  total_citations: 7
-  references_available: true
-  references:
-  - 10.1002/hbm.26344
-  - 10.1002/jmri.21049
-  - 10.1002/mp.16655
-  - 10.1007/s40120-022-00338-8
-  - 10.1007/s42979-023-01688-2
-  - 10.1016/j.compbiomed.2020.104096
-  - 10.1016/j.compbiomed.2023.107328
-  - 10.1016/j.compbiomed.2024.108069
-  - 10.1016/j.eswa.2024.124780
-  - 10.1016/j.jbi.2021.103863
-  - 10.1016/j.neunet.2023.04.025
-  - 10.1016/j.neuroimage.2022.119673
-  - 10.1016/j.rineng.2024.102224
-  - 10.1016/j.rineng.2024.102790
-  - 10.1016/j.rineng.2024.103348
-  - 10.1016/j.rineng.2025.104444
-  - 10.1038/mp.2017.92
-  - 10.1038/s41597-022-01624-8
-  - 10.1038/s41598-020-74399-w
-  - 10.1038/s41598-020-79243-9
-  - 10.1038/s41598-022-06444-9
-  - 10.1093/jamia/ocac168
-  - 10.1093/psyrad/kkad033
-  - 10.1101/2022.01.26.477897
-  - 10.1109/tai.2024.3416420
-  - 10.1109/tbme.2019.2957921
-  - 10.1109/tbme.2021.3049199
-  - 10.1109/tcss.2024.3400029
-  - 10.1109/tmi.2020.3021387
-  - 10.1109/tmi.2021.3110829
-  - 10.1109/tmi.2022.3218745
-  - 10.1109/tmi.2023.3325261
-  - 10.1109/tnsre.2022.3204913
-  - 10.1162/imag_a_00089
-  - 10.1162/neco_a_01273
-  - 10.1186/s12938-024-01204-4
-  - 10.1186/s13195-024-01425-8
-  - 10.3389/fnins.2023.1288882
-  - 10.48550/arxiv.2210.05880
-  - 10.48550/arxiv.2307.16366
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=0,fwd=1)
-    - lexical_recent:cell type classification connectome
-    round: null
 - id: 2021-10-1016-j-sigpro-2021-108121
   uuid: 10.1016/j.sigpro.2021.108121
   work_id: null
@@ -22812,7 +20916,7 @@ papers:
   journal: Tissue and Cell
   doi: 10.1016/j.tice.2018.08.011
   alt_dois: []
-  in_degree: 3
+  in_degree: 2
   out_degree: 17
   total_citations: 56
   references_available: true
@@ -22943,7 +21047,7 @@ papers:
   journal: Trends in Cognitive Sciences
   doi: 10.1016/j.tics.2013.09.012
   alt_dois: []
-  in_degree: 13
+  in_degree: 12
   out_degree: 22
   total_citations: 2096
   references_available: true
@@ -23133,7 +21237,7 @@ papers:
   journal: Trends in Cognitive Sciences
   doi: 10.1016/j.tics.2016.12.007
   alt_dois: []
-  in_degree: 6
+  in_degree: 5
   out_degree: 2
   total_citations: 739
   references_available: true
@@ -25026,7 +23130,7 @@ papers:
   journal: Psychoneuroendocrinology
   doi: 10.1016/s0306-4530(03)00088-x
   alt_dois: []
-  in_degree: 11
+  in_degree: 10
   out_degree: 0
   total_citations: 16667
   references_available: false
@@ -26928,7 +25032,7 @@ papers:
   journal: Nature
   doi: 10.1038/30918
   alt_dois: []
-  in_degree: 45
+  in_degree: 43
   out_degree: 0
   total_citations: 42957
   references_available: true
@@ -27016,7 +25120,7 @@ papers:
   journal: Molecular Psychiatry
   doi: 10.1038/mp.2013.78
   alt_dois: []
-  in_degree: 6
+  in_degree: 4
   out_degree: 4
   total_citations: 2721
   references_available: true
@@ -27410,7 +25514,7 @@ papers:
   journal: Nature
   doi: 10.1038/nature09802
   alt_dois: []
-  in_degree: 63
+  in_degree: 62
   out_degree: 15
   total_citations: 889
   references_available: true
@@ -28082,7 +26186,7 @@ papers:
   journal: Nature
   doi: 10.1038/nature13186
   alt_dois: []
-  in_degree: 34
+  in_degree: 33
   out_degree: 20
   total_citations: 2485
   references_available: true
@@ -29199,7 +27303,7 @@ papers:
   journal: Nature Methods
   doi: 10.1038/nmeth.2019
   alt_dois: []
-  in_degree: 32
+  in_degree: 31
   out_degree: 6
   total_citations: 61459
   references_available: true
@@ -30165,7 +28269,7 @@ papers:
   journal: Nature Neuroscience
   doi: 10.1038/nn.4502
   alt_dois: []
-  in_degree: 9
+  in_degree: 7
   out_degree: 21
   total_citations: 2359
   references_available: true
@@ -30977,7 +29081,7 @@ papers:
   journal: Nature Reviews Neuroscience
   doi: 10.1038/nrn2575
   alt_dois: []
-  in_degree: 53
+  in_degree: 50
   out_degree: 19
   total_citations: 11787
   references_available: true
@@ -31262,7 +29366,7 @@ papers:
   journal: Nature Reviews Neuroscience
   doi: 10.1038/nrn3214
   alt_dois: []
-  in_degree: 26
+  in_degree: 25
   out_degree: 18
   total_citations: 3209
   references_available: true
@@ -31443,7 +29547,7 @@ papers:
   journal: Nature Reviews Neuroscience
   doi: 10.1038/nrn3901
   alt_dois: []
-  in_degree: 10
+  in_degree: 9
   out_degree: 20
   total_citations: 1636
   references_available: true
@@ -31628,95 +29732,6 @@ papers:
     sources:
     - expansion(hits=9,year=2015,threshold=5)
     round: 1
-- id: 2025-10-1038-s41380-025-03099-6
-  uuid: 10.1038/s41380-025-03099-6
-  work_id: null
-  title: Characteristics of brain network connectome and connectome-based efficacy predictive model in
-    bipolar depression
-  authors: Caixi Xi; Bin Lu; Xiaonan Guo; Zeyu Qin; Chaogan Yan; Shaohua Hu
-  year: 2025
-  journal: Molecular Psychiatry
-  doi: 10.1038/s41380-025-03099-6
-  alt_dois: []
-  in_degree: 0
-  out_degree: 3
-  total_citations: 7
-  references_available: true
-  references:
-  - 10.1002/brb3.1953
-  - 10.1006/nimg.1999.0516
-  - 10.1016/j.biopsych.2012.07.031
-  - 10.1016/j.biopsych.2013.04.024
-  - 10.1016/j.biopsych.2019.06.013
-  - 10.1016/j.biopsych.2022.05.031
-  - 10.1016/j.brainres.2020.147143
-  - 10.1016/j.ebiom.2020.102742
-  - 10.1016/j.jaac.2021.12.015
-  - 10.1016/j.jad.2016.04.052
-  - 10.1016/j.jad.2020.11.049
-  - 10.1016/j.jad.2021.05.052
-  - 10.1016/j.jad.2022.11.026
-  - 10.1016/j.neuroimage.2010.06.041
-  - 10.1016/j.neuroimage.2013.04.087
-  - 10.1016/j.neuroimage.2016.02.079
-  - 10.1016/j.schres.2020.01.009
-  - 10.1016/j.scib.2021.09.016
-  - 10.1016/s0140-6736(15)00241-x
-  - 10.1017/s0033291722000757
-  - 10.1017/s2045796020000803
-  - 10.1038/30918
-  - 10.1038/nn.4361
-  - 10.1038/s41380-020-00982-2
-  - 10.1038/s41380-021-01091-4
-  - 10.1038/s41380-021-01247-2
-  - 10.1038/s41593-020-00711-6
-  - 10.1038/tp.2017.117
-  - 10.1073/pnas.0905267106
-  - 10.1073/pnas.1801582115
-  - 10.1093/cercor/bhab356
-  - 10.1093/cercor/bhr291
-  - 10.1093/cercor/bhx179
-  - 10.1093/schbul/sbz035
-  - 10.1097/01.jcp.0000248603.76231.b7
-  - 10.1103/physrevlett.87.198701
-  - 10.1111/bdi.12426
-  - 10.1111/bdi.12512
-  - 10.1111/bdi.13025
-  - 10.1111/j.1399-5618.2012.01021.x
-  - 10.1111/j.1399-5618.2012.01022.x
-  - 10.1111/j.2044-8341.1959.tb00467.x
-  - 10.1136/jnnp.23.1.56
-  - 10.1145/1961189.1961199
-  - 10.1152/jn.00338.2011
-  - 10.1162/089976698300017575
-  - 10.1176/appi.ajp.162.7.1351
-  - 10.1176/appi.ajp.2018.17101147
-  - 10.1176/appi.ajp.2019.18070870
-  - 10.1192/bjp.133.5.429
-  - 10.1371/journal.pcbi.0030017
-  - 10.1586/14737175.2014.915744
-  - 10.3389/fpsyt.2020.00422
-  - 10.4088/jcp.15m10091
-  - 10.4088/jcp.21m14185
-  - 10.7150/ijbs.84923
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=3,back=3,fwd=0)
-    - lexical_recent:The connectome of an insect brain
-    round: null
 - id: 2020-10-1038-s41467-020-14858-0
   uuid: 10.1038/s41467-020-14858-0
   work_id: null
@@ -32250,7 +30265,7 @@ papers:
   journal: Nature
   doi: 10.1038/s41586-019-1352-7
   alt_dois: []
-  in_degree: 28
+  in_degree: 27
   out_degree: 17
   total_citations: 806
   references_available: true
@@ -32353,7 +30368,7 @@ papers:
   journal: Nature
   doi: 10.1038/s41586-019-1716-z
   alt_dois: []
-  in_degree: 8
+  in_degree: 7
   out_degree: 13
   total_citations: 643
   references_available: true
@@ -33716,7 +31731,7 @@ papers:
   journal: Nature
   doi: 10.1038/s41586-025-08790-w
   alt_dois: []
-  in_degree: 22
+  in_degree: 21
   out_degree: 44
   total_citations: 395
   references_available: true
@@ -34024,7 +32039,7 @@ papers:
   journal: Nature Methods
   doi: 10.1038/s41592-021-01330-0
   alt_dois: []
-  in_degree: 22
+  in_degree: 21
   out_degree: 21
   total_citations: 243
   references_available: true
@@ -35564,74 +33579,6 @@ papers:
     sources:
     - milestone
     round: 0
-- id: 2025-10-1038-s41597-025-05708-z
-  uuid: 10.1038/s41597-025-05708-z
-  work_id: null
-  title: 'Machine learning training data: over 500,000 images of butterflies and moths (Lepidoptera) with
-    species labels'
-  authors: Friederike Barkmann; A. Lindner; Ronald Würflinger; Helmut Höttinger; Johannes Rüdisser
-  year: 2025
-  journal: Scientific Data
-  doi: 10.1038/s41597-025-05708-z
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 2
-  references_available: true
-  references:
-  - 10.1002/ece3.5921
-  - 10.1007/978-3-031-20053-3_27
-  - 10.1007/978-94-017-9852-5_3
-  - 10.1007/s10462-022-10278-2
-  - 10.1007/s10841-006-6293-4
-  - 10.1007/s10841-010-9333-z
-  - 10.1007/s10841-013-9565-9
-  - 10.1007/s11042-023-17563-4
-  - 10.1007/s42977-023-00200-4
-  - 10.1016/j.aspen.2020.11.015
-  - 10.1016/j.biocon.2016.09.004
-  - 10.1016/j.ecoinf.2017.07.004
-  - 10.1016/j.ecolind.2024.111569
-  - 10.1016/j.jnc.2009.12.002
-  - 10.1016/j.neunet.2018.07.011
-  - 10.1016/j.patter.2020.100109
-  - 10.1038/s41467-022-27980-y
-  - 10.1073/pnas.1719367115
-  - 10.1080/00219266.2020.1739114
-  - 10.1098/rsos.221063
-  - 10.1098/rstb.2004.1585
-  - 10.1101/2022.06.25.497604
-  - 10.1109/cvpr.2009.5206848
-  - 10.1109/dicta.2017.8227435
-  - 10.1111/2041-210x.13099
-  - 10.1111/2041-210x.13611
-  - 10.1111/ele.14123
-  - 10.1111/j.2041-210x.2011.00109.x
-  - 10.1163/9789004631717
-  - 10.14778/3415478.3415530
-  - 10.25452/figshare.plus.29135618
-  - 10.3389/fevo.2021.693602
-  - 10.3390/su13148087
-  - 10.3897/zookeys.811.28712
-  - 10.57967/hf/5986
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:Big data in nanoscale connectomics, and the greed for training labels
-    round: null
 - id: 2021-10-1038-s41598-021-91025-5
   uuid: 10.1038/s41598-021-91025-5
   work_id: null
@@ -36310,7 +34257,7 @@ papers:
   journal: Proceedings of the National Academy of Sciences
   doi: 10.1073/pnas.0135058100
   alt_dois: []
-  in_degree: 13
+  in_degree: 12
   out_degree: 0
   total_citations: 6505
   references_available: true
@@ -36610,7 +34557,7 @@ papers:
   journal: Proceedings of the National Academy of Sciences
   doi: 10.1073/pnas.0811168106
   alt_dois: []
-  in_degree: 23
+  in_degree: 22
   out_degree: 5
   total_citations: 3354
   references_available: true
@@ -36696,7 +34643,7 @@ papers:
   journal: Proceedings of the National Academy of Sciences
   doi: 10.1073/pnas.0911855107
   alt_dois: []
-  in_degree: 16
+  in_degree: 15
   out_degree: 4
   total_citations: 3014
   references_available: true
@@ -36935,7 +34882,7 @@ papers:
   journal: Proceedings of the National Academy of Sciences
   doi: 10.1073/pnas.122653799
   alt_dois: []
-  in_degree: 14
+  in_degree: 10
   out_degree: 1
   total_citations: 15914
   references_available: true
@@ -37391,7 +35338,7 @@ papers:
   journal: 'Journal of Statistical Mechanics: Theory and Experiment'
   doi: 10.1088/1742-5468/2008/10/p10008
   alt_dois: []
-  in_degree: 19
+  in_degree: 18
   out_degree: 2
   total_citations: 20495
   references_available: true
@@ -37549,7 +35496,7 @@ papers:
   journal: Transactions of the American Mathematical Society
   doi: 10.1090/s0002-9947-1984-0756039-5
   alt_dois: []
-  in_degree: 6
+  in_degree: 5
   out_degree: 0
   total_citations: 5101
   references_available: true
@@ -37861,7 +35808,7 @@ papers:
   journal: Bioinformatics
   doi: 10.1093/bioinformatics/btx180
   alt_dois: []
-  in_degree: 5
+  in_degree: 4
   out_degree: 1
   total_citations: 2109
   references_available: true
@@ -37897,7 +35844,7 @@ papers:
   journal: Brain
   doi: 10.1093/brain/awu132
   alt_dois: []
-  in_degree: 9
+  in_degree: 8
   out_degree: 19
   total_citations: 1111
   references_available: true
@@ -39669,7 +37616,7 @@ papers:
   journal: Cerebral Cortex
   doi: 10.1093/cercor/bhs270
   alt_dois: []
-  in_degree: 24
+  in_degree: 21
   out_degree: 13
   total_citations: 874
   references_available: true
@@ -42622,7 +40569,7 @@ papers:
   journal: openRxiv
   doi: 10.1101/2020.12.08.413955
   alt_dois: []
-  in_degree: 15
+  in_degree: 14
   out_degree: 29
   total_citations: 333
   references_available: true
@@ -44801,86 +42748,6 @@ papers:
     sources:
     - 'lexical:webKnossos: efficient online 3D data annotation for connectomics'
     round: 0
-- id: 2025-10-1101-2025-01-17-633606
-  uuid: 10.1101/2025.01.17.633606
-  work_id: null
-  title: Efficacy of functional connectome fingerprinting using tangent-space brain networks
-  authors: Davor Curic; S. Krishna; Jörn Davidsen
-  year: 2025
-  journal: openRxiv
-  doi: 10.1101/2025.01.17.633606
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 1
-  references_available: true
-  references:
-  - 10.1001/jamapsychiatry.2018.0844
-  - 10.1002/hbm.26535
-  - 10.1007/s12559-009-9026-7
-  - 10.1016/j.biopsych.2014.02.018
-  - 10.1016/j.biopsych.2019.10.026
-  - 10.1016/j.cortex.2013.10.012
-  - 10.1016/j.isci.2023.107624
-  - 10.1016/j.jad.2012.04.013
-  - 10.1016/j.neuroimage.2012.01.110
-  - 10.1016/j.neuroimage.2013.04.056
-  - 10.1016/j.neuroimage.2013.05.033
-  - 10.1016/j.neuroimage.2013.08.048
-  - 10.1016/j.neuroimage.2017.06.027
-  - 10.1016/j.neuroimage.2017.07.016
-  - 10.1016/j.neuroimage.2019.116398
-  - 10.1016/j.neuron.2011.09.006
-  - 10.1016/j.neuron.2012.12.028
-  - 10.1016/j.neuron.2017.07.011
-  - 10.1016/j.patrec.2005.10.010
-  - 10.1016/j.pneurobio.2013.12.005
-  - 10.1016/j.tics.2013.10.001
-  - 10.1016/j.visres.2011.01.015
-  - 10.1038/nature02447
-  - 10.1038/nn.3470
-  - 10.1038/nn.4135
-  - 10.1038/nn.4502
-  - 10.1038/s41386-024-01962-8
-  - 10.1038/s41467-020-18286-y
-  - 10.1038/s41586-019-1787-x
-  - 10.1038/s41593-021-00962-x
-  - 10.1038/s41597-022-01596-9
-  - 10.1038/s41598-017-06208-w
-  - 10.1038/s41598-019-42090-4
-  - 10.1073/pnas.0811884106
-  - 10.1080/00031305.1994.10476079
-  - 10.1089/brain.2020.0881
-  - 10.1093/braincomms/fcab233
-  - 10.1093/cercor/bhae104
-  - 10.1093/cercor/bhu239
-  - 10.1093/cercor/bhv239
-  - 10.1109/tmi.2015.2463723
-  - 10.1371/journal.pcbi.1000100
-  - 10.1371/journal.pone.0118432
-  - 10.18112/openneuro.ds000224.v1.0.4
-  - 10.3389/fnins.2018.00525
-  - 10.3389/fnsys.2015.00175
-  - 10.3390/e21090882
-  - 10.3758/bf03196323
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:The connectome of an insect brain
-    round: null
 - id: 2025-10-1101-2025-01-27-634994
   uuid: 10.1101/2025.01.27.634994
   work_id: null
@@ -45169,99 +43036,6 @@ papers:
     sources:
     - lexical:electron microscopy synaptic pathology
     round: 0
-- id: 2025-10-1101-2025-03-07-642125
-  uuid: 10.1101/2025.03.07.642125
-  work_id: null
-  title: Controllability analysis of macaque structural connectome from an edge centric perspective
-  authors: Subham Dey; E. Bharti; Zhi-De Deng
-  year: 2025
-  journal: openRxiv
-  doi: 10.1101/2025.03.07.642125
-  alt_dois: []
-  in_degree: 0
-  out_degree: 4
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/ajp.22281
-  - 10.1002/hbm.22828
-  - 10.1002/jmri.27188
-  - 10.1002/mrm.27471
-  - 10.1016/j.brs.2021.10.491
-  - 10.1016/j.brs.2023.01.782
-  - 10.1016/j.cub.2017.09.020
-  - 10.1016/j.jad.2021.07.106
-  - 10.1016/j.neuroimage.2007.04.067
-  - 10.1016/j.neuroimage.2011.09.015
-  - 10.1016/j.neuroimage.2012.06.002
-  - 10.1016/j.neuroimage.2012.06.081
-  - 10.1016/j.neuroimage.2012.10.082
-  - 10.1016/j.neuroimage.2016.06.035
-  - 10.1016/j.neuroimage.2019.02.018
-  - 10.1016/j.neuroimage.2019.03.044
-  - 10.1016/j.neuroimage.2020.116684
-  - 10.1016/j.neuron.2007.10.015
-  - 10.1016/j.neuron.2011.09.006
-  - 10.1016/j.neuron.2014.06.003
-  - 10.1016/s0140-6736(08)60489-4
-  - 10.1038/nature10011
-  - 10.1038/ncomms9414
-  - 10.1038/nn.3751
-  - 10.1038/nphys4268
-  - 10.1038/s41467-017-01254-4
-  - 10.1038/s41467-017-01285-x
-  - 10.1038/s41467-019-10638-7
-  - 10.1038/s41467-021-23694-9
-  - 10.1038/s41467-023-41499-w
-  - 10.1038/s41586-023-05964-2
-  - 10.1038/s41593-020-00719-y
-  - 10.1038/s41597-019-0129-z
-  - 10.1073/pnas.1405672111
-  - 10.1073/pnas.1902300116
-  - 10.1073/pnas.2005531117
-  - 10.1093/brain/awaa270
-  - 10.1093/cercor/bhs270
-  - 10.1093/cercor/bhw198
-  - 10.1093/pnasnexus/pgad032
-  - 10.1098/rspl.1867.0055
-  - 10.1098/rstb.2001.0908
-  - 10.1098/rstb.2005.1625
-  - 10.1098/rstb.2013.0527
-  - 10.1101/2023.08.23.554519
-  - 10.1103/physreve.80.016105
-  - 10.1109/mcas.2019.2909446
-  - 10.1109/tcns.2014.2310254
-  - 10.1111/nyas.13338
-  - 10.1126/sciadv.abl5547
-  - 10.1126/sciadv.abn2293
-  - 10.1152/jn.00339.2011
-  - 10.1162/imag_a_00191
-  - 10.1162/netn_a_00307
-  - 10.1371/journal.pbio.0060159
-  - 10.1523/jneurosci.0493-16.2016
-  - 10.1523/jneurosci.2709-12.2012
-  - 10.23943/9781400890088
-  - 10.2514/3.20424
-  - 10.7551/mitpress/9780262042383.003.0012
-  - 10.7554/elife.67400
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=5,back=5,fwd=0)
-    - lexical_recent:From Cajal to Connectome and Beyond
-    round: null
 - id: 2025-10-1101-2025-04-04-647285
   uuid: 10.1101/2025.04.04.647285
   work_id: null
@@ -45768,164 +43542,6 @@ papers:
     sources:
     - lexical:Nanoconnectomic upper bound on the variability of synaptic plasticity
     round: 0
-- id: 2025-10-1101-2025-06-30-661781
-  uuid: 10.1101/2025.06.30.661781
-  work_id: null
-  title: Sex effects on gene expression across the human cerebral cortex at single cell resolution
-  authors: Alex R. DeCasien; P. Auluck; Siyuan Liu; S. Marenco; Mark R. Cookson; A. Raznahan
-  year: 2025
-  journal: openRxiv
-  doi: 10.1101/2025.06.30.661781
-  alt_dois: []
-  in_degree: 0
-  out_degree: 0
-  total_citations: 4
-  references_available: true
-  references:
-  - 10.1001/jamapsychiatry.2023.5051
-  - 10.1002/0471250953.bi1112s47
-  - 10.1002/ana.26090
-  - 10.1002/aur.2696
-  - 10.1002/hbm.25572
-  - 10.1007/s10571-025-01536-2
-  - 10.1016/j.biopsych.2020.11.023
-  - 10.1016/j.celrep.2020.107795
-  - 10.1016/j.gene.2024.148670
-  - 10.1016/j.it.2021.01.005
-  - 10.1016/j.jaac.2014.10.003
-  - 10.1016/j.mad.2023.111821
-  - 10.1016/j.molcel.2010.05.004
-  - 10.1016/j.neuroimage.2012.02.018
-  - 10.1016/j.neuron.2021.06.016
-  - 10.1016/j.neuron.2022.09.010
-  - 10.1016/j.neuron.2024.05.013
-  - 10.1016/j.nicl.2017.08.017
-  - 10.1016/j.tins.2018.06.003
-  - 10.1016/j.xgen.2023.100462
-  - 10.1016/j.xgen.2024.100589
-  - 10.1016/j.xgen.2024.100625
-  - 10.1016/s0140-6736(12)60404-8
-  - 10.1016/s1474-4422(16)00067-3
-  - 10.1016/s1474-4422(16)30293-9
-  - 10.1038/190372a0
-  - 10.1038/nature01722
-  - 10.1038/nature03479
-  - 10.1038/nature13206
-  - 10.1038/nature18933
-  - 10.1038/nature24265
-  - 10.1038/nbt.3192
-  - 10.1038/ncomms10717
-  - 10.1038/ncomms14049
-  - 10.1038/ncomms3771
-  - 10.1038/nmeth.4197
-  - 10.1038/s41467-024-54005-7
-  - 10.1038/s41559-024-02627-x
-  - 10.1038/s41586-019-1506-7
-  - 10.1038/s41586-021-03465-8
-  - 10.1038/s41586-022-04562-y
-  - 10.1038/s41588-018-0268-8
-  - 10.1038/s41588-025-02169-3
-  - 10.1038/s41591-023-02509-y
-  - 10.1038/s41592-019-0619-0
-  - 10.1038/s41592-022-01408-3
-  - 10.1038/s41592-023-01943-7
-  - 10.1038/s41593-023-01356-x
-  - 10.1038/s44161-022-00028-6
-  - 10.1073/pnas.1301602110
-  - 10.1073/pnas.1802889115
-  - 10.1073/pnas.1919091117
-  - 10.1073/pnas.2110416119
-  - 10.1073/pnas.2218478120
-  - 10.1073/pnas.87.5.1681
-  - 10.1080/02699931.2018.1454403
-  - 10.1089/omi.2011.0118
-  - 10.1093/bioinformatics/btab358
-  - 10.1093/bioinformatics/btp616
-  - 10.1093/bioinformatics/btv509
-  - 10.1093/biostatistics/kxw041
-  - 10.1093/brain/awv335
-  - 10.1093/cercor/bhad148
-  - 10.1093/gbe/evt139
-  - 10.1093/gigascience/giab008
-  - 10.1093/hmg/ddu564
-  - 10.1093/jnen/61.1.46
-  - 10.1093/nar/gkad347
-  - 10.1093/nar/gkq603
-  - 10.1093/nar/gkv007
-  - 10.1093/nar/gkv1249
-  - 10.1093/nar/gkv412
-  - 10.1097/wco.0000000000000714
-  - 10.1098/rstb.2006.1934
-  - 10.1101/2020.10.12.335331
-  - 10.1101/2020.12.14.422684
-  - 10.1101/2020.12.31.424913
-  - 10.1101/2023.06.26.546519
-  - 10.1101/2023.08.29.23294773
-  - 10.1101/2023.10.14.561800
-  - 10.1101/2024.01.26.577344
-  - 10.1101/2024.03.27.586985
-  - 10.1101/2024.07.03.601903
-  - 10.1101/2024.12.07.627362
-  - 10.1101/gr.261248.120
-  - 10.1109/34.865189
-  - 10.1111/acel.13606
-  - 10.1111/bpa.13318
-  - 10.1111/j.2517-6161.1995.tb02031.x
-  - 10.1126/science.1260419
-  - 10.1126/science.7824953
-  - 10.1126/science.aad6469
-  - 10.1126/science.aap8757
-  - 10.1126/science.aav8130
-  - 10.1126/science.aaz1776
-  - 10.1126/science.aba3066
-  - 10.1126/science.add7046
-  - 10.1126/science.adf0834
-  - 10.1126/science.adf2359
-  - 10.1134/s0006297918050139
-  - 10.1186/1471-2105-9-559
-  - 10.1186/gb-2010-11-3-r25
-  - 10.1186/gb-2013-14-11-r122
-  - 10.1186/s12859-014-0356-4
-  - 10.1186/s12859-016-1323-z
-  - 10.1186/s12864-019-5507-6
-  - 10.1186/s12957-017-1211-7
-  - 10.1186/s13059-014-0550-8
-  - 10.1186/s13059-017-1382-0
-  - 10.1186/s13059-019-1670-y
-  - 10.1186/s13059-024-03317-4
-  - 10.1186/s13293-015-0053-7
-  - 10.1186/s13293-022-00448-w
-  - 10.1371/journal.pbio.3000979
-  - 10.1371/journal.pgen.1005079
-  - 10.1371/journal.pone.0209648
-  - 10.18129/b9.bioc.alevinqc
-  - 10.18129/b9.bioc.scdblfinder
-  - 10.18129/b9.bioc.speckle
-  - 10.21203/rs.3.rs-3023302/v1
-  - 10.3389/fgene.2016.00183
-  - 10.3389/fnagi.2022.937486
-  - 10.3389/fneur.2023.1157287
-  - 10.48550/arxiv.2311.10260
-  - 10.5281/zenodo.5706430
-  - 10.7554/elife.102701
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution
-    round: null
 - id: 2025-10-1101-2025-07-16-665048
   uuid: 10.1101/2025.07.16.665048
   work_id: null
@@ -47236,7 +44852,7 @@ papers:
   doi: 10.1109/access.2026.3691604
   alt_dois: []
   in_degree: 0
-  out_degree: 2
+  out_degree: 1
   total_citations: 0
   references_available: true
   references:
@@ -47855,57 +45471,6 @@ papers:
     sources:
     - lexical:Big data in nanoscale connectomics, and the greed for training labels
     round: 0
-- id: 2025-10-1109-coginfocom66819-2025-11200858
-  uuid: 10.1109/coginfocom66819.2025.11200858
-  work_id: null
-  title: Label-Free Single-Cell Activity-Based Cell Type Classification Using Optical Resonant Waveguide
-    Grating Biosensor Data
-  authors: Bálint Béres; Robert Horvath
-  year: 2025
-  journal: 2025 IEEE 16th International Conference on Cognitive Infocommunications (CogInfoCom)
-  doi: 10.1109/coginfocom66819.2025.11200858
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1007/978-3-319-46493-0_38
-  - 10.1007/s00340-009-3719-1
-  - 10.1021/acsomega.0c05190
-  - 10.1021/acssensors.4c01139
-  - 10.1038/ncomms12471
-  - 10.1038/s41592-020-01018-x
-  - 10.1038/s41592-022-01663-4
-  - 10.1038/s41598-019-56898-7
-  - 10.1038/s41598-024-61257-2
-  - 10.1063/1.4866460
-  - 10.1109/coginfocom47531.2019.9089939
-  - 10.1109/cvpr.2016.90
-  - 10.1109/cvpr.2017.243
-  - 10.1109/embc48229.2022.9871735
-  - 10.1126/science.aba6637
-  - 10.1145/2766963
-  - 10.1364/ao.48.00b151
-  - 10.1529/biophysj.105.077818
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:cell type classification connectome
-    round: null
 - id: 2024-10-1109-coins61597-2024-10622624
   uuid: 10.1109/coins61597.2024.10622624
   work_id: null
@@ -48035,7 +45600,7 @@ papers:
   journal: 2009 IEEE Conference on Computer Vision and Pattern Recognition
   doi: 10.1109/cvpr.2009.5206848
   alt_dois: []
-  in_degree: 5
+  in_degree: 4
   out_degree: 1
   total_citations: 75564
   references_available: true
@@ -48081,7 +45646,7 @@ papers:
   journal: 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
   doi: 10.1109/cvpr.2016.90
   alt_dois: []
-  in_degree: 15
+  in_degree: 12
   out_degree: 1
   total_citations: 237420
   references_available: true
@@ -48712,8 +46277,8 @@ papers:
   journal: 2008 IEEE International Symposium on Information Theory
   doi: 10.1109/isit.2008.4595380
   alt_dois: []
-  in_degree: 1
-  out_degree: 0
+  in_degree: 2
+  out_degree: 1
   total_citations: 18
   references_available: true
   references:
@@ -49121,7 +46686,7 @@ papers:
   journal: IEEE Transactions on Pattern Analysis and Machine Intelligence
   doi: 10.1109/tpami.2004.75
   alt_dois: []
-  in_degree: 17
+  in_degree: 15
   out_degree: 1
   total_citations: 1592
   references_available: true
@@ -49570,7 +47135,7 @@ papers:
   journal: Journal of Microscopy
   doi: 10.1111/j.1365-2818.2005.01466.x
   alt_dois: []
-  in_degree: 32
+  in_degree: 30
   out_degree: 2
   total_citations: 797
   references_available: true
@@ -49909,7 +47474,7 @@ papers:
   journal: Annals of the New York Academy of Sciences
   doi: 10.1111/j.1749-6632.2010.05888.x
   alt_dois: []
-  in_degree: 10
+  in_degree: 9
   out_degree: 24
   total_citations: 1411
   references_available: true
@@ -50122,78 +47687,6 @@ papers:
     sources:
     - expansion(hits=12,year=2015,threshold=5)
     round: 1
-- id: 2026-10-1111-jmi-70123
-  uuid: 10.1111/jmi.70123
-  work_id: null
-  title: 'Tubule and microbranch variations in human dentine: A quantitative 3D study with serial block‐face
-    scanning electron microscopy'
-  authors: B. Harding; Patricia Goggin; James Thompson; Behrad Mahmoodi; Katy Rankin; P. Schneider; Richard
-    B. Cook
-  year: 2026
-  journal: Journal of Microscopy
-  doi: 10.1111/jmi.70123
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/9781118704868
-  - 10.1007/978-3-030-18305-9_32
-  - 10.1007/978-3-642-83496-7
-  - 10.1016/0003-9969(96)00008-8
-  - 10.1016/j.actbio.2017.01.052
-  - 10.1016/j.actbio.2019.06.042
-  - 10.1016/j.archoralbio.2008.03.012
-  - 10.1016/j.bone.2019.115107
-  - 10.1016/j.cmpb.2019.07.002
-  - 10.1016/j.compag.2018.06.026
-  - 10.1016/j.dental.2009.09.007
-  - 10.1016/j.dental.2016.06.021
-  - 10.1016/j.ejrad.2019.01.028
-  - 10.1016/j.expthermflusci.2018.05.016
-  - 10.1016/j.fuel.2021.121374
-  - 10.1016/j.jdent.2018.05.012
-  - 10.1016/j.media.2016.10.004
-  - 10.1016/j.powtec.2012.03.033
-  - 10.1016/s0003-9969(76)80003-9
-  - 10.1017/cbo9780511614477
-  - 10.1017/s1551929500050252
-  - 10.1038/sj.bdj.2012.1127
-  - 10.1061/9780784480779.116
-  - 10.1093/bioinformatics/btw413
-  - 10.1093/bioinformatics/btx180
-  - 10.1109/tmi.2020.3002417
-  - 10.1111/j.1365-2818.2010.03396.x
-  - 10.1111/j.1741-2358.1994.tb00114.x
-  - 10.1142/s0219519419500817
-  - 10.1159/000259530
-  - 10.1177/10454411960070020101
-  - 10.1371/journal.pone.0240928
-  - 10.3109/00016357009033132
-  - 10.3389/fnins.2022.1021311
-  - 10.3390/biomedicines10061269
-  - 10.4103/jcd.jcd_34_17
-  - 10.70675/c11a11e7zf215z4625z9e8bz0b902de8dca3
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue
-      Nanostructure
-    round: null
 - id: 2025-10-1111-jns-70019
   uuid: 10.1111/jns.70019
   work_id: null
@@ -50535,7 +48028,7 @@ papers:
   journal: Science
   doi: 10.1126/science.1065103
   alt_dois: []
-  in_degree: 22
+  in_degree: 21
   out_degree: 0
   total_citations: 2928
   references_available: true
@@ -51268,7 +48761,7 @@ papers:
   journal: Science
   doi: 10.1126/science.298.5594.824
   alt_dois: []
-  in_degree: 31
+  in_degree: 30
   out_degree: 3
   total_citations: 7522
   references_available: true
@@ -52608,7 +50101,7 @@ papers:
   journal: Journal of the ACM
   doi: 10.1145/321921.321925
   alt_dois: []
-  in_degree: 14
+  in_degree: 13
   out_degree: 0
   total_citations: 2503
   references_available: true
@@ -53141,7 +50634,7 @@ papers:
   journal: Annual Review of Psychology
   doi: 10.1146/annurev-psych-122414-033634
   alt_dois: []
-  in_degree: 9
+  in_degree: 8
   out_degree: 24
   total_citations: 1296
   references_available: true
@@ -54037,7 +51530,7 @@ papers:
   journal: The Neuroscientist
   doi: 10.1177/1073858406293182
   alt_dois: []
-  in_degree: 16
+  in_degree: 15
   out_degree: 4
   total_citations: 2641
   references_available: true
@@ -54322,96 +51815,6 @@ papers:
     - recent_provisional(links=8,back=8,fwd=0)
     - lexical_recent:The big data challenges of connectomics
     - lexical_recent:Big data in nanoscale connectomics, and the greed for training labels
-    round: null
-- id: 2025-10-1177-21580014261420882
-  uuid: 10.1177/21580014261420882
-  work_id: null
-  title: Dynamic Fingerprinting of the Human Functional Connectome
-  authors: Amin Ghaffari; Yufei Zhao; Xu Chen; J. Langley; Xiao-peng Hu
-  year: 2025
-  journal: Brain Connectivity
-  doi: 10.1177/21580014261420882
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 9
-  references_available: true
-  references:
-  - 10.1002/hbm.23150
-  - 10.1002/hbm.23890
-  - 10.1002/hbm.25394
-  - 10.1007/978-3-031-82768-6_20
-  - 10.1016/j.bandc.2014.01.018
-  - 10.1016/j.brainresbull.2025.111460
-  - 10.1016/j.intell.2017.10.002
-  - 10.1016/j.jad.2025.120106
-  - 10.1016/j.lpm.2022.104161
-  - 10.1016/j.neuroimage.2012.02.018
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuroimage.2013.05.081
-  - 10.1016/j.neuroimage.2016.02.074
-  - 10.1016/j.neuroimage.2021.118044
-  - 10.1016/j.neuroimage.2023.120021
-  - 10.1016/j.neuroimage.2024.120651
-  - 10.1016/j.nicl.2014.07.003
-  - 10.1016/j.nicl.2019.101966
-  - 10.1016/j.tins.2023.04.001
-  - 10.1038/nn.3470
-  - 10.1038/nn.4125
-  - 10.1038/nn.4135
-  - 10.1038/nn.4179
-  - 10.1038/nprot.2016.178
-  - 10.1038/s41380-024-02683-6
-  - 10.1038/s41598-017-05425-7
-  - 10.1038/s42003-022-03185-3
-  - 10.1038/s42003-023-05073-w
-  - 10.1038/s42003-025-07470-9
-  - 10.1073/pnas.1113148109
-  - 10.1089/brain.2015.0398
-  - 10.1089/brain.2022.0031
-  - 10.1093/brain/awz192
-  - 10.1093/cercor/bhab041
-  - 10.1093/cercor/bhad542
-  - 10.1093/cercor/bhl179
-  - 10.1093/cercor/bhs352
-  - 10.1093/gigascience/giae009
-  - 10.1109/cvprw63382.2024.00496
-  - 10.1109/isbi60581.2025.10981035
-  - 10.1109/msp.2015.2478915
-  - 10.1109/ner.2013.6695998
-  - 10.1111/cns.13387
-  - 10.1111/cns.70029
-  - 10.1126/sciadv.abj0751
-  - 10.1162/imag_a_00440
-  - 10.1162/netn_a_00320
-  - 10.1523/jneurosci.4648-14.2015
-  - 10.1523/jneurosci.5072-13.2014
-  - 10.1523/jneurosci.5587-06.2007
-  - 10.31083/j.jin2106170
-  - 10.3389/fnagi.2021.711009
-  - 10.3389/fnagi.2025.1617191
-  - 10.3389/fnins.2019.00434
-  - 10.3389/fnins.2021.651574
-  - 10.3389/fnins.2025.1697908
-  - 10.7554/elife.77462
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
     round: null
 - id: 2026-10-1177-21580014261479958
   uuid: 10.1177/21580014261479958
@@ -54752,78 +52155,6 @@ papers:
     sources:
     - lexical:Big data in nanoscale connectomics, and the greed for training labels
     round: 0
-- id: 2025-10-1186-s40537-025-01075-z
-  uuid: 10.1186/s40537-025-01075-z
-  work_id: null
-  title: Supervised contrastive pre-training models for mammography screening
-  authors: Zhenjie Cao; Zhuo Deng; Zhicheng Yang; Jie Ma; Lan Ma
-  year: 2025
-  journal: Journal of Big Data
-  doi: 10.1186/s40537-025-01075-z
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 9
-  references_available: true
-  references:
-  - 10.1001/jamaoncol.2020.3186
-  - 10.1007/978-3-030-32251-9_42
-  - 10.1007/978-3-030-59716-0_54
-  - 10.1007/978-3-030-59725-2_24
-  - 10.1007/978-3-031-16437-8_3
-  - 10.1007/978-3-031-43901-8_69
-  - 10.1007/978-3-031-43904-9_35
-  - 10.1007/978-3-031-43904-9_75
-  - 10.1007/978-3-031-43987-2_9
-  - 10.1007/s00330-019-06186-9
-  - 10.1007/s00330-020-07165-1
-  - 10.1016/j.asoc.2023.111170
-  - 10.1016/j.media.2020.101908
-  - 10.1038/s41586-019-1799-6
-  - 10.1038/s41598-021-89214-3
-  - 10.1038/sdata.2017.177
-  - 10.1109/cvpr.2006.100
-  - 10.1109/cvpr.2016.90
-  - 10.1109/cvpr42600.2020.00975
-  - 10.1109/cvpr52688.2022.01167
-  - 10.1109/cvpr52729.2023.01895
-  - 10.1109/iccv48922.2021.00346
-  - 10.1109/iccv48922.2021.00986
-  - 10.1109/jbhi.2020.3023246
-  - 10.1109/sc41405.2020.00024
-  - 10.1109/tmi.2019.2945514
-  - 10.1109/tnnls.2023.3290038
-  - 10.1126/scitranslmed.aba4373
-  - 10.1148/radiol.2016151174
-  - 10.1148/radiol.2016161174
-  - 10.1148/radiol.2019182716
-  - 10.1148/radiol.2019182908
-  - 10.1148/radiol.221843
-  - 10.1201/9781482267563
-  - 10.3929/ethz-b-000443425
-  - 10.48550/arxiv.2205.09723
-  - 10.48550/arxiv.2208.06066
-  - 10.48550/arxiv.2304.08486
-  - 10.48550/arxiv.2307.03942
-  - 10.7326/m15-0971
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - lexical_recent:Big data in nanoscale connectomics, and the greed for training labels
-    round: null
 - id: 2004-10-1201-9780203021941-22
   uuid: 10.1201/9780203021941-22
   work_id: null
@@ -55993,7 +53324,7 @@ papers:
   journal: PLoS Biology
   doi: 10.1371/journal.pbio.0020329
   alt_dois: []
-  in_degree: 94
+  in_degree: 91
   out_degree: 2
   total_citations: 1627
   references_available: true
@@ -56065,7 +53396,7 @@ papers:
   journal: PLoS Biology
   doi: 10.1371/journal.pbio.0020369
   alt_dois: []
-  in_degree: 16
+  in_degree: 15
   out_degree: 5
   total_citations: 840
   references_available: true
@@ -56148,7 +53479,7 @@ papers:
   journal: PLoS Biology
   doi: 10.1371/journal.pbio.0030068
   alt_dois: []
-  in_degree: 34
+  in_degree: 33
   out_degree: 8
   total_citations: 1605
   references_available: true
@@ -56252,7 +53583,7 @@ papers:
   journal: PLoS Biology
   doi: 10.1371/journal.pbio.0060159
   alt_dois: []
-  in_degree: 38
+  in_degree: 36
   out_degree: 9
   total_citations: 4341
   references_available: true
@@ -56658,7 +53989,7 @@ papers:
   journal: PLOS Biology
   doi: 10.1371/journal.pbio.1002340
   alt_dois: []
-  in_degree: 10
+  in_degree: 8
   out_degree: 2
   total_citations: 424
   references_available: true
@@ -56728,7 +54059,7 @@ papers:
   journal: PLOS Biology
   doi: 10.1371/journal.pbio.1002512
   alt_dois: []
-  in_degree: 5
+  in_degree: 4
   out_degree: 12
   total_citations: 218
   references_available: true
@@ -56839,7 +54170,7 @@ papers:
   journal: PLoS Computational Biology
   doi: 10.1371/journal.pcbi.0010042
   alt_dois: []
-  in_degree: 69
+  in_degree: 68
   out_degree: 3
   total_citations: 3308
   references_available: true
@@ -56945,7 +54276,7 @@ papers:
   journal: PLoS Computational Biology
   doi: 10.1371/journal.pcbi.0030017
   alt_dois: []
-  in_degree: 15
+  in_degree: 14
   out_degree: 4
   total_citations: 2528
   references_available: true
@@ -57033,7 +54364,7 @@ papers:
   journal: PLoS Computational Biology
   doi: 10.1371/journal.pcbi.1000334
   alt_dois: []
-  in_degree: 18
+  in_degree: 17
   out_degree: 8
   total_citations: 277
   references_available: true
@@ -57195,7 +54526,7 @@ papers:
   journal: PLoS Computational Biology
   doi: 10.1371/journal.pcbi.1000748
   alt_dois: []
-  in_degree: 14
+  in_degree: 13
   out_degree: 6
   total_citations: 409
   references_available: true
@@ -57463,7 +54794,7 @@ papers:
   doi: 10.1371/journal.pcbi.1005989
   alt_dois:
   - 10.1101/207134
-  in_degree: 2
+  in_degree: 1
   out_degree: 36
   total_citations: 80
   references_available: true
@@ -58106,7 +55437,7 @@ papers:
   journal: PLoS ONE
   doi: 10.1371/journal.pone.0068910
   alt_dois: []
-  in_degree: 6
+  in_degree: 5
   out_degree: 13
   total_citations: 4098
   references_available: true
@@ -59627,7 +56958,7 @@ papers:
   journal: Journal of Neuroscience
   doi: 10.1523/jneurosci.1448-13.2013
   alt_dois: []
-  in_degree: 8
+  in_degree: 7
   out_degree: 0
   total_citations: 151
   references_available: false
@@ -60082,7 +57413,7 @@ papers:
   journal: The Journal of Neuroscience
   doi: 10.1523/jneurosci.3539-11.2011
   alt_dois: []
-  in_degree: 28
+  in_degree: 26
   out_degree: 12
   total_citations: 2283
   references_available: true
@@ -60248,7 +57579,7 @@ papers:
   journal: The Journal of Neuroscience
   doi: 10.1523/jneurosci.3874-05.2006
   alt_dois: []
-  in_degree: 25
+  in_degree: 24
   out_degree: 3
   total_citations: 2441
   references_available: true
@@ -61469,60 +58800,6 @@ papers:
     - 'lexical:The Human Connectome: A Structural Description of the Human Brain'
     - lexical:The connectome of an insect brain
     round: 0
-- id: 2025-10-21105-joss-07061
-  uuid: 10.21105/joss.07061
-  work_id: null
-  title: 'Giga Connectome: a BIDS-app for time series and functional connectome extraction'
-  authors: Hao-ting Wang; Rémi Gau; Natasha Clarke; Quentin Dessain; Lune Bellec
-  year: 2025
-  journal: Journal of Open Source Software
-  doi: 10.21105/joss.07061
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 1
-  references_available: true
-  references:
-  - 10.1002/hbm.25829
-  - 10.1016/j.biopsych.2006.06.027
-  - 10.1016/j.neuroimage.2006.01.021
-  - 10.1016/j.neuroimage.2020.117126
-  - 10.1016/j.schres.2005.11.020
-  - 10.1038/mp.2013.78
-  - 10.1038/s41592-018-0235-4
-  - 10.1038/s41592-022-01681-2
-  - 10.1038/sdata.2016.44
-  - 10.1089/brain.2012.0073
-  - 10.1093/cercor/bhx179
-  - 10.1101/2021.12.01.470790
-  - 10.1101/2023.11.20.567926
-  - 10.1176/appi.ajp.162.7.1256
-  - 10.12688/mniopenres.12767.2
-  - 10.1371/journal.pcbi.1005209
-  - 10.1371/journal.pcbi.1011942
-  - 10.1371/journal.pmed.1001779
-  - 10.17605/osf.io/t7jkz
-  - 10.3389/fnsys.2012.00062
-  - 10.5281/zenodo.8397156
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:DotMotif: an open-source tool for connectome subgraph isomorphism search and graph
-      queries'
-    round: null
 - id: 2024-10-21203-rs-3-rs-4809794-v1
   uuid: 10.21203/rs.3.rs-4809794/v1
   work_id: null
@@ -61861,70 +59138,6 @@ papers:
     sources:
     - lexical:Crowdsourcing the creation of image segmentation algorithms for connectomics
     round: 0
-- id: 2025-10-2139-ssrn-5384738
-  uuid: 10.2139/ssrn.5384738
-  work_id: null
-  title: Community Detection in Complex Networks Using Vertex Cover and an Adaptive Community Transformer
-    Engine
-  authors: Fahimeh Dabaghi‐Zarandi; Asieh Ghanbarpour
-  year: 2025
-  journal: Elsevier BV
-  doi: 10.2139/ssrn.5384738
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/9780470253489
-  - 10.1002/j.1538-7305.1970.tb01770.x
-  - 10.1007/s00265-003-0651-y
-  - 10.1007/s10115-013-0644-8
-  - 10.1007/s11222-007-9033-z
-  - 10.1007/s12652-018-1159-7
-  - 10.1007/s12652-020-01760-2
-  - 10.1016/0378-8733(83)90021-7
-  - 10.1016/j.asoc.2016.05.028
-  - 10.1016/j.asoc.2021.107746
-  - 10.1016/j.ins.2023.02.090
-  - 10.1016/j.jnca.2022.103492
-  - 10.1016/j.jnca.2024.104070
-  - 10.1016/j.physa.2018.02.212
-  - 10.1016/j.physa.2020.125420
-  - 10.1016/j.physa.2022.127314
-  - 10.1016/j.physrep.2016.09.002
-  - 10.1073/pnas.0706851105
-  - 10.1073/pnas.122653799
-  - 10.1086/jar.33.4.3629752
-  - 10.1093/comnet/cnae001
-  - 10.1103/physreve.78.046110
-  - 10.1126/science.1184819
-  - 10.1145/1134271.1134277
-  - 10.1145/1376616.1376675
-  - 10.1145/1921632.1921638
-  - 10.1145/2488388.2488483
-  - 10.1145/276675.276685
-  - 10.14778/1687627.1687709
-  - 10.1609/aimag.v29i3.2157
-  - 10.3390/inventions5010010
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - 'lexical_recent:Community detection in networks: A user guide'
-    round: null
 - id: 2026-10-2139-ssrn-6127005
   uuid: 10.2139/ssrn.6127005
   work_id: null
@@ -61980,62 +59193,6 @@ papers:
     - lexical_recent:Why not connectomics?
     - lexical_recent:Crowdsourcing the creation of image segmentation algorithms for connectomics
     - lexical_recent:neuPrint EM connectomics
-    round: null
-- id: 2026-10-2139-ssrn-6299395
-  uuid: 10.2139/ssrn.6299395
-  work_id: null
-  title: Serial Block-Face Scanning Electron Microscopy sample preparation methods for imaging non-conductive
-    protein fibres
-  authors: G Rütter; Niki Hazelton; Mihnea Bostina; Marina Richena; Duane P. Harland
-  year: 2026
-  journal: Elsevier BV
-  doi: 10.2139/ssrn.6299395
-  alt_dois: []
-  in_degree: 0
-  out_degree: 4
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/jmor.10893
-  - 10.1002/jor.25961
-  - 10.1002/prot.26289
-  - 10.1006/jsbi.1996.0013
-  - 10.1016/j.cub.2022.03.066
-  - 10.1016/j.jsb.2025.108214
-  - 10.1016/j.micron.2023.103517
-  - 10.1016/j.polymertesting.2022.107645
-  - 10.1016/j.tice.2018.08.011
-  - 10.1016/j.ultramic.2016.01.005
-  - 10.1038/nmeth.2019
-  - 10.1046/j.1365-2818.1996.70346.x
-  - 10.1071/bi9840237
-  - 10.1080/00405009908690618
-  - 10.1111/j.1365-2818.2011.03493.x
-  - 10.1242/jeb.172312
-  - 10.1371/journal.pbio.0020329
-  - 10.1371/journal.pbio.1002340
-  - 10.1371/journal.pone.0224434
-  - 10.1515/9781400865024
-  - 10.3791/55031
-  - 10.4028/www.scientific.net/kem.671.88
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=4,back=4,fwd=0)
-    - lexical_recent:Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue
-      Nanostructure
     round: null
 - id: 2026-10-2139-ssrn-6712458
   uuid: 10.2139/ssrn.6712458
@@ -63196,41 +60353,6 @@ papers:
     sources:
     - lexical:The structure of the nervous system of the nematode Caenorhabditis elegans
     round: 0
-- id: 2026-10-32614-cran-package-sparsecommunity
-  uuid: 10.32614/cran.package.sparsecommunity
-  work_id: null
-  title: 'sparsecommunity: Spectral Community Detection for Sparse Networks'
-  authors: Neil Hwang
-  year: 2026
-  journal: 'CRAN: Contributed Packages'
-  doi: 10.32614/cran.package.sparsecommunity
-  alt_dois: []
-  in_degree: 0
-  out_degree: 1
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1073/pnas.122653799
-  - 10.1080/01621459.2023.2223793
-  - 10.1214/14-aos1274
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:Community detection in networks: A user guide'
-    round: null
 - id: 2020-10-32657-10356-144674
   uuid: 10.32657/10356/144674
   work_id: null
@@ -67756,74 +64878,6 @@ papers:
     sources:
     - lexical:Crowdsourcing the creation of image segmentation algorithms for connectomics
     round: 0
-- id: 2026-10-3390-a19040303
-  uuid: 10.3390/a19040303
-  work_id: null
-  title: Research on Medical Image Segmentation Based on Frequency-Domain Enhancement and Edge Awareness
-  authors: Jiamin Li; Yazhi Liu; Wei Li
-  year: 2026
-  journal: Algorithms
-  doi: 10.3390/a19040303
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1007/978-3-030-87193-2_2
-  - 10.1007/978-3-031-25066-8_9
-  - 10.1007/978-3-031-43901-8_32
-  - 10.1007/978-3-319-24574-4_28
-  - 10.1007/s10278-024-00981-7
-  - 10.1007/s11548-013-0926-3
-  - 10.1007/s41095-022-0274-8
-  - 10.1016/j.bspc.2023.104791
-  - 10.1016/j.bspc.2023.105330
-  - 10.1016/j.bspc.2024.106704
-  - 10.1016/j.bspc.2025.108432
-  - 10.1016/j.bspc.2025.108515
-  - 10.1016/j.compbiomed.2023.107567
-  - 10.1016/j.compbiomed.2024.108184
-  - 10.1016/j.compbiomed.2024.108265
-  - 10.1016/j.compmedimag.2015.02.007
-  - 10.1016/j.heliyon.2024.e33655
-  - 10.1016/j.inffus.2024.102634
-  - 10.1016/j.neucom.2024.128740
-  - 10.1016/j.patcog.2022.109228
-  - 10.1016/j.patcog.2024.110812
-  - 10.1038/s41592-020-01008-z
-  - 10.1049/ipr2.12419
-  - 10.1109/cvpr.2015.7298965
-  - 10.1109/cvpr.2016.90
-  - 10.1109/cvpr42600.2020.01155
-  - 10.1109/cvpr52733.2024.01091
-  - 10.1109/icassp40776.2020.9053405
-  - 10.1109/iccv48922.2021.00061
-  - 10.1109/jtehm.2023.3262841
-  - 10.1109/smartindustrycon61328.2024.10515730
-  - 10.1109/tcsvt.2023.3348598
-  - 10.1109/tmi.2020.3035253
-  - 10.1109/wacv51458.2022.00181
-  - 10.1109/wacv56688.2023.00614
-  - 10.1109/wacv57701.2024.00780
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:Crowdsourcing the creation of image segmentation algorithms for connectomics
-    round: null
 - id: 2017-10-3390-ht6010001
   uuid: 10.3390/ht6010001
   work_id: null
@@ -69277,55 +66331,6 @@ papers:
     sources:
     - lexical:Big data in nanoscale connectomics, and the greed for training labels
     round: 0
-- id: 2026-10-5220-0014468900004052
-  uuid: 10.5220/0014468900004052
-  work_id: null
-  title: Smart Cuckoo Search Algorithm for Community Detection in Social Networks
-  authors: Randa Boukabene; F. Tayeb; Narimene Dakiche
-  year: 2026
-  journal: Proceedings of the 18th International Conference on Agents and Artificial Intelligence
-  doi: 10.5220/0014468900004052
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1007/s42979-025-03972-9
-  - 10.1016/j.swevo.2021.100885
-  - 10.1073/pnas.122653799
-  - 10.1088/1742-5468/2005/09/p09008
-  - 10.1088/1742-5468/2008/10/p10008
-  - 10.1103/physreve.49.4677
-  - 10.1103/physreve.69.026113
-  - 10.1103/physreve.78.046110
-  - 10.1109/asonam55673.2022.10068713
-  - 10.1109/cec.2019.8789897
-  - 10.1109/tai.2025.3586828
-  - 10.1145/2623330.2623732
-  - 10.1145/2939672.2939754
-  - 10.1145/3366423.3380214
-  - 10.1504/ijmmno.2010.035430
-  - 10.2139/ssrn.4391362
-  - 10.5220/0012202000003584
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=3,back=3,fwd=0)
-    - 'lexical_recent:Community detection in networks: A user guide'
-    round: null
 - id: 2011-10-5244-c-25-115
   uuid: 10.5244/c.25.115
   work_id: null
@@ -72108,71 +69113,6 @@ papers:
     - lexical_recent:A connectome and analysis of the adult Drosophila central brain
     - lexical_recent:A connectome is not enough - what is still needed to understand the brain of Drosophila?
     round: null
-- id: 2026-10-64898-2026-02-27-708665
-  uuid: 10.64898/2026.02.27.708665
-  work_id: null
-  title: From local motifs to global dynamical stability in the mouse brain connectome
-  authors: Yuze Liu; Yina Wei; Hanchuan Peng
-  year: 2026
-  journal: openRxiv
-  doi: 10.64898/2026.02.27.708665
-  alt_dois: []
-  in_degree: 0
-  out_degree: 15
-  total_citations: 1
-  references_available: true
-  references:
-  - 10.1016/0378-8733(83)90021-7
-  - 10.1016/j.cell.2015.09.029
-  - 10.1016/j.celrep.2024.113871
-  - 10.1016/j.conb.2019.06.003
-  - 10.1016/j.neuroimage.2009.10.003
-  - 10.1016/j.tics.2013.09.012
-  - 10.1038/nature09802
-  - 10.1038/nn.4502
-  - 10.1038/nrg2102
-  - 10.1038/nrn2575
-  - 10.1038/s41467-024-44900-4
-  - 10.1038/s41586-025-08790-w
-  - 10.1038/s41592-021-01330-0
-  - 10.1038/s41592-025-02784-2
-  - 10.1038/s42256-021-00376-1
-  - 10.1090/s0002-9947-1984-0756039-5
-  - 10.1101/2020.12.08.413955
-  - 10.1101/2023.08.07.552361
-  - 10.1101/2025.09.24.678310
-  - 10.1126/science.286.5439.509
-  - 10.1126/science.298.5594.824
-  - 10.1371/journal.pbio.0020369
-  - 10.1371/journal.pbio.0030068
-  - 10.1515/9781400841356.349
-  - 10.1515/9781400841356.38
-  - 10.1523/jneurosci.3539-11.2011
-  - 10.3389/fams.2024.1221051
-  - 10.3389/fncom.2017.00048
-  - 10.3389/fnins.2010.00200
-  - 10.3389/fnins.2011.00083
-  - 10.7554/elife.57443
-  - 10.7554/elife.66039
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=15,back=15,fwd=0)
-    - lexical_recent:The connectome of an insect brain
-    - lexical_recent:From Cajal to Connectome and Beyond
-    round: null
 - id: 2026-10-64898-2026-04-16-719061
   uuid: 10.64898/2026.04.16.719061
   work_id: null
@@ -72512,115 +69452,6 @@ papers:
     sources:
     - lexical:cell type classification connectome
     round: 0
-- id: 2026-10-64898-2026-06-16-732559
-  uuid: 10.64898/2026.06.16.732559
-  work_id: null
-  title: Directed Human Structural Connectome Reveals Hierarchical Organization and Shapes Large-Scale
-    Brain Dynamics
-  authors: Nan Huang; Huifang E. Wang; P. Triebkorn; Claudia Wheeler-Kingshott; Maciej Jedyank; Olivier
-    David; A. Destexhe; E. D’Angelo; Nigel P. Pedersen; V. Jirsa
-  year: 2026
-  journal: openRxiv
-  doi: 10.64898/2026.06.16.732559
-  alt_dois: []
-  in_degree: 0
-  out_degree: 5
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.22902
-  - 10.1007/s00429-015-0999-6
-  - 10.1007/s00429-021-02421-6
-  - 10.1007/s12021-011-9109-y
-  - 10.1007/s41109-018-0076-1
-  - 10.1016/j.celrep.2024.114028
-  - 10.1016/j.neuroimage.2007.04.067
-  - 10.1016/j.neuroimage.2011.11.050
-  - 10.1016/j.neuroimage.2012.01.021
-  - 10.1016/j.neuroimage.2012.02.018
-  - 10.1016/j.neuroimage.2012.06.002
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuroimage.2014.04.074
-  - 10.1016/j.neuroimage.2016.04.049
-  - 10.1016/j.neuroimage.2018.05.027
-  - 10.1016/j.neuroimage.2018.07.039
-  - 10.1016/j.neuroimage.2018.10.006
-  - 10.1016/j.neuroimage.2019.116137
-  - 10.1016/j.neuroimage.2020.116923
-  - 10.1016/j.neuroimage.2021.118759
-  - 10.1016/j.neuron.2011.10.020
-  - 10.1016/j.neuron.2012.10.038
-  - 10.1016/j.neuron.2017.05.025
-  - 10.1016/j.neuron.2023.01.027
-  - 10.1016/j.scib.2024.03.031
-  - 10.1016/j.tics.2012.10.011
-  - 10.1016/j.tins.2022.08.007
-  - 10.1038/nature18933
-  - 10.1038/nn.3862
-  - 10.1038/nrn2113
-  - 10.1038/s41467-017-01285-x
-  - 10.1038/s41467-021-26704-y
-  - 10.1038/s41583-019-0189-2
-  - 10.1038/s41583-020-0262-x
-  - 10.1038/s41583-023-00718-5
-  - 10.1038/s41586-019-1716-z
-  - 10.1038/s41593-022-01224-0
-  - 10.1038/s42003-021-02483-6
-  - 10.1038/s44220-024-00298-y
-  - 10.1073/pnas.1008054107
-  - 10.1073/pnas.1405672111
-  - 10.1073/pnas.1608282113
-  - 10.1073/pnas.1906694116
-  - 10.1089/brain.2011.0038
-  - 10.1093/brain/121.6.1013
-  - 10.1093/brain/awab362
-  - 10.1093/cercor/bhaf292
-  - 10.1093/cercor/bhs270
-  - 10.1093/nsr/nwae079
-  - 10.1098/rsos.201138
-  - 10.1101/2020.10.28.359943
-  - 10.1101/2021.11.23.469706
-  - 10.1101/2022.07.05.498875
-  - 10.1101/2022.10.18.512488
-  - 10.1101/551739
-  - 10.1103/physrevx.5.021028
-  - 10.1109/rbme.2025.3562951
-  - 10.1126/sciadv.aau9403
-  - 10.1126/sciadv.abf4752
-  - 10.1126/sciadv.ade6049
-  - 10.1162/netn_a_00040
-  - 10.1371/journal.pbio.3000284
-  - 10.1371/journal.pcbi.1003529
-  - 10.1371/journal.pone.0030468
-  - 10.1523/jneurosci.2419-07.2007
-  - 10.1523/jneurosci.3684-10.2011
-  - 10.1523/jneurosci.4229-13.2014
-  - 10.1523/jneurosci.4289-13.2014
-  - 10.3389/fninf.2012.00030
-  - 10.4108/icst.bict.2014.257876
-  - 10.7554/elife.35237
-  - 10.7554/elife.72136
-  - 10.7554/elife.94902
-  - 10.7554/elife.94902.3
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=5,back=5,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    round: null
 - id: 2026-10-64898-2026-06-30-735468
   uuid: 10.64898/2026.06.30.735468
   work_id: null
@@ -72683,66 +69514,6 @@ papers:
     sources:
     - lexical:From Cajal to Connectome and Beyond
     round: 0
-- id: 2026-10-64898-2026-07-24-740595
-  uuid: 10.64898/2026.07.24.740595
-  work_id: null
-  title: Neural manifold connectomics reveals multiregime functional connectivity
-  authors: P. Velidi; Enrico Amico; F. Nathoo; Michelle F. Miranda
-  year: 2026
-  journal: openRxiv
-  doi: 10.64898/2026.07.24.740595
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.20307
-  - 10.1016/j.jneumeth.2022.109629
-  - 10.1016/j.neuroimage.2010.10.051
-  - 10.1016/j.neuroimage.2013.04.083
-  - 10.1016/j.neuroimage.2013.04.127
-  - 10.1016/j.neuroimage.2013.05.041
-  - 10.1016/j.neuron.2017.05.025
-  - 10.1038/nn.3776
-  - 10.1038/nn.4135
-  - 10.1038/nn.4478
-  - 10.1038/s41586-022-04492-9
-  - 10.1038/s41593-018-0312-0
-  - 10.1038/s41593-025-02031-z
-  - 10.1038/s41598-018-25089-1
-  - 10.1038/s42003-024-06829-8
-  - 10.1038/s44220-026-00657-x
-  - 10.1093/cercor/bhx179
-  - 10.1101/2020.10.09.332635
-  - 10.1109/msp.2025.3615296
-  - 10.1109/tnse.2018.2869862
-  - 10.1117/12.811369
-  - 10.1152/jn.00411.2021
-  - 10.1162/netn_a_00329
-  - 10.2307/2347233
-  - 10.31887/dcns.2016.18.3/efinn
-  - 10.3389/fncel.2025.1537462
-  - 10.3390/e24030390
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:Why not connectomics?
-    - lexical_recent:neuPrint EM connectomics
-    round: null
 - id: 2026-10-64898-2026-07-28-741281
   uuid: 10.64898/2026.07.28.741281
   work_id: null
@@ -72825,88 +69596,6 @@ papers:
     sources:
     - recent_provisional(links=9,back=9,fwd=0)
     - lexical_recent:comparative connectomics mouse macaque human
-    round: null
-- id: 2026-10-64898-2026-08-08-743682
-  uuid: 10.64898/2026.08.08.743682
-  work_id: null
-  title: 'Ageing conserves and redistributes local geometry in the human structural connectome: an Ollivier-Ricci
-    curvature analysis across the adult lifespan'
-  authors: R. Debona; R. Walz
-  year: 2026
-  journal: openRxiv
-  doi: 10.64898/2026.08.08.743682
-  alt_dois: []
-  in_degree: 0
-  out_degree: 0
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/hbm.24750
-  - 10.1002/hbm.70257
-  - 10.1002/mrm.10308
-  - 10.1002/mrm.26054
-  - 10.1007/s00454-013-9558-1
-  - 10.1007/s11357-025-01773-9
-  - 10.1016/j.jfa.2008.11.001
-  - 10.1016/j.neuroimage.2012.01.021
-  - 10.1016/j.neuroimage.2012.06.005
-  - 10.1016/j.neuroimage.2014.07.061
-  - 10.1016/j.neuroimage.2014.07.067
-  - 10.1016/j.neuroimage.2015.06.092
-  - 10.1016/j.neuroimage.2015.09.018
-  - 10.1016/j.neuroimage.2016.08.016
-  - 10.1016/j.neuroimage.2016.09.053
-  - 10.1016/j.neuroimage.2017.02.005
-  - 10.1016/j.neuroimage.2018.10.029
-  - 10.1016/j.neuroimage.2020.116680
-  - 10.1016/j.neuroimage.2021.118052
-  - 10.1016/j.neuron.2010.02.005
-  - 10.1016/j.tics.2019.04.012
-  - 10.1016/s0166-4328(01)00297-2
-  - 10.1037/0033-2909.120.2.272
-  - 10.1037/0882-7974.17.1.85
-  - 10.1038/s41467-017-01285-x
-  - 10.1038/s41467-019-12915-x
-  - 10.1038/s41598-020-67474-9
-  - 10.1038/s41598-021-87587-z
-  - 10.1038/s41598-022-12171-y
-  - 10.1038/s42003-020-0794-7
-  - 10.1073/pnas.1415122111
-  - 10.1073/pnas.1608282113
-  - 10.1093/cercor/bhu012
-  - 10.1093/cercor/bhx161
-  - 10.1093/cercor/bhx179
-  - 10.1093/cercor/bhx249
-  - 10.1101/2024.01.20.576373
-  - 10.1109/tmi.2010.2046908
-  - 10.1111/j.2517-6161.1995.tb02031.x
-  - 10.1152/jn.00338.2011
-  - 10.1186/s12883-014-0204-1
-  - 10.1371/journal.pone.0236418
-  - 10.1523/jneurosci.2308-09.2009
-  - 10.3389/fnagi.2018.00410
-  - 10.3389/fnagi.2023.1120846
-  - 10.5281/zenodo.21771265
-  - 10.64898/2026.06.14.732211
-  - 10.64898/2026.07.24.740420
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=1,back=1,fwd=0)
-    - 'lexical_recent:The Human Connectome: A Structural Description of the Human Brain'
-    - lexical_recent:A connectome and analysis of the adult Drosophila central brain
     round: null
 - id: unk-10-70675-119b8c81zb032z462fz9577zf223607fc499
   uuid: 10.70675/119b8c81zb032z462fz9577zf223607fc499
@@ -73223,111 +69912,6 @@ papers:
     sources:
     - 'lexical:The Human Connectome: A Structural Description of the Human Brain'
     round: 0
-- id: 2025-10-71161-ivb-144-4-2025-00044
-  uuid: 10.71161/ivb.144.4.2025.00044
-  work_id: null
-  title: Embryonic mesoderm in amphioxus, shown by serial block-face scanning electron microscopy, includes
-    likely lateral plate
-  authors: Nicholas D. Holland; Linda Z. Holland; Stacy L. Feinberg; Michael Schubert; M. Bozzo
-  year: 2025
-  journal: Invertebrate Biology
-  doi: 10.71161/ivb.144.4.2025.00044
-  alt_dois: []
-  in_degree: 0
-  out_degree: 2
-  total_citations: 0
-  references_available: true
-  references:
-  - 10.1002/aja.1000310104
-  - 10.1002/aja.1001930304
-  - 10.1002/dvg.20450
-  - 10.1002/gene.1021
-  - 10.1002/jmor.1050080306
-  - 10.1002/jmor.1050540103
-  - 10.1006/dbio.1997.8834
-  - 10.1006/dbio.2001.0460
-  - 10.1007/978-1-0716-0974-3_1
-  - 10.1007/bf00319281
-  - 10.1007/bf00326561
-  - 10.1007/bf02933808
-  - 10.1007/bf02933935
-  - 10.1007/s00427-004-0433-1
-  - 10.1007/s00427-008-0257-5
-  - 10.1007/s004270050083
-  - 10.1007/s12064-018-0260-y
-  - 10.1016/bs.mie.2020.03.007
-  - 10.1016/j.celrep.2022.110979
-  - 10.1016/j.devcel.2004.08.008
-  - 10.1016/j.gep.2025.119397
-  - 10.1016/j.ydbio.2004.07.010
-  - 10.1016/j.ydbio.2011.02.014
-  - 10.1016/j.ydbio.2011.08.003
-  - 10.1016/j.ydbio.2012.11.015
-  - 10.1016/j.ydbio.2024.01.003
-  - 10.1017/s0080456800029938
-  - 10.1017/s1431927610055170
-  - 10.1038/222087a0
-  - 10.1038/nature13414
-  - 10.1038/nature14435
-  - 10.1038/s41467-019-11561-7
-  - 10.1038/s41467-024-48774-4
-  - 10.1038/s41467-024-52938-7
-  - 10.1038/s41559-019-0933-z
-  - 10.1038/s41559-024-02469-7
-  - 10.1038/sdata.2016.100
-  - 10.1046/j.1463-6395.1999.20007.x
-  - 10.1046/j.1525-142x.2000.00073.x
-  - 10.1073/pnas.1901732116
-  - 10.1083/jcb.12.3.646
-  - 10.1086/733426
-  - 10.1093/gbe/evu212
-  - 10.1093/zoolinnean/zlad095
-  - 10.1101/2020.07.08.193813
-  - 10.1111/j.1365-2818.2005.01466.x
-  - 10.1111/j.1525-142x.2006.00085.x
-  - 10.1126/science.51.1312.190-a
-  - 10.1159/000068214
-  - 10.1159/000521966
-  - 10.1186/s13227-015-0007-5
-  - 10.1186/s13227-018-0104-3
-  - 10.1186/s13227-020-00167-6
-  - 10.1242/dev.126.4.827
-  - 10.1242/dev.175059
-  - 10.1242/dev.199430
-  - 10.1242/dev.200252
-  - 10.1371/journal.pbio.0020329
-  - 10.1371/journal.pone.0004132
-  - 10.1387/ijdb.140148gb
-  - 10.1387/ijdb.170114ph
-  - 10.3389/fcell.2021.607057
-  - 10.3389/fcell.2021.668006
-  - 10.3389/fcell.2024.1363361
-  - 10.3389/fnins.2022.812223
-  - 10.5962/bhl.title.140340
-  - 10.5962/bhl.title.155401
-  - 10.5962/bhl.title.155406
-  - 10.5962/bhl.title.159385
-  - 10.5962/bhl.title.3759
-  - 10.7150/ijbs.2.73
-  provisional: true
-  dimension: null
-  role: null
-  reading_phase: null
-  inclusion_role: null
-  era: null
-  k_core: null
-  annotation_status: provisional_recency
-  ocar: null
-  plain_language_summary: null
-  summaries: null
-  tags: []
-  streams: null
-  provenance:
-    sources:
-    - recent_provisional(links=2,back=2,fwd=0)
-    - lexical_recent:Serial Block-Face Scanning Electron Microscopy to Reconstruct Three-Dimensional Tissue
-      Nanostructure
-    round: null
 - id: 2020-10-71465-ajbd18
   uuid: 10.71465/ajbd18
   work_id: null
@@ -75675,7 +72259,7 @@ papers:
   doi: 10.7554/elife.57443
   alt_dois:
   - 10.1101/2020.01.21.911859
-  in_degree: 47
+  in_degree: 46
   out_degree: 35
   total_citations: 902
   references_available: true
@@ -76402,7 +72986,7 @@ papers:
   journal: eLife
   doi: 10.7554/elife.72136
   alt_dois: []
-  in_degree: 5
+  in_degree: 4
   out_degree: 9
   total_citations: 92
   references_available: true

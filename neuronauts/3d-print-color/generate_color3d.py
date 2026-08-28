@@ -406,15 +406,28 @@ def verify_connected(parts, margin=0.5, min_volume=0.15):
 
 
 def as_materialed(mesh, name):
-    """Copy of `mesh` with its uniform vertex color converted into a named
-    SimpleMaterial, so OBJ export writes a real `usemtl` + material.mtl
-    (Kd diffuse color) per part instead of the non-standard per-vertex
-    `v x y z r g b` OBJ extension -- the format full-color print services
-    (e.g. Shapeways) actually expect."""
+    """Copy of `mesh` with its uniform vertex color converted into a small
+    solid-color UV texture, so OBJ export writes real `vt` UV coordinates
+    plus a `map_Kd <name>.png` in material.mtl -- not just a bare `Kd`
+    value with no texture and no UV coordinates.
+
+    Shapeways documents exactly two color paths for OBJ uploads: real
+    per-vertex color, or a UV-mapped bitmap texture (JPG/PNG/GIF) -- see
+    their self-service upload guide linked in README.md. A `usemtl` +
+    flat `Kd` with no texture and no `vt` lines is valid OBJ but isn't
+    either of those documented paths, and print services built around
+    "vertex color or texture" can silently ignore it and import the
+    model as plain grey. Since every part here really is one flat solid
+    color, the texture is trivial: a single-pixel PNG, UV-mapped to its
+    center for every vertex."""
+    from PIL import Image
+
     m = mesh.copy()
-    rgba = np.asarray(mesh.visual.vertex_colors[0], dtype=float) / 255.0
-    mat = trimesh.visual.material.SimpleMaterial(diffuse=(rgba * 255).astype(np.uint8), name=name)
-    m.visual = trimesh.visual.TextureVisuals(material=mat)
+    rgba = tuple(np.asarray(mesh.visual.vertex_colors[0], dtype=np.uint8))
+    image = Image.new("RGB", (8, 8), rgba[:3])
+    uv = np.full((len(m.vertices), 2), 0.5)
+    mat = trimesh.visual.material.SimpleMaterial(image=image, diffuse=rgba, name=name)
+    m.visual = trimesh.visual.TextureVisuals(uv=uv, image=image, material=mat)
     return m
 
 

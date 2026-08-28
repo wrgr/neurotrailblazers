@@ -18,10 +18,9 @@ not just a re-run.
 For each character (`cortex`, `axon`, `dendra`, `syn`, `glia`):
 
 - `neuronaut3d-<name>-fullcolor.zip` — the print-ready deliverable: an
-  OBJ + MTL pair (multi-material, one material per colored part — no
-  texture maps needed since every part is a flat solid color) in its own
-  zip, matching the format Shapeways documents for full-color uploads
-  ([self-service upload guide](https://www.shapeways.com/blog/self-service-upload-3d-printing)).
+  OBJ + MTL pair plus one tiny solid-color PNG per part color, all at the
+  root of the zip, matching the format Shapeways documents for full-color
+  uploads ([self-service upload guide](https://www.shapeways.com/blog/self-service-upload-3d-printing)).
 - `neuronaut3d-all-five-fullcolor.zip` — all five characters' OBJ+MTL
   pairs together, each in its own subfolder (so their materials don't
   collide — see below); upload one character's subfolder at a time.
@@ -35,19 +34,42 @@ Each figure is about 70mm tall on a 30mm-diameter base, ~23-27 parts,
 ~2 petabytes less impressive than the connectome the rest of this site is
 about but hopefully cuter.
 
-## Why OBJ+MTL, not a single vertex-colored mesh
+## Why OBJ+MTL+PNG textures, not a vertex-colored mesh or bare Kd materials
 
-trimesh's default OBJ export for a vertex-colored mesh writes color as
-extra columns on each vertex line (`v x y z r g b`) — a real but
-less-universally-supported OBJ extension. Shapeways' documented format
-expects proper per-face materials (`usemtl` + a companion `.mtl` with
-`Kd` diffuse colors), so `generate_color3d.py` converts each part to a
-named `SimpleMaterial` before export. One consequence worth knowing if
-you extend this script: trimesh's OBJ exporter always names the material
-file exactly `material.mtl`, regardless of the `.obj` filename — export
-two characters into the same flat folder and the second silently
-overwrites the first's materials. `export_full_color()` avoids this by
-giving each character its own subfolder before zipping.
+Shapeways documents exactly two supported color paths for an OBJ upload:
+real per-vertex color, or a UV-mapped bitmap texture (JPG/PNG/GIF) — see
+their [self-service upload guide](https://www.shapeways.com/blog/self-service-upload-3d-printing).
+Two earlier versions of this generator missed both:
+
+- trimesh's default OBJ export for a vertex-colored mesh writes color as
+  extra columns on each vertex line (`v x y z r g b`) — a real but
+  non-standard OBJ extension that most print services, Shapeways
+  included, don't parse as color.
+- The first fix moved to per-part `usemtl` + a `Kd` diffuse value in the
+  `.mtl`, with no texture and no UV coordinates. That's valid OBJ and
+  looks correct in a plain mesh viewer, but it's neither of Shapeways'
+  two documented paths — a service built around "vertex color or
+  texture" can silently import a `Kd`-only, textureless model as plain
+  grey. This is almost certainly why earlier exports weren't being
+  recognized as color by Shapeways (or other services expecting the same
+  two paths).
+
+So each part now gets its own tiny (8x8 pixel) solid-color PNG texture,
+with every vertex UV-mapped to its center — trivial since the whole
+texture is one flat color, but it produces real `vt` lines and a
+`map_Kd <part>.png` per material, matching the texture path exactly.
+`as_materialed()` does this per part; `export_full_color()` bundles the
+`.obj`, `.mtl`, and every part's `.png` together, all at the zip's root
+(a subfolder would also be spec-valid but the docs specifically call for
+root-level files, so this generator matches that).
+
+One other consequence worth knowing if you extend this script: trimesh's
+OBJ exporter always names the material file exactly `material.mtl`,
+regardless of the `.obj` filename — export two characters into the same
+flat folder and the second silently overwrites the first's materials.
+`export_full_color()` avoids this by giving each character its own
+subfolder before zipping (only `neuronaut3d-all-five-fullcolor.zip` has
+per-character subfolders, since it holds five OBJs at once).
 
 ## Why each part is a separate solid, and how "connected" is verified
 

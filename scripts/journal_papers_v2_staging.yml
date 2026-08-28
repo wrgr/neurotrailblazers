@@ -26,6 +26,10 @@
 #      resolve_dedup.py::PROVISIONAL_SCOPE_DROPS for the full list with
 #      reasons, and recent_sweep_dropped_macro.json for the audit log.
 #      1,034 -> 996
+#   -> manual restore (session 5): 1 confirmed concepts-screen false negative
+#      re-added by hand (Connectomics Annotation Metadata Standardization,
+#      10.3389/fninf.2022.828458 -- Lichtman/Wester/Gray Roncal, flagged during
+#      the lexical drop-rate audit, confirmed on-topic on follow-up): 996 -> 997
 #
 # NEVER seeded from: candidate_pool.json, expert_seed_papers/, the live
 # (pre-rebuild) corpus, or reading_paths.json -- all four are legacy-
@@ -43,12 +47,12 @@
 # "pending_annotation" for everything else -- any downstream consumer must
 # render this distinctly, never silently blank.
 #
-# references_available: false (291/996 records) means neither Semantic
+# references_available: false (291/997 records) means neither Semantic
 # Scholar nor Crossref returned a resolvable reference list for that DOI --
 # an honest "we don't know", never conflated with "cites nothing".
 #
-# in_degree/out_degree are computed ONLY from edges within this 996-paper
-# set (4912 total in-corpus edges; real full reference lists run much higher
+# in_degree/out_degree are computed ONLY from edges within this 997-paper
+# set (4924 total in-corpus edges; real full reference lists run much higher
 # per paper on average -- most of any paper's real references point outside
 # this small, curated pool, which is expected, not a cap bug).
 #
@@ -11878,7 +11882,7 @@ papers:
   journal: Cell
   doi: 10.1016/j.cell.2015.06.054
   alt_dois: []
-  in_degree: 56
+  in_degree: 57
   out_degree: 18
   total_citations: 1031
   references_available: true
@@ -27930,7 +27934,7 @@ papers:
   journal: Nature Methods
   doi: 10.1038/nmeth.4331
   alt_dois: []
-  in_degree: 20
+  in_degree: 21
   out_degree: 13
   total_citations: 181
   references_available: true
@@ -30549,7 +30553,7 @@ papers:
   journal: Nature
   doi: 10.1038/s41586-021-03778-8
   alt_dois: []
-  in_degree: 17
+  in_degree: 18
   out_degree: 19
   total_citations: 395
   references_available: true
@@ -31731,7 +31735,7 @@ papers:
   journal: Nature
   doi: 10.1038/s41586-025-08790-w
   alt_dois: []
-  in_degree: 21
+  in_degree: 22
   out_degree: 44
   total_citations: 395
   references_available: true
@@ -33590,7 +33594,7 @@ papers:
   doi: 10.1038/s41598-021-91025-5
   alt_dois:
   - 10.1101/2020.06.08.140533
-  in_degree: 3
+  in_degree: 4
   out_degree: 20
   total_citations: 37
   references_available: true
@@ -35720,7 +35724,7 @@ papers:
   journal: Bioinformatics
   doi: 10.1093/bioinformatics/btp266
   alt_dois: []
-  in_degree: 34
+  in_degree: 35
   out_degree: 0
   total_citations: 357
   references_available: true
@@ -39653,7 +39657,7 @@ papers:
   journal: openRxiv
   doi: 10.1101/2020.01.16.909465
   alt_dois: []
-  in_degree: 6
+  in_degree: 7
   out_degree: 10
   total_citations: 73
   references_available: true
@@ -39765,7 +39769,7 @@ papers:
   journal: openRxiv
   doi: 10.1101/2020.03.31.018952
   alt_dois: []
-  in_degree: 8
+  in_degree: 9
   out_degree: 14
   total_citations: 39
   references_available: true
@@ -41166,7 +41170,7 @@ papers:
   journal: openRxiv
   doi: 10.1101/2021.05.29.446289
   alt_dois: []
-  in_degree: 10
+  in_degree: 11
   out_degree: 32
   total_citations: 217
   references_available: true
@@ -51530,7 +51534,7 @@ papers:
   journal: The Neuroscientist
   doi: 10.1177/1073858406293182
   alt_dois: []
-  in_degree: 15
+  in_degree: 16
   out_degree: 4
   total_citations: 2641
   references_available: true
@@ -53396,7 +53400,7 @@ papers:
   journal: PLoS Biology
   doi: 10.1371/journal.pbio.0020369
   alt_dois: []
-  in_degree: 15
+  in_degree: 16
   out_degree: 5
   total_citations: 840
   references_available: true
@@ -57175,7 +57179,7 @@ papers:
   journal: The Journal of Neuroscience
   doi: 10.1523/jneurosci.2055-07.2007
   alt_dois: []
-  in_degree: 7
+  in_degree: 8
   out_degree: 1
   total_citations: 679
   references_available: true
@@ -73707,3 +73711,59 @@ papers:
     sources:
     - lexical:electron microscopy synapse loss Alzheimer disease
     round: 0
+- id: 2022-10-3389-fninf-2022-828458
+  uuid: 10.3389/fninf.2022.828458
+  work_id: null
+  title: Connectomics Annotation Metadata Standardization for Increased Accessibility and Queryability
+  authors: Morgan Sanchez; D. Moore; Erik C. Johnson; Brock Andrew Wester; J. Lichtman; William R. Gray
+    Roncal
+  year: 2022
+  journal: Frontiers in Neuroinformatics
+  doi: 10.3389/fninf.2022.828458
+  alt_dois: []
+  in_degree: 0
+  out_degree: 12
+  total_citations: 3
+  references_available: true
+  references:
+  - 10.1016/j.cell.2015.06.054
+  - 10.1016/j.conb.2014.01.019
+  - 10.1038/nmeth.4331
+  - 10.1038/s41586-021-03778-8
+  - 10.1038/s41586-025-08790-w
+  - 10.1038/s41592-018-0181-1
+  - 10.1038/s41598-021-91025-5
+  - 10.1093/bioinformatics/btp266
+  - 10.1093/nar/gks1042
+  - 10.1101/031658
+  - 10.1101/2020.01.16.909465
+  - 10.1101/2020.01.21.911859
+  - 10.1101/2020.03.31.018952
+  - 10.1101/2020.06.08.140533
+  - 10.1101/2021.05.29.446289
+  - 10.1101/2021.07.28.454025
+  - 10.1101/217745
+  - 10.1101/523035
+  - 10.1109/embc.2018.8512220
+  - 10.1177/1073858406293182
+  - 10.1371/journal.pbio.0020369
+  - 10.1523/jneurosci.2055-07.2007
+  - 10.3389/fncir.2018.00088
+  - 10.3389/fninf.2015.00020
+  provisional: false
+  dimension: null
+  role: null
+  reading_phase: null
+  inclusion_role: null
+  era: null
+  k_core: null
+  annotation_status: pending_annotation
+  ocar: null
+  plain_language_summary: null
+  summaries: null
+  tags: []
+  streams: null
+  provenance:
+    sources:
+    - manual_restore:concepts_screen_false_negative
+    round: null

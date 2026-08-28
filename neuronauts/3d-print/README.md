@@ -50,8 +50,14 @@ Suggested starting point for FDM:
 - Layer height: 0.12–0.16 mm (captures the emblem and facial detail best)
 - Infill: 15–20 % is plenty for the figure panels; 15% is fine for the
   base too since it's mostly a friction-fit shell
-- Orientation: print both parts flat, as-is — figure panel face down or
-  face up (doesn't matter), base block on its largest face
+- Orientation: print both parts flat, as-is, exactly as exported — for
+  the figure panel this means detail-side (the raised emblem/eyes/mouth)
+  facing *up*. The panel isn't uniformly flat: only the base layer (3.2mm)
+  is meant to sit on the bed, with the raised detail layer (+1.3mm)
+  facing away from it. Print it detail-side down instead and the raised
+  bumps become the only points touching the bed, leaving most of the
+  panel suspended 1.3mm above it with nothing under it. Base block:
+  either large flat face down.
 - Nozzle: 0.4 mm; hand-paint the raised details after printing for the
   full multi-color look from the page
 

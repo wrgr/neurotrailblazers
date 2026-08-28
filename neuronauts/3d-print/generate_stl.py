@@ -420,8 +420,13 @@ if __name__ == "__main__":
     w, d, h = stand.extents
     print(f"stand-base: watertight={stand.is_watertight} extents=({w:.1f}, {d:.1f}, {h:.1f}) mm -> {stand_path}")
 
+    # Place the stand to the right of the actual rightmost figure (not a
+    # fixed index*spacing guess, which drifts out of sync with the real
+    # figure widths and overlapped Glia's tail) plus a clear gap.
+    plate_gap = 10.0
+    last_max_x = max(m.bounds[1][0] for m in meshes)
     plate_stand = stand.copy()
-    plate_stand.apply_translation([len(CHARACTERS) * spacing, 0, 0])
+    plate_stand.apply_translation([last_max_x + plate_gap + STAND_LENGTH_MM / 2.0, 0, 0])
     meshes.append(plate_stand)
 
     plate = trimesh.util.concatenate(meshes)

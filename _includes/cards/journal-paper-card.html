@@ -115,6 +115,28 @@
   </details>
   {% endif %}
 
+  {% if p.ocar.action or p.ocar.resolution %}
+  <details class="jc-card-details jc-pipeline-details">
+    <summary>🔬 Analysis Protocol &amp; Ecosystem</summary>
+    <div class="jc-details-body">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem;">
+        {% if p.dimension %}<span class="jc-tag" style="background:#ede9fe; color:#6d28d9; font-weight:600;">Domain: {{ p.dimension | replace: '-', ' ' }}</span>{% endif %}
+        {% if p.organism %}<span class="jc-tag" style="background:#dbeafe; color:#1e40af; font-weight:600;">Organism: {{ p.organism | join: ', ' }}</span>{% endif %}
+        {% if p.tier %}<span class="jc-tag" style="background:#fef3c7; color:#92400e; font-weight:600;">Tier: {{ p.tier }}</span>{% endif %}
+      </div>
+      {% if p.ocar.action %}
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Methodological Action:</strong> {{ p.ocar.action }}</p>
+      {% endif %}
+      {% if p.ocar.resolution %}
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Empirical Resolution:</strong> {{ p.ocar.resolution }}</p>
+      {% endif %}
+      {% if p.ocar.future_work %}
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45; color: #64748b;"><strong>Open Horizons:</strong> {{ p.ocar.future_work }}</p>
+      {% endif %}
+    </div>
+  </details>
+  {% endif %}
+
   {% if p.streams.organism.size > 0 or p.streams.datasets.size > 0 or p.streams.method.size > 0 %}
   <div class="jc-card-streams">
     {% for v in p.streams.organism %}<span class="jc-tag jc-tag-organism" data-filter-field="search" data-filter-value="{{ v }}">{{ v }}</span>{% endfor %}
@@ -124,6 +146,8 @@
   {% endif %}
 
   <div class="jc-card-links">
+    <button type="button" class="jc-link jc-link-ai-prompt" data-paper-id="{{ p.id }}" title="Generate AI Study Guide &amp; Seminar Critique Prompt for this paper">🤖 AI Prompt</button>
+    <a href="{{ '/technical-training/journal-club/graph/?paper=' | append: p.id | relative_url }}" class="jc-link jc-link-graph" title="Explore this paper in the interactive citation network">🕸️ Citation Graph</a>
     {% if p.pdf_url %}
     <a href="{{ p.pdf_url }}" target="_blank" rel="noopener" class="jc-link jc-link-pdf">PDF</a>
     {% endif %}

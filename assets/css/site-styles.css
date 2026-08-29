@@ -1907,6 +1907,9 @@ footer {
 .jc-link:hover { opacity: 0.85; }
 .jc-link-pdf   { background: #dbeafe; color: #1e40af; }
 .jc-link-paper { background: #ede9fe; color: #5b21b6; }
+.jc-link-graph { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+.jc-link-ai-prompt { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: #fff; border: none; cursor: pointer; }
+.jc-link-ai-prompt:hover { opacity: 0.9; }
 
 /* Related core works */
 .jc-related-list { margin: 0.25rem 0 0.5rem 1rem; padding: 0; }
@@ -3076,3 +3079,21 @@ a.arch-card,
 
 /* Inline SVG diagrams reuse the figure frame but need no image background. */
 .ntb-diagram svg { display: block; width: 100%; height: auto; background: var(--white); }
+
+/* Mobile & Desktop Performance Optimization */
+.jc-paper-card,
+.jc-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 280px;
+}
+
+@media (max-width: 768px) {
+  /* Ensure comfortable touch targets on mobile devices */
+  button,
+  .btn,
+  .jc-link,
+  .jc-tab,
+  .jcg-nill-btn {
+    min-height: 38px;
+  }
+}

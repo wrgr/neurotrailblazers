@@ -26,12 +26,14 @@ def get_workspace_years() -> Dict[str, int]:
     # 1. YAML files
     for yml_path in [PROJECT_ROOT / "_data/journal_papers.yml", SCRIPT_DIR.parent / "journal_papers_v2_staging.yml"]:
         if yml_path.exists():
-            cur_doi = None
-            for line in yml_path.read_text().splitlines():
-                m_doi = re.search(r'^\s*-\s*doi:\s*[\"\']?([^\"\'\s]+)', line) or re.search(r'^\s*doi:\s*[\"\']?([^\"\'\s]+)', line)
-                if m_doi: cur_doi = m_doi.group(1).strip().lower()
-                m_yr = re.search(r'^\s*year:\s*(\d{4})', line)
-                if m_yr and cur_doi: doi_years[cur_doi] = int(m_yr.group(1))
+            text = yml_path.read_text()
+            # Split into paper blocks starting with '  - id:' or '  - doi:'
+            blocks = re.split(r'\n\s*-\s+(?:id|doi):', text)
+            for block in blocks:
+                m_doi = re.search(r'doi:\s*[\"\']?([^\"\'\s\n]+)', block)
+                m_yr = re.search(r'year:\s*(\d{4})', block)
+                if m_doi and m_yr:
+                    doi_years[m_doi.group(1).strip().lower()] = int(m_yr.group(1))
 
     # 2. Paper views
     for pv in [PROJECT_ROOT / "_data/paper_views/year.json", PROJECT_ROOT / "_data/paper_views/era.json"]:

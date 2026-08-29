@@ -130,6 +130,7 @@ def main():
         if not y or y < 1950 or y > 2027: needs_work = True
         if not v or v.lower() in ("unknown", "journal", ""): needs_work = True
         if not a or len(a.strip()) < 100 or a.strip() == t.strip(): needs_work = True
+        if not p.get("authors") or p.get("authors").strip() in ("author", "The authors", "NeuroTrailblazers Consortium", ""): needs_work = True
         
         if needs_work:
             print(f"Enriching: {doi} ...")

@@ -116,9 +116,16 @@ def main():
         lines.append(f"  out_degree: {out_deg}")
         lines.append(f"  citation_role: {c_role}")
         lines.append(f"  scope_role: {scope_role}")
-        lines.append(f"  annotation_status: {annot_status}")
         lines.append(f"  citation: {escape_yaml_str(citation)}")
         lines.append(f"  landing_url: https://doi.org/{doi}")
+        pdf_url = c2000_p.get("pdf_url")
+        if pdf_url:
+            lines.append(f"  pdf_url: {escape_yaml_str(pdf_url)}")
+            lines.append("  is_oa: true")
+            if c2000_p.get("oa_status"):
+                lines.append(f"  oa_status: {escape_yaml_str(c2000_p.get('oa_status'))}")
+        else:
+            lines.append("  is_oa: false")
 
         # Cites list (papers cited by this paper)
         p_cites = adj_out.get(doi, [])

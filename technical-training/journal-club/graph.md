@@ -917,10 +917,13 @@ content_type: core
   // Open Detailed Paper Drawer
   function openPaperDrawer(p) {
     panel.classList.remove('hidden');
+    var tierLabel = p.tier === 500 ? '500 Key Papers' : (p.tier === 1000 ? '1000 Key Papers' : '2000 Key Papers');
+    var pdfLink = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" style="background:#059669; color:#fff; text-decoration:none; padding:0.4rem 0.8rem; border-radius:6px; font-weight:600; font-size:0.8rem; display:inline-flex; align-items:center; gap:0.3rem;">📄 Open Access PDF &rarr;</a>' : '';
+
     var html = '<h3>' + p.title + '</h3>' +
       '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
       '<div class="jcg-panel-meta-tags">' +
-        '<span class="jcg-panel-tag tier-tag">Tier ' + p.tier + ' (' + (p.tier === 500 ? 'Core Flagship' : (p.tier === 1000 ? 'Landmark' : 'Comprehensive')) + ')</span>' +
+        '<span class="jcg-panel-tag tier-tag">' + tierLabel + '</span>' +
         '<span class="jcg-panel-tag">' + p.dimension + '</span>' +
         '<span class="jcg-panel-tag">' + p.era + '</span>' +
         '<span class="jcg-panel-tag">In: ' + p.in_degree + ' | Out: ' + p.out_degree + '</span>' +
@@ -931,8 +934,9 @@ content_type: core
         '<strong>Citation:</strong>' +
         '<p style="font-size:0.75rem; color:#475569;">' + p.citation + '</p>' +
       '</div>' +
-      '<div class="jcg-panel-links">' +
-        '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">Read on Publisher &rarr;</a>' +
+      '<div class="jcg-panel-links" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem;">' +
+        '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">Publisher DOI &rarr;</a>' +
+        pdfLink +
       '</div>';
     panelBody.innerHTML = html;
   }

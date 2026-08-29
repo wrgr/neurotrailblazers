@@ -13,6 +13,11 @@ items:
     url: "/start-here/"
   - title: "Neuronauts"
     url: "/neuronauts/"
+    dropdown:
+      - title: "The Neuronauts Expedition"
+        url: "/neuronauts/"
+      - title: "Junior Lab (Kids & Explorers)"
+        url: "/neuronauts/kids/"
   - title: "Core"
     url: "/core/"
     dropdown:

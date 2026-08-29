@@ -59,8 +59,31 @@ def main():
     lines.append("papers:")
 
     # Sort papers by tier (500 first, then 1000, then 2000), then category, then linkage score
+    papers_list = []
+    seen_ids = set()
+    for doi, p in papers_dict.items():
+        clean_doi = doi.lower().strip()
+        c2000_p = c2000_dict.get(clean_doi, {})
+        
+        authors = p.get("authors", "author")
+        first_author = authors.split(";")[0].split("&")[0].strip().split(",")[-1].strip().split()[-1].lower() if authors else "author"
+        first_author = re.sub(r"[^\w]", "", first_author) or "paper"
+        year = p.get("year", 2024)
+        clean_d = re.sub(r"[^\w]", "-", clean_doi).strip("-")[-16:]
+        base_id = f"{first_author}-{year}-{clean_d}".strip("-")
+        
+        cand_id = base_id
+        idx = 1
+        while cand_id in seen_ids:
+            idx += 1
+            cand_id = f"{base_id}-{idx}"
+        seen_ids.add(cand_id)
+        
+        p["clean_id"] = cand_id
+        papers_list.append((clean_doi, p))
+
     sorted_papers = sorted(
-        papers_dict.values(),
+        [p for _, p in papers_list],
         key=lambda x: (x.get("tier", 2000), x.get("classification", ""), -x.get("linkage_score", 0))
     )
 
@@ -68,7 +91,7 @@ def main():
         doi = p.get("doi", "").lower()
         c2000_p = c2000_dict.get(doi, {})
 
-        p_id = make_paper_id(p)
+        p_id = p.get("clean_id")
         title = p.get("title", "")
         authors = p.get("authors", "")
         year = p.get("year", 2024)

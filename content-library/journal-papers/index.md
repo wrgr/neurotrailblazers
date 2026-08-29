@@ -73,6 +73,28 @@ The corpus is curated using strict decision-order classification and stratified 
 
 ---
 
+## 📖 Curated Dimension Deep-Dive Collections
+
+For structured course curricula and seminar series, explore the 11 hand-annotated dimension deep-dive collections:
+
+| Category | Count | Focus |
+| :--- | :---: | :--- |
+| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8 | Ultrastructural foundations, synapses, and organelles |
+| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8 | Volume EM, FIB-SEM, and serial sectioning |
+| [Computer Vision &amp; ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | 10 | Automated segmentation, affinity graphs, and FFNs |
+| [Data Storage &amp; Infrastructure]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 8 | Petascale volumetric cloud stores and spatial indexing |
+| [Proofreading &amp; Annotation]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 8 | Human-in-the-loop proofreading and citizen science |
+| [Cell Types &amp; Morphology]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8 | Morphological classification and synaptic fingerprints |
+| [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 8 | Saturated reference connectomes across species |
+| [Network Analysis]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | 10 | Graph theory, motifs, and topological invariance |
+| [MRI &amp; Meso-Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion MRI and macroscale tractography |
+| [NeuroAI &amp; Biophysics]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Connectome-constrained artificial neural networks |
+| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | Biological circuit discoveries and behavioral mechanisms |
+
+**Total: 96 papers** across the 11 hand-annotated curriculum modules.
+
+---
+
 ## 📦 Nested Corpus Materializations & Downloads
 
 For programmatic research, model training, and bibliometric modeling, clean standalone datasets are provided:

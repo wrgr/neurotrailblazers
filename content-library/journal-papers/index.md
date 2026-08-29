@@ -99,9 +99,9 @@ For structured course curricula and seminar series, explore the 11 hand-annotate
 
 For programmatic research, model training, and bibliometric modeling, clean standalone datasets are provided:
 
-* **[500 Key Papers (`corpus_500.json`)]({{ '/_data/corpus_500.json' | relative_url }})**:
+* **[500 Key Papers (`corpus_500.json`)]({{ '/data/corpus_500.json' | relative_url }})**:
   Complete 500-paper flagship corpus with verified OCAR summary cards, 3-tier summaries (Beginner, Intermediate, Advanced), discussion prompts, and citation graph metrics.
-* **[1000 Key Papers (`corpus_1000.json`)]({{ '/_data/corpus_1000.json' | relative_url }})**:
+* **[1000 Key Papers (`corpus_1000.json`)]({{ '/data/corpus_1000.json' | relative_url }})**:
   Expanded 1,000-paper canonical literature set with unabridged publisher abstracts, complete OCAR cards, and in/out degrees.
-* **[2000 Key Papers (`corpus_2000.json`)]({{ '/_data/corpus_2000.json' | relative_url }})**:
+* **[2000 Key Papers (`corpus_2000.json`)]({{ '/data/corpus_2000.json' | relative_url }})**:
   Full 2,000-paper research network with complete OCAR cards, 3-tier summaries, and 5,460+ internal citation links.

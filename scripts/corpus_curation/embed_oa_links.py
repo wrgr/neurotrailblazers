@@ -14,6 +14,8 @@ def main():
 
     for fname in ["corpus_500.json", "corpus_1000.json", "corpus_2000.json"]:
         fpath = PROJECT_ROOT / "_data" / fname
+        dpath = PROJECT_ROOT / "data" / fname
+        dpath.parent.mkdir(parents=True, exist_ok=True)
         if fpath.exists():
             data = json.loads(fpath.read_text())
             for p in data["papers"]:
@@ -27,7 +29,9 @@ def main():
                 p["is_oa"] = is_oa
                 p["oa_status"] = oa_status
 
-            fpath.write_text(json.dumps(data, indent=2))
+            formatted = json.dumps(data, indent=2)
+            fpath.write_text(formatted)
+            dpath.write_text(formatted)
             has_pdf = sum(1 for p in data["papers"] if p.get("pdf_url"))
             print(f"  Updated {fname}: {has_pdf} / {len(data['papers'])} papers with direct PDF links.")
 

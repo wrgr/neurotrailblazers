@@ -1,0 +1,900 @@
+{
+  "metadata": {
+    "source": "ALL papers by authors cited in Helmstaedter 2026 review",
+    "total_papers": 89,
+    "total_author_instances": 100,
+    "generated": "2026-04-01"
+  },
+  "papers": [
+    {
+      "doi": "https://doi.org/10.1038/nature12346",
+      "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+      "year": 2013,
+      "cited_by_count": 1074,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nature09818",
+      "title": "Wiring specificity in the direction-selectivity circuit of the retina",
+      "year": 2011,
+      "cited_by_count": 931,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1162/neco.2009.10-08-881",
+      "title": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation",
+      "year": 2009,
+      "cited_by_count": 386,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/ncomms8923",
+      "title": "Large-volume en-bloc staining for electron microscopy-based connectomics",
+      "year": 2015,
+      "cited_by_count": 354,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1126/science.aay3134",
+      "title": "Dense connectomic reconstruction in layer 4 of the somatosensory cortex",
+      "year": 2019,
+      "cited_by_count": 354,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nmeth.2476",
+      "title": "Cellular-resolution connectomics: challenges of dense neural circuit reconstruction",
+      "year": 2013,
+      "cited_by_count": 344,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhr317",
+      "title": "Cell Type\u2013Specific Three-Dimensional Structure of Thalamocortical Circuits in a Column of Rat Vibrissal Cortex",
+      "year": 2011,
+      "cited_by_count": 312,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nn.2868",
+      "title": "High-accuracy neurite reconstruction for high-throughput neuroanatomy",
+      "year": 2011,
+      "cited_by_count": 285,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1073/pnas.1113648108",
+      "title": "Inhibitory interneurons in a cortical column form hot zones of inhibition in layers 2 and 5A",
+      "year": 2011,
+      "cited_by_count": 267,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1126/science.abo0924",
+      "title": "Connectomic comparison of mouse and human cortex",
+      "year": 2022,
+      "cited_by_count": 240,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nn.4050",
+      "title": "Common circuit design in fly and mammalian motion vision",
+      "year": 2015,
+      "cited_by_count": 225,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhq069",
+      "title": "Cell Type\u2013Specific Thalamic Innervation in a Column of Rat Vibrissal Cortex",
+      "year": 2010,
+      "cited_by_count": 222,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1109/iccv.2007.4408909",
+      "title": "Supervised Learning of Image Restoration with Convolutional Networks",
+      "year": 2007,
+      "cited_by_count": 215,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nmeth.4331",
+      "title": "webKnossos: efficient online 3D data annotation for connectomics",
+      "year": 2017,
+      "cited_by_count": 204,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nrn3169",
+      "title": "Structural neurobiology: missing link to a mechanistic understanding of neural computation",
+      "year": 2012,
+      "cited_by_count": 203,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.cell.2020.08.010",
+      "title": "The Mind of a Mouse",
+      "year": 2020,
+      "cited_by_count": 187,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhq067",
+      "title": "Number and Laminar Distribution of Neurons in a Thalamocortical Projection Column of Rat Vibrissal Cortex",
+      "year": 2010,
+      "cited_by_count": 177,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.conb.2009.03.005",
+      "title": "3D structural imaging of the brain with photons and electrons",
+      "year": 2008,
+      "cited_by_count": 172,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1523/jneurosci.4077-11.2011",
+      "title": "Large-Scale Automated Histology in the Pursuit of Connectomes",
+      "year": 2011,
+      "cited_by_count": 164,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nature24005",
+      "title": "Axonal synapse sorting in medial entorhinal cortex",
+      "year": 2017,
+      "cited_by_count": 152,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41586-022-04777-z",
+      "title": "Neuropathic pain caused by miswiring and abnormal end organ targeting",
+      "year": 2022,
+      "cited_by_count": 148,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.neuron.2015.09.003",
+      "title": "SegEM: Efficient Image Analysis for High-Resolution Connectomics",
+      "year": 2015,
+      "cited_by_count": 139,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1109/cvpr.2010.5539950",
+      "title": "Boundary Learning by Optimization with Topological Constraints",
+      "year": 2010,
+      "cited_by_count": 131,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1523/jneurosci.5701-07.2008",
+      "title": "Efficient Recruitment of Layer 2/3 Interneurons by Layer 4 Input in Single Columns of Rat Somatosensory Cortex",
+      "year": 2008,
+      "cited_by_count": 118,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhm074",
+      "title": "Monosynaptic Connections between Pairs of L5A Pyramidal Neurons in Columns of Juvenile Rat Somatosensory Cortex",
+      "year": 2007,
+      "cited_by_count": 118,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhn141",
+      "title": "Neuronal Correlates of Local, Lateral, and Translaminar Inhibition with Reference to Cortical Columns",
+      "year": 2008,
+      "cited_by_count": 107,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.46876",
+      "title": "Cell-type specific innervation of cortical pyramidal cells at their apical dendrites",
+      "year": 2020,
+      "cited_by_count": 107,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1126/science.abb4534",
+      "title": "Postnatal connectomic development of inhibition in mouse barrel cortex",
+      "year": 2020,
+      "cited_by_count": 101,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/978-3-540-69321-5_15",
+      "title": "Segmentation of SBFSEM Volume Data of Neural Tissue by Hierarchical Classification",
+      "year": 2008,
+      "cited_by_count": 88,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.brainresrev.2007.07.011",
+      "title": "Reconstruction of an average cortical column in silico",
+      "year": 2007,
+      "cited_by_count": 88,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1371/journal.pcbi.1002837",
+      "title": "3D Reconstruction and Standardization of the Rat Vibrissal Cortex for Precise Registration of Single Neuron Morphology",
+      "year": 2012,
+      "cited_by_count": 83,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bht263",
+      "title": "A Barrel-Related Interneuron in Layer 4 of Rat Somatosensory Cortex with a High Intrabarrel Connectivity",
+      "year": 2013,
+      "cited_by_count": 77,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.conb.2011.11.010",
+      "title": "Computational methods and challenges for large-scale circuit mapping",
+      "year": 2012,
+      "cited_by_count": 75,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhn130",
+      "title": "L2/3 Interneuron Groups Defined by Multiparameter Analysis of Axonal Projection, Dendritic Geometry, and Electrical Excitability",
+      "year": 2008,
+      "cited_by_count": 72,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.26414",
+      "title": "SynEM, automated synapse detection for connectomics",
+      "year": 2017,
+      "cited_by_count": 71,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.neuron.2015.03.031",
+      "title": "The Mutual Inspirations of Machine Learning and Neuroscience",
+      "year": 2015,
+      "cited_by_count": 70,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.48550/arxiv.0911.5372",
+      "title": "Maximin affinity learning of image segmentation",
+      "year": 2009,
+      "cited_by_count": 64,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhn138",
+      "title": "The Relation between Dendritic Geometry, Electrical Excitability, and Axonal Projections of L2/3 Interneurons in Rat Barrel Cortex",
+      "year": 2008,
+      "cited_by_count": 62,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/460618",
+      "title": "Dense connectomic reconstruction in layer 4 of the somatosensory cortex",
+      "year": 2018,
+      "cited_by_count": 48,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.media.2011.11.004",
+      "title": "3D segmentation of SBFSEM images of neuropil by a graphical model over supervoxel boundaries",
+      "year": 2011,
+      "cited_by_count": 45,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/s0006-3495(03)75086-3",
+      "title": "Correction of Conductance Measurements in Non-Space-Clamped Structures: 1. Voltage-Gated K+ Channels",
+      "year": 2003,
+      "cited_by_count": 45,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1113/jphysiol.2006.122564",
+      "title": "Dendritic voltage\u2010gated K<sup>+</sup> conductance gradient in pyramidal neurones of neocortical layer 5B from rats",
+      "year": 2006,
+      "cited_by_count": 42,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.38976",
+      "title": "FluoEM, virtual labeling of axons in three-dimensional electron microscopy data for long-range connectomics",
+      "year": 2018,
+      "cited_by_count": 30,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41592-023-01866-3",
+      "title": "High-contrast en bloc staining of mouse whole-brain and human brain samples for EM-based connectomics",
+      "year": 2023,
+      "cited_by_count": 30,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1371/journal.pone.0207828",
+      "title": "Full reconstruction of large lobula plate tangential cells in Drosophila from a 3D EM dataset",
+      "year": 2018,
+      "cited_by_count": 29,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41592-024-02226-5",
+      "title": "RoboEM: automated 3D flight tracing for synaptic-resolution connectomics",
+      "year": 2024,
+      "cited_by_count": 27,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/cercor/bhv039",
+      "title": "Synaptic Conductance Estimates of the Connection Between Local Inhibitor Interneurons and Pyramidal Neurons in Layer 2/3 of a Cortical Column",
+      "year": 2015,
+      "cited_by_count": 27,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.conb.2019.03.012",
+      "title": "Big data in nanoscale connectomics, and the greed for training labels",
+      "year": 2019,
+      "cited_by_count": 26,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1016/j.celrep.2022.111476",
+      "title": "Connectomic analysis of thalamus-driven disinhibition in cortical layer 4",
+      "year": 2022,
+      "cited_by_count": 26,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/2024.03.22.586254",
+      "title": "Connectomic reconstruction of a cortical column",
+      "year": 2024,
+      "cited_by_count": 26,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41593-020-0685-8",
+      "title": "A community-based transcriptomics classification and nomenclature of neocortical cell types",
+      "year": 2020,
+      "cited_by_count": 25,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41467-021-22856-z",
+      "title": "Cellular connectomes as arbiters of local circuit models in the cerebral cortex",
+      "year": 2021,
+      "cited_by_count": 14,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/978-3-030-11024-6_25",
+      "title": "Detecting Synapse Location and Connectivity by Signed Proximity Estimation and Pruning with Deep Nets",
+      "year": 2019,
+      "cited_by_count": 10,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/978-1-4419-1676-1_8",
+      "title": "Axons Predict Neuronal Connectivity Within and Between Cortical Columns and Serve as Primary Classifiers of Interneurons in a Cortical Column",
+      "year": 2010,
+      "cited_by_count": 10,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nature13877",
+      "title": "Erratum: Corrigendum: Connectomic reconstruction of the inner plexiform layer in the mouse retina.",
+      "year": 2014,
+      "cited_by_count": 9,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/2022.03.30.486341",
+      "title": "High-contrast en-bloc staining of mouse whole-brain samples for EM-based connectomics",
+      "year": 2022,
+      "cited_by_count": 9,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/2022.09.08.507122",
+      "title": "RoboEM: automated 3D flight tracing for synaptic-resolution connectomics",
+      "year": 2022,
+      "cited_by_count": 7,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1126/science.346.6209.651-c",
+      "title": "Connectomics at the cutting edge: Challenges and opportunities in high-resolution brain mapping",
+      "year": 2014,
+      "cited_by_count": 6,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1515/nf-2013-0105",
+      "title": "Connectomics: Neue Methoden zur dichten Rekonstruktion neuronaler Schaltkreise",
+      "year": 2013,
+      "cited_by_count": 3,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/nbt.3502",
+      "title": "Voices of biotech",
+      "year": 2016,
+      "cited_by_count": 3,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/099994",
+      "title": "SynEM: Automated synapse detection for connectomics",
+      "year": 2017,
+      "cited_by_count": 3,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/2022.06.01.494290",
+      "title": "Connectomic analysis of thalamus-driven disinhibition in cortical layer 4",
+      "year": 2022,
+      "cited_by_count": 3,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/2025.02.20.639274",
+      "title": "Connectomic analysis of astrocyte-synapse interactions in the cerebral cortex",
+      "year": 2025,
+      "cited_by_count": 3,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41583-025-00998-z",
+      "title": "Synaptic-resolution connectomics: towards large brains and connectomic screening",
+      "year": 2025,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/s13295-016-0030-6",
+      "title": "Connectomics at cellular precision",
+      "year": 2016,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1017/s1431927613003991",
+      "title": "Connectomics: The dense reconstruction of neuronal circuits using volume electron microscopy",
+      "year": 2013,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41593-020-00779-0",
+      "title": "Author Correction: A community-based transcriptomics classification and nomenclature of neocortical cell types",
+      "year": 2021,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41593-020-00768-3",
+      "title": "Publisher Correction: A community-based transcriptomics classification and nomenclature of neocortical cell types",
+      "year": 2020,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.46876.sa2",
+      "title": "Author response: Cell-type specific innervation of cortical pyramidal cells at their apical dendrites",
+      "year": 2020,
+      "cited_by_count": 2,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/s12269-016-0049-1",
+      "title": "Konnektomik mit zellul\u00e4rer Pr\u00e4zision",
+      "year": 2016,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/acprof:oso/9780198745273.003.0022",
+      "title": "Dendritic connectomics",
+      "year": 2016,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/571695",
+      "title": "Cell-type specific innervation of cortical pyramidal cells at their apical tufts",
+      "year": 2019,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.4230/dagrep.8.11.112",
+      "title": "High Throughput Connectomics (Dagstuhl Seminar 18481)",
+      "year": 2019,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.48550/arxiv.1807.02739",
+      "title": "Detecting Synapse Location and Connectivity by Signed Proximity\\n Estimation and Pruning with Deep Nets",
+      "year": 2018,
+      "cited_by_count": 1,
+      "by_authors_count": 2,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1101/340802",
+      "title": "FluoEM: Virtual labeling of axons in 3-dimensional electron microscopy data for long-range connectomics",
+      "year": 2018,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.26414.042",
+      "title": "Author response: SynEM, automated synapse detection for connectomics",
+      "year": 2017,
+      "cited_by_count": 1,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": null,
+      "title": "Connectomics: New methods for the dense reconstruction of neuronal circuits. [Connectomics: Neue Methoden zur dichten Rekonstruktion neuronaler Schaltkreise]",
+      "year": 2013,
+      "cited_by_count": 0,
+      "by_authors_count": 11,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.3389/conf.neuro.11.2009.08.092",
+      "title": "3D mapping of synaptic connections within \"in silico\" microcircuits of full compartmental neurons in extended networks on the example of VPM axons projecting into S1 of rats.",
+      "year": 2009,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1007/s13295-013-0039-z",
+      "title": "Connectomics: novel methods for the dense reconstruction of neuronal circuits",
+      "year": 2013,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1515/s12269-016-0049-1",
+      "title": "Konnektomik mit zellul\u00e4rer Pr\u00e4zision",
+      "year": 2016,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.40042.037",
+      "title": "Decision letter: A high-throughput neurohistological pipeline for brain-wide mesoscale connectivity mapping of the common marmoset",
+      "year": 2018,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.37550.023",
+      "title": "Decision letter: A resource for the Drosophila antennal lobe provided by the connectome of glomerulus VA1v",
+      "year": 2018,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.36892.036",
+      "title": "Decision letter: Stage-dependent remodeling of projections to motor cortex in ALS mouse model revealed by a new variant retrograde-AAV9",
+      "year": 2018,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.7554/elife.38976.035",
+      "title": "Author response: FluoEM, virtual labeling of axons in three-dimensional electron microscopy data for long-range connectomics",
+      "year": 2018,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1515/s13295-016-0030-6",
+      "title": "Connectomics at cellular precision",
+      "year": 2016,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.48550/arxiv.1909.03083",
+      "title": "A community-based transcriptomics classification and nomenclature of\\n neocortical cell types",
+      "year": 2019,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.3917/cerpsy.149.0090",
+      "title": "Pourrons-nous un jour t\u00e9l\u00e9charger nos souvenirs\u00a0?",
+      "year": 2022,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1093/mam/ozae044.311",
+      "title": "Large-scale Connectomics with Multi-Beam Scanning Electron Microscopy",
+      "year": 2024,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41592-025-02941-7",
+      "title": "Optimism for abundant whole-brain connectomes and connectomic screening",
+      "year": 2025,
+      "cited_by_count": 0,
+      "by_authors_count": 1,
+      "authors_in_helmstaedter": [
+        "Moritz Helmstaedter"
+      ]
+    }
+  ]
+}

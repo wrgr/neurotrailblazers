@@ -1,0 +1,4883 @@
+{
+  "metadata": {
+    "papers_cited_by_helmstaedter_references": 1625,
+    "generated": "2026-04-01"
+  },
+  "papers": [
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    },
+    {
+      "type": "cited_by_reference"
+    }
+  ]
+}

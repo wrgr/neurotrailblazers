@@ -1,180 +1,107 @@
 ---
 layout: page
-title: "Journal Paper Collection"
+title: "Journal Paper Corpus & Literature Hub"
 permalink: /content-library/journal-papers/
-description: "96 connectomics papers hand-annotated across 11 teaching dimensions, with summaries at beginner, intermediate, and advanced expertise levels, key figures, and discussion prompts."
+description: "Curated 2,000-paper connectomics corpus stratified across 12 canonical research domains and 3 nested tiers (Top 500, Top 1,000, and Top 2,000), with full multi-paragraph abstracts, OCAR research cards, and 3-level summaries."
 use_layout_hero: false
 content_type: core
 ---
 
-# Journal Paper Collection
+# Journal Paper Corpus & Literature Hub
 
-**96 papers**, hand-annotated across 11 teaching dimensions — from ultrastructure to MRI —
-and tagged for cross-referencing with the content library. Each entry carries:
+Welcome to the **NeuroTrailblazers Curated Literature Corpus** — a multi-tiered, verified collection of **2,000 landmark and contemporary publications** defining the science, technology, applications, and workforce development of nanoscale connectomics.
 
-- **Three-level summaries** — beginner (no prerequisites), intermediate (familiar with basics), advanced (active researcher)
-- **Tags** — linking papers to the content library tag taxonomy for combinable micro lessons
-- **Key figures** — which figures to focus on and what they show
-- **Discussion prompts** — ready-to-use journal club questions
-- **Related content** — links to content library entries for deeper context
-
-## One collection, two ways to read it
-
-This page is a hand-curated **deep-dive subset** of the same underlying collection that
-powers the [journal club]({{ '/technical-training/journal-club/' | relative_url }}) — not
-a second library. The journal club now holds the **full visible core**,
-{{ site.data.journal_papers.papers | size }} papers selected and annotated by the field's
-citation graph. These eleven pages are a hand-picked ~96-paper path through the same
-territory, written to lay out the argument of each paper rather than to be filtered
-programmatically. See the [methodology page]({{ '/content-library/journal-papers/methodology/' | relative_url }})
-for how the full collection was built.
-
-| | This collection | [Full corpus]({{ '/technical-training/journal-club/' | relative_url }}) |
-|---|---|---|
-| **Size** | 96 papers | {{ site.data.journal_papers.papers | size }} papers |
-| **Selected by** | Hand, for teaching a specific dimension | Citation-graph inclusion bar over the field's literature |
-| **Lives in** | These eleven markdown pages | `_data/journal_papers.yml` |
-| **Each entry has** | Three-level summaries, key figures, discussion prompts, related content | OCAR structure, three-level summaries, discussion prompts, graph place (k-core, in/out links), filterable metadata |
-| **Reach for it when** | You are teaching or studying a topic and want the argument laid out | You are surveying what exists, browsing by organism/dataset/method/era, or exploring the citation graph |
-
-At least 36 of the 96 papers here (matched by DOI) are also in the full corpus — the rest
-predate it, are more specialized than its inclusion bar, or are texts (books, standards)
-the corpus doesn't track. If you want programmatic filtering, browse the corpus; if you
-want a paper's argument laid out with key figures, use this collection.
+<div class="jc-hero-stats" style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.25rem 0 1.5rem 0;">
+  <span class="jc-hero-stat" style="background:#eff6ff; color:#1d4ed8; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">2,000 Total Papers</span>
+  <span class="jc-hero-stat" style="background:#f0fdf4; color:#15803d; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">12 Canonical Domains</span>
+  <span class="jc-hero-stat" style="background:#faf5ff; color:#7e22ce; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">3 Nested Tiers (500 / 1000 / 2000)</span>
+  <span class="jc-hero-stat" style="background:#fef3c7; color:#b45309; font-weight:700; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.9rem;">5,460+ Citation Edges</span>
+</div>
 
 ---
 
-## By Dimension
+## 🧭 Ways to Explore the Corpus
 
-### EM-Scale Connectomics
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
 
-| Dimension | Papers | Focus |
-|-----------|--------|-------|
-| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8 | Ultrastructure, synapses, spines, organelles, serial reconstruction |
-| [Imaging & Sample Preparation]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8 | SBEM, FIB-SEM, ATUM, tissue preparation, acquisition pipelines |
-| [Computer Vision & ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | 10 | Segmentation (FFN, U-Net, affinity), synapse detection, error correction |
-| [Data Storage & Pipelines]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 8 | CAVE, neuPrint, CATMAID, OME-Zarr, cloud storage, pipeline engineering |
-| [Proofreading & QC]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 8 | Crowd-sourced proofreading, error detection, agglomeration, QA metrics |
-| [Cell Types & Classification]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8 | Morphological, transcriptomic, connectivity-based classification |
+  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="margin-top:0; color:#1a56db;">🕸️ Citation Graph Explorer</h3>
+    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
+      Explore self-organizing organic force clustering, weighted directed citation edges, and category gravity hubs. Filter dynamically by category, organism, and era, and generate copy-paste AI synthesis prompts.
+    </p>
+    <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" style="font-weight:700; color:#1a56db; text-decoration:none;">Open Graph Explorer &rarr;</a>
+  </div>
 
-### Graph Analysis & Network Science
+  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="margin-top:0; color:#059669;">📚 Journal Club &amp; Reading Paths</h3>
+    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
+      Browse filterable paper cards formatted with the <strong>OCAR framework</strong> (Opportunity, Challenge, Action, Resolution, Future Work), 3 expertise levels (Beginner, Intermediate, Advanced), and seminar discussion prompts.
+    </p>
+    <a href="{{ '/technical-training/journal-club/' | relative_url }}" style="font-weight:700; color:#059669; text-decoration:none;">Browse Journal Club &rarr;</a>
+  </div>
 
-| Dimension | Papers | Focus |
-|-----------|--------|-------|
-| [Graph Construction & Representation]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 8 | Graph encoding, comparative connectomics, structure-function |
-| [Network Analysis & Statistics]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | 10 | Motifs, community detection, graph matching, null models, NBS |
+  <div style="border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+    <h3 style="margin-top:0; color:#7c3aed;">🏛️ Major Research Initiatives</h3>
+    <p style="font-size:0.88rem; color:#475569; line-height:1.5;">
+      Discover global consortia, petascale datasets, and open tools funded by NIH BRAIN CONNECTS, IARPA MICrONS, Janelia FlyEM, Allen Institute, Max Planck, BossDB, and CIRCUIT.
+    </p>
+    <a href="{{ '/initiatives/' | relative_url }}" style="font-weight:700; color:#7c3aed; text-decoration:none;">Explore Major Initiatives &rarr;</a>
+  </div>
 
-### MRI & Macro-Scale
-
-| Dimension | Papers | Focus |
-|-----------|--------|-------|
-| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion tractography, functional connectivity, HCP, parcellation |
-
-### Cross-Cutting
-
-| Dimension | Papers | Focus |
-|-----------|--------|-------|
-| [NeuroAI & Modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Structure-function, bio-inspired AI, connectome-constrained models |
-| [Datasets & Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | C. elegans, FlyWire, MICrONS, H01, landmark projects |
-
-**Total: 96 papers** across 11 dimensions. The counts above are maintained by hand and
-checked in CI by `scripts/validate_paper_counts.rb`, which counts the actual entries on
-each page and fails the build if this table drifts from them again.
+</div>
 
 ---
 
-## How to Use This Collection
+## 📊 Stratified Literature Taxonomy (12 Canonical Domains)
 
-### For self-study
-Start with the **beginner summary** to orient yourself, then read the paper, then compare your understanding with the **intermediate** and **advanced** summaries. Use the **key figures** list to focus your reading.
+The corpus is curated using strict decision-order classification and stratified allocation to ensure balanced coverage across experimental, computational, biological, and pedagogical axes:
 
-### For journal club
-Use the **discussion prompts** to structure group discussion. The three-level summaries help facilitators calibrate discussion depth for mixed-expertise groups. See the [Technical Track Journal Club](/technical-training/journal-club/) for scheduling guidance.
-
-### For micro lesson design
-Use **tags** to find papers that align with specific content library entries. The `combines_with` field on content library entries and the `Related content` links on papers create a cross-referenced web for assembling multi-resource micro lessons.
-
-### For course design
-Papers are organized to follow the technical training sequence. Each dimension aligns with specific technical training units:
-
-| Dimension | Primary units |
-|-----------|---------------|
-| Neuroanatomy | 05, 06 |
-| Imaging | 03 |
-| Computer Vision & ML | 04, 08 |
-| Data Storage & Pipelines | 04, 08 |
-| Proofreading | 08 |
-| Cell Types | 05, 06, 07 |
-| Graph Construction | 09 |
-| Network Analysis | 09 |
-| MRI Connectomics | 01, 02 |
-| NeuroAI | 09 |
-| Case Studies | 01, 02, 08, 09 |
+| Category / Research Domain | Share | Top 500 | Top 1,000 | Top 2,000 | Core Research Focus |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Circuit Structure &amp; Connectomes** | **15.0%** | 75 | 150 | 300 | Dense synaptic wiring diagrams, circuit motifs, connectivity graphs |
+| **Pipeline &amp; Software Engineering** | **15.0%** | 75 | 150 | 300 | Automated 3D segmentation, synapse detection, proofreading (CAVE/CATMAID) |
+| **Physiological Validation &amp; Function** | **12.0%** | 60 | 120 | 240 | In vivo 2-photon imaging, electrophysiology, structure-function mapping |
+| **Behaviour &amp; Circuit Dynamics** | **12.0%** | 60 | 120 | 240 | Ring attractors, navigation, sensory-motor control, escape behavior |
+| **Volume EM &amp; Advanced Optics** | **8.0%** | 40 | 80 | 160 | SBF-SEM, FIB-SEM, multibeam arrays, tissue prep, expansion microscopy |
+| **Cell Types &amp; Morphological Census** | **8.0%** | 40 | 80 | 160 | Morphological clustering, synaptic fingerprints, multi-modal cell types |
+| **Neuroanatomy &amp; Ultrastructure** | **8.0%** | 40 | 80 | 160 | Synaptic active zones, spine density, organelle distributions, glia |
+| **Synthesis, Theory &amp; Reviews** | **5.0%** | 25 | 50 | 100 | Canonical field reviews, graph theory principles, conceptual frameworks |
+| **Benchmark Datasets &amp; Repositories** | **5.0%** | 25 | 50 | 100 | Open petascale public volumes (FlyWire, MICrONS, H01, Kasthuri) |
+| **NeuroAI, Biophysics &amp; Models** | **5.0%** | 25 | 50 | 100 | Connectome-constrained artificial networks, biophysical simulations |
+| **Health, Disease &amp; Translation** | **5.0%** | 25 | 50 | 100 | Nanoscale connectopathies, Alzheimer's, Huntington's, epilepsy rewiring |
+| **Workforce Training &amp; Outreach** | **2.0%** | 10 | 20 | 40 | CIRCUIT traineeship, undergraduate pedagogy, EyeWire citizen science |
 
 ---
 
-## Expertise Level Guide
+## 📖 Curated Dimension Deep-Dive Collections
 
-| Level | Assumes | Best for |
-|-------|---------|----------|
-| **Beginner** | No neuroscience or connectomics background | New trainees, interdisciplinary collaborators, public engagement |
-| **Intermediate** | Familiar with EM, basic neuroscience, and computational concepts | Graduate students, postdocs entering the field |
-| **Advanced** | Active researcher or advanced trainee | Methodological deep dives, experimental design, peer review |
+For structured course curricula and seminar series, explore the 11 hand-annotated dimension deep-dive collections:
+
+| Category | Count | Focus |
+| :--- | :---: | :--- |
+| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8 | Ultrastructural foundations, synapses, and organelles |
+| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8 | Volume EM, FIB-SEM, and serial sectioning |
+| [Computer Vision &amp; ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | 10 | Automated segmentation, affinity graphs, and FFNs |
+| [Data Storage &amp; Infrastructure]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 8 | Petascale volumetric cloud stores and spatial indexing |
+| [Proofreading &amp; Annotation]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 8 | Human-in-the-loop proofreading and citizen science |
+| [Cell Types &amp; Morphology]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8 | Morphological classification and synaptic fingerprints |
+| [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 8 | Saturated reference connectomes across species |
+| [Network Analysis]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | 10 | Graph theory, motifs, and topological invariance |
+| [MRI &amp; Meso-Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion MRI and macroscale tractography |
+| [NeuroAI &amp; Biophysics]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Connectome-constrained artificial neural networks |
+| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | Biological circuit discoveries and behavioral mechanisms |
+
+**Total: 96 papers** across the 11 hand-annotated curriculum modules.
 
 ---
 
-## Structured data access
+## 📦 Nested Corpus Materializations & Downloads
 
-The pages above are markdown, not generated from data — the annotations are written by
-hand, which is why they carry key figures and related-content links that no data file
-holds.
+For programmatic research, model training, and bibliometric modeling, clean standalone datasets are provided:
 
-Structured records exist for the **full {{ site.data.journal_papers.papers | size }}-paper corpus** in
-`_data/journal_papers.yml`. Its schema is:
-
-```yaml
-- id: paper-id
-  uuid: "10.xxxx/xxxxx"           # DOI lowercased, else a stable catalog work id
-  title: "Paper title"
-  authors: "Author list"
-  year: 2024
-  journal: "Journal name"
-  doi: "10.xxxx/xxxxx"
-  landing_url: "https://…"
-  dimension: connectomics         # see below for the valid set
-  reading_phase: 1_foundations
-  role: methods                   # methods / biology / survey / review / bridge
-  inclusion_role: contemporary    # history / contemporary / sota
-  era: "2019–2024"
-  k_core: 5                       # place in the citation-graph's densest core
-  in_degree: 2
-  out_degree: 4
-  tags: [tag1, tag2]
-  streams:                        # pipeline stage, organism, dataset, method, axis
-    axis: pipeline_stage
-    organism: [mouse]
-    method: [FIB-SEM]
-  related:
-    cites: ["10.xxxx/…"]
-    cited_by: ["10.xxxx/…"]
-  ocar:                           # Opportunity / Challenge / Action / Resolution
-    opportunity: "…"
-  plain_language_summary: "…"
-  summaries:
-    beginner: "…"
-    intermediate: "…"
-    advanced: "…"
-  discussion_prompts: ["Prompt 1", "Prompt 2"]
-```
-
-Its `dimension` values are citation-graph categories and are **not** the eleven teaching
-dimensions used on this page: `image-acquisition` (226), `connectomics` (204),
-`graph-analysis` (203), `segmentation` (140), `infrastructure` (106), `proofreading`
-(76), `neuroai` (24), `methods-general` (23), `neuroanatomy` (23), `cell-types` (22),
-`review` (10).
-
-That enables filtering such as "every `graph-analysis` paper from before 2010, at k-core
-≥5, with beginner summaries" — but it will not find the key figures or related-content
-links from this collection, because those live only in the markdown. See the
-[methodology page]({{ '/content-library/journal-papers/methodology/' | relative_url }})
-for how inclusion, k-core, and the other views are defined.
+* **[500 Key Papers (`corpus_500.json`)]({{ '/data/corpus_500.json' | relative_url }})**:
+  Complete 500-paper flagship corpus with verified OCAR summary cards, 3-tier summaries (Beginner, Intermediate, Advanced), discussion prompts, and citation graph metrics.
+* **[1000 Key Papers (`corpus_1000.json`)]({{ '/data/corpus_1000.json' | relative_url }})**:
+  Expanded 1,000-paper canonical literature set with unabridged publisher abstracts, complete OCAR cards, and in/out degrees.
+* **[2000 Key Papers (`corpus_2000.json`)]({{ '/data/corpus_2000.json' | relative_url }})**:
+  Full 2,000-paper research network with complete OCAR cards, 3-tier summaries, and 5,460+ internal citation links.

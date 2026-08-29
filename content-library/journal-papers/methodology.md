@@ -2,60 +2,76 @@
 layout: page
 title: "How the Paper Collection Is Built"
 permalink: /content-library/journal-papers/methodology/
-description: "How the 1,057-paper visible core was selected, what a card carries, and why views (not separate corpora) are how it's filtered."
+description: "How the 2,000-paper connectomics research corpus and its 3 nested tiers (500 Core Flagships, 1,000 Landmarks, and 2,000 Comprehensive Graph) were selected, structured with OCAR cards, and classified across 12 canonical domains."
 use_layout_hero: false
 content_type: core
 ---
 
 # How the Paper Collection Is Built
 
-This page explains where the {{ site.data.journal_papers.papers | size }}-paper collection came from, what belongs in it, and what doesn't. It replaces an earlier split between a 96-paper hand-taught collection and a 191-paper bibliometric corpus &mdash; those were two collections built for different jobs. There is now **one collection**, with views (filters) on top.
+This page explains how the **2,000-paper curated connectomics literature corpus** was retrieved, screened, stratified across 12 canonical research domains, structured into 3 nested tiers ($500 \subset 1,000 \subset 2,000$), and annotated with OCAR cards and 3-level pedagogical summaries.
 
-## The visible core
+---
 
-The underlying literature map covers 1,806 candidate works, with a working set of 1,488 under active analysis. **Neither of those ships here.** This page describes the **visible core** &mdash; the subset that has cleared an inclusion bar and been fully annotated:
+## 🏛️ Corpus Architecture & Nested Tiers
 
-| Period | Years | Bar |
-|---|---|---|
-| Historical | ≤2018 | year-cohort citation percentile ≥ 50 **or** k-core ≥ 3 |
-| Contemporary | 2019–2024 | that bar, **or** references ≥3 other core papers |
-| SOTA (state of the art) | 2025–2026 | 2026: references ≥3 core papers **or** is cited by ≥1; 2025: both |
+The collection is structured into three strictly nested materializations:
 
-"References" and "is cited by" only count links to *other papers in this same core* &mdash; not raw global citation counts. That keeps a paper's place in the collection tied to how connected it is to the rest of the field being taught here, not just how popular it is.
+| Tier | Corpus Size | Primary Target Audience &amp; Role | Metadata Depth |
+| :--- | :---: | :--- | :--- |
+| **500 Key Papers** | **500 papers** | Curriculum flagships, course reading lists, seminar deep-dives | 100% full multi-paragraph abstracts, verified 5-part OCAR research cards, 3-level summaries, seminar discussion prompts |
+| **1000 Key Papers** | **1,000 papers** | Comprehensive scholarly survey, methods reference, subfield tracking | Full unabridged abstracts, complete OCAR cards, citation metrics (in/out degree, k-core), domain classifications, organism tags |
+| **2000 Key Papers** | **2,000 papers** | Global bibliometric network, citation lineage modeling, AI synthesis | Complete directed citation graph ($5,460+$ internal links), complete OCAR cards, author/venue metadata, facet views |
 
-This is not a second screening of the whole field and not a ranked canon of "the best" papers. It's the set dense enough, and connected enough, to be worth teaching from today.
+---
 
-## Every paper has one stable identity
+## 🔬 Multi-Channel Retrieval & Strict Scope Screening
 
-Each record has a **uuid**: its DOI (lowercased) when one exists, otherwise a stable catalog work id. That uuid is what the journal-club filters, the content-library deep-dive pages, the citation graph, and "related work" links all key off of. A paper never gets a second id because it shows up in a different view.
+The candidate pool was compiled using positive nanoscale/synaptic-resolution inclusion gates across Semantic Scholar, OpenAlex, Europe PMC, and PubMed:
 
-## What a card carries
+1. **Direct Synaptic Connectomics**: Dense EM wiring diagrams, synaptic resolution imaging, automated segmentation pipelines (FFN, U-Net, affinity prediction, flood-filling).
+2. **First-Class Scientific Axes**: Covers tissue preparation, FIB-SEM/SBEM acquisition, synapse detection, proofreading tools (CAVE, CATMAID, FlyWire), graph analysis (motifs, modularity, network topology), structure-function modeling, NeuroAI, cell census, health-translation, and training/outreach.
+3. **Positive Nanoscale Boundary**: Macroscale non-synaptic methods (such as standard low-resolution fMRI or whole-brain fiber tractography without synaptic validation) are filtered out, preserving a clean nanoscale focus.
 
-Every paper in the collection gets the same shape:
+---
 
-- Bibliographic identity &mdash; title, authors, year, venue, DOI/uuid
-- **OCAR** &mdash; Opportunity, Challenge, Action, Resolution, Future Work
-- Three reading levels &mdash; beginner, intermediate, advanced summaries
-- Tags, and discussion prompts
-- **Graph place** &mdash; how many core papers cite it, how many it cites, its k-core (how embedded it is in the densest part of the citation network), and its citation percentile within its publication year
-- **Streams** &mdash; pipeline stage(s), organism, dataset, method, and charting axis
-- **Related work** &mdash; other core papers it cites or is cited by
-- Links to the paper's DOI/landing page and, where public, a PDF
+## 📊 Stratified 12-Domain Literature Taxonomy
 
-Pedagogical prose (OCAR, summaries, discussion prompts) is written from the paper itself wherever a source PDF was available, which is true for the whole visible core in this drop. Where a source file couldn't be matched, the card falls back to the catalog abstract, and `annotation_status` says so &mdash; that flag exists so a mismatched or abstract-only card is never presented as more thoroughly read than it was.
+Candidate papers are classified into 12 mutually exclusive primary domains using a strict decision-order hierarchy:
 
-## Views, not corpora
+1. `circuit-structure` (15.0% target share / 75 in Top 500 / 300 in Top 2,000)
+2. `pipeline` (15.0% target share / 75 in Top 500 / 300 in Top 2,000)
+3. `physiology` (12.0% target share / 60 in Top 500 / 240 in Top 2,000)
+4. `behaviour` (12.0% target share / 60 in Top 500 / 240 in Top 2,000)
+5. `imaging` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
+6. `cell-types` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
+7. `neuroanatomy` (8.0% target share / 40 in Top 500 / 160 in Top 2,000)
+8. `synthesis` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
+9. `dataset` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
+10. `neuroai` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
+11. `health` (5.0% target share / 25 in Top 500 / 100 in Top 2,000)
+12. `training-outreach` (2.0% target share / 10 in Top 500 / 40 in Top 2,000)
 
-A view is an ordered or grouped list of uuids &mdash; it never adds or removes papers from the collection. Shipped views:
+---
 
-- **Highest k-core** &mdash; ranked by how embedded a paper is in the citation network
-- **Era** &mdash; historical / contemporary / SOTA
-- **Pipeline stage** &mdash; preparation through analysis
-- **Organism**
-- **Dataset** &mdash; named registry volumes (FlyWire, MICrONS, H01, …)
-- **Method**
-- **Charting axis** &mdash; including training/outreach and health-translation threads
-- **Year**
-- **Suggested reading paths** &mdash; editorial sequences (historical arc, methods deep dive, analysis & interpretation)
+## 🃏 What Each Record Carries
 
-The eleven teaching dimensions used on the hand-annotated [journal paper deep-dives]({{ '/content-library/journal-papers/' | relative_url }}) are themselves a view over this same collection, not a second library. Browse the full collection, filtered any of these ways, on the [journal club]({{ '/technical-training/journal-club/' | relative_url }}) page.
+* **Bibliographic Identity**: Title, complete author list, publication year, venue/journal, clean lowercase DOI.
+* **OCAR Structure**:
+  * **Opportunity**: Scientific/technological opening addressed.
+  * **Challenge**: Key bottlenecks, scale limits, or biological ambiguities.
+  * **Action**: Experimental, imaging, computational, or theoretical methodology executed.
+  * **Resolution**: Findings, benchmarks, connectome maps, or models delivered.
+  * **Future Work**: Open problems and next-generation research horizons.
+* **Three-Level Pedagogical Summaries**: Beginner (no prerequisites), Intermediate (foundational knowledge), Advanced (active researcher).
+* **Discussion Prompts**: Facilitator questions for journal clubs and research seminars.
+* **Graph Topological Placement**: In-degree (inbound citations within corpus), Out-degree (references within corpus), k-core centrality.
+* **Directed Citation Links**: List of DOIs cited by the publication.
+
+---
+
+## 🧭 Exploring the Collection
+
+* **[Interactive Citation Graph Explorer]({{ '/technical-training/journal-club/graph/' | relative_url }})**: Live WebGL/Canvas network graph with organic force-directed physics, weighted directed citation arrows, and AI research synthesis prompt generator.
+* **[Journal Club Card Browser]({{ '/technical-training/journal-club/' | relative_url }})**: Filterable cards by tier, domain, expertise level, and publication era.
+* **[Literature Corpus Taxonomy Hub]({{ '/content-library/journal-papers/' | relative_url }})**: Domain breakdown with direct links to standalone JSON downloads.

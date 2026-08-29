@@ -1,0 +1,24 @@
+{
+  "view": "tier",
+  "total": 2000,
+  "groups": [
+    {
+      "key": "500",
+      "label": "Top 500 Core Flagships",
+      "n": 500,
+      "description": "Foundational and landmark publications defining connectomics"
+    },
+    {
+      "key": "1000",
+      "label": "Top 1,000 Landmark Corpus",
+      "n": 1000,
+      "description": "Expanded canonical literature and high-impact methodology"
+    },
+    {
+      "key": "2000",
+      "label": "Top 2,000 Comprehensive Network",
+      "n": 2000,
+      "description": "Complete research network across all connectomics subfields"
+    }
+  ]
+}

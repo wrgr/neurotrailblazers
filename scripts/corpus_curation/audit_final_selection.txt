@@ -1,0 +1,220 @@
+FINAL CORPUS SELECTION AUDIT REPORT (Total Selected: 2000)
+
+================================================================================
+
+
+CATEGORY: BEHAVIOUR (Total in 2000: 240)
+------------------------------------------------------------
+[TOP 500  | 1990 | In:221 | Out: 0] 10.1073/pnas.0409009101   | INAUGURAL ARTICLE by a Recently Elected Academy Member:A cir
+[TOP 500  | 2001 | In:209 | Out: 2] 10.1016/j.neuron.2008.12.033 | Motor control in a Drosophila taste circuit
+[TOP 500  | 2011 | In:195 | Out:15] 10.1016/j.cell.2015.11.019 | Coordinated and Compartmentalized Neuromodulation Shapes Sen
+[TOP 500  | 2012 | In:175 | Out:13] 10.1016/j.cell.2015.09.034 | Global brain dynamics embed the motor command sequence of Ca
+[TOP 500  | 2017 | In:160 | Out: 5] 10.1038/nature11614       | Layered reward signaling through octopamine and dopamine in 
+[TOP 500  | 2020 | In:193 | Out: 0] 10.1016/j.cell.2011.08.053 | The neural circuits and synaptic mechanisms underlying motor
+[TOP 500  | 2011 | In:223 | Out: 0] 10.1523/jneurosci.05-04-00956.1985 | The neural circuit for touch sensitivity in Caenorhabditis e
+[TOP 500  | 2014 | In:140 | Out: 0] 10.1038/nature06292       | Dissecting a circuit for olfactory behaviour in Caenorhabdit
+[TOP 500  | 2005 | In:138 | Out:13] 10.1016/j.neuron.2015.03.025 | Activity of Defined Mushroom Body Output Neurons Underlies L
+[TOP 500  | 2025 | In: 70 | Out:14] 10.1038/nature17977       | Sex-specific pruning of neuronal synapses in Caenorhabditis 
+[TOP 500  | 1973 | In:127 | Out: 0] 10.7554/elife.24394       | The comprehensive connectome of a neural substrate for ‘ON’ 
+[TOP 500  | 2026 | In: 68 | Out:10] 10.1016/j.cell.2014.09.056 | Encoding of both analog- and digital-like behavioral outputs
+[TOP 500  | 2024 | In: 58 | Out:22] 10.7554/elife.49257       | Nitric oxide acts as a cotransmitter in a subset of dopamine
+[TOP 500  | 2015 | In:113 | Out:10] 10.1016/j.cell.2015.02.018 | Feedback from network states generates variability in a prob
+[TOP 500  | 2005 | In:124 | Out:30] 10.1038/nn.3917           | The neocortical circuit: themes and variations
+
+CATEGORY: CELL-TYPES (Total in 2000: 160)
+------------------------------------------------------------
+[TOP 500  | 2014 | In:452 | Out: 0] 10.1016/j.celrep.2012.09.011 | A GAL4-driver line resource for Drosophila neurobiology.
+[TOP 500  | 2012 | In:347 | Out: 0] 10.7554/elife.04577       | The neuronal architecture of the mushroom body provides a lo
+[TOP 500  | 2011 | In:256 | Out: 0] 10.1073/pnas.1506763112   | Optimized tools for multicolor stochastic labeling reveal di
+[TOP 500  | 2008 | In:199 | Out: 0] 10.1016/j.neuron.2013.12.017 | A systematic nomenclature for the insect brain.
+[TOP 500  | 2025 | In: 89 | Out:16] 10.1101/537233            | Reconstruction of 1,000 projection neurons reveals new cell 
+[TOP 500  | 2016 | In:151 | Out:10] 10.1038/nature16468       | The functional diversity of retinal ganglion cells in the mo
+[TOP 500  | 2018 | In:125 | Out: 0] 10.1002/cne.23705         | Neuroarchitecture and neuroanatomy of the Drosophila central
+[TOP 500  | 2011 | In:120 | Out: 6] 10.1016/j.neuron.2011.07.026 | A Resource of Cre Driver Lines for Genetic Targeting of GABA
+[TOP 500  | 2018 | In:105 | Out: 0] 10.1016/j.cell.2020.08.010 | The Mind of a Mouse.
+[TOP 500  | 2011 | In:116 | Out: 0] 10.1016/j.neuron.2008.01.002 | Genetic dissection of neural circuits.
+[TOP 500  | 2013 | In: 96 | Out:23] 10.7554/elife.10566       | A platform for brain-wide imaging and reconstruction of indi
+[TOP 500  | 2011 | In: 92 | Out:48] 10.1101/385476            | A genetic, genomic, and computational resource for exploring
+[TOP 500  | 2026 | In: 64 | Out: 3] 10.1152/jn.01170.2003     | Characterization of neocortical principal cells and interneu
+[TOP 500  | 2026 | In: 22 | Out:53] 10.1038/s41586-025-08746-0 | Connectome-driven neural inventory of a complete visual syst
+[TOP 500  | 2024 | In: 45 | Out:16] 10.1101/065722            | Connectivity map of bipolar cells and photoreceptors in the 
+
+CATEGORY: CIRCUIT-STRUCTURE (Total in 2000: 300)
+------------------------------------------------------------
+[TOP 500  | 2008 | In:835 | Out: 0] 10.1371/journal.pbio.0030068 | Highly Nonrandom Features of Synaptic Connectivity in Local 
+[TOP 500  | 2025 | In:504 | Out: 0] 10.1113/jphysiol.1997.sp022031 | Physiology and anatomy of synaptic connections between thick
+[TOP 500  | 2015 | In:526 | Out: 0] 10.1038/nature09880       | Functional specificity of local synaptic connections in neoc
+[TOP 500  | 2024 | In:304 | Out:27] 10.1016/j.neuron.2008.12.020 | The excitatory neuronal network of the C2 barrel column in m
+[TOP 500  | 2012 | In:389 | Out: 0] 10.1038/nature09802       | Network anatomy and in vivo physiology of visual cortical ne
+[TOP 500  | 2017 | In:351 | Out: 0] 10.1038/nature09818       | Wiring specificity in the direction-selectivity circuit of t
+[TOP 500  | 1997 | In:346 | Out: 0] 10.1038/nature14182       | Functional organization of excitatory synaptic strength in p
+[TOP 500  | 2024 | In:206 | Out: 0] 10.1038/s41586-024-07558-y | Neuronal wiring diagram of an adult brain
+[TOP 500  | 1975 | In:306 | Out: 0] 10.1016/0006-8993(75)90983-x | A bistratified amacrine cell and synaptic cirucitry in the i
+[TOP 500  | 2020 | In:366 | Out: 0] 10.1073/pnas.1016051108   | A synaptic organizing principle for cortical neuronal groups
+[TOP 500  | 2026 | In:151 | Out: 0] 10.1126/science.186.4158.47 | Rod and Cone Pathways in the Inner Plexiform Layer of Cat Re
+[TOP 500  | 2021 | In:278 | Out: 0] 10.1038/nature17192       | Anatomy and function of an excitatory network in the visual 
+[TOP 500  | 2024 | In:129 | Out: 6] 10.1038/nature13427       | Processing properties of ON and OFF pathways for Drosophila 
+[TOP 500  | 2025 | In:136 | Out: 0] 10.1038/nature07709       | The subcellular organization of neocortical excitatory conne
+[TOP 500  | 2006 | In:187 | Out: 0] 10.1523/jneurosci.1400-04.2004 | A Quantitative Map of the Circuit of Cat Primary Visual Cort
+
+CATEGORY: DATASET (Total in 2000: 115)
+------------------------------------------------------------
+[TOP 500  | 2024 | In:601 | Out: 0] 10.1016/j.cell.2015.06.054 | Saturated Reconstruction of a Volume of Neocortex.
+[TOP 500  | 2009 | In:975 | Out: 0] 10.1098/rstb.1986.0056    | The structure of the nervous system of the nematode Caenorha
+[TOP 500  | 2024 | In:517 | Out: 0] 10.1038/nature12346       | Connectomic reconstruction of the inner plexiform layer in t
+[TOP 500  | 2025 | In:437 | Out: 0] 10.1038/s41586-019-1352-7 | Whole-animal connectomes of both Caenorhabditis elegans sexe
+[TOP 500  | 2021 | In:631 | Out: 0] 10.7554/elife.57443       | A connectome and analysis of the adult Drosophila central br
+[TOP 500  | 2023 | In:593 | Out: 0] 10.1016/j.cell.2018.06.019 | A Complete Electron Microscopy Volume of the Brain of Adult 
+[TOP 500  | 2025 | In:274 | Out: 0] 10.1038/s41586-021-03778-8 | Connectomes across development reveal principles of brain ma
+[TOP 500  | 2020 | In:438 | Out: 0] 10.1038/nature12450       | A visual motion detection circuit suggested by Drosophila co
+[TOP 500  | 1999 | In:346 | Out: 0] 10.1016/j.cub.2010.11.056 | Three-dimensional reconstruction of brain-wide wiring networ
+[TOP 500  | 2017 | In:264 | Out: 0] 10.1371/journal.pcbi.1001066 | Structural Properties of the Caenorhabditis elegans Neuronal
+[TOP 500  | 2022 | In:372 | Out: 0] 10.1038/nature13186       | A mesoscale connectome of the mouse brain
+[TOP 500  | 2025 | In:131 | Out:26] 10.1101/2020.12.15.422897 | Molecular topography of an entire nervous system
+[TOP 500  | 2017 | In:213 | Out: 0] 10.1038/s41586-024-07686-5 | Whole-brain annotation and multi-connectome cell typing of D
+[TOP 500  | 2026 | In:126 | Out: 0] 10.1016/j.cell.2024.03.016 | Neurotransmitter classification from electron microscopy ima
+[TOP 500  | 1989 | In:205 | Out: 0] 10.1007/bf00218858        | The optic lobe of Drosophila melanogaster. I. A Golgi analys
+
+CATEGORY: HEALTH (Total in 2000: 42)
+------------------------------------------------------------
+[TOP 500  | 2026 | In: 20 | Out:44] 10.1016/j.neuroscience.2012.04.061 | Beyond counts and shapes: Studying pathology of dendritic sp
+[TOP 500  | 2002 | In: 63 | Out:13] 10.1016/s0165-0173(02)00158-3 | Dendritic spine pathology: cause or consequence of neurologi
+[TOP 500  | 2021 | In: 25 | Out:30] 10.1038/s41582-021-00529-1 | The human connectome in Alzheimer disease — relationship to 
+[TOP 500  | 2026 | In:  0 | Out:36] 10.1101/2024.02.14.580149 | Impact of Aii Amacrine Cell Rewiring in a Pathoconnectome-Ba
+[TOP 500  | 2015 | In: 25 | Out:28] 10.1111/epi.13133         | Connectomics and graph theory analyses: Novel insights into 
+[TOP 500  | 2016 | In: 25 | Out:23] 10.1016/j.biopsych.2016.07.012 | Connectome Disconnectivity and Cortical Gene Expression in P
+[TOP 500  | 2016 | In: 25 | Out:18] 10.1523/jneurosci.4396-15.2016 | Multivariate Connectome-Based Symptom Mapping in Post-Stroke
+[TOP 500  | 2024 | In:  0 | Out:29] 10.1038/s41583-024-00876-0 | Structural neural plasticity evoked by rapid-acting antidepr
+[TOP 500  | 2024 | In:  0 | Out:22] 10.3389/fnagi.2024.1476909 | Cognitive synaptopathy: synaptic and dendritic spine dysfunc
+[TOP 500  | 2020 | In:  9 | Out:20] 10.1101/2020.01.31.929265 | A Pathoconnectome of Early Neurodegeneration: Network change
+[TOP 500  | 2018 | In: 11 | Out:17] 10.1016/j.nicl.2018.06.018 | The structural connectome in traumatic brain injury
+[TOP 500  | 2020 | In:  9 | Out:11] 10.1016/j.cub.2020.03.033 | Homeostatic plasticity shapes the retinal response to photor
+[TOP 500  | 2015 | In: 11 | Out:15] 10.1038/nature15389       | Projections from neocortex mediate top-down control of memor
+[TOP 500  | 2025 | In:  1 | Out: 7] 10.1016/j.conb.2025.103089 | Increased heavy-tailed distribution of synaptic weights dist
+[TOP 500  | 2024 | In:  0 | Out: 9] 10.1186/s40478-024-01802-2 | Disruption of the mitochondrial network in a mouse model of 
+
+CATEGORY: IMAGING (Total in 2000: 160)
+------------------------------------------------------------
+[TOP 500  | 2004 | In:708 | Out: 0] 10.1371/journal.pbio.0020329 | Serial Block-Face Scanning Electron Microscopy to Reconstruc
+[TOP 500  | 2024 | In:412 | Out: 0] 10.1016/j.neuron.2007.06.014 | Array tomography: a new tool for imaging the molecular archi
+[TOP 500  | 2016 | In:600 | Out: 0] 10.1038/nature12354       | Ultra-sensitive fluorescent proteins for imaging neuronal ac
+[TOP 500  | 2007 | In:351 | Out: 0] 10.1523/jneurosci.3189-07.2008 | Serial Section Scanning Electron Microscopy of Adult Brain T
+[TOP 500  | 2024 | In:203 | Out: 0] 10.1038/nature06293       | Transgenic strategies for combinatorial expression of fluore
+[TOP 500  | 2014 | In:243 | Out: 0] 10.1371/journal.pbio.1001041 | A Genetically Encoded Tag for Correlated Light and Electron 
+[TOP 500  | 2025 | In:122 | Out:12] 10.1038/nprot.2011.439    | High-contrast en bloc staining of neuronal tissue for field 
+[TOP 500  | 2025 | In:126 | Out: 0] 10.1101/2021.05.29.446289 | A connectomic study of a petascale fragment of human cerebra
+[TOP 500  | 2018 | In:188 | Out: 0] 10.1126/science.adk4858   | A petavoxel fragment of human cerebral cortex reconstructed 
+[TOP 500  | 2024 | In: 95 | Out: 9] 10.1038/nmeth.1854        | Serial two-photon tomography: an automated method for ex-viv
+[TOP 500  | 2026 | In: 17 | Out:127] 10.1111/jmi.13134         | How innovations in methodology offer new prospects for volum
+[TOP 500  | 2017 | In:151 | Out: 0] 10.1038/nmeth.1784        | mGRASP enables mapping mammalian synaptic connectivity with 
+[TOP 500  | 2017 | In:148 | Out:21] 10.7554/elife.25916       | Enhanced FIB-SEM systems for large-volume 3D imaging
+[TOP 500  | 1977 | In:149 | Out: 0] 10.1016/j.micron.2014.01.009 | Exploring the third dimension: volume electron microscopy co
+[TOP 500  | 2024 | In: 94 | Out: 7] 10.1038/nn.2928           | Scale: a chemical approach for fluorescence imaging and reco
+
+CATEGORY: NEUROAI (Total in 2000: 100)
+------------------------------------------------------------
+[TOP 500  | 2026 | In:137 | Out:13] 10.1038/nn.3220           | Slow dynamics and high variability in balanced cortical netw
+[TOP 500  | 2024 | In: 96 | Out:10] 10.1038/s41586-021-04067-0 | Building an allocentric traveling-direction signal via vecto
+[TOP 500  | 2025 | In: 74 | Out: 0] 10.1038/s41586-024-07939-3 | Connectome-constrained networks predict neural activity acro
+[TOP 500  | 2025 | In: 93 | Out: 0] 10.1177/1073858406293182  | Small-World Brain Networks
+[TOP 500  | 2010 | In:106 | Out: 6] 10.1038/nn.2479           | Connectivity reflects coding: a model of voltage-based STDP 
+[TOP 500  | 2014 | In: 88 | Out:25] 10.1016/j.neuron.2014.02.007 | Gliotransmitters Travel in Time and Space
+[TOP 500  | 1988 | In: 84 | Out: 6] 10.1126/science.1175509   | GABAergic Hub Neurons Orchestrate Synchrony in Developing Hi
+[TOP 500  | 2025 | In: 19 | Out:36] 10.1101/2021.08.19.456845 | Connectomic features underlying diverse synaptic connection 
+[TOP 500  | 2024 | In:  7 | Out:53] 10.7554/elife.99693       | Modeling and simulation of neocortical micro- and mesocircui
+[TOP 500  | 2010 | In: 76 | Out: 8] 10.1038/nature09086       | Sensitivity to perturbations in vivo implies high noise and 
+[TOP 500  | 2014 | In: 62 | Out:14] 10.1038/ncomms6319        | Formation and maintenance of neuronal assemblies through syn
+[TOP 500  | 2026 | In:  8 | Out:53] 10.1101/2022.08.11.503144 | Modeling and simulation of neocortical micro- and mesocircui
+[TOP 500  | 2012 | In: 59 | Out:14] 10.1038/srep00485         | Optimal spike-based communication in excitable networks with
+[TOP 500  | 2010 | In: 57 | Out:23] 10.1038/s41586-019-0997-6 | Single-neuron perturbations reveal feature-specific competit
+[TOP 500  | 2019 | In: 71 | Out: 0] 10.1016/j.neuron.2009.03.020 | Reading the book of memory: sparse sampling versus dense map
+
+CATEGORY: NEUROANATOMY (Total in 2000: 160)
+------------------------------------------------------------
+[TOP 500  | 2022 | In:565 | Out: 0] 10.1523/jneurosci.09-08-02982.1989 | Dendritic spines of CA 1 pyramidal cells in the rat hippocam
+[TOP 500  | 2025 | In:131 | Out:14] 10.1038/nn1747            | Spine growth precedes synapse formation in the adult neocort
+[TOP 500  | 2024 | In:128 | Out:14] 10.3389/neuro.01.1.1.010.2007 | Ultrastructure of Dendritic Spines: Correlation Between Syna
+[TOP 500  | 2009 | In:122 | Out: 0] 10.1002/cne.901400406     | The inner plexiform layer of the vertebrate retina: A quanti
+[TOP 500  | 2002 | In:136 | Out: 2] 10.1038/nature01276       | Long-term dendritic spine stability in the adult cortex
+[TOP 500  | 2021 | In:160 | Out: 6] 10.1523/jneurosci.17-15-05858.1997 | Quantitative Ultrastructural Analysis of Hippocampal Excitat
+[TOP 500  | 2018 | In:109 | Out:17] 10.1002/glia.20415        | Plasticity of perisynaptic astroglia during synaptogenesis i
+[TOP 500  | 2009 | In:108 | Out: 7] 10.1038/nature04783       | Experience-dependent and cell-type-specific spine growth in 
+[TOP 500  | 2006 | In: 88 | Out:15] 10.1523/jneurosci.1302-06.2006 | Cooperative Astrocyte and Dendritic Spine Dynamics at Hippoc
+[TOP 500  | 2014 | In: 76 | Out:18] 10.1016/j.cub.2014.06.025 | Activity-dependent structural plasticity of perisynaptic ast
+[TOP 500  | 2025 | In: 17 | Out:47] 10.1093/cercor/bhz343     | Volume Electron Microscopy Study of the Relationship Between
+[TOP 500  | 2014 | In: 84 | Out:15] 10.1038/nn.3682           | Spine neck plasticity regulates compartmentalization of syna
+[TOP 500  | 1997 | In: 81 | Out:10] 10.1523/jneurosci.17-01-00190.1997 | Three-Dimensional Organization of Smooth Endoplasmic Reticul
+[TOP 500  | 2019 | In: 80 | Out:17] 10.1002/hipo.20768        | COORDINATION OF SIZE AND NUMBER OF EXCITATORY AND INHIBITORY
+[TOP 500  | 1992 | In: 80 | Out: 9] 10.1523/jneurosci.18-20-08300.1998 | Three-Dimensional Structure and Composition of CA3→CA1 Axons
+
+CATEGORY: PHYSIOLOGY (Total in 2000: 242)
+------------------------------------------------------------
+[TOP 500  | 2009 | In:416 | Out: 0] 10.1523/jneurosci.19-16-06897.1999 | Three-Dimensional Relationships between Hippocampal Synapses
+[TOP 500  | 2024 | In:143 | Out:12] 10.1038/nn.2876           | Differential tuning and population dynamics of excitatory an
+[TOP 500  | 2017 | In:234 | Out: 0] 10.1038/s41586-025-08790-w | Functional connectomics spanning multiple areas of mouse vis
+[TOP 500  | 1989 | In:236 | Out: 4] 10.1038/nn736             | Dendritic spine geometry is critical for AMPA receptor expre
+[TOP 500  | 2018 | In:226 | Out: 7] 10.1038/nature01273       | Long-term in vivo imaging of experience-dependent synaptic p
+[TOP 500  | 1962 | In:261 | Out: 0] 10.1113/jphysiol.1962.sp006837 | Receptive fields, binocular interaction and functional archi
+[TOP 500  | 2026 | In:152 | Out: 0] 10.1523/jneurosci.0623-08.2008 | Highly Selective Receptive Fields in Mouse Visual Cortex
+[TOP 500  | 2025 | In:109 | Out:12] 10.1016/j.neuron.2007.02.012 | Disynaptic inhibition between neocortical pyramidal cells me
+[TOP 500  | 2009 | In:153 | Out: 4] 10.1016/s0896-6273(01)00542-6 | Rate, timing, and cooperativity jointly determine cortical s
+[TOP 500  | 2018 | In:133 | Out: 8] 10.1016/j.neuron.2010.08.002 | Broadly tuned response properties of diverse inhibitory neur
+[TOP 500  | 2025 | In: 65 | Out:12] 10.1016/j.neuron.2015.09.033 | Orientation selectivity sharpens motion detection in Drosoph
+[TOP 500  | 2011 | In:129 | Out: 1] 10.1073/pnas.95.9.5323    | Differential signaling via the same axon of neocortical pyra
+[TOP 500  | 2012 | In:110 | Out: 2] 10.1038/1092              | Target-cell-specific facilitation and depression in neocorti
+[TOP 500  | 2013 | In: 94 | Out: 6] 10.1038/nn.3488           | Tuned Thalamic Excitation is Amplified by Visual Cortical Ci
+[TOP 500  | 2021 | In:108 | Out: 0] 10.7554/elife.10778       | Nanoconnectomic upper bound on the variability of synaptic p
+
+CATEGORY: PIPELINE (Total in 2000: 300)
+------------------------------------------------------------
+[TOP 500  | 2025 | In:837 | Out: 0] 10.1038/nmeth.2019        | Fiji - an Open Source platform for biological image analysis
+[TOP 500  | 2015 | In:418 | Out: 0] 10.1016/j.neuron.2007.11.030 | GFP Reconstitution Across Synaptic Partners (GRASP) defines 
+[TOP 500  | 2023 | In:411 | Out: 0] 10.1371/journal.pone.0038011 | TrakEM2 Software for Neural Circuit Reconstruction
+[TOP 500  | 2025 | In:189 | Out: 0] 10.1093/bioinformatics/btp266 | CATMAID: collaborative annotation toolkit for massive amount
+[TOP 500  | 2015 | In:279 | Out: 0] 10.1111/j.1365-2818.2005.01466.x | Reconstruct: a free editor for serial section microscopy
+[TOP 500  | 2026 | In:115 | Out:39] 10.3389/fncir.2018.00088  | VAST (Volume Annotation and Segmentation Tool): Efficient Ma
+[TOP 500  | 2024 | In:125 | Out:21] 10.1016/j.neuron.2017.10.011 | Transsynaptic Mapping of Second-order Taste Neurons in Flies
+[TOP 500  | 1988 | In:213 | Out: 0] 10.1038/s41592-018-0049-4 | High-precision automated reconstruction of neurons with floo
+[TOP 500  | 2015 | In:194 | Out: 0] 10.7554/elife.12059       | Quantitative neuroanatomy for connectomics in Drosophila
+[TOP 500  | 2025 | In:104 | Out: 8] 10.1109/tpami.2018.2835450 | Large Scale Image Segmentation with Structured Loss Based De
+[TOP 500  | 2015 | In:172 | Out: 0] 10.1038/s41592-021-01330-0 | FlyWire: Online community for whole-brain connectomics
+[TOP 500  | 2015 | In:251 | Out: 0] 10.1007/978-3-319-24574-4_28 | U-Net: Convolutional Networks for Biomedical Image Segmentat
+[TOP 500  | 2006 | In:147 | Out: 0] 10.3389/fncir.2014.00068  | Imaging ATUM ultrathin section libraries with WaferMapper: a
+[TOP 500  | 2026 | In: 79 | Out: 0] 10.1038/nmeth.3292        | Ultrastructurally-smooth thick partitioning and volume stitc
+[TOP 500  | 2024 | In: 78 | Out: 0] 10.1038/s41467-020-18659-3 | A petascale automated imaging pipeline for mapping neuronal 
+
+CATEGORY: SYNTHESIS (Total in 2000: 142)
+------------------------------------------------------------
+[TOP 500  | 2013 | In:301 | Out: 0] 10.1038/nmeth.2451        | From the connectome to brain function
+[TOP 500  | 2024 | In:191 | Out:32] 10.1038/nrn3687           | The log-dynamic brain: how skewed distributions affect netwo
+[TOP 500  | 2024 | In:175 | Out: 0] 10.1126/science.aac9462   | Principles of connectivity among morphologically defined cel
+[TOP 500  | 2025 | In:166 | Out: 0] 10.1016/j.neuron.2010.08.014 | Ultrastructural analysis of hippocampal neuropil from the co
+[TOP 500  | 2014 | In:255 | Out: 0] 10.1002/bies.201100185    | Beyond the connectome: How neuromodulators shape neural circ
+[TOP 500  | 2024 | In:123 | Out:30] 10.1038/nn.4502           | Network neuroscience
+[TOP 500  | 2007 | In:183 | Out:10] 10.1016/j.neuron.2012.09.010 | NEUROMODULATION OF NEURONAL CIRCUITS: BACK TO THE FUTURE
+[TOP 500  | 2017 | In:184 | Out: 0] 10.1016/j.conb.2011.10.022 | Volume electron microscopy for neuronal circuit reconstructi
+[TOP 500  | 2006 | In:207 | Out:12] 10.1038/nrn1519           | Interneurons of the neocortical inhibitory system
+[TOP 500  | 2012 | In:188 | Out:38] 10.1038/nrn2699           | Experience-dependent structural synaptic plasticity in the m
+[TOP 500  | 2010 | In:236 | Out: 0] 10.1038/nrn2575           | Complex brain networks: graph theoretical analysis of struct
+[TOP 500  | 2014 | In:150 | Out: 0] 10.1126/science.1209168   | The Big and the Small: Challenges of Imaging the Brain’s Cir
+[TOP 500  | 2024 | In: 83 | Out:26] 10.1146/annurev-psych-122414-033634 | Modular Brain Networks
+[TOP 500  | 2012 | In:139 | Out: 0] 10.1016/j.conb.2006.08.010 | Towards neural circuit reconstruction with volume electron m
+[TOP 500  | 2025 | In: 84 | Out: 0] 10.1126/science.1193378   | From the Connectome to the Synaptome: An Epic Love Story
+
+CATEGORY: TRAINING-OUTREACH (Total in 2000: 21)
+------------------------------------------------------------
+[TOP 500  | 2018 | In: 56 | Out:51] 10.1016/j.neuron.2018.05.004 | Genetic Dissection of Neural Circuits: A Decade of Progress
+[TOP 500  | 2020 | In: 62 | Out: 0] 10.3389/fninf.2022.896292 | neuPrint: An open access tool for EM connectomics
+[TOP 500  | 2018 | In: 31 | Out:52] 10.1016/j.neuron.2018.03.040 | Genetic Dissection of Neural Circuits: A Decade of Progress
+[TOP 500  | 2023 | In: 25 | Out:30] 10.3390/bioengineering10030372 | Connectivity Analysis in EEG Data: A Tutorial Review of the 
+[TOP 500  | 2016 | In: 25 | Out:30] 10.1016/j.chb.2016.12.074 | An investigation of player motivations in Eyewire, a gamifie
+[TOP 500  | 2019 | In: 18 | Out:28] 10.1073/pnas.1807190116   | Citizen science frontiers: Efficiency, engagement, and learn
+[TOP 500  | 2015 | In: 21 | Out: 8] 10.1534/genetics.115.176099 | A Transparent Window into Biology: A Primer on Caenorhabditi
+[TOP 500  | 2024 | In:  0 | Out:13] 10.18260/1-2--43271       | Empowering Trailblazers toward Scalable, Systematized, Resea
+[TOP 500  | 2023 | In:  2 | Out:21] 10.1007/s00418-023-02204-6 | Online citizen science with the Zooniverse for analysis of b
+[TOP 500  | 2024 | In:  0 | Out: 2] 10.18260/1-2--42544       | A SwarmAI Testbed for Workforce Development and Collaborativ
+[TOP 1000 | 2013 | In: 23 | Out:20] 10.1016/j.neuroimage.2011.05.025 | A tutorial in connectome analysis: Topological and spatial f
+[TOP 1000 | 2013 | In:  6 | Out:19] 10.1109/embc46164.2021.9630109 | CONFIRMS: A Toolkit for Scalable, Black Box Connectome Asses
+[TOP 1000 | 2018 | In:  6 | Out: 3] 10.48550/arxiv.1804.08197 | syGlass: Interactive Exploration of Multidimensional Images 
+[TOP 1000 | 2017 | In:  4 | Out:16] 10.1016/j.conb.2017.06.007 | Computational training for the next generation of neuroscien
+[TOP 1000 | 2019 | In:  1 | Out:21] 10.1085/jgp.201812227     | A primer on resolving the nanoscale structure of the plasma 

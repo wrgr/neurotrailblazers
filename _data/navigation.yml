@@ -13,6 +13,11 @@ items:
     url: "/start-here/"
   - title: "Neuronauts"
     url: "/neuronauts/"
+    dropdown:
+      - title: "The Neuronauts Expedition"
+        url: "/neuronauts/"
+      - title: "Junior Lab (Kids & Explorers)"
+        url: "/neuronauts/kids/"
   - title: "Core"
     url: "/core/"
     dropdown:
@@ -24,6 +29,8 @@ items:
         url: "/technical-training/dictionary/"
       - title: "Journal Club"
         url: "/technical-training/journal-club/"
+      - title: "Citation Graph Explorer"
+        url: "/technical-training/journal-club/graph/"
       - title: "Journal Papers"
         url: "/content-library/journal-papers/"
       - title: "Atlas & Reference"
@@ -32,6 +39,8 @@ items:
         url: "/hidden-curriculum/"
       - title: "Datasets"
         url: "/datasets/"
+      - title: "Major Initiatives"
+        url: "/initiatives/"
   - title: "Tracks"
     url: "/tracks/"
     dropdown:

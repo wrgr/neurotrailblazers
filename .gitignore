@@ -18,3 +18,8 @@ _data/seed_retrieval/cache/
 # Raw API responses from the seed retrieval. Regenerable, and large.
 __pycache__/
 *.pyc
+
+# Connectomics Paper Corpus & RAG Embeddings (Local / Binary Storage)
+data/pdf_corpus/
+data/rag_extracted/
+data/rag_index/

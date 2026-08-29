@@ -37,6 +37,10 @@ defensible claim. Teams that treat it as allocation deliver a specific scientifi
 result with quantified error bounds. The difference is entirely in how the work is
 prioritized and when it is declared finished.
 
+> [!TIP]
+> **Looking for Hands-On Tracing Walkthroughs & Tool Tutorials?**
+> Check out the [EM Proofreading Tutorials & Community Practice Guide]({{ '/technical-training/proofreading-tutorials/' | relative_url }}) for step-by-step Neuroglancer/CAVE keybinding cheat sheets, false merge/split visual diagnosis, synapse validation criteria, and direct links to the FlyWire Academy and EyeWire platforms.
+
 ---
 
 ## What you'll be able to do

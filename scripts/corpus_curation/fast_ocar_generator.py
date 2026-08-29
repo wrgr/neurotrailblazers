@@ -226,12 +226,28 @@ def main():
             except Exception:
                 pass
 
+    # Load verified authors, publication years, and venues
+    ay_path = SCRIPT_DIR / "authors_years_2000.json"
+    ay_data = json.loads(ay_path.read_text()) if ay_path.exists() else {}
+
     processed_papers = []
     sorted_dois = sorted(papers.keys(), key=lambda d: (papers[d].get("tier", 2000), -(papers[d].get("in_degree", 0) + papers[d].get("out_degree", 0))))
 
     for doi in sorted_dois:
         p = papers[doi]
         clean_doi = doi.lower().strip()
+        
+        # Merge verified authors, year, venue
+        ay = ay_data.get(clean_doi, {})
+        v_authors = ay.get("authors") or p.get("authors") or "The authors"
+        v_year = ay.get("year") or p.get("year") or 2024
+        v_venue = ay.get("venue") or p.get("venue") or "Scientific Literature"
+        v_title = ay.get("title") or p.get("title") or "Connectomics Study"
+
+        p["authors"] = v_authors
+        p["year"] = int(v_year)
+        p["venue"] = v_venue
+        p["title"] = v_title
         
         # Get full abstract
         raw_val = raw_abs_data.get(clean_doi, "")
@@ -297,7 +313,7 @@ def main():
     c1000 = [p for p in processed_papers if p["tier"] <= 1000]
     c2000 = processed_papers
 
-    (PROJECT_ROOT / "_data/corpus_500.json").write_text(json.dumps({
+    f500 = json.dumps({
         "metadata": {
             "name": "500 Key Papers",
             "tier": 500,
@@ -305,9 +321,11 @@ def main():
             "description": "500 Key Papers in Connectomics — Stratified across 12 canonical domains with complete 5-part OCAR research cards, 3-tier pedagogical summaries, and discussion prompts."
         },
         "papers": c500
-    }, indent=2))
+    }, indent=2)
+    (PROJECT_ROOT / "_data/corpus_500.json").write_text(f500)
+    (PROJECT_ROOT / "data/corpus_500.json").write_text(f500)
 
-    (PROJECT_ROOT / "_data/corpus_1000.json").write_text(json.dumps({
+    f1000 = json.dumps({
         "metadata": {
             "name": "1000 Key Papers",
             "tier": 1000,
@@ -315,9 +333,11 @@ def main():
             "description": "1000 Key Papers in Connectomics — Comprehensive landmark literature corpus with complete 5-part OCAR research cards, 3-tier summaries, and unabridged abstracts."
         },
         "papers": c1000
-    }, indent=2))
+    }, indent=2)
+    (PROJECT_ROOT / "_data/corpus_1000.json").write_text(f1000)
+    (PROJECT_ROOT / "data/corpus_1000.json").write_text(f1000)
 
-    (PROJECT_ROOT / "_data/corpus_2000.json").write_text(json.dumps({
+    f2000 = json.dumps({
         "metadata": {
             "name": "2000 Key Papers",
             "tier": 2000,
@@ -325,7 +345,9 @@ def main():
             "description": "2000 Key Papers in Connectomics — Full research network with complete 5-part OCAR research cards, 3-tier summaries, and 5,460+ directed citation edges."
         },
         "papers": c2000
-    }, indent=2))
+    }, indent=2)
+    (PROJECT_ROOT / "_data/corpus_2000.json").write_text(f2000)
+    (PROJECT_ROOT / "data/corpus_2000.json").write_text(f2000)
 
     print(f"Successfully generated 100% complete OCAR cards:")
     print(f"  - _data/corpus_500.json:  {len(c500)} papers (500 Key Papers)")

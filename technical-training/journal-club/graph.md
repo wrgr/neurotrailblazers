@@ -346,9 +346,10 @@ content_type: core
   };
 
   var ROLE_COLORS = {
-    'foundational': '#f59e0b',
-    'hub': '#2563eb',
-    'bridge': '#10b981',
+    'core_hub': '#f59e0b',
+    'authority': '#8b5cf6',
+    'bridge': '#06b6d4',
+    'connected': '#10b981',
     'participant': '#64748b'
   };
 
@@ -378,14 +379,15 @@ content_type: core
   var searchEl = document.getElementById('jcg-search');
   var countEl = document.getElementById('jcg-count');
   var resetBtn = document.getElementById('jcg-reset');
-  var promptTriggerBtn = document.getElementById('jcg-prompt-btn');
+  var fitBtn = document.getElementById('jcg-fit');
+  var promptTriggerBtn = document.getElementById('jcg-prompt-trigger');
   var promptCountSpan = document.getElementById('jcg-prompt-count');
   var promptModal = document.getElementById('jcg-prompt-modal');
-  var promptModalClose = document.getElementById('jcg-prompt-close');
+  var promptModalClose = document.getElementById('jcg-prompt-modal-close');
   var promptTextarea = document.getElementById('jcg-prompt-textarea');
-  var modalPaperCount = document.getElementById('jcg-modal-paper-count');
-  var copyPromptBtn = document.getElementById('jcg-copy-prompt-btn');
+  var copyPromptBtn = document.getElementById('jcg-copy-prompt');
   var copyStatus = document.getElementById('jcg-copy-status');
+  var modalPaperCount = document.getElementById('jcg-modal-paper-count');
   var tooltip = document.getElementById('jcg-tooltip');
   var panel = document.getElementById('jcg-panel');
   var panelBody = document.getElementById('jcg-panel-body');
@@ -416,6 +418,11 @@ content_type: core
       return TIER_COLORS[p.tier] || '#94a3b8';
     } else if (currentColorCue === 'organism') {
       var org = (p.organism && p.organism[0]) ? p.organism[0].toLowerCase() : 'general';
+      if (org.indexOf('fly') !== -1 || org.indexOf('drosophila') !== -1) return ORGANISM_COLORS['drosophila'];
+      if (org.indexOf('elegans') !== -1 || org.indexOf('worm') !== -1) return ORGANISM_COLORS['c-elegans'];
+      if (org.indexOf('mouse') !== -1 || org.indexOf('rodent') !== -1) return ORGANISM_COLORS['mouse'];
+      if (org.indexOf('human') !== -1 || org.indexOf('h01') !== -1) return ORGANISM_COLORS['human'];
+      if (org.indexOf('zebrafish') !== -1 || org.indexOf('danio') !== -1) return ORGANISM_COLORS['zebrafish'];
       return ORGANISM_COLORS[org] || '#64748b';
     } else if (currentColorCue === 'citation_role') {
       return ROLE_COLORS[p.citation_role] || '#64748b';
@@ -440,9 +447,9 @@ content_type: core
     } else if (currentColorCue === 'tier') {
       legendTitleEl.textContent = 'Color Cue: Corpus Scale Tier';
       [
-        { k: 'Top 500 Core Flagship', c: TIER_COLORS[500] },
-        { k: 'Top 1,000 Landmark', c: TIER_COLORS[1000] },
-        { k: 'Top 2,000 Network', c: TIER_COLORS[2000] }
+        { k: '500 Key Papers', c: TIER_COLORS[500] },
+        { k: '1000 Key Papers', c: TIER_COLORS[1000] },
+        { k: '2000 Key Papers', c: TIER_COLORS[2000] }
       ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
@@ -451,18 +458,31 @@ content_type: core
       });
     } else if (currentColorCue === 'organism') {
       legendTitleEl.textContent = 'Color Cue: Model Organism';
-      Object.keys(ORGANISM_COLORS).forEach(function (k) {
+      [
+        { k: 'Drosophila (Fruit Fly)', c: ORGANISM_COLORS['drosophila'] },
+        { k: 'Mouse / Rodent', c: ORGANISM_COLORS['mouse'] },
+        { k: 'Human Cortex', c: ORGANISM_COLORS['human'] },
+        { k: 'C. elegans (Worm)', c: ORGANISM_COLORS['c-elegans'] },
+        { k: 'Zebrafish', c: ORGANISM_COLORS['zebrafish'] },
+        { k: 'Cross-Species / General', c: ORGANISM_COLORS['general'] }
+      ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
-        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + ORGANISM_COLORS[k] + '"></span>' + k.replace(/-/g, ' ').toUpperCase();
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + item.c + '"></span>' + item.k;
         legendEl.appendChild(row);
       });
     } else if (currentColorCue === 'citation_role') {
       legendTitleEl.textContent = 'Color Cue: Citation Role';
-      Object.keys(ROLE_COLORS).forEach(function (k) {
+      [
+        { k: 'Core Hub (Foundational)', c: ROLE_COLORS['core_hub'] },
+        { k: 'High-Impact Authority', c: ROLE_COLORS['authority'] },
+        { k: 'Inter-Domain Bridge', c: ROLE_COLORS['bridge'] },
+        { k: 'Connected Literature', c: ROLE_COLORS['connected'] },
+        { k: 'Network Participant', c: ROLE_COLORS['participant'] }
+      ].forEach(function (item) {
         var row = document.createElement('div');
         row.className = 'jcg-legend-item';
-        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + ROLE_COLORS[k] + '"></span>' + k.toUpperCase();
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + item.c + '"></span>' + item.k;
         legendEl.appendChild(row);
       });
     } else {
@@ -504,6 +524,8 @@ content_type: core
         summary: d.summary || '',
         citation: d.citation || '',
         cites: d.cites || [],
+        pdf_url: d.pdf_url || null,
+        is_oa: d.is_oa || false,
         x: hub.x + jitter,
         y: hub.y + jitter,
         targetX: hub.x,
@@ -519,9 +541,6 @@ content_type: core
     applyFilters();
     fitView();
     startPhysics();
-  }).catch(function (err) {
-    console.error(err);
-    countEl.textContent = 'Error loading graph data.';
   });
 
   function resizeCanvas() {
@@ -544,7 +563,15 @@ content_type: core
       if (activeEras.indexOf(p.era) === -1) return false;
       if (selectedCat !== 'all' && p.dimension !== selectedCat) return false;
       if (selectedOrg !== 'all') {
-        var orgMatch = p.organism.some(function (o) { return o.toLowerCase().indexOf(selectedOrg) !== -1; });
+        var orgMatch = p.organism.some(function (o) {
+          var lo = o.toLowerCase();
+          if (selectedOrg === 'drosophila' && (lo.indexOf('fly') !== -1 || lo.indexOf('drosophila') !== -1)) return true;
+          if (selectedOrg === 'c-elegans' && (lo.indexOf('elegans') !== -1 || lo.indexOf('worm') !== -1 || lo.indexOf('nematode') !== -1)) return true;
+          if (selectedOrg === 'mouse' && (lo.indexOf('mouse') !== -1 || lo.indexOf('rodent') !== -1 || lo.indexOf('mus') !== -1)) return true;
+          if (selectedOrg === 'human' && (lo.indexOf('human') !== -1 || lo.indexOf('homo') !== -1 || lo.indexOf('h01') !== -1)) return true;
+          if (selectedOrg === 'zebrafish' && (lo.indexOf('zebrafish') !== -1 || lo.indexOf('danio') !== -1 || lo.indexOf('fish') !== -1)) return true;
+          return lo.indexOf(selectedOrg) !== -1;
+        });
         if (!orgMatch) return false;
       }
       if (p.total_degree < minDeg) return false;
@@ -564,24 +591,24 @@ content_type: core
       if (n.doi) doiMap[n.doi] = n;
     });
 
-    // Rematerialize directed citation edges between visible nodes
+    // Extract Visible Directed Citation Edges
     visibleEdges = [];
-    visibleNodes.forEach(function (src) {
-      if (src.cites && src.cites.length) {
-        src.cites.forEach(function (targetDoi) {
-          var tgt = doiMap[targetDoi.toLowerCase()];
-          if (tgt && tgt !== src) {
+    visibleNodes.forEach(function (sourceNode) {
+      if (sourceNode.cites && sourceNode.cites.length) {
+        sourceNode.cites.forEach(function (targetDoi) {
+          var cleanTarget = targetDoi.toLowerCase().trim();
+          var targetNode = doiMap[cleanTarget];
+          if (targetNode && targetNode !== sourceNode) {
             visibleEdges.push({
-              source: src,
-              target: tgt,
-              weight: 1.0
+              source: sourceNode,
+              target: targetNode
             });
           }
         });
       }
     });
 
-    countEl.textContent = 'Showing ' + visibleNodes.length + ' papers & ' + visibleEdges.length + ' citation edges';
+    countEl.textContent = visibleNodes.length + ' papers (' + visibleEdges.length + ' citation links)';
     promptCountSpan.textContent = visibleNodes.length;
     alpha = 1.0;
 
@@ -622,7 +649,7 @@ content_type: core
     view.ty = ch / 2 - ((minY + maxY) / 2) * view.scale;
   }
 
-  // High-Performance Physics Simulation Loop with Organic Force Option
+  // High-Performance Physics Simulation Loop with Spatial Grid Optimization
   function tickPhysics() {
     if (alpha < 0.003) return;
     var dt = 0.04 * alpha;
@@ -647,29 +674,49 @@ content_type: core
         t.vy -= fy;
       }
 
-      // 2. Node Repulsion (Coulomb Repulsion)
+      // 2. Fast Spatial Grid Partition for O(N) Node Repulsion
+      var cellSize = 130;
+      var grid = {};
+      for (var i = 0; i < visibleNodes.length; i++) {
+        var n = visibleNodes[i];
+        var gx = Math.floor(n.x / cellSize);
+        var gy = Math.floor(n.y / cellSize);
+        var cellKey = gx + ':' + gy;
+        if (!grid[cellKey]) grid[cellKey] = [];
+        grid[cellKey].push(n);
+
+        // Centering gravity
+        n.vx -= n.x * 0.002 * dt;
+        n.vy -= n.y * 0.002 * dt;
+      }
+
+      // Repel only against nodes in adjacent spatial cells
       for (var i = 0; i < visibleNodes.length; i++) {
         var n1 = visibleNodes[i];
         if (n1 === draggingNode) continue;
+        var gx = Math.floor(n1.x / cellSize);
+        var gy = Math.floor(n1.y / cellSize);
 
-        // Centering gravity
-        n1.vx -= n1.x * 0.002 * dt;
-        n1.vy -= n1.y * 0.002 * dt;
-
-        for (var j = i + 1; j < visibleNodes.length; j++) {
-          var n2 = visibleNodes[j];
-          var rx = n2.x - n1.x;
-          var ry = n2.y - n1.y;
-          var r2 = rx * rx + ry * ry + 100;
-          if (r2 < 40000) {
-            var repForce = (3000 / r2) * dt;
-            var r = Math.sqrt(r2);
-            var rfx = (rx / r) * repForce;
-            var rfy = (ry / r) * repForce;
-            n1.vx -= rfx;
-            n1.vy -= rfy;
-            n2.vx += rfx;
-            n2.vy += rfy;
+        for (var ox = -1; ox <= 1; ox++) {
+          for (var oy = -1; oy <= 1; oy++) {
+            var neighborKey = (gx + ox) + ':' + (gy + oy);
+            var bucket = grid[neighborKey];
+            if (!bucket) continue;
+            for (var b = 0; b < bucket.length; b++) {
+              var n2 = bucket[b];
+              if (n2 === n1) continue;
+              var rx = n2.x - n1.x;
+              var ry = n2.y - n1.y;
+              var r2 = rx * rx + ry * ry + 80;
+              if (r2 < 35000) {
+                var repForce = (2800 / r2) * dt;
+                var r = Math.sqrt(r2);
+                var rfx = (rx / r) * repForce;
+                var rfy = (ry / r) * repForce;
+                n1.vx -= rfx;
+                n1.vy -= rfy;
+              }
+            }
           }
         }
 
@@ -689,9 +736,8 @@ content_type: core
         var dy = n.targetY - n.y;
         n.vx += dx * dt * 0.8;
         n.vy += dy * dt * 0.8;
-
-        n.vx *= 0.88;
-        n.vy *= 0.88;
+        n.vx *= 0.85;
+        n.vy *= 0.85;
         n.x += n.vx;
         n.y += n.vy;
       }
@@ -950,28 +996,31 @@ content_type: core
   function generateSynthesisPrompt() {
     var cat = dimensionEl.value === 'all' ? 'All Connectomics Subfields' : dimensionEl.options[dimensionEl.selectedIndex].text;
     var org = organismEl.value === 'all' ? 'All Model Organisms' : organismEl.options[organismEl.selectedIndex].text;
-    var count = visibleNodes.length;
+    var totalCount = visibleNodes.length;
+    var maxIncluded = Math.min(totalCount, 40);
 
-    var paperList = visibleNodes.slice(0, 40).map(function (p, idx) {
+    var paperList = visibleNodes.slice(0, maxIncluded).map(function (p, idx) {
       return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || 'Milestone connectomics contribution') + '\n   DOI: https://doi.org/' + p.doi;
     }).join('\n\n');
 
-    var truncationNote = count > 40 ? '\n\n... and ' + (count - 40) + ' additional selected papers from the curated corpus.' : '';
+    var scopeDescription = totalCount <= 40 
+      ? 'based on the following ' + totalCount + ' curated milestone publications' 
+      : 'based on the top ' + maxIncluded + ' representative milestone publications (selected from ' + totalCount + ' matching publications in the active filter)';
 
     var prompt = 'You are an expert computational neuroscientist and connectomics researcher. ' +
-      'Analyze and synthesize the current state of research based on the following ' + count + ' curated milestone publications ' +
+      'Analyze and synthesize the state of research ' + scopeDescription + ' ' +
       'focusing on: Domain = [' + cat + '] and Organism = [' + org + '].\n\n' +
-      '### Curated Literature Subset (N = ' + count + '):\n' +
-      paperList + truncationNote + '\n\n' +
+      '### Ground-Truth Milestone Publications (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' +
+      paperList + '\n\n' +
       '### Synthesis Tasks Required:\n' +
       '1. **Current State of the Subfield**: Provide an executive summary of where research in this domain currently stands based on these landmark studies.\n' +
       '2. **Major Accomplishments & Breakthroughs**: Detail the core technical or biological breakthroughs accomplished by these papers (e.g. imaging pipelines, proofreading paradigms, synaptic wiring discoveries, scaling benchmarks).\n' +
       '3. **Key Technical & Biological Challenges**: Identify the persistent bottlenecks, failure modes, and methodological debates highlighted across these works.\n' +
       '4. **Open Research Questions & Future Outlook**: What are the top 3-5 high-priority research questions that the community must address over the next 3-5 years?\n\n' +
-      'Structure your response with clear markdown headings, concise bullet points, and explicit citations to the relevant papers listed above.';
+      'Ground your analysis strictly in the ' + maxIncluded + ' publications listed above. Structure your response with clear markdown headings, concise bullet points, and explicit citations to these papers.';
 
     promptTextarea.value = prompt;
-    modalPaperCount.textContent = count;
+    modalPaperCount.textContent = totalCount;
     copyStatus.classList.add('hidden');
     promptModal.classList.remove('hidden');
   }

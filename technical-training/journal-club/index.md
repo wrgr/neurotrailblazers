@@ -89,11 +89,10 @@ content_type: core
     <span class="jc-filter-count" id="jc-count"></span>
   </div>
 
-  {%- assign shown_papers = site.data.journal_papers.papers | where_exp: "p", "p.tier <= 500" -%}
-  <p class="jc-shown-note">Showing the {{ shown_papers.size }} flagship papers in the <strong>Top 500 Core</strong> (selected by citation centrality and stratified across 12 domains) with complete OCAR research cards and 3-level summaries. Use the tier selector above to expand to 1,000 or 2,000 papers, or explore the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">interactive citation graph</a>.</p>
+  <p class="jc-shown-note">Showing <strong id="jc-shown-tier-label">500 Key Papers</strong> in Connectomics (stratified across 12 domains) with complete 5-part OCAR research cards and 3-level pedagogical summaries. Use the tier selector above to expand to 1,000 or 2,000 papers, or explore the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">interactive citation graph</a>.</p>
 
   <div class="jc-grid" id="jc-grid">
-    {% assign sorted_papers = shown_papers | sort: "year" | reverse %}
+    {% assign sorted_papers = site.data.journal_papers.papers | sort: "year" | reverse %}
     {% for paper in sorted_papers %}
       {% include cards/journal-paper-card.html paper=paper %}
     {% endfor %}
@@ -214,6 +213,10 @@ content_type: core
 
     countEl.textContent = visible + ' of ' + cards.length + ' papers';
     emptyEl.classList.toggle('hidden', visible > 0);
+    var labelEl = document.getElementById('jc-shown-tier-label');
+    if (labelEl) {
+      labelEl.textContent = maxTier === 500 ? '500 Key Papers' : (maxTier === 1000 ? '1000 Key Papers' : '2000 Key Papers');
+    }
   }
 
   function applySort() {

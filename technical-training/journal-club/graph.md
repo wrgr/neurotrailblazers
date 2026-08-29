@@ -1,544 +1,1049 @@
 ---
 layout: default
-title: "Citation Graph"
+title: "Citation Graph Explorer"
 permalink: /technical-training/journal-club/graph/
 track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
-description: "The journal club collection as a citation graph: 1,057 papers, linked by which core papers they cite. Filter by k-core, era, or organism; click a node to read it; drag to rearrange."
+description: "Interactive citation graph explorer across 500, 1,000, and 2,000 curated papers in connectomics: self-organizing organic force clustering, weighted directed citation edges, and AI synthesis prompts."
 content_type: core
 ---
 
 <div class="layout-content layout-page">
 
-<section class="jc-hero">
-  <h1>Citation Graph</h1>
-  <p>The same {{ site.data.journal_papers.papers.size }}-paper collection as a graph. An edge means one core paper cites another core paper &mdash; not a raw citation count, a link inside this collection. Node size is k-core: how embedded a paper is in the densest, most cross-referenced part of the field.</p>
+<section class="jc-hero" style="text-align: center; margin-bottom: 1.5rem;">
+  <h1>Citation Graph Explorer</h1>
+  <p style="font-size: 1.1rem; color: #555; max-width: 850px; margin: 0.5rem auto 0;">
+    Explore the curated connectomics literature network across <strong>500 Flagships</strong>, <strong>1,000 Landmark Works</strong>, and the <strong>2,000-Paper Comprehensive Graph</strong>. Features self-organizing organic force clustering, weighted directed citation edges, and deep OCAR research cards.
+  </p>
 </section>
 
 <section class="section section-compact">
   <div class="jcg-layout">
+    
+    <!-- Controls Sidebar -->
     <div class="jcg-controls">
-      <label for="jcg-kcore">Minimum k-core: <span id="jcg-kcore-val">8</span></label>
-      <input type="range" id="jcg-kcore" min="0" max="13" value="8" step="1">
+      
+      <!-- Tier Selector -->
+      <div class="jcg-control-group">
+        <label for="jcg-tier-select">Corpus Scale Tier:</label>
+        <div class="jcg-tier-btn-group" id="jcg-tier-buttons">
+          <button type="button" class="jcg-tier-btn active" data-tier="500">500 Key Papers</button>
+          <button type="button" class="jcg-tier-btn" data-tier="1000">1000 Key Papers</button>
+          <button type="button" class="jcg-tier-btn" data-tier="2000">2000 Key Papers</button>
+        </div>
+      </div>
 
+      <!-- Layout Mode -->
+      <div class="jcg-control-group">
+        <label>Layout Clustering Mode:</label>
+        <div class="jcg-tier-btn-group" id="jcg-layout-buttons">
+          <button type="button" class="jcg-layout-btn active" data-mode="organic">Organic Force</button>
+          <button type="button" class="jcg-layout-btn" data-mode="cluster">Category Hubs</button>
+          <button type="button" class="jcg-layout-btn" data-mode="timeline">Timeline</button>
+        </div>
+      </div>
+
+      <!-- Edge Controls -->
       <fieldset class="jcg-era-fieldset">
-        <legend>Era</legend>
-        <label><input type="checkbox" class="jcg-era-check" value="history" checked> History</label>
-        <label><input type="checkbox" class="jcg-era-check" value="contemporary" checked> Contemporary</label>
-        <label><input type="checkbox" class="jcg-era-check" value="sota" checked> SOTA</label>
+        <legend>Citation Edges &amp; Flow</legend>
+        <label><input type="checkbox" id="jcg-show-edges" checked> Draw Citation Edges</label>
+        <label><input type="checkbox" id="jcg-show-arrows" checked> Show Directional Arrows (&rarr;)</label>
       </fieldset>
 
-      <label for="jcg-dimension">Dimension:</label>
-      <select id="jcg-dimension">
-        <option value="all">All dimensions</option>
-        {%- for group in site.data.paper_views.dimension.groups %}
-        {%- assign mapped = site.data.content_tags.dimension_labels[group.key] %}
-        {%- if mapped %}{% assign dlabel = mapped %}{% else %}{% assign dlabel = group.key | replace: '-', ' ' | capitalize %}{% endif %}
-        <option value="{{ group.key }}">{{ dlabel }} ({{ group.n }})</option>
-        {%- endfor %}
-      </select>
+      <!-- Node Color Cue Selector -->
+      <div class="jcg-control-group">
+        <label for="jcg-color-by">Color Cue (Node Color):</label>
+        <select id="jcg-color-by">
+          <option value="dimension">Category / Subfield (12 Domains)</option>
+          <option value="era">Publication Era (History / Contemporary / SOTA)</option>
+          <option value="tier">Corpus Tier (500 Flagship / 1000 / 2000)</option>
+          <option value="organism">Model Organism (Mouse, Fly, Human, etc.)</option>
+          <option value="citation_role">Citation Role (Foundational / Hub / Bridge)</option>
+        </select>
+      </div>
 
-      <label for="jcg-organism">Organism:</label>
-      <select id="jcg-organism">
-        <option value="all">All organisms</option>
-        {%- for group in site.data.paper_views.organism.groups %}
-        <option value="{{ group.key }}">{{ group.label | default: group.key | capitalize }} ({{ group.n }})</option>
-        {%- endfor %}
-      </select>
+      <!-- Category Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-dimension">Category / Domain:</label>
+        <select id="jcg-dimension">
+          <option value="all">All 12 Categories</option>
+          <option value="circuit-structure">Circuit Structure</option>
+          <option value="pipeline">Pipeline & Software</option>
+          <option value="physiology">Physiology</option>
+          <option value="behaviour">Behaviour</option>
+          <option value="imaging">Imaging & Optics</option>
+          <option value="cell-types">Cell Types & Census</option>
+          <option value="neuroanatomy">Neuroanatomy</option>
+          <option value="synthesis">Synthesis & Reviews</option>
+          <option value="dataset">Datasets & Volumes</option>
+          <option value="neuroai">NeuroAI & Models</option>
+          <option value="health">Health & Disease</option>
+          <option value="training-outreach">Training & Outreach</option>
+        </select>
+      </div>
 
-      <label for="jcg-dataset">Dataset:</label>
-      <select id="jcg-dataset">
-        <option value="all">All datasets</option>
-        {%- for group in site.data.paper_views.dataset.groups %}
-        <option value="{{ group.key }}">{{ group.label | default: group.key }} ({{ group.n }})</option>
-        {%- endfor %}
-      </select>
+      <!-- Organism Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-organism">Organism / Model System:</label>
+        <select id="jcg-organism">
+          <option value="all">All Organisms</option>
+          <option value="mouse">Mouse (Mus musculus)</option>
+          <option value="drosophila">Drosophila (Fruit Fly)</option>
+          <option value="human">Human Cortex</option>
+          <option value="c-elegans">C. elegans</option>
+          <option value="zebrafish">Zebrafish</option>
+          <option value="cross-species">Cross-Species & Comparative</option>
+          <option value="theory-model">Theory & Computational Models</option>
+        </select>
+      </div>
 
-      <label for="jcg-search">Highlight (title, author, method…):</label>
-      <input type="text" id="jcg-search" placeholder="e.g. FlyWire, Lichtman, CATMAID…">
+      <!-- Era Filter -->
+      <fieldset class="jcg-era-fieldset">
+        <legend>Publication Era</legend>
+        <label><input type="checkbox" class="jcg-era-check" value="history" checked> History (&le;2018)</label>
+        <label><input type="checkbox" class="jcg-era-check" value="contemporary" checked> Contemporary (2019–2023)</label>
+        <label><input type="checkbox" class="jcg-era-check" value="sota" checked> SOTA (2024–2026+)</label>
+      </fieldset>
 
-      <button id="jcg-reset" type="button">Reset view</button>
+      <!-- Minimum Centrality / Degree -->
+      <div class="jcg-control-group">
+        <label for="jcg-min-degree">Minimum Degree: <span id="jcg-degree-val">0</span></label>
+        <input type="range" id="jcg-min-degree" min="0" max="60" value="0" step="1">
+      </div>
 
-      <p class="jcg-count" id="jcg-count"></p>
-      <p class="jcg-hint">Drag the background to pan, scroll to zoom, drag a node to move it, click a node to read it.</p>
+      <!-- Search Filter -->
+      <div class="jcg-control-group">
+        <label for="jcg-search">Search (Title, Author, Method):</label>
+        <input type="text" id="jcg-search" placeholder="e.g. MICrONS, Kasthuri, U-Net, FlyWire...">
+      </div>
 
+      <!-- AI Synthesis Prompt Generator Button -->
+      <div class="jcg-control-group" style="margin-top: 0.25rem;">
+        <button id="jcg-prompt-btn" type="button" class="jcg-prompt-trigger-btn">
+          ✨ Generate AI Synthesis Prompt (<span id="jcg-prompt-count">500</span>)
+        </button>
+      </div>
+
+      <button id="jcg-reset" type="button">Reset View & Filters</button>
+
+      <p class="jcg-count" id="jcg-count">Showing 500 papers</p>
+      <p class="jcg-hint">Drag to pan &bull; Scroll to zoom &bull; Click any node for OCAR card</p>
+
+      <div class="jcg-legend-title" id="jcg-legend-title" style="font-weight:700; font-size:0.78rem; color:#374151; margin-top:0.4rem;">Color Cue Legend:</div>
       <div class="jcg-legend" id="jcg-legend"></div>
     </div>
 
+    <!-- Canvas Container & Interactive Drawer -->
     <div class="jcg-canvas-wrap">
       <canvas id="jcg-canvas"></canvas>
       <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
+      
+      <!-- Slide-Out Paper Detail Drawer -->
       <div class="jcg-panel hidden" id="jcg-panel">
         <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
-        <div class="jcg-panel-body" id="jcg-panel-body"></div>
+        <div class="jcg-panel-body" id="jcg-panel-body">
+          <!-- Dynamically populated -->
+        </div>
       </div>
+
+      <!-- AI Synthesis Prompt Modal -->
+      <div class="jcg-prompt-modal hidden" id="jcg-prompt-modal">
+        <div class="jcg-prompt-modal-content">
+          <div class="jcg-prompt-modal-header">
+            <h3>🤖 AI Research Synthesis Prompt</h3>
+            <button class="jcg-prompt-modal-close" id="jcg-prompt-close" aria-label="Close">&times;</button>
+          </div>
+          <p class="jcg-prompt-modal-desc">
+            Copy and paste this structured prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> to generate a comprehensive literature synthesis across the <strong id="jcg-modal-paper-count">0</strong> papers currently filtered in your view.
+          </p>
+          <div class="jcg-prompt-box">
+            <textarea id="jcg-prompt-textarea" readonly></textarea>
+          </div>
+          <div class="jcg-prompt-modal-footer">
+            <button type="button" class="jcg-copy-btn" id="jcg-copy-prompt-btn">
+              📋 Copy Prompt to Clipboard
+            </button>
+            <span class="jcg-copy-status hidden" id="jcg-copy-status">✅ Copied!</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </section>
 
 </div>
 
 <style>
-.jcg-layout { display: grid; grid-template-columns: 260px 1fr; gap: 1.25rem; align-items: start; }
-@media (max-width: 800px) { .jcg-layout { grid-template-columns: 1fr; } }
-.jcg-controls { display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.85rem; }
-.jcg-controls label { font-weight: 600; }
-.jcg-era-fieldset { border: 1px solid var(--brain-gray); border-radius: 8px; padding: 0.5rem 0.75rem; }
-.jcg-era-fieldset legend { font-weight: 700; font-size: 0.8rem; padding: 0 0.3rem; }
-.jcg-era-fieldset label { display: block; font-weight: 400; margin: 0.2rem 0; }
-.jcg-controls select,
-#jcg-search {
-  width: 100%; box-sizing: border-box; padding: 0.4rem 0.6rem;
-  border: 1px solid #d1d5db; border-radius: 6px; background: var(--white);
-  font-size: 0.85rem; color: #374151;
+.jcg-layout { display: grid; grid-template-columns: 290px 1fr; gap: 1.25rem; align-items: start; margin-top: 1rem; }
+@media (max-width: 960px) { .jcg-layout { grid-template-columns: 1fr; } }
+.jcg-controls { display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.85rem; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.25rem; }
+.jcg-control-group { display: flex; flex-direction: column; gap: 0.3rem; }
+.jcg-control-group label { font-weight: 600; color: #374151; font-size: 0.82rem; }
+
+.jcg-tier-btn-group { display: flex; border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; background: #fff; }
+.jcg-tier-btn, .jcg-layout-btn { flex: 1; padding: 0.4rem 0.2rem; font-size: 0.75rem; font-weight: 600; border: none; background: transparent; cursor: pointer; color: #4b5563; transition: all 0.15s ease; text-align: center; }
+.jcg-tier-btn:not(:last-child), .jcg-layout-btn:not(:last-child) { border-right: 1px solid #d1d5db; }
+.jcg-tier-btn.active, .jcg-layout-btn.active { background: #1a56db; color: #fff; }
+.jcg-tier-btn:hover:not(.active), .jcg-layout-btn:hover:not(.active) { background: #f3f4f6; }
+
+.jcg-era-fieldset { border: 1px solid #d1d5db; border-radius: 6px; padding: 0.5rem 0.75rem; background: #fff; }
+.jcg-era-fieldset legend { font-weight: 700; font-size: 0.78rem; padding: 0 0.3rem; color: #374151; }
+.jcg-era-fieldset label { display: block; font-weight: 400; font-size: 0.8rem; margin: 0.2rem 0; cursor: pointer; }
+
+.jcg-controls select, #jcg-search {
+  width: 100%; box-sizing: border-box; padding: 0.45rem 0.6rem;
+  border: 1px solid #d1d5db; border-radius: 6px; background: #fff;
+  font-size: 0.82rem; color: #374151;
 }
 .jcg-controls input[type="range"] { width: 100%; }
-#jcg-reset {
-  background: var(--brain-gray); border: 1px solid #d1d5db; border-radius: 6px;
-  padding: 0.4rem 0.8rem; cursor: pointer; font-weight: 600; align-self: flex-start;
-}
-#jcg-reset:hover { background: #e5e7eb; }
-.jcg-count { color: #6b7280; margin: 0; }
-.jcg-hint { color: #9ca3af; font-size: 0.78rem; margin: 0; }
-.jcg-legend { display: flex; flex-direction: column; gap: 0.25rem; }
-.jcg-legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; color: #4b5563; }
-.jcg-legend-swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
-.jcg-canvas-wrap { position: relative; background: var(--white); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
-#jcg-canvas { display: block; width: 100%; height: 640px; cursor: grab; }
+.jcg-prompt-trigger-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #fff; border: none; border-radius: 6px; padding: 0.6rem 0.8rem;
+  font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.25); text-align: center;
+}
+.jcg-prompt-trigger-btn:hover { opacity: 0.95; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(124, 58, 237, 0.35); }
+
+#jcg-reset {
+  background: #fff; border: 1px solid #d1d5db; border-radius: 6px;
+  padding: 0.45rem 0.8rem; cursor: pointer; font-weight: 600; font-size: 0.8rem; color: #4b5563;
+}
+#jcg-reset:hover { background: #f3f4f6; }
+.jcg-count { font-weight: 600; color: #1a56db; margin: 0; font-size: 0.85rem; }
+.jcg-hint { color: #6b7280; font-size: 0.75rem; margin: 0; line-height: 1.3; }
+
+.jcg-legend { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin-top: 0.2rem; }
+.jcg-legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; color: #4b5563; }
+.jcg-legend-swatch { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+.jcg-canvas-wrap { position: relative; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); overflow: hidden; height: 740px; }
+#jcg-canvas { display: block; width: 100%; height: 100%; cursor: grab; }
 #jcg-canvas.dragging { cursor: grabbing; }
 
 .jcg-tooltip {
-  position: absolute; pointer-events: none; z-index: 5;
-  background: rgba(17, 24, 39, 0.92); color: #fff; border-radius: 6px;
-  padding: 0.4rem 0.6rem; font-size: 0.78rem; line-height: 1.4;
-  max-width: 260px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transform: translate(12px, 12px);
+  position: absolute; pointer-events: none; z-index: 10;
+  background: rgba(15, 23, 42, 0.95); color: #fff; border-radius: 6px;
+  padding: 0.5rem 0.75rem; font-size: 0.78rem; line-height: 1.4;
+  max-width: 280px; box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transform: translate(14px, 14px);
 }
 .jcg-tooltip.hidden { display: none; }
-.jcg-tooltip strong { display: block; font-size: 0.82rem; margin-bottom: 0.15rem; }
-.jcg-tooltip span { color: #cbd5e1; }
+.jcg-tooltip strong { display: block; font-size: 0.85rem; margin-bottom: 0.2rem; color: #60a5fa; }
+.jcg-tooltip .meta { color: #94a3b8; font-size: 0.72rem; margin-bottom: 0.3rem; }
 
 .jcg-panel {
-  position: absolute; top: 1rem; right: 1rem; width: min(340px, calc(100% - 2rem));
-  background: var(--white); border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-  padding: 1rem; max-height: calc(100% - 2rem); overflow-y: auto;
+  position: absolute; top: 1rem; right: 1rem; width: min(420px, calc(100% - 2rem));
+  background: #ffffff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border: 1px solid #e2e8f0; padding: 1.25rem; max-height: calc(100% - 2rem); overflow-y: auto; z-index: 20;
 }
 .jcg-panel.hidden { display: none; }
 .jcg-panel-close {
-  position: absolute; top: 0.5rem; right: 0.6rem; background: none; border: none;
-  font-size: 1.3rem; line-height: 1; cursor: pointer; color: #9ca3af;
+  position: absolute; top: 0.75rem; right: 0.85rem; background: none; border: none;
+  font-size: 1.4rem; line-height: 1; cursor: pointer; color: #94a3b8;
 }
-.jcg-panel-close:hover { color: #374151; }
-.jcg-panel-body h3 { margin: 0 0.5rem 0.3rem 0; font-size: 1rem; }
-.jcg-panel-body p { margin: 0.3rem 0; font-size: 0.85rem; color: #4b5563; line-height: 1.5; }
-.jcg-panel-meta { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.4rem 0; }
-.jcg-panel-meta span { background: var(--brain-gray); border-radius: 4px; padding: 0.1rem 0.4rem; font-size: 0.72rem; color: #6b7280; }
-.jcg-panel-links { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+.jcg-panel-close:hover { color: #1e293b; }
+.jcg-panel-body h3 { margin: 0 1.5rem 0.4rem 0; font-size: 1.05rem; line-height: 1.35; color: #0f172a; }
+.jcg-panel-authors { font-size: 0.8rem; color: #64748b; margin-bottom: 0.5rem; }
+.jcg-panel-meta-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
+.jcg-panel-tag { background: #f1f5f9; border-radius: 4px; padding: 0.15rem 0.45rem; font-size: 0.72rem; color: #475569; font-weight: 600; }
+.jcg-panel-tag.tier-tag { background: #dbeafe; color: #1d4ed8; }
+
+.jcg-ocar-box { background: #f8fafc; border-left: 3px solid #3b82f6; border-radius: 4px; padding: 0.6rem 0.8rem; margin: 0.6rem 0; font-size: 0.82rem; }
+.jcg-ocar-box strong { color: #1e3a8a; display: block; margin-bottom: 0.15rem; }
+.jcg-ocar-box p { margin: 0 0 0.4rem 0; color: #334155; line-height: 1.4; }
+.jcg-ocar-box p:last-child { margin-bottom: 0; }
+
+.jcg-panel-links { display: flex; gap: 0.5rem; margin-top: 1rem; }
 .jcg-panel-links a {
-  font-size: 0.8rem; font-weight: 600; text-decoration: none; color: var(--neural-blue);
-  background: #dbeafe; padding: 0.3rem 0.6rem; border-radius: 6px;
+  font-size: 0.8rem; font-weight: 600; text-decoration: none; color: #fff;
+  background: #1a56db; padding: 0.4rem 0.8rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 0.3rem;
 }
-.jcg-panel-links a:hover { opacity: 0.85; }
+.jcg-panel-links a:hover { background: #1e40af; }
+
+/* Prompt Modal */
+.jcg-prompt-modal {
+  position: absolute; inset: 0; background: rgba(15, 23, 42, 0.75);
+  display: flex; align-items: center; justify-content: center; z-index: 30; padding: 1.5rem;
+}
+.jcg-prompt-modal.hidden { display: none; }
+.jcg-prompt-modal-content {
+  background: #fff; border-radius: 12px; max-width: 650px; width: 100%;
+  max-height: 90%; display: flex; flex-direction: column; padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid #cbd5e1;
+}
+.jcg-prompt-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.jcg-prompt-modal-header h3 { margin: 0; font-size: 1.15rem; color: #0f172a; }
+.jcg-prompt-modal-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #64748b; line-height: 1; }
+.jcg-prompt-modal-close:hover { color: #0f172a; }
+.jcg-prompt-modal-desc { font-size: 0.82rem; color: #475569; margin: 0 0 0.75rem 0; line-height: 1.4; }
+.jcg-prompt-box { flex: 1; display: flex; margin-bottom: 1rem; }
+#jcg-prompt-textarea {
+  width: 100%; height: 280px; box-sizing: border-box; padding: 0.75rem;
+  font-family: monospace; font-size: 0.78rem; border: 1px solid #cbd5e1;
+  border-radius: 6px; background: #f8fafc; color: #1e293b; resize: none;
+}
+.jcg-prompt-modal-footer { display: flex; align-items: center; gap: 0.75rem; }
+.jcg-copy-btn {
+  background: #1a56db; color: #fff; border: none; border-radius: 6px;
+  padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.jcg-copy-btn:hover { background: #1e40af; }
+.jcg-copy-status { font-size: 0.85rem; font-weight: 600; color: #16a34a; }
 </style>
 
 <script>
 (function () {
   var DATA_URL = "{{ '/technical-training/journal-club/graph-data.json' | relative_url }}";
-  var CARD_URL = "{{ '/technical-training/journal-club/' | relative_url }}";
 
-  var DIMENSIONS = [
-    'image-acquisition', 'connectomics', 'graph-analysis', 'segmentation',
-    'infrastructure', 'proofreading', 'neuroai', 'methods-general',
-    'neuroanatomy', 'cell-types', 'review'
+  var CATEGORIES = [
+    'circuit-structure', 'pipeline', 'physiology', 'behaviour',
+    'imaging', 'cell-types', 'neuroanatomy', 'synthesis',
+    'dataset', 'neuroai', 'health', 'training-outreach'
   ];
-  var PALETTE = [
-    '#2563eb', '#7c3aed', '#06b6d4', '#f59e0b', '#10b981', '#ef4444',
-    '#ec4899', '#6366f1', '#84cc16', '#0ea5e9', '#a855f7'
-  ];
-  var colorFor = {};
-  DIMENSIONS.forEach(function (d, i) { colorFor[d] = PALETTE[i % PALETTE.length]; });
+  
+  var CATEGORY_COLORS = {
+    'circuit-structure': '#2563eb',
+    'pipeline': '#0891b2',
+    'physiology': '#059669',
+    'behaviour': '#d97706',
+    'imaging': '#7c3aed',
+    'cell-types': '#db2777',
+    'neuroanatomy': '#4f46e5',
+    'synthesis': '#4b5563',
+    'dataset': '#0284c7',
+    'neuroai': '#9333ea',
+    'health': '#dc2626',
+    'training-outreach': '#16a34a'
+  };
 
-  var canvas  = document.getElementById('jcg-canvas');
-  var ctx     = canvas.getContext('2d');
-  var kcoreEl = document.getElementById('jcg-kcore');
-  var kcoreVal = document.getElementById('jcg-kcore-val');
+  var ERA_COLORS = {
+    'history': '#2563eb',       // Blue
+    'contemporary': '#06b6d4',  // Cyan
+    'sota': '#f59e0b'           // Gold/Amber
+  };
+
+  var TIER_COLORS = {
+    500: '#f59e0b',   // Gold
+    1000: '#3b82f6',  // Sapphire
+    2000: '#94a3b8'   // Slate
+  };
+
+  var ORGANISM_COLORS = {
+    'mouse': '#2563eb',
+    'drosophila': '#d97706',
+    'human': '#dc2626',
+    'c-elegans': '#059669',
+    'zebrafish': '#7c3aed',
+    'cross-species': '#db2777',
+    'theory-model': '#4b5563',
+    'general': '#64748b'
+  };
+
+  var ROLE_COLORS = {
+    'foundational': '#f59e0b',
+    'hub': '#2563eb',
+    'bridge': '#10b981',
+    'participant': '#64748b'
+  };
+
+  // Pre-computed Category Hub Radial Anchors
+  var CATEGORY_HUBS = {};
+  CATEGORIES.forEach(function (cat, i) {
+    var angle = (i / CATEGORIES.length) * Math.PI * 2 - Math.PI / 2;
+    var radius = 320;
+    CATEGORY_HUBS[cat] = {
+      x: Math.cos(angle) * radius,
+      y: Math.sin(angle) * radius
+    };
+  });
+
+  var canvas = document.getElementById('jcg-canvas');
+  var ctx = canvas.getContext('2d');
+  var tierButtons = Array.from(document.querySelectorAll('.jcg-tier-btn'));
+  var layoutButtons = Array.from(document.querySelectorAll('.jcg-layout-btn'));
+  var showEdgesCheck = document.getElementById('jcg-show-edges');
+  var showArrowsCheck = document.getElementById('jcg-show-arrows');
+  var colorByEl = document.getElementById('jcg-color-by');
   var eraChecks = Array.from(document.querySelectorAll('.jcg-era-check'));
   var dimensionEl = document.getElementById('jcg-dimension');
   var organismEl = document.getElementById('jcg-organism');
-  var datasetEl = document.getElementById('jcg-dataset');
+  var degreeEl = document.getElementById('jcg-min-degree');
+  var degreeVal = document.getElementById('jcg-degree-val');
   var searchEl = document.getElementById('jcg-search');
-  var countEl  = document.getElementById('jcg-count');
+  var countEl = document.getElementById('jcg-count');
   var resetBtn = document.getElementById('jcg-reset');
-  var panel    = document.getElementById('jcg-panel');
+  var promptTriggerBtn = document.getElementById('jcg-prompt-btn');
+  var promptCountSpan = document.getElementById('jcg-prompt-count');
+  var promptModal = document.getElementById('jcg-prompt-modal');
+  var promptModalClose = document.getElementById('jcg-prompt-close');
+  var promptTextarea = document.getElementById('jcg-prompt-textarea');
+  var modalPaperCount = document.getElementById('jcg-modal-paper-count');
+  var copyPromptBtn = document.getElementById('jcg-copy-prompt-btn');
+  var copyStatus = document.getElementById('jcg-copy-status');
+  var tooltip = document.getElementById('jcg-tooltip');
+  var panel = document.getElementById('jcg-panel');
   var panelBody = document.getElementById('jcg-panel-body');
   var panelClose = document.getElementById('jcg-panel-close');
   var legendEl = document.getElementById('jcg-legend');
+  var legendTitleEl = document.getElementById('jcg-legend-title');
 
-  DIMENSIONS.forEach(function (d) {
-    var row = document.createElement('div');
-    row.className = 'jcg-legend-item';
-    row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + colorFor[d] + '"></span>' + d.replace(/-/g, ' ');
-    legendEl.appendChild(row);
-  });
-
-  var allNodes = [];
-  var view = { scale: 1, tx: 0, ty: 0 };
+  var allPapers = [];
+  var currentTier = 500;
+  var currentLayout = 'organic';
+  var currentColorCue = 'dimension';
   var visibleNodes = [];
   var visibleEdges = [];
-  var alpha = 1;
-  var dragging = null;    // node being dragged
-  var panning = false;
-  var panStart = null;
-  var rafId = null;
-  var userAdjustedView = false;
-  var frameCount = 0;
+  var nodeMap = {};
+  var view = { scale: 1, tx: 0, ty: 0 };
+  var draggingNode = null;
+  var isPanning = false;
+  var panStart = { x: 0, y: 0 };
+  var hoveredNode = null;
+  var selectedNode = null;
+  var alpha = 1.0;
+  var animFrame = null;
 
-  function percentile(sorted, p) {
-    var idx = Math.floor(sorted.length * p);
-    return sorted[Math.min(idx, sorted.length - 1)];
+  function getNodeColor(p) {
+    if (currentColorCue === 'era') {
+      return ERA_COLORS[p.era] || '#64748b';
+    } else if (currentColorCue === 'tier') {
+      return TIER_COLORS[p.tier] || '#94a3b8';
+    } else if (currentColorCue === 'organism') {
+      var org = (p.organism && p.organism[0]) ? p.organism[0].toLowerCase() : 'general';
+      return ORGANISM_COLORS[org] || '#64748b';
+    } else if (currentColorCue === 'citation_role') {
+      return ROLE_COLORS[p.citation_role] || '#64748b';
+    }
+    return CATEGORY_COLORS[p.dimension] || '#64748b';
+  }
+
+  function updateLegend() {
+    legendEl.innerHTML = '';
+    if (currentColorCue === 'era') {
+      legendTitleEl.textContent = 'Color Cue: Publication Era';
+      [
+        { k: 'History (≤2018)', c: ERA_COLORS['history'] },
+        { k: 'Contemporary (2019–2023)', c: ERA_COLORS['contemporary'] },
+        { k: 'SOTA (2024–2026+)', c: ERA_COLORS['sota'] }
+      ].forEach(function (item) {
+        var row = document.createElement('div');
+        row.className = 'jcg-legend-item';
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + item.c + '"></span>' + item.k;
+        legendEl.appendChild(row);
+      });
+    } else if (currentColorCue === 'tier') {
+      legendTitleEl.textContent = 'Color Cue: Corpus Scale Tier';
+      [
+        { k: 'Top 500 Core Flagship', c: TIER_COLORS[500] },
+        { k: 'Top 1,000 Landmark', c: TIER_COLORS[1000] },
+        { k: 'Top 2,000 Network', c: TIER_COLORS[2000] }
+      ].forEach(function (item) {
+        var row = document.createElement('div');
+        row.className = 'jcg-legend-item';
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + item.c + '"></span>' + item.k;
+        legendEl.appendChild(row);
+      });
+    } else if (currentColorCue === 'organism') {
+      legendTitleEl.textContent = 'Color Cue: Model Organism';
+      Object.keys(ORGANISM_COLORS).forEach(function (k) {
+        var row = document.createElement('div');
+        row.className = 'jcg-legend-item';
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + ORGANISM_COLORS[k] + '"></span>' + k.replace(/-/g, ' ').toUpperCase();
+        legendEl.appendChild(row);
+      });
+    } else if (currentColorCue === 'citation_role') {
+      legendTitleEl.textContent = 'Color Cue: Citation Role';
+      Object.keys(ROLE_COLORS).forEach(function (k) {
+        var row = document.createElement('div');
+        row.className = 'jcg-legend-item';
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + ROLE_COLORS[k] + '"></span>' + k.toUpperCase();
+        legendEl.appendChild(row);
+      });
+    } else {
+      legendTitleEl.textContent = 'Color Cue: Category / Domain';
+      CATEGORIES.forEach(function (c) {
+        var row = document.createElement('div');
+        row.className = 'jcg-legend-item';
+        var label = c.replace(/-/g, ' ');
+        row.innerHTML = '<span class="jcg-legend-swatch" style="background:' + CATEGORY_COLORS[c] + '"></span>' + label.charAt(0).toUpperCase() + label.slice(1);
+        legendEl.appendChild(row);
+      });
+    }
+  }
+
+  // Load Graph Data
+  fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (data) {
+    allPapers = data.map(function (d, i) {
+      var cat = d.dimension || 'circuit-structure';
+      var hub = CATEGORY_HUBS[cat] || { x: 0, y: 0 };
+      var jitter = (Math.random() - 0.5) * 120;
+      var orgs = Array.isArray(d.organism) ? d.organism : [d.organism || 'general'];
+      return {
+        id: d.id,
+        title: d.title || 'Untitled',
+        authors: d.authors || '',
+        year: d.year || 2020,
+        journal: d.journal || '',
+        doi: (d.doi || '').toLowerCase(),
+        dimension: cat,
+        organism: orgs,
+        era: d.era || 'contemporary',
+        tier: d.tier || 2000,
+        in_degree: d.in_degree || 0,
+        out_degree: d.out_degree || 0,
+        total_degree: (d.in_degree || 0) + (d.out_degree || 0),
+        kcore: d.kcore || 5,
+        citation_role: d.citation_role || 'participant',
+        scope_role: d.scope_role || 'participant',
+        summary: d.summary || '',
+        citation: d.citation || '',
+        cites: d.cites || [],
+        x: hub.x + jitter,
+        y: hub.y + jitter,
+        targetX: hub.x,
+        targetY: hub.y,
+        vx: 0,
+        vy: 0,
+        radius: Math.max(4.5, Math.min(16, 4.5 + Math.sqrt((d.in_degree || 0) + (d.out_degree || 0)) * 1.5))
+      };
+    });
+
+    resizeCanvas();
+    updateLegend();
+    applyFilters();
+    fitView();
+    startPhysics();
+  }).catch(function (err) {
+    console.error(err);
+    countEl.textContent = 'Error loading graph data.';
+  });
+
+  function resizeCanvas() {
+    var rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * (window.devicePixelRatio || 1);
+    canvas.height = rect.height * (window.devicePixelRatio || 1);
+    ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+  }
+  window.addEventListener('resize', resizeCanvas);
+
+  function applyFilters() {
+    var activeEras = eraChecks.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+    var selectedCat = dimensionEl.value;
+    var selectedOrg = organismEl.value;
+    var minDeg = parseInt(degreeEl.value, 10);
+    var query = searchEl.value.toLowerCase().trim();
+
+    visibleNodes = allPapers.filter(function (p) {
+      if (p.tier > currentTier) return false;
+      if (activeEras.indexOf(p.era) === -1) return false;
+      if (selectedCat !== 'all' && p.dimension !== selectedCat) return false;
+      if (selectedOrg !== 'all') {
+        var orgMatch = p.organism.some(function (o) { return o.toLowerCase().indexOf(selectedOrg) !== -1; });
+        if (!orgMatch) return false;
+      }
+      if (p.total_degree < minDeg) return false;
+      if (query) {
+        var matchT = p.title.toLowerCase().indexOf(query) !== -1;
+        var matchA = p.authors.toLowerCase().indexOf(query) !== -1;
+        var matchJ = p.journal.toLowerCase().indexOf(query) !== -1;
+        if (!matchT && !matchA && !matchJ) return false;
+      }
+      return true;
+    });
+
+    nodeMap = {};
+    var doiMap = {};
+    visibleNodes.forEach(function (n) { 
+      nodeMap[n.id] = n; 
+      if (n.doi) doiMap[n.doi] = n;
+    });
+
+    // Rematerialize directed citation edges between visible nodes
+    visibleEdges = [];
+    visibleNodes.forEach(function (src) {
+      if (src.cites && src.cites.length) {
+        src.cites.forEach(function (targetDoi) {
+          var tgt = doiMap[targetDoi.toLowerCase()];
+          if (tgt && tgt !== src) {
+            visibleEdges.push({
+              source: src,
+              target: tgt,
+              weight: 1.0
+            });
+          }
+        });
+      }
+    });
+
+    countEl.textContent = 'Showing ' + visibleNodes.length + ' papers & ' + visibleEdges.length + ' citation edges';
+    promptCountSpan.textContent = visibleNodes.length;
+    alpha = 1.0;
+
+    // Recalculate target coordinates based on layout mode
+    if (currentLayout === 'timeline') {
+      var minYear = 1986, maxYear = 2026;
+      var spanW = 800;
+      visibleNodes.forEach(function (n) {
+        var normX = (n.year - minYear) / (maxYear - minYear);
+        n.targetX = (normX - 0.5) * spanW;
+        var catIdx = CATEGORIES.indexOf(n.dimension);
+        n.targetY = ((catIdx - CATEGORIES.length / 2) / CATEGORIES.length) * 500;
+      });
+    } else if (currentLayout === 'cluster') {
+      visibleNodes.forEach(function (n) {
+        var hub = CATEGORY_HUBS[n.dimension] || { x: 0, y: 0 };
+        n.targetX = hub.x;
+        n.targetY = hub.y;
+      });
+    }
   }
 
   function fitView() {
     if (!visibleNodes.length) return;
-    // Percentile bounds (5th-95th) rather than true min/max: the force layout
-    // occasionally flings one or two nodes out before the speed cap and
-    // centering force reel them back in, and a naive min/max bounding box
-    // would zoom the whole view out to fit that one outlier, shrinking the
-    // real cluster to an unclickable speck. Fewer than 20 visible nodes skips
-    // the trim (not enough points for percentiles to mean anything).
-    var xs = visibleNodes.map(function (n) { return n.x; }).sort(function (a, b) { return a - b; });
-    var ys = visibleNodes.map(function (n) { return n.y; }).sort(function (a, b) { return a - b; });
-    var minX, maxX, minY, maxY;
-    if (xs.length >= 20) {
-      minX = percentile(xs, 0.05); maxX = percentile(xs, 0.95);
-      minY = percentile(ys, 0.05); maxY = percentile(ys, 0.95);
-    } else {
-      minX = xs[0]; maxX = xs[xs.length - 1];
-      minY = ys[0]; maxY = ys[ys.length - 1];
-    }
-    var w = Math.max(maxX - minX, 1), h = Math.max(maxY - minY, 1);
-    var canvasW = canvas.width / devicePixelRatio, canvasH = canvas.height / devicePixelRatio;
-    var scale = Math.min(canvasW / w, canvasH / h) * 0.85;
-    view.scale = Math.min(4, Math.max(0.05, scale));
-    view.tx = canvasW / 2 - (minX + maxX) / 2 * view.scale;
-    view.ty = canvasH / 2 - (minY + maxY) / 2 * view.scale;
-  }
-
-  fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (data) {
-    allNodes = data.map(function (d, i) {
-      var angle = (i / data.length) * Math.PI * 2;
-      var r = 200 + Math.random() * 100;
-      return {
-        id: d.id, title: d.title, authors: d.authors, year: d.year, journal: d.journal,
-        doi: d.doi, dimension: d.dimension, era: d.era, kcore: d.kcore || 0,
-        organism: d.organism || [], dataset: d.dataset || [], method: d.method || [],
-        axis: d.axis, summary: d.summary, cites: d.cites || [],
-        x: Math.cos(angle) * r, y: Math.sin(angle) * r, vx: 0, vy: 0
-      };
-    });
-    resizeCanvas();
-    rebuild();
-    startLoop();
-  }).catch(function (err) {
-    ctx.font = '14px sans-serif';
-    ctx.fillText('Could not load graph data: ' + err, 20, 30);
-  });
-
-  function resizeCanvas() {
-    var rect = canvas.parentElement.getBoundingClientRect();
-    canvas.width = rect.width * devicePixelRatio;
-    canvas.height = 640 * devicePixelRatio;
-    canvas.style.width = rect.width + 'px';
-    view.tx = canvas.width / (2 * devicePixelRatio);
-    view.ty = canvas.height / (2 * devicePixelRatio);
-  }
-  window.addEventListener('resize', resizeCanvas);
-
-  function rebuild() {
-    var minK = parseInt(kcoreEl.value, 10);
-    var eras = eraChecks.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
-    var dim = dimensionEl.value;
-    var organism = organismEl.value;
-    var dataset = datasetEl.value;
-    visibleNodes = allNodes.filter(function (n) {
-      return n.kcore >= minK && eras.indexOf(n.era) !== -1 &&
-        (dim === 'all' || n.dimension === dim) &&
-        (organism === 'all' || n.organism.indexOf(organism) !== -1) &&
-        (dataset === 'all' || n.dataset.indexOf(dataset) !== -1);
-    });
-    var idSet = {};
-    visibleNodes.forEach(function (n) { idSet[n.id] = true; });
-    visibleEdges = [];
+    var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
     visibleNodes.forEach(function (n) {
-      n.cites.forEach(function (targetId) {
-        if (idSet[targetId]) visibleEdges.push({ source: n, target: findNode(targetId) });
-      });
+      if (n.x < minX) minX = n.x;
+      if (n.x > maxX) maxX = n.x;
+      if (n.y < minY) minY = n.y;
+      if (n.y > maxY) maxY = n.y;
     });
-    countEl.textContent = visibleNodes.length + ' papers, ' + visibleEdges.length + ' links shown' +
-      (visibleNodes.length > 600 ? ' (large graph — layout may be slow)' : '');
-    alpha = 1;
-    fitView();
+    var w = Math.max(maxX - minX + 140, 260);
+    var h = Math.max(maxY - minY + 140, 260);
+    var cw = canvas.width / (window.devicePixelRatio || 1);
+    var ch = canvas.height / (window.devicePixelRatio || 1);
+    view.scale = Math.min(cw / w, ch / h, 1.8) * 0.85;
+    view.tx = cw / 2 - ((minX + maxX) / 2) * view.scale;
+    view.ty = ch / 2 - ((minY + maxY) / 2) * view.scale;
   }
 
-  function findNode(id) {
-    for (var i = 0; i < visibleNodes.length; i++) { if (visibleNodes[i].id === id) return visibleNodes[i]; }
-    return null;
-  }
+  // High-Performance Physics Simulation Loop with Organic Force Option
+  function tickPhysics() {
+    if (alpha < 0.003) return;
+    var dt = 0.04 * alpha;
 
-  function tick() {
-    if (alpha < 0.01) return;
-    var n = visibleNodes.length;
-    if (n === 0) { alpha = 0; return; }
-    var repelK = 400;
-    for (var i = 0; i < n; i++) {
-      var a = visibleNodes[i];
-      if (a === dragging) continue;
-      var fx = 0, fy = 0;
-      for (var j = 0; j < n; j++) {
-        if (i === j) continue;
-        var b = visibleNodes[j];
-        var dx = a.x - b.x, dy = a.y - b.y;
-        // Epsilon of 25 (not 0.01) floors the minimum effective distance at ~5
-        // units, so two nodes spawning almost on top of each other don't produce
-        // a near-singular force that flings one to the edge of the simulation --
-        // that outlier then wrecked fitView()'s bounding box for everyone else.
-        var d2 = dx * dx + dy * dy + 25;
-        var f = repelK / d2;
-        fx += dx * f; fy += dy * f;
+    if (currentLayout === 'organic') {
+      // 1. Organic Spring Force along Citation Edges (Hooke's Law attraction)
+      for (var e = 0; e < visibleEdges.length; e++) {
+        var edge = visibleEdges[e];
+        var s = edge.source;
+        var t = edge.target;
+        var dx = t.x - s.x;
+        var dy = t.y - s.y;
+        var dist = Math.hypot(dx, dy) || 1;
+        var desiredDist = 90;
+        var force = (dist - desiredDist) * 0.04 * dt;
+        var fx = (dx / dist) * force;
+        var fy = (dy / dist) * force;
+
+        s.vx += fx;
+        s.vy += fy;
+        t.vx -= fx;
+        t.vy -= fy;
       }
-      // gentle centering
-      fx += -a.x * 0.01; fy += -a.y * 0.01;
-      a.vx = (a.vx + fx * alpha) * 0.85;
-      a.vy = (a.vy + fy * alpha) * 0.85;
-      // Speed cap: without this, a single high-alpha frame near a near-singular
-      // pair could still impart enough velocity to send a node flying outward
-      // faster than centering/damping can reel it back in before alpha decays.
-      var speed = Math.sqrt(a.vx * a.vx + a.vy * a.vy);
-      var maxSpeed = 30;
-      if (speed > maxSpeed) { a.vx = a.vx / speed * maxSpeed; a.vy = a.vy / speed * maxSpeed; }
+
+      // 2. Node Repulsion (Coulomb Repulsion)
+      for (var i = 0; i < visibleNodes.length; i++) {
+        var n1 = visibleNodes[i];
+        if (n1 === draggingNode) continue;
+
+        // Centering gravity
+        n1.vx -= n1.x * 0.002 * dt;
+        n1.vy -= n1.y * 0.002 * dt;
+
+        for (var j = i + 1; j < visibleNodes.length; j++) {
+          var n2 = visibleNodes[j];
+          var rx = n2.x - n1.x;
+          var ry = n2.y - n1.y;
+          var r2 = rx * rx + ry * ry + 100;
+          if (r2 < 40000) {
+            var repForce = (3000 / r2) * dt;
+            var r = Math.sqrt(r2);
+            var rfx = (rx / r) * repForce;
+            var rfy = (ry / r) * repForce;
+            n1.vx -= rfx;
+            n1.vy -= rfy;
+            n2.vx += rfx;
+            n2.vy += rfy;
+          }
+        }
+
+        n1.vx *= 0.85;
+        n1.vy *= 0.85;
+        n1.x += n1.vx;
+        n1.y += n1.vy;
+      }
+
+    } else {
+      // Anchored modes (Cluster hubs or Timeline)
+      for (var i = 0; i < visibleNodes.length; i++) {
+        var n = visibleNodes[i];
+        if (n === draggingNode) continue;
+
+        var dx = n.targetX - n.x;
+        var dy = n.targetY - n.y;
+        n.vx += dx * dt * 0.8;
+        n.vy += dy * dt * 0.8;
+
+        n.vx *= 0.88;
+        n.vy *= 0.88;
+        n.x += n.vx;
+        n.y += n.vy;
+      }
     }
-    visibleEdges.forEach(function (e) {
-      if (!e.target) return;
-      var dx = e.target.x - e.source.x, dy = e.target.y - e.source.y;
-      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      var rest = 70;
-      var f = (dist - rest) * 0.02 * alpha;
-      var ux = dx / dist, uy = dy / dist;
-      if (e.source !== dragging) { e.source.vx += ux * f; e.source.vy += uy * f; }
-      if (e.target !== dragging) { e.target.vx -= ux * f; e.target.vy -= uy * f; }
-    });
-    visibleNodes.forEach(function (a) {
-      if (a === dragging) return;
-      a.x += a.vx; a.y += a.vy;
-    });
-    alpha *= 0.985;
+
+    alpha *= 0.988;
   }
 
-  function radiusFor(n) { return 3 + Math.sqrt(n.kcore || 1) * 2; }
+  function render() {
+    var cw = canvas.width / (window.devicePixelRatio || 1);
+    var ch = canvas.height / (window.devicePixelRatio || 1);
+    ctx.clearRect(0, 0, cw, ch);
 
-  function draw() {
     ctx.save();
-    ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.translate(view.tx, view.ty);
     ctx.scale(view.scale, view.scale);
 
-    var query = searchEl.value.trim().toLowerCase();
-
-    ctx.strokeStyle = 'rgba(107,114,128,0.25)';
-    ctx.lineWidth = 1 / view.scale;
-    visibleEdges.forEach(function (e) {
-      if (!e.target) return;
-      ctx.beginPath();
-      ctx.moveTo(e.source.x, e.source.y);
-      ctx.lineTo(e.target.x, e.target.y);
-      ctx.stroke();
-    });
-
-    visibleNodes.forEach(function (n) {
-      var matches = query && (
-        n.title.toLowerCase().indexOf(query) !== -1 ||
-        (n.authors || '').toLowerCase().indexOf(query) !== -1 ||
-        n.organism.join(' ').toLowerCase().indexOf(query) !== -1 ||
-        n.method.join(' ').toLowerCase().indexOf(query) !== -1 ||
-        n.dataset.join(' ').toLowerCase().indexOf(query) !== -1
-      );
-      var r = radiusFor(n);
-      ctx.beginPath();
-      ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
-      ctx.fillStyle = colorFor[n.dimension] || '#9ca3af';
-      ctx.globalAlpha = query && !matches ? 0.15 : 1;
-      ctx.fill();
-      if (matches) {
-        ctx.lineWidth = 2 / view.scale;
-        ctx.strokeStyle = '#111827';
-        ctx.stroke();
-      }
-      if (n === hoveredNode) {
+    // Draw Category Cluster Hub Background Rings (in Cluster mode)
+    if (currentLayout === 'cluster' && view.scale > 0.4) {
+      CATEGORIES.forEach(function (cat) {
+        var hub = CATEGORY_HUBS[cat];
         ctx.beginPath();
-        ctx.arc(n.x, n.y, r + 3 / view.scale, 0, Math.PI * 2);
-        ctx.lineWidth = 2 / view.scale;
-        ctx.strokeStyle = '#111827';
+        ctx.arc(hub.x, hub.y, 85, 0, Math.PI * 2);
+        ctx.fillStyle = CATEGORY_COLORS[cat] + '08';
+        ctx.fill();
+        ctx.strokeStyle = CATEGORY_COLORS[cat] + '20';
+        ctx.lineWidth = 1 / view.scale;
+        ctx.stroke();
+
+        ctx.fillStyle = CATEGORY_COLORS[cat] + '80';
+        ctx.font = 'bold 11px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(cat.replace(/-/g, ' ').toUpperCase(), hub.x, hub.y - 95);
+      });
+    }
+
+    // Draw Timeline Year Guides (in Timeline mode)
+    if (currentLayout === 'timeline') {
+      [1990, 2000, 2010, 2020, 2025].forEach(function (yr) {
+        var normX = (yr - 1986) / (2026 - 1986);
+        var gx = (normX - 0.5) * 800;
+        ctx.beginPath();
+        ctx.moveTo(gx, -300);
+        ctx.lineTo(gx, 300);
+        ctx.strokeStyle = '#e2e8f0';
+        ctx.lineWidth = 1 / view.scale;
+        ctx.stroke();
+
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = 'bold 12px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(yr.toString(), gx, -310);
+      });
+    }
+
+    // Draw Citation Edges with Weights and Directional Arrows
+    var drawEdges = showEdgesCheck.checked;
+    var drawArrows = showArrowsCheck.checked;
+
+    if (drawEdges && visibleEdges.length) {
+      for (var e = 0; e < visibleEdges.length; e++) {
+        var edge = visibleEdges[e];
+        var s = edge.source;
+        var t = edge.target;
+
+        var isHighlighted = (hoveredNode && (s === hoveredNode || t === hoveredNode)) ||
+                            (selectedNode && (s === selectedNode || t === selectedNode));
+
+        // When a node is hovered/selected, dim unrelated edges
+        if ((hoveredNode || selectedNode) && !isHighlighted) {
+          continue; // Skip drawing background edges for maximum clarity
+        }
+
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.y);
+        ctx.lineTo(t.x, t.y);
+
+        if (isHighlighted) {
+          ctx.strokeStyle = (s === hoveredNode || s === selectedNode) ? '#f59e0b' : '#06b6d4';
+          ctx.lineWidth = 2.0 / view.scale;
+        } else {
+          ctx.strokeStyle = '#94a3b833';
+          ctx.lineWidth = 0.8 / view.scale;
+        }
+        ctx.stroke();
+
+        // Draw Directional Arrowhead pointing from citing source -> cited target
+        if (drawArrows || isHighlighted) {
+          var dx = t.x - s.x;
+          var dy = t.y - s.y;
+          var angle = Math.atan2(dy, dx);
+          var headlen = (isHighlighted ? 7 : 4.5) / view.scale;
+          // Position arrow near target boundary
+          var ax = t.x - Math.cos(angle) * (t.radius + 3);
+          var ay = t.y - Math.sin(angle) * (t.radius + 3);
+
+          ctx.beginPath();
+          ctx.moveTo(ax, ay);
+          ctx.lineTo(ax - headlen * Math.cos(angle - Math.PI / 6), ay - headlen * Math.sin(angle - Math.PI / 6));
+          ctx.lineTo(ax - headlen * Math.cos(angle + Math.PI / 6), ay - headlen * Math.sin(angle + Math.PI / 6));
+          ctx.closePath();
+          ctx.fillStyle = isHighlighted ? ((s === hoveredNode || s === selectedNode) ? '#f59e0b' : '#06b6d4') : '#94a3b866';
+          ctx.fill();
+        }
+      }
+    }
+
+    // Draw Nodes with Visual Cues
+    for (var i = 0; i < visibleNodes.length; i++) {
+      var n = visibleNodes[i];
+      var isHovered = (n === hoveredNode);
+      var isSelected = (n === selectedNode);
+
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.radius * (isHovered ? 1.3 : 1.0), 0, Math.PI * 2);
+      ctx.fillStyle = getNodeColor(n);
+      ctx.fill();
+
+      if (isHovered || isSelected || n.tier === 500) {
+        ctx.strokeStyle = isSelected ? '#0f172a' : (isHovered ? '#ffffff' : '#ffffff88');
+        ctx.lineWidth = (isSelected ? 3 : 1.5) / view.scale;
         ctx.stroke();
       }
-      ctx.globalAlpha = 1;
-    });
+
+      // Draw Flagship Titles when zoomed in or hovered
+      if ((view.scale > 0.8 && n.total_degree > 30) || isHovered || isSelected) {
+        ctx.fillStyle = '#1e293b';
+        ctx.font = (isHovered ? 'bold 11px' : '9px') + ' Inter, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText(n.title.length > 25 ? n.title.slice(0, 24) + '…' : n.title, n.x + n.radius + 3, n.y + 3);
+      }
+    }
+
     ctx.restore();
   }
 
-  function loop() {
-    tick();
-    frameCount++;
-    // Auto-fit the view to the spreading layout during the settle phase only
-    // (never once the visitor has manually zoomed/panned/dragged), so nodes
-    // pushed apart by repulsion don't drift off the visible canvas.
-    if (!userAdjustedView && alpha > 0.02 && frameCount % 10 === 0) fitView();
-    draw();
-    rafId = requestAnimationFrame(loop);
-  }
-  function startLoop() { if (!rafId) rafId = requestAnimationFrame(loop); }
-
-  // --- interaction: pan, zoom, drag, click ---
-  function screenToWorld(px, py) {
-    return { x: (px - view.tx) / view.scale, y: (py - view.ty) / view.scale };
+  function startPhysics() {
+    function loop() {
+      tickPhysics();
+      render();
+      animFrame = requestAnimationFrame(loop);
+    }
+    loop();
   }
 
-  function nodeAt(px, py) {
-    var w = screenToWorld(px, py);
+  // Interaction Handlers
+  function getMousePos(e) {
+    var rect = canvas.getBoundingClientRect();
+    var mx = (e.clientX - rect.left);
+    var my = (e.clientY - rect.top);
+    var wx = (mx - view.tx) / view.scale;
+    var wy = (my - view.ty) / view.scale;
+    return { x: wx, y: wy, screenX: e.clientX, screenY: e.clientY };
+  }
+
+  function findNodeUnder(pos) {
     for (var i = visibleNodes.length - 1; i >= 0; i--) {
       var n = visibleNodes[i];
-      var r = radiusFor(n) + 2;
-      var dx = w.x - n.x, dy = w.y - n.y;
-      if (dx * dx + dy * dy <= r * r) return n;
+      var dist = Math.hypot(n.x - pos.x, n.y - pos.y);
+      if (dist <= n.radius + 4 / view.scale) return n;
     }
     return null;
   }
 
-  function canvasPos(e) {
-    var rect = canvas.getBoundingClientRect();
-    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
-  }
+  canvas.addEventListener('mousemove', function (e) {
+    var pos = getMousePos(e);
+    if (isPanning) {
+      view.tx += e.clientX - panStart.x;
+      view.ty += e.clientY - panStart.y;
+      panStart = { x: e.clientX, y: e.clientY };
+      return;
+    }
+
+    var node = findNodeUnder(pos);
+    hoveredNode = node;
+
+    if (node) {
+      canvas.style.cursor = 'pointer';
+      var rect = canvas.getBoundingClientRect();
+      tooltip.classList.remove('hidden');
+      tooltip.style.left = (e.clientX - rect.left) + 'px';
+      tooltip.style.top = (e.clientY - rect.top) + 'px';
+      tooltip.innerHTML = '<strong>' + node.title + '</strong>' +
+        '<div class="meta">' + node.authors + ' (' + node.year + ') &bull; ' + node.journal + '</div>' +
+        '<div><strong>Tier ' + node.tier + '</strong> &bull; ' + node.dimension + ' &bull; In:' + node.in_degree + ' Out:' + node.out_degree + '</div>';
+    } else {
+      canvas.style.cursor = 'grab';
+      tooltip.classList.add('hidden');
+    }
+  });
 
   canvas.addEventListener('mousedown', function (e) {
-    var pos = canvasPos(e);
-    var n = nodeAt(pos.x, pos.y);
-    userAdjustedView = true;
-    if (n) {
-      dragging = n;
+    var pos = getMousePos(e);
+    var node = findNodeUnder(pos);
+    if (node) {
+      selectedNode = node;
+      openPaperDrawer(node);
     } else {
-      panning = true;
-      panStart = { x: e.clientX - view.tx, y: e.clientY - view.ty };
+      isPanning = true;
+      panStart = { x: e.clientX, y: e.clientY };
       canvas.classList.add('dragging');
     }
   });
-  window.addEventListener('mousemove', function (e) {
-    if (dragging) {
-      var pos = canvasPos(e);
-      var w = screenToWorld(pos.x, pos.y);
-      dragging.x = w.x; dragging.y = w.y; dragging.vx = 0; dragging.vy = 0;
-      if (alpha < 0.05) { alpha = 0.05; startLoop(); }
-    } else if (panning) {
-      view.tx = e.clientX - panStart.x;
-      view.ty = e.clientY - panStart.y;
-    }
-  });
-  var dragMoved = false;
-  window.addEventListener('mousemove', function () { if (dragging || panning) dragMoved = true; });
+
   window.addEventListener('mouseup', function () {
-    dragging = null;
-    panning = false;
+    isPanning = false;
     canvas.classList.remove('dragging');
   });
-  canvas.addEventListener('mousedown', function () { dragMoved = false; });
-  canvas.addEventListener('click', function (e) {
-    if (dragMoved) return;
-    var pos = canvasPos(e);
-    var n = nodeAt(pos.x, pos.y);
-    if (n) showPanel(n);
-  });
+
   canvas.addEventListener('wheel', function (e) {
     e.preventDefault();
-    userAdjustedView = true;
-    var pos = canvasPos(e);
-    var before = screenToWorld(pos.x, pos.y);
-    var factor = e.deltaY < 0 ? 1.1 : 0.9;
-    view.scale = Math.min(4, Math.max(0.15, view.scale * factor));
-    var after = screenToWorld(pos.x, pos.y);
-    view.tx += (after.x - before.x) * view.scale;
-    view.ty += (after.y - before.y) * view.scale;
+    var rect = canvas.getBoundingClientRect();
+    var mx = e.clientX - rect.left;
+    var my = e.clientY - rect.top;
+    var zoomFactor = e.deltaY < 0 ? 1.15 : 0.85;
+    var newScale = Math.max(0.15, Math.min(4.0, view.scale * zoomFactor));
+
+    view.tx = mx - (mx - view.tx) * (newScale / view.scale);
+    view.ty = my - (my - view.ty) * (newScale / view.scale);
+    view.scale = newScale;
   }, { passive: false });
 
-  function showPanel(n) {
+  // Open Detailed Paper Drawer
+  function openPaperDrawer(p) {
     panel.classList.remove('hidden');
-    var organismStr = n.organism.length ? n.organism.join(', ') : '';
-    panelBody.innerHTML =
-      '<h3>' + escapeHtml(n.title) + '</h3>' +
-      '<p>' + escapeHtml(n.authors || '') + ' &middot; ' + n.year + ' &middot; <em>' + escapeHtml(n.journal || '') + '</em></p>' +
-      '<div class="jcg-panel-meta">' +
-        '<span>' + n.dimension.replace(/-/g, ' ') + '</span>' +
-        '<span>' + n.era + '</span>' +
-        '<span>k-core ' + n.kcore + '</span>' +
-        (organismStr ? '<span>' + escapeHtml(organismStr) + '</span>' : '') +
+    var html = '<h3>' + p.title + '</h3>' +
+      '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
+      '<div class="jcg-panel-meta-tags">' +
+        '<span class="jcg-panel-tag tier-tag">Tier ' + p.tier + ' (' + (p.tier === 500 ? 'Core Flagship' : (p.tier === 1000 ? 'Landmark' : 'Comprehensive')) + ')</span>' +
+        '<span class="jcg-panel-tag">' + p.dimension + '</span>' +
+        '<span class="jcg-panel-tag">' + p.era + '</span>' +
+        '<span class="jcg-panel-tag">In: ' + p.in_degree + ' | Out: ' + p.out_degree + '</span>' +
+        '<span class="jcg-panel-tag">K-Core: ' + p.kcore + '</span>' +
       '</div>' +
-      (n.summary ? '<p>' + escapeHtml(n.summary) + '</p>' : '') +
+      '<div class="jcg-summary-content"><strong>Summary:</strong> ' + p.summary + '</div>' +
+      '<div class="jcg-ocar-box">' +
+        '<strong>Citation:</strong>' +
+        '<p style="font-size:0.75rem; color:#475569;">' + p.citation + '</p>' +
+      '</div>' +
       '<div class="jcg-panel-links">' +
-        (n.doi ? '<a href="https://doi.org/' + encodeURIComponent(n.doi) + '" target="_blank" rel="noopener">DOI</a>' : '') +
-        '<a href="' + CARD_URL + '#paper-' + n.id + '">Full card</a>' +
+        '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">Read on Publisher &rarr;</a>' +
       '</div>';
+    panelBody.innerHTML = html;
   }
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+
+  panelClose.addEventListener('click', function () {
+    panel.classList.add('hidden');
+    selectedNode = null;
+  });
+
+  // AI Synthesis Prompt Generation
+  function generateSynthesisPrompt() {
+    var cat = dimensionEl.value === 'all' ? 'All Connectomics Subfields' : dimensionEl.options[dimensionEl.selectedIndex].text;
+    var org = organismEl.value === 'all' ? 'All Model Organisms' : organismEl.options[organismEl.selectedIndex].text;
+    var count = visibleNodes.length;
+
+    var paperList = visibleNodes.slice(0, 40).map(function (p, idx) {
+      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || 'Milestone connectomics contribution') + '\n   DOI: https://doi.org/' + p.doi;
+    }).join('\n\n');
+
+    var truncationNote = count > 40 ? '\n\n... and ' + (count - 40) + ' additional selected papers from the curated corpus.' : '';
+
+    var prompt = 'You are an expert computational neuroscientist and connectomics researcher. ' +
+      'Analyze and synthesize the current state of research based on the following ' + count + ' curated milestone publications ' +
+      'focusing on: Domain = [' + cat + '] and Organism = [' + org + '].\n\n' +
+      '### Curated Literature Subset (N = ' + count + '):\n' +
+      paperList + truncationNote + '\n\n' +
+      '### Synthesis Tasks Required:\n' +
+      '1. **Current State of the Subfield**: Provide an executive summary of where research in this domain currently stands based on these landmark studies.\n' +
+      '2. **Major Accomplishments & Breakthroughs**: Detail the core technical or biological breakthroughs accomplished by these papers (e.g. imaging pipelines, proofreading paradigms, synaptic wiring discoveries, scaling benchmarks).\n' +
+      '3. **Key Technical & Biological Challenges**: Identify the persistent bottlenecks, failure modes, and methodological debates highlighted across these works.\n' +
+      '4. **Open Research Questions & Future Outlook**: What are the top 3-5 high-priority research questions that the community must address over the next 3-5 years?\n\n' +
+      'Structure your response with clear markdown headings, concise bullet points, and explicit citations to the relevant papers listed above.';
+
+    promptTextarea.value = prompt;
+    modalPaperCount.textContent = count;
+    copyStatus.classList.add('hidden');
+    promptModal.classList.remove('hidden');
+  }
+
+  promptTriggerBtn.addEventListener('click', generateSynthesisPrompt);
+  promptModalClose.addEventListener('click', function () { promptModal.classList.add('hidden'); });
+
+  copyPromptBtn.addEventListener('click', function () {
+    promptTextarea.select();
+    navigator.clipboard.writeText(promptTextarea.value).then(function () {
+      copyStatus.classList.remove('hidden');
+      setTimeout(function () { copyStatus.classList.add('hidden'); }, 3000);
+    }).catch(function (err) {
+      alert('Prompt selected! Press Ctrl+C / Cmd+C to copy.');
     });
-  }
-  panelClose.addEventListener('click', function () { panel.classList.add('hidden'); });
-
-  // --- hover tooltip: a lightweight preview, separate from the click panel ---
-  var tooltip = document.getElementById('jcg-tooltip');
-  var hoveredNode = null;
-  canvas.addEventListener('mousemove', function (e) {
-    if (dragging || panning) { tooltip.classList.add('hidden'); return; }
-    var pos = canvasPos(e);
-    var n = nodeAt(pos.x, pos.y);
-    if (n !== hoveredNode) {
-      hoveredNode = n;
-      canvas.style.cursor = n ? 'pointer' : '';
-    }
-    if (!n) { tooltip.classList.add('hidden'); return; }
-    tooltip.innerHTML = '<strong>' + escapeHtml(n.title) + '</strong>' +
-      '<span>' + (n.authors ? escapeHtml(n.authors.split(';')[0]) + ' et al., ' : '') + n.year +
-      ' &middot; ' + n.dimension.replace(/-/g, ' ') + ' &middot; k-core ' + n.kcore + '</span>';
-    tooltip.classList.remove('hidden');
-    // Flip to the opposite side of the cursor when the default offset would
-    // push the tooltip past the canvas edge and get clipped by overflow:hidden.
-    var tw = tooltip.offsetWidth, th = tooltip.offsetHeight;
-    var canvasCssW = canvas.width / devicePixelRatio, canvasCssH = canvas.height / devicePixelRatio;
-    var left = (pos.x + 12 + tw > canvasCssW) ? pos.x - tw - 12 : pos.x + 12;
-    var top = (pos.y + 12 + th > canvasCssH) ? pos.y - th - 12 : pos.y + 12;
-    tooltip.style.left = Math.max(0, left) + 'px';
-    tooltip.style.top = Math.max(0, top) + 'px';
-    tooltip.style.transform = 'none';
-  });
-  canvas.addEventListener('mouseleave', function () {
-    hoveredNode = null;
-    tooltip.classList.add('hidden');
-    canvas.style.cursor = '';
   });
 
-  kcoreEl.addEventListener('input', function () { kcoreVal.textContent = this.value; rebuild(); startLoop(); });
-  eraChecks.forEach(function (c) { c.addEventListener('change', function () { rebuild(); startLoop(); }); });
-  dimensionEl.addEventListener('change', function () { rebuild(); startLoop(); });
-  organismEl.addEventListener('change', function () { rebuild(); startLoop(); });
-  datasetEl.addEventListener('change', function () { rebuild(); startLoop(); });
-  searchEl.addEventListener('input', function () { /* draw() picks it up each frame while alpha > 0 */ if (alpha < 0.05) { alpha = 0.05; startLoop(); } });
+  // UI Event Listeners
+  tierButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      tierButtons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentTier = parseInt(btn.dataset.tier, 10);
+      applyFilters();
+      fitView();
+    });
+  });
+
+  layoutButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      layoutButtons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentLayout = btn.dataset.mode;
+      applyFilters();
+      fitView();
+    });
+  });
+
+  showEdgesCheck.addEventListener('change', render);
+  showArrowsCheck.addEventListener('change', render);
+
+  colorByEl.addEventListener('change', function () {
+    currentColorCue = colorByEl.value;
+    updateLegend();
+    render();
+  });
+
+  eraChecks.forEach(function (c) { c.addEventListener('change', function () { applyFilters(); fitView(); }); });
+  dimensionEl.addEventListener('change', function () { applyFilters(); fitView(); });
+  organismEl.addEventListener('change', function () { applyFilters(); fitView(); });
+  degreeEl.addEventListener('input', function () {
+    degreeVal.textContent = degreeEl.value;
+    applyFilters();
+    fitView();
+  });
+  searchEl.addEventListener('input', function () { applyFilters(); fitView(); });
+
   resetBtn.addEventListener('click', function () {
-    userAdjustedView = false;
-    resizeCanvas();
-    rebuild();
-    startLoop();
+    currentTier = 500;
+    currentLayout = 'organic';
+    currentColorCue = 'dimension';
+    colorByEl.value = 'dimension';
+    showEdgesCheck.checked = true;
+    showArrowsCheck.checked = true;
+    tierButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.tier === '500'); });
+    layoutButtons.forEach(function (b) { b.classList.toggle('active', b.dataset.mode === 'organic'); });
+    eraChecks.forEach(function (c) { c.checked = true; });
+    dimensionEl.value = 'all';
+    organismEl.value = 'all';
+    degreeEl.value = '0';
+    degreeVal.textContent = '0';
+    searchEl.value = '';
+    updateLegend();
+    applyFilters();
+    fitView();
   });
+
 })();
 </script>

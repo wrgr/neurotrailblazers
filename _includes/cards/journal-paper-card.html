@@ -9,7 +9,7 @@
 {% assign datasets = p.streams.datasets | join: ',' %}
 {% assign methods = p.streams.method | join: ',' %}
 
-<article class="jc-card" id="paper-{{ p.id }}" data-dimension="{{ p.dimension }}" data-year="{{ p.year }}" data-tags="{{ p.tags | join: ',' }}" data-id="{{ p.id }}" data-uuid="{{ p.uuid }}" data-era="{{ p.inclusion_role }}" data-kcore="{{ p.k_core }}" data-organism="{{ organisms }}" data-dataset="{{ datasets }}" data-method="{{ methods }}" data-axis="{{ p.streams.axis }}">
+<article class="jc-card" id="paper-{{ p.id }}" data-tier="{{ p.tier | default: 2000 }}" data-dimension="{{ p.dimension }}" data-year="{{ p.year }}" data-tags="{{ p.tags | join: ',' }}" data-id="{{ p.id }}" data-uuid="{{ p.uuid }}" data-era="{{ p.inclusion_role }}" data-kcore="{{ p.k_core }}" data-organism="{{ organisms }}" data-dataset="{{ datasets }}" data-method="{{ methods }}" data-axis="{{ p.streams.axis }}">
   <header class="jc-card-header">
     <div class="jc-card-meta">
       <span class="jc-card-year">{{ p.year }}</span>
@@ -134,12 +134,13 @@
     {% endif %}
   </div>
 
-  {% if p.plaintext_citation or p.bibtex %}
+  {% assign cite_text = p.citation | default: p.plaintext_citation %}
+  {% if cite_text or p.bibtex %}
   <details class="jc-card-details jc-citation-details">
     <summary>Citation</summary>
     <div class="jc-details-body">
-      {% if p.plaintext_citation %}
-      <p class="jc-citation-plain">{{ p.plaintext_citation }}</p>
+      {% if cite_text %}
+      <p class="jc-citation-plain">{{ cite_text }}</p>
       {% endif %}
       {% if p.bibtex %}
       <pre class="jc-citation-bib"><code>{{ p.bibtex | strip }}</code></pre>

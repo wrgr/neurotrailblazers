@@ -13,20 +13,19 @@ content_type: core
 <div class="layout-content layout-page">
 
 <section class="jc-hero">
-  <h1>Journal Club</h1>
-  <p>{{ site.data.journal_papers.papers.size }} connectomics papers &mdash; the full visible-core collection, selected by their place in the field's citation graph &mdash; each presented with the OCAR framework &mdash; Opportunity, Challenge, Action, Resolution, and Future Work.</p>
+  <h1>Journal Club &amp; Research Corpus</h1>
+  <p>{{ site.data.journal_papers.papers.size }} connectomics papers &mdash; a multi-tiered literature network selected by their place in the field's citation graph &mdash; each presented with the OCAR framework (Opportunity, Challenge, Action, Resolution, Future Work), 3-level summaries, and seminar discussion prompts.</p>
   <div class="jc-hero-stats">
-    <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} papers</span>
-    <span class="jc-hero-stat">{{ site.data.journal_papers.papers | map: 'dimension' | compact | uniq | size }} dimensions</span>
-    <span class="jc-hero-stat">3 expertise levels</span>
-    {%- assign jc_years = site.data.journal_papers.papers | map: 'year' | compact | sort -%}
-    <span class="jc-hero-stat">{{ jc_years | first }} &ndash; {{ jc_years | last }}</span>
+    <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} Total Papers</span>
+    <span class="jc-hero-stat">12 Research Domains</span>
+    <span class="jc-hero-stat">3 Expertise Levels</span>
+    <span class="jc-hero-stat">3 Tiers (500 / 1,000 / 2,000)</span>
   </div>
 </section>
 
 <section class="section section-compact">
-  <p>This is the full collection behind the site's paper library &mdash; not a second one. The <a href="{{ '/content-library/journal-papers/' | relative_url }}">journal paper collection</a> is a hand-picked ~96-paper path through part of this same territory, written up with key figures and discussion prompts. Reach for this page to survey what exists, filter by organism/method/era, or follow the citation graph between papers; reach for that one when you want a paper's argument laid out. See the <a href="{{ '/content-library/journal-papers/methodology/' | relative_url }}">methodology page</a> for how this collection and its graph metrics (k-core, in/out links) were built.</p>
-  <p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="jc-graph-cta">Explore the citation graph &rarr;</a></p>
+  <p>Browse the canonical connectomics literature across 12 research domains and 3 nested tiers. Use this page to survey what exists, filter by domain/organism/era, or follow the citation graph between papers. For an interactive network visualization with self-organizing organic force physics and AI synthesis prompts, explore the graph below:</p>
+  <p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="jc-graph-cta" style="background:#1a56db; color:#fff; padding:0.6rem 1.2rem; border-radius:6px; text-decoration:none; font-weight:700; display:inline-block; margin-top:0.4rem;">Explore the Interactive Citation Graph &rarr;</a></p>
 </section>
 
 <section class="section section-compact">
@@ -43,6 +42,13 @@ content_type: core
 
 <section class="section section-compact">
   <div class="jc-filters" id="jc-filters">
+    <label for="jc-tier">Corpus Tier:</label>
+    <select id="jc-tier">
+      <option value="500" selected>500 Key Papers</option>
+      <option value="1000">1000 Key Papers</option>
+      <option value="2000">2000 Key Papers</option>
+    </select>
+
     <label for="jc-expertise">Expertise:</label>
     <select id="jc-expertise">
       <option value="beginner">Beginner</option>
@@ -51,15 +57,9 @@ content_type: core
     </select>
 
     <label for="jc-dimension">Dimension:</label>
-    {%- comment -%}
-      Options are generated from the data rather than hardcoded. The hardcoded list
-      had drifted: five of its values matched no paper at all, and six dimensions
-      that do exist in the data had no option. Generating them means the filter
-      cannot silently diverge from the corpus again.
-    {%- endcomment -%}
     {%- assign dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq | sort -%}
     <select id="jc-dimension">
-      <option value="all">All dimensions</option>
+      <option value="all">All 12 dimensions</option>
       {%- for dim in dims %}
       {%- assign mapped = site.data.content_tags.dimension_labels[dim] %}
       {%- if mapped %}{% assign label = mapped %}{% else %}{% assign label = dim | replace: '-', ' ' | capitalize %}{% endif %}
@@ -73,13 +73,6 @@ content_type: core
       {%- for group in site.data.paper_views.era.groups %}
       <option value="{{ group.key }}">{{ group.label | capitalize }} ({{ group.n }})</option>
       {%- endfor %}
-    </select>
-
-    <label for="jc-kcore">Connectivity:</label>
-    <select id="jc-kcore">
-      <option value="8">k-core &ge; 8</option>
-      <option value="10">k-core &ge; 10</option>
-      <option value="13">k-core &ge; 13 (densest core)</option>
     </select>
 
     <label for="jc-sort">Sort:</label>
@@ -96,8 +89,8 @@ content_type: core
     <span class="jc-filter-count" id="jc-count"></span>
   </div>
 
-  {%- assign shown_papers = site.data.journal_papers.papers | where_exp: "p", "p.k_core >= 8" -%}
-  <p class="jc-shown-note">Showing the {{ shown_papers.size }} most-connected papers (k-core &ge; 8) of {{ site.data.journal_papers.papers.size }} in the full collection, so this page stays fast to load. For the complete corpus including less-central papers, use the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">citation graph</a> (which goes down to k-core 0) or browse by <a href="{{ '/content-library/journal-papers/' | relative_url }}">teaching dimension</a>.</p>
+  {%- assign shown_papers = site.data.journal_papers.papers | where_exp: "p", "p.tier <= 500" -%}
+  <p class="jc-shown-note">Showing the {{ shown_papers.size }} flagship papers in the <strong>Top 500 Core</strong> (selected by citation centrality and stratified across 12 domains) with complete OCAR research cards and 3-level summaries. Use the tier selector above to expand to 1,000 or 2,000 papers, or explore the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">interactive citation graph</a>.</p>
 
   <div class="jc-grid" id="jc-grid">
     {% assign sorted_papers = shown_papers | sort: "year" | reverse %}
@@ -133,10 +126,10 @@ content_type: core
   var cards     = Array.from(grid.querySelectorAll('.jc-card'));
   var countEl   = document.getElementById('jc-count');
   var emptyEl   = document.getElementById('jc-empty');
+  var tierSel   = document.getElementById('jc-tier');
   var expSel    = document.getElementById('jc-expertise');
   var dimSel    = document.getElementById('jc-dimension');
   var eraSel    = document.getElementById('jc-era');
-  var kcoreSel  = document.getElementById('jc-kcore');
   var sortSel   = document.getElementById('jc-sort');
   var searchInp = document.getElementById('jc-search');
 
@@ -161,8 +154,7 @@ content_type: core
     card.querySelector('.jc-level[data-level="' + tab.dataset.level + '"]').classList.add('active');
   });
 
-  // Click-to-filter: any chip with data-filter-field/-value (tags, organism/dataset/method
-  // streams, era badge) drives the corresponding control instead of just being decorative.
+  // Click-to-filter
   grid.addEventListener('click', function (e) {
     var chip = e.target.closest('[data-filter-field]');
     if (chip) {
@@ -189,14 +181,11 @@ content_type: core
     var target = cards.filter(function (c) { return c.dataset.id === id; })[0];
     if (!target) {
       var prev = countEl.textContent;
-      countEl.textContent = "That paper is below the k-core ≥ 8 floor shown on this page — see the citation graph instead.";
+      countEl.textContent = "That paper is not loaded in this view — see the interactive citation graph.";
       setTimeout(function () { countEl.textContent = prev; }, 4000);
       return;
     }
-    // Clear filters so the target is guaranteed visible, then scroll to it.
-    // (Note: this only reaches papers rendered on this page — k-core >= 8. A
-    // related-work link pointing below that floor won't resolve to a card here.)
-    dimSel.value = 'all'; eraSel.value = 'all'; kcoreSel.value = '8'; searchInp.value = '';
+    dimSel.value = 'all'; eraSel.value = 'all'; tierSel.value = '2000'; searchInp.value = '';
     applyFilters();
     target.scrollIntoView({ behavior: 'smooth', block: 'center' });
     target.classList.add('jc-card-flash');
@@ -204,21 +193,21 @@ content_type: core
   }
 
   function applyFilters() {
+    var maxTier = parseInt(tierSel.value, 10) || 2000;
     var dim     = dimSel.value;
     var era     = eraSel.value;
-    var minK    = parseInt(kcoreSel.value, 10) || 0;
     var query   = searchInp.value.toLowerCase().trim();
     var visible = 0;
 
     cards.forEach(function (card) {
+      var cardTier   = parseInt(card.dataset.tier, 10) || 2000;
+      var matchTier  = cardTier <= maxTier;
       var matchDim   = dim === 'all' || card.dataset.dimension === dim;
       var matchEra   = era === 'all' || card.dataset.era === era;
-      var cardK      = parseInt(card.dataset.kcore, 10) || 0;
-      var matchKcore = cardK >= minK;
       var matchQuery = !query ||
         card.textContent.toLowerCase().indexOf(query) !== -1 ||
         (card.dataset.tags && card.dataset.tags.toLowerCase().indexOf(query) !== -1);
-      var show = matchDim && matchEra && matchKcore && matchQuery;
+      var show = matchTier && matchDim && matchEra && matchQuery;
       card.classList.toggle('hidden', !show);
       if (show) visible++;
     });
@@ -242,10 +231,10 @@ content_type: core
     sorted.forEach(function (card) { grid.appendChild(card); });
   }
 
+  tierSel.addEventListener('change', applyFilters);
   expSel.addEventListener('change', function () { setExpertise(this.value); });
   dimSel.addEventListener('change', applyFilters);
   eraSel.addEventListener('change', applyFilters);
-  kcoreSel.addEventListener('change', applyFilters);
   sortSel.addEventListener('change', function () { applySort(); applyFilters(); });
   searchInp.addEventListener('input', applyFilters);
 

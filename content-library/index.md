@@ -153,29 +153,25 @@ reusable under CC BY 4.0.
 
 [Browse the EM figure library]({{ '/content-library/em-figures/' | relative_url }}) &rarr;
 
-## Journal paper collection
+## Journal paper collection & literature corpus
 
-96 papers hand-annotated across 11 teaching dimensions, each with summaries at
-**beginner**, **intermediate**, and **advanced** expertise levels, plus key figures and
-discussion prompts. See the [full collection]({{ '/content-library/journal-papers/' | relative_url }}).
+A curated collection of **2,000 landmark connectomics papers** stratified across 12 research domains and 3 nested tiers (Top 500, Top 1,000, Top 2,000). Features complete unabridged abstracts, 5-part OCAR research cards, 3-tier pedagogical summaries, and seminar discussion prompts.
 
-This is a hand-picked subset of the same underlying collection behind the
-[journal club]({{ '/technical-training/journal-club/' | relative_url }}), which holds
-the full {{ site.data.journal_papers.papers.size }}-paper visible core as structured,
-filterable data — not a second, competing library. The
-[collection index]({{ '/content-library/journal-papers/' | relative_url }}) explains
-which to reach for.
+* Explore the full structured corpus: [Journal Paper Corpus &amp; Literature Hub]({{ '/content-library/journal-papers/' | relative_url }})
+* Browse filterable cards by tier and expertise level: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+* Explore the interactive network: [Citation Graph Explorer]({{ '/technical-training/journal-club/graph/' | relative_url }})
 
-| Dimension | Papers | Focus |
-|-----------|--------|-------|
-| [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8 | Ultrastructure, synapses, spines, serial reconstruction |
-| [Imaging]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8 | SBEM, FIB-SEM, ATUM, acquisition pipelines |
-| [Computer Vision & ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | 10 | FFN, U-Net, affinity prediction, synapse detection |
-| [Data Storage & Pipelines]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 8 | CAVE, neuPrint, CATMAID, OME-Zarr, pipeline engineering |
-| [Proofreading & QC]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) | 8 | Error detection, crowd-sourced correction, QA metrics |
-| [Cell Types]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8 | Morphological, transcriptomic, connectivity-based classification |
-| [Graph Construction]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 8 | Graph encoding, comparative connectomics |
-| [Network Analysis]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | 10 | Motifs, community detection, graph matching, NBS |
-| [MRI Connectomics]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 10 | Diffusion tractography, functional connectivity, HCP |
-| [NeuroAI]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 8 | Structure-function, bio-inspired AI, model taxonomy |
-| [Case Studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 10 | C. elegans, FlyWire, MICrONS, H01, landmark datasets |
+| Dimension / Domain | Share | Top 500 | Top 2,000 | Focus Area |
+| :--- | :---: | :---: | :---: | :--- |
+| [Circuit Structure &amp; Connectomes]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 15% | 75 | 300 | Dense synaptic wiring diagrams, circuit motifs |
+| [Pipeline &amp; Software Engineering]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 15% | 75 | 300 | Automated 3D segmentation, synapse detection, CAVE |
+| [Physiological Validation &amp; Function]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 12% | 60 | 240 | In vivo 2-photon imaging, electrophysiology |
+| [Behaviour &amp; Circuit Dynamics]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 12% | 60 | 240 | Ring attractors, navigation, sensorimotor control |
+| [Volume EM &amp; Advanced Optics]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8% | 40 | 160 | SBF-SEM, FIB-SEM, multibeam arrays, tissue prep |
+| [Cell Types &amp; Morphological Census]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8% | 40 | 160 | Morphological clustering, synaptic fingerprints |
+| [Neuroanatomy &amp; Ultrastructure]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8% | 40 | 160 | Synaptic active zones, spine density, organelles |
+| [Synthesis, Theory &amp; Reviews]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 5% | 25 | 100 | Canonical field reviews, graph theory principles |
+| [Benchmark Datasets &amp; Repositories]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 5% | 25 | 100 | FlyWire, MICrONS, H01, Kasthuri volumes |
+| [NeuroAI, Biophysics &amp; Models]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 5% | 25 | 100 | Connectome-constrained artificial networks |
+| [Health, Disease &amp; Translation]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 5% | 25 | 100 | Nanoscale connectopathies, Alzheimer's, epilepsy |
+| [Workforce Training &amp; Outreach]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 2% | 10 | 40 | CIRCUIT traineeship, undergraduate pedagogy |

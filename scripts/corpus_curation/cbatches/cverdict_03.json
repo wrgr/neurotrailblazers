@@ -3,7 +3,8 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "fly"
@@ -13,25 +14,30 @@
   "classification": "imaging",
   "subclassification": "unspecified",
   "secondary_classifications": [
-   "pipeline"
+   "behaviour",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/0006-8993(86)91232-1": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
    "other"
   ]
  },
  "10.1038/s41598-017-04657-x": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "alignment",
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "zebrafish"
@@ -49,36 +55,40 @@
   "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1016/j.neures.2022.01.007": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "physiology"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1002/cne.902830203": {
-  "classification": "circuit-structure",
+  "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
+   "circuit-structure",
    "neuroanatomy"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1152/jn.90417.2008": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "physiology"
   ],
   "organism": [
@@ -86,9 +96,12 @@
   ]
  },
  "10.1126/science.abb4534": {
-  "classification": "circuit-structure",
+  "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "mouse"
   ]
@@ -97,7 +110,8 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "mri",
+   "cell-types"
   ],
   "organism": [
    "none"
@@ -107,16 +121,20 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "dataset"
+   "dataset",
+   "behaviour"
   ],
   "organism": [
    "fly"
   ]
  },
  "10.1242/prelights.11092": {
-  "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "classification": "circuit-structure",
+  "subclassification": null,
+  "secondary_classifications": [
+   "pipeline",
+   "synthesis"
+  ],
   "organism": [
    "mouse"
   ]
@@ -125,7 +143,8 @@
   "classification": "imaging",
   "subclassification": "EM",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "pipeline",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -134,15 +153,22 @@
  "10.1016/s0165-3806(98)00127-8": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
+   "rat",
    "other"
   ]
  },
  "10.3390/brainsci11121556": {
   "classification": "pipeline",
-  "subclassification": "graph-analysis",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -151,7 +177,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "imaging"
+   "mri",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -160,7 +187,10 @@
  "10.1113/jphysiol.2004.061416": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "mri"
+  ],
   "organism": [
    "rat"
   ]
@@ -168,7 +198,10 @@
  "10.1109/bibm58861.2023.10385605": {
   "classification": "pipeline",
   "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "human"
   ]
@@ -176,16 +209,20 @@
  "10.7554/elife.50566": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "circuit-structure"
+  ],
   "organism": [
    "elegans"
   ]
  },
  "10.1038/s41593-019-0520-2": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroai",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "pipeline",
+   "mri"
   ],
   "organism": [
    "none"
@@ -193,16 +230,22 @@
  },
  "10.1007/s12021-015-9274-5": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "mri",
+   "neuroai"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/nature12063": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
@@ -210,7 +253,10 @@
  "10.1038/ncomms2925": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "mri"
+  ],
   "organism": [
    "elegans"
   ]
@@ -218,19 +264,15 @@
  "10.1101/2024.09.30.615804": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.3109/01677063.2013.791692": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "fly"
   ]
@@ -239,17 +281,19 @@
   "classification": "imaging",
   "subclassification": "unspecified",
   "secondary_classifications": [
+   "mri",
    "physiology"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1009088": {
-  "classification": "neuroai",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "neuroai",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -258,7 +302,10 @@
  "10.1016/j.neuint.2019.04.005": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "neuroanatomy"
+  ],
   "organism": [
    "none"
   ]
@@ -267,6 +314,7 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
+   "mri",
    "cell-types"
   ],
   "organism": [
@@ -277,24 +325,29 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "dataset",
+   "physiology"
   ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1109/tnnls.2021.3050422": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "mri"
+  ],
   "organism": [
-   "none"
+   "human"
   ]
  },
  "10.1002/cne.2157": {
-  "classification": "circuit-structure",
+  "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
+   "circuit-structure",
    "neuroanatomy"
   ],
   "organism": [
@@ -303,8 +356,11 @@
  },
  "10.1371/journal.pgen.1011190": {
   "classification": "pipeline",
-  "subclassification": "preparation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "behaviour",
+   "circuit-structure"
+  ],
   "organism": [
    "fly"
   ]
@@ -313,7 +369,8 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "circuit-structure"
   ],
   "organism": [
    "fly"
@@ -322,16 +379,20 @@
  "10.1016/j.mee.2016.02.055": {
   "classification": "imaging",
   "subclassification": "multibeam",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.3389/fncir.2014.00112": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroai",
+  "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -341,7 +402,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -350,37 +412,40 @@
  "10.1111/j.1460-9568.2006.04728.x": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "synthesis"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1111/jnc.15316": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1101/2025.02.27.640551": {
-  "classification": "circuit-structure",
+  "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "neuroai",
+   "circuit-structure"
   ],
   "organism": [
-   "fly",
-   "elegans",
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.tcb.2014.09.008": {
   "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [
-   "imaging"
-  ],
+  "subclassification": "domain",
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -388,7 +453,10 @@
  "10.1186/gb-2013-14-9-213": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -396,7 +464,10 @@
  "10.1371/journal.pcbi.1012510": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -405,7 +476,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "health"
+   "mri",
+   "imaging"
   ],
   "organism": [
    "zebrafish"
@@ -414,26 +486,31 @@
  "10.64898/2025.12.11.693643": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.micron.2011.07.001": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "imaging",
+  "subclassification": "unspecified",
   "secondary_classifications": [
-   "imaging"
+   "synthesis",
+   "pipeline"
   ],
   "organism": [
    "none"
   ]
  },
  "10.3389/fncel.2026.1819116": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "dataset",
+   "synthesis"
   ],
   "organism": [
    "none"
@@ -442,17 +519,18 @@
  "10.1101/2024.10.03.616539": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.31234/osf.io/hqgz7": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "mri"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "human"
   ]
@@ -460,26 +538,30 @@
  "10.1152/jn.00542.2005": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "cell-types"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1523/jneurosci.20-07-02512.2000": {
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "cell-types"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1002/nbm.3941": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "mri"
+   "imaging"
   ],
   "organism": [
    "human"
@@ -489,34 +571,42 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "cell-types",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1111/cgf.70116": {
   "classification": "pipeline",
-  "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "subclassification": "segmentation",
+  "secondary_classifications": [
+   "imaging",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1101/2023.06.23.546330": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "fly"
   ]
  },
  "10.3389/fphys.2023.1091248": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "behaviour",
+  "subclassification": null,
+  "secondary_classifications": [
+   "dataset",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -530,19 +620,21 @@
   ]
  },
  "10.3389/fnana.2014.00116": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroanatomy",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1371/journal.pone.0037292": {
-  "classification": "circuit-structure",
+  "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
+   "dataset",
    "pipeline/graph-analysis"
   ],
   "organism": [
@@ -552,27 +644,29 @@
  "10.1016/0166-2236(86)90057-3": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "circuit-structure"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "other"
   ]
  },
  "10.1038/s41596-020-0320-x": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "dataset"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.crmeth.2023.100477": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
-  "secondary_classifications": [],
+  "classification": "physiology",
+  "subclassification": null,
+  "secondary_classifications": [
+   "cell-types",
+   "pipeline"
+  ],
   "organism": [
    "fly"
   ]
@@ -581,35 +675,39 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "pipeline/segmentation"
+   "imaging",
+   "dataset"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1103/physrevlett.129.068101": {
-  "classification": "neuroai",
-  "subclassification": null,
+  "classification": "synthesis",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
   ]
  },
  "10.1007/s12035-008-8018-z": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroanatomy",
+  "subclassification": null,
   "secondary_classifications": [
-   "health",
-   "neuroanatomy"
+   "synthesis",
+   "mri"
   ],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1016/j.isci.2023.108113": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "mri"
+  ],
   "organism": [
    "macaque"
   ]
@@ -618,24 +716,31 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1101/2025.08.30.673281": {
-  "classification": "physiology",
+  "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "physiology"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/s41598-017-05337-6": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "physiology"
+  ],
   "organism": [
    "mouse"
   ]
@@ -643,7 +748,10 @@
  "10.1002/cne.903330109": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
    "mouse"
   ]
@@ -652,7 +760,8 @@
   "classification": "imaging",
   "subclassification": "EM",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -661,7 +770,10 @@
  "10.1016/j.isci.2021.103506": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -670,7 +782,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "behaviour"
+   "mri",
+   "cell-types"
   ],
   "organism": [
    "none"
@@ -680,6 +793,7 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
+   "mri",
    "neuroai"
   ],
   "organism": [
@@ -689,7 +803,10 @@
  "10.1609/aaai.v36i1.19984": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -697,24 +814,32 @@
  "10.1038/s41586-026-10526-3": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
-   "fly",
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.cmpb.2022.106802": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1017/s0952523800011019": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "neuroanatomy"
+  ],
   "organism": [
    "other"
   ]
@@ -722,31 +847,43 @@
  "10.1152/jn.90635.2008": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "circuit-structure"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1113/jphysiol.2012.244392": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "circuit-structure"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1016/j.celrep.2018.06.024": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.compbiomed.2024.108456": {
   "classification": "pipeline",
-  "subclassification": "alignment",
-  "secondary_classifications": [],
+  "subclassification": "proofreading",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -754,7 +891,10 @@
  "10.3389/fnana.2016.00031": {
   "classification": "imaging",
   "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "mouse"
   ]
@@ -762,26 +902,31 @@
  "10.1159/000468974": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "other"
   ]
  },
  "10.1016/j.cell.2016.04.044": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
+  "classification": "other",
+  "subclassification": null,
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "pipeline"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.expneurol.2012.10.004": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "imaging",
+  "subclassification": "unspecified",
   "secondary_classifications": [
-   "imaging"
+   "synthesis",
+   "pipeline"
   ],
   "organism": [
    "none"
@@ -790,17 +935,18 @@
  "10.1038/s41586-024-07686-5": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "cell-types"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "fly"
   ]
  },
  "10.1145/3154353.3154366": {
   "classification": "pipeline",
-  "subclassification": "alignment",
-  "secondary_classifications": [],
+  "subclassification": "acquisition",
+  "secondary_classifications": [
+   "imaging",
+   "behaviour"
+  ],
   "organism": [
    "none"
   ]
@@ -809,28 +955,27 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1097/wco.0000000000000220": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "mri",
-   "health"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.7554/elife.38740": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -839,15 +984,21 @@
  "10.1021/acsnano.4c06103": {
   "classification": "imaging",
   "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "synthesis"
+  ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1016/j.neuron.2022.03.006": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "behaviour"
+  ],
   "organism": [
    "none"
   ]
@@ -855,34 +1006,39 @@
  "10.1371/journal.pone.0057405": {
   "classification": "imaging",
   "subclassification": "FIB-SEM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "neuroai"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/2022.07.18.500505": {
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "mri",
+   "circuit-structure"
   ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.64898/2026.06.25.734539": {
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
+   "dataset",
    "behaviour"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1103/physrevlett.127.158302": {
-  "classification": "neuroai",
-  "subclassification": null,
+  "classification": "synthesis",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -891,24 +1047,28 @@
  "10.1002/cne.25075": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "neuroanatomy"
+  ],
   "organism": [
    "mouse"
   ]
  },
  "10.48550/arxiv.2602.17997": {
-  "classification": "neuroai",
+  "classification": "dataset",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "neuroai",
+   "mri"
   ],
   "organism": [
    "fly"
   ]
  },
  "10.3389/fnsys.2022.817962": {
-  "classification": "pipeline",
-  "subclassification": "graph-analysis",
+  "classification": "synthesis",
+  "subclassification": "field",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -918,7 +1078,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "cell-types"
   ],
   "organism": [
    "mouse"
@@ -928,16 +1089,21 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "behaviour"
+   "mri",
+   "neuroanatomy"
   ],
   "organism": [
+   "human",
    "macaque"
   ]
  },
  "10.3390/diagnostics10020110": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "imaging"
+  ],
   "organism": [
    "none"
   ]
@@ -945,7 +1111,10 @@
  "10.1093/pnasnexus/pgac213": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
@@ -953,35 +1122,44 @@
  "10.3389/fnana.2017.00075": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "imaging"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fnana.2014.00119": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "mri"
+  ],
   "organism": [
+   "mouse",
    "macaque",
    "other"
   ]
  },
  "10.1007/978-1-0716-0691-9_10": {
   "classification": "imaging",
-  "subclassification": "X-ray",
+  "subclassification": "SBEM",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "pipeline",
+   "dataset"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1016/b978-0-12-415823-8.00009-5": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "elegans"
@@ -991,7 +1169,8 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroanatomy",
+   "mri"
   ],
   "organism": [
    "none"
@@ -1000,7 +1179,10 @@
  "10.1101/852863": {
   "classification": "imaging",
   "subclassification": "FIB-SEM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1009,16 +1191,20 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "circuit-structure",
+   "synthesis"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1073/pnas.1207107109": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "mri"
+  ],
   "organism": [
    "fly"
   ]
@@ -1026,16 +1212,20 @@
  "10.1523/jneurosci.4405-11.2012": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "physiology"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.7554/elife.13253": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "mri"
   ],
   "organism": [
    "fly"
@@ -1045,7 +1235,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "neuroai"
   ],
   "organism": [
    "fly"
@@ -1053,8 +1244,9 @@
  },
  "10.1101/2023.04.14.536950": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
+   "circuit-structure",
    "cell-types"
   ],
   "organism": [
@@ -1064,23 +1256,33 @@
  "10.3389/neuro.04.001.2008": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "neuroai"
+  ],
   "organism": [
-   "other"
+   "fly"
   ]
  },
  "10.1101/2024.02.07.579245": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
-   "fly"
+   "fly",
+   "other"
   ]
  },
  "10.1016/s0079-6123(01)32079-4": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -1088,7 +1290,10 @@
  "10.1016/j.cub.2023.04.041": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "circuit-structure"
+  ],
   "organism": [
    "fly"
   ]
@@ -1096,15 +1301,21 @@
  "10.1016/j.cub.2017.07.023": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "elegans"
   ]
  },
  "10.1002/0471142956.cy1236s70": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1112,7 +1323,10 @@
  "10.7554/elife.78110": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -1121,7 +1335,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "behaviour",
+   "cell-types"
   ],
   "organism": [
    "fly"
@@ -1130,7 +1345,10 @@
  "10.1016/j.crmeth.2024.100901": {
   "classification": "pipeline",
   "subclassification": "graph-analysis",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -1138,7 +1356,10 @@
  "10.1038/s41559-022-01830-y": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
@@ -1146,7 +1367,10 @@
  "10.1523/jneurosci.1143-20.2020": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
@@ -1154,7 +1378,10 @@
  "10.1523/jneurosci.1142-12.2012": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "imaging"
+  ],
   "organism": [
    "mouse"
   ]
@@ -1162,7 +1389,10 @@
  "10.1002/cne.21757": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "fly"
   ]
@@ -1171,6 +1401,7 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
+   "neuroai",
    "behaviour"
   ],
   "organism": [
@@ -1180,15 +1411,21 @@
  "10.1371/journal.pcbi.1002250": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1007/978-3-642-23623-5_84": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1196,7 +1433,10 @@
  "10.1038/s41593-017-0011-2": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "synthesis"
+  ],
   "organism": [
    "human"
   ]
@@ -1204,33 +1444,43 @@
  "10.1093/nsr/nwz053": {
   "classification": "imaging",
   "subclassification": "unspecified",
-  "secondary_classifications": [],
-  "organism": [
-   "mouse"
-  ]
- },
- "10.48550/arxiv.2509.26585": {
-  "classification": "pipeline",
-  "subclassification": "proofreading",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
- "10.1016/j.febslet.2014.05.055": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+ "10.48550/arxiv.2509.26585": {
+  "classification": "pipeline",
+  "subclassification": "segmentation",
   "secondary_classifications": [
-   "physiology"
+   "mri",
+   "dataset"
   ],
   "organism": [
-   "zebrafish"
+   "human"
+  ]
+ },
+ "10.1016/j.febslet.2014.05.055": {
+  "classification": "circuit-structure",
+  "subclassification": null,
+  "secondary_classifications": [
+   "physiology",
+   "behaviour"
+  ],
+  "organism": [
+   "none"
   ]
  },
  "10.3389/fnins.2026.1752724": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "pipeline"
+  ],
   "organism": [
    "none"
   ]
@@ -1239,32 +1489,42 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "mri",
+   "cell-types"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fncir.2018.00090": {
-  "classification": "circuit-structure",
+  "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "neuroanatomy"
+  ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1038/s41467-024-50846-4": {
   "classification": "imaging",
   "subclassification": "ssTEM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1002/glia.20374": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -1272,16 +1532,20 @@
  "10.1016/j.neuron.2014.04.023": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "mri"
+  ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1126/science.aec2171": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "dataset"
   ],
   "organism": [
    "zebrafish"
@@ -1290,7 +1554,10 @@
  "10.1101/2023.09.28.559939": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -1298,7 +1565,10 @@
  "10.1016/j.pnpbp.2025.111332": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1306,53 +1576,62 @@
  "10.1016/j.cell.2014.09.011": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
  },
  "10.1101/2022.07.20.499976": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "cell-types"
+   "dataset",
+   "imaging"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/s41467-018-03183-2": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.64898/2026.06.05.730457": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "dataset"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1073/pnas.1408545112": {
-  "classification": "physiology",
-  "subclassification": null,
-  "secondary_classifications": [
-   "circuit-structure"
-  ],
+  "classification": "synthesis",
+  "subclassification": "domain",
+  "secondary_classifications": [],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1016/j.chembiol.2019.07.007": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1360,7 +1639,10 @@
  "10.1016/j.isci.2024.109390": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "elegans"
   ]
@@ -1369,6 +1651,7 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "dataset"
   ],
   "organism": [
@@ -1376,20 +1659,22 @@
   ]
  },
  "10.1098/rstb.2002.1229": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "physiology",
+  "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "synthesis",
+   "cell-types"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.cell.2015.02.018": {
-  "classification": "physiology",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "physiology",
+   "neuroai"
   ],
   "organism": [
    "elegans"
@@ -1398,7 +1683,10 @@
  "10.1002/hipo.1031": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "mri"
+  ],
   "organism": [
    "rat"
   ]
@@ -1406,9 +1694,7 @@
  "10.1016/j.conb.2011.06.009": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "elegans"
   ]
@@ -1416,9 +1702,7 @@
  "10.21203/rs.3.rs-3146034/v1": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "cell-types"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "mouse"
   ]
@@ -1426,14 +1710,17 @@
  "10.1021/jacs.4c05397": {
   "classification": "imaging",
   "subclassification": "EM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1103/physrevlett.125.028101": {
-  "classification": "neuroai",
-  "subclassification": null,
+  "classification": "synthesis",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -1442,7 +1729,10 @@
  "10.1101/643007": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
@@ -1450,17 +1740,18 @@
  "10.1038/nn1009-1209": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "circuit-structure"
+  ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1016/j.ceb.2010.07.005": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -1468,7 +1759,10 @@
  "10.1002/glia.23618": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
@@ -1476,15 +1770,21 @@
  "10.1101/2023.06.27.546757": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "circuit-structure"
+  ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1126/science.adx1186": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -1493,7 +1793,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -1502,16 +1803,20 @@
  "10.3389/fncel.2023.1337768": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1017/s0952523815000358": {
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "circuit-structure"
   ],
   "organism": [
    "other"
@@ -1521,16 +1826,20 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "dataset"
   ],
   "organism": [
-   "zebrafish"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1007915": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "mouse"
   ]
@@ -1539,16 +1848,21 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "circuit-structure",
+   "behaviour"
   ],
   "organism": [
-   "fly"
+   "fly",
+   "other"
   ]
  },
  "10.3389/fnmol.2021.780396": {
-  "classification": "physiology",
+  "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
@@ -1557,7 +1871,8 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroai",
+   "mri"
   ],
   "organism": [
    "none"
@@ -1566,9 +1881,12 @@
  "10.1523/jneurosci.3741-14.2015": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1242/jeb.164954": {
@@ -1582,7 +1900,10 @@
  "10.1038/s41598-022-10466-8": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
@@ -1591,24 +1912,31 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "mri"
+   "mri",
+   "pipeline"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.neuron.2025.08.009": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "circuit-structure"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/827535": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
@@ -1617,25 +1945,30 @@
   "classification": "pipeline",
   "subclassification": "segmentation",
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "dataset"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1017/s143192761700349x": {
   "classification": "imaging",
-  "subclassification": "ssTEM",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fncir.2023.1175899": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -1645,7 +1978,8 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "pipeline/segmentation"
+   "dataset",
+   "neuroai"
   ],
   "organism": [
    "none"
@@ -1655,6 +1989,7 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
+   "imaging",
    "neuroanatomy"
   ],
   "organism": [
@@ -1664,33 +1999,43 @@
  "10.1364/boe.9.000230": {
   "classification": "imaging",
   "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline/preparation",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.3389/fncir.2019.00005": {
   "classification": "pipeline",
   "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.neuron.2010.08.001": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
+  "classification": "other",
+  "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "cell-types",
+   "pipeline"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/2024.09.24.614728": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "pipeline"
+  ],
   "organism": [
    "none"
   ]
@@ -1699,17 +2044,19 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "neuroai",
    "cell-types"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fncir.2020.603397": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "fly"
@@ -1718,7 +2065,10 @@
  "10.7554/elife.44186": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -1727,28 +2077,33 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "physiology"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1003921": {
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "pipeline",
+   "mri"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1101/2025.05.08.652809": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1016/j.conb.2011.08.004": {
@@ -1763,8 +2118,11 @@
  },
  "10.1039/d0nr02563a": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -1773,16 +2131,20 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "mri",
+   "neuroai"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1008824": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "circuit-structure"
+  ],
   "organism": [
    "other"
   ]
@@ -1790,46 +2152,15 @@
  "10.1016/j.neuron.2013.12.012": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "physiology"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1146/annurev-neuro-100119-110036": {
-  "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [
-   "pipeline/infrastructure"
-  ],
-  "organism": [
-   "none"
-  ]
- },
- "10.1073/pnas.2422602122": {
-  "classification": "neuroai",
-  "subclassification": null,
-  "secondary_classifications": [],
-  "organism": [
-   "none"
-  ]
- },
- "10.1016/j.ydbio.2024.06.011": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
-  "secondary_classifications": [],
-  "organism": [
-   "elegans"
-  ]
- },
- "10.7554/elife.29315": {
-  "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
-  "organism": [
-   "mouse"
-  ]
- },
- "10.1007/s10071-023-01833-7": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [],
@@ -1837,11 +2168,56 @@
    "none"
   ]
  },
+ "10.1073/pnas.2422602122": {
+  "classification": "neuroai",
+  "subclassification": null,
+  "secondary_classifications": [
+   "behaviour",
+   "physiology"
+  ],
+  "organism": [
+   "none"
+  ]
+ },
+ "10.1016/j.ydbio.2024.06.011": {
+  "classification": "imaging",
+  "subclassification": "unspecified",
+  "secondary_classifications": [
+   "pipeline",
+   "neuroanatomy"
+  ],
+  "organism": [
+   "none"
+  ]
+ },
+ "10.7554/elife.29315": {
+  "classification": "pipeline",
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "neuroanatomy",
+   "mri"
+  ],
+  "organism": [
+   "none"
+  ]
+ },
+ "10.1007/s10071-023-01833-7": {
+  "classification": "synthesis",
+  "subclassification": "domain",
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
+  "organism": [
+   "none"
+  ]
+ },
  "10.1016/j.neuron.2015.06.036": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "dataset"
+   "dataset",
+   "mri"
   ],
   "organism": [
    "none"
@@ -1850,7 +2226,10 @@
  "10.7554/elife.06225": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "fly"
   ]
@@ -1858,7 +2237,10 @@
  "10.1093/bioadv/vbad119": {
   "classification": "pipeline",
   "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1866,7 +2248,10 @@
  "10.1002/cne.10177": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
    "mouse"
   ]
@@ -1874,7 +2259,10 @@
  "10.1109/isbi60581.2025.10980968": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -1883,16 +2271,20 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "cell-types"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.celrep.2017.11.008": {
-  "classification": "neuroanatomy",
+  "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "cell-types"
+  ],
   "organism": [
    "human"
   ]
@@ -1901,7 +2293,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "imaging"
+   "dataset",
+   "mri"
   ],
   "organism": [
    "zebrafish"
@@ -1909,28 +2302,30 @@
  },
  "10.1038/s41467-023-44354-0": {
   "classification": "pipeline",
-  "subclassification": "alignment",
-  "secondary_classifications": [],
+  "subclassification": "segmentation",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1016/j.celrep.2020.108364": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "circuit-structure"
+   "behaviour",
+   "neuroai"
   ],
   "organism": [
-   "other"
+   "human"
   ]
  },
  "10.1007/s12035-012-8345-y": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -1939,9 +2334,11 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "physiology"
   ],
   "organism": [
+   "mouse",
    "other"
   ]
  },
@@ -1949,6 +2346,7 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
+   "neuroai",
    "physiology"
   ],
   "organism": [
@@ -1956,9 +2354,12 @@
   ]
  },
  "10.1016/j.neuron.2023.12.008": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "circuit-structure",
+  "subclassification": null,
+  "secondary_classifications": [
+   "neuroai",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
@@ -1966,15 +2367,21 @@
  "10.1021/acschembio.8b00919": {
   "classification": "imaging",
   "subclassification": "EM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "pipeline/preparation"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.48550/arxiv.2504.21598": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "dataset",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
@@ -1982,50 +2389,63 @@
  "10.1007/s00429-024-02806-3": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "physiology"
+  ],
   "organism": [
+   "mouse",
    "other"
   ]
  },
  "10.1016/j.neuroimage.2022.119146": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "mri"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "human",
-   "macaque"
+   "human"
   ]
  },
  "10.1101/2024.06.11.598365": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "preparation",
+  "secondary_classifications": [
+   "imaging",
+   "mri"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1523/jneurosci.1198-07.2007": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "synthesis"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fnsys.2015.00060": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.3389/fncir.2014.00022": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -2033,17 +2453,20 @@
  "10.1038/s41467-019-12789-z": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "imaging"
+  ],
   "organism": [
-   "mouse",
-   "zebrafish"
+   "none"
   ]
  },
  "10.1038/nature14170": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -2052,7 +2475,10 @@
  "10.1016/j.cub.2010.02.039": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "zebrafish"
   ]
@@ -2060,62 +2486,72 @@
  "10.3389/fninf.2020.00009": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
-  "organism": [
-   "mouse"
-  ]
- },
- "10.1038/sdata.2018.6": {
-  "classification": "dataset",
-  "subclassification": null,
   "secondary_classifications": [
-   "pipeline/infrastructure"
+   "dataset",
+   "synthesis"
   ],
   "organism": [
    "none"
   ]
  },
+ "10.1038/sdata.2018.6": {
+  "classification": "dataset",
+  "subclassification": null,
+  "secondary_classifications": [],
+  "organism": [
+   "none"
+  ]
+ },
  "10.1016/j.cub.2023.01.045": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "dataset",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "cell-types",
+   "synthesis"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/s41467-025-66104-0": {
   "classification": "mri",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "neuroai"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1109/tvcg.2021.3109460": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1073/pnas.1214705110": {
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
+   "mri",
    "physiology"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.64898/2026.03.31.715474": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "mouse"
@@ -2125,7 +2561,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "health"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "none"
@@ -2135,7 +2572,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "mouse"
@@ -2145,7 +2583,8 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -2155,7 +2594,8 @@
   "classification": "imaging",
   "subclassification": "SBEM",
   "secondary_classifications": [
-   "circuit-structure"
+   "dataset",
+   "pipeline"
   ],
   "organism": [
    "mouse"
@@ -2164,7 +2604,10 @@
  "10.7554/elife.31657": {
   "classification": "imaging",
   "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "pipeline"
+  ],
   "organism": [
    "human"
   ]
@@ -2173,26 +2616,28 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "dataset",
+   "mri"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1016/j.conb.2019.11.015": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1142/s0129065715500264": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -2209,7 +2654,8 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "dataset"
   ],
   "organism": [
    "zebrafish"
@@ -2218,7 +2664,10 @@
  "10.1016/j.cub.2025.12.058": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "fly"
   ]
@@ -2227,16 +2676,20 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "circuit-structure"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/2021.09.29.462361": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -2244,9 +2697,7 @@
  "10.1152/physrev.00016.2003": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -2255,7 +2706,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "neuroai",
+   "circuit-structure"
   ],
   "organism": [
    "mouse"
@@ -2263,32 +2715,44 @@
  },
  "10.3390/math13081276": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "dataset",
+   "imaging"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.3389/fncir.2013.00147": {
-  "classification": "pipeline",
-  "subclassification": "preparation",
-  "secondary_classifications": [],
+  "classification": "dataset",
+  "subclassification": null,
+  "secondary_classifications": [
+   "cell-types",
+   "behaviour"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1038/nbt.3641": {
   "classification": "imaging",
-  "subclassification": "expansion",
-  "secondary_classifications": [],
+  "subclassification": "unspecified",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.4161/cam.2.4.6510": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "neuroanatomy",
+  "subclassification": null,
+  "secondary_classifications": [
+   "physiology",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -2297,7 +2761,8 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "mri"
   ],
   "organism": [
    "other"
@@ -2306,9 +2771,7 @@
  "10.1063/1.4905434": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "imaging"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -2317,24 +2780,31 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "mri"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1038/nn.4200": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1038/nmeth.3225": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline/preparation",
+   "behaviour"
+  ],
   "organism": [
    "none"
   ]
@@ -2342,9 +2812,7 @@
  "10.1126/sciadv.abb3446": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "cell-types"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "mouse"
   ]
@@ -2352,7 +2820,10 @@
  "10.1002/cne.903480304": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "rat"
   ]
@@ -2360,7 +2831,10 @@
  "10.1002/dvdy.24064": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
@@ -2368,16 +2842,20 @@
  "10.1101/2024.02.26.582148": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1016/j.tice.2018.09.006": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "imaging",
+  "subclassification": "FIB-SEM",
   "secondary_classifications": [
-   "imaging"
+   "pipeline/preparation",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -2386,7 +2864,10 @@
  "10.7554/elife.76003": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "synthesis"
+  ],
   "organism": [
    "elegans"
   ]
@@ -2395,51 +2876,62 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
+   "neuroai",
    "behaviour"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/s41583-026-01061-1": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1109/cvpr.2010.5539950": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "neuroai",
+   "imaging"
+  ],
   "organism": [
-   "none"
+   "human"
   ]
  },
  "10.1371/journal.pbio.3000361": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
+   "neuroai",
    "circuit-structure"
   ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1523/jneurosci.3502-06.2006": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "neuroai"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1093/mictod/qaae043": {
-  "classification": "synthesis",
-  "subclassification": "field",
+  "classification": "imaging",
+  "subclassification": "EM",
   "secondary_classifications": [
-   "imaging"
+   "pipeline",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -2449,7 +2941,8 @@
   "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "circuit-structure"
   ],
   "organism": [
    "human"
@@ -2458,33 +2951,43 @@
  "10.1371/journal.pone.0089992": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/s0079-6123(02)36020-5": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "circuit-structure",
+   "synthesis"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1101/2023.03.17.533028": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "behaviour"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.3389/fnsyn.2019.00020": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
@@ -2493,7 +2996,8 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "cell-types"
   ],
   "organism": [
    "mouse"
@@ -2503,7 +3007,8 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "circuit-structure",
+   "mri"
   ],
   "organism": [
    "none"
@@ -2512,7 +3017,10 @@
  "10.1101/2020.09.15.297580": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -2521,25 +3029,30 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "mri",
+   "behaviour"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1038/s41598-025-89088-9": {
-  "classification": "circuit-structure",
+  "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1016/bs.mcb.2023.01.021": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "neuroanatomy"
+   "imaging",
+   "dataset"
   ],
   "organism": [
    "mouse"
@@ -2547,35 +3060,43 @@
  },
  "10.1016/j.neuron.2007.11.030": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "cell-types"
   ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1012074": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "mri"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/819227": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1093/hmg/ddz178": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "mri",
+  "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "synthesis",
+   "cell-types"
   ],
   "organism": [
    "human"
@@ -2585,44 +3106,52 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "mri"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1002/cne.20779": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.3389/fnbeh.2022.871884": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "neuroai"
   ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1523/jneurosci.1774-16.2017": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "elegans"
   ]
  },
  "10.1162/netn_a_00158": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "mri",
+  "subclassification": null,
   "secondary_classifications": [
-   "mri",
-   "neuroai"
+   "neuroai",
+   "synthesis"
   ],
   "organism": [
    "human"
@@ -2631,16 +3160,20 @@
  "10.1186/s12915-016-0326-6": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.3389/fnins.2014.00423": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -2649,24 +3182,28 @@
  "10.1093/cercor/bhab440": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "neuroanatomy"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1371/journal.pone.0017013": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "neuroai",
+   "dataset"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1103/physreve.97.062305": {
-  "classification": "neuroai",
-  "subclassification": null,
+  "classification": "synthesis",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -2675,25 +3212,32 @@
  "10.23919/date69613.2026.11539470": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline/acquisition",
+   "synthesis"
+  ],
   "organism": [
-   "none"
+   "human"
   ]
  },
  "10.1101/2021.04.06.438718": {
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "dataset",
+   "behaviour"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1016/j.neuron.2012.06.006": {
-  "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "classification": "mri",
+  "subclassification": null,
+  "secondary_classifications": [
+   "dataset",
+   "synthesis"
+  ],
   "organism": [
    "none"
   ]
@@ -2701,16 +3245,20 @@
  "10.1109/tmi.2026.3658169": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.7554/elife.24394": {
-  "classification": "circuit-structure",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "dataset"
+   "mri",
+   "circuit-structure"
   ],
   "organism": [
    "fly"
@@ -2718,24 +3266,33 @@
  },
  "10.1016/j.heliyon.2024.e24649": {
   "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "subclassification": "domain",
+  "secondary_classifications": [
+   "mri",
+   "pipeline"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.7554/elife.91627": {
-  "classification": "neuroai",
+  "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
  },
  "10.1101/2021.07.23.453511": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
@@ -2743,15 +3300,21 @@
  "10.1371/journal.pgen.1009375": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1014037": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "dataset"
+  ],
   "organism": [
    "other"
   ]
@@ -2759,7 +3322,10 @@
  "10.1523/jneurosci.0106-22.2022": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "synthesis"
+  ],
   "organism": [
    "fly"
   ]
@@ -2767,17 +3333,18 @@
  "10.1523/jneurosci.20-05-01722.2000": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "mri"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1016/j.asd.2019.100878": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "other"
   ]
@@ -2786,7 +3353,8 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "mouse"
@@ -2795,9 +3363,7 @@
  "10.1016/j.semcdb.2014.06.007": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "elegans"
   ]
@@ -2806,17 +3372,19 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "training-outreach"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1534/genetics.119.301506": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "other",
+  "subclassification": null,
   "secondary_classifications": [
-   "pipeline/preparation"
+   "cell-types",
+   "behaviour"
   ],
   "organism": [
    "elegans"
@@ -2826,7 +3394,8 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "circuit-structure"
   ],
   "organism": [
    "other"
@@ -2836,45 +3405,52 @@
   "classification": "pipeline",
   "subclassification": "segmentation",
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1073/pnas.1211467109": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1113/jp282750": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroai",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "circuit-structure",
+   "synthesis"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.aanat.2009.08.006": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroanatomy",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1111/cgf.14574": {
-  "classification": "synthesis",
-  "subclassification": "field",
+  "classification": "pipeline",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "pipeline/infrastructure"
+   "dataset",
+   "mri"
   ],
   "organism": [
    "none"
@@ -2883,7 +3459,10 @@
  "10.1371/journal.pcbi.1004792": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "pipeline"
+  ],
   "organism": [
    "none"
   ]
@@ -2891,7 +3470,10 @@
  "10.1073/pnas.2113835118": {
   "classification": "imaging",
   "subclassification": "X-ray",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "pipeline"
+  ],
   "organism": [
    "human"
   ]
@@ -2900,17 +3482,20 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "health",
-   "imaging"
+   "mri",
+   "circuit-structure"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1201/9781003464648-3": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "neuroai",
+  "subclassification": null,
+  "secondary_classifications": [
+   "synthesis",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
@@ -2918,16 +3503,20 @@
  "10.1038/s41592-019-0396-9": {
   "classification": "pipeline",
   "subclassification": "acquisition",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.cub.2013.08.018": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "mri",
+  "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "synthesis"
   ],
   "organism": [
    "fly"
@@ -2937,38 +3526,40 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.3390/ijms20081988": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
-   "fly"
+   "fly",
+   "human"
   ]
  },
  "10.1016/j.neuroimage.2023.120338": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "mri",
+  "subclassification": null,
   "secondary_classifications": [
-   "mri"
+   "synthesis",
+   "cell-types"
   ],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1038/nn.4237": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroai"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
@@ -2976,7 +3567,10 @@
  "10.1101/735985": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "fly"
   ]
@@ -2985,6 +3579,7 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
+   "physiology",
    "circuit-structure"
   ],
   "organism": [
@@ -2992,10 +3587,11 @@
   ]
  },
  "10.1038/nmeth.2637": {
-  "classification": "imaging",
-  "subclassification": "unspecified",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "imaging",
+   "dataset"
   ],
   "organism": [
    "elegans"
@@ -3003,41 +3599,54 @@
  },
  "10.1038/s41467-021-24690-9": {
   "classification": "pipeline",
-  "subclassification": "preparation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "synthesis",
+   "neuroai"
+  ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.64898/2026.03.27.714818": {
   "classification": "pipeline",
   "subclassification": "proofreading",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "neuroai"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1242/bio.042085": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1038/s41467-025-60545-3": {
   "classification": "imaging",
-  "subclassification": "cryo",
-  "secondary_classifications": [],
+  "subclassification": "FIB-SEM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.3389/fncir.2012.00026": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "physiology",
+  "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "synthesis"
   ],
   "organism": [
    "none"
@@ -3046,7 +3655,10 @@
  "10.1140/epjb/s10051-026-01161-y": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
@@ -3054,7 +3666,10 @@
  "10.1098/rstb.2015.0428": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3062,7 +3677,10 @@
  "10.1109/tci.2024.3426349": {
   "classification": "pipeline",
   "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3079,7 +3697,8 @@
   "classification": "imaging",
   "subclassification": "FIB-SEM",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "pipeline/preparation",
+   "behaviour"
   ],
   "organism": [
    "none"
@@ -3088,7 +3707,10 @@
  "10.1523/jneurosci.17-23-09298.1997": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "circuit-structure"
+  ],
   "organism": [
    "rat"
   ]
@@ -3096,7 +3718,10 @@
  "10.3389/fncom.2026.1813959": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "imaging"
+  ],
   "organism": [
    "none"
   ]
@@ -3104,15 +3729,21 @@
  "10.1038/s41598-018-31523-1": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1109/isbi45749.2020.9098489": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "mri",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
@@ -3120,34 +3751,43 @@
  "10.1002/cne.22698": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "mri"
+  ],
   "organism": [
-   "mouse"
+   "mouse",
+   "rat"
   ]
  },
  "10.1038/nn2045": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "neuroai",
+   "cell-types"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1371/journal.pcbi.1013645": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1088/2634-4386/ad05da": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroai",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -3155,28 +3795,33 @@
  },
  "10.1051/medsci/200723121173": {
   "classification": "synthesis",
-  "subclassification": "field",
+  "subclassification": "domain",
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "pipeline/preparation"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.7554/elife.69068": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline"
+   "imaging",
+   "cell-types"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.neucom.2020.12.130": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "behaviour"
+  ],
   "organism": [
    "none"
   ]
@@ -3184,27 +3829,29 @@
  "10.1016/j.plrev.2025.03.008": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroai"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.3389/fbioe.2016.00015": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "dataset"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1016/j.jneumeth.2023.109921": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "SBEM",
+  "secondary_classifications": [
+   "mri",
+   "pipeline/preparation"
+  ],
   "organism": [
    "human"
   ]
@@ -3212,7 +3859,10 @@
  "10.1371/journal.pcbi.1007606": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3220,9 +3870,12 @@
  "10.1002/bies.202000166": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "mri"
+  ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1016/j.neubiorev.2011.04.013": {
@@ -3230,7 +3883,7 @@
   "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1016/j.conb.2011.10.022": {
@@ -3246,7 +3899,10 @@
  "10.1111/ejn.16331": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -3254,44 +3910,53 @@
  "10.1016/j.cell.2018.07.046": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1111/febs.70314": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "physiology"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1162/netn_a_00036": {
-  "classification": "neuroai",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1113/ep085776": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "physiology",
+  "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1007/s10158-011-0127-0": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "behaviour",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "neuroai"
   ],
   "organism": [
    "elegans"
@@ -3300,24 +3965,31 @@
  "10.1113/jphysiol.2014.273862": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.celrep.2023.112974": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1016/j.neuron.2024.02.018": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "circuit-structure",
+  "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "physiology",
+   "mri"
   ],
   "organism": [
    "mouse"
@@ -3326,16 +3998,20 @@
  "10.1140/epjp/s13360-024-05224-w": {
   "classification": "imaging",
   "subclassification": "X-ray",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "none"
+   "other"
   ]
  },
  "10.1002/cne.24016": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
    "fly"
@@ -3345,9 +4021,11 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
+   "mri",
    "circuit-structure"
   ],
   "organism": [
+   "mouse",
    "macaque"
   ]
  },
@@ -3360,10 +4038,11 @@
   ]
  },
  "10.1186/s40851-018-0103-1": {
-  "classification": "physiology",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "physiology",
+   "cell-types"
   ],
   "organism": [
    "elegans"
@@ -3371,9 +4050,10 @@
  },
  "10.1016/j.ultramic.2019.03.002": {
   "classification": "imaging",
-  "subclassification": "X-ray",
+  "subclassification": "SBEM",
   "secondary_classifications": [
-   "pipeline/acquisition"
+   "pipeline/preparation",
+   "mri"
   ],
   "organism": [
    "none"
@@ -3382,7 +4062,10 @@
  "10.7554/elife.66286": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "circuit-structure"
+  ],
   "organism": [
    "fly"
   ]
@@ -3390,45 +4073,54 @@
  "10.1101/2020.08.21.262097": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "behaviour"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1073/pnas.1913417117": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "physiology"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1126/science.3375811": {
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "circuit-structure"
   ],
   "organism": [
    "other"
   ]
  },
  "10.1002/jbio.201700187": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "imaging",
+  "subclassification": "unspecified",
   "secondary_classifications": [
-   "imaging"
+   "pipeline",
+   "synthesis"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1073/pnas.1512901113": {
-  "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "classification": "mri",
+  "subclassification": null,
+  "secondary_classifications": [
+   "dataset",
+   "circuit-structure"
+  ],
   "organism": [
    "mouse"
   ]
@@ -3437,7 +4129,8 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "circuit-structure"
   ],
   "organism": [
    "mouse"
@@ -3445,9 +4138,10 @@
  },
  "10.1016/j.jsb.2010.07.004": {
   "classification": "imaging",
-  "subclassification": "cryo",
+  "subclassification": "ssTEM",
   "secondary_classifications": [
-   "pipeline/preparation"
+   "pipeline",
+   "mri"
   ],
   "organism": [
    "none"
@@ -3456,7 +4150,10 @@
  "10.1371/journal.pgen.1003472": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "cell-types"
+  ],
   "organism": [
    "elegans"
   ]
@@ -3465,6 +4162,7 @@
   "classification": "dataset",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "neuroanatomy"
   ],
   "organism": [
@@ -3475,6 +4173,7 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
+   "circuit-structure",
    "physiology"
   ],
   "organism": [
@@ -3482,30 +4181,33 @@
   ]
  },
  "10.1038/nn.2648": {
-  "classification": "physiology",
+  "classification": "other",
   "subclassification": null,
   "secondary_classifications": [
-   "imaging"
+   "imaging",
+   "behaviour"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.brainres.2012.05.060": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
+   "neuroanatomy",
    "circuit-structure"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1002/jnr.23912": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "elegans"
@@ -3515,26 +4217,31 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "cell-types"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/nature09802": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "dataset"
+   "mri",
+   "physiology"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.7554/elife.89532": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "physiology"
+  ],
   "organism": [
    "mouse"
   ]
@@ -3543,6 +4250,7 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
+   "circuit-structure",
    "physiology"
   ],
   "organism": [
@@ -3552,9 +4260,7 @@
  "10.1016/j.conb.2020.11.001": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroai"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "elegans"
   ]
@@ -3562,35 +4268,44 @@
  "10.1002/cne.901870207": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
  },
  "10.1007/7657_2015_100": {
   "classification": "imaging",
-  "subclassification": "ssTEM",
+  "subclassification": "EM",
   "secondary_classifications": [
+   "pipeline",
    "neuroanatomy"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1016/j.cell.2015.09.045": {
   "classification": "synthesis",
-  "subclassification": "field",
+  "subclassification": "domain",
   "secondary_classifications": [
-   "neuroai"
+   "dataset",
+   "circuit-structure"
   ],
   "organism": [
+   "mouse",
    "rat"
   ]
  },
  "10.1109/cvprw.2018.00297": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "imaging"
+  ],
   "organism": [
    "none"
   ]
@@ -3599,7 +4314,8 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "neuroai"
   ],
   "organism": [
    "rat"
@@ -3608,7 +4324,10 @@
  "10.1038/s41467-019-13607-2": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "mouse"
   ]
@@ -3616,7 +4335,10 @@
  "10.1083/jcb.200908055": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "physiology"
+  ],
   "organism": [
    "fly"
   ]
@@ -3625,38 +4347,39 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "mri",
+   "dataset"
   ],
   "organism": [
    "mouse"
   ]
  },
  "10.1016/0278-4327(90)90004-2": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "synthesis",
+   "circuit-structure"
   ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1016/j.conb.2020.02.008": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "elegans",
-   "fly",
    "mouse"
   ]
  },
  "10.1002/cne.24408": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "behaviour"
+  ],
   "organism": [
    "fly"
   ]
@@ -3664,7 +4387,10 @@
  "10.7554/elife.74327": {
   "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
@@ -3673,7 +4399,8 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "physiology"
   ],
   "organism": [
    "elegans"
@@ -3682,9 +4409,7 @@
  "10.7554/elife.95402": {
   "classification": "dataset",
   "subclassification": null,
-  "secondary_classifications": [
-   "cell-types"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "elegans"
   ]
@@ -3692,7 +4417,10 @@
  "10.1016/j.media.2019.06.015": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -3701,7 +4429,8 @@
   "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "synthesis",
+   "dataset"
   ],
   "organism": [
    "human"
@@ -3709,8 +4438,11 @@
  },
  "10.48550/arxiv.2605.14980": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3719,23 +4451,27 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1038/s41598-018-34961-z": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
-   "other"
+   "macaque"
   ]
  },
  "10.1515/revneuro-2025-0018": {
-  "classification": "neuroai",
-  "subclassification": null,
+  "classification": "synthesis",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -3745,16 +4481,20 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "pipeline"
   ],
   "organism": [
    "none"
   ]
  },
  "10.64898/2026.07.26.740564": {
-  "classification": "circuit-structure",
+  "classification": "behaviour",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "dataset"
+  ],
   "organism": [
    "fly",
    "other"
@@ -3772,8 +4512,11 @@
  },
  "10.1101/2022.09.21.508877": {
   "classification": "imaging",
-  "subclassification": "cryo",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3781,15 +4524,21 @@
  "10.1371/journal.pcbi.1004196": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1017/s1431927620013550": {
   "classification": "imaging",
-  "subclassification": "EM",
-  "secondary_classifications": [],
+  "subclassification": "X-ray",
+  "secondary_classifications": [
+   "pipeline/preparation",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3797,7 +4546,10 @@
  "10.1109/tvcg.2024.3456197": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroai",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3805,7 +4557,10 @@
  "10.1523/eneuro.0077-21.2021": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "physiology"
+  ],
   "organism": [
    "mouse"
   ]
@@ -3814,18 +4569,17 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "circuit-structure"
   ],
   "organism": [
    "elegans"
   ]
  },
  "10.1103/physrevlett.133.138401": {
-  "classification": "circuit-structure",
-  "subclassification": null,
-  "secondary_classifications": [
-   "pipeline/graph-analysis"
-  ],
+  "classification": "synthesis",
+  "subclassification": "domain",
+  "secondary_classifications": [],
   "organism": [
    "fly"
   ]
@@ -3833,14 +4587,17 @@
  "10.1002/cne.24492": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "behaviour"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.neuroimage.2017.04.061": {
   "classification": "synthesis",
-  "subclassification": "field",
+  "subclassification": "domain",
   "secondary_classifications": [],
   "organism": [
    "none"
@@ -3850,7 +4607,8 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "elegans"
@@ -3860,7 +4618,8 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "behaviour",
+   "dataset"
   ],
   "organism": [
    "mouse"
@@ -3868,8 +4627,11 @@
  },
  "10.1109/tmi.2022.3194984": {
   "classification": "pipeline",
-  "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "subclassification": "preparation",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -3878,7 +4640,8 @@
   "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "circuit-structure",
+   "cell-types"
   ],
   "organism": [
    "human"
@@ -3887,7 +4650,10 @@
  "10.1126/sciadv.ade8500": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "circuit-structure"
+  ],
   "organism": [
    "fly"
   ]
@@ -3895,9 +4661,7 @@
  "10.1016/j.tins.2025.12.005": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "fly"
   ]
@@ -3906,16 +4670,20 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "neuroai"
+   "neuroai",
+   "pipeline"
   ],
   "organism": [
    "none"
   ]
  },
  "10.1002/cne.901470403": {
-  "classification": "circuit-structure",
+  "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "human"
   ]
@@ -3924,7 +4692,8 @@
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "fly"
@@ -3932,62 +4701,78 @@
  },
  "10.1371/journal.pone.0027431": {
   "classification": "pipeline",
-  "subclassification": "graph-analysis",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "neuroai",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.preteyeres.2020.100844": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "cell-types",
-   "circuit-structure"
+   "circuit-structure",
+   "synthesis"
   ],
   "organism": [
-   "macaque",
-   "human"
+   "human",
+   "macaque"
   ]
  },
  "10.1101/2020.04.20.051276": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "behaviour"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.53053/cwmm5126": {
   "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "subclassification": "domain",
+  "secondary_classifications": [
+   "neuroai",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1186/1756-6606-4-38": {
-  "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "classification": "neuroanatomy",
+  "subclassification": null,
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1101/158360": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "circuit-structure"
+  ],
   "organism": [
-   "none"
+   "mouse"
   ]
  },
  "10.48550/arxiv.2510.02730": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline/alignment",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -3995,24 +4780,31 @@
  "10.1073/pnas.071540198": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "mri"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1016/j.celrep.2021.109837": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
  },
  "10.1371/journal.pone.0087636": {
   "classification": "pipeline",
-  "subclassification": "graph-analysis",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "neuroai"
+   "neuroai",
+   "mri"
   ],
   "organism": [
    "none"
@@ -4020,45 +4812,54 @@
  },
  "10.1038/s41598-019-42648-2": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.15252/embj.2020105380": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "neuroai"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.7554/elife.54978": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "cell-types"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
    "fly"
   ]
  },
  "10.1080/01677063.2020.1712598": {
-  "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "classification": "dataset",
+  "subclassification": null,
+  "secondary_classifications": [
+   "circuit-structure",
+   "synthesis"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1016/j.neuron.2007.10.017": {
   "classification": "synthesis",
-  "subclassification": "field",
+  "subclassification": "domain",
   "secondary_classifications": [
-   "circuit-structure"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
    "none"
@@ -4068,17 +4869,19 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
+   "pipeline",
    "mri"
   ],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.3390/ijms22084053": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroanatomy",
+  "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "synthesis",
+   "physiology"
   ],
   "organism": [
    "none"
@@ -4088,6 +4891,7 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
+   "pipeline",
    "imaging"
   ],
   "organism": [
@@ -4098,7 +4902,8 @@
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "circuit-structure",
+   "pipeline"
   ],
   "organism": [
    "none"
@@ -4107,7 +4912,10 @@
  "10.1016/j.cub.2025.05.036": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "circuit-structure"
+  ],
   "organism": [
    "elegans"
   ]
@@ -4115,16 +4923,20 @@
  "10.7554/elife.43888": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.cub.2021.04.068": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "behaviour",
+   "cell-types"
   ],
   "organism": [
    "fly"
@@ -4133,25 +4945,32 @@
  "10.3389/fnins.2023.1281098": {
   "classification": "pipeline",
   "subclassification": "alignment",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1007/978-1-0716-0691-9_6": {
   "classification": "imaging",
-  "subclassification": "ATUM",
+  "subclassification": "unspecified",
   "secondary_classifications": [
-   "health"
+   "pipeline",
+   "neuroanatomy"
   ],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1007/978-1-4939-2842-2_11": {
   "classification": "imaging",
-  "subclassification": "EM",
-  "secondary_classifications": [],
+  "subclassification": "unspecified",
+  "secondary_classifications": [
+   "pipeline/preparation",
+   "dataset"
+  ],
   "organism": [
    "elegans"
   ]
@@ -4159,7 +4978,10 @@
  "10.3389/fncom.2015.00074": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -4168,10 +4990,11 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroai"
+   "neuroai",
+   "circuit-structure"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.3389/fnins.2021.627994": {
@@ -4187,7 +5010,10 @@
  "10.1242/dev.198754": {
   "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "other"
   ]
@@ -4195,17 +5021,20 @@
  "10.1038/s41598-017-01658-8": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "circuit-structure"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1016/j.neulet.2015.03.071": {
-  "classification": "pipeline",
-  "subclassification": "infrastructure",
+  "classification": "mri",
+  "subclassification": null,
   "secondary_classifications": [
-   "mri",
-   "dataset"
+   "circuit-structure",
+   "pipeline"
   ],
   "organism": [
    "human"
@@ -4213,16 +5042,22 @@
  },
  "10.1007/s00418-018-1759-5": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
-   "none"
+   "human"
   ]
  },
  "10.3389/fnins.2020.00928": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "synthesis",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -4230,34 +5065,43 @@
  "10.1016/j.neuron.2011.08.025": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "dataset"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1073/pnas.2203750119": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1038/mp.2014.46": {
   "classification": "mri",
   "subclassification": null,
   "secondary_classifications": [
-   "health"
+   "synthesis",
+   "behaviour"
   ],
   "organism": [
-   "macaque",
-   "human"
+   "none"
   ]
  },
  "10.1016/j.ydbio.2017.06.016": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "other",
+  "subclassification": null,
+  "secondary_classifications": [
+   "synthesis",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -4266,16 +5110,18 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "cell-types",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1101/2024.03.11.584515": {
   "classification": "neuroai",
   "subclassification": null,
   "secondary_classifications": [
+   "dataset",
    "behaviour"
   ],
   "organism": [
@@ -4285,37 +5131,37 @@
  "10.1016/j.conb.2022.102552": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "neuroanatomy"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "none"
   ]
  },
  "10.1126/science.adz5889": {
-  "classification": "synthesis",
-  "subclassification": "domain",
-  "secondary_classifications": [],
+  "classification": "dataset",
+  "subclassification": null,
+  "secondary_classifications": [
+   "synthesis",
+   "behaviour"
+  ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1101/506378": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
+   "neuroai",
    "neuroanatomy"
   ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1101/lm.053825.123": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "physiology"
-  ],
+  "secondary_classifications": [],
   "organism": [
    "fly"
   ]
@@ -4324,17 +5170,19 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "cell-types",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/s0076-6879(07)00421-1": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "cell-types"
   ],
   "organism": [
    "none"
@@ -4344,7 +5192,8 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "mri",
+   "dataset"
   ],
   "organism": [
    "mouse"
@@ -4354,19 +5203,19 @@
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "pipeline/graph-analysis"
+   "neuroai",
+   "mri"
   ],
   "organism": [
-   "fly",
-   "elegans",
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.cub.2024.01.071": {
-  "classification": "circuit-structure",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour"
+   "circuit-structure",
+   "physiology"
   ],
   "organism": [
    "fly"
@@ -4375,27 +5224,31 @@
  "10.1016/s0896-6273(03)00607-x": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "physiology"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1085/jgp.202413550": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "cell-types",
+  "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "neuroanatomy"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.cell.2016.10.019": {
-  "classification": "neuroai",
+  "classification": "dataset",
   "subclassification": null,
   "secondary_classifications": [
-   "behaviour",
-   "physiology"
+   "mri",
+   "behaviour"
   ],
   "organism": [
    "zebrafish"
@@ -4403,18 +5256,22 @@
  },
  "10.1007/7657_2011_14": {
   "classification": "pipeline",
-  "subclassification": "acquisition",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "circuit-structure"
+   "mri",
+   "cell-types"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1109/isbi.2013.6556611": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -4423,7 +5280,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "physiology"
   ],
   "organism": [
    "none"
@@ -4433,7 +5291,8 @@
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "physiology"
+   "neuroai",
+   "mri"
   ],
   "organism": [
    "none"
@@ -4442,23 +5301,32 @@
  "10.1038/s41467-024-55305-8": {
   "classification": "imaging",
   "subclassification": "expansion",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "behaviour",
+   "dataset"
+  ],
   "organism": [
    "fly"
   ]
  },
  "10.1145/3065386": {
   "classification": "pipeline",
-  "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "neuroai",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.1111/ejn.70384": {
   "classification": "synthesis",
-  "subclassification": "field",
-  "secondary_classifications": [],
+  "subclassification": "domain",
+  "secondary_classifications": [
+   "mri",
+   "cell-types"
+  ],
   "organism": [
    "none"
   ]
@@ -4466,25 +5334,32 @@
  "10.1371/journal.pcbi.1010682": {
   "classification": "neuroai",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "physiology",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
  },
  "10.3389/fnsyn.2020.00005": {
-  "classification": "synthesis",
-  "subclassification": "domain",
+  "classification": "neuroai",
+  "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "synthesis",
+   "pipeline"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.7554/elife.48935": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "behaviour"
+  ],
   "organism": [
    "fly"
   ]
@@ -4492,7 +5367,10 @@
  "10.32657/10356/41537": {
   "classification": "pipeline",
   "subclassification": "segmentation",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
    "none"
   ]
@@ -4500,39 +5378,54 @@
  "10.1016/j.heares.2023.108740": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "circuit-structure"
+  ],
   "organism": [
-   "zebrafish"
+   "none"
   ]
  },
  "10.1084/jem.20132477": {
-  "classification": "health",
+  "classification": "cell-types",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "mri"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/j.cag.2020.05.024": {
   "classification": "pipeline",
-  "subclassification": "proofreading",
-  "secondary_classifications": [],
+  "subclassification": "infrastructure",
+  "secondary_classifications": [
+   "imaging",
+   "behaviour"
+  ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1038/s41467-026-72180-7": {
   "classification": "imaging",
-  "subclassification": "unspecified",
-  "secondary_classifications": [],
+  "subclassification": "EM",
+  "secondary_classifications": [
+   "cell-types",
+   "neuroanatomy"
+  ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1371/journal.pbio.1001041": {
   "classification": "imaging",
   "subclassification": "EM",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "pipeline",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -4541,6 +5434,7 @@
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
+   "circuit-structure",
    "cell-types"
   ],
   "organism": [
@@ -4550,7 +5444,10 @@
  "10.1109/embc46164.2021.9630199": {
   "classification": "pipeline",
   "subclassification": "infrastructure",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "synthesis",
+   "dataset"
+  ],
   "organism": [
    "none"
   ]
@@ -4559,7 +5456,8 @@
   "classification": "pipeline",
   "subclassification": "infrastructure",
   "secondary_classifications": [
-   "dataset"
+   "dataset",
+   "neuroai"
   ],
   "organism": [
    "none"
@@ -4569,7 +5467,8 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "circuit-structure"
   ],
   "organism": [
    "other"
@@ -4578,7 +5477,10 @@
  "10.1523/jneurosci.04-12-02920.1984": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "cell-types",
+   "neuroanatomy"
+  ],
   "organism": [
    "other"
   ]
@@ -4586,7 +5488,10 @@
  "10.1038/s42003-025-08006-x": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
@@ -4594,18 +5499,17 @@
  "10.1101/sqb.2014.79.024984": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "behaviour"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1126/sciadv.aaw5141": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "dataset",
+   "physiology"
   ],
   "organism": [
    "fly"
@@ -4613,9 +5517,10 @@
  },
  "10.1038/npre.2008.2669.1": {
   "classification": "pipeline",
-  "subclassification": "preparation",
+  "subclassification": "infrastructure",
   "secondary_classifications": [
-   "circuit-structure"
+   "dataset",
+   "imaging"
   ],
   "organism": [
    "none"
@@ -4624,7 +5529,10 @@
  "10.1523/jneurosci.3887-14.2015": {
   "classification": "physiology",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "circuit-structure",
+   "cell-types"
+  ],
   "organism": [
    "mouse"
   ]
@@ -4632,16 +5540,20 @@
  "10.1038/s41467-023-39618-8": {
   "classification": "neuroanatomy",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "dataset",
+   "cell-types"
+  ],
   "organism": [
-   "other"
+   "none"
   ]
  },
  "10.1101/469114": {
   "classification": "circuit-structure",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "physiology",
+   "mri"
   ],
   "organism": [
    "mouse"
@@ -4651,26 +5563,26 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "circuit-structure"
+   "circuit-structure",
+   "cell-types"
   ],
   "organism": [
-   "elegans"
+   "none"
   ]
  },
  "10.1038/s41593-020-00726-z": {
   "classification": "synthesis",
   "subclassification": "domain",
-  "secondary_classifications": [
-   "mri"
-  ],
+  "secondary_classifications": [],
   "organism": [
-   "human"
+   "none"
   ]
  },
  "10.1101/167312": {
   "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
+   "cell-types",
    "circuit-structure"
   ],
   "organism": [
@@ -4678,11 +5590,9 @@
   ]
  },
  "10.1523/jneurosci.1572-21.2022": {
-  "classification": "circuit-structure",
-  "subclassification": null,
-  "secondary_classifications": [
-   "mri"
-  ],
+  "classification": "synthesis",
+  "subclassification": "domain",
+  "secondary_classifications": [],
   "organism": [
    "human"
   ]
@@ -4691,37 +5601,41 @@
   "classification": "cell-types",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "circuit-structure"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.64898/2026.03.03.709199": {
-  "classification": "circuit-structure",
+  "classification": "behaviour",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "circuit-structure",
+   "mri"
   ],
   "organism": [
-   "mouse"
+   "none"
   ]
  },
  "10.1016/s0896-6273(01)00500-1": {
   "classification": "physiology",
   "subclassification": null,
   "secondary_classifications": [
-   "neuroanatomy"
+   "neuroanatomy",
+   "dataset"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1007/978-981-10-7545-2_16": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "neuroanatomy"
+   "dataset",
+   "cell-types"
   ],
   "organism": [
    "other"
@@ -4731,35 +5645,42 @@
   "classification": "neuroanatomy",
   "subclassification": null,
   "secondary_classifications": [
-   "physiology"
+   "mri",
+   "dataset"
   ],
   "organism": [
-   "rat"
+   "none"
   ]
  },
  "10.1080/01677063.2016.1177049": {
   "classification": "synthesis",
   "subclassification": "domain",
   "secondary_classifications": [
-   "behaviour"
+   "cell-types",
+   "dataset"
   ],
   "organism": [
-   "fly",
-   "elegans"
+   "none"
   ]
  },
  "10.7554/elife.43478": {
   "classification": "circuit-structure",
   "subclassification": null,
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "neuroanatomy",
+   "behaviour"
+  ],
   "organism": [
-   "fly"
+   "none"
   ]
  },
  "10.1093/bioinformatics/btag329": {
   "classification": "pipeline",
   "subclassification": "alignment",
-  "secondary_classifications": [],
+  "secondary_classifications": [
+   "imaging",
+   "mri"
+  ],
   "organism": [
    "none"
   ]

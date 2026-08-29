@@ -8,7 +8,7 @@ pathways:
   - proofreading
   - data quality
   - workflows
-content_type: guide
+content_type: core
 ---
 
 <div class="main-content">

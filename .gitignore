@@ -25,3 +25,5 @@ data/rag_extracted/
 data/rag_index/
 *.cookie
 *cookie*.txt
+.chrome_temp*
+.venv/

@@ -89,11 +89,19 @@ def build_jhu_proxied_urls(doi: str) -> List[str]:
     if "10.1093/" in doi_clean:
         urls.append(f"https://academic-oup-com.{PROXY_HOST}/doi/pdf/{doi_clean}")
 
-    # 8. J. Neuroscience
+    # 8. Annual Reviews
+    if "10.1146/" in doi_clean:
+        urls.append(f"https://www-annualreviews-org.{PROXY_HOST}/doi/pdf/{doi_clean}")
+
+    # 9. Royal Society
+    if "10.1098/" in doi_clean:
+        urls.append(f"https://royalsocietypublishing-org.{PROXY_HOST}/doi/pdf/{doi_clean}")
+
+    # 10. J. Neuroscience / eLife / Frontiers
     if "10.1523/" in doi_clean:
         urls.append(f"https://www-jneurosci-org.{PROXY_HOST}/content/jneuro/{doi_clean.split('10.1523/')[-1]}.full.pdf")
 
-    # 9. General DOI EZProxy login resolver
+    # 11. General DOI EZProxy login resolver
     urls.append(f"https://{PROXY_HOST}/login?url=https://doi.org/{urllib.parse.quote(doi_clean)}")
 
     return urls

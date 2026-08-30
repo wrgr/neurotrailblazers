@@ -23,3 +23,5 @@ __pycache__/
 data/pdf_corpus/
 data/rag_extracted/
 data/rag_index/
+*.cookie
+*cookie*.txt

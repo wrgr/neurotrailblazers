@@ -51,6 +51,16 @@ content_type: core
         <label><input type="checkbox" id="jcg-show-edges" checked> Draw Citation Edges</label>
         <label><input type="checkbox" id="jcg-show-arrows" checked> Show Directional Arrows (&rarr;)</label>
         <label><input type="checkbox" id="jcg-show-flow" checked> ⚡ Flow Pulse Animation</label>
+        <div style="margin-top: 0.35rem;">
+          <label for="jcg-edge-weighting" style="font-size: 0.76rem; font-weight: 600; color: #374151; display: block; margin-bottom: 0.2rem;">Edge Weighting / Thickness:</label>
+          <select id="jcg-edge-weighting" style="padding: 0.35rem 0.5rem; font-size: 0.78rem;">
+            <option value="sum" selected>Combined Degree (In + Out Sum)</option>
+            <option value="in">Inbound Degree (Target / Cited Authority)</option>
+            <option value="out">Outbound Degree (Source / Citing Reach)</option>
+            <option value="both">Harmonic Mean (Both Nodes)</option>
+            <option value="uniform">Uniform Solid Lines</option>
+          </select>
+        </div>
       </fieldset>
 
       <!-- Node Color Cue Selector -->
@@ -588,6 +598,7 @@ content_type: core
   var showEdgesCheck = document.getElementById('jcg-show-edges');
   var showArrowsCheck = document.getElementById('jcg-show-arrows');
   var showFlowCheck = document.getElementById('jcg-show-flow');
+  var edgeWeightingEl = document.getElementById('jcg-edge-weighting');
   var colorByEl = document.getElementById('jcg-color-by');
   var eraChecks = Array.from(document.querySelectorAll('.jcg-era-check'));
   var dimensionEl = document.getElementById('jcg-dimension');
@@ -630,6 +641,7 @@ content_type: core
   var currentTier = 500;
   var currentLayout = 'organic';
   var currentColorCue = 'dimension';
+  var currentEdgeWeighting = 'sum';
   var visibleNodes = [];
   var visibleEdges = [];
   var view = { scale: 1, tx: 0, ty: 0 };
@@ -1144,6 +1156,28 @@ content_type: core
         var isInbound = (t === activeNode && inSet.has(s));
         var isConnected = isOutbound || isInbound;
 
+        // Degree Weighting Calculation (in / out / both / sum / uniform)
+        var edgeMetric = 1;
+        if (currentEdgeWeighting === 'sum') {
+          edgeMetric = ((s.in_degree || 0) + (s.out_degree || 0) + (t.in_degree || 0) + (t.out_degree || 0)) / 2;
+        } else if (currentEdgeWeighting === 'in') {
+          edgeMetric = (t.in_degree || 0);
+        } else if (currentEdgeWeighting === 'out') {
+          edgeMetric = (s.out_degree || 0);
+        } else if (currentEdgeWeighting === 'both') {
+          edgeMetric = Math.sqrt(((s.in_degree || 0) + (s.out_degree || 0)) * ((t.in_degree || 0) + (t.out_degree || 0)));
+        } else {
+          edgeMetric = 1;
+        }
+
+        var baseWidth = currentEdgeWeighting === 'uniform'
+          ? 1.6
+          : Math.max(1.2, Math.min(6.2, 1.2 + Math.log1p(edgeMetric) * 1.35));
+
+        var baseAlpha = currentEdgeWeighting === 'uniform'
+          ? 0.50
+          : Math.min(0.85, 0.35 + Math.min(1.0, edgeMetric / 20) * 0.45);
+
         if (activeNode) {
           if (highlightNeighborhoodMode === 'inbound' && !isInbound) continue;
           if (highlightNeighborhoodMode === 'outbound' && !isOutbound) continue;
@@ -1151,8 +1185,8 @@ content_type: core
             ctx.beginPath();
             ctx.moveTo(s.x, s.y);
             ctx.lineTo(t.x, t.y);
-            ctx.strokeStyle = '#94a3b80e';
-            ctx.lineWidth = 0.5 / view.scale;
+            ctx.strokeStyle = '#94a3b825';
+            ctx.lineWidth = 0.75 / view.scale;
             ctx.stroke();
             continue;
           }
@@ -1164,16 +1198,16 @@ content_type: core
 
         if (isSpotlightLineage) {
           ctx.strokeStyle = '#f59e0b';
-          ctx.lineWidth = 4.0 / view.scale;
+          ctx.lineWidth = 4.8 / view.scale;
         } else if (isOutbound) {
           ctx.strokeStyle = '#6366f1';
-          ctx.lineWidth = 2.8 / view.scale;
+          ctx.lineWidth = 3.6 / view.scale;
         } else if (isInbound) {
           ctx.strokeStyle = '#10b981';
-          ctx.lineWidth = 2.8 / view.scale;
+          ctx.lineWidth = 3.6 / view.scale;
         } else {
-          ctx.strokeStyle = '#94a3b833';
-          ctx.lineWidth = 0.85 / view.scale;
+          ctx.strokeStyle = 'rgba(71, 85, 105, ' + baseAlpha + ')';
+          ctx.lineWidth = baseWidth / view.scale;
         }
         ctx.stroke();
 
@@ -1182,7 +1216,7 @@ content_type: core
           var dx = t.x - s.x;
           var dy = t.y - s.y;
           var angle = Math.atan2(dy, dx);
-          var headlen = (isConnected || isSpotlightLineage ? 7.5 : 4.5) / view.scale;
+          var headlen = (isConnected || isSpotlightLineage ? 8.5 : Math.max(5.0, 4.0 + baseWidth * 0.8)) / view.scale;
           var ax = t.x - Math.cos(angle) * (t.radius + 3);
           var ay = t.y - Math.sin(angle) * (t.radius + 3);
 
@@ -1191,7 +1225,7 @@ content_type: core
           ctx.lineTo(ax - headlen * Math.cos(angle - Math.PI / 6), ay - headlen * Math.sin(angle - Math.PI / 6));
           ctx.lineTo(ax - headlen * Math.cos(angle + Math.PI / 6), ay - headlen * Math.sin(angle + Math.PI / 6));
           ctx.closePath();
-          ctx.fillStyle = isSpotlightLineage ? '#f59e0b' : (isOutbound ? '#6366f1' : (isInbound ? '#10b981' : '#94a3b866'));
+          ctx.fillStyle = isSpotlightLineage ? '#f59e0b' : (isOutbound ? '#6366f1' : (isInbound ? '#10b981' : 'rgba(51, 65, 85, ' + (baseAlpha + 0.15) + ')'));
           ctx.fill();
         }
 
@@ -1201,7 +1235,7 @@ content_type: core
           var px = s.x + (t.x - s.x) * pOffset;
           var py = s.y + (t.y - s.y) * pOffset;
           ctx.beginPath();
-          ctx.arc(px, py, (isConnected || isSpotlightLineage ? 3.0 : 1.5) / view.scale, 0, Math.PI * 2);
+          ctx.arc(px, py, (isConnected || isSpotlightLineage ? 3.0 : 1.6) / view.scale, 0, Math.PI * 2);
           ctx.fillStyle = isSpotlightLineage ? '#fef08a' : (isOutbound ? '#a5b4fc' : (isInbound ? '#6ee7b7' : '#cbd5e1'));
           ctx.fill();
         }
@@ -1944,6 +1978,12 @@ content_type: core
   showEdgesCheck.addEventListener('change', render);
   showArrowsCheck.addEventListener('change', render);
   showFlowCheck.addEventListener('change', render);
+  if (edgeWeightingEl) {
+    edgeWeightingEl.addEventListener('change', function () {
+      currentEdgeWeighting = edgeWeightingEl.value;
+      render();
+    });
+  }
 
   colorByEl.addEventListener('change', function () {
     currentColorCue = colorByEl.value;

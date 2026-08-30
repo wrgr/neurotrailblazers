@@ -1144,8 +1144,17 @@ content_type: core
     var inSet = new Set(activeNode && activeNode.citedByNodes ? activeNode.citedByNodes : []);
     var outSet = new Set(activeNode && activeNode.citesNodes ? activeNode.citesNodes : []);
 
-    // Draw Citation Edges
+    // Draw Citation Edges (Phase 1 Batched Multi-Tier Rendering)
     if (drawEdges && visibleEdges.length) {
+      var batches = {
+        faint: [],
+        tier1: [],
+        tier2: [],
+        tier3: [],
+        tier4: []
+      };
+      var activeHighlights = [];
+
       for (var e = 0; e < visibleEdges.length; e++) {
         var edge = visibleEdges[e];
         var s = edge.source;
@@ -1154,9 +1163,19 @@ content_type: core
         var isSpotlightLineage = hoveredLineageNode && ((s === activeNode && t === hoveredLineageNode) || (t === activeNode && s === hoveredLineageNode));
         var isOutbound = (s === activeNode && outSet.has(t));
         var isInbound = (t === activeNode && inSet.has(s));
-        var isConnected = isOutbound || isInbound;
 
-        // Degree Weighting Calculation (in / out / both / sum / uniform)
+        if (isSpotlightLineage || isOutbound || isInbound) {
+          activeHighlights.push({ s: s, t: t, isSpotlight: isSpotlightLineage, isOut: isOutbound, isIn: isInbound, index: e });
+          continue;
+        }
+
+        if (activeNode) {
+          if (highlightNeighborhoodMode === 'all') {
+            batches.faint.push(edge);
+          }
+          continue;
+        }
+
         var edgeMetric = 1;
         if (currentEdgeWeighting === 'sum') {
           edgeMetric = ((s.in_degree || 0) + (s.out_degree || 0) + (t.in_degree || 0) + (t.out_degree || 0)) / 2;
@@ -1166,79 +1185,143 @@ content_type: core
           edgeMetric = (s.out_degree || 0);
         } else if (currentEdgeWeighting === 'both') {
           edgeMetric = Math.sqrt(((s.in_degree || 0) + (s.out_degree || 0)) * ((t.in_degree || 0) + (t.out_degree || 0)));
+        }
+
+        if (currentEdgeWeighting === 'uniform') {
+          batches.tier2.push(edge);
+        } else if (edgeMetric < 3) {
+          batches.tier1.push(edge);
+        } else if (edgeMetric < 8) {
+          batches.tier2.push(edge);
+        } else if (edgeMetric < 18) {
+          batches.tier3.push(edge);
         } else {
-          edgeMetric = 1;
+          batches.tier4.push(edge);
         }
+      }
 
-        var baseWidth = currentEdgeWeighting === 'uniform'
-          ? 1.6
-          : Math.max(1.2, Math.min(6.2, 1.2 + Math.log1p(edgeMetric) * 1.35));
+      // 1. Draw Faint non-connected edges in focus mode (1 single draw call)
+      if (batches.faint.length) {
+        ctx.beginPath();
+        for (var i = 0; i < batches.faint.length; i++) {
+          var fe = batches.faint[i];
+          ctx.moveTo(fe.source.x, fe.source.y);
+          ctx.lineTo(fe.target.x, fe.target.y);
+        }
+        ctx.strokeStyle = '#94a3b820';
+        ctx.lineWidth = 0.7 / view.scale;
+        ctx.stroke();
+      }
 
-        var baseAlpha = currentEdgeWeighting === 'uniform'
-          ? 0.50
-          : Math.min(0.85, 0.35 + Math.min(1.0, edgeMetric / 20) * 0.45);
+      // 2. Draw Batched Standard Edges (4 single draw calls for thousands of edges)
+      var tierConfigs = [
+        { edges: batches.tier1, color: 'rgba(71, 85, 105, 0.40)', width: 1.2 },
+        { edges: batches.tier2, color: 'rgba(71, 85, 105, 0.58)', width: 2.0 },
+        { edges: batches.tier3, color: 'rgba(51, 65, 85, 0.72)', width: 3.2 },
+        { edges: batches.tier4, color: 'rgba(30, 41, 59, 0.88)', width: 4.6 }
+      ];
 
-        if (activeNode) {
-          if (highlightNeighborhoodMode === 'inbound' && !isInbound) continue;
-          if (highlightNeighborhoodMode === 'outbound' && !isOutbound) continue;
-          if (highlightNeighborhoodMode === 'all' && !isConnected) {
-            ctx.beginPath();
-            ctx.moveTo(s.x, s.y);
-            ctx.lineTo(t.x, t.y);
-            ctx.strokeStyle = '#94a3b825';
-            ctx.lineWidth = 0.75 / view.scale;
-            ctx.stroke();
-            continue;
+      for (var tIdx = 0; tIdx < tierConfigs.length; tIdx++) {
+        var tc = tierConfigs[tIdx];
+        if (tc.edges.length) {
+          ctx.beginPath();
+          for (var i = 0; i < tc.edges.length; i++) {
+            var be = tc.edges[i];
+            ctx.moveTo(be.source.x, be.source.y);
+            ctx.lineTo(be.target.x, be.target.y);
           }
+          ctx.strokeStyle = tc.color;
+          ctx.lineWidth = tc.width / view.scale;
+          ctx.stroke();
         }
+      }
+
+      // 3. Batched Directional Arrows
+      if (drawArrows && !activeNode && view.scale > 0.3) {
+        ctx.beginPath();
+        for (var e = 0; e < visibleEdges.length; e++) {
+          var ae = visibleEdges[e];
+          var as = ae.source;
+          var at = ae.target;
+          var adx = at.x - as.x;
+          var ady = at.y - as.y;
+          var aAngle = Math.atan2(ady, adx);
+          var aHeadlen = 5.5 / view.scale;
+          var ax = at.x - Math.cos(aAngle) * (at.radius + 3);
+          var ay = at.y - Math.sin(aAngle) * (at.radius + 3);
+
+          ctx.moveTo(ax, ay);
+          ctx.lineTo(ax - aHeadlen * Math.cos(aAngle - Math.PI / 6), ay - aHeadlen * Math.sin(aAngle - Math.PI / 6));
+          ctx.lineTo(ax - aHeadlen * Math.cos(aAngle + Math.PI / 6), ay - aHeadlen * Math.sin(aAngle + Math.PI / 6));
+          ctx.closePath();
+        }
+        ctx.fillStyle = 'rgba(51, 65, 85, 0.65)';
+        ctx.fill();
+      }
+
+      // 4. Draw Active Highlighted In/Out Edges & Directional Arrows
+      for (var h = 0; h < activeHighlights.length; h++) {
+        var hi = activeHighlights[h];
+        var hs = hi.s;
+        var ht = hi.t;
 
         ctx.beginPath();
-        ctx.moveTo(s.x, s.y);
-        ctx.lineTo(t.x, t.y);
-
-        if (isSpotlightLineage) {
+        ctx.moveTo(hs.x, hs.y);
+        ctx.lineTo(ht.x, ht.y);
+        if (hi.isSpotlight) {
           ctx.strokeStyle = '#f59e0b';
           ctx.lineWidth = 4.8 / view.scale;
-        } else if (isOutbound) {
+        } else if (hi.isOut) {
           ctx.strokeStyle = '#6366f1';
           ctx.lineWidth = 3.6 / view.scale;
-        } else if (isInbound) {
+        } else {
           ctx.strokeStyle = '#10b981';
           ctx.lineWidth = 3.6 / view.scale;
-        } else {
-          ctx.strokeStyle = 'rgba(71, 85, 105, ' + baseAlpha + ')';
-          ctx.lineWidth = baseWidth / view.scale;
         }
         ctx.stroke();
 
-        // Directional Arrowheads pointing from citing source -> cited target
-        if (drawArrows || isConnected || isSpotlightLineage) {
-          var dx = t.x - s.x;
-          var dy = t.y - s.y;
-          var angle = Math.atan2(dy, dx);
-          var headlen = (isConnected || isSpotlightLineage ? 8.5 : Math.max(5.0, 4.0 + baseWidth * 0.8)) / view.scale;
-          var ax = t.x - Math.cos(angle) * (t.radius + 3);
-          var ay = t.y - Math.sin(angle) * (t.radius + 3);
+        var hdx = ht.x - hs.x;
+        var hdy = ht.y - hs.y;
+        var hAngle = Math.atan2(hdy, hdx);
+        var hHeadlen = (hi.isSpotlight ? 9.5 : 8.5) / view.scale;
+        var hax = ht.x - Math.cos(hAngle) * (ht.radius + 3);
+        var hay = ht.y - Math.sin(hAngle) * (ht.radius + 3);
 
+        ctx.beginPath();
+        ctx.moveTo(hax, hay);
+        ctx.lineTo(hax - hHeadlen * Math.cos(hAngle - Math.PI / 6), hay - hHeadlen * Math.sin(hAngle - Math.PI / 6));
+        ctx.lineTo(hax - hHeadlen * Math.cos(hAngle + Math.PI / 6), hay - hHeadlen * Math.sin(hAngle + Math.PI / 6));
+        ctx.closePath();
+        ctx.fillStyle = hi.isSpotlight ? '#f59e0b' : (hi.isOut ? '#6366f1' : '#10b981');
+        ctx.fill();
+
+        // Active Flow Pulse
+        if (view.scale > 0.35) {
+          var pOffset = (flowOffset + (hi.index * 0.13)) % 1.0;
+          var px = hs.x + (ht.x - hs.x) * pOffset;
+          var py = hs.y + (ht.y - hs.y) * pOffset;
           ctx.beginPath();
-          ctx.moveTo(ax, ay);
-          ctx.lineTo(ax - headlen * Math.cos(angle - Math.PI / 6), ay - headlen * Math.sin(angle - Math.PI / 6));
-          ctx.lineTo(ax - headlen * Math.cos(angle + Math.PI / 6), ay - headlen * Math.sin(angle + Math.PI / 6));
-          ctx.closePath();
-          ctx.fillStyle = isSpotlightLineage ? '#f59e0b' : (isOutbound ? '#6366f1' : (isInbound ? '#10b981' : 'rgba(51, 65, 85, ' + (baseAlpha + 0.15) + ')'));
+          ctx.arc(px, py, 3.2 / view.scale, 0, Math.PI * 2);
+          ctx.fillStyle = hi.isSpotlight ? '#fef08a' : (hi.isOut ? '#a5b4fc' : '#6ee7b7');
           ctx.fill();
         }
+      }
 
-        // Live Citation Flow Particle Pulse
-        if ((drawFlow || isConnected || isSpotlightLineage) && view.scale > 0.35) {
+      // Live Citation Flow Pulse (Batched across all visible edges)
+      if (drawFlow && !activeNode && view.scale > 0.4) {
+        ctx.beginPath();
+        for (var e = 0; e < visibleEdges.length; e++) {
+          var fe = visibleEdges[e];
+          var fs = fe.source;
+          var ft = fe.target;
           var pOffset = (flowOffset + (e * 0.13)) % 1.0;
-          var px = s.x + (t.x - s.x) * pOffset;
-          var py = s.y + (t.y - s.y) * pOffset;
-          ctx.beginPath();
-          ctx.arc(px, py, (isConnected || isSpotlightLineage ? 3.0 : 1.6) / view.scale, 0, Math.PI * 2);
-          ctx.fillStyle = isSpotlightLineage ? '#fef08a' : (isOutbound ? '#a5b4fc' : (isInbound ? '#6ee7b7' : '#cbd5e1'));
-          ctx.fill();
+          var px = fs.x + (ft.x - fs.x) * pOffset;
+          var py = fs.y + (ft.y - fs.y) * pOffset;
+          ctx.moveTo(px + (1.6 / view.scale), py);
+          ctx.arc(px, py, 1.6 / view.scale, 0, Math.PI * 2);
         }
+        ctx.fillStyle = '#cbd5e1';
+        ctx.fill();
       }
     }
 
@@ -1273,21 +1356,21 @@ content_type: core
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.arc(n.x, n.y, n.radius * 1.35 + 3.5 / view.scale, 0, Math.PI * 2);
-        ctx.strokeStyle = '#f59e0b';
-        ctx.lineWidth = 2.0 / view.scale;
+        ctx.arc(n.x, n.y, (n.radius * 1.35) + (4 / view.scale), 0, Math.PI * 2);
+        ctx.strokeStyle = '#3b82f6';
+        ctx.lineWidth = 2 / view.scale;
         ctx.stroke();
       } else if (isSpotlightNode) {
         ctx.strokeStyle = '#f59e0b';
-        ctx.lineWidth = 3.5 / view.scale;
+        ctx.lineWidth = 3 / view.scale;
         ctx.stroke();
       } else if (isInNeighbor) {
         ctx.strokeStyle = '#10b981';
-        ctx.lineWidth = 2.8 / view.scale;
+        ctx.lineWidth = 2.5 / view.scale;
         ctx.stroke();
       } else if (isOutNeighbor) {
         ctx.strokeStyle = '#6366f1';
-        ctx.lineWidth = 2.8 / view.scale;
+        ctx.lineWidth = 2.5 / view.scale;
         ctx.stroke();
       } else if (n.tier === 500) {
         ctx.strokeStyle = '#ffffff88';
@@ -1296,7 +1379,8 @@ content_type: core
       }
 
       // Title & Directional Badges
-      if (isSelf || isSpotlightNode || isInNeighbor || isOutNeighbor || (view.scale > 0.8 && n.total_degree > 30)) {
+      var showLabel = isSelf || isSpotlightNode || isInNeighbor || isOutNeighbor || (n.tier <= 500 && (n.degree > 18 || isTierActive(n, 500)) && view.scale > 0.45);
+      if (showLabel) {
         ctx.font = (isSelf || isSpotlightNode ? 'bold 11px' : '10px') + ' Inter, sans-serif';
         ctx.textAlign = 'left';
 
@@ -1325,13 +1409,31 @@ content_type: core
     ctx.restore();
   }
 
-  function startPhysics() {
-    function loop() {
-      tickPhysics();
-      render();
+  var isAnimating = false;
+  var animFrame = null;
+
+  function wakeAnimation() {
+    if (!isAnimating) {
+      isAnimating = true;
       animFrame = requestAnimationFrame(loop);
     }
-    loop();
+  }
+
+  function loop() {
+    tickPhysics();
+    render();
+
+    var shouldContinue = (alpha >= 0.003) || draggingNode || isPanning || showFlowCheck.checked;
+    if (shouldContinue) {
+      animFrame = requestAnimationFrame(loop);
+    } else {
+      isAnimating = false;
+    }
+  }
+
+  function startPhysics() {
+    alpha = 0.8;
+    wakeAnimation();
   }
 
   function getMousePos(e) {

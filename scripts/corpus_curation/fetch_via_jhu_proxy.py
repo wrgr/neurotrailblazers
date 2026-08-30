@@ -6,6 +6,7 @@ to authenticate and download paywalled literature into ../neurotrailblazers-priv
 """
 
 import argparse
+import csv
 import hashlib
 import json
 import os

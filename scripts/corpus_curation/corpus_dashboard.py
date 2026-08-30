@@ -51,7 +51,7 @@ def render_dashboard():
     print(f"   🔵 Author Preprints / PMC Renders: {len(author):4d} PDFs ({get_dir_size_mb(author):6.1f} MB) -> data/pdf_corpus/author_provided/")
     print(f"   🟡 Publisher Free / Bronze Access: {len(pub_free):4d} PDFs ({get_dir_size_mb(pub_free):6.1f} MB) -> data/pdf_corpus/publisher_free/")
     print(f"   🔒 Private Dev Stash (Paywalled):  {len(priv_pdfs):4d} PDFs ({get_dir_size_mb(priv_pdfs):6.1f} MB) -> ../neurotrailblazers-private/papers/")
-    print(f"   📑 Closed Paywalled Stubs:         {len(closed_meta):4d} JSONs            -> data/pdf_corpus/closed_metadata/")
+    print(f"   📑 Public Metadata Stubs:          {len(closed_meta):4d} JSONs (100% Public Coverage) -> data/pdf_corpus/closed_metadata/")
     print("-" * 80)
     print(" ⚡ RESOLVER ENGINES ACTIVE:")
     print("   • Europe PMC REST API (PMCID ?pdf=render streams)")

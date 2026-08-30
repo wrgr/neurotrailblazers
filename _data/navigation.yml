@@ -1,20 +1,18 @@
 ---
-# Primary site navigation items organized by Audience & Functional Role (Model 2)
-# Canonical source for header/nav; provides direct role-based pathways.
+# Primary site navigation items (5 Functional Pillars)
+# Canonical source for header/nav; provides structured pathways across all user roles.
 items:
-  - title: "Start Here"
+  - title: "Start & Story"
     url: "/start-here/"
     dropdown:
-      - title: "🧭 Choose Your Pathway"
+      - title: "🧭 Start Here (Persona Pathways)"
         url: "/start-here/"
       - title: "🚀 The Neuronauts Expedition"
         url: "/neuronauts/"
       - title: "🧒 Junior Lab (Kids & Explorers)"
         url: "/neuronauts/kids/"
-      - title: "🗺️ Interactive Learning Tracks"
-        url: "/tracks/"
 
-  - title: "For Learners"
+  - title: "Curriculum & Tracks"
     url: "/modules/"
     dropdown:
       - title: "📚 Foundational Modules (01–09)"
@@ -23,19 +21,21 @@ items:
         url: "/technical-training/"
       - title: "🔬 Proofreading & Interactive Labs"
         url: "/technical-training/proofreading-tutorials/"
-      - title: "📖 Connectomics Dictionary"
-        url: "/technical-training/dictionary/"
+      - title: "🗺️ Learning Tracks Overview"
+        url: "/tracks/"
       - title: "🧭 Career & Community Track"
         url: "/tracks/career-and-community/"
 
-  - title: "For Researchers"
+  - title: "Research & Literature"
     url: "/technical-training/journal-club/"
     dropdown:
       - title: "🌐 Interactive Citation Graph (2,000 Papers)"
         url: "/technical-training/journal-club/graph/"
       - title: "📑 Milestone Journal Club"
         url: "/technical-training/journal-club/"
-      - title: "🗺️ Connectomics Reference Atlas"
+      - title: "📖 Connectomics Dictionary"
+        url: "/technical-training/dictionary/"
+      - title: "🗺️ Reference Atlas & Anatomy"
         url: "/technical-training/atlas-connectomics-reference/"
       - title: "💾 Datasets & Benchmarks"
         url: "/datasets/"
@@ -44,13 +44,11 @@ items:
       - title: "🌍 Major Initiatives"
         url: "/initiatives/"
 
-  - title: "For Educators & Mentors"
+  - title: "Teaching & Mentorship"
     url: "/teaching/"
     dropdown:
-      - title: "🎓 Teaching Hub Overview"
+      - title: "🎓 Teaching Hub & Lecture Series"
         url: "/teaching/"
-      - title: "📽️ Connectomics Lecture Series"
-        url: "/teaching/lectures/"
       - title: "📊 Marp Slide Decks (38 Decks)"
         url: "/modules/slides/"
       - title: "📦 Classroom Session Kits"
@@ -60,16 +58,18 @@ items:
       - title: "🌱 Hidden Curriculum"
         url: "/hidden-curriculum/"
 
-  - title: "For Developers & Tools"
+  - title: "Tools & Ecosystem"
     url: "/tools/"
     dropdown:
-      - title: "🛠️ All Tools & Interactive Labs"
-        url: "/tools/"
       - title: "🤖 Ask an Expert (AI Assistant)"
         url: "/ask-an-expert/"
       - title: "📏 Connectome Quality Metrics"
         url: "/tools/connectome-quality/"
+      - title: "🛠️ All Tools & Interactive Labs"
+        url: "/tools/"
+      - title: "👤 Learner Personas (Avatars)"
+        url: "/avatars/"
       - title: "📚 Content Library & Data APIs"
         url: "/content-library/"
-      - title: "👤 Learner Personas & Frameworks"
-        url: "/avatars/"
+      - title: "🏛️ Program Frameworks & Models"
+        url: "/frameworks/"

@@ -22,37 +22,37 @@ content_type: navigation
         <p>Whether you're an undergraduate student curious about the brain, a graduate student diving into research, or a mentor looking to guide the next generation, you're in the right place. Our platform is designed around <strong>functional roles</strong> to support learners, researchers, educators, and engineers at every stage.</p>
 
         <div class="persona-pathfinder-hub mt-3 mb-4">
-            <h3 class="mb-2" style="font-size: 1.3rem; color: var(--synapse-black);">🎯 Select Your Functional Role</h3>
+            <h3 class="mb-2" style="font-size: 1.3rem; color: var(--synapse-black);">🎯 Select Your Pathway</h3>
             <div class="persona-tab-bar" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-                <button class="btn btn-outline persona-tab active" onclick="switchPersona('learner')" id="btn-learner" style="font-weight: 600;">🎓 For Learners</button>
-                <button class="btn btn-outline persona-tab" onclick="switchPersona('researcher')" id="btn-researcher" style="font-weight: 600;">🔬 For Researchers</button>
-                <button class="btn btn-outline persona-tab" onclick="switchPersona('educator')" id="btn-educator" style="font-weight: 600;">👨‍🏫 For Educators &amp; Mentors</button>
-                <button class="btn btn-outline persona-tab" onclick="switchPersona('developer')" id="btn-developer" style="font-weight: 600;">🛠️ For Developers &amp; Tools</button>
+                <button class="btn btn-outline persona-tab active" onclick="switchPersona('learner')" id="btn-learner" style="font-weight: 600;">📚 Curriculum &amp; Tracks (Learners)</button>
+                <button class="btn btn-outline persona-tab" onclick="switchPersona('researcher')" id="btn-researcher" style="font-weight: 600;">🔬 Research &amp; Literature</button>
+                <button class="btn btn-outline persona-tab" onclick="switchPersona('educator')" id="btn-educator" style="font-weight: 600;">🎓 Teaching &amp; Mentorship</button>
+                <button class="btn btn-outline persona-tab" onclick="switchPersona('developer')" id="btn-developer" style="font-weight: 600;">💡 Tools &amp; Ecosystem</button>
             </div>
 
             <!-- Learner Pathway Card -->
             <div id="card-learner" class="persona-pathway-card" style="display: block; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid var(--neural-blue); border-radius: 8px; padding: 1.5rem;">
-                <h3 style="color: var(--neural-blue); margin-top: 0;">🎓 Learner / Student Pathway</h3>
+                <h3 style="color: var(--neural-blue); margin-top: 0;">📚 Curriculum &amp; Tracks Pathway (For Learners)</h3>
                 <p style="font-size: 1rem; line-height: 1.5;">Master nanoscale connectomics through intuition-building narrative, foundational units, and hands-on proofreading labs:</p>
                 <ol style="margin-left: 1.5rem; line-height: 1.8;">
-                    <li><strong>Orientation:</strong> Explore the <a href="{{ '/neuronauts/' | relative_url }}">Neuronauts Story Expedition</a> and meet our <a href="{{ '/avatars/' | relative_url }}">Learner Avatars</a>.</li>
                     <li><strong>Foundations:</strong> Walk through <a href="{{ '/modules/' | relative_url }}">Foundational Modules (01–09)</a> with self-check diagnostics.</li>
-                    <li><strong>Hands-on Practice:</strong> Run real EM tracing drills in the <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}">Proofreading Interactive Labs</a>.</li>
-                    <li><strong>Vocabulary &amp; Concepts:</strong> Reference the <a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics Dictionary</a> whenever terms feel unfamiliar.</li>
+                    <li><strong>Technical Deep Dives:</strong> Progress through <a href="{{ '/technical-training/' | relative_url }}">Technical Units</a> for deep data pipelines.</li>
+                    <li><strong>Hands-on Labs:</strong> Run real EM tracing drills in the <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}">Proofreading Interactive Labs</a>.</li>
+                    <li><strong>Narrative &amp; Context:</strong> Explore the <a href="{{ '/neuronauts/' | relative_url }}">Neuronauts Story Expedition</a> and <a href="{{ '/tracks/career-and-community/' | relative_url }}">Career &amp; Community Track</a>.</li>
                 </ol>
                 <div class="mt-2">
-                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">Start Learner Track &rarr;</a>
+                    <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">Open Curriculum Modules &rarr;</a>
                 </div>
             </div>
 
             <!-- Researcher Pathway Card -->
             <div id="card-researcher" class="persona-pathway-card" style="display: none; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #6366f1; border-radius: 8px; padding: 1.5rem;">
-                <h3 style="color: #4f46e5; margin-top: 0;">🔬 Researcher &amp; Domain Specialist Pathway</h3>
+                <h3 style="color: #4f46e5; margin-top: 0;">🔬 Research &amp; Literature Pathway</h3>
                 <p style="font-size: 1rem; line-height: 1.5;">Explore the literature graph, benchmark datasets, and open research challenges across connectomics:</p>
                 <ol style="margin-left: 1.5rem; line-height: 1.8;">
                     <li><strong>Citation Lineage:</strong> Explore our <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Interactive Citation Graph (2,000 Milestone Papers)</a> with degree-weighted edges and subgraph clustering.</li>
                     <li><strong>Literature Synthesis:</strong> Study deep dives and methodology comparisons in the <a href="{{ '/technical-training/journal-club/' | relative_url }}">Milestone Journal Club</a>.</li>
-                    <li><strong>Reference &amp; Anatomy:</strong> Consult the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">Connectomics Reference Atlas</a>.</li>
+                    <li><strong>Reference &amp; Anatomy:</strong> Consult the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">Reference Atlas</a> and <a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics Dictionary</a>.</li>
                     <li><strong>Data &amp; Challenges:</strong> Access public volumes via <a href="{{ '/datasets/' | relative_url }}">Datasets Hub</a> and explore <a href="{{ '/open-problems/' | relative_url }}">Open Problems</a>.</li>
                 </ol>
                 <div class="mt-2">
@@ -62,7 +62,7 @@ content_type: navigation
 
             <!-- Educator Pathway Card -->
             <div id="card-educator" class="persona-pathway-card" style="display: none; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #10b981; border-radius: 8px; padding: 1.5rem;">
-                <h3 style="color: #059669; margin-top: 0;">👨‍🏫 Educator &amp; Mentor Pathway</h3>
+                <h3 style="color: #059669; margin-top: 0;">🎓 Teaching &amp; Mentorship Pathway</h3>
                 <p style="font-size: 1rem; line-height: 1.5;">Access ready-to-teach university lecture slides, classroom session kits, and mentorship guidelines:</p>
                 <ol style="margin-left: 1.5rem; line-height: 1.8;">
                     <li><strong>Lecture Slide Decks:</strong> Download and present from <a href="{{ '/modules/slides/' | relative_url }}">38 Marp Slide Decks</a> with speaker notes.</li>
@@ -76,15 +76,15 @@ content_type: navigation
 
             <!-- Developer Pathway Card -->
             <div id="card-developer" class="persona-pathway-card" style="display: none; background: #f8fafc; border: 1px solid #cbd5e1; border-left: 5px solid #f59e0b; border-radius: 8px; padding: 1.5rem;">
-                <h3 style="color: #d97706; margin-top: 0;">🛠️ Developer &amp; Computational Engineer Pathway</h3>
+                <h3 style="color: #d97706; margin-top: 0;">💡 Tools &amp; Ecosystem Pathway</h3>
                 <p style="font-size: 1rem; line-height: 1.5;">Integrate connectomics quality metrics, automated proofreading algorithms, and AI tools:</p>
                 <ol style="margin-left: 1.5rem; line-height: 1.8;">
                     <li><strong>Quality Metrics:</strong> Run automated quality algorithms with the <a href="{{ '/tools/connectome-quality/' | relative_url }}">Connectome Quality Tool</a>.</li>
-                    <li><strong>Technical Deep Dives:</strong> Study Units 04 (Infrastructure) &amp; 08 (Segmentation &amp; Proofreading) in <a href="{{ '/technical-training/' | relative_url }}">Technical Training</a>.</li>
                     <li><strong>AI &amp; RAG Search:</strong> Explore <a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> and SQLite literature vector search.</li>
+                    <li><strong>Avatars &amp; Models:</strong> Review our <a href="{{ '/avatars/' | relative_url }}">Learner Personas</a> and <a href="{{ '/frameworks/' | relative_url }}">Program Frameworks</a>.</li>
                 </ol>
                 <div class="mt-2">
-                    <a href="{{ '/tools/' | relative_url }}" class="btn btn-primary" style="background: #d97706; border-color: #d97706;">Explore Developer Tools &rarr;</a>
+                    <a href="{{ '/tools/' | relative_url }}" class="btn btn-primary" style="background: #d97706; border-color: #d97706;">Explore Tools &amp; Ecosystem &rarr;</a>
                 </div>
             </div>
         </div>

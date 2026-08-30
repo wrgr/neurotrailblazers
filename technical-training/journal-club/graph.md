@@ -121,9 +121,9 @@ content_type: core
       </div>
 
       <!-- Action Buttons -->
-      <div class="jcg-control-group" style="margin-top: 0.25rem; gap: 0.5rem;">
-        <button id="jcg-prompt-btn" type="button" class="jcg-prompt-trigger-btn">
-          ✨ Generate AI Synthesis Prompt (<span id="jcg-prompt-count">500</span>)
+      <div class="jcg-control-group" style="margin-top: 0.25rem; gap: 0.4rem;">
+        <button id="jcg-prompt-btn" type="button" class="jcg-secondary-btn" style="width:100%; font-weight:600;">
+          🤖 Open AI Synthesis Tray (<span id="jcg-prompt-count">500</span>)
         </button>
         <div style="display: flex; gap: 0.4rem;">
           <button id="jcg-sidebar-fit" type="button" class="jcg-secondary-btn" style="flex:1;">⛶ Fit View</button>
@@ -141,54 +141,60 @@ content_type: core
     </div>
 
     <!-- Canvas Container & Interactive Drawer -->
-    <div class="jcg-canvas-wrap">
-      <canvas id="jcg-canvas"></canvas>
-      
-      <!-- On-Canvas Floating HUD Controls -->
-      <div class="jcg-canvas-hud">
-        <button type="button" id="jcg-hud-zoom-in" title="Zoom In">+</button>
-        <button type="button" id="jcg-hud-zoom-out" title="Zoom Out">&minus;</button>
-        <button type="button" id="jcg-hud-fit" title="Fit to Screen">⛶</button>
-        <button type="button" id="jcg-hud-reheat" title="Reheat Physics &amp; Relax Layout">⚡</button>
-      </div>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div class="jcg-canvas-wrap">
+        <canvas id="jcg-canvas"></canvas>
+        
+        <!-- On-Canvas Floating HUD Controls -->
+        <div class="jcg-canvas-hud">
+          <button type="button" id="jcg-hud-zoom-in" title="Zoom In">+</button>
+          <button type="button" id="jcg-hud-zoom-out" title="Zoom Out">&minus;</button>
+          <button type="button" id="jcg-hud-fit" title="Fit to Screen">⛶</button>
+          <button type="button" id="jcg-hud-reheat" title="Reheat Physics &amp; Relax Layout">⚡</button>
+        </div>
 
-      <!-- Subgraph Focus Mode Active Banner -->
-      <div class="jcg-focus-banner hidden" id="jcg-focus-banner">
-        <span>🎯 Focusing on Subgraph of: <strong id="jcg-focus-paper-title">Paper</strong></span>
-        <button type="button" id="jcg-focus-exit-btn" title="Exit Focus Mode">✕ Exit Subgraph Focus</button>
-      </div>
+        <!-- Subgraph Focus Mode Active Banner -->
+        <div class="jcg-focus-banner hidden" id="jcg-focus-banner">
+          <span>🎯 Focusing on Subgraph of: <strong id="jcg-focus-paper-title">Paper</strong></span>
+          <button type="button" id="jcg-focus-exit-btn" title="Exit Focus Mode">✕ Exit Subgraph Focus</button>
+        </div>
 
-      <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
-      
-      <!-- Slide-Out Paper Detail Drawer with Deep OCAR Integration -->
-      <div class="jcg-panel hidden" id="jcg-panel">
-        <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
-        <div class="jcg-panel-body" id="jcg-panel-body">
-          <!-- Dynamically populated with OCAR cards, 3-tier summaries, and citation lineage -->
+        <div class="jcg-tooltip hidden" id="jcg-tooltip"></div>
+        
+        <!-- Slide-Out Paper Detail Drawer with Deep OCAR Integration -->
+        <div class="jcg-panel hidden" id="jcg-panel">
+          <button class="jcg-panel-close" id="jcg-panel-close" aria-label="Close">&times;</button>
+          <div class="jcg-panel-body" id="jcg-panel-body">
+            <!-- Dynamically populated with OCAR cards, 3-tier summaries, and citation lineage -->
+          </div>
         </div>
       </div>
 
-      <!-- AI Synthesis Prompt Modal -->
-      <div class="jcg-prompt-modal hidden" id="jcg-prompt-modal">
-        <div class="jcg-prompt-modal-content">
-          <div class="jcg-prompt-modal-header">
-            <h3 id="jcg-prompt-modal-title">🤖 AI Research Synthesis Prompt</h3>
-            <button class="jcg-prompt-modal-close" id="jcg-prompt-close" aria-label="Close">&times;</button>
+      <!-- On-Demand AI Literature Synthesis & Discussion Tray -->
+      <div class="jcg-ai-tray collapsed" id="jcg-ai-tray">
+        <div class="jcg-ai-tray-header" id="jcg-ai-tray-header">
+          <h3 id="jcg-prompt-modal-title">🤖 AI Research Synthesis &amp; Discussion Tray</h3>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-size: 0.75rem; color: #64748b;" id="jcg-tray-status-text">Click to expand</span>
+            <button type="button" class="jcg-ai-tray-toggle-btn" id="jcg-ai-tray-toggle">▾ Expand Tray</button>
           </div>
-          <p class="jcg-prompt-modal-desc" id="jcg-prompt-modal-desc">
-            Copy this grounded prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> to generate a rigorous analysis across the <strong id="jcg-modal-paper-count">0</strong> papers currently in your view.
+        </div>
+        
+        <div class="jcg-ai-tray-body">
+          <p class="jcg-prompt-modal-desc" id="jcg-prompt-modal-desc" style="margin-bottom: 0.75rem; color: #475569; font-size: 0.82rem;">
+            Copy this grounded prompt into <strong>ChatGPT</strong>, <strong>Claude</strong>, or <strong>Gemini</strong> across the <strong id="jcg-modal-paper-count">0</strong> papers currently in your active filter.
           </p>
 
           <!-- Mode Switcher Tabs -->
-          <div class="jcg-prompt-modes" id="jcg-prompt-mode-tabs" style="display: flex; gap: 0.35rem; margin-bottom: 0.75rem; background: #f1f5f9; padding: 0.25rem; border-radius: 8px;">
-            <button type="button" class="jcg-pmode-btn active" data-mode="synthesis" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 700; border: none; border-radius: 6px; background: #1a56db; color: #fff; cursor: pointer;">📑 Synthesis Review</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="methods" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🔬 Methods Compare</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="problems" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">💡 Open Problems</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="seminar" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🎓 Seminar Guide</button>
+          <div class="jcg-prompt-modes" id="jcg-prompt-mode-tabs" style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; background: #f1f5f9; padding: 0.25rem; border-radius: 8px;">
+            <button type="button" class="jcg-pmode-btn active" data-mode="synthesis" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 700; border: none; border-radius: 6px; background: #1a56db; color: #fff; cursor: pointer;">📑 Synthesis Review</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="methods" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🔬 Methods Compare</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="problems" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">💡 Open Problems</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="seminar" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🎓 Seminar Guide</button>
           </div>
 
-          <div class="jcg-prompt-box">
-            <textarea id="jcg-prompt-textarea" readonly></textarea>
+          <div class="jcg-prompt-box" style="margin-bottom: 0.75rem;">
+            <textarea id="jcg-prompt-textarea" readonly style="width: 100%; height: 220px; box-sizing: border-box; padding: 0.75rem; font-family: monospace; font-size: 0.78rem; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #1e293b; resize: vertical; line-height: 1.4;"></textarea>
           </div>
           <div class="jcg-prompt-modal-footer" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;">
             <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -205,7 +211,6 @@ content_type: core
           </div>
         </div>
       </div>
-
     </div>
 
   </div>
@@ -448,36 +453,63 @@ content_type: core
 .jcg-lineage-chip.citing-chip { border-left: 3px solid #06b6d4; }
 .jcg-lineage-chip.cited-chip { border-left: 3px solid #f59e0b; }
 
-/* Prompt Modal */
-.jcg-prompt-modal {
-  position: absolute; inset: 0; background: rgba(15, 23, 42, 0.75);
-  display: flex; align-items: center; justify-content: center; z-index: 30; padding: 1.5rem;
+/* On-Demand AI Synthesis Tray */
+.jcg-ai-tray {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
 }
-.jcg-prompt-modal.hidden { display: none; }
-.jcg-prompt-modal-content {
-  background: #fff; border-radius: 12px; max-width: 680px; width: 100%;
-  max-height: 90%; display: flex; flex-direction: column; padding: 1.5rem;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid #cbd5e1;
+.jcg-ai-tray.collapsed .jcg-ai-tray-body {
+  display: none;
 }
-.jcg-prompt-modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
-.jcg-prompt-modal-header h3 { margin: 0; font-size: 1.15rem; color: #0f172a; }
-.jcg-prompt-modal-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #64748b; line-height: 1; }
-.jcg-prompt-modal-close:hover { color: #0f172a; }
-.jcg-prompt-modal-desc { font-size: 0.82rem; color: #475569; margin: 0 0 0.75rem 0; line-height: 1.4; }
-.jcg-prompt-box { flex: 1; display: flex; margin-bottom: 1rem; }
-#jcg-prompt-textarea {
-  width: 100%; height: 280px; box-sizing: border-box; padding: 0.75rem;
-  font-family: monospace; font-size: 0.78rem; border: 1px solid #cbd5e1;
-  border-radius: 6px; background: #f8fafc; color: #1e293b; resize: none; line-height: 1.4;
+.jcg-ai-tray-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.1rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+  user-select: none;
 }
-.jcg-prompt-modal-footer { display: flex; align-items: center; gap: 0.75rem; }
+.jcg-ai-tray.collapsed .jcg-ai-tray-header {
+  border-bottom: none;
+}
+.jcg-ai-tray-header h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+.jcg-ai-tray-toggle-btn {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.jcg-ai-tray-toggle-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.jcg-ai-tray-body {
+  padding: 1.15rem;
+  background: #fff;
+}
 .jcg-copy-btn {
   background: #1a56db; color: #fff; border: none; border-radius: 6px;
-  padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.45rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.4rem; transition: background 0.15s;
 }
 .jcg-copy-btn:hover { background: #1e40af; }
-.jcg-copy-status { font-size: 0.85rem; font-weight: 600; color: #16a34a; }
+.jcg-copy-status { font-size: 0.8rem; font-weight: 600; color: #16a34a; }
 </style>
 
 <script>
@@ -576,8 +608,10 @@ content_type: core
   var focusExitBtn = document.getElementById('jcg-focus-exit-btn');
   var promptTriggerBtn = document.getElementById('jcg-prompt-btn');
   var promptCountSpan = document.getElementById('jcg-prompt-count');
-  var promptModal = document.getElementById('jcg-prompt-modal');
-  var promptModalClose = document.getElementById('jcg-prompt-close');
+  var aiTray = document.getElementById('jcg-ai-tray');
+  var aiTrayHeader = document.getElementById('jcg-ai-tray-header');
+  var aiTrayToggleBtn = document.getElementById('jcg-ai-tray-toggle');
+  var aiTrayStatusText = document.getElementById('jcg-tray-status-text');
   var promptTextarea = document.getElementById('jcg-prompt-textarea');
   var copyPromptBtn = document.getElementById('jcg-copy-prompt-btn');
   var copyStatus = document.getElementById('jcg-copy-status');
@@ -1656,9 +1690,7 @@ content_type: core
       aiPromptBtn.addEventListener('click', function () {
         singlePaperTarget = p;
         document.getElementById('jcg-prompt-mode-tabs').style.display = 'none';
-        generateSynthesisPrompt();
-        copyStatus.classList.add('hidden');
-        promptModal.classList.remove('hidden');
+        openAiTray();
       });
     }
 
@@ -1818,13 +1850,37 @@ content_type: core
     promptTextarea.value = prompt;
   }
 
-  // Open modal from sidebar trigger button
+  function openAiTray() {
+    aiTray.classList.remove('collapsed');
+    aiTrayToggleBtn.textContent = '▴ Collapse Tray';
+    aiTrayStatusText.textContent = 'Click to collapse';
+    generateSynthesisPrompt();
+    copyStatus.classList.add('hidden');
+    aiTray.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function toggleAiTray() {
+    if (aiTray.classList.contains('collapsed')) {
+      openAiTray();
+    } else {
+      aiTray.classList.add('collapsed');
+      aiTrayToggleBtn.textContent = '▾ Expand Tray';
+      aiTrayStatusText.textContent = 'Click to expand';
+    }
+  }
+
+  aiTrayHeader.addEventListener('click', function (e) {
+    if (e.target !== aiTrayToggleBtn) {
+      toggleAiTray();
+    }
+  });
+  aiTrayToggleBtn.addEventListener('click', toggleAiTray);
+
+  // Open tray from sidebar trigger button
   promptTriggerBtn.addEventListener('click', function () {
     singlePaperTarget = null;
     document.getElementById('jcg-prompt-mode-tabs').style.display = 'flex';
-    generateSynthesisPrompt();
-    copyStatus.classList.add('hidden');
-    promptModal.classList.remove('hidden');
+    openAiTray();
   });
 
   // Prompt Mode Switching
@@ -1844,8 +1900,6 @@ content_type: core
       generateSynthesisPrompt();
     });
   });
-
-  promptModalClose.addEventListener('click', function () { promptModal.classList.add('hidden'); });
 
   copyPromptBtn.addEventListener('click', function () {
     promptTextarea.select();

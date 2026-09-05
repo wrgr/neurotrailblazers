@@ -66,7 +66,7 @@ Derived from the banner. Contrast ratios are WCAG 2.1 against the surface named.
 | `--nt-teal-deep` | `#0B5259` | Hover and pressed | 8.9:1 on white |
 | `--nt-teal-light` | `#BFE3E4` | Tints, chips, table header on dark | 10.1:1 for ink text |
 | `--nt-mist` | `#E6F2F3` | Pale panel and quiet-slide background (the banner sky) | 12.1:1 for ink text |
-| `--nt-amber` Signal Amber | `#E8820C` | **One accent per surface, fills only.** The one lit contact on the mark. | 2.8:1 on white: **not for text on light** |
+| `--nt-amber` Signal Amber | `#E8820C` | **One accent per surface, fills only.** The postsynaptic density on the mark. | 2.8:1 on white: **not for text on light** |
 | `--nt-amber-deep` | `#B4600A` | Amber when it must be text on light | 4.6:1 on white |
 | `--nt-amber-light` | `#FDECD6` | Warning callout tint | — |
 | `--nt-paper` / `--nt-surface` | `#FFFFFF` / `#F5F8F8` | Page and card backgrounds | — |
@@ -75,7 +75,7 @@ Derived from the banner. Contrast ratios are WCAG 2.1 against the surface named.
 | `--nt-good` / `--nt-warn` | `#1C6B43` / `#A8410A` | Semantic only | 6.5:1 / 6.1:1 on white |
 
 **Proportions.** Ink and the neutrals carry 70% of any surface, teal 20%, amber under 5%
-and usually a single element: the lit contact on the mark, a pill, one callout. If
+and usually a single element: the postsynaptic density on the mark, a pill, one callout. If
 two things on a page are amber, one of them is wrong.
 
 **Dark surfaces** (title slides, section dividers, footer, social card) are ink with mist
@@ -108,43 +108,48 @@ alone is tracked +1%.
 
 ## 5. The mark
 
-**Concept.** A wiring diagram. Four presynaptic neurons send neurites that converge on
-one postsynaptic neuron; each neurite ends in a bouton where it lands on the target, and
-one of those contacts is amber. The postsynaptic neuron's own axon leaves toward the upper
-right, so the picture has direction: inputs arrive, one cell integrates them, a signal
-goes on. This is what a connectome gives you for every neuron in a volume, and it is the
-brand line drawn: connections being made. It holds at 16 px, where it reads as a hub with
-converging spokes and one warm point.
+**Concept.** A synapse, drawn the way it appears in an electron micrograph. A spiny
+dendrite runs along the bottom of the tile; an axon arrives from the top-left and swells
+into a bouton filled with vesicles; across a narrow cleft, the spine head it contacts
+carries a postsynaptic density. Every element is in the cell colour except the
+postsynaptic density, which is amber: the one place on the mark where the connection is
+actually made. Anyone who has looked at EM reads it at once; anyone who has not still sees
+a path arriving at a bright point of contact. At 16 px it reads as a terminal meeting a
+branch.
 
-Two earlier drafts were retired: a branching path with a node (generic; could belong to
-any network or navigation product) and an axon terminal on a dendritic spine (specific,
-but a single synapse is the wrong scale for a program whose subject is the network).
+Colour logic, in the field's own terms: neurites and bouton are cytoplasm (cell colour),
+vesicles are the tile colour, the PSD is the accent. Do not colour the bouton amber; that
+was tried and it makes the terminal, not the contact, the subject.
+
+Three earlier directions were retired: a branching path with a node (generic), a
+convergent wiring diagram (correct about networks, but it looked like every other network
+icon), and a set of alternatives (serial sections, segmented mosaic, connectivity matrix,
+N monogram, imaged volume) that are documented in the working files for reference.
 
 | File | Use |
 |---|---|
-| `nt-mark.svg` | Primary: mist neurons and amber contact on ink tile. Favicon, app icon, avatars, slide footer |
-| `nt-mark-reversed.svg` | Ink neurons on mist tile, for dark backgrounds |
-| `nt-mark-mono.svg` | One colour, for print and embossing |
+| `nt-mark.svg` | Primary: mist cell, ink vesicles, amber PSD on ink tile. Favicon, app icon, avatars, slide footer |
+| `nt-mark-reversed.svg` | Ink cell on mist tile, for dark backgrounds |
+| `nt-mark-mono.svg` | One colour for print: paper cell, ink vesicles and PSD |
 | `nt-wordmark.svg` / `-reversed.svg` | Outlined Barlow Condensed Bold with kerning, no font dependency |
 | `nt-lockup-horizontal.svg` / `-reversed.svg` | Mark + wordmark, for headers and title slides |
 | `nt-lockup-stacked.svg` / `-reversed.svg` | Square-ish contexts: social avatars, posters |
 | `nt-favicon.svg` | Same as the mark; add a 32 px PNG for old browsers |
 | `nt-social-card.svg` | 1200 × 630 Open Graph image, carries the motif and the tagline |
-| `nt-motif-network.svg` | 1280 × 720 background scene for title and closing slides |
+| `nt-motif-synapse.svg` | 1280 × 720 background scene for title and closing slides |
 
-**The motif.** The larger scene behind title slides, closing slides and the social card is
-the same idea at circuit scale: fifteen neurons, three of them hubs, directed neurites that
-end in boutons on their targets, and one amber synapse. It is generated
-(`build_svgs.py` in the working files) from a node list and an edge list, so a variant with
-a different circuit is a data change, not a redraw. It is a ground, not an illustration:
-keep it at the shipped opacity and put text over the quiet regions.
+**The motif.** The larger scene behind title slides, closing slides and the social card
+extends the mark: one dendrite with four spines crossing the frame, two axons arriving,
+teal boutons, and a single amber postsynaptic density on the spine that is being
+contacted. It is a ground, not an illustration: keep it at the shipped opacity and put
+text over the quiet regions.
 
 **Rules.**
 
-- Clear space around any lockup is the diameter of the hub soma on all sides.
+- Clear space around any lockup is the diameter of the bouton on all sides.
 - Minimum size: mark 16 px; horizontal lockup 120 px wide; stacked lockup 72 px wide.
-- The mark always sits on its tile. Do not place the bare circuit on a photograph.
-- Do not recolour the amber contact. Amber is the one place amber is guaranteed to appear.
+- The mark always sits on its tile. Do not place the bare neurites on a photograph.
+- Do not recolour the postsynaptic density. Amber is the one place amber is guaranteed to appear.
 - Do not rotate, outline, add a drop shadow, or set the wordmark in any other face.
 - The banner illustration (`assets/images/neurotrailblazers-banner.jpg`) stays as the
   hero image; it is not a logo and should not appear on every page's header.
@@ -241,7 +246,7 @@ assets/brand/
   nt-wordmark.svg  nt-wordmark-reversed.svg
   nt-lockup-horizontal.svg  nt-lockup-horizontal-reversed.svg
   nt-lockup-stacked.svg  nt-lockup-stacked-reversed.svg
-  nt-social-card.svg  nt-motif-network.svg
+  nt-social-card.svg  nt-motif-synapse.svg
   NeuroTrailblazers-slide-template.pptx
 course/decks/marp/theme/neurotrailblazers.css
 course/decks/marp/neurotrailblazers-template.marp.md

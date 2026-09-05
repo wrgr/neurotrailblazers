@@ -2,20 +2,16 @@
   <title>NeuroTrailblazers mark, one colour</title>
   <rect width="64" height="64" rx="14" fill="#10303f"/>
   <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M11 11 C 20 12, 28 18, 34 26" stroke-width="3.2"/>
-    <path d="M7 33 C 16 32, 24 32, 32.5 33" stroke-width="3.2"/>
-    <path d="M12 55 C 20 52, 28 46, 34.5 39" stroke-width="3.2"/>
-    <path d="M30 62 C 34 56, 37 50, 39.5 43" stroke-width="2.8"/>
-    <path d="M47 27 C 52 20, 56 14, 60 8" stroke-width="3.6"/>
-    <path d="M53 18 C 56 18, 59 19, 62 21" stroke-width="2.4"/>
+    <path d="M12 60 C 28 56, 42 46, 58 24" stroke-width="7"/>
+    <path d="M33.5 50.5 L 30.2 44.5" stroke-width="3.5"/>
+    <path d="M23 57 L 21.5 51" stroke-width="3"/>
+    <path d="M47 39 L 51 33" stroke-width="3"/>
+    <path d="M6 7 C 9 21, 19 25, 31 26.5" stroke-width="4"/>
   </g>
-  <circle cx="8" cy="10" r="4.4" fill="#ffffff"/>
-  <circle cx="5" cy="33" r="3.8" fill="#ffffff"/>
-  <circle cx="9" cy="56" r="4.4" fill="#ffffff"/>
-  <circle cx="28" cy="63" r="3.2" fill="#ffffff"/>
-  <circle cx="41" cy="33" r="8" fill="#ffffff"/>
-  <circle cx="34.6" cy="26.6" r="2.4" fill="#ffffff"/>
-  <circle cx="35" cy="39.2" r="2.4" fill="#ffffff"/>
-  <circle cx="39.6" cy="42.6" r="2.2" fill="#ffffff"/>
-  <circle cx="32.2" cy="33" r="3.8" fill="#ffffff" stroke="#10303f" stroke-width="1.4"/>
+  <circle cx="21" cy="48.5" r="2.8" fill="#ffffff"/>
+  <circle cx="52" cy="31" r="2.8" fill="#ffffff"/>
+  <circle cx="29.4" cy="40.4" r="4.2" fill="#ffffff"/>
+  <path d="M27.98 35.81 A4.8 4.8 0 0 1 34.19 40.14" fill="none" stroke="#10303f" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="37.2" cy="29.2" r="7" fill="#ffffff"/>
+  <circle cx="35.2" cy="27.2" r="1.3" fill="#10303f"/><circle cx="39" cy="26.8" r="1.3" fill="#10303f"/><circle cx="37.6" cy="31.2" r="1.3" fill="#10303f"/><circle cx="34.2" cy="30.8" r="1.15" fill="#10303f"/><circle cx="40.8" cy="30.4" r="1.1" fill="#10303f"/>
 </svg>

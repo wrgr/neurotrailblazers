@@ -3177,3 +3177,21 @@ a.arch-card,
   background: var(--teal-lt, #b3e4e3);
   color: var(--teal, #006d6b);
 }
+
+/* Time and level on the technical-course unit cards. The values live in each unit's
+   front matter; the index looks them up rather than keeping a second copy. */
+.unit-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.6rem;
+}
+.unit-meta span {
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  background: var(--surface, #f7f8fa);
+  border: 1px solid var(--border, #e2e6ed);
+  color: var(--muted, #5a6478);
+}

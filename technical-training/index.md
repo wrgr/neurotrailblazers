@@ -51,7 +51,8 @@ content_type: navigation
   <section class="section">
     <h2>The nine units, and the atlas beside them</h2>
     <p>Units 01&ndash;09 are ordered and cumulative; each ends in a graded artifact. The atlas is
-    reference: consult it as you go, do not work through it.</p>
+    reference: consult it as you go, do not work through it. Working through all nine, labs
+    included, is about <strong>31 hours</strong>.</p>
     {% assign concept_items = site.data.concepts.concepts %}
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}
@@ -63,6 +64,18 @@ content_type: navigation
         {% if item.slug == 'atlas-connectomics-reference' %}<p class="pill-reference">Reference &mdash; consult, do not complete</p>{% endif %}
         <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
         <p class="card-description">{{ item.summary | default: item.mapping_note }}</p>
+        {%- comment -%}
+          Time, level and prerequisites live in each unit page's front matter, not in
+          technical_track.yml, so look the page up by its slug rather than duplicating
+          the values into a second file where they would drift.
+        {%- endcomment -%}
+        {% assign unit_page = site.pages | where: "slug", item.slug | first %}
+        {% if unit_page %}
+        <p class="unit-meta">
+          {% if unit_page.time_estimate %}<span>{{ unit_page.time_estimate }}</span>{% endif %}
+          {% if unit_page.level %}<span>{{ unit_page.level }}</span>{% endif %}
+        </p>
+        {% endif %}
         {% if item.user_needs %}
         <p>
           {% for need in item.user_needs %}

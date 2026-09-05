@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "05 Neuronal Ultrastructure"
 paginate: true
+footer: "Unit 05 · Neuronal ultrastructure"
 ---
 
+<!-- _class: title -->
 # 05 Neuronal Ultrastructure
 Technical Training: Nanoscale Connectomics
 
@@ -32,12 +35,14 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual grounding: compartment orientation
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png)
 - Instructor move: ask learners for two independent cues before naming compartment.
 
 ---
 
+<!-- _class: figure -->
 ## Visual grounding: dendritic context
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png)
 - Emphasize neighborhood context, not isolated texture patterns.
@@ -58,24 +63,28 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Synapse cue set
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png)
 - Require membrane apposition + vesicle field + postsynaptic context.
 
 ---
 
+<!-- _class: figure -->
 ## Organelle-assisted disambiguation
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png)
 - Use organelles to support or reject first-pass labels.
 
 ---
 
+<!-- _class: figure -->
 ## Comparative ambiguity case
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png)
 - Teach explicit alternate hypothesis statement.
 
 ---
 
+<!-- _class: figure -->
 ## Advanced adjudication case
 ![w:920](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png)
 - Decision policy: escalate when cue conflict persists across slices.

@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "02 Brain Data Across Scales"
 paginate: true
+footer: "Unit 02 · Brain data across scales"
 ---
 
+<!-- _class: title -->
 # 02 Brain Data Across Scales
 Technical Training: Nanoscale Connectomics
 
@@ -31,18 +34,21 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: multi-scale framing
 ![w:940](../../../assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON1-S02-01.png)
 - Instructor cue: ask what is visible here and what is fundamentally unobservable at this scale.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: analysis scale transition
 ![w:940](../../../assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S05-01.png)
 - Distinguish acquisition scale from analysis target scale.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: representational conversion risk
 ![w:940](../../../assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON3-S06-01.png)
 - Volume -> segmentation -> skeleton/mesh -> graph can remove critical geometry.

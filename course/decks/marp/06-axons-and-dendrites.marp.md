@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "06 Axons and Dendrites"
 paginate: true
+footer: "Unit 06 · Axons and dendrites"
 ---
 
+<!-- _class: title -->
 # 06 Axons and Dendrites
 Technical Training: Nanoscale Connectomics
 
@@ -31,11 +34,13 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: morphology baseline
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S01-01.png)
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: dendritic cue panel
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S08-01.png)
 
@@ -62,23 +67,27 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: axonal cue panel
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S11-01.png)
 
 ---
 
+<!-- _class: figure -->
 ## Side-by-side discrimination
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S13-01.png)
 - Ask learners to justify which cue would survive lower image quality.
 
 ---
 
+<!-- _class: figure -->
 ## Ambiguous process case
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S14-01.png)
 - Train weighted-evidence reasoning, not binary heuristics.
 
 ---
 
+<!-- _class: figure -->
 ## Continuity check case
 ![w:920](../../../assets/images/technical-training/06-axons-and-dendrites/FIG-RIV-AXDEN-S18-01.png)
 - Require short-path continuity inspection before final call.

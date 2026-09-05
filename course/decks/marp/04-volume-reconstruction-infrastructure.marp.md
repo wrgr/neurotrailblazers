@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "04 Volume Reconstruction Infrastructure"
 paginate: true
+footer: "Unit 04 · Volume reconstruction"
 ---
 
+<!-- _class: title -->
 # 04 Volume Reconstruction Infrastructure
 Technical Training: Nanoscale Connectomics
 
@@ -36,6 +39,7 @@ Reliability and lineage are first-class scientific requirements.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: orchestration and stage dependencies
 ![w:940](../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png)
 - Emphasize idempotence and region-scoped replay.
@@ -49,6 +53,7 @@ Reliability and lineage are first-class scientific requirements.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: serving and analysis interface
 ![w:940](../../../assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S19-01.png)
 - Make clear distinction: data plane vs control plane.

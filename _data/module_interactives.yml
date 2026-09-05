@@ -179,3 +179,579 @@ modules:
       correct_index: 1
       correct_feedback: Correct. Null comparison and uncertainty are required for defensible claims.
       incorrect_feedback: Try again. Add null-model context and uncertainty.
+  module10:
+    quiz:
+      title: Graph Representation Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: You report a hub list computed at a minimum of one synapse per edge. A reviewer asks how robust it is. What does this module require?
+        options:
+        - State that one synapse is the standard threshold in connectomics
+        - Re-run the analysis at a second threshold and report the hubs that survive both
+        - Raise the threshold to five synapses, because a cleaner graph is more defensible
+        correct_index: 1
+        explanation: There is no universally correct threshold, so the defensible move is a sensitivity analysis. Raising the threshold to three synapses can drop roughly two thirds of edges and change which cells rank as hubs, so report the intersection and flag the cells that moved. A single clean threshold silently discards genuine weak connections and hides the fact that a choice was made.
+      - prompt: Your clustering coefficient is 0.19 against a degree-preserving null mean of 0.11. Which write-up is defensible?
+        options:
+        - Clustering is 0.19, indicating dense local circuitry
+        - Clustering exceeds chance, so the circuit is small-world
+        - Clustering exceeds the degree-preserving expectation; a spatially constrained null has not been applied
+        correct_index: 2
+        explanation: Neurons whose arbors overlap connect more often, so part of any clustering excess is geometry rather than wiring specificity. Naming the null you ran and the one you did not is what survives the reviewer who asks about distance. The first option reports a number with no baseline at all; the second attaches a label that two metrics without a path-length comparison do not establish.
+      - prompt: One neuron in your 500-node graph has 214 partners; the next highest has 91. What do you do first?
+        options:
+        - Inspect the segment for a merge error before treating it as a hub
+        - Report it as the circuit's hub neuron, since degree is the standard hub measure
+        - Drop the node, because degree outliers destabilise clustering estimates
+        correct_index: 0
+        explanation: 'A merge fuses two cells'' partner lists and manufactures exactly this signature: one degree more than double the runner-up. Pulling the mesh to check for two somata costs minutes and decides whether this is biology or a reconstruction error. Dropping the node without looking discards a real hub as easily as an artifact, and records neither decision.'
+    task:
+      title: Graph Schema Microtask
+      prompt: Your PI asks whether one cell type concentrates its input on the proximal dendrites of another. Which representation can answer that?
+      options:
+      - Neuron-level nodes with synapse-count edge weights
+      - Neuron-level nodes with binary edges thresholded at three synapses
+      - Compartment-level nodes that split each neuron into axon, soma and dendrite
+      correct_index: 2
+      correct_feedback: Correct. A neuron-level graph has already discarded synapse placement, so no metric computed on it can recover the compartment. Pick the abstraction from the question.
+      incorrect_feedback: Not quite. Both neuron-level options throw away where each synapse lands. Re-read what the EM-to-graph transformation loses.
+  module11:
+    quiz:
+      title: Circuit Logic Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Why is "reconstruction errors just add noise to my motif counts" a dangerous assumption?
+        options:
+        - Missed synapses remove edges, so counts are always underestimates
+        - Synapse detection errors are rare enough to ignore in a large volume
+        - Merges fuse two partner lists, so errors push counts toward denser motifs rather than scattering them
+        correct_index: 2
+        explanation: Noise that averages out is survivable; a bias is not. Because motif counting is combinatorial, one merged interneuron manufactures many loops at once, so the error has a direction. That is why the checks are re-counting at a higher synapse threshold and on a later proofreading version, rather than simply widening an error bar.
+      - prompt: E to I to E loops are enriched 1.7x over a degree-preserving null, but a cell-type-stratified null expects almost the observed count. What does that tell you?
+        options:
+        - Most of the apparent enrichment is explained by E/I connection rates, not by loop-specific wiring
+        - The degree-preserving null is the stricter test, so the enrichment stands
+        - The two nulls disagree, so neither result can be reported
+        correct_index: 0
+        explanation: Each null removes a different explanation. Preserving degree leaves cell-type composition free to generate the motif; preserving E/I rates removes that and the enrichment thins to almost nothing. The disagreement is itself a finding because it localises where the signal came from, so report both and let the stricter null carry the claim.
+      - prompt: Which statement about synapse placement is supported by EM evidence alone?
+        options:
+        - Perisomatic synapses from this basket cell veto spiking in the target
+        - The inhibitory synapses in 49 of 68 loops land on soma or proximal dendrite
+        - The larger spines here carry stronger synapses, so this connection is strong
+        correct_index: 1
+        explanation: Placement is measured; function is inferred. The first option asserts an effect on spiking, which needs physiology. The third leans on the spine-size correlation, which holds across populations and is not a strength readout for one connection. The reportable result is the compartment tally, with any functional reading marked as interpretation.
+    task:
+      title: Motif Claim Microtask
+      prompt: Your motif is enriched 1.7x over a cell-type-stratified null. Which sentence belongs in the results?
+      options:
+      - This motif implements gain control in layer 2/3
+      - This motif is enriched over a cell-type-stratified null; spatial proximity was not controlled
+      - This motif is enriched, and enrichment implies functional selection
+      correct_index: 1
+      correct_feedback: Correct. Name the null you used and the confound you did not control. The smaller claim is the one that survives review.
+      incorrect_feedback: Not yet. An enriched count is an anatomical observation. Function and wiring selection each need their own test.
+  module12:
+    quiz:
+      title: Petascale Data Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: A draft figure reports synapse counts for a list of root IDs recorded six months ago. What is wrong with it?
+        options:
+        - Root IDs change with every edit, so the IDs are meaningless without a materialization version
+        - Nothing, as long as the segmentation has not been re-run from scratch
+        - Root IDs are fine, but the synapse counts should have been stored against supervoxel IDs
+        correct_index: 0
+        explanation: A neuron is a connected component of an editable supervoxel graph, so any proofreading edit mints new root IDs. The code still runs and still returns plausible numbers, which is why this is the field's most common silent bug. Supervoxel IDs are what let synapse partners survive proofreading; the fix for the figure is a pinned materialization version, not a different ID column.
+      - prompt: Your raw storage is about 1.5 PB, yet stored bytes are not what dominates the cloud bill. What is the most likely cause?
+        options:
+        - Egress from mirroring the image pyramid to the on-premises cluster
+        - Per-request charges across the hundreds of millions of chunks the pipeline touches repeatedly
+        - Compression overhead on label volumes, which compress poorly
+        correct_index: 1
+        explanation: At 128-cubed chunks the full-resolution level alone is around 7.5 x 10^8 objects, and object stores bill per request as well as per byte, so a pipeline that touches every chunk a few times generates billions of billable operations. Sharding fixes it by packing chunks into a few indexed files so most reads become byte ranges inside one object. Label volumes actually compress well, so the third option has the physics backwards.
+      - prompt: Your dominant access pattern is a 512 x 512 view of single section planes. Which chunk layout follows?
+        options:
+        - 256-cubed chunks, because larger chunks mean fewer requests
+        - Whatever the neighbouring lab's pipeline uses, for interoperability
+        - Anisotropic chunks such as 128 x 128 x 16, accepting slower z-traversal
+        correct_index: 2
+        explanation: 'The chunk is the unit of I/O, so a plane read pays for all the z-depth it did not ask for: four 256-cubed chunks move about 67 MB to deliver one plane. Shaping chunks like your reads cuts that, and the cost is explicit rather than discovered later, because z-traversal gets worse. Copying another group''s layout only helps if their access pattern is yours.'
+    task:
+      title: Query Profiling Microtask
+      prompt: Before optimising a query that scans a 5 x 10^8-row synapse table, what do you do first?
+      options:
+      - Run it on a 0.1% sample, measure, and extrapolate the full runtime
+      - Rewrite it as a pre-joined extract, since that is the known-faster pattern
+      - Request a larger cluster allocation to cover the worst case
+      correct_index: 0
+      correct_feedback: Correct. Forty seconds on a 0.1% sample tells you the full run is on the order of eleven hours, and you bought that number for forty seconds.
+      incorrect_feedback: 'Not yet. Profile before optimising: a sampled measurement tells you whether the rewrite or the hardware is even the bottleneck.'
+  module13:
+    quiz:
+      title: ML Pipeline Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your fragment classifier scores 0.94 on a random row split and 0.71 when split by parent neuron. What is the honest reading?
+        options:
+        - The neuron-level split has fewer effective samples, so 0.94 is the better estimate
+        - The model is overfitting and needs stronger regularisation
+        - 0.94 was inflated by fragments of the same neuron on both sides; 0.71 is the generalisation estimate
+        correct_index: 2
+        explanation: A random row split blocks no leakage channel, so it is an upper bound rather than an estimate. Grouping by parent neuron costs effective sample size and needs reliable parent IDs at a pinned version, which is the price of a number you can defend. The 23-point gap is a measurement of how much leakage was present and is worth reporting.
+      - prompt: Your model ranks segments for a team that can inspect 500 per week. Which metric matches that decision?
+        options:
+        - Macro F1 across the five classes
+        - Precision at k = 500
+        - Overall accuracy, with class prevalence reported alongside
+        correct_index: 1
+        explanation: The decision is which 500 segments get opened, so the only errors that matter are those above the cutoff. Precision at k forces you to know reviewer capacity before evaluating, which is what makes the number actionable. Accuracy and macro F1 average over segments nobody will ever look at.
+      - prompt: Model and expert label disagree on 12% of a rare class. Before calling that model error, what must you measure?
+        options:
+        - Inter-annotator agreement on a re-annotated subset
+        - The model's calibration curve on the training set
+        - The prevalence of that class in the held-out split
+        correct_index: 0
+        explanation: Your ceiling is set by how well two experts agree, not by 100%. If annotators themselves disagree on 15% of that class, a 12% model-label mismatch sits inside the label noise and calling it model error misdirects the next month of work. Prevalence and calibration answer other questions and neither tells you whether the target is trustworthy.
+    task:
+      title: Feature Audit Microtask
+      prompt: You are about to add raw image intensity statistics to the feature set. What must the design sheet record?
+      options:
+      - That they raise dimensionality and may need a reduction step
+      - That they encode staining batch almost perfectly, so the model can identify the dataset instead of the biology
+      - 'Nothing: intensity is a direct measurement rather than a derived feature'
+      correct_index: 1
+      correct_feedback: Correct. Every feature is also a channel for learning dataset identity. Flag those before training, not after the held-out dataset disappoints.
+      incorrect_feedback: Not yet. Ask what each feature lets the model learn most easily. Intensity statistics separate staining batches far better than they separate cell types.
+  module14:
+    quiz:
+      title: EM Segmentation Model Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: A candidate model halves the split rate and adds 15% more merges, improving every aggregate score. Why might you still reject it?
+        options:
+        - Split errors are easy to repair, so reducing them is worth little
+        - Merges manufacture connectivity and bias motif counts superlinearly, while summary metrics hide them
+        - Any change in error rate invalidates comparison with the incumbent
+        correct_index: 1
+        explanation: 'A split is conspicuous: a neurite ends, a proofreader sees it, the repair is local. A merge writes false edges into the meshes, the synapse table and the graph, and is rarely seen again. The decision is not which model scores better but where your team''s measured merge-to-split cost ratio sits relative to the break-even point.'
+      - prompt: Your held-out ground truth comes from a well-stained, artifact-free block. What does this module require of the report?
+        options:
+        - Metrics reported separately for the clean region and a deliberately hard region
+        - Pooled metrics across all available ground truth, to maximise statistical power
+        - A confidence interval on ERL wide enough to cover artifact-heavy tissue
+        correct_index: 0
+        explanation: Dense ground truth exists where annotation was cheap, which is where segmentation is easy, so one number from it describes the easy part of the volume. Pooling hides exactly the figure you need. Widening an interval admits ignorance without measuring anything; holding out a fold, a section loss or the weakest-stained block measures it.
+      - prompt: Which of these is a release gate?
+        options:
+        - The segmentation is reviewed by two proofreaders and judged acceptable
+        - The candidate improves on the incumbent's headline benchmark score
+        - ERL at or above 120 um on held-out ground truth, with the merge component of VI no worse than the incumbent
+        correct_index: 2
+        explanation: A gate is a statement that can fail, written before the candidate's numbers are known, because thresholds chosen afterwards are chosen to pass. The first option contains no number. The second moves with whichever metric the model happened to win, which is precisely how a merge-heavy model ships.
+    task:
+      title: Model Recommendation Microtask
+      prompt: Two segmentation models tie on VI. Which comparison decides your recommendation?
+      options:
+      - Boundary F1, since correct membranes underlie everything downstream
+      - Whichever model produces visually cleaner meshes on inspection
+      - ERL plus the split and merge components of VI, read against your measured merge-to-split cost ratio
+      correct_index: 2
+      correct_feedback: Correct. VI is size-sensitive and nearly blind to a long-axon split. The decomposition plus ERL says how each model fails, and the cost ratio turns that into a decision.
+      incorrect_feedback: Not yet. Boundary F1 can be high while the topology is wrong, and visual plausibility is not validation. Decompose the error first, then price it.
+  module15:
+    quiz:
+      title: LLM Verification Gate Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: An expert takes as long to adjudicate an LLM's EM patch description as to annotate the patch from scratch. What follows?
+        options:
+        - 'This output class is not yet an LLM task: the model moved the work rather than reducing it'
+        - Adjudicate a 10% sample instead, to bring the gate cost down
+        - Keep the descriptions but lower the acceptance threshold
+        correct_index: 0
+        explanation: The comparison is drafting plus verification against doing the task directly, measured on your own team, and here the two sides are equal. Sampling the gate saves time only by letting unverified descriptions through, which is the failure the gate exists to prevent, and lowering the threshold does the same thing more openly. Patch descriptions can still serve as a search hint but never as an entry in an annotation table.
+      - prompt: An LLM states a synapse count in a summary it drafted for you. What is the acceptance rule?
+        options:
+        - Accept it if the number is consistent with the cited source
+        - Accept it if a second model reproduces the number
+        - 'Never accept it: recompute from the data, and the recomputed number is the claim'
+        correct_index: 2
+        explanation: Fabricated quantities arrive in the same confident phrasing as correct ones, so plausibility checks and cross-model agreement both fail on exactly the cases that matter. This is the one gate with no threshold to tune, and it is cheap to run, which is why it should be stated as non-negotiable rather than decided case by case.
+      - prompt: After the assistant ships, annotator disagreement with its suggestions falls steadily while model performance is flat. What is happening and what is the fix?
+        options:
+        - Annotators have calibrated to the model; record the improvement in the audit log
+        - Anchoring on the displayed suggestion; hide it until the annotator records an independent call
+        - Model drift under a new version; pin the version and re-measure
+        correct_index: 1
+        explanation: 'This failure is social rather than technical: a suggestion shown first becomes the anchor, and agreement rises without accuracy rising with it. That is why disagreement rate is worth tracking as a metric and why the countermeasure is an interface rule, not a prompt change. Version pinning is required anyway, but it does not explain a trend that tracks exposure rather than releases.'
+    task:
+      title: Pilot Design Microtask
+      prompt: You are piloting an LLM ranker against a heuristic that yields 40% true errors in the top 500. What must exist before any output is generated?
+      options:
+      - The verification gate for each output class, and the result that would make you abandon the helper
+      - The prompt template and the model version to be used
+      - An estimate of the reviewer hours the pilot will save
+      correct_index: 0
+      correct_feedback: Correct. Gates defined afterwards get defined around whatever the model already produced. Write the abandon condition while you can still mean it.
+      incorrect_feedback: Not yet. Prompts and savings estimates come later. The first artifact is the acceptance threshold each output class has to clear.
+  module16:
+    quiz:
+      title: Figure Honesty Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: A reviewer objects to the jet colormap on your connectivity heatmap. What is the substantive problem?
+        options:
+        - Jet is visually dated and inconsistent with journal style guides
+        - Jet uses too many hues for a matrix with 50 rows and columns
+        - Jet is not perceptually uniform, so equal steps in the data look like unequal steps in the figure
+        correct_index: 2
+        explanation: 'The objection is about accuracy, not taste: a rainbow scale invents apparent boundaries where the data are smooth and flattens differences elsewhere, so readers extract magnitudes that are not in the matrix. Viridis and inferno preserve rank order, including in greyscale, which is what your figure becomes when someone prints it.'
+      - prompt: Your 50 x 50 cell-type adjacency matrix looks structureless. What should you try before concluding there is no community structure?
+        options:
+        - Switch to a node-link diagram, which shows topology more directly
+        - Reorder rows and columns by hierarchical clustering, keeping the ordering identical on both axes
+        - Rescale the colormap to the 5th-95th percentile so weak connections show
+        correct_index: 1
+        explanation: Row and column order decides whether block structure is visible at all, and arbitrary ordering hides it reliably. A node-link diagram of 50 densely connected types is a hairball, and percentile clipping changes what the colours mean without changing what is adjacent to what. Reorder first, then decide what the matrix shows.
+      - prompt: Ten cell-type pairs in your heatmap rest on fewer than 10 observed connections. What does the figure need?
+        options:
+        - Hatching or transparency marking those cells as low-evidence, explained in the caption
+        - Removal of those pairs, since they cannot support a claim
+        - A footnote giving the minimum connection count across the matrix
+        correct_index: 0
+        explanation: A reader weighs every cell equally unless the figure says otherwise, so an unmarked low-count cell makes a claim you did not intend. Deleting the pairs turns weak evidence into absent evidence and hides the sampling pattern, and a footnote about the minimum does not say which cells it applies to. Mark the uncertainty where the reader is looking.
+    task:
+      title: Figure Form Microtask
+      prompt: You need to show that three neuron types differ in branching complexity. Which figure form fits the claim?
+      options:
+      - A 3D rendering of all three reconstructions in one scene
+      - A node-link diagram of the three cells coloured by type
+      - Sholl plots for the three cells in colourblind-safe colours with shaded uncertainty bands
+      correct_index: 2
+      correct_feedback: Correct. Sholl plots put branching on an axis a reader can compare quantitatively. A 3D rendering gives spatial context but no measurable comparison.
+      incorrect_feedback: Not quite. The claim is quantitative and per-neuron, so it needs an axis rather than a scene or a network.
+  module17:
+    quiz:
+      title: Methods and Claims Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Why does this module tell you to draft the methods section first in a connectomics paper?
+        options:
+        - Methods are the longest section and take the most time to assemble
+        - Dataset version, segmentation quality and proofreading state constrain which claims are legitimate
+        - Reviewers read the methods before the abstract
+        correct_index: 1
+        explanation: 'In connectomics the methods are primary evidence rather than an appendix: no biological claim is evaluable without the volume, resolution, segmentation error rate and the materialization the analysis was pinned to. Writing them first means you find the ceiling on your claims before you have written the claims and grown attached to them.'
+      - prompt: Your motif survived one degree-preserving null and no sensitivity analysis. Which phrasing is calibrated?
+        options:
+        - Reciprocal pairs occurred 2.1x more often than the degree-preserving null predicts; a spatially constrained null was not tested
+        - Reciprocal pairs are strikingly enriched, clearly indicating recurrent organisation
+        - Reciprocal pairs may possibly be somewhat enriched, though this remains uncertain
+        correct_index: 0
+        explanation: Calibration is not hedging volume. The third option is vaguer than the evidence, and the second substitutes adjectives for an effect size. The defensible sentence names the number, the baseline it was measured against and the test that was not run, which is also what makes the result re-checkable by someone else.
+      - prompt: Your methods link a GitHub repository. When is that sufficient?
+        options:
+        - When the repository is public and includes a README
+        - When the repository is archived on Zenodo with a DOI
+        - When the methods name the commit hash or tagged release the results came from
+        correct_index: 2
+        explanation: A repository moves; the analysis that produced the figure does not. A DOI-minted archive is good practice and still does not say which commit was run, and a README describes intent rather than the state of the code on the day. The commit or tag is the smallest thing that lets a reader re-run what you actually ran.
+    task:
+      title: Reviewer Response Microtask
+      prompt: A reviewer asks whether your cleft-score threshold of 50 is arbitrary. Which response is strongest?
+      options:
+      - Note that 50 is standard for CAVE synapse tables and cite two papers that use it
+      - Report the enrichment at thresholds of 30, 50 and 100, state where the conclusion changes, and give the location of the new supplementary panel
+      - Explain that the threshold was chosen before analysis, so it cannot have biased the result
+      correct_index: 1
+      correct_feedback: Correct. Name the action taken, give the evidence, and point to the manuscript location. A sensitivity analysis answers the question the reviewer actually asked.
+      incorrect_feedback: Not yet. Precedent and good intentions are not evidence of robustness. Show what happens to the result when the threshold moves.
+  module18:
+    quiz:
+      title: Preprocessing Release Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your team excludes every segment with fewer than two synapses. What risk belongs in the release note?
+        options:
+        - Compact interneuron types with genuinely few synapses in the volume are removed along with the debris
+        - Graph density falls, which biases motif counts downward
+        - The synapse table and the segment table will no longer share identifiers
+        correct_index: 0
+        explanation: Every cleaning step trades a known artifact against possible signal, and this one buys removal of segmentation debris at the cost of the smallest real cells. Naming the biological signal at risk is what separates cleaning from polishing, so the residual risk belongs in the release note beside the threshold that created it.
+      - prompt: Your dashboard reports missingness, synapse-score distributions and segment sizes. What makes it quality control rather than monitoring?
+        options:
+        - Publishing it alongside the cleaned data release
+        - Recomputing it after every materialization
+        - Attaching a threshold and a stated accept-or-rework action to each metric
+        correct_index: 2
+        explanation: A metric with no threshold cannot change what anyone does, so the dashboard documents a problem nobody acted on. "If more than 5% of synapses fall below the confidence threshold, investigate detection quality before proceeding" is a gate because it fixes the number and the consequence in advance, when you have no result to protect.
+      - prompt: 847 segments intersect the volume bounding box. Which handling is defensible?
+        options:
+        - 'Include them: excluding real neurons biases the cell-type composition'
+        - Flag them explicitly, then either exclude them or analyse them with a stated caveat about truncated arbors
+        - Include them but weight their synapse counts by the fraction of arbor inside the volume
+        correct_index: 1
+        explanation: 'Boundary neurons have artificially low synapse counts and incomplete morphologies, so silently including them understates connectivity for exactly the cells at the edge. What the module requires is that the decision is visible: a flag column plus a stated policy. Reweighting assumes you know the size of the missing arbor, which is what the volume boundary took away.'
+    task:
+      title: Threshold Sensitivity Microtask
+      prompt: Your motif result holds at a three-synapse edge threshold and disappears at five. What do you do?
+      options:
+      - Report the three-synapse result, since it is the more sensitive threshold
+      - Report the five-synapse result, since it is the more conservative threshold
+      - Report both and state that the finding depends on the threshold choice
+      correct_index: 2
+      correct_feedback: Correct. A result that lives on one side of a threshold is a fragile result, and saying so is part of the finding.
+      incorrect_feedback: Not yet. Choosing whichever threshold gives the answer you prefer is the failure mode this module exists to prevent. Report the dependence.
+  module19:
+    quiz:
+      title: Review and Integrity Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Which reviewer comment is constructive by this module's definition?
+        options:
+        - The statistical treatment is unconvincing and the central claim is overblown
+        - The motif enrichment is probably an artifact of the segmentation
+        - The null preserves degree but not distance; since cortical connection probability is distance-dependent, test whether the enrichment survives a distance-dependent null
+        correct_index: 2
+        explanation: 'Constructive means specific, evidence-based and actionable: it names the problem, why it matters and a route to resolution. The other two may even be correct, and the authors still cannot act on either, which is what makes them destructive rather than merely blunt. Rigour and specificity move together.'
+      - prompt: The preprint lists "MICrONS Consortium" as a co-author with no individual contribution details. Which review point is on target?
+        options:
+        - Ask for CRediT-style contribution statements and named credit for proofreading contributions
+        - Ask the authors to remove the consortium, since organisations cannot be authors
+        - Raise it in confidential comments to the editor and keep the review itself to the science
+        correct_index: 0
+        explanation: Proofreading is the labour that makes the data usable, and a blanket consortium byline makes the people who did it invisible in the record that gets counted for jobs and fellowships. Contribution tracking is the mechanism that fixes it, and it belongs in the public review where the authors can act on it rather than in a private aside.
+      - prompt: The discussion states that the motif "likely plays a causal role in seizure propagation." What is the bounded version?
+        options:
+        - The motif is associated with seizure propagation in this cortical volume
+        - The motif is enriched in this volume; whether it contributes to seizure propagation was not tested here
+        - The motif may play a causal role, pending replication in a second dataset
+        correct_index: 1
+        explanation: 'The study measured anatomy in one volume and no seizure data at all, so association is as unsupported as causation: the first option asserts a relationship with an outcome that was never observed. The third keeps the causal claim and merely defers it. The bounded sentence says what was counted and names the step that was not taken.'
+    task:
+      title: Review Decision Microtask
+      prompt: The methods omit the synapse confidence threshold and say nothing about boundary neurons. What is your recommendation?
+      options:
+      - 'Major revisions: the omissions make the connectivity counts unevaluable, so require both, plus a threshold sensitivity analysis'
+      - 'Accept with minor revisions: these are supplementary details that can be added at proof stage'
+      - 'Reject: undocumented preprocessing is an integrity violation'
+      correct_index: 0
+      correct_feedback: Correct. As written the claims cannot be evaluated, and that is fixable by the authors, which is what major revisions are for.
+      incorrect_feedback: Not quite. These two details decide whether the counts mean anything, so they are not proof-stage cosmetics; nor is an omission by itself evidence of misconduct.
+  module20:
+    quiz:
+      title: Inference Design Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: You found an enriched motif by scanning 13 motif classes in one dataset. What can that dataset establish about it?
+        options:
+        - It confirms the motif, once Bonferroni correction across the 13 classes is applied
+        - It generates the hypothesis; confirmation needs data that were not used in the search
+        - It confirms the motif if the effect size is large enough to be biologically meaningful
+        correct_index: 1
+        explanation: Correction controls the error rate of the scan; it does not convert the winner of that scan into a tested hypothesis, because the same data both chose and evaluated it. Effect size speaks to whether a result matters, not to how it was found. Label the finding exploratory and reserve a separate dataset, or a preregistered test, for confirmation.
+      - prompt: Two null models give contradictory answers about the same motif. What is the correct response?
+        options:
+        - Use the null with more rewirings, since its expectation is better estimated
+        - Report the null under which the effect is significant and mention the other in supplements
+        - Report both, because the disagreement localises which graph property explains the effect
+        correct_index: 2
+        explanation: A null encodes an assumption about what should count as chance, so two nulls preserving different properties are answering different questions. When a degree-preserving and a spatially constrained null disagree, the gap between them estimates how much geometry contributes, which is a result. Choosing the flattering null is the researcher-degrees-of-freedom failure this module names.
+      - prompt: Why do standard tests that treat each edge as independent understate uncertainty in a connectome?
+        options:
+        - Nearby neurons share arbor overlap, so edges are spatially autocorrelated rather than independent
+        - Edge weights are counts, so they violate normality assumptions
+        - Graph density is too low for asymptotic approximations to hold
+        correct_index: 0
+        explanation: 'Non-independence is the structural problem: neighbouring pairs share geometry, staining and alignment, so the effective number of independent observations is far below the edge count and p-values come out too small. Count distributions and low density are real complications, but permutation tests handle those while still assuming exchangeable units, which is exactly what autocorrelation breaks.'
+    task:
+      title: Inference Design Sheet Microtask
+      prompt: Which pair belongs on your inference design sheet before any test is run?
+      options:
+      - The p-value threshold and the figure layout
+      - The estimand and the null model, with the correction strategy across the motif family
+      - The dataset version and the compute budget
+      correct_index: 1
+      correct_feedback: Correct. Naming what you are estimating, the baseline you are estimating it against, and how many tests it sits inside is what makes the resulting p-value interpretable.
+      incorrect_feedback: Not yet. Version and budget matter elsewhere. The design sheet fixes the estimand, the null and the multiplicity structure in advance.
+  module21:
+    quiz:
+      title: FAIR Release Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your analysis outputs sit on a lab web page as CSV downloads. Which FAIR principle is still unmet?
+        options:
+        - 'Findable: without a persistent identifier the files cannot be cited or resolved later'
+        - 'Interoperable: CSV is not a standard scientific format'
+        - 'Accessible: files behind a web page cannot be retrieved programmatically'
+        correct_index: 0
+        explanation: 'CSV is interoperable enough for tabular outputs and an HTTP URL is accessible, so the gap is the one that bites in two years: a lab page carries no persistent identifier and no version, so the exact file behind a published number cannot be resolved. A DOI plus a version tag is the minimum, and it is engineering work rather than paperwork.'
+      - prompt: Another group re-runs your code on your data, reproduces your numbers, then reaches a different conclusion using a different null model. What has been shown?
+        options:
+        - 'Nothing: they used a different method, so it is not a reproduction'
+        - Computational reproducibility holds; inferential reproducibility is what is now in question
+        - Your result failed to reproduce and should be withdrawn
+        correct_index: 1
+        explanation: The two layers are separable, and conflating them hides which one failed. Same code and data yielding the same numbers is computational reproducibility, the cheaper of the two. Whether the conclusion survives reasonable analytical variation is the question they actually raised, and the response to it is a sensitivity analysis.
+      - prompt: Your release names the dataset version, the code commit and the parameter configuration. What is still missing from the module's checklist?
+        options:
+        - A plain-language README for non-specialist readers
+        - File sizes and checksums for each output
+        - The CAVE materialization number and the environment specification
+        correct_index: 2
+        explanation: 'The checklist has five elements, and the two omitted here are the ones that change results silently: an unpinned materialization means the segmentation under your query has moved, and an unspecified environment means a dependency version can shift a numerical answer. Checksums and a README help a reader navigate the release; neither lets them recreate the computation.'
+    task:
+      title: Reuse Friction Microtask
+      prompt: A collaborator cannot reproduce your figure. Which artifact settles the question fastest?
+      options:
+      - The notebook that produced it, re-run end to end by you
+      - The figure re-exported at higher resolution with its full caption
+      - The environment specification plus the materialization version and commit hash the figure was built from
+      correct_index: 2
+      correct_feedback: 'Correct. Reuse friction is diagnosed by pinning the three things that move underneath a result: environment, data version and code version.'
+      incorrect_feedback: Not yet. A notebook that runs on your machine demonstrates your machine. Give them what they need to rebuild the same conditions.
+  module22:
+    quiz:
+      title: Talk and Q&A Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your result survived one null model and no sensitivity analysis. Which rung of the uncertainty ladder is honest on the slide?
+        options:
+        - We measured a 3.2x enrichment of layer 4 input onto PV+ interneurons
+        - We cannot distinguish this from chance
+        - This suggests enrichment of layer 4 input onto PV+ interneurons
+        correct_index: 2
+        explanation: 'The ladder runs from "we measured" through "consistent with" and "suggests" down to "we cannot distinguish" and "we did not test". One null and no robustness check is the "suggests" rung: claiming a measurement overstates what a single null buys, and claiming indistinguishability understates it. Whichever rung you choose has to be the same in the slide text, the spoken claim and the prepared answer.'
+      - prompt: You are presenting to a physiologist who has never opened an EM volume. What may change?
+        options:
+        - The caveat, which can be dropped because it depends on reconstruction details they will not follow
+        - Vocabulary, analogy and background depth, while what was measured and what it does not establish stay identical
+        - The claim, restated as "neurons that fire together wire together" for accessibility
+        correct_index: 1
+        explanation: The invariant set is what was measured, on which data, at which version, and what the result does not establish; everything else is presentation. The third option swaps an anatomical count for a physiological claim the data cannot support, which is distortion rather than simplification. A useful test is to write the caveat twice, expert and non-expert, and check the two are logically identical.
+      - prompt: A questioner proposes that spatial proximity explains your enrichment, and your null did not control for distance. What is the right answer shape?
+        options:
+        - Concede that the null does not control for it, and name the distance-matched test that would
+        - Explain that the degree-preserving null is the field standard for motif work
+        - Say the possibility cannot be excluded, and move to the next question
+        correct_index: 0
+        explanation: 'An alternative-explanation question is asking one thing: does your null already rule this out? When it does not, conceding costs nothing and defending costs credibility. Ending on the specific next test is what turns "I don''t know" from a full stop into a research plan, and this question was predictable enough that the answer should have been rehearsed.'
+    task:
+      title: Time Budget Microtask
+      prompt: Rehearsal of your 10-minute talk runs to 13 minutes. What is the fix?
+      options:
+      - Cut slides until the rehearsal fits the budget you set before drafting
+      - Speak faster and shorten the pauses between sections
+      - Move the limitation slide to a backup and mention it only if asked
+      correct_index: 0
+      correct_feedback: Correct. A talk that runs long is a scoping decision nobody made. Delete material against the time budget; the cut list is the design.
+      incorrect_feedback: Not yet. Speeding up loses the audience, and cutting the limitation removes the part that makes the rest believable.
+  module23:
+    quiz:
+      title: Abstract and Poster Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your 250-word abstract spends 90 words motivating the field. What does that cost you?
+        options:
+        - Nothing, if strong motivation is what makes reviewers score an abstract highly
+        - The results sentences, which are the words that let a reader judge credibility and decide to visit the poster
+        - The limitation sentence, which can move to the poster instead
+        correct_index: 1
+        explanation: The word budget is fixed, so every sentence is funded by another, and motivation is funded out of results. Roughly 90 words belong to results with quantitative anchors and about 25 to the limitation. Someone deciding whether to walk across the hall needs to know what you found, not what the field hopes for.
+      - prompt: A colleague says your poster is fine because everything is readable when you stand at it. What test does the module actually set?
+        options:
+        - Title and one-line finding legible from about two metres, so a passer-by finds the result in ten seconds
+        - All body text at 24 point or larger, per the conventional minimum
+        - Figure panels sized so captions fit beneath them without wrapping
+        correct_index: 0
+        explanation: 'A poster is read at three distances, and the two-metre pass decides whether anyone stops at all. Point-size minimums serve that goal rather than replacing it: a poster can satisfy every typographic convention and still bury its finding mid-column. Design for the reader who has not yet decided to approach.'
+      - prompt: A senior researcher says "send me an email" after a good poster conversation. What does that mean?
+        options:
+        - It is a polite closing formula; act only if they follow up first
+        - Email them after the meeting, once you have something substantial to report
+        - 'They mean it: send within about 72 hours with a one-line reminder of who you are and what you discussed'
+        correct_index: 2
+        explanation: They had forty conversations that week, so the reminder is doing real work and delay is what makes the message fail. Waiting until you have something substantial means arriving after your name has detached from your poster. This is the hidden-curriculum item with the widest gap between insiders and everyone else, and the conference's value is realised in the week after it or not at all.
+    task:
+      title: Poster Q&A Microtask
+      prompt: You have 90 seconds and a specialist has asked about reconstruction quality. What goes in the answer?
+      options:
+      - That the dataset is a widely used public release, so its quality is established
+      - The proofreading state of the relevant arbors, the materialization version, and what those limit the claim to
+      - A promise to send the full quality-control report by email
+      correct_index: 1
+      correct_feedback: Correct. In a connectomics room reconstruction state is challenged first, so it belongs on a slide and in a rehearsed answer.
+      incorrect_feedback: Not quite. The question is about your arbors, not the dataset's reputation, and deferring it spends the one conversation you get.
+  module24:
+    quiz:
+      title: Pathway Planning Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: Your fit matrix has two empty capability cells for your preferred programme. What are they?
+        options:
+        - Your work plan for the next 90 days, each closing into an artifact
+        - Evidence that the programme is a poor fit and should be dropped
+        - Items to frame in the personal statement as future intentions
+        correct_index: 0
+        explanation: The matrix converts a vague sense of readiness into named capabilities and the artifacts that demonstrate them, so a gap is information rather than a verdict. Restating a gap as an intention is the failure the module warns about, because statements are read as evidence rather than aspiration. Close the cell with something a reader can open.
+      - prompt: How should you ask for a recommendation letter?
+        options:
+        - Briefly and close to the deadline, to minimise the imposition on a busy referee
+        - By asking whether they will write one, then sending the deadline once they agree
+        - Four to six weeks ahead, asking whether they could write a strong letter, then sending a context packet
+        correct_index: 2
+        explanation: 'The phrasing matters as much as the lead time: asking for a strong letter gives a lukewarm referee a graceful exit, and them taking it is a good outcome, because a tepid letter from a senior name is worse than a specific one from someone junior. The context packet of deadlines, CV, statement draft and quotable specifics is what lets them write about your work rather than your enthusiasm.'
+      - prompt: Every professional contact you have routes through your supervisor. What does this module call that?
+        options:
+        - A well-managed single point of mentorship, appropriate at an early stage
+        - A borrowed network; the actionable output is the mentorship-map roles you have nobody in
+        - Evidence that you should change labs
+        correct_index: 1
+        explanation: The map has five roles - technical supervisor, sponsor, near-peer, field connector, and someone with no stake in whether you stay - and no one person fills them all. The dependency is invisible while you are in the group and expensive the moment you leave it. Naming the empty roles turns "network more" into a list of people to contact this month.
+    task:
+      title: Outreach Draft Microtask
+      prompt: You are drafting a cold email to a prospective supervisor. Which draft follows the module?
+      options:
+      - A short note expressing a longstanding fascination with the brain and asking whether they have openings
+      - A full account of your research background and career goals, with your CV attached
+      - Three to five sentences naming a specific paper of theirs, linking one artifact of yours, and asking one answerable question
+      correct_index: 2
+      correct_feedback: Correct. Specific alignment, one piece of evidence, one question they can answer in a two-minute reply. Genericness, not error, is what sinks these emails.
+      incorrect_feedback: Not yet. The message has to be answerable quickly and has to show you read their work; length and enthusiasm do neither.
+  module25:
+    quiz:
+      title: Portfolio Evidence Checkpoint
+      pass_score: 2
+      questions:
+      - prompt: You have an artifact showing an analysis you got wrong and later corrected. What does the module say to do with it?
+        options:
+        - Replace it with the corrected version, so the portfolio shows your current standard
+        - Keep it in a private appendix in case a reviewer asks about your process
+        - Include the wrong version alongside the correction and the reason, because it is your strongest evidence of judgement
+        correct_index: 2
+        explanation: A polished endpoint shows you can produce output; a corrected error shows you can detect one, which is the harder capability and the one a reviewer cannot verify any other way. This is the artifact trainees are most inclined to delete, and deleting it removes the most persuasive material in the portfolio. The evidence is the delta and its cause, not the final file.
+      - prompt: 'A caption reads: "Graph analysis notebook. Demonstrates my Python and network analysis skills. I learned a lot about null models." What is missing?'
+        options:
+        - A line naming what a reviewer can verify and where - the specific cell, file or number
+        - A statement of how long the work took
+        - A reference to the module the work came from
+        correct_index: 0
+        explanation: The four-line caption is the competency claim, what the artifact is and what you did versus what you were given, what is checkable and where, then the limitation. This caption offers an unfalsifiable claim and a feeling, so a reviewer with two minutes can confirm nothing. A caption that cannot fill the verifiable line is describing an artifact nobody can check.
+      - prompt: You send a collaborator a notebook and ask "any thoughts?" You get typo corrections. Why?
+        options:
+        - The notebook was too long to review substantively
+        - An unscoped request only supports the feedback a reader can give cheaply; naming the decision, criterion and deadline changes the answer
+        - The collaborator lacked the domain expertise to comment on the analysis
+        correct_index: 1
+        explanation: A reviewer answers the question they can identify, and with no decision named the cheapest legible response is line-level correction. "I am deciding whether to keep the distance-matched null; the criterion is whether the enrichment survives; I need this by Thursday" is answerable. Asking narrowly does not waste expertise, it aims it.
+    task:
+      title: Portfolio Curation Microtask
+      prompt: Your portfolio holds fifteen artifacts, eight of them graph-analysis notebooks. What should you do?
+      options:
+      - Cut to the strongest of the duplicates and cover distinct competencies instead; the cut is itself evidence of judgement
+      - Keep all fifteen, since volume demonstrates sustained work
+      - Keep all fifteen but reorder them chronologically so growth is visible
+      correct_index: 0
+      correct_feedback: Correct. Six well-captioned artifacts across distinct competencies outperform fifteen that cluster on one. Assume a two-minute first pass.
+      incorrect_feedback: Not yet. Organise by what each artifact proves, not by how many there are or when you made them.

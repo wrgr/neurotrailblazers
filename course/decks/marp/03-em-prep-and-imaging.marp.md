@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "03 EM Prep and Imaging"
 paginate: true
+footer: "Unit 03 · EM prep and imaging"
 ---
 
+<!-- _class: title -->
 # 03 EM Prep and Imaging
 Technical Training: Nanoscale Connectomics
 
@@ -31,12 +34,14 @@ Each stage introduces distinct, diagnosable error signatures.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: prep/imaging stage map
 ![w:940](../../../assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S02-01.png)
 - Instructor cue: ask where errors become irreversible.
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: artifact-bearing examples
 ![w:940](../../../assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S09-01.png)
 - Use as a live taxonomy exercise (physical vs signal vs geometric).

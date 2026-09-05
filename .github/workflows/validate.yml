@@ -71,6 +71,16 @@ jobs:
       - name: Dictionary completeness
         run: ruby scripts/validate_dictionary.rb
 
+      # The generated teaching materials had shipped three defects at once: all 25
+      # worksheet rubrics were empty (the generator kept tier labels and dropped every
+      # criterion beneath them), four worksheets and four session kits printed a raw
+      # kramdown attribute list as their scenario, and four worksheets leaked
+      # unrendered Liquid to the reader. Separately, the ten technical-unit decks
+      # declared no theme and two committed decks carried an empty slide. Each gate
+      # here was verified by injecting the corresponding fault.
+      - name: Generated teaching materials and deck sources
+        run: ruby scripts/validate_generated_materials.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

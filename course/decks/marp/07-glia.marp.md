@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "07 Glia"
 paginate: true
+footer: "Unit 07 · Glia"
 ---
 
+<!-- _class: title -->
 # 07 Glia
 Technical Training: Nanoscale Connectomics
 
@@ -31,11 +34,13 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: orientation
 ![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png)
 
 ---
 
+<!-- _class: figure -->
 ## Astrocyte-associated cue context
 ![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png)
 
@@ -55,6 +60,7 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Microglia-associated cue context
 ![w:920](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S09-01.png)
 
@@ -62,10 +68,26 @@ Technical Training: Nanoscale Connectomics
 
 ## Oligodendrocyte-associated cue context
 
+- **Diagnostic feature:** the darkest nucleus in the field &mdash; small, round, extremely
+  electron-dense heterochromatin, identifiable at low magnification.
+- Dense cytoplasm: abundant rough ER and ribosomes, prominent Golgi. Soma ~6&ndash;8 &micro;m.
+- Processes connect the soma to myelin sheaths; one cell myelinates on the order of
+  20&ndash;60 axonal segments.
+- **The hard case is not the mature cell.** It is the OPC (NG2 cell): paler nucleus, can
+  resemble a small neuron or an astrocyte. "Sort of oligodendrocyte but the nucleus is not
+  dark enough" means OPC is the leading hypothesis &mdash; flag it, do not force the call.
+
+*No extracted micrograph exists for this class; see Unit 07 §2 for the reference images.*
+
 ---
 
 ## Myelin-context interpretation
-- Instructor cue: ask how myelin context changes proofreading priority.
+
+- Myelin is the fastest route to an oligodendrocyte identification: follow a sheath back to
+  the soma that owns it.
+- Instructor cue: ask how myelin context changes proofreading priority. A merge across a
+  myelinated axon costs more than one across an unmyelinated process, because the axon it
+  corrupts is long-range.
 
 ---
 

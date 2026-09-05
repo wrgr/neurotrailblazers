@@ -103,9 +103,12 @@ Ordered by blast radius. File references are to the repository root.
    and `teaching/sessions/module0{1,2,3,5}.md`. Modules 01–03 structure the studio as
    `### Part A/B/C/D`; module 05 uses a `### Scenario` heading; the regex caught the
    kramdown attribute list instead. These are the first three modules a learner opens.
-10. **16 of 25 module pages show the same generic quiz.** `_data/module_interactives.yml`
-    defines content for modules 01–09 only; `_includes/ui/module-interactive-lab.html:4-6`
-    falls back to `default` for the rest.
+10. **16 of 25 module pages have no interactive layer at all.** `_data/module_interactives.yml`
+    defines content for modules 01–09 only. *(Corrected on 5 September 2026 while fixing it:
+    the review originally said the include falls back to a generic `default` quiz. It does
+    not — `_includes/ui/module-interactive-lab.html` suppresses the whole section when the
+    module key is absent, so modules 10–25 rendered no lab rather than a filler one. The
+    `default` block is still load-bearing for `progress_steps`, which every module uses.)*
 11. **Raw Liquid in four learner-facing worksheets.** `assets/worksheets/module1{2,3,4,5}/`
     contain unprocessed `{{ '/content-library/…' | relative_url }}` because the generator
     injects the pre-class-preparation bullets unescaped and the files have no front matter.

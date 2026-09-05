@@ -131,7 +131,7 @@ string returns nothing.
 ## Workstream 3: instructional layer
 
 ### 3.1 Finish the module derivatives (M)
-- [ ] `_data/module_interactives.yml`: author per-module quiz and microtask for modules 10–25 (16 modules; keep the documented `correct_index` distribution).
+- [x] `_data/module_interactives.yml`: author per-module quiz and microtask for modules 10–25 (16 modules; keep the documented `correct_index` distribution). *(64 new items; correct_index 21/21/22, and no module has all four answers at one index. Note the review's diagnosis was wrong and is corrected there: the include suppressed the section entirely rather than showing filler, so those 16 pages had no interactive layer at all.)*
 - [ ] Speaker notes as HTML comments in all 25 `course/decks/marp/modules/*.marp.md` (the generator should emit a notes block from the run-of-show).
 - [ ] Either build or delete the three phantom resources in `teaching/module22-public-engagement.md` ("Atlas vs. Connectome", "BRAIN Grant Detective", "Public Impact Wall").
 - [ ] Add `track:` front matter to `teaching/module22-public-engagement.md` and `teaching/projectome-to-synapse.md`.
@@ -195,7 +195,7 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 (`assets/brand/NeuroTrailblazers-slide-template.pptx`) ship with this plan.
 
 - [ ] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
-- [ ] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers.
+- [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Still open:** speaker notes, a source line per figure, and the content itself — several slides overflow because they carry an image plus bullets, which predates the theme and needs an authoring pass, not a CSS one. The en585781 rename is also still open.)*
 - [ ] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
 - [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
 - [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 70 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
@@ -208,11 +208,11 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 
 ## Workstream 6: lock it in (CI)
 
-- [ ] Validator: no empty `authors`, no "Consortium" citation, year agrees with corpus (1.1).
-- [ ] Validator: track `module_numbers` ⊆ sequenced modules; hours reconcile (1.3).
-- [ ] Validator: `technical_capabilities.yml` ↔ unit pages; in-page "Course links" ↔ `technical_track.yml` (1.3).
-- [ ] Validator: no `{{` or `{: #` in generated worksheets; every worksheet rubric has criteria (1.2).
-- [ ] Validator: every `*.marp.md` under `course/decks/marp/` declares a theme; no slide body is empty (5).
+- [x] Validator: no empty `authors`, no "Consortium" citation, year agrees with corpus (1.1). *(Delivered with 1.1 in `validate_paper_counts.rb`.)*
+- [x] Validator: track `module_numbers` ⊆ sequenced modules; hours reconcile (1.3). *(Delivered with 1.3 in `validate_frontmatter.rb`.)*
+- [x] Validator: `technical_capabilities.yml` ↔ unit pages; in-page "Course links" ↔ `technical_track.yml` (1.3). *(Delivered with 1.3 in `validate_technical_evidence.rb`.)*
+- [x] Validator: no `{{` or `{: #` in generated worksheets; every worksheet rubric has criteria (1.2). *(`scripts/validate_generated_materials.rb`, wired into CI. Accepts both rubric forms in use — criteria inline after the tier label, or nested beneath it — and fails when a tier has neither. Both failure modes fault-injected.)*
+- [x] Validator: every `*.marp.md` under `course/decks/marp/` declares a theme; no slide body is empty (5). *(Same script. It immediately caught the ten unthemed technical decks and the two committed empty slides, which are fixed rather than exempted.)*
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
 - [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
 

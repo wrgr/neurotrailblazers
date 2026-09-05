@@ -89,7 +89,7 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Your lab is planning a study of feedforward vs feedback connectivity in mouse visual cortex using the MICrONS dataset. You need to design three testable hypotheses about the circuit architecture.
 
 ---
 
@@ -101,17 +101,28 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - At least 2 of 3 hypotheses name a measurable structural endpoint, a specific comparison, and a null model — a reader could run the test from the sheet alone.
 - Each testable hypothesis states one supported claim and one explicit non-claim, and the two are different in content, not restatements.
 - The metric's scope (local vs global, per-pair vs per-population) matches the scope of the hypothesis it tests.
 - The required dataset version is stated for each hypothesis.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Null model choice is justified in words: the "uninteresting explanation" the null encodes is written out before the test is described.
 - At least one hypothesis is evaluated under two nulls of different stringency, with a prediction of how the effect size should move.
 - The analysis plan states how many tests will be run and names the correction, including tests that may go unreported.
 - Peer critique identifies at least one genuine weakness per hypothesis (a confound, an over-claim, a metric mismatch), and the revision visibly responds to it.
-- **Common failure to flag**
+
+---
+
+## Assessment Rubric
+**Common failure to flag**
+
 - Vague hypothesis without measurable endpoint ("we will study connectivity patterns").
 - Missing or default null model — Erdos-Renyi used where degree structure obviously matters.
 - A functional claim ("this circuit computes X") stated as the hypothesis rather than as an interpretation boundary.

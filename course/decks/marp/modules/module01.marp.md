@@ -88,7 +88,7 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement. Part A (30 minutes) builds the sheet, Part B (20 minutes) drafts the statement, and a 10-minute peer review closes the session.
 
 ---
 
@@ -100,16 +100,27 @@ Write one connectomics study question with measurable structural outputs and one
 ---
 
 ## Assessment Rubric
-- **Minimum:**
+**Minimum:**
+
 - Question names organism, region or circuit, and one structural measurement with units.
 - Metric, dataset, and non-claim are all present and consistent with each other.
 - Motivation statement addresses both why and how.
-- **Strong:**
+
+---
+
+## Assessment Rubric
+**Strong:**
+
 - Falsification condition names the specific result that would count against the hypothesis.
 - Scope is sized so the first milestone could be finished within a week.
 - Motivation statement names at least two sustainability strategies with triggers ("when X dips, I will Y").
 - Non-claim correctly identifies a functional inference the structural data cannot support.
-- **Failure:**
+
+---
+
+## Assessment Rubric
+**Failure:**
+
 - Motivational text without measurable outputs, or a question no result could contradict.
 - Motivation statement is generic ("I like brains") or omits a plan for the motivation gap.
 - Claim language exceeds the evidence class of the proposed measurement.

@@ -90,7 +90,7 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 
 ---
 
@@ -102,16 +102,27 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.
 - Every classification carries a stated evidence chain, not just a label.
 - At least one explicit measurement limitation named, tied to a specific reconstruction issue.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.
 - Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.
 - Per-cell completeness estimated and reported next to every absolute measurement.
 - Ratios computed on contained compartments wherever truncation is present.
-- **Common failure to flag**
+
+---
+
+## Assessment Rubric
+**Common failure to flag**
+
 - Descriptor list without biological context — numbers with no statement of what they mean for identity.
 - Classification from a single descriptor when the others disagree.
 - Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.

@@ -52,10 +52,10 @@ library:
       url: "https://neuprint.janelia.org/"
     workflow:
       title: "NeuroTrailblazers Workflow Overview"
-      url: "/datasets/workflow"
+      url: "/datasets/workflow/"
     mouseconnects:
       title: "MouseConnects (HI-MC)"
-      url: "/datasets/mouseconnects"
+      url: "/datasets/mouseconnects/"
 
 units:
   - slug: "01-why-map-the-brain"

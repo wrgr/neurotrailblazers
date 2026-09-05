@@ -12,19 +12,20 @@ content_type: core
 
 <div class="layout-content layout-page">
 
+{%- assign jc_dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq -%}
 <section class="jc-hero">
   <h1>Journal Club &amp; Research Corpus</h1>
   <p>{{ site.data.journal_papers.papers.size }} connectomics papers &mdash; a multi-tiered literature network selected by their place in the field's citation graph &mdash; each presented with the OCAR framework (Opportunity, Challenge, Action, Resolution, Future Work), 3-level summaries, and seminar discussion prompts.</p>
   <div class="jc-hero-stats">
     <span class="jc-hero-stat">{{ site.data.journal_papers.papers.size }} Total Papers</span>
-    <span class="jc-hero-stat">12 Research Domains</span>
+    <span class="jc-hero-stat">{{ jc_dims.size }} Research Domains</span>
     <span class="jc-hero-stat">3 Expertise Levels</span>
     <span class="jc-hero-stat">3 Tiers (500 / 1,000 / 2,000)</span>
   </div>
 </section>
 
 <section class="section section-compact">
-  <p>Browse the canonical connectomics literature across 12 research domains and 3 nested tiers. Use this page to survey what exists, filter by domain/organism/era, or follow the citation graph between papers. For an interactive network visualization with self-organizing organic force physics and AI synthesis prompts, explore the graph below:</p>
+  <p>Browse the canonical connectomics literature across {{ jc_dims.size }} research domains and 3 nested tiers. Use this page to survey what exists, filter by domain/organism/era, or follow the citation graph between papers. For an interactive network visualization with self-organizing organic force physics and AI synthesis prompts, explore the graph below:</p>
   <p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="jc-graph-cta" style="background:#1a56db; color:#fff; padding:0.6rem 1.2rem; border-radius:6px; text-decoration:none; font-weight:700; display:inline-block; margin-top:0.4rem;">Explore the Interactive Citation Graph &rarr;</a></p>
 </section>
 
@@ -59,7 +60,7 @@ content_type: core
     <label for="jc-dimension">Dimension:</label>
     {%- assign dims = site.data.journal_papers.papers | map: 'dimension' | compact | uniq | sort -%}
     <select id="jc-dimension">
-      <option value="all">All 12 dimensions</option>
+      <option value="all">All {{ jc_dims.size }} dimensions</option>
       {%- for dim in dims %}
       {%- assign mapped = site.data.content_tags.dimension_labels[dim] %}
       {%- if mapped %}{% assign label = mapped %}{% else %}{% assign label = dim | replace: '-', ' ' | capitalize %}{% endif %}
@@ -132,7 +133,7 @@ content_type: core
     </div>
   </div>
 
-  <p class="jc-shown-note">Showing <strong id="jc-shown-tier-label">500 Key Papers</strong> in Connectomics (stratified across 12 domains) with complete 5-part OCAR research cards and 3-level pedagogical summaries. Use the tier selector above to expand to 1,000 or 2,000 papers, or explore the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">interactive citation graph</a>.</p>
+  <p class="jc-shown-note">Showing <strong id="jc-shown-tier-label">500 Key Papers</strong> in Connectomics (stratified across {{ jc_dims.size }} domains) with complete 5-part OCAR research cards and 3-level pedagogical summaries. Use the tier selector above to expand to 1,000 or 2,000 papers, or explore the <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">interactive citation graph</a>.</p>
 
   <div class="jc-grid" id="jc-grid">
     {% assign sorted_papers = site.data.journal_papers.papers | sort: "year" | reverse %}

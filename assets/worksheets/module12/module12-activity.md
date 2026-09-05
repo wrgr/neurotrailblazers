@@ -20,7 +20,7 @@ Check that you have:
 
 - [ ] Basic SQL/Python dataframe proficiency
 - [ ] Familiarity with EM volume structure
-- [ ] Read the [data formats]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) library pages.
+- [ ] Read the [data formats](/content-library/infrastructure/data-formats/) and [provenance and versioning](/content-library/infrastructure/provenance-and-versioning/) library pages.
 - [ ] Bring one query you have actually run, with its runtime and its data source.
 - [ ] Have a calculator or notebook open; the first exercise is arithmetic, not code.
 
@@ -132,8 +132,19 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Query design matches analysis goal and data shape, with at least one quantitative estimate.
+  - Provenance requirements are explicit, actionable, and attached to the artifact rather than the notebook.
+  - Bottlenecks are identified with one realistic mitigation.
 - **Strong performance**
+  - Separates exploratory and production query paths and says which rules apply to each.
+  - Quantifies tradeoffs across latency, dollar cost, and reproducibility, and names the assumption behind each number.
+  - Identifies version drift as the first hypothesis for the discrepancy, before code bugs.
+  - Anticipates failure recovery and rollback needs, including what happens when a materialization is superseded mid-analysis.
 - **Common failure modes**
+  - Index choices disconnected from query workload.
+  - Missing version metadata in outputs.
+  - Optimization attempts without a benchmark baseline.
+  - Sizing that counts only the raw volume and ignores derived products and egress.
 
 **My self-assessment:**
 

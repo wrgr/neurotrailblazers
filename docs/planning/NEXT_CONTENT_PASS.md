@@ -18,28 +18,28 @@ numbers and generated files that are currently incorrect.
 
 Each is a one-line or one-file change with no design decision required.
 
-- [ ] `_data/core_surfaces.yml:31`: "191 papers" → 2,000 (tiered 500 / 1,000 / 2,000).
-- [ ] `_data/core_surfaces.yml:10`: "45 entries across 8 topic areas" → the real count (33 across 7), or state the counting rule.
-- [ ] `index.html:83`: "25 min" → "about 40 min".
-- [ ] `initiatives.md:35`: H01 DOI → `10.1126/science.adk4858`.
-- [ ] `datasets/index.md:217-225`: split the merged Bock/Briggman 2011 card into two correct cards (Bock: visual cortex, ssTEM; Briggman: retina, SBEM).
-- [ ] `datasets/index.md:106,107,324` and `content-library/case-studies/h01-human-cortex.md:90,176`: one H01 cell count and one synapse count, sourced.
-- [ ] FlyWire synapse count "50+ million" → ~54.5 M in `datasets/index.md:156,346` and the three journal-paper pages.
-- [ ] `neuronauts/kids.md:366`: "500 Key Papers" → the 2,000-paper corpus.
-- [ ] `neuronauts/index.html:2221`: "tell us" → a real contact route (see 2.1; interim: the GitHub issues URL).
-- [ ] `models.md:67,84`: point the two circular `/frameworks/` links at the sections they describe.
-- [ ] `teaching/index.md:58`, `modules/index.md:64`: `site.modules` → `site.data.modules` (or delete the block). Verify the Teaching Hub grid renders.
-- [ ] `_layouts/default.html:6-7`: delete the manual `<title>` and description; `{% seo %}` emits both.
-- [ ] `_layouts/default.html:17`: `alt=""`, `width`, `height` on the decorative banner.
-- [ ] `_layouts/redirect.html:12-13`: move the canonical link into the head (or drop it).
-- [ ] "35 exports came to 88 MB" in 11 `technical-training/slides/*.md` files → 38, or derive from the manifest.
-- [ ] `technical-training/journal-club/index.md:20,27,62,135`: "12 domains" → 14, or derive from data.
-- [ ] `course/decks/marp/en585781/README.md:9-13`: slide counts 59 / 56 / 58.
-- [ ] `technical-training/05-neuronal-ultrastructure.md:14,25`: one time estimate.
-- [ ] `modules/module12.md:241`: replace the `TBD` cells or drop the row.
-- [ ] Trailing slashes on `/datasets/mouseconnects` and `/datasets/workflow` links (`datasets/index.md:68,84,85` and ~15 module pages).
-- [ ] Delete dead files: `_includes/head-custom.html`, `assets/images/neurotrailblazers-banner.png`, `assets/images/nt-favicon.png`, the `avatars` and `datasets` collection declarations in `_config.yml`, the stale nav mirror at `_config.yml:71-95`, `tagline_lines[0]`.
-- [ ] `core/index.md:80-105`: add the Neuroanatomy for Proofreaders side-quest card.
+- [x] `_data/core_surfaces.yml:31`: "191 papers" → 2,000 (tiered 500 / 1,000 / 2,000).
+- [x] `_data/core_surfaces.yml:10`: "45 entries across 8 topic areas" → the real count (33 across 7), or state the counting rule.
+- [x] `index.html:83`: "25 min" → "about 40 min".
+- [x] `initiatives.md:35`: H01 DOI → `10.1126/science.adk4858`.
+- [x] `datasets/index.md:217-225`: split the merged Bock/Briggman 2011 card into two correct cards (Bock: visual cortex, ssTEM; Briggman: retina, SBEM).
+- [x] `datasets/index.md:106,107,324` and `content-library/case-studies/h01-human-cortex.md:90,176`: one H01 cell count and one synapse count, sourced.
+- [x] FlyWire synapse count "50+ million" → ~54.5 M in `datasets/index.md:156,346` and the three journal-paper pages.
+- [x] `neuronauts/kids.md:366`: "500 Key Papers" → the 2,000-paper corpus.
+- [x] `neuronauts/index.html:2221`: "tell us" → a real contact route (see 2.1; interim: the GitHub issues URL).
+- [x] `models.md:67,84`: point the two circular `/frameworks/` links at the sections they describe.
+- [x] `teaching/index.md:58`, `modules/index.md:64`: `site.modules` → `site.data.modules` (or delete the block). Verify the Teaching Hub grid renders.
+- [x] `_layouts/default.html:6-7`: delete the manual `<title>` and description; `{% seo %}` emits both.
+- [x] `_layouts/default.html:17`: `alt=""`, `width`, `height` on the decorative banner.
+- [x] `_layouts/redirect.html:12-13`: move the canonical link into the head (or drop it).
+- [x] "35 exports came to 88 MB" in 11 `technical-training/slides/*.md` files → 38, or derive from the manifest.
+- [x] `technical-training/journal-club/index.md:20,27,62,135`: "12 domains" → 14, or derive from data.
+- [x] `course/decks/marp/en585781/README.md:9-13`: slide counts 59 / 56 / 58.
+- [x] `technical-training/05-neuronal-ultrastructure.md:14,25`: one time estimate.
+- [x] `modules/module12.md:241`: replace the `TBD` cells or drop the row.
+- [x] Trailing slashes on `/datasets/mouseconnects` and `/datasets/workflow` links (`datasets/index.md:68,84,85` and ~15 module pages).
+- [x] Delete dead files: `_includes/head-custom.html`, `assets/images/neurotrailblazers-banner.png`, `assets/images/nt-favicon.png`, the `avatars` and `datasets` collection declarations in `_config.yml`, the stale nav mirror at `_config.yml:71-95`, `tagline_lines[0]`.
+- [x] `core/index.md:80-105`: add the Neuroanatomy for Proofreaders side-quest card.
 
 **Done when:** the build is green, `check_site_links.rb` passes, and a grep for each old
 string returns nothing.
@@ -49,19 +49,19 @@ string returns nothing.
 ## Workstream 1: data integrity and generators
 
 ### 1.1 Regenerate `_data/journal_papers.yml` from `corpus_2000.json` (M)
-- [ ] Write `scripts/derive_journal_papers.py`: join on DOI (1,980 match), carry `authors`, correct `year`, full journal name, `abstract`; drop the "NeuroTrailblazers Consortium" citation template in favour of a real first-author citation.
-- [ ] Rebuild `_data/paper_views/era.json` (the era facet is currently built on wrong years).
-- [ ] Extend `scripts/validate_paper_counts.rb`: fail if any entry has empty `authors`, a citation containing "Consortium", or a year that disagrees with the corpus.
-- [ ] Reconcile `content-library/journal-papers/methodology.md:16,69` with what actually ships.
+- [x] Write `scripts/derive_journal_papers.py`: join on DOI (1,980 match), carry `authors`, correct `year`, full journal name, `abstract`; drop the "NeuroTrailblazers Consortium" citation template in favour of a real first-author citation.
+- [x] Rebuild `_data/paper_views/era.json` (the era facet is currently built on wrong years).
+- [x] Extend `scripts/validate_paper_counts.rb`: fail if any entry has empty `authors`, a citation containing "Consortium", or a year that disagrees with the corpus.
+- [x] Reconcile `content-library/journal-papers/methodology.md:16,69` with what actually ships.
 
 **Done when:** the journal club renders real author names, sorts by correct year, and the validator would catch a regression.
 
 ### 1.2 Fix the teaching-material generator (S code, then regenerate) 
-- [ ] `scripts/generate_module_teaching_materials.rb:89` (`rubric_lines`): keep indented criteria under each tier; emit them nested in worksheets and decks.
-- [ ] `:83` (`inline_labelled`): also accept a `### Scenario` heading; reject kramdown IAL captures.
-- [ ] Resolve Liquid `relative_url` filters at generation time so worksheets contain plain paths.
-- [ ] Normalise the Studio activity block in modules 01, 02, 03, 05 to the inline `**Scenario:**` + numbered steps form.
-- [ ] Regenerate; diff one worksheet by eye (module 13 is a good test: 11 criteria should reappear).
+- [x] `scripts/generate_module_teaching_materials.rb:89` (`rubric_lines`): keep indented criteria under each tier; emit them nested in worksheets and decks.
+- [x] `:83` (`inline_labelled`): also accept a `### Scenario` heading; reject kramdown IAL captures.
+- [x] Resolve Liquid `relative_url` filters at generation time so worksheets contain plain paths.
+- [x] Normalise the Studio activity block in modules 01, 02, 03, 05 to the inline `**Scenario:**` + numbered steps form.
+- [x] Regenerate; diff one worksheet by eye (module 13 is a good test: 11 criteria should reappear).
 
 **Done when:** all 25 worksheets show rubric criteria, none contains `{: #` or `{{`, and module 05's go/no-go scenario is back.
 

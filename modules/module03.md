@@ -43,7 +43,7 @@ slides: []
 notebook: []
 datasets:
   - "/datasets/access"
-  - "/datasets/workflow"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"
@@ -171,41 +171,30 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ## Studio activity: "Build a connectomics analysis notebook"
 {: #studio-activity}
 
-### Overview
-Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results.
+**Scenario:** Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results. The work runs in four parts: setup and data loading (20 minutes), analysis (20 minutes), visualization and export (15 minutes), and a reproducibility check (5 minutes).
 
-### Part A: Setup and data loading (20 minutes)
-1. Create a new notebook with a header cell: title, your name, date, dataset name, materialization version.
+**Task sequence:**
+1. **Setup and data loading (Part A, 20 minutes):** create a new notebook with a header cell: title, your name, date, dataset name, materialization version.
 2. Create a setup cell with all imports and version pinning.
 3. Initialize CAVEclient (or load a provided sample CSV if CAVE access is unavailable).
 4. Query or load a synapse table. Validate: print column names, data types, row count, and first 5 rows.
 5. Add a markdown cell explaining what the dataset contains and what version you are using.
+6. **Analysis (Part B, 20 minutes):** choose one descriptive analysis from the following options: a synapse count distribution (histogram of synapse counts per neuron); top connections (bar chart of the 10 most connected cell-type pairs); a degree distribution (in-degree vs. out-degree scatter plot for all neurons in a region); or a spatial distribution (scatter plot of synapse locations colored by cell type).
+7. Write the analysis code with markdown cells explaining each step.
+8. Compute at least one summary statistic (mean, median, max, or standard deviation) and report it in a markdown cell.
+9. **Visualization and export (Part C, 15 minutes):** create at least one publication-quality figure with labeled axes, title, and legend.
+10. Add a markdown caption below the figure explaining what it shows and what conclusions (if any) can be drawn.
+11. Export your data table as CSV and your figure as PNG.
+12. Create a metadata JSON cell recording dataset version, query parameters, and analysis date.
+13. **Reproducibility check (Part D, 5 minutes):** restart the kernel and run all cells.
+14. Verify all outputs regenerate correctly.
+15. If any cell fails, fix it and re-run.
 
-### Part B: Analysis (20 minutes)
-1. Choose one descriptive analysis from the following options:
-   - **Synapse count distribution:** histogram of synapse counts per neuron.
-   - **Top connections:** bar chart of the 10 most connected cell-type pairs.
-   - **Degree distribution:** in-degree vs. out-degree scatter plot for all neurons in a region.
-   - **Spatial distribution:** scatter plot of synapse locations colored by cell type.
-2. Write the analysis code with markdown cells explaining each step.
-3. Compute at least one summary statistic (mean, median, max, or standard deviation) and report it in a markdown cell.
-
-### Part C: Visualization and export (15 minutes)
-1. Create at least one publication-quality figure with labeled axes, title, and legend.
-2. Add a markdown caption below the figure explaining what it shows and what conclusions (if any) can be drawn.
-3. Export your data table as CSV and your figure as PNG.
-4. Create a metadata JSON cell recording dataset version, query parameters, and analysis date.
-
-### Part D: Reproducibility check (5 minutes)
-1. Restart kernel and run all cells.
-2. Verify all outputs regenerate correctly.
-
-**Outputs**
+**Outputs:**
 - A notebook that runs clean from a restarted kernel, with a header cell recording title, author, date, dataset, and materialization version.
 - One descriptive analysis with at least one summary statistic reported in a markdown cell.
 - One labeled figure exported as PNG, with a caption stating what it shows and what it does not license you to conclude.
 - The underlying data table exported as CSV, plus a metadata JSON recording dataset version, query parameters, and analysis date.
-3. If any cell fails, fix it and re-run.
 
 ## Assessment rubric
 - **Minimum:** runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.
@@ -219,7 +208,7 @@ Learners produce a complete, reproducible Jupyter notebook that queries a connec
 
 ## Teaching resources
 - [Dataset Access]({{ '/datasets/access/' | relative_url }})
-- [Workflow]({{ '/datasets/workflow' | relative_url }})
+- [Workflow]({{ '/datasets/workflow/' | relative_url }})
 
 ## Academic references
 - Kluyver, T., et al. (2016). Jupyter Notebooks: a publishing format for reproducible computational workflows. *Proceedings of the 20th International Conference on Electronic Publishing*, 87-90.

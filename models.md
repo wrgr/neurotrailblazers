@@ -41,7 +41,7 @@ content_type: core
 <section class="section section-highlight">
 <div class="cards-grid">
   <div class="card text-center" style="max-width: 700px; margin: 0 auto;">
-    {% for line in site.tagline_lines offset:1 %}
+    {% for line in site.tagline_lines %}
     <p class="card-description">{{ line }}</p>
     {% endfor %}
   </div>
@@ -64,7 +64,7 @@ content_type: core
       <li>Career Transition &amp; Lifelong Learning</li>
     </ol>
     <p>Each stage exists to prevent a specific failure: selection by credentials that reproduces existing access, orientation that assumes shared context and silently loses first-generation mentees, support withdrawn too fast (floundering) or too slowly (dependence), independence without scaffolding for the first real failure, networks borrowed from the mentor rather than built, and career choices made by drift. The two program-level failures the sequence guards against are stage compression and applying one mentoring posture to every stage.</p>
-    <p><a href="{{ '/frameworks/' | relative_url }}">MERIT framework summary</a></p>
+    <p><a href="{{ '/education/models/#merit--stage-by-stage' | relative_url }}">MERIT framework summary</a></p>
   </div>
   <div class="card">
     <h3>Professional Pathways Workshops</h3>
@@ -81,7 +81,7 @@ content_type: core
       <li>Future Forward</li>
     </ol>
     <p>The sequence exists to prevent the hidden curriculum from deciding outcomes: the operating knowledge that converts technical training into a career — how authorship, funding, and networks work — is distributed unequally by background, and each workshop states one piece of it that training otherwise assumes. Making it explicit is a fairness intervention as much as a training one.</p>
-    <p><a href="{{ '/frameworks/' | relative_url }}">Professional Pathways guide summary</a></p>
+    <p><a href="{{ '/education/models/#professional-pathways-workshops' | relative_url }}">Professional Pathways guide summary</a></p>
   </div>
   <div class="card">
     <h3>CCR Model</h3>

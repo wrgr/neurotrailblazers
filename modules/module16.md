@@ -44,8 +44,8 @@ slides:
   - "/assets/slides/module16/module16-scientific-visualization-for-connectomics.pdf"
 notebook: []
 datasets:
-  - "/datasets/workflow"
-  - "/datasets/mouseconnects"
+  - "/datasets/workflow/"
+  - "/datasets/mouseconnects/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"
@@ -203,7 +203,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - [Technical Unit 09: Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - [Module 17: Scientific Writing for Connectomics]({{ '/modules/module17/' | relative_url }})
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
-- [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
 

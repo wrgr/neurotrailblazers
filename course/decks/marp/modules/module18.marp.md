@@ -100,7 +100,7 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table.
 
 ---
 
@@ -112,15 +112,26 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Cleaning decisions are explicit, justified, and reproducible.
 - QC metrics include thresholds tied to concrete actions.
 - Release package includes provenance metadata (dataset version, code commit, parameters).
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Distinguishes low-risk cleanup from biologically sensitive transforms with explicit reasoning.
 - Includes sensitivity analysis: "If we move the synapse threshold from 50 to 30, X% more edges appear and Y motifs change significance."
 - Documents limitations and unresolved risks transparently, including what biological signal may have been lost.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Silent ad-hoc edits with no transform log.
 - Aggressive filtering that removes biologically meaningful variation without acknowledgment.
 - Metrics reported without operational thresholds.

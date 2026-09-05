@@ -102,7 +102,7 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** You are given a set of 8 EM patches from a mouse cortex volume. The patches span different layers (L1 through L6) but are presented without layer labels.
 
 ---
 
@@ -114,16 +114,27 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Context-aware call and confidence note recorded for every patch.
 - Layer identification within ±1 layer for the majority of patches.
 - At least one evidence chain written in the form "features observed, therefore layer, therefore expected structures."
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Each call links at least two independent EM cues (soma density, neuropil texture, cell-type signature) to layer context.
 - Confidence varies across patches in a calibrated way: boundary and volume-edge patches score lower than mid-layer patches.
 - Cross-slice (z) evidence cited wherever a single-section call was ambiguous.
 - Partner disagreements resolved by naming which cue was decisive, not by splitting the difference.
-- **Common failure to flag**
+
+---
+
+## Assessment Rubric
+**Common failure to flag**
+
 - Definitive call from a single feature without a layer or neighbor-slice check.
 - Uniform "high" confidence across all patches, including boundary cases.
 - Hippocampal and neocortical laminar logic applied interchangeably.

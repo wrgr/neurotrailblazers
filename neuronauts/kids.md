@@ -363,7 +363,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
       </div>
       <div class="nn-guide-card">
         <h3>🎯 Real Research Connection</h3>
-        <p>Every story on this page connects directly to our open-access <strong>500 Key Papers</strong> corpus. Middle school and high school classes can read the beginner summaries on the full journal club cards!</p>
+        <p>Every story on this page connects directly to our open-access <strong>2,000-paper</strong> journal club corpus. Middle school and high school classes can read the beginner summaries on the full journal club cards!</p>
       </div>
       <div class="nn-guide-card">
         <h3>🌐 Play for Real Science</h3>

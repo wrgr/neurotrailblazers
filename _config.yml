@@ -17,12 +17,6 @@ collections:
   modules:
     output: true
     permalink: /:collection/:name/
-  avatars:
-    output: true
-    permalink: /:collection/:name/
-  datasets:
-    output: true
-    permalink: /:collection/:name/
 
 # Default front matter
 defaults:
@@ -37,16 +31,6 @@ defaults:
     values:
       layout: "module"
       permalink: "/modules/:basename/"
-  - scope:
-      path: ""
-      type: "avatars"
-    values:
-      layout: "avatar"
-  - scope:
-      path: ""
-      type: "datasets"
-    values:
-      layout: "dataset"
   - scope:
       path: ""
       type: "pages"
@@ -69,30 +53,6 @@ github_username: wrgr
 # ~60 generated and hand-maintained pages.
 deck_source_base: "https://github.com/wrgr/neurotrailblazers/blob/main/course/decks/marp"
 
-# Navigation (backup — primary source is _data/navigation.yml)
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Start Here"
-    url: "/start-here/"
-  - title: "Neuronauts"
-    url: "/neuronauts/"
-  - title: "Core"
-    url: "/core/"
-  - title: "Tracks"
-    url: "/tracks/"
-  - title: "Technical Course"
-    url: "/technical-training/"
-  - title: "Modules"
-    url: "/modules/"
-    dropdown: []
-  - title: "Teaching"
-    url: "/teaching/"
-  - title: "Tools"
-    url: "/tools/"
-  - title: "About"
-    url: "/frameworks/"
-
 # Grant and program information
 grant_info:
   program: "NIH BRAIN CONNECTS"
@@ -102,7 +62,6 @@ grant_info:
 
 # Program tagline used across pages
 tagline_lines:
-  - "We power breakthroughs by developing and deploying top research talent."
   - "Our research incubators equip students and mentors with the tools, guidance, and experience to accelerate innovation in neuroscience and AI."
   - "NeuroTrailblazers applies this framework to the audacious goal of mapping the networks of the brain at the level of individual synaptic connections, and makes tools, training and content available to the BRAIN CONNECTS community and beyond."
 

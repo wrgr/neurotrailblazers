@@ -127,8 +127,19 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Review comments are specific and evidence-linked (referencing figure panels, methods details, or specific sentences).
+  - Ethics risks are identified with concrete mitigations tied to workflow practices.
+  - Recommendation is consistent with documented findings.
 - **Strong performance**
+  - Distinguishes fixable technical issues from fundamental validity failures.
+  - Balances rigor with constructive tone and practical revision advice.
+  - Uses transparent criteria for authorship/integrity judgments.
+  - Anticipates author responses and pre-addresses potential objections.
 - **Common failure modes**
+  - Generic critique with no evidence references ("the statistics are weak").
+  - Ethics discussion disconnected from actual workflow practices.
+  - Inconsistent recommendation versus identified risks (e.g., listing major concerns but recommending accept with minor revisions).
+  - Destructive tone that undermines the credibility of valid criticisms.
 
 **My self-assessment:**
 

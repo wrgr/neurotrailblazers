@@ -43,7 +43,7 @@ slides:
   - "/assets/slides/module07/module07-proofreading-and-quality-control.pdf"
 notebook: []
 datasets:
-  - "/datasets/workflow"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/researcher"

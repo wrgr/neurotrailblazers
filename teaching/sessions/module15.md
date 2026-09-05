@@ -36,7 +36,7 @@ Learners should arrive having covered:
 
 Pre-class preparation set for learners:
 
-- Read [proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) so you know what the human-in-the-loop workflow currently is.
+- Read [proofreading tools](/content-library/proofreading/proofreading-tools/) so you know what the human-in-the-loop workflow currently is.
 - Bring one real task from your own work you were considering handing to an LLM.
 - Be ready to estimate how long that task takes you by hand.
 

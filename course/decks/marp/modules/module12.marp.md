@@ -78,7 +78,6 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Studio Activity
-{: #studio-activity}
 **Scenario:** Your team delivers a weekly motif-analysis report from a store holding a ~5 x 10^8-row synapse table, a 120,000-row segment table, and cell-type annotations for about 8,400 neurons. The volume is ~1 mm³, the bytes live in cloud object storage, and your analysis cluster is on-premises. The report is regenerated every Monday and will be cited in a manuscript. Last week's run took nine hours and produced numbers that do not match the report from three weeks ago; nobody knows why.
 
 ---
@@ -91,16 +90,27 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Query design matches analysis goal and data shape, with at least one quantitative estimate.
 - Provenance requirements are explicit, actionable, and attached to the artifact rather than the notebook.
 - Bottlenecks are identified with one realistic mitigation.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Separates exploratory and production query paths and says which rules apply to each.
 - Quantifies tradeoffs across latency, dollar cost, and reproducibility, and names the assumption behind each number.
 - Identifies version drift as the first hypothesis for the discrepancy, before code bugs.
 - Anticipates failure recovery and rollback needs, including what happens when a materialization is superseded mid-analysis.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Index choices disconnected from query workload.
 - Missing version metadata in outputs.
 - Optimization attempts without a benchmark baseline.

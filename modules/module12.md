@@ -44,8 +44,8 @@ slides:
   - "/assets/slides/module12/module12-big-data-in-connectomics.pdf"
 notebook: []
 datasets:
-  - "/datasets/mouseconnects"
-  - "/datasets/workflow"
+  - "/datasets/mouseconnects/"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/researcher"
@@ -238,7 +238,7 @@ To ground the abstract concepts, here are the data scales learners will encounte
 | MICrONS (minnie65) | 1 mm³ mouse V1 | ~80,000 | ~500M | ~2 PB |
 | H01 | ~1 mm³ human temporal cortex | ~57,000 cells | ~150M | ~1.4 PB |
 | FlyWire | Whole adult Drosophila brain | ~139,255 | ~54.5M | ~100 TB |
-| MouseConnects (planned) | ~10 mm³ mouse hippocampus | TBD | TBD | >10 PB |
+| MouseConnects (planned) | ~10 mm³ mouse hippocampus | Not yet reconstructed | Not yet reconstructed | >10 PB |
 
 **Teaching point:** "When your synapse table has 500 million rows, a poorly written query doesn't just run slowly — it may not finish at all. Architecture decisions determine whether your science is feasible."
 
@@ -279,8 +279,8 @@ To ground the abstract concepts, here are the data scales learners will encounte
 - [Journal papers: data storage]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) — Primary literature on formats and scale
 
 ## Teaching resources
-- Workflow context: [Connectomics Workflow]({{ '/datasets/workflow' | relative_url }})
-- Dataset context: [MouseConnects]({{ '/datasets/mouseconnects' | relative_url }})
+- Workflow context: [Connectomics Workflow]({{ '/datasets/workflow/' | relative_url }})
+- Dataset context: [MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
 ## References

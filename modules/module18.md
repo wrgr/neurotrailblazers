@@ -44,8 +44,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/workflow"
-  - "/datasets/mouseconnects"
+  - "/datasets/workflow/"
+  - "/datasets/mouseconnects/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/researcher"
@@ -185,7 +185,7 @@ Most downstream failures in connectome analysis are not model failures first; th
 - Lesson context: [Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
 - QC context: [Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 - Slides: [Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
-- Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 
 ## 60-minute tutorial run-of-show
@@ -231,8 +231,8 @@ Each team submits one release note with: dataset version, all thresholds and par
 - [Peng, R.D. (2011). "Reproducible Research in Computational Science." *Science*, 334, 1226-1227.](https://doi.org/10.1126/science.1213847) --- why preprocessing documentation matters for reproducibility.
 
 ### Key datasets to practice on
-- [NeuroTrailblazers workflow overview]({{ '/datasets/workflow' | relative_url }})
-- [MouseConnects (HI-MC)]({{ '/datasets/mouseconnects' | relative_url }})
+- [NeuroTrailblazers workflow overview]({{ '/datasets/workflow/' | relative_url }})
+- [MouseConnects (HI-MC)]({{ '/datasets/mouseconnects/' | relative_url }})
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 
 ### Competency checks

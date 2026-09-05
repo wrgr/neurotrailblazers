@@ -103,8 +103,19 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass**
+  - The node/edge schema is stated explicitly — node definition, edge direction, weighting, and synapse threshold — before any metric appears.
+  - Each reported metric is paired with a null-model comparison; no bare metric values stand alone.
+  - At least two metrics are linked in writing to the specific question they answer for the PI's three asks (small-world, hubs, communities).
+  - The report names at least one piece of information the graph abstraction discarded and one question it therefore cannot answer.
 - **Strong performance**
+  - The headline result is re-run at a second synapse threshold, and the report states which conclusions held and which moved.
+  - Degree outliers are checked against the underlying reconstruction before being reported as hubs, with the check documented.
+  - More than one null model is used, or the limits of the single null are stated in words (what it does and does not control for).
+  - Detected communities are compared against external labels (cell types), and disagreement is reported as a finding rather than suppressed.
 - **Common failure to flag**
+  - Metric dumping — computing every available metric without explaining what question each answers.
+  - Hub or community claims made without checking whether a merge error or threshold choice manufactured them.
+  - A significance claim against Erdos-Renyi only, on a graph with obvious degree heterogeneity.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

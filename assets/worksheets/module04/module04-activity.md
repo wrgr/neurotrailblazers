@@ -119,8 +119,18 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Context-aware call and confidence note recorded for every patch.
+  - Layer identification within ±1 layer for the majority of patches.
+  - At least one evidence chain written in the form "features observed, therefore layer, therefore expected structures."
 - **Strong performance**
+  - Each call links at least two independent EM cues (soma density, neuropil texture, cell-type signature) to layer context.
+  - Confidence varies across patches in a calibrated way: boundary and volume-edge patches score lower than mid-layer patches.
+  - Cross-slice (z) evidence cited wherever a single-section call was ambiguous.
+  - Partner disagreements resolved by naming which cue was decisive, not by splitting the difference.
 - **Common failure to flag**
+  - Definitive call from a single feature without a layer or neighbor-slice check.
+  - Uniform "high" confidence across all patches, including boundary cases.
+  - Hippocampal and neocortical laminar logic applied interchangeably.
 
 **My self-assessment:**
 

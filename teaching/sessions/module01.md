@@ -52,14 +52,16 @@ pathways:
 
 ## The activity
 
-**Scenario:** {: #studio-activity}
+**Scenario:** Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement. Part A (30 minutes) builds the sheet, Part B (20 minutes) drafts the statement, and a 10-minute peer review closes the session.
 
-1. State your broad curiosity question (1 sentence).
+1. **Question-to-hypothesis sheet (Part A, 30 minutes):** state your broad curiosity question (1 sentence).
 2. Narrow to a specific circuit, region, or organism (1 sentence).
 3. Define the structural measurement you would need (e.g., synapse count between cell types X and Y).
 4. Specify the dataset you would use (e.g., FlyWire, MICrONS, FAFB).
 5. State one non-claim: what your structural data cannot tell you.
 6. Define a falsification condition: what result would disprove your hypothesis?
+7. **Motivation statement (Part B, 20 minutes):** write 150-300 words addressing: Why connectomics? What drew you to this field? What specific aspect of brain circuitry fascinates you? How does your daily work (annotation, proofreading, coding) connect to the larger mission? What is your plan for sustaining motivation through tedious stretches? (Be specific: milestones, rewards, accountability partners, rotation between tasks.)
+8. **Peer review (10 minutes):** exchange motivation statements with a partner. Provide feedback on: (1) specificity --- does the statement name concrete goals? (2) sustainability --- does the plan for maintaining motivation seem realistic?
 
 **What learners hand in**
 
@@ -104,8 +106,18 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum:**
+  - Question names organism, region or circuit, and one structural measurement with units.
+  - Metric, dataset, and non-claim are all present and consistent with each other.
+  - Motivation statement addresses both why and how.
 - **Strong:**
+  - Falsification condition names the specific result that would count against the hypothesis.
+  - Scope is sized so the first milestone could be finished within a week.
+  - Motivation statement names at least two sustainability strategies with triggers ("when X dips, I will Y").
+  - Non-claim correctly identifies a functional inference the structural data cannot support.
 - **Failure:**
+  - Motivational text without measurable outputs, or a question no result could contradict.
+  - Motivation statement is generic ("I like brains") or omits a plan for the motivation gap.
+  - Claim language exceeds the evidence class of the proposed measurement.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

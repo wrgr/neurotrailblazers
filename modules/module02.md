@@ -43,7 +43,7 @@ slides: []
 notebook: []
 datasets:
   - "/datasets/access"
-  - "/datasets/workflow"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"
@@ -160,31 +160,19 @@ Every research environment operates on two sets of rules: the official ones (wri
 ## Studio activity: "Build your lab navigation playbook"
 {: #studio-activity}
 
-### Overview
-Learners produce a one-page research navigation document that serves as a practical reference throughout the program.
+**Scenario:** Learners produce a one-page research navigation document that serves as a practical reference throughout the program. It is built in four parts: a norms inventory (15 minutes), communication scripts (20 minutes), a mentor and support map (15 minutes), and an ethics commitment (10 minutes).
 
-### Part A: Norms inventory (15 minutes)
-1. List 5 unwritten norms you have encountered (or expect to encounter) in research settings.
+**Task sequence:**
+1. **Norms inventory (Part A, 15 minutes):** list 5 unwritten norms you have encountered (or expect to encounter) in research settings.
 2. For each norm, write: (a) what the norm is, (b) how you learned it (or how you think most people learn it), (c) what happens when someone violates it.
 3. Star the 2 norms you find most challenging to follow.
+4. **Communication scripts (Part B, 20 minutes):** write a customized script for asking for help: "I have been working on [X] for [time]. Here is what I have tried: [list]. I am stuck on [specific point]. Could you [specific request]?"
+5. Write a customized script for giving feedback: "I noticed [specific observation] in [specific work]. I wanted to flag it because [reason]. Would it help to [proposed action]?"
+6. Write a customized script for admitting uncertainty: "I am not confident about [specific decision] because [reason]. My best guess is [guess], but I would like to [verify/discuss/get a second opinion]."
+7. **Mentor and support map (Part C, 15 minutes):** create a table with the columns Name, Role, What I can ask them, How to reach them, and Backup contact. Fill in at least 3 rows. Include at least one peer, one senior person, and one person outside your immediate team.
+8. **Ethics commitment (Part D, 10 minutes):** write 3-5 sentences describing your commitments regarding how you will track data provenance in your work, how you will attribute contributions from collaborators, and how you will handle errors (your own and others').
 
-### Part B: Communication scripts (20 minutes)
-Write customized scripts for three situations:
-1. **Asking for help:** "I have been working on [X] for [time]. Here is what I have tried: [list]. I am stuck on [specific point]. Could you [specific request]?"
-2. **Giving feedback:** "I noticed [specific observation] in [specific work]. I wanted to flag it because [reason]. Would it help to [proposed action]?"
-3. **Admitting uncertainty:** "I am not confident about [specific decision] because [reason]. My best guess is [guess], but I would like to [verify/discuss/get a second opinion]."
-
-### Part C: Mentor and support map (15 minutes)
-Create a table with columns: Name | Role | What I can ask them | How to reach them | Backup contact.
-Fill in at least 3 rows. Include at least one peer, one senior person, and one person outside your immediate team.
-
-### Part D: Ethics commitment (10 minutes)
-Write 3-5 sentences describing your commitments regarding:
-- How you will track data provenance in your work.
-- How you will attribute contributions from collaborators.
-- How you will handle errors (your own and others').
-
-**Outputs**
+**Outputs:**
 - Norms inventory of five unwritten norms, each with how it is learned and what violating it costs, with the two hardest starred.
 - Three written communication scripts, customized to your own situation: asking for help, giving feedback, admitting uncertainty.
 - Mentor and support map with at least three filled rows, including one peer, one senior person, and one contact outside your immediate team.

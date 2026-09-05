@@ -39,7 +39,7 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Concept Focus
-### Image quality as a scientific constraint
+EM image quality is not merely an aesthetic concern — it is the single most consequential variable that determines segmentation accuracy and, by extension, the validity of every connectomic claim built on that segmentation. A 20% reduction in membrane contrast can double the split error rate in automated reconstruction, because the segmentation model loses the luminance gradient it relies on to delineate adjacent neurites. Every downstream analysis result — synapse counts, path lengths, circuit motifs — inherits the quality ceiling set at acquisition. This means that the person evaluating image quality is making a decision that propagates through the entire pipeline. Treating QA as a clerical step rather than a scientific judgment is one of the most common and costly mistakes in connectomics projects.
 
 ---
 
@@ -93,7 +93,7 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Your team has received pilot images from a new ssTEM acquisition of mouse visual cortex. The imaging facility reports that initial sections looked good, but they encountered intermittent knife chatter starting around section 200 and a possible staining gradient in the lateral third of the field of view. Before the facility commits to imaging the remaining 800 sections, your team must evaluate the pilot data and deliver a go/no-go recommendation with conditions.
 
 ---
 

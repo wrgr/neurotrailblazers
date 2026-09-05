@@ -58,12 +58,13 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** {: #studio-activity}
+**Scenario:** Your team has received pilot images from a new ssTEM acquisition of mouse visual cortex. The imaging facility reports that initial sections looked good, but they encountered intermittent knife chatter starting around section 200 and a possible staining gradient in the lateral third of the field of view. Before the facility commits to imaging the remaining 800 sections, your team must evaluate the pilot data and deliver a go/no-go recommendation with conditions.
 
-1. Inspect image quality and artifact signatures.
-2. Classify severity and likely impact on segmentation.
-3. Decide pass/flag/rework with documented rationale.
-4. Log findings in a structured QA record for reproducibility.
+1. **Survey (10 min):** Open the six provided image patches (three from the clean region, three from the reported problem areas). For each patch, independently record: modality confirmation, visible artifacts, and an initial severity impression.
+2. **Artifact classification (15 min):** Using the artifact reference card, formally classify each artifact by type and assign a severity score (1 = minor, cosmetic; 2 = moderate, segmentation-affecting; 3 = severe, reconstruction-blocking). Map each artifact to its expected segmentation consequence (merge, split, or topology break).
+3. **Spatial pattern analysis (10 min):** Arrange the patches by their spatial position in the volume. Determine whether the artifacts are spatially correlated (e.g., staining gradient affecting one side consistently) or random. Spatially correlated artifacts require different mitigation than random ones.
+4. **Cost-benefit analysis (10 min):** For each artifact, estimate the downstream cost if the facility proceeds without fixing it. Consider: how many proofreading hours per affected section? How many sections are likely affected? Compare this to the cost of pausing acquisition for knife replacement or re-staining.
+5. **Recommendation memo (15 min):** Write a one-page memo to the imaging facility with your team's recommendation. The memo must include: (a) a summary table of artifacts found, (b) your go/no-go decision with conditions, (c) specific remediation steps if you recommend pausing, and (d) a monitoring plan if you recommend proceeding.
 
 **What learners hand in**
 

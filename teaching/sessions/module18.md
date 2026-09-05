@@ -107,8 +107,18 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass**
+  - Cleaning decisions are explicit, justified, and reproducible.
+  - QC metrics include thresholds tied to concrete actions.
+  - Release package includes provenance metadata (dataset version, code commit, parameters).
 - **Strong performance**
+  - Distinguishes low-risk cleanup from biologically sensitive transforms with explicit reasoning.
+  - Includes sensitivity analysis: "If we move the synapse threshold from 50 to 30, X% more edges appear and Y motifs change significance."
+  - Documents limitations and unresolved risks transparently, including what biological signal may have been lost.
 - **Common failure modes**
+  - Silent ad-hoc edits with no transform log.
+  - Aggressive filtering that removes biologically meaningful variation without acknowledgment.
+  - Metrics reported without operational thresholds.
+  - Missing dataset version or code commit in the release note.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

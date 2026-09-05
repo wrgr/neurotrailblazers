@@ -53,7 +53,7 @@ content_type: core
                 </div>
                 <div class="cta-buttons">
                     <a href="#dataset-access" class="btn btn-primary btn-large">Explore the Data</a>
-                    <a href="/datasets/workflow" class="btn btn-secondary btn-large">View Pipeline</a>
+                    <a href="/datasets/workflow/" class="btn btn-secondary btn-large">View Pipeline</a>
                 </div>
             </div>
         </div>

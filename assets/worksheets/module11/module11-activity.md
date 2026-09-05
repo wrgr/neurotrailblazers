@@ -120,8 +120,19 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - The motif count table reports observed, expected, and z-score for every motif class examined, not only the enriched ones.
+  - At least one motif carries a complete evidence chain: detection method, count, null comparison, and interpretation, in that order.
+  - Each claim in the circuit logic brief is paired with an explicit caveat stating what it does not prove.
+  - The synapse threshold and data version used to build the subgraph are stated in the brief.
 - **Strong performance**
+  - Every enriched motif has at least one non-functional alternative explanation (spatial proximity, cell-type composition, reconstruction error) named and, where possible, tested.
+  - A second null model or a stratified analysis is applied to at least one motif, with the change in effect size reported.
+  - Synapse-level evidence — compartment targeting, Gray type — is used to subdivide or qualify at least one motif class rather than treating graph edges as interchangeable.
+  - Sensitivity to reconstruction quality is quantified: the headline count is re-run at a second synapse threshold or across proofreading versions, and the difference is reported.
 - **Common failure to flag**
+  - Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
+  - Functional language ("this circuit gates," "this loop amplifies") presented as a finding rather than as a consistency statement.
+  - Enrichment reported against a single weak null with no statement of what it fails to control.
 
 **My self-assessment:**
 

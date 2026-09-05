@@ -66,7 +66,7 @@ content_type: core
     <h2>MouseConnects: HI-MC Spotlight</h2>
     <div class="dataset-card featured spotlight">
       <div class="dataset-header">
-        <h3><a href="{{ '/datasets/mouseconnects' | relative_url }}">MouseConnects: the Center for High-throughput Integrative Mouse Connectomics (HI-MC)</a></h3>
+        <h3><a href="{{ '/datasets/mouseconnects/' | relative_url }}">MouseConnects: the Center for High-throughput Integrative Mouse Connectomics (HI-MC)</a></h3>
         <div class="dataset-meta">
           <span class="dataset-type">Hippocampus</span>
           <span class="dataset-status">In Progress (2023-2028)</span>
@@ -81,8 +81,8 @@ content_type: core
       </ul>
       <div class="dataset-actions">
 
-        <a href="{{ '/datasets/mouseconnects' | relative_url }}" class="btn btn-primary">Project Details</a>
-        <a href="{{ '/datasets/workflow' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
+        <a href="{{ '/datasets/mouseconnects/' | relative_url }}" class="btn btn-primary">Project Details</a>
+        <a href="{{ '/datasets/workflow/' | relative_url }}" class="btn btn-secondary">View Pipeline</a>
       </div>
     </div>
   </section>
@@ -98,13 +98,13 @@ content_type: core
           <span class="dataset-status">Published 2024</span>
         </div>
       </div>
-      <p>A 1.4 petabyte rendering of a small sample of human brain tissue, imaged at 4nm-resolution by serial section electron microscopy, reconstructed and annotated by automated computational techniques. The dataset comprises roughly one cubic millimeter of brain tissue, including tens of thousands of reconstructed neurons, millions of neuron fragments, 130 million annotated synapses, 104 proofread cells, and many additional subcellular annotations.</p>
+      <p>A 1.4 petabyte rendering of a small sample of human brain tissue, imaged at 4nm-resolution by serial section electron microscopy, reconstructed and annotated by automated computational techniques. The dataset comprises roughly one cubic millimeter of brain tissue, including tens of thousands of reconstructed neurons, millions of neuron fragments, 150 million annotated synapses, 104 proofread cells, and many additional subcellular annotations.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Human</li>
         <li><strong>Region:</strong> Temporal lobe cerebral cortex</li>
         <li><strong>Volume:</strong> ~1 mm³</li>
-        <li><strong>Neurons:</strong> ~50,000 cells</li>
-        <li><strong>Synapses:</strong> 130 million</li>
+        <li><strong>Cells:</strong> ~57,000</li>
+        <li><strong>Synapses:</strong> ~150 million</li>
         <li><strong>Size:</strong> 1.4 PB</li>
       </ul>
       <div class="dataset-actions">
@@ -147,13 +147,13 @@ content_type: core
           <span class="dataset-status">Published 2024</span>
         </div>
       </div>
-      <p>AI-segmented, expert-proofread neurons of a whole-brain connectome of an adult female Drosophila with 139,255 neurons and 50 million synaptic connections. The first complete connectome of an adult animal brain, including systematic hierarchical annotation of neuronal classes, cell types and developmental units.</p>
+      <p>AI-segmented, expert-proofread neurons of a whole-brain connectome of an adult female Drosophila with 139,255 neurons and ~54.5 million synaptic connections. The first complete connectome of an adult animal brain, including systematic hierarchical annotation of neuronal classes, cell types and developmental units.</p>
       <ul class="dataset-facts">
         <li><strong>Species:</strong> Drosophila melanogaster (female)</li>
         <li><strong>Region:</strong> Complete brain and optic lobes</li>
         <li><strong>Volume:</strong> Whole brain</li>
         <li><strong>Neurons:</strong> 139,255</li>
-        <li><strong>Synapses:</strong> 50+ million</li>
+        <li><strong>Synapses:</strong> ~54.5 million</li>
         <li><strong>Cell Types:</strong> 8,453</li>
         <li><strong>Size:</strong> ~50 TB</li>
       </ul>
@@ -216,17 +216,34 @@ content_type: core
       <div class="timeline-item">
         <div class="timeline-year">2011</div>
         <div class="timeline-content">
-          <h3 class="card-title">Bock et al. - Mouse Retinal Circuits</h3>
-          <p class="card-description">Network anatomy and in vivo physiology of visual cortical neurons mapping mouse retinal circuits for visual motion detection using serial block-face scanning electron microscopy.</p>
+          <h3 class="card-title">Bock et al. - Mouse Visual Cortex</h3>
+          <p class="card-description">Network anatomy and in vivo physiology of visual cortical neurons: serial section transmission electron microscopy of mouse primary visual cortex after two-photon calcium imaging, linking the wiring of ~1,500 cell bodies to their measured orientation tuning.</p>
           <ul class="dataset-facts">
             <li><strong>Species:</strong> Mouse</li>
-            <li><strong>Region:</strong> Retina</li>
-            <li><strong>Volume:</strong> ~250 μm³</li>
+            <li><strong>Region:</strong> Primary visual cortex</li>
+            <li><strong>Method:</strong> ssTEM</li>
             <li><strong>Size:</strong> ~12 TB</li>
           </ul>
           <div class="dataset-actions">
             <a href="https://bossdb.org/project/bock2011" class="btn btn-secondary" target="_blank">BossDB Data</a>
             <a href="https://www.nature.com/articles/nature09802" class="btn btn-secondary" target="_blank">Read Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2011 -->
+      <div class="timeline-item">
+        <div class="timeline-year">2011</div>
+        <div class="timeline-content">
+          <h3 class="card-title">Briggman et al. - Mouse Retinal Circuits</h3>
+          <p class="card-description">Wiring specificity in the direction-selectivity circuit of the retina: serial block-face scanning electron microscopy of mouse retina combined with two-photon calcium imaging, showing that starburst amacrine cells wire asymmetrically onto direction-selective ganglion cells.</p>
+          <ul class="dataset-facts">
+            <li><strong>Species:</strong> Mouse</li>
+            <li><strong>Region:</strong> Retina</li>
+            <li><strong>Method:</strong> SBEM</li>
+          </ul>
+          <div class="dataset-actions">
+            <a href="https://www.nature.com/articles/nature09818" class="btn btn-secondary" target="_blank">Read Paper</a>
           </div>
         </div>
       </div>
@@ -321,7 +338,7 @@ content_type: core
             <li><strong>Region:</strong> Temporal lobe cerebral cortex</li>
             <li><strong>Volume:</strong> ~1 mm³</li>
             <li><strong>Cells:</strong> ~57,000 total</li>
-            <li><strong>Synapses:</strong> 130 million</li>
+            <li><strong>Synapses:</strong> ~150 million</li>
             <li><strong>Size:</strong> 1.4 PB</li>
           </ul>
           <div class="dataset-actions">
@@ -343,7 +360,7 @@ content_type: core
             <li><strong>Region:</strong> Complete brain and optic lobes</li>
             <li><strong>Volume:</strong> Whole brain</li>
             <li><strong>Neurons:</strong> 139,255</li>
-            <li><strong>Synapses:</strong> 50+ million</li>
+            <li><strong>Synapses:</strong> ~54.5 million</li>
             <li><strong>Size:</strong> ~50 TB</li>
           </ul>
           <div class="dataset-actions">

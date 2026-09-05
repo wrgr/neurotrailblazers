@@ -78,7 +78,6 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 ---
 
 ## Studio Activity
-{: #studio-activity}
 **Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
 
 ---

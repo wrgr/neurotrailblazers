@@ -92,7 +92,7 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists "MICrONS Consortium" as a co-author without individual contribution details. The discussion section states that "this motif likely plays a causal role in seizure propagation."
 
 ---
 
@@ -104,16 +104,27 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Review comments are specific and evidence-linked (referencing figure panels, methods details, or specific sentences).
 - Ethics risks are identified with concrete mitigations tied to workflow practices.
 - Recommendation is consistent with documented findings.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Distinguishes fixable technical issues from fundamental validity failures.
 - Balances rigor with constructive tone and practical revision advice.
 - Uses transparent criteria for authorship/integrity judgments.
 - Anticipates author responses and pre-addresses potential objections.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Generic critique with no evidence references ("the statistics are weak").
 - Ethics discussion disconnected from actual workflow practices.
 - Inconsistent recommendation versus identified risks (e.g., listing major concerns but recommending accept with minor revisions).

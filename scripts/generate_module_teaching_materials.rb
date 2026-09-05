@@ -22,21 +22,64 @@ def parse_file(path)
   [fm, body]
 end
 
+SITE_CONFIG = begin
+  YAML.safe_load(File.read(File.join(ROOT, '_config.yml'), encoding: 'UTF-8'),
+                 permitted_classes: [Date], aliases: true) || {}
+rescue StandardError
+  {}
+end
+BASEURL = SITE_CONFIG['baseurl'].to_s.chomp('/')
+SITE_URL = SITE_CONFIG['url'].to_s.chomp('/')
+
+# Module pages are Jekyll sources, so their links are written as
+# {{ '/path/' | relative_url }}. Worksheets are served as raw Markdown with no
+# front matter, and Marp decks never pass through Jekyll, so any Liquid copied
+# out of a module page reaches the learner verbatim (four worksheets shipped
+# that way). Resolve the URL filters to plain paths here; drop and warn about
+# any other tag rather than leak it.
+def resolve_liquid(text)
+  out = text.gsub(/\{\{\s*(['"])([^'"]*)\1\s*\|\s*(relative_url|absolute_url)\s*\}\}/) do
+    path = Regexp.last_match(2)
+    prefix = Regexp.last_match(3) == 'absolute_url' ? SITE_URL + BASEURL : BASEURL
+    prefix + (path.start_with?('/') ? path : "/#{path}")
+  end
+  out = out.gsub(/\{\{\s*site\.baseurl\s*\}\}/, BASEURL)
+  out.gsub(/\{\{[^}]*\}\}|\{%[^%]*%\}/) do |tag|
+    warn "generate_module_teaching_materials: dropped unresolved Liquid #{tag}"
+    ''
+  end
+end
+
+# kramdown inline attribute lists ("{: #studio-activity}") follow several module
+# headings. They are markup for the module page only, and left in place they
+# become the "first paragraph" of a section.
+def ial?(text)
+  text.strip.match?(/\A\{:[^\n]*\}\z/)
+end
+
+def clean_section(text)
+  resolve_liquid(text.gsub(/^\{:[^\n]*\}[ \t]*\n?/, '')).strip
+end
+
 # Matches a level-2 section by heading. Module pages vary their heading wording
 # ("60-minute tutorial run-of-show" vs "Detailed run-of-show (90 minutes)",
 # "Studio activity" vs "Studio activity: ..."), so fall back to a substring match
 # before giving up. An exact match always wins.
 def section(body, heading)
   exact = body.match(/^##\s+#{Regexp.escape(heading)}\s*$\n(.*?)(?=^##\s+|\z)/m)
-  return exact[1].strip if exact
+  return clean_section(exact[1]) if exact
 
   key = heading.sub(/\A\d+-minute\s+/i, '').sub(/\Atutorial\s+/i, '')
   loose = body.match(/^##\s+[^\n]*#{Regexp.escape(key)}[^\n]*$\n(.*?)(?=^##\s+|\z)/mi)
-  loose ? loose[1].strip : ''
+  loose ? clean_section(loose[1]) : ''
 end
 
+# First paragraph of prose: skips blank paragraphs, attribute lists and bare
+# sub-headings, none of which is content to quote on a worksheet or slide.
 def first_paragraph(text)
-  text.split(/\n{2,}/).map(&:strip).find { |p| !p.empty? } || ''
+  text.split(/\n{2,}/).map(&:strip).find do |p|
+    !p.empty? && !ial?(p) && !p.match?(/\A\#{1,6}\s+[^\n]*\z/)
+  end || ''
 end
 
 def list_items(text)
@@ -80,14 +123,70 @@ def labelled_block(text, label)
   ''
 end
 
+# Pulls a one-line labelled value out of a section, e.g. the scenario inside the
+# Studio activity. Accepts the inline form "**Scenario:** text" and the heading
+# form "### Scenario" followed by a paragraph. Never returns an attribute list.
 def inline_labelled(text, label)
-  m = text.match(/^\*\*#{Regexp.escape(label)}:\*\*\s*(.+)$/)
-  m ? m[1].strip : ''
+  lbl = Regexp.escape(label)
+  m = text.match(/^\*\*#{lbl}:?\*\*:?[ \t]*(\S.*)$/)
+  value = m ? m[1].strip : ''
+  if value.empty?
+    h = text.match(/^\#{2,6}\s+#{lbl}\s*$\n(.*?)(?=^\#{2,6}\s|^\*\*[^*\n]+\*\*:?[ \t]*$|\z)/mi)
+    value = first_paragraph(h[1]) if h
+  end
+  ial?(value) ? '' : value
 end
 
-# Extracts the "- **Technical:** ..." style rubric lines, keeping the label.
-def rubric_lines(text)
-  text.each_line.map(&:strip).select { |ln| ln.match?(/^\-\s+\*\*/) }
+# Parses an assessment rubric into tiers. Two-level rubrics
+#   - **Minimum pass**
+#     - criterion
+# yield one tier per top-level item with its indented criteria; one-level
+# rubrics ("- **Minimum:** text") yield tiers with no criteria. Returns
+# [[label, [criteria...]], ...]. The earlier line filter kept only lines that
+# began with "- **", which is exactly the three tier labels and none of the
+# criteria, so every two-level worksheet shipped an empty rubric.
+def rubric_tiers(text)
+  tiers = []
+  text.each_line do |raw|
+    line = raw.rstrip
+    next if line.strip.empty?
+
+    if line.match?(/\A[-*]\s+/)
+      tiers << [line.sub(/\A[-*]\s+/, ''), []]
+    elsif line.match?(/\A\s+[-*]\s+/) && !tiers.empty?
+      tiers.last[1] << line.strip.sub(/\A[-*]\s+/, '')
+    end
+  end
+  tiers
+end
+
+# Worksheet and session-kit form: a nested Markdown list.
+def rubric_markdown(tiers)
+  tiers.map do |label, criteria|
+    (["- #{label}"] + criteria.map { |c| "  - #{c}" }).join("\n")
+  end.join("\n")
+end
+
+# Deck form. A one-level rubric fits on one slide. A two-level rubric gets one
+# slide per tier, the tier as a bold line with its criteria as bullets; a tier
+# with more than six criteria continues on a further slide.
+def rubric_slides(tiers)
+  return nil if tiers.empty?
+
+  if tiers.all? { |_, criteria| criteria.empty? }
+    return "## Assessment Rubric\n" + tiers.map { |label, _| "- #{label}" }.join("\n")
+  end
+
+  slides = []
+  tiers.each do |label, criteria|
+    bold = label.match?(/\A\*\*.*\*\*\z/) ? label : "**#{label}**"
+    chunks = criteria.empty? ? [[]] : criteria.each_slice(6).to_a
+    chunks.each_with_index do |chunk, i|
+      head = i.zero? ? '## Assessment Rubric' : '## Assessment Rubric (cont.)'
+      slides << ([head, bold, ''] + chunk.map { |c| "- #{c}" }).join("\n")
+    end
+  end
+  slides.join("\n\n---\n\n")
 end
 
 # Numbered steps, tolerating the bold-wrapped form some module pages use
@@ -126,7 +225,7 @@ module_paths.each do |path|
   number = fm['module_number'].to_i
   slug = fm['slug'].to_s
   title = fm['title'].to_s
-  objectives = Array(fm['learning_objectives'])
+  objectives = Array(fm['learning_objectives']).map { |o| resolve_liquid(o.to_s) }
   num = format('%02d', number)
 
   capability = first_paragraph(section(body, 'Capability target'))
@@ -138,9 +237,8 @@ module_paths.each do |path|
   activity_section = section(body, 'Studio activity')
   activity = first_paragraph(activity_section)
   rubric_section = section(body, 'Assessment rubric')
-  rubric = first_paragraph(rubric_section)
   prompt = first_paragraph(section(body, 'Quick practice prompt'))
-  references = Array(fm['references'])
+  references = Array(fm['references']).map { |r| resolve_liquid(r.to_s) }
 
   workflow_items = normalize_bullets(list_items(workflow_section))
   default_run = "- 00:00-08:00 frame the capability target and activate prior knowledge.\n" \
@@ -151,7 +249,8 @@ module_paths.each do |path|
                 "- 58:00-60:00 exit prompt and next-step assignment."
   run_items = normalize_bullets(list_items(run_of_show), default_run)
   misconception_lines = normalize_bullets(misconception_items(concept_section), '- Surface and correct one likely misconception during debrief.')
-  rubric_items = normalize_bullets(list_items(rubric_section), "- Use module rubric headings on the module page.")
+  rubric_deck = rubric_slides(rubric_tiers(rubric_section)) ||
+                "## Assessment Rubric\n- Use module rubric headings on the module page."
 
   worksheet_mod_dir = File.join(WORKSHEET_DIR, "module#{num}")
   FileUtils.mkdir_p(worksheet_mod_dir)
@@ -166,19 +265,19 @@ module_paths.each do |path|
   workflow_steps = bullet_or_dash(numbered_steps(workflow_section), [])
   run_steps = bullet_or_dash(numbered_steps(run_of_show), [])
   run_steps = bullet_or_dash(timed_lines(run_of_show), []) if run_steps.empty?
-  rubric_rows = rubric_lines(rubric_section)
+  rubric_rows = rubric_tiers(rubric_section)
   misconceptions = bullet_or_dash(misconception_items(concept_section), [])
   preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
   preclass = bullet_or_dash(list_items(labelled_block(run_of_show, 'Pre-class')), []) if preclass.empty?
   # Fall back to the free-text `prerequisites` field when the structured list is
   # empty. Modules 01-11 populate only the former, and reading just the list left
   # eleven worksheets showing a generic placeholder.
-  prereqs = Array(fm['prerequisites_list'])
+  prereqs = Array(fm['prerequisites_list']).map { |p| resolve_liquid(p.to_s) }
   if prereqs.empty? && !fm['prerequisites'].to_s.strip.empty?
     text = fm['prerequisites'].to_s.strip
     prereqs = text.casecmp('none').zero? ? [] : [text]
   end
-  key_questions = Array(fm['key_questions'])
+  key_questions = Array(fm['key_questions']).map { |q| resolve_liquid(q.to_s) }
   duration = fm['duration'].to_s
   related_units = Array(fm['related_tools']) + Array(fm['datasets'])
 
@@ -227,7 +326,7 @@ module_paths.each do |path|
     if rubric_rows.empty?
       "- Use the rubric headings on the module page."
     else
-      rubric_rows.join("\n")
+      rubric_markdown(rubric_rows)
     end
 
   misconception_block =
@@ -450,7 +549,7 @@ module_paths.each do |path|
     ---
 
     ## Studio Activity
-    #{activity}
+    **Scenario:** #{scenario}
 
     ---
 
@@ -461,8 +560,7 @@ module_paths.each do |path|
 
     ---
 
-    ## Assessment Rubric
-    #{rubric_items}
+    #{rubric_deck}
 
     ---
 

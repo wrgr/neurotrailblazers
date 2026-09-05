@@ -43,8 +43,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/mouseconnects"
-  - "/datasets/workflow"
+  - "/datasets/mouseconnects/"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"

@@ -1,6 +1,6 @@
 ---
 # Primary site navigation items.
-# Canonical source for header/nav; _config.yml.navigation is a fallback mirror.
+# Canonical source for header/nav.
 #
 # The shape follows the site architecture: Core is the reference layer, Tracks
 # are the paths through it (topic axis) plus the modes of use (mode axis), and

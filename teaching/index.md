@@ -55,7 +55,7 @@ content_type: delivery
     <h2>Module Teaching Kits</h2>
     <p>Each card links to the lesson page, rendered slide deck, editable source, and activity worksheet.</p>
     <div class="cards-grid">
-      {% assign module_pages = site.modules | sort: "module_number" %}
+      {% assign module_pages = site.data.modules | sort: "number" %}
       {% for module in module_pages %}
         {% include cards/teaching-module-card.html module=module %}
       {% endfor %}

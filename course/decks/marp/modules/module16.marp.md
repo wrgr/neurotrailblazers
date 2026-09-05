@@ -82,7 +82,7 @@ Produce a figure set that communicates connectomics findings accurately, includi
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.
 
 ---
 

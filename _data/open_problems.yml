@@ -50,8 +50,8 @@ problems:
     anchor: problem-2
     onramp:
       - name: "Orient"
-        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-2), then [Synapse classification](/content-library/neuroanatomy/synapse-classification/) and skim [Unit 05](/technical-training/05-neuronal-ultrastructure/)."
-        done: "You can state the three EM criteria for calling a synapse without looking them up."
+        action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-2), then [Synapse detection](/content-library/infrastructure/synapse-detection/) for the method and [Synapse classification](/content-library/neuroanatomy/synapse-classification/) for the biology; skim [Unit 05](/technical-training/05-neuronal-ultrastructure/)."
+        done: "You can name the three separable tasks — cleft localisation, partner assignment, sign classification — and state the three EM criteria for calling a synapse without looking them up."
       - name: "Get data in hand"
         action: "Work through [Getting Started with Data](/datasets/getting-started/) to Level 3-lite: one small EM imagery cutout from a public volume, plus the CREMI ground-truth volumes (plain HTTP download, no account)."
         done: "You can open the cutout in Neuroglancer and scroll through sections without it feeling alien."
@@ -60,7 +60,7 @@ problems:
         done: "At least four of your five calls appear in the released table — or you can explain each disagreement."
       - name: "First measurement"
         action: "Load a CREMI volume with its annotations and compute synapse density per unit volume; compare against the same measurement in a MICrONS subvolume's synapse table."
-        done: "A density comparison with an honest paragraph on why the numbers differ (tissue? annotation protocol? detector?)."
+        done: "A density comparison with an honest paragraph on why the numbers differ, worked through the before-you-trust-a-synapse-table checklist — tissue? annotation protocol? detector?"
       - name: "Scope the semester"
         action: "Pick cross-dataset degradation study or ground-truth annotation (with agreement statistics) and write the half-page abstract."
         done: "If annotating: your protocol names the annotator count, the region, and the agreement statistic before anyone starts clicking."

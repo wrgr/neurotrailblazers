@@ -55,7 +55,7 @@ Content is tagged across 9 dimensions for flexible combination:
 
 Ultrastructural biology of neurons as seen in electron microscopy.
 
-[Browse 23 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=neuroanatomy' | relative_url }}) &rarr;
+[Browse the 160 neuroanatomy papers in the journal club]({{ '/technical-training/journal-club/?dimension=neuroanatomy' | relative_url }}) &rarr;
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -70,7 +70,7 @@ Ultrastructural biology of neurons as seen in electron microscopy.
 
 Quality control of automated segmentation at connectome scale.
 
-[Browse 78 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=proofreading' | relative_url }}) &rarr;
+[Proofreading and quality-control reading list]({{ '/content-library/journal-papers/proofreading/' | relative_url }}) &rarr; (the corpus has no separate proofreading dimension; proofreading papers sit under [pipeline]({{ '/technical-training/journal-club/?dimension=pipeline' | relative_url }}))
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -84,7 +84,7 @@ Quality control of automated segmentation at connectome scale.
 
 Graph analysis, motif search, and the bridge to NeuroAI.
 
-[Browse 207 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=connectomics' | relative_url }}) &rarr; (or [205 more tagged graph-analysis]({{ '/technical-training/journal-club/?dimension=graph-analysis' | relative_url }}))
+[Browse the 300 circuit-structure papers in the journal club]({{ '/technical-training/journal-club/?dimension=circuit-structure' | relative_url }}) &rarr; (or the curated [network analysis and statistics list]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}))
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -94,12 +94,13 @@ Graph analysis, motif search, and the bridge to NeuroAI.
 | [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) | DotMotif, null models, subgraph isomorphism, statistics | 09 |
 | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) | Structure-function, bio-inspired architectures, connectome-constrained models | 09 |
 | [Open problems for undergraduate teams]({{ '/content-library/connectomics/open-problems-undergrad/' | relative_url }}) | Seven open problem areas scoped for undergrad teams, tied to BRAIN CONNECTS bottlenecks | 01, 08, 09 |
+| [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) | H01's consent and provenance, de-identification in EM, portal licences and what they oblige, dual use, credit for proofreading labour | 01, 08 |
 
 ## Imaging
 
 EM acquisition, image formation, and artifact management.
 
-[Browse 230 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=image-acquisition' | relative_url }}) &rarr;
+[Browse the 160 volume-EM and optics papers in the journal club]({{ '/technical-training/journal-club/?dimension=imaging' | relative_url }}) &rarr;
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -112,19 +113,20 @@ EM acquisition, image formation, and artifact management.
 
 Reconstruction pipelines, data formats, and reproducibility.
 
-[Browse 107 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=infrastructure' | relative_url }}) &rarr;
+[Browse the 300 pipeline and software-engineering papers in the journal club]({{ '/technical-training/journal-club/?dimension=pipeline' | relative_url }}) &rarr;
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
 | [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) | Ingest, alignment, segmentation, agglomeration, serving | 04 |
 | [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) | Volumes, meshes, skeletons, graphs; when to use each | 02, 04 |
 | [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) | Lineage metadata, CAVE materialization, reproducible reprocessing | 04, 08 |
+| [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}) | Cleft localisation, partner assignment, E/I classification; CREMI and what it predicts; cross-dataset degradation; what to check before trusting a synapse table | 04, 05, 08 |
 
 ## Cell types
 
 Identification and classification of neuronal and glial cell types in EM.
 
-[Browse 22 related papers in the journal club]({{ '/technical-training/journal-club/?dimension=cell-types' | relative_url }}) &rarr;
+[Browse the 160 cell-type papers in the journal club]({{ '/technical-training/journal-club/?dimension=cell-types' | relative_url }}) &rarr;
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
@@ -161,17 +163,41 @@ A curated collection of **2,000 landmark connectomics papers** stratified across
 * Browse filterable cards by tier and expertise level: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 * Explore the interactive network: [Citation Graph Explorer]({{ '/technical-training/journal-club/graph/' | relative_url }})
 
-| Dimension / Domain | Share | Top 500 | Top 2,000 | Focus Area |
-| :--- | :---: | :---: | :---: | :--- |
-| [Circuit Structure &amp; Connectomes]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | 15% | 75 | 300 | Dense synaptic wiring diagrams, circuit motifs |
-| [Pipeline &amp; Software Engineering]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) | 15% | 75 | 300 | Automated 3D segmentation, synapse detection, CAVE |
-| [Physiological Validation &amp; Function]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 12% | 60 | 240 | In vivo 2-photon imaging, electrophysiology |
-| [Behaviour &amp; Circuit Dynamics]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 12% | 60 | 240 | Ring attractors, navigation, sensorimotor control |
-| [Volume EM &amp; Advanced Optics]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | 8% | 40 | 160 | SBF-SEM, FIB-SEM, multibeam arrays, tissue prep |
-| [Cell Types &amp; Morphological Census]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | 8% | 40 | 160 | Morphological clustering, synaptic fingerprints |
-| [Neuroanatomy &amp; Ultrastructure]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | 8% | 40 | 160 | Synaptic active zones, spine density, organelles |
-| [Synthesis, Theory &amp; Reviews]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 5% | 25 | 100 | Canonical field reviews, graph theory principles |
-| [Benchmark Datasets &amp; Repositories]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | 5% | 25 | 100 | FlyWire, MICrONS, H01, Kasthuri volumes |
-| [NeuroAI, Biophysics &amp; Models]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | 5% | 25 | 100 | Connectome-constrained artificial networks |
-| [Health, Disease &amp; Translation]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }}) | 5% | 25 | 100 | Nanoscale connectopathies, Alzheimer's, epilepsy |
-| [Workforce Training &amp; Outreach]({{ '/content-library/journal-papers/methodology/' | relative_url }}) | 2% | 10 | 40 | CIRCUIT traineeship, undergraduate pedagogy |
+### Where each corpus domain leads
+
+Every paper in the corpus carries one of twelve domain labels. The **domain name
+links to the journal club filtered to that domain** — that is the corpus itself,
+and it always works. The **reading list** column is a hand-annotated deep dive of
+8–10 papers where one exists for that domain, and says so plainly where one does
+not. The **library entry point** is the reference page on this site that covers
+the same ground in prose.
+
+Paper counts are the labels actually carried by the 2,000 shipped records, not
+the design allocation. The design allocation — the target share and tier split
+per domain — is on the
+[corpus hub]({{ '/content-library/journal-papers/' | relative_url }}).
+
+| Corpus domain | Papers | Curated reading list | Library entry point |
+| :--- | ---: | :--- | :--- |
+| [Circuit Structure &amp; Connectomes]({{ '/technical-training/journal-club/?dimension=circuit-structure' | relative_url }}) | 300 | [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) |
+| [Pipeline &amp; Software Engineering]({{ '/technical-training/journal-club/?dimension=pipeline' | relative_url }}) | 300 | [Data storage &amp; pipelines]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) · [Computer vision &amp; ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) · [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}) |
+| [Physiological Validation &amp; Function]({{ '/technical-training/journal-club/?dimension=physiology' | relative_url }}) | 242 | *None yet — the largest gap in the deep-dive set* | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) |
+| [Behaviour &amp; Circuit Dynamics]({{ '/technical-training/journal-club/?dimension=behaviour' | relative_url }}) | 240 | [Case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) |
+| [Volume EM &amp; Advanced Optics]({{ '/technical-training/journal-club/?dimension=imaging' | relative_url }}) | 160 | [Imaging &amp; sample preparation]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) |
+| [Cell Types &amp; Morphological Census]({{ '/technical-training/journal-club/?dimension=cell-types' | relative_url }}) | 160 | [Cell types &amp; morphology]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) |
+| [Neuroanatomy &amp; Ultrastructure]({{ '/technical-training/journal-club/?dimension=neuroanatomy' | relative_url }}) | 160 | [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}) |
+| [Synthesis, Theory &amp; Reviews]({{ '/technical-training/journal-club/?dimension=synthesis' | relative_url }}) | 142 | [Network analysis &amp; statistics]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | [Open problems for undergraduate teams]({{ '/content-library/connectomics/open-problems-undergrad/' | relative_url }}) |
+| [Benchmark Datasets &amp; Repositories]({{ '/technical-training/journal-club/?dimension=dataset' | relative_url }}) | 115 | [Datasets &amp; case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [Datasets catalogue]({{ '/datasets/' | relative_url }}) |
+| [NeuroAI, Biophysics &amp; Models]({{ '/technical-training/journal-club/?dimension=neuroai' | relative_url }}) | 100 | [NeuroAI &amp; computational modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) |
+| [Health, Disease &amp; Translation]({{ '/technical-training/journal-club/?dimension=health' | relative_url }}) | 42 | *None yet* | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) |
+| [Workforce Training &amp; Outreach]({{ '/technical-training/journal-club/?dimension=training-outreach' | relative_url }}) | 21 | *None yet* | [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) |
+
+Two labels sit outside the twelve: 16 papers classified `other`, and 2 classified
+`mri`. Macroscale connectivity is out of scope for a nanoscale corpus, which is
+why the count is 2 — but the curated
+[MRI &amp; meso-connectomics reading list]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }})
+(10 papers on diffusion MRI and tractography) exists for readers arriving from
+that side of the field. It is a bridge out of this library, not a route into it.
+
+How the corpus was selected, tiered and annotated is a separate question, and it
+has its own page: [How the paper collection is built]({{ '/content-library/journal-papers/methodology/' | relative_url }}).

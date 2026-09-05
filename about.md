@@ -2,20 +2,37 @@
 layout: page
 title: "About"
 permalink: /about/
-description: "What this site is, who it is for, how it fits the NIH BRAIN CONNECTS program, and how to reach us."
+description: "What NeuroTrailblazers is, who it is for, how it fits the HI-MC project and the NIH BRAIN CONNECTS program, and how to reach us."
 slug: about
 ---
 
 **{{ site.tagline | default: "Mapping connections. Making connections." }}**
 
-NeuroTrailblazers is an open curriculum and mentorship program for nanoscale
+NeuroTrailblazers is an open curriculum and mentorship initiative for nanoscale
 connectomics — the effort to map brains at the resolution of individual synaptic
 connections. The site is the curriculum: the pages, data, decks and worksheets are
 public, and anyone may teach from them.
 
 The double meaning in the line is the point. The field maps connections between
-neurons; the program makes connections between people — students, mentors and the
-research programs that need them.
+neurons; the program makes connections between people.
+
+## Who it is for
+
+Four audiences, in the same site, deliberately:
+
+- **Trailblazing researchers** — people doing the work now, who need a reference layer
+  they can trust and open problems scoped to a team.
+- **The scientific community** — neighbouring fields arriving with their own methods,
+  who need the vocabulary and the boundaries of what connectomics currently supports.
+- **The public** — anyone curious about how a brain gets mapped, served by
+  [The Neuronauts Expedition]({{ '/neuronauts/' | relative_url }}) and its
+  [Junior Lab]({{ '/neuronauts/kids/' | relative_url }}) for younger readers.
+- **Students** — from first-year undergraduates to graduate students crossing into the
+  field, who need an ordered path, graded artifacts and an honest account of what they
+  cannot yet claim.
+
+The [learner personas]({{ '/avatars/' | relative_url }}) put faces to the last of those,
+and the [tracks]({{ '/tracks/' | relative_url }}) say which path suits which reader.
 
 ## What is here
 
@@ -42,9 +59,9 @@ is the shortest route in.
 
 ## Where this sits in BRAIN CONNECTS
 
-NeuroTrailblazers is developed as part of the
+NeuroTrailblazers is developed inside the HI-MC (MouseConnects) project, part of the
 [NIH BRAIN Initiative](https://braininitiative.nih.gov/)'s **BRAIN CONNECTS** program.
-It is **not** a third data coordinating center:
+It is **not** a data coordinating center:
 
 > **IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the
 > learning.**
@@ -66,38 +83,29 @@ APEX.
 
 ## Who runs it
 
-The site is maintained by the {{ site.author }}.
+NeuroTrailblazers is part of **HI-MC**, the Center for High-throughput Integrative Mouse
+Connectomics — the BRAIN CONNECTS project also known as
+[MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }}), which is reconstructing
+10 mm³ of mouse hippocampal formation at synaptic resolution. HI-MC generates the science;
+NeuroTrailblazers is its training and outreach arm, and the curriculum is built so that
+what a learner practises here is what the project actually does.
 
-William Gray Roncal teaches the connectomics block (modules 7–9) of **EN.585.781
-Frontiers in Neuroengineering**, whose lecture decks are published here.
+**Contact:** Will Gray-Roncal, Johns Hopkins University —
+<a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+
+Will Gray-Roncal also teaches the connectomics block (lectures 7–9) of **EN.585.781
+Frontiers in Neuroengineering**, whose
+[decks are published here]({{ '/technical-training/slides/' | relative_url }}).
 
 <!--
-  ============================================================================
-  HUMAN INPUT REQUIRED — the only unfinished part of this page.
-
-  This section is deliberately a stub. The repository documents exactly one
-  named person in one named role (the EN.585.781 connectomics block, see
-  course/decks/marp/en585781/README.md); everything else about the team is
-  undocumented, and inventing names, titles, affiliations or bios would be a
-  fabrication on the page a stranger reads to find out who is behind the site.
-
-  Replace this comment with the real roster. For each person:
-
-    - Name (as they want it published)
-    - Role on NeuroTrailblazers (e.g. curriculum lead, technical units author,
-      facilitator, maintainer)
-    - Institutional affiliation
-    - One sentence, optional: what they work on
-
-  Also fill in, if applicable:
-    - The institution(s) hosting the program
-    - The BRAIN CONNECTS project NeuroTrailblazers is attached to, and its own
-      award number if it has one distinct from the IC3/APEX awards above
-    - Acknowledgements: contributors, reviewers, partner programs
-
-  When names land here, add them to CITATION.cff as author entries above the
-  "NeuroTrailblazers Team" entity entry.
-  ============================================================================
+  Still to fill in, when someone can supply it:
+    - The rest of the contributor roster: name, role on NeuroTrailblazers, affiliation.
+      Nobody else is documented anywhere in this repository, and inventing names on the
+      page a stranger reads to find out who is behind the site would be a fabrication.
+    - HI-MC's own NIH award number, if it should be published here alongside the IC3 and
+      APEX awards listed above.
+    - Acknowledgements: contributors, reviewers, partner programs.
+  When names land here, add them to CITATION.cff alongside the existing author entries.
 -->
 
 ## Contact
@@ -131,8 +139,8 @@ A machine-readable citation lives in
 [`CITATION.cff`](https://github.com/{{ site.github_username }}/neurotrailblazers/blob/main/CITATION.cff)
 at the repository root; GitHub will render a formatted citation from it. In text:
 
-> NeuroTrailblazers Team. *NeuroTrailblazers: an open curriculum for nanoscale
-> connectomics.* <{{ site.url }}/>
+> Gray-Roncal, W. and the NeuroTrailblazers Team. *NeuroTrailblazers: an open
+> curriculum for nanoscale connectomics.* <{{ site.url }}/>
 
 If you are citing one page rather than the site, add the page title and the date you
 read it — pages here are revised.

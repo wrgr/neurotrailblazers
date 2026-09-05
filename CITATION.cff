@@ -1,8 +1,8 @@
 # Citation File Format 1.2.0 — https://citation-file-format.github.io
 #
-# Individual contributors are not yet documented in this repository, so the
-# author is recorded as the team. When the About page lists named people, add
-# them here as `given-names` / `family-names` entries above the team entry.
+# The contributor roster is not fully documented yet. Add further named people
+# as `given-names` / `family-names` entries above the team entity entry as they
+# are confirmed on the About page.
 cff-version: 1.2.0
 message: "If you use NeuroTrailblazers material in teaching, training or research, please cite it as below."
 title: "NeuroTrailblazers: an open curriculum for nanoscale connectomics"
@@ -10,10 +10,15 @@ abstract: >-
   NeuroTrailblazers is an open curriculum and mentorship platform for nanoscale
   connectomics: nine technical units, 25 curriculum modules, a reference content
   library, learning tracks, and facilitator material. It is developed in the
-  context of the NIH BRAIN CONNECTS program, where IC3 and APEX organize and
-  expose the science and NeuroTrailblazers organizes the learning.
+  context of the HI-MC (MouseConnects) project of the NIH BRAIN CONNECTS program,
+  where IC3 and APEX organize and expose the science and NeuroTrailblazers organizes
+  the learning.
 type: software
 authors:
+  - given-names: "Will"
+    family-names: "Gray-Roncal"
+    affiliation: "Johns Hopkins University"
+    email: "wgr@jhu.edu"
   - name: "NeuroTrailblazers Team"
     website: "https://neurotrailblazers.org"
 url: "https://neurotrailblazers.org"

@@ -79,10 +79,13 @@ string returns nothing.
 
 **Done when:** `datasets/index.md` contains no dataset numbers as literals. *(Done.)*
 
-**Follow-up, still open:** add `_datasets/manc.md`, `_datasets/banc.md` and a larval
-zebrafish record. Each needs its numbers taken from the paper, not from memory. BANC
-currently appears nowhere on the site at all; MANC and larval zebrafish appear only in
-`technical-training/atlas-connectomics-reference.md`.
+- [x] **Follow-up, now done:** `_datasets/manc.md`, `_datasets/banc.md`, `_datasets/fanc.md`
+  and `_datasets/larval-zebrafish.md` added, sourced from the papers in this project's own
+  `_data/corpus_2000.json`. FANC carries its published counts (14,600 cell bodies, ~45 M
+  synapses, Azevedo et al. 2024). MANC, BANC and larval zebrafish deliberately carry **no**
+  neuron or synapse counts: the corpus abstracts do not state them, and each record says so
+  in its `source:` field rather than asserting a number it cannot cite. Anyone with the
+  papers to hand should fill those in. The catalogue now holds 18 datasets.
 
 ---
 

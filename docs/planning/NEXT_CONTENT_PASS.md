@@ -94,7 +94,7 @@ string returns nothing.
 **Done when:** a stranger can find out who made the site, on what terms they may reuse it, and how to tell someone it is wrong, within two clicks of any page.
 
 ### 2.2 One message, one name per thing (S–M)
-- [ ] Choose the site line. Recommended: **"Training the people who map the brain."** (short, true, names the mission rather than the method). Retire "Illuminating Pathways for Trailblazing Neuroscience Research(ers)" from title, footer, config.
+- [ ] Choose the site line. Recommended: **"Mapping connections. Making connections."** (see `docs/brand/BRAND_GUIDE.md` §2 for the alternatives). Retire "Illuminating Pathways for Trailblazing Neuroscience Research(ers)" from title, footer, config.
 - [ ] Choose the positioning sentence: "IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the learning." Move it from `core/connects-ecosystem.md` to the home page mission block and `about.md`.
 - [ ] Home hero: eyebrow, H1, body and mission should name the same audience in the same order (students → mentors → programs).
 - [ ] `start-here.md:4`: "computational neuroscience" → "nanoscale connectomics".

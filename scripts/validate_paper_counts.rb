@@ -12,6 +12,7 @@
 # This checks the claims that can be checked mechanically. It does not check
 # prose.
 
+require "json"
 require "yaml"
 require "pathname"
 
@@ -143,6 +144,59 @@ index_text.scan(/`([a-z-]+)`\s*\((\d+)\)/) do |dim, n|
 
   problems << "#{INDEX.relative_path_from(ROOT)}: says #{dim} has #{n} papers in the " \
               "corpus; the data file has #{data_dims[dim]}"
+end
+
+# ---------------------------------------------------------------------------
+# 5. Bibliographic fields must be real and must agree with the corpus.
+# ---------------------------------------------------------------------------
+# journal_papers.yml is derived from corpus_2000.json by
+# scripts/derive_journal_papers.py. Before September 2026 the generator shipped
+# every record with authors: '', a citation reading "NeuroTrailblazers Consortium
+# (YEAR). Title" -- attributing the whole field to this site -- and 818 years that
+# disagreed with the corpus, so the journal club sorted on wrong dates and put
+# 2011 papers in the "contemporary" era. Nothing caught it because every field
+# was present; they were merely wrong.
+CORPUS = ROOT.join("_data/corpus_2000.json")
+
+sample_ids = lambda do |rs|
+  ids = rs.map { |r| r["id"].to_s }.sort
+  "#{ids.first(5).join(', ')}#{ids.size > 5 ? ', ...' : ''}"
+end
+
+blank_authors = records.select { |r| r["authors"].to_s.strip.empty? }
+unless blank_authors.empty?
+  problems << "_data/journal_papers.yml: #{blank_authors.size} record(s) with no authors: " \
+              "#{sample_ids.call(blank_authors)}"
+end
+
+# A "Consortium" in the citation is the old template unless the paper's own
+# author list contains one (the MICrONS Consortium is a real first author).
+template_citation = records.select do |r|
+  r["citation"].to_s.match?(/\bConsortium\b/) && !r["authors"].to_s.match?(/\bConsortium\b/)
+end
+unless template_citation.empty?
+  problems << "_data/journal_papers.yml: #{template_citation.size} record(s) still carry the " \
+              "\"Consortium\" citation template: #{sample_ids.call(template_citation)}"
+end
+
+if CORPUS.exist?
+  corpus_by_doi = {}
+  JSON.parse(CORPUS.read(encoding: "UTF-8")).fetch("papers", []).each do |cp|
+    doi = cp["doi"].to_s.strip.downcase
+    corpus_by_doi[doi] = cp unless doi.empty?
+  end
+
+  year_drift = records.select do |r|
+    cp = corpus_by_doi[r["doi"].to_s.strip.downcase]
+    cp && cp["year"].to_i != r["year"].to_i
+  end
+  unless year_drift.empty?
+    problems << "_data/journal_papers.yml: #{year_drift.size} record(s) whose year disagrees " \
+                "with #{CORPUS.relative_path_from(ROOT)} for the same DOI: " \
+                "#{sample_ids.call(year_drift)}. Re-run scripts/derive_journal_papers.py."
+  end
+else
+  problems << "#{CORPUS.relative_path_from(ROOT)} is missing; cannot check years against the corpus"
 end
 
 # ---------------------------------------------------------------------------

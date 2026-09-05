@@ -19,9 +19,9 @@ The collection is structured into three strictly nested materializations:
 
 | Tier | Corpus Size | Primary Target Audience &amp; Role | Metadata Depth |
 | :--- | :---: | :--- | :--- |
-| **500 Key Papers** | **500 papers** | Curriculum flagships, course reading lists, seminar deep-dives | 100% full multi-paragraph abstracts, verified 5-part OCAR research cards, 3-level summaries, seminar discussion prompts |
-| **1000 Key Papers** | **1,000 papers** | Comprehensive scholarly survey, methods reference, subfield tracking | Full unabridged abstracts, complete OCAR cards, citation metrics (in/out degree, k-core), domain classifications, organism tags |
-| **2000 Key Papers** | **2,000 papers** | Global bibliometric network, citation lineage modeling, AI synthesis | Complete directed citation graph ($5,460+$ internal links), complete OCAR cards, author/venue metadata, facet views |
+| **500 Key Papers** | **500 papers** | Curriculum flagships, course reading lists, seminar deep-dives | Full abstract, complete author list, verified 5-part OCAR research cards, 3-level summaries, seminar discussion prompts |
+| **1000 Key Papers** | **1,000 papers** | Comprehensive scholarly survey, methods reference, subfield tracking | Full abstract, complete OCAR cards, citation metrics (in/out degree, k-core), domain classifications, organism tags |
+| **2000 Key Papers** | **2,000 papers** | Global bibliometric network, citation lineage modeling, AI synthesis | Complete directed citation graph ($5,460+$ internal links), complete OCAR cards, full abstract and author/venue metadata, facet views |
 
 ---
 
@@ -56,7 +56,9 @@ Candidate papers are classified into 12 mutually exclusive primary domains using
 
 ## 🃏 What Each Record Carries
 
-* **Bibliographic Identity**: Title, complete author list, publication year, venue/journal, clean lowercase DOI.
+* **Bibliographic Identity**: Title, complete author list as published (`authors`, names separated by `; `), publication year, full venue/journal name, clean lowercase DOI, and a plain-text citation in the form *First-author surname et al. (year). Title. Journal. DOI URL* (two authors are written *Surname & Surname*). These fields are re-derived from the corpus record with the same DOI by `scripts/derive_journal_papers.py`; the validator `scripts/validate_paper_counts.rb` fails if any record ships without authors, with a placeholder citation, or with a year that disagrees with the corpus.
+* **Abstract**: The published abstract (`abstract`), present on all 2,000 records. Most are single paragraphs; structured or multi-paragraph abstracts keep their paragraph breaks.
+* **Era**: `inclusion_role` is assigned from the publication year -- `history` (up to 2018), `contemporary` (2019--2023), `sota` (2024 onward) -- and drives the era filter on the journal club page.
 * **OCAR Structure**:
   * **Opportunity**: Scientific/technological opening addressed.
   * **Challenge**: Key bottlenecks, scale limits, or biological ambiguities.

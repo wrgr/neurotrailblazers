@@ -25,6 +25,12 @@ content_type: core
 </section>
 
 <section class="section section-compact">
+  <p><strong>Using this corpus?</strong> The curation, the OCAR cards and the discussion prompts are
+  NeuroTrailblazers material under CC BY 4.0 &mdash; see <a href="{{ '/about/#cite-this-site' | relative_url }}">how to cite this site</a>.
+  The papers themselves are the property of their publishers; each card links out to the source.</p>
+</section>
+
+<section class="section section-compact">
   <p>Browse the canonical connectomics literature across {{ jc_dims.size }} research domains and 3 nested tiers. Use this page to survey what exists, filter by domain/organism/era, or follow the citation graph between papers. For an interactive network visualization with self-organizing organic force physics and AI synthesis prompts, explore the graph below:</p>
   <p><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="jc-graph-cta" style="background:#1a56db; color:#fff; padding:0.6rem 1.2rem; border-radius:6px; text-decoration:none; font-weight:700; display:inline-block; margin-top:0.4rem;">Explore the Interactive Citation Graph &rarr;</a></p>
 </section>

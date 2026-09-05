@@ -60,8 +60,6 @@ content_type: core
     </ul>
   </section>
 
-  {% include ui/learning-tracks.html title="Tools Across Learning Tracks" intro="Tools support technical method-building, applied research execution, and mentorship/professional navigation." %}
-
   <section class="section">
     <div class="cards-grid">
       {% assign sorted_pages = site.pages | sort: "title" %}

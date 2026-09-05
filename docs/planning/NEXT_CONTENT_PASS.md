@@ -113,8 +113,8 @@ string returns nothing.
 
 ### 2.3 Collapse the frameworks / models triplication (M)
 - [x] Merge `frameworks/index.md`, `models.md` and `education/models.md` into one `/models/` page with MERIT, Professional Pathways and CCR as sections. *(The operational playbook from `education/models.md` became `/models/`; the summary page it duplicated is gone.)*
-- [ ] Redirect the other seven paths; delete the five existing redirect stubs that pointed into the old structure.
-- [ ] Remove the six pasted `ui/learning-tracks.html` blocks from pages where they are filler (`avatars/index.md`, `tools/index.md`, `frameworks/index.md`, `models.md`, `education/models.md`, `datasets/index.md`).
+- [x] Redirect the other seven paths; delete the five existing redirect stubs that pointed into the old structure. *(Stubs kept, not deleted: `_includes/ui/related-content.html` generates `/frameworks/<slug>/` URLs from `related_frameworks` front matter, so they are load-bearing. All seven now point at `/models/`, and twelve pages were repointed to link there directly rather than hop through a redirect.)*
+- [x] Remove the six pasted `ui/learning-tracks.html` blocks from pages where they are filler (`avatars/index.md`, `tools/index.md`, `frameworks/index.md`, `models.md`, `education/models.md`, `datasets/index.md`). *(Two went with the merge; the other four removed. The include had no remaining callers and was deleted — the tracks are in the nav and on `/tracks/`.)*
 
 ### 2.4 Navigation and tools (S)
 - [x] Add `/modes/`, `/concepts/`, `/kb/` and the ecosystem page to the nav (Tracks and Core dropdowns respectively).

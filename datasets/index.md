@@ -48,8 +48,6 @@ content_type: core
     </div>
   </section>
 
-  {% include ui/learning-tracks.html title="How Datasets Fit the Tracks" intro="Datasets power all three tracks: concept-building, hands-on research practice, and professional growth through authentic scientific context." %}
-
   <section class="section">
     <h2>Guides to working with the data</h2>
     <p>These are how-to pages, not datasets. Start here if you have chosen a volume and now

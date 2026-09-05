@@ -226,4 +226,3 @@ where that workshop is designed to land.
 - [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) — session-level practice, including differentiation across personas
 - [Learning tracks]({{ '/tracks/' | relative_url }}) — how the four dimensions map onto curriculum
 
-{% include ui/learning-tracks.html title="Educational Models Across Tracks" intro="These models help instructors support learners in technical methods, research execution, and professional growth." %}

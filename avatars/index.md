@@ -27,8 +27,6 @@ content_type: core
     </p>
   </section>
 
-  {% include ui/learning-tracks.html title="Persona Support Across Tracks" intro="Personas help map individual needs to technical learning, applied research practice, and professional development support." %}
-
   <section class="section">
     <div class="cards-grid">
       {% assign sorted_pages = site.pages | sort: "title" %}

@@ -141,6 +141,10 @@ exclude:
   - course/decks/marp/en585781
   - course/decks/0*.md
   - course/decks/atlas-connectomics-reference.md
+  # Internal reviews, planning boards and the brand guide. Working documents,
+  # not pages; publishing them would add unstyled duplicates of the planning
+  # material that otherwise lives on holding/internal-planning.
+  - docs
 
 # Fix for Jekyll SCSS encoding issues
 encoding: utf-8

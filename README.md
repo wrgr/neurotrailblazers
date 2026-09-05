@@ -24,6 +24,8 @@ working in nanoscale connectomics. This repository contains the source for the
 | Path | What it holds |
 |---|---|
 | `_data/` | Site data: the connectomics dictionary, concepts, track catalog, module and journal-paper metadata, expert seed papers. |
+| `assets/brand/` | Brand assets: CSS tokens, the vector mark, wordmark and lockups, social card, and the PowerPoint slide template. The Marp equivalent is `course/decks/marp/theme/neurotrailblazers.css` with `neurotrailblazers-template.marp.md`. See `docs/brand/BRAND_GUIDE.md`. |
+| `docs/` | Working documents, excluded from the build: the site content review (`docs/reviews/`), the next-pass work plan (`docs/planning/NEXT_CONTENT_PASS.md`) and the brand guide (`docs/brand/`). |
 | `course/` | Source material and Marp deck sources; `course/decks/marp/out/` holds rendered HTML and PPTX decks. |
 | `scripts/` | Generators and validators (see below). |
 | `assets/` | Styles, images, notebooks, slides, and generated worksheets. |

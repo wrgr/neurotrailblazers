@@ -1,12 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="NeuroTrailblazers mark, one colour">
   <title>NeuroTrailblazers mark, one colour</title>
   <rect width="64" height="64" rx="14" fill="#10303f"/>
-  <g fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M13 53 C 20 41, 27 35, 35 29 C 40 25, 44 21, 47 17"/>
-    <path d="M33 30.5 C 29 26, 25 23, 19 20"/>
-    <path d="M40 25 C 44 29, 48 35, 51 42"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 60 C 28 56, 42 46, 58 24" stroke-width="7"/>
+    <path d="M33.5 50.5 L 30 43" stroke-width="3.5"/>
+    <path d="M23 57 L 21.5 51" stroke-width="3"/>
+    <path d="M47 39 L 51 33" stroke-width="3"/>
+    <path d="M6 7 C 9 22, 19 27, 29.5 27.5" stroke-width="4"/>
   </g>
-  <circle cx="19" cy="20" r="2.6" fill="#ffffff"/>
-  <circle cx="51" cy="42" r="2.6" fill="#ffffff"/>
-  <circle cx="47.5" cy="16.5" r="5.6" fill="#ffffff" stroke="#10303f" stroke-width="2.5"/>
+  <circle cx="29.2" cy="40.2" r="3.6" fill="#ffffff"/>
+  <circle cx="21" cy="48.5" r="2.8" fill="#ffffff"/>
+  <circle cx="52" cy="31" r="2.8" fill="#ffffff"/>
+  <circle cx="36.5" cy="30.5" r="7" fill="#ffffff" stroke="#10303f" stroke-width="2"/>
+  <circle cx="34.6" cy="28.6" r="1.25" fill="#10303f"/><circle cx="38.4" cy="28.2" r="1.25" fill="#10303f"/><circle cx="36.8" cy="32.4" r="1.25" fill="#10303f"/><circle cx="33.6" cy="32" r="1.1" fill="#10303f"/>
 </svg>

@@ -230,8 +230,8 @@ syn = client.materialize.synapse_query(post_ids=[root_id],
 <!-- _class: closing -->
 <!-- _paginate: skip -->
 
-# Thank you
+# Mapping connections. Making connections.
 
 Questions, corrections and pull requests: **neurotrailblazers.org** · github.com/wrgr/neurotrailblazers
 
-Supported by the NIH BRAIN CONNECTS program.
+Supported by the NIH BRAIN CONNECTS program. Content CC BY 4.0 unless noted.

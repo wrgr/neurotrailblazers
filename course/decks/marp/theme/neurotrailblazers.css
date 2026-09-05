@@ -73,7 +73,11 @@ section::after {
 }
 section footer {
   left: 64px;
-  bottom: 20px;
+  bottom: 18px;
+  padding-left: 28px;
+  min-height: 20px;
+  line-height: 20px;
+  background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64' role='img' aria-label='NeuroTrailblazers mark'%3E %3Crect width='64' height='64' rx='14' fill='%2310303f'/%3E %3Cg fill='none' stroke='%23e6f2f3' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M12 60 C 28 56, 42 46, 58 24' stroke-width='7'/%3E %3Cpath d='M33.5 50.5 L 30 43' stroke-width='3.5'/%3E %3Cpath d='M23 57 L 21.5 51' stroke-width='3'/%3E %3Cpath d='M47 39 L 51 33' stroke-width='3'/%3E %3Cpath d='M6 7 C 9 22, 19 27, 29.5 27.5' stroke-width='4'/%3E %3C/g%3E %3Ccircle cx='29.2' cy='40.2' r='3.6' fill='%23e6f2f3'/%3E %3Ccircle cx='21' cy='48.5' r='2.8' fill='%23e6f2f3'/%3E %3Ccircle cx='52' cy='31' r='2.8' fill='%23e6f2f3'/%3E %3Ccircle cx='36.5' cy='30.5' r='7' fill='%23e8820c' stroke='%2310303f' stroke-width='2'/%3E %3Ccircle cx='34.6' cy='28.6' r='1.25' fill='%2310303f'/%3E%3Ccircle cx='38.4' cy='28.2' r='1.25' fill='%2310303f'/%3E%3Ccircle cx='36.8' cy='32.4' r='1.25' fill='%2310303f'/%3E%3Ccircle cx='33.6' cy='32' r='1.1' fill='%2310303f'/%3E %3C/svg%3E ") no-repeat left center / 20px 20px;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 16px;
@@ -270,7 +274,8 @@ section.dark h3, section.section h3 { color: var(--nt-teal-light); }
 section.title a, section.section a, section.dark a, section.closing a { color: var(--nt-teal-light); }
 section.title::after, section.section::after, section.dark::after, section.closing::after,
 section.title footer, section.section footer, section.dark footer, section.closing footer,
-section.title header, section.dark header { color: var(--nt-teal-light); opacity: 0.8; }
+section.title header, section.dark header { color: var(--nt-teal-light); opacity: 0.9; }
+section.title footer, section.section footer, section.dark footer, section.closing footer { background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64' role='img' aria-label='NeuroTrailblazers mark, reversed'%3E %3Crect width='64' height='64' rx='14' fill='%23e6f2f3'/%3E %3Cg fill='none' stroke='%2310303f' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M12 60 C 28 56, 42 46, 58 24' stroke-width='7'/%3E %3Cpath d='M33.5 50.5 L 30 43' stroke-width='3.5'/%3E %3Cpath d='M23 57 L 21.5 51' stroke-width='3'/%3E %3Cpath d='M47 39 L 51 33' stroke-width='3'/%3E %3Cpath d='M6 7 C 9 22, 19 27, 29.5 27.5' stroke-width='4'/%3E %3C/g%3E %3Ccircle cx='29.2' cy='40.2' r='3.6' fill='%2310303f'/%3E %3Ccircle cx='21' cy='48.5' r='2.8' fill='%2310303f'/%3E %3Ccircle cx='52' cy='31' r='2.8' fill='%2310303f'/%3E %3Ccircle cx='36.5' cy='30.5' r='7' fill='%23e8820c' stroke='%23e6f2f3' stroke-width='2'/%3E %3Ccircle cx='34.6' cy='28.6' r='1.25' fill='%23e6f2f3'/%3E%3Ccircle cx='38.4' cy='28.2' r='1.25' fill='%23e6f2f3'/%3E%3Ccircle cx='36.8' cy='32.4' r='1.25' fill='%23e6f2f3'/%3E%3Ccircle cx='33.6' cy='32' r='1.1' fill='%23e6f2f3'/%3E %3C/svg%3E "); }
 section.dark li::marker { color: var(--nt-amber); }
 section.dark code { background: var(--nt-ink-2); border-color: var(--nt-ink-2); color: var(--nt-mist); }
 section.dark table th { background: var(--nt-ink-2); color: var(--nt-paper); border-color: var(--nt-teal); }
@@ -284,7 +289,7 @@ section.title {
   justify-content: flex-end;
   padding-bottom: 96px;
   background-image:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><g fill='none' stroke='%230f6b73' stroke-opacity='0.55' stroke-width='14' stroke-linecap='round'><path d='M-40 760 C 200 560, 520 470, 760 380 C 920 320, 1040 250, 1140 150'/><path d='M700 400 C 620 350, 560 315, 470 280'/><path d='M880 330 C 950 380, 1000 440, 1040 540'/><path d='M1000 240 C 1090 260, 1180 320, 1330 440'/></g><circle cx='1142' cy='148' r='26' fill='%23e8820c'/></svg>");
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720' width='1280' height='720' role='img' aria-label='NeuroTrailblazers synapse motif'%3E %3Crect width='1280' height='720' fill='%2310303f'/%3E %3Cg fill='none' stroke='%230f6b73' stroke-opacity='0.9' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M-60 560 C 160 540, 420 470, 700 380 C 900 316, 1060 240, 1240 90' stroke-width='22' stroke-opacity='0.55'/%3E %3Cpath d='M300 505 L 318 462' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='322' cy='452' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M520 442 L 545 405' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='550' cy='395' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M760 345 L 745 305' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='741' cy='294' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M960 292 L 990 258' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='996' cy='248' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M1300 640 C 1100 610, 900 560, 760 470 C 720 445, 700 420, 700 400' stroke-width='12' stroke-opacity='0.45'/%3E %3Cpath d='M1320 320 C 1200 300, 1120 280, 1040 262' stroke-width='12' stroke-opacity='0.45'/%3E %3C/g%3E %3Ccircle cx='1012' cy='238' r='26' fill='%23e8820c'/%3E %3Ccircle cx='1004' cy='232' r='4' fill='%2310303f'/%3E%3Ccircle cx='1018' cy='229' r='4' fill='%2310303f'/%3E%3Ccircle cx='1015' cy='245' r='4' fill='%2310303f'/%3E%3Ccircle cx='1002' cy='245' r='3.5' fill='%2310303f'/%3E %3Ccircle cx='718' cy='376' r='22' fill='%230f6b73' fill-opacity='0.75'/%3E %3Cg stroke='%23bfe3e4' stroke-opacity='0.22' stroke-width='2' fill='%23bfe3e4' fill-opacity='0.35'%3E %3Cpath d='M120 80 L 260 130 M260 130 L 380 70 M260 130 L 300 250 M120 80 L 60 200 M60 200 L 300 250 M380 70 L 520 150 M520 150 L 300 250' fill='none'/%3E %3Ccircle cx='120' cy='80' r='7'/%3E%3Ccircle cx='260' cy='130' r='9'/%3E%3Ccircle cx='380' cy='70' r='6'/%3E%3Ccircle cx='300' cy='250' r='8'/%3E%3Ccircle cx='60' cy='200' r='5'/%3E%3Ccircle cx='520' cy='150' r='6'/%3E %3C/g%3E %3C/svg%3E ");
   background-size: 1280px 720px;
   background-repeat: no-repeat;
 }
@@ -329,7 +334,12 @@ section.stat .stats .big { font-size: 110px; }
 section.stat .stats p { font-size: 22px; }
 
 /* Closing: dark, mark bottom-right via the same motif */
-section.closing { justify-content: center; }
+section.closing {
+  justify-content: center;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720' width='1280' height='720' role='img' aria-label='NeuroTrailblazers synapse motif'%3E %3Crect width='1280' height='720' fill='%2310303f'/%3E %3Cg fill='none' stroke='%230f6b73' stroke-opacity='0.9' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpath d='M-60 560 C 160 540, 420 470, 700 380 C 900 316, 1060 240, 1240 90' stroke-width='22' stroke-opacity='0.55'/%3E %3Cpath d='M300 505 L 318 462' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='322' cy='452' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M520 442 L 545 405' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='550' cy='395' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M760 345 L 745 305' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='741' cy='294' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M960 292 L 990 258' stroke-width='10' stroke-opacity='0.55'/%3E%3Ccircle cx='996' cy='248' r='14' fill='%230f6b73' fill-opacity='0.55' stroke='none'/%3E %3Cpath d='M1300 640 C 1100 610, 900 560, 760 470 C 720 445, 700 420, 700 400' stroke-width='12' stroke-opacity='0.45'/%3E %3Cpath d='M1320 320 C 1200 300, 1120 280, 1040 262' stroke-width='12' stroke-opacity='0.45'/%3E %3C/g%3E %3Ccircle cx='1012' cy='238' r='26' fill='%23e8820c'/%3E %3Ccircle cx='1004' cy='232' r='4' fill='%2310303f'/%3E%3Ccircle cx='1018' cy='229' r='4' fill='%2310303f'/%3E%3Ccircle cx='1015' cy='245' r='4' fill='%2310303f'/%3E%3Ccircle cx='1002' cy='245' r='3.5' fill='%2310303f'/%3E %3Ccircle cx='718' cy='376' r='22' fill='%230f6b73' fill-opacity='0.75'/%3E %3Cg stroke='%23bfe3e4' stroke-opacity='0.22' stroke-width='2' fill='%23bfe3e4' fill-opacity='0.35'%3E %3Cpath d='M120 80 L 260 130 M260 130 L 380 70 M260 130 L 300 250 M120 80 L 60 200 M60 200 L 300 250 M380 70 L 520 150 M520 150 L 300 250' fill='none'/%3E %3Ccircle cx='120' cy='80' r='7'/%3E%3Ccircle cx='260' cy='130' r='9'/%3E%3Ccircle cx='380' cy='70' r='6'/%3E%3Ccircle cx='300' cy='250' r='8'/%3E%3Ccircle cx='60' cy='200' r='5'/%3E%3Ccircle cx='520' cy='150' r='6'/%3E %3C/g%3E %3C/svg%3E ");
+  background-size: 1280px 720px;
+  background-repeat: no-repeat;
+}
 section.closing h1 { font-size: 64px; }
 section.closing p { font-size: 26px; color: var(--nt-teal-light); }
 

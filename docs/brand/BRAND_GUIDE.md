@@ -26,13 +26,25 @@ thing. What it retires: the neural-blue / cerebral-purple / axon-cyan palette in
 wordmark is for the logo only. Never "Neuro Trailblazers", "NeuroTrailBlazers" or "NTB"
 in public copy; "NT" is acceptable as a file prefix.
 
-**Line.** Recommended: **"Training the people who map the brain."**
-It names the mission (people, not platform), is true, and survives a footer. The current
-line, "Illuminating Pathways for Trailblazing Neuroscience Research(ers)", should be
-retired: the parenthetical is a hedge, and the site currently carries eleven different
-one-line descriptions of itself. Positioning sentence for About and funders, already on
-the site: *"IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the
-learning."*
+**Line.** Recommended: **"Mapping connections. Making connections."**
+The double meaning is exact: the field maps synaptic connections; the program makes
+connections between people and research. Four words, and it says both halves of the
+mission. Keep "Training the people who map the brain" as the one-sentence description
+beneath it where a longer line is needed. The current line, "Illuminating Pathways for
+Trailblazing Neuroscience Research(ers)", should be retired: the parenthetical is a hedge,
+and the site currently carries eleven different one-line descriptions of itself.
+
+Alternatives considered:
+
+| Line | Why not first |
+|---|---|
+| Activating connections, in brains and between people. | Closest to the brief; "activating" is what neurons do, so it reads as jargon to outsiders |
+| Every connection counts. | Catchy, but generic enough to belong to a bank |
+| Connecting people to the connectome. | True, but the object is the map rather than the people |
+| Where connections form. | Quiet; works as a section eyebrow, not a tagline |
+
+Positioning sentence for About and funders, already on the site: *"IC3 and APEX organize
+and expose the science. NeuroTrailblazers organizes the learning."*
 
 **Voice.** The content standard in `docs/CONTENT_REVIEW.md` is also the brand voice:
 
@@ -54,7 +66,7 @@ Derived from the banner. Contrast ratios are WCAG 2.1 against the surface named.
 | `--nt-teal-deep` | `#0B5259` | Hover and pressed | 8.9:1 on white |
 | `--nt-teal-light` | `#BFE3E4` | Tints, chips, table header on dark | 10.1:1 for ink text |
 | `--nt-mist` | `#E6F2F3` | Pale panel and quiet-slide background (the banner sky) | 12.1:1 for ink text |
-| `--nt-amber` Signal Amber | `#E8820C` | **One accent per surface, fills only.** The trail marker. | 2.8:1 on white: **not for text on light** |
+| `--nt-amber` Signal Amber | `#E8820C` | **One accent per surface, fills only.** The bouton on the mark. | 2.8:1 on white: **not for text on light** |
 | `--nt-amber-deep` | `#B4600A` | Amber when it must be text on light | 4.6:1 on white |
 | `--nt-amber-light` | `#FDECD6` | Warning callout tint | — |
 | `--nt-paper` / `--nt-surface` | `#FFFFFF` / `#F5F8F8` | Page and card backgrounds | — |
@@ -63,7 +75,7 @@ Derived from the banner. Contrast ratios are WCAG 2.1 against the surface named.
 | `--nt-good` / `--nt-warn` | `#1C6B43` / `#A8410A` | Semantic only | 6.5:1 / 6.1:1 on white |
 
 **Proportions.** Ink and the neutrals carry 70% of any surface, teal 20%, amber under 5%
-and usually a single element: the node at the end of the trail, a pill, one callout. If
+and usually a single element: the bouton on the mark, a pill, one callout. If
 two things on a page are amber, one of them is wrong.
 
 **Dark surfaces** (title slides, section dividers, footer, social card) are ink with mist
@@ -96,27 +108,41 @@ alone is tracked +1%.
 
 ## 5. The mark
 
-**Concept.** A branching trail seen as a dendrite, with a single amber node where the
-trail ends: the marker a trailblazer leaves. It reads as neuron, path and waypoint at
-once, holds at 16 px, and needs no gradient.
+**Concept.** A synapse. A spiny dendrite runs along the bottom of the tile; an axon
+arrives from the top-left and ends in a bouton, drawn in amber, with four vesicles inside
+it; a thin cleft separates the bouton from the spine head it contacts. Anyone who has
+looked at an electron micrograph reads it at once; anyone who has not still sees a path
+arriving at a bright point of contact. It is the one thing connectomics is about, and it
+is the tagline drawn: a connection being made. It holds at 16 px, where it reads as axon,
+bouton and dendrite, and needs no gradient.
+
+The first draft (a branching path with a node) was retired because it was generic enough
+to belong to any network or navigation product.
 
 | File | Use |
 |---|---|
-| `nt-mark.svg` | Primary: mist trail on ink tile. Favicon, app icon, avatars, slide corner |
-| `nt-mark-reversed.svg` | Ink trail on mist tile, for dark backgrounds |
-| `nt-mark-mono.svg` | One colour, for print and embossing |
-| `nt-wordmark.svg` / `-reversed.svg` | Outlined Barlow Condensed Bold, no font dependency |
+| `nt-mark.svg` | Primary: mist neurites and amber bouton on ink tile. Favicon, app icon, avatars, slide footer |
+| `nt-mark-reversed.svg` | Ink neurites on mist tile, for dark backgrounds |
+| `nt-mark-mono.svg` | One colour, for print and embossing (vesicles in ink) |
+| `nt-wordmark.svg` / `-reversed.svg` | Outlined Barlow Condensed Bold with kerning, no font dependency |
 | `nt-lockup-horizontal.svg` / `-reversed.svg` | Mark + wordmark, for headers and title slides |
 | `nt-lockup-stacked.svg` / `-reversed.svg` | Square-ish contexts: social avatars, posters |
 | `nt-favicon.svg` | Same as the mark; add a 32 px PNG for old browsers |
-| `nt-social-card.svg` | 1200 × 630 Open Graph image |
+| `nt-social-card.svg` | 1200 × 630 Open Graph image, carries the motif and the tagline |
+| `nt-motif-synapse.svg` | 1280 × 720 background scene for title and closing slides |
+
+**The motif.** The larger scene used behind title slides, closing slides and the social
+card extends the mark: one dendrite with four spines crossing the frame, two axons
+arriving, one lit amber synapse and one quiet teal one, and a faint node-and-edge graph in
+the upper left for the connectome the synapses add up to. It is a ground, not an
+illustration: keep it at the shipped opacity and put text over the quiet regions.
 
 **Rules.**
 
-- Clear space around any lockup is the height of the mark's amber node on all sides.
+- Clear space around any lockup is the diameter of the bouton on all sides.
 - Minimum size: mark 16 px; horizontal lockup 120 px wide; stacked lockup 72 px wide.
-- The mark always sits on its tile. Do not place the bare trail on a photograph.
-- Do not recolour the node. Amber is the one place amber is guaranteed to appear.
+- The mark always sits on its tile. Do not place the bare neurites on a photograph.
+- Do not recolour the bouton. Amber is the one place amber is guaranteed to appear.
 - Do not rotate, outline, add a drop shadow, or set the wordmark in any other face.
 - The banner illustration (`assets/images/neurotrailblazers-banner.jpg`) stays as the
   hero image; it is not a logo and should not appear on every page's header.
@@ -213,7 +239,7 @@ assets/brand/
   nt-wordmark.svg  nt-wordmark-reversed.svg
   nt-lockup-horizontal.svg  nt-lockup-horizontal-reversed.svg
   nt-lockup-stacked.svg  nt-lockup-stacked-reversed.svg
-  nt-social-card.svg
+  nt-social-card.svg  nt-motif-synapse.svg
   NeuroTrailblazers-slide-template.pptx
 course/decks/marp/theme/neurotrailblazers.css
 course/decks/marp/neurotrailblazers-template.marp.md

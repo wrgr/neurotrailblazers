@@ -55,9 +55,38 @@ page is the argument behind those bullets: what the task is, what has been
 tried, what the published numbers are, and what you have to measure before you
 are entitled to use somebody else's synapse table.
 
-This is the site's own [open problem 2]({{ '/open-problems/' | relative_url }}),
-treated here as a method rather than as biology. For what a synapse looks like
-and how to recognise one by eye, see
+## Start here: this is a solved problem with three residuals
+
+Read the rest of this page in that order, because the framing matters for how
+much of your project's budget belongs here.
+
+**Within a volume you have ground truth for, cleft detection is solved.** SynEM
+reports 97% precision and recall on the *connectome* — the thing you actually
+publish — even while sitting at 88% per individual synapse, because errors on
+single contacts wash out once contacts are aggregated into connections. H01's
+pipeline detected 149.9 million synapses at a 3.2% / 2.7% false-discovery rate.
+No modern project fails because it cannot find clefts.
+
+Three residuals are real, and they are what this page is about:
+
+1. **Recall is not symmetric.** H01's detector missed 11% of excitatory and
+   **35%** of inhibitory synapses. Aggregation rescues precision, not recall, and
+   an inhibitory deficit distorts every E/I ratio computed from the table.
+2. **Partner assignment is weaker than localisation**, and much weaker where
+   synapses are polyadic. Buhmann et al. report F1 from 0.59 to 0.73 across four
+   areas *of the same fly brain*.
+3. **Transfer is the operational cost.** A detector trained on one volume does
+   not move to another without new ground truth — which is why the site's open
+   problem is titled ["Synapse detection that generalizes"]({{ '/open-problems/' | relative_url }})
+   rather than "synapse detection". As of 2025 the cross-dataset benchmarks say
+   this is still open.
+
+So the honest budget line is not "we must solve synapse detection". It is: run
+the established detector, then spend your effort establishing what its recall
+and partner accuracy are *in your region*, and report the table's provenance.
+Section 7 is that checklist.
+
+For what a synapse looks like and how to recognise one by eye, see
 [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}).
 
 ---

@@ -5,12 +5,11 @@ permalink: /content-library/connectomics/ethics-and-governance/
 image: /assets/images/content-library/connectomics/ethics-and-governance.svg
 image_alt: "Stylized vector art: a network graph with one community circled."
 description: >
-  The reference facts behind connectomics ethics: where H01's human tissue came
-  from and under what consent, what is and is not identifiable in an electron
-  microscopy volume, what each major portal's data licence actually obliges a
-  reuser to do, how dual-use arguments apply to a field with no pathogens, and
-  the four credit models in use for the thousands of hours of human proofreading
-  behind every published connectome.
+  Connectomics has no current human-subjects problem: its human data is
+  discarded surgical tissue and nothing published identifies anyone. What is live
+  now is licence compliance and credit for proofreading labour; what is
+  prospective — consent framings at whole-brain scale, de-identification, neural-data
+  regulation, dual use — is set out here as a discussion rather than a checklist.
 topics:
   - research ethics
   - informed consent
@@ -43,12 +42,35 @@ content_type: core
 
 # Ethics and Governance
 
-Connectomics is the only branch of nanoscale neuroscience whose flagship human
-dataset is a piece of a living person's brain, whose flagship invertebrate
-dataset was corrected by tens of thousands of hours of volunteer labour, and
-whose outputs are redistributed under at least three incompatible licences.
-None of that is abstract. Each of it decides what you may claim, what you may
-redistribute, and whose name goes on the paper.
+**Start with the honest assessment: connectomics does not currently have a
+human-subjects problem.** Its flagship human dataset is discarded surgical
+tissue that was going to be removed regardless, reviewed under the same
+frameworks that govern any human-tissue study. Nothing in this field asks a
+person to undergo a procedure for research, and nothing published so far
+identifies anyone. If you came here expecting a controversy, there isn't one to
+report.
+
+Two things are nonetheless live **now**, and they are practical rather than
+philosophical:
+
+- **Licence obligations** (§3). Three major portals redistribute under
+  incompatible terms, and a reuser who ignores them is simply in breach.
+- **Credit for proofreading labour** (§5). Tens of thousands of hours of human
+  correction sit behind every published connectome, and how that work is
+  credited decides real careers. This is the one section of this page about
+  people who are affected today.
+
+The rest is **prospective**, and worth discussing precisely because it is not yet
+urgent. Consent framings written for a cubic millimetre of discarded tissue
+(§1) were not written for whole-brain human volumes, for datasets that become
+machine-learning corpora, or for a regulatory environment now drafting rules
+about "neural data" (UNESCO adopted the first global standard in November 2025).
+De-identification (§2) is a non-issue at today's volumes and an open question at
+tomorrow's. Dual-use arguments (§4) are weak for a field with no pathogens and
+should be stated at their real strength, not inflated.
+
+Treat the prospective sections as a seminar, not a compliance checklist. The
+right time to reason about them is before a project needs the answer.
 
 This page holds the **facts**. The decisions you make with them — how to review
 a manuscript, how to write an authorship policy, how to raise a concern — are

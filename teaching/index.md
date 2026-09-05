@@ -27,7 +27,7 @@ content_type: delivery
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
       <a href="{{ '/modules/slides/' | relative_url }}" class="btn btn-secondary">Browse Slide Pages</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
-      <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course Hub</a>
+      <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
     </div>
   </section>
 

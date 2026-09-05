@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: "Maya - The Bridge Builder"
+title: "Maya, graduate student"
 role: Graduate Student
 permalink: /avatars/gradstudent/
 slug: gradstudent

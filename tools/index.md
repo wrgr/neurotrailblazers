@@ -46,6 +46,20 @@ content_type: core
     pipeline you are standing in.</p>
   </section>
 
+  <section class="section">
+    <h2 class="section-title left">Interactive on this site</h2>
+    <p>These run in the browser, here, with no account and no install.</p>
+    <ul>
+      <li><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Citation graph explorer</a> &mdash; the 2,000-paper corpus as a citation network, filterable by dimension, era and tier.</li>
+      <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; the same corpus as cards, each with an OCAR summary and discussion prompts.</li>
+      <li><a href="{{ '/concepts/' | relative_url }}">Concept explorer</a> &mdash; concepts filtered by track and stage, each linked to where it is taught.</li>
+      <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualisations of the literature and the methods landscape.</li>
+      <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, each with a typical value and the confusion it usually causes.</li>
+      <li><a href="{{ '/modules/' | relative_url }}">Module practice labs</a> &mdash; the retrieval-practice check at the foot of each module page.</li>
+      <li><a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab quiz</a> &mdash; for younger readers and classrooms.</li>
+    </ul>
+  </section>
+
   {% include ui/learning-tracks.html title="Tools Across Learning Tracks" intro="Tools support technical method-building, applied research execution, and mentorship/professional navigation." %}
 
   <section class="section">

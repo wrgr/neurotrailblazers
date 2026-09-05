@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: "Julian - First-Generation Undergraduate"
+title: "Julian, first-generation undergraduate"
 role: Undergraduate Student
 permalink: /avatars/undergradstudent/
 slug: undergradstudent
@@ -8,8 +8,8 @@ track: career-and-community
 pathways:
   - professional growth
   - hidden curriculum
-description: "Meet Julian, a first-generation college student discovering the world of computational neuroscience and finding his path in research."
-summary: "First-generation undergraduate exploring computational neuroscience while building research confidence and technical skills."
+description: "Meet Julian, a first-generation college student finding his way into connectomics research."
+summary: "First-generation undergraduate exploring connectomics while building research confidence and technical skills."
 student_name: "Julian Rodriguez"
 education_level: "Undergraduate Sophomore"
 background: "First-generation college student"
@@ -39,7 +39,7 @@ content_type: core
   <div class="hero-content">
     <div class="avatar-header">
       <div>
-        <h1>Julian, Undergraduate Student</h1>
+        <h1>{{ page.title }}</h1>
       </div>
     </div>
   </div>

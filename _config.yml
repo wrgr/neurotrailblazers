@@ -1,6 +1,10 @@
 # NeuroTrailblazers - Jekyll Configuration
 title: "NeuroTrailblazers"
-description: "Illuminating Pathways for Trailblazing Neuroscience Research(ers) - A curriculum and mentorship platform for nanoscale connectomics discovery"
+description: "Mapping connections. Making connections. Training the people who map the brain: an open curriculum and mentorship program for nanoscale connectomics, in the NIH BRAIN CONNECTS program."
+
+# The site line. One place, so it cannot drift again; see docs/brand/BRAND_GUIDE.md §2.
+tagline: "Mapping connections. Making connections."
+tagline_sentence: "Training the people who map the brain."
 baseurl: ""
 url: "https://neurotrailblazers.org"
 

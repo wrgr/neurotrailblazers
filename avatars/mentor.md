@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: "Dr. Linh Nguyen - The Vision Builder"
+title: "Dr. Linh Nguyen, assistant professor"
 role: Assistant Professor
 permalink: /avatars/mentor/
 slug: mentor

@@ -27,7 +27,7 @@ content_type: core
   <section class="section" style="margin-bottom: 3rem;">
     <div class="section-header">
       <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-        <span>🎮</span> 1. Citizen Science &amp; Crowdsourced Mapping
+        <span><span aria-hidden="true">🎮</span></span> 1. Citizen Science &amp; Crowdsourced Mapping
       </h2>
       <p style="color: #475569; font-size: 0.95rem;">Empowering hundreds of thousands of non-specialists and students to reconstruct neural circuits alongside top research institutes.</p>
     </div>
@@ -86,7 +86,7 @@ content_type: core
   <section class="section" style="margin-bottom: 3rem;">
     <div class="section-header">
       <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-        <span>🎓</span> 2. Student &amp; Workforce Training Programs
+        <span><span aria-hidden="true">🎓</span></span> 2. Student &amp; Workforce Training Programs
       </h2>
       <p style="color: #475569; font-size: 0.95rem;">Preparing high schoolers, undergraduates, postbacs, and early-career scientists for authentic computational neuroscience research.</p>
     </div>
@@ -95,7 +95,7 @@ content_type: core
       
       <!-- NeuroTrailblazers -->
       <div class="card" style="border: 2px solid #10b981; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <h3 style="margin: 0 0 0.5rem 0; color: #047857; font-size: 1.15rem;">🧠 NeuroTrailblazers (NIH BRAIN CONNECTS)</h3>
+        <h3 style="margin: 0 0 0.5rem 0; color: #047857; font-size: 1.15rem;"><span aria-hidden="true">🧠</span> NeuroTrailblazers (NIH BRAIN CONNECTS)</h3>
         <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
           A research-incubator training network supporting students and mentors across the BRAIN CONNECTS ecosystem. Provides an open technical curriculum (Units 01–09), a 2,000-paper OCAR literature graph, 25 teaching session kits, and hands-on capstone pathways.
         </p>
@@ -107,7 +107,7 @@ content_type: core
 
       <!-- Janelia Junior Fellowships -->
       <div class="card" style="border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <h3 style="margin: 0 0 0.5rem 0; color: #1e293b; font-size: 1.15rem;">🔬 Janelia Undergraduate &amp; Visiting Scientist Programs</h3>
+        <h3 style="margin: 0 0 0.5rem 0; color: #1e293b; font-size: 1.15rem;"><span aria-hidden="true">🔬</span> Janelia Undergraduate &amp; Visiting Scientist Programs</h3>
         <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
           HHMI Janelia Research Campus offers intensive summer undergraduate research programs and visiting scientist fellowships. Scholars work directly with FlyEM and Project Technical Teams on FIB-SEM acquisition, proofreading, and machine learning segmentation.
         </p>
@@ -116,7 +116,7 @@ content_type: core
 
       <!-- MBL Woods Hole -->
       <div class="card" style="border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <h3 style="margin: 0 0 0.5rem 0; color: #1e293b; font-size: 1.15rem;">🌊 MBL Woods Hole Neurobiology Summer Course</h3>
+        <h3 style="margin: 0 0 0.5rem 0; color: #1e293b; font-size: 1.15rem;"><span aria-hidden="true">🌊</span> MBL Woods Hole Neurobiology Summer Course</h3>
         <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
           The Marine Biological Laboratory's legendary neurobiology immersion course at Woods Hole, MA. Features hands-on modules in ultrastructural electron microscopy, electrophysiology, and connectomics graph theory.
         </p>
@@ -130,7 +130,7 @@ content_type: core
   <section class="section" style="margin-bottom: 3rem;">
     <div class="section-header">
       <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-        <span>🌐</span> 3. Open Data Ecosystems &amp; Community Portals
+        <span><span aria-hidden="true">🌐</span></span> 3. Open Data Ecosystems &amp; Community Portals
       </h2>
       <p style="color: #475569; font-size: 0.95rem;">Cloud-native platforms hosting petabytes of open volumetric data for worldwide access.</p>
     </div>
@@ -138,21 +138,21 @@ content_type: core
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1.5rem;">
       
       <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://bossdb.org" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">💾 bossDB (JHU APL) &rarr;</a></h4>
+        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://bossdb.org" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;"><span aria-hidden="true">💾</span> bossDB (JHU APL) &rarr;</a></h4>
         <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0;">
           The Brain Observatory Storage Service and Database. Cloud-native spatial database serving petabytes of volumetric EM, X-ray, and light microscopy data for the NIH BRAIN Initiative.
         </p>
       </div>
 
       <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://neuprint.janelia.org/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🕸️ neuPrint (Janelia) &rarr;</a></h4>
+        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://neuprint.janelia.org/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;"><span aria-hidden="true">🕸️</span> neuPrint (Janelia) &rarr;</a></h4>
         <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0;">
           Graph database portal allowing researchers to search neurons by cell type, find direct upstream/downstream synaptic partners, and analyze connectivity matrices with Cypher queries.
         </p>
       </div>
 
       <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://www.nwb.org/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">📊 Neurodata Without Borders (NWB) &rarr;</a></h4>
+        <h4 style="margin: 0 0 0.35rem 0; font-size: 1rem;"><a href="https://www.nwb.org/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;"><span aria-hidden="true">📊</span> Neurodata Without Borders (NWB) &rarr;</a></h4>
         <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0;">
           Community data standard for neurophysiology, enabling seamless co-registration of structural connectomes with in vivo optical and electrical recordings.
         </p>
@@ -163,11 +163,11 @@ content_type: core
 
   <!-- Navigation Footer -->
   <section class="section" style="margin-top: 2rem; border-top: 2px solid #e2e8f0; padding-top: 1.5rem;">
-    <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 1rem;">🔗 Next Steps &amp; Related Training</h3>
+    <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 1rem;"><span aria-hidden="true">🔗</span> Next Steps &amp; Related Training</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-      <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}" class="btn btn-primary" style="font-size: 0.82rem;">🔍 EM Proofreading Tutorials &rarr;</a>
-      <a href="{{ '/initiatives/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;">🏛️ Major Initiatives &amp; Global Consortia</a>
-      <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;">🕸️ Citation Graph Explorer</a>
+      <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}" class="btn btn-primary" style="font-size: 0.82rem;"><span aria-hidden="true">🔍</span> EM Proofreading Tutorials &rarr;</a>
+      <a href="{{ '/initiatives/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;"><span aria-hidden="true">🏛️</span> Major Initiatives &amp; Global Consortia</a>
+      <a href="{{ '/technical-training/journal-club/graph/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;"><span aria-hidden="true">🕸️</span> Citation Graph Explorer</a>
     </div>
   </section>
 

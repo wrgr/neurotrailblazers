@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Start Here - Your Journey into Nanoscale Connectomics"
-description: "Begin your adventure in computational neuroscience with our structured pathway through nanoscale connectomics research and discovery."
+title: "Start Here"
+description: "Choose a path through nanoscale connectomics: what to read, what to build, and in what order, whether you are starting out or already in a lab."
 permalink: /start-here/
 track: career-and-community
 pathways:
@@ -140,16 +140,16 @@ content_type: navigation
 
         <div class="cards-grid">
             <a href="{{ '/avatars/undergradstudent/' | relative_url }}" class="avatar-card avatar-card-blue">
-                <h3>Julian: Undergraduate Student</h3>
+                <h3>Julian, first-generation undergraduate</h3>
             </a>
             <a href="{{ '/avatars/gradstudent/' | relative_url }}" class="avatar-card avatar-card-purple">
-                <h3>Maya: Graduate Student</h3>
+                <h3>Maya, graduate student</h3>
             </a>
             <a href="{{ '/avatars/researcher/' | relative_url }}" class="avatar-card avatar-card-cyan">
-                <h3>Amir: Researcher</h3>
+                <h3>Amir, AI scientist</h3>
             </a>
             <a href="{{ '/avatars/mentor/' | relative_url }}" class="avatar-card avatar-card-orange">
-                <h3>Dr. Nguyen: Mentor/PI</h3>
+                <h3>Dr. Linh Nguyen, assistant professor</h3>
             </a>
         </div>
 
@@ -215,17 +215,17 @@ content_type: navigation
         <p>Two things a page cannot give you, and where to find them:</p>
         <div class="cards-grid">
             <div class="card">
-                <div class="card-icon">&#128172;</div>
+                <div class="card-icon" aria-hidden="true">&#128172;</div>
                 <h3>A technical answer</h3>
                 <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask-an-Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
             </div>
             <div class="card">
-                <div class="card-icon">&#128100;</div>
+                <div class="card-icon" aria-hidden="true">&#128100;</div>
                 <h3>Calibration against other people</h3>
                 <p>You cannot calibrate your own judgment alone. The units' drills are built to be run with a partner, and comparing calls with one other person is worth more than three rounds of self-review. A journal club or a community proofreading effort supplies the same thing at larger scale.</p>
             </div>
             <div class="card">
-                <div class="card-icon">&#128218;</div>
+                <div class="card-icon" aria-hidden="true">&#128218;</div>
                 <h3>Depth on a specific topic</h3>
                 <p>The <a href="{{ '/content-library/' | relative_url }}">content library</a> holds the long-form reference material behind every unit &mdash; instructor-level detail on ultrastructure, imaging, proofreading metrics, and analysis, with worked examples and reading lists.</p>
             </div>

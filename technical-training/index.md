@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Technical Training: Nanoscale Connectomics"
+title: "Technical Course"
 description: "Canonical open connectomics course focused on technical skills from imaging to NeuroAI."
 permalink: /technical-training/
 slug: technical-training
@@ -19,8 +19,8 @@ content_type: navigation
   {% assign concepts_base = '/concepts/' | relative_url %}
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
-      <h1 class="hero-title-impact">Technical Training: Nanoscale Connectomics</h1>
-      <p class="hero-subtitle">The canonical technical connectomics track, designed to complement the broader NeuroTrailblazers site.</p>
+      <h1 class="hero-title-impact">Technical Course</h1>
+      <p class="hero-subtitle">Nine units in nanoscale connectomics, from why we map the brain through imaging, reconstruction, proofreading and analysis. Each ends in a graded artifact.</p>
     </div>
   </div>
 

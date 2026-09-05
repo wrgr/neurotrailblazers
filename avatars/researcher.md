@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: "Amir - The Translator"
+title: "Amir, AI scientist"
 role: AI Scientist
 permalink: /avatars/researcher/
 slug: researcher

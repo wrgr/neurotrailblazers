@@ -112,7 +112,7 @@ string returns nothing.
 - [ ] Persona names: one form in front matter, H1 and start-here cards ("Julian, first-generation undergraduate").
 
 ### 2.3 Collapse the frameworks / models triplication (M)
-- [ ] Merge `frameworks/index.md`, `models.md` and `education/models.md` into one `/models/` page with MERIT, Professional Pathways and CCR as sections.
+- [x] Merge `frameworks/index.md`, `models.md` and `education/models.md` into one `/models/` page with MERIT, Professional Pathways and CCR as sections. *(The operational playbook from `education/models.md` became `/models/`; the summary page it duplicated is gone.)*
 - [ ] Redirect the other seven paths; delete the five existing redirect stubs that pointed into the old structure.
 - [ ] Remove the six pasted `ui/learning-tracks.html` blocks from pages where they are filler (`avatars/index.md`, `tools/index.md`, `frameworks/index.md`, `models.md`, `education/models.md`, `datasets/index.md`).
 

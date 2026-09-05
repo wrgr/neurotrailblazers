@@ -108,7 +108,7 @@ it.
 
 **Mentor by improvisation, or mentor by design?** Maya mentors an
 undergraduate and is not sure her guidance counts as anything more than
-availability. The [models-in-practice playbook]({{ '/education/models/' | relative_url }})
+availability. The [models-in-practice playbook]({{ '/models/' | relative_url }})
 gives her a design: her mentee is in MERIT stage 3, where the failure modes
 are symmetric — support withdrawn too fast reads as personal inadequacy,
 support withdrawn too slowly produces dependence — and the signal to watch is

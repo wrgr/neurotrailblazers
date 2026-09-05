@@ -477,5 +477,5 @@ proofreading effort, and doing so is a study decision rather than a social one.
 - [Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) — stopping rules, borrowed here
 - [Start Here]({{ '/start-here/' | relative_url }}) — the attempt-before-revealing rule
 - [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
-- [Education Models]({{ '/frameworks/education-models/' | relative_url }}) — meta-learning as one of the four dimensions
+- [Education Models]({{ '/models/' | relative_url }}) — meta-learning as one of the four dimensions
 - [Learner personas]({{ '/avatars/' | relative_url }})

@@ -32,7 +32,7 @@ and credit they never claimed.
 
 ## Why this is a fairness problem and not an etiquette guide
 
-The site's [education models]({{ '/education/models/' | relative_url }}) page puts it
+The site's [education models]({{ '/models/' | relative_url }}) page puts it
 directly: these are not soft skills appended to technical training. They are the
 operating knowledge that determines whether technical training converts into a career,
 and **making them explicit is a fairness intervention as much as a training one**.
@@ -161,7 +161,7 @@ Practical moves:
   Principles]({{ '/modules/module21/' | relative_url }}) — its "hidden curriculum
   scaffold" section is the model these pages follow: *what senior reviewers expect but
   rarely state*.
-- [Education models]({{ '/education/models/' | relative_url }}) — MERIT stage 2 is
+- [Education models]({{ '/models/' | relative_url }}) — MERIT stage 2 is
   where this material belongs in a mentoring relationship, and the Professional
   Pathways table lists the questions each page here answers.
 - [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) — session

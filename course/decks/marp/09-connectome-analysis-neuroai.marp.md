@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "09 Connectome Analysis and NeuroAI"
 paginate: true
+footer: "Unit 09 · Connectome analysis and NeuroAI"
 ---
 
+<!-- _class: title -->
 # 09 Connectome Analysis and NeuroAI
 Technical Training: Nanoscale Connectomics
 
@@ -24,54 +27,63 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Motivation and framing
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png)
 - Structure can constrain models; it does not automatically explain intelligence.
 
 ---
 
+<!-- _class: figure -->
 ## Representation framing
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png)
 - Define representation before inference.
 
 ---
 
+<!-- _class: figure -->
 ## Limits of reverse engineering claims
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png)
 - Teach boundary statements as required output.
 
 ---
 
+<!-- _class: figure -->
 ## Analysis workflow overview
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S13-01.png)
 Hypothesis -> Query -> Search -> Null comparison -> Interpretation -> Reproducibility package
 
 ---
 
+<!-- _class: figure -->
 ## Motif search context
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S24-01.png)
 - Distinguish candidate motifs from validated mechanisms.
 
 ---
 
+<!-- _class: figure -->
 ## Query language and reproducibility
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S42-01.png)
 - Human-readable queries reduce hidden assumptions.
 
 ---
 
+<!-- _class: figure -->
 ## Complexity constraints and feasibility
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S31-01.png)
 - Computational limits are part of methodological validity.
 
 ---
 
+<!-- _class: figure -->
 ## Historical benchmark caution
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S32-01.png)
 - Use old benchmark values as context, not current truth.
 
 ---
 
+<!-- _class: figure -->
 ## Comparative analysis caveats
 ![w:920](../../../assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png)
 - Cross-dataset claims require aligned preprocessing and null assumptions.

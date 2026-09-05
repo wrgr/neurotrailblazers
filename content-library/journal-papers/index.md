@@ -54,22 +54,29 @@ Welcome to the **NeuroTrailblazers Curated Literature Corpus** — a multi-tiere
 
 ## 📊 Stratified Literature Taxonomy (12 Canonical Domains)
 
-The corpus is curated using strict decision-order classification and stratified allocation to ensure balanced coverage across experimental, computational, biological, and pedagogical axes:
+The corpus was built to a stratified allocation, so that no single axis &mdash;
+experimental, computational, biological, pedagogical &mdash; could crowd out the others.
+The **target** column is that design; the **in the corpus** column is what the shipped
+data actually contains, counted from `_data/journal_papers.yml` at build time rather than
+typed here.
 
-| Category / Research Domain | Share | Top 500 | Top 1,000 | Top 2,000 | Core Research Focus |
-| :--- | :---: | :---: | :---: | :---: | :--- |
-| **Circuit Structure &amp; Connectomes** | **15.0%** | 75 | 150 | 300 | Dense synaptic wiring diagrams, circuit motifs, connectivity graphs |
-| **Pipeline &amp; Software Engineering** | **15.0%** | 75 | 150 | 300 | Automated 3D segmentation, synapse detection, proofreading (CAVE/CATMAID) |
-| **Physiological Validation &amp; Function** | **12.0%** | 60 | 120 | 240 | In vivo 2-photon imaging, electrophysiology, structure-function mapping |
-| **Behaviour &amp; Circuit Dynamics** | **12.0%** | 60 | 120 | 240 | Ring attractors, navigation, sensory-motor control, escape behavior |
-| **Volume EM &amp; Advanced Optics** | **8.0%** | 40 | 80 | 160 | SBF-SEM, FIB-SEM, multibeam arrays, tissue prep, expansion microscopy |
-| **Cell Types &amp; Morphological Census** | **8.0%** | 40 | 80 | 160 | Morphological clustering, synaptic fingerprints, multi-modal cell types |
-| **Neuroanatomy &amp; Ultrastructure** | **8.0%** | 40 | 80 | 160 | Synaptic active zones, spine density, organelle distributions, glia |
-| **Synthesis, Theory &amp; Reviews** | **5.0%** | 25 | 50 | 100 | Canonical field reviews, graph theory principles, conceptual frameworks |
-| **Benchmark Datasets &amp; Repositories** | **5.0%** | 25 | 50 | 100 | Open petascale public volumes (FlyWire, MICrONS, H01, Kasthuri) |
-| **NeuroAI, Biophysics &amp; Models** | **5.0%** | 25 | 50 | 100 | Connectome-constrained artificial networks, biophysical simulations |
-| **Health, Disease &amp; Translation** | **5.0%** | 25 | 50 | 100 | Nanoscale connectopathies, Alzheimer's, Huntington's, epilepsy rewiring |
-| **Workforce Training &amp; Outreach** | **2.0%** | 10 | 20 | 40 | CIRCUIT traineeship, undergraduate pedagogy, EyeWire citizen science |
+{% assign rows = "circuit-structure|Circuit Structure &amp; Connectomes|15.0%|300|Dense synaptic wiring diagrams, circuit motifs, connectivity graphs;;pipeline|Pipeline &amp; Software Engineering|15.0%|300|Automated 3D segmentation, synapse detection, proofreading (CAVE/CATMAID);;physiology|Physiological Validation &amp; Function|12.0%|240|In vivo 2-photon imaging, electrophysiology, structure-function mapping;;behaviour|Behaviour &amp; Circuit Dynamics|12.0%|240|Ring attractors, navigation, sensory-motor control, escape behaviour;;imaging|Volume EM &amp; Advanced Optics|8.0%|160|SBF-SEM, FIB-SEM, multibeam arrays, tissue prep, expansion microscopy;;cell-types|Cell Types &amp; Morphological Census|8.0%|160|Morphological clustering, synaptic fingerprints, multi-modal cell types;;neuroanatomy|Neuroanatomy &amp; Ultrastructure|8.0%|160|Synaptic active zones, spine density, organelle distributions, glia;;synthesis|Synthesis, Theory &amp; Reviews|5.0%|100|Canonical field reviews, graph theory principles, conceptual frameworks;;dataset|Benchmark Datasets &amp; Repositories|5.0%|100|Open petascale public volumes (FlyWire, MICrONS, H01, Kasthuri);;neuroai|NeuroAI, Biophysics &amp; Models|5.0%|100|Connectome-constrained artificial networks, biophysical simulations;;health|Health, Disease &amp; Translation|5.0%|100|Nanoscale connectopathies, Alzheimer's, Huntington's, epilepsy rewiring;;training-outreach|Workforce Training &amp; Outreach|2.0%|40|Traineeship design, undergraduate pedagogy, citizen science" | split: ";;" %}
+
+| Research domain | Share | Target | In the corpus | Core research focus |
+| :--- | :---: | :---: | :---: | :--- |
+{% for row in rows -%}
+{%- assign f = row | split: "|" -%}
+{%- assign n = site.data.journal_papers.papers | where: "dimension", f[0] | size -%}
+| [**{{ f[1] }}**]({{ '/technical-training/journal-club/' | relative_url }}?dimension={{ f[0] }}) | {{ f[2] }} | {{ f[3] }} | {{ n }} | {{ f[4] }} |
+{% endfor %}
+
+{% assign allocated = 0 %}{% for row in rows %}{% assign f = row | split: "|" %}{% assign n = site.data.journal_papers.papers | where: "dimension", f[0] | size %}{% assign allocated = allocated | plus: n %}{% endfor %}{% assign unallocated = site.data.journal_papers.papers.size | minus: allocated %}
+
+**Where the two columns differ, the corpus is the truth.** Retrieval found more
+synthesis and benchmark-dataset literature than the allocation anticipated, and less on
+health and translation and on workforce training &mdash; which is a finding about the
+field's published output, not a curation error to correct. A further **{{ unallocated }}**
+papers carry a label outside these domains and are not counted above.
 
 ---
 

@@ -95,7 +95,7 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs.
 
 ---
 
@@ -107,17 +107,28 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Claims map to explicit evidence with figure panel references.
 - Legends contain enough detail for independent interpretation.
 - Methods include dataset version, pipeline, and key parameters.
 - Reviewer responses are specific and technically grounded.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Clearly separates robust findings from tentative interpretations using calibrated language.
 - Uses limitation language without weakening valid conclusions.
 - Improves reproducibility via concrete method-detail additions.
 - Reviewer responses include evidence and specific manuscript revision locations.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Narrative claims that cannot be traced to figures.
 - Missing dataset/method versioning in captions or methods.
 - Reviewer replies that are persuasive but non-technical.

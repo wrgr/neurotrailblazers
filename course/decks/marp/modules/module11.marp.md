@@ -94,7 +94,7 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 ---
 
@@ -106,17 +106,28 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - The motif count table reports observed, expected, and z-score for every motif class examined, not only the enriched ones.
 - At least one motif carries a complete evidence chain: detection method, count, null comparison, and interpretation, in that order.
 - Each claim in the circuit logic brief is paired with an explicit caveat stating what it does not prove.
 - The synapse threshold and data version used to build the subgraph are stated in the brief.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Every enriched motif has at least one non-functional alternative explanation (spatial proximity, cell-type composition, reconstruction error) named and, where possible, tested.
 - A second null model or a stratified analysis is applied to at least one motif, with the change in effect size reported.
 - Synapse-level evidence — compartment targeting, Gray type — is used to subdivide or qualify at least one motif class rather than treating graph edges as interchangeable.
 - Sensitivity to reconstruction quality is quantified: the headline count is re-run at a second synapse threshold or across proofreading versions, and the difference is reported.
-- **Common failure to flag**
+
+---
+
+## Assessment Rubric
+**Common failure to flag**
+
 - Motif claim without error-awareness — treating every enriched pattern as a functional circuit without considering artifacts or spatial confounds.
 - Functional language ("this circuit gates," "this loop amplifies") presented as a finding rather than as a consistency statement.
 - Enrichment reported against a single weak null with no statement of what it fails to control.

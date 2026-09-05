@@ -121,8 +121,18 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Valid skeleton and descriptor set for all 10 neurons, with at least 3 descriptors each.
+  - Every classification carries a stated evidence chain, not just a label.
+  - At least one explicit measurement limitation named, tied to a specific reconstruction issue.
 - **Strong performance**
+  - Descriptors partitioned into robust versus reconstruction-sensitive for each borderline cell.
+  - Mismatches between morphological and synapse-based calls traced to a root cause (truncation, split, spurious branches) rather than logged as disagreement.
+  - Per-cell completeness estimated and reported next to every absolute measurement.
+  - Ratios computed on contained compartments wherever truncation is present.
 - **Common failure to flag**
+  - Descriptor list without biological context — numbers with no statement of what they mean for identity.
+  - Classification from a single descriptor when the others disagree.
+  - Absolute cable length or arbor volume reported for truncated cells without a lower-bound qualifier.
 
 **My self-assessment:**
 

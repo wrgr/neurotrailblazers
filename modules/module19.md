@@ -44,8 +44,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/workflow"
-  - "/datasets/mouseconnects"
+  - "/datasets/workflow/"
+  - "/datasets/mouseconnects/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/mentor"
@@ -216,7 +216,7 @@ Each student submits their structured review form and decision memo. Instructor 
 
 ## Teaching resources
 - Review practice context: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
-- Workflow integrity context: [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- Workflow integrity context: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - QC context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - Mentorship/escalation context: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
 
@@ -235,7 +235,7 @@ Each student submits their structured review form and decision memo. Instructor 
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [H01 dataset](https://h01-release.storage.googleapis.com/landing.html)
 - [FlyWire](https://flywire.ai/)
-- [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 
 ### Competency checks
 - Can you identify one overclaim in a connectomics abstract and rewrite it with evidence boundaries?

@@ -43,8 +43,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/mouseconnects"
-  - "/datasets/workflow"
+  - "/datasets/mouseconnects/"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/researcher"
@@ -243,7 +243,7 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
 ### Key datasets to practice on
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [FlyWire](https://flywire.ai/)
-- [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 
 ### Competency checks
 - Can you point each conclusion to a specific figure/metric pair?

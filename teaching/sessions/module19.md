@@ -108,8 +108,19 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass**
+  - Review comments are specific and evidence-linked (referencing figure panels, methods details, or specific sentences).
+  - Ethics risks are identified with concrete mitigations tied to workflow practices.
+  - Recommendation is consistent with documented findings.
 - **Strong performance**
+  - Distinguishes fixable technical issues from fundamental validity failures.
+  - Balances rigor with constructive tone and practical revision advice.
+  - Uses transparent criteria for authorship/integrity judgments.
+  - Anticipates author responses and pre-addresses potential objections.
 - **Common failure modes**
+  - Generic critique with no evidence references ("the statistics are weak").
+  - Ethics discussion disconnected from actual workflow practices.
+  - Inconsistent recommendation versus identified risks (e.g., listing major concerns but recommending accept with minor revisions).
+  - Destructive tone that undermines the credibility of valid criticisms.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

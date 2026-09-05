@@ -1,0 +1,50 @@
+/*
+ * NeuroTrailblazers brand tokens.
+ * Single source of truth for color, type, radius and shadow. Import this
+ * before site-styles.css and reference the --nt-* variables; the legacy
+ * --neural-blue / --cerebral-purple / --axon-cyan tokens are retired and
+ * should be migrated to these (see docs/brand/BRAND_GUIDE.md, "Migration").
+ */
+:root {
+  /* Core palette — derived from the banner illustration */
+  --nt-ink: #10303f;          /* Trail Ink: text, dark surfaces, wordmark */
+  --nt-ink-2: #1e4656;        /* Ink, one step lighter: secondary headings on light */
+  --nt-teal: #0f6b73;         /* Trail Teal: primary action, links, active state */
+  --nt-teal-deep: #0b5259;    /* hover / pressed */
+  --nt-teal-light: #bfe3e4;   /* tints, selected rows, chips */
+  --nt-mist: #e6f2f3;         /* pale panel background (banner sky) */
+  --nt-amber: #e8820c;        /* Signal Amber: one accent per surface, fills only */
+  --nt-amber-deep: #b4600a;   /* amber as text (AA on white) */
+  --nt-amber-light: #fdecd6;  /* amber tint */
+
+  /* Neutrals */
+  --nt-paper: #ffffff;
+  --nt-surface: #f5f8f8;
+  --nt-border: #d8e1e3;
+  --nt-muted: #55697a;        /* secondary text, captions (AA on white) */
+
+  /* Semantic */
+  --nt-good: #1c6b43;
+  --nt-warn: #a8410a;
+
+  /* Layer colors for the site map (core / path / delivery / quest) */
+  --nt-layer-core: var(--nt-teal);
+  --nt-layer-core-tint: var(--nt-mist);
+  --nt-layer-path: var(--nt-amber-deep);
+  --nt-layer-path-tint: var(--nt-amber-light);
+  --nt-layer-delivery: var(--nt-ink-2);
+  --nt-layer-delivery-tint: #e3ebef;
+  --nt-layer-quest: #0b7285;
+  --nt-layer-quest-tint: #e0f4f8;
+
+  /* Type */
+  --nt-font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif-condensed, sans-serif;
+  --nt-font-body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --nt-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Shape */
+  --nt-radius: 10px;
+  --nt-radius-lg: 18px;
+  --nt-shadow: 0 2px 12px rgba(16, 48, 63, 0.08);
+  --nt-shadow-lg: 0 8px 32px rgba(16, 48, 63, 0.12);
+}

@@ -8,7 +8,7 @@ surfaces:
   - slug: content-library
     title: Content library
     url: /content-library/
-    size: "45 entries across 8 topic areas"
+    size: "33 entries across 7 topic areas"
     icon: "\U0001F4DA"
     summary: >-
       Long-form reference documents at instructor depth: neuroanatomy,
@@ -30,7 +30,7 @@ surfaces:
   - slug: journal-club
     title: Journal club
     url: /technical-training/journal-club/
-    size: "191 papers with discussion prompts"
+    size: "2,000 papers with discussion prompts (tiered 500 / 1,000 / 2,000)"
     icon: "\U0001F4F0"
     summary: >-
       The literature organized by topic, each entry stating what the paper

@@ -42,7 +42,7 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/workflow"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/researcher"

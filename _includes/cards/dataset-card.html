@@ -1,11 +1,19 @@
-{% assign dataset = include.dataset %}
-<article class="card">
-  <h3 class="card-title">{{ dataset.title }}</h3>
-  {% if dataset.modality %}<p><strong>{{ dataset.modality }}</strong></p>{% endif %}
-  {% if dataset.summary %}
-    <p class="card-description">{{ dataset.summary }}</p>
-  {% elsif dataset.description %}
-    <p class="card-description">{{ dataset.description }}</p>
-  {% endif %}
-  <p><a class="btn btn-primary" href="{{ dataset.url | relative_url }}">View Dataset</a></p>
+{%- comment -%}
+One dataset card, rendered from a _datasets/ record. Used by the featured grid and the
+timeline on /datasets/ so both read the same numbers. Pass: dataset.
+{%- endcomment -%}
+<article class="card dataset-card{% if include.dataset.spotlight %} spotlight{% endif %}">
+  <h3 class="card-title"><a href="{{ include.dataset.url | relative_url }}">{{ include.dataset.title }}</a></h3>
+  <p class="dataset-meta">
+    {% if include.dataset.species %}<span class="dataset-type">{{ include.dataset.species }}</span>{% endif %}
+    {% if include.dataset.status %}<span class="dataset-status">{{ include.dataset.status }}{% if include.dataset.release_year %} &middot; {{ include.dataset.release_year }}{% endif %}</span>{% endif %}
+  </p>
+  {% if include.dataset.blurb %}<p class="card-description">{{ include.dataset.blurb }}</p>{% endif %}
+  <ul class="dataset-facts">
+    {% if include.dataset.region %}<li><strong>Region:</strong> {{ include.dataset.region }}</li>{% endif %}
+    {% if include.dataset.cells %}<li><strong>Cells:</strong> {{ include.dataset.cells }}</li>{% endif %}
+    {% if include.dataset.synapses %}<li><strong>Synapses:</strong> {{ include.dataset.synapses }}</li>{% endif %}
+    {% if include.dataset.size %}<li><strong>Size:</strong> {{ include.dataset.size }}</li>{% endif %}
+  </ul>
+  <p><a href="{{ include.dataset.url | relative_url }}">Dataset details</a>{% if include.dataset.portal %} &middot; <a href="{{ include.dataset.portal }}">Data portal</a>{% endif %}</p>
 </article>

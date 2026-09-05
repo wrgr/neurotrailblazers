@@ -1,0 +1,49 @@
+# Citation File Format 1.2.0 — https://citation-file-format.github.io
+#
+# The contributor roster is not fully documented yet. Add further named people
+# as `given-names` / `family-names` entries above the team entity entry as they
+# are confirmed on the About page.
+cff-version: 1.2.0
+message: "If you use NeuroTrailblazers material in teaching, training or research, please cite it as below."
+title: "NeuroTrailblazers: an open curriculum for nanoscale connectomics"
+abstract: >-
+  NeuroTrailblazers is an open curriculum and mentorship platform for nanoscale
+  connectomics: nine technical units, 25 curriculum modules, a reference content
+  library, learning tracks, and facilitator material. It is developed in the
+  context of the HI-MC (MouseConnects) project (NIH BRAIN CONNECTS, UM1NS132250),
+  where IC3 and APEX organize and expose the science and NeuroTrailblazers organizes
+  the learning.
+type: software
+authors:
+  - given-names: "Will"
+    family-names: "Gray-Roncal"
+    affiliation: "Johns Hopkins University"
+    email: "wgr@jhu.edu"
+  - given-names: "Sydney"
+    family-names: "Floryanzia"
+  - name: "NeuroTrailblazers Team"
+    website: "https://neurotrailblazers.org"
+url: "https://neurotrailblazers.org"
+repository-code: "https://github.com/wrgr/neurotrailblazers"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - connectomics
+  - neuroscience education
+  - electron microscopy
+  - open curriculum
+  - BRAIN CONNECTS
+identifiers:
+  - type: url
+    value: "https://neurotrailblazers.org"
+    description: "The NeuroTrailblazers site."
+  - type: other
+    value: "UM1NS132250"
+    description: "NIH BRAIN CONNECTS award: HI-MC, A Center for High-throughput Integrative Mouse Connectomics — the project NeuroTrailblazers belongs to."
+  - type: other
+    value: "U24NS139927"
+    description: "NIH BRAIN CONNECTS award: IC3, the Integrative Connectomics Coordination Center."
+  - type: other
+    value: "U24NS140384"
+    description: "NIH BRAIN CONNECTS award: APEX, the Axonal Projectome EXchange."

@@ -413,7 +413,7 @@ invisible disadvantage into an ordinary task.
 The through-line: none of these are gaps in ability, and every one of them is closed by
 a question a person is entitled to ask. That is the whole argument for making the hidden
 curriculum explicit — it is the fairness intervention described in
-[Education Models]({{ '/frameworks/education-models/' | relative_url }}), not an add-on
+[Education Models]({{ '/models/' | relative_url }}), not an add-on
 to the technical training.
 
 ---
@@ -534,6 +534,6 @@ changes.
 - [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) — when the mechanisms above fail or are used against you
 - [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) — the identity side of the same machinery
 - [Module 02: Research Foundations and the Hidden Curriculum]({{ '/modules/module02/' | relative_url }})
-- [Education Models]({{ '/frameworks/education-models/' | relative_url }}) — MERIT stages, each with its own failure mode
+- [Education Models]({{ '/models/' | relative_url }}) — MERIT stages, each with its own failure mode
 - [Learner personas]({{ '/avatars/' | relative_url }})
 - [Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})

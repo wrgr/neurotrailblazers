@@ -43,8 +43,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/workflow"
-  - "/datasets/mouseconnects"
+  - "/datasets/workflow/"
+  - "/datasets/mouseconnects/"
 personas:
   - "/avatars/gradstudent"
   - "/avatars/mentor"
@@ -218,7 +218,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 - [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — CAVE as a model for versioned science
 
 ## Teaching resources
-- Workflow context: [Connectomics workflow]({{ '/datasets/workflow' | relative_url }})
+- Workflow context: [Connectomics workflow]({{ '/datasets/workflow/' | relative_url }})
 - Reference context: [Atlas Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
@@ -232,7 +232,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 ### Key datasets/platforms
 - [MICrONS Explorer](https://www.microns-explorer.org/)
 - [FlyWire](https://flywire.ai/)
-- [Workflow overview]({{ '/datasets/workflow' | relative_url }})
+- [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 
 ### Competency checks
 - Can an external learner rerun your result with your documentation alone?

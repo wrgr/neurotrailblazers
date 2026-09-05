@@ -43,8 +43,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/mouseconnects"
-  - "/datasets/workflow"
+  - "/datasets/mouseconnects/"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"
@@ -125,7 +125,7 @@ Give these to trainees in writing before the first practice talk.
 - How to support trainees:
   - Provide model Q&A transcripts, strong and weak, for the same question. The contrast teaches faster than the rule.
   - Share the rubric before the practice talk. Revealed afterwards it is assessment; revealed beforehand it is instruction.
-  - Rehearse the hardest question in private, as the MERIT stage-4 guidance in [Education Models]({{ '/frameworks/education-models/' | relative_url }}) describes.
+  - Rehearse the hardest question in private, as the MERIT stage-4 guidance in [Education Models]({{ '/models/' | relative_url }}) describes.
 
 ## Core workflow: technical talk preparation
 1. Build the claim tree on paper: question at the root, two or three claims, one evidence item and one caveat under each, deleting any claim you cannot attach evidence to.

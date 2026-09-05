@@ -95,6 +95,15 @@ as an allocation problem under a fixed budget rather than as a stage in a sequen
     </div>
   </article>
   <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
+    <span class="arch-chip" aria-hidden="true">&#128300;</span>
+    <h3 class="arch-title"><a href="{{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }}">Neuroanatomy for Proofreaders</a></h3>
+    <p class="arch-meta"><span class="pill pill-layer">side quest</span></p>
+    <p class="arch-body">The EM identification training behind competent proofreading: compartment cues, confidence tiers, a unified axon&ndash;dendrite&ndash;glia decision sequence, and a self-run calibration drill on a real public volume.</p>
+    <div class="arch-actions">
+      <a href="{{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }}" class="btn btn-primary">Open the side quest</a>
+    </div>
+  </article>
+  <article class="arch-card" style="--accent: var(--layer-quest); --accent-tint: var(--layer-quest-tint);">
     <span class="arch-chip" aria-hidden="true">&#128218;</span>
     <h3 class="arch-title"><a href="{{ '/side-quests/' | relative_url }}">All side quests</a></h3>
     <p class="arch-meta"><span class="pill pill-layer">index</span></p>

@@ -3097,3 +3097,101 @@ a.arch-card,
     min-height: 38px;
   }
 }
+
+/* Reference badge on the technical-course card grid. The atlas sits in the same
+   data list as the nine units but is consulted rather than completed, which made
+   the page render ten cards under a nine-unit claim. */
+.pill-reference {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--amber-lt, #fdecd6);
+  color: var(--warn, #a8410a);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Footer links. The footer sits on a near-black ground, where unstyled links
+   render UA blue; without this rule they had to carry inline colours. */
+.footer-links {
+  margin: 0 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.footer-links a {
+  color: var(--teal-lt, #b3e4e3);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Dataset entry pages. The facts table is the record's front matter rendered
+   verbatim, so a reader can see which fields a dataset does and does not have. */
+.ds-facts-wrap { overflow-x: auto; }
+.ds-facts {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+.ds-facts th,
+.ds-facts td {
+  text-align: left;
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--border, #e2e6ed);
+  vertical-align: top;
+}
+.ds-facts th {
+  width: 11rem;
+  font-weight: 700;
+  color: var(--ink, #0d1117);
+  background: var(--surface, #f7f8fa);
+}
+.ds-source {
+  font-size: 0.9rem;
+  color: var(--muted, #5a6478);
+}
+.dataset-card .dataset-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.6rem;
+}
+.dataset-card .dataset-meta span {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  background: var(--teal-lt, #b3e4e3);
+  color: var(--teal, #006d6b);
+}
+
+/* Time and level on the technical-course unit cards. The values live in each unit's
+   front matter; the index looks them up rather than keeping a second copy. */
+.unit-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.6rem;
+}
+.unit-meta span {
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  background: var(--surface, #f7f8fa);
+  border: 1px solid var(--border, #e2e6ed);
+  color: var(--muted, #5a6478);
+}

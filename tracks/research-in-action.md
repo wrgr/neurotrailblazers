@@ -24,6 +24,7 @@ content_type: navigation
   <section class="section">
     <p>{{ track.about }}</p>
     <p><strong>Fadel alignment:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
+    <p><strong>Who this is for.</strong> Readers like <a href="{{ '/avatars/gradstudent/' | relative_url }}">Maya</a>, who has the fundamentals and now needs a defensible result, and <a href="{{ '/avatars/researcher/' | relative_url }}">Amir</a>, an AI scientist who can build the model but not yet judge whether the data supports the claim.</p>
   </section>
 
   {% include ui/track-sequence.html track=track %}

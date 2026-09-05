@@ -1,6 +1,6 @@
 ---
 layout: avatar
-title: "Dr. Linh Nguyen - The Vision Builder"
+title: "Dr. Linh Nguyen, assistant professor"
 role: Assistant Professor
 permalink: /avatars/mentor/
 slug: mentor
@@ -123,7 +123,7 @@ awkwardness — matches how she already thinks about data quality.
 
 ## How the Site's Material Serves Her
 
-The [models-in-practice playbook]({{ '/education/models/' | relative_url }})
+The [models-in-practice playbook]({{ '/models/' | relative_url }})
 is the page written most directly for her. It walks the six MERIT stages with,
 for each, what the mentee produces and the failure mode the stage exists to
 prevent — and names the two errors a busy PI is most likely to make: stage

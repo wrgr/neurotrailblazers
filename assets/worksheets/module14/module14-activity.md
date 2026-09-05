@@ -20,7 +20,7 @@ Check that you have:
 
 - [ ] Image-processing and matrix basics
 - [ ] Foundational ML familiarity
-- [ ] Read [metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) for VI and ERL, and [artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) for what the model must survive.
+- [ ] Read [metrics and QA](/content-library/proofreading/metrics-and-qa/) for VI and ERL, and [artifact taxonomy](/content-library/imaging/artifact-taxonomy/) for what the model must survive.
 - [ ] Bring or download one EM subvolume with visible artifacts.
 - [ ] Be ready to state which downstream product your segmentation would feed.
 

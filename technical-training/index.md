@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Technical Training: Nanoscale Connectomics"
+title: "Technical Course"
 description: "Canonical open connectomics course focused on technical skills from imaging to NeuroAI."
 permalink: /technical-training/
 slug: technical-training
@@ -19,8 +19,8 @@ content_type: navigation
   {% assign concepts_base = '/concepts/' | relative_url %}
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
-      <h1 class="hero-title-impact">Technical Training: Nanoscale Connectomics</h1>
-      <p class="hero-subtitle">The canonical technical connectomics track, designed to complement the broader NeuroTrailblazers site.</p>
+      <h1 class="hero-title-impact">Technical Course</h1>
+      <p class="hero-subtitle">Nine units in nanoscale connectomics, from why we map the brain through imaging, reconstruction, proofreading and analysis. Each ends in a graded artifact.</p>
     </div>
   </div>
 
@@ -49,7 +49,10 @@ content_type: navigation
   </section>
 
   <section class="section">
-    <h2>Technical units</h2>
+    <h2>The nine units, and the atlas beside them</h2>
+    <p>Units 01&ndash;09 are ordered and cumulative; each ends in a graded artifact. The atlas is
+    reference: consult it as you go, do not work through it. Working through all nine, labs
+    included, is about <strong>31 hours</strong>.</p>
     {% assign concept_items = site.data.concepts.concepts %}
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}
@@ -58,8 +61,21 @@ content_type: navigation
       {% assign primary_need = item.user_needs | first %}
       <article class="card">
         <img class="module-thumb" src="{{ '/assets/images/units/' | append: item.slug | append: '.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" width="1200" height="420">
+        {% if item.slug == 'atlas-connectomics-reference' %}<p class="pill-reference">Reference &mdash; consult, do not complete</p>{% endif %}
         <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
         <p class="card-description">{{ item.summary | default: item.mapping_note }}</p>
+        {%- comment -%}
+          Time, level and prerequisites live in each unit page's front matter, not in
+          technical_track.yml, so look the page up by its slug rather than duplicating
+          the values into a second file where they would drift.
+        {%- endcomment -%}
+        {% assign unit_page = site.pages | where: "slug", item.slug | first %}
+        {% if unit_page %}
+        <p class="unit-meta">
+          {% if unit_page.time_estimate %}<span>{{ unit_page.time_estimate }}</span>{% endif %}
+          {% if unit_page.level %}<span>{{ unit_page.level }}</span>{% endif %}
+        </p>
+        {% endif %}
         {% if item.user_needs %}
         <p>
           {% for need in item.user_needs %}

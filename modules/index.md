@@ -61,7 +61,7 @@ content_type: navigation
 <section class="section">
   <h2>All modules</h2>
   <div class="cards-grid">
-    {% assign module_pages = site.modules | sort: "module_number" %}
+    {% assign module_pages = site.data.modules | sort: "number" %}
     {% for module in module_pages %}
       {% include cards/module-card.html module=module %}
     {% endfor %}

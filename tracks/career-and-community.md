@@ -24,6 +24,7 @@ content_type: navigation
   <section class="section">
     <p>{{ track.about }}</p>
     <p><strong>Fadel alignment:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
+    <p><strong>Who this is for.</strong> Readers like <a href="{{ '/avatars/undergradstudent/' | relative_url }}">Julian</a>, working out how research careers actually operate, and <a href="{{ '/avatars/mentor/' | relative_url }}">Dr. Linh Nguyen</a>, who supervises people through exactly these transitions.</p>
   </section>
 
   {% include ui/track-sequence.html track=track %}

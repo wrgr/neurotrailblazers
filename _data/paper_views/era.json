@@ -4,20 +4,20 @@
   "groups": [
     {
       "key": "history",
-      "label": "History & Classics (\u22642018)",
-      "n": 745,
+      "label": "History & Classics (≤2018)",
+      "n": 944,
       "range": "1962-2018"
     },
     {
       "key": "contemporary",
       "label": "Contemporary Surge (2019-2023)",
-      "n": 679,
+      "n": 640,
       "range": "2019-2023"
     },
     {
       "key": "sota",
       "label": "State of the Art (2024-2026+)",
-      "n": 576,
+      "n": 416,
       "range": "2024-2026+"
     }
   ]

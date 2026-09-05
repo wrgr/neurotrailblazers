@@ -78,7 +78,6 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ---
 
 ## Studio Activity
-{: #studio-activity}
 **Scenario:** You must classify neurite fragments into coarse categories to prioritize a proofreading queue. You have roughly 4,000 labeled fragments drawn from about 600 neurons in one dataset, five classes with prevalences of approximately 38%, 27%, 19%, 12%, and 4%, and a reviewer team that can inspect 500 segments per week. A second, differently stained dataset is available as a held-out domain.
 
 ---
@@ -91,16 +90,27 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Feature and split decisions are justified against a named leakage channel.
 - Metrics include at least one biologically targeted criterion tied to a real capacity or threshold.
 - Limitation statement is specific and actionable.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Quantifies how much performance each successive split control removes.
 - Uses error analysis to propose the next data improvement rather than the next model.
 - Names the assumption behind the chosen block size or grouping in the same sentence as the number.
 - Distinguishes an exploratory model from a deployment-ready one and states what would have to change.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Leakage-prone random splits on spatially correlated data.
 - Overfocus on aggregate accuracy with prevalence unreported.
 - Claims of biological insight unsupported by model diagnostics.

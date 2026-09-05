@@ -24,6 +24,7 @@ content_type: navigation
   <section class="section">
     <p>{{ track.about }}</p>
     <p><strong>Fadel alignment:</strong> {{ track.fadel_alignment | join: ', ' }}</p>
+    <p><strong>Who this is for.</strong> Readers like <a href="{{ '/avatars/undergradstudent/' | relative_url }}">Julian</a>, a first-generation undergraduate with no lab experience yet, and <a href="{{ '/avatars/gradstudent/' | relative_url }}">Maya</a>, a graduate student crossing into connectomics from another field. Start here if you cannot yet read an EM image or say why a segmentation is wrong.</p>
   </section>
 
   {% include ui/track-sequence.html track=track %}

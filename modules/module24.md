@@ -219,7 +219,7 @@ Julian's follow-up, sent the same day, is two sentences: thanks, and the specifi
 - **Conference networking mechanics.** Approaches, pitches, and follow-up scripts are [Module 23]({{ '/modules/module23/' | relative_url }}).
 - **Salary levels, hiring volumes, and market forecasts.** These vary by country, sector, and year, and any figure stated here would be wrong somewhere. Get them from current postings and from people currently in the role, not from a curriculum page.
 - **Immigration, visa, and funding eligibility rules.** These are jurisdiction-specific, they change, and they frequently determine which rows of the decision table are open to you. Establish them early with an institutional adviser rather than inferring them.
-- **Mentor-side practice.** How to run these stages as a supervisor is in [Education Models]({{ '/frameworks/education-models/' | relative_url }}) and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
+- **Mentor-side practice.** How to run these stages as a supervisor is in [Education Models]({{ '/models/' | relative_url }}) and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
 
 ## Content library references
 - [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — The growing field and career opportunities
@@ -228,7 +228,7 @@ Julian's follow-up, sent the same day, is two sentences: thanks, and the specifi
 - Persona context: [Learner Personas]({{ '/avatars/' | relative_url }})
 - Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
 - Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
-- Stage framing: [Education Models]({{ '/frameworks/education-models/' | relative_url }})
+- Stage framing: [Education Models]({{ '/models/' | relative_url }})
 - Start-here guidance: [Start Here]({{ '/start-here/' | relative_url }})
 
 ## Quick practice prompt

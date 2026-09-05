@@ -100,7 +100,7 @@ Create a personal research-navigation plan that includes role expectations, comm
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Learners produce a one-page research navigation document that serves as a practical reference throughout the program. It is built in four parts: a norms inventory (15 minutes), communication scripts (20 minutes), a mentor and support map (15 minutes), and an ethics commitment (10 minutes).
 
 ---
 

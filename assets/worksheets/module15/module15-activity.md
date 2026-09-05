@@ -20,7 +20,7 @@ Check that you have:
 
 - [ ] Segmentation and proofreading basics
 - [ ] Basic scripting and data-table handling
-- [ ] Read [proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) so you know what the human-in-the-loop workflow currently is.
+- [ ] Read [proofreading tools](/content-library/proofreading/proofreading-tools/) so you know what the human-in-the-loop workflow currently is.
 - [ ] Bring one real task from your own work you were considering handing to an LLM.
 - [ ] Be ready to estimate how long that task takes you by hand.
 

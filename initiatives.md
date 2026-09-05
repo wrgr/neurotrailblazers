@@ -32,7 +32,7 @@ content_type: core
         <li><strong>BICCN / BICAN:</strong> Whole-brain single-cell transcriptomic and morphological taxonomies.</li>
         <li><strong>Data Archives:</strong> Public repositories for petascale volumetric datasets (BossDB, DVID).</li>
       </ul>
-      <p style="margin-bottom: 0; font-size: 0.9rem;"><strong>Key Milestones:</strong> <em>H01 Human Cortex</em> (<a href="https://doi.org/10.1126/science.abk1256">Science 2024</a>), <em>PEEM Connectomics</em> (<a href="https://doi.org/10.1073/pnas.2521349122">PNAS 2025</a>).</p>
+      <p style="margin-bottom: 0; font-size: 0.9rem;"><strong>Key Milestones:</strong> <em>H01 Human Cortex</em> (<a href="https://doi.org/10.1126/science.adk4858">Science 2024</a>), <em>PEEM Connectomics</em> (<a href="https://doi.org/10.1073/pnas.2521349122">PNAS 2025</a>).</p>
     </div>
 
     <div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

@@ -90,7 +90,6 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Studio Activity
-{: #studio-activity}
 **Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
 
 ---
@@ -103,16 +102,27 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - All five provenance elements present: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
 - Re-run instructions testable by a peer without contacting the author.
 - Limitations name concrete failure modes, excluded samples, and failed runs rather than generic hedges.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - Clean-environment rerun actually attempted, with a friction log and remediations ordered by cost.
 - Hidden norms made explicit: version identifiers in figure legends, a changelog, and a deprecation note.
 - ID churn quantified whenever identifiers cross versions, and reported in the methods.
 - Documentation is audit-friendly: an external reader can locate every provenance element from the README alone.
-- **Common failure modes**
+
+---
+
+## Assessment Rubric
+**Common failure modes**
+
 - Missing version identifiers for data or code.
 - Methods that omit key parameters or the environment specification.
 - "Reproducible in principle" claims without a validation rerun.

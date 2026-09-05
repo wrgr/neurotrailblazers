@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="main-content layout-dataset-entry">
+  <div class="hero hero-spaced hero-rounded">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dataset{% if page.release_year %} &middot; {{ page.release_year }}{% endif %}</p>
+      <h1 class="hero-title-impact">{{ page.title }}</h1>
+      {% if page.blurb %}<p class="hero-subtitle">{{ page.blurb }}</p>{% endif %}
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="ds-facts-wrap">
+      <table class="ds-facts">
+        <tbody>
+          {% if page.species %}<tr><th scope="row">Species</th><td>{{ page.species }}</td></tr>{% endif %}
+          {% if page.region %}<tr><th scope="row">Region</th><td>{{ page.region }}</td></tr>{% endif %}
+          {% if page.volume %}<tr><th scope="row">Volume</th><td>{{ page.volume }}</td></tr>{% endif %}
+          {% if page.cells %}<tr><th scope="row">Cells</th><td>{{ page.cells }}</td></tr>{% endif %}
+          {% if page.synapses %}<tr><th scope="row">Synapses</th><td>{{ page.synapses }}</td></tr>{% endif %}
+          {% if page.size %}<tr><th scope="row">Data size</th><td>{{ page.size }}</td></tr>{% endif %}
+          {% if page.resolution %}<tr><th scope="row">Resolution</th><td>{{ page.resolution }}</td></tr>{% endif %}
+          {% if page.modality %}<tr><th scope="row">Modality</th><td>{{ page.modality }}</td></tr>{% endif %}
+          {% if page.access %}<tr><th scope="row">Access</th><td>{{ page.access }}</td></tr>{% endif %}
+          {% if page.status %}<tr><th scope="row">Status</th><td>{{ page.status }}</td></tr>{% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cta-buttons">
+      {% if page.portal %}<a href="{{ page.portal }}" class="btn btn-primary"{% unless page.portal contains '/' and page.portal.first == '/' %} target="_blank" rel="noopener"{% endunless %}>Open the data portal</a>{% endif %}
+      {% if page.paper_url %}<a href="{{ page.paper_url }}" class="btn btn-secondary" target="_blank" rel="noopener">Read the paper</a>{% endif %}
+      {% if page.press_url %}<a href="{{ page.press_url }}" class="btn btn-secondary" target="_blank" rel="noopener">Press coverage</a>{% endif %}
+    </div>
+  </section>
+
+  <section class="section">
+    {{ content }}
+  </section>
+
+  <section class="section section-compact">
+    {% if page.source %}<p class="ds-source"><strong>Where these numbers come from.</strong> {{ page.source }}{% if page.paper_doi %} DOI {{ page.paper_doi }}.{% endif %}</p>{% endif %}
+    <p><a href="{{ '/datasets/' | relative_url }}">&larr; All datasets</a> &middot; <a href="{{ '/datasets/access/' | relative_url }}">How to get credentials and clients</a></p>
+  </section>
+</div>

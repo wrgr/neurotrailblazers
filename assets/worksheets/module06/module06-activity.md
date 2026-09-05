@@ -121,8 +121,19 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.
+  - At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.
+  - The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.
+  - Before/after quality indicators are computed for at least one correction, with the direction of change stated.
 - **Strong performance**
+  - The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.
+  - Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.
+  - At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.
+  - The release note states what remains unexamined and what error types are still expected, not only what was fixed.
 - **Common failure to flag**
+  - Correction without evidence of quality change — fixing things without checking whether it helped.
+  - Ranking by visual conspicuousness rather than by impact on the analysis.
+  - A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.
 
 **My self-assessment:**
 

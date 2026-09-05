@@ -108,7 +108,7 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Learners produce a complete, reproducible Jupyter notebook that queries a connectomics dataset, performs a descriptive analysis, and exports documented results. The work runs in four parts: setup and data loading (20 minutes), analysis (20 minutes), visualization and export (15 minutes), and a reproducibility check (5 minutes).
 
 ---
 

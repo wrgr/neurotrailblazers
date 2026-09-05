@@ -522,6 +522,6 @@ own protocol.
 
 - Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
-- Related modules: [Module 07]({{ '/modules/module07/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
+- Related modules: [Module 06]({{ '/modules/module06/' | relative_url }}), [Module 07]({{ '/modules/module07/' | relative_url }})
 - Lecture plan: [Segmentation and Proofreading lecture plan]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
 - **Next unit:** [09 Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

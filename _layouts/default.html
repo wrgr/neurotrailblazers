@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="{{ '/assets/css/site-styles.css' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +12,11 @@
 <body>
     <header class="site-header">
         <div class="site-banner">
-            <img src="{{ '/assets/images/neurotrailblazers-banner.jpg' | relative_url }}" alt="NeuroTrailblazers banner">
+            <img src="{{ '/assets/images/neurotrailblazers-banner.jpg' | relative_url }}" alt="" width="1600" height="262">
         </div>
         <nav class="navbar">
             <a href="{{ '/' | relative_url }}" class="logo">NeuroTrailblazers</a>
-            {% assign nav_items = site.data.navigation.items | default: site.navigation %}
+            {% assign nav_items = site.data.navigation.items %}
             <ul class="nav-menu">
                 {% for item in nav_items %}
                 <li class="nav-item">
@@ -53,8 +51,17 @@
 
     <footer>
         <div class="footer-inner">
-                <p>Illuminating Pathways for Trailblazing Neuroscience Research(ers) | NeuroTrailblazers.org | Copyright 2025–2026 | Proudly developed as part of the NIH BRAIN CONNECTS program.</p>
-    </div>
+            <p class="footer-links">
+                <a href="{{ '/about/' | relative_url }}">About</a>
+                <span aria-hidden="true">&middot;</span>
+                <a href="mailto:{{ site.email }}">Contact</a>
+                <span aria-hidden="true">&middot;</span>
+                <a href="{{ '/license/' | relative_url }}">Licence</a>
+                <span aria-hidden="true">&middot;</span>
+                <a href="https://github.com/{{ site.github_username }}/neurotrailblazers">GitHub</a>
+            </p>
+            <p>{{ site.tagline }} | NeuroTrailblazers.org | Copyright 2025–2026 | Proudly developed as part of the NIH BRAIN CONNECTS program.</p>
+        </div>
     </footer>
 
     <script src="{{ '/assets/js/module-interactives.js' | relative_url }}" defer></script>

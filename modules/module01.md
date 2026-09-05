@@ -164,28 +164,19 @@ You arrive with the question "how does memory work?" That is a real motivation a
 ## Studio activity: "Write your connectomics motivation statement"
 {: #studio-activity}
 
-### Overview
-Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement.
+**Scenario:** Learners produce two artifacts: a question-to-hypothesis sheet and a personal motivation statement. Part A (30 minutes) builds the sheet, Part B (20 minutes) drafts the statement, and a 10-minute peer review closes the session.
 
-### Part A: Question-to-hypothesis sheet (30 minutes)
-1. State your broad curiosity question (1 sentence).
+**Task sequence:**
+1. **Question-to-hypothesis sheet (Part A, 30 minutes):** state your broad curiosity question (1 sentence).
 2. Narrow to a specific circuit, region, or organism (1 sentence).
 3. Define the structural measurement you would need (e.g., synapse count between cell types X and Y).
 4. Specify the dataset you would use (e.g., FlyWire, MICrONS, FAFB).
 5. State one non-claim: what your structural data cannot tell you.
 6. Define a falsification condition: what result would disprove your hypothesis?
+7. **Motivation statement (Part B, 20 minutes):** write 150-300 words addressing: Why connectomics? What drew you to this field? What specific aspect of brain circuitry fascinates you? How does your daily work (annotation, proofreading, coding) connect to the larger mission? What is your plan for sustaining motivation through tedious stretches? (Be specific: milestones, rewards, accountability partners, rotation between tasks.)
+8. **Peer review (10 minutes):** exchange motivation statements with a partner. Provide feedback on: (1) specificity --- does the statement name concrete goals? (2) sustainability --- does the plan for maintaining motivation seem realistic?
 
-### Part B: Motivation statement (20 minutes)
-Write 150-300 words addressing:
-- Why connectomics? What drew you to this field?
-- What specific aspect of brain circuitry fascinates you?
-- How does your daily work (annotation, proofreading, coding) connect to the larger mission?
-- What is your plan for sustaining motivation through tedious stretches? (Be specific: milestones, rewards, accountability partners, rotation between tasks.)
-
-### Peer review (10 minutes)
-Exchange motivation statements with a partner. Provide feedback on: (1) specificity --- does the statement name concrete goals? (2) sustainability --- does the plan for maintaining motivation seem realistic?
-
-**Outputs**
+**Outputs:**
 - Question-to-hypothesis sheet: broad question, narrowed target, named structural measurement, named dataset, one non-claim, one falsification condition.
 - Motivation statement of 150-300 words, including a specific plan for sustaining effort through tedious stretches.
 - Written peer feedback on a partner's statement, addressing specificity and sustainability.

@@ -1,11 +1,18 @@
 {% assign module = include.module %}
+{% assign num = module.module_number | default: module.number | plus: 0 %}
+{% assign numpad = num %}
+{% if num < 10 %}
+  {% assign numpad = '0' | append: num %}
+{% endif %}
+{% assign module_url = '/modules/module' | append: numpad | append: '/' %}
+{% if module.url %}{% assign module_url = module.url %}{% endif %}
 <article class="card">
-  <h3 class="card-title">{% if module.module_number %}{{ module.module_number }}. {% endif %}{{ module.short_title | default: module.title }}</h3>
+  <h3 class="card-title">{% if num > 0 %}{{ numpad }}. {% endif %}{{ module.short_title | default: module.title }}</h3>
   {% if module.pipeline_stage %}<p><strong>{{ module.pipeline_stage }}</strong></p>{% endif %}
   {% if module.summary %}
     <p class="card-description">{{ module.summary }}</p>
   {% elsif module.description %}
     <p class="card-description">{{ module.description }}</p>
   {% endif %}
-  <p><a class="btn btn-primary" href="{{ module.url | relative_url }}">Open Module</a></p>
+  <p><a class="btn btn-primary" href="{{ module_url | relative_url }}">Open Module</a></p>
 </article>

@@ -7,9 +7,9 @@ lecture.
 
 | Source | Slides | Parts |
 |---|---|---|
-| `module07-introduction-to-connectomics.marp.md` | 58 | The case for mapping · Three scales · The field as it stands |
-| `module08-tools-and-methods.marp.md` | 55 | Tissue to voxels · Storage and infrastructure · Reproducible pipelines |
-| `module09-algorithms-and-applications.marp.md` | 57 | Segmentation, error and labor · Graph construction and nulls · Applications and NeuroAI |
+| `module07-introduction-to-connectomics.marp.md` | 59 | The case for mapping · Three scales · The field as it stands |
+| `module08-tools-and-methods.marp.md` | 56 | Tissue to voxels · Storage and infrastructure · Reproducible pipelines |
+| `module09-algorithms-and-applications.marp.md` | 58 | Segmentation, error and labor · Graph construction and nulls · Applications and NeuroAI |
 
 Rendered HTML is committed under `course/decks/marp/out/en585781/`.
 

@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2.5 h reading; 60 min tutorial; 75 min studio |
+| **Time** | ~2.5 h reading; 75 min studio |
 | **Prerequisites** | Units 01–03. Unit 03's artifact catalog in particular — you cannot distinguish biology from artifact without it. |
 | **You need** | A public EM volume open in Neuroglancer |
 | **You finish with** | Calibrated compartment and synapse calls with justified confidence tiers, plus a personal cue-reliability ranking |

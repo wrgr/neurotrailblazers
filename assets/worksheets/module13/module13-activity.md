@@ -20,7 +20,7 @@ Check that you have:
 
 - [ ] Basic scikit-learn workflow familiarity
 - [ ] Feature matrix handling in Python
-- [ ] Read [neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) so you know what the labels mean before you model them.
+- [ ] Read [neuron type identification](/content-library/cell-types/neuron-type-identification/) so you know what the labels mean before you model them.
 - [ ] Bring a small labeled table of your own, or use the supplied fragment set.
 - [ ] Be ready to state, in one sentence, the decision your model would support.
 
@@ -133,8 +133,19 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass**
+  - Feature and split decisions are justified against a named leakage channel.
+  - Metrics include at least one biologically targeted criterion tied to a real capacity or threshold.
+  - Limitation statement is specific and actionable.
 - **Strong performance**
+  - Quantifies how much performance each successive split control removes.
+  - Uses error analysis to propose the next data improvement rather than the next model.
+  - Names the assumption behind the chosen block size or grouping in the same sentence as the number.
+  - Distinguishes an exploratory model from a deployment-ready one and states what would have to change.
 - **Common failure modes**
+  - Leakage-prone random splits on spatially correlated data.
+  - Overfocus on aggregate accuracy with prevalence unreported.
+  - Claims of biological insight unsupported by model diagnostics.
+  - Features computed against an unpinned segmentation version.
 
 **My self-assessment:**
 

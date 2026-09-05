@@ -124,7 +124,7 @@ None of these will be stated. All of them are enforced.
 3. **That you bring a recommendation, not just a problem.** *"X is blocked. Two options:
    A or B. I would do A because it costs a week less and we can reverse it. Do you
    agree?"* Being wrong in that format is fine. It is the transition the
-   [MERIT framework]({{ '/education/models/' | relative_url }}) calls *initiation*,
+   [MERIT framework]({{ '/models/' | relative_url }}) calls *initiation*,
    and supervisors watch for it explicitly.
 4. **That silence is not consent.** No reply to your email is not approval. If you need
    a decision, say what you will do by default: *"Unless you tell me otherwise by
@@ -151,7 +151,7 @@ None of these will be stated. All of them are enforced.
 
 Write the list first, then read it out. The gap between what your supervisor believes
 they conveyed and what you wrote down is, per the
-[education models]({{ '/education/models/' | relative_url }}) page, the most useful
+[education models]({{ '/models/' | relative_url }}) page, the most useful
 diagnostic available in the orientation stage — and it is a diagnostic that only exists
 if someone writes the list. Usually that has to be you.
 
@@ -418,6 +418,6 @@ acted on, that has become a research-integrity question and belongs at rung 3.
   difficult supervisors in depth
 - [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) —
   references, applications, and transitions
-- [Education models]({{ '/education/models/' | relative_url }}) — MERIT stage 2, where
+- [Education models]({{ '/models/' | relative_url }}) — MERIT stage 2, where
   this material belongs in a mentoring relationship
 - [Learner personas]({{ '/avatars/' | relative_url }})

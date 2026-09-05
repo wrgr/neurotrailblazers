@@ -43,8 +43,8 @@ key_questions:
 slides: []
 notebook: []
 datasets:
-  - "/datasets/mouseconnects"
-  - "/datasets/workflow"
+  - "/datasets/mouseconnects/"
+  - "/datasets/workflow/"
 personas:
   - "/avatars/undergradstudent"
   - "/avatars/gradstudent"
@@ -217,7 +217,7 @@ Note the moves: it names when and where so she can place him, restates her own q
 - Presentation context: [Module 22]({{ '/modules/module22/' | relative_url }})
 - Evidence set: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
-- Stage framing: [Education Models]({{ '/frameworks/education-models/' | relative_url }}) — the stage-5 network-dependence failure mode
+- Stage framing: [Education Models]({{ '/models/' | relative_url }}) — the stage-5 network-dependence failure mode
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 
 ## Quick practice prompt

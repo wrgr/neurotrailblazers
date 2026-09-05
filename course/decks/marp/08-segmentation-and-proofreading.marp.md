@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "08 Segmentation and Proofreading"
 paginate: true
+footer: "Unit 08 · Segmentation and proofreading"
 ---
 
+<!-- _class: title -->
 # 08 Segmentation and Proofreading
 Technical Training: Nanoscale Connectomics
 
@@ -24,18 +27,21 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Why proofreading is scientific QC
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png)
 - Correction policy determines analysis validity.
 
 ---
 
+<!-- _class: figure -->
 ## Error taxonomy visual
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S08-01.png)
 - Enforce explicit error-class coding in logs.
 
 ---
 
+<!-- _class: figure -->
 ## Ultrastructure-informed correction
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S06-01.png)
 
@@ -57,22 +63,26 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Synapse-aware correction checks
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S09-01.png)
 
 ---
 
+<!-- _class: figure -->
 ## Organelle-assisted disambiguation
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S11-01.png)
 
 ---
 
+<!-- _class: figure -->
 ## Boundary failure case
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S23-01.png)
 - Show when to stop and escalate instead of over-correcting.
 
 ---
 
+<!-- _class: figure -->
 ## Identity-sensitive correction context
 ![w:920](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png)
 

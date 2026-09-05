@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "01 Why Map the Brain"
 paginate: true
+footer: "Unit 01 · Why map the brain"
 ---
 
+<!-- _class: title -->
 # 01 Why Map the Brain
 Technical Training: Nanoscale Connectomics
 
@@ -24,12 +27,14 @@ Technical Training: Nanoscale Connectomics
 
 ---
 
+<!-- _class: figure -->
 ## Visual opener: the motivation question
 ![w:950](../../../assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png)
 - Prompt: what specific scientific uncertainty is this figure trying to reduce?
 
 ---
 
+<!-- _class: figure -->
 ## Framing the evidence problem
 ![w:950](../../../assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png)
 - Structure is evidence of organization and constraints, not direct proof of dynamics.

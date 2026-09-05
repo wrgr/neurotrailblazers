@@ -88,7 +88,7 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 ---
 
 ## Studio Activity
-{: #studio-activity}
+**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
 
 ---
 
@@ -100,17 +100,28 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 ---
 
 ## Assessment Rubric
-- **Minimum pass**
+**Minimum pass**
+
 - Every flagged candidate carries an error-type label (merge/split/boundary/uncertain), and mislabels affect fewer than 3 of the 25 candidates.
 - At least one correction is executed with the supporting evidence stated in the log before the edit, not reconstructed afterward.
 - The correction log records object ID, operation, location, and the specific visual evidence — a reader could re-find the site from the log alone.
 - Before/after quality indicators are computed for at least one correction, with the direction of change stated.
-- **Strong performance**
+
+---
+
+## Assessment Rubric
+**Strong performance**
+
 - The priority ranking ties each candidate to its expected effect on the downstream connectivity graph, and merges outrank splits of comparable size with the reason stated.
 - Before/after metrics are reported for the whole subvolume, and any metric that moved the wrong way is explained rather than omitted.
 - At least one flagged candidate is explicitly deferred with a recorded reason (cost to fix, ambiguity, outside analysis set) rather than silently skipped.
 - The release note states what remains unexamined and what error types are still expected, not only what was fixed.
-- **Common failure to flag**
+
+---
+
+## Assessment Rubric
+**Common failure to flag**
+
 - Correction without evidence of quality change — fixing things without checking whether it helped.
 - Ranking by visual conspicuousness rather than by impact on the analysis.
 - A merge introduced while fixing a split, because continuity was assumed from appearance instead of verified across sections.

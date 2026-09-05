@@ -1,9 +1,12 @@
 ---
 marp: true
+theme: neurotrailblazers
 title: "Atlas Connectomics Reference"
 paginate: true
+footer: "Connectomics reference atlas"
 ---
 
+<!-- _class: title -->
 # Atlas Connectomics Reference
 Technical Training: Nanoscale Connectomics
 
@@ -28,17 +31,24 @@ Operational reference system for papers, datasets, tools, and media mapped to re
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: taxonomy framing
 ![w:940](../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png)
 
 ---
 
+<!-- _class: figure -->
 ## Visual context: reference-to-workflow mapping
 ![w:940](../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S10-01.png)
 
 ---
 
 ## Visual context: comparative resource panel
+
+![w:900](../../../assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S13-01.png)
+
+Functional recordings, the reconstructed network, and the rendered circuit are three views of
+one dataset. An atlas entry has to say which view it indexes.
 
 ---
 

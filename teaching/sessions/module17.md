@@ -113,8 +113,20 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass**
+  - Claims map to explicit evidence with figure panel references.
+  - Legends contain enough detail for independent interpretation.
+  - Methods include dataset version, pipeline, and key parameters.
+  - Reviewer responses are specific and technically grounded.
 - **Strong performance**
+  - Clearly separates robust findings from tentative interpretations using calibrated language.
+  - Uses limitation language without weakening valid conclusions.
+  - Improves reproducibility via concrete method-detail additions.
+  - Reviewer responses include evidence and specific manuscript revision locations.
 - **Common failure modes**
+  - Narrative claims that cannot be traced to figures.
+  - Missing dataset/method versioning in captions or methods.
+  - Reviewer replies that are persuasive but non-technical.
+  - Methods section written as an afterthought with missing parameters.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

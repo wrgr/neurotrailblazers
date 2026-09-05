@@ -101,8 +101,19 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass**
+  - Null model is justified and the constraints it preserves are listed explicitly, in terms of what the hypothesis treats as uninteresting.
+  - Total test count — including tests run and not reported — is documented, and a named correction is applied against it.
+  - Claims are partitioned into exploratory and confirmatory blocks with different language in each.
 - **Strong performance**
+  - Sensitivity analysis spans at least two preprocessing choices (synapse threshold, inclusion criteria), with results reported for each variant.
+  - Effect sizes with uncertainty intervals appear alongside every significance statement.
+  - Error-sensitivity band computed at measured merge and split rates, with the direction of merge bias named.
+  - Generalization boundary stated: which dataset, version, and region the claim covers, and what it says nothing about.
 - **Common failure modes**
+  - Null model choice disconnected from the biological question.
+  - Selective reporting: significant outcomes shown, the full test count uncounted.
+  - Exploratory signal conflated with validated inference.
+  - Analytic p-values used where dependence between tests calls for permutation.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain
 should not outscore a well-reasoned incorrect one — and saying so publicly changes

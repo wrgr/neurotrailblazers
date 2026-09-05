@@ -3,6 +3,7 @@ title: "From Projectome to Synapse"
 layout: page
 permalink: /teaching/projectome-to-synapse/
 description: "A hands-on activity explaining why BRAIN CONNECTS needs both APEX and IC3."
+track: career-and-community
 content_type: delivery
 ---
 

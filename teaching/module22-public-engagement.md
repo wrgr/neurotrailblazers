@@ -3,6 +3,7 @@ title: "Module 22 Companion: Public Engagement with Authentic CONNECTS Resources
 layout: page
 permalink: /teaching/module22-public-engagement/
 description: "A public-engagement session kit that extends Module 22 without replacing its evidence-first presentation curriculum."
+track: career-and-community
 content_type: delivery
 ---
 
@@ -31,8 +32,8 @@ Learners will be able to:
 
 ### 0–10 min — One brain, many maps
 Use:
-- Atlas vs. Connectome
-- From Projectome to Synapse
+- [Unit 02, Brain Data Across Scales]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }}) for the atlas / projectome / connectome distinction;
+- [From Projectome to Synapse]({{ '/teaching/projectome-to-synapse/' | relative_url }}), the 25-minute hands-on activity.
 
 ### 10–25 min — Authentic resource lab
 Choose one:
@@ -45,8 +46,11 @@ Choose one:
 
 ### 25–40 min — Follow the evidence
 Use:
-- BRAIN Grant Detective
-- Public Impact Wall
+- [How we fit BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }}) and [Major Initiatives]({{ '/initiatives/' | relative_url }}) to trace a programme's intent and capabilities;
+- [Global Outreach &amp; Citizen Science]({{ '/initiatives/outreach/' | relative_url }}) for adoption and public benefit;
+- NIH RePORTER (reporter.nih.gov) for the award record behind any BRAIN CONNECTS claim.
+
+Learners work in pairs, each pair taking one programme.
 
 Require the chain:
 **intent → capability → artifact → adoption → scientific consequence → translation/public benefit**

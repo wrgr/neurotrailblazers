@@ -608,7 +608,7 @@ module_paths.each do |path|
       one to take if you want to cut slides or add your own &mdash; it renders with
       <a href="https://marp.app/">Marp</a>. For PowerPoint, run
       <code>./scripts/render_marp.sh --pptx</code>; the exports are not committed because
-      35 of them came to 88&nbsp;MB.</small></p>
+      the full set runs to tens of megabytes.</small></p>
     </div>
   MD
 

@@ -66,12 +66,13 @@ It is **not** a data coordinating center:
 > **IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the
 > learning.**
 
-The two BRAIN CONNECTS coordination centers this program routes learners toward are:
-
-| Center | Award | What it coordinates |
+| Project | Award | Role |
 |---|---|---|
+| **HI-MC** — A Center for High-throughput Integrative Mouse Connectomics | `UM1NS132250` | **The project this site belongs to.** Reconstructing mouse hippocampal formation at synaptic resolution; NINDS, 2023–2028, PI Jeff W. Lichtman, Harvard University |
 | **IC3** — Integrative Connectomics Coordination Center | `U24NS139927` | Common pipelines, the CONNECTS Knowledge Base, cross-modal integration, common coordinate frameworks |
 | **APEX** — Axonal Projectome EXchange | `U24NS140384` | Primate projectome data, multimodal axonal imaging, standards and benchmarking |
+
+IC3 and APEX are the two coordination centers this program routes learners toward.
 
 Where those centers, the Allen Institute or a CONNECTS project already publish an
 authoritative resource, this site links to it and scaffolds the reasoning around it
@@ -83,10 +84,10 @@ APEX.
 
 ## Who runs it
 
-NeuroTrailblazers is part of **HI-MC**, the Center for High-throughput Integrative Mouse
-Connectomics — the BRAIN CONNECTS project also known as
+NeuroTrailblazers is part of **HI-MC** (`UM1NS132250`), the Center for High-throughput
+Integrative Mouse Connectomics — the BRAIN CONNECTS project also known as
 [MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }}), which is reconstructing
-10 mm³ of mouse hippocampal formation at synaptic resolution. HI-MC generates the science;
+mouse hippocampal formation at synaptic resolution. HI-MC generates the science;
 NeuroTrailblazers is its training and outreach arm, and the curriculum is built so that
 what a learner practises here is what the project actually does.
 
@@ -97,15 +98,25 @@ Will Gray-Roncal also teaches the connectomics block (lectures 7–9) of **EN.58
 Frontiers in Neuroengineering**, whose
 [decks are published here]({{ '/technical-training/slides/' | relative_url }}).
 
+### Contributors
+
+- Will Gray-Roncal
+- Sydney Floryanzia
+- *Your name here.*
+
+That last line is not a joke. This curriculum is written in the open under
+[CC BY 4.0]({{ '/license/' | relative_url }}), and the fastest way onto the list is to fix
+something that is wrong. A corrected number, a figure caption that contradicts its figure,
+a worked example that would not survive a reviewer — all of it counts, and none of it
+requires being a connectomics researcher. Start at
+[CONTRIBUTING.md](https://github.com/{{ site.github_username }}/neurotrailblazers/blob/main/CONTRIBUTING.md),
+or just [open an issue](https://github.com/{{ site.github_username }}/neurotrailblazers/issues).
+
 <!--
-  Still to fill in, when someone can supply it:
-    - The rest of the contributor roster: name, role on NeuroTrailblazers, affiliation.
-      Nobody else is documented anywhere in this repository, and inventing names on the
-      page a stranger reads to find out who is behind the site would be a fabrication.
-    - HI-MC's own NIH award number, if it should be published here alongside the IC3 and
-      APEX awards listed above.
-    - Acknowledgements: contributors, reviewers, partner programs.
-  When names land here, add them to CITATION.cff alongside the existing author entries.
+  Contributors: add people as they are confirmed, above the "Your name here" line, and
+  mirror them into CITATION.cff. Roles and affiliations are deliberately not listed for
+  anyone whose role has not been stated — inventing them on the page a stranger reads to
+  find out who is behind the site would be a fabrication.
 -->
 
 ## Contact

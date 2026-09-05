@@ -92,7 +92,7 @@ string returns nothing.
 ## Workstream 2: front door and framing
 
 ### 2.1 About, contact, licence, citation (M)
-- [x] `about.md`: who runs the site, the BRAIN CONNECTS context with award numbers (from the currently unused `_data/connects_learning_map.yml`), how to contact (render `site.email`), how to report an error.
+- [x] `about.md`: who runs the site, the BRAIN CONNECTS context with award numbers (from the currently unused `_data/connects_learning_map.yml`), how to contact (render `site.email`), how to report an error. *(Complete. HI-MC's own award, `UM1NS132250`, was looked up in NIH RePORTER — NINDS, 2023-09-08 to 2028-08-31, PI Jeff W. Lichtman, Harvard — and its dates corroborate the site's existing "2023–2028" for MouseConnects. It is now on the page, in `CITATION.cff` and in `connects_learning_map.yml`, whose `hi_mc` entry was the only one without an award. Contributors: Will Gray-Roncal and Sydney Floryanzia, plus an open invitation. No role or affiliation is published for anyone whose role has not been stated.)*
 - [x] `LICENSE` (recommend CC BY 4.0 for content, MIT for code) and a short `license.md` page; state it in the footer.
 - [x] `CITATION.cff` and a "Cite this site" block on `about.md` and the journal-club page.
 - [x] `CONTRIBUTING.md` on the deployed branch (move or summarise the content standard from `holding/internal-planning`).

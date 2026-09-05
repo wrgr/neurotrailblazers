@@ -19,7 +19,9 @@ entities:
     role: "scientific resource and education partner"
     policy: "link-and-scaffold"
   hi_mc:
+    award: "UM1NS132250"
     role: "authentic CONNECTS research/training workflow"
+    note: "A Center for High-throughput Integrative Mouse Connectomics. NINDS, 2023-2028, PI Jeff W. Lichtman, Harvard University. NeuroTrailblazers is developed inside this project."
   neurotrailblazers:
     role: "learning architecture"
 

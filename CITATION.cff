@@ -10,7 +10,7 @@ abstract: >-
   NeuroTrailblazers is an open curriculum and mentorship platform for nanoscale
   connectomics: nine technical units, 25 curriculum modules, a reference content
   library, learning tracks, and facilitator material. It is developed in the
-  context of the HI-MC (MouseConnects) project of the NIH BRAIN CONNECTS program,
+  context of the HI-MC (MouseConnects) project (NIH BRAIN CONNECTS, UM1NS132250),
   where IC3 and APEX organize and expose the science and NeuroTrailblazers organizes
   the learning.
 type: software
@@ -19,6 +19,8 @@ authors:
     family-names: "Gray-Roncal"
     affiliation: "Johns Hopkins University"
     email: "wgr@jhu.edu"
+  - given-names: "Sydney"
+    family-names: "Floryanzia"
   - name: "NeuroTrailblazers Team"
     website: "https://neurotrailblazers.org"
 url: "https://neurotrailblazers.org"
@@ -36,6 +38,9 @@ identifiers:
   - type: url
     value: "https://neurotrailblazers.org"
     description: "The NeuroTrailblazers site."
+  - type: other
+    value: "UM1NS132250"
+    description: "NIH BRAIN CONNECTS award: HI-MC, A Center for High-throughput Integrative Mouse Connectomics — the project NeuroTrailblazers belongs to."
   - type: other
     value: "U24NS139927"
     description: "NIH BRAIN CONNECTS award: IC3, the Integrative Connectomics Coordination Center."

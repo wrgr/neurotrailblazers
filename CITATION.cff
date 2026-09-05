@@ -1,0 +1,39 @@
+# Citation File Format 1.2.0 — https://citation-file-format.github.io
+#
+# Individual contributors are not yet documented in this repository, so the
+# author is recorded as the team. When the About page lists named people, add
+# them here as `given-names` / `family-names` entries above the team entry.
+cff-version: 1.2.0
+message: "If you use NeuroTrailblazers material in teaching, training or research, please cite it as below."
+title: "NeuroTrailblazers: an open curriculum for nanoscale connectomics"
+abstract: >-
+  NeuroTrailblazers is an open curriculum and mentorship platform for nanoscale
+  connectomics: nine technical units, 25 curriculum modules, a reference content
+  library, learning tracks, and facilitator material. It is developed in the
+  context of the NIH BRAIN CONNECTS program, where IC3 and APEX organize and
+  expose the science and NeuroTrailblazers organizes the learning.
+type: software
+authors:
+  - name: "NeuroTrailblazers Team"
+    website: "https://neurotrailblazers.org"
+url: "https://neurotrailblazers.org"
+repository-code: "https://github.com/wrgr/neurotrailblazers"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - connectomics
+  - neuroscience education
+  - electron microscopy
+  - open curriculum
+  - BRAIN CONNECTS
+identifiers:
+  - type: url
+    value: "https://neurotrailblazers.org"
+    description: "The NeuroTrailblazers site."
+  - type: other
+    value: "U24NS139927"
+    description: "NIH BRAIN CONNECTS award: IC3, the Integrative Connectomics Coordination Center."
+  - type: other
+    value: "U24NS140384"
+    description: "NIH BRAIN CONNECTS award: APEX, the Axonal Projectome EXchange."

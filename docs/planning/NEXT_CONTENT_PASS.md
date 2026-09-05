@@ -66,9 +66,9 @@ string returns nothing.
 **Done when:** all 25 worksheets show rubric criteria, none contains `{: #` or `{{`, and module 05's go/no-go scenario is back.
 
 ### 1.3 Reconcile the three module metadata sources (M)
-- [ ] `_data/track_catalog.yml`: add modules 06 and 07 to a Research-in-Action step (`:133`), module 02 to a Career & Community step (`:195-211`); replace the 15 h and 20 h budgets with sums of module `duration:` front matter or split into "taught" vs "self-study" hours.
-- [ ] Fix the Unit 08 and Unit 09 course-link mismatches against `_data/technical_track.yml` (see review §1.A.5).
-- [ ] Extend `scripts/validate_frontmatter.rb`: every `module_numbers` entry appears in a sequence step; step hours reconcile with declared durations; `technical_capabilities.yml` entries match unit pages.
+- [x] `_data/track_catalog.yml`: add modules 06 and 07 to a Research-in-Action step (`:133`), module 02 to a Career & Community step (`:195-211`); replace the 15 h and 20 h budgets with sums of module `duration:` front matter or split into "taught" vs "self-study" hours. *(Chose total learner hours throughout: every step `hours:` is now the same quantity module `duration:` front matter declares. Module-bearing steps carry `modules:` and `module_hours:`; the three `time_estimate` ranges were raised to match. Convention documented at the head of the data file.)*
+- [x] Fix the Unit 08 and Unit 09 course-link mismatches against `_data/technical_track.yml` (see review §1.A.5). *(The data file was right in both cases; the pages were corrected.)*
+- [x] Extend `scripts/validate_frontmatter.rb`: every `module_numbers` entry appears in a sequence step; step hours reconcile with declared durations; `technical_capabilities.yml` entries match unit pages. *(Track-catalogue gates in `validate_frontmatter.rb`; the unit-page gates — Course links ↔ `technical_track.yml`, `technical_capabilities.yml` ↔ unit pages — in `validate_technical_evidence.rb`, which already owns that data file.)*
 
 **Done when:** a learner following any track sees hours that match the pages, and CI fails on the next drift.
 
@@ -84,12 +84,12 @@ string returns nothing.
 ## Workstream 2: front door and framing
 
 ### 2.1 About, contact, licence, citation (M)
-- [ ] `about.md`: who runs the site, the BRAIN CONNECTS context with award numbers (from the currently unused `_data/connects_learning_map.yml`), how to contact (render `site.email`), how to report an error.
-- [ ] `LICENSE` (recommend CC BY 4.0 for content, MIT for code) and a short `license.md` page; state it in the footer.
-- [ ] `CITATION.cff` and a "Cite this site" block on `about.md` and the journal-club page.
-- [ ] `CONTRIBUTING.md` on the deployed branch (move or summarise the content standard from `holding/internal-planning`).
-- [ ] Footer: links to About, Contact, Licence, GitHub, Accessibility; keep it to one line of links.
-- [ ] Nav: "About" → `/about/`.
+- [x] `about.md`: who runs the site, the BRAIN CONNECTS context with award numbers (from the currently unused `_data/connects_learning_map.yml`), how to contact (render `site.email`), how to report an error.
+- [x] `LICENSE` (recommend CC BY 4.0 for content, MIT for code) and a short `license.md` page; state it in the footer.
+- [x] `CITATION.cff` and a "Cite this site" block on `about.md` and the journal-club page.
+- [x] `CONTRIBUTING.md` on the deployed branch (move or summarise the content standard from `holding/internal-planning`).
+- [x] Footer: links to About, Contact, Licence, GitHub, Accessibility; keep it to one line of links.
+- [x] Nav: "About" → `/about/`.
 
 **Done when:** a stranger can find out who made the site, on what terms they may reuse it, and how to tell someone it is wrong, within two clicks of any page.
 
@@ -109,7 +109,7 @@ string returns nothing.
 - [ ] Remove the six pasted `ui/learning-tracks.html` blocks from pages where they are filler (`avatars/index.md`, `tools/index.md`, `frameworks/index.md`, `models.md`, `education/models.md`, `datasets/index.md`).
 
 ### 2.4 Navigation and tools (S)
-- [ ] Add `/modes/`, `/concepts/`, `/kb/` and the ecosystem page to the nav (Tracks and Core dropdowns respectively).
+- [x] Add `/modes/`, `/concepts/`, `/kb/` and the ecosystem page to the nav (Tracks and Core dropdowns respectively).
 - [ ] Give `/tools/` an honest identity: list the site's own interactives (citation graph, KB visualisations, concept explorer, module labs, kids quiz) and move "Ask an Expert" under a Help heading with a human fallback (the contact route from 2.1).
 - [ ] Add `aria-hidden="true"` to every `.card-icon`; strip emoji from headings and buttons in `neuronauts/kids.md` and `initiatives/outreach.md` (replace with the line icons from the brand guide when available).
 

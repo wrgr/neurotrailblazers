@@ -3097,3 +3097,39 @@ a.arch-card,
     min-height: 38px;
   }
 }
+
+/* Reference badge on the technical-course card grid. The atlas sits in the same
+   data list as the nine units but is consulted rather than completed, which made
+   the page render ten cards under a nine-unit claim. */
+.pill-reference {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--amber-lt, #fdecd6);
+  color: var(--warn, #a8410a);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Footer links. The footer sits on a near-black ground, where unstyled links
+   render UA blue; without this rule they had to carry inline colours. */
+.footer-links {
+  margin: 0 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.footer-links a {
+  color: var(--teal-lt, #b3e4e3);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  text-decoration: underline;
+}

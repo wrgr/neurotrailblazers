@@ -1,3 +1,24 @@
+# Track catalogue.
+#
+# Hours convention (one convention across all three tracks):
+#   Every `hours:` figure in a `sequence` step is TOTAL LEARNER HOURS - the same
+#   quantity that module pages declare in their `duration:` front matter and that
+#   technical units declare in `time_estimate:`. It is not contact/taught time; a
+#   module's taught run-of-show is 60-90 minutes inside a 3-6 hour module.
+#
+#   A step that sends the learner to curriculum modules declares them twice, once
+#   in prose for the reader and once in machine-readable form:
+#     modules:       the module numbers the step covers
+#     module_hours:  the sum of those modules' declared duration midpoints
+#                    (a "4-5 hours" front matter reads as 4.5)
+#     hours:         total for the step - module_hours plus any unit or lab time
+#
+#   `scripts/validate_frontmatter.rb` enforces all of it: every number in
+#   `module_numbers` appears in some step, the prose and the `modules:` list agree,
+#   `module_hours` matches the module front matter, `hours` is never below
+#   `module_hours`, and the track's summed step hours fall inside `time_estimate`.
+#   Neither `modules:` nor `module_hours:` is rendered; `hours:` is, by
+#   `_includes/ui/track-sequence.html`.
 tracks:
   - slug: core-concepts-methods
     title: Core Concepts & Methods
@@ -14,7 +35,7 @@ tracks:
     modes:
       - slug: self-study
         available: true
-        shape: "Read the nine technical units in order, do every lab, and treat units 05-07 as the center of gravity rather than a descriptive interlude. Roughly 40-60 hours."
+        shape: "Read the nine technical units in order, do every lab, and treat units 05-07 as the center of gravity rather than a descriptive interlude. Roughly 31 hours across the nine units and their labs; the module library on top of that is what takes this track to 60-70."
         start_url: /technical-training/01-why-map-the-brain/
         start_label: "Open Unit 01"
         note: "The perceptual units are the part that most needs a second pair of eyes. Find one partner before you reach Unit 05."
@@ -28,7 +49,7 @@ tracks:
         available: false
         shape: "Would sit downstream of this track: the units become the reference a trainee consults while working, and the calibration gate replaces the self-scored drills."
     module_numbers: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-    time_estimate: "40-60 hours of focused work, typically over 8-12 weeks"
+    time_estimate: "60-70 hours of focused work, typically over 12-16 weeks"
     entry_requirement: "None. Introductory biology and comfort with basic arithmetic are enough to start."
     sequence:
       - step: "Frame a question you could actually test"
@@ -54,7 +75,9 @@ tracks:
       - step: "Consolidate through the module library"
         do: "Modules 1, 3-11, using the technical units as the depth reference."
         outcome: "Module competency checks passed."
-        hours: 15
+        modules: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        module_hours: 39.5
+        hours: 39.5
     done_looks_like:
       - "You can look at an EM patch and produce a call, a confidence tier, and an evidence chain drawing on two independent cue families."
       - "Your high-confidence calls are right substantially more often than your overall accuracy - your confidence carries information."
@@ -110,13 +133,19 @@ tracks:
         available: false
         shape: "This is the track the intensive would be built on. The proofreading and QC work here is the closest the site comes to contributory tasks, but nothing downstream currently consumes the output."
     module_numbers: [6, 7, 12, 13, 14, 15, 16, 18, 20, 21]
-    time_estimate: "50-70 hours, typically over 10-14 weeks, alongside a real project"
+    time_estimate: "70-80 hours, typically over 14-18 weeks, alongside a real project"
     entry_requirement: "Core Concepts & Methods, or equivalent working familiarity with EM data and reconstruction."
     sequence:
       - step: "Get reproducible access to real data"
         do: "Dataset access guide, then Technical Unit 04's query lab."
         outcome: "A version-pinned notebook with a reproducibility header."
         hours: 5
+      - step: "Learn how a segmentation fails before you try to repair one"
+        do: "Modules 06 and 07, the segmentation and quality-control pair that Technical Unit 08 builds on."
+        outcome: "An error taxonomy you can apply to a real volume, and one documented correction pass with its quality impact stated."
+        modules: [6, 7]
+        module_hours: 8
+        hours: 8
       - step: "Learn proofreading as an allocation problem"
         do: "Technical Unit 08 and its planning lab."
         outcome: "A proofreading plan with a triage rule, defined levels, and a stopping rule someone else could evaluate."
@@ -132,7 +161,9 @@ tracks:
       - step: "Build the operational habits"
         do: "Modules 12-16, 18, 20, 21."
         outcome: "Working practice in pipelines, big data, visualization, and reproducibility."
-        hours: 20
+        modules: [12, 13, 14, 15, 16, 18, 20, 21]
+        module_hours: 36
+        hours: 36
     done_looks_like:
       - "Every figure you produce records its dataset version, query code, and date."
       - "You can state your proofreading level and stopping rule, and defend both."
@@ -188,13 +219,15 @@ tracks:
         available: false
         shape: "Would matter most here. The norms that decide who thrives in a lab are the ones an intensive program transmits by default to some people and not others; making them explicit is the point."
     module_numbers: [1, 2, 17, 19, 22, 23, 24, 25]
-    time_estimate: "25-35 hours, spread across the whole of a training period rather than completed in a block"
+    time_estimate: "35-45 hours, spread across the whole of a training period rather than completed in a block"
     entry_requirement: "None. This track is relevant from week one, not only at the end."
     sequence:
       - step: "Orient, and name the norms out loud"
-        do: "Start Here, the learner personas, and Module 01."
+        do: "Start Here, the learner personas, and Modules 01 and 02."
         outcome: "A written list of the norms as you understood them - which your mentor then corrects."
-        hours: 4
+        modules: [1, 2]
+        module_hours: 7.5
+        hours: 8
       - step: "Understand the mentoring arc you are inside"
         do: "The MERIT stages on the education models page."
         outcome: "You can say which stage you are in and what support is appropriate to it."
@@ -202,15 +235,21 @@ tracks:
       - step: "Learn to communicate the work"
         do: "Modules 17 and 19, and rehearse one hard question before any presentation."
         outcome: "A result you can defend, including its limitations."
-        hours: 8
+        modules: [17, 19]
+        module_hours: 8.5
+        hours: 9
       - step: "Build a network that is yours"
         do: "Modules 22-23; initiate three professional conversations without your mentor present."
         outcome: "Relationships that do not route through your supervisor."
-        hours: 8
+        modules: [22, 23]
+        module_hours: 8
+        hours: 9
       - step: "Plan the next step deliberately"
         do: "Modules 24-25 and the Future Forward material."
         outcome: "A decision you can articulate, and a plan for learning outside a structured program."
-        hours: 8
+        modules: [24, 25]
+        module_hours: 9.5
+        hours: 10
     done_looks_like:
       - "You can state what you do not know without treating it as an admission."
       - "You know how authorship, review, and funding actually work in your field."

@@ -49,7 +49,9 @@ content_type: navigation
   </section>
 
   <section class="section">
-    <h2>Technical units</h2>
+    <h2>The nine units, and the atlas beside them</h2>
+    <p>Units 01&ndash;09 are ordered and cumulative; each ends in a graded artifact. The atlas is
+    reference: consult it as you go, do not work through it.</p>
     {% assign concept_items = site.data.concepts.concepts %}
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}
@@ -58,6 +60,7 @@ content_type: navigation
       {% assign primary_need = item.user_needs | first %}
       <article class="card">
         <img class="module-thumb" src="{{ '/assets/images/units/' | append: item.slug | append: '.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy" width="1200" height="420">
+        {% if item.slug == 'atlas-connectomics-reference' %}<p class="pill-reference">Reference &mdash; consult, do not complete</p>{% endif %}
         <h3 class="card-title"><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></h3>
         <p class="card-description">{{ item.summary | default: item.mapping_note }}</p>
         {% if item.user_needs %}

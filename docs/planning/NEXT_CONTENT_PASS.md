@@ -73,11 +73,16 @@ string returns nothing.
 **Done when:** a learner following any track sees hours that match the pages, and CI fails on the next drift.
 
 ### 1.4 Datasets as a real collection (M)
-- [ ] Create `_datasets/` with one file per dataset and a fixed schema: species, region, volume, neurons, synapses, size, resolution, modality, portal, paper DOI, access tier, release year, site pages using it. Start with H01, MICrONS, FlyWire, Hemibrain, MANC, BANC, C. elegans, larval zebrafish, MouseConnects.
-- [ ] Migrate the hand-written cards out of `datasets/index.md`; render Featured and Timeline from the collection so numbers cannot diverge.
-- [ ] Make the home page "5+ datasets" stat read the collection length.
+- [x] Create `_datasets/` with one file per dataset and a fixed schema: species, region, volume, neurons, synapses, size, resolution, modality, portal, paper DOI, access tier, release year, site pages using it. Start with H01, MICrONS, FlyWire, Hemibrain, MANC, BANC, C. elegans, larval zebrafish, MouseConnects. *(14 records created, covering everything the page already described. Schema documented at the collection declaration in `_config.yml`; permalink `/datasets/catalog/:name/` to avoid colliding with the hand-written guides. MANC, BANC and larval zebrafish are NOT yet in the catalogue — adding them means sourcing their numbers from the papers, and inventing them was the failure mode this workstream exists to fix. See the follow-up below.)*
+- [x] Migrate the hand-written cards out of `datasets/index.md`; render Featured and Timeline from the collection so numbers cannot diverge. *(597 lines to 194. Featured grid, timeline and each dataset page now read one record.)*
+- [x] Make the home page "5+ datasets" stat read the collection length. *(Now renders 14.)*
 
-**Done when:** `datasets/index.md` contains no dataset numbers as literals.
+**Done when:** `datasets/index.md` contains no dataset numbers as literals. *(Done.)*
+
+**Follow-up, still open:** add `_datasets/manc.md`, `_datasets/banc.md` and a larval
+zebrafish record. Each needs its numbers taken from the paper, not from memory. BANC
+currently appears nowhere on the site at all; MANC and larval zebrafish appear only in
+`technical-training/atlas-connectomics-reference.md`.
 
 ---
 

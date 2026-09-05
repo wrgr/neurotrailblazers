@@ -21,6 +21,31 @@ collections:
   modules:
     output: true
     permalink: /:collection/:name/
+  # One file per dataset under _datasets/. Everything the site says about a dataset is
+  # rendered from these records, so a number appears in exactly one place. Before this
+  # existed, the featured cards and the timeline on /datasets/ described the same
+  # datasets twice and had already diverged on H01's cell count, its synapse count and
+  # its date.
+  #
+  # Schema. Only `title` is required; omit a field rather than guessing at it, and
+  # every record carries `source:` naming where its numbers came from.
+  #   title, short_name          display name, and a short form for cards
+  #   species, region, volume    what was imaged
+  #   cells, synapses           reconstruction scale, as published
+  #   size, resolution, modality how it was acquired
+  #   portal, paper_doi,
+  #   paper_url, press_url       where to go next
+  #   access, status             what a reader can actually get today
+  #   release_year               integer; orders the timeline
+  #   featured, spotlight        booleans; select and rank the cards on /datasets/
+  #   blurb                      one or two sentences for the card
+  #   source                     provenance for every number above
+  # The body is a short page: what it is, what it is good for, what it does not support.
+  datasets:
+    output: true
+    # Not /datasets/:name/ — that namespace already holds the hand-written guides
+    # (access, getting-started, mouseconnects, workflow) and mouseconnects would collide.
+    permalink: /datasets/catalog/:name/
 
 # Default front matter
 defaults:
@@ -35,6 +60,11 @@ defaults:
     values:
       layout: "module"
       permalink: "/modules/:basename/"
+  - scope:
+      path: ""
+      type: "datasets"
+    values:
+      layout: "dataset-entry"
   - scope:
       path: ""
       type: "pages"

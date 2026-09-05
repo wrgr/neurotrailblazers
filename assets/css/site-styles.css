@@ -3133,3 +3133,47 @@ a.arch-card,
 .footer-links a:focus-visible {
   text-decoration: underline;
 }
+
+/* Dataset entry pages. The facts table is the record's front matter rendered
+   verbatim, so a reader can see which fields a dataset does and does not have. */
+.ds-facts-wrap { overflow-x: auto; }
+.ds-facts {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+}
+.ds-facts th,
+.ds-facts td {
+  text-align: left;
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--border, #e2e6ed);
+  vertical-align: top;
+}
+.ds-facts th {
+  width: 11rem;
+  font-weight: 700;
+  color: var(--ink, #0d1117);
+  background: var(--surface, #f7f8fa);
+}
+.ds-source {
+  font-size: 0.9rem;
+  color: var(--muted, #5a6478);
+}
+.dataset-card .dataset-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.6rem;
+}
+.dataset-card .dataset-meta span {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  background: var(--teal-lt, #b3e4e3);
+  color: var(--teal, #006d6b);
+}

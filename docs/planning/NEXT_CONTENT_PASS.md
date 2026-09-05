@@ -172,16 +172,16 @@ New pages, each written to the `docs/CONTENT_REVIEW.md` standard (numbers, worke
 judgement, what the page does not cover, go-deeper links). Seed papers already exist in
 `_data/expert_seed_papers/` for all of them.
 
-- [ ] `content-library/infrastructure/synapse-detection.md` (L). Cleft prediction, partner assignment, E/I classification, benchmarks, cross-dataset degradation. Repoint `_data/open_problems.yml:53`.
-- [ ] `content-library/connectomics/ethics-and-governance.md` (M). Consent for human tissue, de-identification, dual use, data licences, credit for proofreaders. Module 19 links here instead of owning the material.
+- [x] `content-library/infrastructure/synapse-detection.md` (L). Cleft prediction, partner assignment, E/I classification, benchmarks, cross-dataset degradation. Repoint `_data/open_problems.yml:53`. *(~4,500 words. Every number sourced; the CREMI weighting formula, gap-junction figures and MICrONS detector accuracy are named as unsourced in the page's own does-not-cover section rather than asserted.)*
+- [x] `content-library/connectomics/ethics-and-governance.md` (M). Consent for human tissue, de-identification, dual use, data licences, credit for proofreaders. Module 19 links here instead of owning the material. *(~3,250 words. H01's provenance from the Science full text, with the ethics statement located in the supplementary methods rather than implied absent; portal licences with the obligations each imposes; FlyWire's 33 person-years and consortium authorship as the credit worked example.)*
 - [ ] `content-library/case-studies/microns-visual-cortex.md` rewrite (M): co-registration, functional-unit matching, what calcium data does and does not license.
 - [ ] `content-library/connectomics/comparative-connectomics.md` (M): what transfers across worm, fly, mouse, human and what does not.
 - [ ] `content-library/imaging/beyond-em.md` (M): expansion microscopy, X-ray nanotomography, barcoding (MAPseq, BARseq), array tomography, LICONN, with the one-slide contrast case from the graduate decks as the framing.
 - [ ] `content-library/infrastructure/provenance-and-versioning.md` expansion (S): it is the thinnest page and the most-linked norm.
 - [ ] `content-library/cell-types/neuron-type-identification.md` figures and expansion (S).
 - [ ] Figures on all four `imaging/` pages, `artifact-taxonomy.md` first (M; the H01 render pipeline exists). Then clear the 32 pages' `reference_images:` front matter of figures that will not be produced.
-- [ ] `content-library/index.md:166-177`: real destinations for the three orphaned domains; link `computer-vision-ml.md`; decide whether `mri-connectomics.md` stays given `methodology.md:44`.
-- [ ] Datasets timeline: add BANC, MANC, larval zebrafish, whole-mouse-brain efforts (after 1.4).
+- [x] `content-library/index.md:166-177`: real destinations for the three orphaned domains; link `computer-vision-ml.md`; decide whether `mri-connectomics.md` stays given `methodology.md:44`. *(Every domain now links to a journal-club filter that really contains its papers; six filter links had used dimension values absent from the data and silently did nothing. All 13 topic pages linked. `mri-connectomics.md` stays, relabelled as a bridge out of the library for readers arriving from the macroscale side.)*
+- [x] Datasets timeline: add BANC, MANC, larval zebrafish, whole-mouse-brain efforts (after 1.4). *(BANC, MANC, FANC and larval zebrafish added in 1.4; whole-mouse-brain efforts are still open.)*
 - [ ] `hidden-curriculum/career-mechanics.md` companion: the funding and jobs landscape (S–M).
 - [ ] `_data/concepts.yml`: grow from 12 concepts to cover the units and library (M; the explorer UI is already built).
 

@@ -217,7 +217,7 @@ content_type: navigation
             <div class="card">
                 <div class="card-icon" aria-hidden="true">&#128172;</div>
                 <h3>A technical answer</h3>
-                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask-an-Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
+                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
             </div>
             <div class="card">
                 <div class="card-icon" aria-hidden="true">&#128100;</div>

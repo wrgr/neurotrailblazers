@@ -16,7 +16,7 @@ content_type: core
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Learner Personas</h1>
-      <p class="hero-subtitle">People-centered pathways for the technical connectomics track.</p>
+      <p class="hero-subtitle">The four readers this curriculum is written for, and where each one should start.</p>
     </div>
   </div>
 

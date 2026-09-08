@@ -457,7 +457,7 @@ prioritization (Unit 08) or motif analysis (Unit 09).
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 09]({{ '/modules/module09/' | relative_url }})
 - Lecture plan: [Axons and Dendrites lecture plan]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})

@@ -111,7 +111,7 @@ unresolved ambiguity with an escalation note.
 
 ## Connections
 - Unit page: [Neuronal Ultrastructure]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module04]({{ '/modules/module04/' | relative_url }}), [module09]({{ '/modules/module09/' | relative_url }}), [module11]({{ '/modules/module11/' | relative_url }})
 

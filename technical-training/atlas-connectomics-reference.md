@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Atlas: Connectomics Reference"
-description: "A working reference for the technical track: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
+title: "Connectomics Reference Atlas"
+description: "A working reference for the Technical Course: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
 permalink: /technical-training/atlas-connectomics-reference/
 image: /assets/images/units/atlas-connectomics-reference.svg
 image_alt: "Stylized vector art: a reference table with one row highlighted and a bookmark tab."
@@ -239,8 +239,8 @@ is the citable source for a version.*
 
 ## Related
 
-- [Technical Training hub]({{ '/technical-training/' | relative_url }})
-- [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) — the reading list
+- [Technical Course]({{ '/technical-training/' | relative_url }})
+- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) — the reading list
 - [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}) — shared vocabulary
 - [Dataset access guide]({{ '/datasets/access/' | relative_url }}) — clients and starter notebooks
 - [Case studies]({{ '/content-library/' | relative_url }}) — extended treatments of MICrONS, FlyWire, H01, *C. elegans*, and MouseConnects

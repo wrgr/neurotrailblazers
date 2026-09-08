@@ -1,7 +1,7 @@
 ---
-title: "Ask An Expert: Dr. Jeff Lichtman"
+title: "Ask an Expert"
 layout: tool
-description: "Connect with Dr. Lichtman—one of the world's leading connectomics researchers—via our curated AI expert chatbot. Learn about neurons, brain mapping, and scientific insight straight from the source."
+description: "A curated AI chatbot built on Dr. Jeff Lichtman's public materials, for concept questions about brain mapping and research life. It is not Dr. Lichtman and does not reflect his current views."
 permalink: /ask-an-expert/
 slug: ask-an-expert
 track: career-and-community

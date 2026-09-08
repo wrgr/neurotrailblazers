@@ -15,15 +15,15 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
       Did you know your brain has over <strong>86 billion tiny cells</strong> called neurons, connected by <strong>100 trillion secret bridges</strong> called synapses? Join the <strong>Neuronauts crew</strong> to discover how scientists map the brain using giant electron microscopes, smart AI robots, and video games!
     </p>
     <div class="nn-quick-links">
-      <a href="#stories" class="nn-btn nn-btn-primary"><span aria-hidden="true">📖</span> Read Kid Science Stories</a>
-      <a href="#decoder" class="nn-btn nn-btn-secondary"><span aria-hidden="true">🔍</span> Brain Concept Decoder</a>
-      <a href="#detective-game" class="nn-btn nn-btn-accent"><span aria-hidden="true">🎮</span> Play Brain Detective</a>
+      <a href="#stories" class="nn-btn nn-btn-primary">Read Kid Science Stories</a>
+      <a href="#decoder" class="nn-btn nn-btn-secondary">Brain Concept Decoder</a>
+      <a href="#detective-game" class="nn-btn nn-btn-accent">Play Brain Detective</a>
     </div>
   </section>
 
   <!-- Meet the Crew -->
   <section class="nn-crew-section">
-    <h2 class="nn-section-title"><span aria-hidden="true">👋</span> Meet Your Brain Explorer Crew</h2>
+    <h2 class="nn-section-title">Meet Your Brain Explorer Crew</h2>
     <div class="nn-crew-grid">
       <div class="nn-crew-member c-cortex">
         <div class="nn-avatar"><span aria-hidden="true">🧠</span></div>
@@ -60,7 +60,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 
   <!-- Key Papers Explained for Kids -->
   <section class="nn-stories-section" id="stories">
-    <h2 class="nn-section-title"><span aria-hidden="true">🔬</span> Big Science Discoveries Explained for Kids!</h2>
+    <h2 class="nn-section-title">Big Science Discoveries Explained for Kids!</h2>
     <p class="nn-section-desc">Real scientific landmark papers from our <strong>500 Key Papers</strong> collection, translated into awesome stories and analogies:</p>
 
     <div class="nn-story-cards">
@@ -200,7 +200,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 
   <!-- Interactive Concept Decoder -->
   <section class="nn-decoder-section" id="decoder">
-    <h2 class="nn-section-title"><span aria-hidden="true">🔍</span> The Brain Explorer Concept Decoder</h2>
+    <h2 class="nn-section-title">The Brain Explorer Concept Decoder</h2>
     <p class="nn-section-desc">Click any brain word to reveal its secret superpower and kid analogy!</p>
 
     <div class="nn-decoder-grid">
@@ -315,27 +315,27 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         <div class="nn-quiz-step active" data-step="1">
           <p class="nn-quiz-q"><strong>Mission 1:</strong> What is the name of the tiny secret bridge where two brain cells meet and share messages?</p>
           <div class="nn-quiz-options">
-            <button type="button" class="nn-opt-btn" data-correct="true">A) Synapse <span aria-hidden="true">🤝</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="false">B) Spaghetti noodle <span aria-hidden="true">🍝</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="false">C) Telephone pole <span aria-hidden="true">📞</span></button>
+            <button type="button" class="nn-opt-btn" data-correct="true">A) Synapse</button>
+            <button type="button" class="nn-opt-btn" data-correct="false">B) Spaghetti noodle</button>
+            <button type="button" class="nn-opt-btn" data-correct="false">C) Telephone pole</button>
           </div>
         </div>
 
         <div class="nn-quiz-step" data-step="2">
           <p class="nn-quiz-q"><strong>Mission 2:</strong> If you stretched out all the electrical wires inside a human brain, how far would they reach?</p>
           <div class="nn-quiz-options">
-            <button type="button" class="nn-opt-btn" data-correct="false">A) Across a classroom table <span aria-hidden="true">📏</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="true">B) Around the entire Earth 4 times! <span aria-hidden="true">🌍</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="false">C) Exactly 1 mile <span aria-hidden="true">🚗</span></button>
+            <button type="button" class="nn-opt-btn" data-correct="false">A) Across a classroom table</button>
+            <button type="button" class="nn-opt-btn" data-correct="true">B) Around the entire Earth 4 times!</button>
+            <button type="button" class="nn-opt-btn" data-correct="false">C) Exactly 1 mile</button>
           </div>
         </div>
 
         <div class="nn-quiz-step" data-step="3">
           <p class="nn-quiz-q"><strong>Mission 3:</strong> What do scientists call the helper cells that act like the brain's pit crew to clean and feed neurons?</p>
           <div class="nn-quiz-options">
-            <button type="button" class="nn-opt-btn" data-correct="false">A) Jellybeans <span aria-hidden="true">🍬</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="true">B) Glia Gabby &amp; Glial cells <span aria-hidden="true">🛡️</span></button>
-            <button type="button" class="nn-opt-btn" data-correct="false">C) Battery packs <span aria-hidden="true">🔋</span></button>
+            <button type="button" class="nn-opt-btn" data-correct="false">A) Jellybeans</button>
+            <button type="button" class="nn-opt-btn" data-correct="true">B) Glia Gabby &amp; Glial cells</button>
+            <button type="button" class="nn-opt-btn" data-correct="false">C) Battery packs</button>
           </div>
         </div>
 
@@ -355,19 +355,19 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 
   <!-- Teacher & Parent Guide -->
   <section class="nn-guide-section">
-    <h2 class="nn-section-title"><span aria-hidden="true">👩‍🏫</span> For Teachers &amp; Parents</h2>
+    <h2 class="nn-section-title">For Teachers &amp; Parents</h2>
     <div class="nn-guide-grid">
       <div class="nn-guide-card">
-        <h3><span aria-hidden="true">💡</span> Hands-On Classroom Activity</h3>
+        <h3>Hands-On Classroom Activity</h3>
         <p><strong>Pipe Cleaner Neurons:</strong> Have students build neurons using different colored pipe cleaners—red for axons, green for dendrites, and sparkly beads for synaptic vesicles!</p>
         <p>For a ready-made 25-minute lesson with a worksheet, use <a href="{{ '/teaching/projectome-to-synapse/' | relative_url }}">From Projectome to Synapse</a>.</p>
       </div>
       <div class="nn-guide-card">
-        <h3><span aria-hidden="true">🎯</span> Real Research Connection</h3>
+        <h3>Real Research Connection</h3>
         <p>Every story here links to the full explanation on this site, and all of it traces back to our open-access <strong>2,000-paper</strong> <a href="{{ '/technical-training/journal-club/' | relative_url }}">journal club corpus</a>, where each card carries a beginner summary. Older students can read the whole story in <a href="{{ '/neuronauts/' | relative_url }}">The Neuronauts Expedition</a>.</p>
       </div>
       <div class="nn-guide-card">
-        <h3><span aria-hidden="true">🌐</span> Play for Real Science</h3>
+        <h3>Play for Real Science</h3>
         <p>Students can try real 3D proofreading by visiting <strong>FlyWire</strong> (flywire.ai) or <strong>EyeWire</strong> (eyewire.org) to see how citizen science discovers brain wiring.</p>
       </div>
     </div>

@@ -227,9 +227,9 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
 
 ## Teaching resources
 - Writing context in technical track: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
-- Reading support: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading support: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Vocabulary support: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
-- Mentorship and feedback context: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Mentorship and feedback context: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
 

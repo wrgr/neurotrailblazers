@@ -448,7 +448,7 @@ different questions at different scales; see Unit 02 for how these fit together.
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 01]({{ '/modules/module01/' | relative_url }})
 - Lecture plan: [Why Map the Brain lecture plan]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})

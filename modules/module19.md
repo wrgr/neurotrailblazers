@@ -215,10 +215,10 @@ Each student submits their structured review form and decision memo. Instructor 
 - [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) --- a case study raising ethical questions about human tissue consent, open data sharing, and attribution in large collaborations.
 
 ## Teaching resources
-- Review practice context: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Review practice context: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Workflow integrity context: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - QC context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
-- Mentorship/escalation context: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Mentorship/escalation context: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
 

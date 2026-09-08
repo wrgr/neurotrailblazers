@@ -414,7 +414,7 @@ of scope for cortical volume EM.
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 04]({{ '/modules/module04/' | relative_url }})
 - Lecture plan: [Glia lecture plan]({{ '/technical-training/slides/07-glia/' | relative_url }})

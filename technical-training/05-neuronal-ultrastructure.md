@@ -427,7 +427,7 @@ Unit 08.
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 09]({{ '/modules/module09/' | relative_url }}), [Module 11]({{ '/modules/module11/' | relative_url }})
 - Lecture plan: [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})

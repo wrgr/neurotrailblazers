@@ -59,7 +59,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Connections
 - Unit page: [Glia]({{ '/technical-training/07-glia/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module04]({{ '/modules/module04/' | relative_url }})
 

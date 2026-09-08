@@ -529,7 +529,7 @@ Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 10]({{ '/modules/module10/' | relative_url }}), [Module 13]({{ '/modules/module13/' | relative_url }}), [Module 14]({{ '/modules/module14/' | relative_url }}), [Module 15]({{ '/modules/module15/' | relative_url }}), [Module 20]({{ '/modules/module20/' | relative_url }})
 - Lecture plan: [Connectome Analysis and NeuroAI lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})

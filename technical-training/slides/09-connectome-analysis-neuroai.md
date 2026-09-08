@@ -59,7 +59,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Connections
 - Unit page: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module10]({{ '/modules/module10/' | relative_url }}), [module13]({{ '/modules/module13/' | relative_url }}), [module14]({{ '/modules/module14/' | relative_url }}), [module15]({{ '/modules/module15/' | relative_url }}), [module20]({{ '/modules/module20/' | relative_url }})
 

@@ -569,7 +569,7 @@ across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 12]({{ '/modules/module12/' | relative_url }}), [Module 18]({{ '/modules/module18/' | relative_url }})
 - Lecture plan: [Volume Reconstruction Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})

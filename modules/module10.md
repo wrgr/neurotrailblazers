@@ -213,7 +213,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 
 ## Teaching resources
 - [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
-- [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 
 ## References
 - Watts DJ, Strogatz SH (1998) "Collective dynamics of 'small-world' networks." *Nature* 393:440-442.

@@ -37,7 +37,7 @@ items:
         url: "/kb/"
       - title: "Journal Papers"
         url: "/content-library/journal-papers/"
-      - title: "Atlas & Reference"
+      - title: "Connectomics Reference Atlas"
         url: "/technical-training/atlas-connectomics-reference/"
       - title: "Hidden Curriculum"
         url: "/hidden-curriculum/"

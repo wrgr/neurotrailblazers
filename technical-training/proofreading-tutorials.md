@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "EM Proofreading Tutorials & Community Practice Guide"
-description: "Master volume electron microscopy proofreading: false merge/split diagnosis, dendrite/axon tracing in Neuroglancer & CAVE, synapse validation, and curated community resources."
+title: "EM Proofreading Tutorials"
+description: "Volume electron microscopy proofreading in practice: diagnosing false merges and splits, tracing dendrites and axons in Neuroglancer and CAVE, validating synapses, and the community practice guide."
 permalink: /technical-training/proofreading-tutorials/
 track: core-concepts-methods
 pathways:

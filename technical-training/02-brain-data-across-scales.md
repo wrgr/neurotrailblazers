@@ -455,7 +455,7 @@ statistics that operate on the resulting graph (Unit 09).
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 05]({{ '/modules/module05/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
 - Lecture plan: [Brain Data Across Scales lecture plan]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})

@@ -56,7 +56,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Connections
 - Unit page: [Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module12]({{ '/modules/module12/' | relative_url }}), [module18]({{ '/modules/module18/' | relative_url }})
 

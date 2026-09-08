@@ -245,6 +245,16 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 - [x] Validator: `technical_capabilities.yml` ↔ unit pages; in-page "Course links" ↔ `technical_track.yml` (1.3). *(Delivered with 1.3 in `validate_technical_evidence.rb`.)*
 - [x] Validator: no `{{` or `{: #` in generated worksheets; every worksheet rubric has criteria (1.2). *(`scripts/validate_generated_materials.rb`, wired into CI. Accepts both rubric forms in use — criteria inline after the tier label, or nested beneath it — and fails when a tier has neither. Both failure modes fault-injected.)*
 - [x] Validator: every `*.marp.md` under `course/decks/marp/` declares a theme; no slide body is empty (5). *(Same script. It immediately caught the ten unthemed technical decks and the two committed empty slides, which are fixed rather than exempted.)*
+- [x] **Validator, added after 3.1:** site paths written inside backtick code spans resolve
+  to a real page (`scripts/validate_code_span_paths.rb`). `check_site_links.rb` scans only
+  `href=` and `src=`, so a path written as prose-with-monospace is invisible to it — deleting
+  the 25 `modules/slides/moduleNN` pages left all 25 worksheet footers citing the dead path
+  in a code span and the link audit still passed. Scope is narrow on purpose: only strings
+  with both a leading and trailing slash count as site URLs, so repo paths (`scripts/foo.rb`)
+  and asset references are ignored, and an `NN`/`<placeholder>` marks a pattern rather than a
+  link. Zero findings on current content. Verified by injecting the original fault and
+  confirming this gate fails while `check_site_links` stays green, plus a bogus path and a
+  placeholder to check both directions.
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
 - [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
 

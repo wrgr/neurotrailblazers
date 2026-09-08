@@ -81,6 +81,15 @@ jobs:
       - name: Generated teaching materials and deck sources
         run: ruby scripts/validate_generated_materials.rb
 
+      # check_site_links.rb (in the build job below) only scans href= and src=, so a
+      # site path written as prose-with-monospace is invisible to it. That is not
+      # hypothetical: deleting the 25 modules/slides/moduleNN pages left all 25
+      # worksheet footers citing `/modules/slides/moduleNN/` in a code span, and the
+      # link audit still passed. Gate verified by injecting exactly that fault and
+      # confirming this fails while check_site_links stays green.
+      - name: Site paths in code spans
+        run: ruby scripts/validate_code_span_paths.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

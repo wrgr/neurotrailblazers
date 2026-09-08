@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Build one connectome graph representation and justify two metric choices for a defined hypothesis.
 
@@ -54,30 +46,45 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the graph representations content library entry
-- Install NetworkX: `pip install networkx`
-- **00:00-08:00 | Graph abstraction choices**
-- Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. "These are three views of the same biology. Today we work with (b) and (c)."
-- Discussion: "What did we gain and lose in each transformation?"
-- **08:00-20:00 | Graph build demo**
-- Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
-- Visualize the graph with spring layout. Color nodes by cell type.
-- "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
-- **20:00-34:00 | Metric computation**
-- Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
-- Plot degree distribution (log-log). Is it heavy-tailed?
-- Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
-- **34:00-46:00 | Interpretation and null concerns**
-- "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
-- Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?
-- Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.
-- **46:00-60:00 | Competency check**
-- Each learner writes a 1-paragraph graph analysis summary:
-- Schema (nodes, edges, threshold)
-- Two metrics with values and null-model comparisons
-- One biological interpretation and one limitation
-- Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
+## Run of Show (60 min)
+- 00:00-08:00 | Graph abstraction choices
+- 08:00-20:00 | Graph build demo
+- 20:00-34:00 | Metric computation
+- 34:00-46:00 | Interpretation and null concerns
+- 46:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the graph representations content library entry
+  Install NetworkX: `pip install networkx`
+  Minute-by-minute plan
+
+00:00-08:00 | Graph abstraction choices
+  Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. "These are three views of the same biology. Today we work with (b) and (c)."
+  Discussion: "What did we gain and lose in each transformation?"
+
+08:00-20:00 | Graph build demo
+  Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
+  Visualize the graph with spring layout. Color nodes by cell type.
+  "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
+
+20:00-34:00 | Metric computation
+  Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
+  Plot degree distribution (log-log). Is it heavy-tailed?
+  Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
+
+34:00-46:00 | Interpretation and null concerns
+  "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
+  Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?
+  Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.
+
+46:00-60:00 | Competency check
+  Each learner writes a 1-paragraph graph analysis summary:
+  Schema (nodes, edges, threshold)
+  Two metrics with values and null-model comparisons
+  One biological interpretation and one limitation
+  Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
+-->
 
 ---
 

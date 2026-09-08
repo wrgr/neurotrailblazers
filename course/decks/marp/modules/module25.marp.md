@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Submit a capstone portfolio that proves technical capability, communicates decision quality, and demonstrates iterative growth through feedback. Operationally: every artifact carries a caption naming the competency it proves and what a reviewer can check, the portfolio distinguishes what you did from what you were given, and at least one artifact shows a version that was wrong alongside the correction and the reason.
 
@@ -57,19 +49,33 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Portfolio quality exemplar**
-- Show one strong and one weak portfolio side by side, including a strong one that contains a documented error. Ask which one the room would trust with a dataset.
-- **08:00-20:00 | Competency-claim mapping**
-- Learners write claims before selecting artifacts. Circulate asking "what would falsify this claim?" to force claims specific enough to be checked.
-- **20:00-34:00 | Artifact curation and caption drafting**
-- Four-line captions, with line three enforced. Any caption that cannot name a verifiable item is returned rather than discussed.
-- **34:00-46:00 | Feedback exchange round**
-- Each learner sends one artifact with a stated decision, criterion, stage, and deadline. Reviewers must answer the stated question before offering anything else.
-- **46:00-56:00 | Revision planning**
-- Convert feedback into a dated revision list ordered by how much each change alters what the portfolio proves, not by how easy it is.
-- **56:00-60:00 | Final submission checklist**
-- Permission check, dataset versions pinned, README present, contribution statements written.
+## Run of Show (60 min)
+- 00:00-08:00 | Portfolio quality exemplar
+- 08:00-20:00 | Competency-claim mapping
+- 20:00-34:00 | Artifact curation and caption drafting
+- 34:00-46:00 | Feedback exchange round
+- 46:00-56:00 | Revision planning
+- 56:00-60:00 | Final submission checklist
+
+<!--
+00:00-08:00 | Portfolio quality exemplar
+  Show one strong and one weak portfolio side by side, including a strong one that contains a documented error. Ask which one the room would trust with a dataset.
+
+08:00-20:00 | Competency-claim mapping
+  Learners write claims before selecting artifacts. Circulate asking "what would falsify this claim?" to force claims specific enough to be checked.
+
+20:00-34:00 | Artifact curation and caption drafting
+  Four-line captions, with line three enforced. Any caption that cannot name a verifiable item is returned rather than discussed.
+
+34:00-46:00 | Feedback exchange round
+  Each learner sends one artifact with a stated decision, criterion, stage, and deadline. Reviewers must answer the stated question before offering anything else.
+
+46:00-56:00 | Revision planning
+  Convert feedback into a dated revision list ordered by how much each change alters what the portfolio proves, not by how easy it is.
+
+56:00-60:00 | Final submission checklist
+  Permission check, dataset versions pinned, README present, contribution statements written.
+-->
 
 ---
 

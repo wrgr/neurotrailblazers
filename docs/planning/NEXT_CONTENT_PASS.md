@@ -133,9 +133,9 @@ string returns nothing.
   the Technical Course dropdown; both now use the latter, which is also the page's new title.
 
 ### 2.5 Make the personas load-bearing (S)
-- [ ] Home pathway cards name a persona and link `/avatars/`.
-- [ ] Each `tracks/*.md` page opens with "This track is for Julian and Maya" style callouts.
-- [ ] Kids portal: link back to the story, deep-link each of the five story cards to its paper, surface the 3D-print assets, link the 25-minute classroom activity.
+- [x] Home pathway cards name a persona and link `/avatars/`. *(Three of the five audience cards already named their persona and deep-linked the avatar page; the other two — "Just Curious" and "For Programs & Funders" — have no persona to name, and inventing one would be worse than the gap. The section now links `/avatars/` from its standfirst, which was previously the marketing line "Purpose-built experiences for the people who move neuroscience forward".)*
+- [x] Each `tracks/*.md` page opens with "This track is for Julian and Maya" style callouts. *(Already present on all three track pages as a **Who this is for** paragraph naming two personas each, with links. Verified rather than rewritten.)*
+- [x] Kids portal: link back to the story, deep-link each of the five story cards to its paper, surface the 3D-print assets, link the 25-minute classroom activity. *(All four done. The story link and the 3D-print assets were the two that were genuinely missing — the STLs existed and only `neuronauts/index.html` linked them, so a kid arriving at the Junior Lab could not find them. Each of the five story cards now links its named papers by DOI, and says which are free to read: seven of the nine are open access, and the two that are not — Januszewski et al. 2018 and White et al. 1986 — are labelled "behind a paywall" rather than linked as if a reader could open them. The 25-minute activity was already linked from the teacher card. Two fixes found in passing: the stories section still advertised the "500 Key Papers" collection that Workstream 0 corrected at line 366 but not here, and the page title carried an SEO tail ("Neuronauts Junior Lab: Connectomics for Kids & Young Explorers").)*
 
 ---
 
@@ -143,9 +143,9 @@ string returns nothing.
 
 ### 3.1 Finish the module derivatives (M)
 - [x] `_data/module_interactives.yml`: author per-module quiz and microtask for modules 10–25 (16 modules; keep the documented `correct_index` distribution). *(64 new items; correct_index 21/21/22, and no module has all four answers at one index. Note the review's diagnosis was wrong and is corrected there: the include suppressed the section entirely rather than showing filler, so those 16 pages had no interactive layer at all.)*
-- [ ] Speaker notes as HTML comments in all 25 `course/decks/marp/modules/*.marp.md` (the generator should emit a notes block from the run-of-show).
-- [ ] Either build or delete the three phantom resources in `teaching/module22-public-engagement.md` ("Atlas vs. Connectome", "BRAIN Grant Detective", "Public Impact Wall").
-- [ ] Add `track:` front matter to `teaching/module22-public-engagement.md` and `teaching/projectome-to-synapse.md`.
+- [x] Speaker notes as HTML comments in all 25 `course/decks/marp/modules/*.marp.md` (the generator should emit a notes block from the run-of-show). *(The generator now splits the run-of-show into its two levels: the timing spine goes on the slide, the instructor script goes in the note. This was not only a missing-notes problem — module 01's run-of-show slide was a nineteen-bullet wall of verbatim script against a four-bullet deck standard. All 25 spines are now 5-7 bullets and 23 of 25 carry a note; modules 14 and 15 write the whole step on one line with nothing beneath it, so there is genuinely no third level to move, and they get a split at the first sentence instead. Two related defects fixed in the same pass: the "Agenda (60 min)" slide was hardcoded identically on all 25 decks and contradicted each module's real timings, so it is gone and the run-of-show slide carries the real one; and that slide was titled "60-Minute Run-of-Show" on every deck including modules 01-03, whose own pages head the section "Detailed run-of-show (90 minutes)" — the length is now read off the page.)*
+- [x] Either build or delete the three phantom resources in `teaching/module22-public-engagement.md` ("Atlas vs. Connectome", "BRAIN Grant Detective", "Public Impact Wall"). *(Already resolved: none of the three names appears anywhere in the repository outside this plan and the review that raised it. Verified rather than rewritten.)*
+- [x] Add `track:` front matter to `teaching/module22-public-engagement.md` and `teaching/projectome-to-synapse.md`. *(Already present on both — `track: career-and-community`. Verified rather than rewritten.)*
 - [ ] Delete `modules/slides/*.md` (25 link-wrapper pages) once the session kits carry the same four links.
 
 ### 3.2 Close the module content gaps (L)
@@ -207,6 +207,17 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 
 - [ ] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
 - [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Still open:** speaker notes, a source line per figure, and the content itself — several slides overflow because they carry an image plus bullets, which predates the theme and needs an authoring pass, not a CSS one. The en585781 rename is also still open.)*
+- [x] **Found while rendering, now fixed:** `scripts/render_marp.sh` produced
+  machine-dependent output. Marp derives the `<html lang>` attribute from the process
+  locale, so CI's `LC_ALL=C.UTF-8` stamped `lang="POSIX"` into all 39 committed decks —
+  not a valid BCP 47 tag, so assistive technology cannot select a voice from it — while
+  any developer machine with a real locale emitted `en-US`. Re-rendering with sources
+  untouched therefore churned 848 lines across every deck, in whichever direction the
+  last person's locale pointed, burying real content changes. The script now pins
+  `LANG`/`LC_ALL`, so the output is a function of the sources alone, and the decks carry
+  a correct `lang`. Still unpinned, and noted in the script: marp-cli stamps its own
+  version into every output, and the repo installs it with `--no-save` and no
+  `package.json`, so a CLI upgrade rewrites all 39 files.
 - [ ] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
 - [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
 - [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 70 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).

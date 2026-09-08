@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a figure set that communicates connectomics findings accurately, including uncertainty and data-quality context, for both expert and mixed audiences. Students will leave this module able to choose the right visualization form for a given scientific claim, build publication-quality figures using standard tools, and defend every design choice in terms of clarity and honesty.
 
@@ -57,18 +49,49 @@ Produce a figure set that communicates connectomics findings accurately, includi
 
 ---
 
-## 60-Minute Run-of-Show
-- Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
-- Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.
-- Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.
-- Colorblind simulation tool (browser-based).
-- Printed or digital critique rubric (one per student).
-- "Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3."
-- "Reciprocal connections are enriched between Martinotti cells."
-- "Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius."
-- Every student figure includes at least one uncertainty indicator.
-- Captions specify dataset version and analysis parameters.
-- No figure uses a rainbow/jet colormap.
+## Run of Show (60 min)
+- 00:00-10:00 | Visual integrity gallery walk
+- 10:00-20:00 | Claim-to-visual mapping exercise
+- 20:00-35:00 | Figure draft build
+- 35:00-47:00 | Uncertainty and quality overlays
+- 47:00-55:00 | Peer critique and revision
+- 55:00-60:00 | Competency check and wrap-up
+
+<!--
+Materials needed
+  Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
+  Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.
+  Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.
+  Colorblind simulation tool (browser-based).
+  Printed or digital critique rubric (one per student).
+  Timing and instructor script
+
+00:00-10:00 | Visual integrity gallery walk
+  Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Let us learn why."
+
+10:00-20:00 | Claim-to-visual mapping exercise
+  Instructor presents three scientific claims from a mock connectomics study:
+  "Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3."
+  "Reciprocal connections are enriched between Martinotti cells."
+  "Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius."
+  Students work in pairs to select the best plot type for each claim and justify their choice. Instructor circulates, challenging choices: "Why not a node-link diagram for claim 1? What would you lose with a heatmap for claim 3?"
+
+20:00-35:00 | Figure draft build
+  Students open the provided notebook and generate: (a) an adjacency heatmap for the cell-type connectivity matrix, (b) a Sholl plot for the reconstructed neuron. Instructor models adding axis labels, a perceptually uniform colormap, and a scale bar. Students replicate and customize.
+
+35:00-47:00 | Uncertainty and quality overlays
+  Instructor demonstrates adding confidence intervals to the Sholl plot and a "data quality" overlay to the heatmap (hatching for cell-type pairs with fewer than 5 observed connections). Students add these to their own figures. Key script line: "If you cannot see the uncertainty, you cannot evaluate the claim."
+
+47:00-55:00 | Peer critique and revision
+  Students swap figures with a neighbor and complete the critique rubric: Does the figure support the stated claim? Is uncertainty visible? Could it be misinterpreted? Is it colorblind-safe? Students revise based on feedback.
+
+55:00-60:00 | Competency check and wrap-up
+  Each student submits one revised figure with a two-sentence caption. Instructor reviews one or two examples live, highlighting what works and what still needs improvement.
+  Success criteria for this session
+  Every student figure includes at least one uncertainty indicator.
+  Captions specify dataset version and analysis parameters.
+  No figure uses a rainbow/jet colormap.
+-->
 
 ---
 

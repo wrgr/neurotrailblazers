@@ -203,6 +203,87 @@ def timed_lines(text)
   end
 end
 
+# The run-of-show on a module page carries two levels of detail: a timing spine
+# ("### Block 1: Opening hook (00:00-12:00)" or "1. **00:00-08:00 | Label**") and,
+# beneath each step, the instructor script and the moves that fill it. Only the
+# spine belongs on a slide. Flattening both onto one made module 01's run-of-show
+# slide a nineteen-bullet wall of script, against a deck standard of four bullets
+# (docs/brand/BRAND_GUIDE.md §8). This splits them.
+#
+# Returns [spine, detail]: spine is one label per step, detail is the step label
+# followed by its own lines, for the speaker note.
+def run_of_show_steps(text)
+  lines = text.each_line.map(&:strip).reject(&:empty?)
+  timed = lambda do |ln|
+    ln.gsub('**', '').match?(/\A(\d+\.\s+)?\d{1,2}:\d{2}\s*[-\u2013\u2014]\s*\d{1,2}:\d{2}/)
+  end
+
+  # Two spine shapes are in use. Modules 16-21 wrap their timings in "### Materials
+  # needed" / "### Timing and instructor script" / "### Success criteria" sections,
+  # so treating every h3 as a step listed the section names alongside the timings and
+  # produced a ten-line spine. When the section has timed lines, they are the spine
+  # and the h3s are context; only when it has none (modules 01-03, whose steps are
+  # "### Block 1: Opening hook (00:00-12:00)") do the headings become the steps.
+  use_timed = lines.any? { |ln| timed.call(ln) }
+  strip_marker = ->(ln) { ln.sub(/\A#+\s*/, '').sub(/\A(\-|\*|\d+\.)\s+/, '') }
+
+  # A step line is written one of two ways. Modules 12 and 16-25 bold a real label
+  # ("**00:00-08:00 | Architecture framing**") and put the detail on the lines below.
+  # Modules 13-15 bold only the time and then run the whole step into one sentence
+  # plus its detail ("**00:00-08:00** task framing + exemplar failure modes. Show one
+  # split and one merge..."), which put 200-character bullets on the slide. Split the
+  # second shape at its first sentence break so the slide gets the label and the note
+  # gets the rest.
+  split_step = lambda do |ln|
+    bare = strip_marker.call(ln)
+    if (m = bare.match(/\A\*\*(.+?)\*\*\s*(.*)\z/m))
+      label = m[1].strip
+      rest = m[2].strip
+      # A bold span carrying more than the time range is already the label.
+      return [label, rest] unless label.gsub(/[\d:[:space:]\u2013\u2014-]/, '').empty?
+
+      bare = [label, rest].reject(&:empty?).join(' ')
+    end
+    if (m = bare.match(/\A(.{25,110}?[.!?])\s+(\S.*)\z/m))
+      [m[1].strip, m[2].strip]
+    else
+      [bare, '']
+    end
+  end
+
+  steps = []
+  preamble = []
+  lines.each do |line|
+    if use_timed ? timed.call(line) : line.start_with?('###')
+      label, trailing = split_step.call(line)
+      steps << { label: label, detail: trailing.empty? ? [] : [trailing] }
+    elsif steps.empty?
+      preamble << strip_marker.call(line)
+    else
+      steps.last[:detail] << strip_marker.call(line)
+    end
+  end
+
+  spine = steps.map { |st| "- #{st[:label].gsub('**', '')}" }
+  detail = []
+  detail << preamble.join("\n  ") unless preamble.empty?
+  steps.reject { |st| st[:detail].empty? }.each do |st|
+    detail << [st[:label].gsub('**', ''), *st[:detail].map { |d| "  #{d.gsub('**', '')}" }].join("\n")
+  end
+  [spine, detail]
+end
+
+# Marp reads an HTML comment in a slide body as that slide's presenter note. It
+# never renders on the slide itself, so this is where the third level of detail
+# goes (brand guide deck rule 6). Returns '' when there is nothing to say, so a
+# slide never carries an empty comment.
+def speaker_note(lines)
+  body = Array(lines).map { |l| l.to_s.strip }.reject(&:empty?)
+  return '' if body.empty?
+
+  "\n<!--\n#{body.join("\n\n")}\n-->"
+end
+
 def bullet_or_dash(items, fallback)
   return fallback if items.empty?
 
@@ -248,6 +329,17 @@ module_paths.each do |path|
                 "- 50:00-58:00 competency check.\n" \
                 "- 58:00-60:00 exit prompt and next-step assignment."
   run_items = normalize_bullets(list_items(run_of_show), default_run)
+  run_spine, run_detail = run_of_show_steps(run_of_show)
+  # The deck used to title this slide "60-Minute Run-of-Show" for every module,
+  # while modules 01-03 head their own section "Detailed run-of-show (90 minutes)".
+  # Read the length off the page instead of asserting one.
+  run_heading = body[/^##\s+([^\n]*run-of-show[^\n]*)$/i, 1].to_s
+  run_minutes = run_heading[/(\d+)\s*-?\s*minutes?/i, 1]
+  run_title = run_minutes ? "Run of Show (#{run_minutes} min)" : 'Run of Show'
+  # Modules whose run-of-show has no step structure at all fall back to the flat
+  # bullet list, and then to the generic shape, rather than shipping a blank slide.
+  run_slide = run_spine.empty? ? run_items : run_spine.join("\n")
+  run_notes = speaker_note(run_detail)
   misconception_lines = normalize_bullets(misconception_items(concept_section), '- Surface and correct one likely misconception during debrief.')
   rubric_deck = rubric_slides(rubric_tiers(rubric_section)) ||
                 "## Assessment Rubric\n- Use module rubric headings on the module page."
@@ -515,14 +607,6 @@ module_paths.each do |path|
 
     ---
 
-    ## Agenda (60 min)
-    - 0-10 min: Frame and model
-    - 10-35 min: Guided practice
-    - 35-50 min: Debrief and misconception correction
-    - 50-60 min: Competency check + exit ticket
-
-    ---
-
     ## Capability Target
     #{capability}
 
@@ -538,8 +622,9 @@ module_paths.each do |path|
 
     ---
 
-    ## 60-Minute Run-of-Show
-    #{run_items}
+    ## #{run_title}
+    #{run_slide}
+    #{run_notes}
 
     ---
 

@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Create a reproducible Jupyter notebook that ingests a connectomics dataset slice, performs one analysis, and exports documented outputs. Demonstrate familiarity with the core Python libraries used in connectomics research: CAVEclient, CloudVolume, NetworkX, pandas, and matplotlib.
 
@@ -58,44 +50,64 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 
 ---
 
-## 60-Minute Run-of-Show
-- **Instructor script:** "Open the sample notebook I have shared. Before we write any code, let's understand the structure." Walk through the five sections of a well-organized notebook:
-- **Header:** title, author, date, dataset version, materialization version.
-- **Setup:** imports and environment configuration.
-- **Data loading:** queries and schema validation.
-- **Analysis:** computation cells with markdown explanations.
-- **Export:** saving outputs with metadata.
-- Show a bad notebook (out-of-order cells, no markdown, hidden state) and a good notebook side by side. Ask: "Which one would you trust for a paper?"
-- **Instructor script:** "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:
-- `pip install caveclient cloud-volume networkx pandas matplotlib`
-- Demonstrate `pip freeze > requirements.txt` for version pinning.
-- Live demo of each library (2-3 minutes each):
-- **CAVEclient:** initialize client, query a synapse table, show resulting DataFrame.
-- **CloudVolume:** open a volume, download a small image cutout, display it.
-- **NetworkX:** build a tiny graph from 10 synapses, visualize it.
-- **pandas:** filter the synapse DataFrame by brain region, compute mean synapse count per cell type.
-- **matplotlib:** plot a histogram of synapse counts.
-- **Instructor script:** "Now you build. Your task: query synapses for a specific brain region, count connections between cell types, and plot the result. I will walk you through step by step, but you write the code."
-- Step-by-step guided coding:
-- Initialize CAVEclient and set materialization version (3 min).
-- Query synapse table filtered by brain region (5 min).
-- Group by pre/post cell type and count synapses (5 min).
-- Build a NetworkX graph from the grouped data (5 min).
-- Plot a bar chart of top 10 connections by synapse count (4 min).
-- Instructor circulates and helps with errors. Common issues: authentication tokens, version mismatches, column name typos.
-- **Instructor script:** "A plot without labels is not a figure --- it is a sketch. Let's make yours publication-ready."
-- Learners add: axis labels, title, legend, caption in a markdown cell below the figure.
-- Export figure as PNG and SVG. Export data table as CSV with a header comment recording the query parameters and materialization version.
-- Demonstrate saving a metadata JSON file: `{"dataset": "...", "materialization_version": ..., "query_date": "...", "parameters": {...}}`.
-- **Instructor script:** "The moment of truth. Restart your kernel and run all cells. If anything breaks, that is a reproducibility bug --- fix it now."
-- Learners restart kernel and run all cells. Instructor helps debug common issues:
-- Cells that depend on variables defined out of order.
-- Cells that depend on interactive state (e.g., widget selections).
-- Missing imports that were run in a previous session.
-- Discuss: "Why does this matter? Because six months from now, you will need to regenerate this figure for a revision, and you will not remember what you did."
-- Learners submit their completed notebook.
-- **Instructor script:** "Your notebook should pass three tests: (1) it runs from clean kernel without errors, (2) every output has a markdown explanation, (3) someone who has never seen your code can understand what it does and reproduce it."
-- Exit ticket: (1) link to submitted notebook; (2) one sentence describing the most useful library you learned today and why.
+## Run of Show (90 min)
+- Block 1: Notebook anatomy (00:00-12:00)
+- Block 2: Environment setup and library tour (12:00-28:00)
+- Block 3: Guided analysis sprint (28:00-50:00)
+- Block 4: Visualization and export (50:00-65:00)
+- Block 5: Clean rerun test (65:00-80:00)
+- Block 6: Competency check and exit ticket (80:00-90:00)
+
+<!--
+Block 1: Notebook anatomy (00:00-12:00)
+  Instructor script: "Open the sample notebook I have shared. Before we write any code, let's understand the structure." Walk through the five sections of a well-organized notebook:
+  Header: title, author, date, dataset version, materialization version.
+  Setup: imports and environment configuration.
+  Data loading: queries and schema validation.
+  Analysis: computation cells with markdown explanations.
+  Export: saving outputs with metadata.
+  Show a bad notebook (out-of-order cells, no markdown, hidden state) and a good notebook side by side. Ask: "Which one would you trust for a paper?"
+
+Block 2: Environment setup and library tour (12:00-28:00)
+  Instructor script: "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:
+  `pip install caveclient cloud-volume networkx pandas matplotlib`
+  Demonstrate `pip freeze > requirements.txt` for version pinning.
+  Live demo of each library (2-3 minutes each):
+  CAVEclient: initialize client, query a synapse table, show resulting DataFrame.
+  CloudVolume: open a volume, download a small image cutout, display it.
+  NetworkX: build a tiny graph from 10 synapses, visualize it.
+  pandas: filter the synapse DataFrame by brain region, compute mean synapse count per cell type.
+  matplotlib: plot a histogram of synapse counts.
+
+Block 3: Guided analysis sprint (28:00-50:00)
+  Instructor script: "Now you build. Your task: query synapses for a specific brain region, count connections between cell types, and plot the result. I will walk you through step by step, but you write the code."
+  Step-by-step guided coding:
+  Initialize CAVEclient and set materialization version (3 min).
+  Query synapse table filtered by brain region (5 min).
+  Group by pre/post cell type and count synapses (5 min).
+  Build a NetworkX graph from the grouped data (5 min).
+  Plot a bar chart of top 10 connections by synapse count (4 min).
+  Instructor circulates and helps with errors. Common issues: authentication tokens, version mismatches, column name typos.
+
+Block 4: Visualization and export (50:00-65:00)
+  Instructor script: "A plot without labels is not a figure --- it is a sketch. Let's make yours publication-ready."
+  Learners add: axis labels, title, legend, caption in a markdown cell below the figure.
+  Export figure as PNG and SVG. Export data table as CSV with a header comment recording the query parameters and materialization version.
+  Demonstrate saving a metadata JSON file: `{"dataset": "...", "materialization_version": ..., "query_date": "...", "parameters": {...}}`.
+
+Block 5: Clean rerun test (65:00-80:00)
+  Instructor script: "The moment of truth. Restart your kernel and run all cells. If anything breaks, that is a reproducibility bug --- fix it now."
+  Learners restart kernel and run all cells. Instructor helps debug common issues:
+  Cells that depend on variables defined out of order.
+  Cells that depend on interactive state (e.g., widget selections).
+  Missing imports that were run in a previous session.
+  Discuss: "Why does this matter? Because six months from now, you will need to regenerate this figure for a revision, and you will not remember what you did."
+
+Block 6: Competency check and exit ticket (80:00-90:00)
+  Learners submit their completed notebook.
+  Instructor script: "Your notebook should pass three tests: (1) it runs from clean kernel without errors, (2) every output has a markdown explanation, (3) someone who has never seen your code can understand what it does and reproduce it."
+  Exit ticket: (1) link to submitted notebook; (2) one sentence describing the most useful library you learned today and why.
+-->
 
 ---
 

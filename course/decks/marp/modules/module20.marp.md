@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Design and execute a connectomics inference plan that includes null-model choice, multiplicity control, uncertainty reporting, and explicit claim boundaries.
 
@@ -60,32 +52,52 @@ Design and execute a connectomics inference plan that includes null-model choice
 
 ---
 
-## 60-Minute Run-of-Show
-- Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.
-- Bring one motif or connectivity claim from a paper you have read, with its stated null.
-- **00:00-06:00 | Framing: the null is the scientific step**
-- Prompt: "Same graph, same motif, three null models, three different conclusions. Which one is right?"
-- Establish that the answer depends on what the hypothesis treats as uninteresting.
-- **06:00-18:00 | Worked example: reciprocity across nulls**
-- Instructor works the Unit 09 example live: 100 neurons, 1,200 edges, 210 reciprocal pairs.
-- Erdos-Renyi gives 2.9x. Degree-preserving gives 1.4x. Degree-and-distance gives 1.14x, not significant.
-- Think aloud about which null matches which hypothesis, not which gives the nicer number.
-- **18:00-30:00 | Guided practice: write the uninteresting explanation**
-- In pairs, learners take their brought-in claim and write, in words, the sentence "this result would be uninteresting if ___".
-- Then name the null that preserves exactly that.
-- Instructor circulates asking "what does your null preserve, and what does it randomize?"
-- **30:00-40:00 | Multiplicity**
-- Count the tests actually run, including unreported ones. Choose a correction and justify it.
-- Surface the dependence problem: triad counts move together, so analytic p-values overstate confidence. Permutation inference respects the dependence.
-- **40:00-50:00 | Robustness and error sensitivity**
-- Each learner names one preprocessing choice (synapse threshold, inclusion criteria, boundary handling) and states how they would test sensitivity to it.
-- Introduce the error-simulation check: perturb the graph at measured merge and split rates, report the band.
-- **50:00-57:00 | Competency check**
-- Each learner submits: estimand, null model with what it preserves, correction strategy, one robustness check, and one claim they will not make.
-- **57:00-60:00 | Exit ticket**
-- "One result I now doubt, and the null model that would settle it."
-- **At 30 minutes:** every pair can state their null in terms of what it preserves, not just its name. If not, re-teach before proceeding.
-- **At 50 minutes:** learners distinguish an exploratory finding from a confirmatory one in their own write-up.
+## Run of Show (60 min)
+- 00:00-06:00 | Framing: the null is the scientific step
+- 06:00-18:00 | Worked example: reciprocity across nulls
+- 18:00-30:00 | Guided practice: write the uninteresting explanation
+- 30:00-40:00 | Multiplicity
+- 40:00-50:00 | Robustness and error sensitivity
+- 50:00-57:00 | Competency check
+- 57:00-60:00 | Exit ticket
+
+<!--
+Pre-class preparation (15 min async)
+  Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.
+  Bring one motif or connectivity claim from a paper you have read, with its stated null.
+  Minute-by-minute plan
+
+00:00-06:00 | Framing: the null is the scientific step
+  Prompt: "Same graph, same motif, three null models, three different conclusions. Which one is right?"
+  Establish that the answer depends on what the hypothesis treats as uninteresting.
+
+06:00-18:00 | Worked example: reciprocity across nulls
+  Instructor works the Unit 09 example live: 100 neurons, 1,200 edges, 210 reciprocal pairs.
+  Erdos-Renyi gives 2.9x. Degree-preserving gives 1.4x. Degree-and-distance gives 1.14x, not significant.
+  Think aloud about which null matches which hypothesis, not which gives the nicer number.
+
+18:00-30:00 | Guided practice: write the uninteresting explanation
+  In pairs, learners take their brought-in claim and write, in words, the sentence "this result would be uninteresting if ___".
+  Then name the null that preserves exactly that.
+  Instructor circulates asking "what does your null preserve, and what does it randomize?"
+
+30:00-40:00 | Multiplicity
+  Count the tests actually run, including unreported ones. Choose a correction and justify it.
+  Surface the dependence problem: triad counts move together, so analytic p-values overstate confidence. Permutation inference respects the dependence.
+
+40:00-50:00 | Robustness and error sensitivity
+  Each learner names one preprocessing choice (synapse threshold, inclusion criteria, boundary handling) and states how they would test sensitivity to it.
+  Introduce the error-simulation check: perturb the graph at measured merge and split rates, report the band.
+
+50:00-57:00 | Competency check
+  Each learner submits: estimand, null model with what it preserves, correction strategy, one robustness check, and one claim they will not make.
+
+57:00-60:00 | Exit ticket
+  "One result I now doubt, and the null model that would settle it."
+  Formative checkpoints
+  At 30 minutes: every pair can state their null in terms of what it preserves, not just its name. If not, re-teach before proceeding.
+  At 50 minutes: learners distinguish an exploratory finding from a confirmatory one in their own write-up.
+-->
 
 ---
 

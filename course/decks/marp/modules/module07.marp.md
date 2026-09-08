@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Execute a proofreading triage cycle that ranks corrections by impact and issues a transparent QC decision.
 
@@ -53,37 +45,52 @@ Not all errors are worth fixing. A merge error on a large interneuron with 500 s
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the proofreading strategies content library entry
-- Review the worked examples content library entry (at least Scenario 1 and 4)
-- **00:00-10:00 | Triage philosophy**
-- Open with: "You have 100 errors flagged in your volume and time to fix 20. Which 20 do you choose?"
-- Discuss: visual salience does not equal scientific importance. The ugliest error (a weird tentacle from a merge) may be less important than a subtle split in a key neuron.
-- Introduce impact-weighting framework.
-- Show a concrete example: two errors side by side, one visually dramatic but low-impact, one subtle but high-impact. Ask learners which they would fix first and why.
-- **10:00-24:00 | Queue classification exercise**
-- Present 12 pre-identified errors with brief descriptions. Learners work in pairs to:
-- Classify each by type (merge/split/boundary)
-- Estimate impact (high/medium/low) based on segment size and analysis relevance
-- Rank the top 5 for correction
-- Debrief: compare rankings across pairs. Where do teams disagree? Disagreements often reveal implicit assumptions about what matters.
-- **24:00-38:00 | Correction sprint**
-- Learners fix their top 5 errors in the practice dataset.
-- Instructor circulates: "Show me why you think this is a merge error." "What evidence did you check before splitting?"
-- Emphasis on verification after each correction.
-- Common pitfall to watch for: learners who split a merge but forget to re-merge the orphaned fragment with the correct parent segment.
-- **38:00-50:00 | Threshold-based release decisions**
-- Compute metrics before and after the correction sprint.
-- Introduce release thresholds: "If ERL > 30 um and synapse F1 > 0.80, we release. If not, more proofreading."
-- Group discussion: are we above threshold? If not, what would we fix next?
-- Key teaching moment: the threshold should be set before proofreading begins, not adjusted after seeing the results. Moving the goalposts undermines the purpose of having thresholds.
-- **50:00-60:00 | Competency check**
-- Each learner writes a 4-sentence "release recommendation memo":
-- Current quality metrics
-- What was fixed
-- What remains unfixed and why
-- Go/no-go recommendation
-- Exit ticket: "One rule for when an error MUST be fixed before release."
+## Run of Show (60 min)
+- 00:00-10:00 | Triage philosophy
+- 10:00-24:00 | Queue classification exercise
+- 24:00-38:00 | Correction sprint
+- 38:00-50:00 | Threshold-based release decisions
+- 50:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the proofreading strategies content library entry
+  Review the worked examples content library entry (at least Scenario 1 and 4)
+  Minute-by-minute plan
+
+00:00-10:00 | Triage philosophy
+  Open with: "You have 100 errors flagged in your volume and time to fix 20. Which 20 do you choose?"
+  Discuss: visual salience does not equal scientific importance. The ugliest error (a weird tentacle from a merge) may be less important than a subtle split in a key neuron.
+  Introduce impact-weighting framework.
+  Show a concrete example: two errors side by side, one visually dramatic but low-impact, one subtle but high-impact. Ask learners which they would fix first and why.
+
+10:00-24:00 | Queue classification exercise
+  Present 12 pre-identified errors with brief descriptions. Learners work in pairs to:
+  Classify each by type (merge/split/boundary)
+  Estimate impact (high/medium/low) based on segment size and analysis relevance
+  Rank the top 5 for correction
+  Debrief: compare rankings across pairs. Where do teams disagree? Disagreements often reveal implicit assumptions about what matters.
+
+24:00-38:00 | Correction sprint
+  Learners fix their top 5 errors in the practice dataset.
+  Instructor circulates: "Show me why you think this is a merge error." "What evidence did you check before splitting?"
+  Emphasis on verification after each correction.
+  Common pitfall to watch for: learners who split a merge but forget to re-merge the orphaned fragment with the correct parent segment.
+
+38:00-50:00 | Threshold-based release decisions
+  Compute metrics before and after the correction sprint.
+  Introduce release thresholds: "If ERL > 30 um and synapse F1 > 0.80, we release. If not, more proofreading."
+  Group discussion: are we above threshold? If not, what would we fix next?
+  Key teaching moment: the threshold should be set before proofreading begins, not adjusted after seeing the results. Moving the goalposts undermines the purpose of having thresholds.
+
+50:00-60:00 | Competency check
+  Each learner writes a 4-sentence "release recommendation memo":
+  Current quality metrics
+  What was fixed
+  What remains unfixed and why
+  Go/no-go recommendation
+  Exit ticket: "One rule for when an error MUST be fixed before release."
+-->
 
 ---
 

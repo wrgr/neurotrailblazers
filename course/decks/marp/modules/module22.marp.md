@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Deliver a 10-minute connectomics talk with evidence-linked claims, explicit uncertainty, and audience-appropriate language, then respond to questions without overclaiming. Operationally: every slide carries one claim and names the dataset version behind it, you can write down in advance the two questions you are most likely to be asked, and you have a rehearsed answer to each that ends in a next test rather than a defense.
 
@@ -57,23 +49,37 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Framing and exemplar**
-- Instructor demonstrates one evidence-linked opening slide.
-- Show two versions of the same opener, one starting with field history and one with the question. Script line: "You have sixty seconds before the audience decides how hard to listen."
-- **08:00-18:00 | Claim tree workshop**
-- Learners draft question-claim-evidence-caveat map, capped at three claims.
-- Circulate asking one question only: "what is the evidence node under this claim, and which dataset version?"
-- **18:00-30:00 | Slide drafting sprint**
-- Build 4-slide mini-talk (problem, method, result, limitation).
-- Require the provenance line and a named uncertainty rung. Early finishers draft backup slides, not more main slides.
-- **30:00-42:00 | Peer critique round**
-- Review for clarity, caveat visibility, and claim discipline, under one narrow brief: mark every place the spoken claim outruns the slide's evidence.
-- **42:00-54:00 | Q&A simulation**
-- Each learner answers two critique questions.
-- Assign types so everyone gets one methods challenge and one alternative-explanation question. Name the type before judging the answer.
-- **54:00-60:00 | Debrief and competency check**
-- Submit revised claim language and one uncertainty statement, then name the question you most fear. That list is next session's material.
+## Run of Show (60 min)
+- 00:00-08:00 | Framing and exemplar
+- 08:00-18:00 | Claim tree workshop
+- 18:00-30:00 | Slide drafting sprint
+- 30:00-42:00 | Peer critique round
+- 42:00-54:00 | Q&A simulation
+- 54:00-60:00 | Debrief and competency check
+
+<!--
+00:00-08:00 | Framing and exemplar
+  Instructor demonstrates one evidence-linked opening slide.
+  Show two versions of the same opener, one starting with field history and one with the question. Script line: "You have sixty seconds before the audience decides how hard to listen."
+
+08:00-18:00 | Claim tree workshop
+  Learners draft question-claim-evidence-caveat map, capped at three claims.
+  Circulate asking one question only: "what is the evidence node under this claim, and which dataset version?"
+
+18:00-30:00 | Slide drafting sprint
+  Build 4-slide mini-talk (problem, method, result, limitation).
+  Require the provenance line and a named uncertainty rung. Early finishers draft backup slides, not more main slides.
+
+30:00-42:00 | Peer critique round
+  Review for clarity, caveat visibility, and claim discipline, under one narrow brief: mark every place the spoken claim outruns the slide's evidence.
+
+42:00-54:00 | Q&A simulation
+  Each learner answers two critique questions.
+  Assign types so everyone gets one methods challenge and one alternative-explanation question. Name the type before judging the answer.
+
+54:00-60:00 | Debrief and competency check
+  Submit revised claim language and one uncertainty statement, then name the question you most fear. That list is next session's material.
+-->
 
 ---
 

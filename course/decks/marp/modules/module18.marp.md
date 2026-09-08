@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a reproducible preprocessing release that transforms raw or intermediate connectomics outputs into analysis-ready data, with explicit quality gates and full provenance. Students will be able to identify the specific cleaning operations that shape biological conclusions, justify every threshold decision, and document their preprocessing pipeline so that another researcher can audit and reproduce it.
 
@@ -78,14 +70,44 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 
 ---
 
-## 60-Minute Run-of-Show
-- One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels).
-- Segment table with size distribution spanning 5 orders of magnitude.
-- Shared preprocessing decision sheet (printed or digital template).
-- QC dashboard template (pre/post metric comparison).
-- Cleaning decisions are deterministic, justified, and documented in real time.
-- QC thresholds are tied to operational actions (not just reported).
-- Release note exposes at least one unresolved interpretation risk.
+## Run of Show (60 min)
+- 00:00-08:00 | Setup and target framing
+- 08:00-18:00 | Instructor modeling: ingest and anomaly screening
+- 18:00-32:00 | Team preprocessing design
+- 32:00-44:00 | QC pass
+- 44:00-54:00 | Cross-team review
+- 54:00-60:00 | Competency checkpoint
+
+<!--
+Materials
+  One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels).
+  Segment table with size distribution spanning 5 orders of magnitude.
+  Shared preprocessing decision sheet (printed or digital template).
+  QC dashboard template (pre/post metric comparison).
+  Timing and instructor script
+
+00:00-08:00 | Setup and target framing
+  Instructor presents the scenario: "You have received a connectomics export. Before you can analyze it, you must clean it. But every cleaning decision changes your results. Today we learn to clean responsibly." Display the raw data summary statistics. Define the release objective: an analysis-ready synapse table and neuron table with documented provenance. Define non-negotiable quality gates: no duplicate IDs, no unresolved foreign keys, all thresholds documented.
+
+08:00-18:00 | Instructor modeling: ingest and anomaly screening
+  Live demonstration: load the synapse table, compute the confidence score distribution, identify the bimodal peak (true synapses vs false positives). Show the segment size distribution on a log scale, point out the debris tail. Check for orphan IDs. Key script line: "Before you touch the data, understand its shape. The distribution plot is your first diagnostic tool."
+
+18:00-32:00 | Team preprocessing design
+  Teams of 3-4 draft cleaning rules for each identified issue. Each team must produce a preprocessing decision table with columns: issue, proposed action, threshold, rationale, estimated impact. Instructor circulates, challenging threshold choices: "Why 50 and not 40? What do you lose at 50 that you keep at 40?"
+
+32:00-44:00 | QC pass
+  Teams compute (or estimate from the provided distributions) pre/post metrics: total synapse count, total segment count, mean synapses per neuron, fraction of each cell type remaining. Teams make a release/no-release decision based on their quality gates. Instructor asks: "Did cleaning change the relative representation of cell types? If it did, that is a bias you must report."
+
+44:00-54:00 | Cross-team review
+  Teams swap preprocessing decision tables and QC reports. Each team audits the other's transform log for: missing rationale, unjustified thresholds, potential biological signal loss, and reproducibility gaps. Teams write two specific improvement suggestions.
+
+54:00-60:00 | Competency checkpoint
+  Each team submits one release note with: dataset version, all thresholds and parameters, QC metrics with pass/fail, and at least one documented residual risk. Instructor reviews one example live.
+  Success criteria for this session
+  Cleaning decisions are deterministic, justified, and documented in real time.
+  QC thresholds are tied to operational actions (not just reported).
+  Release note exposes at least one unresolved interpretation risk.
+-->
 
 ---
 

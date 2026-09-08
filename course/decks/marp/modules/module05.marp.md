@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Evaluate EM image patches for artifact risk and issue a justified pass/rework recommendation.
 
@@ -51,36 +43,64 @@ EM image quality is not merely an aesthetic concern — it is the single most co
 
 ---
 
-## 60-Minute Run-of-Show
-- Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
-- Preview the three sample image patches posted to the course portal: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
-- Projected EM image gallery (8-10 patches at varying quality levels)
-- Printed or digital QA decision worksheet (one per student)
-- Timer visible to the class
-- Artifact reference card (single page, double-sided)
-- *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
-- Show four images (ssTEM, SBEM, FIB-SEM, and one intentionally ambiguous). Cold-call students for modality identification and reasoning.
-- Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
-- *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
-- Walk through knife chatter, charging, folds, missing sections, and staining gradients with annotated example images.
-- For each artifact, show the segmentation output on the same region so students can see the predicted error type realized in practice.
-- *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
-- *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
-- Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
-- *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
-- *Instructor cue*: "Pair A said this patch is a pass. Pair B said rework. Both of you, defend your position."
-- Facilitate structured debate on 2-3 patches where pairs disagreed. Push students to articulate the cost tradeoff: what is the cost of re-acquiring versus the cost of proofreading the resulting errors?
-- Introduce the concept of escalation levels (hard stop, flag and monitor, pass) and ask students to re-classify their six patches using this framework.
-- *Instructor cue*: "A QA decision that is not logged does not exist. You are now going to write a QA log entry for your hardest patch."
-- Students write a structured QA entry: image ID, artifact type, severity, decision, rationale, and any conditions (e.g., "pass if proofreading budget is allocated to rows 12-18").
-- Show an example of a well-written and a poorly-written QA entry for comparison.
-- *Instructor cue*: "Final check. I am showing one new patch. You have two minutes to write your QA verdict on an index card. Include artifact type, severity, decision, and one sentence of rationale."
-- Collect index cards. Review after class to identify students who need follow-up.
-- **08:00**: Can students distinguish EM modalities from image appearance?
-- **20:00**: Can students predict segmentation error type from artifact type?
-- **34:00**: Can students apply severity ratings consistently across patches?
-- **46:00**: Can students articulate cost tradeoffs in QA decisions?
-- **56:00**: Can students write a structured QA log entry?
+## Run of Show (60 min)
+- 1. 00:00-08:00 — EM basics refresher
+- 2. 08:00-20:00 — Artifact recognition walkthrough
+- 3. 20:00-34:00 — Learner triage round
+- 4. 34:00-46:00 — QA threshold debate
+- 5. 46:00-56:00 — Decision logging practice
+- 6. 56:00-60:00 — Competency check
+
+<!--
+Pre-class preparation (5-10 min async)
+  Before the session, students should:
+  Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
+  Preview the three sample image patches posted to the course portal: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
+  Materials needed
+  Projected EM image gallery (8-10 patches at varying quality levels)
+  Printed or digital QA decision worksheet (one per student)
+  Timer visible to the class
+  Artifact reference card (single page, double-sided)
+  Minute-by-minute schedule
+
+1. 00:00-08:00 — EM basics refresher
+  *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
+  Show four images (ssTEM, SBEM, FIB-SEM, and one intentionally ambiguous). Cold-call students for modality identification and reasoning.
+  Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
+
+2. 08:00-20:00 — Artifact recognition walkthrough
+  *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
+  Walk through knife chatter, charging, folds, missing sections, and staining gradients with annotated example images.
+  For each artifact, show the segmentation output on the same region so students can see the predicted error type realized in practice.
+  *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
+
+3. 20:00-34:00 — Learner triage round
+  *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
+  Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
+  *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
+
+4. 34:00-46:00 — QA threshold debate
+  *Instructor cue*: "Pair A said this patch is a pass. Pair B said rework. Both of you, defend your position."
+  Facilitate structured debate on 2-3 patches where pairs disagreed. Push students to articulate the cost tradeoff: what is the cost of re-acquiring versus the cost of proofreading the resulting errors?
+  Introduce the concept of escalation levels (hard stop, flag and monitor, pass) and ask students to re-classify their six patches using this framework.
+
+5. 46:00-56:00 — Decision logging practice
+  *Instructor cue*: "A QA decision that is not logged does not exist. You are now going to write a QA log entry for your hardest patch."
+  Students write a structured QA entry: image ID, artifact type, severity, decision, rationale, and any conditions (e.g., "pass if proofreading budget is allocated to rows 12-18").
+  Show an example of a well-written and a poorly-written QA entry for comparison.
+
+6. 56:00-60:00 — Competency check
+  *Instructor cue*: "Final check. I am showing one new patch. You have two minutes to write your QA verdict on an index card. Include artifact type, severity, decision, and one sentence of rationale."
+  Collect index cards. Review after class to identify students who need follow-up.
+  Formative assessment checkpoints
+  08:00: Can students distinguish EM modalities from image appearance?
+  20:00: Can students predict segmentation error type from artifact type?
+  34:00: Can students apply severity ratings consistently across patches?
+  46:00: Can students articulate cost tradeoffs in QA decisions?
+  56:00: Can students write a structured QA log entry?
+  Post-class assignment
+  Select three EM image patches from the course dataset that were not covered in class. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
+-->
 
 ---
 

@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.
 
@@ -57,13 +49,33 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Architecture framing and failure examples**
-- **08:00-20:00 | Access-pattern to index mapping exercise**
-- **20:00-34:00 | Query profiling and bottleneck diagnosis**
-- **34:00-46:00 | Provenance logging implementation**
-- **46:00-56:00 | Team review of reproducibility gaps**
-- **56:00-60:00 | Competency check and next-step assignment**
+## Run of Show (60 min)
+- 00:00-08:00 | Architecture framing and failure examples
+- 08:00-20:00 | Access-pattern to index mapping exercise
+- 20:00-34:00 | Query profiling and bottleneck diagnosis
+- 34:00-46:00 | Provenance logging implementation
+- 46:00-56:00 | Team review of reproducibility gaps
+- 56:00-60:00 | Competency check and next-step assignment
+
+<!--
+00:00-08:00 | Architecture framing and failure examples
+  Open with two failure shapes: the eleven-hour query and the unreproducible figure. Both are design decisions made before any analysis, not accidents.
+
+08:00-20:00 | Access-pattern to index mapping exercise
+  Learners size a 1 mm³ volume by hand, then compute chunk counts at 64³, 128³, and 256³ and the byte cost of one 512 x 512 plane view at each. Instructor challenge: "Which is right, and what did you assume about how people read this volume?"
+
+20:00-34:00 | Query profiling and bottleneck diagnosis
+  Run a supplied query on a 0.1% sample, record wall time, extrapolate, then run the pre-joined version and write down the ratio.
+
+34:00-46:00 | Provenance logging implementation
+  Each learner adds a provenance block — dataset, version, query hash, thresholds, commit, date — to one of their own outputs and shows it to a neighbor.
+
+46:00-56:00 | Team review of reproducibility gaps
+  Pairs swap query packages and attempt to state, from the artifact alone, which segmentation version produced it. Any package that fails this test is marked and repaired.
+
+56:00-60:00 | Competency check and next-step assignment
+  Each learner names the single query that will dominate their own project's cost, and the mitigation they will try first.
+-->
 
 ---
 

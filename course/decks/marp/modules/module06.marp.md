@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Detect and categorize core segmentation errors and execute one correction cycle with documented quality impact.
 
@@ -53,29 +45,44 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the error taxonomy content library entry
-- Open the practice dataset in Neuroglancer and browse for 5 minutes
-- **00:00-08:00 | Segmentation goals**
-- "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
-- Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
-- Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
-- **08:00-22:00 | Error taxonomy with real examples**
-- Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
-- Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
-- Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
-- For each: "What would this error do to your analysis?"
-- **22:00-36:00 | Guided correction round**
-- Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
-- Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
-- **36:00-48:00 | Quality metric interpretation**
-- Introduce: "How do we know if our corrections actually helped?"
-- Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
-- Compute metrics before and after the correction round. Did they improve?
-- **48:00-60:00 | Debrief and competency check**
-- Each learner presents one correction with evidence chain.
-- Group discussion: "Which correction had the biggest impact on the graph? Why?"
-- Exit ticket: "Name the error type you found hardest to detect and why."
+## Run of Show (60 min)
+- 00:00-08:00 | Segmentation goals
+- 08:00-22:00 | Error taxonomy with real examples
+- 22:00-36:00 | Guided correction round
+- 36:00-48:00 | Quality metric interpretation
+- 48:00-60:00 | Debrief and competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the error taxonomy content library entry
+  Open the practice dataset in Neuroglancer and browse for 5 minutes
+  Minute-by-minute plan
+
+00:00-08:00 | Segmentation goals
+  "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
+  Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
+  Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
+
+08:00-22:00 | Error taxonomy with real examples
+  Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
+  Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
+  Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
+  For each: "What would this error do to your analysis?"
+
+22:00-36:00 | Guided correction round
+  Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
+  Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
+
+36:00-48:00 | Quality metric interpretation
+  Introduce: "How do we know if our corrections actually helped?"
+  Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
+  Compute metrics before and after the correction round. Did they improve?
+
+48:00-60:00 | Debrief and competency check
+  Each learner presents one correction with evidence chain.
+  Group discussion: "Which correction had the biggest impact on the graph? Why?"
+  Exit ticket: "Name the error type you found hardest to detect and why."
+-->
 
 ---
 

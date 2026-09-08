@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Write one connectomics study question with measurable structural outputs and one explicit non-claim. Articulate a personal motivation statement linking daily annotation work to a larger scientific mission.
 
@@ -55,24 +47,44 @@ Write one connectomics study question with measurable structural outputs and one
 
 ---
 
-## 60-Minute Run-of-Show
-- **Instructor script:** "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. a fully reconstructed neuron. Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
-- Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.
-- **Instructor script:** "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
-- **C. elegans** (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
-- **FlyWire whole-brain** (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
-- **MouseConnects HI-MC** (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
-- After each case study, ask: "What question drove this project?" Write answers on board.
-- **Instructor script:** "Now it is your turn. Take 5 minutes to write down the broadest brain question you care about. Do not filter." (5 min silent writing)
-- "Now narrow: what specific circuit or region relates to your question? What structural measurement would you need?" (5 min revision)
-- Pair-share: partners critique each other's questions using the checklist: Does it specify organism? Region? Measurement? Limitation? (10 min)
-- **Instructor script:** "Every good connectomics question has a twin: the non-claim. What can your structural data NOT tell you?" Present three example hypotheses and their non-claims. Learners practice writing non-claims for their own questions.
-- Class discussion: collect 3 examples of well-formed question + non-claim pairs.
-- **Instructor script:** "Before we close, I want you to write something personal. Why are you here? Not the resume version --- the real version. What about brains or circuits or data makes you want to do this work? And how will you remind yourself of that reason when the work gets tedious?"
-- Silent writing: 10 minutes. Prompt: "Write 3-5 sentences explaining why you want to work in connectomics and what you will do when motivation dips."
-- Voluntary sharing: 2-3 learners read their statements aloud.
-- Submit: (1) your testable question with metric, dataset, and non-claim; (2) your motivation statement.
-- **Instructor script:** "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
+## Run of Show (90 min)
+- Block 1: Opening hook (00:00-12:00)
+- Block 2: Connectomics landscape (12:00-28:00)
+- Block 3: Question framing workshop (28:00-48:00)
+- Block 4: Evidence-boundary critique (48:00-65:00)
+- Block 5: Motivation statement drafting (65:00-80:00)
+- Block 6: Exit ticket (80:00-90:00)
+
+<!--
+Block 1: Opening hook (00:00-12:00)
+  Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. a fully reconstructed neuron. Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
+  Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.
+
+Block 2: Connectomics landscape (12:00-28:00)
+  Instructor script: "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
+  C. elegans (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
+  FlyWire whole-brain (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
+  MouseConnects HI-MC (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
+  After each case study, ask: "What question drove this project?" Write answers on board.
+
+Block 3: Question framing workshop (28:00-48:00)
+  Instructor script: "Now it is your turn. Take 5 minutes to write down the broadest brain question you care about. Do not filter." (5 min silent writing)
+  "Now narrow: what specific circuit or region relates to your question? What structural measurement would you need?" (5 min revision)
+  Pair-share: partners critique each other's questions using the checklist: Does it specify organism? Region? Measurement? Limitation? (10 min)
+
+Block 4: Evidence-boundary critique (48:00-65:00)
+  Instructor script: "Every good connectomics question has a twin: the non-claim. What can your structural data NOT tell you?" Present three example hypotheses and their non-claims. Learners practice writing non-claims for their own questions.
+  Class discussion: collect 3 examples of well-formed question + non-claim pairs.
+
+Block 5: Motivation statement drafting (65:00-80:00)
+  Instructor script: "Before we close, I want you to write something personal. Why are you here? Not the resume version --- the real version. What about brains or circuits or data makes you want to do this work? And how will you remind yourself of that reason when the work gets tedious?"
+  Silent writing: 10 minutes. Prompt: "Write 3-5 sentences explaining why you want to work in connectomics and what you will do when motivation dips."
+  Voluntary sharing: 2-3 learners read their statements aloud.
+
+Block 6: Exit ticket (80:00-90:00)
+  Submit: (1) your testable question with metric, dataset, and non-claim; (2) your motivation statement.
+  Instructor script: "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
+-->
 
 ---
 

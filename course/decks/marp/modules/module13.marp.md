@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits. Concretely: choose a split strategy from the leakage channels present in your data rather than from convention, pick metrics from the decision the model will support, quantify how much of your reported performance survives a harder split, and write a limitation statement specific enough that a reader knows which uses of your model you would refuse.
 
@@ -58,13 +50,33 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Task framing and leakage examples**
-- **08:00-20:00 | Feature rationale workshop**
-- **20:00-34:00 | Split strategy and baseline modeling**
-- **34:00-46:00 | Error analysis and biologically relevant metrics**
-- **46:00-56:00 | Model-card limitation writing**
-- **56:00-60:00 | Competency checkpoint**
+## Run of Show (60 min)
+- 00:00-08:00 | Task framing and leakage examples
+- 08:00-20:00 | Feature rationale workshop
+- 20:00-34:00 | Split strategy and baseline modeling
+- 34:00-46:00 | Error analysis and biologically relevant metrics
+- 46:00-56:00 | Model-card limitation writing
+- 56:00-60:00 | Competency checkpoint
+
+<!--
+00:00-08:00 | Task framing and leakage examples
+  Present the 0.92 result and ask the room to explain it. Collect hypotheses on the board before revealing the group-split number.
+
+08:00-20:00 | Feature rationale workshop
+  Each learner writes a one-line rationale per feature and marks any feature that could encode dataset identity rather than biology.
+
+20:00-34:00 | Split strategy and baseline modeling
+  Teams implement two splits — random and grouped — on the same data and report both scores. The gap is the exercise.
+
+34:00-46:00 | Error analysis and biologically relevant metrics
+  Learners compute per-class recall and prevalence, then precision at a *k* set by a stated review capacity.
+
+46:00-56:00 | Model-card limitation writing
+  Each learner drafts three unsupported uses for their own model and has a neighbor try to break them.
+
+56:00-60:00 | Competency checkpoint
+  Each learner names the leakage channel they consider most likely still present in their own work.
+-->
 
 ---
 

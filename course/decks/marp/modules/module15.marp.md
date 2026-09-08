@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Implement an LLM-assisted patch-analysis workflow with verification gates, confidence labeling, and explicit human override policies. Concretely: classify every output your workflow produces into named output classes, attach a verification method and a numeric acceptance threshold to each class before any output is used, measure whether the gate costs less than the task it replaces, and log model version, prompt, output, reviewer, and decision so a reader can reconstruct which claims a model touched.
 
@@ -58,13 +50,18 @@ Implement an LLM-assisted patch-analysis workflow with verification gates, confi
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00** scope boundaries and failure examples. Show the unpinned-query failure first, because it is the one that looks like a success.
-- **08:00-20:00** prompt template design, including the schema fields each gate depends on.
-- **20:00-34:00** run sample outputs and score reliability against a known answer; record agreement counts rather than impressions.
-- **34:00-46:00** define verification and override rules per output class, and estimate the cost of each gate.
-- **46:00-56:00** produce governance checklist and risk register, with one class explicitly marked as not yet usable.
-- **56:00-60:00** competency check: each learner states one output class they would refuse to gate, and why.
+## Run of Show (60 min)
+- 00:00-08:00 scope boundaries and failure examples.
+- 08:00-20:00 prompt template design, including the schema fields each gate depends on.
+- 20:00-34:00 run sample outputs and score reliability against a known answer; record agreement counts rather than impressions.
+- 34:00-46:00 define verification and override rules per output class, and estimate the cost of each gate.
+- 46:00-56:00 produce governance checklist and risk register, with one class explicitly marked as not yet usable.
+- 56:00-60:00 competency check: each learner states one output class they would refuse to gate, and why.
+
+<!--
+00:00-08:00 scope boundaries and failure examples.
+  Show the unpinned-query failure first, because it is the one that looks like a success.
+-->
 
 ---
 

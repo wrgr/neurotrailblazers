@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
 
@@ -57,31 +49,46 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 
 ---
 
-## 60-Minute Run-of-Show
-- Review the synapse classification content library entry (Gray Type I/II)
-- Review the motif analysis content library entry (key motif types section)
-- **00:00-10:00 | Synapse cue recap**
-- Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.
-- Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
-- **10:00-24:00 | Motif construction examples**
-- Walk through 3 motifs in the MICrONS dataset:
-- Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
-- Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
-- Feedback inhibition: pyramidal → basket cell → same pyramidal
-- For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
-- **24:00-38:00 | Learner motif analysis**
-- Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
-- Count each motif type. Which are most common?
-- Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
-- **38:00-50:00 | Alternative explanation challenge**
-- For each enriched motif, learners must propose one alternative (non-functional) explanation:
-- "Reciprocal connections are enriched because nearby neurons are more likely to connect" (spatial proximity)
-- "Feed-forward loops are enriched because of cell-type structure" (E→I and I→E are common)
-- Group discussion: how would you test whether the spatial explanation is sufficient?
-- **50:00-60:00 | Competency check**
-- Each learner writes a motif claim/caveat pair:
-- "In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment."
-- Exit ticket: "One motif claim and one plausible confound."
+## Run of Show (60 min)
+- 00:00-10:00 | Synapse cue recap
+- 10:00-24:00 | Motif construction examples
+- 24:00-38:00 | Learner motif analysis
+- 38:00-50:00 | Alternative explanation challenge
+- 50:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Review the synapse classification content library entry (Gray Type I/II)
+  Review the motif analysis content library entry (key motif types section)
+  Minute-by-minute plan
+
+00:00-10:00 | Synapse cue recap
+  Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.
+  Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
+
+10:00-24:00 | Motif construction examples
+  Walk through 3 motifs in the MICrONS dataset:
+  Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
+  Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
+  Feedback inhibition: pyramidal → basket cell → same pyramidal
+  For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
+
+24:00-38:00 | Learner motif analysis
+  Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
+  Count each motif type. Which are most common?
+  Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
+
+38:00-50:00 | Alternative explanation challenge
+  For each enriched motif, learners must propose one alternative (non-functional) explanation:
+  "Reciprocal connections are enriched because nearby neurons are more likely to connect" (spatial proximity)
+  "Feed-forward loops are enriched because of cell-type structure" (E→I and I→E are common)
+  Group discussion: how would you test whether the spatial explanation is sufficient?
+
+50:00-60:00 | Competency check
+  Each learner writes a motif claim/caveat pair:
+  "In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment."
+  Exit ticket: "One motif claim and one plausible confound."
+-->
 
 ---
 

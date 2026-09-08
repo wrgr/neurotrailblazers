@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Submit a conference-ready abstract, produce a coherent poster draft, and deliver a defensible 90-second pitch with clear claim boundaries. Operationally: your abstract spends its word budget on evidence rather than motivation, a stranger can find your core result on the poster within ten seconds from two meters away, and you leave the session with at least two named follow-ups you initiated yourself.
 
@@ -57,19 +49,33 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Framing + exemplar abstract**
-- Display a motivation-heavy abstract and its rewritten version side by side. Ask the group to count the words spent on the field versus on the result.
-- **08:00-20:00 | Abstract sprint (individual)**
-- Learners draft against the sentence budget with a visible word counter. Circulate asking only: "which sentence carries the number?"
-- **20:00-32:00 | Poster wireframe build (pairs)**
-- Wireframe on paper at one-eighth scale. Partners stand two meters back and report what they can read. Anything unreadable moves up or grows.
-- **32:00-44:00 | 90-second pitch practice**
-- Deliver to a partner against a timer, twice, with the second delivery required to be shorter. Ban the background sentence on the second pass.
-- **44:00-54:00 | Q&A and networking simulation**
-- Rehearse the approach, one question, and the exit script. Rotate so everyone plays the senior person once; it is the fastest way to see how little a stranger retains.
-- **54:00-60:00 | Revision checklist + submission plan**
-- Each learner writes the submission deadline, the travel-award deadline, and two named people they intend to talk to.
+## Run of Show (60 min)
+- 00:00-08:00 | Framing + exemplar abstract
+- 08:00-20:00 | Abstract sprint (individual)
+- 20:00-32:00 | Poster wireframe build (pairs)
+- 32:00-44:00 | 90-second pitch practice
+- 44:00-54:00 | Q&A and networking simulation
+- 54:00-60:00 | Revision checklist + submission plan
+
+<!--
+00:00-08:00 | Framing + exemplar abstract
+  Display a motivation-heavy abstract and its rewritten version side by side. Ask the group to count the words spent on the field versus on the result.
+
+08:00-20:00 | Abstract sprint (individual)
+  Learners draft against the sentence budget with a visible word counter. Circulate asking only: "which sentence carries the number?"
+
+20:00-32:00 | Poster wireframe build (pairs)
+  Wireframe on paper at one-eighth scale. Partners stand two meters back and report what they can read. Anything unreadable moves up or grows.
+
+32:00-44:00 | 90-second pitch practice
+  Deliver to a partner against a timer, twice, with the second delivery required to be shorter. Ban the background sentence on the second pass.
+
+44:00-54:00 | Q&A and networking simulation
+  Rehearse the approach, one question, and the exit script. Rotate so everyone plays the senior person once; it is the fastest way to see how little a stranger retains.
+
+54:00-60:00 | Revision checklist + submission plan
+  Each learner writes the submission deadline, the travel-award deadline, and two named people they intend to talk to.
+-->
 
 ---
 

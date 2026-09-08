@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Design one hypothesis test with metric, null model, and interpretation boundary statement.
 
@@ -53,30 +45,45 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the motif analysis content library entry (focus on null models section)
-- Draft one biological question you'd like to test with connectomics data
-- **00:00-08:00 | Framing: good vs bad hypotheses**
-- Show 4 example hypotheses (2 good, 2 poor). Group identifies which are testable and why.
-- Key criteria: measurable endpoint, specified null, interpretation boundary.
-- **08:00-20:00 | Hypothesis drafting**
-- Each learner drafts a hypothesis using a template:
-- "In [dataset/region], [structural feature] is [comparison] compared to [null model]."
-- "This would support [interpretation] but would NOT prove [over-claim]."
-- Peer review: partner evaluates whether the hypothesis is testable.
-- **20:00-34:00 | Metric and null model selection**
-- For each drafted hypothesis, select the appropriate metric and null model.
-- Instructor walks through one example end-to-end: hypothesis → metric → null → expected result → interpretation.
-- Discussion: "What happens if you use the wrong null model?" Show how the same data looks significant or non-significant depending on null choice.
-- **34:00-46:00 | Interpretation workshop**
-- Present 3 pre-computed results (with p-values and z-scores). For each, learners write:
-- Supported claim (what the data shows)
-- Explicit non-claim (what the data does NOT show)
-- One confound that could explain the result
-- Group discussion of each result.
-- **46:00-60:00 | Competency check**
-- Each learner submits their final hypothesis with metric, null model, and interpretation boundaries.
-- Exit ticket: "Write one claim and one explicit non-claim from the same test outcome."
+## Run of Show (60 min)
+- 00:00-08:00 | Framing: good vs bad hypotheses
+- 08:00-20:00 | Hypothesis drafting
+- 20:00-34:00 | Metric and null model selection
+- 34:00-46:00 | Interpretation workshop
+- 46:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the motif analysis content library entry (focus on null models section)
+  Draft one biological question you'd like to test with connectomics data
+  Minute-by-minute plan
+
+00:00-08:00 | Framing: good vs bad hypotheses
+  Show 4 example hypotheses (2 good, 2 poor). Group identifies which are testable and why.
+  Key criteria: measurable endpoint, specified null, interpretation boundary.
+
+08:00-20:00 | Hypothesis drafting
+  Each learner drafts a hypothesis using a template:
+  "In [dataset/region], [structural feature] is [comparison] compared to [null model]."
+  "This would support [interpretation] but would NOT prove [over-claim]."
+  Peer review: partner evaluates whether the hypothesis is testable.
+
+20:00-34:00 | Metric and null model selection
+  For each drafted hypothesis, select the appropriate metric and null model.
+  Instructor walks through one example end-to-end: hypothesis → metric → null → expected result → interpretation.
+  Discussion: "What happens if you use the wrong null model?" Show how the same data looks significant or non-significant depending on null choice.
+
+34:00-46:00 | Interpretation workshop
+  Present 3 pre-computed results (with p-values and z-scores). For each, learners write:
+  Supported claim (what the data shows)
+  Explicit non-claim (what the data does NOT show)
+  One confound that could explain the result
+  Group discussion of each result.
+
+46:00-60:00 | Competency check
+  Each learner submits their final hypothesis with metric, null model, and interpretation boundaries.
+  Exit ticket: "Write one claim and one explicit non-claim from the same test outcome."
+-->
 
 ---
 

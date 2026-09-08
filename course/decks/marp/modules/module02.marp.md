@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Create a personal research-navigation plan that includes role expectations, communication scripts, and mentor support pathways. Demonstrate understanding of research ethics norms specific to connectomics, including data attribution, responsible use of human tissue data, and collaborative proofreading etiquette.
 
@@ -57,36 +49,56 @@ Create a personal research-navigation plan that includes role expectations, comm
 
 ---
 
-## 60-Minute Run-of-Show
-- **Instructor script:** "Raise your hand if you have ever felt lost in a research setting --- not because the science was hard, but because you did not know the unwritten rules." (Expect most hands.) "Today we make those rules explicit."
-- Present 5 hidden-curriculum scenarios (3 minutes each):
-- You disagree with a senior lab member's interpretation at lab meeting. What do you do?
-- You find a bug in shared analysis code. How do you report it?
-- You need help but your mentor is busy. Who else can you ask?
-- You are asked to proofread neurons outside your assigned region. Should you?
-- A collaborator uses your annotation work in a paper without crediting you. How do you respond?
-- For each scenario, collect 2-3 responses from learners, then present a recommended approach.
-- **Instructor script:** "Every research team has roles. Let's map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
-- Learners fill in a role-expectation worksheet for their own research setting (or a hypothetical one).
-- Discuss: where do expectations conflict? Where are they ambiguous?
-- **Instructor script:** "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. Let's talk about what that means."
-- Cover three ethics topics:
-- **Data provenance:** every analysis should reference a specific dataset version. Show how CAVE materialization versions work.
-- **Attribution:** the 287 FlyWire proofreaders were co-authors. Discuss what fair attribution looks like at scale.
-- **Human tissue:** discuss IRB requirements, de-identification, and the responsibility that comes with working on data derived from surgical patients.
-- Group discussion: "What ethical situation might you encounter in your work? How would you handle it?"
-- **Instructor script:** "We are going to practice the hardest part of research: talking to people." Distribute script templates for five common situations (asking for help, admitting uncertainty, giving feedback, receiving feedback, escalating problems).
-- Learners customize scripts for their own context (10 min).
-- Role-play in pairs: one person plays the mentor/colleague, the other practices the script (10 min, switch roles).
-- **Instructor script:** "Now bring it all together. You are going to create a one-page document that you can actually use."
-- Learners draft their "lab navigation playbook" including:
-- Top 5 norms for their research setting.
-- Role-expectation map for their team.
-- Three communication scripts customized for their context.
-- Mentor/support map: at least 3 people they can go to for different types of help.
-- Ethical commitments: how they will handle attribution, data provenance, and error reporting.
-- Submit: (1) your lab navigation playbook; (2) one reflection sentence on the most surprising hidden-curriculum norm you learned today.
-- **Instructor script:** "Keep this playbook accessible. Revise it as you learn more about your research environment."
+## Run of Show (90 min)
+- Block 1: Hidden curriculum reveal (00:00-15:00)
+- Block 2: Role and expectation mapping (15:00-30:00)
+- Block 3: Ethics in connectomics (30:00-45:00)
+- Block 4: Communication script workshop (45:00-65:00)
+- Block 5: Personal navigation plan (65:00-85:00)
+- Block 6: Exit ticket (85:00-90:00)
+
+<!--
+Block 1: Hidden curriculum reveal (00:00-15:00)
+  Instructor script: "Raise your hand if you have ever felt lost in a research setting --- not because the science was hard, but because you did not know the unwritten rules." (Expect most hands.) "Today we make those rules explicit."
+  Present 5 hidden-curriculum scenarios (3 minutes each):
+  You disagree with a senior lab member's interpretation at lab meeting. What do you do?
+  You find a bug in shared analysis code. How do you report it?
+  You need help but your mentor is busy. Who else can you ask?
+  You are asked to proofread neurons outside your assigned region. Should you?
+  A collaborator uses your annotation work in a paper without crediting you. How do you respond?
+  For each scenario, collect 2-3 responses from learners, then present a recommended approach.
+
+Block 2: Role and expectation mapping (15:00-30:00)
+  Instructor script: "Every research team has roles. Let's map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
+  Learners fill in a role-expectation worksheet for their own research setting (or a hypothetical one).
+  Discuss: where do expectations conflict? Where are they ambiguous?
+
+Block 3: Ethics in connectomics (30:00-45:00)
+  Instructor script: "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. Let's talk about what that means."
+  Cover three ethics topics:
+  Data provenance: every analysis should reference a specific dataset version. Show how CAVE materialization versions work.
+  Attribution: the 287 FlyWire proofreaders were co-authors. Discuss what fair attribution looks like at scale.
+  Human tissue: discuss IRB requirements, de-identification, and the responsibility that comes with working on data derived from surgical patients.
+  Group discussion: "What ethical situation might you encounter in your work? How would you handle it?"
+
+Block 4: Communication script workshop (45:00-65:00)
+  Instructor script: "We are going to practice the hardest part of research: talking to people." Distribute script templates for five common situations (asking for help, admitting uncertainty, giving feedback, receiving feedback, escalating problems).
+  Learners customize scripts for their own context (10 min).
+  Role-play in pairs: one person plays the mentor/colleague, the other practices the script (10 min, switch roles).
+
+Block 5: Personal navigation plan (65:00-85:00)
+  Instructor script: "Now bring it all together. You are going to create a one-page document that you can actually use."
+  Learners draft their "lab navigation playbook" including:
+  Top 5 norms for their research setting.
+  Role-expectation map for their team.
+  Three communication scripts customized for their context.
+  Mentor/support map: at least 3 people they can go to for different types of help.
+  Ethical commitments: how they will handle attribution, data provenance, and error reporting.
+
+Block 6: Exit ticket (85:00-90:00)
+  Submit: (1) your lab navigation playbook; (2) one reflection sentence on the most surprising hidden-curriculum norm you learned today.
+  Instructor script: "Keep this playbook accessible. Revise it as you learn more about your research environment."
+-->
 
 ---
 

@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a 12-month pathway plan (skills, applications, mentoring actions) with explicit fit criteria and decision checkpoints. Operationally: you can name two or three realistic next steps and say what evidence each requires, you have written the actual outreach messages rather than planning to, and every deadline that gates a step is in a calendar with its lead time attached.
 
@@ -57,19 +49,33 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Pathway framing and myths**
-- Name the two instructions this module replaces, "network more" and "apply broadly", and ask the room what either would have them do tomorrow morning. The silence is the point.
-- **08:00-20:00 | Capability gap mapping**
-- Each learner builds the matrix for two targets. Circulate asking one question: "which artifact proves that cell?" Cells backed by coursework alone are marked as gaps.
-- **20:00-32:00 | Program/role fit scoring**
-- Score against the decision table, filling the reversibility and cost columns before the fit column.
-- **32:00-44:00 | Outreach message drafting**
-- Learners write one real email to one real person, complete, in the session. Drafts that could be sent to any laboratory are returned.
-- **44:00-54:00 | Peer feedback on fit and clarity**
-- Reviewers answer two questions only: could this message have been sent to anyone else, and what exactly is being asked for?
-- **54:00-60:00 | Action-plan commitments**
-- Each learner writes three dated actions and one mentorship-map gap they will close, and names who they will tell.
+## Run of Show (60 min)
+- 00:00-08:00 | Pathway framing and myths
+- 08:00-20:00 | Capability gap mapping
+- 20:00-32:00 | Program/role fit scoring
+- 32:00-44:00 | Outreach message drafting
+- 44:00-54:00 | Peer feedback on fit and clarity
+- 54:00-60:00 | Action-plan commitments
+
+<!--
+00:00-08:00 | Pathway framing and myths
+  Name the two instructions this module replaces, "network more" and "apply broadly", and ask the room what either would have them do tomorrow morning. The silence is the point.
+
+08:00-20:00 | Capability gap mapping
+  Each learner builds the matrix for two targets. Circulate asking one question: "which artifact proves that cell?" Cells backed by coursework alone are marked as gaps.
+
+20:00-32:00 | Program/role fit scoring
+  Score against the decision table, filling the reversibility and cost columns before the fit column.
+
+32:00-44:00 | Outreach message drafting
+  Learners write one real email to one real person, complete, in the session. Drafts that could be sent to any laboratory are returned.
+
+44:00-54:00 | Peer feedback on fit and clarity
+  Reviewers answer two questions only: could this message have been sent to anyone else, and what exactly is being asked for?
+
+54:00-60:00 | Action-plan commitments
+  Each learner writes three dated actions and one mentorship-map gap they will close, and names who they will tell.
+-->
 
 ---
 

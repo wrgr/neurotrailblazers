@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a technically rigorous manuscript review and an ethics-risk decision memo for a connectomics study, including actionable recommendations and integrity safeguards. Students will be able to distinguish constructive criticism from destructive criticism, identify the specific ethical challenges that arise in large-scale connectomics collaborations, and make documented decisions when facing ambiguous integrity situations.
 
@@ -69,15 +61,49 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 
 ---
 
-## 60-Minute Run-of-Show
-- One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
-- Structured review form template (one per student).
-- Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting).
-- Two examples of real reviewer comments: one constructive, one destructive.
-- Review comments reference specific manuscript locations (figure panels, paragraph numbers, methods details).
-- Ethics concerns are tied to concrete workflow practices, not abstract principles.
-- Recommendations are consistent with documented findings.
-- All feedback uses constructive language (problem, evidence, suggestion).
+## Run of Show (60 min)
+- 00:00-08:00 | Constructive vs destructive criticism
+- 08:00-12:00 | What reviewers look for in connectomics
+- 12:00-28:00 | Methods-evidence audit exercise
+- 28:00-38:00 | Ethics-risk scan
+- 38:00-50:00 | Decision memo drafting
+- 50:00-58:00 | Peer review of reviews
+- 58:00-60:00 | Competency check
+
+<!--
+Materials needed
+  One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
+  Structured review form template (one per student).
+  Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting).
+  Two examples of real reviewer comments: one constructive, one destructive.
+  Timing and instructor script
+
+00:00-08:00 | Constructive vs destructive criticism
+  Instructor displays two real (anonymized) reviewer comments for the same paper. One is specific, evidence-based, and actionable; the other is vague and dismissive. Students identify which is which and explain why. Key script line: "The most rigorous reviewer is not the harshest one. Rigor means specificity. Vague criticism is lazy, not tough."
+
+08:00-12:00 | What reviewers look for in connectomics
+  Instructor presents a checklist of connectomics-specific review criteria: data quality metrics, appropriate null models, reproducibility metadata, interpretation boundaries, and data availability. Brief discussion of how these differ from standard neuroscience review criteria.
+
+12:00-28:00 | Methods-evidence audit exercise
+  Students read the mock preprint individually. Using the structured review form, each student identifies: (a) one methods gap with specific missing information, (b) one overclaim where the language exceeds the evidence, (c) one figure panel where uncertainty is insufficiently represented. Instructor circulates, prompting: "Can you point to the exact sentence that overclaims? What would the bounded version say?"
+
+28:00-38:00 | Ethics-risk scan
+  Students use the ethics-risk checklist to scan the mock preprint. They identify: (a) the authorship ambiguity (the mock paper lists "the consortium" as an author without specifying individual contributions), (b) the selective reporting concern (only one of three tested motifs is discussed in results). Students draft a one-paragraph ethics memo for each issue with a concrete mitigation recommendation.
+
+38:00-50:00 | Decision memo drafting
+  In pairs, students draft a complete review decision memo: (a) summary of the paper's contribution, (b) major concerns (methods, interpretation, ethics) with evidence, (c) minor concerns, (d) recommendation (accept with revisions, major revisions, or reject) with explicit rationale. Students must ensure their recommendation is consistent with their documented concerns.
+
+50:00-58:00 | Peer review of reviews
+  Pairs swap decision memos and evaluate: Is the review specific and evidence-based? Is the recommendation consistent with the concerns? Is the tone constructive? Each pair writes one improvement suggestion.
+
+58:00-60:00 | Competency check
+  Each student submits their structured review form and decision memo. Instructor collects for after-session review.
+  Success criteria for this session
+  Review comments reference specific manuscript locations (figure panels, paragraph numbers, methods details).
+  Ethics concerns are tied to concrete workflow practices, not abstract principles.
+  Recommendations are consistent with documented findings.
+  All feedback uses constructive language (problem, evidence, suggestion).
+-->
 
 ---
 

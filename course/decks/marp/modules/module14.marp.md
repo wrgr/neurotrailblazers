@@ -25,14 +25,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes. Concretely: choose an architecture from the shape of the task rather than from the benchmark leaderboard, decompose error into merges and splits instead of reporting one score, convert that decomposition into a downstream cost using a ratio your team has actually measured, and write a release gate that says in advance what result would stop the model from shipping.
 
@@ -58,13 +50,27 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00** task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
-- **08:00-20:00** choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output.
-- **20:00-34:00** evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
-- **34:00-46:00** error taxonomy and triage discussion. Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
-- **46:00-56:00** model card drafting, including at least one unsupported use and the region breakdown of the metrics.
-- **56:00-60:00** competency check: each learner states their release gate as a sentence that could fail.
+## Run of Show (60 min)
+- 00:00-08:00 task framing + exemplar failure modes.
+- 08:00-20:00 choose metrics tied to downstream biology.
+- 20:00-34:00 evaluate baseline vs candidate model.
+- 34:00-46:00 error taxonomy and triage discussion.
+- 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics.
+- 56:00-60:00 competency check: each learner states their release gate as a sentence that could fail.
+
+<!--
+00:00-08:00 task framing + exemplar failure modes.
+  Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
+
+08:00-20:00 choose metrics tied to downstream biology.
+  Each learner writes the metric they would gate on and the threshold, before seeing any model output.
+
+20:00-34:00 evaluate baseline vs candidate model.
+  Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
+
+34:00-46:00 error taxonomy and triage discussion.
+  Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
+-->
 
 ---
 

@@ -115,5 +115,5 @@ Document one CV result with one supported use case and one forbidden use case.
 
 ## Teaching Materials
 - Module page: /modules/module14/
-- Slide page: /modules/slides/module14/
+- Session kit: /teaching/sessions/module14/
 - Worksheet: /assets/worksheets/module14/module14-activity.md

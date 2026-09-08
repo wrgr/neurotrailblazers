@@ -140,5 +140,5 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 
 ## Teaching Materials
 - Module page: /modules/module16/
-- Slide page: /modules/slides/module16/
+- Session kit: /teaching/sessions/module16/
 - Worksheet: /assets/worksheets/module16/module16-activity.md

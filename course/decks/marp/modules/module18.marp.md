@@ -179,5 +179,5 @@ Take one connectomics table (real or mock) and write:
 
 ## Teaching Materials
 - Module page: /modules/module18/
-- Slide page: /modules/slides/module18/
+- Session kit: /teaching/sessions/module18/
 - Worksheet: /assets/worksheets/module18/module18-activity.md

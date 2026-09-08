@@ -149,5 +149,5 @@ State one reason a graph metric might be misleading in your current dataset.
 
 ## Teaching Materials
 - Module page: /modules/module10/
-- Slide page: /modules/slides/module10/
+- Session kit: /teaching/sessions/module10/
 - Worksheet: /assets/worksheets/module10/module10-activity.md

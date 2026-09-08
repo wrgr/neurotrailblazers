@@ -106,5 +106,5 @@ For one LLM output type, define: acceptance threshold, verification method, and 
 
 ## Teaching Materials
 - Module page: /modules/module15/
-- Slide page: /modules/slides/module15/
+- Session kit: /teaching/sessions/module15/
 - Worksheet: /assets/worksheets/module15/module15-activity.md

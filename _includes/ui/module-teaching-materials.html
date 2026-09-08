@@ -3,7 +3,7 @@
 {% if num < 10 %}
   {% assign numpad = '0' | append: num %}
 {% endif %}
-{% assign slide_page = '/modules/slides/module' | append: numpad | append: '/' %}
+{% assign session_kit = '/teaching/sessions/module' | append: numpad | append: '/' %}
 {% assign worksheet = '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' %}
 {% assign marp_html = '/course/decks/marp/out/modules/module' | append: numpad | append: '.html' %}
 {% assign marp_src = site.deck_source_base | append: '/modules/module' | append: numpad | append: '.marp.md' %}
@@ -14,9 +14,9 @@
     <article class="card">
       <h3 class="card-title">Slide Deck</h3>
       <p class="card-description">Classroom-ready deck links for teaching and delivery.</p>
-      <p><a href="{{ slide_page | relative_url }}">Open slide deck page</a></p>
       <p><a href="{{ marp_html | relative_url }}">Open rendered HTML deck</a></p>
       <p><a href="{{ marp_src }}">Slide source (Markdown)</a></p>
+      <p><a href="{{ session_kit | relative_url }}">Session kit: prep, timing and rubric</a></p>
     </article>
     <article class="card">
       <h3 class="card-title">Activity Worksheet</h3>

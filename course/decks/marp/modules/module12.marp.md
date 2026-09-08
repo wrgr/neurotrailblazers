@@ -147,5 +147,5 @@ Document one query you use with:
 
 ## Teaching Materials
 - Module page: /modules/module12/
-- Slide page: /modules/slides/module12/
+- Session kit: /teaching/sessions/module12/
 - Worksheet: /assets/worksheets/module12/module12-activity.md

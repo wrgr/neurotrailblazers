@@ -120,5 +120,5 @@ Choose one artifact and write its four lines: one competency claim it supports, 
 
 ## Teaching Materials
 - Module page: /modules/module25/
-- Slide page: /modules/slides/module25/
+- Session kit: /teaching/sessions/module25/
 - Worksheet: /assets/worksheets/module25/module25-activity.md

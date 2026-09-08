@@ -151,5 +151,5 @@ Write a 3-sentence hypothesis with one metric and one caveat. Then write 2 sente
 
 ## Teaching Materials
 - Module page: /modules/module01/
-- Slide page: /modules/slides/module01/
+- Session kit: /teaching/sessions/module01/
 - Worksheet: /assets/worksheets/module01/module01-activity.md

@@ -160,5 +160,5 @@ Describe one case where anatomy context changes your interpretation of an EM str
 
 ## Teaching Materials
 - Module page: /modules/module04/
-- Slide page: /modules/slides/module04/
+- Session kit: /teaching/sessions/module04/
 - Worksheet: /assets/worksheets/module04/module04-activity.md

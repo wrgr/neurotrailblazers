@@ -133,5 +133,5 @@ Write one rule for when an error must be fixed before release. Your rule should 
 
 ## Teaching Materials
 - Module page: /modules/module07/
-- Slide page: /modules/slides/module07/
+- Session kit: /teaching/sessions/module07/
 - Worksheet: /assets/worksheets/module07/module07-activity.md

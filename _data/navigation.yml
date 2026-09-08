@@ -92,8 +92,6 @@ items:
         url: "/teaching/sessions/"
       - title: "Facilitator Guide"
         url: "/teaching/facilitator-guide/"
-      - title: "Module Slides"
-        url: "/modules/slides/"
   - title: "Tools"
     url: "/tools/"
     dropdown:

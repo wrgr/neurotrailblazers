@@ -121,5 +121,5 @@ Draft one 5-sentence mentor outreach email with an alignment statement naming a 
 
 ## Teaching Materials
 - Module page: /modules/module24/
-- Slide page: /modules/slides/module24/
+- Session kit: /teaching/sessions/module24/
 - Worksheet: /assets/worksheets/module24/module24-activity.md

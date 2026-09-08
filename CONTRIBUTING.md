@@ -91,7 +91,7 @@ reverted the next time a generator runs.
 |---|---|---|
 | `assets/worksheets/moduleNN/` | `scripts/generate_module_teaching_materials.rb` | `modules/moduleNN.md` |
 | `course/decks/marp/modules/` | `scripts/generate_module_teaching_materials.rb` | `modules/moduleNN.md` |
-| `modules/slides/` | `scripts/generate_module_teaching_materials.rb` | `modules/moduleNN.md` |
+| `teaching/sessions/` | `scripts/generate_module_teaching_materials.rb` | `modules/moduleNN.md` |
 | `assets/images/modules/*.svg` | `scripts/generate_module_art.rb` | the art generator |
 | `_data/journal_papers.yml` | `scripts/derive_journal_papers.py` | the corpus and the derivation script |
 

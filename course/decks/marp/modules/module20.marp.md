@@ -167,5 +167,5 @@ Write a 6-8 sentence inference note that includes:
 
 ## Teaching Materials
 - Module page: /modules/module20/
-- Slide page: /modules/slides/module20/
+- Session kit: /teaching/sessions/module20/
 - Worksheet: /assets/worksheets/module20/module20-activity.md

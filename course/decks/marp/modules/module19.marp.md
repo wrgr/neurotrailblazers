@@ -176,5 +176,5 @@ Choose a connectomics abstract (from a real paper or the mock preprint) and prod
 
 ## Teaching Materials
 - Module page: /modules/module19/
-- Slide page: /modules/slides/module19/
+- Session kit: /teaching/sessions/module19/
 - Worksheet: /assets/worksheets/module19/module19-activity.md

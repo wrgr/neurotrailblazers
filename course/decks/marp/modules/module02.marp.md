@@ -142,5 +142,5 @@ Draft one email requesting clarification on an unclear lab expectation. Then wri
 
 ## Teaching Materials
 - Module page: /modules/module02/
-- Slide page: /modules/slides/module02/
+- Session kit: /teaching/sessions/module02/
 - Worksheet: /assets/worksheets/module02/module02-activity.md

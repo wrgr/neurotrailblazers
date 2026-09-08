@@ -125,5 +125,5 @@ Write your 60-second talk opener with the core question, one evidence-backed fin
 
 ## Teaching Materials
 - Module page: /modules/module22/
-- Slide page: /modules/slides/module22/
+- Session kit: /teaching/sessions/module22/
 - Worksheet: /assets/worksheets/module22/module22-activity.md

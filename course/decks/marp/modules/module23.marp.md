@@ -119,5 +119,5 @@ Write a 5-sentence mini-abstract including question, method with dataset version
 
 ## Teaching Materials
 - Module page: /modules/module23/
-- Slide page: /modules/slides/module23/
+- Session kit: /teaching/sessions/module23/
 - Worksheet: /assets/worksheets/module23/module23-activity.md

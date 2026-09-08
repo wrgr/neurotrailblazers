@@ -148,5 +148,5 @@ Explain one morphology feature that could be confounded by reconstruction qualit
 
 ## Teaching Materials
 - Module page: /modules/module09/
-- Slide page: /modules/slides/module09/
+- Session kit: /teaching/sessions/module09/
 - Worksheet: /assets/worksheets/module09/module09-activity.md

@@ -148,5 +148,5 @@ Write one claim and one explicit non-claim from the same test outcome.
 
 ## Teaching Materials
 - Module page: /modules/module08/
-- Slide page: /modules/slides/module08/
+- Session kit: /teaching/sessions/module08/
 - Worksheet: /assets/worksheets/module08/module08-activity.md

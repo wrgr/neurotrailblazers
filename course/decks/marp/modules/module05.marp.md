@@ -143,5 +143,5 @@ Pick one artifact and explain how it could create a merge or split error later. 
 
 ## Teaching Materials
 - Module page: /modules/module05/
-- Slide page: /modules/slides/module05/
+- Session kit: /teaching/sessions/module05/
 - Worksheet: /assets/worksheets/module05/module05-activity.md

@@ -153,5 +153,5 @@ Write one motif claim and one plausible confound.
 
 ## Teaching Materials
 - Module page: /modules/module11/
-- Slide page: /modules/slides/module11/
+- Session kit: /teaching/sessions/module11/
 - Worksheet: /assets/worksheets/module11/module11-activity.md

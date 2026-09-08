@@ -578,7 +578,7 @@ module_paths.each do |path|
 
     ---
 
-    *Module page: `/modules/module#{num}/` · Slides: `/modules/slides/module#{num}/` · [Facilitator guide](/teaching/facilitator-guide/)*
+    *Module page: `/modules/module#{num}/` · Session kit: `/teaching/sessions/module#{num}/` · [Facilitator guide](/teaching/facilitator-guide/)*
   MD
 
   marp_path = File.join(MARP_DIR, "module#{num}.marp.md")
@@ -661,41 +661,10 @@ module_paths.each do |path|
 
     ## Teaching Materials
     - Module page: /modules/module#{num}/
-    - Slide page: /modules/slides/module#{num}/
+    - Session kit: /teaching/sessions/module#{num}/
     - Worksheet: /assets/worksheets/module#{num}/module#{num}-activity.md
   MD
 
-  slide_page_path = File.join(SLIDE_PAGE_DIR, "module#{num}.md")
-  File.write(slide_page_path, <<~MD)
-    ---
-    layout: page
-    title: "Slide Deck: Module #{num}"
-    permalink: /modules/slides/module#{num}/
-    slug: module#{num}-slides
-    track: core-concepts-methods
-    content_type: delivery
-    pathways:
-      - classroom delivery
-      - teaching preparation
-    ---
-
-    ## Slide Deck for #{title}
-
-    <div class="resource-card">
-      <p>This page provides the teaching slide artifacts and related delivery materials.</p>
-      <div class="resource-links">
-        <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open HTML Deck</a>
-        <a class="resource-link" href="{{ site.deck_source_base }}/modules/module#{num}.marp.md">Slide source (Markdown)</a>
-        <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Open Worksheet</a>
-        <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Open Module Page</a>
-      </div>
-      <p><small>The HTML deck presents directly in a browser. The Markdown source is the
-      one to take if you want to cut slides or add your own &mdash; it renders with
-      <a href="https://marp.app/">Marp</a>. For PowerPoint, run
-      <code>./scripts/render_marp.sh --pptx</code>; the exports are not committed because
-      the full set runs to tens of megabytes.</small></p>
-    </div>
-  MD
 
 
   # ---- Ready-to-run session kit -------------------------------------------
@@ -893,32 +862,21 @@ File.write(sessions_index, <<~MD)
   </div>
 MD
 
+# The 25 per-module slide pages this script used to emit were link wrappers: four
+# links, all of which the session kit at /teaching/sessions/moduleNN/ already carries,
+# alongside the prep, timing and rubric that make it worth opening. They are deleted
+# (NEXT_CONTENT_PASS.md 3.1). The index URL stays as a redirect so nothing that linked
+# it 404s.
 index_path = File.join(SLIDE_PAGE_DIR, 'index.md')
 File.write(index_path, <<~MD)
   ---
-  layout: page
-  title: "Module Slide Decks"
+  layout: redirect
+  title: "Session Kits"
   permalink: /modules/slides/
-  slug: module-slides
-  track: core-concepts-methods
+  redirect_to: /teaching/sessions/
+  sitemap: false
   content_type: delivery
-  pathways:
-    - classroom delivery
   ---
-
-  ## Module Slide Decks
-
-  <p>Need full lesson kits and facilitator guidance? Visit the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>.</p>
-
-  <div class="cards-grid">
-  {% assign module_pages = site.pages | where_exp: 'p', \"p.path contains 'modules/slides/module'\" | sort: 'path' %}
-  {% for p in module_pages %}
-    <article class="card">
-      <h3 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
-      <p class="card-description">Slide source and worksheet links for instructional delivery.</p>
-    </article>
-  {% endfor %}
-  </div>
 MD
 
 puts "Generated teaching materials and session kits for #{count} modules."

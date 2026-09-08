@@ -147,5 +147,5 @@ For one candidate model, write:
 
 ## Teaching Materials
 - Module page: /modules/module13/
-- Slide page: /modules/slides/module13/
+- Session kit: /teaching/sessions/module13/
 - Worksheet: /assets/worksheets/module13/module13-activity.md

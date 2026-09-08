@@ -159,5 +159,5 @@ Take one prior analysis output and add:
 
 ## Teaching Materials
 - Module page: /modules/module21/
-- Slide page: /modules/slides/module21/
+- Session kit: /teaching/sessions/module21/
 - Worksheet: /assets/worksheets/module21/module21-activity.md

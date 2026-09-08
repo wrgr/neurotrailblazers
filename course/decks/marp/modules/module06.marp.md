@@ -147,5 +147,5 @@ Explain when you would defer a correction instead of fixing immediately.
 
 ## Teaching Materials
 - Module page: /modules/module06/
-- Slide page: /modules/slides/module06/
+- Session kit: /teaching/sessions/module06/
 - Worksheet: /assets/worksheets/module06/module06-activity.md

@@ -150,5 +150,5 @@ Add one markdown cell documenting input version, processing steps, and output fi
 
 ## Teaching Materials
 - Module page: /modules/module03/
-- Slide page: /modules/slides/module03/
+- Session kit: /teaching/sessions/module03/
 - Worksheet: /assets/worksheets/module03/module03-activity.md

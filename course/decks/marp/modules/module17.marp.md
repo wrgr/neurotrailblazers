@@ -180,5 +180,5 @@ Write one results paragraph from a connectomics figure and include:
 
 ## Teaching Materials
 - Module page: /modules/module17/
-- Slide page: /modules/slides/module17/
+- Session kit: /teaching/sessions/module17/
 - Worksheet: /assets/worksheets/module17/module17-activity.md

@@ -114,6 +114,12 @@ body {
   position: absolute;
   left: 0;
   top: 100%;
+  /* Without this the dropdown paints at z-index auto, so any later element that
+     creates a stacking context can cover it -- the card hover states use
+     `transform`, which does exactly that. The dark .dropdown rule further down
+     overrides this one's background, radius and shadow but sets no z-index, so
+     this is where it belongs. */
+  z-index: 1000;
   background: var(--white);
   list-style: none;
   padding: 0.5rem 0;
@@ -130,6 +136,7 @@ body {
   padding: 0.25rem 1rem;
   color: var(--synapse-black);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .dropdown-link:hover {

@@ -133,6 +133,16 @@ string returns nothing.
   the Technical Course dropdown; both now use the latter, which is also the page's new title.
 
 ### 2.5 Make the personas load-bearing (S)
+- [x] **Persona Pathfinder, added after the fact:** `start-here.md` carried four bare cards —
+  a persona name in an `<h3>` and nothing else — which is about as un-load-bearing as a persona
+  can be. They are now a four-tab pathfinder, one tab per persona, each opening with the
+  decision that persona's own page says they face and then four concrete steps with links.
+  Rebuilt rather than ported from `graphrev`, which had a version of this idea built on an
+  invented learner/researcher/educator/developer taxonomy that would have put a second set of
+  personas on the site. Proper `tablist` semantics with arrow/Home/End keys, no emoji, colours
+  from the existing `:root` variables so it migrates with workstream 5 rather than adding to
+  the hex backlog. Every link target and every factual claim in it was checked — including
+  "a deck with speaker notes", which only became true with 3.1 above.
 - [x] Home pathway cards name a persona and link `/avatars/`. *(Three of the five audience cards already named their persona and deep-linked the avatar page; the other two — "Just Curious" and "For Programs & Funders" — have no persona to name, and inventing one would be worse than the gap. The section now links `/avatars/` from its standfirst, which was previously the marketing line "Purpose-built experiences for the people who move neuroscience forward".)*
 - [x] Each `tracks/*.md` page opens with "This track is for Julian and Maya" style callouts. *(Already present on all three track pages as a **Who this is for** paragraph naming two personas each, with links. Verified rather than rewritten.)*
 - [x] Kids portal: link back to the story, deep-link each of the five story cards to its paper, surface the 3D-print assets, link the 25-minute classroom activity. *(All four done. The story link and the 3D-print assets were the two that were genuinely missing — the STLs existed and only `neuronauts/index.html` linked them, so a kid arriving at the Junior Lab could not find them. Each of the five story cards now links its named papers by DOI, and says which are free to read: seven of the nine are open access, and the two that are not — Januszewski et al. 2018 and White et al. 1986 — are labelled "behind a paywall" rather than linked as if a reader could open them. The 25-minute activity was already linked from the teacher card. Two fixes found in passing: the stories section still advertised the "500 Key Papers" collection that Workstream 0 corrected at line 366 but not here, and the page title carried an SEO tail ("Neuronauts Junior Lab: Connectomics for Kids & Young Explorers").)*

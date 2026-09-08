@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """
-Deep Multi-Source Manuscript Retrieval & Permissions Engine.
-Discovers author-accepted manuscripts, institutional preprints, PMC full-text renders,
-and paywalled literature across Europe PMC, OpenAlex, Semantic Scholar, and Unpaywall.
-Routes open-access files to public folders and paywalled manuscripts to a private repository.
+Exhaustive Multi-Engine Retrieval for Remaining Unresolved Papers.
+Applies:
+1. NCBI PubMed Central (E-utilities) ID resolver for NIH public-access papers
+2. Direct bioRxiv/medRxiv preprint full-text streams
+3. Europe PMC Core REST API
+4. Semantic Scholar & OpenAlex multi-location resolvers
+5. Title-matched local connectome-kb ingestion
 """
 
 import argparse
@@ -23,34 +26,42 @@ from typing import Dict, Any, Optional, List, Tuple
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
-CORPUS_JSON = PROJECT_ROOT / "data" / "corpus_2000.json"
 MANIFEST_PATH = PROJECT_ROOT / "data" / "pdf_corpus" / "corpus_manifest.json"
 CSV_INDEX_PATH = PROJECT_ROOT / "data" / "pdf_corpus" / "corpus_index.csv"
+PRIVATE_REPO_DIR = PROJECT_ROOT.parent / "neurotrailblazers-private" / "papers"
 
-# Bypass SSL verify issues if any mirror has self-signed/expired cert
+CKB_ROOT = Path("/Users/wgray13/projects/connectome-kb")
+CKB_CORPUS_JSON = CKB_ROOT / "outputs" / "website" / "corpus_canonical.json"
+CKB_PDF_CACHE = CKB_ROOT / "outputs" / "raw" / "pdf_cache"
+
 SSL_CTX = ssl.create_default_context()
 SSL_CTX.check_hostname = False
 SSL_CTX.verify_mode = ssl.CERT_NONE
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 (mailto:neurotrailblazers@gmail.com)",
     "Accept": "application/pdf,application/octet-stream,*/*",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-UNPAYWALL_EMAIL = "neurotrailblazers@gmail.com"
-
 
 def sanitize_filename(doi: str) -> str:
-    """Converts a DOI to a filesystem-safe filename."""
     clean = re.sub(r'[/\\:*?"<>|]', '_', doi.strip().lower())
     if not clean.endswith('.pdf'):
         clean += '.pdf'
     return clean
 
 
-def compute_permissions(rights_cat: str, oa_status: str, source_url: str) -> Dict[str, Any]:
-    """Generates explicit machine-readable permission flags."""
+def clean_title(t: str) -> str:
+    t = re.sub(r'<[^>]+>', '', t or '')
+    return re.sub(r'[^a-z0-9]', '', t.lower())
+
+
+def is_valid_pdf(data: bytes) -> bool:
+    return len(data) >= 1000 and data.startswith(b"%PDF-")
+
+
+def compute_permissions(rights_cat: str, oa_status: str, source_url: str = "") -> Dict[str, Any]:
     r_cat = (rights_cat or "").upper()
     oa_stat = (oa_status or "").lower()
 
@@ -62,7 +73,7 @@ def compute_permissions(rights_cat: str, oa_status: str, source_url: str) -> Dic
             "storage_location": "PUBLIC_REPO",
             "terms_of_use_notice": "Open Access: Fully redistributable with author attribution."
         }
-    elif r_cat == "AUTHOR_PROVIDED" or oa_stat == "green":
+    elif r_cat == "AUTHOR_PROVIDED" or oa_stat == "green" or "biorxiv" in source_url or "arxiv" in source_url or "pmc" in source_url:
         return {
             "license_type": "Author-Accepted-Preprint",
             "redistribution_permitted": True,
@@ -88,18 +99,40 @@ def compute_permissions(rights_cat: str, oa_status: str, source_url: str) -> Dic
         }
 
 
-def is_valid_pdf(data: bytes) -> bool:
-    return len(data) >= 1000 and data.startswith(b"%PDF-")
+def resolve_ncbi_pmc(doi: str) -> List[Tuple[str, str, str]]:
+    """Resolves DOIs to PMCIDs using NCBI E-utilities API."""
+    candidates = []
+    try:
+        url = f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term={urllib.parse.quote(doi)}&retmode=json"
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
+            data = json.loads(resp.read().decode())
+            id_list = data.get("esearchresult", {}).get("idlist", [])
+            for pmcid in id_list:
+                candidates.append((f"https://europepmc.org/articles/PMC{pmcid}?pdf=render", "AUTHOR_PROVIDED", "green"))
+                candidates.append((f"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{pmcid}/pdf/", "AUTHOR_PROVIDED", "green"))
+    except Exception:
+        pass
+    return candidates
 
 
-def query_europe_pmc(doi: str) -> List[Tuple[str, str, str]]:
-    """Discovers direct PDF render URLs and PMCIDs from Europe PMC REST API."""
+def resolve_biorxiv(doi: str) -> List[Tuple[str, str, str]]:
+    """Generates direct biorxiv / medrxiv PDF URLs."""
+    candidates = []
+    if "10.1101/" in doi:
+        suffix = doi.split("10.1101/")[-1].strip()
+        candidates.append((f"https://www.biorxiv.org/content/10.1101/{suffix}.full.pdf", "AUTHOR_PROVIDED", "green"))
+        candidates.append((f"https://www.medrxiv.org/content/10.1101/{suffix}.full.pdf", "AUTHOR_PROVIDED", "green"))
+    return candidates
+
+
+def resolve_europe_pmc(doi: str) -> List[Tuple[str, str, str]]:
     candidates = []
     try:
         url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%22{urllib.parse.quote(doi)}%22&format=json&resultType=core"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+            data = json.loads(resp.read().decode())
             results = data.get("resultList", {}).get("result", [])
             if results:
                 res = results[0]
@@ -111,7 +144,6 @@ def query_europe_pmc(doi: str) -> List[Tuple[str, str, str]]:
                 if pmcid:
                     candidates.append((f"https://europepmc.org/articles/{pmcid}?pdf=render", cat, oa_status))
                     candidates.append((f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmcid}/pdf/", cat, oa_status))
-
                 for u in res.get("fullTextUrlList", {}).get("fullTextUrl", []):
                     if u.get("documentStyle") == "pdf":
                         candidates.append((u.get("url"), cat, oa_status))
@@ -120,32 +152,30 @@ def query_europe_pmc(doi: str) -> List[Tuple[str, str, str]]:
     return candidates
 
 
-def query_semantic_scholar(doi: str) -> List[Tuple[str, str, str]]:
-    """Discovers open access PDF URLs from Semantic Scholar API."""
+def resolve_semantic_scholar(doi: str) -> List[Tuple[str, str, str]]:
     candidates = []
     try:
         url = f"https://api.semanticscholar.org/graph/v1/paper/{doi}?fields=openAccessPdf"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+            data = json.loads(resp.read().decode())
             oa = data.get("openAccessPdf")
             if oa and oa.get("url"):
                 status = oa.get("status", "green").lower()
-                cat = "OA_GOLD" if status in ["gold", "diamond"] else ("AUTHOR_PROVIDED" if status == "green" else "PUBLISHER_FREE")
+                cat = "OA_GOLD" if status in ["gold", "diamond"] else "AUTHOR_PROVIDED"
                 candidates.append((oa.get("url"), cat, status))
     except Exception:
         pass
     return candidates
 
 
-def query_openalex(doi: str) -> List[Tuple[str, str, str]]:
-    """Discovers institutional repository locations from OpenAlex API."""
+def resolve_openalex(doi: str) -> List[Tuple[str, str, str]]:
     candidates = []
     try:
         url = f"https://api.openalex.org/works/https://doi.org/{doi}"
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+            data = json.loads(resp.read().decode())
             for loc in data.get("locations", []):
                 pdf_u = loc.get("pdf_url")
                 if pdf_u:
@@ -158,31 +188,11 @@ def query_openalex(doi: str) -> List[Tuple[str, str, str]]:
     return candidates
 
 
-def query_unpaywall(doi: str) -> List[Tuple[str, str, str]]:
-    """Discovers alternative repository locations from Unpaywall API."""
-    candidates = []
-    try:
-        url = f"https://api.unpaywall.org/v2/{urllib.parse.quote(doi)}?email={UNPAYWALL_EMAIL}"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=8, context=SSL_CTX) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            for loc in data.get("oa_locations", []):
-                pdf_u = loc.get("url_for_pdf") or loc.get("url")
-                if pdf_u:
-                    oa_stat = (loc.get("host_type") or loc.get("version") or "green").lower()
-                    cat = "OA_GOLD" if oa_stat in ["publisher", "gold"] else "AUTHOR_PROVIDED"
-                    candidates.append((pdf_u, cat, oa_stat))
-    except Exception:
-        pass
-    return candidates
-
-
 def download_with_fallback(candidate_urls: List[str], target_file: Path) -> Tuple[bool, Optional[str], Optional[int], Optional[str]]:
-    """Tries downloading from candidate URLs in sequence, verifying PDF magic bytes."""
     for u in candidate_urls:
         try:
             req = urllib.request.Request(u, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=15, context=SSL_CTX) as resp:
+            with urllib.request.urlopen(req, timeout=12, context=SSL_CTX) as resp:
                 content = resp.read()
                 if is_valid_pdf(content):
                     target_file.parent.mkdir(parents=True, exist_ok=True)
@@ -196,105 +206,113 @@ def download_with_fallback(candidate_urls: List[str], target_file: Path) -> Tupl
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Deep multi-source connectomics manuscript fetcher")
-    parser.add_argument("--private-dir", type=str, default=str(PROJECT_ROOT / "data" / "pdf_corpus" / "internal_research_paywalled"),
-                        help="Path to private repository or directory for paywalled papers")
-    parser.add_argument("--max-workers", type=int, default=12, help="Parallel worker threads")
-    parser.add_argument("--dry-run", action="store_true", help="Audit mode without downloading")
-    args = parser.parse_args()
-
-    private_dir = Path(args.private_dir)
-    print("=" * 70)
-    print("Deep Multi-Source Manuscript Retrieval & Permissions Engine")
-    print(f"Target Private Repository Directory: {private_dir}")
-    print("=" * 70)
-
-    if not MANIFEST_PATH.exists():
-        print(f"Error: {MANIFEST_PATH} not found!")
-        sys.exit(1)
+    print("=" * 80)
+    print("      🚀 EXHAUSTIVE MULTI-ENGINE RETRIEVAL FOR REMAINING PAPERS         ")
+    print("=" * 80)
 
     manifest = json.loads(MANIFEST_PATH.read_text())
-    print(f"Loaded {len(manifest)} papers from manifest.")
-
     unresolved = [rec for rec in manifest.values() if rec.get("pdf_status") != "DOWNLOADED"]
-    print(f"Found {len(unresolved)} unresolved / paywalled papers to search.")
+    print(f"Loaded master manifest: {len(manifest)} total papers.")
+    print(f"Targeting all {len(unresolved)} remaining unresolved papers with exhaustive discovery...\n")
 
-    resolved_count = 0
-    start_time = time.time()
+    # Step 1: Check title-based matches in local connectome-kb
+    title_matches_imported = 0
+    if CKB_CORPUS_JSON.exists() and CKB_PDF_CACHE.exists():
+        ckb_data = json.loads(CKB_CORPUS_JSON.read_text())
+        ckb_by_title = {}
+        for rec in ckb_data:
+            cid = rec.get("canonical_paper_id")
+            t = clean_title(rec.get("title", ""))
+            if t and cid:
+                src_f = CKB_PDF_CACHE / f"{cid}.pdf"
+                if src_f.exists() and src_f.stat().st_size > 1000:
+                    ckb_by_title[t[:35]] = (rec, src_f)
+
+        for rec in unresolved:
+            doi = rec["doi"]
+            clean_doi = sanitize_filename(doi)
+            t = clean_title(rec.get("title", ""))
+            if t[:35] in ckb_by_title:
+                ckb_rec, src_f = ckb_by_title[t[:35]]
+                perm = compute_permissions(rec.get("rights_category", "CLOSED_PUBLISHER"), rec.get("oa_status", ""))
+                dest = (PROJECT_ROOT / "data" / "pdf_corpus" / "oa_gold" / clean_doi) if perm["storage_location"] == "PUBLIC_REPO" and rec.get("rights_category") == "OA_GOLD" else ((PROJECT_ROOT / "data" / "pdf_corpus" / "author_provided" / clean_doi) if perm["storage_location"] == "PUBLIC_REPO" else (PRIVATE_REPO_DIR / clean_doi))
+                
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                with open(src_f, "rb") as sf:
+                    content = sf.read()
+                    if is_valid_pdf(content):
+                        with open(dest, "wb") as df:
+                            df.write(content)
+                        rec.update(perm)
+                        rec["pdf_status"] = "DOWNLOADED"
+                        rec["sha256"] = hashlib.sha256(content).hexdigest()
+                        rec["file_size_bytes"] = len(content)
+                        rec["relative_path"] = str(dest)
+                        rec["source_origin"] = f"connectome_kb_title_match:{ckb_rec.get('canonical_paper_id')}"
+                        title_matches_imported += 1
+                        print(f" ✅ [Local Title Match] Imported: {clean_doi} -> {dest.parent.name}/")
+
+    print(f"\nImported {title_matches_imported} local title-matched papers from cache.")
+    unresolved = [rec for rec in manifest.values() if rec.get("pdf_status") != "DOWNLOADED"]
+    print(f"Proceeding to online multi-engine retrieval across remaining {len(unresolved)} papers...\n")
+
+    online_resolved_count = 0
 
     def process_paper(rec: Dict[str, Any]) -> Dict[str, Any]:
         doi = rec["doi"]
-        filename = sanitize_filename(doi)
+        clean_doi = sanitize_filename(doi)
 
-        # Check existing locations first
-        for search_path in [
-            PROJECT_ROOT / "data" / "pdf_corpus" / "oa_gold" / filename,
-            PROJECT_ROOT / "data" / "pdf_corpus" / "author_provided" / filename,
-            PROJECT_ROOT / "data" / "pdf_corpus" / "publisher_free" / filename,
-            private_dir / filename
-        ]:
-            if search_path.exists() and search_path.stat().st_size > 1000:
-                rec["pdf_status"] = "DOWNLOADED"
-                rec["file_size_bytes"] = search_path.stat().st_size
-                rec["relative_path"] = str(search_path)
-                return rec
-
-        # Discover candidate URLs across Europe PMC, OpenAlex, S2, and Unpaywall
         candidates = []
         if rec.get("pdf_url"):
             candidates.append((rec["pdf_url"], rec.get("rights_category", "CLOSED_PUBLISHER"), rec.get("oa_status", "")))
 
-        # 1. Europe PMC
-        candidates.extend(query_europe_pmc(doi))
-        # 2. OpenAlex
-        candidates.extend(query_openalex(doi))
-        # 3. Semantic Scholar
-        candidates.extend(query_semantic_scholar(doi))
-        # 4. Unpaywall
-        candidates.extend(query_unpaywall(doi))
+        # 1. NCBI E-utilities (PMC)
+        candidates.extend(resolve_ncbi_pmc(doi))
+        # 2. bioRxiv/medRxiv
+        candidates.extend(resolve_biorxiv(doi))
+        # 3. Europe PMC
+        candidates.extend(resolve_europe_pmc(doi))
+        # 4. OpenAlex
+        candidates.extend(resolve_openalex(doi))
+        # 5. Semantic Scholar
+        candidates.extend(resolve_semantic_scholar(doi))
 
         if not candidates:
             return rec
 
-        # Deduplicate candidate URLs
         seen_urls = set()
-        unique_candidates = []
+        unique = []
         for u, r_cat, oa_stat in candidates:
             if u and u not in seen_urls:
                 seen_urls.add(u)
-                unique_candidates.append((u, r_cat, oa_stat))
+                unique.append((u, r_cat, oa_stat))
 
-        # Try download
-        for u, r_cat, oa_stat in unique_candidates:
+        for u, r_cat, oa_stat in unique:
             perm = compute_permissions(r_cat, oa_stat, u)
             if perm["storage_location"] == "PUBLIC_REPO":
-                if r_cat == "OA_GOLD":
-                    target_file = PROJECT_ROOT / "data" / "pdf_corpus" / "oa_gold" / filename
-                else:
-                    target_file = PROJECT_ROOT / "data" / "pdf_corpus" / "author_provided" / filename
+                dest_file = (PROJECT_ROOT / "data" / "pdf_corpus" / "oa_gold" / clean_doi) if r_cat == "OA_GOLD" else (PROJECT_ROOT / "data" / "pdf_corpus" / "author_provided" / clean_doi)
             else:
-                target_file = private_dir / filename
+                dest_file = PRIVATE_REPO_DIR / clean_doi
 
-            success, sha, size, used_url = download_with_fallback([u], target_file)
-            if success:
+            ok, sha, size, used_u = download_with_fallback([u], dest_file)
+            if ok:
                 rec.update(perm)
                 rec["pdf_status"] = "DOWNLOADED"
                 rec["sha256"] = sha
                 rec["file_size_bytes"] = size
-                rec["downloaded_source_url"] = used_url
-                rec["relative_path"] = str(target_file)
+                rec["relative_path"] = str(dest_file)
+                rec["downloaded_source_url"] = used_u
                 break
-
         return rec
 
-    print(f"\nSearching deep multi-source repositories across {len(unresolved)} papers...")
-    with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
+    with ThreadPoolExecutor(max_workers=12) as executor:
         futures = {executor.submit(process_paper, rec): rec for rec in unresolved}
         for fut in as_completed(futures):
             rec = fut.result()
             manifest[rec["doi"]] = rec
             if rec.get("pdf_status") == "DOWNLOADED":
-                resolved_count += 1
+                online_resolved_count += 1
+                print(f" 🌐 [Online Resolved] {sanitize_filename(rec['doi'])} ({rec.get('file_size_bytes', 0)/1024/1024:.1f} MB) -> {rec.get('storage_location')}")
 
     # Update manifest & CSV
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2))
@@ -310,12 +328,13 @@ def main():
         for rec in sorted(manifest.values(), key=lambda r: (r.get("storage_location") or "", r.get("doi") or "")):
             writer.writerow(rec)
 
-    print("\n" + "=" * 70)
-    print("DEEP MULTI-SOURCE RETRIEVAL COMPLETE")
-    print(f"Newly Retrieved Manuscripts: {resolved_count}")
-    print(f"Updated Master Manifest:      {MANIFEST_PATH}")
-    print(f"Updated Master CSV:           {CSV_INDEX_PATH}")
-    print("=" * 70)
+    print("\n" + "=" * 80)
+    print("                 EXHAUSTIVE DISCOVERY RUN COMPLETE                      ")
+    print("=" * 80)
+    print(f" Newly Discovered Online: {online_resolved_count}")
+    print(f" Newly Imported Local:    {title_matches_imported}")
+    print(f" Total Downloaded Corpus: {sum(1 for r in manifest.values() if r.get('pdf_status') == 'DOWNLOADED')} / 2,000")
+    print("=" * 80)
 
 
 if __name__ == "__main__":

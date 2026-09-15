@@ -47,6 +47,8 @@ items:
         url: "/initiatives/"
       - title: "Global Outreach & Citizen Science"
         url: "/initiatives/outreach/"
+      - title: "Connectivity: Training Elsewhere"
+        url: "/connectivity/"
   - title: "Tracks"
     url: "/tracks/"
     dropdown:

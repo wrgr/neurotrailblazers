@@ -132,6 +132,30 @@ string returns nothing.
   called the atlas "Atlas & Reference" in the Core dropdown and "Connectomics Reference Atlas" in
   the Technical Course dropdown; both now use the latter, which is also the page's new title.
 
+### 2.6 Connectivity: the outward training landscape (S, added after the fact)
+
+- [x] **New page `/connectivity/`, not in the original plan.** The review's §2 missing-pages
+  list has "Events", and Workstream 4 wants a funding-and-jobs landscape, but nothing on the
+  site told a learner what training exists *elsewhere*. Three pages were adjacent and none
+  of them answered it: `core/connects-ecosystem.md` is the programme structure this site is
+  funded inside, `initiatives.md` is the research consortia, `initiatives/outreach.md` is
+  citizen science. Twelve entries across four categories — connectome-data training, intensive
+  schools, open platforms, funding routes — each with an explicit `boundary:` field saying what
+  it covers that this site does not. Neuromatch, CAJAL, INCF, MBL, CSHL, FlyWire Academy and the
+  Allen educators' workshop appeared nowhere in the repository before this.
+  *(Built to the `community_resources.yml` verification rule: every entry checked against the
+  provider's own site, `verified:` records the date, and the date renders on each card. The
+  file carries no deadlines or session dates — a `cadence:` field says when to look instead,
+  because a stale date is worse than no date. The page header names the three neighbouring
+  pages and what each one owns, so this does not become the frameworks/models triplication
+  that 2.3 just finished collapsing. The entry count in the opening sentence is summed from
+  the data in Liquid rather than typed, per the open Workstream 6 stat-literal item.
+  `connectivity.md` was added to `validate_frontmatter.rb`'s globs so it is gated like the
+  rest.)*
+  ***Still open:*** *this covers the funding half of the Workstream 4
+  `hidden-curriculum/career-mechanics.md` companion — who funds the next step — but not the
+  jobs half: where a trained proofreader actually goes. That item stays open.*
+
 ### 2.5 Make the personas load-bearing (S)
 - [x] **Persona Pathfinder, added after the fact:** `start-here.md` carried four bare cards —
   a persona name in an `<h3>` and nothing else — which is about as un-load-bearing as a persona
@@ -255,6 +279,61 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
   link. Zero findings on current content. Verified by injecting the original fault and
   confirming this gate fails while `check_site_links` stays green, plus a bogus path and a
   placeholder to check both directions.
+- [x] **Interaction defect, found and fixed after the fact: the AI synthesis modal covered
+  the whole site.** `technical-training/journal-club/index.md:104` ships the modal with
+  `class="... hidden"` and an inline `style="position:fixed; inset:0; display:flex;
+  z-index:1000"`. The only `.hidden` rule in the entire stylesheet was `.jc-card.hidden`,
+  so the class matched nothing on this element: the overlay rendered on page load, before
+  anyone asked for a prompt, and swallowed every click on the site nav underneath it. Its
+  close button added a class no rule listened to, so it could not be dismissed — the page
+  was unusable without a reload. Three other elements had the same defect and were also
+  permanently visible: `jc-empty` ("No papers match your filters") sat under a full grid of
+  results, and both copy-confirmation toasts were always on screen.
+  *(Fixed with one global `.hidden { display: none !important; }` utility.* ***The
+  `!important` is load-bearing, not defensive:*** *a normal author declaration cannot
+  override an inline `display:flex`, and an important one can, so this is the only form of
+  the rule that actually closes the modal. Verified in headless Chrome: with the rule
+  removed the modal computes `display:flex` and `elementFromPoint` over the nav returns the
+  overlay; with it, the modal is `none` and the nav is hit-testable again. The modal also
+  gained Escape and backdrop-click dismissal plus `role="dialog"`/`aria-modal`, and all six
+  dismissal cases — including "a click inside must NOT close" — pass in the browser.)*
+- [x] **Second instance of the same class, fixed:** `technical-training/dictionary/index.md`
+  toggles `is-active` on its 8 category filter buttons and no rule for it existed anywhere,
+  so the 127-term dictionary filtered correctly while giving no indication of which category
+  was selected. `.dict-cat.is-active` added, with a `:focus-visible` ring.
+- [x] **Validator: a class that JS toggles must have a CSS rule somewhere.** Both defects
+  above are the same failure and neither was catchable by any existing gate — every
+  validator in CI reads text, and nothing has ever opened a page in a browser.
+  `scripts/validate_toggled_classes.rb`, wired into the scripts job.
+  *(The check is* ***specificity-aware, not a name grep****, which is the whole difficulty: a
+  grep for "is `hidden` in the stylesheet?" passes the modal defect, because `.jc-card.hidden`
+  contains the name. So for every element carrying a toggled class in its markup, some
+  compound selector mentioning that class must have all of its classes present on that
+  element — `.hidden` satisfies anything, `.jc-card.hidden` only satisfies a card. A class
+  with no static carrier (JS builds the element) falls back to "does any rule mention it",
+  which is all that is knowable without running the page. Both original faults were
+  re-injected and confirmed to fail the gate.)*
+- [x] **Third instance, found by the new gate and fixed.** The AI synthesis modal's four
+  prompt-mode buttons — on both `journal-club/index.md` and `journal-club/graph.md` —
+  toggled an `active` class that no rule anywhere matched, and carried their selected state
+  as inline `background`/`color`/`font-weight` that the click handler rewrote on every
+  button on every click. Not a rendering fault like the other two, since the inline styles
+  did paint: a dead class next to eleven lines of JS doing a stylesheet's job, in a file
+  whose sibling `.jcg-tier-btn.active` and `.jc-tab.active` had always done it in CSS.
+  `.jc-pmode-btn.active` and `.jcg-pmode-btn.active` now own the state, the inline `style`
+  attributes are gone from all eight buttons, and each handler is one line.
+  *(Verified in headless Chrome on both pages: exactly one button selected, selected and
+  unselected distinguishable in background and weight, and a click moving the selection.
+  The three findings the gate reported alongside these were false positives from the first
+  draft and are the reason it now understands that `toggle(cls, force)`'s second argument is
+  a condition, not a class — `toggle('active', type === 'citation')` had it demanding a
+  `.citation` rule.)*
+- [ ] **The stronger version, still open:** no smoke test loads a real page, clicks the
+  interactive controls and asserts the nav is still reachable. The gate above is a static
+  approximation of it. `puppeteer-core` is in `node_modules` and was used by hand for the
+  verification above, but nothing in CI opens a browser — and note that the Jekyll build
+  cannot currently be run on this machine at all (`bundle` wants 2.6.9 against the system
+  Ruby 2.6), so any browser gate has to live in the build job, not the scripts job.
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
 - [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
 

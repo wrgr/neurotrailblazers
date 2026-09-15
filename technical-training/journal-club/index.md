@@ -101,7 +101,7 @@ content_type: core
   </div>
 
   <!-- AI Synthesis Prompt Modal -->
-  <div class="jc-prompt-modal hidden" id="jc-prompt-modal" style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.75); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1.5rem;">
+  <div class="jc-prompt-modal hidden" id="jc-prompt-modal" role="dialog" aria-modal="true" aria-labelledby="jc-prompt-modal-title" style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.75); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1.5rem;">
     <div class="jc-prompt-modal-content" style="background: #fff; border-radius: 12px; max-width: 720px; width: 100%; max-height: 90vh; display: flex; flex-direction: column; padding: 1.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid #cbd5e1;">
       <div class="jc-prompt-modal-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
         <h3 style="margin: 0; font-size: 1.2rem; color: #0f172a;" id="jc-prompt-modal-title">🤖 AI Research Synthesis Prompt</h3>
@@ -113,10 +113,10 @@ content_type: core
 
       <!-- Mode Switcher Tabs -->
       <div class="jc-prompt-modes" id="jc-prompt-mode-tabs" style="display: flex; gap: 0.35rem; margin-bottom: 0.75rem; background: #f1f5f9; padding: 0.25rem; border-radius: 8px;">
-        <button type="button" class="jc-pmode-btn active" data-mode="synthesis" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 700; border: none; border-radius: 6px; background: #1a56db; color: #fff; cursor: pointer;">📑 Synthesis Review</button>
-        <button type="button" class="jc-pmode-btn" data-mode="methods" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🔬 Methods Compare</button>
-        <button type="button" class="jc-pmode-btn" data-mode="problems" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">💡 Open Problems</button>
-        <button type="button" class="jc-pmode-btn" data-mode="seminar" style="flex: 1; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🎓 Seminar Guide</button>
+        <button type="button" class="jc-pmode-btn active" data-mode="synthesis">📑 Synthesis Review</button>
+        <button type="button" class="jc-pmode-btn" data-mode="methods">🔬 Methods Compare</button>
+        <button type="button" class="jc-pmode-btn" data-mode="problems">💡 Open Problems</button>
+        <button type="button" class="jc-pmode-btn" data-mode="seminar">🎓 Seminar Guide</button>
       </div>
 
       <div class="jc-prompt-box" style="flex: 1; display: flex; margin-bottom: 1rem;">
@@ -461,26 +461,41 @@ content_type: core
   // Prompt Mode Switching
   modeButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      modeButtons.forEach(function (b) {
-        b.classList.remove('active');
-        b.style.background = 'transparent';
-        b.style.color = '#475569';
-        b.style.fontWeight = '600';
-      });
+      // Selected state lives in `.jc-pmode-btn.active` in site-styles.css. It
+      // used to be written here as inline styles, with the class toggled
+      // alongside and nothing matching it.
+      modeButtons.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
-      btn.style.background = '#1a56db';
-      btn.style.color = '#fff';
-      btn.style.fontWeight = '700';
       currentPromptMode = btn.dataset.mode;
       generatePromptContent();
     });
   });
 
-  if (promptCloseBtn) {
-    promptCloseBtn.addEventListener('click', function () {
-      promptModal.classList.add('hidden');
-    });
+  // Modal dismissal. The close button was the only route out, and until the
+  // global `.hidden` utility existed it did nothing at all -- the modal opened
+  // over the site nav on page load and stayed there. Three routes now, which is
+  // what anyone meets a full-viewport overlay expecting: the button, Escape, and
+  // a click on the backdrop outside the content box.
+  function closePromptModal() {
+    promptModal.classList.add('hidden');
+    if (promptBtn) { promptBtn.focus(); }
   }
+
+  if (promptCloseBtn) {
+    promptCloseBtn.addEventListener('click', closePromptModal);
+  }
+
+  promptModal.addEventListener('click', function (e) {
+    // Only a click on the overlay itself, never one that bubbled up from the
+    // content box, the textarea or a button inside it.
+    if (e.target === promptModal) { closePromptModal(); }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !promptModal.classList.contains('hidden')) {
+      closePromptModal();
+    }
+  });
 
   // Reliable Copy-to-Clipboard
   if (copyBtn) {

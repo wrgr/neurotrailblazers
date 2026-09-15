@@ -90,6 +90,19 @@ jobs:
       - name: Site paths in code spans
         run: ruby scripts/validate_code_span_paths.rb
 
+      # Every gate above reads text; none has ever asked whether a style applies.
+      # That blind spot shipped two defects. The AI synthesis modal on the journal
+      # club page was marked class="... hidden" while the only rule in the
+      # stylesheet was `.jc-card.hidden`, so the full-viewport overlay painted on
+      # load and swallowed every click on the site nav, with a close button that
+      # added a class nothing listened to. The dictionary toggled `is-active` on
+      # its category buttons with no rule for it anywhere, so it filtered 127 terms
+      # without ever saying to what. This is specificity-aware, not a name grep --
+      # a grep passes the first defect, because `.jc-card.hidden` contains the
+      # name. Both faults were re-injected to confirm this fails on each.
+      - name: JS-toggled classes have a CSS rule
+        run: ruby scripts/validate_toggled_classes.rb
+
   build:
     name: Jekyll build and link audit (Ruby 3.1.6)
     runs-on: ubuntu-latest

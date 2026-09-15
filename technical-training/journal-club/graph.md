@@ -197,10 +197,10 @@ content_type: core
 
           <!-- Mode Switcher Tabs -->
           <div class="jcg-prompt-modes" id="jcg-prompt-mode-tabs" style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; background: #f1f5f9; padding: 0.25rem; border-radius: 8px;">
-            <button type="button" class="jcg-pmode-btn active" data-mode="synthesis" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 700; border: none; border-radius: 6px; background: #1a56db; color: #fff; cursor: pointer;">📑 Synthesis Review</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="methods" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🔬 Methods Compare</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="problems" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">💡 Open Problems</button>
-            <button type="button" class="jcg-pmode-btn" data-mode="seminar" style="flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer;">🎓 Seminar Guide</button>
+            <button type="button" class="jcg-pmode-btn active" data-mode="synthesis">📑 Synthesis Review</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="methods">🔬 Methods Compare</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="problems">💡 Open Problems</button>
+            <button type="button" class="jcg-pmode-btn" data-mode="seminar">🎓 Seminar Guide</button>
           </div>
 
           <div class="jcg-prompt-box" style="margin-bottom: 0.75rem;">
@@ -240,6 +240,14 @@ content_type: core
 .jcg-tier-btn:not(:last-child), .jcg-layout-btn:not(:last-child) { border-right: 1px solid #d1d5db; }
 .jcg-tier-btn.active, .jcg-layout-btn.active { background: #1a56db; color: #fff; }
 .jcg-tier-btn:hover:not(.active), .jcg-layout-btn:hover:not(.active) { background: #f3f4f6; }
+
+/* Prompt-mode selector in the AI synthesis modal. Its selected state was written
+   as inline styles from the click handler while an `active` class was toggled
+   that no rule matched -- unlike the tier and layout buttons directly above,
+   which have always done it in CSS. Same treatment as those now. */
+.jcg-pmode-btn { flex: 1; min-width: 130px; padding: 0.35rem 0.5rem; font-size: 0.76rem; font-weight: 600; border: none; border-radius: 6px; background: transparent; color: #475569; cursor: pointer; }
+.jcg-pmode-btn.active { background: #1a56db; color: #fff; font-weight: 700; }
+.jcg-pmode-btn:hover:not(.active) { background: #e2e8f0; }
 
 .jcg-era-fieldset { border: 1px solid #d1d5db; border-radius: 6px; padding: 0.5rem 0.75rem; background: #fff; }
 .jcg-era-fieldset legend { font-weight: 700; font-size: 0.78rem; padding: 0 0.3rem; color: #374151; }
@@ -2021,16 +2029,11 @@ content_type: core
   // Prompt Mode Switching
   modeButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      modeButtons.forEach(function (b) {
-        b.classList.remove('active');
-        b.style.background = 'transparent';
-        b.style.color = '#475569';
-        b.style.fontWeight = '600';
-      });
+      // Selected state lives in `.jcg-pmode-btn.active` in this page's style
+      // block. It used to be written here as inline styles, with the class
+      // toggled alongside and nothing matching it.
+      modeButtons.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
-      btn.style.background = '#1a56db';
-      btn.style.color = '#fff';
-      btn.style.fontWeight = '700';
       currentPromptMode = btn.dataset.mode;
       generateSynthesisPrompt();
     });

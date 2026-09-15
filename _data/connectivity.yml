@@ -1,0 +1,251 @@
+# The outward training and dissemination landscape.
+#
+# What this file is: the neuroscience training a NeuroTrailblazers learner
+# should know exists *elsewhere*, and the routes that fund getting there.
+# Rendered by /connectivity/.
+#
+# What it is NOT, and where that material lives instead:
+#   - How NeuroTrailblazers sits inside BRAIN CONNECTS  -> core/connects-ecosystem.md
+#   - The research consortia that built connectomics    -> initiatives.md
+#   - Citizen science and crowdsourced mapping          -> initiatives/outreach.md
+# Keep those boundaries. The site has already paid once for letting one topic
+# spread across three URLs (see NEXT_CONTENT_PASS.md workstream 2.3).
+#
+# Verification rule, same as _data/community_resources.yml: every entry was
+# checked against the resource's own site before being added, and `verified`
+# records the date that check was made. Do not add an entry you have not
+# checked the same way.
+#
+# Deliberately no application deadlines or session dates in this file. They go
+# stale within one cycle and a stale date is worse than no date; `cadence` says
+# when to look and the link says the rest.
+
+categories:
+  - id: connectomics
+    title: Training built on connectome data
+    intro: >-
+      The closest neighbours to this site: programmes that teach with the same
+      datasets NeuroTrailblazers teaches with. If you want more practice on
+      MICrONS or FlyWire specifically, start here rather than with a general
+      neuroscience course.
+    entries:
+      - name: FlyWire Academy
+        org: Princeton University
+        url: https://codex.flywire.ai/academy_home
+        audience: Advanced high school (AP/IB) and introductory undergraduate
+        format: Self-paced videos, interactive "dry lab" worksheets, Python exercises
+        cadence: Always open
+        cost: Free; Codex needs a Google account
+        note: >-
+          Three worksheets for high school and three for college, 20-30 and
+          30-45 minutes respectively, walking students through the whole-brain
+          fly connectome in Codex. The Python analysis exercises were still in
+          development at the college level when this entry was checked.
+        boundary: >-
+          Goes deeper on one organism than this site does. NeuroTrailblazers
+          covers fly alongside mouse and human and spends its time on why the
+          comparison holds.
+        verified: 2026-09-15
+
+      - name: Incorporating Open Connectomics Data into Teaching Neuroscience
+        org: Allen Institute
+        url: https://alleninstitute.org/events/incorporating-open-connectomics-data-into-teaching-neuroscience
+        audience: Undergraduate neuroscience educators
+        format: Two-day in-person workshop at the Allen Institute; no coding experience required
+        cadence: Run in summer; check the events page for the next round
+        cost: No fee; domestic travel funds available
+        note: >-
+          Participants learn to navigate the MICrONS mouse visual cortex volume
+          and leave with the laboratory modules, lesson plans and assessment
+          tools to run dry labs in their own classes.
+        boundary: >-
+          The single most direct peer to this site's teaching layer, and it is
+          for instructors rather than learners. If you run a course, go to this
+          and bring the session kits from here to compare.
+        verified: 2026-09-15
+
+      - name: Allen Institute science education and open-data workshops
+        org: Allen Institute
+        url: https://alleninstitute.org/education
+        audience: Educators, undergraduates, the public
+        format: Workshops, teaching resources, field trips, public events
+        cadence: Year-round programme
+        cost: Varies by event
+        note: >-
+          The broader education programme the connectomics teaching workshop
+          sits inside, including Python workshops on Allen open datasets and the
+          Summer Workshop on the Dynamic Brain.
+        boundary: >-
+          Allen maintains the datasets and the manuals for them. This site's
+          standing rule is link and scaffold, not recreate.
+        verified: 2026-09-15
+
+  - id: schools
+    title: Intensive schools and summer courses
+    intro: >-
+      Residential or cohort-based courses in computational and experimental
+      neuroscience. These are where a learner who has finished the technical
+      units goes for bench or modelling depth this site cannot give online.
+    entries:
+      - name: Neuromatch Academy
+        org: Neuromatch
+        url: https://neuromatch.io/computational-neuroscience/
+        audience: Students and researchers entering neuroscience, ML and modelling
+        format: Intensive live online course in small "pods" with a teaching assistant and a mentored group project
+        cadence: Annual, July; applications close in the spring
+        cost: Tuition adjusted to local cost of living; waivers available at enrollment
+        note: >-
+          Separate courses in Computational Neuroscience, NeuroAI, Deep Learning
+          and Climate Science. Pods are matched by time zone, research interest
+          and where possible language. Course content is public on GitHub.
+        boundary: >-
+          Teaches modelling and analysis method. It does not teach where the
+          connectivity data comes from or how to judge a reconstruction, which
+          is what technical units 03-08 here are for.
+        verified: 2026-09-15
+
+      - name: CAJAL Advanced Neuroscience Training Programme
+        org: FENS, Bordeaux Neurocampus and Champalimaud Foundation
+        url: https://cajal-training.org/courses/
+        audience: PhD students and postdocs
+        format: Three-week project-based residential courses; lectures plus hands-on experimental sessions
+        cadence: Annual programme of courses
+        cost: Fees apply; check each course
+        note: >-
+          Established 2015. Courses span neural circuit methods - optical,
+          electrophysiological, viral tracing, anatomical, optogenetic - plus
+          computational neuroscience, at Bordeaux and at the Champalimaud Centre
+          in Lisbon.
+        boundary: >-
+          Wet-lab and circuit-physiology depth. Complementary to, not
+          overlapping with, the volume EM pipeline this site teaches.
+        verified: 2026-09-15
+
+      - name: "Neurobiology: Mechanisms and Advanced Approaches"
+        org: Marine Biological Laboratory, Woods Hole
+        url: https://www.mbl.edu/education/advanced-research-training-courses/course-offerings/neurobiology-mechanisms-advanced-approaches
+        audience: Graduate students, postdocs and faculty
+        format: Six-week immersive research course; participants and faculty run original research within the course
+        cadence: Annual, early June to mid-July
+        cost: Fees apply; financial aid is part of the MBL course model
+        note: >-
+          Cellular and molecular mechanisms of nervous system function in health
+          and neurological disorders, taught at the level of current method
+          rather than settled textbook material.
+        boundary: >-
+          Mechanism at the cell and molecule scale. This site starts one level
+          up, at the wiring diagram.
+        verified: 2026-09-15
+
+      - name: CSHL neuroscience courses
+        org: Cold Spring Harbor Laboratory
+        url: https://meetings.cshl.edu/neuroscience-courses
+        audience: Neuroscientists at all levels
+        format: Intensive residential lecture-and-laboratory courses, typically two to three weeks
+        cadence: Annual course calendar
+        cost: Fees apply
+        note: >-
+          Relevant offerings include Imaging Structure and Function in the
+          Nervous System, Drosophila Neurobiology (genes, circuits and
+          behaviour), and Computational Neuroscience: Vision. Courses run all
+          day including evenings and weekends, with students resident on campus.
+        boundary: >-
+          Imaging and model-organism technique. The Drosophila course is the
+          natural next step after the fly material here.
+        verified: 2026-09-15
+
+  - id: open-platforms
+    title: Open platforms and professional development
+    intro: >-
+      Free or low-cost material you can work through without an application, and
+      the professional-skills training the societies run.
+    entries:
+      - name: INCF TrainingSpace
+        org: International Neuroinformatics Coordinating Facility
+        url: https://training.incf.org/
+        audience: Anyone
+        format: Aggregated online course catalogue - videos, lectures, hands-on tutorials
+        cadence: Always open
+        cost: Free
+        note: >-
+          Courses and lessons across general, clinical and computational
+          neuroscience, neuroinformatics and computer science. Each entry lists
+          prerequisites and the software it needs. Part of the wider INCF
+          Training Suite, whose remit is making training materials FAIR.
+        boundary: >-
+          An index of other people's courses rather than a curriculum. This site
+          is the opposite: one sequence with a stated order and stated
+          prerequisites.
+        verified: 2026-09-15
+
+      - name: SfN Neuronline
+        org: Society for Neuroscience
+        url: https://neuronline.sfn.org/
+        audience: Neuroscientists at every career stage
+        format: Articles, webinars, virtual conferences, discussion forums, Scientific Short Courses
+        cadence: Year-round
+        cost: Unlimited for SfN members; five resources per month for everyone else
+        note: >-
+          Skills material on science communication, collaboration, lab
+          management, grants, mentoring and networking. SfN has nearly 35,000
+          members across more than 95 countries.
+        boundary: >-
+          Closest overlap is with this site's hidden curriculum, which writes the
+          same operating knowledge down as named, checkable statements rather
+          than advice pieces.
+        verified: 2026-09-15
+
+  - id: funding
+    title: Routes that pay for the next step
+    intro: >-
+      Training is only reachable if something funds it. These are the standing
+      NIH mechanisms most relevant to someone moving into connectomics. Specific
+      funding opportunity announcements open and expire on their own schedule -
+      always confirm a mechanism is currently active before building a plan on it.
+    entries:
+      - name: BRAIN Initiative Training Program
+        org: NIH BRAIN Initiative
+        url: https://braininitiative.nih.gov/research/training-inclusion-and-equity/training-program
+        audience: Predoctoral through early-career faculty
+        format: Portfolio hub for BRAIN-specific training and career-development awards
+        cadence: Standing programme; individual announcements vary
+        cost: n/a - this is funding
+        note: >-
+          The entry point for BRAIN Initiative training mechanisms. Start here
+          rather than with an individual announcement, which may have expired.
+        boundary: >-
+          NeuroTrailblazers is developed inside a BRAIN CONNECTS project
+          (HI-MC, UM1NS132250). See how we fit BRAIN CONNECTS for that
+          relationship.
+        verified: 2026-09-15
+
+      - name: NINDS R25 - Neuroscience Development for a Diverse Research Workforce
+        org: NINDS
+        url: https://www.ninds.nih.gov/funding/training-career-development/diversity-awards/nih-neuroscience-development-advancing-careers-diverse-research-workforce
+        audience: Postbaccalaureate, graduate, postdoctoral and junior faculty researchers
+        format: Institutional research education award
+        cadence: Standing mechanism
+        cost: n/a - this is funding
+        note: >-
+          Targets retention rather than recruitment: mentoring, scientific
+          networks, professional development, and the institutional environment
+          around inclusion.
+        boundary: >-
+          Funds programmes, not individuals directly. If you are a learner, the
+          question to ask your institution is whether it holds one.
+        verified: 2026-09-15
+
+      - name: BRAIN Advanced Postdoctoral Career Transition Award (K99/R00)
+        org: NIH BRAIN Initiative
+        url: https://braininitiative.nih.gov/funding-opportunies/brain-initiative-advanced-postdoctoral-career-transition-award-promote-0
+        audience: Postdocs in BRAIN Initiative research areas moving to independence
+        format: Mentored-to-independent career transition award
+        cadence: Reissued periodically; confirm the current announcement
+        cost: n/a - this is funding
+        note: >-
+          The standard route from a connectomics postdoc to a tenure-track
+          position while staying in BRAIN research areas.
+        boundary: >-
+          Career mechanics - what these applications actually require - are
+          covered in this site's hidden curriculum.
+        verified: 2026-09-15

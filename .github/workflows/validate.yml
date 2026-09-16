@@ -23,7 +23,7 @@ jobs:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -110,7 +110,7 @@ jobs:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # Pinned to match the Gemfile's `ruby "3.1.6"`. See the note at the top of this file.
       - uses: ruby/setup-ruby@v1

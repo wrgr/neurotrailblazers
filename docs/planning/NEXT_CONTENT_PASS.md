@@ -239,7 +239,12 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 (`course/decks/marp/neurotrailblazers-template.marp.md`) and PowerPoint template
 (`assets/brand/NeuroTrailblazers-slide-template.pptx`) ship with this plan.
 
-- [ ] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
+- [~] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
+  *(Half done, found during a restatus on 16 September 2026: `slides/index.md:46-58` now
+  carries all three as cards with both the rendered deck and the Markdown source.*
+  ***Still open:*** *none of the six unit pages links a deck — `grep -c en585781` returns 0
+  on units 01, 02, 03, 04, 08 and 09. That is the half that puts a deck in front of
+  someone already reading the unit, so the "highest value-per-minute" note still stands.)*
 - [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Still open:** speaker notes, a source line per figure, and the content itself — several slides overflow because they carry an image plus bullets, which predates the theme and needs an authoring pass, not a CSS one. The en585781 rename is also still open.)*
 - [x] **Found while rendering, now fixed:** `scripts/render_marp.sh` produced
   machine-dependent output. Marp derives the `<html lang>` attribute from the process
@@ -254,7 +259,7 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
   `package.json`, so a CLI upgrade rewrites all 39 files.
 - [ ] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
 - [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
-- [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 70 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
+- [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 56 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses (70 when this plan was written; the count drifts with every stylesheet edit, so re-count before starting) and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
 - [ ] Replace `favicon.ico` with `assets/brand/nt-favicon.svg` (plus a 32 px PNG fallback); add `<link rel="icon">` to the layout; add the social card as `og:image` (S).
 - [ ] Header: replace the text logo with `nt-lockup-horizontal.svg`; consider dropping the full-width banner image from interior pages (S).
 - [ ] Drop the unused Plus Jakarta Sans from the font request; add Barlow Condensed 700 for display headings (S).

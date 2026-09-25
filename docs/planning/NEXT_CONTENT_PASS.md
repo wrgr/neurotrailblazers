@@ -246,6 +246,36 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
   Methods) for units 03–04, module09 (Algorithms and Applications) for units 08–09, matching
   the pairing the decks themselves describe. `validate_technical_evidence.rb` and
   `validate_code_span_paths.rb` re-run clean.)*
+- [x] **Two standalone graduate lectures, not in the original plan.** The two Workstream 4
+  reference pages that went through a rigor pass — `synapse-detection.md` and
+  `ethics-and-governance.md` — are now presentation decks in the `frontiers` theme:
+  `course/decks/marp/lectures/synapse-detection.marp.md` (39 slides) and
+  `ethics-and-governance.marp.md` (31 slides), each sized for one 50–60 minute lecture rather
+  than padded to the 56–59 of the three-part en585781 sessions. They are deliberately **not**
+  EN.585.781 material: no module number, course name, institution or named instructor
+  anywhere in either; the byline is "NeuroTrailblazers", the credit line cites the project,
+  and the course housekeeping the templates carry (assignments, forums, journal-club
+  sign-ups) is dropped. Every number and citation traces to the source page — nothing new
+  was added — and each deck ends on a "what this lecture does not cover" slide carrying the
+  page's own boundaries: no CREMI weighting formula, no leaderboard positions, no gap-junction
+  figures, no compute budgets; hemibrain's CC BY version and H01's data licence left
+  unverified rather than guessed. Zero images, so the same "no third-party figures" line
+  holds. HTML-comment speaker notes on the slides that carry the worked numbers (the H01
+  74.2% → 67.1% recount, the SynEM 88% → 97% aggregation step, the FlyWire licence split).
+  Linked from a new, separately headed section of `technical-training/slides/index.md` and
+  from each source page's Go deeper list. *(`course/decks/marp/lectures` added to
+  `_config.yml` `exclude:` beside `en585781`; `out/lectures/` stays published. A
+  directory `LICENSE` was added on the `en585781` precedent, because the top-level LICENSE
+  puts decks under `course/` at CC BY 4.0 and the decks' own CC BY-SA 4.0 claim needed the
+  same override. Rendered with marp-cli pinned to 4.5.1, the version stamped in the committed
+  outputs, so none of the other 39 decks churned. All 70 slides measured inside the 720 px
+  frame in headless Chrome, with the detector checked first against a deliberately
+  overflowing slide. `check_deck_freshness.rb`, `validate_generated_materials.rb`,
+  `validate_figure_refs.rb`, `validate_frontmatter.rb` and `validate_code_span_paths.rb`
+  all clean.)* ***Still open:*** *the ethics deck points to "the site's peer-review and
+  scientific-ethics module" in words rather than by number, to keep "Module N" out of a deck
+  that must not read as a course module; an instructor presenting it may want the link on
+  screen. Neither deck has been presented to a room, so the timing is an estimate.*
 - [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Authoring pass done 24 September 2026:** all 66 embedded figures now carry a `<p class="source">` line. The 17 H01 renders cite the release, CC BY 4.0 and Shapson-Coe et al. 2024 as `_data/em_figures.yml` does; the 43 `RIV-*`, `Module1N L*` and Techtalk extractions cite their source deck in the unit pages' own attribution wording ("Pat Rivlin training materials (MICrONS proofreading deck)", "assets_outreach source decks", 2021 techtalk, historical/context); the six Wikimedia/PLOS images cite file page and licence from `assets/images/external/ATTRIBUTION.md`. 107 speaker-note blocks, in the HTML-comment convention of the module decks, carry the unit pages' worked examples and numbers. The 20 slides that ran off the frame — measured in headless Chrome, not guessed; the worst, 07's Wikimedia glia diagram, ended at y=1576 of 720 — are now two-column or figure-with-caption, and the same measure puts all 175 slides inside the frame with the source line clear of the content. 04's heading-only "pipeline overview" slide now carries Module14 L1 S04; 06's one-bullet "High-complexity edge case" was folded into the protocol slide. Headings that contradicted their image were retitled from what the image shows: 05's "dendritic context" is a soma (the unit page already said so), 06's "continuity check case" is a PSD scaffold schematic, 09's "analysis workflow overview" is a simulated legged agent. Three images that did not belong went: 02's stock brain-on-a-chip and fused-car pictures gave way to the H01 four-scale ladder, and 08's unrelated raw-EM "metrics" image became the unit's metric blind-spot table. The "External paper figure slots (add in final teaching run)" placeholders are reading lists with DOIs from the atlas references. Title slides now read "Technical Course · Unit NN".* ***Provenance trace, 24 September 2026:*** *two of the five flagged figures are now
 confirmed, by citation search, to be copyrighted third-party work with no open licence —
 this is the one item on this list that is a rights question, not a documentation one.

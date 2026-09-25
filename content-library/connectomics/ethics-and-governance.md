@@ -377,6 +377,9 @@ Three things this page can state without hedging.
   example of the bounded-claim discipline §4 asks for.
 - [Datasets]({{ '/datasets/' | relative_url }}) — access routes and per-dataset
   terms.
+- Graduate lecture: [Connectomics ethics and governance]({{ '/course/decks/marp/out/lectures/ethics-and-governance.html' | relative_url }})
+  — this page as a 31-slide presentation deck with speaker notes, CC BY-SA 4.0
+  ([source]({{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md)).
 
 ---
 

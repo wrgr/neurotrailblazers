@@ -472,6 +472,9 @@ neuron-centric synapse proofreading with model-assisted error detection.
   — the reading list for the methods above.
 - [Unit 08: segmentation and proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
   — the hands-on counterpart.
+- Graduate lecture: [Synapse detection]({{ '/course/decks/marp/out/lectures/synapse-detection.html' | relative_url }})
+  — this page as a 39-slide presentation deck with speaker notes, CC BY-SA 4.0
+  ([source]({{ site.deck_source_base }}/lectures/synapse-detection.marp.md)).
 
 ---
 

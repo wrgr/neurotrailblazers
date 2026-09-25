@@ -62,6 +62,27 @@ scorecard at the end of the third. They draw on units 01&ndash;04, 08 and 09.
 These are numbered 7&ndash;9 as lectures within that graduate course. They are not curriculum
 modules 07&ndash;09, which are Proofreading, Hypothesis Testing and Morphology.
 
+## Standalone graduate lectures from the reference layer
+
+Two further presentation decks, built in the same theme and to the same standard, but not part
+of EN.585.781 or any other course. Each is drawn entirely from one content-library page, carries
+that page's numbers and citations, and ends with a slide stating what the page does not cover.
+Both are sized for a single 50&ndash;60 minute lecture and carry the same CC BY-SA 4.0 licence
+and speaker notes as the decks above.
+
+<div class="cards-grid">
+  <article class="card">
+    <h3 class="card-title"><a href="{{ '/course/decks/marp/out/lectures/synapse-detection.html' | relative_url }}">Synapse detection</a></h3>
+    <p class="card-description">Three problems and the published record &middot; benchmarks and the sign problem &middot; using somebody else's synapse table. 39 slides, from <a href="{{ '/content-library/infrastructure/synapse-detection/' | relative_url }}">Synapse Detection</a>.</p>
+    <p><a href="{{ site.deck_source_base }}/lectures/synapse-detection.marp.md">Markdown source</a></p>
+  </article>
+  <article class="card">
+    <h3 class="card-title"><a href="{{ '/course/decks/marp/out/lectures/ethics-and-governance.html' | relative_url }}">Connectomics ethics and governance</a></h3>
+    <p class="card-description">Human tissue: consent and de-identification &middot; licences &middot; dual use and credit for proofreading. 31 slides, from <a href="{{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}">Ethics and Governance</a>.</p>
+    <p><a href="{{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md">Markdown source</a></p>
+  </article>
+</div>
+
 Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relative_url }}).
 
 <div class="cards-grid">

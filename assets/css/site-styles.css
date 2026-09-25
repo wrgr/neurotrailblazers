@@ -18,6 +18,9 @@
   }
 }
 
+/* JS-controlled visibility must also override inline display:flex on overlays. */
+.hidden { display: none !important; }
+
 :root {
   --neural-blue: #2563eb;
   --cerebral-purple: #7c3aed;

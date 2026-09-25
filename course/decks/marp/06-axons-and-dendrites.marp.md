@@ -191,7 +191,7 @@ Watch for over-read absence: no ribosomes in a 150–200 nm process is weak evid
 
 <p class="caption">The dark thickening you see in EM is a protein scaffold on the postsynaptic membrane.</p>
 
-<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-AXDEN S18.</p>
+<p class="source">Source: Sheng M, Kim E (2011), "The Postsynaptic Organization of Synapses," <em>Cold Spring Harb Perspect Biol</em> 3(12):a005678, Figure 3, doi:10.1101/cshperspect.a005678. &copy; Cold Spring Harbor Laboratory Press, all rights reserved &mdash; not openly licensed; confirm permission before this deck is shared outside the course.</p>
 
 <!--
 The PSD is why Family C works: a density on the receiving membrane means this process is postsynaptic. Then give the exceptions (unit §2) before anyone applies "PSD implies dendrite" mechanically:

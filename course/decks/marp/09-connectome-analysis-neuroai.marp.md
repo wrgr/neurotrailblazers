@@ -227,7 +227,7 @@ Design one analysis card with:
 
 <p class="caption">One of the 16 directed triad classes, drawn on its own.</p>
 
-<p class="source">Source: Wikimedia Commons, File:Feed-forward_motif.GIF. CC BY-SA 3.0.</p>
+<p class="source">Source: Wikimedia Commons user Marashie, File:Feed-forward_motif.GIF. CC BY-SA 3.0.</p>
 
 ---
 

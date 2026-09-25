@@ -69,7 +69,7 @@ Each glial class has one near-diagnostic feature. Learn those three first: astro
 
 <p class="caption">An astrocytic process is space-filling; a neurite is a tube.</p>
 
-<p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-GLIA S03; the slide reproduces a web page credited on-image to Rachel E. Ventura.</p>
+<p class="source">Source: Ventura RE, "Astrocytes," SynapseWeb (Kristen M. Harris Lab, UT Austin), synapseweb.clm.utexas.edu/astrocytes. &copy; The University of Texas at Austin; no reuse licence is stated &mdash; confirm permission before this deck is shared outside the course.</p>
 
 <!--
 Read cross-sectional shape before anything else. An astrocytic process takes whatever contour is left over after the neurites pack; a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.
@@ -237,7 +237,7 @@ Classify two ambiguous glia-neuron interfaces and submit:
 
 ![h:440](../../../assets/images/external/glial-cell-types.png)
 
-<p class="source">Source: Wikimedia Commons, File:Glial_Cell_Types.png. CC BY 3.0 Unported.</p>
+<p class="source">Source: Holly Fischer, Wikimedia Commons, File:Glial_Cell_Types.png. CC BY 3.0 Unported.</p>
 
 ---
 

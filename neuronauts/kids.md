@@ -10,7 +10,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
   <!-- Hero Section -->
   <section class="nn-kid-hero">
     <div class="nn-kid-badge"><span aria-hidden="true">🚀</span> Neuronauts Junior Science Lab</div>
-    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Let's Explore the Brain's Super-Highways!</span></h1>
+    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Let's Explore the Brain's Connections!</span></h1>
     <p class="nn-kid-intro">
       Did you know your brain has over <strong>86 billion tiny cells</strong> called neurons, connected by <strong>100 trillion secret bridges</strong> called synapses? Join the <strong>Neuronauts crew</strong> to discover how scientists map the brain using giant electron microscopes, smart AI robots, and video games!
     </p>
@@ -71,7 +71,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
           <span class="nn-story-tag"><span aria-hidden="true">📸</span> Giant Brain Map</span>
           <span class="nn-story-paper">Based on: Shapson-Coe et al. (Science 2024) &amp; Kasthuri et al. (Cell 2015)</span>
         </div>
-        <h3>1. The 150-Million Photo Puzzle of the Human Brain!</h3>
+        <h3>1. The Tiny Brain Sample with 150 Million Connections</h3>
         <div class="nn-story-body">
           <p>
             <strong>The Big Question:</strong> What does a piece of the human brain look like if you zoom in 100,000 times?
@@ -80,7 +80,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine taking a high-definition photo of every single grain of sand on a 10-mile beach, and then stacking them all in 3D to see how tiny ant tunnels connect underneath!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into 5,000 ultra-thin sheets—each 1,000 times thinner than a human hair. They took <strong>150 million microscope photos</strong> and used supercomputers to build the most detailed 3D human brain map ever seen!
+            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into 5,000 ultra-thin sheets—each 1,000 times thinner than a human hair. They combined microscope images with powerful computers to build a detailed 3D map of this tiny brain sample.
           </p>
           <div class="nn-fun-fact">
             <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> In that tiny speck, they found <strong>57,000 cells</strong> and <strong>150,000,000 synapses</strong>!
@@ -132,7 +132,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine a giant bowl filled with 10,000 cooked rainbow spaghetti noodles all twisted together in a knot. If you pull one end, how do you find where it comes out on the other side?
           </div>
           <p>
-            <strong>What Scientists Did:</strong> They created <strong>Flood-Filling Networks (FFNs)</strong> and deep learning algorithms. The AI robot starts inside a single cell and "pours digital paint" that fills up only that exact neuron, dodging cell walls and following branches in 3D!
+            <strong>What Scientists Did:</strong> They created <strong>Flood-Filling Networks (FFNs)</strong> and deep learning algorithms. The AI robot starts inside a single cell and "pours digital paint" that fills up only that exact neuron, following cell membranes and following branches in 3D!
           </p>
           <div class="nn-fun-fact">
             <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> AI robots can trace millions of voxels in seconds, but human "proofreaders" still double-check their work to make sure no noodles were accidentally glued together!
@@ -155,7 +155,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
             <strong>The Big Question:</strong> What was the very first creature whose entire brain wiring was completely mapped?
           </p>
           <div class="nn-analogy-box">
-            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Solving a 302-piece jigsaw puzzle by hand before computers even existed!
+            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Solving a 302-piece jigsaw puzzle by hand using printed microscope photos and hand-drawn tracings!
           </div>
           <p>
             <strong>What Scientists Did:</strong> In 1986, Sydney Brenner and his team spent over 15 years cutting a 1-millimeter worm named <em>C. elegans</em> into thousands of slices, printing physical photos, and tracing all <strong>302 neurons</strong> and <strong>7,000 synapses</strong> by hand with colored pens!
@@ -201,11 +201,11 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
   <!-- Interactive Concept Decoder -->
   <section class="nn-decoder-section" id="decoder">
     <h2 class="nn-section-title"><span aria-hidden="true">🔍</span> The Brain Explorer Concept Decoder</h2>
-    <p class="nn-section-desc">Click any brain word to reveal its secret superpower and kid analogy!</p>
+    <p class="nn-section-desc">Read each brain word, its meaning, and an analogy to help you remember it.</p>
 
     <div class="nn-decoder-grid">
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🧠</span></span>
           <h4>Neuron</h4>
@@ -217,7 +217,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">⚡</span></span>
           <h4>Axon</h4>
@@ -229,7 +229,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🌿</span></span>
           <h4>Dendrite</h4>
@@ -241,7 +241,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🤝</span></span>
           <h4>Synapse</h4>
@@ -253,7 +253,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🛡️</span></span>
           <h4>Glia</h4>
@@ -265,7 +265,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🗺️</span></span>
           <h4>Connectome</h4>
@@ -277,7 +277,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🔬</span></span>
           <h4>Electron Microscope</h4>
@@ -289,7 +289,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🕵️</span></span>
           <h4>Proofreading</h4>
@@ -308,7 +308,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
   <section class="nn-game-section" id="detective-game">
     <div class="nn-game-card">
       <div class="nn-game-badge"><span aria-hidden="true">🎮</span> Mini-Challenge</div>
-      <h2>Become a Certified Junior Brain Detective!</h2>
+      <h2>Become a Junior Brain Detective!</h2>
       <p>Test your brain explorer knowledge with this 3-question quick mission:</p>
 
       <div class="nn-quiz-container" id="nn-quiz">
@@ -470,7 +470,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 /* Crew */
 .nn-crew-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   gap: 1rem;
   margin: 1.5rem 0 3rem;
 }
@@ -518,7 +518,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
   font-weight: 700;
   font-size: 0.8rem;
 }
-.nn-story-paper { font-size: 0.8rem; color: #64748b; font-style: italic; }
+.nn-story-paper { flex: 1 1 22rem; min-width: 0; line-height: 1.6; font-size: 0.9rem; color: #64748b; font-style: italic; }
 .nn-story-card h3 { font-size: 1.35rem; color: #0f172a; margin: 0.3rem 0 0.85rem; font-weight: 800; line-height: 1.3; }
 .nn-analogy-box {
   background: #fefce8;
@@ -553,7 +553,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 /* Decoder Grid */
 .nn-decoder-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 1.25rem;
 }
 .nn-decoder-card {
@@ -563,9 +563,8 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
   padding: 1.25rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   transition: all 0.2s ease;
-  cursor: pointer;
 }
-.nn-decoder-card:hover, .nn-decoder-card:focus {
+.nn-decoder-card:hover {
   border-color: #3b82f6;
   box-shadow: 0 8px 20px rgba(59,130,246,0.15);
   transform: translateY(-2px);
@@ -639,7 +638,7 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 /* Guide */
 .nn-guide-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -651,6 +650,10 @@ description: "Explore the amazing world of brain wiring! Kid-friendly explanatio
 }
 .nn-guide-card h3 { font-size: 1.05rem; color: #0f172a; margin: 0 0 0.5rem; font-weight: 700; }
 .nn-guide-card p { font-size: 0.88rem; color: #475569; line-height: 1.5; margin: 0; }
+@media (max-width: 640px) {
+  .nn-kid-hero, .nn-story-card, .nn-game-card { padding: 1.25rem; }
+  .nn-quiz-container { padding: 1rem; }
+}
 </style>
 
 <script>

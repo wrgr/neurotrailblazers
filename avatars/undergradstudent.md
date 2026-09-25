@@ -58,7 +58,7 @@ content_type: core
   <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
 </nav>
 
-    <section class="section" id="story">
+<section class="section" id="story">
         <h2>Julian's Story</h2>
         <div style="background: var(--brain-gray); padding: 2rem; border-radius: 12px; margin: 1rem 0;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: var(--synapse-black); margin: 0;">
@@ -89,9 +89,9 @@ content_type: core
                 </ul>
             </div>
         </div>
-    </section>
+</section>
 
-    <section class="section" id="decisions" markdown="1">
+<section class="section" id="decisions" markdown="1">
 
 ## The Decisions in Front of Julian
 
@@ -118,9 +118,9 @@ capability, and read one
 with [lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) — before
 his first lab meeting, not after.
 
-    </section>
+</section>
 
-    <section class="section" id="path" markdown="1">
+<section class="section" id="path" markdown="1">
 
 ## How the Site's Material Serves Him
 
@@ -164,6 +164,6 @@ asking-for-help scripts in his own words — the exercise
 years from now, a graduate application built from those small finished
 artifacts will say more than the GPA line, and it will be true.
 
-    </section>
+</section>
 
 </div>

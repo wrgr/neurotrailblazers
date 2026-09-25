@@ -335,7 +335,7 @@ Use these with the protocol in §3 in hand, and force yourself to name the step 
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Some manifest-listed IDs used in planning (`S04`, `S06`, `S10`, `S16`) were not present in extracted thumbnails and were replaced with available neighboring cues.</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Some manifest-listed IDs used in planning (<code>S04</code>, <code>S06</code>, <code>S10</code>, <code>S16</code>) were not present in extracted thumbnails and were replaced with available neighboring cues.</small></p>
 
 ---
 

@@ -30,7 +30,7 @@ surfaces:
   - slug: journal-club
     title: Journal club
     url: /technical-training/journal-club/
-    size: "2,000 papers with discussion prompts (tiered 500 / 1,000 / 2,000)"
+    size: "2,000 papers · 3 tiers"
     icon: "\U0001F4F0"
     summary: >-
       The literature organized by topic, each entry stating what the paper

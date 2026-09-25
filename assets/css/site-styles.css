@@ -176,7 +176,7 @@ body {
 
 .hero-title-impact span {
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: inherit;
 }
 
 .hero-title-main {
@@ -313,20 +313,20 @@ body {
 .cards-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   justify-content: center;
   justify-items: center;
 }
 
 .grid-sm {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 1rem;
 }
 
 .grid-md {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1.5rem;
 }
 
@@ -439,7 +439,7 @@ body {
 .datasets-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   justify-content: center;
   justify-items: center;
 }
@@ -481,7 +481,7 @@ body {
 .modules-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   margin-bottom: 2rem;
   justify-content: center;
   justify-items: center;
@@ -543,7 +543,7 @@ body {
 .merit-matrix {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   margin-bottom: 2rem;
   justify-content: center;
   justify-items: center;
@@ -629,7 +629,7 @@ body {
 }
 
 .lesson-map-grid {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
 }
 
 .lesson-step {
@@ -668,7 +668,7 @@ footer {
 .ccr-boxes {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   justify-content: center;
   justify-items: center;
 }
@@ -950,6 +950,21 @@ footer {
 
 .expert-bio-text {
   flex: 1 1 auto;
+  min-width: 0;
+}
+
+.expert-portrait {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  float: right;
+  margin: 0 0 1.25rem 1.25rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .expert-bio { padding: 1.25rem; }
+  .expert-portrait { float: none; display: block; margin: 0 auto 1.25rem; }
 }
 
 .expert-avatar {
@@ -1118,7 +1133,7 @@ footer {
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -1794,7 +1809,7 @@ footer {
 /* Card grid */
 .jc-grid {
   display: grid; gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
 }
 @media (max-width: 500px) {
   .jc-grid { grid-template-columns: 1fr; }
@@ -1960,7 +1975,7 @@ footer {
 /* Reading paths */
 .jc-paths {
   display: grid; gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   margin-bottom: 2rem;
 }
 .jc-path-card {
@@ -2028,6 +2043,8 @@ footer {
    which is worse than the overflow it fixed. Kramdown cannot emit a wrapper,
    so `wrapContentTables()` in assets/js/module-interactives.js adds one. */
 .table-scroll {
+  min-width: 0;
+  max-width: 100%;
   margin: 1.4rem 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -2309,7 +2326,7 @@ footer {
    variant is for cards that hold real prose.
    --------------------------------------------------------------------------- */
 .cards-grid-wide {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   justify-items: stretch;
 }
 
@@ -2413,12 +2430,13 @@ footer {
 .arch-grid {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 285px), 1fr));
   align-items: stretch;
   margin: 1.5rem 0;
 }
 
 .arch-card {
+  min-width: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2565,7 +2583,9 @@ a.arch-card,
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   background: var(--surface);
   border: 1px solid var(--border);
   color: var(--muted);
@@ -2612,7 +2632,7 @@ a.arch-card,
 .layer-legend {
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
   margin: 1.5rem 0;
   padding: 0;
   list-style: none;
@@ -2709,7 +2729,7 @@ a.arch-card,
 .mode-facts {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   margin: 1.25rem 0;
   padding: 1rem 1.1rem;
   background: var(--surface);
@@ -2735,7 +2755,7 @@ a.arch-card,
 .mode-columns {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   margin: 1.25rem 0 0;
 }
 

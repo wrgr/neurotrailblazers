@@ -252,5 +252,5 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
   </div>
 </div>
 
-Need help deciding where to start? Visit **[Start Here]({{ '/start-here/' | relative_url }})**, explore **[Concepts]({{ '/concepts/' | relative_url }})**, or review the **[Models]({{ '/models/' | relative_url }})** that shape the curriculum.
+<p>Need help deciding where to start? Visit <a href="{{ '/start-here/' | relative_url }}">Start Here</a>, explore <a href="{{ '/concepts/' | relative_url }}">Concepts</a>, or review the <a href="{{ '/models/' | relative_url }}">Program Models</a> that shape the curriculum.</p>
 </div>

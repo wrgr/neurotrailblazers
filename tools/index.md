@@ -30,10 +30,10 @@ content_type: core
   </div>
 
   <section class="section">
-    <p>Two kinds of tool matter here, and they live in different places.</p>
+    <p>Two kinds of tools matter here, and they live in different places.</p>
     <p><strong>The tools on this page</strong> are NeuroTrailblazers' own: guided support for
     getting unstuck, and structured practice in judging connectome quality. Use them when you
-    need a person's expertise or a scaffolded exercise.</p>
+    want help exploring a question or a structured exercise.</p>
     <p><strong>The tools you will actually run</strong> &mdash; Neuroglancer, CAVE and
     <code>caveclient</code>, CloudVolume, neuPrint, CATMAID, webKnossos, <code>navis</code>,
     <code>graspologic</code>, DotMotif, BossDB &mdash; are third-party software. They are
@@ -48,13 +48,13 @@ content_type: core
 
   <section class="section">
     <h2 class="section-title left">Interactive on this site</h2>
-    <p>These run in the browser, here, with no account and no install.</p>
+    <p>These run in the browser, here, with no account or installation.</p>
     <ul>
       <li><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Citation graph explorer</a> &mdash; the 2,000-paper corpus as a citation network, filterable by dimension, era and tier.</li>
       <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; the same corpus as cards, each with an OCAR summary and discussion prompts.</li>
       <li><a href="{{ '/concepts/' | relative_url }}">Concept explorer</a> &mdash; concepts filtered by track and stage, each linked to where it is taught.</li>
       <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualisations of the literature and the methods landscape.</li>
-      <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, each with a typical value and the confusion it usually causes.</li>
+      <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, with definitions, common confusions, and typical values where applicable.</li>
       <li><a href="{{ '/modules/' | relative_url }}">Module practice labs</a> &mdash; the retrieval-practice check at the foot of each module page.</li>
       <li><a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab quiz</a> &mdash; for younger readers and classrooms.</li>
     </ul>

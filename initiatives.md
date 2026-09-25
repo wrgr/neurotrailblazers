@@ -22,7 +22,7 @@ content_type: core
 <section class="section" style="margin-bottom: 3rem;">
   <h2 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">1. Federal & Inter-Agency Programs</h2>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem;">
     
     <div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
       <h3 style="margin-top: 0; color: #1a56db;">NIH BRAIN Initiative & CONNECTS</h3>
@@ -63,7 +63,7 @@ content_type: core
 <section class="section" style="margin-bottom: 3rem;">
   <h2 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">2. Major Research Campuses & Institutes</h2>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem;">
     
     <div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
       <h3 style="margin-top: 0; color: #7e22ce;">HHMI Janelia Research Campus (FlyEM)</h3>
@@ -103,7 +103,7 @@ content_type: core
 <section class="section" style="margin-bottom: 3rem;">
   <h2 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem; margin-bottom: 1.5rem;">3. Workforce Traineeships, VR & Citizen Science</h2>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem;">
     
     <div class="card" style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
       <h3 style="margin-top: 0; color: #047857;">CIRCUIT & BossDB (JHU/APL)</h3>

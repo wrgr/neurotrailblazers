@@ -109,6 +109,9 @@ jobs:
           npm install --prefix "$RUNNER_TEMP/research-browser" --no-package-lock --no-save puppeteer@24.16.0
           NODE_PATH="$RUNNER_TEMP/research-browser/node_modules" node scripts/check_research_modal.cjs
 
+      - name: Copy and responsive layout regression
+        run: NODE_PATH="$RUNNER_TEMP/research-browser/node_modules" node scripts/check_site_layout.cjs
+
       # A real gate: exits 1 if _site is missing or any internal link is broken.
       # Run with plain `ruby` — stdlib only — but it requires _site/ from the step above.
       - name: Internal link audit

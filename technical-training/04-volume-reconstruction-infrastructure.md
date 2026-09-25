@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2 h, plus a 90 min lab |
+| **Time** | **Self-study ~3.5 h:** about 2 h of reading plus the 90 min lab. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 01–03, particularly the data-volume arithmetic |
 | **You need** | Python with `caveclient` and `cloud-volume` installed, or a Colab notebook. A free CAVE account for MICrONS access. |
 | **You finish with** | A working query against a real petascale volume, pinned to a specific materialization version, plus a capacity plan for a hypothetical new volume |
@@ -416,6 +416,39 @@ time on triage and prioritization rather than on algorithms.
 - **Idle hot storage.** Move the raw archive to cold tiers immediately after ingest
   validation.
 
+### Check yourself
+
+<details markdown="1">
+<summary>To cut the storage bill for the 1 mm³ volume above, a colleague proposes one
+chunk layout for everything — 64³ chunks, no second representation — serving
+proofreading, analysis jobs and synapse queries alike. What goes wrong, and what would
+you cut instead?</summary>
+
+**No single chunk shape serves all three consumers.** The §3 table is the argument. Small
+isotropic chunks suit the proofreader scrolling through z and the synapse query hitting
+scattered small regions, but the analysis job reading a whole neuron's bounding box
+wants large, sequential reads; at 64³ it makes a very large number of small requests,
+which in an object store is also the small-object cost trap. The image pyramid, the
+segmentation graph and the materialized tables are kept separately *so that* each
+consumer gets a layout suited to it. That duplication is the design, not the waste.
+
+The savings are elsewhere in the same table:
+
+1. **Affinity maps**, ~1.5 PB and often transient. Delete them after supervoxel
+   generation, or put a lifecycle policy on them — once you are confident you will not
+   re-agglomerate.
+2. **The raw archive**, ~1.5 PB, written once and read rarely. Move it to cold storage
+   immediately after ingest validation, but never delete it: it is the only
+   irreplaceable asset.
+3. **Sharding**, if the chunks are not already sharded, cuts the per-request charges.
+
+Then say the uncomfortable part out loud: even a perfect storage plan leaves the
+dominant cost untouched. Proofreading labor is larger than any of these line items.
+
+**Generalizable principle:** cut what is recomputable or cold before you cut what
+serves a distinct access pattern. The waste is usually an intermediate nobody deleted.
+</details>
+
 ---
 
 ## Visual context set
@@ -438,6 +471,26 @@ Read these as architecture sketches to check your own mental model against. For 
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S08-01.png' | relative_url }}" alt="Scalable analytics context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Module13 L1 S08:</strong> Scalable analytics. Weigh whatever scaling story it tells against the cost table in §5: compute and storage are line items you can negotiate with a vendor, and proofreading labor is the dominant cost that no architecture removes.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S14-01.png' | relative_url }}" alt="Ingest architecture diagram: an ingest client uploads tiles through a task queue into a tile bucket and tile index, which are converted into a cuboid bucket and cuboid index in storage" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S14:</strong> An ingest path. Tiles leave local storage through an upload queue into a tile bucket with its own index; a second step turns tiles into cuboids — chunks — with a cuboid index. That is Stage 1 and the §3 chunking decision in one picture. Ask where the validated tile manifest lives, and at which arrow the raw tiles become the write-once archive Stage 1 requires.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S12-01.png' | relative_url }}" alt="Workflow diagram: user interface, scheduler, queue, parallel tool instances, and an IO manager between the tools and storage" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L1 S12:</strong> A job-orchestration loop: interface, scheduler, queue, parallel workers, and an IO manager between the workers and storage. Read it against §4. The queue is where a stage gets re-run, so it is where idempotency is either guaranteed or quietly broken by an unseeded model or an unpinned dependency, and where region-scoped invalidation has to be expressible as a job.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S05-01.png' | relative_url }}" alt="Cloud architecture diagram with load balancers, API servers, caches, metadata tables, serverless functions and object storage inside a virtual private cloud" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S05:</strong> The service layout of a cloud-hosted volumetric database. Find the object store and the cache in front of it, then apply the §5 cost traps: every chunk fetched is a billed request, so an unsharded layout pays per object, and every byte that leaves the region pays egress. Ask where a collaborator's analysis would run under this layout — next to the data, or on a copy taken out of it.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S09-01.png' | relative_url }}" alt="A slice through an image volume in a web viewer, with a 50 micrometre scale bar and red and green axis lines" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S09:</strong> One slice of a served volume, with a 50 µm scale bar and the viewer's axis lines. A field this wide is what the resolution pyramid in §3 exists for: zoomed out, a viewer fetches a coarse level rather than millions of native-resolution chunks, and the 30–50% extra storage in the §5 table is the price of that.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S19-01.png' | relative_url }}" alt="Screenshot of the BossDB web page describing a volumetric database in the AWS cloud" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S19:</strong> The public face of one such system: BossDB, which describes itself as a volumetric database in the AWS cloud for petabytes of high-dimensional data (the screenshot is dated by its 2017 banner). Put the §2 question to any service before building on it: does it hold images, a mutable segmentation, or frozen tables — and if a segmentation, where are its versions?</p>
   </article>
 </div>
 
@@ -573,4 +626,5 @@ across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 12]({{ '/modules/module12/' | relative_url }}), [Module 18]({{ '/modules/module18/' | relative_url }})
 - Lecture plan: [Volume Reconstruction Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
+- Graduate lecture: [Tools and Methods]({{ '/course/decks/marp/out/en585781/module08-tools-and-methods.html' | relative_url }}) — 56-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module08-tools-and-methods.marp.md))
 - **Next unit:** [05 Neuronal Ultrastructure]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})

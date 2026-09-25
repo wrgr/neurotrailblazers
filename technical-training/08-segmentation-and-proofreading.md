@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2.5 h, plus a 2 h lab |
+| **Time** | **Self-study ~4.5 h:** about 2.5 h of reading plus the 2 h lab. **Taught:** a 95 min session, per the [lecture plan]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 03–07. Unit 06's error-cost reasoning is used heavily here. |
 | **You need** | A proofreading-capable viewer (Neuroglancer against a CAVE dataset, or webKnossos) and an account |
 | **You finish with** | A proofreading plan with an explicit stopping rule, a triage ranking, and a defended budget |
@@ -116,6 +116,39 @@ evidence of itself — a neuron that stops in mid-neuropil. A merge leaves an ob
 that looks like a neuron and is not. The whole architecture of the field, from
 watershed thresholds to proofreading protocols to quality metrics, is organized around
 this asymmetry.
+
+### Check yourself
+
+<details markdown="1">
+<summary>On your 50-cell analysis set, the endpoint detector lists 300 split candidates
+and the morphology-implausibility detector lists none. A colleague concludes the set is
+effectively merge-free and proposes spending the whole budget on splits. What is wrong
+with the inference?</summary>
+
+**An empty merge queue measures the detector, not the segmentation.**
+
+The two queues are not symmetric. A split announces itself — a neurite that stops in
+mid-neuropil without tapering — so an endpoint detector finds most of them. A merge
+does not: the implausibility detector only fires on the merges that produce something
+biologically impossible, such as two somata in one object, or ribosomes and
+presynaptic vesicle clusters in the same process. A merge between two plausible
+neurites looks like an ordinary neuron and passes straight through. So "no merge
+candidates" is consistent with no merges, and equally consistent with merges of the
+kind the detector cannot see — which are the expensive kind.
+
+The table also tells you why the split queue is long: the pipeline is deliberately
+tuned to over-segment. Three hundred splits is the design working, not evidence that
+merges are rare.
+
+What settles it is the §3 procedure: exhaustively proofread a random sample of the 50
+cells, to a standard above production, and see whether any merges turn up and how far
+fixing them moves the endpoint. Then allocate the budget — and remember that merges
+outrank splits at equal size.
+
+**Generalizable principle:** absence from a queue is only evidence of absence for errors
+the detector can see. Know which errors your detectors are blind to before you read an
+empty list as a clean bill.
+</details>
 
 ---
 
@@ -296,6 +329,37 @@ define levels — e.g. *L0 raw*, *L1 gross merges removed*, *L2 dendrite complet
 > does not is uninterpretable, because the reader cannot tell whether a low measured
 > connection count reflects biology or incompleteness.
 
+### Check yourself
+
+<details markdown="1">
+<summary>A draft methods section says: "All 200 cells were proofread." A reviewer calls it
+uninterpretable. What does the sentence need to become?</summary>
+
+**It needs a level, the criteria for that level, and the rule that decided when to
+stop.** "Proofread" on its own covers everything from gross merges removed to
+exhaustive, and a reader cannot tell which — so a low connection count could be
+biology or incompleteness.
+
+A version that survives review states:
+
+1. **The level and its written criteria** — for example, "all 200 cells were proofread
+   to L2, dendrite complete, defined as…", with the definition given or cited.
+2. **Per-cell metadata** — every cell carries its level, and cells below the level the
+   analysis requires are excluded, with the number excluded reported.
+3. **The stopping rule, stated in advance** — for example, the convergence rule: a
+   second independent pass over a 20-cell sample changed the endpoint by less than 5%.
+4. **The measured shift** — what exhaustive proofreading of a sample did to the
+   endpoint, the §3 number that turns "we proofread" into an error bound.
+
+The first sentence is the one the reviewer objected to. The fourth is the one that
+answers the question the reviewer was really asking: would more proofreading have
+changed the result?
+
+**Generalizable principle:** a data-quality claim is interpretable only when a reader
+can say what would count as it being false. "Proofread" cannot fail; "L2 by these
+criteria, stopped by this rule, endpoint shift of this size" can.
+</details>
+
 ---
 
 ## 5. Human factors, because this is a labor operation
@@ -353,6 +417,10 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S18-01.png' | relative_url }}" alt="Segmentation proofreading visual: edge-case process morphology" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case at high risk of a wrong correction. Estimate cost to fix before committing: a forty-minute trace through a difficult region loses to five five-minute corrections elsewhere, unless the cell is in your analysis set and the error sits near the root of the arbor.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png' | relative_url }}" alt="Electron micrograph of a dendrite labelled D with two spines labelled s1 and s2, each opposite a vesicle-filled bouton" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S17:</strong> A dendrite (D) with two spines (s1, s2), each opposite a vesicle-filled bouton. §1 names thin spine necks as a perennial source of splits. If a neck is lost, the spine head becomes a separate fragment and its synapse leaves the dendrite's input count without anything looking wrong at the dendrite — which is why orphan fragments, cheap one at a time in the §2 table, add up.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-SRC-MODULE14_LESSON2-S03-01.png' | relative_url }}" alt="Segmentation proofreading visual: method overview context" style="width:100%; border-radius:8px;">
@@ -524,4 +592,5 @@ own protocol.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 06]({{ '/modules/module06/' | relative_url }}), [Module 07]({{ '/modules/module07/' | relative_url }})
 - Lecture plan: [Segmentation and Proofreading lecture plan]({{ '/technical-training/slides/08-segmentation-and-proofreading/' | relative_url }})
+- Graduate lecture: [Algorithms and Applications]({{ '/course/decks/marp/out/en585781/module09-algorithms-and-applications.html' | relative_url }}) — 58-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module09-algorithms-and-applications.marp.md))
 - **Next unit:** [09 Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})

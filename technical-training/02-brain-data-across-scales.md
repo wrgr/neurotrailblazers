@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~90 min, plus a 75 min lab |
+| **Time** | **Self-study ~2.75 h:** about 90 min of reading plus the 75 min lab. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | [Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}) — specifically the voxel-count arithmetic in §2 |
 | **You need** | A calculator. Optional: a Neuroglancer link to any public volume |
 | **You finish with** | A scale-selection memo defending one modality choice against two alternatives |
@@ -325,6 +325,14 @@ Use this panel to rehearse the three-scale separation from §1. For each slide, 
     <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput imaging context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput imaging. Ask what representation the output eventually becomes — volume, mesh, skeleton, or graph (§3) — because that decision is effectively made here, and every conversion downstream is lossy and one-way.</p>
   </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON3-S03-01.png' | relative_url }}" alt="Whole-brain diffusion tractography: dense bundles of colour-coded streamlines" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S03:</strong> Whole-brain diffusion tractography. Place it on the modality chart in §2 — 0.5–2 mm resolution, whole living human brain — and read its last column: no individual axons, no synapses, no direction. Every coloured line is a streamline, a model output, which is the whole of the answer to the tractography check-yourself in §2.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/02-brain-data-across-scales/FIG-SRC-MODULE12_LESSON2-S06-01.png' | relative_url }}" alt="Line drawing of a network: nodes joined by edges, grouped into dense clusters" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L2 S06:</strong> A network drawing: nodes, edges, and clusters. This is the connectivity-graph row of the §3 table, the smallest representation and the one that discards all geometry. Before trusting any cluster in a picture like this, ask the reviewer's question from §3: would proximity alone explain it, and is there a richer representation archived to check?</p>
+  </article>
 </div>
 
 <p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
@@ -459,4 +467,5 @@ statistics that operate on the resulting graph (Unit 09).
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 05]({{ '/modules/module05/' | relative_url }}), [Module 12]({{ '/modules/module12/' | relative_url }})
 - Lecture plan: [Brain Data Across Scales lecture plan]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})
+- Graduate lecture: [Introduction to Connectomics]({{ '/course/decks/marp/out/en585781/module07-introduction-to-connectomics.html' | relative_url }}) — 59-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module07-introduction-to-connectomics.marp.md))
 - **Next unit:** [03 EM Prep and Imaging]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})

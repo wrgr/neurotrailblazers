@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2.5 h, plus a 2 h lab |
+| **Time** | **Self-study ~4.5 h:** about 2.5 h of reading plus the 2 h analysis lab. **Taught:** a 100 min session, per the [lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 01 (claim bins), 04 (versioning), 08 (error types). Basic probability; Python with `numpy`, `networkx`, `caveclient` |
 | **You need** | Access to a public connectome (MICrONS, hemibrain, or FlyWire) |
 | **You finish with** | A motif analysis with a defended null model, a multiple-comparison correction, and a quantified error-sensitivity check |
@@ -533,4 +533,5 @@ Unit 02 for why cross-modality comparison of connectivity claims is delicate.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 10]({{ '/modules/module10/' | relative_url }}), [Module 13]({{ '/modules/module13/' | relative_url }}), [Module 14]({{ '/modules/module14/' | relative_url }}), [Module 15]({{ '/modules/module15/' | relative_url }}), [Module 20]({{ '/modules/module20/' | relative_url }})
 - Lecture plan: [Connectome Analysis and NeuroAI lecture plan]({{ '/technical-training/slides/09-connectome-analysis-neuroai/' | relative_url }})
+- Graduate lecture: [Algorithms and Applications]({{ '/course/decks/marp/out/en585781/module09-algorithms-and-applications.html' | relative_url }}) — 58-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module09-algorithms-and-applications.marp.md))
 - **Keep at hand:** [Atlas and Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }}) — not a tenth unit but the lookup table for every dataset figure this unit cites; the track itself ends here

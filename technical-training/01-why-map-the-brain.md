@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~90 min to work through, plus a 60 min lab |
+| **Time** | **Self-study ~2.5 h:** about 90 min of reading plus the 60 min lab. **Taught:** an 85 min session, per the [lecture plan]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | None |
 | **You need** | Paper or a text editor. No data or code. |
 | **You finish with** | A one-page study brief for a connectomics question of your own |
@@ -321,7 +321,7 @@ result today.
 
 ## Visual context set
 
-These four slides are framing devices, not evidence. Use each one to rehearse the sort in §3: for whatever claim the slide invites, ask whether structure alone could establish it, whether it needs a declared assumption, or whether it needs physiology the data does not contain.
+These five slides are framing devices, not evidence. Use each one to rehearse the sort in §3: for whatever claim the slide invites, ask whether structure alone could establish it, whether it needs a declared assumption, or whether it needs physiology the data does not contain.
 
 <div class="cards-grid">
   <article class="card">
@@ -339,6 +339,10 @@ These four slides are framing devices, not evidence. Use each one to rehearse th
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Course motivation context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Module12 L1 S04:</strong> Scope framing for the course. Compare whatever ambition it states against the extrapolation table in §2, and ask where on the fly-to-mouse-to-human ladder it lands — and whether the limiting factor at that rung is microscopy or proofreading labor.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S07-01.png' | relative_url }}" alt="Illustration of the pipeline from brain tissue and an electron microscope, through an image stack and a server room, to reconstructed neurons and a brain drawn over a computer chip" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L1 S07:</strong> The whole pipeline as one illustration: tissue and microscope, image stack, compute, reconstructed neurons — and a final arrow to a brain drawn over a chip. Sort the arrows with §3. Everything up to the reconstruction is structure. The last arrow is a claim about computation, and it stays in Bin C until someone names the assumption that would carry it.</p>
   </article>
 </div>
 
@@ -452,4 +456,5 @@ different questions at different scales; see Unit 02 for how these fit together.
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 01]({{ '/modules/module01/' | relative_url }})
 - Lecture plan: [Why Map the Brain lecture plan]({{ '/technical-training/slides/01-why-map-the-brain/' | relative_url }})
+- Graduate lecture: [Introduction to Connectomics]({{ '/course/decks/marp/out/en585781/module07-introduction-to-connectomics.html' | relative_url }}) — 59-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module07-introduction-to-connectomics.marp.md))
 - **Next unit:** [02 Brain Data Across Scales]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})

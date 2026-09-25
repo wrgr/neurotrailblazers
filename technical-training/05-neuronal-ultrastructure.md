@@ -13,6 +13,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "2.5 hours reading + 75 minute studio"
 prerequisites: "Units 01-03"
+graded_exercise: "studio activity"
 content_type: path
 ---
 
@@ -22,7 +23,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2.5 h reading; 75 min studio |
+| **Time** | **Self-study ~3.75 h:** about 2.5 h of reading plus the 75 min studio activity. **Taught:** a 95 min session, per the [lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 01–03. Unit 03's artifact catalog in particular — you cannot distinguish biology from artifact without it. |
 | **You need** | A public EM volume open in Neuroglancer |
 | **You finish with** | Calibrated compartment and synapse calls with justified confidence tiers, plus a personal cue-reliability ranking |

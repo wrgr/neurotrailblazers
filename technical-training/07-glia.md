@@ -13,6 +13,7 @@ pathways:
 level: "Intermediate"
 time_estimate: "90 minutes reading + 60 minute drill"
 prerequisites: "Units 05-06"
+graded_exercise: "drill"
 content_type: path
 ---
 
@@ -22,7 +23,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~90 min, plus a 60 min discrimination drill |
+| **Time** | **Self-study ~2.5 h:** about 90 min of reading plus the 60 min discrimination drill. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/07-glia/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 05–06 |
 | **You need** | A public EM volume; the Unit 05 organelle table |
 | **You finish with** | A glia recognition checklist and a measured discrimination score by cell class |
@@ -73,6 +74,34 @@ result.
 > obvious. The Unit 08 rule — prioritize by effect on the endpoint metric, not by
 > conspicuousness — has its clearest application here.
 
+### Check yourself
+
+<details markdown="1">
+<summary>A pyramidal cell in your analysis set turns out to be merged with a fine
+astrocytic process. Before the fix it had noticeably more inputs, and a strong local
+clustering coefficient. Which of your results move when the merge is removed, and in
+which direction?</summary>
+
+**Everything that counted the false inputs moves toward the less interesting answer.**
+
+- **Input count and dendritic length** fall. The merged path was a branch that does not
+  exist, and it ran past synapses the real dendrite never contacted.
+- **Local clustering and short-range connectivity** fall. The false inputs were not
+  random: they came from the cell's spatial neighbours, because that is where the
+  astrocytic process ran. A merge like this inflates exactly the statistics that make
+  a circuit look locally wired.
+- **The astrocyte's own morphometry** — domain volume, synapse coverage — changes too,
+  because it gets its territory back. If the project makes any glial claim, that
+  number was also wrong.
+
+What does *not* change is how the neuron looked before the fix. That is the problem:
+nothing about the merged object announced the error.
+
+**Generalizable principle:** when an error's false positives are spatially local, the
+bias is toward local structure. Ask where the error's extra material came from before
+deciding it is noise.
+</details>
+
 ---
 
 ## 2. Recognition: the three classes
@@ -93,6 +122,12 @@ is corroboration.
 | **Endfeet** | Flattened expansions covering blood vessel surfaces — a strong contextual cue |
 | **Absent** | Synaptic vesicles, PSDs, and (largely) microtubules |
 
+{% include figure.html
+   src="/assets/images/content-library/em/astrocyte-process.jpg"
+   alt="An astrocytic process in human cortex at 8 nm per pixel, showing pale cytoplasm with few organelles and an irregular outline that conforms to the neighbouring profiles."
+   caption="Astrocytic territory in human cortex, labelled astrocyte by H01&#39;s subcompartment model rather than picked by eye. Look for the pale, organelle-poor cytoplasm and the outline that takes whatever shape its neighbours leave. Then look for the diagnostic feature in the table above and notice how hard it is: glycogen granules are 20&ndash;30 nm, which is under four pixels at this rendering. Not seeing them here is the weak evidence the check-yourself in this section warns about."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
 ### Oligodendrocyte — *diagnostic feature: the darkest nucleus in the field*
 
 | | |
@@ -108,6 +143,12 @@ The practical difficulty is not the mature oligodendrocyte — it is the
 resemble a small neuron or an astrocyte. If a cell looks "sort of oligodendrocyte but
 the nucleus is not dark enough", OPC is the leading hypothesis and the correct action
 is usually to flag rather than force.
+
+{% include figure.html
+   src="/assets/images/content-library/em/myelin-in-grey-matter.jpg"
+   alt="A field of human cortical grey matter with every myelinated axon highlighted in orange by the dataset's myelin mask; a label reads myelin: 13.4% of this field."
+   caption="The oligodendrocyte&#39;s footprint in neuropil: every myelinated axon in this grey-matter field, highlighted by H01&#39;s myelin mask, which covers 13.4% of the field. Each sheath is oligodendrocyte membrane, made by a cell whose soma is not in view. What step 5 of the protocol keys on &mdash; the inner and outer tongues of oligodendrocyte cytoplasm at the sheath&#39;s edges &mdash; is not resolvable at this magnification; the mask tells you where to zoom in, not what you would find."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ### Microglia — *diagnostic feature: dense elongated nucleus plus lysosomal content*
 
@@ -255,6 +296,41 @@ rule-outs first even when the context looks decisive — especially then, becaus
 a decisive-looking context is what tempts you to skip them. Two further cases —
 astrocyte versus thin dendrite, and OPC versus small neuron — are worked in
 [Glia recognition]({{ '/content-library/cell-types/glia-recognition/' | relative_url }}).
+
+{% include figure.html
+   src="/assets/images/content-library/em/blood-vessel.jpg"
+   alt="A cortical blood vessel in human cortex at 32 nm per pixel: an irregular vessel outline with dense neuropil on every side and a 5 micrometre scale bar."
+   caption="A cortical blood vessel, located by H01&#39;s own vessel mask rather than chosen by eye. This is the context step 5 of the protocol scores highest for astrocyte. Notice what the image does not tell you: at 32 nm per pixel, in one plane, you cannot say which of the thin profiles against the wall are endfeet. The worked example above reached its call only after the exclusion steps, across several sections."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
+
+### Check yourself
+
+<details markdown="1">
+<summary>A soma has a round nucleus that is clearly darker than the neurons around it,
+but noticeably paler than the oligodendrocyte two fields over. There is no myelin in
+view. A trainee labels it "OPC", with a note: "not sure". Grade the call.</summary>
+
+**The call may be right; the note shows the label is being used for the wrong thing.**
+
+The appearance fits the protocol's "pale but not quite" branch: an oligodendrocyte
+precursor has a paler nucleus than a mature oligodendrocyte and can resemble a small
+neuron or an astrocyte. So *OPC candidate* is a reasonable hypothesis, and the
+protocol's action for it is **flag**, not force.
+
+What fails is the note. "OPC" and "uncertain" are different annotations with different
+follow-ups — an OPC candidate goes to someone who can confirm a cell class, an
+uncertain call goes to the review queue with the missing cue named. A trainee who
+writes "OPC, not sure" has merged the two, and if that habit spreads, per-class
+agreement for OPC stops meaning anything — and OPC agreement is usually the worst of
+the four classes already (§5).
+
+A better record: *OPC candidate — nucleus intermediate in density; no myelin link found
+in view; neuronal features (large nucleolus, Nissl, dendrites) not seen.* That names
+the evidence for and against, which is what lets a reviewer settle it.
+
+**Generalizable principle:** a label is a claim, and "uncertain" is its own label. Never
+let a class name stand in for a confidence level.
+</details>
 
 ---
 

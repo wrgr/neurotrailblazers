@@ -101,7 +101,7 @@ content_type: core
   </div>
 
   <!-- AI Synthesis Prompt Modal -->
-  <div class="jc-prompt-modal hidden" id="jc-prompt-modal" style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.75); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1.5rem;">
+  <div class="jc-prompt-modal hidden" id="jc-prompt-modal" role="dialog" aria-modal="true" aria-labelledby="jc-prompt-modal-title" style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.75); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1.5rem;">
     <div class="jc-prompt-modal-content" style="background: #fff; border-radius: 12px; max-width: 720px; width: 100%; max-height: 90vh; display: flex; flex-direction: column; padding: 1.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 1px solid #cbd5e1;">
       <div class="jc-prompt-modal-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
         <h3 style="margin: 0; font-size: 1.2rem; color: #0f172a;" id="jc-prompt-modal-title">🤖 AI Research Synthesis Prompt</h3>
@@ -476,11 +476,24 @@ content_type: core
     });
   });
 
-  if (promptCloseBtn) {
-    promptCloseBtn.addEventListener('click', function () {
-      promptModal.classList.add('hidden');
-    });
+  function closePromptModal() {
+    promptModal.classList.add('hidden');
+    if (promptBtn) { promptBtn.focus(); }
   }
+
+  if (promptCloseBtn) {
+    promptCloseBtn.addEventListener('click', closePromptModal);
+  }
+
+  promptModal.addEventListener('click', function (e) {
+    if (e.target === promptModal) { closePromptModal(); }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !promptModal.classList.contains('hidden')) {
+      closePromptModal();
+    }
+  });
 
   // Reliable Copy-to-Clipboard
   if (copyBtn) {

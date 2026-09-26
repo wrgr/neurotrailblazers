@@ -27,10 +27,13 @@ CONTENT_GLOBS = [
   "teaching/sessions/*.md",
   "teaching/lectures/*.md",
   "teaching/pathways/*.md",
+  "teaching/answers/*.md",
+  "teaching/assessment/*.md",
   "teaching/syllabi/*.md",
   "modules/slides/*.md",
   "core/*.md",
   "modes/*.md",
+  "notebooks/*/index.md",
 ].freeze
 
 REQUIRED_BY_TYPE = {

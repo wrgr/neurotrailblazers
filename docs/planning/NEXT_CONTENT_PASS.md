@@ -70,21 +70,47 @@ Recommended order for the remaining site/content work:
    real-data slot is marked planned with the offline fallback. Linked from the
    Teaching menu, Teaching Hub, sequence page and Pathways hub; smoke and layout
    suites cover the new pages. Nine gates, full build, links, 148 fragments pass.)*
-5. [ ] **Publish or retire the missing kit files (M).** The syllabus pass found that
+5. [x] **Publish or retire the missing kit files (M).** The syllabus pass found that
    the Module 03–07 and 09–11 session kits name sample files, notebooks or patch sets
    ("provided") that the site does not publish, so both maps route around them. Either
    publish those files under `assets/` with a manifest check, or rewrite each kit's
    materials list to what exists. Done when every kit's named materials resolve.
-3. [ ] **Model answers and assessment.** Start the 25-module key backlog with
+   *(26 September: the audit found 70 missing materials across Modules 01–19, not only
+   03–07 and 09–11. 30 were published as labeled synthetic kits under `assets/kits/`
+   (deterministic generator, SHA-256 manifest), 35 rewritten to what exists, 5 linked.
+   `scripts/validate_kit_materials.rb` now gates this in CI. Unverified "v795" figures
+   in Modules 17–18 are labeled illustrative. Owner decisions are in
+   `docs/reviews/2026-09-kit-materials-audit.md`: kit answer files are public, Module 04
+   Patch D has no public hippocampal source, and Module 19's fictional preprint names a
+   real dataset.)*
+6. [ ] **Let the syllabus maps use the repaired kits (S).** Both maps were written to
+   route around kits whose files were missing. Revisit the omitted kits (03–07, 09–11)
+   now that their materials resolve. Done when each omission is a choice about time or
+   overlap, not a missing file.
+3. [~] **Model answers and assessment.** Start the 25-module key backlog with
    modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank
    aligned to the four lecture outcomes, with worked answers and misconception
    feedback. Keep public formative keys distinct from secure exam material; do not
    call a local rubric a validated calibration instrument.
-4. [ ] **One real-data lab.** Build the planned MICrONS notebook with an explicitly
+   *(26 September: `teaching/answers/` has keys for Modules 01, 07 and 18; 07 and 18 are
+   computed from their published kit files (Module 07 best 15-fix F1 0.952, verified by
+   running the kit script). Kits 01/07/18 now link their keys. `teaching/assessment/`
+   holds 20 synthetic items across the four lecture outcomes with worked answers,
+   per-error feedback and variant templates; no value repeats a worksheet value. Open:
+   the other 22 module keys, in the order stated on the answers index.)*
+4. [x] **One real-data lab.** Build the planned MICrONS notebook with an explicitly
    available materialization, version-appropriate IDs, inclusion rules, archived
    outputs and limitations. Verify a clean-environment rerun, document account
    requirements, and retain the offline teaching exercises as a fallback. Done
    when another instructor can reproduce the result without guessing a version.
+   *(26 September: `notebooks/microns-lab/` reads static public exports of
+   `minnie65_public` v1507 (no account; CAVE API needs a token and is documented as
+   optional), checks SHA-256 of every file, applies counted inclusion rules to 2,070
+   proofread cells, compares reciprocity with uniform, Chung–Lu and distance×class nulls
+   at two thresholds, and shows v1412→v1507 root-ID drift. Four clean-venv reruns on
+   Python 3.11 and 3.13 gave byte-identical results; outputs and the executed notebook
+   are archived under `assets/notebooks/microns-lab/`. Not tested on Linux or Windows.
+   The syllabus maps, Unit 04 Part A and the sequence page now use it.)*
 
 Keep the larger reference expansions and web-wide branding backlog below queued
 behind these deliverables. Reinventory after this batch rather than adding more

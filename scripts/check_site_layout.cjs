@@ -32,6 +32,7 @@ const routes = [
   '/teaching/sessions/', '/teaching/pathways/', '/teaching/pathways/orientation-answers/',
   '/teaching/syllabi/', '/teaching/syllabi/10-week/', '/teaching/syllabi/16-week/',
   '/teaching/lectures/ethics-and-governance-answers/',
+  '/teaching/answers/module18/', '/teaching/assessment/', '/notebooks/microns-lab/',
   '/tools/', '/ask-an-expert/', '/tools/connectome-quality/',
   '/about/', '/avatars/', '/avatars/undergradstudent/', '/models/', '/license/',
 ];

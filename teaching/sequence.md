@@ -92,7 +92,9 @@ no accounts, data or coding are needed, and it is not legal advice.
 ## Preparation and pacing
 
 Open the selected decks before teaching. Keep the timed plan in a second tab or print it.
-Slide numbers include the cover. Share only the worksheet during the activity;
+Slide numbers include the cover. For practice or a quiz beyond the worksheets, use the
+[assessment bank]({{ '/teaching/assessment/' | relative_url }}); its numbers differ from
+the worksheets'. Share only the worksheet during the activity;
 answer keys are public and intended for formative learning, not secure exams.
 Embedded notes remain in the editable Marp sources, with delivery cues on the plans.
 When a plan says to collect work, photograph it or return it: learners bring each
@@ -117,7 +119,9 @@ or its debrief. The learning evidence is the revised claim, not the number of sl
 
 ## What comes next
 
-Use the final analysis card to choose a focused extension: a real dataset query,
+Use the final analysis card to choose a focused extension: the
+[MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}), which repeats
+Sessions 3 and 4 on a pinned public release with no account,
 a proofreading exercise or an applications seminar. For hands-on depth, choose a
 [module session kit]({{ '/teaching/sessions/' | relative_url }}) after checking its
 prerequisites. These four packs and the optional fifth are complete formative sessions.

@@ -65,6 +65,12 @@ content_type: delivery
       and 16-week courses week by week from the lecture sessions, technical units,
       module kits and Pathways workshops, with pre-work, an artifact and feedback
       criteria for every meeting.</p>
+    <p><strong>Checking learner work?</strong> Every lecture session has public model
+      responses. <a href="{{ '/teaching/answers/' | relative_url }}">Module model responses</a>
+      cover Modules 01, 07 and 18 so far, and the
+      <a href="{{ '/teaching/assessment/' | relative_url }}">assessment bank</a> holds new
+      practice items for the four lecture sessions, with worked answers and variant
+      templates for writing secure versions.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
       Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
       It covers why at least half of contact time has to be learner judgment rather than

@@ -109,6 +109,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - scripts
+  - data/ocar_regen
   # Working files for the technical track: unit source specs, deck specs,
   # and ingest transcripts. These are build inputs, not pages. Publishing
   # them produced ~60 unstyled draft pages that duplicated the real

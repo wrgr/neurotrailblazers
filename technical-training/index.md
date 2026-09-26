@@ -28,9 +28,10 @@ content_type: navigation
     <p>This course follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
     <p>The nine units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track, and the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">atlas</a> rides alongside them as a reference companion, consulted rather than completed. The reference material the units draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running related sessions for a group, the <a href="{{ '/modules/' | relative_url }}">modules</a> carry the same material in tutorial form, each with a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> for <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
     <div class="cta-buttons">
-      <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
+      <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}" class="btn btn-primary">Start Unit 1: Why Map the Brain</a>
+      <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-secondary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Lecture Plans</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}" class="btn btn-secondary">Proofreading Tutorials</a>
       <a href="{{ '/teaching/' | relative_url }}" class="btn btn-secondary">Teaching Hub</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Concept Explorer</a>

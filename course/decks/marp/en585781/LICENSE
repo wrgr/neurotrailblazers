@@ -63,10 +63,9 @@ HOW TO ATTRIBUTE
 
 A NOTE ON THE CONTENTS
 
-  These decks contain no third-party figures. They are text, tables, and
-  ASCII diagrams, so redistributing or adapting them raises no image-licensing
-  questions -- and nothing in them is encumbered by a license incompatible
-  with ShareAlike.
+  The cover image comes from the H01 release, Lichtman Lab / Harvard and
+  Connectomics at Google, under CC BY 4.0. See Shapson-Coe et al. (2024),
+  doi:10.1126/science.adk4858. It retains its own license; preserve its credit.
 
   They cite published work extensively. Citations are references, not
   reproductions -- the cited papers carry their own licenses, and nothing here
@@ -77,8 +76,8 @@ A NOTE ON THE CONTENTS
   If you add third-party figures to an adaptation, check that their licenses
   are compatible with CC BY-SA 4.0 before you distribute it. Externally
   sourced figures used elsewhere in this repository are catalogued with their
-  individual licenses in assets/images/external/ATTRIBUTION.md; none of them
-  appear in these decks.
+  individual licenses in assets/images/external/ATTRIBUTION.md. H01 figure
+  metadata is recorded in _data/em_figures.yml.
 
 
 NO WARRANTY

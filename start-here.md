@@ -13,17 +13,22 @@ content_type: navigation
 <div class="main-content">
     <div class="hero hero-spaced hero-rounded">
         <div class="hero-content">
-            <h1>Start Your NeuroTrailblazing Journey</h1>
+            <h1>Start Here</h1>
         </div>
     </div>
 
     <section class="section">
-        <h2>Welcome to NeuroTrailblazers!</h2>
-        <p>Whether you're an undergraduate student curious about the brain, a graduate student diving into research, or a mentor looking to guide the next generation, you're in the right place. Our platform is designed to support learners at every stage of their journey into nanoscale connectomics.</p>
+        <h2>What would you like to do?</h2>
+        <div class="cards-grid">
+          <article class="card"><h3><a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Learn connectomics</a></h3><p>Start with Why Map the Brain, the first of nine units in the Technical Course.</p></article>
+          <article class="card"><h3><a href="{{ '/teaching/' | relative_url }}">Teach a class or workshop</a></h3><p>Find presentation decks, session plans, activities, and worksheets in the Teaching Hub.</p></article>
+          <article class="card"><h3><a href="{{ '/content-library/' | relative_url }}">Look something up</a></h3><p>Use the Content Library for explanations, methods, and case studies, or search the <a href="{{ '/technical-training/dictionary/' | relative_url }}">Dictionary</a> for a term.</p></article>
+          <article class="card"><h3><a href="{{ '/neuronauts/' | relative_url }}">Explore the brain</a></h3><p>Try a Neuronauts expedition, or visit the <a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab</a> for family activities.</p></article>
+        </div>
     </section>
 
     <section class="section">
-        <h2>Two questions, not one</h2>
+        <h2>Plan a longer learning path</h2>
         <p>Getting oriented here means answering two separate questions, and most people only think to ask the first. <strong>What</strong> you are learning is the track. <strong>How</strong> you are using it &mdash; alone, in a session someone is running, or inside a research group &mdash; is the mode. They are independent, and the second one changes what you should be reading as much as the first does.</p>
 
         <div class="axis-head">
@@ -109,8 +114,8 @@ content_type: navigation
         <p>The site has two layers, and telling them apart saves a lot of wandering.</p>
         <ul class="mb-2" style="margin-left: 2rem;">
             <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
-            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</strong> Each selects from the core, sequences it, and adds labs that end in an artifact. Three of them, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
-            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
+            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</a></strong> Each selects from the core, sequences it, and adds labs that end in an artifact. Three of them, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
+            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</a></strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
         </ul>
         <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
 

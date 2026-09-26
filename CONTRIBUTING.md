@@ -129,6 +129,9 @@ ruby scripts/validate_technical_evidence.rb   # technical_track.yml vs technical
 ruby scripts/validate_paper_counts.rb         # journal-paper counts, schema, authors, years
 ruby scripts/check_deck_freshness.rb          # rendered decks match their sources
 ruby scripts/validate_dictionary.rb           # dictionary entries carry the promised fields
+ruby scripts/validate_generated_materials.rb  # generated worksheets, kits and decks
+ruby scripts/validate_code_span_paths.rb      # site paths in monospace prose
+ruby scripts/validate_toggled_classes.rb      # interactive states have matching CSS
 ```
 
 The two link audits need a build first, because they read `_site/`:
@@ -141,6 +144,18 @@ ruby scripts/check_anchor_links.rb            # cross-page #fragments resolve to
 
 `check_site_links.rb` only confirms a link's target page exists; `check_anchor_links.rb`
 catches the other half — a deep link into a heading that has since been renamed.
+
+The build job also runs browser interaction checks. With Chrome installed:
+
+```bash
+npm install --no-save puppeteer-core@24.43.1
+node scripts/smoke_site.cjs
+```
+
+Set `CHROME_PATH` for a nonstandard Chrome executable, or `SITE_DIR` for a build
+outside `_site`. The script serves that build locally and checks keyboard/touch
+navigation, the no-JavaScript fallback, teaching/deck journeys, persona tabs,
+dictionary and module filters, and journal search and modal dismissal.
 
 `LANG`/`LC_ALL` matter: the scripts read files as UTF-8, but the locale still governs
 Ruby's default external encoding and Jekyll's SCSS converter, which will otherwise fail on
@@ -159,6 +174,10 @@ than the pin.)
 bundle install
 bundle exec jekyll serve
 ```
+
+On case-insensitive macOS volumes, the root `LICENSE` file conflicts with the
+generated `/license/` directory. Build to a case-sensitive volume, or use the Linux
+CI build. Local builds also need the pinned Ruby rather than macOS's system Ruby.
 
 Then open <http://localhost:4000/>. `baseurl` is `""`, so there is no path prefix locally.
 

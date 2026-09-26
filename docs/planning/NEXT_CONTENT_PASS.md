@@ -7,6 +7,118 @@ done, and the files it touches. Tick items here as they land; do not delete them
 Sizes: **S** under half a day · **M** one to three days · **L** a week or more of focused
 work. Sizes assume one person who knows the repository.
 
+## Next batch — Compass handled separately
+
+Compass workshops belong to the user's other agent. Do not duplicate its workshop
+plans or edit Compass-owned material in this batch. Coordinate links to the shared
+lecture packages once that agent has a workshop sequence ready.
+
+Recommended order for the remaining site/content work:
+
+1. [ ] **Release and evidence check.** Verify branch CI after the push, review the
+   four-session path as learner and instructor, and audit the remaining quantitative
+   slide claims against primary sources. Label hypothetical examples, distinguish
+   measured results from assumptions, and retain image-specific credits. Done when
+   a claim/source checklist and clean build/browser results accompany the release.
+   A branch push alone is not confirmation of a production deployment.
+2. [ ] **Finish instructor packaging.** Give Ethics and Governance the same timed
+   plan, activity and model-response treatment; then draft 10-week and 16-week
+   syllabus mappings using the existing four-session block and technical units.
+   These are course mappings, not a competing Compass workshop curriculum. Done
+   when every session has prerequisites, an artifact, feedback criteria and links.
+3. [ ] **Model answers and assessment.** Start the 25-module key backlog with
+   modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank
+   aligned to the four lecture outcomes, with worked answers and misconception
+   feedback. Keep public formative keys distinct from secure exam material; do not
+   call a local rubric a validated calibration instrument.
+4. [ ] **One real-data lab.** Build the planned MICrONS notebook with an explicitly
+   available materialization, version-appropriate IDs, inclusion rules, archived
+   outputs and limitations. Verify a clean-environment rerun, document account
+   requirements, and retain the offline teaching exercises as a fallback. Done
+   when another instructor can reproduce the result without guessing a version.
+
+Keep the larger reference expansions and web-wide branding backlog below queued
+behind these deliverables. Reinventory after this batch rather than adding more
+lecture topics before the existing materials have been taught and reviewed.
+
+## Current inventory — 25 September 2026
+
+**Fourth session packaged (26 September):** Algorithms and Applications now has a
+90-minute selected-slide plan, instructor cues, synthetic graph worksheet, public
+model responses and optional Python exact enumeration. The short sequence contains
+four sessions. The original 58-slide deck remains available with its longer lab.
+Its hypothetical null example now separates effect size from tail evidence and test
+direction; merge/split sensitivity no longer asserts a universal motif-bias direction.
+The toy exercise is not a biological motif finding or a measured error distribution.
+Validation: both exact null censuses and their means/tails match the answer key;
+threshold validation, deterministic reruns and the one-edge scenario pass. All nine
+content gates, full build, internal links, 81 cross-page fragments and the extended
+browser suite pass. All 243 graduate slides pass the image/text-bound check, and the
+new worksheet has no horizontal overflow at 390 px. Local only, not deployed.
+
+**Next lecture packaged (26 September):** Tools and Methods now has a selected-slide
+90-minute plan, instructor cues, worksheet, public model responses, and an optional
+standalone Python query with embedded synthetic snapshots. The short teaching
+sequence now contains three sessions; navigation labels no longer promise only two.
+The version-drift example now requires provenance evidence rather than declaring
+both historical counts correct without a record. This offline exercise does not
+complete the separate live MICrONS notebook or semester syllabus backlog.
+Validation: both synthetic queries, exclusions, required version selection and
+deterministic reruns pass, as does the capacity arithmetic. All nine content gates,
+the full build, internal links, 78 cross-page fragment targets and the extended
+browser smoke suite pass. All 243 graduate slides remain within checked text bounds
+with images loading. Local only; no deployment or commit made in this pass.
+
+**26 September follow-up:** the first two taught sessions now have a linked sequence
+at `teaching/sequence.md`, timed 90-minute plans, learner worksheets and public model
+responses. Introduction uses a selected route through the existing 59-slide deck;
+Synapse Detection uses its 39-slide deck. Both include instructor cues and formative
+rubrics with clearly synthetic exercises. The SynEM operating-point comparison was
+checked against the primary paper and corrected in the lecture and reference page.
+Navigation now links directly to the two-session sequence, and the Technical Course
+has a prominent Start Unit 1 action. Browser regressions cover both complete journeys.
+These two lecture keys do not complete the separate 25-module answer-key backlog,
+and the two-session sequence does not complete the semester syllabus task.
+Validation for this follow-up: all nine content validators, the full Jekyll build,
+internal link audit, 75 cross-page fragment targets and the extended browser suite
+pass. The five graduate decks still total 243 slides with no detected text overflow
+or missing images. Worksheet arithmetic was independently recomputed. Changes are
+local; deployment and remote CI have not been verified.
+
+- **Site viability:** navigation now has six task-oriented entries: Start Here, Learn,
+  Reference, Teaching, Tools, About. Native disclosure menus support keyboard and touch;
+  mobile has a collapsible menu. Presentation Decks is a direct Teaching destination.
+  Start Here and learning-path pages lead with concrete actions rather than curriculum
+  architecture. Existing destination URLs remain unchanged.
+- **Interaction checks:** `scripts/smoke_site.cjs` passes against a full local Jekyll
+  build and is wired into CI's build job. It covers desktop/keyboard/mobile navigation,
+  no-JavaScript menus, course and deck journeys, persona tabs, dictionary/module
+  filtering, journal search and modal dismissal. It caught two real defects: unescaped
+  paper titles breaking the journal DOM and two unclosed links swallowing persona tabs.
+  Both are fixed and covered. This is local verification, not a production deployment
+  or a claim that every external service works.
+- **Validation:** all nine content validators pass. The final full build has no
+  missing internal link targets and no broken cross-page fragments (74 checked).
+  The final browser smoke suite passes; menu checks at 390, 768, 901, 1024 and
+  1280 px show no horizontal page overflow.
+- **Presentation inventory:** 41 rendered Marp decks: 25 module decks, ten
+  technical/reference decks, five graduate lectures and one reusable template. All
+  now use the approved charcoal/warm-paper nanoscale direction with credited,
+  uncropped H01 cover imagery. The graduate theme imports the shared theme while
+  retaining its lecture-specific layouts. Its 243 slides pass browser text-bound and
+  image checks; the prior module/reference pass covered 614 slides. The existing
+  PowerPoint template has not been migrated.
+- **Next authoring priorities:** syllabus and pacing maps, model answers for all 25
+  worksheets, then a unit assessment bank and a version-pinned MICrONS notebook.
+  Module worked examples, scope boundaries and misconception coverage remain open
+  below; the deck migration does not make those content gaps complete.
+- **Remaining reference/visual work:** MICrONS, comparative connectomics, beyond-EM
+  and provenance expansions; additional scientific figures and their attribution
+  checks; the graduate filename/numbering cleanup with compatibility links. Web-wide
+  palette, favicon and header branding are separate from the navigation fix.
+
+The checkboxes below retain the detailed history and definitions of done.
+
 Order of the workstreams is deliberate. Workstream 0 is a single afternoon and removes
 every verified factual error. Workstream 1 fixes data that renders wrong. Nothing in
 workstreams 2–5 should ship before 0 and 1 are done, because they would be building on
@@ -332,13 +444,19 @@ unit-page caption fixes noted above, and the en585781 rename.)*
   of reducing the type size. Browser measurement checked all 614 affected slides,
   with no missing images or body text outside the content bounds. The generated-materials
   validator enforces the module theme, image validation now includes nested decks and
-  HTML images, and freshness checks include theme CSS. The five `frontiers` decks and
-  the existing PowerPoint template remain on their earlier designs.)*
-- [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
+  HTML images, and freshness checks include theme CSS. The existing PowerPoint template
+  remains on its earlier design; the graduate theme migration is recorded below.)*
+- [x] Port `frontiers.css` to the approved nanoscale palette (S).
+  *(25 September 2026: imports the shared theme and embedded Source Sans 3 / IBM Plex
+  fonts; retains lecture-specific dense tables, columns and reference layouts. Five
+  covers use the H01 segmentation image with its original scale bar and CC BY 4.0
+  credit. Licence notes no longer claim there are no third-party figures. All five
+  decks re-rendered; 243 slides checked in Chrome with no missing images or text
+  outside the slide bounds. Scientific content and speaker notes are retained.)*
 - [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 56 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses (70 when this plan was written; the count drifts with every stylesheet edit, so re-count before starting) and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
 - [ ] Replace `favicon.ico` with `assets/brand/nt-favicon.svg` (plus a 32 px PNG fallback); add `<link rel="icon">` to the layout; add the social card as `og:image` (S).
 - [ ] Header: replace the text logo with `nt-lockup-horizontal.svg`; consider dropping the full-width banner image from interior pages (S).
-- [ ] Drop the unused Plus Jakarta Sans from the font request; add Barlow Condensed 700 for display headings (S).
+- [ ] Drop unused Plus Jakarta Sans from the web font request; align display typography with the approved Source Sans 3 nanoscale direction rather than the superseded Barlow proposal (S).
 - [ ] Replace emoji icons with the line-icon set described in the brand guide (M, after 2.4).
 
 ---
@@ -409,12 +527,13 @@ unit-page caption fixes noted above, and the en585781 rename.)*
   draft and are the reason it now understands that `toggle(cls, force)`'s second argument is
   a condition, not a class — `toggle('active', type === 'citation')` had it demanding a
   `.citation` rule.)*
-- [ ] **The stronger version, still open:** no smoke test loads a real page, clicks the
-  interactive controls and asserts the nav is still reachable. The gate above is a static
-  approximation of it. `puppeteer-core` is in `node_modules` and was used by hand for the
-  verification above, but nothing in CI opens a browser — and note that the Jekyll build
-  cannot currently be run on this machine at all (`bundle` wants 2.6.9 against the system
-  Ruby 2.6), so any browser gate has to live in the build job, not the scripts job.
+- [x] **Real-page browser smoke test:** `scripts/smoke_site.cjs` exercises navigation,
+  search, filters, persona tabs, teaching/deck links and journal modal dismissal,
+  then confirms navigation remains reachable. Desktop, keyboard, mobile and no-JS
+  menu cases pass locally. CI's build job installs pinned `puppeteer-core` and runs
+  the same suite after both link audits; a remote CI result is not yet verified.
+  The local build now works with Ruby 3.1.6 / Bundler 2.6.9 on a case-sensitive
+  destination (needed for `LICENSE` versus `/license/` on macOS).
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
 - [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
 

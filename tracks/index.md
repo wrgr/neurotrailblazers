@@ -16,12 +16,18 @@ use_layout_hero: false
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Learning Tracks</h1>
-      <p class="hero-subtitle">Paths through the core, on two independent axes: what you are learning, and how you are using it.</p>
+      <p class="hero-subtitle">Take a course in order, pick a topic, or start with an activity.</p>
     </div>
   </div>
 
   <section class="section">
-    <h2>Core with tracks</h2>
+    <h2>Choose how to learn</h2>
+    <div class="cards-grid">
+      <article class="card"><h3><a href="{{ '/technical-training/' | relative_url }}">Take the Technical Course</a></h3><p>Nine units covering nanoscale connectomics, with readings and practical exercises. Start at unit 01 and work forward.</p></article>
+      <article class="card"><h3><a href="{{ '/modules/' | relative_url }}">Pick a module</a></h3><p>25 topics spanning research methods, scientific judgment, and professional practice. Choose the skill you need now.</p></article>
+      <article class="card"><h3><a href="{{ '/neuronauts/' | relative_url }}">Explore with Neuronauts</a></h3><p>Start with an interactive expedition. The <a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab</a> offers activities for kids and families.</p></article>
+    </div>
+    <h2>Combine topics into a track</h2>
     <p><a href="{{ '/core/' | relative_url }}"><strong>The core</strong></a> is reference material: the content library, dictionary, journal club, atlas, hidden curriculum, and datasets. It has no order, and you are not meant to finish it.</p>
     <p><strong>Tracks are paths through it.</strong> Each selects from the core, puts it in a sequence, and adds labs that end in something you have made. A track is finishable, and each track page states what "done" means as a capability rather than as a set of pages visited.</p>
     <p>Tracks are split two ways, and the two are independent:</p>

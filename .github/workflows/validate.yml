@@ -133,3 +133,13 @@ jobs:
       # _data/concepts.yml without any check noticing.
       - name: Fragment (anchor) audit
         run: ruby scripts/check_anchor_links.rb
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install browser test driver
+        run: npm install --no-save puppeteer-core@24.43.1
+
+      - name: Browser interaction smoke tests
+        run: node scripts/smoke_site.cjs

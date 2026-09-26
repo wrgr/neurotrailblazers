@@ -5,8 +5,10 @@ paginate: true
 title: "Synapse Detection"
 description: "A NeuroTrailblazers graduate lecture. Synapse detection as a method: three separable problems, the published numbers, what a CREMI score predicts, the excitatory/inhibitory recall asymmetry, why detectors do not transfer, and what to measure before trusting a synapse table."
 ---
-<!-- _class: cover -->
+<!-- _class: cover nanoscale -->
 <!-- _paginate: false -->
+
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
 
 # Synapse Detection
 
@@ -14,9 +16,11 @@ description: "A NeuroTrailblazers graduate lecture. Synapse detection as a metho
 
 **NeuroTrailblazers** · neurotrailblazers.org
 
-Part A — Three problems and the published record Part B — Benchmarks and the sign problem Part C — Using somebody else's synapse table
+<p class="roadmap">Part A — Three problems and the published record<br>Part B — Benchmarks and the sign problem<br>Part C — Using somebody else's synapse table</p>
 
-<p class="src">Openly licensed for community use — <strong>CC BY-SA 4.0</strong>. Teach it, adapt it, share it onward the same way. neurotrailblazers.org</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+
+<p class="src">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google<br>Image: CC BY 4.0 · Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858<br>Lecture: CC BY-SA 4.0 · neurotrailblazers.org</p>
 
 <!--
 This lecture is built from one page of the NeuroTrailblazers content library,
@@ -108,32 +112,30 @@ Objective 4 is the one this lecture is really about. The single most consequenti
 
 <!-- _class: claim -->
 
-## Synapse detection is a solved problem
+## Synapse detection performance depends on the claim
 
-## with three residuals.
-
-Read everything that follows in that order. The framing decides how much of your project's budget belongs here.
+Established methods can perform well in evaluated tissue. Localization, partner assignment and transfer still need separate validation.
 
 <p class="ask">Before the next slide: if a detector has 88% precision and recall per synapse, what do you expect its accuracy to be on the connectome built from it?</p>
 
 <!--
-Take answers. Expect some guesses below 88%, on the reasoning that errors compound.
-The next slide gives SynEM's own answer -- 97% -- and why is the first real idea of
-the lecture.
+Take answers, then explain that 88% per synapse is insufficient to predict an
+edge-level score. Contact multiplicity, thresholds and correlated errors matter.
+SynEM's results illustrate this distinction, not a universal conversion rule.
 -->
 
 ---
 
-## The solved part
+## Established detection methods
 
-### Within a volume you have ground truth for, cleft detection is solved
+### Validation is specific to tissue, task and operating point
 
 <div class="cols">
 <div>
 
-**SynEM** reports **97% precision and recall on the connectome** — the thing you actually publish — while sitting at **88% per individual synapse**.
+**SynEM** reports binary-connectome performance around **97% precision and recall**. Its roughly **88% per-synapse** result uses a different operating point.
 
-Errors on single contacts wash out once contacts are aggregated into connections.
+Table 3 varies detector and connection thresholds. These numbers are not an automatic conversion.
 
 **H01's pipeline** detected **149.9 million synapses** at a **3.2% / 2.7% false-discovery rate** (excitatory / inhibitory).
 
@@ -142,9 +144,9 @@ Errors on single contacts wash out once contacts are aggregated into connections
 
 <div class="box box--good">
 
-**No modern project fails because it cannot find clefts.**
+**A published score does not certify a new table.**
 
-That is the honest starting point, and it is why this lecture spends almost no time on how to find a cleft and most of its time on what the found clefts can support.
+Measure detection and partner errors in the tissue and region supporting your claim.
 
 </div>
 
@@ -154,17 +156,19 @@ That is the honest starting point, and it is why this lecture spends almost no t
 <p class="src">Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01).</p>
 
 <!--
-The 88 to 97 step is the aggregation effect. Say it once here and promise it returns
-in Part A: nothing about the classifier changed; the unit of the question changed.
+Use Staffler et al. Table 3, not an implied 88-to-97 transformation. The same trained
+model can be operated at different score thresholds and connection rules. Local
+validation is still required. Ask whether the student's endpoint counts contacts
+or asks only whether a neuron pair is connected.
 -->
 
 ---
 
 ## The three residuals
 
-### What is actually unsolved, and what this lecture is about
+### What a table audit needs to establish
 
-**1 — Recall is not symmetric.** H01's detector missed **11%** of excitatory and **35%** of inhibitory synapses. Aggregation rescues precision, not recall, and an inhibitory deficit distorts every E/I ratio computed from the table.
+**1 — Recall is not symmetric.** H01's detector missed **11%** of excitatory and **35%** of inhibitory synapses. Unequal detection recall biases raw class counts; binary-edge performance does not repair a count ratio.
 
 **2 — Partner assignment is weaker than localisation**, and much weaker where synapses are polyadic. Buhmann et al. report F1 from **0.59 to 0.73** across four areas *of the same fly brain*.
 
@@ -314,9 +318,9 @@ apply to it as much as to anything else in the table.
 <div class="cols">
 <div>
 
-**SynEM, from above.** 88% precision and recall per interface → **97%** in binary cortical connectomes. Nothing about the classifier changed.
+**SynEM, from above.** Per-synapse and binary-connectome scores use different evaluation units. Table 3 also varies score and connection thresholds.
 
-What changed: a neuron pair is usually connected by more than one synapse, so independent per-synapse errors partly cancel when you only ask *"are these two neurons connected?"*
+Multiple contacts can help recover an edge when some contacts are missed. False positives, error correlation and the connection rule also affect performance.
 
 **Synful, from the other side.** Per-connection F1 of 0.59–0.73 — but **92–96%** of edges correctly assigned to the weak/strong classes most analyses actually use.
 
@@ -344,25 +348,25 @@ For most connectomics, that is the edge, not the synapse.
 
 ## Check yourself
 
-### SynEM: 88% per synapse, 97% for binary connectomes. What changed, and when may you quote the 97%?
+### What must accompany a binary-connectome performance number?
 
 <div class="cols">
 <div>
 
-**What changed.** Nothing about the classifier. **The unit of the question did.**
+**Report the evaluation unit, tissue and operating point.** Detector score thresholds and the number of contacts required to call an edge affect the result.
 
-Neuron pairs are usually connected by several synapses, so independent per-synapse errors partly cancel when you only ask whether an edge exists.
+SynEM's Table 3 distinguishes thresholds optimized for contacts from those optimized for connections.
 
 </div>
 <div>
 
-**Quote 97%** when your claim is about the **existence of connections**, in comparable tissue.
+**Quote the paper's result as that paper's result.** Claiming the same performance on your table requires validation of its connection rule and domain.
 
 **Do not quote it** for synapse counts, connection weights, or anything per-synapse.
 
 <div class="box box--warn">
 
-Aggregation rescues **precision**, not **recall**. Hold on to that — it is what Part C turns on.
+Aggregation can change **both precision and recall**. It does not remove class-specific bias in synapse counts.
 
 </div>
 
@@ -979,4 +983,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction. If you add figures to an adaptation, check they are compatible with CC BY-SA 4.0.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>

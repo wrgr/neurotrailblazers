@@ -4,21 +4,21 @@
  * 16:9, high-contrast, sized for a projected lecture hall: nothing below 20px.
  */
 
-@import 'default';
+@import 'neurotrailblazers';
 
 :root {
-  --ink: #12161c;
-  --ink-soft: #414b59;
-  --rule: #d3d9e2;
-  --paper: #ffffff;
-  --paper-alt: #f4f6fa;
-  --accent: #1f6fb2;
-  --accent-dark: #14456e;
+  --ink: #10161c;
+  --ink-soft: #52616a;
+  --rule: #cbd1ca;
+  --paper: #f2f1ec;
+  --paper-alt: #e8e9e3;
+  --accent: #426b62;
+  --accent-dark: #31564e;
   --warn: #a8410a;
   
   --good: #1c6b43;
-  --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --font-body: "Source Sans 3", Arial, Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", Menlo, Consolas, monospace;
 }
 
 section {
@@ -31,6 +31,7 @@ section {
   color: var(--ink);
   background: var(--paper);
   letter-spacing: -0.005em;
+  justify-content: center;
 }
 
 section::after {
@@ -88,7 +89,7 @@ li > ul > li { font-size: 19px; color: var(--ink-soft); margin-bottom: 4px; }
 strong { color: var(--accent-dark); font-weight: 700; }
 em { color: var(--ink-soft); }
 
-a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #b9d3e8; }
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #a8c7bb; }
 
 code {
   font-family: var(--font-mono);
@@ -162,7 +163,7 @@ section.dense { font-size: 19px; }
 
 /* Deck cover */
 section.cover {
-  background: linear-gradient(135deg, #14456e 0%, #1f6fb2 55%, #2f8fc9 100%);
+  background: var(--ink);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -171,20 +172,29 @@ section.cover {
 }
 section.cover h1 { color: #fff; font-size: 56px; margin-bottom: 10px; }
 section.cover h3 {
-  color: #cfe6f7;
+  color: #a8c7bb;
   border-bottom: none;
   font-size: 24px;
   font-weight: 400;
   padding-bottom: 0;
   margin-bottom: 34px;
 }
-section.cover p { font-size: 22px; color: #dceaf6; margin: 3px 0; }
+section.cover p { font-size: 22px; color: #bec5c9; margin: 3px 0; }
 section.cover strong { color: #fff; }
 section.cover::after { color: rgba(255,255,255,0.55); }
 
+section.cover.nanoscale { justify-content: flex-start; padding: 72px 60px; }
+section.cover.nanoscale h1 { max-width: 530px; font-size: 52px; line-height: 1.05; font-weight: 600; margin: 0 0 24px; }
+section.cover.nanoscale h3 { max-width: 520px; font-size: 23px; line-height: 1.25; margin: 0 0 24px; }
+section.cover.nanoscale > p { max-width: 520px; font-size: 21px; }
+section.cover.nanoscale p.roadmap { margin-top: 28px; font-size: 20px; line-height: 1.4; }
+section.cover.nanoscale .cover-image { position: absolute; top: 26px; right: 24px; width: 590px; height: 590px; object-fit: contain; border-radius: 0; }
+section.cover.nanoscale p.cover-label { position: absolute; top: 627px; right: 28px; width: 570px; max-width: none; font-size: 17px; line-height: 1.25; }
+section.cover.nanoscale p.src { position: absolute; left: 60px; bottom: 40px; max-width: 540px; font-size: 13px; line-height: 1.35; }
+
 /* Part divider */
 section.part {
-  background: var(--accent-dark);
+  background: var(--ink);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -192,8 +202,8 @@ section.part {
   padding: 60px 84px;
 }
 section.part h1 { color: #fff; font-size: 48px; }
-section.part h3 { color: #a8cbe6; border-bottom: none; padding-bottom: 0; font-size: 26px; }
-section.part ul { font-size: 24px; color: #dceaf6; }
+section.part h3 { color: #a8c7bb; border-bottom: none; padding-bottom: 0; font-size: 26px; }
+section.part ul { font-size: 24px; color: #bec5c9; }
 section.part li { margin-bottom: 11px; }
 section.part strong { color: #fff; }
 section.part::after { color: rgba(255,255,255,0.55); }
@@ -244,7 +254,7 @@ section.claim p { font-size: 23px; color: var(--ink-soft); }
 }
 
 /* Slide-count badge on part dividers */
-.meta { font-size: 18px; color: #a8cbe6; margin-top: 20px; }
+.meta { font-size: 18px; color: #a8c7bb; margin-top: 20px; }
 
 img { border-radius: 6px; }
 

@@ -5,19 +5,22 @@ paginate: true
 title: "Connectomics Ethics and Governance"
 description: "A NeuroTrailblazers graduate lecture. What is live now in connectomics ethics (licence compliance, credit for proofreading labour) and what is prospective (consent at scale, de-identification, neural-data regulation, dual use), stated at its real strength."
 ---
-<!-- _class: cover -->
+<!-- _class: cover nanoscale -->
 <!-- _paginate: false -->
 
-# Connectomics Ethics
-# and Governance
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+
+# Connectomics Ethics and Governance
 
 ### A graduate lecture from the NeuroTrailblazers reference layer
 
 **NeuroTrailblazers** · neurotrailblazers.org
 
-Part A — Human tissue: consent and de-identification Part B — Licences: what a reuser must do Part C — Dual use and credit for proofreading
+<p class="roadmap">Part A — Human tissue: consent and de-identification<br>Part B — Licences: what a reuser must do<br>Part C — Dual use and credit for proofreading</p>
 
-<p class="src">Openly licensed for community use — <strong>CC BY-SA 4.0</strong>. Teach it, adapt it, share it onward the same way. neurotrailblazers.org</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+
+<p class="src">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google<br>Image: CC BY 4.0 · Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858<br>Lecture: CC BY-SA 4.0 · neurotrailblazers.org</p>
 
 <!--
 This lecture is built from one page of the NeuroTrailblazers content library,
@@ -742,4 +745,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction. If you add figures to an adaptation, check they are compatible with CC BY-SA 4.0.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>

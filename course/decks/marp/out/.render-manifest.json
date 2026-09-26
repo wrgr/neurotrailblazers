@@ -11,11 +11,11 @@
     "08-segmentation-and-proofreading.marp.md": "d1777b211e894253248f031dd8cb874abef2aa69209ce31c91b57ae53540c8b7",
     "09-connectome-analysis-neuroai.marp.md": "4176f280e43f5b5c3eec2a5b3b87a398095418d176cf59634870daeac41eb66b",
     "atlas-connectomics-reference.marp.md": "ea96d15af3b590a30f81764d24b6fcaf12437d2b35cdc5a72c9cd20b5f47f88d",
-    "en585781/module07-introduction-to-connectomics.marp.md": "aa058c44e673d8273863c6b9d7bbcf621727ec6e6c0bfbd5c5c3a6f155903f87",
-    "en585781/module08-tools-and-methods.marp.md": "67d58b2cc585a1a358de0eefa5ec76f4d7b46fa6a9f4c9a3532118f3f83e2f03",
-    "en585781/module09-algorithms-and-applications.marp.md": "5cad64a0fcac22e917dd19eb792fb1486f9c35679bca19cc0656f70c8e7af3e0",
-    "lectures/ethics-and-governance.marp.md": "e321640f321d274066232f406e96cc93777d05d851e7cebf0a5afb4bfa378d56",
-    "lectures/synapse-detection.marp.md": "dbb2751034a811d6a1c5a80850d8b4c387d6917e7948a667c6a5e553f78348a8",
+    "en585781/module07-introduction-to-connectomics.marp.md": "9535cbbba4efa5990b7ad9d214887faa5c4ee56b6752a63832b3e656b771db8a",
+    "en585781/module08-tools-and-methods.marp.md": "63e9340572d380aaa711cf0a08fbf86182630f40104b23cc91430bc7dfc9c918",
+    "en585781/module09-algorithms-and-applications.marp.md": "ca30436d4ba9e4704ba312b396be60bb103c0c7c5b079f38e17289a0e0285f02",
+    "lectures/ethics-and-governance.marp.md": "28c8da1bc9c3e9c5b29ec70d17fe9426740bf326b9fc303fbd0013e11159bf96",
+    "lectures/synapse-detection.marp.md": "136567ff45e97d68b6dc647051914c9aac16a1e1189d360af4915a2aed94900a",
     "modules/module01.marp.md": "96b22ee27ce15d20a6f46cbce09b576993b2dba1133edb991da2ab278ed24c12",
     "modules/module02.marp.md": "0047f5b60bbd52c126bde87c1e3d62296e52aa67b594f2f0b96b1b5571474256",
     "modules/module03.marp.md": "fcd787ec0dc517f8b1cedec6f85f6ef759e4f086f329897635ae107541ec2b28",
@@ -44,7 +44,7 @@
     "neurotrailblazers-template.marp.md": "4a25cfaed4df8e373b79c1f21b861846b951843899fb7cca3097df39571cdb18"
   },
   "themes": {
-    "en585781/theme/frontiers.css": "bff505851549f8f3758cbb7725c02403b97f06cf161bf1bf11f37e6de819dbff",
+    "en585781/theme/frontiers.css": "a10d5d35ca007b18ba2c187b2c164de062c854ba5556da8aac291a0bab3d85ac",
     "theme/neurotrailblazers.css": "52d74b3169b8bc4df37ad779791884372583544345af6d46bc18a1188a84d815"
   }
 }

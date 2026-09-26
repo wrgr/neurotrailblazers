@@ -57,7 +57,8 @@ result in section 4, but nobody is asked to read unpublished work aloud.
 - **46–64 min:** individuals complete section 3, the three rewrites. Circulate and read
   the public version first. If it has no non-claim, the other two usually have a weak one.
 - **64–72 min:** cold-reader swap. Partners read *only* the public version and write
-  what was found and what was not. Compare against the section 1 invariants.
+  what was found and what was not, then say whether the non-claim could be repeated back.
+  Authors revise one sentence. This is the worksheet's peer check.
 - **72–86 min:** section 4, private writing on the learner's own result or on a paper
   they have read. Do not read over shoulders uninvited.
 - **86–90 min:** exit ticket. Remind learners to bring their three registers to the next

@@ -46,7 +46,9 @@ immigration status aloud.
 
 ## Timed plan and facilitator cues
 
-- **0–10 min:** tell the room about one path you did not take, and which parts of your
+- **0–10 min:** follow-through from STEM Identity and Purpose: ask who made their first
+  contribution and what happened next. Take two answers. Then tell the room about one
+  path you did not take, and which parts of your
   own route were contingent rather than earned. MERIT stage 6 names the risk this guards
   against: mentors reproduce their own trajectory by default. Ask: "What did you assume
   was the next step before anyone asked you?"

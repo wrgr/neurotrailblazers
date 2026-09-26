@@ -40,7 +40,9 @@ describe a failure of their own aloud.
 
 ## Timed plan and facilitator cues
 
-- **0–10 min:** narrate one failure of your own. Say what you concluded about yourself
+- **0–10 min:** follow-through from Orientation: ask who held the check-in and what
+  one correction they added to their list. Take two answers, no more. Then narrate one
+  failure of your own. Say what you concluded about yourself
   at the time, and what it turned out to be evidence about. Ask: "What would have
   told you sooner that it was the data, not you?"
 - **10–20 min:** the distinction. Write three columns on the board: *what happened*,

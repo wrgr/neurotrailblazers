@@ -30,7 +30,7 @@ acceptable wording. This page is public and suitable for formative feedback.
 
 | Draft | Word | What the notebook supports | Invariant dropped |
 |---|---|---|---|
-| A | "confirming the … control hypothesis" | "consistent with" a targeting pattern; control is not measured | the null model and the 2.1× on partly proofread axons |
+| A | "confirming the … control hypothesis" | "consistent with" a targeting pattern; control is not measured | what the null preserves, and the 2.1× on partly proofread axons |
 | B | "veto firing" (and "prefer") | "land on or near the cell body more than chance"; efficacy needs a biophysical model | version and proofreading state; the Bin B assumption behind "inhibitory" |
 | C | "stop them firing" | a count of where synapses sit | everything: data, comparison, non-claim |
 

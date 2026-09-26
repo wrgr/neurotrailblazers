@@ -17,8 +17,8 @@ acceptable wording. This page is public and suitable for formative feedback.
 
 | Option | Known now | Knowable in two weeks | Not knowable yet |
 |---|---|---|---|
-| A. Extend interneuron analysis | The pipeline exists; Tomás thinks it is quick. | Whether the new volume has the cell types proofread; whether anyone else is already doing it (ask Dr. Whitfield). | Whether the result will be interesting. |
-| B. Synapse classifier | Rin enjoys the work; Dr. Kessler is keen; no labels exist. | How many hours of labelling a first model needs; whether another lab has labels to share (ask Dr. Kessler). | Whether it will beat the current detector. |
+| A. Extend interneuron analysis | The pipeline exists; Kai thinks it is quick. | Whether the new volume has the cell types proofread; whether anyone else is already doing it (ask Dr. Whitfield). | Whether the result will be interesting. |
+| B. Synapse classifier | Rin enjoys the work; Dr. Kessler is keen; no labels exist. | How many hours of labeling a first model needs; whether another lab has labels to share (ask Dr. Kessler). | Whether it will beat the current detector. |
 | C. Repeated contacts | The idea is published elsewhere; nobody here has run it. | Whether enough axons are proofread to count contacts; whether a simple version runs at all; whether Dr. Whitfield would support it. | Whether the effect exists in this volume. |
 
 **C has the most removable uncertainty.** Two of its three big unknowns take a small
@@ -31,7 +31,7 @@ Rin could already state the question the next artifact answers, so further readi
 was buying confidence, not information.
 
 Accept A or B as the probe target if the learner argues from the table. For example,
-B's labelling cost may be the single fact that decides it, and one conversation with
+B's labeling cost may be the single fact that decides it, and one conversation with
 Dr. Kessler gets it.
 
 ## 2. Model probe
@@ -53,7 +53,7 @@ Dr. Kessler gets it.
 
 > "Before I choose, I'd like to spend two weeks checking whether C is feasible in the
 > new volume: I'll count repeated contacts on about 20 proofread axons and bring the
-> numbers and a note on proofreading needs to lab meeting on the 14th. Is that a good
+> numbers and a note on proofreading needs to lab meeting at the end of the two weeks. Is that a good
 > use of the time, or would you rather I choose now?"
 
 The stopping rule is checkable by someone else, as in norm 22 on the [Technical

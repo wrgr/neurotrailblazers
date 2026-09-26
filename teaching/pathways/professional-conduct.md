@@ -24,8 +24,8 @@ description: "A 90-minute workshop on classifying a breach, choosing the lowest 
 
 Learners tell research misconduct apart from honest error and from a difference of
 opinion; state their obligation in a situation as an action, not a feeling; choose the
-lowest escalation rung that is adequate; and write a four-part error report about a
-mistake of their own.
+lowest escalation rung that is adequate; write a four-part error report for an invented
+mistake; and start a private map of who handles each rung in their own setting.
 
 The working definition is the US federal one used by the Office of Research Integrity
 ([ORI](https://ori.hhs.gov/)): research misconduct is **fabrication, falsification or
@@ -49,7 +49,9 @@ the names of your ombuds office and research integrity officer so you can give t
 ## Timed plan and facilitator cues
 
 - **0–10 min:** state your reporting status first: "If you tell me about a real incident,
-  here is what I am required to do with it." Then tell a short story about an error of
+  here is what I am required to do with it." Then take the follow-through from The
+  Savvy Researcher: who asked their one question, and what did they learn? Take two
+  answers. Then tell a short story about an error of
   your own that you reported, and how long you waited before reporting it. Ask: "What
   made the wait feel reasonable at the time?"
 - **10–20 min:** write three columns on the board: *misconduct (FFP)*, *honest error*,
@@ -59,10 +61,10 @@ the names of your ombuds office and research integrity officer so you can give t
   minute 35, check that pairs are writing the obligation *before* the rung. Expect most
   pairs to over-escalate scenario 1 (a disagreement about boundary cells) and to
   under-escalate scenario 3 (the unchecked backlog).
-- **50–60 min:** debrief. Take scenario 3 first. Ask: "What would Sam have to know before
+- **50–60 min:** debrief. Take scenario 3 first. Ask: "What would Eli have to know before
   calling it falsification?" Then scenario 5. Point out that the first move at rung 3 is a
   question about confidentiality, asked before any details.
-- **60–75 min:** individuals write Priya's four-part error report (section 3), then start
+- **60–75 min:** individuals write Noor's four-part error report (section 3), then start
   their own rung map (section 4). The rung map is private writing.
 - **75–85 min:** pairs swap *only the error report*. The partner checks one thing: does
   the first sentence say what happened, with no apology in front of it?

@@ -74,7 +74,8 @@ the same sentence in different words, or has one become weaker?
 
 Give your partner **only** your public version. Your partner writes two lines without
 talking to you: *what was found* and *what was not shown*. Compare with your section 1
-invariants. Where did they drift?
+invariants. Where did they drift? Then your partner answers one more question: *could
+a reader repeat the non-claim back to you?* Revise one sentence before you move on.
 
 ## 4. Your own result (14 minutes, private)
 
@@ -87,10 +88,7 @@ paper you have read.
 3. Circle the word in your public version you are most tempted to strengthen. Write what
    it would claim if you did.
 
-## Peer check and exit ticket
-
-Your partner answers one question about your section 3 public version: *could a reader
-repeat the non-claim back to you?* Revise one sentence.
+## Exit ticket
 
 Exit ticket: "The word I am most tempted to strengthen is ___. The sentence I will not
 write is ___."

@@ -11,7 +11,7 @@ description: "An invented next-step decision to evaluate, a decision memo, and y
 [Workshop plan]({{ '/teaching/pathways/future-forward/' | relative_url }}) · [All workshops]({{ '/teaching/pathways/' | relative_url }})
 
 **Time:** 30 minutes in pairs, then 25 minutes alone. The case below is **invented**.
-Hana, Dr. Brandt and Luis are not real people.
+Hana, Dr. Castillo and Luis are not real people.
 
 **Bring:** your direction memo from [Charting Your
 Course]({{ '/teaching/pathways/charting-your-course/' | relative_url }}) and your network
@@ -20,18 +20,18 @@ Entourage]({{ '/teaching/pathways/building-your-entourage/' | relative_url }}).
 
 ## The case
 
-It is September. Hana has worked for two years as a research technician in Dr. Brandt's
+It is September. Hana has worked for two years as a research technician in Dr. Castillo's
 connectomics lab, proofreading and running the lab's synapse-table exports. Her contract
 ends next August. Here is what she knows:
 
 - For fourteen months she has been "thinking about" doctoral applications. The programs
   she likes close in early December. She has not contacted any prospective supervisors.
-- In June, Dr. Brandt said in passing: "We'll probably be able to renew you." Hana has
+- In June, Dr. Castillo said in passing: "We'll probably be able to renew you." Hana has
   not asked what pays for her position. The grant that does is up for renewal, with a
   decision expected in April.
 - Luis, a former labmate, now works on an imaging team at a company. He says the team
   hires continuously and he would refer her.
-- Dr. Brandt and a postdoc have watched her work for two years. Neither has been asked
+- Dr. Castillo and a postdoc have watched her work for two years. Neither has been asked
   for a letter.
 - Hana writes in her notebook: "I'll decide once I know more."
 

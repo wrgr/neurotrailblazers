@@ -11,7 +11,7 @@ description: "An invented choice between three research directions, a reversible
 [Workshop plan]({{ '/teaching/pathways/charting-your-course/' | relative_url }}) · [All workshops]({{ '/teaching/pathways/' | relative_url }})
 
 **Time:** 20 minutes in pairs, 15 minutes in pairs, then 15 minutes alone. The case
-below is **invented**. Rin, Dr. Whitfield, Dr. Kessler and Tomás are not real people.
+below is **invented**. Rin, Dr. Whitfield, Dr. Kessler and Kai are not real people.
 
 ## The case
 
@@ -20,7 +20,7 @@ Whitfield, the PI, says: "Pick a question you're excited about and tell me by th
 of the month." That leaves three weeks. Rin has three candidates:
 
 - **A. Extend the lab's interneuron analysis to the new volume.** The pipeline exists.
-  Tomás, a senior student, says: "Just do A. It's the quickest paper."
+  Kai, a senior student, says: "Just do A. It's the quickest paper."
 - **B. Build a better automated synapse classifier.** Rin enjoys the machine learning.
   Dr. Kessler, a postdoc, is keen. The lab has no ground-truth labels for the new volume.
 - **C. Test whether some axons make repeated contacts onto the same target more often

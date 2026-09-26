@@ -27,7 +27,7 @@ worked in research. Here is her first month, in her own notes:
    I said nothing. I went home thinking I'm not meant to be here."
 2. Week 2: "I spent five hours preparing for a twenty-minute one-to-one. Other people
    seem to walk in cold. I must be behind."
-3. Week 2: "Someone mentioned their stipend comes from Dr. Lindqvist's grant. I thought
+3. Week 2: "Someone mentioned their stipend comes from Dr. Novak's grant. I thought
    the department paid us. Everyone else seemed to know."
 4. Week 3, seminar: "I had a question and didn't ask it. Someone else asked the same
    thing and the speaker said it was a great question."

@@ -46,8 +46,9 @@ reading academic slowness as incompetence rather than as different incentives.
 
 **Moment 5, separately:** write dated notes of both incidents today, and keep them
 somewhere she controls. Tell one person outside the situation, such as a second mentor
-or the graduate director, and ask how they read it. Ask directly about credit for the
-axon work, once, in writing. This is a credit problem at rung 2 in
+or the graduate director, and ask how they read it. Ask her supervisor once, in writing,
+how the axon work will be credited. She does not need to raise it with the other student
+again; one attempt, already met with "touchy", is enough. This is a credit problem at rung 2 in
 [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}); it may become more.
 Contributing harder will not fix it.
 

@@ -58,7 +58,8 @@ or the case; the choice is theirs and is not announced.
   look at the 3:45 to 4:30 slot first. If it is empty, the talk has no limitation.
 - **46–58 min:** individuals complete section 3, the question bank. At minute 52, check
   that every bank has a "so what" question and a question the learner cannot yet answer.
-- **58–78 min:** section 4 in groups of three. Three rounds of six minutes: 90-second
+- **58–78 min:** section 4 in groups of three. Two minutes to pass question banks left;
+  each learner adds one question to the bank they receive. Then three rounds of six minutes: 90-second
   opener, two questions, one minute of feedback. Rotate speaker, questioner and timekeeper.
   Keep time strictly; the chair owns the clock.
 - **78–86 min:** section 5, private writing. Do not read over shoulders uninvited.

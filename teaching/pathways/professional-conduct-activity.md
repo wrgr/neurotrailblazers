@@ -11,7 +11,7 @@ description: "Five invented lab scenarios to classify and rule on, an error repo
 [Workshop plan]({{ '/teaching/pathways/professional-conduct/' | relative_url }}) · [All workshops]({{ '/teaching/pathways/' | relative_url }})
 
 **Time:** 30 minutes in pairs, then 15 minutes alone. The lab below is **invented**.
-Priya, Sam, Tomás, Wen, Jonah and Dr. Adeyemi are not real people.
+Noor, Eli, Marcus, Wen, Jonah and Dr. Adeyemi are not real people.
 
 **Definitions for today.** Under the US federal definition, research misconduct is
 **fabrication** (making up data or results), **falsification** (manipulating materials,
@@ -29,21 +29,21 @@ institutional channels.
 
 ## The lab
 
-The Adeyemi lab maps inhibitory neurons in a mouse cortex volume. Priya is a first-year
-graduate student. Sam is an undergraduate proofreader. Tomás is a senior graduate
+The Adeyemi lab maps inhibitory neurons in a mouse cortex volume. Noor is a first-year
+graduate student. Eli is an undergraduate proofreader. Marcus is a senior graduate
 student. Wen is a postdoc. Jonah is a visiting student.
 
-1. Wen's figure excludes cells within 20 µm of the volume boundary. Tomás thinks the
+1. Wen's figure excludes cells within 20 µm of the volume boundary. Marcus thinks the
    cutoff biases the result and says so at lab meeting. The methods state the cutoff.
-2. Wen's lab-meeting figure drops one cell that looked like an outlier. Priya checks and
+2. Wen's lab-meeting figure drops one cell that looked like an outlier. Noor checks and
    finds it was a merge error. The figure legend says "all cells".
-3. Two days before a site visit, Tomás tells Sam: "Just mark the rest of the backlog as
+3. Two days before a site visit, Marcus tells Eli: "Just mark the rest of the backlog as
    done. Nobody's going to check them before Friday." The completeness number goes in the
    progress report.
-4. Priya is editing the lab's draft grant. Two paragraphs, drafted by Jonah, match a
+4. Noor is editing the lab's draft grant. Two paragraphs, drafted by Jonah, match a
    published review word for word, with no quotation marks or citation.
 5. At a joint meeting, a postdoc from a collaborating lab repeatedly mocks Wen's accent
-   and has twice left her off the meeting invitation. Wen laughs it off. Priya is uneasy.
+   and has twice left her off the meeting invitation. Wen laughs it off. Noor is uneasy.
 
 ## 1. Classify (10 minutes)
 
@@ -54,7 +54,7 @@ If you pick *cannot tell yet*, write the one fact that would decide it.
 ## 2. Rule (20 minutes)
 
 For each scenario, write from the point of view of the person named in brackets:
-1 (Tomás), 2 (Priya), 3 (Sam), 4 (Priya), 5 (Priya).
+1 (Marcus), 2 (Noor), 3 (Eli), 4 (Noor), 5 (Noor).
 
 - **Obligation:** one sentence starting "I must…" or "I must not…".
 - **Options:** at least two things this person could do.
@@ -63,14 +63,15 @@ For each scenario, write from the point of view of the person named in brackets:
 
 Write the obligation before you choose the rung.
 
-## 3. Priya's error report (10 minutes)
+## 3. Noor's error report (10 minutes)
 
-Priya made her own mistake. On the 3rd she sent Wen input counts for 60 cells for a
-poster. The counts came from materialization version 1078, but the cell list came from
-version 1052, so 9 cells resolved to different objects. The numbers are in poster
-Figure 2. The poster goes to print on Friday. It is Tuesday. Priya has not fixed it yet.
+Noor made her own mistake. On the 3rd she sent Wen soma volumes for 60 cells for a
+poster. She converted voxel counts to cubic microns using a 4 × 4 × 40 nm voxel, but
+this dataset's voxels are 8 × 8 × 40 nm. Every volume she sent is four times too small.
+The numbers are in poster Figure 2. The poster goes to print on Friday. It is Tuesday.
+Noor has not fixed it yet.
 
-Write Priya's message to Wen using the four parts: what happened; what is affected;
+Write Noor's message to Wen using the four parts: what happened; what is affected;
 what I have done so far; what I propose and what I need. No apology in the first
 sentence. One brief apology at the end is fine.
 

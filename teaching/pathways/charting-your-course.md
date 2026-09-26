@@ -41,8 +41,9 @@ about research, coursework or something else.
 
 ## Timed plan and facilitator cues
 
-- **0–10 min:** tell the room about a direction you chose before you could evaluate
-  it. Say what you could not have known, what you could have found out cheaply, and
+- **0–10 min:** follow-through from The Resilient STEM Scholar: ask who sent a status
+  report on real work and what came back. Take two answers. Then tell the room about a
+  direction you chose before you could evaluate it. Say what you could not have known, what you could have found out cheaply, and
   whether you did. Ask: "What would two weeks of trying have told you?"
 - **10–20 min:** the move. Write on the board: *you cannot think your way to an
   evaluation you do not have the data for; you can buy the data cheaply.* Read the

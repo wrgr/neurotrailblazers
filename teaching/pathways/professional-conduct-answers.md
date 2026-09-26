@@ -18,7 +18,7 @@ legal advice and not a ruling on any real case.
 
 | # | Kind | Why |
 |---|---|---|
-| 1 | Difference of opinion | The cutoff is stated in the methods. Tomás disputes a judgment, not the record. |
+| 1 | Difference of opinion | The cutoff is stated in the methods. Marcus disputes a judgment, not the record. |
 | 2 | Honest error, probably | The exclusion is defensible but undocumented. It becomes a record problem only if it stays unreported once known. |
 | 3 | Possible falsification | Marking unchecked work as checked makes the record inaccurate, and the number goes to a funder. |
 | 4 | Possible plagiarism | Copied words without credit. It is still a draft, and the cause may be pasted notes. |
@@ -31,30 +31,30 @@ segments had in fact been checked some other way; for 4, whether Jonah meant to 
 
 ## 2. Rulings
 
-**1, Tomás.** *I must not describe a disagreement as misconduct.* Options: run the
+**1, Marcus.** *I must not describe a disagreement as misconduct.* Options: run the
 analysis with and without the cutoff and show both; put his view in writing once. Rung
 0 with Wen, then 1 if it affects what gets published. First sentence: "Could we check
 whether the result holds without the 20 µm cutoff? I can run it."
 
-**2, Priya.** *I must tell Wen, privately, before the figure is reused.* Options: tell
+**2, Noor.** *I must tell Wen, privately, before the figure is reused.* Options: tell
 Wen directly; ask Wen to update the legend and state the exclusion rule. Rung 0. First
 sentence: "The cell dropped from your figure looks like a merge error to me. Should the
 legend say it was excluded, and why?"
 
-**3, Sam.** *I must not mark segments as done that I have not checked.* Options: ask
-Tomás what he meant; offer an accurate alternative ("checked 140, 60 remaining"); take it
-to Dr. Adeyemi if Tomás confirms. Rung 1, rising to 3 if the inaccurate number is
+**3, Eli.** *I must not mark segments as done that I have not checked.* Options: ask
+Marcus what he meant; offer an accurate alternative ("checked 140, 60 remaining"); take it
+to Dr. Adeyemi if Marcus confirms. Rung 1, rising to 3 if the inaccurate number is
 knowingly submitted. First sentence: "Do you mean mark them as deferred? I haven't
 checked them, so I can't mark them as proofread."
 
-**4, Priya.** *I must not let the paragraphs go out uncredited.* Options: flag the
+**4, Noor.** *I must not let the paragraphs go out uncredited.* Options: flag the
 passage in the draft for Jonah; tell whoever owns the submission. Rung 0 with Jonah,
 then 1 to Dr. Adeyemi, who signs the proposal. First sentence: "These two paragraphs
 match the published review word for word. Can we quote and cite them, or rewrite them?"
 
-**5, Priya.** *I must not decide for Wen, and I must not look away.* Options: check in
+**5, Noor.** *I must not decide for Wen, and I must not look away.* Options: check in
 with Wen privately; write down what she saw, dated; ask the ombuds office what it would
-have to report before giving details. Rung 3, but the first move is to Wen. Priya should
+have to report before giving details. Rung 3, but the first move is to Wen. Noor should
 also find out whether her own role makes her a required reporter. First sentence, to
 Wen: "I noticed what happened at the joint meeting. How are you finding it, and is
 there anything you'd want from me?"
@@ -64,16 +64,18 @@ is almost always a question to the nearest person.
 
 ## 3. Model error report
 
-> "The input counts I sent you on the 3rd mix two materialization versions: the counts
-> are from 1078 and the cell list is from 1052, so 9 of the 60 cells are different
-> objects. That affects poster Figure 2. I've re-pulled the cell list at 1078 and I'm
-> re-running the counts now. I can send corrected numbers by Wednesday noon, before the
-> Friday print. Do you want the corrected figure, or a list of what changed first?
-> Sorry for the extra work."
+> "The soma volumes I sent you on the 3rd used the wrong voxel size: 4 × 4 × 40 nm
+> instead of this dataset's 8 × 8 × 40 nm, so every volume is four times too small.
+> That affects poster Figure 2, including its axis. I've found the conversion line and
+> I'm re-running all 60 cells now. I can send corrected numbers by Wednesday noon, before
+> the Friday print. Do you want the corrected figure, or a check of any comparison that
+> used these volumes first? Sorry for the extra work."
 
 It reports before the fix, names the figure and the deadline, and puts the one apology
-last. Two lines on prevention are a good addition: pin the version in the notebook
-header, as in [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+last. It also names the scale of the error, which tells Wen whether any conclusion
+changes: a uniform factor of four shifts every value but leaves the ranking of cells
+intact. Two lines on prevention are a good addition: read the voxel size from the
+dataset's metadata rather than typing it, and record it in the notebook header, as in [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
 
 ## 4. Rung map: what good looks like
 

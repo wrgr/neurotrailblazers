@@ -42,7 +42,8 @@ aloud, and nobody sends anything during the session.
 
 ## Timed plan and facilitator cues
 
-- **0–10 min:** describe one professional tie that matters to you. Say whether it
+- **0–10 min:** follow-through from Charting Your Course: ask who ran the first week of
+  a probe and what it showed. Take two answers. Then describe one professional tie that matters to you. Say whether it
   started through your mentor or through something you did, and what you have given
   back. Ask: "If your mentor left tomorrow, who would still answer your email?"
 - **10–20 min:** borrowed versus own. Read the MERIT line: introductions made on a

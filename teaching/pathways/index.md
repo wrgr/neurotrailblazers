@@ -45,8 +45,9 @@ several later sessions ask them to bring an earlier one back.
 
 ## When to run them
 
-The order above follows the stages of the [MERIT
-framework]({{ '/models/' | relative_url }}). A cohort does not need all ten, and it
+The numbering is the order the materials are written to run in. Each session also maps
+to a stage of the [MERIT framework]({{ '/models/' | relative_url }}), shown below, and
+the series passes through those stages roughly twice. A cohort does not need all ten, and it
 should not receive them as a block at the end of technical training. The norms are
 needed first, not last.
 
@@ -67,7 +68,9 @@ deciding whether to leave.
 **Spacing.** One workshop every two to four weeks alongside technical work is the
 intended shape. Ten sessions in one week produces ten artifacts nobody uses. Each
 worksheet ends with a one-week follow-through task; start the next session by asking
-who did it and what happened.
+who did it and what happened. Each plan's opening names the follow-through from the
+session numbered before it. If you move a session, as the exceptions above suggest,
+open with the follow-through from whichever session your cohort ran last.
 
 **A short version.** If you have three slots, run Orientation, The Resilient STEM
 Scholar and The Savvy Researcher. Those cover the three most expensive gaps: unstated

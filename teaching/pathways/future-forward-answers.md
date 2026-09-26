@@ -15,7 +15,7 @@ acceptable decision. This page is public and suitable for formative feedback.
 
 ## 1. The drift
 
-Hana's default is to stay and wait for Dr. Brandt's renewal. If she decides nothing, she
+Hana's default is to stay and wait for Dr. Castillo's renewal. If she decides nothing, she
 learns in April whether she has a job, with four months left and the doctoral cycle
 already closed. The default is not "keep options open". It quietly closes one.
 
@@ -29,10 +29,10 @@ this cycle".
 
 | | Stay, seek renewal | Doctoral programs this cycle | Industry role |
 |---|---|---|---|
-| **Reversibility** | High, but only if renewed; the risk sits with the grant | Low once enrolled; applying is fully reversible | Moderate; returning to doctoral study later is common, harder as pay rises |
-| **Cost** | A year with no new credential; the April uncertainty | Fees, autumn evenings, several years at trainee pay if it goes ahead | Time away from the publication record; translating her experience |
+| **Reversibility** | High, but only if renewed; the risk sits with the grant | Low once enrolled; applying is fully reversible | Moderate; returning to doctoral study later is possible, though harder as pay rises |
+| **Cost** | A year with no new credential; the April uncertainty | Application fees, fall evenings, several years at trainee pay if it goes ahead | Time away from the publication record; translating her experience |
 | **Demands now** | Nothing, which is the problem | Supervisor contacts, a statement built on her work, two letters | A portfolio a non-neuroscientist can read |
-| **Biggest unknown** | Whether the renewal will pay for her; ask Dr. Brandt | Whether any supervisor has a fitting project; email three | What the team selects on; ask Luis |
+| **Biggest unknown** | Whether the renewal will pay for her; ask Dr. Castillo | Whether any supervisor has a fitting project; email three | What the team selects on; ask Luis |
 
 **Fit, last:** her two years of proofreading and exports suit both research and imaging
 roles. That is why fit alone cannot decide this.
@@ -47,11 +47,11 @@ years to build.
 ## 3. Model decision memo
 
 > "Decision: I will apply to four doctoral programs this cycle, and this week I will ask
-> Dr. Brandt what pays for my post. Why: the doctoral window closes in December; the
+> Dr. Castillo what pays for my position. Why: the doctoral window closes in December; the
 > industry team hires all year and staying depends on an April decision I cannot
-> influence. I give up a quiet autumn and the fees. I was wrong if, by 15 November, none
+> influence. I give up a quiet fall and the application fees. I was wrong if, by November 15, none
 > of the supervisors I contacted has a project I would want; then I stop and call Luis.
-> Review: 15 November, and again when offers or the renewal decision arrive."
+> Review: November 15, and again when offers or the renewal decision arrive."
 
 Accept an industry-first memo if it states its cost and reversibility, for example
 "take the industry role, apply in two years, keep one referee warm". Do not accept "I

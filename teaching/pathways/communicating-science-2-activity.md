@@ -73,7 +73,9 @@ ends with a next test, a boundary, or a stop, not a defense.
 
 ## 4. Live round (20 minutes, threes)
 
-Take turns as speaker, questioner and timekeeper, six minutes per round.
+First, two minutes: pass your question bank to the person on your left, who adds one
+question you did not think of. Then take turns as speaker, questioner and timekeeper,
+six minutes per round.
 
 - The speaker gives the 90-second opener.
 - The questioner asks two questions: one chosen from the speaker's bank, one of their own.
@@ -91,9 +93,7 @@ This section is yours. You do not have to share it.
 2. Which question in your bank do you most hope nobody asks? What would it reveal?
 3. What would you need to know, or do, to answer it in 40 seconds?
 
-## Peer check and exit ticket
-
-Swap only your question bank. Your partner adds one question you did not think of.
+## Exit ticket
 
 Exit ticket: "The question I will rehearse aloud is ___. I will ask ___ to put it to me by
 ___ (date)."

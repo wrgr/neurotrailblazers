@@ -27,6 +27,7 @@ CONTENT_GLOBS = [
   "teaching/sessions/*.md",
   "teaching/lectures/*.md",
   "teaching/pathways/*.md",
+  "teaching/syllabi/*.md",
   "modules/slides/*.md",
   "core/*.md",
   "modes/*.md",

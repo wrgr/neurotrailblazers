@@ -28,6 +28,7 @@ content_type: delivery
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
       <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/teaching/pathways/' | relative_url }}" class="btn btn-secondary">Pathways Workshops</a>
+      <a href="{{ '/teaching/syllabi/' | relative_url }}" class="btn btn-secondary">Syllabus Maps</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
     </div>
@@ -43,7 +44,8 @@ content_type: delivery
     <h2>Find what you need</h2>
     <p><strong>Teaching connectomics for the first time?</strong> Start with
       <a href="{{ '/teaching/sequence/' | relative_url }}">four 90-minute sessions</a>:
-      Introduction, Synapse Detection, Tools and Methods, and Algorithms and Applications. Each has a timed plan,
+      Introduction, Synapse Detection, Tools and Methods, and Algorithms and Applications,
+      plus an optional fifth on Ethics and Governance. Each has a timed plan,
       slides, a learner worksheet and instructor model answers.</p>
     <p><strong>Presenting a lecture?</strong> Open the
       <a href="{{ '/technical-training/slides/' | relative_url }}">Presentation Decks</a>
@@ -58,6 +60,11 @@ content_type: delivery
       are ten 90-minute sessions on expectations, failure, direction, networks,
       communication, credit, conduct, belonging and next steps. Each has a timed plan,
       a worksheet built on an invented case, and model responses.</p>
+    <p><strong>Planning a quarter or semester?</strong> The
+      <a href="{{ '/teaching/syllabi/' | relative_url }}">syllabus maps</a> lay out 10-week
+      and 16-week courses week by week from the lecture sessions, technical units,
+      module kits and Pathways workshops, with pre-work, an artifact and feedback
+      criteria for every meeting.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
       Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
       It covers why at least half of contact time has to be learner judgment rather than

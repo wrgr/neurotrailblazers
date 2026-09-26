@@ -55,11 +55,26 @@ Recommended order for the remaining site/content work:
    85 fragments, smoke, layout and a 243-slide overflow/image check pass. Merged to
    main or deployed: not yet. Owner decisions (hemibrain licence conflict, unsourced
    heuristics, BossDB hosting list) are listed in the audit README.)*
-2. [ ] **Finish instructor packaging.** Give Ethics and Governance the same timed
+2. [x] **Finish instructor packaging.** Give Ethics and Governance the same timed
    plan, activity and model-response treatment; then draft 10-week and 16-week
    syllabus mappings using the existing four-session block and technical units.
    Place the Pathways workshops in both mappings at their MERIT-stage points. Done
    when every session has prerequisites, an artifact, feedback criteria and links.
+   *(26 September, `compass-workshops`: Ethics and Governance now has a selected-slide
+   90-minute plan (31-slide deck), an invented-release worksheet and model responses,
+   and runs as optional Session 5 of the short sequence. `teaching/syllabi/` holds a
+   10-week map (20 meetings, 30 h contact, ~30 h outside; three Pathways workshops)
+   and a 16-week map (32 meetings, 48 h contact, ~44 h outside; eight workshops at
+   their MERIT points). Every meeting lists pre-work with minutes, an artifact,
+   feedback criteria and links; grading weights are labeled suggestions. The
+   real-data slot is marked planned with the offline fallback. Linked from the
+   Teaching menu, Teaching Hub, sequence page and Pathways hub; smoke and layout
+   suites cover the new pages. Nine gates, full build, links, 148 fragments pass.)*
+5. [ ] **Publish or retire the missing kit files (M).** The syllabus pass found that
+   the Module 03–07 and 09–11 session kits name sample files, notebooks or patch sets
+   ("provided") that the site does not publish, so both maps route around them. Either
+   publish those files under `assets/` with a manifest check, or rewrite each kit's
+   materials list to what exists. Done when every kit's named materials resolve.
 3. [ ] **Model answers and assessment.** Start the 25-module key backlog with
    modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank
    aligned to the four lecture outcomes, with worked answers and misconception

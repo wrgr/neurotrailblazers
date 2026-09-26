@@ -18,8 +18,10 @@ use_layout_hero: false
 **Teaching a short block?** Use [the short lecture sequence]({{ '/teaching/sequence/' | relative_url }}):
 Introduction to Connectomics, Synapse Detection, Tools and Methods, then Algorithms
 and Applications, each with a 90-minute
-plan, worksheet and model responses. That short sequence is separate from the
-three-lecture graduate course described below.
+plan, worksheet and model responses. An optional fifth session,
+[Ethics and Governance]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}),
+covers licences, human tissue and proofreading credit. That short sequence is separate
+from the three-lecture graduate course described below.
 
 Three complete graduate lectures on nanoscale connectomics, released for anyone to
 teach. Each is roughly 150 minutes of material in three parts of about 50 minutes, with

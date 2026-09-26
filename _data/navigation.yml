@@ -51,6 +51,8 @@ items:
         url: "/teaching/sessions/"
       - title: "Professional Pathways Workshops"
         url: "/teaching/pathways/"
+      - title: "Course Syllabus Maps"
+        url: "/teaching/syllabi/"
       - title: "Facilitator Guide"
         url: "/teaching/facilitator-guide/"
   - title: "Tools"

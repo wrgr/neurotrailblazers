@@ -4,13 +4,14 @@ title: "Teach a four-session connectomics block"
 permalink: /teaching/sequence/
 slug: teaching-sequence
 content_type: delivery
-description: "Four 90-minute sessions on structural claims, synapse quality, reproducible methods and graph inference."
+description: "Four 90-minute sessions on structural claims, synapse quality, reproducible methods and graph inference, plus an optional ethics and governance session."
 ---
 
 Start here if you want to teach a small connectomics block now. These **four 90-minute
 sessions** use existing decks with selected slides, activities, instructor cues and
 model responses. They do not replace the full nine-unit Technical Course or the
-three-lecture EN.585.781 sequence.
+three-lecture EN.585.781 sequence. An optional fifth session on ethics and
+governance follows the core block.
 
 ## Session 1: Introduction to Connectomics
 
@@ -75,6 +76,19 @@ and the exact census are supplied on the worksheet. No accounts are needed.
 
 This is Session 4 here, but Lecture 3 / Module 9 in the original graduate course.
 
+## Session 5 (optional): Ethics and Governance
+
+**Question:** What must you check before you reuse, release or credit connectome data?
+
+Learners audit real dataset licences for an invented data release, including a
+licence conflict to record rather than resolve, then answer human-tissue questions,
+write a proofreading-credit rule and draft a data-use statement. It can stand alone;
+no accounts, data or coding are needed, and it is not legal advice.
+
+- [Timed plan, instructor cues and slides]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }})
+- [Learner worksheet]({{ '/teaching/lectures/ethics-and-governance-activity/' | relative_url }})
+- [Instructor model responses]({{ '/teaching/lectures/ethics-and-governance-answers/' | relative_url }})
+
 ## Preparation and pacing
 
 Open the selected decks before teaching. Keep the timed plan in a second tab or print it.
@@ -95,6 +109,8 @@ breaks: five hours, excluding lunch. For **all four**, allow 360 minutes of teac
 plus three 15-minute breaks: **6 hours 45 minutes**, excluding lunch. Two half-days
 are another option. The Session 1-to-2 reading remains advance work for a single-day
 event. Sessions 3 and 4 require no additional homework beyond bringing prior artifacts.
+Adding the optional Session 5 makes 450 minutes of teaching plus four 15-minute
+breaks: **8 hours 30 minutes**, better run as two half-days or a separate meeting.
 
 If discussion runs long, omit optional history slides before cutting the activity
 or its debrief. The learning evidence is the revised claim, not the number of slides shown.
@@ -104,8 +120,10 @@ or its debrief. The learning evidence is the revised claim, not the number of sl
 Use the final analysis card to choose a focused extension: a real dataset query,
 a proofreading exercise or an applications seminar. For hands-on depth, choose a
 [module session kit]({{ '/teaching/sessions/' | relative_url }}) after checking its
-prerequisites. These four packs are complete formative sessions;
-semester-length syllabus maps and model answers for all 25 modules remain separate work.
+prerequisites. These four packs and the optional fifth are complete formative sessions.
+To build a full course around them, use the [10-week and 16-week syllabus
+maps]({{ '/teaching/syllabi/' | relative_url }}). Model answers for all 25 modules
+remain separate work.
 
 [Teaching Hub]({{ '/teaching/' | relative_url }}) · [All presentation decks]({{ '/technical-training/slides/' | relative_url }})
 

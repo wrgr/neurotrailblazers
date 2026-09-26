@@ -381,6 +381,8 @@ Three things this page can state without hedging.
 - Graduate lecture: [Connectomics ethics and governance]({{ '/course/decks/marp/out/lectures/ethics-and-governance.html' | relative_url }})
   — this page as a 31-slide presentation deck with speaker notes, CC BY-SA 4.0
   ([source]({{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md)).
+- [90-minute teaching package]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }})
+  — a timed plan, a licence-and-credit worksheet and model responses.
 
 ---
 

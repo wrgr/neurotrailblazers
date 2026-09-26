@@ -72,6 +72,10 @@ who did it and what happened. Each plan's opening names the follow-through from 
 session numbered before it. If you move a session, as the exceptions above suggest,
 open with the follow-through from whichever session your cohort ran last.
 
+**In a course.** The [syllabus maps]({{ '/teaching/syllabi/' | relative_url }})
+place three workshops in a 10-week quarter and eight in a 16-week semester,
+alongside the technical sessions.
+
 **A short version.** If you have three slots, run Orientation, The Resilient STEM
 Scholar and The Savvy Researcher. Those cover the three most expensive gaps: unstated
 expectations, misread failure, and credit handled too late.

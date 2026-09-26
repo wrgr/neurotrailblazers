@@ -66,7 +66,7 @@ and speaker notes as the decks above.
   <article class="card">
     <h3 class="card-title"><a href="{{ '/course/decks/marp/out/lectures/ethics-and-governance.html' | relative_url }}">Connectomics ethics and governance</a></h3>
     <p class="card-description">Human tissue: consent and de-identification &middot; licences &middot; dual use and credit for proofreading. 31 slides, from <a href="{{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}">Ethics and Governance</a>.</p>
-    <p><a href="{{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md">Markdown source</a></p>
+    <p><a href="{{ '/teaching/lectures/ethics-and-governance/' | relative_url }}">Teaching plan, worksheet and answers</a> · <a href="{{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md">Markdown source</a></p>
   </article>
 </div>
 

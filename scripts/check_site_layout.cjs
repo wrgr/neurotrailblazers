@@ -29,7 +29,8 @@ const routes = [
   '/tracks/career-and-community/', '/technical-training/',
   '/technical-training/proofreading-tutorials/', '/concepts/', '/side-quests/',
   '/open-problems/', '/modules/', '/teaching/', '/teaching/lectures/',
-  '/teaching/sessions/', '/tools/', '/ask-an-expert/', '/tools/connectome-quality/',
+  '/teaching/sessions/', '/teaching/pathways/', '/teaching/pathways/orientation-answers/',
+  '/tools/', '/ask-an-expert/', '/tools/connectome-quality/',
   '/about/', '/avatars/', '/avatars/undergradstudent/', '/models/', '/license/',
 ];
 

@@ -211,9 +211,9 @@ tracks:
         note: "The parts about conflict, belonging, and career mechanics are worth reading before you need them."
       - slug: hosted-workshop
         available: true
-        shape: "Modules 01, 02, 17, 19 and 22-25 have session kits. Every other session kit on the site also nominates one norm to name out loud, which is where most of this track's delivery actually happens."
-        start_url: /teaching/sessions/
-        start_label: "Browse session kits"
+        shape: "Ten Professional Pathways workshops, each a 90-minute session with a plan, worksheet and model responses. Modules 01, 02, 17, 19 and 22-25 also have session kits, and every other kit nominates one norm to name out loud."
+        start_url: /teaching/pathways/
+        start_label: "Open the Pathways workshops"
         note: "A norm named once in a technical session lands harder than a dedicated session on professional development."
       - slug: research-intensive
         available: false
@@ -245,7 +245,7 @@ tracks:
         module_hours: 8
         hours: 9
       - step: "Plan the next step deliberately"
-        do: "Modules 24-25 and the Future Forward material."
+        do: "Modules 24-25 and the Future Forward workshop."
         outcome: "A decision you can articulate, and a plan for learning outside a structured program."
         modules: [24, 25]
         module_hours: 9.5
@@ -269,6 +269,9 @@ tracks:
       - title: Program Models
         url: /models/
         summary: MERIT, CCR, and professional pathways workshop structures guiding NeuroTrailblazers training.
+      - title: Professional Pathways Workshops
+        url: /teaching/pathways/
+        summary: Ten 90-minute workshops with timed plans, worksheets and model responses.
       - title: Tools
         url: /tools/
         summary: Practical support resources including expert consultation and quality guidance.

@@ -49,6 +49,8 @@ items:
         url: "/teaching/lectures/"
       - title: "Session Kits"
         url: "/teaching/sessions/"
+      - title: "Professional Pathways Workshops"
+        url: "/teaching/pathways/"
       - title: "Facilitator Guide"
         url: "/teaching/facilitator-guide/"
   - title: "Tools"

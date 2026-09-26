@@ -175,6 +175,11 @@ exactly where conventional curricula are thinnest.
 | STEM Identity and Purpose | Do I belong here, and what would it mean if the answer is complicated? |
 | Future Forward | What comes next, and how do I decide rather than drift? |
 
+**Teach them.** Each workshop is packaged as a 90-minute session with a timed plan,
+a learner worksheet and model responses on the [Professional Pathways
+workshops]({{ '/teaching/pathways/' | relative_url }}) page. Communicating Science
+runs as two sessions, so the package has ten.
+
 **Why the "hidden curriculum" framing matters.** These are not soft skills appended to
 technical training. They are the operating knowledge that determines whether technical
 training converts into a career, and they are distributed unequally by background — some

@@ -100,6 +100,14 @@ async function main() {
     await follow('main a[href="/teaching/lectures/algorithms-and-applications-answers/"]');
     await page.waitForSelector('[id="1-graph-construction"]');
     await openGroup('Teaching');
+    await follow(`${menuGroup('Teaching')} a[href="/teaching/pathways/"]`);
+    assert.equal(await page.$$eval('main table a[href^="/teaching/pathways/"]', links => links.length), 10);
+    await follow('main a[href="/teaching/pathways/orientation/"]');
+    await follow('main a[href="/teaching/pathways/orientation-activity/"]');
+    assert((await page.$eval('main', element => element.textContent)).includes('The case below is invented'));
+    await follow('main a[href="/teaching/pathways/orientation-answers/"]');
+    await page.waitForSelector('#feedback-rubric');
+    await openGroup('Teaching');
     await follow(`${menuGroup('Teaching')} a[href="/technical-training/slides/"]`);
     await follow('main a[href="/course/decks/marp/out/lectures/synapse-detection.html"]');
     await page.waitForSelector('section');

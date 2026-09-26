@@ -13,6 +13,15 @@ Compass workshops belong to the user's other agent. Do not duplicate its worksho
 plans or edit Compass-owned material in this batch. Coordinate links to the shared
 lecture packages once that agent has a workshop sequence ready.
 
+**26 September, `compass-workshops` branch:** at the user's request, the ten
+Professional Pathways (formerly COMPASS) workshops are now packaged at
+`teaching/pathways/` in the lecture-package pattern: a timed 90-minute plan,
+an invented-case worksheet and public model responses with a local 0–2 rubric
+for each. Communicating Science runs as two sessions. The hub pairs them with
+MERIT stages; the Teaching nav, Teaching Hub, models page, Career and Community
+track and hidden-curriculum index link to it. Reconcile with any separate
+Compass workshop plan before merging.
+
 Recommended order for the remaining site/content work:
 
 1. [ ] **Release and evidence check.** Verify branch CI after the push, review the

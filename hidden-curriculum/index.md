@@ -131,6 +131,9 @@ five minutes, every time.** These pages are what you state.
 
 Practical moves:
 
+- **Use the packaged workshops.** The [Professional Pathways
+  workshops]({{ '/teaching/pathways/' | relative_url }}) turn these pages into ten
+  90-minute sessions, each with a timed plan, an invented case and model responses.
 - **Do not assign this section as optional reading.** "Optional" reads as "for people
   who are struggling" to exactly the learner who needs it, and they will not open it.
   Put one page in the required sequence and give it session time.

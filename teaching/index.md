@@ -27,6 +27,7 @@ content_type: delivery
       <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach a short lecture series</a>
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
       <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
+      <a href="{{ '/teaching/pathways/' | relative_url }}" class="btn btn-secondary">Pathways Workshops</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
     </div>
@@ -52,6 +53,11 @@ content_type: delivery
       page holding the prep checklist, run of show, materials, misconceptions to target,
       and rubric for a single module — assembled from pieces that used to live in five
       different places.</p>
+    <p><strong>Teaching the professional side of research?</strong> The
+      <a href="{{ '/teaching/pathways/' | relative_url }}">Professional Pathways workshops</a>
+      are ten 90-minute sessions on expectations, failure, direction, networks,
+      communication, credit, conduct, belonging and next steps. Each has a timed plan,
+      a worksheet built on an invented case, and model responses.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
       Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
       It covers why at least half of contact time has to be learner judgment rather than

@@ -1,7 +1,7 @@
 ---
 layout: dataset
-title: "Connectomics Datasets - Learning with Real Scientific Data"
-description: "Explore curated connectomics datasets from landmark studies including H01, MICrONS, FlyWire, Hemibrain, and more. Learn with the same data used by leading researchers."
+title: "Connectomics Datasets"
+description: "Eighteen public and planned connectomics datasets, from the 1986 C. elegans wiring diagram to FlyWire, H01 and MICrONS, each with what it is good for and what it does not support."
 permalink: /datasets/
 slug: index
 track: research-in-action
@@ -43,8 +43,8 @@ content_type: core
 
   <section class="section section-compact">
     <div class="card-gray text-center" style="max-width: 700px; margin: 0 auto;">
-      <p><strong>Learn with real scientific data from groundbreaking research.</strong></p>
-      <p>These pages collect datasets from landmark connectomics studies &mdash; H01, MICrONS, FlyWire, the hemibrain, and others &mdash; with links to the data portals, the papers behind them, and the site material that uses each one.</p>
+      <p><strong>Every dataset here is real, and every number on it names its source.</strong></p>
+      <p>These pages collect datasets from landmark connectomics studies, among them H01, MICrONS, FlyWire and the hemibrain. Each page links the data portal and the paper, and says what the data can and cannot support.</p>
     </div>
   </section>
 
@@ -82,8 +82,8 @@ content_type: core
 
   <section class="section">
     <h2>Connectomics timeline</h2>
-    <p>Every dataset in the catalogue, oldest first. Forty years separate the first complete
-    nervous system from the first complete adult brain.</p>
+    <p>Every dataset in the catalog, oldest first. Thirty-eight years separate the first complete
+    nervous system (1986) from the first complete adult brain (2024).</p>
     <div class="timeline">
       {% assign chronological = site.datasets | sort: "release_year" %}
       {% for dataset in chronological %}
@@ -113,82 +113,56 @@ content_type: core
   </section>
 
   <section class="section">
-    <h2>Dataset Categories</h2>
-    <p>Connectomics datasets vary in scope, species, and methodology. Understanding these categories helps you choose the right data for your learning goals.</p>
+    <h2>The datasets differ in how much of the network they contain</h2>
+    <p>Before you pick a volume, decide whether your question needs a whole nervous system, a
+    dense fragment, or a few traced cells. The answer rules most datasets in or out.</p>
 
     <div class="grid-md mt-2 mb-2">
       <div class="card-gray">
-        <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">By Species</h3>
+        <h3 style="color: var(--neural-blue); margin-bottom: 1rem;">Whole nervous systems or brains</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
-          <li><strong>C. elegans:</strong> Simple, complete nervous system (302 neurons)</li>
-          <li><strong>Drosophila:</strong> Complex invertebrate brain (~140,000 neurons)</li>
-          <li><strong>Mouse:</strong> Mammalian cortical circuits (thousands to millions of neurons)</li>
-          <li><strong>Human:</strong> Cortical samples (tens of thousands of neurons)</li>
+          <li><strong>C. elegans</strong> (White 1986; Witvliet 2021): 302 neurons, every one named</li>
+          <li><strong>FlyWire</strong>: 139,255 neurons in one adult fly brain</li>
+          <li><strong>BANC</strong>: a fly brain and nerve cord in one volume</li>
         </ul>
+        <p style="color: #4b5563; margin-top: 0.75rem;">Nothing is cut off at the edge, so degree and motif counts are not truncation artifacts.</p>
       </div>
 
       <div class="card-gray">
-        <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">By Resolution</h3>
+        <h3 style="color: var(--cerebral-purple); margin-bottom: 1rem;">Dense fragments</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
-          <li><strong>Synaptic:</strong> Individual synapses and connections</li>
-          <li><strong>Cellular:</strong> Complete neuronal morphologies</li>
-          <li><strong>Circuit:</strong> Functional neural networks</li>
-          <li><strong>Regional:</strong> Large-scale brain organization</li>
+          <li><strong>H01</strong> and <strong>MICrONS</strong>: about 1 mm³ of human and mouse cortex</li>
+          <li><strong>Hemibrain</strong>, <strong>MANC</strong>, <strong>FANC</strong>: large parts of a fly</li>
+          <li><strong>Kasthuri 2015</strong>: about 1,500 μm³, every object traced</li>
         </ul>
+        <p style="color: #4b5563; margin-top: 0.75rem;">Everything inside is reconstructed, but most mammalian neurons leave the volume.</p>
       </div>
 
       <div class="card-gray">
-        <h3 style="color: var(--synapse-green); margin-bottom: 1rem;">By Data Type</h3>
+        <h3 style="color: var(--synapse-green); margin-bottom: 1rem;">Targeted or sparse reconstructions</h3>
         <ul style="color: #4b5563; margin: 0; line-height: 1.8;">
-          <li><strong>Structural:</strong> Electron microscopy-based anatomy</li>
-          <li><strong>Functional:</strong> Calcium imaging or electrophysiology</li>
-          <li><strong>Multimodal:</strong> Combined structural and functional data</li>
-          <li><strong>Comparative:</strong> Multiple species or conditions</li>
+          <li><strong>Bock 2011</strong>, <strong>Lee 2016</strong>, <strong>Briggman 2011</strong>: cells chosen by their function</li>
+          <li><strong>Phelps 2021</strong>: the 507 limb motor neurons</li>
+          <li><strong>Larval zebrafish</strong>: myelinated axons only</li>
         </ul>
+        <p style="color: #4b5563; margin-top: 0.75rem;">Built to answer one question. Reusing them for another usually means tracing more yourself.</p>
       </div>
     </div>
   </section>
 
   <section class="section text-center">
-    <h2>Accessing These Datasets</h2>
-    <p>Most datasets are freely available through dedicated platforms. Each dataset entry above includes direct links to data portals, original publications, and popular press coverage where available.</p>
-    <div class="flex-center mt-2">
-
-    <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
-      <div class="dataset-header">
-        <h3><a href="{{ '/datasets/getting-started' | relative_url }}">Getting Started with Data</a></h3>
-        <div class="dataset-meta">
-          <span class="dataset-type">Start here</span>
-          <span class="dataset-status">Onboarding</span>
-        </div>
-      </div>
-      <p>The gap between "the data is public" and "I have a DataFrame" is where most new teams stall. This guide closes it: a four-level ladder from browser to imagery cutouts, the CAVE token walkthrough start to finish, version pinning, byte math, and a failure-signature table for when it breaks.</p>
-      <div class="dataset-actions">
-        <a href="{{ '/datasets/getting-started' | relative_url }}" class="btn btn-primary">Take the Ladder</a>
-        <a href="{{ '/open-problems/' | relative_url }}" class="btn btn-secondary">Open Problems On-Ramps</a>
-      </div>
-    </div>
-
-    <div class="dataset-card featured spotlight" style="text-align: left; margin: 2rem auto; max-width: 600px;">
-      <div class="dataset-header">
-        <h3><a href="{{ '/datasets/access' | relative_url }}">Accessing Public EM Datasets</a></h3>
-        <div class="dataset-meta">
-          <span class="dataset-type">Tutorials</span>
-          <span class="dataset-status">Resources</span>
-        </div>
-      </div>
-      <p>Curated example notebooks for downloading connectomics data from Google, the Allen Institute, Janelia, and bossDB — the notebook collection behind the getting-started ladder.</p>
-      <div class="dataset-actions">
-        <a href="{{ '/datasets/access' | relative_url }}" class="btn btn-primary">View Notebooks</a>
-      </div>
-    </div>
-
+    <h2>Most of these datasets need no account to browse</h2>
+    <p>Each dataset page links its portal and paper, and states its license where the
+    provider publishes one. The two guides at the top of this page cover credentials,
+    clients and notebooks. The main portals:</p>
     <div style="margin: 2rem 0;">
-      <a href="https://bossdb.org/projects" class="btn btn-primary" target="_blank" style="margin: 0.5rem;">Browse BossDB</a>
-      <a href="https://h01-release.storage.googleapis.com/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">H01 Portal</a>
-      <a href="https://www.microns-explorer.org/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">MICrONS Explorer</a>
-      <a href="https://flywire.ai/" class="btn btn-secondary" target="_blank" style="margin: 0.5rem;">FlyWire Codex</a>
+      <a href="https://bossdb.org/projects" class="btn btn-primary" target="_blank" rel="noopener" style="margin: 0.5rem;">Browse BossDB</a>
+      <a href="https://h01-release.storage.googleapis.com/landing.html" class="btn btn-secondary" target="_blank" rel="noopener" style="margin: 0.5rem;">H01 release</a>
+      <a href="https://www.microns-explorer.org/" class="btn btn-secondary" target="_blank" rel="noopener" style="margin: 0.5rem;">MICrONS Explorer</a>
+      <a href="https://codex.flywire.ai/" class="btn btn-secondary" target="_blank" rel="noopener" style="margin: 0.5rem;">FlyWire Codex</a>
+      <a href="https://neuprint.janelia.org/" class="btn btn-secondary" target="_blank" rel="noopener" style="margin: 0.5rem;">neuPrint</a>
     </div>
-</div>
+    <p>For a first analysis on real data with a pinned version, try the
+    <a href="{{ '/notebooks/microns-lab/' | relative_url }}">MICrONS real-data lab</a>.</p>
   </section>
 </div>

@@ -23,16 +23,6 @@ tags:
   - methodology:data-management
   - connectomics:materialization
 micro_lesson_id: ml-infra-provenance
-reference_images:
-  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/provenance-chain.png
-    alt: "Provenance chain from raw acquisition through processing to published connectome"
-    caption: "Provenance chain: each processing step records input versions, parameters, software version, and output hash for reproducibility."
-  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/cave-materialization.png
-    alt: "CAVE materialization concept showing snapshot versions of a dynamic segmentation"
-    caption: "CAVE materialization: periodic snapshots freeze the segmentation state so analyses reference a specific version, enabling reproducible queries."
-  - src: /assets/images/content-library/infrastructure/provenance-and-versioning/version-timeline.png
-    alt: "Timeline showing dataset versions with branching and materialization points"
-    caption: "Version timeline: each materialization creates a citable snapshot while the live segmentation continues to evolve with proofreading edits."
 combines_with:
   - reconstruction-pipeline
   - data-formats
@@ -42,7 +32,7 @@ content_type: core
 
 ## Overview
 
-A connectome is not a static object. It evolves continuously as proofreaders correct errors, new segmentation models are applied, annotations are added, and analyses reveal regions needing further review. Without rigorous version control and provenance tracking, it becomes impossible to reproduce a published result, diagnose an unexpected finding, or compare analyses performed at different times.
+A connectome changes after release. Proofreaders correct errors, new segmentation models are applied, annotations are added, and analyses reveal regions that need another look. Without version control and provenance tracking you cannot reproduce a published result, diagnose an unexpected finding, or compare analyses run at different times.
 
 This document covers the principles and practical systems for maintaining data lineage in connectomics.
 
@@ -52,18 +42,18 @@ This document covers the principles and practical systems for maintaining data l
 
 ### The reproducibility challenge
 
-Consider this scenario: A paper published in 2024 reports that a specific circuit motif is enriched 3.2× in mouse visual cortex. In 2025, another group queries the same dataset and finds only 1.8× enrichment. Is the difference:
+Consider this invented scenario: A paper reports that a specific circuit motif is enriched 3.2× in a fictional mouse cortex volume, release T32. A year later, another group queries the same volume and finds only 1.8× enrichment. Is the difference:
 
 (a) A real scientific disagreement about methods?
-(b) A change in the underlying data — proofreading corrections since 2024 altered the graph?
+(b) A change in the underlying data — proofreading corrections since release T32 altered the graph?
 (c) A difference in which version of the synapse detection was used?
 (d) A software bug in one of the analyses?
 
-Without provenance, answering this question requires extensive detective work. With provenance, you can immediately identify which data version, segmentation version, and synapse detection version each analysis used, and pinpoint where results diverged.
+Without provenance, answering this takes detective work and may be impossible. With provenance, you can see which data version, segmentation version and synapse detection version each analysis used, and find where the results diverged.
 
 ### The FAIR principle applied to connectomics
 
-Connectomics data should be **F**indable, **A**ccessible, **I**nteroperable, and **R**eproducible (Wilkinson et al. 2016). Provenance is the backbone of reproducibility:
+Connectomics data should be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable (Wilkinson et al. 2016). Reuse depends on rich provenance, and provenance is also the backbone of reproducibility:
 
 - **Every analysis result** should cite the exact dataset version used
 - **Every dataset version** should record the processing pipeline that created it
@@ -76,13 +66,13 @@ Connectomics data should be **F**indable, **A**ccessible, **I**nteroperable, and
 
 ### Core architecture
 
-CAVE (Dorkenwald et al. 2022) is the most widely used versioning system for large-scale connectomics. It provides:
+CAVE (Dorkenwald et al. 2025) is the versioning system behind FlyWire, MICrONS and H01. It provides:
 
 1. **Chunked segmentation graph**: The segmentation is stored as a graph of supervoxels (small, atomically correct fragments). Proofreading edits (merges and splits) are graph operations — adding or removing edges between supervoxels. The segmentation volume itself is never rewritten.
 
 2. **Annotation tables**: Synapses, cell-type labels, and other annotations are stored in database tables with spatial coordinates. Each annotation records which segment it belongs to (via the supervoxel it falls within).
 
-3. **Materialization**: Periodically (daily to weekly), CAVE takes a snapshot ("materialization") that freezes the state of the segmentation graph and all annotation tables. A materialization version is a complete, self-consistent view of the connectome at a specific point in time.
+3. **Materialization**: Periodically (on a schedule set for each dataset), CAVE takes a snapshot ("materialization") that freezes the state of the segmentation graph and all annotation tables. A materialization version is a complete, self-consistent view of the connectome at a specific point in time.
 
 ### How materialization works
 
@@ -91,7 +81,7 @@ When you "materialize" at version N:
 - All annotations are updated: each annotation's segment ID is recomputed based on the version-N segmentation.
 - The result is a table where every synapse, every cell label, and every segment is consistent — as if the entire dataset were re-segmented from scratch with all proofreading edits applied.
 
-**Key insight:** Materialization decouples the time of analysis from the time of proofreading. You can always go back to a specific materialization version and get the exact same results.
+Materialization decouples the time of analysis from the time of proofreading. While a materialization version is available, a query against it returns the same results. Versions do not last forever: MICrONS archives most versions after a year or two and keeps a few "major analysis versions" (943 and 1300 for `minnie65_public`) longer. The static exports of a version outlive its live CAVE service.
 
 ### Practical usage
 
@@ -108,15 +98,16 @@ synapses = client.materialize.synapse_query(
     materialization_version=mat_version
 )
 
-# This query will return the same results today, tomorrow, and in 5 years
-# regardless of subsequent proofreading edits
+# This query returns the same results for as long as version 943 stays
+# available, regardless of subsequent proofreading edits.
+# Check client.materialize.get_versions() before relying on a version.
 ```
 
 ### Projects using CAVE
 
-- **FlyWire** (Dorkenwald et al. 2024): Entire Drosophila brain, ~140K neurons
-- **MICrONS** (minnie65, minnie35): Mouse visual cortex volumes
-- **Allen Institute** datasets: Multiple mouse brain regions
+- **FlyWire** (Dorkenwald et al. 2024): the whole adult *Drosophila* brain, 139,255 neurons
+- **MICrONS** (`minnie65_public`): about 1 mm³ of mouse visual cortex
+- **H01** (Shapson-Coe et al. 2024): about 1 mm³ of human temporal cortex, where CAVE hosts community proofreading
 
 ---
 
@@ -144,7 +135,7 @@ For every computational step in the reconstruction pipeline:
 
 **Option 3: Workflow managers** — Tools like Nextflow, Snakemake, or Airflow automatically track input/output dependencies and record execution metadata. Best for reproducible pipeline execution.
 
-**Recommended practice:** Combine all three. Workflow manager for execution tracking, inline metadata for self-describing outputs, and a database for cross-pipeline queries.
+**Recommended practice:** Combine all three: a workflow manager for execution tracking, inline metadata for self-describing outputs, and a database for cross-pipeline queries.
 
 ---
 
@@ -161,34 +152,36 @@ Every analysis script, notebook, or pipeline used to generate a figure or result
 
 ### Docker/container reproducibility
 
-For maximum reproducibility, package the entire analysis environment as a Docker container:
+To pin the whole environment, package the analysis as a Docker container. The
+versions below show the pattern; pin the ones you actually ran (caveclient 8.2.1 was
+the latest on PyPI on 26 September 2026):
 
 ```dockerfile
 FROM python:3.11-slim
-RUN pip install caveclient==5.15.0 networkx==3.2.1 numpy==1.26.2
+RUN pip install caveclient==5.14.0 networkx==3.2.1 numpy==1.26.2
 COPY analysis/ /app/analysis/
 ENTRYPOINT ["python", "/app/analysis/run_motif_search.py"]
 ```
 
-Record the Docker image hash alongside results. Anyone can re-run the analysis years later with the exact same environment.
+Record the Docker image hash alongside results. Anyone with the image can rebuild the same software environment later. The data is a separate question: the image does not keep a materialization version alive.
 
 ---
 
 ## Worked example: publishing a reproducible connectomics result
 
-**Scenario:** You're writing a paper showing that reciprocal connections between layer 2/3 pyramidal cells are 4.2× enriched relative to a degree-preserving null model.
+**Scenario:** You're writing a paper on whether reciprocal connections between layer 2/3 pyramidal cells are enriched relative to a degree-preserving null model. The sentences below are templates for wording, not reported results; the dataset, version and table names are real, and the bracketed parts are yours to fill.
 
 **Reproducibility checklist:**
 
-1. **Dataset version:** "All analyses used MICrONS minnie65_public, CAVE materialization version 943 (2025-01-15)."
-2. **Cell selection:** "Pyramidal cells identified using cell-type labels from the minnie65_public nucleus detection table, version 943."
+1. **Dataset version:** "All analyses used MICrONS minnie65_public, CAVE materialization version 943 (released January 2024; give the exact timestamp your client reports)."
+2. **Cell selection:** "Pyramidal cells identified using cell-type labels from the aibs_metamodel_celltypes_v661 table, version 943."
 3. **Synapse source:** "Synapses from the synapses_pni_2 table, materialized at version 943."
-4. **Thresholds:** "We defined connected pairs as those with ≥3 synapses (sensitivity analysis for thresholds 1-10 in Supplementary Figure S3)."
+4. **Thresholds:** "We defined connected pairs as those with ≥3 synapses (sensitivity analysis for thresholds 1-10 in [supplementary figure])."
 5. **Null model:** "Degree-preserving random rewiring (Maslov & Sneppen 2002), 10,000 randomizations, random seed 42."
 6. **Code:** "Analysis code available at github.com/lab/reciprocal-motifs, commit abc123."
 7. **Environment:** "Docker image lab/reciprocal-motifs:v1.0, sha256:def456."
 
-With this information, anyone can reproduce the exact result. Without any single element, reproducibility is compromised.
+With this information, anyone who can still reach version 943 or its static export can reproduce the result. Drop any one element and they cannot.
 
 ---
 
@@ -196,7 +189,7 @@ With this information, anyone can reproduce the exact result. Without any single
 
 | Misconception | Reality | Teaching note |
 |---|---|---|
-| "The connectome is finished" | Connectomes are living datasets — proofreading and annotation continue indefinitely | Always cite a specific version |
+| "The connectome is finished" | Proofreading and annotation continue after release, often for years | Always cite a specific version |
 | "Git for code is enough" | Code version means nothing without data version and environment version | Track all three together |
 | "Provenance is overhead" | Provenance prevents far more expensive problems: irreproducible results, retracted papers, wasted re-analysis | Build it into the pipeline from day one |
 | "We can always re-run the analysis" | If the data version has changed and you didn't record which version you used, re-running gives different results | Pin versions at analysis time, not after |
@@ -205,7 +198,7 @@ With this information, anyone can reproduce the exact result. Without any single
 
 ## References
 
-- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
 - Wilkinson MD et al. (2016) "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018.
 - Maslov S, Sneppen K (2002) "Specificity and stability in topology of protein networks." *Science* 296(5569):910-913.

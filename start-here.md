@@ -78,29 +78,29 @@ content_type: navigation
 
     <section class="section">
         <h2 id="your-first-hour">Your first hour</h2>
-        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need a browser and, for step 3, nothing else.</p>
+        <p>Reading about connectomics and doing connectomics are different skills, and only the second one transfers. So rather than a reading list, here is a first hour that ends with something you have made. You need only a browser.</p>
 
         <div class="checklist-box">
             <h3>Sixty minutes, one artifact</h3>
             <div class="checklist">
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>0-10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
+                    <span><strong>0&ndash;10 min &mdash; Look at real data.</strong> Open any public volume in Neuroglancer via the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. Navigate somewhere arbitrary, not a curated view. Scroll through twenty consecutive sections and watch how structures appear and disappear.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>10-25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
+                    <span><strong>10&ndash;25 min &mdash; Find out why it looks like that.</strong> Read <a href="{{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}">Unit 03, section 1</a>, on the preparation chain. Then go back to the volume and find one thing from the artifact catalog in section 2.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>25-45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
+                    <span><strong>25&ndash;45 min &mdash; Make a judgment and test it.</strong> Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01, section 3</a>, on what structure can and cannot establish. Attempt its &ldquo;Check yourself&rdquo; questions <em>before</em> opening the answers &mdash; opening them first turns a test into re-reading, which feels productive and is not.</span>
                 </label>
                 <label class="checklist-item">
                     <input type="checkbox">
-                    <span><strong>45-60 min &mdash; Write the artifact.</strong> Do the Unit 01 lab: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. The last item is the one that matters, and it is the one most people leave blank.</span>
+                    <span><strong>45&ndash;60 min &mdash; Start the artifact.</strong> Begin the <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}#lab-write-a-study-brief-60-minutes">Unit 01 lab</a>: a one-page study brief with a biological question, three measurements with units, a null model, and one sentence you will refuse to write. Fifteen minutes gets the question and the refused sentence on paper; the full brief takes the lab's sixty. The refused sentence is the item that matters most, and the one most people leave blank.</span>
                 </label>
             </div>
-            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If you finish with an empty step 4, that is also information &mdash; it means you have not yet found the boundary of your evidence, which is exactly what Unit 01 exists to teach.</small></p>
+            <p class="mt-1"><small>If you finish with a brief you are willing to show someone, you are oriented. If the refused sentence is still blank, that is also information: you have not yet found the boundary of your evidence, and finding it is what Unit 01 teaches.</small></p>
         </div>
     </section>
 
@@ -108,31 +108,31 @@ content_type: navigation
     {% include ui/technical-track-roadmap.html %}
 
     <section class="section">
-        <h2>Understanding Our Structure</h2>
+        <h2>How the site is organized</h2>
 
         <h3>Core with tracks</h3>
         <p>The site has two layers, and telling them apart saves a lot of wandering.</p>
         <ul class="mb-2" style="margin-left: 2rem;">
             <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
             <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</a></strong> Each selects from the core, sequences it, and adds labs that end in an artifact. There are three tracks, aligned to the Fadel dimensions of Knowledge, Skills, Character, and Meta-learning.</li>
-            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</a></strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
+            <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</a></strong> Self-study and hosted workshop both exist today. A third, a research-intensive program where learners contribute to live projects, is described on that page but is not built yet.</li>
         </ul>
         <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
 
-        <h3>Key Datasets</h3>
-        <p>Learn with real scientific data from landmark studies:</p>
+        <h3>Three datasets you will meet early</h3>
+        <p>The units return to these public volumes again and again. The <a href="{{ '/datasets/' | relative_url }}">dataset catalog</a> has the rest, with what each can and cannot answer.</p>
         <div class="grid-sm mt-1 mb-1">
             <div class="card-gray">
-                <strong>Kasthuri et al. 2015</strong><br>
-                <small>Mouse visual cortex</small>
+                <strong><a href="{{ '/datasets/catalog/kasthuri-2015/' | relative_url }}">Kasthuri et al. 2015</a></strong><br>
+                <small>A small block of mouse neocortex, every object reconstructed</small>
             </div>
             <div class="card-gray">
-                <strong>MICrONS 2025</strong><br>
-                <small>Large-scale mouse brain</small>
+                <strong><a href="{{ '/datasets/catalog/microns/' | relative_url }}">MICrONS 2025</a></strong><br>
+                <small>About 1 mm&sup3; of mouse visual cortex, with calcium imaging</small>
             </div>
             <div class="card-gray">
-                <strong>FlyWire 2024</strong><br>
-                <small>Complete fly brain</small>
+                <strong><a href="{{ '/datasets/catalog/flywire/' | relative_url }}">FlyWire 2024</a></strong><br>
+                <small>Whole adult fly brain, 139,255 neurons</small>
             </div>
         </div>
 
@@ -208,13 +208,13 @@ content_type: navigation
             </div>
         </div>
 
-        <p>Each avatar includes a backstory, visible successes, and a setback — offering a relatable entry point for diverse learners.</p>
+        <p>Each full story includes a setback as well as a success, because the setback is usually where the useful advice is.</p>
         <p><em>Inspired by stories like those described in <a href="https://www.molbiolcell.org/doi/10.1091/mbc.E24-09-0416">When Life Gets in the Way of Science</a></em></p>
     </section>
 
     <section class="section">
         <h2>Our Educational Framework</h2>
-        <p>The program is built on three evidence-based models &mdash; the MERIT mentoring stages, the Professional Pathways workshops, and the CCR development dimensions. The <a href="{{ '/models/' | relative_url }}">program models page</a> summarizes them, and the <a href="{{ '/models/' | relative_url }}">models-in-practice playbook</a> shows what each stage looks like when it is working and the failure mode it exists to prevent.</p>
+        <p>The program runs on three models: the MERIT mentoring stages, the Professional Pathways workshops, and the CCR development dimensions. The <a href="{{ '/models/' | relative_url }}">program models page</a> takes MERIT stage by stage, with what the mentee produces, the failure mode each stage exists to prevent, and the evidence behind each choice. The ten workshops are packaged to teach, with plans, worksheets and model responses, at <a href="{{ '/teaching/pathways/' | relative_url }}">Professional Pathways workshops</a>.</p>
     </section>
 
     <section class="section">
@@ -267,7 +267,7 @@ content_type: navigation
 
     <section class="section">
         <h2>Getting unstuck</h2>
-        <p>Two things a page cannot give you, and where to find them:</p>
+        <p>When a page is not enough, here is where to go next:</p>
         <div class="cards-grid">
             <div class="card">
                 <div class="card-icon" aria-hidden="true">&#128172;</div>
@@ -288,8 +288,8 @@ content_type: navigation
     </section>
 
     <div class="text-center mt-4 mb-2">
-        <h2>Ready to Begin?</h2>
-        <p class="mt-1 mb-1" style="font-size: 1.2rem;">Choose your starting point and embark on your neuroscience adventure!</p>
+        <h2>Pick one thing and do it this week</h2>
+        <p class="mt-1 mb-1" style="font-size: 1.2rem;">If you are still unsure, do <a href="#your-first-hour">your first hour</a>. It ends with a draft you can show someone.</p>
         <div class="flex-center mt-2">
             <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">View Learning Tracks</a>
             <a href="{{ '/datasets/' | relative_url }}" class="btn btn-secondary">Explore Datasets</a>

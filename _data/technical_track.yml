@@ -1,8 +1,8 @@
 ---
 name: "Technical Course"
-course_positioning: "Canonical open connectomics course that complements the broader NeuroTrailblazers site."
+course_positioning: "An open connectomics course: nine units, from framing a question to analyzing the graph, plus a reference atlas. It sits alongside the rest of NeuroTrailblazers."
 status: "published"
-last_updated: 2026-08-20
+last_updated: 2026-09-26
 maintainer: NeuroTrailblazers Team
 modules:
   - slug: "01-why-map-the-brain"
@@ -125,7 +125,7 @@ modules:
       - module20
     mapping_note: "Overlaps modules 10, 13, 14, 15, and 20 across graph analysis, ML, CV, LLM, and inference; this unit focuses on motif analysis and null-model choice."
   - slug: "atlas-connectomics-reference"
-    summary: "A lookup table of the major datasets, tools, and reference figures - consulted when needed, not read in order."
+    summary: "A lookup table of the major datasets, tools and benchmarks, with the schema for adding entries. Consult it when needed; it is not read in order."
     title: "Atlas Connectomics Reference"
     status: "authored"
     primary_concepts:

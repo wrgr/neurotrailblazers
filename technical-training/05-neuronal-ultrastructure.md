@@ -34,8 +34,8 @@ judgments. Proofreading decisions rest on them. Every synapse count in every
 connectomics paper traces back to a human who decided that a particular smudge was a
 postsynaptic density.
 
-This unit teaches the actual visual cues, with sizes. Not "use organelle evidence" —
-*which* organelles, *how big*, and *what they rule out*.
+This unit teaches the visual cues with sizes: *which* organelles, *how big*, and *what
+they rule out*.
 
 ---
 
@@ -43,7 +43,7 @@ This unit teaches the actual visual cues, with sizes. Not "use organelle evidenc
 
 1. Name the major organelles visible in EM, with approximate sizes, and say which compartment each implies.
 2. Apply the three minimum criteria for calling a chemical synapse, and refuse to call one when a criterion is missing.
-3. Distinguish Gray type I from type II morphology and state the inference each licenses — and its limits.
+3. Distinguish Gray type I from type II morphology and state the inference each licenses, and its limits.
 4. Assign a calibrated confidence tier with a stated evidence chain.
 5. Diagnose your own errors by cue, not just by count.
 
@@ -63,18 +63,18 @@ This is the reference table. Sizes are approximate and vary with preparation, bu
 | **Synaptic cleft** | 20–30 nm (asymmetric); ~15–20 nm (symmetric) | Uniform-width gap with parallel membranes, often with faint cross-bridges | Between synaptic partners | Random appositions have variable-width gaps |
 | **Microtubule** | ~25 nm outer diameter | Tubule in longitudinal section; small ring in cross-section | Dendrites (abundant, in loose parallel arrays); axons (present, more regularly spaced) | Mature spine heads; most glial processes |
 | **Neurofilament** | ~10 nm | Fine filaments, often in bundles | Axons, especially myelinated | Spines |
-| **Mitochondrion** | 0.2–1 µm diameter, variable length | Double membrane with cristae | Everywhere except thin spine necks and the thinnest processes | — |
+| **Mitochondrion** | 0.2–1 µm diameter, variable length | Double membrane with cristae | Somata, dendritic shafts, axons and boutons | Most spines; the thinnest processes |
 | **Rough ER / polyribosomes** | Ribosome ~25 nm | Studded membrane sheets; ribosome rosettes | Soma, proximal dendrites, dendritic shafts | **Axons** — a workhorse discriminator |
 | **Golgi apparatus** | ~1 µm stack | Stacked flattened cisternae with vesicles | Soma, proximal dendrite | Axons |
 | **Smooth ER / spine apparatus** | Laminae ~30 nm | Tubules; in spines, stacked laminae with dense material between | Dendrites; spine apparatus in a minority of (mostly large) spines | — |
 | **Multivesicular body** | 200–500 nm | Membrane-bound body containing small internal vesicles | Everywhere; enriched in dendrites | — |
 | **Glycogen granule** | 20–30 nm | Very dark small particles, clustered | **Astrocytes** — near-diagnostic | Neurons |
-| **Myelin** | 10–20 lamellae | Regular concentric dark lamellae | Around myelinated axons | — |
-| **AIS undercoating** | ~20 nm dense layer | Granular density beneath the axolemma, plus fasciculated microtubules | Axon initial segment (~20–60 µm from soma), nodes of Ranvier | Everywhere else |
+| **Myelin** | A few to dozens of lamellae, more around larger axons | Regular concentric dark lamellae | Around myelinated axons | Dendrites |
+| **AIS undercoating** | Thin dense layer | Granular density beneath the axolemma, plus fasciculated microtubules | Axon initial segment (the first ~20–60 µm of the axon), nodes of Ranvier | Everywhere else |
 
-**The two highest-value entries** for a beginner are the ones in bold logic:
-*ribosomes rule out axon*, and *glycogen granules indicate astrocyte*. Those two facts
-alone resolve a large share of early-annotator confusion.
+**The two highest-value entries** for a beginner are the rough ER row and the glycogen
+row: *ribosomes rule out axon*, and *glycogen granules indicate
+astrocyte*. Those two facts settle many of the calls new annotators get stuck on.
 
 ### Check yourself
 
@@ -84,16 +84,16 @@ what look like a few ribosome rosettes. No vesicles, no PSD visible in this plan
 Best call, and what would raise your confidence?</summary>
 
 **Probable dendrite (or a proximal dendritic branch), medium confidence.** The
-ribosome rosettes are the strongest single cue — axons are effectively free of
-polyribosomes in standard EM connectomics practice, so their presence argues
-strongly against axon. The microtubules and mitochondrion are consistent but not
+ribosome rosettes are the strongest single cue. Axons are effectively free of
+polyribosomes as seen in connectomics EM, so their presence argues strongly against
+axon. The microtubules and mitochondrion are consistent but not
 discriminating; both compartments have them.
 
 To raise confidence, look for cues that are *independent* of the ribosome call:
 
 - Scroll through z and look for **spines** emerging from the process. A spine with a
   head and neck is close to definitive for dendrite.
-- Look for **incoming asymmetric synapses** where this process is postsynaptic — a
+- Look for **incoming asymmetric synapses** where this process is postsynaptic. A
   PSD *on this process* means it is receiving, which is dendritic (or somatic).
 - Follow the process toward larger caliber and check whether it thickens toward a
   soma. Dendrites taper with distance from soma; axons maintain caliber.
@@ -109,25 +109,29 @@ evidence. A ribosome plus a spine plus a taper is three.
 
 A chemical synapse in EM requires **all three**:
 
-1. **A presynaptic vesicle cluster** — a group of vesicles gathered at the membrane
+1. **A presynaptic vesicle cluster**: a group of vesicles gathered at the membrane
    facing the partner. Not scattered vesicles somewhere in the profile; clustered *at
    the apposition*.
-2. **A synaptic cleft** — parallel membranes with a consistent gap, wider than the
-   ~10–20 nm typical of casual membrane apposition, and of uniform width across the
-   contact.
-3. **A postsynaptic density** — a visible dark thickening on the receiving side.
+2. **A synaptic cleft**: parallel membranes with a gap of uniform width across the
+   contact, typically 15–30 nm (table above). Ordinary appositions can have
+   gaps of similar size, so uniform width and parallel membranes matter more than the
+   exact number.
+3. **A postsynaptic density**: a visible dark thickening on the receiving side.
 
 And a fourth practical requirement that experienced annotators treat as
 non-negotiable:
 
 4. **Persistence across sections.** The features should be visible on more than one
-   consecutive section. A single-section "synapse" at 40 nm z-resolution is one
-   sample of a structure that is typically 200–500 nm wide — if it is real, you should
-   see it two to five times.
+   consecutive section. A PSD is typically 200–500 nm across. When the sections cut
+   it edge-on at 40 nm each, a real one spans roughly 5 to 12 sections (200 ÷ 40 to
+   500 ÷ 40). A PSD lying nearly flat in the section plane shows up on only one or two,
+   as a dark patch seen face-on, so check for that before rejecting. A single-section
+   "synapse" seen edge-on is one sample of a structure that should have given you
+   several.
 
-> **The single most common beginner error** is calling a synapse from dark contrast
-> alone. Dark contrast at a membrane can be: a genuine PSD, a tangentially cut
-> membrane (very common — a membrane sliced obliquely looks thick and dark), staining
+> **The most common beginner error** is calling a synapse from dark contrast alone.
+> Dark contrast at a membrane can be a genuine PSD, a tangentially cut membrane (very
+> common: a membrane sliced obliquely looks thick and dark), staining
 > precipitate, a glial apposition, or a puncta adherens / adherens junction. Criterion
 > 1 is what separates these: **no vesicles, no synapse.**
 
@@ -163,7 +167,7 @@ type, which is usually the stronger evidence.
 below, the thickening is absent. One process contains a mitochondrion; neither shows a
 clear vesicle cluster. Call?</summary>
 
-**Not a synapse — do not annotate one.** Criterion 1 fails (no vesicle cluster) and
+**Not a synapse. Do not annotate one.** Criterion 1 fails (no vesicle cluster) and
 criterion 4 fails (not persistent).
 
 The most likely explanations are a tangentially sectioned membrane or a
@@ -180,7 +184,7 @@ Negative calls are data. An annotator who never says "no" is not calibrated.
 a spine head, and *also* contacts a nearby dendritic shaft with a thin symmetric
 density. What is going on?</summary>
 
-Most likely the second contact is not a synapse from this bouton — check for a
+Most likely the second contact is not a synapse from this bouton. Check for a
 vesicle cluster at *that* apposition specifically. A single terminal's vesicle pool
 can sit near several membranes; only the apposition with an adjacent vesicle
 cluster and a cleft counts.
@@ -188,7 +192,7 @@ cluster and a cleft counts.
 If a vesicle cluster genuinely is present at both, you have a **multi-synaptic
 bouton**, which is real and common. Note that one terminal making both an
 asymmetric contact onto a spine and a symmetric contact onto a shaft would be
-unusual and worth flagging for expert review — it may indicate a **merge error**
+unusual and worth flagging for expert review. It may indicate a **merge error**
 that has fused two different axons into one object. This is a good example of
 ultrastructural reading catching a segmentation error: the biology looks wrong, so
 suspect the segmentation.
@@ -198,7 +202,7 @@ suspect the segmentation.
 
 ## 3. Compartment cues: a decision protocol
 
-Work in this order. The order matters — cheap, reliable cues first.
+Work in this order: cheap, reliable cues first.
 
 **Step 1 — Local geometry.** Diameter and its variation. Boutons are swellings
 connected by thin intervaricose segments; dendritic shafts have relatively smooth
@@ -217,7 +221,7 @@ overturned. Scroll. A process that looked like a bouton may be a dendritic varic
 a "vesicle cluster" may be a tangential slice through something else.
 
 **Step 5 — Neighborhood.** What is around it? An axon in a myelinated bundle, a
-process wrapping a capillary, a profile inside a glial sheath — context frequently
+process wrapping a capillary, a profile inside a glial sheath. Context frequently
 settles calls that local features cannot.
 
 **Step 6 — Assign confidence with a stated evidence chain.**
@@ -233,7 +237,7 @@ count and independence*, not by feeling:
 | **Medium** | 1 strong cue, or ≥ 2 non-independent cues; continuity checked but partially ambiguous | Vesicle cluster present, PSD unclear on the partner |
 | **Uncertain** | Cues conflict, or the decisive cue is not visible in available sections | Process crosses a fold; identity plausible but unverifiable |
 
-**"Uncertain" is a valid and valuable output.** A dataset in which 8% of calls are
+**"Uncertain" is a valid and valuable output.** A dataset in which, say, 8% of calls are
 flagged uncertain with reasons is more useful than one in which 100% are forced,
 because the uncertain set is exactly the training and review priority queue. The
 uncertain rate per region is also the best available proxy for local data difficulty
@@ -258,11 +262,11 @@ Genuinely independent cue families:
 2. Organelle content (presence and absence)
 3. Synaptic role
 4. Neighborhood and tissue context
-5. Long-range continuity — where the process *goes*
+5. Long-range continuity: where the process *goes*
 
 **Rule for high confidence: two cues from different families.** This single rule does
 more for annotation quality than any amount of exhortation to "be careful", because it
-is checkable — a reviewer can look at an evidence chain and see whether it draws on
+is checkable: a reviewer can look at an evidence chain and see whether it draws on
 one family or two.
 
 ### Worked example: a full evidence chain
@@ -271,8 +275,8 @@ one family or two.
 > round clear vesicles and one mitochondrion, apposed to a bulbous ~600 nm profile.
 
 **Family 1 (geometry):** the small process swells locally and narrows on either side
-across z — a bouton on an intervaricose segment. The partner is bulbous with a narrow
-attachment visible two sections down — a spine head on a neck.
+across z: a bouton on an intervaricose segment. The partner is bulbous with a narrow
+attachment visible two sections down: a spine head on a neck.
 
 **Family 2 (organelles):** round clear vesicles clustered at the apposition. No
 ribosomes in the small process. The spine head contains no microtubules and shows a
@@ -282,10 +286,10 @@ faint spine apparatus.
 uniform width; visible across four consecutive sections.
 
 **Family 4 (context):** several other boutons in the neighborhood contact spines
-similarly — consistent with normal excitatory neuropil, not with an artifact region.
+similarly, which fits normal excitatory neuropil rather than an artifact region.
 
 **Call:** presynaptic axonal bouton making a type I synapse onto a dendritic spine
-head. **Confidence: high** — families 1, 2, and 3 agree independently, and continuity
+head. **Confidence: high.** Families 1, 2 and 3 agree independently, and continuity
 is confirmed over four sections.
 
 **Inference licensed:** putatively excitatory (asymmetric morphology; sign inferred,
@@ -298,36 +302,36 @@ presynaptic cell without tracing the axon to a soma.
 
 ## Visual training set
 
-Work these panels with the organelle table in §1 open, and name the cue family behind every call you make. They are stills, and single-plane inspection is precisely the habit this unit exists to break — step 4 of the protocol overturns more calls than any other. Treat the panel as a reference for what a cue looks like, and do your actual calling in a volume you can scroll through z.
+Work these panels with the organelle table in §1 open, and name the cue family behind every call you make. They are stills, and single-plane inspection is the habit this unit exists to break: step 4 of the protocol, continuity across sections, is where most single-plane calls get overturned. Treat the panel as a reference for what a cue looks like, and do your actual calling in a volume you can scroll through z.
 
 <div class="cards-grid">
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png' | relative_url }}" alt="Ultrastructure training visual: neuron structure overview" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S04:</strong> Neuron structure at the compartment level. Use it to fix vocabulary before you meet anything ambiguous: for each compartment, recall from §1 which organelles you would expect present and, more usefully, which would be absent. Ribosomes ruling out axon is the highest-value entry in that table.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S04-01.png' | relative_url }}" alt="Schematic neuron with cell body, dendrites, an axon labeled as less than 1 mm to more than 1 m long, and terminal branches ending in nerve terminals" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S04:</strong> A textbook neuron: cell body, dendrites, one axon (under 1 mm to over 1 m long) and its terminal branches. Use it to fix vocabulary before you meet anything ambiguous. For each compartment, recall from §1 which organelles you would expect present and, more usefully, which would be absent. Ribosomes ruling out axon is the highest-value entry in that table.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png' | relative_url }}" alt="Ultrastructure training visual: dendritic context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S08:</strong> A somatic region — nuclear envelope with heterochromatin above, one long mitochondrion below. Use it to anchor the soma end of the compartment table in §1: rough ER and a nucleus put you in a cell body, and that is the one place where the ribosome cue is unambiguous rather than a judgment call.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S08-01.png' | relative_url }}" alt="Electron micrograph of part of a cell body: nucleus with dark heterochromatin at the top and one long mitochondrion with cristae below it" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S08:</strong> A somatic region: nucleus with heterochromatin above, one long mitochondrion below. Use it to anchor the soma end of the compartment table in §1. A nucleus puts you in a cell body without any judgment call; everywhere else, compartment identity has to be argued from cues.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Ultrastructure training visual: synapse cues" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S09:</strong> The synapse cue set. Hold anything you would call to all three criteria in §2: a vesicle cluster at the apposition itself, a cleft of uniform width, and a density on the receiving side. Dark contrast alone is the commonest beginner error — no vesicles, no synapse.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S09-01.png' | relative_url }}" alt="Low-magnification electron micrograph of neuropil: a myelinated axon in cross-section at top left, long processes cut lengthwise, and many dark mitochondria" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S09:</strong> Neuropil at low magnification: a myelinated axon in cross-section (top left), processes cut lengthwise, dark mitochondria throughout. Name what this field lets you call and what it does not. Myelin settles one profile as an axon. No synapse can be called here, because a vesicle cluster, a uniform cleft and a PSD (§2) are not resolvable at this zoom, and dark contrast alone is the commonest beginner error.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png' | relative_url }}" alt="Ultrastructure training visual: vesicle and organellar detail" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S10:</strong> Vesicles and organelles at annotation scale. Check size against §1 before naming anything — clear synaptic vesicles run 35–50 nm and dense-core vesicles 80–120 nm, so this is a measurement rather than an impression. Remember that vesicle shape is partly a fixation artifact and is not independent of vesicle visibility.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S10-01.png' | relative_url }}" alt="Electron micrograph with a large process in cross-section, its cytoplasm dotted with microtubules and holding several mitochondria, surrounded by many small round profiles" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S10:</strong> A large process in cross-section, dotted with microtubules and holding several mitochondria, among many small round profiles. Microtubules and mitochondria are consistent with a dendritic shaft, but both compartments have them (§1). Name the independent cue that would settle it: ribosomes inside, a PSD on its membrane, or a spine leaving it in a nearby section.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S14-01.png' | relative_url }}" alt="Ultrastructure training visual: comparative panel" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S14:</strong> A comparative panel. Use it for the discipline §4 calls the whole game: pick two features that differ between profiles and ask whether they come from different cue families or share a failure mode. Two cues that degrade together under poor staining are one cue.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S14-01.png' | relative_url }}" alt="Electron micrograph of neuropil with a profile packed with small round vesicles and a mitochondrion at left, among processes containing dark mitochondria" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S14:</strong> A vesicle-filled profile beside processes with dark mitochondria. Use it for the discipline §4 calls the whole game: pick two features that differ between profiles and ask whether they come from different cue families or share a failure mode. Two cues that degrade together under poor staining are one cue.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png' | relative_url }}" alt="Ultrastructure training visual: ambiguity case" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S20:</strong> A two-panel reference — an EM micrograph with a 1&nbsp;µm scale bar beside a labeled schematic naming presynaptic terminal, presynaptic and postsynaptic membranes, cleft, vesicles, and the postsynaptic dendrite. Read the schematic first, then find each labeled part in the micrograph beside it. That translation — idealized diagram to real noisy tissue — is the step §2's three criteria have to survive.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png' | relative_url }}" alt="Two panels: an electron micrograph with a 1 micrometre scale bar, and a labeled schematic of a presynaptic terminal, vesicles, cleft and postsynaptic dendrite" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S20:</strong> A two-panel reference: an EM micrograph with a 1&nbsp;µm scale bar beside a labeled schematic naming presynaptic terminal, presynaptic and postsynaptic membranes, cleft, vesicles and the postsynaptic dendrite. Read the schematic first, then find each labeled part in the micrograph. That translation, from idealized diagram to noisy tissue, is the step §2's three criteria have to survive.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png' | relative_url }}" alt="Ultrastructure training visual: advanced structural example" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example — geometry, organelle content, synaptic role, neighborhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
+    <img src="{{ '/assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S24-01.png' | relative_url }}" alt="High-magnification electron micrograph of a vesicle-filled terminal with a dark membrane density at lower left and a dark ring-shaped structure at right" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>RIV-ULTRA S24:</strong> An advanced case for review. Build a full evidence chain in the form of the §4 worked example (geometry, organelle content, synaptic role, neighborhood) and stop at the point where the chain would need continuity across sections that a single still cannot supply.</p>
   </article>
 </div>
 
@@ -350,11 +354,11 @@ segmentation QC. It deliberately contains borderline cases.
 **Outputs:** consensus annotation sheet; disagreement log with counts by type; one
 rubric revision with rationale.
 
-**Why step 5 matters.** Vocabulary mismatch is usually the largest category on a first
-run, and it is entirely fixable by better protocol wording. Teams that run this loop
-two or three times typically see inter-annotator agreement rise substantially without
-anyone becoming a better microscopist — the gain comes from the protocol, not the eye.
-That is the scalability lesson of this unit.
+**Why step 5 matters.** Vocabulary mismatch is often the largest category on a first
+run, and better protocol wording can fix it without anyone becoming a better
+microscopist. Run the loop two or three times and record inter-annotator agreement
+each round. Whatever gain you measure came from the protocol, not the eye, and that
+is the part of annotation quality that scales to a team.
 
 ---
 
@@ -381,7 +385,7 @@ one family is one cue.
 **Forcing labels.** Recover: define and reward the uncertain tier; track the uncertain
 rate per annotator as a calibration statistic, not a performance penalty.
 
-**Label drift along a long trace.** Recover: build in periodic re-checks — every N
+**Label drift along a long trace.** Recover: build in periodic re-checks. Every N
 micrometers of tracing, re-verify the compartment call from scratch rather than
 carrying the earlier decision forward.
 

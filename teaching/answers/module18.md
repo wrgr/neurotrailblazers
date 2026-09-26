@@ -14,7 +14,8 @@ sources, kept separate:
 
 - **The scenario's illustrative figures**: 4.2 million synapse rows, 120,000 segments,
   8,400 classified neurons, 12% below confidence 30, 35,000 small segments, 847 boundary
-  segments and 23 unmatched IDs. These are not measurements from a MICrONS release.
+  segments and 23 unmatched IDs. They describe a fictional mouse cortex volume, release T18,
+  and are not measurements from any real dataset.
   The key uses them for policy reasoning and the arithmetic they support.
 - **The [Module 18 kit]({{ '/assets/kits/module18/README.md' | relative_url }})**: 30,450
   synapse rows, 2,000 segments and 407 cell-type annotations, all synthetic. These tables
@@ -70,9 +71,10 @@ endpoints (286 distinct IDs) are missing from the segment table.
 
 **The scenario (illustrative units).** Candidates of 30 and 50. At 30, the scenario
 gives the effect: 504,000 rows removed and 3,696,000 retained. The effect at 50 cannot be
-computed from the scenario, which states only the fraction below 30. The module text
-calls a score above 50 common practice. Neither number is a universal rule, and a
-threshold does not transfer between tables with different score scales.
+computed from the scenario, which states only the fraction below 30. The module tells
+learners to take a recommended value from the dataset's documentation, and its run of
+show uses 50 as a challenge value ("Why 50 and not 40?"). Neither number is a universal
+rule, and a threshold does not transfer between tables with different score scales.
 
 **The kit (cleft score 0–255).** The kit makes the point concrete. After the integrity
 steps in section 3, the score histogram is bimodal. A low mode peaks at scores 32–39
@@ -187,7 +189,7 @@ Exclusion fails Gate C and would change the composition being analyzed.
 
 ### 5. Release note
 
-> **Input.** The scenario's export, cited as its stated materialization. Its figures are
+> **Input.** The scenario's export, cited as release T18 of the fictional volume. Its figures are
 > illustrative; the worked values come from the synthetic Module 18 kit tables
 > (`noisy_synapses.csv`, `segments.csv`, `cell_types.csv`), identified by file hash.
 >
@@ -239,16 +241,16 @@ Feedback for each error:
 
 - **“Raw data is always better.”** Ask: “Which artifact in the raw table would change
   your density estimate?” The question is how to clean transparently.
-- **There is one correct threshold.** Ask for the result at a second threshold. A
+- **There is one correct threshold, and finding it settles the question.** Ask for the result at a second threshold. A
   conclusion that holds at only one value is fragile. The scenario's 30 does not even
   land in the kit's trough.
-- **More filtering is always better.** Point to the retention table. Excluding boundary
+- **More filtering always gives cleaner, better data.** Point to the retention table. Excluding boundary
   cells changed composition.
-- **Git notes are enough.** Ask: “Which data version did this commit process?” Code
+- **Git history is enough provenance.** Ask: “Which data version did this commit process?” Code
   history without data lineage cannot reproduce the table.
-- **Documenting afterward is fine.** Ask for the row counts removed at each step. A
+- **Preprocessing can be documented after the analysis is finished.** Ask for the row counts removed at each step. A
   reconstructed log usually lacks them.
-- **Metrics without thresholds are QC.** Ask what action each metric triggers.
+- **Reporting QC metrics is quality control.** Ask what action each metric triggers.
 
 ## Session timing (facilitator reference)
 

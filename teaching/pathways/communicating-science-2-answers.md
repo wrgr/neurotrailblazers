@@ -17,9 +17,9 @@ acceptable wording. This page is public and suitable for formative feedback.
 
 | # | Type | What went wrong | Better |
 |---|---|---|---|
-| 1 | Clarification | Two minutes for a one-sentence question | "A frozen snapshot of the reconstruction, so the numbers don't shift while edits continue. Mine is version 1078." |
+| 1 | Clarification | Two minutes for a one-sentence question | "A frozen snapshot of the reconstruction, so the numbers don't shift while edits continue. Mine is release T12." |
 | 2 | Methods challenge | Defensive: asserts quality, names no evidence | See below |
-| 3 | Scope | Optimistic extrapolation | "No. This is anatomy in one mouse cortex. It says where synapses are, not what they do in any disease." |
+| 3 | Scope | Optimistic extrapolation | "No. This is anatomy in one mouse cortex volume. It says where synapses are, not what they do in any disease." |
 | 4 | Positioning, as a comment | Argued instead of thanking | "Thank you. Could you send me the reference? I'd like to compare the null models." |
 | 5 | "So what" | Over-conceded, then stopped with nothing | "Yes, the pattern is long described. What's new is a count against a stated null across every fully proofread axon, so the size of the effect is now a number people can test." |
 
@@ -40,16 +40,16 @@ easiest question, got the longest answer. That pattern is common and worth namin
 
 | Time | Slot | Notes |
 |---|---|---|
-| 0:00–0:45 | Question and stake | Where do inhibitory synapses land on excitatory cells? Location is what circuit models assume and rarely count. |
-| 0:45–1:45 | Data and method | One mouse, layer 2/3, v1078; 58 fully proofread axons; null keeps synapse counts, shuffles position. "Inhibitory" from synapse shape. |
+| 0:00–0:45 | Question and stake | Where do inhibitory synapses land on excitatory cells? Circuit models assume an answer; this counts it in one volume. |
+| 0:45–1:45 | Data and method | One fictional mouse cortex volume, layer 2/3, release T12; 58 fully proofread axons; null keeps synapse counts, shuffles position. "Inhibitory" from synapse shape. |
 | 1:45–3:45 | Result | 2.7× near the cell body, "consistent with" targeting. 2.1× on partly proofread axons, wider interval. |
 | 3:45–4:30 | Limitation and non-claim | Proofreading order could bias it. This does not show these synapses change firing. |
 | 4:30–5:00 | Next step | Compare early- and late-proofread stretches; ask a physiologist what would test function. |
 
 **Opener, about 40 seconds:** "Where do inhibitory synapses land on the cells they
-contact? Circuit models assume an answer and almost nobody has counted it at synapse
-resolution. I counted, and they land near the cell body almost three times more than
-chance. The obvious worry is that proofreaders fix those stretches first, so I'll show
+contact? Circuit models assume an answer. I counted them, synapse by synapse, in one
+volume, and they land near the cell body almost three times more often than chance.
+The obvious worry is that proofreaders fix those stretches first, so I'll show
 you the partly proofread neurons too."
 
 ## 3. Sample question bank

@@ -4,13 +4,13 @@ title: "Ethics and Governance: learner worksheet"
 permalink: /teaching/lectures/ethics-and-governance-activity/
 slug: ethics-and-governance-activity
 content_type: delivery
-description: "Audit licences, human-tissue questions and proofreading credit for an invented data release."
+description: "Audit licenses, human-tissue questions and proofreading credit for an invented data release."
 ---
 
-[Lecture and slides]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}) · [Teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+[Lecture and slides]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}) · [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 **34 minutes plus peer review.** Work in pairs. The team, project, startup and
-contributors below are **invented**. The dataset licences are real and are stated on
+contributors below are **invented**. The dataset licenses are real and are stated on
 slide 16 and the [reference page]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}).
 This is a planning exercise, not legal advice.
 
@@ -28,21 +28,21 @@ A draft README lists the H01 donor's age, sex, procedure, hospital and surgery y
 “for completeness.” Twelve people proofread for the project: two postdocs, one
 graduate student, six undergraduates in a course and three outside volunteers.
 
-## 1. Licence and terms audit (10 minutes)
+## 1. License and terms audit (10 minutes)
 
 Copy and complete this table for each dataset: MICrONS, H01, FlyWire v783, hemibrain.
 
-| Dataset | Data licence and where stated | May part A redistribute it? | May the startup use part B? | What must the release include? |
+| Dataset | Data license and where stated | May part A redistribute it? | May the startup use part B? | What must the release include? |
 |---|---|---|---|---|
 
 Which instrument governs a figure copied from the FlyWire *Nature* paper? The hemibrain
 sources disagree. Mark that row **unresolved** and write what you would do before
-release. Do not choose a licence by guesswork.
+release. Do not choose a license by guesswork.
 
 ## 2. Human tissue before reuse (8 minutes)
 
 Answer briefly. Where is H01's consent and approval information, and how will you
-record where you found it? Can a 4 nm voxel volume identify the donor? Which README
+record where you found it? Can an EM volume imaged at 4 nm pixels identify the donor? Which README
 fields would you remove, and what would a reuser lose? Does consent to “research use”
 clearly extend to part C's model training? Who would you ask? Rewrite this sentence
 from the draft paper: “Our model learns how the human cortex is organized.”
@@ -57,23 +57,23 @@ measured and when contributors are told. Say what the volunteers lose under your
 ## 4. A governance note (8 minutes)
 
 Draft a data-use statement of no more than 150 words for the release README. Include
-source licences and versions, required citations, the commercial-use position of each
+source licenses and versions, required citations, the commercial-use position of each
 part, the human-tissue provenance and its limits, and one open question for the
 institution's compliance office.
 
-**Peer review:** exchange notes. Check whether a reader could tell which licence
+**Peer review:** exchange notes. Check whether a reader could tell which license
 governs each part, whether any uncertainty was written as a settled fact, and whether
 the credit rule is dated before the work.
 
 **Exit ticket:** “One obligation this team must meet is ___; one question it cannot
 settle alone is ___, and it would ask ___.”
 
-**Success criteria:** data and article licences are distinguished; the hemibrain
+**Success criteria:** data and article licenses are distinguished; the hemibrain
 conflict is recorded, not resolved; human-tissue claims name the single donor; the
 credit rule is written before the work and names what each contributor loses.
 
 **Carry forward (optional, 3 minutes):** if you have a study brief from the four-session
-block, add your dataset's data licence and version, where its ethics statement is
+block, add your dataset's data license and version, where its ethics statement is
 (for human tissue) and how its proofreaders were credited.
 
 [Instructor model answers]({{ '/teaching/lectures/ethics-and-governance-answers/' | relative_url }})

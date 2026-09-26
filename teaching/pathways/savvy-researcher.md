@@ -42,13 +42,14 @@ own funding or authorship situation aloud.
 
 ## Timed plan and facilitator cues
 
-- **0–8 min:** follow-through from workshop 6: ask who had a senior person put a hard
-  question to them and what they were not expecting. Then tell one story of credit or
+- **0–8 min:** follow-through from Communicating Science II: ask who had a senior person
+  put a hard question to them and what they were not expecting. Take two answers. Then
+  tell one story of credit or
   funding you found out about too late. Ask: "When could you have asked, and whom?"
 - **8–20 min:** the machine on the board, three strands. Funding: an award goes to an
   institution, a PI is responsible, budget lines have end dates. Review: the editor
   decides; reviews advise. Credit: author positions, CRediT roles, and criteria of the
-  ICMJE type. Say that none of this is secret. It is undocumented.
+  ICMJE type. Say that none of this is secret. Nobody writes it down for students.
 - **20–40 min:** pairs complete section 1 on the invented case. At minute 30, check the
   "who decides" column. Most pairs write "Dr. Brennan" for everything. The editor decides
   the revision, the institution holds the award, and nobody has decided authorship yet.

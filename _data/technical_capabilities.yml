@@ -84,7 +84,7 @@ units:
         - QA release recommendation
 
   - slug: 04-volume-reconstruction-infrastructure
-    capability_statement: Design a robust ingest-to-serving reconstruction pipeline with reproducibility and rollback controls.
+    capability_statement: Design an ingest-to-serving reconstruction pipeline with reproducibility and rollback controls.
     expertise:
       - Scientific data engineer (pipeline architecture)
       - MLOps/platform engineer (orchestration and observability)
@@ -224,7 +224,7 @@ units:
         - Cycle metrics summary
 
   - slug: 09-connectome-analysis-neuroai
-    capability_statement: Build defensible connectome analysis workflows with robust statistical controls and reproducible inference.
+    capability_statement: Build defensible connectome analysis workflows with explicit statistical controls and reproducible inference.
     expertise:
       - Network neuroscientist (graph and motif interpretation)
       - ML scientist (representation learning and model validation)

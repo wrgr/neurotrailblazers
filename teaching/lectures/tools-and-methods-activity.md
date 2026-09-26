@@ -8,7 +8,7 @@ description: "An offline exercise in query provenance, changing snapshots and st
 ---
 
 [Lecture plan and slides]({{ '/teaching/lectures/connectomics-02-tools-and-methods/' | relative_url }}#teach-a-90-minute-session)
-· [Teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+· [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 **35 minutes plus peer review.** Work in pairs. Every value and identifier here is
 **invented teaching data**, not MICrONS, H01 or a real materialization version.

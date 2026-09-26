@@ -55,7 +55,7 @@ content_type: core
   <a href="#story">Story</a>
   <a href="#decisions">Decisions</a>
   <a href="#path">How the Site Helps</a>
-  <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
+  <a href="{{ '/avatars/' | relative_url }}">All personas</a>
 </nav>
 
 <section class="section" id="story">
@@ -152,9 +152,9 @@ attempts on the same step is the threshold — the site gives him a low-stakes
 place to ask: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }}), an AI
 chat persona that handles the "am I allowed to not know this?" questions he is
 not yet comfortable bringing to a professor. It is a rehearsal space, not a
-mentor; the [avatars page]({{ '/avatars/' | relative_url }}) and the
+mentor. The path to actual mentorship runs through the
 [Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
-are where the path to actual mentorship runs.
+and the MERIT stages on the [Program Models]({{ '/models/' | relative_url }}) page.
 
 One instruction from the hidden curriculum pages matters more for Julian than
 any other: turn each page into an artifact rather than a read. Add the

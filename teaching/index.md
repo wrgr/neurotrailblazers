@@ -17,14 +17,14 @@ content_type: delivery
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Teaching Hub</h1>
-      <p class="hero-subtitle">Everything needed to teach each module: lesson flow, activities, slides, and worksheets.</p>
+      <p class="hero-subtitle">Plans, slides, worksheets and model responses for teaching connectomics sessions and courses.</p>
     </div>
   </div>
 
   <section class="section">
     <div class="cta-buttons">
-      <a href="{{ '/teaching/sessions/' | relative_url }}" class="btn btn-primary">Session Kits — run a session</a>
-      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach a short lecture series</a>
+      <a href="{{ '/teaching/sessions/' | relative_url }}" class="btn btn-primary">Run a module session</a>
+      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach the four-session block</a>
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
       <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/teaching/pathways/' | relative_url }}" class="btn btn-secondary">Pathways Workshops</a>
@@ -37,7 +37,7 @@ content_type: delivery
   <section class="section">
     <h2>Where this sits</h2>
     <p>This is <strong>delivery material</strong>: written for whoever is running a session, not for whoever is learning. It is the <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a> of the same curriculum that <a href="{{ '/modes/#self-study' | relative_url }}">self-study</a> learners read directly.</p>
-    <p>Nothing here is a separate body of content. Session kits are generated from the module pages, and the depth behind every activity lives in <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the content library, dictionary, journal club, atlas and hidden curriculum. If a learner asks a question a kit does not answer, the core is where you look.</p>
+    <p>Nothing here is a separate body of content. Session kits are generated from the module pages, and the depth behind every activity lives in <a href="{{ '/core/' | relative_url }}">the core</a>: the content library, dictionary, journal club, atlas and hidden curriculum. If a learner asks a question a kit does not answer, look there.</p>
   </section>
 
   <section class="section">
@@ -52,9 +52,8 @@ content_type: delivery
       for graduate lectures and technical-unit slides. Each deck opens directly in your browser.</p>
     <p><strong>Running a session?</strong> Go to the
       <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a>. Each is one
-      page holding the prep checklist, run of show, materials, misconceptions to target,
-      and rubric for a single module — assembled from pieces that used to live in five
-      different places.</p>
+      page holding the prep checklist, run of show, materials, misconceptions to target
+      and rubric for a single module.</p>
     <p><strong>Teaching the professional side of research?</strong> The
       <a href="{{ '/teaching/pathways/' | relative_url }}">Professional Pathways workshops</a>
       are ten 90-minute sessions on expectations, failure, direction, networks,
@@ -68,7 +67,7 @@ content_type: delivery
     <p><strong>Checking learner work?</strong> Every lecture session has public model
       responses. <a href="{{ '/teaching/answers/' | relative_url }}">Module model responses</a>
       cover Modules 01, 07 and 18 so far, and the
-      <a href="{{ '/teaching/assessment/' | relative_url }}">assessment bank</a> holds new
+      <a href="{{ '/teaching/assessment/' | relative_url }}">assessment bank</a> holds 20
       practice items for the four lecture sessions, with worked answers and variant
       templates for writing secure versions.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>

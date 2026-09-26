@@ -42,9 +42,9 @@ case is invented.** Nobody is asked to say whether they feel they belong.
 - **0–10 min:** set the frame first. Say: "This is not counseling, and nobody will be
   asked to share anything about themselves. Here is who to talk to if something today
   lands hard." Read the card. If this session follows Professional Conduct, ask who
-  found out what a rung-3 office must report; keep it procedural. Then name one specific thing you once did not know that
-  everyone around you seemed to know, and what happened to the feeling once you learned
-  it. Do not ask for a show of hands.
+  found out what a rung-3 office must report; keep it procedural. Then name one
+  specific thing you once did not know that everyone around you seemed to know, and
+  what happened to the feeling once you learned it. Do not ask for a show of hands.
 - **10–20 min:** write the two sentences from the belonging page on the board: "I do not
   know things everyone here seems to know" and "I do not belong in this room." Read the
   three branches of the test aloud. Stress the third: you named it, you closed it, and
@@ -65,8 +65,8 @@ case is invented.** Nobody is asked to say whether they feel they belong.
 
 ## Facilitator cautions
 
-Do not tell anyone they belong. The belonging page says why: it cannot be installed by
-someone else. Specificity helps; reassurance does not.
+Do not tell anyone they belong. The belonging page says why: one person cannot install
+that feeling in another. A specific named gap helps. Reassurance does not.
 
 Do not turn environment problems into individual resilience problems. If a learner
 recognizes several environment signals in their own setting, the right response is the

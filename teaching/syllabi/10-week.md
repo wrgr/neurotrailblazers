@@ -17,12 +17,20 @@ how to adapt the meeting pattern.
 
 **Time budget.** 30 contact hours, plus about 30 outside hours (1,825 minutes). The
 outside load runs from 2 to 4 hours a week, so the full load is about 5–7 hours a week. That
-is roughly one outside hour per contact hour. To reach a two-to-one ratio, add as homework
-the full [Unit 01 lab]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}#rubric)
-(60 minutes), the rest of [Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
-(90 minutes) and the [Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})
-QA lab (90 minutes, public viewer). Add further readings from the omitted units until the
-total fits.
+is roughly one outside hour per contact hour. A two-to-one ratio needs about 60 outside
+hours, and no set of existing materials closes that gap on its own. The largest additions:
+
+- the full [Unit 01 lab]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}#rubric)
+  (60 minutes), the rest of [Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+  (90 minutes) and the [Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})
+  QA lab (90 minutes, public viewer): 4 hours;
+- the [Module 07]({{ '/teaching/sessions/module07/' | relative_url }}) and
+  [Module 10]({{ '/teaching/sessions/module10/' | relative_url }}) kits as take-homes
+  (4 hours each by the kits' own estimate; Module 10 needs Python and NetworkX): 8 hours;
+- reading from Units 06 and 07 (3.5 hours) and Unit 03 sections 3–4 (1 hour).
+
+Together these bring the outside total to about 47 hours. The rest has to come from a
+longer final report or more reading.
 
 ## At a glance
 
@@ -84,8 +92,8 @@ become homework.
 [Slides]({{ '/technical-training/slides/02-brain-data-across-scales/' | relative_url }})
 
 **Before class.** A: [Synapse Detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}),
-focusing on localization, partner assignment and evaluation units (20 minutes). Bring the
-brief. B: [Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})
+the opening section and sections 1, 2 and 7, on localization, partner assignment and
+evaluation units (20 minutes). Bring the brief. B: [Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }})
 sections 1–5 (90 minutes).
 
 **Artifacts.** An audit plan and a revised brief that names its most damaging error. A
@@ -148,15 +156,18 @@ The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) is t
 real-data version of Sessions 3 and 4. It reads static public exports pinned to
 materialization v1507, so no account is needed. It checks file hashes, applies stated
 inclusion rules to 2,070 proofread cells, compares reciprocity with three nulls, and
-writes a methods record. Learners need Python 3.11 or later, about 90 MB of downloads
-and a laptop; the run takes about a minute. Have learners install the requirements
-before class.
+writes a methods record. Learners need a laptop with Python 3.11–3.13, about 90 MB of
+downloads and 2 GB of free memory. A run took under a minute on the test machine and can
+take several minutes on an older laptop. Have learners install the requirements before
+class.
 
-1. Run the notebook and compare the key numbers with the archived outputs on the lab
+1. Check installs and open the notebook; pair anyone whose setup fails with someone
+   whose works (15 minutes).
+2. Run the notebook and compare the key numbers with the archived outputs on the lab
    page (35 minutes, pairs).
-2. Write the methods record into the study brief and read the v1412 → v1507 drift
+3. Write the methods record into the study brief and read the v1412 → v1507 drift
    section: which cells a stale root-ID join would silently lose (25 minutes).
-3. Debrief: which null should the headline use, and why the uniform null overstates
+4. Debrief: which null should the headline use, and why the uniform null overstates
    the effect (15 minutes).
 
 **Offline fallback** (no network or no Python): read the archived executed notebook on
@@ -226,18 +237,18 @@ authorship memo. Open with the Resilient follow-through, the session this cohort
 (25 minutes). B: [career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }})
 sections 1, 2 and 5 (25 minutes).
 
-**Artifacts.** A licence audit table and governance note. An authorship memo and system
+**Artifacts.** A license audit table and governance note. An authorship memo and system
 map. A one-page final project proposal naming the question, the artifacts it will reuse and
 the claim it will not make.
 
 **Feedback.** Ethics
 [rubric]({{ '/teaching/lectures/ethics-and-governance-answers/' | relative_url }}#feedback-guide):
-no zero in licence accuracy or handling of uncertainty. Savvy Researcher
+no zero in license accuracy or handling of uncertainty. Savvy Researcher
 [rubric]({{ '/teaching/pathways/savvy-researcher-answers/' | relative_url }}#feedback-rubric).
 For the proposal, check three things: the question matches the brief's endpoint, every
 reused artifact is named, and a non-claim is stated.
 
-**After class (120 minutes).** Add the licence, ethics-statement location and credit
+**After class (120 minutes).** Add the license, ethics-statement location and credit
 model to the brief (15 minutes). Write the proposal (45 minutes). Read
 [Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 sections 1–2 on graph construction and null models (60 minutes).
@@ -353,8 +364,24 @@ first month.
 **Technical work omitted.** The Unit 06 and 07 calibration labs are omitted. They need
 instructor-built patch sets and work best repeated. The Unit 03 viewer lab and the Unit 09
 analysis lab are omitted because both need live data. Part A of Units 04 and 08 is omitted
-for the same reason. The other 21 module kits are out of scope for ten weeks. Several of
-them depend on patches or files the site does not publish.
+for the same reason.
+
+**Module kits omitted.** The other 21 kits are left out for time or overlap. Missing
+files are no longer a reason: every material a kit names now resolves, either to synthetic files under
+`assets/kits/` or, for Modules 04 and 05, to a recipe for an instructor-built patch set.
+Two kits fit if you can make room:
+
+- The [Module 07 kit]({{ '/teaching/sessions/module07/' | relative_url }}) triages a
+  synthetic 45-flag error report and computes release metrics with a script, and it has
+  [model responses]({{ '/teaching/answers/module07/' | relative_url }}). Its 60–75 minute
+  studio can replace the Unit 08 Part B plan in week 5A if you want learners to compute
+  release metrics rather than budget labor. Grade the release memo in its place.
+- The [Module 10 kit]({{ '/teaching/sessions/module10/' | relative_url }}) graph report
+  works as a take-home after Session 4 for learners with Python.
+
+The others either overlap work already on this map or need more time than ten weeks
+allow. The [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}#what-this-map-uses-and-omits)
+gives the reason for each kit.
 
 ## Suggested grading weights
 

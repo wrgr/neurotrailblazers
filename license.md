@@ -1,22 +1,22 @@
 ---
 layout: page
-title: "Licence and reuse"
+title: "License and reuse"
 permalink: /license/
 description: "Content is CC BY 4.0, code is MIT, and third-party figures are neither. What you may do, and how to attribute."
 slug: license
 ---
 
 The short version: **you may reuse, adapt and teach from this material, including
-commercially, as long as you say where it came from.** Two licences apply, depending on
+commercially, as long as you say where it came from.** Two licenses apply, depending on
 which part you are taking, and some figures are not ours to license at all.
 
 The authoritative text is
 [`LICENSE`](https://github.com/{{ site.github_username }}/neurotrailblazers/blob/main/LICENSE)
 in the repository. This page explains it.
 
-## What is under which licence
+## What is under which license
 
-| What | Licence | Covers |
+| What | License | Covers |
 |---|---|---|
 | **Content** | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Every page on this site, the technical units, the 25 modules, the content library, tracks, teaching and facilitator material, worksheets, slide decks, the data files in `_data/`, and the brand assets and images this project made |
 | **Code** | [MIT](https://opensource.org/license/mit) | The generators and validators in `scripts/`, the browser JavaScript in `assets/js/`, the Jekyll templates in `_layouts/` and `_includes/`, and the stylesheets in `assets/css/` |
@@ -34,7 +34,7 @@ Under CC BY 4.0 you may:
   your learners can actually reach, disagree with it in the margin.
 - **Redistribute it,** in any format, including as part of something you sell.
 
-The one condition is attribution: give credit, link the licence, and say if you changed
+The one condition is attribution: give credit, link the license, and say if you changed
 anything. You may not add legal or technical restrictions that stop anyone else doing the
 same.
 
@@ -62,8 +62,8 @@ cannot widen.
 
 So: **the CC BY 4.0 grant on this site does not travel with a third-party figure.** Before
 you put one in your own deck or paper, find the source named in the caption or the figure
-credit and check that source's licence. Where a figure carries no credit line and is
-plainly a rendering this project produced, the site licence applies.
+credit and check that source's license. Where a figure carries no credit line and is
+plainly a rendering this project produced, the site license applies.
 
 The same goes for the datasets themselves. Nothing here grants any right to H01, MICrONS,
 FlyWire, Hemibrain, MANC, BANC or any other volume; each portal sets its own terms, and
@@ -73,7 +73,7 @@ you agree to them there.
 
 CC BY 4.0 does not grant trademark rights. The name **NeuroTrailblazers**, the marks and
 lockups in `assets/brand/`, and the names of the NIH BRAIN Initiative, BRAIN CONNECTS,
-IC3 and APEX are not covered by these licences. Use them to say where material came from;
+IC3 and APEX are not covered by these licenses. Use them to say where material came from;
 do not use them in a way that implies this program endorses your version of it.
 
 ## Questions

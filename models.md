@@ -4,7 +4,7 @@ layout: framework
 permalink: /models/
 slug: program-models
 description: "The MERIT mentoring stages and Professional Pathways workshops as an operational playbook: what happens in each stage, what the mentee produces, and the failure mode each stage exists to prevent."
-summary: "MERIT, Professional Pathways and CCR: the models NeuroTrailblazers is run on, stage by stage, with the evidence behind each choice."
+summary: "MERIT and the Professional Pathways workshops, stage by stage, with the four-dimensional (CCR) education model and the evidence behind each choice."
 track: career-and-community
 pathways:
   - mentoring
@@ -29,8 +29,8 @@ content_type: core
 
 Two frameworks run through NeuroTrailblazers. **MERIT** structures how a research
 relationship progresses over time. **Professional Pathways** makes explicit the norms
-and skills that research training usually leaves implicit. They are complementary:
-MERIT organizes the work, Pathways addresses what the work assumes you already know.
+and skills that research training usually leaves implicit. MERIT organizes the
+work. Pathways covers what the work assumes you already know.
 
 These are the models the program is actually run on: what happens in each stage, what the
 mentee produces, and the failure mode each stage exists to prevent, with the evidence behind
@@ -38,12 +38,12 @@ each choice.
 
 ---
 
-## MERIT — stage by stage
+## MERIT: six stages, each with its own failure mode
 
-*Mentoring Exceptional Researchers to Innovate and Thrive.* Six stages spanning a
-research trajectory, from selection through career transition. The value is
-not the names; it is that each stage has a **distinct failure mode**, and knowing which
-stage a mentee is in tells you which failure to watch for.
+*Mentoring Exceptional Researchers to Innovate and Thrive.* Six stages span a research
+trajectory, from selection through career transition. Each stage has a **distinct
+failure mode**, so knowing which stage a mentee is in tells you which failure to watch
+for.
 
 ### 1. Merit-based selection
 
@@ -51,7 +51,7 @@ stage a mentee is in tells you which failure to watch for.
 correlate strongly with prior access, so a selection process that rewards them chiefly
 reproduces the distribution of opportunity that already exists.
 
-**Mentee produces.** A statement of interest — what they want to understand and why.
+**Mentee produces.** A statement of interest: what they want to understand, and why.
 
 **Watch for.** Selecting for polish. The most polished application in a pool is often
 the one with the most coaching behind it. Ask instead: does this person show evidence
@@ -59,7 +59,8 @@ of pursuing a question past the point of comfort? That is visible in any backgro
 
 **Practical instrument.** A short structured task — read one accessible paper, write
 half a page on what you did not understand and what you would do to find out. It
-surfaces curiosity and metacognition, and it is largely immune to coaching.
+surfaces curiosity and metacognition, and it is harder to coach for than a personal
+statement.
 
 ### 2. Orientation and research foundations
 
@@ -68,7 +69,7 @@ Explicitly teach the hidden curriculum: how to ask for help, what "I don't know"
 worth here, how meetings work, what the escalation path is, how credit is assigned.
 
 **Mentee produces.** A working environment they set up themselves, one completed
-starter task, and a written list of the norms as they understood them — which you then
+starter task, and a written list of the norms as they understood them, which you then
 correct. The gap between what you said and what they wrote down is the most useful
 diagnostic in this stage.
 
@@ -83,8 +84,8 @@ like quiet competence. State norms out loud and in writing.
 **What happens.** Real work on a scoped piece of a real problem, with close support
 that is deliberately withdrawn.
 
-**Mentee produces.** Weekly artifacts — an annotation set with evidence chains, a
-notebook, a figure — reviewed against a rubric, not against your taste.
+**Mentee produces.** Weekly artifacts (an annotation set with evidence chains, a
+notebook, a figure), reviewed against a rubric rather than against your taste.
 
 **Watch for.** Two symmetric failures. **Support withdrawn too fast** produces
 floundering that the mentee reads as personal inadequacy. **Support withdrawn too
@@ -98,8 +99,8 @@ transition when you make it, so the mentee can see it as design rather than negl
 
 ### 4. Independent research and early dissemination
 
-**What happens.** The mentee owns a question. First external exposure — a lab meeting,
-a poster, a preprint.
+**What happens.** The mentee owns a question and presents outside the group for the
+first time: a lab meeting, a poster, a preprint.
 
 **Mentee produces.** A result they can defend, including its limitations. The
 [Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}) discipline
@@ -120,7 +121,7 @@ experience of having survived it in private transfers.
 **What happens.** Deeper technical contribution; the mentee begins building
 relationships that are theirs, not yours.
 
-**Mentee produces.** A substantive contribution, and — the part usually skipped — a
+**Mentee produces.** A substantive contribution and, the part usually skipped, a
 network they own. Introductions made *on their behalf* are a mentor asset; conversations
 they initiate are theirs.
 
@@ -146,7 +147,7 @@ route were contingent rather than earned.
 
 **Stage compression.** Running orientation in an afternoon and calling it done, or
 pushing to independence before skills are in place. Each stage exists because skipping
-it produces a predictable, well-documented problem later.
+it produces a predictable problem later.
 
 **Uniform mentoring.** Applying the same posture across all six stages. The support a
 mentee needs in stage 2 would be smothering in stage 5, and the autonomy appropriate to
@@ -155,13 +156,13 @@ which stage this person is in.
 
 ---
 
-## Professional Pathways workshops
+## Professional Pathways: ten sessions on what training assumes
+{: #professional-pathways-workshops}
 
-An interactive sequence addressing what research training assumes and rarely teaches.
-Historically developed under COMPASS naming; now framed as a broader pathways support
-layer. It maps onto the four-dimensional education model — knowledge, skills, character,
-and meta-learning — with most of the sequence in the last two dimensions, which is
-exactly where conventional curricula are thinnest.
+An interactive sequence on what research training assumes and rarely teaches. It was
+first developed under the name COMPASS. It maps onto the four-dimensional education
+model (knowledge, skills, character and meta-learning), with most of the sequence in
+the last two dimensions, which technical courses rarely teach directly.
 
 | Workshop | The question it answers |
 |---|---|
@@ -190,7 +191,9 @@ table did. Making them explicit is a fairness intervention as much as a training
 
 ## How the two frameworks interact
 
-MERIT stages tell you **when**; Pathways workshops tell you **what**. A rough pairing:
+MERIT stages tell you **when**, and Pathways workshops tell you **what**. A rough
+pairing, which the [Pathways page]({{ '/teaching/pathways/' | relative_url }}) uses to
+schedule the sessions:
 
 | MERIT stage | Pathways emphasis |
 |---|---|
@@ -200,34 +203,41 @@ MERIT stages tell you **when**; Pathways workshops tell you **what**. A rough pa
 | Advanced Research | Building Your STEM Entourage; The Savvy Researcher |
 | Career Transition | Future Forward; Professional Conduct |
 
-A mentee in stage 3 who is struggling with resilience is not behind — they are exactly
-where that workshop is designed to land.
+A mentee in stage 3 who is struggling with resilience is on schedule. Stage 3 is where
+The Resilient STEM Scholar is designed to land.
 
 ---
 
 ## Evidence base
 
 - **Lopatto, D. (2007).** Undergraduate research experiences support science career
-  decisions and active learning. *CBE Life Sci Educ*, 6(4), 297–306. — Evidence that
+  decisions and active learning. *CBE Life Sci Educ*, 6(4), 297–306. Evidence that
   authentic research participation, not coursework alone, drives persistence.
 - **Duckworth, A. et al. (2007).** Grit: Perseverance and passion for long-term goals.
-  *J. Pers. Soc. Psychol.*, 92(6), 1087–1101. — Underpins the stage-5/6 emphasis on
+  *J. Pers. Soc. Psychol.*, 92(6), 1087–1101. Underpins the stage-5/6 emphasis on
   sustained engagement. Note the ongoing debate about effect sizes and about the risk of
   reading persistence as an individual trait rather than a product of conditions; the
   framework here treats it as something mentoring *supports*, not something mentees
   either have or lack.
-- **Fadel, C., Bialik, M., & Trilling, B. (2015).** *Four-Dimensional Education.* CCR. —
-  Source of the knowledge/skills/character/meta-learning structure used across the site's
+- **Fadel, C., Bialik, M., & Trilling, B. (2015).** *Four-Dimensional Education.* Center for
+  Curriculum Redesign (CCR). Source of the knowledge/skills/character/meta-learning structure used across the site's
   [learning tracks]({{ '/tracks/' | relative_url }}).
-- **Cervantes, C. et al. (2022).** CIRCUIT: A framework for inclusive and equitable STEM
-  mentorship. *Cell*, 185(15), 2620–2624. — Directly relevant to connectomics training
-  practice.
+- **Cervantes, M., Floryanzia, S., Sharp, J., Gray-Roncal, W., & Johnson, E. (2023).**
+  Empowering trailblazers toward scalable, systematized, research-based workforce
+  development. *ASEE Annual Conference & Exposition Proceedings*.
+  [doi:10.18260/1-2--43271](https://doi.org/10.18260/1-2--43271). Describes CIRCUIT,
+  a cohort-based undergraduate research program for students from first-generation
+  and low-income backgrounds, students with little research experience, and students
+  facing systemic barriers. It sets out the program's eight pillars, from holistic
+  recruiting to career empowerment.
 
 ---
 
 ## Related
 
-- [Learner personas]({{ '/avatars/' | relative_url }}) — who these stages are for, concretely
-- [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) — session-level practice, including differentiation across personas
-- [Learning tracks]({{ '/tracks/' | relative_url }}) — how the four dimensions map onto curriculum
+- [Professional Pathways workshops]({{ '/teaching/pathways/' | relative_url }}): the ten session plans, worksheets and model responses
+- [The Hidden Curriculum]({{ '/hidden-curriculum/' | relative_url }}): the norms the workshops teach, written down page by page
+- [Learner personas]({{ '/avatars/' | relative_url }}): who these stages are for, concretely
+- [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}): session-level practice, including differentiation across personas
+- [Learning tracks]({{ '/tracks/' | relative_url }}): how the four dimensions map onto curriculum
 

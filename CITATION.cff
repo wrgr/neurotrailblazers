@@ -16,7 +16,7 @@ abstract: >-
 type: software
 authors:
   - given-names: "Will"
-    family-names: "Gray-Roncal"
+    family-names: "Gray Roncal"
     affiliation: "Johns Hopkins University"
     email: "wgr@jhu.edu"
   - given-names: "Sydney"

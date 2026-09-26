@@ -24,7 +24,7 @@ Connectomics, Synapse Detection, Tools and Methods, and Algorithms and Applicati
 Three finished decks exist for the connectomics block of EN.585.781, Frontiers in
 Neuroengineering. These are **presentation decks**: 56&ndash;59
 slides each, a custom lecture-hall theme, DOI-pinned citations, and a CC BY-SA 4.0 footer. One
-discovery pipeline &mdash; question, specimen, image, reconstruction, graph, claim &mdash; runs
+discovery pipeline (question, specimen, image, reconstruction, graph, claim) runs
 through all three, and eight progression streams introduced in the first are revisited as a
 scorecard at the end of the third. They draw on units 01&ndash;04, 08 and 09.
 
@@ -41,7 +41,7 @@ scorecard at the end of the third. They draw on units 01&ndash;04, 08 and 09.
   </article>
   <article class="card">
     <h3 class="card-title"><a href="{{ '/course/decks/marp/out/en585781/module09-algorithms-and-applications.html' | relative_url }}">Algorithms and applications</a></h3>
-    <p class="card-description">Segmentation, error and labour &middot; graph construction and nulls &middot; applications and NeuroAI. 58 slides.</p>
+    <p class="card-description">Segmentation, error and labor &middot; graph construction and nulls &middot; applications and NeuroAI. 58 slides.</p>
     <p><a href="{{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }}">Teaching plan, worksheet and answers</a> · <a href="{{ site.deck_source_base }}/en585781/module09-algorithms-and-applications.marp.md">Markdown source</a></p>
   </article>
 </div>
@@ -54,7 +54,7 @@ modules 07&ndash;09, which are Proofreading, Hypothesis Testing and Morphology.
 Two further presentation decks, built in the same theme and to the same standard, but not part
 of EN.585.781 or any other course. Each is drawn entirely from one content-library page, carries
 that page's numbers and citations, and ends with a slide stating what the page does not cover.
-Both are sized for a single 50&ndash;60 minute lecture and carry the same CC BY-SA 4.0 licence
+Both are sized for a single 50&ndash;60 minute lecture and carry the same CC BY-SA 4.0 license
 and speaker notes as the decks above.
 
 <div class="cards-grid">
@@ -65,7 +65,7 @@ and speaker notes as the decks above.
   </article>
   <article class="card">
     <h3 class="card-title"><a href="{{ '/course/decks/marp/out/lectures/ethics-and-governance.html' | relative_url }}">Connectomics ethics and governance</a></h3>
-    <p class="card-description">Human tissue: consent and de-identification &middot; licences &middot; dual use and credit for proofreading. 31 slides, from <a href="{{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}">Ethics and Governance</a>.</p>
+    <p class="card-description">Human tissue: consent and de-identification &middot; licenses &middot; dual use and credit for proofreading. 31 slides, from <a href="{{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}">Ethics and Governance</a>.</p>
     <p><a href="{{ '/teaching/lectures/ethics-and-governance/' | relative_url }}">Teaching plan, worksheet and answers</a> · <a href="{{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md">Markdown source</a></p>
   </article>
 </div>
@@ -74,13 +74,15 @@ Need full module teaching kits? Visit the [Teaching Hub]({{ '/teaching/' | relat
 
 ## Technical-unit decks
 
+Ten shorter decks, one per technical unit, of 14 to 19 slides each.
+
 <div class="cards-grid">
   {% for item in site.data.technical_track.modules %}
   {% assign deck = item.slug %}
   <article class="card">
     <h3 class="card-title"><a href="{{ '/course/decks/marp/out/' | append: deck | append: '.html' | relative_url }}">{{ item.title }}</a></h3>
     <p class="card-description">Presentation slides with speaker notes and figure sources.</p>
-    <p><a href="{{ '/technical-training/slides/' | append: item.slug | append: '/' | relative_url }}">Instructor lecture plan</a> — sequence, timing, and teaching prompts.</p>
+    <p><a href="{{ '/technical-training/slides/' | append: item.slug | append: '/' | relative_url }}">Instructor lecture plan</a>: sequence, timing, and teaching prompts.</p>
     <p><a href="{{ '/technical-training/' | append: item.slug | append: '/' | relative_url }}">Open unit page</a></p>
     <p><a href="{{ '/course/decks/marp/out/' | append: deck | append: '.html' | relative_url }}">Open rendered deck (HTML)</a> | <a href="{{ site.deck_source_base }}/{{ deck }}.marp.md">Markdown source</a></p>
   </article>

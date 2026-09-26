@@ -40,17 +40,19 @@ roles. That is why fit alone cannot decide this.
 The pattern to point out: *applying* is the reversible step; *enrolling* is not. The
 industry posting stays open. The doctoral window does not. That asymmetry, not a
 preference, is what orders the decision. [Career
-mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) adds the reason
-her letters matter: two people have watched her work for two years, which takes two
-years to build.
+mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) explains why her
+letters matter. A strong academic letter needs someone who has watched you make
+decisions over months, and that takes years to build. Hana already has two such
+people. She has not asked either of them.
 
 ## 3. Model decision memo
 
 > "Decision: I will apply to four doctoral programs this cycle, and this week I will ask
 > Dr. Castillo what pays for my position. Why: the doctoral window closes in December; the
 > industry team hires all year and staying depends on an April decision I cannot
-> influence. I give up a quiet fall and the application fees. I was wrong if, by November 15, none
-> of the supervisors I contacted has a project I would want; then I stop and call Luis.
+> influence. I give up a quiet fall and the application fees. I was wrong if, by
+> November 15, none of the supervisors I contacted has a project I would want; then I
+> stop and call Luis.
 > Review: November 15, and again when offers or the renewal decision arrive."
 
 Accept an industry-first memo if it states its cost and reversibility, for example
@@ -70,7 +72,7 @@ written down.
 
 ## Feedback rubric
 
-Score four dimensions **0–2 each**, on sections 1–3:
+Score four dimensions **0–2 each**, on sections 1 to 3:
 
 1. **Drift named.** 2 = default path and the date it closes an option; 1 = path without
    date; 0 = no default named.

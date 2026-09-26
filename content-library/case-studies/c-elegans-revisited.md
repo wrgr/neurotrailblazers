@@ -5,10 +5,10 @@ permalink: /content-library/case-studies/c-elegans-revisited/
 image: /assets/images/content-library/case-studies/c-elegans-revisited.svg
 image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
-  A comprehensive case study tracing the history of the C. elegans connectome — from
-  White et al. (1986) through modern re-analyses and developmental connectomics —
-  exploring how the field's foundational dataset has evolved over four decades and
-  what it teaches us about the promises and pitfalls of connectomics.
+  Case study of the C. elegans connectome from White et al. (1986) through later
+  re-analyses and developmental connectomics: how the field's first complete wiring
+  diagram has been corrected and extended over four decades, and what that says
+  about any connectome.
 topics:
   - C. elegans
   - historical connectomics
@@ -19,11 +19,8 @@ topics:
   - gap junctions
   - circuit motifs
 primary_units:
-  - unit-01-intro-to-connectomics
-  - unit-02-em-acquisition
-  - unit-05-proofreading
-  - unit-06-data-analysis
-  - unit-08-comparative-connectomics
+  - "01"
+  - "09"
 difficulty: beginner
 tags:
   - case-studies:C-elegans
@@ -36,16 +33,6 @@ tags:
   - neuroanatomy:nematode
   - proofreading:manual-tracing
 micro_lesson_id: ml-case-celegans
-reference_images:
-  - src: /assets/images/content-library/case-studies/c-elegans-revisited/wiring-diagram.png
-    alt: "C. elegans 302-neuron connectome wiring diagram with ganglia colored"
-    caption: "The C. elegans connectome: 302 neurons, ~7,000 chemical synapses, ~600 gap junctions -- the first complete connectome."
-  - src: /assets/images/content-library/case-studies/c-elegans-revisited/reanalysis-comparison.png
-    alt: "Comparison of original White et al. wiring with modern re-analysis by Cook et al."
-    caption: "Cook et al. (2019) identified ~1,500 additional synapses missed in the original reconstruction, showing that even complete connectomes benefit from revisitation."
-  - src: /assets/images/content-library/case-studies/c-elegans-revisited/developmental-timeline.png
-    alt: "Developmental connectome changes across C. elegans larval stages"
-    caption: "Witvliet et al. (2021) mapped the connectome at eight developmental time points, revealing stereotyped rewiring from L1 larva through adult."
 combines_with:
   - flywire-whole-brain
   - h01-human-cortex
@@ -58,18 +45,13 @@ content_type: core
 
 > ### Before you quote a number from this page
 >
-> Every figure below — cell counts, synapse counts, volume sizes, proofreading
-> coverage — is a property of **a particular release** of this dataset, not of
-> the tissue. Releases are re-segmented, re-proofread and re-materialized, and
-> the numbers move when they are.
->
-> This page deliberately does not pin a version, because it would be stale
-> within months and you would inherit a wrong number with a citation attached.
-> Treat what follows as orientation. Before any figure reaches a paper, a talk,
-> or a grant, pull it yourself from the release you are analyzing and record the
-> version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
-> covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
-> has the lab.
+> Synapse counts below are properties of **a particular reconstruction**, not of
+> the worm. White et al. (1986), Varshney et al. (2011), Cook et al. (2019) and
+> Witvliet et al. (2021) counted different animals, different body regions and
+> different kinds of contact, and their numbers differ for those reasons. Before
+> a figure reaches a paper, a talk or a grant, name the reconstruction it comes
+> from. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
+> covers the habit.
 
 
 ## Overview
@@ -77,26 +59,24 @@ content_type: core
 The connectome of the nematode *Caenorhabditis elegans* is where connectomics began.
 Published by White, Southgate, Thomson, and Brenner in 1986 in the *Philosophical
 Transactions of the Royal Society*, the original wiring diagram of this tiny worm's
-302-neuron nervous system remains one of the most influential datasets in all of
-neuroscience. It took approximately 15 years of manual tracing through serial-section
-transmission electron micrographs to complete — a heroic effort that predated every
-tool, algorithm, and platform described in other case studies in this library.
+302-neuron nervous system is still one of the most used datasets in neuroscience.
+It took more than a decade of manual tracing through serial-section transmission
+electron micrographs, all of it before any of the tools, algorithms or platforms in
+the other case studies here existed.
 
-Four decades later, the *C. elegans* connectome continues to teach us. It has been
-re-analyzed, corrected, and extended by multiple groups. It has served as the testing
-ground for computational models of neural circuits. And most recently, it has been
-mapped across developmental stages, revealing how a connectome changes over an
-organism's lifetime. This case study traces the full arc of the *C. elegans*
-connectome — from its origins to its modern incarnation — and draws lessons that
-remain relevant as the field tackles brains millions of times larger.
+Four decades later it is still being revised. Several groups have re-analyzed,
+corrected and extended it. It has been the test bed for computational models of
+neural circuits. Most recently it has been mapped across developmental stages, which
+shows how a connectome changes over an animal's life. This case study follows that
+history and the lessons it holds for brains millions of times larger.
 
 
 ## The Original Connectome: White et al. (1986)
 
 ### What Made It Possible
 
-Three biological properties of *C. elegans* made it uniquely suited to be the first
-organism with a complete connectome:
+Three biological properties of *C. elegans* made it the obvious first organism for a
+complete connectome:
 
 1. **Invariant cell lineage.** Every *C. elegans* hermaphrodite has exactly 302
    neurons (males have 385). The developmental lineage of every cell is known and
@@ -132,40 +112,38 @@ expert neuroanatomical interpretation over more than a decade.
 The original White et al. (1986) paper reported:
 
 - **302 neurons** in the hermaphrodite nervous system.
-- **Approximately 7,000 chemical synapses** (connections where neurotransmitter is
-  released from a presynaptic terminal onto a postsynaptic target).
-- **Approximately 900 gap junctions** (electrical synapses that directly couple the
-  cytoplasm of two neurons).
-- **56 glial-like cells** (sheath and socket cells associated with sensory organs).
+- **About 5,000 chemical synapses** (connections where neurotransmitter is released
+  from a presynaptic terminal onto a postsynaptic target).
+- **About 2,000 neuromuscular junctions.**
+- **About 600 gap junctions** (electrical synapses that directly couple the cytoplasm
+  of two neurons).
 
 The neurons were classified into 118 classes based on morphology and position. The
 connectivity was represented as an adjacency matrix listing the number of synapses
 between each neuron pair.
 
-### Key Early Findings
+### What the Original Map Made Possible
 
-The original connectome revealed several fundamental principles:
+- **Specific, sparse wiring.** Identified neuron pairs are connected, most possible
+  pairs are not, and the named classes let a connection in one animal be looked for
+  in another. Later analyses asked how stereotyped that wiring really is; Witvliet
+  et al. (2021) found substantial differences between individuals.
 
-- **Non-random connectivity.** The wiring is not a random graph. Specific neuron
-  pairs are consistently connected with characteristic synapse numbers, while most
-  possible connections are absent. This non-randomness implies that the wiring is
-  genetically specified and functionally meaningful.
+- **Circuit motifs, found later.** The formal counting of over-represented motifs
+  (feedforward chains, reciprocal connections and the like) came after 1986, in
+  network analyses such as Varshney et al. (2011). White et al. supplied the data
+  those analyses needed.
 
-- **Circuit motifs.** Repeated patterns of connectivity — feedforward chains, feedback
-  loops, reciprocal connections — appear throughout the nervous system, suggesting
-  that evolution reuses circuit building blocks.
+- **The nerve ring.** Much of the connectivity sits in a dense ring of neuropil around
+  the pharynx, which Witvliet et al. later treat as the worm's brain.
 
-- **The nerve ring.** The majority of synapses are concentrated in a dense ring of
-  neuropil encircling the pharynx (the nerve ring), which functions as the worm's
-  central processing structure.
+- **Sensory-to-motor pathways.** Tracing from sensory neurons through interneurons to
+  motor neurons gave the first wiring-level description of a complete sensorimotor
+  system, and the circuit hypotheses that laser-ablation studies then tested.
 
-- **Sensory-to-motor pathways.** Systematic tracing from sensory neurons to motor
-  neurons revealed multi-step pathways with characteristic interneuron architectures,
-  providing the first wiring-level description of a complete sensorimotor system.
-
-- **Sexual dimorphism.** Males have additional neurons (83 more than hermaphrodites)
-  that form circuits dedicated to mating behavior, providing the first connectomic
-  evidence for sex-specific neural circuitry.
+- **A hermaphrodite-only map.** White et al. mapped the hermaphrodite. The male, with
+  its additional neurons (385 in total) and mating circuits, was mapped later; Cook et
+  al. (2019) published whole-animal connectomes of both sexes.
 
 
 ## Re-Analysis and Updates
@@ -173,49 +151,49 @@ The original connectome revealed several fundamental principles:
 ### Varshney et al. (2011)
 
 Twenty-five years after the original publication, Varshney et al. revisited the
-*C. elegans* connectome using modern computational tools. They re-examined the
-original electron micrographs and notebooks, corrected errors, and applied graph-
-theoretic analysis methods that did not exist in 1986.
+*C. elegans* connectome. They went back to White and colleagues' laboratory notebooks
+and original electron micrographs to assign connections to the correct left or right
+neuron, added new micrographs, and applied graph-theoretic methods that were not in
+use in 1986.
 
 Key contributions:
 
-- Identified and corrected approximately 3,000 errors in the original adjacency
-  matrix (misidentified neurons, miscounted synapses, missing connections).
-- Provided the connectome in standardized digital formats suitable for computational
-  analysis.
-- Performed network analysis revealing small-world topology, modular organization,
-  and rich-club structure (a core of highly interconnected hub neurons).
-- Demonstrated that the overall architecture reported by White et al. was correct
-  despite the numerous individual errors.
+- Assembled a self-consistent wiring diagram of the somatic nervous system from White
+  et al.'s data, later work, and new reconstructions; over 3,000 synaptic contacts
+  (chemical synapses, gap junctions and neuromuscular junctions) were added or updated
+  relative to the previous version of the wiring diagram.
+- Provided the connectome in digital formats suitable for computational analysis.
+- Performed network analysis, including degree distributions, small-world properties,
+  central neurons, and over-represented network motifs.
+- Tested how robust these network properties are to remaining errors in the wiring
+  diagram.
 
 ### Cook et al. (2019)
 
-Cook et al. provided the most comprehensive update, incorporating new EM data from
-additional animals and applying modern reconstruction techniques. Their key
-contributions:
+Cook et al. gave the largest update so far, reconstructing both adult sexes from new
+and previously published electron micrographs: 460 nodes for the hermaphrodite
+(302 neurons, 132 muscles and 26 non-muscle end organs) and 579 for the male
+(385 neurons, 155 muscles and 39 end organs). Their key contributions:
 
-- Added approximately 1,500 previously unreported synapses, substantially increasing
-  the known connectivity density.
-- Provided separate connectivity matrices for the nerve ring, the ventral nerve cord,
-  and the tail.
-- Included connectivity from additional animals, enabling assessment of inter-
-  individual variability (which was found to be low for major connections but
-  significant for weak connections).
-- Published the dataset in a fully digital, machine-readable format with an
-  accompanying analysis toolkit.
+- Quantitative connectivity matrices spanning the whole animal, from sensory input to
+  end-organ output, which is the information needed to model behavior.
+- Updated earlier results, and added data on the male head.
+- Showed that the nervous system differs between the sexes at multiple levels,
+  including sex-shared neurons whose structure and connectivity are sexually
+  dimorphic.
+- Released the data in digital, machine-readable form.
 
 ### Lessons from the Revisions
 
-The history of *C. elegans* connectome revisions carries important messages:
+The revisions carry three messages:
 
-- **Errors persist in manually annotated datasets.** Despite 15 years of careful work
-  by expert neuroanatomists, the original dataset contained thousands of errors. This
-  is not a criticism of White et al. — it is a fundamental limitation of manual
-  annotation at this scale.
-- **The big picture was right.** Despite the errors, the overall architecture —
-  neuron classes, major pathways, circuit motifs — was accurately captured in the
-  original. Errors tended to affect weak connections and exact synapse counts rather
-  than the existence or absence of major pathways.
+- **Errors persist in manually annotated datasets.** After more than a decade of
+  careful work by expert neuroanatomists, the original dataset still needed thousands
+  of synaptic contacts added or updated. That is not a criticism of White et al. It is
+  a limit of manual annotation at this scale.
+- **The big picture held up.** Later revisions updated connections and synapse counts,
+  but the neuron classes and major pathways described in the original remain the
+  foundation of the field.
 - **Re-analysis is essential.** Every major connectomics dataset should be expected
   to contain errors and should be revisited as tools improve.
 
@@ -224,68 +202,60 @@ The history of *C. elegans* connectome revisions carries important messages:
 
 ### The Question
 
-A connectome is a snapshot of wiring at a single moment in time. But nervous systems
-are not static — they develop, mature, and (in some organisms) degenerate. The
-*C. elegans* connectome offered a unique opportunity to ask: how does a connectome
-change over the course of an organism's life?
+A connectome is a snapshot of wiring at a single moment. Nervous systems develop,
+mature and, in some organisms, degenerate. Because every *C. elegans* neuron can be
+named in every animal, the worm let Witvliet et al. ask how a connectome changes over
+an animal's life, neuron by neuron.
 
 ### The Study
 
-Witvliet et al. (2021) reconstructed the *C. elegans* connectome at eight
-developmental time points, spanning from the first larval stage (L1, shortly after
-hatching) through the adult. Each reconstruction was a complete or near-complete
-mapping of the nervous system at that stage, requiring separate EM volumes from
-different animals at each time point.
+Witvliet et al. (2021) used serial-section EM to reconstruct the full brain (the nerve
+ring and its associated neurons) of eight isogenic hermaphrodites at different ages,
+from birth (L1, shortly after hatching) to adulthood. Each time point required a
+separate EM volume from a different animal.
 
 ### Key Findings
 
-The developmental connectomics of *C. elegans* revealed several remarkable patterns:
+The abstract reports five patterns:
 
-- **Early establishment of architecture.** The overall connectivity architecture is
-  recognizable from the earliest larval stage. Major pathways, hub neurons, and
-  circuit motifs are present in L1 larvae and are maintained throughout development.
+- **A stable scaffold.** The overall geometry of the brain is preserved from birth to
+  adulthood.
 
-- **Significant rewiring during development.** Despite the conserved overall
-  architecture, individual connections undergo substantial changes. Some synapses
-  strengthen (gain more contacts) during development, others weaken, and entirely new
-  connections form that were absent in early stages.
+- **Substantial change on that scaffold.** Chemical synaptic connectivity changes
+  substantially over development; the total number of chemical synapses rises about
+  six-fold, from roughly 1,300 at birth to roughly 8,000 in adults, counting the brain
+  only.
 
-- **Stereotyped developmental trajectories.** The changes are not random. Specific
-  connections follow reproducible developmental trajectories, suggesting that rewiring
-  is genetically programmed rather than driven by stochastic processes.
+- **Differential remodeling.** The central decision-making circuitry is maintained,
+  whereas sensory and motor pathways substantially remodel.
 
-- **Late-developing circuits.** Some circuits — particularly those associated with
-  adult behaviors such as egg-laying and mating — are absent in early larvae and are
-  added during later developmental stages, coinciding with the maturation of the
-  relevant behaviors.
+- **A changing architecture.** With age, the brain becomes progressively more
+  feedforward and discernibly modular.
 
-- **Synaptic refinement.** The overall trend is toward increased specificity: early
-  connectivity is relatively diffuse, and development prunes weak or inappropriate
-  connections while strengthening functionally relevant ones. This parallels
-  developmental refinement observed in vertebrate nervous systems but was demonstrated
-  here with single-synapse resolution across the entire nervous system.
+- **Individual variability.** Comparing connectomes between individuals revealed
+  substantial differences in connectivity that make each brain partly unique.
 
 ### Significance
 
-The Witvliet et al. study was the first systematic mapping of how a complete
-connectome changes over an organism's lifetime. It established that:
+The Witvliet et al. study was the first systematic mapping of how a whole brain's
+connectome changes over an organism's development. It established that:
 
 - A single time-point connectome is an incomplete picture. Development matters.
-- Connectomic changes accompany behavioral maturation.
 - Even in an organism with an invariant cell lineage, the connectome is not fully
-  determined at birth — experience-independent rewiring occurs throughout development.
+  determined at birth, and individuals differ.
 
 
 ## The Model Organism Legacy
 
 ### Connectome-to-Behavior Pipeline
 
-*C. elegans* is the only organism for which a relatively complete pipeline exists from
-connectome to behavior:
+*C. elegans* was the first organism with a working pipeline from connectome to
+behavior, and it remains one of the most complete:
 
 1. **Connectome**: The complete wiring diagram identifies all possible circuit pathways.
-2. **Genetic tools**: Mutants affecting specific neurons or synapses are available for
-   most of the 302 neurons. Single-neuron gene expression profiles are mapped.
+2. **Genetic tools**: A large mutant collection and cell-specific promoters make it
+   possible to target identified neurons, and the CeNGEN project profiled gene
+   expression across the whole nervous system (Taylor et al. 2021).
 3. **Laser ablation**: Individual identified neurons can be killed with a laser in
    the living animal, and the behavioral consequences observed.
 4. **Optogenetics**: Specific neurons can be activated or silenced with light,
@@ -296,25 +266,25 @@ connectome to behavior:
    whole-nervous-system simulations (e.g., the OpenWorm project) that generate
    testable predictions.
 
-This pipeline has enabled discoveries that would be impossible in organisms without a
-complete connectome, including the identification of specific interneurons responsible
-for behavioral decisions, the circuit basis of sensory integration, and the
-relationship between network topology and behavioral repertoire.
+The pipeline has been used to identify interneurons that drive behavioral decisions,
+to work out circuits for sensory integration, and to relate network topology to the
+behavioral repertoire. Each of those studies started from a named neuron in the
+wiring diagram.
 
 ### Limitations as a Model
 
-Despite its foundational importance, *C. elegans* has significant limitations as a
-model for understanding larger brains:
+*C. elegans* has real limits as a model for larger brains:
 
 - **302 neurons is not 100,000 or 100 billion.** The computational principles that
   govern a 302-neuron nervous system may not scale to larger brains with fundamentally
   different architectures.
-- **No central brain.** *C. elegans* lacks the layered cortical structures, columnar
-  organization, and long-range recurrent loops that characterize vertebrate brains.
-- **Mostly hardwired.** The invariant cell lineage means that *C. elegans* circuits
-  are largely genetically specified, with limited role for activity-dependent
-  plasticity. This contrasts sharply with mammalian brains, where experience shapes
-  connectivity.
+- **No layered or columnar architecture.** The worm's brain is a nerve ring. It has
+  none of the layered cortex, columnar organization or long-range recurrent loops
+  that characterize vertebrate brains.
+- **Stereotyped, but not identical.** The invariant cell lineage fixes which neurons
+  exist, and much of the wiring is reproducible. Witvliet et al. still found
+  substantial differences in connectivity between isogenic individuals, and in
+  mammalian brains experience shapes connectivity far more.
 - **Neuropeptide signaling.** *C. elegans* relies heavily on neuropeptide (wireless)
   signaling in addition to synaptic (wired) signaling. The connectome captures only
   the wired component, potentially missing a large fraction of neural communication.
@@ -322,10 +292,10 @@ model for understanding larger brains:
 
 ## Discussion Questions for Instructors
 
-1. White et al. (1986) took 15 years to reconstruct 302 neurons. FlyWire reconstructed
+1. White et al. (1986) took more than a decade to reconstruct 302 neurons. FlyWire reconstructed
    ~139,000 neurons in a few years. What changed, and what stayed the same?
-2. The original connectome contained thousands of errors that were only caught decades
-   later. What does this imply for modern connectomics datasets that are orders of
+2. The original connectome needed thousands of synaptic contacts added or updated
+   decades later. What does this imply for modern connectomics datasets that are orders of
    magnitude larger?
 3. Witvliet et al. showed that the connectome changes during development. How should
    this inform the interpretation of single-time-point connectomes from other species?
@@ -342,12 +312,18 @@ model for understanding larger brains:
 - White, J. G., Southgate, E., Thomson, J. N., & Brenner, S. (1986). The structure of
   the nervous system of the nematode *Caenorhabditis elegans*. *Philosophical
   Transactions of the Royal Society B*, 314(1165), 1-340.
+  [10.1098/rstb.1986.0056](https://doi.org/10.1098/rstb.1986.0056)
 - Varshney, L. R., Chen, B. L., Paniagua, E., Hall, D. H., & Chklovskii, D. B. (2011).
   Structural properties of the *Caenorhabditis elegans* neuronal network. *PLoS
   Computational Biology*, 7(2), e1001066.
+  [10.1371/journal.pcbi.1001066](https://doi.org/10.1371/journal.pcbi.1001066)
 - Cook, S. J., et al. (2019). Whole-animal connectomes of both *Caenorhabditis
   elegans* sexes. *Nature*, 571(7763), 63-71.
+  [10.1038/s41586-019-1352-7](https://doi.org/10.1038/s41586-019-1352-7)
 - Witvliet, D., et al. (2021). Connectomes across development reveal principles of
   brain maturation. *Nature*, 596(7871), 257-261.
+  [10.1038/s41586-021-03778-8](https://doi.org/10.1038/s41586-021-03778-8)
+- Taylor, S. R., et al. (2021). Molecular topography of an entire nervous system.
+  *Cell*, 184(16), 4329-4347. [10.1016/j.cell.2021.06.023](https://doi.org/10.1016/j.cell.2021.06.023)
 - Brenner, S. (1974). The genetics of *Caenorhabditis elegans*. *Genetics*, 77(1),
-  71-94.
+  71-94. [10.1093/genetics/77.1.71](https://doi.org/10.1093/genetics/77.1.71)

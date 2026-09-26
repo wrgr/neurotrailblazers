@@ -10,17 +10,17 @@ description: "An invented connectomics result, three drafts that drift, and a re
 
 [Workshop plan]({{ '/teaching/pathways/communicating-science-1/' | relative_url }}) · [All workshops]({{ '/teaching/pathways/' | relative_url }})
 
-**Time:** 20 minutes in pairs, 18 minutes alone, a cold-reader swap, then 14 minutes of
-private writing. The case below is **invented**. Rosa and Dr. Kimura are not real people,
-and the numbers are made up for practice.
+**Time:** 20 minutes in pairs, 18 minutes alone, an 8-minute cold-reader swap, then 14
+minutes of private writing. The case below is **invented**. Rosa and Dr. Kimura are not real people,
+the volume and "release T12" are fictional, and the numbers are made up for practice.
 
 ## The case
 
 Rosa is a second-year student in Dr. Kimura's connectomics lab. Here is her result, as
 she wrote it in her lab notebook:
 
-> Mouse visual cortex, layer 2/3, one electron-microscopy volume, materialization
-> version 1078. 58 inhibitory neurons with fully proofread axons, 1,904 synapses onto
+> Fictional mouse cortex EM volume, layer 2/3, release T12. 58 inhibitory neurons with
+> fully proofread axons, 1,904 synapses onto
 > excitatory neurons. Synapses land on the cell body or the first 20 µm of dendrite 2.7×
 > more often than a null model that keeps each neuron's synapse count but places the
 > synapses at random over the same partners' membrane. On 214 partly proofread neurons
@@ -90,7 +90,7 @@ paper you have read.
 
 ## Exit ticket
 
-Exit ticket: "The word I am most tempted to strengthen is ___. The sentence I will not
+Finish both sentences: "The word I am most tempted to strengthen is ___. The sentence I will not
 write is ___."
 
 **Follow-through this week:** give your public version to one person outside your field.

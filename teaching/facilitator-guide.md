@@ -18,7 +18,7 @@ content_type: delivery
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <h1 class="hero-title-impact">Facilitator Guide</h1>
-    <p class="hero-subtitle">Running sessions that produce measurable capability, with cohorts that differ enormously in preparation.</p>
+    <p class="hero-subtitle">Running sessions that produce measurable capability, with cohorts that differ widely in preparation.</p>
   </div>
 </div>
 
@@ -26,11 +26,10 @@ content_type: delivery
 
 ## Read this first: the constraint that shapes everything
 
-Connectomics teaching has a structural problem that most technical curricula do not.
-**The gap between what a learner can be told and what they can do is unusually wide**,
-because the core skills — reading an EM image, judging a segmentation, choosing a null
-model — are *perceptual and judgmental*, not procedural. You cannot transmit them by
-explanation. A learner who can recite the three criteria for calling a synapse will
+In connectomics, **the gap between what a learner can be told and what they can do is
+unusually wide**. The core skills (reading an EM image, judging a segmentation, choosing
+a null model) are *perceptual and judgmental*, not procedural, and explanation alone does
+not transmit them. A learner who can recite the three criteria for calling a synapse will
 still, on their first real patch, call a tangentially cut membrane a synapse.
 
 Everything below follows from that. The design principle throughout is:
@@ -39,9 +38,8 @@ Everything below follows from that. The design principle throughout is:
 > explanations.** Aim for at least half of contact time on learner judgment with
 > immediate comparison against a reference or a peer.
 
-The corollary is uncomfortable and worth stating plainly: a lecture-only delivery of
-this material will feel good, review well, and produce very little transferable
-capability. If you have 60 minutes and can either explain thoroughly or have learners
+The corollary: a lecture-only delivery of this material can feel good and review well
+while producing little transferable capability. If you have 60 minutes and can either explain thoroughly or have learners
 make 20 scored judgments, choose the judgments.
 
 </section>
@@ -54,10 +52,10 @@ make 20 scored judgments, choose the judgments.
 
 Every module and technical unit is built to run in this shape:
 
-1. **Learn** — capability target and the concepts needed to attempt it. Short.
-2. **Practice** — a studio activity producing an artifact with evidence.
-3. **Check** — a rubric-based competency check.
-4. **Teach** — slides and worksheet, so the learner can transfer it onward.
+1. **Learn:** capability target and the concepts needed to attempt it. Short.
+2. **Practice:** a studio activity producing an artifact with evidence.
+3. **Check:** a rubric-based competency check.
+4. **Teach:** slides and worksheet, so the learner can transfer it onward.
 
 ### The 60-minute template
 
@@ -70,15 +68,15 @@ Every module and technical unit is built to run in this shape:
 | 50:00–58:00 | Competency check | Individual, written, against the rubric |
 | 58:00–60:00 | Exit prompt | One thing more confident about, one thing still uncertain |
 
-**The modeling phase is where most facilitators lose the session.** The temptation is
+**The modeling phase is the easiest place to lose the session.** The temptation is
 to present clean examples that make the method look reliable. Do the opposite: choose
 an example where you genuinely have to weigh conflicting evidence, and narrate the
-weighing. Learners calibrate their own standard for "how sure should I be?" almost
-entirely from watching an expert be uncertain in public.
+weighing. Watching an expert be uncertain in public is one of the few ways learners set
+their own standard for "how sure should I be?"
 
 ### Question stems that work
 
-Replace "is that right?" — which teaches learners to seek your approval — with:
+Replace "is that right?", which teaches learners to seek your approval, with:
 
 - "Show me your evidence chain before your label."
 - "Which cue family is that from?" *(Units 05–06)*
@@ -87,9 +85,8 @@ Replace "is that right?" — which teaches learners to seek your approval — wi
 - "What is the cheapest observation that would settle this?"
 - "If you had to be wrong in one direction, which would you choose, and why?"
 
-The last one is the highest-value stem in the set. It surfaces whether the learner
-understands the asymmetric cost of merge versus split errors, which is the conceptual
-core of the whole technical track.
+Use the last one most. It shows whether the learner understands the asymmetric cost of
+merge versus split errors, which the whole technical track depends on.
 
 </section>
 
@@ -97,22 +94,22 @@ core of the whole technical track.
 
 ## Differentiation across the four personas
 
-The site's [learner personas]({{ '/avatars/' | relative_url }}) are not decoration —
-they describe genuinely different failure modes, and a session that works for one can
-fail another. In a mixed cohort you will usually have all four.
+The site's four [learner personas]({{ '/avatars/' | relative_url }}) describe different
+failure modes, and a session that works for one can fail another. A mixed cohort usually
+has all four.
 
 ### Julian, first-generation undergraduate
 
-**Predictable friction:** hidden curriculum. Not the content — the norms. Whether it is
-acceptable to say "I don't know", how to ask a question without appearing
+**Predictable friction:** the hidden curriculum: the norms rather than the content.
+Whether it is acceptable to say "I don't know", how to ask a question without appearing
 under-prepared, what "read the paper" actually means in practice, whether their
 uncertainty is normal.
 
 **What to do:**
 - **State norms explicitly, in the first five minutes, every time.** "In this session,
   'uncertain' is a passing answer and I will say so out loud when someone uses it well."
-- Give a **worked example of the process**, not just the content — including how you
-  decided which paper to read first and what you skipped.
+- Give a **worked example of the process**, not just the content: how you decided which
+  paper to read first and what you skipped.
 - Scaffold the first judgment heavily, then remove scaffolding fast. Under-challenge
   is as damaging as over-challenge here.
 - Make office hours **scheduled and normal**, not available on request. "Optional"
@@ -121,7 +118,7 @@ uncertainty is normal.
 ### Maya, graduate student
 
 **Predictable friction:** depth is uneven and she knows it. Strong on methods, less
-secure on the biology, or the reverse — and reluctant to expose the gap in front of a
+secure on the biology, or the reverse, and reluctant to expose the gap in front of a
 cohort.
 
 **What to do:**
@@ -139,8 +136,8 @@ pace and by biology terminology that seems arbitrary. Prone to assuming the biol
 a detail he can pick up later.
 
 **What to do:**
-- Front-load the [dictionary]({{ '/technical-training/dictionary/' | relative_url }}) —
-  much of the apparent difficulty is vocabulary, and it is fixable in a week.
+- Front-load the [dictionary]({{ '/technical-training/dictionary/' | relative_url }}).
+  Much of the apparent difficulty is vocabulary, and a week of it helps.
 - Let him start at [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
   or [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
   where his systems intuitions transfer directly, then send him back to Units 05–07.
@@ -156,7 +153,7 @@ time to adapt it.
 
 **What to do:**
 - Point at the [teaching kits]({{ '/teaching/' | relative_url }}) and the rubrics rather
-  than the reading. What she needs is the assessment instrument and the run-of-show.
+  than the reading. What she needs is the rubric and the run of show.
 - The [technical units]({{ '/technical-training/' | relative_url }}) are written so that
   a trainee can work through one unsupervised and produce a reviewable artifact. That is
   the property she is looking for.
@@ -178,25 +175,25 @@ target itself produces a two-tier cohort and is visible to everyone in the room.
 
 For every judgment task, the artifact is **label + confidence + evidence chain + one
 alternative considered**. Grade the last three. A correct label with no evidence chain
-should not outscore a well-reasoned incorrect one, and saying so publicly changes
-behavior within one session.
+should not outscore a well-reasoned incorrect one. Say so publicly at the start.
 
-This also solves the scaling problem: evidence chains can be peer-reviewed reliably
-against a rubric, whereas correctness often cannot be judged by a peer at all.
+This also helps with scale: peers can review evidence chains against a rubric, whereas
+they often cannot judge correctness at all.
 
 ### Calibration is the metric that matters
 
 Track, per learner: accuracy overall, and **accuracy within their high-confidence
 calls**. A learner at 84% overall with 100% accuracy on high-confidence calls and a
 non-zero uncertain rate is performing better than one at 90% flat with no uncertain
-calls — because the first learner's confidence carries information a team can act on.
+calls, because the first learner's confidence carries information a team can act on.
+These numbers are an illustration, not a benchmark.
 
-Teach this explicitly. It is counter-intuitive to learners trained by conventional
-exams, and it is the single most transferable habit in the track.
+Teach this explicitly. It runs against what conventional exams reward, and it transfers
+to every judgment task in the track.
 
 ### Peer review, structured
 
-Peer assessment scales and works, provided:
+Peer assessment scales, provided:
 - The rubric is specific enough that two reviewers agree.
 - Reviewers assess **evidence quality**, not correctness.
 - You spot-check ~10% and publish the agreement rate between your marks and theirs. If
@@ -206,10 +203,9 @@ Peer assessment scales and works, provided:
 ### Run a calibration round before the cohort matters
 
 Have everyone score the same three items, then compare publicly before proceeding.
-Inter-rater spread is typically large on the first attempt and shrinks sharply after
-one round of discussion. **That shrinkage is the learning**, and it doubles as a live
-demonstration of why annotation protocols need calibration sessions — the same
-mechanism the field uses in production.
+Expect a wide spread on the first attempt and a narrower one after a round of
+discussion. **The narrowing is the learning.** It also shows why annotation protocols
+need calibration sessions, which production proofreading teams run for the same reason.
 
 </section>
 
@@ -226,10 +222,10 @@ Much of the intended audience will work through this material alone. Design for 
    answer. Opening it first converts a retrieval exercise into re-reading, which feels
    productive and is not.
 3. Do the lab. Produce the artifact.
-4. Self-grade against the rubric, honestly, then find one person to review the artifact
-   — a peer, a mentor, a lab-mate. **One external review is worth more than three
-   self-reviews**, because the failure mode of self-assessment is not laziness but
-   blindness to the thing you did not know to check.
+4. Self-grade against the rubric, honestly, then find one person to review the artifact:
+   a peer, a mentor or a lab-mate. **One external review is worth more than three
+   self-reviews**, because self-assessment cannot see the thing you did not know to
+   check.
 5. Log which rubric row you scored lowest on and target it in the next unit.
 
 **What a lone learner cannot get from the page**, and should seek deliberately:
@@ -249,8 +245,7 @@ can describe cues and cannot apply them. Convert at least half the time to score
 on short z-stacks.
 
 **Single-image practice.** Any ultrastructure or glia exercise built from single images
-teaches a habit — the single-plane call — that the units explicitly tell learners to
-break. Always use short z-stacks, even when it is more work to prepare.
+teaches the single-plane call, a habit the units explicitly tell learners to break. Always use short z-stacks, even when it is more work to prepare.
 
 **Clean examples only.** A curated set of unambiguous patches produces overconfidence
 that collapses on real data. Every drill needs ambiguous cases, and at least one case
@@ -260,10 +255,10 @@ where the correct answer is "this is a segmentation error, not a biological stru
 accuracy quietly falling. Praise well-justified uncertainty at least once, early, and
 visibly.
 
-**Skipping the null-model discussion in Unit 09.** It is the least visual and most
-skippable section and it is where most published errors in this field live. If you must
-cut something from Unit 09, cut the survey of methods in §4, not the worked reciprocity
-example in §2.
+**Skipping the null-model discussion in Unit 09.** It is the least visual section and
+the easiest to skip, and a wrong null is one of the commonest ways a motif claim goes
+wrong. If you must cut something from Unit 09, cut the survey in §4, "Beyond motifs", not
+the worked reciprocity example in §2.
 
 **Treating the labs as homework.** The labs *are* the curriculum. The reading exists to
 make the labs possible. A cohort that does the reading and skips the labs has not done
@@ -284,7 +279,7 @@ Before a session, confirm:
 - [ ] The rubric is visible to learners **before** they start, not after.
 - [ ] You know the two or three misconceptions this unit names, and how you will surface them.
 - [ ] You have decided what "uncertain" earns, and you will say so out loud.
-- [ ] Data access works — accounts, viewer, notebook — verified today, not last week.
+- [ ] Data access works (accounts, viewer, notebook), checked today, not last week.
 
 </section>
 
@@ -297,13 +292,13 @@ Before a session, confirm:
 <section class="section">
   <div class="resource-card">
     <div class="resource-links">
-      <a class="resource-link" href="{{ '/teaching/sessions/' | relative_url }}">Session kits — one page per session</a>
+      <a class="resource-link" href="{{ '/teaching/sessions/' | relative_url }}">Session kits, one page per module</a>
       <a class="resource-link" href="{{ '/teaching/' | relative_url }}">Teaching Hub</a>
       <a class="resource-link" href="{{ '/technical-training/' | relative_url }}">Technical course units</a>
       <a class="resource-link" href="{{ '/technical-training/slides/' | relative_url }}">Technical slide plans</a>
       <a class="resource-link" href="{{ '/modules/slides/' | relative_url }}">Module slide pages</a>
       <a class="resource-link" href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics Dictionary</a>
-      <a class="resource-link" href="{{ '/content-library/' | relative_url }}">Content library — instructor-depth reference</a>
+      <a class="resource-link" href="{{ '/content-library/' | relative_url }}">Content library, instructor-depth reference</a>
       <a class="resource-link" href="{{ '/datasets/access/' | relative_url }}">Dataset access and starter notebooks</a>
       <a class="resource-link" href="{{ '/avatars/' | relative_url }}">Learner personas</a>
     </div>

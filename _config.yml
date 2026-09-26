@@ -90,7 +90,7 @@ deck_source_base: "https://github.com/wrgr/neurotrailblazers/blob/main/course/de
 # Grant and program information
 grant_info:
   program: "NIH BRAIN CONNECTS"
-  grant: "Mouse Connectome Project"
+  grant: "HI-MC: A Center for High-throughput Integrative Mouse Connectomics (UM1NS132250)"
   funding_agency: "National Institutes of Health"
   focus: "connectome quality and dissemination"
 

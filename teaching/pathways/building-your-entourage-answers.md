@@ -24,16 +24,18 @@ acceptable wording. This page is public and suitable for formative feedback.
 | Owen | O | Data questions both ways. | Person with no stake | Yes. |
 | Ben | O | Leila gives weekly hours; gets nothing. | Near-peer | Yes, but one-way. |
 
-**Empty roles:** sponsor, since only Dr. Brandt advocates for Leila in rooms she is not
-in. The no-stake role is filled only if Leila talks to Owen about more than data.
+**Empty roles:** sponsor. Only Dr. Brandt advocates for Leila in rooms she is not in,
+and he is leaving. The no-stake role is filled only if Leila talks to Owen about more
+than data.
 
 **Cheapest tie to make her own:** Jae. The invitation already exists and costs one
 email. Accept Owen if the learner argues that a no-stake person matters more before a
 PI moves.
 
-The channel row is the one learners miss. Asking only by direct message makes Leila's
-work invisible, as the [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }})
-page says of questions kept out of the public record.
+Learners usually miss the channel row. Because Leila asks only by direct message,
+nobody in the consortium sees her work. The [Lab
+norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) page makes the same point
+about questions kept out of the public channel.
 
 ## 2. Model first messages
 

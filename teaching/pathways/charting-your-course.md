@@ -43,8 +43,9 @@ about research, coursework or something else.
 
 - **0–10 min:** follow-through from The Resilient STEM Scholar: ask who sent a status
   report on real work and what came back. Take two answers. Then tell the room about a
-  direction you chose before you could evaluate it. Say what you could not have known, what you could have found out cheaply, and
-  whether you did. Ask: "What would two weeks of trying have told you?"
+  direction you chose before you could evaluate it: what you could not have known, what
+  you could have found out cheaply, and whether you did. Ask: "What would two weeks of
+  trying have told you?"
 - **10–20 min:** the move. Write on the board: *you cannot think your way to an
   evaluation you do not have the data for; you can buy the data cheaply.* Read the
   meta-learning rule: read until you can state the question the next artifact answers,
@@ -65,9 +66,9 @@ about research, coursework or something else.
 
 ## Facilitator cautions
 
-Do not favor the exciting option or the safe one. Both are common advice, and both
-skip the step this session teaches. Excitement is not evidence of fit. Safety is not
-evidence of value. The probe is how either gets tested.
+Do not favor the exciting option or the safe one. Learners hear both pieces of advice
+often, and both skip the step this session teaches. Excitement says nothing about fit,
+and safety says nothing about value. A probe tests either.
 
 Some learners have no free choice. Their project is fixed by a grant, a visa or a
 funding line. Do not ask anyone to say which applies. Tell the room the memo still
@@ -80,7 +81,7 @@ framework]({{ '/models/' | relative_url }}) calls this the single-path assumptio
 Say that the memo is input to a conversation with the supervisor, not a way around
 one. If a learner says their supervisor will not discuss direction at all, point to
 the [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) page and to a
-named person they can talk to afterwards.
+named person they can talk to afterward.
 
 ## Assessment and follow-through
 

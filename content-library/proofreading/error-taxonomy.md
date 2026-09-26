@@ -18,9 +18,7 @@ topics:
   - segmentation quality
   - downstream impact
 primary_units:
-  - proofreading-fundamentals
-  - error-identification
-  - segmentation-quality
+  - "08"
 difficulty: intermediate
 tags:
   - proofreading:merge-error
@@ -31,16 +29,6 @@ tags:
   - methodology:qa-metrics
   - imaging:electron-microscopy
 micro_lesson_id: ml-proof-errors
-reference_images:
-  - src: /assets/images/content-library/proofreading/error-taxonomy/merge-error-example.png
-    alt: "Two neurons incorrectly merged into a single segment shown in Neuroglancer"
-    caption: "Merge error: two distinct pyramidal neurons fused at a touching point. The merged segment (green) contains two separate axon initial segments."
-  - src: /assets/images/content-library/proofreading/error-taxonomy/split-error-example.png
-    alt: "A single neuron split into multiple fragments at a thin process"
-    caption: "Split error: one interneuron fragmented into 4 segments (colored) at thin-caliber processes. Arrows mark split points."
-  - src: /assets/images/content-library/proofreading/error-taxonomy/error-classification-flowchart.png
-    alt: "Decision flowchart for classifying segmentation errors by type and severity"
-    caption: "Error classification workflow: identify error type, assess downstream impact on connectivity, and assign correction priority."
 combines_with:
   - proofreading-strategies
   - proofreading-tools
@@ -54,10 +42,11 @@ content_type: core
 
 ## Instructor Notes
 
-This document is a standalone instructor script. It provides the full
-narrative, real references, worked examples, and a misconceptions table.
-Adapt the depth and pacing to your audience; the material here is
-intentionally detailed so that nothing needs to be improvised.
+This is a standalone instructor script: narrative, references, worked
+examples and a misconceptions table. Cut depth and pacing to suit the
+room. The worked examples in §§2–5 are set in **release T76 of a fictional
+mouse cortex volume**; their section numbers and measurements are invented
+for teaching. The two H01 figures are real data and are labeled as such.
 
 ---
 
@@ -65,10 +54,10 @@ intentionally detailed so that nothing needs to be improvised.
 
 ### 1.1 The Scale Problem
 
-Modern automated segmentation pipelines have reached impressive accuracy.
-Lee et al. (2019) demonstrated flood-filling networks that achieve
-"superhuman" voxel-level accuracy on benchmark datasets. Yet even a
-per-edge error rate of 1-5 % becomes catastrophic at connectome scale.
+Automated segmentation is now very good on benchmarks. Lee et al. (2017)
+reported "superhuman" accuracy on the SNEMI3D segmentation challenge. Yet
+even a small per-edge error rate becomes a near-certain error per neuron at
+connectome scale.
 
 **Key calculation to present on the board:**
 
@@ -76,22 +65,29 @@ Consider a neuron whose arbor passes through 1,000 supervoxel-to-supervoxel
 edges in the segmentation graph. If each edge has a 1 % probability of
 being wrong, the probability that the neuron is completely error-free is:
 
-    P(no error) = (1 - 0.01)^1000 = 0.99^1000 approx 0.000043
+    P(no error) = (1 - 0.01)^1000 = 0.99^1000 ≈ 0.000043
 
-That is a 99.996 % chance of at least one error somewhere along the neuron.
-Even at 0.1 % per-edge error rate the probability of a fully correct neuron
-with 1,000 edges is only about 37 %.
+That is a 99.996% chance of at least one error somewhere along the neuron.
+Even at a 0.1% per-edge error rate, the probability of a fully correct
+neuron with 1,000 edges is only about 37% (0.999^1000 ≈ 0.368).
 
-**Instructor tip:** Walk students through this calculation live. It is the
-single most effective way to motivate why proofreading exists as a field.
+What the calculation does not show: it assumes errors are independent and
+equally likely on every edge, and the 1,000 edges and the error rates are
+round numbers for the board, not measurements. Real errors cluster at thin
+processes and bad sections, so some neurons come out clean and others
+carry many errors.
+
+**Instructor tip:** Do this calculation live. It shows in two lines why
+proofreading is still needed after a "superhuman" benchmark score.
 
 ### 1.2 Errors Are Not Equally Harmful
 
-A boundary that is shifted by two voxels matters much less than a merge
-that fuses two excitatory neurons into one. The taxonomy below is ordered
-roughly by frequency (most common first), but the hierarchy of downstream
-impact is: merge errors > split errors > boundary errors > identity errors
-in terms of how often each type corrupts a connectome analysis.
+A boundary shifted by two voxels matters much less than a merge that fuses
+two excitatory neurons into one. The sections below run merge, split,
+boundary, identity. That order is not a frequency ranking: §6 explains why
+no field-wide frequency ranking exists. It is roughly the order in which
+each type corrupts connectome analyses in practice, although a single
+identity error can be as damaging as a merge.
 
 ---
 
@@ -108,7 +104,7 @@ supervoxels that belong to different ground-truth neurons.
 
 | Cause | Mechanism | Typical context |
 |---|---|---|
-| Close membrane apposition | Two membranes approach within < 20 nm, falling below the model's resolution limit | Parallel axons in dense neuropil |
+| Close membrane apposition | The gap between two membranes is only a voxel or two wide, or is blurred across a thick section, so the boundary signal is weak | Parallel axons in dense neuropil |
 | Low staining contrast | Membrane signal drops, model cannot distinguish boundary | Poor fixation regions, section edges |
 | Blood vessel boundaries | Vessel endothelium creates a false membrane-like boundary that "bridges" two neurites | Capillaries running through neuropil |
 | Glial wrapping | Thin astrocytic processes wrap around neurites; model confuses glial membrane for neuronal continuity | Perisynaptic astrocyte processes |
@@ -127,9 +123,11 @@ supervoxels that belong to different ground-truth neurons.
 
 ### 2.4 Visual Signatures
 
-- **Impossible branching in 3D:** A branch point where two branches diverge
-  at nearly 180 degrees from each other (going in opposite directions) is
-  almost never biological. Real branch points tend to have smaller angles.
+- **Implausible branching in 3D:** Two large branches leaving a point in
+  opposite directions, with mismatched caliber, deserve a look in 2D. The
+  angle alone is not proof: some real branches are T-shaped (cerebellar
+  granule-cell axons split into parallel fibers running in opposite
+  directions).
 - **Sudden caliber changes:** If a 500-nm-diameter dendrite suddenly
   becomes a 100-nm axon at a branch point, suspect a merge.
 - **Biologically implausible morphology:** A segment that crosses brain
@@ -138,15 +136,14 @@ supervoxels that belong to different ground-truth neurons.
 
 ### 2.5 Worked Example: Identifying a Merge Error
 
-1. You are examining a 3D mesh of a putative pyramidal cell.
+1. You are examining a 3D mesh of a putative pyramidal cell in release T76.
 2. The cell has a normal-looking apical dendrite, but one basal branch
    suddenly changes caliber from ~400 nm to ~120 nm and takes a sharp
    90-degree turn.
 3. You navigate to the turn point in 2D (XY) slices.
-4. In slices z = 312-314, you see two distinct membrane-bounded profiles
-   that are separated by a visible (but faint) membrane in z = 311 and
-   z = 315, but in z = 313 the membrane is absent and the two profiles
-   are merged into one label.
+4. From z = 311 to z = 315 you see two profiles side by side. A faint
+   membrane separates them in z = 311, 312, 314 and 315. In z = 313 the
+   membrane is not visible and both profiles carry one label.
 5. Diagnosis: merge error caused by a one-section gap in membrane signal.
 6. Action: split at the merge point.
 7. Verification: after splitting, each segment has consistent caliber and
@@ -157,7 +154,7 @@ supervoxels that belong to different ground-truth neurons.
 {% include figure.html
    src="/assets/images/content-library/em/segmentation-c2-vs-c3.jpg"
    alt="The same field of human cortex shown twice with segmentation overlaid: on the left the c2 agglomeration labels a region as one object in purple; on the right the c3 agglomeration splits the same region into two objects in red and blue."
-   caption="The merge/split trade-off, on one real object. H01 ships two agglomerations of the same segmentation: aggressive <strong>c2</strong> (left) calls this region <em>one</em> object; conservative <strong>c3</strong> (right) calls it <em>two</em>. Neither is a bug. Across 104 proofread cells, c3 needed 1.6&times; fewer merge corrections but 2.1&times; more split corrections than c2. The merge/split ratio is not a property of the field &mdash; it is a dial the pipeline sets, and this is what turning it looks like."
+   caption="The merge/split trade-off, on one real object. H01 ships two agglomerations of the same segmentation: aggressive <strong>c2</strong> (left) calls this region <em>one</em> object; conservative <strong>c3</strong> (right) calls it <em>two</em>. Neither is a bug. On 104 randomly selected neurons proofread in both, c3 needed 1.6-fold fewer merge corrections (257 vs 400 per cell) and 2.1-fold more split corrections (504 vs 238 per cell) than c2 (Shapson-Coe et al. 2024). The merge/split ratio is a setting the pipeline chooses, and this is what changing it looks like."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## 3. Split Errors
@@ -171,7 +168,7 @@ disconnected segments. In the supervoxel graph, a true edge is missing.
 
 | Cause | Mechanism | Typical context |
 |---|---|---|
-| Thin processes | Axons < 100 nm diameter drop below reliable detection | Small-caliber axons in cortical neuropil |
+| Thin processes | A thin axon is only a few voxels across at segmentation resolution, so one faint or misaligned section can break it | Small-caliber axons in cortical neuropil |
 | Low contrast regions | Membrane signal too faint for model confidence | Same as merge causes, but model errs conservatively |
 | Missing or damaged sections | Physical section lost during collection | Any region; creates a gap in z |
 | Sharp turns in z | A process that curves sharply between sections appears to "jump" in xy | Ascending/descending axons |
@@ -189,9 +186,10 @@ disconnected segments. In the supervoxel graph, a true edge is missing.
 
 ### 3.4 Visual Signatures
 
-- **Dead-end processes:** A neurite that terminates abruptly without a
-  synaptic bouton or growth cone. Biological terminations are rare in adult
-  tissue outside of specific contexts (e.g., axon terminals with vesicles).
+- **Dead-end processes:** A neurite that stops flat, inside the volume,
+  often at a bad section. Real neurites do end (dendritic tips, axon
+  terminals), but a real ending tapers or finishes in a bouton with
+  vesicles.
 - **Orphan fragments:** Small segments near the dead end that match in
   caliber and trajectory.
 - **Size distribution anomalies:** An excess of very small segments in a
@@ -199,7 +197,8 @@ disconnected segments. In the supervoxel graph, a true edge is missing.
 
 ### 3.5 Worked Example: Identifying a Split Error
 
-1. You are tracing a descending axon from a layer 2/3 pyramidal cell.
+1. You are tracing a descending axon from a layer 2/3 pyramidal cell in
+   release T76.
 2. At z = 487, the axon segment ends abruptly. There is no terminal bouton.
 3. You scroll to z = 488. Section 488 is visibly damaged (knife mark across
    the tissue). The axon profile is not segmented in this section.
@@ -236,7 +235,8 @@ but the exact border is inaccurate.
 ### 4.3 Worked Example
 
 1. You are measuring spine head volumes for a population of excitatory
-   synapses. Several spine heads have volumes 30-40 % larger than expected.
+   synapses in release T76. Several spine heads have volumes 30–40% larger
+   than expected.
 2. On inspection, the segmentation boundary around those spines extends
    2-3 voxels into the adjacent dendritic shaft or into the presynaptic
    bouton.
@@ -255,14 +255,17 @@ An identity error occurs when the segmentation boundary is correct, but
 the cell label assigned to a region is wrong. This typically happens as a
 side effect of proofreading itself: when a merge is split, the two
 resulting fragments must each receive a label, and the wrong label may be
-propagated to the wrong fragment.
+propagated to the wrong fragment. In CAVE-based systems both fragments get
+new root IDs, and a cell's identity follows whichever fragment holds its
+annotation point (its soma or cell-type point), so a point on the wrong
+side carries the identity with it.
 
 ### 5.2 Impact
 
 - **Catastrophic for connectivity:** Every synapse in the mislabeled region
   is attributed to the wrong neuron. If the mislabeled region is large,
   this can completely corrupt the connectivity profile of two neurons.
-- **Rare but hard to detect:** Because the boundary looks correct, the
+- **Hard to detect:** Because the boundary looks correct, the
   error is invisible in standard 2D or 3D inspection. It is usually
   discovered only when downstream connectivity analysis produces
   impossible results (e.g., a known inhibitory neuron appearing to make
@@ -270,7 +273,7 @@ propagated to the wrong fragment.
 
 ### 5.3 Worked Example
 
-1. After splitting a merge between neuron A (inhibitory basket cell) and
+1. In release T76, after splitting a merge between neuron A (inhibitory basket cell) and
    neuron B (excitatory pyramidal cell), the proofreader assigns the
    perisomatic basket terminals to neuron B by mistake.
 2. Downstream analysis flags neuron B as making an unusual number of
@@ -285,25 +288,28 @@ propagated to the wrong fragment.
 **There is no field-wide error frequency distribution, and you should be
 suspicious of any table that offers one.** The merge/split ratio is not a
 property of connectomics; it is an *output* of the agglomeration threshold,
-which is a dial the pipeline sets. Plaza, Scheffer & Chklovskii (2014) make the
-point directly: a conservative (high) threshold produces more splits and fewer
-merges, and an aggressive (low) threshold does the reverse. Two groups running
-different thresholds on the same volume get different distributions, and both
-are correct about their own data.
+which the pipeline sets. A conservative threshold (merge only when very sure)
+produces more splits and fewer merges; an aggressive one does the reverse.
+H01 measured this directly: on the same 104 neurons, the conservative c3
+agglomeration needed 1.6-fold fewer merge corrections and 2.1-fold more split
+corrections than c2 (Shapson-Coe et al., 2024; figure above). Two groups
+running different thresholds on the same volume get different distributions,
+and both are correct about their own data.
 
 So the useful hierarchy is by **cost**, which is stable across pipelines, rather
 than by frequency, which is not:
 
 | Error type | Downstream impact | Detectability | Cost to fix |
 |---|---|---|---|
-| **Merge** | Very high — manufactures connections that do not exist, and propagates along the merged object | **Poor.** The merged object still looks like a plausible neuron | High: requires locating the join, often across many sections |
-| **Split** | High — removes real connections, biased toward thin processes | Good. Dead ends are visible and searchable | Low: joining is a single operation |
-| **Boundary** | Moderate — biases spine volume, bouton size, synapse area | Poor. Only visible quantitatively | Moderate |
+| **Merge** | Very high: adds connections that do not exist, across the whole merged object | Poor. The merged object still looks like a plausible neuron | High: requires locating the join, often across many sections |
+| **Split** | High: removes real connections, mostly on thin processes | Good. Dead ends are visible and searchable | Low once found: joining is a single operation |
+| **Boundary** | Moderate: biases spine volume, bouton size, synapse area | Poor. Only visible quantitatively | Moderate |
 | **Identity** | Very high per instance | Very poor | High, and often introduced *by* proofreading |
 
 The asymmetry that matters is between the second and third columns: **the errors
-that are easy to see are the cheap ones**. A segmentation tuned to minimize
-visible error is tuned to maximize the error that corrupts connectivity.
+that are easy to see are the cheap ones**. If you tune a segmentation only to
+reduce the errors you can see, you tend to push error toward merges, the kind
+that corrupts connectivity and hides from inspection.
 
 ### What to measure on your own volume
 
@@ -313,44 +319,48 @@ and tissue you are actually working with:
 1. Take a small subvolume and reconstruct it densely by hand, or use an existing
    gold standard for the same dataset.
 2. Compare against the automated segmentation, and count merges and splits
-   separately. Report them separately — a summed VI hides which dominates.
+   separately. Report them separately: a summed VI hides which dominates.
 3. Repeat at two agglomeration thresholds. The change between them tells you how
    much of your error population is a choice rather than a limitation.
 
 That number is worth more than any published range, because it is the one your
-proofreading budget has to absorb. Unit 03's pilot reconstruction exists for
-exactly this purpose, and Unit 08's planning lab is built around it.
+proofreading budget has to absorb. The pilot reconstruction in
+[Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})
+exists for this purpose, and the proofreading-plan lab in
+[Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+is built around it.
 
 ### On automated error detection
 
-Detector performance is likewise pipeline- and dataset-specific, and is reported
-per class. Two things hold generally enough to plan around: recall is lower for
-splits than for merges, and no current detector is complete enough that a human
-verification pass on a sample can be skipped. Quote the recall figure from the
-detector you are using, on data resembling yours — not a range from a review.
+Detector performance is also specific to the pipeline and dataset, and recall
+differs by error class. One thing holds generally enough to plan around: no
+current detector is complete enough to skip a human verification pass on a
+sample. Quote the recall figure from the detector you are using, on data
+resembling yours, not a range from a review.
 
 ## 7. Common Misconceptions
 
 | Misconception | Reality |
 |---|---|
-| "Superhuman accuracy means proofreading is unnecessary." | Superhuman refers to voxel-level accuracy on small benchmarks. At connectome scale, even small error rates compound to near-certainty of errors per neuron. |
+| "Superhuman accuracy means proofreading is unnecessary." | Superhuman refers to a score on a small benchmark volume. At connectome scale, even small error rates compound to near-certainty of errors per neuron. |
 | "Merge errors are always obvious in 3D." | Small merges (e.g., two thin axons fused for a few sections) can be nearly invisible in 3D mesh views. They are often found only through connectivity analysis. |
 | "Split errors are less harmful than merge errors." | For connectivity analysis, split errors cause missing edges, which can be just as damaging as the false edges from merges, depending on the scientific question. |
-| "Boundary errors don't matter." | For any analysis involving synapse assignment or fine morphological measurement (spine volume, bouton size), boundary errors are critically important. |
-| "More proofreading always helps." | Poorly executed proofreading can introduce new errors (especially identity errors). Quality-controlled proofreading with verification is essential. |
-| "Automated error detection finds all errors." | No current detector is complete. Recall is reported per class and is consistently lower for splits than for merges, so a human verification pass on a sample cannot be skipped. Quote the figure from the detector you are actually running. |
+| "Boundary errors don't matter." | For any analysis involving synapse assignment or fine morphological measurement (spine volume, bouton size), boundary errors can bias the result. |
+| "More proofreading always helps." | Poorly executed proofreading can introduce new errors (especially identity errors). Verify a sample of edits, as you would verify the segmentation. |
+| "Automated error detection finds all errors." | No current detector is complete, and recall differs by error class, so a human verification pass on a sample cannot be skipped. Quote the figure from the detector you are actually running. |
 
 ---
 
-## 8. References
+## 8. References and further reading
 
 - Berger, D. R., Seung, H. S., & Lichtman, J. W. (2018). VAST (Volume
   Annotation and Segmentation Tool): Efficient manual and semi-automatic
   labeling of large 3D image stacks. *Frontiers in Neural Circuits*, 12, 88.
-- Funke, J., Tschopp, F., Grisaitis, W., Sherber, A., Singh, C.,
-  Saalfeld, S., & Turaga, S. C. (2017). A deep structured learning
-  approach towards automating connectome reconstruction from 3D electron
-  microscopy data. *arXiv preprint arXiv:1709.02974*.
+- Funke, J., Tschopp, F., Grisaitis, W., Sheridan, A., Singh, C.,
+  Saalfeld, S., & Turaga, S. C. (2019). Large scale image segmentation
+  with structured loss based deep learning for connectome reconstruction.
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 41(7),
+  1669-1680. (Preprint: arXiv:1709.02974.)
 - Lee, K., Zung, J., Li, P., Jain, V., & Seung, H. S. (2017). Superhuman
   accuracy on the SNEMI3D connectomics challenge. *arXiv preprint
   arXiv:1706.00120*.
@@ -359,6 +369,8 @@ detector you are using, on data resembling yours — not a range from a review.
   Neurobiology*, 25, 201-210.
 - Schneider-Mizell, C. M., et al. (2016). Quantitative neuroanatomy for
   connectomics in Drosophila. *eLife*, 5, e12059.
+- Shapson-Coe, A., et al. (2024). A petavoxel fragment of human cerebral
+  cortex reconstructed at nanoscale resolution. *Science*, 384, eadk4858.
 
 ---
 

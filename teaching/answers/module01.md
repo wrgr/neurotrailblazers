@@ -153,8 +153,10 @@ useful than seven unexplained ticks. Feedback for each error:
 
 ## Session timing (facilitator reference)
 
-This section has no learner task. It lists the case studies used in the landscape
-segment.
+This section has no learner task. It lists the three projects walked through in Block 2
+of the run of show, "Three projects, three driving questions": *C. elegans*, FlyWire and
+MouseConnects. Learners who noted the question behind each can use one as a model for
+item 1 of the sheet.
 
 ## Rubric
 

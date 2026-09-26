@@ -18,9 +18,9 @@ I]({{ '/teaching/pathways/communicating-science-1/' | relative_url }}), or use R
 ## The case
 
 Rosa (from the previous workshop) gives a five-minute talk at a department data blitz on
-her inhibitory-synapse result: synapses land on or near excitatory cell bodies 2.7× more
-often than a null predicts, at materialization version 1078, 2.1× on partly proofread
-axons. Here is the Q&A, as a friend wrote it down.
+her inhibitory-synapse result from a fictional mouse cortex volume at release T12:
+synapses land on or near excitatory cell bodies 2.7× more often than a null predicts,
+2.1× on partly proofread axons. Here is the Q&A, as a friend wrote it down.
 
 1. **Q:** "Sorry, what's a materialization version?"
    **Rosa** (about two minutes): explains the proofreading database, how edits
@@ -95,7 +95,7 @@ This section is yours. You do not have to share it.
 
 ## Exit ticket
 
-Exit ticket: "The question I will rehearse aloud is ___. I will ask ___ to put it to me by
+Finish the sentence: "The question I will rehearse aloud is ___. I will ask ___ to put it to me by
 ___ (date)."
 
 **Follow-through this week:** ask someone more senior to put your hardest question to you

@@ -14,11 +14,11 @@ description: "Five invented lab scenarios to classify and rule on, an error repo
 Noor, Eli, Marcus, Wen, Jonah and Dr. Adeyemi are not real people.
 
 **Definitions for today.** Under the US federal definition, research misconduct is
-**fabrication** (making up data or results), **falsification** (manipulating materials,
-processes or data, or changing or omitting them, so the record is not accurate) or
-**plagiarism** (using another person's ideas, processes, results or words without
-credit). It does not include honest error or differences of opinion. Your institution's
-policy may be broader. Harassment and bullying are serious breaches with their own
+**fabrication** (making up data or results and recording or reporting them),
+**falsification** (manipulating research materials, equipment or processes, or changing
+or omitting data or results, so the research record is not accurate) or **plagiarism**
+(using another person's ideas, processes, results or words without appropriate credit).
+It does not include honest error or differences of opinion. Your institution's policy may be broader. Harassment and bullying are serious breaches with their own
 routes, even when they are not research misconduct.
 
 **The rungs,** from [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}#escalation-when-something-is-wrong):

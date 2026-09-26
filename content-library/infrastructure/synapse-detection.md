@@ -71,7 +71,7 @@ Three residuals are real, and they are what this page is about:
 1. **Recall is not symmetric.** H01's detector missed 11% of excitatory and
    **35%** of inhibitory synapses. Unequal recall biases raw class counts;
    binary-edge performance does not repair a synapse-count ratio.
-2. **Partner assignment is weaker than localisation**, and much weaker where
+2. **Partner assignment is weaker than localization**, and much weaker where
    synapses are polyadic. Buhmann et al. report F1 from 0.59 to 0.73 across four
    areas *of the same fly brain*.
 3. **Transfer is the operational cost.** A detector trained on one volume does
@@ -85,7 +85,7 @@ the established detector, then spend your effort establishing what its recall
 and partner accuracy are *in your region*, and report the table's provenance.
 Section 7 is that checklist.
 
-For what a synapse looks like and how to recognise one by eye, see
+For what a synapse looks like and how to recognize one by eye, see
 [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}).
 
 ---
@@ -95,7 +95,7 @@ For what a synapse looks like and how to recognise one by eye, see
 "Synapse detection" names at least three tasks that succeed and fail
 independently.
 
-**1. Localisation.** Find the synapse. Depending on the method this means
+**1. Localization.** Find the synapse. Depending on the method this means
 segmenting the synaptic cleft as a set of voxels, or predicting a point
 annotation for the presynaptic site, or classifying the *interface* between two
 already-segmented processes as synaptic or not.
@@ -135,12 +135,12 @@ methods' F-scores are **not measuring the same object**.
 | SyConn (Dorkenwald et al.) | 2017 | Synapses and synapse types alongside mitochondria, compartments and cell types | Framework paper; used to compute songbird basal-ganglia wiring | SBEM: zebrafish, mouse, zebra finch |
 | SynEM (Staffler et al.) | 2017 | Neurite-interface classification: synaptic vs non-synaptic | **88% precision, 88% recall** per synapse; **94% precision, 89% recall** for spine synapses; **97% precision and recall** at the level of binary cortical connectomes | Mouse cortex, conventional en-bloc staining, SBEM |
 | 3D U-Net cleft segmentation (Heinrich et al.) | 2018 | Synaptic cleft voxels, by regression on a signed distance transform | Reported as a significant improvement over the prior state of the art on CREMI | Adult *Drosophila*, anisotropic ssTEM; applied to ~50 teravoxels of the whole fly brain |
-| Fully-automatic synapse prediction (Huang et al.) | 2018 | Presynaptic sites (U-Net) plus postsynaptic partners (MLP on segmentation-conditioned features) | Introduced connectome-scale evaluation metrics; reports that complete automatic prediction characterises most connectivity correctly | *Drosophila*, polyadic |
+| Fully-automatic synapse prediction (Huang et al.) | 2018 | Presynaptic sites (U-Net) plus postsynaptic partners (MLP on segmentation-conditioned features) | Introduced connectome-scale evaluation metrics; reports that complete automatic prediction characterizes most connectivity correctly | *Drosophila*, polyadic |
 | Attentional voxel association networks (Turner et al.) | 2020 | Presynaptic and postsynaptic masks, generated from a cleft mask used as an attention gate | Evaluated as part of a combined cleft-plus-partner system | Mouse somatosensory cortex |
 | Synful (Buhmann et al.) | 2021 | Synaptic partners directly, whole-brain | **F1 of 0.73, 0.68, 0.66 and 0.59** in four different brain areas; **244 million** putative synaptic partners extracted from FAFB; 92–96% of edges (calyx and lateral horn) correctly sorted into weakly (<5 synapses) and strongly (≥5) connected | Adult *Drosophila*, FAFB ssTEM |
 | Cerebellum-specific contact classifier (Park et al.) | 2022 | Synaptic vs non-synaptic contacts, plus pre/post side and excitatory/inhibitory type | **F1 = 0.955** on a test volume containing 508 synapses | Mouse cerebellar molecular layer |
 | H01 detector (Shapson-Coe et al.) | 2024 | Three-class U-Net (background / presynaptic / postsynaptic) plus a ResNet-50 excitatory-vs-inhibitory classifier | See §4 — excitatory and inhibitory miss rates differ by more than threefold | Human temporal cortex, ssEM at 4 × 4 nm, ~33 nm sections |
-| SimpSyn (Mohinta et al.) | 2025 | Dual-channel spherical masks around pre- and post-synaptic sites, single-stage residual U-Net | Outperforms Synful in F1 on all volumes in a four-dataset invertebrate benchmark; the authors report that **generalisation across datasets remains limited** | Adult and larval *Drosophila*, *Megaphragma viggianii* |
+| SimpSyn (Mohinta et al.) | 2025 | Dual-channel spherical masks around pre- and post-synaptic sites, single-stage residual U-Net | Outperforms Synful in F1 on all volumes in a four-dataset invertebrate benchmark; the authors report that **generalization across datasets remains limited** | Adult and larval *Drosophila*, *Megaphragma viggianii* |
 
 Three readings of that table matter more than the individual rows.
 
@@ -164,7 +164,7 @@ level of your claim** — for most connectomics, the edge, not the synapse.
 segmentation improved, synapse annotation came to consume "upwards of 50% of
 total effort". Synapse detection stopped being the pipeline's afterthought at
 roughly that point, which is why the later entries above are about partners and
-generalisation rather than about finding clefts.
+generalization rather than about finding clefts.
 
 ---
 
@@ -182,11 +182,11 @@ scored:
 |---|---|
 | Neuron segmentation | Variation of Information, Adapted Rand error, and Tolerant Edit Distance — the metrics explained in [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) |
 | Synapse detection | F-measure over false positives and false negatives, where a predicted cleft voxel beyond a threshold distance from any ground-truth cleft counts as a false positive, and vice versa for false negatives |
-| Connectivity (partner identification) | F-measure over matched (pre, post) pairs, matched by solving an assignment problem that minimises Euclidean distance within a threshold |
+| Connectivity (partner identification) | F-measure over matched (pre, post) pairs, matched by solving an assignment problem that minimizes Euclidean distance within a threshold |
 
 Note what the scoring does *not* do: it does not require a predicted cleft to
 overlap the ground-truth cleft voxel-for-voxel, only to fall within a distance
-tolerance. Cleft detection is a localisation problem with slack, which is why
+tolerance. Cleft detection is a localization problem with slack, which is why
 methods that regress a distance transform (Heinrich et al., 2018) rather than
 classifying voxels do well on it.
 
@@ -217,9 +217,9 @@ cannot: domain adaptation. Its authors annotated 14 image volumes from a
 biologically diverse set of *Megaphragma viggianii* brain regions drawn from
 three different whole-brain datasets, and ran it as an ISBI 2023 challenge.
 Their framing carries the number that defines the problem: manual annotation is
-so expensive that labelled training data is "often smaller than 0.001% of the
+so expensive that labeled training data is "often smaller than 0.001% of the
 large-scale image volumes in application". That ratio, not any single F1, is why
-cross-dataset generalisation is the live question.
+cross-dataset generalization is the live question.
 
 ---
 
@@ -242,7 +242,7 @@ protocol are GABAergic.
 same paper shows that potassium ferrocyanide, used in modern volume-EM protocols
 to enhance membrane contrast, makes postsynaptic densities *thinner* as its
 concentration rises, so symmetric synapses become progressively harder to
-identify; they recommend 0.1%. The consequence for a detector is stark: **the
+identify; they recommend 0.1%. For a detector, that means **the
 feature your inhibitory classifier depends on is partly a property of the
 sample-preparation recipe**, not only of the tissue. A classifier trained on one
 lab's staining is being asked to transfer across chemistry, not just across
@@ -275,7 +275,7 @@ per-synapse predictions as independent evidence double-counts.
 
 ---
 
-## 5. A worked judgement: recounting H01's excitatory/inhibitory balance
+## 5. A worked judgment: recounting H01's excitatory/inhibitory balance
 
 Take the H01 synapse table as released and ask a routine question: what
 fraction of synapses in human temporal cortex are excitatory?
@@ -340,19 +340,19 @@ them can move a detector's output.
 
 The honest summary is narrower than "models do not transfer".
 
-**Within a volume and preparation, spatial generalisation is often fine.**
+**Within a volume and preparation, spatial generalization is often fine.**
 Heinrich et al. report that their model, trained on CREMI's small annotated
 crops, "generalizes well to areas far away from where training data was
 available" — across a whole fly brain, including lamina.
 
 **Across preparations, it is not.** SimpSyn's authors, benchmarking on four
-invertebrate datasets, conclude that generalisation across datasets remains
+invertebrate datasets, conclude that generalization across datasets remains
 limited even for the model that wins within each dataset. SynapseNet's authors
-pair a large annotated training set with explicit domain-adaptation functionality. And WASPSYN exists because, in the organisers'
+pair a large annotated training set with explicit domain-adaptation functionality. And WASPSYN exists because, in the organizers'
 words, methods that "utilize in-domain labeled data and generalize to
 out-of-domain unlabeled data are in urgent need".
 
-That distinction is operational. If you are analysing one released volume, its
+That distinction is operational. If you are analyzing one released volume, its
 detector was probably trained on that volume and the within-sample evidence
 applies to you. If you are bringing a published detector to *new* tissue, you
 are in the regime where the evidence says it will degrade, by an amount nobody

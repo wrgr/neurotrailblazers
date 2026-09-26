@@ -20,9 +20,8 @@ topics:
   - supervoxel graphs
   - proofreading workflows
 primary_units:
-  - proofreading-fundamentals
-  - proofreading-workflows
-  - tool-proficiency
+  - "08"
+  - "04"
 difficulty: intermediate
 tags:
   - proofreading:edit-operations
@@ -33,16 +32,6 @@ tags:
   - connectomics:supervoxel-graph
   - methodology:proofreading-workflow
 micro_lesson_id: ml-proof-tools
-reference_images:
-  - src: /assets/images/content-library/proofreading/proofreading-tools/neuroglancer-interface.png
-    alt: "Neuroglancer interface showing 3D neuron rendering with segmentation overlay"
-    caption: "Neuroglancer proofreading view: orthogonal EM slices (left panels) with 3D mesh rendering (right). Selected segment highlighted in blue."
-  - src: /assets/images/content-library/proofreading/proofreading-tools/cave-edit-operations.png
-    alt: "CAVE edit operation diagram showing merge and split actions on a supervoxel graph"
-    caption: "CAVE editing operations: merge (join two segments at supervoxel boundary) and split (cut segment along supervoxel graph)."
-  - src: /assets/images/content-library/proofreading/proofreading-tools/tool-comparison-matrix.png
-    alt: "Comparison table of CAVE, Neuroglancer, Spelunker, NeuTu, and CATMAID features"
-    caption: "Proofreading tool comparison: platform, backend, editing model, 3D rendering, and scalability across five major tools."
 combines_with:
   - error-taxonomy
   - proofreading-strategies
@@ -55,12 +44,16 @@ content_type: core
 
 ## Instructor Notes
 
-This document is a standalone instructor script covering the major
-software platforms used for connectome proofreading. It provides
-architectural details, practical workflow descriptions, and a comparative
-framework. Adapt to your audience; students who will use these tools
-hands-on need more detail on interface mechanics, while those focused on
-analysis need more on how tools affect data provenance.
+This is a standalone instructor script on the main software used for
+connectome proofreading: how each tool stores edits, what a split and a
+merge look like in it, and where it fits. Students who will edit data
+need more time on interface mechanics. Students who will only analyze
+data need more on how the tool shapes provenance, because it decides
+which IDs and versions they will cite.
+
+Interfaces change faster than this page. Button names and keyboard
+shortcuts are left out on purpose; send students to the current
+documentation for the viewer their project uses.
 
 ---
 
@@ -78,10 +71,9 @@ Proofreading connectome data requires specialized software that can:
 5. **Integrate** with annotation systems (synapse labels, cell type tags,
    compartment labels).
 
-No single tool does all of these perfectly. In practice, most projects use
-a combination: a backend system for data management and versioning, a
-frontend viewer for visualization, and a workflow layer for task
-assignment and quality tracking.
+No single tool does all five. Most projects combine a backend that
+stores the segmentation and its edit history, a browser or desktop viewer,
+and some separate way to hand out tasks and track quality.
 
 ---
 
@@ -89,64 +81,79 @@ assignment and quality tracking.
 
 ### 2.1 Architecture
 
-CAVE, described by Dorkenwald et al. (2022), is the backend infrastructure
-that makes large-scale collaborative proofreading possible. Its core
-innovation is the **chunked supervoxel graph**.
+CAVE (Dorkenwald et al., 2025) is a set of web services for proofreading
+and annotating large EM datasets while many people edit them at once. Its
+core is the **chunked supervoxel graph** (the ChunkedGraph), first used for
+FlyWire (Dorkenwald et al., 2022).
 
 **Supervoxels.** The automated segmentation pipeline produces an
 over-segmentation: millions of small, conservatively drawn segments called
 supervoxels. Each supervoxel is an atomic unit that is never subdivided
-during proofreading. A typical supervoxel might be 1-10 um^3.
+during proofreading.
 
 **Agglomeration graph.** The pipeline then predicts which supervoxels
 belong to the same neuron, creating a graph where nodes are supervoxels
 and edges represent "same neuron" predictions. Each connected component
 of this graph is a segment (a putative neuron).
 
-**Chunked storage.** The graph is spatially chunked, so edits to one
-region do not require rewriting the entire graph. This enables concurrent
-editing by multiple proofreaders without global locks.
+**Chunked storage.** The graph is split into spatial chunks, so an edit
+rewrites only the chunks it touches, not the whole graph. That is what lets
+many proofreaders edit the same dataset at the same time.
 
 ### 2.2 Editing Model
 
-- **Split operation.** The proofreader identifies a merge error and
-  selects the boundary where the split should occur. CAVE removes one or
-  more edges from the supervoxel graph, breaking the connected component
-  into two segments. The underlying supervoxels and image data are never
-  modified.
+- **Split operation.** The proofreader marks points on each side of a
+  merge error. The ChunkedGraph treats the supervoxels under those points
+  as sources and sinks, runs a max-flow/min-cut, and removes the edges the
+  cut finds, breaking the connected component into two segments. The
+  underlying supervoxels and image data are never modified.
 - **Merge operation.** The proofreader identifies two segments that should
   be one neuron and adds an edge between their supervoxels at the point
   of intended connection.
 
-Because edits modify the graph rather than the image volume, they are
-lightweight (a few bytes per edit) and instantaneous.
+Because edits change the graph rather than the image volume, an edit
+does not rewrite voxels. It still changes the cell identity of every voxel
+and annotation on the affected object, which is why CAVE tracks IDs over
+time.
+
+After an edit, the affected object gets new root IDs: the old root ID is
+retired, and each resulting segment receives a new one. This is why code
+that stores a root ID can silently point at an outdated object later.
 
 ### 2.3 Materialization
 
-CAVE periodically creates **materialization snapshots**: frozen states of
-the segmentation graph plus all associated annotations (synapses, cell
-types, etc.) at a specific timestamp. This means:
+Annotations such as synapses are stored as points bound to supervoxels,
+so CAVE can say which root ID each point belonged to at any time. CAVE
+periodically creates **materialization snapshots**: copies of the
+annotation tables with every point mapped to its root ID at one timestamp.
+This means:
 
-- Every analysis can cite a specific materialization version.
-- Edits made after a materialization do not retroactively change published
-  results.
-- Reproducibility is built into the system: anyone can query the same
-  materialization and get identical data.
+- An analysis can cite a materialization version (or a timestamp).
+- Edits made after that version do not change results computed from it.
+- Anyone who queries the same version gets the same tables, **while that
+  version is still served**. Versions are not permanent. MICrONS, for
+  example, keeps a few major analysis versions (943 and 1300) available
+  long-term and archives most others; v1507 was scheduled to leave the
+  live service on 31 July 2026. Record the version and keep a copy of the
+  tables you used.
 
 ### 2.4 Deployments
 
-CAVE is used in:
-- **FlyWire** (Princeton): whole Drosophila brain connectome.
-- **MICrONS** (Allen Institute/Baylor/Princeton): 1 mm^3 mouse visual
-  cortex.
-- **Allen Institute** cortical datasets.
+The CAVE paper (Dorkenwald et al., 2025) lists five published datasets
+proofread or analyzed with it:
+- **FlyWire**: whole adult *Drosophila* brain.
+- **FANC**: *Drosophila* ventral nerve cord.
+- **MICrONS phase 1** and the **MICrONS cubic millimeter** (minnie65):
+  mouse visual cortex.
+- **H01**: human temporal cortex.
 
 ### 2.5 Instructor Tip
 
-Emphasize the insight that decoupling proofreading from re-segmentation
-was a paradigm shift. Before CAVE, fixing an error often meant re-running
-part of the segmentation pipeline. With CAVE, an edit is a graph
-operation that takes milliseconds.
+The point to land is timing. The CAVE authors note that earlier tools and
+workflows offered only static exports once proofreading was finished.
+With CAVE, people can run analyses while proofreading is still going on,
+and still say exactly which state of the data they used. The price is
+that IDs change under you, so every result needs a version or timestamp.
 
 ---
 
@@ -154,65 +161,65 @@ operation that takes milliseconds.
 
 ### 3.1 Overview
 
-Neuroglancer (Google) is a web-based volumetric data viewer that has
-become the de facto standard for visualizing connectome data. It runs
-entirely in the browser using WebGL for GPU-accelerated rendering.
+Neuroglancer, developed at Google, is a browser-based viewer for
+volumetric data. Most large public connectomes can be opened in it. It
+renders on the GPU through WebGL and needs no installation.
 
 ### 3.2 Key Features
 
-**Multi-panel layout.** By default, Neuroglancer shows four panels:
-- XY (axial) view
-- XZ (coronal) view
-- YZ (sagittal) view
-- 3D perspective view with mesh rendering
-
-Users can customize the layout, hide panels, or add additional panels.
+**Multi-panel layout.** The default four-panel layout shows three
+orthogonal cross-sections (XY, XZ and YZ) and a 3D view with meshes. These
+are the volume's own axes, not anatomical planes: whether XZ is coronal
+depends on how the tissue was cut. The layout can be changed to a single
+panel or other arrangements.
 
 **Data sources.** Neuroglancer supports multiple data formats:
 - Precomputed (CloudVolume format): chunked multi-resolution image and
   segmentation volumes stored in cloud storage (Google Cloud, AWS S3).
 - N5 and Zarr: alternative chunked array formats.
-- BOSS (Block Object Storage Service): the format used by some NIH-funded
-  projects.
+- BossDB (Block and Object Storage Service): a cloud archive for
+  volumetric neuroimaging data.
 
-**Segmentation overlays.** Segmentation layers are rendered as colored
-overlays on top of the grayscale EM data. Each segment gets a unique
-color. Selected segments are highlighted; others can be dimmed or hidden.
+**Segmentation overlays.** Segmentation layers are drawn as colored
+overlays on the grayscale EM. Each segment gets its own color, and
+selected segments can be shown alone.
 
 **Annotation layers.** Points, lines, and bounding boxes can be added as
 annotation layers. Synapse locations, cell body positions, and error
 candidates are commonly displayed this way.
 
-**3D mesh rendering.** Segment meshes (precomputed or generated on the
-fly) are displayed in the 3D panel. Users can rotate, zoom, and inspect
-morphology. Mesh quality depends on the resolution of the underlying mesh
-computation.
+**3D mesh rendering.** Segment meshes are shown in the 3D panel. Mesh
+detail depends on the resolution the meshes were computed at, and a mesh
+can lag behind a recent edit, so check 2D slices before trusting a thin
+bridge you see in 3D.
 
 ### 3.3 Editing Integration
 
-When connected to a CAVE backend, Neuroglancer supports direct
-proofreading:
-- **Split mode:** The user selects supervoxels on each side of the desired
-  split boundary. CAVE computes the minimum graph cut and executes the
-  split.
-- **Merge mode:** The user selects a point on each of the two segments to
-  be merged. CAVE adds the corresponding edge.
+When connected to a CAVE backend (a "graphene" segmentation source),
+Neuroglancer supports direct proofreading:
+- **Split (multicut):** The user places points of one color on one side of
+  the merge and points of a second color on the other side. CAVE computes a
+  minimum cut between them, shows a preview, and executes the split.
+- **Merge:** The user draws a connector between a point on each of the two
+  segments. CAVE adds an edge between the supervoxels under those points.
 
 ### 3.4 Shareable State
 
 Every Neuroglancer view is encoded as a JSON state object. This state can
 be serialized to a URL, enabling:
 - **Reproducible navigation:** Share a link that opens Neuroglancer at
-  exactly the same location, zoom level, and layer configuration.
+  the same location, zoom level, and layer configuration. The link stores
+  segment IDs, so after an edit it may show an outdated object.
 - **Error reporting:** "Here is a link to a suspected merge error at
-  coordinates (12045, 8823, 1456)."
-- **Programmatic access:** The Python `nglui` library can generate
-  Neuroglancer state URLs from data queries.
+  voxel (12045, 8823, 1456)." Always give the voxel resolution with the
+  coordinates.
+- **Programmatic access:** The Python `nglui` library can build
+  Neuroglancer states from data queries.
 
 ### 3.5 Python API
 
-The `caveclient` and `nglui` Python packages allow programmatic
-interaction:
+The `caveclient` and `nglui` Python packages cover the same ground from
+code:
 - Query CAVE for segment IDs, synapse tables, and annotations.
 - Generate Neuroglancer URLs that highlight specific neurons or synapses.
 - Batch-generate links for proofreading task lists.
@@ -223,29 +230,24 @@ interaction:
 
 ### 4.1 Overview
 
-Spelunker is a proofreading interface developed collaboratively by
-Princeton University and the Allen Institute for Brain Science. It is
-built on top of CAVE and Neuroglancer but adds a workflow management
-layer.
+Spelunker (`spelunker.cave-explorer.org`) is a build of Neuroglancer for
+proofreading and annotating large EM datasets through CAVE. It is a viewer,
+not a separate backend: edits go to the same CAVE ChunkedGraph as any other
+CAVE-connected client.
 
 ### 4.2 Key Features
 
-- **Task management.** Proofreading tasks (e.g., "proofread neuron X" or
-  "verify synapse Y") are assigned to annotators through a queue system.
-- **Guided workflows.** Annotators follow structured protocols: navigate
-  to a location, make a decision (correct / needs split / needs merge),
-  execute the edit, move to the next task.
-- **Quality tracking dashboards.** Supervisors can monitor: tasks
-  completed per annotator, time per task, agreement rates on
-  double-annotated tasks, and per-region quality metrics.
+- **Proofreading in the viewer.** Split and merge operations are carried
+  out directly in the Neuroglancer interface, largely through key presses.
 - **Integration.** Because it uses CAVE and Neuroglancer under the hood,
   all edits are version-controlled and all state is shareable.
 
 ### 4.3 When to Use
 
-Spelunker is designed for organized proofreading campaigns with multiple
-annotators. It is less suited for ad hoc exploration by individual
-researchers (for that, plain Neuroglancer with CAVE is sufficient).
+Use Spelunker when a CAVE datastack's documentation points you to it for
+proofreading. Task assignment and progress tracking for a campaign are
+handled outside the viewer, by whatever tools the project provides (for
+example, lists of Neuroglancer links generated with `nglui`).
 
 ---
 
@@ -254,36 +256,39 @@ researchers (for that, plain Neuroglancer with CAVE is sufficient).
 ### 5.1 Overview
 
 NeuTu is a desktop application developed at Janelia Research Campus
-(Howard Hughes Medical Institute) for 3D proofreading. It was used
-extensively in the Drosophila hemibrain project (Scheffer et al., 2020).
+(Howard Hughes Medical Institute) for collaborative, segmentation-based
+proofreading (Zhao et al., 2018). Its authors report that it supported the
+fly medulla and mushroom body reconstructions, and Janelia's proofreading
+tools were used in the *Drosophila* hemibrain project (Scheffer et al., 2020).
+The CAVE authors describe NeuTu as supporting neuron-based proofreading at
+scale for a restricted group of proofreaders, in contrast to CAVE's open
+community model (Dorkenwald et al., 2025).
 
 ### 5.2 Key Features
 
-- **Skeleton-based editing.** NeuTu emphasizes skeleton representations:
-  each neuron is represented as a tree of connected nodes. Proofreaders
-  navigate along the skeleton and fix errors.
-- **Real-time 3D mesh updates.** When an edit is made (split or merge),
-  the 3D mesh updates immediately, giving visual feedback.
-- **Body annotation.** Neurons can be tagged with cell type labels,
-  compartment labels (axon, dendrite, soma), and status flags (traced,
-  needs review, orphan).
-- **Desktop performance.** As a native application, NeuTu can achieve
-  smoother rendering than browser-based tools for very large meshes.
+- **Segmentation-based editing.** NeuTu works on a voxel segmentation
+  rather than on hand-placed skeletons: proofreaders correct the labels of
+  bodies in the volume.
+- **2D and 3D views.** Proofreaders work in both image slices and 3D body
+  renderings.
+- **Versioned backend.** NeuTu is a client of DVID, Janelia's distributed,
+  versioned, image-oriented data service.
+- **Desktop application.** NeuTu runs as a native program rather than in
+  the browser.
 
 ### 5.3 Split and Merge in NeuTu
 
-- **Split:** The user places "seeds" on the two sides of the desired
-  split. NeuTu computes a cleave plane through the supervoxel graph and
-  shows a preview. The user confirms or adjusts.
-- **Merge:** The user selects two bodies and confirms the merge. NeuTu
-  adds the appropriate edge to the backend graph (DVID, the Janelia
-  data service).
+- **Split:** The user paints seeds of different colors on the regions
+  that belong to different neurons, in 2D or 3D. NeuTu runs a seeded
+  watershed on the grayscale data to separate the bodies, with a local
+  preview.
+- **Merge:** The user selects the bodies to join. DVID assigns one ID to
+  all their voxels.
 
 ### 5.4 When to Use
 
 NeuTu is best suited for projects that use the Janelia/DVID
-infrastructure and prefer a desktop application. Its skeleton-centric
-design is particularly effective for tracing individual neurons.
+infrastructure and prefer a desktop application.
 
 ---
 
@@ -293,15 +298,16 @@ design is particularly effective for tracing individual neurons.
 
 CATMAID (Collaborative Annotation Toolkit for Massive Amounts of Image
 Data), described by Saalfeld et al. (2009), is one of the earliest
-collaborative annotation platforms for connectomics. It is a web-based
-tool focused on skeleton tracing.
+collaborative annotation platforms for connectomics. It runs in the
+browser and is built around skeleton tracing.
 
-### 6.2 Historical Significance
+### 6.2 Where it has been used
 
-CATMAID was central to several landmark connectomics studies:
-- The Drosophila larval connectome (Ohyama et al., 2015).
-- Early Drosophila adult brain circuit studies (Zheng et al., 2018).
-- Numerous studies of smaller circuits in various organisms.
+CATMAID was the tracing tool for several major fly studies:
+- Larval *Drosophila* circuit studies (e.g., Ohyama et al., 2015) and the
+  complete larval brain connectome, 3,016 neurons (Winding et al., 2023).
+- The first circuit reconstructions in the whole adult fly brain volume,
+  FAFB (Zheng et al., 2018).
 
 ### 6.3 Key Features
 
@@ -317,22 +323,22 @@ CATMAID was central to several landmark connectomics studies:
 
 ### 6.4 Limitations
 
-- **Manual skeleton placement.** Unlike CAVE-based tools that operate on
-  automated segmentation, CATMAID historically required manual node
-  placement. This is slower but can be more accurate in regions where
-  automated segmentation fails.
-- **No native volumetric segmentation editing.** CATMAID skeletons are
-  annotations on top of the image; they do not directly modify a
-  segmentation volume.
-- **Scalability.** For very large datasets (petabyte scale), CATMAID's
-  server architecture can become a bottleneck.
+- **Manual skeleton placement.** Unlike CAVE-based tools that edit an
+  automated segmentation, classic CATMAID tracing places every node by
+  hand. It is slower, but it does not depend on the segmentation being
+  right.
+- **No volumetric segmentation editing.** CATMAID skeletons are
+  annotations on top of the image; they do not change a segmentation
+  volume, so they give no neuron volumes or surface areas.
+- **Throughput.** The limit is annotator time rather than image size:
+  FAFB (about 106 TB) was traced in CATMAID, but hand tracing a whole
+  brain's neurons this way would take far more person-hours than
+  proofreading an automated segmentation.
 
 ### 6.5 Modern Use
 
-CATMAID is still actively maintained and used, particularly for projects
-that rely on skeleton-based analysis or that started before CAVE-based
-tools became available. Some projects use CATMAID for initial tracing
-and then transfer skeletons to CAVE-integrated systems.
+CATMAID is still maintained and used, especially by projects built on
+skeleton analysis and by projects that started before CAVE existed.
 
 ---
 
@@ -347,8 +353,8 @@ operations.
 
 **Procedure (supervoxel graph systems):**
 1. Identify the merge point in 2D slices.
-2. Place selection points (seeds) on each side of the merge -- one on
-   supervoxels belonging to neuron A, one on supervoxels belonging to
+2. Place selection points (seeds) on each side of the merge: some on
+   supervoxels belonging to neuron A, some on supervoxels belonging to
    neuron B.
 3. The system computes a graph cut: the minimum set of edges to remove
    from the supervoxel graph so that the two seed sets are in different
@@ -358,9 +364,12 @@ operations.
 5. The proofreader verifies that the split is correct (each side is a
    single, biologically plausible neuron) and confirms.
 
-**Common pitfall:** Placing seeds too close to the merge point can result
-in an ambiguous cut. Place seeds well away from the error, on regions you
-are confident belong to different neurons.
+**Common pitfall:** Too few seeds, placed far from the merge, leave the
+cut free to fall in the wrong place. FlyWire's own guide says to scroll to
+near where the merge begins and place a number of points on each side,
+working in 2D when the branches are intertwined (FlyWire 101,
+blog.flywire.ai, 2022). Put every seed on a profile you are sure of, and
+check the preview before confirming.
 
 ### 7.2 Merge
 
@@ -371,7 +380,7 @@ are confident belong to different neurons.
    end and a downstream orphan fragment).
 2. Select a point on each fragment, ideally at the location where they
    should connect.
-3. The system adds an edge between the supervoxels at those points,
+3. The system adds an edge between the supervoxels under those points,
    joining the two connected components into one segment.
 4. Verify that the merged segment has continuous, plausible morphology.
 
@@ -389,9 +398,10 @@ section where the tissue was lost).
    missing section.
 3. The painted voxels are assigned to the appropriate segment.
 
-This operation is rarer and more time-consuming than split/merge. It is
-used only when the automated pipeline produced no supervoxels at all in
-a region.
+This is rarer and slower than split or merge, and not every tool offers
+it. CAVE's ChunkedGraph edits only the graph of existing supervoxels, so it
+cannot paint new voxels; voxel-painting tools such as VAST (Berger et al.,
+2018) can.
 
 ### 7.4 Delete (False Segment Removal)
 
@@ -401,8 +411,11 @@ a dust particle on the section).
 
 **Procedure:**
 1. Identify the artifactual segment.
-2. Mark it as "false" or "artifact" in the annotation system.
-3. The segment is excluded from downstream analysis.
+2. Mark it as "false" or "artifact" in the project's annotation tables.
+   In graph-based systems the supervoxels usually stay; the label is what
+   removes the object from analysis.
+3. Downstream queries exclude it only if they filter on that label, so
+   say so in the analysis methods.
 
 ---
 
@@ -412,12 +425,12 @@ a dust particle on the section).
 |---|---|---|---|---|
 | Platform | Web (browser) | Web (browser) | Desktop | Web (browser) |
 | Backend | CAVE (supervoxel graph) | CAVE | DVID | PostgreSQL |
-| Editing model | Graph split/merge | Graph split/merge | Graph split/merge | Skeleton node placement |
-| 3D rendering | WebGL meshes | WebGL meshes | Native OpenGL meshes | Limited (skeleton only) |
-| Task management | Manual (URLs) | Built-in queue | Limited | Review workflow |
+| Editing model | Graph split/merge | Graph split/merge | Seeded-watershed split, label merge | Skeleton node placement |
+| 3D rendering | WebGL meshes | WebGL meshes | Native desktop rendering | Limited (skeleton only) |
+| Task management | Manual (URLs) | Manual (URLs) | Limited | Review workflow |
 | Version control | Materialization snapshots | Materialization snapshots | DVID versioning | Action log |
-| Best for | General-purpose proofreading, exploration | Organized campaigns | Janelia ecosystem, skeleton tracing | Legacy projects, manual tracing |
-| Scalability | Petabyte-scale | Petabyte-scale | Large datasets | Moderate |
+| Best for | General-purpose proofreading, exploration | CAVE datastacks that recommend it | Janelia/DVID ecosystem | Skeleton-based projects, manual tracing |
+| Largest published use | ~1 mm³ volumes (MICrONS, H01) | Same backend as CAVE | Hemibrain (26 teravoxels) | FAFB (~106 TB) |
 
 ---
 
@@ -425,7 +438,9 @@ a dust particle on the section).
 
 ### 9.1 Scenario
 
-You are examining a pyramidal cell in the MICrONS dataset. In 3D, you
+You are examining a pyramidal cell in release T77 of a fictional mouse
+cortex volume, served through a CAVE-backed Neuroglancer. The volume, the
+release and the section numbers are invented for this exercise. In 3D, you
 notice that one dendrite appears to branch into a process that suddenly
 becomes much thinner and heads in an implausible direction. You suspect
 a merge with a nearby axon.
@@ -444,44 +459,59 @@ a merge with a nearby axon.
    example, sections z=1023 to z=1025 show the dendrite and axon
    profiles merging into a single label.
 
-4. **Activate split mode.** In Neuroglancer's toolbar, select the split
-   tool (or use the keyboard shortcut, typically 'S' in CAVE-enabled
-   Neuroglancer).
+4. **Activate split mode.** Select the split (multicut) tool. The control
+   and any keyboard shortcut differ between Neuroglancer builds, so check
+   the documentation for the one your project uses.
 
-5. **Place seeds.** Click on a supervoxel that clearly belongs to the
-   dendrite (e.g., at z=1020, well away from the merge). Then click on a
-   supervoxel that clearly belongs to the axon (e.g., at z=1028, on the
-   thin process after the branch point).
+5. **Place seeds.** Place several points on profiles that clearly belong
+   to the dendrite, from z=1020 up to z=1023 where the merge begins. Then
+   place several points of the other color on the axon, from z=1025 to
+   z=1028 on the thin process past the branch point. Seeds near the merge
+   pin the cut there; seeds farther out stop it from taking a shortcut
+   elsewhere.
 
-6. **Preview.** CAVE computes the graph cut and displays a preview: the
-   dendrite in blue, the axon in red (or similar color scheme). Inspect
-   both sides: does the blue segment look like a complete, plausible
-   dendrite? Does the red segment look like a complete axon?
+6. **Preview.** CAVE computes the graph cut and displays a preview of the
+   two sides in different colors. Inspect both sides: does the dendrite
+   side look like a complete, plausible dendrite? Does the axon side look
+   like a complete axon?
 
 7. **Confirm.** If the preview looks correct, confirm the split. CAVE
-   removes the offending edges from the supervoxel graph. The segment
-   ID of the original neuron now refers only to the dendrite side; the
-   axon side receives a new segment ID.
+   removes the offending edges from the supervoxel graph. The original
+   root ID is retired, and both the dendrite side and the axon side
+   receive new root IDs.
 
-8. **Verify in 3D.** Refresh the mesh. The dendrite should now have
+8. **Verify in 3D.** Reload the meshes. The dendrite should now have
    smooth, continuous morphology without the implausible branch. The
    axon should appear as a separate segment.
 
-9. **Check synapses.** Any synapses that were located on the now-separated
-   axon are automatically re-assigned to the new segment ID. Verify that
-   no synapses near the merge point were incorrectly assigned.
+9. **Check synapses.** Synapse annotations are bound to supervoxels, so
+   live queries and the next materialization attribute them to the new
+   root IDs without manual reassignment. Check the synapses near the cut:
+   if a supervoxel itself straddled the two processes, its synapses can
+   still land on the wrong side.
 
-10. **Document.** The edit is automatically logged in CAVE with your user
-    ID, timestamp, and the specific graph edges removed.
+10. **Document.** CAVE logs the operation with your user ID and a
+    timestamp. Add a note in the project's tracking sheet or annotation
+    table saying why you split, since the log records what changed but
+    not your reasoning.
 
 ---
 
 ## 10. References
 
+- Berger, D. R., Seung, H. S., & Lichtman, J. W. (2018). VAST (Volume
+  Annotation and Segmentation Tool): Efficient manual and semi-automatic
+  labeling of large 3D image stacks. *Frontiers in Neural Circuits*, 12, 88.
 - Dorkenwald, S., et al. (2022). FlyWire: Online community for whole-brain
   connectomics. *Nature Methods*, 19, 119-128.
 - Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult
   brain. *Nature*, 634, 124-138.
+- Dorkenwald, S., Schneider-Mizell, C. M., et al. (2025). CAVE: Connectome
+  Annotation Versioning Engine. *Nature Methods*, 22, 1112-1120.
+  doi:10.1038/s41592-024-02426-z.
+- Zhao, T., Olbris, D. J., Yu, Y., & Plaza, S. M. (2018). NeuTu: Software
+  for collaborative, large-scale, segmentation-based connectome
+  reconstruction. *Frontiers in Neural Circuits*, 12, 101.
 - Saalfeld, S., Cardona, A., Hartenstein, V., & Tomancak, P. (2009).
   CATMAID: Collaborative annotation toolkit for massive amounts of image
   data. *Bioinformatics*, 25(15), 1984-1986.
@@ -491,6 +521,10 @@ a merge with a nearby axon.
   action selection in Drosophila. *Nature*, 520, 633-639.
 - Zheng, Z., et al. (2018). A complete electron microscopy volume of the
   brain of adult Drosophila melanogaster. *Cell*, 174(3), 730-743.
+- Winding, M., et al. (2023). The connectome of an insect brain.
+  *Science*, 379, eadd9330.
+- FlyWire (2022). FlyWire 101. FlyWire Blog,
+  <https://blog.flywire.ai/2022/04/22/flywire-101/> (read 26 September 2026).
 
 ---
 

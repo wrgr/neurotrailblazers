@@ -28,19 +28,19 @@ Silence is read as progress, so Dr. Halvorsen still believes a number Sam now do
 
 **The possible project signal** is Monday. If the stable-ID rerun also shows a small
 effect, the question "are these pairs enriched?" may have a smaller or null answer.
-That is a conversation about the project, held with the supervisor. It is a result,
-not a failure of Sam's.
+That is a conversation about the project, held with the supervisor. A smaller effect
+is a result. It does not count against Sam.
 
-Accept the answer that Tuesday also reflects a process gap: no EXPECTED lines and no
-pinned version meant nothing caught either problem early. That is a protocol fix, as
-the lab norms page says, not a call for more care.
+Accept the answer that Monday and Tuesday also point to a process gap. With no pinned
+version and no EXPECTED lines, nothing caught either problem early. The lab norms page
+treats that as a protocol fix. More care would not have helped.
 
 ## 2. Model bad-week report
 
 > "Three things, most important first. The 1.8-fold enrichment I showed on the 3rd was
 > computed on an older materialization version. On the current version it is 1.2-fold,
-> and 22 of the 140 cells changed IDs, mostly in the region where the large merge was
-> fixed. So I think the result I presented is overstated. Second, quality review flagged
+> and 22 of the 140 cells changed IDs. Priya says the new version fixed a large merge
+> in my region. So I think the result I presented is overstated. Second, quality review flagged
 > 9 of my 60 edits, all thin-bridge merges; I am re-checking my other edits of that type
 > by Wednesday. Third, the abstract was rejected for lacking a null. My proposal: rerun
 > on stable-ID cells at both versions with a stated null, and bring both numbers to lab

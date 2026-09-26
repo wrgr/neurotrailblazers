@@ -24,7 +24,7 @@ categories:
   - id: connectomics
     title: Training built on connectome data
     intro: >-
-      The closest neighbours to this site: programmes that teach with the same
+      The closest neighbors to this site: programs that teach with the same
       datasets NeuroTrailblazers teaches with. If you want more practice on
       MICrONS or FlyWire specifically, start here rather than with a general
       neuroscience course.
@@ -69,10 +69,10 @@ categories:
         url: https://alleninstitute.org/education
         audience: Educators, undergraduates, the public
         format: Workshops, teaching resources, field trips, public events
-        cadence: Year-round programme
+        cadence: Year-round program
         cost: Varies by event
         note: >-
-          The broader education programme the connectomics teaching workshop
+          The broader education program the connectomics teaching workshop
           sits inside, including Python workshops on Allen open datasets and the
           Summer Workshop on the Dynamic Brain.
         boundary: >-
@@ -85,12 +85,12 @@ categories:
     intro: >-
       Residential or cohort-based courses in computational and experimental
       neuroscience. These are where a learner who has finished the technical
-      units goes for bench or modelling depth this site cannot give online.
+      units goes for bench or modeling depth this site cannot give online.
     entries:
       - name: Neuromatch Academy
         org: Neuromatch
         url: https://neuromatch.io/computational-neuroscience/
-        audience: Students and researchers entering neuroscience, ML and modelling
+        audience: Students and researchers entering neuroscience, ML and modeling
         format: Intensive live online course in small "pods" with a teaching assistant and a mentored group project
         cadence: Annual, July; applications close in the spring
         cost: Tuition adjusted to local cost of living; waivers available at enrollment
@@ -99,7 +99,7 @@ categories:
           and Climate Science. Pods are matched by time zone, research interest
           and where possible language. Course content is public on GitHub.
         boundary: >-
-          Teaches modelling and analysis method. It does not teach where the
+          Teaches modeling and analysis method. It does not teach where the
           connectivity data comes from or how to judge a reconstruction, which
           is what technical units 03-08 here are for.
         verified: 2026-09-15
@@ -109,11 +109,11 @@ categories:
         url: https://cajal-training.org/courses/
         audience: PhD students and postdocs
         format: Three-week project-based residential courses; lectures plus hands-on experimental sessions
-        cadence: Annual programme of courses
+        cadence: Annual program of courses
         cost: Fees apply; check each course
         note: >-
-          Established 2015. Courses span neural circuit methods - optical,
-          electrophysiological, viral tracing, anatomical, optogenetic - plus
+          Established 2015. Courses span neural circuit methods (optical,
+          electrophysiological, viral tracing, anatomical, optogenetic) plus
           computational neuroscience, at Bordeaux and at the Champalimaud Centre
           in Lisbon.
         boundary: >-
@@ -147,7 +147,7 @@ categories:
         note: >-
           Relevant offerings include Imaging Structure and Function in the
           Nervous System, Drosophila Neurobiology (genes, circuits and
-          behaviour), and Computational Neuroscience: Vision. Courses run all
+          behavior), and Computational Neuroscience: Vision. Courses run all
           day including evenings and weekends, with students resident on campus.
         boundary: >-
           Imaging and model-organism technique. The Drosophila course is the
@@ -164,7 +164,7 @@ categories:
         org: International Neuroinformatics Coordinating Facility
         url: https://training.incf.org/
         audience: Anyone
-        format: Aggregated online course catalogue - videos, lectures, hands-on tutorials
+        format: "Aggregated online course catalog: videos, lectures, hands-on tutorials"
         cadence: Always open
         cost: Free
         note: >-
@@ -200,7 +200,7 @@ categories:
     intro: >-
       Training is only reachable if something funds it. These are the standing
       NIH mechanisms most relevant to someone moving into connectomics. Specific
-      funding opportunity announcements open and expire on their own schedule -
+      funding opportunity announcements open and expire on their own schedule, so
       always confirm a mechanism is currently active before building a plan on it.
     entries:
       - name: BRAIN Initiative Training Program
@@ -208,8 +208,8 @@ categories:
         url: https://braininitiative.nih.gov/research/training-inclusion-and-equity/training-program
         audience: Predoctoral through early-career faculty
         format: Portfolio hub for BRAIN-specific training and career-development awards
-        cadence: Standing programme; individual announcements vary
-        cost: n/a - this is funding
+        cadence: Standing program; individual announcements vary
+        cost: Not applicable; this is funding
         note: >-
           The entry point for BRAIN Initiative training mechanisms. Start here
           rather than with an individual announcement, which may have expired.
@@ -225,27 +225,29 @@ categories:
         audience: Postbaccalaureate, graduate, postdoctoral and junior faculty researchers
         format: Institutional research education award
         cadence: Standing mechanism
-        cost: n/a - this is funding
+        cost: Not applicable; this is funding
         note: >-
           Targets retention rather than recruitment: mentoring, scientific
           networks, professional development, and the institutional environment
           around inclusion.
         boundary: >-
-          Funds programmes, not individuals directly. If you are a learner, the
+          Funds programs, not individuals directly. If you are a learner, the
           question to ask your institution is whether it holds one.
         verified: 2026-09-15
 
-      - name: BRAIN Advanced Postdoctoral Career Transition Award (K99/R00)
+      - name: BRAIN Initiative Advanced Postdoctoral Career Transition Award to Promote Diversity (K99/R00)
         org: NIH BRAIN Initiative
         url: https://braininitiative.nih.gov/funding-opportunies/brain-initiative-advanced-postdoctoral-career-transition-award-promote-0
         audience: Postdocs in BRAIN Initiative research areas moving to independence
         format: Mentored-to-independent career transition award
-        cadence: Reissued periodically; confirm the current announcement
-        cost: n/a - this is funding
+        cadence: Reissued periodically; confirm on grants.nih.gov that a current announcement exists
+        cost: Not applicable; this is funding
         note: >-
-          The standard route from a connectomics postdoc to a tenure-track
-          position while staying in BRAIN research areas.
+          A mentored-to-independent route from a postdoc to a faculty position
+          in BRAIN Initiative research areas. Earlier announcements of this
+          award are listed as expired on grants.nih.gov; check for a current one
+          before planning on it.
         boundary: >-
-          Career mechanics - what these applications actually require - are
+          Career mechanics (what these applications actually require) are
           covered in this site's hidden curriculum.
         verified: 2026-09-15

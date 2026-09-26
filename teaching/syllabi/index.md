@@ -59,17 +59,18 @@ lecture-only slot.
   record and write an analysis card. That brief is the thread both maps follow to the
   final project. The optional fifth session,
   [Ethics and Governance]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}),
-  adds a licence, human-tissue and credit note to the same brief. Both maps include it.
+  adds a license, human-tissue and credit note to the same brief. Both maps include it.
 - **Technical units.** The nine [Technical Course]({{ '/technical-training/' | relative_url }})
   units supply the pre-reading. Some also supply a lab, and each lab has its own rubric.
   Labs that need live data or a proofreading account are adapted or omitted, and each
   map says which.
 - **Module session kits.** The [session kits]({{ '/teaching/sessions/' | relative_url }})
   list 3–6 hours per module. On these maps a kit gets one 90-minute meeting: learners read
-  the module's concept set beforehand, and the meeting runs the kit's activity steps. A
-  kit is used only when its scenario can run from the kit text. Some kits name patches or
-  sample files that the site does not publish; the Module 03 and 05 worksheets are
-  examples. The instructor has to supply those files.
+  the module's concept set beforehand, and the meeting runs the kit's activity steps.
+  Every material a kit names resolves: synthetic data under `assets/kits/`, a page on
+  this site, or, for Modules 04 and 05, a recipe for a patch set the instructor builds
+  from a public volume. Kits left off a map are left off for time or overlap, and each map
+  says which.
 - **Professional Pathways workshops.** The [ten workshops]({{ '/teaching/pathways/' | relative_url }})
   run alongside the technical work, one every two to four weeks, at their
   [MERIT]({{ '/models/' | relative_url }}) stages. They are not a block at the end. The
@@ -79,9 +80,11 @@ lecture-only slot.
 
 Each map has one meeting for the [MICrONS real-data
 lab]({{ '/notebooks/microns-lab/' | relative_url }}): a notebook pinned to
-materialization v1507 that reads static public exports, so no account is needed. It was
-rerun from clean environments with byte-identical results, and the page archives the
-outputs for comparison. If a room has no network or no Python, the fallback is the
+materialization v1507 that reads static public exports, so no account is needed. The
+MICrONS team scheduled v1507 to leave the live CAVE service on 31 July 2026; the static
+exports the lab reads still resolved on 26 September 2026. The lab was rerun four times
+from clean environments on Python 3.11 and 3.13 with byte-identical results, and the page
+archives the outputs for comparison. If a room has no network or no Python, the fallback is the
 archived executed notebook, or Unit 04's capacity plan plus a second pass through the
 Session 3 offline query. The
 [Connectome Quality notebooks]({{ '/notebooks/connectome-quality/' | relative_url }})

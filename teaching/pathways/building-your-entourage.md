@@ -23,9 +23,10 @@ description: "A 90-minute workshop on telling borrowed professional ties from yo
 
 Learners sort professional ties by how they started (through a mentor, or by their own
 action) and by what flows each way. They test which ties would survive their mentor
-leaving. They write three short first messages to people who already half-know them,
-each specific, each with one answerable question, each offering something back. In
-private, they map their own ties and draft three messages to real people.
+leaving. They write three short first messages to people who already half-know them.
+Each message names something specific, asks one question that can be answered in a
+sentence, and offers something back. In private, they map their own ties and draft
+three messages to real people.
 
 [Module 24]({{ '/modules/module24/' | relative_url }}) builds a mentorship map with
 five roles and teaches the cold email to a prospective supervisor. [Module
@@ -43,9 +44,10 @@ aloud, and nobody sends anything during the session.
 ## Timed plan and facilitator cues
 
 - **0–10 min:** follow-through from Charting Your Course: ask who ran the first week of
-  a probe and what it showed. Take two answers. Then describe one professional tie that matters to you. Say whether it
-  started through your mentor or through something you did, and what you have given
-  back. Ask: "If your mentor left tomorrow, who would still answer your email?"
+  a probe and what it showed. Take two answers. Then describe one professional tie that
+  matters to you: whether it started through your mentor or through something you did,
+  and what you have given back. Ask: "If your mentor left tomorrow, who would still
+  answer your email?"
 - **10–20 min:** borrowed versus own. Read the MERIT line: introductions made on a
   mentee's behalf are a mentor asset; conversations the mentee starts are the
   mentee's. Then read the career mechanics point that collaborations form when one
@@ -74,12 +76,12 @@ anyone's map. If a learner says their only professional relationship is with a
 supervisor who is the problem, do not solve it in the room. Point to the escalation
 section of the lab norms page and to the
 [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) page, and name a person
-in your program they can talk to afterwards.
+in your program they can talk to afterward.
 
-Writing directly to a mentor's collaborator is not going around the mentor. Say
-that the first direct message should be one the mentor knows about. Learners who fear
-that networking is transactional can be told the plain version: a tie where only one
-side gives is a favor account, and it runs out.
+Some learners worry that writing to a mentor's collaborator goes around the mentor. It
+does not, as long as the mentor knows about the first message. Say so. Learners who
+find networking transactional can hear the plain version: a tie where only one side
+gives is a favor account, and it runs out.
 
 ## Assessment and follow-through
 

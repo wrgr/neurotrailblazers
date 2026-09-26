@@ -5,7 +5,7 @@ permalink: /content-library/neuroanatomy/synapse-classification/
 image: /assets/images/content-library/neuroanatomy/synapse-classification.svg
 image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
-  Comprehensive instructor reference on synapse classification in electron microscopy,
+  Instructor reference on synapse classification in electron microscopy,
   covering the Gray Type I/Type II system, synaptic cleft structure, pre- and
   postsynaptic specializations, electrical synapses, multi-synapse boutons, and a
   step-by-step synapse identification protocol for annotators.
@@ -23,9 +23,7 @@ topics:
   - multi-synapse boutons
   - synapse annotation protocol
 primary_units:
-  - unit-3-synaptic-structure
-  - unit-4-circuit-analysis
-  - unit-5-annotation-methods
+  - "05"
 difficulty: intermediate
 tags:
   - neuroanatomy:synapse
@@ -38,16 +36,6 @@ tags:
   - proofreading:synapse-annotation
   - methodology:classification
 micro_lesson_id: ml-neuro-synapse
-reference_images:
-  - src: /assets/images/content-library/neuroanatomy/synapse-classification/asymmetric-synapse.png
-    alt: "Gray Type I asymmetric synapse with prominent PSD and round vesicles"
-    caption: "Asymmetric (excitatory) synapse showing thick PSD, round clear vesicles, and wide synaptic cleft (~20 nm)."
-  - src: /assets/images/content-library/neuroanatomy/synapse-classification/symmetric-synapse.png
-    alt: "Gray Type II symmetric synapse with thin PSD and pleomorphic vesicles"
-    caption: "Symmetric (inhibitory) synapse with thin PSD on both sides, pleomorphic vesicles, and narrow cleft (~12 nm)."
-  - src: /assets/images/content-library/neuroanatomy/synapse-classification/synapse-comparison-diagram.png
-    alt: "Side-by-side diagram comparing asymmetric and symmetric synapses"
-    caption: "Comparison of key ultrastructural features used to classify synapses in EM volumes."
 combines_with:
   - dendrite-biology
   - axon-biology
@@ -60,25 +48,25 @@ content_type: core
 
 ## Introduction
 
-Synapse identification and classification is one of the most critical skills for EM annotators and one of the primary goals of connectomics. The ability to distinguish excitatory from inhibitory synapses, to separate genuine synapses from look-alikes, and to systematically annotate them across a volume is foundational to circuit reconstruction. This script provides a detailed guide to synapse ultrastructure and classification, grounded in the framework established by E. G. Gray in 1959 and refined over subsequent decades.
+A connectome is a list of synapses, so every error in finding or typing a synapse becomes an error in the wiring diagram. This script covers how to tell excitatory from inhibitory synapses, how to separate real synapses from look-alikes, and how to annotate them consistently across a volume. The framework starts with E. G. Gray in 1959 and was extended by others over the following decade.
 
 ---
 
 ## 1. The Gray Classification System
 
-In 1959, Edward George Gray published a landmark paper describing two morphologically distinct synapse types in the cerebral cortex of the rat (Gray, 1959). This classification remains the standard framework for EM-based synapse identification.
+In 1959, Edward George Gray described two morphologically distinct synapse types in the rat cerebral cortex (Gray, 1959). His criteria were the extent and thickness of the membrane densities and the width of the cleft. He found Type 1 contacts mostly on dendrites and Type 2 contacts on cell bodies. Two parts of the modern scheme came later: Uchizono (1965) linked flattened vesicles to inhibitory synapses and round vesicles to excitatory ones, and Colonnier (1968) introduced the terms "asymmetric" and "symmetric". The excitatory/inhibitory reading of the two types was confirmed later still, when glutamate and GABA were localized to them (Klemann & Roubos, 2011). The scheme remains the standard framework for EM-based synapse identification.
 
 ### 1.1 Type I (Asymmetric) Synapses
 
 Type I synapses are characterized by a pronounced asymmetry between the pre- and postsynaptic densities:
 
-- **Postsynaptic density (PSD)**: Thick and conspicuous, typically greater than 30 nm in thickness. The PSD appears as a prominent electron-dense band on the cytoplasmic face of the postsynaptic membrane.
+- **Postsynaptic density (PSD)**: Thick and conspicuous, extending about 35-50 nm into the cytoplasm (Harris & Weinberg, 2012). The PSD appears as a prominent electron-dense band on the cytoplasmic face of the postsynaptic membrane.
 - **Presynaptic density**: Thin or modest, creating the defining asymmetry — the postsynaptic side is much more electron-dense than the presynaptic side.
-- **Vesicle morphology**: Round or spherical vesicles, approximately 40-50 nm in diameter. The round shape is maintained in well-fixed, aldehyde-fixed tissue.
-- **Synaptic cleft width**: Approximately 20 nm, wider than Type II synapses.
+- **Vesicle morphology**: Round, clear vesicles, about 35-45 nm in diameter (Harris & Weinberg, 2012, give about 35 nm). The round shape is kept in well-fixed, aldehyde-fixed tissue.
+- **Synaptic cleft width**: Approximately 20 nm, wider than Type II synapses (Harris & Weinberg, 2012; High et al., 2015).
 - **Cleft material**: Dense proteinaceous material fills the cleft, visible as a fuzzy band between the membranes. This material includes trans-synaptic adhesion molecules (neurexin-neuroligin complexes, SynCAMs).
 - **Neurotransmitter**: Predominantly glutamatergic (excitatory).
-- **Postsynaptic targets**: Most commonly found on dendritic spines (axospinous synapses) and dendritic shafts (axodendritic synapses). Rare on somata.
+- **Postsynaptic targets**: Most commonly found on dendritic spines (axospinous synapses) and dendritic shafts (axodendritic synapses). Rare on somata: in cat area 17, 79% of asymmetric synapses were on spines, 21% on dendritic shafts and 0.1% on cell bodies (Beaulieu & Colonnier, 1985). Interneuron somata are the main exception.
 
 ### 1.2 Type II (Symmetric) Synapses
 
@@ -87,33 +75,33 @@ Type II synapses show roughly equal density on both sides of the synaptic juncti
 - **Postsynaptic density**: Thin, comparable in thickness to the presynaptic density. Both sides show a modest electron-dense coating, creating the symmetric appearance.
 - **Presynaptic density**: Similar thickness to the PSD, contributing to the overall symmetry.
 - **Vesicle morphology**: Pleomorphic (variable in shape) or flattened vesicles. In aldehyde-fixed tissue, these vesicles tend to adopt oval or flattened profiles rather than the perfectly round shape of Type I vesicles. Note: vesicle shape is somewhat fixation-dependent, and some authors prefer to describe these as "pleomorphic" rather than "flattened."
-- **Synaptic cleft width**: Approximately 12 nm, narrower than Type I.
+- **Synaptic cleft width**: Approximately 12 nm, narrower than Type I. Electron tomography found inhibitory clefts narrowing to 6 nm at their edges, against a uniform 18 nm at excitatory synapses (High et al., 2015).
 - **Cleft material**: Present but less prominent than in Type I.
 - **Neurotransmitter**: Predominantly GABAergic (inhibitory). Also includes glycinergic synapses in brainstem and spinal cord.
-- **Postsynaptic targets**: Found on somata (axosomatic synapses), proximal dendrites (axodendritic on shaft), and the axon initial segment (axoaxonic synapses). Can also occur on dendritic shafts at any level.
+- **Postsynaptic targets**: Found on somata (axosomatic synapses), dendritic shafts (axodendritic synapses) and the axon initial segment (axoaxonic synapses). They are not confined to those sites: in cat area 17, 62% of symmetric synapses were on dendritic shafts, 31% on spines and 7% on somata (Beaulieu & Colonnier, 1985).
 
 ### 1.3 Summary Comparison Table
 
 | Feature | Type I (Asymmetric) | Type II (Symmetric) |
 |---|---|---|
-| PSD thickness | Thick (>30 nm) | Thin (~15 nm) |
+| PSD thickness | Thick (about 35-50 nm) | Thin, about as thick as the presynaptic density |
 | Pre vs. post density | Asymmetric (post >> pre) | Symmetric (post approximately equals pre) |
 | Vesicle shape | Round/spherical | Pleomorphic/flattened |
 | Cleft width | ~20 nm | ~12 nm |
 | Neurotransmitter | Glutamate (excitatory) | GABA (inhibitory) |
-| Typical targets | Spines, distal dendrite shafts | Soma, proximal dendrites, AIS |
+| Typical targets | Spines, dendritic shafts | Dendritic shafts, soma, AIS; some spines |
 
 ---
 
 {% include figure.html
    src="/assets/images/content-library/em/synapse-asymmetric-vs-symmetric.jpg"
    alt="Two synapses side by side at 4 nm per pixel: an excitatory synapse on the left and an inhibitory synapse on the right, each marked only by ticks at the frame edge so the densities are unobstructed."
-   caption="Two real synapses at matched scale, the dataset&#39;s own excitatory (left) and inhibitory (right) calls. Nothing is drawn over either synapse &mdash; the ticks sit at the frame edge and point to the centre &mdash; because the density is the evidence. Note how <em>subtle</em> the asymmetry is: at 4 nm a Type I PSD is only 8&ndash;12 pixels thick, and H01&#39;s own excitatory/inhibitory classifier is right about 85&ndash;87% of the time. This is the real difficulty of the task, not the idealised diagram version."
+   caption="Two real synapses at matched scale, the dataset&#39;s own excitatory (left) and inhibitory (right) calls. Nothing is drawn over either synapse. The ticks sit at the frame edge and point to the center, because the density is the evidence. The asymmetry is <em>subtle</em>: at 4 nm per pixel a Type I PSD is only 8&ndash;12 pixels thick, and H01&#39;s own excitatory/inhibitory classifier is right about 85&ndash;87% of the time. Idealized diagrams hide this."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## 2. The Continuum Problem
 
-An important caveat: not all synapses fit neatly into the Type I / Type II dichotomy. Colonnier (1968) was among the first to emphasize that synapses exist on a morphological continuum:
+Not every synapse fits the Type I / Type II split. Many are hard to classify as either, and the correspondence between shape and function has exceptions (Klemann & Roubos, 2011). The usual sources of ambiguity:
 
 - **Intermediate synapses**: Some synapses show a PSD that is thicker than typical Type II but thinner than classic Type I. Vesicles may be round but the density is not strongly asymmetric.
 - **Fixation effects**: Vesicle shape is influenced by fixation and osmolarity of the fixative. Glutaraldehyde fixation tends to preserve round vesicle shape, while some fixation protocols can flatten vesicles artifactually.
@@ -142,7 +130,7 @@ The synaptic cleft is the extracellular gap between the pre- and postsynaptic me
 
 The presynaptic terminal contains several ultrastructural features beyond the vesicle cluster:
 
-- **Active zone**: The electron-dense material on the cytoplasmic face of the presynaptic membrane where vesicle docking and fusion occur. See axon-biology.md for detail.
+- **Active zone**: The electron-dense material on the cytoplasmic face of the presynaptic membrane where vesicle docking and fusion occur. See [Axon biology]({{ '/content-library/neuroanatomy/axon-biology/' | relative_url }}) for detail.
 - **Vesicle clustering**: Synaptic vesicles are concentrated at the active zone, with a gradient from tightly packed (docked) vesicles at the membrane to more dispersed vesicles deeper in the bouton.
 - **Mitochondria**: Frequently present in presynaptic terminals, positioned near the vesicle cluster to supply ATP for vesicle recycling. Their presence helps distinguish boutons from other small profiles.
 - **Endocytic zones**: Lateral to the active zone, clathrin-coated pits and coated vesicles represent the endocytic machinery for vesicle membrane retrieval following exocytosis.
@@ -156,7 +144,7 @@ The presynaptic terminal contains several ultrastructural features beyond the ve
 The postsynaptic side has its own set of ultrastructural features:
 
 - **Postsynaptic density (PSD)**: The defining feature of the postsynaptic side, containing scaffolding proteins, receptors, and signaling molecules. Size and thickness correlate with synapse strength and type.
-- **Spine apparatus**: In spine synapses, a smooth ER derivative may be present in the spine neck or head (see dendrite-biology.md).
+- **Spine apparatus**: In spine synapses, a smooth ER derivative may be present in the spine neck or head (see [Dendrite biology]({{ '/content-library/neuroanatomy/dendrite-biology/' | relative_url }})).
 - **Smooth ER**: Tubular profiles of SER are often found near the PSD, serving as local calcium stores. IP3 receptor-mediated calcium release from this ER contributes to postsynaptic signaling.
 - **Endocytic zones**: Clathrin-coated pits lateral to the PSD mediate AMPA receptor internalization during synaptic depression. These appear as membrane invaginations with a fuzzy coat.
 - **Polyribosomes**: Clusters of ribosomes near the base of dendritic spines support local protein synthesis for synaptic plasticity.
@@ -169,20 +157,20 @@ The postsynaptic side has its own set of ultrastructural features:
 While chemical synapses dominate in the mammalian brain, electrical synapses also exist:
 
 - **Structure**: Gap junctions are composed of hexagonal arrays of connexin hemichannels (connexons). Each connexon on one cell aligns with a connexon on the adjacent cell to form a complete channel.
-- **EM appearance**: The two apposed membranes are separated by an extremely narrow gap of approximately 2-3 nm (compared to 12-20 nm for chemical synapses). At high magnification, the regular array of connexon complexes may be visible as a periodic structure with approximately 9 nm spacing.
-- **Pentalaminar appearance**: In cross-section, the gap junction appears as five layers — outer leaflet, inner leaflet of cell 1, the narrow gap, inner leaflet, outer leaflet of cell 2 — with the two inner leaflets appearing darker due to the connexon proteins.
+- **EM appearance**: The two apposed membranes are separated by a gap of about 2 nm (compared to 12-20 nm for chemical synapses). Revel and Karnovsky (1967) showed the gap by filling it with lanthanum, which also revealed the hexagonal array of subunits in face view. That array is seen in freeze-fracture or tracer-filled preparations, not in a routinely stained connectomics volume.
+- **Not a tight junction**: A tight junction is pentalaminar: the outer leaflets of the two membranes fuse and no gap remains. A gap junction keeps its narrow gap. At 4-8 nm pixels, though, a 2 nm gap is below one pixel, so in most connectomics volumes a gap junction looks like a short stretch of fused, darkened membrane with no vesicles on either side.
 - **Distribution in cortex**: Gap junctions are found primarily between GABAergic interneurons (especially parvalbumin-positive basket cells and between cells of the same subtype). They are composed of connexin-36 (Cx36) in neurons.
-- **Frequency**: Relatively rare compared to chemical synapses. In cortical EM volumes, gap junctions may be encountered only occasionally.
+- **Frequency**: Rare compared to chemical synapses. Neuronal coupling and Cx36 expression rise transiently in early postnatal development and then stay low in the adult, confined to specific subsets of neurons (Belousov & Fontes, 2013). Expect to meet gap junctions only occasionally in an adult cortical volume, and do not expect a detector trained on chemical synapses to find them.
 - **Functional significance**: Gap junctions allow direct electrical coupling and can synchronize the firing of connected interneurons, contributing to network oscillations (particularly gamma oscillations).
 
 ---
 
 ## 7. Multi-Synapse Boutons
 
-A common finding in cortical EM is that a single presynaptic bouton contacts more than one postsynaptic target:
+In hippocampal and cortical EM, a single presynaptic bouton often contacts more than one postsynaptic target:
 
-- **Prevalence**: In hippocampal CA1, approximately 20-40% of boutons are multi-synapse boutons contacting 2-3 postsynaptic targets (Shepherd & Harris, 1998).
-- **Arrangement**: The bouton may contact two spines from different dendrites (convergent input) or two spines from the same dendrite (same-cell contact).
+- **Prevalence**: Along CA3-to-CA1 axons in rat hippocampal stratum radiatum, 19% of varicosities had 2-4 postsynaptic densities, 68% had one, and 13% had none (Shepherd & Harris, 1998).
+- **Arrangement**: The bouton may contact spines from different dendrites (divergent output: one axon, several postsynaptic partners) or two spines from the same dendrite (same-cell contact).
 - **Active zones**: Each contact typically has its own active zone and PSD, though they share the same vesicle pool.
 - **Annotation implications**: Multi-synapse boutons must be carefully annotated. Each synaptic contact is a separate synapse, even though they share a presynaptic terminal. Annotators should record both the bouton identity and the individual synaptic connections.
 
@@ -198,7 +186,7 @@ Identify two profiles (one potential presynaptic, one potential postsynaptic) wh
 
 ### Step 2: Check for a Vesicle Cluster
 
-On the candidate presynaptic side, look for a cluster of vesicles (at least 3-5 vesicles) near the apposed membrane. Vesicles should be round or slightly pleomorphic, 35-50 nm in diameter. If no vesicles are present, the apposition is unlikely to be a synapse.
+On the candidate presynaptic side, look for a cluster of vesicles (at least 3-5 vesicles) near the apposed membrane. Vesicles should be round or slightly pleomorphic, about 35-45 nm in diameter. If no vesicles are present, the apposition is unlikely to be a synapse.
 
 ### Step 3: Identify the Postsynaptic Density
 
@@ -268,23 +256,29 @@ Rate your confidence:
 
 | Misconception | Reality |
 |---|---|
-| "Type I is always excitatory and Type II is always inhibitory." | This is the general rule and holds for the vast majority of cortical synapses, but exceptions exist. Some neuromodulatory synapses do not fit neatly into either category. The morphological classification is a structural description, not a neurotransmitter assay. |
+| "Type I is always excitatory and Type II is always inhibitory." | This is the general rule and holds for most cortical synapses, but exceptions exist (Klemann & Roubos, 2011). Some neuromodulatory synapses do not fit neatly into either category. The morphological classification is a structural description, not a neurotransmitter assay. |
 | "Vesicle shape alone determines synapse type." | Vesicle shape is influenced by fixation conditions. It should be considered alongside PSD thickness, cleft width, and synaptic location. No single feature is sufficient. |
 | "Gap junctions are not synapses." | Electrical synapses (gap junctions) are genuine synaptic connections that mediate direct electrical communication between neurons. They are synapses by any functional definition, even though they lack vesicles. |
 | "Every membrane apposition with vesicles nearby is a synapse." | Non-synaptic membrane appositions are common in the neuropil. A genuine synapse requires vesicle clustering at the active zone, a PSD (for chemical synapses), and cleft specialization. Random proximity of vesicle-containing profiles to other membranes does not constitute a synapse. |
-| "Symmetric synapses are rare." | Type II symmetric synapses are less numerous than Type I (roughly 15-20% of cortical synapses), but they are functionally critical and must not be overlooked. Their subtler morphology makes them harder to detect, leading to systematic undercounting. |
+| "Symmetric synapses are rare." | Symmetric synapses are a minority, 16% of synapses in cat area 17 (Beaulieu & Colonnier, 1985), but they are not rare, and their subtler densities make them easier to miss. In H01, the automated detector missed about 35% of inhibitory synapses, far more than excitatory ones; see [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}). |
 | "All synapses look the same across brain regions." | Synapse morphology varies significantly across regions. Cerebellar parallel fiber synapses, hippocampal mossy fiber synapses, and cortical pyramidal cell synapses each have distinctive features. |
 
 ---
 
 ## References
 
-1. Gray EG (1959) "Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study." *Journal of Anatomy* 93:420-433.
-2. Colonnier M (1968) "Synaptic patterns on different cell types in the different laminae of the cat visual cortex: an electron microscope study." *Brain Research* 9:268-287.
-3. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587.
+1. Gray EG (1959) "Axo-somatic and axo-dendritic synapses of the cerebral cortex: an electron microscope study." *Journal of Anatomy* 93:420-433. PMC1244535
+2. Colonnier M (1968) "Synaptic patterns on different cell types in the different laminae of the cat visual cortex: an electron microscope study." *Brain Research* 9:268-287. doi:10.1016/0006-8993(68)90234-5
+3. Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4:a005587. doi:10.1101/cshperspect.a005587
 4. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 5. Bhatt DH, Zhang S, Gan WB (2009) "Dendritic spine dynamics." *Annual Review of Physiology* 71:261-282.
-6. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3-CA1 axons in rat hippocampal slices." *Journal of Neuroscience* 18:8300-8310.
+6. Shepherd GMG, Harris KM (1998) "Three-dimensional structure and composition of CA3→CA1 axons in rat hippocampal slices: implications for presynaptic connectivity and compartmentalization." *Journal of Neuroscience* 18:8300-8310. doi:10.1523/JNEUROSCI.18-20-08300.1998
+7. Uchizono K (1965) "Characteristics of excitatory and inhibitory synapses in the central nervous system of the cat." *Nature* 207:642-643. doi:10.1038/207642a0
+8. Beaulieu C, Colonnier M (1985) "A laminar analysis of the number of round-asymmetrical and flat-symmetrical synapses on spines, dendritic trunks, and cell bodies in area 17 of the cat." *Journal of Comparative Neurology* 231:180-189. doi:10.1002/cne.902310206
+9. Klemann CJHM, Roubos EW (2011) "The gray area between synapse structure and function: Gray's synapse types I and II revisited." *Synapse* 65:1222-1230. doi:10.1002/syn.20962
+10. High B, Cole AA, Chen X, Reese TS (2015) "Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses." *Frontiers in Synaptic Neuroscience* 7:9. doi:10.3389/fnsyn.2015.00009
+11. Revel JP, Karnovsky MJ (1967) "Hexagonal array of subunits in intercellular junctions of the mouse heart and liver." *Journal of Cell Biology* 33:C7-C12. doi:10.1083/jcb.33.3.c7
+12. Belousov AB, Fontes JD (2013) "Neuronal gap junctions: making and breaking connections during development and injury." *Trends in Neurosciences* 36:227-236. doi:10.1016/j.tins.2012.11.001
 
 ---
 

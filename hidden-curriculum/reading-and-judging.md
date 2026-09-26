@@ -136,9 +136,9 @@ carries the site's clearest worked demonstration of this, and it is worth doing 
 once. In its illustrative example, 100 neurons with 1,200 edges and 210 reciprocal pairs
 give **2.9-fold enrichment** under an Erdős–Rényi null, **1.4-fold with z = 5.0** under a
 degree-preserving null, and **1.14-fold, not significant** once the empirical
-distance–probability curve is preserved as well. Nothing about the data changed. Roughly
-two-thirds of the apparent effect was degree heterogeneity, and most of the rest was
-spatial proximity.
+distance–probability curve is preserved as well. Nothing about the data changed. Of the 137
+excess pairs over the Erdős–Rényi expectation, 77 (56%) were degree heterogeneity and
+another 35 were spatial proximity.
 
 So: a connectomics paper reporting motif or reciprocity enrichment against an
 Erdős–Rényi null has reported almost nothing. This is common in older literature and it

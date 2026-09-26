@@ -79,9 +79,12 @@ needed nothing. Version 1507 is the only version whose export includes the 80 MB
 1300), the only synapse export is the full table, about 20 GB compressed, which is too
 large for a class. The
 [MICrONS versioning page](https://tutorial.microns-explorer.org/materialization-version.html)
-lists v1507 among the versions due to leave the live CAVE service. This lab does not
-depend on the live service. If the static files are ever withdrawn, the hash check
-will fail instead of silently analysing something else.
+announced that v1507 would expire from the live CAVE service on 31 July 2026, and that
+date has passed. This lab does not depend on the live service. The v1507 static exports
+still downloaded on 26 September 2026 (HTTP 200), but the providers may withdraw them.
+If they do, the download or the hash check will fail instead of silently analyzing
+something else, and the [archived outputs](#archived-outputs) on this page remain the
+reference for the v1507 results.
 
 </section>
 
@@ -105,8 +108,16 @@ before class:
    sign in with a Google account to receive a token.
 3. Save the token with `CAVEclient().auth.save_token(token="…")`. Never paste a
    token into a shared notebook.
-4. Connect with `CAVEclient("minnie65_public", version=1507)`, or another explicit
-   version. Accept the dataset terms of service if you are prompted.
+4. Connect with `CAVEclient("minnie65_public", version=1300)`, or `version=943`.
+   These are the two versions the MICrONS team keeps as long-lived analysis versions.
+   Do not use `version=1507` for live queries: it was scheduled to leave the live
+   service on 31 July 2026. To query the live database as it stood at v1507, pass
+   `timestamp=datetime(2025, 7, 31, 8, 10, 1, 117494, tzinfo=timezone.utc)` instead of
+   a version. Accept the dataset terms of service if you are prompted.
+
+A live query at v1300 or v943 will not reproduce the v1507 numbers below: the
+proofread set and the root IDs differ between versions. This lab's analysis version
+stays v1507.
 
 If learners need tokens, get them working in the week before the lab, not during it.
 

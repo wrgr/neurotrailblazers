@@ -31,7 +31,7 @@ content_type: path
 embedded, heavy-tailed, and derived from an error-prone reconstruction. Every one of
 those properties breaks a default assumption in standard network analysis. Applying an
 off-the-shelf graph statistic to a connectome without adjusting for them will produce
-a significant result — reliably, almost regardless of the biology — and it will usually
+a significant result almost regardless of the biology, and that result will usually
 be an artifact of degree distribution, spatial proximity, or merge errors.
 
 The skill this unit teaches is producing a claim that survives someone trying to break
@@ -66,7 +66,7 @@ applies a threshold (≥ 2 or ≥ 3 synapses).
 > **This threshold is not innocent.** It removes a large fraction of edges — the
 > synapse-per-connection distribution is heavy-tailed, and single-synapse connections
 > typically dominate by count. It also removes them *non-uniformly across cell types*,
-> because some types genuinely connect via few synapses. Always report the threshold,
+> because some types really do connect via few synapses. Always report the threshold,
 > and always re-run the headline result at a second threshold. If the conclusion flips,
 > that is the finding.
 
@@ -78,8 +78,8 @@ for others.
 **4. Direction.** Retained, and derived from the axon/dendrite call — with all the
 Unit 06 caveats about direction errors.
 
-**5. Inclusion criteria.** Which cells enter the graph? This is the highest-leverage
-and least-reported decision. If you include only well-proofread cells, you have
+**5. Inclusion criteria.** Which cells enter the graph? It is the decision with the most effect
+on the result and the one least often reported. If you include only well-proofread cells, you have
 conditioned on a variable correlated with cell size, position, and type. If you include
 everything, you have mixed completeness levels. Either is defensible; neither is
 defensible silently.
@@ -134,7 +134,8 @@ bookkeeping.
 
 ### Worked example: reciprocity, under three nulls
 
-**Observed.** 100 neurons, 1,200 directed edges, **210 reciprocal pairs**.
+**Observed** (a synthetic graph; all numbers in this example are made up for
+teaching). 100 neurons, 1,200 directed edges, **210 reciprocal pairs**.
 
 **Null 1 — Erdős–Rényi.** Edge probability
 p = 1200 / (100 × 99) = 0.121. Expected reciprocal pairs:
@@ -157,8 +158,9 @@ observed / expected = 210 / 150 = 1.4x
 z = (210 - 150) / 12 = 5.0
 ```
 
-Still significant, but the effect size collapsed from 2.9× to 1.4×. **Roughly
-two-thirds of the apparent enrichment was degree heterogeneity.**
+Still significant, but the effect size fell from 2.9× to 1.4×. **Degree
+heterogeneity accounts for 77 of the 137 excess pairs (56%)**: the expected count rose
+from 72.7 to 150 without any change to the data.
 
 **Null 3 — degree- and distance-preserving.** Connection probability falls steeply with
 inter-somatic distance, and reciprocal partners are disproportionately near neighbors.
@@ -225,14 +227,22 @@ one edge changes many triads at once. Treating the 16 tests as independent
 overstates confidence. This is a strong argument for permutation-based inference over
 analytic p-values: permutation naturally respects the dependence.
 
-**3. Merge-error bias, which is not symmetric.** This is the point from Unit 01 §4,
-now made precise. A merge fuses two neurons' partner lists. If neuron A had partners
-{1,2,3} and neuron B had partners {4,5,6}, the merged object has {1,...,6} — and it
-manufactures triangles among partners that were never connected through one cell.
-**Merges inflate dense motifs superlinearly in the error rate.** Splits, by contrast,
-mostly remove edges, which deflates all motifs roughly proportionally. So the two
-error types do not cancel: the residual bias points toward *more* dense motifs, which
-is the direction of the interesting result.
+**3. Merge and split errors, whose direction you cannot assume.** This is the point
+from Unit 01 §4, made precise. A merge fuses two neurons' partner lists. If neuron A had
+partners {1,2,3} and neuron B had partners {4,5,6}, the merged object has {1,...,6}.
+That creates 3 × 3 = 9 new partner pairs, so any existing connection between a partner
+of A and a partner of B now closes a triangle through a cell that never existed. If
+there are no such connections, the merge creates open wedges, not triangles. A merge
+can also collapse two edges into one, or turn an A–B connection into a self-loop that
+your graph rules then drop. Splits can delete an edge, or leave it attached to a
+fragment and so move a subgraph into a different motif class.
+
+So the size and the sign of the bias depend on the motif and on how you built the
+graph (synapse threshold, how fragments and self-loops are handled). Merged partners
+are also spatial neighbors, which is structure a degree-preserving null does not
+reproduce. Do not assume the errors cancel, and do not assume a direction. Model them
+for your own graph, as below. Unproofread segmentation is not automatically
+conservative.
 
 **4. Cell-type confounding.** If types A and B are both numerous and preferentially
 interconnect, triads containing two A's and one B will be over-represented — and that
@@ -245,12 +255,13 @@ State your estimated merge and split rates (from Unit 08 validation). Then:
 
 1. Simulate: apply random merges and splits at those rates to your reconstructed graph.
 2. Recompute the motif statistic on many such perturbed graphs.
-3. Report the resulting spread as an error band on your effect size.
+3. Report the resulting spread as a sensitivity band on your effect size. It holds
+   only under that error model; it is not a calibrated confidence interval.
 
-If the band crosses the null expectation, the result is not robust to your own
+If the band crosses the null expectation, the result does not survive your own
 measured error rate, and you should say so rather than let a reviewer discover it.
-This check is cheap — a few dozen lines of code — and it is one of the strongest
-things you can put in a supplement.
+The check is cheap, a few dozen lines of code, and it is one of the strongest things
+you can put in a supplement.
 
 ---
 
@@ -269,8 +280,8 @@ its symmetrized version.
 
 **Graph matching.** Finding the correspondence between two connectomes — left versus
 right hemisphere, or two individuals. Computationally hard in general; usable
-approximations exist and have been applied to bilateral matching in the larval
-*Drosophila* connectome. The scientific payoff is a measure of how stereotyped wiring
+approximations exist and have been applied to pairing left and right neurons in the
+larval *Drosophila* connectome ([Pedigo et al. 2023](https://doi.org/10.1162/netn_a_00287)). The scientific payoff is a measure of how stereotyped wiring
 is, which is a question only connectomics can answer.
 
 **Cell typing from connectivity.** Cluster cells by their connectivity profiles and
@@ -279,7 +290,8 @@ agree, you have converging evidence for a type. When they disagree, that is
 interesting and should not be resolved by quietly picking the answer you prefer.
 
 **Comparative and developmental analysis.** Comparing connectomes across development
-(as in the *C. elegans* developmental series) or across species is where several of
+(as in the *C. elegans* series of eight brains from birth to adulthood;
+[Witvliet et al. 2021](https://doi.org/10.1038/s41586-021-03778-8)) or across species is where several of
 the field's most durable results have come from, because a comparison controls for
 many reconstruction biases that a single measurement cannot.
 
@@ -295,9 +307,10 @@ and overselling it.
 **Constraints for network models.** The strongest current result type: take a measured
 connectome, use it to fix the connectivity of a dynamical model, fit the remaining
 parameters to data, and *predict* neural responses. This has been done in the fly
-visual system, where connectome-constrained models predicted responses that were then
-tested. The connectome is doing real work here — it removes an enormous number of free
-parameters, which is exactly what makes the model falsifiable.
+visual system, where connectome-constrained models predicted responses that were
+compared against recorded activity ([Lappalainen et al. 2024](https://doi.org/10.1038/s41586-024-07939-3)).
+The connectome does real work here: it removes a large number of free parameters,
+which is what makes the model falsifiable.
 
 **Architectural priors, honestly scoped.** Measured circuit motifs — specific
 recurrence patterns, canonical microcircuit structure, the ring architecture of the
@@ -305,10 +318,9 @@ fly central complex — can inspire architectures. The honest framing is *inspir
 plus hypothesis*, not derivation. Very few production ML systems trace a design
 decision to a connectome.
 
-**Benchmarks and problems.** Connectomics has generated genuinely hard ML problems —
-petascale dense segmentation, few-shot generalization across tissue preparations,
-error detection in structured outputs — and progress on them has been real and
-transferable.
+**Benchmarks and problems.** Connectomics has posed hard ML problems: petascale dense
+segmentation, generalization across tissue preparations with few labels, and error
+detection in structured outputs.
 
 ### What connectomes do not give machine learning
 
@@ -325,8 +337,8 @@ transferable.
 Machine learning has contributed far more to connectomics than the reverse: dense
 segmentation, synapse detection, error detection, and automated proofreading candidate
 generation are all learned systems, and none of the petascale datasets would exist
-without them. When you write about NeuroAI, note the asymmetry. It is the accurate
-description of the present state and it costs nothing to be right about.
+without them. When you write about NeuroAI, note the asymmetry. It is an accurate
+description of the present, and stating it costs nothing.
 
 ---
 
@@ -385,7 +397,7 @@ These are concept and tooling slides from the source decks, several of them hist
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S03-01.png' | relative_url }}" alt="NeuroAI visual: project overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S03:</strong> Project overview. Work backwards from whatever the endpoint claim is, because inclusion criteria — which cells enter the graph at all — is the highest-leverage and least-reported decision in §1.</p>
+    <p class="card-description"><strong>Module13 L3 S03:</strong> Project overview. Work backwards from whatever the endpoint claim is, because inclusion criteria — which cells enter the graph at all — is the §1 decision with the most effect and the least reporting.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S11-01.png' | relative_url }}" alt="NeuroAI visual: data growth and scale context" style="width:100%; border-radius:8px;">
@@ -397,7 +409,7 @@ These are concept and tooling slides from the source decks, several of them hist
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S20-01.png' | relative_url }}" alt="NeuroAI visual: connectivity estimation context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S20:</strong> Connectivity estimation. Estimation inherits reconstruction error asymmetrically — merges inflate dense motifs superlinearly while splits deflate everything roughly proportionally — so the residual bias points toward the more interesting answer rather than away from it.</p>
+    <p class="card-description"><strong>Module13 L3 S20:</strong> Connectivity estimation. Estimation inherits reconstruction error, and its direction depends on the motif and the graph-construction rules: a merge can close triangles, collapse edges or create a dropped self-loop, and a split can delete or reroute an edge. Model the errors for your own graph rather than assuming they cancel.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S24-01.png' | relative_url }}" alt="NeuroAI visual: classification model context" style="width:100%; border-radius:8px;">
@@ -405,7 +417,7 @@ These are concept and tooling slides from the source decks, several of them hist
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S29-01.png' | relative_url }}" alt="NeuroAI visual: late-stage synthesis" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L3 S29:</strong> Late-stage synthesis. This is where the error-sensitivity check belongs: perturb the graph at your own measured merge and split rates, recompute the statistic across many perturbations, and report the spread as an error band before a reviewer finds it for you.</p>
+    <p class="card-description"><strong>Module13 L3 S29:</strong> Late-stage synthesis. This is where the error-sensitivity check belongs: perturb the graph at your own measured merge and split rates, recompute the statistic across many perturbations, and report the spread as a sensitivity band before a reviewer finds it for you.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/09-connectome-analysis-neuroai/FIG-SRC-MODULE13_LESSON3-S37-01.png' | relative_url }}" alt="NeuroAI visual: application-stage context" style="width:100%; border-radius:8px;">
@@ -432,7 +444,7 @@ Using a public connectome:
    corrected p-value. Say how many tests you ran.
 6. **Sensitivity.** Re-run steps 1–5 at a second synapse threshold. Report what changed.
 7. **Error simulation.** With a stated merge/split rate, perturb the graph 100 times,
-   recompute your headline statistic, and report the error band.
+   recompute your headline statistic, and report the sensitivity band.
 8. **Write the result** in three sentences: what you found, under which null, with
    which caveats. Then write the sentence you are *not* claiming (Unit 01, step 7).
 
@@ -443,7 +455,7 @@ Using a public connectome:
 | **Construction** | Undocumented | All six decisions recorded, version pinned | Sensitivity to the threshold decision measured and reported |
 | **Null choice** | ER only | Degree-preserving used | Multiple nulls compared; the "uninteresting explanation" written out in words |
 | **Multiple comparisons** | Ignored | Corrected | Corrected, count of tests reported, permutation-based inference used to respect dependence |
-| **Error sensitivity** | Absent | Discussed | Simulated with measured rates; error band reported on the effect size |
+| **Error sensitivity** | Absent | Discussed | Simulated with measured rates; sensitivity band reported on the effect size |
 | **Interpretation** | Effect size stated as fact | Caveats present | Bin A/B/C discipline; explicit non-claim; result stated under each null |
 | **Reproducibility** | Notebook only | Version and parameters recorded | Another person could re-run it and get the same numbers |
 
@@ -455,9 +467,9 @@ this area.
 
 Concretely, "reciprocity in this circuit is fully explained by degree distribution
 and spatial proximity" tells the field something durable and hard to obtain: it
-constrains the space of wiring rules that need explaining. Papers reporting motif
-enrichment against weak nulls have already been published and will need revisiting;
-a clean negative result against a strong null does not.
+constrains the space of wiring rules that need explaining. An enrichment reported
+against a weak null may not survive a stronger one; a clean negative result against a
+strong null does not carry that risk.
 
 Write it up. Report all three nulls in a table. State the effect size under each.
 Do not go looking for a fourth null that restores significance — and if you do try
@@ -475,7 +487,7 @@ null in a connectome, and add distance whenever soma positions exist.
 **Unreported synapse threshold.** Recover: state it, and report the headline result at
 two thresholds.
 
-**Ignoring merge-error bias.** Recover: run the error simulation in §3 and put the
+**Assuming reconstruction errors cancel.** Recover: run the error simulation in §3 and put the
 band in the figure.
 
 **Treating triad tests as independent.** Recover: permutation inference; report the

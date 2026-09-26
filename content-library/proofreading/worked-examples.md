@@ -14,9 +14,7 @@ topics:
   - error triage
   - consensus protocols
 primary_units:
-  - unit-proofreading-fundamentals
-  - unit-error-detection
-  - unit-proofreading-workflows
+  - "08"
 difficulty: intermediate
 tags:
   - proofreading:merge-error
@@ -27,16 +25,6 @@ tags:
   - methodology:consensus-protocol
   - case-studies:proofreading-scenarios
 micro_lesson_id: ml-proof-worked
-reference_images:
-  - src: /assets/images/content-library/proofreading/worked-examples/merge-before-after.png
-    alt: "Before and after views of a merge error correction at a blood vessel"
-    caption: "Merge error correction: before (left) two neurons share one segment near a blood vessel; after (right) correctly separated into distinct segments."
-  - src: /assets/images/content-library/proofreading/worked-examples/split-before-after.png
-    alt: "Before and after views of a split error correction through low-contrast sections"
-    caption: "Split error correction: before (left) neuron fragmented at thin axon; after (right) fragments joined into complete morphology."
-  - src: /assets/images/content-library/proofreading/worked-examples/autapse-detection-workflow.png
-    alt: "Workflow diagram showing how false autapses reveal hidden merge errors"
-    caption: "False autapse detection: connectivity analysis flags self-synapses, leading to discovery of a distant merge error 200 um away."
 combines_with:
   - error-taxonomy
   - proofreading-strategies
@@ -48,11 +36,17 @@ content_type: core
 
 # Proofreading Worked Examples
 
-This page presents five detailed, step-by-step proofreading scenarios drawn from
-real-world connectomics reconstruction projects. Each scenario walks through the
-full cycle of error detection, investigation, correction, and validation. Working
-through these examples will prepare you to handle the most common (and some
-uncommon) challenges encountered during large-scale proofreading campaigns.
+Five step-by-step proofreading scenarios, each modeled on a situation that
+comes up in real reconstruction projects. Each one runs from detection through
+investigation and correction to validation.
+
+The scenarios are set in **release T75 of a fictional mouse cortex volume**. The
+volume, the release, the neuron IDs and every measurement in Scenarios 1 to 5
+are invented for teaching. The only real data on this page is the H01 figure
+after Scenario 1, and its caption says so.
+
+Button names and keyboard shortcuts differ between viewers and change between
+versions, so the steps describe the operation rather than the key to press.
 
 ---
 
@@ -60,23 +54,21 @@ uncommon) challenges encountered during large-scale proofreading campaigns.
 
 ### Background
 
-Blood vessels are one of the most common sources of merge errors in automated
-segmentation. The vascular lumen appears dark in EM images, and thin neuronal
-processes that pass close to vessel walls can share similar contrast profiles.
-When two neurons course near the same blood vessel, the segmentation algorithm
-may incorrectly fuse them into a single segment.
+Blood vessels are a known site of merge errors in automated segmentation. The
+vessel wall adds membrane-like edges of its own, and thin processes pressed
+against it can lose the faint boundary between them. When two neurons run
+along the same vessel, the segmentation can fuse them into one segment.
 
 ### Detection
 
-During routine quality-control inspection of large reconstructed neurons, a
-proofreader notices a suspicious branching pattern in the 3D mesh view. The
-neuron appears to split into two major arbors that diverge in opposite
-directions from a single point adjacent to a blood vessel. This branching
-geometry is biologically implausible: real neurons do not produce symmetric
-bifurcations from mid-axon points.
+During a routine check of large reconstructed neurons, a proofreader notices
+a suspicious branch in the 3D mesh view. The neuron seems to split into two
+major arbors that leave in opposite directions from a single point next to a
+blood vessel.
 
-Key clue: the branching angle and caliber of the two arbors are inconsistent
-with normal axonal or dendritic branching patterns.
+Neurites do branch, and some real branches are T-shaped. What makes this one
+suspicious is the combination: two large arbors, mismatched caliber, opposite
+directions, and a branch point sitting on a vessel wall.
 
 ### Step-by-Step Resolution
 
@@ -86,28 +78,30 @@ and the proximity to the blood vessel. Mark the location with an annotation
 point for reference.
 
 **Step 2 -- Verify in 2D image slices.**
-Navigate to the branch point coordinates in the 2D slice view (e.g., in
-Neuroglancer or CATMAID). Scroll through consecutive z-sections to observe how
+Navigate to the branch point coordinates in the 2D slice view. Scroll through
+consecutive z-sections to observe how
 the two processes relate to the vessel wall. Look for a gap in membrane between
 the two processes -- if no clear membrane boundary exists in the EM images, the
 merge may have occurred because the boundary was genuinely ambiguous.
 
 **Step 3 -- Find the exact merge point.**
-Identify the specific z-section(s) where the two processes share a single
-segment label despite belonging to different neurons. Often this is just 2-5
-sections where contrast is lowest. Note the section range.
+Identify the z-sections where the two processes share a single segment label
+despite belonging to different neurons. Often this is only a few sections,
+where contrast is lowest. Note the section range.
 
 **Step 4 -- Execute the split.**
-Using the proofreading tool (e.g., CAVE/Spelunker for MICrONS, FlyWire for
-FAFB), place a split point on one side of the merge and a second split point on
-the other side. The tool will recompute the segmentation graph and separate the
-two neurons.
+Use the editing tool your project provides (for example, the FlyWire
+interface for FAFB, or Neuroglancer or Spelunker on a CAVE datastack). You
+need edit rights: public releases such as MICrONS `minnie65_public` are for
+reading, not editing.
 
 In CAVE-based systems:
 - Select the segment.
-- Place red (foreground) points on one neuron's process.
-- Place blue (background) points on the other neuron's process.
-- Submit the split operation.
+- Place several points of one color on one neuron's process, starting near
+  where the merge begins.
+- Place several points of the other color on the other neuron's process.
+- Preview the split, then submit it. The tool computes a cut in the
+  supervoxel graph; the image data do not change.
 
 **Step 5 -- Validate both resulting fragments.**
 After the split, inspect each resulting neuron independently:
@@ -116,14 +110,14 @@ After the split, inspect each resulting neuron independently:
 - Are caliber and branching patterns internally consistent?
 
 **Step 6 -- Recheck synapses.**
-Automated synapse detection may have assigned synapses to the wrong partner
-neuron due to the merge. Review synapses within 5 micrometers of the split point
-to confirm they are assigned to the correct pre- and post-synaptic segments.
+While the merge stood, every synapse on either neuron was credited to one
+merged object. Review the synapses within a few micrometers of the cut to
+confirm each lands on the correct pre- and postsynaptic segment.
 
 ### Lessons
 
-- Blood vessels, glial wrapping, and fixation artifacts are the top three causes
-  of merge errors (Dorkenwald et al., 2024).
+- Blood vessels, glial wrapping, and fixation artifacts are known sites of
+  merge errors.
 - Always inspect suspicious branch points in both 3D and 2D.
 - After every split, validate synapses near the correction site.
 
@@ -132,15 +126,14 @@ to confirm they are assigned to the correct pre- and post-synaptic segments.
 {% include figure.html
    src="/assets/images/content-library/em/proofreading-before-after.jpg"
    alt="Three panels of the same human cortex field: raw electron microscopy; the automated segmentation showing one object in green with a wrongly attached region in red; and the proofread result with only the green object remaining."
-   caption="A real merge error, before and after a human fixed it. Left: raw EM. Middle: the automated segmentation claims all of this is one cell &mdash; green is genuinely part of it, red is a separate process it wrongly absorbed. Right: the proofread version, with those 11,038 voxels removed. Look at the raw panel again and ask whether you would have caught it: the boundary the algorithm crossed is a real membrane, but a faint one, and the merged process is entirely plausible as a branch. This is what the &ldquo;merges are hard to see&rdquo; argument looks like in practice."
+   caption="A real merge error, before and after a human fixed it. Left: raw EM. Middle: the automated segmentation calls all of this one cell. Green is part of the cell; red is a separate process it absorbed. Right: the proofread version, with those 11,038 voxels of this section removed. Look at the raw panel again and ask whether you would have caught it. The boundary the algorithm crossed is a real membrane, but a faint one, and the absorbed process would pass as a branch. This is why merges are hard to see."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Automated segmentation is H01&#39;s <code>c2</code>; the corrected version is one of its 104 manually proofread cells. Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## Scenario 2: Split Neuron Through Low-Contrast Sections
 
 ### Background
 
-Thin axons (approximately 150 nm diameter) are particularly vulnerable to
-split errors. When an axon passes through a region of poor staining, low
+Thin axons, around 150 nm across, are prone to split errors. When an axon passes through a region of poor staining, low
 contrast, or sectioning artifact spanning multiple consecutive z-sections, the
 segmentation algorithm may lose track of the process and terminate the segment.
 The continuation on the other side becomes an orphan fragment.
@@ -148,17 +141,18 @@ The continuation on the other side becomes an orphan fragment.
 ### Detection
 
 While tracing a pyramidal neuron's axon, the proofreader encounters a dead end.
-The axon terminates abruptly without a terminal bouton or any synaptic
-specialization -- just a clean cut. This is a strong indicator of a split error.
+The axon ends abruptly, well inside the volume, with no terminal bouton or
+synaptic specialization: just a clean cut. That points to a split error.
 Nearby, the proofreader notices a small orphan fragment with similar caliber
 and trajectory, offset by 3 z-sections.
 
 ### Step-by-Step Resolution
 
 **Step 1 -- Confirm the dead end is not biological.**
-Check for terminal boutons, synaptic vesicle clusters, or mitochondria
-accumulation at the terminal. A true axon terminal will typically show synaptic
-specializations. A bare, blunt ending strongly suggests a segmentation break.
+Check that the ending is not at the edge of the volume, then look for a
+terminal bouton, a vesicle cluster, or accumulated mitochondria. A real axon
+ending usually shows these. A bare, blunt ending in the middle of the volume
+suggests a segmentation break.
 
 **Step 2 -- Scroll through the bad sections.**
 Navigate through the 2D slices in the region of the break. Note the image
@@ -173,15 +167,16 @@ visible gray circle of approximately 150 nm diameter.
 **Step 4 -- Verify caliber and trajectory match.**
 Measure the cross-sectional diameter of the axon on the last good section before
 the break and the first good section after. Compare:
-- Caliber: should be within 20-30% (axons taper gradually).
+- Caliber: should be similar. Boutons and varicosities make axon caliber vary
+  along its length, so compare a few sections on each side rather than one.
 - Position: extrapolate the trajectory; the fragment should lie along the
   expected path.
-- Organelle content: mitochondria density, microtubule orientation.
+- Organelle content: mitochondria, microtubules, vesicles.
 
 **Step 5 -- Execute the merge.**
 Select the parent segment (the main axon) and the orphan fragment. In
-CAVE-based tools, this typically involves selecting both segments and submitting
-a merge operation. The system will join them into a single segment.
+CAVE-based tools you connect a point on each and submit the merge; the system
+adds an edge between the two supervoxels and joins them into one segment.
 
 **Step 6 -- Validate the merge.**
 Scroll through the repaired region to confirm continuity. Check that the merged
@@ -190,11 +185,13 @@ accidentally included.
 
 ### Lessons
 
-- Split errors in thin axons are the most common error type in cortical EM
-  datasets (Plaza et al., 2014).
-- Dead ends without synaptic specialization are almost always segmentation
-  breaks.
-- Brightness/contrast adjustment is essential when working with low-quality
+- Thin axons are especially prone to split errors. How common splits are
+  relative to merges depends on the pipeline's agglomeration threshold (see
+  [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }})).
+- A dead end inside the volume with no synaptic specialization is usually a
+  segmentation break. Dendrites also end, so judge a dendritic tip by its
+  taper, not by the absence of a bouton.
+- Adjust brightness and contrast when working with low-quality
   sections.
 
 ---
@@ -203,34 +200,35 @@ accidentally included.
 
 ### Background
 
-An autapse is a synapse in which a neuron synapses onto itself. While autapses
-do occur in biology, they are extremely rare in mammalian cortex. When automated
-analysis of a connectome flags a large number of autapses, or autapses on
-neurons where they are not expected, the most likely explanation is a merge error
-in the underlying segmentation.
+An autapse is a synapse a neuron makes onto itself. Autapses are real: they
+are well documented on some cortical inhibitory interneurons (Tamás et al.,
+1997). So a single self-synapse proves nothing. A cluster of them on one cell,
+especially a cell type where they are not expected, is a reason to look for a
+merge error in the segmentation.
 
 ### Detection
 
-During connectivity analysis, a computational neuroscientist discovers that
-neuron #48372 appears to form 12 autapses. This is highly unusual for a layer
-2/3 pyramidal neuron. The finding is flagged for proofreading investigation.
+During connectivity analysis of release T75, a computational neuroscientist
+finds that neuron 48372, a layer 2/3 pyramidal cell, appears to form 12
+autapses. That is enough to send it to proofreading.
 
 ### Step-by-Step Resolution
 
 **Step 1 -- Navigate to a flagged autapse.**
 Select one of the 12 candidate autapses and navigate to its coordinates in the
-viewer. Examine the synapse: identify the presynaptic bouton (with vesicles) and
-the postsynaptic density (PSD).
+viewer. First check that it is a synapse at all: identify the presynaptic bouton
+(with vesicles) and the postsynaptic density (PSD). A false synapse detection
+is a second way to get an apparent autapse.
 
 **Step 2 -- Check the segment IDs.**
 Verify that the presynaptic and postsynaptic structures are both labeled as
-neuron #48372. Visually, they should appear as distinct processes -- typically
+neuron 48372. Visually, they should appear as distinct processes -- typically
 an axon (presynaptic) and a dendrite (postsynaptic) that happen to share the
 same segment label.
 
 **Step 3 -- Trace back from the postsynaptic process.**
 Follow the postsynaptic dendrite away from the synapse, back toward what should
-be its cell body. If neuron #48372 is a merge of two neurons, at some point the
+be its cell body. If neuron 48372 is a merge of two neurons, at some point the
 dendrite will pass through a merge site where it was incorrectly joined to the
 other neuron's arbor.
 
@@ -242,20 +240,20 @@ this example, the merge point is found 200 micrometers away, near a section
 fold.
 
 **Step 5 -- Execute the split.**
-Split neuron #48372 at the identified merge point, creating two separate neurons.
+Split neuron 48372 at the identified merge point, creating two separate neurons.
 The "autapses" should now become normal synapses between two different neurons.
 
 **Step 6 -- Verify resolution.**
 After splitting:
-- Confirm that the 12 autapses are now distributed as synapses between two
-  distinct neurons.
+- Confirm that the 12 autapses are now synapses between two distinct neurons.
+  In CAVE-based systems both pieces get new root IDs, so query by the new IDs.
 - Verify that both resulting neurons have plausible morphologies.
 - Check that any remaining self-synapses (if any) are biologically plausible.
 
 ### Lessons
 
-- Apparent autapses are a powerful computational signal for detecting merge
-  errors (Berger et al., 2018).
+- Apparent autapses are a useful computational signal for detecting merge
+  errors.
 - The merge point may be far from the synapse that revealed the error.
 - Automated screens for biological implausibility are valuable quality-control
   tools.
@@ -269,7 +267,11 @@ After splitting:
 A freshly segmented cortical volume has been processed through the automated
 pipeline. The error-detection algorithms have flagged approximately 10,000
 candidate errors. The proofreading team has a budget of 2 hours for an initial
-triage session. How should they prioritize?
+triage session.
+
+Do the arithmetic first. At 3 to 5 minutes per candidate, 2 hours covers 24 to
+40 candidates: at most 0.4% of the queue. The session cannot clear the queue,
+so the question is which 40 to look at.
 
 ### Triage Strategy
 
@@ -281,7 +283,7 @@ Rank errors by expected scientific impact:
    arbors affect more downstream analyses (connectivity, morphometry) than
    errors in tiny orphan fragments.
 2. **Errors in the region of interest (ROI) over those outside.** If the
-   scientific question concerns layer 4 barrel cortex, prioritize errors in
+   scientific question concerns layer 4 of barrel cortex, prioritize errors in
    that region.
 3. **Merge errors over split errors.** Merges corrupt two neurons at once and
    distort connectivity matrices more severely. Splits affect one neuron's
@@ -308,10 +310,12 @@ After each correction, note:
 - Segment size affected.
 
 **Step 5 -- Monitor for plateau.**
-As you move down the priority list, the impact per correction decreases. When
-the rate of true positives drops below 30%, or average segment size affected
-drops below a threshold, consider stopping. The remaining errors likely have
-minimal impact on downstream analyses.
+As you move down the priority list, the impact per correction should fall. Set a
+stopping rule before you start, for example when the true-positive rate over
+the last 10 candidates drops below 30%, or the segments affected fall below a
+size you choose. The 30% is a team choice, not a published standard. The rule
+does not tell you how many errors remain below the cut; only an audit of a
+random sample does that.
 
 **Step 6 -- Report and plan.**
 At the end of the 2-hour session, summarize:
@@ -322,11 +326,11 @@ At the end of the 2-hour session, summarize:
 
 ### Lessons
 
-- Prioritization is essential: not all errors are equally important
-  (Dorkenwald et al., 2022).
-- Diminishing returns are real. The first hour of proofreading typically
-  produces more scientific value than the tenth.
-- Metrics-driven stopping criteria prevent wasted effort.
+- With a sorted queue, the first hour of proofreading usually buys more than
+  the tenth.
+- Decide the stopping rule before the session, not during it.
+- Log every outcome, including false positives. The false-positive rate is how
+  you judge the detector next time.
 
 ---
 
@@ -359,6 +363,7 @@ Annotator B's case for a merge error:
 
 **Step 2 -- Check organelle and synaptic cues.**
 Together, the annotators examine:
+- Spines: does spine density change abruptly at the junction?
 - Mitochondrial morphology: are mitochondria consistent throughout, or do they
   change character at the disputed junction?
 - Endoplasmic reticulum: continuity of smooth ER is a strong indicator of a
@@ -389,11 +394,12 @@ Regardless of the outcome, document the case as a calibration example:
 
 ### Lessons
 
-- Disagreements are normal and healthy -- they reveal ambiguous cases that need
-  explicit guidelines (Berger et al., 2018).
-- Multiple lines of evidence (morphology, organelles, synapse patterns) should
-  be combined, not relied upon individually.
-- Calibration is an ongoing process, not a one-time event.
+- Disagreements are normal. They point to the ambiguous cases that need
+  written guidelines.
+- Combine the evidence (morphology, organelles, synapse patterns); no single
+  cue settles a hard case.
+- Recalibrate the team regularly, because drift between annotators is slow and
+  easy to miss.
 
 ---
 
@@ -409,7 +415,7 @@ Regardless of the outcome, document the case as a calibration example:
 
 ---
 
-## References
+## Further reading
 
 - Berger, D. R., Seung, H. S., & Lichtman, J. W. (2018). VAST (Volume
   Annotation and Segmentation Tool): Efficient manual and semi-automatic
@@ -424,3 +430,7 @@ Regardless of the outcome, document the case as a calibration example:
 - Plaza, S. M., Scheffer, L. K., & Chklovskii, D. B. (2014). Toward
   large-scale connectome reconstructions. *Current Opinion in Neurobiology*,
   25, 201-210.
+
+- Tamás, G., Buhl, E. H., & Somogyi, P. (1997). Massive autaptic
+  self-innervation of GABAergic neurons in cat visual cortex. *Journal of
+  Neuroscience*, 17(16), 6352-6364.

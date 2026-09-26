@@ -24,7 +24,7 @@ content_type: path
 |---|---|
 | **Time** | **Self-study ~3.5 h:** about 2 h of reading plus the 90 min lab. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 01–03, particularly the data-volume arithmetic |
-| **You need** | Python with `caveclient` and `cloud-volume` installed, or a Colab notebook. A free CAVE account for MICrONS access. |
+| **You need** | Python with `caveclient` and `cloud-volume` installed, or a Colab notebook. A free CAVE account for live MICrONS queries; the no-account route in the lab needs only Python. |
 | **You finish with** | A working query against a real petascale volume, pinned to a specific materialization version, plus a capacity plan for a hypothetical new volume |
 
 Connectomics infrastructure exists to solve one problem that has no analogue in most
@@ -33,10 +33,9 @@ A petabyte of images would be easy if nobody edited it. A collaborative editing 
 would be easy if the objects were small. Connectomics needs both at once, plus
 reproducible analysis on top of an object that changes while you analyze it.
 
-Understanding how that is solved is not optional systems trivia. It determines whether
-your analysis is reproducible, and it is the source of the single most common
-correctness bug in connectomics papers: results computed against an unpinned,
-continuously-edited segmentation.
+How that is solved decides whether your analysis is reproducible. It is also the source
+of the most common correctness bug in connectomics analysis: results computed against
+an unpinned, continuously edited segmentation.
 
 ---
 
@@ -62,7 +61,7 @@ artifact *is*, because that is what you will debug.
 
 The archive is write-once. Nothing downstream ever modifies it. If a later stage is
 wrong, you re-run from here. Treat the raw archive as the only irreplaceable asset in
-the project — everything else is recomputable, expensively.
+the project. Everything else can be recomputed, at a price.
 
 *Common failure:* metadata that is not machine-readable, so tile position, timestamp,
 and acquisition parameters cannot be joined to defects found later.
@@ -77,8 +76,8 @@ Two sub-problems:
 - **Stitching (within a section):** place tiles relative to each other using their
   overlap regions. Mostly rigid or affine per tile.
 - **Alignment (across sections):** register section *n* to section *n−1*. Hard,
-  because sections deform non-rigidly — compression from the knife, folds, stretch —
-  and because errors accumulate. A 0.1-voxel-per-section bias over 20,000 sections is
+  because sections deform non-rigidly (knife compression, folds, stretch) and
+  because errors accumulate. A 0.1-voxel-per-section bias over 20,000 sections is
   a 2,000-voxel drift.
 
 Modern pipelines use coarse-to-fine elastic registration with a global relaxation step
@@ -87,8 +86,8 @@ accumulate in one direction.
 
 **What you must retain:** the transforms, versioned. Any coordinate you record in the
 aligned space is meaningless without knowing which alignment version produced it. When
-an alignment is revised, every stored annotation coordinate must be re-mapped — this
-is a real and painful operation, and it is why alignment revisions are rare and
+an alignment is revised, every stored annotation coordinate must be re-mapped. That
+is slow and error-prone, and it is why alignment revisions are rare and
 carefully planned.
 
 *Common failure:* alignment residual reported as a global mean. Report the
@@ -97,7 +96,7 @@ distribution and the maximum, per region. See Unit 03 §3.
 ### Stage 3 — Boundary/affinity prediction
 
 **Input:** aligned image.
-**Output:** a per-voxel prediction, same size as the input — either an affinity map
+**Output:** a per-voxel prediction, same size as the input: either an affinity map
 (probability that neighboring voxel pairs belong to the same object, typically in 3
 or more directions) or a boundary map.
 
@@ -108,21 +107,20 @@ the region it predicts.
 
 *Common failure:* block-boundary seams in the prediction, visible later as a regular
 grid of segmentation errors. The fix is sufficient overlap plus blending, and the way
-you detect it is to look for errors whose spatial distribution matches your block grid
-— another instance of the Unit 03 "which coordinate system does the defect live in?"
+you detect it is to look for errors whose spatial distribution matches your block grid.
+This is another instance of the Unit 03 "which coordinate system does the defect live in?"
 question.
 
 ### Stage 4 — Supervoxel generation
 
 **Input:** affinities.
-**Output:** **supervoxels** — small, over-segmented fragments, deliberately smaller
+**Output:** **supervoxels**: small, over-segmented fragments, deliberately smaller
 than real objects.
 
 This is a design decision with far-reaching consequences. Watershed (or similar) is
 run at a threshold that guarantees over-segmentation: a supervoxel may be a piece of a
 neurite, but it should almost never span two neurites. The pipeline accepts many
-splits in order to avoid merges, because — as Unit 03 argued — merges are the
-expensive error.
+splits in order to avoid merges, because merges are the expensive error (Unit 03).
 
 **Supervoxels are immutable.** They are the atoms of everything above them. This is
 the key to the whole architecture and the next section explains why.
@@ -156,7 +154,7 @@ Modeled as a separate detection problem, usually with its own network. **Store
 partner identity as supervoxel IDs, not object IDs.** Supervoxel IDs are immutable, so
 when proofreading changes which neuron an object is, the synapse assignment follows
 automatically. Storing object IDs would require rewriting the synapse table on every
-edit — a design mistake that is easy to make and painful to undo.
+edit, a design mistake that is easy to make and painful to undo.
 
 ### Stage 8 — Annotation and serving
 
@@ -176,7 +174,7 @@ proofreaders editing concurrently, this is unworkable.
 segmentation as a *graph* whose nodes are supervoxels and whose edges are "these are
 the same object". An object is a connected component of that graph. Then:
 
-- **A merge is adding an edge.** Microseconds, not gigabytes.
+- **A merge is adding an edge.** A small graph write, not a rewrite of gigabytes of voxels.
 - **A split is removing edges** — specifically, finding a minimum cut separating two
   user-specified points.
 - **The graph is hierarchical and chunked**, so connected-component queries over
@@ -184,13 +182,14 @@ the same object". An object is a connected component of that graph. Then:
   contains this supervoxel?" without traversing the whole graph.
 - **Every edit is an entry in an append-only log**, with author, timestamp, and
   operation. Nothing is destroyed; state at any past time is recoverable.
-- **Concurrent editing works**, because edits are small graph operations that can be
-  applied and reconciled independently.
+- **Concurrent editing works**, because an edit touches only the objects involved;
+  proofreaders working on different neurons do not collide.
 
-Systems in production use: **CAVE** (Connectome Annotation Versioning Engine, used for
-MICrONS and FlyWire), **DVID**, **webKnossos**, **CATMAID** (which solved a related
-problem for skeleton-based tracing), and **neuPrint** (a Neo4j-backed graph service
-for released, frozen connectomes).
+**CAVE** (Connectome Annotation Versioning Engine, used for MICrONS and FlyWire) is
+built on this design. Other production systems solve parts of the same problem in
+their own ways: **DVID** (versioned data service), **webKnossos**, **CATMAID** (for
+skeleton-based tracing), and **neuPrint** (a Neo4j-backed graph service for released,
+frozen connectomes).
 
 ### Why this matters to you, the analyst
 
@@ -199,9 +198,9 @@ changes every time it is edited. A "root ID" identifies an object *as of a momen
 time*.
 
 This has a hard consequence: **an object ID in your notebook, your paper, or your
-figure caption is meaningless without a timestamp or version.** This is the number-one
-reproducibility failure in connectomics analysis, and it is silent — your code runs
-fine, it just answers a different question than it did last week.
+figure caption is meaningless without a timestamp or version.** This is the most
+common reproducibility failure in connectomics analysis, and it is silent. Your code
+runs; it answers a different question than it did last week.
 
 ### Materialization
 
@@ -214,8 +213,7 @@ timestamp, and written into queryable tables.
 - The version number is a **first-class part of your methods section**, exactly like a
   software version or a genome build.
 - Re-running the same analysis on a later version *will* give different numbers,
-  because proofreading continued. That is correct behavior, not a bug — but it must
-  be visible.
+  because proofreading continued. That is correct behavior, but it must be visible.
 
 > **Rule.** Every figure you produce records the materialization version, the query
 > code, and the date. Every paper states the version. If your collaborator cannot
@@ -224,7 +222,7 @@ timestamp, and written into queryable tables.
 ### Worked example: which version produced this number?
 
 > **The situation:** a figure your group submitted eight months ago reports that a
-> pyramidal cell — root ID quoted in the caption — receives 1,412 input synapses.
+> pyramidal cell, root ID quoted in the caption, receives 1,412 input synapses.
 > Re-running the notebook today returns 1,530 for an ID the lineage viewer says is
 > "the same cell." A reviewer asks which number is right.
 
@@ -234,33 +232,33 @@ the silent failure this section describes: the code still runs; it now answers a
 different question than it did in the winter.
 
 **Step 2 — recover the timestamp.** The notebook's commit history dates the run.
-That week brackets two materializations — call them 795 and 802 — so the date
-alone does not identify the version. This is the uncomfortable part: you are
+That week brackets two materializations, call them T795 and T802 (fictional labels;
+this case is invented for teaching), so the date alone does not identify the version. This is the uncomfortable part: you are
 reconstructing provenance that should have been recorded, from evidence that was
 recorded for other reasons.
 
 **Step 3 — test both candidates.** Pin the query to each version in turn. Version
-795 returns 1,412. Exact agreement on the total is suggestive, not conclusive —
-two versions could coincidentally match on a sum — so check the per-partner
-synapse counts as well. They match row for row. The figure was computed against
-795.
+T795 returns 1,412. Exact agreement on the total is suggestive, not conclusive: two
+versions could match on a sum by coincidence. So check the per-partner synapse
+counts as well. They match row for row. The figure was computed against
+T795.
 
 **Step 4 — explain the difference; don't just date it.** Map the old root ID
-forward through the lineage service. It resolves to a single current root — no
-splits — but the edit log shows a series of merge operations, each with author and
+forward through the lineage service. It resolves to a single current root, with no
+splits, but the edit log shows a series of merge operations, each with author and
 timestamp, that attached previously split fragments of distal dendrite over the
 intervening months. The 118 additional inputs sit on the newly attached arbor.
-Both numbers are correct — for different objects. The original claim was
+Both numbers are correct, for different objects. The original claim was
 under-specified, not wrong.
 
 **Step 5 — repair the record.** The response to the reviewer states:
-materialization 795, root ID as of that version, n = 1,412; under the current
+materialization T795, root ID as of that version, n = 1,412; under the current
 version the same lineage resolves to a more complete reconstruction with 1,530
 inputs. The revised methods section pins the version, and the notebook gains the
 five-line header it should have had.
 
 **Transferable principle:** every provenance question in this system is answerable
-because the architecture keeps append-only artifacts — the edit log, the lineage
+because the architecture keeps append-only artifacts: the edit log, the lineage
 graph, the materialization snapshots. But answerable-after-an-afternoon-of-forensics
 and reproducible-by-construction are different states, and the version number in
 the figure caption is what separates them.
@@ -272,14 +270,14 @@ the figure caption is what separates them.
 
 Because supervoxel IDs are immutable and neuron (root) IDs are not.
 
-A synapse is physically attached to a small piece of tissue — a supervoxel. That
+A synapse is physically attached to a small piece of tissue, a supervoxel. That
 attachment never changes, no matter how proofreaders regroup supervoxels into
 neurons. So the synapse table is written once and stays correct forever.
 
 If you stored neuron IDs instead, then every merge and split would invalidate rows
 in a table with hundreds of millions of entries, and any stale copy of the table
 would be silently wrong. Resolving "which neuron does this synapse belong to?"
-becomes a lookup from supervoxel → current root at a given version — which is
+becomes a lookup from supervoxel → current root at a given version, which is
 exactly what the materialization precomputes.
 
 **Generalizable principle:** in a system with mutable groupings, store foreign keys
@@ -313,15 +311,16 @@ The correct procedure:
 
 ## 3. Storage layout, and why chunk shape is a real decision
 
-Petascale volumes are stored as **chunked, multi-resolution arrays** — the
+Petascale volumes are stored as **chunked, multi-resolution arrays**: the
 Neuroglancer precomputed format, N5, Zarr / OME-Zarr, and similar. The recurring
 elements:
 
 - **Chunks:** the volume is divided into blocks (commonly 64³ to 512³ voxels) stored
   as individual objects. You fetch only the chunks you need.
 - **Resolution pyramid:** progressively downsampled copies. Zooming out fetches a
-  coarse level rather than a million fine chunks. The pyramid costs about 30–50% extra
-  storage and is what makes interactive viewing possible.
+  coarse level rather than a million fine chunks. Halving x and y at each level adds
+  1/4 + 1/16 + … ≈ 1/3 of the base, so the pyramid costs up to about a third more
+  storage (less once levels also halve z). It is what makes interactive viewing possible.
 - **Sharding:** millions of tiny objects are slow and expensive in object stores, so
   chunks are bundled into larger shard files with an index. This is a pure
   cost/latency optimization and it matters a lot at petascale.
@@ -339,8 +338,8 @@ things:**
 | Synapse query | Random access to scattered small regions | Small chunks, good spatial index |
 
 You cannot optimize for all three with one layout. Production systems store **multiple
-representations** — the image pyramid for viewing, the segmentation graph for editing,
-and materialized tables for analysis — precisely so each consumer gets a layout suited
+representations** (the image pyramid for viewing, the segmentation graph for editing,
+and materialized tables for analysis) so that each consumer gets a layout suited
 to it. When someone asks "why is this stored three times?", that is the answer.
 
 ---
@@ -372,13 +371,13 @@ is either promoted or rejected. Analyses cite the release.
 
 ## 5. Capacity and cost, worked
 
-For a 1 mm³ volume at 4 × 4 × 40 nm (~1.5 × 10¹⁵ voxels):
+For a 1 mm³ volume at 4 × 4 × 40 nm (~1.6 × 10¹⁵ voxels):
 
 | Item | Estimate | Notes |
 |---|---|---|
-| Raw archive | ~1.5 PB | Written once, read rarely; cold storage |
-| Aligned pyramid | ~2 PB | Base + ~30–50% for the pyramid; hot |
-| Affinity/boundary maps | ~1.5 PB | Often transient — delete after supervoxel generation |
+| Raw archive | ~1.6 PB | Written once, read rarely; cold storage |
+| Aligned pyramid | ~2 PB | Base + up to ~1/3 for the pyramid; hot |
+| Affinity/boundary maps | ~1.6 PB | One 8-bit channel at full resolution; three affinity channels triple it, a coarser grid shrinks it. Often transient: delete after supervoxel generation |
 | Supervoxels + segmentation | ~0.2–0.8 PB | Label-aware compression helps a lot |
 | Meshes (all LODs) | 1–10 TB | Regenerated on edit |
 | Skeletons | 10–100 GB | Cheap; archive them (see Unit 02) |
@@ -386,15 +385,15 @@ For a 1 mm³ volume at 4 × 4 × 40 nm (~1.5 × 10¹⁵ voxels):
 | Edit history | Grows monotonically | Must be curated, never deleted |
 
 **GPU cost, order of magnitude.** Suppose a segmentation network processes ~10⁷
-voxels/second/GPU end-to-end including I/O. For 1.5 × 10¹⁵ voxels:
+voxels/second/GPU end-to-end including I/O. For 1.6 × 10¹⁵ voxels:
 
 ```
-1.5e15 / 1e7 = 1.5e8 GPU-seconds ~= 1,736 GPU-days
+1.6e15 / 1e7 = 1.6e8 GPU-seconds ~= 1,850 GPU-days
 ```
 
-On 500 GPUs that is roughly 3.5 days of wall clock — and you will run it more than
-once, because the first model version is never the last. Budget for 3–5 full inference
-passes over the project lifetime.
+On 500 GPUs that is roughly 3.7 days of wall clock. You will run it more than
+once, because the first model version is never the last. A rule of thumb, not a
+measured figure: budget for 3–5 full inference passes over the project lifetime.
 
 **But the dominant cost is none of the above.** It is **proofreading labor**. At
 even a modest few hours of skilled human attention per fully-proofread neuron, a study
@@ -405,13 +404,15 @@ time on triage and prioritization rather than on algorithms.
 
 **Cost traps specific to this domain:**
 
-- **Egress.** Moving a petabyte out of a cloud region can cost more than storing it
-  for a year. Co-locate compute with data; give collaborators compute *next to* the
-  data rather than copies of it.
+- **Egress.** Cloud providers charge per gigabyte to move data out of a region, and
+  every collaborator who downloads a copy pays again. At petabyte scale that is a
+  budget line of its own; check your provider's current rates. Co-locate compute with
+  data, and give collaborators compute *next to* the data rather than copies of it.
 - **Small-object overhead.** Billions of unsharded chunks incur per-request charges
   and listing costs that can exceed storage costs. Shard.
-- **Forgotten intermediates.** Affinity maps are the size of the raw data. Delete them
-  after supervoxel generation, or set a lifecycle policy — but only once you are
+- **Forgotten intermediates.** Affinity maps are about the size of the raw data, or
+  several times it with multiple channels. Delete them
+  after supervoxel generation, or set a lifecycle policy, but only once you are
   confident you will not need to re-agglomerate.
 - **Idle hot storage.** Move the raw archive to cold tiers immediately after ingest
   validation.
@@ -420,7 +421,7 @@ time on triage and prioritization rather than on algorithms.
 
 <details markdown="1">
 <summary>To cut the storage bill for the 1 mm³ volume above, a colleague proposes one
-chunk layout for everything — 64³ chunks, no second representation — serving
+chunk layout for everything (64³ chunks, no second representation) serving
 proofreading, analysis jobs and synapse queries alike. What goes wrong, and what would
 you cut instead?</summary>
 
@@ -434,10 +435,10 @@ consumer gets a layout suited to it. That duplication is the design, not the was
 
 The savings are elsewhere in the same table:
 
-1. **Affinity maps**, ~1.5 PB and often transient. Delete them after supervoxel
-   generation, or put a lifecycle policy on them — once you are confident you will not
+1. **Affinity maps**, ~1.6 PB and often transient. Delete them after supervoxel
+   generation, or put a lifecycle policy on them, once you are confident you will not
    re-agglomerate.
-2. **The raw archive**, ~1.5 PB, written once and read rarely. Move it to cold storage
+2. **The raw archive**, ~1.6 PB, written once and read rarely. Move it to cold storage
    immediately after ingest validation, but never delete it: it is the only
    irreplaceable asset.
 3. **Sharding**, if the chunks are not already sharded, cuts the per-request charges.
@@ -453,28 +454,24 @@ serves a distinct access pattern. The waste is usually an intermediate nobody de
 
 ## Visual context set
 
-Read these as architecture sketches to check your own mental model against. For each one, ask where the immutable layer sits and where the mutable one does — the whole design in §2 follows from freezing supervoxels and letting only the grouping change.
+Read these as architecture sketches to check your own mental model against. For each one, ask where the immutable layer sits and where the mutable one does. The whole design in §2 follows from freezing supervoxels and letting only the grouping change.
 
 <div class="cards-grid">
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png' | relative_url }}" alt="High-level architecture visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S04:</strong> A high-level architecture view. Map the eight stages of §1 onto it and name the artifact each stage actually produces, because the artifact is the thing you debug. A stage whose output you cannot name is a stage you do not yet understand.</p>
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S04-01.png' | relative_url }}" alt="The same block of EM imagery shown twice: on the left with dark predicted boundaries drawn over it, on the right with each object filled in a different color" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S04:</strong> One block of EM, twice. Left: predicted boundaries over the image (Stage 3). Right: the objects those boundaries produce, one color each (Stages 4–5). Name the artifact behind each panel. The right panel is a grouping of supervoxels, not a new image, and §2 explains why that matters for editing.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S07-01.png' | relative_url }}" alt="Workflow API integration visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S07:</strong> Workflow and API integration. Ask what a query crossing these boundaries returns and whether it is pinned: a root ID carries no meaning without a materialization version or timestamp (§2), and this layer is where that omission quietly enters an analysis.</p>
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S07-01.png' | relative_url }}" alt="A colored segmentation of an EM block on the left and, on the right, one of its objects extracted as a solid orange 3D shape" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S07:</strong> From segmentation to derived geometry (Stage 6): one object lifted out of the labeled block as a 3D shape. That mesh is regenerated whenever the object is edited, so a mesh saved last month may show a neuron that no longer exists under that root ID.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png' | relative_url }}" alt="Service decomposition visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S12:</strong> Service decomposition. Match each service to the consumers in §3 — proofreader, analysis job, synapse query — which want mutually incompatible chunk layouts. Storing the same data in several representations is the answer to “why is this here three times?”, not redundancy.</p>
-  </article>
-  <article class="card">
-    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S08-01.png' | relative_url }}" alt="Scalable analytics context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L1 S08:</strong> Scalable analytics. Weigh whatever scaling story it tells against the cost table in §5: compute and storage are line items you can negotiate with a vendor, and proofreading labor is the dominant cost that no architecture removes.</p>
+    <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S12-01.png' | relative_url }}" alt="The first frame of an ingest diagram: a local storage icon, an Ingest Client box and a Boss API box on a black background" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L1 S12:</strong> The first frame of an ingest diagram: local storage, an ingest client and the BossDB API. The next card shows the full path. Before reading it, predict what has to sit between the client and the API for Stage 1's write-once archive and validated manifest to exist.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S14-01.png' | relative_url }}" alt="Ingest architecture diagram: an ingest client uploads tiles through a task queue into a tile bucket and tile index, which are converted into a cuboid bucket and cuboid index in storage" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S14:</strong> An ingest path. Tiles leave local storage through an upload queue into a tile bucket with its own index; a second step turns tiles into cuboids — chunks — with a cuboid index. That is Stage 1 and the §3 chunking decision in one picture. Ask where the validated tile manifest lives, and at which arrow the raw tiles become the write-once archive Stage 1 requires.</p>
+    <p class="card-description"><strong>Module14 L1 S14:</strong> An ingest path. Tiles leave local storage through an upload queue into a tile bucket with its own index; a second step turns tiles into cuboids (chunks) with a cuboid index. That is Stage 1 and the §3 chunking decision in one picture. Ask where the validated tile manifest lives, and at which arrow the raw tiles become the write-once archive Stage 1 requires.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE13_LESSON1-S12-01.png' | relative_url }}" alt="Workflow diagram: user interface, scheduler, queue, parallel tool instances, and an IO manager between the tools and storage" style="width:100%; border-radius:8px;">
@@ -482,15 +479,15 @@ Read these as architecture sketches to check your own mental model against. For 
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S05-01.png' | relative_url }}" alt="Cloud architecture diagram with load balancers, API servers, caches, metadata tables, serverless functions and object storage inside a virtual private cloud" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S05:</strong> The service layout of a cloud-hosted volumetric database. Find the object store and the cache in front of it, then apply the §5 cost traps: every chunk fetched is a billed request, so an unsharded layout pays per object, and every byte that leaves the region pays egress. Ask where a collaborator's analysis would run under this layout — next to the data, or on a copy taken out of it.</p>
+    <p class="card-description"><strong>Module14 L1 S05:</strong> The service layout of a cloud-hosted volumetric database. Find the object store and the cache in front of it, then apply the §5 cost traps: every chunk fetched is a billed request, so an unsharded layout pays per object, and every byte that leaves the region pays egress. Ask where a collaborator's analysis would run under this layout: next to the data, or on a copy taken out of it.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S09-01.png' | relative_url }}" alt="A slice through an image volume in a web viewer, with a 50 micrometre scale bar and red and green axis lines" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S09:</strong> One slice of a served volume, with a 50 µm scale bar and the viewer's axis lines. A field this wide is what the resolution pyramid in §3 exists for: zoomed out, a viewer fetches a coarse level rather than millions of native-resolution chunks, and the 30–50% extra storage in the §5 table is the price of that.</p>
+    <p class="card-description"><strong>Module14 L1 S09:</strong> One slice of a served volume, with a 50 µm scale bar and the viewer's axis lines. A field this wide is what the resolution pyramid in §3 exists for: zoomed out, a viewer fetches a coarse level rather than millions of native-resolution chunks, and the extra third of storage in the §5 table is the price of that.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/04-volume-reconstruction-infrastructure/FIG-SRC-MODULE14_LESSON1-S19-01.png' | relative_url }}" alt="Screenshot of the BossDB web page describing a volumetric database in the AWS cloud" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L1 S19:</strong> The public face of one such system: BossDB, which describes itself as a volumetric database in the AWS cloud for petabytes of high-dimensional data (the screenshot is dated by its 2017 banner). Put the §2 question to any service before building on it: does it hold images, a mutable segmentation, or frozen tables — and if a segmentation, where are its versions?</p>
+    <p class="card-description"><strong>Module14 L1 S19:</strong> The public face of one such system: BossDB, which describes itself as a volumetric database in the AWS cloud for petabytes of high-dimensional data (the screenshot is dated by its 2017 banner). Put the §2 question to any service before building on it: does it hold images, a mutable segmentation, or frozen tables? If a segmentation, where are its versions?</p>
   </article>
 </div>
 
@@ -503,19 +500,26 @@ Read these as architecture sketches to check your own mental model against. For 
 **Part A — make a reproducible query (45 min).**
 
 *No account?* The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }})
-runs a version-pinned query on static public exports, with archived outputs to compare
-against. It covers the same reproducibility steps.
+reads public static exports pinned to materialization v1507 (31 July 2025), checks every
+file against a hash, and compares the proofreading table with v1412 to show version
+drift. It needs no CAVE token, and its archived outputs let you check your rerun. It
+practices the habits in steps 1, 5 and 6 below (pinning, cross-version drift, a methods
+record) on a different question, reciprocity among proofread neurons. Its drift check
+covers the proofreading table only, because the small synapse export exists only at
+v1507.
 
 Using `caveclient` against the MICrONS public release (or `neuprint-python` against
 hemibrain, or the FlyWire client, whichever you have access to):
 
 1. Connect, and **print the available materialization versions.** Pick one and pin to
    it explicitly in your code. Record the version number in a comment at the top of
-   your notebook.
+   your notebook. For MICrONS, prefer a long-lived analysis version (943 or 1300).
+   Most versions are archived after a year or two, and v1507 was scheduled to leave
+   the live CAVE service on 31 July 2026.
 2. Pick any neuron. Retrieve its input synapses and its output synapses.
 3. Report: total input count, total output count, and the number of distinct
    presynaptic partners.
-4. Compute the distribution of synapses per partner. Note that it is heavy-tailed —
+4. Compute the distribution of synapses per partner. Expect it to be heavy-tailed:
    most partners contribute one synapse, a few contribute many. Plot it on log axes.
 5. **Now re-run steps 2–4 against a different materialization version.** Report how
    the numbers changed and explain why.
@@ -560,7 +564,7 @@ This shape matters for analysis. Single-synapse connections are exactly the ones
 most vulnerable to false-positive synapse detection and to merge errors, so the
 "weak" tail of the connectivity distribution is also its least reliable part. Many
 analyses therefore apply a threshold (e.g. ≥ 2 or ≥ 3 synapses to call a
-connection) — which is a defensible choice that **must be stated**, because it
+connection). That is a defensible choice, and it **must be stated**, because it
 changes graph density substantially and it changes it non-uniformly across cell
 types. Unit 09 returns to this.
 </details>
@@ -598,7 +602,7 @@ than by ability.
 From this unit:
 
 - **Pin the version, and put it in the figure caption.**
-  An object ID without a materialization version or timestamp is meaningless. This is the most common silent correctness bug in connectomics analysis, and it is invisible — your code still runs.
+  An object ID without a materialization version or timestamp is meaningless. This is the most common silent correctness bug in connectomics analysis, and it is invisible: your code still runs.
 
 - **Treat provenance as a pipeline stage with its own tests.**
   If the acquisition log is not machine-readable, it does not exist. You will discover this the first time you need to ask whether a defect follows block position or acquisition time.
@@ -610,7 +614,7 @@ etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practi
 
 Segmentation model architectures and proofreading practice (Unit 08), the metrics used
 to accept a release (Unit 08), and analysis on the resulting graph (Unit 09).
-Deployment specifics for any one platform are out of scope — the ideas here transfer
+Deployment specifics for any one platform are out of scope. The ideas here transfer
 across CAVE, DVID, webKnossos, and neuPrint even though the APIs do not.
 
 ---

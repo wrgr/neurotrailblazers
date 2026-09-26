@@ -55,7 +55,7 @@ content_type: core
   <a href="#decisions">Decisions</a>
   <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
-  <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
+  <a href="{{ '/avatars/' | relative_url }}">All personas</a>
 </nav>
 
 <section class="section" id="story">
@@ -123,7 +123,7 @@ awkwardness — matches how she already thinks about data quality.
 
 ## How the Site's Material Serves Her
 
-The [models-in-practice playbook]({{ '/models/' | relative_url }})
+The [Program Models]({{ '/models/' | relative_url }}) page
 is the page written most directly for her. It walks the six MERIT stages with,
 for each, what the mentee produces and the failure mode the stage exists to
 prevent — and names the two errors a busy PI is most likely to make: stage
@@ -148,9 +148,9 @@ give everyone the same vocabulary for errors and metrics.
 The loneliness of leadership has no page of its own, but the
 [Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
 treats mentoring, program design, and professional community as material to
-study rather than talents to have — which is itself the reframe she needs: the
-playbook's closing point is that leading a lab well is not time taken away
-from science; it is the science.
+study rather than talents to have. That is the reframe she needs: mentoring
+well is a skill she can learn and plan for, like any other part of running a
+lab.
 
 One habit from the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 transfers directly to her lab meetings: state norms explicitly, in the first

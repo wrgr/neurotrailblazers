@@ -446,7 +446,7 @@ modules:
       - prompt: Your motif survived one degree-preserving null and no sensitivity analysis. Which phrasing is calibrated?
         options:
         - Reciprocal pairs occurred 2.1x more often than the degree-preserving null predicts; a spatially constrained null was not tested
-        - Reciprocal pairs are strikingly enriched, clearly indicating recurrent organisation
+        - Reciprocal pairs are strikingly enriched, clearly indicating recurrent organization
         - Reciprocal pairs may possibly be somewhat enriched, though this remains uncertain
         correct_index: 0
         explanation: Calibration is not hedging volume. The third option is vaguer than the evidence, and the second substitutes adjectives for an effect size. The defensible sentence names the number, the baseline it was measured against and the test that was not run, which is also what makes the result re-checkable by someone else.
@@ -489,7 +489,7 @@ modules:
       - prompt: 847 segments intersect the volume bounding box. Which handling is defensible?
         options:
         - 'Include them: excluding real neurons biases the cell-type composition'
-        - Flag them explicitly, then either exclude them or analyse them with a stated caveat about truncated arbors
+        - Flag them explicitly, then either exclude them or analyze them with a stated caveat about truncated arbors
         - Include them but weight their synapse counts by the fraction of arbor inside the volume
         correct_index: 1
         explanation: 'Boundary neurons have artificially low synapse counts and incomplete morphologies, so silently including them understates connectivity for exactly the cells at the edge. What the module requires is that the decision is visible: a flag column plus a stated policy. Reweighting assumes you know the size of the missing arbor, which is what the volume boundary took away.'
@@ -521,7 +521,7 @@ modules:
         - Ask the authors to remove the consortium, since organisations cannot be authors
         - Raise it in confidential comments to the editor and keep the review itself to the science
         correct_index: 0
-        explanation: Proofreading is the labour that makes the data usable, and a blanket consortium byline makes the people who did it invisible in the record that gets counted for jobs and fellowships. Contribution tracking is the mechanism that fixes it, and it belongs in the public review where the authors can act on it rather than in a private aside.
+        explanation: Proofreading is the labor that makes the data usable, and a blanket consortium byline makes the people who did it invisible in the record that gets counted for jobs and fellowships. Contribution tracking is the mechanism that fixes it, and it belongs in the public review where the authors can act on it rather than in a private aside.
       - prompt: The discussion states that the motif "likely plays a causal role in seizure propagation." What is the bounded version?
         options:
         - The motif is associated with seizure propagation in this cortical volume
@@ -688,10 +688,10 @@ modules:
       title: Pathway Planning Checkpoint
       pass_score: 2
       questions:
-      - prompt: Your fit matrix has two empty capability cells for your preferred programme. What are they?
+      - prompt: Your fit matrix has two empty capability cells for your preferred program. What are they?
         options:
         - Your work plan for the next 90 days, each closing into an artifact
-        - Evidence that the programme is a poor fit and should be dropped
+        - Evidence that the program is a poor fit and should be dropped
         - Items to frame in the personal statement as future intentions
         correct_index: 0
         explanation: The matrix converts a vague sense of readiness into named capabilities and the artifacts that demonstrate them, so a gap is information rather than a verdict. Restating a gap as an intention is the failure the module warns about, because statements are read as evidence rather than aspiration. Close the cell with something a reader can open.

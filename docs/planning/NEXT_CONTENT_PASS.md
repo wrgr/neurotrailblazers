@@ -83,10 +83,16 @@ Recommended order for the remaining site/content work:
    `docs/reviews/2026-09-kit-materials-audit.md`: kit answer files are public, Module 04
    Patch D has no public hippocampal source, and Module 19's fictional preprint names a
    real dataset.)*
-6. [ ] **Let the syllabus maps use the repaired kits (S).** Both maps were written to
+6. [x] **Let the syllabus maps use the repaired kits (S).** Both maps were written to
    route around kits whose files were missing. Revisit the omitted kits (03–07, 09–11)
    now that their materials resolve. Done when each omission is a choice about time or
-   overlap, not a missing file.
+   overlap, not a missing file. *(26 September, in the site audit: the 16-week map now
+   covers all 17 kits one by one; Kits 07 and 10 are offered as take-homes and Kit 07 as a
+   swap for Unit 08 Part B. Contact hours unchanged.)*
+7. [x] **Full site audit for accuracy, polish and voice (L).** *(26 September: two
+   fabrication audits, a verified canonical-facts registry, then parallel passes over every
+   area of the site, including the 2,000-paper data. Summary, reports and the collected
+   owner decisions: `docs/reviews/2026-09-site-audit/README.md`.)*
 3. [~] **Model answers and assessment.** Start the 25-module key backlog with
    modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank
    aligned to the four lecture outcomes, with worked answers and misconception
@@ -407,7 +413,7 @@ judgement, what the page does not cover, go-deeper links). Seed papers already e
 - [x] `content-library/infrastructure/synapse-detection.md` (L). Cleft prediction, partner assignment, E/I classification, benchmarks, cross-dataset degradation. Repoint `_data/open_problems.yml:53`. *(~4,500 words. Every number sourced; the CREMI weighting formula, gap-junction figures and MICrONS detector accuracy are named as unsourced in the page's own does-not-cover section rather than asserted.)* *(Reframed after review by the site owner: detection is a solved problem, and the page now opens by saying so. The three residuals it is actually about are asymmetric recall — H01 missed 35% of inhibitory synapses — partner assignment in polyadic cases, and cross-dataset transfer, which is why the site's own open problem is titled "synapse detection **that generalizes**".)*
 - [x] `content-library/connectomics/ethics-and-governance.md` (M). Consent for human tissue, de-identification, dual use, data licences, credit for proofreaders. Module 19 links here instead of owning the material. *(~3,250 words. H01's provenance from the Science full text, with the ethics statement located in the supplementary methods rather than implied absent; portal licences with the obligations each imposes; FlyWire's 33 person-years and consortium authorship as the credit worked example.)* *(Reframed after review by the site owner: connectomics has no current human-subjects problem, and the page now says that first. Live today are licence compliance and credit for proofreading labour; consent at whole-brain scale, de-identification, neural-data regulation and dual use are set out as a prospective seminar rather than a compliance checklist.)*
 - [ ] `content-library/case-studies/microns-visual-cortex.md` rewrite (M): co-registration, functional-unit matching, what calcium data does and does not license.
-- [ ] `content-library/connectomics/comparative-connectomics.md` (M): what transfers across worm, fly, mouse, human and what does not.
+- [x] `content-library/connectomics/comparative-connectomics.md` (M): what transfers across worm, fly, mouse, human and what does not.
 - [ ] `content-library/imaging/beyond-em.md` (M): expansion microscopy, X-ray nanotomography, barcoding (MAPseq, BARseq), array tomography, LICONN, with the one-slide contrast case from the graduate decks as the framing.
 - [ ] `content-library/infrastructure/provenance-and-versioning.md` expansion (S): it is the thinnest page and the most-linked norm.
 - [ ] `content-library/cell-types/neuron-type-identification.md` figures and expansion (S).

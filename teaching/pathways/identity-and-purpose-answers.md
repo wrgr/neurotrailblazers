@@ -19,21 +19,22 @@ counseling, and it does not tell anyone whether they belong.
 | # | The named thing | Reading |
 |---|---|---|
 | 1 | What a materialization version is, and what ID churn means | Gap. One entry in the [dictionary]({{ '/technical-training/dictionary/' | relative_url }}) and a question to a peer. |
-| 2 | That the norm is to arrive with two questions, not a full rehearsal | Gap. Her extra preparation is unpaid labor, not evidence she is behind. |
+| 2 | That the norm is to arrive with two questions, not a full rehearsal | Gap. Five hours of preparation is a cost she can drop. It is not evidence she is behind. |
 | 3 | Where a stipend comes from | Gap. Covered in [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}); people with academic families learned it at home. |
 | 4 | That the room speaks at partial confidence | Gap about a norm. She applies a stricter entry standard than the room does. |
 | 5 | Nothing she lacks | Environment signal. Work reattributed more than once, correcting it treated as the problem, and "work around it" from someone with standing. |
 | 6 | Not yet named | Cannot tell yet. Ask someone who was there: "What was everyone already assuming in that discussion?" |
 
-**The key reading** is that five of six moments are gaps, and one is not. A response
-that calls all six gaps has explained moment 5 away. A response that calls all six
-environment signals has missed that the first four close within a week. Accept moment 2
+**The key reading** is that four moments are gaps, one is an environment signal, and one
+cannot be read yet. A response that calls all six gaps has explained moment 5 away. A
+response that calls all six environment signals has missed that the first four close within a week. Accept moment 2
 as *cannot tell yet* if the learner asks whether the supervisor expects that
 preparation; the question is the right move.
 
 **Dev.** His gap is vocabulary and pace. Much of it closes with the dictionary in a week.
-The trap is treating the biology as a detail; the field will notice. His second trap is
-reading academic slowness as incompetence rather than as different incentives.
+The trap is treating the biology as a detail. Colleagues will notice, and he will be
+reading papers he cannot judge. A second trap: he reads slow meetings as incompetence,
+when they usually reflect different incentives.
 
 ## 2. Inés's contribution plan
 
@@ -48,9 +49,9 @@ reading academic slowness as incompetence rather than as different incentives.
 somewhere she controls. Tell one person outside the situation, such as a second mentor
 or the graduate director, and ask how they read it. Ask her supervisor once, in writing,
 how the axon work will be credited. She does not need to raise it with the other student
-again; one attempt, already met with "touchy", is enough. This is a credit problem at rung 2 in
-[Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}); it may become more.
-Contributing harder will not fix it.
+again. She tried once and was called touchy. This is a credit problem at rung 2 in
+[Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}), and it may become
+more than that. Contributing harder will not fix it.
 
 ## 3. Private diagnosis and plan: what good looks like
 

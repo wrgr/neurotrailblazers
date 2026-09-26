@@ -34,12 +34,14 @@ under a fixed budget**: which corrections, in which order, stopping when.
 
 Teams that treat it as cleanup run out of money with a half-corrected volume and no
 defensible claim. Teams that treat it as allocation deliver a specific scientific
-result with quantified error bounds. The difference is entirely in how the work is
+result with quantified error bounds. The difference lies in how the work is
 prioritized and when it is declared finished.
 
-> [!TIP]
-> **Looking for Hands-On Tracing Walkthroughs & Tool Tutorials?**
-> Check out the [EM Proofreading Tutorials & Community Practice Guide]({{ '/technical-training/proofreading-tutorials/' | relative_url }}) for step-by-step Neuroglancer/CAVE keybinding cheat sheets, false merge/split visual diagnosis, synapse validation criteria, and direct links to the FlyWire Academy and EyeWire platforms.
+For the hands-on side, the [EM Proofreading Tutorials]({{ '/technical-training/proofreading-tutorials/' | relative_url }})
+page shows how false merges, false splits and orphan fragments look in the viewer, gives
+synapse verification criteria, outlines CAVE/Neuroglancer and webKnossos workflows, and
+links to FlyWire Academy and EyeWire. It does not list key bindings, because each
+Neuroglancer deployment sets its own.
 
 ---
 
@@ -81,8 +83,10 @@ sequential and expensive.
 - **Thin processes.** A 60 nm spine neck at 40 nm z-resolution may appear in only one
   or two sections. There is very little evidence to work with, so spine necks are a
   perennial source of splits.
-- **Steep z-trajectories.** Anisotropy again. A process crossing sections at a shallow
-  angle to the imaging plane presents a small, rapidly-moving cross-section.
+- **Near-in-plane trajectories.** Anisotropy again. A process running at a shallow
+  angle to the imaging plane jumps a long way sideways between consecutive sections,
+  and its profile is an elongated smear rather than a compact disc, so linking it
+  across sections is guesswork.
 - **Membrane contact.** Two membranes tightly apposed over many sections may not be
   separable, especially with weak staining (Unit 03).
 - **Artifact regions.** Folds, charging, missing sections — the network was not
@@ -158,16 +162,16 @@ The content library has the mathematics; this section is about *choosing*.
 
 | Metric | Measures | Blind to | Use when |
 |---|---|---|---|
-| **Variation of Information (VI)** | Total disagreement between two segmentations, decomposable into split and merge components | Object size — a merge of two tiny fragments and a merge of two full neurons contribute very differently, and not in the way you might want | Comparing segmentation versions on the same volume |
-| **Expected Run Length (ERL)** | Mean error-free path length along skeletons | Merges, unless explicitly penalized; also insensitive to small dangling fragments | Tracing-oriented questions: "how far can I follow a neurite before hitting an error?" |
+| **Variation of Information (VI)** | Information-theoretic distance between a segmentation and ground truth: H(seg given truth) + H(truth given seg), in bits. The first term measures splits, the second merges ([Meilă 2007](https://doi.org/10.1016/j.jmva.2006.11.013)) | Connectivity. VI is voxel-weighted, so errors in large objects dominate, and a thin merge that moves many synapses between cells can cost almost nothing | Comparing segmentation versions on the same volume |
+| **Expected Run Length (ERL)** | Expected error-free skeleton length from a randomly chosen point on a ground-truth skeleton: sum of squared run lengths ÷ total skeleton length ([Januszewski et al. 2018](https://doi.org/10.1038/s41592-018-0049-4)) | Merges only if the implementation penalizes them (the common convention gives a merged segment zero run length; check which one a paper used); insensitive to small dangling fragments | Tracing-oriented questions: "how far can I follow a neurite before hitting an error?" |
 | **Edge precision / recall** | Correctness of connections in the derived graph | Weights all edges equally, so a 1-synapse and a 50-synapse connection count the same | Graph-level claims |
 | **Synapse precision / recall** | Correctness of detected synapses | Assumes correct segmentation underneath — a synapse assigned to a merged object scores as correct | Synapse-level claims |
 | **Completeness (per neuron)** | Fraction of a neuron actually reconstructed | Says nothing about correctness of what is there | Per-cell claims like input counts |
 
 > **Use at least two metrics from different rows, and always report VI's split and
 > merge components separately.** A single VI number can improve while merges get worse,
-> because the split component dominates. That is a real and common way to ship a
-> regression.
+> because in an over-segmented pipeline the split component dominates. That is how a
+> regression ships behind a better headline number.
 
 ### The metric that actually matters
 
@@ -187,8 +191,9 @@ Procedure:
    from 3.1 to 2.8" is a far stronger statement about data quality than any VI value,
    and reviewers understand it immediately.
 
-This costs a few dozen person-hours and it converts "we proofread the data" into a
-quantified error bound. It is the single highest-value practice in this unit.
+The cost is bounded and plannable: price it from your own per-cell timing (the lab's
+Part A). It converts "we proofread the data" into a quantified error bound, which makes
+it the highest-value practice in this unit.
 
 ### Check yourself
 
@@ -200,8 +205,16 @@ team wants to ship it. What do you check first?</summary>
 
 Total VI is dominated by whichever component is larger, and in an over-segmented
 pipeline that is usually splits. Version B may have reduced splits (perhaps by more
-aggressive agglomeration) while *increasing* merges — and the total would still
-improve.
+aggressive agglomeration) while *increasing* merges, and the total would still
+improve. With synthetic numbers:
+
+```
+             split VI   merge VI   total VI
+Version A      1.20       0.10       1.30
+Version B      0.80       0.30       1.10
+```
+
+B's total is 15% lower, and its merge component has tripled.
 
 Since merges are the expensive error, a "better" total VI with worse merges is a
 regression for connectomics purposes, even though the headline number improved.
@@ -380,14 +393,17 @@ feedback rather than individual failure.
 Structure work in bounded blocks and rotate task types.
 
 **Community proofreading works, with structure.** The FlyWire whole-brain connectome
-was completed with millions of edits from a large distributed community over several
-years — an existence proof that this scales beyond a single lab. What made it work was
-not enthusiasm but infrastructure: task queues, automated candidate generation, tiered
-permissions, edit provenance, expert adjudication for hard cases, and clear
+took an estimated 33 person-years of manual proofreading (Dorkenwald et al. 2024,
+[doi:10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)). Much of
+the early work was done by a distributed consortium of *Drosophila* labs; in the later
+phase, central teams at Princeton and Cambridge proofread the remaining neurons, with
+contributions from citizen scientists. That shows the work can scale beyond a single
+lab. What made it work was infrastructure: task queues, automated candidate generation,
+tiered permissions, edit provenance, expert adjudication for hard cases, and clear
 attribution.
 
 **The tooling requirement that follows.** Every edit records who, when, what, and
-ideally why. This is not surveillance; it is what lets you (a) roll back a bad batch,
+ideally why. The purpose is not surveillance. The record is what lets you (a) roll back a bad batch,
 (b) identify a training gap when one annotator's edits are systematically different,
 and (c) reconstruct the state of an analysis at any past time (Unit 04 §2).
 
@@ -419,7 +435,7 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
     <p class="card-description"><strong>RIV-AXDEN S18:</strong> An edge case at high risk of a wrong correction. Estimate cost to fix before committing: a forty-minute trace through a difficult region loses to five five-minute corrections elsewhere, unless the cell is in your analysis set and the error sits near the root of the arbor.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png' | relative_url }}" alt="Electron micrograph of a dendrite labelled D with two spines labelled s1 and s2, each opposite a vesicle-filled bouton" style="width:100%; border-radius:8px;">
+    <img src="{{ '/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png' | relative_url }}" alt="Electron micrograph of a dendrite labeled D with two spines labeled s1 and s2, each opposite a vesicle-filled bouton" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>RIV-ULTRA S17:</strong> A dendrite (D) with two spines (s1, s2), each opposite a vesicle-filled bouton. §1 names thin spine necks as a perennial source of splits. If a neck is lost, the spine head becomes a separate fragment and its synapse leaves the dendrite's input count without anything looking wrong at the dendrite — which is why orphan fragments, cheap one at a time in the §2 table, add up.</p>
   </article>
   <article class="card">
@@ -557,7 +573,7 @@ than by ability.
 From this unit:
 
 - **State the proofreading level of the cells a result rests on.**
-  Without it a reader cannot tell whether a low connection count is biology or incompleteness. Almost no published analysis includes this, which is exactly why including it is noticed.
+  Without it a reader cannot tell whether a low connection count is biology or incompleteness. Many published analyses leave it out, so including it gets noticed.
 
 - **Define the stopping rule before you start, and make it checkable by someone else.**
   "Until it looks good" is not a stopping rule. Writing one down in advance is what converts proofreading from open-ended cleanup into a plannable task.
@@ -582,7 +598,7 @@ own protocol.
 - [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) — full catalog with examples
 - [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) — VI, ERL, and precision/recall worked in detail
 - [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }}) — seeding, extension, and triage patterns
-- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — the platform landscape
+- [Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}) — the platforms compared
 - [Worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}) — annotated correction cases
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) — hands-on quality exploration
 

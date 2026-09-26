@@ -4,7 +4,7 @@ title: "Ethics and Governance: lecture package"
 permalink: /teaching/lectures/ethics-and-governance/
 slug: lecture-ethics-and-governance
 content_type: delivery
-description: "A 90-minute taught session with slides, instructor cues, a licence-and-credit planning exercise and model responses."
+description: "A 90-minute taught session with slides, instructor cues, a license-and-credit planning exercise and model responses."
 ---
 
 **90 minutes including activity.** The existing 31-slide deck supports a longer
@@ -15,13 +15,13 @@ rather than asking an instructor to cover all 31.
 - [Editable slide source and embedded speaker notes]({{ site.deck_source_base }}/lectures/ethics-and-governance.marp.md)
 - [Learner worksheet]({{ '/teaching/lectures/ethics-and-governance-activity/' | relative_url }})
 - [Instructor model answers]({{ '/teaching/lectures/ethics-and-governance-answers/' | relative_url }})
-- [Short teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+- [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 ## Outcomes and preparation
 
 Learners locate the provenance and ethics statement of a human-tissue dataset
 before citing it; explain where residual re-identification risk lives in an EM
-volume; determine what a dataset's data licence, rather than its article licence,
+volume; determine what a dataset's data license, rather than its article license,
 permits; and write a proofreading-credit rule before the work starts.
 
 Before class, read [Ethics and Governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }})
@@ -33,24 +33,24 @@ over-claiming discussion but is not required. Provide paper or a text editor.
 ## Timed plan and instructor cues
 
 - **0–10 min, slides 1–3:** open with the honest assessment on slide 2 and its
-  question: “So what is this hour for?” Expected response: licence compliance and
+  question: “So what is this hour for?” Expected response: license compliance and
   credit for proofreading are live now; consent at scale, de-identification,
   neural-data regulation and dual use are prospective (slide 3).
 - **10–22 min, slides 7, 9–10, 12–14:** H01's provenance, what the main article does
   not say, the one-donor pathology caveat and where re-identification risk lives.
   Slide 9 does not say H01 lacks approval; it says the main article carries no ethics
   statement. Use slide 14 as a quick pair check: the risk is in metadata, not voxels.
-- **22–34 min, slides 16–17, 19–20:** the licence table, the FlyWire row and the
+- **22–34 min, slides 16–17, 19–20:** the license table, the FlyWire row and the
   decision table. Ask slide 17's spin-out question. Expected response: the data
-  licence, CC BY-NC 4.0, governs; the article's CC BY 4.0 does not help. Present the
+  license, CC BY-NC 4.0, governs; the article's CC BY 4.0 does not help. Present the
   hemibrain row as the slide does: two sources that disagree.
 - **34–44 min, slides 23–26:** over-claiming from one sample, the scale of
-  proofreading labour (FlyWire around 33 person-years; hemibrain over 50), four
+  proofreading labor (FlyWire around 33 person-years; hemibrain over 50), four
   credit models and slide 26's three rules. Ask slide 25's 40-contributor question
   and hold the answers for the worksheet.
 - **44–70 min:** pairs complete worksheet sections 1–3. Keep slide 16 or 19 on screen
   as a reference. At minute 55, check that the audit table separates article from
-  data licences, applies FlyWire's NonCommercial clause to the invented startup's
+  data licenses, applies FlyWire's NonCommercial clause to the invented startup's
   use, and records hemibrain as unresolved, with both sources named, not guessed.
 - **70–80 min, slide 28:** pairs draft section 4 and exchange notes. Show slide 28's
   boundaries: the note is a planning record for the compliance office, not a legal
@@ -81,17 +81,17 @@ whether it covers volume EM data is not settled.
 ## Assessment and next session
 
 Use the model key's four-dimension rubric. Collect the audit table and the
-governance note. Learners who took the four-session block add the licence, ethics
+governance note. Learners who took the four-session block add the license, ethics
 statement location and credit model of their own dataset to the study brief.
 
 This optional fifth session can follow [Algorithms and Applications]({{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }})
-or stand alone. For practising these judgements as decisions, continue with
+or stand alone. For practicing these judgments as decisions, continue with
 [Module 19: peer review and scientific ethics]({{ '/modules/module19/' | relative_url }}).
 
 ## Sources and credit
 
 The deck carries its references, including Shapson-Coe et al. (2024), Dorkenwald
-et al. (2024), Scheffer et al. (2020), Kim et al. (2014) and Laird (2021). Licence
+et al. (2024), Scheffer et al. (2020), Kim et al. (2014) and Laird (2021). License
 facts follow the [FlyWire guidelines](https://flywire.ai/guidelines), the
 [MICrONS terms](https://www.microns-explorer.org/terms-and-conditions), the
 [H01 data page](https://h01-release.storage.googleapis.com/data.html) and the

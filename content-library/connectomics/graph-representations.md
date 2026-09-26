@@ -23,16 +23,6 @@ tags:
   - infrastructure:segmentation
   - cell-types:type-level-graph
 micro_lesson_id: ml-conn-graphs
-reference_images:
-  - src: /assets/images/content-library/connectomics/graph-representations/adjacency-matrix-example.png
-    alt: "Adjacency matrix of a small neural circuit with neuron labels"
-    caption: "Weighted directed adjacency matrix for a 10-neuron circuit. Entry (i,j) = synapse count from neuron i to neuron j. Note sparsity and asymmetry."
-  - src: /assets/images/content-library/connectomics/graph-representations/graph-encoding-comparison.png
-    alt: "Comparison of neuron-level, compartment-level, and type-level graph encodings"
-    caption: "Three levels of graph abstraction: neuron-level (left, N=140K nodes), compartment-level (center, N~1M), type-level (right, N~8K)."
-  - src: /assets/images/content-library/connectomics/graph-representations/sparse-storage-formats.png
-    alt: "Diagram of edge list, CSR, and CSC sparse storage formats"
-    caption: "Three sparse matrix formats for storing connectome graphs: edge list (most compact), CSR (fast row queries), and CSC (fast column queries)."
 combines_with:
   - connectome-history
   - network-analysis-methods
@@ -42,7 +32,7 @@ content_type: core
 
 ## Overview
 
-The connectome, at its core, is a graph: neurons are nodes, synaptic connections are edges. But the details of how you encode this graph — directed or undirected, binary or weighted, neuron-level or type-level — profoundly affect what analyses are possible and what conclusions you can draw. This document covers the representational choices that every connectomics analyst must make.
+A connectome is a graph: neurons are nodes, synaptic connections are edges. How you encode it (directed or undirected, binary or weighted, neuron-level or type-level) decides which analyses are possible and which conclusions hold. The same synapse table can yield graphs with very different degree distributions depending on a threshold nobody reported. This page covers the choices every connectomics analyst makes, whether or not they notice making them.
 
 ---
 
@@ -50,14 +40,14 @@ The connectome, at its core, is a graph: neurons are nodes, synaptic connections
 
 ### The pipeline
 
-The path from raw EM images to a queryable graph involves several lossy transformations:
+The path from raw EM images to a queryable graph has several lossy steps:
 
-1. **Raw images** → Segmentation: each voxel assigned to an object (neuron, glia, etc.)
-2. **Segmentation** → Synapse detection: membrane appositions with vesicles + PSD identified as synapses
-3. **Synapse detection** → Edge assignment: each synapse assigned a pre-synaptic neuron and post-synaptic neuron
-4. **Edge assignment** → Graph construction: aggregate synapses into neuron-to-neuron edges
+1. **Segmentation:** each voxel is assigned to an object (neuron, glia and so on).
+2. **Synapse detection**, usually run on the images in parallel with segmentation: clefts with presynaptic vesicles and a postsynaptic density are marked as synapses.
+3. **Partner assignment:** each synapse gets a presynaptic and a postsynaptic segment.
+4. **Graph construction:** synapses are aggregated into neuron-to-neuron edges.
 
-Each step can introduce errors. A segmentation merge error creates false edges. A missed synapse removes a true edge. A synapse with incorrect pre/post assignment creates a wrongly directed edge. The graph is only as reliable as the weakest link in this chain.
+Each step adds errors of its own. A merge error in segmentation creates false edges. A missed synapse removes a true one. A synapse with its pre and post sides swapped creates an edge in the wrong direction. Errors in any step carry into the graph.
 
 **Teaching point:** "When you analyze a connectome graph, you are analyzing the output of a computational pipeline, not ground truth. Every edge carries implicit uncertainty from segmentation and synapse detection."
 
@@ -84,9 +74,9 @@ Sometimes it's useful to split a neuron into compartments: soma, axon, individua
 
 ### Type-level nodes
 
-For cross-region or cross-species comparisons, individual neurons are grouped by type, and the graph represents type-to-type connectivity. For example, in C. elegans analysis, the 302 individual neurons might be grouped into ~100 neuron classes. In Drosophila, ~139,000 neurons collapse to ~8,000 types.
+For cross-region or cross-species comparisons, individual neurons are grouped by type, and the graph represents type-to-type connectivity. White et al. (1986) grouped the 302 neurons of the *C. elegans* hermaphrodite into 118 classes. In the adult fly brain, FlyWire's 139,255 neurons (Dorkenwald et al. 2024) were assigned to more than 8,400 cell types (Schlegel et al. 2024).
 
-**Tradeoff:** Type-level graphs lose individual variation but are more robust to segmentation errors and enable statistical comparisons.
+**Tradeoff:** Type-level graphs lose individual variation but are less sensitive to individual segmentation errors and allow comparisons across animals.
 
 ---
 
@@ -100,41 +90,33 @@ In graph notation: an edge (A → B) means "neuron A makes at least one chemical
 
 ### Gap junctions as undirected edges
 
-Electrical synapses (gap junctions) allow bidirectional current flow. These are represented as undirected edges (A — B). Gap junctions are less common than chemical synapses in mammalian cortex but are prevalent in certain circuits (e.g., between inhibitory interneurons) and in invertebrate nervous systems.
+Electrical synapses (gap junctions) allow bidirectional current flow. These are represented as undirected edges (A — B). In mammalian cortex they are much rarer than chemical synapses but common between some inhibitory interneurons. *C. elegans* has about 600 of them against about 5,000 chemical synapses (White et al. 1986). Most EM pipelines cannot detect them at all (see the table below).
 
 ### Edge weights
 
-Most neuron pairs that are connected have multiple synapses. How to represent this?
-
-**Binary (unweighted):** Edge exists (1) or doesn't (0). Simplest representation. Loses information about connection strength.
-
-**Synapse count:** Edge weight = number of synapses from A to B. The most common weighting scheme. Ranges: C. elegans typically 1-50 synapses per pair; Drosophila 1-100+; mammalian cortex 1-20+ for most pairs, with some pairs having >50.
-
-**Total contact area:** Edge weight = sum of cleft areas or PSD areas across all synapses. More biologically meaningful (larger PSD ≈ stronger synapse) but harder to measure accurately.
-
-**Estimated strength:** In rare cases, functional data (paired recordings, calcium imaging) can estimate synaptic strength. This bridges structure and function but is available for very few connections.
+A connected pair can share one synapse or many, so the edge needs a weight, or a decision to drop the weight. The usual choice is **synapse count**, the number of synapses from A to B. The distribution is typically skewed toward 1 with a long tail; in the larval fly connectome, 66% of edges have one or two synapses (Winding et al. 2023). The maximum per pair, and the shape of the tail, differ between datasets and proofreading levels, so compute them for yours rather than borrowing a range. The alternatives to synapse count, and what each costs, are compared under "Weights: what the number on the edge is" below.
 
 ### The threshold problem
 
-A critical practical decision: **at what minimum synapse count do you call two neurons "connected"?**
+The practical decision with the largest effect: **at what minimum synapse count do you call two neurons "connected"?**
 
 - Threshold = 1: Include all detected synapses. Maximizes sensitivity but includes many false positives (single-synapse connections are noisy and may be detection errors).
-- Threshold = 3-5: Common in published analyses. Reduces noise but may miss genuine weak connections.
+- Threshold = 3-5: Common in published analyses. Reduces noise but may miss real weak connections.
 - No threshold: Use continuous weights (synapse count) and avoid binarizing.
 
-**The effect of thresholding is dramatic, and you should measure it rather than
-assume it.** Synapse counts per connected pair are heavily skewed toward one, so
-most of the edges in a raw graph are single-synapse — which means raising the
-threshold from 1 to 3 typically removes a large majority of edges, not a
-trimming. The exact fraction depends on the dataset, the synapse detector's
+**Thresholding changes the graph a lot, so measure its effect rather than
+assume it.** Synapse counts per connected pair are skewed toward one, so a
+large share of the edges in a raw graph are single-synapse, and raising the
+threshold from 1 to 3 removes far more than a trim. The exact fraction depends on the dataset, the synapse detector's
 precision, and the proofreading level, so it is not a constant worth quoting.
 
-Get it for your own graph in three lines, on a named dataset at a pinned
+Get it for your own graph in a few lines, on a named dataset at a pinned
 version:
 
 ```python
 import numpy as np
 # weights: synapse count per connected pair, from your materialized synapse table
+weights = np.asarray(weights)
 for t in (1, 2, 3, 5, 10):
     print(t, int((weights >= t).sum()))
 ```
@@ -143,9 +125,9 @@ Then re-run your headline statistic at each threshold. Degree distributions,
 clustering coefficients and motif counts all move, and if your result only holds
 at one threshold that is something a reader needs to know.
 
-**Every analysis must report its threshold and justify the choice** — and the
-justification has to be about biology or detector precision, not about which
-value made the effect significant.
+**Every analysis must report its threshold and justify it.** The justification
+has to be about biology or detector precision, not about which value made the
+effect significant.
 
 ---
 
@@ -157,7 +139,7 @@ predict and should correct for.
 
 - **Degree is truncated, unevenly.** A cell whose soma sits at the center of the
   volume keeps more of its arbor than one near the face. So measured degree
-  correlates with distance from the boundary — an artifact that looks exactly
+  correlates with distance from the boundary. That artifact looks exactly
   like a spatial gradient in connectivity.
 - **Long-range connections are systematically missing.** Local axons stay;
   projection axons leave. A cubic millimeter of cortex captures local
@@ -198,15 +180,18 @@ depends on absence, say which kind you mean and how you established it.
 Synapse count is the default weight and it is a proxy, not a measurement of
 strength. Alternatives, with what each buys:
 
-- **Synapse count** — cheap, standard, comparable across studies. Ignores that
+- **Synapse count:** cheap, standard, comparable across studies. Ignores that
   synapses differ in size by an order of magnitude.
-- **Summed PSD area or synapse volume** — closer to a physiological correlate,
-  and available from the segmentation. Sensitive to boundary errors, which is
-  exactly the error class that is hardest to see.
-- **Contact area** — measures apposition, not transmission. Useful for
+- **Summed cleft or PSD size:** closer to a physiological correlate, because
+  larger synapses tend to be stronger, and available from the segmentation.
+  Sensitive to boundary errors, the error class that is hardest to see.
+- **Contact area:** measures apposition, not transmission. Useful for
   Peters'-rule-style questions and misleading for connectivity ones.
-- **Binary** — throws away the most informative variable you have. Justified
-  only when the analysis genuinely needs it.
+- **Binary:** throws away the most informative variable you have. Justified
+  only when the analysis needs it.
+- **Estimated strength:** paired recordings or calcium imaging can estimate
+  synaptic strength for a few connections. It links structure to function, but
+  covers a tiny fraction of the edges in any EM graph.
 
 Whatever you choose, the **proofreading level enters the weight**. An edge
 weight of 3 on an unproofread pair and an edge weight of 3 on a fully verified
@@ -223,7 +208,7 @@ For N neurons, the adjacency matrix **A** is an N×N matrix where entry A[i,j] =
 
 **Properties:**
 - **Directed graph:** A is generally asymmetric (A[i,j] ≠ A[j,i] unless the connection is reciprocal with equal weight)
-- **Sparse:** Most entries are zero. In cortex, each neuron connects to <1% of its neighbors, so >99% of the matrix is zeros.
+- **Sparse:** Most entries are zero. Nearby cortical pyramidal neurons can connect at rates around 10% (11.6% for layer 5 pairs in Song et al. 2005), but most pairs in a volume are too far apart for their arbors to touch, so the full matrix is overwhelmingly zeros.
 - **Row sums = out-degree** (for binary) or total output weight
 - **Column sums = in-degree** or total input weight
 
@@ -231,19 +216,19 @@ For N neurons, the adjacency matrix **A** is an N×N matrix where entry A[i,j] =
 
 For 100,000 neurons, the full adjacency matrix has 10^10 entries — ~40 GB at 32-bit floats, mostly zeros. In practice, connectomes are stored as sparse matrices:
 
-- **Edge list format:** Three columns: source, target, weight. Only non-zero entries stored. Most compact for very sparse graphs.
-- **Compressed Sparse Row (CSR):** Efficient for row-wise operations (e.g., "find all outputs of neuron X").
-- **Compressed Sparse Column (CSC):** Efficient for column-wise operations (e.g., "find all inputs to neuron X").
+- **Edge list** (COO in `scipy.sparse`): three columns, source, target and weight, one row per non-zero entry. The simplest and most portable format; it is what a synapse-table query gives you.
+- **Compressed Sparse Row (CSR):** replaces the source column with N + 1 row pointers, so it is slightly smaller than an edge list and fast for row operations ("all outputs of neuron X").
+- **Compressed Sparse Column (CSC):** the same idea by column, fast for "all inputs to neuron X".
 
 ### Tools for graph manipulation
 
 | Tool | Language | Strengths |
 |------|----------|-----------|
-| **NetworkX** | Python | Easy API, rich algorithms, good for <100K nodes |
-| **igraph** | R/Python/C | Fast, good for medium graphs (<1M nodes) |
-| **graph-tool** | Python/C++ | Fastest for large graphs, excellent SBM implementation |
-| **scipy.sparse** | Python | Direct sparse matrix operations, integrates with NumPy |
-| **Neo4j** | Java/Cypher | Graph database, good for persistent storage and queries |
+| **NetworkX** | Python | Easy API and many algorithms; pure Python, so slow on graphs with millions of edges |
+| **igraph** | C core; R and Python interfaces | Fast on large graphs; motif counting built in |
+| **graph-tool** | C++ core; Python interface | Fast on large graphs; stochastic block model inference |
+| **scipy.sparse** | Python | Sparse matrix operations that integrate with NumPy |
+| **Neo4j** | Java; queried with Cypher | Graph database for persistent storage and queries |
 
 ---
 
@@ -268,39 +253,41 @@ Each layer may have different topology. Analysis can examine each layer independ
 
 ## Worked example: constructing a graph from a synapse table
 
-**Given:** A synapse table from CAVE with columns: `synapse_id`, `pre_segment_id`, `post_segment_id`, `synapse_type`, `cleft_area`
+**Given:** a synapse table exported from CAVE to CSV at a pinned materialization version. The column names below follow the MICrONS `minnie65_public` synapse table: `id`, `pre_pt_root_id`, `post_pt_root_id` and `size` (the detected cleft size in voxels). Check the names in your own table before running. EM synapse detectors find chemical synapses only, so there is no synapse-type column to filter on.
 
 ```python
 import pandas as pd
 import networkx as nx
 
-# Load synapse table
 synapses = pd.read_csv("synapses.csv")
 
-# Filter to chemical synapses only
-chem = synapses[synapses.synapse_type == "chemical"]
+# Drop synapses onto or from unsegmented space (root ID 0) and autapses,
+# which in EM are more often segmentation errors than real self-contacts
+synapses = synapses[(synapses.pre_pt_root_id != 0) & (synapses.post_pt_root_id != 0)]
+synapses = synapses[synapses.pre_pt_root_id != synapses.post_pt_root_id]
 
-# Aggregate: count synapses per neuron pair
-edges = chem.groupby(["pre_segment_id", "post_segment_id"]).agg(
-    synapse_count=("synapse_id", "count"),
-    total_cleft_area=("cleft_area", "sum")
+# Aggregate: count synapses and sum cleft size per ordered neuron pair
+edges = synapses.groupby(["pre_pt_root_id", "post_pt_root_id"]).agg(
+    synapse_count=("id", "count"),
+    total_size=("size", "sum"),
 ).reset_index()
 
 # Apply threshold
 edges_filtered = edges[edges.synapse_count >= 3]
 
-# Build graph
-G = nx.DiGraph()
-for _, row in edges_filtered.iterrows():
-    G.add_edge(
-        row.pre_segment_id,
-        row.post_segment_id,
-        weight=row.synapse_count,
-        cleft_area=row.total_cleft_area
-    )
+# Build a directed graph with both weights as edge attributes
+G = nx.from_pandas_edgelist(
+    edges_filtered,
+    source="pre_pt_root_id",
+    target="post_pt_root_id",
+    edge_attr=["synapse_count", "total_size"],
+    create_using=nx.DiGraph,
+)
 
 print(f"Nodes: {G.number_of_nodes()}, Edges: {G.number_of_edges()}")
 ```
+
+Root IDs are not neurons. A root ID can be a neuron, a fragment of one, or a merger of several, so restrict the node set to proofread cells (a proofreading or cell-type table) before you read anything off the graph.
 
 **Exercise:** Re-run with thresholds of 1, 5, and 10. Plot the degree distribution at each threshold and observe how it changes.
 
@@ -312,7 +299,7 @@ print(f"Nodes: {G.number_of_nodes()}, Edges: {G.number_of_edges()}")
 |---|---|---|
 | "The connectome is a fixed object" | Representation choices (threshold, weighting) create different graphs from the same data | Always report representational choices |
 | "More edges = more accurate" | Low-threshold graphs include more noise from false synapse detections | Balance sensitivity and specificity |
-| "Binary graphs are sufficient" | Synapse count carries biologically meaningful information about connection strength | Use weighted graphs when possible |
+| "Binary graphs are sufficient" | Synapse count carries information about connection strength | Use weighted graphs when possible |
 | "The adjacency matrix is the connectome" | The matrix is one representation; the underlying biology includes spatial structure, dynamics, and molecular identity | The graph is a model, not the territory |
 
 ---
@@ -322,5 +309,9 @@ print(f"Nodes: {G.number_of_nodes()}, Edges: {G.number_of_edges()}")
 - Rubinov M, Sporns O (2010) "Complex network measures of brain connectivity: Uses and interpretations." *NeuroImage* 52(3):1059-1069.
 - Sporns O (2010) *Networks of the Brain*. MIT Press.
 - Varshney LR et al. (2011) "Structural properties of the *Caenorhabditis elegans* neuronal network." *PLoS Computational Biology* 7(2):e1001066.
-- Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
-- Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443.
+- Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138. [10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
+- Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443. [10.7554/eLife.57443](https://doi.org/10.7554/eLife.57443)
+- Schlegel P et al. (2024) "Whole-brain annotation and multi-connectome cell typing of *Drosophila*." *Nature* 634:139-152. [10.1038/s41586-024-07686-5](https://doi.org/10.1038/s41586-024-07686-5)
+- Song S, Sjöström PJ, Reigl M, Nelson S, Chklovskii DB (2005) "Highly nonrandom features of synaptic connectivity in local cortical circuits." *PLoS Biology* 3(3):e68. [10.1371/journal.pbio.0030068](https://doi.org/10.1371/journal.pbio.0030068)
+- White JG, Southgate E, Thomson JN, Brenner S (1986) "The structure of the nervous system of the nematode *Caenorhabditis elegans*." *Philosophical Transactions of the Royal Society B* 314(1165):1-340. [10.1098/rstb.1986.0056](https://doi.org/10.1098/rstb.1986.0056)
+- Winding M et al. (2023) "The connectome of an insect brain." *Science* 379(6636):eadd9330. [10.1126/science.add9330](https://doi.org/10.1126/science.add9330)

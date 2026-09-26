@@ -34,7 +34,7 @@ Dana has done this:
 - Asked the senior student two questions. The student answered one.
 - Replied to the day-15 email: "Going well, thanks!"
 
-On day 21, Dr. Okafor asks in a one-to-one: "Where are we on the classifier question?"
+On day 21, Dr. Okafor asks in a one-on-one: "Where are we on the classifier question?"
 
 ## 1. Told versus inferred (10 minutes)
 
@@ -70,7 +70,7 @@ This section is yours. You do not have to share it.
 4. Draft your check-in script. Start from this and make it yours:
 
 > "I want to check I have your expectations right. Here is what I think you expect from
-> me: [your list]. What is missing, and what have I got wrong?"
+> me: [your list]. What is missing, and what have I gotten wrong?"
 
 ## Peer check and exit ticket
 

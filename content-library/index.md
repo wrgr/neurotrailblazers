@@ -2,7 +2,7 @@
 layout: page
 title: "Content Library"
 permalink: /content-library/
-description: "Canonical reference scripts, worked examples, and case studies for the NeuroTrailblazers technical curriculum. Each entry is a self-contained teaching document designed for reuse across unit pages, slide decks, instructor scripts, and student handouts."
+description: "Reference pages, worked examples and case studies behind the NeuroTrailblazers technical curriculum. Each entry stands alone and is written for reuse in unit pages, slide decks, instructor scripts and handouts."
 content_type: core
 ---
 
@@ -19,19 +19,19 @@ want to read how it is done properly first.
 
 If you want an order, that is what a [track]({{ '/tracks/' | relative_url }}) is for.
 
-## How this library works
+## How an entry is built
 
-Every entry below is a **standalone, richly detailed reference document**. Each contains:
+Each entry below stands alone. Most contain:
 
-- Full instructor-ready narrative (not just bullet points)
-- Real scientific references with context
-- Worked examples with step-by-step reasoning
+- An instructor narrative in prose, not bullet points
+- References to the primary papers, with the claim each one supports
+- Worked examples with the reasoning shown step by step
 - Common misconceptions and how to address them
-- **Tags** for cross-referencing across dimensions
-- **Combines-with** links identifying entries that pair well together, shown at the top of each entry
-- **Real electron micrographs** on the entries that make visual claims, rendered from the public H01 human cortex volume — see the [EM figure library]({{ '/content-library/em-figures/' | relative_url }}). Entries also carry older `reference_images` front matter describing figures that were specified but never produced; that metadata is not rendered, and is being replaced by the figures above as each entry is covered
+- Tags for cross-referencing across the dimensions below
+- "Combines with" links to entries that pair well, shown at the top of each entry
+- Electron micrographs on the entries that make visual claims, rendered from the public H01 human cortex volume (see the [EM figure library]({{ '/content-library/em-figures/' | relative_url }}))
 
-Unit pages, slide decks, and modules **link to** these entries rather than duplicating content. This keeps the curriculum DRY (Don't Repeat Yourself) and ensures a single source of truth for each topic.
+Unit pages, slide decks and modules link to these entries instead of copying them, so each topic has one source to correct.
 
 ### Tag dimensions
 
@@ -94,7 +94,8 @@ Graph analysis, motif search, and the bridge to NeuroAI.
 | [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}) | DotMotif, null models, subgraph isomorphism, statistics | 09 |
 | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) | Structure-function, bio-inspired architectures, connectome-constrained models | 09 |
 | [Open problems for undergraduate teams]({{ '/content-library/connectomics/open-problems-undergrad/' | relative_url }}) | Seven open problem areas scoped for undergrad teams, tied to BRAIN CONNECTS bottlenecks | 01, 08, 09 |
-| [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) | H01's consent and provenance, de-identification in EM, portal licences and what they oblige, dual use, credit for proofreading labour | 01, 08 |
+| [Comparative connectomics]({{ '/content-library/connectomics/comparative-connectomics/' | relative_url }}) | What carries over between worm, larval and adult fly, mouse and human connectomes, and what does not; whole brains versus cortical fragments | 09 |
+| [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) | H01's consent and provenance, de-identification in EM, portal licenses and what they oblige, dual use, credit for proofreading labor | 01, 08 |
 
 ## Imaging
 
@@ -120,7 +121,7 @@ Reconstruction pipelines, data formats, and reproducibility.
 | [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) | Ingest, alignment, segmentation, agglomeration, serving | 04 |
 | [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }}) | Volumes, meshes, skeletons, graphs; when to use each | 02, 04 |
 | [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) | Lineage metadata, CAVE materialization, reproducible reprocessing | 04, 08 |
-| [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}) | Cleft localisation, partner assignment, E/I classification; CREMI and what it predicts; cross-dataset degradation; what to check before trusting a synapse table | 04, 05, 08 |
+| [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}) | Cleft localization, partner assignment, E/I classification; CREMI and what it predicts; cross-dataset degradation; what to check before trusting a synapse table | 04, 05, 08 |
 
 ## Cell types
 
@@ -136,28 +137,28 @@ Identification and classification of neuronal and glial cell types in EM.
 
 ## Case studies
 
-Deep dives into landmark connectomics projects.
+How four published connectomes were built and what they showed, plus one project still in progress.
 
 | Entry | Scope | Primary units |
 |-------|-------|---------------|
-| [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) | 140K neurons, collaborative proofreading, brain-wide circuit analysis | 08, 09 |
+| [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) | 139,255 neurons, collaborative proofreading, brain-wide circuit analysis | 08, 09 |
 | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) | mm³ mouse cortex, functional connectomics, structure-function linking | 01, 03, 08, 09 |
 | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) | Petavoxel human fragment, unique challenges, pathological features | 05, 08 |
-| [H01, step by step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) | The full production pipeline — tissue, staining, sectioning, 61-beam imaging, alignment, segmentation, synapse detection — with figures rendered from the public volume | 03, 04, 08 |
+| [H01, step by step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) | The production pipeline from tissue, staining and sectioning through 61-beam imaging, alignment, segmentation and synapse detection, with figures rendered from the public volume | 03, 04, 08 |
 | [C. elegans revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) | The first connectome, re-analysis, developmental connectomics | 01, 09 |
-| [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS flagship, 10 mm³ hippocampus, ongoing project | 01, 04 |
+| [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | NIH BRAIN CONNECTS center targeting 10 mm³ of mouse hippocampal formation; in progress, no data released | 01, 04 |
 
 ## EM figure library
 
-Every electron micrograph on this site in one place — with captions, attribution and
-ready-to-paste slide lines. All rendered from the public H01 human cortex volume and
+Every electron micrograph on this site in one place, with captions, attribution and
+ready-to-paste slide lines. All are rendered from the public H01 human cortex volume and
 reusable under CC BY 4.0.
 
 [Browse the EM figure library]({{ '/content-library/em-figures/' | relative_url }}) &rarr;
 
 ## Journal paper collection & literature corpus
 
-A curated collection of **2,000 landmark connectomics papers** stratified across 12 research domains and 3 nested tiers (Top 500, Top 1,000, Top 2,000). Features complete unabridged abstracts, 5-part OCAR research cards, 3-tier pedagogical summaries, and seminar discussion prompts.
+A collection of **2,000 connectomics papers** sorted into 12 research domains and 3 nested tiers (Top 500, Top 1,000, Top 2,000). Each record carries the full abstract, a 5-part OCAR research card, summaries at three levels, and seminar discussion prompts.
 
 * Explore the full structured corpus: [Journal Paper Corpus &amp; Literature Hub]({{ '/content-library/journal-papers/' | relative_url }})
 * Browse filterable cards by tier and expertise level: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
@@ -166,35 +167,36 @@ A curated collection of **2,000 landmark connectomics papers** stratified across
 ### Where each corpus domain leads
 
 Every paper in the corpus carries one of twelve domain labels. The **domain name
-links to the journal club filtered to that domain** — that is the corpus itself,
+links to the journal club filtered to that domain**. That is the corpus itself,
 and it always works. The **reading list** column is a hand-annotated deep dive of
 8–10 papers where one exists for that domain, and says so plainly where one does
 not. The **library entry point** is the reference page on this site that covers
 the same ground in prose.
 
 Paper counts are the labels actually carried by the 2,000 shipped records, not
-the design allocation. The design allocation — the target share and tier split
-per domain — is on the
+the design allocation. The design allocation (the target share and tier split
+per domain) is on the
 [corpus hub]({{ '/content-library/journal-papers/' | relative_url }}).
 
 | Corpus domain | Papers | Curated reading list | Library entry point |
 | :--- | ---: | :--- | :--- |
 | [Circuit Structure &amp; Connectomes]({{ '/technical-training/journal-club/?dimension=circuit-structure' | relative_url }}) | 300 | [Connectomics]({{ '/content-library/journal-papers/connectomics/' | relative_url }}) | [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) |
 | [Pipeline &amp; Software Engineering]({{ '/technical-training/journal-club/?dimension=pipeline' | relative_url }}) | 300 | [Data storage &amp; pipelines]({{ '/content-library/journal-papers/data-storage/' | relative_url }}) · [Computer vision &amp; ML]({{ '/content-library/journal-papers/computer-vision-ml/' | relative_url }}) | [Reconstruction pipeline]({{ '/content-library/infrastructure/reconstruction-pipeline/' | relative_url }}) · [Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}) |
-| [Physiological Validation &amp; Function]({{ '/technical-training/journal-club/?dimension=physiology' | relative_url }}) | 242 | *None yet — the largest gap in the deep-dive set* | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) |
-| [Behaviour &amp; Circuit Dynamics]({{ '/technical-training/journal-club/?dimension=behaviour' | relative_url }}) | 240 | [Case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) |
+| [Physiological Validation &amp; Function]({{ '/technical-training/journal-club/?dimension=physiology' | relative_url }}) | 242 | *None yet; the largest gap in the deep-dive set* | [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) |
+| [Behavior &amp; Circuit Dynamics]({{ '/technical-training/journal-club/?dimension=behaviour' | relative_url }}) | 240 | [Case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [FlyWire whole-brain connectome]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}) |
 | [Volume EM &amp; Advanced Optics]({{ '/technical-training/journal-club/?dimension=imaging' | relative_url }}) | 160 | [Imaging &amp; sample preparation]({{ '/content-library/journal-papers/imaging/' | relative_url }}) | [EM principles]({{ '/content-library/imaging/em-principles/' | relative_url }}) |
 | [Cell Types &amp; Morphological Census]({{ '/technical-training/journal-club/?dimension=cell-types' | relative_url }}) | 160 | [Cell types &amp; morphology]({{ '/content-library/journal-papers/cell-types/' | relative_url }}) | [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) |
 | [Neuroanatomy &amp; Ultrastructure]({{ '/technical-training/journal-club/?dimension=neuroanatomy' | relative_url }}) | 160 | [Neuroanatomy]({{ '/content-library/journal-papers/neuroanatomy/' | relative_url }}) | [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}) |
 | [Synthesis, Theory &amp; Reviews]({{ '/technical-training/journal-club/?dimension=synthesis' | relative_url }}) | 142 | [Network analysis &amp; statistics]({{ '/content-library/journal-papers/network-analysis/' | relative_url }}) | [Open problems for undergraduate teams]({{ '/content-library/connectomics/open-problems-undergrad/' | relative_url }}) |
-| [Benchmark Datasets &amp; Repositories]({{ '/technical-training/journal-club/?dimension=dataset' | relative_url }}) | 115 | [Datasets &amp; case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [Datasets catalogue]({{ '/datasets/' | relative_url }}) |
+| [Benchmark Datasets &amp; Repositories]({{ '/technical-training/journal-club/?dimension=dataset' | relative_url }}) | 115 | [Datasets &amp; case studies]({{ '/content-library/journal-papers/case-studies/' | relative_url }}) | [Datasets catalog]({{ '/datasets/' | relative_url }}) |
 | [NeuroAI, Biophysics &amp; Models]({{ '/technical-training/journal-club/?dimension=neuroai' | relative_url }}) | 100 | [NeuroAI &amp; computational modeling]({{ '/content-library/journal-papers/neuroai/' | relative_url }}) | [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) |
 | [Health, Disease &amp; Translation]({{ '/technical-training/journal-club/?dimension=health' | relative_url }}) | 42 | *None yet* | [H01 human cortex]({{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}) |
-| [Workforce Training &amp; Outreach]({{ '/technical-training/journal-club/?dimension=training-outreach' | relative_url }}) | 21 | *None yet* | [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) |
+| [Workforce Training &amp; Outreach]({{ '/technical-training/journal-club/?dimension=training-outreach' | relative_url }}) | 21 | *None yet* | [Comparative connectomics]({{ '/content-library/connectomics/comparative-connectomics/' | relative_url }}) | What carries over between worm, larval and adult fly, mouse and human connectomes, and what does not; whole brains versus cortical fragments | 09 |
+| [Ethics and governance]({{ '/content-library/connectomics/ethics-and-governance/' | relative_url }}) |
 
 Two labels sit outside the twelve: 16 papers classified `other`, and 2 classified
 `mri`. Macroscale connectivity is out of scope for a nanoscale corpus, which is
-why the count is 2 — but the curated
+why the count is 2. The curated
 [MRI &amp; meso-connectomics reading list]({{ '/content-library/journal-papers/mri-connectomics/' | relative_url }})
 (10 papers on diffusion MRI and tractography) exists for readers arriving from
 that side of the field. It is a bridge out of this library, not a route into it.

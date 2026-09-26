@@ -65,9 +65,11 @@ agreement, SynapseNet, ~33 nm sections, Muth 2025), and
 4. **BossDB hosting list** (Module 7, slide 49). Witvliet and Hildebrand confirmed; H01
    is hosted on Google Cloud; MICrONS and Kasthuri need a browser check of
    bossdb.org/projects.
-5. **H01 consent and imaging duration.** The *Science* supplement was not reachable, so
-   the consent location (Ethics, slide 9) and the 326 imaging days (Module 8) rest on
-   softened wording and a secondary source.
+5. **H01 consent.** The *Science* supplement was not reachable, so the consent location
+   (Ethics, slide 9) rests on softened wording. *(Imaging duration resolved 26 September:
+   "326 days" is in the published paper's text, PMC11718559.)*
+4a. **BossDB hosting** *(resolved in the site audit: MICrONS, Kasthuri, Witvliet and the
+   zebrafish volume are on BossDB; H01 is not).*
 6. **Synapse Detection.** The within-brain F1 spread versus method gaps (slide 18) and
    the FAFB voxel size (slide 31; almost certainly 4×4×40 nm, full text not reached).
 

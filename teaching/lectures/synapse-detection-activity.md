@@ -7,7 +7,7 @@ content_type: delivery
 description: "Calculate detection metrics and audit a synapse table using synthetic counts."
 ---
 
-[Lecture and slides]({{ '/teaching/lectures/synapse-detection/' | relative_url }}) · [Teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+[Lecture and slides]({{ '/teaching/lectures/synapse-detection/' | relative_url }}) · [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 **35 minutes plus peer review.** Work in pairs with a calculator. These are
 **invented counts**, not H01 measurements. E and I are synthetic class labels whose

@@ -5,7 +5,7 @@ permalink: /content-library/neuroanatomy/myelin-and-nodes/
 image: /assets/images/content-library/neuroanatomy/myelin-and-nodes.svg
 image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
-  Comprehensive instructor reference on myelin ultrastructure and nodal domains
+  Instructor reference on myelin ultrastructure and nodal domains
   as observed in electron microscopy, covering compact myelin periodicity, wrap
   number, nodes of Ranvier, paranodal loops, Schmidt-Lanterman incisures, inner
   and outer tongues, and practical identification strategies for annotators.
@@ -22,9 +22,8 @@ topics:
   - saltatory conduction
   - myelinated axons
 primary_units:
-  - unit-1-intro-to-neuroanatomy
-  - unit-2-cell-biology-of-neurons
-  - unit-7-white-matter
+  - "06"
+  - "07"
 difficulty: intermediate
 tags:
   - neuroanatomy:myelin
@@ -36,16 +35,6 @@ tags:
   - proofreading:tracing
   - methodology:identification
 micro_lesson_id: ml-neuro-myelin
-reference_images:
-  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/myelin-cross-section.png
-    alt: "Cross-section of a myelinated axon showing compact myelin lamellae"
-    caption: "Compact myelin wrapping around an axon with major dense line and intraperiod line visible at high magnification."
-  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/node-of-ranvier-em.png
-    alt: "Node of Ranvier showing paranodal loops and exposed axolemma"
-    caption: "Node of Ranvier with paranodal junction loops and exposed axolemma, plus Schmidt-Lanterman incisures in adjacent internode."
-  - src: /assets/images/content-library/neuroanatomy/myelin-and-nodes/g-ratio-diagram.png
-    alt: "Diagram illustrating the g-ratio measurement on myelinated axons of varying caliber"
-    caption: "The g-ratio (inner axon diameter / total fiber diameter) is optimized near 0.6-0.7 for maximal conduction velocity."
 combines_with:
   - axon-biology
   - organelle-cues
@@ -58,9 +47,9 @@ content_type: core
 
 ## Introduction
 
-Myelin is one of the most visually striking and functionally important structures in the nervous system. The spirally wrapped membrane sheath produced by glial cells dramatically increases the speed of action potential conduction and reduces the metabolic cost of signaling. For EM annotators, myelin serves as one of the most reliable markers of axonal identity, and its features — periodicity, wrap number, nodal domains, and associated specializations — provide a wealth of information about axon caliber, maturation, and health.
+Myelin is a spiral of glial membrane wrapped around an axon. It speeds action potential conduction and lowers the energy cost of each spike. For EM annotators it is one of the most reliable markers of axonal identity, and its periodicity, wrap number and nodal domains carry information about axon caliber, maturation and health.
 
-This script covers myelin ultrastructure from the molecular level of membrane periodicity to the macroscopic level of nodal architecture, with practical guidance for identification in EM datasets.
+This entry runs from membrane periodicity up to nodal architecture, with guidance for identification in EM datasets. It does not cover myelin development in depth or the physiology of conduction beyond what helps with identification.
 
 ---
 
@@ -68,7 +57,7 @@ This script covers myelin ultrastructure from the molecular level of membrane pe
 
 ### Central Nervous System (CNS)
 
-In the CNS, myelin is produced by oligodendrocytes. Each oligodendrocyte extends multiple processes (typically 20-60 in rodents, fewer in humans), each of which wraps a segment of a different axon. A single oligodendrocyte therefore myelinates multiple axons simultaneously. The oligodendrocyte cell body is typically located some distance from the myelinated segments, connected by thin cytoplasmic processes.
+In the CNS, myelin is produced by oligodendrocytes. Each oligodendrocyte extends several processes, each of which wraps a segment of a different axon, so one oligodendrocyte myelinates many axons at once. The number of sheaths per cell varies widely by region. The oligodendrocyte cell body is typically located some distance from the myelinated segments, connected by thin cytoplasmic processes.
 
 ### Peripheral Nervous System (PNS)
 
@@ -82,8 +71,8 @@ Myelin formation begins when a glial process contacts an axon and begins to spir
 
 {% include figure.html
    src="/assets/images/content-library/em/myelin-in-grey-matter.jpg"
-   alt="A field of human cortical grey matter with every myelinated axon highlighted in orange by the dataset's myelin mask, showing that they are a small minority of the profiles present."
-   caption="Every myelinated axon in this grey-matter field, lit up by H01&#39;s myelin mask. The overwhelming majority of profiles are unmyelinated &mdash; which is the claim in &sect;11 made visible. Myelin occupies only a few percent of a cortical field, while accounting for a far larger share of white matter."
+   alt="A field of human cortical gray matter with every myelinated axon highlighted in orange by the dataset's myelin mask, showing that they are a small minority of the profiles present."
+   caption="Every myelinated axon in this gray-matter field, marked in orange by H01&#39;s myelin mask. Count profiles and the myelinated ones are a small minority, which is the claim in &sect;11 made visible. By area the mask covers 13.4% of this field, because each myelinated profile is large."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## 2. Compact Myelin Ultrastructure
@@ -106,8 +95,8 @@ Compact myelin has a highly regular, periodic structure that is one of the most 
 
 The repeat distance from one major dense line to the next — encompassing two lipid bilayers, one major dense line, and one intraperiod line — is the myelin period:
 
-- **CNS myelin**: Approximately 12 nm period (some sources cite 11-13 nm depending on species and fixation).
-- **PNS myelin**: Approximately 13-14 nm period, slightly larger due to the more prominent intraperiod line.
+- **In living or unfixed nerve** (X-ray diffraction): about 15.4-16.0 nm for CNS myelin and 17.3-17.8 nm for PNS myelin (Kirschner et al., 2010). PNS myelin has the wider extracellular space at the intraperiod line.
+- **In fixed, resin-embedded tissue** (what EM datasets show): the period shrinks during processing, to roughly 11-12 nm, and the CNS-PNS difference becomes hard to measure. Use about 12 nm as a working value for counting lamellae.
 - **EM appearance**: In high-resolution cross-sections, compact myelin appears as a series of alternating dark (major dense) and lighter (intraperiod) lines, creating a characteristic laminated or banded pattern. At lower magnification, the myelin sheath appears as a dark, homogeneous ring around the axon.
 
 ### 2.4 Visualization Considerations
@@ -116,23 +105,28 @@ The repeat distance from one major dense line to the next — encompassing two l
 - **Medium magnification** (10,000-30,000x): The myelin sheath appears as a thick dark ring. Individual lamellae may be partially resolved.
 - **Low magnification** (<10,000x): Myelin appears as a dark annulus around a lighter axonal profile. The number of wraps is not discernible, but myelinated axons are easily distinguished from unmyelinated ones.
 
+Connectomics volumes are described in nanometers per pixel, not magnification. Resolving a 12 nm period needs pixels of 6 nm or smaller (two pixels per period). At 4 nm per pixel, as in H01 and MICrONS, lamellae are three pixels apart and only partly resolved; at 8 nm or coarser the sheath is a dark band and wraps cannot be counted.
+
 ---
 
 ## 3. Number of Myelin Wraps
 
-The thickness of the myelin sheath is not uniform but scales with axon diameter:
+Sheath thickness scales with axon diameter, so the number of lamellae does too. You can estimate it from two measurements: lamellae ≈ sheath thickness ÷ period, where sheath thickness = (outer diameter − axon diameter) ÷ 2. With a 12 nm period:
 
-- **Small axons** (0.5-1 micrometer diameter): Typically 10-30 lamellae.
-- **Medium axons** (1-3 micrometers): Typically 30-80 lamellae.
-- **Large axons** (3-10+ micrometers, e.g., motor axons in PNS): Can have 80-150+ lamellae.
+- **0.5 micrometer axon, g-ratio 0.75**: sheath about 83 nm, about 7 lamellae.
+- **1 micrometer axon, g-ratio 0.7**: sheath about 214 nm, about 18 lamellae.
+- **3 micrometer axon, g-ratio 0.7**: sheath about 640 nm, about 54 lamellae.
+- **10 micrometer PNS axon, g-ratio 0.6**: sheath about 3.3 micrometers, about 280 lamellae.
+
+These are arithmetic from assumed g-ratios, not measurements; real sheaths vary around them.
 
 ### The g-ratio
 
 The ratio of inner axon diameter to total outer diameter (including myelin) is called the g-ratio:
 
-- **Optimal g-ratio**: Approximately 0.6-0.7 for CNS axons, meaning the myelin sheath occupies roughly 30-40% of the total fiber diameter.
-- **Significance**: The g-ratio is optimized for maximal conduction velocity. Axons with too little myelin (high g-ratio) conduct slowly. Axons with excessive myelin (low g-ratio) waste resources and space.
-- **Annotation use**: Measuring the g-ratio in EM volumes can identify axons with abnormally thin myelin (possible demyelination or remyelination) or abnormally thick myelin (possible tomaculous neuropathy).
+- **Optimal g-ratio**: Rushton's classic estimate, based on conduction speed alone, is about 0.6, which fits some peripheral fibers. CNS fibers have thinner myelin; a theoretical analysis that also weighs space and energy puts the CNS optimum near 0.77 (Chomiak & Hu, 2009). A g-ratio of 0.6-0.8 means the sheath takes up 20-40% of the fiber diameter (1 − g).
+- **Significance**: For a fixed fiber diameter, too little myelin (high g-ratio) slows conduction, and too much (low g-ratio) leaves too small an axon inside.
+- **Annotation use**: Measuring the g-ratio in EM volumes can flag axons with unusually thin myelin (possible demyelination or remyelination). Abnormally thick, folded myelin (tomacula) is a peripheral-nerve finding and will rarely appear in brain volumes.
 
 ---
 
@@ -142,9 +136,9 @@ Nodes of Ranvier are the regularly spaced gaps in the myelin sheath where the ax
 
 ### 4.1 Nodal Architecture
 
-- **Length**: The bare nodal gap is typically 1-2 micrometers long.
-- **Internode distance**: The myelinated segment between nodes (the internode) ranges from approximately 100 micrometers to over 1 millimeter, roughly proportional to axon diameter.
-- **Exposed axolemma**: The nodal membrane is not truly bare — it is covered by a specialized extracellular matrix and contacted by glial processes.
+- **Length**: The bare nodal gap is on the order of 1 micrometer long. In rat optic nerve and cortex, node length varied 4.4-fold and 8.7-fold between axons, but much less along a single axon (Arancibia-Cárcamo et al., 2017).
+- **Internode distance**: The myelinated segment between nodes (the internode) is longer in larger fibers. Large peripheral fibers have internodes around a millimeter long; CNS internodes, especially in gray matter, are often much shorter, so a single EM volume can contain several nodes on one axon.
+- **Exposed axolemma**: The nodal membrane is not truly bare. It is covered by a specialized extracellular matrix and contacted by glial processes.
 
 ### 4.2 Ultrastructural Features in EM
 
@@ -159,9 +153,9 @@ Nodes of Ranvier are the regularly spaced gaps in the myelin sheath where the ax
 Flanking each node are the paranodal regions, where the myelin sheath terminates:
 
 - **Paranodal loops**: The terminal turns of the myelin spiral do not end abruptly. Instead, each lamella forms a cytoplasm-containing loop that contacts the axon membrane. These loops stack in a regular array along the paranode, creating a distinctive "staircase" pattern in longitudinal sections.
-- **Septate-like junctions**: Each paranodal loop forms a specialized junction with the axolemma, mediated by the Caspr/contactin/neurofascin-155 complex. In EM, these junctions appear as periodic densities (septae) bridging the 3-5 nm gap between the loop membrane and the axon membrane.
+- **Septate-like junctions**: Each paranodal loop forms a specialized junction with the axolemma, mediated by the Caspr/contactin/neurofascin-155 complex. In EM, these junctions appear as periodic densities (transverse bands) bridging a gap of only a few nanometers between the loop membrane and the axon membrane.
 - **Function**: Paranodal junctions serve as a diffusion barrier, preventing lateral movement of nodal sodium channels and juxtaparanodal potassium channels. They effectively define and maintain the molecular domains of the node.
-- **Length**: The paranodal region is typically 3-10 micrometers long on each side of the node.
+- **Length**: The paranodal region is a few micrometers long on each side of the node, longer in fibers with more lamellae because each lamella adds a loop.
 
 ### 4.4 Juxtaparanodal Region
 
@@ -181,7 +175,7 @@ Schmidt-Lanterman incisures (also called Schmidt-Lanterman clefts) are cytoplasm
 - **EM appearance**:
   - **Longitudinal section**: Lighter streaks or bands running obliquely through the dark myelin sheath, creating a characteristic "herringbone" pattern.
   - **Cross-section**: Appear as interruptions in the compact myelin lamellae where a small pocket of cytoplasm separates adjacent lamellae.
-- **Function**: Provide a cytoplasmic pathway for transport of metabolites, signaling molecules, and organelles between the Schwann cell body (outer surface) and the inner tongue (nearest the axon). Without incisures, the compact myelin would completely isolate the inner tongue from the cell body.
+- **Function**: Provide a cytoplasmic pathway for transport of metabolites, signaling molecules, and organelles between the Schwann cell body (outer surface) and the inner tongue (nearest the axon). Along the internode, where compact myelin would otherwise block the route, incisures are the shortcut; the paranodal loops are the other cytoplasmic path, at the ends of the sheath.
 - **Contents**: The cytoplasm within incisures contains microtubules, actin filaments, and occasionally small organelles (mitochondria, ER tubules).
 
 ---
@@ -194,8 +188,8 @@ The innermost and outermost wraps of the myelin sheath retain cytoplasm and serv
 
 - **Location**: The cytoplasm-containing layer directly apposed to the axon membrane.
 - **Appearance**: A thin crescent of pale cytoplasm between the innermost myelin lamella and the axolemma.
-- **Function**: Site of membrane growth during myelination. Contains the machinery for membrane addition and lipid synthesis. The inner tongue is where new myelin membrane is added during sheath growth.
-- **Width**: Varies; typically very thin (50-200 nm) in mature myelin but can be thicker during active myelination.
+- **Function**: The inner tongue is where new myelin membrane is added as the sheath grows.
+- **Width**: Varies; usually very thin in mature myelin and thicker during active myelination.
 
 ### 6.2 Outer Tongue (Outermost Loop)
 
@@ -209,15 +203,15 @@ The innermost and outermost wraps of the myelin sheath retain cytoplasm and serv
 
 ### 7.1 Myelin as an Axon Identifier
 
-- **Strong positive cue**: The presence of a myelin sheath is strong evidence that the enclosed process is an axon. In the CNS, only axons are myelinated (dendrites and somata are not).
-- **Caveat — unmyelinated axons**: Many CNS axons are unmyelinated, especially those of local interneurons and thin-caliber projection axons. The absence of myelin does not exclude axon identity.
-- **Caveat — partial myelination**: Some axons are myelinated along part of their length but unmyelinated at their terminals and sometimes along intermediate segments. An axon may therefore transition from myelinated to unmyelinated within a single EM volume.
+- **Strong positive cue**: The presence of a myelin sheath is strong evidence that the enclosed process is an axon. In the CNS, myelin is almost exclusively found around axons; dendrites are not myelinated.
+- **Caveat: unmyelinated axons**: Most thin CNS axons are unmyelinated, so the absence of myelin does not exclude axon identity. Myelin does not mean a long-range excitatory axon either: in mouse neocortex, about half the myelin in layer 2/3 and a quarter in layer 4 wraps axons of parvalbumin-positive basket cells (Micheva et al., 2016).
+- **Caveat: partial myelination**: Some axons are myelinated along part of their length but unmyelinated at their terminals and sometimes along intermediate segments. An axon may therefore transition from myelinated to unmyelinated within a single EM volume.
 
 ### 7.2 Node Identification for Tracing
 
 Nodes of Ranvier can be challenging for automated segmentation and manual tracing because:
 
-- The axon caliber often narrows at the node (by approximately 20-30%), changing the profile size.
+- The axon is constricted at the node (Hildebrand et al., 1993), so the profile shrinks.
 - The myelin sheath is absent, so the characteristic dark ring that aids tracing disappears.
 - Paranodal loops and glial contacts create a complex local environment that can confuse segmentation algorithms.
 
@@ -239,9 +233,9 @@ Nodes of Ranvier can be challenging for automated segmentation and manual tracin
 Step-by-step identification:
 
 1. **Dark ring assessment**: The ring shows a laminated structure at high magnification — alternating dark and lighter lines with approximately 12 nm periodicity. This is compact myelin.
-2. **Wrap count**: Approximately 40 lamellae are visible, consistent with a medium-caliber axon.
-3. **Axon contents**: The enclosed profile contains a few small mitochondria (approximately 0.5 micrometers), longitudinally cut neurofilaments and microtubules, and a single SER tubule. No ribosomes are visible.
-4. **g-ratio estimation**: The inner axon diameter is approximately 1.5 micrometers; the total outer diameter (with myelin) is approximately 2.3 micrometers. The g-ratio is approximately 0.65 — within the normal range.
+2. **g-ratio estimation**: The inner axon diameter is approximately 1.5 micrometers; the total outer diameter (with myelin) is approximately 2.3 micrometers. The g-ratio is 1.5 ÷ 2.3 ≈ 0.65, within the normal range.
+3. **Wrap count check**: The sheath is (2.3 − 1.5) ÷ 2 = 0.4 micrometers thick. At a 12 nm period that predicts about 33 lamellae. Counting about 33 at high resolution confirms the measurement; a very different count means the section is oblique or the period is distorted.
+4. **Axon contents**: The enclosed profile contains a few small mitochondria (approximately 0.5 micrometers), neurofilaments and microtubules cut in cross-section (small dots and circles), and a single SER tubule. No ribosomes are visible.
 5. **Inner tongue**: A thin crescent of pale cytoplasm is visible between the innermost lamella and the axon membrane.
 6. **Conclusion**: Compact myelin + appropriate contents + normal g-ratio = healthy myelinated axon.
 
@@ -257,7 +251,7 @@ Step-by-step identification:
 2. **Nodal gap length**: The bare axon segment is approximately 1.5 micrometers long — consistent with a node of Ranvier.
 3. **Dense undercoat**: The axolemma in the bare segment shows a dark electron-dense coating on the cytoplasmic face. This is the ankyrin-G-based undercoat enriched in sodium channels.
 4. **Glial contacts**: Pale astrocyte processes (containing glycogen granules) contact the nodal axolemma. No Schwann cell microvilli are present (confirming CNS location).
-5. **Axon caliber**: The axon diameter narrows slightly at the node (approximately 20% reduction compared to the internodal diameter). This is normal.
+5. **Axon caliber**: The axon diameter narrows slightly at the node compared with the internode. This is normal.
 6. **Continuity confirmation**: The myelin resumes on the far side with similar periodicity and wrap number, confirming this is the same axon.
 7. **Conclusion**: Paranodal loops + bare axolemma with dense undercoat + astrocyte contacts + transient caliber reduction = node of Ranvier (CNS).
 
@@ -269,7 +263,7 @@ Step-by-step identification:
 
 Potential artifacts that mimic or distort myelin:
 
-1. **Fixation-induced myelin splitting**: If alternating lamellae are separated by clear spaces, the "myelin" may be artifactually swollen. Genuine compact myelin has tightly apposed lamellae with no visible gaps at the light-microscopic level. Mild splitting at the intraperiod line can occur during fixation and is a common processing artifact, not necessarily pathology.
+1. **Fixation-induced myelin splitting**: If alternating lamellae are separated by clear spaces, the "myelin" may be artifactually swollen. Genuine compact myelin has tightly apposed lamellae with no gaps between them at EM resolution. Mild splitting at the intraperiod line can occur during fixation and is a common processing artifact, not necessarily pathology.
 2. **Oblique sectioning**: If the section cuts through myelin at an angle rather than perpendicular to the axon, the myelin ring may appear asymmetric — thicker on one side, thinner on the other. This is a geometric artifact, not a biological feature.
 3. **Membrane whorls**: Occasionally, membrane debris in the neuropil forms concentric lamellated structures that superficially resemble myelin. To distinguish: (a) check for an enclosed axon with appropriate cytoskeletal contents, (b) check for inner and outer tongues, (c) verify that the periodicity matches known myelin values. Membrane whorls often have irregular periodicity and lack a central axon.
 4. **Resin artifacts**: Folds or wrinkles in the section can create dark bands that mimic lamellae. These typically extend linearly across multiple structures rather than forming a closed ring.
@@ -280,12 +274,12 @@ Potential artifacts that mimic or distort myelin:
 
 | Misconception | Reality |
 |---|---|
-| "All axons in the CNS are myelinated." | Many CNS axons are unmyelinated, especially those of local interneurons. In cortical gray matter, unmyelinated axons vastly outnumber myelinated ones. |
-| "Myelin is made of fat." | Myelin is made of tightly compacted glial cell membrane, which is lipid-rich (approximately 70% lipid by dry weight) but also contains critical structural proteins (MBP, PLP, P0). |
-| "The node of Ranvier is a gap in insulation." | While the node is a gap in myelin, it is a highly organized functional domain with clustered ion channels, specialized extracellular matrix, and glial contacts — not simply a bare patch. |
-| "CNS and PNS myelin are the same." | CNS myelin (oligodendrocyte) and PNS myelin (Schwann cell) differ in protein composition (PLP vs. P0), periodicity, one-to-many vs. one-to-one wrapping, and presence of Schmidt-Lanterman incisures. |
-| "Thicker myelin always means faster conduction." | Conduction velocity is optimized at a specific g-ratio. Excessively thick myelin (very low g-ratio) actually reduces conduction velocity because it increases fiber diameter without proportionally increasing axon diameter. |
-| "Paranodal loops are just myelin endings." | Paranodal loops form critical septate-like junctions that serve as molecular fences, maintaining the distinct ion channel domains of the node and juxtaparanode. |
+| "All axons in the CNS are myelinated." | Most thin CNS axons are unmyelinated. In cortical gray matter, unmyelinated axons vastly outnumber myelinated ones (see the H01 field above). |
+| "Myelin is made of fat." | Myelin is made of tightly compacted glial cell membrane, which is lipid-rich (roughly 70-80% lipid by dry weight) but also contains structural proteins (MBP, PLP, P0). |
+| "The node of Ranvier is a gap in insulation." | While the node is a gap in myelin, it is a highly organized functional domain with clustered ion channels, specialized extracellular matrix, and glial contacts. |
+| "CNS and PNS myelin are the same." | CNS myelin (oligodendrocyte) and PNS myelin (Schwann cell) differ in main structural protein (PLP vs. P0), periodicity in unfixed tissue, one-to-many vs. one-to-one wrapping, and how common Schmidt-Lanterman incisures are. |
+| "Thicker myelin always means faster conduction." | For a fiber of fixed total diameter, conduction speed peaks at an intermediate g-ratio. Past that point, more myelin means a thinner axon inside, and conduction slows. |
+| "Paranodal loops are just myelin endings." | Paranodal loops form septate-like junctions that serve as molecular fences, maintaining the distinct ion channel domains of the node and juxtaparanode. |
 
 ---
 
@@ -293,11 +287,15 @@ Potential artifacts that mimic or distort myelin:
 
 1. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 2. Hildebrand C, Remahl S, Persson H, Bjartmar C (1993) "Myelinated nerve fibres in the CNS." *Progress in Neurobiology* 40:319-384.
-3. Stassart RM, Mobius W, Nave KA, Edgar JM (2018) "The axon-myelin unit in development and degenerative disease." *Frontiers in Neuroscience* 12:467.
+3. Stassart RM, Möbius W, Nave KA, Edgar JM (2018) "The axon-myelin unit in development and degenerative disease." *Frontiers in Neuroscience* 12:467.
 4. Salzer JL (2003) "Polarized domains of myelinated axons." *Neuron* 40:297-318.
 5. Rasband MN, Peles E (2021) "Mechanisms of node of Ranvier assembly." *Nature Reviews Neuroscience* 22:7-20.
 6. Nave KA, Werner HB (2014) "Myelination of the nervous system: mechanisms and functions." *Annual Review of Cell and Developmental Biology* 30:503-533.
 7. Waxman SG, Ritchie JM (1993) "Molecular dissection of the myelinated axon." *Annals of Neurology* 33:121-136.
+8. Kirschner DA, Avila RL, Gamez Sazo RE, et al. (2010) "Rapid assessment of internodal myelin integrity in central nervous system tissue." *Journal of Neuroscience Research* 88:712-721. doi:10.1002/jnr.22241
+9. Chomiak T, Hu B (2009) "What is the optimal value of the g-ratio for myelinated fibers in the rat CNS? A theoretical approach." *PLoS ONE* 4:e7754. doi:10.1371/journal.pone.0007754
+10. Arancibia-Cárcamo IL, Ford MC, Cossell L, et al. (2017) "Node of Ranvier length as a potential regulator of myelinated axon conduction speed." *eLife* 6:e23329. doi:10.7554/eLife.23329
+11. Micheva KD, Wolman D, Mensh BD, et al. (2016) "A large fraction of neocortical myelin ensheathes axons of local inhibitory neurons." *eLife* 5:e15784. doi:10.7554/eLife.15784
 
 ---
 

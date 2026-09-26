@@ -10,15 +10,10 @@ pathways:
   - classroom delivery
   - graduate teaching
 summary: "How tissue becomes a queryable petascale dataset, and what makes a result reproducible."
-use_layout_hero: false
 ---
 
 *Lecture 2 of the [connectomics lecture series]({{ '/teaching/lectures/' | relative_url }}).
-56 slides in three parts, about 150 minutes. Openly licensed — **CC BY-SA 4.0**.*
-
-## What this lecture covers
-
-How tissue becomes a queryable petascale dataset: preparation and its artifact signatures, storage and infrastructure, and the versioning that makes a result reproducible.
+56 slides in three parts, about 150 minutes. Openly licensed under **CC BY-SA 4.0**.*
 
 <div class="resource-card">
   <div class="resource-links">
@@ -29,8 +24,8 @@ How tissue becomes a queryable petascale dataset: preparation and its artifact s
     <a class="resource-link" href="{{ '/teaching/lectures/tools-and-methods-answers/' | relative_url }}">Instructor model responses</a>
   </div>
   <p><small>The HTML deck presents directly in a browser. The Markdown source carries the
-  speaker notes as HTML comments and is what to edit if you want to change wording —
-  see <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
+  speaker notes as HTML comments and is what to edit if you want to change wording.
+  See <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
 </div>
 
 ## Learning objectives
@@ -45,8 +40,8 @@ By the end of this lecture, participants will be able to:
 ## Teach a 90-minute session
 
 This selected-slide route follows Introduction and Synapse Detection in the
-[teaching sequence]({{ '/teaching/sequence/' | relative_url }}). It uses the existing
-56-slide deck and embedded notes. It is Session 3 in that short sequence, but
+[four-session block]({{ '/teaching/sequence/' | relative_url }}). It uses the existing
+56-slide deck and embedded notes. It is Session 3 in that block, but
 Lecture 2 / Module 8 in the original graduate course. Slide numbers include the cover.
 
 **Outcome:** learners produce an auditable methods record, reproduce a small
@@ -62,7 +57,8 @@ invented records and does not query a public service.
 - **0–10 min, slides 1–3, 6:** revisit the previous study brief. Ask which pipeline
   artifact supplies its measurement. Distinguish an image, a segmentation and a
   synapse table before naming software.
-- **10–20 min, slides 9–10, 19, 21–22:** diagnose a preparation/artifact scenario.
+- **10–20 min, slides 9–10, 19, 21–22, 31:** diagnose a preparation/artifact scenario.
+  Slide 31's table pairs each defect signature with the stage that produced it.
   Ask what observation distinguishes a tissue-depth effect from a processing-grid
   effect, and which QA gate would detect it before more acquisition.
 - **20–30 min, slides 26–27, 33–35:** explain derived artifacts and byte accounting.
@@ -91,23 +87,23 @@ can still be biologically biased; the non-claim and quality checks remain requir
 
 ## Structure
 
-### Part A — From tissue to voxels
+### Part A: From tissue to voxels
 
 The preparation chain step by step with the failure each step produces, sectioning and imaging families, the dose budget, and the QA gates that stop acquisition.
 
-### Part B — Storage, infrastructure, and what it costs
+### Part B: Storage, infrastructure, and what it costs
 
 The eight-stage reference pipeline, chunked multi-resolution arrays, chunk shape as an access-pattern decision, and a worked capacity and cost model.
 
-### Part C — Reproducible pipelines
+### Part C: Reproducible pipelines
 
 Why object IDs are not stable, the ChunkedGraph and materialization versions, the reproducibility header, and the platform landscape.
 
 ## What students produce
 
-A **reproducible query** against a public volume: a notebook carrying a six-line reproducibility header, a pinned materialization version, stated inclusion criteria, and one stated limitation — that runs end to end from a clean environment.
+A **reproducible query** against a public volume: a notebook carrying a six-line reproducibility header, a pinned materialization version, stated inclusion criteria, and one stated limitation. It must run end to end from a clean environment.
 
-## The centrepiece
+## The centerpiece
 
 The version problem in Part C. In the hypothetical example, a figure reports 1,412
 input synapses and a rerun returns 1,530 for “the same cell.” The discrepancy alone
@@ -116,19 +112,19 @@ the versions, object lineage, query and archived inputs before interpreting it.
 
 ## Notes for whoever teaches it
 
-**The diagnostic question runs through the whole lecture.** For any defect: which coordinate system does it live in — block position, anatomy, acquisition time, or the processing grid? That single question identifies the stage that produced it, and it is the transferable skill here.
+**The diagnostic question runs through the whole lecture.** For any defect: which coordinate system does it live in: block position, anatomy, acquisition time, or the processing grid? That single question identifies the stage that produced it, and it is the transferable skill here.
 
 **The staining-gradient case is worth dwelling on.** A depth-dependent staining gradient runs in the same direction as cortical layer depth. A team that does not check the coordinate system can publish a "laminar difference in synapse density" that is entirely a penetration artifact. Ask the room how they would distinguish the two.
 
-**Make them physically add the reproducibility header.** It takes ninety seconds, it is the highest-value habit in the lecture, and essentially nobody adopts it until they have been burned once. The assignment rubric awards points for it explicitly.
+**Make them physically add the reproducibility header.** It takes ninety seconds and is the habit from this lecture most worth keeping. Few people adopt it until an unreproducible number has cost them time, so have them write it in class. The assignment on slide 52 grades it.
 
-## Licence and credit
+## License and credit
 
 **CC BY-SA 4.0.** Teach from this lecture anywhere, including commercially; copy and
 redistribute it in any medium; and re-cut, shorten, translate, or merge it into your own
 material. No permission needed. Two conditions: credit the original and say if you
 changed anything, and distribute your adapted version under
-[the same licence]({{ '/teaching/lectures/' | relative_url }}#licence).
+[the same license]({{ '/teaching/lectures/' | relative_url }}#license).
 
 > Gray Roncal, W. (2026). *Nanoscale Connectomics: Tools and Methods* (EN.585.781 Frontiers in Neuroengineering,
 > Module 8). NeuroTrailblazers. CC BY-SA 4.0.
@@ -140,7 +136,7 @@ The H01 cover image retains **CC BY 4.0**, with credit to Lichtman Lab / Harvard
 and Connectomics at Google, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 Preserve that separate attribution when adapting the deck.
 
-Found something wrong or out of date — or built a version worth sharing back?
+Found something wrong or out of date, or built a version worth sharing back?
 [Open an issue](https://github.com/wrgr/neurotrailblazers/issues).
 
 ## Related
@@ -148,5 +144,5 @@ Found something wrong or out of date — or built a version worth sharing back?
 - [Series overview]({{ '/teaching/lectures/' | relative_url }})
 - [Lecture 1: Introduction to Connectomics]({{ '/teaching/lectures/connectomics-01-introduction/' | relative_url }})
 - [Lecture 3: Algorithms and Applications]({{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }})
-- [Technical training units]({{ '/technical-training/' | relative_url }}) — the long-form material behind these slides
-- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}) — papers and discussion prompts
+- [Technical training units]({{ '/technical-training/' | relative_url }}): the long-form material behind these slides
+- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}): papers and discussion prompts

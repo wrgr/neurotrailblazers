@@ -10,15 +10,10 @@ pathways:
   - classroom delivery
   - graduate teaching
 summary: "What a connectome is, what it can and cannot establish, and where the field stands."
-use_layout_hero: false
 ---
 
 *Lecture 1 of the [connectomics lecture series]({{ '/teaching/lectures/' | relative_url }}).
-59 slides in three parts, about 150 minutes. Openly licensed — **CC BY-SA 4.0**.*
-
-## What this lecture covers
-
-Why synapse-resolution structure needs electron microscopy, what a wiring diagram can and cannot establish, the three scales, and the state of the field through 2025.
+59 slides in three parts, about 150 minutes. Openly licensed under **CC BY-SA 4.0**.*
 
 <div class="resource-card">
   <div class="resource-links">
@@ -29,8 +24,8 @@ Why synapse-resolution structure needs electron microscopy, what a wiring diagra
     <a class="resource-link" href="{{ '/teaching/lectures/introduction-answers/' | relative_url }}">Instructor model responses</a>
   </div>
   <p><small>The HTML deck presents directly in a browser. The Markdown source carries the
-  speaker notes as HTML comments and is what to edit if you want to change wording —
-  see <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
+  speaker notes as HTML comments and is what to edit if you want to change wording.
+  See <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
 </div>
 
 ## Learning objectives
@@ -46,7 +41,7 @@ By the end of this lecture, participants will be able to:
 
 This selected-slide route includes an activity and debrief. It is a shorter
 alternative to the full 150-minute lecture below. Slide numbers include the cover.
-Use the [short teaching sequence]({{ '/teaching/sequence/' | relative_url }}) to follow
+Use the [four-session block]({{ '/teaching/sequence/' | relative_url }}) to follow
 this session with Synapse Detection.
 
 **Preparation:** open the deck, review the worksheet/key, and provide paper or a
@@ -85,15 +80,15 @@ claims and explicit non-claims over polished prose. Permit a well-justified
 
 The full, approximately 150-minute route uses all three parts.
 
-### Part A — The case for mapping
+### Part A: The case for mapping
 
 The resolution argument in numbers, the cost argument you can do in your head, and the three bins every connectivity claim falls into.
 
-### Part B — Three scales that are not the same thing
+### Part B: Three scales that are not the same thing
 
 Acquisition, reconstruction, and analysis scale; the modality chart and the tradeoff triangle; representations, registration, and scale leakage.
 
-### Part C — The field as it stands
+### Part C: The field as it stands
 
 Forty years of milestones tagged by stream, the landmark datasets and what each actually delivered, open problems, and how to read a connectomics paper.
 
@@ -101,25 +96,25 @@ Forty years of milestones tagged by stream, the landmark datasets and what each 
 
 A one-page **study brief** on a question the student cares about: a measurable endpoint with units, a null model stated in words, and an explicit non-claim.
 
-## The centrepiece
+## The centerpiece
 
-The claim-sorting framework in Part A. It is introduced here, used in every subsequent lecture, and is what the lecture 3 lab is graded against. Students routinely treat lecture 1 as background and skip to the tools; it is worth saying out loud that this part is load-bearing.
+The claim-sorting framework in Part A. It is introduced here, used in every later lecture, and is what the lecture 3 lab is graded against. Students tend to treat lecture 1 as background and skip to the tools, so say out loud that the rest of the series depends on this part.
 
 ## Notes for whoever teaches it
 
-**The cold open pays off eleven slides later.** Three claims about the same circuit are put to the room early and deliberately left unresolved. Take a show of hands on each — most rooms accept the first, split on the second, and about a third accept the third because it sounds like something they have read. That last group is the point of the exercise.
+**The cold open pays off twelve slides later.** Slide 10 puts three claims about the same circuit to the room and leaves them unresolved until slide 22. Take a show of hands on each. Expect the room to accept the first and split on the second. Anyone who accepts the third because it sounds like something they have read is the point of the exercise.
 
 **Part A ends on a constructive turn, not a limitation.** Students hear "structure cannot establish this" as "connectomics cannot do anything interesting". The right reading is that it tells you exactly which additional experiment your question needs. MICrONS exists because someone decided to co-register two-photon physiology with the EM volume.
 
-**The decision rule dislodges a common instinct.** Learners arrive assuming nanoscale is the serious scale. The rule is the *coarsest* acquisition scale that resolves the analysis unit — choosing EM when light microscopy answers the question is a million-fold error in data volume, not caution.
+**The decision rule dislodges a common instinct.** Learners arrive assuming nanoscale is the serious scale. The rule is the *coarsest* acquisition scale that resolves the analysis unit. Choosing EM at 4 × 4 × 40 nm when 1 µm light microscopy answers the question multiplies the voxel count about 1.5 million times.
 
-## Licence and credit
+## License and credit
 
 **CC BY-SA 4.0.** Teach from this lecture anywhere, including commercially; copy and
 redistribute it in any medium; and re-cut, shorten, translate, or merge it into your own
 material. No permission needed. Two conditions: credit the original and say if you
 changed anything, and distribute your adapted version under
-[the same licence]({{ '/teaching/lectures/' | relative_url }}#licence).
+[the same license]({{ '/teaching/lectures/' | relative_url }}#license).
 
 > Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering,
 > Module 7). NeuroTrailblazers. CC BY-SA 4.0.
@@ -131,7 +126,7 @@ The H01 cover image retains **CC BY 4.0**, with credit to Lichtman Lab / Harvard
 and Connectomics at Google, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 Preserve that separate attribution when adapting the deck.
 
-Found something wrong or out of date — or built a version worth sharing back?
+Found something wrong or out of date, or built a version worth sharing back?
 [Open an issue](https://github.com/wrgr/neurotrailblazers/issues).
 
 ## Related
@@ -139,5 +134,5 @@ Found something wrong or out of date — or built a version worth sharing back?
 - [Series overview]({{ '/teaching/lectures/' | relative_url }})
 - [Lecture 2: Tools and Methods]({{ '/teaching/lectures/connectomics-02-tools-and-methods/' | relative_url }})
 - [Lecture 3: Algorithms and Applications]({{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }})
-- [Technical training units]({{ '/technical-training/' | relative_url }}) — the long-form material behind these slides
-- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}) — papers and discussion prompts
+- [Technical training units]({{ '/technical-training/' | relative_url }}): the long-form material behind these slides
+- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}): papers and discussion prompts

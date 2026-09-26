@@ -10,9 +10,9 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   <!-- Hero Section -->
   <section class="nn-kid-hero">
     <div class="nn-kid-badge"><span aria-hidden="true">🚀</span> Neuronauts Junior Science Lab</div>
-    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Let's Explore the Brain's Connections!</span></h1>
+    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Explore the Brain's Connections!</span></h1>
     <p class="nn-kid-intro">
-      Did you know your brain has over <strong>86 billion tiny cells</strong> called neurons, connected by <strong>100 trillion secret bridges</strong> called synapses? Join the <strong>Neuronauts crew</strong> to discover how scientists map the brain using giant electron microscopes, smart AI robots, and video games!
+      Did you know your brain has about <strong>86 billion tiny cells</strong> called neurons, connected by roughly <strong>100 trillion tiny bridges</strong> called synapses? Join the <strong>Neuronauts crew</strong> to find out how scientists map the brain using giant electron microscopes, smart computer programs, and even video games!
     </p>
     <div class="nn-quick-links">
       <a href="#stories" class="nn-btn nn-btn-primary">Read Kid Science Stories</a>
@@ -63,17 +63,17 @@ description: "Connectomics for kids and young explorers: five landmark papers re
       <a href="{{ '/neuronauts/3d-print/neuronaut-all-five.stl' | relative_url }}">all five figures on one plate</a>
       &mdash; flat relief standees, no supports or brim, plus one stand base (print
       <a href="{{ '/neuronauts/3d-print/neuronaut-stand-base.stl' | relative_url }}">an extra base</a>
-      for each figure you want standing up at once). If you have a colour printer or a print
+      for each figure you want standing up at once). If you have a color printer or a print
       service, there are also
-      <a href="{{ '/neuronauts/3d-print-color/neuronaut3d-all-five-fullcolor.zip' | relative_url }}">full-colour sculpted figures</a>.</p>
+      <a href="{{ '/neuronauts/3d-print-color/neuronaut3d-all-five-fullcolor.zip' | relative_url }}">full-color sculpted figures</a>.</p>
   </section>
 
   <!-- Key Papers Explained for Kids -->
   <section class="nn-stories-section" id="stories">
     <h2 class="nn-section-title">Big Science Discoveries Explained for Kids!</h2>
-    <p class="nn-section-desc">Real scientific landmark papers from our open-access
+    <p class="nn-section-desc">Real landmark papers from our free
       <a href="{{ '/technical-training/journal-club/' | relative_url }}"><strong>2,000-paper collection</strong></a>,
-      translated into awesome stories and analogies. Every paper below is linked, so you can go and
+      retold as stories and analogies. Every paper below is linked, so you can go and
       look at the real thing:</p>
 
     <div class="nn-story-cards">
@@ -93,10 +93,10 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine taking a high-definition photo of every single grain of sand on a 10-mile beach, and then stacking them all in 3D to see how tiny ant tunnels connect underneath!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into 5,000 ultra-thin sheets—each 1,000 times thinner than a human hair. They combined microscope images with powerful computers to build a detailed 3D map of this tiny brain sample.
+            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into about 5,000 ultra-thin sheets, each roughly 2,000 times thinner than a human hair. They photographed every sheet with electron microscopes, which took almost a year, and used powerful computers to build a detailed 3D map of this tiny brain sample.
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> In that tiny speck, they found <strong>57,000 cells</strong> and <strong>150,000,000 synapses</strong>!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> In that tiny speck, they found about <strong>57,000 cells</strong> and about <strong>150,000,000 synapses</strong>!
           </div>
           <div class="nn-story-footer">
             <a href="{{ '/content-library/case-studies/h01-human-cortex/' | relative_url }}" class="nn-research-link">How scientists mapped this piece of human brain &rarr;</a>
@@ -116,13 +116,13 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <strong>The Big Question:</strong> How does a fruit fly dodge a flyswatter, do aerial acrobatics, and smell sugar from across the room with a brain the size of a poppy seed?
           </p>
           <div class="nn-analogy-box">
-            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> A fly's brain is like a miniature Formula 1 racecar computer. It computes an escape route in just 5 milliseconds (faster than the blink of an eye)!
+            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> A fly's brain is like a miniature Formula 1 racecar computer. It can plan an escape before the swatter gets there!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> Through the global <strong>FlyWire</strong> project, hundreds of scientists and citizen volunteers traced all <strong>140,000 neurons</strong> and <strong>50 million synapses</strong> of the adult fruit fly brain. They discovered special "ring-shaped" steering circuits that act like the fly's internal compass!
+            <strong>What Scientists Did:</strong> Through the global <strong>FlyWire</strong> project, hundreds of scientists and citizen volunteers traced all of the roughly <strong>140,000 neurons</strong> and <strong>50 million synapses</strong> in an adult fruit fly brain. Their map includes the fly's ring-shaped "compass" circuit, which helps the fly keep track of which way it is heading!
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> If you stretched out all the wiring in a single fruit fly brain, it would measure about 150 meters (longer than a football field)!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> If you stretched out all the wiring in a single fruit fly brain, it would measure about 149 meters (longer than a football field)!
           </div>
           <div class="nn-story-footer">
             <a href="{{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }}" class="nn-research-link">How the whole fly brain got mapped &rarr;</a>
@@ -139,19 +139,19 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         <h3>3. Teaching Smart Computers to Untangle Rainbow Spaghetti!</h3>
         <div class="nn-story-body">
           <p>
-            <strong>The Big Question:</strong> How do scientists trace millions of tangled brain wires without spending 10,000 years doing it by hand?
+            <strong>The Big Question:</strong> How do scientists trace millions of tangled brain wires without spending lifetimes doing it by hand?
           </p>
           <div class="nn-analogy-box">
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine a giant bowl filled with 10,000 cooked rainbow spaghetti noodles all twisted together in a knot. If you pull one end, how do you find where it comes out on the other side?
           </div>
           <p>
-            <strong>What Scientists Did:</strong> They created <strong>Flood-Filling Networks (FFNs)</strong> and deep learning algorithms. The AI robot starts inside a single cell and "pours digital paint" that fills up only that exact neuron, following cell membranes and following branches in 3D!
+            <strong>What Scientists Did:</strong> They built deep learning programs, including <strong>Flood-Filling Networks (FFNs)</strong>. The program starts inside a single cell and "pours digital paint" that fills up only that neuron, stopping at the cell's walls and following its branches in 3D!
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> AI robots can trace millions of voxels in seconds, but human "proofreaders" still double-check their work to make sure no noodles were accidentally glued together!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> Computers can color in brain pictures far faster than people can, but human "proofreaders" still double-check the work to make sure no noodles were accidentally glued together or snipped apart!
           </div>
           <div class="nn-story-footer">
-            <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}" class="nn-research-link">How the AI colours in neurons, and where it goes wrong &rarr;</a>
+            <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}" class="nn-research-link">How the AI colors in neurons, and where it goes wrong &rarr;</a>
           </div>
         </div>
       </article>
@@ -162,19 +162,19 @@ description: "Connectomics for kids and young explorers: five landmark papers re
           <span class="nn-story-tag"><span aria-hidden="true">🐛</span> The 302-Neuron Worm</span>
           <span class="nn-story-paper">Based on: <a href="https://doi.org/10.1098/rstb.1986.0056" target="_blank" rel="noopener">White et al. (1986)</a> (behind a paywall) &amp; <a href="https://doi.org/10.1038/s41586-019-1352-7" target="_blank" rel="noopener">Cook et al. (Nature 2019)</a> (free to read)</span>
         </div>
-        <h3>4. The Tiny Worm That Started the Brain Mapping Revolution!</h3>
+        <h3>4. The Tiny Worm Whose Whole Nervous System Was Mapped First!</h3>
         <div class="nn-story-body">
           <p>
-            <strong>The Big Question:</strong> What was the very first creature whose entire brain wiring was completely mapped?
+            <strong>The Big Question:</strong> What was the very first animal whose whole nervous system was mapped, wire by wire?
           </p>
           <div class="nn-analogy-box">
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Solving a 302-piece jigsaw puzzle by hand using printed microscope photos and hand-drawn tracings!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> In 1986, Sydney Brenner and his team spent over 15 years cutting a 1-millimeter worm named <em>C. elegans</em> into thousands of slices, printing physical photos, and tracing all <strong>302 neurons</strong> and <strong>7,000 synapses</strong> by hand with colored pens!
+            <strong>What Scientists Did:</strong> John White, Sydney Brenner and their team spent more than ten years cutting a 1-millimeter worm named <em>C. elegans</em> into thousands of slices, printing photos of them, and tracing all <strong>302 neurons</strong> and about <strong>7,000 connections</strong> by hand. They published the map in 1986!
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> Even with only 302 neurons, this worm can find food, remember temperatures, navigate mazes, and back away from danger!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> Even with only 302 neurons, this worm can find food, remember which temperature it grew up at, and back away from danger!
           </div>
           <div class="nn-story-footer">
             <a href="{{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}" class="nn-research-link">The worm with 302 neurons, in full &rarr;</a>
@@ -188,7 +188,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
           <span class="nn-story-tag"><span aria-hidden="true">🎮</span> Gamers for Science</span>
           <span class="nn-story-paper">Based on: <a href="https://doi.org/10.1038/nature13240" target="_blank" rel="noopener">Kim et al. (Nature 2014)</a> &mdash; free to read</span>
         </div>
-        <h3>5. How Kids and Video Gamers Mapped the Eye and Brain!</h3>
+        <h3>5. How Online Gamers Helped Map the Eye!</h3>
         <div class="nn-story-body">
           <p>
             <strong>The Big Question:</strong> Can playing a 3D puzzle game help discover new brain circuits?
@@ -197,10 +197,10 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Turning 3D brain tracing into a multiplayer video game where players score points and level up by coloring dendritic branches!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> Sebastian Seung and team created <strong>EyeWire</strong>, an online video game played by over <strong>250,000 people from 145 countries</strong> (including thousands of students and kids!). By playing 3D coloring cubes, players mapped dozens of new retinal ganglion cells that detect motion!
+            <strong>What Scientists Did:</strong> Sebastian Seung and his team created <strong>EyeWire</strong>, an online game where players color in neurons one small cube at a time. By the time their 2014 paper came out, about <strong>120,000 people from nearly 150 countries</strong> had played. Top players traced "starburst" cells in a mouse retina, and the map showed how these cells help the eye tell which direction something is moving!
           </p>
           <div class="nn-fun-fact">
-            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> Citizen scientists playing games reconstructed over 10 meters of delicate retinal circuitry, proving that anyone can be a real neuroscientist!
+            <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> EyeWire is still running as EyeWire II. By May 2026, its players and scientists had reconstructed more than <strong>25,000 complete neurons</strong> in a mouse retina!
           </div>
           <div class="nn-story-footer">
             <a href="{{ '/initiatives/outreach/' | relative_url }}" class="nn-research-link">How anyone can help map brains &rarr;</a>
@@ -309,7 +309,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
           <span class="nn-term-role">Detective Work</span>
         </div>
         <div class="nn-decoder-back">
-          <p><strong>What is it?</strong> Humans checking and fixing mistakes made by computer segmentation robots.</p>
+          <p><strong>What is it?</strong> People checking and fixing mistakes made by the computer programs that trace neurons.</p>
           <p><strong>Kid Analogy:</strong> Playing spot-the-difference to make sure no cables were glued to the wrong house!</p>
         </div>
       </div>
@@ -373,15 +373,15 @@ description: "Connectomics for kids and young explorers: five landmark papers re
       <div class="nn-guide-card">
         <h3>Hands-On Classroom Activity</h3>
         <p><strong>Pipe Cleaner Neurons:</strong> Have students build neurons using different colored pipe cleaners—red for axons, green for dendrites, and sparkly beads for synaptic vesicles!</p>
-        <p>For a ready-made 25-minute lesson with a worksheet, use <a href="{{ '/teaching/projectome-to-synapse/' | relative_url }}">From Projectome to Synapse</a>.</p>
+        <p>For a ready-made 25&ndash;40 minute lesson, use <a href="{{ '/teaching/projectome-to-synapse/' | relative_url }}">From Projectome to Synapse</a>.</p>
       </div>
       <div class="nn-guide-card">
         <h3>Real Research Connection</h3>
-        <p>Every story here links to the full explanation on this site, and all of it traces back to our open-access <strong>2,000-paper</strong> <a href="{{ '/technical-training/journal-club/' | relative_url }}">journal club corpus</a>, where each card carries a beginner summary. Older students can read the whole story in <a href="{{ '/neuronauts/' | relative_url }}">The Neuronauts Expedition</a>.</p>
+        <p>Every story here links to the full explanation on this site, and all of it traces back to our free <strong>2,000-paper</strong> <a href="{{ '/technical-training/journal-club/' | relative_url }}">journal club corpus</a>, where each card carries a beginner summary. Older students can read the whole story in <a href="{{ '/neuronauts/' | relative_url }}">The Neuronauts Expedition</a>.</p>
       </div>
       <div class="nn-guide-card">
         <h3>Play for Real Science</h3>
-        <p>Students can try real 3D proofreading by visiting <strong>FlyWire</strong> (flywire.ai) or <strong>EyeWire</strong> (eyewire.org) to see how citizen science discovers brain wiring.</p>
+        <p>Older students can try real brain mapping. <a href="https://connectome.quest/" target="_blank" rel="noopener">connectome.quest</a>, run by the Seung Lab at Princeton, links to <strong>EyeWire II</strong>, <strong>FlyWire</strong>, and other citizen-science projects, with step-by-step guides. Check each project's age rules before students sign up.</p>
       </div>
     </div>
   </section>

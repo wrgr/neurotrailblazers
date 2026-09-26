@@ -1,16 +1,16 @@
 library:
   papers:
     white1986:
-      title: "White et al. (1986) - The structure of the nervous system of C. elegans"
+      title: "White et al. (1986) - The structure of the nervous system of the nematode Caenorhabditis elegans"
       url: "https://doi.org/10.1098/rstb.1986.0056"
     denk2004:
-      title: "Denk and Horstmann (2004) - Serial block-face scanning electron microscopy"
+      title: "Denk and Horstmann (2004) - Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure"
       url: "https://doi.org/10.1371/journal.pbio.0020329"
     januszewski2018:
-      title: "Januszewski et al. (2018) - High-precision automated reconstruction with flood-filling networks"
+      title: "Januszewski et al. (2018) - High-precision automated reconstruction of neurons with flood-filling networks"
       url: "https://doi.org/10.1038/s41592-018-0049-4"
     kasthuri2015:
-      title: "Kasthuri et al. (2015) - Saturated reconstruction of neocortex"
+      title: "Kasthuri et al. (2015) - Saturated reconstruction of a volume of neocortex"
       url: "https://doi.org/10.1016/j.cell.2015.06.054"
     harris2012:
       title: "Harris and Weinberg (2012) - Ultrastructure of synapses in the mammalian brain"

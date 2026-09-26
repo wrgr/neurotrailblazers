@@ -16,7 +16,7 @@ acceptable wording. This page is public and suitable for formative feedback.
 ## 1. The invariants
 
 - **Measured:** where inhibitory synapses land on excitatory neurons, counted.
-- **Data:** one mouse, one volume, layer 2/3, materialization version 1078; 58 fully
+- **Data:** one fictional mouse cortex volume, layer 2/3, release T12; 58 fully
   proofread axons, 1,904 synapses.
 - **Compared against:** a null that keeps each neuron's synapse count and places synapses
   at random over the same partners. Result 2.7×; 2.1× on partly proofread axons.
@@ -34,10 +34,10 @@ acceptable wording. This page is public and suitable for formative feedback.
 | B | "veto firing" (and "prefer") | "land on or near the cell body more than chance"; efficacy needs a biophysical model | version and proofreading state; the Bin B assumption behind "inhibitory" |
 | C | "stop them firing" | a count of where synapses sit | everything: data, comparison, non-claim |
 
-**The most damaging draft** is C, but not because of "off switch". The metaphor is loose;
-"stop them firing" is a Bin C claim stated as fact, and "may help explain epilepsy" adds
-a clinical link nothing in the notebook touches. Accept draft A as the answer if the
-learner argues that a specialist audience will repeat "confirming" in their own talks,
+**The most damaging draft** is C, and "off switch" is the lesser problem. The metaphor
+is loose. "Stop them firing" is a Bin C claim stated as fact, and "may help explain
+epilepsy" adds a clinical link nothing in the notebook touches. Accept draft A as the
+answer if the learner argues that a specialist audience will repeat "confirming" in their own talks,
 which spreads the error further. That is the level 2 defect on the
 [Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }})
 page: the framing goes further than the measurement.
@@ -47,7 +47,7 @@ page: the framing goes further than the measurement.
 
 ## 3. Model registers
 
-**Peer:** "In layer 2/3 of one mouse visual cortex volume (materialization v1078), the
+**Peer:** "In layer 2/3 of one mouse cortex volume (release T12), the
 58 inhibitory neurons with fully proofread axons placed synapses on or near excitatory
 cell bodies 2.7× more often than a synapse-count-preserving null; 2.1× on partly
 proofread axons. Inhibitory identity is morphological. We make no claim about effect
@@ -57,14 +57,14 @@ on firing."
 inhibitory neurons land on their excitatory partners. They land on or near the cell body
 about 2.7 times more often than if they were scattered at random over the same cells.
 We call them inhibitory from synapse shape, which is usually but not always right. The
-data are anatomy only, so they say nothing yet about whether these synapses change when
-the partner fires. That is a question for recordings."
+data are anatomy only, so they say nothing yet about whether these synapses affect when,
+or whether, the partner fires. That is a question for recordings."
 
 **Public:** "We traced the connections of a few dozen brain cells in a tiny piece of
 mouse brain, using electron microscope images. One kind of cell, thought to quiet its
 neighbors, attaches close to the center of those neighbors almost three times more often
-than chance would give. A wiring map shows where the connections are, not what they do,
-so we do not yet know whether these connections change what the neighbors do."
+than chance would give. A wiring map shows where connections are. It cannot show what
+they do, so we do not yet know whether these ones change how the neighbors behave."
 
 The three non-claims are the same claim: position, not function. The public version
 spends its one number on "almost three times" and drops the version, which is

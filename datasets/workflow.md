@@ -30,7 +30,7 @@ related_frameworks:
   - research-incubator-model
   - education-models
 resource_links: []
-last_reviewed: 2026-03-09
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
@@ -67,23 +67,24 @@ content_type: core
     <h2>The MouseConnects Pipeline</h2>
     <p>
       MouseConnects, funded through the NIH BRAIN Initiative's BRAIN CONNECTS program
-      from 2023 to 2028, aims to reconstruct the synaptic connectome of the mouse
-      hippocampus — roughly 10 mm³ spanning CA1, CA3, and the dentate gyrus. That is
-      about ten times the volume of MICrONS, the largest comparable reconstruction,
-      and the expected dataset exceeds 10 petabytes of raw imagery. The project's
-      center, HI-MC (the Center for High-throughput Integrative Mouse Connectomics),
-      is led by Jeff Lichtman at Harvard and Viren Jain at Google Research, with
-      collaborators across multiple institutions. The full scientific case — why the
-      hippocampus, which theories the connectome can test — is in the
+      (award UM1NS132250, September 2023 to August 2028), aims to reconstruct the
+      synaptic connectome of about 10 mm³ of the mouse hippocampal formation. That is
+      about ten times the volume of MICrONS or H01. The raw imagery is a projection:
+      Harvard's announcement said about 10,000 terabytes, Google's about 25 petabytes. The center,
+      HI-MC (the Center for High-throughput Integrative Mouse Connectomics), is led
+      from Harvard by Jeff Lichtman, with Viren Jain leading the machine-learning work
+      at Google Research and collaborators at the Allen Institute, MIT, Cambridge,
+      Princeton and Johns Hopkins. The scientific case (why the hippocampus, and which
+      theories the connectome can test) is in the
       <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">MouseConnects and HI-MC case study</a>.
     </p>
     <p>
       This page walks the pipeline that turns that tissue into a queryable wiring
       diagram. Each step below says what happens, what makes it hard, and what a
-      failure there costs everyone downstream — because the defining property of this
-      pipeline is that nothing is ever really fixed later. A staining defect becomes a
-      segmentation error becomes a proofreading cost becomes a wrong number in an
-      analysis. One caution before you quote anything: every count derived from a
+      failure there costs everyone downstream. Little in this pipeline gets fixed
+      later: a staining defect becomes a segmentation error, then a proofreading cost,
+      then a wrong number in an analysis. One caution before you quote anything: every
+      count derived from a
       connectome is a property of a particular data release, not of the tissue.
       <a href="{{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}">Provenance and versioning</a>
       explains why, and the case study repeats the warning where the numbers live.
@@ -96,7 +97,7 @@ content_type: core
       </div>
       <div class="stat-card">
         <div class="stat-number">&gt;10 PB</div>
-        <div class="stat-label">Expected raw imagery</div>
+        <div class="stat-label">Projected raw imagery</div>
       </div>
       <div class="stat-card">
         <div class="stat-number">10×</div>
@@ -120,30 +121,32 @@ content_type: core
           <div class="step-description">
             <p>
               The tissue is fixed by transcardial perfusion with a buffered aldehyde
-              mix — typically around 2–2.5% glutaraldehyde plus 2% paraformaldehyde —
-              to arrest ultrastructure within seconds, before autolysis and osmotic
-              swelling distort the fine processes you are about to spend years
-              tracing. Then, because biological tissue is nearly transparent to
-              electrons, contrast is created chemically: a sequence of heavy-metal
-              stains (the rOTO protocol — reduced osmium, thiocarbohydrazide, a
-              second osmium — followed by uranyl acetate and lead) deposits metal on
-              membranes, which is what you actually see in an EM image.
+              mix, before autolysis and osmotic swelling distort the fine processes you
+              are about to spend years tracing. As one published example, Hua et al.
+              (2015) and the MICrONS team used 2.5% paraformaldehyde, 1.25%
+              glutaraldehyde and 2 mM calcium chloride in 0.08 M cacodylate buffer.
+              Then, because biological tissue gives almost no contrast in the electron
+              beam, contrast is created chemically: a sequence of heavy-metal stains
+              (the rOTO protocol of reduced osmium, thiocarbohydrazide and a second
+              osmium, often followed by uranyl acetate and lead) deposits metal on
+              membranes. The metal is what you actually see in an EM image.
             </p>
             <p>
               The hard part at HI-MC scale is uniformity. Stain has to penetrate the
               entire block, and a block that is well stained at the edges and pale in
               the center produces segmentation quality that varies systematically
-              with position — which can masquerade as a biological gradient. Weak
-              membrane contrast is the single most expensive prep failure, because it
-              is the dominant cause of automated merge errors: the network cannot
-              find a boundary that is barely there.
+              with position, which can masquerade as a biological gradient. Weak
+              membrane contrast is an expensive prep failure because it causes
+              automated merge errors: the network cannot find a boundary that is
+              barely there.
             </p>
             <p>
-              One cost is unavoidable and worth knowing now: dehydration and resin
-              embedding shrink tissue on the order of 5–20% linearly. Every absolute
-              length, area, and volume measurement in EM connectomics inherits that
-              distortion, which is why careful papers report ratios within a volume
-              rather than absolute values compared across studies.
+              One cost is unavoidable and worth knowing now: fixation, dehydration and
+              resin embedding shrink and distort tissue, by amounts that vary with the
+              protocol. Every absolute length, area and volume measurement in EM
+              connectomics inherits that distortion, which is why careful papers
+              compare ratios within a volume rather than absolute values across
+              studies.
             </p>
             <p class="step-depth">
               <strong>Depth:</strong>
@@ -165,17 +168,19 @@ content_type: core
     <div class="step-container">
       <div class="step-number">2</div>
       <div class="step-content">
-        <h3>Serial Sectioning</h3>
+        <h3>Sectioning</h3>
         <div class="step-details">
           <div class="step-description">
             <p>
-              An ultramicrotome with a diamond knife cuts the embedded block into
-              sections 30–50 nm thick — around a thousand sections per 40 µm of
-              depth — collected onto tape (ATUM) or a reinforced substrate. HI-MC
-              uses this serial-section approach, building on the Lichtman lab's
-              decades of experience with it, for a decisive reason: sectioning does
-              not consume the block. Sections can be re-imaged if something goes
-              wrong, and imaging can be parallelized across many microscopes, which
+              Most large volumes so far were cut with a diamond knife into ultrathin
+              sections, 30–50 nm thick: H01 at about 33 nm, MICrONS at 40 nm across
+              about 28,000 sections. HI-MC changes this step. Its NIH award describes
+              cutting the block into <em>semithin</em> sections, then imaging each
+              section's surface with multibeam SEM and removing a few nanometers at a
+              time with an ion beam until the whole section has been imaged. The
+              stated aim is to reduce the distortions that ultrathin sectioning
+              introduces. What stays the same is the reason to section at all:
+              sections can be imaged in parallel on more than one microscope, which
               is how petascale volumes get acquired in finite time.
             </p>
             <p>
@@ -185,10 +190,9 @@ content_type: core
               isolation; what matters is the downstream bill. A lost section is a gap
               the alignment stage must interpolate across and the segmentation model
               was never trained on. A fold makes a region of tissue simply
-              untraceable. At 10 mm³ — hundreds of thousands of sections — even a
-              small per-section failure rate is a large absolute number, so the
-              operational discipline is catching problems while the block still
-              exists to recut.
+              untraceable. At 10 mm³, even a small per-section failure rate is a
+              large absolute number, so the discipline is to catch problems while
+              they can still be fixed.
             </p>
             <p class="step-depth">
               <strong>Depth:</strong>
@@ -200,7 +204,8 @@ content_type: core
           <div class="step-tech">
             <h4>Key Technologies:</h4>
             <span class="tech-tag">Ultramicrotomy</span>
-            <span class="tech-tag">Tape Collection (ATUM)</span>
+            <span class="tech-tag">Semithin Sections</span>
+            <span class="tech-tag">Ion-Beam Milling</span>
             <span class="tech-tag">Section QA</span>
           </div>
         </div>
@@ -214,18 +219,18 @@ content_type: core
         <div class="step-details">
           <div class="step-description">
             <p>
-              The sections are imaged by scanning electron microscopes at nanometer
-              resolution — voxels on the order of 4 × 4 × 40 nm are typical for
+              The sections are imaged by electron microscopes (TEM or SEM) at nanometer
+              resolution; voxels on the order of 4 × 4 × 40 nm are typical for
               volumes like this. The arithmetic is the whole story. An 800 µm cube
               at that resolution is 8 × 10¹⁴ pixels; at a sustained 0.2 gigapixels
               per second that is 46 days of continuous imaging, and roughly 77 days
-              at a realistic 60% duty cycle — before sectioning, QA, or re-imaging
+              at an assumed 60% duty cycle, before sectioning, QA, or re-imaging
               failed sections. Multibeam SEM attacks that throughput term directly,
               scanning with 61 or 91 beams in parallel to aggregate on the order of
-              a gigapixel per second; it is the technology that moved 1 mm³ from
-              impossible to an eighteen-month project. HI-MC is a 10 mm³ target,
-              which is why sustained multi-instrument operation over years is built
-              into the plan.
+              a gigapixel per second. H01's cubic millimeter took 326 days of imaging
+              on a 61-beam instrument (Shapson-Coe et al. 2024). HI-MC plans two 91-beam microscopes,
+              one at Harvard and one at Princeton, for ten times the volume, so
+              years of multi-instrument operation are built into the plan.
             </p>
             <p>
               The core tradeoff is dose. Image quality improves roughly with the
@@ -233,8 +238,8 @@ content_type: core
               costs about four times the acquisition time. At petascale, "just image
               it better" is rarely the answer; the honest move is usually to accept
               a noisier image and spend the savings on better segmentation and more
-              proofreading. Failure at this step — drift, charging, defocus that
-              nobody caught — is uniquely expensive because acquisition is the one
+              proofreading. Failure at this step (drift, charging, defocus that
+              nobody caught) is especially expensive because acquisition is the one
               stage you cannot rerun from disk: the QA has to happen while the
               instrument is still pointed at the section.
             </p>
@@ -263,12 +268,12 @@ content_type: core
           <div class="step-description">
             <p>
               The microscope produces tiles; science needs one coherent 3D volume.
-              First the raw tiles land in an immutable, checksummed archive — the
-              only irreplaceable asset in the project, since everything downstream
-              is recomputable from it, expensively. Then stitching places tiles
+              First the raw tiles land in an immutable, checksummed archive. It is
+              the only irreplaceable asset in the project, since everything
+              downstream can be recomputed from it, at a price. Then stitching places tiles
               within each section, and alignment registers each section to its
               neighbors. Alignment is the hard half, because sections deform
-              non-rigidly — knife compression, folds, stretch — and because errors
+              non-rigidly (knife compression, folds, stretch) and because errors
               accumulate: a bias of 0.1 voxel per section across 20,000 sections is
               a 2,000-voxel drift. Modern pipelines use coarse-to-fine elastic
               registration with a global relaxation step that spreads residual
@@ -278,12 +283,11 @@ content_type: core
             <p>
               The infrastructure numbers explain why HI-MC is a cloud project. A
               single 1 mm³ volume at 4 × 4 × 40 nm is about 1.5 × 10¹⁵ voxels:
-              roughly 1.5 PB of raw archive, another ~2 PB for the aligned image
+              roughly 1.5 PB of raw archive, about as much again for the aligned image
               pyramid, and comparable transient volumes for the model predictions
               that feed segmentation. HI-MC is ten of those. At this scale, moving
-              data is often more expensive than storing it — egress on a petabyte
-              can cost more than a year of storage — so compute goes to the data,
-              not the reverse.
+              data out of a cloud costs about as much as storing it there for
+              months, so compute goes to the data, not the reverse.
             </p>
             <p>
               Failure here is subtle rather than dramatic: a misalignment does not
@@ -291,7 +295,7 @@ content_type: core
               seam, and the segmentation stage will faithfully turn that seam into
               a wall of split errors. And because every stored annotation
               coordinate is defined in the aligned space, revising an alignment
-              later means re-mapping everything — which is why alignment revisions
+              later means re-mapping everything. That is why alignment revisions
               are rare and carefully planned.
             </p>
             <p class="step-depth">
@@ -323,16 +327,15 @@ content_type: core
               pair of neighboring voxels whether they belong to the same object;
               watershed then produces deliberately-too-small supervoxels, and an
               agglomeration step merges them into neurons. In flood-filling networks
-              (FFNs) — developed at Google Research and the planned workhorse for
-              HI-MC, as for FlyWire before it — a network grows one object at a time
-              from a seed, repeatedly asking whether the next voxel belongs. A
-              separate model detects synapses and assigns their partners.
+              (FFNs), developed at Google Research and used for H01, a network grows
+              one object at a time from a seed, repeatedly asking whether the next
+              voxel belongs. Google has said it will use FFNs for HI-MC. A separate
+              model detects synapses and assigns their partners.
             </p>
             <p>
-              The compute is significant — on the order of 1,700 GPU-days per cubic
-              millimeter at typical throughputs, and pipelines budget for three to
-              five full inference passes because the first model version is never
-              the last — but the deeper design decision is about error. The whole
+              The compute is large, and projects plan for more than one full
+              inference pass because the first model version is rarely the last.
+              The deeper design decision is about error. The whole
               stack is deliberately tuned to over-segment: it prefers splits (one
               neuron in pieces) to merges (two neurons fused), because a split
               leaves visible evidence of itself while a merge produces an object
@@ -367,23 +370,25 @@ content_type: core
         <div class="step-details">
           <div class="step-description">
             <p>
-              Automated segmentation is good and wrong: wrong in ways that are
-              individually small and collectively decisive. Humans correct it using
-              CAVE — the Connectome Annotation Versioning Engine, built for FlyWire
-              and MICrONS and serving as HI-MC's backend — which represents the
-              segmentation as an editable graph over immutable supervoxels, so
-              thousands of proofreaders can split and merge concurrently with every
-              edit versioned. This is where NeuroTrailblazers connects most directly
-              to the project: proofreading and annotation at this scale is a trained
-              workforce problem, and trained contributors can work on real data.
+              Automated segmentation is good and still wrong, in ways that are
+              individually small and collectively decisive. Humans correct it. For
+              FlyWire and MICrONS they used CAVE, the Connectome Annotation Versioning
+              Engine, which represents the segmentation as an editable graph over
+              immutable supervoxels so that many proofreaders can split and merge at
+              once, with every edit versioned. HI-MC's award commits to online tools
+              that let anyone render, proofread or analyze the volume, and to
+              bringing high school, undergraduate and graduate students into
+              proofreading. That is where NeuroTrailblazers connects most directly to
+              the project: proofreading at this scale needs a trained workforce.
             </p>
             <p>
-              It is also the pipeline's dominant cost. Compute and storage are line
-              items you can negotiate with a cloud vendor; proofreading is a hiring,
-              training, and quality-management problem, at a few hours of skilled
-              attention per fully proofread neuron. And complete manual proofreading
-              of 10 mm³ is almost certainly infeasible — the case study is explicit
-              about this — so HI-MC will need strategies that combine automated
+              It is also the pipeline's largest cost in person-hours. Compute and
+              storage are line items you can negotiate with a cloud vendor.
+              Proofreading is a hiring, training and quality-management problem: the
+              hemibrain took over 50 person-years of it, and FlyWire about 33. And
+              complete manual proofreading
+              of 10 mm³ is almost certainly infeasible, as the case study says, so
+              HI-MC will need strategies that combine automated
               error detection with targeted human review of the circuits that
               matter most. That turns proofreading into an allocation problem under
               a fixed budget: which errors, on which cells, checked to what defined
@@ -425,27 +430,28 @@ content_type: core
         <div class="step-details">
           <div class="step-description">
             <p>
-              The deliverable is not the images — it is the graph, plus the tables
-              that describe it: a synapse table on the order of 5 × 10⁸ rows per
-              cubic millimeter, skeletons, meshes, and cell annotations. Building
+              The deliverable is the graph and the tables that describe it: a synapse table on the order of 5 × 10⁸ rows per
+              cubic millimeter (MICrONS has 524 million), skeletons, meshes, and cell
+              annotations. Building
               the graph is itself a sequence of consequential choices (which edges
               count, what synapse threshold, which release), and every analysis
               needs a null model before a claim: a motif count means nothing until
-              you say what you are comparing it against. For HI-MC the target
-              questions are the hippocampal classics — whether dentate gyrus wiring
-              supports pattern separation, whether the CA3 recurrent network looks
-              like an auto-associative memory, how the trisynaptic circuit is
-              actually built at synaptic resolution.
+              you say what you are comparing it against. HI-MC's award names the
+              goals: cell types defined by morphology and connectivity and matched to
+              transcriptomic types, local and long-range circuit motifs, and tests of
+              existing models of memory and spatial cognition. The hippocampal
+              classics are the obvious candidates, such as whether dentate gyrus
+              wiring supports pattern separation and whether the CA3 recurrent
+              network looks like an auto-associative memory.
             </p>
             <p>
               Failure at this step is the only kind the earlier pipeline cannot
               cause: a technically perfect reconstruction analyzed without regard
-              to its error profile. Residual splits deflate degree; residual merges
-              inflate it; both do so non-uniformly. The defensible habit is to run
-              analyses at two proofreading versions and report what moved — which
-              is also why the project's phased public releases, with versioned
-              access for the community, are part of the pipeline rather than an
-              afterthought.
+              to its error profile. Residual splits deflate degree and residual
+              merges inflate it, and neither does so uniformly. The defensible habit
+              is to run analyses at two proofreading versions and report what moved.
+              That is also why versioned public access belongs inside the pipeline,
+              not after it.
             </p>
             <p class="step-depth">
               <strong>Depth:</strong>
@@ -482,7 +488,7 @@ content_type: core
         <h3>Do the bottleneck skill</h3>
         <p>
           The <a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading side quest</a>
-          treats step 6 as what it is — an allocation problem under a budget — and
+          treats step 6 as an allocation problem under a budget, and
           ends with an artifact a lab can evaluate.
         </p>
       </div>

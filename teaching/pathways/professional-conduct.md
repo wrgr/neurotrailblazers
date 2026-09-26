@@ -27,12 +27,13 @@ opinion; state their obligation in a situation as an action, not a feeling; choo
 lowest escalation rung that is adequate; write a four-part error report for an invented
 mistake; and start a private map of who handles each rung in their own setting.
 
-The working definition is the US federal one used by the Office of Research Integrity
-([ORI](https://ori.hhs.gov/)): research misconduct is **fabrication, falsification or
-plagiarism** in proposing, performing or reviewing research, or in reporting results.
-It does not include honest error or differences of opinion. Institutions differ, and many
-use broader local policies. Learners outside the US should check their own institution's
-and funder's policy; say this at the start.
+The working definition is the US federal one, as published by the Office of Research
+Integrity ([ORI](https://ori.hhs.gov/definition-research-misconduct)): research
+misconduct is fabrication, falsification or plagiarism in proposing, performing or
+reviewing research, or in reporting research results. It does not include honest error
+or differences of opinion. Institutions differ, and many use broader local policies.
+Learners outside the US should check their own institution's and funder's policy; say
+this at the start.
 
 [Module 19]({{ '/modules/module19/' | relative_url }}) and its [session
 kit]({{ '/teaching/sessions/module19/' | relative_url }}) put learners in the reviewer's
@@ -51,9 +52,9 @@ the names of your ombuds office and research integrity officer so you can give t
 - **0–10 min:** state your reporting status first: "If you tell me about a real incident,
   here is what I am required to do with it." Then take the follow-through from The
   Savvy Researcher: who asked their one question, and what did they learn? Take two
-  answers. Then tell a short story about an error of
-  your own that you reported, and how long you waited before reporting it. Ask: "What
-  made the wait feel reasonable at the time?"
+  answers. Then tell a short story about an error of your own that you reported, and
+  how long you waited before reporting it. Ask: "What made the wait feel reasonable at
+  the time?"
 - **10–20 min:** write three columns on the board: *misconduct (FFP)*, *honest error*,
   *difference of opinion*. Add a fourth, *conduct that is not FFP*, for harassment and
   bullying, which have their own routes. Then draw the four rungs from lab norms, 0 to 3.
@@ -89,7 +90,7 @@ that the norm is unfair; it is on the page for that reason.
 
 ## Assessment and follow-through
 
-Use the four-dimension rubric on the model responses page. Collect sections 1–3.
+Use the four-dimension rubric on the model responses page. Collect sections 1 to 3.
 Section 4 stays with the learner.
 
 **Follow-through:** complete the rung map by finding out, for your ombuds office and one

@@ -7,11 +7,10 @@ track: career-and-community
 content_type: delivery
 ---
 
-# From Projectome to Synapse
-
-**Audience:** high school through graduate / public programs  
+**Audience:** high school through graduate students, and public programs  
 **Time:** 25–40 minutes  
-**Home modules:** 01, 04, 05, 11, 12, 22
+**Home modules:** 01, 04, 05, 11, 12, 22  
+**Materials:** the first five ladder terms below, one per card, shuffled
 
 ## Central question
 
@@ -21,7 +20,8 @@ The answer depends on the scale of the measurement.
 
 ## Build the connectivity ladder
 
-Arrange these from broadest to finest structural description:
+Give each group the first five terms on shuffled cards and ask them to arrange the cards
+from broadest to finest structural description. The answer order is:
 
 1. **Region-to-region connectivity**
 2. **Axonal projectome**
@@ -36,7 +36,8 @@ Then add two maps that answer different questions:
 
 ## What APEX coordinates
 
-APEX focuses on the **primate axonal projectome**: long-range wiring in macaque and human brains across multiple imaging modalities.
+APEX focuses on the **primate axonal projectome**: long-range wiring in macaque and human
+brains, measured with optical microscopy, X-ray imaging and diffusion MRI.
 
 Ask learners:
 
@@ -48,7 +49,10 @@ Ask learners:
 
 ## What IC3 coordinates
 
-IC3 focuses on integrating cellular/synaptic, fluorescence, and barcoded connectivity resources across CONNECTS, including common pipelines and a unified knowledge representation.
+IC3 integrates electron microscopy, fluorescence and barcoded-sequencing connectivity
+resources across CONNECTS, with common pipelines and a shared knowledge base, the CONNECTS
+Knowledge Base. [How we fit BRAIN CONNECTS]({{ '/core/connects-ecosystem/' | relative_url }})
+describes both centers.
 
 Ask learners:
 
@@ -61,11 +65,11 @@ Ask learners:
 
 | Claim | Minimum evidence |
 |---|---|
-| Area X has a long-range pathway to Area Y | region/projectome-scale connectivity |
-| This molecularly defined cell class projects to Area Y | cell identity + projection map |
-| Neuron A makes a synapse onto neuron B | synaptic connectivity |
-| This connection is active during behavior Z | connectivity + activity |
-| This connection is necessary for behavior Z | connectivity + causal perturbation |
+| Area X has a long-range pathway to Area Y | Region- or projectome-scale connectivity |
+| This molecularly defined cell class projects to Area Y | Cell identity plus a projection map |
+| Neuron A makes a synapse onto neuron B | Synaptic connectivity |
+| This connection is active during behavior Z | Connectivity plus activity |
+| This connection is necessary for behavior Z | Connectivity plus causal perturbation |
 
 ## Public communication challenge
 

@@ -38,7 +38,7 @@ concepts:
       - title: Brain Data Across Scales
         url: /technical-training/02-brain-data-across-scales/
       - title: Workflow Overview
-        url: /datasets/workflow
+        url: /datasets/workflow/
     teaching_resources:
       lesson:
         - title: Unit 02 Lesson
@@ -51,7 +51,7 @@ concepts:
           url: /technical-training/slides/02-brain-data-across-scales/
       references:
         - title: Workflow Overview
-          url: /datasets/workflow
+          url: /datasets/workflow/
 
   - slug: em-artifacts-and-qa
     title: EM Artifacts and QA
@@ -91,8 +91,8 @@ concepts:
     resources:
       - title: Volume Reconstruction Infrastructure
         url: /technical-training/04-volume-reconstruction-infrastructure/
-      - title: Frameworks
-        url: /frameworks/
+      - title: Reconstruction Pipeline
+        url: /content-library/infrastructure/reconstruction-pipeline/
     teaching_resources:
       lesson:
         - title: Unit 04 Lesson
@@ -104,8 +104,8 @@ concepts:
         - title: Unit 04 Lecture Plan
           url: /technical-training/slides/04-volume-reconstruction-infrastructure/
       references:
-        - title: Framework Overview
-          url: /frameworks/
+        - title: Provenance and Versioning
+          url: /content-library/infrastructure/provenance-and-versioning/
 
   - slug: ultrastructure-annotation
     title: Ultrastructure Annotation
@@ -253,8 +253,8 @@ concepts:
     resources:
       - title: Atlas Connectomics Reference
         url: /technical-training/atlas-connectomics-reference/
-      - title: Frameworks
-        url: /frameworks/
+      - title: Provenance and Versioning
+        url: /content-library/infrastructure/provenance-and-versioning/
     teaching_resources:
       lesson:
         - title: Atlas Reference Lesson
@@ -266,8 +266,8 @@ concepts:
         - title: Atlas Lecture Plan
           url: /technical-training/slides/atlas-connectomics-reference/
       references:
-        - title: Framework Overview
-          url: /frameworks/
+        - title: Journal Club
+          url: /technical-training/journal-club/
 
   - slug: hidden-curriculum-navigation
     title: Hidden Curriculum Navigation
@@ -278,23 +278,22 @@ concepts:
     summary: Make implicit research expectations explicit for diverse learners and early-career researchers.
     explanation: Surface unspoken lab and field norms so learners can act with confidence and seek help effectively.
     resources:
-      - title: Start Here
-        url: /start-here/
+      - title: The Hidden Curriculum
+        url: /hidden-curriculum/
       - title: Learner Personas
         url: /avatars/
     teaching_resources:
       lesson:
-        - title: Start Here Guide
-          url: /start-here/
+        - title: Lab Norms
+          url: /hidden-curriculum/lab-norms/
       activity:
-        - title: Learner Pathway Reflection
-          url: /start-here/
-      slides:
+        - title: Orientation Workshop Plan
+          url: /teaching/pathways/orientation/
+        - title: Orientation Worksheet
+          url: /teaching/pathways/orientation-activity/
+      references:
         - title: Career and Community Track
           url: /tracks/career-and-community/
-      references:
-        - title: Learner Personas
-          url: /avatars/
 
   - slug: mentoring-and-growth
     title: Mentoring and Professional Growth
@@ -307,20 +306,19 @@ concepts:
     resources:
       - title: Learner Personas
         url: /avatars/
-      - title: Research Incubator Model
+      - title: Program Models (MERIT)
         url: /models/
-      - title: Education Models
-        url: /frameworks/education-models/
+      - title: Professional Pathways Workshops
+        url: /teaching/pathways/
     teaching_resources:
       lesson:
         - title: Mentorship Personas
           url: /avatars/
       activity:
-        - title: Mentorship Planning Exercise
-          url: /start-here/
-      slides:
-        - title: Learning Tracks Hub
-          url: /tracks/
+        - title: Building Your STEM Entourage Workshop Plan
+          url: /teaching/pathways/building-your-entourage/
+        - title: Building Your STEM Entourage Worksheet
+          url: /teaching/pathways/building-your-entourage-activity/
       references:
-        - title: Research Incubator Model
-          url: /models/
+        - title: Facilitator Guide
+          url: /teaching/facilitator-guide/

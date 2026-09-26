@@ -5,27 +5,29 @@ species: "Drosophila melanogaster (male)"
 region: "Ventral nerve cord"
 modality: "FIB-SEM, dense reconstruction"
 portal: "https://neuprint.janelia.org/"
-paper_doi: "10.1101/2023.06.05.543757"
-paper_url: "https://www.biorxiv.org/content/10.1101/2023.06.05.543757"
-access: "Open; neuPrint"
+paper_doi: "10.7554/eLife.97769"
+paper_url: "https://elifesciences.org/reviewed-preprints/97769"
+access: "Open; neuPrint (Google sign-in)"
 status: "Released"
 release_year: 2023
-blurb: "A dense connectome of the male fly ventral nerve cord, and the counterpart to FANC — the pair is the field's best evidence on how much of a connectome is sex-specific rather than species-typical."
-source: "Takemura et al. (2023) preprint 10.1101/2023.06.05.543757, later published in eLife. Neuron and synapse counts are deliberately omitted: the abstract in this project's corpus does not state them, and this catalogue does not carry numbers it cannot cite."
+blurb: "The first densely reconstructed connectome of a fly ventral nerve cord, from a male. With FANC, it lets you compare two nerve cords, though not cleanly by sex alone."
+source: "Takemura et al., eLife reviewed preprint 10.7554/eLife.97769 (2024); first posted as bioRxiv 10.1101/2023.06.05.543757 (2023). Neuron and synapse counts are omitted: neither abstract states them, and this catalog does not carry numbers it has not checked against a source."
 ---
 
-MANC extends the hemibrain team's dense-reconstruction approach from the central brain
-to the ventral nerve cord of a male fly, mapping circuits all the way to motor neurons.
+MANC extends the hemibrain team's dense-reconstruction approach from the central brain to the
+ventral nerve cord of a male fly, mapping circuits all the way to the motor neurons. Companion
+papers annotate its cell types and developmental lineages and trace the pathways from
+descending neurons to motor neurons.
 
-**What it is good for.** Comparison. Having both a male and a female VNC reconstruction — MANC
-and FANC — makes it possible to ask which connections differ between individuals, which differ
-between sexes, and which are invariant. Almost no other part of connectomics can separate those
-three yet.
+**What it is good for.** Comparison. With a male VNC (MANC) and a female one (FANC), you can
+start to ask which connections are shared and which differ.
 
-**What it does not support.** Treating either animal as canonical. The comparison is the
-finding; a claim from one of them alone inherits the n = 1 problem that runs through this whole
-catalogue.
+**What it does not support.** A clean answer on sex differences. The two animals differ in
+sex, but also as individuals, and the volumes were made with different imaging methods
+(FIB-SEM versus serial-section TEM) and different reconstruction pipelines. A difference
+between them could come from any of the three. And a claim from either animal alone inherits
+the n = 1 problem that runs through this whole catalog.
 
 **A note on numbers.** This record deliberately carries no neuron or synapse count. The
-published figures exist, but not in a source this catalogue has verified, and every other record
+published figures exist, but not in a source this catalog has verified, and every other record
 here states where its numbers came from.

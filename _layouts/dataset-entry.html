@@ -30,7 +30,7 @@ layout: default
     </div>
 
     <div class="cta-buttons">
-      {% if page.portal %}<a href="{{ page.portal }}" class="btn btn-primary"{% unless page.portal contains '/' and page.portal.first == '/' %} target="_blank" rel="noopener"{% endunless %}>Open the data portal</a>{% endif %}
+      {% if page.portal %}{% assign portal_head = page.portal | slice: 0, 1 %}{% if portal_head == '/' %}<a href="{{ page.portal | relative_url }}" class="btn btn-primary">Open the data portal</a>{% else %}<a href="{{ page.portal }}" class="btn btn-primary" target="_blank" rel="noopener">Open the data portal</a>{% endif %}{% endif %}
       {% if page.paper_url %}<a href="{{ page.paper_url }}" class="btn btn-secondary" target="_blank" rel="noopener">Read the paper</a>{% endif %}
       {% if page.press_url %}<a href="{{ page.press_url }}" class="btn btn-secondary" target="_blank" rel="noopener">Press coverage</a>{% endif %}
     </div>

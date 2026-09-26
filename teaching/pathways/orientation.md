@@ -43,7 +43,7 @@ is asked to describe their own supervisor aloud.
 - **10–20 min:** stated versus enforced. Read three items from *What a PI expects but
   will not say* aloud: "have a look at this" carries a deliverable, silence is not
   consent, and bad news arrives early. Ask which ones learners have already met.
-  Point out that none of the three is written in any lab handbook.
+  Point out that labs rarely write any of the three down.
 - **20–45 min:** pairs complete worksheet sections 1 and 2 on the invented case. At
   minute 35, check that pairs are separating what Dana was *told* from what Dana
   *inferred*. Most first drafts merge them.
@@ -67,7 +67,7 @@ ask, not to memorize.
 Expect one learner to say their supervisor is unreachable or hostile. Do not solve
 that in the room. Acknowledge that the check-in assumes a functioning relationship and
 point to the [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) page and
-to a named person in your program they can talk to afterwards.
+to a named person in your program they can talk to afterward.
 
 Learners from families without academic experience may be doing this for the first
 time. Learners arriving from industry may over-trust their existing workplace norms.

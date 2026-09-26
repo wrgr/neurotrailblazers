@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Connectomics Reference Atlas"
-description: "A working reference for the Technical Course: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
+description: "A working reference for the Technical Course: landmark datasets with specifications and access routes, software by workflow stage, benchmarks, and the curation schema for adding entries."
 permalink: /technical-training/atlas-connectomics-reference/
 image: /assets/images/units/atlas-connectomics-reference.svg
 image_alt: "Stylized vector art: a reference table with one row highlighted and a bookmark tab."
@@ -28,7 +28,7 @@ This is a **lookup table, not a lesson.** Come here when you need to answer one 
 
 Specifications below are as published and are approximate where releases have been
 revised. **Always confirm current figures and access terms against the primary source
-before citing them** — dataset sizes in particular change as proofreading continues
+before citing them.** Dataset sizes in particular change as proofreading continues
 (Unit 04 §2).
 
 ---
@@ -39,23 +39,23 @@ before citing them** — dataset sizes in particular change as proofreading cont
 
 | Dataset | Scale | Modality / resolution | What it is good for | Access |
 |---|---|---|---|---|
-| ***C. elegans*** (White et al. 1986; Cook et al. 2019; Witvliet et al. 2021) | 302 neurons; whole animal; a developmental series across maturation | ssTEM | The complete-nervous-system reference case. Witvliet's series is the best available data on how connectivity changes with development | WormWiring, WormAtlas |
-| **Larval *Drosophila* brain** (Winding et al. 2023) | ~3,000 neurons; ~550,000 synapses; whole brain | ssTEM | A whole brain small enough for exhaustive graph analysis; bilateral matching studies | CATMAID instances; published supplements |
+| ***C. elegans*** (White et al. 1986; Cook et al. 2019; Witvliet et al. 2021) | 302 neurons (hermaphrodite; 385 in the male); whole animal; Witvliet: eight brains from birth to adulthood | ssTEM | The complete-nervous-system reference case. Witvliet's series is the best available data on how connectivity changes with development | WormWiring, WormAtlas |
+| **Larval *Drosophila* brain** (Winding et al. 2023) | 3,016 neurons; about 548,000 synapses; whole brain | ssTEM, 3.8 × 3.8 × 50 nm | A whole brain small enough for exhaustive graph analysis; bilateral matching studies | CATMAID instances; published supplements |
 | ***Drosophila* hemibrain** (Scheffer et al. 2020) | ~25,000 neurons; ~20 million synapses; central brain | FIB-SEM, near-isotropic 8 nm | Cell-type census; the cleanest large connectome for analysis teaching, because isotropy makes tracing quality high | neuPrint |
-| **FAFB / FlyWire** (Zheng et al. 2018; Dorkenwald et al. 2024) | Whole adult brain; ~139,000 neurons; ~54.5 million synapses | ssTEM, 4 × 4 × 40 nm | The first whole-brain connectome of a behaviorally complex animal; community-proofread | FlyWire (registration required); CAVE |
-| ***Drosophila* male adult nerve cord (MANC)** | ~23,000 neurons | FIB-SEM | Motor circuits; connecting brain to periphery | neuPrint |
+| **FAFB / FlyWire** (Zheng et al. 2018; Dorkenwald et al. 2024) | Whole adult brain; 139,255 neurons; about 54.5 million synapses | ssTEM, 4 × 4 × 40 nm | The first whole-brain connectome of an adult fly; community-proofread (an estimated 33 person-years) | FlyWire (registration required); CAVE |
+| ***Drosophila* male adult nerve cord (MANC)** (Takemura et al. 2024) | About 23,000 neurons (Janelia's MANC page) | FIB-SEM | Motor circuits; connecting brain to periphery | neuPrint |
 
 ### Vertebrate
 
 | Dataset | Scale | Modality / resolution | What it is good for | Access |
 |---|---|---|---|---|
-| **Mouse retina (e2198 and relatives)** (Briggman, Helmstaedter, Denk) | ~10⁵–10⁶ µm³ | SBEM | Structure-function in a well-characterized circuit; direction selectivity | Published; some via community portals |
+| **Mouse retina** (Briggman et al. 2011; Helmstaedter et al. 2013) | Helmstaedter 2013: 950 neurons densely reconstructed in the inner plexiform layer | SBEM; Briggman 2011 adds two-photon calcium imaging | Structure-function in a well-characterized circuit; direction selectivity | Helmstaedter 2013 on BossDB; Briggman 2011 is not listed there, so see the paper |
 | **Kasthuri saturated reconstruction** (Kasthuri et al. 2015) | ~1,500 µm³ mouse neocortex, densely reconstructed | ssSEM (ATUM) | The reference for what *dense, saturated* reconstruction means and costs | Open Connectome / BossDB |
-| **Hippocampal CA1 resource** (Harris et al. 2015) | Dense neuropil volume | ssTEM | Spine and synapse ultrastructure; a standard teaching set for Units 05–06 | Published resource |
-| **MICrONS** (Allen Institute, Baylor, Princeton; 2025 release) | ~1 mm³ mouse visual cortex; ~200,000 cells; ~500 million synapses | ssTEM, 4 × 4 × 40 nm, **co-registered with in-vivo two-photon calcium imaging** | The reference functional-connectomics dataset. The co-registration is what makes it unique | CAVE / `caveclient`; MicronsBinder notebooks |
-| **H01 human cortex** (Shapson-Coe et al. 2024) | ~1 mm³ human temporal cortex; ~57,000 cells; ~150 million synapses; ~1.4 PB | ssTEM, ~4 × 4 × 30 nm | Human tissue at synapse resolution; species comparison | Google/Lichtman lab public release; Neuroglancer |
-| **Larval zebrafish whole brain** (Hildebrand et al. 2017) | Whole brain, larval | ssEM | Whole-vertebrate-brain scale in a tractable organism | Published resource |
-| **MouseConnects / HI-MC** (NIH BRAIN CONNECTS) | Scaling toward whole mouse brain | Volume EM | The current flagship scaling effort; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | Program resources |
+| **Hippocampal CA1 resource** (Harris et al. 2015) | Three densely reconstructed volumes of adult rat CA1 neuropil, about 10, 43 and 178 µm³ | ssTEM, ~2 nm pixels, 50–60 nm sections | Spine and synapse ultrastructure; a standard teaching set for Units 05–06 | Open Connectome Project (per the paper) |
+| **MICrONS** (MICrONS Consortium 2025: Allen Institute, Baylor, Princeton) | About 1 mm³ of mouse visual cortex; more than 200,000 cells; about 524 million synapses; calcium imaging of about 75,000 neurons | ssTEM at about 4 × 4 × 40 nm, co-registered with in vivo two-photon calcium imaging | The reference functional-connectomics dataset. Its value is the co-registration: EM structure and calcium activity from the same neurons | CAVE / `caveclient`; MicronsBinder notebooks |
+| **H01 human cortex** (Shapson-Coe et al. 2024) | About 1 mm³ of human temporal cortex; 57,180 cells (16,087 neurons); about 150 million synapses; 1.4 PB aligned (1.8 PB raw) | Multibeam SEM of 5,019 sections, 4 × 4 nm pixels, ~33 nm sections | Human tissue at synapse resolution; species comparison | Google/Lichtman lab public release; Neuroglancer |
+| **Larval zebrafish whole brain** (Hildebrand et al. 2017) | Whole brain at 5.5 days post-fertilization; all myelinated axons traced, not a dense synaptic reconstruction | ssEM, imaged at several resolutions | Whole-vertebrate-brain scale in a tractable organism | BossDB |
+| **MouseConnects / HI-MC** (NIH BRAIN CONNECTS) | Target: 10 mm³ of mouse hippocampal formation (in progress, not released) | Multibeam SEM | About ten times the volume of MICrONS or H01 (our arithmetic), so the test of whether current pipelines scale; see the [case study]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) | Not yet released |
 
 ### Choosing among them
 
@@ -73,7 +73,7 @@ before citing them** — dataset sizes in particular change as proofreading cont
 > connectomics questions can be answered by re-analysis of existing public data. The
 > cost difference is not marginal: acquiring a new mm-scale volume is a multi-year,
 > multi-million-dollar program, while re-analyzing one is a compute bill and your
-> time. Work the comparison out for your own question with Unit 03's cost arithmetic
+> time. Work the comparison out for your own question with Unit 01's cost arithmetic (§2)
 > before assuming you need new data. See Unit 02's common errors.
 
 ---
@@ -115,8 +115,8 @@ before citing them** — dataset sizes in particular change as proofreading cont
 **Caution when reading benchmark results.** Scores on small, well-prepared benchmark
 volumes systematically overstate performance on production data, which contains
 artifacts (Unit 03), rare morphologies, and volume boundaries that benchmarks exclude.
-When evaluating a method for your project, the question is not its leaderboard
-position but its error rate *on your tissue* — which means running it on a
+When evaluating a method for your project, what matters is its error rate *on your tissue*, not its
+leaderboard position. The only way to measure that is to run it on a
 representative sub-volume of your own data (Unit 03 §3, the pilot reconstruction rule).
 
 Report metrics as described in Unit 08 §3: at minimum VI decomposed into split and
@@ -147,7 +147,7 @@ filling. An atlas of tools without limits is advertising.
 
 1. Add only resources with a clear technical contribution or benchmark value.
 2. Mark superseded methods as historical rather than deleting them, when they remain
-   pedagogically useful — the history of a method often explains its assumptions.
+   useful for teaching. The history of a method often explains its assumptions.
 3. Prefer resources with reproducible artifacts: data, code, or an explicit protocol.
 4. Re-review on schedule; retire stale links.
 5. Every entry links to at least one unit, so the atlas stays connected to teaching
@@ -164,12 +164,12 @@ filling. An atlas of tools without limits is advertising.
 
 ## Visual context set
 
-This page is a lookup table and this panel is deck context, not reference material — nothing here should be cited. Use it instead to rehearse the habit §1 asks for: confirm every specification against the primary source, because dataset sizes and cell counts change as proofreading continues.
+This page is a lookup table. This panel is deck context, not reference material, so cite nothing from it. Use it instead to rehearse the habit §1 asks for: confirm every specification against the primary source, because dataset sizes and cell counts change as proofreading continues.
 
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S03-02.png' | relative_url }}" alt="Atlas references opener visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S03-02:</strong> The opening of the source deck’s reference stream. Treat any figure it carries as provisional — volume sizes, cell counts, and synapse counts in this field are release-dependent, so check them against the primary source before citing (Unit 04 §2).</p>
+    <p class="card-description"><strong>Module14 L3 S03-02:</strong> The opening of the source deck’s reference stream. Treat any figure it carries as provisional. Volume sizes, cell counts, and synapse counts in this field are release-dependent, so check them against the primary source before citing (Unit 04 §2).</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S10-01.png' | relative_url }}" alt="Atlas mid-reference stream visual" style="width:100%; border-radius:8px;">
@@ -177,11 +177,11 @@ This page is a lookup table and this panel is deck context, not reference materi
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S19-01.png' | relative_url }}" alt="Atlas closing references visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module14 L3 S19:</strong> Closing references. Check them against the choosing table in §1 before proposing new acquisition — a large share of good connectomics questions can be answered by re-analysis of existing public data, at a small fraction of the cost.</p>
+    <p class="card-description"><strong>Module14 L3 S19:</strong> Closing references. Check them against the choosing table in §1 before proposing new acquisition. A large share of good connectomics questions can be answered by re-analysis of existing public data, at a small fraction of the cost.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S44:</strong> Developmental motif comparison, cross-referenced here from Unit 09. Use it as the pointer into the <em>C. elegans</em> developmental series in §1 — the dataset to reach for when the question is how connectivity changes with maturation rather than what it is in one adult.</p>
+    <p class="card-description"><strong>Techtalk S44:</strong> Developmental motif comparison, cross-referenced here from Unit 09. Use it as the pointer into the <em>C. elegans</em> developmental series in §1: the dataset to reach for when the question is how connectivity changes with maturation rather than what it is in one adult.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S13-01.png' | relative_url }}" alt="Multi-panel research figure pairing calcium-imaging traces and orientation tuning with an EM volume, reconstructed neurons and a presynaptic-by-postsynaptic connectivity matrix" style="width:100%; border-radius:8px;">
@@ -206,8 +206,8 @@ This page is a lookup table and this panel is deck context, not reference materi
 Add one resource to the atlas. Produce:
 
 1. All required metadata fields, complete.
-2. One sentence on the technical contribution — what can you now do that you could not?
-3. One sentence on the limitation or failure context — when does this *not* work?
+2. One sentence on the technical contribution: what can you now do that you could not?
+3. One sentence on the limitation or failure context: when does this *not* work?
 4. The unit or units it supports, with a sentence on how.
 
 **Rubric.** *Proficient:* all fields present and accurate. *Strong:* the limitation
@@ -240,7 +240,7 @@ years and are still cited that way.
 - Briggman KL, Helmstaedter M, Denk W (2011). Wiring specificity in the direction-selectivity circuit of the retina. *Nature* 471:183-188. [10.1038/nature09818](https://doi.org/10.1038/nature09818)
 - Helmstaedter M, Briggman KL, Turaga SC, et al. (2013). Connectomic reconstruction of the inner plexiform layer in the mouse retina. *Nature* 500:168-174. [10.1038/nature12346](https://doi.org/10.1038/nature12346)
 - Kasthuri N, Hayworth KJ, Berger DR, et al. (2015). Saturated reconstruction of a volume of neocortex. *Cell* 162:648-661. [10.1016/j.cell.2015.06.054](https://doi.org/10.1016/j.cell.2015.06.054)
-- Harris KM, Spacek J, Bell ME, et al. (2015). A resource from 3D electron microscopy of hippocampal neuropil from adult rat stratum radiatum. *Scientific Data* 2:150046. [10.1038/sdata.2015.46](https://doi.org/10.1038/sdata.2015.46)
+- Harris KM, Spacek J, Bell ME, et al. (2015). A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development. *Scientific Data* 2:150046. [10.1038/sdata.2015.46](https://doi.org/10.1038/sdata.2015.46)
 - Hildebrand DGC, Cicconet M, Torres RM, et al. (2017). Whole-brain serial-section electron microscopy in larval zebrafish. *Nature* 545:345-349. [10.1038/nature22356](https://doi.org/10.1038/nature22356)
 - The MICrONS Consortium (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435-447. [10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
 - Shapson-Coe A, Januszewski M, Berger DR, et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
@@ -253,8 +253,8 @@ is the citable source for a version.*
 ## Related
 
 - [Technical Course]({{ '/technical-training/' | relative_url }})
-- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) — the reading list
-- [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}) — shared vocabulary
-- [Dataset access guide]({{ '/datasets/access/' | relative_url }}) — clients and starter notebooks
-- [Case studies]({{ '/content-library/' | relative_url }}) — extended treatments of MICrONS, FlyWire, H01, *C. elegans*, and MouseConnects
+- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}): the reading list
+- [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}): shared vocabulary
+- [Dataset access guide]({{ '/datasets/access/' | relative_url }}): clients and starter notebooks
+- [Case studies]({{ '/content-library/' | relative_url }}): extended treatments of MICrONS, FlyWire, H01, *C. elegans*, and MouseConnects
 - Lecture plan: [Atlas Connectomics Reference lecture plan]({{ '/technical-training/slides/atlas-connectomics-reference/' | relative_url }})

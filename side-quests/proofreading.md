@@ -221,9 +221,9 @@ stronger work than a go call with none.
 ## What this side quest does not cover
 
 - **Automated proofreading.** Rule-based and learned systems now detect and correct a
-  substantial share of errors before a human sees them; NEURD (Dorkenwald et al.,
-  *Nature Methods*, 2024, [10.1038/s41592-024-02515-z](https://doi.org/10.1038/s41592-024-02515-z))
-  is the reference implementation. This material teaches the human loop, which is what you
+  substantial share of errors before a human sees them; NEURD (Celii et al.,
+  *Nature*, 2025, [10.1038/s41586-025-08660-5](https://doi.org/10.1038/s41586-025-08660-5))
+  is one published example; it automates the correction of merge errors. This material teaches the human loop, which is what you
   are still doing when the automation hands you the residue — but the allocation problem
   changes shape when the easy errors are already gone, and none of the reference entries
   here reflect that yet. Read the paper alongside stage 3.

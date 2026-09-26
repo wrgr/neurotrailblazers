@@ -380,7 +380,7 @@ are a usable review queue and an overconfident annotator's errors are invisible.
 
 ## Common detours
 
-- **Reading all six library entries end-to-end before judging anything.** The entries
+- **Reading all eight library entries end-to-end before judging anything.** The entries
   are references, not a novel. The over-reading failure mode is
   [named in the hidden curriculum]({{ '/hidden-curriculum/meta-learning/' | relative_url }})
   — reading is private and cannot be judged, which is precisely its appeal and its

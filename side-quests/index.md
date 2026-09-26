@@ -48,7 +48,7 @@ first ends exactly where the second's hard prerequisite begins.
     <span class="arch-chip" aria-hidden="true">&#128295;</span>
     <h3 class="arch-title"><a href="{{ '/side-quests/proofreading/' | relative_url }}">Proofreading</a></h3>
     <p class="arch-meta"><span class="pill pill-status is-available">Available</span><span class="pill pill-plain">20&ndash;30 hours</span></p>
-    <p class="arch-body">Correcting automated reconstruction errors, treated properly: as an allocation problem under a fixed budget rather than as cleanup that ends when the data looks right. Around 17,000 words of reference material, a full technical unit, five worked scenarios, and a portfolio artifact a lab can read.</p>
+    <p class="arch-body">Correcting automated reconstruction errors, treated properly: as an allocation problem under a fixed budget rather than as cleanup that ends when the data looks right. About 14,000 words of reference material, a full technical unit, five worked scenarios, and a portfolio artifact a lab can read.</p>
     <div class="arch-actions">
       <a href="{{ '/side-quests/proofreading/' | relative_url }}" class="btn btn-primary">Open the side quest</a>
     </div>

@@ -41,7 +41,7 @@
 "04":
   resources:
     - name: "Neuroglancer"
-      note: "The de facto standard open-source WebGL viewer for large-scale volumetric/segmented EM data, used across virtually every major connectomics dataset."
+      note: "The open-source WebGL viewer for large volumetric and segmented EM data. FlyWire, H01, MICrONS and BossDB all open their data in it."
       url: "https://github.com/google/neuroglancer"
     - name: "CAVE — Connectome Annotation Versioning Engine"
       note: "The annotation/proofreading/versioning backend behind MICrONS, FlyWire, and other large volumes."
@@ -49,7 +49,7 @@
       url: "https://www.nature.com/articles/s41592-024-02426-z"
     - name: "BossDB — Brain Observatory Storage Service and Database"
       note: "Cloud-native storage/serving system built specifically for petascale volumetric EM/connectomics data."
-      citation: "Hider et al. (2022), \"The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery,\" Frontiers in Neuroinformatics"
+      citation: "Hider et al. (2022), \"The Brain Observatory Storage Service and Database (BossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery,\" Frontiers in Neuroinformatics 16:828787"
       url: "https://bossdb.org"
     - name: "webKnossos"
       note: "Open-source tool for large-scale 3D EM annotation and reconstruction (Max Planck / scalable minds)."
@@ -62,13 +62,13 @@
       note: "The standard reference atlas/textbook for identifying neuronal organelles and ultrastructure in EM (3rd ed., Oxford University Press, 1991)."
       url: ""
     - name: "SynapseWeb — Atlas of Ultrastructural Neurocytology"
-      note: "Free, well-known online visual EM atlas from the Kristen Harris lab (UT Austin), built as a practical guide to interpreting EM findings."
+      note: "Free online EM atlas from the Kristen Harris lab (UT Austin), built as a practical guide to interpreting EM images."
       url: "https://synapseweb.clm.utexas.edu/atlas"
 
 "06":
   resources:
     - name: "Harris & Weinberg (2012)"
-      note: "Canonical, widely-cited review on identifying synaptic ultrastructure — spines, active zones, PSDs — in EM."
+      note: "Standard review on identifying synaptic ultrastructure in EM: spines, active zones, PSDs."
       citation: "\"Ultrastructure of Synapses in the Mammalian Brain,\" Cold Spring Harbor Perspectives in Biology 4(5):a005587"
       url: "https://pubmed.ncbi.nlm.nih.gov/22357909/"
     - name: "SynapseWeb"
@@ -95,7 +95,7 @@
 "08":
   resources:
     - name: "FlyWire / Codex"
-      note: "Leading real-world example of AI-assisted segmentation plus community/crowd-sourced proofreading of a whole-brain EM connectome (Drosophila)."
+      note: "The worked example of AI-assisted segmentation plus community proofreading of a whole-brain EM connectome (Drosophila)."
       citation: "Dorkenwald et al. (2022), \"FlyWire: online community for whole-brain connectomics,\" Nature Methods 19:119–128"
       url: "https://codex.flywire.ai/"
     - name: "Dorkenwald et al. (2024)"
@@ -111,14 +111,14 @@
   resources:
     - name: "DotMotif"
       note: "Purpose-built open-source tool for motif and subgraph-isomorphism search in connectome graphs."
-      citation: "Matelsky et al. (2021), \"DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries,\" Scientific Reports 11:12525"
+      citation: "Matelsky et al. (2021), \"DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries,\" Scientific Reports 11:13045"
       url: "https://github.com/aplbrain/dotmotif"
     - name: "natverse"
-      note: "Widely-used R toolbox for connectome/neuroanatomy graph analysis, heavily used in Drosophila connectomics."
+      note: "An R toolbox for neuroanatomy and connectome analysis, much used in Drosophila connectomics."
       citation: "Bates et al. (2020), \"The natverse, a versatile toolbox for combining and analysing neuroanatomical data,\" eLife 9:e53350"
       url: "https://natverse.org"
     - name: "Lappalainen et al. (2024)"
-      note: "High-profile, current example of connectome-constrained modeling / NeuroAI: a bio-inspired network built from EM connectivity data to predict neural activity."
+      note: "An example of connectome-constrained modeling: a network built from EM connectivity that predicts neural activity, compared against recordings from earlier studies."
       citation: "\"Connectome-constrained networks predict neural activity across the fly visual system,\" Nature 634:1132–1140"
       url: "https://www.nature.com/articles/s41586-024-07939-3"
     - name: "neuPrint"

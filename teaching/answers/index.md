@@ -33,10 +33,10 @@ uses, in the week each first appears, then the rest in module-number order.
 1. **Used by the syllabus maps:** 02, 08, 20, 19, 21, 17, 22, 25.
 2. **Remaining, by number:** 03, 04, 05, 06, 09, 10, 11, 12, 13, 14, 15, 16, 23, 24.
 
-Several kits in the second group, including 03–06 and 09–11, depend on sample files or
-patch sets. Where the site publishes a kit folder for the module, the key works from
-those files, as the Module 07 and 18 keys do. Where it does not, the key gives the
-reasoning for each step plus a clearly labeled invented example.
+Where the site publishes a synthetic kit folder under `assets/kits/` (Modules 03, 06, 09,
+10, 11, 12, 13, 14, 16 and 19 in these lists), the key will work from those files, as the
+Module 07 and 18 keys do. Modules 04 and 05 use a patch set the instructor builds, so
+their keys will give the reasoning for each step plus a clearly labeled invented example.
 
 ## Use policy
 
@@ -47,8 +47,8 @@ reasoning for each step plus a clearly labeled invented example.
   variant templates for that purpose.
 - **Examples, not the only answer.** Where a worksheet asks for a learner's own question
   or data, the key shows one invented learner's work at the kit's Strong level.
-- **Invented values are labeled.** Where a kit depends on files the site does not
-  publish, every number the key adds is marked as invented.
+- **Invented values are labeled.** Where a kit works from an instructor-built patch set
+  or a learner's own question, every number the key adds is marked as invented.
 - **Local rubrics.** Each key uses the kit's own Minimum and Strong tiers. These are
   local teaching rubrics, not validated assessment or calibration instruments, and
   should not be reported as such.

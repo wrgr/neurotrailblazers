@@ -15,7 +15,7 @@ use_cases:
   - Quality-control practice
 recommended_modules: []
 related_datasets: []
-last_reviewed: 2026-09-07
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
@@ -30,17 +30,18 @@ content_type: core
   </div>
 
   <section class="section">
-    <p>Find browser interactives, specialist software, and help.</p>
     <p><strong>The interactives on this site</strong> run in the browser, here, with no account
-    and no install. They are for exploring the literature and practising judgement, not for
-    analysing your own data.</p>
+    and no install. They are for exploring the literature and practicing judgment, not for
+    analyzing your own data.</p>
     <p><strong>The software you will actually run</strong> &mdash; Neuroglancer, CAVE and
     <code>caveclient</code>, CloudVolume, neuPrint, CATMAID, webKnossos, <code>navis</code>,
     <code>graspologic</code>, DotMotif, BossDB &mdash; is third-party. It is cataloged by
     workflow stage in the
     <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">connectomics atlas</a>,
     with what each one does and where it fits; credentials, clients and starter notebooks are in
-    the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>. If you are
+    the <a href="{{ '/datasets/access/' | relative_url }}">dataset access guide</a>, and the
+    <a href="{{ '/datasets/getting-started/' | relative_url }}">getting-started ladder</a> says which one your
+    question needs. If you are
     working out <em>which</em> tool you need rather than how to drive one you have chosen, the
     atlas table is the faster route: it is organized by the stage of the pipeline you are
     standing in.</p>
@@ -53,16 +54,16 @@ content_type: core
       <li><a href="{{ '/technical-training/journal-club/graph/' | relative_url }}">Citation graph explorer</a> &mdash; the 2,000-paper corpus as a citation network, filterable by dimension, era and tier.</li>
       <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; the same corpus as cards, each with an OCAR summary and discussion prompts.</li>
       <li><a href="{{ '/concepts/' | relative_url }}">Concept explorer</a> &mdash; concepts filtered by track and stage, each linked to where it is taught.</li>
-      <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualisations of the literature and the methods landscape.</li>
+      <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualizations of the literature and of the methods in use.</li>
       <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, with definitions, common confusions, and typical values where applicable.</li>
-      <li><a href="{{ '/modules/' | relative_url }}">Module practice labs</a> &mdash; the retrieval-practice check at the foot of each module page.</li>
+      <li><a href="{{ '/modules/' | relative_url }}">Module interactive labs</a> &mdash; a checkpoint quiz and short decision tasks near the top of each of the 25 module pages.</li>
       <li><a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab quiz</a> &mdash; for younger readers and classrooms.</li>
     </ul>
   </section>
 
   <section class="section">
     <h2 class="section-title left">Practice</h2>
-    <p>Scaffolded exercises rather than software: you bring judgement, the page supplies the
+    <p>Scaffolded exercises rather than software: you bring judgment, the page supplies the
     cases and the criteria.</p>
     <div class="cards-grid">
       {% assign sorted_pages = site.pages | sort: "title" %}

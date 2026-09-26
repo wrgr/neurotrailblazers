@@ -41,9 +41,9 @@ result in section 4, but nobody is asked to read unpublished work aloud.
 
 ## Timed plan and facilitator cues
 
-- **0–8 min:** follow-through from workshop 4: ask who sent a first message and what
-  came back. Then read your own sentence in two versions, one that kept the claim and one
-  that changed it. Ask: "Which word moved the claim?" Collect guesses on the board.
+- **0–8 min:** follow-through from Building Your STEM Entourage: ask who sent a first
+  message and what came back. Take two answers. Then read your own sentence in two
+  versions, one that kept the claim and one that changed it. Ask: "Which word moved the claim?" Collect guesses on the board.
 - **8–18 min:** the invariant set. Write on the board what Module 22 says must not
   change: what was measured, on what data, at what version, and what it does not
   establish. Add the bins: a Bin A count cannot carry a Bin C sentence in any register.

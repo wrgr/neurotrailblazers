@@ -147,11 +147,11 @@ None of these will be stated. All of them are enforced.
 ### The conversation to have at week four
 
 > "I want to check I have your expectations right. Here is what I think you expect from
-> me: [three to five items]. What is missing, and what have I got wrong?"
+> me: [three to five items]. What is missing, and what did I get wrong?"
 
 Write the list first, then read it out. The gap between what your supervisor believes
 they conveyed and what you wrote down is, per the
-[education models]({{ '/models/' | relative_url }}) page, the most useful
+[Program Models]({{ '/models/' | relative_url }}) page, the most useful
 diagnostic available in the orientation stage — and it is a diagnostic that only exists
 if someone writes the list. Usually that has to be you.
 
@@ -169,8 +169,8 @@ closing ritual unless the chair has spent effort making it something else. If yo
 to ask anyway, make it cheap: *"One quick one — …"* signals you know the ritual and are
 briefly suspending it.
 
-**"Any questions?" from a supervisor in a one-to-one means it literally.** Always arrive
-with two. The absence of questions in a one-to-one reads as disengagement, which is the
+**"Any questions?" from a supervisor in a one-on-one means it literally.** Always arrive
+with two. The absence of questions in a one-on-one reads as disengagement, which is the
 opposite of the impression the silence is usually intended to create.
 
 **Presenting a bad week.** There is a format, and it is not an apology:
@@ -185,7 +185,7 @@ principle; this is the delivery.
 **When you do not understand a word in a talk.** Write it down and keep listening; look
 it up in the
 [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
-afterwards. But if three people around you look confused, ask, because you are then
+afterward. But if three people around you look confused, ask, because you are then
 doing the room a service. Phrase it as *"can you say what X means in this context?"* —
 the words *in this context* remove any implication that you have never met the term.
 
@@ -225,7 +225,7 @@ tells you:
 
 Some roles are confidential; some are mandatory reporters and will be obliged to start a
 process the moment you give them details. Both are legitimate. But the difference
-determines whether you still have a choice afterwards, and you cannot un-tell someone.
+determines whether you still have a choice afterward, and you cannot un-tell someone.
 Ask first, every time, and ask it as a neutral procedural question, because it is one.
 
 **Write things down as they happen.** Dated notes, factual, no characterization — what
@@ -281,8 +281,10 @@ question:
 
 ### Proofreading contributions specifically
 
-This field has an unusually strong precedent: the FlyWire whole-brain connectome credited
-its **287 proofreaders as co-authors**
+This field has an unusually strong precedent: the FlyWire whole-brain connectome paper
+(Dorkenwald et al. 2024) lists **the FlyWire Consortium as an author**. Its members
+contributed proofreading and annotation, and the full member list is in the paper's
+supplementary note
 ([Module 02]({{ '/modules/module02/' | relative_url }}),
 [FlyWire case study]({{ '/content-library/case-studies/flywire-whole-brain/' | relative_url }})).
 That precedent is real and it is worth citing. It is also not universal — plenty of
@@ -290,7 +292,7 @@ projects acknowledge proofreading rather than authoring it, and sometimes that i
 right answer.
 
 So ask, in advance, in these terms: *what volume or level of proofreading contribution
-earns authorship on this paper, and what earns acknowledgement?* A project that has an
+earns authorship on this paper, and what earns acknowledgment?* A project that has an
 answer will tell you. A project that does not has just been prompted to decide, which is
 itself worth doing before anyone has invested six months.
 
@@ -322,7 +324,7 @@ that assumes an oversight, because most of the time it is one:
 
 If that does not resolve it, you are at rung 2 of the escalation ladder, and you should
 have your dated record of what you did and when. Be clear with yourself about which was
-promised: acknowledgement instead of authorship is sometimes the correct outcome, and
+promised: acknowledgment instead of authorship is sometimes the correct outcome, and
 sometimes a breach of an agreement, and those are different problems.
 
 ### Credit you owe
@@ -358,9 +360,9 @@ comfort at their expense.
 Worked, in this field's terms:
 
 > "The input counts I sent you on the 14th were computed against materialization version
-> 943, but the cell list came from 917, so around 30 of the 200 cells resolved to
+> T43, but the cell list came from T41, so around 30 of the 200 cells resolved to
 > different objects. That affects Figure 3 and the numbers in Table 1. I have re-run
-> everything against 943 and I am checking the ID churn now. I can have corrected
+> everything against T43 and I am checking the ID churn now. I can have corrected
 > numbers by Thursday — do you want the corrected table first, or a note on what
 > changed?"
 
@@ -377,7 +379,7 @@ and norm 2 from
 the version, report the churn — and the fix is a notebook header block, not more care.
 
 This step is why the counter-intuitive thing happens. A person who reports an error fast
-and returns with a protocol that prevents its recurrence is, afterwards, more trusted
+and returns with a protocol that prevents its recurrence is, afterward, more trusted
 than someone who has never visibly made one, because their reliability is now something
 the lab can see the mechanism of.
 
@@ -397,7 +399,7 @@ acted on, that has become a research-integrity question and belongs at rung 3.
 - Send five lines after every meeting where something was decided.
 - Bring a recommendation, not just a problem.
 - Report bad news early. Report mistakes before they are fixed.
-- Have the authorship conversation before you start, and email the summary afterwards.
+- Have the authorship conversation before you start, and email the summary afterward.
 - Build the mentor map now, including one person outside your team.
 - Ask "what are you required to report?" *before* describing anything sensitive.
 
@@ -418,6 +420,6 @@ acted on, that has become a research-integrity question and belongs at rung 3.
   difficult supervisors in depth
 - [Career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) —
   references, applications, and transitions
-- [Education models]({{ '/models/' | relative_url }}) — MERIT stage 2, where
+- [Program Models]({{ '/models/' | relative_url }}) — MERIT stage 2, where
   this material belongs in a mentoring relationship
 - [Learner personas]({{ '/avatars/' | relative_url }})

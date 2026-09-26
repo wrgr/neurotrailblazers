@@ -7,7 +7,7 @@ content_type: delivery
 description: "A 25-minute activity on structural claims, analysis units and study design."
 ---
 
-[Lecture and slides]({{ '/teaching/lectures/connectomics-01-introduction/' | relative_url }}) · [Teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+[Lecture and slides]({{ '/teaching/lectures/connectomics-01-introduction/' | relative_url }}) · [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 **Time:** 25 minutes, then 10 minutes of peer review. Work in pairs. Paper and a
 calculator are sufficient. All numbers below are **invented teaching data**, not

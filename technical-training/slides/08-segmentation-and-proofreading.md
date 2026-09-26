@@ -71,8 +71,8 @@ existing implementation of it. The learner-facing material is the unit page link
     <a class="resource-link" href="{{ '/technical-training/' | append: page.slug | remove: 'slides-' | append: '/' | relative_url }}">Open Unit Page</a>
   </div>
   <p><small>The HTML deck presents directly in a browser. The Markdown source is the one to
-  take if you want to adapt it &mdash; it renders with <a href="https://marp.app/">Marp</a>.
-  For PowerPoint, run <code>./scripts/render_marp.sh --pptx</code>; the exports are not
+  take if you want to adapt it; it renders with <a href="https://marp.app/">Marp</a>.
+  For PowerPoint, run <code>./scripts/render_marp.sh --pptx</code>. The exports are not
   committed because the full set runs to tens of megabytes.</small></p>
   <p><strong>Batch render helper:</strong> <code>./scripts/render_marp.sh</code></p>
 </div>

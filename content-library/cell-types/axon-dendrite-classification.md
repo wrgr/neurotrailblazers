@@ -4,7 +4,7 @@ title: "Axon-Dendrite Classification"
 permalink: /content-library/cell-types/axon-dendrite-classification/
 image: /assets/images/content-library/cell-types/axon-dendrite-classification.svg
 image_alt: "Stylized vector art: three cell silhouettes: branched, star-form, and amoeboid."
-description: "Multi-cue strategy for distinguishing axons from dendrites in EM — morphology, organelles, synaptic role, continuity, and confidence scoring. Full instructor script with worked examples."
+description: "A four-pass procedure for telling axons from dendrites in EM (morphology, organelles, synaptic role, continuity), with a cue-reliability table, confidence tiers and a worked example."
 topics:
   - axon
   - dendrite
@@ -21,16 +21,6 @@ tags:
   - proofreading:process-classification
   - neuroanatomy:ultrastructure
 micro_lesson_id: ml-cell-axon-dendrite
-reference_images:
-  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/axon-dendrite-features.png
-    alt: "Side-by-side comparison of axon and dendrite ultrastructural features"
-    caption: "Key discriminating features: axons have uniform microtubule polarity, neurofilaments, and synaptic vesicles; dendrites have mixed polarity microtubules, ribosomes, and spines."
-  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/classification-decision-tree.png
-    alt: "Decision tree for axon vs dendrite classification using multiple ultrastructural cues"
-    caption: "Multi-cue decision tree: start with diameter and taper, check vesicle presence, confirm with microtubule organization and spine/bouton morphology."
-  - src: /assets/images/content-library/cell-types/axon-dendrite-classification/ambiguous-cases-gallery.png
-    alt: "Gallery of ambiguous processes that are difficult to classify as axon or dendrite"
-    caption: "Ambiguous cases: thin distal dendrites, en passant boutons, and unmyelinated axons that challenge standard classification cues."
 combines_with:
   - neuron-type-identification
   - glia-recognition
@@ -40,30 +30,30 @@ content_type: core
 
 ## Overview
 
-Misclassifying a process as axon when it is actually a dendrite (or vice versa) is one of the most consequential annotation errors in connectomics. It corrupts the directed graph: an axon→dendrite synapse becomes nonsensical if the "dendrite" is actually an axon. Cell-type identification, input/output analysis, and circuit motif detection all depend on correct process classification. This document provides a systematic, multi-cue approach to axon-dendrite discrimination that can be taught to new annotators and used as a calibration reference for experienced teams.
+Calling a dendrite an axon, or the reverse, is one of the most damaging annotation errors in connectomics. It does not add noise to the directed graph. It adds an edge pointing the wrong way. Cell-type identification, input/output analysis and motif counts all inherit the error. This page sets out a multi-cue procedure for telling axons from dendrites in EM. New annotators can learn from it, and experienced teams can use it to calibrate against each other. It is the reference companion to [Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}), which has the full cue tables and the exceptions.
 
 ---
 
 ## Instructor script: the classification challenge
 
-### Why is this hard?
+### Why textbook contrasts fail in real EM
 
-In textbook diagrams, axons and dendrites look obviously different — axons are thin and smooth, dendrites are thick and spiny. In real EM data, the distinction is often far less clear:
+In textbook diagrams, axons are thin and smooth and dendrites are thick and spiny. In real EM data the two overlap:
 
-- **Thin dendrites** in distal arbors can be <200 nm diameter, rivaling the caliber of unmyelinated axons
-- **En passant boutons** (axonal swellings with vesicles) can resemble dendritic spines at certain angles
-- **Truncated processes** at volume boundaries lack the full morphological context needed for confident classification
-- **Glial processes** can be confused with both axons and dendrites (see glia-recognition.md)
-- **Developing or immature tissue** has less distinct morphological signatures
+- **Thin distal dendrites** can be a few hundred nanometers across, the same range as unmyelinated axons (80–300 nm in cortical neuropil; Unit 06 §1).
+- **En passant boutons** (axonal swellings with vesicles) can look like spine heads in a single section.
+- **Truncated processes** at the volume edge lack the context you need for a confident call.
+- **Glial processes** can be mistaken for either (see [Glia recognition]({{ '/content-library/cell-types/glia-recognition/' | relative_url }})).
+- **Developing tissue** has weaker morphological signatures.
 
-The key principle: **no single cue is reliable alone; classification requires convergent evidence from multiple independent features.**
+The working rule: **no single cue is reliable alone. A confident call needs agreement from independent kinds of evidence.**
 
 ---
 
 {% include figure.html
    src="/assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg"
-   alt="Human cortical neuropil at 8 nm shown twice: raw greyscale on the left, and on the right the same field coloured by the six-class subcompartment model into axon, dendrite and astrocyte."
-   caption="Work the protocol on this before reading the answer. Left is raw human cortex; right is the same pixels coloured by H01&#39;s own six-class subcompartment model. The large green profile is a dendrite &mdash; note the mitochondria and the calibre. Blue profiles are axons, most far smaller. Orange is astrocyte, threading between everything. The point of the exercise is how many blue and green profiles are genuinely hard to separate by eye at this scale."
+   alt="Human cortical neuropil at 8 nm per pixel shown twice: raw grayscale on the left, and on the right the same field colored by H01's subcompartment model into axon, dendrite and astrocyte."
+   caption="Work the protocol on this before reading the answer. Left is raw human cortex. Right is the same pixels colored by H01&#39;s own six-class subcompartment model; three of its classes occur in this field. The large green profile is a dendrite: note the mitochondrion and the caliber, roughly 2&ndash;3 &micro;m across. Blue profiles are axons, most far smaller. Orange is astrocyte, threading between everything. The four myelinated axons are left uncolored because the overlay does not draw the model&#39;s myelin classes. The labels are a model&#39;s output, not proofread ground truth. The point of the exercise is how many blue and green profiles are hard to separate by eye at this scale."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## The four-pass classification protocol
@@ -74,14 +64,13 @@ Evaluate the process shape and branching pattern:
 
 | Feature | Axon-like | Dendrite-like |
 |---------|-----------|---------------|
-| **Caliber** | Thin, relatively uniform (0.1-1.0 μm) | Thicker proximally (5-10 μm), tapering distally |
-| **Branching** | Frequent, often at acute angles | Fewer branches, often at wider angles |
+| **Caliber** | Thin: 80–300 nm typical for unmyelinated axons in cortical neuropil | Shafts 0.5–3 µm, thickest near the soma |
+| **Branching** | Collaterals often leave near-perpendicular, with little caliber change at the branch | Daughter branches are thinner than the parent |
 | **Spines** | Absent (except rare axonal filopodia) | Present on most excitatory dendrites |
-| **Surface texture** | Smooth | Irregular (spines, varicosities) |
-| **Tapering** | Minimal (uniform caliber over long distances) | Progressive (proximal → distal gradient) |
-| **Tortuosity** | Often more tortuous | Generally smoother trajectory |
+| **Surface** | Beaded: thin segments between vesicle-filled boutons | Spines on spiny cells; varicosities without vesicle clusters |
+| **Tapering** | Minimal (caliber roughly constant between boutons) | Steady taper with distance from the soma |
 
-**Caveat:** Inhibitory neuron dendrites are often smooth (aspiny), so spine absence does not automatically mean "axon."
+Ranges follow Unit 06 §1. **Caveat:** most inhibitory neuron dendrites are smooth (aspiny), so the absence of spines does not mean "axon".
 
 ### Pass 2: Organelles
 
@@ -89,14 +78,15 @@ Evaluate the intracellular contents:
 
 | Feature | Axon-like | Dendrite-like |
 |---------|-----------|---------------|
-| **Synaptic vesicles** | Present (especially at boutons): 40-50 nm clear vesicles clustered near membrane | Absent (or only in rare dendritic release sites) |
-| **Microtubules** | Uniformly plus-end-out (vertebrates); often bundled | Mixed polarity; more evenly distributed |
-| **Ribosomes/RER** | Absent (beyond the axon initial segment) | Present (polyribosomes at spine bases, RER in shaft) |
-| **Mitochondria** | Small, elongated (0.5-2 μm) | Larger, more branched, often clustered near active spines |
-| **Smooth ER** | Thin tubule running along the axon | Network; forms spine apparatus in spines |
-| **Dense-core vesicles** | Present in some axon types (80-120 nm) | Rare |
+| **Synaptic vesicles** | Clusters of ~40 nm clear vesicles at boutons, against the membrane | Absent (except at dendritic release sites, rare in cortex) |
+| **Microtubules** | Uniformly plus-end-out (Baas et al. 1988); regularly spaced; fasciculated in the AIS | Mixed polarity in proximal dendrites; denser, less regular arrays |
+| **Ribosomes/RER** | Effectively absent beyond the axon initial segment | Polyribosomes in shafts and at spine bases; RER near the soma |
+| **Neurofilaments** | Abundant, especially in myelinated axons | Sparse |
+| **Mitochondria** | Short; found in some boutons, missing from many | Often long and tubular in the shaft |
+| **Smooth ER** | Thin tubules along the axon | Network; forms the spine apparatus in a minority of spines |
+| **Dense-core vesicles** | Present in some axon types (roughly 80–120 nm) | Occasional, in transit |
 
-**Key cue:** Vesicle clusters are the strongest single indicator of axonal identity. If you see a cluster of ~40 nm clear vesicles near a membrane, the process is almost certainly an axon (at that location, it is acting as a presynaptic terminal).
+Microtubule polarity cannot be read from a standard EM image; what you can see is the spacing and arrangement. **Key cue:** a cluster of clear vesicles against a membrane is the strongest single sign of an axon. At that point, the process is a presynaptic terminal.
 
 ### Pass 3: Synaptic role
 
@@ -104,19 +94,19 @@ Evaluate how the process participates in synapses:
 
 | Role | Axon | Dendrite |
 |------|------|----------|
-| **Presynaptic** | Yes — forms output synapses | Rare (dendro-dendritic synapses exist but are uncommon in cortex) |
-| **Postsynaptic** | Rare (axo-axonic synapses onto AIS from chandelier cells) | Yes — receives input synapses |
-| **Spine-bearing** | No | Yes (excitatory neurons) |
+| **Presynaptic** | Yes: forms output synapses | Rare in cortex (dendro-dendritic synapses are common in olfactory bulb and thalamus) |
+| **Postsynaptic** | Rare (chandelier-cell synapses onto the AIS) | Yes: receives input synapses |
+| **Spine-bearing** | No | Yes, on spiny (mostly excitatory) neurons |
 
-**Decision rule:** If the process is consistently presynaptic (vesicles on its side, PSD on the partner's side), it is an axon. If consistently postsynaptic, it is a dendrite. If it shows both roles at different locations, investigate carefully — it may be a merge error joining an axon and dendrite.
+**Decision rule:** a process that is consistently presynaptic (vesicles on its side, PSD on the partner's side) is an axon. One that is consistently postsynaptic is a dendrite. If it plays both roles at different places, suspect a merge error joining an axon to a dendrite, and check the tissue type against the exceptions in Unit 06 §2.
 
 ### Pass 4: Continuity
 
-Verify the interpretation by following the process through additional sections:
+Check the call by following the process through more sections:
 
-- **Trace proximally**: Does the process eventually connect to a soma? If so, how? Axons typically emerge from the axon hillock (one per neuron). Dendrites emerge as multiple thick trunks.
-- **Check consistency**: Does the classification remain stable along the process? A sudden change from "axon-like" to "dendrite-like" features suggests a merge error.
-- **Branching pattern**: Axonal arbors tend to have more terminal branches. Dendritic trees tend to have a recognizable morphological type (apical, basal, stellate).
+- **Trace toward the soma.** Does the process reach a cell body, and how? A neuron usually has one axon, starting at the axon hillock or from a proximal dendrite. Its AIS has a dense membrane undercoating and fasciculated microtubules. Dendrites leave the soma as several broad, tapering trunks.
+- **Check consistency.** Does the call hold along the process? An abrupt switch from axon-like to dendrite-like features suggests a merge error.
+- **Look at the arbor.** Dendritic trees often have a recognizable layout (apical, basal, stellate); axonal arbors are longer and wider-ranging.
 
 ---
 
@@ -124,43 +114,45 @@ Verify the interpretation by following the process through additional sections:
 
 ### Thin, aspiny dendrites of inhibitory neurons
 
-**Problem:** Inhibitory interneuron dendrites (e.g., parvalbumin+ basket cells) are often smooth (no spines), thin (0.3-1.0 μm), and extend long distances — features that overlap heavily with axons.
+**Problem:** the dendrites of many inhibitory interneurons (parvalbumin-positive basket cells, for example) are smooth, thin and long. All three features overlap with axons.
 
-**Solution:** Look for (a) postsynaptic role — these dendrites receive input synapses on their shaft, (b) ribosomes/RER in the cytoplasm (absent in axons), (c) microtubule polarity if assessable, (d) trace to the soma and check cell type.
+**Solution:** look for (a) a postsynaptic role, since these dendrites receive synapses directly on the shaft; (b) ribosomes or RER, which axons lack; (c) the microtubule arrangement, if the cross-section is clean; (d) the soma, if you can reach it.
 
 ### En passant boutons vs spines
 
-**Problem:** An axonal en passant bouton (swelling along the axon shaft containing vesicles) can resemble a spine head when viewed in a single section.
+**Problem:** an en passant bouton (a vesicle-filled swelling along an axon) can look like a spine head in a single section.
 
-**Solution:** (a) Check for vesicles — boutons contain vesicle clusters, spine heads typically do not. (b) Check PSD position — in a bouton, the PSD is on the *partner's* membrane; in a spine, the PSD is on the *spine head* membrane. (c) Follow the process through z — boutons are continuous with the axon shaft; spines connect to a larger dendrite via a narrow neck.
+**Solution:** (a) Check for vesicles: boutons have vesicle clusters, spine heads usually do not. (b) Check the PSD: at a bouton it is on the *partner's* membrane; in a spine it is on the *spine head's* own membrane. (c) Follow it through z: a bouton continues into axon on both sides, while a spine joins a larger dendrite through a narrow neck.
 
-### Truncated processes at volume boundary
+### Truncated processes at the volume edge
 
-**Problem:** A process is cut by the edge of the imaged volume. You can see only the last few micrometers, not enough to trace to a soma or evaluate the full branching pattern.
+**Problem:** the process leaves the imaged volume. You see a few micrometers, not enough to reach a soma or see the branching.
 
-**Solution:** Use the available local cues (organelles, vesicles, synaptic role) and assign a confidence level. Mark as `provisional` if evidence is insufficient. Do not force a classification — uncertain labels are more valuable than incorrect ones.
+**Solution:** use the local cues (organelles, vesicles, synaptic role) and assign a confidence tier. If the evidence is thin, record "uncertain". Do not force a call: an honest "uncertain" costs a review; a wrong label corrupts every edge on the process.
 
 ### Myelinated processes
 
-**Problem:** Myelin wrapping obscures the cytoplasm, making organelle-based cues less accessible.
+**Problem:** the sheath hides the cytoplasm, so organelle cues are hard to see.
 
-**Solution:** Myelin itself is a strong axon indicator (dendrites are never myelinated in mammals). For the myelinated segment, classify as "myelinated axon" with high confidence. At nodes of Ranvier (gaps in myelin), cytoplasmic features become accessible for additional confirmation.
+**Solution:** myelin is itself a strong axon cue; Unit 06 treats myelinated dendrites as absent in the tissue it covers. Call the segment "myelinated axon" with high confidence. At nodes of Ranvier the cytoplasm is exposed and you can confirm with organelles.
 
 ---
 
-## Worked example: classifying an ambiguous process
+## Worked example: a smooth 300 nm process with one input synapse
 
-**Scenario:** A process ~300 nm in diameter runs through 15 consecutive sections. It contains a few microtubules, no obvious vesicle clusters, and no spines. It receives one synapse (PSD on its side) and forms no presynaptic contacts in the visible region.
+This is a constructed case, not a specific process from a public dataset.
 
-**Pass 1 (Morphology):** 300 nm is ambiguous — could be a thin dendrite or a thick unmyelinated axon. No spines. Smooth surface. Verdict: inconclusive.
+**Scenario:** cortical neuropil, sections about 40 nm thick. A process about 300 nm across runs roughly 2 µm (about 50 sections). It contains a few microtubules, no vesicle clusters and no spines. It receives one synapse (PSD on its side) and makes no output synapses in view.
 
-**Pass 2 (Organelles):** A few microtubules (3-5), one small mitochondrion. No vesicles. No ribosomes visible. Verdict: slight lean toward axon (no ribosomes), but insufficient evidence.
+**Pass 1 (Morphology):** 300 nm sits at the top of the unmyelinated-axon range and at the bottom of the dendrite range. No spines, smooth surface. Verdict: inconclusive.
 
-**Pass 3 (Synaptic role):** One synapse where this process is postsynaptic. Verdict: lean toward dendrite. Axons rarely receive synapses (exception: axo-axonic chandelier cell inputs onto the AIS, but this is not near a soma).
+**Pass 2 (Organelles):** three to five microtubules, one small mitochondrion, no vesicles, no ribosomes visible. The missing ribosomes tempt you toward axon, but at 300 nm a polyribosome can easily miss every section you looked at. Absence is weak evidence. Verdict: inconclusive.
 
-**Pass 4 (Continuity):** Trace 10 sections proximally. The process thickens slightly (350 nm) and a ribosome cluster becomes visible near a branch point. Two more input synapses appear on the shaft.
+**Pass 3 (Synaptic role):** one synapse, with this process postsynaptic. Verdict: lean dendrite. Axons rarely receive synapses; the main cortical exception is the chandelier-cell input to the AIS. Nothing here looks like an AIS: no membrane undercoating, no fasciculated microtubules.
 
-**Final classification:** Dendrite (likely inhibitory interneuron, given smooth morphology). Confidence: **medium**. Key evidence: postsynaptic role (3 input synapses), ribosomes detected in proximal shaft. Uncertainty: no spine evidence (consistent with inhibitory neuron), limited tracing distance.
+**Pass 4 (Continuity):** follow it about 1 µm further toward what looks like the proximal end. It widens to about 350 nm, a polyribosome cluster appears near a branch point, and two more synapses land on the shaft.
+
+**Final call:** dendrite, probably of an inhibitory interneuron given the smooth shaft. Confidence: **medium**. Two cue families agree (synaptic role: three input synapses; organelles: one ribosome cluster), but the organelle evidence rests on a single cluster and the tracing is short. What would change the call: vesicle clusters or an output synapse further along, which would point to a merge rather than to an axon.
 
 ---
 
@@ -168,67 +160,70 @@ Verify the interpretation by following the process through additional sections:
 
 To maintain consistent classification across a team:
 
-1. **Weekly calibration sessions**: Review 10-20 ambiguous cases as a group. Discuss cue evidence and arrive at consensus.
-2. **Shared edge-case library**: Maintain a documented set of difficult examples with agreed-upon classifications and reasoning.
-3. **Confusion matrix tracking**: Periodically test annotators against an adjudicated truth set. Track axon/dendrite classification accuracy per annotator.
-4. **Threshold agreement**: Set team-wide rules for minimum evidence required before committing a classification (e.g., "at least two independent cue types must agree").
+1. **Weekly calibration sessions.** Review 10–20 ambiguous cases as a group, compare the cues each person used, and agree on a call.
+2. **Shared edge-case library.** Keep the hard examples, with the agreed call and the reasoning.
+3. **Confusion-matrix tracking.** Test annotators against an adjudicated truth set now and then, and track axon/dendrite accuracy per person and per confidence tier.
+4. **An agreed evidence threshold.** Write down the minimum evidence for a committed call, for example "two independent cue families must agree".
 
 ---
 
-## How reliable is each cue?
+## Organelles and synaptic role carry the call; caliber does not
 
-The protocol above lists cues; it does not say which ones fail, and that is the
-information you need to work under uncertainty. Roughly, in decreasing order of
-reliability:
+The protocol above lists cues but does not say which ones fail, and that is
+what you need to know when working under uncertainty. Roughly, in decreasing
+order of reliability:
 
 | Cue | Reliability | Fails when |
 |---|---|---|
 | **Polyribosomes / rough ER present** | Very high for dendrite. Axons lack them | The section misses them; a thin dendrite may show none in any single plane |
 | **Vesicle-filled varicosity with an active zone** | Very high for axon | The bouton is out of plane; a dendrite receiving many inputs can look busy at low magnification |
-| **Postsynaptic densities on the process itself** | High for dendrite | Axo-axonic synapses exist, and are common on the AIS specifically |
+| **Postsynaptic densities on the process itself** | High for dendrite | Chandelier cells synapse onto the AIS, so an AIS carries PSDs too |
 | **Myelination** | Very high for axon | Only a minority of axons are myelinated, so absence proves nothing |
 | **Microtubule arrangement** | Moderate | Both compartments contain microtubules; the difference is spacing and fasciculation, which needs a clean cross-section |
-| **Spines** | High for dendrite | Aspiny and sparsely spiny dendrites are common — most inhibitory neurons |
-| **Calibre** | **Low on its own** | Thin dendrites and thick axons both exist. Unit 06 §1 gives 80-300 nm for unmyelinated neurites and 50-200 nm for spine necks — overlapping ranges |
+| **Spines** | High for dendrite | Aspiny and sparsely spiny dendrites are common, including those of most inhibitory neurons |
+| **Taper at a branch point** | Moderate to high for dendrite, when a branch is in view | Needs the branch in the volume; daughters thinner than the parent point to dendrite (Unit 06 §1) |
+| **Caliber** | **Low on its own** | Thin dendrites and thick axons both exist. Unit 06 §1 gives 80–300 nm for unmyelinated axons and 50–200 nm for spine necks: overlapping ranges |
 | **Branching angle** | Low | Suggestive at best, and strongly affected by section angle |
 
 **The rule the units enforce: two independent cue families before a confident
-call.** Independence is the operative word. Calibre and branching angle are both
-geometric and both fail on a tangential cut, so they are one family, not two.
-Organelle content and synaptic role are genuinely independent of geometry, and
-that is why they carry the call.
+call.** Independence is what matters. Caliber and branching angle are both
+geometric and both fail on a tangential cut, so they count as one family.
+Organelle content and synaptic role do not depend on geometry, which is why
+they carry the call.
 
 ### Attaching a confidence tier
 
-Use the same three-bin vocabulary the rest of the site uses, so a call travels
-with its evidence:
+Use the three tiers Unit 06 uses, so a call travels with its evidence:
 
-- **Bin A** — two independent cue families agree, both clearly visible. Record
-  the call and which cues you used.
-- **Bin B** — one strong cue, or two weak agreeing ones. Record the call *and*
+- **High:** two independent cue families agree, both clearly visible. Record
+  the call and the cues you used.
+- **Medium:** one strong cue, or two weak ones that agree. Record the call *and*
   what would change your mind.
-- **Bin C** — cues conflict, or the section is uninformative. Record
-  "uncertain". This is a real answer, and a dataset where nobody ever writes it
-  is a dataset where people are guessing.
+- **Uncertain:** the cues conflict, or the section shows nothing decisive.
+  Record "uncertain". This is a real answer. In a dataset where nobody ever
+  writes it, people are guessing.
+
+(These tiers are about how sure you are of a label. The site's Bin A/B/C scheme
+is different: it sorts *claims* by the kind of evidence they need.)
 
 A tier is only useful if it predicts accuracy. Unit 06's rubric asks that
 high-confidence calls be right at least 90% of the time while a non-trivial
-share stay uncertain; if your Bin A accuracy matches your overall accuracy, the
-tiers are decoration.
+share stay uncertain. If your high-tier accuracy matches your overall accuracy,
+the tiers carry no information.
 
 ### Species and tissue caveats
 
 Everything above is calibrated on mammalian cortical neuropil. It does not
 transfer unchanged:
 
-- In *Drosophila*, most neurites are unmyelinated, many neurons are unipolar,
-  and the same process can be pre- and postsynaptic along its length — the
-  axon/dendrite dichotomy is often the wrong frame entirely.
-- In *C. elegans*, processes are thin enough that organelle cues are frequently
-  absent from a given section.
-- In human tissue (H01 and comparable surgical material), fixation quality
-  varies with depth from the resection surface, and the first cue to degrade is
-  membrane contrast — which is the one the automated segmentation depends on.
+- In *Drosophila* there is no myelin, most neurons are unipolar, and one
+  neurite can carry both inputs and outputs along its length. The
+  axon/dendrite split is often the wrong frame.
+- In *C. elegans*, processes are thin enough that organelle cues are often
+  missing from any given section.
+- In human surgical tissue such as H01, fixation quality can vary across the
+  sample. Poorer fixation weakens membrane contrast, which the automated
+  segmentation depends on.
 
 Before applying this protocol to a new dataset, classify twenty processes you
 can verify and check that the cues behave as described. If they do not, it is
@@ -241,15 +236,16 @@ the protocol that needs adjusting, not the tissue.
 | Misconception | Reality | How to verify |
 |---|---|---|
 | "Thin process = axon" | Thin aspiny dendrites are common in inhibitory neurons | Check synaptic role and ribosomes |
-| "No spines = axon" | ~20-30% of cortical neurons are inhibitory with smooth dendrites | Trace to soma; check cell type |
-| "Vesicles = always axon terminal" | Dense-core vesicles can be in transit through dendrites; some dendrites release transmitter | Check for clustered clear vesicles specifically at membrane appositions |
+| "No spines = axon" | Roughly a fifth of cortical neurons are inhibitory, and most of them have smooth dendrites (see [Neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }})) | Trace to soma; check cell type |
+| "Vesicles = always axon terminal" | Dense-core vesicles can be in transit through dendrites; some dendrites release transmitter | Look for clustered clear vesicles at a membrane apposition |
+| "No ribosomes = axon" | A thin dendrite can show no polyribosome in any single section | Treat absence as evidence only when the feature would have been visible |
 | "One synapse proves the classification" | A single synapse can be misdetected or ambiguous | Require multiple synapses or corroborating organelle evidence |
 
 ---
 
 ## References
 
-- Baas PW et al. (1988) "Polarity orientation of microtubules in hippocampal neurons: uniformity in the axon and nonuniformity in the dendrite." *PNAS* 85(21):8335-8339.
+- Baas PW, Deitch JS, Black MM, Banker GA (1988) "Polarity orientation of microtubules in hippocampal neurons: uniformity in the axon and nonuniformity in the dendrite." *PNAS* 85(21):8335-8339.
 - Harris KM, Weinberg RJ (2012) "Ultrastructure of synapses in the mammalian brain." *Cold Spring Harbor Perspectives in Biology* 4(5):a005587.
 - Kasthuri N et al. (2015) "Saturated reconstruction of a volume of neocortex." *Cell* 162(3):648-661.
 - Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*. 3rd ed. Oxford University Press.

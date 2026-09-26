@@ -22,7 +22,7 @@ said "funded for five years". In one week, five things happen.
    renewal is in". Tomás did not know his stipend was tied to any award.
 2. **Tuesday.** Dr. Idris, a postdoc, circulates a paper draft. It uses 900 segments
    Tomás proofread and the synapse QC script he wrote, which the whole lab now runs. Tomás
-   is in the acknowledgements. Nobody discussed authorship.
+   is in the acknowledgments. Nobody discussed authorship.
 3. **Wednesday.** Dr. Lindqvist, at another university, emails Dr. Brennan: "Could Tomás
    run his QC script on our volume? Should be quick." Dr. Brennan replies, copying Tomás:
    "Sure, Tomás can help."

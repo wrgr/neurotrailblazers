@@ -10,17 +10,16 @@ pathways:
   - classroom delivery
   - graduate teaching
 summary: "Three ready-to-teach connectomics lectures, CC BY-SA 4.0."
-use_layout_hero: false
 ---
 
 ## What this is
 
-**Teaching a short block?** Use [the short lecture sequence]({{ '/teaching/sequence/' | relative_url }}):
+**Teaching a short block?** Use [the four-session block]({{ '/teaching/sequence/' | relative_url }}):
 Introduction to Connectomics, Synapse Detection, Tools and Methods, then Algorithms
 and Applications, each with a 90-minute
 plan, worksheet and model responses. An optional fifth session,
 [Ethics and Governance]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}),
-covers licences, human tissue and proofreading credit. That short sequence is separate
+covers licenses, human tissue and proofreading credit. That block is separate
 from the three-lecture graduate course described below.
 
 Three complete graduate lectures on nanoscale connectomics, released for anyone to
@@ -97,17 +96,19 @@ trying to fit Parts A and B; Part C works as a standalone seminar. A single
 **Prerequisites.** Introductory neuroscience is helpful but not required. Lecture 2's
 assignment assumes basic Python; the lecture itself does not.
 
-**No data or accounts needed to teach.** The lectures reference public platforms —
-neuPrint, FlyWire Codex, BossDB, CAVE — but nothing in the slides requires a login. The
-lecture 2 assignment does.
+**No data or accounts needed to teach.** The lectures reference public platforms
+(neuPrint, FlyWire Codex, BossDB, CAVE), but nothing in the slides requires a login. The
+lecture 2 assignment usually does, because neuPrint and CAVE issue personal tokens. The
+[MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) is a no-account
+alternative: it reads a pinned release from static public exports.
 
 ---
 
 ## Formats
 
 Each lecture page links its rendered HTML deck, which presents directly in a browser.
-The Marp markdown source is the version to take if you want to work with the text —
-speaker notes are in the source as HTML comments and export to PowerPoint notes.
+Take the Marp Markdown source if you want to work with the text. Speaker notes are in
+the source as HTML comments and export to PowerPoint notes.
 
 For **Google Slides**, render to PowerPoint and use *File → Import slides*. Be aware
 that Marp's PowerPoint export renders each slide as an image, so text is not editable in
@@ -124,18 +125,18 @@ Exports land in `course/decks/marp/out/en585781/`.
 
 ---
 
-## Licence
+## License
 
 **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).**
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these lectures in any setting, including commercially; copy and
 redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them
-into your own material** — and distribute the result. No permission needed.
+into your own material**, then distribute the result. No permission needed.
 
-**Two conditions.** *Attribution* — credit the original, link the licence, and indicate
-whether you changed anything. *ShareAlike* — if you adapt the material, distribute your
-version under this same licence, so adaptations stay as open as what they were built
+**Two conditions.** *Attribution:* credit the original, link the license, and say
+whether you changed anything. *ShareAlike:* if you adapt the material, distribute your
+version under this same license, so adaptations stay as open as what they were built
 from.
 
 **How to credit:**
@@ -147,15 +148,15 @@ from.
 For an adaptation, prefix with *"Adapted from"* and note what you changed. A credit line
 on a title slide or in a syllabus is sufficient.
 
-**If your adaptation improves the teaching**, the project would like to hear about it —
+**If your adaptation improves the teaching**, please
 [open an issue](https://github.com/wrgr/neurotrailblazers/issues). Re-cut versions for
-different course lengths are exactly the thing worth sharing back.
+different course lengths are the most useful thing to share back.
 
-**On the contents.** The H01 cover image retains its **CC BY 4.0** licence and credit
+**On the contents.** The H01 cover image retains its **CC BY 4.0** license and credit
 to Lichtman Lab / Harvard and Connectomics at Google, Shapson-Coe et al. (2024),
 doi:10.1126/science.adk4858. Preserve that attribution in adaptations.
-They cite published work extensively; citation is not reproduction, and the cited papers
-carry their own licences. If you add figures to an adaptation, check they are compatible
+The lectures cite published work extensively. Citation is not reproduction, and the cited
+papers carry their own licenses. If you add figures to an adaptation, check they are compatible
 with CC BY-SA 4.0 before distributing it.
 
 ---
@@ -164,16 +165,16 @@ with CC BY-SA 4.0 before distributing it.
 
 The field moves quickly, and "state of the field" claims age. If you find something
 wrong or out of date, please
-[open an issue](https://github.com/wrgr/neurotrailblazers/issues) — corrections from
+[open an issue](https://github.com/wrgr/neurotrailblazers/issues). Corrections from
 people teaching this material are the most useful kind.
 
 ## Related
 
-- [Technical training units]({{ '/technical-training/' | relative_url }}) — the long-form
+- [Technical training units]({{ '/technical-training/' | relative_url }}): the long-form
   material these lectures were built from
-- [Lecture plans]({{ '/technical-training/slides/' | relative_url }}) — build plans for
+- [Lecture plans]({{ '/technical-training/slides/' | relative_url }}): build plans for
   assembling your own lecture on a unit
-- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}) — papers with
+- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}): papers with
   discussion prompts, for the assigned readings
-- [Teaching hub]({{ '/teaching/' | relative_url }}) — module session kits and the
+- [Teaching hub]({{ '/teaching/' | relative_url }}): module session kits and the
   facilitator guide

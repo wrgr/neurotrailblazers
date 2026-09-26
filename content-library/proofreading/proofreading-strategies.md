@@ -5,7 +5,7 @@ permalink: /content-library/proofreading/proofreading-strategies/
 image: /assets/images/content-library/proofreading/proofreading-strategies.svg
 image_alt: "Stylized vector art: a traced process with marked error sites under review."
 description: >
-  A comprehensive instructor reference on the major strategies for proofreading
+  An instructor reference on the major strategies for proofreading
   automated neural segmentation, from exhaustive local correction to crowd-sourced
   campaigns. Covers when to use each approach, how to combine them, and when to
   stop. Includes a worked campaign-design example and full references.
@@ -18,9 +18,7 @@ topics:
   - hybrid strategies
   - cost-benefit analysis
 primary_units:
-  - proofreading-fundamentals
-  - proofreading-workflows
-  - large-scale-reconstruction
+  - "08"
 difficulty: intermediate
 tags:
   - proofreading:exhaustive-proofreading
@@ -30,16 +28,6 @@ tags:
   - methodology:cost-benefit-analysis
   - connectomics:reconstruction-workflow
 micro_lesson_id: ml-proof-strategies
-reference_images:
-  - src: /assets/images/content-library/proofreading/proofreading-strategies/strategy-comparison-table.png
-    alt: "Comparison matrix of proofreading strategies by effort, coverage, and use case"
-    caption: "Four proofreading strategies compared: exhaustive, targeted, priority-ranked, and crowd-sourced. Each has distinct effort-coverage tradeoffs."
-  - src: /assets/images/content-library/proofreading/proofreading-strategies/targeted-proofreading-workflow.png
-    alt: "Targeted proofreading workflow showing neuron selection, error scan, and correction"
-    caption: "Targeted proofreading: select high-value neurons, scan for errors at branch points and thin processes, then correct and validate."
-  - src: /assets/images/content-library/proofreading/proofreading-strategies/diminishing-returns-curve.png
-    alt: "Graph showing diminishing returns of proofreading effort over time"
-    caption: "Diminishing returns: ERL improvement per proofreading hour decreases as high-impact errors are corrected first."
 combines_with:
   - error-taxonomy
   - metrics-and-qa
@@ -61,13 +49,12 @@ intentionally detailed so that nothing needs to be improvised.
 
 ## 1. Overview: Why Strategy Matters
 
-Not all proofreading is created equal. A naive approach -- start at one
-corner of the volume and fix every error you encounter -- is almost never
-the right choice. The strategy you select determines:
+Starting at one corner of the volume and fixing every error you meet is
+almost never the right plan. The strategy you choose sets four things:
 
 - **Cost:** Human proofreading time is the dominant expense in connectomics.
-  Estimates range from 10-100x the compute time of automated segmentation
-  (Berning et al., 2015).
+  FlyWire's whole-brain reconstruction took an estimated 33 person-years of
+  manual proofreading (Dorkenwald et al., 2024).
 - **Quality:** Different strategies produce different error profiles. An
   exhaustive approach minimizes all error types; a targeted approach
   minimizes errors for specific neurons but leaves the rest untouched.
@@ -115,16 +102,16 @@ accurate.
 ### 2.4 Cost
 
 Kasthuri et al. (2015) described saturated reconstruction of a
-1,500 cubic micrometer volume from mouse neocortex. The effort required
-thousands of person-hours for what amounts to a tiny fraction of even one
-cortical column. You can extrapolate this yourself, and the arithmetic is more useful than a
-quoted figure. A cortical mm^3 holds on the order of 10^5 neurons. At the
-2-4 hours per neuron this page estimates for full single-cell proofreading in
-§7, exhaustive coverage lands in the hundreds of thousands of person-hours —
-that is decades of full-time work for a single person, and it is why no
-mm-scale volume is exhaustively proofread. Substitute your own per-neuron rate,
-measured on your pilot, and the conclusion does not change: exhaustive
-proofreading is not a plan, it is an alternative to having one.
+1,500 cubic micrometer volume from mouse neocortex, a tiny fraction of even
+one cortical column. You can extrapolate the cost yourself, and the arithmetic
+is more useful than a quoted figure. A cortical mm^3 holds on the order of
+10^5 neurons. At the 2-4 hours per neuron this page assumes for full
+single-cell proofreading in the §8 campaign example, exhaustive coverage costs
+200,000 to 400,000 person-hours. At 2,000 hours a year, that is 100 to 200 years
+of one person's full-time work, and it is why no millimeter-scale volume has
+been exhaustively proofread. Substitute your own per-neuron rate, measured on
+your pilot, and the conclusion holds: at this scale, exhaustive proofreading
+is only practical for small reference regions.
 
 ### 2.5 Instructor Tip
 
@@ -207,7 +194,7 @@ neurons of interest.
 {% include figure.html
    src="/assets/images/content-library/em/proofreading-before-after.jpg"
    alt="Three panels of the same human cortex field: raw electron microscopy; the automated segmentation showing one object in green with a wrongly attached region in red; and the proofread result with only the green object remaining."
-   caption="The product of targeted proofreading. The automated segmentation (middle) attached a neighbouring process, shown in red, to this cell; a proofreader removed it (right). H01 ships 104 cells corrected this way against roughly 16,000 neurons in the volume &mdash; which is the cost argument of this entry in a single image. Note also where the error is <em>not</em>: at the cell body the automated result needs no correction at all. The corrections live in thin neurites, and that is what makes them expensive to find."
+   caption="The product of targeted proofreading. The automated segmentation (middle) attached a neighboring process, shown in red, to this cell; a proofreader removed it (right). H01 ships 104 cells corrected this way against roughly 16,000 neurons in the volume &mdash; which is the cost argument of this entry in a single image. Note also where the error is <em>not</em>: at the cell body the automated result needs no correction at all. The corrections live in thin neurites, and that is what makes them expensive to find."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Automated segmentation is H01&#39;s <code>c2</code>; the corrected version is one of its 104 manually proofread cells. Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## 4. Priority-Ranked Proofreading
@@ -244,12 +231,20 @@ such as:
   merge point. Low-confidence merges are more likely wrong.
 
 Classifiers trained on these features detect merge errors well enough to be
-worth running and not well enough to be trusted alone; Zung et al. (2017)
-proposed a metric-learning approach that embeds supervoxels so errors can be
-detected by distance in embedding space. Take the precision and recall figures
+worth running and not well enough to be trusted alone. Zung et al. (2017)
+trained 3D convolutional networks that take the image and a candidate object
+mask, mark likely split and merge errors in the object, and then prune the
+mask toward the true object. Take the precision and recall figures
 from the detector you are actually running, on data resembling yours, and
-report them alongside your results — a detector's performance on a benchmark
+report them alongside your results. A detector's performance on a benchmark
 does not transfer to your tissue and your pipeline.
+
+Compartment identity is another cue. Li et al. (2020) trained 3D
+convolutional networks to label fragments as axon, dendrite or soma, and used
+those labels to find merges between compartment classes. They report
+detecting 90.6% of such inter-class merges at a 2.7% false-positive rate, on
+their own data. An object that is part thick spiny dendrite and part thin
+varicose axon, joined at a single point, is a classic false merge.
 
 ### 4.4 Ranking Heuristics
 
@@ -278,20 +273,26 @@ impact and confidence.
 ### 5.1 The FlyWire Model
 
 Dorkenwald et al. (2024) described the FlyWire project, which produced a
-whole-brain connectome of Drosophila melanogaster using 287 proofreaders
-distributed globally. Key features:
+whole-brain connectome of *Drosophila melanogaster*. The authors estimate
+that the reconstruction took around 33 person-years of manual proofreading.
+Key features they report:
 
-- **Task decomposition.** The brain was divided into regions, and tasks
-  were assigned at the neuron level.
-- **Training protocol.** New proofreaders completed a structured tutorial
-  with graded examples before accessing real data.
-- **Consensus mechanisms.** Critical edits were reviewed by a second
-  annotator. Disagreements were escalated to expert adjudicators.
-- **Version control.** All edits were recorded in CAVE (Connectome
-  Annotation Versioning Engine), enabling rollback if needed.
-- **Gamification and community.** Leaderboards, acknowledgment in
-  publications, and a collaborative Slack workspace motivated sustained
-  participation.
+- **Two phases of labor.** In the initial phase, much of the proofreading
+  was done by a distributed community of *Drosophila* research groups in
+  the FlyWire Consortium, focused on neurons of interest to those groups.
+  In the later phase, centralized teams at Princeton and Cambridge
+  proofread most of the remaining neurons, with contributions from citizen
+  scientists worldwide.
+- **Community annotation.** Community members shared 133,700 annotations
+  of 114,209 neurons.
+- **Accuracy check by re-proofreading.** To estimate remaining error, the
+  authors subjected 826 randomly chosen central-brain neurons to a further
+  round of proofreading. Measured against that extra round, the released
+  reconstructions scored an average F1 of 99.2% by volume.
+- **Version control.** Edits were recorded in the ChunkedGraph backend
+  that CAVE (Connectome Annotation Versioning Engine) is built on, so any
+  past state of the segmentation can be recovered (Dorkenwald et al.,
+  2025).
 
 ### 5.2 The EyeWire Model
 
@@ -302,9 +303,11 @@ meaningful proofreading for retinal connectomics. Key innovations:
 - **Game-like interface.** Tracing neurites was presented as a 3D puzzle.
 - **Redundancy.** Each task was completed by multiple players; consensus
   determined the final segmentation.
-- **Automated verification.** Player accuracy was continuously estimated
-  by seeding known-answer tasks into the workflow.
-- **Scale.** Over 200,000 players from 150 countries contributed.
+- **Scale.** When the paper appeared, the EyeWire project reported a
+  community of about 120,000 players from nearly 150 countries (EyeWire
+  blog, 2014). By March 2025 the project reported 350,000 players over
+  thirteen years (EyeWire blog, 2025). The two numbers are different dates,
+  not a conflict.
 
 ### 5.3 When to Use
 
@@ -347,10 +350,11 @@ Most real-world projects combine multiple strategies. A common recipe:
 
 ### 6.1 The FlyWire Hybrid
 
-FlyWire used exactly this pattern: automated segmentation was followed by
-priority-ranked automated error detection, then targeted neuron-by-neuron
-proofreading by the crowd, with expert review of critical neurons and
-exhaustive proofreading of small benchmark regions.
+FlyWire combined some of these elements rather than following the recipe
+above: automated segmentation, then neuron-by-neuron proofreading first by
+a distributed research community and later by centralized teams, then a
+further round of proofreading on a sample of neurons to estimate accuracy
+(Dorkenwald et al., 2024).
 
 ---
 
@@ -358,10 +362,11 @@ exhaustive proofreading of small benchmark regions.
 
 ### 7.1 Diminishing Returns
 
-Proofreading follows a classic diminishing-returns curve. The first few
-hours of proofreading fix high-impact errors and dramatically improve
-metrics. As obvious errors are corrected, remaining errors become harder
-to find and less impactful.
+Proofreading effort shows diminishing returns. If you rank errors by
+impact, the first hours fix the errors that move the metrics most. After
+that, each remaining error is harder to find and changes less when fixed.
+Plot your own metric against hours spent; the curve tells you when the
+next hour is buying little.
 
 ### 7.2 Quality Targets
 
@@ -447,18 +452,25 @@ VIP, Lamp5). You have a team of 5 proofreaders and 3 months.
 
 ## 9. References
 
-- Berning, M., Boergens, K. M., & Helmstaedter, M. (2015). SegEM:
-  Efficient image analysis for high-resolution connectomics. *Neuron*,
-  87(6), 1193-1206.
 - Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult
-  brain. *Nature*, 634, 124-138.
+  brain. *Nature*, 634, 124-138. doi:10.1038/s41586-024-07558-y.
+- Dorkenwald, S., Schneider-Mizell, C. M., et al. (2025). CAVE: Connectome
+  Annotation Versioning Engine. *Nature Methods*, 22, 1112-1120.
+  doi:10.1038/s41592-024-02426-z.
+- EyeWire. (2014). EyeWire's first scientific discovery and Nature paper.
+  EyeWire blog. https://blog.eyewire.org/eyewires-first-scientific-discovery-and-nature-paper/
+- EyeWire. (2025, March 31). Announcing EyeWire II. EyeWire blog.
+  https://blog.eyewire.org/announcing-eyewire-ii/
 - Kasthuri, N., et al. (2015). Saturated reconstruction of a volume of
-  neocortex. *Cell*, 162(3), 648-661.
+  neocortex. *Cell*, 162(3), 648-661. doi:10.1016/j.cell.2015.06.054.
 - Kim, J. S., et al. (2014). Space-time wiring specificity supports
   direction selectivity in the retina. *Nature*, 509, 331-336.
+  doi:10.1038/nature13240.
 - Li, H., Januszewski, M., Jain, V., & Li, P. H. (2020). Neuronal
   subcompartment classification and merge error correction. In *Medical
-  Image Computing and Computer Assisted Intervention (MICCAI)*.
+  Image Computing and Computer Assisted Intervention (MICCAI 2020)*,
+  Lecture Notes in Computer Science, pp. 88-98.
+  doi:10.1007/978-3-030-59722-1_9.
 - Zung, J., Tartavull, I., Lee, K., & Seung, H. S. (2017). An error
   detection and correction framework for connectomics. *Advances in
   Neural Information Processing Systems (NeurIPS)*, 30.

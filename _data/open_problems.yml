@@ -51,7 +51,7 @@ problems:
     onramp:
       - name: "Orient"
         action: "Read [the problem in full](/content-library/connectomics/open-problems-undergrad/#problem-2), then [Synapse detection](/content-library/infrastructure/synapse-detection/) for the method and [Synapse classification](/content-library/neuroanatomy/synapse-classification/) for the biology; skim [Unit 05](/technical-training/05-neuronal-ultrastructure/)."
-        done: "You can name the three separable tasks — cleft localisation, partner assignment, sign classification — and state the three EM criteria for calling a synapse without looking them up."
+        done: "You can name the three separable tasks — cleft localization, partner assignment, sign classification — and state the three EM criteria for calling a synapse without looking them up."
       - name: "Get data in hand"
         action: "Work through [Getting Started with Data](/datasets/getting-started/) to Level 3-lite: one small EM imagery cutout from a public volume, plus the CREMI ground-truth volumes (plain HTTP download, no account)."
         done: "You can open the cutout in Neuroglancer and scroll through sections without it feeling alien."
@@ -121,7 +121,7 @@ problems:
     number: 5
     icon: "⚡"
     title: "Structure → Function and Its Limits"
-    hook: "Wiring predicts orientation tuning well and receptive-field size badly. Map where the predictive boundary lies — the field's central open question."
+    hook: "In the fly visual system, wiring predicts orientation tuning well and receptive-field size badly. Map where the predictive boundary lies, one of the field's central open questions."
     team: "ML · computational neuroscience"
     cost: "Colab GPU helpful"
     customer: "The case for the next connectome"

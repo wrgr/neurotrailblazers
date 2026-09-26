@@ -16,17 +16,16 @@ content_type: path
 A computational path through the quality-assessment ideas in
 [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 and the [Connectome Quality]({{ '/tools/connectome-quality/' | relative_url }}) tool
-page. Work these in order — each step assumes the previous.
+page. Work these in order. Each step assumes the one before.
 
 > **What this page is.** Reference code and specifications you implement yourself, not
-> downloadable notebooks. The site previously linked five `.ipynb` files here; every one
-> of them was an empty stub with no code cells, and they have been removed rather than
-> left to look runnable. Building these yourself is a better exercise than running
-> someone else's notebook, and it is the only version of this page that is honest.
+> downloadable notebooks. For a runnable, version-pinned notebook with archived outputs,
+> use the [MICrONS Real-Data Lab]({{ '/notebooks/microns-lab/' | relative_url }}), which
+> needs no account.
 >
-> The snippets below are written against the current CAVE and CloudVolume APIs. Client
-> libraries in this field move quickly — check call signatures against the package docs
-> before assuming a failure is your fault.
+> The snippets below were written against the `caveclient` and CloudVolume APIs but were
+> not run for this page. Client libraries in this field change often, so check call
+> signatures against the package docs before assuming a failure is your fault.
 
 </section>
 
@@ -42,10 +41,10 @@ pip install neuprint-python
 pip install intern
 ```
 
-A free CAVE account is required for MICrONS access, and you must accept the dataset's
-terms before the API will return data. Verify access **before** a teaching session —
-account provisioning is the most common reason a hands-on session loses its first
-twenty minutes.
+Steps 3 to 5 need a free CAVE account, and you must accept the dataset's terms before
+the API will return data. Steps 1 and 2 read public CloudVolume paths and need no
+account. Verify access **before** a teaching session. If tokens are set up during the
+session, expect to lose the first twenty minutes to it.
 
 </section>
 
@@ -65,14 +64,16 @@ membrane. Save the coordinate.
 from cloudvolume import CloudVolume
 import matplotlib.pyplot as plt
 
-# MICrONS public release. Check the current source paths in the dataset docs --
-# these move between releases.
+# MICrONS public release. Check the current source paths in the dataset docs;
+# these move between releases. seg_m1300 is the flat segmentation at v1300, so its
+# IDs match the VERSION pinned in step 3.
 img = CloudVolume("precomputed://gs://iarpa_microns/minnie/minnie65/em",
                   mip=0, use_https=True, progress=False)
-seg = CloudVolume("precomputed://gs://iarpa_microns/minnie/minnie65/seg",
+seg = CloudVolume("precomputed://gs://iarpa_microns/minnie/minnie65/seg_m1300",
                   mip=0, use_https=True, progress=False)
 
-x, y, z = 240000, 100000, 21000          # any coordinate in bounds
+# mip 0 here is 8 x 8 x 40 nm. CAVE positions are 4 x 4 x 40 nm: halve x and y.
+x, y, z = 120000, 100000, 21000          # inside both volumes
 box = (slice(x, x + 512), slice(y, y + 512), slice(z, z + 1))
 
 fig, ax = plt.subplots(1, 2, figsize=(12, 6))
@@ -124,7 +125,11 @@ client = CAVEclient("minnie65_public")
 print(client.materialize.get_versions())
 VERSION = 1300                            # replace with a version you chose deliberately
 
-root_id = 864691135474648896              # any proofread neuron
+# Pick a neuron with a proofread axon from the proofreading table at that version.
+prf = client.materialize.query_table("proofreading_status_and_strategy",
+                                     filter_equal_dict={"status_axon": "t"},
+                                     materialization_version=VERSION)
+root_id = prf.pt_root_id.iloc[0]          # or choose one deliberately
 
 syn_in  = client.materialize.synapse_query(post_ids=root_id,
                                            materialization_version=VERSION)
@@ -144,9 +149,9 @@ Then **re-run against a second materialization version** and report what changed
 **Produce:** a notebook with a five-line reproducibility header — dataset, version, client
 version, date, author — and the two-version comparison.
 
-**Why this step matters more than it looks:** analysis against an unpinned segmentation is
-the most common silent correctness bug in connectomics. Your code runs fine; it answers a
-different question than it did last week. See
+**Why this step matters more than it looks:** analysis against an unpinned segmentation
+fails silently. Your code runs, and it answers a different question than it did last
+week. See
 [Unit 04 §2]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}).
 
 </section>
@@ -169,7 +174,7 @@ different question than it did last week. See
 
 **Produce:** one number and one honest paragraph. "Cells at proofreading level N have a
 mean input count of X; cells below it, Y" is the kind of statement that belongs in a
-methods section, and almost no analysis includes it.
+methods section, and few analyses include it.
 
 </section>
 
@@ -202,6 +207,8 @@ def perturb(G, merge_p, split_p, rng=random.Random(0)):
             if others:
                 nx.contracted_nodes(H, n, rng.choice(others),
                                     self_loops=False, copy=False)
+    # Splits are left for you: with probability split_p, divide a node's edges
+    # between it and a new node.
     return H
 ```
 
@@ -209,7 +216,7 @@ def perturb(G, merge_p, split_p, rng=random.Random(0)):
 If the band crosses the null expectation, your result is not robust to your own measured
 error rate — and reporting that is more valuable than not knowing it.
 
-This is roughly forty lines of code and among the strongest things you can put in a
+The full version is roughly forty lines of code, and the figure belongs in a
 supplement.
 
 </section>

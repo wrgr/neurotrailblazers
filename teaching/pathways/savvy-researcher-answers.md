@@ -33,8 +33,9 @@ are dashed because none has been decided.
 Accept thread 2 if the learner argues it has a nearer deadline; it does, but the draft
 exists, so the conversation is repair rather than planning. Many pairs miss thread 5.
 Career mechanics is direct: do not ghost-write a review, ask to be named. Many journals
-also require reviewers to tell the editor, or ask permission, before involving anyone
-else. Tomás can check the journal's reviewer policy.
+also require reviewers to consult the editor before involving anyone else; the Nature
+Portfolio journals, for example, ask for the colleague's name with the report. Tomás
+can check this journal's reviewer policy.
 
 Thread 1 is not a crisis. A multi-year offer is often a department commitment that may be
 paid from different sources in different years. It is still a guess until someone says it.
@@ -49,10 +50,10 @@ paid from different sources in different years. It is still a guess until someon
 3. Data stay on the Lindqvist lab's systems; Tomás may show the QC method, not their data,
    in lab meeting.
 4. Tomás runs and reports; the Lindqvist lab interprets and writes.
-5. As currently understood: acknowledgement for a single run; middle authorship if the
+5. As currently understood: acknowledgment for a single run; middle authorship if the
    script is adapted or the QC appears as a figure. Revisit if scope grows.
 6. If it stops, the script stays with the Brennan lab and the data with the Lindqvist lab;
-   any QC report already sent can be used with acknowledgement.
+   any QC report already sent can be used with acknowledgment.
 7. Either side may publish their own part; neither publishes the other's without asking.
 
 **Proposing it:** "Happy to help Dr. Lindqvist. Before I start, could we write half a page
@@ -65,9 +66,9 @@ differently. CRediT describes contributions. It does not decide whether they mee
 authorship criteria; the lab or journal does.
 
 **Message to Dr. Idris:** "Thanks for sending the draft. I saw it uses my 900 proofread
-segments and the QC script. I think I'm in the acknowledgements; could we talk about
+segments and the QC script. I think I'm in the acknowledgments; could we talk about
 whether that's the right place? I may have missed a conversation." It assumes an oversight,
-names the work, and leaves room for a correct answer of "acknowledgement".
+names the work, and leaves room for a correct answer of "acknowledgment".
 
 ## 3. Personal map: what good looks like
 
@@ -97,7 +98,7 @@ Score four dimensions **0–2 each**:
 A proficient response scores at least 6/8 with no zero on dimension 3. This is a local
 teaching rubric, not a validated assessment instrument.
 
-Do not grade the authorship outcome a learner proposes. Acknowledgement can be the right
+Do not grade the authorship outcome a learner proposes. Acknowledgment can be the right
 answer. Grade whether the question is asked early, specifically and in writing.
 
 Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.

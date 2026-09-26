@@ -56,14 +56,14 @@ content_type: core
   <a href="#decisions">Decisions</a>
   <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
-  <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
+  <a href="{{ '/avatars/' | relative_url }}">All personas</a>
 </nav>
 
 <section class="section" id="story">
   <h2>Amir's Story</h2>
   <div style="background: var(--brain-gray); padding: 2rem; border-radius: 12px; margin: 1rem 0;">
     <p style="font-size: 1.1rem; line-height: 1.8; color: var(--synapse-black); margin: 0;">
-      Amir came from the world of edge devices and object tracking. But when he saw a 3D fly brain reconstructed by a global team, he knew: this was the next frontier. He’s fluent in models and metrics, but unsure what a dendrite <em>means</em>. And he’s learning that science doesn’t move like startups do. But the challenge—that's the hook.
+      Amir came from the world of edge devices and object tracking. Then he saw a 3D fly brain reconstructed by a global team and wanted to work on it. He’s fluent in models and metrics, but unsure what a dendrite <em>means</em>. And he’s learning that science doesn’t move like startups do. But the challenge—that's the hook.
     </p>
   </div>
   <div class="cards-grid" style="margin: 2rem 0;">

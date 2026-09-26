@@ -15,5 +15,5 @@ timeline on /datasets/ so both read the same numbers. Pass: dataset.
     {% if include.dataset.synapses %}<li><strong>Synapses:</strong> {{ include.dataset.synapses }}</li>{% endif %}
     {% if include.dataset.size %}<li><strong>Size:</strong> {{ include.dataset.size }}</li>{% endif %}
   </ul>
-  <p><a href="{{ include.dataset.url | relative_url }}">Dataset details</a>{% if include.dataset.portal %} &middot; <a href="{{ include.dataset.portal }}">Data portal</a>{% endif %}</p>
+  <p><a href="{{ include.dataset.url | relative_url }}">Dataset details</a>{% if include.dataset.portal %}{% assign portal_head = include.dataset.portal | slice: 0, 1 %} &middot; {% if portal_head == '/' %}<a href="{{ include.dataset.portal | relative_url }}">Data portal</a>{% else %}<a href="{{ include.dataset.portal }}" target="_blank" rel="noopener">Data portal</a>{% endif %}{% endif %}</p>
 </article>

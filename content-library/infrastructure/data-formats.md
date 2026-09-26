@@ -23,16 +23,6 @@ tags:
   - connectomics:graph-storage
   - methodology:data-management
 micro_lesson_id: ml-infra-data-formats
-reference_images:
-  - src: /assets/images/content-library/infrastructure/data-formats/data-representation-hierarchy.png
-    alt: "Hierarchy of data representations from voxels to meshes to skeletons to graphs"
-    caption: "Data abstraction hierarchy: raw voxels → segmentation labels → 3D meshes → topological skeletons → connectivity graph. Each level trades detail for compactness."
-  - src: /assets/images/content-library/infrastructure/data-formats/format-comparison-table.png
-    alt: "Table comparing data formats by size, query speed, and supported analyses"
-    caption: "Format comparison: Precomputed, N5, Zarr for volumes; OBJ, Neuroglancer mesh for surfaces; SWC, skeleton API for morphology."
-  - src: /assets/images/content-library/infrastructure/data-formats/conversion-workflow.png
-    alt: "Workflow diagram showing conversion paths between data formats"
-    caption: "Format conversion paths: arrows show supported conversions between volume, mesh, skeleton, and graph representations with typical tools."
 combines_with:
   - reconstruction-pipeline
   - provenance-and-versioning
@@ -42,7 +32,7 @@ content_type: core
 
 ## Overview
 
-A connectomics dataset is not one thing — it is a family of representations at different levels of abstraction. Raw images, segmentation volumes, surface meshes, morphological skeletons, and connectivity graphs each capture different aspects of the same underlying biology. Choosing the right representation for a given task is a core technical skill, because each format has characteristic strengths, blind spots, and computational costs.
+A connectomics dataset is a family of representations at different levels of abstraction. Raw images, segmentation volumes, surface meshes, morphological skeletons, and connectivity graphs each capture different aspects of the same underlying biology. Choosing the right representation for a given task is a core technical skill, because each format has characteristic strengths, blind spots, and computational costs.
 
 ---
 
@@ -84,7 +74,7 @@ The most fundamental representation: a 3D array of voxel intensities (raw images
 
 - **Chunking**: Large volumes are divided into chunks (e.g., 128³ or 256³ voxels). Chunks are the unit of I/O — you load one chunk at a time, not the whole volume. Chunk size affects performance: larger chunks = fewer I/O operations but more wasted bandwidth if you only need a small region.
 - **Multi-resolution pyramids**: Store the same volume at multiple resolutions (full res, 2× downsampled, 4×, 8×...). Enables efficient browsing — you see the overview at low resolution and zoom into high resolution on demand.
-- **Compression**: Typical compression ratios of 2-10× for EM data (depending on algorithm: gzip, lz4, zstd, JPEG for lossy). Segmentation volumes compress much better than raw images (large uniform regions).
+- **Compression**: Lossless codecs (gzip, lz4, zstd) gain only a few-fold on noisy EM imagery; lossy JPEG gains more at a cost in fine detail, and the right quality setting is a decision to test on your own data. Segmentation volumes compress much better than raw images because they contain large uniform regions.
 
 ### When to use volumetric data
 
@@ -95,7 +85,7 @@ The most fundamental representation: a 3D array of voxel intensities (raw images
 
 ### Limitations
 
-- **Storage**: A 1 mm³ volume at 4 nm resolution is ~10^13 voxels, ~10 TB at 8-bit. With segmentation (32-bit or 64-bit labels), double or quadruple that.
+- **Storage**: A 1 mm³ volume at 4 × 4 × 40 nm voxels is ~1.6 × 10^15 voxels, ~1.6 PB at 8-bit. Segmentation labels are 32-bit or 64-bit per voxel before compression, so they are usually stored at lower resolution and compressed with label-aware codecs.
 - **Query efficiency**: "Which neurons are within 10 μm of this synapse?" requires scanning voxels unless you also maintain a spatial index.
 
 ---
@@ -137,7 +127,7 @@ Marching cubes algorithm (or variants) applied to the segmentation volume. For e
 
 - Lose internal structure (organelle distributions, cytoplasmic features)
 - Mesh topology errors (self-intersections, holes) can arise from noisy segmentation boundaries
-- Large storage for complex neurons (a single pyramidal cell mesh can be >100 MB at full resolution)
+- Large storage for complex neurons: a full-resolution mesh of a large pyramidal cell can run to millions of triangles
 
 ---
 
@@ -158,7 +148,7 @@ Tree-graph representations of neuron morphology. Each skeleton is a set of nodes
 | Format | Description |
 |--------|-------------|
 | **SWC** | Standard text format for neuron morphologies. Each line: ID, type, x, y, z, radius, parent_ID. Widely supported by morphology tools (NeuroM, Neurolucida, NEURON simulator). |
-| **JSON skeleton** | Used by Neuroglancer and CloudVolume |
+| **Neuroglancer precomputed skeleton** | Binary skeleton format with a JSON `info` file; read by Neuroglancer and read/written by CloudVolume |
 | **CATMAID skeleton** | Database-backed skeleton with annotations |
 
 ### Key properties
@@ -260,7 +250,7 @@ count and tortuosity are properties of a method as much as of a cell.
 
 | Approach | How it works | What it is good at | What it loses |
 |---|---|---|---|
-| **TEASAR-family** (kimimaro and relatives) | Repeated shortest-path extraction through a distance-transformed segmentation, with penalties that push the path toward the object's center | Robustness on noisy segmentation; deterministic; scales to whole volumes | Tends to over-penetrate into spine heads or shave them off entirely, depending on the invalidation radius |
+| **TEASAR-family** (kimimaro and relatives) | Repeated shortest-path extraction through a distance-transformed segmentation, with penalties that push the path toward the object's center | Tolerates noisy segmentation; deterministic; scales to whole volumes | Tends to over-penetrate into spine heads or shave them off entirely, depending on the invalidation radius |
 | **Mesh contraction** | Iteratively collapse a surface mesh toward its medial axis, then extract a curve skeleton | Follows fine geometry closely; good radius estimates | Sensitive to mesh defects; expensive; a hole in the mesh can reroute a branch |
 | **Manual tracing** (CATMAID-style) | A human places and connects nodes | The gold standard for topology; annotator judgment handles ambiguity | Slow, and carries the annotator's systematic biases |
 
@@ -306,8 +296,9 @@ smoothed. If you need the voxels, keep the voxels.
 ## Storage, in proportion
 
 Format choices look abstract until they meet a storage budget. For a
-mm³-scale volume, the orders of magnitude are roughly as Unit 04 §2 sets them
-out: raw and aligned imagery in the petabytes, segmentation labels in the
+mm³-scale volume, the orders of magnitude are roughly as
+[Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) §5
+sets them out: raw and aligned imagery in the petabytes, segmentation labels in the
 hundreds of terabytes with label-aware compression, meshes in the low
 terabytes, and skeletons in the tens of gigabytes.
 
@@ -340,7 +331,7 @@ different shapes — and expect to shard the result.
 
 ## References
 
-- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Sato M et al. (2000) "TEASAR: Tree-structure extraction algorithm for accurate and robust skeletons." *Proc. Pacific Conference on Computer Graphics and Applications*.
 - Rubinov M, Sporns O (2010) "Complex network measures of brain connectivity: Uses and interpretations." *NeuroImage* 52(3):1059-1069.
 - Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443.

@@ -5,7 +5,7 @@ permalink: /content-library/neuroanatomy/dendrite-biology/
 image: /assets/images/content-library/neuroanatomy/dendrite-biology.svg
 image_alt: "Stylized vector art: organelle profiles inside a curved membrane section."
 description: >
-  Comprehensive instructor reference on dendritic structure and ultrastructure as
+  Instructor reference on dendritic structure and ultrastructure as
   observed in electron microscopy, covering proximal-to-distal morphology gradients,
   dendritic spine classification, postsynaptic density, microtubule organization,
   local protein synthesis, and practical identification strategies for annotators.
@@ -22,9 +22,8 @@ topics:
   - dendritic mitochondria
   - smooth endoplasmic reticulum
 primary_units:
-  - unit-1-intro-to-neuroanatomy
-  - unit-2-cell-biology-of-neurons
-  - unit-3-synaptic-structure
+  - "05"
+  - "06"
 difficulty: intermediate
 tags:
   - neuroanatomy:dendrite
@@ -36,16 +35,6 @@ tags:
   - methodology:identification
   - cell-types:pyramidal-neuron
 micro_lesson_id: ml-neuro-dendrite
-reference_images:
-  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/dendrite-cross-section.png
-    alt: "EM cross-section of a dendrite showing microtubule arrays and mitochondria"
-    caption: "Dendritic shaft in cross-section showing parallel microtubules and elongated mitochondria as hallmark features."
-  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/spine-type-gallery.png
-    alt: "Gallery of dendritic spine morphologies: thin, mushroom, stubby, and filopodium"
-    caption: "Four canonical spine types with PSD area measurements. Mushroom spines have the largest PSDs and are considered mature, stable synapses."
-  - src: /assets/images/content-library/neuroanatomy/dendrite-biology/psd-ultrastructure.png
-    alt: "High-magnification view of a postsynaptic density at an asymmetric synapse"
-    caption: "Postsynaptic density at an asymmetric (excitatory) synapse with cleft material and presynaptic vesicle cluster."
 combines_with:
   - soma-ultrastructure
   - synapse-classification
@@ -58,7 +47,7 @@ content_type: core
 
 ## Introduction
 
-Dendrites are the primary input-receiving compartments of neurons. They extend from the soma as tapering, branching processes that collectively form the dendritic arbor — the antenna system through which a neuron samples its synaptic environment. In electron microscopy, dendrites present a distinctive set of ultrastructural features that distinguish them from axons and glia. This script provides annotators and instructors with a comprehensive guide to dendritic morphology, spine classification, and the organelle signatures that define the dendritic compartment.
+Dendrites are where most of a neuron's synaptic input arrives. They leave the soma as tapering, branching processes that together form the dendritic arbor. In electron microscopy they carry a set of ultrastructural features that separate them from axons and glia. This entry covers dendritic morphology, spine classification, and the organelle cues annotators use to call a profile a dendrite. It does not cover dendritic physiology beyond what helps with identification.
 
 ---
 
@@ -67,26 +56,26 @@ Dendrites are the primary input-receiving compartments of neurons. They extend f
 Dendrites receive synaptic input from presynaptic terminals, integrate excitatory and inhibitory signals through passive cable properties and active conductances, and transmit the resulting electrical signals toward the soma. Unlike axons, dendrites:
 
 - **Taper distally**: Their caliber decreases progressively from the soma toward distal tips.
-- **Branch extensively**: A single pyramidal neuron may have 30-40 branch points in its basal dendrites alone.
-- **Contain ribosomes**: Dendrites support local protein synthesis, a feature absent from mature vertebrate axons under normal conditions.
+- **Branch extensively**: The basal arbor of a single pyramidal neuron can have dozens of branch points.
+- **Contain visible ribosomes**: Dendrites carry out local protein synthesis, and polyribosomes are easy to find in them in EM. Mature axons also translate some mRNAs (Shigeoka et al., 2016), but at levels low enough that ribosomes are rarely seen in axons in conventional EM.
 - **Have mixed microtubule polarity**: Both plus-end-out and minus-end-out microtubules coexist (Baas et al., 1988), unlike the uniform plus-end-out polarity of axonal microtubules.
 
 ---
 
 {% include figure.html
    src="/assets/images/content-library/em/dendrite-and-organelles.jpg"
-   alt="A dendritic profile in human cortex at 4 nm per pixel showing a dark mitochondrion within pale cytoplasm, surrounded by smaller neighbouring profiles."
-   caption="A dendritic profile at full resolution, identified as dendrite by the dataset&#39;s subcompartment model. The dark elongated body is a mitochondrion &mdash; larger and more branched than the ones typical of axons, which is one of the organelle cues this entry relies on."
+   alt="A dendritic profile in human cortex at 4 nm per pixel showing a dark mitochondrion within pale cytoplasm, with a myelinated axon above it and smaller neighboring profiles around it."
+   caption="A dendritic profile at full resolution, identified as dendrite by the dataset&#39;s subcompartment model. The dark body with internal membranes, about half a micrometer across, is a mitochondrion cut in cross-section. One section cannot show how long or branched it is; that takes serial sections. The myelinated axon at the top is a useful contrast."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ## 2. Proximal vs. Distal Morphology
 
-The character of a dendrite changes dramatically from its base to its tips.
+A dendrite looks different near the soma than at its tips.
 
 ### Proximal Dendrites (within ~50 micrometers of the soma)
 
-- **Caliber**: 5-10 micrometers in diameter for large pyramidal neurons.
-- **Organelle content**: Rich in rough ER (continuous with somatic Nissl substance), multiple Golgi outposts, abundant mitochondria, and dense microtubule arrays.
+- **Caliber**: Several micrometers at the origin; the apical trunk of a large pyramidal neuron is the thickest dendrite you will meet, and basal dendrites start thinner.
+- **Organelle content**: Rich in rough ER (continuous with somatic Nissl substance), abundant mitochondria and dense microtubule arrays. Some dendrites, especially apical trunks, also carry Golgi outposts.
 - **Ribosomes**: Polyribosomes are plentiful both on ER membranes and free in the cytoplasm.
 - **EM appearance**: The cytoplasm appears relatively dark and granular due to the density of ribosomes and organelles. Microtubules run longitudinally in loose parallel bundles.
 
@@ -99,27 +88,29 @@ The character of a dendrite changes dramatically from its base to its tips.
 
 ### The Organelle Gradient
 
-This proximal-to-distal gradient of decreasing organelle density is a key concept for annotators. When tracing a process away from a soma and it gradually loses rough ER, becomes thinner, and develops spines, you can be confident you are following a dendrite.
+Organelle density falls from proximal to distal, and annotators use that gradient. If a process you are tracing away from a soma gradually loses rough ER, becomes thinner and develops spines, you are following a dendrite.
 
 ---
 
 ## 3. Dendritic Spines in Detail
 
-Dendritic spines are small protrusions from the dendritic shaft that serve as the postsynaptic elements for most excitatory synapses in the mammalian brain. They are among the most intensively studied structures in neuroscience and are critical for annotators to identify correctly.
+Dendritic spines are small protrusions from the dendritic shaft that carry the postsynaptic side of most excitatory synapses in the mammalian forebrain. Missing a spine, or attaching it to the wrong dendrite, removes or misassigns a synapse, so spines are a large share of proofreading work.
+
+The named classes below come from Peters and Kaiserman-Abramof (1970), made quantitative by Harris et al. (1992), who separated mushroom from thin spines by a head diameter of about 0.6 micrometers. Treat the classes as landmarks on a continuum. In serial-section reconstructions of 144 spines on layer 2/3 pyramidal cells of mouse visual cortex, every measured parameter varied continuously, with no clearly separable spine types (Arellano et al., 2007). Useful ranges from that study: spine head volume 0.01-0.30 cubic micrometers (75% below 0.1), neck diameter 0.09-0.51 micrometers (mean 0.2), neck length 0.1-2.2 micrometers.
 
 ### 3.1 Thin Spines
 
-- **Morphology**: Long, narrow neck (often 0.1-0.2 micrometers wide, up to 2 micrometers long) topped by a small bulbous head.
-- **Head volume**: Approximately 0.01-0.1 cubic micrometers.
-- **Frequency**: The most common spine type in adult cortex, often comprising 50-65% of all spines (Harris et al., 1992).
+- **Morphology**: Long, narrow neck topped by a small head, with head diameter below about 0.6 micrometers.
+- **Head volume**: Small, mostly below 0.1 cubic micrometers.
+- **Frequency**: Usually the most common spine type in adult cortex and hippocampus; the exact share depends on region and on the classification criteria. In rat CA1, thin-spine density increases about four-fold between postnatal day 15 and adulthood (Harris et al., 1992).
 - **Functional significance**: Often called "learning spines" because they are thought to be dynamic structures that can enlarge (becoming mushroom spines) during synaptic potentiation or retract during depression.
 - **EM identification**: Look for a narrow stalk connecting to the dendrite shaft, with a small terminal swelling containing a PSD.
 
 ### 3.2 Mushroom Spines
 
 - **Morphology**: Short, wide neck supporting a large, bulbous head.
-- **Head volume**: Greater than 0.6 cubic micrometers in many classification schemes; some mushroom spines exceed 1 cubic micrometer.
-- **Frequency**: Approximately 25-35% of spines in adult cortex.
+- **Head size**: Head diameter above about 0.6 micrometers (Harris et al., 1992), which corresponds to a head volume of roughly 0.1 cubic micrometers or more.
+- **Frequency**: A minority of spines; the share depends on region, age and where the classifier draws the line. In rat CA1, mushroom spines with perforated PSDs and spine apparatuses increased about four-fold in density between postnatal day 15 and adulthood (Harris et al., 1992).
 - **Functional significance**: Called "memory spines" because they are stable over time and associated with strong, potentiated synapses. The large head accommodates a larger PSD with more AMPA receptors.
 - **EM identification**: The large head is conspicuous and often contains a spine apparatus. The PSD is prominent and easy to identify.
 
@@ -127,24 +118,24 @@ Dendritic spines are small protrusions from the dendritic shaft that serve as th
 
 - **Morphology**: No clear neck; the head appears to sit directly on the dendritic shaft.
 - **Head volume**: Variable, typically intermediate.
-- **Frequency**: More common in developing tissue and in proximal dendritic segments. In mature cortex, they are relatively rare (5-10%).
-- **Functional significance**: May represent a transitional form. Some authors argue that many "stubby" spines are artifacts of fixation or section angle.
+- **Frequency**: More common in developing tissue. In rat CA1, stubby spine density fell by more than half between postnatal day 15 and adulthood (Harris et al., 1992).
+- **Functional significance**: May represent a transitional form. In a single section, a thin or mushroom spine whose neck runs out of the plane can look stubby, which is why Harris et al. (1992) classified spines through serial sections.
 - **EM identification**: A PSD-bearing protrusion with little or no constriction at its base.
 
 ### 3.4 Branched and Complex Spines
 
 - **Morphology**: A single spine stalk branches to produce two or more heads, each potentially bearing its own synapse.
-- **Frequency**: Rare (less than 5%), but more common in some brain regions (e.g., CA1 stratum radiatum) and after learning paradigms.
-- **Significance**: Multiple synaptic contacts on one spine suggest complex local computation. They may represent recently split synapses or multi-innervated structures.
+- **Frequency**: Uncommon. In rat CA1 their density increased about four-fold between postnatal day 15 and adulthood (Harris et al., 1992).
+- **Significance**: Each head can receive its own presynaptic partner, so one branched spine can mean two synapses in the connectome. Check each head separately.
 
 ### 3.5 The Spine Apparatus
 
 The spine apparatus is a smooth ER derivative found within the necks and heads of a subset of dendritic spines, particularly mushroom spines. In EM:
 
 - **Appearance**: Stacked, flattened cisternae of smooth membrane separated by electron-dense plates (containing the protein synaptopodin).
-- **Size**: Typically 2-4 cisternae stacked together, spanning 100-300 nm.
-- **Function**: Serves as a local calcium store and is implicated in synaptic plasticity. Knockout of synaptopodin eliminates spine apparatuses and impairs long-term potentiation (Deller et al., 2003).
-- **Not all spines have one**: Spine apparatuses are found in roughly 10-30% of spines, predominantly in larger mushroom-type spines (Spacek & Harris, 1997).
+- **Size**: A small stack of cisternae, usually only a few, often lying in the neck or at the base of the head.
+- **Function**: Proposed as a local calcium store and implicated in synaptic plasticity. Mice lacking synaptopodin have no spine apparatuses and show reduced long-term potentiation in CA1 (Deller et al., 2003).
+- **Not all spines have one**: Spine apparatuses occur in a subset of spines, predominantly large mushroom spines. In adult rat CA1, more than 80% of large mushroom spines had a spine apparatus, while fewer than half of small spines contained any smooth ER (Spacek & Harris, 1997).
 
 ---
 
@@ -152,7 +143,7 @@ The spine apparatus is a smooth ER derivative found within the necks and heads o
 
 The PSD is the defining ultrastructural feature of excitatory postsynaptic sites. In EM it appears as an electron-dense band on the cytoplasmic face of the postsynaptic membrane.
 
-- **Dimensions**: 20-500 nm in diameter (en face), 30-50 nm thick for Type I (asymmetric) synapses.
+- **Dimensions**: On layer 2/3 pyramidal cell spines in mouse visual cortex, PSD areas on spines ranged from 0.01 to 0.33 square micrometers, mean 0.08 (Arellano et al., 2007). For a round PSD that is about 110-650 nm across. At Type I (asymmetric) synapses the PSD is a few tens of nanometers thick.
 - **Composition**: A dense meshwork of scaffolding proteins (PSD-95, Homer, Shank) that anchor glutamate receptors (AMPA and NMDA subtypes), adhesion molecules, and signaling enzymes.
 - **PSD size correlates with synapse strength**: Larger PSDs contain more AMPA receptors and correlate with larger spine heads and higher synaptic efficacy (Harris & Weinberg, 2012).
 - **EM appearance**: A dark band closely apposed to the postsynaptic membrane, usually thicker than any corresponding presynaptic density. In en face reconstructions from serial sections, the PSD appears as a disc or irregular patch.
@@ -165,8 +156,8 @@ Microtubules in dendrites have a characteristic mixed polarity arrangement (Baas
 
 - **Plus-end-out microtubules**: Similar to axonal microtubules, oriented with growing ends pointing distally.
 - **Minus-end-out microtubules**: Unique to dendrites in vertebrate neurons, oriented with growing ends pointing toward the soma.
-- **Proportion**: Roughly 50% plus-end-out in proximal dendrites, shifting to a higher proportion of plus-end-out in distal segments.
-- **Functional significance**: Mixed polarity enables bidirectional transport by kinesin (plus-end-directed) and dynein (minus-end-directed) motors without requiring both motor types for retrograde transport.
+- **Proportion**: In cultured rat hippocampal neurons, microtubules in the dendrite mid-region (about 75 micrometers from the soma) were split roughly equally between the two orientations, while within 15 micrometers of the growing tip they were uniformly plus-end-out, as in axons (Baas et al., 1988).
+- **Functional significance**: Minus-end-out microtubules let dynein, a minus-end-directed motor, carry cargo away from the soma into dendrites. This is one proposed basis for sorting cargo between dendrites and axons.
 - **Contrast with axons**: Vertebrate axons have uniformly plus-end-out microtubules. This polarity difference is one of the fundamental molecular distinctions between the two compartment types.
 
 In EM, microtubules appear as hollow cylinders approximately 25 nm in outer diameter. They are visible in longitudinal section as parallel lines and in cross-section as small circles. Annotators cannot determine polarity from standard EM images, but the distinction is important for understanding why dendrites and axons have different organelle distributions.
@@ -175,9 +166,9 @@ In EM, microtubules appear as hollow cylinders approximately 25 nm in outer diam
 
 ## 6. Ribosomes in Dendrites: Local Protein Synthesis
 
-A landmark discovery by Steward and Levy (1982) demonstrated that polyribosomes are selectively positioned beneath dendritic spine synapses. This finding revolutionized the understanding of synaptic plasticity.
+Steward and Levy (1982) found that polyribosomes in dentate granule cell dendrites sit preferentially under the base of spines: 71% were under membrane mounds that were probably spine bases and about 10% under identified spine necks. That result was an early piece of evidence for synapse-specific local translation.
 
-- **Polyribosome clusters**: Groups of 5-10 ribosomes arranged in rosettes or spirals, often found at the base of dendritic spines and within the dendritic shaft.
+- **Polyribosome clusters**: Small groups of ribosomes arranged in rosettes or spirals, often at the base of dendritic spines and within the dendritic shaft.
 - **mRNA localization**: Specific mRNAs (CaMKII-alpha, Arc/Arg3.1, MAP2) are transported into dendrites and translated locally in response to synaptic activity.
 - **Functional significance**: Local translation allows individual synapses to modify their protein composition independently, supporting synapse-specific plasticity.
 - **EM identification**: Ribosomes appear as electron-dense particles approximately 20-25 nm in diameter. Polyribosomes are visible as clusters. Their presence in a process is strong evidence for dendritic (not axonal) identity.
@@ -189,11 +180,11 @@ A landmark discovery by Steward and Levy (1982) demonstrated that polyribosomes 
 
 Dendritic mitochondria have distinctive features compared to axonal mitochondria:
 
-- **Size**: Generally larger and more branched than axonal mitochondria. Dendritic mitochondria can be 2-6 micrometers long.
-- **Distribution**: Found throughout the dendritic shaft and at branch points. They cluster near active spine synapses, where energy demand for ion pumping and protein synthesis is high.
-- **Cristae**: Well-developed lamellar cristae, indicating high metabolic capacity.
-- **Contrast with axons**: Axonal mitochondria tend to be smaller (0.5-2 micrometers), more uniform in size, and more elongated.
-- **Annotation cue**: If a process contains large, branched mitochondria alongside ribosomes, it is very likely a dendrite.
+- **Size**: In cortical pyramidal neurons, dendritic mitochondria are typically long and tubular, often several micrometers, and can fill much of the shaft (Lewis et al., 2018).
+- **Distribution**: Found throughout the dendritic shaft and at branch points, running parallel to the microtubules.
+- **Cristae**: Well-developed lamellar cristae.
+- **Contrast with axons**: In the same neurons, axonal mitochondria are uniformly short (Lewis et al., 2018).
+- **Annotation cue**: A long mitochondrion followed across serial sections, alongside ribosomes, points to a dendrite. A single section shows only a cross-section, so length needs neighboring sections.
 
 ---
 
@@ -219,7 +210,7 @@ Step-by-step identification:
 3. **Find the PSD**: On the head of the spine, a thick electron-dense band (approximately 200 nm long, 40 nm thick) is visible on the cytoplasmic face of the membrane.
 4. **Check the presynaptic side**: Apposed to the PSD, a terminal containing clustered round vesicles (approximately 40 nm diameter) is present. The presynaptic membrane shows active zone densification.
 5. **Classify the synapse**: Thick PSD + round vesicles + wide cleft = asymmetric (Type I) excitatory synapse on a spine.
-6. **Classify the spine**: The moderate head size and clearly defined neck suggest a thin-to-mushroom transitional morphology.
+6. **Classify the spine**: A 0.4 micrometer head is below the 0.6 micrometer mushroom threshold, and the neck is clearly defined, so this is a thin spine by the Harris et al. (1992) criteria. Measure the head at its widest section across the series, not in whichever section you happen to be viewing.
 7. **Check adjacent sections**: Verify the spine connection to the parent dendrite in 2-3 neighboring sections to confirm it is not an isolated profile.
 
 ---
@@ -230,19 +221,19 @@ Step-by-step identification:
 
 | Feature | Thin Dendrite | Unmyelinated Axon |
 |---|---|---|
-| Caliber | Gradually tapering, may vary | Uniform caliber along length |
-| Ribosomes | Scattered polyribosomes present | Absent (no local translation) |
+| Caliber | Gradually tapering, may vary | Roughly constant between varicosities (boutons) |
+| Ribosomes | Scattered polyribosomes present | Rarely seen (axonal translation exists, at low levels) |
 | Microtubule polarity | Mixed (cannot see directly in EM) | Uniform plus-end-out |
 | Microtubule spacing | Loosely spaced, irregular | More regular spacing |
 | Rough ER | May have sparse RER profiles | Absent |
 | Smooth ER | Tubular SER network present | Single SER tubule or absent |
-| Mitochondria | Intermediate size, well-developed cristae | Smaller, more elongated |
-| Spines | May bear spines (if spiny neuron) | Never bears spines |
-| Synaptic contacts | Receives synapses (postsynaptic) | Makes synapses (presynaptic) |
+| Mitochondria | Often long and tubular across sections | Short, uniform in length |
+| Spines | May bear spines (if spiny neuron) | Does not bear spines |
+| Synaptic contacts | Mainly receives synapses (postsynaptic) | Mainly makes synapses (presynaptic) |
 
 **Decision process**:
 
-1. Look for ribosomes or rough ER. If present, the process is a dendrite. This is the single most reliable cue.
+1. Look for ribosomes or rough ER. If present, the process is almost certainly a dendrite. This is the strongest single cue, but ribosomes are hard to resolve at 8 nm per pixel or coarser.
 2. Look for spines or PSDs on the process. Postsynaptic specializations indicate a dendrite.
 3. Check for vesicle clusters within the process. Synaptic vesicles indicate an axon terminal.
 4. Examine caliber changes. Tapering suggests a dendrite.
@@ -256,7 +247,8 @@ Step-by-step identification:
 |---|---|
 | "All dendrites have spines." | Only certain neuron types are spiny (pyramidal cells, medium spiny neurons). Many interneuron subtypes have smooth (aspiny) dendrites that receive synapses directly on the shaft. |
 | "Spine size is fixed." | Spines are highly dynamic structures that change size and shape over minutes to hours in response to activity. Long-term potentiation enlarges spines; depression shrinks them (Bourne & Harris, 2008). |
-| "Thin spines are immature." | Thin spines are found abundantly in adult tissue. They may represent learning substrates, not just developmental precursors. |
+| "Thin spines are immature." | Thin spines are abundant in adult tissue; in rat CA1 their density rises about four-fold from postnatal day 15 to adulthood (Harris et al., 1992). They may be learning substrates rather than developmental precursors. |
+| "Every spine fits one of the four named types." | The types are landmarks on a continuum. In a serial-section study of mouse visual cortex, spine shapes varied continuously with no clearly separable types (Arellano et al., 2007). Record the measurements, not only the label. |
 | "Dendrites do not conduct action potentials." | Many dendrites support backpropagating action potentials and dendritic spikes (calcium or sodium), though these are not visible in EM. |
 | "Ribosomes are always on rough ER." | Free polyribosomes (not attached to ER membranes) are abundant in dendrites and are the primary site of local dendritic translation. |
 | "The PSD is a membrane structure." | The PSD is a cytoplasmic protein meshwork on the intracellular face of the postsynaptic membrane, not a membrane itself. |
@@ -273,6 +265,11 @@ Step-by-step identification:
 6. Steward O, Levy WB (1982) "Preferential localization of polyribosomes under the base of dendritic spines in granule cells of the dentate gyrus." *Journal of Neuroscience* 2:284-291.
 7. Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System*, 3rd edition. Oxford University Press.
 8. Spacek J, Harris KM (1997) "Three-dimensional organization of smooth endoplasmic reticulum in hippocampal CA1 dendrites and dendritic spines of the immature and mature rat." *Journal of Neuroscience* 17:190-203.
+9. Deller T, Korte M, Chabanis S, et al. (2003) "Synaptopodin-deficient mice lack a spine apparatus and show deficits in synaptic plasticity." *Proceedings of the National Academy of Sciences* 100:10494-10499.
+10. Arellano JI, Benavides-Piccione R, DeFelipe J, Yuste R (2007) "Ultrastructure of dendritic spines: correlation between synaptic and spine morphologies." *Frontiers in Neuroscience* 1:131-143. doi:10.3389/neuro.01.1.1.010.2007
+11. Shigeoka T, Jung H, Jung J, et al. (2016) "Dynamic axonal translation in developing and mature visual circuits." *Cell* 166:181-192. doi:10.1016/j.cell.2016.05.029
+12. Lewis TL, Kwon SK, Lee A, Shaw R, Polleux F (2018) "MFF-dependent mitochondrial fission regulates presynaptic release and axon branching by limiting axonal mitochondria size." *Nature Communications* 9:5008. doi:10.1038/s41467-018-07416-2
+13. Peters A, Kaiserman-Abramof IR (1970) "The small pyramidal neuron of the rat cerebral cortex. The perikaryon, dendrites and spines." *American Journal of Anatomy* 127:321-355. doi:10.1002/aja.1001270402
 
 ---
 

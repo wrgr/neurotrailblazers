@@ -28,8 +28,8 @@ content_type: path
 | **You finish with** | A one-page study brief for a connectomics question of your own |
 
 This unit is deliberately not about microscopes. It is about the reasoning step that
-happens *before* anyone buys a microscope, and that most failed connectomics projects
-skip: deciding what claim the data will be asked to support.
+happens *before* anyone buys a microscope, and the one that is easiest to skip:
+deciding what claim the data will be asked to support.
 
 ---
 
@@ -67,11 +67,13 @@ cheap and fast.
 The consequence is specific, not general. Light microscopy can tell you that two
 neurons' arbors *overlap in space*. It cannot tell you whether they are *connected*,
 because at 250 nm two membranes 20 nm apart are one blur. In dense cortical neuropil,
-a 1 µm³ box contains on the order of a dozen distinct neurites; below the diffraction
-limit they are indistinguishable.
+unmyelinated axons 80–300 nm across are packed membrane to membrane, so a single
+250 nm blur can span several of them.
 
-Electron microscopy at 4 nm × 4 nm × 40 nm resolves all of the rows above. That is the
-entire reason the field tolerates the cost described in the next section.
+Electron microscopy at 4 nm × 4 nm × 40 nm resolves every row above in the section
+plane. The 40 nm step in z is coarser, which is why clefts cut at an angle and thin
+spine necks that run steeply through the stack stay hard to follow (Unit 08). That
+resolution is the reason the field tolerates the cost described in the next section.
 
 > **A caution that belongs here and not later.** Resolving a synapse is not the same as
 > knowing its sign, strength, or whether it is active in a behaving animal. EM gives
@@ -86,12 +88,11 @@ entire reason the field tolerates the cost described in the next section.
 "map the connectome" of a cortical column. What is the strongest single objection?</summary>
 
 Sparse labeling plus diffraction-limited optics gives *potential* contact (arbor
-overlap), not synaptic connection. Contact-based predictions of connectivity —
-"Peters' rule" style inference — are known to be poor predictors of actual synaptic
-connectivity in cortex: neurons that touch frequently often do not connect, and
-connection probability varies strongly by cell type. You would be measuring a
-proxy whose relationship to the quantity of interest is itself an open research
-question.
+overlap), not synaptic connection. Predicting synapses from contact ("Peters' rule")
+is unreliable at the level of individual neuron pairs: axons and dendrites that touch
+often do not form a synapse, and connection probability varies by cell type. You
+would be measuring a proxy whose relationship to the quantity of interest is itself
+an open research question.
 
 A secondary objection: sparse labeling means you cannot see the unlabeled
 partner, so even a true synapse has an anonymous other side.
@@ -117,11 +118,10 @@ total = 250,000 x 250,000 x 25,000 = 1.56 x 10^15 voxels
 ```
 
 At 8-bit grayscale that is **~1.56 petabytes of raw image data for one cubic
-millimeter** — before alignment, before segmentation, before meshes, before any
-derived product. Published petascale volumes land in this range: the H01 human
-temporal cortex sample and the MICrONS mouse visual cortex volume are both roughly
-one cubic millimeter and both are reported in the 1.4–2 PB range depending on what is
-counted and how it is compressed.
+millimeter**, before alignment, segmentation, meshes or any other derived product.
+Published petascale volumes land in this range. Both are about 1 mm³: H01 (human
+temporal cortex) is 1.4 PB aligned and 1.8 PB raw (Shapson-Coe et al. 2024), and
+MICrONS (mouse visual cortex) is about 2 PB raw (MICrONS Consortium 2025).
 
 Now extrapolate, and notice where it breaks. Every row is arithmetic at the stated voxel
 size, 8-bit and uncompressed, not the size of a released dataset (FAFB, imaged at
@@ -132,16 +132,17 @@ terabytes, about 1 EB.
 | Target | Volume | Raw data at 4×4×40 nm | Status |
 |---|---|---|---|
 | *C. elegans* nervous system | ~0.00005 mm³ | ~0.1 TB | Done, repeatedly, since 1986 |
-| Adult *Drosophila* brain | ~0.08 mm³ | ~125 TB | Done (FAFB / FlyWire, hemibrain) |
-| Mouse cortical column / 1 mm³ | 1 mm³ | ~1.6 PB | Done (MICrONS) |
+| Adult *Drosophila* brain | ~0.08 mm³ | ~125 TB | Done (FAFB / FlyWire; the hemibrain covers the central brain) |
+| 1 mm³ of cortex | 1 mm³ | ~1.6 PB | Done (MICrONS in mouse, H01 in human) |
 | Whole mouse brain | ~500 mm³ | **~800 PB** (est.) | The current grand challenge |
-| Whole human brain | ~1.2 × 10⁶ mm³ | **~10²¹ bytes** | Not a plan; a horizon |
+| Whole human brain | ~1.2 × 10⁶ mm³ | **~2 × 10²¹ bytes** (est.) | Not a plan; a horizon |
 
-**Teaching point.** The jump from fly brain to 1 mm³ of mouse cortex is ~12×. The jump from 1 mm³ to
-whole mouse brain is ~500×, and it is not a jump in imaging alone — it is a jump in
-sectioning reliability, storage economics, alignment robustness, segmentation
-accuracy, and above all *proofreading labor*. Programs such as NIH BRAIN CONNECTS
-exist because that 500× is an engineering problem, not a microscopy problem.
+**Teaching point.** The jump from fly brain to 1 mm³ of mouse cortex is ~12×. The jump
+from 1 mm³ to whole mouse brain is ~500×, and imaging is only one part of it. The same
+factor applies to sectioning reliability, storage, alignment, segmentation accuracy
+and, above all, *proofreading labor*. NIH's BRAIN CONNECTS program, whose first 11
+awards were announced in September 2023, funds exactly this scaling work: its first
+theme is electron microscopy pipelines to map the mouse brain.
 
 ### Check yourself
 
@@ -151,13 +152,15 @@ isotropic 8 nm (FIB-SEM). How much raw data, roughly, and what changes relative 
 4×4×40 nm?</summary>
 
 Voxel volume = 8 × 8 × 8 = 512 nm³. 0.05 mm³ = 5 × 10⁷ µm³ = 5 × 10¹⁶ nm³.
-5 × 10¹⁶ / 512 ≈ **1 × 10¹⁴ voxels ≈ 100 TB.**
+5 × 10¹⁶ / 512 ≈ **1 × 10¹⁴ voxels ≈ 100 TB at 8 bits per voxel.** For comparison,
+the same 0.05 mm³ at 4 × 4 × 40 nm is 5 × 10¹⁶ / 640 ≈ 8 × 10¹³ voxels, about 80 TB.
 
 What changes: isotropy. At 4 × 4 × 40 nm the z-axis is 10× coarser than xy, so thin
-processes running in-plane are easy and processes crossing z steeply are hard —
-this anisotropy is the single largest driver of automated segmentation errors
-(Unit 08). Isotropic 8 nm removes that asymmetry, at the cost of throughput and of
-a hard limit on how large a volume FIB-SEM can practically mill.
+processes running in-plane are easy to follow and processes crossing z steeply are
+hard. This anisotropy is a major source of automated segmentation errors (Unit 08).
+Isotropic 8 nm removes the asymmetry. The price is throughput, and a practical limit
+on how much volume FIB-SEM can mill in one run; larger volumes have to be cut into
+slabs first.
 </details>
 
 ---
@@ -262,7 +265,7 @@ reversal potential and developmental stage. State it as "putatively inhibitory".
 
 **(iii) Bin A**, and note that it is a *ratio*, which quietly controls for a lot of
 reconstruction bias. Ratios between comparably reconstructed populations are more
-robust than absolute counts, which are sensitive to completeness. This is a habit
+stable than absolute counts, which are sensitive to completeness. This is a habit
 worth acquiring early.
 </details>
 
@@ -278,14 +281,15 @@ it. Match the claim type to the reconstruction state you actually have:
 | "Cell X synapses onto cell Y" | Both partners proofread through the synapse; synapse manually verified | A merge error invents the connection |
 | "Cell X has n inputs" | Full dendritic arbor proofread and closed | Split errors truncate the arbor; n is an undercount of unknown size |
 | "Type A prefers type B over type C" | Both target populations proofread to comparable completeness | Differential completeness masquerades as biological preference |
-| "Motif M is enriched" | A closed subgraph with quantified edge precision/recall | False edges from merges inflate dense motifs superlinearly |
+| "Motif M is enriched" | A closed subgraph with quantified edge precision/recall | Merges and splits change motif counts in a direction that depends on the motif and the graph rules |
 | "This projection is absent" | Stated detection sensitivity and searched volume | Absence of evidence reported as evidence of absence |
 
-The fourth row deserves emphasis and reappears in Unit 09: **merge errors do not add
-noise symmetrically to motif counts.** A single merge fuses two neurons' partner
-lists, which manufactures triangles and reciprocal pairs at a rate far above the
-error rate itself. Motif analysis on unproofread segmentation is not conservative;
-it is biased in a specific and predictable direction.
+The fourth row comes back in Unit 09. A single merge fuses two neurons' partner lists.
+That can close triangles and reciprocal pairs that do not exist, but it can also
+collapse two edges into one or turn a real connection into a self-loop that the graph
+drops. Which way the count moves depends on the motif and on how the graph was built.
+So motif analysis on unproofread segmentation is not automatically conservative, and
+you cannot assume the errors cancel: you have to model them for your own graph.
 
 ---
 
@@ -299,23 +303,26 @@ examples rather than enthusiasm.
   useful: having the complete wiring diagram of 302 neurons did *not* immediately
   yield an understanding of behavior. It took decades of physiology and genetics on
   top of the map. Witvliet's developmental series added something the single adult
-  map could not — which connections are stable across maturation and which are not.
-- **Adult *Drosophila* (hemibrain, ~25,000 neurons; FlyWire whole brain, ~139,000
-  neurons and ~54.5 million synapses).** The first whole-brain connectome of an animal
-  with complex behavior. It produced genuinely new biology: complete cell-type
-  censuses, the wiring of the central complex as a ring-attractor navigation system,
-  and connectome-constrained network models that predicted taste and behavioral
-  responses which were then tested experimentally.
-- **MICrONS, ~1 mm³ mouse visual cortex (~200,000 cells, ~500 million synapses),
-  with two-photon functional imaging of the same tissue.** The important thing here is
-  not size; it is the co-registration. Structure and function in the same neurons is
-  what lets you ask whether wiring predicts tuning — and the answer so far is
-  "partially, with cell-type-specific rules", which is exactly the kind of result that
-  only this data type can produce.
-- **H01, ~1 mm³ human temporal cortex (~57,000 cells, ~150 million synapses).**
-  Demonstrated that human tissue obtained surgically can be prepared and reconstructed
-  at this scale, and immediately surfaced features rare or absent in mouse, such as
-  axons forming dozens of synapses onto a single target.
+  map could not: which connections are stable across maturation and which are not.
+- **Adult *Drosophila* (hemibrain, ~25,000 neurons, Scheffer et al. 2020; FlyWire
+  whole brain, 139,255 neurons and ~54.5 million synapses, Dorkenwald et al. 2024).**
+  The first complete wiring diagram of an adult fly brain. It produced new biology:
+  complete cell-type censuses (Schlegel et al. 2024); a central-complex connectome
+  whose network motifs fit an attractor model of head direction (Hulse et al. 2021);
+  and a whole-brain model built from FlyWire connectivity that predicted which
+  neurons drive feeding, a prediction then tested with optogenetics and behavior
+  (Shiu et al. 2024).
+- **MICrONS, ~1 mm³ mouse visual cortex (more than 200,000 cells, ~524 million
+  synapses), with two-photon calcium imaging of ~75,000 neurons in the same tissue
+  (MICrONS Consortium 2025).** Size is not the point here; co-registration is.
+  Structure and function in the same neurons let you ask whether wiring predicts
+  tuning. So far the answer is "partly": neurons with similar responses are more
+  likely to be connected, across layers and areas (Ding et al. 2025). Only this data
+  type can produce that kind of result.
+- **H01, ~1 mm³ human temporal cortex (~57,000 cells, ~150 million synapses;
+  Shapson-Coe et al. 2024).** Showed that tissue removed in surgery can be prepared and
+  reconstructed at this scale. Among thousands of weak inputs to each neuron it found
+  rare, powerful axonal inputs of up to 50 synapses onto a single target.
 
 Note what is common to the useful results: each one is a *census* or a *comparison*,
 not an assertion about computation. That is the shape of a defensible connectomics
@@ -329,28 +336,28 @@ These five slides are framing devices, not evidence. Use each one to rehearse th
 
 <div class="cards-grid">
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Motivating question visual for why map the brain" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question, asked before any instrument is chosen. Use it to practice the move this unit is built on — name the measurable structural endpoint, the null model, and the explicit non-claim that would have to replace it before the question is fundable.</p>
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S10-01.png' | relative_url }}" alt="Diagram of a brain with arrows to four functions: perception, navigation, memory, and decision and action selection" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S10:</strong> The motivating question, asked before any instrument is chosen: how does the brain support perception, navigation, memory and decisions? Each of those is a Bin C topic as stated. Use it to practice the move this unit is built on: name the measurable structural endpoint, the null model, and the explicit non-claim that would have to replace it before the question is fundable.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="Brain data framing visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S11:</strong> Framing for what counts as brain data. Read it against the resolution table in §1: for whatever measurement the slide treats as data, ask which rows of that table it resolves, and therefore whether it can distinguish arbor overlap from an actual connection.</p>
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S11-01.png' | relative_url }}" alt="A densely segmented cylinder of neuropil, each process shown in a different color" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S11:</strong> Brain data at synapse resolution: a small cylinder of neuropil in which every process has its own color. Read it against the resolution table in §1. Dense segmentation like this depends on resolving the bold rows, which is what lets you tell arbor overlap from an actual connection.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png' | relative_url }}" alt="Reverse engineering analogy visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Techtalk S12:</strong> The reverse-engineering analogy, and where it stops. Check it against the bin boundaries in §3 — a wiring diagram is a constraint on the space of possible dynamics, not a simulation, so any “this circuit computes X” reading of the analogy is a Bin C claim wearing Bin A clothing.</p>
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-21_02388_X_TECHTALK_-S12-01.png' | relative_url }}" alt="Stock image of a computer chip on a circuit board" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Techtalk S12:</strong> The reverse-engineering analogy, and where it stops. Check it against the bin boundaries in §3. A wiring diagram constrains the space of possible dynamics; it is not a simulation. Any “this circuit computes X” reading of the analogy is a Bin C claim wearing Bin A clothing.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Course motivation context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L1 S04:</strong> Scope framing for the course. Compare whatever ambition it states against the extrapolation table in §2, and ask where on the fly-to-mouse-to-human ladder it lands — and whether the limiting factor at that rung is microscopy or proofreading labor.</p>
+    <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S04-01.png' | relative_url }}" alt="Electron micrograph of densely packed cortical neuropil" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L1 S04:</strong> One EM field of neuropil, the raw material of every row in the §2 extrapolation table. Every value in it is one byte of the arithmetic in §2. Ask how many fields like this a whole mouse brain would take, and whether the limiting factor at that scale is microscopy or proofreading labor.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/01-why-map-the-brain/FIG-SRC-MODULE12_LESSON1-S07-01.png' | relative_url }}" alt="Illustration of the pipeline from brain tissue and an electron microscope, through an image stack and a server room, to reconstructed neurons and a brain drawn over a computer chip" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L1 S07:</strong> The whole pipeline as one illustration: tissue and microscope, image stack, compute, reconstructed neurons — and a final arrow to a brain drawn over a chip. Sort the arrows with §3. Everything up to the reconstruction is structure. The last arrow is a claim about computation, and it stays in Bin C until someone names the assumption that would carry it.</p>
+    <p class="card-description"><strong>Module12 L1 S07:</strong> The whole pipeline as one illustration: tissue and microscope, image stack, compute, reconstructed neurons, and a final arrow to a brain drawn over a chip. Sort the arrows with §3. Everything up to the reconstruction is structure. The last arrow is a claim about computation, and it stays in Bin C until someone names the assumption that would carry it.</p>
   </article>
 </div>
 
-<p><small>Attribution: neuroAI and outreach source decks (historical/context visuals).</small></p>
+<p><small>Attribution: NeuroAI and outreach source decks (historical and context visuals).</small></p>
 
 ---
 
@@ -362,8 +369,8 @@ These five slides are framing devices, not evidence. Use each one to rehearse th
    structure and a verb phrase naming a relationship.
 2. **Structural signature.** What would have to be true of the wiring if your
    hypothesis were correct? What would have to be true if it were false? If you cannot
-   answer the second, stop and reframe — an unfalsifiable signature is the most common
-   defect at this step.
+   answer the second, stop and reframe. An unfalsifiable signature is the usual defect
+   at this step.
 3. **Three measurements, with units.** For example: synapses per connected pair
    (count); fraction of output synapses onto spines vs shafts (dimensionless ratio);
    path length from soma to synapse (µm). "Connectivity" is not a measurement.
@@ -429,7 +436,7 @@ From this unit:
   "Putatively excitatory (asymmetric morphology)" costs four words. Writing "excitatory" instead is not a shorthand; it is a different claim.
 
 - **Write down the sentence you refuse to write.**
-  Every study brief should carry an explicit non-claim. Reviewers read it as confidence, not weakness — but nobody tells you that, so most people leave it blank.
+  Every study brief should carry an explicit non-claim. It shows a reader where your evidence stops, which is a sign of control, not weakness. Nobody tells you this, so the line is often left blank.
 
 - **Prefer ratios to absolute counts when comparing.**
   A ratio between comparably reconstructed populations quietly controls for a great deal of reconstruction bias. Experienced people reach for it automatically.
@@ -440,18 +447,37 @@ etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practi
 ## What this unit does not cover
 
 Imaging physics (Unit 03), segmentation methods (Unit 08), and the statistics of
-motif testing (Unit 09). It also does not cover non-EM connectomics — barcoding
-approaches such as MAPseq/BARseq, and diffusion MRI tractography — which answer
-different questions at different scales; see Unit 02 for how these fit together.
+motif testing (Unit 09). It also does not cover non-EM connectomics, such as
+barcoding approaches (MAPseq/BARseq) and diffusion MRI tractography, which answer
+different questions at different scales; Unit 02 shows how these fit together.
 
 ---
+
+## Sources for the numbers in this unit
+
+- Abbott L.F. et al. (2020). The mind of a mouse. *Cell* 182:1372–1376. [doi:10.1016/j.cell.2020.08.010](https://doi.org/10.1016/j.cell.2020.08.010)
+- Cook S.J. et al. (2019). Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* 571:63–71. [doi:10.1038/s41586-019-1352-7](https://doi.org/10.1038/s41586-019-1352-7)
+- Ding Z. et al. (2025). Functional connectomics reveals general wiring rule in mouse visual cortex. *Nature* 640:459–469. [doi:10.1038/s41586-025-08840-3](https://doi.org/10.1038/s41586-025-08840-3)
+- Dorkenwald S. et al. (2024). Neuronal wiring diagram of an adult brain. *Nature* 634:124–138. [doi:10.1038/s41586-024-07558-y](https://doi.org/10.1038/s41586-024-07558-y)
+- Hulse B.K. et al. (2021). A connectome of the *Drosophila* central complex reveals network motifs suitable for flexible navigation and context-dependent action selection. *eLife* 10:e66039. [doi:10.7554/eLife.66039](https://doi.org/10.7554/eLife.66039)
+- MICrONS Consortium et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435–447. [doi:10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Scheffer L.K. et al. (2020). A connectome and analysis of the adult *Drosophila* central brain. *eLife* 9:e57443. [doi:10.7554/eLife.57443](https://doi.org/10.7554/eLife.57443)
+- Schlegel P. et al. (2024). Whole-brain annotation and multi-connectome cell typing of *Drosophila*. *Nature* 634:139–152. [doi:10.1038/s41586-024-07686-5](https://doi.org/10.1038/s41586-024-07686-5)
+- Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+- Shiu P.K. et al. (2024). A *Drosophila* computational brain model reveals sensorimotor processing. *Nature* 634:210–219. [doi:10.1038/s41586-024-07763-9](https://doi.org/10.1038/s41586-024-07763-9)
+- White J.G. et al. (1986). The structure of the nervous system of the nematode *Caenorhabditis elegans*. *Phil. Trans. R. Soc. B* 314:1–340. [doi:10.1098/rstb.1986.0056](https://doi.org/10.1098/rstb.1986.0056)
+- Witvliet D. et al. (2021). Connectomes across development reveal principles of brain maturation. *Nature* 596:257–261. [doi:10.1038/s41586-021-03778-8](https://doi.org/10.1038/s41586-021-03778-8)
+- Zheng Z. et al. (2018). A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*. *Cell* 174:730–743. [doi:10.1016/j.cell.2018.06.019](https://doi.org/10.1016/j.cell.2018.06.019)
+
+The extrapolation table in §2 is our arithmetic at 4 × 4 × 40 nm, 8-bit, uncompressed;
+the *C. elegans* volume is a rough estimate, not a measured value.
 
 ## Go deeper
 
 - [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — Cajal through BRAIN CONNECTS, with the lessons from each era
 - [NeuroAI bridge]({{ '/content-library/connectomics/neuroai-bridge/' | relative_url }}) — structure-function relationships and honest boundaries
 - [MICrONS visual cortex]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) — the functional co-registration case study
-- [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) — the NIH BRAIN CONNECTS flagship scaling effort
+- [MouseConnects HI-MC]({{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}) — a BRAIN CONNECTS project scaling EM to about 10 mm³ of mouse hippocampus
 - [*C. elegans* revisited]({{ '/content-library/case-studies/c-elegans-revisited/' | relative_url }}) — why a complete connectome was not an explanation
 
 ## Course links

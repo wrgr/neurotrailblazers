@@ -64,7 +64,7 @@ use_layout_hero: false
     <div class="axis-head">
       <span class="axis-eyebrow">Axis 2</span>
       <h2>Mode of use &mdash; how you are using it</h2>
-      <p class="axis-lede">The same track is a different thing depending on the situation you are in. Two modes exist today; the third is declared because the gap is real, not because it is built.</p>
+      <p class="axis-lede">The same track is a different thing depending on the situation you are in. Two modes exist today. The third is listed because the gap is real, but it has not been built.</p>
     </div>
     {% include ui/mode-picker.html %}
     <p class="mt-1"><a href="{{ '/modes/' | relative_url }}">What each mode assumes, gives, and does not give &rarr;</a></p>

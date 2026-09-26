@@ -24,8 +24,10 @@ legal advice and not a ruling on any real case.
 | 4 | Possible plagiarism | Copied words without credit. It is still a draft, and the cause may be pasted notes. |
 | 5 | Conduct that is not FFP | Mocking and exclusion breach a person, not the research record. Different routes apply. |
 
-A formal finding of misconduct also requires intent, knowledge or recklessness, which a
-formal process decides. Learners do not need to settle intent to act. Accept *cannot tell
+Under the federal policy, a formal finding also requires a significant departure from
+accepted practice, committed intentionally, knowingly or recklessly, and proven by a
+preponderance of the evidence. A formal process decides those things. Learners do not
+need to settle intent before they act. Accept *cannot tell
 yet* on scenario 3 or 4 if the learner names the deciding fact: for 3, whether the
 segments had in fact been checked some other way; for 4, whether Jonah meant to quote.
 
@@ -42,7 +44,8 @@ sentence: "The cell dropped from your figure looks like a merge error to me. Sho
 legend say it was excluded, and why?"
 
 **3, Eli.** *I must not mark segments as done that I have not checked.* Options: ask
-Marcus what he meant; offer an accurate alternative ("checked 140, 60 remaining"); take it
+Marcus what he meant; offer an accurate alternative (report how many are checked and how
+many are not); take it
 to Dr. Adeyemi if Marcus confirms. Rung 1, rising to 3 if the inaccurate number is
 knowingly submitted. First sentence: "Do you mean mark them as deferred? I haven't
 checked them, so I can't mark them as proofread."
@@ -75,7 +78,8 @@ It reports before the fix, names the figure and the deadline, and puts the one a
 last. It also names the scale of the error, which tells Wen whether any conclusion
 changes: a uniform factor of four shifts every value but leaves the ranking of cells
 intact. Two lines on prevention are a good addition: read the voxel size from the
-dataset's metadata rather than typing it, and record it in the notebook header, as in [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
+dataset's metadata instead of typing it, and add it to the notebook header block
+described on [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
 
 ## 4. Rung map: what good looks like
 

@@ -48,10 +48,10 @@ immigration status aloud.
 
 - **0–10 min:** follow-through from STEM Identity and Purpose: ask who made their first
   contribution and what happened next. Take two answers. Then tell the room about one
-  path you did not take, and which parts of your
-  own route were contingent rather than earned. MERIT stage 6 names the risk this guards
-  against: mentors reproduce their own trajectory by default. Ask: "What did you assume
-  was the next step before anyone asked you?"
+  path you did not take, and which parts of your own route were contingent rather than
+  earned. MERIT stage 6 names the risk this guards against: mentors reproduce their own
+  trajectory by default. Ask: "What did you assume was the next step before anyone
+  asked you?"
 - **10–18 min:** draw a timeline on the board with today, three deadlines and a contract
   end. Say: "Not deciding is an option. It has a deadline too." Then write Module 24's
   three reversibility questions: how long does it commit me, what does leaving early
@@ -85,7 +85,7 @@ five people they could ask. Do not hold up the room.
 
 ## Assessment and follow-through
 
-Use the four-dimension rubric on the model responses page. Collect sections 1–3.
+Use the four-dimension rubric on the model responses page. Collect sections 1 to 3.
 Section 4 stays with the learner unless they choose to share it.
 
 **Follow-through:** take the first dated action in the plan within a week, and put the

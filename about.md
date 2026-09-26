@@ -22,7 +22,7 @@ Four audiences, in the same site, deliberately:
 
 - **Trailblazing researchers** — people doing the work now, who need a reference layer
   they can trust and open problems scoped to a team.
-- **The scientific community** — neighbouring fields arriving with their own methods,
+- **The scientific community** — neighboring fields arriving with their own methods,
   who need the vocabulary and the boundaries of what connectomics currently supports.
 - **The public** — anyone curious about how a brain gets mapped, served by
   [The Neuronauts Expedition]({{ '/neuronauts/' | relative_url }}) and its
@@ -36,8 +36,8 @@ and the [tracks]({{ '/tracks/' | relative_url }}) say which path suits which rea
 
 ## What is here
 
-- **[The technical course]({{ '/technical-training/' | relative_url }})** — the
-  canonical units, from why anyone maps a brain through EM preparation, volume
+- **[The technical course]({{ '/technical-training/' | relative_url }})** — nine
+  units, from why anyone maps a brain through EM preparation, volume
   reconstruction, ultrastructure, proofreading and analysis. Each unit has worked
   examples, self-checks with answers, and a graded lab.
 - **[25 curriculum modules]({{ '/modules/' | relative_url }})** — the same material
@@ -52,7 +52,9 @@ and the [tracks]({{ '/tracks/' | relative_url }}) say which path suits which rea
 - **[Journal club]({{ '/technical-training/journal-club/' | relative_url }})** — a
   2,000-paper corpus with discussion prompts, tiered so a reading group can start at 500.
 - **[Teaching material]({{ '/teaching/' | relative_url }})** — facilitator guide,
-  session kits, decks and worksheets for whoever is running the room.
+  session kits, decks and worksheets for whoever is running the room, plus ten
+  [Professional Pathways workshops]({{ '/teaching/pathways/' | relative_url }}) and
+  [10- and 16-week syllabus maps]({{ '/teaching/syllabi/' | relative_url }}).
 
 If you have not used the site before, [Start Here]({{ '/start-here/' | relative_url }})
 is the shortest route in.
@@ -60,7 +62,7 @@ is the shortest route in.
 ## Where this sits in BRAIN CONNECTS
 
 NeuroTrailblazers is developed inside the HI-MC (MouseConnects) project, part of the
-[NIH BRAIN Initiative](https://braininitiative.nih.gov/)'s **BRAIN CONNECTS** program.
+[NIH BRAIN Initiative](https://www.nih.gov/brain)'s **BRAIN CONNECTS** program.
 It is **not** a data coordinating center:
 
 > **IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the
@@ -84,12 +86,10 @@ APEX.
 
 ## Who runs it
 
-NeuroTrailblazers is part of **HI-MC** (`UM1NS132250`), the Center for High-throughput
-Integrative Mouse Connectomics — the BRAIN CONNECTS project also known as
-[MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }}), which is reconstructing
-mouse hippocampal formation at synaptic resolution. HI-MC generates the science;
+HI-MC, also known as
+[MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }}), generates the science.
 NeuroTrailblazers is its training and outreach arm, and the curriculum is built so that
-what a learner practises here is what the project actually does.
+what a learner practices here is what the project actually does.
 
 **Contact:** Will Gray-Roncal, Johns Hopkins University —
 <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
@@ -104,7 +104,7 @@ Frontiers in Neuroengineering**, whose
 - Sydney Floryanzia
 - *Your name here.*
 
-That last line is not a joke. This curriculum is written in the open under
+That last line is meant literally. This curriculum is written in the open under
 [CC BY 4.0]({{ '/license/' | relative_url }}), and the fastest way onto the list is to fix
 something that is wrong. A corrected number, a figure caption that contradicts its figure,
 a worked example that would not survive a reviewer — all of it counts, and none of it
@@ -142,7 +142,7 @@ Please tell us — the material is full of numbers, and numbers drift.
 
 Site content is licensed **CC BY 4.0**; the code is **MIT**. Third-party figures and
 electron micrographs carry their own terms. See the
-[licence page]({{ '/license/' | relative_url }}) for what that means in practice.
+[license page]({{ '/license/' | relative_url }}) for what that means in practice.
 
 ## Cite this site
 

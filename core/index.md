@@ -30,8 +30,8 @@ This site has two layers, and confusing them is the fastest way to get lost in i
   </li>
 </ul>
 
-**Modes cut across all three** &mdash; you can walk a track alone, in a hosted session,
-or (eventually) inside a research program. The mode axis is independent of the
+**Modes cut across all three.** You can walk a track alone or in a hosted session. A
+third mode, inside a research program, is described but not built yet. The mode axis is independent of the
 topic axis: any track can be worked in any available mode.
 
 So: *what* you are learning is the track, *how* you are using it is the mode, and
@@ -39,7 +39,7 @@ So: *what* you are learning is the track, *how* you are using it is the mode, an
 
 <div class="cta-buttons">
   <a href="{{ '/tracks/' | relative_url }}" class="btn btn-primary">Pick a track</a>
-  <a href="{{ '/start-here/' | relative_url }}" class="btn btn-secondary">Pick a mode</a>
+  <a href="{{ '/modes/' | relative_url }}" class="btn btn-secondary">Pick a mode</a>
 </div>
 
 ## What is in the core
@@ -80,7 +80,7 @@ them entirely. See [teaching]({{ '/teaching/' | relative_url }}).
 ## Side quests
 
 Some material is deliberately off the main paths: coherent, worth doing, and not a
-prerequisite for anything. The largest is **proofreading** — around 17,000 words of
+prerequisite for anything. The largest is **proofreading**: about 15,000 words of
 reference material plus a unit, five worked scenarios, and a portfolio artifact, treated
 as an allocation problem under a fixed budget rather than as a stage in a sequence.
 

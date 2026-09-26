@@ -5,26 +5,22 @@ permalink: /content-library/case-studies/mouseconnects-himc/
 image: /assets/images/content-library/case-studies/mouseconnects-himc.svg
 image_alt: "Stylized vector art: a specimen ring with landmark points beside a data band."
 description: >
-  A comprehensive case study of the MouseConnects project and HI-MC (the Center for
-  High-throughput Integrative Mouse Connectomics) — an NIH BRAIN CONNECTS-funded effort to map the
-  synaptic connectome of the mouse hippocampus across ~10 mm³, representing the
-  largest connectomics undertaking to date and a flagship project for NeuroTrailblazers.
+  Case study of MouseConnects and HI-MC (the Center for High-throughput Integrative
+  Mouse Connectomics), an NIH BRAIN CONNECTS project imaging 10 mm³ of mouse
+  hippocampal formation at synaptic resolution. NeuroTrailblazers was developed
+  within it. No data has been released yet.
 topics:
   - hippocampal connectomics
   - BRAIN Initiative
   - large-scale EM
   - memory circuits
   - trisynaptic pathway
-  - serial-section TEM
+  - multibeam SEM
   - flood-filling networks
   - proofreading at scale
 primary_units:
-  - unit-01-intro-to-connectomics
-  - unit-02-em-acquisition
-  - unit-03-image-segmentation
-  - unit-05-proofreading
-  - unit-07-circuit-analysis
-  - unit-09-future-directions
+  - "01"
+  - "04"
 difficulty: intermediate
 tags:
   - case-studies:MouseConnects
@@ -37,16 +33,6 @@ tags:
   - imaging:multi-beam-SEM
   - proofreading:AI-assisted
 micro_lesson_id: ml-case-mouseconnects
-reference_images:
-  - src: /assets/images/content-library/case-studies/mouseconnects-himc/target-volume.png
-    alt: "MouseConnects HI-MC target volume showing hippocampal subregions CA1, CA3, and dentate gyrus"
-    caption: "MouseConnects HI-MC: NIH BRAIN CONNECTS flagship project targeting 10 mm³ of mouse hippocampus spanning CA1, CA3, and dentate gyrus."
-  - src: /assets/images/content-library/case-studies/mouseconnects-himc/pipeline-overview.png
-    alt: "HI-MC end-to-end acquisition and reconstruction pipeline diagram"
-    caption: "HI-MC pipeline: multi-beam SEM acquisition, cloud-based alignment, ML segmentation, distributed proofreading, and graph assembly at 10x MICrONS scale."
-  - src: /assets/images/content-library/case-studies/mouseconnects-himc/trisynaptic-circuit.png
-    alt: "Trisynaptic hippocampal circuit diagram showing entorhinal cortex to DG to CA3 to CA1 pathway"
-    caption: "The canonical trisynaptic circuit: entorhinal cortex to dentate gyrus to CA3 to CA1, the primary target for synaptic-resolution mapping."
 combines_with:
   - microns-visual-cortex
   - flywire-whole-brain
@@ -59,46 +45,43 @@ content_type: core
 
 > ### Before you quote a number from this page
 >
-> Every figure below — cell counts, synapse counts, volume sizes, proofreading
-> coverage — is a property of **a particular release** of this dataset, not of
-> the tissue. Releases are re-segmented, re-proofread and re-materialized, and
-> the numbers move when they are.
->
-> This page deliberately does not pin a version, because it would be stale
-> within months and you would inherit a wrong number with a citation attached.
-> Treat what follows as orientation. Before any figure reaches a paper, a talk,
-> or a grant, pull it yourself from the release you are analyzing and record the
-> version alongside it. [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
-> covers how; [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
-> has the lab.
+> MouseConnects has released no data. Every number below is a target or a
+> projection taken from the NIH award abstract or the partners' 2023
+> announcements, not a measurement, and the sources do not agree on data size.
+> When the project releases data, cite the release and its version, as
+> [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
+> describes. The [MouseConnects dataset page]({{ '/datasets/mouseconnects/' | relative_url }})
+> tracks the project's status.
 
 
 ## Overview
 
-The MouseConnects project, funded through the NIH BRAIN Initiative's Connectivity
-Across Scales (BRAIN CONNECTS)
-program, represents the most ambitious connectomics undertaking yet attempted. Led by
-Jeff Lichtman at Harvard University and Viren Jain at Google Research, with a network
-of collaborators across multiple institutions, the project aims to reconstruct the
-synaptic connectome of the mouse hippocampus — a volume of approximately 10 mm³
-spanning CA1, CA3, the dentate gyrus, and associated regions. Funded from 2023 to
-2028, with an expected dataset exceeding 10 petabytes, MouseConnects will produce a
-connectome roughly ten times the volume of MICrONS and orders of magnitude larger
-than any previous reconstruction.
+MouseConnects is funded through the NIH BRAIN Initiative's Connectivity Across
+Scales (BRAIN CONNECTS) program as award UM1NS132250, "A Center for High-throughput
+Integrative Mouse Connectomics" (HI-MC). The principal investigator is Jeff W.
+Lichtman at Harvard University, and the award runs from September 2023 to August 2028
+(NIH RePORTER). Harvard's announcement lists Princeton, MIT, Cambridge University and
+Johns Hopkins among the partners, with $30 million from NIH and $3 million more from
+Harvard and Princeton. Google Research is a partner and contributes its own resources
+without NIH funding. RePORTER records budget-year awards through fiscal 2026; check
+the [current record](https://reporter.nih.gov/project-details/UM1NS132250) before
+citing the project's status.
 
-The project's center, HI-MC — the Center for High-throughput Integrative Mouse
-Connectomics — focuses on capturing the complete synaptic wiring of one of the most
-studied and least understood circuits in neuroscience — the hippocampal formation,
-which is central to memory, spatial navigation, and the pathology of Alzheimer's
-disease and epilepsy.
+The award abstract says the project "will image 10 cubic millimeters" of the mouse
+hippocampal formation, a dataset that "may exceed tens of petabytes". That is roughly
+ten times the volume of MICrONS or H01 (our arithmetic). The abstract frames the work
+as a feasibility test for a whole mouse brain, which "is 50 times larger". The
+hippocampal formation was chosen because it is central to memory and spatial
+navigation, and it is also where Alzheimer's disease and temporal lobe epilepsy take
+an early toll.
 
 
 ## Why the Hippocampus?
 
-### The Most Studied Circuit in Neuroscience
+### A Heavily Studied Circuit Without a Synaptic Map
 
 The hippocampus has been a focus of neuroscience research for over half a century.
-Several features make it an ideal target for large-scale connectomics:
+Several features make it a strong target for large-scale connectomics:
 
 - **Well-defined architecture.** The hippocampus has a distinctive layered structure
   with clearly delineated subregions (dentate gyrus, CA3, CA2, CA1, subiculum) and
@@ -106,11 +89,12 @@ Several features make it an ideal target for large-scale connectomics:
   and their approximate locations are well characterized from decades of anatomical
   and physiological studies.
 
-- **The trisynaptic circuit.** The canonical hippocampal circuit — entorhinal cortex
-  to dentate gyrus (via the perforant path) to CA3 (via mossy fibers) to CA1 (via
-  Schaffer collaterals) — is one of the most studied circuit motifs in neuroscience.
+- **The trisynaptic circuit.** The canonical hippocampal circuit runs from entorhinal
+  cortex to dentate gyrus (via the perforant path), to CA3 (via mossy fibers), to CA1
+  (via Schaffer collaterals). It is one of the most studied circuit motifs in
+  neuroscience.
   It has been dissected with electrophysiology, modeled computationally, and linked to
-  specific cognitive functions. Yet it has never been mapped at synaptic resolution
+  specific cognitive functions. It has not yet been mapped at synaptic resolution
   across a volume large enough to capture the full spatial extent of its connectivity.
 
 - **Functional significance.** The hippocampus is essential for episodic memory
@@ -123,100 +107,112 @@ Several features make it an ideal target for large-scale connectomics:
   epilepsy. A reference connectome of the normal hippocampus would provide a baseline
   for understanding how disease disrupts circuit function.
 
-### Untested Hypotheses
+### Hypotheses a Synaptic Map Could Test
 
-Decades of hippocampal research have generated rich theoretical frameworks that
-remain untested at the synaptic level:
+Decades of hippocampal research have produced theories whose synaptic-level
+predictions have not been tested at population scale:
 
 - **Pattern separation in the dentate gyrus.** The dentate gyrus is hypothesized to
   separate overlapping input patterns into distinct representations through sparse
   coding and lateral inhibition. The specific connectivity that implements this
-  computation — how many granule cells each mossy fiber contacts, how interneurons
-  mediate separation — is unknown at the population level.
+  computation (how entorhinal inputs diverge onto granule cells, how few CA3 cells
+  each granule cell's mossy fiber contacts, how interneurons mediate separation) is
+  unknown at the population level.
 
 - **Attractor dynamics in CA3.** CA3 is proposed to function as an auto-associative
   memory network, using its dense recurrent excitatory connections to store and
-  retrieve patterns. The topology of the CA3 recurrent network — its degree
-  distribution, clustering, and relationship to stored memories — has never been
-  mapped.
+  retrieve patterns. The topology of the CA3 recurrent network (its degree
+  distribution, clustering, and relationship to stored memories) has not been
+  mapped at synaptic resolution at population scale.
 
 - **Replay sequences.** During sleep and rest, hippocampal neurons replay activity
   sequences experienced during waking behavior. Whether replay sequences correspond
   to specific synaptic pathways is a fundamental question that requires connectomic
   data to answer.
 
-- **Engram connectivity.** Memory engrams — the physical traces of specific
-  memories — are thought to be encoded in specific patterns of synaptic connectivity.
+- **Engram connectivity.** Memory engrams, the physical traces of specific
+  memories, are thought to be encoded in specific patterns of synaptic connectivity.
   A large-scale hippocampal connectome could reveal whether engram-tagged neurons
   (identified through activity markers) share distinctive wiring signatures.
 
 
 ## Technical Approach
 
-### Building on Established Methods
+### What the Award Abstract Describes
 
-MouseConnects builds directly on the technical foundations laid by previous large-scale
-connectomics projects, particularly MICrONS and the Lichtman lab's extensive
-experience with serial-section electron microscopy:
+The method is described in the NIH award abstract and the partners' 2023
+announcements. Nothing below is yet reported in a paper.
 
-- **Serial-section TEM.** The primary acquisition method is automated serial-section
-  transmission electron microscopy, using tape-based section collection (ATUM or
-  similar) and high-throughput imaging. The Lichtman lab has decades of experience
-  with this approach and has progressively increased throughput with each generation
-  of instrumentation.
+- **Targeting.** The volume of interest is chosen from a micro-CT scan of a whole
+  brain.
 
-- **Flood-filling network segmentation.** Automated segmentation will use flood-
-  filling networks (FFNs) developed at Google Research, the same core technology used
-  in FlyWire and other large-scale reconstructions. The Google team's ongoing
-  improvements to FFN architecture, training procedures, and inference efficiency are
-  expected to yield better segmentation quality and faster processing.
+- **Semithin sections, milled and imaged.** The block is cut into semithin serial
+  sections. Each section is imaged by multibeam scanning electron microscopy; an ion
+  beam then mills away a thin layer and the new surface is imaged, "until each section
+  is fully imaged". The abstract gives the aim as "minimizing distortions caused by
+  previous ultra-thin sectioning approaches". This builds on the Lichtman lab's
+  multibeam SEM work for H01, but it is a different sectioning scheme from H01's
+  ultrathin ATUM sections. Harvard's 2023 announcement describes two 91-beam SEMs,
+  one at Harvard and one at Princeton.
 
-- **CAVE infrastructure.** The Connectome Annotation Versioning Engine, originally
-  developed for FlyWire and used in MICrONS, will serve as the backend for
-  segmentation management, annotation, and collaborative proofreading.
+- **Automated reconstruction.** The abstract describes quality monitoring, image
+  compression, assembly of the volume, and labeling of neurons, glia, blood vessels,
+  myelin, cell bodies and synapses. Google Research's announcement says it will
+  refine its flood-filling networks (the segmentation method used for H01) and extend
+  SegCLR, its self-supervised method for cell-type and compartment labels.
 
-### Pushing the Boundaries of Scale
+- **Proofreading, registration and access.** The reconstruction is to be proofread,
+  registered to the Allen Institute mouse brain atlas, and shared through free online
+  tools to "render, proofread, or otherwise analyze" it. The abstract does not name
+  the proofreading platform. CAVE, used by FlyWire, MICrONS and H01, is the
+  best-documented system of that kind, and [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
+  explains how it works.
 
-At 10 mm³, the MouseConnects hippocampal volume is an order of magnitude larger than
-the MICrONS volume (1 mm³). This scale increase creates challenges across every stage
-of the pipeline:
+### What Ten Times the Volume Does to the Pipeline
 
-- **Acquisition throughput.** Imaging 10 mm³ at synaptic resolution will require
-  sustained high-throughput operation of multiple electron microscopes over years.
-  Advances in multi-beam SEM and automated section handling are critical to meeting
-  the timeline.
+At 10 mm³, the MouseConnects volume is an order of magnitude larger than MICrONS
+(about 1 mm³). That changes every stage of the pipeline:
 
-- **Data storage.** The expected dataset size exceeds 10 petabytes of raw imagery,
-  with additional petabytes of derived data (segmentations, synapse maps, skeletons).
-  Cloud-based storage and compute infrastructure is essential.
+- **Acquisition throughput.** H01's 1 mm³ took 326 days on one 61-beam microscope (Shapson-Coe et al. 2024).
+  Ten times the volume needs higher throughput per microscope, more microscopes, or
+  both; the abstract lists single-microscope imaging throughput as a performance
+  parameter the project will monitor.
 
-- **Computational load.** Segmenting and synapse-detecting across 10 PB of data will
+- **Data storage.** The published projections differ: "may exceed tens of petabytes"
+  (NIH abstract), "about 10,000 terabytes" (Harvard, 2023) and "about 25,000
+  terabytes, or 25 petabytes" (Google Research, 2023). Derived data (segmentations,
+  synapse maps, skeletons) add more.
+
+- **Computational load.** Segmenting and synapse-detecting across tens of petabytes will
   require proportionally more compute than MICrONS. Algorithmic improvements that
   reduce per-voxel compute costs will be as important as raw compute scaling.
 
-- **Proofreading at scale.** Complete manual proofreading of a 10 mm³ volume is
-  almost certainly infeasible with current approaches. MouseConnects will likely
-  require novel proofreading strategies that combine heavy automation (AI-assisted
-  error detection and correction) with targeted human review of high-priority
-  circuits and cell types. This is an area of active methodological development.
+- **Proofreading at scale.** FlyWire's whole fly brain took an estimated 33
+  person-years of proofreading. Exhaustive manual proofreading of 10 mm³ of mouse
+  tissue is unlikely to be affordable with current tools, so expect automated error
+  detection plus targeted human review of the circuits and cell types an analysis
+  needs. How to do that well is an open methods question.
 
 
 ## Expected Scientific Impact
 
-### The First Large-Scale Hippocampal Connectome
+### What the Project Says It Will Deliver
 
-No previous connectomics dataset has covered the hippocampus at the scale and
-resolution planned for MouseConnects. Existing hippocampal EM data consists of small
-volumes (tens of micrometers) or sparse reconstructions that cannot capture the full
-spatial extent of hippocampal circuits. MouseConnects will provide:
+Published hippocampal EM reconstructions cover much smaller volumes than the one
+planned here. The award abstract lists these aims:
 
-- Complete wiring diagrams of the dentate gyrus, CA3, CA2, and CA1 subregions.
-- Full reconstruction of the mossy fiber pathway from dentate granule cells to CA3.
-- Mapping of the Schaffer collateral system from CA3 to CA1.
-- Characterization of interneuron diversity and connectivity across all hippocampal
-  layers.
-- Long-range input pathways from entorhinal cortex (to the extent they are contained
-  within the volume).
+- Identify cell types by region and layer, defined by morphology and connectivity,
+  and relate them to transcriptomic classifications.
+- Reveal the detailed connectivity of hippocampal formation circuits, including local
+  and long-range microcircuit motifs.
+- Use those circuits to test and improve models of memory and spatial cognition.
+- Integrate the structural results with light microscopy and single-cell gene
+  expression data.
+- Monitor throughput and cost to judge what a whole-mouse-brain connectome would take.
+
+Which subregions and pathways (dentate gyrus, CA3, CA1, the mossy fibers, the
+Schaffer collaterals) fall inside the final volume is not stated in the sources
+above. Treat any such list as a hope until the data is released.
 
 ### Testing Computational Theories
 
@@ -233,9 +229,8 @@ theories:
 
 ### Comparison with Cortical Connectomics
 
-By producing a hippocampal connectome at a scale comparable to MICrONS, MouseConnects
-will enable direct comparison of wiring principles between cortex and hippocampus.
-Questions include:
+A hippocampal connectome at or above MICrONS scale would allow direct comparison of
+wiring principles between cortex and hippocampus. Questions include:
 
 - Are the same connectivity motifs (e.g., reciprocal excitation, perisomatic
   inhibition) present in both structures, or does the hippocampus have unique motifs?
@@ -247,47 +242,39 @@ Questions include:
 
 ## Connection to NeuroTrailblazers
 
-MouseConnects is the flagship project that the NeuroTrailblazers training program
-directly supports. The relationship operates at multiple levels:
+NeuroTrailblazers was developed within the HI-MC project
+([About]({{ '/about/' | relative_url }})). It is a training site, not a part of the
+project's research plan, and it has no formal role in producing or proofreading the
+MouseConnects data.
 
-### Workforce Development
+### Training for the Kind of Work the Project Needs
 
-The scale of MouseConnects demands a trained workforce for proofreading, annotation,
-and analysis. NeuroTrailblazers provides structured training in the skills needed to
-contribute to the project — EM image interpretation, segmentation proofreading,
-synapse identification, and connectomic data analysis. Students who complete the
-training program will be equipped to contribute directly to MouseConnects.
+A project of this size needs people who can proofread, annotate and analyze. The
+[technical units]({{ '/technical-training/' | relative_url }}) teach EM image
+interpretation, segmentation proofreading, synapse identification and connectomic
+data analysis on released datasets (MICrONS, H01, FlyWire) that use the same kinds of
+tools.
 
-### Proofreading Contributions
+### What the Award Commits To
 
-As the MouseConnects dataset becomes available for proofreading, NeuroTrailblazers
-participants may contribute to the proofreading effort as part of their training.
-This creates a mutually beneficial arrangement: students gain hands-on experience
-with real connectomics data, and the project benefits from additional proofreading
-labor.
-
-### Analysis and Interpretation
-
-Beyond proofreading, NeuroTrailblazers aims to train students in the computational
-skills needed to analyze connectomic data — network analysis, statistical modeling,
-visualization, and comparison with functional data. MouseConnects will generate an
-enormous volume of data that will require years of analysis by many researchers.
-NeuroTrailblazers alumni will be among those equipped to contribute.
+The award abstract commits the project to "involve undergraduates from
+underrepresented backgrounds in the proofreading and scientific discovery phases of
+our work, offering them mentoring as well as research experience." That is the
+project's own commitment, run by the project. Training here does not guarantee a
+place in it.
 
 ### Broadening Participation
 
-A key goal of both MouseConnects and NeuroTrailblazers is broadening participation
-in connectomics. The field has historically been concentrated in a small number of
-well-resourced laboratories. By providing training materials, tools, and pathways
-to contribution, NeuroTrailblazers aims to make connectomics accessible to a wider
-community — including students at institutions without existing connectomics
-infrastructure.
+Connectomics has been concentrated in a small number of well-resourced laboratories.
+NeuroTrailblazers publishes its training materials openly so that students at
+institutions without connectomics infrastructure can learn the same methods.
 
 
 ## Timeline and Milestones
 
-The MouseConnects project operates on a five-year timeline (2023-2028) with major
-milestones including:
+The MouseConnects award runs for five years (September 2023 to August 2028). The
+project has not published a milestone plan. The sequence below is our generic outline
+of how a project of this kind tends to unfold, not the project's schedule:
 
 - **Year 1-2**: Tissue preparation, initial EM acquisition, pipeline optimization.
   Development of hippocampus-specific segmentation models and quality metrics.
@@ -296,11 +283,10 @@ milestones including:
 - **Year 3-4**: Continued acquisition and segmentation. First scientific analyses of
   partially complete datasets. Community access to early data releases.
 - **Year 4-5**: Completion of acquisition. Large-scale proofreading campaigns.
-  Comprehensive analysis and publication of findings. Full public data release.
+  Analysis and publication of findings. Public data release.
 
-These timelines are approximate and subject to the technical challenges inherent in
-a project of this scale. Previous large-scale connectomics projects have consistently
-encountered unforeseen obstacles that required timeline adjustments.
+Large connectomics projects often take longer than planned: the MICrONS mouse was
+perfused in 2018, and the main MICrONS paper was published in 2025.
 
 
 ## Discussion Questions for Instructors
@@ -317,8 +303,8 @@ encountered unforeseen obstacles that required timeline adjustments.
 4. Compare the scientific strategy of MouseConnects (one region, very large volume)
    with an alternative approach (many small volumes from different brain regions).
    What are the tradeoffs?
-5. How might NeuroTrailblazers-trained students contribute to MouseConnects beyond
-   proofreading? What analytical skills would be most valuable?
+5. Once the MouseConnects data is released, which analyses could a student team run
+   on it beyond proofreading? What analytical skills would be most valuable?
 
 
 ## Key References
@@ -328,13 +314,24 @@ encountered unforeseen obstacles that required timeline adjustments.
   *National Institutes of Health*.
 - Lichtman, J. W., & Sanes, J. R. (2008). Ome sweet ome: what can the genome tell us
   about the connectome? *Current Opinion in Neurobiology*, 18(3), 346-353.
+  [10.1016/j.conb.2008.08.010](https://doi.org/10.1016/j.conb.2008.08.010)
 - Lichtman, J. W., Pfister, H., & Shavit, N. (2014). The big data challenges of
   connectomics. *Nature Neuroscience*, 17(11), 1448-1454.
+  [10.1038/nn.3837](https://doi.org/10.1038/nn.3837)
 - The MICrONS Consortium. (2025). Functional connectomics spanning multiple areas of
-  mouse visual cortex. *Nature*, 641, 435-447.
+  mouse visual cortex. *Nature*, 640, 435-447.
   [10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
-- Dorkenwald, S., et al. (2024). CAVE: Connectome Annotation Versioning Engine.
-  *Nature Methods*, 21, 2258-2261.
+- Dorkenwald, S., et al. (2025). CAVE: Connectome Annotation Versioning Engine.
+  *Nature Methods*, 22(5), 1112-1120.
   [10.1038/s41592-024-02426-z](https://doi.org/10.1038/s41592-024-02426-z)
+- NIH RePORTER. BRAIN CONNECTS: A Center for High-throughput Integrative Mouse
+  Connectomics (UM1NS132250; PI Jeff W. Lichtman).
+  [reporter.nih.gov](https://reporter.nih.gov/project-details/10665380)
+- Harvard Gazette. (September 2023). Human brain too big to map, so they're starting
+  with mice.
+  [news.harvard.edu](https://news.harvard.edu/gazette/story/2023/09/human-brain-too-big-to-map-so-theyre-starting-with-mice/)
+- Google Research. (2023). Google Research embarks on effort to map a mouse brain.
+  [research.google](https://research.google/blog/google-research-embarks-on-effort-to-map-a-mouse-brain/)
 - Amaral, D. G., & Witter, M. P. (1989). The three-dimensional organization of the
   hippocampal formation: a review of anatomical data. *Neuroscience*, 31(3), 571-591.
+  [10.1016/0306-4522(89)90424-7](https://doi.org/10.1016/0306-4522(89)90424-7)

@@ -34,17 +34,17 @@ message that reports it. This workshop does both. It works best after Orientatio
 because the bad-week report uses the same habit as the check-in: say it early and
 make it correctable.
 
-Before class, read the belonging page's *The test* and the lab norms four-part
-mistake script. Print the worksheet. **The case is invented.** Nobody is asked to
+Before class, read the belonging page's *The test* and the four-part mistake script
+on the lab norms page. Print the worksheet. **The case is invented.** Nobody is asked to
 describe a failure of their own aloud.
 
 ## Timed plan and facilitator cues
 
 - **0–10 min:** follow-through from Orientation: ask who held the check-in and what
-  one correction they added to their list. Take two answers, no more. Then narrate one
-  failure of your own. Say what you concluded about yourself
-  at the time, and what it turned out to be evidence about. Ask: "What would have
-  told you sooner that it was the data, not you?"
+  one correction they added to their list. Take two answers, no more. Then describe one
+  failure of your own: what you concluded about yourself at the time, and what it
+  turned out to be evidence about. Ask: "What would have told you sooner that it was
+  the data, not you?"
 - **10–20 min:** the distinction. Write three columns on the board: *what happened*,
   *what it is evidence about*, *what it is not evidence about*. Read the belonging
   page's line about treating a rejection as a verdict rather than as information about
@@ -76,7 +76,7 @@ and a skill gap named precisely is good news because it closes. Some are about t
 environment. If a learner describes being treated differently from peers, do not
 resolve it in the room. Point to the belonging page's *When the answer is that the
 environment is bad*, to [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}),
-and to a named person they can talk to afterwards.
+and to a named person they can talk to afterward.
 
 Grit language can move responsibility for a bad environment onto the person in it.
 The belonging page says so directly. Hold the same line here: resilience means
@@ -100,6 +100,6 @@ Built on the site's [Belonging]({{ '/hidden-curriculum/belonging/' | relative_ur
 [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) and
 [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }})
 pages, and on the skill-development and independent-research stages of the [MERIT
-framework]({{ '/models/' | relative_url }}), which ask that a first real failure be
+framework]({{ '/models/' | relative_url }}). Stage 4 asks that a first real failure be
 framed as information rather than verdict.
 Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.

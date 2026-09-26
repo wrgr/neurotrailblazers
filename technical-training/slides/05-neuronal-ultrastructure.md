@@ -49,14 +49,13 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ### Pre-class (10–15 min, async)
 
-- Read §1 and §2 of the unit page. Bring the organelle table.
+- Read §1 and §2 of the unit page (organelle catalog; calling a synapse). Bring the organelle table.
 - Open the unit page figure panel and preview at least three figures.
 - Bring one cue you find ambiguous.
 
 ### Materials
 
-- [Neuronal Ultrastructure lecture plan]({{ '/technical-training/slides/05-neuronal-ultrastructure/' | relative_url }})
-- The figure panel above (RIV-ULTRA shortlist)
+- The [unit page]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) and its *Visual training set* panel (RIV-ULTRA shortlist)
 - A shared annotation sheet with columns: patch ID | compartment call | synapse call |
   confidence tier | cue family 1 | cue family 2 | what would change my mind
 
@@ -73,7 +72,7 @@ The last column is the one that produces learning. Insist on it.
 | 30:00–42:00 | **Guided practice 2.** Two borderline patches, independently | Require two independent cues plus one uncertainty statement per patch |
 | 42:00–52:00 | **Consensus round.** Groups reconcile using the tier definitions | Classify each disagreement: cue conflict / missing context / vocabulary mismatch |
 | 52:00–58:00 | **Competency check.** One fully justified call each | Label + confidence + evidence chain + one alternative considered and rejected |
-| 58:00–60:00 | **Exit ticket.** "One cue I trust more now; one I still mistrust" | Collect these — they are your calibration data for next session |
+| 58:00–60:00 | **Exit ticket.** "One cue I trust more now; one I still mistrust" | Collect these. They are your calibration data for next session |
 
 ### The three misconceptions to target explicitly
 
@@ -88,7 +87,7 @@ The last column is the one that produces learning. Insist on it.
 ### Formative checkpoints
 
 - **At 20 min:** ≥ 80% of pairs cite two cues from *different families*. If not, stop
-  and re-teach §4 — proceeding without this makes the rest of the session unproductive.
+  and re-teach §4 of the unit page. The rest of the session depends on it.
 - **At 42 min:** the disagreement log distinguishes cue conflict from missing context.
 - **At 58 min:** each learner justifies one call with explicit uncertainty language.
 
@@ -124,8 +123,8 @@ unresolved ambiguity with an escalation note.
     <a class="resource-link" href="{{ '/technical-training/' | append: page.slug | remove: 'slides-' | append: '/' | relative_url }}">Open Unit Page</a>
   </div>
   <p><small>The HTML deck presents directly in a browser. The Markdown source is the one to
-  take if you want to adapt it &mdash; it renders with <a href="https://marp.app/">Marp</a>.
-  For PowerPoint, run <code>./scripts/render_marp.sh --pptx</code>; the exports are not
+  take if you want to adapt it; it renders with <a href="https://marp.app/">Marp</a>.
+  For PowerPoint, run <code>./scripts/render_marp.sh --pptx</code>. The exports are not
   committed because the full set runs to tens of megabytes.</small></p>
   <p><strong>Batch render helper:</strong> <code>./scripts/render_marp.sh</code></p>
 </div>

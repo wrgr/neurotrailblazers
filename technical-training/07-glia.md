@@ -29,10 +29,13 @@ content_type: path
 | **You finish with** | A glia recognition checklist and a measured discrimination score by cell class |
 
 **The claim this unit has to earn:** glia are not background, and correcting glia is
-not tidying up. Glia and their processes occupy roughly 20–40% of cortical tissue
-volume, and astrocytic processes specifically form a fine meshwork that interleaves
-with every neurite in the neuropil. That geometry is exactly what makes them the most
-frequent partner in a merge error.
+not tidying up. In the H01 sample of human temporal cortex, glia outnumbered neurons
+2:1 (32,315 versus 16,087; Shapson-Coe et al. 2024). Astrocytic processes form a fine
+meshwork through the neuropil: in layer IV of rat somatosensory cortex at P14, one
+astrocyte's processes filled 12.2% of the tissue volume in its territory, soma excluded
+([Kikuchi et al. 2020](https://doi.org/10.1093/cercor/bhz343)). That geometry puts
+astrocytic membrane beside almost every neurite, which is why it is a frequent partner
+in merge errors.
 
 ---
 
@@ -54,7 +57,7 @@ Take one merge: a fine astrocytic process is fused with a nearby dendrite.
 - It gains a branch that does not exist. Its total dendritic length, branch count, and
   arbor extent are all wrong.
 - The astrocytic process wanders through neuropil the real dendrite never visits.
-  Synapse detections along that path get attributed to this neuron — so the neuron
+  Synapse detections along that path get attributed to this neuron, so the neuron
   gains inputs from cells it has never contacted.
 - Because astrocytic processes ensheathe synapses, the merged path runs *directly
   past* a large number of synapses. The false-input yield per unit length of an
@@ -66,7 +69,7 @@ domain volume, synapse coverage, vascular contact — is also wrong.
 **What happens to your analysis:** the false inputs are not random. They are spatially
 local, which means they preferentially connect the neuron to its *neighbors*. A
 motif analysis will see enhanced local clustering; a distance-dependence analysis will
-see inflated short-range connectivity. Again the bias points toward an interesting
+see inflated short-range connectivity. The bias points toward an interesting
 result.
 
 > **Consequence for triage.** Glia-neuron merges should be ranked *above* many
@@ -87,7 +90,7 @@ which direction?</summary>
 - **Input count and dendritic length** fall. The merged path was a branch that does not
   exist, and it ran past synapses the real dendrite never contacted.
 - **Local clustering and short-range connectivity** fall. The false inputs were not
-  random: they came from the cell's spatial neighbours, because that is where the
+  random: they came from the cell's spatial neighbors, because that is where the
   astrocytic process ran. A merge like this inflates exactly the statistics that make
   a circuit look locally wired.
 - **The astrocyte's own morphometry** — domain volume, synapse coverage — changes too,
@@ -115,7 +118,7 @@ is corroboration.
 |---|---|
 | **Nucleus** | Pale, euchromatic, often irregular in contour |
 | **Cytoplasm** | Pale and "watery"; few organelles; bundles of intermediate filaments (GFAP) ~10 nm |
-| **Glycogen granules** | 20–30 nm, very dark, in clusters. **Neurons do not contain them.** |
+| **Glycogen granules** | 20–30 nm, very dark, in clusters. Neurons rarely show them in EM, so a cluster is strong evidence for astrocyte |
 | **Soma size** | ~8–10 µm, smaller than most neuronal somata |
 | **Processes** | Irregular, sheet-like, fill the gaps between neuronal elements rather than running as cylinders |
 | **Perisynaptic processes** | Extremely thin (< 100 nm), wrapping synapses — the hardest structures in the volume to segment |
@@ -124,8 +127,8 @@ is corroboration.
 
 {% include figure.html
    src="/assets/images/content-library/em/astrocyte-process.jpg"
-   alt="An astrocytic process in human cortex at 8 nm per pixel, showing pale cytoplasm with few organelles and an irregular outline that conforms to the neighbouring profiles."
-   caption="Astrocytic territory in human cortex, labelled astrocyte by H01&#39;s subcompartment model rather than picked by eye. Look for the pale, organelle-poor cytoplasm and the outline that takes whatever shape its neighbours leave. Then look for the diagnostic feature in the table above and notice how hard it is: glycogen granules are 20&ndash;30 nm, which is under four pixels at this rendering. Not seeing them here is the weak evidence the check-yourself in this section warns about."
+   alt="Part of an astrocyte cell body in human cortex at 8 nm per pixel: pale cytoplasm with scattered mitochondria, the curved edge of the nucleus at right, and packed neuropil at upper left."
+   caption="Part of an astrocyte cell body in human cortex, labeled astrocyte by H01&#39;s subcompartment model rather than picked by eye. This is soma, not a fine process: the curved membrane at right is the nuclear envelope, with clumped chromatin inside it. Look at how pale the cytoplasm is beside the neuropil at upper left. Then look for the diagnostic feature in the table above and notice how hard it is: glycogen granules are 20&ndash;30 nm, which is under four pixels at this rendering. Not seeing them here is the weak evidence the check-yourself in this section warns about."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ### Oligodendrocyte — *diagnostic feature: the darkest nucleus in the field*
@@ -135,19 +138,19 @@ is corroboration.
 | **Nucleus** | Small, round, extremely electron-dense heterochromatin. Distinctly darker than neuronal or astrocytic nuclei — usually identifiable at a glance and at low magnification |
 | **Cytoplasm** | Dense, abundant rough ER and ribosomes, prominent Golgi, microtubules present |
 | **Soma size** | ~6–8 µm |
-| **Processes** | Connect the soma to myelin sheaths; each cell myelinates on the order of 20–60 axonal segments |
+| **Processes** | Connect the soma to myelin sheaths; one cell makes tens of sheaths (internodes), with counts that vary by region and age |
 | **Myelin relationship** | Inner and outer tongues contain oligodendrocyte cytoplasm; paranodal loops at nodes of Ranvier |
 
-The practical difficulty is not the mature oligodendrocyte — it is the
-**oligodendrocyte precursor cell (OPC/NG2 cell)**, which has a paler nucleus and can
+The practical difficulty is the **oligodendrocyte precursor cell (OPC/NG2 cell)**,
+not the mature oligodendrocyte. An OPC has a paler nucleus and can
 resemble a small neuron or an astrocyte. If a cell looks "sort of oligodendrocyte but
 the nucleus is not dark enough", OPC is the leading hypothesis and the correct action
 is usually to flag rather than force.
 
 {% include figure.html
    src="/assets/images/content-library/em/myelin-in-grey-matter.jpg"
-   alt="A field of human cortical grey matter with every myelinated axon highlighted in orange by the dataset's myelin mask; a label reads myelin: 13.4% of this field."
-   caption="The oligodendrocyte&#39;s footprint in neuropil: every myelinated axon in this grey-matter field, highlighted by H01&#39;s myelin mask, which covers 13.4% of the field. Each sheath is oligodendrocyte membrane, made by a cell whose soma is not in view. What step 5 of the protocol keys on &mdash; the inner and outer tongues of oligodendrocyte cytoplasm at the sheath&#39;s edges &mdash; is not resolvable at this magnification; the mask tells you where to zoom in, not what you would find."
+   alt="A field of human cortical gray matter with every myelinated axon highlighted in orange by the dataset's myelin mask; a label reads myelin: 13.4% of this field."
+   caption="The oligodendrocyte&#39;s footprint in neuropil: every myelinated axon in this gray-matter field, highlighted by H01&#39;s myelin mask, which covers 13.4% of the field. Each sheath is oligodendrocyte membrane, made by a cell whose soma is not in view. What step 5 of the protocol keys on &mdash; the inner and outer tongues of oligodendrocyte cytoplasm at the sheath&#39;s edges &mdash; is not resolvable at this magnification; the mask tells you where to zoom in, not what you would find."
    credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
 ### Microglia — *diagnostic feature: dense elongated nucleus plus lysosomal content*
@@ -173,9 +176,10 @@ This is where most errors occur, so it gets its own table.
 | **Intermediate filaments** | Fine bundles (GFAP) | Absent (neurofilaments differ in distribution and context) |
 | **Trajectory across sections** | Wanders, changes shape section to section | Maintains a continuous, traceable trajectory |
 
-> **The shape cue is underused and it is robust.** Astrocytic processes are *space
-> filling* — their cross-section is whatever shape is left over after the neurites are
-> packed. Neurites are *tubes* — their cross-section is a shape in its own right. This
+> **The shape cue is underused, and it holds up when staining is poor.** Astrocytic
+> processes are *space filling*: their cross-section is whatever shape is left over
+> after the neurites are packed. Neurites are *tubes*, with a cross-section that is a
+> shape in its own right. This
 > cue survives weak staining better than glycogen granules do, which makes it valuable
 > exactly in the regions where everything else fails.
 
@@ -321,8 +325,8 @@ What fails is the note. "OPC" and "uncertain" are different annotations with dif
 follow-ups — an OPC candidate goes to someone who can confirm a cell class, an
 uncertain call goes to the review queue with the missing cue named. A trainee who
 writes "OPC, not sure" has merged the two, and if that habit spreads, per-class
-agreement for OPC stops meaning anything — and OPC agreement is usually the worst of
-the four classes already (§5).
+agreement for OPC stops meaning anything. OPC is already the class with the fewest
+diagnostic features, so it is the one most likely to have low agreement (§5).
 
 A better record: *OPC candidate — nucleus intermediate in density; no myelin link found
 in view; neuronal features (large nucleolus, Nissl, dendrites) not seen.* That names
@@ -341,7 +345,7 @@ Work these against the identification protocol in §3, naming the step that deci
 <div class="cards-grid">
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S01-01.png' | relative_url }}" alt="Glia training visual: overview context" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>RIV-GLIA S01:</strong> Orientation for glia proofreading. Set the stake before you start looking: glia occupy roughly 20–40% of cortical volume, and a glia-neuron merge does not merely add a branch — it drags a neuron’s arbor past synapses it never contacted, so the false-input yield per micrometer of merged path is unusually high.</p>
+    <p class="card-description"><strong>RIV-GLIA S01:</strong> Orientation for glia proofreading. Set the stake before you start looking: in H01 human cortex glia outnumber neurons 2:1, and a glia-neuron merge does more than add a branch: it drags a neuron’s arbor past synapses it never contacted, so the false-input yield per micrometer of merged path is unusually high.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png' | relative_url }}" alt="Glia training visual: astrocyte context" style="width:100%; border-radius:8px;">
@@ -353,7 +357,7 @@ Work these against the identification protocol in §3, naming the step that deci
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two manifest-listed IDs (<code>S02</code>, <code>S07</code>) were not present in extracted thumbnails and are pending recovery.</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two IDs listed in the manifest (<code>S02</code>, <code>S07</code>) were not among the extracted thumbnails and are not shown.</small></p>
 
 ---
 
@@ -393,7 +397,7 @@ teaches a habit you want to break.
 
 | | Not yet | Proficient | Strong |
 |---|---|---|---|
-| **Overall accuracy** | < 70% | ≥ 80% | ≥ 85% with a non-zero uncertain rate |
+| **Overall accuracy** | < 80% | ≥ 80% | ≥ 85% with a non-zero uncertain rate |
 | **Error asymmetry** | More astrocyte→neurite than neurite→astrocyte | Balanced | Errors skew toward the safe direction, deliberately, and you can say why |
 | **Cue awareness** | Cannot name the deciding cue | Names it | Names it and identifies which cue fails first as staining degrades |
 | **Matrix reading** | Reports accuracy only | Produces the matrix | Diagnoses the dominant confusion and targets the re-drill at it |
@@ -425,8 +429,9 @@ merges, at every level, on purpose.
 
 - **Glia–neuron boundary error rate** on a validation subset, reported separately from
   overall segmentation error, because it is a different failure with a different cost.
-- **Per-class agreement** (astrocyte / oligodendrocyte / microglia / OPC). Aggregate
-  agreement hides the fact that OPC agreement is usually much worse than the rest.
+- **Per-class agreement** (astrocyte / oligodendrocyte / microglia / OPC). An aggregate
+  figure can hide one weak class. Expect that class to be OPC, which has the fewest
+  diagnostic features, and check it rather than assume it.
 - **Unresolved-glia rate after second-pass review** — a proxy for whether your protocol
   is under-specified for this dataset.
 - **Effect on neuronal statistics**: recompute per-neuron input counts and total

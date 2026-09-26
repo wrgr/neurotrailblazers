@@ -8,7 +8,7 @@ description: "An exact toy-graph exercise in reciprocity, null models and error 
 ---
 
 [Lecture plan and slides]({{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }}#teach-a-90-minute-session)
-· [Teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+· [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 **35 minutes plus peer review.** All nodes, contacts and null results below are
 **synthetic teaching data**, not measurements from a biological connectome.

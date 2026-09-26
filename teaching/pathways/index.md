@@ -14,7 +14,7 @@ use_layout_hero: false
 ---
 
 Start here if you want to teach the professional side of research training as
-sessions rather than as advice. These **ten 90-minute workshops** each have a timed
+sessions rather than as advice. There are ten 90-minute workshops. Each has a timed
 plan with facilitator cues, a learner worksheet built around an invented case, and
 public model responses with a feedback rubric. They were developed under COMPASS
 naming; the [education models]({{ '/models/' | relative_url }}#professional-pathways-workshops)
@@ -82,11 +82,11 @@ expectations, misread failure, and credit handled too late.
 
 ## How these relate to the module session kits
 
-Modules 01, 02, 17, 19 and 22–25 already have [session
-kits]({{ '/teaching/sessions/' | relative_url }}) on overlapping themes. The kits
-teach a module's content; these workshops rehearse decisions. Where they overlap, the
-workshop plan names the module and says what is different. Orientation assumes the
-Module 02 navigation playbook exists or is built first, for example.
+Modules 01, 02, 17, 19 and 22–25 cover overlapping themes, and each has a [session
+kit]({{ '/teaching/sessions/' | relative_url }}). The kits teach a module's content;
+these workshops rehearse decisions. Where they overlap, the workshop plan names the
+module and says what is different. Orientation, for example, works best after the
+Module 02 navigation playbook, but it also runs on its own.
 
 ## Facilitating these safely
 

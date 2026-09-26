@@ -29,10 +29,10 @@ content_type: path
 
 **The governing fact of this unit:** acquisition quality sets a *ceiling* on
 reconstruction quality that no amount of downstream machine learning or proofreading
-labor can raise. A fold destroys the tissue. A missing section destroys the
+labor can raise. A fold destroys the tissue inside it. A missing section breaks the
 continuity. You can annotate around damage, but you cannot recover what was never
-imaged. This is why acquisition QA is not a formality — it is the highest-leverage QC
-in the entire pipeline, and it is the one most often deferred.
+imaged. That makes acquisition QA the check that pays back most in the pipeline, and the
+one most easily deferred.
 
 ---
 
@@ -55,32 +55,39 @@ characteristic failure. Learn the pairs.
 
 ### 1.1 Fixation
 
-**What it does.** Cross-links proteins to arrest ultrastructure within seconds, before
-autolysis and osmotic swelling destroy the extracellular space and the fine processes.
+**What it does.** Cross-links proteins to arrest ultrastructure quickly, before
+autolysis and swelling distort the extracellular space and the fine processes.
 
-**Typical protocol.** Transcardial perfusion in rodents with a buffered aldehyde mix —
-commonly around 2–2.5% glutaraldehyde plus 2% paraformaldehyde in 0.1 M cacodylate or
-phosphate buffer, at physiological pH, often with added calcium. Glutaraldehyde is the
-workhorse because it is bifunctional and cross-links rapidly; paraformaldehyde
-penetrates faster and buys time.
+**Typical protocol.** Transcardial perfusion in rodents with a buffered aldehyde mix
+of glutaraldehyde and paraformaldehyde in cacodylate or phosphate buffer, at
+physiological pH, often with added calcium. Concentrations vary by lab. MICrONS, for
+example, perfused with 2.5% paraformaldehyde, 1.25% glutaraldehyde and 2 mM calcium
+chloride in 0.08 M sodium cacodylate, pH 7.4 (MICrONS Consortium 2025).
+Glutaraldehyde is the workhorse because it is bifunctional and cross-links
+efficiently; paraformaldehyde penetrates faster and buys time.
+
+Even good chemical fixation changes the tissue. Compared with high-pressure freezing,
+aldehyde perfusion shrinks the extracellular space, enlarges glial volume, and
+tightens glial coverage of synapses and vessels (Korogod et al. 2015).
 
 **What failure looks like in the final image.**
 
-- **Swollen astrocytic processes and enlarged extracellular space** — the classic
-  signature of slow or delayed fixation. Neuropil looks "loose"; there are visible
-  gaps between processes that should be tightly apposite. *Downstream cost:* actually
-  makes automated segmentation somewhat easier (more space between objects) but
-  distorts every geometric measurement, and it means the tissue you reconstructed is
-  not the tissue that existed in vivo.
-- **Dark, shrunken, hypercontracted neurons** — perfusion pressure or osmolarity
-  problems.
-- **Blood cells retained in vessels** — incomplete perfusion; the tissue near those
+- **Swollen, pale astrocytic processes and watery cytoplasm.** Signs of delayed
+  fixation or of ischemia before the fixative arrived.
+- **Unusually open neuropil**, with visible gaps between processes that are normally
+  tightly apposed. This can be an osmotic artifact. It can also be deliberate:
+  extracellular-space-preserving protocols make segmentation easier and reduce error
+  rates (Pallotto et al. 2015). Either way, geometric measurements from such tissue
+  are not comparable with conventionally fixed tissue.
+- **Dark, shrunken, hypercontracted neurons.** Perfusion pressure or osmolarity
+  problems, or handling of the brain before it was fixed.
+- **Blood cells retained in vessels.** Incomplete perfusion; the tissue near those
   vessels is likely under-fixed.
 
-> **Teaching point for annotators.** When you see a region of unusually open neuropil,
-> do not treat it as a segmentation opportunity. Flag it. It is a region where your
-> geometric measurements — spine neck diameter, apposition area, extracellular
-> fraction — are not comparable to the rest of the volume.
+> **Teaching point for annotators.** When you see a region of unusually open neuropil
+> in an otherwise conventionally fixed volume, do not treat it as a segmentation
+> opportunity. Flag it. Geometric measurements there (spine neck diameter, apposition
+> area, extracellular fraction) are not comparable with the rest of the volume.
 
 ### 1.2 Contrast generation (staining)
 
@@ -90,37 +97,39 @@ connectomics, so the protocol is optimized for lipid.
 
 **The standard sequence:**
 
-1. **Osmium tetroxide (OsO₄)** — binds unsaturated lipids, so it stains membranes. This
-   is the primary source of the dark membrane outlines you trace.
-2. **Reduced osmium** (OsO₄ with potassium ferrocyanide) — enhances membrane contrast
-   and improves staining of internal membranes.
-3. **Thiocarbohydrazide (TCH)** — a bridging agent. It binds the osmium already in the
+1. **Osmium tetroxide (OsO₄)** binds unsaturated lipids, so it stains membranes. It is
+   the main source of the dark membrane outlines you trace.
+2. **Reduced osmium** (OsO₄ with potassium ferrocyanide or ferricyanide) enhances
+   membrane contrast.
+3. **Thiocarbohydrazide (TCH)** is a bridging agent. It binds the osmium already in the
    tissue and provides new sites for a second osmium exposure. This is the "O-T-O"
    amplification step.
-4. **Second osmium** — deposits more metal onto the TCH bridges.
-5. **Uranyl acetate, en bloc** — general contrast, particularly nucleic acids and
-   proteins.
-6. **Lead aspartate** (Walton's method) — final contrast enhancement, applied to the
-   block rather than the section.
+4. **Second osmium** deposits more metal onto the TCH bridges.
+5. **Uranyl acetate, en bloc,** adds general contrast, particularly to nucleic acids
+   and proteins.
+6. **Lead aspartate** (Walton's method) is the final contrast enhancement, applied to
+   the block rather than the section.
 
-The combination is usually called **rOTO** (reduced osmium – thiocarbohydrazide –
-osmium). Two reasons it dominates volume EM: it produces membrane contrast strong
-enough to image quickly at low dose, and the metal load makes the block
-**electrically conductive**, which is what makes block-face SEM possible at all
-without catastrophic charging.
+The combination is usually called **rOTO** (reduced osmium, thiocarbohydrazide,
+osmium). Protocols vary: the MICrONS block went through osmium, ferricyanide, osmium,
+TCH, osmium and lead aspartate, with no uranyl acetate step (MICrONS Consortium 2025,
+after Hua et al. 2015). rOTO dominates volume EM for two reasons. It gives membrane
+contrast strong enough to image quickly at low dose, and the metal load makes the
+block **electrically conductive**, which keeps charging manageable in block-face SEM.
 
 **What failure looks like:**
 
-- **Weak membrane contrast** — thin or interrupted membrane outlines. *Downstream
-  cost:* the dominant cause of automated **merge errors**, because the network cannot
-  find a boundary that is barely there. This is the single most expensive prep failure.
-- **Staining gradient with depth** — the block edge is well stained, the center is
+- **Weak membrane contrast:** thin or interrupted membrane outlines. *Downstream
+  cost:* automated **merge errors**, because the network cannot find a boundary that
+  is barely there. Merges are the expensive error class (§2), which puts this among
+  the costliest prep failures.
+- **Staining gradient with depth:** the block edge is well stained and the center is
   pale, because reagents did not penetrate. Common in blocks that are too large.
   *Downstream cost:* segmentation quality varies systematically with position, which
   looks like a biological gradient if you are not careful.
-- **Precipitate** — small, very dark, irregular particles scattered on the section,
-  often from lead carbonate formation. *Downstream cost:* false boundaries and false
-  synapse detections; usually tolerable at low density.
+- **Precipitate:** small, very dark, irregular particles scattered on the section,
+  often lead carbonate. *Downstream cost:* false boundaries and false synapse
+  detections; usually tolerable at low density.
 
 ### 1.3 Dehydration and embedding
 
@@ -128,11 +137,12 @@ without catastrophic charging.
 epoxy resin (Epon/Araldite, LX-112, Durcupan, Spurr's), which is polymerized to a
 solid block that can be cut at tens of nanometers.
 
-**The unavoidable cost:** dehydration shrinks tissue, typically on the order of
-5–20% linearly depending on protocol. This is systematic, not random. **Every absolute
-length, area, and volume measurement in EM connectomics is affected.** Report
-measurements as measured, state the protocol, and prefer ratios and comparisons within
-a volume over absolute values compared across studies.
+**The unavoidable cost:** fixation, dehydration and embedding change tissue
+dimensions by an amount that depends on the protocol and is rarely measured in the
+sample itself. The change is systematic, not random. **Every absolute length, area
+and volume measurement in EM connectomics is affected.** Report measurements as
+measured, state the protocol, and prefer ratios and comparisons within a volume over
+absolute values compared across studies.
 
 **What failure looks like:** cracks and tears (usually from too-rapid dehydration or
 incompletely infiltrated resin), and resin that is too soft or too brittle to section
@@ -143,9 +153,9 @@ cleanly, which shows up at the next step.
 Two families, with different artifact profiles.
 
 **Serial sectioning (for ssTEM / ssSEM).** An ultramicrotome with a diamond knife cuts
-30–50 nm sections, which are collected onto grids, tape (ATUM), or a reinforced
-substrate (GridTape). Sections are then imaged, in some cases by many microscopes in
-parallel.
+30–50 nm sections, which are collected onto grids, onto tape (ATUM), or onto tape
+with film-covered apertures for TEM (GridTape). Sections are then imaged, in some
+cases by several microscopes in parallel.
 
 - *Advantage:* the block is not consumed by imaging, so a section can be re-imaged at
   higher resolution, and imaging can be parallelized across instruments. This is how
@@ -159,7 +169,7 @@ parallel.
 knife inside the chamber, repeat. FIB-SEM substitutes an ion beam that mills a few
 nanometers at a time, giving isotropic voxels.
 
-- *Advantage:* no section handling means no lost sections and dramatically better
+- *Advantage:* no section handling means no lost sections and much easier
   z-alignment. FIB-SEM's isotropy is the best tracing condition available.
 - *Signature artifacts:* the imaged material is destroyed, so nothing can be
   re-imaged; **charging**, since the surface is not conductive-coated between cuts;
@@ -174,18 +184,20 @@ The parameters you will actually be asked about:
 | Landing energy (SEM) | 1–2 keV | More depth signal, more charging, more beam damage | Better surface specificity, weaker signal |
 | Dwell time per pixel | 0.1–2 µs | Better SNR | Faster acquisition, noisier images |
 | Beam current | pA–nA | Better SNR at fixed dwell | Less damage and charging |
-| Tile overlap | 5–15% | More robust stitching | Less redundant data, faster |
+| Tile overlap | 5–15% | More reliable stitching | Less redundant data, faster |
 | Section thickness (z) | 30–50 nm | Fewer sections, faster, cheaper | Better z-continuity, more data |
 
 **Dose is a budget.** SNR improves roughly with the square root of electron dose, and
-dose is the product of beam current and dwell time. Doubling SNR costs roughly 4× the
-acquisition time. This is why "just image it better" is rarely the answer at petascale
-— the honest tradeoff is usually to accept a noisier image and spend the savings on
-better segmentation and more proofreading.
+dose is the product of beam current and dwell time. At fixed current, doubling SNR
+costs about 4× the acquisition time. That is why "just image it better" is rarely the
+answer at petascale. The usual tradeoff is to accept a noisier image and spend the
+savings on better segmentation and more proofreading.
 
 **Multibeam SEM** attacks the throughput term directly: 61 or 91 electron beams
-scanning in parallel, aggregating on the order of a gigapixel per second. That is the
-technology that moved 1 mm³ from "impossible" to "an eighteen-month project".
+scanning in parallel, which raises imaging speed by close to two orders of magnitude
+over a single beam (Eberle et al. 2015). H01 was imaged on a 61-beam instrument.
+Parallel TEMs are the other route: MICrONS imaged 26,652 sections on five automated
+TEMs in about six months (MICrONS Consortium 2025).
 
 ### Worked example: acquisition time
 
@@ -200,9 +212,13 @@ total pixels          = 4.0e10 x 2.0e4  = 8.0 x 10^14 px
 time = 8.0e14 / 2.0e8 px/s = 4.0 x 10^6 s ~= 46 days of continuous imaging
 ```
 
-Then multiply by your real duty cycle. At 60% uptime this is ~77 days; and this
-counts only imaging, not sectioning, not QA, not re-imaging failed sections. When
-someone says a 1 mm³ volume takes "about a year", this is the arithmetic behind it.
+Then divide by your real duty cycle. At 60% uptime this is ~77 days, and it counts
+only imaging: not sectioning, not QA, not re-imaging failed sections. A full 1 mm³ at
+the same rate is 1.56 × 10¹⁵ px, about 90 days continuous or 150 days at 60% uptime.
+Published 1 mm³ acquisitions fall in that range and beyond: about six months on five
+TEMs for MICrONS (MICrONS Consortium 2025), and 326 days of imaging for H01, mostly at
+190 million pixels per second (Shapson-Coe et al. 2024, PMC11718559; the 2021 preprint
+gives the same figure).
 
 ### Check yourself
 
@@ -210,18 +226,18 @@ someone says a 1 mm³ volume takes "about a year", this is the arithmetic behind
 <summary>Your images show good contrast at the block edges and washed-out membranes in
 the center of every section. Which step failed, and what is the fix?</summary>
 
-**Staining penetration** (§1.2). The reagents — most likely osmium, TCH, or lead —
-did not reach the block interior. The tell is that the gradient follows *block
+**Staining penetration** (§1.2). The reagents (most likely osmium, TCH or lead) did
+not reach the block interior. The tell is that the gradient follows *block
 geometry*, not tissue anatomy or acquisition order.
 
-Fixes, in order of practicality: cut smaller blocks (the standard answer — penetration
-depth is the constraint, so reduce the distance); extend incubation times;
+Fixes, in order of practicality: cut smaller blocks (the standard answer, since
+penetration depth is the constraint); extend incubation times;
 use microwave-assisted processing; check reagent freshness, particularly TCH.
 
 Diagnostic contrast: if the washed-out region followed *acquisition order* rather
 than block position, you would suspect beam or detector drift instead. If it followed
 *anatomy* (e.g. only white matter), you would suspect a genuine tissue-composition
-effect. Always ask which coordinate system the defect lives in — that identifies the
+effect. Always ask which coordinate system the defect lives in. That identifies the
 stage that produced it.
 </details>
 
@@ -259,8 +275,8 @@ score conceals exactly the distinction the project needs.
 **Merge errors are worse than split errors**, and understaining causes merges.
 
 - A **split** leaves a neuron in pieces. A proofreader finds two fragments and joins
-  them. Cost: bounded, local, and the error is *visible* — a truncated arbor looks
-  wrong.
+  them. Cost: bounded and local, and the error is *visible*, because a truncated arbor
+  looks wrong.
 - A **merge** fuses two neurons. It creates connections that do not exist, and it may
   do so between cells in different layers or of different types. It is *invisible* in
   summary statistics, it propagates into every downstream analysis, and finding it
@@ -279,8 +295,8 @@ sections, (d) 10% weaker membrane contrast throughout.</summary>
 
 Roughly: **(b) > (d) > (c) > (a)**, though the exact order depends on your endpoint.
 
-**(b) 4 consecutive lost sections** = a 160 nm gap. Most thin neurites cannot be
-reliably bridged across that; the volume is effectively cut into two independently
+**(b) 4 consecutive lost sections** = 160 nm of missing tissue, and 200 nm between the
+surviving neighbors. Most thin neurites cannot be reliably bridged across that; the volume is effectively cut into two independently
 reconstructable halves at that z. This is a structural break in the dataset and it
 must be reported prominently, because any claim about a process crossing that plane
 is now inference rather than observation.
@@ -294,9 +310,9 @@ raises splits, and split-heavy regions can be prioritized in the proofreading qu
 Some charging is also correctable by adjusting imaging conditions for the remaining
 sections, so catching it early has real value.
 
-**(a) 4 scattered lost sections** is normal operating loss. Each is a single-section
-gap that alignment and segmentation routinely bridge for all but the thinnest
-processes. Log it; do not panic.
+**(a) 4 scattered lost sections** is 0.02% of the volume, normal operating loss. Each
+is a single-section gap (80 nm between neighbors) that alignment and segmentation
+routinely bridge for all but the thinnest processes. Log it; do not panic.
 
 **The transferable lesson:** *distribution matters more than count.* Four scattered
 losses and four consecutive losses have the same headline number and completely
@@ -310,29 +326,29 @@ distribution.
 
 ### The non-negotiable rule
 
-**Run a pilot reconstruction before full acquisition.** Take a small sub-volume —
-something on the order of 100 × 100 × 100 µm — through the entire pipeline: align,
-segment, skeletonize, and have a human proofread a handful of neurons. Measure the
-error rate.
+**Run a pilot reconstruction before full acquisition.** Take a small sub-volume, on
+the order of 100 × 100 × 100 µm, through the entire pipeline: align, segment,
+skeletonize, and have a human proofread a handful of neurons. Measure the error rate.
 
-This costs perhaps 1–2% of the project and it is the only way to find out that your
-staining protocol produces a merge rate the segmentation cannot handle, *while you can
-still change the staining protocol*. Teams that skip this step discover the problem
-after acquiring a petabyte.
+A common rule of thumb puts the cost at 1–2% of the project; that is a heuristic, not
+a published figure. It is the only way to find out that your staining protocol
+produces a merge rate the segmentation cannot handle *while you can still change the
+staining protocol*. Skip it and you can discover the problem after acquiring a
+petabyte.
 
 ### Metrics to log continuously
 
 Per section and per tile, not just per volume:
 
-- **Intensity distribution** — mean, standard deviation, and the 1st/99th percentiles.
-  Drift in these is the earliest warning of detector, beam, or staining change.
+- **Intensity distribution:** mean, standard deviation, and the 1st/99th percentiles.
+  Drift in these is the earliest warning of detector, beam or staining change.
 - **Contrast-to-noise on membranes.** A practical proxy: sample intensity across many
   membrane-crossing profiles and compute (membrane trough − cytoplasm median) ÷ noise
   σ. Track the trend, not the absolute value.
-- **Focus / sharpness proxy** — e.g. the high-frequency energy fraction of the power
-  spectrum. Catches drift and astigmatism.
+- **Focus / sharpness proxy,** for example the high-frequency energy fraction of the
+  power spectrum. Catches drift and astigmatism.
 - **Section thickness estimate.** Cross-check nominal thickness against a structure of
-  known geometry — a mitochondrion or a myelinated axon traced across sections gives
+  known geometry. A mitochondrion or a myelinated axon traced across sections gives
   you an empirical z-step. Nominal ≠ actual, and z-step error propagates into every
   length measurement.
 - **Stitching residual** per tile seam, and **section-to-section alignment residual**,
@@ -355,7 +371,7 @@ Define these in advance, in writing, with numbers:
 | Alignment residual, 99th percentile | > 1 voxel at native xy | Re-run alignment before ingesting |
 | Pilot segmentation merge rate | above the level your proofreading budget can absorb | Do not scale; revisit prep |
 
-The specific numbers are yours to set — they depend on your endpoint and your budget.
+The thresholds in this table are examples. The numbers are yours to set, because they depend on your endpoint and your budget.
 What is not optional is *setting them before you start*, because a threshold chosen
 after seeing the data is not a threshold.
 
@@ -384,28 +400,28 @@ penetration or geometry. Without per-tile timestamps you cannot ask the question
 
 ## Visual context set
 
-These are context slides rather than QA specimens; the artifact catalog in §2 is what you take to a real volume. Use each panel to rehearse the diagnostic question that runs through this unit — which coordinate system does a defect live in: block position, anatomy, or acquisition time?
+These are context slides rather than QA specimens; the artifact catalog in §2 is what you take to a real volume. Use each panel to rehearse the diagnostic question that runs through this unit: which coordinate system does a defect live in, block position, anatomy or acquisition time?
 
 <div class="cards-grid">
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S04-01.png' | relative_url }}" alt="High-resolution imaging context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S04:</strong> High-resolution imaging. Tie it to the dose budget in §1.5: SNR improves only with the square root of dose, so doubling it costs roughly four times the acquisition time. Ask what was traded for image quality here, and hold to the standing rule — protect membrane contrast, because faint membranes cause merges.</p>
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S04-01.png' | relative_url }}" alt="Street-level map view of a city street lined with parked cars and row houses" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S04:</strong> A street-level map view, filed in the source lesson under high-resolution imaging. Read it as an analogy: from above you see the street, but only up close can you read the house numbers. Tie it to the dose budget in §1.5: SNR improves only with the square root of dose, so doubling it costs roughly four times the acquisition time. Ask what was traded for image quality here, and hold to the standing rule: protect membrane contrast, because faint membranes cause merges.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="High-throughput sectioning context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S08:</strong> High-throughput sectioning. Section handling is where lost sections, folds, wrinkles, and knife chatter originate (§1.4). Ask which of those the depicted approach is exposed to, then sort each one into the data-loss or the labor column of the artifact table.</p>
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S08-01.png' | relative_url }}" alt="Stock image of a brain drawn as glowing circuit-board traces" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S08:</strong> A brain drawn as a circuit board, which the source lesson used to introduce high-throughput methods. Nothing in it is data. In a real volume every trace starts as a stained membrane in a cut section, and inherits that section's lost sections, folds, wrinkles and knife chatter (§1.4). Sort each of those into the data-loss or the labor column of the artifact table.</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S10-01.png' | relative_url }}" alt="Imaging pipeline transition visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S10:</strong> The handoff from imaging to reconstruction. This is the boundary past which acquisition quality becomes a ceiling nothing downstream can raise. Check what metadata crosses it — per-tile timestamps and machine-readable defect masks are what let you diagnose an anomaly months later (§3–§4).</p>
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S10-01.png' | relative_url }}" alt="A small resin-embedded tissue block held between a thumb and finger" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S10:</strong> A resin-embedded tissue block, the object that leaves the prep bench. Everything in §1.1–1.3 happened inside it; once it is cut and imaged, acquisition quality becomes a ceiling nothing downstream can raise. Check what metadata crosses it. Per-tile timestamps and machine-readable defect masks are what let you diagnose an anomaly months later (§3–§4).</p>
   </article>
   <article class="card">
-    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S08-01.png' | relative_url }}" alt="Manual versus automated context visual" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L2 S08:</strong> Manual work set against automated work. Use it to locate the pilot-reconstruction rule in §3: a small sub-volume taken all the way through segmentation and human proofreading is what tells you whether your staining produces a merge rate the proofreading budget can absorb — while you can still change the staining.</p>
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S08-01.png' | relative_url }}" alt="Figure panels comparing automated vessel segmentation and cell detection with ground truth in three cortical regions" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L2 S08:</strong> Automated vessel segmentation and cell detection scored against human ground truth, region by region. Use it to locate the pilot-reconstruction rule in §3: a small sub-volume taken all the way through segmentation and human proofreading is what tells you whether your staining produces a merge rate the proofreading budget can absorb, while you can still change the staining.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S02-01.png' | relative_url }}" alt="Hand-drawn illustration of individually stained neurons, each with its full dendritic tree on a clear background" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module12 L3 S02:</strong> Where the field started: a hand drawing from sparsely stained tissue, each cell standing alone on a clean background. Set it beside §1.2. rOTO does the opposite on purpose — it puts metal on every membrane in the block, because dense reconstruction needs every boundary — and the price is the crowded field the rest of this unit teaches you to quality-check.</p>
+    <p class="card-description"><strong>Module12 L3 S02:</strong> Where the field started: a hand drawing from sparsely stained tissue, each cell standing alone on a clean background. Set it beside §1.2. rOTO does the opposite on purpose. It puts metal on every membrane in the block, because dense reconstruction needs every boundary, and the price is the crowded field the rest of this unit teaches you to quality-check.</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S06-01.png' | relative_url }}" alt="Photograph of a car assembled from the front of one car and the rear of another" style="width:100%; border-radius:8px;">
@@ -413,7 +429,7 @@ These are context slides rather than QA specimens; the artifact catalog in §2 i
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S02-01.png' | relative_url }}" alt="Electron micrograph of densely packed neuropil with dark ring-shaped profiles" style="width:100%; border-radius:8px;">
-    <p class="card-description"><strong>Module13 L2 S02:</strong> One EM field of neuropil. Grade it as §3 asks you to grade every section: are membrane outlines continuous or broken, is there precipitate, is contrast even across the field or does it fall away toward one side? Give anything you find a cost class from the §2 table. (Units 01 and 02 use the same image for scale.)</p>
+    <p class="card-description"><strong>Module13 L2 S02:</strong> One EM field of neuropil. Grade it as §3 asks you to grade every section: are membrane outlines continuous or broken, is there precipitate, is contrast even across the field or does it fall away toward one side? Give anything you find a cost class from the §2 table. (Units 01 and 02 use the same image.)</p>
   </article>
   <article class="card">
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S04-01.png' | relative_url }}" alt="Aerial photograph of a ring-shaped synchrotron facility" style="width:100%; border-radius:8px;">
@@ -425,20 +441,20 @@ These are context slides rather than QA specimens; the artifact catalog in §2 i
   </article>
 </div>
 
-<p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
+<p><small>Attribution: outreach source decks (historical and context visuals).</small></p>
 
 ---
 
 ## Lab: acquisition QA report on a real volume (90 minutes)
 
-**Setup.** Open any public volume in Neuroglancer — MICrONS, FlyWire/FAFB, or H01. Do
+**Setup.** Open any public volume in Neuroglancer: MICrONS, FlyWire/FAFB or H01. Do
 not use a curated tutorial view; navigate to arbitrary coordinates.
 
 If you want to see what a whole preparation-and-acquisition chain looks like end to end
 before you start, [H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }})
-walks one real dataset through every stage in this unit — fixation, ROTO staining, ATUM
-sectioning, 61-beam imaging, and the QC that ran during acquisition — with the resulting
-micrographs at each scale. It also shows how to pull image data out of a public volume
+walks one real dataset through every stage in this unit (fixation, rOTO staining, ATUM
+sectioning, 61-beam imaging, and the QC that ran during acquisition), with the
+resulting micrographs at each scale. It also shows how to pull image data out of a public volume
 yourself, which is a faster route to the sampling step below than clicking through the
 viewer.
 
@@ -456,11 +472,11 @@ viewer.
 4. **Localize.** Give coordinates. An artifact report without coordinates cannot be
    acted on.
 5. **Estimate impact.** For each labor-class artifact, estimate the additional
-   proofreading burden — even crudely ("adds roughly one extra split to fix per
+   proofreading burden, even crudely ("adds roughly one extra split to fix per
    100 µm of axon traced through this region"). State your assumption.
 6. **Compute the acquisition budget** for this volume from its published voxel size
    and extent, using the §1.5 worked example. Compare with the published acquisition
-   time if you can find it, and explain any discrepancy.
+   time (the worked example gives MICrONS and H01), and explain any discrepancy.
 7. **Write three recommendations** for a hypothetical next acquisition of the same
    tissue, each tied to a specific observation from steps 2–5.
 
@@ -476,11 +492,10 @@ viewer.
 | **Recommendations** | Generic | Tied to observations | Tied to observations *and* costed against the tradeoff triangle |
 
 **Instructor note.** Run step 2 as a calibration exercise first: have everyone score
-the same three locations, then compare scores publicly before proceeding. Inter-rater
-spread on "membrane contrast 1–5" is typically large on the first attempt and shrinks
-sharply after one round of discussion. That shrinkage *is* the learning, and it is
-also a live demonstration of why annotation protocols need calibration sessions
-(Unit 05).
+the same three locations, then compare scores openly before proceeding. Expect a wide
+spread on "membrane contrast 1–5" the first time, and a narrower one after the group
+agrees on what each anchor looks like. That narrowing *is* the learning, and it shows
+why annotation protocols need calibration sessions (Unit 05).
 
 ---
 
@@ -515,13 +530,13 @@ than by ability.
 From this unit:
 
 - **Separate data loss from labor when you report quality.**
-  One quality score conceals the only distinction the project actually needs. This is the difference between "expensive to fix" and "unanswerable forever".
+  One quality score hides the distinction the project most needs: "expensive to fix" versus "unanswerable forever".
 
 - **Report the distribution, not the count.**
   Four scattered lost sections and four consecutive lost sections have the same headline number and completely different consequences.
 
 - **Pilot before you scale.**
-  Running a small sub-volume through the whole pipeline costs 1–2% of a project. Skipping it is the most expensive habit in the field, and no one is ever told to do it explicitly.
+  Running a small sub-volume through the whole pipeline costs a small fraction of a project (1–2% by rule of thumb). Skipping it can cost the whole acquisition, and it is the step that gets cut when a schedule is tight.
 
 The collected set, and why making these explicit is a fairness intervention rather than
 etiquette, is in [the hidden curriculum]({{ '/hidden-curriculum/technical-practice/' | relative_url }}).
@@ -534,6 +549,19 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 (Unit 02).
 
 ---
+
+## Sources for the numbers in this unit
+
+- Eberle A.L. et al. (2015). High-resolution, high-throughput imaging with a multibeam scanning electron microscope. *Journal of Microscopy* 259:114–120. [doi:10.1111/jmi.12224](https://doi.org/10.1111/jmi.12224)
+- Hua Y., Laserstein P. & Helmstaedter M. (2015). Large-volume en-bloc staining for electron microscopy-based connectomics. *Nature Communications* 6:7923. [doi:10.1038/ncomms8923](https://doi.org/10.1038/ncomms8923)
+- Korogod N., Petersen C.C.H. & Knott G.W. (2015). Ultrastructural analysis of adult mouse neocortex comparing aldehyde perfusion with cryo fixation. *eLife* 4:e05793. [doi:10.7554/eLife.05793](https://doi.org/10.7554/eLife.05793)
+- MICrONS Consortium et al. (2025). Functional connectomics spanning multiple areas of mouse visual cortex. *Nature* 640:435–447. [doi:10.1038/s41586-025-08790-w](https://doi.org/10.1038/s41586-025-08790-w)
+- Pallotto M., Watkins P.V., Fubara B., Singer J.H. & Briggman K.L. (2015). Extracellular space preservation aids the connectomic analysis of neural circuits. *eLife* 4:e08206. [doi:10.7554/eLife.08206](https://doi.org/10.7554/eLife.08206)
+- Shapson-Coe A. et al. (2021). A connectomic study of a petascale fragment of human cerebral cortex. bioRxiv. [doi:10.1101/2021.05.29.446289](https://doi.org/10.1101/2021.05.29.446289)
+- Shapson-Coe A. et al. (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. *Science* 384:eadk4858. [doi:10.1126/science.adk4858](https://doi.org/10.1126/science.adk4858)
+
+The imaging-parameter ranges in §1.5 and the gate thresholds in §3 are typical working
+values and examples, not figures from a single source.
 
 ## Go deeper
 

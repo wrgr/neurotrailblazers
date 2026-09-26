@@ -4,8 +4,8 @@ title: "EM Figure Library"
 permalink: /content-library/em-figures/
 description: >
   Every electron-microscopy figure on this site in one place, with its caption,
-  attribution, and a ready-to-paste Marp slide line — rendered from the public
-  H01 human cortex volume and free to reuse under CC BY 4.0.
+  attribution, and a ready-to-paste Marp slide line. All are rendered from the
+  public H01 human cortex volume and free to reuse under CC BY 4.0.
 topics:
   - electron microscopy
   - teaching resources
@@ -22,8 +22,8 @@ content_type: core
 Every electron micrograph on this site, in one place, so you can pull them into
 a deck without hunting through content pages.
 
-All of them are rendered from the **public H01 human cortex volume** — not
-copied from a publication, and not illustrations. Where a figure names a
+All of them are rendered from the **public H01 human cortex volume**. None is
+copied from a publication, and none is an illustration. Where a figure names a
 structure, that structure was located by querying H01's own label layers, so
 "astrocytic process" means the dataset labels it an astrocyte.
 
@@ -81,14 +81,14 @@ npm install --no-save @marp-team/marp-cli   # if you don't have it
 
 The render step is not optional: `scripts/check_deck_freshness.rb` records a
 hash of every deck source at render time and fails CI if a source was edited
-without re-rendering. That gate exists because 29 of 35 decks had silently gone
-stale before it did.
+without re-rendering. The gate was added after an August 2026 check found 29 of
+the 35 decks then published out of date with their sources.
 
 ## What these figures deliberately do not show
 
-Some things the pages describe are simply below this volume's resolution, and a
+Some structures the pages describe are below this volume's resolution, and a
 figure claiming otherwise would teach a measurement error. At 4 nm per pixel
-with 33 nm sections:
+with 33 nm sections (sizes are approximate textbook values):
 
 | Structure | Size | At 4 nm | Showable? |
 |---|---|---|---|
@@ -96,11 +96,11 @@ with 33 nm sections:
 | Type I PSD thickness | 30–50 nm | 8–12 px | Yes, but subtle |
 | Spine neck | 100–200 nm | 25–50 px | Yes |
 | Polyribosome rosette | ~100 nm cluster | ~25 px | Yes, as a cluster |
-| Myelin period | 12 nm | 3 px | **No** — lamellae cannot be counted |
-| Synaptic cleft width | 12 vs 20 nm | 3 vs 5 px | **No** — at the noise floor |
+| Myelin period | 12 nm | 3 px | **No**: lamellae cannot be counted |
+| Synaptic cleft width | 12 vs 20 nm | 3 vs 5 px | **No**: at the noise floor |
 | AIS dense undercoat | 5–10 nm | 1–2.5 px | **No** |
 | Gap junction gap | 2–3 nm | <1 px | **No** |
 
-Anything needing a whole-cell shape — apical dendrites, interneuron
-morphologies, branching angles — needs a 3D mesh view rather than a single
+Anything that needs a whole-cell shape (apical dendrites, interneuron
+morphologies, branching angles) needs a 3D mesh view rather than a single
 plane, and is not in this set.

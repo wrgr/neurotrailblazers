@@ -4,7 +4,7 @@ title: "EM Principles"
 permalink: /content-library/imaging/em-principles/
 image: /assets/images/content-library/imaging/em-principles.svg
 image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
-description: "Electron microscopy physics, contrast mechanisms, and resolution limits as they apply to connectomics imaging. Full instructor script with references and worked examples."
+description: "Electron microscopy physics, contrast mechanisms and resolution limits as they apply to connectomics imaging, with an instructor script, references and a worked example."
 topics:
   - electron-microscopy
   - image-formation
@@ -21,16 +21,6 @@ tags:
   - imaging:contrast
   - methodology:image-formation
 micro_lesson_id: ml-img-principles
-reference_images:
-  - src: /assets/images/content-library/imaging/em-principles/sem-vs-tem-diagram.png
-    alt: "Side-by-side schematic of SEM and TEM beam paths and detector configurations"
-    caption: "SEM (left) detects scattered/secondary electrons from the surface; TEM (right) detects transmitted electrons through a thin section."
-  - src: /assets/images/content-library/imaging/em-principles/resolution-contrast-tradeoff.png
-    alt: "Graph showing resolution vs contrast tradeoff at different beam energies"
-    caption: "Resolution-contrast tradeoff: higher beam energy improves resolution but reduces membrane contrast in heavy-metal-stained tissue."
-  - src: /assets/images/content-library/imaging/em-principles/beam-specimen-interactions.png
-    alt: "Diagram of electron beam interactions with biological specimen"
-    caption: "Electron-specimen interactions: elastic scattering, inelastic scattering, and secondary electron emission each contribute to image contrast."
 combines_with:
   - tissue-preparation
   - artifact-taxonomy
@@ -42,7 +32,7 @@ content_type: core
 
 ## Overview
 
-Electron microscopy is the enabling technology of nanoscale connectomics. To interpret EM images correctly — and to understand why certain artifacts arise and how they propagate into segmentation errors — practitioners need a working understanding of how electrons interact with biological tissue to produce contrast. This document covers the core physics, the two major EM modalities used in connectomics, and the practical resolution and contrast considerations that shape every downstream analysis step.
+Nanoscale connectomics depends on electron microscopy. To interpret EM images correctly, and to understand why certain artifacts arise and how they propagate into segmentation errors, you need a working understanding of how electrons interact with biological tissue to produce contrast. This document covers the core physics, the two major EM modalities used in connectomics, and the practical resolution and contrast considerations that shape every downstream analysis step.
 
 ---
 
@@ -50,7 +40,7 @@ Electron microscopy is the enabling technology of nanoscale connectomics. To int
 
 ### Why electrons instead of photons?
 
-The resolution of any imaging system is fundamentally limited by the wavelength of the probe. Visible light microscopy is diffraction-limited to roughly 200 nm (the Abbe limit), which is far too coarse to resolve synaptic membranes (~7 nm thick), synaptic vesicles (~40 nm), or the fine processes of axons that can be thinner than 100 nm. Electrons, by contrast, have wavelengths on the order of picometers at typical accelerating voltages (e.g., ~0.004 nm at 100 kV, via the de Broglie relation λ = h/√(2meV)). In practice, lens aberrations limit EM resolution to ~0.1-1 nm, but even "routine" biological EM achieves 1-5 nm resolution — more than sufficient for connectomics.
+The resolution of any imaging system is fundamentally limited by the wavelength of the probe. Visible light microscopy is diffraction-limited to roughly 200 nm (the Abbe limit), which is far too coarse to resolve synaptic membranes (~7 nm thick), synaptic vesicles (~40 nm), or the fine processes of axons that can be thinner than 100 nm. Electrons, by contrast, have wavelengths on the order of picometers at typical accelerating voltages (e.g., ~0.004 nm at 100 kV, via the de Broglie relation λ = h/√(2meV)). In practice, lens aberrations limit EM resolution to ~0.1-1 nm. For stained, resin-embedded tissue the useful resolution is set by the stain and the pixel size instead, and connectomics volumes are imaged at about 4-8 nm per pixel (4 nm for MICrONS and H01), which is enough to resolve membranes and vesicles.
 
 **Key teaching point:** The reason we use EM for connectomics is not that we want atomic resolution, but that we need to reliably resolve membranes, vesicles, and organelles in densely packed neuropil where thousands of processes interleave within each cubic micrometer.
 
@@ -86,14 +76,14 @@ TEM was the original method for all EM connectomics, including White et al.'s (1
 
 ### Modern ssTEM at scale
 
-The key innovation for large-volume TEM was automated tape-collecting ultramicrotomy (ATUM — Hayworth et al. 2014) combined with multi-beam SEM or TEM camera arrays. ATUM collects hundreds to thousands of ultrathin sections on a continuous tape, which can then be imaged automatically. The FAFB (Full Adult Fly Brain) dataset (Zheng et al. 2018) and parts of the MICrONS dataset used ATUM-based approaches.
+The key innovations for large-volume serial-section imaging were automated section collection on tape and faster cameras and detectors. The automated tape-collecting ultramicrotome (ATUM; Hayworth et al. 2006) collects thousands of ultrathin sections on a continuous tape, which can then be imaged automatically. ATUM tape is opaque, so those sections are imaged by SEM: H01 used ATUM with multi-beam SEM (Shapson-Coe et al. 2024). On the TEM side, the FAFB (Full Adult Fly Brain) dataset (Zheng et al. 2018) was imaged with a custom TEM camera array (TEMCA2), and the MICrONS cubic millimeter was cut onto GridTape and imaged by five automated TEMs (MICrONS Consortium 2025).
 
 ### Strengths and limitations
 
 | Strength | Limitation |
 |----------|-----------|
 | Excellent contrast for membranes | Requires physical ultrathin sectioning |
-| High resolution (sub-nm possible) | Section handling introduces artifacts (compression, folds, tears) |
+| High resolution (sub-nm possible in principle) | Section handling introduces artifacts (compression, folds, tears) |
 | Well-established staining protocols | Each section imaged independently — registration needed |
 | Large field of view per image | Z-resolution limited by section thickness (~30-50 nm) |
 
@@ -115,11 +105,11 @@ A gallium ion beam mills a thin layer (~4-8 nm) from the block face, and the exp
 
 **Key advantage:** Isotropic voxels, no mechanical sectioning artifacts.
 
-**Key limitation:** Very slow acquisition, small field of view, expensive. FIB-SEM volumes are typically limited to 50-100 μm per side (though Xu et al. 2021 at Janelia achieved larger volumes with enhanced FIB-SEM).
+**Key limitation:** Very slow acquisition, small field of view, expensive. FIB-SEM volumes are typically limited to 50-100 μm per side (though Xu et al. 2017 at Janelia achieved larger volumes with enhanced FIB-SEM).
 
 ### Multi-beam SEM
 
-Multiple electron beams (61-91 beams) scan the specimen simultaneously, dramatically increasing throughput. Used in the MICrONS project. Combines the throughput advantages of SBEM with the image quality of TEM-like section imaging.
+Multiple electron beams (61 or 91 in current instruments) scan the specimen at the same time, multiplying throughput. H01 was imaged with a 61-beam instrument at 125-190 million pixels per second (Shapson-Coe et al. 2024). Because it images sections collected on tape or wafers rather than a block face, the sections survive imaging and can be re-imaged, as in ssTEM, while the throughput approaches what a petascale volume needs.
 
 ---
 
@@ -135,10 +125,10 @@ Every EM acquisition must balance three competing demands:
 
 | Modality | XY resolution | Z resolution | Typical volume | Acquisition time |
 |----------|--------------|-------------|---------------|-----------------|
-| ssTEM (ATUM) | 4 nm | 30-40 nm | mm³ | Months |
-| SBEM | 8-10 nm | 25-30 nm | 500 μm³ | Weeks-months |
+| ssTEM (grids or GridTape) | 4 nm | 30-40 nm | mm³ | Months |
+| SBEM | 8-10 nm | 25-30 nm | Up to ~500 μm per side | Weeks-months |
 | FIB-SEM | 4-8 nm | 4-8 nm | (50-100 μm)³ | Weeks-months |
-| Multi-beam SEM | 4 nm | 30-40 nm | mm³ | Months |
+| Multi-beam SEM (ATUM sections) | 4 nm | 30-40 nm | mm³ | Months to about a year (H01: 326 days) |
 
 **Key teaching point:** The choice of EM modality is a scientific decision, not just a technical one. The question you want to answer determines the minimum resolution, volume, and completeness required, which in turn constrains the modality.
 
@@ -150,7 +140,7 @@ Every EM acquisition must balance three competing demands:
 
 Most connectomics EM uses a variant of the following staining sequence:
 
-1. **Osmium tetroxide (OsO₄)**: Reacts with unsaturated lipids in membranes. Primary source of membrane contrast. Typically 1-2% OsO₄ in buffer for 1-2 hours. Sometimes enhanced with ferrocyanide-reduced osmium (rOTO protocol — Hua et al. 2015) for stronger membrane staining.
+1. **Osmium tetroxide (OsO₄)**: Reacts with unsaturated lipids in membranes. Primary source of membrane contrast. Typically 1-2% OsO₄ in buffer for 1-2 hours. Sometimes enhanced with ferrocyanide-reduced osmium (as in the rOTO protocol below) for stronger membrane staining.
 
 2. **Uranyl acetate (UA)**: Binds to nucleic acids and proteins. Enhances contrast of ribosomes, chromatin, and proteinaceous structures (like PSDs and active zones). Important for synapse identification.
 
@@ -158,7 +148,7 @@ Most connectomics EM uses a variant of the following staining sequence:
 
 ### The rOTO protocol
 
-The reduced osmium-thiocarbohydrazide-osmium (rOTO) protocol (adapted from Hua et al. 2015) is widely used for volume EM because it provides strong, uniform heavy-metal staining throughout the block — essential for SBEM and FIB-SEM where you cannot post-stain individual sections.
+The reduced osmium-thiocarbohydrazide-osmium (rOTO) protocol builds on the earlier OTO method (Willingham & Rutherford 1984); Hua et al. (2015) modified it to stain blocks about 1 mm across without a staining gradient. It is widely used for volume EM because it gives strong, even heavy-metal staining through the block, which SBEM and FIB-SEM need because individual sections cannot be post-stained.
 
 ### En bloc vs section staining
 
@@ -167,7 +157,7 @@ The reduced osmium-thiocarbohydrazide-osmium (rOTO) protocol (adapted from Hua e
 
 ### Practical implication for annotators
 
-Contrast quality directly affects segmentation accuracy. When staining is uneven (e.g., reduced OsO₄ penetration at block edges), membrane detection degrades, merge error rates increase, and proofreading burden rises. This is why acquisition QA must happen before full-volume reconstruction (see acquisition-qa.md).
+Contrast quality directly affects segmentation accuracy. When staining is uneven (for example, reduced OsO₄ penetration toward the block center), membrane detection degrades, merge and split error rates rise, and so does the proofreading burden. This is why acquisition QA must happen before full-volume reconstruction (see [Acquisition QA]({{ '/content-library/imaging/acquisition-qa/' | relative_url }})).
 
 ---
 
@@ -193,7 +183,7 @@ Imagine you are looking at a single 2D EM image (SEM-BSE mode, ~8 nm pixel size)
 |---|---|---|
 | "Higher resolution is always better" | Resolution must match the question; excess resolution wastes throughput and storage | Calculate minimum voxel size needed for target structures |
 | "EM shows you molecules" | EM shows heavy-metal staining patterns, not molecules directly | Compare with immuno-EM or correlative approaches for molecular identity |
-| "All EM images look the same" | Contrast varies dramatically with staining protocol, accelerating voltage, and detector | Compare images from different datasets (H01 vs MICrONS vs FlyWire) |
+| "All EM images look the same" | Contrast varies strongly with staining protocol, accelerating voltage, and detector | Compare images from different datasets (H01 vs MICrONS vs FlyWire) |
 | "Dark = more biological material" | In TEM, dark = more scattering (staining). In BSE-SEM, bright = more scattering | Know your modality's contrast convention |
 
 ---
@@ -203,9 +193,13 @@ Imagine you are looking at a single 2D EM image (SEM-BSE mode, ~8 nm pixel size)
 - Bozzola JJ, Russell LD (1999) *Electron Microscopy: Principles and Techniques for Biologists*. Jones & Bartlett. — Comprehensive EM methods textbook.
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy to reconstruct three-dimensional tissue nanostructure." *PLoS Biology* 2(11):e329. — Introduced SBEM for neuroscience.
+- Hayworth KJ, Kasthuri N, Schalek R, Lichtman JW (2006) "Automating the collection of ultrathin serial sections for large volume TEM reconstructions." *Microscopy and Microanalysis* 12(Suppl 2):86-87.
 - Hayworth KJ et al. (2015) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12(4):319-322. [10.1038/nmeth.3292](https://doi.org/10.1038/nmeth.3292)
-- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923. — rOTO staining for volume EM.
+- Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923. — Modified rOTO en bloc staining for millimeter-scale blocks.
 - Knott G et al. (2008) "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling." *Journal of Neuroscience* 28(12):2959-2964.
+- MICrONS Consortium (2025) "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640:435-447.
+- Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 - White JG et al. (1986) "The structure of the nervous system of the nematode *Caenorhabditis elegans*." *Philosophical Transactions of the Royal Society B* 314(1165):1-340.
+- Willingham MC, Rutherford AV (1984) "The use of osmium-thiocarbohydrazide-osmium (OTO) and ferrocyanide-reduced osmium methods to enhance membrane contrast and preservation in cultured cells." *Journal of Histochemistry and Cytochemistry* 32(4):455-460.
 - Xu CS et al. (2017) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 6:e25916. [10.7554/eLife.25916](https://doi.org/10.7554/eLife.25916) — Janelia enhanced FIB-SEM.
 - Zheng Z et al. (2018) "A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*." *Cell* 174(3):730-743. — FAFB dataset.

@@ -1,4 +1,4 @@
-# MICrONS real-data lab (NeuroTrailblazers). Tested with Python 3.13 on 2026-09-26.
+# MICrONS real-data lab (NeuroTrailblazers). Tested with Python 3.11 and 3.13 on 2026-09-26.
 # Analysis
 numpy==2.3.5
 pandas==2.3.3

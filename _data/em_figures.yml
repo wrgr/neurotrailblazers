@@ -45,19 +45,19 @@ groups:
         marp: "![w:620](../../../assets/images/content-library/em/soma-ultrastructure.jpg)"
       - src: /assets/images/content-library/em/dendrite-and-organelles.jpg
         title: "Dendrite and organelles"
-        detail: "Labelled 'dendrite' by the subcompartment model. Large branched mitochondria exclude axonal identity."
+        detail: "Labeled 'dendrite' by the subcompartment model. Its large mitochondria are more typical of a dendrite than of a thin axon."
         marp: "![w:620](../../../assets/images/content-library/em/dendrite-and-organelles.jpg)"
       - src: /assets/images/content-library/em/myelinated-axon.jpg
         title: "Myelinated axon"
         detail: "Compact myelin reads as a dark annulus at 4 nm. Individual lamellae (12 nm period = 3 px) are NOT resolvable."
         marp: "![w:560](../../../assets/images/content-library/em/myelinated-axon.jpg)"
       - src: /assets/images/content-library/em/myelin-in-grey-matter.jpg
-        title: "Myelin across a grey-matter field"
+        title: "Myelin across a gray-matter field"
         detail: "Every myelinated axon highlighted by the myelin mask — a small minority of profiles in cortex."
         marp: "![w:620](../../../assets/images/content-library/em/myelin-in-grey-matter.jpg)"
       - src: /assets/images/content-library/em/astrocyte-process.jpg
-        title: "Astrocytic process"
-        detail: "Pale cytoplasm and an irregular, space-filling outline that wraps its neighbours."
+        title: "Astrocyte cell body"
+        detail: "Part of an astrocyte soma: pale cytoplasm beside the curved edge of the nucleus (right), with packed neuropil at upper left. Not a fine process."
         marp: "![w:620](../../../assets/images/content-library/em/astrocyte-process.jpg)"
       - src: /assets/images/content-library/em/blood-vessel.jpg
         title: "Cortical blood vessel"
@@ -78,7 +78,7 @@ groups:
         marp: "![w:1080](../../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg)"
       - src: /assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg
         title: "Flood-filling network output"
-        detail: "197 distinct objects in one small field. Every colour is an object the pipeline asserts is continuous in 3D."
+        detail: "197 distinct objects in one small field. Every color is an object the pipeline asserts is continuous in 3D."
         marp: "![w:620](../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg)"
       - src: /assets/images/content-library/em/segmentation-c2-vs-c3.jpg
         title: "The merge/split dial: c2 vs c3"
@@ -86,7 +86,7 @@ groups:
         marp: "![w:1080](../../../assets/images/content-library/em/segmentation-c2-vs-c3.jpg)"
       - src: /assets/images/content-library/em/proofreading-before-after.jpg
         title: "Before and after a human fixed it"
-        detail: "Green is genuinely the cell; red is 11,038 voxels the algorithm absorbed and a proofreader removed. Note the soma needs no correction at all."
+        detail: "Green is genuinely the cell; red is 11,038 voxels, in this section, that the algorithm absorbed and a proofreader removed. Note the soma needs no correction at all."
         marp: "![w:1120](../../../assets/images/content-library/em/proofreading-before-after.jpg)"
       - src: /assets/images/content-library/em/subcompartment-classes.jpg
         title: "Six-class subcompartment model"

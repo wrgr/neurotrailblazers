@@ -16,12 +16,12 @@ content_type: navigation
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Concept Explorer</h1>
-      <p class="hero-subtitle">Explore NeuroTrailblazers by concept, not module numbers.</p>
+      <p class="hero-subtitle">Find material by the skill you need, not by module number.</p>
     </div>
   </div>
 
   <section class="section">
-    <p>Use this page to navigate by what you need right now: a method, a workflow challenge, or professional-development support. Modules remain available as delivery objects, but discovery is concept-first.</p>
+    <p>Each card is one skill, such as framing a hypothesis, calling an axon versus a dendrite, or budgeting proofreading. It lists the unit that teaches it, the lab that practices it, and the slides for teaching it. Filter by track or by what you are trying to do. If you already know the module you want, the <a href="{{ '/modules/' | relative_url }}">module library</a> is faster.</p>
   </section>
 
   <section class="section">
@@ -33,13 +33,13 @@ content_type: navigation
       {% endfor %}
     </div>
     <div class="mt-1">
-      <label for="need-filter"><strong>User need:</strong></label>
+      <label for="need-filter"><strong>What you are trying to do:</strong></label>
       <select id="need-filter">
         <option value="all">All needs</option>
       </select>
     </div>
     <div class="mt-1">
-      <h3>Recommended Next Resources</h3>
+      <h3>Start with these</h3>
       <ul id="recommended-list"></ul>
     </div>
   </section>

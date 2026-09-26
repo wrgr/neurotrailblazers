@@ -21,14 +21,14 @@ acceptable wording. This page is public and suitable for formative feedback.
 | B. Synapse classifier | Rin enjoys the work; Dr. Kessler is keen; no labels exist. | How many hours of labeling a first model needs; whether another lab has labels to share (ask Dr. Kessler). | Whether it will beat the current detector. |
 | C. Repeated contacts | The idea is published elsewhere; nobody here has run it. | Whether enough axons are proofread to count contacts; whether a simple version runs at all; whether Dr. Whitfield would support it. | Whether the effect exists in this volume. |
 
-**C has the most removable uncertainty.** Two of its three big unknowns take a small
-pilot and one email. That makes it the best option to *probe* first, not the best
-option to *choose*. Probing it first is cheap and tells Rin the most per day spent.
+**C has the most removable uncertainty.** Three of its four unknowns take a small
+pilot and one email. That makes C the best option to *probe* first. It does not make
+C the best option to *choose*. The probe is cheap and tells Rin the most per day spent.
 
 Rin's two weeks of reading did not move any cell from "knowable" to "known". The
-[Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) rule applies:
-Rin could already state the question the next artifact answers, so further reading
-was buying confidence, not information.
+[Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) rule applies.
+Rin could already state the question the next artifact answers, so more reading was
+buying confidence. It was not buying information.
 
 Accept A or B as the probe target if the learner argues from the table. For example,
 B's labeling cost may be the single fact that decides it, and one conversation with
@@ -52,9 +52,9 @@ Dr. Kessler gets it.
 **Proposal to Dr. Whitfield:**
 
 > "Before I choose, I'd like to spend two weeks checking whether C is feasible in the
-> new volume: I'll count repeated contacts on about 20 proofread axons and bring the
-> numbers and a note on proofreading needs to lab meeting at the end of the two weeks. Is that a good
-> use of the time, or would you rather I choose now?"
+> new volume. I'll count repeated contacts on about 20 proofread axons and bring the
+> numbers and a note on proofreading needs to lab meeting at the end of the two weeks.
+> Is that a good use of the time, or would you rather I choose now?"
 
 The stopping rule is checkable by someone else, as in norm 22 on the [Technical
 practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }}) page. The

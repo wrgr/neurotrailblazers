@@ -18,11 +18,20 @@ for assumptions and how to adapt the meeting pattern.
 
 **Time budget.** 48 contact hours, plus about 44 outside hours (2,665 minutes). The
 outside load runs from 1.5 to 3.5 hours a week, so the full load is about 4.5–6.5 hours a
-week. That is a little under one outside hour per contact hour. To reach a two-to-one
-ratio, add Unit 03 sections 3–4 and the rest of Unit 09 as reading (about 2 hours). Add
-the [Module 16]({{ '/teaching/sessions/module16/' | relative_url }}) figure package as a
-take-home on the learner's own analysis card (4 hours). Add a longer final report. Add the
-Unit 09 analysis lab (2 hours), with the MICrONS lab as its real-data source.
+week. That is a little under one outside hour per contact hour. A two-to-one ratio needs
+about 96 outside hours, and no set of existing materials closes that gap on its own. The
+largest additions:
+
+- Unit 09 sections 4–5 as reading (45 minutes), and the Unit 09 analysis lab with the
+  MICrONS lab as its real-data source (2 hours);
+- the [Module 16]({{ '/teaching/sessions/module16/' | relative_url }}) figure package as a
+  take-home on the learner's own analysis card (4 hours);
+- the [Module 07]({{ '/teaching/sessions/module07/' | relative_url }}) and
+  [Module 10]({{ '/teaching/sessions/module10/' | relative_url }}) kits as take-homes
+  (4 hours each by the kits' own estimate; Module 10 needs Python and NetworkX).
+
+Together these add about 15 hours, bringing the outside total to about 59. The rest has
+to come from a longer final report or more reading.
 
 **Instructor preparation.** Weeks 6–8 need patch sets that the site does not ship: a
 borderline set for Unit 05, 20 labeled processes for Unit 06 and 40 glia patches for
@@ -63,8 +72,8 @@ final talks.
 ### Week 1: What is expected here, and how do I find out?
 
 **A. Module 02 kit, research foundations and the hidden curriculum.** Run Parts A–D of the
-activity (60 minutes) with a 20-minute debrief. The Orientation plan asks for Module 02
-first when possible.
+activity (60 minutes) with a 20-minute debrief, and use the last 10 minutes to start the
+navigation document. The Orientation plan asks for Module 02 first when possible.
 [Session kit]({{ '/teaching/sessions/module02/' | relative_url }}) ·
 [Module page]({{ '/modules/module02/' | relative_url }})
 
@@ -127,8 +136,9 @@ your reporting obligations beforehand, as the plan requires.
 [Worksheet]({{ '/teaching/pathways/identity-and-purpose-activity/' | relative_url }}) ·
 [Model responses]({{ '/teaching/pathways/identity-and-purpose-answers/' | relative_url }})
 
-**Before class.** A: [Synapse Detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }})
-on localization, partner assignment and evaluation units (20 minutes). B: the
+**Before class.** A: [Synapse Detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}),
+the opening section and sections 1, 2 and 7, on localization, partner assignment and
+evaluation units (20 minutes). B: the
 [belonging page]({{ '/hidden-curriculum/belonging/' | relative_url }}) (15 minutes).
 
 **Artifacts.** An audit plan and a revised brief. A contribution plan. The private
@@ -154,7 +164,8 @@ room-wide comparison of rejected modalities (25 minutes).
 a stated sampling rule, 10 locations and artifacts with coordinates. Debrief for
 20 minutes. Steps 6–7 are homework. This lab uses a public viewer with no account, but it
 is live data: check that the viewer loads the week before. If it does not, run the
-[Module 05 kit]({{ '/teaching/sessions/module05/' | relative_url }}) with patches you supply.
+[Module 05 kit]({{ '/teaching/sessions/module05/' | relative_url }}) studio instead, with
+a patch set built from the recipe on its module page.
 [Lab]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}) ·
 [Slides]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})
 
@@ -207,15 +218,18 @@ The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) is t
 real-data version of Sessions 3 and 4. It reads static public exports pinned to
 materialization v1507, so no account is needed. It checks file hashes, applies stated
 inclusion rules to 2,070 proofread cells, compares reciprocity with three nulls, and
-writes a methods record. Learners need Python 3.11 or later, about 90 MB of downloads
-and a laptop; the run takes about a minute. Have learners install the requirements
-before class.
+writes a methods record. Learners need a laptop with Python 3.11–3.13, about 90 MB of
+downloads and 2 GB of free memory. A run took under a minute on the test machine and can
+take several minutes on an older laptop. Have learners install the requirements before
+class.
 
-1. Run the notebook and compare the key numbers with the archived outputs on the lab
+1. Check installs and open the notebook; pair anyone whose setup fails with someone
+   whose works (15 minutes).
+2. Run the notebook and compare the key numbers with the archived outputs on the lab
    page (35 minutes, pairs).
-2. Write the methods record into the study brief and read the v1412 → v1507 drift
+3. Write the methods record into the study brief and read the v1412 → v1507 drift
    section: which cells a stale root-ID join would silently lose (25 minutes).
-3. Debrief: which null should the headline use, and why the uniform null overstates
+4. Debrief: which null should the headline use, and why the uniform null overstates
    the effect (15 minutes).
 
 **Offline fallback** (no network or no Python): read the archived executed notebook on
@@ -231,8 +245,7 @@ under a second inclusion threshold.
 **Before class.** A: Unit 04, read in weeks 4–5. B: Unit 05 sections 3–4 (75 minutes).
 
 **Artifacts.** A MICrONS methods record (v1507, inclusion rules, file hashes) and a
-drift note. A consensus sheet,
-disagreement log and one rubric revision.
+drift note. A consensus sheet, disagreement log and one rubric revision.
 
 **Feedback.** Unit 04 [rubric]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}#rubric)
 rows for storage, compute and labor, with Version discipline applied to the thresholds.
@@ -367,7 +380,7 @@ it will reuse and the non-claim (45 minutes). Read
 [career mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }})
 sections 1, 2 and 5 (25 minutes).
 
-**Artifacts.** A licence audit and governance note, added to the brief. An authorship memo
+**Artifacts.** A license audit and governance note, added to the brief. An authorship memo
 and system map.
 
 **Feedback.** Ethics [rubric]({{ '/teaching/lectures/ethics-and-governance-answers/' | relative_url }}#feedback-guide).
@@ -375,7 +388,7 @@ Savvy Researcher [rubric]({{ '/teaching/pathways/savvy-researcher-answers/' | re
 Return the week 10 proposal with three checks: the question matches the brief, reused
 artifacts are named, and a non-claim is stated.
 
-**After class (120 minutes).** Add the licence, ethics-statement location and credit
+**After class (120 minutes).** Add the license, ethics-statement location and credit
 model to the brief (15 minutes). Ask the follow-through question (15 minutes). Start the
 final report draft (90 minutes). **Week total:** 3 contact hours, 145 outside minutes.
 
@@ -387,7 +400,7 @@ preprint scenario.
 [Module page]({{ '/modules/module19/' | relative_url }})
 
 **B. Module 21 kit, reproducibility and FAIR principles.** For the package, learners use
-their Session 3 methods record and week 6 query note. Step 4 peer-tests another team's
+their Session 3 methods record and the week 6 MICrONS methods record. Step 4 peer-tests another team's
 package without its author's help.
 [Session kit]({{ '/teaching/sessions/module21/' | relative_url }}) ·
 [Module page]({{ '/modules/module21/' | relative_url }})
@@ -523,12 +536,31 @@ enough to cover every MERIT stage.
   Your Course in week 9 and let Future Forward use its catch-up for the direction memo.
 
 **Technical work omitted.** Part A of Units 04 and 08, and the Unit 09 analysis lab, need
-live data or accounts. The MICrONS lab replaces Unit 04 Part A as the real-data meeting. Kit 01 overlaps
-Session 1 and the Unit 01 lab. Kits 03–07 and 09–11 name data, patches or scripts the
-site does not publish; kits 03 and 05, for example, point to provided files that are not
-there. The units cover the same ground with labs the instructor can prepare. Kits 12–16
-and 18 are omitted for time; Kit 16 is listed above as a take-home extension. Kits 23 and
-24 overlap Communicating Science and Future Forward.
+live data or accounts. The MICrONS lab replaces Unit 04 Part A as the real-data meeting.
+
+**Module kits omitted.** Missing files are no longer a reason to leave a kit out: every
+material a kit names now resolves, either to synthetic files under `assets/kits/` or, for
+Modules 04 and 05, to a recipe for an instructor-built patch set. The 17 kits not on this
+map are left out for overlap or time:
+
+- **Kit 01** overlaps Session 1 and the Unit 01 lab.
+- **Kit 03**, Python and Jupyter, overlaps the MICrONS lab, which is also a notebook
+  exercise. Assign it before week 6 to learners new to Python; its offline synapse table
+  needs no account.
+- **Kits 04 and 05** need a patch set the instructor builds from MICrONS or H01. They
+  cover the same perceptual ground as the Unit 03 QA lab and the Unit 05–07 labs, which
+  already take a term's worth of patch preparation. Kit 05 stays the week 4 fallback.
+- **Kits 06 and 07** triage synthetic error reports with a metric script and overlap the
+  Unit 08 lab. Kit 07 has [model responses]({{ '/teaching/answers/module07/' | relative_url }}).
+  To have learners compute release metrics rather than budget labor, swap its 60–75
+  minute studio for Unit 08 Part B in week 8B and grade the release memo in place of the
+  proofreading plan. It is also listed above as a take-home.
+- **Kit 09**, morphology and skeletons, overlaps the Unit 06 calibration lab.
+- **Kits 10 and 11** compute graph statistics and motifs on synthetic 500- and 200-neuron
+  graphs. They overlap Session 4, Module 20 and Unit 09, and both need Python with
+  NetworkX or DotMotif. Kit 10 is listed above as a take-home.
+- **Kits 12–16 and 18** are left out for time. Kit 16 is listed above as a take-home.
+- **Kits 23 and 24** overlap Communicating Science and Future Forward.
 
 ## Suggested grading weights
 

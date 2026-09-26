@@ -10,15 +10,10 @@ pathways:
   - classroom delivery
   - graduate teaching
 summary: "From voxels to a defensible claim: segmentation error, null models, and NeuroAI."
-use_layout_hero: false
 ---
 
 *Lecture 3 of the [connectomics lecture series]({{ '/teaching/lectures/' | relative_url }}).
-58 slides in three parts, about 150 minutes. Openly licensed — **CC BY-SA 4.0**.*
-
-## What this lecture covers
-
-Segmentation and its error taxonomy, proofreading triage, graph construction and null models, and an honest account of what connectomics and machine learning give each other.
+58 slides in three parts, about 150 minutes. Openly licensed under **CC BY-SA 4.0**.*
 
 <div class="resource-card">
   <div class="resource-links">
@@ -29,8 +24,8 @@ Segmentation and its error taxonomy, proofreading triage, graph construction and
     <a class="resource-link" href="{{ '/teaching/lectures/algorithms-and-applications-answers/' | relative_url }}">Instructor model responses</a>
   </div>
   <p><small>The HTML deck presents directly in a browser. The Markdown source carries the
-  speaker notes as HTML comments and is what to edit if you want to change wording —
-  see <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
+  speaker notes as HTML comments and is what to edit if you want to change wording.
+  See <a href="{{ '/teaching/lectures/' | relative_url }}#formats">Formats</a> for PowerPoint and Google Slides.</small></p>
 </div>
 
 ## Learning objectives
@@ -45,7 +40,7 @@ By the end of this lecture, participants will be able to:
 
 ## Teach a 90-minute session
 
-This selected-slide route is Session 4 in the [short teaching sequence]({{ '/teaching/sequence/' | relative_url }}),
+This selected-slide route is Session 4 in the [four-session block]({{ '/teaching/sequence/' | relative_url }}),
 but Lecture 3 / Module 9 in the original graduate course. Use the existing 58-slide
 deck and embedded notes; slide numbers include the cover. The full two-hour lab on
 slide 54 is an extension, not additional work required in this short session.
@@ -92,15 +87,15 @@ the short session rather than the original course exam requirements on slide 55.
 
 The full, approximately 150-minute route uses all three parts.
 
-### Part A — Segmentation, error, and the labor problem
+### Part A: Segmentation, error, and the labor problem
 
 How automated segmentation works and where it fails structurally, the error taxonomy, quality metrics and their blind spots, and triage by endpoint change per annotator-minute.
 
-### Part B — From segmentation to a defensible graph
+### Part B: From segmentation to a defensible graph
 
 Six consequential construction choices, null models, the triad census, merge-error bias, and the error-sensitivity check.
 
-### Part C — Applications, NeuroAI, and what to claim
+### Part C: Applications, NeuroAI, and what to claim
 
 Comparative connectomics, cell typing, three results that actually landed, and the two symmetric errors about connectomics and machine learning.
 
@@ -111,7 +106,7 @@ the “it would be uninteresting if…” sentence written out, success criterio
 advance, error sensitivity under a stated model, non-claim, and provenance. The
 full lab uses measured error rates; the short session uses a declared toy scenario.
 
-## The centrepiece
+## The centerpiece
 
 The full lecture compares **hypothetical** null summaries for 100 neurons, 1,200
 edges and 210 reciprocal pairs. The interpretation depends on the null and test
@@ -131,15 +126,15 @@ an error model; perturbing the graph then shows how the endpoint behaves under t
 model. Rates alone do not specify which nodes or edges are wrong. The resulting
 spread is conditional sensitivity, not automatically a confidence interval.
 
-**The NeuroAI section is written to prevent two errors, not one.** Dismissing the connection and overselling it are both wrong. The accurate position — machine learning has given connectomics far more than the reverse — is specific, defensible, and slightly boring, which is usually the sign that it is right.
+**The NeuroAI section is written to prevent two errors.** Dismissing the connection and overselling it are both wrong. The position the deck takes is narrower: so far, machine learning has given connectomics far more than connectomics has given machine learning (slides 47–49).
 
-## Licence and credit
+## License and credit
 
 **CC BY-SA 4.0.** Teach from this lecture anywhere, including commercially; copy and
 redistribute it in any medium; and re-cut, shorten, translate, or merge it into your own
 material. No permission needed. Two conditions: credit the original and say if you
 changed anything, and distribute your adapted version under
-[the same licence]({{ '/teaching/lectures/' | relative_url }}#licence).
+[the same license]({{ '/teaching/lectures/' | relative_url }}#license).
 
 > Gray Roncal, W. (2026). *Nanoscale Connectomics: Algorithms and Applications* (EN.585.781 Frontiers in Neuroengineering,
 > Module 9). NeuroTrailblazers. CC BY-SA 4.0.
@@ -151,7 +146,7 @@ The H01 cover image retains **CC BY 4.0**, with credit to Lichtman Lab / Harvard
 and Connectomics at Google, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
 Preserve that separate attribution when adapting the deck.
 
-Found something wrong or out of date — or built a version worth sharing back?
+Found something wrong or out of date, or built a version worth sharing back?
 [Open an issue](https://github.com/wrgr/neurotrailblazers/issues).
 
 ## Related
@@ -159,5 +154,5 @@ Found something wrong or out of date — or built a version worth sharing back?
 - [Series overview]({{ '/teaching/lectures/' | relative_url }})
 - [Lecture 1: Introduction to Connectomics]({{ '/teaching/lectures/connectomics-01-introduction/' | relative_url }})
 - [Lecture 2: Tools and Methods]({{ '/teaching/lectures/connectomics-02-tools-and-methods/' | relative_url }})
-- [Technical training units]({{ '/technical-training/' | relative_url }}) — the long-form material behind these slides
-- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}) — papers and discussion prompts
+- [Technical training units]({{ '/technical-training/' | relative_url }}): the long-form material behind these slides
+- [Journal club]({{ '/technical-training/journal-club/' | relative_url }}): papers and discussion prompts

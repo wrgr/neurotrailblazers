@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Technical Course"
-description: "Canonical open connectomics course focused on technical skills from imaging to NeuroAI."
+description: "Nine ordered units in nanoscale connectomics, from tissue preparation and EM imaging to proofreading and connectome analysis."
 permalink: /technical-training/
 slug: technical-training
 summary: "Hub for the Technical Course: the nine units, in order."
@@ -9,7 +9,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - methods depth
-last_reviewed: 2026-03-10
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: navigation
@@ -25,8 +25,9 @@ content_type: navigation
   </div>
 
   <section class="section">
-    <p>This course follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
-    <p>The nine units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track, and the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">atlas</a> rides alongside them as a reference companion, consulted rather than completed. The reference material the units draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running related sessions for a group, the <a href="{{ '/modules/' | relative_url }}">modules</a> carry the same material in tutorial form, each with a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> for <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
+    <p>The nine units are ordered and cumulative. Each one ends in an exercise you hand in. Together they form the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track.</p>
+    <p>The <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">atlas</a> sits beside the units as reference. You consult it; you do not complete it. The rest of the reference material the units draw on (dictionary, content library, journal club, hidden curriculum) is in <a href="{{ '/core/' | relative_url }}">the core</a>, and can be read in any order.</p>
+    <p>Working through the units alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>. If you are teaching a group, the <a href="{{ '/modules/' | relative_url }}">modules</a> cover the same material as tutorials, and each has a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> for <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
     <div class="cta-buttons">
       <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}" class="btn btn-primary">Start Unit 1: Why Map the Brain</a>
       <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-secondary">Journal Club Reading List</a>
@@ -39,8 +40,8 @@ content_type: navigation
   </section>
 
   <section class="section">
-    <h2>Start by learner need</h2>
-    <p>If sequence is less important than immediate relevance, jump directly to a need-based concept view.</p>
+    <h2>If you need one skill now, start from the need</h2>
+    <p>Each button opens the Concept Explorer filtered to the concepts that serve that need. You skip the sequence this way, so a concept may assume a unit you have not read. Each card's title links to the page that teaches it.</p>
     <div class="cta-buttons">
       <a href="{{ concepts_base }}?track=core-concepts-methods&need=starting%20a%20research%20question" class="btn btn-secondary">Start a Research Question</a>
       <a href="{{ concepts_base }}?track=core-concepts-methods&need=improving%20data%20quality" class="btn btn-secondary">Improve Data Quality</a>
@@ -71,12 +72,10 @@ content_type: navigation
   {%- endfor -%}
   {%- assign course_hours = course_minutes | divided_by: 60.0 | round -%}
   <section class="section">
-    <h2>The nine units, and the atlas beside them</h2>
-    <p>Units 01&ndash;09 are ordered and cumulative; each ends in a graded artifact. The atlas is
-    reference: consult it as you go, do not work through it. Working through all nine on
-    your own, reading and graded exercises included, is about <strong>{{ course_hours }}
-    hours</strong>. Each unit page states its own share of that, beside the length of a taught
-    session and of its slide deck.</p>
+    <h2>All nine units take about {{ course_hours }} hours on your own</h2>
+    <p>That total covers reading and the graded exercises, summed from the times on the cards
+    below. Each unit page also gives the length of a taught session and of its slide deck.
+    The atlas is last in the grid and is not in the total, because it is reference.</p>
     {% assign concept_items = site.data.concepts.concepts %}
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}

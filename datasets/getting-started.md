@@ -27,7 +27,7 @@ related_tools:
 related_frameworks:
   - education-models
 resource_links: []
-last_reviewed: 2026-08-21
+last_reviewed: 2026-09-26
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core
@@ -35,29 +35,25 @@ content_type: core
 
 # Getting Started with Data
 
-Connectomics has a strange access problem. The data is genuinely public — more
-open than almost any comparable field — and yet "getting the data" is the step
-where most new teams stall for weeks. This page exists to close that gap: the
-gap between *the data is public* and *I have a DataFrame*.
+Connectomics data is public, and yet "getting the data" is where many new teams
+stall for weeks. This page covers the distance between *the data is public* and
+*I have a DataFrame*.
 
-The barrier is not any one tool. It is that the field's data lives in **five
-overlapping ecosystems** (CAVE, neuPrint, BossDB, per-project portals, and plain
-file downloads), each with its own client, auth story, and vocabulary — and no
-single page that tells you which one your question lives in. BossDB solved
-hosting; Codex solved browsing; CAVE solved versioned queries. Nobody solved
-*routing*, so every newcomer re-derives it by trial and error. This page is the
-router.
+No single tool is the barrier. The field's data lives in **five overlapping
+ecosystems** (CAVE, neuPrint, BossDB, per-project portals, and plain file
+downloads), each with its own client, authentication and vocabulary. BossDB
+handles hosting, Codex handles browsing, and CAVE handles versioned queries, but
+nothing tells you which one your question needs. This page does that.
 
-It is organized as a ladder. **Climb only as high as your question requires** —
-most projects on the [Open Problems]({{ '/open-problems/' | relative_url }})
+It is organized as a ladder. **Climb only as high as your question requires.**
+Most projects on the [Open Problems]({{ '/open-problems/' | relative_url }})
 ramps never need Level 3.
 
 > **Rule zero: you almost never need the images.** The published EM volumes are
 > petabytes; the *tables derived from them* — neurons, synapses, types, edges —
 > are megabytes to a few gigabytes, and they answer most questions. Reach for
 > pixels only when your question is literally about pixels (Levels 0 and 3).
-> The most common self-inflicted failure in this field is a new student
-> attempting to "download the dataset."
+> A new student trying to "download the dataset" is the failure to avoid first.
 
 ## The ladder at a glance
 
@@ -84,9 +80,9 @@ And the reverse index — start from what you want:
 Everything else on this page goes better if you have *seen* the data first.
 
 - **[FlyWire Codex](https://codex.flywire.ai/)** — search the fly connectome by
-  cell type, region, or ID; view connectivity and 3D renderings. This is the
-  fastest "wow" in the field and the reference you'll calibrate against at
-  Level 1.
+  cell type, region, or ID; view connectivity and 3D renderings. It is the
+  quickest way to see a whole connectome, and the reference you will calibrate
+  against at Level 1.
 - **[neuPrint](https://neuprint.janelia.org/)** — Janelia's web interface to the
   hemibrain and male CNS connectomes. The query builder teaches you the data
   model (neurons → ROIs → synapse counts) without writing code.
@@ -128,16 +124,20 @@ print(conn["syn_count"].sum())   # total synapses in the released edge list
 
 **Calibrate before you compute anything novel:** your neuron count should match
 what Codex displays for the *same release*. If it doesn't, you are about to
-build a semester on a filter you don't understand — usually the synapse-count
+build a semester on a filter you don't understand. The usual culprit is the synapse-count
 threshold (edge lists are commonly filtered to pairs with ≥5 synapses, and the
 challenge/paper numbers depend on that choice).
 
 **Other no-auth table sources worth knowing:**
 
+- *MICrONS* — the public release also ships static CSV exports of its
+  materialized tables on Google Cloud Storage, readable with no account. The
+  [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) uses
+  them, pinned to one version.
 - *C. elegans* — the Witvliet et al. developmental connectomes and the classic
   adult wiring diagrams are supplementary spreadsheets and
-  [NemaNode](https://nemanode.org/) downloads; the entire nervous system fits in
-  memory a thousand times over. The gentlest possible first dataset.
+  [NemaNode](https://nemanode.org/) downloads. The whole nervous system fits in
+  a laptop's memory many times over, which makes it the gentlest first dataset.
 - *Larval Drosophila* (Winding et al. 2023) — adjacency matrices in the paper's
   supplement; 3,016 neurons, ideal laptop scale.
 - *Hemibrain and male CNS* — primarily served through neuPrint (Level 2), but
@@ -169,8 +169,8 @@ Snapshots are fixed menus. Level 2 is ordering off-menu: *all inputs to this
 one neuron*, *every synapse inside this region*, *the same query at two
 proofreading versions* (which is exactly what
 [on-ramp 1]({{ '/open-problems/' | relative_url }}#onramp-proofreading-budget)
-needs). The price is a one-time authentication setup — **the single most common
-place newcomers stall, so here it is start to finish.**
+needs). The price is a one-time authentication setup. **Newcomers stall here more
+than anywhere else, so here it is start to finish.**
 
 ### The CAVE token, start to finish
 
@@ -195,8 +195,8 @@ client.auth.get_new_token()   # prints a URL — open it in a browser
 client.auth.save_token(token="PASTE_THE_TOKEN_HERE")
 ```
 
-3. The token lands in a file under `~/.cloudvolume/secrets/`. That is the whole
-   trick — every later `CAVEclient(...)` call reads it from there. **On Google
+3. The token lands in a file under `~/.cloudvolume/secrets/`. Every later
+   `CAVEclient(...)` call reads it from there. **On Google
    Colab that filesystem is wiped between sessions**, so either re-run
    `save_token` per session or store the token in Colab's Secrets and save it
    programmatically in your first cell.
@@ -213,12 +213,12 @@ print(client.materialize.get_tables())        # what's queryable
 df = client.materialize.query_table("<table name>", limit=1000)
 ```
 
-Two rules that prevent 90% of Level 2 grief:
+Two rules prevent most Level 2 trouble:
 
 - **Pin the version, in code, every time.** Root IDs change when proofreading
   edits merge or split objects. Two tables pulled at different versions will
-  *mostly* join — the silent 2% mismatch is how wrong results happen. One
-  version, everywhere, recorded in the provenance cell.
+  *mostly* join, and the rows that silently fail to match are how wrong results
+  happen. Use one version everywhere, recorded in the provenance cell.
 - **Query, don't dump.** `query_table` with filters and limits, not a full-table
   pull "to have it locally." The server is the local copy.
 
@@ -234,7 +234,7 @@ from neuprint import Client, fetch_neurons, NeuronCriteria as NC
 
 c = Client("neuprint.janelia.org", dataset="<pick from the site's dataset list>",
            token="PASTE_TOKEN")
-neurons, counts_by_roi = fetch_neurons(NC(type="KC.*"))   # e.g. Kenyon cells
+neurons, counts_by_roi = fetch_neurons(NC(type="KC.*", regex=True))   # e.g. Kenyon cells
 ```
 
 The dataset string (name:version) is shown in the site's dataset switcher —
@@ -249,8 +249,8 @@ and [Problem 6]({{ '/open-problems/' | relative_url }}#onramp-data-logistics).
 
 **Do the byte math before you download.** EM imagery is `uint8`: a 512³ cutout
 is 512³ ≈ 134 million voxels ≈ **134 MB** uncompressed. A 2048³ cutout is 8.6 GB.
-Every volume also ships a **mip pyramid** — mip 0 is full resolution, each
-higher mip is downsampled — and browsing questions rarely need mip 0.
+Every volume also ships a **mip pyramid**: mip 0 is full resolution, and each
+higher mip is downsampled. Browsing questions rarely need mip 0.
 
 ```python
 # pip install cloud-volume
@@ -275,11 +275,11 @@ em = array("bossdb://<collection>/<experiment>/<channel>")   # copy from the pro
 cutout = em[100:164, 5000:5512, 5000:5512]                   # note: z, y, x order
 ```
 
-Mind the axis-order difference between the two clients — it is the classic
-"my cutout is garbage" cause. Ground-truth training volumes (e.g.
+Mind the axis-order difference between the two clients. It is the usual cause
+of "my cutout is garbage". Ground-truth training volumes (e.g.
 [CREMI](https://cremi.org/)'s fly volumes with synapse annotations) are plain
-HTTP downloads of manageable size — often the right Level 3 starting point
-because they come *with* labels.
+HTTP downloads of manageable size. They are often the right Level 3 starting
+point because they come *with* labels.
 
 ## When it breaks: failure signatures
 
@@ -299,13 +299,15 @@ Symptoms first, because that's what you'll actually have:
 
 Two failed attempts on the same step is the threshold: stop, write down exactly
 what you ran and what it returned, and bring it to
-[Ask an Expert]({{ '/ask-an-expert/' | relative_url }}). Access friction is a
-known problem in this field; nobody competent will think less of you.
+[Ask an Expert]({{ '/ask-an-expert/' | relative_url }}) or to the site's
+[contact route]({{ '/about/#contact' | relative_url }}). Access friction is a
+known problem in this field, and experienced people hit it too.
 
 ## The 60-minute first contact
 
-The whole ladder, compressed into one sitting. This is step 2 of every
-[Open Problems on-ramp]({{ '/open-problems/' | relative_url }}), done together:
+Levels 0 and 1 on FlyWire, in one sitting. Step 2 of every
+[Open Problems on-ramp]({{ '/open-problems/' | relative_url }}) sends you to one
+level of this page; this is the route most of them start with:
 
 1. **(10 min, Level 0)** Open Codex. Search a cell type. Look at one neuron in
    3D. You have now seen the data.
@@ -315,7 +317,7 @@ The whole ladder, compressed into one sitting. This is step 2 of every
    numbers against what Codex shows for the same release. Investigate any
    mismatch until you can name the filter that causes it.
 4. **(15 min, first real result)** Plot the out-degree distribution on log-log
-   axes. You are now doing connectomics —
+   axes. You are now doing connectomics, and
    [Network analysis methods]({{ '/content-library/connectomics/network-analysis-methods/' | relative_url }})
    tells you what you're looking at.
 5. **(10 min, provenance)** Add the provenance cell — dataset, release, date —
@@ -325,14 +327,14 @@ The whole ladder, compressed into one sitting. This is step 2 of every
 
 ## Where this page stops
 
-- **Notebook link farm** — curated example notebooks per platform live at
+- **Per-platform notebooks** — curated example notebooks per platform live at
   [Accessing Public EM Datasets]({{ '/datasets/access/' | relative_url }});
   this page is the route-picker and failure manual, that one is the collection.
 - **Dataset choice** — which dataset fits which scientific question is the
   [Datasets]({{ '/datasets/' | relative_url }}) index's job, and each
   [Open Problems]({{ '/open-problems/' | relative_url }}) ramp names its own.
 - **Exact commands drift.** Client APIs, release names, and download URLs change
-  faster than any static page. The *shapes* here — the ladder, rule zero,
-  version pinning, byte math, the failure table — are stable; when a snippet
+  faster than any static page. The *shapes* here (the ladder, rule zero,
+  version pinning, byte math, the failure table) are stable. When a snippet
   disagrees with the client's own documentation, the documentation wins, and a
   correction to this page is a welcome first contribution.

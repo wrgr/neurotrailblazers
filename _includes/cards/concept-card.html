@@ -1,7 +1,8 @@
 <article class="card concept-card-item" data-track="{{ include.item.track }}" data-needs="{{ include.item.user_needs | join: '|' | downcase }}">
   <h3 class="card-title"><a href="{{ include.primary_url | relative_url }}">{{ include.item.title }}</a></h3>
-  <p><small><strong>Track:</strong> {{ include.item.track }}</small></p>
-  <p><small><strong>User needs:</strong> {{ include.item.user_needs | join: ', ' }}</small></p>
+  {%- assign concept_track = site.data.track_catalog.tracks | where: "slug", include.item.track | first -%}
+  <p><small><strong>Track:</strong> {{ concept_track.title | default: include.item.track }}</small></p>
+  <p><small><strong>Useful when:</strong> {{ include.item.user_needs | join: ', ' }}</small></p>
   <p class="card-description">{{ include.item.summary }}</p>
   {% if include.item.explanation %}
   <p><strong>How to learn it:</strong> {{ include.item.explanation }}</p>

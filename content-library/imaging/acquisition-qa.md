@@ -20,16 +20,6 @@ tags:
   - infrastructure:metadata
   - methodology:reproducibility
 micro_lesson_id: ml-img-acquisition-qa
-reference_images:
-  - src: /assets/images/content-library/imaging/acquisition-qa/qa-checklist-visual.png
-    alt: "Visual QA checklist for EM acquisition with pass/fail examples"
-    caption: "Per-tile QA checklist: focus quality, brightness uniformity, stitching alignment, and artifact coverage. Red borders = fail criteria."
-  - src: /assets/images/content-library/imaging/acquisition-qa/pilot-recon-validation.png
-    alt: "Small pilot reconstruction used to validate acquisition parameters before full-scale imaging"
-    caption: "Pilot reconstruction from 100 sections validates that segmentation quality meets threshold before committing to full acquisition."
-  - src: /assets/images/content-library/imaging/acquisition-qa/go-nogo-decision-matrix.png
-    alt: "Go/no-go decision matrix for acquisition quality gates"
-    caption: "Decision matrix: pass/fail criteria for each QA gate with escalation paths for borderline cases."
 combines_with:
   - artifact-taxonomy
   - em-principles
@@ -41,7 +31,7 @@ content_type: core
 
 ## Overview
 
-Acquisition QA is the practice of catching problems *before* they propagate into months of wasted reconstruction and proofreading effort. The core principle: imaging artifacts that degrade segmentation quality are far cheaper to detect and mitigate at acquisition time than to correct downstream. A dataset acquired without QA gates may look acceptable in raw images but harbor subtle contrast gradients, alignment drift, or staining inconsistencies that create thousands of unnecessary segmentation errors.
+Acquisition QA catches problems *before* they propagate into months of wasted reconstruction and proofreading. Imaging artifacts that degrade segmentation are far cheaper to detect and fix at acquisition time than downstream. A dataset acquired without QA gates can look acceptable in raw images and still hide contrast gradients, alignment drift or staining inconsistencies that later produce thousands of segmentation errors.
 
 ---
 
@@ -68,7 +58,7 @@ fourth costs correctness, and it does so in a way that looks like a finding.
 
 **Do the arithmetic for your own project.** The numbers differ by an order of
 magnitude between labs, so a figure quoted from someone else's project is not
-worth much — but the *shape* is robust, and you can establish it yourself
+worth much. The *shape* holds across projects, and you can establish it yourself
 before committing:
 
 1. Time a proofreader on a neuron in a clean region and one in a degraded region
@@ -78,13 +68,13 @@ before committing:
 3. Compare against the cost of the acquisition-time fix, which is usually
    measured in days of one person's time.
 
-If step 3 is smaller than step 2 — and it nearly always is by a wide margin —
-the QA gate pays for itself, and you now have a number you can defend to whoever
-controls the budget rather than a slogan.
+If step 3 is smaller than step 2 (it usually is, by a wide margin), the QA gate
+pays for itself, and you have a number you can defend to whoever controls the
+budget.
 
-### QA is not optional
+### QA has to be automated at this scale
 
-In early connectomics projects (pre-2015), QA was often informal — experienced microscopists would inspect images visually and make qualitative judgments. This worked for small datasets but does not scale. Modern connectomics datasets generate terabytes to petabytes of data over months of continuous imaging. Quantitative, automated QA metrics are essential.
+Visual inspection by an experienced microscopist works for a small dataset. It does not scale to volumes that produce petabytes over months of continuous imaging: H01 acquired 247 million tiles over 326 days, and a custom workflow manager scored every tile for quality while the microscope ran (Shapson-Coe et al. 2024; the 326-day figure is in the PMC author manuscript, PMC11718559, and the 2021 preprint). At that scale the metrics have to be quantitative and computed automatically.
 
 ---
 
@@ -105,7 +95,7 @@ For every tile (single acquired image), compute:
 Define SNR as the ratio of contrast between membrane and lumen to the noise floor. Methods:
 
 1. **Membrane detection confidence**: Run a lightweight membrane detector (even a simple edge filter) on each tile. The average confidence score is a proxy for staining quality.
-2. **Power spectral density**: Well-stained neuropil has characteristic spatial frequency content (peak at membrane spacing ~200-500 nm). Loss of this peak indicates contrast degradation.
+2. **Power spectral density**: Well-stained neuropil has characteristic spatial-frequency content set by the spacing of membranes. Measure that spectrum on your own good tiles; a loss of power at those frequencies indicates contrast degradation.
 
 ### Focus quality
 
@@ -137,7 +127,7 @@ After section registration, compute residual displacement at control points:
 
 Automated detection of missing or severely damaged sections:
 
-1. **Cross-correlation between consecutive sections**: Normal sections have high correlation (>0.7 for neuropil). A sudden correlation drop flags a missing or damaged section.
+1. **Cross-correlation between consecutive sections**: Neighboring sections of neuropil correlate strongly. Set the threshold from your own clean stretch of sections; a sudden drop below it flags a missing or damaged section.
 2. **Object continuity checks**: Count the number of segment IDs that appear in section N but not N+1 (and vice versa). Spikes indicate discontinuity.
 
 ### Intensity drift
@@ -153,27 +143,27 @@ Plot mean section intensity over the entire z-stack:
 
 ### The principle
 
-Before committing to full-volume imaging and reconstruction (which may take months and cost hundreds of thousands of dollars), run a small pilot reconstruction to verify that the preparation and imaging quality supports adequate segmentation.
+Before committing to full-volume imaging and reconstruction, which can take months of instrument and compute time, run a small pilot reconstruction to verify that the preparation and imaging quality support adequate segmentation.
 
 ### Pilot protocol
 
 1. **Acquire a small subvolume**: 20-50 μm on a side, from a representative region. This takes hours to days, not months.
 2. **Run automated segmentation**: Use the same model/parameters planned for the full volume.
-3. **Manual evaluation**: An expert annotator reviews 50-100 neurites in the pilot reconstruction, checking for:
+3. **Manual evaluation**: An expert annotator reviews a sample of neurites (50-100 is a practical starting size) in the pilot reconstruction, checking for:
    - Merge error rate (# merges per 100 μm of traced neurite)
    - Split error rate (# splits per 100 μm)
    - Membrane detection quality (are membranes consistently visible?)
    - Synapse detection quality (are active zones and PSDs detectable?)
-4. **Quantitative metrics**: Compute VI and ERL against the manually corrected pilot as ground truth.
+4. **Quantitative metrics**: Compute VI and ERL against the manually corrected pilot as ground truth ([Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) has the formulas).
 5. **Go/no-go decision**: If metrics fall below project thresholds, investigate root cause (staining? imaging? model?) before proceeding.
 
 ### What pilot reconstructions catch
 
-Real examples from connectomics projects:
+Typical failure patterns a pilot is designed to catch (composite teaching scenarios, not reports from a specific project):
 
-- **Insufficient osmium penetration**: Pilot showed membrane contrast fading >100 μm from block surface. Action: switched to rOTO protocol before full acquisition.
-- **Excessive charging in SBEM**: Pilot showed split error rate 5× normal in a region near a large blood vessel. Action: adjusted beam parameters and applied additional conductive coating.
-- **Z-alignment drift**: Pilot showed accumulating misalignment over 200 sections due to stage thermal drift. Action: added periodic fiducial reimaging for alignment correction.
+- **Insufficient osmium penetration**: The pilot shows membrane contrast fading with depth from the block surface. Action: switch to an rOTO-type protocol before full acquisition.
+- **Excessive charging in SBEM**: The pilot shows a locally elevated split error rate near a large blood vessel. Action: adjust beam parameters and apply additional conductive coating.
+- **Z-alignment drift**: The pilot shows misalignment accumulating over hundreds of sections due to stage thermal drift. Action: add periodic fiducial reimaging for alignment correction.
 
 ---
 
@@ -231,7 +221,7 @@ A production connectomics acquisition should have a live dashboard showing:
 
 ## Worked example: acquisition QA decision tree
 
-**Situation:** During SBEM acquisition of a mouse cortex block (planned 8,000 sections), the QA dashboard shows that mean intensity has dropped 15% between sections 2,000 and 2,100.
+**Situation (invented for teaching):** During SBEM acquisition of a mouse cortex block (planned 8,000 sections), the QA dashboard shows that mean intensity has dropped 15% between sections 2,000 and 2,100.
 
 **Decision tree:**
 
@@ -257,7 +247,7 @@ A production connectomics acquisition should have a live dashboard showing:
 |---|---|---|
 | "If the images look good to my eye, they're fine" | Human visual inspection misses subtle contrast gradients that affect automated segmentation | Always use quantitative metrics alongside visual inspection |
 | "QA slows down acquisition" | QA prevents costly rework; the net effect is faster project completion | Compare cost of 1 day of QA vs weeks of re-proofreading |
-| "One pilot reconstruction is enough" | Tissue quality can vary across the block; periodic pilot checks catch developing problems | Run mini-pilots every 500-1,000 sections |
+| "One pilot reconstruction is enough" | Tissue quality can vary across the block; periodic pilot checks catch developing problems | Schedule mini-pilots at a fixed interval (every 500-1,000 sections is a common heuristic, not a published standard) |
 | "Metadata is just bookkeeping" | Metadata is essential for diagnosing problems, reproducing results, and sharing data | Treat metadata as a first-class data product |
 
 ---
@@ -265,7 +255,8 @@ A production connectomics acquisition should have a live dashboard showing:
 ## References
 
 - Briggman KL, Bock DD (2012) "Volume electron microscopy for neuronal circuit reconstruction." *Current Opinion in Neurobiology* 22(1):154-161.
-- Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
+- Hayworth KJ et al. (2015) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
 - Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Scheffer LK et al. (2020) "A connectome and analysis of the adult *Drosophila* central brain." *eLife* 9:e57443.
+- Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
 - Zheng Z et al. (2018) "A complete electron microscopy volume of the brain of adult *Drosophila melanogaster*." *Cell* 174(3):730-743.

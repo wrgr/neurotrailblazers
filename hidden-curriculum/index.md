@@ -32,7 +32,7 @@ and credit they never claimed.
 
 ## Why this is a fairness problem and not an etiquette guide
 
-The site's [education models]({{ '/models/' | relative_url }}) page puts it
+The site's [Program Models]({{ '/models/' | relative_url }}) page puts it
 directly: these are not soft skills appended to technical training. They are the
 operating knowledge that determines whether technical training converts into a career,
 and **making them explicit is a fairness intervention as much as a training one**.
@@ -68,8 +68,8 @@ five and notice that not one of them is labeled as a norm:
   query code, and the date."* — a norm about what a reviewer is entitled to check.
 - **Unit 05:** *"Negative calls are data. An annotator who never says 'no' is not
   calibrated."* — a norm about what confidence is for.
-- **Unit 08:** *"A stated 6% exclusion rate is honest and cheap; an unbudgeted tail is
-  neither."* — a norm about disclosure.
+- **Unit 08:** *"A stated 6% exclusion rate is honest and cheap. An unbudgeted tail
+  discovered at the end is neither."* — a norm about disclosure.
 - **Unit 09:** *"Report how many tests you ran, including the ones you ran and did not
   report."* — an ethical norm with a statistical justification bolted on.
 
@@ -164,9 +164,12 @@ Practical moves:
   Principles]({{ '/modules/module21/' | relative_url }}) — its "hidden curriculum
   scaffold" section is the model these pages follow: *what senior reviewers expect but
   rarely state*.
-- [Education models]({{ '/models/' | relative_url }}) — MERIT stage 2 is
+- [Program Models]({{ '/models/' | relative_url }}) — MERIT stage 2 is
   where this material belongs in a mentoring relationship, and the Professional
-  Pathways table lists the questions each page here answers.
+  Pathways table lists the question each workshop answers.
+- [Professional Pathways workshops]({{ '/teaching/pathways/' | relative_url }}) — the
+  ten packaged sessions, and the [syllabus maps]({{ '/teaching/syllabi/' | relative_url }})
+  that place them in a 10- or 16-week course.
 - [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}) — session
   design, differentiation, and the failure modes of teaching this material.
 - [Learner personas]({{ '/avatars/' | relative_url }}) — who these norms are invisible

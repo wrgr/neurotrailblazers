@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Learner Personas"
-description: "Representative learner personas for tailored support across the NeuroTrailblazers ecosystem."
+description: "Four invented learners the curriculum is written for, and where each one should start."
 permalink: /avatars/
 slug: avatars-index
 track: career-and-community
@@ -22,8 +22,10 @@ content_type: core
 
   <section class="section">
     <p>
-      These personas complement the broader NeuroTrailblazers site by grounding the canonical open connectomics course
-      in realistic learner goals, strengths, and support needs.
+      Each persona is invented. Each one stands for a kind of reader the site is written for: what they bring, what
+      they are missing, and which pages they should open first. The
+      <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a> uses the same four people to
+      show how to adapt one session to different learners.
     </p>
   </section>
 

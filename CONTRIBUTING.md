@@ -68,7 +68,7 @@ audience.
   the assumption, measuring calibration rather than accuracy, reporting the error band.
 - **Answers ship with the questions,** in collapsed disclosure elements, so a learner
   alone can test themselves honestly. Tell them not to open it yet; do not withhold it.
-- **Cost reasoning is content.** Merge versus split errors, data-loss versus labour
+- **Cost reasoning is content.** Merge versus split errors, data-loss versus labor
   artifacts, triage by endpoint impact rather than conspicuousness. This is the field's
   central operational logic.
 - **Say what the page does not show.** State scope boundaries explicitly and point

@@ -4,7 +4,7 @@ title: "Tissue Preparation"
 permalink: /content-library/imaging/tissue-preparation/
 image: /assets/images/content-library/imaging/tissue-preparation.svg
 image_alt: "Stylized vector art: a raster imaging field crossed by artifact marks."
-description: "Complete guide to tissue preparation for connectomics EM — fixation, staining, embedding, and sectioning. Full instructor script with protocols, decision points, and references."
+description: "Tissue preparation for connectomics EM: fixation, staining, embedding and sectioning, with an instructor script, protocol decision points, a worked example and references."
 topics:
   - tissue-preparation
   - fixation
@@ -21,16 +21,6 @@ tags:
   - imaging:electron-microscopy
   - methodology:sample-processing
 micro_lesson_id: ml-img-tissue-prep
-reference_images:
-  - src: /assets/images/content-library/imaging/tissue-preparation/tissue-prep-pipeline.png
-    alt: "Flowchart of tissue preparation steps from perfusion to block trimming"
-    caption: "Tissue preparation pipeline: perfusion fixation → post-fixation with osmium → en bloc staining → dehydration → resin embedding → block trimming."
-  - src: /assets/images/content-library/imaging/tissue-preparation/staining-comparison.png
-    alt: "EM images comparing different heavy metal staining protocols"
-    caption: "Effect of staining protocol on membrane contrast. ROTO protocol (left) vs standard osmium (right). Enhanced contrast improves automated segmentation."
-  - src: /assets/images/content-library/imaging/tissue-preparation/embedding-sectioning-overview.png
-    alt: "Resin embedding and ultramicrotome sectioning workflow"
-    caption: "Embedding and sectioning: resin infiltration preserves ultrastructure while ultramicrotome produces serial sections at 30-50 nm thickness."
 combines_with:
   - em-principles
   - artifact-taxonomy
@@ -42,7 +32,7 @@ content_type: core
 
 ## Overview
 
-The goal of tissue preparation for connectomics is to stabilize biological ultrastructure, make it visible to electrons, and present it in a format compatible with serial imaging. Every step in the preparation chain — fixation, staining, dehydration, embedding, and sectioning — introduces tradeoffs between preservation fidelity, contrast quality, and throughput. Understanding these tradeoffs is essential for anyone who interprets EM data, because preparation choices create the artifact profile that propagates through the entire reconstruction pipeline.
+Tissue preparation for connectomics has three jobs: stabilize the ultrastructure, make it visible to electrons, and put it in a form that can be imaged section after section. Every step (fixation, staining, dehydration, embedding, sectioning) trades preservation against contrast and throughput. If you interpret EM data, you need to know those trades, because preparation choices set the artifact profile that the whole reconstruction pipeline inherits.
 
 ---
 
@@ -58,13 +48,13 @@ The goal of tissue preparation for connectomics is to stabilize biological ultra
 
 - **Paraformaldehyde (PFA)**: A smaller, monofunctional crosslinker that penetrates faster than GA but provides weaker fixation. Often combined with GA (e.g., 4% PFA + 2.5% GA) for rapid initial stabilization followed by thorough crosslinking. PFA alone is insufficient for EM-quality preservation.
 
-- **Fixation route matters enormously:**
-  - *Transcardial perfusion* (rodents): Fixative pumped through the vasculature under pressure. Reaches all brain regions simultaneously via capillary beds. Provides the most uniform fixation for whole-brain studies. Standard for mouse/rat connectomics (MICrONS, MouseConnects).
-  - *Immersion fixation* (human tissue, invertebrates): Tissue block placed directly in fixative solution. Fixation proceeds from the surface inward — creating a gradient where the surface is well-fixed and the interior may show degradation before fixative arrives. The H01 human cortex dataset (Shapson-Coe et al. 2024) used surgically resected tissue fixed by immersion, which contributed to quality variations across the block.
+- **The fixation route matters:**
+  - *Transcardial perfusion* (rodents): Fixative pumped through the vasculature under pressure. Reaches all brain regions simultaneously via capillary beds. Provides the most uniform fixation for whole-brain studies. Standard for mouse/rat connectomics (the MICrONS mouse, for example, was perfused).
+  - *Immersion fixation* (human tissue, invertebrates): Tissue block placed directly in fixative solution. Fixation proceeds from the surface inward — creating a gradient where the surface is well-fixed and the interior may show degradation before fixative arrives. The H01 human cortex dataset (Shapson-Coe et al. 2024) used surgically resected tissue fixed by rapid immersion; the authors report quality comparable to perfused rodent samples, which shows immersion can work when the tissue reaches fixative quickly.
 
-**Teaching point:** "The best microscope in the world cannot rescue poorly fixed tissue. Fixation quality sets the ceiling on every downstream step."
+**Teaching point:** No microscope can rescue poorly fixed tissue. Fixation quality sets the ceiling on every downstream step.
 
-**Time-critical nature:** Post-mortem delay between tissue death and fixation onset is the single largest variable in human tissue quality. Even 5-10 minutes of ischemia can produce visible ultrastructural degradation (swollen mitochondria, disrupted membranes). For human surgical tissue, the workflow from operating room to fixative must be optimized.
+**Time matters:** The delay between loss of blood supply and the arrival of fixative is a major variable in human tissue quality, and the damage shows as swollen mitochondria and disrupted membranes. For H01, a neuropathologist immersed the sample in fixative immediately after excision (Shapson-Coe et al. 2021 preprint, Methods). For human surgical tissue, plan the path from operating room to fixative before the day of surgery.
 
 ### Step 2 — Post-fixation with osmium tetroxide
 
@@ -78,7 +68,7 @@ The goal of tissue preparation for connectomics is to stabilize biological ultra
 2. Thiocarbohydrazide (TCH) — bridges osmium layers — 20-30 minutes
 3. Second OsO₄ treatment — 1-2 hours
 
-The rOTO protocol (Hua et al. 2015) provides much stronger and more uniform membrane contrast throughout large tissue blocks, which is critical for SBEM and FIB-SEM where you cannot post-stain individual sections.
+The rOTO protocol builds on the earlier OTO method (Willingham & Rutherford 1984); Hua et al. (2015) modified it to stain blocks about 1 mm across without a staining gradient. It gives stronger and more even membrane contrast through large blocks, which SBEM and FIB-SEM need because individual sections cannot be post-stained.
 
 **Key decision point:** rOTO vs standard osmium. rOTO is standard for volume EM. Standard single-osmium may suffice for ssTEM where sections will be post-stained with uranyl acetate and lead citrate.
 
@@ -90,7 +80,7 @@ The rOTO protocol (Hua et al. 2015) provides much stronger and more uniform memb
 - **Uranyl acetate (UA)**: Binds nucleic acids and proteins. Enhances contrast of ribosomes, chromatin, PSDs. Often applied as 1-2% aqueous solution or in 70% ethanol during dehydration. Safety note: uranyl acetate is mildly radioactive and toxic — some labs are shifting to non-radioactive alternatives (e.g., lanthanide-based stains).
 - **Lead aspartate**: Enhances general contrast. Applied en bloc after osmication. Walton (1979) protocol adapted for connectomics.
 
-**Penetration challenge:** These stains must penetrate uniformly through blocks that may be 1-3 mm on a side. Incomplete penetration creates the staining gradients described in artifact-taxonomy.md. Protocol optimization (temperature, time, agitation) is critical.
+**Penetration challenge:** These stains must penetrate evenly through blocks that may be 1-3 mm on a side. Incomplete penetration creates the staining gradients described in [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}). Temperature, time and agitation all have to be tuned for the block size.
 
 ### Step 4 — Dehydration
 
@@ -98,7 +88,7 @@ The rOTO protocol (Hua et al. 2015) provides much stronger and more uniform memb
 
 **Standard approach:** Graded ethanol or acetone series (30%, 50%, 70%, 90%, 100%, 100%). Each step typically 10-30 minutes. The gradual replacement minimizes osmotic shock that could distort ultrastructure.
 
-**Artifact risk:** Dehydration extracts some lipids (even after osmium fixation) and causes tissue shrinkage (typically 10-20% linear). This shrinkage is largely irreversible and must be accounted for when comparing EM measurements to in vivo dimensions.
+**Artifact risk:** Dehydration extracts some lipids (even after osmium fixation) and shrinks the tissue. The amount depends on the protocol; published corrections include a 16% linear reduction (Kalimo 1976) and 15% along each axis (Kinney et al. 2013), both as cited by Korogod et al. (2015). Chemical fixation also collapses the extracellular space: Korogod et al. measured 15.4% extracellular volume in cryo-fixed mouse neocortex against 2.47% after aldehyde perfusion. Account for both when comparing EM measurements to in vivo dimensions.
 
 ### Step 5 — Embedding
 
@@ -121,7 +111,7 @@ Three major approaches for connectomics, each with different tradeoffs:
 - Diamond knife cuts ultrathin sections (40-70 nm) from the block face
 - Sections float onto water trough and are collected on grids or ATUM tape
 - Produces the thinnest sections (best z-resolution per section) but introduces mechanical artifacts (compression, chatter, folds)
-- ATUM (automated tape-collecting ultramicrotome — Hayworth et al. 2014) enables automated collection of thousands of sections on continuous tape
+- ATUM (automated tape-collecting ultramicrotome — Hayworth et al. 2006) enables automated collection of thousands of sections on continuous tape
 
 **Serial block-face SEM (SBEM) sectioning:**
 - Diamond knife inside the SEM chamber shaves the block face
@@ -139,7 +129,7 @@ Three major approaches for connectomics, each with different tradeoffs:
 
 ## Worked example: choosing a preparation protocol for a cortical connectomics project
 
-**Scenario:** You are planning a connectomics study of mouse barrel cortex layer 4, targeting a 200×200×200 μm volume. You want to identify all synapses between thalamocortical axons and layer 4 stellate cells.
+**Scenario (a teaching example, not a published protocol):** You are planning a connectomics study of mouse barrel cortex layer 4, targeting a 200×200×200 μm volume. You want to identify all synapses between thalamocortical axons and layer 4 stellate cells.
 
 **Decision sequence:**
 
@@ -159,7 +149,7 @@ Three major approaches for connectomics, each with different tradeoffs:
 
 ## Protocol comparison table
 
-| Parameter | ssTEM (ATUM) | SBEM | FIB-SEM |
+| Parameter | Serial sections (TEM on grids; SEM on ATUM tape) | SBEM | FIB-SEM |
 |-----------|-------------|------|---------|
 | Section thickness | 30-50 nm | 25-30 nm | 4-8 nm |
 | XY resolution | 1-4 nm | 8-12 nm | 4-8 nm |
@@ -168,7 +158,7 @@ Three major approaches for connectomics, each with different tradeoffs:
 | Re-imaging possible? | Yes | No (destructive) | No (destructive) |
 | En bloc staining required? | Optional (post-stain OK) | Required | Required |
 | Alignment | Requires computational registration | Inherent (block face) | Inherent (block face) |
-| Typical project duration | 6-18 months imaging | 3-12 months | 1-6 months |
+| Imaging time, order of magnitude | Months to a year for mm³ (MICrONS about 6 months; H01 326 days) | Months | Weeks to months |
 
 ---
 
@@ -178,18 +168,22 @@ Three major approaches for connectomics, each with different tradeoffs:
 |---|---|---|
 | "Standard fixation is good enough for EM" | PFA-only fixation (common for immunohistochemistry) is insufficient for ultrastructural preservation | EM requires glutaraldehyde-based fixation with osmium post-fixation |
 | "Staining is just for visibility" | Heavy metals also crosslink membranes (osmium), providing additional structural stabilization | Staining and fixation serve overlapping purposes |
-| "Tissue looks the same as in vivo" | Processing shrinks tissue 10-30% and extracts some components | Always state that EM measurements are from fixed/processed tissue |
-| "FIB-SEM is always better" | FIB-SEM has the best resolution but the smallest field of view — it's not suitable for large-circuit mapping | Match modality to question |
+| "Tissue looks the same as in vivo" | Processing shrinks tissue (around 15% per axis in published corrections), collapses extracellular space, and extracts some components | Always state that EM measurements are from fixed/processed tissue |
+| "FIB-SEM is always better" | FIB-SEM has the best z-resolution but the smallest field of view, so it does not suit large-circuit mapping | Match modality to question |
 
 ---
 
 ## References
 
 - Denk W, Horstmann H (2004) "Serial block-face scanning electron microscopy." *PLoS Biology* 2(11):e329.
-- Hayworth KJ et al. (2014) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
+- Hayworth KJ, Kasthuri N, Schalek R, Lichtman JW (2006) "Automating the collection of ultrathin serial sections for large volume TEM reconstructions." *Microscopy and Microanalysis* 12(Suppl 2):86-87.
+- Hayworth KJ et al. (2015) "Ultrastructurally smooth thick partitioning and volume stitching for large-scale connectomics." *Nature Methods* 12:319-322.
 - Hua Y, Laserstein P, Helmstaedter M (2015) "Large-volume en-bloc staining for electron microscopy-based connectomics." *Nature Communications* 6:7923.
 - Knott G et al. (2008) "Serial section scanning electron microscopy of adult brain tissue using focused ion beam milling." *Journal of Neuroscience* 28(12):2959-2964.
+- Korogod N, Petersen CCH, Knott GW (2015) "Ultrastructural analysis of adult mouse neocortex comparing aldehyde perfusion with cryo fixation." *eLife* 4:e05793. [10.7554/eLife.05793](https://doi.org/10.7554/eLife.05793)
 - Peters A, Palay SL, Webster HdeF (1991) *The Fine Structure of the Nervous System: Neurons and Their Supporting Cells*. 3rd ed. Oxford University Press.
+- Shapson-Coe A et al. (2021) "A connectomic study of a petascale fragment of human cerebral cortex." *bioRxiv* 2021.05.29.446289. [10.1101/2021.05.29.446289](https://doi.org/10.1101/2021.05.29.446289)
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution." *Science* 384(6696):eadk4858.
-- Walton J (1979) "Lead aspartate, an en bloc contrast stain particularly useful for ultrastructural enzymology." *Journal of Histochemistry and Cytochemistry* 27:1337-1342.
-- Xu CS et al. (2021) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 10:e65541.
+- Walton J (1979) "Lead aspartate, an en bloc contrast stain particularly useful for ultrastructural enzymology." *Journal of Histochemistry and Cytochemistry* 27(10):1337-1342.
+- Willingham MC, Rutherford AV (1984) "The use of osmium-thiocarbohydrazide-osmium (OTO) and ferrocyanide-reduced osmium methods to enhance membrane contrast and preservation in cultured cells." *Journal of Histochemistry and Cytochemistry* 32(4):455-460.
+- Xu CS et al. (2017) "Enhanced FIB-SEM systems for large-volume 3D imaging." *eLife* 6:e25916.

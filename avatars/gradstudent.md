@@ -55,7 +55,7 @@ content_type: core
   <a href="#decisions">Decisions</a>
   <a href="#path">How the Site Helps</a>
   <a href="#insights">Insights</a>
-  <a href="{{ '/avatars/' | relative_url }}">All Avatars</a>
+  <a href="{{ '/avatars/' | relative_url }}">All personas</a>
 </nav>
 
 <section class="section" id="story">
@@ -102,13 +102,13 @@ get worse, because the split component dominates — which means a model like
 hers can ship a regression behind a better headline number. Deciding to learn
 the error taxonomy and metric blind spots firsthand, through the
 [proofreading side quest]({{ '/side-quests/proofreading/' | relative_url }})
-and the [Connectome Quality]({{ '/tools/connectome-quality/' | relative_url }})
+and the [Connectome Quality]({{ '/notebooks/connectome-quality/' | relative_url }})
 notebooks, is a direct investment in her first-author paper, not a detour from
 it.
 
 **Mentor by improvisation, or mentor by design?** Maya mentors an
 undergraduate and is not sure her guidance counts as anything more than
-availability. The [models-in-practice playbook]({{ '/models/' | relative_url }})
+availability. The [Program Models]({{ '/models/' | relative_url }}) page
 gives her a design: her mentee is in MERIT stage 3, where the failure modes
 are symmetric — support withdrawn too fast reads as personal inadequacy,
 support withdrawn too slowly produces dependence — and the signal to watch is

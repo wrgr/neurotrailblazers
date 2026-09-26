@@ -27,8 +27,9 @@ non-claim. Introductory neuroscience is helpful; no programming is required.
 
 ## Between sessions: 20 minutes
 
-Read [Synapse Detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}),
-focusing on localization, partner assignment and evaluation units. Bring the study
+Read the opening section and sections 1, 2 and 7 of
+[Synapse Detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }}),
+about 1,700 of its 4,800 words, on localization, partner assignment and evaluation units. Bring the study
 brief and underline the measurement most vulnerable to a missed or misassigned
 synapse. No account or dataset download is needed.
 
@@ -57,7 +58,7 @@ is optional; the same query can be completed from the worksheet's printed rows.
 - [Learner worksheet and offline query]({{ '/teaching/lectures/tools-and-methods-activity/' | relative_url }})
 - [Instructor model responses]({{ '/teaching/lectures/tools-and-methods-answers/' | relative_url }})
 
-This is the third session in this short sequence, but Lecture 2 / Module 8 in the
+This is the third session in this block, but Lecture 2 / Module 8 in the
 original EN.585.781 course. Synapse Detection is the standalone session inserted
 between the Introduction and Tools lectures here.
 
@@ -80,8 +81,8 @@ This is Session 4 here, but Lecture 3 / Module 9 in the original graduate course
 
 **Question:** What must you check before you reuse, release or credit connectome data?
 
-Learners audit real dataset licences for an invented data release, including a
-licence conflict to record rather than resolve, then answer human-tissue questions,
+Learners audit real dataset licenses for an invented data release, including a
+license conflict to record rather than resolve, then answer human-tissue questions,
 write a proofreading-credit rule and draft a data-use statement. It can stand alone;
 no accounts, data or coding are needed, and it is not legal advice.
 
@@ -121,13 +122,15 @@ or its debrief. The learning evidence is the revised claim, not the number of sl
 
 Use the final analysis card to choose a focused extension: the
 [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}), which repeats
-Sessions 3 and 4 on a pinned public release with no account,
-a proofreading exercise or an applications seminar. For hands-on depth, choose a
+Sessions 3 and 4 on a pinned public release with no account;
+the [Module 07 kit]({{ '/teaching/sessions/module07/' | relative_url }}), a proofreading
+triage on synthetic data; or an applications seminar. For hands-on depth, choose a
 [module session kit]({{ '/teaching/sessions/' | relative_url }}) after checking its
 prerequisites. These four packs and the optional fifth are complete formative sessions.
 To build a full course around them, use the [10-week and 16-week syllabus
-maps]({{ '/teaching/syllabi/' | relative_url }}). Model answers for all 25 modules
-remain separate work.
+maps]({{ '/teaching/syllabi/' | relative_url }}). Module kits have
+[model responses]({{ '/teaching/answers/' | relative_url }}) for Modules 01, 07 and 18
+so far; that page gives the order for the other 22.
 
 [Teaching Hub]({{ '/teaching/' | relative_url }}) · [All presentation decks]({{ '/technical-training/slides/' | relative_url }})
 

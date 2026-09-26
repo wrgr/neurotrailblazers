@@ -15,7 +15,7 @@ rather than asking an instructor to rush through all 39.
 - [Editable slide source and embedded speaker notes]({{ site.deck_source_base }}/lectures/synapse-detection.marp.md)
 - [Learner worksheet]({{ '/teaching/lectures/synapse-detection-activity/' | relative_url }})
 - [Instructor model answers]({{ '/teaching/lectures/synapse-detection-answers/' | relative_url }})
-- [Short teaching sequence]({{ '/teaching/sequence/' | relative_url }})
+- [Four-session block]({{ '/teaching/sequence/' | relative_url }})
 
 ## Outcomes and preparation
 

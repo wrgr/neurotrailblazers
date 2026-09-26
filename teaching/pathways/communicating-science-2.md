@@ -27,7 +27,7 @@ limitation and non-claim have their own time; write a bank of hard questions cov
 every question type; and answer two of them live, stopping when the answer is done.
 
 [Module 22]({{ '/modules/module22/' | relative_url }}) builds a four-slide, three-minute
-talk and answers two assigned questions. [Module 23]({{ '/modules/module23/' | relative_url }})
+talk and answers two audience questions. [Module 23]({{ '/modules/module23/' | relative_url }})
 covers the 90-second poster pitch and conference protocol, and
 [Module 19]({{ '/modules/module19/' | relative_url }}) covers criticism in writing. This
 workshop adds what those leave out: questions that are not in the taxonomy (the comment
@@ -44,9 +44,9 @@ or the case; the choice is theirs and is not announced.
 
 ## Timed plan and facilitator cues
 
-- **0–8 min:** follow-through from workshop 5: ask who gave their public version to an
-  outsider and what the listener got wrong. Then ask a volunteer to put a hard question
-  to you about your own work. Answer it badly (defensive), then well. Ask which answer
+- **0–8 min:** follow-through from Communicating Science I: ask who gave their public
+  version to an outsider and what the listener got wrong. Take two answers. Then ask a
+  volunteer to put a hard question to you about your own work. Answer it badly (defensive), then well. Ask which answer
   they would trust.
 - **8–16 min:** write the five question types from Module 22 on the board with their
   answer shapes. Add three that are not in it: the comment that is not a question, the
@@ -59,9 +59,9 @@ or the case; the choice is theirs and is not announced.
 - **46–58 min:** individuals complete section 3, the question bank. At minute 52, check
   that every bank has a "so what" question and a question the learner cannot yet answer.
 - **58–78 min:** section 4 in groups of three. Two minutes to pass question banks left;
-  each learner adds one question to the bank they receive. Then three rounds of six minutes: 90-second
-  opener, two questions, one minute of feedback. Rotate speaker, questioner and timekeeper.
-  Keep time strictly; the chair owns the clock.
+  each learner adds one question to the bank they receive. Then three rounds of six
+  minutes: 90-second opener, two questions, one minute of feedback. Rotate speaker,
+  questioner and timekeeper. Keep time strictly. The timekeeper owns the clock.
 - **78–86 min:** section 5, private writing. Do not read over shoulders uninvited.
 - **86–90 min:** exit ticket. Name the follow-through task and the date you will ask.
 
@@ -76,7 +76,7 @@ Expect a learner to describe a Q&A that was humiliating or targeted. Do not trea
 a communication skill gap. Acknowledge it, point to the
 [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) and
 [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }}) pages and to a named
-person in your program, and follow up afterwards. If it involves harassment, check your
+person in your program, and follow up afterward. If it involves harassment, check your
 institutional reporting obligations before you ask for details.
 
 Do not reward speed or confidence. Module 22 names both over-claiming and over-conceding

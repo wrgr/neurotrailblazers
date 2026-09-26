@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 15 · NeuroTrailblazers"
 title: "Module 15: LLMs for Patch Analysis"
 ---
 
-# Module 15: LLMs for Patch Analysis
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 15</span>
+
+# LLMs for Patch Analysis
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -43,6 +51,10 @@ Implement an LLM-assisted patch-analysis workflow with verification gates, confi
 - For each class, write the verification method and a numeric acceptance threshold that can fail, before generating any output.
 - Estimate, then measure, the cost of the gate against the cost of doing the task directly; drop any class where the gate costs more.
 - Create prompt templates with an explicit output schema, and include the fields that gates depend on — for code, the version pin; for summaries, the citation list.
+
+---
+
+## Core Workflow (continued)
 - Define the human override policy and the interface rule that prevents anchoring: independent human call recorded before the suggestion is shown.
 - Pilot on a small set — 20 to 50 items per class — and log every failure with its cause.
 - Set the logging fields: model name and version, prompt, raw output, verification result, reviewer, decision, timestamp.

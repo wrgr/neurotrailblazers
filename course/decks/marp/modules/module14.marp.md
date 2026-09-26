@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 14 · NeuroTrailblazers"
 title: "Module 14: Computer Vision for EM"
 ---
 
-# Module 14: Computer Vision for EM
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 14</span>
+
+# Computer Vision for EM
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -33,6 +41,10 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 ## Concept Focus
 ### 1) Task-model fit
 - **Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry. Affinity prediction with watershed and agglomeration is modular: the dense network runs once over the volume and agglomeration can be re-run cheaply with a new threshold or a learned merge model. Flood-filling networks produce instance labels directly with fewer post-processing stages, at substantially higher compute per volume and less ability to re-run one stage in isolation. Anisotropic data — 4 x 4 x 40 nm is 10:1 — makes z-context weak and pushes some pipelines toward 2D prediction with explicit cross-section linking.
+
+---
+
+## Concept Focus (continued)
 - **Plain language:** pick the model for the job and for the voxel shape, not by popularity.
 - **Misconception guardrail:** one architecture solves all EM tasks equally well.
 
@@ -43,6 +55,10 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 - Define the acceptable error envelope in decomposed terms: maximum merge rate, minimum ERL, and the region in which those numbers must hold.
 - Select a baseline and at most two candidate approaches, using the approach table and the voxel geometry of your data.
 - Assemble evaluation data that includes at least one deliberately hard region, and keep clean-region and hard-region metrics separate.
+
+---
+
+## Core Workflow (continued)
 - Evaluate with VI decomposed, ERL, and a connectivity-level metric; never report a single aggregate score alone.
 - Convert the error counts into downstream cost using a merge-to-split ratio your team measured rather than assumed.
 - Review 20-30 failure cases by eye in ambiguous regions and classify each by cause: weak stain, section loss, fold, thin neurite, or genuine ambiguity.

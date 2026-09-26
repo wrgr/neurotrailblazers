@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 04 · NeuroTrailblazers"
 title: "Module 04: Neuroanatomy for Connectomics"
 ---
 
-# Module 04: Neuroanatomy for Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 04</span>
+
+# Neuroanatomy for Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -34,9 +42,17 @@ Interpret a local EM region using correct anatomical context and document one co
 ### 1) Cortical layers shape what you see in EM
 The mammalian neocortex is organized into six layers (L1-L6), each with a characteristic cell density, cell-type composition, and neuropil texture. In EM, these layers are distinguishable by:
 - **Layer 1**: Sparse cell bodies (mostly interneurons and glia), dense neuropil of apical dendritic tufts, axonal boutons, and astrocytic processes. If you see neuropil with very few soma profiles, you are likely in L1.
+
+---
+
+## Concept Focus (continued)
 - **Layer 2/3**: Dense small-to-medium pyramidal neuron soma, heavily interconnected by local axon collaterals. The most densely packed neuronal layer.
 - **Layer 4**: In sensory cortex, dominated by spiny stellate cells (not pyramidal) and thalamocortical axon terminals. Bouton density is high; dendritic spines are abundant.
 - **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
+
+---
+
+## Concept Focus (continued)
 - **Layer 6**: Heterogeneous; corticothalamic pyramidal cells with distinctive morphology (apical dendrites reaching only to L4, not L1). Transition to white matter below.
 
 ---

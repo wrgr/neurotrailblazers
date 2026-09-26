@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 03 · NeuroTrailblazers"
 title: "Module 03: Python and Jupyter for Neuroscience"
 ---
 
-# Module 03: Python and Jupyter for Neuroscience
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 03</span>
+
+# Python and Jupyter for Neuroscience
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -34,6 +42,10 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 ### 1) Python as the lingua franca of connectomics
 - **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.
 - **Plain language:** if connectomics has a common language, it is Python.
+
+---
+
+## Concept Focus (continued)
 - **Misconception:** you need to be an expert programmer to do connectomics.
 - **In practice:** Most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
 

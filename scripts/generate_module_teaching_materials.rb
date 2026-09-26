@@ -290,6 +290,38 @@ def bullet_or_dash(items, fallback)
   items.map { |i| i.sub(/^(\-|\*|\d+\.)\s+/, '') }
 end
 
+def content_slides(title, text)
+  lines = text.lines.map(&:rstrip).reject(&:empty?)
+  line_cost = lambda do |line|
+    visible = line.gsub(/\*\*|`/, '').sub(/^\s*[-*]\s+/, '')
+    (visible.length / 85.0).ceil + 0.5
+  end
+  return "## #{title}\n#{text}" if lines.sum { |line| line_cost.call(line) } <= 13
+
+  groups = []
+  lines.each do |line|
+    if line.match?(/^###\s|^-\s+\*\*[^*]+\*\*\s*$/)
+      groups << [line]
+    elsif groups.any? && groups.last.first.match?(/^###\s|^-\s+\*\*[^*]+\*\*\s*$/) &&
+          groups.last.sum { |item| line_cost.call(item) } + line_cost.call(line) <= 10
+      groups.last << line
+    else
+      groups << [line.lstrip]
+    end
+  end
+  pages = [[]]
+  groups.each do |group|
+    if pages.last.any? && (pages.last + group).sum { |line| line_cost.call(line) } > 10
+      pages << []
+    end
+    pages.last.concat(group)
+  end
+  pages.each_with_index.map do |page, index|
+    heading = index.zero? ? title : "#{title} (continued)"
+    "## #{heading}\n#{page.join("\n")}"
+  end.join("\n\n---\n\n")
+end
+
 FileUtils.mkdir_p(SLIDE_PAGE_DIR)
 FileUtils.mkdir_p(MARP_DIR)
 FileUtils.mkdir_p(WORKSHEET_DIR)
@@ -585,13 +617,21 @@ module_paths.each do |path|
   File.write(marp_path, <<~MD)
     ---
     marp: true
-    theme: default
+    theme: neurotrailblazers
     paginate: true
+    footer: "Module #{num} · NeuroTrailblazers"
     title: "#{title}"
     ---
 
-    # #{title}
+    <!-- _class: title nanoscale -->
+    <img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+    <span class="eyebrow">NeuroTrailblazers · Module #{num}</span>
+
+    # #{title.sub(/\AModule \d+:\s*/, '')}
     Teaching Deck
+
+    <p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+    <p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
     ---
 
@@ -612,13 +652,11 @@ module_paths.each do |path|
 
     ---
 
-    ## Concept Focus
-    #{concept}
+    #{content_slides('Concept Focus', concept)}
 
     ---
 
-    ## Core Workflow
-    #{workflow_items}
+    #{content_slides('Core Workflow', workflow_items)}
 
     ---
 
@@ -628,8 +666,7 @@ module_paths.each do |path|
 
     ---
 
-    ## Misconceptions to Watch
-    #{misconception_lines}
+    #{content_slides('Misconceptions to Watch', misconception_lines)}
 
     ---
 

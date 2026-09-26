@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 16 · NeuroTrailblazers"
 title: "Module 16: Scientific Visualization for Connectomics"
 ---
 
-# Module 16: Scientific Visualization for Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 16</span>
+
+# Scientific Visualization for Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -42,9 +50,17 @@ Produce a figure set that communicates connectomics findings accurately, includi
 - **Map each claim to required visual evidence.** For every result sentence, identify what figure panel and what visual encoding will support it.
 - **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
 - **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
+
+---
+
+## Core Workflow (continued)
 - **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
 - **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
 - **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
+
+---
+
+## Core Workflow (continued)
 - **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
 
 ---
@@ -99,6 +115,10 @@ Materials needed
 - **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
 - **Misconception guardrail:** there is no single "best" visualization. The best choice depends on the claim.
 - **Misconception guardrail:** complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
 - **Misconception guardrail:** aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
 

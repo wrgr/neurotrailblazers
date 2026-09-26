@@ -89,6 +89,9 @@ ROOT.glob("course/decks/marp/**/*.marp.md").sort.each do |path|
     next
   end
   problems << "#{rel}: declares no theme" unless front.match?(/^theme:\s*\S/)
+  if path.parent == ROOT.join("course/decks/marp/modules") && !front.match?(/^theme:\s*neurotrailblazers\s*$/)
+    problems << "#{rel}: module decks must use the neurotrailblazers theme"
+  end
 
   # Slides are separated by a --- rule; a slide whose only content is its heading
   # (or nothing at all) is a placeholder that was committed by accident.

@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 17 · NeuroTrailblazers"
 title: "Module 17: Scientific Writing for Connectomics"
 ---
 
-# Module 17: Scientific Writing for Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 17</span>
+
+# Scientific Writing for Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -33,6 +41,10 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 ## Concept Focus
 ### 1) Structure of a connectomics paper: methods are unusually important
 - **Technical:** in most neuroscience papers, the methods section is a reference appendix. In connectomics, it is primary evidence. Readers need to assess: What volume was imaged? At what resolution? What species, age, and preparation? Which segmentation algorithm was used, and what was the merge/split error rate? What proofreading version was the analysis based on? Was CAVE materialization pinned to a specific timestamp? Without these details, no biological claim is evaluable.
+
+---
+
+## Concept Focus (continued)
 - **Plain language:** in connectomics, how you got the data is as important as what the data shows. Your methods section is not boilerplate --- it is where skeptical readers will spend the most time.
 - **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
 
@@ -42,20 +54,40 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 - **Evidence inventory**
 - List candidate claims and required supporting figures/metrics.
 - Build a claim-evidence matrix: claim, figure panel, statistical test, effect size, dataset version, caveat.
+
+---
+
+## Core Workflow (continued)
 - **Methods drafting (first, not last)**
 - Write the dataset description with full provenance.
 - Document every preprocessing step, threshold, and parameter.
 - Complete the reproducibility checklist.
+
+---
+
+## Core Workflow (continued)
 - **Results drafting**
 - Write one paragraph per claim cluster with explicit evidence pointers.
 - Use calibrated uncertainty language throughout.
 - Separate confirmed findings from exploratory observations.
+
+---
+
+## Core Workflow (continued)
 - **Legend hardening**
 - Ensure legends include dataset version, method variant, key parameters, sample sizes, and uncertainty indicators.
 - Each legend should be interpretable without reading the main text.
+
+---
+
+## Core Workflow (continued)
 - **Limitation pass**
 - Add interpretation bounds (sampling, segmentation error, model assumptions, volume boundary effects).
 - Quantify uncertainty where possible rather than using vague qualifiers.
+
+---
+
+## Core Workflow (continued)
 - **Peer-review simulation**
 - Exchange sections and produce one methods-focused critique plus one interpretation critique.
 - Practice structured reviewer responses.
@@ -111,9 +143,17 @@ Materials needed
 ## Misconceptions to Watch
 - **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
 - **Misconception guardrail:** writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
 - **Misconception guardrail:** assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
 - **Misconception guardrail:** linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals.
 - **Misconception guardrail:** assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
 - **Misconception guardrail:** defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.

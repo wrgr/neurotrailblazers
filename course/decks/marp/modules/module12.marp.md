@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 12 · NeuroTrailblazers"
 title: "Module 12: Big Data in Connectomics"
 ---
 
-# Module 12: Big Data in Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 12</span>
+
+# Big Data in Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -33,6 +41,10 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ## Concept Focus
 ### 1) Storage layout is chosen by access pattern, not by format popularity
 - **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.
+
+---
+
+## Concept Focus (continued)
 - **Plain language:** the chunk is the smallest thing you can read, so shape it like the reads you will actually do.
 - **Misconception guardrail:** the format everyone else uses is automatically the right layout for your access pattern.
 
@@ -42,6 +54,10 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 - Write the analysis question as a sentence naming the table, the filter, and the unit of the answer — for example, "count synapses between layer 2/3 pyramidal cells and basket cells, per neuron pair, at cleft score above threshold."
 - Estimate the working set: how many rows, how many objects, how many bytes must move, and whether that fits in memory on the machine you have.
 - Choose storage and index strategy from the access pattern — chunk shape for volumetric reads, sharding if object counts exceed roughly 10^6, a pre-joined extract if the same join recurs.
+
+---
+
+## Core Workflow (continued)
 - Pin the segmentation: record the materialization version or timestamp, and refuse to proceed if it is unknown.
 - Prototype on a 0.1% sample, profile, and extrapolate the full runtime before running it once at full scale.
 - Add provenance fields to the output artifact itself, not to the surrounding notebook.

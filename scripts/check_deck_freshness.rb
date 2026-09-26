@@ -31,12 +31,13 @@ unless MANIFEST.exist?
   exit 1
 end
 
-recorded = begin
-  JSON.parse(MANIFEST.read(encoding: "UTF-8")).fetch("sources", {})
+manifest = begin
+  JSON.parse(MANIFEST.read(encoding: "UTF-8"))
 rescue JSON::ParserError => e
   warn "Render manifest is not valid JSON: #{e.message}"
   exit 1
 end
+recorded = manifest.fetch("sources", {})
 
 live = {}
 SRC_DIR.glob("**/*.marp.md").sort.each do |path|
@@ -53,6 +54,10 @@ missing = live.keys.reject do |rel|
 end
 
 problems = []
+themes = SRC_DIR.glob("**/theme/*.css").sort.to_h do |path|
+  [path.relative_path_from(SRC_DIR).to_s, Digest::SHA256.hexdigest(path.binread)]
+end
+problems << "themes changed since last render" unless manifest.fetch("themes", {}) == themes
 problems << "changed since last render: #{stale.join(', ')}" unless stale.empty?
 problems << "added but never rendered: #{added.join(', ')}" unless added.empty?
 problems << "rendered output with no source: #{removed.join(', ')}" unless removed.empty?

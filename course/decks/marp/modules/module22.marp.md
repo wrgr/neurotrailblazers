@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 22 · NeuroTrailblazers"
 title: "Module 22: Scientific Writing and Presentation"
 ---
 
-# Module 22: Scientific Writing and Presentation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 22</span>
+
+# Scientific Writing and Presentation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -42,9 +50,17 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 - Build the claim tree on paper: question at the root, two or three claims, one evidence item and one caveat under each, deleting any claim you cannot attach evidence to.
 - Write the time budget for your slot, then select the minimal slide set that preserves the inferential logic; every surviving slide must answer "which node of the claim tree is this?"
 - Draft the one-line provenance statement for the data slide: species and region, imaging modality and resolution, segmentation pipeline, proofreading or materialization version, and any exclusion criterion.
+
+---
+
+## Core Workflow (continued)
 - Rehearse against a timer with no audience and cut to the budget, then rehearse again with transitions spoken aloud, because the sentence carrying slide 4 into slide 5 is the one people improvise badly.
 - Run peer critique with one narrow brief: mark every sentence where the spoken claim is stronger than the slide's evidence.
 - Write the two most likely questions and a three-sentence answer to each, choosing the answer shape from the question-type taxonomy.
+
+---
+
+## Core Workflow (continued)
 - Revise with explicit uncertainty statements, checking the rung is identical in slide, speech, and prepared answer.
 
 ---

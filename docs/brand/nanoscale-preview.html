@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nanoscale connectomics — design preview</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#25282d;color:#f4f2ec;font-family:Arial,Helvetica,sans-serif}main{max-width:1280px;margin:auto}section{position:relative;width:1280px;height:720px;overflow:hidden;margin:28px 0;background:#10161c;padding:54px 60px}h1{font-size:76px;line-height:1.03;letter-spacing:-3px;margin:86px 0 28px;font-weight:600}h2{font-size:43px;letter-spacing:-1.3px;margin:16px 0 24px;font-weight:500}.eyebrow{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#a8c7bb}.subtitle{font-size:25px;line-height:1.45;color:#bec5c9;max-width:460px}.cover .art{position:absolute;right:0;top:0;width:610px;height:610px;object-fit:contain}.cover .text{position:relative;width:570px}.cover .legend{position:absolute;right:50px;top:627px;font-size:16px;color:#bac5ca;width:510px;line-height:1.5}.rule{width:66px;height:4px;background:#b9d49c;margin:25px 0}.footer{position:absolute;left:60px;bottom:25px;font-size:12px;line-height:1.5;color:#a7b1b7;max-width:1090px}.number{position:absolute;right:40px;bottom:28px;color:#9caaae;font-size:14px}.light{background:#f2f1ec;color:#17232b}.light .eyebrow{color:#426b62}.light .footer{color:#52616a}.comparison{display:block;width:970px;height:482px;object-fit:contain;margin:12px auto}.caption{font-size:18px;color:#42545d;margin-top:8px;text-align:center}.result{display:grid;grid-template-columns:500px 1fr;gap:58px;margin-top:34px}.result img{width:500px;height:420px;object-fit:contain}.result p{font-size:25px;line-height:1.5;margin:6px 0 30px}.result h3{font-size:20px;color:#b9d49c;margin:20px 0 12px;font-weight:500}.result .small{font-size:18px;color:#bec5c9}.label{font-size:12px;letter-spacing:2px;color:#91a3aa;position:absolute;top:20px;right:28px}@media(max-width:1280px){main{width:1280px;transform-origin:top left;zoom:calc(100vw / 1280px)}}
+</style>
+<main>
+<section class="cover">
+<img class="art" src="../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="Electron microscopy with colored object segmentation and a two micrometre scale bar">
+<div class="text"><div class="eyebrow">NeuroTrailblazers / Graduate lectures</div><h1>Nanoscale<br>connectomics</h1><div class="rule"></div><p class="subtitle">Membranes, neurites,<br>and the connections between them.</p></div>
+<div class="legend">Human cortex · H01<br>Object segmentation over electron microscopy</div>
+<div class="footer">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al., Science (2024) · doi:10.1126/science.adk4858</div><span class="number">01</span>
+</section>
+<section class="light">
+<div class="eyebrow">Reading the tissue</div><h2>Membranes first. Labels second.</h2>
+<img class="comparison" src="../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg" alt="Matched raw electron microscopy and model subcompartment labels, each with a two micrometre scale bar">
+<div class="caption">The same field, before and after classification. A model label is a hypothesis to check.</div>
+<div class="footer">H01 release · site render · CC BY 4.0 · Shapson-Coe et al. (2024), doi:10.1126/science.adk4858</div><span class="number">02</span>
+</section>
+<section>
+<div class="eyebrow">Interpreting a reconstruction</div><h2>One color is a continuity claim</h2>
+<div class="result"><img src="../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 flood-filling network segmentation overlay with original scale bar"><div><h3>What the image shows</h3><p>Different object labels in one section of densely packed neural tissue.</p><h3>What still needs checking</h3><p>Does each object stay continuous through the volume?</p><p class="small">A single section cannot establish a neurite’s full trajectory or its synaptic partners.</p></div></div>
+<div class="footer">H01 release · CC BY 4.0 · Shapson-Coe et al. (2024), doi:10.1126/science.adk4858</div><span class="number">03</span>
+</section>
+</main>
+</html>

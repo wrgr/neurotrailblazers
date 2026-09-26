@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 23 · NeuroTrailblazers"
 title: "Module 23: Posters, Abstracts, and Conferences"
 ---
 
-# Module 23: Posters, Abstracts, and Conferences
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 23</span>
+
+# Posters, Abstracts, and Conferences
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -42,9 +50,17 @@ Submit a conference-ready abstract, produce a coherent poster draft, and deliver
 - Distill the project into one claim hierarchy: one headline claim, at most two supporting claims, one limitation attached to each.
 - Draft the 250-word abstract against the sentence budget, then delete every sentence that does not help a reviewer judge credibility or significance.
 - Check the abstract names species, region, imaging modality, segmentation pipeline, version or materialization, proofreading state, and n. If any is missing, a reviewer will assume the worst case.
+
+---
+
+## Core Workflow (continued)
 - Build the poster wireframe around three evidence panels, placing the headline finding in the upper third where it is readable at two meters.
 - Write and rehearse the 90-second and 3-minute versions. The 90-second version is not the 3-minute version spoken quickly; it is a different script with the background removed.
 - Prepare a follow-up template and a target list of five to eight people you want to talk to, with one specific question for each.
+
+---
+
+## Core Workflow (continued)
 - Run critique for clarity, limitations, and the professional interaction plan, and revise before the submission deadline rather than after acceptance.
 
 ---

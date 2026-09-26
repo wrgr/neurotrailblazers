@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 02 · NeuroTrailblazers"
 title: "Module 02: Research Foundations and the Hidden Curriculum"
 ---
 
-# Module 02: Research Foundations and the Hidden Curriculum
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 02</span>
+
+# Research Foundations and the Hidden Curriculum
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -34,6 +42,10 @@ Create a personal research-navigation plan that includes role expectations, comm
 ### 1) The "hidden curriculum" of research
 - **Technical:** unwritten norms govern scientific research --- how to ask questions, how to admit uncertainty, how to give and receive feedback, how to navigate lab hierarchies. These norms vary by institution, lab, and PI, but common patterns exist: arrive at meetings prepared, version-control your work, attribute contributions explicitly, escalate problems early rather than late.
 - **Plain language:** there are rules nobody writes down but everyone is expected to follow.
+
+---
+
+## Concept Focus (continued)
 - **Misconception:** you will be taught everything you need to know.
 - **In practice:** Many critical skills (how to write a methods section, how to respond to a reviewer, how to push back on a senior colleague's suggestion) are learned by watching others, making mistakes, or asking directly.
 

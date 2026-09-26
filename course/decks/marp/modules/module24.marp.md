@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 24 · NeuroTrailblazers"
 title: "Module 24: Career Pathways and Graduate School Preparation"
 ---
 
-# Module 24: Career Pathways and Graduate School Preparation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 24</span>
+
+# Career Pathways and Graduate School Preparation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -42,6 +50,10 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 - Define two or three realistic target pathways, each named specifically enough to have a deadline (not "graduate school" but "three neuroscience PhD programs with connectomics groups").
 - Build the capability gap matrix: rows are targets, columns are the capabilities each selects on, cells hold the artifact that demonstrates it or the word "gap".
 - Convert each gap into a 90-day action with an artifact as output, discarding gaps you cannot close in the time available rather than carrying them as anxiety.
+
+---
+
+## Core Workflow (continued)
 - Build the outreach plan: who, in what order, with what artifact attached, and by what date.
 - Draft application and interview narratives anchored in concrete work, using one project as the spine and naming what went wrong in it.
 - Run due diligence on each target by talking to current and former group members, using a fixed question set so answers are comparable.

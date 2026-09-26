@@ -322,7 +322,18 @@ unit-page caption fixes noted above, and the en585781 rename.)*
   a correct `lang`. Still unpinned, and noted in the script: marp-cli stamps its own
   version into every output, and the repo installs it with `--no-save` and no
   `package.json`, so a CLI upgrade rewrites all 39 files.
-- [ ] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
+- [x] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
+  *(25 September 2026: applied the approved nanoscale visual direction to the shared
+  Marp theme: charcoal and warm paper, Source Sans 3 headings, uncropped H01 EM
+  segmentation covers with original scale bars and source credits. All 25 generated
+  module decks and ten technical/reference decks use the new covers; the reusable
+  template demonstrates the same direction. Dense concept, workflow and misconception
+  passages now continue across slides in the generator, preserving their text instead
+  of reducing the type size. Browser measurement checked all 614 affected slides,
+  with no missing images or body text outside the content bounds. The generated-materials
+  validator enforces the module theme, image validation now includes nested decks and
+  HTML images, and freshness checks include theme CSS. The five `frontiers` decks and
+  the existing PowerPoint template remain on their earlier designs.)*
 - [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
 - [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 56 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses (70 when this plan was written; the count drifts with every stylesheet edit, so re-count before starting) and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
 - [ ] Replace `favicon.ico` with `assets/brand/nt-favicon.svg` (plus a 32 px PNG fallback); add `<link rel="icon">` to the layout; add the social card as `og:image` (S).

@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 10 · NeuroTrailblazers"
 title: "Module 10: Network Science and Graph Representation"
 ---
 
-# Module 10: Network Science and Graph Representation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 10</span>
+
+# Network Science and Graph Representation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -41,6 +49,10 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 - Construct graph from synapse table (e.g., using CAVEclient + NetworkX). Inspect: number of nodes, edges, density, connected components.
 - Compute candidate metrics: degree distribution, clustering, path length, reciprocity, modularity.
 - Compare each metric to null-model expectation (degree-preserving random graph as minimum).
+
+---
+
+## Core Workflow (continued)
 - Interpret metrics against hypothesis. Report which metrics are significant and which are not.
 - Document abstraction limits: what information was lost in the graph construction?
 

@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 19 · NeuroTrailblazers"
 title: "Module 19: Peer Review and Scientific Ethics"
 ---
 
-# Module 19: Peer Review and Scientific Ethics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 19</span>
+
+# Peer Review and Scientific Ethics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -34,10 +42,22 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ### 1) What peer reviewers look for in connectomics papers
 - **Technical:** effective peer review of connectomics manuscripts requires evaluating several domain-specific dimensions:
   - **Data quality documentation:** does the paper report the segmentation error rate (merge/split metrics), synapse detection precision/recall, and proofreading completeness? Without these, no biological claim is evaluable.
-  - **Statistical rigor:** are null models appropriate for the graph structure? Are multiple comparisons handled? Are effect sizes reported alongside p-values? Is there sensitivity analysis for key thresholds?
-  - **Interpretation boundaries:** does the paper distinguish confirmed findings from exploratory observations? Are conclusions limited to what the data can actually support (e.g., one brain region in one animal at one developmental time point)?
-  - **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
+
+---
+
+## Concept Focus (continued)
+- **Statistical rigor:** are null models appropriate for the graph structure? Are multiple comparisons handled? Are effect sizes reported alongside p-values? Is there sensitivity analysis for key thresholds?
+- **Interpretation boundaries:** does the paper distinguish confirmed findings from exploratory observations? Are conclusions limited to what the data can actually support (e.g., one brain region in one animal at one developmental time point)?
+
+---
+
+## Concept Focus (continued)
+- **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
 - **Plain language:** a good reviewer checks whether the methods can actually support the claims, whether the statistics are honest, and whether someone else could reproduce the work.
+
+---
+
+## Concept Focus (continued)
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
 
 ---
@@ -49,12 +69,24 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 - **Methods-evidence audit**
 - Check dataset versioning, preprocessing transparency, QC thresholds, and statistical controls.
 - Verify that each claim maps to a specific figure panel and statistical test.
+
+---
+
+## Core Workflow (continued)
 - **Interpretation audit**
 - Flag overclaiming, underreported uncertainty, and missing limitations.
 - Check whether conclusions are bounded by the data (one brain region, one species, one time point).
+
+---
+
+## Core Workflow (continued)
 - **Ethics-risk scan**
 - Evaluate authorship clarity, disclosure statements, data-governance assumptions, and consent coverage.
 - Check for signs of selective reporting (missing negative results, single-threshold analyses).
+
+---
+
+## Core Workflow (continued)
 - **Actionable response package**
 - Write revision requests prioritized by scientific impact and integrity risk.
 - Use constructive language: problem, evidence, suggestion.
@@ -111,6 +143,10 @@ Materials needed
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
 - **Misconception guardrail:** ethics in connectomics is not just about IRB approval. It extends to data sharing, attribution, responsible AI, and honest reporting throughout the research lifecycle.
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** being harsh is not the same as being rigorous. The most rigorous reviews are also the most specific and constructive.
 - **Misconception guardrail:** compliance checklists alone do not ensure good practice. Integrity requires ongoing attention to workflow transparency.
 - **Misconception guardrail:** contribution volume alone does not define authorship role. A person who proofread 10,000 segments may deserve authorship; a person who ran one analysis script may not. The criteria must be explicit and agreed upon in advance.

@@ -137,12 +137,15 @@ src_dir, out_dir = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 sources = {}
 for path in sorted(src_dir.rglob("*.marp.md")):
     sources[str(path.relative_to(src_dir))] = hashlib.sha256(path.read_bytes()).hexdigest()
+themes = {}
+for path in sorted(src_dir.glob("**/theme/*.css")):
+    themes[str(path.relative_to(src_dir))] = hashlib.sha256(path.read_bytes()).hexdigest()
 
 manifest = out_dir / ".render-manifest.json"
 manifest.write_text(
-    json.dumps({"note": "SHA-256 of each Marp source at HTML render time. "
+    json.dumps({"note": "SHA-256 of each Marp source and theme at HTML render time. "
                         "Checked by scripts/check_deck_freshness.rb.",
-                "sources": sources}, indent=2) + "\n",
+                "sources": sources, "themes": themes}, indent=2) + "\n",
     encoding="utf-8",
 )
 print(f"Wrote manifest: {manifest} ({len(sources)} sources)")

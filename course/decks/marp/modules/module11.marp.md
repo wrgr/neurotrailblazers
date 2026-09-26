@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 11 · NeuroTrailblazers"
 title: "Module 11: Synapses and Circuit Logic"
 ---
 
-# Module 11: Synapses and Circuit Logic
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 11</span>
+
+# Synapses and Circuit Logic
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -34,6 +42,10 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ### 1) Synaptic organization as circuit logic
 Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
 - **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
+
+---
+
+## Concept Focus (continued)
 - **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
 - **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
 - **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.

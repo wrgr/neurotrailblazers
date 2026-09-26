@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 25 · NeuroTrailblazers"
 title: "Module 25: Portfolio, Feedback, and Final Project"
 ---
 
-# Module 25: Portfolio, Feedback, and Final Project
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 25</span>
+
+# Portfolio, Feedback, and Final Project
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -43,6 +51,10 @@ Submit a capstone portfolio that proves technical capability, communicates decis
 - Select artifacts against those claims, cutting duplicates and keeping the version that shows the most judgment rather than the most polish.
 - Write one four-line evidence caption per artifact, checking that line three names something a stranger can verify.
 - Add reflection notes on decisions, errors, and revisions, naming the alternative not taken in each case.
+
+---
+
+## Core Workflow (continued)
 - Run the permission and provenance check across every artifact, and pin dataset versions.
 - Run peer or mentor review with a stated decision, criterion, stage, and deadline for each artifact you send.
 - Revise, record what changed and why in a visible revision log, and publish the package with a README that tells a two-minute reader where to start.

@@ -7,20 +7,25 @@ done, and the files it touches. Tick items here as they land; do not delete them
 Sizes: **S** under half a day · **M** one to three days · **L** a week or more of focused
 work. Sizes assume one person who knows the repository.
 
-## Next batch — Compass handled separately
+## Next batch — including Compass
 
-Compass workshops belong to the user's other agent. Do not duplicate its workshop
-plans or edit Compass-owned material in this batch. Coordinate links to the shared
-lecture packages once that agent has a workshop sequence ready.
+Compass (the Professional Pathways workshops) is part of this work plan and this
+work stream. *(An earlier note assigned it to a separate agent; the site owner
+reassigned it here on 26 September 2026.)*
 
-**26 September, `compass-workshops` branch:** at the user's request, the ten
-Professional Pathways (formerly COMPASS) workshops are now packaged at
-`teaching/pathways/` in the lecture-package pattern: a timed 90-minute plan,
-an invented-case worksheet and public model responses with a local 0–2 rubric
-for each. Communicating Science runs as two sessions. The hub pairs them with
-MERIT stages; the Teaching nav, Teaching Hub, models page, Career and Community
-track and hidden-curriculum index link to it. Reconcile with any separate
-Compass workshop plan before merging.
+- [x] **Package the ten Pathways workshops.** *(26 September, `compass-workshops`
+  branch: `teaching/pathways/` now holds a hub plus a timed 90-minute plan, an
+  invented-case worksheet and public model responses with a local 0–2 rubric for
+  each workshop. Communicating Science runs as two sessions. The hub pairs them
+  with MERIT stages; the Teaching nav, Teaching Hub, models page, Career and
+  Community track and hidden-curriculum index link to it. Nine content gates, full
+  build, links, 85 fragments, smoke and layout checks pass. Not yet pushed.)*
+- [ ] **Review and pilot the workshops (M).** Nine of the ten were drafted in
+  parallel from the Orientation exemplar. Read all 27 pages as a facilitator for
+  consistency of voice, chaining of artifacts between sessions and the safety
+  cautions in Professional Conduct and STEM Identity and Purpose. Run one workshop
+  with a real cohort before calling the set taught. Done when each page has had a
+  human read and one pilot's notes are recorded.
 
 Recommended order for the remaining site/content work:
 
@@ -33,7 +38,7 @@ Recommended order for the remaining site/content work:
 2. [ ] **Finish instructor packaging.** Give Ethics and Governance the same timed
    plan, activity and model-response treatment; then draft 10-week and 16-week
    syllabus mappings using the existing four-session block and technical units.
-   These are course mappings, not a competing Compass workshop curriculum. Done
+   Place the Pathways workshops in both mappings at their MERIT-stage points. Done
    when every session has prerequisites, an artifact, feedback criteria and links.
 3. [ ] **Model answers and assessment.** Start the 25-module key backlog with
    modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank

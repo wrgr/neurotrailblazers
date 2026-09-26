@@ -67,7 +67,11 @@ Pre-class preparation (10 min async)
   Minute-by-minute plan
 
 00:00-08:00 | Framing: good vs bad hypotheses
-  Show 4 example hypotheses (2 good, 2 poor). Group identifies which are testable and why.
+  Show 4 example hypotheses (2 good, 2 poor). Group identifies which are testable and why:
+  "In this L2/3 subgraph, reciprocal pyramidal-pyramidal pairs are more frequent than under a degree-preserving null. This would support local recurrent excitation but would not show that it amplifies activity in vivo."
+  "Basket-cell synapses onto pyramidal cells land on the soma and proximal dendrite more often than a placement null weighted by membrane area predicts."
+  "We will study connectivity patterns in visual cortex." (no endpoint, no null)
+  "This circuit computes contrast normalization." (a functional claim with no structural endpoint)
   Key criteria: measurable endpoint, specified null, interpretation boundary.
 
 08:00-20:00 | Hypothesis drafting
@@ -82,7 +86,7 @@ Pre-class preparation (10 min async)
   Discussion: "What happens if you use the wrong null model?" Show how the same data looks significant or non-significant depending on null choice.
 
 34:00-46:00 | Interpretation workshop
-  Present 3 pre-computed results (with p-values and z-scores). For each, learners write:
+  Present 3 pre-computed results: the feed-forward loop in this module's worked example, the reciprocity example under three nulls in [Technical Unit 09](/technical-training/09-connectome-analysis-neuroai/) (section 2), and the exact-enumeration result on the [Algorithms and Applications worksheet](/teaching/lectures/algorithms-and-applications-activity/). For each, learners write:
   Supported claim (what the data shows)
   Explicit non-claim (what the data does NOT show)
   One confound that could explain the result

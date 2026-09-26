@@ -57,12 +57,12 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
+**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors, listed in the [Module 06 kit](/assets/kits/module06/README.md) (synthetic). You have time to fix 10.
 
 1. Review all 25 flagged candidates and classify each by error type (merge/split/boundary/uncertain).
 2. Rank by estimated impact: which corrections would most change the connectivity graph?
 3. Fix the top 10 in priority order, documenting each correction.
-4. Compute before/after metrics for the subvolume.
+4. Compute before/after metrics for the subvolume (the kit's `qc_metrics.py` applies your fixes).
 5. Write a 3-sentence "release note" summarizing what was fixed and what remains.
 
 **What learners hand in**

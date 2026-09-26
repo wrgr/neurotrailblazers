@@ -1,0 +1,19 @@
+{
+  "dataset": "synthetic-teaching-only",
+  "version": "synthetic-flags-v1",
+  "seed": 6006,
+  "report_file": "flagged_candidates.csv",
+  "id_column": "candidate_id",
+  "flag_column": "flag_reason",
+  "ground_truth_file": "ground_truth.csv",
+  "fix_budget": 10,
+  "analysis": {
+    "description": "Directed connections among the 40 L2/3 pyramidal cells in the analysis set",
+    "analysis_cells": 40,
+    "true_edges": 300,
+    "true_reciprocal_pairs": 0,
+    "analysis_path_um": 16000,
+    "unflagged_error_sites": 520
+  },
+  "limitation": "Invented flags and effects; the size-outlier and misassigned-synapse counts stand in for the local indicators named in Module 06."
+}

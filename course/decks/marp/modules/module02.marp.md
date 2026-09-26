@@ -82,7 +82,7 @@ Block 1: Hidden curriculum reveal (00:00-15:00)
 
 Block 2: Role and expectation mapping (15:00-30:00)
   Instructor script: "Every research team has roles. Let's map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
-  Learners fill in a role-expectation worksheet for their own research setting (or a hypothetical one).
+  Learners fill in a three-column role-expectation table (role, what this person expects from you, what you can expect from them) for their own research setting (or a hypothetical one).
   Discuss: where do expectations conflict? Where are they ambiguous?
 
 Block 3: Ethics in connectomics (30:00-45:00)
@@ -94,7 +94,9 @@ Block 3: Ethics in connectomics (30:00-45:00)
   Group discussion: "What ethical situation might you encounter in your work? How would you handle it?"
 
 Block 4: Communication script workshop (45:00-65:00)
-  Instructor script: "We are going to practice the hardest part of research: talking to people." Distribute script templates for five common situations (asking for help, admitting uncertainty, giving feedback, receiving feedback, escalating problems).
+  Instructor script: "We are going to practice the hardest part of research: talking to people." Distribute script templates for five common situations (asking for help, admitting uncertainty, giving feedback, receiving feedback, escalating problems). The first three are written out in the studio activity below. For the other two:
+  Receiving feedback: "Thank you. Let me check I have understood: you are saying [restatement]. I will [action] by [date]."
+  Escalating a problem: "I have hit [problem], which affects [scope]. I have tried [steps]. I need a decision on [question] by [date], because [consequence]."
   Learners customize scripts for their own context (10 min).
   Role-play in pairs: one person plays the mentor/colleague, the other practices the script (10 min, switch roles).
 

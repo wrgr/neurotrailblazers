@@ -126,32 +126,32 @@ You are handed two EM patches, each about 15 x 15 µm. Each contains a large pre
 
 ### Pre-class preparation (10-15 min async)
 - Review cortical layer descriptions above.
-- Explore the Allen Brain Atlas online viewer and locate cortical layers in a coronal section.
+- Explore the [Allen Brain Atlas](https://atlas.brain-map.org/) online viewer and locate cortical layers in a coronal section.
 - Bring one question: "How would I know which layer I'm looking at in EM?"
 
 ### Minute-by-minute plan
 1. **00:00-10:00 | Macro-to-micro bridge**
-   - Instructor shows a light microscopy image of cortex (Nissl stain showing layers) side-by-side with the same region in EM.
+   - Instructor shows a Nissl-stained coronal section from the [Allen Brain Atlas](https://atlas.brain-map.org/) beside the [H01 cortical layers figure]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) (Step 8), which marks layers on electron microscopy of human temporal cortex.
    - Key teaching point: "The layers you learned in neuroanatomy class are the same layers you'll see in EM — but the visual cues are different. In EM, you identify layers by cell density and neuropil texture, not by staining color."
-   - Walk through each layer's EM signature with real images from MICrONS or H01.
+   - Walk through each layer's EM signature live in a public viewer: [MICrONS Explorer](https://www.microns-explorer.org/) (mouse visual cortex, pia to white matter) or [H01](https://h01-release.storage.googleapis.com/explore.html) (human temporal cortex).
 
 2. **10:00-24:00 | Guided structural identification**
-   - Present 4 EM patches from different layers (unlabeled). Instructor demonstrates the identification process:
+   - Present 4 unlabeled EM patches from the instructor's patch set (see *Building the patch set* under the studio activity). Instructor demonstrates the identification process:
      - Patch A: sparse soma, dense neuropil → L1
      - Patch B: large pyramidal soma with thick apical dendrite → L5
      - Patch C: dense small soma, many spines → L2/3
-     - Patch D: mossy fiber bouton (3 μm, packed vesicles) → hippocampus CA3
+     - Patch D: mossy fiber bouton (3 μm, packed vesicles) → hippocampus CA3. The public volumes linked here do not cover hippocampus; without hippocampal EM of your own, present Patch D as a description, using Patch 1 of the worked example above.
    - For each, articulate the evidence chain: "I see [features], which tells me [layer/region], which means I expect [cell types and synapse types]."
 
 3. **24:00-38:00 | Ambiguity case discussion**
-   - Present 3 ambiguous patches where layer context changes interpretation:
+   - Present 3 ambiguous patches from the patch set, chosen so that layer context changes interpretation:
      - A large bouton near a blood vessel: thalamocortical (L4) or local collateral (L2/3)?
      - A smooth dendrite near a soma: inhibitory interneuron or astrocytic process?
      - A process at the volume boundary: cannot trace to soma — how to handle?
    - Group discussion: what additional evidence would resolve each ambiguity?
 
 4. **38:00-50:00 | Learner annotation round**
-   - Learners independently annotate 4 new patches, recording:
+   - Learners independently annotate 4 new patches from the patch set, recording:
      - Estimated layer/region
      - Structure identification (cell type, compartment)
      - Confidence level (high/medium/low)
@@ -169,7 +169,7 @@ You are handed two EM patches, each about 15 x 15 µm. Each contains a large pre
 
 ### Anatomy-in-context annotation exercise (60-75 minutes)
 
-**Scenario:** You are given a set of 8 EM patches from a mouse cortex volume. The patches span different layers (L1 through L6) but are presented without layer labels.
+**Scenario:** You are given a set of 8 EM patches from a mouse cortex volume, taken by the instructor from the public MICrONS volume. The patches span different layers (L1 through L6) but are presented without layer labels.
 
 **Task sequence:**
 1. For each patch, determine the likely cortical layer using soma density, neuropil texture, and cell-type signatures.
@@ -182,6 +182,18 @@ You are handed two EM patches, each about 15 x 15 µm. Each contains a large pre
 - Completed annotation table (patch ID, layer call, structure call, evidence, confidence).
 - Two uncertainty notes with proposed resolution strategies.
 - One "lesson learned" about how context changed an interpretation.
+
+### Building the patch set (instructor, before class)
+
+The site does not publish an EM patch set; build one from a public volume so that
+every patch has a recorded location and a layer you can check.
+
+- Open the minnie65 volume from [MICrONS Explorer](https://www.microns-explorer.org/). It spans pia to white matter, so every layer is available.
+- Take about 15 screenshots at one fixed zoom (a field of roughly 15 x 15 µm), each paired with a second screenshot of the surrounding 50 x 50 µm for the soma census.
+- Spread them from L1 to L6. Include at least two near a layer boundary and one at the edge of the volume, because those are the cases the rubric asks learners to flag.
+- Record each patch's coordinates and your own layer call in a key that learners do not see, and remove the coordinate readout from the images they do see.
+- Use four in the guided round, three in the ambiguity round, and eight in the studio; the four learner-round patches can come from the studio eight.
+- Before sharing the images beyond your class, check the release [terms of use](https://www.microns-explorer.org/terms-and-conditions).
 
 ## Assessment rubric
 - **Minimum pass**

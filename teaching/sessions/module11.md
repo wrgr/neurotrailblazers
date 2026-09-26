@@ -57,7 +57,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
+**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic stand-in for a MICrONS subgraph, in the [Module 11 kit](/assets/kits/module11/README.md). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 1. Enumerate all 2-node and 3-node motifs in the subgraph (use DotMotif or equivalent tool).
 2. Generate 1,000 degree-preserving random rewirings. Count motifs in each.

@@ -120,13 +120,13 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ## Detailed run-of-show (90 minutes)
 
 ### Block 1: Notebook anatomy (00:00-12:00)
-- **Instructor script:** "Open the sample notebook I have shared. Before we write any code, let's understand the structure." Walk through the five sections of a well-organized notebook:
+- **Instructor script:** "Open a new notebook with me. Before we write any code, let's lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
   1. **Header:** title, author, date, dataset version, materialization version.
   2. **Setup:** imports and environment configuration.
   3. **Data loading:** queries and schema validation.
   4. **Analysis:** computation cells with markdown explanations.
   5. **Export:** saving outputs with metadata.
-- Show a bad notebook (out-of-order cells, no markdown, hidden state) and a good notebook side by side. Ask: "Which one would you trust for a paper?"
+- Then make a bad notebook from a copy of the good one while the class watches: run cells out of order, delete the markdown, and define a variable in a cell you then delete. Put the two side by side and ask: "Which one would you trust for a paper?"
 
 ### Block 2: Environment setup and library tour (12:00-28:00)
 - **Instructor script:** "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:
@@ -176,7 +176,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 **Task sequence:**
 1. **Setup and data loading (Part A, 20 minutes):** create a new notebook with a header cell: title, your name, date, dataset name, materialization version.
 2. Create a setup cell with all imports and version pinning.
-3. Initialize CAVEclient (or load a provided sample CSV if CAVE access is unavailable).
+3. Initialize CAVEclient, or, if CAVE access is unavailable, load the [offline synapse table]({{ '/assets/kits/module03/synapses_sample.csv' | relative_url }}) (synthetic; its [README]({{ '/assets/kits/module03/README.md' | relative_url }}) lists the columns and the version string to record).
 4. Query or load a synapse table. Validate: print column names, data types, row count, and first 5 rows.
 5. Add a markdown cell explaining what the dataset contains and what version you are using.
 6. **Analysis (Part B, 20 minutes):** choose one descriptive analysis from the following options: a synapse count distribution (histogram of synapse counts per neuron); top connections (bar chart of the 10 most connected cell-type pairs); a degree distribution (in-degree vs. out-degree scatter plot for all neurons in a region); or a spatial distribution (scatter plot of synapse locations colored by cell type).
@@ -209,6 +209,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ## Teaching resources
 - [Dataset Access]({{ '/datasets/access/' | relative_url }})
 - [Workflow]({{ '/datasets/workflow/' | relative_url }})
+- [Module 03 kit]({{ '/assets/kits/module03/README.md' | relative_url }}) — a synthetic synapse table for learners without CAVE access
 
 ## Academic references
 - Kluyver, T., et al. (2016). Jupyter Notebooks: a publishing format for reproducible computational workflows. *Proceedings of the 20th International Conference on Electronic Publishing*, 87-90.

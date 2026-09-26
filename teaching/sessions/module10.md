@@ -57,7 +57,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic stand-in for a MICrONS column, in the [Module 10 kit](/assets/kits/module10/README.md). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 
 1. Load the graph and compute basic statistics (nodes, edges, density, components).
 2. Compute: degree distribution, clustering coefficient, average path length.

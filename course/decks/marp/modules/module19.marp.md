@@ -104,14 +104,14 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 
 <!--
 Materials needed
-  One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
-  Structured review form template (one per student).
-  Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting).
-  Two examples of real reviewer comments: one constructive, one destructive.
+  One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt): `mock-preprint.md` in the [Module 19 kit](/assets/kits/module19/README.md). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
+  Structured review form template (one per student): `review-form.md` in the [Module 19 kit](/assets/kits/module19/README.md).
+  Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting), in the same review form.
+  Two example reviewer comments, one constructive and one destructive, in the review form. They were written for this session, not taken from a real review.
   Timing and instructor script
 
 00:00-08:00 | Constructive vs destructive criticism
-  Instructor displays two real (anonymized) reviewer comments for the same paper. One is specific, evidence-based, and actionable; the other is vague and dismissive. Students identify which is which and explain why. Key script line: "The most rigorous reviewer is not the harshest one. Rigor means specificity. Vague criticism is lazy, not tough."
+  Instructor displays the two example reviewer comments from the review form, both written about the mock preprint. One is specific, evidence-based, and actionable; the other is vague and dismissive. Students identify which is which and explain why. Key script line: "The most rigorous reviewer is not the harshest one. Rigor means specificity. Vague criticism is lazy, not tough."
 
 08:00-12:00 | What reviewers look for in connectomics
   Instructor presents a checklist of connectomics-specific review criteria: data quality metrics, appropriate null models, reproducibility metadata, interpretation boundaries, and data availability. Brief discussion of how these differ from standard neuroscience review criteria.
@@ -154,7 +154,7 @@ Materials needed
 ---
 
 ## Studio Activity
-**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists "MICrONS Consortium" as a co-author without individual contribution details. The discussion section states that "this motif likely plays a causal role in seizure propagation."
+**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit](/assets/kits/module19/README.md). The discussion section states that "this motif likely plays a causal role in seizure propagation."
 
 ---
 

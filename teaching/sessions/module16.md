@@ -56,7 +56,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.
+**Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers (all synthetic, in the [Module 16 kit](/assets/kits/module16/README.md)).
 
 1. **Map each claim to required visual evidence.** For every result sentence, identify what figure panel and what visual encoding will support it.
 2. **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.

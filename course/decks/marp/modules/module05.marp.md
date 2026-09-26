@@ -63,27 +63,27 @@ EM image quality is not merely an aesthetic concern — it is the single most co
 Pre-class preparation (5-10 min async)
   Before the session, students should:
   Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
-  Preview the three sample image patches posted to the course portal: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
+  Preview the artifact gallery on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page and find three examples: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
   Materials needed
-  Projected EM image gallery (8-10 patches at varying quality levels)
-  Printed or digital QA decision worksheet (one per student)
+  Projected EM image gallery (8-10 patches at varying quality levels) from the instructor's patch set; see *Building the patch set* under the studio activity
+  Printed or digital QA decision worksheet (one per student): the [learner worksheet](/assets/worksheets/module05/module05-activity.md)
   Timer visible to the class
-  Artifact reference card (single page, double-sided)
+  Artifact reference card (single page, double-sided): print the severity classification section of the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page
   Minute-by-minute schedule
 
 1. 00:00-08:00 — EM basics refresher
   *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
-  Show four images (ssTEM, SBEM, FIB-SEM, and one intentionally ambiguous). Cold-call students for modality identification and reasoning.
+  Show four images: three from public volumes acquired by different methods (each dataset's release page names the instrument) and one intentionally ambiguous. Cold-call students for modality identification and reasoning.
   Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
 
 2. 08:00-20:00 — Artifact recognition walkthrough
   *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
-  Walk through knife chatter, charging, folds, missing sections, and staining gradients with annotated example images.
-  For each artifact, show the segmentation output on the same region so students can see the predicted error type realized in practice.
+  Walk through knife chatter, charging, folds, missing sections, and staining gradients with the annotated examples on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page.
+  Where your patch set has an example of the artifact, turn on the public viewer's segmentation layer over it so students can see the predicted error type realized in practice.
   *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
 
 3. 20:00-34:00 — Learner triage round
-  *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
+  *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches from the patch set. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
   Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
   *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
 
@@ -107,7 +107,7 @@ Pre-class preparation (5-10 min async)
   46:00: Can students articulate cost tradeoffs in QA decisions?
   56:00: Can students write a structured QA log entry?
   Post-class assignment
-  Select three EM image patches from the course dataset that were not covered in class. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
+  Select three locations in a public volume ([MICrONS](https://www.microns-explorer.org/) or [H01](https://h01-release.storage.googleapis.com/explore.html)) that were not covered in class, and record their coordinates. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
 -->
 
 ---

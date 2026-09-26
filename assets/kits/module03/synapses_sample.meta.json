@@ -1,0 +1,19 @@
+{
+  "dataset": "synthetic-teaching-only",
+  "version": "synthetic-synapses-v1",
+  "generator": "scripts/generate_kit_materials.rb",
+  "seed": 3003,
+  "rows": 3000,
+  "neurons": 300,
+  "columns": {
+    "synapse_id": "row identifier",
+    "pre_root_id": "synthetic presynaptic neuron ID (six digits; real CAVE root IDs are 18 digits)",
+    "post_root_id": "synthetic postsynaptic neuron ID",
+    "pre_cell_type": "L23_pyr, L4_exc, L5_pyr, basket, martinotti or vip",
+    "post_cell_type": "same vocabulary; blank for about 2.5% of rows (missing annotation)",
+    "region": "layer of the postsynaptic soma: L2/3, L4 or L5",
+    "x_um y_um z_um": "synapse position in micrometers; y increases with depth from the pia",
+    "size_vx": "cleft size in voxels (arbitrary synthetic units)"
+  },
+  "limitation": "Invented cell types, positions and connection rules; not a CAVE query and not a biological measurement."
+}

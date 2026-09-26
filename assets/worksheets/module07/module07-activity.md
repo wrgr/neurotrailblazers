@@ -40,10 +40,10 @@ Keep these in view. At the end, answer each in one sentence.
 
 **Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
 
-1. Review the automated error report: 45 flagged errors (18 merges, 20 splits, 7 uncertain).
+1. Review the automated error report in the [Module 07 kit](/assets/kits/module07/README.md) (synthetic): 45 flagged errors (18 merges, 20 splits, 7 uncertain).
 2. Triage: classify each by impact on the reciprocal connectivity analysis. Which errors could create false reciprocal connections? Which could hide real ones?
 3. Fix the top 15 errors, documenting each correction with a one-line rationale.
-4. Compute before/after metrics (provided metric computation script).
+4. Compute before/after metrics (metric computation script: `qc_metrics.py` in the [Module 07 kit](/assets/kits/module07/README.md)).
 5. Write a 1-page release recommendation memo with: metrics summary, corrections summary, remaining risks, and go/no-go recommendation with explicit reasoning.
 
 ### What you hand in

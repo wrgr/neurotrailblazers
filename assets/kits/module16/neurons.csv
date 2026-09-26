@@ -1,0 +1,4 @@
+neuron,file,est_missing_cable_fraction
+excitatory,neurons/excitatory.swc,0.08
+basket,neurons/basket.swc,0.15
+chandelier,neurons/chandelier.swc,0.22

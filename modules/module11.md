@@ -144,14 +144,14 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
    - Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
 
 2. **10:00-24:00 | Motif construction examples**
-   - Walk through 3 motifs in the MICrONS dataset:
+   - Walk through 3 motifs you have located beforehand in the public MICrONS volume ([MICrONS Explorer](https://www.microns-explorer.org/)):
      - Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
      - Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
      - Feedback inhibition: pyramidal → basket cell → same pyramidal
    - For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
 
 3. **24:00-38:00 | Learner motif analysis**
-   - Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
+   - Learners receive a small subgraph (15 neurons, 50 synapses: `small_nodes.csv` and `small_synapses.csv` in the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }})) and identify all 3-node motifs.
    - Count each motif type. Which are most common?
    - Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
 
@@ -169,7 +169,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 ## Studio activity: motif discovery and interpretation (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** You are analyzing a 200-neuron subgraph from the MICrONS dataset, spanning L2/3 and L4 of mouse visual cortex. Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
+**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic stand-in for a MICrONS subgraph, in the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 **Task sequence:**
 1. Enumerate all 2-node and 3-node motifs in the subgraph (use DotMotif or equivalent tool).
@@ -224,6 +224,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 ## Teaching resources
 - [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
 - [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
+- [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}) — a synthetic 200-neuron L2/3-L4 subgraph with synapse compartments, plus the 15-neuron warm-up
 
 ## References
 - Gray EG (1959) "Axo-somatic and axo-dendritic synapses of the cerebral cortex." *Journal of Anatomy* 93:420-433.

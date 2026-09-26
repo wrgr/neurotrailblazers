@@ -63,7 +63,7 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 <!--
 Pre-class preparation (10 min async)
   Review the data formats content library entry (skeletons section)
-  Install/check NeuroM or equivalent morphology analysis package
+  Install/check NeuroM or equivalent morphology analysis package, or use `morphometry.py` in the [Module 09 kit](/assets/kits/module09/README.md), which needs no install
   Minute-by-minute plan
 
 00:00-10:00 | Morphology overview
@@ -72,12 +72,12 @@ Pre-class preparation (10 min async)
   "Today you'll learn to quantify these shapes from EM data."
 
 10:00-24:00 | Skeleton extraction demo
-  Live demo: take a segmented neuron, run skeletonization, visualize result in Neuroglancer.
+  Live demo: take a segmented neuron in a public volume ([MICrONS Explorer](https://www.microns-explorer.org/)), run skeletonization, visualize result in Neuroglancer. Without a skeletonization install, open `cell01.swc` from the kit instead.
   Walk through SWC format: "Each line is a node. Parent ID tells you the tree structure."
-  Common pitfall: show a skeleton with spurious branches from noisy segmentation. Demonstrate pruning.
+  Common pitfall: show a skeleton with spurious branches from noisy segmentation (`cell07.swc` in the kit has several). Demonstrate pruning.
 
 24:00-38:00 | Descriptor calculation
-  Hands-on: learners compute 5 descriptors for one neuron using NeuroM or provided scripts.
+  Hands-on: learners compute 5 descriptors for one neuron using NeuroM or the kit's `morphometry.py`.
   Compare results across the group: did everyone get the same numbers? Discuss sources of variation.
   Introduce Sholl analysis with live visualization.
 
@@ -105,7 +105,7 @@ Pre-class preparation (10 min async)
 ---
 
 ## Studio Activity
-**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
+**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex (synthetic stand-ins, in the [Module 09 kit](/assets/kits/module09/README.md)). Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 
 ---
 

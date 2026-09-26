@@ -1,0 +1,26 @@
+candidate_id,object_id,flag_reason,putative_class,in_analysis_set,synapses,partners,volume_um3,est_fix_minutes,evidence_note
+C01,7388,implausible morphology,L2/3 pyramidal,yes,212,44,2535,43,two somata about 132 um apart joined by one thin process; z=1109
+C02,5385,dead-end fragment,L2/3 pyramidal,yes,30,11,716,40,"axon of an analysis-set cell ends at a missing section, continuation 103 sections on; z=1134"
+C03,8844,implausible morphology,L2/3 pyramidal,yes,225,45,2592,37,two somata about 181 um apart joined by one thin process; z=950
+C04,7840,dead-end fragment,unknown fragment,no,4,5,86,34,"34 um axon fragment, parent cell outside the analysis set; z=920"
+C05,8008,dead-end fragment,L2/3 pyramidal,yes,65,18,731,36,"axon of an analysis-set cell ends at a missing section, continuation 9 sections on; z=1126"
+C06,6028,synapse near boundary,L2/3 pyramidal,yes,161,43,1255,11,cleft straddles two objects; 25 synapses attributed to the neighbor; z=955
+C07,6522,synapse near boundary,L2/3 pyramidal,yes,92,37,1886,13,membrane offset by about 2 px; 188 synapses sit on the wrong side; z=1200
+C08,8751,implausible morphology,L2/3 pyramidal,yes,212,52,3839,28,two somata about 66 um apart joined by one thin process; z=1110
+C09,7014,dead-end fragment,L2/3 pyramidal,yes,51,20,335,33,dendrite dead-ends in a low-contrast stretch 33 um from the soma; z=1054
+C10,7268,implausible morphology,L2/3 pyramidal,yes,147,47,2007,23,"thick process with a kink; 170 sections checked, no boundary seen; z=1224"
+C11,8739,implausible morphology,L2/3 pyramidal,yes,191,32,1581,23,"thick process with a kink; 197 sections checked, no boundary seen; z=1151"
+C12,5123,implausible morphology,glia,no,1,1,5019,45,very large sheet-like object wrapping 200 um of vessel; z=1261
+C13,7438,implausible morphology,glia,no,0,3,8619,34,very large sheet-like object wrapping 61 um of vessel; z=1155
+C14,5171,dead-end fragment,L2/3 pyramidal,yes,55,10,614,33,dendrite dead-ends in a low-contrast stretch 110 um from the soma; z=1244
+C15,6917,implausible morphology,L2/3 pyramidal,yes,136,48,1822,28,"thick process with a kink; 80 sections checked, no boundary seen; z=1127"
+C16,7085,synapse near boundary,L2/3 pyramidal,yes,113,36,1633,11,membrane offset by about 2 px; 118 synapses sit on the wrong side; z=928
+C17,5039,dead-end fragment,unknown fragment,no,5,5,58,31,"165 um axon fragment, parent cell outside the analysis set; z=1012"
+C18,6860,implausible morphology,glia,no,0,0,6102,47,astrocytic mesh with 44 attached fragments; z=1230
+C19,6293,implausible morphology,L2/3 pyramidal,yes,219,42,3850,40,two somata about 75 um apart joined by one thin process; z=1166
+C20,7422,synapse near boundary,L2/3 pyramidal,yes,197,36,1732,16,membrane offset by about 2 px; 107 synapses sit on the wrong side; z=1230
+C21,5260,dead-end fragment,L2/3 pyramidal,yes,34,20,651,33,"axon of an analysis-set cell ends at a missing section, continuation 69 sections on; z=925"
+C22,6836,implausible morphology,L2/3 pyramidal,yes,205,59,4062,30,two somata about 81 um apart joined by one thin process; z=1026
+C23,5794,dead-end fragment,unknown fragment,no,8,4,93,32,orphan fragment ending at a missing section (71 um long); z=1248
+C24,7496,dead-end fragment,unknown fragment,no,11,1,46,38,orphan fragment ending at a missing section (174 um long); z=1010
+C25,6200,dead-end fragment,unknown fragment,no,12,4,21,40,"128 um axon fragment, parent cell outside the analysis set; z=1282"

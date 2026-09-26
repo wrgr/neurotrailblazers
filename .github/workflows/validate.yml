@@ -90,6 +90,18 @@ jobs:
       - name: Site paths in code spans
         run: ruby scripts/validate_code_span_paths.rb
 
+      # Eight session kits (Modules 03-07 and 09-11) told learners to open "the
+      # provided" sample CSV, patch set, notebook or metric script, and the site
+      # published none of them. The link audit passed, because prose names no href.
+      # This fails on any unresolved asset or page path in the modules, session kits,
+      # worksheets and kit READMEs; on a "provided"/"supplied"/"sample file" line
+      # that links nothing; and on any file under assets/kits/ that has drifted from
+      # its manifest checksum. Verified by injecting an unlinked "provided sample
+      # CSV" line, a dead /assets/kits/ path and an unlisted kit file, and by running
+      # it against the pre-fix tree, where it reports every kit the audit found.
+      - name: Kit materials resolve
+        run: ruby scripts/validate_kit_materials.rb
+
       # Every gate above reads text; none has ever asked whether a style applies.
       # That blind spot shipped two defects. The AI synthesis modal on the journal
       # club page was marked class="... hidden" while the only rule in the

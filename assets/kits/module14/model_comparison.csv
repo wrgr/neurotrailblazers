@@ -1,0 +1,5 @@
+model,region,traced_path_mm,vi_total,vi_split,vi_merge,erl_um,boundary_f1,splits,merges
+A,clean,42.0,0.61,0.44,0.17,142,0.89,210,24
+B,clean,42.0,0.52,0.19,0.33,118,0.93,95,47
+A,artifact,6.5,1.12,0.86,0.26,61,0.78,71,6
+B,artifact,6.5,1.21,0.55,0.66,38,0.84,44,19

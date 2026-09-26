@@ -133,7 +133,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
    - Discussion: "What did we gain and lose in each transformation?"
 
 2. **08:00-20:00 | Graph build demo**
-   - Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
+   - Live coding: load the edge list from the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}) (or a synapse table you have access to), construct a NetworkX DiGraph, apply threshold, print basic stats.
    - Visualize the graph with spring layout. Color nodes by cell type.
    - "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
 
@@ -157,7 +157,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 ## Studio activity: graph analysis report (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic stand-in for a MICrONS column, in the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 
 **Task sequence:**
 1. Load the graph and compute basic statistics (nodes, edges, density, components).
@@ -214,6 +214,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 ## Teaching resources
 - [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}) — a synthetic 500-neuron column graph
 
 ## References
 - Watts DJ, Strogatz SH (1998) "Collective dynamics of 'small-world' networks." *Nature* 393:440-442.

@@ -1,0 +1,371 @@
+{
+  "description": "Every file under assets/kits/, with its checksum. Regenerate with ruby scripts/generate_kit_materials.rb; scripts/validate_kit_materials.rb checks this list.",
+  "files": [
+    {
+      "path": "assets/kits/module03/README.md",
+      "sha256": "cde3c54a9785c94f1317ef549a04092d8db6ff6eda7d7af55f1918cc557dadc8",
+      "bytes": 1632,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module03/synapses_sample.csv",
+      "sha256": "f8bd40f456ca5436a8e102fcc02f9ec70bfa0d87155c1f9f1cf07039c17466cf",
+      "bytes": 175514,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module03/synapses_sample.meta.json",
+      "sha256": "8908cf9c9524033b5a6fbd1845dfb1e8d3e34722f21102916f6821ea6a08b751",
+      "bytes": 910,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module06/README.md",
+      "sha256": "fa9c237fa6336c5bb33d5709a437ff9b9e15790b55bcc5ceae0dcbd9e0ef10b5",
+      "bytes": 2891,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module06/flagged_candidates.csv",
+      "sha256": "9ca389e5e8d5b0e15e75ef5f8c529aa188d5dd680ad9cfa2cf0ae41c1b8b340a",
+      "bytes": 3434,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module06/ground_truth.csv",
+      "sha256": "27a93b9653eb14e5540b467a35663a789728021b1c61f59b243e47424810eddd",
+      "bytes": 752,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module06/kit.json",
+      "sha256": "48ce73dc507c6c4e8c82f2cd95085b8a42c558e074ad61e619f451624ca91c97",
+      "bytes": 675,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module06/qc_metrics.py",
+      "sha256": "515f00d95953f6f5ac7d523ef0fde70d53e9b6ba05a0b40c800c2037930c28ce",
+      "bytes": 4663,
+      "source": "hand-written"
+    },
+    {
+      "path": "assets/kits/module07/README.md",
+      "sha256": "9ebcf13c7d7eba5a664a1b80aac28b555ad8b90db5eb32544b99bc7137fb99fb",
+      "bytes": 3026,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module07/error_report.csv",
+      "sha256": "f315792c929fddf640ee20916c215cb1597f039e348fb0252b4c437613618b7f",
+      "bytes": 5526,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module07/ground_truth.csv",
+      "sha256": "ac1d29b64966bd8deacfc6a891ecb0338f7ebeec2d0e062251651134700a0535",
+      "bytes": 1218,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module07/kit.json",
+      "sha256": "b4e8aa02295ac870049671eb3833d7cd91f688a8dae93b487f0c2c82514b631e",
+      "bytes": 708,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module07/qc_metrics.py",
+      "sha256": "515f00d95953f6f5ac7d523ef0fde70d53e9b6ba05a0b40c800c2037930c28ce",
+      "bytes": 4663,
+      "source": "hand-written"
+    },
+    {
+      "path": "assets/kits/module09/README.md",
+      "sha256": "aa8b871865fea57b603305aaf5038c2ddd26f9e9e7211d785b60185a0d4b7d97",
+      "bytes": 2216,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/morphometry.py",
+      "sha256": "aa92e07884cf589a7d4d3240e09ff2c2493ff2b53e99494aed908d886a052b7e",
+      "bytes": 7121,
+      "source": "hand-written"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell01.swc",
+      "sha256": "9c92237d79d0fbfe96a31aa4c9e64896f5cae988a59fe994e370809ed46e6ef7",
+      "bytes": 26735,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell02.swc",
+      "sha256": "d0f1b43e074650af8c603d16798c52ad72ab7d42c2ac015c3f004c82561c85f5",
+      "bytes": 28157,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell03.swc",
+      "sha256": "54b9d06bd3dbe5db0ed7e8b57ca1b49c67d901602aa119016115c5618636ac4d",
+      "bytes": 22107,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell04.swc",
+      "sha256": "5235b39b781af3bf93713b5c163dc7954696d7bbb0d71c5b67f9abb8f81545df",
+      "bytes": 27512,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell05.swc",
+      "sha256": "cf85555d2d841599877e8368c79de81f8f647d0614bcf719d74d5378be649961",
+      "bytes": 26918,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell06.swc",
+      "sha256": "2e1b2344a6fb1579eba731bd3124b638667a4051ac42b8324cc06aebc6227561",
+      "bytes": 21479,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell07.swc",
+      "sha256": "99d92dfdb5c10b5ec55e570f7d6792c36fb350784158d7fa618205cbf8267c28",
+      "bytes": 7093,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell08.swc",
+      "sha256": "878ee2f541b0b359fb9c8160e3d87682e31f29d7c62aa4ee53bd04ef038aff7a",
+      "bytes": 27841,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell09.swc",
+      "sha256": "942aecf693248ac6dbc1c927ca7859b22ce58f8020938bc30a53a113226bb79d",
+      "bytes": 24002,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/skeletons/cell10.swc",
+      "sha256": "ee136a3f7a6384898f0e319ffee866d984a6a26badbe4ad6ffb00de1fdc04581",
+      "bytes": 21365,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/spines.csv",
+      "sha256": "03119a980daf503d0420af4627750dd604617d015aebee7c7eee7b742fdb8e04",
+      "bytes": 109029,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/synapse_labels.csv",
+      "sha256": "e1c898775044b85fc40106b22096f90bb23032ba1f23b262ff63af5987af2b4e",
+      "bytes": 485,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module09/volume.json",
+      "sha256": "f4572a3b8b6ffe5c0c06a75a400059ef1e25adc3a7c80e55387bdab7210fe121",
+      "bytes": 356,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module10/README.md",
+      "sha256": "55808aa051304f94d35f928f55ac5159d7beb0012abdc955d70136e1feba74ba",
+      "bytes": 1733,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module10/edges.csv",
+      "sha256": "552bfc9c61592672dbbf8b888b55e5126b1bd5e325ca2d9db191f3bbdc73da8e",
+      "bytes": 159467,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module10/nodes.csv",
+      "sha256": "091d8c1901a1dfb86b43c4bd4df76134d64afec785a553555591f283d9cdc462",
+      "bytes": 18387,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module11/README.md",
+      "sha256": "8e3966248d883d5d24461e8556567d51b5ff0f56f5d3671de897d6dddea15db0",
+      "bytes": 1873,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module11/nodes.csv",
+      "sha256": "d558043dbe5361008b9357446d2f9fae35ae361d63d3404e27e0d7cc044e0bda",
+      "bytes": 7081,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module11/small_nodes.csv",
+      "sha256": "4ea4b924d804098aa167d85d54cf3f672ebc77e1cd9ae031466f3fdca5ac02d8",
+      "bytes": 272,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module11/small_synapses.csv",
+      "sha256": "77e397f2ed1a8138c91b8bf795fd7341db1190dfd7364b68b226d7d126c15f89",
+      "bytes": 2024,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module11/synapses.csv",
+      "sha256": "7bccd31be7e9f35b66d0b5bebb361fdafa376ba414cb8a801052f99d1c41b6d9",
+      "bytes": 168666,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module12/README.md",
+      "sha256": "f178d07efd5fbbb00ef6223830ba526de70a1b18714c2b7c369e7a0af0b7197e",
+      "bytes": 1757,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module12/profile_join.py",
+      "sha256": "f76827fd25cb0c4bc1d40782dfd8cf55f84537b3006e457356cea704b0d0d373",
+      "bytes": 4190,
+      "source": "hand-written"
+    },
+    {
+      "path": "assets/kits/module13/README.md",
+      "sha256": "f40ae35b371cebd27926c8f627fcf3b5699baf7e1490b33bb369c037ba903317",
+      "bytes": 1921,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module13/fragments.csv",
+      "sha256": "e51019bc16658d3aa9b76e3efb16993e8c1309d5e66fff143bdb7e7611ff5a67",
+      "bytes": 342041,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module13/heldout_domain.csv",
+      "sha256": "332e79303f755fe24150a77b419a05fbca34d22a2f739c7ba7523530ef4b58ce",
+      "bytes": 78942,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module14/README.md",
+      "sha256": "3a6c62074a150154be5d45a2e120796a3f3b7100433b6b92a651e863962876c5",
+      "bytes": 1630,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module14/failure_cases.csv",
+      "sha256": "1758587bf8fa8d7786f0c53d671938e98e6f18f82b19f900e8129a59bcd4be0d",
+      "bytes": 3200,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module14/failure_cases_key.csv",
+      "sha256": "62b7ae02e2cd4a5a7517934fd709222edac9e4978f12987a1c83819ef9458355",
+      "bytes": 527,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module14/model_comparison.csv",
+      "sha256": "d848d8d8268bbb646c64b5284944686ce7f286fa6770c2ff1284e1f3c9fd3bc9",
+      "bytes": 262,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/README.md",
+      "sha256": "922842c03af00365eab4b43ee41e7b164285af45bef8792dc9c25ca529b69f23",
+      "bytes": 2144,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/celltype_connections.csv",
+      "sha256": "08340816b0faf20e9d010ae76f934ca51af7f78c2021541a4dc4419bca7a265f",
+      "bytes": 7301,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/celltype_synapses.csv",
+      "sha256": "998788ebc449d9db81fa3a6c2ce394113cabc92ec1957b8e97b298ea9464815b",
+      "bytes": 8293,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/input_synapses_by_layer.csv",
+      "sha256": "7f280ebd5ab558c1799944937ab70399f160813a5dd78fa237e4f38df41c859b",
+      "bytes": 2303,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/morphometry.py",
+      "sha256": "aa92e07884cf589a7d4d3240e09ff2c2493ff2b53e99494aed908d886a052b7e",
+      "bytes": 7121,
+      "source": "hand-written"
+    },
+    {
+      "path": "assets/kits/module16/neurons.csv",
+      "sha256": "1157b41481d7f5536a0f665b11c02dac2b519519597c82418be8ce62b20fa735",
+      "bytes": 148,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/neurons/basket.swc",
+      "sha256": "4c6c007d6629357b086dc43cfffafed6552cd076ce576f0e60bb658e657d6e15",
+      "bytes": 49161,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/neurons/chandelier.swc",
+      "sha256": "7f12f974fce17bbdf1b92086c2ceb35b160bf2cb96fdae2d43732260b895c8a7",
+      "bytes": 23256,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module16/neurons/excitatory.swc",
+      "sha256": "01100f2e816f96edacb185c2d12cdd46a2cbb2c834ff9f11ebc13c8458075578",
+      "bytes": 27758,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module18/README.md",
+      "sha256": "812ff044e1a8a5d26d631147c6c3d94aa1b760cf6b544c45e301f8c669e3bf07",
+      "bytes": 1919,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module18/cell_types.csv",
+      "sha256": "71c31650c5ec94336319fb55475cfb699e2c75145e7ea386db5bb6e5c19d70cc",
+      "bytes": 5572,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module18/noisy_synapses.csv",
+      "sha256": "8ff3dc6e63ef8303986092f94fd9dc05468ea0fc91c799be440bbbbd7e28a3ac",
+      "bytes": 831380,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module18/segments.csv",
+      "sha256": "774670d8aaef9276874131e5686a30283e3ccdab7fcafa631357f9fc5471b973",
+      "bytes": 37445,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module19/README.md",
+      "sha256": "5c2d08deb4aca34370cd2cfae3b934fd67b6ffd555cc00c70fd9e362a8eac722",
+      "bytes": 1103,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module19/mock-preprint.md",
+      "sha256": "916a0f0fa0124cf03435727fd81c7373ccaf42d26310e18833f4b8ae69f5054e",
+      "bytes": 2563,
+      "source": "scripts/generate_kit_materials.rb"
+    },
+    {
+      "path": "assets/kits/module19/review-form.md",
+      "sha256": "179dbc793e3674a65432f710c25258f71843f2d9dc72b997b47bb399d929dc26",
+      "bytes": 1811,
+      "source": "scripts/generate_kit_materials.rb"
+    }
+  ]
+}

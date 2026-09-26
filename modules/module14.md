@@ -161,20 +161,20 @@ You are choosing between an incumbent model A and a candidate model B for a prod
 
 ## Pre-class preparation
 - Read [metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}) for VI and ERL, and [artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) for what the model must survive.
-- Bring or download one EM subvolume with visible artifacts.
+- Bring or download one EM subvolume with visible artifacts ([Dataset Access]({{ '/datasets/access/' | relative_url }}) lists public sources).
 - Be ready to state which downstream product your segmentation would feed.
 
 ## 60-minute tutorial run-of-show
 1. **00:00-08:00** task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
 2. **08:00-20:00** choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output.
-3. **20:00-34:00** evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
-4. **34:00-46:00** error taxonomy and triage discussion. Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
+3. **20:00-34:00** evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }})), then solve for the break-even merge-to-split ratio.
+4. **34:00-46:00** error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed.
 5. **46:00-56:00** model card drafting, including at least one unsupported use and the region breakdown of the metrics.
 6. **56:00-60:00** competency check: each learner states their release gate as a sentence that could fail.
 
 ## Studio activity
 {: #studio-activity}
-**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
+**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given each model's evaluation against a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region and against a second, smaller ground-truth patch from a region containing a partial fold and two lost sections, plus a log of failure cases (the [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }}), synthetic). Your team maintains the production segmentation and must recommend one model.
 
 **Tasks**
 1. Compute or tabulate VI with its split and merge components, ERL, and error counts for both models, reported separately for the clean and the artifact-heavy region.
@@ -253,6 +253,7 @@ Training data is expensive (manual annotation). Augmentation expands the effecti
 - [Technical Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 - [Technical Unit 09: Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+- [Module 14 kit]({{ '/assets/kits/module14/README.md' | relative_url }}) — synthetic model metrics by region and a failure-case log
 
 ## References
 - Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.

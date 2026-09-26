@@ -120,7 +120,7 @@ them, or note where you nearly did:
 |---|---|
 | | 00:00-08:00 scope boundaries and failure examples. Show the unpinned-query failure first, because it is the one that looks like a success. |
 | | 08:00-20:00 prompt template design, including the schema fields each gate depends on. |
-| | 20:00-34:00 run sample outputs and score reliability against a known answer; record agreement counts rather than impressions. |
+| | 20:00-34:00 generate sample outputs live for the worked example's three output classes (a query, a patch description, a citation list) and score reliability against a known answer; record agreement counts rather than impressions. |
 | | 34:00-46:00 define verification and override rules per output class, and estimate the cost of each gate. |
 | | 46:00-56:00 produce governance checklist and risk register, with one class explicitly marked as not yet usable. |
 | 56:00-60:00 competency check | each learner states one output class they would refuse to gate, and why. |

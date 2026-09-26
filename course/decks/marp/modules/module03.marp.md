@@ -72,13 +72,13 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 
 <!--
 Block 1: Notebook anatomy (00:00-12:00)
-  Instructor script: "Open the sample notebook I have shared. Before we write any code, let's understand the structure." Walk through the five sections of a well-organized notebook:
+  Instructor script: "Open a new notebook with me. Before we write any code, let's lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
   Header: title, author, date, dataset version, materialization version.
   Setup: imports and environment configuration.
   Data loading: queries and schema validation.
   Analysis: computation cells with markdown explanations.
   Export: saving outputs with metadata.
-  Show a bad notebook (out-of-order cells, no markdown, hidden state) and a good notebook side by side. Ask: "Which one would you trust for a paper?"
+  Then make a bad notebook from a copy of the good one while the class watches: run cells out of order, delete the markdown, and define a variable in a cell you then delete. Put the two side by side and ask: "Which one would you trust for a paper?"
 
 Block 2: Environment setup and library tour (12:00-28:00)
   Instructor script: "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:

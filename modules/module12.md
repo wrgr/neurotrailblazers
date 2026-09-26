@@ -188,7 +188,7 @@ Use these as starting positions and justify any departure.
 2. **08:00-20:00 | Access-pattern to index mapping exercise**
    Learners size a 1 mm³ volume by hand, then compute chunk counts at 64³, 128³, and 256³ and the byte cost of one 512 x 512 plane view at each. Instructor challenge: "Which is right, and what did you assume about how people read this volume?"
 3. **20:00-34:00 | Query profiling and bottleneck diagnosis**
-   Run a supplied query on a 0.1% sample, record wall time, extrapolate, then run the pre-joined version and write down the ratio.
+   Run `profile_join.py` from the [Module 12 kit]({{ '/assets/kits/module12/README.md' | relative_url }}) on a 0.1% sample: it records the wall time, extrapolates, then runs the pre-joined version. Write down the ratio.
 4. **34:00-46:00 | Provenance logging implementation**
    Each learner adds a provenance block — dataset, version, query hash, thresholds, commit, date — to one of their own outputs and shows it to a neighbor.
 5. **46:00-56:00 | Team review of reproducibility gaps**
@@ -282,6 +282,7 @@ To ground the abstract concepts, here are the data scales learners will encounte
 - Workflow context: [Connectomics Workflow]({{ '/datasets/workflow/' | relative_url }})
 - Dataset context: [MouseConnects]({{ '/datasets/mouseconnects/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+- [Module 12 kit]({{ '/assets/kits/module12/README.md' | relative_url }}) — `profile_join.py`, the query to profile on synthetic tables
 
 ## References
 - Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.

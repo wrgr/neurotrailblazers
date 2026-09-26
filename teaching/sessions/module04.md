@@ -57,7 +57,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You are given a set of 8 EM patches from a mouse cortex volume. The patches span different layers (L1 through L6) but are presented without layer labels.
+**Scenario:** You are given a set of 8 EM patches from a mouse cortex volume, taken by the instructor from the public MICrONS volume. The patches span different layers (L1 through L6) but are presented without layer labels.
 
 1. For each patch, determine the likely cortical layer using soma density, neuropil texture, and cell-type signatures.
 2. Identify the dominant cell type and compartment type in each patch.

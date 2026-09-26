@@ -39,6 +39,7 @@ pathways:
     <a class="resource-link" href="{{ site.deck_source_base }}/modules/module01.marp.md">Slide source (Markdown)</a>
     <a class="resource-link" href="{{ '/assets/worksheets/module01/module01-activity.md' | relative_url }}">Learner worksheet</a>
     <a class="resource-link" href="{{ '/modules/module01/' | relative_url }}">Full module page</a>
+    <a class="resource-link" href="{{ '/teaching/answers/module01/' | relative_url }}">Model responses</a>
   </div>
 </div>
 

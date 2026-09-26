@@ -37,7 +37,7 @@ Learners should arrive having covered:
 Pre-class preparation set for learners:
 
 - Read [neuron type identification](/content-library/cell-types/neuron-type-identification/) so you know what the labels mean before you model them.
-- Bring a small labeled table of your own, or use the supplied fragment set.
+- Bring a small labeled table of your own, or use the synthetic fragment set in the [Module 13 kit](/assets/kits/module13/README.md).
 - Be ready to state, in one sentence, the decision your model would support.
 
 ## Materials

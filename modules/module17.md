@@ -151,16 +151,16 @@ Connectomics results are often complex and high-dimensional. Weak writing can ov
 ## 60-minute tutorial run-of-show
 
 ### Materials needed
-- One mock connectomics figure set (3 panels) with underlying data tables.
-- Claim-evidence matrix template (printed or digital).
-- Methods reproducibility checklist (one per student).
-- Two mock reviewer comments (one valid methodological concern, one partially mistaken interpretation critique).
+- One mock connectomics figure set (3 panels) with underlying data tables: each learner's Module 16 figure package, or three figures the instructor makes from the [Module 16 kit]({{ '/assets/kits/module16/README.md' | relative_url }}) (synthetic).
+- Claim-evidence matrix template (printed or digital): the seven columns in studio task 2.
+- Methods reproducibility checklist (one per student): Concept 5 on this page.
+- Two mock reviewer comments (one valid methodological concern, one partially mistaken interpretation critique), given in full in the 38:00-50:00 block.
 - Timer visible to all students.
 
 ### Timing and instructor script
 
 **00:00-08:00 | Good writing vs bad writing in connectomics**
-Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, MICrONS v795)"). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
+Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, MICrONS v795)"; illustrative figures, not measured from a MICrONS release). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
 
 **08:00-18:00 | Claim-evidence matrix construction**
 Students receive the mock figure set and build a claim-evidence matrix. Instructor models the first row, then students complete three more rows independently. Instructor circulates, pushing students to be specific: "Which panel? What is the effect size? What is the caveat?"
@@ -169,7 +169,7 @@ Students receive the mock figure set and build a claim-evidence matrix. Instruct
 Students draft a 200-word results paragraph from their matrix. Instructor emphasizes: lead with the finding, follow with the evidence pointer, close with the caveat. Students read their paragraphs aloud to a partner, who checks each claim against the matrix.
 
 **28:00-38:00 | Methods and provenance exercise**
-Instructor presents a deliberately incomplete methods section (missing dataset version, no proofreading state, no code commit hash). Students use the reproducibility checklist to identify gaps and rewrite the section. Key script line: "If I handed you this methods section and asked you to reproduce the analysis, what would you be unable to do?"
+Instructor presents a deliberately incomplete methods section (missing dataset version, no proofreading state, no code commit hash), for example: "Synapses were obtained from the CAVE synapse table and filtered by cleft score. Motifs were counted in Python and compared with a random null model." Students use the reproducibility checklist to identify gaps and rewrite the section. Key script line: "If I handed you this methods section and asked you to reproduce the analysis, what would you be unable to do?"
 
 **38:00-50:00 | Reviewer response practice**
 Students receive two mock reviewer comments. Comment 1: "The authors do not report the false merge rate for their segmentation. How can we trust the synapse counts?" (valid). Comment 2: "The sample size of 847 connections is too small for any statistical conclusion" (partially mistaken --- depends on effect size and test). Students draft structured responses: quote, response, manuscript reference. Instructor reviews two examples live.
@@ -188,10 +188,10 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
 ## Studio activity: claim-to-paragraph writing sprint
 {: #studio-activity}
 
-**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs.
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. These are illustrative figures, not measured from a MICrONS release.
 
 **Tasks**
-1. Draft three result claims from the provided scenario, each with different confidence levels (strong, moderate, exploratory).
+1. Draft three result claims from the scenario above, each with different confidence levels (strong, moderate, exploratory).
 2. Build a claim-evidence matrix (claim, figure panel, metric, statistical test, effect size, dataset version, caveat).
 3. Write a 300-400 word results subsection with calibrated uncertainty language.
 4. Write a methods paragraph with full dataset provenance and reproducibility details.

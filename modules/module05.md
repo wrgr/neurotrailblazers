@@ -132,30 +132,30 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 Before the session, students should:
 
 - Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
-- Preview the three sample image patches posted to the course portal: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
+- Preview the artifact gallery on the [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) page and find three examples: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
 
 ### Materials needed
 
-- Projected EM image gallery (8-10 patches at varying quality levels)
-- Printed or digital QA decision worksheet (one per student)
+- Projected EM image gallery (8-10 patches at varying quality levels) from the instructor's patch set; see *Building the patch set* under the studio activity
+- Printed or digital QA decision worksheet (one per student): the [learner worksheet]({{ '/assets/worksheets/module05/module05-activity.md' | relative_url }})
 - Timer visible to the class
-- Artifact reference card (single page, double-sided)
+- Artifact reference card (single page, double-sided): print the severity classification section of the [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) page
 
 ### Minute-by-minute schedule
 
 **1. 00:00-08:00 — EM basics refresher**
 - *Instructor cue*: "We are going to start with a fast review. I will show four images — tell me which modality produced each one and why you think so."
-- Show four images (ssTEM, SBEM, FIB-SEM, and one intentionally ambiguous). Cold-call students for modality identification and reasoning.
+- Show four images: three from public volumes acquired by different methods (each dataset's release page names the instrument) and one intentionally ambiguous. Cold-call students for modality identification and reasoning.
 - Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
 
 **2. 08:00-20:00 — Artifact recognition walkthrough**
 - *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
-- Walk through knife chatter, charging, folds, missing sections, and staining gradients with annotated example images.
-- For each artifact, show the segmentation output on the same region so students can see the predicted error type realized in practice.
+- Walk through knife chatter, charging, folds, missing sections, and staining gradients with the annotated examples on the [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) page.
+- Where your patch set has an example of the artifact, turn on the public viewer's segmentation layer over it so students can see the predicted error type realized in practice.
 - *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.
 
 **3. 20:00-34:00 — Learner triage round**
-- *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
+- *Instructor cue*: "You have 14 minutes. Work in pairs. Each pair receives six image patches from the patch set. For each patch, fill in the QA worksheet: artifact type, severity (1-3), predicted segmentation impact, and your pass/flag/rework decision."
 - Circulate and listen for common misconceptions. Note which artifact types cause the most disagreement.
 - *Formative check*: At 30:00, ask one pair to share their most difficult call and explain their reasoning.
 
@@ -183,7 +183,7 @@ Before the session, students should:
 
 ### Post-class assignment
 
-Select three EM image patches from the course dataset that were not covered in class. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
+Select three locations in a public volume ([MICrONS](https://www.microns-explorer.org/) or [H01](https://h01-release.storage.googleapis.com/explore.html)) that were not covered in class, and record their coordinates. For each patch, write a complete QA log entry (artifact type, severity, predicted segmentation impact, pass/flag/rework decision, rationale). Submit as a single document. At least one patch should involve an artifact type the student finds personally difficult to assess — include a brief reflection on what makes it challenging.
 
 ## Studio activity
 {: #studio-activity}
@@ -191,7 +191,7 @@ Select three EM image patches from the course dataset that were not covered in c
 **Scenario:** Your team has received pilot images from a new ssTEM acquisition of mouse visual cortex. The imaging facility reports that initial sections looked good, but they encountered intermittent knife chatter starting around section 200 and a possible staining gradient in the lateral third of the field of view. Before the facility commits to imaging the remaining 800 sections, your team must evaluate the pilot data and deliver a go/no-go recommendation with conditions.
 
 **Task sequence:**
-1. **Survey (10 min):** Open the six provided image patches (three from the clean region, three from the reported problem areas). For each patch, independently record: modality confirmation, visible artifacts, and an initial severity impression.
+1. **Survey (10 min):** Open the six image patches from the instructor's patch set (three from a clean region, three from regions showing the reported problems). For each patch, independently record: modality confirmation, visible artifacts, and an initial severity impression.
 2. **Artifact classification (15 min):** Using the artifact reference card, formally classify each artifact by type and assign a severity score (1 = minor, cosmetic; 2 = moderate, segmentation-affecting; 3 = severe, reconstruction-blocking). Map each artifact to its expected segmentation consequence (merge, split, or topology break).
 3. **Spatial pattern analysis (10 min):** Arrange the patches by their spatial position in the volume. Determine whether the artifacts are spatially correlated (e.g., staining gradient affecting one side consistently) or random. Spatially correlated artifacts require different mitigation than random ones.
 4. **Cost-benefit analysis (10 min):** For each artifact, estimate the downstream cost if the facility proceeds without fixing it. Consider: how many proofreading hours per affected section? How many sections are likely affected? Compare this to the cost of pausing acquisition for knife replacement or re-staining.
@@ -203,6 +203,17 @@ Select three EM image patches from the course dataset that were not covered in c
 - One-page recommendation memo with summary table
 
 **Time estimate:** Approximately 60 minutes for the full activity. Steps 1-2 can be done individually; Steps 3-5 should be done as a team of 3-4 students.
+
+### Building the patch set (instructor, before class)
+
+The site does not publish EM image patches; build the set from a public volume so
+that every patch has a recorded location.
+
+- Use [MICrONS Explorer](https://www.microns-explorer.org/) or the [H01 release](https://h01-release.storage.googleapis.com/explore.html). Choose locations by a rule you state in advance, as in the [Technical Unit 03 lab]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}); browsing for striking images gives a set with no clean baseline.
+- Screenshot each location at one fixed zoom and keep a key of coordinates and your own severity call.
+- You need 8-10 patches for the gallery, six per pair for the triage round and studio (three clean, three showing chatter, a fold, charging or a contrast gradient), and one unseen patch for the competency check.
+- Tell learners the six studio patches stand in for the pilot images in the scenario; they come from a finished public volume, not a new acquisition.
+- If the volume you sample has no clear example of an artifact type, use that type's annotated example on the [Artifact taxonomy]({{ '/content-library/imaging/artifact-taxonomy/' | relative_url }}) page and say so.
 
 ## Assessment rubric
 

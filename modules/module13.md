@@ -164,7 +164,7 @@ You have 4,000 labeled neurite fragments in five coarse classes and train a grad
 
 ## Pre-class preparation
 - Read [neuron type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) so you know what the labels mean before you model them.
-- Bring a small labeled table of your own, or use the supplied fragment set.
+- Bring a small labeled table of your own, or use the synthetic fragment set in the [Module 13 kit]({{ '/assets/kits/module13/README.md' | relative_url }}).
 - Be ready to state, in one sentence, the decision your model would support.
 
 ## 60-minute tutorial run-of-show
@@ -260,6 +260,7 @@ Machine learning is embedded at every stage of the reconstruction pipeline:
 - Downstream morphology/classification: [Module 14]({{ '/modules/module14/' | relative_url }})
 - Technical track context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+- [Module 13 kit]({{ '/assets/kits/module13/README.md' | relative_url }}) — 4,000 synthetic labeled fragments and a held-out domain
 
 ## References
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.

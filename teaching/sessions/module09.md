@@ -57,12 +57,12 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
+**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex (synthetic stand-ins, in the [Module 09 kit](/assets/kits/module09/README.md)). Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 
 1. Compute morphological descriptors for all 10 neurons (cable length, branch points, spine density, Strahler number, arbor volume).
 2. Create a summary table and scatter plot (e.g., spine density vs cable length).
 3. Classify each neuron as pyramidal or interneuron based on morphological criteria.
-4. Compare your morphological classification to the synapse-based classification (provided). Do they agree?
+4. Compare your morphological classification to the synapse-based classification (`synapse_labels.csv` in the kit). Do they agree?
 5. For any mismatches, investigate: was the morphological measurement affected by reconstruction quality?
 
 **What learners hand in**

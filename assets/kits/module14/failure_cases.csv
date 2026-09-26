@@ -1,0 +1,31 @@
+case_id,model,region,error_type,sections,observation
+FC01,B,artifact,split,1416-1418,two processes run in contact for 3 um; experts disagree on where one ends
+FC02,B,artifact,split,1911-1914,object ends at a lost section and resumes as a new ID two sections later
+FC03,B,artifact,merge,1765-1767,membrane is visible but its continuity across a tangential cut cannot be settled
+FC04,A,clean,merge,2202-2204,membrane contrast fades across a pale band; object boundary drawn through cytoplasm
+FC05,A,artifact,split,1103-1106,object ends at a lost section and resumes as a new ID two sections later
+FC06,A,artifact,split,2380-2383,axon narrows below 0.1 um for several sections and the model loses it
+FC07,B,artifact,merge,1904-1906,a dark crease crosses the neurite; the merge follows the crease
+FC08,A,clean,split,1727-1729,axon narrows below 0.1 um for several sections and the model loses it
+FC09,A,clean,split,1130-1133,thin spine neck is cut from its head; contrast is normal
+FC10,A,artifact,merge,2250-2254,a dark crease crosses the neurite; the merge follows the crease
+FC11,A,clean,split,2280-2283,membrane contrast fades across a pale band; object boundary drawn through cytoplasm
+FC12,A,clean,merge,1507-1511,two processes run in contact for 3 um; experts disagree on where one ends
+FC13,B,clean,split,2066-2071,two axons touch where both membranes are faint; no fold or gap in the sections
+FC14,B,artifact,split,2419-2421,error sits at a missing section; the neurite is continuous either side of the gap
+FC15,A,clean,split,1504-1506,two axons touch where both membranes are faint; no fold or gap in the sections
+FC16,B,artifact,split,2111-2116,object ends at a lost section and resumes as a new ID two sections later
+FC17,A,artifact,split,2377-2381,membrane is visible but its continuity across a tangential cut cannot be settled
+FC18,A,clean,split,1796-1799,axon narrows below 0.1 um for several sections and the model loses it
+FC19,A,clean,merge,2412-2415,two axons touch where both membranes are faint; no fold or gap in the sections
+FC20,A,artifact,split,1065-1069,two axons touch where both membranes are faint; no fold or gap in the sections
+FC21,B,artifact,merge,2383-2387,fold overlaps two processes in one section; they are joined only there
+FC22,B,artifact,merge,1882-1887,fold overlaps two processes in one section; they are joined only there
+FC23,B,clean,split,1855-1858,membrane is visible but its continuity across a tangential cut cannot be settled
+FC24,A,artifact,merge,2204-2206,fold overlaps two processes in one section; they are joined only there
+FC25,B,clean,merge,2207-2211,two processes run in contact for 3 um; experts disagree on where one ends
+FC26,B,clean,merge,1662-1666,membrane contrast fades across a pale band; object boundary drawn through cytoplasm
+FC27,A,artifact,split,1960-1964,thin spine neck is cut from its head; contrast is normal
+FC28,B,clean,split,1891-1896,two processes run in contact for 3 um; experts disagree on where one ends
+FC29,B,artifact,split,1575-1578,error sits at a missing section; the neurite is continuous either side of the gap
+FC30,A,artifact,merge,1856-1858,fold overlaps two processes in one section; they are joined only there

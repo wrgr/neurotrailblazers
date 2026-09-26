@@ -740,6 +740,16 @@ module_paths.each do |path|
       end.join("\n")
     end
 
+  # Model responses exist for only some modules (teaching/answers/moduleNN.md).
+  # Link them from the kit when present, and only then, so no kit points at a
+  # page that does not exist.
+  answers_link =
+    if File.exist?(File.join(ROOT, 'teaching', 'answers', "module#{num}.md"))
+      "\n    <a class=\"resource-link\" href=\"{{ '/teaching/answers/module#{num}/' | relative_url }}\">Model responses</a>"
+    else
+      ''
+    end
+
   session_path = File.join(SESSION_DIR, "module#{num}.md")
   File.write(session_path, <<~MD)
     ---
@@ -782,7 +792,7 @@ module_paths.each do |path|
         <a class="resource-link" href="{{ '/course/decks/marp/out/modules/module#{num}.html' | relative_url }}">Open deck (HTML)</a>
         <a class="resource-link" href="{{ site.deck_source_base }}/modules/module#{num}.marp.md">Slide source (Markdown)</a>
         <a class="resource-link" href="{{ '/assets/worksheets/module#{num}/module#{num}-activity.md' | relative_url }}">Learner worksheet</a>
-        <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>
+        <a class="resource-link" href="{{ '/modules/module#{num}/' | relative_url }}">Full module page</a>#{answers_link}
       </div>
     </div>
 

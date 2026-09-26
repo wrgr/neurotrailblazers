@@ -121,7 +121,7 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 
 **Step 4: recompute what can be salvaged.** A per-length ratio like spine density is robust to truncation only if computed on compartments actually contained in the volume. Restricted to the three fully contained basal dendrites, spine density is 1.4 spines/µm — squarely pyramidal. Total cable length and arbor volume cannot be reported as properties of the neuron at 40% containment; report "within-volume cable: 1,850 µm (lower bound)" instead.
 
-**Step 5: the corrected call and its evidence.** Putative pyramidal cell: spine density 1.4/µm on contained compartments, a truncated thick trunk oriented toward the pia, and asymmetric output synapses onto spines in the provided synapse table. The synapse-based label agrees. The original mismatch was manufactured by averaging spines over the whole skeleton, including the spine-poor truncated trunk and seven spurious boundary branches.
+**Step 5: the corrected call and its evidence.** Putative pyramidal cell: spine density 1.4/µm on contained compartments, a truncated thick trunk oriented toward the pia, and asymmetric output synapses onto spines in the synapse table. The synapse-based label agrees. The original mismatch was manufactured by averaging spines over the whole skeleton, including the spine-poor truncated trunk and seven spurious boundary branches.
 
 **What gets reported.** Cell 7: putative pyramidal; containment ~40%; descriptors partitioned into robust (spine density on contained dendrites, bifurcation angles) and unreliable (total cable, branch count, Sholl profile, arbor volume). The limitation sentence names the truncation specifically — not a generic "reconstruction may contain errors."
 
@@ -136,7 +136,7 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 
 ### Pre-class preparation (10 min async)
 - Review the data formats content library entry (skeletons section)
-- Install/check NeuroM or equivalent morphology analysis package
+- Install/check NeuroM or equivalent morphology analysis package, or use `morphometry.py` in the [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }}), which needs no install
 
 ### Minute-by-minute plan
 1. **00:00-10:00 | Morphology overview**
@@ -145,12 +145,12 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
    - "Today you'll learn to quantify these shapes from EM data."
 
 2. **10:00-24:00 | Skeleton extraction demo**
-   - Live demo: take a segmented neuron, run skeletonization, visualize result in Neuroglancer.
+   - Live demo: take a segmented neuron in a public volume ([MICrONS Explorer](https://www.microns-explorer.org/)), run skeletonization, visualize result in Neuroglancer. Without a skeletonization install, open `cell01.swc` from the kit instead.
    - Walk through SWC format: "Each line is a node. Parent ID tells you the tree structure."
-   - Common pitfall: show a skeleton with spurious branches from noisy segmentation. Demonstrate pruning.
+   - Common pitfall: show a skeleton with spurious branches from noisy segmentation (`cell07.swc` in the kit has several). Demonstrate pruning.
 
 3. **24:00-38:00 | Descriptor calculation**
-   - Hands-on: learners compute 5 descriptors for one neuron using NeuroM or provided scripts.
+   - Hands-on: learners compute 5 descriptors for one neuron using NeuroM or the kit's `morphometry.py`.
    - Compare results across the group: did everyone get the same numbers? Discuss sources of variation.
    - Introduce Sholl analysis with live visualization.
 
@@ -169,13 +169,13 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 ## Studio activity: comparative morphometry (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex. Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
+**Scenario:** You have skeletons for 10 neurons in L2/3 of mouse visual cortex (synthetic stand-ins, in the [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }})). Your task is to classify them as pyramidal vs interneuron based on morphology alone, then validate against synapse-based classification (excitatory vs inhibitory output synapses).
 
 **Task sequence:**
 1. Compute morphological descriptors for all 10 neurons (cable length, branch points, spine density, Strahler number, arbor volume).
 2. Create a summary table and scatter plot (e.g., spine density vs cable length).
 3. Classify each neuron as pyramidal or interneuron based on morphological criteria.
-4. Compare your morphological classification to the synapse-based classification (provided). Do they agree?
+4. Compare your morphological classification to the synapse-based classification (`synapse_labels.csv` in the kit). Do they agree?
 5. For any mismatches, investigate: was the morphological measurement affected by reconstruction quality?
 
 **Expected outputs:**
@@ -225,6 +225,7 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 ## Teaching resources
 - [Technical Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
 - [Technical Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }})
+- [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }}) — ten synthetic skeletons, spine table, synapse-based calls and `morphometry.py`
 
 ## References
 - Costa M et al. (2016) "NBLAST: rapid, sensitive comparison of neuronal structure and construction of neuron family databases." *Neuron* 91(2):293-311.

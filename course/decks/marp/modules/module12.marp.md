@@ -81,7 +81,7 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
   Learners size a 1 mm³ volume by hand, then compute chunk counts at 64³, 128³, and 256³ and the byte cost of one 512 x 512 plane view at each. Instructor challenge: "Which is right, and what did you assume about how people read this volume?"
 
 20:00-34:00 | Query profiling and bottleneck diagnosis
-  Run a supplied query on a 0.1% sample, record wall time, extrapolate, then run the pre-joined version and write down the ratio.
+  Run `profile_join.py` from the [Module 12 kit](/assets/kits/module12/README.md) on a 0.1% sample: it records the wall time, extrapolates, then runs the pre-joined version. Write down the ratio.
 
 34:00-46:00 | Provenance logging implementation
   Each learner adds a provenance block — dataset, version, query hash, thresholds, commit, date — to one of their own outputs and shows it to a neighbor.

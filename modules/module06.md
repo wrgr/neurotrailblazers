@@ -117,28 +117,29 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 
 ### Pre-class preparation (10 min async)
 - Read the error taxonomy content library entry
-- Open the practice dataset in Neuroglancer and browse for 5 minutes
+- Open a public segmented volume in Neuroglancer ([MICrONS Explorer](https://www.microns-explorer.org/)) and browse the segmentation for 5 minutes
 
 ### Minute-by-minute plan
 1. **00:00-08:00 | Segmentation goals**
    - "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
-   - Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
+   - Show a well-segmented region side-by-side with raw EM (the H01 pair in Step 6 of [H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) works). Point out: each color = one neuron.
    - Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
 
 2. **08:00-22:00 | Error taxonomy with real examples**
+   - Source the merge and split from Scenarios 1 and 2 of the [proofreading worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}), and the boundary error from a `synapse near boundary` row in the [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}).
    - Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
    - Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
    - Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
    - For each: "What would this error do to your analysis?"
 
 3. **22:00-36:00 | Guided correction round**
-   - Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
+   - Learners work in pairs on 3 errors chosen from the [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}) (1 merge, 1 split, 1 ambiguous).
    - Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
 
 4. **36:00-48:00 | Quality metric interpretation**
    - Introduce: "How do we know if our corrections actually helped?"
    - Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
-   - Compute metrics before and after the correction round. Did they improve?
+   - Compute metrics before and after the correction round with the kit's `qc_metrics.py`. Did they improve?
 
 5. **48:00-60:00 | Debrief and competency check**
    - Each learner presents one correction with evidence chain.
@@ -148,13 +149,13 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 ## Studio activity: correction triage simulation (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors. You have time to fix 10.
+**Scenario:** Your team has a freshly segmented 50x50x50 um subvolume containing approximately 200 neuron fragments. Automated error detection has flagged 25 candidate errors, listed in the [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}) (synthetic). You have time to fix 10.
 
 **Task sequence:**
 1. Review all 25 flagged candidates and classify each by error type (merge/split/boundary/uncertain).
 2. Rank by estimated impact: which corrections would most change the connectivity graph?
 3. Fix the top 10 in priority order, documenting each correction.
-4. Compute before/after metrics for the subvolume.
+4. Compute before/after metrics for the subvolume (the kit's `qc_metrics.py` applies your fixes).
 5. Write a 3-sentence "release note" summarizing what was fixed and what remains.
 
 **Expected outputs:**
@@ -204,6 +205,7 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 ## Teaching resources
 - [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+- [Module 06 kit]({{ '/assets/kits/module06/README.md' | relative_url }}) — 25 synthetic flagged candidates, a ground-truth file and the metric script
 
 ## References
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.

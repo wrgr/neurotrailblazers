@@ -139,10 +139,10 @@ Python-based multi-dimensional image viewer for volume data. Supports overlaying
 
 ### Materials needed
 - Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
-- Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.
-- Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.
-- Colorblind simulation tool (browser-based).
-- Printed or digital critique rubric (one per student).
+- Shared dataset: the [Module 16 kit]({{ '/assets/kits/module16/README.md' | relative_url }}) (synthetic). Use a 20 x 30 block of its cell-type matrix and the `excitatory.swc` skeleton for the Sholl plot.
+- Software: Matplotlib or Plotly in a notebook each learner starts; [MICrONS Explorer](https://www.microns-explorer.org/) open for the 3D context view.
+- Colorblind simulation tool (browser-based), such as [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/).
+- Printed or digital critique rubric (one per student): the four questions in the 47:00-55:00 block below.
 
 ### Timing and instructor script
 
@@ -157,7 +157,7 @@ Instructor presents three scientific claims from a mock connectomics study:
 Students work in pairs to select the best plot type for each claim and justify their choice. Instructor circulates, challenging choices: "Why not a node-link diagram for claim 1? What would you lose with a heatmap for claim 3?"
 
 **20:00-35:00 | Figure draft build**
-Students open the provided notebook and generate: (a) an adjacency heatmap for the cell-type connectivity matrix, (b) a Sholl plot for the reconstructed neuron. Instructor models adding axis labels, a perceptually uniform colormap, and a scale bar. Students replicate and customize.
+Students open a notebook, load the kit files, and generate: (a) an adjacency heatmap for the cell-type connectivity matrix, (b) a Sholl plot for the kit's excitatory neuron. Instructor models adding axis labels, a perceptually uniform colormap, and a scale bar. Students replicate and customize.
 
 **35:00-47:00 | Uncertainty and quality overlays**
 Instructor demonstrates adding confidence intervals to the Sholl plot and a "data quality" overlay to the heatmap (hatching for cell-type pairs with fewer than 5 observed connections). Students add these to their own figures. Key script line: "If you cannot see the uncertainty, you cannot evaluate the claim."
@@ -176,7 +176,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 ## Studio activity: connectomics figure package
 {: #studio-activity}
 
-**Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers.
+**Scenario:** You are preparing a three-figure package for a short connectomics paper reporting cell-type-specific connectivity patterns in a cortical volume. Your dataset includes a 50x50 cell-type adjacency matrix, morphological reconstructions for three example neurons, and synapse count distributions across layers (all synthetic, in the [Module 16 kit]({{ '/assets/kits/module16/README.md' | relative_url }})).
 
 **Figure 1 task:** Create an adjacency heatmap of the cell-type connectivity matrix. Choose an appropriate colormap, add a colorbar with units, order rows and columns by hierarchical clustering, and annotate the diagonal. Include hatching or transparency for cell-type pairs with fewer than 10 observed connections.
 
@@ -204,6 +204,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - [Module 17: Scientific Writing for Connectomics]({{ '/modules/module17/' | relative_url }})
 - [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
+- [Module 16 kit]({{ '/assets/kits/module16/README.md' | relative_url }}) — synthetic cell-type matrices, three example skeletons and layer counts
 
 ## Evidence anchors from connectomics practice
 

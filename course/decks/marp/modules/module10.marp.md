@@ -76,7 +76,7 @@ Pre-class preparation (10 min async)
   Discussion: "What did we gain and lose in each transformation?"
 
 08:00-20:00 | Graph build demo
-  Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
+  Live coding: load the edge list from the [Module 10 kit](/assets/kits/module10/README.md) (or a synapse table you have access to), construct a NetworkX DiGraph, apply threshold, print basic stats.
   Visualize the graph with spring layout. Color nodes by cell type.
   "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
 
@@ -109,7 +109,7 @@ Pre-class preparation (10 min async)
 ---
 
 ## Studio Activity
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column from the MICrONS dataset. Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic stand-in for a MICrONS column, in the [Module 10 kit](/assets/kits/module10/README.md). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 
 ---
 

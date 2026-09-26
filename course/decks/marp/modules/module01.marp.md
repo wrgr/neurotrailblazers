@@ -65,7 +65,7 @@ Write one connectomics study question with measurable structural outputs and one
 
 <!--
 Block 1: Opening hook (00:00-12:00)
-  Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. a fully reconstructed neuron. Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
+  Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. its reconstruction (the raw and segmented H01 pair in Step 6 of [H01, Step by Step](/content-library/case-studies/h01-pipeline/) works). Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
   Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.
 
 Block 2: Connectomics landscape (12:00-28:00)

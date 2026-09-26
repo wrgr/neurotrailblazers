@@ -66,7 +66,7 @@ Learners should arrive having covered:
 
 1. **Setup and data loading (Part A, 20 minutes):** create a new notebook with a header cell: title, your name, date, dataset name, materialization version.
 2. Create a setup cell with all imports and version pinning.
-3. Initialize CAVEclient (or load a provided sample CSV if CAVE access is unavailable).
+3. Initialize CAVEclient, or, if CAVE access is unavailable, load the [offline synapse table](/assets/kits/module03/synapses_sample.csv) (synthetic; its [README](/assets/kits/module03/README.md) lists the columns and the version string to record).
 4. Query or load a synapse table. Validate: print column names, data types, row count, and first 5 rows.
 5. Add a markdown cell explaining what the dataset contains and what version you are using.
 6. **Analysis (Part B, 20 minutes):** choose one descriptive analysis from the following options: a synapse count distribution (histogram of synapse counts per neuron); top connections (bar chart of the 10 most connected cell-type pairs); a degree distribution (in-degree vs. out-degree scatter plot for all neurons in a region); or a spatial distribution (scatter plot of synapse locations colored by cell type).

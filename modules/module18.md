@@ -147,7 +147,7 @@ Most downstream failures in connectome analysis are not model failures first; th
 ## Studio activity: preprocessing release simulation
 {: #studio-activity}
 
-**Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table.
+**Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table. These are illustrative figures, not measured from a MICrONS release.
 
 **Tasks**
 1. **Artifact triage:** classify each issue (low-confidence synapses, small segments, boundary neurons, orphan IDs) by likely biological impact and propose a cleaning policy for each.
@@ -187,14 +187,15 @@ Most downstream failures in connectome analysis are not model failures first; th
 - Slides: [Infrastructure lecture plan]({{ '/technical-training/slides/04-volume-reconstruction-infrastructure/' | relative_url }})
 - Practice dataset workflow: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - Quality framework: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
+- [Module 18 kit]({{ '/assets/kits/module18/README.md' | relative_url }}) — a synthetic noisy export and the QC dashboard template
 
 ## 60-minute tutorial run-of-show
 
 ### Materials
-- One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels).
-- Segment table with size distribution spanning 5 orders of magnitude.
-- Shared preprocessing decision sheet (printed or digital template).
-- QC dashboard template (pre/post metric comparison).
+- One noisy connectomics table (synapse table with low-confidence entries, duplicate IDs, and missing cell-type labels): `noisy_synapses.csv` and `cell_types.csv` in the [Module 18 kit]({{ '/assets/kits/module18/README.md' | relative_url }}), a synthetic stand-in of about 30,000 rows.
+- Segment table with size distribution spanning 5 orders of magnitude: `segments.csv` in the kit.
+- Shared preprocessing decision sheet (printed or digital template), with the studio's columns: issue, policy, threshold, rationale, impact.
+- QC dashboard template (pre/post metric comparison), in the kit README.
 
 ### Timing and instructor script
 
@@ -208,7 +209,7 @@ Live demonstration: load the synapse table, compute the confidence score distrib
 Teams of 3-4 draft cleaning rules for each identified issue. Each team must produce a preprocessing decision table with columns: issue, proposed action, threshold, rationale, estimated impact. Instructor circulates, challenging threshold choices: "Why 50 and not 40? What do you lose at 50 that you keep at 40?"
 
 **32:00-44:00 | QC pass**
-Teams compute (or estimate from the provided distributions) pre/post metrics: total synapse count, total segment count, mean synapses per neuron, fraction of each cell type remaining. Teams make a release/no-release decision based on their quality gates. Instructor asks: "Did cleaning change the relative representation of cell types? If it did, that is a bias you must report."
+Teams compute (or estimate from the distributions in the kit) pre/post metrics: total synapse count, total segment count, mean synapses per neuron, fraction of each cell type remaining. Teams make a release/no-release decision based on their quality gates. Instructor asks: "Did cleaning change the relative representation of cell types? If it did, that is a bias you must report."
 
 **44:00-54:00 | Cross-team review**
 Teams swap preprocessing decision tables and QC reports. Each team audits the other's transform log for: missing rationale, unjustified thresholds, potential biological signal loss, and reproducibility gaps. Teams write two specific improvement suggestions.

@@ -1,0 +1,21 @@
+{
+  "dataset": "synthetic-teaching-only",
+  "version": "synthetic-skeletons-v1",
+  "seed": 9009,
+  "bounds_um": {
+    "x": [
+      0.0,
+      300.0
+    ],
+    "y": [
+      0.0,
+      300.0
+    ],
+    "z": [
+      0.0,
+      220.0
+    ]
+  },
+  "axes": "y increases toward the pia",
+  "limitation": "Procedural trees, not reconstructions of real neurons."
+}

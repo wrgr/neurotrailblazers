@@ -137,20 +137,20 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
    - Show a concrete example: two errors side by side, one visually dramatic but low-impact, one subtle but high-impact. Ask learners which they would fix first and why.
 
 2. **10:00-24:00 | Queue classification exercise**
-   - Present 12 pre-identified errors with brief descriptions. Learners work in pairs to:
+   - Present 12 errors with brief descriptions (rows `E01` to `E12` of the error report in the [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }})). Learners work in pairs to:
      - Classify each by type (merge/split/boundary)
      - Estimate impact (high/medium/low) based on segment size and analysis relevance
      - Rank the top 5 for correction
    - Debrief: compare rankings across pairs. Where do teams disagree? Disagreements often reveal implicit assumptions about what matters.
 
 3. **24:00-38:00 | Correction sprint**
-   - Learners fix their top 5 errors in the practice dataset.
+   - Learners fix their top 5 errors on paper and apply them with the kit's `qc_metrics.py`.
    - Instructor circulates: "Show me why you think this is a merge error." "What evidence did you check before splitting?"
    - Emphasis on verification after each correction.
    - Common pitfall to watch for: learners who split a merge but forget to re-merge the orphaned fragment with the correct parent segment.
 
 4. **38:00-50:00 | Threshold-based release decisions**
-   - Compute metrics before and after the correction sprint.
+   - Compute metrics before and after the correction sprint with `qc_metrics.py`.
    - Introduce release thresholds: "If ERL > 30 um and synapse F1 > 0.80, we release. If not, more proofreading."
    - Group discussion: are we above threshold? If not, what would we fix next?
    - Key teaching moment: the threshold should be set before proofreading begins, not adjusted after seeing the results. Moving the goalposts undermines the purpose of having thresholds.
@@ -169,10 +169,10 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 **Scenario:** You are the QC lead for a 100x100x100 um subvolume that will be used in a paper analyzing reciprocal connectivity between L2/3 pyramidal cells. The segmentation has been through one round of automated error detection. You need to decide: is this subvolume ready for analysis?
 
 **Task sequence:**
-1. Review the automated error report: 45 flagged errors (18 merges, 20 splits, 7 uncertain).
+1. Review the automated error report in the [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }}) (synthetic): 45 flagged errors (18 merges, 20 splits, 7 uncertain).
 2. Triage: classify each by impact on the reciprocal connectivity analysis. Which errors could create false reciprocal connections? Which could hide real ones?
 3. Fix the top 15 errors, documenting each correction with a one-line rationale.
-4. Compute before/after metrics (provided metric computation script).
+4. Compute before/after metrics (metric computation script: `qc_metrics.py` in the [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }})).
 5. Write a 1-page release recommendation memo with: metrics summary, corrections summary, remaining risks, and go/no-go recommendation with explicit reasoning.
 
 **Guidance for triage step:** A merge error between two L2/3 pyramidal cells that are both pre- and post-synaptic to each other could create a spurious reciprocal connection or mask a real one -- this is maximally damaging for the planned analysis. A split error on a glial process has zero impact on the reciprocal connectivity question. Errors on inhibitory interneurons fall in between: they don't directly affect pyramidal-to-pyramidal reciprocal connections but could corrupt the broader circuit context. Learners should articulate this kind of reasoning for each error in their triage table.
@@ -201,7 +201,8 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 
 ## Teaching resources
 - [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) -- Covers segmentation algorithms and proofreading tool mechanics in depth
-- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) -- Interactive metric computation and threshold visualization
+- [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }}) -- Metric definitions and where each one fails
+- [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }}) -- The synthetic error report, ground truth and metric computation script used in the studio activity
 
 ## References
 - Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.

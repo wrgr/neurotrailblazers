@@ -1,0 +1,19 @@
+{
+  "dataset": "synthetic-teaching-only",
+  "version": "synthetic-error-report-v1",
+  "seed": 7007,
+  "report_file": "error_report.csv",
+  "id_column": "error_id",
+  "flag_column": "detector_flag",
+  "ground_truth_file": "ground_truth.csv",
+  "fix_budget": 15,
+  "analysis": {
+    "description": "Directed connections among the 60 L2/3 pyramidal cells in the ROI",
+    "analysis_cells": 60,
+    "true_edges": 400,
+    "true_reciprocal_pairs": 40,
+    "analysis_path_um": 36000,
+    "unflagged_error_sites": 1250
+  },
+  "limitation": "Invented error report and effects. The run-length proxy is not the ERL of Funke et al.; it divides analysis-cell path by error sites and assumes errors are spread evenly."
+}

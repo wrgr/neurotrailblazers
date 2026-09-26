@@ -82,10 +82,10 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
   Each learner writes the metric they would gate on and the threshold, before seeing any model output.
 
 20:00-34:00 evaluate baseline vs candidate model.
-  Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
+  Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit](/assets/kits/module14/README.md)), then solve for the break-even merge-to-split ratio.
 
 34:00-46:00 error taxonomy and triage discussion.
-  Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
+  Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed.
 -->
 
 ---
@@ -100,7 +100,7 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 ---
 
 ## Studio Activity
-**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
+**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given each model's evaluation against a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region and against a second, smaller ground-truth patch from a region containing a partial fold and two lost sections, plus a log of failure cases (the [Module 14 kit](/assets/kits/module14/README.md), synthetic). Your team maintains the production segmentation and must recommend one model.
 
 ---
 

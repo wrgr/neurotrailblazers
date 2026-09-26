@@ -21,7 +21,7 @@ Check that you have:
 - [ ] Image-processing and matrix basics
 - [ ] Foundational ML familiarity
 - [ ] Read [metrics and QA](/content-library/proofreading/metrics-and-qa/) for VI and ERL, and [artifact taxonomy](/content-library/imaging/artifact-taxonomy/) for what the model must survive.
-- [ ] Bring or download one EM subvolume with visible artifacts.
+- [ ] Bring or download one EM subvolume with visible artifacts ([Dataset Access](/datasets/access/) lists public sources).
 - [ ] Be ready to state which downstream product your segmentation would feed.
 
 Bring one question you already have about this topic. Write it here so you can check
@@ -44,7 +44,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given the model outputs, a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region, and a second, smaller ground-truth patch from a region containing a partial fold and two lost sections. Your team maintains the production segmentation and must recommend one model.
+**Scenario:** Compare two segmentation-support CV models for an EM subvolume. You are given each model's evaluation against a proofread ground-truth subvolume of roughly 40 mm of traced path drawn from a clean region and against a second, smaller ground-truth patch from a region containing a partial fold and two lost sections, plus a log of failure cases (the [Module 14 kit](/assets/kits/module14/README.md), synthetic). Your team maintains the production segmentation and must recommend one model.
 
 1. Compute or tabulate VI with its split and merge components, ERL, and error counts for both models, reported separately for the clean and the artifact-heavy region.
 2. Solve for the merge-to-split cost ratio at which the two models tie, and state which side of that ratio your team is on and how you know.
@@ -119,8 +119,8 @@ them, or note where you nearly did:
 |---|---|
 | | 00:00-08:00 task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer. |
 | | 08:00-20:00 choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output. |
-| | 20:00-34:00 evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio. |
-| | 34:00-46:00 error taxonomy and triage discussion. Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed. |
+| | 20:00-34:00 evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit](/assets/kits/module14/README.md)), then solve for the break-even merge-to-split ratio. |
+| | 34:00-46:00 error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed. |
 | | 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics. |
 | 56:00-60:00 competency check | each learner states their release gate as a sentence that could fail. |
 

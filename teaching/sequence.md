@@ -81,6 +81,8 @@ Open the selected decks before teaching. Keep the timed plan in a second tab or 
 Slide numbers include the cover. Share only the worksheet during the activity;
 answer keys are public and intended for formative learning, not secure exams.
 Embedded notes remain in the editable Marp sources, with delivery cues on the plans.
+When a plan says to collect work, photograph it or return it: learners bring each
+artifact to the next session.
 
 For a **half-day workshop**, run the first two sessions with a 15-minute break: 195 minutes
 of room time. Replace the between-session reading with a short advance reading.

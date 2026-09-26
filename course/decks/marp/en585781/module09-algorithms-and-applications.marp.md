@@ -142,7 +142,7 @@ Most of the answers turn out to be about the **null model** and the **error rate
 - The error taxonomy, and why merges are not just "more errors"
 - Metrics, triage, and stopping rules
 
-<div class="meta">Slides 6–21</div>
+<div class="meta">Slides 6–23</div>
 
 ---
 
@@ -251,6 +251,12 @@ These are not bugs. They are consequences of the physics and the data.
 **The design choice that shapes everything downstream:** the pipeline is deliberately tuned to **over-segment**. It prefers splits to merges. Therefore proofreading is mostly *joining.*
 
 </div>
+
+<!--
+The 60 nm neck is a thin-end example, not a typical value: EM measurements put the
+narrowest spine necks near 0.05 um, with typical necks wider (~0.1-0.2 um; Harris et al.
+1992, as cited in PMC4151245). 40 nm is the MICrONS minnie65 section thickness (4x4x40 nm).
+-->
 
 ---
 
@@ -419,13 +425,19 @@ It is: **how much would the observed 3× change under a plausible correction of 
 
 <div class="box box--good">
 
-*"Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1 to 2.8."*
+*"Exhaustive proofreading of a 20-cell sample changed the ratio from 3.1 to 2.8."* (illustrative)
 
 That is a far stronger statement about data quality than any VI value, and **reviewers understand it immediately.** It converts "we proofread the data" into a quantified error bound.
 
 </div>
 
 <p class="ask">Note what makes it work: it is a <em>differential</em> measurement on the quantity you actually report — so it needs no assumption about how VI maps onto your endpoint.</p>
+
+<!--
+The 20-cell sample, the ~40 person-hour budget, and the 3.1 -> 2.8 shift are planning
+heuristics and an illustrative example, not results from a cited study. Scale the budget
+to your own per-cell proofreading time.
+-->
 
 ---
 
@@ -476,7 +488,7 @@ Step 1 is where most projects go wrong before they start. "Proofread the biggest
 
 ## Worked example: three candidates, one annotator-hour
 
-> **Setup.** The study needs 200 proofread L2/3 pyramidal cells for a cell-type targeting endpoint. The queue's top three, with one hour available:
+> **Setup (hypothetical).** The study needs 200 proofread L2/3 pyramidal cells for a cell-type targeting endpoint. The queue's top three, with one hour available:
 >
 > **A** — a **split**: an analysis-set cell's primary apical dendrite truncated near the soma, detaching ~60% of the arbor. Fix: **10 min**.
 > **B** — a **glia–neuron merge**: a fine astrocytic process fused onto another analysis-set cell's basal dendrite. Fix: **20 min**.
@@ -556,7 +568,7 @@ The assumption "C does not touch the endpoint" has been **tested, not presumed.*
 
 <div class="box box--good">
 
-**Community proofreading** (EyeWire 2014, FlyWire 2024) is the field's most successful answer so far: it changes who can contribute and how the work scales.
+**Community proofreading** (EyeWire, launched 2012; FlyWire, Dorkenwald et al. 2024) is the field's most successful answer so far: it changes who can contribute and how the work scales.
 
 It also introduces its own quality-management problem — consensus mechanisms, reputation weighting, and adjudication — which is a research area in its own right.
 
@@ -579,7 +591,7 @@ It also introduces its own quality-management problem — consensus mechanisms, 
 - Null models: choosing the null *is* the scientific step
 - Motifs, error sensitivity, and what lies beyond
 
-<div class="meta">Slides 22–39</div>
+<div class="meta">Slides 24–40</div>
 
 ---
 
@@ -589,9 +601,14 @@ It also introduces its own quality-management problem — consensus mechanisms, 
 
 **1 — What is a node?** A cell? A cell type? A compartment? Cell-type nodes give more power and less resolution. **Compartment-level nodes** (soma, proximal dendrite, distal dendrite, AIS) preserve information most analyses discard — and that is often where the biology lives.
 
-**2 — What is an edge?** A single detected synapse is usually a poor edge: 1-synapse connections are the **least reliable** part of the data, most vulnerable to false-positive detection and to merge errors. Common practice thresholds at ≥ 2 or ≥ 3.
+**2 — What is an edge?** A single detected synapse is usually a poor edge: 1-synapse connections are the **least reliable** part of the data, most vulnerable to false-positive detection and to merge errors. Common practice thresholds at ≥ 2 to ≥ 5.
 
 **3 — Weighted or binary?** Synapse count is the usual weight. **Contact area or total PSD area is arguably a better strength proxy** and is available in modern datasets. Binary is defensible for topological questions and discards real information otherwise.
+
+<!--
+Threshold range: FlyWire whole-brain analyses use >= 5 synapses per connection (Lin et al.
+2024, Nature, 10.1038/s41586-024-07968-y); many other analyses use >= 2 or >= 3.
+-->
 
 ---
 
@@ -618,7 +635,7 @@ If you include **only well-proofread cells**, you have conditioned on a variable
 <div class="cols">
 <div>
 
-Thresholding at ≥ 2 or ≥ 3 synapses removes **a large fraction of edges** — the synapses-per-connection distribution is heavy-tailed, and single-synapse connections typically **dominate by count.**
+Thresholding at ≥ 2 or ≥ 3 synapses removes **a large fraction of edges** — the synapses-per-connection distribution is heavy-tailed, and weak (1–2-synapse) connections typically **dominate by count.**
 
 Worse, it removes them **non-uniformly across cell types**, because some types genuinely connect via few synapses.
 
@@ -662,7 +679,7 @@ your graph have?" is a question about parameters, not about biology.
 
 **Degree distribution.** Heavy-tailed, essentially always. A few hub cells with very many partners; a long tail with few. **This is why Erdős–Rényi is the wrong null** — and why degree-preserving rewiring is the minimum defensible baseline.
 
-**Synapses-per-connection distribution.** Also heavy-tailed, with single-synapse connections usually dominating by count. **This is why the edge threshold is so consequential.**
+**Synapses-per-connection distribution.** Also heavy-tailed, with weak (1–2-synapse) connections usually dominating by count. **This is why the edge threshold is so consequential.**
 
 **Connection probability vs distance.** Falls steeply. Plot it before choosing a null; if you cannot estimate this curve, you cannot use a distance-preserving null honestly.
 
@@ -943,7 +960,7 @@ error_rates:          merge 0.8%, split 4.1% (20-cell exhaustive resample)
 
 <div class="box box--good">
 
-Eleven lines. They pre-answer nearly every methodological question a reviewer can ask, and they take ten minutes. **The lab requires this block.**
+Twelve lines (values illustrative). They pre-answer nearly every methodological question a reviewer can ask, and they take ten minutes. **The lab requires this block.**
 
 </div>
 
@@ -959,7 +976,7 @@ Eleven lines. They pre-answer nearly every methodological question a reviewer ca
 - Three results that actually landed
 - What connectomics and machine learning give each other
 
-<div class="meta">Slides 40–56</div>
+<div class="meta">Slides 41–56</div>
 
 ---
 
@@ -978,6 +995,12 @@ Eleven lines. They pre-answer nearly every methodological question a reviewer ca
 
 </div>
 <div>
+
+<!--
+Dates: FlyWire female whole brain, Dorkenwald et al. 2024 (Nature). Complete CNS (brain +
+nerve cord): female BANC (Bates et al., preprint 2025) and male CNS (Berg et al., preprint
+Oct 2025; Cell 2026). Witvliet et al. 2021 (Nature 596:257): eight isogenic C. elegans.
+-->
 
 **Across hemispheres.** Bilateral matching in the larval *Drosophila* connectome measures **stereotypy** — how much of wiring is specified rather than idiosyncratic.
 
@@ -1023,11 +1046,11 @@ Eleven lines. They pre-answer nearly every methodological question a reviewer ca
 
 ## Three results that actually landed
 
-**1 — Retinal direction selectivity.** Reconstruction showed that starburst amacrine inhibition onto direction-selective ganglion cells is organized by **space–time wiring specificity** — a structural asymmetry that predicts the computation. *Structure gave the mechanism; physiology confirmed it.*
+**1 — Retinal direction selectivity.** Starburst amacrine inhibition onto direction-selective ganglion cells is wired by dendrite direction (Briggman 2011); bipolar→starburst inputs show **space–time wiring specificity** (Kim 2014). *Structure proposed the mechanism; physiology tested it.*
 
-**2 — The fly central complex as a ring attractor.** The connectome revealed a ring of heading-tuned cells with the recurrent and inhibitory architecture a ring attractor requires. The theory pre-existed; **the wiring turned it into a specific, testable claim about identified cells.**
+**2 — The fly central complex as a ring attractor.** The connectome showed that heading-tuned cells, first found by imaging, have the recurrent and inhibitory architecture a ring attractor requires. The theory pre-existed; **the wiring turned it into a specific, testable claim about identified cells.**
 
-**3 — Connectome-constrained models (Lappalainen et al. 2024).** Fix a network model's connectivity to the measured fly visual connectome, fit only the remaining parameters — and the model **predicts neural responses that were then tested.**
+**3 — Connectome-constrained models (Lappalainen et al. 2024).** Fix a network model's connectivity to the measured fly visual connectome, fit only the remaining parameters — and the model **predicts neural responses reported in 26 prior studies.**
 
 <div class="box box--good">
 
@@ -1036,6 +1059,17 @@ Eleven lines. They pre-answer nearly every methodological question a reviewer ca
 That — not simulation — is what a wiring diagram is for.
 
 </div>
+
+<!--
+Sources. (1) Briggman, Helmstaedter & Denk 2011, Nature 471:183 (10.1038/nature09818):
+SBEM + two-photon imaging in the same retina. Kim et al. 2014, Nature 509:331
+(10.1038/nature13240): bipolar-type placement along starburst dendrites plus a model; the
+space-time mechanism was a proposal that later physiology tested. (2) Heading-tuned EPG
+cells: Seelig & Jayaraman 2015 (imaging); EM central-complex connectome: Hulse et al. 2021,
+eLife (10.7554/eLife.66039). (3) Lappalainen et al. 2024: model trained on an optic-flow
+task; predictions compared with responses reported in 26 earlier studies, not new
+experiments.
+-->
 
 ---
 
@@ -1073,6 +1107,14 @@ That — not simulation — is what a wiring diagram is for.
 
 <p class="src">Lappalainen et al. 2024, 10.1038/s41586-024-07939-3 — fly visual system.</p>
 
+<!--
+This slide is the general recipe. In Lappalainen et al. specifically, synapse SIGNS were
+fixed from neurotransmitter/receptor profiling, not fitted; the free parameters were a time
+constant and resting potential per cell type plus one synapse-strength scale per
+type-to-type connection (734 parameters for ~45,700 neurons). They trained on optic-flow
+estimation, not on neural data, and compared against ensembles with random parameters.
+-->
+
 ---
 
 ## NeuroAI: two symmetric errors to avoid
@@ -1104,7 +1146,7 @@ Also too strong, and much more common in talks. It confuses a constraint on the 
 
 ## What connectomes give machine learning today
 
-**Constraints for network models.** *The strongest current result type.* Take a measured connectome, use it to fix a dynamical model's connectivity, fit the remaining parameters to data, and **predict** neural responses. Done in the fly visual system, where predictions were then tested.
+**Constraints for network models.** *The strongest current result type.* Take a measured connectome, use it to fix a dynamical model's connectivity, fit the remaining parameters to data, and **predict** neural responses. Done in the fly visual system, where predictions matched published recordings.
 
 <div class="box box--good">
 
@@ -1181,8 +1223,8 @@ Dense segmentation, synapse detection, error detection, automated proofreading c
 
 | Stream | The result that defines it today | What moves it next |
 |---|---|---|
-| **1 · Scale** | 1 mm³ mouse and human volumes; whole adult fly brain | Whole mouse brain — ~800 PB, and an engineering program, not a microscope |
-| **2 · Throughput and automation** | Multibeam SEM; FAST-EM; SmartEM's adaptive dose | Unattended alignment; **proofreading hours per mm of cable** falling |
+| **1 · Scale** | 1 mm³ mouse and human volumes; whole adult fly brain | Whole mouse brain — ~800 PB (est.), and an engineering program, not a microscope |
+| **2 · Throughput and automation** | Multibeam SEM; FAST-EM; SmartEM's adaptive dwell time | Unattended alignment; **proofreading hours per mm of cable** falling |
 | **3 · Segmentation quality** | Flood-filling networks; learned agglomeration | **Automated merge detection** — the highest-leverage open problem in this module |
 | **4 · Modality integration** | MICrONS: EM co-registered with two-photon function | Molecular identity at scale — CLEM, expansion, barcoding |
 | **5 · Organism and lifespan** | *C. elegans* developmental series; fly male and female CNS | Cross-**individual** variability; almost every landmark dataset is *n* = 1 |
@@ -1195,6 +1237,15 @@ Dense segmentation, synapse detection, error detection, automated proofreading c
 **Use this as a placement exercise, not a summary.** Take the last connectomics paper you read and put it in a row. If it does not fit one, either you have found something genuinely new — or the paper is advancing a stream it did not declare.
 
 </div>
+
+<!--
+~800 PB is a projection, not a measurement: 500 mm3 at 4x4x40 nm, 8-bit, uncompressed
+(about 1.56 PB per mm3), matching Module 07 and Unit 01. Abbott et al. 2020 (Cell,
+10.1016/j.cell.2020.08.010) give a rougher "roughly 1 million terabytes" (about 1 EB). The 500x
+figure follows from a ~500 mm3 adult mouse brain (Badea et al. 2007, NeuroImage:
+508.9 +/- 23.4 mm3, C57BL/6J). SmartEM: Meirovitch et al., Nature Methods
+(10.1038/s41592-025-02929-3) -- fast scan, then rescans error-prone regions at longer dwell.
+-->
 
 ---
 
@@ -1272,7 +1323,7 @@ Produce **one analysis card** with every field filled:
 |---|---|
 | **Hypothesis** | One sentence, in words, falsifiable |
 | **Estimand** | The quantity being estimated, with units |
-| **Graph construction** | The eleven-line provenance block from Part B |
+| **Graph construction** | The twelve-line provenance block from Part B |
 | **Null model** | Named, with the "it would be uninteresting if…" sentence written out |
 | **Success criterion** | Stated **before** running anything |
 | **Error sensitivity** | Effect size with a band from your measured merge/split rates |

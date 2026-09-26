@@ -71,7 +71,7 @@ shafts", your analysis scale is the synapse and the spine neck. Spine necks are
 50–200 nm. So your reconstruction scale must be ≤ 50 nm, which forces EM. If instead
 your endpoint is "does area A project to area B at all", your analysis scale is the
 axon bundle, and light-sheet imaging of a bulk tracer at 1 µm is not merely adequate —
-it is the correct choice, because it costs about five orders of magnitude less.
+it is the correct choice, because it needs roughly a million times fewer voxels.
 
 ---
 

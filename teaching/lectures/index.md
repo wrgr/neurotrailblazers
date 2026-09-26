@@ -80,7 +80,8 @@ synapse-resolution structure can establish.
 ## Teaching from them
 
 **Timing.** Three parts of roughly 50 minutes, with natural breaks at the part dividers.
-A 90-minute slot takes Parts A and B; Part C works as a standalone seminar. A single
+For a 90-minute slot, use the selected-slide plan on each lecture page rather than
+trying to fit Parts A and B; Part C works as a standalone seminar. A single
 75-minute survey can be built from lecture 1 Part A plus lecture 3 Part C.
 
 **What students produce.** One artifact per lecture, each building on the last:

@@ -80,6 +80,8 @@ including mismatches rather than silently correcting them.
 
 Submit the two counts, repaired methods record and capacity estimate. Finish:
 “If this count changes next month, the first evidence I would compare is ___.”
+Then add one line to your study brief from Session 1: the version, filter and query
+identity your own endpoint would need recorded. Bring the brief to Session 4.
 
 [Instructor model responses]({{ '/teaching/lectures/tools-and-methods-answers/' | relative_url }})
 are public; attempt the exercise first. Teaching material: CC BY-SA 4.0, NeuroTrailblazers.

@@ -40,7 +40,7 @@ Set expectations early: this is not a lecture about a scandal. There isn't one.
 
 ## connectomics does not currently have a human-subjects problem.
 
-Its flagship human dataset is discarded surgical tissue that was going to be removed regardless, reviewed under the same frameworks that govern any human-tissue study. Nothing in this field asks a person to undergo a procedure for research, and nothing published so far identifies anyone.
+Its flagship human dataset is discarded surgical tissue that was going to be removed regardless, subject to the same frameworks that govern any human-tissue study. Nothing in this field asks a person to undergo a procedure for research, and nothing published so far identifies anyone.
 
 <p class="ask">If you came expecting a controversy, there isn't one to report. So what is this hour for?</p>
 
@@ -53,9 +53,9 @@ Its flagship human dataset is discarded surgical tissue that was going to be rem
 
 **Live now — practical, not philosophical**
 
-**Licence obligations** (Part B). Three major portals redistribute under incompatible terms, and a reuser who ignores them is simply in breach.
+**Licence obligations** (Part B). Major portals redistribute under different terms, and a reuser who ignores them is simply in breach.
 
-**Credit for proofreading labour** (Part C). Tens of thousands of hours of human correction sit behind every published connectome, and how that work is credited decides real careers. **The one topic here about people affected today.**
+**Credit for proofreading labour** (Part C). Tens of thousands of hours of human correction sit behind a whole-brain connectome such as FlyWire, and how that work is credited decides real careers. **The one topic here about people affected today.**
 
 </div>
 <div>
@@ -192,7 +192,7 @@ The ethical structure follows directly from the provenance description on the pr
 
 A full-text search of the published *Science* article for "consent", "IRB", "ethics" and "Institutional Review" returns nothing. The data-availability statement points at the release landing page, and the licence line covers the article, not the data.
 
-**The consent and approval details live in the supplementary Materials and Methods.**
+**Look for consent and approval details in the supplementary Materials and Methods.**
 
 </div>
 <div>
@@ -211,10 +211,13 @@ A citation to a landing page is not a citation to an ethics review.
 </div>
 
 <!--
-Be precise about what this slide claims. It does not say H01 lacks ethics approval --
-the approval details are in the supplementary methods. It says the main article does
-not carry them, so a reader who stops at the article or the landing page has not seen
-them. The failure it warns against is citing without looking.
+Be precise about what this slide claims. It does not say H01 lacks ethics approval.
+It says the main article does not carry an ethics statement (checked against the
+published text; the bioRxiv preprint's Methods also have none). Where approval is
+documented -- presumably the supplementary methods -- has not been confirmed for this
+deck, which is the point: check before citing. A reader who stops at the article or
+the landing page has not seen any approval details. The failure it warns against is
+citing without looking.
 -->
 
 ---
@@ -243,7 +246,7 @@ Part C returns to why that matters beyond the lab.
 |---|---|---|
 | **Human surgical tissue** (H01) | Institutional review of human-subjects research; tissue is discarded surgical material | Research use of the specimen. Whether "research use" was understood to include **indefinite open redistribution and downstream machine-learning use** is the live question, not a settled one |
 | **Vertebrate animal tissue** (MICrONS, MouseConnects) | Institutional animal care and use committee approval | Protocol-level: species, numbers, procedures, endpoints |
-| **Invertebrate tissue** (FlyWire, hemibrain) | No animal-welfare committee requirement in the United States for *Drosophila* | Not applicable |
+| **Invertebrate tissue** (FlyWire, hemibrain) | No federal animal-welfare committee requirement in the United States for *Drosophila* | Not applicable |
 
 <div class="box box--good">
 
@@ -285,12 +288,12 @@ The image data carries no genotype: what is released is heavy-metal-stained, res
 
 **1 — De-identification in EM connectomics is metadata discipline, not image modification.** There is nothing to blur.
 
-**2 — The standard reference transfers only partly.** Betzel & Bhatt (2021) on responsible reuse of open human connectomics data was written about neuroimaging-scale datasets. Its reporting and analytic-flexibility guidance transfers cleanly. **Its privacy guidance was designed for a modality with a face in it.**
+**2 — The standard reference transfers only partly.** Laird (2021) on responsible reuse of open human connectomics data was written about neuroimaging-scale datasets. Its reproducibility guidance transfers cleanly. **It was written for MRI, a modality with a face in it.**
 
 </div>
 <div>
 
-**UNESCO Recommendation on the Ethics of Neurotechnology** — adopted by the General Conference on **12 November 2025**, the first global standard in the area.
+**UNESCO Recommendation on the Ethics of Neurotechnology** — adopted by the General Conference on **11 November 2025**, the first global standard in the area.
 
 - establishes a framework for "neural data"
 - holds that such data is uniquely sensitive and requires strict safeguards against misuse
@@ -304,6 +307,15 @@ The image data carries no genotype: what is released is heavy-metal-stained, res
 
 </div>
 </div>
+
+<!--
+Dates, from the official text (unesco.org/en/legal-affairs/recommendation-ethics-neurotechnology):
+the General Conference "Adopts the present Recommendation ... on this eleventh day of
+November 2025" in Samarkand; UNESCO's press release gives entry into force as 12 November,
+at the close of the session. Why the question is open: the text defines neural data as data
+"about the structure, activity and function of the nervous system gathered through
+neurotechnology" -- structure is named, but so is the neurotechnology route.
+-->
 
 ---
 
@@ -358,16 +370,21 @@ pathology caveat two slides back).
 | **MICrONS** (microns-explorer.org) | Creative Commons Attribution 4.0 International | Retain creator identification and copyright notice, indicate modifications, include the licence text or a link; impose no further restrictions downstream. Follow the site's citation policy — MICrONS Consortium et al. (2025), *Nature* 640: 435–47 | **Permitted** |
 | **FlyWire public release** (v783, an October 2023 snapshot) | Creative Commons Attribution-**NonCommercial** 4.0 | Attribute, and cite the papers named in FlyWire's citation guide. Pre-publication data carries separate community-principles obligations | **Not permitted** |
 | **FlyWire's flagship *paper*** (Dorkenwald et al., 2024, *Nature*) | Creative Commons Attribution 4.0 | Attribute | Permitted |
-| **Hemibrain / neuPrint** | Creative Commons Attribution (version **not confirmed** from the primary source — check before redistributing) | Attribute; cite Scheffer et al. (2020) | Presumed permitted, **unverified** |
-| **H01** | No licence statement found on the release landing page; the *Science* article is under the AAAS journal licence, © the authors. Data availability points at the public Google Cloud bucket, open with no registration | Cite Shapson-Coe et al. (2024) and check terms before redistributing | **Unclear — verify** |
+| **Hemibrain / neuPrint** | CC BY 4.0 per Janelia's hemibrain page; the v1.0 figshare deposit is tagged CC BY-NC 4.0 — **check before redistributing** | Attribute; cite Scheffer et al. (2020) | Permitted per project page; **v1.0 deposit conflicts** |
+| **H01** | CC BY 4.0, stated on the release's data page (not its landing page); the *Science* article is under the AAAS journal licence, © the authors. Data sit in a public Google Cloud bucket, open with no registration | Attribute; cite Shapson-Coe et al. (2024) | **Permitted** |
 
-<p class="src">In at least one case the paper and the data carry different licences. Two rows are marked unverified rather than guessed.</p>
+<p class="src">In at least one case the paper and the data carry different licences. The hemibrain row is flagged as conflicting rather than resolved by guesswork.</p>
 
 <!--
-Do not tidy the last two rows up. The hemibrain CC BY version and the H01 data licence
-could not be confirmed from a primary source, and the honest thing to teach is that a
-reuser must confirm both before redistributing either dataset. Presenting a guess as a
+Do not tidy the hemibrain row up. Janelia's hemibrain project page links CC BY 4.0
+(janelia.org/project-team/flyem/hemibrain), but the v1.0 data deposit the eLife paper
+cites (doi:10.25378/janelia.11676099) is registered as CC BY-NC 4.0 in its DataCite
+metadata. A reuser must resolve that before redistributing. Presenting a guess as a
 licence is worse than presenting the gap.
+
+H01: the release data page (h01-release.storage.googleapis.com/data.html) states "All
+released datasets are licensed under a Creative Commons Attribution 4.0 License"; the
+landing page itself carries no licence line, which is why it is easy to miss.
 -->
 
 ---
@@ -419,7 +436,7 @@ commercial).
 
 The **NIH Data Management and Sharing Policy** (NOT-OD-21-013) took effect on **25 January 2023**. Every NIH application that will generate scientific data must include a data management and sharing plan, and comply with it.
 
-That is why CONNECTS-scale projects release data at all — **but it grants a reuser nothing beyond what the dataset's own licence grants.**
+That is one reason CONNECTS-scale projects release data at all — **but it grants a reuser nothing beyond what the dataset's own licence grants.**
 
 </div>
 <div>
@@ -472,7 +489,7 @@ counts were not recovered from the primary source, so none are quoted.
 <div class="cols">
 <div>
 
-**MICrONS — yes.** It is CC BY 4.0, which permits commercial use provided you attribute, mark modifications, and pass the licence on.
+**MICrONS — yes.** It is CC BY 4.0, which permits commercial use provided you attribute, mark modifications, and link the licence.
 
 </div>
 <div>
@@ -484,7 +501,7 @@ counts were not recovered from the primary source, so none are quoted.
 
 <div class="box box--warn">
 
-**And H01 or hemibrain?** Hemibrain is presumed permitted but its CC BY version is unverified; H01's data licence is unclear. For both, the only defensible answer is "verify before redistributing".
+**And H01 or hemibrain?** H01's data page states CC BY 4.0, so yes, with attribution. Hemibrain's project page says CC BY 4.0 but its v1.0 deposit says CC BY-NC 4.0: "verify before redistributing".
 
 </div>
 
@@ -514,7 +531,7 @@ There is no pathogen, no agent, no enhancement of transmissibility. Saying other
 
 | Status | Concern | At its real strength |
 |---|---|---|
-| **Governed** | **Neural-data misuse** | The UNESCO Recommendation situates neurotechnology within a human-rights framework — dignity, freedom of thought, mental privacy, autonomy — and calls on states to prevent applications that facilitate coercive control, unlawful surveillance or manipulation. **Not binding**, and it primarily targets devices that read or write brain activity in living people, not post-mortem or surgical structural datasets |
+| **Governed** | **Neural-data misuse** | The UNESCO Recommendation situates neurotechnology within a human-rights framework — dignity, freedom of thought, mental privacy, autonomy — and warns against coercion, unlawful surveillance and manipulation. **Not binding**, and it is framed around devices that measure or modulate the nervous system, not archived surgical EM datasets |
 | **Arguable, undocumented** | **Method transfer** | Segmentation, tracking and instance-association methods developed for connectomics are general computer vision, which has surveillance applications. **An argument from capability, not from any documented case** — recorded as an argument, not a finding |
 | **Actual** | **Over-claiming from a single sample** | The one a student is likely to commit. Next slide |
 
@@ -554,6 +571,8 @@ sentence that is true as written.
 
 If the room has seen the synapse-detection lecture, connect it: "the data says 74%
 excitatory" is a claim about a detector, and needs the same bounded-claim discipline.
+(74% is the raw classifier output, 111.3 M of 149.9 M detected synapses; the paper's own
+error-corrected estimate is 67.1% -- Shapson-Coe et al. 2024, synapse section.)
 -->
 
 ---
@@ -576,7 +595,7 @@ Dorkenwald et al. (2024) estimate that FlyWire's brain reconstruction took **aro
 
 <div class="box box--warn">
 
-**That is the only published effort figure of its kind the source page could find.** MICrONS and H01 do not publish an equivalent person-year number.
+**Published effort figures are rare: FlyWire's, and the hemibrain's "over 50 person-years".** MICrONS and H01 do not publish an equivalent person-year number.
 
 **The absence is itself a finding:** the largest single labour input to a connectome is routinely unquantified in the paper that reports the connectome.
 
@@ -585,7 +604,7 @@ Dorkenwald et al. (2024) estimate that FlyWire's brain reconstruction took **aro
 </div>
 </div>
 
-<p class="src">Dorkenwald et al. 2024, <em>Nature</em> 634, 124–138 (10.1038/s41586-024-07558-y).</p>
+<p class="src">Dorkenwald et al. 2024, <em>Nature</em> 634, 124–138 (10.1038/s41586-024-07558-y). Scheffer et al. 2020, <em>eLife</em> 9, e57443.</p>
 
 ---
 
@@ -595,7 +614,7 @@ Dorkenwald et al. (2024) estimate that FlyWire's brain reconstruction took **aro
 
 | Model | Example | What a contributor can put on a CV | Failure mode |
 |---|---|---|---|
-| **Consortium co-authorship** | "The FlyWire Consortium" as a co-author of Dorkenwald et al. (2024) | Membership of a named group; the individual is not indexed by name in bibliographic databases | Hard to claim in a job application or a tenure case; invisible to citation metrics |
+| **Consortium co-authorship** | "The FlyWire Consortium" as a co-author of Dorkenwald et al. (2024) | Membership of a named group; PubMed lists members as collaborators, not authors | Hard to claim in a job application or a tenure case; largely invisible to citation metrics |
 | **Collective acknowledgement in the author line** | Kim et al. (2014), *Nature* — the author list ends "and the EyeWirers", with the individuals who reconstructed the cells listed in supplementary information | A verifiable named appearance, but in supplementary material | Not authorship; disappears from every automated record |
 | **Per-contribution platform attribution** | FlyWire Codex shows per-cell credits and a labelling leaderboard | A durable, checkable link to specific work | Not a publication; depends on the platform continuing to exist |
 | **Named individual authorship with a contributions statement** | Shapson-Coe et al. (2024) names individuals for "proofreading of neurons", "production of ground truth for synapse prediction and excitatory versus inhibitory classification", and each other task | Full authorship plus a specific, quotable role | Only workable when the contributor count is small |
@@ -608,7 +627,7 @@ Dorkenwald et al. (2024) estimate that FlyWire's brain reconstruction took **aro
 
 ### Three things that can be stated without hedging
 
-**1 — CRediT has no term for proofreading.** The nearest contributor-role terms are *Data curation* and *Investigation*, and neither describes segment-level error correction. If your project uses CRediT, **write down which term you are mapping proofreading onto, before results exist.**
+**1 — CRediT has no term for proofreading.** The nearest terms are *Data curation*, *Investigation* and *Validation* (where H01 filed it); none describes segment-level error correction. If your project uses CRediT, **write down which term you are mapping proofreading onto, before results exist.**
 
 **2 — The threshold has to be written before the work.** "How much proofreading earns authorship?" answered after a paper is drafted is answered under pressure. The four models are the menu; **pick one and publish the rule.**
 
@@ -659,7 +678,7 @@ It should be the **stated** call, made before the work — not after.
 </div>
 <div>
 
-- **Licence details not confirmed from a primary source.** The hemibrain/neuPrint CC BY version and the H01 data licence are marked unverified rather than guessed. Confirm both before redistributing.
+- **Unresolved licence conflicts.** Hemibrain's project page (CC BY 4.0) and its v1.0 data deposit (CC BY-NC 4.0) disagree; this lecture flags that rather than guessing. Confirm before redistributing.
 - **Repository-by-repository policy counts.** Jwa & Poldrack is cited for its spectrum finding only.
 - **Consent for future AI training uses.** Whether broad consent to "research use" of surgical tissue extends to training foundation models on the resulting images is open. **No settled answer exists, and inventing one would be worse than saying so.**
 - **Community conduct and inclusion** — codes of conduct, harassment policy, mentoring obligations.
@@ -702,11 +721,11 @@ The prospective questions are real — and the time to reason about them is befo
 
 <!-- _class: refs -->
 
-**Datasets and their papers.** Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01); Dorkenwald et al. 2024, and the FlyWire Consortium (10.1038/s41586-024-07558-y, FlyWire); MICrONS Consortium et al. 2025 (10.1038/s41586-025-08790-w), with terms at microns-explorer.org/terms-and-conditions; Scheffer et al. 2020 (10.7554/eLife.57443, hemibrain); Kim et al. 2014, and the EyeWirers (10.1038/nature13240).
+**Datasets and their papers.** Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01); Dorkenwald et al. 2024, and the FlyWire Consortium (10.1038/s41586-024-07558-y, FlyWire); MICrONS Consortium et al. 2025 (10.1038/s41586-025-08790-w), with terms at microns-explorer.org/terms-and-conditions; H01 data terms at h01-release.storage.googleapis.com/data.html; Scheffer et al. 2020 (10.7554/eLife.57443, hemibrain; terms at janelia.org/project-team/flyem/hemibrain); Kim et al. 2014, and the EyeWirers (10.1038/nature13240).
 
-**Governance and policy.** UNESCO (2025), Recommendation on the Ethics of Neurotechnology, adopted 12 November 2025 (unesco.org); NIH (2020), Final NIH Policy for Data Management and Sharing, NOT-OD-21-013, effective 25 January 2023 (grants.nih.gov); FlyWire citation and credit guidelines (flywire.ai/guidelines).
+**Governance and policy.** UNESCO (2025), Recommendation on the Ethics of Neurotechnology, adopted 11 November 2025 (unesco.org); NIH (2020), Final NIH Policy for Data Management and Sharing, NOT-OD-21-013, effective 25 January 2023 (grants.nih.gov); FlyWire citation and credit guidelines (flywire.ai/guidelines).
 
-**Responsible reuse.** Betzel & Bhatt 2021 (10.1016/j.neuroimage.2021.118579, open human connectomics datasets); Jwa & Poldrack 2022 (10.1002/hbm.25803, the spectrum of data-sharing policies).
+**Responsible reuse.** Laird 2021 (10.1016/j.neuroimage.2021.118579, open human connectomics datasets); Jwa & Poldrack 2022 (10.1002/hbm.25803, the spectrum of data-sharing policies).
 
 **Source page.** NeuroTrailblazers content library, *Ethics and Governance* (/content-library/connectomics/ethics-and-governance/). <https://neurotrailblazers.org>
 

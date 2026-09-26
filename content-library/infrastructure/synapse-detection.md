@@ -137,9 +137,9 @@ methods' F-scores are **not measuring the same object**.
 | 3D U-Net cleft segmentation (Heinrich et al.) | 2018 | Synaptic cleft voxels, by regression on a signed distance transform | Reported as a significant improvement over the prior state of the art on CREMI | Adult *Drosophila*, anisotropic ssTEM; applied to ~50 teravoxels of the whole fly brain |
 | Fully-automatic synapse prediction (Huang et al.) | 2018 | Presynaptic sites (U-Net) plus postsynaptic partners (MLP on segmentation-conditioned features) | Introduced connectome-scale evaluation metrics; reports that complete automatic prediction characterises most connectivity correctly | *Drosophila*, polyadic |
 | Attentional voxel association networks (Turner et al.) | 2020 | Presynaptic and postsynaptic masks, generated from a cleft mask used as an attention gate | Evaluated as part of a combined cleft-plus-partner system | Mouse somatosensory cortex |
-| Synful (Buhmann et al.) | 2021 | Synaptic partners directly, whole-brain | **F1 of 0.73, 0.68, 0.66 and 0.59** in four different brain areas; **244 million** putative synaptic partners extracted from FAFB; 92–96% of edges correctly sorted into weakly (<5 synapses) and strongly (≥5) connected | Adult *Drosophila*, FAFB ssTEM |
+| Synful (Buhmann et al.) | 2021 | Synaptic partners directly, whole-brain | **F1 of 0.73, 0.68, 0.66 and 0.59** in four different brain areas; **244 million** putative synaptic partners extracted from FAFB; 92–96% of edges (calyx and lateral horn) correctly sorted into weakly (<5 synapses) and strongly (≥5) connected | Adult *Drosophila*, FAFB ssTEM |
 | Cerebellum-specific contact classifier (Park et al.) | 2022 | Synaptic vs non-synaptic contacts, plus pre/post side and excitatory/inhibitory type | **F1 = 0.955** on a test volume containing 508 synapses | Mouse cerebellar molecular layer |
-| H01 detector (Shapson-Coe et al.) | 2024 | Three-class U-Net (background / presynaptic / postsynaptic) plus a ResNet-50 excitatory-vs-inhibitory classifier | See §4 — the numbers differ by more than threefold between excitatory and inhibitory recall | Human temporal cortex, ssEM at 4 × 4 nm, 33 nm sections |
+| H01 detector (Shapson-Coe et al.) | 2024 | Three-class U-Net (background / presynaptic / postsynaptic) plus a ResNet-50 excitatory-vs-inhibitory classifier | See §4 — excitatory and inhibitory miss rates differ by more than threefold | Human temporal cortex, ssEM at 4 × 4 nm, ~33 nm sections |
 | SimpSyn (Mohinta et al.) | 2025 | Dual-channel spherical masks around pre- and post-synaptic sites, single-stage residual U-Net | Outperforms Synful in F1 on all volumes in a four-dataset invertebrate benchmark; the authors report that **generalisation across datasets remains limited** | Adult and larval *Drosophila*, *Megaphragma viggianii* |
 
 Three readings of that table matter more than the individual rows.
@@ -155,8 +155,8 @@ scores use different units, and its Table 3 compares different operating points.
 Multiple contacts can help recover an edge when contacts are missed. False
 positives, correlated errors and the connection rule affect both precision and
 recall; aggregation does not guarantee an improvement.
-Buhmann et al. show the same effect from the other side: per-connection F1 of
-0.59–0.73, but 92–96% of edges correctly assigned to the weak/strong classes
+Buhmann et al. show the same effect from the other side: partner-level F1 of
+0.59–0.73, but 92–96% of edges (calyx, lateral horn) correctly assigned to the weak/strong classes
 most analyses actually use. **The number you need is the one measured at the
 level of your claim** — for most connectomics, the edge, not the synapse.
 
@@ -321,7 +321,7 @@ paper quoting either without saying which has not told you what it did.
    same detector and staining, the *difference* in E/I ratio survives a shared
    bias that the absolute value does not.
 3. **The bias is not random, so more data will not fix it.** Ten times the
-   volume buys ten times the confidence in the wrong number.
+   volume buys a tighter interval around the wrong number.
 
 ---
 
@@ -332,7 +332,7 @@ them can move a detector's output.
 
 | What changes | Concrete example |
 |---|---|
-| Voxel size and anisotropy | CREMI/FAFB at 4 × 4 × 40 nm ssTEM; H01 at 4 × 4 nm in-plane with 33 nm sections; FIB/SEM volumes near-isotropic. Heinrich et al. built a 3D U-Net specifically "to optimally represent isotropic fields of view in non-isotropic data" — the architecture itself encodes an assumption about the sampling grid |
+| Voxel size and anisotropy | CREMI/FAFB at 4 × 4 × 40 nm ssTEM; H01 at 4 × 4 nm in-plane with ~33 nm sections; FIB/SEM volumes near-isotropic. Heinrich et al. built a 3D U-Net specifically "to optimally represent isotropic fields of view in non-isotropic data" — the architecture itself encodes an assumption about the sampling grid |
 | Staining chemistry | Potassium ferrocyanide concentration changes apparent PSD thickness (Cano-Astorga et al., 2024) — directly attacking the inhibitory-synapse feature |
 | Species ultrastructure | Polyadic insect synapses versus predominantly monadic mammalian ones; the output *structure* differs, not just the appearance |
 | Annotation convention | What counts as a cleft, and where a "site" point is placed relative to it. Two ground-truth sets can disagree systematically while both being correct by their own rules |
@@ -348,8 +348,7 @@ available" — across a whole fly brain, including lamina.
 **Across preparations, it is not.** SimpSyn's authors, benchmarking on four
 invertebrate datasets, conclude that generalisation across datasets remains
 limited even for the model that wins within each dataset. SynapseNet's authors
-built explicit domain-adaptation functionality into their tool rather than
-relying on a large training set. And WASPSYN exists because, in the organisers'
+pair a large annotated training set with explicit domain-adaptation functionality. And WASPSYN exists because, in the organisers'
 words, methods that "utilize in-domain labeled data and generalize to
 out-of-domain unlabeled data are in urgent need".
 
@@ -382,8 +381,8 @@ afternoon. Take a random subvolume, annotate every synapse in it by hand, and
 compare against the table: missed table entries give you recall, spurious ones
 give you precision. Two calibration points set expectations. Kreshuk et al.
 found their algorithm's error rate "comparable to that of the experts", and
-SynEM reports its expert annotators at 93.6–94.6% and 97.9–98.9%
-precision/recall — so **agreement in the mid-90s is roughly what two competent
+SynEM reports its two experts at 93.6% / 94.6% precision and 97.9% / 98.9%
+recall — so **agreement in the mid-to-high 90s is roughly what two competent
 humans achieve**. A detector matching your annotations more closely than that
 should make you suspicious of your annotations, not confident in the detector.
 For the manual pass itself, SynAnno (Lauenburg et al., 2025) provides guided,
@@ -523,7 +522,7 @@ neuron-centric synapse proofreading with model-assisted error detection.
 - Mohinta, S., Franco-Barranco, D., Lee, S. Y., & Cardona, A. (2025). Towards
   generalized synapse detection across invertebrate species.
   [arXiv:2509.17041](https://arxiv.org/abs/2509.17041)
-- Muth, S., et al. (2024). SynapseNet: deep learning for automatic synapse
+- Muth, S., et al. (2025). SynapseNet: deep learning for automatic synapse
   reconstruction.
   [10.1091/mbc.e24-11-0519](https://doi.org/10.1091/mbc.e24-11-0519)
 - Park, C., Gim, J., Lee, S., Lee, K. J., & Kim, J. S. (2022). Automated synapse

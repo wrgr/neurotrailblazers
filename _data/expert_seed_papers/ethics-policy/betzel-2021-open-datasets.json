@@ -1,16 +1,16 @@
 {
   "id": "betzel-2021-open-datasets",
-  "title": "Large, Open Datasets for Human Connectomics Research: Considerations for Reproducible and Responsible Data Use",
-  "authors": ["Betzel RF", "Bhatt DH"],
+  "title": "Large, open datasets for human connectomics research: Considerations for reproducible and responsible data use",
+  "authors": ["Laird AR"],
   "year": 2021,
   "journal": "NeuroImage",
   "doi": "10.1016/j.neuroimage.2021.118579",
-  "url": "https://www.sciencedirect.com/science/article/pii/S1053811921008697",
-  "abstract": "Examines the opportunities and challenges of large, open datasets for human connectomics research. Discusses considerations for reproducible and responsible use of shared neuroimaging data, including privacy concerns, informed consent, data quality, analytical flexibility, and the importance of transparent reporting practices.",
+  "url": "https://doi.org/10.1016/j.neuroimage.2021.118579",
+  "abstract": "Large, open datasets have emerged as important resources in the field of human connectomics. In this review, the evolution of data sharing involving magnetic resonance imaging is described. A summary of the challenges and progress in conducting reproducible data analyses is provided, including description of recent progress made in the development of community guidelines and recommendations, software and data management tools, and initiatives to enhance training and education. Finally, this review concludes with a discussion of ethical conduct relevant to analyses of large, open datasets and a researcher's responsibility to prevent further stigmatization of historically marginalized racial and ethnic groups. Moving forward, future work should include an enhanced emphasis on the social determinants of health, which may further contextualize findings among diverse population-based samples. Leveraging the progress to date and guided by interdisciplinary collaborations, the future of connectomics promises to be an impressive era of innovative research, yielding a more inclusive understanding of brain structure and function.",
   "seed_expert": "Ethics-Policy",
   "author_tier": 2,
   "dimensions": ["ethics-society", "methodology"],
   "tags": ["open-data", "human-connectomics", "reproducibility", "responsible-use", "privacy"],
   "duplicate_of_existing": null,
-  "notes": "New paper. Considerations for responsible use of open connectomics datasets."
+  "notes": "Considerations for responsible use of open connectomics datasets. Metadata corrected 2026-09-26 against Crossref and PubMed (PMID 34536537): sole author is Angela R. Laird, not Betzel & Bhatt; abstract replaced with the PubMed abstract verbatim. File id kept for dedup_manifest compatibility."
 }

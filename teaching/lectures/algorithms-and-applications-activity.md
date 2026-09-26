@@ -16,7 +16,8 @@ Paper and a calculator suffice. Optional Python 3 code requires no packages or a
 
 ## Data and analysis contract
 
-The labeled nodes are A, B, C and D. Directed contact counts are:
+The graph version is `synthetic-four-neuron-graph-v1`. The labeled nodes are A, B,
+C and D. Directed contact counts are:
 
 ```text
 A to B: 3     B to A: 1
@@ -91,6 +92,10 @@ would be needed to choose a distance- or type-aware null for a real circuit.
 **Peer review:** reproduce the pair count and tail probability from your partner's
 card. Check whether their conclusion is narrower than “the brain is random” or
 “reciprocity causes computation.” Neither claim follows from this exercise.
+
+**Exit ticket:** finish “My result is conditional on ___; the next measurement that
+could change it is ___.” Then, on the study brief you carried from Session 1, write
+the null you would use for your own endpoint and one structure it must hold fixed.
 
 [Instructor model responses]({{ '/teaching/lectures/algorithms-and-applications-answers/' | relative_url }})
 are public; attempt the activity first. Teaching material: CC BY-SA 4.0, NeuroTrailblazers.

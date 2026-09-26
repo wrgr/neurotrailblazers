@@ -63,5 +63,10 @@ sample. Ask whether several regions from one brain justify a claim about many br
 **Exit ticket:** “The most consequential unknown in this table is ___; I would
 measure it by ___.” Submit the calculations and revised claim with the audit plan.
 
+**Carry forward (3 minutes, during the debrief):** add two or three sentences to your
+Introduction study brief. Name the synapse table's version, its evaluation domain,
+the detection or partner error that most threatens your endpoint, and the evidence
+that would resolve it. Bring the revised brief and this audit to Session 3.
+
 [Instructor model answers]({{ '/teaching/lectures/synapse-detection-answers/' | relative_url }})
 are public. Attempt the worksheet first. Teaching activity: CC BY-SA 4.0, NeuroTrailblazers.

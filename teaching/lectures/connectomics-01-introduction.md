@@ -111,7 +111,7 @@ The claim-sorting framework in Part A. It is introduced here, used in every subs
 
 **Part A ends on a constructive turn, not a limitation.** Students hear "structure cannot establish this" as "connectomics cannot do anything interesting". The right reading is that it tells you exactly which additional experiment your question needs. MICrONS exists because someone decided to co-register two-photon physiology with the EM volume.
 
-**The decision rule dislodges a common instinct.** Learners arrive assuming nanoscale is the serious scale. The rule is the *coarsest* acquisition scale that resolves the analysis unit — choosing EM when light microscopy answers the question is a five-order-of-magnitude error, not caution.
+**The decision rule dislodges a common instinct.** Learners arrive assuming nanoscale is the serious scale. The rule is the *coarsest* acquisition scale that resolves the analysis unit — choosing EM when light microscopy answers the question is a million-fold error in data volume, not caution.
 
 ## Licence and credit
 

@@ -42,14 +42,15 @@ and arithmetic with fractions. Provide paper or a text editor and a calculator.
 - **30–40 min, slides 26–29:** narrate the count correction and its assumptions.
   Ask “Where did recall come from, and does it apply here?” If that is unknown, a
   corrected number is a conditional estimate, not recovered truth.
-- **40–65 min:** pairs complete worksheet sections 1–3. Pause the deck so learners
-  can see the input counts. At minute 55, check that misses appear in the recall
-  denominator, not the precision denominator.
+- **40–65 min:** pairs complete worksheet sections 1–3. Pause the deck; the input
+  counts are on the worksheet, not the slides. At minute 55, check that misses appear
+  in the recall denominator, not the precision denominator.
 - **65–80 min, slides 33–34:** pairs draft section 4 and exchange audits. A sample
   of predictions alone cannot measure missed synapses. Require independently
   annotated regions, matching rules and a version record.
-- **80–90 min, slides 35–37:** debrief with the key, then collect the exit ticket.
-  Ask for one claim the audit supports and one it leaves unresolved.
+- **80–90 min, slides 35–37:** debrief with the key, allow three minutes for the
+  worksheet's brief revision, then collect the exit ticket. Ask for one claim the
+  audit supports and one it leaves unresolved.
 
 Slides 4–8, 10–12, 16, 19–20, 24–25 and 30–32 are optional extension material;
 38–39 hold references and credit. Slide numbers include the cover. Allow additional

@@ -19,22 +19,42 @@ reassigned it here on 26 September 2026.)*
   each workshop. Communicating Science runs as two sessions. The hub pairs them
   with MERIT stages; the Teaching nav, Teaching Hub, models page, Career and
   Community track and hidden-curriculum index link to it. Nine content gates, full
-  build, links, 85 fragments, smoke and layout checks pass. Not yet pushed.)*
-- [ ] **Review and pilot the workshops (M).** Nine of the ten were drafted in
+  build, links, 85 fragments, smoke and layout checks pass. Pushed; remote CI green.)*
+- [~] **Review and pilot the workshops (M).** Nine of the ten were drafted in
   parallel from the Orientation exemplar. Read all 27 pages as a facilitator for
   consistency of voice, chaining of artifacts between sessions and the safety
   cautions in Professional Conduct and STEM Identity and Purpose. Run one workshop
   with a real cohort before calling the set taught. Done when each page has had a
-  human read and one pilot's notes are recorded.
+  human read and one pilot's notes are recorded. *(26 September: a full automated
+  facilitator read is in `docs/reviews/2026-09-pathways-workshop-review.md`. It fixed
+  cross-workshop name collisions, added the missing follow-through openers,
+  scheduled the Communicating Science peer checks, replaced Professional Conduct's
+  error case (it repeated workshop 2's version mix-up) with a voxel-size unit error,
+  and made a credit-dispute answer route to the supervisor rather than the dismissive
+  student. The numbered order 1–10 is the default chain; the hub explains how to move
+  Conduct or Identity earlier. Still open: a human read and one real pilot.)*
 
 Recommended order for the remaining site/content work:
 
-1. [ ] **Release and evidence check.** Verify branch CI after the push, review the
+1. [x] **Release and evidence check.** Verify branch CI after the push, review the
    four-session path as learner and instructor, and audit the remaining quantitative
    slide claims against primary sources. Label hypothetical examples, distinguish
    measured results from assumptions, and retain image-specific credits. Done when
    a claim/source checklist and clean build/browser results accompany the release.
    A branch push alone is not confirmation of a production deployment.
+   *(26 September, `compass-workshops`: branch CI green. The four-session path was
+   reviewed as learner and instructor (`docs/reviews/2026-09-four-session-review.md`):
+   timings, slide citations, every key value and both scripts check out; the Session
+   2 brief revision was missing and is added, and Sessions 3–4 now apply their record
+   and null to the learner's own brief at the exit ticket. All five graduate decks
+   (243 slides, 317 claims) were audited against primary sources: 166 verified, 70
+   corrected, 47 qualified, 20 hypothetical now labeled, 14 unverified and listed for
+   the owner; see `docs/reviews/claim-audit/README.md`. Matching errors were fixed on
+   Units 01–02, the Introduction plan, the Synapse Detection and Ethics reference
+   pages and one seed-paper record. Decks re-rendered; nine gates, full build, links,
+   85 fragments, smoke, layout and a 243-slide overflow/image check pass. Merged to
+   main or deployed: not yet. Owner decisions (hemibrain licence conflict, unsourced
+   heuristics, BossDB hosting list) are listed in the audit README.)*
 2. [ ] **Finish instructor packaging.** Give Ethics and Governance the same timed
    plan, activity and model-response treatment; then draft 10-week and 16-week
    syllabus mappings using the existing four-session block and technical units.

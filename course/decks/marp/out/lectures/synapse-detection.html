@@ -213,7 +213,7 @@
 <td><strong>Synful</strong> (Buhmann et al.)</td>
 <td>2021</td>
 <td>Synaptic partners directly, whole brain</td>
-<td><strong>F1 0.73, 0.68, 0.66, 0.59</strong> in four brain areas; <strong>244 million</strong> putative partners from FAFB; <strong>92–96%</strong> of edges correctly sorted weak (&lt;5) vs strong (≥5)</td>
+<td><strong>F1 0.73, 0.68, 0.66, 0.59</strong> in four brain areas; <strong>244 million</strong> putative partners from FAFB; <strong>92–96%</strong> of edges (two areas) correctly sorted weak (&lt;5) vs strong (≥5)</td>
 <td>Adult <em>Drosophila</em>, FAFB ssTEM</td>
 </tr>
 <tr>
@@ -227,8 +227,8 @@
 <td><strong>H01 detector</strong> (Shapson-Coe et al.)</td>
 <td>2024</td>
 <td>Three-class U-Net + ResNet-50 E/I classifier</td>
-<td>E and I recall differ by more than threefold — Part B</td>
-<td>Human temporal cortex, ssEM 4 × 4 nm, 33 nm sections</td>
+<td>E and I miss rates differ by more than threefold — Part B</td>
+<td>Human temporal cortex, ssEM 4 × 4 nm, ~33 nm sections</td>
 </tr>
 <tr>
 <td><strong>SimpSyn</strong> (Mohinta et al.)</td>
@@ -283,7 +283,7 @@
 </div>
 </div>
 </div>
-<p class="ask">Park et al.'s F1 of 0.955 is the highest number on the previous two slides. What would you need to know before calling it the best detector?</p>
+<p class="ask">Park et al.'s F1 of 0.955 is the highest per-synapse score on the previous two slides. What would you need to know before calling it the best detector?</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="14" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
 <h2 id="reading-the-table-aggregation-is-doing-enormous-work">Reading the table: aggregation is doing enormous work</h2>
@@ -291,7 +291,7 @@
 <div>
 <p><strong>SynEM, from above.</strong> Per-synapse and binary-connectome scores use different evaluation units. Table 3 also varies score and connection thresholds.</p>
 <p>Multiple contacts can help recover an edge when some contacts are missed. False positives, error correlation and the connection rule also affect performance.</p>
-<p><strong>Synful, from the other side.</strong> Per-connection F1 of 0.59–0.73 — but <strong>92–96%</strong> of edges correctly assigned to the weak/strong classes most analyses actually use.</p>
+<p><strong>Synful, from the other side.</strong> Partner-level F1 of 0.59–0.73 — but <strong>92–96%</strong> of edges (calyx, lateral horn) correctly assigned to the weak/strong classes most analyses actually use.</p>
 </div>
 <div>
 <div class="box box--good">
@@ -371,7 +371,7 @@
 <div>
 <p><strong>It does not predict:</strong></p>
 <ul>
-<li><strong>Performance elsewhere in the same volume.</strong> One Synful model: F1 0.73, 0.68, 0.66, 0.59 across four areas of one fly brain. A <strong>0.14-point spread</strong> within one sample exceeds the gap between many published methods.</li>
+<li><strong>Performance elsewhere in the same volume.</strong> One Synful model: F1 0.73, 0.68, 0.66, 0.59 across four areas of one fly brain. A <strong>0.14-point spread</strong> within one sample can exceed the gap between published methods.</li>
 <li><strong>Performance in mammalian tissue.</strong> Different voxel size, anisotropy, staining chemistry, synapse geometry — and no polyadic structure to exploit.</li>
 <li><strong>Whether your edges are right.</strong> Connectivity is scored on pairs, not the weighted graph you will use.</li>
 <li><strong>Inhibitory recall.</strong> CREMI does not separate sign at all.</li>
@@ -598,7 +598,7 @@
 <div>
 <div class="box box--warn">
 <p><strong>The naive ratio is wrong in both directions at once.</strong></p>
-<p>That is why the error on the <em>ratio</em> — 74.2% versus 67.1%, or <strong>7.1 percentage points</strong> — is larger than the error on either count alone.</p>
+<p>That is why the share moves — 74.2% versus 67.1%, or <strong>7.1 percentage points</strong> — further than either count's error alone would move it.</p>
 </div>
 </div>
 </div>
@@ -627,7 +627,7 @@
 <h2 id="what-follows-well-beyond-h01">What follows, well beyond H01</h2>
 <p><strong>1 — Any excitation/inhibition ratio computed straight from a released synapse table is biased toward excitation</strong>, by an amount set by the detector's class-specific recall. Report the recall figures alongside the ratio, or do not report the ratio.</p>
 <p><strong>2 — Comparisons are safer than absolutes.</strong> For two regions processed by the same detector and staining, the <em>difference</em> in E/I ratio survives a shared bias that the absolute value does not.</p>
-<p><strong>3 — The bias is not random, so more data will not fix it.</strong> Ten times the volume buys ten times the confidence in the wrong number.</p>
+<p><strong>3 — The bias is not random, so more data will not fix it.</strong> Ten times the volume buys a tighter interval around the wrong number.</p>
 <div class="box box--good">
 <p><strong>Back to the cold open.</strong> A defensible sentence: <em>&quot;74.2% of automatically detected synapses were classified excitatory; the authors' correction for class-specific detection rates, estimated from proofread axons, gives 67.1%.&quot;</em> Two numbers, both labelled.</p>
 </div>
@@ -646,7 +646,7 @@
 <tbody>
 <tr>
 <td><strong>Voxel size and anisotropy</strong></td>
-<td>CREMI/FAFB at 4 × 4 × 40 nm ssTEM; H01 at 4 × 4 nm in-plane with 33 nm sections; FIB/SEM near-isotropic. Heinrich et al. built a 3D U-Net specifically &quot;to optimally represent isotropic fields of view in non-isotropic data&quot; — the architecture itself encodes an assumption about the sampling grid</td>
+<td>CREMI/FAFB at 4 × 4 × 40 nm ssTEM; H01 at 4 × 4 nm in-plane with ~33 nm sections; FIB/SEM near-isotropic. Heinrich et al. built a 3D U-Net specifically &quot;to optimally represent isotropic fields of view in non-isotropic data&quot; — the architecture itself encodes an assumption about the sampling grid</td>
 </tr>
 <tr>
 <td><strong>Staining chemistry</strong></td>
@@ -675,7 +675,7 @@
 <p><strong>Across preparations, it is not.</strong></p>
 <ul>
 <li><strong>SimpSyn:</strong> across four invertebrate datasets, generalisation remains limited even for the model that wins within each.</li>
-<li><strong>SynapseNet</strong> built explicit domain-adaptation functionality in rather than relying on a large training set.</li>
+<li><strong>SynapseNet</strong> pairs a large annotated training set with explicit domain-adaptation functionality.</li>
 <li><strong>WASPSYN</strong> exists because methods that &quot;utilize in-domain labeled data and generalize to out-of-domain unlabeled data are in urgent need&quot;.</li>
 </ul>
 </div>
@@ -748,9 +748,9 @@
 </div>
 <div>
 <p><strong>Two calibration points set expectations.</strong></p>
-<p>Kreshuk et al. found their algorithm's error rate &quot;comparable to that of the experts&quot;. SynEM reports its expert annotators at <strong>93.6–94.6%</strong> precision and <strong>97.9–98.9%</strong> recall.</p>
+<p>Kreshuk et al. found their algorithm's error rate &quot;comparable to that of the experts&quot;. SynEM reports its two experts at <strong>93.6% / 94.6%</strong> and <strong>97.9% / 98.9%</strong> precision / recall.</p>
 <div class="box box--warn">
-<p><strong>Agreement in the mid-90s is roughly what two competent humans achieve.</strong> A detector matching your annotations more closely than that should make you suspicious of your annotations, not confident in the detector.</p>
+<p><strong>Agreement in the mid-to-high 90s is roughly what two competent humans achieve.</strong> A detector matching your annotations more closely than that should make you suspicious of your annotations, not confident in the detector.</p>
 </div>
 </div>
 </div>
@@ -815,7 +815,7 @@
 
 <p><strong>Detection methods.</strong> Kreshuk et al. 2011 (10.1371/journal.pone.0024899, ilastik synapse detection); Becker et al. 2013 (10.1109/TMI.2013.2267747, context cues); Dorkenwald et al. 2017 (10.1038/nmeth.4206, SyConn); Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Heinrich et al. 2018 (10.1007/978-3-030-00934-2_36, cleft segmentation in the complete <em>Drosophila</em> brain); Huang, Scheffer &amp; Plaza 2018 (10.3389/fncir.2018.00087, fully-automatic synapse prediction); Turner et al. 2020 (10.1109/ISBI45749.2020.9098489, attentional voxel association); Buhmann et al. 2021 (10.1038/s41592-021-01183-7, Synful); Park et al. 2022 (10.3389/fnana.2022.760279, cerebellar synapse detection); Mohinta et al. 2025 (arXiv:2509.17041, SimpSyn).</p>
 <p><strong>Sign and transmitter identity.</strong> Cano-Astorga et al. 2024 (10.3389/fnana.2024.1348032, asymmetric and symmetric synapses in volume EM); Eckstein et al. 2024 (10.1016/j.cell.2024.03.016, neurotransmitter classification in <em>Drosophila</em>).</p>
-<p><strong>Datasets, benchmarks and tools.</strong> Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01); CREMI challenge (cremi.org); Li et al. 2024 (10.1109/TMI.2024.3400276, WASPSYN); Muth et al. 2024 (10.1091/mbc.e24-11-0519, SynapseNet); Lauenburg et al. 2025 (10.1101/2025.08.09.669342, SynAnno).</p>
+<p><strong>Datasets, benchmarks and tools.</strong> Shapson-Coe et al. 2024 (10.1126/science.adk4858, H01); CREMI challenge (cremi.org); Li et al. 2024 (10.1109/TMI.2024.3400276, WASPSYN); Muth et al. 2025 (10.1091/mbc.e24-11-0519, SynapseNet); Lauenburg et al. 2025 (10.1101/2025.08.09.669342, SynAnno).</p>
 <p><strong>Source page.</strong> NeuroTrailblazers content library, <em>Synapse Detection</em> (/content-library/infrastructure/synapse-detection/). <a href="https://neurotrailblazers.org">https://neurotrailblazers.org</a></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-class="refs" data-theme="frontiers" lang="en-US" class="refs" data-marpit-pagination="39" style="--paginate:true;--class:refs;--theme:frontiers;" data-marpit-pagination-total="39">

@@ -126,7 +126,7 @@ Every one of those facts is a *consequence of a design decision* someone made in
 - Sectioning and imaging families
 - Artifact catalog, QA, and acquisition gates
 
-<div class="meta">Slides 6–21</div>
+<div class="meta">Slides 6–24</div>
 
 ---
 
@@ -177,7 +177,7 @@ A proofreader cannot resolve an apposition that was never resolvable.
 
 **And the failure arrives late.** Prep problems surface after acquisition — months and a petabyte later — when the only remaining options are expensive.
 
-The pilot reconstruction (slide 19) exists entirely to move that discovery forward in time.
+The pilot reconstruction (slide 21) exists entirely to move that discovery forward in time.
 
 </div>
 
@@ -190,7 +190,7 @@ The pilot reconstruction (slide 19) exists entirely to move that discovery forwa
 
 ### Arrest ultrastructure within seconds, before autolysis destroys it
 
-**Typical protocol.** Transcardial perfusion with a buffered aldehyde mix — commonly ~2–2.5% glutaraldehyde plus 2% paraformaldehyde in 0.1 M cacodylate or phosphate buffer, at physiological pH, often with added calcium.
+**Typical protocol.** Transcardial perfusion with a buffered aldehyde mix — e.g. 2.5% paraformaldehyde plus 1.25% glutaraldehyde in 0.08 M cacodylate buffer, pH 7.4, with 2 mM calcium chloride (Hua et al. 2015; MICrONS).
 
 Glutaraldehyde is the workhorse because it is bifunctional and cross-links rapidly. Paraformaldehyde penetrates faster and buys time.
 
@@ -290,7 +290,7 @@ Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldi
 
 <div class="box box--warn">
 
-**The unavoidable cost: dehydration shrinks tissue, typically 5–20% linearly** depending on protocol. This is **systematic, not random.**
+**The unavoidable cost: chemical preparation shrinks tissue — reported ~15–18% linearly, not always isotropically**, depending on protocol. This is **systematic, not random.**
 
 **Every absolute length, area, and volume measurement in EM connectomics is affected.**
 
@@ -302,6 +302,13 @@ Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldi
 - **Prefer ratios and within-volume comparisons** to absolute values compared across studies. A ratio between two populations in the same block cancels the shrinkage; an absolute spine-head volume compared to another lab's number does not.
 
 **Failure signatures:** cracks and tears from too-rapid dehydration or incomplete infiltration; resin too soft or too brittle to section cleanly — which shows up at the next step, not this one.
+
+<!--
+Shrinkage sources: Korogod et al. 2015 (doi:10.7554/eLife.05793) measured 16% loss of
+cortical thickness and 18% rostrocaudal shrinkage after chemical fixation, with none
+mediolaterally (~30% volume). They also cite Kalimo 1976 (16% linear) and Kinney et al.
+2013 (15% per axis). This is the whole chemical preparation, not dehydration alone.
+-->
 
 ---
 
@@ -340,9 +347,9 @@ Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldi
 |---|---|---|---|---|
 | **ssTEM / TEMCA** | 4 × 4 × 40 nm | Up to ~mm³ | You need a large volume and want the block to survive imaging | Section handling artifacts; heavy alignment work |
 | **ssSEM + ATUM** | 4 × 4 × 30–40 nm | Up to ~mm³ | You want serial sections with robust automated collection onto tape | Tape substrate constraints; re-imaging is possible but slow |
-| **GridTape TEM** | ~4 nm xy | ~10⁵–10⁶ µm³ | You want ssTEM throughput with automated, reel-to-reel section handling | Fixed aperture geometry; specialized infrastructure |
+| **GridTape TEM** | ~4 nm xy | Up to ~mm³ | You want ssTEM throughput with automated, reel-to-reel section handling | Fixed aperture geometry; specialized infrastructure |
 | **Multibeam SEM** | 4 × 4 × 30–40 nm | ~mm³ in months | Throughput is your binding constraint | Capital cost; a data-handling problem you must solve first |
-| **SBEM** | 10–20 × 10–20 × 25–50 nm | 10⁶–10⁷ µm³ | You want unattended block-face series with no section loss | Destructive; z-resolution limits thin-process tracing |
+| **SBEM** | 10–20 × 10–20 × 25–50 nm | 10⁵–~6 × 10⁷ µm³ | You want unattended block-face series with no section loss | Destructive; z-resolution limits thin-process tracing |
 | **FIB-SEM** | 4–8 nm **isotropic** | 10⁵–10⁶ µm³ | Tracing quality dominates and the volume is modest | Slow; hard ceiling on volume per run |
 
 <div class="box box--good">
@@ -350,6 +357,14 @@ Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldi
 **Read the last two columns together.** The right question is never "which is best" but *"which failure am I willing to own for the next two years?"*
 
 </div>
+
+<!--
+Volume sources: MICrONS (~mm³, GridTape autoTEM, doi:10.1038/s41586-025-08790-w);
+H01 (~1 mm³, ATUM + 61-beam multiSEM, doi:10.1126/science.adk4858); SBEM from
+~5 × 10⁵ µm³ (Motta et al. 2019, doi:10.1126/science.aay3134) to ~0.058 mm³
+(Svara et al. 2022, doi:10.1038/s41592-022-01621-0); FIB-SEM > 10⁶ µm³ continuous
+volumes (Xu et al. 2017). Other cells are typical ranges, not limits.
+-->
 
 ---
 
@@ -359,8 +374,8 @@ Water is replaced by graded ethanol or acetone, then by epoxy resin (Epon/Araldi
 
 | Parameter | Typical range | Increase it and… | Decrease it and… |
 |---|---|---|---|
-| Landing energy (SEM) | 1–2 keV | More depth signal, more charging, more beam damage | Better surface specificity, weaker signal |
-| Dwell time per pixel | 0.1–2 µs | Better SNR | Faster acquisition, noisier images |
+| Landing energy (SEM) | ~1–3 keV | More depth signal, more charging, more beam damage | Better surface specificity, weaker signal |
+| Dwell time per pixel | ~0.1–3 µs | Better SNR | Faster acquisition, noisier images |
 | Beam current | pA–nA | Better SNR at fixed dwell | Less damage and charging |
 | Tile overlap | 5–15% | More robust stitching | Less redundant data, faster |
 | Section thickness (z) | 30–50 nm | Fewer sections, faster, cheaper | Better z-continuity, more data |
@@ -373,6 +388,12 @@ This is why "just image it better" is rarely the answer at petascale. The honest
 
 </div>
 
+<!--
+Ranges are typical, drawn from published protocols: multibeam 1–3 keV (Eberle et al.
+2015); single-beam SBEM 1.4–2.8 keV, 0.45–3.2 µs dwell, 6–9% tile overlap (Pallotto et
+al. 2015; Hua et al. 2015). Use them as orientation, not as specifications.
+-->
+
 ---
 
 ## Attacking throughput directly
@@ -382,9 +403,9 @@ This is why "just image it better" is rarely the answer at petascale. The honest
 <div class="cols">
 <div>
 
-**Multibeam SEM** (Eberle et al. 2015). 61 or 91 electron beams scanning in parallel, aggregating on the order of a **gigapixel per second**. This is the technology that moved 1 mm³ from *impossible* to *an eighteen-month project*.
+**Multibeam SEM** (Eberle et al. 2015). 61 (later 91) electron beams scanning in parallel, with peak rates approaching a **gigapixel per second**. This is the technology that moved 1 mm³ from *impossible* to *under a year of imaging* (H01).
 
-**FAST-EM array tomography** (Kievits & Hoogenboom 2024). A multibeam volume-EM workflow built around optical detection, targeting routine multibeam operation rather than heroic single runs.
+**FAST-EM array tomography** (Kievits et al. 2024). A multibeam volume-EM workflow built around optical detection, targeting routine multibeam operation rather than heroic single runs.
 
 **SmartEM** (2025). Machine-learning-guided acquisition: spend dwell time **where the image is hard**, not uniformly. The first serious attack on the dose budget itself rather than on the beam count.
 
@@ -397,9 +418,17 @@ This is why "just image it better" is rarely the answer at petascale. The honest
 
 Multibeam parallelizes the *instrument*. FAST-EM industrializes the *workflow*. SmartEM makes the *dose allocation* adaptive.
 
-Only the third changes the square-root relationship that governs everything else — and it is the one to watch.
+Only the third changes how the square-root dose budget is spent — and it is the one to watch.
 
 </div>
+
+<!--
+Eberle et al. 2015 used 61 beams (demonstrated 0.18–0.72 GPixel/s, "approaching 1 GHz");
+ZEISS MultiSEM 506 has 91. H01's ~1 mm³ was imaged on a 61-beam multiSEM in 326 days,
+as reported by Collins et al. 2025 (arXiv 2405.10488) — the H01 main text does not
+state the duration. SmartEM (Meirovitch et al.) reports up to ~7-fold faster acquisition
+on a single-beam SEM.
+-->
 
 </div>
 </div>
@@ -444,7 +473,7 @@ Hot-knife does it for volume. Multibeam does it for throughput. SmartEM does it 
 <div class="cols">
 <div>
 
-**Expansion microscopy.** Physically swell the specimen in a hydrogel so that diffraction-limited optics resolve ~25–70 nm effective features. Buys **molecular identity** alongside near-EM geometry — the one thing standard EM cannot give.
+**Expansion microscopy.** Physically swell the specimen in a hydrogel so that diffraction-limited optics resolve ~20–70 nm effective features. Buys **molecular identity** alongside near-EM geometry — the one thing standard EM cannot give.
 
 *Costs:* expansion distortion that must be characterized, and dense reconstruction at scale is not yet routine.
 
@@ -467,6 +496,13 @@ It does not make EM obsolete — resolution, validation history, and dense-neuro
 </div>
 
 <p class="src">Tavakoli et al. 2025, 10.1038/s41586-025-08985-1.</p>
+
+<!--
+Resolution range: ~70 nm (Chen et al. 2015, doi:10.1126/science.1260088), ~25 nm with
+iterative ExM (Chang et al. 2017, doi:10.1038/nmeth.4261), ~20 nm lateral / ~50 nm axial
+effective in LICONN (~16-fold expansion). "First" is the authors' framing: their
+abstract says dense synapse-level LM reconstruction "has been out of reach".
+-->
 
 ---
 
@@ -639,7 +675,7 @@ Time-correlated → instrument drift or reagent degradation. Position-correlated
 
 **"An artifact rate summarizes an artifact."** Four scattered lost sections and four consecutive ones have the same rate and entirely different consequences. Distribution beats count.
 
-**"We will assess quality when acquisition finishes."** Then you will assess it having spent the budget. The pilot reconstruction is 1–2% of the project and it is the only stage where the answer can still change the protocol.
+**"We will assess quality when acquisition finishes."** Then you will assess it having spent the budget. The pilot reconstruction is perhaps 1–2% of the project (est.) and it is the only stage where the answer can still change the protocol.
 
 </div>
 </div>
@@ -658,7 +694,7 @@ Time-correlated → instrument drift or reagent degradation. Position-correlated
 - Chunked multi-resolution arrays, and why chunk shape is a real decision
 - Capacity, compute, and the cost that dominates all of them
 
-<div class="meta">Slides 22–38</div>
+<div class="meta">Slides 26–38</div>
 
 ---
 
@@ -870,7 +906,7 @@ Compare this to a database that must be running for the data to exist.
 
 **Chunks.** The volume is divided into blocks — commonly 64³ to 512³ voxels — stored as individual objects. **You fetch only the chunks you need.** This is the whole reason interactive viewing of a petabyte is possible.
 
-**Resolution pyramid.** Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about **30–50% extra storage**.
+**Resolution pyramid.** Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about **15–33% extra storage**.
 
 **Sharding.** Millions of tiny objects are slow and expensive in object stores, so chunks are bundled into larger shard files with an index. A pure cost/latency optimization that **matters enormously at petascale**.
 
@@ -881,6 +917,9 @@ The compression asymmetry is worth pausing on. Students often assume label data
 compresses better because it is "simpler". It does — but the tolerance for error is
 zero, which is why compressed-segmentation encodings exist as a separate format family
 rather than reusing image codecs.
+
+Pyramid overhead arithmetic: halving all three axes per level adds 1/8 + 1/64 + … ≈ 14%;
+halving only x and y (common for anisotropic EM) adds 1/4 + 1/16 + … ≈ 33%.
 -->
 
 ---
@@ -914,8 +953,8 @@ When someone asks *"why is this stored three times?"* — that is the answer.
 | Item | Estimate | Notes |
 |---|---|---|
 | Raw archive | **~1.5 PB** | Written once, read rarely → cold storage |
-| Aligned pyramid | **~2 PB** | Base + 30–50% pyramid; **hot** |
-| Affinity / boundary maps | ~1.5 PB | Often transient — delete after supervoxel generation |
+| Aligned pyramid | **~2 PB** | Base + ~33% (xy-only 2× pyramid); **hot** |
+| Affinity / boundary maps | ≥1.5 PB | Often transient — delete after supervoxel generation |
 | Supervoxels + segmentation | 0.2–0.8 PB | Label-aware compression helps a lot |
 | Meshes (all LODs) | 1–10 TB | Regenerated on edit |
 | Skeletons | 10–100 GB | Cheap — **archive them** |
@@ -929,6 +968,14 @@ When someone asks *"why is this stored three times?"* — that is the answer.
 **Budget for query load, not just capacity.** A petabyte in cold object storage is cheap. A 200 GB table answering 50 concurrent interactive queries is the part that needs engineering.
 
 </div>
+
+<!--
+These are estimates, not measurements. Raw: (10⁶/4)² × (10⁶/40) ≈ 1.56 × 10¹⁵ voxels at
+1 byte, uncompressed. A single 8-bit boundary map equals the raw size; three-channel
+affinities are 3× that. ~5 × 10⁸ synapse rows matches MICrONS ("0.5 billion synapses",
+doi:10.1038/s41586-025-08790-w), whose raw EM was ~2 PB. Mesh, skeleton and table sizes
+are order-of-magnitude assumptions.
+-->
 
 ---
 
@@ -961,6 +1008,12 @@ Compute and storage are line items you can negotiate with a cloud vendor. **Proo
 
 </div>
 
+<!--
+The GPU rate and hours-per-neuron are illustrative assumptions. Support for "dominant
+cost": the MICrONS paper states that proofreading and analysis remain the largest overall
+expense in person-hours (doi:10.1038/s41586-025-08790-w).
+-->
+
 </div>
 </div>
 
@@ -968,11 +1021,11 @@ Compute and storage are line items you can negotiate with a cloud vendor. **Proo
 
 ## Cost traps specific to this domain
 
-- **Egress.** Moving a petabyte *out* of a cloud region can cost more than storing it for a year. **Co-locate compute with data**; give collaborators compute *next to* the data rather than copies of it.
+- **Egress.** Moving a petabyte *out* of a cloud region can cost more than a year of cold-tier storage. **Co-locate compute with data**; give collaborators compute *next to* the data rather than copies of it.
 
 - **Small-object overhead.** Billions of unsharded chunks incur per-request charges and listing costs that can **exceed storage costs**. Shard.
 
-- **Forgotten intermediates.** Affinity maps are the size of the raw data. Delete them after supervoxel generation, or set a lifecycle policy — but only once you are confident you will not need to re-agglomerate.
+- **Forgotten intermediates.** Affinity maps are at least the size of the raw data. Delete them after supervoxel generation, or set a lifecycle policy — but only once you are confident you will not need to re-agglomerate.
 
 - **Idle hot storage.** Move the raw archive to cold tiers immediately after ingest validation.
 
@@ -981,6 +1034,12 @@ Compute and storage are line items you can negotiate with a cloud vendor. **Proo
 **Part B checkpoint.** Take your Module 7 study brief and put a number on it: raw petabytes, months of imaging, GPU-days, and — the one that decides feasibility — proofreading person-hours. If any of the four is unknown to within an order of magnitude, the brief is not yet a plan.
 
 </div>
+
+<!--
+Egress vs storage (AWS S3 US East list prices checked 2026-09): internet egress is
+$0.05–0.09/GB, so ~1 PB out costs roughly $50k+; Standard storage (~$0.023/GB-month) is
+~$250k+/year, but cold tiers cost far less per year than the egress. Check current prices.
+-->
 
 ---
 
@@ -1023,7 +1082,7 @@ Compute and storage are line items you can negotiate with a cloud vendor. **Proo
 - Materialization versions, and the number-one silent failure
 - The platform landscape, and this week's assignment
 
-<div class="meta">Slides 39–56</div>
+<div class="meta">Slides 40–54</div>
 
 ---
 
@@ -1056,7 +1115,7 @@ With hundreds of proofreaders editing concurrently, this is unworkable.
 </div>
 </div>
 
-- **A merge is adding an edge.** Microseconds, not gigabytes.
+- **A merge is adding an edge.** Seconds, not gigabytes (median ~4 s in CAVE).
 - **A split is removing edges** — a minimum cut separating two user-specified points.
 - **The graph is hierarchical and chunked**, so component queries over millions of supervoxels stay fast.
 - **Every edit is an entry in an append-only log**, with author, timestamp, operation. Nothing is destroyed; any past state is recoverable.
@@ -1115,7 +1174,7 @@ or a fabricated code revision. Record coordinate frame and units for spatial que
 ### Six lines at the top of every notebook. Non-negotiable.
 
 ```python
-# --- reproducibility header -------------------------------------------
+# --- reproducibility header (illustrative values) ----------------------
 DATASET        = "minnie65_public"      # dataset name, not "the volume"
 MAT_VERSION    = 943                    # pinned; never "latest"
 QUERY_DATE     = "2026-03-14"           # when this ran
@@ -1237,14 +1296,14 @@ The fourth is the common case at petascale, and it is why co-located compute mat
 |---|---|---|
 | **Neuroglancer** | Browser-based viewer for precomputed volumes | You want to *look* at any volume. The universal client. |
 | **CloudVolume / Igneous** | Python library for reading/writing precomputed data; distributed processing | You want programmatic access to voxels, meshes, skeletons |
-| **BossDB** | Community archive and API across many datasets | You need MICrONS, H01, Kasthuri, Witvliet, zebrafish from one interface |
+| **BossDB** | Community archive and API across many datasets | You need MICrONS, Kasthuri, Witvliet, zebrafish from one interface |
 | **CAVE / PyChunkedGraph** | Versioned proofreading + annotation backend | You are querying MICrONS or FlyWire *with versions* |
 | **neuPrint** | Neo4j-backed graph service over released connectomes | You want a connectivity graph query and no infrastructure work |
 | **DVID** | Distributed versioned image-oriented dataservice | Janelia-lineage pipelines |
 | **webKnossos** | Browser-based annotation and proofreading | You need to annotate, in a browser, with a team |
 | **CATMAID** | Collaborative skeleton-tracing over massive image data | Fly larva and FAFB-lineage tracing |
 
-<p class="src">BossDB (10.1038/s41592-018-0181-1); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); VAST (10.3389/fncir.2018.00088).</p>
+<p class="src">BossDB (10.3389/fninf.2022.828787); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); VAST (10.3389/fncir.2018.00088).</p>
 
 ---
 
@@ -1283,18 +1342,28 @@ Pinned version. Named population. A distribution, not a single number. Runs in m
 
 | Bottleneck | Where it is today | What the 500× demands |
 |---|---|---|
-| **Sectioning reliability** | Lost-section rates tolerable at 20,000 sections | Millions of sections; the same rate becomes catastrophic |
-| **Acquisition throughput** | ~1 Gpx/s with multibeam | Adaptive dose (SmartEM), more parallel instruments, industrialized workflow |
+| **Sectioning reliability** | Lost-section rates tolerable at ~28,000 sections | ~2 × 10⁵ far larger sections (est.); the same rate becomes catastrophic |
+| **Acquisition throughput** | Approaching 1 Gpx/s peak (multibeam) | Adaptive dose (SmartEM), more parallel instruments, industrialized workflow |
 | **Alignment robustness** | Human intervention at hard regions | Must be unattended, or the human cost scales with the volume |
 | **Segmentation accuracy** | Good enough that proofreading is affordable at mm³ | Error rates must fall faster than volume rises |
 | **Proofreading labor** | **The dominant cost already** | Automated error detection, better triage, community proofreading |
-| **Storage economics** | ~2 PB hot per mm³ | ~800 PB; egress and query load become the design constraint |
+| **Storage economics** | ~1.6 PB raw per mm³ | ~800 PB raw (est.); egress and query load become the design constraint |
 
 <div class="box">
 
 Note which row is bold. Every other row is a research problem with an obvious line of attack. **Proofreading is the one where the answer is not yet in view** — which is exactly why Module 9 opens there.
 
 </div>
+
+<!--
+Sources and assumptions for this table. Mouse brain ~500 mm³ (Collins et al. 2025,
+Cell Rep Methods, arXiv 2405.10488). MICrONS: 27,972 sections at 40 nm nominal onto
+GridTape (MICrONS Consortium 2025, doi:10.1038/s41586-025-08790-w). ~2 × 10⁵ sections
+is an estimate: a mouse brain is at most ~8 mm on its shortest axis (Allen CCFv3
+bounding box) ÷ 40 nm. Multibeam peak rate: Eberle et al. 2015 report up to
+0.72 GPixel/s and "approaching 1 GHz". ~800 PB raw is an estimate at 4×4×40 nm, 8-bit,
+uncompressed; Abbott et al. 2020 (doi:10.1016/j.cell.2020.08.010) give roughly 1 EB.
+-->
 
 ---
 
@@ -1357,7 +1426,7 @@ Note which row is bold. Every other row is a research problem with an obvious li
 
 - Januszewski et al. 2018 — flood-filling networks
 - Dorkenwald et al. 2025 — CAVE
-- Kievits & Hoogenboom 2024 — FAST-EM
+- Kievits et al. 2024 — FAST-EM
 - SmartEM 2025 — ML-guided acquisition
 - Tavakoli et al. 2025 — LICONN
 
@@ -1407,11 +1476,11 @@ Reproducibility is not paperwork. It is the only thing that lets you say *which*
 
 **Preparation and staining.** Hua, Laserstein & Helmstaedter 2015 (10.1038/ncomms8923, rOTO en-bloc); Mikula & Denk 2015 (10.1038/nmeth.3361, whole-brain staining); Pallotto et al. 2015 (10.7554/eLife.08206, ECS-preserving fixation).
 
-**Sectioning and acquisition.** Denk & Horstmann 2004 (10.1371/journal.pbio.0020329); Knott et al. 2008 (10.1523/JNEUROSCI.3189-07.2008); Bock et al. 2011 (10.1038/nature09802, TEMCA); Hayworth et al. 2014 (10.3389/fncir.2014.00068, ATUM + WaferMapper), 2015 (10.1038/nmeth.3292, hot-knife), 2019 (10.1038/s41592-019-0641-2, GCIB-SEM); Eberle et al. 2015 (10.1111/jmi.12224, multibeam); Xu et al. 2017 (10.7554/eLife.25916); Phelps et al. 2021 (10.1016/j.cell.2020.12.013, GridTape); Kievits & Hoogenboom 2024 (10.1515/mim-2024-0005, FAST-EM); SmartEM 2025 (10.1038/s41592-025-02929-3).
+**Sectioning and acquisition.** Denk & Horstmann 2004 (10.1371/journal.pbio.0020329); Knott et al. 2008 (10.1523/JNEUROSCI.3189-07.2008); Bock et al. 2011 (10.1038/nature09802, TEMCA); Hayworth et al. 2014 (10.3389/fncir.2014.00068, ATUM + WaferMapper), 2015 (10.1038/nmeth.3292, hot-knife), 2019 (10.1038/s41592-019-0641-2, GCIB-SEM); Eberle et al. 2015 (10.1111/jmi.12224, multibeam); Xu et al. 2017 (10.7554/eLife.25916); Phelps et al. 2021 (10.1016/j.cell.2020.12.013, GridTape); Kievits et al. 2024 (10.1515/mim-2024-0005, FAST-EM); Meirovitch et al., SmartEM 2025 (10.1038/s41592-025-02929-3).
 
 **Alignment, segmentation, synapses.** Saalfeld et al. 2012 (10.1038/nmeth.2072); SOFIMA (github.com/google-research/sofima); Januszewski et al. 2018 (10.1038/s41592-018-0049-4, flood-filling); Berning et al. 2015 (10.1016/j.neuron.2015.09.003, SegEM); Funke et al. 2019 (10.1109/TPAMI.2018.2835450); Staffler et al. 2017 (10.7554/eLife.26414, SynEM); Dorkenwald et al. 2017 (10.1038/nmeth.4206, SyConn); Buhmann et al. 2021 (10.1038/s41592-021-01183-7, Synful).
 
-**Infrastructure.** BossDB (10.1038/s41592-018-0181-1); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); CATMAID (10.1093/bioinformatics/btp266); VAST (10.3389/fncir.2018.00088); CloudVolume (github.com/seung-lab/cloud-volume); Neuroglancer (github.com/google/neuroglancer).
+**Infrastructure.** BossDB (10.3389/fninf.2022.828787; ecosystem 10.1038/s41592-018-0181-1); neuPrint (10.3389/fninf.2022.896292); CAVE (10.1038/s41592-024-02426-z); DVID (10.3389/fncir.2019.00005); webKnossos (10.1038/nmeth.4331); CATMAID (10.1093/bioinformatics/btp266); VAST (10.3389/fncir.2018.00088); CloudVolume (github.com/seung-lab/cloud-volume); Neuroglancer (github.com/google/neuroglancer).
 
 **Course material.** NeuroTrailblazers technical training Units 03, 04.
 <https://neurotrailblazers.org>

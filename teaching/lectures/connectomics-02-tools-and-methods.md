@@ -77,8 +77,9 @@ invented records and does not query a public service.
 - **75–85 min, slide 51:** exchange records and reproduce the selected IDs.
   Compare with the [model responses]({{ '/teaching/lectures/tools-and-methods-answers/' | relative_url }}).
   Missing metadata is an outcome to report, not something to guess.
-- **85–90 min, slide 54:** collect the methods record and exit ticket. Carry the
-  endpoint and its provenance into Algorithms and Applications.
+- **85–90 min, slide 54:** collect the methods record and exit ticket. Learners add
+  the version, filter and query identity their own endpoint needs to the study
+  brief, and bring it to Algorithms and Applications.
 
 Unselected slides are optional depth for this route; 55–56 hold sources and credit.
 The full-course assignment on slide 52 is separate from the offline worksheet.

@@ -141,7 +141,7 @@ and evaluate" was double-barrelled.
 - The cost argument, in numbers you can compute
 - What structure can and cannot establish
 
-<div class="meta">Slides 6–20</div>
+<div class="meta">Slides 7–26</div>
 
 ---
 
@@ -230,7 +230,7 @@ If you take one word from this slide, take **merge**. Module 9 spends most of Pa
 2. *"Neuron X strongly excites neuron Y."*
 3. *"This circuit computes heading direction during navigation."*
 
-<p class="ask">Hold your answer. We come back to this in eleven slides.</p>
+<p class="ask">Hold your answer. We come back to this in twelve slides.</p>
 
 <!--
 Cold open. Do not resolve it now. Take a show of hands on each: most rooms accept 1,
@@ -259,6 +259,11 @@ sign and count predicts strength), 3 is Bin C (needs physiology).
 | Postsynaptic density | 30–50 nm thick | No |
 
 Electron microscopy at 4 × 4 × 40 nm resolves every row. **That is the entire reason the field tolerates the cost on the next slides.**
+
+<!--
+Sizes are approximate textbook ranges; they vary by region, species, and fixation, and
+are not tied to a single source. Treat them as orders of magnitude, not measurements.
+-->
 
 ---
 
@@ -339,7 +344,7 @@ An anatomical synapse is called on **converging independent evidence**, not on o
 
 </div>
 
-**Gray type I vs type II.** Asymmetric, prominent PSD, round vesicles → *putatively excitatory*. Symmetric, thin PSD, often flattened vesicles → *putatively inhibitory*. Note the word "putatively": this is the Bin B assumption from three slides ahead, and it is the single most common unstated assumption in the literature.
+**Gray type I vs type II.** Asymmetric, prominent PSD, round vesicles → *putatively excitatory*. Symmetric, thin PSD, often flattened vesicles → *putatively inhibitory*. Note the word "putatively": this is the Bin B assumption from six slides ahead, and it is the single most common unstated assumption in the literature.
 
 ---
 
@@ -373,21 +378,32 @@ orders of magnitude from this arithmetic, nothing else in it is trustworthy.
 
 <!-- _class: dense -->
 
-| Target | Volume | Raw data at 4 × 4 × 40 nm | Status |
+| Target | Volume | Raw data at 4 × 4 × 40 nm (est.) | Status |
 |---|---|---|---|
 | *C. elegans* nervous system | ~0.00005 mm³ | ~0.1 TB | Done, repeatedly, since 1986 |
-| Adult *Drosophila* brain | ~0.02–0.03 mm³ | ~40 TB | Done — FAFB, hemibrain, FlyWire |
+| Adult *Drosophila* brain | ~0.08 mm³ | ~125 TB | Done — FAFB, hemibrain, FlyWire |
 | Mouse cortical column / 1 mm³ | 1 mm³ | ~1.6 PB | Done — MICrONS, H01 |
 | **Whole mouse brain** | ~500 mm³ | **~800 PB** | **The current grand challenge** |
 | Whole human brain | ~1.2 × 10⁶ mm³ | ~10²¹ bytes | Not a plan; a horizon |
 
 <div class="box box--warn">
 
-**The jump that matters.** Fly → mouse mm³ is ~40×. mm³ → whole mouse brain is ~500×, and it is **not a jump in microscopy.** It is a jump in sectioning reliability, storage economics, alignment robustness, segmentation accuracy, and above all *proofreading labor.*
+**The jump that matters.** Fly → mouse mm³ is ~12×. mm³ → whole mouse brain is ~500×, and it is **not a jump in microscopy.** It is a jump in sectioning reliability, storage economics, alignment robustness, segmentation accuracy, and above all *proofreading labor.*
 
 </div>
 
 NIH BRAIN CONNECTS (first awards 2023) exists because that 500× is an engineering program, not a microscope purchase.
+
+<!--
+The raw-data column is arithmetic (volume ÷ 640 nm³ per voxel, 1 byte per voxel), not
+measured dataset sizes. Checks against real releases: FAFB was ~106 TB for a brain of
+~8 × 10⁷ µm³ (Zheng et al. 2018); H01 is 1.4 PB and MICrONS ~2 PB raw. Mouse brain
+~500 mm³ (C57BL/6J, Badea et al. 2007). The worm volume is a rough estimate, consistent
+with the ~10-million-fold worm-to-mouse brain volume in Abbott et al. 2020, Fig. 1.
+Whole mouse: ~800 PB at 4 × 4 × 40 nm, 8-bit, uncompressed; Abbott et al. 2020
+(doi:10.1016/j.cell.2020.08.010) give roughly 1 EB. Both human and mouse rows are
+projections, not measurements.
+-->
 
 ---
 
@@ -532,7 +548,7 @@ plan, not a limitation.
 </div>
 </div>
 
-<p class="ask">Claim 3 is true of the fly central complex. It took the connectome plus a decade of physiology. The connectome alone could not have established it — and did not.</p>
+<p class="ask">Claim 3 is true of the fly central complex. It took the connectome plus years of physiology. The connectome alone could not have established it — and did not.</p>
 
 ---
 
@@ -625,7 +641,7 @@ Row 4 returns in Module 9. **Merge errors do not add noise symmetrically.** One 
 - The modality chart and the tradeoff triangle
 - Representations, and cross-scale linkage
 
-<div class="meta">Slides 21–37</div>
+<div class="meta">Slides 28–40</div>
 
 ---
 
@@ -661,14 +677,14 @@ Analysis scale = the synapse and the spine neck. Spine necks are 50–200 nm. �
 
 **Endpoint: "does area A project to area B at all"**
 
-Analysis scale = the axon bundle. → Light-sheet imaging of a bulk tracer at 1 µm is not merely adequate — → **it is the correct choice,** because it costs about five orders of magnitude less.
+Analysis scale = the axon bundle. → Light-sheet imaging of a bulk tracer at 1 µm is not merely adequate — → **it is the correct choice,** because it needs roughly a million times fewer voxels.
 
 </div>
 </div>
 
 <div class="box box--warn">
 
-Every step finer multiplies data volume, alignment difficulty, and proofreading hours. Choosing EM when light microscopy answers the question is not caution. It is a five-order-of-magnitude error.
+Every step finer multiplies data volume, alignment difficulty, and proofreading hours. Choosing EM when light microscopy answers the question is not caution. It is a million-fold error in data volume.
 
 </div>
 
@@ -689,7 +705,7 @@ should be dislodged. The correct instinct is scale-matching, not scale-maximizin
 | **Light-sheet / whole-brain LM with tracers** | 0.5–2 µm (xy) | Whole mouse brain | Long-range projection maps, many animals | Cannot resolve neurites in neuropil; no synapses |
 | **Confocal / two-photon** | 200–300 nm lateral | mm³, *in vivo* possible | Function (calcium), molecular labels, live | Diffraction-limited; overlap ≠ connection |
 | **Expansion microscopy** | ~25–70 nm effective | Up to ~mm³ with effort | Molecular identity *plus* near-EM geometry | Expansion distortion; not yet routine for dense reconstruction at scale |
-| **Array tomography** | ~50–100 nm lateral, 70 nm sections | ~10⁵ µm³ | Multiplexed protein labeling at synapse-scale geometry | Section loss; lower z-resolution than EM |
+| **Array tomography** | ~200 nm lateral (optical), 70–200 nm sections | ~10⁵ µm³ | Multiplexed protein labeling at synapse-scale geometry | Section loss; lower z-resolution than EM |
 | **Barcoded projection mapping** (MAPseq/BARseq) | Single-cell identity, no geometry | Whole brain, 10⁴–10⁶ cells | Projection patterns of enormous numbers of cells, cheaply | No synapses, no morphology, no local circuit |
 | **ssTEM / ssSEM (multibeam)** | 4 × 4 × 40 nm | Up to ~1 mm³ today | Dense synapse-resolution reconstruction at scale | Anisotropic; section artifacts; enormous cost |
 | **SBEM** | 10–20 × 10–20 × 25–50 nm | ~10⁶–10⁷ µm³ | Automated block-face series, no section handling | Destructive; z-resolution limits thin-process tracing |
@@ -780,7 +796,7 @@ These are not weaker connectomics. They are **instruments for different question
 <div class="cols">
 <div>
 
-**Tracer injection + light-sheet.** Anterograde and retrograde tracers, cleared whole brains, registered to a common atlas. The Allen Mouse Brain Connectivity Atlas is the canonical product: a region-by-region projection matrix across hundreds of animals.
+**Tracer injection + light-sheet.** Anterograde and retrograde tracers, cleared whole brains, registered to a common atlas. The Allen Mouse Brain Connectivity Atlas is the canonical product: a region-by-region projection matrix from well over a thousand tracer experiments.
 
 **What it gives:** long-range architecture, across many animals, with statistical power over individuals.
 
@@ -864,7 +880,7 @@ Every time a claim crosses a scale, ask what **new** measurement licensed the cr
 </div>
 </div>
 
-<p class="ask">This is the single most useful idea in Part B, and it costs nothing to apply. Registration residuals (four slides on) are the quantitative version of the same discipline.</p>
+<p class="ask">This is the single most useful idea in Part B, and it costs nothing to apply. Registration residuals (three slides on) are the quantitative version of the same discipline.</p>
 
 ---
 
@@ -872,7 +888,7 @@ Every time a claim crosses a scale, ask what **new** measurement licensed the cr
 
 ### The same neuron exists in four representations, and conversions are lossy and one-way
 
-| Representation | Size per neuron | Native operation | Discards |
+| Representation | Size per neuron (rough) | Native operation | Discards |
 |---|---|---|---|
 | **Volume** (labeled voxels) | GB | "Is this a merge error?" | Nothing — but unusable at scale for most analysis |
 | **Mesh** (surface) | 10–100 MB | Spine shape, surface area, apposition | Interior; voxel-level evidence |
@@ -993,7 +1009,7 @@ Five questions, five minutes, and it front-runs most of the failures the rest of
 - Where to get the data
 - The open problems worth your attention
 
-<div class="meta">Slides 38–56</div>
+<div class="meta">Slides 42–59</div>
 
 ---
 
@@ -1034,14 +1050,14 @@ Five questions, five minutes, and it front-runs most of the failures the rest of
 | 2013 | Dense inner plexiform layer reconstruction (Helmstaedter) | 1, **2** |
 | 2014 | EyeWire: citizen-science proofreading at scale (Kim et al.) | **7**, 8 |
 | 2015 | Saturated reconstruction of neocortex (Kasthuri); multibeam SEM | **1**, 2 |
-| 2017 | Flood-filling networks (Januszewski); whole-brain larval zebrafish (Hildebrand) | **3**, 1 |
-| 2018 | FAFB — full adult fly brain imaged (Zheng & Bock) | **1** |
-| 2020 | hemibrain: largest proofread connectome + neuPrint release (Scheffer) | 1, **7** |
-| 2021 | H01 human cortex; MICrONS mm³ function+structure; *C. elegans* development (Witvliet) | 1, **4**, **5**, **8** |
-| 2023 | Whole-larva brain connectome with full synaptic graph (Winding) | 1, **6** |
+| 2017 | Whole-brain larval zebrafish ssEM (Hildebrand) | **1** |
+| 2018 | FAFB — full adult fly brain imaged (Zheng & Bock); flood-filling networks (Januszewski) | **1**, **3** |
+| 2020 | hemibrain: then-largest proofread connectome + neuPrint release (Scheffer) | 1, **7** |
+| 2021 | H01 human cortex and MICrONS mm³ released (preprints); *C. elegans* development (Witvliet) | 1, **4**, **5**, **8** |
+| 2023 | Larval fly brain connectome with full synaptic graph (Winding) | 1, **6** |
 | 2024 | **FlyWire** whole adult fly brain, community-proofread (Dorkenwald); **connectome-constrained models predicting activity** (Lappalainen) | 1, **6**, **7** |
-| 2024–25 | Male CNS releases; sexual dimorphism at connectome scale | **5** |
-| **2025** | **MICrONS flagship** (functional connectomics across mouse visual cortex); songbird basal ganglia connectome; **LICONN** — first light-microscopy route to dense synapse-level reconstruction | 1, **4**, **5** |
+| 2024–26 | Male CNS releases; sexual dimorphism at connectome scale | **5** |
+| **2025** | **MICrONS flagship** (functional connectomics across mouse visual cortex); songbird basal ganglia connectome (preprint); **LICONN** — first light-microscopy route to dense synapse-level reconstruction | 1, **4**, **5** |
 
 <p class="src">Stream numbers refer to the previous slide. Bold marks the stream each milestone principally advanced. Compiled from the NeuroTrailblazers connectomics evidence map; DOIs on the references slide.</p>
 
@@ -1087,7 +1103,7 @@ Anyone promising that a connectome will explain a brain should be asked what hap
 
 **FlyWire (2024)** — the whole adult brain: **~139,000 neurons, ~54.5 million synapses**, proofread by a distributed community on top of FAFB.
 
-**Male CNS and optic lobes (2024–25)** — the same brain in a second sex, which makes *comparison* possible.
+**Male CNS and optic lobes (2024–26)** — the same brain in a second sex, which makes *comparison* possible.
 
 </div>
 <div>
@@ -1142,11 +1158,11 @@ Demonstrated that human tissue can be prepared and reconstructed at this scale, 
 
 ### The strongest form of connectomics result available today
 
-**1. Retinal direction selectivity (Briggman 2011; Kim 2014).** Reconstruction showed that starburst amacrine cell inhibition onto direction-selective ganglion cells is organized by *space–time wiring specificity* — a structural asymmetry that predicts the computation. Structure gave the mechanism; physiology confirmed it.
+**1. Retinal direction selectivity (Briggman 2011; Kim 2014).** Reconstruction showed direction-specific wiring of starburst amacrine inhibition onto direction-selective ganglion cells (Briggman), and *space–time wiring specificity* of bipolar inputs onto starburst dendrites (Kim) — structural asymmetries that predict the computation. Structure proposed the mechanism; physiology tested it.
 
 **2. The fly central complex as a ring attractor.** The connectome showed a ring of heading-tuned cells with the recurrent and inhibitory architecture a ring attractor requires. The theory pre-existed; the wiring made it a specific, testable claim about identified cells.
 
-**3. Connectome-constrained models (Lappalainen et al. 2024).** Fix a network model's connectivity to the measured fly visual connectome, fit only the remaining parameters, and the model **predicts neural responses** that were then tested.
+**3. Connectome-constrained models (Lappalainen et al. 2024).** Fix a network model's connectivity to the measured fly visual connectome, fit only the remaining parameters, and the model **predicts neural responses** that agreed with measurements from 26 prior studies.
 
 <div class="box box--good">
 
@@ -1167,7 +1183,7 @@ Read the pattern. In all three the connectome **removes free parameters** and tu
 | *Platynereis* larva | Annelid | Whole-animal connectomes in a distant phylum |
 | *Octopus* vertical lobe | Cephalopod | A learning circuit that evolved **independently** of ours |
 | Larval zebrafish whole brain | Vertebrate | Whole-brain ssEM in a vertebrate |
-| Songbird basal ganglia (2025) | Zebra finch | Motor learning; a vocal-imitation circuit |
+| Songbird basal ganglia (2025 preprint) | Zebra finch | Motor learning; a vocal-imitation circuit |
 | Fly male vs female CNS | *Drosophila* | Sexual dimorphism **at connectome scale** |
 
 <div class="box box--good">
@@ -1206,7 +1222,7 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 <div class="cols">
 <div>
 
-**The 500× problem.** Whole mouse brain is ~800 PB. The bottlenecks are sectioning reliability, alignment robustness, segmentation accuracy, and **proofreading labor** — not microscope resolution. This is what BRAIN CONNECTS is for.
+**The 500× problem.** Whole mouse brain is ~800 PB (est.). The bottlenecks are sectioning reliability, alignment robustness, segmentation accuracy, and **proofreading labor** — not microscope resolution. This is what BRAIN CONNECTS is for.
 
 **Proofreading is the dominant cost.** Not compute, not storage. It is a hiring, training, retention, and quality-management problem. Module 9 Part A is largely about making that labor go further.
 
@@ -1231,9 +1247,9 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 <div class="cols">
 <div>
 
-**Reconstructed volume** has grown by roughly nine orders of magnitude since 1986 — from a worm's ~0.00005 mm³ to a mouse mm³ — driven by throughput engineering, not by resolution gains. Resolution has barely changed.
+**Reconstructed volume** has grown by roughly four orders of magnitude since 1986 — from a worm's ~0.00005 mm³ to a mouse mm³ — driven by throughput engineering, not by resolution gains. Resolution has barely changed.
 
-**Automation** carried it. Flood-filling networks (2018) and learned agglomeration changed the human labor per millimeter of reconstructed cable by orders of magnitude. Without that, FlyWire and MICrONS are not affordable at any budget.
+**Automation** carried it. Flood-filling networks (2018) and learned agglomeration sharply cut the human labor per millimeter of reconstructed cable. Without that, FlyWire and MICrONS are not affordable at any budget.
 
 **Openness** followed. EyeWire (2014) and FlyWire (2024) made proofreading a community activity; BossDB, neuPrint, CAVE and Neuroglancer made the data usable by people who did not collect it.
 
@@ -1316,7 +1332,7 @@ Item 8 is the one that will make you useful in a journal club immediately.
 </div>
 <div>
 
-**Defensible**
+**Defensible** (illustrative numbers)
 
 *"Feedback axons target more distal compartments than L4 inputs, relative to a surface-area null, across 63 proofread cells. These data do not establish that these synapses carry prediction error."*
 

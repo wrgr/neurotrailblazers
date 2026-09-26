@@ -52,7 +52,7 @@ slide 54 is an extension, not additional work required in this short session.
 
 **Outcome:** build a directed graph under stated rules, compare reciprocity with an
 explicit null, and produce an analysis card that distinguishes enrichment, evidence
-and error sensitivity. Bring the study brief, audit and provenance record from the
+and error sensitivity. Bring the study brief, audit and methods record from the
 preceding sessions. Fractions are sufficient; no graph-library knowledge is assumed.
 
 **Preparation:** open the deck and worksheet/key, check the definitions of reciprocal
@@ -80,7 +80,8 @@ before class; the same exact census is supplied on paper as a fallback.
   would support a realistic error model.
 - **85–90 min, slide 52:** collect cards and exit tickets: “My result is conditional
   on ___; the next measurement that could change it is ___.” A justified negative
-  result meets the learning objective.
+  result meets the learning objective. Learners also add their own endpoint's null
+  and one fixed structure to the study brief they carried from Session 1.
 
 Unselected slides are optional depth for this route; 57–58 carry references and
 credit. The full lecture adds segmentation algorithms, the larger hypothetical

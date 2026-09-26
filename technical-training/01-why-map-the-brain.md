@@ -123,17 +123,21 @@ temporal cortex sample and the MICrONS mouse visual cortex volume are both rough
 one cubic millimeter and both are reported in the 1.4–2 PB range depending on what is
 counted and how it is compressed.
 
-Now extrapolate, and notice where it breaks:
+Now extrapolate, and notice where it breaks. Every row is arithmetic at the stated voxel
+size, 8-bit and uncompressed, not the size of a released dataset (FAFB, imaged at
+4×4×40 nm, is about 106 TB). The two bottom rows are projections. Published projections
+are rougher: Abbott et al. (2020, *Cell*) put a whole mouse brain at roughly a million
+terabytes, about 1 EB.
 
 | Target | Volume | Raw data at 4×4×40 nm | Status |
 |---|---|---|---|
 | *C. elegans* nervous system | ~0.00005 mm³ | ~0.1 TB | Done, repeatedly, since 1986 |
-| Adult *Drosophila* brain | ~0.02–0.03 mm³ | ~40 TB | Done (FAFB / FlyWire, hemibrain) |
+| Adult *Drosophila* brain | ~0.08 mm³ | ~125 TB | Done (FAFB / FlyWire, hemibrain) |
 | Mouse cortical column / 1 mm³ | 1 mm³ | ~1.6 PB | Done (MICrONS) |
-| Whole mouse brain | ~500 mm³ | **~800 PB** | The current grand challenge |
+| Whole mouse brain | ~500 mm³ | **~800 PB** (est.) | The current grand challenge |
 | Whole human brain | ~1.2 × 10⁶ mm³ | **~10²¹ bytes** | Not a plan; a horizon |
 
-**Teaching point.** The jump from fly to mouse cortex is ~40×. The jump from 1 mm³ to
+**Teaching point.** The jump from fly brain to 1 mm³ of mouse cortex is ~12×. The jump from 1 mm³ to
 whole mouse brain is ~500×, and it is not a jump in imaging alone — it is a jump in
 sectioning reliability, storage economics, alignment robustness, segmentation
 accuracy, and above all *proofreading labor*. Programs such as NIH BRAIN CONNECTS

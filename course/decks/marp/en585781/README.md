@@ -1,7 +1,7 @@
 # EN.585.781 — Frontiers in Neuroengineering: connectomics block
 
 Lecture decks for modules 7–9, the three-module connectomics block (instructor: Will
-Gray Roncal). These are presentation decks, not lecture *plans* — unlike
+Gray-Roncal). These are presentation decks, not lecture *plans* — unlike
 `technical-training/slides/`, which are build plans for an instructor assembling a
 lecture.
 

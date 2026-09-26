@@ -376,17 +376,18 @@ pathology caveat on slide 10).
 | **MICrONS** (microns-explorer.org) | Creative Commons Attribution 4.0 International | Retain creator identification and copyright notice, indicate modifications, include the license text or a link; impose no further restrictions downstream. Follow the site's citation policy — MICrONS Consortium et al. (2025), *Nature* 640: 435–47 | **Permitted** |
 | **FlyWire public release** (v783, an October 2023 snapshot) | Creative Commons Attribution-**NonCommercial** 4.0 | Attribute, and cite the papers named in FlyWire's citation guide. Pre-publication data carries separate community-principles obligations | **Not permitted** |
 | **FlyWire's flagship *paper*** (Dorkenwald et al., 2024, *Nature*) | Creative Commons Attribution 4.0 | Attribute | Permitted |
-| **Hemibrain / neuPrint** | CC BY 4.0 per Janelia's hemibrain page; the v1.0 figshare deposit is tagged CC BY-NC 4.0 — **check before redistributing** | Attribute; cite Scheffer et al. (2020) | Permitted per project page; **v1.0 deposit conflicts** |
+| **Hemibrain / neuPrint** | CC BY 4.0 per Janelia's hemibrain page; the v1.0 figshare deposit is tagged CC BY-NC 4.0. **Treat as CC BY-NC** until Janelia confirms | Attribute; cite Scheffer et al. (2020) | **Treat as not permitted** |
 | **H01** | CC BY 4.0, stated on the release's data page (not its landing page); the *Science* article is under the AAAS journal license, © the authors. Data sit in a public Google Cloud bucket, open with no registration | Attribute; cite Shapson-Coe et al. (2024) | **Permitted** |
 
-<p class="src">In at least one case the paper and the data carry different licenses. The hemibrain row is flagged as conflicting rather than resolved by guesswork.</p>
+<p class="src">In at least one case the paper and the data carry different licenses. The hemibrain row applies the more restrictive license until the conflict is resolved.</p>
 
 <!--
 Do not tidy the hemibrain row up. Janelia's hemibrain project page links CC BY 4.0
 (janelia.org/project-team/flyem/hemibrain), but the v1.0 data deposit the eLife paper
 cites (doi:10.25378/janelia.11676099) is registered as CC BY-NC 4.0 in its DataCite
-metadata. A reuser must resolve that before redistributing. Presenting a guess as a
-license is worse than presenting the gap.
+metadata. Until Janelia says which governs, apply the more restrictive terms: share
+noncommercially, with attribution. Presenting a guess as a license is worse than
+presenting the gap.
 
 H01: the release data page (h01-release.storage.googleapis.com/data.html) states "All
 released datasets are licensed under a Creative Commons Attribution 4.0 License"; the
@@ -507,7 +508,7 @@ counts were not recovered from the primary source, so none are quoted.
 
 <div class="box box--warn">
 
-**And H01 or hemibrain?** H01's data page states CC BY 4.0, so yes, with attribution. Hemibrain's project page says CC BY 4.0 but its v1.0 deposit says CC BY-NC 4.0: "verify before redistributing".
+**And H01 or hemibrain?** H01's data page states CC BY 4.0, so yes, with attribution. Hemibrain's project page says CC BY 4.0 but its v1.0 deposit says CC BY-NC 4.0: treat it as noncommercial until Janelia confirms.
 
 </div>
 
@@ -684,7 +685,7 @@ It should be the **stated** call, made before the work — not after.
 </div>
 <div>
 
-- **Unresolved license conflicts.** Hemibrain's project page (CC BY 4.0) and its v1.0 data deposit (CC BY-NC 4.0) disagree; this lecture flags that rather than guessing. Confirm before redistributing.
+- **Unresolved license conflicts.** Hemibrain's project page (CC BY 4.0) and its v1.0 data deposit (CC BY-NC 4.0) disagree; this lecture applies the more restrictive terms until Janelia says which governs.
 - **Repository-by-repository policy counts.** Jwa & Poldrack is cited for its spectrum finding only.
 - **Consent for future AI training uses.** Whether broad consent to "research use" of surgical tissue extends to training foundation models on the resulting images is open. **No settled answer exists, and inventing one would be worse than saying so.**
 - **Community conduct and inclusion** — codes of conduct, harassment policy, mentoring obligations.

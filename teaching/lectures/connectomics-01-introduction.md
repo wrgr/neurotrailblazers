@@ -116,7 +116,7 @@ material. No permission needed. Two conditions: credit the original and say if y
 changed anything, and distribute your adapted version under
 [the same license]({{ '/teaching/lectures/' | relative_url }}#license).
 
-> Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering,
+> Gray-Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering,
 > Module 7). NeuroTrailblazers. CC BY-SA 4.0.
 > https://neurotrailblazers.org/teaching/lectures/
 

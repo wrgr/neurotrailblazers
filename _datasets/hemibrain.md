@@ -13,7 +13,7 @@ portal: "https://neuprint.janelia.org/"
 paper_doi: "10.7554/eLife.57443"
 paper_url: "https://elifesciences.org/articles/57443"
 press_url: "https://www.janelia.org/news/unveiling-the-biggest-and-most-detailed-map-of-the-fly-brain-yet"
-access: "Open; neuPrint (Google sign-in). License unresolved: Janelia's project page says CC BY 4.0, the v1.0 data deposit says CC BY-NC 4.0"
+access: "Open; neuPrint (Google sign-in). License: treat as CC BY-NC 4.0 (noncommercial). The v1.0 data deposit is registered CC BY-NC 4.0; Janelia's project page says CC BY 4.0. Use the more restrictive terms until Janelia confirms otherwise"
 status: "Released"
 release_year: 2020
 featured: true
@@ -38,4 +38,4 @@ field teaches from.
 are absent, so any neuron whose arbor leaves the volume is truncated. Comparisons with
 FlyWire need care, since the two use different synapse-detection pipelines and different
 criteria for what counts as a connection. Before you redistribute hemibrain data, check the
-license: Janelia's page and the v1.0 deposit disagree.
+license: Treat as CC BY-NC 4.0 (noncommercial) until Janelia confirms otherwise. The v1.0 deposit is registered CC BY-NC 4.0; Janelia's project page says CC BY 4.0.

@@ -14,7 +14,7 @@ description: "EN.585.781 Frontiers in Neuroengineering. Segmentation and proofre
 
 ### Module 9 · EN.585.781 Frontiers in Neuroengineering
 
-**Will Gray Roncal** · Johns Hopkins University
+**Will Gray-Roncal** · Johns Hopkins University
 
 <p class="roadmap">Part A — Segmentation, error, and the labor problem<br>Part B — From segmentation to a defensible graph<br>Part C — Applications, NeuroAI, and what to claim</p>
 
@@ -1435,7 +1435,7 @@ Creative Commons Attribution-ShareAlike 4.0 International.
 
 **How to credit**
 
-Gray Roncal, W. (2026). *Nanoscale Connectomics: Algorithms and Applications* (EN.585.781 Frontiers in Neuroengineering, Module 9). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
+Gray-Roncal, W. (2026). *Nanoscale Connectomics: Algorithms and Applications* (EN.585.781 Frontiers in Neuroengineering, Module 9). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
 
 For an adaptation, prefix with *"Adapted from"* and note what you changed.
 

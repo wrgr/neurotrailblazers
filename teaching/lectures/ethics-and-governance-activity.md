@@ -69,7 +69,7 @@ the credit rule is dated before the work.
 settle alone is ___, and it would ask ___.”
 
 **Success criteria:** data and article licenses are distinguished; the hemibrain
-conflict is recorded, not resolved; human-tissue claims name the single donor; the
+conflict is recorded with both sources and handled under the more restrictive terms; human-tissue claims name the single donor; the
 credit rule is written before the work and names what each contributor loses.
 
 **Carry forward (optional, 3 minutes):** if you have a study brief from the four-session

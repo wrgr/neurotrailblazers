@@ -141,7 +141,7 @@ from.
 
 **How to credit:**
 
-> Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in
+> Gray-Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in
 > Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0.
 > [NeuroTrailblazers lecture series](https://neurotrailblazers.org/teaching/lectures/)
 

@@ -14,7 +14,7 @@ description: "EN.585.781 Frontiers in Neuroengineering. From tissue to a queryab
 
 ### Module 8 · EN.585.781 Frontiers in Neuroengineering
 
-**Will Gray Roncal** · Johns Hopkins University
+**Will Gray-Roncal** · Johns Hopkins University
 
 <p class="roadmap">Part A — From tissue to voxels<br>Part B — Storage, infrastructure, and what it costs<br>Part C — Reproducible pipelines</p>
 
@@ -1509,7 +1509,7 @@ Creative Commons Attribution-ShareAlike 4.0 International.
 
 **How to credit**
 
-Gray Roncal, W. (2026). *Nanoscale Connectomics: Tools and Methods* (EN.585.781 Frontiers in Neuroengineering, Module 8). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
+Gray-Roncal, W. (2026). *Nanoscale Connectomics: Tools and Methods* (EN.585.781 Frontiers in Neuroengineering, Module 8). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
 
 For an adaptation, prefix with *"Adapted from"* and note what you changed.
 

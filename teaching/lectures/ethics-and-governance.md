@@ -68,9 +68,10 @@ regimes) and 22 (dual use at its real strength) if running a longer seminar.
 
 This session is not legal advice. Institutions and jurisdictions differ, and
 learners should take real decisions to their research-compliance or technology
-transfer office. Do not adjudicate the hemibrain conflict: Janelia's project page
+transfer office. Do not claim the hemibrain conflict is settled: Janelia's project page
 links CC BY 4.0, and the v1.0 data deposit's DataCite record says CC BY-NC 4.0. The
-teaching point is what a reuser does with an unresolved conflict.
+site's position, and the expected answer, is to apply the more restrictive terms
+(noncommercial) until Janelia confirms which governs.
 
 Discuss the H01 donor respectfully and only through what the paper publishes. Do
 not speculate about identity, and do not invite the room to try. Keep the consent

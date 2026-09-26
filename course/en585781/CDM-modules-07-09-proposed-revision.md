@@ -1,7 +1,7 @@
 # Proposed CDM revision — Modules 7–9 (Connectomics block)
 
 **Course:** EN.585.781 Frontiers in Neuroengineering
-**Module owner:** Will Gray Roncal (WGR)
+**Module owner:** Will Gray-Roncal (WGR)
 **Status:** proposal for instructor and instructional-design review
 **Companion material:** rebuilt lecture decks at `course/decks/marp/en585781/`
 

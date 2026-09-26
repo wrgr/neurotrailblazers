@@ -40,11 +40,13 @@ rendered-slide check of all decks (no text outside slide bounds, no broken image
 
 Collected from the area reports; each report has the detail.
 
-1. **Hemibrain license.** Janelia's project page says CC BY 4.0; the v1.0 deposit is
-   registered as CC BY-NC 4.0. Pages flag the conflict.
-2. **Your name.** "Gray Roncal" and "Gray-Roncal" both appear; `CITATION.cff`, lectures and
-   decks now use "Gray Roncal". Pick one for the site's own credit lines, and "Will" or
-   "William R." in `CITATION.cff`.
+1. ~~**Hemibrain license.**~~ *Decided 26 September: be conservative.* The site treats
+   the hemibrain as CC BY-NC 4.0 (noncommercial) until Janelia confirms which license
+   governs, and still names both sources.
+2. ~~**Your name.**~~ *Decided 26 September: keep the hyphen.* The site's own credit
+   lines (`CITATION.cff`, lectures, decks, license files) use "Gray-Roncal"; published
+   citation records keep the form the publisher printed. Still open: "Will" or
+   "William R." as the given name in `CITATION.cff`.
 3. **MouseConnects roles.** Named leads without a public source were removed. Restore any you
    can cite; choose "Johns Hopkins APL" or "Johns Hopkins University" for your own card.
 4. **Funding links on /connectivity/.** NIH redirects the BRAIN Training, K99 (diversity) and

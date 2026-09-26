@@ -14,7 +14,7 @@ description: "EN.585.781 Frontiers in Neuroengineering. Scope of connectomics ac
 
 ### Module 7 · EN.585.781 Frontiers in Neuroengineering
 
-**Will Gray Roncal** · Johns Hopkins University
+**Will Gray-Roncal** · Johns Hopkins University
 
 <p class="roadmap">Part A — The case for mapping<br>Part B — Three scales that are not the same thing<br>Part C — The field as it stands</p>
 
@@ -1480,7 +1480,7 @@ Creative Commons Attribution-ShareAlike 4.0 International.
 
 **How to credit**
 
-Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
+Gray-Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0. neurotrailblazers.org/teaching/lectures/
 
 For an adaptation, prefix with *"Adapted from"* and note what you changed.
 

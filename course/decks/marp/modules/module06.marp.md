@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 06 · NeuroTrailblazers"
 title: "Module 06: Segmentation 101"
 ---
 
-# Module 06: Segmentation 101
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 06</span>
+
+# Segmentation 101
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -53,29 +53,44 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the error taxonomy content library entry
-- Open the practice dataset in Neuroglancer and browse for 5 minutes
-- **00:00-08:00 | Segmentation goals**
-- "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
-- Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
-- Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
-- **08:00-22:00 | Error taxonomy with real examples**
-- Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
-- Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
-- Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
-- For each: "What would this error do to your analysis?"
-- **22:00-36:00 | Guided correction round**
-- Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
-- Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
-- **36:00-48:00 | Quality metric interpretation**
-- Introduce: "How do we know if our corrections actually helped?"
-- Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
-- Compute metrics before and after the correction round. Did they improve?
-- **48:00-60:00 | Debrief and competency check**
-- Each learner presents one correction with evidence chain.
-- Group discussion: "Which correction had the biggest impact on the graph? Why?"
-- Exit ticket: "Name the error type you found hardest to detect and why."
+## Run of Show (60 min)
+- 00:00-08:00 | Segmentation goals
+- 08:00-22:00 | Error taxonomy with real examples
+- 22:00-36:00 | Guided correction round
+- 36:00-48:00 | Quality metric interpretation
+- 48:00-60:00 | Debrief and competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the error taxonomy content library entry
+  Open the practice dataset in Neuroglancer and browse for 5 minutes
+  Minute-by-minute plan
+
+00:00-08:00 | Segmentation goals
+  "What would a perfect segmentation look like? Every neuron correctly labeled, every membrane correctly placed."
+  Show a well-segmented region side-by-side with raw EM. Point out: each color = one neuron.
+  Then show the same region with errors highlighted. "This is reality. Our job is to find and fix these."
+
+08:00-22:00 | Error taxonomy with real examples
+  Walk through one merge error: show the 3D mesh with impossible branching, navigate to the merge point in 2D slices, explain why the model failed (low contrast at a blood vessel).
+  Walk through one split error: show a dead-end axon fragment, then the continuation 3 sections later. Explain: thin process + poor contrast = model lost it.
+  Walk through one boundary error: show a synapse attributed to the wrong neuron because the membrane position is off by 2 pixels.
+  For each: "What would this error do to your analysis?"
+
+22:00-36:00 | Guided correction round
+  Learners work in pairs on 3 pre-identified errors (1 merge, 1 split, 1 ambiguous).
+  Instructor circulates, coaching on: "Show me the evidence before you correct." "What would happen if this merge is actually correct — two branches of the same neuron?"
+
+36:00-48:00 | Quality metric interpretation
+  Introduce: "How do we know if our corrections actually helped?"
+  Brief overview of metrics: edge precision/recall (are the connections right?), segment size distributions (do sizes look biological after correction?).
+  Compute metrics before and after the correction round. Did they improve?
+
+48:00-60:00 | Debrief and competency check
+  Each learner presents one correction with evidence chain.
+  Group discussion: "Which correction had the biggest impact on the graph? Why?"
+  Exit ticket: "Name the error type you found hardest to detect and why."
+-->
 
 ---
 
@@ -140,5 +155,5 @@ Explain when you would defer a correction instead of fixing immediately.
 
 ## Teaching Materials
 - Module page: /modules/module06/
-- Slide page: /modules/slides/module06/
+- Session kit: /teaching/sessions/module06/
 - Worksheet: /assets/worksheets/module06/module06-activity.md

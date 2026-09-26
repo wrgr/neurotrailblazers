@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 14 · NeuroTrailblazers"
 title: "Module 14: Computer Vision for EM"
 ---
 
-# Module 14: Computer Vision for EM
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 14</span>
+
+# Computer Vision for EM
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -25,14 +33,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes. Concretely: choose an architecture from the shape of the task rather than from the benchmark leaderboard, decompose error into merges and splits instead of reporting one score, convert that decomposition into a downstream cost using a ratio your team has actually measured, and write a release gate that says in advance what result would stop the model from shipping.
 
@@ -41,6 +41,10 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 ## Concept Focus
 ### 1) Task-model fit
 - **Technical:** detection, instance segmentation, denoising, and classification need different objectives, and in EM they also need different data geometry. Affinity prediction with watershed and agglomeration is modular: the dense network runs once over the volume and agglomeration can be re-run cheaply with a new threshold or a learned merge model. Flood-filling networks produce instance labels directly with fewer post-processing stages, at substantially higher compute per volume and less ability to re-run one stage in isolation. Anisotropic data — 4 x 4 x 40 nm is 10:1 — makes z-context weak and pushes some pipelines toward 2D prediction with explicit cross-section linking.
+
+---
+
+## Concept Focus (continued)
 - **Plain language:** pick the model for the job and for the voxel shape, not by popularity.
 - **Misconception guardrail:** one architecture solves all EM tasks equally well.
 
@@ -51,6 +55,10 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 - Define the acceptable error envelope in decomposed terms: maximum merge rate, minimum ERL, and the region in which those numbers must hold.
 - Select a baseline and at most two candidate approaches, using the approach table and the voxel geometry of your data.
 - Assemble evaluation data that includes at least one deliberately hard region, and keep clean-region and hard-region metrics separate.
+
+---
+
+## Core Workflow (continued)
 - Evaluate with VI decomposed, ERL, and a connectivity-level metric; never report a single aggregate score alone.
 - Convert the error counts into downstream cost using a merge-to-split ratio your team measured rather than assumed.
 - Review 20-30 failure cases by eye in ambiguous regions and classify each by cause: weak stain, section loss, fold, thin neurite, or genuine ambiguity.
@@ -58,13 +66,27 @@ Design and evaluate a CV pipeline for EM imagery that is fit for a specific conn
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00** task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
-- **08:00-20:00** choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output.
-- **20:00-34:00** evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
-- **34:00-46:00** error taxonomy and triage discussion. Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
-- **46:00-56:00** model card drafting, including at least one unsupported use and the region breakdown of the metrics.
-- **56:00-60:00** competency check: each learner states their release gate as a sentence that could fail.
+## Run of Show (60 min)
+- 00:00-08:00 task framing + exemplar failure modes.
+- 08:00-20:00 choose metrics tied to downstream biology.
+- 20:00-34:00 evaluate baseline vs candidate model.
+- 34:00-46:00 error taxonomy and triage discussion.
+- 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics.
+- 56:00-60:00 competency check: each learner states their release gate as a sentence that could fail.
+
+<!--
+00:00-08:00 task framing + exemplar failure modes.
+  Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer.
+
+08:00-20:00 choose metrics tied to downstream biology.
+  Each learner writes the metric they would gate on and the threshold, before seeing any model output.
+
+20:00-34:00 evaluate baseline vs candidate model.
+  Learners compute or are given VI components, ERL, and error counts for two models, then solve for the break-even merge-to-split ratio.
+
+34:00-46:00 error taxonomy and triage discussion.
+  Sample failure cases, classify each by cause, and identify which causes augmentation could have addressed.
+-->
 
 ---
 
@@ -109,5 +131,5 @@ Document one CV result with one supported use case and one forbidden use case.
 
 ## Teaching Materials
 - Module page: /modules/module14/
-- Slide page: /modules/slides/module14/
+- Session kit: /teaching/sessions/module14/
 - Worksheet: /assets/worksheets/module14/module14-activity.md

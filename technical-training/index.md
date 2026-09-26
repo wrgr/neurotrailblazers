@@ -4,7 +4,7 @@ title: "Technical Course"
 description: "Canonical open connectomics course focused on technical skills from imaging to NeuroAI."
 permalink: /technical-training/
 slug: technical-training
-summary: "Track hub for the technical connectomics course."
+summary: "Hub for the Technical Course: the nine units, in order."
 track: core-concepts-methods
 pathways:
   - technical foundation
@@ -25,12 +25,14 @@ content_type: navigation
   </div>
 
   <section class="section">
-    <p>This track follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
+    <p>This course follows an end-to-end technical arc from motivation and imaging foundations through reconstruction, proofreading, and connectome analysis.</p>
     <p>The nine units are <strong>path content</strong>: ordered, cumulative, and each ending in an artifact. They are the spine of the <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}">Core Concepts &amp; Methods</a> track, and the <a href="{{ '/technical-training/atlas-connectomics-reference/' | relative_url }}">atlas</a> rides alongside them as a reference companion, consulted rather than completed. The reference material the units draw on &mdash; dictionary, content library, journal club, atlas, hidden curriculum &mdash; sits in <a href="{{ '/core/' | relative_url }}">the core</a> and can be consulted in any order. Working through this alone is <a href="{{ '/modes/#self-study' | relative_url }}">self-study mode</a>; if you are running related sessions for a group, the <a href="{{ '/modules/' | relative_url }}">modules</a> carry the same material in tutorial form, each with a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> for <a href="{{ '/modes/#hosted-workshop' | relative_url }}">hosted-workshop mode</a>.</p>
     <div class="cta-buttons">
-      <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-primary">Journal Club Reading List</a>
+      <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}" class="btn btn-primary">Start Unit 1: Why Map the Brain</a>
+      <a href="{{ '/technical-training/journal-club/' | relative_url }}" class="btn btn-secondary">Journal Club Reading List</a>
       <a href="{{ '/technical-training/dictionary/' | relative_url }}" class="btn btn-secondary">Connectomics Dictionary</a>
-      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Technical Lecture Plans</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
+      <a href="{{ '/technical-training/proofreading-tutorials/' | relative_url }}" class="btn btn-secondary">Proofreading Tutorials</a>
       <a href="{{ '/teaching/' | relative_url }}" class="btn btn-secondary">Teaching Hub</a>
       <a href="{{ '/concepts/' | relative_url }}" class="btn btn-secondary">Concept Explorer</a>
     </div>
@@ -48,11 +50,33 @@ content_type: navigation
     </div>
   </section>
 
+  {%- comment -%}
+    The course total is summed from each unit's `time_estimate` front matter
+    ("N minutes|hours reading + M minute|hour <exercise>"), the same values the
+    cards show, so the total cannot drift from them. validate_technical_evidence.rb
+    fails if a unit's time_estimate stops matching that pattern.
+  {%- endcomment -%}
+  {%- assign course_minutes = 0 -%}
+  {%- for item in site.data.technical_track.modules -%}
+    {%- assign unit_page = site.pages | where: "slug", item.slug | first -%}
+    {%- if unit_page.content_type == 'path' -%}
+      {%- assign estimate_parts = unit_page.time_estimate | split: ' + ' -%}
+      {%- for part in estimate_parts -%}
+        {%- assign words = part | split: ' ' -%}
+        {%- assign part_minutes = words[0] | plus: 0 -%}
+        {%- if words[1] contains 'hour' -%}{%- assign part_minutes = part_minutes | times: 60 -%}{%- endif -%}
+        {%- assign course_minutes = course_minutes | plus: part_minutes -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign course_hours = course_minutes | divided_by: 60.0 | round -%}
   <section class="section">
     <h2>The nine units, and the atlas beside them</h2>
     <p>Units 01&ndash;09 are ordered and cumulative; each ends in a graded artifact. The atlas is
-    reference: consult it as you go, do not work through it. Working through all nine, labs
-    included, is about <strong>31 hours</strong>.</p>
+    reference: consult it as you go, do not work through it. Working through all nine on
+    your own, reading and graded exercises included, is about <strong>{{ course_hours }}
+    hours</strong>. Each unit page states its own share of that, beside the length of a taught
+    session and of its slide deck.</p>
     {% assign concept_items = site.data.concepts.concepts %}
     <div class="cards-grid">
       {% for item in site.data.technical_track.modules %}
@@ -75,6 +99,7 @@ content_type: navigation
           {% if unit_page.time_estimate %}<span>{{ unit_page.time_estimate }}</span>{% endif %}
           {% if unit_page.level %}<span>{{ unit_page.level }}</span>{% endif %}
         </p>
+        {% if unit_page.prerequisites %}<p><small>Prerequisites: {{ unit_page.prerequisites }}</small></p>{% endif %}
         {% endif %}
         {% if item.user_needs %}
         <p>

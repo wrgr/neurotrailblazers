@@ -23,3 +23,8 @@ __pycache__/
 data/pdf_corpus/
 data/rag_extracted/
 data/rag_index/
+data/ocar_regen/
+*.cookie
+*cookie*.txt
+.chrome_*
+.venv/

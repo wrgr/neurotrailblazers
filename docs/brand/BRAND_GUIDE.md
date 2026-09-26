@@ -192,26 +192,38 @@ Two implementations of the same system, both shipped:
 
 **Marp** (the repository's native deck format).
 `course/decks/marp/theme/neurotrailblazers.css` registers automatically through
-`scripts/render_marp.sh`. Fonts are embedded as data URIs so decks render identically
-offline and in PPTX export. Set `theme: neurotrailblazers` in the front matter.
+`scripts/render_marp.sh`. Source Sans 3 and IBM Plex Mono are embedded for offline
+rendering. Set `theme: neurotrailblazers` in the front matter.
+
+The September 2026 slide revision follows the approved nanoscale preview:
+charcoal (`#10161c`), warm paper (`#f2f1ec`), muted green accents and a single
+Source Sans 3 family for headings and body. These deck-specific choices supersede
+the earlier display-font and palette recommendations for the shared Marp theme.
+Use real EM and segmentation imagery with intact scale bars, aspect ratios and
+source credit. Colors in scientific images retain their original meaning.
+The `title nanoscale` class places the heading beside an uncropped H01 image;
+`.cover-image`, `.cover-label` and `.source` supply the image, context and credit.
+Set image paths relative to the source deck. The renderer adjusts them for `out/`.
+Text-only slides keep a quiet background; images are evidence, not watermarks.
 `course/decks/marp/neurotrailblazers-template.marp.md` demonstrates every slide class
 (`title`, `section`, content, `mist`, `figure`, `stat`, `dark`, `closing`) and the
 `.cols`, `.note/.warn/.good/.key`, `.pill` and `.source` blocks; its render is at
 `course/decks/marp/out/neurotrailblazers-template.html`.
 
-**PowerPoint.** `assets/brand/NeuroTrailblazers-slide-template.pptx`: twelve slides,
+**PowerPoint (earlier design; not yet updated to the nanoscale revision).**
+`assets/brand/NeuroTrailblazers-slide-template.pptx`: twelve slides,
 one per type, 16:9, with usage notes in the speaker notes of every slide and five slide
 masters (light, mist, dark, title, closing). Duplicate a slide of the right type rather
 than restyling a blank one.
 
-Deck rules, in both:
+Deck rules:
 
-1. Heading states the claim. One idea per slide.
+1. Heading identifies the subject or a supported finding. One idea per slide.
 2. Four bullets is the ceiling; split rather than shrink.
 3. Every figure and number slide has a source line.
 4. Dark slides for the opener, section dividers, the one turn in the argument, and the
    close. Everything else on paper or mist.
-5. Amber once per slide, as a fill.
+5. Keep accents restrained; preserve the colors and legends of scientific images.
 6. Speaker notes carry the third level of detail; the slide does not.
 7. Close with the licence line.
 

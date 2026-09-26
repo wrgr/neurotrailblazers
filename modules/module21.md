@@ -221,7 +221,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 - Workflow context: [Connectomics workflow]({{ '/datasets/workflow/' | relative_url }})
 - Reference context: [Atlas Connectomics Reference]({{ '/technical-training/atlas-connectomics-reference/' | relative_url }})
 - Quality context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
-- Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
 ### Key papers/resources to use

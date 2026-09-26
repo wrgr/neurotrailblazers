@@ -15,6 +15,12 @@ use_layout_hero: false
 
 ## What this is
 
+**Teaching a short block?** Use [the short lecture sequence]({{ '/teaching/sequence/' | relative_url }}):
+Introduction to Connectomics, Synapse Detection, Tools and Methods, then Algorithms
+and Applications, each with a 90-minute
+plan, worksheet and model responses. That short sequence is separate from the
+three-lecture graduate course described below.
+
 Three complete graduate lectures on nanoscale connectomics, released for anyone to
 teach. Each is roughly 150 minutes of material in three parts of about 50 minutes, with
 speaker notes, in-class discussion prompts, and a graded artifact.
@@ -23,10 +29,8 @@ They were written for **EN.585.781 Frontiers in Neuroengineering** at Johns Hopk
 where they run as modules 7–9. Nothing in them depends on that course: the sequence is
 self-contained; introductory neuroscience is helpful but not required.
 
-This is a different kind of page from the
-[technical training slides]({{ '/technical-training/slides/' | relative_url }}), which
-are *build plans* for an instructor assembling their own lecture. These are the
-lectures themselves — written to be projected.
+For the two additional standalone graduate lectures, shorter technical-unit decks,
+and instructor plans, browse [Presentation Decks]({{ '/technical-training/slides/' | relative_url }}).
 
 ---
 
@@ -144,9 +148,9 @@ on a title slide or in a syllabus is sufficient.
 [open an issue](https://github.com/wrgr/neurotrailblazers/issues). Re-cut versions for
 different course lengths are exactly the thing worth sharing back.
 
-**On the contents.** These decks contain no third-party figures — they are text, tables,
-and ASCII diagrams — so redistributing or adapting them raises no image-licensing
-questions, and nothing in them is encumbered by a licence incompatible with ShareAlike.
+**On the contents.** The H01 cover image retains its **CC BY 4.0** licence and credit
+to Lichtman Lab / Harvard and Connectomics at Google, Shapson-Coe et al. (2024),
+doi:10.1126/science.adk4858. Preserve that attribution in adaptations.
 They cite published work extensively; citation is not reproduction, and the cited papers
 carry their own licences. If you add figures to an adaptation, check they are compatible
 with CC BY-SA 4.0 before distributing it.

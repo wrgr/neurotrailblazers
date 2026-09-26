@@ -5,19 +5,22 @@ paginate: true
 title: "Module 9 — Nanoscale Connectomics Algorithms and Applications"
 description: "EN.585.781 Frontiers in Neuroengineering. Segmentation and proofreading, graph analysis with honest null models, and what connectomics and machine learning actually give each other."
 ---
-<!-- _class: cover -->
+<!-- _class: cover nanoscale -->
 <!-- _paginate: false -->
 
-# Nanoscale Connectomics
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+
 # Algorithms and Applications
 
 ### Module 9 · EN.585.781 Frontiers in Neuroengineering
 
 **Will Gray Roncal** · Johns Hopkins University
 
-Part A — Segmentation, error, and the labor problem Part B — From segmentation to a defensible graph Part C — Applications, NeuroAI, and what to claim
+<p class="roadmap">Part A — Segmentation, error, and the labor problem<br>Part B — From segmentation to a defensible graph<br>Part C — Applications, NeuroAI, and what to claim</p>
 
-<p class="src">Openly licensed for community use — <strong>CC BY-SA 4.0</strong>. Teach it, adapt it, share it onward the same way. neurotrailblazers.org</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+
+<p class="src">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google<br>Image: CC BY 4.0 · Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858<br>Lecture: CC BY-SA 4.0 · neurotrailblazers.org</p>
 
 <!--
 This is the module where the discipline from 7 and the machinery from 8 turn into a
@@ -717,7 +720,7 @@ If the hypothesis is *"reciprocity exceeds what degree and distance explain"*, t
 
 ## Worked example: reciprocity, under three nulls
 
-### Observed: 100 neurons, 1,200 directed edges, **210 reciprocal pairs**
+### Hypothetical graph: 100 neurons, 1,200 directed edges, **210 reciprocal pairs**
 
 **Null 1 — Erdős–Rényi.** Edge probability p = 1200 / (100 × 99) = 0.121.
 
@@ -727,11 +730,11 @@ E[recip] = p^2 x N(N-1)/2 = 0.0147 x 4,950 = 72.7
 observed / expected = 210 / 72.7 = 2.9x
 ```
 
-**A 2.9-fold enrichment.** Impressive, and almost certainly meaningless.
+**A 2.9-fold enrichment under this model.** The ratio alone is not a test result.
 
 <div class="box box--warn">
 
-ER preserves only the *number* of edges. Real connectomes have heavy-tailed degree distributions — a few hub cells and many sparsely connected ones — and ER destroys that entirely. Nearly every motif looks enriched against it.
+This independent-edge model fixes the **expected** edge count, not its exact value. It does not preserve node degrees, distance or cell type. A fixed-edge-count null is a different model.
 
 </div>
 
@@ -748,11 +751,11 @@ observed / expected = 210 / 150 = 1.4x
 z = (210 - 150) / 12            = 5.0
 ```
 
-**Still significant — but the effect size collapsed from 2.9× to 1.4×.**
+**The ratio falls from 2.9× to 1.4×.** The z-score is descriptive; a tail probability requires the null distribution or an explicit distributional assumption.
 
 <div class="box">
 
-**Roughly two-thirds of the apparent enrichment was degree heterogeneity.** Nothing about the data changed. Only the question did.
+**These null summaries are illustrative, not measured.** Changing the constraints changes the comparison; it does not establish a causal contribution of degree heterogeneity.
 
 </div>
 
@@ -764,18 +767,16 @@ Connection probability falls steeply with inter-somatic distance, and reciprocal
 
 ```
 observed / expected = 210 / 185 = 1.14x
-z = (210 - 185) / 14            = 1.8      (p ~ 0.07, two-tailed)
+z = (210 - 185) / 14            = 1.8
 ```
 
 <div class="box box--warn">
 
-**The claim does not survive.**
-
-The honest conclusion: *"Reciprocity is consistent with what degree distribution and spatial proximity predict; we find no evidence of additional reciprocal wiring."*
+**Test direction matters.** A normal approximation gives p ≈ 0.074 two-sided, but ≈ 0.037 for a prespecified upper tail. Do not choose the direction after seeing the result.
 
 </div>
 
-**This is the most important worked example in the module.** The same data supports *"2.9-fold enrichment, p < 10⁻⁶"* **or** *"no detectable effect"* — depending entirely on a choice made **before any test was run.**
+**An enrichment ratio does not determine significance.** For a real analysis, estimate the tail from a validated null sampler and state the direction, decision rule and multiplicity treatment.
 
 **Pre-register the null, or at minimum report the result under all three.**
 
@@ -827,22 +828,20 @@ The honest conclusion: *"Reciprocity is consistent with what degree distribution
 <div class="cols">
 <div>
 
-A merge fuses two neurons' partner lists. If neuron A had partners {1,2,3} and B had {4,5,6}, the merged object has {1…6} — **manufacturing triangles among partners that were never connected through one cell.**
+A merge combines partner lists, but can also collapse duplicate edges or turn an edge into an excluded self-loop.
 
-**Merges inflate dense motifs superlinearly in the error rate.**
+**The direction depends on the motif and construction rules.** Combining two disjoint partner lists alone does not create triangles without connections among the partners.
 
-Splits, by contrast, mostly *remove* edges, which deflates all motifs roughly proportionally.
+Splits can remove or redistribute edges and change which motif class a subgraph occupies.
 
 </div>
 <div>
 
 <div class="box box--warn">
 
-**So the two error types do not cancel.**
+**Do not assume cancellation or a universal direction.**
 
-The residual bias points toward **more dense motifs** — which is the direction of the interesting result.
-
-Motif analysis on unproofread segmentation is **not conservative.** It is biased toward the answer you were hoping for.
+Construct explicit error scenarios and recompute the endpoint. Unvalidated segmentation is not automatically conservative.
 
 </div>
 
@@ -859,15 +858,15 @@ Motif analysis on unproofread segmentation is **not conservative.** It is biased
 
 1. **State your estimated merge and split rates** — from the Part A validation sample, not from a paper about a different dataset.
 
-2. **Simulate.** Apply random merges and splits at those rates to your reconstructed graph.
+2. **Specify an error model.** Perturb identities or edges using mechanisms supported by validation. Rates alone do not specify which objects are likely to be wrong.
 
 3. **Recompute the motif statistic** on many such perturbed graphs.
 
-4. **Report the resulting spread as an error band** on your effect size.
+4. **Report the resulting spread as a sensitivity band**, conditional on that error model. It is not automatically a calibrated confidence interval.
 
 <div class="box box--good">
 
-**If the band crosses the null expectation, the result is not robust to your own measured error rate** — and you should say so, rather than let a reviewer discover it.
+**If plausible perturbations reverse the result, report that sensitivity.** Recompute the matching null when graph properties change. Robustness to a chosen error model is not proof of correctness.
 
 </div>
 
@@ -1396,4 +1395,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction. If you add figures to an adaptation, check they are compatible with CC BY-SA 4.0.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>

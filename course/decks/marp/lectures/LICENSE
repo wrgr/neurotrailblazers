@@ -1,0 +1,94 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+Copyright (c) 2026 the NeuroTrailblazers project.
+
+This license covers the lecture decks in this directory -- the Marp sources and
+the rendered HTML and PowerPoint exports under course/decks/marp/out/lectures/:
+
+  synapse-detection
+  ethics-and-governance
+
+It overrides, for these files only, the CC BY 4.0 terms that the repository's
+top-level LICENSE applies to slide decks under course/. The decks are adapted
+from the content-library pages of the same names, which remain CC BY 4.0.
+
+These are standalone NeuroTrailblazers graduate lectures. They are not part of
+EN.585.781 or any other taught course, and the course decks in ../en585781/ are
+licensed separately.
+
+Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-sa/4.0/
+
+
+WHAT YOU MAY DO
+
+  - Teach from these decks, in any setting, including commercially.
+  - Copy and redistribute them in any medium or format.
+  - Re-cut, re-order, shorten, translate, restyle, or merge them into your own
+    material, and distribute the result.
+
+You do not need to ask permission. Two conditions apply.
+
+
+THE TWO CONDITIONS
+
+  Attribution. Credit the original, link to the license, and indicate whether
+  you changed anything. You may do this in any reasonable manner, but not in a
+  way that suggests the project endorses you or your use.
+
+  ShareAlike. If you remix, transform, or build on this material, you must
+  distribute your version under this same license -- CC BY-SA 4.0. Adaptations
+  stay as open as what they were built from.
+
+  No additional restrictions. You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+
+HOW TO ATTRIBUTE
+
+  Unmodified:
+
+    NeuroTrailblazers (2026). "Synapse Detection" (graduate lecture,
+    NeuroTrailblazers reference layer). CC BY-SA 4.0.
+    https://neurotrailblazers.org/technical-training/slides/
+
+  Adapted:
+
+    Adapted from NeuroTrailblazers (2026). "Synapse Detection" (graduate
+    lecture, NeuroTrailblazers reference layer). CC BY-SA 4.0.
+    https://neurotrailblazers.org/technical-training/slides/
+    Changes: [what you changed].
+
+  Substitute the relevant title. A credit line on a title slide or in a
+  syllabus is sufficient; you do not need to reproduce this file.
+
+  If your adaptation improves the teaching, the project would like to hear
+  about it: https://github.com/wrgr/neurotrailblazers/issues
+
+
+A NOTE ON THE CONTENTS
+
+  The cover image comes from the H01 release, Lichtman Lab / Harvard and
+  Connectomics at Google, under CC BY 4.0. See Shapson-Coe et al. (2024),
+  doi:10.1126/science.adk4858. It retains its own license; preserve its credit.
+  H01 figure metadata is recorded in _data/em_figures.yml.
+
+  They cite published work extensively. Citations are references, not
+  reproductions -- the cited papers carry their own licenses, and nothing here
+  grants any right over them. Where a deck quotes a reported figure or dataset
+  statistic, that fact is attributed to its source on the slide or in the
+  references slide. The licence terms described in the ethics deck are
+  summaries of each portal's own terms, which govern; they are not legal
+  advice.
+
+  If you add third-party figures to an adaptation, check that their licenses
+  are compatible with CC BY-SA 4.0 before you distribute it.
+
+
+NO WARRANTY
+
+  Provided as-is. The material describes a field that moves quickly; figures,
+  dataset sizes, licence terms and "state of the field" claims are accurate as
+  of the last revision of the content-library page each deck is drawn from and
+  will age. Verify before relying on a specific number in your own work.

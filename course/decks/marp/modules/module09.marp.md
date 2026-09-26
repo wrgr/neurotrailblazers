@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 09 · NeuroTrailblazers"
 title: "Module 09: Neuron Morphology and Skeletonization"
 ---
 
-# Module 09: Neuron Morphology and Skeletonization
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 09</span>
+
+# Neuron Morphology and Skeletonization
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -53,31 +53,46 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 
 ---
 
-## 60-Minute Run-of-Show
-- Review the data formats content library entry (skeletons section)
-- Install/check NeuroM or equivalent morphology analysis package
-- **00:00-10:00 | Morphology overview**
-- "Why do we care about neuron shape?" — Shape constrains function: a neuron's dendritic arbor determines what inputs it can receive; its axonal arbor determines where it can send output.
-- Show 3 neuron types (pyramidal, basket, Martinotti) and their characteristic morphologies.
-- "Today you'll learn to quantify these shapes from EM data."
-- **10:00-24:00 | Skeleton extraction demo**
-- Live demo: take a segmented neuron, run skeletonization, visualize result in Neuroglancer.
-- Walk through SWC format: "Each line is a node. Parent ID tells you the tree structure."
-- Common pitfall: show a skeleton with spurious branches from noisy segmentation. Demonstrate pruning.
-- **24:00-38:00 | Descriptor calculation**
-- Hands-on: learners compute 5 descriptors for one neuron using NeuroM or provided scripts.
-- Compare results across the group: did everyone get the same numbers? Discuss sources of variation.
-- Introduce Sholl analysis with live visualization.
-- **38:00-50:00 | Interpretation and caveats**
-- "Your neuron has total cable length of 2,100 μm and 47 branch points. Is that a lot?" — Compare to published values for the putative cell type.
-- Discussion: which descriptors are robust to reconstruction errors? (Cable length is sensitive to splits; branch count is sensitive to both splits and spurious branches; spine density is robust if the segmentation boundary is accurate.)
-- "What if 30% of the arbor is outside the volume? How does that change your interpretation?"
-- **50:00-60:00 | Competency check**
-- Each learner submits their morphology descriptor table with:
-- At least 3 descriptors with values
-- Putative cell-type classification based on morphology
-- One explicit limitation of the measurement
-- Exit ticket: "Name one morphology feature that could be confounded by reconstruction quality."
+## Run of Show (60 min)
+- 00:00-10:00 | Morphology overview
+- 10:00-24:00 | Skeleton extraction demo
+- 24:00-38:00 | Descriptor calculation
+- 38:00-50:00 | Interpretation and caveats
+- 50:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Review the data formats content library entry (skeletons section)
+  Install/check NeuroM or equivalent morphology analysis package
+  Minute-by-minute plan
+
+00:00-10:00 | Morphology overview
+  "Why do we care about neuron shape?" — Shape constrains function: a neuron's dendritic arbor determines what inputs it can receive; its axonal arbor determines where it can send output.
+  Show 3 neuron types (pyramidal, basket, Martinotti) and their characteristic morphologies.
+  "Today you'll learn to quantify these shapes from EM data."
+
+10:00-24:00 | Skeleton extraction demo
+  Live demo: take a segmented neuron, run skeletonization, visualize result in Neuroglancer.
+  Walk through SWC format: "Each line is a node. Parent ID tells you the tree structure."
+  Common pitfall: show a skeleton with spurious branches from noisy segmentation. Demonstrate pruning.
+
+24:00-38:00 | Descriptor calculation
+  Hands-on: learners compute 5 descriptors for one neuron using NeuroM or provided scripts.
+  Compare results across the group: did everyone get the same numbers? Discuss sources of variation.
+  Introduce Sholl analysis with live visualization.
+
+38:00-50:00 | Interpretation and caveats
+  "Your neuron has total cable length of 2,100 μm and 47 branch points. Is that a lot?" — Compare to published values for the putative cell type.
+  Discussion: which descriptors are robust to reconstruction errors? (Cable length is sensitive to splits; branch count is sensitive to both splits and spurious branches; spine density is robust if the segmentation boundary is accurate.)
+  "What if 30% of the arbor is outside the volume? How does that change your interpretation?"
+
+50:00-60:00 | Competency check
+  Each learner submits their morphology descriptor table with:
+  At least 3 descriptors with values
+  Putative cell-type classification based on morphology
+  One explicit limitation of the measurement
+  Exit ticket: "Name one morphology feature that could be confounded by reconstruction quality."
+-->
 
 ---
 
@@ -141,5 +156,5 @@ Explain one morphology feature that could be confounded by reconstruction qualit
 
 ## Teaching Materials
 - Module page: /modules/module09/
-- Slide page: /modules/slides/module09/
+- Session kit: /teaching/sessions/module09/
 - Worksheet: /assets/worksheets/module09/module09-activity.md

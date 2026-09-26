@@ -55,23 +55,22 @@ page is the argument behind those bullets: what the task is, what has been
 tried, what the published numbers are, and what you have to measure before you
 are entitled to use somebody else's synapse table.
 
-## Start here: this is a solved problem with three residuals
+## Detection performance depends on the claim
+{: #start-here-this-is-a-solved-problem-with-three-residuals }
 
-Read the rest of this page in that order, because the framing matters for how
-much of your project's budget belongs here.
-
-**Within a volume you have ground truth for, cleft detection is solved.** SynEM
-reports 97% precision and recall on the *connectome* — the thing you actually
-publish — even while sitting at 88% per individual synapse, because errors on
-single contacts wash out once contacts are aggregated into connections. H01's
-pipeline detected 149.9 million synapses at a 3.2% / 2.7% false-discovery rate.
-No modern project fails because it cannot find clefts.
+Established methods can perform well in evaluated tissue. SynEM reports binary
+connectome precision and recall around 97%, but its roughly 88% per-synapse result
+uses a different operating point. [Table 3](https://elifesciences.org/articles/26414)
+varies detector thresholds and the contacts required to call a connection. These
+numbers are not a universal conversion. H01's pipeline detected 149.9 million
+synapses at a reported 3.2% / 2.7% false-discovery rate. Neither result certifies
+performance on an unvalidated table or region.
 
 Three residuals are real, and they are what this page is about:
 
 1. **Recall is not symmetric.** H01's detector missed 11% of excitatory and
-   **35%** of inhibitory synapses. Aggregation rescues precision, not recall, and
-   an inhibitory deficit distorts every E/I ratio computed from the table.
+   **35%** of inhibitory synapses. Unequal recall biases raw class counts;
+   binary-edge performance does not repair a synapse-count ratio.
 2. **Partner assignment is weaker than localisation**, and much weaker where
    synapses are polyadic. Buhmann et al. report F1 from 0.59 to 0.73 across four
    areas *of the same fly brain*.
@@ -151,11 +150,11 @@ SBEM; Buhmann's 0.59–0.73 is per-partner-pair on ssTEM. A method that looks
 worse here may simply have been measured on a harder unit in harder tissue.
 Never rank two detectors by numbers taken from their own papers.
 
-**Aggregation is doing enormous work.** SynEM classifies interfaces at 88%
-precision and recall, and yields 97% precision and recall in binary cortical
-connectomes. Nothing about the classifier changed; what changed is that a neuron
-pair is usually connected by more than one synapse, so independent per-synapse
-errors partly cancel when you only ask "are these two neurons connected?".
+**Evaluation units and thresholds matter.** SynEM's per-contact and binary-edge
+scores use different units, and its Table 3 compares different operating points.
+Multiple contacts can help recover an edge when contacts are missed. False
+positives, correlated errors and the connection rule affect both precision and
+recall; aggregation does not guarantee an improvement.
 Buhmann et al. show the same effect from the other side: per-connection F1 of
 0.59–0.73, but 92–96% of edges correctly assigned to the weak/strong classes
 most analyses actually use. **The number you need is the one measured at the
@@ -403,11 +402,10 @@ neuron-centric synapse proofreading with model-assisted error detection.
 
 **Answers.**
 
-1. Nothing about the classifier changed; the *unit of the question* did. Neuron
-   pairs are usually connected by several synapses, so independent per-synapse
-   errors partly cancel when you only ask whether an edge exists. Quote 97% when
-   your claim is about the existence of connections in comparable tissue; not
-   when it is about synapse counts, connection weights, or anything per-synapse.
+1. The evaluation unit and operating point differ. Report the detector threshold,
+   connection rule and tissue. Quote the paper's result as its result, not as
+   a validated score for a new table. Edge-level performance cannot substitute
+   for contact-count or weight validation.
 2. Competitiveness on anisotropic adult-fly ssTEM at 4 × 4 × 40 nm under CREMI's
    annotation convention and distance-tolerant scoring. Not: mammalian tissue,
    other regions of a fly brain (Buhmann et al. span 0.59–0.73 within one
@@ -472,6 +470,9 @@ neuron-centric synapse proofreading with model-assisted error detection.
   — the reading list for the methods above.
 - [Unit 08: segmentation and proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
   — the hands-on counterpart.
+- Graduate lecture: [Synapse detection]({{ '/course/decks/marp/out/lectures/synapse-detection.html' | relative_url }})
+  — this page as a 39-slide presentation deck with speaker notes, CC BY-SA 4.0
+  ([source]({{ site.deck_source_base }}/lectures/synapse-detection.marp.md)).
 
 ---
 

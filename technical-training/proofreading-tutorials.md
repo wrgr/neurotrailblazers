@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "EM Proofreading Tutorials & Community Practice Guide"
-description: "Master volume electron microscopy proofreading: false merge/split diagnosis, dendrite/axon tracing in Neuroglancer & CAVE, synapse validation, and curated community resources."
+title: "EM Proofreading Tutorials"
+description: "Volume electron microscopy proofreading in practice: diagnosing false merges, false splits and orphan fragments on real data, validating synapses, the Neuroglancer/CAVE and webKnossos workflows, and the community practice guides."
 permalink: /technical-training/proofreading-tutorials/
 track: core-concepts-methods
 pathways:
@@ -13,268 +13,214 @@ content_type: core
 
 <div class="main-content">
 
-  <div class="hero hero-spaced hero-rounded" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #31104b 100%); color: #fff; padding: 3rem 2rem; border-radius: 12px; margin-bottom: 2rem;">
-    <div class="hero-content" style="max-width: 900px;">
-      <span class="pill" style="background: rgba(124, 58, 237, 0.35); color: #c4b5fd; border: 1px solid rgba(167, 139, 250, 0.4); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.6rem; border-radius: 999px;">Technical Guide &amp; Practice Suite</span>
-      <h1 style="font-size: 2.4rem; font-weight: 800; line-height: 1.2; margin: 0.75rem 0 0.5rem 0; color: #ffffff;">EM Proofreading Tutorials &amp; Community Practice</h1>
-      <p style="font-size: 1.1rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-        How human annotators fix machine segmentation errors, validate synaptic connections, and transform raw AI predictions into ground-truth connectomes.
-      </p>
-    </div>
+<div class="hero hero-spaced hero-rounded">
+  <div class="hero-content">
+    <h1 class="hero-title-impact">EM Proofreading Tutorials</h1>
+    <p class="hero-subtitle">How human annotators find and fix machine segmentation errors, check synapses, and turn automated output into a reconstruction a result can rest on.</p>
   </div>
+</div>
 
-  <!-- Table of Contents / Fast Navigation -->
-  <div class="card" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.25rem; margin-bottom: 2.5rem;">
-    <h3 style="margin: 0 0 0.75rem 0; font-size: 1rem; color: #1e293b; display: flex; align-items: center; gap: 0.4rem;">
-      <span>📑</span> Table of Contents &amp; Learning Flow
-    </h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 0.75rem; font-size: 0.88rem;">
-      <a href="#core-errors" style="color: #1a56db; text-decoration: none; font-weight: 600;">1. Diagnosing Segmentation Errors &rarr;</a>
-      <a href="#synapse-validation" style="color: #1a56db; text-decoration: none; font-weight: 600;">2. Synapse Verification Criteria &rarr;</a>
-      <a href="#tooling-guides" style="color: #1a56db; text-decoration: none; font-weight: 600;">3. Platform Workflows (CAVE, Neuroglancer) &rarr;</a>
-      <a href="#step-by-step" style="color: #1a56db; text-decoration: none; font-weight: 600;">4. Step-by-Step Tracing SOP &rarr;</a>
-      <a href="#community-resources" style="color: #1a56db; text-decoration: none; font-weight: 600;">5. Canonical Community Portals &rarr;</a>
-    </div>
-  </div>
+<section class="section" markdown="1">
 
-  <!-- Section 1: Diagnosing Segmentation Errors -->
-  <section class="section" id="core-errors" style="margin-bottom: 3rem;">
-    <div class="section-header">
-      <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
-        1. Diagnosing Segmentation Errors
-      </h2>
-      <p style="color: #475569; font-size: 0.95rem;">Automated 3D convolutional models (FFNs, 3D U-Nets) produce two fundamental topological errors. Your first job as a proofreader is rapidly distinguishing them.</p>
-    </div>
+## On this page
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-      
-      <!-- False Merges Card -->
-      <div class="card" style="border: 2px solid #fca5a5; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-          <span style="background: #fee2e2; color: #b91c1c; font-size: 1.2rem; padding: 0.35rem 0.6rem; border-radius: 6px; font-weight: 800;">⚡ Merge</span>
-          <h3 style="margin: 0; font-size: 1.15rem; color: #991b1b;">False Merges (Over-Segmentation)</h3>
-        </div>
-        <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
-          Occurs when the AI connects two distinct biological neurons into a single object ID. <strong>Why it happens:</strong> thin membrane boundaries, poor staining contrast, or vesicle clouds that blur cell membranes.
-        </p>
-        <h4 style="font-size: 0.82rem; text-transform: uppercase; color: #991b1b; letter-spacing: 0.05em; margin: 1rem 0 0.4rem 0;">Key Diagnostic Signatures:</h4>
-        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
-          <li><strong>Multiple Somas:</strong> A single object contains two cell bodies or two primary neurite stalks.</li>
-          <li><strong>Impossible Branch Angles:</strong> Axons making acute &lt;60° hairpins across fascicles without cytoskeletal continuity.</li>
-          <li><strong>Discordant Myelination:</strong> A myelinated axon suddenly jumping into an unmyelinated dendritic shaft.</li>
-          <li><strong>Membrane Discontinuity:</strong> Follow the slice sequence: at least one cross-section will show a clear lipid bilayer separating the two paths.</li>
-        </ul>
-        <div style="margin-top: 1rem; background: #fef2f2; border-left: 4px solid #ef4444; padding: 0.6rem 0.8rem; font-size: 0.8rem; color: #991b1b;">
-          <strong>Correction Action:</strong> In Neuroglancer / CAVE, place a <em>Split Point</em> on the false bridge to separate the component supervoxels.
-        </div>
-      </div>
+1. [Diagnosing segmentation errors](#core-errors) — false merges, false splits and orphan fragments, with real before-and-after examples
+2. [Synapse verification criteria](#synapse-validation)
+3. [Platform workflows: CAVE and Neuroglancer, webKnossos](#tooling-guides)
+4. [Community proofreading resources](#community-resources)
 
-      <!-- False Splits Card -->
-      <div class="card" style="border: 2px solid #93c5fd; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-          <span style="background: #dbeafe; color: #1d4ed8; font-size: 1.2rem; padding: 0.35rem 0.6rem; border-radius: 6px; font-weight: 800;">✂️ Split</span>
-          <h3 style="margin: 0; font-size: 1.15rem; color: #1e40af;">False Splits (Under-Segmentation)</h3>
-        </div>
-        <p style="font-size: 0.88rem; color: #475569; line-height: 1.5;">
-          Occurs when a single continuous biological neuron is severed into two or more detached pieces. <strong>Why it happens:</strong> knife chatter, staining folds, missing sections, or ultra-thin spine necks.
-        </p>
-        <h4 style="font-size: 0.82rem; text-transform: uppercase; color: #1e40af; letter-spacing: 0.05em; margin: 1rem 0 0.4rem 0;">Key Diagnostic Signatures:</h4>
-        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
-          <li><strong>Orphan Dendritic Spines:</strong> A spine head floating unattached within 100 nm of a dendritic shaft with matching postsynaptic density.</li>
-          <li><strong>Abrupt Terminal Stubs:</strong> An axon terminates abruptly in the middle of a continuous bundle with no growth cone morphology.</li>
-          <li><strong>Artifact Crossings:</strong> An open terminal points directly across a fold or knife chatter mark at another open terminal with identical cross-sectional diameter and mitochondrial trajectory.</li>
-        </ul>
-        <div style="margin-top: 1rem; background: #eff6ff; border-left: 4px solid #3b82f6; padding: 0.6rem 0.8rem; font-size: 0.8rem; color: #1e40af;">
-          <strong>Correction Action:</strong> Select both fragment IDs in CAVE / PyChunkedGraph and execute a <em>Merge Operation</em>.
-        </div>
-      </div>
+This page is the practical companion to
+[Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}),
+which covers why the errors happen, which metrics see them, and how to budget the work.
+The figures below are rendered from the public H01 human cortex volume, where the
+dataset's own proofread cells tell us what the right answer was.
 
-    </div>
-  </section>
+</section>
 
-  <!-- Section 2: Synapse Validation -->
-  <section class="section" id="synapse-validation" style="margin-bottom: 3rem;">
-    <div class="section-header">
-      <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
-        2. Synapse Verification Criteria
-      </h2>
-      <p style="color: #475569; font-size: 0.95rem;">Automated synapse detectors find millions of connections, but have false positive rates of 5–15%. Use this 4-point checklist to confirm true chemical synapses.</p>
-    </div>
+<section class="section" id="core-errors" markdown="1">
 
-    <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; margin-top: 1rem;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.25rem;">
-        
-        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
-          <h4 style="margin: 0 0 0.35rem 0; color: #1e293b; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem;">
-            <span style="color: #059669;">1.</span> Presynaptic Vesicle Cloud
-          </h4>
-          <p style="margin: 0; font-size: 0.82rem; color: #475569; line-height: 1.45;">
-            Cluster of clear, spherical 30–50 nm lipid vesicles docked within 100 nm of the presynaptic active zone membrane. In flies, look for the electron-dense <strong>T-bar</strong> ribbon structure.
-          </p>
-        </div>
+## 1. Diagnosing segmentation errors
 
-        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
-          <h4 style="margin: 0 0 0.35rem 0; color: #1e293b; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem;">
-            <span style="color: #059669;">2.</span> Synaptic Cleft Rigid Spacing
-          </h4>
-          <p style="margin: 0; font-size: 0.82rem; color: #475569; line-height: 1.45;">
-            Strictly parallel extracellular space (15–25 nm width) maintained across at least 3–4 consecutive EM sections, containing electron-dense adhesion protein matrix.
-          </p>
-        </div>
+Automated segmentation makes a small number of topological errors, and your first job
+is telling them apart. Pipelines are deliberately tuned to over-segment, so most of what
+you fix is splits — but merges are the errors that corrupt a result, because a merged
+object looks like an ordinary neuron.
 
-        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
-          <h4 style="margin: 0 0 0.35rem 0; color: #1e293b; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem;">
-            <span style="color: #059669;">3.</span> Postsynaptic Density (PSD)
-          </h4>
-          <p style="margin: 0; font-size: 0.82rem; color: #475569; line-height: 1.45;">
-            Thick, dark proteinaceous thickening lining the intracellular face of the recipient membrane (pronounced in asymmetric/excitatory synapses; thinner in symmetric/inhibitory synapses).
-          </p>
-        </div>
+### False merge (under-segmentation)
 
-        <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
-          <h4 style="margin: 0 0 0.35rem 0; color: #1e293b; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem;">
-            <span style="color: #059669;">4.</span> Multi-Section Continuity
-          </h4>
-          <p style="margin: 0; font-size: 0.82rem; color: #475569; line-height: 1.45;">
-            A genuine synapse spans a disc of 200–500 nm diameter. If an apparent junction appears on only a single 30 nm section without neighboring vesicles, flag as artifact.
-          </p>
-        </div>
+Two distinct cells, or a cell and a glial process, fused into one object ID.
 
-      </div>
-    </div>
-  </section>
+**Why it happens.** Weak membrane contrast, so the network cannot find a boundary that is
+barely there; two membranes tightly apposed over many sections; and blood vessels and
+glial wrapping, which are among the commonest merge partners.
 
-  <!-- Section 3: Tooling Workflows -->
-  <section class="section" id="tooling-guides" style="margin-bottom: 3rem;">
-    <div class="section-header">
-      <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
-        3. Platform-by-Platform Proofreading Workflows
-      </h2>
-      <p style="color: #475569; font-size: 0.95rem;">Master the standard tool stacks used across FlyWire, MICrONS, and the Mouse Connectome Project.</p>
-    </div>
+**What gives it away:**
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-      
-      <!-- CAVE & Neuroglancer -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <h3 style="margin: 0 0 0.5rem 0; color: #1a56db; font-size: 1.15rem;">🖥️ CAVE &amp; Neuroglancer Workflow</h3>
-        <p style="font-size: 0.85rem; color: #475569; line-height: 1.45;">
-          The primary production backend for <strong>FlyWire</strong> and <strong>MICrONS</strong>. Uses a dynamic chunked graph (<code>PyChunkedGraph</code>) to record edits without re-segmenting the petascale volume.
-        </p>
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.75rem; font-size: 0.8rem; margin: 0.75rem 0;">
-          <p style="margin: 0 0 0.35rem 0;"><strong>Essential Keybindings:</strong></p>
-          <ul style="margin: 0; padding-left: 1.1rem; color: #334155; line-height: 1.4;">
-            <li><code>Double-Click</code>: Center view on point in 3D</li>
-            <li><code>Shift + Click</code>: Toggle segment ID selection</li>
-            <li><code>Ctrl / Cmd + Scroll</code>: Step through Z-sections</li>
-            <li><code>Alt + Click</code>: Place split/merge graph annotation</li>
-            <li><code>Space</code>: Toggle 3D mesh visibility</li>
-          </ul>
-        </div>
-        <p style="font-size: 0.8rem; color: #64748b; margin: 0;">
-          <strong>Materialization Rule:</strong> Never run analysis on live unpinned IDs. Always pin to an explicit <code>materialization_version</code> to guarantee reproducible results.
-        </p>
-      </div>
+- **Two somata** in one object, or two primary neurites leaving the same cell body region
+  in incompatible directions.
+- **Cue conflict.** Features that cannot coexist in one process — ribosomes and a
+  presynaptic vesicle cluster, or myelin continuing into a spiny dendrite. When two
+  reliable cues contradict each other, the leading hypothesis is "this is not one
+  object" ([Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }})).
+- **Implausible geometry** at a junction: a branch that changes calibre abruptly, or that
+  leaves its bundle at an angle nothing else in the neighbourhood takes.
+- **A membrane in the neighbouring sections.** Step through z at the suspected junction.
+  The boundary the algorithm crossed is usually visible in the sections either side of
+  the one where it failed.
 
-      <!-- webKnossos -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 10px; padding: 1.5rem; background: #fff;">
-        <h3 style="margin: 0 0 0.5rem 0; color: #7e22ce; font-size: 1.15rem;">🌐 webKnossos &amp; Skeletonization</h3>
-        <p style="font-size: 0.85rem; color: #475569; line-height: 1.45;">
-          Optimized for high-speed volumetric skeleton tracing (Max Planck / scalable minds). Features "Flight Mode" allowing annotators to fly through axons at up to 1 mm/hour.
-        </p>
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.75rem; font-size: 0.8rem; margin: 0.75rem 0;">
-          <p style="margin: 0 0 0.35rem 0;"><strong>Core Features:</strong></p>
-          <ul style="margin: 0; padding-left: 1.1rem; color: #334155; line-height: 1.4;">
-            <li><strong>Flight Mode:</strong> Velocity-based Z-stepping for rapid long-range axon tracking</li>
-            <li><strong>Node &amp; Edge Graphs:</strong> Hierarchical SWC / NML skeleton export</li>
-            <li><strong>Task Queues:</strong> Distributed consensus tracing with automated inter-annotator agreement scoring</li>
-          </ul>
-        </div>
-        <p style="font-size: 0.8rem; color: #64748b; margin: 0;">
-          <strong>Best For:</strong> Fast topological proofreading, cell-type census, and dense volume bounding-box annotations.
-        </p>
-      </div>
+**Correction.** Split the object: in a ChunkedGraph system such as CAVE, place points on
+either side of the false bridge and the system finds the minimum cut between them
+([Unit 04 §2]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})).
 
-    </div>
-  </section>
+{% include figure.html
+   src="/assets/images/content-library/em/proofreading-before-after.jpg"
+   alt="Three panels of the same human cortex field: raw electron microscopy; the automated segmentation showing one object in green with a wrongly attached region in red; and the proofread result with only the green object remaining."
+   caption="A real false merge, before and after. Left: raw EM. Middle: the automated segmentation calls all of this one cell &mdash; green is genuinely part of it, red is a separate process it absorbed. Right: the proofread version, with those 11,038 voxels removed. Look at the raw panel and ask whether you would have caught it: the boundary the algorithm crossed is a real membrane, but a faint one, and the absorbed process is entirely plausible as a branch. The cell body needs no correction at all; the errors live in thin neurites."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Automated segmentation is H01&#39;s <code>c2</code>; the corrected version is one of its 104 manually proofread cells. Rendered by <code>scripts/render_em_figures.py</code>." %}
 
-  <!-- Section 4: Canonical Community Resources -->
-  <section class="section" id="community-resources" style="margin-bottom: 3rem;">
-    <div class="section-header">
-      <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">
-        4. Canonical Community Proofreading Resources
-      </h2>
-      <p style="color: #475569; font-size: 0.95rem;">Jump straight into official academies, interactive simulators, and documentation produced by global connectomics consortia.</p>
-    </div>
+### False split (over-segmentation)
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; margin-top: 1.5rem;">
-      
-      <!-- FlyWire Academy -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://codex.flywire.ai/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🏆 FlyWire Academy &amp; Codex &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          Official community portal for whole-brain Drosophila connectomics (Nature 2024). Includes comprehensive video tutorials, proofreading certification exercises, and interactive cell search.
-        </p>
-        <span class="jc-tag" style="background: #dbeafe; color: #1e40af; font-size: 0.72rem; font-weight: 600;">Drosophila &bull; Whole Brain &bull; CAVE</span>
-      </div>
+One continuous cell broken into two or more pieces.
 
-      <!-- EyeWire -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://eyewire.org/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🎮 EyeWire Training Camp &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          The pioneering gamified citizen-science platform developed by the Seung Lab (Princeton). Superb interactive introductory onboarding to 3D branch tracing and merge spotting.
-        </p>
-        <span class="jc-tag" style="background: #fef3c7; color: #92400e; font-size: 0.72rem; font-weight: 600;">Retina &bull; Citizen Science &bull; Gamified</span>
-      </div>
+**Why it happens.** Thin processes — a 60 nm spine neck at 40 nm section thickness may
+appear in only one or two sections — plus the section artifacts that interrupt
+continuity: knife chatter, folds, charging and missing sections
+([Unit 03 §2]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }})).
 
-      <!-- CAVEclient Docs -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://caveclient.readthedocs.io/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">📖 CAVEclient Python Docs &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          Official API documentation for programmatically querying proofread root IDs, synapse tables, cell taxonomies, and ID edit lineages in Python.
-        </p>
-        <span class="jc-tag" style="background: #ede9fe; color: #6d28d9; font-size: 0.72rem; font-weight: 600;">Python &bull; CAVE API &bull; Provenance</span>
-      </div>
+**What gives it away:**
 
-      <!-- SynapseWeb -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://synapseweb.clm.utexas.edu/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🔬 SynapseWeb EM Neurocytology Atlas &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          The Kristen Harris lab's canonical visual EM atlas (UT Austin). The standard reference for spine morphologies, active zones, PSD variations, and organelle ultrastructure.
-        </p>
-        <span class="jc-tag" style="background: #d1fae5; color: #065f46; font-size: 0.72rem; font-weight: 600;">Ultrastructure &bull; Anatomy &bull; Spines</span>
-      </div>
+- **An ending that is not an ending.** A neurite that stops in mid-neuropil without
+  tapering to a natural termination is the classic split candidate, and the one endpoint
+  detectors flag.
+- **A detached spine head** sitting beside a dendritic shaft, with a synapse and nothing
+  connecting it.
+- **Two open ends facing each other across an artifact** — a fold, a chatter band, a lost
+  section — with matching calibre and direction.
 
-      <!-- webKnossos Docs -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://webknossos.org/docs" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🌐 webKnossos User Guide &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          Step-by-step guides for setting up volume layers, sharing collaborative annotations, flight-mode tracing, and skeleton mesh exports.
-        </p>
-        <span class="jc-tag" style="background: #fce7f3; color: #9d174d; font-size: 0.72rem; font-weight: 600;">Skeletons &bull; Flight Mode &bull; Tooling</span>
-      </div>
+**Correction.** Merge the pieces. In a ChunkedGraph system this adds an edge between
+them; nothing in the image changes.
 
-      <!-- VAST Manual -->
-      <div class="card" style="border: 1px solid #cbd5e1; border-radius: 8px; padding: 1.25rem; background: #fff;">
-        <h4 style="margin: 0 0 0.35rem 0; font-size: 1.05rem;"><a href="https://software.rc.fas.harvard.edu/lichtman/vast/" target="_blank" rel="noopener" style="color: #1a56db; text-decoration: none;">🖌️ Harvard Lichtman Lab VAST Guide &rarr;</a></h4>
-        <p style="font-size: 0.82rem; color: #475569; line-height: 1.45; margin: 0 0 0.5rem 0;">
-          The Volume Annotation and Segmentation Tool created by Daniel Berger. Ideal for high-precision manual voxel painting and proofreading dense mammalian neuropil.
-        </p>
-        <span class="jc-tag" style="background: #f1f5f9; color: #334155; font-size: 0.72rem; font-weight: 600;">Manual Painting &bull; Mammalian &bull; Harvard</span>
-      </div>
+{% include figure.html
+   src="/assets/images/content-library/em/segmentation-c2-vs-c3.jpg"
+   alt="The same field of human cortex shown twice with segmentation overlaid: on the left the c2 agglomeration labels a region as one object in purple; on the right the c3 agglomeration splits the same region into two objects in red and blue."
+   caption="Merge or split: the same decision, made two ways. H01 ships two agglomerations of one segmentation. Aggressive <strong>c2</strong> (left) calls this region one object; conservative <strong>c3</strong> (right) calls it two. If it is really one cell, c3 has made a false split; if two, c2 has made a false merge &mdash; and nothing in a single section tells you which. That is the honest limit of this figure: H01 does not say which answer is right for this object, so read it as the diagnosis you would have to make, not as a confirmed split. Across H01&#39;s 104 proofread cells, c3 needed 1.6&times; fewer merge corrections and 2.1&times; more split corrections than c2."
+   credit="H01 human cortex, Lichtman Lab (Harvard) &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al., <em>Science</em> 384, eadk4858 (2024). Rendered by <code>scripts/render_em_figures.py</code>." %}
 
-    </div>
-  </section>
+### Orphan fragment
 
-  <!-- Section 5: Related Modules & Resources -->
-  <section class="section" style="margin-top: 2rem; border-top: 2px solid #e2e8f0; padding-top: 1.5rem;">
-    <h3 style="font-size: 1.2rem; color: #0f172a; margin-bottom: 1rem;">🔗 Related Curriculum &amp; Research Surfaces</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-      <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;">📘 Technical Unit 08: Segmentation &amp; Proofreading</a>
-      <a href="{{ '/content-library/proofreading/error-taxonomy/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;">📑 Content Library: Error Taxonomy</a>
-      <a href="{{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}" class="btn btn-secondary" style="font-size: 0.82rem;">📊 Content Library: Metrics &amp; QA</a>
-      <a href="{{ '/initiatives/outreach/' | relative_url }}" class="btn btn-primary" style="font-size: 0.82rem;">🌐 Global Outreach &amp; Citizen Science &rarr;</a>
-    </div>
-  </section>
+A piece of segmentation that belongs to no traced object: the far side of a split,
+left unattached. One orphan costs little. Many of them add up to a large volume of
+tissue, and synapses, attributed to nobody
+([Unit 08 §2]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})).
+
+**What gives it away.** Orphans are easy to count and hard to place. A small object with
+no soma, both ends open, and a plausible parent passing close by is usually the missing
+piece of that parent. Find its partner by the split signatures above.
+
+**Correction.** Merge it into the parent, or, if no parent in the volume fits, record it
+as unresolved rather than forcing it onto the nearest candidate.
+
+{% include figure.html
+   src="/assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-ULTRA-S17-01.png"
+   alt="Electron micrograph of a dendrite labelled D with two spines labelled s1 and s2, each opposite a vesicle-filled bouton."
+   caption="Where orphans come from, not an orphan itself: a dendrite (D) with two spines (s1, s2), each receiving a synapse. If the segmentation loses a thin spine neck, the spine head and its synapse become a separate fragment, and the dendrite&#39;s input count drops by one with nothing looking wrong at the dendrite. This site does not yet have a rendered example of a confirmed orphan fragment on real data; the H01 render pipeline that produced the two figures above is where one would come from."
+   credit="Pat Rivlin training materials (MICrONS proofreading deck)." %}
+
+</section>
+
+<section class="section" id="synapse-validation" markdown="1">
+
+## 2. Synapse verification criteria
+
+Automated synapse detection is good, and it is not perfect: its misses are not uniform
+across synapse types, and it transfers imperfectly between datasets
+([Synapse detection]({{ '/content-library/infrastructure/synapse-detection/' | relative_url }})).
+When you verify a detection, a chemical synapse needs all of the following
+([Unit 05 §2]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})):
+
+1. **A presynaptic vesicle cluster** — vesicles of about 35–50 nm gathered at the membrane
+   facing the partner, not scattered elsewhere in the profile. In flies, the presynaptic
+   side also carries an electron-dense T-bar.
+2. **A synaptic cleft** — parallel membranes with a uniform gap across the contact, about
+   20–30 nm at asymmetric synapses and 15–20 nm at symmetric ones, wider than casual
+   membrane apposition.
+3. **A postsynaptic density** — a dark thickening on the receiving side: pronounced at
+   asymmetric (typically excitatory) synapses, thin at symmetric (typically inhibitory)
+   ones.
+4. **Persistence across sections.** A synapse is typically 200–500 nm across, so at 40 nm
+   sections a real one appears on two to five consecutive sections. A "synapse" on a
+   single section is one sample of something that should be visible several times.
+
+The commonest false positive is dark contrast alone — a membrane cut at a glancing
+angle, precipitate, or an adherens junction with symmetric densities on both sides.
+**No vesicles, no synapse.**
+
+</section>
+
+<section class="section" id="tooling-guides" markdown="1">
+
+## 3. Platform workflows
+
+### CAVE and Neuroglancer
+
+The production system behind FlyWire and MICrONS. The segmentation is stored as an
+editable graph over immutable supervoxels (the PyChunkedGraph), so a merge adds an edge
+and a split removes one, without rewriting the petascale volume. Every edit is logged
+with its author and time.
+
+Key bindings differ between Neuroglancer deployments — FlyWire, MICrONS and H01 each run
+their own — so take them from the deployment's own help rather than from a list here.
+
+**Materialization rule.** Never analyse live, unpinned IDs. Pin every query to an
+explicit materialization version, and put that version in the figure caption and the
+methods ([Unit 04 §2]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})).
+
+### webKnossos
+
+An open-source tool for large-scale 3D EM annotation and reconstruction, from the Max
+Planck Institute and scalable minds (Boergens et al., 2017, *Nature Methods* 14:691–694).
+It is built for fast skeleton tracing, including a flight mode for following a process
+continuously through the volume, and for distributing tracing work as tasks across a
+team. Skeletons export as NML.
+
+For the wider tool landscape, see
+[Proofreading tools]({{ '/content-library/proofreading/proofreading-tools/' | relative_url }}).
+
+</section>
+
+<section class="section" id="community-resources" markdown="1">
+
+## 4. Community proofreading resources
+
+- **[FlyWire Academy](https://codex.flywire.ai/academy_home)** (Princeton) — self-paced
+  videos, interactive worksheets and Python exercises for exploring the whole-brain fly
+  connectome in Codex. Free; Codex needs a Google account.
+- **[EyeWire](https://eyewire.org/)** — the Seung lab's gamified citizen-science platform
+  for tracing neurons in 3D, and a gentle first contact with following a branch and
+  spotting a merge.
+- **[CAVEclient documentation](https://caveclient.readthedocs.io/)** — the Python API for
+  querying root IDs, synapse and annotation tables, and edit lineage in CAVE datasets.
+- **[SynapseWeb](https://synapseweb.clm.utexas.edu/)** — the Kristen Harris lab's
+  (UT Austin) online atlas of ultrastructural neurocytology: spines, active zones, PSDs,
+  organelles.
+- **[webKnossos user guide](https://webknossos.org/docs)** — setting up volume layers,
+  sharing annotations, flight-mode tracing and skeleton export.
+- **[VAST](https://software.rc.fas.harvard.edu/lichtman/vast/)** — the Volume Annotation
+  and Segmentation Tool (Berger et al., 2018, *Frontiers in Neural Circuits*), for manual
+  and semi-automatic painting of large EM volumes.
+
+</section>
+
+<section class="section" markdown="1">
+
+## Related
+
+- [Unit 08: Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
+- [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }})
+- [Proofreading worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }})
+- [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }})
+- [Outreach and citizen science]({{ '/initiatives/outreach/' | relative_url }})
+
+</section>
 
 </div>

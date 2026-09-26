@@ -13,17 +13,22 @@ content_type: navigation
 <div class="main-content">
     <div class="hero hero-spaced hero-rounded">
         <div class="hero-content">
-            <h1>Start Your NeuroTrailblazing Journey</h1>
+            <h1>Start Here</h1>
         </div>
     </div>
 
     <section class="section">
-        <h2>Welcome to NeuroTrailblazers!</h2>
-        <p>Whether you're an undergraduate student curious about the brain, a graduate student diving into research, or a mentor looking to guide the next generation, you're in the right place. Our platform is designed to support learners at every stage of their journey into nanoscale connectomics.</p>
+        <h2>What would you like to do?</h2>
+        <div class="cards-grid">
+          <article class="card"><h3><a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Learn connectomics</a></h3><p>Start with Why Map the Brain, the first of nine units in the Technical Course.</p></article>
+          <article class="card"><h3><a href="{{ '/teaching/' | relative_url }}">Teach a class or workshop</a></h3><p>Find presentation decks, session plans, activities, and worksheets in the Teaching Hub.</p></article>
+          <article class="card"><h3><a href="{{ '/content-library/' | relative_url }}">Look something up</a></h3><p>Use the Content Library for explanations, methods, and case studies, or search the <a href="{{ '/technical-training/dictionary/' | relative_url }}">Dictionary</a> for a term.</p></article>
+          <article class="card"><h3><a href="{{ '/neuronauts/' | relative_url }}">Explore the brain</a></h3><p>Try a Neuronauts expedition, or visit the <a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab</a> for family activities.</p></article>
+        </div>
     </section>
 
     <section class="section">
-        <h2>Two questions, not one</h2>
+        <h2>Plan a longer learning path</h2>
         <p>Getting oriented here means answering two separate questions, and most people only think to ask the first. <strong>What</strong> you are learning is the track. <strong>How</strong> you are using it &mdash; alone, in a session someone is running, or inside a research group &mdash; is the mode. They are independent, and the second one changes what you should be reading as much as the first does.</p>
 
         <div class="axis-head">
@@ -133,24 +138,74 @@ content_type: navigation
 
         <div class="hero hero-spaced hero-rounded">
             <div class="hero-content">
-                <h2 class="hero-title-impact">Meet the Trailblazers<span>: Inspiring paths into connectomics</span></h2>
-                <p class="hero-subtitle">Stories of students, researchers, and mentors finding their way</p>
+                <h2 class="hero-title-impact">Meet the Trailblazers</h2>
+                <p class="hero-subtitle">Four readers this curriculum was written for. Pick the one closest to you and it will say where to start.</p>
             </div>
         </div>
 
-        <div class="cards-grid">
-            <a href="{{ '/avatars/undergradstudent/' | relative_url }}" class="avatar-card avatar-card-blue">
-                <h3>Julian, first-generation undergraduate</h3>
-            </a>
-            <a href="{{ '/avatars/gradstudent/' | relative_url }}" class="avatar-card avatar-card-purple">
-                <h3>Maya, graduate student</h3>
-            </a>
-            <a href="{{ '/avatars/researcher/' | relative_url }}" class="avatar-card avatar-card-cyan">
-                <h3>Amir, AI scientist</h3>
-            </a>
-            <a href="{{ '/avatars/mentor/' | relative_url }}" class="avatar-card avatar-card-orange">
-                <h3>Dr. Linh Nguyen, assistant professor</h3>
-            </a>
+        <div class="pathfinder">
+            <div class="pathfinder-tabs" role="tablist" aria-label="Learner personas">
+                <button type="button" role="tab" id="pf-tab-julian" aria-controls="pf-panel-julian" aria-selected="true" class="pathfinder-tab">Julian<span>first-generation undergraduate</span></button>
+                <button type="button" role="tab" id="pf-tab-maya" aria-controls="pf-panel-maya" aria-selected="false" tabindex="-1" class="pathfinder-tab">Maya<span>graduate student</span></button>
+                <button type="button" role="tab" id="pf-tab-amir" aria-controls="pf-panel-amir" aria-selected="false" tabindex="-1" class="pathfinder-tab">Amir<span>AI scientist</span></button>
+                <button type="button" role="tab" id="pf-tab-linh" aria-controls="pf-panel-linh" aria-selected="false" tabindex="-1" class="pathfinder-tab">Dr. Linh Nguyen<span>assistant professor</span></button>
+            </div>
+
+            <div class="pathfinder-panel pathfinder-blue" role="tabpanel" id="pf-panel-julian" aria-labelledby="pf-tab-julian" tabindex="0">
+                <p class="pathfinder-lede">No lab experience yet, and unsure whether to ask to join one now or show up with something in hand. Show up with something in hand &mdash; it takes about a month.</p>
+                <ol>
+                    <li>Read <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}">Unit 01</a> and write the study brief in its lab. That brief is the something.</li>
+                    <li>Keep the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> open beside it. Much of what feels like difficulty here is vocabulary, and it is fixable in a week.</li>
+                    <li>Work <a href="{{ '/modules/module01/' | relative_url }}">modules 01&ndash;04</a> for the framing the units assume you already have.</li>
+                    <li>Read the <a href="{{ '/hidden-curriculum/' | relative_url }}">hidden curriculum</a> before you need it. It states the norms nobody says out loud &mdash; how to ask a question, what "read the paper" actually means.</li>
+                </ol>
+                <p class="pathfinder-cta">
+                    <a href="{{ '/technical-training/01-why-map-the-brain/' | relative_url }}" class="btn btn-primary">Open Unit 01</a>
+                    <a href="{{ '/avatars/undergradstudent/' | relative_url }}">Read Julian's full story</a>
+                </p>
+            </div>
+
+            <div class="pathfinder-panel pathfinder-purple" role="tabpanel" id="pf-panel-maya" aria-labelledby="pf-tab-maya" tabindex="0" hidden>
+                <p class="pathfinder-lede">You have the fundamentals and now need a defensible result. The trap is treating proofreading as somebody else's job: a model trained on annotations nobody checked learns the annotator's mistakes at scale.</p>
+                <ol>
+                    <li>Do <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05&ndash;07</a> with the drills. This is the slowest part of the course and the one worth the most.</li>
+                    <li>Then <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a>, where the error taxonomy stops being abstract.</li>
+                    <li>Work <a href="{{ '/tracks/research-in-action/' | relative_url }}">Research in Action</a> for the claim-to-evidence discipline a defensible result needs.</li>
+                    <li>You are also mentoring someone. The <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">facilitator guide</a> is the difference between mentoring by improvisation and mentoring by design.</li>
+                </ol>
+                <p class="pathfinder-cta">
+                    <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Research in Action</a>
+                    <a href="{{ '/avatars/gradstudent/' | relative_url }}">Read Maya's full story</a>
+                </p>
+            </div>
+
+            <div class="pathfinder-panel pathfinder-cyan" role="tabpanel" id="pf-panel-amir" aria-labelledby="pf-tab-amir" tabindex="0" hidden>
+                <p class="pathfinder-lede">You can build the model but not yet judge whether the data supports the claim. You do not need another machine learning course; you need the biology that makes the labels mean something.</p>
+                <ol>
+                    <li>Start at <a href="{{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}">Unit 04</a> or <a href="{{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}">Unit 08</a>, where systems intuitions transfer directly.</li>
+                    <li>Then go back to <a href="{{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}">Units 05&ndash;07</a>. Entry-point order is negotiable; skipping these is not.</li>
+                    <li>Take the <a href="{{ '/side-quests/neuroanatomy-for-proofreaders/' | relative_url }}">Neuroanatomy for Proofreaders side quest</a> for the compartment calls the units assume.</li>
+                    <li>Scope before you prototype: the <a href="{{ '/open-problems/' | relative_url }}">open problems</a> are sized for a team, and <a href="{{ '/datasets/access/' | relative_url }}">dataset access</a> has the credentials and clients.</li>
+                </ol>
+                <p class="pathfinder-cta">
+                    <a href="{{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}" class="btn btn-primary">Open Unit 04</a>
+                    <a href="{{ '/avatars/researcher/' | relative_url }}">Read Amir's full story</a>
+                </p>
+            </div>
+
+            <div class="pathfinder-panel pathfinder-orange" role="tabpanel" id="pf-panel-linh" aria-labelledby="pf-tab-linh" tabindex="0" hidden>
+                <p class="pathfinder-lede">Running a lab and a teaching load at once, deciding whether to build training material or adopt it. All of this is open and reusable, so adopt it.</p>
+                <ol>
+                    <li>Read the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">facilitator guide</a> first &mdash; what to say, what to watch for, and how to grade reasoning rather than answers.</li>
+                    <li>Take a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a>. Each of the 25 carries prep, timing, misconceptions, a rubric, a deck with speaker notes, and a learner worksheet.</li>
+                    <li>Decide which norms to state out loud, and when: the <a href="{{ '/hidden-curriculum/' | relative_url }}">hidden curriculum</a> is the list your trainees cannot see.</li>
+                    <li>Choose a delivery shape in <a href="{{ '/modes/' | relative_url }}">modes of use</a> &mdash; self-study, hosted workshop, or inside a research program.</li>
+                </ol>
+                <p class="pathfinder-cta">
+                    <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-primary">Open the Facilitator Guide</a>
+                    <a href="{{ '/avatars/mentor/' | relative_url }}">Read Dr. Nguyen's full story</a>
+                </p>
+            </div>
         </div>
 
         <p>Each avatar includes a backstory, visible successes, and a setback — offering a relatable entry point for diverse learners.</p>
@@ -217,7 +272,7 @@ content_type: navigation
             <div class="card">
                 <div class="card-icon" aria-hidden="true">&#128172;</div>
                 <h3>A technical answer</h3>
-                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask-an-Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
+                <p>The <a href="{{ '/ask-an-expert/' | relative_url }}">Ask an Expert</a> route is for questions where you have already tried something and can say what you tried. Before using it, check the <a href="{{ '/technical-training/dictionary/' | relative_url }}">dictionary</a> &mdash; a large share of apparent difficulty in this field is vocabulary, and it is fixable in a week.</p>
             </div>
             <div class="card">
                 <div class="card-icon" aria-hidden="true">&#128100;</div>
@@ -242,3 +297,103 @@ content_type: navigation
         </div>
     </div>
 </div>
+
+<style>
+/* Persona Pathfinder. Colours come from the existing :root variables rather than
+   raw hex, so this migrates with everything else when brand-tokens.css lands
+   (NEXT_CONTENT_PASS.md workstream 5) instead of adding to the hex backlog. */
+.pathfinder-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.pathfinder-tab {
+  flex: 1 1 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--synapse-black);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.pathfinder-tab span {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #55697a;
+}
+.pathfinder-tab:hover { border-color: var(--neural-blue); }
+.pathfinder-tab[aria-selected="true"] {
+  border-color: var(--neural-blue);
+  box-shadow: inset 0 -3px 0 var(--neural-blue);
+}
+.pathfinder-tab:focus-visible {
+  outline: 3px solid var(--neural-blue);
+  outline-offset: 2px;
+}
+.pathfinder-panel {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--neural-blue);
+  background: var(--white);
+}
+.pathfinder-panel:focus-visible {
+  outline: 3px solid var(--neural-blue);
+  outline-offset: 2px;
+}
+.pathfinder-blue   { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-left-color: var(--neural-blue); }
+.pathfinder-purple { background: linear-gradient(135deg, #f3e8ff, #ede9fe); border-left-color: var(--cerebral-purple); }
+.pathfinder-cyan   { background: linear-gradient(135deg, #ecfeff, #cffafe); border-left-color: var(--axon-cyan); }
+.pathfinder-orange { background: linear-gradient(135deg, #fff7ed, #ffedd5); border-left-color: #f97316; }
+.pathfinder-lede { margin-top: 0; font-size: 1.05rem; }
+.pathfinder-panel ol { margin: 1rem 0 1.25rem 1.25rem; line-height: 1.7; }
+.pathfinder-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+</style>
+
+<script>
+(function () {
+  var tablist = document.querySelector('.pathfinder-tabs');
+  if (!tablist) return;
+  var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+
+  function select(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      if (on) { t.removeAttribute('tabindex'); } else { t.setAttribute('tabindex', '-1'); }
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () { select(tab, false); });
+  });
+
+  // Arrow keys move between tabs, Home/End jump to the ends: the expected
+  // keyboard contract for a tablist.
+  tablist.addEventListener('keydown', function (e) {
+    var i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    var next = null;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = tabs[(i + 1) % tabs.length];
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = tabs[(i - 1 + tabs.length) % tabs.length];
+    else if (e.key === 'Home') next = tabs[0];
+    else if (e.key === 'End') next = tabs[tabs.length - 1];
+    if (next) { e.preventDefault(); select(next, true); }
+  });
+})();
+</script>

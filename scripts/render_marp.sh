@@ -47,6 +47,22 @@ else
   exit 1
 fi
 
+# Marp derives the <html lang> attribute from the process locale, so the rendered
+# HTML depended on who ran this script. Under CI's LC_ALL=C.UTF-8 every deck came
+# out as lang="POSIX" -- not a valid BCP 47 tag, so assistive tech cannot pick a
+# voice from it -- while a developer machine with a real locale emitted en-US. The
+# two differ on one attribute per deck, which is enough to churn all 39 outputs on
+# any render and bury the actual content change in the diff. Pin it so the output
+# is a function of the sources alone.
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Note the other source of churn, which is not fixable here: marp-cli stamps its
+# own version into every rendered file, so upgrading the CLI rewrites all 39
+# outputs. The repo installs it with --no-save and carries no package.json, so
+# there is nothing pinning it. If that churn becomes a problem, pin the version
+# in the install line above rather than editing the outputs.
+
 # PPTX export drives a headless browser. Marp finds Chrome via CHROME_PATH; the
 # sandbox flags are required in containers and CI.
 if [ "$DO_PPTX" -eq 1 ] && [ -z "${CHROME_PATH:-}" ]; then
@@ -121,12 +137,15 @@ src_dir, out_dir = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 sources = {}
 for path in sorted(src_dir.rglob("*.marp.md")):
     sources[str(path.relative_to(src_dir))] = hashlib.sha256(path.read_bytes()).hexdigest()
+themes = {}
+for path in sorted(src_dir.glob("**/theme/*.css")):
+    themes[str(path.relative_to(src_dir))] = hashlib.sha256(path.read_bytes()).hexdigest()
 
 manifest = out_dir / ".render-manifest.json"
 manifest.write_text(
-    json.dumps({"note": "SHA-256 of each Marp source at HTML render time. "
+    json.dumps({"note": "SHA-256 of each Marp source and theme at HTML render time. "
                         "Checked by scripts/check_deck_freshness.rb.",
-                "sources": sources}, indent=2) + "\n",
+                "sources": sources, "themes": themes}, indent=2) + "\n",
     encoding="utf-8",
 )
 print(f"Wrote manifest: {manifest} ({len(sources)} sources)")

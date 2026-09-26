@@ -24,7 +24,7 @@ tracks:
     title: Core Concepts & Methods
     short_title: Core & Methods
     description: Build scientific and technical fluency in nanoscale connectomics from motivation through analysis methods.
-    about: "This track builds the foundational knowledge and technical skills needed to work with nanoscale connectomics data. Starting from scientific question-framing and progressing through neuroanatomy, EM imaging, segmentation, and circuit analysis, it provides the conceptual toolkit for working with Mouse Connectome Project and other CONNECTS datasets. It maps directly onto the Technical Training Course units and is the recommended starting point for most learners in the program."
+    about: "This track builds the foundational knowledge and technical skills needed to work with nanoscale connectomics data. Starting from scientific question-framing and progressing through neuroanatomy, EM imaging, segmentation, and circuit analysis, it provides the conceptual toolkit for working with Mouse Connectome Project and other CONNECTS datasets. It maps directly onto the Technical Course units and is the recommended starting point for most learners in the program."
     fadel_alignment:
       - Knowledge
       - Skills
@@ -53,23 +53,23 @@ tracks:
     entry_requirement: "None. Introductory biology and comfort with basic arithmetic are enough to start."
     sequence:
       - step: "Frame a question you could actually test"
-        do: "Technical Unit 01, and write the study brief in its lab."
+        do: "Unit 01, and write the study brief in its lab."
         outcome: "A one-page brief with a measurable structural endpoint, a null model, and an explicit non-claim."
         hours: 3
       - step: "Learn what each measurement scale can and cannot resolve"
-        do: "Technical Unit 02 and its scale-selection memo."
+        do: "Unit 02 and its scale-selection memo."
         outcome: "You can defend a modality choice against two named alternatives."
         hours: 3
       - step: "Understand where the data comes from and how it fails"
-        do: "Technical Unit 03, then run its QA report on a real public volume."
+        do: "Unit 03, then run its QA report on a real public volume."
         outcome: "An artifact report with coordinates, classified as data loss or labor."
         hours: 4
       - step: "Learn to read the images"
-        do: "Technical Units 05, 06, and 07, with the drills. This is the slowest part and the one worth the most."
+        do: "Units 05, 06, and 07, with the drills. This is the slowest part and the one worth the most."
         outcome: "Calibrated compartment, process, and glia calls with justified confidence."
         hours: 12
       - step: "See how a reconstruction is built and served"
-        do: "Technical Unit 04, and run its reproducible query lab."
+        do: "Unit 04, and run its reproducible query lab."
         outcome: "A version-pinned notebook that queries a petascale dataset."
         hours: 4
       - step: "Consolidate through the module library"
@@ -88,7 +88,7 @@ tracks:
       - "Reading the units without doing the labs. The labs are the curriculum."
       - "Rushing to analysis before you can judge reconstruction quality, which produces confident results built on uninspected data."
     resources:
-      - title: Technical Training Course Hub
+      - title: Technical Course
         url: /technical-training/
         summary: Canonical connectomics sequence from imaging to NeuroAI.
       - title: Technical Lecture Plans
@@ -137,17 +137,17 @@ tracks:
     entry_requirement: "Core Concepts & Methods, or equivalent working familiarity with EM data and reconstruction."
     sequence:
       - step: "Get reproducible access to real data"
-        do: "Dataset access guide, then Technical Unit 04's query lab."
+        do: "Dataset access guide, then Unit 04's query lab."
         outcome: "A version-pinned notebook with a reproducibility header."
         hours: 5
       - step: "Learn how a segmentation fails before you try to repair one"
-        do: "Modules 06 and 07, the segmentation and quality-control pair that Technical Unit 08 builds on."
+        do: "Modules 06 and 07, the segmentation and quality-control pair that Unit 08 builds on."
         outcome: "An error taxonomy you can apply to a real volume, and one documented correction pass with its quality impact stated."
         modules: [6, 7]
         module_hours: 8
         hours: 8
       - step: "Learn proofreading as an allocation problem"
-        do: "Technical Unit 08 and its planning lab."
+        do: "Unit 08 and its planning lab."
         outcome: "A proofreading plan with a triage rule, defined levels, and a stopping rule someone else could evaluate."
         hours: 8
       - step: "Measure quality against your own endpoint"
@@ -155,7 +155,7 @@ tracks:
         outcome: "A measured statement of how proofreading changes your headline number."
         hours: 8
       - step: "Analyze without fooling yourself"
-        do: "Technical Unit 09, including the three-null worked example and the error simulation."
+        do: "Unit 09, including the three-null worked example and the error simulation."
         outcome: "A motif analysis with a defended null, corrected multiple comparisons, and an error band."
         hours: 10
       - step: "Build the operational habits"
@@ -180,15 +180,15 @@ tracks:
       - title: Connectome Quality Guide
         url: /tools/connectome-quality/
         summary: Quality criteria and practical checks for robust outputs.
-      - title: Ask-an-Expert
+      - title: Ask an Expert
         url: /ask-an-expert/
         summary: Structured support for technical troubleshooting from Dr. Jeff Lichtman.
-      - title: Technical Training Units 08-09
+      - title: Units 08-09
         url: /technical-training/08-segmentation-and-proofreading/
         summary: Proofreading and analysis-heavy units for applied practice.
-      - title: Frameworks
-        url: /frameworks/
-        summary: Research and teaching frameworks to operationalize practice.
+      - title: Program Models
+        url: /models/
+        summary: MERIT, Professional Pathways and CCR — the frameworks that shape how this curriculum is taught.
 
   - slug: career-and-community
     title: Career & Community
@@ -269,9 +269,6 @@ tracks:
       - title: Program Models
         url: /models/
         summary: MERIT, CCR, and professional pathways workshop structures guiding NeuroTrailblazers training.
-      - title: Frameworks
-        url: /frameworks/
-        summary: MERIT, Professional Pathways, and research incubator frameworks for curriculum and mentorship design.
       - title: Tools
         url: /tools/
         summary: Practical support resources including expert consultation and quality guidance.

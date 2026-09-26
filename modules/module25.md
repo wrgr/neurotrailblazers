@@ -223,7 +223,7 @@ The fourth line is the one most people delete, and it is the strongest line in t
 ## Teaching resources
 - Career planning context: [Module 24]({{ '/modules/module24/' | relative_url }})
 - Presentation context: [Module 22]({{ '/modules/module22/' | relative_url }})
-- Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 - Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
 - Provenance reference: [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})

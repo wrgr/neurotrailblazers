@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 24 · NeuroTrailblazers"
 title: "Module 24: Career Pathways and Graduate School Preparation"
 ---
 
-# Module 24: Career Pathways and Graduate School Preparation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 24</span>
+
+# Career Pathways and Graduate School Preparation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -50,6 +50,10 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 - Define two or three realistic target pathways, each named specifically enough to have a deadline (not "graduate school" but "three neuroscience PhD programs with connectomics groups").
 - Build the capability gap matrix: rows are targets, columns are the capabilities each selects on, cells hold the artifact that demonstrates it or the word "gap".
 - Convert each gap into a 90-day action with an artifact as output, discarding gaps you cannot close in the time available rather than carrying them as anxiety.
+
+---
+
+## Core Workflow (continued)
 - Build the outreach plan: who, in what order, with what artifact attached, and by what date.
 - Draft application and interview narratives anchored in concrete work, using one project as the spine and naming what went wrong in it.
 - Run due diligence on each target by talking to current and former group members, using a fixed question set so answers are comparable.
@@ -57,19 +61,33 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Pathway framing and myths**
-- Name the two instructions this module replaces, "network more" and "apply broadly", and ask the room what either would have them do tomorrow morning. The silence is the point.
-- **08:00-20:00 | Capability gap mapping**
-- Each learner builds the matrix for two targets. Circulate asking one question: "which artifact proves that cell?" Cells backed by coursework alone are marked as gaps.
-- **20:00-32:00 | Program/role fit scoring**
-- Score against the decision table, filling the reversibility and cost columns before the fit column.
-- **32:00-44:00 | Outreach message drafting**
-- Learners write one real email to one real person, complete, in the session. Drafts that could be sent to any laboratory are returned.
-- **44:00-54:00 | Peer feedback on fit and clarity**
-- Reviewers answer two questions only: could this message have been sent to anyone else, and what exactly is being asked for?
-- **54:00-60:00 | Action-plan commitments**
-- Each learner writes three dated actions and one mentorship-map gap they will close, and names who they will tell.
+## Run of Show (60 min)
+- 00:00-08:00 | Pathway framing and myths
+- 08:00-20:00 | Capability gap mapping
+- 20:00-32:00 | Program/role fit scoring
+- 32:00-44:00 | Outreach message drafting
+- 44:00-54:00 | Peer feedback on fit and clarity
+- 54:00-60:00 | Action-plan commitments
+
+<!--
+00:00-08:00 | Pathway framing and myths
+  Name the two instructions this module replaces, "network more" and "apply broadly", and ask the room what either would have them do tomorrow morning. The silence is the point.
+
+08:00-20:00 | Capability gap mapping
+  Each learner builds the matrix for two targets. Circulate asking one question: "which artifact proves that cell?" Cells backed by coursework alone are marked as gaps.
+
+20:00-32:00 | Program/role fit scoring
+  Score against the decision table, filling the reversibility and cost columns before the fit column.
+
+32:00-44:00 | Outreach message drafting
+  Learners write one real email to one real person, complete, in the session. Drafts that could be sent to any laboratory are returned.
+
+44:00-54:00 | Peer feedback on fit and clarity
+  Reviewers answer two questions only: could this message have been sent to anyone else, and what exactly is being asked for?
+
+54:00-60:00 | Action-plan commitments
+  Each learner writes three dated actions and one mentorship-map gap they will close, and names who they will tell.
+-->
 
 ---
 
@@ -115,5 +133,5 @@ Draft one 5-sentence mentor outreach email with an alignment statement naming a 
 
 ## Teaching Materials
 - Module page: /modules/module24/
-- Slide page: /modules/slides/module24/
+- Session kit: /teaching/sessions/module24/
 - Worksheet: /assets/worksheets/module24/module24-activity.md

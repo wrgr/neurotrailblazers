@@ -169,4 +169,4 @@ Assess the **evidence quality**, not whether you agree with the conclusion.
 
 ---
 
-*Module page: `/modules/module03/` · Slides: `/modules/slides/module03/` · [Facilitator guide](/teaching/facilitator-guide/)*
+*Module page: `/modules/module03/` · Session kit: `/teaching/sessions/module03/` · [Facilitator guide](/teaching/facilitator-guide/)*

@@ -7,6 +7,118 @@ done, and the files it touches. Tick items here as they land; do not delete them
 Sizes: **S** under half a day · **M** one to three days · **L** a week or more of focused
 work. Sizes assume one person who knows the repository.
 
+## Next batch — Compass handled separately
+
+Compass workshops belong to the user's other agent. Do not duplicate its workshop
+plans or edit Compass-owned material in this batch. Coordinate links to the shared
+lecture packages once that agent has a workshop sequence ready.
+
+Recommended order for the remaining site/content work:
+
+1. [ ] **Release and evidence check.** Verify branch CI after the push, review the
+   four-session path as learner and instructor, and audit the remaining quantitative
+   slide claims against primary sources. Label hypothetical examples, distinguish
+   measured results from assumptions, and retain image-specific credits. Done when
+   a claim/source checklist and clean build/browser results accompany the release.
+   A branch push alone is not confirmation of a production deployment.
+2. [ ] **Finish instructor packaging.** Give Ethics and Governance the same timed
+   plan, activity and model-response treatment; then draft 10-week and 16-week
+   syllabus mappings using the existing four-session block and technical units.
+   These are course mappings, not a competing Compass workshop curriculum. Done
+   when every session has prerequisites, an artifact, feedback criteria and links.
+3. [ ] **Model answers and assessment.** Start the 25-module key backlog with
+   modules 01, 07 and 18, then expand in teaching order. Add a small assessment bank
+   aligned to the four lecture outcomes, with worked answers and misconception
+   feedback. Keep public formative keys distinct from secure exam material; do not
+   call a local rubric a validated calibration instrument.
+4. [ ] **One real-data lab.** Build the planned MICrONS notebook with an explicitly
+   available materialization, version-appropriate IDs, inclusion rules, archived
+   outputs and limitations. Verify a clean-environment rerun, document account
+   requirements, and retain the offline teaching exercises as a fallback. Done
+   when another instructor can reproduce the result without guessing a version.
+
+Keep the larger reference expansions and web-wide branding backlog below queued
+behind these deliverables. Reinventory after this batch rather than adding more
+lecture topics before the existing materials have been taught and reviewed.
+
+## Current inventory — 25 September 2026
+
+**Fourth session packaged (26 September):** Algorithms and Applications now has a
+90-minute selected-slide plan, instructor cues, synthetic graph worksheet, public
+model responses and optional Python exact enumeration. The short sequence contains
+four sessions. The original 58-slide deck remains available with its longer lab.
+Its hypothetical null example now separates effect size from tail evidence and test
+direction; merge/split sensitivity no longer asserts a universal motif-bias direction.
+The toy exercise is not a biological motif finding or a measured error distribution.
+Validation: both exact null censuses and their means/tails match the answer key;
+threshold validation, deterministic reruns and the one-edge scenario pass. All nine
+content gates, full build, internal links, 81 cross-page fragments and the extended
+browser suite pass. All 243 graduate slides pass the image/text-bound check, and the
+new worksheet has no horizontal overflow at 390 px. Local only, not deployed.
+
+**Next lecture packaged (26 September):** Tools and Methods now has a selected-slide
+90-minute plan, instructor cues, worksheet, public model responses, and an optional
+standalone Python query with embedded synthetic snapshots. The short teaching
+sequence now contains three sessions; navigation labels no longer promise only two.
+The version-drift example now requires provenance evidence rather than declaring
+both historical counts correct without a record. This offline exercise does not
+complete the separate live MICrONS notebook or semester syllabus backlog.
+Validation: both synthetic queries, exclusions, required version selection and
+deterministic reruns pass, as does the capacity arithmetic. All nine content gates,
+the full build, internal links, 78 cross-page fragment targets and the extended
+browser smoke suite pass. All 243 graduate slides remain within checked text bounds
+with images loading. Local only; no deployment or commit made in this pass.
+
+**26 September follow-up:** the first two taught sessions now have a linked sequence
+at `teaching/sequence.md`, timed 90-minute plans, learner worksheets and public model
+responses. Introduction uses a selected route through the existing 59-slide deck;
+Synapse Detection uses its 39-slide deck. Both include instructor cues and formative
+rubrics with clearly synthetic exercises. The SynEM operating-point comparison was
+checked against the primary paper and corrected in the lecture and reference page.
+Navigation now links directly to the two-session sequence, and the Technical Course
+has a prominent Start Unit 1 action. Browser regressions cover both complete journeys.
+These two lecture keys do not complete the separate 25-module answer-key backlog,
+and the two-session sequence does not complete the semester syllabus task.
+Validation for this follow-up: all nine content validators, the full Jekyll build,
+internal link audit, 75 cross-page fragment targets and the extended browser suite
+pass. The five graduate decks still total 243 slides with no detected text overflow
+or missing images. Worksheet arithmetic was independently recomputed. Changes are
+local; deployment and remote CI have not been verified.
+
+- **Site viability:** navigation now has six task-oriented entries: Start Here, Learn,
+  Reference, Teaching, Tools, About. Native disclosure menus support keyboard and touch;
+  mobile has a collapsible menu. Presentation Decks is a direct Teaching destination.
+  Start Here and learning-path pages lead with concrete actions rather than curriculum
+  architecture. Existing destination URLs remain unchanged.
+- **Interaction checks:** `scripts/smoke_site.cjs` passes against a full local Jekyll
+  build and is wired into CI's build job. It covers desktop/keyboard/mobile navigation,
+  no-JavaScript menus, course and deck journeys, persona tabs, dictionary/module
+  filtering, journal search and modal dismissal. It caught two real defects: unescaped
+  paper titles breaking the journal DOM and two unclosed links swallowing persona tabs.
+  Both are fixed and covered. This is local verification, not a production deployment
+  or a claim that every external service works.
+- **Validation:** all nine content validators pass. The final full build has no
+  missing internal link targets and no broken cross-page fragments (74 checked).
+  The final browser smoke suite passes; menu checks at 390, 768, 901, 1024 and
+  1280 px show no horizontal page overflow.
+- **Presentation inventory:** 41 rendered Marp decks: 25 module decks, ten
+  technical/reference decks, five graduate lectures and one reusable template. All
+  now use the approved charcoal/warm-paper nanoscale direction with credited,
+  uncropped H01 cover imagery. The graduate theme imports the shared theme while
+  retaining its lecture-specific layouts. Its 243 slides pass browser text-bound and
+  image checks; the prior module/reference pass covered 614 slides. The existing
+  PowerPoint template has not been migrated.
+- **Next authoring priorities:** syllabus and pacing maps, model answers for all 25
+  worksheets, then a unit assessment bank and a version-pinned MICrONS notebook.
+  Module worked examples, scope boundaries and misconception coverage remain open
+  below; the deck migration does not make those content gaps complete.
+- **Remaining reference/visual work:** MICrONS, comparative connectomics, beyond-EM
+  and provenance expansions; additional scientific figures and their attribution
+  checks; the graduate filename/numbering cleanup with compatibility links. Web-wide
+  palette, favicon and header branding are separate from the navigation fix.
+
+The checkboxes below retain the detailed history and definitions of done.
+
 Order of the workstreams is deliberate. Workstream 0 is a single afternoon and removes
 every verified factual error. Workstream 1 fixes data that renders wrong. Nothing in
 workstreams 2–5 should ship before 0 and 1 are done, because they would be building on
@@ -102,29 +214,74 @@ string returns nothing.
 **Done when:** a stranger can find out who made the site, on what terms they may reuse it, and how to tell someone it is wrong, within two clicks of any page.
 
 ### 2.2 One message, one name per thing (S–M)
-- [ ] Choose the site line. Recommended: **"Mapping connections. Making connections."** (see `docs/brand/BRAND_GUIDE.md` §2 for the alternatives). Retire "Illuminating Pathways for Trailblazing Neuroscience Research(ers)" from title, footer, config.
-- [ ] Choose the positioning sentence: "IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the learning." Move it from `core/connects-ecosystem.md` to the home page mission block and `about.md`.
-- [ ] Home hero: eyebrow, H1, body and mission should name the same audience in the same order (students → mentors → programs).
-- [ ] `start-here.md:4`: "computational neuroscience" → "nanoscale connectomics".
-- [ ] One label for the technical course everywhere. Recommended: **"Technical Course"** in nav and buttons, "Unit NN" for the parts. Apply in `_data/navigation.yml`, `technical-training/index.md`, `index.html`, `_data/track_catalog.yml`, `teaching/index.md`, `initiatives/outreach.md`.
-- [ ] One name for the Neuronauts story across `neuronauts/index.html:3`, nav, home and `/book/`. Recommended: **"The Neuronauts Expedition"**.
-- [ ] One title pattern for pages: bare noun phrase; move SEO tails into `description`.
-- [ ] Persona names: one form in front matter, H1 and start-here cards ("Julian, first-generation undergraduate").
+- [x] Choose the site line. Recommended: **"Mapping connections. Making connections."** (see `docs/brand/BRAND_GUIDE.md` §2 for the alternatives). Retire "Illuminating Pathways for Trailblazing Neuroscience Research(ers)" from title, footer, config. *(The line was already in `_config.yml`, the home `<title>` and the footer; the last remnant was the unused `tagline_lines` block, which still carried the retired research-incubator framing and the word "audacious" that the brand voice forbids. No template read it, so it is deleted rather than rewritten.)*
+- [x] Choose the positioning sentence: "IC3 and APEX organize and expose the science. NeuroTrailblazers organizes the learning." Move it from `core/connects-ecosystem.md` to the home page mission block and `about.md`. *(`about.md` already carried it. The home mission block now leads with it and its heading states the claim instead of reading "Our Mission"; the paragraph beneath says what "organizing the learning" concretely means — a course, a reference layer, session kits — and links the ecosystem page. It stays on `core/connects-ecosystem.md` too, which is where a reader arrives asking the question it answers.)*
+- [x] Home hero: eyebrow, H1, body and mission should name the same audience in the same order (students → mentors → programs). *(The hero already did; the mission block did not name an audience at all. It now runs students → mentors → programs in that order.)*
+- [x] `start-here.md:4`: "computational neuroscience" → "nanoscale connectomics". *(Already corrected; verified no "computational neuroscience" remains as a description of this program.)*
+- [~] One label for the technical course everywhere. Recommended: **"Technical Course"** in nav and buttons, "Unit NN" for the parts. Apply in `_data/navigation.yml`, `technical-training/index.md`, `index.html`, `_data/track_catalog.yml`, `teaching/index.md`, `initiatives/outreach.md`. *(All six named files done, plus the drift they did not list: `_data/technical_track.yml` (`name:` was "Technical Connectomics Track"), `_includes/ui/technical-track-roadmap.html`, the atlas page's "Technical Training hub", and `avatars/index.md`. "Technical Unit NN" is now "Unit NN" throughout `track_catalog.yml`. The "Technical Track Journal Club" label — 26 pages — is now just "Journal Club": the journal club is its own surface, not a sub-brand of the course. `_includes/ui/track-progression.html` was deleted; it duplicated the roadmap include and had zero callers.* ***Still open:*** *`modules/module22.md:63` still reads "Technical Training: Nanoscale Connectomics". The ten Marp decks carried the same label on their title slides; the Workstream 5 authoring pass replaced it with "Technical Course · Unit NN" and re-rendered.)*
+- [x] One name for the Neuronauts story across `neuronauts/index.html:3`, nav, home and `/book/`. Recommended: **"The Neuronauts Expedition"**. *(Already consistent in all four: both page titles, the nav dropdown entry and the two home buttons. The nav's top-level "Neuronauts" is the section, not the story, and is left as is.)*
+- [~] One title pattern for pages: bare noun phrase; move SEO tails into `description`. *(The genuine SEO tails are gone: `tools/index.md` "Technical Connectomics Tools" → "Tools", `tools/ask-an-expert.md` "Ask An Expert: Dr. Jeff Lichtman" → "Ask an Expert", `proofreading-tutorials.md` dropped "& Community Practice Guide", and `atlas-connectomics-reference.md` "Atlas: Connectomics Reference" → "Connectomics Reference Atlas", which is what the nav already called it. Two of those descriptions were rewritten in the same pass: the Ask an Expert one claimed insight "straight from the source" from what the page itself discloses is an AI chatbot, and the tutorials one opened with "Master".* ***Still open:*** *the `Type: Name` prefix convention — 25 `Session Kit: Module NN: …` titles, three `Track: …`, two `Side Quest: …`, eleven `Journal Papers: …`. Those are a prefix, not a tail, and the session kits are generator output, so changing them is a generator change plus a regeneration rather than an edit.)*
+- [x] Persona names: one form in front matter, H1 and start-here cards ("Julian, first-generation undergraduate"). *(Front matter and the start-here cards already agreed. The divergence was `teaching/facilitator-guide.md`, which used an em-dash form with its own descriptors — "Maya — graduate student bridging computation and biology", "Dr. Nguyen — faculty mentor". All four headings now carry the canonical comma form; the extra nuance was already in the body text beneath each.)*
 
 ### 2.3 Collapse the frameworks / models triplication (M)
 - [x] Merge `frameworks/index.md`, `models.md` and `education/models.md` into one `/models/` page with MERIT, Professional Pathways and CCR as sections. *(The operational playbook from `education/models.md` became `/models/`; the summary page it duplicated is gone.)*
 - [x] Redirect the other seven paths; delete the five existing redirect stubs that pointed into the old structure. *(Stubs kept, not deleted: `_includes/ui/related-content.html` generates `/frameworks/<slug>/` URLs from `related_frameworks` front matter, so they are load-bearing. All seven now point at `/models/`, and twelve pages were repointed to link there directly rather than hop through a redirect.)*
 - [x] Remove the six pasted `ui/learning-tracks.html` blocks from pages where they are filler (`avatars/index.md`, `tools/index.md`, `frameworks/index.md`, `models.md`, `education/models.md`, `datasets/index.md`). *(Two went with the merge; the other four removed. The include had no remaining callers and was deleted — the tracks are in the nav and on `/tracks/`.)*
 
+- [x] **Follow-up, now done:** `_data/track_catalog.yml` still listed a "Frameworks" resource
+  pointing at `/frameworks/` in two of its three track sections, hopping the redirect the merge
+  left behind. Both now point at `/models/` and are titled "Program Models" — which exposed that
+  one of the two sections was listing the same page twice under both names, so the duplicate is
+  gone.
+
 ### 2.4 Navigation and tools (S)
 - [x] Add `/modes/`, `/concepts/`, `/kb/` and the ecosystem page to the nav (Tracks and Core dropdowns respectively).
-- [ ] Give `/tools/` an honest identity: list the site's own interactives (citation graph, KB visualisations, concept explorer, module labs, kids quiz) and move "Ask an Expert" under a Help heading with a human fallback (the contact route from 2.1).
-- [ ] Add `aria-hidden="true"` to every `.card-icon`; strip emoji from headings and buttons in `neuronauts/kids.md` and `initiatives/outreach.md` (replace with the line icons from the brand guide when available).
+- [x] Give `/tools/` an honest identity: list the site's own interactives (citation graph, KB visualisations, concept explorer, module labs, kids quiz) and move "Ask an Expert" under a Help heading with a human fallback (the contact route from 2.1). *(The page now separates the three things that get called a tool: the seven interactives that run here, the third-party software you will actually run (pointing at the atlas and the access guide), and help. "Ask an Expert" is out of the tool grid and under "Getting help", stated as an AI chatbot that is not Dr. Lichtman and needs a ChatGPT account, above the human route — `site.email` and the issues tracker from 2.1. Title is now "Tools".)*
+- [x] Add `aria-hidden="true"` to every `.card-icon`; strip emoji from headings and buttons in `neuronauts/kids.md` and `initiatives/outreach.md` (replace with the line icons from the brand guide when available). *(All nine `.card-icon` divs already carried `aria-hidden`. Emoji removed from every heading and button on both pages: three hero buttons, four section headings, nine quiz option buttons and three sub-headings on the kids page; three section headings, six card headings, the closing sub-heading and three footer buttons on the outreach page. Kept deliberately: the five Neuronaut character avatars, the story tags and the inline analogy markers on the kids page, which are illustration for that audience rather than heading or button furniture. No line-icon set has been drawn yet — the brand guide names Lucide or Phosphor but `assets/brand/` ships none — so headings simply lose the emoji, which is what §6 asks for regardless.)*
+- [x] **Also in this pass:** one name and one route for Ask an Expert. Eight pages wrote it
+  "Ask-an-Expert", and seven of those linked `/tools/ask-an-expert/` — a redirect stub — rather
+  than the page itself. All now read "Ask an Expert" and link `/ask-an-expert/` directly. The nav
+  called the atlas "Atlas & Reference" in the Core dropdown and "Connectomics Reference Atlas" in
+  the Technical Course dropdown; both now use the latter, which is also the page's new title.
+
+### 2.6 Connectivity: the outward training landscape (S, added after the fact)
+
+- [x] **New page `/connectivity/`, not in the original plan.** The review's §2 missing-pages
+  list has "Events", and Workstream 4 wants a funding-and-jobs landscape, but nothing on the
+  site told a learner what training exists *elsewhere*. Three pages were adjacent and none
+  of them answered it: `core/connects-ecosystem.md` is the programme structure this site is
+  funded inside, `initiatives.md` is the research consortia, `initiatives/outreach.md` is
+  citizen science. Twelve entries across four categories — connectome-data training, intensive
+  schools, open platforms, funding routes — each with an explicit `boundary:` field saying what
+  it covers that this site does not. Neuromatch, CAJAL, INCF, MBL, CSHL, FlyWire Academy and the
+  Allen educators' workshop appeared nowhere in the repository before this.
+  *(Built to the `community_resources.yml` verification rule: every entry checked against the
+  provider's own site, `verified:` records the date, and the date renders on each card. The
+  file carries no deadlines or session dates — a `cadence:` field says when to look instead,
+  because a stale date is worse than no date. The page header names the three neighbouring
+  pages and what each one owns, so this does not become the frameworks/models triplication
+  that 2.3 just finished collapsing. The entry count in the opening sentence is summed from
+  the data in Liquid rather than typed, per the open Workstream 6 stat-literal item.
+  `connectivity.md` was added to `validate_frontmatter.rb`'s globs so it is gated like the
+  rest.)*
+  ***Still open:*** *this covers the funding half of the Workstream 4
+  `hidden-curriculum/career-mechanics.md` companion — who funds the next step — but not the
+  jobs half: where a trained proofreader actually goes. That item stays open.*
 
 ### 2.5 Make the personas load-bearing (S)
-- [ ] Home pathway cards name a persona and link `/avatars/`.
-- [ ] Each `tracks/*.md` page opens with "This track is for Julian and Maya" style callouts.
-- [ ] Kids portal: link back to the story, deep-link each of the five story cards to its paper, surface the 3D-print assets, link the 25-minute classroom activity.
+- [x] **Persona Pathfinder, added after the fact:** `start-here.md` carried four bare cards —
+  a persona name in an `<h3>` and nothing else — which is about as un-load-bearing as a persona
+  can be. They are now a four-tab pathfinder, one tab per persona, each opening with the
+  decision that persona's own page says they face and then four concrete steps with links.
+  Rebuilt rather than ported from `graphrev`, which had a version of this idea built on an
+  invented learner/researcher/educator/developer taxonomy that would have put a second set of
+  personas on the site. Proper `tablist` semantics with arrow/Home/End keys, no emoji, colours
+  from the existing `:root` variables so it migrates with workstream 5 rather than adding to
+  the hex backlog. Every link target and every factual claim in it was checked — including
+  "a deck with speaker notes", which only became true with 3.1 above.
+- [x] Home pathway cards name a persona and link `/avatars/`. *(Three of the five audience cards already named their persona and deep-linked the avatar page; the other two — "Just Curious" and "For Programs & Funders" — have no persona to name, and inventing one would be worse than the gap. The section now links `/avatars/` from its standfirst, which was previously the marketing line "Purpose-built experiences for the people who move neuroscience forward".)*
+- [x] Each `tracks/*.md` page opens with "This track is for Julian and Maya" style callouts. *(Already present on all three track pages as a **Who this is for** paragraph naming two personas each, with links. Verified rather than rewritten.)*
+- [x] Kids portal: link back to the story, deep-link each of the five story cards to its paper, surface the 3D-print assets, link the 25-minute classroom activity. *(All four done. The story link and the 3D-print assets were the two that were genuinely missing — the STLs existed and only `neuronauts/index.html` linked them, so a kid arriving at the Junior Lab could not find them. Each of the five story cards now links its named papers by DOI, and says which are free to read: seven of the nine are open access, and the two that are not — Januszewski et al. 2018 and White et al. 1986 — are labelled "behind a paywall" rather than linked as if a reader could open them. The 25-minute activity was already linked from the teacher card. Two fixes found in passing: the stories section still advertised the "500 Key Papers" collection that Workstream 0 corrected at line 366 but not here, and the page title carried an SEO tail ("Neuronauts Junior Lab: Connectomics for Kids & Young Explorers").)*
 
 ---
 
@@ -132,10 +289,10 @@ string returns nothing.
 
 ### 3.1 Finish the module derivatives (M)
 - [x] `_data/module_interactives.yml`: author per-module quiz and microtask for modules 10–25 (16 modules; keep the documented `correct_index` distribution). *(64 new items; correct_index 21/21/22, and no module has all four answers at one index. Note the review's diagnosis was wrong and is corrected there: the include suppressed the section entirely rather than showing filler, so those 16 pages had no interactive layer at all.)*
-- [ ] Speaker notes as HTML comments in all 25 `course/decks/marp/modules/*.marp.md` (the generator should emit a notes block from the run-of-show).
-- [ ] Either build or delete the three phantom resources in `teaching/module22-public-engagement.md` ("Atlas vs. Connectome", "BRAIN Grant Detective", "Public Impact Wall").
-- [ ] Add `track:` front matter to `teaching/module22-public-engagement.md` and `teaching/projectome-to-synapse.md`.
-- [ ] Delete `modules/slides/*.md` (25 link-wrapper pages) once the session kits carry the same four links.
+- [x] Speaker notes as HTML comments in all 25 `course/decks/marp/modules/*.marp.md` (the generator should emit a notes block from the run-of-show). *(The generator now splits the run-of-show into its two levels: the timing spine goes on the slide, the instructor script goes in the note. This was not only a missing-notes problem — module 01's run-of-show slide was a nineteen-bullet wall of verbatim script against a four-bullet deck standard. All 25 spines are now 5-7 bullets and 23 of 25 carry a note; modules 14 and 15 write the whole step on one line with nothing beneath it, so there is genuinely no third level to move, and they get a split at the first sentence instead. Two related defects fixed in the same pass: the "Agenda (60 min)" slide was hardcoded identically on all 25 decks and contradicted each module's real timings, so it is gone and the run-of-show slide carries the real one; and that slide was titled "60-Minute Run-of-Show" on every deck including modules 01-03, whose own pages head the section "Detailed run-of-show (90 minutes)" — the length is now read off the page.)*
+- [x] Either build or delete the three phantom resources in `teaching/module22-public-engagement.md` ("Atlas vs. Connectome", "BRAIN Grant Detective", "Public Impact Wall"). *(Already resolved: none of the three names appears anywhere in the repository outside this plan and the review that raised it. Verified rather than rewritten.)*
+- [x] Add `track:` front matter to `teaching/module22-public-engagement.md` and `teaching/projectome-to-synapse.md`. *(Already present on both — `track: career-and-community`. Verified rather than rewritten.)*
+- [x] Delete `modules/slides/*.md` (25 link-wrapper pages) once the session kits carry the same four links. *(Precondition verified first: the session kit at `/teaching/sessions/moduleNN/` carries the same four links — rendered deck, Markdown source, worksheet, module page — alongside the prep, timing, misconceptions and rubric that make it worth opening. The 25 wrappers are gone and the generator no longer emits them. `/modules/slides/` survives as a redirect to the session kits index so nothing that linked it 404s, but the 25 per-module URLs are removed outright rather than stubbed. Five referrers repointed: the deck footer and the worksheet footer in the generator, `_includes/ui/module-teaching-materials.html` (which now offers the session kit where it offered the wrapper), `_includes/cards/teaching-module-card.html` (the wrapper link dropped; it already listed the rendered deck and the source beside it), and the generator-output tables in `README.md` and `CONTRIBUTING.md`. The nav lost its "Module Slides" entry: it sat directly beneath "Session Kits" under Teaching, pointing at a second index of the same 25 modules. The worksheet footers cited the dead path inside backticks, which is why `check_site_links.rb` did not flag them — worth knowing about that gate.)*
 
 ### 3.2 Close the module content gaps (L)
 - [ ] Worked examples for modules 02, 03, 05, 07, 16, 17, 18, 19 (07 Proofreading and 18 Data Cleaning first).
@@ -145,12 +302,12 @@ string returns nothing.
 - [ ] One run-of-show heading form; state where the other 2–4 declared hours go on every module page.
 
 ### 3.3 Technical units (M)
-- [ ] Self-checks: bring units 04, 06, 07, 08 to three questions each, in the existing `<details>` pattern.
-- [ ] Figures: use the 21 unused extracted assets (five each for units 03 and 04 first); raise unit 07 above three figures for three glial classes.
-- [ ] One duration model per unit: "self-study N h; taught session 90 min; deck 60 min" stated in one place and propagated.
-- [ ] One heading for the graded artefact ("Lab") or make `technical-capability-brief.html:33` read the unit's own term.
-- [ ] `technical-training/index.md`: badge the atlas as Reference (or filter it from the unit grid); surface `time_estimate`, `level`, `prerequisites` per card and the ~31 h total; link the proofreading tutorials from the CTA row.
-- [ ] `proofreading-tutorials.md`: add the figures the title promises (false merge, false split, orphan, at minimum) and remove the inline-style/emoji formatting.
+- [x] Self-checks: bring units 04, 06, 07, 08 to three questions each, in the existing `<details>` pattern. *(Seven new questions, each placed at the end of the section it tests and closing on a generalizable principle like the ones already there. 04 §5: a one-layout storage plan, answered from the §3 access-pattern table and the §5 cost traps. 06 §4: "direction errors only add noise, so our enrichment is conservative" — it is a bias toward the finding. 07 §1: which results move when a glia merge is removed; 07 §3: "OPC, not sure" as a label standing in for a confidence level. 08 §2: an empty merge queue measures the detector, not the segmentation; 08 §4: rewriting "all 200 cells were proofread" into a level, a stopping rule and an endpoint shift. Every number in the answers is one the unit page already states.* ***Not in scope but noticed:*** *units 03 and 09 are still at two each.)*
+- [~] Figures: use the 21 unused extracted assets (five each for units 03 and 04 first); raise unit 07 above three figures for three glial classes. *(Counted fresh: 22 files under `assets/images/technical-training/` were embedded on no unit page, four of them byte-identical copies of another file. Seventeen are now placed, each viewed first and captioned for what it actually shows, tied to a numbered section of its unit: five on unit 03 (4 → 9), five on unit 04 (4 → 9), two on 02, one each on 01 and 08, three on the atlas. Unit 07 goes from 3 to 6 with three H01 renders via `figure.html` — an astrocytic process under the astrocyte table, the myelin mask under the oligodendrocyte section, a vessel after the worked example — each located by H01's own label layers, not by eye, so all three glial classes now have at least one figure.* ***Left unplaced, deliberately:*** *the stock "brain on a chip" image (two copies; no teaching content), two duplicates of images now shown on unit 03, and `FIG-RIV-ULTRA-S23-01` (labels F, D, S and asterisks with no surviving legend, so it cannot be captioned without guessing). Still open: microglia has only the one RIV thumbnail, and no oligodendrocyte soma is shown anywhere — `render_em_figures.py` would need a nucleus-mask query for one.)*
+- [x] One duration model per unit: "self-study N h; taught session 90 min; deck 60 min" stated in one place and propagated. *(The "Before you start" Time row on all nine units now states all three: self-study, summed from `time_estimate` (2.5–4.5 h); the taught session, from that unit's lecture plan (85–100 min, not a flat 90); and the Marp deck, 60 min on all nine, noted as not following the plan slide for slide, which is what the lecture plans themselves say. `_data/technical_track.yml` and `technical_capabilities.yml` carry no durations, so there was nothing to contradict there. `validate_technical_evidence.rb` now fails if a unit's Time row disagrees with its `time_estimate` or the estimate stops parsing; both fault-injected. The atlas has no Time row and is left without one, being reference.* ***Found, not fixed:*** *six of the ten lecture plans' per-slide minutes do not sum to their own stated lecture length (04 sums to 76 against 80, 05 to 80 against 75, 06 to 76 against 75, 07 to 76 against 70, 09 to 80 against 85, atlas to 60 against 55). Which number is right is a teaching-design call, so it is left for whoever owns the plans.)*
+- [x] One heading for the graded artefact ("Lab") or make `technical-capability-brief.html:33` read the unit's own term. *(Took the include route. Renaming 05's "Studio activity" and 07's "Drill" to "Lab" would have broken the deep links in `_data/concepts.yml` that point at those headings, and lost two descriptions that are accurate — a consensus round is a studio, a timed confusion-matrix exercise is a drill. Units 05, 07 and the atlas now carry `graded_exercise:` front matter; the include reads it with "lab" as the default, and its own h3 is now "Capability exercise" so it no longer repeats unit 05's heading. `validate_technical_evidence.rb` fails if a page's `graded_exercise` term matches none of its headings.)*
+- [x] `technical-training/index.md`: badge the atlas as Reference (or filter it from the unit grid); surface `time_estimate`, `level`, `prerequisites` per card and the ~31 h total; link the proofreading tutorials from the CTA row. *(The badge, time and level were already on the cards. Added prerequisites, read from each unit's front matter like the others, and a "Proofreading Tutorials" button in the CTA row. The hardcoded "31 hours" is now summed in Liquid from the nine `time_estimate` strings, so the total cannot drift from the cards; rendered with the vendored Liquid 4.0.4 to confirm it still produces 31.)*
+- [~] `proofreading-tutorials.md`: add the figures the title promises (false merge, false split, orphan, at minimum) and remove the inline-style/emoji formatting. *(Rewritten as Markdown sections on the site's existing hero and section classes: zero `style=` attributes and zero emoji, down from 113 and 16. False merge has a confirmed example — H01's before/after, where the right answer comes from one of its 104 proofread cells. Also fixed in the rewrite: the page had merges and splits labelled the wrong way round ("False Merges (Over-Segmentation)"), synapse numbers that disagreed with Unit 05 (now Unit 05's), a table-of-contents link to a section that did not exist, a FlyWire Academy description that contradicted the verified `connectivity.yml` entry, and three unsourced figures — detector false-positive rate "5–15%", webKnossos at "up to 1 mm/hour", a "<60°" hairpin rule — which are removed rather than sourced. The Neuroglancer key-binding list is also gone: bindings differ between deployments, and nothing in the repo let the list be checked against any of them.* ***Still open:*** *the false-split figure is H01's c2-vs-c3 pair, which shows the merge-or-split decision but not a confirmed split, because H01 does not say which call is right for that object, and the caption says so. The orphan figure shows where orphans come from (a spine across a thin neck), not a confirmed one. Both need a new render from `proofread_104` against `c2`: a proofread cell that `c2` holds in two or more segments is a confirmed split, and the pieces are confirmed orphans. `tensorstore` is not installed here, so that render was not attempted.)*
 
 ### 3.4 Course shell (M)
 - [ ] `teaching/syllabus.md`: 16-week, 10-week and 2-day mappings of modules + units + lectures onto sessions.
@@ -194,14 +351,112 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 (`course/decks/marp/neurotrailblazers-template.marp.md`) and PowerPoint template
 (`assets/brand/NeuroTrailblazers-slide-template.pptx`) ship with this plan.
 
-- [ ] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
-- [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Still open:** speaker notes, a source line per figure, and the content itself — several slides overflow because they carry an image plus bullets, which predates the theme and needs an authoring pass, not a CSS one. The en585781 rename is also still open.)*
-- [ ] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
-- [ ] Port `frontiers.css` to the brand palette or retire it in favour of the shared theme (S).
-- [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 70 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
+- [x] Link the three `en585781` decks from `technical-training/slides/index.md` and from units 01–04, 08, 09 (S). Highest value-per-minute item in the whole plan.
+  *(Completed 24 September 2026: each of the six unit pages now carries a "Graduate lecture"
+  line in its Course links section, pointing at the rendered deck and Markdown source that
+  cover it — module07 (Introduction to Connectomics) for units 01–02, module08 (Tools and
+  Methods) for units 03–04, module09 (Algorithms and Applications) for units 08–09, matching
+  the pairing the decks themselves describe. `validate_technical_evidence.rb` and
+  `validate_code_span_paths.rb` re-run clean.)*
+- [x] **Two standalone graduate lectures, not in the original plan.** The two Workstream 4
+  reference pages that went through a rigor pass — `synapse-detection.md` and
+  `ethics-and-governance.md` — are now presentation decks in the `frontiers` theme:
+  `course/decks/marp/lectures/synapse-detection.marp.md` (39 slides) and
+  `ethics-and-governance.marp.md` (31 slides), each sized for one 50–60 minute lecture rather
+  than padded to the 56–59 of the three-part en585781 sessions. They are deliberately **not**
+  EN.585.781 material: no module number, course name, institution or named instructor
+  anywhere in either; the byline is "NeuroTrailblazers", the credit line cites the project,
+  and the course housekeeping the templates carry (assignments, forums, journal-club
+  sign-ups) is dropped. Every number and citation traces to the source page — nothing new
+  was added — and each deck ends on a "what this lecture does not cover" slide carrying the
+  page's own boundaries: no CREMI weighting formula, no leaderboard positions, no gap-junction
+  figures, no compute budgets; hemibrain's CC BY version and H01's data licence left
+  unverified rather than guessed. Zero images, so the same "no third-party figures" line
+  holds. HTML-comment speaker notes on the slides that carry the worked numbers (the H01
+  74.2% → 67.1% recount, the SynEM 88% → 97% aggregation step, the FlyWire licence split).
+  Linked from a new, separately headed section of `technical-training/slides/index.md` and
+  from each source page's Go deeper list. *(`course/decks/marp/lectures` added to
+  `_config.yml` `exclude:` beside `en585781`; `out/lectures/` stays published. A
+  directory `LICENSE` was added on the `en585781` precedent, because the top-level LICENSE
+  puts decks under `course/` at CC BY 4.0 and the decks' own CC BY-SA 4.0 claim needed the
+  same override. Rendered with marp-cli pinned to 4.5.1, the version stamped in the committed
+  outputs, so none of the other 39 decks churned. All 70 slides measured inside the 720 px
+  frame in headless Chrome, with the detector checked first against a deliberately
+  overflowing slide. `check_deck_freshness.rb`, `validate_generated_materials.rb`,
+  `validate_figure_refs.rb`, `validate_frontmatter.rb` and `validate_code_span_paths.rb`
+  all clean.)* ***Still open:*** *the ethics deck points to "the site's peer-review and
+  scientific-ethics module" in words rather than by number, to keep "Module N" out of a deck
+  that must not read as a course module; an instructor presenting it may want the link on
+  screen. Neither deck has been presented to a room, so the timing is an estimate.*
+- [~] Rebuild the ten technical-unit decks on the `neurotrailblazers` theme from the unit pages, with speaker notes and a source line per figure; fill or delete the empty slides in 04, 07 and the atlas (L). Rename the `en585781/module0N-*` files so they do not collide with curriculum module numbers. *(Partly done: all ten now declare the brand theme, carry a title-class opener and a per-unit footer, use the `figure` class where a slide is heading-plus-image, and the two empty slides are filled with real content. **Authoring pass done 24 September 2026:** all 66 embedded figures now carry a `<p class="source">` line. The 17 H01 renders cite the release, CC BY 4.0 and Shapson-Coe et al. 2024 as `_data/em_figures.yml` does; the 43 `RIV-*`, `Module1N L*` and Techtalk extractions cite their source deck in the unit pages' own attribution wording ("Pat Rivlin training materials (MICrONS proofreading deck)", "assets_outreach source decks", 2021 techtalk, historical/context); the six Wikimedia/PLOS images cite file page and licence from `assets/images/external/ATTRIBUTION.md`. 107 speaker-note blocks, in the HTML-comment convention of the module decks, carry the unit pages' worked examples and numbers. The 20 slides that ran off the frame — measured in headless Chrome, not guessed; the worst, 07's Wikimedia glia diagram, ended at y=1576 of 720 — are now two-column or figure-with-caption, and the same measure puts all 175 slides inside the frame with the source line clear of the content. 04's heading-only "pipeline overview" slide now carries Module14 L1 S04; 06's one-bullet "High-complexity edge case" was folded into the protocol slide. Headings that contradicted their image were retitled from what the image shows: 05's "dendritic context" is a soma (the unit page already said so), 06's "continuity check case" is a PSD scaffold schematic, 09's "analysis workflow overview" is a simulated legged agent. Three images that did not belong went: 02's stock brain-on-a-chip and fused-car pictures gave way to the H01 four-scale ladder, and 08's unrelated raw-EM "metrics" image became the unit's metric blind-spot table. The "External paper figure slots (add in final teaching run)" placeholders are reading lists with DOIs from the atlas references. Title slides now read "Technical Course · Unit NN".* ***Provenance trace, 24 September 2026:*** *two of the five flagged figures are now
+confirmed, by citation search, to be copyrighted third-party work with no open licence —
+this is the one item on this list that is a rights question, not a documentation one.
+RIV-AXDEN-S18 is Figure 3 of Sheng M, Kim E (2011), "The Postsynaptic Organization of
+Synapses," *Cold Spring Harb Perspect Biol* 3(12):a005678, doi:10.1101/cshperspect.a005678
+— caption text matched verbatim — © Cold Spring Harbor Laboratory Press, all rights
+reserved. It is used three places, not one: the 06 deck slide, `technical-training/06-axons-and-dendrites.md:353`,
+and `technical-training/08-segmentation-and-proofreading.md:410` (the last under a caption
+that describes a different image, confirming the mismatch this list already noted). RIV-GLIA-S03
+is a screenshot of synapseweb.clm.utexas.edu/astrocytes (SynapseWeb, Kristen M. Harris Lab, UT
+Austin), byline "by Rachel E. Ventura" confirmed on the live page — © The University of
+Texas at Austin, no reuse licence stated. Both deck source lines now carry the full citation
+and a "confirm permission before this deck is shared outside the course" caveat rather than
+the vague "historical/context" framing; **the two unit-page embeds are unchanged and still
+need the same decision** (replace, seek permission, or restrict to internal use) — that is
+a call for whoever owns external relationships for this course, not one to make unilaterally.
+RIV-ULTRA S04 and S20 and Module14 L3 S13 remain unconfirmed after a real attempt — S13's
+panel layout (network graph, ΔF/F traces, EM-to-graph pipeline, four synapse examples,
+an excitatory connectivity matrix) matches the hallmark figure of Lee et al. 2016, *Nature*
+532:370–374, "Anatomy and function of an excitatory network in the visual cortex," but the
+paper is paywalled and this was not confirmed panel-for-panel; treat that as a lead, not a
+citation. All three, plus the Techtalk and Module12 framing images, need either reverse-image-search
+tooling or a person who recognizes the original 2021 techtalk / Module12 source decks — text
+search cannot confirm an image with no legible caption.* ***Resolved, not a bug:*** *the
+byte-identical `FIG-RIV-ULTRA-S11-01` / `FIG-RIV-AXDEN-S11-01` pair is a deliberate dual
+extraction, not a mislabel — `course/units/figures/06-axons-and-dendrites-selected-v1.md:6`
+and `08-segmentation-and-proofreading-selected-v1.md:8` independently select it for each unit
+under a different topical framing ("axon-related classification cue" vs. "vesicle/organelle
+features"), meaning Pat Rivlin's original training materials reused the same image on slide 11
+of both the axon/dendrite deck and the ultrastructure deck. Both IDs are correct.* ***Fixed:***
+*`ATTRIBUTION.md` now names Holly Fischer (source: open.umich.edu "Second Look Series") for
+`glial-cell-types.png` and Wikimedia user Marashie for `feed-forward-motif.gif`, and both
+decks' on-slide source lines now carry that author credit, which CC BY 3.0 / CC BY-SA 3.0
+require and the previous "Wikimedia Commons" wording did not supply.* ***Still open:*** *the
+unit-page caption fixes noted above, and the en585781 rename.)*
+- [x] **Found while rendering, now fixed:** `scripts/render_marp.sh` produced
+  machine-dependent output. Marp derives the `<html lang>` attribute from the process
+  locale, so CI's `LC_ALL=C.UTF-8` stamped `lang="POSIX"` into all 39 committed decks —
+  not a valid BCP 47 tag, so assistive technology cannot select a voice from it — while
+  any developer machine with a real locale emitted `en-US`. Re-rendering with sources
+  untouched therefore churned 848 lines across every deck, in whichever direction the
+  last person's locale pointed, burying real content changes. The script now pins
+  `LANG`/`LC_ALL`, so the output is a function of the sources alone, and the decks carry
+  a correct `lang`. Still unpinned, and noted in the script: marp-cli stamps its own
+  version into every output, and the repo installs it with `--no-save` and no
+  `package.json`, so a CLI upgrade rewrites all 39 files.
+- [x] Move the 25 module decks from `theme: default` to `theme: neurotrailblazers` in the generator; re-render (S).
+  *(25 September 2026: applied the approved nanoscale visual direction to the shared
+  Marp theme: charcoal and warm paper, Source Sans 3 headings, uncropped H01 EM
+  segmentation covers with original scale bars and source credits. All 25 generated
+  module decks and ten technical/reference decks use the new covers; the reusable
+  template demonstrates the same direction. Dense concept, workflow and misconception
+  passages now continue across slides in the generator, preserving their text instead
+  of reducing the type size. Browser measurement checked all 614 affected slides,
+  with no missing images or body text outside the content bounds. The generated-materials
+  validator enforces the module theme, image validation now includes nested decks and
+  HTML images, and freshness checks include theme CSS. The existing PowerPoint template
+  remains on its earlier design; the graduate theme migration is recorded below.)*
+- [x] Port `frontiers.css` to the approved nanoscale palette (S).
+  *(25 September 2026: imports the shared theme and embedded Source Sans 3 / IBM Plex
+  fonts; retains lecture-specific dense tables, columns and reference layouts. Five
+  covers use the H01 segmentation image with its original scale bar and CC BY 4.0
+  credit. Licence notes no longer claim there are no third-party figures. All five
+  decks re-rendered; 243 slides checked in Chrome with no missing images or text
+  outside the slide bounds. Scientific content and speaker notes are retained.)*
+- [ ] Web: import `assets/brand/brand-tokens.css`; migrate the 56 legacy `--neural-blue` / `--cerebral-purple` / `--axon-cyan` uses (70 when this plan was written; the count drifts with every stylesheet edit, so re-count before starting) and the 60-plus hardcoded Tailwind hex values to `--nt-*` tokens; delete the legacy `:root` block and the `colors:` block in `_config.yml` (M).
 - [ ] Replace `favicon.ico` with `assets/brand/nt-favicon.svg` (plus a 32 px PNG fallback); add `<link rel="icon">` to the layout; add the social card as `og:image` (S).
 - [ ] Header: replace the text logo with `nt-lockup-horizontal.svg`; consider dropping the full-width banner image from interior pages (S).
-- [ ] Drop the unused Plus Jakarta Sans from the font request; add Barlow Condensed 700 for display headings (S).
+- [ ] Drop unused Plus Jakarta Sans from the web font request; align display typography with the approved Source Sans 3 nanoscale direction rather than the superseded Barlow proposal (S).
 - [ ] Replace emoji icons with the line-icon set described in the brand guide (M, after 2.4).
 
 ---
@@ -213,6 +468,72 @@ See `docs/brand/BRAND_GUIDE.md` for the system. The Marp theme
 - [x] Validator: `technical_capabilities.yml` ↔ unit pages; in-page "Course links" ↔ `technical_track.yml` (1.3). *(Delivered with 1.3 in `validate_technical_evidence.rb`.)*
 - [x] Validator: no `{{` or `{: #` in generated worksheets; every worksheet rubric has criteria (1.2). *(`scripts/validate_generated_materials.rb`, wired into CI. Accepts both rubric forms in use — criteria inline after the tier label, or nested beneath it — and fails when a tier has neither. Both failure modes fault-injected.)*
 - [x] Validator: every `*.marp.md` under `course/decks/marp/` declares a theme; no slide body is empty (5). *(Same script. It immediately caught the ten unthemed technical decks and the two committed empty slides, which are fixed rather than exempted.)*
+- [x] **Validator, added after 3.1:** site paths written inside backtick code spans resolve
+  to a real page (`scripts/validate_code_span_paths.rb`). `check_site_links.rb` scans only
+  `href=` and `src=`, so a path written as prose-with-monospace is invisible to it — deleting
+  the 25 `modules/slides/moduleNN` pages left all 25 worksheet footers citing the dead path
+  in a code span and the link audit still passed. Scope is narrow on purpose: only strings
+  with both a leading and trailing slash count as site URLs, so repo paths (`scripts/foo.rb`)
+  and asset references are ignored, and an `NN`/`<placeholder>` marks a pattern rather than a
+  link. Zero findings on current content. Verified by injecting the original fault and
+  confirming this gate fails while `check_site_links` stays green, plus a bogus path and a
+  placeholder to check both directions.
+- [x] **Interaction defect, found and fixed after the fact: the AI synthesis modal covered
+  the whole site.** `technical-training/journal-club/index.md:104` ships the modal with
+  `class="... hidden"` and an inline `style="position:fixed; inset:0; display:flex;
+  z-index:1000"`. The only `.hidden` rule in the entire stylesheet was `.jc-card.hidden`,
+  so the class matched nothing on this element: the overlay rendered on page load, before
+  anyone asked for a prompt, and swallowed every click on the site nav underneath it. Its
+  close button added a class no rule listened to, so it could not be dismissed — the page
+  was unusable without a reload. Three other elements had the same defect and were also
+  permanently visible: `jc-empty` ("No papers match your filters") sat under a full grid of
+  results, and both copy-confirmation toasts were always on screen.
+  *(Fixed with one global `.hidden { display: none !important; }` utility.* ***The
+  `!important` is load-bearing, not defensive:*** *a normal author declaration cannot
+  override an inline `display:flex`, and an important one can, so this is the only form of
+  the rule that actually closes the modal. Verified in headless Chrome: with the rule
+  removed the modal computes `display:flex` and `elementFromPoint` over the nav returns the
+  overlay; with it, the modal is `none` and the nav is hit-testable again. The modal also
+  gained Escape and backdrop-click dismissal plus `role="dialog"`/`aria-modal`, and all six
+  dismissal cases — including "a click inside must NOT close" — pass in the browser.)*
+- [x] **Second instance of the same class, fixed:** `technical-training/dictionary/index.md`
+  toggles `is-active` on its 8 category filter buttons and no rule for it existed anywhere,
+  so the 127-term dictionary filtered correctly while giving no indication of which category
+  was selected. `.dict-cat.is-active` added, with a `:focus-visible` ring.
+- [x] **Validator: a class that JS toggles must have a CSS rule somewhere.** Both defects
+  above are the same failure and neither was catchable by any existing gate — every
+  validator in CI reads text, and nothing has ever opened a page in a browser.
+  `scripts/validate_toggled_classes.rb`, wired into the scripts job.
+  *(The check is* ***specificity-aware, not a name grep****, which is the whole difficulty: a
+  grep for "is `hidden` in the stylesheet?" passes the modal defect, because `.jc-card.hidden`
+  contains the name. So for every element carrying a toggled class in its markup, some
+  compound selector mentioning that class must have all of its classes present on that
+  element — `.hidden` satisfies anything, `.jc-card.hidden` only satisfies a card. A class
+  with no static carrier (JS builds the element) falls back to "does any rule mention it",
+  which is all that is knowable without running the page. Both original faults were
+  re-injected and confirmed to fail the gate.)*
+- [x] **Third instance, found by the new gate and fixed.** The AI synthesis modal's four
+  prompt-mode buttons — on both `journal-club/index.md` and `journal-club/graph.md` —
+  toggled an `active` class that no rule anywhere matched, and carried their selected state
+  as inline `background`/`color`/`font-weight` that the click handler rewrote on every
+  button on every click. Not a rendering fault like the other two, since the inline styles
+  did paint: a dead class next to eleven lines of JS doing a stylesheet's job, in a file
+  whose sibling `.jcg-tier-btn.active` and `.jc-tab.active` had always done it in CSS.
+  `.jc-pmode-btn.active` and `.jcg-pmode-btn.active` now own the state, the inline `style`
+  attributes are gone from all eight buttons, and each handler is one line.
+  *(Verified in headless Chrome on both pages: exactly one button selected, selected and
+  unselected distinguishable in background and weight, and a click moving the selection.
+  The three findings the gate reported alongside these were false positives from the first
+  draft and are the reason it now understands that `toggle(cls, force)`'s second argument is
+  a condition, not a class — `toggle('active', type === 'citation')` had it demanding a
+  `.citation` rule.)*
+- [x] **Real-page browser smoke test:** `scripts/smoke_site.cjs` exercises navigation,
+  search, filters, persona tabs, teaching/deck links and journal modal dismissal,
+  then confirms navigation remains reachable. Desktop, keyboard, mobile and no-JS
+  menu cases pass locally. CI's build job installs pinned `puppeteer-core` and runs
+  the same suite after both link audits; a remote CI result is not yet verified.
+  The local build now works with Ruby 3.1.6 / Bundler 2.6.9 on a case-sensitive
+  destination (needed for `LICENSE` versus `/license/` on macOS).
 - [ ] Validator: stat literals on the home page and `core_surfaces.yml` are derived from data, not typed.
 - [ ] Render `last_reviewed` on pages (it is set on 40 pages and shown on none), and add a "what's new" page fed from git history or a changelog file.
 

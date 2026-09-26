@@ -16,6 +16,7 @@ This directory contains externally sourced figures used in technical-training de
 ## glial-cell-types.png
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Glial_Cell_Types.png
 - Source page: https://commons.wikimedia.org/wiki/File:Glial_Cell_Types.png
+- Author: Holly Fischer. Source: open.umich.edu, "Second Look Series," CNS Slide 4.
 - License: CC BY 3.0 Unported.
 
 ## image-segmentation-example.jpg
@@ -31,4 +32,6 @@ This directory contains externally sourced figures used in technical-training de
 ## feed-forward-motif.gif
 - Source URL: https://commons.wikimedia.org/wiki/Special:FilePath/Feed-forward_motif.GIF
 - Source page: https://commons.wikimedia.org/wiki/File:Feed-forward_motif.GIF
+- Author: Wikimedia Commons user "Marashie" (self-published work; the file page carries no
+  separately named author, so the uploader is the credited author per Commons convention).
 - License: CC BY-SA 3.0.

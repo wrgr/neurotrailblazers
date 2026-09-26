@@ -6,16 +6,19 @@ title: "NeuroTrailblazers deck template"
 footer: "NeuroTrailblazers"
 ---
 
-<!-- _class: title -->
+<!-- _class: title nanoscale -->
 <!-- _paginate: skip -->
 
-<span class="pill">Deck template · v1</span>
+<img class="cover-image" src="../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Deck template</span>
 
-# Every slide type in the NeuroTrailblazers theme
+# Nanoscale connectomics
 
-A working reference for anyone building a unit lecture, a module session deck, a lab briefing or a talk. Copy this file, keep the front matter, delete what you do not need.
+Membranes, neurites, and the connections between them.
 
 <p class="presenter">Presenter name · Affiliation · Date</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -64,9 +67,9 @@ One sentence saying what this part settles, in the reader's terms.
 
 ---
 
-## Standard content slide: heading is the claim
+## Standard content slide
 
-The heading states the takeaway, not the topic. The body earns it.
+A short heading identifies the subject or states a supported finding.
 
 - **Lead with the mechanism.** Say what happens, then why it matters for the learner's next decision.
 - **Numbers over adjectives.** "About 2 PB per mm³" beats "very large".
@@ -105,24 +108,26 @@ That proofreading rates transfer across datasets. They do not; calibrate per vol
 </div>
 <div>
 
-![Placeholder figure: replace with a figure from assets/images](../../../assets/images/technical-training/08-segmentation-and-proofreading/FIG-RIV-AXDEN-S13-01.png)
+![H01 neuronal soma with original scale bar](../../../assets/images/content-library/em/soma-ultrastructure.jpg)
 
-<p class="caption">Caption names what to look at, in one line.</p>
+<p class="caption">A compartment label needs evidence from the tissue.</p>
 
 </div>
 </div>
+
+<p class="source">H01 release · site render · CC BY 4.0 · Shapson-Coe et al. (2024), doi:10.1126/science.adk4858</p>
 
 ---
 
 <!-- _class: figure -->
 
-## Figure-first slide: caption below, heading short
+## Membranes and model labels
 
-![Placeholder figure](../../../assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S02-01.png)
+![h:430 Raw EM alongside subcompartment classification, with original scale bars](../../../assets/images/content-library/em/neuropil-raw-vs-subcompartments.jpg)
 
-<p class="caption">Figure caption. Say what the reader should notice, not what the figure is.</p>
+<p class="caption">The same field, before and after classification. A model label is a hypothesis to check.</p>
 
-<p class="source">Source: Author et al. (year), DOI. Licence noted if not CC BY.</p>
+<p class="source">H01 release · site render · CC BY 4.0 · Shapson-Coe et al. (2024), doi:10.1126/science.adk4858</p>
 
 ---
 

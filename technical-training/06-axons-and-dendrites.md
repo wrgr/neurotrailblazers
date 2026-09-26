@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2 h, plus a 90 min calibration lab |
+| **Time** | **Self-study ~3.5 h:** about 2 h of reading plus the 90 min calibration lab. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) — the organelle table and the cue-family idea are used throughout |
 | **You need** | A public EM volume; ideally a partner, since this unit's lab is about agreement |
 | **You finish with** | A measured personal error profile: which cues you over-trust, and in which contexts |
@@ -302,6 +302,38 @@ worst possible property for an error to have.
 4. **Audit asymmetrically.** Spend review effort on edges whose direction changes the
    conclusion, not uniformly across all edges.
 
+### Check yourself
+
+<details markdown="1">
+<summary>Your reconstruction shows reciprocal connections enriched above chance. A
+co-author argues that your roughly 5% axon/dendrite error rate can only have added
+noise, so the true enrichment must be at least as large. Is that right?</summary>
+
+**No. The argument assumes the errors are noise, and direction errors are a bias.**
+
+Noise dilutes an effect toward chance, which is why "the true effect is at least this
+large" sounds safe. A direction error does something different: it removes an edge in
+the true direction and adds one in the reverse direction. Where two cells are
+connected by several synapses, reversing some of them makes a one-way connection look
+reciprocal. Reciprocal pairs are manufactured, not blurred away, so the error pushes
+the measured rate *up* — toward the finding you reported. The observed enrichment may
+be partly or wholly made of your own errors.
+
+What to do, from the mitigations above:
+
+1. Re-run the reciprocity count restricted to edges whose direction was called at high
+   confidence. If the enrichment survives, say so; if it shrinks, you have learned the
+   most important thing about the result.
+2. Measure the direction error rate on a gold-standard subset, then simulate that rate
+   on your graph and report how much reciprocity it alone produces.
+3. Audit the reciprocal pairs first. They are the edges whose direction decides the
+   conclusion.
+
+**Generalizable principle:** "errors only make my estimate conservative" is true of
+noise and false of bias. Before relying on it, ask which way the error pushes the
+statistic you are reporting.
+</details>
+
 ---
 
 ## Visual training set
@@ -457,7 +489,7 @@ prioritization (Unit 08) or motif analysis (Unit 09).
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related modules: [Module 04]({{ '/modules/module04/' | relative_url }}), [Module 09]({{ '/modules/module09/' | relative_url }})
 - Lecture plan: [Axons and Dendrites lecture plan]({{ '/technical-training/slides/06-axons-and-dendrites/' | relative_url }})

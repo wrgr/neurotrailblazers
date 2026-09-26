@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Atlas: Connectomics Reference"
-description: "A working reference for the technical track: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
+title: "Connectomics Reference Atlas"
+description: "A working reference for the Technical Course: landmark datasets with specifications and access routes, the software landscape by workflow stage, benchmarks, and the curation schema for adding entries."
 permalink: /technical-training/atlas-connectomics-reference/
 image: /assets/images/units/atlas-connectomics-reference.svg
 image_alt: "Stylized vector art: a reference table with one row highlighted and a bookmark tab."
@@ -13,6 +13,7 @@ pathways:
 level: "Reference"
 time_estimate: "Use as needed"
 prerequisites: "None; most useful alongside Units 02-04"
+graded_exercise: "mini-lab"
 content_type: core
 ---
 
@@ -182,6 +183,18 @@ This page is a lookup table and this panel is deck context, not reference materi
     <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-21_02388_X_TECHTALK_-S44-01.png' | relative_url }}" alt="Developmental motifs reference context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Techtalk S44:</strong> Developmental motif comparison, cross-referenced here from Unit 09. Use it as the pointer into the <em>C. elegans</em> developmental series in §1 — the dataset to reach for when the question is how connectivity changes with maturation rather than what it is in one adult.</p>
   </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S13-01.png' | relative_url }}" alt="Multi-panel research figure pairing calcium-imaging traces and orientation tuning with an EM volume, reconstructed neurons and a presynaptic-by-postsynaptic connectivity matrix" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S13:</strong> Functional recordings, an EM volume, reconstructed neurons and a connectivity matrix — several views of one dataset in one figure. Fill in the §4 <code>modality</code> and <code>effective_resolution</code> fields for it and the problem shows: an entry has to say which view it indexes, because the calcium data and the EM data have different resolutions and support different claims.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S08-01.png' | relative_url }}" alt="Multi-panel circuit figure from the fly visual system with reconstructed neurons and a wiring diagram labelling cell types L1, Mi1 and Tm3" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S08:</strong> A circuit figure from the fly visual system, with reconstructed neurons above and a wiring diagram naming cell types L1, Mi1 and Tm3. Try to write its entry from the figure alone and you cannot: the <code>citation</code> and <code>dataset_or_code_access</code> fields need the paper, not the slide. That gap is why this panel is context and §1 is the reference.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/atlas-connectomics-reference/FIG-SRC-MODULE14_LESSON3-S05-01.png' | relative_url }}" alt="Region-level brain network drawn over the brain from above and from the side, with named cortical areas as nodes" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module14 L3 S05:</strong> A region-level brain network: named cortical areas as nodes, drawn from above and from the side. None of the datasets in §1 works at this scale. It marks the atlas's boundary — synapse-resolution volumes — and the macroscale methods that produce figures like this are placed on Unit 02's modality chart instead.</p>
+  </article>
 </div>
 
 <p><small>Attribution: module14 lesson3 and neuroAI source decks (historical/context visuals).</small></p>
@@ -239,8 +252,8 @@ is the citable source for a version.*
 
 ## Related
 
-- [Technical Training hub]({{ '/technical-training/' | relative_url }})
-- [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) — the reading list
+- [Technical Course]({{ '/technical-training/' | relative_url }})
+- [Journal Club]({{ '/technical-training/journal-club/' | relative_url }}) — the reading list
 - [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}) — shared vocabulary
 - [Dataset access guide]({{ '/datasets/access/' | relative_url }}) — clients and starter notebooks
 - [Case studies]({{ '/content-library/' | relative_url }}) — extended treatments of MICrONS, FlyWire, H01, *C. elegans*, and MouseConnects

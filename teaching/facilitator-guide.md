@@ -101,7 +101,7 @@ The site's [learner personas]({{ '/avatars/' | relative_url }}) are not decorati
 they describe genuinely different failure modes, and a session that works for one can
 fail another. In a mixed cohort you will usually have all four.
 
-### Julian — first-generation undergraduate
+### Julian, first-generation undergraduate
 
 **Predictable friction:** hidden curriculum. Not the content — the norms. Whether it is
 acceptable to say "I don't know", how to ask a question without appearing
@@ -118,7 +118,7 @@ uncertainty is normal.
 - Make office hours **scheduled and normal**, not available on request. "Optional"
   reads as "for people who are struggling" to a learner watching for signals.
 
-### Maya — graduate student bridging computation and biology
+### Maya, graduate student
 
 **Predictable friction:** depth is uneven and she knows it. Strong on methods, less
 secure on the biology, or the reverse — and reluctant to expose the gap in front of a
@@ -132,7 +132,7 @@ cohort.
 - Push her toward the **assumption-naming** habit (Bin B claims, Unit 01). Learners who
   are strong at methods tend to be the ones who over-claim from them.
 
-### Amir — industry researcher entering the field
+### Amir, AI scientist
 
 **Predictable friction:** speed and vocabulary. Used to shipping; frustrated by the
 pace and by biology terminology that seems arbitrary. Prone to assuming the biology is
@@ -149,7 +149,7 @@ a detail he can pick up later.
   people who cannot distinguish an astrocytic process from a dendrite will learn to
   make that mistake at scale" lands better than an appeal to thoroughness.
 
-### Dr. Nguyen — faculty mentor
+### Dr. Linh Nguyen, assistant professor
 
 **Predictable friction:** wants material she can hand to a trainee tomorrow, and has no
 time to adapt it.

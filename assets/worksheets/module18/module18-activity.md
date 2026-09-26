@@ -171,4 +171,4 @@ Assess the **evidence quality**, not whether you agree with the conclusion.
 
 ---
 
-*Module page: `/modules/module18/` · Slides: `/modules/slides/module18/` · [Facilitator guide](/teaching/facilitator-guide/)*
+*Module page: `/modules/module18/` · Session kit: `/teaching/sessions/module18/` · [Facilitator guide](/teaching/facilitator-guide/)*

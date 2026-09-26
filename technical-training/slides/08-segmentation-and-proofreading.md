@@ -58,7 +58,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Connections
 - Unit page: [Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module06]({{ '/modules/module06/' | relative_url }}), [module07]({{ '/modules/module07/' | relative_url }})
 

@@ -226,7 +226,7 @@ Julian's follow-up, sent the same day, is two sentences: thanks, and the specifi
 
 ## Teaching resources
 - Persona context: [Learner Personas]({{ '/avatars/' | relative_url }})
-- Mentorship support: [Ask-an-Expert]({{ '/tools/ask-an-expert/' | relative_url }})
+- Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 - Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
 - Stage framing: [Education Models]({{ '/models/' | relative_url }})
 - Start-here guidance: [Start Here]({{ '/start-here/' | relative_url }})

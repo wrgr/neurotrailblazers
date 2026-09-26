@@ -17,6 +17,7 @@ CONTENT_GLOBS = [
   "technical-training/*.md",
   "technical-training/*/*.md",
   "start-here.md",
+  "connectivity.md",
   "models.md",
   "education/models.md",
   "content-library/*.md",

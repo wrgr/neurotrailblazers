@@ -218,7 +218,7 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 
 ## Teaching resources
 - Core unit context: [Connectome Analysis and NeuroAI]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }})
-- Reading support: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading support: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Dataset workflow context: [Workflow overview]({{ '/datasets/workflow/' | relative_url }})
 - Quality controls context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 

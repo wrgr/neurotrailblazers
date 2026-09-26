@@ -117,6 +117,12 @@ body {
   position: absolute;
   left: 0;
   top: 100%;
+  /* Without this the dropdown paints at z-index auto, so any later element that
+     creates a stacking context can cover it -- the card hover states use
+     `transform`, which does exactly that. The dark .dropdown rule further down
+     overrides this one's background, radius and shadow but sets no z-index, so
+     this is where it belongs. */
+  z-index: 1000;
   background: var(--white);
   list-style: none;
   padding: 0.5rem 0;
@@ -124,15 +130,28 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.nav-item:hover .dropdown {
+.nav-group[open] > .dropdown {
   display: block;
 }
+
+.nav-group { position: relative; }
+.nav-group > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.45rem; }
+.nav-group > summary::-webkit-details-marker { display: none; }
+.nav-group > summary::after { content: '▾'; font-size: 0.75em; }
+.nav-group[open] > summary::after { transform: rotate(180deg); }
+.nav-item:last-child .dropdown { left: auto; right: 0; }
+.nav-toggle { display: none; }
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 2000; padding: 0.75rem 1rem; background: #fff; color: #10161c; }
+.skip-link:focus { top: 1rem; }
+.navbar :focus-visible { outline: 2px solid #b9d49c; outline-offset: 3px; }
+.dropdown-link[aria-current="page"] { background: rgba(255,255,255,0.1); color: #fff; }
 
 .dropdown-link {
   display: block;
   padding: 0.25rem 1rem;
   color: var(--synapse-black);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .dropdown-link:hover {
@@ -622,6 +641,23 @@ body {
   border-radius: 4px;
   font-size: 0.75rem;
   margin-right: 0.25rem;
+}
+
+/* Selected state for the dictionary's category filter. The JS toggles
+   `is-active` on these buttons, but no rule for it existed anywhere, so all 8
+   category buttons looked identical no matter which one was selected -- the
+   filter worked and simply never said what it had filtered to. Same defect
+   class as the `.hidden` utility above: a class the script depends on that the
+   stylesheet never defined. */
+.dict-cat { border: 1px solid transparent; }
+.dict-cat.is-active {
+  background: var(--neural-blue);
+  color: var(--white);
+  font-weight: 700;
+}
+.dict-cat:focus-visible {
+  outline: 2px solid var(--neural-blue);
+  outline-offset: 2px;
 }
 
 .lesson-map {
@@ -1731,13 +1767,23 @@ footer {
 @media (max-width: 900px) {
   .navbar {
     padding: 0.75rem 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .nav-menu {
     width: 100%;
     gap: 0.2rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
   }
+
+  .nav-link { display: block; min-height: 44px; padding: 0.65rem 0.7rem; }
+  .nav-toggle:not([hidden]) { display: block; border: 1px solid #82928e; border-radius: 4px; background: transparent; color: #fff; min-height: 44px; padding: 0.5rem 0.8rem; font: inherit; cursor: pointer; }
+  .navbar[data-collapsible] .nav-menu:not([data-open]) { display: none; }
+  .dropdown-link { white-space: normal; min-height: 44px; }
 
   .dropdown {
     position: static;
@@ -1899,6 +1945,34 @@ footer {
   display: none; font-size: 0.88rem; color: #374151; line-height: 1.6;
 }
 .jc-level.active { display: block; }
+
+/* Prompt-mode selector inside the AI synthesis modal. The selected state used to
+   be written as inline styles from the click handler, which set background,
+   colour and weight on every button on every click, while toggling an `active`
+   class that no rule anywhere matched. The class was dead and the state was
+   unreadable from the markup. The rule owns the state now and the handler only
+   toggles the class -- same shape as `.jc-tab.active` directly above. */
+.jc-pmode-btn {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+}
+.jc-pmode-btn.active {
+  background: #1a56db;
+  color: var(--white);
+  font-weight: 700;
+}
+.jc-pmode-btn:hover:not(.active) { background: #e2e8f0; }
+.jc-pmode-btn:focus-visible {
+  outline: 2px solid var(--neural-blue);
+  outline-offset: 2px;
+}
 
 /* Details / expandable */
 .jc-card-details {

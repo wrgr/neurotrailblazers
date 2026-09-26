@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 19 · NeuroTrailblazers"
 title: "Module 19: Peer Review and Scientific Ethics"
 ---
 
-# Module 19: Peer Review and Scientific Ethics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 19</span>
+
+# Peer Review and Scientific Ethics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -25,14 +33,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a technically rigorous manuscript review and an ethics-risk decision memo for a connectomics study, including actionable recommendations and integrity safeguards. Students will be able to distinguish constructive criticism from destructive criticism, identify the specific ethical challenges that arise in large-scale connectomics collaborations, and make documented decisions when facing ambiguous integrity situations.
 
@@ -42,10 +42,22 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ### 1) What peer reviewers look for in connectomics papers
 - **Technical:** effective peer review of connectomics manuscripts requires evaluating several domain-specific dimensions:
   - **Data quality documentation:** does the paper report the segmentation error rate (merge/split metrics), synapse detection precision/recall, and proofreading completeness? Without these, no biological claim is evaluable.
-  - **Statistical rigor:** are null models appropriate for the graph structure? Are multiple comparisons handled? Are effect sizes reported alongside p-values? Is there sensitivity analysis for key thresholds?
-  - **Interpretation boundaries:** does the paper distinguish confirmed findings from exploratory observations? Are conclusions limited to what the data can actually support (e.g., one brain region in one animal at one developmental time point)?
-  - **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
+
+---
+
+## Concept Focus (continued)
+- **Statistical rigor:** are null models appropriate for the graph structure? Are multiple comparisons handled? Are effect sizes reported alongside p-values? Is there sensitivity analysis for key thresholds?
+- **Interpretation boundaries:** does the paper distinguish confirmed findings from exploratory observations? Are conclusions limited to what the data can actually support (e.g., one brain region in one animal at one developmental time point)?
+
+---
+
+## Concept Focus (continued)
+- **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
 - **Plain language:** a good reviewer checks whether the methods can actually support the claims, whether the statistics are honest, and whether someone else could reproduce the work.
+
+---
+
+## Concept Focus (continued)
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
 
 ---
@@ -57,27 +69,73 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 - **Methods-evidence audit**
 - Check dataset versioning, preprocessing transparency, QC thresholds, and statistical controls.
 - Verify that each claim maps to a specific figure panel and statistical test.
+
+---
+
+## Core Workflow (continued)
 - **Interpretation audit**
 - Flag overclaiming, underreported uncertainty, and missing limitations.
 - Check whether conclusions are bounded by the data (one brain region, one species, one time point).
+
+---
+
+## Core Workflow (continued)
 - **Ethics-risk scan**
 - Evaluate authorship clarity, disclosure statements, data-governance assumptions, and consent coverage.
 - Check for signs of selective reporting (missing negative results, single-threshold analyses).
+
+---
+
+## Core Workflow (continued)
 - **Actionable response package**
 - Write revision requests prioritized by scientific impact and integrity risk.
 - Use constructive language: problem, evidence, suggestion.
 
 ---
 
-## 60-Minute Run-of-Show
-- One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
-- Structured review form template (one per student).
-- Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting).
-- Two examples of real reviewer comments: one constructive, one destructive.
-- Review comments reference specific manuscript locations (figure panels, paragraph numbers, methods details).
-- Ethics concerns are tied to concrete workflow practices, not abstract principles.
-- Recommendations are consistent with documented findings.
-- All feedback uses constructive language (problem, evidence, suggestion).
+## Run of Show (60 min)
+- 00:00-08:00 | Constructive vs destructive criticism
+- 08:00-12:00 | What reviewers look for in connectomics
+- 12:00-28:00 | Methods-evidence audit exercise
+- 28:00-38:00 | Ethics-risk scan
+- 38:00-50:00 | Decision memo drafting
+- 50:00-58:00 | Peer review of reviews
+- 58:00-60:00 | Competency check
+
+<!--
+Materials needed
+  One mock connectomics preprint (2-3 pages: abstract, key methods paragraph, two result figures with legends, and discussion excerpt). Pre-seeded with 4 issues: one methods gap, one overclaim, one ethics concern (ambiguous authorship), and one example of selective reporting.
+  Structured review form template (one per student).
+  Ethics-risk checklist (human tissue, attribution, data sharing, selective reporting).
+  Two examples of real reviewer comments: one constructive, one destructive.
+  Timing and instructor script
+
+00:00-08:00 | Constructive vs destructive criticism
+  Instructor displays two real (anonymized) reviewer comments for the same paper. One is specific, evidence-based, and actionable; the other is vague and dismissive. Students identify which is which and explain why. Key script line: "The most rigorous reviewer is not the harshest one. Rigor means specificity. Vague criticism is lazy, not tough."
+
+08:00-12:00 | What reviewers look for in connectomics
+  Instructor presents a checklist of connectomics-specific review criteria: data quality metrics, appropriate null models, reproducibility metadata, interpretation boundaries, and data availability. Brief discussion of how these differ from standard neuroscience review criteria.
+
+12:00-28:00 | Methods-evidence audit exercise
+  Students read the mock preprint individually. Using the structured review form, each student identifies: (a) one methods gap with specific missing information, (b) one overclaim where the language exceeds the evidence, (c) one figure panel where uncertainty is insufficiently represented. Instructor circulates, prompting: "Can you point to the exact sentence that overclaims? What would the bounded version say?"
+
+28:00-38:00 | Ethics-risk scan
+  Students use the ethics-risk checklist to scan the mock preprint. They identify: (a) the authorship ambiguity (the mock paper lists "the consortium" as an author without specifying individual contributions), (b) the selective reporting concern (only one of three tested motifs is discussed in results). Students draft a one-paragraph ethics memo for each issue with a concrete mitigation recommendation.
+
+38:00-50:00 | Decision memo drafting
+  In pairs, students draft a complete review decision memo: (a) summary of the paper's contribution, (b) major concerns (methods, interpretation, ethics) with evidence, (c) minor concerns, (d) recommendation (accept with revisions, major revisions, or reject) with explicit rationale. Students must ensure their recommendation is consistent with their documented concerns.
+
+50:00-58:00 | Peer review of reviews
+  Pairs swap decision memos and evaluate: Is the review specific and evidence-based? Is the recommendation consistent with the concerns? Is the tone constructive? Each pair writes one improvement suggestion.
+
+58:00-60:00 | Competency check
+  Each student submits their structured review form and decision memo. Instructor collects for after-session review.
+  Success criteria for this session
+  Review comments reference specific manuscript locations (figure panels, paragraph numbers, methods details).
+  Ethics concerns are tied to concrete workflow practices, not abstract principles.
+  Recommendations are consistent with documented findings.
+  All feedback uses constructive language (problem, evidence, suggestion).
+-->
 
 ---
 
@@ -85,6 +143,10 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
 - **Misconception guardrail:** ethics in connectomics is not just about IRB approval. It extends to data sharing, attribution, responsible AI, and honest reporting throughout the research lifecycle.
 - **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** being harsh is not the same as being rigorous. The most rigorous reviews are also the most specific and constructive.
 - **Misconception guardrail:** compliance checklists alone do not ensure good practice. Integrity requires ongoing attention to workflow transparency.
 - **Misconception guardrail:** contribution volume alone does not define authorship role. A person who proofread 10,000 segments may deserve authorship; a person who ran one analysis script may not. The criteria must be explicit and agreed upon in advance.
@@ -150,5 +212,5 @@ Choose a connectomics abstract (from a real paper or the mock preprint) and prod
 
 ## Teaching Materials
 - Module page: /modules/module19/
-- Slide page: /modules/slides/module19/
+- Session kit: /teaching/sessions/module19/
 - Worksheet: /assets/worksheets/module19/module19-activity.md

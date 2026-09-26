@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 13 · NeuroTrailblazers"
 title: "Module 13: Machine Learning in Neuroscience"
 ---
 
-# Module 13: Machine Learning in Neuroscience
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 13</span>
+
+# Machine Learning in Neuroscience
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -50,21 +50,49 @@ Design and critique an ML analysis pipeline for connectomics that includes featu
 - Write the biological decision the model will support, naming who acts on the output and what they do differently as a result.
 - Enumerate leakage channels present in your data — fragment duplication, spatial adjacency, annotator provenance, label circularity — and choose the split that blocks the strongest one.
 - Construct the feature set with a one-line rationale per feature, and record the segmentation version the features were computed from.
+
+---
+
+## Core Workflow (continued)
 - Fit all preprocessing (scaling, imputation, feature selection) inside the training fold only.
 - Train a trivial baseline first — majority class, or a single-feature threshold — and report it alongside every later model.
 - Evaluate with the metric that matches the decision from step 1, plus per-class recall and prevalence.
 - Run error analysis on the failures: sample 20-30 misclassified examples and classify the failure reason by hand.
+
+---
+
+## Core Workflow (continued)
 - Write the model card: intended use, unsupported uses, evaluation splits, metrics with intervals, and the domain in which the numbers hold.
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Task framing and leakage examples**
-- **08:00-20:00 | Feature rationale workshop**
-- **20:00-34:00 | Split strategy and baseline modeling**
-- **34:00-46:00 | Error analysis and biologically relevant metrics**
-- **46:00-56:00 | Model-card limitation writing**
-- **56:00-60:00 | Competency checkpoint**
+## Run of Show (60 min)
+- 00:00-08:00 | Task framing and leakage examples
+- 08:00-20:00 | Feature rationale workshop
+- 20:00-34:00 | Split strategy and baseline modeling
+- 34:00-46:00 | Error analysis and biologically relevant metrics
+- 46:00-56:00 | Model-card limitation writing
+- 56:00-60:00 | Competency checkpoint
+
+<!--
+00:00-08:00 | Task framing and leakage examples
+  Present the 0.92 result and ask the room to explain it. Collect hypotheses on the board before revealing the group-split number.
+
+08:00-20:00 | Feature rationale workshop
+  Each learner writes a one-line rationale per feature and marks any feature that could encode dataset identity rather than biology.
+
+20:00-34:00 | Split strategy and baseline modeling
+  Teams implement two splits — random and grouped — on the same data and report both scores. The gap is the exercise.
+
+34:00-46:00 | Error analysis and biologically relevant metrics
+  Learners compute per-class recall and prevalence, then precision at a *k* set by a stated review capacity.
+
+46:00-56:00 | Model-card limitation writing
+  Each learner drafts three unsupported uses for their own model and has a neighbor try to break them.
+
+56:00-60:00 | Competency checkpoint
+  Each learner names the leakage channel they consider most likely still present in their own work.
+-->
 
 ---
 
@@ -135,5 +163,5 @@ For one candidate model, write:
 
 ## Teaching Materials
 - Module page: /modules/module13/
-- Slide page: /modules/slides/module13/
+- Session kit: /teaching/sessions/module13/
 - Worksheet: /assets/worksheets/module13/module13-activity.md

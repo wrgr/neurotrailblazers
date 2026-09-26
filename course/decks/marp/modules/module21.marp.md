@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 21 · NeuroTrailblazers"
 title: "Module 21: Reproducibility and FAIR Principles in Connectomics"
 ---
 
-# Module 21: Reproducibility and FAIR Principles in Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 21</span>
+
+# Reproducibility and FAIR Principles in Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -55,30 +55,50 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 
 ---
 
-## 60-Minute Run-of-Show
-- Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
-- Read Technical Unit 04, section 2, on materialization versions and root-ID instability.
-- **00:00-06:00 | Framing: the silent bug**
-- Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
-- Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
-- **06:00-16:00 | The five-element checklist, modeled**
-- Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
-- Show what breaks when each one is missing, in turn.
-- **16:00-30:00 | Guided practice: audit your own work**
-- Learners score their brought-in analysis against the five elements. Most will fail two or three; say so in advance to make that safe.
-- Produce a remediation list ordered by how cheap each fix is.
-- **30:00-40:00 | Clean-environment rerun**
-- Attempt a rerun of a partner's analysis from their instructions alone, without asking them questions.
-- Log every point of friction. The friction log is the deliverable, not the successful rerun.
-- **40:00-50:00 | Known limitations, written honestly**
-- Each learner drafts a limitations paragraph naming concrete failure modes, excluded samples, and failed runs — not generic caveats.
-- Discuss why this is a hidden-curriculum norm: reviewers expect it, and almost nobody is taught to write it.
-- **50:00-57:00 | Competency check**
-- Submit: completed five-element record, friction report on a partner's package, and one limitations paragraph.
-- **57:00-60:00 | Exit ticket**
-- "One thing in my current work that another person could not reproduce today."
-- **At 30 minutes:** every learner has identified at least one missing element in their own work. A learner reporting five out of five has probably not audited honestly — check.
-- **At 50 minutes:** limitations paragraphs name specific failure modes rather than generic hedges.
+## Run of Show (60 min)
+- 00:00-06:00 | Framing: the silent bug
+- 06:00-16:00 | The five-element checklist, modeled
+- 16:00-30:00 | Guided practice: audit your own work
+- 30:00-40:00 | Clean-environment rerun
+- 40:00-50:00 | Known limitations, written honestly
+- 50:00-57:00 | Competency check
+- 57:00-60:00 | Exit ticket
+
+<!--
+Pre-class preparation (15 min async)
+  Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
+  Read Technical Unit 04, section 2, on materialization versions and root-ID instability.
+  Minute-by-minute plan
+
+00:00-06:00 | Framing: the silent bug
+  Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
+  Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
+
+06:00-16:00 | The five-element checklist, modeled
+  Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
+  Show what breaks when each one is missing, in turn.
+
+16:00-30:00 | Guided practice: audit your own work
+  Learners score their brought-in analysis against the five elements. Most will fail two or three; say so in advance to make that safe.
+  Produce a remediation list ordered by how cheap each fix is.
+
+30:00-40:00 | Clean-environment rerun
+  Attempt a rerun of a partner's analysis from their instructions alone, without asking them questions.
+  Log every point of friction. The friction log is the deliverable, not the successful rerun.
+
+40:00-50:00 | Known limitations, written honestly
+  Each learner drafts a limitations paragraph naming concrete failure modes, excluded samples, and failed runs — not generic caveats.
+  Discuss why this is a hidden-curriculum norm: reviewers expect it, and almost nobody is taught to write it.
+
+50:00-57:00 | Competency check
+  Submit: completed five-element record, friction report on a partner's package, and one limitations paragraph.
+
+57:00-60:00 | Exit ticket
+  "One thing in my current work that another person could not reproduce today."
+  Formative checkpoints
+  At 30 minutes: every learner has identified at least one missing element in their own work. A learner reporting five out of five has probably not audited honestly — check.
+  At 50 minutes: limitations paragraphs name specific failure modes rather than generic hedges.
+-->
 
 ---
 
@@ -147,5 +167,5 @@ Take one prior analysis output and add:
 
 ## Teaching Materials
 - Module page: /modules/module21/
-- Slide page: /modules/slides/module21/
+- Session kit: /teaching/sessions/module21/
 - Worksheet: /assets/worksheets/module21/module21-activity.md

@@ -9,24 +9,24 @@
 {% assign datasets = p.streams.datasets | join: ',' %}
 {% assign methods = p.streams.method | join: ',' %}
 
-<article class="jc-card" id="paper-{{ p.id }}" data-tier="{{ p.tier | default: 2000 }}" data-dimension="{{ p.dimension }}" data-year="{{ p.year }}" data-tags="{{ p.tags | join: ',' }}" data-id="{{ p.id }}" data-uuid="{{ p.uuid }}" data-era="{{ p.inclusion_role }}" data-kcore="{{ p.k_core }}" data-organism="{{ organisms }}" data-dataset="{{ datasets }}" data-method="{{ methods }}" data-axis="{{ p.streams.axis }}">
+<article class="jc-card" id="paper-{{ p.id | escape }}" data-tier="{{ p.tier | default: 2000 | escape }}" data-dimension="{{ p.dimension | escape }}" data-year="{{ p.year | escape }}" data-tags="{{ p.tags | join: ',' | escape }}" data-id="{{ p.id | escape }}" data-uuid="{{ p.uuid | escape }}" data-era="{{ p.inclusion_role | escape }}" data-kcore="{{ p.k_core | escape }}" data-organism="{{ organisms | escape }}" data-dataset="{{ datasets | escape }}" data-method="{{ methods | escape }}" data-axis="{{ p.streams.axis | escape }}">
   <header class="jc-card-header">
     <div class="jc-card-meta">
-      <span class="jc-card-year">{{ p.year }}</span>
-      <span class="jc-card-dimension">{{ p.dimension | replace: '-', ' ' }}</span>
-      {% if p.inclusion_role %}<span class="jc-card-era jc-chip" data-filter-field="era" data-filter-value="{{ p.inclusion_role }}" title="{{ p.era }}">{{ p.inclusion_role | capitalize }}</span>{% endif %}
+      <span class="jc-card-year">{{ p.year | escape }}</span>
+      <span class="jc-card-dimension">{{ p.dimension | replace: '-', ' ' | escape }}</span>
+      {% if p.inclusion_role %}<span class="jc-card-era jc-chip" data-filter-field="era" data-filter-value="{{ p.inclusion_role | escape }}" title="{{ p.era | escape }}">{{ p.inclusion_role | capitalize | escape }}</span>{% endif %}
     </div>
-    <h3 class="jc-card-title">{{ p.title }}</h3>
-    <p class="jc-card-authors">{{ p.authors }}</p>
+    <h3 class="jc-card-title">{{ p.title | escape }}</h3>
+    <p class="jc-card-authors">{{ p.authors | escape }}</p>
     <p class="jc-card-journal">
-      <em>{{ p.journal }}</em>
-      {% if p.doi %} &middot; <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+      <em>{{ p.journal | escape }}</em>
+      {% if p.doi %} &middot; <a href="https://doi.org/{{ p.doi | escape }}" target="_blank" rel="noopener">DOI</a>{% endif %}
     </p>
     {% if p.k_core or p.in_degree or p.out_degree %}
     <p class="jc-card-graph-place">
-      {% if p.k_core %}<span class="jc-graph-stat" title="How embedded this paper is in the densest part of the citation network">k-core {{ p.k_core }}</span>{% endif %}
-      {% if p.in_degree %}<span class="jc-graph-stat" title="Core papers that cite this one">in {{ p.in_degree }}</span>{% endif %}
-      {% if p.out_degree %}<span class="jc-graph-stat" title="Core papers this one cites">out {{ p.out_degree }}</span>{% endif %}
+      {% if p.k_core %}<span class="jc-graph-stat" title="How embedded this paper is in the densest part of the citation network">k-core {{ p.k_core | escape }}</span>{% endif %}
+      {% if p.in_degree %}<span class="jc-graph-stat" title="Core papers that cite this one">in {{ p.in_degree | escape }}</span>{% endif %}
+      {% if p.out_degree %}<span class="jc-graph-stat" title="Core papers this one cites">out {{ p.out_degree | escape }}</span>{% endif %}
     </p>
     {% endif %}
   </header>
@@ -35,23 +35,23 @@
   <div class="jc-card-ocar">
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-opportunity">Opportunity</div>
-      <p>{{ p.ocar.opportunity }}</p>
+      <p>{{ p.ocar.opportunity | escape }}</p>
     </div>
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-challenge">Challenge</div>
-      <p>{{ p.ocar.challenge }}</p>
+      <p>{{ p.ocar.challenge | escape }}</p>
     </div>
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-action">Action</div>
-      <p>{{ p.ocar.action }}</p>
+      <p>{{ p.ocar.action | escape }}</p>
     </div>
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-resolution">Resolution</div>
-      <p>{{ p.ocar.resolution }}</p>
+      <p>{{ p.ocar.resolution | escape }}</p>
     </div>
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-future">Future Work</div>
-      <p>{{ p.ocar.future_work }}</p>
+      <p>{{ p.ocar.future_work | escape }}</p>
     </div>
   </div>
   {% endif %}
@@ -63,9 +63,9 @@
       <button class="jc-tab" data-level="advanced">Advanced</button>
     </div>
     <div class="jc-expertise-content">
-      <div class="jc-level active" data-level="beginner">{{ p.summaries.beginner }}</div>
-      <div class="jc-level" data-level="intermediate">{{ p.summaries.intermediate }}</div>
-      <div class="jc-level" data-level="advanced">{{ p.summaries.advanced }}</div>
+      <div class="jc-level active" data-level="beginner">{{ p.summaries.beginner | escape }}</div>
+      <div class="jc-level" data-level="intermediate">{{ p.summaries.intermediate | escape }}</div>
+      <div class="jc-level" data-level="advanced">{{ p.summaries.advanced | escape }}</div>
     </div>
   </div>
 
@@ -76,14 +76,14 @@
       <p><strong>Key figures:</strong></p>
       <ul class="jc-fig-list">
         {% for fig in p.key_figures %}
-        <li>{{ fig }}</li>
+        <li>{{ fig | escape }}</li>
         {% endfor %}
       </ul>
       {% if p.discussion_prompts.size > 0 %}
       <p><strong>Discussion prompts:</strong></p>
       <ul class="jc-fig-list">
         {% for prompt in p.discussion_prompts %}
-        <li>{{ prompt }}</li>
+        <li>{{ prompt | escape }}</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -93,13 +93,13 @@
 
   {% if p.related.cites.size > 0 or p.related.cited_by.size > 0 %}
   <details class="jc-card-details jc-related-details">
-    <summary>Related core works ({{ p.related.cites.size | plus: p.related.cited_by.size }})</summary>
+    <summary>Related core works ({{ p.related.cites.size | plus: p.related.cited_by.size | escape }})</summary>
     <div class="jc-details-body">
       {% if p.related.cites.size > 0 %}
       <p><strong>Cites:</strong></p>
       <ul class="jc-related-list">
         {% for rp in p.related.cites limit: 8 %}
-        <li><a href="#paper-{{ rp.id }}" class="jc-related-link" data-related-id="{{ rp.id }}">{{ rp.title }}</a> ({{ rp.year }})</li>
+        <li><a href="#paper-{{ rp.id | escape }}" class="jc-related-link" data-related-id="{{ rp.id | escape }}">{{ rp.title | escape }}</a> ({{ rp.year | escape }})</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -107,7 +107,7 @@
       <p><strong>Cited by:</strong></p>
       <ul class="jc-related-list">
         {% for rp in p.related.cited_by limit: 8 %}
-        <li><a href="#paper-{{ rp.id }}" class="jc-related-link" data-related-id="{{ rp.id }}">{{ rp.title }}</a> ({{ rp.year }})</li>
+        <li><a href="#paper-{{ rp.id | escape }}" class="jc-related-link" data-related-id="{{ rp.id | escape }}">{{ rp.title | escape }}</a> ({{ rp.year | escape }})</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -120,18 +120,18 @@
     <summary>🔬 Analysis Protocol &amp; Ecosystem</summary>
     <div class="jc-details-body">
       <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem;">
-        {% if p.dimension %}<span class="jc-tag" style="background:#ede9fe; color:#6d28d9; font-weight:600;">Domain: {{ p.dimension | replace: '-', ' ' }}</span>{% endif %}
-        {% if p.organism %}<span class="jc-tag" style="background:#dbeafe; color:#1e40af; font-weight:600;">Organism: {{ p.organism | join: ', ' }}</span>{% endif %}
-        {% if p.tier %}<span class="jc-tag" style="background:#fef3c7; color:#92400e; font-weight:600;">Tier: {{ p.tier }}</span>{% endif %}
+        {% if p.dimension %}<span class="jc-tag" style="background:#ede9fe; color:#6d28d9; font-weight:600;">Domain: {{ p.dimension | replace: '-', ' ' | escape }}</span>{% endif %}
+        {% if p.organism %}<span class="jc-tag" style="background:#dbeafe; color:#1e40af; font-weight:600;">Organism: {{ p.organism | join: ', ' | escape }}</span>{% endif %}
+        {% if p.tier %}<span class="jc-tag" style="background:#fef3c7; color:#92400e; font-weight:600;">Tier: {{ p.tier | escape }}</span>{% endif %}
       </div>
       {% if p.ocar.action %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Methodological Action:</strong> {{ p.ocar.action }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Methodological Action:</strong> {{ p.ocar.action | escape }}</p>
       {% endif %}
       {% if p.ocar.resolution %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Empirical Resolution:</strong> {{ p.ocar.resolution }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Empirical Resolution:</strong> {{ p.ocar.resolution | escape }}</p>
       {% endif %}
       {% if p.ocar.future_work %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45; color: #64748b;"><strong>Open Horizons:</strong> {{ p.ocar.future_work }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45; color: #64748b;"><strong>Open Horizons:</strong> {{ p.ocar.future_work | escape }}</p>
       {% endif %}
     </div>
   </details>
@@ -139,22 +139,22 @@
 
   {% if p.streams.organism.size > 0 or p.streams.datasets.size > 0 or p.streams.method.size > 0 %}
   <div class="jc-card-streams">
-    {% for v in p.streams.organism %}<span class="jc-tag jc-tag-organism" data-filter-field="search" data-filter-value="{{ v }}">{{ v }}</span>{% endfor %}
-    {% for v in p.streams.datasets %}<span class="jc-tag jc-tag-dataset" data-filter-field="search" data-filter-value="{{ v }}">{{ v }}</span>{% endfor %}
-    {% for v in p.streams.method %}<span class="jc-tag jc-tag-method" data-filter-field="search" data-filter-value="{{ v }}">{{ v }}</span>{% endfor %}
+    {% for v in p.streams.organism %}<span class="jc-tag jc-tag-organism" data-filter-field="search" data-filter-value="{{ v | escape }}">{{ v | escape }}</span>{% endfor %}
+    {% for v in p.streams.datasets %}<span class="jc-tag jc-tag-dataset" data-filter-field="search" data-filter-value="{{ v | escape }}">{{ v | escape }}</span>{% endfor %}
+    {% for v in p.streams.method %}<span class="jc-tag jc-tag-method" data-filter-field="search" data-filter-value="{{ v | escape }}">{{ v | escape }}</span>{% endfor %}
   </div>
   {% endif %}
 
   <div class="jc-card-links">
-    <button type="button" class="jc-link jc-link-ai-prompt" data-paper-id="{{ p.id }}" title="Generate AI Study Guide &amp; Seminar Critique Prompt for this paper">🤖 AI Prompt</button>
-    <a href="{{ '/technical-training/journal-club/graph/?paper=' | append: p.id | relative_url }}" class="jc-link jc-link-graph" title="Explore this paper in the interactive citation network">🕸️ Citation Graph</a>
+    <button type="button" class="jc-link jc-link-ai-prompt" data-paper-id="{{ p.id | escape }}" title="Generate AI Study Guide &amp; Seminar Critique Prompt for this paper">🤖 AI Prompt</button>
+    <a href="{{ '/technical-training/journal-club/graph/?paper=' | append: p.id | relative_url | escape }}" class="jc-link jc-link-graph" title="Explore this paper in the interactive citation network">🕸️ Citation Graph</a>
     {% if p.pdf_url %}
-    <a href="{{ p.pdf_url }}" target="_blank" rel="noopener" class="jc-link jc-link-pdf">PDF</a>
+    <a href="{{ p.pdf_url | escape }}" target="_blank" rel="noopener" class="jc-link jc-link-pdf">PDF</a>
     {% endif %}
     {% if p.doi %}
-    <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener" class="jc-link jc-link-paper">DOI</a>
+    <a href="https://doi.org/{{ p.doi | escape }}" target="_blank" rel="noopener" class="jc-link jc-link-paper">DOI</a>
     {% elsif p.landing_url %}
-    <a href="{{ p.landing_url }}" target="_blank" rel="noopener" class="jc-link jc-link-paper">Paper</a>
+    <a href="{{ p.landing_url | escape }}" target="_blank" rel="noopener" class="jc-link jc-link-paper">Paper</a>
     {% endif %}
   </div>
 
@@ -164,10 +164,10 @@
     <summary>Citation</summary>
     <div class="jc-details-body">
       {% if cite_text %}
-      <p class="jc-citation-plain">{{ cite_text }}</p>
+      <p class="jc-citation-plain">{{ cite_text | escape }}</p>
       {% endif %}
       {% if p.bibtex %}
-      <pre class="jc-citation-bib"><code>{{ p.bibtex | strip }}</code></pre>
+      <pre class="jc-citation-bib"><code>{{ p.bibtex | strip | escape }}</code></pre>
       {% endif %}
     </div>
   </details>
@@ -175,7 +175,7 @@
 
   <div class="jc-card-tags">
     {% for tag in p.tags %}
-    <span class="jc-tag" data-filter-field="search" data-filter-value="{{ tag }}">{{ tag | split: ':' | last | replace: '-', ' ' }}</span>
+    <span class="jc-tag" data-filter-field="search" data-filter-value="{{ tag | escape }}">{{ tag | split: ':' | last | replace: '-', ' ' | escape }}</span>
     {% endfor %}
   </div>
 </article>

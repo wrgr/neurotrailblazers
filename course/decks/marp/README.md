@@ -16,9 +16,17 @@ Current draft units:
 
 Usage:
 1. Install Marp CLI if needed.
-2. Render with: `marp <file>.marp.md --html --allow-local-files`.
-3. Convert to PPTX if needed via your preferred export workflow.
-4. Or batch-render all decks with: `./scripts/render_marp.sh`.
+2. Render with `./scripts/render_marp.sh`, which registers the custom themes and repairs image paths for the output directory.
+3. Use `./scripts/render_marp.sh --pptx` for PowerPoint exports.
+4. Run `ruby scripts/check_deck_freshness.rb` after editing sources or theme CSS.
+
+The shared `neurotrailblazers` theme uses the nanoscale design approved in September
+2026: charcoal covers with real H01 tissue, warm paper for teaching content, and
+embedded Source Sans 3. Copy the cover markup from
+`neurotrailblazers-template.marp.md`; retain the image's scale bar and citation.
+Image paths are relative to the source file, so decks under `modules/` need one
+more `../` than decks in this directory. Generate module sources with
+`ruby scripts/generate_module_teaching_materials.rb` before rendering.
 
 Notes:
 - Figure paths currently use repo-local assets.

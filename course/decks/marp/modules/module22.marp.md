@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 22 · NeuroTrailblazers"
 title: "Module 22: Scientific Writing and Presentation"
 ---
 
-# Module 22: Scientific Writing and Presentation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 22</span>
+
+# Scientific Writing and Presentation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -50,30 +50,52 @@ Deliver a 10-minute connectomics talk with evidence-linked claims, explicit unce
 - Build the claim tree on paper: question at the root, two or three claims, one evidence item and one caveat under each, deleting any claim you cannot attach evidence to.
 - Write the time budget for your slot, then select the minimal slide set that preserves the inferential logic; every surviving slide must answer "which node of the claim tree is this?"
 - Draft the one-line provenance statement for the data slide: species and region, imaging modality and resolution, segmentation pipeline, proofreading or materialization version, and any exclusion criterion.
+
+---
+
+## Core Workflow (continued)
 - Rehearse against a timer with no audience and cut to the budget, then rehearse again with transitions spoken aloud, because the sentence carrying slide 4 into slide 5 is the one people improvise badly.
 - Run peer critique with one narrow brief: mark every sentence where the spoken claim is stronger than the slide's evidence.
 - Write the two most likely questions and a three-sentence answer to each, choosing the answer shape from the question-type taxonomy.
+
+---
+
+## Core Workflow (continued)
 - Revise with explicit uncertainty statements, checking the rung is identical in slide, speech, and prepared answer.
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Framing and exemplar**
-- Instructor demonstrates one evidence-linked opening slide.
-- Show two versions of the same opener, one starting with field history and one with the question. Script line: "You have sixty seconds before the audience decides how hard to listen."
-- **08:00-18:00 | Claim tree workshop**
-- Learners draft question-claim-evidence-caveat map, capped at three claims.
-- Circulate asking one question only: "what is the evidence node under this claim, and which dataset version?"
-- **18:00-30:00 | Slide drafting sprint**
-- Build 4-slide mini-talk (problem, method, result, limitation).
-- Require the provenance line and a named uncertainty rung. Early finishers draft backup slides, not more main slides.
-- **30:00-42:00 | Peer critique round**
-- Review for clarity, caveat visibility, and claim discipline, under one narrow brief: mark every place the spoken claim outruns the slide's evidence.
-- **42:00-54:00 | Q&A simulation**
-- Each learner answers two critique questions.
-- Assign types so everyone gets one methods challenge and one alternative-explanation question. Name the type before judging the answer.
-- **54:00-60:00 | Debrief and competency check**
-- Submit revised claim language and one uncertainty statement, then name the question you most fear. That list is next session's material.
+## Run of Show (60 min)
+- 00:00-08:00 | Framing and exemplar
+- 08:00-18:00 | Claim tree workshop
+- 18:00-30:00 | Slide drafting sprint
+- 30:00-42:00 | Peer critique round
+- 42:00-54:00 | Q&A simulation
+- 54:00-60:00 | Debrief and competency check
+
+<!--
+00:00-08:00 | Framing and exemplar
+  Instructor demonstrates one evidence-linked opening slide.
+  Show two versions of the same opener, one starting with field history and one with the question. Script line: "You have sixty seconds before the audience decides how hard to listen."
+
+08:00-18:00 | Claim tree workshop
+  Learners draft question-claim-evidence-caveat map, capped at three claims.
+  Circulate asking one question only: "what is the evidence node under this claim, and which dataset version?"
+
+18:00-30:00 | Slide drafting sprint
+  Build 4-slide mini-talk (problem, method, result, limitation).
+  Require the provenance line and a named uncertainty rung. Early finishers draft backup slides, not more main slides.
+
+30:00-42:00 | Peer critique round
+  Review for clarity, caveat visibility, and claim discipline, under one narrow brief: mark every place the spoken claim outruns the slide's evidence.
+
+42:00-54:00 | Q&A simulation
+  Each learner answers two critique questions.
+  Assign types so everyone gets one methods challenge and one alternative-explanation question. Name the type before judging the answer.
+
+54:00-60:00 | Debrief and competency check
+  Submit revised claim language and one uncertainty statement, then name the question you most fear. That list is next session's material.
+-->
 
 ---
 
@@ -119,5 +141,5 @@ Write your 60-second talk opener with the core question, one evidence-backed fin
 
 ## Teaching Materials
 - Module page: /modules/module22/
-- Slide page: /modules/slides/module22/
+- Session kit: /teaching/sessions/module22/
 - Worksheet: /assets/worksheets/module22/module22-activity.md

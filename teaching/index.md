@@ -24,8 +24,9 @@ content_type: delivery
   <section class="section">
     <div class="cta-buttons">
       <a href="{{ '/teaching/sessions/' | relative_url }}" class="btn btn-primary">Session Kits — run a session</a>
+      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach a short lecture series</a>
       <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
-      <a href="{{ '/modules/slides/' | relative_url }}" class="btn btn-secondary">Browse Slide Pages</a>
+      <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
       <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
     </div>
@@ -38,7 +39,14 @@ content_type: delivery
   </section>
 
   <section class="section">
-    <h2>Two ways in</h2>
+    <h2>Find what you need</h2>
+    <p><strong>Teaching connectomics for the first time?</strong> Start with
+      <a href="{{ '/teaching/sequence/' | relative_url }}">four 90-minute sessions</a>:
+      Introduction, Synapse Detection, Tools and Methods, and Algorithms and Applications. Each has a timed plan,
+      slides, a learner worksheet and instructor model answers.</p>
+    <p><strong>Presenting a lecture?</strong> Open the
+      <a href="{{ '/technical-training/slides/' | relative_url }}">Presentation Decks</a>
+      for graduate lectures and technical-unit slides. Each deck opens directly in your browser.</p>
     <p><strong>Running a session?</strong> Go to the
       <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a>. Each is one
       page holding the prep checklist, run of show, materials, misconceptions to target,

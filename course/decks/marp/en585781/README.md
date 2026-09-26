@@ -105,8 +105,9 @@ render to HTML, then measure `scrollHeight - clientHeight` on each
 
 **CC BY-SA 4.0** — see [`LICENSE`](LICENSE). Teach from these decks, adapt them, and
 distribute the result; credit the original, say what you changed, and license your
-version the same way. They contain no third-party figures, so adapting them raises no
-image-licensing questions.
+version the same way. The H01 cover image retains its **CC BY 4.0** licence and
+credit to Lichtman Lab / Harvard and Connectomics at Google, Shapson-Coe et al.
+(2024), doi:10.1126/science.adk4858. Preserve that attribution in adaptations.
 
 The learner- and instructor-facing pages are at
 [`/teaching/lectures/`](../../../../teaching/lectures/).

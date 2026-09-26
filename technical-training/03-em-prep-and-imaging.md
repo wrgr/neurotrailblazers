@@ -22,7 +22,7 @@ content_type: path
 
 | | |
 |---|---|
-| **Time** | ~2 h, plus a 90 min lab |
+| **Time** | **Self-study ~3.5 h:** about 2 h of reading plus the 90 min lab. **Taught:** a 90 min session, per the [lecture plan]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }}). **Deck:** the unit's slide deck is scoped to 60 min and does not follow the plan slide for slide. |
 | **Prerequisites** | Units 01–02 |
 | **You need** | Access to any public EM volume in Neuroglancer (MICrONS, FlyWire, or H01 all work) |
 | **You finish with** | A completed acquisition QA report on a real volume, with artifacts localized and costed |
@@ -403,6 +403,26 @@ These are context slides rather than QA specimens; the artifact catalog in §2 i
     <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S08-01.png' | relative_url }}" alt="Manual versus automated context visual" style="width:100%; border-radius:8px;">
     <p class="card-description"><strong>Module13 L2 S08:</strong> Manual work set against automated work. Use it to locate the pilot-reconstruction rule in §3: a small sub-volume taken all the way through segmentation and human proofreading is what tells you whether your staining produces a merge rate the proofreading budget can absorb — while you can still change the staining.</p>
   </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S02-01.png' | relative_url }}" alt="Hand-drawn illustration of individually stained neurons, each with its full dendritic tree on a clear background" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S02:</strong> Where the field started: a hand drawing from sparsely stained tissue, each cell standing alone on a clean background. Set it beside §1.2. rOTO does the opposite on purpose — it puts metal on every membrane in the block, because dense reconstruction needs every boundary — and the price is the crowded field the rest of this unit teaches you to quality-check.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE12_LESSON3-S06-01.png' | relative_url }}" alt="Photograph of a car assembled from the front of one car and the rear of another" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module12 L3 S06:</strong> Two cars joined into one object, with the seam in plain view. That is a merge error you can see. In EM the seam is a membrane too faint for the network to find, which is why §2 prices weak membrane contrast as the expensive artifact: nothing in a summary statistic shows the join.</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S02-01.png' | relative_url }}" alt="Electron micrograph of densely packed neuropil with dark ring-shaped profiles" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L2 S02:</strong> One EM field of neuropil. Grade it as §3 asks you to grade every section: are membrane outlines continuous or broken, is there precipitate, is contrast even across the field or does it fall away toward one side? Give anything you find a cost class from the §2 table. (Units 01 and 02 use the same image for scale.)</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S04-01.png' | relative_url }}" alt="Aerial photograph of a ring-shaped synchrotron facility" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L2 S04:</strong> A synchrotron, which the source lesson files as tomography context. Non-EM volumetric methods are outside this unit (Unit 02 places them), so use the image for one question only: which rows of the §2 table exist because tissue is cut into sections, and so would not arise in a method that images the block whole?</p>
+  </article>
+  <article class="card">
+    <img src="{{ '/assets/images/technical-training/03-em-prep-and-imaging/FIG-SRC-MODULE13_LESSON2-S09-01.png' | relative_url }}" alt="Two panels comparing automated segmentation and manual annotation of the same bundle of elongated processes, with image insets above each" style="width:100%; border-radius:8px;">
+    <p class="card-description"><strong>Module13 L2 S09:</strong> Automated segmentation (left) against manual annotation (right) of the same processes. Run on a small sub-volume before scaling up, this comparison is the pilot reconstruction §3 calls non-negotiable: count where the automated traces break or fuse relative to the manual ones and you have the split and merge rates your staining produces, while you can still change it.</p>
+  </article>
 </div>
 
 <p><small>Attribution: assets_outreach source decks (historical/context visuals).</small></p>
@@ -525,8 +545,9 @@ cover cryo-EM, correlative light-EM workflows in depth, or non-EM volumetric met
 
 ## Course links
 
-- Reading list: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Reading list: [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
 - Shared vocabulary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Related module: [Module 05]({{ '/modules/module05/' | relative_url }})
 - Lecture plan: [EM Prep and Imaging lecture plan]({{ '/technical-training/slides/03-em-prep-and-imaging/' | relative_url }})
+- Graduate lecture: [Tools and Methods]({{ '/course/decks/marp/out/en585781/module08-tools-and-methods.html' | relative_url }}) — 56-slide EN.585.781 deck ([source]({{ site.deck_source_base }}/en585781/module08-tools-and-methods.marp.md))
 - **Next unit:** [04 Volume Reconstruction Infrastructure]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})

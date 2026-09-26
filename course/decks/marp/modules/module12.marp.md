@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 12 · NeuroTrailblazers"
 title: "Module 12: Big Data in Connectomics"
 ---
 
-# Module 12: Big Data in Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 12</span>
+
+# Big Data in Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -25,14 +33,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.
 
@@ -41,6 +41,10 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 ## Concept Focus
 ### 1) Storage layout is chosen by access pattern, not by format popularity
 - **Technical:** chunked formats (Zarr, N5, Neuroglancer precomputed) store a volume as independent compressed blocks, commonly 64³ to 256³ voxels. The chunk is the unit of I/O, so you pay for the whole chunk even when you want one plane of it. A 512 x 512 section-plane view touches 4 chunks at 256³ and 64 at 64³, yet moves about 67 MB against about 17 MB, because each 256³ chunk carries z-depth you did not ask for. Anisotropic chunks such as 128 x 128 x 16 improve plane reads and worsen z-traversal. EM compresses 2-10x; label volumes compress far better.
+
+---
+
+## Concept Focus (continued)
 - **Plain language:** the chunk is the smallest thing you can read, so shape it like the reads you will actually do.
 - **Misconception guardrail:** the format everyone else uses is automatically the right layout for your access pattern.
 
@@ -50,6 +54,10 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 - Write the analysis question as a sentence naming the table, the filter, and the unit of the answer — for example, "count synapses between layer 2/3 pyramidal cells and basket cells, per neuron pair, at cleft score above threshold."
 - Estimate the working set: how many rows, how many objects, how many bytes must move, and whether that fits in memory on the machine you have.
 - Choose storage and index strategy from the access pattern — chunk shape for volumetric reads, sharding if object counts exceed roughly 10^6, a pre-joined extract if the same join recurs.
+
+---
+
+## Core Workflow (continued)
 - Pin the segmentation: record the materialization version or timestamp, and refuse to proceed if it is unknown.
 - Prototype on a 0.1% sample, profile, and extrapolate the full runtime before running it once at full scale.
 - Add provenance fields to the output artifact itself, not to the surrounding notebook.
@@ -57,13 +65,33 @@ Produce a scalable, reproducible query-and-analysis plan for a large connectomic
 
 ---
 
-## 60-Minute Run-of-Show
-- **00:00-08:00 | Architecture framing and failure examples**
-- **08:00-20:00 | Access-pattern to index mapping exercise**
-- **20:00-34:00 | Query profiling and bottleneck diagnosis**
-- **34:00-46:00 | Provenance logging implementation**
-- **46:00-56:00 | Team review of reproducibility gaps**
-- **56:00-60:00 | Competency check and next-step assignment**
+## Run of Show (60 min)
+- 00:00-08:00 | Architecture framing and failure examples
+- 08:00-20:00 | Access-pattern to index mapping exercise
+- 20:00-34:00 | Query profiling and bottleneck diagnosis
+- 34:00-46:00 | Provenance logging implementation
+- 46:00-56:00 | Team review of reproducibility gaps
+- 56:00-60:00 | Competency check and next-step assignment
+
+<!--
+00:00-08:00 | Architecture framing and failure examples
+  Open with two failure shapes: the eleven-hour query and the unreproducible figure. Both are design decisions made before any analysis, not accidents.
+
+08:00-20:00 | Access-pattern to index mapping exercise
+  Learners size a 1 mm³ volume by hand, then compute chunk counts at 64³, 128³, and 256³ and the byte cost of one 512 x 512 plane view at each. Instructor challenge: "Which is right, and what did you assume about how people read this volume?"
+
+20:00-34:00 | Query profiling and bottleneck diagnosis
+  Run a supplied query on a 0.1% sample, record wall time, extrapolate, then run the pre-joined version and write down the ratio.
+
+34:00-46:00 | Provenance logging implementation
+  Each learner adds a provenance block — dataset, version, query hash, thresholds, commit, date — to one of their own outputs and shows it to a neighbor.
+
+46:00-56:00 | Team review of reproducibility gaps
+  Pairs swap query packages and attempt to state, from the artifact alone, which segmentation version produced it. Any package that fails this test is marked and repaired.
+
+56:00-60:00 | Competency check and next-step assignment
+  Each learner names the single query that will dominate their own project's cost, and the mitigation they will try first.
+-->
 
 ---
 
@@ -135,5 +163,5 @@ Document one query you use with:
 
 ## Teaching Materials
 - Module page: /modules/module12/
-- Slide page: /modules/slides/module12/
+- Session kit: /teaching/sessions/module12/
 - Worksheet: /assets/worksheets/module12/module12-activity.md

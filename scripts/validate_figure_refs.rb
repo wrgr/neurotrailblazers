@@ -56,10 +56,11 @@ unless missing.empty?
 end
 
 marp_missing = {}
-Dir.glob(File.join(ROOT, 'course/decks/marp/*.marp.md')).each do |path|
+Dir.glob(File.join(ROOT, 'course/decks/marp/**/*.marp.md')).each do |path|
   content = File.read(path, encoding: 'UTF-8')
-  missing_paths = content.scan(MARP_IMAGE_REGEX).flatten.uniq.each_with_object([]) do |img_ref, acc|
-    next if img_ref.start_with?('http://', 'https://')
+  image_paths = content.scan(MARP_IMAGE_REGEX).flatten + content.scan(/<img\b[^>]*\bsrc=["']([^"']+)["']/i).flatten
+  missing_paths = image_paths.uniq.each_with_object([]) do |img_ref, acc|
+    next if img_ref.start_with?('http://', 'https://', 'data:')
 
     candidate = File.expand_path(img_ref, File.dirname(path))
     acc << img_ref unless File.exist?(candidate)

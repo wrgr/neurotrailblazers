@@ -26,7 +26,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Slide-by-slide lecture plan
 1. Slide 1 (2 min): Title and positioning
-   - Technical Training: Nanoscale Connectomics as a hypothesis engine.
+   - The Technical Course as a hypothesis engine.
    - State this unit as the epistemic boundary-setting lecture.
 2. Slide 2 (4 min): Why map structure at all?
    - Structural constraints as priors for mechanism.
@@ -78,7 +78,7 @@ existing implementation of it. The learner-facing material is the unit page link
 
 ## Connections
 - Unit page: [Why Map the Brain]({{ '/technical-training/01-why-map-the-brain/' | relative_url }})
-- Journal club: [Technical Track Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Journal club: [reading list]({{ '/technical-training/journal-club/' | relative_url }})
 - Dictionary: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Existing module overlap: [module01]({{ '/modules/module01/' | relative_url }})
 

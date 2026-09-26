@@ -5,19 +5,22 @@ paginate: true
 title: "Module 8 — Nanoscale Connectomics Tools and Methods"
 description: "EN.585.781 Frontiers in Neuroengineering. From tissue to a queryable petascale dataset: acquisition, infrastructure, and reproducible pipelines."
 ---
-<!-- _class: cover -->
+<!-- _class: cover nanoscale -->
 <!-- _paginate: false -->
 
-# Nanoscale Connectomics
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+
 # Tools and Methods
 
 ### Module 8 · EN.585.781 Frontiers in Neuroengineering
 
 **Will Gray Roncal** · Johns Hopkins University
 
-Part A — From tissue to voxels Part B — Storage, infrastructure, and what it costs Part C — Reproducible pipelines
+<p class="roadmap">Part A — From tissue to voxels<br>Part B — Storage, infrastructure, and what it costs<br>Part C — Reproducible pipelines</p>
 
-<p class="src">Openly licensed for community use — <strong>CC BY-SA 4.0</strong>. Teach it, adapt it, share it onward the same way. neurotrailblazers.org</p>
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+
+<p class="src">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google<br>Image: CC BY 4.0 · Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858<br>Lecture: CC BY-SA 4.0 · neurotrailblazers.org</p>
 
 <!--
 Module 7 asked what a connectome is and what it can support. This module answers a
@@ -1067,7 +1070,7 @@ With hundreds of proofreaders editing concurrently, this is unworkable.
 
 <div class="box box--warn">
 
-In a ChunkedGraph system, **the ID of a neuron changes every time it is edited.** A "root ID" identifies an object *as of a moment in time.*
+In a ChunkedGraph system, **merges and splits can change a neuron's root ID.** A root ID identifies a reconstructed object at a particular segmentation state.
 
 **An object ID in your notebook, your paper, or your figure caption is meaningless without a timestamp or version.**
 
@@ -1077,29 +1080,37 @@ In a ChunkedGraph system, **the ID of a neuron changes every time it is edited.*
 
 - Analyses run **against a materialization version**, e.g. version 943.
 - The version number is **a first-class part of your methods section**, exactly like a software version or a genome build.
-- Re-running on a later version **will** give different numbers, because proofreading continued. *That is correct behavior, not a bug* — but it must be visible.
+- Re-running on a later version **may** give different numbers. Compare the segmentation state, table and query before attributing a change to proofreading.
 
 ---
 
 ## Worked example: which version produced this number?
 
-> **The situation.** A figure your group submitted eight months ago reports that a pyramidal cell receives **1,412** input synapses. Re-running the notebook today returns **1,530** for an ID the lineage viewer says is "the same cell." A reviewer asks which number is right.
+> **Hypothetical situation.** A figure reports **1,412** input synapses. A rerun returns **1,530** for an ID the lineage viewer links to the same cell. A reviewer asks which number is right.
 
-**Step 1 — look for the pin.** The notebook has no reproducibility header and the query does not pass a materialization version. It ran against *"latest"* — which was one thing in December and another thing now.
+**Step 1 — look for the pin.** Inspect the materialization version, timestamp, table, object mapping and query. An unpinned run leaves the inputs uncertain.
 
-**Step 2 — recognize that both numbers are correct.** 1,412 was the cell's input count under the segmentation state of eight months ago. 1,530 is its count today, after further proofreading closed more of the arbor.
+**Step 2 — compare the evidence.** Check archived results and query logs. Version changes, filtering differences or object remapping could change the count. The discrepancy alone does not identify the cause.
 
-**Step 3 — answer the reviewer honestly.** Neither number is wrong; the *paper* is wrong, because it reported a version-dependent quantity without its version.
+**Step 3 — reproduce before interpreting.** Run the recorded query against the recorded inputs. If provenance is missing, label the earlier result unreproduced rather than declaring both counts correct.
 
 <div class="box box--warn">
 
-**Step 4 — notice the deeper problem.** You cannot now reconstruct which version produced 1,412, so you cannot reproduce your own figure. The fix is not a better memory. It is a header.
+**Step 4 — retain the record.** Archive the inputs, code, environment and outputs. A version pin or checksum cannot recover a file that nobody retained.
 
 </div>
 
 ---
 
 ## The reproducibility header
+
+<!--
+For the 90-minute teaching session, use the offline Tools and Methods worksheet
+and query linked from /teaching/lectures/connectomics-02-tools-and-methods/.
+The example below illustrates fields, not a verified current public-data query.
+Ask learners to supply actual values from their run. Do not copy example versions
+or a fabricated code revision. Record coordinate frame and units for spatial queries.
+-->
 
 ### Six lines at the top of every notebook. Non-negotiable.
 
@@ -1440,4 +1451,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">These decks contain no third-party figures. Cited papers carry their own licences; citation is not reproduction. If you add figures to an adaptation, check they are compatible with CC BY-SA 4.0.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>

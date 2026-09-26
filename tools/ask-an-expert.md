@@ -1,7 +1,7 @@
 ---
-title: "Ask an Expert: Connectomics AI Guide"
+title: "Ask an Expert"
 layout: tool
-description: "Explore connectomics with an AI guide based on Dr. Jeff Lichtman's public papers, lectures, and interviews."
+description: "A curated AI chatbot built on Dr. Jeff Lichtman's public materials, for concept questions about brain mapping and research life. It is not Dr. Lichtman and does not reflect his current views."
 permalink: /ask-an-expert/
 slug: ask-an-expert
 track: career-and-community

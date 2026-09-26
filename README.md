@@ -58,11 +58,11 @@ CI (`.github/workflows/validate.yml`).
 | `scripts/validate_technical_evidence.rb` | Cross-checks `_data/technical_track.yml` against `_data/technical_evidence.yml`. |
 | `scripts/check_site_links.rb` | Audits internal links in `_site/`. Requires a build first. |
 | `scripts/check_anchor_links.rb` | Audits cross-page fragment links against the ids actually present in target pages. Requires a build first. |
-| `scripts/generate_module_teaching_materials.rb` | Regenerates worksheets, Marp module decks, and module slide pages from the module pages. |
+| `scripts/generate_module_teaching_materials.rb` | Regenerates worksheets, Marp module decks, and session kits from the module pages. |
 | `scripts/generate_module_art.rb` | Regenerates the 25 module art banners in `assets/images/modules/` — deterministic vector art, one per module, keyed to pipeline stage. |
 
 **Generated files — do not edit by hand.** `assets/worksheets/moduleNN/`,
-`course/decks/marp/modules/`, and `modules/slides/` are all produced by
+`course/decks/marp/modules/`, and `teaching/sessions/` are all produced by
 `generate_module_teaching_materials.rb` from the corresponding `modules/moduleNN.md`.
 `assets/images/modules/*.svg` is produced by `generate_module_art.rb`.
 Edit the module page (or the art generator) and re-run; hand edits are overwritten.

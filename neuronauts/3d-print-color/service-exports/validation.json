@@ -1,0 +1,77 @@
+[
+  {
+    "character": "cortex",
+    "dimensions_mm": [
+      47.2,
+      30.0,
+      65.3
+    ],
+    "volume_cm3": 13.293,
+    "triangles": 15840,
+    "colors": 8,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 176524
+  },
+  {
+    "character": "axon",
+    "dimensions_mm": [
+      47.2,
+      30.0,
+      70.3
+    ],
+    "volume_cm3": 13.346,
+    "triangles": 15622,
+    "colors": 9,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 172820
+  },
+  {
+    "character": "dendra",
+    "dimensions_mm": [
+      47.2,
+      30.0,
+      63.9
+    ],
+    "volume_cm3": 13.324,
+    "triangles": 16106,
+    "colors": 7,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 177617
+  },
+  {
+    "character": "syn",
+    "dimensions_mm": [
+      47.2,
+      30.0,
+      67.0
+    ],
+    "volume_cm3": 13.122,
+    "triangles": 14544,
+    "colors": 8,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 160828
+  },
+  {
+    "character": "glia",
+    "dimensions_mm": [
+      47.2,
+      30.0,
+      64.9
+    ],
+    "volume_cm3": 13.427,
+    "triangles": 17178,
+    "colors": 9,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 190408
+  }
+]

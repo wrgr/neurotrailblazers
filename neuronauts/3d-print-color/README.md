@@ -1,5 +1,14 @@
 # Neuronauts — full-volume, full-color 3D figures
 
+**2-inch edition:** the resized figures with broader small details are in
+[`service-exports-2inch/`](service-exports-2inch/README.md). All five are
+50.8 mm tall including the base, with full-color ZIP and monochrome STL options.
+
+**September 2026 upload revision:** use the individual color ZIPs in
+[`service-exports/`](service-exports/README.md) for the next service quote.
+They contain one unified solid, one material, and one 4K texture each;
+the original files below are retained as earlier exports.
+
 Genuinely sculpted 3D figures of the five Neuronauts (Captain Cortex, Axon,
 Dendra, Syn, Glia) — not the flat relief standees in `../3d-print/`. Built
 from primitives (spheres, capsules, a torus, a swept tube) matching each
@@ -111,5 +120,6 @@ full-color), not something you run on a desktop FDM printer. Upload the
 service of choice. For Shapeways specifically: their self-service uploader
 accepts a zip containing the OBJ and its MTL; pick a full-color material
 (e.g. their full-color sandstone or full-color plastic options) once
-you've uploaded and reviewed the color preview they generate. No
-supports needed — the base is a flat disc already.
+you've uploaded and reviewed the color preview they generate.
+The service should determine orientation and supports. A flat base alone
+does not make the arms, collar, and other overhangs support-free.

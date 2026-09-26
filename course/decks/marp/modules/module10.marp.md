@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 10 · NeuroTrailblazers"
 title: "Module 10: Network Science and Graph Representation"
 ---
 
-# Module 10: Network Science and Graph Representation
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 10</span>
+
+# Network Science and Graph Representation
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -49,35 +49,54 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 - Construct graph from synapse table (e.g., using CAVEclient + NetworkX). Inspect: number of nodes, edges, density, connected components.
 - Compute candidate metrics: degree distribution, clustering, path length, reciprocity, modularity.
 - Compare each metric to null-model expectation (degree-preserving random graph as minimum).
+
+---
+
+## Core Workflow (continued)
 - Interpret metrics against hypothesis. Report which metrics are significant and which are not.
 - Document abstraction limits: what information was lost in the graph construction?
 
 ---
 
-## 60-Minute Run-of-Show
-- Read the graph representations content library entry
-- Install NetworkX: `pip install networkx`
-- **00:00-08:00 | Graph abstraction choices**
-- Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. "These are three views of the same biology. Today we work with (b) and (c)."
-- Discussion: "What did we gain and lose in each transformation?"
-- **08:00-20:00 | Graph build demo**
-- Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
-- Visualize the graph with spring layout. Color nodes by cell type.
-- "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
-- **20:00-34:00 | Metric computation**
-- Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
-- Plot degree distribution (log-log). Is it heavy-tailed?
-- Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
-- **34:00-46:00 | Interpretation and null concerns**
-- "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
-- Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?
-- Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.
-- **46:00-60:00 | Competency check**
-- Each learner writes a 1-paragraph graph analysis summary:
-- Schema (nodes, edges, threshold)
-- Two metrics with values and null-model comparisons
-- One biological interpretation and one limitation
-- Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
+## Run of Show (60 min)
+- 00:00-08:00 | Graph abstraction choices
+- 08:00-20:00 | Graph build demo
+- 20:00-34:00 | Metric computation
+- 34:00-46:00 | Interpretation and null concerns
+- 46:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Read the graph representations content library entry
+  Install NetworkX: `pip install networkx`
+  Minute-by-minute plan
+
+00:00-08:00 | Graph abstraction choices
+  Show the same circuit as: (a) 3D EM rendering, (b) adjacency matrix, (c) node-link diagram. "These are three views of the same biology. Today we work with (b) and (c)."
+  Discussion: "What did we gain and lose in each transformation?"
+
+08:00-20:00 | Graph build demo
+  Live coding: load a synapse table, construct a NetworkX DiGraph, apply threshold, print basic stats.
+  Visualize the graph with spring layout. Color nodes by cell type.
+  "Notice: the spatial layout in this diagram is arbitrary. The graph doesn't know where neurons are in the brain."
+
+20:00-34:00 | Metric computation
+  Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
+  Plot degree distribution (log-log). Is it heavy-tailed?
+  Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
+
+34:00-46:00 | Interpretation and null concerns
+  "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
+  Discuss: spatial proximity as a confound. Would a spatially constrained null model change the conclusion?
+  Walk through one example: reciprocal connections. Count in real data vs degree-preserving null.
+
+46:00-60:00 | Competency check
+  Each learner writes a 1-paragraph graph analysis summary:
+  Schema (nodes, edges, threshold)
+  Two metrics with values and null-model comparisons
+  One biological interpretation and one limitation
+  Exit ticket: "Name one reason a graph metric might be misleading in your dataset."
+-->
 
 ---
 
@@ -142,5 +161,5 @@ State one reason a graph metric might be misleading in your current dataset.
 
 ## Teaching Materials
 - Module page: /modules/module10/
-- Slide page: /modules/slides/module10/
+- Session kit: /teaching/sessions/module10/
 - Worksheet: /assets/worksheets/module10/module10-activity.md

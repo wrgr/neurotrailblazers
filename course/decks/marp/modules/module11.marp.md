@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 11 · NeuroTrailblazers"
 title: "Module 11: Synapses and Circuit Logic"
 ---
 
-# Module 11: Synapses and Circuit Logic
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 11</span>
+
+# Synapses and Circuit Logic
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -25,14 +33,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Generate one synapse-to-motif interpretation with explicit evidence chain and one alternative explanation.
 
@@ -42,6 +42,10 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ### 1) Synaptic organization as circuit logic
 Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
 - **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
+
+---
+
+## Concept Focus (continued)
 - **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
 - **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
 - **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.
@@ -57,31 +61,46 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 
 ---
 
-## 60-Minute Run-of-Show
-- Review the synapse classification content library entry (Gray Type I/II)
-- Review the motif analysis content library entry (key motif types section)
-- **00:00-10:00 | Synapse cue recap**
-- Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.
-- Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
-- **10:00-24:00 | Motif construction examples**
-- Walk through 3 motifs in the MICrONS dataset:
-- Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
-- Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
-- Feedback inhibition: pyramidal → basket cell → same pyramidal
-- For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
-- **24:00-38:00 | Learner motif analysis**
-- Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
-- Count each motif type. Which are most common?
-- Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
-- **38:00-50:00 | Alternative explanation challenge**
-- For each enriched motif, learners must propose one alternative (non-functional) explanation:
-- "Reciprocal connections are enriched because nearby neurons are more likely to connect" (spatial proximity)
-- "Feed-forward loops are enriched because of cell-type structure" (E→I and I→E are common)
-- Group discussion: how would you test whether the spatial explanation is sufficient?
-- **50:00-60:00 | Competency check**
-- Each learner writes a motif claim/caveat pair:
-- "In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment."
-- Exit ticket: "One motif claim and one plausible confound."
+## Run of Show (60 min)
+- 00:00-10:00 | Synapse cue recap
+- 10:00-24:00 | Motif construction examples
+- 24:00-38:00 | Learner motif analysis
+- 38:00-50:00 | Alternative explanation challenge
+- 50:00-60:00 | Competency check
+
+<!--
+Pre-class preparation (10 min async)
+  Review the synapse classification content library entry (Gray Type I/II)
+  Review the motif analysis content library entry (key motif types section)
+  Minute-by-minute plan
+
+00:00-10:00 | Synapse cue recap
+  Quick review: asymmetric (Type I, excitatory) vs symmetric (Type II, inhibitory) synapses.
+  Show 3 synapses in EM: spine synapse, perisomatic synapse, AIS synapse. "Where the synapse lands tells you about circuit function."
+
+10:00-24:00 | Motif construction examples
+  Walk through 3 motifs in the MICrONS dataset:
+  Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
+  Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
+  Feedback inhibition: pyramidal → basket cell → same pyramidal
+  For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
+
+24:00-38:00 | Learner motif analysis
+  Learners receive a small subgraph (15 neurons, 50 synapses) and identify all 3-node motifs.
+  Count each motif type. Which are most common?
+  Compare to expectations: "If these were randomly connected with the same degree distribution, how many of each motif would you expect?"
+
+38:00-50:00 | Alternative explanation challenge
+  For each enriched motif, learners must propose one alternative (non-functional) explanation:
+  "Reciprocal connections are enriched because nearby neurons are more likely to connect" (spatial proximity)
+  "Feed-forward loops are enriched because of cell-type structure" (E→I and I→E are common)
+  Group discussion: how would you test whether the spatial explanation is sufficient?
+
+50:00-60:00 | Competency check
+  Each learner writes a motif claim/caveat pair:
+  "In this circuit, [motif] is enriched [X]× compared to [null model]. This is consistent with [functional interpretation]. However, [alternative explanation] could also account for this enrichment."
+  Exit ticket: "One motif claim and one plausible confound."
+-->
 
 ---
 
@@ -146,5 +165,5 @@ Write one motif claim and one plausible confound.
 
 ## Teaching Materials
 - Module page: /modules/module11/
-- Slide page: /modules/slides/module11/
+- Session kit: /teaching/sessions/module11/
 - Worksheet: /assets/worksheets/module11/module11-activity.md

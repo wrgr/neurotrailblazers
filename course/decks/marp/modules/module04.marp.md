@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 04 · NeuroTrailblazers"
 title: "Module 04: Neuroanatomy for Connectomics"
 ---
 
-# Module 04: Neuroanatomy for Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 04</span>
+
+# Neuroanatomy for Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -25,14 +33,6 @@ Teaching Deck
 
 ---
 
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
-
----
-
 ## Capability Target
 Interpret a local EM region using correct anatomical context and document one confident and one uncertain structural call.
 
@@ -42,9 +42,17 @@ Interpret a local EM region using correct anatomical context and document one co
 ### 1) Cortical layers shape what you see in EM
 The mammalian neocortex is organized into six layers (L1-L6), each with a characteristic cell density, cell-type composition, and neuropil texture. In EM, these layers are distinguishable by:
 - **Layer 1**: Sparse cell bodies (mostly interneurons and glia), dense neuropil of apical dendritic tufts, axonal boutons, and astrocytic processes. If you see neuropil with very few soma profiles, you are likely in L1.
+
+---
+
+## Concept Focus (continued)
 - **Layer 2/3**: Dense small-to-medium pyramidal neuron soma, heavily interconnected by local axon collaterals. The most densely packed neuronal layer.
 - **Layer 4**: In sensory cortex, dominated by spiny stellate cells (not pyramidal) and thalamocortical axon terminals. Bouton density is high; dendritic spines are abundant.
 - **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
+
+---
+
+## Concept Focus (continued)
 - **Layer 6**: Heterogeneous; corticothalamic pyramidal cells with distinctive morphology (apical dendrites reaching only to L4, not L1). Transition to white matter below.
 
 ---
@@ -57,39 +65,54 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 
 ---
 
-## 60-Minute Run-of-Show
-- Review cortical layer descriptions above.
-- Explore the Allen Brain Atlas online viewer and locate cortical layers in a coronal section.
-- Bring one question: "How would I know which layer I'm looking at in EM?"
-- **00:00-10:00 | Macro-to-micro bridge**
-- Instructor shows a light microscopy image of cortex (Nissl stain showing layers) side-by-side with the same region in EM.
-- Key teaching point: "The layers you learned in neuroanatomy class are the same layers you'll see in EM — but the visual cues are different. In EM, you identify layers by cell density and neuropil texture, not by staining color."
-- Walk through each layer's EM signature with real images from MICrONS or H01.
-- **10:00-24:00 | Guided structural identification**
-- Present 4 EM patches from different layers (unlabeled). Instructor demonstrates the identification process:
-- Patch A: sparse soma, dense neuropil → L1
-- Patch B: large pyramidal soma with thick apical dendrite → L5
-- Patch C: dense small soma, many spines → L2/3
-- Patch D: mossy fiber bouton (3 μm, packed vesicles) → hippocampus CA3
-- For each, articulate the evidence chain: "I see [features], which tells me [layer/region], which means I expect [cell types and synapse types]."
-- **24:00-38:00 | Ambiguity case discussion**
-- Present 3 ambiguous patches where layer context changes interpretation:
-- A large bouton near a blood vessel: thalamocortical (L4) or local collateral (L2/3)?
-- A smooth dendrite near a soma: inhibitory interneuron or astrocytic process?
-- A process at the volume boundary: cannot trace to soma — how to handle?
-- Group discussion: what additional evidence would resolve each ambiguity?
-- **38:00-50:00 | Learner annotation round**
-- Learners independently annotate 4 new patches, recording:
-- Estimated layer/region
-- Structure identification (cell type, compartment)
-- Confidence level (high/medium/low)
-- Evidence chain (which features support the call)
-- **50:00-60:00 | Debrief and competency check**
-- Review learner annotations as a group. Focus on:
-- Did layer context affect the classification?
-- Were confidence levels calibrated (not all "high")?
-- Were boundary/ambiguous cases handled with explicit uncertainty?
-- Exit ticket: "Name one anatomical cue that changed your interpretation today."
+## Run of Show (60 min)
+- 00:00-10:00 | Macro-to-micro bridge
+- 10:00-24:00 | Guided structural identification
+- 24:00-38:00 | Ambiguity case discussion
+- 38:00-50:00 | Learner annotation round
+- 50:00-60:00 | Debrief and competency check
+
+<!--
+Pre-class preparation (10-15 min async)
+  Review cortical layer descriptions above.
+  Explore the Allen Brain Atlas online viewer and locate cortical layers in a coronal section.
+  Bring one question: "How would I know which layer I'm looking at in EM?"
+  Minute-by-minute plan
+
+00:00-10:00 | Macro-to-micro bridge
+  Instructor shows a light microscopy image of cortex (Nissl stain showing layers) side-by-side with the same region in EM.
+  Key teaching point: "The layers you learned in neuroanatomy class are the same layers you'll see in EM — but the visual cues are different. In EM, you identify layers by cell density and neuropil texture, not by staining color."
+  Walk through each layer's EM signature with real images from MICrONS or H01.
+
+10:00-24:00 | Guided structural identification
+  Present 4 EM patches from different layers (unlabeled). Instructor demonstrates the identification process:
+  Patch A: sparse soma, dense neuropil → L1
+  Patch B: large pyramidal soma with thick apical dendrite → L5
+  Patch C: dense small soma, many spines → L2/3
+  Patch D: mossy fiber bouton (3 μm, packed vesicles) → hippocampus CA3
+  For each, articulate the evidence chain: "I see [features], which tells me [layer/region], which means I expect [cell types and synapse types]."
+
+24:00-38:00 | Ambiguity case discussion
+  Present 3 ambiguous patches where layer context changes interpretation:
+  A large bouton near a blood vessel: thalamocortical (L4) or local collateral (L2/3)?
+  A smooth dendrite near a soma: inhibitory interneuron or astrocytic process?
+  A process at the volume boundary: cannot trace to soma — how to handle?
+  Group discussion: what additional evidence would resolve each ambiguity?
+
+38:00-50:00 | Learner annotation round
+  Learners independently annotate 4 new patches, recording:
+  Estimated layer/region
+  Structure identification (cell type, compartment)
+  Confidence level (high/medium/low)
+  Evidence chain (which features support the call)
+
+50:00-60:00 | Debrief and competency check
+  Review learner annotations as a group. Focus on:
+  Did layer context affect the classification?
+  Were confidence levels calibrated (not all "high")?
+  Were boundary/ambiguous cases handled with explicit uncertainty?
+  Exit ticket: "Name one anatomical cue that changed your interpretation today."
+-->
 
 ---
 
@@ -153,5 +176,5 @@ Describe one case where anatomy context changes your interpretation of an EM str
 
 ## Teaching Materials
 - Module page: /modules/module04/
-- Slide page: /modules/slides/module04/
+- Session kit: /teaching/sessions/module04/
 - Worksheet: /assets/worksheets/module04/module04-activity.md

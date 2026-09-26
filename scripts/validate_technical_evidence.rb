@@ -140,6 +140,56 @@ track_modules.each do |entry|
 end
 
 # ---------------------------------------------------------------------------
+# One duration model and one graded-exercise term per unit.
+#
+# `technical-training/index.md` sums every path unit's `time_estimate` in Liquid
+# to state the course total, so the string must stay parseable, and the unit
+# page's "Before you start" Time row must state the same self-study total.
+# `_includes/ui/technical-capability-brief.html` names the page's graded
+# exercise from `graded_exercise` front matter ("lab" when unset), so the page
+# must have a heading that uses that term.
+
+TIME_ESTIMATE = /\A(\d+(?:\.\d+)?) (minutes|hours) reading \+ (\d+(?:\.\d+)?) (minute|hour)s? [a-z ]+\z/
+
+def frontmatter(text)
+  YAML.safe_load(text.split(/^---\s*$/)[1].to_s, permitted_classes: [Date]) || {}
+end
+
+def fmt_hours(minutes)
+  hours = (minutes / 60.0).round(2)
+  hours == hours.to_i ? hours.to_i.to_s : hours.to_s
+end
+
+track_modules.each do |entry|
+  slug = entry['slug']
+  path = unit_page_path(ROOT, slug.to_s)
+  next unless File.exist?(path)
+
+  text = File.read(path, encoding: 'UTF-8')
+  fm = frontmatter(text)
+
+  term = fm['graded_exercise'] || 'lab'
+  unless text.match?(/^##\s+(?:\d+\.\s+)?#{Regexp.escape(term)}\b/i)
+    warnings << "[WARN] #{slug}: graded_exercise is #{term.inspect} but no '## ' heading on the page uses that term"
+  end
+
+  next unless fm['content_type'] == 'path'
+
+  m = fm['time_estimate'].to_s.match(TIME_ESTIMATE)
+  unless m
+    warnings << "[WARN] #{slug}: time_estimate #{fm['time_estimate'].inspect} does not read 'N minutes|hours reading + M minute|hour <exercise>', which the course index sums"
+    next
+  end
+
+  minutes = m[1].to_f * (m[2] == 'hours' ? 60 : 1) + m[3].to_f * (m[4] == 'hour' ? 60 : 1)
+  want = "**Self-study ~#{fmt_hours(minutes)} h:**"
+  time_row = text.lines.find { |line| line.start_with?('| **Time** |') }
+  unless time_row&.include?(want)
+    warnings << "[WARN] #{slug}: Before-you-start Time row should state #{want} to agree with time_estimate #{fm['time_estimate'].inspect}"
+  end
+end
+
+# ---------------------------------------------------------------------------
 # technical_capabilities.yml has to describe exactly the units that exist.
 # `_includes/ui/technical-capability-brief.html` looks an entry up by page.slug,
 # so an entry with no page renders nowhere and a page with no entry loses its

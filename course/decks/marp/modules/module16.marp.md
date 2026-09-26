@@ -1,12 +1,20 @@
 ---
 marp: true
-theme: default
+theme: neurotrailblazers
 paginate: true
+footer: "Module 16 · NeuroTrailblazers"
 title: "Module 16: Scientific Visualization for Connectomics"
 ---
 
-# Module 16: Scientific Visualization for Connectomics
+<!-- _class: title nanoscale -->
+<img class="cover-image" src="../../../../assets/images/content-library/case-studies/h01/10b-segmentation-overlay.jpg" alt="H01 electron microscopy with object segmentation and original 2 µm scale bar">
+<span class="eyebrow">NeuroTrailblazers · Module 16</span>
+
+# Scientific Visualization for Connectomics
 Teaching Deck
+
+<p class="cover-label">Human cortex · H01<br>Object segmentation over electron microscopy</p>
+<p class="source">H01 release · Lichtman Lab / Harvard &amp; Connectomics at Google · CC BY 4.0<br>Shapson-Coe et al. (2024) · doi:10.1126/science.adk4858</p>
 
 ---
 
@@ -22,14 +30,6 @@ Teaching Deck
 - Learners can complete the module capability target.
 - Learners can produce one evidence-backed artifact.
 - Learners can state one limitation or uncertainty.
-
----
-
-## Agenda (60 min)
-- 0-10 min: Frame and model
-- 10-35 min: Guided practice
-- 35-50 min: Debrief and misconception correction
-- 50-60 min: Competency check + exit ticket
 
 ---
 
@@ -50,25 +50,64 @@ Produce a figure set that communicates connectomics findings accurately, includi
 - **Map each claim to required visual evidence.** For every result sentence, identify what figure panel and what visual encoding will support it.
 - **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
 - **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
+
+---
+
+## Core Workflow (continued)
 - **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
 - **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
 - **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
+
+---
+
+## Core Workflow (continued)
 - **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
 
 ---
 
-## 60-Minute Run-of-Show
-- Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
-- Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.
-- Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.
-- Colorblind simulation tool (browser-based).
-- Printed or digital critique rubric (one per student).
-- "Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3."
-- "Reciprocal connections are enriched between Martinotti cells."
-- "Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius."
-- Every student figure includes at least one uncertainty indicator.
-- Captions specify dataset version and analysis parameters.
-- No figure uses a rainbow/jet colormap.
+## Run of Show (60 min)
+- 00:00-10:00 | Visual integrity gallery walk
+- 10:00-20:00 | Claim-to-visual mapping exercise
+- 20:00-35:00 | Figure draft build
+- 35:00-47:00 | Uncertainty and quality overlays
+- 47:00-55:00 | Peer critique and revision
+- 55:00-60:00 | Competency check and wrap-up
+
+<!--
+Materials needed
+  Projected examples: 3 good and 3 bad connectomics figures (prepared in advance from published papers or synthetic examples).
+  Shared dataset: a small adjacency matrix (20x30 cell types) and one reconstructed neuron mesh.
+  Software: Matplotlib/Plotly notebooks pre-loaded; Neuroglancer link ready.
+  Colorblind simulation tool (browser-based).
+  Printed or digital critique rubric (one per student).
+  Timing and instructor script
+
+00:00-10:00 | Visual integrity gallery walk
+  Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Let us learn why."
+
+10:00-20:00 | Claim-to-visual mapping exercise
+  Instructor presents three scientific claims from a mock connectomics study:
+  "Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3."
+  "Reciprocal connections are enriched between Martinotti cells."
+  "Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius."
+  Students work in pairs to select the best plot type for each claim and justify their choice. Instructor circulates, challenging choices: "Why not a node-link diagram for claim 1? What would you lose with a heatmap for claim 3?"
+
+20:00-35:00 | Figure draft build
+  Students open the provided notebook and generate: (a) an adjacency heatmap for the cell-type connectivity matrix, (b) a Sholl plot for the reconstructed neuron. Instructor models adding axis labels, a perceptually uniform colormap, and a scale bar. Students replicate and customize.
+
+35:00-47:00 | Uncertainty and quality overlays
+  Instructor demonstrates adding confidence intervals to the Sholl plot and a "data quality" overlay to the heatmap (hatching for cell-type pairs with fewer than 5 observed connections). Students add these to their own figures. Key script line: "If you cannot see the uncertainty, you cannot evaluate the claim."
+
+47:00-55:00 | Peer critique and revision
+  Students swap figures with a neighbor and complete the critique rubric: Does the figure support the stated claim? Is uncertainty visible? Could it be misinterpreted? Is it colorblind-safe? Students revise based on feedback.
+
+55:00-60:00 | Competency check and wrap-up
+  Each student submits one revised figure with a two-sentence caption. Instructor reviews one or two examples live, highlighting what works and what still needs improvement.
+  Success criteria for this session
+  Every student figure includes at least one uncertainty indicator.
+  Captions specify dataset version and analysis parameters.
+  No figure uses a rainbow/jet colormap.
+-->
 
 ---
 
@@ -76,6 +115,10 @@ Produce a figure set that communicates connectomics findings accurately, includi
 - **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
 - **Misconception guardrail:** there is no single "best" visualization. The best choice depends on the claim.
 - **Misconception guardrail:** complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
+
+---
+
+## Misconceptions to Watch (continued)
 - **Misconception guardrail:** cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
 - **Misconception guardrail:** aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
 
@@ -117,5 +160,5 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 
 ## Teaching Materials
 - Module page: /modules/module16/
-- Slide page: /modules/slides/module16/
+- Session kit: /teaching/sessions/module16/
 - Worksheet: /assets/worksheets/module16/module16-activity.md

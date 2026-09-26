@@ -39,7 +39,7 @@ Evaluate EM image patches for artifact risk and issue a justified pass/rework re
 ---
 
 ## Concept Focus
-EM image quality is not merely an aesthetic concern — it is the single most consequential variable that determines segmentation accuracy and, by extension, the validity of every connectomic claim built on that segmentation. A 20% reduction in membrane contrast can double the split error rate in automated reconstruction, because the segmentation model loses the luminance gradient it relies on to delineate adjacent neurites. Every downstream analysis result — synapse counts, path lengths, circuit motifs — inherits the quality ceiling set at acquisition. This means that the person evaluating image quality is making a decision that propagates through the entire pipeline. Treating QA as a clerical step rather than a scientific judgment is one of the most common and costly mistakes in connectomics projects.
+EM image quality sets an upper limit on segmentation accuracy, and through it on every connectomic claim built on that segmentation. When membrane contrast falls, the segmentation model loses the intensity edge it uses to separate adjacent neurites, and split errors rise. Every downstream analysis result — synapse counts, path lengths, circuit motifs — inherits the quality ceiling set at acquisition. This means that the person evaluating image quality is making a decision that propagates through the entire pipeline. Treating QA as a clerical step rather than a scientific judgment is one of the most common and costly mistakes in connectomics projects.
 
 ---
 
@@ -62,7 +62,7 @@ EM image quality is not merely an aesthetic concern — it is the single most co
 <!--
 Pre-class preparation (5-10 min async)
   Before the session, students should:
-  Review the EM principles content library entry, focusing on the section on image formation and contrast mechanisms.
+  Review the [EM principles](/content-library/imaging/em-principles/) page, focusing on image formation and contrast.
   Preview the artifact gallery on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page and find three examples: one clean image, one with moderate knife chatter, and one with a tissue fold. For each, note initial impressions of quality.
   Materials needed
   Projected EM image gallery (8-10 patches at varying quality levels) from the instructor's patch set; see *Building the patch set* under the studio activity
@@ -77,7 +77,7 @@ Pre-class preparation (5-10 min async)
   Briefly review how contrast arises from heavy metal staining and electron scattering. Emphasize that membrane visibility depends on staining protocol, not microscope settings alone.
 
 2. 08:00-20:00 — Artifact recognition walkthrough
-  *Instructor cue*: "Now I am going to show you the five artifacts that cause 90% of segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
+  *Instructor cue*: "Now I am going to show you five artifacts that cause many segmentation failures. For each one, I want you to predict: will this cause a merge error, a split error, or a topology break?"
   Walk through knife chatter, charging, folds, missing sections, and staining gradients with the annotated examples on the [Artifact taxonomy](/content-library/imaging/artifact-taxonomy/) page.
   Where your patch set has an example of the artifact, turn on the public viewer's segmentation layer over it so students can see the predicted error type realized in practice.
   *Formative check*: After the third artifact, pause and ask students to classify the next one independently before revealing the answer.

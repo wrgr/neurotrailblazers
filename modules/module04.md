@@ -70,19 +70,19 @@ Interpret a local EM region using correct anatomical context and document one co
 ### 1) Cortical layers shape what you see in EM
 The mammalian neocortex is organized into six layers (L1-L6), each with a characteristic cell density, cell-type composition, and neuropil texture. In EM, these layers are distinguishable by:
 - **Layer 1**: Sparse cell bodies (mostly interneurons and glia), dense neuropil of apical dendritic tufts, axonal boutons, and astrocytic processes. If you see neuropil with very few soma profiles, you are likely in L1.
-- **Layer 2/3**: Dense small-to-medium pyramidal neuron soma, heavily interconnected by local axon collaterals. The most densely packed neuronal layer.
-- **Layer 4**: In sensory cortex, dominated by spiny stellate cells (not pyramidal) and thalamocortical axon terminals. Bouton density is high; dendritic spines are abundant.
+- **Layer 2/3**: Densely packed small-to-medium pyramidal somata, interconnected by local axon collaterals.
+- **Layer 4**: In primary sensory cortex, the main target of thalamocortical axons. In rodent barrel cortex many L4 excitatory cells are spiny stellate cells; in mouse visual cortex (the MICrONS volume) most are small pyramidal or star-pyramidal cells. Bouton density is high; dendritic spines are abundant.
 - **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
 - **Layer 6**: Heterogeneous; corticothalamic pyramidal cells with distinctive morphology (apical dendrites reaching only to L4, not L1). Transition to white matter below.
 
-**Why this matters for annotation:** The same EM structure can mean different things in different layers. A large bouton with many vesicles in L4 is likely a thalamocortical terminal; in L2/3, it is more likely a local collateral. Layer context is not optional — it is essential for correct interpretation.
+**Why this matters for annotation:** The same EM structure can mean different things in different layers. A large bouton with many vesicles in L4 is likely a thalamocortical terminal; in L2/3, it is more likely a local collateral. Check the layer before you interpret the structure.
 
 ### 2) Hippocampal architecture differs from neocortex
 For projects like MouseConnects/HI-MC (which targets hippocampus), learners need hippocampal anatomy:
 - **Dentate gyrus**: Granule cell layer (densely packed small soma), molecular layer (dendrites + perforant path axons), hilus/polymorphic layer (mossy cells, interneurons).
-- **CA3**: Large pyramidal cells with thorny excrescences (complex spines) receiving mossy fiber input from dentate granule cells. Mossy fiber boutons are the largest in the brain (3-5 μm diameter, packed with vesicles).
+- **CA3**: Large pyramidal cells with thorny excrescences (complex spines) receiving mossy fiber input from dentate granule cells. Mossy fiber boutons are among the largest presynaptic terminals in the brain (several μm across, packed with vesicles).
 - **CA1**: Medium pyramidal cells, Schaffer collateral input from CA3. The most-studied hippocampal subfield.
-- **Trisynaptic circuit**: Entorhinal cortex → dentate gyrus (perforant path) → CA3 (mossy fibers) → CA1 (Schaffer collaterals). This canonical pathway has never been mapped at synaptic resolution across a large volume — a key goal of MouseConnects.
+- **Trisynaptic circuit**: Entorhinal cortex → dentate gyrus (perforant path) → CA3 (mossy fibers) → CA1 (Schaffer collaterals). Mapping this canonical pathway at synaptic resolution across a large hippocampal volume is a key goal of MouseConnects.
 
 ### 3) Scale bridging: from atlas to EM
 - **Allen Brain Atlas** coordinates provide region/layer context for any point in the EM volume (if the tissue was registered to the atlas before or after EM). Registration is typically done using blood vessel landmarks, layer boundaries, and cytoarchitectonic features — and it is an estimate: every registered coordinate carries a residual error that grows near region and layer boundaries.
@@ -108,7 +108,7 @@ You are handed two EM patches, each about 15 x 15 µm. Each contains a large pre
 
 **Step 1: run the soma census before touching the bouton.** Zoom out to the surrounding 50 x 50 µm field. Around Patch 1, you find a sheet of very densely packed small round somata (8-10 µm) just superficial to a band of large pyramidal somata — the packing signature of the dentate granule cell layer bordering CA3. Around Patch 2, you find medium somata at moderate density, abundant spines, and high overall bouton density — consistent with sensory cortex layer 4. Ten seconds of context, and the two identical boutons now sit in different hypothesis spaces.
 
-**Step 2: state the region prior and what it predicts.** In CA3, a 3 µm vesicle-dense bouton contacting a complex, multi-headed spine is the signature mossy fiber terminal — the largest boutons in the brain (3-5 µm), targeting thorny excrescences on proximal CA3 dendrites. In cortical L4, a large bouton is most plausibly a thalamocortical terminal, but local axon collaterals also produce large boutons, and nothing inside the patch separates the two.
+**Step 2: state the region prior and what it predicts.** In CA3, a 3 µm vesicle-dense bouton contacting a complex, multi-headed spine is the signature mossy fiber terminal, among the largest boutons in the brain, targeting thorny excrescences on proximal CA3 dendrites. In cortical L4, a large bouton is most plausibly a thalamocortical terminal, but local axon collaterals also produce large boutons, and nothing inside the patch separates the two.
 
 **Step 3: weigh the independent cues.** Patch 1: size (3 µm), target type (complex spine), and laminar position (adjacent to granule layer) are three independent cues agreeing on one answer. Call: mossy fiber bouton, high confidence. Patch 2: size and layer agree, but the discriminating cue — the parent axon's origin — is not in the patch. Follow the axon across neighboring sections: after 6 sections it exits the field without resolving whether it ascends from white matter (thalamocortical) or emerges from a local soma (collateral). Call: putative thalamocortical terminal, medium confidence, parent trajectory unresolved.
 
@@ -243,7 +243,7 @@ every patch has a recorded location and a layer you can check.
 ## References
 - Harris KD, Shepherd GMG (2015) "The neocortical circuit: themes and variations." *Nature Neuroscience* 18(2):170-181.
 - Kasthuri N et al. (2015) "Saturated reconstruction of a volume of neocortex." *Cell* 162(3):648-661.
-- Lorente de Nó R (1934) "Studies on the structure of the cerebral cortex." *Journal für Psychologie und Neurologie* 45:381-438.
+- Lorente de Nó R (1934) "Studies on the structure of the cerebral cortex. II. Continuation of the study of the ammonic system." *Journal für Psychologie und Neurologie* 46:113-177.
 - Turner NL et al. (2022) "Reconstruction of neocortex: Organelles, compartments, cells, circuits, and activity." *Cell* 185(6):1082-1100.
 - Amaral DG, Witter MP (1989) "The three-dimensional organization of the hippocampal formation." *Neuroscience* 31(3):571-591.
 

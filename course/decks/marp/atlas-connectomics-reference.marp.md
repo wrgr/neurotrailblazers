@@ -42,7 +42,7 @@ The atlas page answers four questions: which public dataset can answer my questi
 - A good atlas makes hidden curriculum explicit.
 
 <!--
-Instructor script: "Before proposing new acquisition, check the atlas. A large fraction of good connectomics questions can be answered by re-analysing existing public data. Acquiring a new mm-scale volume is a multi-year, multi-million-dollar program; re-analysing one is a compute bill and your time."
+Instructor script: "Before proposing new acquisition, check the atlas. Many good connectomics questions can be answered by reanalyzing existing public data. Acquiring a new mm-scale volume is a multi-year, multi-million-dollar program; reanalyzing one is a compute bill and your time."
 Quick map from the page's choosing table: whole-brain graph structure -> FlyWire or larval Drosophila; clean cell-type connectivity -> hemibrain; structure–function -> MICrONS; human-specific features -> H01; development -> the C. elegans developmental series; what dense reconstruction requires -> Kasthuri 2015.
 -->
 

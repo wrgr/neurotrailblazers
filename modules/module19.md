@@ -76,7 +76,7 @@ content_type: path
 Produce a technically rigorous manuscript review and an ethics-risk decision memo for a connectomics study, including actionable recommendations and integrity safeguards. Students will be able to distinguish constructive criticism from destructive criticism, identify the specific ethical challenges that arise in large-scale connectomics collaborations, and make documented decisions when facing ambiguous integrity situations.
 
 ## Why this module matters
-Connectomics projects are collaborative, data-heavy, and method-sensitive. A single MICrONS or FlyWire paper may involve dozens of contributors spanning multiple institutions, with data collected from human or animal tissue, processed by automated pipelines, proofread by community volunteers, and analyzed by computational teams. Errors in interpretation, reporting, or credit assignment can undermine both scientific validity and team trust. Ethical practice here is operational, not abstract --- it affects real people, real data, and real scientific conclusions.
+Connectomics projects are collaborative, data-heavy, and method-sensitive. A single MICrONS or FlyWire paper may involve dozens to hundreds of contributors spanning multiple institutions, with data collected from human or animal tissue, processed by automated pipelines, proofread by community volunteers, and analyzed by computational teams. Errors in interpretation, reporting, or credit assignment can undermine both scientific validity and team trust. Here ethics is a set of daily practices: how you log, credit, share, and report.
 
 ## Concept set
 
@@ -87,41 +87,47 @@ Connectomics projects are collaborative, data-heavy, and method-sensitive. A sin
   - **Interpretation boundaries:** does the paper distinguish confirmed findings from exploratory observations? Are conclusions limited to what the data can actually support (e.g., one brain region in one animal at one developmental time point)?
   - **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
 - **Plain language:** a good reviewer checks whether the methods can actually support the claims, whether the statistics are honest, and whether someone else could reproduce the work.
-- **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
+- **Misconception guardrail:** an interesting result can make up for thin methods.
+- **Why it fails:** a novel finding with inadequate methods documentation cannot be checked, and is worth less than an incremental finding reported transparently.
 
 ### 2) Ethical issues specific to connectomics
 - **Technical:** connectomics raises several domain-specific ethical concerns:
   - **Human tissue consent:** datasets like H01 use surgically resected human brain tissue. Consent processes must cover not only the initial use but also open data sharing, potential re-identification risks (from unique anatomical features), and downstream computational analyses not anticipated at the time of consent. The ethical review must address whether broad consent covers AI/ML applications.
   - **Data sharing obligations:** large publicly funded connectomics projects have data sharing mandates. Balancing open science with privacy, intellectual property for junior researchers, and responsible use requires explicit policies.
-  - **Attribution for proofreaders:** in community proofreading projects (e.g., FlyWire Codex, Eyewire), thousands of volunteers contribute proofreading labor that is essential for data quality. Fair attribution practices must go beyond a blanket acknowledgment --- contribution tracking systems should inform authorship decisions, and community members should be credited proportionally.
+  - **Attribution for proofreaders:** in community proofreading projects (e.g., FlyWire, Eyewire), many volunteers contribute proofreading labor that is essential for data quality. Fair attribution practices must go beyond a blanket acknowledgment --- contribution tracking systems should inform authorship decisions, and community members should be credited proportionally.
   - **Responsible AI use:** using connectomics data to train AI models (for segmentation, synapse detection, or circuit prediction) raises questions about model bias, appropriate validation, and downstream applications. Models trained on one species or brain region may not generalize, and overclaiming generality is an ethical as well as scientific problem.
   - **Selective reporting:** the complexity of connectomics data creates many opportunities for selective reporting --- highlighting motifs that are enriched while ignoring those that are not, reporting only the threshold at which results are significant, or presenting one analysis variant while hiding others that gave different results.
 - **Plain language:** connectomics has unique ethical challenges because it involves human tissue, massive collaborations with community contributors, and data complex enough to support many different stories depending on how you analyze it.
-- **Misconception guardrail:** ethics in connectomics is not just about IRB approval. It extends to data sharing, attribution, responsible AI, and honest reporting throughout the research lifecycle.
+- **Misconception guardrail:** ethics in connectomics is covered once the IRB or animal-care approval is in hand.
+- **Why it fails:** approval covers tissue collection. Data sharing, attribution, AI use, and honest reporting run through the whole project.
 
 ### 3) Technical peer review is an engineering audit
 - **Technical:** reviews should test evidence-method alignment, not just narrative quality. For each major claim, check: (a) Is the evidence shown in a figure panel? (b) Is the statistical test appropriate for the data structure? (c) Are the preprocessing decisions documented and justified? (d) Are alternative interpretations acknowledged? (e) Could the result be an artifact of a known data limitation (segmentation errors, boundary effects, incomplete proofreading)?
 - **Plain language:** ask whether the methods can really support the claims. Read the methods section first, not the abstract.
-- **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness.
+- **Misconception guardrail:** a review is mainly a judgment of how well the story is told.
+- **Why it fails:** a well-told story can rest on a method that cannot support it. Audit the method against each claim.
 
 ### 4) Constructive criticism vs destructive criticism
 - **Technical:** constructive criticism is specific, evidence-based, actionable, and focused on improving the science. It identifies the problem, explains why it matters, and suggests a concrete path to resolution. Destructive criticism is vague, opinion-based, dismissive, or focused on the authors rather than the work. Examples:
-  - **Constructive:** "The null model preserves degree sequence but not spatial constraints. Since connection probability in cortex depends strongly on distance (Ercsey-Ravasz et al., 2013), a spatially constrained null would be more appropriate. The authors could test whether their motif enrichment holds under a distance-dependent Erdos-Renyi model."
+  - **Constructive:** "The null model preserves degree sequence but not spatial constraints. Since connection probability between nearby cortical neurons falls with distance, a spatially constrained null would be more appropriate. The authors could test whether their motif enrichment holds under a distance-dependent null model."
   - **Destructive:** "The statistics are unconvincing and the claims are overblown."
   - **Constructive:** "Figure 3 shows a 2x enrichment of reciprocal connections, but the confidence interval overlaps 1.5x. The authors should report the effect size with the CI and discuss whether this enrichment is biologically meaningful at the lower bound."
   - **Destructive:** "The enrichment is probably not real."
 - **Plain language:** good criticism tells the authors what is wrong, why it matters, and what they can do about it. Bad criticism just says "this is not good enough."
-- **Misconception guardrail:** being harsh is not the same as being rigorous. The most rigorous reviews are also the most specific and constructive.
+- **Misconception guardrail:** the harshest review is the most rigorous one.
+- **Why it fails:** rigor is specificity. The most rigorous reviews name the problem, the evidence, and the fix.
 
 ### 5) Integrity risks are workflow-linked
 - **Technical:** risks include silent preprocessing changes (modifying thresholds after seeing results), undocumented QC exceptions (excluding outliers without reporting), selective reporting (showing only the analysis variant that "works"), and ambiguous authorship criteria (adding or removing authors based on politics rather than contribution).
 - **Plain language:** ethics problems often start as process shortcuts. The researcher who silently changes a threshold "just to see" and then forgets to report it has created an integrity problem.
-- **Misconception guardrail:** compliance checklists alone do not ensure good practice. Integrity requires ongoing attention to workflow transparency.
+- **Misconception guardrail:** a completed compliance checklist guarantees integrity.
+- **Why it fails:** most integrity problems start as small workflow shortcuts that no checklist asks about.
 
 ### 6) Authorship and credit need explicit rules
 - **Technical:** large connectomics projects should use contribution tracking (e.g., CRediT taxonomy) and written authorship criteria established before the project produces results. In consortium settings, define: what level of proofreading contribution qualifies for authorship vs acknowledgment? How are computational contributions weighed against experimental ones? Who decides authorship order? These decisions should be documented in a project governance document, not resolved ad hoc when the paper is nearly submitted.
 - **Plain language:** decide credit rules before conflicts happen. Put them in writing. Revisit them when roles change.
-- **Misconception guardrail:** contribution volume alone does not define authorship role. A person who proofread 10,000 segments may deserve authorship; a person who ran one analysis script may not. The criteria must be explicit and agreed upon in advance.
+- **Misconception guardrail:** contribution volume alone decides authorship.
+- **Why it fails:** volume is one input. A person who proofread 10,000 segments may deserve authorship and a person who ran one script may not, or the reverse; the criteria must be written and agreed in advance.
 
 ## Core workflow: review and ethics decision process
 1. **Pre-review framing**
@@ -180,7 +186,7 @@ Each student submits their structured review form and decision memo. Instructor 
 ## Studio activity: connectomics review board simulation
 {: #studio-activity}
 
-**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit]({{ '/assets/kits/module19/README.md' | relative_url }}). The discussion section states that "this motif likely plays a causal role in seizure propagation."
+**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses a fictional mouse visual cortex volume (release T19) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit]({{ '/assets/kits/module19/README.md' | relative_url }}). The discussion section states that "this motif likely plays a causal role in seizure propagation."
 
 **Tasks**
 1. Write one methods critique (specific: what is missing, why it matters, what the authors should add) and one interpretation critique (specific: which sentence overclaims, what the bounded version would say).
@@ -220,13 +226,14 @@ Each student submits their structured review form and decision memo. Instructor 
 - QC context: [Connectome Quality tool]({{ '/tools/connectome-quality/' | relative_url }})
 - Mentorship/escalation context: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 - [Module 19 kit]({{ '/assets/kits/module19/README.md' | relative_url }}) — the fictional mock preprint and the review form
+- Workshops that continue this module: [The Savvy Researcher]({{ '/teaching/pathways/savvy-researcher/' | relative_url }}) (authorship and credit) and [Professional Conduct in STEM]({{ '/teaching/pathways/professional-conduct/' | relative_url }})
 
 ## Evidence anchors from connectomics practice
 
 ### Key papers to use in this module
 - [White, J.G. et al. (1986). "The Structure of the Nervous System of the Nematode *Caenorhabditis elegans*."](https://doi.org/10.1098/rstb.1986.0056) --- study as an example of thorough methods reporting in connectomics.
 - [Kasthuri, N. et al. (2015). "Saturated Reconstruction of a Volume of Neocortex." *Cell*, 162(3), 648-661.](https://doi.org/10.1016/j.cell.2015.06.054) --- review the methods section for reconstruction quality documentation.
-- [MICrONS Consortium (2025). Visual cortex reconstruction. *Nature.*](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary large-collaboration authorship and methods documentation.
+- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary large-collaboration authorship and methods documentation.
 - [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- ethical considerations for human tissue connectomics and open data.
 - [COPE (Committee on Publication Ethics). Core Practices.](https://publicationethics.org/core-practices) --- ethical guidelines for peer review and publication.
 - [ICMJE. Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work.](https://www.icmje.org/recommendations/) --- authorship criteria.

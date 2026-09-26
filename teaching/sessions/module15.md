@@ -112,7 +112,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass:** clear task boundaries, verification logic with thresholds that can fail, and logging fields including model version and prompt.
-- **Strong performance:** robust failure-mode handling, an actionable governance plan, a measured or defensibly estimated gate cost for each output class, and at least one class explicitly declared not yet usable.
+- **Strong performance:** a fallback named for every failure mode, an actionable governance plan, a measured or defensibly estimated gate cost for each output class, and at least one class explicitly declared not yet usable.
 - **Failure modes:** unbounded scope, no confidence policy, missing audit trail, thresholds written after seeing the outputs, and gates whose cost was never compared with the task they replace.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain

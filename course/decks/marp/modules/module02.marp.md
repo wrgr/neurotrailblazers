@@ -81,15 +81,15 @@ Block 1: Hidden curriculum reveal (00:00-15:00)
   For each scenario, collect 2-3 responses from learners, then present a recommended approach.
 
 Block 2: Role and expectation mapping (15:00-30:00)
-  Instructor script: "Every research team has roles. Let's map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
+  Instructor script: "Every research team has roles. We will map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
   Learners fill in a three-column role-expectation table (role, what this person expects from you, what you can expect from them) for their own research setting (or a hypothetical one).
   Discuss: where do expectations conflict? Where are they ambiguous?
 
 Block 3: Ethics in connectomics (30:00-45:00)
-  Instructor script: "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. Let's talk about what that means."
+  Instructor script: "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. What does that ask of you?"
   Cover three ethics topics:
   Data provenance: every analysis should reference a specific dataset version. Show how CAVE materialization versions work.
-  Attribution: the 287 FlyWire proofreaders were co-authors. Discuss what fair attribution looks like at scale.
+  Attribution: the FlyWire Consortium is credited as an author of the whole-brain paper. Discuss what fair attribution looks like at scale.
   Human tissue: discuss IRB requirements, de-identification, and the responsibility that comes with working on data derived from surgical patients.
   Group discussion: "What ethical situation might you encounter in your work? How would you handle it?"
 

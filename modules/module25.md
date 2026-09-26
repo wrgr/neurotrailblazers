@@ -57,8 +57,7 @@ prerequisites_list:
   - "Completed artifacts from at least three technical modules"
   - "One writing or presentation artifact"
 next_modules: []
-references:
-  - "Program portfolio templates and competency rubrics."
+references: []
 videos: []
 downloads: []
 last_reviewed: 2026-03-11
@@ -94,7 +93,7 @@ The reason it belongs in the Career and Community track rather than a technical 
 ### 4) What to include in a capstone portfolio
 A strong connectomics capstone portfolio should contain several categories of artifacts that together demonstrate end-to-end research competency. Include annotated EM images with written interpretation explaining what structures are visible and what biological conclusions can be drawn. Graph analysis notebooks (Jupyter or similar) should show the full workflow from data loading through statistical testing, with inline commentary on analytical choices. Proofreading logs with QC metrics document hands-on data quality work and show attention to accuracy. A research brief or mini-paper (even 2-3 pages) demonstrates the ability to frame a question, present evidence, and state limitations. Presentation slides from talks or poster sessions round out the package by showing communication skill.
 
-The portfolio serves as career material beyond the course. For graduate school applications, it demonstrates technical skills (EM annotation, Python, graph analysis), scientific rigor (QC documentation, statistical reasoning), and communication ability (writing, presentations) in a single integrated package. Organize artifacts by competency rather than by module or chronology, and include brief reflection notes explaining what was learned and what would be done differently. Version the portfolio itself, and treat it as a living document that grows as new work is completed.
+The portfolio serves as career material beyond the course. For graduate school applications, it demonstrates technical skills (EM annotation, Python, graph analysis), scientific rigor (QC documentation, statistical reasoning), and communication ability (writing, presentations) in a single integrated package. Organize artifacts by competency rather than by module or chronology, and include brief reflection notes explaining what was learned and what would be done differently. Version the portfolio itself, and treat it as a living document that grows as new work is completed. If you took Module 01, its question sheet and motivation statement make a useful first-and-last pair: show the question you arrived with next to the one you would ask now, and say what changed it.
 
 ### 5) Evidence captions have a fixed structure
 - **Technical:** every artifact carries a four-line caption. Line one, the competency claim: what this proves I can do. Line two, what the artifact is, and explicitly what I did versus what was given to me. Line three, what a reviewer can verify and where, naming the cell, file, or number. Line four, the limitation, and what I would do differently. A caption that cannot fill line three is describing an artifact nobody can check.
@@ -224,7 +223,8 @@ The fourth line is the one most people delete, and it is the strongest line in t
 - Career planning context: [Module 24]({{ '/modules/module24/' | relative_url }})
 - Presentation context: [Module 22]({{ '/modules/module22/' | relative_url }})
 - Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
-- Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
+- Stage framing: [Program Models]({{ '/models/' | relative_url }})
+- Workshop that continues this module: [Future Forward]({{ '/teaching/pathways/future-forward/' | relative_url }}), which turns the portfolio into evaluated options and a twelve-month plan
 - Provenance reference: [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 

@@ -60,7 +60,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
+**Scenario:** Your lab plans to release a connectomics analysis package to collaborators at another institution, who will rerun it without being able to ask you questions. The package is the analysis you brought to this session; if you have none, use your Module 03 notebook.
 
 1. Build a FAIR metadata sheet for one analysis output.
 2. Create a reproducibility checklist with pass/fail criteria.

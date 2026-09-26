@@ -74,7 +74,7 @@ content_type: path
 Design and evaluate a CV pipeline for EM imagery that is fit for a specific connectomics task and explicitly bounded by known failure modes. Concretely: choose an architecture from the shape of the task rather than from the benchmark leaderboard, decompose error into merges and splits instead of reporting one score, convert that decomposition into a downstream cost using a ratio your team has actually measured, and write a release gate that says in advance what result would stop the model from shipping.
 
 ## Why this module matters
-CV is what makes petascale connectomics possible at all: no group will manually trace 10^15 voxels. That leverage is also the risk. A segmentation model applied to a whole volume writes its errors into every downstream product — meshes, skeletons, the synapse table, the connectivity graph — and most of those errors are never seen by a human.
+CV is what makes petascale connectomics possible at all: no group will manually trace 10^15 voxels. That reach is also the risk. A segmentation model applied to a whole volume writes its errors into every downstream product — meshes, skeletons, the synapse table, the connectivity graph — and most of those errors are never seen by a human.
 
 The asymmetry that governs every decision in this module is between the two error types. A split is conspicuous: a neuron ends abruptly, a proofreader sees it, and the repair is local. A merge is invisible in summary statistics. It manufactures connectivity that does not exist, and because motif counting is combinatorial, a small number of spurious edges biases motif counts superlinearly toward denser motifs. A model that trades a large reduction in splits for a modest increase in merges will look better on almost every aggregate metric and be worse for the science.
 
@@ -191,7 +191,7 @@ You are choosing between an incumbent model A and a candidate model B for a prod
 
 ## Assessment rubric
 - **Minimum pass:** clear task-model rationale, biologically relevant metrics reported with merge and split separated, explicit limitations naming at least one unsupported use.
-- **Strong performance:** robust failure analysis by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
+- **Strong performance:** failure analysis tallied by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
 - **Failure modes:** metric-only reasoning, pooling clean and artifact-heavy regions into one number, weak split design, no deployment boundaries, thresholds chosen after seeing which model they would favor.
 
 ## Key architectures for EM connectomics
@@ -206,7 +206,7 @@ Encoder-decoder architecture with skip connections. The encoder downsamples the 
 ### Flood-Filling Networks (Januszewski et al. 2018)
 An iterative approach: a CNN predicts whether each neighboring voxel belongs to the same object as the current seed, and the segment "grows" outward. FFNs produce instance segmentation directly (each neuron gets a unique ID) without the separate watershed + agglomeration step.
 
-**When to use:** FFNs are computationally expensive but produce high-quality segmentation with fewer post-processing stages. Used in FlyWire and other Google-based reconstructions.
+**When to use:** FFNs are computationally expensive but produce high-quality segmentation with fewer post-processing stages. Used in Google-led reconstructions such as the Drosophila hemibrain (Scheffer et al. 2020) and H01 (Shapson-Coe et al. 2024).
 
 ### Affinity prediction + watershed + agglomeration
 The standard two-stage pipeline: (1) A 3D CNN predicts pairwise affinity between neighboring voxels (probability they belong to the same segment). (2) Watershed transform produces an over-segmentation of millions of supervoxels. (3) Agglomeration merges supervoxels based on affinity scores at boundaries.
@@ -259,7 +259,7 @@ Training data is expensive (manual annotation). Augmentation expands the effecti
 - Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss." *IEEE TPAMI* 41(7):1669-1680.
-- Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
+- Lee K et al. (2017) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 
 ## Quick practice prompt
 Document one CV result with one supported use case and one forbidden use case.

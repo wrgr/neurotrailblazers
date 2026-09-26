@@ -82,7 +82,7 @@ In real connectomes, many neuron pairs share only 1-2 synapses. Are these "real"
 - **Degree** (in/out): How many partners does this neuron have? Hub neurons have high degree.
 - **Clustering coefficient**: Are a neuron's partners connected to each other? High clustering = dense local circuits.
 - **Path length**: How many synapses separate two neurons? Short paths = efficient information flow.
-- **Reciprocity**: Fraction of connections that are bidirectional. High reciprocity in cortex (4× enriched, Song et al. 2005).
+- **Reciprocity**: Fraction of connections that are bidirectional. Song et al. (2005) found bidirectional connections about 4× more often than chance among L5 pyramidal cells in rat visual cortex slices.
 - **Modularity**: Can the graph be partitioned into densely connected subgroups? Modules may correspond to functional units or cell-type communities.
 
 ### 4) Null models and the interpretation trap
@@ -105,7 +105,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 
 **Step 1 — Look at the degree distribution before computing anything else.** Sorted out-degrees: the top node has 214 partners; the next highest has 91. A degree outlier at more than twice the runner-up is a data-quality question before it is a biology question, because a merge error fuses two neurons' partner lists and manufactures exactly this signature. Pull the mesh for the top node: two somata. It is a merge. Flag it upstream, exclude it from this analysis, and record the exclusion. The new top degree is 91, inside a smooth heavy tail — no single dramatic hub, but a top-5% tier of well-connected cells worth naming as candidates.
 
-**Step 2 — Compute clustering, then immediately ask "compared to what."** Clustering coefficient = 0.19. Alone, this number means nothing. Against 1,000 degree-preserving rewirings: null mean 0.11, sd 0.008 — the observed value is 1.7x the null, z about 10. Before writing "significant local structure," say the next sentence out loud: nearby neurons connect more often because their arbors overlap, and a spatially constrained null would absorb some of this. You cannot run that null without soma positions in hand this week, so the claim is scoped: "clustering exceeds the degree-preserving expectation; a spatial null has not been applied." That one sentence is the difference between a defensible report and a retraction-in-waiting; the spatial machinery itself is [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}).
+**Step 2 — Compute clustering, then immediately ask "compared to what."** Clustering coefficient = 0.19. Alone, this number means nothing. Against 1,000 degree-preserving rewirings: null mean 0.11, sd 0.008 — the observed value is 1.7x the null, z about 10. Before writing "significant local structure," say the next sentence out loud: nearby neurons connect more often because their arbors overlap, and a spatially constrained null would absorb some of this. You cannot run that null without soma positions in hand this week, so the claim is scoped: "clustering exceeds the degree-preserving expectation; a spatial null has not been applied." That sentence keeps the report defensible when a reviewer asks about space; the spatial machinery itself is [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}).
 
 **Step 3 — Re-run the headline numbers at a second threshold.** At ≥3 synapses the graph keeps 4,100 edges — the 1-2 synapse pairs were 64% of all edges. Clustering rises to 0.24 against a null of 0.10, so the direction of the conclusion holds. But the hub candidate list changes: 3 of the top 10 cells by degree drop out, because their rank depended on many weak connections that may be detection noise. Report both thresholds and present the hub list as the intersection, with the cells that moved flagged.
 
@@ -124,7 +124,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (10 min async)
-- Read the graph representations content library entry
+- Read [Graph representations]({{ '/content-library/connectomics/graph-representations/' | relative_url }})
 - Install NetworkX: `pip install networkx`
 
 ### Minute-by-minute plan
@@ -140,7 +140,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 3. **20:00-34:00 | Metric computation**
    - Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
    - Plot degree distribution (log-log). Is it heavy-tailed?
-   - Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
+   - Compute clustering and compare it to degree-preserving rewirings of the same graph (NetworkX: `nx.directed_edge_swap` on a copy). A Watts-Strogatz graph is a small-world reference, not a null for this graph.
 
 4. **34:00-46:00 | Interpretation and null concerns**
    - "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
@@ -157,7 +157,7 @@ Your PI hands you a 500-neuron subgraph from a cortical column and asks whether 
 ## Studio activity: graph analysis report (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic stand-in for a MICrONS column, in the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic graph invented for teaching, not sampled from any real dataset, in the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 
 **Task sequence:**
 1. Load the graph and compute basic statistics (nodes, edges, density, components).

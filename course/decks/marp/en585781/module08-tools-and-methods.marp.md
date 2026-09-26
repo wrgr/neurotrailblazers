@@ -56,7 +56,7 @@ Every one of those facts is a *consequence of a design decision* someone made in
 
 <div class="box box--good">
 
-**The organizing question all module:** *if this number is wrong, which stage produced the error, and how would I know?*
+**The organizing question for the module:** *if this number is wrong, which stage produced the error, and how would I know?*
 
 </div>
 
@@ -97,7 +97,7 @@ Every one of those facts is a *consequence of a design decision* someone made in
 </div>
 <div>
 
-**Part C — Reproducible pipelines** Why object IDs are not stable, what a materialization version is, and the platform landscape you will actually use.
+**Part C — Reproducible pipelines** Why object IDs are not stable, what a materialization version is, and the platforms you will actually use.
 
 <div class="box box--good">
 
@@ -260,12 +260,12 @@ Glutaraldehyde is the workhorse because it is bifunctional and cross-links rapid
 | Failure | How it looks | Downstream cost |
 |---|---|---|
 | **Weak membrane contrast** | Thin or interrupted membrane outlines | **The dominant cause of automated merge errors** — the network cannot find a boundary that is barely there. The single most expensive prep failure. |
-| **Staining gradient with depth** | Block edge well stained, centre pale; reagents did not penetrate | Segmentation quality varies systematically with position — **which looks like a biological gradient** if you are not careful |
+| **Staining gradient with depth** | Block edge well stained, center pale; reagents did not penetrate | Segmentation quality varies systematically with position — **which looks like a biological gradient** if you are not careful |
 | **Precipitate** | Small very dark irregular particles, often lead carbonate | False boundaries and false synapse detections; usually tolerable at low density |
 
 <div class="box box--warn">
 
-**The diagnostic question for every defect, all module:** *which coordinate system does it live in — block position, anatomy, or acquisition time?*
+**The diagnostic question for every defect in this module:** *which coordinate system does it live in — block position, anatomy, or acquisition time?*
 
 Block position → penetration or geometry. Acquisition time → instrument drift or reagent degradation. Anatomy → possibly real biology.
 
@@ -425,8 +425,8 @@ Only the third changes how the square-root dose budget is spent — and it is th
 <!--
 Eberle et al. 2015 used 61 beams (demonstrated 0.18–0.72 GPixel/s, "approaching 1 GHz");
 ZEISS MultiSEM 506 has 91. H01's ~1 mm³ was imaged on a 61-beam multiSEM in 326 days,
-as reported by Collins et al. 2025 (arXiv 2405.10488) — the H01 main text does not
-state the duration. SmartEM (Meirovitch et al.) reports up to ~7-fold faster acquisition
+per Shapson-Coe et al. 2024 (Science; PMC11718559: "The total imaging time for the
+1 mm3 sample was 326 days"). SmartEM (Meirovitch et al.) reports up to ~7-fold faster acquisition
 on a single-beam SEM.
 -->
 
@@ -887,7 +887,7 @@ Storing object IDs means rewriting the synapse table on every edit — a design 
 
 <div class="box box--good">
 
-**The consequence is the field's quiet superpower.** Because serving is just static objects, *anyone* can host a volume, and any client that speaks the format can read it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without negotiating anything.
+**The consequence: anyone can serve a volume.** Because serving is just static objects, *anyone* can host a volume, and any client that speaks the format can read it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without negotiating anything.
 
 Compare this to a database that must be running for the data to exist.
 
@@ -906,7 +906,7 @@ Compare this to a database that must be running for the data to exist.
 
 **Chunks.** The volume is divided into blocks — commonly 64³ to 512³ voxels — stored as individual objects. **You fetch only the chunks you need.** This is the whole reason interactive viewing of a petabyte is possible.
 
-**Resolution pyramid.** Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about **15–33% extra storage**.
+**Resolution pyramid.** Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about **14–33% extra storage**.
 
 **Sharding.** Millions of tiny objects are slow and expensive in object stores, so chunks are bundled into larger shard files with an index. A pure cost/latency optimization that **matters enormously at petascale**.
 
@@ -1080,7 +1080,7 @@ $0.05–0.09/GB, so ~1 PB out costs roughly $50k+; Standard storage (~$0.023/GB-
 
 - Why object IDs are not stable
 - Materialization versions, and the number-one silent failure
-- The platform landscape, and this week's assignment
+- The platforms you will use, and this week's assignment
 
 <div class="meta">Slides 40–54</div>
 
@@ -1179,7 +1179,7 @@ DATASET        = "minnie65_public"      # dataset name, not "the volume"
 MAT_VERSION    = 943                    # pinned; never "latest"
 QUERY_DATE     = "2026-03-14"           # when this ran
 CODE_REV       = "a3f9c21"              # git commit of THIS notebook
-CLIENT_VERSION = "caveclient 5.21.0"    # and its dependencies
+CLIENT_VERSION = "caveclient 5.21.0"    # old example pin; record yours
 SEED           = 20260314               # any stochastic step
 # ----------------------------------------------------------------------
 ```
@@ -1288,7 +1288,7 @@ The fourth is the common case at petascale, and it is why co-located compute mat
 
 ---
 
-## The platform landscape
+## The platforms you will actually use
 
 <!-- _class: dense -->
 
@@ -1356,8 +1356,8 @@ Note which row is bold. Every other row is a research problem with an obvious li
 </div>
 
 <!--
-Sources and assumptions for this table. Mouse brain ~500 mm³ (Collins et al. 2025,
-Cell Rep Methods, arXiv 2405.10488). MICrONS: 27,972 sections at 40 nm nominal onto
+Sources and assumptions for this table. Mouse brain ~500 mm³ (Badea et al. 2007,
+doi:10.1016/j.neuroimage.2007.05.046: 508.9 ± 23.4 mm³, C57BL/6J). MICrONS: 27,972 sections at 40 nm nominal onto
 GridTape (MICrONS Consortium 2025, doi:10.1038/s41586-025-08790-w). ~2 × 10⁵ sections
 is an estimate: a mouse brain is at most ~8 mm on its shortest axis (Allen CCFv3
 bounding box) ÷ 40 nm. Multibeam peak rate: Eberle et al. 2015 report up to
@@ -1461,7 +1461,7 @@ Present the **problem the method solves**, the **cost it pays**, and the claim y
 
 Every number in connectomics is **produced by a versioned pipeline** whose stages each have a characteristic failure.
 
-Reproducibility is not paperwork. It is the only thing that lets you say *which* number you are defending.
+Reproducibility is what lets you say *which* number you are defending.
 
 </div>
 
@@ -1496,13 +1496,13 @@ Reproducibility is not paperwork. It is the only thing that lets you say *which*
 <div class="cols">
 <div>
 
-**Licence: CC BY-SA 4.0**
+**License: CC BY-SA 4.0**
 Creative Commons Attribution-ShareAlike 4.0 International.
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them into your own material** — and distribute the result. No permission needed.
 
-**Two conditions.** *Attribution* — credit the original, link the licence, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same licence, so it stays as open as what it came from.
+**Two conditions.** *Attribution* — credit the original, link the license, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same license, so it stays as open as what it came from.
 
 </div>
 <div>
@@ -1520,4 +1520,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>

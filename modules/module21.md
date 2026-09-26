@@ -73,7 +73,7 @@ content_type: path
 Publish a reproducibility-ready connectomics package (data + methods + metadata + limitations) that an external group can audit and reuse.
 
 ## Why this module matters
-Connectomics studies are technically dense and often impossible to interpret without exact workflow context. FAIR and reproducibility are not paperwork; they are scientific validity infrastructure.
+Connectomics studies are technically dense and often impossible to interpret without exact workflow context. A result nobody else can rerun cannot be checked, so FAIR packaging and reproducibility are part of whether the result is valid.
 
 ## Concept set
 ### 1) FAIR as implementation checklist
@@ -98,21 +98,21 @@ A practical reproducibility checklist for any connectomics analysis release shou
 
 ## Worked example: the number that changed while the code did not
 
-The numbers below are illustrative — they show the shape of the reasoning, not results from a specific release.
+The numbers and release labels below are invented for teaching (fictional releases T21 and T27 of a fictional volume) — they show the shape of the reasoning, not results from any real dataset or release.
 
 In March you report 4,712 synapses between two labeled cell populations. In September a collaborator reruns your notebook, unchanged, and gets 5,103. Nothing in the code changed. Work the five-element checklist as a diagnostic.
 
-**Step 1: dataset version and materialization.** The notebook queries "latest." Proofreading continued for six months, so the segmentation your query resolves against today is not the one you analyzed in March. Root IDs are only meaningful as of a version; querying latest silently re-asks the question against a different brain state. This is the most common silent correctness failure in the field — the mechanics of why are [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}).
+**Step 1: dataset version and materialization.** The notebook queries "latest." Proofreading continued for six months, so the segmentation your query resolves against today is not the one you analyzed in March. Root IDs are only meaningful as of a version; querying latest silently re-asks the question against a different brain state. This failure is silent: the code runs and the number looks plausible. The mechanics are [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) and [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}).
 
 **Step 2: quantify the drift instead of guessing.** Map your 214 stored root IDs forward with the platform's ID-lineage facility: 183 map 1:1, 24 split into two or more objects, 7 merged into other cells. So 31 of 214 objects changed under you. That churn number belongs in your methods, because it tells every reader how much proofreading moved the ground.
 
-**Step 3: reproduce and update — as two separate acts.** To reproduce March: query materialization version 795 explicitly, and recover 4,712 exactly. To update: rerun against version 1042 and get 5,103, which is now a statement about proofreading progress, not a bug. Both acts are legitimate; the error was conflating them by letting "latest" decide which one you were performing.
+**Step 3: reproduce and update — as two separate acts.** To reproduce March: query release T21 explicitly, and recover 4,712 exactly. To update: rerun against release T27 and get 5,103, which is now a statement about proofreading progress, not a bug. Both acts are legitimate; the error was conflating them by letting "latest" decide which one you were performing.
 
 **Step 4: pin the remaining four elements.** Code commit hash (eight characters in the figure caption), environment specification (an exported conda file or Docker digest — "Python 3.11" is not an environment), the full parameter configuration (synapse threshold of 3, the inclusion radius, every default you touched), and the dataset release identifier with its DOI. The test for each: could a stranger rerun this with no channel to ask you questions?
 
 **Step 5: prove it in a clean room.** A labmate reruns the package from the README alone. Friction log: an undeclared plotting dependency, a hard-coded path into your home directory, and a parameter cell that was edited after the figure was exported. Three fixes, one afternoon. The friction log is the deliverable — a package that has never been rerun cold is "reproducible in principle," which means unverified.
 
-**What gets released.** The data slice with a DOI, the materialization number in every figure caption, the commit hash, the environment file, the parameter configuration, a limitations note naming the two excluded tiles and the one failed run — and a changelog entry, so that version 2 can deprecate version 1 without erasing it.
+**What gets released.** The data slice with a DOI, the materialization number in every figure caption, the commit hash, the environment file, the parameter configuration, a limitations note naming the excluded samples and any failed runs — and a changelog entry, so that version 2 can deprecate version 1 without erasing it.
 
 **What this example does not establish:** that the September number is wrong. Both numbers are right about different states of the reconstruction; the failure was that the March release could not say which state it described.
 
@@ -137,12 +137,12 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 
 ### Pre-class preparation (15 min async)
 - Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
-- Read Technical Unit 04, section 2, on materialization versions and root-ID instability.
+- Read section 2 of [Technical Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}), on materialization versions and root-ID instability.
 
 ### Minute-by-minute plan
 1. **00:00-06:00 | Framing: the silent bug**
    - Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
-   - Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
+   - Establish that analysis against an unpinned segmentation fails silently: no error, a plausible number, a different question.
 2. **06:00-16:00 | The five-element checklist, modeled**
    - Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
    - Show what breaks when each one is missing, in turn.
@@ -166,7 +166,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 
 ## Studio activity: reproducibility hardening sprint
 {: #studio-activity}
-**Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
+**Scenario:** Your lab plans to release a connectomics analysis package to collaborators at another institution, who will rerun it without being able to ask you questions. The package is the analysis you brought to this session; if you have none, use your Module 03 notebook.
 
 **Tasks**
 1. Build a FAIR metadata sheet for one analysis output.
@@ -225,7 +225,7 @@ In March you report 4,712 synapses between two labeled cell populations. In Sept
 
 ## Evidence anchors from connectomics practice
 ### Key papers/resources to use
-- [FAIR Guiding Principles (2016)](https://www.nature.com/articles/sdata201618)
+- [Wilkinson MD et al. (2016). "The FAIR Guiding Principles for scientific data management and stewardship." *Scientific Data* 3:160018.](https://www.nature.com/articles/sdata201618)
 - [Peng (2011) - Reproducible Research in Computational Science](https://www.science.org/doi/10.1126/science.1213847)
 - [H01 dataset landing + paper](https://h01-release.storage.googleapis.com/landing.html)
 

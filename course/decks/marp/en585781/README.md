@@ -66,7 +66,7 @@ the script; do not hand-edit `out/.render-manifest.json`.
 ## The theme
 
 `theme/frontiers.css` is a Marp theme for a projected lecture hall: 1280×720, nothing
-below about 14px, high contrast, and no reliance on colour alone to carry meaning.
+below about 14px, high contrast, and no reliance on color alone to carry meaning.
 
 Slide classes, set with `<!-- _class: ... -->`:
 
@@ -105,7 +105,7 @@ render to HTML, then measure `scrollHeight - clientHeight` on each
 
 **CC BY-SA 4.0** — see [`LICENSE`](LICENSE). Teach from these decks, adapt them, and
 distribute the result; credit the original, say what you changed, and license your
-version the same way. The H01 cover image retains its **CC BY 4.0** licence and
+version the same way. The H01 cover image retains its **CC BY 4.0** license and
 credit to Lichtman Lab / Harvard and Connectomics at Google, Shapson-Coe et al.
 (2024), doi:10.1126/science.adk4858. Preserve that attribution in adaptations.
 

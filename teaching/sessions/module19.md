@@ -60,7 +60,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit](/assets/kits/module19/README.md). The discussion section states that "this motif likely plays a causal role in seizure propagation."
+**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses a fictional mouse visual cortex volume (release T19) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit](/assets/kits/module19/README.md). The discussion section states that "this motif likely plays a causal role in seizure propagation."
 
 1. Write one methods critique (specific: what is missing, why it matters, what the authors should add) and one interpretation critique (specific: which sentence overclaims, what the bounded version would say).
 2. Identify two ethics risks: (a) the authorship/attribution concern and (b) one additional concern (selective reporting, consent, data sharing, or responsible AI). For each, draft a concrete mitigation recommendation.
@@ -80,17 +80,17 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
+- **They may believe:** An interesting result can make up for thin methods.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Ethics in connectomics is not just about IRB approval. It extends to data sharing, attribution, responsible AI, and honest reporting throughout the research lifecycle.
+- **They may believe:** Ethics in connectomics is covered once the IRB or animal-care approval is in hand.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** "interesting result" is not a substitute for methodological soundness.
+- **They may believe:** A review is mainly a judgment of how well the story is told.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Being harsh is not the same as being rigorous. The most rigorous reviews are also the most specific and constructive.
+- **They may believe:** The harshest review is the most rigorous one.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Compliance checklists alone do not ensure good practice. Integrity requires ongoing attention to workflow transparency.
+- **They may believe:** A completed compliance checklist guarantees integrity.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Contribution volume alone does not define authorship role. A person who proofread 10,000 segments may deserve authorship; a person who ran one analysis script may not. The criteria must be explicit and agreed upon in advance.
+- **They may believe:** Contribution volume alone decides authorship.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm

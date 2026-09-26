@@ -46,7 +46,7 @@ Instructor script: "'Should we use SBEM or ssTEM?' is a scale decision. 'Can we 
 
 <!--
 Separate the three scales practitioners conflate. Acquisition scale: the voxel size your instrument produces. Reconstruction scale: the smallest object you can reliably segment — always coarser; at 4 x 4 x 40 nm you can see a 20 nm cleft but reliably segment neurites down to roughly 50–100 nm. Analysis scale: the unit your conclusions are about.
-Decision rule: choose the coarsest acquisition scale whose reconstruction scale still resolves every object your analysis depends on. Not the finest you can afford — the coarsest that works.
+Decision rule: choose the coarsest acquisition scale whose reconstruction scale still resolves every object your analysis depends on, rather than the finest you can afford.
 -->
 
 ---
@@ -60,7 +60,7 @@ Decision rule: choose the coarsest acquisition scale whose reconstruction scale 
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Instructor script: "Each panel is roughly four times closer than the last, and it is the same piece of human temporal cortex throughout. At each step, ask what is visible here — and what is fundamentally unobservable at this scale."
+Instructor script: "Each panel is roughly four times closer than the last, and it is the same piece of human temporal cortex throughout. At each step, ask what is visible here and what cannot be observed at this scale."
 Left to right: somata and vessels resolve at the cell field; nuclear envelope, nucleolus and myelinated axons in cross-section at the single neuron; membranes, mitochondria and vesicle clouds only at the native 4 nm. A spine-neck question needs the last panel everywhere in the volume, which is what makes it a petabyte problem.
 -->
 
@@ -78,7 +78,7 @@ Left to right: somata and vessels resolve at the cell field; nuclear envelope, n
 
 <!--
 Instructor script: "This is the bridge between scales, and it is exactly where scale leakage is manufactured. What claim is being carried across the join?"
-Ask whether the transfer comes with a stated registration residual and its maximum, not just its mean. Worked instance of the rule: "fraction of inputs onto spines vs shafts" puts the analysis scale at the spine neck (50–200 nm), which forces EM. "Does area A project to area B at all" puts it at the axon bundle, where light-sheet at 1 µm is the correct choice — about five orders of magnitude cheaper.
+Ask whether the transfer comes with a stated registration residual and its maximum, not just its mean. Worked instance of the rule: "fraction of inputs onto spines vs shafts" puts the analysis scale at the spine neck (50–200 nm), which forces EM. "Does area A project to area B at all" puts it at the axon bundle, where light-sheet at 1 µm is the correct choice: about a million-fold fewer voxels than 4 x 4 x 40 nm EM (1 µm³ / 640 nm³ ≈ 1.6 x 10^6).
 -->
 
 ---
@@ -128,7 +128,7 @@ Anisotropy warning: on a 4 x 4 x 40 nm stack, an isotropic smoothing kernel or d
 - Budgeting is part of scientific method feasibility.
 
 <!--
-For a 1 mm³ ssTEM volume (~1.6 PB raw): aligned pyramid +30–50%; affinity maps ~1x raw; segmentation labels 0.1–0.5x; meshes 1–10 TB; skeletons 10–100 GB; synapse table ~50–200 GB; edit history grows without bound.
+For a 1 mm³ ssTEM volume (~1.6 PB raw): aligned pyramid about +33% (2× xy downsampling); affinity maps ~1x raw; segmentation labels 0.1–0.5x; meshes 1–10 TB; skeletons 10–100 GB; synapse table ~50–200 GB; edit history grows without bound.
 Instructor script: "A petabyte in cold storage is cheap. A 200 GB table that must answer 50 concurrent interactive queries is the part that needs engineering. Budget for query load, not just capacity." Unit 04 picks this up.
 -->
 

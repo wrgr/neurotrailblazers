@@ -57,8 +57,8 @@
     },
     {
       "path": "assets/kits/module07/error_report.csv",
-      "sha256": "f315792c929fddf640ee20916c215cb1597f039e348fb0252b4c437613618b7f",
-      "bytes": 5526,
+      "sha256": "994273bad425df4a9bbf4653d55012b5321c5175facb950b384968e0cf24ede1",
+      "bytes": 5718,
       "source": "scripts/generate_kit_materials.rb"
     },
     {
@@ -171,8 +171,8 @@
     },
     {
       "path": "assets/kits/module10/README.md",
-      "sha256": "55808aa051304f94d35f928f55ac5159d7beb0012abdc955d70136e1feba74ba",
-      "bytes": 1733,
+      "sha256": "4452316b870067e8796961c293e3d2b8f6c5c5036bbd49947ea6cce089e2bd21",
+      "bytes": 1779,
       "source": "scripts/generate_kit_materials.rb"
     },
     {
@@ -357,8 +357,8 @@
     },
     {
       "path": "assets/kits/module19/mock-preprint.md",
-      "sha256": "916a0f0fa0124cf03435727fd81c7373ccaf42d26310e18833f4b8ae69f5054e",
-      "bytes": 2563,
+      "sha256": "3dff20e5e1dfe4752230f620644511921e6bafd7dff43467f2862f74a1450274",
+      "bytes": 2657,
       "source": "scripts/generate_kit_materials.rb"
     },
     {

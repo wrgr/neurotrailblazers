@@ -27,8 +27,8 @@ Welcome. This is the first of three connectomics modules. My goal for today is n
 that you leave able to run a pipeline — that is Modules 8 and 9. It is that you leave
 able to read a connectomics claim and say precisely what evidence would support it.
 
-Housekeeping before Part A: the module assignment and the journal club paper are both
-on the last two slides. Journal club presenter for Module 8 should choose by end of week.
+Housekeeping before Part A: the journal club choice and the module assignment are on
+slides 55 and 56. Journal club presenter for Module 8 should choose by end of week.
 -->
 
 ---
@@ -99,7 +99,7 @@ Objective 7.3 is the one this module is really about, and it is the one most oft
 <!--
 Note for the instructional record: these MLOs are single-verb, matching the design
 guidance in the CDM review. 7.3 was split out of the old 7.2 because "differentiate
-and evaluate" was double-barrelled.
+and evaluate" was double-barreled.
 -->
 
 ---
@@ -214,7 +214,7 @@ patient — which is a provenance fact with real interpretive consequences.
 
 <div class="box">
 
-If you take one word from this slide, take **merge**. Module 9 spends most of Part B on why merges bias results in a specific and predictable direction.
+If you take one word from this slide, take **merge**. Module 9 Part B shows how merges distort motif counts, and why you must test the direction rather than assume it.
 
 </div>
 
@@ -364,7 +364,7 @@ total = 250,000 x 250,000 x 25,000      = 1.56 x 10^15 voxels
 
 At 8-bit grayscale: **~1.56 petabytes of raw image data for one cubic millimeter** — before alignment, before segmentation, before meshes, before any derived product.
 
-Published petascale volumes land here. H01 (human temporal cortex) and MICrONS (mouse visual cortex) are both roughly 1 mm³ and both are reported in the 1.4–2 PB range, depending on what is counted and how it is compressed.
+Published petascale volumes land here. H01 (human temporal cortex) and MICrONS (mouse visual cortex) are both roughly 1 mm³: H01 is 1.8 PB raw (1.4 PB aligned), MICrONS about 2 PB raw.
 
 <!--
 Make them do this one. It is the fastest sanity check on any proposal they will ever
@@ -397,7 +397,8 @@ NIH BRAIN CONNECTS (first awards 2023) exists because that 500× is an engineeri
 <!--
 The raw-data column is arithmetic (volume ÷ 640 nm³ per voxel, 1 byte per voxel), not
 measured dataset sizes. Checks against real releases: FAFB was ~106 TB for a brain of
-~8 × 10⁷ µm³ (Zheng et al. 2018); H01 is 1.4 PB and MICrONS ~2 PB raw. Mouse brain
+~8 × 10⁷ µm³ (Zheng et al. 2018); H01 is 1.8 PB raw (1.4 PB aligned) and MICrONS
+~2 PB raw (MICrONS Consortium 2025). Mouse brain
 ~500 mm³ (C57BL/6J, Badea et al. 2007). The worm volume is a rough estimate, consistent
 with the ~10-million-fold worm-to-mouse brain volume in Abbott et al. 2020, Fig. 1.
 Whole mouse: ~800 PB at 4 × 4 × 40 nm, 8-bit, uncompressed; Abbott et al. 2020
@@ -604,12 +605,12 @@ Version 1 can be answered, can be **wrong**, and can be scoped in a grant.
 | "Cell X synapses onto cell Y" | Both partners proofread through the synapse; synapse manually verified | A merge error invents the connection |
 | "Cell X has *n* inputs" | Full dendritic arbor proofread and closed | Split errors truncate the arbor; *n* undercounts by an unknown amount |
 | "Type A prefers type B over type C" | Both target populations proofread to **comparable** completeness | Differential completeness masquerades as biological preference |
-| "Motif M is enriched" | A closed subgraph with quantified edge precision/recall | False edges from merges inflate dense motifs **superlinearly** |
+| "Motif M is enriched" | A closed subgraph with quantified edge precision/recall | Merges add, collapse or redirect edges; motif counts shift in a direction you must test |
 | "This projection is absent" | Stated detection sensitivity and searched volume | Absence of evidence reported as evidence of absence |
 
 <div class="box box--warn">
 
-Row 4 returns in Module 9. **Merge errors do not add noise symmetrically.** One merge fuses two neurons' partner lists, manufacturing triangles and reciprocal pairs far above the error rate itself. Motif analysis on unproofread segmentation is not conservative — it is biased *toward the interesting answer.*
+Row 4 returns in Module 9. **Merge errors do not add symmetric noise.** One merge combines two neurons' partner lists, and the net effect on a motif depends on the motif and the construction rules. Unproofread segmentation is not automatically conservative: *simulate the errors and recompute.*
 
 </div>
 
@@ -625,7 +626,7 @@ Row 4 returns in Module 9. **Merge errors do not add noise symmetrically.** One 
 
 **"The connectome tells you the circuit's function."** It constrains the space of possible dynamics. Function needs a second measurement.
 
-**"Segmentation errors just add noise."** Merges bias results *toward* dense motifs — the direction of the interesting answer.
+**"Segmentation errors just add noise."** Merges and splits shift motif counts in directions you have to test, not assume.
 
 <p class="ask">Break. When we come back: why "connectome" names three different measurements.</p>
 
@@ -684,7 +685,7 @@ Analysis scale = the axon bundle. → Light-sheet imaging of a bulk tracer at 1 
 
 <div class="box box--warn">
 
-Every step finer multiplies data volume, alignment difficulty, and proofreading hours. Choosing EM when light microscopy answers the question is not caution. It is a million-fold error in data volume.
+Every step finer multiplies data volume, alignment difficulty, and proofreading hours. Choosing EM when light microscopy answers the question costs a million-fold more data and buys nothing.
 
 </div>
 
@@ -774,7 +775,7 @@ It does not resolve synapses.
 
 **The transferable point, and the only one this course needs.**
 
-These are not weaker connectomics. They are **instruments for different questions**, with sampling that does not nest inside ours.
+These are **instruments for different questions**, with sampling that does not nest inside ours, rather than weaker connectomics.
 
 *"Which regions are connected in this living patient?"* → dMRI. *"Where in this block should I spend a year of EM?"* → XRM. *"Does cell A synapse onto cell B?"* → **only volume EM.**
 
@@ -892,7 +893,7 @@ Every time a claim crosses a scale, ask what **new** measurement licensed the cr
 |---|---|---|---|
 | **Volume** (labeled voxels) | GB | "Is this a merge error?" | Nothing — but unusable at scale for most analysis |
 | **Mesh** (surface) | 10–100 MB | Spine shape, surface area, apposition | Interior; voxel-level evidence |
-| **Skeleton** (centerline) | 0.1–5 MB | Path distance from soma; morphometry | Spine geometry, calibre, surface |
+| **Skeleton** (centerline) | 0.1–5 MB | Path distance from soma; morphometry | Spine geometry, caliber, surface |
 | **Graph** (nodes + edges) | KB | Connectivity, motifs, network statistics | **All geometry** |
 
 <div class="box box--warn">
@@ -1123,6 +1124,13 @@ That third item is the strongest form of connectomics result available today, an
 </div>
 </div>
 
+<!--
+Sources: FlyWire, Dorkenwald et al. 2024 (10.1038/s41586-024-07558-y): 139,255 neurons and
+54.5 million synapses. Hemibrain, Scheffer et al. 2020: about 25,000 neurons. The taste and
+behavior predictions tested experimentally are Shiu et al. 2024, Nature 634:210
+(10.1038/s41586-024-07763-9).
+-->
+
 ---
 
 ## Mouse and human at 1 mm³
@@ -1130,9 +1138,9 @@ That third item is the strongest form of connectomics result available today, an
 <div class="cols">
 <div>
 
-**MICrONS** — ~1 mm³ of mouse visual cortex: **~200,000 cells, ~500 million synapses**, with two-photon functional imaging of *the same tissue*.
+**MICrONS** — ~1 mm³ of mouse visual cortex: **>200,000 cells, ~524 million synapses**, with two-photon functional imaging of *the same tissue*.
 
-The important thing is not the size. It is the **co-registration.** Structure and function in the same neurons is what lets you ask whether wiring predicts tuning.
+What matters more than the size is the **co-registration.** Structure and function in the same neurons is what lets you ask whether wiring predicts tuning.
 
 The answer so far: *"partially, with cell-type-specific rules"* — exactly the kind of result only this data type can produce.
 
@@ -1152,6 +1160,14 @@ Demonstrated that human tissue can be prepared and reconstructed at this scale, 
 
 </div>
 
+<!--
+Sources: MICrONS Consortium 2025 (10.1038/s41586-025-08790-w): "more than 200,000 cells",
+524 million automatically detected synaptic clefts, calcium imaging of about 75,000
+neurons; about 84,000 individually segmented neurons in the larger subvolume. H01,
+Shapson-Coe et al. 2024: 57,180 cells (16,087 neurons), 149,871,669 detected synapses,
+axonal inputs of up to 50 synapses onto one target.
+-->
+
 ---
 
 ## Structure → function: three results that actually landed
@@ -1166,7 +1182,7 @@ Demonstrated that human tissue can be prepared and reconstructed at this scale, 
 
 <div class="box box--good">
 
-Read the pattern. In all three the connectome **removes free parameters** and turns a vague hypothesis into a falsifiable one. That — not simulation — is what a wiring diagram is for.
+Read the pattern. In all three the connectome **removes free parameters** and turns a vague hypothesis into a falsifiable one. That, more than simulation, is what a wiring diagram is for.
 
 </div>
 
@@ -1200,12 +1216,12 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 
 | Platform | Holds | Good for |
 |---|---|---|
-| **BossDB** | MICrONS, H01, Kasthuri, Witvliet, zebrafish, and more | Programmatic access to raw and segmented volumes across many datasets |
+| **BossDB** | MICrONS, Kasthuri, Witvliet, zebrafish, and more | Programmatic access to raw and segmented volumes across many datasets |
 | **neuPrint** | hemibrain, MANC, released fly connectomes | Graph queries over *frozen, released* connectomes — the friendliest starting point |
 | **FlyWire Codex / CAVE** | FlyWire whole adult brain | Whole-brain fly connectivity, annotations, community proofreading |
 | **microns-explorer / CAVE** | MICrONS | Structure **plus** co-registered function |
 | **webKnossos** | MPI datasets and hosted volumes | Browser-based annotation and proofreading |
-| **Neuroglancer** | Any precomputed volume | Viewing — the universal client |
+| **Neuroglancer** | Any precomputed volume, e.g. H01 (Google Cloud) | Viewing — the universal client |
 
 <div class="box">
 
@@ -1214,6 +1230,13 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 </div>
 
 <p class="src">Module 8 covers the storage formats and query APIs behind all of these, and Module 8's assignment is a reproducible query against one of them.</p>
+
+<!--
+BossDB holdings checked 26 September 2026 against the project list behind bossdb.org/projects
+(bossdb-metadata-snapshot.s3.amazonaws.com/mongo-data.json): MICrONS (minnie, pinky, basil,
+interneuron), kasthuri2015, witvliet2020 and hildebrand2017 are listed. H01 is not a BossDB
+project; its release is served from Google Cloud (h01-release.storage.googleapis.com).
+-->
 
 ---
 
@@ -1224,7 +1247,7 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 
 **The 500× problem.** Whole mouse brain is ~800 PB (est.). The bottlenecks are sectioning reliability, alignment robustness, segmentation accuracy, and **proofreading labor** — not microscope resolution. This is what BRAIN CONNECTS is for.
 
-**Proofreading is the dominant cost.** Not compute, not storage. It is a hiring, training, retention, and quality-management problem. Module 9 Part A is largely about making that labor go further.
+**Proofreading is the dominant cost**, ahead of compute and storage. It is a hiring, training, retention, and quality-management problem. Module 9 Part A is largely about making that labor go further.
 
 **Molecular identity.** EM gives geometry, not transcriptomic type. Bridging connectomics to transcriptomics — via CLEM, expansion, or barcoding — is open and active.
 
@@ -1258,7 +1281,7 @@ If you want a thesis question that is tractable and under-occupied, it is more l
 
 <div class="box box--warn">
 
-**Where the curve is likely to bend.** The next 500× is not a microscopy problem. It is sectioning reliability, alignment robustness, and human proofreading hours.
+**Where the curve is likely to bend.** The next 500× depends on sectioning reliability, alignment robustness, and human proofreading hours more than on microscopes.
 
 Watch the **throughput** and **automation** numbers in any new paper, not the volume headline. Volume is the consequence; those two are the cause.
 
@@ -1283,7 +1306,7 @@ Watch the **throughput** and **automation** numbers in any new paper, not the vo
 
 <div class="box box--warn">
 
-H01 is tissue from a patient with epilepsy. That is not a disclaimer; it is a **variable**. Any claim about "the human cortex" from that sample must reckon with the clinical context, the medication history, and the resection margin.
+H01 is tissue from a patient with epilepsy. Treat that as a **variable** in the analysis, not a disclaimer. Any claim about "the human cortex" from that sample must reckon with the clinical context, the medication history, and the resection margin.
 
 </div>
 
@@ -1444,13 +1467,13 @@ Modules 8 and 9 are about earning each of those three.
 <div class="cols">
 <div>
 
-**Licence: CC BY-SA 4.0**
+**License: CC BY-SA 4.0**
 Creative Commons Attribution-ShareAlike 4.0 International.
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them into your own material** — and distribute the result. No permission needed.
 
-**Two conditions.** *Attribution* — credit the original, link the licence, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same licence, so it stays as open as what it came from.
+**Two conditions.** *Attribution* — credit the original, link the license, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same license, so it stays as open as what it came from.
 
 </div>
 <div>
@@ -1468,4 +1491,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>

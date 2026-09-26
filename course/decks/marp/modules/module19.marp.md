@@ -54,11 +54,12 @@ Produce a technically rigorous manuscript review and an ethics-risk decision mem
 ## Concept Focus (continued)
 - **Data availability:** are the dataset version, CAVE materialization, code repository, and parameters sufficient for reproduction? Can a reader trace every claim to a specific data artifact?
 - **Plain language:** a good reviewer checks whether the methods can actually support the claims, whether the statistics are honest, and whether someone else could reproduce the work.
+- **Misconception guardrail:** an interesting result can make up for thin methods.
 
 ---
 
 ## Concept Focus (continued)
-- **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
+- **Why it fails:** a novel finding with inadequate methods documentation cannot be checked, and is worth less than an incremental finding reported transparently.
 
 ---
 
@@ -140,21 +141,17 @@ Materials needed
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness. A novel finding reported with inadequate methods documentation is worse than an incremental finding reported transparently.
-- **Misconception guardrail:** ethics in connectomics is not just about IRB approval. It extends to data sharing, attribution, responsible AI, and honest reporting throughout the research lifecycle.
-- **Misconception guardrail:** "interesting result" is not a substitute for methodological soundness.
-
----
-
-## Misconceptions to Watch (continued)
-- **Misconception guardrail:** being harsh is not the same as being rigorous. The most rigorous reviews are also the most specific and constructive.
-- **Misconception guardrail:** compliance checklists alone do not ensure good practice. Integrity requires ongoing attention to workflow transparency.
-- **Misconception guardrail:** contribution volume alone does not define authorship role. A person who proofread 10,000 segments may deserve authorship; a person who ran one analysis script may not. The criteria must be explicit and agreed upon in advance.
+- **Misconception guardrail:** an interesting result can make up for thin methods.
+- **Misconception guardrail:** ethics in connectomics is covered once the IRB or animal-care approval is in hand.
+- **Misconception guardrail:** a review is mainly a judgment of how well the story is told.
+- **Misconception guardrail:** the harshest review is the most rigorous one.
+- **Misconception guardrail:** a completed compliance checklist guarantees integrity.
+- **Misconception guardrail:** contribution volume alone decides authorship.
 
 ---
 
 ## Studio Activity
-**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses MICrONS minnie65 data (CAVE materialization v661) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit](/assets/kits/module19/README.md). The discussion section states that "this motif likely plays a causal role in seizure propagation."
+**Scenario:** Your team is acting as reviewers for a connectomics preprint claiming a novel circuit motif --- a specific three-neuron feed-forward inhibitory loop --- with translational implications for understanding epilepsy. The preprint uses a fictional mouse visual cortex volume (release T19) and reports 3.5x enrichment of this motif relative to a degree-preserving random graph null model (p < 0.001 after Bonferroni correction across 13 three-node motif classes). The methods section does not report the synapse confidence threshold, does not mention boundary neuron handling, and lists a data consortium as a co-author without individual contribution details. The full mock preprint is in the [Module 19 kit](/assets/kits/module19/README.md). The discussion section states that "this motif likely plays a causal role in seizure propagation."
 
 ---
 

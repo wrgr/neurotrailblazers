@@ -94,7 +94,7 @@ Presentation norms are also the clearest case of the hidden curriculum: strict, 
 - **Misconception guardrail:** answering confidently is what makes an answer credible.
 
 ### 4) Connectomics-specific presentation challenges
-Presenting connectomics research poses unique difficulties that require deliberate design choices. Explaining electron microscopy to non-expert audiences demands analogies and visual scaffolding: show the scale progression from brain region to neuropil to individual synapses. Visualizing inherently 3D data on 2D slides requires showing both the raw EM cross-section and the 3D reconstruction of the same structure side by side so viewers can connect what is imaged to what is reconstructed. Every microscopy image should include scale bars and arrows pointing to key features, since EM images are visually unfamiliar to most audiences.
+Connectomics talks have their own design problems. Explaining electron microscopy to non-expert audiences demands analogies and visual scaffolding: show the scale progression from brain region to neuropil to individual synapses. Visualizing inherently 3D data on 2D slides requires showing both the raw EM cross-section and the 3D reconstruction of the same structure side by side so viewers can connect what is imaged to what is reconstructed. Every microscopy image should include scale bars and arrows pointing to key features, since EM images are visually unfamiliar to most audiences.
 
 Apply the "so what?" test to every slide: if a viewer cannot articulate why a particular image, graph, or diagram matters to the argument after 15 seconds, the slide needs revision. Pair morphological images with quantitative summaries rather than relying on visual impression alone. When showing network diagrams, indicate what nodes and edges represent, how many are shown versus exist in the full dataset, and what thresholds or filters produced the visualization.
 
@@ -125,7 +125,7 @@ Give these to trainees in writing before the first practice talk.
 - How to support trainees:
   - Provide model Q&A transcripts, strong and weak, for the same question. The contrast teaches faster than the rule.
   - Share the rubric before the practice talk. Revealed afterwards it is assessment; revealed beforehand it is instruction.
-  - Rehearse the hardest question in private, as the MERIT stage-4 guidance in [Education Models]({{ '/models/' | relative_url }}) describes.
+  - Rehearse the hardest question in private, as the MERIT stage-4 guidance in [Program Models]({{ '/models/' | relative_url }}) describes.
 
 ## Core workflow: technical talk preparation
 1. Build the claim tree on paper: question at the root, two or three claims, one evidence item and one caveat under each, deleting any claim you cannot attach evidence to.
@@ -172,7 +172,7 @@ Maya has a reciprocity result from a cortical dataset and a 10-minute slot. Her 
 
 **Move 1, replace the field claim with a question.** It is about the field, not her work, it is unfalsifiable, and every other speaker will use it. In its place: "Do excitatory and inhibitory neurons in layer 2/3 connect back to each other more often than chance?"
 
-**Move 2, add the stake.** A question without a stake makes the audience wonder why they should care. "Reciprocal excitatory-inhibitory pairs are the substrate most circuit models assume, and almost nobody has counted them at synapse resolution."
+**Move 2, add the stake.** A question without a stake makes the audience wonder why they should care. "Many circuit models assume reciprocal excitatory-inhibitory pairs, and an EM volume lets us count them synapse by synapse."
 
 **Move 3, state the news.** "My work on network motifs" names a topic, not a finding, and the audience calibrates how hard to listen on whether there is news to hear. "We counted them, and we find about twice as many as a degree-preserving null model predicts."
 
@@ -192,7 +192,7 @@ That answer classifies the question as a methods challenge, concedes the mechani
 
 ## Studio activity: mini-talk and critique loop
 {: #studio-activity}
-**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise: in a cortical EM volume, layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
+**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise, use this synthetic result (invented numbers from a fictional cortical EM volume, not a real finding): layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
 
 **Tasks**
 1. Create a 4-slide mini-talk with a provenance line on the method slide and a named uncertainty rung on the result slide.
@@ -219,7 +219,7 @@ That answer classifies the question as a methods challenge, concedes the mechani
 
 ## What this module does not cover
 - **Writing the paper.** Manuscript structure, written methods provenance, and reviewer responses are [Module 17]({{ '/modules/module17/' | relative_url }}).
-- **Figure design itself.** Colormaps, axis conventions, and accessible visual encodings are [Module 18]({{ '/modules/module18/' | relative_url }}); here your figures already exist and the only question is what claim each carries.
+- **Figure design itself.** Colormaps, axis conventions, and accessible visual encodings are [Module 16]({{ '/modules/module16/' | relative_url }}); here your figures already exist and the only question is what claim each carries.
 - **Posters, abstracts, and conference navigation.** Those are [Module 23]({{ '/modules/module23/' | relative_url }}).
 - **The statistics behind the claims.** Null-model choice, multiplicity, and the exploratory-confirmatory split are [Module 20]({{ '/modules/module20/' | relative_url }}). This module assumes the analysis is already defensible.
 - **Authorship and who gets to give the talk.** See [Module 19]({{ '/modules/module19/' | relative_url }}). Terms used here without definition are in the [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }}).
@@ -234,6 +234,7 @@ That answer classifies the question as a methods challenge, concedes the mechani
 - Vocabulary support: [Connectomics Dictionary]({{ '/technical-training/dictionary/' | relative_url }})
 - Coaching support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
 - Differentiation guidance: [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
+- Workshops that continue this module: [Communicating Science I]({{ '/teaching/pathways/communicating-science-1/' | relative_url }}) and [Communicating Science II]({{ '/teaching/pathways/communicating-science-2/' | relative_url }})
 
 ## Quick practice prompt
 Write your 60-second talk opener with the core question, one evidence-backed finding, one explicit caveat, and one sentence pre-empting the challenge you most expect. Read it aloud against a timer; if it runs past 60 seconds, cut the background sentence first.

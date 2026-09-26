@@ -67,12 +67,12 @@ Publish a reproducibility-ready connectomics package (data + methods + metadata 
 <!--
 Pre-class preparation (15 min async)
   Bring one analysis you have run, in whatever state it is in. It does not need to be tidy; untidy is more useful here.
-  Read Technical Unit 04, section 2, on materialization versions and root-ID instability.
+  Read section 2 of [Technical Unit 04](/technical-training/04-volume-reconstruction-infrastructure/), on materialization versions and root-ID instability.
   Minute-by-minute plan
 
 00:00-06:00 | Framing: the silent bug
   Prompt: "Your notebook ran fine last month and gives a different number today. Nothing in your code changed. What happened?"
-  Establish that analysis against an unpinned segmentation is the most common silent correctness failure in this field.
+  Establish that analysis against an unpinned segmentation fails silently: no error, a plausible number, a different question.
 
 06:00-16:00 | The five-element checklist, modeled
   Instructor walks one real analysis through: dataset release ID, materialization number, code commit hash, environment specification, parameter configuration.
@@ -110,7 +110,7 @@ Pre-class preparation (15 min async)
 ---
 
 ## Studio Activity
-**Scenario:** Your lab plans to release a connectomics analysis package to collaborators.
+**Scenario:** Your lab plans to release a connectomics analysis package to collaborators at another institution, who will rerun it without being able to ask you questions. The package is the analysis you brought to this session; if you have none, use your Module 03 notebook.
 
 ---
 

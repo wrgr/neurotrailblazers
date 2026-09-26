@@ -67,7 +67,7 @@ A connectome graph is an abstraction. The path from EM images to a graph involve
 
 <!--
 Pre-class preparation (10 min async)
-  Read the graph representations content library entry
+  Read [Graph representations](/content-library/connectomics/graph-representations/)
   Install NetworkX: `pip install networkx`
   Minute-by-minute plan
 
@@ -83,7 +83,7 @@ Pre-class preparation (10 min async)
 20:00-34:00 | Metric computation
   Hands-on: learners compute degree distribution, clustering coefficient, and average path length.
   Plot degree distribution (log-log). Is it heavy-tailed?
-  Compute clustering and compare to a random graph (NetworkX: `nx.watts_strogatz_graph` for comparison).
+  Compute clustering and compare it to degree-preserving rewirings of the same graph (NetworkX: `nx.directed_edge_swap` on a copy). A Watts-Strogatz graph is a small-world reference, not a null for this graph.
 
 34:00-46:00 | Interpretation and null concerns
   "Your clustering coefficient is 3× higher than the random graph. What does that mean biologically?"
@@ -109,7 +109,7 @@ Pre-class preparation (10 min async)
 ---
 
 ## Studio Activity
-**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic stand-in for a MICrONS column, in the [Module 10 kit](/assets/kits/module10/README.md). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
+**Scenario:** You have the connectivity graph of 500 neurons in a cortical column: a synthetic graph invented for teaching, not sampled from any real dataset, in the [Module 10 kit](/assets/kits/module10/README.md). Your PI asks: "Is this circuit small-world? Are there hub neurons? Are there communities?"
 
 ---
 

@@ -77,7 +77,7 @@ content_type: path
 Produce a scalable, reproducible query-and-analysis plan for a large connectomics dataset, including storage assumptions, indexing strategy, and provenance capture. Concretely: size a dataset from its imaging parameters before anyone quotes you a price, choose a chunk and shard layout from your actual access pattern rather than from the format everyone else uses, predict which query will dominate your bill, and pin every published number to a segmentation version a stranger can re-query a year from now.
 
 ## Why this module matters
-Connectomics is now data-system-limited as much as algorithm-limited. One cubic millimeter of cortex imaged at 4 x 4 x 40 nm is (1,000,000/4) x (1,000,000/4) x (1,000,000/40) = 250,000 x 250,000 x 25,000 voxels, or about 1.56 x 10^15 voxels — roughly 1.5 PB of 8-bit image data before a single derived product exists. MICrONS and H01 are each approximately 1 mm³ and are reported in the 1.4-2 PB range. At that scale the decisions that determine whether a project finishes are made in the first week: chunk size, sharding, where the bytes physically live, and whether analysis tables are pinned to a version. None of those decisions appear in a figure, and all of them are expensive to reverse.
+Connectomics is now data-system-limited as much as algorithm-limited. One cubic millimeter of cortex imaged at 4 x 4 x 40 nm is (1,000,000/4) x (1,000,000/4) x (1,000,000/40) = 250,000 x 250,000 x 25,000 voxels, or about 1.56 x 10^15 voxels — roughly 1.5 PB of 8-bit image data before a single derived product exists. MICrONS and H01 are each approximately 1 mm³. MICrONS produced about 2 PB of raw imagery; H01 is 1.8 PB raw and 1.4 PB after alignment. At that scale the decisions that determine whether a project finishes are made in the first week: chunk size, sharding, where the bytes physically live, and whether analysis tables are pinned to a version. None of those decisions appear in a figure, and all of them are expensive to reverse.
 
 The failure mode is rarely a crash. It is a query that takes eleven hours instead of four minutes, so you test two hypotheses a week instead of forty a day. It is an invoice dominated by per-request charges rather than by stored bytes. Most often it is a number in a figure that cannot be reproduced, because the segmentation it was computed against no longer exists under that name.
 
@@ -101,15 +101,15 @@ The failure mode is rarely a crash. It is a query that takes eleven hours instea
 | Product | Footprint | Persistence |
 |---|---|---|
 | Raw image tiles | 1x (~1.5 PB) | Irreplaceable; keep forever |
-| Aligned, chunked pyramid | +30-50% over raw | Regenerable, but expensively |
+| Aligned, chunked pyramid | About +33% over raw (2× xy downsampling) | Regenerable, but expensively |
 | Affinity/boundary maps | ~1x raw | Usually transient; delete after agglomeration |
 | Segmentation labels | 0.1-0.5x raw | Regenerable from supervoxels plus edit log |
 | Meshes (multi-LOD) | 1-10 TB | Regenerated as segmentation changes |
 | Skeletons | 10-100 GB | Cheap; regenerate freely |
 | Synapse table (~5 x 10^8 rows) | 50-200 GB | The analyst's primary object |
 
-### 4) Root IDs are not stable, and unpinned analysis is the field's most common silent bug
-- **Technical:** supervoxels are immutable; a neuron is a connected component of an editable graph over them. Every edit produces a new root ID, so an ID recorded without a materialization version or timestamp is meaningless. Synapse partners are stored as supervoxel IDs so assignments survive proofreading, and a materialization precomputes the supervoxel-to-root lookup at a stated version. Analysis against an unpinned segmentation is the most common silent correctness bug in the field: the code runs, returns plausible numbers, and answers a different question than it did last month.
+### 4) Root IDs are not stable, so unpinned analysis fails silently
+- **Technical:** supervoxels are immutable; a neuron is a connected component of an editable graph over them. Every edit produces a new root ID, so an ID recorded without a materialization version or timestamp is meaningless. Synapse partners are stored as supervoxel IDs so assignments survive proofreading, and a materialization precomputes the supervoxel-to-root lookup at a stated version. Analysis against an unpinned segmentation fails silently: the code runs, returns plausible numbers, and answers a different question than it did last month.
 - **Plain language:** neuron IDs expire; write down which version yours came from.
 - **Misconception guardrail:** an object ID refers to the same neuron next month.
 
@@ -127,7 +127,7 @@ The failure mode is rarely a crash. It is a query that takes eleven hours instea
 
 A collaborator asks whether your group can host and analyze a new 1 mm³ mouse cortex volume imaged at 4 x 4 x 40 nm. They want an answer this week. Here is the reasoning, in the order it should happen.
 
-**Step 1 — Convert imaging parameters to voxels.** 1 mm = 10^6 nm on each axis. Dividing by the voxel dimensions gives 250,000 x 250,000 x 25,000 = 1.5625 x 10^15 voxels. At 8 bits per voxel that is 1.5625 x 10^15 bytes, about 1.5 PB, or roughly 1.4 PiB. This matches the 1.4-2 PB range reported for MICrONS and H01, which is the check that tells you the arithmetic is right.
+**Step 1 — Convert imaging parameters to voxels.** 1 mm = 10^6 nm on each axis. Dividing by the voxel dimensions gives 250,000 x 250,000 x 25,000 = 1.5625 x 10^15 voxels. At 8 bits per voxel that is 1.5625 x 10^15 bytes, about 1.5 PB, or roughly 1.4 PiB. This matches the raw sizes reported for MICrONS (about 2 PB) and H01 (1.8 PB), which is the check that tells you the arithmetic is right.
 
 **Step 2 — Add the derived products.** From the table above: the pyramid adds 0.5-0.75 PB; segmentation labels land at 0.15-0.75 PB; affinity maps are about 1x raw but transient, so they set your *peak* capacity rather than your steady state. Meshes, skeletons, and the synapse table together stay under 20 TB — negligible in bytes, and the only products most analysts will ever open. Steady state roughly 2.5-3 PB, peak nearer 4 PB. Quote both numbers, because a plan sized to the steady state fails during reconstruction.
 
@@ -235,12 +235,14 @@ To ground the abstract concepts, here are the data scales learners will encounte
 
 | Dataset | Raw volume | Neurons | Synapses | Storage |
 |---------|-----------|---------|----------|---------|
-| MICrONS (minnie65) | 1 mm³ mouse V1 | ~80,000 | ~500M | ~2 PB |
-| H01 | ~1 mm³ human temporal cortex | ~57,000 cells | ~150M | ~1.4 PB |
-| FlyWire | Whole adult Drosophila brain | ~139,255 | ~54.5M | ~100 TB |
-| MouseConnects (planned) | ~10 mm³ mouse hippocampus | Not yet reconstructed | Not yet reconstructed | >10 PB |
+| MICrONS cubic millimeter | ~1 mm³ mouse visual cortex (1.3 x 0.87 x 0.82 mm in vivo) | >200,000 cells (84,035 individually segmented neurons in the larger subvolume) | ~524M | ~2 PB raw imagery |
+| H01 | ~1 mm³ human temporal cortex | ~57,000 cells (16,087 neurons) | ~150M | 1.8 PB raw; 1.4 PB aligned |
+| FlyWire (FAFB) | Whole adult Drosophila brain | 139,255 | ~54.5M | ~106 TB raw images |
+| MouseConnects (planned) | ~10 mm³ mouse hippocampus | Not yet reconstructed | Not yet reconstructed | Not yet published (about 10x the MICrONS volume) |
 
-**Teaching point:** "When your synapse table has 500 million rows, a poorly written query doesn't just run slowly — it may not finish at all. Architecture decisions determine whether your science is feasible."
+Sources: MICrONS Consortium (2025) for MICrONS (the [MICrONS Explorer](https://www.microns-explorer.org/cortical-mm3) page gives slightly different dimensions and an estimated 120,000 neurons); Shapson-Coe et al. (2024) for H01; Dorkenwald et al. (2024) for FlyWire neurons and synapses; Zheng et al. (2018) for the FAFB image volume.
+
+**Teaching point:** "At 500 million rows, a poorly written query may never finish. The architecture decides which questions you can afford to ask."
 
 ## Key tools and formats
 
@@ -285,7 +287,7 @@ To ground the abstract concepts, here are the data scales learners will encounte
 - [Module 12 kit]({{ '/assets/kits/module12/README.md' | relative_url }}) — `profile_join.py`, the query to profile on synthetic tables
 
 ## References
-- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
 - Shapson-Coe A et al. (2024) "A petavoxel fragment of human cerebral cortex." *Science* 384(6696):eadk4858.
 - Turner NL et al. (2022) "Reconstruction of neocortex." *Cell* 185(6):1082-1100.

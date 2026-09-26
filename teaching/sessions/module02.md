@@ -49,19 +49,12 @@ Learners should arrive having covered:
 
 | Time | Segment | Your note |
 |---|---|---|
-| | You disagree with a senior lab member's interpretation at lab meeting. What do you do? | |
-| | You find a bug in shared analysis code. How do you report it? | |
-| | You need help but your mentor is busy. Who else can you ask? | |
-| | You are asked to proofread neurons outside your assigned region. Should you? | |
-| | A collaborator uses your annotation work in a paper without crediting you. How do you respond? | |
-| | Data provenance: every analysis should reference a specific dataset version. Show how CAVE materialization versions work. | |
-| | Attribution: the 287 FlyWire proofreaders were co-authors. Discuss what fair attribution looks like at scale. | |
-| | Human tissue: discuss IRB requirements, de-identification, and the responsibility that comes with working on data derived from surgical patients. | |
-| | Top 5 norms for their research setting. | |
-| | Role-expectation map for their team. | |
-| | Three communication scripts customized for their context. | |
-| | Mentor/support map: at least 3 people they can go to for different types of help. | |
-| | Ethical commitments: how they will handle attribution, data provenance, and error reporting. | |
+| 00:00-15:00 | Block 1: Hidden curriculum reveal | |
+| 15:00-30:00 | Block 2: Role and expectation mapping | |
+| 30:00-45:00 | Block 3: Ethics in connectomics | |
+| 45:00-65:00 | Block 4: Communication script workshop | |
+| 65:00-85:00 | Block 5: Personal navigation plan | |
+| 85:00-90:00 | Block 6: Exit ticket | |
 
 ## The activity
 

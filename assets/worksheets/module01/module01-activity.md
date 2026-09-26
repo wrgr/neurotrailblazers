@@ -113,9 +113,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| C. elegans (White et al., 1986) | the first complete connectome. 302 neurons. What it enabled, what it could not explain. |
-| FlyWire whole-brain (Dorkenwald et al., 2024) | 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior. |
-| | MouseConnects HI-MC (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data. |
+| 00:00-12:00 | Block 1: Opening hook |
+| 12:00-28:00 | Block 2: Three projects, three driving questions |
+| 28:00-48:00 | Block 3: Question framing workshop |
+| 48:00-65:00 | Block 4: Evidence-boundary critique |
+| 65:00-80:00 | Block 5: Motivation statement drafting |
+| 80:00-90:00 | Block 6: Exit ticket |
 
 ---
 

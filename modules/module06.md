@@ -68,16 +68,16 @@ Detect and categorize core segmentation errors and execute one correction cycle 
 ## Concept set
 
 ### 1) What segmentation does and why it matters
-Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and it's the foundation of the entire connectome. Without accurate segmentation, you cannot identify individual neurons, trace their morphology, or determine their synaptic connections. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) achieve "superhuman" accuracy on benchmarks but still make errors at rates that compound across large volumes.
+Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and every later product depends on it: without it you cannot identify individual neurons, trace their morphology, or assign their synapses. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) have matched or beaten human annotators on benchmarks such as SNEMI3D, but they still make errors, and across a large volume those errors add up.
 
 ### 2) Error taxonomy: merge, split, boundary, identity
 - **Merge errors**: Two distinct neurons incorrectly joined. Causes: touching membranes with low contrast, blood vessel boundaries, glial wrapping. Impact: false connections in the connectivity graph, inflated cell size. Visual signature: impossible branching in 3D, sudden caliber changes.
 - **Split errors**: One neuron broken into fragments. Causes: thin processes (<100 nm), low contrast, missing sections, alignment errors. Impact: missing connections, underestimated arbor, fragmented cells counted as multiple neurons. Visual signature: dead-end processes that should continue.
-- **Boundary errors**: Membrane position shifted. Impact: synapse misattribution, morphology distortion. Less dramatic but insidious.
-- **Identity errors**: Correct boundary but wrong label propagated. Rare but catastrophic.
+- **Boundary errors**: Membrane position shifted. Impact: synapse misattribution, morphology distortion. Less visible than merges and splits, so they are easy to miss.
+- **Identity errors**: Correct boundary but wrong label propagated. Less common, and hard to catch because every boundary looks right.
 
 ### 3) Correction priority: not all errors are equal
-The key insight for beginners: fix errors that change your biological conclusions, not errors that look ugly. A merge error connecting two neurons in your circuit of interest is far more important than a split error in a distant fragment you'll never analyze. Impact-weighted triage is essential.
+Fix the errors that would change your biological conclusions, not the ones that look worst. A merge joining two neurons in your circuit of interest matters more than a split in a distant fragment you will never analyze. Rank the queue by impact on your analysis.
 
 ### Misconception guardrails
 
@@ -94,7 +94,7 @@ The numbers below are illustrative — they show the shape of the reasoning, not
 
 You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis of layer 2/3 pyramidal cells. Two flagged candidates sit at the top of your queue, and you have about one hour of annotator time: object 8841, flagged for implausible morphology, and object 5510, a dead-end axon fragment flagged as a probable split. The split looks easier and more satisfying to fix. Here is why the expert fixes the other one first.
 
-**Step 1 — Diagnose before editing.** Load 8841's 3D mesh. It has two somata roughly 180 µm apart joined by a single thin process. Two somata in one object is a merge until proven otherwise, so trace the connecting process in 2D: caliber holds near 0.8 µm on both sides, then drops abruptly to about 0.2 µm across three sections that also contain a fold artifact. Abrupt caliber change plus a low-evidence artifact region is the classic merge site — the model had almost nothing to work with there and guessed wrong.
+**Step 1 — Diagnose before editing.** Load 8841's 3D mesh. It has two somata roughly 40 µm apart joined by a single thin process. Two somata in one object is a merge until proven otherwise, so trace the connecting process in 2D: caliber holds near 0.8 µm on both sides, then drops abruptly to about 0.2 µm across three sections that also contain a fold artifact. Abrupt caliber change plus a low-evidence artifact region is the classic merge site — the model had almost nothing to work with there and guessed wrong.
 
 **Step 2 — Estimate graph impact before fixing anything.** Object 8841 carries 212 synapses and 47 synaptic partners. If it is really two neurons, every one of those synapses is currently attributed to a hybrid cell that does not exist, and both halves sit inside your analysis set. Object 5510 is a 40 µm axon fragment with 9 output synapses that dead-ends at a missing section; its parent cell is outside the analysis set. The merge outranks the split on every axis that matters: it corrupts identities you will analyze, while the split truncates a cell you will not.
 
@@ -116,7 +116,7 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 ## 60-minute tutorial run-of-show (full instructor version)
 
 ### Pre-class preparation (10 min async)
-- Read the error taxonomy content library entry
+- Read the [Error taxonomy]({{ '/content-library/proofreading/error-taxonomy/' | relative_url }}) page
 - Open a public segmented volume in Neuroglancer ([MICrONS Explorer](https://www.microns-explorer.org/)) and browse the segmentation for 5 minutes
 
 ### Minute-by-minute plan
@@ -209,7 +209,7 @@ You are proofreading a 50x50x50 µm subvolume ahead of a connectivity analysis o
 
 ## References
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
-- Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
+- Lee K et al. (2017) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 - Funke J et al. (2019) "Large scale image segmentation with structured loss." *IEEE TPAMI* 41(7):1669-1680.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
 

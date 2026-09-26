@@ -3,7 +3,9 @@
 > **Fictional teaching document.** This preprint does not exist. Its title,
 > authors, numbers, figures and claims were written for a peer-review exercise.
 > No analysis of any dataset was performed to produce it, and nothing in it is a
-> finding. It is written to contain four specific problems for reviewers to find.
+> finding. The volume and its release T19 are fictional too; no real dataset,
+> release or consortium is being described. It is written to contain four
+> specific problems for reviewers to find.
 
 ## A feed-forward inhibitory motif is enriched in mouse visual cortex and may drive seizure propagation
 
@@ -11,9 +13,9 @@
 
 ### Abstract
 
-Feed-forward inhibition shapes the timing of cortical responses. Using a public
-electron microscopy connectome of mouse visual cortex (MICrONS minnie65, CAVE
-materialization v661), we counted all three-node motifs among 2,114 neurons with
+Feed-forward inhibition shapes the timing of cortical responses. Using an
+electron microscopy connectome of a fictional mouse visual cortex volume
+(release T19), we counted all three-node motifs among 2,114 neurons with
 somata in the volume. A feed-forward inhibitory loop, in which a pyramidal cell
 drives both an interneuron and a second pyramidal cell that the interneuron also
 inhibits, was enriched 3.5-fold relative to a degree-preserving random graph

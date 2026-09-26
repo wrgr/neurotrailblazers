@@ -46,13 +46,13 @@ The mammalian neocortex is organized into six layers (L1-L6), each with a charac
 ---
 
 ## Concept Focus (continued)
-- **Layer 2/3**: Dense small-to-medium pyramidal neuron soma, heavily interconnected by local axon collaterals. The most densely packed neuronal layer.
-- **Layer 4**: In sensory cortex, dominated by spiny stellate cells (not pyramidal) and thalamocortical axon terminals. Bouton density is high; dendritic spines are abundant.
-- **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
+- **Layer 2/3**: Densely packed small-to-medium pyramidal somata, interconnected by local axon collaterals.
+- **Layer 4**: In primary sensory cortex, the main target of thalamocortical axons. In rodent barrel cortex many L4 excitatory cells are spiny stellate cells; in mouse visual cortex (the MICrONS volume) most are small pyramidal or star-pyramidal cells. Bouton density is high; dendritic spines are abundant.
 
 ---
 
 ## Concept Focus (continued)
+- **Layer 5**: Large pyramidal cells (especially thick-tufted pyramidal neurons with soma up to 25 μm). If you see the largest soma profiles in the column, you are likely in L5.
 - **Layer 6**: Heterogeneous; corticothalamic pyramidal cells with distinctive morphology (apical dendrites reaching only to L4, not L1). Transition to white matter below.
 
 ---

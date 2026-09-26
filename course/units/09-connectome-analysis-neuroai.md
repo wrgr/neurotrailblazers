@@ -95,7 +95,7 @@ See: `course/units/figures/09-connectome-analysis-neuroai-selected-v1.md`
 ## Cross-links
 - Related modules: `module10`, `module13`, `module14`, `module15`, `module20`
 - Related tools: `/tools/ask-an-expert/`, `/tools/connectome-quality/`
-- Related frameworks: `/models/`, `/education/models/`
+- Related frameworks: `/models/`
 
 ## Open issues
 - Confirm citation/attribution text for selected figures before web integration.

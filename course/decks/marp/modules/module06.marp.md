@@ -40,7 +40,7 @@ Detect and categorize core segmentation errors and execute one correction cycle 
 
 ## Concept Focus
 ### 1) What segmentation does and why it matters
-Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and it's the foundation of the entire connectome. Without accurate segmentation, you cannot identify individual neurons, trace their morphology, or determine their synaptic connections. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) achieve "superhuman" accuracy on benchmarks but still make errors at rates that compound across large volumes.
+Segmentation is the computational process of assigning every voxel in an EM volume to a specific object — not just "this is a neuron" but "this is neuron #47,293." This is instance segmentation, and every later product depends on it: without it you cannot identify individual neurons, trace their morphology, or assign their synapses. Modern methods (flood-filling networks, U-Net + watershed + agglomeration) have matched or beaten human annotators on benchmarks such as SNEMI3D, but they still make errors, and across a large volume those errors add up.
 
 ---
 
@@ -62,7 +62,7 @@ Segmentation is the computational process of assigning every voxel in an EM volu
 
 <!--
 Pre-class preparation (10 min async)
-  Read the error taxonomy content library entry
+  Read the [Error taxonomy](/content-library/proofreading/error-taxonomy/) page
   Open a public segmented volume in Neuroglancer ([MICrONS Explorer](https://www.microns-explorer.org/)) and browse the segmentation for 5 minutes
   Minute-by-minute plan
 

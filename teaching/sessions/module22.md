@@ -59,7 +59,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise: in a cortical EM volume, layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
+**Scenario:** You are presenting one connectomics result to mixed audience members (domain experts + trainees). Use your own result if you have one. Otherwise, use this synthetic result (invented numbers from a fictional cortical EM volume, not a real finding): layer 4 excitatory neurons form 3.2x more synapses onto PV+ interneurons than a degree-preserving null model predicts, from 847 connections at a specific materialization version, with roughly a third of the relevant arbors proofread. Two people in the room work on segmentation; one is a physiologist who has never opened an EM volume.
 
 1. Create a 4-slide mini-talk with a provenance line on the method slide and a named uncertainty rung on the result slide.
 2. Deliver it in 3 minutes against a timer you can see.

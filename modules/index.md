@@ -12,13 +12,13 @@ content_type: navigation
   <div class="hero hero-spaced hero-rounded">
     <div class="hero-content">
       <h1 class="hero-title-impact">Module Library</h1>
-      <p class="hero-subtitle">All 25 modules in a browsable library, each designed for tutorial delivery and capability building.</p>
+      <p class="hero-subtitle">All 25 modules. Each one is a taught session with a capability target, a studio activity, a rubric, a deck and a worksheet.</p>
     </div>
   </div>
 
 <section class="section">
   <p><strong>Recommended start:</strong> use the <a href="{{ '/tracks/' | relative_url }}">Learning Tracks</a> or <a href="{{ '/concepts/' | relative_url }}">Concept Explorer</a> for guided discovery, then open modules for full tutorial depth.</p>
-  <p><strong>Teaching-ready materials:</strong> see the <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a> for lesson kits, rendered decks, and worksheets.</p>
+  <p><strong>Teaching materials:</strong> every module has a <a href="{{ '/teaching/sessions/' | relative_url }}">session kit</a> with timing, the rendered deck and the learner worksheet. Activities that need data link a synthetic data kit from the module page. Modules 01, 07 and 18 have <a href="{{ '/teaching/answers/' | relative_url }}">model responses</a>. The <a href="{{ '/teaching/' | relative_url }}">Teaching Hub</a> links the rest, including 10- and 16-week <a href="{{ '/teaching/syllabi/' | relative_url }}">syllabus maps</a>.</p>
 </section>
 
 <section class="section">
@@ -68,10 +68,10 @@ content_type: navigation
   </div>
 </section>
 
-
-This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exceptional Researchers to Innovate and Thrive), CCR dimensions, and professional-development pathways. Each module is tagged by pipeline stage and CCR dimensions (Knowledge, Skills, Character, Meta-Learning, Motivation).
-
-## MERIT x CCR Curriculum Matrix
+<section class="section">
+  <h2>Where each module sits in MERIT and the CCR dimensions</h2>
+  <p>Each of the 25 modules is tagged with a pipeline stage (Foundations, Question, Experiment, Analysis, Dissemination) and with the CCR dimensions it builds most: Knowledge, Skills, Character, Meta-Learning and Motivation. A module can appear under several dimensions. The stages and the mentoring model behind them are on <a href="{{ '/models/' | relative_url }}">Program Models</a>.</p>
+</section>
 
 <div class="merit-matrix">
   <div class="merit-card">
@@ -230,8 +230,8 @@ This curriculum includes 25 structured modules aligned with MERIT (Mentoring Exc
     </div>
     <p><strong>Character</strong></p>
     <div class="module-subcards">
-      <a href="{{ '/modules/module21/' | relative_url }}" class="module-subcard">21. Reproducibility and FAIR Principles</a>
       <a href="{{ '/modules/module17/' | relative_url }}" class="module-subcard">17. Scientific Writing for Connectomics</a>
+      <a href="{{ '/modules/module21/' | relative_url }}" class="module-subcard">21. Reproducibility and FAIR Principles</a>
       <a href="{{ '/modules/module23/' | relative_url }}" class="module-subcard">23. Posters, Abstracts, and Conferences</a>
       <a href="{{ '/modules/module24/' | relative_url }}" class="module-subcard">24. Career Pathways & Graduate School Prep</a>
     </div>

@@ -33,7 +33,7 @@
 <p><strong>What Module 8 adds:</strong></p>
 <p>Every one of those facts is a <em>consequence of a design decision</em> someone made in the pipeline. This module is those decisions.</p>
 <div class="box box--good">
-<p><strong>The organizing question all module:</strong> <em>if this number is wrong, which stage produced the error, and how would I know?</em></p>
+<p><strong>The organizing question for the module:</strong> <em>if this number is wrong, which stage produced the error, and how would I know?</em></p>
 </div>
 </div>
 </div>
@@ -57,7 +57,7 @@
 <p><strong>Part B — Storage and infrastructure</strong> The eight-stage reference pipeline, chunked multi-resolution arrays, and the capacity and cost model for a petascale volume.</p>
 </div>
 <div>
-<p><strong>Part C — Reproducible pipelines</strong> Why object IDs are not stable, what a materialization version is, and the platform landscape you will actually use.</p>
+<p><strong>Part C — Reproducible pipelines</strong> Why object IDs are not stable, what a materialization version is, and the platforms you will actually use.</p>
 <div class="box box--good">
 <p><strong>Standing rule for the module.</strong> Every stage exists to solve a specific problem and introduces a characteristic failure. <strong>Learn the pairs.</strong></p>
 </div>
@@ -176,7 +176,7 @@
 </tr>
 <tr>
 <td><strong>Staining gradient with depth</strong></td>
-<td>Block edge well stained, centre pale; reagents did not penetrate</td>
+<td>Block edge well stained, center pale; reagents did not penetrate</td>
 <td>Segmentation quality varies systematically with position — <strong>which looks like a biological gradient</strong> if you are not careful</td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@
 </tbody>
 </table>
 <div class="box box--warn">
-<p><strong>The diagnostic question for every defect, all module:</strong> <em>which coordinate system does it live in — block position, anatomy, or acquisition time?</em></p>
+<p><strong>The diagnostic question for every defect in this module:</strong> <em>which coordinate system does it live in — block position, anatomy, or acquisition time?</em></p>
 <p>Block position → penetration or geometry. Acquisition time → instrument drift or reagent degradation. Anatomy → possibly real biology.</p>
 </div>
 </section>
@@ -847,7 +847,7 @@ time = 8.0e14 / 2.0e8 px/s = 4.0 x 10^6 s             ~= 46 days continuous
 </div>
 <div>
 <div class="box box--good">
-<p><strong>The consequence is the field's quiet superpower.</strong> Because serving is just static objects, <em>anyone</em> can host a volume, and any client that speaks the format can read it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without negotiating anything.</p>
+<p><strong>The consequence: anyone can serve a volume.</strong> Because serving is just static objects, <em>anyone</em> can host a volume, and any client that speaks the format can read it. Neuroglancer, CloudVolume, and a dozen analysis tools interoperate without negotiating anything.</p>
 <p>Compare this to a database that must be running for the data to exist.</p>
 </div>
 <p class="src">Precomputed format spec: github.com/google/neuroglancer. Zarr / OME-Zarr and N5 make the same architectural bet with different conventions.</p>
@@ -858,7 +858,7 @@ time = 8.0e14 / 2.0e8 px/s = 4.0 x 10^6 s             ~= 46 days continuous
 <h2 id="storage-chunked-multi-resolution-arrays">Storage: chunked, multi-resolution arrays</h2>
 <h3 id="the-neuroglancer-precomputed-format-n5-zarr--ome-zarr-and-relatives">The Neuroglancer precomputed format, N5, Zarr / OME-Zarr, and relatives</h3>
 <p><strong>Chunks.</strong> The volume is divided into blocks — commonly 64³ to 512³ voxels — stored as individual objects. <strong>You fetch only the chunks you need.</strong> This is the whole reason interactive viewing of a petabyte is possible.</p>
-<p><strong>Resolution pyramid.</strong> Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about <strong>15–33% extra storage</strong>.</p>
+<p><strong>Resolution pyramid.</strong> Progressively downsampled copies. Zooming out fetches a coarse level instead of a million fine chunks. Costs about <strong>14–33% extra storage</strong>.</p>
 <p><strong>Sharding.</strong> Millions of tiny objects are slow and expensive in object stores, so chunks are bundled into larger shard files with an index. A pure cost/latency optimization that <strong>matters enormously at petascale</strong>.</p>
 <p><strong>Compression.</strong> Lossy (JPEG) for image data, where a little compression noise is acceptable. <strong>Lossless and label-aware</strong> for label data — where a single flipped bit changes an object's identity.</p>
 </section>
@@ -1019,7 +1019,7 @@ time = 8.0e14 / 2.0e8 px/s = 4.0 x 10^6 s             ~= 46 days continuous
 <ul>
 <li>Why object IDs are not stable</li>
 <li>Materialization versions, and the number-one silent failure</li>
-<li>The platform landscape, and this week's assignment</li>
+<li>The platforms you will use, and this week's assignment</li>
 </ul>
 <div class="meta">Slides 40–54</div>
 </section>
@@ -1083,7 +1083,7 @@ DATASET        = <span class="hljs-string">&quot;minnie65_public&quot;</span>   
 MAT_VERSION    = <span class="hljs-number">943</span>                    <span class="hljs-comment"># pinned; never &quot;latest&quot;</span>
 QUERY_DATE     = <span class="hljs-string">&quot;2026-03-14&quot;</span>           <span class="hljs-comment"># when this ran</span>
 CODE_REV       = <span class="hljs-string">&quot;a3f9c21&quot;</span>              <span class="hljs-comment"># git commit of THIS notebook</span>
-CLIENT_VERSION = <span class="hljs-string">&quot;caveclient 5.21.0&quot;</span>    <span class="hljs-comment"># and its dependencies</span>
+CLIENT_VERSION = <span class="hljs-string">&quot;caveclient 5.21.0&quot;</span>    <span class="hljs-comment"># old example pin; record yours</span>
 SEED           = <span class="hljs-number">20260314</span>               <span class="hljs-comment"># any stochastic step</span>
 <span class="hljs-comment"># ----------------------------------------------------------------------</span>
 </code></pre>
@@ -1154,7 +1154,7 @@ SEED           = <span class="hljs-number">20260314</span>               <span c
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-paginate="true" data-class="dense" data-theme="frontiers" lang="en-US" class="dense" data-marpit-pagination="48" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="56">
-<h2 id="the-platform-landscape">The platform landscape</h2>
+<h2 id="the-platforms-you-will-actually-use">The platforms you will actually use</h2>
 
 <table>
 <thead>
@@ -1397,7 +1397,7 @@ SEED           = <span class="hljs-number">20260314</span>               <span c
 <div class="box box--good">
 <p><strong>The one idea to carry forward.</strong></p>
 <p>Every number in connectomics is <strong>produced by a versioned pipeline</strong> whose stages each have a characteristic failure.</p>
-<p>Reproducibility is not paperwork. It is the only thing that lets you say <em>which</em> number you are defending.</p>
+<p>Reproducibility is what lets you say <em>which</em> number you are defending.</p>
 </div>
 </div>
 </div>
@@ -1417,11 +1417,11 @@ SEED           = <span class="hljs-number">20260314</span>               <span c
 <h3 id="these-slides-are-openly-licensed-for-community-use">These slides are openly licensed for community use</h3>
 <div class="cols">
 <div>
-<p><strong>Licence: CC BY-SA 4.0</strong><br />
+<p><strong>License: CC BY-SA 4.0</strong><br />
 Creative Commons Attribution-ShareAlike 4.0 International.<br />
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
 <p><strong>You may</strong> teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and <strong>re-cut, shorten, translate, restyle, or merge them into your own material</strong> — and distribute the result. No permission needed.</p>
-<p><strong>Two conditions.</strong> <em>Attribution</em> — credit the original, link the licence, and say if you changed anything. <em>ShareAlike</em> — distribute your adapted version under this same licence, so it stays as open as what it came from.</p>
+<p><strong>Two conditions.</strong> <em>Attribution</em> — credit the original, link the license, and say if you changed anything. <em>ShareAlike</em> — distribute your adapted version under this same license, so it stays as open as what it came from.</p>
 </div>
 <div>
 <p><strong>How to credit</strong></p>
@@ -1431,7 +1431,7 @@ Creative Commons Attribution-ShareAlike 4.0 International.<br />
 <p><strong>Improved something?</strong> The project would like to hear about it — open an issue.</p>
 </div>
 </div>
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
 </script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>Module 7 asked what a connectome is and what it can support. This module answers a
@@ -1455,8 +1455,8 @@ volumes (Xu et al. 2017). Other cells are typical ranges, not limits.</p></div><
 2015); single-beam SBEM 1.4–2.8 keV, 0.45–3.2 µs dwell, 6–9% tile overlap (Pallotto et
 al. 2015; Hua et al. 2015). Use them as orientation, not as specifications.</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>Eberle et al. 2015 used 61 beams (demonstrated 0.18–0.72 GPixel/s, &quot;approaching 1 GHz&quot;);
 ZEISS MultiSEM 506 has 91. H01's ~1 mm³ was imaged on a 61-beam multiSEM in 326 days,
-as reported by Collins et al. 2025 (arXiv 2405.10488) — the H01 main text does not
-state the duration. SmartEM (Meirovitch et al.) reports up to ~7-fold faster acquisition
+per Shapson-Coe et al. 2024 (Science; PMC11718559: &quot;The total imaging time for the
+1 mm3 sample was 326 days&quot;). SmartEM (Meirovitch et al.) reports up to ~7-fold faster acquisition
 on a single-beam SEM.</p></div><div class="bespoke-marp-note" data-index="16" tabindex="0"><p>Resolution range: ~70 nm (Chen et al. 2015, doi:10.1126/science.1260088), ~25 nm with
 iterative ExM (Chang et al. 2017, doi:10.1038/nmeth.4261), ~20 nm lateral / ~50 nm axial
 effective in LICONN (~16-fold expansion). &quot;First&quot; is the authors' framing: their
@@ -1480,8 +1480,8 @@ The example below illustrates fields, not a verified current public-data query.
 Ask learners to supply actual values from their run. Do not copy example versions
 or a fabricated code revision. Record coordinate frame and units for spatial queries.</p><p>Make them physically add this to the assignment notebook. It is the single highest-value
 habit in the module, it takes ninety seconds, and essentially nobody does it until they
-have been burned once. The assignment rubric awards points for it explicitly.</p></div><div class="bespoke-marp-note" data-index="49" tabindex="0"><p>Sources and assumptions for this table. Mouse brain ~500 mm³ (Collins et al. 2025,
-Cell Rep Methods, arXiv 2405.10488). MICrONS: 27,972 sections at 40 nm nominal onto
+have been burned once. The assignment rubric awards points for it explicitly.</p></div><div class="bespoke-marp-note" data-index="49" tabindex="0"><p>Sources and assumptions for this table. Mouse brain ~500 mm³ (Badea et al. 2007,
+doi:10.1016/j.neuroimage.2007.05.046: 508.9 ± 23.4 mm³, C57BL/6J). MICrONS: 27,972 sections at 40 nm nominal onto
 GridTape (MICrONS Consortium 2025, doi:10.1038/s41586-025-08790-w). ~2 × 10⁵ sections
 is an estimate: a mouse brain is at most ~8 mm on its shortest axis (Allen CCFv3
 bounding box) ÷ 40 nm. Multibeam peak rate: Eberle et al. 2015 report up to

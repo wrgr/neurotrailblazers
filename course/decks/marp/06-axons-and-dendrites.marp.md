@@ -35,7 +35,7 @@ In dense neuropil you usually cannot reach a soma. Classification has to work fr
 
 ---
 
-## Why this unit is high leverage
+## Why axon/dendrite errors are expensive
 - Axon/dendrite identity errors distort connectivity statistics.
 - Misclassification propagates into motif analysis and model priors.
 - Reproducible identity policy is a prerequisite for trustworthy graphs.
@@ -59,7 +59,7 @@ Worse, the bias has a direction: flipping 5% of edges in a population with a tru
 
 <!--
 Fix the four families first. Confidence comes from which families agree, not from how many observations of the same kind you stack up.
-Family A, organelles: ribosomes effectively absent from axons — the single best cue when visible. Family B, geometry: axons hold caliber between boutons; dendrites taper, and daughter branches are thinner than the parent. Family C, polarity: vesicle cluster at a synapse -> presynaptic -> axon; PSD -> dendrite or soma. Family D, context: myelin, a fibre bundle, an AIS off a soma.
+Family A, organelles: ribosomes effectively absent from axons past the initial segment — the single best cue when visible. Family B, geometry: axons hold caliber between boutons; dendrites taper, and daughter branches are thinner than the parent. Family C, polarity: vesicle cluster at a synapse -> presynaptic -> axon; PSD -> dendrite or soma. Family D, context: myelin, a fiber bundle, an AIS off a soma.
 -->
 
 ---
@@ -132,7 +132,7 @@ At 4 nm a Type I PSD is 8–12 pixels — the asymmetry is genuinely subtle, and
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Myelin is a Family D context cue and a decisive one: dendrites are never myelinated. In the protocol it is step 3 — myelin or a fibre bundle -> axon, high confidence. Use the second bullet to calibrate expectations about resolution: knowing what you cannot see at 4 nm is part of reading the image honestly.
+Myelin is a Family D context cue and a decisive one: dendrites are never myelinated. In the protocol it is step 3 — myelin or a fiber bundle -> axon, high confidence. Use the second bullet to calibrate expectations about resolution: knowing what you cannot see at 4 nm is part of reading the image honestly.
 -->
 
 ---
@@ -215,7 +215,7 @@ Instructor script: "What tissue am I in? That is a question about the dataset, n
 5. Escalation if evidence conflict persists: unresolved ambiguity goes to the adjudication queue.
 
 <!--
-The unit's local protocol, in cost order: (1) a synapse in view? which side? (2) ribosomes? (3) myelin or fibre bundle? (4) follow through z for 2–3 µm — beaded swellings with vesicles -> axon; steady taper or thinner daughters -> dendrite; a spine -> dendrite. (5) still unresolved -> UNCERTAIN, with the missing cue named.
+The unit's local protocol, in cost order: (1) a synapse in view? which side? (2) ribosomes? (3) myelin or fiber bundle? (4) follow through z for 2–3 µm — beaded swellings with vesicles -> axon; steady taper or thinner daughters -> dendrite; a spine -> dendrite. (5) still unresolved -> UNCERTAIN, with the missing cue named.
 Cue conflict is a detector, not a tie-break: vesicle clusters and ribosomes in the same cortical process is a merge-error alarm. Inspect the path between the two observations for where two processes touch.
 -->
 
@@ -250,7 +250,7 @@ Classify three ambiguous neurites and submit:
 
 ![h:400](../../../assets/images/external/neuron-cell-diagram-en.svg)
 
-<p class="caption">Useful for naming compartments. Real neurites in neuropil do not come labelled.</p>
+<p class="caption">Useful for naming compartments. Real neurites in neuropil do not come labeled.</p>
 
 <p class="source">Source: Wikimedia Commons, File:Complete_neuron_cell_diagram_en.svg. Public domain.</p>
 

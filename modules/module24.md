@@ -58,8 +58,8 @@ prerequisites_list:
 next_modules:
   - "module25"
 references:
-  - "NASEM mentorship reports and graduate-training guidance."
-  - "Program-specific admissions and lab websites."
+  - "National Academies of Sciences, Engineering, and Medicine (2019) The Science of Effective Mentorship in STEMM. National Academies Press."
+  - "National Academies of Sciences, Engineering, and Medicine (2018) Graduate STEM Education for the 21st Century. National Academies Press."
 videos: []
 downloads: []
 last_reviewed: 2026-03-11
@@ -73,7 +73,7 @@ Produce a 12-month pathway plan (skills, applications, mentoring actions) with e
 ## Why this module matters
 Many trainees are told to "network more" or "apply broadly" without concrete strategy. Both instructions are advice-shaped and unactionable: neither says what to do on Tuesday. This module converts them into procedures with scripts, deadlines, and a way to tell whether they worked.
 
-The reason this matters more than it appears is distributional. Selection processes run on operating knowledge that is rarely written down: that you email prospective supervisors months before applying rather than after, that a recommendation request needs a context packet, that a personal statement is evidence rather than aspiration, that "we don't have funding" is often an invitation to keep talking rather than a refusal. Some learners already know all of it because someone at their dinner table did. Making it explicit is a fairness intervention, not a soft skill, and it is why this module carries scripts rather than encouragement.
+The reason this matters more than it appears is distributional. Selection processes run on operating knowledge that is rarely written down: that you email prospective supervisors months before applying rather than after, that a recommendation request needs a context packet, that a personal statement is evidence rather than aspiration, that "we don't have funding" is often an invitation to keep talking rather than a refusal. Some learners already know all of it because someone at their dinner table did. Writing it down is a fairness measure, which is why this module carries scripts rather than encouragement.
 
 ## Concept set
 
@@ -93,7 +93,7 @@ The reason this matters more than it appears is distributional. Selection proces
 - **Misconception guardrail:** not knowing the unwritten rules means you are not cut out for this.
 
 ### 4) Career paths enabled by connectomics training
-Connectomics training opens a unusually broad range of career trajectories because the field sits at the intersection of multiple disciplines. Graduate school options include neuroscience, computational biology, bioengineering, and computer science programs, where connectomics experience demonstrates both domain knowledge and technical skill. Industry roles span biotech companies developing brain-computer interfaces or neural prosthetics, AI and machine learning teams (where segmentation and graph analysis skills transfer directly), and medical imaging companies applying similar computational pipelines to clinical data. Data science and data engineering positions value the experience of working with terabyte-scale datasets, cloud infrastructure, and complex ETL pipelines.
+Connectomics training opens an unusually broad range of career trajectories because the field sits at the intersection of multiple disciplines. Graduate school options include neuroscience, computational biology, bioengineering, and computer science programs, where connectomics experience demonstrates both domain knowledge and technical skill. Industry roles span biotech companies developing brain-computer interfaces or neural prosthetics, AI and machine learning teams (where segmentation and graph analysis skills transfer directly), and medical imaging companies applying similar computational pipelines to clinical data. Data science and data engineering positions value the experience of working with terabyte-scale datasets, cloud infrastructure, and complex ETL pipelines.
 
 The unique value of connectomics training is its combination of neuroscience domain knowledge, computational proficiency (Python, image processing, graph analysis), data engineering at scale, and collaborative research experience in large distributed teams. Science policy and science communication are additional paths for those drawn to the societal implications of brain mapping initiatives. Students should document their cross-disciplinary competencies explicitly in applications, since hiring committees outside neuroscience may not recognize the breadth of skills that connectomics work requires.
 
@@ -142,7 +142,7 @@ Fit depends on where you are, so read the last two columns before the first.
 | Research assistant or technician post in a connectomics group | Real data, real hours, and references who watched you work | A demonstrated technical skill and the ability to start soon | High. Ends cleanly, often with a publication contribution | One to two years of deferred graduate entry, and the risk of a post with no scientific ownership if the role is not scoped in writing before you accept |
 | Structured postbaccalaureate research program | Mentored research plus explicit application support, designed for people without research access | An application in its own cycle, usually with its own deadlines | High | A defined term with a fixed end, and an application cycle that competes for the same months as graduate applications |
 | Taught master's | Coursework depth, a credential, and a second chance at a research record | Tuition or funding, and a clear reason coursework is the gap | Moderate | Direct tuition cost in most systems; justified when the gap is coursework, hard to justify when the gap is research experience |
-| Industry data, ML, or imaging role | Engineering practice, scale, and pay now | A portfolio a non-neuroscientist can read, with skills named in their vocabulary | Moderate. Returning to a doctoral program later is common, though it gets harder as compensation rises | Time away from the publication record, and the work of translating your experience for readers who will not recognize what connectomics required |
+| Industry data, ML, or imaging role | Engineering practice, scale, and pay now | A portfolio a non-neuroscientist can read, with skills named in their vocabulary | Moderate. Returning to a doctoral program later is possible, though it gets harder as compensation rises | Time away from the publication record, and the work of translating your experience for readers who will not recognize what connectomics required |
 
 If two rows score similarly on fit, choose on reversibility and write down why. Recording the reasoning is what lets you evaluate the decision in two years rather than relitigating it.
 
@@ -179,7 +179,7 @@ The correct reading is that this is a yes. "No funded positions" answers a quest
 
 On the call, and afterwards with two of her current group members, he uses a fixed question set, because comparable answers are the point:
 
-- **"How often do you meet, and who sets the agenda?"** Weekly with the trainee setting the agenda indicates support being deliberately withdrawn. Monthly with the supervisor setting it suggests a group where you need to arrive at MERIT stage 4 already.
+- **"How often do you meet, and who sets the agenda?"** Weekly with the trainee setting the agenda indicates a supervisor deliberately handing over control. Monthly with the supervisor setting it suggests a group where you need to arrive at MERIT stage 4 already.
 - **"What happened the last time someone wanted to work on something she wasn't excited about?"** This tells you whether intellectual ownership is real or nominal. Hesitation before answering is itself an answer.
 - **"Where did the last three people who left go, and did they choose it?"** Outcomes matter less than whether they were chosen.
 
@@ -219,16 +219,16 @@ Julian's follow-up, sent the same day, is two sentences: thanks, and the specifi
 - **Conference networking mechanics.** Approaches, pitches, and follow-up scripts are [Module 23]({{ '/modules/module23/' | relative_url }}).
 - **Salary levels, hiring volumes, and market forecasts.** These vary by country, sector, and year, and any figure stated here would be wrong somewhere. Get them from current postings and from people currently in the role, not from a curriculum page.
 - **Immigration, visa, and funding eligibility rules.** These are jurisdiction-specific, they change, and they frequently determine which rows of the decision table are open to you. Establish them early with an institutional adviser rather than inferring them.
-- **Mentor-side practice.** How to run these stages as a supervisor is in [Education Models]({{ '/models/' | relative_url }}) and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
+- **Mentor-side practice.** How to run these stages as a supervisor is in [Program Models]({{ '/models/' | relative_url }}) and the [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }}).
 
 ## Content library references
-- [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — The growing field and career opportunities
+- [Connectome history]({{ '/content-library/connectomics/connectome-history/' | relative_url }}) — How the field grew, and which groups built it
 
 ## Teaching resources
 - Persona context: [Learner Personas]({{ '/avatars/' | relative_url }})
 - Mentorship support: [Ask an Expert]({{ '/ask-an-expert/' | relative_url }})
-- Framework context: [Research Incubator Model]({{ '/models/' | relative_url }})
-- Stage framing: [Education Models]({{ '/models/' | relative_url }})
+- Stage framing: [Program Models]({{ '/models/' | relative_url }}) — the MERIT stages this module refers to
+- Workshops that continue this module: [Charting Your Course in Research]({{ '/teaching/pathways/charting-your-course/' | relative_url }}), [Building Your STEM Entourage]({{ '/teaching/pathways/building-your-entourage/' | relative_url }}), and [Future Forward]({{ '/teaching/pathways/future-forward/' | relative_url }})
 - Start-here guidance: [Start Here]({{ '/start-here/' | relative_url }})
 
 ## Quick practice prompt

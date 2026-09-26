@@ -27,8 +27,8 @@ This lecture is built from one page of the NeuroTrailblazers content library,
 "Synapse Detection", and every number on these slides comes from that page and the
 papers it cites. If you are adapting it, the page is the place to check a figure.
 
-The goal is not that the room leaves able to train a detector. It is that they leave
-able to download somebody else's synapse table and say what it can and cannot support.
+The goal is that the room leaves able to download somebody else's synapse table and
+say what it can and cannot support. Training a detector is out of scope.
 -->
 
 ---
@@ -54,7 +54,7 @@ Everything downstream inherits whatever that detector got wrong:
 
 **What this lecture is.** The argument behind the one line a pipeline diagram gives this stage: what the task is, what has been tried, what the published numbers are, and what you have to measure before you are entitled to use somebody else's synapse table.
 
-**What it is not.** Synapse biology — what a synapse is and how to recognise one by eye — is assumed, not taught.
+**What it is not.** Synapse biology — what a synapse is and how to recognize one by eye — is assumed, not taught.
 
 </div>
 
@@ -67,7 +67,7 @@ Everything downstream inherits whatever that detector got wrong:
 
 ### By the end of this lecture you will be able to:
 
-**1** — **Distinguish** localisation, partner assignment and sign classification as separate problems that succeed and fail independently.
+**1** — **Distinguish** localization, partner assignment and sign classification as separate problems that succeed and fail independently.
 
 **2** — **Interpret** a published detector number by the unit it was measured at — synapse, interface, partner pair, or connection.
 
@@ -97,7 +97,7 @@ Objective 4 is the one this lecture is really about. The single most consequenti
 </div>
 <div>
 
-**Part C — Using somebody else's synapse table** A worked judgement on H01's excitatory/inhibitory balance; why detectors do not transfer; the checklist to run before trusting a table.
+**Part C — Using somebody else's synapse table** A worked judgment on H01's excitatory/inhibitory balance; why detectors do not transfer; the checklist to run before trusting a table.
 
 <div class="box box--good">
 
@@ -170,13 +170,13 @@ or asks only whether a neuron pair is connected.
 
 **1 — Recall is not symmetric.** H01's detector missed **11%** of excitatory and **35%** of inhibitory synapses. Unequal detection recall biases raw class counts; binary-edge performance does not repair a count ratio.
 
-**2 — Partner assignment is weaker than localisation**, and much weaker where synapses are polyadic. Buhmann et al. report F1 from **0.59 to 0.73** across four areas *of the same fly brain*.
+**2 — Partner assignment is weaker than localization**, and much weaker where synapses are polyadic. Buhmann et al. report F1 from **0.59 to 0.73** across four areas *of the same fly brain*.
 
 **3 — Transfer is the operational cost.** A detector trained on one volume does not move to another without new ground truth. As of 2025, the cross-dataset benchmarks say this is still open.
 
 <div class="box box--good">
 
-**The honest budget line** is not "we must solve synapse detection". It is: run the established detector, then spend your effort establishing what its recall and partner accuracy are *in your region*, and report the table's provenance.
+**The realistic budget line:** run the established detector, then spend your effort establishing what its recall and partner accuracy are *in your region*, and report the table's provenance.
 
 </div>
 
@@ -194,7 +194,7 @@ is the whole point of the lecture.
 
 ### Three problems and the published record
 
-- Localisation, partner assignment, sign
+- Localization, partner assignment, sign
 - What has been tried, with numbers
 - Reading numbers that are not on a common scale
 
@@ -206,7 +206,7 @@ is the whole point of the lecture.
 
 ### "Synapse detection" names at least three tasks that succeed and fail independently
 
-**1 — Localisation.** Find the synapse. Depending on the method: segment the synaptic cleft as a set of voxels, predict a point annotation for the presynaptic site, or classify the *interface* between two already-segmented processes as synaptic or not.
+**1 — Localization.** Find the synapse. Depending on the method: segment the synaptic cleft as a set of voxels, predict a point annotation for the presynaptic site, or classify the *interface* between two already-segmented processes as synaptic or not.
 
 **2 — Partner assignment.** Given a synapse, say which segment is presynaptic and which postsynaptic. A separate learning problem: Buhmann et al. (2021) and Turner et al. (2020) each treat it as its own network; Huang et al. (2018) use a U-Net for presynaptic sites and a separate multilayer perceptron, conditioned on the local segmentation, for postsynaptic partners.
 
@@ -257,7 +257,7 @@ kind of method is not directly comparable with an F-score from the other.
 | **SyConn** (Dorkenwald et al.) | 2017 | Synapses and types, alongside mitochondria, compartments, cell types | Framework paper; used to compute songbird basal-ganglia wiring | SBEM: zebrafish, mouse, zebra finch |
 | **SynEM** (Staffler et al.) | 2017 | Neurite-interface classification: synaptic vs not | **88% / 88%** per synapse; **94% / 89%** spine synapses; **97% / 97%** binary cortical connectomes | Mouse cortex, en-bloc staining, SBEM |
 | **3D U-Net cleft** (Heinrich et al.) | 2018 | Cleft voxels, by regression on a signed distance transform | A significant improvement over the prior state of the art on CREMI | Adult *Drosophila*, anisotropic ssTEM; ~50 teravoxels of whole fly brain |
-| **Huang et al.** | 2018 | Presynaptic sites (U-Net) + postsynaptic partners (MLP) | Introduced connectome-scale evaluation metrics; most connectivity characterised correctly | *Drosophila*, polyadic |
+| **Huang et al.** | 2018 | Presynaptic sites (U-Net) + postsynaptic partners (MLP) | Introduced connectome-scale evaluation metrics; most connectivity characterized correctly | *Drosophila*, polyadic |
 
 ---
 
@@ -271,7 +271,7 @@ kind of method is not directly comparable with an F-score from the other.
 | **Synful** (Buhmann et al.) | 2021 | Synaptic partners directly, whole brain | **F1 0.73, 0.68, 0.66, 0.59** in four brain areas; **244 million** putative partners from FAFB; **92–96%** of edges (two areas) correctly sorted weak (<5) vs strong (≥5) | Adult *Drosophila*, FAFB ssTEM |
 | **Cerebellar contact classifier** (Park et al.) | 2022 | Synaptic vs not, plus pre/post side and E/I type | **F1 = 0.955** on a test volume with 508 synapses | Mouse cerebellar molecular layer |
 | **H01 detector** (Shapson-Coe et al.) | 2024 | Three-class U-Net + ResNet-50 E/I classifier | E and I miss rates differ by more than threefold — Part B | Human temporal cortex, ssEM 4 × 4 nm, ~33 nm sections |
-| **SimpSyn** (Mohinta et al.) | 2025 | Dual-channel spherical masks at pre- and postsynaptic sites, single-stage residual U-Net | Beats Synful in F1 on all volumes of a four-dataset invertebrate benchmark; **generalisation across datasets remains limited** | Adult and larval *Drosophila*, *Megaphragma viggianii* |
+| **SimpSyn** (Mohinta et al.) | 2025 | Dual-channel spherical masks at pre- and postsynaptic sites, single-stage residual U-Net | Beats Synful in F1 on all volumes of a four-dataset invertebrate benchmark; **generalization across datasets remains limited** | Adult and larval *Drosophila*, *Megaphragma viggianii* |
 
 <p class="src">Full citations on the references slide. Every figure here is as reported in the method's own paper.</p>
 
@@ -313,7 +313,7 @@ apply to it as much as to anything else in the table.
 
 ---
 
-## Reading the table: aggregation is doing enormous work
+## Reading the table: aggregation changes the number
 
 <div class="cols">
 <div>
@@ -337,7 +337,7 @@ For most connectomics, that is the edge, not the synapse.
 
 <div class="box">
 
-**The field's accounting has moved.** Huang et al. (2018) observed that as segmentation improved, synapse annotation came to consume "upwards of 50% of total effort". That is roughly when synapse detection stopped being the pipeline's afterthought — and why the later methods are about partners and generalisation rather than finding clefts.
+**The field's accounting has moved.** Huang et al. (2018) observed that as segmentation improved, synapse annotation came to consume "upwards of 50% of total effort". That is roughly when synapse detection stopped being the pipeline's afterthought — and why the later methods are about partners and generalization rather than finding clefts.
 
 </div>
 
@@ -399,11 +399,11 @@ Aggregation can change **both precision and recall**. It does not remove class-s
 |---|---|
 | **Neuron segmentation** | Variation of Information, Adapted Rand error, Tolerant Edit Distance |
 | **Synapse detection** | F-measure over false positives and false negatives; a predicted cleft voxel beyond a threshold distance from any ground-truth cleft is a false positive, and vice versa |
-| **Connectivity** (partner identification) | F-measure over matched (pre, post) pairs, matched by an assignment problem minimising Euclidean distance within a threshold |
+| **Connectivity** (partner identification) | F-measure over matched (pre, post) pairs, matched by an assignment problem minimizing Euclidean distance within a threshold |
 
 <div class="box">
 
-**What the scoring does not do:** require a predicted cleft to overlap the ground truth voxel-for-voxel — only to fall within a distance tolerance. Cleft detection is **localisation with slack**, which is why methods that regress a distance transform (Heinrich et al., 2018) do well on it.
+**What the scoring does not do:** require a predicted cleft to overlap the ground truth voxel-for-voxel — only to fall within a distance tolerance. Cleft detection is **localization with slack**, which is why methods that regress a distance transform (Heinrich et al., 2018) do well on it.
 
 </div>
 
@@ -453,7 +453,7 @@ That is worth knowing. It is why CREMI training data underlies whole-brain fly c
 
 **The number that defines the problem.**
 
-Manual annotation is so expensive that labelled training data is "often **smaller than 0.001%** of the large-scale image volumes in application".
+Manual annotation is so expensive that labeled training data is "often **smaller than 0.001%** of the large-scale image volumes in application".
 
 </div>
 
@@ -462,7 +462,7 @@ Manual annotation is so expensive that labelled training data is "often **smalle
 
 <div class="box box--good">
 
-**That ratio, not any single F1, is why cross-dataset generalisation is the live question.** 0.001% is one part in 100,000: a detector is applied to volumes five orders of magnitude larger than anything it was shown labelled.
+**That ratio, not any single F1, is why cross-dataset generalization is the live question.** 0.001% is one part in 100,000: a detector is applied to volumes five orders of magnitude larger than anything it was shown labeled.
 
 </div>
 
@@ -531,7 +531,7 @@ Cano-Astorga et al. (2024) show that **as its concentration rises, postsynaptic 
 
 <div class="box box--warn">
 
-**The consequence for a detector is stark.**
+**The consequence for a detector.**
 
 The feature your inhibitory classifier depends on is **partly a property of the sample-preparation recipe**, not only of the tissue.
 
@@ -617,7 +617,7 @@ Eckstein et al. (2024) trained networks on EM images at synaptic sites to predic
 
 ### Using somebody else's synapse table
 
-- A worked judgement: H01's excitatory/inhibitory balance
+- A worked judgment: H01's excitatory/inhibitory balance
 - Why detectors do not transfer
 - The checklist, and bounding your own risk
 
@@ -753,7 +753,7 @@ sentence names which number it is and where it came from.
 
 <div class="box box--good">
 
-**Back to the cold open.** A defensible sentence: *"74.2% of automatically detected synapses were classified excitatory; the authors' correction for class-specific detection rates, estimated from proofread axons, gives 67.1%."* Two numbers, both labelled.
+**Back to the cold open.** A defensible sentence: *"74.2% of automatically detected synapses were classified excitatory; the authors' correction for class-specific detection rates, estimated from proofread axons, gives 67.1%."* Two numbers, both labeled.
 
 </div>
 
@@ -780,11 +780,11 @@ sentence names which number it is and where it came from.
 <div class="cols">
 <div>
 
-**Within a volume and preparation, spatial generalisation is often fine.** Heinrich et al. report that their model, trained on CREMI's small annotated crops, "generalizes well to areas far away from where training data was available" — across a whole fly brain, including lamina.
+**Within a volume and preparation, spatial generalization is often fine.** Heinrich et al. report that their model, trained on CREMI's small annotated crops, "generalizes well to areas far away from where training data was available" — across a whole fly brain, including lamina.
 
 **Across preparations, it is not.**
 
-- **SimpSyn:** across four invertebrate datasets, generalisation remains limited even for the model that wins within each.
+- **SimpSyn:** across four invertebrate datasets, generalization remains limited even for the model that wins within each.
 - **SynapseNet** pairs a large annotated training set with explicit domain-adaptation functionality.
 - **WASPSYN** exists because methods that "utilize in-domain labeled data and generalize to out-of-domain unlabeled data are in urgent need".
 
@@ -795,7 +795,7 @@ sentence names which number it is and where it came from.
 
 **The distinction is operational.**
 
-**Analysing one released volume?** Its detector was probably trained on that volume; the within-sample evidence applies to you.
+**Analyzing one released volume?** Its detector was probably trained on that volume; the within-sample evidence applies to you.
 
 **Bringing a published detector to new tissue?** You are in the regime where the evidence says it will degrade — **by an amount nobody can tell you in advance.**
 
@@ -876,7 +876,7 @@ The authors' corrected estimate is **67:33** — about **7 percentage points** a
 
 <div class="box">
 
-**And the follow-up question worth asking of any answer:** which number is it — the count of a biased measurement, or the estimate from a proofread sample? Both are legitimate. Unlabelled, neither is.
+**And the follow-up question worth asking of any answer:** which number is it — the count of a biased measurement, or the estimate from a proofread sample? Both are legitimate. Unlabeled, neither is.
 
 </div>
 
@@ -914,7 +914,7 @@ The authors' corrected estimate is **67:33** — about **7 percentage points** a
 
 **The source page.** *Synapse Detection* in the NeuroTrailblazers content library — this lecture's full argument, with every number linked to its paper.
 
-**Neighbouring pages.** Reconstruction pipeline (where this stage sits); Metrics and QA (the metric definitions); Synapse classification (the biology this lecture presupposes); Provenance and versioning (pinning the table you used); the H01 case study (the volume behind Part C).
+**Neighboring pages.** Reconstruction pipeline (where this stage sits); Metrics and QA (the metric definitions); Synapse classification (the biology this lecture presupposes); Provenance and versioning (pinning the table you used); the H01 case study (the volume behind Part C).
 
 **Hands-on.** Technical training Unit 08, segmentation and proofreading.
 
@@ -925,7 +925,7 @@ The authors' corrected estimate is **67:33** — about **7 percentage points** a
 
 **The one idea to carry forward.**
 
-Cleft detection is solved. **What a synapse table can support is not a property of the detector** — it is a property of its recall by class, its partner accuracy in your region, and whether it was evaluated on your preparation.
+Cleft detection works well in evaluated tissue. **What a synapse table can support depends on** its recall by class, its partner accuracy in your region, and whether it was evaluated on your preparation.
 
 Measure those, or report that nobody has.
 
@@ -959,13 +959,13 @@ Measure those, or report that nobody has.
 <div class="cols">
 <div>
 
-**Licence: CC BY-SA 4.0**
+**License: CC BY-SA 4.0**
 Creative Commons Attribution-ShareAlike 4.0 International.
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them into your own material** — and distribute the result. No permission needed.
 
-**Two conditions.** *Attribution* — credit the original, link the licence, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same licence, so it stays as open as what it came from.
+**Two conditions.** *Attribution* — credit the original, link the license, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same license, so it stays as open as what it came from.
 
 </div>
 <div>
@@ -983,4 +983,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>

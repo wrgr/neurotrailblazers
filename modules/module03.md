@@ -66,28 +66,28 @@ content_type: path
 Create a reproducible Jupyter notebook that ingests a connectomics dataset slice, performs one analysis, and exports documented outputs. Demonstrate familiarity with the core Python libraries used in connectomics research: CAVEclient, CloudVolume, NetworkX, pandas, and matplotlib.
 
 ## Why this module matters
-Python is the lingua franca of connectomics. Every major connectomics platform --- CAVE, FlyWire, MICrONS, NeuPrint --- provides Python client libraries. Jupyter notebooks have become the standard medium for sharing reproducible analyses: they combine executable code, inline visualizations, and narrative explanations in a single document. Mastering the notebook workflow early means that every subsequent module builds on a solid technical foundation rather than fighting tooling issues.
+Python is the lingua franca of connectomics. CAVE (behind FlyWire and MICrONS) and neuPrint (behind the Janelia hemibrain) both have Python clients, and most published connectome analyses are shared as Python code. Jupyter notebooks are the common format for that sharing: they hold executable code, inline figures, and narrative in one document. Learn the notebook workflow now and later modules spend their time on the science instead of on tooling.
 
 ## Concept set
 
 ### 1) Python as the lingua franca of connectomics
-- **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.
+- **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Every later module assumes you can use them.
 - **Plain language:** if connectomics has a common language, it is Python.
 - **Misconception:** you need to be an expert programmer to do connectomics.
 - **In practice:** Most analyses use a small set of patterns (query, filter, aggregate, plot) applied to different datasets.
 
 ### 2) Jupyter notebooks for reproducible analysis
-- **Technical:** a Jupyter notebook is an executable lab notebook that combines code cells, markdown narrative, and inline outputs. Reproducibility requires that notebooks run cleanly from top to bottom (no hidden state), document all dependencies (pinned package versions), and record the dataset version used. A notebook that cannot be re-run from a clean kernel is not reproducible --- it is a screenshot.
+- **Technical:** a Jupyter notebook is an executable lab notebook that combines code cells, markdown narrative, and inline outputs. Reproducibility requires that notebooks run cleanly from top to bottom (no hidden state), document all dependencies (pinned package versions), and record the dataset version used. A notebook that cannot be re-run from a clean kernel records what happened once; it does not reproduce it.
 - **Plain language:** your notebook should work for someone who has never seen it before.
 - **Misconception:** if the code runs on my machine, it is reproducible.
 - **In practice:** Without version pinning, environment specification, and dataset versioning, results may differ across machines and time.
 
 ### 3) Key libraries overview
-- **CAVEclient:** the primary interface to the CAVE (Connectome Annotation Versioning Engine) database. Use it to query synapse tables, retrieve segment IDs, fetch cell type annotations, and access materialization versions. Example: `client.materialize.query_table('synapses_nt_v1')` returns a DataFrame of synapses with pre/post segment IDs, coordinates, and neurotransmitter predictions.
-- **CloudVolume:** access volumetric data stored in cloud-optimized formats (Precomputed, Neuroglancer). Use it to download image cutouts, retrieve mesh data for 3D rendering, and access segmentation volumes. Example: `vol = CloudVolume('precomputed://gs://bucket/dataset')` opens a volume for random-access reads.
+- **CAVEclient:** the primary interface to the CAVE (Connectome Annotation Versioning Engine) database. Use it to query synapse tables, retrieve segment IDs, fetch cell type annotations, and access materialization versions. Example: `client.materialize.get_tables()` lists the tables in a datastack, and `client.materialize.query_table(table_name)` returns one of them as a DataFrame; a synapse table has one row per synapse with pre/post segment IDs and coordinates, plus whatever extra columns its schema defines.
+- **CloudVolume:** access volumetric data stored in chunked cloud formats such as Neuroglancer Precomputed. Use it to download image cutouts, retrieve mesh data for 3D rendering, and access segmentation volumes. Example: `vol = CloudVolume('precomputed://gs://bucket/dataset')` opens a volume for random-access reads.
 - **NetworkX / igraph:** construct directed graphs from synapse tables. Nodes represent neurons; edges represent synaptic connections weighted by synapse count. Use for computing degree distributions, shortest paths, motif detection, and community structure. NetworkX is easier to learn; igraph is faster for large graphs.
 - **Matplotlib / Plotly:** visualization libraries. Matplotlib produces static publication figures. Plotly produces interactive plots suitable for exploration. Both integrate directly with Jupyter notebooks.
-- **pandas:** tabular data manipulation. Most connectomics queries return DataFrames. pandas provides filtering, grouping, merging, and aggregation operations essential for every analysis pipeline.
+- **pandas:** tabular data manipulation. Most connectomics queries return DataFrames. pandas provides filtering, grouping, merging, and aggregation operations that nearly every analysis uses.
 
 ### 4) Best practices for connectomics code
 - **Technical:** pin package versions in a `requirements.txt` or `environment.yml` file. Document every analysis step in markdown cells. Use git for version control of notebooks (consider pairing with `nbstripout` to avoid committing large outputs). Record the CAVE materialization version and dataset version in the notebook header. Structure notebooks linearly: setup, data loading, analysis, visualization, export.
@@ -120,7 +120,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 ## Detailed run-of-show (90 minutes)
 
 ### Block 1: Notebook anatomy (00:00-12:00)
-- **Instructor script:** "Open a new notebook with me. Before we write any code, let's lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
+- **Instructor script:** "Open a new notebook with me. Before we write any code, we lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
   1. **Header:** title, author, date, dataset version, materialization version.
   2. **Setup:** imports and environment configuration.
   3. **Data loading:** queries and schema validation.
@@ -129,7 +129,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 - Then make a bad notebook from a copy of the good one while the class watches: run cells out of order, delete the markdown, and define a variable in a cell you then delete. Put the two side by side and ask: "Which one would you trust for a paper?"
 
 ### Block 2: Environment setup and library tour (12:00-28:00)
-- **Instructor script:** "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:
+- **Instructor script:** "Set up your environment first. Everyone run the first cell." Walk through installing and importing the core libraries:
   - `pip install caveclient cloud-volume networkx pandas matplotlib`
   - Demonstrate `pip freeze > requirements.txt` for version pinning.
 - Live demo of each library (2-3 minutes each):
@@ -150,7 +150,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 - Instructor circulates and helps with errors. Common issues: authentication tokens, version mismatches, column name typos.
 
 ### Block 4: Visualization and export (50:00-65:00)
-- **Instructor script:** "A plot without labels is not a figure --- it is a sketch. Let's make yours publication-ready."
+- **Instructor script:** "A plot without labels is a sketch. Make yours publication-ready."
 - Learners add: axis labels, title, legend, caption in a markdown cell below the figure.
 - Export figure as PNG and SVG. Export data table as CSV with a header comment recording the query parameters and materialization version.
 - Demonstrate saving a metadata JSON file: `{"dataset": "...", "materialization_version": ..., "query_date": "...", "parameters": {...}}`.
@@ -198,7 +198,7 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 
 ## Assessment rubric
 - **Minimum:** runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.
-- **Strong:** clean linear structure, robust error handling, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
+- **Strong:** clean linear structure, error handling that says what failed, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
 - **Failure:** hidden state dependencies, undocumented assumptions, plots without labels, no dataset version recorded.
 
 ## Content library references
@@ -213,8 +213,8 @@ Python is the lingua franca of connectomics. Every major connectomics platform -
 
 ## Academic references
 - Kluyver, T., et al. (2016). Jupyter Notebooks: a publishing format for reproducible computational workflows. *Proceedings of the 20th International Conference on Electronic Publishing*, 87-90.
-- Dorkenwald, S., et al. (2024). CAVE: Connectome Annotation Versioning Engine. *Nature Methods*. https://doi.org/10.1038/s41592-024-02426-z
-- Silversmith, W., et al. (2021). cloud-volume: Serverless client for arbitrary volumetric data. *Zenodo*. https://doi.org/10.5281/zenodo.3956205
+- Dorkenwald, S., et al. (2025). CAVE: Connectome Annotation Versioning Engine. *Nature Methods*, 22, 1112-1120. https://doi.org/10.1038/s41592-024-02426-z
+- Silversmith, W., et al. (2021). seung-lab/cloud-volume: Zenodo Release v1. *Zenodo*. https://doi.org/10.5281/zenodo.5671443
 - Hagberg, A. A., Schult, D. A., & Swart, P. J. (2008). Exploring network structure, dynamics, and function using NetworkX. *Proceedings of the 7th Python in Science Conference*, 11-15.
 - Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult brain. *Nature*, 634, 124-138.
 - Rule, A., et al. (2019). Ten simple rules for writing and sharing computational analyses in Jupyter Notebooks. *PLOS Computational Biology*, 15(7), e1007007.

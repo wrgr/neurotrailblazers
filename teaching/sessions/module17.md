@@ -60,7 +60,7 @@ Learners should arrive having covered:
 
 ## The activity
 
-**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used a fictional mouse cortex volume, release T17, with synapse detection via the release's synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 1. Draft three result claims from the scenario above, each with different confidence levels (strong, moderate, exploratory).
 2. Build a claim-evidence matrix (claim, figure panel, metric, statistical test, effect size, dataset version, caveat).
@@ -81,21 +81,21 @@ These are the errors this session exists to prevent. Surface them in the debrief
 rather than pre-empting them in the lecture — a misconception a learner has
 voiced is far easier to correct than one they are holding silently.
 
-- **They may believe:** Treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
+- **They may believe:** The methods section is a formality to write last.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
+- **They may believe:** Stronger language makes weak evidence more convincing.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
+- **They may believe:** Stating uncertainty makes a paper look weak.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
+- **They may believe:** Readers will know which dataset version you used.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
+- **They may believe:** A link to the code repository makes the analysis reproducible.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Uncertainty statements are not weakness; they are reproducibility signals.
+- **They may believe:** Confidence intervals can live in the supplement as long as the main text reports p-values.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
+- **They may believe:** Citing the original EM paper covers all required attributions.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
-- **They may believe:** Defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.
+- **They may believe:** A firm, defensive reply shows confidence in the work.
   - *Surface it by asking:* "What would have to be true for that to hold? What would change your mind?"
 
 ## Naming the norm
@@ -118,7 +118,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
   - Methods include dataset version, pipeline, and key parameters.
   - Reviewer responses are specific and technically grounded.
 - **Strong performance**
-  - Clearly separates robust findings from tentative interpretations using calibrated language.
+  - Separates established findings from tentative interpretations using calibrated language.
   - Uses limitation language without weakening valid conclusions.
   - Improves reproducibility via concrete method-detail additions.
   - Reviewer responses include evidence and specific manuscript revision locations.

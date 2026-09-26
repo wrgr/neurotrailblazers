@@ -89,7 +89,7 @@ Every connectomics claim requires comparison to a null model. Without a null, yo
 - **Degree-preserving rewiring** (Maslov & Sneppen 2002): Standard baseline. Preserves each neuron's in-degree and out-degree.
 - **Spatially constrained**: Preserves distance-dependent connection probability. Critical because nearby neurons connect more often simply due to arbor overlap.
 - **Cell-type-stratified**: Preserves E→E, E→I, I→E, I→I connection rates. Important because excitatory-inhibitory structure creates motif biases even without specific wiring rules.
-- **Key rule:** Use the most stringent null model that is relevant to your claim. If your finding survives the spatially constrained null but not the degree-preserving null, it may reflect spatial proximity rather than specific wiring.
+- **Key rule:** Use the most stringent null model that is relevant to your claim. If your finding survives the degree-preserving null but not the spatially constrained null, it may reflect spatial proximity rather than specific wiring.
 
 ### 4) Interpretation boundaries: what you can and cannot claim
 Structure constrains possible computation but does not determine function. A connectomics result can say "this wiring pattern is consistent with function X" or "this wiring pattern is more common than expected," but it cannot say "this circuit computes X" without functional evidence. Always state both the supported claim and the explicit non-claim.
@@ -113,7 +113,7 @@ A student proposes: "Feed-forward loops are enriched in this L4-to-L2/3-to-L5 ci
 
 **Step 2 — Count, and compare to the weakest null first as a sanity bound.** Observed: 84 feed-forward loop instances. An Erdos-Renyi null with matched density expects about 22, a 3.8x enrichment. Write that down as an upper bound on how impressive this can possibly look, and do not report it as a finding — almost everything beats ER in a degree-heterogeneous graph.
 
-**Step 3 — Preserve degree.** 1,000 degree-preserving rewirings give a null mean of 51 with standard deviation 9. Enrichment drops to 1.6x, z = 3.7. More than half of the apparent effect was degree heterogeneity — a few high-degree neurons participate in many triads by arithmetic alone.
+**Step 3 — Preserve degree.** 1,000 degree-preserving rewirings give a null mean of 51 with standard deviation 9. Enrichment drops to 1.6x, z = 3.7. Nearly half of the apparent excess (29 of 62 loops) was degree heterogeneity — a few high-degree neurons participate in many triads by arithmetic alone.
 
 **Step 4 — Ask what else the circuit already tells you.** The subgraph mixes excitatory and inhibitory types, and E and I populations have different connection rates. A cell-type-stratified null that preserves the E/I connection probabilities expects 78 loops: enrichment 1.08x, z = 0.7. Under the null most relevant to the claim, the effect is gone. The "motif" was mostly type composition: E→E and E→I edges are common enough that loops assemble from them at close to the observed rate.
 
@@ -133,7 +133,7 @@ A student proposes: "Feed-forward loops are enriched in this L4-to-L2/3-to-L5 ci
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (10 min async)
-- Read the motif analysis content library entry (focus on null models section)
+- Read [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }}), focusing on the null models section
 - Draft one biological question you'd like to test with connectomics data
 
 ### Minute-by-minute plan

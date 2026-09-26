@@ -41,7 +41,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used a fictional mouse cortex volume, release T17, with synapse detection via the release's synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 1. Draft three result claims from the scenario above, each with different confidence levels (strong, moderate, exploratory).
 2. Build a claim-evidence matrix (claim, figure panel, metric, statistical test, effect size, dataset version, caveat).
@@ -100,14 +100,14 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
-- [ ] I did not assume: Writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
-- [ ] I did not assume: Uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
-- [ ] I did not assume: Assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
-- [ ] I did not assume: Linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
-- [ ] I did not assume: Uncertainty statements are not weakness; they are reproducibility signals.
-- [ ] I did not assume: Assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
-- [ ] I did not assume: Defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.
+- [ ] I did not assume: The methods section is a formality to write last.
+- [ ] I did not assume: Stronger language makes weak evidence more convincing.
+- [ ] I did not assume: Stating uncertainty makes a paper look weak.
+- [ ] I did not assume: Readers will know which dataset version you used.
+- [ ] I did not assume: A link to the code repository makes the analysis reproducible.
+- [ ] I did not assume: Confidence intervals can live in the supplement as long as the main text reports p-values.
+- [ ] I did not assume: Citing the original EM paper covers all required attributions.
+- [ ] I did not assume: A firm, defensive reply shows confidence in the work.
 
 ---
 
@@ -136,7 +136,7 @@ action rather than a general intention.
   - Methods include dataset version, pipeline, and key parameters.
   - Reviewer responses are specific and technically grounded.
 - **Strong performance**
-  - Clearly separates robust findings from tentative interpretations using calibrated language.
+  - Separates established findings from tentative interpretations using calibrated language.
   - Uses limitation language without weakening valid conclusions.
   - Improves reproducibility via concrete method-detail additions.
   - Reviewer responses include evidence and specific manuscript revision locations.

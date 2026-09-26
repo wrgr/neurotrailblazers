@@ -41,13 +41,13 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 ## Concept Focus
 ### 1) Synaptic organization as circuit logic
 Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
-- **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
+- **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells). Close to the spike initiation zone, they can veto spiking.
 
 ---
 
 ## Concept Focus (continued)
-- **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
-- **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
+- **Dendritic spine synapses**: typically excitatory, and the majority of excitatory inputs onto pyramidal cells. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
+- **AIS synapses**: in cortex, predominantly from chandelier cells, positioned to control spike generation directly.
 - **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.
 
 ---
@@ -70,8 +70,8 @@ Synapses are not randomly placed. Their location on the postsynaptic neuron (som
 
 <!--
 Pre-class preparation (10 min async)
-  Review the synapse classification content library entry (Gray Type I/II)
-  Review the motif analysis content library entry (key motif types section)
+  Review [Synapse classification](/content-library/neuroanatomy/synapse-classification/) (Gray Type I/II)
+  Review the key motif types section of [Motif analysis](/content-library/connectomics/motif-analysis/)
   Minute-by-minute plan
 
 00:00-10:00 | Synapse cue recap
@@ -81,7 +81,7 @@ Pre-class preparation (10 min async)
 10:00-24:00 | Motif construction examples
   Walk through 3 motifs you have located beforehand in the public MICrONS volume ([MICrONS Explorer](https://www.microns-explorer.org/)):
   Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
-  Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
+  Feed-forward loop: L4 excitatory cell → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
   Feedback inhibition: pyramidal → basket cell → same pyramidal
   For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
 
@@ -113,7 +113,7 @@ Pre-class preparation (10 min async)
 ---
 
 ## Studio Activity
-**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic stand-in for a MICrONS subgraph, in the [Module 11 kit](/assets/kits/module11/README.md). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
+**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic subgraph invented for teaching, not sampled from any real dataset, in the [Module 11 kit](/assets/kits/module11/README.md). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 ---
 

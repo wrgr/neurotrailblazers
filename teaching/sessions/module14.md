@@ -111,7 +111,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum pass:** clear task-model rationale, biologically relevant metrics reported with merge and split separated, explicit limitations naming at least one unsupported use.
-- **Strong performance:** robust failure analysis by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
+- **Strong performance:** failure analysis tallied by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
 - **Failure modes:** metric-only reasoning, pooling clean and artifact-heavy regions into one number, weak split design, no deployment boundaries, thresholds chosen after seeing which model they would favor.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain

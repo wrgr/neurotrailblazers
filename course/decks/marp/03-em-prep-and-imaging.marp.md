@@ -97,7 +97,7 @@ Tie to the non-negotiable rule in unit §3: run a pilot reconstruction on someth
 
 - H01: a ~4 mm wedge of human temporal cortex.
 - 5,019 sections at 33.9 nm mean thickness.
-- 1.8 PB raw acquisition; 326 days of 61-beam microscope time.
+- 1.8 PB raw (1.4 PB aligned); 326 days on a 61-beam SEM (Shapson-Coe 2024).
 
 </div>
 </div>
@@ -105,7 +105,7 @@ Tie to the non-negotiable rule in unit §3: run a pilot reconstruction on someth
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Instructor script: "This is one of 5,019 sections. Imaging all of them took 326 days on a 61-beam microscope and produced 1.8 petabytes." Note the H01 case study's warning: 1.8 PB is the raw acquisition and 1.4 PB the aligned volume — the two get conflated constantly, so say which you mean.
+Instructor script: "This is one of 5,019 sections. The raw acquisition came to 1.8 petabytes; the aligned volume is 1.4." Note the H01 case study's warning: the two sizes get conflated, so say which you mean. The 326 imaging days come from the 2021 bioRxiv preprint (Shapson-Coe et al., doi:10.1101/2021.05.29.446289); the 2024 Science article does not state the duration, so attribute it when you quote it.
 Work the unit's acquisition-time arithmetic alongside: 800 µm cube at 4 x 4 x 40 nm is 8 x 10^14 px; at 0.2 gigapixels per second that is about 46 days of continuous imaging, about 77 at 60% uptime — before sectioning, QA or re-imaging.
 -->
 
@@ -215,4 +215,4 @@ For three artifact types, specify:
 ---
 
 ## Bridge
-Next unit: infrastructure for robust reconstruction once acquisition is trusted.
+Next unit: the infrastructure that turns trusted acquisition into a versioned reconstruction.

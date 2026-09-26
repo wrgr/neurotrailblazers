@@ -63,8 +63,7 @@ references:
   - "Gopen and Swan (1990) - The science of scientific writing."
   - "White et al. (1986) - foundational connectome reporting style."
   - "Januszewski et al. (2018) - modern method reporting and performance framing."
-videos:
-  - "https://www.neurotrailblazers.org/technical-training/journal-club/"
+videos: []
 downloads: []
 last_reviewed: 2026-03-11
 maintainer: "NeuroTrailblazers Team"
@@ -75,33 +74,37 @@ content_type: path
 Produce a manuscript-ready results section (figures, legends, and claims) where each conclusion is traceable to explicit connectomics evidence and stated limitations. Students will also be able to write methods sections with the level of detail required for connectomics reproducibility and respond to peer review with technically precise, non-defensive language.
 
 ## Why this module matters
-Connectomics results are often complex and high-dimensional. Weak writing can overstate conclusions, hide uncertainty, or make methods irreproducible. Strong scientific writing is not presentation polish; it is part of technical rigor. In connectomics specifically, the methods section carries unusual weight because readers must assess data quality, reconstruction fidelity, and proofreading completeness before they can evaluate any biological claim. A methods section that omits the dataset version, segmentation pipeline, or proofreading state is not merely incomplete --- it is scientifically irresponsible.
+Connectomics results are often complex and high-dimensional. Weak writing can overstate conclusions, hide uncertainty, or make methods irreproducible. Clear writing is part of technical rigor. In connectomics the methods section carries unusual weight, because readers must judge data quality, reconstruction fidelity, and proofreading completeness before they can evaluate any biological claim. A methods section that omits the dataset version, segmentation pipeline, or proofreading state leaves every result in the paper unverifiable.
 
 ## Concept set
 
 ### 1) Structure of a connectomics paper: methods are unusually important
 - **Technical:** in most neuroscience papers, the methods section is a reference appendix. In connectomics, it is primary evidence. Readers need to assess: What volume was imaged? At what resolution? What species, age, and preparation? Which segmentation algorithm was used, and what was the merge/split error rate? What proofreading version was the analysis based on? Was CAVE materialization pinned to a specific timestamp? Without these details, no biological claim is evaluable.
-- **Plain language:** in connectomics, how you got the data is as important as what the data shows. Your methods section is not boilerplate --- it is where skeptical readers will spend the most time.
-- **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
+- **Plain language:** in connectomics, how you got the data is as important as what the data shows. Skeptical readers spend the most time in your methods section.
+- **Misconception guardrail:** the methods section is a formality to write last.
+- **Why it fails:** in connectomics the methods constrain what you can legitimately claim, so draft them first.
 
 ### 2) Claim-evidence mapping
 - **Technical:** each claim should map to a figure panel, metric, and method reference. Build a claim-evidence matrix before drafting prose: one row per claim, columns for figure panel, statistical test, effect size, dataset version, and caveat. This matrix becomes the skeleton of your results section.
 - **Plain language:** no claim without visible evidence. If you cannot point to a specific figure panel and a specific number, the claim is unsupported.
-- **Misconception guardrail:** writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
+- **Misconception guardrail:** stronger language makes weak evidence more convincing.
+- **Why it fails:** adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals, and reviewers read them as a warning sign.
 
 ### 3) Writing about uncertainty and interpretation limits
 - **Technical:** connectomics data has characteristic uncertainty sources: segmentation errors (false merges and splits), synapse detection false positives/negatives, incomplete proofreading, boundary effects from finite volumes, and sampling bias from studying one animal or one brain region. Each of these should be acknowledged in the results and discussion with specific language: "Given the estimated false merge rate of X%, this connection count may overestimate true connectivity by up to Y%." Confidence levels should use calibrated language: "consistent with," "suggestive of," "insufficient evidence to distinguish from chance."
 - **Plain language:** show what you do not know yet, not just what you found. Readers respect honesty about limits more than they respect false confidence.
-- **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
+- **Misconception guardrail:** stating uncertainty makes a paper look weak.
+- **Why it fails:** uncertainty statements tell a reader what would reproduce and what might not. A paper that states its limits is more credible than one that ignores them.
 
 ### 4) Describing datasets with full provenance
 - **Technical:** every connectomics paper should specify: species and strain, animal age, tissue preparation method, EM imaging modality and resolution (e.g., "serial section TEM at 4x4x30 nm"), total volume dimensions, segmentation pipeline and version, proofreading version or CAVE materialization timestamp, and any filtering applied (e.g., "neurons with fewer than 5 synapses were excluded"). This information belongs in the methods section, not buried in supplementary materials.
 - **Plain language:** describe your dataset the way you would describe a reagent: precisely enough that someone else could find it and use it.
-- **Misconception guardrail:** assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
+- **Misconception guardrail:** readers will know which dataset version you used.
+- **Why it fails:** within one project (MICrONS, for example), different materialization versions produce different connectivity tables.
 
 ### 5) The methods reproducibility checklist
 - **Technical:** before submission, verify that your methods section includes:
-  - Dataset identifier and version (e.g., "MICrONS minnie65, CAVE materialization v795")
+  - Dataset identifier and version (e.g., "MICrONS minnie65_public, CAVE materialization v1300")
   - Segmentation pipeline name and version
   - Proofreading state and any manual corrections
   - Code repository URL with commit hash or release tag
@@ -109,22 +112,26 @@ Connectomics results are often complex and high-dimensional. Weak writing can ov
   - Hardware/software environment if compute-sensitive
   - Any data exclusion criteria with justification
 - **Plain language:** if someone cannot rerun your analysis from your methods section alone, it is not complete.
-- **Misconception guardrail:** linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
+- **Misconception guardrail:** a link to the code repository makes the analysis reproducible.
+- **Why it fails:** without a tagged release or a named commit in the methods, the link points at code that keeps changing.
 
 ### 6) Uncertainty-forward reporting
 - **Technical:** confidence intervals, error modes, and sampling limits belong in results and discussion, not only supplements. Report effect sizes alongside p-values. Use language that distinguishes statistical significance from biological significance. Separate confirmed findings from exploratory observations.
-- **Plain language:** show what you do not know yet, not just what you found.
-- **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals.
+- **Plain language:** a p-value says whether an effect is distinguishable from chance; the effect size and interval say whether it matters.
+- **Misconception guardrail:** confidence intervals can live in the supplement as long as the main text reports p-values.
+- **Why it fails:** a reader deciding whether to trust the headline needs the interval in the same sentence as the number.
 
 ### 7) References and citation practices in connectomics
 - **Technical:** connectomics has specific citation norms: cite the dataset paper (not just the project website), cite the segmentation method paper, cite proofreading tools used, and cite any community contributions (e.g., FlyWire community proofreaders). When using public datasets, follow the project's citation guidelines. Preprints should be cited as preprints, not as if they were peer-reviewed. When multiple versions of a dataset exist, cite the specific version used.
 - **Plain language:** give credit accurately and specifically. Citing "the FlyWire dataset" without the version or the community contribution paper is incomplete.
-- **Misconception guardrail:** assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
+- **Misconception guardrail:** citing the original EM paper covers all required attributions.
+- **Why it fails:** segmentation, proofreading, and annotation are separate contributions with their own papers and citation requests.
 
 ### 8) Reviewer-response engineering
 - **Technical:** responses should specify action taken, location of revision, and rationale when a request is declined. Use a structured format: quote the reviewer comment, state your response, and reference the specific manuscript location of any change. When you disagree with a reviewer, provide evidence rather than opinion.
 - **Plain language:** answer critiques like an engineer debugging a system. Be specific, be evidence-based, and be respectful.
-- **Misconception guardrail:** defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.
+- **Misconception guardrail:** a firm, defensive reply shows confidence in the work.
+- **Why it fails:** defensiveness costs credibility. Do not call a reviewer's comment "wrong"; give the evidence that supports your position.
 
 ## Core workflow: from analysis output to paper text
 1. **Evidence inventory**
@@ -160,7 +167,7 @@ Connectomics results are often complex and high-dimensional. Weak writing can ov
 ### Timing and instructor script
 
 **00:00-08:00 | Good writing vs bad writing in connectomics**
-Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, MICrONS v795)"; illustrative figures, not measured from a MICrONS release). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
+Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, release T17)"; invented figures from a fictional mouse cortex volume, not measured from any real dataset). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
 
 **08:00-18:00 | Claim-evidence matrix construction**
 Students receive the mock figure set and build a claim-evidence matrix. Instructor models the first row, then students complete three more rows independently. Instructor circulates, pushing students to be specific: "Which panel? What is the effect size? What is the caveat?"
@@ -188,7 +195,7 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
 ## Studio activity: claim-to-paragraph writing sprint
 {: #studio-activity}
 
-**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used a fictional mouse cortex volume, release T17, with synapse detection via the release's synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 **Tasks**
 1. Draft three result claims from the scenario above, each with different confidence levels (strong, moderate, exploratory).
@@ -212,7 +219,7 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
   - Methods include dataset version, pipeline, and key parameters.
   - Reviewer responses are specific and technically grounded.
 - **Strong performance**
-  - Clearly separates robust findings from tentative interpretations using calibrated language.
+  - Separates established findings from tentative interpretations using calibrated language.
   - Uses limitation language without weakening valid conclusions.
   - Improves reproducibility via concrete method-detail additions.
   - Reviewer responses include evidence and specific manuscript revision locations.
@@ -238,7 +245,7 @@ Students submit their claim-evidence matrix and one revised paragraph. Instructo
 - [White, J.G. et al. (1986). "The Structure of the Nervous System of the Nematode *Caenorhabditis elegans*." *Phil. Trans. R. Soc. Lond. B*, 314, 1-340.](https://doi.org/10.1098/rstb.1986.0056) --- the original connectome paper; study its methods section as a model of thoroughness.
 - [Januszewski, M. et al. (2018). "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods*, 15, 605-610.](https://doi.org/10.1038/s41592-018-0049-4) --- modern method reporting with performance metrics.
 - [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- exemplary dataset description and provenance reporting.
-- [MICrONS Consortium (2025). Visual cortex reconstruction. *Nature.*](https://www.nature.com/articles/s41586-025-08790-w) --- large-scale connectomics paper with detailed methods.
+- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- large-scale connectomics paper with detailed methods.
 
 ### Key datasets to practice on
 - [MICrONS Explorer](https://www.microns-explorer.org/)

@@ -41,7 +41,7 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 ## Concept Focus
 ### 1) Data cleaning in connectomics: what needs fixing and why
 - **Technical:** connectomics datasets arrive with characteristic quality issues that must be addressed before analysis:
-  - **Synapse table filtering:** automated synapse detection produces false positives (cleft detections at non-synaptic locations) and false negatives (missed synapses). Filtering typically uses a confidence score threshold (e.g., cleft score > 50 in CAVE synapse tables). The choice of threshold directly affects edge weights in the connectivity graph.
+  - **Synapse table filtering:** automated synapse detection produces false positives (cleft detections at non-synaptic locations) and false negatives (missed synapses). Filtering typically uses a confidence score threshold (e.g., a minimum cleft score; check the dataset's documentation for the recommended value). The choice of threshold directly affects edge weights in the connectivity graph.
 
 ---
 
@@ -59,7 +59,8 @@ Produce a reproducible preprocessing release that transforms raw or intermediate
 
 ## Concept Focus (continued)
 - **Plain language:** connectomics data is not "clean" when you receive it. Segmentation makes mistakes, synapse detection has false alarms, and the edges of the volume cut through neurons. You must fix these issues before analysis, but every fix is a decision that affects your results.
-- **Misconception guardrail:** "raw data is always better." In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.
+- **Misconception guardrail:** "raw data is always better."
+- **Why it fails:** raw segmentation output contains systematic artifacts that corrupt analysis if left in. You will clean; the question is how to clean transparently.
 
 ---
 
@@ -156,21 +157,17 @@ Materials
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** "raw data is always better." In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.
-- **Misconception guardrail:** there is no single "correct" threshold. If your result depends on a specific threshold choice, it is fragile and should be reported with a sensitivity analysis.
-- **Misconception guardrail:** more filtering is not always better. Aggressive cleaning can create the appearance of clean results while actually removing biological signal.
-
----
-
-## Misconceptions to Watch (continued)
-- **Misconception guardrail:** version-control notes alone are insufficient without data lineage. Git tracks code changes, but you also need to track which data version was processed with which code version.
-- **Misconception guardrail:** documenting preprocessing after the fact is unreliable. Document decisions in real time.
-- **Misconception guardrail:** reporting metrics without thresholds is not quality control. Every metric needs an associated action.
+- **Misconception guardrail:** "raw data is always better."
+- **Misconception guardrail:** there is one correct threshold, and finding it settles the question.
+- **Misconception guardrail:** more filtering always gives cleaner, better data.
+- **Misconception guardrail:** git history is enough provenance.
+- **Misconception guardrail:** preprocessing can be documented after the analysis is finished.
+- **Misconception guardrail:** reporting QC metrics is quality control.
 
 ---
 
 ## Studio Activity
-**Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** Your team receives a connectomics export from a fictional mouse cortex volume, release T18, containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 ---
 

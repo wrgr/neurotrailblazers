@@ -75,7 +75,7 @@ content_type: path
 Design and critique an ML analysis pipeline for connectomics that includes feature rationale, evaluation plan, leakage controls, and interpretation limits. Concretely: choose a split strategy from the leakage channels present in your data rather than from convention, pick metrics from the decision the model will support, quantify how much of your reported performance survives a harder split, and write a limitation statement specific enough that a reader knows which uses of your model you would refuse.
 
 ## Why this module matters
-ML accelerates connectomics analysis, and naive workflows produce misleading biological claims at the same speed. The characteristic failure is not a model that performs badly — it is a model that performs suspiciously well because the split leaked, and whose reported number then propagates into a paper as though it described generalization.
+ML accelerates connectomics analysis, and naive workflows produce misleading biological claims at the same speed. The typical failure is a model that performs suspiciously well because the split leaked. Its number then goes into a paper as though it described generalization.
 
 Connectomics is unusually leaky. Fragments of one neuron appear in many rows. Neighboring neurons share staining, imaging conditions, and section artifacts. Cell-type labels are often derived from connectivity, so a model predicting connectivity from cell type may be reading its own answer. The proofread subset is not a random sample of the volume: neurons get proofread because someone wanted them, which usually means they were large, central, or interesting. Every one of these is a channel by which test data informs training, and none of them is visible in a learning curve.
 
@@ -133,7 +133,7 @@ You have 4,000 labeled neurite fragments in five coarse classes and train a grad
 
 **Second question: what else do neighbors share?** Fragments from the same cortical column share staining, section artifacts, and alignment residual. Re-splitting into 100 µm spatial blocks gives 0.66. The assumption here is explicit and worth stating in the same sentence as the number: 100 µm blocks only block adjacency leakage if no relevant structure spans a block. Apical dendrites routinely span more than 100 µm, so this estimate is still slightly optimistic for dendrite-derived features.
 
-**Third question: does it transfer?** Evaluated on fragments from a second dataset with different staining, macro-F1 = 0.41, and the drop is not uniform — one class falls to near chance while three barely move. This is the finding, not a disappointment: the model has learned three classes robustly and two only in-domain.
+**Third question: does it transfer?** Evaluated on fragments from a second dataset with different staining, macro-F1 = 0.41, and the drop is not uniform — one class falls to near chance while three barely move. This is the finding, not a disappointment: the model has learned three classes in a way that transfers and two only in-domain.
 
 **Fourth question: does the aggregate hide the use case?** The intended use is ranking segments for proofreading. Per-class recall for the rarest class is 0.18 at the operating threshold, and that class is 4% of the sample, so it contributes almost nothing to macro-F1 either way. The metric that matters is precision at *k* = 500, the weekly review capacity — measured directly at 0.62, meaning roughly 310 of the 500 flagged segments contain a real error.
 
@@ -225,9 +225,9 @@ Machine learning is embedded at every stage of the reconstruction pipeline:
 | **Synapse detection** | Identify cleft locations + pre/post partners | 3D CNN on local patches | Expert-annotated synapse sets |
 | **Cell-type classification** | Assign neuron type from morphology/connectivity | Random forest, GNN, clustering | Morphologically typed neurons |
 | **Error detection** | Flag likely merge/split errors for proofreading | Classifier on segment features | Proofreading correction logs |
-| **Automated proofreading** | Suggest corrections | Reinforcement learning, heuristic models | Before/after correction pairs |
+| **Automated proofreading** | Suggest corrections | Learned merge/split scoring, heuristic models | Before/after correction pairs |
 
-**Domain shift is the central challenge:** A model trained on well-stained MICrONS data may fail on under-stained H01 regions, on different species (mouse → fly), or on tissue with pathology (near epileptic foci). Always evaluate on held-out data from the target domain, not just the training domain.
+**Domain shift is the central challenge:** A model trained on one volume may fail on a volume prepared, stained, or imaged differently (for example, moving from mouse visual cortex to human temporal cortex), on different species (mouse → fly), or on tissue with pathology (near epileptic foci). Always evaluate on held-out data from the target domain, not just the training domain.
 
 ## Common errors and how to recover
 
@@ -264,7 +264,7 @@ Machine learning is embedded at every stage of the reconstruction pipeline:
 
 ## References
 - Januszewski M et al. (2018) "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15(8):605-610.
-- Lee K et al. (2019) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
+- Lee K et al. (2017) "Superhuman accuracy on the SNEMI3D connectomics challenge." *arXiv:1706.00120*.
 - McInnes L et al. (2018) "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction." *arXiv:1802.03426*.
 - Ronneberger O et al. (2015) "U-Net: Convolutional Networks for Biomedical Image Segmentation." *MICCAI* 2015.
 

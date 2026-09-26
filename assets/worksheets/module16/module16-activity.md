@@ -47,7 +47,7 @@ Keep these in view. At the end, answer each in one sentence.
 2. **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
 3. **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
 4. **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
-5. **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
+5. **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis, or a Python library such as colorspacious). Verify grayscale legibility.
 6. **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 7. **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
 
@@ -69,7 +69,7 @@ is a decision; a skipped step without one is a gap.
 - [ ] **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
 - [ ] **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
 - [ ] **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
-- [ ] **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
+- [ ] **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis, or a Python library such as colorspacious). Verify grayscale legibility.
 - [ ] **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 - [ ] **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
 
@@ -103,11 +103,11 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: Making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
-- [ ] I did not assume: There is no single "best" visualization. The best choice depends on the claim.
-- [ ] I did not assume: Complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
-- [ ] I did not assume: Cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
-- [ ] I did not assume: Aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
+- [ ] I did not assume: A figure that looks good is a figure that tells the truth.
+- [ ] I did not assume: Each data type has one best chart.
+- [ ] I did not assume: A more complex figure shows a more rigorous analysis.
+- [ ] I did not assume: Removing error bars makes a plot cleaner and therefore better.
+- [ ] I did not assume: If the figure reads well on your screen, it reads well for everyone.
 
 ---
 
@@ -115,9 +115,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| | "Excitatory neurons in layer 4 receive more synaptic input than those in layer 2/3." |
-| | "Reciprocal connections are enriched between Martinotti cells." |
-| | "Axonal arbors of chandelier cells are spatially restricted to a 100-micron radius." |
+| 00:00-10:00 | Visual integrity gallery walk |
+| 10:00-20:00 | Claim-to-visual mapping exercise |
+| 20:00-35:00 | Figure draft build |
+| 35:00-47:00 | Uncertainty and quality overlays |
+| 47:00-55:00 | Peer critique and revision |
+| 55:00-60:00 | Competency check and wrap-up |
 
 ---
 

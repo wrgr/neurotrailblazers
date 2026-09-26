@@ -32,7 +32,7 @@
 <div>
 <div class="box">
 <p><strong>What this lecture is.</strong> The argument behind the one line a pipeline diagram gives this stage: what the task is, what has been tried, what the published numbers are, and what you have to measure before you are entitled to use somebody else's synapse table.</p>
-<p><strong>What it is not.</strong> Synapse biology — what a synapse is and how to recognise one by eye — is assumed, not taught.</p>
+<p><strong>What it is not.</strong> Synapse biology — what a synapse is and how to recognize one by eye — is assumed, not taught.</p>
 </div>
 </div>
 </div>
@@ -40,7 +40,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="3" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
 <h2 id="learning-objectives">Learning objectives</h2>
 <h3 id="by-the-end-of-this-lecture-you-will-be-able-to">By the end of this lecture you will be able to:</h3>
-<p><strong>1</strong> — <strong>Distinguish</strong> localisation, partner assignment and sign classification as separate problems that succeed and fail independently.</p>
+<p><strong>1</strong> — <strong>Distinguish</strong> localization, partner assignment and sign classification as separate problems that succeed and fail independently.</p>
 <p><strong>2</strong> — <strong>Interpret</strong> a published detector number by the unit it was measured at — synapse, interface, partner pair, or connection.</p>
 <p><strong>3</strong> — <strong>State</strong> what a CREMI score does and does not predict about performance on your data.</p>
 <p><strong>4</strong> — <strong>Explain</strong> how class-specific recall biases an excitatory/inhibitory ratio, and how much confidence a published correction deserves.</p>
@@ -57,7 +57,7 @@
 <p><strong>Part B — Benchmarks and the sign problem</strong> What CREMI measures and what it cannot; WASPSYN and the domain-shift problem; why excitatory versus inhibitory is the hardest of the three tasks.</p>
 </div>
 <div>
-<p><strong>Part C — Using somebody else's synapse table</strong> A worked judgement on H01's excitatory/inhibitory balance; why detectors do not transfer; the checklist to run before trusting a table.</p>
+<p><strong>Part C — Using somebody else's synapse table</strong> A worked judgment on H01's excitatory/inhibitory balance; why detectors do not transfer; the checklist to run before trusting a table.</p>
 <div class="box box--good">
 <p><strong>Bring to each part:</strong> a synapse table you have used or plan to use. By the end you should be able to say what its recall is in your region — or that nobody knows.</p>
 </div>
@@ -91,17 +91,17 @@
 <h2 id="the-three-residuals">The three residuals</h2>
 <h3 id="what-a-table-audit-needs-to-establish">What a table audit needs to establish</h3>
 <p><strong>1 — Recall is not symmetric.</strong> H01's detector missed <strong>11%</strong> of excitatory and <strong>35%</strong> of inhibitory synapses. Unequal detection recall biases raw class counts; binary-edge performance does not repair a count ratio.</p>
-<p><strong>2 — Partner assignment is weaker than localisation</strong>, and much weaker where synapses are polyadic. Buhmann et al. report F1 from <strong>0.59 to 0.73</strong> across four areas <em>of the same fly brain</em>.</p>
+<p><strong>2 — Partner assignment is weaker than localization</strong>, and much weaker where synapses are polyadic. Buhmann et al. report F1 from <strong>0.59 to 0.73</strong> across four areas <em>of the same fly brain</em>.</p>
 <p><strong>3 — Transfer is the operational cost.</strong> A detector trained on one volume does not move to another without new ground truth. As of 2025, the cross-dataset benchmarks say this is still open.</p>
 <div class="box box--good">
-<p><strong>The honest budget line</strong> is not &quot;we must solve synapse detection&quot;. It is: run the established detector, then spend your effort establishing what its recall and partner accuracy are <em>in your region</em>, and report the table's provenance.</p>
+<p><strong>The realistic budget line:</strong> run the established detector, then spend your effort establishing what its recall and partner accuracy are <em>in your region</em>, and report the table's provenance.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-class="part" data-theme="frontiers" lang="en-US" class="part" data-marpit-pagination="8" style="--paginate:true;--class:part;--theme:frontiers;" data-marpit-pagination-total="39">
 <h1 id="part-a">Part A</h1>
 <h3 id="three-problems-and-the-published-record">Three problems and the published record</h3>
 <ul>
-<li>Localisation, partner assignment, sign</li>
+<li>Localization, partner assignment, sign</li>
 <li>What has been tried, with numbers</li>
 <li>Reading numbers that are not on a common scale</li>
 </ul>
@@ -110,7 +110,7 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="9" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
 <h2 id="three-problems-not-one">Three problems, not one</h2>
 <h3 id="synapse-detection-names-at-least-three-tasks-that-succeed-and-fail-independently">&quot;Synapse detection&quot; names at least three tasks that succeed and fail independently</h3>
-<p><strong>1 — Localisation.</strong> Find the synapse. Depending on the method: segment the synaptic cleft as a set of voxels, predict a point annotation for the presynaptic site, or classify the <em>interface</em> between two already-segmented processes as synaptic or not.</p>
+<p><strong>1 — Localization.</strong> Find the synapse. Depending on the method: segment the synaptic cleft as a set of voxels, predict a point annotation for the presynaptic site, or classify the <em>interface</em> between two already-segmented processes as synaptic or not.</p>
 <p><strong>2 — Partner assignment.</strong> Given a synapse, say which segment is presynaptic and which postsynaptic. A separate learning problem: Buhmann et al. (2021) and Turner et al. (2020) each treat it as its own network; Huang et al. (2018) use a U-Net for presynaptic sites and a separate multilayer perceptron, conditioned on the local segmentation, for postsynaptic partners.</p>
 <p><strong>3 — Sign or type.</strong> Excitatory or inhibitory. In mammalian cortex this is read from postsynaptic-density morphology; in <em>Drosophila</em>, from transmitter identity predicted from ultrastructure (Eckstein et al., 2024). <strong>The hardest of the three</strong> — Part B.</p>
 </section>
@@ -182,7 +182,7 @@
 <td><strong>Huang et al.</strong></td>
 <td>2018</td>
 <td>Presynaptic sites (U-Net) + postsynaptic partners (MLP)</td>
-<td>Introduced connectome-scale evaluation metrics; most connectivity characterised correctly</td>
+<td>Introduced connectome-scale evaluation metrics; most connectivity characterized correctly</td>
 <td><em>Drosophila</em>, polyadic</td>
 </tr>
 </tbody>
@@ -234,7 +234,7 @@
 <td><strong>SimpSyn</strong> (Mohinta et al.)</td>
 <td>2025</td>
 <td>Dual-channel spherical masks at pre- and postsynaptic sites, single-stage residual U-Net</td>
-<td>Beats Synful in F1 on all volumes of a four-dataset invertebrate benchmark; <strong>generalisation across datasets remains limited</strong></td>
+<td>Beats Synful in F1 on all volumes of a four-dataset invertebrate benchmark; <strong>generalization across datasets remains limited</strong></td>
 <td>Adult and larval <em>Drosophila</em>, <em>Megaphragma viggianii</em></td>
 </tr>
 </tbody>
@@ -286,7 +286,7 @@
 <p class="ask">Park et al.'s F1 of 0.955 is the highest per-synapse score on the previous two slides. What would you need to know before calling it the best detector?</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="14" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
-<h2 id="reading-the-table-aggregation-is-doing-enormous-work">Reading the table: aggregation is doing enormous work</h2>
+<h2 id="reading-the-table-aggregation-changes-the-number">Reading the table: aggregation changes the number</h2>
 <div class="cols">
 <div>
 <p><strong>SynEM, from above.</strong> Per-synapse and binary-connectome scores use different evaluation units. Table 3 also varies score and connection thresholds.</p>
@@ -299,7 +299,7 @@
 <p>For most connectomics, that is the edge, not the synapse.</p>
 </div>
 <div class="box">
-<p><strong>The field's accounting has moved.</strong> Huang et al. (2018) observed that as segmentation improved, synapse annotation came to consume &quot;upwards of 50% of total effort&quot;. That is roughly when synapse detection stopped being the pipeline's afterthought — and why the later methods are about partners and generalisation rather than finding clefts.</p>
+<p><strong>The field's accounting has moved.</strong> Huang et al. (2018) observed that as segmentation improved, synapse annotation came to consume &quot;upwards of 50% of total effort&quot;. That is roughly when synapse detection stopped being the pipeline's afterthought — and why the later methods are about partners and generalization rather than finding clefts.</p>
 </div>
 </div>
 </div>
@@ -353,12 +353,12 @@
 </tr>
 <tr>
 <td><strong>Connectivity</strong> (partner identification)</td>
-<td>F-measure over matched (pre, post) pairs, matched by an assignment problem minimising Euclidean distance within a threshold</td>
+<td>F-measure over matched (pre, post) pairs, matched by an assignment problem minimizing Euclidean distance within a threshold</td>
 </tr>
 </tbody>
 </table>
 <div class="box">
-<p><strong>What the scoring does not do:</strong> require a predicted cleft to overlap the ground truth voxel-for-voxel — only to fall within a distance tolerance. Cleft detection is <strong>localisation with slack</strong>, which is why methods that regress a distance transform (Heinrich et al., 2018) do well on it.</p>
+<p><strong>What the scoring does not do:</strong> require a predicted cleft to overlap the ground truth voxel-for-voxel — only to fall within a distance tolerance. Cleft detection is <strong>localization with slack</strong>, which is why methods that regress a distance transform (Heinrich et al., 2018) do well on it.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="18" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
@@ -388,12 +388,12 @@
 <div>
 <div class="box box--warn">
 <p><strong>The number that defines the problem.</strong></p>
-<p>Manual annotation is so expensive that labelled training data is &quot;often <strong>smaller than 0.001%</strong> of the large-scale image volumes in application&quot;.</p>
+<p>Manual annotation is so expensive that labeled training data is &quot;often <strong>smaller than 0.001%</strong> of the large-scale image volumes in application&quot;.</p>
 </div>
 </div>
 </div>
 <div class="box box--good">
-<p><strong>That ratio, not any single F1, is why cross-dataset generalisation is the live question.</strong> 0.001% is one part in 100,000: a detector is applied to volumes five orders of magnitude larger than anything it was shown labelled.</p>
+<p><strong>That ratio, not any single F1, is why cross-dataset generalization is the live question.</strong> 0.001% is one part in 100,000: a detector is applied to volumes five orders of magnitude larger than anything it was shown labeled.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="20" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
@@ -434,7 +434,7 @@
 </div>
 <div>
 <div class="box box--warn">
-<p><strong>The consequence for a detector is stark.</strong></p>
+<p><strong>The consequence for a detector.</strong></p>
 <p>The feature your inhibitory classifier depends on is <strong>partly a property of the sample-preparation recipe</strong>, not only of the tissue.</p>
 <p>A classifier trained on one lab's staining is being asked to transfer <strong>across chemistry</strong>, not just across brains.</p>
 </div>
@@ -518,7 +518,7 @@
 <h1 id="part-c">Part C</h1>
 <h3 id="using-somebody-elses-synapse-table">Using somebody else's synapse table</h3>
 <ul>
-<li>A worked judgement: H01's excitatory/inhibitory balance</li>
+<li>A worked judgment: H01's excitatory/inhibitory balance</li>
 <li>Why detectors do not transfer</li>
 <li>The checklist, and bounding your own risk</li>
 </ul>
@@ -629,7 +629,7 @@
 <p><strong>2 — Comparisons are safer than absolutes.</strong> For two regions processed by the same detector and staining, the <em>difference</em> in E/I ratio survives a shared bias that the absolute value does not.</p>
 <p><strong>3 — The bias is not random, so more data will not fix it.</strong> Ten times the volume buys a tighter interval around the wrong number.</p>
 <div class="box box--good">
-<p><strong>Back to the cold open.</strong> A defensible sentence: <em>&quot;74.2% of automatically detected synapses were classified excitatory; the authors' correction for class-specific detection rates, estimated from proofread axons, gives 67.1%.&quot;</em> Two numbers, both labelled.</p>
+<p><strong>Back to the cold open.</strong> A defensible sentence: <em>&quot;74.2% of automatically detected synapses were classified excitatory; the authors' correction for class-specific detection rates, estimated from proofread axons, gives 67.1%.&quot;</em> Two numbers, both labeled.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-class="dense" data-theme="frontiers" lang="en-US" class="dense" data-marpit-pagination="31" style="--paginate:true;--class:dense;--theme:frontiers;" data-marpit-pagination-total="39">
@@ -671,10 +671,10 @@
 <h2 id="the-honest-summary-is-narrower-than-models-do-not-transfer">The honest summary is narrower than &quot;models do not transfer&quot;</h2>
 <div class="cols">
 <div>
-<p><strong>Within a volume and preparation, spatial generalisation is often fine.</strong> Heinrich et al. report that their model, trained on CREMI's small annotated crops, &quot;generalizes well to areas far away from where training data was available&quot; — across a whole fly brain, including lamina.</p>
+<p><strong>Within a volume and preparation, spatial generalization is often fine.</strong> Heinrich et al. report that their model, trained on CREMI's small annotated crops, &quot;generalizes well to areas far away from where training data was available&quot; — across a whole fly brain, including lamina.</p>
 <p><strong>Across preparations, it is not.</strong></p>
 <ul>
-<li><strong>SimpSyn:</strong> across four invertebrate datasets, generalisation remains limited even for the model that wins within each.</li>
+<li><strong>SimpSyn:</strong> across four invertebrate datasets, generalization remains limited even for the model that wins within each.</li>
 <li><strong>SynapseNet</strong> pairs a large annotated training set with explicit domain-adaptation functionality.</li>
 <li><strong>WASPSYN</strong> exists because methods that &quot;utilize in-domain labeled data and generalize to out-of-domain unlabeled data are in urgent need&quot;.</li>
 </ul>
@@ -682,7 +682,7 @@
 <div>
 <div class="box box--good">
 <p><strong>The distinction is operational.</strong></p>
-<p><strong>Analysing one released volume?</strong> Its detector was probably trained on that volume; the within-sample evidence applies to you.</p>
+<p><strong>Analyzing one released volume?</strong> Its detector was probably trained on that volume; the within-sample evidence applies to you.</p>
 <p><strong>Bringing a published detector to new tissue?</strong> You are in the regime where the evidence says it will degrade — <strong>by an amount nobody can tell you in advance.</strong></p>
 </div>
 </div>
@@ -768,7 +768,7 @@
 </div>
 </div>
 <div class="box">
-<p><strong>And the follow-up question worth asking of any answer:</strong> which number is it — the count of a biased measurement, or the estimate from a proofread sample? Both are legitimate. Unlabelled, neither is.</p>
+<p><strong>And the follow-up question worth asking of any answer:</strong> which number is it — the count of a biased measurement, or the estimate from a proofread sample? Both are legitimate. Unlabeled, neither is.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-theme="frontiers" lang="en-US" data-marpit-pagination="36" style="--paginate:true;--theme:frontiers;" data-marpit-pagination-total="39">
@@ -798,13 +798,13 @@
 <div class="cols">
 <div>
 <p><strong>The source page.</strong> <em>Synapse Detection</em> in the NeuroTrailblazers content library — this lecture's full argument, with every number linked to its paper.</p>
-<p><strong>Neighbouring pages.</strong> Reconstruction pipeline (where this stage sits); Metrics and QA (the metric definitions); Synapse classification (the biology this lecture presupposes); Provenance and versioning (pinning the table you used); the H01 case study (the volume behind Part C).</p>
+<p><strong>Neighboring pages.</strong> Reconstruction pipeline (where this stage sits); Metrics and QA (the metric definitions); Synapse classification (the biology this lecture presupposes); Provenance and versioning (pinning the table you used); the H01 case study (the volume behind Part C).</p>
 <p><strong>Hands-on.</strong> Technical training Unit 08, segmentation and proofreading.</p>
 </div>
 <div>
 <div class="box box--good">
 <p><strong>The one idea to carry forward.</strong></p>
-<p>Cleft detection is solved. <strong>What a synapse table can support is not a property of the detector</strong> — it is a property of its recall by class, its partner accuracy in your region, and whether it was evaluated on your preparation.</p>
+<p>Cleft detection works well in evaluated tissue. <strong>What a synapse table can support depends on</strong> its recall by class, its partner accuracy in your region, and whether it was evaluated on your preparation.</p>
 <p>Measure those, or report that nobody has.</p>
 </div>
 </div>
@@ -823,11 +823,11 @@
 <h3 id="these-slides-are-openly-licensed-for-community-use">These slides are openly licensed for community use</h3>
 <div class="cols">
 <div>
-<p><strong>Licence: CC BY-SA 4.0</strong><br />
+<p><strong>License: CC BY-SA 4.0</strong><br />
 Creative Commons Attribution-ShareAlike 4.0 International.<br />
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
 <p><strong>You may</strong> teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and <strong>re-cut, shorten, translate, restyle, or merge them into your own material</strong> — and distribute the result. No permission needed.</p>
-<p><strong>Two conditions.</strong> <em>Attribution</em> — credit the original, link the licence, and say if you changed anything. <em>ShareAlike</em> — distribute your adapted version under this same licence, so it stays as open as what it came from.</p>
+<p><strong>Two conditions.</strong> <em>Attribution</em> — credit the original, link the license, and say if you changed anything. <em>ShareAlike</em> — distribute your adapted version under this same license, so it stays as open as what it came from.</p>
 </div>
 <div>
 <p><strong>How to credit</strong></p>
@@ -837,15 +837,15 @@ Creative Commons Attribution-ShareAlike 4.0 International.<br />
 <p><strong>Improved something?</strong> The project would like to hear about it — open an issue.</p>
 </div>
 </div>
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
 </script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>This lecture is built from one page of the NeuroTrailblazers content library,
 &quot;Synapse Detection&quot;, and every number on these slides comes from that page and the
 papers it cites. If you are adapting it, the page is the place to check a figure.
 
-The goal is not that the room leaves able to train a detector. It is that they leave
-able to download somebody else's synapse table and say what it can and cannot support.</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Take answers, then explain that 88% per synapse is insufficient to predict an
+The goal is that the room leaves able to download somebody else's synapse table and
+say what it can and cannot support. Training a detector is out of scope.</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Take answers, then explain that 88% per synapse is insufficient to predict an
 edge-level score. Contact multiplicity, thresholds and correlated errors matter.
 SynEM's results illustrate this distinction, not a universal conversion rule.</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>Use Staffler et al. Table 3, not an implied 88-to-97 transformation. The same trained
 model can be operated at different score thresholds and connection rules. Local

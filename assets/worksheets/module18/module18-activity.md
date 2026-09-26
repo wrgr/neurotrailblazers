@@ -41,7 +41,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** Your team receives a connectomics export from MICrONS minnie65 (CAVE materialization v795) containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** Your team receives a connectomics export from a fictional mouse cortex volume, release T18, containing: a synapse table (4.2 million rows) with confidence scores, a segment table (120,000 segments) with volumes, and a cell-type annotation table (8,400 classified neurons). Initial inspection reveals: 12% of synapses have confidence scores below 30, 35,000 segments have fewer than 2 synapses, 847 segments intersect the volume bounding box, and 23 segment IDs appear in the synapse table but not in the segment table. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 1. **Artifact triage:** classify each issue (low-confidence synapses, small segments, boundary neurons, orphan IDs) by likely biological impact and propose a cleaning policy for each.
 2. **Threshold justification:** for synapse confidence and segment size thresholds, propose two candidate values each and argue for your preferred choice. Explain what biological signal you might lose at each threshold.
@@ -98,12 +98,12 @@ Why:
 These are the errors this module is designed to prevent. Confirm you did not make
 them, or note where you nearly did:
 
-- [ ] I did not assume: "raw data is always better." In connectomics, raw segmentation output contains systematic artifacts that will corrupt analysis if left uncleaned. The question is not whether to clean, but how to clean transparently.
-- [ ] I did not assume: There is no single "correct" threshold. If your result depends on a specific threshold choice, it is fragile and should be reported with a sensitivity analysis.
-- [ ] I did not assume: More filtering is not always better. Aggressive cleaning can create the appearance of clean results while actually removing biological signal.
-- [ ] I did not assume: Version-control notes alone are insufficient without data lineage. Git tracks code changes, but you also need to track which data version was processed with which code version.
-- [ ] I did not assume: Documenting preprocessing after the fact is unreliable. Document decisions in real time.
-- [ ] I did not assume: Reporting metrics without thresholds is not quality control. Every metric needs an associated action.
+- [ ] I did not assume: "raw data is always better."
+- [ ] I did not assume: There is one correct threshold, and finding it settles the question.
+- [ ] I did not assume: More filtering always gives cleaner, better data.
+- [ ] I did not assume: Git history is enough provenance.
+- [ ] I did not assume: Preprocessing can be documented after the analysis is finished.
+- [ ] I did not assume: Reporting QC metrics is quality control.
 
 ---
 

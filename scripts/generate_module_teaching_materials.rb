@@ -387,8 +387,19 @@ module_paths.each do |path|
   task_steps = bullet_or_dash(numbered_steps(activity_section), [])
   task_steps = bullet_or_dash(numbered_steps(workflow_section), []) if task_steps.empty?
   workflow_steps = bullet_or_dash(numbered_steps(workflow_section), [])
-  run_steps = bullet_or_dash(numbered_steps(run_of_show), [])
+  # Only steps that carry a time range belong in the timing table. Module 01 nests a
+  # numbered list of case studies inside a block, and taking every numbered item put
+  # those case studies in the Time column.
+  time_range = /\d{1,2}:\d{2}\s*[-\u2013\u2014]\s*\d{1,2}:\d{2}/
+  run_steps = bullet_or_dash(numbered_steps(run_of_show), []).select { |r| r.match?(time_range) }
   run_steps = bullet_or_dash(timed_lines(run_of_show), []) if run_steps.empty?
+  if run_steps.empty?
+    # Modules whose steps are "### Block 1: Opening hook (00:00-12:00)" headings.
+    run_steps = run_of_show.each_line.map(&:strip).filter_map do |ln|
+      m = ln.match(/\A###\s+(.+?)\s*\((#{time_range.source})\)\s*\z/)
+      "#{m[2]} | #{m[1]}" if m
+    end
+  end
   rubric_rows = rubric_tiers(rubric_section)
   misconceptions = bullet_or_dash(misconception_items(concept_section), [])
   preclass = bullet_or_dash(list_items(section(body, 'Pre-class')), [])
@@ -437,7 +448,11 @@ module_paths.each do |path|
     else
       run_steps.map do |r|
         clean = r.gsub('**', '').strip.sub(/\A\d+\.\s+/, '')
-        time, _, rest = clean.partition(/\s*[|:\u2014-]\s+/)
+        if (lead = clean.match(/\A(\d{1,2}:\d{2}\s*[-\u2013\u2014]\s*\d{1,2}:\d{2})\s*[|:\u2014-]?\s*(.+)\z/))
+          time, rest = lead[1], lead[2]
+        else
+          time, _, rest = clean.partition(/\s*[|:\u2014-]\s+/)
+        end
         if rest.to_s.strip.empty? || !time.match?(/\d/)
           "| | #{clean.gsub('|', '/')} |"
         else

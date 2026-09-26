@@ -62,7 +62,7 @@ A segmented neuron occupies millions of voxels in the EM volume. To analyze its 
 
 <!--
 Pre-class preparation (10 min async)
-  Review the data formats content library entry (skeletons section)
+  Review the skeletons section of [Data formats and representations](/content-library/infrastructure/data-formats/)
   Install/check NeuroM or equivalent morphology analysis package, or use `morphometry.py` in the [Module 09 kit](/assets/kits/module09/README.md), which needs no install
   Minute-by-minute plan
 

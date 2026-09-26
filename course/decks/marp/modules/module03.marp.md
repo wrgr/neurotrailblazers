@@ -40,7 +40,7 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 
 ## Concept Focus
 ### 1) Python as the lingua franca of connectomics
-- **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Familiarity with these libraries is not optional --- it is the baseline for participation.
+- **Technical:** the connectomics ecosystem is built on Python. CAVEclient queries the CAVE database for synapses, segments, and annotations. CloudVolume accesses volumetric data (EM images, segmentation volumes). NetworkX and igraph construct and analyze circuit graphs. NumPy and pandas handle numerical and tabular data. Matplotlib and Plotly produce publication-quality visualizations. Every later module assumes you can use them.
 - **Plain language:** if connectomics has a common language, it is Python.
 
 ---
@@ -72,7 +72,7 @@ Create a reproducible Jupyter notebook that ingests a connectomics dataset slice
 
 <!--
 Block 1: Notebook anatomy (00:00-12:00)
-  Instructor script: "Open a new notebook with me. Before we write any code, let's lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
+  Instructor script: "Open a new notebook with me. Before we write any code, we lay out its structure." Create the five sections of a well-organized notebook as empty markdown headings:
   Header: title, author, date, dataset version, materialization version.
   Setup: imports and environment configuration.
   Data loading: queries and schema validation.
@@ -81,7 +81,7 @@ Block 1: Notebook anatomy (00:00-12:00)
   Then make a bad notebook from a copy of the good one while the class watches: run cells out of order, delete the markdown, and define a variable in a cell you then delete. Put the two side by side and ask: "Which one would you trust for a paper?"
 
 Block 2: Environment setup and library tour (12:00-28:00)
-  Instructor script: "Let's set up our environment. Everyone run the first cell." Walk through installing and importing the core libraries:
+  Instructor script: "Set up your environment first. Everyone run the first cell." Walk through installing and importing the core libraries:
   `pip install caveclient cloud-volume networkx pandas matplotlib`
   Demonstrate `pip freeze > requirements.txt` for version pinning.
   Live demo of each library (2-3 minutes each):
@@ -102,7 +102,7 @@ Block 3: Guided analysis sprint (28:00-50:00)
   Instructor circulates and helps with errors. Common issues: authentication tokens, version mismatches, column name typos.
 
 Block 4: Visualization and export (50:00-65:00)
-  Instructor script: "A plot without labels is not a figure --- it is a sketch. Let's make yours publication-ready."
+  Instructor script: "A plot without labels is a sketch. Make yours publication-ready."
   Learners add: axis labels, title, legend, caption in a markdown cell below the figure.
   Export figure as PNG and SVG. Export data table as CSV with a header comment recording the query parameters and materialization version.
   Demonstrate saving a metadata JSON file: `{"dataset": "...", "materialization_version": ..., "query_date": "...", "parameters": {...}}`.
@@ -145,7 +145,7 @@ Block 6: Competency check and exit ticket (80:00-90:00)
 
 ## Assessment Rubric
 - **Minimum:** runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.
-- **Strong:** clean linear structure, robust error handling, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
+- **Strong:** clean linear structure, error handling that says what failed, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
 - **Failure:** hidden state dependencies, undocumented assumptions, plots without labels, no dataset version recorded.
 
 ---

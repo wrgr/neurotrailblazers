@@ -40,7 +40,7 @@ Write one connectomics study question with measurable structural outputs and one
 
 ## Concept Focus
 ### 1) Question before method
-- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). Tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). FlyWire and CAVE answer the queries you give them; they do not choose the query.
 - **Plain language:** know what you are asking first.
 - **Misconception guardrail:** tools generate good questions automatically.
 
@@ -57,7 +57,7 @@ Write one connectomics study question with measurable structural outputs and one
 
 ## Run of Show (90 min)
 - Block 1: Opening hook (00:00-12:00)
-- Block 2: Connectomics landscape (12:00-28:00)
+- Block 2: Three projects, three driving questions (12:00-28:00)
 - Block 3: Question framing workshop (28:00-48:00)
 - Block 4: Evidence-boundary critique (48:00-65:00)
 - Block 5: Motivation statement drafting (65:00-80:00)
@@ -68,10 +68,10 @@ Block 1: Opening hook (00:00-12:00)
   Instructor script: "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. its reconstruction (the raw and segmented H01 pair in Step 6 of [H01, Step by Step](/content-library/case-studies/h01-pipeline/) works). Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
   Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.
 
-Block 2: Connectomics landscape (12:00-28:00)
-  Instructor script: "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
+Block 2: Three projects, three driving questions (12:00-28:00)
+  Instructor script: "Three real projects, and the question behind each." Walk through three case studies in 5 minutes each:
   C. elegans (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
-  FlyWire whole-brain (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
+  FlyWire whole-brain (Dorkenwald et al., 2024): 139,255 neurons, proofread by a consortium of 287 researchers in at least 76 labs plus volunteers, first whole-brain connectome of an adult animal with complex behavior.
   MouseConnects HI-MC (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
   After each case study, ask: "What question drove this project?" Write answers on board.
 
@@ -91,7 +91,7 @@ Block 5: Motivation statement drafting (65:00-80:00)
 
 Block 6: Exit ticket (80:00-90:00)
   Submit: (1) your testable question with metric, dataset, and non-claim; (2) your motivation statement.
-  Instructor script: "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
+  Instructor script: "Keep these two documents. Reread the motivation statement when the work gets tedious, and bring both to Module 25, where the portfolio asks how your question changed."
 -->
 
 ---

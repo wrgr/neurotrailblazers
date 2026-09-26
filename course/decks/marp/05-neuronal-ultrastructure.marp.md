@@ -74,7 +74,7 @@ Instructor move: for each compartment on the diagram, ask the room which organel
 <p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S08.</p>
 
 <!--
-This anchors the soma end of the compartment table: rough ER and a nucleus put you in a cell body, the one place where the ribosome cue is unambiguous rather than a judgement call. Point out the mitochondrion's double membrane and cristae — mitochondria are everywhere except thin spine necks, so they are consistent with every compartment and discriminate none.
+This anchors the soma end of the compartment table: rough ER and a nucleus put you in a cell body, the one place where the ribosome cue is unambiguous rather than a judgment call. Point out the mitochondrion's double membrane and cristae — mitochondria are everywhere except thin spine necks, so they are consistent with every compartment and discriminate none.
 -->
 
 ---
@@ -113,8 +113,8 @@ Instructor script: "Same cue, real human tissue, rendered from the public H01 vo
 </div>
 <div>
 
-- Labelled 'dendrite' by H01's own subcompartment model.
-- Large branched mitochondria — an organelle cue that excludes axonal identity.
+- Labeled 'dendrite' by H01's own subcompartment model.
+- Large branched mitochondria: an organelle cue that argues against axonal identity.
 
 </div>
 </div>
@@ -166,7 +166,7 @@ Check size against the table before naming anything: clear synaptic vesicles run
 
 ![h:400](../../../assets/images/technical-training/05-neuronal-ultrastructure/FIG-RIV-ULTRA-S20-01.png)
 
-<p class="caption">Read the labelled schematic first, then find each part in the micrograph beside it.</p>
+<p class="caption">Read the labeled schematic first, then find each part in the micrograph beside it.</p>
 
 <p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S20.</p>
 
@@ -187,7 +187,7 @@ The schematic names the presynaptic terminal, presynaptic and postsynaptic membr
 <p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-ULTRA S24.</p>
 
 <!--
-Build a full evidence chain in the form of the unit's worked example — geometry, organelle content, synaptic role, neighbourhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply. Stopping there, and saying so, is the correct output.
+Build a full evidence chain in the form of the unit's worked example — geometry, organelle content, synaptic role, neighborhood — and stop at the point where the chain would need continuity across sections that a single still cannot supply. Stopping there, and saying so, is the correct output.
 -->
 
 ---
@@ -202,7 +202,7 @@ Build a full evidence chain in the form of the unit's worked example — geometr
 <!--
 Define the tiers operationally (unit §3). High: two or more independent cues agree and continuity across three or more sections confirms. Medium: one strong cue, or two non-independent cues. Uncertain: cues conflict, or the decisive cue is not visible.
 "Uncertain" is a valid and valuable output. A dataset with 8% of calls flagged uncertain with reasons is more useful than one with 100% forced — the uncertain set is exactly the review queue.
-Independent cue families: geometry and caliber; organelle content; synaptic role; neighbourhood; long-range continuity. Two cues from different families is the checkable rule for high confidence.
+Independent cue families: geometry and caliber; organelle content; synaptic role; neighborhood; long-range continuity. Two cues from different families is the checkable rule for high confidence.
 -->
 
 ---

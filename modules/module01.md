@@ -71,7 +71,7 @@ Motivation drives persistence, but technical progress requires disciplined quest
 ## Concept set
 
 ### 1) Question before method
-- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). Tools like FlyWire or CAVE are powerful but directionless without a hypothesis.
+- **Technical:** define target measurement before tool choice. A well-formed connectomics question specifies the circuit, the organism, the resolution, and the expected structural readout (e.g., synapse count, path length, motif frequency). FlyWire and CAVE answer the queries you give them; they do not choose the query.
 - **Plain language:** know what you are asking first.
 - **Misconception guardrail:** tools generate good questions automatically.
 
@@ -96,12 +96,12 @@ Motivation drives persistence, but technical progress requires disciplined quest
 - **Misconception guardrail:** if the work feels tedious, you chose the wrong field.
 
 ### 6) Growth mindset in technical training
-- **Technical:** errors are learning opportunities, not failures. In proofreading, every false merge you catch teaches you about the segmentation algorithm's failure modes. Every split error reveals tissue preparation artifacts. Tracking your error patterns builds expertise faster than avoiding mistakes; even expert proofreaders disagree on 5-10% of decisions.
+- **Technical:** errors are learning opportunities, not failures. In proofreading, every false merge you catch teaches you about the segmentation algorithm's failure modes. Every split error reveals tissue preparation artifacts. Tracking your error patterns builds expertise faster than avoiding mistakes, and even expert proofreaders disagree on some calls.
 - **Plain language:** mistakes teach you what the computer got wrong and why.
 - **Misconception guardrail:** good annotators never make errors.
 
 ### 7) The connectomics "why"
-- **Technical:** linking daily annotation work to the larger scientific mission of understanding brain circuits. Each proofread neuron contributes to a wiring diagram that enables circuit-level hypotheses about sensory processing, motor control, learning, and disease. The FlyWire project demonstrated that distributed annotation by 287 contributors could produce a whole-brain connectome.
+- **Technical:** linking daily annotation work to the larger scientific mission of understanding brain circuits. Each proofread neuron contributes to a wiring diagram that enables circuit-level hypotheses about sensory processing, motor control, learning, and disease. The FlyWire project demonstrated that distributed annotation, by a consortium of 287 researchers in at least 76 labs plus citizen-science volunteers, could produce a whole-brain connectome.
 - **Plain language:** every neuron you trace is a sentence in the story of how brains work.
 - **Misconception guardrail:** my individual contribution is too small to matter.
 
@@ -136,10 +136,10 @@ You arrive with the question "how does memory work?" That is a real motivation a
 - **Instructor script:** "Welcome. Today we answer one question: why would anyone spend years mapping brain wires? Let me show you." Play 3-minute clip from Sebastian Seung's TED talk. Then show a before/after of a raw EM image vs. its reconstruction (the raw and segmented H01 pair in Step 6 of [H01, Step by Step]({{ '/content-library/case-studies/h01-pipeline/' | relative_url }}) works). Ask: "What questions could you answer with this reconstruction that you could not answer with the raw image?"
 - Collect 3-4 responses on whiteboard. Highlight that each response implies a different measurement.
 
-### Block 2: Connectomics landscape (12:00-28:00)
-- **Instructor script:** "Let's ground this in real projects." Walk through three case studies in 5 minutes each:
+### Block 2: Three projects, three driving questions (12:00-28:00)
+- **Instructor script:** "Three real projects, and the question behind each." Walk through three case studies in 5 minutes each:
   1. **C. elegans** (White et al., 1986): the first complete connectome. 302 neurons. What it enabled, what it could not explain.
-  2. **FlyWire whole-brain** (Dorkenwald et al., 2024): 130,000+ neurons, 287 proofreaders, first whole-brain connectome of an adult animal with complex behavior.
+  2. **FlyWire whole-brain** (Dorkenwald et al., 2024): 139,255 neurons, proofread by a consortium of 287 researchers in at least 76 labs plus volunteers, first whole-brain connectome of an adult animal with complex behavior.
   3. **MouseConnects HI-MC** (ongoing): scaling to the mouse hippocampus at 10 mm³, the challenge of petascale data.
 - After each case study, ask: "What question drove this project?" Write answers on board.
 
@@ -159,7 +159,7 @@ You arrive with the question "how does memory work?" That is a real motivation a
 
 ### Block 6: Exit ticket (80:00-90:00)
 - Submit: (1) your testable question with metric, dataset, and non-claim; (2) your motivation statement.
-- **Instructor script:** "These two documents are your compass for the rest of the program. We will revisit them in Module 06."
+- **Instructor script:** "Keep these two documents. Reread the motivation statement when the work gets tedious, and bring both to Module 25, where the portfolio asks how your question changed."
 
 ## Studio activity: "Write your connectomics motivation statement"
 {: #studio-activity}
@@ -221,6 +221,7 @@ You arrive with the question "how does memory work?" That is a real motivation a
 ## Teaching resources
 - [Technical Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }})
 - [Journal Club]({{ '/technical-training/journal-club/' | relative_url }})
+- Workshop for the motivation gap: [The Resilient STEM Scholar]({{ '/teaching/pathways/resilient-scholar/' | relative_url }})
 
 ## Academic references
 - White, J. G., Southgate, E., Thomson, J. N., & Brenner, S. (1986). The structure of the nervous system of the nematode *Caenorhabditis elegans*. *Philosophical Transactions of the Royal Society B*, 314(1165), 1-340.

@@ -133,11 +133,11 @@ That proofreading rates transfer across datasets. They do not; calibrate per vol
 
 <!-- _class: stat -->
 
-<p class="big">2,000<span style="font-size:0.45em"> GB</span></p>
+<p class="big">~2<span style="font-size:0.45em"> PB</span></p>
 
-Per cubic millimetre of imaged cortex, before any reconstruction. The infrastructure unit exists because of this number.
+Raw EM imagery for about one cubic millimeter of mouse cortex, before any reconstruction. The infrastructure unit exists because of this number.
 
-<p class="source">Source: Unit 04, Volume reconstruction infrastructure; MICrONS data release.</p>
+<p class="source">Source: MICrONS Consortium (2025), <em>Nature</em>, doi:10.1038/s41586-025-08790-w; Unit 04, Volume reconstruction infrastructure.</p>
 
 ---
 
@@ -172,7 +172,7 @@ Per cubic millimetre of imaged cortex, before any reconstruction. The infrastruc
 
 <div class="good">
 
-**Good callout.** The behaviour that separates a practitioner from someone who followed the steps.
+**Good callout.** The behavior that separates a practitioner from someone who followed the steps.
 
 </div>
 
@@ -192,7 +192,7 @@ Use sparingly, for the one slide where the room should sit up.
 
 <div class="key">
 
-**Key point.** Structure is evidence of organisation and constraint, <strong>not</strong> direct proof of dynamics. The connectome bounds what the circuit can do; it does not say what it did.
+**Key point.** Structure is evidence of organization and constraint, <strong>not</strong> direct proof of dynamics. The connectome bounds what the circuit can do; it does not say what it did.
 
 </div>
 

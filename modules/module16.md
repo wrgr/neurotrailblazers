@@ -60,7 +60,9 @@ prerequisites_list:
 next_modules:
   - "module17"
 references:
-  - "Visualization best-practice resources and connectomics exemplars."
+  - "Tufte ER (1983) The Visual Display of Quantitative Information. Graphics Press."
+  - "Borland D, Taylor RM (2007) Rainbow color map (still) considered harmful. IEEE Computer Graphics and Applications 27(2):14-17."
+  - "Weissgerber TL et al. (2015) Beyond bar and line graphs: time for a new data presentation paradigm. PLoS Biology 13(4):e1002128."
 videos: []
 downloads: []
 last_reviewed: 2026-03-11
@@ -72,14 +74,15 @@ content_type: path
 Produce a figure set that communicates connectomics findings accurately, including uncertainty and data-quality context, for both expert and mixed audiences. Students will leave this module able to choose the right visualization form for a given scientific claim, build publication-quality figures using standard tools, and defend every design choice in terms of clarity and honesty.
 
 ## Why this module matters
-Poor visual design can create false confidence and hide limitations. In connectomics, visualizations are often used as primary evidence: a node-link diagram of a circuit motif, a heatmap of synaptic connectivity, or a 3D rendering of a reconstructed neuron may be the single most important piece of evidence for a paper's central claim. If that figure misleads --- through cluttered layout, inappropriate color scales, gratuitous 3D, or invisible uncertainty --- the science itself is compromised. Visualization is communication, not decoration.
+Poor visual design can create false confidence and hide limitations. In connectomics, visualizations are often used as primary evidence: a node-link diagram of a circuit motif, a heatmap of synaptic connectivity, or a 3D rendering of a reconstructed neuron may be the single most important piece of evidence for a paper's central claim. If that figure misleads through cluttered layout, a distorting color scale, needless 3D, or hidden uncertainty, the reader draws the wrong conclusion from correct data.
 
 ## Concept set
 
 ### 1) Visualization as communication, not decoration
 - **Technical:** every visual encoding (position, color, size, shape, opacity) carries information. Encodings that do not map to data dimensions are noise. The goal of a scientific figure is to make the reader's correct interpretation as effortless as possible.
 - **Plain language:** a figure should help people understand your result, not impress them with complexity.
-- **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
+- **Misconception guardrail:** a figure that looks good is a figure that tells the truth.
+- **Why it fails:** a polished 3D rendering with no scale bar and no uncertainty indicator tells the reader less than a plain but complete 2D plot.
 
 ### 2) Choosing the right plot type for connectomics data
 - **Technical:** connectomics generates diverse data types, each with preferred visual forms:
@@ -90,7 +93,8 @@ Poor visual design can create false confidence and hide limitations. In connecto
   - **Sholl plots** quantify dendritic/axonal arborization by counting intersections at increasing radii from the soma, revealing branching complexity in a single 2D chart.
   - **Histograms and violin plots** for distributions of synapse counts, segment sizes, and other scalar metrics.
 - **Plain language:** match your chart type to the question you are answering. "What is the circuit topology?" calls for a node-link diagram. "How strong are connections between cell types?" calls for a heatmap.
-- **Misconception guardrail:** there is no single "best" visualization. The best choice depends on the claim.
+- **Misconception guardrail:** each data type has one best chart.
+- **Why it fails:** the right form depends on the claim; the same matrix can need a heatmap for one sentence and a node-link diagram for another.
 
 ### 3) Common visualization mistakes in connectomics
 - **Technical:**
@@ -100,17 +104,20 @@ Poor visual design can create false confidence and hide limitations. In connecto
   - **Missing scale bars and axis labels:** a reconstruction rendering without a scale bar is uninterpretable. An adjacency matrix without labeled rows/columns is useless.
   - **Overplotting:** when thousands of synapses overlap, individual points disappear. Use density plots, transparency, or binning.
 - **Plain language:** the most common mistakes are showing too much at once, using colors that lie about magnitude, and using 3D for flash rather than function.
-- **Misconception guardrail:** complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
+- **Misconception guardrail:** a more complex figure shows a more rigorous analysis.
+- **Why it fails:** complexity hides the claim. Aim for the simplest figure that is still complete.
 
 ### 4) Uncertainty must be visible
 - **Technical:** confidence intervals, confidence classes, and missingness indicators should be explicit in every figure that supports a quantitative claim. Strategies include error bars, shaded confidence bands, hatching for uncertain regions, and explicit "data not available" markers for boundary neurons or unproofread segments.
 - **Plain language:** show what is uncertain, not only what is central. If a synapse count could be off by 20%, the reader needs to know.
-- **Misconception guardrail:** cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
+- **Misconception guardrail:** removing error bars makes a plot cleaner and therefore better.
+- **Why it fails:** a plot that hides uncertainty is less honest than one that shows it.
 
 ### 5) Accessibility and colorblind-safe design
-- **Technical:** approximately 8% of males and 0.5% of females have color vision deficiency. Figures that rely on red-green discrimination exclude these readers. Use colorblind-safe palettes (e.g., Okabe-Ito, ColorBrewer qualitative palettes) and redundant encoding (color + shape, color + pattern). Ensure sufficient contrast for printing in grayscale. Keep annotation density manageable --- overcrowded labels defeat the purpose.
+- **Technical:** among people of Northern European ancestry, about 8% of males and 0.5% of females have color vision deficiency. Figures that rely on red-green discrimination exclude these readers. Use colorblind-safe palettes (e.g., Okabe-Ito, ColorBrewer qualitative palettes) and redundant encoding (color + shape, color + pattern). Ensure sufficient contrast for printing in grayscale. Keep annotation density manageable --- overcrowded labels defeat the purpose.
 - **Plain language:** if people cannot read it, they cannot evaluate it. Design for the widest possible audience.
-- **Misconception guardrail:** aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
+- **Misconception guardrail:** if the figure reads well on your screen, it reads well for everyone.
+- **Why it fails:** red-green contrasts, thin lines, and low-contrast labels lock out readers with color vision deficiency or a grayscale printout.
 
 ## Tools for connectomics visualization
 
@@ -121,7 +128,7 @@ Browser-based volumetric visualization for EM data, segmentation overlays, and m
 The workhorses of 2D figure generation in Python. Matplotlib excels at publication-quality static figures with fine-grained control. Plotly provides interactive figures useful for exploration and web-based sharing. Both support adjacency matrices, histograms, violin plots, Sholl plots, and scatter plots.
 
 ### Blender and ParaView
-For high-quality 3D renderings of neuronal morphologies and circuit reconstructions. Blender produces photorealistic images suitable for journal covers and presentations. ParaView handles large-scale scientific datasets with built-in volume rendering. Both have steep learning curves but produce results unmatched by simpler tools.
+For high-quality 3D renderings of neuronal morphologies and circuit reconstructions. Blender produces photorealistic images suitable for journal covers and presentations. ParaView handles large-scale scientific datasets with built-in volume rendering. Both take time to learn; use them when a figure needs a rendering that Neuroglancer screenshots cannot give.
 
 ### napari
 Python-based multi-dimensional image viewer for volume data. Supports overlaying segmentation masks on EM imagery, annotating structures, and integrating with analysis pipelines through its plugin ecosystem. Lighter-weight than Neuroglancer for local exploration.
@@ -131,7 +138,7 @@ Python-based multi-dimensional image viewer for volume data. Supports overlaying
 2. **Select the appropriate plot type.** Use the decision framework: topology questions get node-link diagrams or matrices; quantity questions get heatmaps or bar charts; spatial questions get renderings; distribution questions get histograms or violins.
 3. **Draft candidate visuals with uncertainty layers.** Include error bars, confidence bands, or explicit missing-data indicators from the start --- do not plan to "add them later."
 4. **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
-5. **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
+5. **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis, or a Python library such as colorspacious). Verify grayscale legibility.
 6. **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 7. **Export figure package with caption metadata.** Include figure files at publication resolution (300+ DPI for raster, vector preferred), caption text, and a note on the dataset version and code used to generate each panel.
 
@@ -147,7 +154,7 @@ Python-based multi-dimensional image viewer for volume data. Supports overlaying
 ### Timing and instructor script
 
 **00:00-10:00 | Visual integrity gallery walk**
-Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Let us learn why."
+Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Now name the feature that triggered it."
 
 **10:00-20:00 | Claim-to-visual mapping exercise**
 Instructor presents three scientific claims from a mock connectomics study:
@@ -180,7 +187,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 
 **Figure 1 task:** Create an adjacency heatmap of the cell-type connectivity matrix. Choose an appropriate colormap, add a colorbar with units, order rows and columns by hierarchical clustering, and annotate the diagonal. Include hatching or transparency for cell-type pairs with fewer than 10 observed connections.
 
-**Figure 2 task:** Generate Sholl plots for the three example neurons (one excitatory, one inhibitory basket cell, one inhibitory chandelier cell). Use distinct colorblind-safe colors with a legend. Add shaded confidence bands reflecting reconstruction uncertainty. Include a scale bar and soma marker.
+**Figure 2 task:** Generate Sholl plots for the three example neurons (one excitatory, one inhibitory basket cell, one inhibitory chandelier cell). Use distinct colorblind-safe colors with a legend. Add shaded confidence bands reflecting reconstruction uncertainty. Label the radius axis in µm and mark radius zero as the soma.
 
 **Figure 3 task:** Produce a synapse count distribution comparison across cortical layers using violin plots. Add individual data points as jittered dots. Include a statistical annotation (e.g., effect size with confidence interval, not just a p-value star).
 
@@ -212,7 +219,7 @@ Each student submits one revised figure with a two-sentence caption. Instructor 
 - [Tufte, E. (1983). *The Visual Display of Quantitative Information.*](https://www.edwardtufte.com/tufte/books_vdqi) --- foundational principles of data visualization integrity.
 - [Borland, D. and Taylor, R.M. (2007). "Rainbow Color Map (Still) Considered Harmful."](https://doi.org/10.1109/MCG.2007.323435) --- why perceptually uniform colormaps matter.
 - [Weissgerber, T.L. et al. (2015). "Beyond Bar and Line Graphs."](https://doi.org/10.1371/journal.pbio.1002128) --- showing distributions, not just summaries.
-- [MICrONS Consortium (2025). Visual cortex reconstruction. *Nature.*](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary connectomics figure design.
+- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature*, 640.](https://www.nature.com/articles/s41586-025-08790-w) --- exemplary connectomics figure design.
 - [Shapson-Coe, A. et al. (2024). H01 human cortical fragment. *Science.*](https://www.science.org/doi/10.1126/science.adk4858) --- large-scale visualization of human connectomics data.
 
 ### Key tools and resources

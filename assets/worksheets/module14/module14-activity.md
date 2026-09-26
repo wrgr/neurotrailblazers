@@ -117,12 +117,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| | 00:00-08:00 task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer. |
-| | 08:00-20:00 choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output. |
-| | 20:00-34:00 evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit](/assets/kits/module14/README.md)), then solve for the break-even merge-to-split ratio. |
-| | 34:00-46:00 error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed. |
-| | 46:00-56:00 model card drafting, including at least one unsupported use and the region breakdown of the metrics. |
-| 56:00-60:00 competency check | each learner states their release gate as a sentence that could fail. |
+| 00:00-08:00 | task framing + exemplar failure modes. Show one split and one merge in the viewer and ask which is worse; collect reasons before giving the answer. |
+| 08:00-20:00 | choose metrics tied to downstream biology. Each learner writes the metric they would gate on and the threshold, before seeing any model output. |
+| 20:00-34:00 | evaluate baseline vs candidate model. Learners compute or are given VI components, ERL, and error counts for two models (`model_comparison.csv` in the [Module 14 kit](/assets/kits/module14/README.md)), then solve for the break-even merge-to-split ratio. |
+| 34:00-46:00 | error taxonomy and triage discussion. Sample failure cases (from the kit's `failure_cases.csv`, or from the subvolume learners brought), classify each by cause, and identify which causes augmentation could have addressed. |
+| 46:00-56:00 | model card drafting, including at least one unsupported use and the region breakdown of the metrics. |
+| 56:00-60:00 | competency check: each learner states their release gate as a sentence that could fail. |
 
 ---
 
@@ -132,7 +132,7 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass:** clear task-model rationale, biologically relevant metrics reported with merge and split separated, explicit limitations naming at least one unsupported use.
-- **Strong performance:** robust failure analysis by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
+- **Strong performance:** failure analysis tallied by cause, a release gate written before the result was known, and a downstream cost argument that names the merge-to-split ratio as a measured quantity rather than an assumption.
 - **Failure modes:** metric-only reasoning, pooling clean and artifact-heavy regions into one number, weak split design, no deployment boundaries, thresholds chosen after seeing which model they would favor.
 
 **My self-assessment:**

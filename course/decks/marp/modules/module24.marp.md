@@ -126,8 +126,8 @@ Draft one 5-sentence mentor outreach email with an alignment statement naming a 
 ---
 
 ## References (Instructor)
-- NASEM mentorship reports and graduate-training guidance.
-- Program-specific admissions and lab websites.
+- National Academies of Sciences, Engineering, and Medicine (2019) The Science of Effective Mentorship in STEMM. National Academies Press.
+- National Academies of Sciences, Engineering, and Medicine (2018) Graduate STEM Education for the 21st Century. National Academies Press.
 
 ---
 

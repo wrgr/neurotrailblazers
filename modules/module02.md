@@ -66,7 +66,7 @@ content_type: path
 Create a personal research-navigation plan that includes role expectations, communication scripts, and mentor support pathways. Demonstrate understanding of research ethics norms specific to connectomics, including data attribution, responsible use of human tissue data, and collaborative proofreading etiquette.
 
 ## Why this module matters
-Every research environment operates on two sets of rules: the official ones (written in handbooks and syllabi) and the unofficial ones (learned through trial, error, and observation). The "hidden curriculum" includes how to ask a question in lab meeting without sounding dismissive, how to credit a colleague who helped debug your code, how to admit you do not understand something without losing credibility, and how to navigate the hierarchy from undergraduate to PI. In connectomics, these norms are amplified by the field's inherently collaborative structure: the FlyWire whole-brain connectome was produced by 287 proofreaders across dozens of institutions. Knowing how to collaborate, attribute, and communicate is not a soft skill --- it is a core technical competency.
+Every research environment operates on two sets of rules: the official ones (written in handbooks and syllabi) and the unofficial ones (learned through trial, error, and observation). The "hidden curriculum" includes how to ask a question in lab meeting without sounding dismissive, how to credit a colleague who helped debug your code, how to admit you do not understand something without losing credibility, and how to navigate the hierarchy from undergraduate to PI. Connectomics raises the stakes because the work is collaborative by construction: the FlyWire whole-brain connectome came from a consortium of hundreds of researchers in dozens of labs, plus citizen-science volunteers. In a project that size, how you collaborate, attribute, and communicate decides whether your work is used and credited. Treat it as part of the technical skill set.
 
 ## Concept set
 
@@ -83,7 +83,7 @@ Every research environment operates on two sets of rules: the official ones (wri
 - **In practice:** Public availability does not eliminate the need for proper attribution, version tracking, and responsible interpretation.
 
 ### 3) Collaboration norms in large-scale projects
-- **Technical:** connectomics is inherently collaborative. The FlyWire project coordinated 287 proofreaders across time zones and institutions. MICrONS involved teams at the Allen Institute, Princeton, and Baylor. Effective collaboration requires shared conventions for naming, version control, conflict resolution, and communication channels. Disagreements about segment boundaries are resolved through consensus protocols, not authority.
+- **Technical:** connectomics is inherently collaborative. The FlyWire project coordinated hundreds of researchers in dozens of labs, plus citizen-science volunteers, across time zones and institutions. MICrONS involved teams at the Allen Institute, Princeton, and Baylor. Effective collaboration requires shared conventions for naming, version control, conflict resolution, and communication channels. Each project sets its own rule for resolving disagreements about segment boundaries; learn yours before you need it.
 - **Plain language:** you will work with many people; learn the rules of teamwork before you need them.
 - **Misconception:** research is a solitary activity.
 - **In practice:** Modern connectomics is closer to open-source software development than to the lone-genius model.
@@ -127,15 +127,15 @@ Every research environment operates on two sets of rules: the official ones (wri
 - For each scenario, collect 2-3 responses from learners, then present a recommended approach.
 
 ### Block 2: Role and expectation mapping (15:00-30:00)
-- **Instructor script:** "Every research team has roles. Let's map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
+- **Instructor script:** "Every research team has roles. We will map them." Draw a role diagram on the board: PI, postdoc, graduate student, undergraduate, technician, proofreader, data manager. For each role, ask: "What does this person expect from you? What can you expect from them?"
 - Learners fill in a three-column role-expectation table (role, what this person expects from you, what you can expect from them) for their own research setting (or a hypothetical one).
 - Discuss: where do expectations conflict? Where are they ambiguous?
 
 ### Block 3: Ethics in connectomics (30:00-45:00)
-- **Instructor script:** "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. Let's talk about what that means."
+- **Instructor script:** "Connectomics data is not just pixels. It comes from real organisms, sometimes from human patients. What does that ask of you?"
 - Cover three ethics topics:
   1. **Data provenance:** every analysis should reference a specific dataset version. Show how CAVE materialization versions work.
-  2. **Attribution:** the 287 FlyWire proofreaders were co-authors. Discuss what fair attribution looks like at scale.
+  2. **Attribution:** the FlyWire Consortium is credited as an author of the whole-brain paper. Discuss what fair attribution looks like at scale.
   3. **Human tissue:** discuss IRB requirements, de-identification, and the responsibility that comes with working on data derived from surgical patients.
 - Group discussion: "What ethical situation might you encounter in your work? How would you handle it?"
 
@@ -193,12 +193,14 @@ Every research environment operates on two sets of rules: the official ones (wri
 - [Start Here]({{ '/start-here/' | relative_url }})
 - [Learner Personas]({{ '/avatars/' | relative_url }})
 - [Dataset Access Guide]({{ '/datasets/access/' | relative_url }})
+- [The hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) — the collected norms this module starts from
+- Workshop that continues this module: [Orientation]({{ '/teaching/pathways/orientation/' | relative_url }})
 
 ## Academic references
 - Dorkenwald, S., et al. (2024). Neuronal wiring diagram of an adult brain. *Nature*, 634, 124-138.
 - Cossell, L., et al. (2015). Functional organization of excitatory synaptic strength in primary visual cortex. *Nature*, 518(7539), 399-403.
 - National Academies of Sciences, Engineering, and Medicine. (2018). *Graduate STEM Education for the 21st Century*. The National Academies Press.
-- Margolis, E., & Romero, M. (2001). *The Hidden Curriculum in Higher Education*. Routledge.
+- Margolis, E. (Ed.). (2001). *The Hidden Curriculum in Higher Education*. Routledge.
 - MICrONS Consortium. (2021). Functional connectomics spanning multiple areas of mouse visual cortex. *bioRxiv*. https://doi.org/10.1101/2021.07.28.454025
 - Lichtman, J. W., Pfister, H., & Shavit, N. (2014). The big data challenges of connectomics. *Nature Neuroscience*, 17(11), 1448-1454.
 

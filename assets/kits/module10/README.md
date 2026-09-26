@@ -9,7 +9,7 @@
 The graph for the Module 10 graph analysis report: 500 neurons in a
 400 x 400 x 950 µm synthetic cortical column, 11,388 directed edges at a
 threshold of one synapse (55% of them carry exactly
-one synapse). It stands in for a MICrONS column;
+one synapse). It is shaped like a column extracted from a real cortical volume but is not one;
 the [Dataset Access](/datasets/access/) page lists how to pull a real one.
 
 | File | What it is |

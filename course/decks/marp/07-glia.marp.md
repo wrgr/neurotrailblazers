@@ -58,7 +58,7 @@ Instructor script: "Again the bias points toward an interesting result. That is 
 <p class="source">Source: Pat Rivlin training materials (MICrONS proofreading deck), RIV-GLIA S01.</p>
 
 <!--
-Set the stake before anyone starts looking: a glia–neuron merge does not merely add a branch — it drags a neuron's arbor past synapses it never contacted, so the false-input yield per micrometre of merged path is unusually high.
+Set the stake before anyone starts looking: a glia–neuron merge does not merely add a branch — it drags a neuron's arbor past synapses it never contacted, so the false-input yield per micrometer of merged path is unusually high.
 Each glial class has one near-diagnostic feature. Learn those three first: astrocyte — glycogen granules; oligodendrocyte — the darkest nucleus in the field; microglia — a dense elongated nucleus plus lysosomal content.
 -->
 
@@ -66,13 +66,13 @@ Each glial class has one near-diagnostic feature. Learn those three first: astro
 
 <!-- _class: figure -->
 
-## Astrocyte morphology in a synaptic neighbourhood
+## Astrocyte morphology in a synaptic neighborhood
 
 ![h:400](../../../assets/images/technical-training/07-glia/FIG-RIV-GLIA-S03-01.png)
 
 <p class="caption">An astrocytic process is space-filling; a neurite is a tube.</p>
 
-<p class="source">Source: Ventura RE, "Astrocytes," SynapseWeb (Kristen M. Harris Lab, UT Austin), synapseweb.clm.utexas.edu/astrocytes. &copy; The University of Texas at Austin; no reuse licence is stated &mdash; confirm permission before this deck is shared outside the course.</p>
+<p class="source">Source: Ventura RE, "Astrocytes," SynapseWeb (Kristen M. Harris Lab, UT Austin), synapseweb.clm.utexas.edu/astrocytes. &copy; The University of Texas at Austin; no reuse license is stated &mdash; confirm permission before this deck is shared outside the course.</p>
 
 <!--
 Read cross-sectional shape before anything else. An astrocytic process takes whatever contour is left over after the neurites pack; a neurite holds a tube shape of its own. That cue survives weak staining better than glycogen granules do, which makes it the one to reach for where everything else fails.
@@ -81,7 +81,7 @@ Other astrocyte cues from unit §2: pale "watery" cytoplasm with few organelles;
 
 ---
 
-## Real data: an astrocytic process
+## Real data: an astrocyte cell body
 
 <div class="cols">
 <div>
@@ -91,8 +91,8 @@ Other astrocyte cues from unit §2: pale "watery" cytoplasm with few organelles;
 </div>
 <div>
 
-- Pale cytoplasm, irregular space-filling outline that wraps its neighbours.
-- Labelled 'astrocyte' by H01's subcompartment model.
+- Part of the soma: pale cytoplasm beside the curved nuclear envelope (right). Not a fine process.
+- Labeled 'astrocyte' by H01's subcompartment model.
 
 </div>
 </div>
@@ -100,8 +100,8 @@ Other astrocyte cues from unit §2: pale "watery" cytoplasm with few organelles;
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Instructor script: "Trace the outline with your finger. Does it hold its own shape, or does it fill the gaps the neurites left?"
-Use the unit's check-yourself: a pale, irregular profile between three neurites, no glycogen visible. Probably astrocytic — medium confidence at best. Absence of glycogen is weak evidence because granules are clustered and sparse. Better evidence, in order: space-filling behaviour over several sections; no vesicles or PSD on it; continuity to an endfoot; microtubules at higher magnification.
+Instructor script: "Is this a fine process or a cell body? Find the nucleus first." The curved membrane at right is the nuclear envelope, so this is soma. The space-filling test belongs to fine processes, which this frame does not show.
+Then use the unit's check-yourself for fine processes: a pale, irregular profile between three neurites, no glycogen visible. Probably astrocytic — medium confidence at best. Absence of glycogen is weak evidence because granules are clustered and sparse. Better evidence, in order: space-filling behavior over several sections; no vesicles or PSD on it; continuity to an endfoot; microtubules at higher magnification.
 -->
 
 ---
@@ -125,7 +125,7 @@ Use the unit's check-yourself: a pale, irregular profile between three neurites,
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Walk the unit's worked example here: a pale profile a few hundred nanometres thick, pressed flat against a capillary, currently assigned to a nearby dendrite. Rule out synaptic participation first — even when the vascular context is shouting the answer. Glycogen absent: weak evidence, noted not spent. Over 5–10 sections the contour spreads to track the vessel wall: space-filling. Context: a flattened expansion covering a vessel is an endfoot. Dismiss microglia for cause — the parent process is pale and organelle-poor, not inclusion-rich.
+Walk the unit's worked example here: a pale profile a few hundred nanometers thick, pressed flat against a capillary, currently assigned to a nearby dendrite. Rule out synaptic participation first — even when the vascular context is shouting the answer. Glycogen absent: weak evidence, noted not spent. Over 5–10 sections the contour spreads to track the vessel wall: space-filling. Context: a flattened expansion covering a vessel is an endfoot. Dismiss microglia for cause — the parent process is pale and organelle-poor, not inclusion-rich.
 Call: astrocytic endfoot, high confidence; the dendrite assignment is a glia–neuron merge and goes above conspicuous splits in the queue.
 -->
 
@@ -185,7 +185,7 @@ Instructor script: "If you remember one thing about oligodendrocytes, it is the 
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-The panel highlights every myelinated axon the H01 myelin mask finds in one grey-matter field — a small minority of profiles in cortex. Instructor cue: ask how myelin context changes proofreading priority. Context cues from the protocol: the inner or outer tongue of a myelin sheath, or a paranodal loop, is a high-confidence oligodendrocyte call.
+The panel highlights every myelinated axon the H01 myelin mask finds in one gray-matter field — a small minority of profiles in cortex. Instructor cue: ask how myelin context changes proofreading priority. Context cues from the protocol: the inner or outer tongue of a myelin sheath, or a paranodal loop, is a high-confidence oligodendrocyte call.
 -->
 
 ---
@@ -247,4 +247,4 @@ Classify two ambiguous glia-neuron interfaces and submit:
 ## References and attribution
 - Figures RIV-GLIA: Pat Rivlin training materials (MICrONS proofreading deck).
 - Real-data figures: H01 release, Shapson-Coe et al. (2024), doi:10.1126/science.adk4858.
-- Harris & Weinberg (2012), *Cold Spring Harb Perspect Biol*, doi:10.1101/cshperspect.a005587 — synaptic neighbourhood context.
+- Harris & Weinberg (2012), *Cold Spring Harb Perspect Biol*, doi:10.1101/cshperspect.a005587 — synaptic neighborhood context.

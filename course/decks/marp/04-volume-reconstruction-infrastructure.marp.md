@@ -41,7 +41,7 @@ Ingest -> Transform -> Inference -> Post-process -> Serving
 Reliability and lineage are first-class scientific requirements.
 
 <!--
-Expand the five boxes into the unit's eight stages, naming the artifact each produces — the artifact is what you debug. Ingest: an immutable, checksummed archive (the only irreplaceable asset). Stitching and alignment: a volume plus a versioned transform stack. Boundary/affinity prediction: a per-voxel map, computed over overlapping blocks. Supervoxels: deliberately over-segmented, immutable atoms. Agglomeration: a grouping of atoms, not a new labelling. Derived geometry: meshes, skeletons, per-object stats. Synapse detection: a table keyed to supervoxel IDs. Annotation and serving: Neuroglancer, proofreading, versioned tables.
+Expand the five boxes into the unit's eight stages, naming the artifact each produces — the artifact is what you debug. Ingest: an immutable, checksummed archive (the only irreplaceable asset). Stitching and alignment: a volume plus a versioned transform stack. Boundary/affinity prediction: a per-voxel map, computed over overlapping blocks. Supervoxels: deliberately over-segmented, immutable atoms. Agglomeration: a grouping of atoms, not a new labeling. Derived geometry: meshes, skeletons, per-object stats. Synapse detection: a table keyed to supervoxel IDs. Annotation and serving: Neuroglancer, proofreading, versioned tables.
 -->
 
 ---
@@ -92,7 +92,7 @@ Idempotence: re-running a stage on the same inputs and parameters gives the same
 <div>
 
 - Flood-filling network output: 197 distinct objects in this one field.
-- Every colour is an object the pipeline asserts is continuous in 3D.
+- Every color is an object the pipeline asserts is continuous in 3D.
 
 </div>
 </div>
@@ -100,8 +100,8 @@ Idempotence: re-running a stage on the same inputs and parameters gives the same
 <p class="source">Source: H01 release (Lichtman Lab, Harvard; Connectomics at Google), CC BY 4.0 · Shapson-Coe et al. 2024, doi:10.1126/science.adk4858 · site render.</p>
 
 <!--
-Instructor script: "Pick one colour and follow it. The pipeline is asserting that object is one continuous piece of one cell, across sections you cannot see on this slide."
-Architecturally, each of those objects is a connected component of a graph whose nodes are immutable supervoxels. A merge is adding an edge — microseconds, not gigabytes. A split is removing edges via a minimum cut. Every edit is an append-only log entry with author and timestamp.
+Instructor script: "Pick one color and follow it. The pipeline is asserting that object is one continuous piece of one cell, across sections you cannot see on this slide."
+Architecturally, each of those objects is a connected component of a graph whose nodes are immutable supervoxels. A merge is adding an edge: seconds of work (median ~4 s in CAVE, per Module 8), not gigabytes of rewritten voxels. A split is removing edges via a minimum cut. Every edit is an append-only log entry with author and timestamp.
 -->
 
 ---
@@ -134,7 +134,7 @@ Without this, outputs are not auditable science.
 
 <!--
 Unit §4 adds: container image digest, random seeds, wall-clock and resource usage. And for analyses: the materialization version is a first-class part of the methods section, like a genome build.
-Worked example from the unit: a figure reports 1,412 inputs; re-running today gives 1,530 for "the same cell". Pinning the query to candidate versions shows the figure used materialization 795; the edit log shows merges that reattached distal dendrite, carrying the 118 extra inputs. Both numbers are correct — for different objects. The original claim was under-specified, not wrong.
+Worked example from the unit (an invented case; T795 is a fictional release label, not a real MICrONS version): a figure reports 1,412 inputs; re-running today gives 1,530 for "the same cell". Pinning the query to candidate versions shows the figure used materialization T795; the edit log shows merges that reattached distal dendrite, carrying the 118 extra inputs. Both numbers are correct — for different objects. The original claim was under-specified, not wrong.
 -->
 
 ---

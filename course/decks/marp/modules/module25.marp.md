@@ -126,7 +126,7 @@ Choose one artifact and write its four lines: one competency claim it supports, 
 ---
 
 ## References (Instructor)
-- Program portfolio templates and competency rubrics.
+- Use module references listed on the module page.
 
 ---
 

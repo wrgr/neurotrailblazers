@@ -79,8 +79,8 @@ From a skeleton, you can compute a rich set of descriptors that characterize neu
 | **Branch order** | Distance (in branches) from soma | Proximal vs distal structure |
 | **Strahler number** | Hierarchical ordering of branches (terminal = 1, increases at confluences of equal order) | Tree complexity metric from hydrology, useful for comparing neuron types |
 | **Sholl analysis** | Number of intersections with concentric spheres centered on soma | Spatial distribution of arbor; peaks indicate regions of maximum branching |
-| **Tortuosity** | Path length / Euclidean distance between endpoints | How "winding" a process is; axons tend to be more tortuous than dendrites |
-| **Spine density** | Spines per μm of dendritic length | Input density; excitatory neurons have 0.5-3 spines/μm, inhibitory neurons ~0 |
+| **Tortuosity** | Path length / Euclidean distance between endpoints | How "winding" a process is; compare it within one compartment type, not across axons and dendrites |
+| **Spine density** | Spines per μm of dendritic length | Input density; spiny excitatory neurons typically carry 0.5-3 spines/μm, most inhibitory interneurons few or none |
 | **Arbor volume** | Convex hull of all skeleton nodes | Spatial territory covered by the neuron |
 | **Bifurcation angles** | Angle between daughter branches at each branch point | Distinguishes cell types (pyramidal cells have characteristic apical bifurcation) |
 
@@ -135,7 +135,7 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (10 min async)
-- Review the data formats content library entry (skeletons section)
+- Review the skeletons section of [Data formats and representations]({{ '/content-library/infrastructure/data-formats/' | relative_url }})
 - Install/check NeuroM or equivalent morphology analysis package, or use `morphometry.py` in the [Module 09 kit]({{ '/assets/kits/module09/README.md' | relative_url }}), which needs no install
 
 ### Minute-by-minute plan
@@ -231,7 +231,7 @@ You are classifying neuron 7 from a set of 10 skeletons in L2/3 of mouse visual 
 - Costa M et al. (2016) "NBLAST: rapid, sensitive comparison of neuronal structure and construction of neuron family databases." *Neuron* 91(2):293-311.
 - Sato M et al. (2000) "TEASAR: Tree-structure extraction algorithm for accurate and robust skeletons." *Pacific Conference on Computer Graphics and Applications*.
 - Scorcioni R, Polavaram S, Ascoli GA (2008) "L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies." *Nature Protocols* 3(5):866-876.
-- Ascoli GA et al. (2007) "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex." *Nature Reviews Neuroscience* 8(7):557-568.
+- Ascoli GA et al. (2008) "Petilla terminology: nomenclature of features of GABAergic interneurons of the cerebral cortex." *Nature Reviews Neuroscience* 9(7):557-568.
 
 ## Quick practice prompt
 Explain one morphology feature that could be confounded by reconstruction quality.

@@ -51,7 +51,7 @@ Voxels → objects → a graph → a claim.
 
 <div class="box box--good">
 
-**The organizing question all module:** *what would have to be true for this result to be wrong, and did I check it?*
+**The organizing question for the module:** *what would have to be true for this result to be wrong, and did I check it?*
 
 Most of the answers turn out to be about the **null model** and the **error rate** — the two things easiest to leave unstated.
 
@@ -156,9 +156,9 @@ Most of the answers turn out to be about the **null model** and the **error rate
 **Why this is not ordinary segmentation.**
 
 - Objects are **densely packed** with no background — every voxel belongs to something.
-- Objects are **enormous and thin**: a single neuron may span millimetres while being 100 nm wide.
+- Objects are **enormous and thin**: a single neuron may span millimeters while being 100 nm wide.
 - There are **millions of instances** in one volume.
-- An error at one voxel can **change the identity** of a millimetre of cable.
+- An error at one voxel can **change the identity** of a millimeter of cable.
 
 </div>
 <div>
@@ -181,7 +181,7 @@ This is why the field's metrics — expected run length, variation of informatio
 <div class="cols">
 <div>
 
-**Affinity + agglomeration.** A network predicts, per voxel, the affinity between neighbouring voxels. Watershed at a conservative threshold produces **supervoxels** that are deliberately too small. An agglomeration step then merges them, using mean affinity, learned agglomeration, or shape descriptors that let the model reason about whether a merge yields a *plausible neurite shape.*
+**Affinity + agglomeration.** A network predicts, per voxel, the affinity between neighboring voxels. Watershed at a conservative threshold produces **supervoxels** that are deliberately too small. An agglomeration step then merges them, using mean affinity, learned agglomeration, or shape descriptors that let the model reason about whether a merge yields a *plausible neurite shape.*
 
 *Strength:* parallel, restartable, and the supervoxel layer gives you the immutable atoms Module 8 built everything on.
 
@@ -208,7 +208,7 @@ This is why the field's metrics — expected run length, variation of informatio
 <div class="cols">
 <div>
 
-**How it is produced.** A skilled annotator densely labels a small volume — every voxel assigned to an object — usually in a tool like VAST or webKnossos. It is slow: a few hundred cubic micrometres is a serious effort.
+**How it is produced.** A skilled annotator densely labels a small volume — every voxel assigned to an object — usually in a tool like VAST or webKnossos. It is slow: a few hundred cubic micrometers is a serious effort.
 
 **Why so little exists.** The labor is the same labor that proofreads production data, and production always wins the argument for it.
 
@@ -234,7 +234,7 @@ This is why Module 8's **pilot reconstruction** matters so much: it measures err
 
 ## Where both families fail, structurally
 
-These are not bugs. They are consequences of the physics and the data.
+These follow from the physics and the data; they are not bugs to be patched.
 
 - **Thin processes.** A 60 nm spine neck at 40 nm z-resolution may appear in **one or two sections**. There is very little evidence to work with — spine necks are a perennial source of splits.
 
@@ -780,7 +780,7 @@ z = (210 - 150) / 12            = 5.0
 
 ## Worked example, null 3 — degree *and* distance
 
-Connection probability falls steeply with inter-somatic distance, and reciprocal partners are disproportionately near neighbours. Rewire preserving **both** degree and the empirical distance–probability curve. Suppose **mean 185, sd 14**:
+Connection probability falls steeply with inter-somatic distance, and reciprocal partners are disproportionately near neighbors. Rewire preserving **both** degree and the empirical distance–probability curve. Suppose **mean 185, sd 14**:
 
 ```
 observed / expected = 210 / 185 = 1.14x
@@ -944,8 +944,8 @@ Construct explicit error scenarios and recompute the endpoint. Unvalidated segme
 ### What must accompany every connectomics graph you publish
 
 ```yaml
-dataset:              minnie65_public
-materialization:      943
+dataset:              fictional_cortex_volume   # fictional, for this slide only
+materialization:      T9                        # fictional release label
 node_definition:      proofread pyramidal cells, L2/3, soma in volume
 edge_definition:      synapse_count >= 3, direction from axon/dendrite call
 weighting:            synapse count (contact area archived)
@@ -960,7 +960,7 @@ error_rates:          merge 0.8%, split 4.1% (20-cell exhaustive resample)
 
 <div class="box box--good">
 
-Twelve lines (values illustrative). They pre-answer nearly every methodological question a reviewer can ask, and they take ten minutes. **The lab requires this block.**
+Twelve lines (the dataset, release and values are invented for this slide; in your block, name the real datastack and its version). They pre-answer nearly every methodological question a reviewer can ask, and they take ten minutes. **The lab requires this block.**
 
 </div>
 
@@ -991,7 +991,7 @@ Twelve lines (values illustrative). They pre-answer nearly every methodological 
 
 **Across development.** The *C. elegans* series (Witvliet et al. 2021) across eight stages: which connections are stable through maturation, and which are added.
 
-**Across sexes.** Fly male and female CNS releases (2024–25): sexual dimorphism at connectome scale, in the same species with the same tooling.
+**Across sexes.** Fly male and female CNS releases (2024–26): sexual dimorphism at connectome scale, in the same species with the same tooling.
 
 </div>
 <div>
@@ -1056,7 +1056,7 @@ Oct 2025; Cell 2026). Witvliet et al. 2021 (Nature 596:257): eight isogenic C. e
 
 **Read the pattern.** In all three, the connectome **removes free parameters** and turns a vague hypothesis into a falsifiable one.
 
-That — not simulation — is what a wiring diagram is for.
+That, more than simulation, is what a wiring diagram is for.
 
 </div>
 
@@ -1304,7 +1304,7 @@ Every right-hand phrasing is **shorter on certainty and longer on information.**
 
 <div class="box box--good">
 
-**Saying that clearly is not modesty; it is credibility.** A field that lets its popular framing outrun its evidence spends the difference later, and the people who pay are the students entering it.
+**Saying that clearly builds credibility.** A field that lets its popular framing outrun its evidence spends the difference later, and the people who pay are the students entering it.
 
 </div>
 
@@ -1422,13 +1422,13 @@ Everything else is illustration.
 <div class="cols">
 <div>
 
-**Licence: CC BY-SA 4.0**
+**License: CC BY-SA 4.0**
 Creative Commons Attribution-ShareAlike 4.0 International.
 <https://creativecommons.org/licenses/by-sa/4.0/>
 
 **You may** teach from these slides anywhere, including commercially; copy and redistribute them in any medium; and **re-cut, shorten, translate, restyle, or merge them into your own material** — and distribute the result. No permission needed.
 
-**Two conditions.** *Attribution* — credit the original, link the licence, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same licence, so it stays as open as what it came from.
+**Two conditions.** *Attribution* — credit the original, link the license, and say if you changed anything. *ShareAlike* — distribute your adapted version under this same license, so it stays as open as what it came from.
 
 </div>
 <div>
@@ -1446,4 +1446,4 @@ For an adaptation, prefix with *"Adapted from"* and note what you changed.
 </div>
 </div>
 
-<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own licence. Cited papers carry their own licences; citation is not reproduction.</p>
+<p class="src">Cover image: H01 release, Lichtman Lab / Harvard &amp; Connectomics at Google, CC BY 4.0. Shapson-Coe et al. (2024), doi:10.1126/science.adk4858. The image retains its own license. Cited papers carry their own licenses; citation is not reproduction.</p>

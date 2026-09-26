@@ -75,7 +75,7 @@ Design and execute a connectomics inference plan that includes null-model choice
 
 <!--
 Pre-class preparation (15 min async)
-  Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.
+  Read section 2 of [Technical Unit 09](/technical-training/09-connectome-analysis-neuroai/), the worked reciprocity example across three null models.
   Bring one motif or connectivity claim from a paper you have read, with its stated null.
   Minute-by-minute plan
 
@@ -121,7 +121,7 @@ Pre-class preparation (15 min async)
 ---
 
 ## Studio Activity
-**Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
+**Scenario:** A team reports that E-to-I-to-E feedback loops are enriched in one dataset and asks whether the claim generalizes. Use the synthetic 200-neuron subgraph in the [Module 11 kit](/assets/kits/module11/README.md) as their dataset: it has cell types and soma positions, so degree, distance and cell-type nulls can all be built. Use the synthetic 500-neuron column graph in the [Module 10 kit](/assets/kits/module10/README.md) as the second dataset for the generalization check. Both are invented for teaching; no result from them describes a real brain.
 
 ---
 
@@ -166,7 +166,7 @@ Write a 6-8 sentence inference note that includes:
 1. hypothesis and estimand,
 2. null-model assumptions,
 3. multiplicity strategy,
-4. one robust conclusion and one unresolved uncertainty.
+4. one conclusion that survives your checks and one unresolved uncertainty.
 
 ---
 

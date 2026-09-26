@@ -68,7 +68,7 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 ## Hidden curriculum scaffold
 - Norms often unstated: prioritize by scientific consequence, not visual annoyance. A merge error that creates a false connection between two neurons in your circuit of interest is more important than a split error in a fragment at the edge of the volume.
 - Require explicit rationale for deferred corrections: "I chose not to fix this because..." is more valuable than silently ignoring it.
-- Proofreading is collaborative: in projects like FlyWire, 287 people contributed corrections. The quality of the final product depends on consistent standards across annotators.
+- Proofreading is collaborative: in FlyWire, a consortium of 287 researchers in at least 76 labs, plus citizen-science volunteers, contributed corrections. The quality of the final product depends on consistent standards across annotators.
 - Release decisions are scientific judgments: "Is this segmentation good enough for the analysis we want to do?" is a question about fitness-for-purpose, not perfection.
 - Error fatigue is real: after hours of proofreading, annotators start missing errors or making new ones. Build in breaks and use inter-annotator agreement checks as a safeguard.
 - The best proofreading policy is one that is written down before proofreading begins, reviewed by the team, and followed consistently.
@@ -76,17 +76,17 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 ## Concept set
 
 ### 1) Impact-weighted triage
-Not all errors are worth fixing. A merge error on a large interneuron with 500 synapses is far more impactful than a split error on a tiny axon fragment with 2 synapses. Impact factors include: (a) size of the affected segment (larger = more connections affected), (b) position in the analysis region of interest, (c) error type (merges corrupt the graph more directly than splits), (d) confidence of the error detection (is it definitely wrong or ambiguous?).
+Not all errors are worth fixing. A merge error on a large interneuron with 500 synapses changes far more of the graph than a split error on a tiny axon fragment with 2 synapses. Impact factors include: (a) size of the affected segment (larger = more connections affected), (b) position in the analysis region of interest, (c) error type (merges corrupt the graph more directly than splits), (d) confidence of the error detection (is it definitely wrong or ambiguous?).
 
-A practical triage matrix assigns each error a composite score. For example, a merge error on a neuron within the analysis region that has high synapse count and clear evidence of incorrectness scores 4/4 and goes to the top of the queue. A possible boundary error on a small fragment outside the region of interest scores 1/4 and can be deferred or ignored entirely. The key insight is that proofreading time is a limited resource, and spending it on low-impact corrections means higher-impact errors persist in the final dataset. Teams should establish their triage criteria before beginning a proofreading campaign, not invent them ad hoc as errors appear.
+A practical triage matrix assigns each error a composite score. For example, a merge error on a neuron within the analysis region that has high synapse count and clear evidence of incorrectness scores 4/4 and goes to the top of the queue. A possible boundary error on a small fragment outside the region of interest scores 1/4 and can be deferred or ignored entirely. Proofreading time is a limited resource, and spending it on low-impact corrections means higher-impact errors persist in the final dataset. Teams should establish their triage criteria before beginning a proofreading campaign, not invent them ad hoc as errors appear.
 
 ### 2) Proofreading strategies
 Each strategy trades off thoroughness against scalability. The choice depends on the scientific question, available labor, and volume size.
 
-- **Exhaustive local**: Fix every error in a defined subvolume. Used to create gold-standard reference regions. Cost: 10-100x the time of automated segmentation. Best for: validation regions where you need ground truth to benchmark automated methods.
+- **Exhaustive local**: Fix every error in a defined subvolume. Used to create gold-standard reference regions. Cost: the most human time per cubic micrometer of any strategy. Best for: validation regions where you need ground truth to benchmark automated methods.
 - **Targeted/skeleton-guided**: Follow specific neurons of interest and fix errors along their path. Most common for circuit-focused questions. You trace each neuron from soma to axon terminals, correcting merges and splits as you encounter them. This produces high-quality reconstructions for specific cells but leaves the rest of the volume uncorrected.
 - **Priority-ranked**: Use automated error detection to rank candidates by impact. Fix top-N. Most efficient for large volumes where exhaustive proofreading is infeasible. Automated detectors flag likely merge and split sites, and human proofreaders work through the list in priority order.
-- **Crowd-sourced**: The FlyWire model -- 287 proofreaders with consensus mechanisms. Scales to whole-brain but requires social infrastructure: training materials, inter-annotator agreement checks, conflict resolution protocols, and community management.
+- **Crowd-sourced**: The FlyWire model -- a consortium of 287 researchers plus citizen-science volunteers editing one shared segmentation. Scales to whole-brain but requires social infrastructure: training materials, inter-annotator agreement checks, conflict resolution protocols, and community management.
 
 In practice, most projects combine strategies. A team might use priority-ranked proofreading across the full volume, then switch to exhaustive local correction within specific subregions that are central to their analysis. The important thing is to document which strategy was applied where, so downstream users know the expected quality level in different parts of the dataset.
 
@@ -101,7 +101,7 @@ No single metric captures all aspects of segmentation quality. Use multiple metr
 When metrics disagree -- for example, ERL is above threshold but synapse F1 is below -- the resolution depends on the scientific question. If the analysis is primarily topological (which neurons connect?), synapse F1 dominates. If the analysis is morphological (what do neurons look like?), ERL matters more. This is why release decisions are scientific judgments, not mechanical threshold checks.
 
 ### 4) Documentation and reproducibility
-Every correction should be logged: what was changed, why, when, and by whom. CAVE's materialization system (see content library) provides this automatically -- each edit is a versioned operation, and materialization snapshots freeze the state for reproducible analysis.
+Every correction should be logged: what was changed, why, when, and by whom. CAVE records the what, when and who automatically: each edit is a versioned operation, and materialization snapshots freeze the state for reproducible analysis (see [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})). The why is yours to log.
 
 Without versioned documentation, two researchers analyzing the "same" dataset at different times may get different results because proofreading edits changed the segmentation between their queries. Materialization versions solve this: you pin your analysis to a specific version number, and anyone can reproduce your results by querying that same version. This is the connectomics equivalent of specifying which genome assembly build you used for a genomics analysis.
 
@@ -126,8 +126,8 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (10 min async)
-- Read the proofreading strategies content library entry
-- Review the worked examples content library entry (at least Scenario 1 and 4)
+- Read [Proofreading strategies]({{ '/content-library/proofreading/proofreading-strategies/' | relative_url }})
+- Review the [proofreading worked examples]({{ '/content-library/proofreading/worked-examples/' | relative_url }}) (at least Scenarios 1 and 4)
 
 ### Minute-by-minute plan
 1. **00:00-10:00 | Triage philosophy**
@@ -205,9 +205,9 @@ Each of these is a belief a learner plausibly holds on arriving. Name it, then c
 - [Module 07 kit]({{ '/assets/kits/module07/README.md' | relative_url }}) -- The synthetic error report, ground truth and metric computation script used in the studio activity
 
 ## References
-- Dorkenwald S et al. (2024) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods*. doi:10.1038/s41592-024-02426-z.
+- Dorkenwald S et al. (2025) "CAVE: Connectome Annotation Versioning Engine." *Nature Methods* 22:1112-1120. doi:10.1038/s41592-024-02426-z.
 - Dorkenwald S et al. (2024) "Neuronal wiring diagram of an adult brain." *Nature* 634:124-138.
-- Funke J et al. (2017) "A benchmark for evaluation of large-scale reconstruction methods." *Frontiers in Computational Neuroscience*.
+- Funke J, Klein J, Moreno-Noguer F, Cardona A, Cook M (2017) "TED: A tolerant edit distance for segmentation evaluation." *Methods* 115:119-127.
 - Meila M (2007) "Comparing clusterings -- an information based distance." *Journal of Multivariate Analysis* 98(5):873-895.
 - Plaza SM et al. (2014) "Annotating synapses in large EM datasets." *arXiv:1409.1801*.
 

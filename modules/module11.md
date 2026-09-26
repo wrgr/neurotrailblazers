@@ -68,16 +68,16 @@ Generate one synapse-to-motif interpretation with explicit evidence chain and on
 
 ### 1) Synaptic organization as circuit logic
 Synapses are not randomly placed. Their location on the postsynaptic neuron (soma, proximal dendrite, distal dendrite, spine, axon initial segment) determines their functional impact:
-- **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells), powerful because they're close to the spike initiation zone. These synapses can veto spiking.
-- **Dendritic spine synapses**: typically excitatory, the workhorses of cortical computation. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
-- **AIS synapses**: exclusively from chandelier cells. The only inhibitory input at the axon initial segment, positioned to control spike generation directly.
+- **Perisomatic synapses** (on soma and proximal dendrites): typically inhibitory (basket cells). Close to the spike initiation zone, they can veto spiking.
+- **Dendritic spine synapses**: typically excitatory, and the majority of excitatory inputs onto pyramidal cells. Each spine receives one (usually) excitatory synapse. Spine size correlates with synapse strength — larger mushroom spines have larger PSDs and more AMPA receptors.
+- **AIS synapses**: in cortex, predominantly from chandelier cells, positioned to control spike generation directly.
 - **Shaft synapses on smooth dendrites**: typically inhibitory-to-inhibitory connections (disinhibition circuits) or excitatory inputs onto aspiny interneurons.
 
-This compartment-specific targeting is a fundamental organizing principle of cortical circuits. In EM connectomics, you can directly observe where each synapse lands, making this a uniquely powerful approach for studying circuit logic.
+Compartment-specific targeting is a basic organizing principle of cortical circuits. EM shows where each synapse lands, which light-level connectivity methods mostly cannot.
 
 ### 2) Circuit motifs: recurring wiring patterns
 Beyond individual synapses, the pattern of connections between neurons forms **circuit motifs** — small subgraph patterns that may implement computational primitives:
-- **Reciprocal connections** (A↔B): ~4× enriched in cortex (Song et al. 2005). May support recurrent amplification and persistent activity.
+- **Reciprocal connections** (A↔B): about 4× more common than chance among rat L5 pyramidal pairs (Song et al. 2005). May support recurrent amplification and persistent activity.
 - **Feed-forward loops** (A→B, A→C, B→C): Signal from A reaches C via two paths with different latencies. May implement temporal filtering.
 - **Feedback inhibition** (E→I→E): Excitatory neuron activates an inhibitory neuron that feeds back to inhibit it. Gain control and response normalization.
 - **Disinhibition** (E→I1→I2→E): Excitatory neuron activates an inhibitory neuron that inhibits *another* inhibitory neuron, releasing a target excitatory neuron from inhibition. Gating mechanism.
@@ -123,7 +123,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 
 **Step 4 — Write the claim and its boundary.** Supported: "Perisomatic-targeting feedback loops are present and constitute the majority of E→I→E motifs in this subgraph; loop frequency is largely explained by cell-type connection rates, with at most a small residual above the stratified null." Non-claim: "This does not show the circuit performs gain control — that requires functional data — and does not show loop-specific wiring selection, which the stratified null does not support." Alternative explanation, stated in the report: spatial proximity was never controlled, and interneuron arbors overlap densely with their neighbors.
 
-**What the walk bought.** The claim shrank from "organized for gain control" to a compartment-resolved anatomical statement with a quantified null comparison and a stated confound. The smaller claim is publishable and durable; the original was neither.
+**What the walk bought.** The claim shrank from "organized for gain control" to a compartment-resolved anatomical statement with a quantified null comparison and a stated confound. The smaller claim will survive review; the original would not.
 
 ## Core workflow
 1. Identify synapse candidates: find synapses in the region of interest with correct pre/post assignment.
@@ -135,8 +135,8 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (10 min async)
-- Review the synapse classification content library entry (Gray Type I/II)
-- Review the motif analysis content library entry (key motif types section)
+- Review [Synapse classification]({{ '/content-library/neuroanatomy/synapse-classification/' | relative_url }}) (Gray Type I/II)
+- Review the key motif types section of [Motif analysis]({{ '/content-library/connectomics/motif-analysis/' | relative_url }})
 
 ### Minute-by-minute plan
 1. **00:00-10:00 | Synapse cue recap**
@@ -146,7 +146,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 2. **10:00-24:00 | Motif construction examples**
    - Walk through 3 motifs you have located beforehand in the public MICrONS volume ([MICrONS Explorer](https://www.microns-explorer.org/)):
      - Reciprocal pair between two L2/3 pyramidal cells (mutual excitation)
-     - Feed-forward loop: L4 stellate → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
+     - Feed-forward loop: L4 excitatory cell → L2/3 pyramidal → L5 pyramidal, with L4 also connecting directly to L5
      - Feedback inhibition: pyramidal → basket cell → same pyramidal
    - For each: show the EM evidence (synapses), draw the circuit diagram, discuss functional implication.
 
@@ -169,7 +169,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 ## Studio activity: motif discovery and interpretation (60-75 minutes)
 {: #studio-activity}
 
-**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic stand-in for a MICrONS subgraph, in the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
+**Scenario:** You are analyzing a 200-neuron subgraph spanning L2/3 and L4 of mouse visual cortex: a synthetic subgraph invented for teaching, not sampled from any real dataset, in the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}). Your goal: characterize the local circuit motif profile and identify any enriched patterns that suggest specific wiring rules.
 
 **Task sequence:**
 1. Enumerate all 2-node and 3-node motifs in the subgraph (use DotMotif or equivalent tool).
@@ -231,7 +231,7 @@ A student finds that feedback inhibition loops (pyramidal → interneuron → sa
 - Milo R et al. (2002) "Network motifs: simple building blocks of complex networks." *Science* 298:824-827.
 - Song S et al. (2005) "Highly nonrandom features of synaptic connectivity." *PLoS Biology* 3(3):e68.
 - Perin R et al. (2011) "A synaptic organizing principle for cortical neuronal groups." *PNAS* 108(13):5419-5424.
-- Matelsky JK et al. (2021) "DotMotif: an open-source tool for connectome subgraph isomorphism search." *Scientific Reports* 11:13045.
+- Matelsky JK et al. (2021) "DotMotif: an open-source tool for connectome subgraph isomorphism search and graph queries." *Scientific Reports* 11:13045.
 
 ## Quick practice prompt
 Write one motif claim and one plausible confound.

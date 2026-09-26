@@ -46,7 +46,7 @@ Choosing the null is the scientific step; running the test is bookkeeping.
 <p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S10. Historical/context visual.</p>
 
 <!--
-Instructor script: "Hold this motivating question against an asymmetry. Machine learning has given connectomics far more than the reverse so far — dense segmentation, synapse detection, error detection and proofreading candidate generation are all learned systems, and none of the petascale datasets would exist without them. Saying that plainly is part of writing about NeuroAI credibly."
+Instructor script: "Hold this motivating question against an asymmetry. So far machine learning has given connectomics far more than the reverse: dense segmentation, synapse detection, error detection and proofreading candidate generation are all learned systems, and none of the petascale datasets would exist without them. Say that plainly when you write about NeuroAI."
 -->
 
 ---
@@ -94,7 +94,7 @@ What a connectome does not give machine learning (unit §5): not weights — syn
 <p class="source">Source: neuroAI source deck (2021 techtalk), Techtalk S13. Historical/context visual.</p>
 
 <!--
-The image is the techtalk's framing of an embodied agent; the teaching point is the pipeline beneath it. The strongest current result type is a connectome-constrained model: fix connectivity from the measurement, fit what remains, predict responses that are then tested. This has been done in the fly visual system. That is the version where the connectome removes free parameters — which is exactly what makes the model falsifiable — rather than decorating a figure.
+The image is the techtalk's framing of an embodied agent; the teaching point is the pipeline beneath it. The strongest current result type is a connectome-constrained model: fix connectivity from the measurement, fit what remains, predict responses that are then tested. This has been done in the fly visual system. In that version the connectome removes free parameters, and removing them is what makes the model falsifiable.
 -->
 
 ---
@@ -182,12 +182,12 @@ Comparisons are the most durable result type in this field — across developmen
 
 ## The error-sensitivity check you should always run
 1. State your measured merge and split rates (Unit 08 validation).
-2. Apply random merges and splits at those rates to your graph.
+2. Apply merges and splits at those rates, under a stated error model.
 3. Recompute the motif statistic across many perturbed graphs.
-4. Report the spread as an error band on the effect size.
+4. Report the spread as a sensitivity band on the effect size.
 
 <!--
-Why this matters (unit §3): merges fuse two partner lists and manufacture triangles among partners never connected through one cell — they inflate dense motifs superlinearly in the error rate. Splits mostly remove edges, deflating all motifs roughly proportionally. The two do not cancel; the residual bias points toward more dense motifs, the direction of the interesting result.
+Why this matters: a merge combines two partner lists, which can add, collapse or redirect edges; a split removes or redistributes them. Whether a given motif count rises or falls depends on the motif and the construction rules, so do not assume the two cancel or push in one fixed direction. Simulating your own measured rates is the only way to know which way your statistic moves (Module 9, slide 36).
 Instructor script: "If the band crosses the null expectation, your result is not robust to your own measured error rate. Say so before a reviewer does. It is a few dozen lines of code."
 -->
 

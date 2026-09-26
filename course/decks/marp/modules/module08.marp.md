@@ -62,7 +62,7 @@ A testable connectomics hypothesis must specify: (a) a structural feature that c
 
 <!--
 Pre-class preparation (10 min async)
-  Read the motif analysis content library entry (focus on null models section)
+  Read [Motif analysis](/content-library/connectomics/motif-analysis/), focusing on the null models section
   Draft one biological question you'd like to test with connectomics data
   Minute-by-minute plan
 

@@ -407,32 +407,32 @@ def module07
   specs = [
     # merges, 18
     { n: 5, flag: 'merge', cls: 'L2/3 pyramidal', roi: 'yes', syn: 260..520, score: 0.62..0.95,
-      notes: ['two somata in one object; thin bridge near z=%d', 'apical dendrites of two cells joined across a fold at z=%d',
-              'soma count 2; caliber drops 0.9 to 0.2 um at z=%d'],
+      notes: ['two somata in one object; thin bridge near section %d', 'apical dendrites of two cells joined across a fold at section %d',
+              'soma count 2; caliber drops 0.9 to 0.2 um at section %d'],
       gt: { true_type: 'merge', fe: 10..18, me: 0..0, fr: 1..3, hr: 0..0, cell: 1 } },
     { n: 4, flag: 'merge', cls: 'L2/3 pyramidal', roi: 'yes', syn: 180..400, score: 0.55..0.85,
-      notes: ['smooth branch joins spiny pyramidal arbor at z=%d', 'aspiny process attached to basal dendrite at z=%d'],
+      notes: ['smooth branch joins spiny pyramidal arbor at section %d', 'aspiny process attached to basal dendrite at section %d'],
       gt: { true_type: 'merge', fe: 3..7, me: 0..0, fr: 0..1, hr: 0..0, cell: 1 } },
     { n: 4, flag: 'merge', cls: 'glia', roi: 'yes', syn: 0..12, score: 0.80..0.99,
-      notes: ['very large irregular mesh; astrocytic sheet fused to several axons near z=%d',
-              'glial object wraps a blood vessel and absorbs two axon fragments at z=%d'],
+      notes: ['very large irregular mesh; astrocytic sheet fused to several axons near section %d',
+              'glial object wraps a blood vessel and absorbs two axon fragments at section %d'],
       gt: { true_type: 'merge', fe: 0..2, me: 0..0, fr: 0..0, hr: 0..0, cell: 0 } },
     { n: 3, flag: 'merge', cls: 'interneuron', roi: 'yes', syn: 300..700, score: 0.60..0.90,
-      notes: ['interneuron axon fused with a neighboring interneuron dendrite at z=%d'],
+      notes: ['interneuron axon fused with a neighboring interneuron dendrite at section %d'],
       gt: { true_type: 'merge', fe: 0..1, me: 0..0, fr: 0..0, hr: 0..0, cell: 0 } },
     { n: 2, flag: 'merge', cls: 'L2/3 pyramidal', roi: 'no', syn: 200..450, score: 0.70..0.95,
-      notes: ['two somata in one object at the volume corner, z=%d'],
+      notes: ['two somata in one object at the volume corner, section %d'],
       gt: { true_type: 'merge', fe: 0..0, me: 0..0, fr: 0..0, hr: 0..0, cell: 0 } },
     # splits, 20
     { n: 6, flag: 'split', cls: 'L2/3 pyramidal', roi: 'yes', syn: 40..160, score: 0.50..0.85,
-      notes: ['axon of an analysis-set cell ends abruptly at missing section z=%d',
-              'main axon dead-ends in a low-contrast stretch at z=%d; continuation candidate 3 sections on'],
+      notes: ['axon of an analysis-set cell ends abruptly at missing section section %d',
+              'main axon dead-ends in a low-contrast stretch at section %d; continuation candidate 3 sections on'],
       gt: { true_type: 'split', fe: 0..0, me: 7..14, fr: 0..0, hr: 1..2, cell: 1 } },
     { n: 3, flag: 'split', cls: 'L2/3 pyramidal', roi: 'yes', syn: 10..40, score: 0.45..0.75,
-      notes: ['distal dendrite branch detached at z=%d'],
+      notes: ['distal dendrite branch detached at section %d'],
       gt: { true_type: 'split', fe: 0..0, me: 1..3, fr: 0..0, hr: 0..0, cell: 1 } },
     { n: 5, flag: 'split', cls: 'glia', roi: 'yes', syn: 0..0, score: 0.85..0.99,
-      notes: ['astrocytic process fragmented into 12+ pieces around z=%d', 'glial sheet broken into many small objects near z=%d'],
+      notes: ['astrocytic process fragmented into 12+ pieces around section %d', 'glial sheet broken into many small objects near section %d'],
       gt: { true_type: 'split', fe: 0..0, me: 0..0, fr: 0..0, hr: 0..0, cell: 0 } },
     { n: 3, flag: 'split', cls: 'unknown fragment', roi: 'yes', syn: 1..8, score: 0.60..0.90,
       notes: ['orphan axon fragment, 20-40 um, no soma in volume, z=%d'],
@@ -922,7 +922,7 @@ def module10
     The graph for the Module 10 graph analysis report: #{nodes.size} neurons in a
     400 x 400 x 950 µm synthetic cortical column, #{delim(edges.size)} directed edges at a
     threshold of one synapse (#{(100.0 * one / edges.size).round}% of them carry exactly
-    one synapse). It stands in for a MICrONS column;
+    one synapse). It is shaped like a column extracted from a real cortical volume but is not one;
     the [Dataset Access](/datasets/access/) page lists how to pull a real one.
 
     | File | What it is |
@@ -1352,7 +1352,9 @@ def module19
     > **Fictional teaching document.** This preprint does not exist. Its title,
     > authors, numbers, figures and claims were written for a peer-review exercise.
     > No analysis of any dataset was performed to produce it, and nothing in it is a
-    > finding. It is written to contain four specific problems for reviewers to find.
+    > finding. The volume and its release T19 are fictional too; no real dataset,
+    > release or consortium is being described. It is written to contain four
+    > specific problems for reviewers to find.
 
     ## A feed-forward inhibitory motif is enriched in mouse visual cortex and may drive seizure propagation
 
@@ -1360,9 +1362,9 @@ def module19
 
     ### Abstract
 
-    Feed-forward inhibition shapes the timing of cortical responses. Using a public
-    electron microscopy connectome of mouse visual cortex (MICrONS minnie65, CAVE
-    materialization v661), we counted all three-node motifs among 2,114 neurons with
+    Feed-forward inhibition shapes the timing of cortical responses. Using an
+    electron microscopy connectome of a fictional mouse visual cortex volume
+    (release T19), we counted all three-node motifs among 2,114 neurons with
     somata in the volume. A feed-forward inhibitory loop, in which a pyramidal cell
     drives both an interneuron and a second pyramidal cell that the interneuron also
     inhibits, was enriched 3.5-fold relative to a degree-preserving random graph

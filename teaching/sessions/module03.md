@@ -49,16 +49,12 @@ Learners should arrive having covered:
 
 | Time | Segment | Your note |
 |---|---|---|
-| | Header: title, author, date, dataset version, materialization version. | |
-| | Setup: imports and environment configuration. | |
-| | Data loading: queries and schema validation. | |
-| | Analysis: computation cells with markdown explanations. | |
-| | Export: saving outputs with metadata. | |
-| | Initialize CAVEclient and set materialization version (3 min). | |
-| | Query synapse table filtered by brain region (5 min). | |
-| | Group by pre/post cell type and count synapses (5 min). | |
-| | Build a NetworkX graph from the grouped data (5 min). | |
-| | Plot a bar chart of top 10 connections by synapse count (4 min). | |
+| 00:00-12:00 | Block 1: Notebook anatomy | |
+| 12:00-28:00 | Block 2: Environment setup and library tour | |
+| 28:00-50:00 | Block 3: Guided analysis sprint | |
+| 50:00-65:00 | Block 4: Visualization and export | |
+| 65:00-80:00 | Block 5: Clean rerun test | |
+| 80:00-90:00 | Block 6: Competency check and exit ticket | |
 
 ## The activity
 
@@ -117,7 +113,7 @@ collected set and why naming them is a fairness intervention rather than etiquet
 ## Assessment
 
 - **Minimum:** runnable notebook from clean kernel, clear outputs, basic metadata, at least one plot with labels.
-- **Strong:** clean linear structure, robust error handling, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
+- **Strong:** clean linear structure, error handling that says what failed, repeatable rerun, markdown narrative explaining every step, exported metadata JSON, version-pinned requirements file.
 - **Failure:** hidden state dependencies, undocumented assumptions, plots without labels, no dataset version recorded.
 
 **Grade the reasoning, not the answer.** A correct call with no evidence chain

@@ -41,7 +41,7 @@ Keep these in view. At the end, answer each in one sentence.
 
 ## The task
 
-**Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
+**Scenario:** A team reports that E-to-I-to-E feedback loops are enriched in one dataset and asks whether the claim generalizes. Use the synthetic 200-neuron subgraph in the [Module 11 kit](/assets/kits/module11/README.md) as their dataset: it has cell types and soma positions, so degree, distance and cell-type nulls can all be built. Use the synthetic 500-neuron column graph in the [Module 10 kit](/assets/kits/module10/README.md) as the second dataset for the generalization check. Both are invented for teaching; no result from them describes a real brain.
 
 1. Propose at least two candidate null models and justify each.
 2. Run or outline multiplicity-aware testing strategy across motif set.
@@ -150,7 +150,7 @@ Write a 6-8 sentence inference note that includes:
 1. hypothesis and estimand,
 2. null-model assumptions,
 3. multiplicity strategy,
-4. one robust conclusion and one unresolved uncertainty.
+4. one conclusion that survives your checks and one unresolved uncertainty.
 
 **Your answer:**
 

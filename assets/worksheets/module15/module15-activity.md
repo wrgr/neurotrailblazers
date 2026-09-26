@@ -118,12 +118,12 @@ them, or note where you nearly did:
 
 | Time | Segment |
 |---|---|
-| | 00:00-08:00 scope boundaries and failure examples. Show the unpinned-query failure first, because it is the one that looks like a success. |
-| | 08:00-20:00 prompt template design, including the schema fields each gate depends on. |
-| | 20:00-34:00 generate sample outputs live for the worked example's three output classes (a query, a patch description, a citation list) and score reliability against a known answer; record agreement counts rather than impressions. |
-| | 34:00-46:00 define verification and override rules per output class, and estimate the cost of each gate. |
-| | 46:00-56:00 produce governance checklist and risk register, with one class explicitly marked as not yet usable. |
-| 56:00-60:00 competency check | each learner states one output class they would refuse to gate, and why. |
+| 00:00-08:00 | scope boundaries and failure examples. Show the unpinned-query failure first, because it is the one that looks like a success. |
+| 08:00-20:00 | prompt template design, including the schema fields each gate depends on. |
+| 20:00-34:00 | generate sample outputs live for the worked example's three output classes (a query, a patch description, a citation list) and score reliability against a known answer; record agreement counts rather than impressions. |
+| 34:00-46:00 | define verification and override rules per output class, and estimate the cost of each gate. |
+| 46:00-56:00 | produce governance checklist and risk register, with one class explicitly marked as not yet usable. |
+| 56:00-60:00 | competency check: each learner states one output class they would refuse to gate, and why. |
 
 ---
 
@@ -133,7 +133,7 @@ Score yourself before anyone else does. Where you fall short, name the specific 
 action rather than a general intention.
 
 - **Minimum pass:** clear task boundaries, verification logic with thresholds that can fail, and logging fields including model version and prompt.
-- **Strong performance:** robust failure-mode handling, an actionable governance plan, a measured or defensibly estimated gate cost for each output class, and at least one class explicitly declared not yet usable.
+- **Strong performance:** a fallback named for every failure mode, an actionable governance plan, a measured or defensibly estimated gate cost for each output class, and at least one class explicitly declared not yet usable.
 - **Failure modes:** unbounded scope, no confidence policy, missing audit trail, thresholds written after seeing the outputs, and gates whose cost was never compared with the task they replace.
 
 **My self-assessment:**

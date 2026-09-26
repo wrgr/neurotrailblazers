@@ -19,7 +19,7 @@ footer: "Unit 01 · Why map the brain"
 What a synapse-resolution wiring diagram can and cannot tell you, and how to turn a broad brain question into a measurable connectomics study.
 
 <!--
-Instructor script: "This unit is deliberately not about microscopes. It is about the reasoning step that happens before anyone buys a microscope — deciding what claim the data will be asked to support. Most failed connectomics projects skip it."
+Instructor script: "This unit is about the reasoning step that happens before anyone buys a microscope: deciding what claim the data will be asked to support. Most failed connectomics projects skip it."
 -->
 
 ---
@@ -139,7 +139,7 @@ Move 4, non-claim: the data constrain where feedback arrives; they do not show i
 - Non-claim: enrichment does not prove online computation.
 
 <!--
-Flag the trap this example carries, from unit §4: merge errors do not add noise symmetrically to motif counts. A single merge fuses two neurons' partner lists and manufactures triangles and reciprocal pairs far above the error rate itself. Motif analysis on unproofread segmentation is biased in a predictable direction — toward the interesting answer. Unit 09 returns to this.
+Flag the trap this example carries: merge errors do not add symmetric noise to motif counts. A single merge combines two neurons' partner lists, which can add, collapse or redirect edges; whether a given motif count rises or falls depends on the motif and the graph-construction rules. Unproofread segmentation is not automatically conservative, so simulate the errors and recompute. Unit 09 returns to this.
 -->
 
 ---
@@ -151,7 +151,7 @@ Flag the trap this example carries, from unit §4: merge errors do not add noise
 - Non-claim: specificity does not imply causal functional role.
 
 <!--
-Point out that the endpoint is a ratio. Ratios between comparably reconstructed populations quietly control for a great deal of reconstruction bias; absolute counts are sensitive to completeness. Experienced people reach for the ratio automatically — say so, because nobody else will.
+Point out that the endpoint is a ratio. Ratios between comparably reconstructed populations cancel much of the reconstruction bias; absolute counts are sensitive to completeness. Experienced analysts reach for the ratio without being told, so say it out loud for the room.
 -->
 
 ---

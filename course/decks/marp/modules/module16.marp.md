@@ -42,7 +42,8 @@ Produce a figure set that communicates connectomics findings accurately, includi
 ### 1) Visualization as communication, not decoration
 - **Technical:** every visual encoding (position, color, size, shape, opacity) carries information. Encodings that do not map to data dimensions are noise. The goal of a scientific figure is to make the reader's correct interpretation as effortless as possible.
 - **Plain language:** a figure should help people understand your result, not impress them with complexity.
-- **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
+- **Misconception guardrail:** a figure that looks good is a figure that tells the truth.
+- **Why it fails:** a polished 3D rendering with no scale bar and no uncertainty indicator tells the reader less than a plain but complete 2D plot.
 
 ---
 
@@ -55,7 +56,7 @@ Produce a figure set that communicates connectomics findings accurately, includi
 
 ## Core Workflow (continued)
 - **Run critique for misinterpretation risk.** Show the draft to someone unfamiliar with the analysis and ask them what they conclude. If their conclusion differs from your intent, revise.
-- **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis or the Matplotlib colorblind check). Verify grayscale legibility.
+- **Check accessibility.** Run the figure through a colorblind simulator (e.g., Coblis, or a Python library such as colorspacious). Verify grayscale legibility.
 - **Revise for clarity, accessibility, and reproducibility.** Add scale bars, axis labels, panel letters, and complete captions.
 
 ---
@@ -83,7 +84,7 @@ Materials needed
   Timing and instructor script
 
 00:00-10:00 | Visual integrity gallery walk
-  Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Let us learn why."
+  Instructor displays six figures (three strong, three weak) without labels. Students vote on which are "trustworthy" and which are "suspicious." Instructor reveals issues: missing scale bars, rainbow colormaps, cluttered node-link diagrams, hidden uncertainty, gratuitous 3D. Key script line: "Your first instinct about a figure's trustworthiness is often right. Now name the feature that triggered it."
 
 10:00-20:00 | Claim-to-visual mapping exercise
   Instructor presents three scientific claims from a mock connectomics study:
@@ -112,15 +113,11 @@ Materials needed
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** making a figure "look good" is not the same as making it truthful. A beautiful 3D rendering with no scale bar and no uncertainty indicators is worse than an ugly but complete 2D plot.
-- **Misconception guardrail:** there is no single "best" visualization. The best choice depends on the claim.
-- **Misconception guardrail:** complexity in a figure does not equal rigor. Simplicity with completeness is the standard.
-
----
-
-## Misconceptions to Watch (continued)
-- **Misconception guardrail:** cleaner-looking plots are not always better. A plot that hides uncertainty is less honest than one that shows it.
-- **Misconception guardrail:** aesthetics cannot replace methodological clarity. A beautiful figure that only some people can read is not a good figure.
+- **Misconception guardrail:** a figure that looks good is a figure that tells the truth.
+- **Misconception guardrail:** each data type has one best chart.
+- **Misconception guardrail:** a more complex figure shows a more rigorous analysis.
+- **Misconception guardrail:** removing error bars makes a plot cleaner and therefore better.
+- **Misconception guardrail:** if the figure reads well on your screen, it reads well for everyone.
 
 ---
 
@@ -154,7 +151,9 @@ Take one existing connectomics figure (from a paper, a classmate, or your own wo
 ---
 
 ## References (Instructor)
-- Visualization best-practice resources and connectomics exemplars.
+- Tufte ER (1983) The Visual Display of Quantitative Information. Graphics Press.
+- Borland D, Taylor RM (2007) Rainbow color map (still) considered harmful. IEEE Computer Graphics and Applications 27(2):14-17.
+- Weissgerber TL et al. (2015) Beyond bar and line graphs: time for a new data presentation paradigm. PLoS Biology 13(4):e1002128.
 
 ---
 

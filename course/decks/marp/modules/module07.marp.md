@@ -40,7 +40,7 @@ Execute a proofreading triage cycle that ranks corrections by impact and issues 
 
 ## Concept Focus
 ### 1) Impact-weighted triage
-Not all errors are worth fixing. A merge error on a large interneuron with 500 synapses is far more impactful than a split error on a tiny axon fragment with 2 synapses. Impact factors include: (a) size of the affected segment (larger = more connections affected), (b) position in the analysis region of interest, (c) error type (merges corrupt the graph more directly than splits), (d) confidence of the error detection (is it definitely wrong or ambiguous?).
+Not all errors are worth fixing. A merge error on a large interneuron with 500 synapses changes far more of the graph than a split error on a tiny axon fragment with 2 synapses. Impact factors include: (a) size of the affected segment (larger = more connections affected), (b) position in the analysis region of interest, (c) error type (merges corrupt the graph more directly than splits), (d) confidence of the error detection (is it definitely wrong or ambiguous?).
 
 ---
 
@@ -66,8 +66,8 @@ Not all errors are worth fixing. A merge error on a large interneuron with 500 s
 
 <!--
 Pre-class preparation (10 min async)
-  Read the proofreading strategies content library entry
-  Review the worked examples content library entry (at least Scenario 1 and 4)
+  Read [Proofreading strategies](/content-library/proofreading/proofreading-strategies/)
+  Review the [proofreading worked examples](/content-library/proofreading/worked-examples/) (at least Scenarios 1 and 4)
   Minute-by-minute plan
 
 00:00-10:00 | Triage philosophy

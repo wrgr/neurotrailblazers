@@ -45,8 +45,9 @@ Produce a manuscript-ready results section (figures, legends, and claims) where 
 ---
 
 ## Concept Focus (continued)
-- **Plain language:** in connectomics, how you got the data is as important as what the data shows. Your methods section is not boilerplate --- it is where skeptical readers will spend the most time.
-- **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
+- **Plain language:** in connectomics, how you got the data is as important as what the data shows. Skeptical readers spend the most time in your methods section.
+- **Misconception guardrail:** the methods section is a formality to write last.
+- **Why it fails:** in connectomics the methods constrain what you can legitimately claim, so draft them first.
 
 ---
 
@@ -113,7 +114,7 @@ Materials needed
   Timing and instructor script
 
 00:00-08:00 | Good writing vs bad writing in connectomics
-  Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, MICrONS v795)"; illustrative figures, not measured from a MICrONS release). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
+  Instructor displays two versions of the same results paragraph: one with vague claims and missing provenance ("We found strong connectivity between these cell types"), one with precise language and full evidence pointers ("Layer 4 excitatory neurons formed 3.2x more synapses onto PV+ interneurons than expected by the degree-preserving null model (95% CI: 2.8-3.6x, n=847 connections, release T17)"; invented figures from a fictional mouse cortex volume, not measured from any real dataset). Students identify what makes the second version stronger. Key script line: "Every sentence in a results section should be falsifiable. If a skeptic cannot check your claim against your data, it is not a scientific sentence."
 
 08:00-18:00 | Claim-evidence matrix construction
   Students receive the mock figure set and build a claim-evidence matrix. Instructor models the first row, then students complete three more rows independently. Instructor circulates, pushing students to be specific: "Which panel? What is the effect size? What is the caveat?"
@@ -141,27 +142,23 @@ Materials needed
 ---
 
 ## Misconceptions to Watch
-- **Misconception guardrail:** treating the methods section as a formality to write last. In connectomics, draft the methods first because they constrain what you can legitimately claim.
-- **Misconception guardrail:** writing stronger language does not strengthen weak evidence. Adjectives like "striking," "remarkable," and "clearly" do not substitute for effect sizes and confidence intervals.
+- **Misconception guardrail:** the methods section is a formality to write last.
+- **Misconception guardrail:** stronger language makes weak evidence more convincing.
+- **Misconception guardrail:** stating uncertainty makes a paper look weak.
+- **Misconception guardrail:** readers will know which dataset version you used.
+- **Misconception guardrail:** a link to the code repository makes the analysis reproducible.
 
 ---
 
 ## Misconceptions to Watch (continued)
-- **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals. A paper that acknowledges its limits is more credible than one that ignores them.
-- **Misconception guardrail:** assuming readers know which dataset version you used. Even within the same project (e.g., MICrONS), different materialization timestamps produce different connectivity tables.
-- **Misconception guardrail:** linking to a GitHub repository is not sufficient if the repository has no tagged release and the methods do not specify which commit was used.
-
----
-
-## Misconceptions to Watch (continued)
-- **Misconception guardrail:** uncertainty statements are not weakness; they are reproducibility signals.
-- **Misconception guardrail:** assuming that citing the original EM paper covers all required attributions. Segmentation, proofreading, and annotation are separate contributions that deserve separate citations.
-- **Misconception guardrail:** defensive tone weakens technical credibility. Never characterize a reviewer's comment as "wrong" --- instead, provide the evidence that supports your position.
+- **Misconception guardrail:** confidence intervals can live in the supplement as long as the main text reports p-values.
+- **Misconception guardrail:** citing the original EM paper covers all required attributions.
+- **Misconception guardrail:** a firm, defensive reply shows confidence in the work.
 
 ---
 
 ## Studio Activity
-**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used MICrONS minnie65 data, CAVE materialization v795, with synapse detection via the CAVE synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. These are illustrative figures, not measured from a MICrONS release.
+**Scenario:** You are preparing a short paper section on motif enrichment from a connectome analysis. Your team has identified that reciprocal connections between excitatory and inhibitory neurons in cortical layer 2/3 occur 2.1x more frequently than expected under a degree-preserving null model. The analysis used a fictional mouse cortex volume, release T17, with synapse detection via the release's synapse table (cleft score threshold > 50). A total of 1,247 reciprocal pairs were observed across 12,891 possible excitatory-inhibitory pairs. The volume, the release and every number here are synthetic, invented for this exercise; none describes a real dataset.
 
 ---
 
@@ -185,7 +182,7 @@ Materials needed
 ## Assessment Rubric
 **Strong performance**
 
-- Clearly separates robust findings from tentative interpretations using calibrated language.
+- Separates established findings from tentative interpretations using calibrated language.
 - Uses limitation language without weakening valid conclusions.
 - Improves reproducibility via concrete method-detail additions.
 - Reviewer responses include evidence and specific manuscript revision locations.

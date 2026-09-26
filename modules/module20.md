@@ -133,7 +133,7 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 ## 60-minute tutorial run-of-show
 
 ### Pre-class preparation (15 min async)
-- Read Technical Unit 09, section 2 — the worked reciprocity example across three null models.
+- Read section 2 of [Technical Unit 09]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}), the worked reciprocity example across three null models.
 - Bring one motif or connectivity claim from a paper you have read, with its stated null.
 
 ### Minute-by-minute plan
@@ -165,7 +165,7 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 
 ## Studio activity: motif inference challenge
 {: #studio-activity}
-**Scenario:** A team reports motif enrichment in one dataset and asks whether the claim generalizes.
+**Scenario:** A team reports that E-to-I-to-E feedback loops are enriched in one dataset and asks whether the claim generalizes. Use the synthetic 200-neuron subgraph in the [Module 11 kit]({{ '/assets/kits/module11/README.md' | relative_url }}) as their dataset: it has cell types and soma positions, so degree, distance and cell-type nulls can all be built. Use the synthetic 500-neuron column graph in the [Module 10 kit]({{ '/assets/kits/module10/README.md' | relative_url }}) as the second dataset for the generalization check. Both are invented for teaching; no result from them describes a real brain.
 
 **Tasks**
 1. Propose at least two candidate null models and justify each.
@@ -224,9 +224,9 @@ You run a triad census on a 300-neuron subgraph: 16 directed three-node classes.
 
 ## Evidence anchors from connectomics practice
 ### Key papers to use in this module
-- [Bassett, Zurn, and Gold (2018)](https://doi.org/10.1038/s41583-018-0038-8)
-- [Januszewski et al. (2018)](https://doi.org/10.1038/s41592-018-0049-4)
-- [MICrONS visual cortex reconstruction (Nature, 2025)](https://www.nature.com/articles/s41586-025-08790-w)
+- [Bassett DS, Zurn P, Gold JI (2018). "On the nature and use of models in network neuroscience." *Nature Reviews Neuroscience* 19:566-578.](https://doi.org/10.1038/s41583-018-0038-8)
+- [Januszewski M et al. (2018). "High-precision automated reconstruction of neurons with flood-filling networks." *Nature Methods* 15:605-610.](https://doi.org/10.1038/s41592-018-0049-4)
+- [MICrONS Consortium (2025). "Functional connectomics spanning multiple areas of mouse visual cortex." *Nature* 640.](https://www.nature.com/articles/s41586-025-08790-w)
 
 ### Key datasets to practice on
 - [MICrONS Explorer](https://www.microns-explorer.org/)
@@ -243,4 +243,4 @@ Write a 6-8 sentence inference note that includes:
 1. hypothesis and estimand,
 2. null-model assumptions,
 3. multiplicity strategy,
-4. one robust conclusion and one unresolved uncertainty.
+4. one conclusion that survives your checks and one unresolved uncertainty.

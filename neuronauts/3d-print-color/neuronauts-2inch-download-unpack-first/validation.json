@@ -1,0 +1,87 @@
+[
+  {
+    "character": "cortex",
+    "dimensions_mm": [
+      36.719,
+      23.338,
+      50.8
+    ],
+    "compact_details": true,
+    "target_height_mm": 50.8,
+    "volume_cm3": 6.273,
+    "triangles": 16584,
+    "colors": 8,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 188194
+  },
+  {
+    "character": "axon",
+    "dimensions_mm": [
+      34.108,
+      21.679,
+      50.8
+    ],
+    "compact_details": true,
+    "target_height_mm": 50.8,
+    "volume_cm3": 5.05,
+    "triangles": 15832,
+    "colors": 9,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 178321
+  },
+  {
+    "character": "dendra",
+    "dimensions_mm": [
+      37.524,
+      23.85,
+      50.8
+    ],
+    "compact_details": true,
+    "target_height_mm": 50.8,
+    "volume_cm3": 6.709,
+    "triangles": 16354,
+    "colors": 7,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 184269
+  },
+  {
+    "character": "syn",
+    "dimensions_mm": [
+      35.787,
+      22.746,
+      50.8
+    ],
+    "compact_details": true,
+    "target_height_mm": 50.8,
+    "volume_cm3": 5.726,
+    "triangles": 14992,
+    "colors": 8,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 168097
+  },
+  {
+    "character": "glia",
+    "dimensions_mm": [
+      36.945,
+      23.482,
+      50.8
+    ],
+    "compact_details": true,
+    "target_height_mm": 50.8,
+    "volume_cm3": 6.443,
+    "triangles": 17760,
+    "colors": 9,
+    "connected_solids": 1,
+    "watertight": true,
+    "texture_roundtrip": true,
+    "upload_zip_bytes": 199802
+  }
+]

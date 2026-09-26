@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "strategy": "Citation neighborhood expansion + k\u226525 + in-degree\u22652",
+    "source_papers": 5802,
+    "filtered_papers": 0,
+    "kcore_threshold": 25,
+    "indegree_threshold": 2,
+    "generated": "2026-04-01"
+  },
+  "papers": []
+}

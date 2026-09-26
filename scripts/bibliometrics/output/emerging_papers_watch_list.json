@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "source": "K\u226525 papers excluded by in-degree\u22652",
+    "purpose": "Rising work to monitor quarterly",
+    "criteria": [
+      "k_core >= 25",
+      "rank <= 500",
+      "year >= 2024",
+      "in_degree < 2"
+    ],
+    "count": 22,
+    "generated": "2026-04-01T04:30:00"
+  },
+  "papers": [
+    {
+      "doi": "10.1038/s41583-025-00998-z",
+      "title": "Synaptic-resolution connectomics: towards large brains and connectomic screening",
+      "year": 2025,
+      "rank": 31,
+      "composite_score": 0.245981,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": false,
+      "access_type": "unknown",
+      "importance_flags": [
+        "top-50-ranked",
+        "top-100-ranked",
+        "high-composite-score"
+      ]
+    },
+    {
+      "doi": "10.1101/2025.02.10.637586",
+      "title": "Connectome architecture favours within-module diffusion and between-module routing",
+      "year": 2025,
+      "rank": 107,
+      "composite_score": 0.203589,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "high-composite-score",
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1038/s41583-025-01008-y",
+      "title": "Long-range axon branching: contributions to brain network plasticity and repair",
+      "year": 2026,
+      "rank": 109,
+      "composite_score": 0.203552,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "high-composite-score",
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcbi.1012870",
+      "title": "Exploring the transmission of cognitive task information through optimal brain pathways",
+      "year": 2025,
+      "rank": 142,
+      "composite_score": 0.197111,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1038/s41583-025-00932-3",
+      "title": "On analogies in vertebrate and insect visual systems",
+      "year": 2025,
+      "rank": 194,
+      "composite_score": 0.187711,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": false,
+      "access_type": "unknown",
+      "importance_flags": []
+    },
+    {
+      "doi": "10.7554/elife.85300",
+      "title": "Homophilic wiring principles underpin neuronal network topology in vitro",
+      "year": 2025,
+      "rank": 197,
+      "composite_score": 0.187045,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1038/s41551-024-01242-2",
+      "title": "Contributions of network structure, chemoarchitecture and diagnostic categories to transitions between cognitive topographies",
+      "year": 2024,
+      "rank": 201,
+      "composite_score": 0.186033,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1016/b978-0-12-820480-1.00165-0",
+      "title": "Functional specialization, modularity and communication: Network models linking brain structure and function",
+      "year": 2024,
+      "rank": 211,
+      "composite_score": 0.18487,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": false,
+      "access_type": "unknown",
+      "importance_flags": []
+    },
+    {
+      "doi": "10.1146/annurev-biophys-030722-110624",
+      "title": "Toward Principles of Brain Network Organization and Function",
+      "year": 2025,
+      "rank": 234,
+      "composite_score": 0.180548,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1371/journal.pcsy.0000091",
+      "title": "Cascades and convergence: Dynamic signal flow in a synapse-level brain network",
+      "year": 2026,
+      "rank": 258,
+      "composite_score": 0.176914,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1109/access.2025.3542634",
+      "title": "Brain Network Dynamics and Multiscale Modeling of Neurodegenerative Disorders: A Review",
+      "year": 2025,
+      "rank": 280,
+      "composite_score": 0.173353,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.64898/2025.12.10.689094",
+      "title": "Hierarchical Community Structure of the Adult <i>Drosophila</i> Connectome Reveals Conserved Circuit Archetypes",
+      "year": 2025,
+      "rank": 302,
+      "composite_score": 0.170439,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1016/j.crmeth.2025.100988",
+      "title": "Comparative prospects of imaging methods for whole-brain mammalian connectomics",
+      "year": 2025,
+      "rank": 319,
+      "composite_score": 0.168284,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1101/2025.04.13.648639",
+      "title": "Unifying the Electron Microscopy Multiverse through a Large-scale Foundation Model",
+      "year": 2025,
+      "rank": 320,
+      "composite_score": 0.168284,
+      "k_core": null,
+      "in_degree": 1,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.3389/fcomp.2024.1156204",
+      "title": "Beyond neurons: computer vision methods for analysis of morphologically complex astrocytes",
+      "year": 2024,
+      "rank": 330,
+      "composite_score": 0.167204,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1016/j.neubiorev.2026.106661",
+      "title": "Opening the black box of neural variability: from noise to mechanisms",
+      "year": 2026,
+      "rank": 331,
+      "composite_score": 0.167199,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1073/pnas.2505822122",
+      "title": "PyReconstruct: A fully open-source, collaborative successor to Reconstruct",
+      "year": 2025,
+      "rank": 354,
+      "composite_score": 0.165049,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1093/jmicro/dfaf002",
+      "title": "A guide to CNN-based dense segmentation of neuronal EM images",
+      "year": 2025,
+      "rank": 361,
+      "composite_score": 0.163967,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": false,
+      "access_type": "unknown",
+      "importance_flags": []
+    },
+    {
+      "doi": "10.1038/s41592-025-02929-3",
+      "title": "SmartEM: machine learning-guided electron microscopy",
+      "year": 2025,
+      "rank": 387,
+      "composite_score": 0.161806,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.3389/fnins.2025.1750272",
+      "title": "Structure\u2013function relationships across scales: implications for atlases",
+      "year": 2026,
+      "rank": 388,
+      "composite_score": 0.161803,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1162/netn_a_00455",
+      "title": "The exponential distance rule-based network model predicts topology and reveals functionally relevant properties of the <i>Drosophila</i> projectome",
+      "year": 2025,
+      "rank": 425,
+      "composite_score": 0.158571,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    },
+    {
+      "doi": "10.1101/2025.03.19.644231",
+      "title": "An entropic measure of diverse specialisation highlights multifunctional neurons in annotated connectomes",
+      "year": 2025,
+      "rank": 454,
+      "composite_score": 0.156407,
+      "k_core": null,
+      "in_degree": 0,
+      "pdf_available": true,
+      "access_type": "unknown",
+      "importance_flags": [
+        "pdf-available"
+      ]
+    }
+  ]
+}

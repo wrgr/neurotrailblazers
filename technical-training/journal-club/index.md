@@ -471,11 +471,6 @@ content_type: core
     });
   });
 
-  // Modal dismissal. The close button was the only route out, and until the
-  // global `.hidden` utility existed it did nothing at all -- the modal opened
-  // over the site nav on page load and stayed there. Three routes now, which is
-  // what anyone meets a full-viewport overlay expecting: the button, Escape, and
-  // a click on the backdrop outside the content box.
   function closePromptModal() {
     promptModal.classList.add('hidden');
     if (promptBtn) { promptBtn.focus(); }
@@ -486,8 +481,6 @@ content_type: core
   }
 
   promptModal.addEventListener('click', function (e) {
-    // Only a click on the overlay itself, never one that bubbled up from the
-    // content box, the textarea or a button inside it.
     if (e.target === promptModal) { closePromptModal(); }
   });
 

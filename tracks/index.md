@@ -35,7 +35,7 @@ use_layout_hero: false
       <li><strong>Topic</strong> &mdash; three tracks, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
       <li><strong>Mode of use</strong> &mdash; whether you are working alone, running a hosted session, or inside a research program.</li>
     </ul>
-    <p>Any track can be worked in any available mode. Pick the topic below, then the mode &mdash; or the other way round, if your situation is the fixed part.</p>
+    <p>You can follow any track in any available mode. Pick the topic below, then the mode &mdash; or the other way round, if your situation is the fixed part.</p>
   </section>
 
   <section class="section">
@@ -74,7 +74,7 @@ use_layout_hero: false
     <div class="axis-head">
       <span class="axis-eyebrow">Underneath both axes</span>
       <h2>The core they draw on</h2>
-      <p class="axis-lede">Every track routes through the same reference layer. If a track's sequence does not suit you, going straight to the core is a legitimate way to use this site.</p>
+      <p class="axis-lede">Every track routes through the same reference layer. If a track's sequence does not suit you, browse the core directly.</p>
     </div>
     {% include ui/core-surfaces.html compact=true %}
     <p class="mt-1"><a href="{{ '/core/' | relative_url }}">How the core and the tracks fit together &rarr;</a></p>

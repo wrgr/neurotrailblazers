@@ -30,8 +30,7 @@ content_type: core
   </div>
 
   <section class="section">
-    <p>Three different things get called a tool on a connectomics site, and conflating them
-    wastes your time. This page separates them.</p>
+    <p>Find browser interactives, specialist software, and help.</p>
     <p><strong>The interactives on this site</strong> run in the browser, here, with no account
     and no install. They are for exploring the literature and practising judgement, not for
     analysing your own data.</p>
@@ -55,7 +54,7 @@ content_type: core
       <li><a href="{{ '/technical-training/journal-club/' | relative_url }}">Journal club</a> &mdash; the same corpus as cards, each with an OCAR summary and discussion prompts.</li>
       <li><a href="{{ '/concepts/' | relative_url }}">Concept explorer</a> &mdash; concepts filtered by track and stage, each linked to where it is taught.</li>
       <li><a href="{{ '/kb/' | relative_url }}">The field, mapped</a> &mdash; visualisations of the literature and the methods landscape.</li>
-      <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, each with a typical value and the confusion it usually causes.</li>
+      <li><a href="{{ '/technical-training/dictionary/' | relative_url }}">Connectomics dictionary</a> &mdash; 127 terms, with definitions, common confusions, and typical values where applicable.</li>
       <li><a href="{{ '/modules/' | relative_url }}">Module practice labs</a> &mdash; the retrieval-practice check at the foot of each module page.</li>
       <li><a href="{{ '/neuronauts/kids/' | relative_url }}">Junior Lab quiz</a> &mdash; for younger readers and classrooms.</li>
     </ul>

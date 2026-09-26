@@ -10,7 +10,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   <!-- Hero Section -->
   <section class="nn-kid-hero">
     <div class="nn-kid-badge"><span aria-hidden="true">🚀</span> Neuronauts Junior Science Lab</div>
-    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Let's Explore the Brain's Super-Highways!</span></h1>
+    <h1>How Do Brains Work? <br><span class="nn-gradient-text">Let's Explore the Brain's Connections!</span></h1>
     <p class="nn-kid-intro">
       Did you know your brain has over <strong>86 billion tiny cells</strong> called neurons, connected by <strong>100 trillion secret bridges</strong> called synapses? Join the <strong>Neuronauts crew</strong> to discover how scientists map the brain using giant electron microscopes, smart AI robots, and video games!
     </p>
@@ -84,7 +84,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
           <span class="nn-story-tag"><span aria-hidden="true">📸</span> Giant Brain Map</span>
           <span class="nn-story-paper">Based on: <a href="https://doi.org/10.1126/science.adk4858" target="_blank" rel="noopener">Shapson-Coe et al. (Science 2024)</a> &amp; <a href="https://doi.org/10.1016/j.cell.2015.06.054" target="_blank" rel="noopener">Kasthuri et al. (Cell 2015)</a> &mdash; both free to read</span>
         </div>
-        <h3>1. The 150-Million Photo Puzzle of the Human Brain!</h3>
+        <h3>1. The Tiny Brain Sample with 150 Million Connections</h3>
         <div class="nn-story-body">
           <p>
             <strong>The Big Question:</strong> What does a piece of the human brain look like if you zoom in 100,000 times?
@@ -93,7 +93,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine taking a high-definition photo of every single grain of sand on a 10-mile beach, and then stacking them all in 3D to see how tiny ant tunnels connect underneath!
           </div>
           <p>
-            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into 5,000 ultra-thin sheets—each 1,000 times thinner than a human hair. They took <strong>150 million microscope photos</strong> and used supercomputers to build the most detailed 3D human brain map ever seen!
+            <strong>What Scientists Did:</strong> Scientists took a tiny speck of human cortex (smaller than a sesame seed!) and sliced it into 5,000 ultra-thin sheets—each 1,000 times thinner than a human hair. They combined microscope images with powerful computers to build a detailed 3D map of this tiny brain sample.
           </p>
           <div class="nn-fun-fact">
             <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> In that tiny speck, they found <strong>57,000 cells</strong> and <strong>150,000,000 synapses</strong>!
@@ -145,7 +145,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Imagine a giant bowl filled with 10,000 cooked rainbow spaghetti noodles all twisted together in a knot. If you pull one end, how do you find where it comes out on the other side?
           </div>
           <p>
-            <strong>What Scientists Did:</strong> They created <strong>Flood-Filling Networks (FFNs)</strong> and deep learning algorithms. The AI robot starts inside a single cell and "pours digital paint" that fills up only that exact neuron, dodging cell walls and following branches in 3D!
+            <strong>What Scientists Did:</strong> They created <strong>Flood-Filling Networks (FFNs)</strong> and deep learning algorithms. The AI robot starts inside a single cell and "pours digital paint" that fills up only that exact neuron, following cell membranes and following branches in 3D!
           </p>
           <div class="nn-fun-fact">
             <span aria-hidden="true">🌟</span> <strong>Mind-Blowing Fact:</strong> AI robots can trace millions of voxels in seconds, but human "proofreaders" still double-check their work to make sure no noodles were accidentally glued together!
@@ -168,7 +168,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
             <strong>The Big Question:</strong> What was the very first creature whose entire brain wiring was completely mapped?
           </p>
           <div class="nn-analogy-box">
-            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Solving a 302-piece jigsaw puzzle by hand before computers even existed!
+            <span aria-hidden="true">💡</span> <strong>The Fun Analogy:</strong> Solving a 302-piece jigsaw puzzle by hand using printed microscope photos and hand-drawn tracings!
           </div>
           <p>
             <strong>What Scientists Did:</strong> In 1986, Sydney Brenner and his team spent over 15 years cutting a 1-millimeter worm named <em>C. elegans</em> into thousands of slices, printing physical photos, and tracing all <strong>302 neurons</strong> and <strong>7,000 synapses</strong> by hand with colored pens!
@@ -214,11 +214,11 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   <!-- Interactive Concept Decoder -->
   <section class="nn-decoder-section" id="decoder">
     <h2 class="nn-section-title">The Brain Explorer Concept Decoder</h2>
-    <p class="nn-section-desc">Click any brain word to reveal its secret superpower and kid analogy!</p>
+    <p class="nn-section-desc">Read each brain word, its meaning, and an analogy to help you remember it.</p>
 
     <div class="nn-decoder-grid">
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🧠</span></span>
           <h4>Neuron</h4>
@@ -230,7 +230,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">⚡</span></span>
           <h4>Axon</h4>
@@ -242,7 +242,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🌿</span></span>
           <h4>Dendrite</h4>
@@ -254,7 +254,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🤝</span></span>
           <h4>Synapse</h4>
@@ -266,7 +266,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🛡️</span></span>
           <h4>Glia</h4>
@@ -278,7 +278,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🗺️</span></span>
           <h4>Connectome</h4>
@@ -290,7 +290,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🔬</span></span>
           <h4>Electron Microscope</h4>
@@ -302,7 +302,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
         </div>
       </div>
 
-      <div class="nn-decoder-card" tabindex="0">
+      <div class="nn-decoder-card">
         <div class="nn-decoder-front">
           <span class="nn-term-icon"><span aria-hidden="true">🕵️</span></span>
           <h4>Proofreading</h4>
@@ -321,7 +321,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   <section class="nn-game-section" id="detective-game">
     <div class="nn-game-card">
       <div class="nn-game-badge"><span aria-hidden="true">🎮</span> Mini-Challenge</div>
-      <h2>Become a Certified Junior Brain Detective!</h2>
+      <h2>Become a Junior Brain Detective!</h2>
       <p>Test your brain explorer knowledge with this 3-question quick mission:</p>
 
       <div class="nn-quiz-container" id="nn-quiz">
@@ -492,7 +492,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
 /* Crew */
 .nn-crew-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   gap: 1rem;
   margin: 1.5rem 0 1.25rem;
 }
@@ -549,7 +549,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   font-weight: 700;
   font-size: 0.8rem;
 }
-.nn-story-paper { font-size: 0.8rem; color: #64748b; font-style: italic; }
+.nn-story-paper { flex: 1 1 22rem; min-width: 0; line-height: 1.6; font-size: 0.9rem; color: #64748b; font-style: italic; }
 .nn-story-paper a { color: #1d4ed8; font-weight: 600; text-decoration: underline; }
 .nn-story-card h3 { font-size: 1.35rem; color: #0f172a; margin: 0.3rem 0 0.85rem; font-weight: 800; line-height: 1.3; }
 .nn-analogy-box {
@@ -585,7 +585,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
 /* Decoder Grid */
 .nn-decoder-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 1.25rem;
 }
 .nn-decoder-card {
@@ -595,9 +595,8 @@ description: "Connectomics for kids and young explorers: five landmark papers re
   padding: 1.25rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   transition: all 0.2s ease;
-  cursor: pointer;
 }
-.nn-decoder-card:hover, .nn-decoder-card:focus {
+.nn-decoder-card:hover {
   border-color: #3b82f6;
   box-shadow: 0 8px 20px rgba(59,130,246,0.15);
   transform: translateY(-2px);
@@ -671,7 +670,7 @@ description: "Connectomics for kids and young explorers: five landmark papers re
 /* Guide */
 .nn-guide-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -683,6 +682,10 @@ description: "Connectomics for kids and young explorers: five landmark papers re
 }
 .nn-guide-card h3 { font-size: 1.05rem; color: #0f172a; margin: 0 0 0.5rem; font-weight: 700; }
 .nn-guide-card p { font-size: 0.88rem; color: #475569; line-height: 1.5; margin: 0; }
+@media (max-width: 640px) {
+  .nn-kid-hero, .nn-story-card, .nn-game-card { padding: 1.25rem; }
+  .nn-quiz-container { padding: 1rem; }
+}
 </style>
 
 <script>

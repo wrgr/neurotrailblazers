@@ -353,7 +353,7 @@ Work these against the identification protocol in §3, naming the step that deci
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two manifest-listed IDs (`S02`, `S07`) were not present in extracted thumbnails and are pending recovery.</small></p>
+<p><small>Attribution: Pat Rivlin training materials (MICrONS proofreading deck). Two manifest-listed IDs (<code>S02</code>, <code>S07</code>) were not present in extracted thumbnails and are pending recovery.</small></p>
 
 ---
 

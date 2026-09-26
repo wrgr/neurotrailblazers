@@ -37,7 +37,7 @@ content_type: core
         </div>
     </div>
 
-    <section class="section" markdown="1">
+<section class="section" markdown="1">
 
 ## What Connectome Quality Means
 
@@ -45,7 +45,7 @@ A reconstructed connectome is a claim: that these objects are neurons, that
 these contacts are synapses, and that the wiring diagram derived from them can
 carry scientific weight. Quality control is the practice of measuring how far
 that claim can be trusted, and no single number does it. Each standard metric
-measures one thing and is blind to another — the choosing is covered in
+measures one thing and is blind to another — choosing the right metric is covered in
 [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 and the mathematics in the
 [Metrics and QA reference]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }}).
@@ -95,7 +95,7 @@ The output is a ranked queue of candidates, not a verdict.
 
 Humans adjudicate that queue. The division holds because the two error types
 demand different strengths: splits are findable by rule, but recognizing a
-merge requires the biological judgment that a "perfectly ordinary looking"
+merge requires the biological judgment that a "perfectly ordinary-looking"
 object is in fact two cells — which is why
 [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }})
 assigns merge classes to human review. Newcomers enter this workflow through
@@ -107,7 +107,7 @@ builds the skill on real public volumes, and structured task designs with
 built-in quality checks let larger groups contribute without diluting the
 standard.
 
-    </section>
+</section>
 
     <div class="cards-grid">
         <div class="card">

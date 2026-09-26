@@ -30,7 +30,7 @@ content_type: core
 <div class="hero hero-spaced hero-rounded">
   <div class="hero-content">
     <div class="hero-text">
-      <h1 class="hero-title-impact">Ask an Expert<span>: Chat with Dr. Jeff Lichtman</span></h1>
+      <h1 class="hero-title-impact">Ask an Expert<span>: Connectomics AI Guide</span></h1>
       <div class="hero-description-box">
         <p class="hero-description">A curated AI chatbot, built on public materials by Dr. Jeff Lichtman, that answers questions about brain mapping and research life.</p>
         <p><em>Disclaimer: This GPT does not represent direct communication with Dr. Lichtman and may not reflect his real-time views. Always refer to primary literature or direct mentorship when available.</em></p>
@@ -80,7 +80,7 @@ Questions it handles badly:
 
 ## About Dr. Lichtman
 
-<img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" style="width: 400px; height: auto; float: right; margin: 0 0 20px 20px; border-radius: 8px;">
+<img src="{{ '/assets/images/jeff-lichtman.jpg' | relative_url }}" alt="Photo of Dr. Jeff Lichtman" class="expert-portrait">
 
 **Jeff W. Lichtman, MD, PhD** is the Jeremy R. Knowles Professor of Molecular and Cellular Biology at Harvard University, a Howard Hughes Medical Institute Investigator, and, since April 2024, Dean of Science for Harvard's Faculty of Arts and Sciences. His work centers on the connectome — the complete map of neural connections in the brain — including the development of Brainbow imaging and large-volume electron microscopy for circuit reconstruction. He is a co-lead of the Center for High-throughput Integrative Mouse Connectomics (HI-MC), the NIH BRAIN CONNECTS center working to map 10 mm³ of mouse hippocampal tissue at full EM resolution (see the <a href="{{ '/content-library/case-studies/mouseconnects-himc/' | relative_url }}">MouseConnects case study</a>).
 

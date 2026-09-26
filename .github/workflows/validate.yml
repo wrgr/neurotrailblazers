@@ -122,6 +122,18 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Research modal browser regression
+        run: |
+          npm install --prefix "$RUNNER_TEMP/research-browser" --no-package-lock --no-save puppeteer@24.16.0
+          NODE_PATH="$RUNNER_TEMP/research-browser/node_modules" node scripts/check_research_modal.cjs
+
+      - name: Copy and responsive layout regression
+        run: NODE_PATH="$RUNNER_TEMP/research-browser/node_modules" node scripts/check_site_layout.cjs
+
       # A real gate: exits 1 if _site is missing or any internal link is broken.
       # Run with plain `ruby` — stdlib only — but it requires _site/ from the step above.
       - name: Internal link audit
@@ -133,10 +145,6 @@ jobs:
       # _data/concepts.yml without any check noticing.
       - name: Fragment (anchor) audit
         run: ruby scripts/check_anchor_links.rb
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
 
       - name: Install browser test driver
         run: npm install --no-save puppeteer-core@24.43.1

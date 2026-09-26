@@ -49,7 +49,7 @@ content_type: navigation
                 <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
                 <p class="arch-body">Build technical fluency in connectomics from motivation and imaging through analysis methods. The default answer if you are new, whatever your career stage.</p>
                 <div class="arch-actions">
-                    <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Track</a>
+                    <a href="{{ '/tracks/core-concepts-methods/' | relative_url }}" class="btn btn-primary">Open Core Concepts &amp; Methods</a>
                 </div>
             </article>
             <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
@@ -58,7 +58,7 @@ content_type: navigation
                 <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
                 <p class="arch-body">Apply methods through workflows, quality control, tools, and research execution practice. Works best alongside a live project rather than instead of one.</p>
                 <div class="arch-actions">
-                    <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Practice Track</a>
+                    <a href="{{ '/tracks/research-in-action/' | relative_url }}" class="btn btn-primary">Open Research in Action</a>
                 </div>
             </article>
             <article class="arch-card" style="--accent: var(--layer-path); --accent-tint: var(--layer-path-tint);">
@@ -67,13 +67,13 @@ content_type: navigation
                 <p class="arch-meta"><span class="pill pill-layer">topic track</span></p>
                 <p class="arch-body">Navigate mentorship, the hidden curriculum, and professional growth. Relevant from week one, not only at the end.</p>
                 <div class="arch-actions">
-                    <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Community Track</a>
+                    <a href="{{ '/tracks/career-and-community/' | relative_url }}" class="btn btn-primary">Open Career &amp; Community</a>
                 </div>
             </article>
         </div>
 
         <h3>Or neither</h3>
-        <p>The tracks are a convenience, not a gate. If you have a specific question rather than a curriculum-sized one, go straight to <a href="{{ '/core/' | relative_url }}">the core</a> &mdash; the dictionary, content library, journal club, atlas, hidden curriculum and datasets are written to be looked things up in, and none of them requires you to have started anywhere.</p>
+        <p>If you have a specific question, go straight to <a href="{{ '/core/' | relative_url }}">the core</a>. Use the dictionary, content library, journal club, atlas, hidden curriculum, and datasets to look things up as you need them. You do not need to start a track first.</p>
     </section>
 
     <section class="section">
@@ -114,7 +114,7 @@ content_type: navigation
         <p>The site has two layers, and telling them apart saves a lot of wandering.</p>
         <ul class="mb-2" style="margin-left: 2rem;">
             <li><strong><a href="{{ '/core/' | relative_url }}">The core</a> is reference.</strong> Content library, dictionary, journal club, atlas, hidden curriculum, datasets. No order, not meant to be finished, consulted rather than worked through.</li>
-            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</a></strong> Each selects from the core, sequences it, and adds labs that end in an artifact. Three of them, aligned to the Fadel dimensions of Knowledge, Skills, Character and Meta-learning.</li>
+            <li><strong><a href="{{ '/tracks/' | relative_url }}">Tracks are paths through it.</a></strong> Each selects from the core, sequences it, and adds labs that end in an artifact. There are three tracks, aligned to the Fadel dimensions of Knowledge, Skills, Character, and Meta-learning.</li>
             <li><strong><a href="{{ '/modes/' | relative_url }}">Modes are how you walk a track.</a></strong> Self-study and hosted workshop both exist today. A third &mdash; a research-intensive, contributory program built on the same core &mdash; is named on that page but is not built yet.</li>
         </ul>
         <p>Technical units and modules are path content; session kits, decks and worksheets are delivery material for whoever is running a session. If you are studying alone you can ignore the latter entirely.</p>
@@ -208,7 +208,7 @@ content_type: navigation
             </div>
         </div>
 
-        <p>Each avatar includes a backstory, visible successes, and a noble failure—offering a relatable entry point for diverse learners.</p>
+        <p>Each avatar includes a backstory, visible successes, and a setback — offering a relatable entry point for diverse learners.</p>
         <p><em>Inspired by stories like those described in <a href="https://www.molbiolcell.org/doi/10.1091/mbc.E24-09-0416">When Life Gets in the Way of Science</a></em></p>
     </section>
 

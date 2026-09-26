@@ -444,7 +444,7 @@ The first six panels carry ultrastructure cues forward from Units 05–06; the r
   </article>
 </div>
 
-<p><small>Attribution: Pat Rivlin training materials for `RIV-*` visuals; outreach visuals from module14 lesson2 extraction. Some planned IDs were unavailable in extracted thumbnails and were replaced with nearest available alternatives.</small></p>
+<p><small>Attribution: Pat Rivlin training materials for <code>RIV-*</code> visuals; outreach visuals from module14 lesson2 extraction. Some planned IDs were unavailable in extracted thumbnails and were replaced with nearest available alternatives.</small></p>
 
 ---
 

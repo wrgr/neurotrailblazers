@@ -27,7 +27,7 @@ speaker notes, in-class discussion prompts, and a graded artifact.
 
 They were written for **EN.585.781 Frontiers in Neuroengineering** at Johns Hopkins,
 where they run as modules 7–9. Nothing in them depends on that course: the sequence is
-self-contained and assumes only introductory neuroscience.
+self-contained; introductory neuroscience is helpful but not required.
 
 For the two additional standalone graduate lectures, shorter technical-unit decks,
 and instructor plans, browse [Presentation Decks]({{ '/technical-training/slides/' | relative_url }}).
@@ -91,7 +91,7 @@ A 90-minute slot takes Parts A and B; Part C works as a standalone seminar. A si
 | 2 | Reproducible query | A pinned materialization version, stated inclusion criteria, one stated limitation |
 | 3 | Analysis card | Hypothesis, estimand, null model, success criterion, error band, non-claim, provenance |
 
-**Prerequisites.** Introductory neuroscience helps and is not required. Lecture 2's
+**Prerequisites.** Introductory neuroscience is helpful but not required. Lecture 2's
 assignment assumes basic Python; the lecture itself does not.
 
 **No data or accounts needed to teach.** The lectures reference public platforms —
@@ -139,7 +139,7 @@ from.
 
 > Gray Roncal, W. (2026). *Introduction to Connectomics* (EN.585.781 Frontiers in
 > Neuroengineering, Module 7). NeuroTrailblazers. CC BY-SA 4.0.
-> https://neurotrailblazers.org/teaching/lectures/
+> [NeuroTrailblazers lecture series](https://neurotrailblazers.org/teaching/lectures/)
 
 For an adaptation, prefix with *"Adapted from"* and note what you changed. A credit line
 on a title slide or in a syllabus is sufficient.

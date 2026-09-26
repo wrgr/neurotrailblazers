@@ -183,9 +183,9 @@ treat as uninteresting?**
 
 ---
 
-## 7. Vogelstein et al. (2021) — Statistical Connectomics
+## 7. Chung et al. (2021) — Statistical Connectomics
 
-**Citation:** Vogelstein JT, Bridgeford EW, Pedigo BD, Chung J, Levin K, Mensh B, Priebe CE. Statistical connectomics. *Annual Review of Statistics and Its Application*. 2021;8:463-492.
+**Citation:** Chung J, Bridgeford E, Arroyo J, Pedigo BD, Saad-Eldin A, Gopalakrishnan V, Xiang L, Priebe CE, Vogelstein JT. Statistical connectomics. *Annual Review of Statistics and Its Application*. 2021;8:463-492.
 **DOI:** [10.1146/annurev-statistics-042720-023234](https://doi.org/10.1146/annurev-statistics-042720-023234)
 
 **Tags:** `network-analysis:random-graph-model` `network-analysis:stochastic-block-model` `network-analysis:network-embedding` `network-analysis:statistical-testing` `methodology:statistical-analysis`
@@ -196,7 +196,7 @@ treat as uninteresting?**
 
 **Intermediate:** The review develops random graph models relevant to connectomics — the random dot product graph, stochastic block models and their degree-corrected variants — and covers spectral embedding, community detection as model estimation, two-sample network testing, and vertex nomination.
 
-**Advanced:** This is the right conceptual upgrade from descriptive graph statistics. Framing community detection as estimation under a stochastic block model, rather than as optimizing a modularity score, gives you model selection, uncertainty quantification, and a principled way to choose the number of communities — none of which modularity maximization provides. Spectral embedding under an RDPG gives cell-type discovery from connectivity a statistical foundation. The section on network-valued two-sample testing is directly relevant to comparing hemispheres, individuals, or developmental stages. Note that most of the theory assumes the graph is observed without error; combining it with the reconstruction-error sensitivity analysis in [Unit 09 §3](/technical-training/09-connectome-analysis-neuroai/) is left to the analyst.
+**Advanced:** This is a useful step up from descriptive graph statistics. Framing community detection as estimation under a stochastic block model, rather than as optimizing a modularity score, gives you model selection, uncertainty quantification, and a principled way to choose the number of communities — none of which modularity maximization provides. Spectral embedding under an RDPG gives cell-type discovery from connectivity a statistical foundation. The section on network-valued two-sample testing is directly relevant to comparing hemispheres, individuals, or developmental stages. Note that most of the theory assumes the graph is observed without error; combining it with the reconstruction-error sensitivity analysis in [Unit 09 §3](/technical-training/09-connectome-analysis-neuroai/) is left to the analyst.
 
 **Key figures:** Model hierarchy; spectral embedding illustration; two-sample testing framework.
 
@@ -217,11 +217,11 @@ treat as uninteresting?**
 
 ### Summaries
 
-**Beginner:** A complete wiring diagram of a larval fruit fly brain — around 3,000 neurons and 550,000 connections — small enough that the whole network can be analyzed exhaustively rather than sampled.
+**Beginner:** A complete wiring diagram of a larval fruit fly brain, 3,016 neurons and about 548,000 synapses, small enough that the whole network can be analyzed exhaustively rather than sampled.
 
 **Intermediate:** The paper presents the full larval *Drosophila* brain connectome and analyses it as a graph: hierarchical clustering of neuron types by connectivity, characterization of feedforward and recurrent pathways, identification of multisensory integration hubs, and comparison of the resulting architecture with artificial network motifs.
 
-**Advanced:** This dataset is the best available testbed for connectome statistics, because it is complete. Most methodological questions — how sensitive is community structure to the synapse threshold, does an apparent motif enrichment survive a distance-preserving null, how stable is a clustering under bootstrap — can be asked here without confounding by incomplete reconstruction, which is impossible in a cubic-millimeter cortical sample. The connectivity-based hierarchical clustering is also a concrete instance of cell typing from connectivity alone, and worth comparing against morphological typing in the same animal.
+**Advanced:** This dataset is a strong testbed for connectome statistics because it is complete. Most methodological questions — how sensitive is community structure to the synapse threshold, does an apparent motif enrichment survive a distance-preserving null, how stable is a clustering under bootstrap — can be asked here without confounding by incomplete reconstruction, which is impossible in a cubic-millimeter cortical sample. The connectivity-based hierarchical clustering is also a concrete instance of cell typing from connectivity alone, and worth comparing against morphological typing in the same animal.
 
 **Key figures:** Whole-brain connectome overview; connectivity-based clustering; feedforward/recurrent pathway analysis; multisensory integration centers.
 
@@ -246,7 +246,7 @@ treat as uninteresting?**
 
 **Intermediate:** Using the larval *Drosophila* connectome, the authors test bilateral symmetry under a sequence of increasingly refined generative models: matched edge probability, group-level (block model) probabilities, and density-adjusted versions. Conclusions about symmetry change depending on which model defines the null, and the paper makes that dependence the result rather than a caveat.
 
-**Advanced:** This is the most useful single demonstration in the connectomics literature of how much a scientific conclusion depends on the choice of null. It is the same lesson as the reciprocity example in [Unit 09 §2](/technical-training/09-connectome-analysis-neuroai/), here executed rigorously on real data across a nested model hierarchy. The practical takeaway for any comparison of two connectomes — hemispheres, individuals, conditions, developmental stages — is that you must state the model under which "the same" is being evaluated, and preferably report the answer under several. The paper also handles the practical problem of establishing node correspondence between the two graphs, which is a prerequisite most comparison studies gloss over.
+**Advanced:** This paper shows clearly how much a scientific conclusion can depend on the choice of null model. It is the same lesson as the reciprocity example in [Unit 09 §2](/technical-training/09-connectome-analysis-neuroai/), here executed rigorously on real data across a nested model hierarchy. The practical takeaway for any comparison of two connectomes — hemispheres, individuals, conditions, developmental stages — is that you must state the model under which "the same" is being evaluated, and preferably report the answer under several. The paper also handles the practical problem of establishing node correspondence between the two graphs, which is a prerequisite most comparison studies gloss over.
 
 **Key figures:** Nested model hierarchy; symmetry test results under each model; density-adjustment effect.
 
@@ -258,28 +258,9 @@ treat as uninteresting?**
 
 ---
 
-## 10. Lappalainen et al. (2024) — Connectome-Constrained Networks Predict Neural Activity
+## Also read: Lappalainen et al. (2024) — Connectome-constrained networks
 
-**Citation:** Lappalainen JK, Tschopp FD, Prakhya S, McGill M, Nern A, Shinomiya K, Takemura S, Gruntman E, Macke JH, Turaga SC. Connectome-constrained networks predict neural activity across the fly visual system. *Nature*. 2024;634:1132-1140.
-**DOI:** [10.1038/s41586-024-07939-3](https://doi.org/10.1038/s41586-024-07939-3)
-
-**Tags:** `neuroai:connectome-constrained-model` `neuroai:structure-function` `neuroai:simulation` `case-studies:Drosophila` `network-analysis:statistical-testing`
-
-### Summaries
-
-**Beginner:** The strongest evidence so far that wiring diagrams are useful for predicting what a brain does. The authors built a computer model of the fly visual system whose connections were fixed by the measured connectome, fitted only the remaining unknowns, and found the model predicted the responses of neurons it had never been trained on.
-
-**Intermediate:** Connectivity and cell-type identity are taken from the connectome and held fixed; free parameters — synaptic signs, strengths, and time constants — are optimized on a task rather than on neural recordings. The resulting ensemble of models predicts measured responses across many cell types in the fly visual system, and the ensemble spread gives a handle on which predictions are robust to parameter degeneracy.
-
-**Advanced:** This is the clearest existing answer to "what is a connectome actually for?" The connectome does not supply a simulation; it supplies **constraints that make a model falsifiable** by removing an enormous number of free parameters. Two methodological points deserve close reading. First, training on a task rather than on the neural data being predicted makes the predictions genuine held-out tests rather than fits. Second, the ensemble treatment is the right response to parameter degeneracy — many parameter settings fit, and the scientifically meaningful predictions are the ones on which the ensemble agrees. The honest scope, as [Unit 09 §5](/technical-training/09-connectome-analysis-neuroai/) discusses, is that this required a small, stereotyped, well-characterized system with an unusually complete connectome; extending it to mammalian cortex is not a straightforward scaling problem.
-
-**Key figures:** Model construction from connectome; task-optimized parameter fitting; predicted vs measured responses; ensemble variability.
-
-**Discussion prompts:**
-- Precisely which parameters does the connectome fix, and which remain free? Why does that ratio determine whether the model is falsifiable?
-- What properties of the fly visual system made this work, and which of them does mouse cortex lack?
-
-**Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [NeuroAI papers](/content-library/journal-papers/neuroai/), [Unit 09](/technical-training/09-connectome-analysis-neuroai/)
+The last step in this sequence is on the NeuroAI page: [Lappalainen et al. (2024), *Connectome-constrained networks predict neural activity across the fly visual system*]({{ '/content-library/journal-papers/neuroai/' | relative_url }}#8-lappalainen-et-al-2024--connectome-constrained-networks-predict-neural-activity-across-the-fly-visual-system). Read it here for the statistical point: the connectome fixes connectivity for 64 cell types, the remaining single-neuron and single-synapse parameters are fitted to a motion-detection task rather than to recordings, and agreement with activity measured in 26 studies is therefore a held-out test. Because many parameter settings solve the task, the predictions worth trusting are the ones an ensemble of trained models agrees on. [Unit 09 §5]({{ '/technical-training/09-connectome-analysis-neuroai/' | relative_url }}) discusses what it would take to repeat this in mammalian cortex.
 
 ---
 
@@ -293,10 +274,10 @@ treat as uninteresting?**
 | Rubinov & Sporns 2010 | The measure catalog, and each measure's sensitivities |
 | Zalesky 2010 | Multiple comparisons over edges, and component-level inference |
 | Matelsky 2021 | Making the motif itself a reproducible specification |
-| Vogelstein 2021 | Model-based inference in place of descriptive statistics |
+| Chung 2021 | Model-based inference in place of descriptive statistics |
 | Winding 2023 | A complete connectome — the testbed where methods can be validated |
 | Pedigo 2023 | The conclusion depends on the model; report it under several |
-| Lappalainen 2024 | What the graph is ultimately for: constraining a falsifiable model |
+| Lappalainen 2024 ([NeuroAI page]({{ '/content-library/journal-papers/neuroai/' | relative_url }})) | What the graph is ultimately for: constraining a falsifiable model |
 
 ## Related
 

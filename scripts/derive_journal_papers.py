@@ -348,9 +348,9 @@ def write_views(recs: list[dict]) -> None:
     total = len(recs)
     era_counts = Counter(r["inclusion_role"] for r in recs)
     era_groups = [
-        {"key": "history", "label": "History & Classics (≤2018)", "n": era_counts["history"], "range": "1962-2018"},
-        {"key": "contemporary", "label": "Contemporary Surge (2019-2023)", "n": era_counts["contemporary"], "range": "2019-2023"},
-        {"key": "sota", "label": "State of the Art (2024-2026+)", "n": era_counts["sota"], "range": "2024-2026+"},
+        {"key": "history", "label": "History (2018 and earlier)", "n": era_counts["history"], "range": "1962-2018"},
+        {"key": "contemporary", "label": "Contemporary (2019-2023)", "n": era_counts["contemporary"], "range": "2019-2023"},
+        {"key": "sota", "label": "Recent (2024 onward)", "n": era_counts["sota"], "range": "2024-2026+"},
     ]
     years = sorted(recs, key=lambda r: r["year"])
     era_groups[0]["range"] = f"{years[0]['year']}-2018"

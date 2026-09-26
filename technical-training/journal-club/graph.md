@@ -6,7 +6,7 @@ track: core-concepts-methods
 pathways:
   - technical foundation
   - shared vocabulary
-description: "Interactive citation graph explorer across 500, 1,000, and 2,000 curated papers in connectomics: self-organizing organic force clustering, weighted directed citation edges, deep OCAR research cards, and AI synthesis prompts."
+description: "Interactive graph of the citation links among 500, 1,000 or 2,000 connectomics papers, with a card for each paper and prompts you can copy into an AI assistant."
 content_type: core
 ---
 
@@ -15,7 +15,7 @@ content_type: core
 <section class="jc-hero" style="text-align: center; margin-bottom: 1.5rem;">
   <h1>Citation Graph Explorer</h1>
   <p style="font-size: 1.1rem; color: #555; max-width: 850px; margin: 0.5rem auto 0;">
-    Explore the curated connectomics literature network across <strong>500 Flagships</strong>, <strong>1,000 Landmark Works</strong>, and the <strong>2,000-Paper Comprehensive Graph</strong>. Features self-organizing organic force clustering, weighted directed citation edges, interactive lineage traversal, and deep OCAR research cards.
+    Each dot is a paper in the NeuroTrailblazers corpus and each arrow is a citation between two of them, 5,460 links across 2,000 papers. Switch between the top 500, 1,000 or 2,000 papers by citation centrality, click a paper for its card, and follow its citations in either direction.
   </p>
 </section>
 
@@ -69,7 +69,7 @@ content_type: core
         <select id="jcg-color-by">
           <option value="dimension">Category / Subfield (12 Domains)</option>
           <option value="era">Publication Era (History / Contemporary / SOTA)</option>
-          <option value="tier">Corpus Tier (500 Flagship / 1000 / 2000)</option>
+          <option value="tier">Corpus Tier (500 / 1000 / 2000)</option>
           <option value="organism">Model Organism (Mouse, Fly, Human, etc.)</option>
           <option value="citation_role">Citation Role (Foundational / Hub / Bridge)</option>
         </select>
@@ -83,7 +83,7 @@ content_type: core
           <option value="circuit-structure">Circuit Structure</option>
           <option value="pipeline">Pipeline &amp; Software</option>
           <option value="physiology">Physiology</option>
-          <option value="behaviour">Behaviour</option>
+          <option value="behaviour">Behavior</option>
           <option value="imaging">Imaging &amp; Optics</option>
           <option value="cell-types">Cell Types &amp; Census</option>
           <option value="neuroanatomy">Neuroanatomy</option>
@@ -144,7 +144,7 @@ content_type: core
       <button id="jcg-reset" type="button">Reset View &amp; Filters</button>
 
       <p class="jcg-count" id="jcg-count">Showing 500 papers</p>
-      <p class="jcg-hint">💡 Drag nodes to pull physics &bull; Drag background to pan &bull; Scroll to zoom &bull; Click node for full OCAR card</p>
+      <p class="jcg-hint">Drag a node to move it &bull; Drag the background to pan &bull; Scroll to zoom &bull; Click a node to open its card</p>
 
       <div class="jcg-legend-title" id="jcg-legend-title" style="font-weight:700; font-size:0.78rem; color:#374151; margin-top:0.4rem;">Color Cue Legend:</div>
       <div class="jcg-legend" id="jcg-legend"></div>
@@ -412,36 +412,6 @@ content_type: core
 .jcg-ocar-action      { background: #d1fae5; color: #065f46; }
 .jcg-ocar-resolution  { background: #ede9fe; color: #5b21b6; }
 .jcg-ocar-future      { background: #fce7f3; color: #9d174d; }
-
-/* Ecosystem & Methodological Pipeline Container */
-.jcg-ecosystem-box {
-  background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 0.75rem; margin: 0.85rem 0;
-}
-.jcg-ecosystem-box h4 {
-  margin: 0 0 0.5rem 0; font-size: 0.8rem; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;
-  display: flex; align-items: center; justify-content: space-between;
-}
-.jcg-ecosystem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; margin-bottom: 0.5rem; }
-.jcg-eco-item { background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.35rem 0.5rem; font-size: 0.74rem; }
-.jcg-eco-item strong { color: #475569; display: block; font-size: 0.68rem; text-transform: uppercase; margin-bottom: 0.1rem; }
-.jcg-eco-item span { color: #0f172a; font-weight: 600; }
-
-.jcg-analysis-pipeline { margin-top: 0.5rem; border-top: 1px dashed #cbd5e1; padding-top: 0.5rem; }
-.jcg-pipe-stage {
-  display: flex; gap: 0.5rem; margin-bottom: 0.4rem; font-size: 0.76rem; line-height: 1.35;
-  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.4rem 0.55rem;
-}
-.jcg-pipe-badge {
-  font-weight: 700; font-size: 0.68rem; padding: 0.15rem 0.4rem; border-radius: 4px; height: fit-content;
-  white-space: nowrap; flex-shrink: 0;
-}
-.jcg-badge-prep { background: #fef3c7; color: #92400e; }
-.jcg-badge-recon { background: #dbeafe; color: #1e40af; }
-.jcg-badge-ai { background: #ede9fe; color: #5b21b6; }
-.jcg-badge-qc { background: #d1fae5; color: #065f46; }
-.jcg-badge-stats { background: #fce7f3; color: #9d174d; }
-.jcg-pipe-desc strong { color: #1e293b; display: block; font-size: 0.74rem; }
-.jcg-pipe-desc p { margin: 0.1rem 0 0 0; color: #475569; font-size: 0.72rem; }
 
 /* Pedagogical Summaries Tab Switcher */
 .jcg-drawer-summaries { margin: 1rem 0; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
@@ -1644,7 +1614,7 @@ content_type: core
   // Rich Slide-Out Drawer with Deep OCAR Integration
   function openPaperDrawer(p) {
     panel.classList.remove('hidden');
-    var tierLabel = p.tier === 500 ? '500 Core Flagship' : (p.tier === 1000 ? '1000 Landmark' : '2000 Comprehensive');
+    var tierLabel = p.tier === 500 ? 'Top 500' : (p.tier === 1000 ? 'Top 1,000' : 'Top 2,000');
     var pdfButton = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" rel="noopener" class="jcg-drawer-btn jcg-drawer-btn-pdf">📄 Open Access PDF &rarr;</a>' : '';
     var fullCardUrl = JC_BASE_URL + '#paper-' + encodeURIComponent(p.id);
 
@@ -1652,6 +1622,7 @@ content_type: core
     var ocarHtml = '';
     if (p.ocar) {
       ocarHtml = '<div class="jcg-ocar-container">' +
+        '<p style="font-size:0.72rem; color:#64748b; margin:0 0 0.4rem 0;">These notes are written per research domain and shared by every paper in it. Read the paper&rsquo;s abstract on its full card for what it found.</p>' +
         '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-opportunity">Opportunity</span><p>' + (p.ocar.opportunity || '') + '</p></div>' +
         '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-challenge">Challenge</span><p>' + (p.ocar.challenge || '') + '</p></div>' +
         '<div class="jcg-ocar-step"><span class="jcg-ocar-label jcg-ocar-action">Action</span><p>' + (p.ocar.action || '') + '</p></div>' +
@@ -1732,62 +1703,6 @@ content_type: core
       '</div>' +
     '</div>';
 
-    // Ecosystem & Methodological Pipeline Breakdown
-    var orgStr = (p.organism && p.organism.length) ? p.organism.join(', ') : 'Neural System';
-    var datasetGuess = 'Open Connectome Volume';
-    var oLower = orgStr.toLowerCase();
-    if (oLower.indexOf('fly') !== -1 || oLower.indexOf('drosophila') !== -1) {
-      datasetGuess = 'FlyWire / FAFB / hemibrain';
-    } else if (oLower.indexOf('mouse') !== -1 || oLower.indexOf('rodent') !== -1) {
-      datasetGuess = 'MICrONS / Kasthuri / MCP';
-    } else if (oLower.indexOf('elegans') !== -1 || oLower.indexOf('worm') !== -1) {
-      datasetGuess = 'C. elegans N2U / Cook et al.';
-    } else if (oLower.indexOf('human') !== -1) {
-      datasetGuess = 'H01 Human Cortex / Shapson-Coe';
-    }
-
-    var toolsGuess = 'Neuroglancer, CAVE / PyChunkedGraph, CloudVolume, natverse, Python';
-    if (p.dimension === 'methods-imaging') {
-      toolsGuess = 'Serial-section EM, FIB-SEM, Ilastik, VAST, AlignTK';
-    } else if (p.dimension === 'segmentation-ai') {
-      toolsGuess = 'Flood-Filling Networks (FFN), 3D U-Net, PyTorch, CAVE';
-    }
-
-    var actionSnippet = (p.ocar && p.ocar.action) ? p.ocar.action : 'Dense volume EM imaging and circuit reconstruction.';
-    var resSnippet = (p.ocar && p.ocar.resolution) ? p.ocar.resolution : 'Identification of synaptic connectivity motifs and cell-type wiring.';
-
-    var ecosystemAndPipelineHtml = '<div class="jcg-ecosystem-box">' +
-      '<h4>🌐 Research Ecosystem Preview</h4>' +
-      '<div class="jcg-ecosystem-grid">' +
-        '<div class="jcg-eco-item"><strong>Model Organism</strong><span>' + orgStr + '</span></div>' +
-        '<div class="jcg-eco-item"><strong>Dataset / Volume</strong><span>' + datasetGuess + '</span></div>' +
-        '<div class="jcg-eco-item" style="grid-column: span 2;"><strong>Software & Tool Stack</strong><span>' + toolsGuess + '</span></div>' +
-      '</div>' +
-      '<details class="jcg-analysis-pipeline" open>' +
-        '<summary style="font-weight:700; font-size:0.78rem; color:#1e293b; cursor:pointer; margin-bottom:0.4rem;">🔬 Analysis Protocol Breakdown (How Conducted)</summary>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-prep">1. Prep & Imaging</span>' +
-          '<div class="jcg-pipe-desc"><strong>High-Pressure Freezing & Staining</strong><p>Heavy metal infiltration (OsO₄, uranyl acetate, lead aspartate) for nanometer ultrastructure contrast.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-recon">2. Alignment</span>' +
-          '<div class="jcg-pipe-desc"><strong>Non-Rigid 3D Registration</strong><p>Elastic cross-section stitching, distortion compensation, and chunked cloud pyramid storage.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-ai">3. AI Segmentation</span>' +
-          '<div class="jcg-pipe-desc"><strong>Deep Learning Affinity & Synapse Prediction</strong><p>' + actionSnippet + '</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-qc">4. Proofreading</span>' +
-          '<div class="jcg-pipe-desc"><strong>Collaborative Verification & Error Correction</strong><p>Split/merge validation, false positive synapse pruning, and dendritic skeleton completeness audit.</p></div>' +
-        '</div>' +
-        '<div class="jcg-pipe-stage">' +
-          '<span class="jcg-pipe-badge jcg-badge-stats">5. Circuit Analysis</span>' +
-          '<div class="jcg-pipe-desc"><strong>Graph Topology & Biological Resolution</strong><p>' + resSnippet + '</p></div>' +
-        '</div>' +
-      '</details>' +
-    '</div>';
-
     var html = '<h3>' + p.title + '</h3>' +
       '<div class="jcg-panel-authors">' + p.authors + ' &bull; <em>' + p.journal + '</em> (' + p.year + ')</div>' +
       '<div class="jcg-panel-meta-tags">' +
@@ -1805,7 +1720,6 @@ content_type: core
         pdfButton +
       '</div>' +
       neighborhoodToolbarHtml +
-      ecosystemAndPipelineHtml +
       ocarHtml +
       summariesHtml +
       promptsHtml +
@@ -1899,19 +1813,20 @@ content_type: core
       modalDescEl.innerHTML = 'Analysis protocol & critique for: <strong>' + singlePaperTarget.title + '</strong> (' + singlePaperTarget.year + ')';
       var p = singlePaperTarget;
       var prompt = 'You are a principal investigator and expert computational neuroscientist in nanoscale connectomics.\n' +
-        'Perform a comprehensive methodological analysis and technical audit for the following milestone study:\n\n' +
+        'Perform a methodological analysis and technical audit of the following study:\n\n' +
+        '**Note:** the OCAR notes below are shared by every paper in this research domain; they are not a summary of this paper. Base your answer on the paper itself. If you cannot read it, say so instead of guessing, and write "not reported" for any step the paper does not describe.\n\n' +
         '### Paper Metadata & Research Ecosystem:\n' +
         '- **Title**: "' + p.title + '"\n' +
         '- **Authors**: ' + p.authors + '\n' +
         '- **Journal/Year**: ' + p.journal + ' (' + p.year + ')\n' +
         '- **Research Subfield**: ' + p.dimension + '\n' +
         '- **Target Organism**: ' + ((p.organism && p.organism.join(', ')) || 'Neural tissue') + '\n' +
-        '- **Corpus Tier**: ' + (p.tier === 500 ? 'Core Flagship' : (p.tier === 1000 ? 'Landmark' : 'Comprehensive')) + '\n\n' +
-        '### 5-Part OCAR Narrative Framework:\n' +
+        '- **Corpus Tier**: ' + (p.tier === 500 ? 'Top 500' : (p.tier === 1000 ? 'Top 1,000' : 'Top 2,000')) + '\n\n' +
+        '### Domain-level OCAR notes (generic to the research domain):\n' +
         '- **Opportunity (Biological Premise)**: ' + ((p.ocar && p.ocar.opportunity) || p.summary) + '\n' +
         '- **Challenge (Technical Bottleneck)**: ' + ((p.ocar && p.ocar.challenge) || 'Dense volumetric reconstruction and synaptic proofreading complexity.') + '\n' +
         '- **Action (Methodology & Pipeline)**: ' + ((p.ocar && p.ocar.action) || 'Volume electron microscopy, automated segmentation, and circuit analysis.') + '\n' +
-        '- **Resolution (Empirical Discovery)**: ' + ((p.ocar && p.ocar.resolution) || 'Reconstruction and cell-type connectivity mapping.') + '\n' +
+        '- **Resolution (typical for the domain)**: ' + ((p.ocar && p.ocar.resolution) || 'Reconstruction and cell-type connectivity mapping.') + '\n' +
         '- **Future Work (Open Horizons)**: ' + ((p.ocar && p.ocar.future_work) || 'Comparative cross-species wiring and functional validation.') + '\n\n' +
         '### In-Depth Methodological & Ecosystem Analysis Required:\n' +
         '1. **Experimental & Imaging Protocol**: Explain how tissue was preserved, stained, sectioned, and imaged (specifying electron microscopy modality, voxel resolution in nm xyz, and acquisition throughput).\n' +
@@ -1936,13 +1851,12 @@ content_type: core
 
     var paperList = visibleNodes.slice(0, maxIncluded).map(function (p, idx) {
       var ocarAction = (p.ocar && p.ocar.action) ? '\n   Methodological Action: ' + p.ocar.action : '';
-      var ocarRes = (p.ocar && p.ocar.resolution) ? '\n   Empirical Resolution: ' + p.ocar.resolution : '';
-      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || 'Milestone connectomics contribution') + ocarAction + ocarRes + '\n   DOI: https://doi.org/' + p.doi;
+      return (idx + 1) + '. "' + p.title + '" (' + p.authors + ', ' + p.year + ', ' + p.journal + ')\n   Summary: ' + (p.summary || '') + ocarAction + '\n   DOI: https://doi.org/' + p.doi;
     }).join('\n\n');
 
     var scopeDesc = totalCount <= 40
-      ? 'based on the following ' + totalCount + ' curated milestone publications' 
-      : 'based on the top ' + maxIncluded + ' representative milestone publications (selected from ' + totalCount + ' matching publications in the active filter)';
+      ? 'based on the following ' + totalCount + ' publications' 
+      : 'based on the top ' + maxIncluded + ' publications by citation centrality (selected from ' + totalCount + ' matching publications in the active filter)';
 
     var prompt = '';
     if (currentPromptMode === 'methods') {
@@ -1982,7 +1896,7 @@ content_type: core
         '### Ground-Truth Milestone Publications (N = ' + maxIncluded + (totalCount > 40 ? ' of ' + totalCount : '') + '):\n' +
         paperList + '\n\n' +
         '### Synthesis Tasks Required (grounded in the OCAR research framework):\n' +
-        '1. **Current State of the Subfield (Opportunities)**: Provide an executive summary of the biological and computational openings addressed by these landmark studies.\n' +
+        '1. **Current State of the Subfield (Opportunities)**: Summarize the biological and computational questions these studies address.\n' +
         '2. **Core Technical Challenges & Bottlenecks**: Detail the major imaging, alignment, automated segmentation, proofreading, and synaptic validation bottlenecks documented across these papers.\n' +
         '3. **Methodological Actions & Breakthroughs**: Detail the core technical breakthroughs accomplished (e.g. multi-beam SEM, deep learning affinities, automated cell-type clustering, connectome graph metrics).\n' +
         '4. **Key Empirical Resolutions & Wiring Discoveries**: What definitive circuit wiring motifs, feedforward/recurrent loops, or cell-type taxonomies did these studies discover?\n' +

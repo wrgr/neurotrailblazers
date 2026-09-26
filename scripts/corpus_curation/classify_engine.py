@@ -20,7 +20,7 @@ if WEIGHTS_PATH.exists():
 KNOWN_DATASETS = {
     "10.7554/elife.57443",  # Scheffer et al. 2020 Hemibrain
     "10.1016/j.cell.2018.06.019",  # Zheng et al. 2018 FAFB
-    "10.1038/s41586-024-07558-9",  # FlyWire full brain
+    "10.1038/s41586-024-07558-y",  # FlyWire full brain
     "10.1038/s41586-024-07633-5",  # FlyWire consensus
     "10.1038/s41586-024-07953-2",  # FlyWire wiring
     "10.1126/science.abk1256",  # H01 Shapson-Coe et al. 2024

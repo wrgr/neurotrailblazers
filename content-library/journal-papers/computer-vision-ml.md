@@ -25,9 +25,9 @@ to a limitation of the previous ones.
 **Companion unit:** [Unit 08 — Segmentation and Proofreading]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
 Read Unit 08 §1–2 first if you want the conceptual frame before the primary literature.
 
-**A framing to carry through all ten papers.** Every method here is engineered around one
-asymmetry: **merge errors cost far more than split errors.** Watershed thresholds,
-agglomeration criteria, loss functions, and evaluation metrics all reflect that choice.
+**A framing to carry through all ten papers.** Most methods here are tuned around one
+asymmetry: a merge error costs more to find and fix than a split error. Watershed thresholds,
+agglomeration criteria, loss functions, and evaluation metrics often reflect that choice.
 When you read a paper's design decisions, ask which error it is buying protection from.
 
 ---
@@ -45,7 +45,7 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 **Intermediate:** Turaga et al. introduced the affinity graph formulation for EM segmentation. A convolutional network predicts, for each voxel, the affinity to its neighbors along each axis. Segmentation then reduces to a graph-partitioning problem over those affinities — typically watershed followed by agglomeration. The key methodological contribution is training the network with an objective aligned to the segmentation, rather than to per-pixel boundary classification, which decouples the network's job from the downstream clustering.
 
-**Advanced:** The affinity representation remains the backbone of most production connectomics pipelines fifteen years on. Its durability comes from two properties: it is local (so inference parallelizes over blocks), and it separates the learned component from the combinatorial one, which lets each be improved independently. The paper also identified the central evaluation problem — that per-pixel accuracy is a poor proxy for segmentation quality, because a single wrong voxel at a thin neck causes a topological error while thousands of wrong voxels in an object interior cause none. That observation motivates the structured losses in paper 8 and the metrics in [Metrics and QA](/content-library/proofreading/metrics-and-qa/).
+**Advanced:** More than fifteen years on, affinity prediction is still the core of many production connectomics pipelines. Its durability comes from two properties: it is local (so inference parallelizes over blocks), and it separates the learned component from the combinatorial one, which lets each be improved independently. The paper also identified the central evaluation problem — that per-pixel accuracy is a poor proxy for segmentation quality, because a single wrong voxel at a thin neck causes a topological error while thousands of wrong voxels in an object interior cause none. That observation motivates the structured losses in paper 8 and the metrics in [Metrics and QA](/content-library/proofreading/metrics-and-qa/).
 
 **Key figures:** Affinity graph formulation; comparison of boundary-trained vs affinity-trained networks; segmentation results on SBEM data.
 
@@ -65,9 +65,9 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 ### Summaries
 
-**Beginner:** This paper won the first major public competition for finding neuron boundaries in EM images, and it did so using a deep neural network at a time when most groups were using hand-designed image filters. It was one of the results that convinced the field that learned methods would win.
+**Beginner:** This paper won the first major public competition for finding neuron boundaries in EM images, and it did so using a deep neural network at a time when most groups were using hand-designed image filters. It was one of the results that turned the field toward learned methods.
 
-**Intermediate:** Ciresan et al. applied a sliding-window deep CNN to the ISBI 2012 membrane segmentation challenge, classifying each pixel from a surrounding patch. The approach was computationally wasteful — overlapping windows recompute the same features many times — but it substantially outperformed the hand-engineered feature pipelines of the day, and it established that the limiting factor was model capacity rather than feature design.
+**Intermediate:** Ciresan et al. applied a sliding-window deep CNN to the ISBI 2012 membrane segmentation challenge, classifying each pixel from a surrounding patch. The approach was computationally wasteful — overlapping windows recompute the same features many times — but it outperformed the hand-engineered feature pipelines of the day, which suggested that learned features, not hand-designed ones, were the way forward.
 
 **Advanced:** Historically important rather than currently practical. Its inefficiency is precisely the problem U-Net (paper 3) solved by making prediction fully convolutional. Read it for two things: the demonstration that learned features dominate engineered ones in this domain, and as a case study in how a benchmark victory can redirect a field. The ISBI 2012 task itself is 2D and small, and — as [the atlas notes](/technical-training/atlas-connectomics-reference/) — benchmark performance on clean small volumes systematically overstates performance on production data.
 
@@ -169,7 +169,7 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 **Intermediate:** SyConn combines neuron segmentation with learned classifiers for synapse detection, synaptic polarity (which partner is presynaptic), and cell-type prediction, producing a connectivity graph rather than just a segmentation. Treating synapse detection and partner assignment as separate learned problems — rather than as a by-product of segmentation — is the architectural point.
 
-**Advanced:** Partner assignment is where the field's directional errors are manufactured, and this paper is where it became an explicit learned task with its own evaluation. Two implications follow. First, synapse detection must be evaluated on its own metrics (precision and recall over synapses and over partner assignments), not folded into segmentation scores. Second, storing partner identity against the immutable supervoxel layer rather than against neuron IDs is what keeps those assignments valid through proofreading — see [Unit 04 §2](/technical-training/04-volume-reconstruction-infrastructure/).
+**Advanced:** Partner assignment is where directional errors enter a connectome, and SyConn is an early example of treating it as a learned task with its own evaluation. Two implications follow. First, synapse detection must be evaluated on its own metrics (precision and recall over synapses and over partner assignments), not folded into segmentation scores. Second, storing partner identity against the immutable supervoxel layer rather than against neuron IDs is what keeps those assignments valid through proofreading — see [Unit 04 §2](/technical-training/04-volume-reconstruction-infrastructure/).
 
 **Key figures:** SyConn pipeline; synapse detection performance; cell-type classification from morphology.
 
@@ -186,15 +186,15 @@ When you read a paper's design decisions, ask which error it is buying protectio
 **Citation:** Januszewski M, Kornfeld J, Li PH, Pope A, Blakely T, Lindsey L, Maitin-Shepard J, Tyka M, Denk W, Jain V. High-precision automated reconstruction of neurons with flood-filling networks. *Nature Methods*. 2018;15:605-610.
 **DOI:** [10.1038/s41592-018-0049-4](https://doi.org/10.1038/s41592-018-0049-4)
 
-**Tags:** `computer-vision-ml:flood-filling-network` `computer-vision-ml:instance-segmentation` `neuroai:deep-learning` `case-studies:zebrafish`
+**Tags:** `computer-vision-ml:flood-filling-network` `computer-vision-ml:instance-segmentation` `neuroai:deep-learning`
 
 ### Summaries
 
 **Beginner:** Rather than labeling every pixel at once and then grouping, a flood-filling network grows one neuron at a time from a starting point, repeatedly asking "does the next bit belong to this neuron?" Because it always knows what it has built so far, it makes far fewer mistakes at the difficult places.
 
-**Intermediate:** FFNs perform recurrent, object-centered segmentation: a network maintains an evolving object mask as an input channel and iteratively extends it. The paper reports order-of-magnitude improvements in expected run length over prior methods on songbird and zebrafish data. The method also introduced practical machinery for large-volume application, including seed selection and consistency-based agglomeration.
+**Intermediate:** FFNs perform recurrent, object-centered segmentation: a network maintains an evolving object mask as an input channel and iteratively extends it. The paper reports an order-of-magnitude improvement over prior approaches on a serial block-face EM volume of zebra finch (songbird) brain, with a mean error-free neurite path length of 1.1 mm, at substantially higher computational cost. The method also introduced practical machinery for large-volume application, including seed selection and consistency-based agglomeration.
 
-**Advanced:** The conditioning on the current mask is what gives FFNs their advantage at ambiguous membrane contacts — the network has context that a purely feedforward per-voxel predictor lacks. The cost is that inference is sequential per object and expensive, which drove substantial engineering to make it tractable at petascale (see Macrina et al. 2021 and the MICrONS reconstruction). FFNs produced the FlyWire base segmentation, so this paper is upstream of a large fraction of the field's current data. Note the paper's use of expected run length as its headline metric, and why that choice suits a tracing-oriented method — [Unit 08 §3](/technical-training/08-segmentation-and-proofreading/) discusses what ERL is blind to.
+**Advanced:** The conditioning on the current mask is what gives FFNs their advantage at ambiguous membrane contacts — the network has context that a purely feedforward per-voxel predictor lacks. The cost is that inference is sequential per object and expensive, which drove substantial engineering to make it tractable at petascale. FFNs produced the base segmentations of large datasets such as the H01 human cortex volume, so this paper is upstream of a large fraction of the field's current data; FlyWire and MICrONS instead used affinity-based convolutional-network pipelines, which makes them a useful comparison. Note the paper's use of expected run length as its headline metric, and why that choice suits a tracing-oriented method — [Unit 08 §3](/technical-training/08-segmentation-and-proofreading/) discusses what ERL is blind to.
 
 **Key figures:** FFN iterative filling schematic; expected run length comparisons; large-volume reconstruction results.
 
@@ -219,7 +219,7 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 **Intermediate:** The structured (MALIS-style) loss weights errors by their effect on the topology of the resulting segmentation rather than treating all voxels equally. Combined with an efficient 3D U-Net and a well-tuned watershed and agglomeration stage, this produced strong results on *Drosophila* data and a practical, widely reused pipeline.
 
-**Advanced:** This is the clearest expression in the literature of the principle that the loss should match the evaluation metric, and that in connectomics the evaluation metric is topological. The paper also gives an unusually clear account of the full stack — affinity prediction, watershed thresholds, agglomeration criteria — and how the parameters interact, which makes it the best single reference for someone tuning a pipeline rather than proposing a new architecture. Note how each stage's parameters are chosen to protect against merges at the cost of splits.
+**Advanced:** This paper states clearly the principle that the loss should match the evaluation metric, and that in connectomics the evaluation metric is topological. The paper also gives an unusually clear account of the full stack — affinity prediction, watershed thresholds, agglomeration criteria — and how the parameters interact, which makes it a good reference for someone tuning a pipeline rather than proposing a new architecture. Note how each stage's parameters are chosen to protect against merges at the cost of splits.
 
 **Key figures:** Structured loss illustration; pipeline stages; VI comparisons across parameter settings.
 
@@ -240,7 +240,7 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 ### Summaries
 
-**Beginner:** Finding every synapse in a whole fly brain — tens of millions of them — and correctly identifying which neuron is on each side. This is the step that turns a set of neuron shapes into an actual wiring diagram.
+**Beginner:** This paper predicts synapses across a whole fly brain and identifies which neuron is on each side of each one. This is the step that turns a set of neuron shapes into an actual wiring diagram.
 
 **Intermediate:** The method predicts, per presynaptic site, a vector pointing to the postsynaptic partner, which turns partner assignment into a dense regression problem that scales to whole-brain volumes. The resulting synapse predictions across FAFB underpin FlyWire's connectivity.
 
@@ -267,9 +267,9 @@ When you read a paper's design decisions, ask which error it is buying protectio
 
 **Beginner:** Alongside predicting whether two pixels belong together, this method also predicts a compact description of the local *shape* of the object at each point. Shape information helps the system decide whether a proposed merge would produce something that actually looks like a neurite.
 
-**Intermediate:** Local shape descriptors (LSDs) are per-voxel statistics — size, center-of-mass offset, and second-moment-like terms of the local object — used as an auxiliary prediction target. Trained jointly with affinities, they improve agglomeration quality substantially while remaining local and therefore cheap and parallelizable, which is the practical advantage over methods requiring global context.
+**Intermediate:** Local shape descriptors (LSDs) are per-voxel statistics — size, center-of-mass offset, and second-moment-like terms of the local object — used as an auxiliary prediction target. Trained jointly with affinities, they improve agglomeration while remaining local and therefore cheap and parallelizable, which is the practical advantage over methods requiring global context.
 
-**Advanced:** LSDs are a good example of an auxiliary task that regularizes the primary one: predicting shape forces the network to represent object extent, which is exactly the information a purely local affinity predictor lacks at ambiguous contacts. The paper's comparison against FFNs is worth reading closely — it argues that a substantial part of the accuracy gap can be closed by adding shape information while keeping the cheap parallel feedforward structure, which changes the compute economics at petascale considerably. Evaluate the claim against your own throughput constraints rather than the reported benchmark numbers.
+**Advanced:** LSDs are a good example of an auxiliary task that regularizes the primary one: predicting shape forces the network to represent object extent, which is exactly the information a purely local affinity predictor lacks at ambiguous contacts. The paper's comparison against FFNs is worth reading closely — it argues that a substantial part of the accuracy gap can be closed by adding shape information while keeping the cheap parallel feedforward structure, which changes the compute cost at petascale. Evaluate the claim against your own throughput constraints rather than the reported benchmark numbers.
 
 **Key figures:** LSD components illustrated; joint training setup; accuracy vs compute comparison against FFN.
 

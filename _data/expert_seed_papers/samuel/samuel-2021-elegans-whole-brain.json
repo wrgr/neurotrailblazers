@@ -1,7 +1,22 @@
 {
   "id": "samuel-2021-elegans-whole-brain",
   "title": "Whole-animal connectomes of both Caenorhabditis elegans sexes",
-  "authors": ["Cook SJ", "Jarrell TA", "Brittin CA", "Wang Y", "Bloniarz AE", "Yakovlev MA", "Nguyen KCQ", "Tang LTH", "Bayer EA", "Duerr JS", "Bulow HE", "Hobert O", "Hall DH", "Bhatt AN", "Samuel ADT"],
+  "authors": [
+    "Cook SJ",
+    "Jarrell TA",
+    "Brittin CA",
+    "Wang Y",
+    "Bloniarz AE",
+    "Yakovlev MA",
+    "Nguyen KCQ",
+    "Tang LTH",
+    "Bayer EA",
+    "Duerr JS",
+    "Bülow HE",
+    "Hobert O",
+    "Hall DH",
+    "Emmons SW"
+  ],
   "year": 2019,
   "journal": "Nature",
   "doi": "10.1038/s41586-019-1352-7",
@@ -9,8 +24,17 @@
   "abstract": "We present updated whole-animal connectomes of both C. elegans sexes, mapping all chemical synapses, gap junctions, and neuromuscular junctions, revealing sex-specific circuit dimorphism.",
   "seed_expert": "Aravi Samuel",
   "author_tier": 1,
-  "dimensions": ["connectomics", "case-studies"],
-  "tags": ["C-elegans", "whole-animal", "sex-dimorphism", "gap-junctions", "complete-connectome"],
+  "dimensions": [
+    "connectomics",
+    "case-studies"
+  ],
+  "tags": [
+    "C-elegans",
+    "whole-animal",
+    "sex-dimorphism",
+    "gap-junctions",
+    "complete-connectome"
+  ],
   "duplicate_of_existing": "cook-2019",
   "notes": "Already in existing 102. Updated C. elegans connectome, both sexes."
 }

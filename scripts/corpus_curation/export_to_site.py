@@ -19,9 +19,9 @@ def main():
 
     # 1. Tier View (_data/paper_views/tier.json)
     tier_groups = [
-        {"name": "500", "title": "Top 500 Core Flagships", "count": meta["tier_500_count"], "dois": [d for d, p in papers.items() if p.get("in_top_500")]},
-        {"name": "1000", "title": "Top 1,000 Landmark Corpus", "count": meta["tier_1000_count"], "dois": [d for d, p in papers.items() if p.get("in_top_1000")]},
-        {"name": "2000", "title": "Top 2,000 Comprehensive Corpus", "count": meta["tier_2000_count"], "dois": list(papers.keys())}
+        {"name": "500", "title": "Top 500", "count": meta["tier_500_count"], "dois": [d for d, p in papers.items() if p.get("in_top_500")]},
+        {"name": "1000", "title": "Top 1,000", "count": meta["tier_1000_count"], "dois": [d for d, p in papers.items() if p.get("in_top_1000")]},
+        {"name": "2000", "title": "Top 2,000", "count": meta["tier_2000_count"], "dois": list(papers.keys())}
     ]
     (VIEWS_DIR / "tier.json").write_text(json.dumps({"view": "tier", "groups": tier_groups}, indent=2))
 
@@ -46,9 +46,9 @@ def main():
         by_era[p["era"]].append(d)
     
     era_labels = {
-        "history": "History (<=2018)",
+        "history": "History (2018 and earlier)",
         "contemporary": "Contemporary (2019-2023)",
-        "sota": "SOTA (2024-2026+)"
+        "sota": "Recent (2024 onward)"
     }
     era_groups = []
     for era_key in ["history", "contemporary", "sota"]:

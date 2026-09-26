@@ -21,22 +21,26 @@
     {
       "key": "methods_deep_dive",
       "label": "Methods deep dive",
-      "description": "Imaging: Xu 2017 → Yin 2020. Segmentation: Januszewski 2018. Proofreading: Plaza 2014 → Dorkenwald 2022 FlyWire. Turaga 2010 and Sheridan 2023 are not in this catalog.",
-      "n": 5,
+      "description": "Imaging: Xu 2017 → Yin 2020. Segmentation: Turaga 2010 → Januszewski 2018 → Sheridan 2023. Proofreading: Plaza 2014 → Dorkenwald 2022 (FlyWire).",
+      "n": 7,
       "uuids": [
         "10.7554/elife.25916",
         "10.1038/s41467-020-18659-3",
+        "10.1162/neco.2009.10-08-881",
         "10.1038/s41592-018-0049-4",
-        "work_eccb631270c7418f",
+        "10.1038/s41592-022-01711-z",
+        "10.1016/j.conb.2014.01.019",
         "10.1038/s41592-021-01330-0"
       ]
     },
     {
       "key": "analysis_interpretation",
       "label": "Analysis and interpretation",
-      "description": "Winding 2023 → Lappalainen 2024. Bullmore & Sporns 2009 and Rubinov & Sporns 2010 are not in this catalog (macroscale network-science classics).",
-      "n": 2,
+      "description": "Bullmore & Sporns 2009 → Rubinov & Sporns 2010 → Winding 2023 → Lappalainen 2024.",
+      "n": 4,
       "uuids": [
+        "10.1038/nrn2575",
+        "10.1016/j.neuroimage.2009.10.003",
         "10.1126/science.add9330",
         "10.1038/s41586-024-07939-3"
       ]

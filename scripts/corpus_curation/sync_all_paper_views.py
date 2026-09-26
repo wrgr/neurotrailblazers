@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Synchronizes all faceted paper views in _data/paper_views/ with the 2,000-paper corpus."""
+"""Synchronizes all faceted paper views in _data/paper_views/ with the 2,000-paper corpus.
+
+Caution: final_selection.json carries stale years, so the era.json and year.json this
+writes are wrong. Those two views are owned by scripts/derive_journal_papers.py; after
+running this, restore them (or re-run the derive script).
+"""
 import json
 from collections import defaultdict
 from pathlib import Path
@@ -18,9 +23,9 @@ def main():
 
     # 1. Tier View
     tier_groups = [
-        {"key": "500", "label": "Top 500 Core Flagships", "n": sum(1 for p in papers if p.get("in_top_500")), "description": "Foundational and landmark publications defining connectomics"},
-        {"key": "1000", "label": "Top 1,000 Landmark Corpus", "n": sum(1 for p in papers if p.get("in_top_1000")), "description": "Expanded canonical literature and high-impact methodology"},
-        {"key": "2000", "label": "Top 2,000 Comprehensive Network", "n": len(papers), "description": "Complete research network across all connectomics subfields"}
+        {"key": "500", "label": "Top 500", "n": sum(1 for p in papers if p.get("in_top_500")), "description": "The 500 top-ranked papers; contained in the Top 1,000 and Top 2,000"},
+        {"key": "1000", "label": "Top 1,000", "n": sum(1 for p in papers if p.get("in_top_1000")), "description": "The 1,000 top-ranked papers; includes the Top 500"},
+        {"key": "2000", "label": "Top 2,000", "n": len(papers), "description": "All 2,000 papers in the corpus"}
     ]
     (PV_DIR / "tier.json").write_text(json.dumps({"view": "tier", "total": len(papers), "groups": tier_groups}, indent=2))
 
@@ -33,7 +38,7 @@ def main():
         "circuit-structure": "Circuit Structure & Connectomes",
         "pipeline": "Pipeline & Software Engineering",
         "physiology": "Physiological Validation & Function",
-        "behaviour": "Behaviour & Circuit Dynamics",
+        "behaviour": "Behavior & Circuit Dynamics",
         "imaging": "Volume EM & Super-Resolution Optics",
         "cell-types": "Cell Types & Morphological Census",
         "neuroanatomy": "Neuroanatomy & Ultrastructure",
@@ -54,9 +59,9 @@ def main():
     for p in papers:
         era_counts[p.get("era", "contemporary")] += 1
     era_groups = [
-        {"key": "history", "label": "History & Classics (≤2018)", "n": era_counts["history"], "range": "1962-2018"},
-        {"key": "contemporary", "label": "Contemporary Surge (2019-2023)", "n": era_counts["contemporary"], "range": "2019-2023"},
-        {"key": "sota", "label": "State of the Art (2024-2026+)", "n": era_counts["sota"], "range": "2024-2026+"}
+        {"key": "history", "label": "History (2018 and earlier)", "n": era_counts["history"], "range": "1962-2018"},
+        {"key": "contemporary", "label": "Contemporary (2019-2023)", "n": era_counts["contemporary"], "range": "2019-2023"},
+        {"key": "sota", "label": "Recent (2024 onward)", "n": era_counts["sota"], "range": "2024-2026+"}
     ]
     (PV_DIR / "era.json").write_text(json.dumps({"view": "era", "total": len(papers), "groups": era_groups}, indent=2))
 

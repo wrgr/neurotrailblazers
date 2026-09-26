@@ -32,6 +32,7 @@
   </header>
 
   {% if p.ocar %}
+  <p class="jc-ocar-note">Domain-level notes: the OCAR steps and summaries below are written per research domain and shared by every paper in it, with this paper's title, authors or venue filled in. Read the paper's abstract (DOI link) for what it found.</p>
   <div class="jc-card-ocar">
     <div class="jc-ocar-step">
       <div class="jc-ocar-label jc-ocar-opportunity">Opportunity</div>
@@ -117,7 +118,7 @@
 
   {% if p.ocar.action or p.ocar.resolution %}
   <details class="jc-card-details jc-pipeline-details">
-    <summary>🔬 Analysis Protocol &amp; Ecosystem</summary>
+    <summary>Domain, tier and domain-level notes</summary>
     <div class="jc-details-body">
       <div style="display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem;">
         {% if p.dimension %}<span class="jc-tag" style="background:#ede9fe; color:#6d28d9; font-weight:600;">Domain: {{ p.dimension | replace: '-', ' ' | escape }}</span>{% endif %}
@@ -125,13 +126,13 @@
         {% if p.tier %}<span class="jc-tag" style="background:#fef3c7; color:#92400e; font-weight:600;">Tier: {{ p.tier | escape }}</span>{% endif %}
       </div>
       {% if p.ocar.action %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Methodological Action:</strong> {{ p.ocar.action | escape }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Action:</strong> {{ p.ocar.action | escape }}</p>
       {% endif %}
       {% if p.ocar.resolution %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Empirical Resolution:</strong> {{ p.ocar.resolution | escape }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45;"><strong>Resolution (typical for the domain):</strong> {{ p.ocar.resolution | escape }}</p>
       {% endif %}
       {% if p.ocar.future_work %}
-      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45; color: #64748b;"><strong>Open Horizons:</strong> {{ p.ocar.future_work | escape }}</p>
+      <p style="margin: 0.3rem 0; font-size: 0.8rem; line-height: 1.45; color: #64748b;"><strong>Future work (typical for the domain):</strong> {{ p.ocar.future_work | escape }}</p>
       {% endif %}
     </div>
   </details>

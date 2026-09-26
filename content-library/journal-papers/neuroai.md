@@ -23,20 +23,20 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ## 1. Zador et al. (2023) — Catalyzing Next-Generation Artificial Intelligence Through NeuroAI
 
-**Citation:** Zador A, Escola S, Richards B, Olveczky B, Bhaya Y, Boahen K, et al. Catalyzing next-generation artificial intelligence through NeuroAI. *Nature Communications*. 2023;14:1597.
+**Citation:** Zador A, Escola S, Richards B, Ölveczky B, Bengio Y, Boahen K, et al. Catalyzing next-generation artificial intelligence through NeuroAI. *Nature Communications*. 2023;14:1597.
 **DOI:** [10.1038/s41467-023-37180-x](https://doi.org/10.1038/s41467-023-37180-x)
 
 **Tags:** `neuroai:bio-inspired-architecture` `neuroai:structure-function` `neuroai:connectome-constrained-model` `neuroai:deep-learning` `methodology:experimental-design`
 
 ### Summaries
 
-**Beginner:** Artificial intelligence and brain science have been inspiring each other for decades — neural networks were originally inspired by how the brain works. This paper argues that a deeper understanding of brain wiring (from connectomics) and brain computation could spark the next breakthroughs in AI. It outlines a research agenda where neuroscience data, including connectomes, directly informs the design of new AI systems.
+**Beginner:** Artificial intelligence and brain science have been inspiring each other for decades — neural networks were originally inspired by how the brain works. This paper argues that the next breakthroughs in AI will come from studying the abilities all animals share, such as moving through and interacting with the physical world, rather than abilities that are uniquely human. It proposes a new benchmark, the "embodied Turing test", and a research program in NeuroAI to reach it.
 
-**Intermediate:** Zador et al. present a community position paper arguing that neuroscience — particularly connectomics, developmental neurobiology, and systems neuroscience — should play a central role in developing next-generation AI. They identify specific areas where brain data can inform AI design: innate circuit architectures (wiring present at birth that encodes evolutionary priors), learning rules (synaptic plasticity mechanisms that differ from backpropagation), and embodied computation (how brains interact with bodies and environments). The paper identifies connectomics as a key enabling technology for understanding innate circuit structure.
+**Intermediate:** Zador et al. present a community position paper arguing that investment in fundamental NeuroAI research is needed to accelerate AI. Its core proposal is the embodied Turing test: AI models of animals should interact with the sensorimotor world at skill levels comparable to their living counterparts. The emphasis shifts from capabilities such as game playing and language toward capabilities inherited over hundreds of millions of years of evolution and shared with all animals. Connectomics appears as one supporting resource: the paper points to detailed neural anatomy and connectomics, alongside large-scale neural recordings during behavior, as a roadmap for building AI systems that control virtual animals, and it cites the MICrONS project as an effort aimed at catalyzing new AI algorithms.
 
-**Advanced:** The paper's connectomics-specific arguments are: (1) connectome data can reveal architectural motifs that encode useful inductive biases, potentially replacing hand-designed neural network architectures; (2) comparative connectomics across species can identify conserved circuit structures that represent convergent solutions to computational problems; (3) developmental connectomics can reveal how self-organizing rules generate functional circuits, suggesting alternatives to end-to-end learning. The paper acknowledges the gap between having connectome data and understanding what computations a circuit performs — this "structure-to-function" mapping problem is the central challenge.
+**Advanced:** Read the paper as an agenda, not as a connectomics argument; connectomes are mentioned briefly, as one data source among several. The connectomics-specific implications are left to the reader: if evolution has built useful inductive biases into circuits, connectome data is one place to look for them, and comparative data across species could show which circuit structures are conserved. Neither is demonstrated in the paper. The gap between having a connectome and knowing what computation a circuit performs — the structure-to-function problem — is the central challenge any such program has to address.
 
-**Key figures:** Fig. 1 (NeuroAI research agenda), Fig. 2 (levels of biological inspiration), Fig. 3 (connectome-to-computation pipeline)
+**Key figures:** The single figure contrasts the original Turing test with the proposed embodied Turing test. Read the paper for the argument.
 
 **Discussion prompts:**
 - What specific connectomics findings have already influenced AI architecture design?
@@ -56,13 +56,13 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ### Summaries
 
-**Beginner:** Deep learning has been remarkably successful in AI, but does it have anything to teach us about how real brains work? This paper argues yes: deep learning provides a framework for understanding brains by showing how complex behaviors can emerge from learning objectives, network architectures, and learning rules. The key idea is that we should study brains the way we study deep networks — by asking what objective is being optimized and what architecture enables that optimization.
+**Beginner:** Deep learning works well in AI, but does it have anything to teach us about how real brains work? This paper argues yes: deep learning provides a framework for understanding brains by showing how complex behaviors can emerge from learning objectives, network architectures, and learning rules. The key idea is that we should study brains the way we study deep networks — by asking what objective is being optimized and what architecture enables that optimization.
 
 **Intermediate:** Richards et al. propose that neuroscience should adopt the "three components" framework of deep learning: (1) objective functions (what is the brain optimizing?), (2) learning rules (how are synaptic weights updated?), and (3) architectures (what network structures support the computation?). For each component, they discuss what is known from neuroscience and where deep learning provides useful hypotheses. The connectomics connection: brain architectures are not arbitrary but reflect evolutionary optimization, and connectome data can constrain models of neural computation by specifying the actual architecture available for learning.
 
-**Advanced:** This paper provides the theoretical framework that connects connectomics to computational neuroscience. The key argument is that architecture constrains what a network can learn — therefore, knowing the architecture (from connectomics) constrains the space of possible computations. However, architecture alone is not sufficient: you also need to know the learning rule and objective. The paper's discussion of "credit assignment" — how the brain solves the problem of determining which synapses should change — is directly relevant to interpreting connectivity patterns.
+**Advanced:** This paper gives one framework for connecting connectomics to computational neuroscience. The key argument is that architecture constrains what a network can learn — therefore, knowing the architecture (from connectomics) constrains the space of possible computations. However, architecture alone is not sufficient: you also need to know the learning rule and objective. The paper's discussion of "credit assignment" — how the brain solves the problem of determining which synapses should change — is directly relevant to interpreting connectivity patterns.
 
-**Key figures:** Fig. 1 (three-component framework), Fig. 2 (architecture-computation relationship), Fig. 3 (biological learning rules)
+**Key figures:** Read it for the three-component framework (objective functions, learning rules, architectures) and how each maps onto neuroscience questions.
 
 **Discussion prompts:**
 - Which architectural features visible in connectomes map to known deep learning architecture choices?
@@ -85,9 +85,9 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 **Intermediate:** Lillicrap et al. review the "weight transport problem" in biological learning: backpropagation requires exact knowledge of forward weights at each layer, which seems biologically unavailable. They discuss proposed solutions: feedback alignment (random feedback weights work surprisingly well), target propagation (each layer has a local target), predictive coding (top-down predictions generate error signals), and dendritic computation (different dendritic compartments carry different signals). For connectomics, the key question is whether feedback connectivity revealed by connectome data is consistent with any of these proposed mechanisms.
 
-**Advanced:** This review is essential for interpreting feedback connectivity in connectomics data. Key testable predictions: (1) if feedback alignment is the mechanism, feedback connection patterns need not mirror feedforward patterns (testable with connectome data); (2) if predictive coding is the mechanism, feedback connections should target specific dendritic compartments (testable with compartment-level connectivity data); (3) the paper's discussion of dendritic computation is particularly relevant for compartment-level connectomics, where the distinction between perisomatic and apical inputs becomes functionally meaningful.
+**Advanced:** Read this before interpreting feedback connectivity in connectomics data. Predictions we can draw from it: (1) if feedback alignment is the mechanism, feedback connection patterns need not mirror feedforward patterns (testable with connectome data); (2) if predictive coding is the mechanism, feedback connections should target specific dendritic compartments (testable with compartment-level connectivity data); (3) the paper's discussion of dendritic computation is particularly relevant for compartment-level connectomics, where the distinction between perisomatic and apical inputs becomes functionally meaningful.
 
-**Key figures:** Fig. 1 (weight transport problem), Fig. 2 (feedback alignment), Fig. 3 (dendritic error computation), Fig. 4 (biological credit assignment)
+**Key figures:** Look for the treatment of the weight transport problem, feedback alignment, and dendritic mechanisms for carrying error signals.
 
 **Discussion prompts:**
 - Which proposed learning mechanisms make testable predictions about connectivity that connectomics could verify?
@@ -106,13 +106,13 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ### Summaries
 
-**Beginner:** When scientists build mathematical models of brain networks, they make many choices: which data to include, what simplifications to make, and what questions to ask. This review provides a philosophical framework for understanding these choices. It distinguishes between models that describe data (what does the network look like?), models that predict outcomes (what will happen?), and models that explain mechanisms (why does the network work?). Knowing which type you are building prevents overclaiming.
+**Beginner:** When scientists build mathematical models of brain networks, they make many choices: which data to include, what simplifications to make, and what questions to ask. This review provides a framework for understanding these choices. It sorts network models by what they are built from and what they represent, and it asks what it takes to show that a model is valid: does it describe the data, explain a mechanism, or predict something new? Knowing which kind of validity your model has prevents overclaiming.
 
-**Intermediate:** Bassett, Zurn, and Gold provide a taxonomy of models in network neuroscience: descriptive (summarizing data), explanatory (identifying mechanisms), and predictive (forecasting outcomes). They argue that most network analyses in neuroscience are descriptive but are sometimes presented as explanatory. For connectomics, this framework is essential: computing network measures (degree, modularity) is descriptive; claiming that hub neurons are causally important for information processing is explanatory and requires additional evidence beyond connectivity.
+**Intermediate:** Bassett, Zurn, and Gold organize network models along three dimensions: from data representations to first-principles theory; from biophysical realism to functional phenomenology; and from elementary descriptions to coarse-grained approximations. They then set out validation principles, distinguishing descriptive, explanatory, and predictive validity, and emphasize perturbation-based approaches for probing function. For connectomics, the distinction matters directly: computing network measures (degree, modularity) is description; claiming that hub neurons are causally important for information processing is an explanatory claim and requires evidence beyond connectivity.
 
-**Advanced:** This review should be required reading before publishing any connectomics analysis paper. Key arguments: (1) graph measures describe topology, not function — a hub is a structural property; (2) the choice of null model determines what counts as "significant" structure; (3) predictive models provide stronger evidence than descriptive models but still do not establish mechanism; (4) connectome-constrained models that reproduce dynamics observed in functional data provide the strongest evidence for structure-function relationships. The paper's call for explicit statement of model type and evidentiary claims is a useful checklist for peer review.
+**Advanced:** This review is worth reading before publishing any connectomics analysis. Lessons that carry over to nanoscale connectomes: (1) graph measures describe topology, not function — a hub is a structural property; (2) the choice of null model determines what counts as "significant" structure; (3) descriptive, explanatory, and predictive validity are different achievements, and one does not imply another; (4) perturbation experiments and out-of-sample prediction on held-out network data are the tests that move a model beyond description. The three-dimensional classification is a useful checklist for stating what kind of model a paper builds and what kind of claim it supports.
 
-**Key figures:** Fig. 1 (model taxonomy), Fig. 2 (descriptive vs. explanatory), Fig. 3 (prediction vs. mechanism)
+**Key figures:** Fig. 1 (schematic of network models), Fig. 2 (the three dimensions of network model types), Fig. 3 (descriptive, explanatory and predictive validity), Fig. 4 (bridging model types)
 
 **Discussion prompts:**
 - Which published connectomics claims are descriptive versus explanatory?
@@ -131,13 +131,13 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ### Summaries
 
-**Beginner:** Deep learning networks can match human performance on many tasks, and their internal representations look surprisingly similar to brain activity patterns. Does this mean deep networks are good models of the brain? This review argues: not necessarily. Networks trained on different tasks with different architectures can produce similar representations, making it hard to determine which aspects of the model are actually brain-like.
+**Beginner:** Deep networks learn to perform tasks from experience, and some researchers hope they can serve as theories of how brains perceive, think and act. This Perspective asks how neuroscientists should use deep networks as models of brains, and what can go wrong when a network is compared with a brain.
 
-**Intermediate:** Saxe et al. critically examine the practice of using task-trained deep networks as models of brain computation. They identify a key problem: representational similarity between model and brain does not uniquely identify the computational mechanism, because many different models can produce similar representations. They advocate for stronger tests: comparing across architectures, tasks, and training regimes to identify which factors are necessary for brain-like representations. For connectomics, this implies that architecture-specific predictions (from connectome data) could provide stronger constraints than representation-level comparisons alone.
+**Intermediate:** Saxe, Nelli and Summerfield offer a road map for systems neuroscience in the age of deep learning. They discuss the conceptual and methodological challenges of comparing behavior, learning dynamics and neural representations between artificial and biological systems, and the new research questions that machine learning has raised for neuroscience. For connectomics, the relevant point is ours rather than theirs: if model-brain comparisons are hard to interpret, measured architecture is one more constraint a model can be held to.
 
-**Advanced:** The paper's argument has direct implications for connectome-constrained modeling: if you train a network with brain-like architecture (from connectome data) and it produces brain-like representations, this is stronger evidence for the architecture's computational role than if an arbitrary architecture produces the same representations. The key methodological contribution is a framework for "strong inference" with deep learning models: systematically varying architecture, task, and training to identify the minimal factors that produce brain-like computation.
+**Advanced:** One implication for connectome-constrained modeling: if a network with measured architecture and a network with arbitrary architecture produce equally brain-like representations, the comparison says little about the architecture's role. Treat a deep network as a hypothesis, and vary architecture, task and training to see which of them the brain-like behavior depends on.
 
-**Key figures:** Fig. 1 (representational similarity analysis), Fig. 2 (multiple models problem), Fig. 3 (strong inference framework)
+**Key figures:** Read it for the argument about how to compare behavior, learning and representations between networks and brains.
 
 **Discussion prompts:**
 - How can connectome data strengthen deep learning models of brain computation?
@@ -156,9 +156,9 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ### Summaries
 
-**Beginner:** Having a complete wiring diagram is remarkable, but what do you actually do with it? Twenty authors from network science and neuroscience argue that the field needs shared theory, not just bigger datasets. Their case is that neuroscience keeps re-deriving ideas network science already has, and that the two communities need a common language before connectome data can answer the questions people want to ask of it.
+**Beginner:** Once you have a complete wiring diagram, what do you do with it? Twenty authors from network science and neuroscience argue that the field needs shared theory, not just bigger datasets. Their case is that neuroscience keeps re-deriving ideas network science already has, and that the two communities need a common language before connectome data can answer the questions people want to ask of it.
 
-**Intermediate:** This is a position piece from a workshop, arguing that connectome-scale data has outrun the theory available to interpret it. The authors set out where network science already has machinery neuroscience needs — multilayer and temporal networks, controllability, generative models, network comparison — and where neural circuits break the assumptions those tools were built on: signed and directed edges, spatial embedding, and the fact that a structural connection is not a functional one. The practical argument for a connectomics reader is that importing a graph statistic without importing its assumptions is how a result stops being checkable.
+**Intermediate:** This is a perspective piece arguing that connectome-scale data has outrun the theory available to interpret it. The authors set out where network science already has machinery neuroscience needs — multilayer and temporal networks, controllability, generative models, network comparison — and where neural circuits break the assumptions those tools were built on: signed and directed edges, spatial embedding, and the fact that a structural connection is not a functional one. The practical argument for a connectomics reader is that importing a graph statistic without importing its assumptions is how a result stops being checkable.
 
 **Advanced:** The paper is best read as a map of the gap rather than a method. It identifies the specific mismatches between standard network-science measures and neural data — degree and clustering assume unsigned undirected edges; community detection assumes a resolution you must choose; most generative null models ignore the distance dependence that dominates cortical connectivity — and it names the areas where theory is genuinely missing rather than merely unapplied. For anyone running the analyses in Unit 09, the value is the explicit statement that the null model and the thresholding choice are theoretical commitments, not preprocessing.
 
@@ -173,51 +173,53 @@ Curated papers at the intersection of neuroscience and artificial intelligence �
 
 ---
 
-## 7. Conwell et al. (2024) — What Can 1.8 Billion Regressions Tell Us About the Pressures Shaping High-Level Visual Representation in Brains and Machines?
+## 7. Conwell et al. (2024) — A Large-Scale Examination of Inductive Biases Shaping High-Level Visual Representation in Brains and Machines
 
-**Citation:** Conwell C, Prince JS, Kay KN, Alvarez GA, Konkle T. What can 1.8 billion regressions tell us about the pressures shaping high-level visual representation in brains and machines? *bioRxiv/NeurIPS*. 2024.
+**Citation:** Conwell C, Prince JS, Kay KN, Alvarez GA, Konkle T. A large-scale examination of inductive biases shaping high-level visual representation in brains and machines. *Nature Communications*. 2024;15:9383. (Preprint title: "What can 1.8 billion regressions tell us about the pressures shaping high-level visual representation in brains and machines?" *bioRxiv* 2022.03.28.485868.)
+**DOI:** [10.1038/s41467-024-53147-y](https://doi.org/10.1038/s41467-024-53147-y)
 
-**Tags:** `neuroai:structure-function` `neuroai:deep-learning` `neuroai:representation-learning` `case-studies:mouse` `case-studies:human`
+**Tags:** `neuroai:structure-function` `neuroai:deep-learning` `neuroai:representation-learning` `case-studies:human`
 
 ### Summaries
 
-**Beginner:** Which artificial neural networks produce internal representations most similar to those found in real brains? This study ran a massive comparison — 1.8 billion regressions — testing how well the internal activity of hundreds of different AI models predicts brain activity in both humans and mice viewing images. The results reveal which design choices (network architecture, training data, training objective) matter most for producing brain-like representations.
+**Beginner:** Which artificial neural networks produce internal representations most similar to those found in real brains? This study ran a large controlled comparison, more than 1.8 billion regressions, testing how well the internal activity of 224 different vision models predicts human brain responses to natural images. The answer was that architecture and training objective mattered less than expected; the images the model was trained on mattered most.
 
-**Intermediate:** Conwell et al. conduct the largest systematic comparison to date of neural network representations with neural data from both human fMRI and mouse calcium imaging. By varying model architecture, training objective, dataset, and other factors across hundreds of models, they identify the key pressures that shape brain-like representations. Key findings include: training on naturalistic tasks (object recognition, self-supervised learning) produces more brain-predictive representations than arbitrary tasks; scale alone does not guarantee brain-likeness; and the factors predicting human neural responses partially diverge from those predicting mouse responses, reflecting species-specific computational strategies.
+**Intermediate:** Conwell et al. compare 224 diverse vision models against human fMRI responses in occipitotemporal cortex from the 7T Natural Scenes Dataset, using two model-to-brain linking methods (regression-based encoding and representational similarity analysis). By holding other factors constant, they isolate the effect of individual model properties. Models with qualitatively different architectures (for example, CNNs versus Transformers) and different task objectives (for example, purely visual contrastive learning versus vision-language alignment) reach nearly equivalent brain predictivity. Variation in the visual training diet has the largest and most consistent effect.
 
-**Advanced:** This paper provides the most comprehensive empirical answer to date on what makes a neural network a good model of visual cortex. The methodological contribution is a factorial analysis across model design axes: architecture family (CNNs, Transformers, MLPs), training paradigm (supervised, self-supervised, language-supervised), dataset scale and composition, and model scale. The regression framework maps model layers to neural data using ridge regression with cross-validation. Key findings for the connectomics-NeuroAI intersection: (1) architecture matters — models with more brain-like connectivity patterns (e.g., recurrent, hierarchical) tend to predict neural data better; (2) the human-mouse divergence in model predictivity suggests species-specific architectural constraints shape representation; (3) the diminishing returns of scale challenge purely scaling-based approaches to brain modeling.
+**Advanced:** The paper's most important methodological point is a warning: many models reach similarly high brain predictivity despite clear differences in their underlying representations, which suggests the standard model-to-brain linking methods may be too flexible to discriminate between hypotheses. For the connectomics-NeuroAI intersection, that has two implications. First, a finding that an architecture predicts neural responses well is weak evidence that the architecture is brain-like, because architecture had little effect when other factors were controlled. Second, connectome-constrained models may need benchmarks that are more discriminating than response predictivity alone — for example, predictions about specific cell types, connections, or perturbations.
 
-**Key figures:** Fig. 1 (regression framework), Fig. 2 (model factor analysis), Fig. 3 (architecture effects), Fig. 4 (human vs. mouse divergence)
+**Key figures:** Look for the controlled comparisons of architecture, task objective, and training data, and the comparison of the two linking methods.
 
 **Discussion prompts:**
-- How should connectome-constrained architectures be evaluated in this regression framework?
-- What does the human-mouse divergence in model predictivity tell us about cross-species connectomic differences?
+- How should connectome-constrained architectures be evaluated if response predictivity cannot distinguish between architectures?
+- If training data matters more than architecture for brain predictivity, what does that imply about what connectome data can and cannot constrain?
 - Is predicting neural activity a sufficient benchmark for a "good" brain model?
 
 **Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [Network analysis methods](/content-library/connectomics/network-analysis-methods/)
 
 ---
 
-## 8. Lappalainen et al. (2024) — Connectome-Constrained Networks Predict Neural Activity Across the Fly Brain
+## 8. Lappalainen et al. (2024) — Connectome-Constrained Networks Predict Neural Activity Across the Fly Visual System
 
-**Citation:** Lappalainen JK, Tschopp FD, Varber S, Dasgupta M, Clandinin TR, Romani S, et al. Connectome-constrained networks predict neural activity across the fly brain. *Nature*. 2024.
+**Citation:** Lappalainen JK, Tschopp FD, Prakhya S, McGill M, Nern A, Shinomiya K, Takemura S, Gruntman E, Macke JH, Turaga SC. Connectome-constrained networks predict neural activity across the fly visual system. *Nature*. 2024;634:1132-1140.
 **DOI:** [10.1038/s41586-024-07939-3](https://doi.org/10.1038/s41586-024-07939-3)
 
-**Tags:** `neuroai:connectome-constrained-model` `neuroai:structure-function` `neuroai:simulation` `case-studies:Drosophila` `case-studies:FlyWire`
+**Tags:** `neuroai:connectome-constrained-model` `neuroai:structure-function` `neuroai:simulation` `case-studies:Drosophila`
 
 ### Summaries
 
-**Beginner:** If you know how all the neurons in a brain are connected, can you predict what they will do? This paper takes the complete wiring diagram of the fruit fly brain (from the FlyWire connectome) and uses it to build an artificial neural network with the same connection pattern. When they trained this network, it could predict real neural activity recorded from living flies. This is the first demonstration that a connectome-constrained model can predict brain dynamics at a whole-brain scale.
+**Beginner:** If you know how the neurons in a circuit are connected, can you predict what they will do? This paper takes the measured wiring of the motion-detection pathways in the fruit fly's visual system and builds a computer model with the same connections. The model was never trained on recordings from real neurons — only on a visual task — yet its neurons behaved much like the real ones measured in earlier experiments.
 
-**Intermediate:** Lappalainen et al. construct a neural network model whose architecture is directly derived from the FlyWire connectome — neurons in the model correspond to real neurons, and connections exist only where the connectome specifies them. The model is trained to predict neural activity recorded via calcium imaging in behaving *Drosophila*. Key findings: the connectome-constrained model outperforms randomly wired models with matched statistics, demonstrating that the specific wiring pattern carries computational information. The model also generates predictions about the activity of unrecorded neurons, effectively completing the brain-wide activity map.
+**Intermediate:** Lappalainen et al. build a model network with the experimentally determined connectivity of 64 cell types in the motion pathways of the fly optic lobe. Connectivity is fixed by the connectome; the single-neuron and single-synapse parameters, which the connectome does not measure, are left unknown and optimized with deep-learning methods so that the network detects visual motion. The resulting model makes experimentally testable predictions for every neuron in the connectome, and those predictions agreed with measured neural activity reported across 26 studies.
 
-**Advanced:** This paper is the first rigorous demonstration that connectome structure constrains neural dynamics in a predictive, quantitative sense. The modeling framework uses the connectome as a hard architectural constraint (only connectome-specified connections are allowed) while learning synaptic weights from functional data. Key methodological choices: (1) the model uses a continuous-time recurrent architecture with Dale's law (separate excitatory/inhibitory neurons); (2) training uses a combination of reconstruction loss on recorded neurons and regularization; (3) comparison with shuffled-connectome controls isolates the contribution of specific wiring. The results validate the central premise of connectome-constrained modeling: that wiring diagrams contain functionally relevant information beyond what is captured by aggregate statistics. Limitations include the gap between synapse count and effective synaptic strength, and the absence of neuromodulation.
+**Advanced:** This paper shows that connectivity alone can constrain a mechanistic model enough to predict neural activity. The connectome does not supply a simulation; it removes enough free parameters that the model's predictions can fail. Two methodological choices deserve close reading. First, the parameters are fit to a task rather than to the neural data being predicted, so agreement with recordings is a genuine held-out test rather than a fit. Second, many parameter settings can solve the task, so the authors examine an ensemble of trained models and ask which predictions are consistent across it. The authors also report that the strategy is more likely to succeed when neurons are sparsely connected. The scope is limited: a small, stereotyped, well-characterized visual circuit with a known computational task. Whether the approach extends to mammalian cortex, where the task is less clear and the connectome less complete, is open.
 
-**Key figures:** Fig. 1 (connectome-to-model pipeline), Fig. 2 (prediction of neural activity), Fig. 3 (comparison with shuffled controls), Fig. 4 (whole-brain activity prediction)
+**Key figures:** Look for the construction of the model from the connectome, the task-optimized training, the comparison of predicted and measured responses, and the analysis of variability across the model ensemble.
 
 **Discussion prompts:**
-- What fraction of neural dynamics is explained by connectome structure versus other factors (neuromodulation, plasticity)?
-- How should this approach scale to larger connectomes (mouse, human)?
-- Does the success of connectome-constrained models validate the "structure determines function" hypothesis?
+- Which parameters does the connectome fix, and which remain free? Why does that ratio determine whether the model is falsifiable?
+- Why does training on a task rather than on recordings make the comparison with neural data more convincing?
+- What properties of the fly visual system made this work, and which of them does mouse cortex lack?
+- How should this approach scale to larger connectomes (mouse, human), where the relevant task is less well defined?
 
-**Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [FlyWire whole-brain](/content-library/case-studies/flywire-whole-brain/)
+**Related content:** [NeuroAI bridge](/content-library/connectomics/neuroai-bridge/), [Network analysis papers](/content-library/journal-papers/network-analysis/), [Unit 09 §5](/technical-training/09-connectome-analysis-neuroai/)

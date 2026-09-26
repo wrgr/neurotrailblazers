@@ -3,8 +3,26 @@ layout: null
 permalink: /technical-training/journal-club/graph-data.json
 sitemap: false
 ---
+{%- comment -%}
+  organism comes from the paper's tags, which are [organism..., dimension, tier_N].
+  Keep only real organism values (the corpus organism vocabulary, minus "none");
+  never the dimension or tier tag. Papers with none get ["unspecified"].
+{%- endcomment -%}
+{%- assign org_values = "fly,mouse,elegans,human,rat,macaque,zebrafish,other" | split: "," -%}
 [
 {%- for p in site.data.journal_papers.papers -%}
-{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | default: 2000 | jsonify }},"in_degree":{{ p.in_degree | default: 0 | jsonify }},"out_degree":{{ p.out_degree | default: 0 | jsonify }},"kcore":{{ p.k_core | default: 5 | jsonify }},"organism":{{ p.tags | jsonify }},"citation_role":{{ p.citation_role | jsonify }},"scope_role":{{ p.scope_role | jsonify }},"summary":{{ p.plain_language_summary | jsonify }},"citation":{{ p.citation | jsonify }},"cites":{{ p.cites | jsonify }},"pdf_url":{{ p.pdf_url | jsonify }},"is_oa":{{ p.is_oa | jsonify }},"ocar":{{ p.ocar | jsonify }},"summaries":{{ p.summaries | jsonify }},"discussion_prompts":{{ p.discussion_prompts | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- assign org_n = p.tags | size -%}
+{%- assign org_stop = org_n -%}
+{%- assign org_last = p.tags | last | append: "" -%}
+{%- if org_n >= 2 and org_last contains "tier_" -%}
+{%- assign org_stop = org_n | minus: 1 -%}
+{%- assign org_i = org_n | minus: 2 -%}
+{%- if p.tags[org_i] == p.dimension -%}{%- assign org_stop = org_i -%}{%- endif -%}
+{%- endif -%}
+{%- assign orgs = "" | split: "," -%}
+{%- for t in p.tags limit: org_stop -%}{%- if org_values contains t -%}{%- assign orgs = orgs | push: t -%}{%- endif -%}{%- endfor -%}
+{%- assign orgs = orgs | uniq -%}
+{%- if orgs.size == 0 -%}{%- assign orgs = "unspecified" | split: "," -%}{%- endif -%}
+{"id":{{ p.id | jsonify }},"title":{{ p.title | jsonify }},"authors":{{ p.authors | jsonify }},"year":{{ p.year | jsonify }},"journal":{{ p.journal | jsonify }},"doi":{{ p.doi | jsonify }},"dimension":{{ p.dimension | jsonify }},"era":{{ p.inclusion_role | jsonify }},"tier":{{ p.tier | default: 2000 | jsonify }},"in_degree":{{ p.in_degree | default: 0 | jsonify }},"out_degree":{{ p.out_degree | default: 0 | jsonify }},"kcore":{{ p.k_core | default: 5 | jsonify }},"organism":{{ orgs | jsonify }},"citation_role":{{ p.citation_role | jsonify }},"scope_role":{{ p.scope_role | jsonify }},"summary":{{ p.plain_language_summary | jsonify }},"citation":{{ p.citation | jsonify }},"cites":{{ p.cites | jsonify }},"pdf_url":{{ p.pdf_url | jsonify }},"is_oa":{{ p.is_oa | jsonify }},"ocar":{{ p.ocar | jsonify }},"summaries":{{ p.summaries | jsonify }},"discussion_prompts":{{ p.discussion_prompts | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]

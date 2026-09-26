@@ -4,21 +4,21 @@
   "groups": [
     {
       "key": "500",
-      "label": "Top 500 Core Flagships",
+      "label": "Top 500",
       "n": 500,
-      "description": "Foundational and landmark publications defining connectomics"
+      "description": "The 500 top-ranked papers; contained in the Top 1,000 and Top 2,000"
     },
     {
       "key": "1000",
-      "label": "Top 1,000 Landmark Corpus",
+      "label": "Top 1,000",
       "n": 1000,
-      "description": "Expanded canonical literature and high-impact methodology"
+      "description": "The 1,000 top-ranked papers; includes the Top 500"
     },
     {
       "key": "2000",
-      "label": "Top 2,000 Comprehensive Network",
+      "label": "Top 2,000",
       "n": 2000,
-      "description": "Complete research network across all connectomics subfields"
+      "description": "All 2,000 papers in the corpus"
     }
   ]
 }

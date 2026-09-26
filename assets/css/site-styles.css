@@ -1914,6 +1914,7 @@ footer {
   border-left: 3px solid var(--brain-gray); padding-left: 1rem;
 }
 .jc-ocar-step p { margin: 0.2rem 0 0; font-size: 0.88rem; color: #374151; line-height: 1.55; }
+.jc-ocar-note { margin: 0 0 0.4rem; font-size: 0.75rem; color: #64748b; line-height: 1.45; }
 .jc-ocar-label {
   display: inline-block; font-size: 0.72rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.05em;

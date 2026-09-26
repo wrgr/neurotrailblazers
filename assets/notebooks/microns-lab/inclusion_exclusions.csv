@@ -1,0 +1,7 @@
+step,cells_remaining,excluded_at_step
+all rows in proofreading table,2182,0
+1. axon proofread,2141,41
+2. dendrite proofread,2088,53
+3. valid_id == pt_root_id,2070,18
+4. exactly one nucleus on root,2070,0
+5. broad_type excitatory or inhibitory,2070,0

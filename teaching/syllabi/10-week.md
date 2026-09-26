@@ -31,7 +31,7 @@ total fits.
 | 1 | A: Session 1 Introduction · B: Pathways, Orientation | Lab norms (25 min) | Study brief v1; expectations list | [Plan]({{ '/teaching/lectures/connectomics-01-introduction/' | relative_url }}#teach-a-90-minute-session) · [Orientation]({{ '/teaching/pathways/orientation/' | relative_url }}) |
 | 2 | A: Session 2 Synapse Detection · B: Unit 02 scale-selection lab | Synapse Detection (20 min); Unit 02 (90 min) | Audit plan and revised brief; scale memo | [Plan]({{ '/teaching/lectures/synapse-detection/' | relative_url }}) · [Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }}) |
 | 3 | A: Session 3 Tools and Methods · B: Pathways, Resilient STEM Scholar | Unit 03 §1–2 (60 min); two short readings (15 min) | Methods record; failure diagnosis | [Plan]({{ '/teaching/lectures/connectomics-02-tools-and-methods/' | relative_url }}#teach-a-90-minute-session) · [Resilient]({{ '/teaching/pathways/resilient-scholar/' | relative_url }}) |
-| 4 | A: Unit 05 consensus studio · B: **Real-data lab slot (planned; offline fallback)** | Unit 05 (150 min); Unit 04, read in week 3 | Consensus sheet; capacity plan and versioned query note | [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) · [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) |
+| 4 | A: Unit 05 consensus studio · B: **MICrONS real-data lab** | Unit 05 (150 min); Unit 04, read in week 3 | Consensus sheet; methods record and drift note | [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) · [MICrONS lab]({{ '/notebooks/microns-lab/' | relative_url }}) |
 | 5 | A: Unit 08 proofreading plan · B: Session 4 Algorithms and Applications | Unit 08 §1–4 (120 min) | Proofreading plan; analysis card | [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) · [Plan]({{ '/teaching/lectures/connectomics-03-algorithms-and-applications/' | relative_url }}#teach-a-90-minute-session) |
 | 6 | A: Ethics and Governance · B: Pathways, Savvy Researcher | Ethics reading (25 min); career mechanics (25 min) | Governance note; authorship memo; project proposal | [Ethics]({{ '/teaching/lectures/ethics-and-governance/' | relative_url }}) · [Savvy]({{ '/teaching/pathways/savvy-researcher/' | relative_url }}) |
 | 7 | A: Module 17 writing kit · B: Module 19 peer-review kit | Two concept sets (60 min) | Claim-evidence matrix; structured review | [Kit 17]({{ '/teaching/sessions/module17/' | relative_url }}) · [Kit 19]({{ '/teaching/sessions/module19/' | relative_url }}) |
@@ -143,28 +143,34 @@ week (about 10 minutes). **Week total:** 3 contact hours, 225 outside minutes.
 training set or a public volume. Use short z-stacks, not single images, as the Facilitator
 Guide requires.
 
-**B. Real-data lab slot, planned; use offline fallback until the MICrONS notebook exists.**
-The planned lab runs the
-[Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
-Part A query against a pinned MICrONS materialization. It is not built. For now, run
-the offline fallback:
+**B. MICrONS real-data lab.**
+The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) is the
+real-data version of Sessions 3 and 4. It reads static public exports pinned to
+materialization v1507, so no account is needed. It checks file hashes, applies stated
+inclusion rules to 2,070 proofread cells, compares reciprocity with three nulls, and
+writes a methods record. Learners need Python 3.11 or later, about 90 MB of downloads
+and a laptop; the run takes about a minute. Have learners install the requirements
+before class.
 
-1. Unit 04 lab Part B, the capacity plan for 5 mm³ of hippocampus (45 minutes, no data).
-2. Re-run the Session 3 offline query on the
-   [worksheet]({{ '/teaching/lectures/tools-and-methods-activity/' | relative_url }})
-   under a second inclusion threshold. Record both results with a reproducibility header
-   (30 minutes).
-3. Debrief on which number a reader could reproduce (15 minutes).
+1. Run the notebook and compare the key numbers with the archived outputs on the lab
+   page (35 minutes, pairs).
+2. Write the methods record into the study brief and read the v1412 → v1507 drift
+   section: which cells a stale root-ID join would silently lose (25 minutes).
+3. Debrief: which null should the headline use, and why the uniform null overstates
+   the effect (15 minutes).
 
-Learners who already have access may try Part A with the
-[Connectome Quality reference code]({{ '/notebooks/connectome-quality/' | relative_url }}).
-It is optional and ungraded.
+**Offline fallback** (no network or no Python): read the archived executed notebook on
+the lab page instead of running it, or run Unit 04 lab Part B, the capacity plan (no
+data), plus the Session 3 offline query on the
+[worksheet]({{ '/teaching/lectures/tools-and-methods-activity/' | relative_url }})
+under a second inclusion threshold.
 
 **Before class.** A: [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }})
 sections 1–4 (150 minutes). B: Unit 04, read in week 3.
 
 **Artifacts.** A consensus annotation sheet, a disagreement log and one rubric revision. A
-capacity plan and a two-threshold query note.
+methods record with the v1507 version, inclusion rules and file hashes, and a note on
+what the v1412 → v1507 drift would do to a stale join.
 
 **Feedback.** Unit 05
 [assessment rubric]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}#assessment-rubric).
@@ -172,7 +178,7 @@ For B, use the Unit 04 [rubric]({{ '/technical-training/04-volume-reconstruction
 rows for storage, compute and labor. Apply its Version discipline row to the two
 thresholds.
 
-**After class (50 minutes).** Finish the disagreement log (20 minutes) and capacity plan
+**After class (50 minutes).** Finish the disagreement log (20 minutes) and methods record
 (30 minutes). **Week total:** 3 contact hours, 200 outside minutes.
 
 ### Week 5: How much proofreading does the claim need, and does it beat the null?
@@ -358,7 +364,7 @@ rubric.
 | Component | Weight | Evidence |
 |---|---|---|
 | Carried-forward study package | 30% | Brief, audit, methods record, analysis card and governance note, graded on the revision rather than the first worksheet |
-| Technical labs | 20% | Scale memo, consensus sheet, capacity plan and query note, proofreading plan |
+| Technical labs | 20% | Scale memo, consensus sheet, MICrONS methods record and drift note, proofreading plan |
 | Writing and review | 15% | Claim-evidence matrix, structured review, peer review given |
 | Pathways workshops | 10% | Shareable artifact submitted and follow-through attempted; complete or incomplete, with private parts never collected |
 | Final report, talk and portfolio | 25% | Module 25 criteria and the final claim scored on the four-dimension rubric |

@@ -1,0 +1,96 @@
+{
+  "dataset": "MICrONS cubic millimeter (minnie65)",
+  "datastack": "minnie65_public",
+  "materialization_version": 1507,
+  "materialization_timestamp_utc": "2025-07-31T08:10:01.117494+00:00",
+  "access": "public static CSV exports, no account or token",
+  "files": {
+    "synapses": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/synapses_with_axon_proofreading.csv.gz",
+      "bytes": 80191720,
+      "sha256": "3f0841cafb39531e9b42d8a936211da66db9f09cea96c74ec88e0d05e3d06fd5",
+      "hash_checked": true
+    },
+    "synapses_header": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/synapses_with_axon_proofreading_header.csv",
+      "bytes": 271,
+      "sha256": "e9265a2ba4537ebe095f8b3f9136b0f11d996b451a01884c9025a1652f8ef597",
+      "hash_checked": false
+    },
+    "proofreading": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/proofreading_status_and_strategy_merged.csv.gz",
+      "bytes": 69077,
+      "sha256": "d10300976fc3dd5fdb411dd0308dff75ee1385bc08b69639c9f8d7e970a1c4b1",
+      "hash_checked": true
+    },
+    "proofreading_header": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/proofreading_status_and_strategy_merged_header.csv",
+      "bytes": 223,
+      "sha256": "0576b8b864f3441bcd9ca1a40915dbd76bcbb54c9bb7d8758318b796cfdb621c",
+      "hash_checked": false
+    },
+    "cell_info": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/aibs_cell_info_merged.csv.gz",
+      "bytes": 5696726,
+      "sha256": "f26299762ef15a782a9323e9b8ae0740b85bb50fa1be7b42fbecb4adfac1b7f8",
+      "hash_checked": true
+    },
+    "cell_info_header": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1507/aibs_cell_info_merged_header.csv",
+      "bytes": 372,
+      "sha256": "48551ea524e8567a76d3d5bf629ba201303781a6708aaa9ade9b55f4beebf9a2",
+      "hash_checked": false
+    },
+    "proofreading_drift": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1412/proofreading_status_and_strategy_merged.csv.gz",
+      "bytes": 63838,
+      "sha256": "c580c50da233cb8e5c1090e97a21d145d608b188843348a2dc9e29ff387221c5",
+      "hash_checked": true
+    },
+    "proofreading_drift_header": {
+      "url": "https://storage.googleapis.com/mat_dbs/public/minnie65_phase3_v1/v1412/proofreading_status_and_strategy_merged_header.csv",
+      "bytes": 223,
+      "sha256": "0576b8b864f3441bcd9ca1a40915dbd76bcbb54c9bb7d8758318b796cfdb621c",
+      "hash_checked": false
+    }
+  },
+  "tables": [
+    "synapses_with_axon_proofreading",
+    "proofreading_status_and_strategy",
+    "aibs_cell_info"
+  ],
+  "inclusion_rules": [
+    "1. axon proofread",
+    "2. dendrite proofread",
+    "3. valid_id == pt_root_id",
+    "4. exactly one nucleus on root",
+    "5. broad_type excitatory or inhibitory"
+  ],
+  "edge_rule": "directed edge if >= T synapses from pre axon to post, both included, autapses dropped",
+  "thresholds": {
+    "primary": 1,
+    "sensitivity": 2
+  },
+  "nulls": [
+    "uniform fixed-edge-count",
+    "soft configuration (Chung-Lu)",
+    "distance x class (25 um bins to 1000 um, then one overflow bin)"
+  ],
+  "decision_rule": "enriched iff upper-tail p <= 0.05 under distance x class null at T=1 and ratio > 1 at T=2",
+  "n_null_samples": 200,
+  "seed": 20250731,
+  "voxel_resolution_nm": [
+    4.0,
+    4.0,
+    40.0
+  ],
+  "code_sha256_code_cells": "a50d89761feb6371a28f2b8d977836bdc95066afd96469acf2d122de3f68f0c3",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "python": "3.13.5"
+  },
+  "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+  "run_started_utc": "2026-09-26T14:59:09+00:00",
+  "citation": "MICrONS Consortium et al. 2025, Nature 640:435-447; www.microns-explorer.org"
+}

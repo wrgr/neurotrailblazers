@@ -77,13 +77,15 @@ lecture-only slot.
 
 ## The real-data lab
 
-The planned MICrONS notebook does not exist yet. It will be a version-pinned, clean-rerun
-query. Each map keeps a slot for it, labeled **planned; use offline fallback until the
-MICrONS notebook exists**. Until then, the slot runs the capacity plan from Unit 04's lab,
-which needs no data, plus a second pass through the Session 3 offline query. The
+Each map has one meeting for the [MICrONS real-data
+lab]({{ '/notebooks/microns-lab/' | relative_url }}): a notebook pinned to
+materialization v1507 that reads static public exports, so no account is needed. It was
+rerun from clean environments with byte-identical results, and the page archives the
+outputs for comparison. If a room has no network or no Python, the fallback is the
+archived executed notebook, or Unit 04's capacity plan plus a second pass through the
+Session 3 offline query. The
 [Connectome Quality notebooks]({{ '/notebooks/connectome-quality/' | relative_url }})
-page has reference code for learners who already have access. It is not a verified,
-runnable notebook, so neither map grades it.
+page is reference code for learners with CAVE access; neither map grades it.
 
 ## Assessment
 

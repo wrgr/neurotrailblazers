@@ -1,0 +1,99 @@
+MICrONS lab clean-environment rerun log, 2026-09-26 (America/New_York), macOS 15.7.9 arm64
+Script: fresh venv -> pip install -r requirements.txt -> empty cache -> nbconvert --execute twice
+
+### Python 3.13
+== interpreter: Python 3.13.5
+[NbConvertApp] Converting notebook microns-lab.ipynb to notebook
+[NbConvertApp] Writing 44664 bytes to executed.ipynb
+== run 1 wall seconds: 38
+d9a218e1d5153dc8b10480b5870849b4954bd2e57220fa3842f62b5bc38bde73  outputs/results_summary.json
+2aa9b1147b3edc0b1997daa5d72d225149321294a6fc181cbc904527ff62ae6a  outputs/reciprocity_nulls.csv
+389e9d11b7290365a4e4ea15972dcc64178b222699e79de7021fc99cb1ec414b  outputs/class_pair_connectivity.csv
+b20cf313f0fc49dbcd5cf2c5659fd137a4358b0b87ab396af34c551f540a8628  outputs/inclusion_exclusions.csv
+[NbConvertApp] Converting notebook microns-lab.ipynb to notebook
+[NbConvertApp] Writing 44664 bytes to executed.ipynb
+== run 2 wall seconds: 22
+d9a218e1d5153dc8b10480b5870849b4954bd2e57220fa3842f62b5bc38bde73  outputs/results_summary.json
+2aa9b1147b3edc0b1997daa5d72d225149321294a6fc181cbc904527ff62ae6a  outputs/reciprocity_nulls.csv
+389e9d11b7290365a4e4ea15972dcc64178b222699e79de7021fc99cb1ec414b  outputs/class_pair_connectivity.csv
+b20cf313f0fc49dbcd5cf2c5659fd137a4358b0b87ab396af34c551f540a8628  outputs/inclusion_exclusions.csv
+== identical results_summary.json across runs:
+IDENTICAL
+
+### Python 3.11
+== interpreter: Python 3.11.14
+[NbConvertApp] Converting notebook microns-lab.ipynb to notebook
+[NbConvertApp] Writing 44666 bytes to executed.ipynb
+== run 1 wall seconds: 42
+d9a218e1d5153dc8b10480b5870849b4954bd2e57220fa3842f62b5bc38bde73  outputs/results_summary.json
+2aa9b1147b3edc0b1997daa5d72d225149321294a6fc181cbc904527ff62ae6a  outputs/reciprocity_nulls.csv
+389e9d11b7290365a4e4ea15972dcc64178b222699e79de7021fc99cb1ec414b  outputs/class_pair_connectivity.csv
+b20cf313f0fc49dbcd5cf2c5659fd137a4358b0b87ab396af34c551f540a8628  outputs/inclusion_exclusions.csv
+[NbConvertApp] Converting notebook microns-lab.ipynb to notebook
+[NbConvertApp] Writing 44666 bytes to executed.ipynb
+== run 2 wall seconds: 22
+d9a218e1d5153dc8b10480b5870849b4954bd2e57220fa3842f62b5bc38bde73  outputs/results_summary.json
+2aa9b1147b3edc0b1997daa5d72d225149321294a6fc181cbc904527ff62ae6a  outputs/reciprocity_nulls.csv
+389e9d11b7290365a4e4ea15972dcc64178b222699e79de7021fc99cb1ec414b  outputs/class_pair_connectivity.csv
+b20cf313f0fc49dbcd5cf2c5659fd137a4358b0b87ab396af34c551f540a8628  outputs/inclusion_exclusions.csv
+== identical results_summary.json across runs:
+IDENTICAL
+
+### Cross-interpreter check
+results_summary.json byte-identical between Python 3.11.14 and 3.13.5 runs: yes
+
+### pip freeze (Python 3.13 venv)
+appnope==1.0.0
+asttokens==3.0.2
+attrs==26.1.0
+beautifulsoup4==4.15.0
+bleach==6.4.0
+comm==0.2.3
+debugpy==1.8.22
+defusedxml==0.7.1
+executing==2.2.1
+fastjsonschema==2.22.2
+ipykernel==7.3.0
+ipython==9.17.1
+ipython_pygments_lexers==1.1.1
+jedi==0.20.0
+Jinja2==3.1.6
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+jupyter_client==8.10.0
+jupyter_core==5.9.1
+jupyterlab_pygments==0.3.0
+MarkupSafe==3.0.3
+matplotlib-inline==0.2.2
+mistune==3.3.4
+nbclient==0.11.0
+nbconvert==7.17.1
+nbformat==5.11.1
+nest-asyncio2==1.7.3
+numpy==2.3.5
+packaging==26.3
+pandas==2.3.3
+pandocfilters==1.5.1
+parso==0.8.7
+pexpect==4.9.0
+platformdirs==4.11.15
+prompt_toolkit==3.0.53
+psutil==7.2.2
+ptyprocess==0.7.0
+pure_eval==0.2.4
+Pygments==2.21.0
+python-dateutil==2.9.0.post0
+pytz==2026.4
+pyzmq==27.2.0
+referencing==0.37.0
+rpds-py==2026.6.3
+six==1.17.0
+soupsieve==2.10
+stack-data==0.6.3
+tinycss2==1.5.1
+tornado==6.5.10
+traitlets==5.16.1
+typing_extensions==4.16.0
+tzdata==2026.4
+wcwidth==0.9.1
+webencodings==0.6.1

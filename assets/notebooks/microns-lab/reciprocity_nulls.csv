@@ -1,0 +1,10 @@
+analysis,null,n_cells,edges,observed_reciprocal_pairs,reciprocated_edge_fraction,expected_reciprocal_pairs,observed_over_expected,null_mean,null_sd,null_max,upper_tail_p,n_null_samples
+threshold 1,uniform fixed-edge-count,2070,134753,17022,0.25264,2119.89,8.02967,2116.22,41.5579,2218,0.00497512,200
+threshold 1,soft configuration (Chung-Lu),2070,134753,17022,0.25264,8104.91,2.10021,8106.19,79.4099,8315,0.00497512,200
+threshold 1,distance x class,2070,134753,17022,0.25264,8652.26,1.96735,8641.06,96.2384,8871,0.00497512,200
+threshold 2,uniform fixed-edge-count,2070,45774,5542,0.242146,244.606,22.6568,244.25,15.159,283,0.00497512,200
+threshold 2,soft configuration (Chung-Lu),2070,45774,5542,0.242146,2200.28,2.51877,2198.34,38.5773,2337,0.00497512,200
+threshold 2,distance x class,2070,45774,5542,0.242146,1820.52,3.04419,1819.21,38.8492,1933,0.00497512,200
+"fully extended axons, threshold 1",uniform fixed-edge-count,232,6540,1153,0.352599,398.995,2.88976,398.48,17.9628,444,0.00497512,200
+"fully extended axons, threshold 1",soft configuration (Chung-Lu),232,6540,1153,0.352599,627.912,1.83625,629.45,21.8776,683,0.00497512,200
+"fully extended axons, threshold 1",distance x class,232,6540,1153,0.352599,771.314,1.49485,772.66,24.9905,854,0.00497512,200

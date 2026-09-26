@@ -21,8 +21,8 @@ outside load runs from 1.5 to 3.5 hours a week, so the full load is about 4.5–
 week. That is a little under one outside hour per contact hour. To reach a two-to-one
 ratio, add Unit 03 sections 3–4 and the rest of Unit 09 as reading (about 2 hours). Add
 the [Module 16]({{ '/teaching/sessions/module16/' | relative_url }}) figure package as a
-take-home on the learner's own analysis card (4 hours). Add a longer final report. Once
-the MICrONS notebook exists, add the Unit 09 analysis lab (2 hours).
+take-home on the learner's own analysis card (4 hours). Add a longer final report. Add the
+Unit 09 analysis lab (2 hours), with the MICrONS lab as its real-data source.
 
 **Instructor preparation.** Weeks 6–8 need patch sets that the site does not ship: a
 borderline set for Unit 05, 20 labeled processes for Unit 06 and 40 glia patches for
@@ -38,7 +38,7 @@ before the term. Use short z-stacks throughout.
 | 3 | A: Session 2 Synapse Detection · B: Pathways, STEM Identity and Purpose | Synapse Detection (20 min); belonging page (15 min) | Audit plan and revised brief; contribution plan | [Plan]({{ '/teaching/lectures/synapse-detection/' | relative_url }}) · [Identity]({{ '/teaching/pathways/identity-and-purpose/' | relative_url }}) |
 | 4 | A: Unit 02 scale-selection lab · B: Unit 03 acquisition QA lab | Units 02 and 03, read in weeks 2–3 | Scale memo; QA report | [Unit 02]({{ '/technical-training/02-brain-data-across-scales/' | relative_url }}) · [Unit 03]({{ '/technical-training/03-em-prep-and-imaging/' | relative_url }}) |
 | 5 | A: Session 3 Tools and Methods · B: Pathways, Resilient STEM Scholar | Two short readings (15 min) | Methods record; failure diagnosis | [Plan]({{ '/teaching/lectures/connectomics-02-tools-and-methods/' | relative_url }}#teach-a-90-minute-session) · [Resilient]({{ '/teaching/pathways/resilient-scholar/' | relative_url }}) |
-| 6 | A: **Real-data lab slot (planned; offline fallback)** · B: Unit 05 consensus studio | Unit 04 (120 min over weeks 4–5); Unit 05 (150 min over weeks 5–6) | Capacity plan and query note; consensus sheet | [Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}) · [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) |
+| 6 | A: **MICrONS real-data lab** · B: Unit 05 consensus studio | Unit 04 (120 min over weeks 4–5); Unit 05 (150 min over weeks 5–6) | Methods record and drift note; consensus sheet | [MICrONS lab]({{ '/notebooks/microns-lab/' | relative_url }}) · [Unit 05]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) |
 | 7 | A: Unit 06 calibration lab · B: Pathways, Communicating Science I | Unit 06 (120 min over weeks 6–7); one sentence to bring | Calibration record and protocol; three registers | [Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }}) · [Comm. I]({{ '/teaching/pathways/communicating-science-1/' | relative_url }}) |
 | 8 | A: Unit 07 glia drill · B: Unit 08 proofreading plan | Unit 07 (90 min); Unit 08 (150 min) | Confusion matrix and checklist; proofreading plan | [Unit 07]({{ '/technical-training/07-glia/' | relative_url }}) · [Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}) |
 | 9 | A: Module 08 hypothesis kit · B: Pathways, Charting Your Course | Module 08 concept set (30 min) | Three hypothesis sheets; direction memo | [Kit 08]({{ '/teaching/sessions/module08/' | relative_url }}) · [Charting]({{ '/teaching/pathways/charting-your-course/' | relative_url }}) |
@@ -202,22 +202,27 @@ sections 1–2 (75 minutes). **Week total:** 3 contact hours, 180 outside minute
 
 ### Week 6: What does a reproducible query cost, and what does the image support?
 
-**A. Real-data lab slot, planned; use offline fallback until the MICrONS notebook exists.**
-The planned lab runs the
-[Unit 04]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }})
-Part A query against a pinned MICrONS materialization and repeats it on a second version.
-It is not built. For now, run the offline fallback:
+**A. MICrONS real-data lab.**
+The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }}) is the
+real-data version of Sessions 3 and 4. It reads static public exports pinned to
+materialization v1507, so no account is needed. It checks file hashes, applies stated
+inclusion rules to 2,070 proofread cells, compares reciprocity with three nulls, and
+writes a methods record. Learners need Python 3.11 or later, about 90 MB of downloads
+and a laptop; the run takes about a minute. Have learners install the requirements
+before class.
 
-1. Unit 04 lab Part B, the capacity plan (45 minutes, no data).
-2. Re-run the Session 3 offline query on the
-   [worksheet]({{ '/teaching/lectures/tools-and-methods-activity/' | relative_url }})
-   under a second inclusion threshold. Record both with a reproducibility header
-   (30 minutes).
-3. Debrief (15 minutes).
+1. Run the notebook and compare the key numbers with the archived outputs on the lab
+   page (35 minutes, pairs).
+2. Write the methods record into the study brief and read the v1412 → v1507 drift
+   section: which cells a stale root-ID join would silently lose (25 minutes).
+3. Debrief: which null should the headline use, and why the uniform null overstates
+   the effect (15 minutes).
 
-Learners with access may try Part A with the
-[Connectome Quality reference code]({{ '/notebooks/connectome-quality/' | relative_url }}).
-It is optional and ungraded.
+**Offline fallback** (no network or no Python): read the archived executed notebook on
+the lab page instead of running it, or run Unit 04 lab Part B, the capacity plan (no
+data), plus the Session 3 offline query on the
+[worksheet]({{ '/teaching/lectures/tools-and-methods-activity/' | relative_url }})
+under a second inclusion threshold.
 
 **B. Unit 05 studio, ultrastructure consensus round** (75 minutes plus 15-minute debrief).
 [Studio]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}) ·
@@ -225,14 +230,15 @@ It is optional and ungraded.
 
 **Before class.** A: Unit 04, read in weeks 4–5. B: Unit 05 sections 3–4 (75 minutes).
 
-**Artifacts.** A capacity plan and a two-threshold query note. A consensus sheet,
+**Artifacts.** A MICrONS methods record (v1507, inclusion rules, file hashes) and a
+drift note. A consensus sheet,
 disagreement log and one rubric revision.
 
 **Feedback.** Unit 04 [rubric]({{ '/technical-training/04-volume-reconstruction-infrastructure/' | relative_url }}#rubric)
 rows for storage, compute and labor, with Version discipline applied to the thresholds.
 Unit 05 [assessment rubric]({{ '/technical-training/05-neuronal-ultrastructure/' | relative_url }}#assessment-rubric).
 
-**After class (110 minutes).** Finish the capacity plan (30 minutes) and disagreement log
+**After class (110 minutes).** Finish the methods record (30 minutes) and disagreement log
 (20 minutes). Read [Unit 06]({{ '/technical-training/06-axons-and-dendrites/' | relative_url }})
 sections 1–2 (60 minutes). **Week total:** 3 contact hours, 185 outside minutes.
 
@@ -517,7 +523,7 @@ enough to cover every MERIT stage.
   Your Course in week 9 and let Future Forward use its catch-up for the direction memo.
 
 **Technical work omitted.** Part A of Units 04 and 08, and the Unit 09 analysis lab, need
-live data or accounts. Unit 04 Part A is the planned real-data slot. Kit 01 overlaps
+live data or accounts. The MICrONS lab replaces Unit 04 Part A as the real-data meeting. Kit 01 overlaps
 Session 1 and the Unit 01 lab. Kits 03–07 and 09–11 name data, patches or scripts the
 site does not publish; kits 03 and 05, for example, point to provided files that are not
 there. The units cover the same ground with labs the instructor can prepare. Kits 12–16
@@ -532,7 +538,7 @@ rubric.
 | Component | Weight | Evidence |
 |---|---|---|
 | Carried-forward study package | 25% | Seven-part brief, audit, methods record, analysis card and governance note, graded on revision |
-| Technical labs | 25% | Scale memo, QA report, capacity plan and query note, consensus sheet, calibration protocol, glia checklist, proofreading plan |
+| Technical labs | 25% | Scale memo, QA report, MICrONS methods record and drift note, consensus sheet, calibration protocol, glia checklist, proofreading plan |
 | Inference, review and reproducibility kits | 15% | Hypothesis sheets, inference design sheet, structured review, FAIR sheet and reuse report, claim-evidence matrix |
 | Pathways workshops | 10% | Shareable artifact submitted and follow-through attempted; complete or incomplete, with private parts never collected |
 | Final report, talk and portfolio | 25% | Module 25 criteria and the final claim scored on the four-dimension rubric |

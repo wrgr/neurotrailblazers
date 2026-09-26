@@ -502,6 +502,10 @@ Read these as architecture sketches to check your own mental model against. For 
 
 **Part A — make a reproducible query (45 min).**
 
+*No account?* The [MICrONS real-data lab]({{ '/notebooks/microns-lab/' | relative_url }})
+runs a version-pinned query on static public exports, with archived outputs to compare
+against. It covers the same reproducibility steps.
+
 Using `caveclient` against the MICrONS public release (or `neuprint-python` against
 hemibrain, or the FlyWire client, whichever you have access to):
 

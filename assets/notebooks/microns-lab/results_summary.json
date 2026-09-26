@@ -1,0 +1,195 @@
+{
+  "materialization_version": 1507,
+  "inclusion": [
+    {
+      "step": "all rows in proofreading table",
+      "cells_remaining": 2182,
+      "excluded_at_step": 0
+    },
+    {
+      "step": "1. axon proofread",
+      "cells_remaining": 2141,
+      "excluded_at_step": 41
+    },
+    {
+      "step": "2. dendrite proofread",
+      "cells_remaining": 2088,
+      "excluded_at_step": 53
+    },
+    {
+      "step": "3. valid_id == pt_root_id",
+      "cells_remaining": 2070,
+      "excluded_at_step": 18
+    },
+    {
+      "step": "4. exactly one nucleus on root",
+      "cells_remaining": 2070,
+      "excluded_at_step": 0
+    },
+    {
+      "step": "5. broad_type excitatory or inhibitory",
+      "cells_remaining": 2070,
+      "excluded_at_step": 0
+    }
+  ],
+  "n_cells": 2070,
+  "n_excitatory": 1732,
+  "n_inhibitory": 338,
+  "synapses_among_included": 258812,
+  "autapses_dropped": 31542,
+  "edges": {
+    "threshold_1": 134753,
+    "threshold_2": 45774
+  },
+  "reciprocity": [
+    {
+      "analysis": "threshold 1",
+      "null": "uniform fixed-edge-count",
+      "n_cells": 2070,
+      "edges": 134753,
+      "observed_reciprocal_pairs": 17022,
+      "reciprocated_edge_fraction": 0.25264,
+      "expected_reciprocal_pairs": 2119.888076,
+      "observed_over_expected": 8.029669,
+      "null_mean": 2116.22,
+      "null_sd": 41.557874,
+      "null_max": 2218,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "threshold 1",
+      "null": "soft configuration (Chung-Lu)",
+      "n_cells": 2070,
+      "edges": 134753,
+      "observed_reciprocal_pairs": 17022,
+      "reciprocated_edge_fraction": 0.25264,
+      "expected_reciprocal_pairs": 8104.905574,
+      "observed_over_expected": 2.10021,
+      "null_mean": 8106.195,
+      "null_sd": 79.409865,
+      "null_max": 8315,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "threshold 1",
+      "null": "distance x class",
+      "n_cells": 2070,
+      "edges": 134753,
+      "observed_reciprocal_pairs": 17022,
+      "reciprocated_edge_fraction": 0.25264,
+      "expected_reciprocal_pairs": 8652.259113,
+      "observed_over_expected": 1.967347,
+      "null_mean": 8641.055,
+      "null_sd": 96.238408,
+      "null_max": 8871,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "threshold 2",
+      "null": "uniform fixed-edge-count",
+      "n_cells": 2070,
+      "edges": 45774,
+      "observed_reciprocal_pairs": 5542,
+      "reciprocated_edge_fraction": 0.242146,
+      "expected_reciprocal_pairs": 244.606229,
+      "observed_over_expected": 22.656823,
+      "null_mean": 244.25,
+      "null_sd": 15.15904,
+      "null_max": 283,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "threshold 2",
+      "null": "soft configuration (Chung-Lu)",
+      "n_cells": 2070,
+      "edges": 45774,
+      "observed_reciprocal_pairs": 5542,
+      "reciprocated_edge_fraction": 0.242146,
+      "expected_reciprocal_pairs": 2200.283985,
+      "observed_over_expected": 2.518766,
+      "null_mean": 2198.345,
+      "null_sd": 38.577286,
+      "null_max": 2337,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "threshold 2",
+      "null": "distance x class",
+      "n_cells": 2070,
+      "edges": 45774,
+      "observed_reciprocal_pairs": 5542,
+      "reciprocated_edge_fraction": 0.242146,
+      "expected_reciprocal_pairs": 1820.518234,
+      "observed_over_expected": 3.044188,
+      "null_mean": 1819.21,
+      "null_sd": 38.849224,
+      "null_max": 1933,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "fully extended axons, threshold 1",
+      "null": "uniform fixed-edge-count",
+      "n_cells": 232,
+      "edges": 6540,
+      "observed_reciprocal_pairs": 1153,
+      "reciprocated_edge_fraction": 0.352599,
+      "expected_reciprocal_pairs": 398.994794,
+      "observed_over_expected": 2.889762,
+      "null_mean": 398.48,
+      "null_sd": 17.96282,
+      "null_max": 444,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "fully extended axons, threshold 1",
+      "null": "soft configuration (Chung-Lu)",
+      "n_cells": 232,
+      "edges": 6540,
+      "observed_reciprocal_pairs": 1153,
+      "reciprocated_edge_fraction": 0.352599,
+      "expected_reciprocal_pairs": 627.91178,
+      "observed_over_expected": 1.836245,
+      "null_mean": 629.45,
+      "null_sd": 21.877629,
+      "null_max": 683,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    },
+    {
+      "analysis": "fully extended axons, threshold 1",
+      "null": "distance x class",
+      "n_cells": 232,
+      "edges": 6540,
+      "observed_reciprocal_pairs": 1153,
+      "reciprocated_edge_fraction": 0.352599,
+      "expected_reciprocal_pairs": 771.313696,
+      "observed_over_expected": 1.494852,
+      "null_mean": 772.66,
+      "null_sd": 24.990539,
+      "null_max": 854,
+      "upper_tail_p": 0.004975,
+      "n_null_samples": 200
+    }
+  ],
+  "decision": "enriched under the distance x class null",
+  "version_drift": {
+    "earlier_version": 1412,
+    "later_version": 1507,
+    "rows_earlier": 2020,
+    "rows_later": 2182,
+    "proofread_both_current_earlier": 1953,
+    "proofread_both_current_later": 2070,
+    "matched_on_supervoxel": 1942,
+    "only_in_earlier": 11,
+    "only_in_later": 128,
+    "matched_but_root_id_changed": 118,
+    "earlier_root_ids_absent_from_later_table": 129
+  }
+}

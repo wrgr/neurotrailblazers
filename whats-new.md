@@ -18,7 +18,13 @@ history (`scripts/refresh_last_reviewed.rb` in the repository), so the line mean
 
 - **Finding your way.** Every page now has a breadcrumb at the top and, at the bottom, previous and next links where the page is one step in a sequence: the nine technical units and their lecture plans, the 25 modules with their session kits and model responses, the five sessions of the short lecture series, the ten Pathways workshops, and the hidden-curriculum pages. Pages outside a sequence show an "Up" link to their section. A "Last reviewed" date appears on pages that carry one, and this page lists what changed.
 - **Beyond EM.** A content-library page on X-ray, expansion and light-sheet microscopy and barcoded sequencing: what each resolves, and which questions still need electron microscopy. [Read it]({{ '/content-library/imaging/beyond-em/' | relative_url }}).
-- **More model responses.** Model responses for Modules 02, 08, 17, 19, 21, 22 and 25 join those for 01, 07 and 18, and the index now lists every key that exists. [Model responses index]({{ '/teaching/answers/' | relative_url }}).
+- **More model responses.** Model responses for Modules 02, 08, 17, 19, 20, 21, 22 and 25 join those for 01, 07 and 18, and the index now lists every key that exists. [Model responses index]({{ '/teaching/answers/' | relative_url }}).
+- **Funding and jobs.** A hidden-curriculum page on how trainees are paid, how to read a grant number, and how to find who funds a lab, with every figure quoted from a dated official source. [Read it]({{ '/hidden-curriculum/funding-and-jobs/' | relative_url }}).
+- **For instructors.** An [instructor FAQ]({{ '/teaching/faq/' | relative_url }}) (35 questions), [46 practice items for the nine technical units]({{ '/teaching/assessment/units/' | relative_url }}), and a [two-day workshop map]({{ '/teaching/syllabi/two-day/' | relative_url }}) with pacing notes.
+- **Reference pages expanded.** The [MICrONS case study]({{ '/content-library/case-studies/microns-visual-cortex/' | relative_url }}) now covers how calcium imaging was matched to EM and what that data can support; [provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }}) and [neuron-type identification]({{ '/content-library/cell-types/neuron-type-identification/' | relative_url }}) are rewritten, with worked examples from the MICrONS lab's real outputs.
+- **Modules.** Every module page now says why it matters, what it does not cover, the common errors, and where its hours go; reference lists are checked against Crossref. Module 22 is now *Scientific Presentation*.
+- **Concept Explorer.** Grown from 12 to 61 concepts across the units, library and teaching pages. [Open it]({{ '/concepts/' | relative_url }}).
+- **Sources.** Claims the September audit left unsourced now cite a primary source, carry an explicit label such as "our arithmetic" or "rule of thumb", or were removed.
 
 ### 2026-09-26
 

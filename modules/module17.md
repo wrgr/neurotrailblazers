@@ -68,7 +68,7 @@ references:
   - "Dorkenwald S et al. (2024) Neuronal wiring diagram of an adult brain. Nature 634(8032):124-138."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

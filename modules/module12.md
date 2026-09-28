@@ -68,7 +68,7 @@ references:
   - "Januszewski et al. (2018) for scalable reconstruction context."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

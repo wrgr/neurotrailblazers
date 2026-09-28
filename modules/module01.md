@@ -57,7 +57,7 @@ references: []
 videos:
   - "https://www.ted.com/talks/sebastian_seung_i_am_my_connectome"
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

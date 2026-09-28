@@ -68,7 +68,7 @@ references:
   - "Birch J (2012) Worldwide prevalence of red-green color deficiency. Journal of the Optical Society of America A 29(3):313-320."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

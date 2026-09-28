@@ -32,7 +32,7 @@ recommended_datasets:
 recommended_tools:
   - ask-an-expert
   - connectome-quality
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core

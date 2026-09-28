@@ -14,7 +14,7 @@ history (`scripts/refresh_last_reviewed.rb` in the repository), so the line mean
 
 ## September 2026
 
-### Latest
+### 2026-09-28
 
 - **Finding your way.** Every page now has a breadcrumb at the top and, at the bottom, previous and next links where the page is one step in a sequence: the nine technical units and their lecture plans, the 25 modules with their session kits and model responses, the five sessions of the short lecture series, the ten Pathways workshops, and the hidden-curriculum pages. Pages outside a sequence show an "Up" link to their section. A "Last reviewed" date appears on pages that carry one, and this page lists what changed.
 - **Beyond EM.** A content-library page on X-ray, expansion and light-sheet microscopy and barcoded sequencing: what each resolves, and which questions still need electron microscopy. [Read it]({{ '/content-library/imaging/beyond-em/' | relative_url }}).

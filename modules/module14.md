@@ -65,7 +65,7 @@ references:
   - "Recent MICrONS/FlyWire methods for practical CV constraints."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

@@ -66,7 +66,7 @@ references:
   - "Schlegel P et al. (2024) Whole-brain annotation and multi-connectome cell typing of Drosophila. Nature 634(8032):139-152."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

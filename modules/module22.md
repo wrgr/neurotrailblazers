@@ -65,7 +65,7 @@ references:
   - "Bourne PE (2007) Ten simple rules for making good oral presentations. PLoS Computational Biology 3(4):e77."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

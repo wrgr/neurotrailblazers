@@ -65,7 +65,7 @@ references:
   - "Michaut M (2011) Ten simple rules for getting involved in your scientific community. PLoS Computational Biology 7(10):e1002232."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

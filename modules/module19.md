@@ -69,7 +69,7 @@ references:
   - "Shapson-Coe A et al. (2024) A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science 384(6696):eadk4858."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

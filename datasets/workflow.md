@@ -30,7 +30,7 @@ related_frameworks:
   - research-incubator-model
   - education-models
 resource_links: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: NeuroTrailblazers Team
 use_layout_hero: false
 content_type: core

@@ -68,7 +68,7 @@ references:
   - "Januszewski M et al. (2018) High-precision automated reconstruction of neurons with flood-filling networks. Nature Methods 15(8):605-610."
 videos: []
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

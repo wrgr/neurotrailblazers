@@ -69,7 +69,7 @@ references:
 videos:
   - "https://www.neurotrailblazers.org/technical-training/09-connectome-analysis-neuroai/"
 downloads: []
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: "NeuroTrailblazers Team"
 content_type: path
 ---

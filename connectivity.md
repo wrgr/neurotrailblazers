@@ -5,7 +5,7 @@ permalink: /connectivity/
 description: >
   The neuroscience training that exists elsewhere, what each one covers that
   this site does not, and the funding routes that pay for getting there.
-last_reviewed: 2026-09-26
+last_reviewed: 2026-09-28
 maintainer: NeuroTrailblazers Team
 content_type: core
 ---

@@ -107,4 +107,4 @@ Do not grade the rung map, and do not grade whether a learner says they would pe
 report in scenario 5. That choice belongs to the person, and the workshop's job is only
 to make sure they know the routes before they need them.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

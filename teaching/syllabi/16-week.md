@@ -446,7 +446,7 @@ two reviewer comments (10 minutes). **Week total:** 3 contact hours, 150 outside
 
 ### Week 14: Can someone outside the work follow it, and what does your portfolio prove?
 
-**A. Module 22 kit, scientific writing and presentation.** Build a four-slide talk from
+**A. Module 22 kit, scientific presentation.** Build a four-slide talk from
 the week 13 outline, then deliver it and take questions in groups.
 [Session kit]({{ '/teaching/sessions/module22/' | relative_url }}) ·
 [Module page]({{ '/modules/module22/' | relative_url }})
@@ -580,4 +580,4 @@ rubrics say the same.
 
 [Syllabus maps]({{ '/teaching/syllabi/' | relative_url }}) · [10-week map]({{ '/teaching/syllabi/10-week/' | relative_url }}) · [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 
-Syllabus map: CC BY-SA 4.0, NeuroTrailblazers.
+Syllabus map: CC BY 4.0, NeuroTrailblazers.

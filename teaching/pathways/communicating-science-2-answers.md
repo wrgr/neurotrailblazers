@@ -109,4 +109,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade accent, fluency, speed or visible nerves. A slow answer that names the type,
 concedes the valid part and stops is the target.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

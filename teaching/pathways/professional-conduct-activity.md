@@ -98,6 +98,6 @@ Replace one **?** on your map.
 actions; the rung is the lowest adequate one; the error report has four parts and no
 apology up front; your map marks what you do not yet know.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/professional-conduct-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

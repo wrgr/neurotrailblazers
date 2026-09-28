@@ -107,6 +107,6 @@ what question you were not expecting.
 gives the limitation and non-claim their own time; the bank covers every type and includes
 one question you cannot yet answer; live answers name the type and stop.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/communicating-science-2-answers/' | relative_url }})
 are public; attempt the worksheet before reading them.

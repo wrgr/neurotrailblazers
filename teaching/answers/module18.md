@@ -313,4 +313,4 @@ a learner's duplicate or autapse rule differs and says so. This is a local teach
 rubric, not a validated assessment instrument.
 
 See [Provenance and versioning]({{ '/content-library/infrastructure/provenance-and-versioning/' | relative_url }})
-for version records. Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+for version records. Teaching material: CC BY 4.0, NeuroTrailblazers.

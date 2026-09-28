@@ -106,4 +106,4 @@ and [Conflict]({{ '/hidden-curriculum/conflict/' | relative_url }}) pages, the
 integrity concepts in [Module 19]({{ '/modules/module19/' | relative_url }}), and the
 US federal definition of research misconduct published by the
 [Office of Research Integrity](https://ori.hhs.gov/). Workshop materials:
-**CC BY-SA 4.0**, NeuroTrailblazers.
+**CC BY 4.0**, NeuroTrailblazers.

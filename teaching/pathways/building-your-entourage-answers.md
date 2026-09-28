@@ -100,4 +100,4 @@ Do not grade the size of anyone's network, how senior their contacts are, or whe
 they send the messages. Network size reflects access as much as effort, and grading it
 would reward the learners who needed the session least.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

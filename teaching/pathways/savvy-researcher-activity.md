@@ -99,6 +99,6 @@ map shows at least one decider Tomás has never met; the memo states what Tomás
 first and says what happens if the work stops; your question can be answered with a fact
 or a date.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/savvy-researcher-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

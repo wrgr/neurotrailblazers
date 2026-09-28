@@ -8,7 +8,7 @@ content_type: delivery
 ---
 
 This is a **companion session** for [Module 22]({{ '/modules/module22/' | relative_url }}),
-Scientific Writing and Presentation. It does not replace the module or its
+Scientific Presentation. It does not replace the module or its
 [session kit]({{ '/teaching/sessions/module22/' | relative_url }}).
 
 Module 22 teaches one rule for every audience:

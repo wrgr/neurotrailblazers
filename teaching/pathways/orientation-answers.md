@@ -83,4 +83,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade whether the learner's own expectations are *correct*. Only the
 supervisor can tell them that, which is the point of the check-in.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

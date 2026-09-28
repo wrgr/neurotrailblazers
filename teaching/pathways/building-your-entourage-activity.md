@@ -88,6 +88,6 @@ reply or the silence. Keep your map; a later workshop asks for it.
 roles are named; every message is specific to its reader, asks one answerable
 question and offers something back; your map marks which ties are borrowed.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/building-your-entourage-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

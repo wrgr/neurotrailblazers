@@ -86,4 +86,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade the private diagnosis, and do not grade whether a learner concludes they
 belong. Neither is the facilitator's to judge.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

@@ -99,4 +99,4 @@ their first contribution and what happened next.
 Built on the site's [Belonging]({{ '/hidden-curriculum/belonging/' | relative_url }})
 page, the [learner personas]({{ '/avatars/' | relative_url }}) Julian and Amir, and the
 selection and orientation stages of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

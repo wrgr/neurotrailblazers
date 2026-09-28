@@ -92,6 +92,6 @@ calendar with a note to reread this page's section 4 on that day.
 and cost before fit; the decision memo says what would show it was wrong; each plan
 action is dated and, where possible, names a person.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/future-forward-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

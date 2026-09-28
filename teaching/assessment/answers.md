@@ -416,4 +416,4 @@ Feedback by error:
 - **Statement 4 marked an underclaim.** It is a comparative claim about the present, not
   a dismissal.
 
-Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching material: CC BY 4.0, NeuroTrailblazers.

@@ -92,6 +92,6 @@ checkable and dated; moment 5 gets a response that is not "contribute more".
 If something today landed hard, talk to one of the people your facilitator named. This
 worksheet is not counseling.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/identity-and-purpose-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

@@ -281,6 +281,9 @@ Before a session, confirm:
 - [ ] You have decided what "uncertain" earns, and you will say so out loud.
 - [ ] Data access works (accounts, viewer, notebook), checked today, not last week.
 
+**Related:** the [Instructor FAQ]({{ '/teaching/faq/' | relative_url }}) answers the
+questions learners ask most in these sessions, each linked to the page it comes from.
+
 </section>
 
 <section class="section" markdown="1">

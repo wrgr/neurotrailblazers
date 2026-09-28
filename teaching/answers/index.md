@@ -13,25 +13,35 @@ with feedback, and scores against the kit's own rubric tiers.
 
 ## Available keys
 
+{%- comment -%}
+  One row per key page under teaching/answers/, in module order, so a new key
+  appears here as soon as it exists. Titles come from _data/modules.yml.
+{%- endcomment -%}
+{%- assign module_keys = site.pages | where_exp: 'p', "p.url contains '/teaching/answers/module'" | sort: 'url' %}
+
 | Module | Worksheet | Key |
 |---|---|---|
-| 01: Scientific Curiosity and Motivation | [Worksheet]({{ '/assets/worksheets/module01/module01-activity.md' | relative_url }}) | [Model responses]({{ '/teaching/answers/module01/' | relative_url }}) |
-| 07: Proofreading and Quality Control | [Worksheet]({{ '/assets/worksheets/module07/module07-activity.md' | relative_url }}) | [Model responses]({{ '/teaching/answers/module07/' | relative_url }}) |
-| 18: Data Cleaning and Preprocessing | [Worksheet]({{ '/assets/worksheets/module18/module18-activity.md' | relative_url }}) | [Model responses]({{ '/teaching/answers/module18/' | relative_url }}) |
+{%- for k in module_keys %}
+{%- assign numpad = k.url | remove: '/teaching/answers/module' | remove: '/' %}
+{%- assign num = numpad | plus: 0 %}
+{%- assign m = site.data.modules | where: 'number', num | first %}
+| {{ numpad }}: {{ m.title }} | [Worksheet]({{ '/assets/worksheets/module' | append: numpad | append: '/module' | append: numpad | append: '-activity.md' | relative_url }}) | [Model responses]({{ k.url | relative_url }}) |
+{%- endfor %}
 
 The four connectomics lectures and the Ethics and Governance session have their own
-keys, linked from the [lecture series]({{ '/teaching/lectures/' | relative_url }}).
-A separate [assessment bank]({{ '/teaching/assessment/' | relative_url }}) covers the
-four lecture outcomes.
+keys, linked from the [lecture series]({{ '/teaching/lectures/' | relative_url }}) and
+from each session on the [short lecture series]({{ '/teaching/sequence/' | relative_url }})
+page. A separate [assessment bank]({{ '/teaching/assessment/' | relative_url }}) covers the
+four lecture outcomes, and the
+[unit assessments]({{ '/teaching/assessment/units/' | relative_url }}) cover the nine
+technical units.
 
 ## Backlog order
 
-Twenty-two module keys remain. They will be written in teaching order: first the
-modules the [16-week syllabus map]({{ '/teaching/syllabi/16-week/' | relative_url }})
-uses, in the week each first appears, then the rest in module-number order.
-
-1. **Used by the syllabus maps:** 02, 08, 20, 19, 21, 17, 22, 25.
-2. **Remaining, by number:** 03, 04, 05, 06, 09, 10, 11, 12, 13, 14, 15, 16, 23, 24.
+Eleven module keys exist: 01, 07 and 18, plus every module the
+[16-week syllabus map]({{ '/teaching/syllabi/16-week/' | relative_url }}) schedules
+(02, 08, 17, 19, 20, 21, 22, 25). Fourteen remain. They will be written in
+module-number order: 03, 04, 05, 06, 09, 10, 11, 12, 13, 14, 15, 16, 23, 24.
 
 Where the site publishes a synthetic kit folder under `assets/kits/` (Modules 03, 06, 09,
 10, 11, 12, 13, 14, 16 and 19 in these lists), the key will work from those files, as the
@@ -55,4 +65,4 @@ their keys will give the reasoning for each step plus a clearly labeled invented
 
 [Session kits]({{ '/teaching/sessions/' | relative_url }}) · [Facilitator guide]({{ '/teaching/facilitator-guide/' | relative_url }}) · [Teaching Hub]({{ '/teaching/' | relative_url }})
 
-Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching material: CC BY 4.0, NeuroTrailblazers.

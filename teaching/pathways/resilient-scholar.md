@@ -102,4 +102,4 @@ Built on the site's [Belonging]({{ '/hidden-curriculum/belonging/' | relative_ur
 pages, and on the skill-development and independent-research stages of the [MERIT
 framework]({{ '/models/' | relative_url }}). Stage 4 asks that a first real failure be
 framed as information rather than verdict.
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

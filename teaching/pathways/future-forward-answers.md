@@ -89,4 +89,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade which option a learner chooses for Hana or for themselves, and do not
 grade section 4. A well-made decision to leave research scores the same as one to stay.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

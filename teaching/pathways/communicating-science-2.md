@@ -102,4 +102,4 @@ Built on the question types, time budget and worked example in
 [Reading and judging]({{ '/hidden-curriculum/reading-and-judging/' | relative_url }})
 levels of disagreement, and the "rehearse the hard question" move in stage 4 of the
 [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

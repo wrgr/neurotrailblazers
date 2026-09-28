@@ -85,6 +85,6 @@ one question, one artifact and a stopping rule set in advance; the proposal to D
 Whitfield can be approved in one reply; your memo names a decision date and an
 observable sign of a wrong choice.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/charting-your-course-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

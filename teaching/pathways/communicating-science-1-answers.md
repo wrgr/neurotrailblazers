@@ -104,4 +104,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade prose style, humor or how vivid the public version is. A plain public
 version with the non-claim intact beats a lively one without it.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

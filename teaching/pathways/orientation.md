@@ -88,4 +88,4 @@ did it and what changed.
 
 Built on the site's [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }})
 page and the orientation stage of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

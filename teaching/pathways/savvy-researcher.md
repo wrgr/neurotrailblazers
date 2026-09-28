@@ -102,4 +102,4 @@ the authorship section of [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relat
 [CRediT taxonomy](https://credit.niso.org/), the [ICMJE](https://www.icmje.org/)
 authorship criteria, and the advanced-research stage of the
 [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

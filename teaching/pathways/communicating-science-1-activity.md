@@ -102,6 +102,6 @@ II]({{ '/teaching/pathways/communicating-science-2/' | relative_url }}).
 distorting word is named with its supported replacement; all three registers carry the
 same non-claim; assumptions are named where they are used.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/communicating-science-1-answers/' | relative_url }})
 are public; attempt the worksheet before reading them.

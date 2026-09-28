@@ -109,4 +109,4 @@ only one. The rubrics are local teaching rubrics, not validated assessment instr
 
 [Teaching Hub]({{ '/teaching/' | relative_url }}) · [Hidden curriculum]({{ '/hidden-curriculum/' | relative_url }}) · [Career and Community track]({{ '/tracks/career-and-community/' | relative_url }})
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

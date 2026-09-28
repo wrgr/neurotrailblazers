@@ -101,4 +101,4 @@ Built on the site's [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | rel
 and [Technical practice]({{ '/hidden-curriculum/technical-practice/' | relative_url }})
 pages, the reversibility criterion in [Module 24]({{ '/modules/module24/' | relative_url }}),
 and the independent-research stage of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

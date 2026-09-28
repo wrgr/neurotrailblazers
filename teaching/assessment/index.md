@@ -24,6 +24,14 @@ with a **variant template** line naming the quantities to change. Recompute ever
 answer for a variant; do not reuse this bank's answers. Nothing here has been validated
 as an assessment instrument, and item difficulty and discrimination are unmeasured.
 
+**Technical units.** A separate pool covers the nine
+[Technical Course]({{ '/technical-training/' | relative_url }}) units:
+[46 items tagged to unit outcomes]({{ '/teaching/assessment/units/' | relative_url }}),
+five or six per unit, with [worked answers and per-error feedback]({{ '/teaching/assessment/units-answers/' | relative_url }}).
+It follows the same rules as this bank: synthetic numbers that differ from the units'
+own examples, a variant template on every item, and public, formative use only. Its last
+section explains how to use the judgment items for a grader calibration round.
+
 ## Outcome tags
 
 | Lecture | Tag | Objective |
@@ -304,4 +312,4 @@ triangle instead of a reciprocal pair).
 
 *Variant template:* write new statements, keeping at least one of each label.
 
-Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching material: CC BY 4.0, NeuroTrailblazers.

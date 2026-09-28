@@ -93,6 +93,6 @@ to the next workshop.
 project and process are told apart; the report leads with a number and ends with a
 dated default; your private rewrite replaces a verdict with a check.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/resilient-scholar-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

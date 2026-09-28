@@ -96,6 +96,11 @@ trying to fit Parts A and B; Part C works as a standalone seminar. A single
 **Prerequisites.** Introductory neuroscience is helpful but not required. Lecture 2's
 assignment assumes basic Python; the lecture itself does not.
 
+**Checking work.** Each lecture page links its learner worksheet and instructor model
+responses. The [assessment bank]({{ '/teaching/assessment/' | relative_url }}) adds five
+practice items per lecture, with numbers that differ from the worksheets, and variant
+templates for writing secure versions.
+
 **No data or accounts needed to teach.** The lectures reference public platforms
 (neuPrint, FlyWire Codex, BossDB, CAVE), but nothing in the slides requires a login. The
 lecture 2 assignment usually does, because neuPrint and CAVE issue personal tokens. The

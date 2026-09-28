@@ -87,6 +87,6 @@ Bring the corrected list to the next workshop.
 deliverable, date or threshold; your list marks inferences honestly; your script
 invites correction.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.
 [Model responses]({{ '/teaching/pathways/orientation-answers/' | relative_url }}) are
 public; attempt the worksheet before reading them.

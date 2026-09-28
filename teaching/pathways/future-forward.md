@@ -101,4 +101,4 @@ Built on [Module 24]({{ '/modules/module24/' | relative_url }}), the site's [Car
 mechanics]({{ '/hidden-curriculum/career-mechanics/' | relative_url }}) and
 [Meta-learning]({{ '/hidden-curriculum/meta-learning/' | relative_url }}) pages, and the
 career transition stage of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

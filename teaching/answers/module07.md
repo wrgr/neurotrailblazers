@@ -265,4 +265,4 @@ entry. This is a local teaching rubric, not a validated assessment instrument.
 
 For metric definitions see [Metrics and QA]({{ '/content-library/proofreading/metrics-and-qa/' | relative_url }})
 and [Technical Unit 08]({{ '/technical-training/08-segmentation-and-proofreading/' | relative_url }}).
-Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching material: CC BY 4.0, NeuroTrailblazers.

@@ -94,4 +94,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade which option the learner picks or which one their own memo leans toward.
 The session teaches how to find out, not what to choose.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

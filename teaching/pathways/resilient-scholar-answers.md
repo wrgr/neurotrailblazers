@@ -87,4 +87,4 @@ Do not grade how the learner feels about failure, how resilient they seem, or wh
 their own setback was "serious enough". None of those is observable from a worksheet,
 and grading them would teach learners to perform calm.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

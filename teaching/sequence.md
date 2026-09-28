@@ -127,11 +127,11 @@ the [Module 07 kit]({{ '/teaching/sessions/module07/' | relative_url }}), a proo
 triage on synthetic data; or an applications seminar. For hands-on depth, choose a
 [module session kit]({{ '/teaching/sessions/' | relative_url }}) after checking its
 prerequisites. These four packs and the optional fifth are complete formative sessions.
-To build a full course around them, use the [10-week and 16-week syllabus
-maps]({{ '/teaching/syllabi/' | relative_url }}). Module kits have
-[model responses]({{ '/teaching/answers/' | relative_url }}) for Modules 01, 07 and 18
-so far; that page gives the order for the other 22.
+To build a full course around them, use the [10-week, 16-week and two-day
+maps]({{ '/teaching/syllabi/' | relative_url }}). Eleven module kits have
+[model responses]({{ '/teaching/answers/' | relative_url }}); that page gives the order
+for the other fourteen.
 
 [Teaching Hub]({{ '/teaching/' | relative_url }}) · [All presentation decks]({{ '/technical-training/slides/' | relative_url }})
 
-Teaching sequence: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching sequence: CC BY 4.0, NeuroTrailblazers.

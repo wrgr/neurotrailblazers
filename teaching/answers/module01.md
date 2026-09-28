@@ -204,4 +204,4 @@ outranks an eloquent one without it. Do not penalize a learner for saying a step
 uncertain when they name what would resolve it. This is a local teaching rubric, not a
 validated assessment instrument.
 
-Teaching material: CC BY-SA 4.0, NeuroTrailblazers.
+Teaching material: CC BY 4.0, NeuroTrailblazers.

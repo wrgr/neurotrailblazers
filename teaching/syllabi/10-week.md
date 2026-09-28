@@ -281,7 +281,7 @@ minimum and strong criteria.
 
 ### Week 8: Can someone outside the work follow it?
 
-**A. Module 22 kit, scientific writing and presentation.** Learners build the four-slide,
+**A. Module 22 kit, scientific presentation.** Learners build the four-slide,
 three-minute talk from their own project. They deliver it and answer two questions in
 groups (kit steps 1–4). Week 10 uses this format.
 [Session kit]({{ '/teaching/sessions/module22/' | relative_url }}) ·
@@ -398,4 +398,4 @@ rubric.
 
 [Syllabus maps]({{ '/teaching/syllabi/' | relative_url }}) · [16-week map]({{ '/teaching/syllabi/16-week/' | relative_url }}) · [Facilitator Guide]({{ '/teaching/facilitator-guide/' | relative_url }})
 
-Syllabus map: CC BY-SA 4.0, NeuroTrailblazers.
+Syllabus map: CC BY 4.0, NeuroTrailblazers.

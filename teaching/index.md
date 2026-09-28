@@ -24,13 +24,15 @@ content_type: delivery
   <section class="section">
     <div class="cta-buttons">
       <a href="{{ '/teaching/sessions/' | relative_url }}" class="btn btn-primary">Run a module session</a>
-      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach the four-session block</a>
-      <a href="{{ '/modules/' | relative_url }}" class="btn btn-secondary">Open Module Library</a>
+      <a href="{{ '/teaching/sequence/' | relative_url }}" class="btn btn-primary">Teach the short lecture series</a>
+      <a href="{{ '/teaching/lectures/' | relative_url }}" class="btn btn-secondary">Graduate Lecture Series</a>
       <a href="{{ '/technical-training/slides/' | relative_url }}" class="btn btn-secondary">Presentation Decks</a>
       <a href="{{ '/teaching/pathways/' | relative_url }}" class="btn btn-secondary">Pathways Workshops</a>
       <a href="{{ '/teaching/syllabi/' | relative_url }}" class="btn btn-secondary">Syllabus Maps</a>
+      <a href="{{ '/teaching/assessment/' | relative_url }}" class="btn btn-secondary">Assessment Bank</a>
+      <a href="{{ '/teaching/answers/' | relative_url }}" class="btn btn-secondary">Model Responses</a>
       <a href="{{ '/teaching/facilitator-guide/' | relative_url }}" class="btn btn-secondary">Facilitator Guide</a>
-      <a href="{{ '/technical-training/' | relative_url }}" class="btn btn-secondary">Technical Course</a>
+      <a href="{{ '/teaching/faq/' | relative_url }}" class="btn btn-secondary">Instructor FAQ</a>
     </div>
   </section>
 
@@ -49,7 +51,10 @@ content_type: delivery
       slides, a learner worksheet and instructor model answers.</p>
     <p><strong>Presenting a lecture?</strong> Open the
       <a href="{{ '/technical-training/slides/' | relative_url }}">Presentation Decks</a>
-      for graduate lectures and technical-unit slides. Each deck opens directly in your browser.</p>
+      for graduate lectures and technical-unit slides. Each deck opens directly in your browser.
+      The three full-length lectures, about 150 minutes each with speaker notes and a graded
+      artifact, are described together on the
+      <a href="{{ '/teaching/lectures/' | relative_url }}">Graduate Lecture Series</a> page.</p>
     <p><strong>Running a session?</strong> Go to the
       <a href="{{ '/teaching/sessions/' | relative_url }}">session kits</a>. Each is one
       page holding the prep checklist, run of show, materials, misconceptions to target
@@ -59,22 +64,30 @@ content_type: delivery
       are ten 90-minute sessions on expectations, failure, direction, networks,
       communication, credit, conduct, belonging and next steps. Each has a timed plan,
       a worksheet built on an invented case, and model responses.</p>
-    <p><strong>Planning a quarter or semester?</strong> The
+    <p><strong>Planning a quarter, a semester or a two-day workshop?</strong> The
       <a href="{{ '/teaching/syllabi/' | relative_url }}">syllabus maps</a> lay out 10-week
       and 16-week courses week by week from the lecture sessions, technical units,
       module kits and Pathways workshops, with pre-work, an artifact and feedback
-      criteria for every meeting.</p>
+      criteria for every meeting. A
+      <a href="{{ '/teaching/syllabi/two-day/' | relative_url }}">two-day map</a> covers a
+      short intensive.</p>
     <p><strong>Checking learner work?</strong> Every lecture session has public model
-      responses. <a href="{{ '/teaching/answers/' | relative_url }}">Module model responses</a>
-      cover Modules 01, 07 and 18 so far, and the
+      responses. {% assign module_keys = site.pages | where_exp: 'p', "p.url contains '/teaching/answers/module'" %}<a href="{{ '/teaching/answers/' | relative_url }}">Module model responses</a>
+      cover {{ module_keys.size }} of the 25 modules so far, and the
       <a href="{{ '/teaching/assessment/' | relative_url }}">assessment bank</a> holds 20
       practice items for the four lecture sessions, with worked answers and variant
-      templates for writing secure versions.</p>
+      templates for writing secure versions. The
+      <a href="{{ '/teaching/assessment/units/' | relative_url }}">unit assessments</a> do the
+      same for the nine technical units.</p>
     <p><strong>Designing a course, or wondering why the sessions are shaped this way?</strong>
       Start with the <a href="{{ '/teaching/facilitator-guide/' | relative_url }}">Facilitator Guide</a>.
       It covers why at least half of contact time has to be learner judgment rather than
       explanation, how to differentiate across the four learner personas, and how to
       assess calibration rather than raw accuracy.</p>
+    <p><strong>A practical question the pages above do not answer?</strong> The
+      <a href="{{ '/teaching/faq/' | relative_url }}">Instructor FAQ</a> answers the
+      questions learners ask most, about EM, scale, segmentation error, nulls, versions
+      and credit, plus a few on running the sessions.</p>
   </section>
 
   <section class="section">

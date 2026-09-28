@@ -101,4 +101,4 @@ teaching rubric, not a validated assessment instrument.
 Do not grade the authorship outcome a learner proposes. Acknowledgment can be the right
 answer. Grade whether the question is asked early, specifically and in writing.
 
-Workshop materials: CC BY-SA 4.0, NeuroTrailblazers.
+Workshop materials: CC BY 4.0, NeuroTrailblazers.

@@ -96,4 +96,4 @@ Built on the invariant set and uncertainty ladder in
 [Module 17]({{ '/modules/module17/' | relative_url }}), the claim bins in
 [Unit 01]({{ '/technical-training/01-why-map-the-brain/' | relative_url }}), and the
 early-dissemination stage of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.

@@ -5,7 +5,7 @@ permalink: /teaching/syllabi/
 slug: syllabi-index
 track: core-concepts-methods
 content_type: delivery
-description: "Two course maps, 10 and 16 weeks, that sequence existing sessions, technical units, module kits and Professional Pathways workshops."
+description: "Three course maps, 10 weeks, 16 weeks and a two-day workshop, that sequence existing sessions, technical units, module kits and Professional Pathways workshops, with pacing notes."
 ---
 
 These pages map the site's existing teaching materials onto a course calendar. They
@@ -18,7 +18,11 @@ exists.
 - [16-week course (semester)]({{ '/teaching/syllabi/16-week/' | relative_url }}): 32
   meetings, eight Pathways workshops, about 48 contact hours and 44 outside hours.
 
-Both are drafts built from the materials. Neither has been taught as a whole course.
+- [Two-day workshop]({{ '/teaching/syllabi/two-day/' | relative_url }}): eight
+  90-minute slots, the four-session block plus Ethics, Orientation, the MICrONS lab and
+  a revision studio; 6 hours 45 minutes a day excluding lunch.
+
+All three are drafts built from the materials. None has been taught as a whole.
 
 ## Meeting pattern
 
@@ -36,6 +40,39 @@ stated `time_estimate`. Module concept sets are estimated at about 30 minutes, a
 finishing times are an allowance, not a measurement. Both maps come out at roughly one
 outside hour per contact hour. That is lighter than the two-to-one ratio many US
 institutions use for credit. Each map lists what to add if yours requires it.
+
+## Pacing notes
+
+These notes come from each module's `duration` field, the "At a glance" table on its
+[session kit]({{ '/teaching/sessions/' | relative_url }}), and the paragraph on each
+module page that says where the declared hours go. They add no timings of their own.
+
+- **The declared hours are not contact hours.** Every kit's "At a glance" duration
+  matches its module's `duration` field: 3–4 hours (Module 01), 4 hours (02–11, 16, 19,
+  22–24), 4–5 hours (12–15, 17, 18, 21), 4–6 hours (20) and 5–6 hours (25). Those
+  hours include the concept set, pre-class reading and finishing work outside class.
+- **One 90-minute meeting holds the whole taught part** for Modules 01–03 (a 90-minute
+  run of show) and for Modules 12–24 (a 60-minute run of show plus the opening of the
+  studio). The studio is finished outside class: 2–3 hours by each page's own count,
+  about 2 hours for Modules 16, 19 and 22–24, and 2–4 hours for Module 20.
+- **Two meetings are needed** for Module 25, which its page gives two 90-minute
+  meetings, and for Modules 04–11 if both taught parts run in class: a 60-minute
+  tutorial plus a 60–75 minute studio (about 60 minutes for Module 05), 120–135
+  minutes in all. To fit one meeting, set the tutorial's content as concept-set
+  reading and run the studio, which is how both course maps use a kit.
+- **No two modules pair into one 90-minute meeting.** The shortest taught part on any
+  module is a 60-minute run of show, so any pair is at least 120 minutes. Two kits fit a
+  three-hour block run as A and B.
+- **What to cut.** The
+  [four-session block]({{ '/teaching/sequence/' | relative_url }}#preparation-and-pacing)
+  sets the rule: omit optional history slides before cutting the activity or its
+  debrief. For a module kit, the maps move the tutorial's content into concept-set
+  reading before they touch the studio. Keep the artifact learners hand in. Modules 04 and 05 also need an instructor-built patch set before
+  class, which no amount of cutting removes.
+- **Technical-unit labs** state their own lengths: Units 01 and 07 run 60 minutes,
+  Unit 02 75, Unit 05 75, Units 03, 04 and 06 90, and Units 08 and 09 two hours. The
+  two-hour labs need two meetings or a three-hour block; the 10-week map runs Unit 08
+  Part B alone in one meeting.
 
 ## Audience and prerequisites
 
@@ -111,4 +148,4 @@ your institution.
 
 [Teaching Hub]({{ '/teaching/' | relative_url }}) · [Four-session block]({{ '/teaching/sequence/' | relative_url }}) · [Professional Pathways]({{ '/teaching/pathways/' | relative_url }}) · [Session kits]({{ '/teaching/sessions/' | relative_url }})
 
-Syllabus maps: CC BY-SA 4.0, NeuroTrailblazers.
+Syllabus maps: CC BY 4.0, NeuroTrailblazers.

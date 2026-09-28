@@ -101,4 +101,4 @@ Built on the site's [Career mechanics]({{ '/hidden-curriculum/career-mechanics/'
 and [Lab norms]({{ '/hidden-curriculum/lab-norms/' | relative_url }}) pages, the
 mentorship map in [Module 24]({{ '/modules/module24/' | relative_url }}), and the
 advanced-research stage of the [MERIT framework]({{ '/models/' | relative_url }}).
-Workshop materials: **CC BY-SA 4.0**, NeuroTrailblazers.
+Workshop materials: **CC BY 4.0**, NeuroTrailblazers.
